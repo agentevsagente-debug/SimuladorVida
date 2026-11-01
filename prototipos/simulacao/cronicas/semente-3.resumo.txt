@@ -1,4 +1,4 @@
 semente=3 cenario=- anos=100
-tempo_ano_1=0.002s tempo_ano_mais_lento=0.026s(ano 94) tempo_100_anos=1.137s tempo_cronica=0.353s
-eventos=2633 populacao_final=106 grupos_vivos=3 passos=96000
-narrados: agricultura=2 ataque=21 casamento_entre_grupos=13 conquista=3 costume=10 costume_esquecido=3 crenca=1 descoberta=1 deus_renomeado=3 doenca_fim=6 eclipse=2 edito=6 extincao_grupo=1 fome_fim=14 fusao=4 inverno_rigoroso=1 lugar_nomeado=10 morte=30 mudanca=1 nascimento=8 nova_crenca=2 novo_lider=3 prece=19 prece_atendida=19 prece_sem_resposta=7 sacerdote=8 seca_fim=7 separacao:briga=7 separacao:cisma=1 separacao:migracao=2 silencio=3 tempestade=2 tregua=10
+tempo_ano_1=0.002s tempo_ano_mais_lento=0.021s(ano 64) tempo_100_anos=0.725s tempo_cronica=0.142s
+eventos=1670 populacao_final=55 grupos_vivos=4 passos=96000
+narrados: agricultura=2 ataque=15 casamento_entre_grupos=8 conquista=2 costume=8 costume_esquecido=4 crenca=1 descoberta=1 deus_renomeado=2 doenca_fim=1 eclipse=2 fome_fim=11 fusao=3 inverno_rigoroso=3 lugar_nomeado=5 morte=24 mudanca=1 nascimento=9 nova_crenca=2 novo_lider=1 prece=19 prece_atendida=19 prece_sem_resposta=2 sacerdote=9 seca_fim=10 separacao:briga=6 separacao:migracao=2 tempestade=2 tregua=4

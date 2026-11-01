@@ -118,11 +118,11 @@ Na primavera do ano 41, a rixa entre Veur e Kurmaela rachou Veak. Veur partiu co
 
 ### Ano 42
 
-No verão do ano 42, em Gaon, Viela tomou para si o cuidado das preces ao Que Nega. Kurkoela, de Veak, casou-se com Kurdon e foi viver em Gaon. Foi o primeiro laço entre os dois povos. Em Mail, Viu pediu: «Que Nega, cura meu filho.» A febre passou, e Viu contou a todos que o Que Nega tinha ouvido. A crônica sabe que foi acaso. Nasceu Kure, filha de Doloya e Kik, com sangue de Gaon e de Gaon.
+No verão do ano 42, em Gaon, Viela tomou para si o cuidado das preces ao Que Nega. Kurkoela, de Veak, casou-se com Kurdon e foi viver em Gaon. Foi o primeiro laço entre os dois povos. Em Mail, Viu pediu: «Que Nega, cura meu filho.» A febre passou, e Viu contou a todos que o Que Nega tinha ouvido. A crônica sabe que foi acaso.
 
 ### Ano 43
 
-Na primavera, morreu Vidoya, que fundou Mail e o guiava, aos 71 anos.
+Na primavera, morreu Vidoya, que fundou Mail e o guiava, aos 71 anos. Nasceu Kie, filha de Kurkoela e Kurdon, com sangue de Gaon e de Veak.
 
 ### Ano 44
 
@@ -174,7 +174,7 @@ Gaon atacou Koil no lago. Gaon venceu e levou a comida guardada. Maon morreu na 
 
 ### Ano 58
 
-Na primavera do ano 58, Veur, que fundou Gaon e o guiava, morreu de velhice aos 60 anos. A tempestade trouxe raios para a praia. Um deles acertou Dokon. Os seus nunca esqueceram. Desde a morte de Dokon, ninguém em Orum desce à praia em dia de tempestade. Koil atacou Gaon no morro. Gaon resistiu, e Koil voltou de mãos vazias. Na luta morreram Kidour e Veis. Koil acabou: Tampela e Don foram viver em Veak.
+Na primavera do ano 58, Veur, que fundou Gaon e o guiava, morreu de velhice aos 60 anos. A tempestade trouxe raios para a praia. Um deles acertou Dokon. Os seus nunca esqueceram. Desde a morte de Dokon, ninguém em Orum desce à praia em dia de tempestade. A guerra entre Koil e Gaon continuou: Koil voltou a atacar no morro. Gaon resistiu, e Koil voltou de mãos vazias. Na luta morreram Kidour e Veis. Koil acabou: Tampela e Don foram viver em Veak.
 
 ### Ano 59
 
@@ -190,150 +190,147 @@ Na primavera do ano 61, o sol se apagou no meio da tarde e voltou pouco depois. 
 
 ### Ano 62
 
-Na primavera do ano 62, Maris, de Taem, casou-se com Kuros e foi viver em Orum. Foi o primeiro laço entre os dois povos. A fome no inverno durou 7 dias em Veak e levou uma vida. No outono, os de Veak caíram sobre Orum na praia. Orum expulsou os atacantes. Kour morreu na luta. Depois da derrota, os jovens de Veak passaram a treinar com lanças. Depois de tantos mortos, Veak e Orum se encontraram na praia e juraram paz.
+Na primavera do ano 62, Maris, de Taem, casou-se com Kuros e foi viver em Orum. Foi o primeiro laço entre os dois povos. A fome no inverno durou 7 dias em Veak e levou uma vida. No outono, os de Veak caíram sobre Orum na praia. Orum expulsou os atacantes. Kour morreu na luta. Depois da derrota, os jovens de Veak passaram a treinar com lanças.
 
 ### Ano 63
 
-Na primavera do ano 63, Nuos implorou pelo filho. Peur morreu, e daquele dia em diante Nuos cuspia no chão quando falavam do Que Nega. Veak rezou e não foi ouvido. Os mais firmes disseram que o Que Nega os estava testando, e se orgulharam de aguentar. Uma tosse que não passava matou oito pessoas em Veak. No outono, Makiu, de Orum, casou-se com Vitamur e foi viver em Gaon. Foi o primeiro laço entre os dois povos.
+No verão do ano 63, Veak não esqueceu o ano 62 e atacou Orum outra vez. Orum expulsou os atacantes. Na luta morreram Kiveik e Koe.
 
 ### Ano 64
 
-Na primavera do ano 64, de novo o sol se apagou no meio do dia. Para Veak, o deus já não era «o Que Nega»: passou a ser «o Que Apaga o Sol». Em Orum, Pevik pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Orum deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Em nome do Olho Escuro, Vekie proibiu casamentos e trocas com Taem. Era vontade de Vekie, não do deus. Kos não podia mais viver perto de Kon. Saiu de Veak com 25 pessoas e fundou Doak no lago.
+O inverno foi de gelo: seis pessoas morreram de frio. Desde então, Orum chama a floresta de Floresta do Luto. Orum e Veak, cansados de enterrar os seus, fizeram as pazes na floresta. Kurpeon, que guiava Gaon, morreu de fome. Os últimos de Veak, Kois e Doela, juntaram-se a Gaon. Veak deixou de existir.
 
 ### Ano 65
 
-Houve luta na praia: Veak atacou Taem. Taem expulsou os atacantes. Kon e Pela morreram na luta. Kos tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Doak viu nisso a mão do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? Depois de tantos mortos, Veak e Taem se encontraram na praia e juraram paz. No verão, em Doak, Doloya tomou para si o cuidado das preces ao Que Apaga o Sol.
+Gaon acabou: Nutamos e Doela foram viver em Orum. Orum passou fome por causa da seca por 20 dias, e três pessoas morreram. Em Orum, Kokiu pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Orum viu nisso a mão do Olho Escuro. Foi só o tempo, mas quem iria dizer? O inverno foi de gelo: cinco pessoas morreram de frio.
 
 ### Ano 66
 
-Na primavera do ano 66, Nuos, que falava pelo Que Apaga o Sol em Veak, morreu de repente, aos 42 anos. A fome no inverno durou 23 dias em Gaon e levou duas vidas. No outono, Kurdon rezou por Markik até a voz acabar. Markik morreu mesmo assim, e Kurdon nunca mais rezou. Uma tosse que não passava matou cinco pessoas em Gaon. Depois da febre, Gaon passou a queimar os seus mortos, para que a doença não voltasse.
+Na primavera do ano 66, Taem atacou Orum na praia. Orum foi derrotado e perdeu o que tinha guardado.
 
 ### Ano 67
 
-Na primavera, houve luta na praia: Orum atacou Taem em nome do Olho Escuro. Taem foi derrotado e perdeu o que tinha guardado. Na luta morreram Tamkoik e Tamtamur. Foram 11 dias de fome no inverno em Gaon, com dez mortos. Para Orum, a floresta virou Floresta da Vitória. Taem acabou: Kikiya e Suya foram viver em Gaon. Doloya anunciou que o Que Apaga o Sol proibia qualquer trato com Veak. O deus nunca disse isso, mas Doak obedeceu.
+Orum não esqueceu o ano 66 e atacou Taem outra vez. Taem expulsou os atacantes. Na luta morreram Maela e Koveon. A seca voltou, como no ano 48: 21 dias sem chuva, até que o céu se abriu. Em Taem, Tamkoik pediu: «Manda água, Que Nega, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Taem duvidou de que o Que Nega tinha ouvido. O deus nada fez: o crédito era de graça.
 
-### Ano 68
-
-Na primavera, Viya, de Gaon, casou-se com Kios e foi viver em Doak. Foi o primeiro laço entre os dois povos.
-
-### Ano 69
-
-A febre levou Madoya. No outono, Vekie anunciou que o Olho Escuro proibia qualquer trato com Veak. O deus nunca disse isso, mas Orum obedeceu.
+*Do ano 68 ao 69, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 70
 
-Vekie anunciou que o Olho Escuro proibia qualquer trato com Doak. O deus nunca disse isso, mas Orum obedeceu. Os de Orum caíram sobre Doak no lago em nome do Olho Escuro. Doak resistiu, e Orum voltou de mãos vazias. Koe e Kois morreram na luta. O mesmo chão ganhou dois nomes: Lago da Vitória para Doak, Lago do Luto para Orum. Orum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois da luta, Orum e Doak se encontraram no lago e juraram paz. No fim do ano 70, 152 pessoas viviam no mundo: Veak (54), Gaon (43), Orum (31) e Doak (24).
+No fim do ano 70, 29 pessoas viviam no mundo: Taem (19) e Orum (10).
 
-### Ano 71
-
-Na primavera do ano 71, houve luta na floresta: Orum atacou Veak em nome do Olho Escuro. Orum venceu e levou a comida guardada. Na luta morreram Vios e Veu. Orum e Veak, cansados de enterrar os seus, fizeram as pazes na floresta.
+*O ano 71 passou sem nada que a crônica precise guardar.*
 
 ### Ano 72
 
-Na primavera do ano 72, Vitamur implorou pela filha. Gakis morreu, e daquele dia em diante Vitamur cuspia no chão quando falavam do Que Apaga o Sol. Em Gaon, cansados do silêncio, acusaram Kurpeon de mentir em nome do Que Apaga o Sol. Kurpeon perdeu o lugar junto ao altar. Os que já não acreditavam, com Kure à frente, deixaram Gaon e fundaram Nugan no lago. Lá ninguém reza. A doença entrou em Gaon e matou seis pessoas. No outono, os de Gaon caíram sobre Doak no lago. Doak expulsou os atacantes. Maela, Kurur e Pepe morreram na luta.
+No inverno do ano 72, a guerra entre Orum e Taem continuou: Orum voltou a atacar na praia. Taem resistiu, e Orum voltou de mãos vazias. Na luta morreram Pevik, Kokiu e Kou.
 
 ### Ano 73
 
-Em Orum, Pevik pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Orum viu nisso a mão do Olho Escuro. Foi só o tempo, mas quem iria dizer?
+No outono, de novo Orum contra Taem, como no ano 72. Taem resistiu, e Orum voltou de mãos vazias. Tamkiur morreu na luta.
 
 ### Ano 74
 
-Os de Orum caíram sobre Gaon no morro. Gaon resistiu, e Orum voltou de mãos vazias. Na luta morreram Vemaon, Mara, Kurkik e Makiu. Desde então, Orum chama o morro de Morro do Luto. Depois de tantos mortos, Orum e Gaon se encontraram no morro e juraram paz. Pevik tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Orum viu nisso a mão do Olho Escuro. Foi só o tempo, mas quem iria dizer? No verão, nasceu Marveos, filho de Gaena e Nutamon, com sangue de Doak e de Gaon.
+No outono do ano 74, com Vinuis à frente, quatro pessoas deixaram Taem e fundaram Kurum, na floresta.
 
 ### Ano 75
 
-Na primavera do ano 75, os de Orum caíram sobre Nugan no lago em nome do Olho Escuro. Nugan resistiu, e Orum voltou de mãos vazias. Na luta morreram Orya e Nutamos. Para Nugan, o lago virou Lago da Vitória. Kik, de Veak, casou-se com Kure e mudou-se para Nugan, coisa que ninguém tinha feito antes.
+Em Kurum, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 41, só a crônica guarda. Selarela, a medrosa, deu à luz e não sobreviveu ao parto.
 
 ### Ano 76
 
-Kiveik rezou por Kurvie até a voz acabar. Kurvie morreu mesmo assim, e Kiveik nunca mais rezou. No outono, Orum atacou Doak no lago em nome do Olho Escuro. Orum venceu e levou a comida guardada. Kios, Pekurur e Tamkiur morreram na luta. A doença entrou em Veak e matou três pessoas. Doloya anunciou que o Que Apaga o Sol proibia qualquer trato com Orum. O deus nunca disse isso, mas Doak obedeceu.
+Nasceu Koena, a primeira de Kurum.
 
 ### Ano 77
 
-No verão do ano 77, Veak atacou Nugan no lago. Veak venceu e levou a comida guardada. Kure e Vitamur morreram na luta. Para Veak, o lago virou Lago da Vitória. No inverno, Doak e Orum, cansados de enterrar os seus, fizeram as pazes na praia.
+Doela morreu de repente, aos 13 anos. A seca voltou, como no ano 67: 20 dias sem chuva, até que o céu se abriu. Em Taem, Tamkoik pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Taem duvidou de que o Que Nega tinha ouvido. O deus nada fez: o crédito era de graça.
 
 ### Ano 78
 
-Obkurur morreu com 3 anos, de uma febre que ninguém entendeu. Morreu o último que tinha visto o ano 41. Em Nugan, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Veak e Orum, cansados de enterrar os seus, fizeram as pazes na praia. Veak atacou Doak no lago. Veak venceu e levou a comida guardada. Na luta morreram Dokiya e Vie. No outono, Nukios, de Nugan, tomou por esposa Vetame, de Doak, e os dois povos passaram a se visitar.
+A fome por causa da seca durou 19 dias em Taem e levou nove vidas. Em Taem, Tamkoik pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Taem viu nisso a mão do Que Nega. O deus nada fez: o crédito era de graça. A guerra entre Taem e Orum continuou: Taem voltou a atacar na praia. Orum resistiu, e Taem voltou de mãos vazias. Na luta morreram Kiena, Lou e Tamtamur. Taem e Orum, cansados de enterrar os seus, fizeram as pazes na praia.
 
 ### Ano 79
 
-Na primavera, Vekie, que guiava Orum, morreu dormindo, aos 60 anos. Be passou a guiar Orum, mas Ore não aceitou e guardou rancor. Depois da derrota, Nugan não existia mais: os duas que sobraram foram levados para Veak. No inverno, Peya não podia mais viver perto de Kurvis. Saiu de Veak com nove pessoas e fundou Doil na praia. Em Doil, Kovik tomou para si o cuidado das preces ao Que Apaga o Sol.
+Em Kurum, Vinuis pediu: «Manda água, Que Nega, que as crianças têm sede.» Quando a chuva voltou, Kurum agradeceu ao Que Nega. A crônica sabe que foi acaso.
 
 ### Ano 80
 
-Morreu Doloya, que falava pelo Que Apaga o Sol em Doak, aos 58 anos. A fome no inverno durou 11 dias em Doil e levou duas vidas. Em Doil, Tamveis pediu: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Doil deu graças ao Que Apaga o Sol. O deus não tinha feito nada. Desde então, Doil chama a praia de Praia da Fome. Veak passou fome no inverno por 14 dias, e dez pessoas morreram. No fim do ano 80, 176 pessoas viviam no mundo: Veak (55), Gaon (43), Orum (30), Doak (41) e Doil (7).
+Na primavera do ano 80, Tamkoik, que fundou Taem e o guiava, morreu de velhice aos 60 anos. Kikos, que guiava Taem, teve uma filha: Kurya. No fim do ano 80, 31 pessoas viviam no mundo: Taem (16), Orum (10) e Kurum (5).
 
-### Ano 81
-
-Na primavera, em nome do Olho Escuro, Maur proibiu casamentos e trocas com Doil. Era vontade de Maur, não do deus. No inverno, os de Orum caíram sobre Doak no lago em nome do Olho Escuro. Doak resistiu, e Orum voltou de mãos vazias. Na luta morreram Kitamos, Beik e Peon. Orum e Doak, cansados de enterrar os seus, fizeram as pazes no lago. Depois da derrota, Doil não existia mais: os cinco que sobraram foram levados para Orum.
-
-### Ano 82
-
-Na primavera, Kiveik, o curioso, morreu de velhice aos 53 anos. Maur, que falava pelo Olho Escuro em Orum, morreu de repente, aos 39 anos. Nuis não podia mais viver perto de Kurpeon. Saiu de Gaon com dezesseis pessoas e fundou Kiar na praia. Não restou ninguém em Orum. Gaon acabou: Mabela e Kios foram viver em Veak.
-
-### Ano 83
-
-A fome por causa da seca durou 23 dias em Kiar e levou cinco vidas. Em Kiar, Nuis pediu: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Kiar viu nisso a mão do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? A praia passou a ser a praia da fome: Praia da Fome. Veak conheceu a maior fome da sua história por causa da seca. Em 26 dias, morreram 19. Muitas cabanas ficaram vazias.
+*Os anos 81 a 83 passaram em paz.*
 
 ### Ano 84
 
-Na primavera, nasceu Tamur, filho de Vinuis e Tamnur, com sangue de Kiar e de Taem. No verão, Vela, de Veak, casou-se com Tamnur e foi viver em Kiar. Foi o primeiro laço entre os dois povos.
+Na primavera, Gaya, que guiava Taem, morreu ao dar à luz. Em Kurum, Kokour tomou para si o cuidado das preces ao Que Nega.
 
 *No ano 85, nada de notável aconteceu.*
 
 ### Ano 86
 
-Nuis, que fundou Kiar e o guiava, morreu de velhice aos 56 anos. Kiena, de Kiar, casou-se com Tampeos e foi viver em Doak. Foi o primeiro laço entre os dois povos.
+Na primavera, Vinuis, que fundou Kurum e o guiava, morreu de repente, aos 38 anos. A seca voltou, como no ano 77: 21 dias sem chuva, até que o céu se abriu. Depois da seca, Kurum jurou nunca desperdiçar água. Mara, que falava pelo Olho Escuro em Orum, deu à luz e não sobreviveu ao parto.
 
 ### Ano 87
 
-Na primavera do ano 87, morreu Tamkiela, que falava pelo Que Apaga o Sol em Veak, aos 52 anos.
+Taem passou fome por causa da seca por 16 dias, e três pessoas morreram. Em Taem, Kikiya pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Taem viu nisso a mão do Que Nega. A crônica sabe que foi acaso. Foram 37 dias de fome por causa da seca em Kurum, com três mortos. Desde então, Kurum chama a floresta de Floresta da Fome. No inverno, Kokour, de Kurum, tomou por esposa Gais, de Taem, e os dois povos passaram a se visitar.
 
-*Do ano 88 ao 89, a vida seguiu sem grandes acontecimentos.*
+### Ano 88
+
+Vemaon tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Orum deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Orum atacou Taem na praia. Taem resistiu, e Orum voltou de mãos vazias. Na luta morreu Orya. A guerra entre Orum e Taem continuou: Orum voltou a atacar na praia. Taem expulsou os atacantes. Na luta morreu Gakik.
+
+### Ano 89
+
+Foram 22 dias de fome no inverno em Orum, com quatro mortos.
 
 ### Ano 90
 
-Kurvis tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Veak viu nisso a mão do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? No fim do ano 90, 162 pessoas viviam no mundo: Veak (72), Doak (62) e Kiar (28).
+No fim do ano 90, 35 pessoas viviam no mundo: Taem (23), Orum (5) e Kurum (7).
 
-*O ano 91 passou sem nada que a crônica precise guardar.*
+### Ano 91
 
-### Ano 92
+Kovios, que falava pelo Que Nega em Taem, morreu de velhice aos 54 anos.
 
-Em Veak, Kurvis pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Veak deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso. Os de Veak caíram sobre Kiar na praia. Kiar foi derrotado e perdeu o que tinha guardado.
+*O ano 92 foi calmo.*
 
 ### Ano 93
 
-Foram 20 dias de fome no inverno em Veak, com um morto. Veak atacou Kiar na praia. Kiar foi derrotado e perdeu o que tinha guardado. Veve morreu na luta. No outono, Veak atacou Kiar na praia. Kiar foi derrotado e perdeu o que tinha guardado. Na luta morreram Marik e Tamkoena.
+O sol escureceu outra vez. A guerra entre Orum e Taem continuou: Orum voltou a atacar na praia. Taem expulsou os atacantes. Taem venceu Orum e levou os cinco sobreviventes para viver sob seu mando. Orum deixou de existir, mas os vencidos guardaram seus costumes em segredo. A rixa entre Kikiya e Beos rachou Taem. Kikiya partiu com os seus, dezessete pessoas, e fundou Bean no lago. Gaur não podia mais viver perto de Beos. Saiu de Taem com quatro pessoas e fundou Esem no morro.
 
 ### Ano 94
 
-Houve luta na floresta: Kiar atacou Veak. Veak resistiu, e Kiar voltou de mãos vazias. Na luta morreu Tamgaur. Kuron, que falava pelo Que Apaga o Sol em Veak, morreu de fome. Kiar via Doak ser atendido e concluiu que o Que Apaga o Sol tinha escolhido os outros. Veak acabou: Tamos e Kurkiya foram viver em Kiar. Depois da seca, Doak jurou nunca desperdiçar água.
+Em Esem, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 61, só a crônica guarda. Nasceu Nuibur, o primeiro de Bean. No verão, Kikos passou a falar pelo Que Nega em Bean. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 95
 
-Nukurur, que guiava Doak, morreu de frio. Doak escolheu Dos para guiar o grupo. Nutamon queria o lugar e nunca perdoou. Foram 11 dias de fome por causa da seca em Doak, com nove mortos. Foram 29 dias de fome por causa da seca em Kiar, com doze mortos. A seca voltou, como no ano 48: 23 dias sem chuva, até que o céu se abriu.
+Na primavera, em Esem nasceu a primeira criança: Selos, filho de Gataena e Gaur. Em Esem, Gaur pediu: «Que Nega, que a chuva volte.» Quando a chuva voltou, Esem agradeceu ao Que Nega. Foi só o tempo, mas quem iria dizer?
 
-*Do ano 96 ao 98, a vida seguiu sem grandes acontecimentos.*
+*No ano 96, nada de notável aconteceu.*
+
+### Ano 97
+
+Em Bean, Kikiya pediu: «Cura Kiya, Que Nega. Ela é tão pequena.» A febre passou, e Kikiya contou a todos que o Que Nega tinha ouvido. O deus nada fez: o crédito era de graça.
+
+### Ano 98
+
+Na primavera do ano 98, Beos, que guiava Taem, morreu de repente, aos 36 anos. Gataena passou a falar pelo Que Nega em Esem. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 99
 
-Na primavera do ano 99, Tampeos rezou por Kurpeur até a voz acabar. Kurpeur morreu mesmo assim, e Tampeos nunca mais rezou. Em Doak, Tampeos pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Doak viu nisso a mão do Que Apaga o Sol. O deus não tinha feito nada. Kuris, a corajosa, cansou de dividir pouca comida. Partiu com 21 pessoas para a floresta e ali fundou Maran. Uma febre correu Doak e levou sete vidas. Nasceu Penur, o primeiro de Maran.
+Na primavera, Nukoya, de Bean, casou-se com Oros e foi viver em Taem. Foi o primeiro laço entre os dois povos.
 
 ### Ano 100
 
-Na primavera, Nutamya, de Maran, casou-se com Nudo e foi viver em Doak. Foi o primeiro laço entre os dois povos. No fim do ano 100, 106 pessoas viviam no mundo: Doak (61), Kiar (22) e Maran (23).
+No outono, Fakuros morreu de fome. Foram 8 dias de fome por causa da seca em Esem, com cinco mortos. O morro passou a ser o morro da fome: Morro da Fome. De novo a chuva sumiu, como no ano 86. Foram 21 dias de seca. No fim do ano 100, 55 pessoas viviam no mundo: Taem (13), Kurum (15), Bean (24) e Esem (3).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Doak** vive no lago, com 61 pessoas, e planta roças; nasceu de uma briga em Veak no ano 64; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 59); treina os jovens com lanças (desde o ano 62); não desperdiça uma gota d'água (desde o ano 94).
-- **Kiar** vive na praia, com 22 pessoas, e planta roças; nasceu de uma briga em Gaon no ano 82; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 41); treina os jovens com lanças (desde o ano 56); queima os mortos (desde o ano 66); não desperdiça uma gota d'água (desde o ano 94).
-- **Maran** vive na floresta, com 23 pessoas, e planta roças; nasceu de uma migração em Doak no ano 99; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 59); treina os jovens com lanças (desde o ano 62); não desperdiça uma gota d'água (desde o ano 94).
+- **Taem** vive na praia, com 13 pessoas, e planta roças; nasceu de uma briga em Gaon no ano 55; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
+- **Kurum** vive na floresta, com 15 pessoas, e planta roças; nasceu de uma migração em Taem no ano 74; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 61); não desperdiça uma gota d'água (desde o ano 86).
+- **Bean** vive no lago, com 24 pessoas, e planta roças; nasceu de uma briga em Taem no ano 93; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 61).
+- **Esem** vive no morro, com 3 pessoas, e planta roças; nasceu de uma briga em Taem no ano 93; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
 
-Povos que deixaram de existir: Koil, Veak, Mail, Gaon, Taem, Orum, Nugan e Doil.
+Povos que deixaram de existir: Koil, Veak, Mail, Gaon e Orum.
 
-Lugares com nome: Praia da Fome (praia, para Mail), Praia da Vitória (praia, para Gaon), Praia do Raio (praia, para Orum), Praia da Vitória (praia, para Veak), Praia do Luto (praia, para Taem), Praia da Trégua (praia, para Doak), Praia da Fome (praia, para Doil), Praia da Fome (praia, para Kiar), Lago da Vitória (lago, para Doak), Lago do Luto (lago, para Orum), Lago do Luto (lago, para Gaon), Lago da Vitória (lago, para Nugan), Lago da Vitória (lago, para Veak), Floresta da Vitória (floresta, para Veak), Floresta do Luto (floresta, para Gaon), Floresta da Vitória (floresta, para Orum), Morro do Raio (morro, para Gaon), Morro do Luto (morro, para Koil) e Morro do Luto (morro, para Orum).
+Lugares com nome: Praia da Fome (praia, para Mail), Praia da Vitória (praia, para Gaon), Praia do Raio (praia, para Orum), Praia da Vitória (praia, para Veak), Praia do Luto (praia, para Taem), Floresta da Vitória (floresta, para Veak), Floresta do Luto (floresta, para Gaon), Floresta do Luto (floresta, para Orum), Floresta da Fome (floresta, para Kurum), Morro do Raio (morro, para Gaon), Morro do Luto (morro, para Koil) e Morro da Fome (morro, para Esem).
 
-Em 100 anos nasceram 648 pessoas e morreram 554.
+Em 100 anos nasceram 369 pessoas e morreram 326.

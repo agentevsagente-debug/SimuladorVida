@@ -1399,8 +1399,7 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 		registrar("conquista", "social", 9, zona, vencedor.id, ids, {"vencido": perdedor.id}, perdedor.id)
 		return
 	# Trégua.
-	var mortos_total := _mortos_entre(a_g.id, b_g.id)
-	var p_tregua := 0.12 + 0.05 * mortos_total
+	var p_tregua := 0.06 + 0.05 * mortos.size()
 	for lado in [a_g, b_g]:
 		if lado.lider != -1 and pessoas[lado.lider].tem("pacifico"):
 			p_tregua += 0.2
@@ -1419,7 +1418,7 @@ func _mortos_entre(g1: int, g2: int) -> int:
 
 
 func _tregua(a_g: Grupo, b_g: Grupo, zona: String, motivo: String) -> void:
-	var ate := dia_abs() + DIAS_ANO * (3 if motivo == "deus" else 2)
+	var ate := dia_abs() + DIAS_ANO * (6 if motivo == "deus" else 4)
 	a_g.tregua_ate[b_g.id] = ate
 	b_g.tregua_ate[a_g.id] = ate
 	a_g.hostilidade[b_g.id] = 1.0

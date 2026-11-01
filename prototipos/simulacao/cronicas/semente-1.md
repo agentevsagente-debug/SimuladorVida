@@ -240,11 +240,11 @@ Houve luta na floresta: Zeor atacou Mian. Mian resistiu, e Zeor voltou de mãos 
 
 ### Ano 84
 
-Zeor atacou Mian na floresta. Mian foi derrotado e perdeu o que tinha guardado. Zeloa, Saik, Saut e Torem morreram na luta. Mian não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+A guerra entre Zeor e Mian continuou: Zeor voltou a atacar na floresta. Mian foi derrotado e perdeu o que tinha guardado. Zeloa, Saik, Saut e Torem morreram na luta. Mian não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
 ### Ano 85
 
-Na primavera do ano 85, os de Zeor caíram sobre Mian na floresta. Mian foi derrotado e perdeu o que tinha guardado. Zeor e Mian, cansados de enterrar os seus, fizeram as pazes na floresta.
+Na primavera do ano 85, de novo Zeor contra Mian, como no ano 84. Mian foi derrotado e perdeu o que tinha guardado. Zeor e Mian, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 86
 
@@ -294,19 +294,19 @@ No verão do ano 99, Torut implorou pela filha. Loya morreu, e daquele dia em di
 
 ### Ano 100
 
-Na primavera, Enut, que guiava Mian, morreu de repente, aos 38 anos. Houve luta na praia: Zeor atacou Nies. Nies resistiu, e Zeor voltou de mãos vazias. Mibera, Zeu e Razeu morreram na luta. Zeor e Nies, cansados de enterrar os seus, fizeram as pazes na praia. A fome no inverno durou 10 dias em Zeor e levou uma vida. No fim do ano 100, 189 pessoas viviam no mundo: Zeor (89), Mian (38), Nies (18) e Esem (44).
+Na primavera, Enut, que guiava Mian, morreu de repente, aos 38 anos. Foram 10 dias de fome no inverno em Zeor, com um morto. De novo a chuva sumiu, como no ano 90. Foram 18 dias de seca. Depois da seca, Esem jurou nunca desperdiçar água. No inverno, Raik, que guiava Esem, não resistiu à fome. No fim do ano 100, 121 pessoas viviam no mundo: Zeor (54), Mian (42), Nies (17) e Esem (8).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 89 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (desde o ano 39); guarda tanta comida para o inverno (desde o ano 55); queima os mortos (desde o ano 71); treina os jovens com lanças (desde o ano 83).
-- **Mian** vive na floresta, com 38 pessoas, e planta roças; nasceu de uma briga em Zeor no ano 39; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 70); treina os jovens com lanças (desde o ano 84); queima os mortos (desde o ano 97).
-- **Nies** vive na praia, com 18 pessoas, e planta roças; nasceu de uma briga em Mian no ano 51; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 64); treina os jovens com lanças (desde o ano 70); não sai de casa em dia de tempestade (desde o ano 99).
-- **Esem** vive no morro, com 44 pessoas, e planta roças; nasceu de uma migração em Mian no ano 71; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (desde o ano 45); guarda tanta comida para o inverno (desde o ano 70); treina os jovens com lanças (desde o ano 82); não sai de casa em dia de tempestade (desde o ano 94).
+- **Zeor** vive no lago, com 54 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (desde o ano 39); guarda tanta comida para o inverno (desde o ano 55); queima os mortos (desde o ano 71); treina os jovens com lanças (desde o ano 83).
+- **Mian** vive na floresta, com 42 pessoas, e planta roças; nasceu de uma briga em Zeor no ano 39; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 70); treina os jovens com lanças (desde o ano 84); queima os mortos (desde o ano 97).
+- **Nies** vive na praia, com 17 pessoas, e planta roças; nasceu de uma briga em Mian no ano 51; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 64); treina os jovens com lanças (desde o ano 70); não sai de casa em dia de tempestade (desde o ano 99).
+- **Esem** vive no morro, com 8 pessoas, e planta roças; nasceu de uma migração em Mian no ano 71; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (desde o ano 45); guarda tanta comida para o inverno (desde o ano 70); treina os jovens com lanças (desde o ano 82); não sai de casa em dia de tempestade (desde o ano 94); não desperdiça uma gota d'água (desde o ano 100).
 
 Povos que deixaram de existir: Vior.
 
 Lugares com nome: Praia da Vitória (praia, para Zeor), Praia do Luto (praia, para Nies), Lago do Raio (lago, para Zeor), Floresta da Fome (floresta, para Mian), Floresta do Luto (floresta, para Zeor), Morro da Vitória (morro, para Zeor) e Morro do Luto (morro, para Esem).
 
-Em 100 anos nasceram 596 pessoas e morreram 419.
+Em 100 anos nasceram 593 pessoas e morreram 484.

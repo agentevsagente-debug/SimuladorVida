@@ -230,7 +230,7 @@ Na primavera do ano 68, Ena, a corajosa, morreu dormindo, aos 54 anos. Misa, que
 
 ### Ano 69
 
-Na primavera do ano 69, houve luta no morro: Gaor atacou Nuak. Nuak foi derrotado e perdeu o que tinha guardado. Foi a primeira briga entre povos. No outono, Gaor atacou Nuak no morro. Gaor venceu e levou a comida guardada. Na luta morreram Torbea, Gara e Zezeik. Nuak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Gaor e Nuak, cansados de enterrar os seus, fizeram as pazes no morro. Linut, que guiava Mirur, morreu de febre aos 70 anos.
+Na primavera do ano 69, houve luta no morro: Gaor atacou Nuak. Nuak foi derrotado e perdeu o que tinha guardado. Foi a primeira briga entre povos. No outono, a guerra entre Gaor e Nuak continuou: Gaor voltou a atacar no morro. Gaor venceu e levou a comida guardada. Na luta morreram Torbea, Gara e Zezeik. Nuak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Gaor e Nuak, cansados de enterrar os seus, fizeram as pazes no morro. Linut, que guiava Mirur, morreu de febre aos 70 anos.
 
 ### Ano 70
 
@@ -238,126 +238,133 @@ Zeor conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 13.
 
 ### Ano 71
 
-Morreu o último que tinha visto o ano 8. Em Zeor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Gaor, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 8, só a crônica guarda. A fome no inverno durou 16 dias em Gaor e levou nove vidas. A praia passou a ser a praia da fome: Praia da Fome. No inverno, os de Mirur caíram sobre Nuak no morro em nome do Que Rega. Nuak foi derrotado e perdeu o que tinha guardado.
+Morreu o último que tinha visto o ano 8. Em Zeor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Gaor, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 8, só a crônica guarda. A fome no inverno durou 16 dias em Gaor e levou nove vidas. A praia passou a ser a praia da fome: Praia da Fome.
 
-*No ano 72, nada de notável aconteceu.*
+### Ano 72
+
+Gaor escolheu Loem para guiar o grupo. Misaim queria o lugar e nunca perdoou. Loem, que guiava Gaor, não resistiu à fome. A seca voltou, como no ano 51: 26 dias sem chuva, até que o céu se abriu. Depois da seca, Gaor jurou nunca desperdiçar água. Torzeim tinha rezado: «Manda água, Que Ergue, que as crianças têm sede.» Quando a chuva voltou, Nuak agradeceu ao Que Ergue. O deus não tinha feito nada.
 
 ### Ano 73
 
-Gaor atacou Zeor no lago. Zeor expulsou os atacantes. Na luta morreu Zeraya. Depois da luta, Gaor e Zeor se encontraram no lago e juraram paz. Para Gaor, o lago virou Lago da Trégua. Gaor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Loem passou a guiar Gaor, mas Misaim não aceitou e guardou rancor.
+Na primavera do ano 73, Mirur atacou Nuak no morro. Nuak expulsou os atacantes. Na luta morreram Satorem e Torzeim. Gaor atacou Zeor no lago. Zeor expulsou os atacantes. Na luta morreram Linsaya e Torsaem. Para Gaor, o lago virou Lago do Luto. Depois da derrota, os jovens de Gaor passaram a treinar com lanças. Gaor passou fome por causa da seca por 28 dias, e dez pessoas morreram.
 
 ### Ano 74
 
-Misaim tinha rezado: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A comida voltou, e Gaor deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? No verão, os de Gaor caíram sobre Nuak no morro. Nuak expulsou os atacantes. Na luta morreram Loem, Gaena e Saut. Gaor escolheu Raline para guiar o grupo. Misaim queria o lugar e nunca perdoou. Gaor e Nuak, cansados de enterrar os seus, fizeram as pazes no morro.
+Na primavera, Gaor não esqueceu o ano 69 e atacou Nuak outra vez. Gaor venceu e levou a comida guardada. Na luta morreu Bem. No verão, Gaor e Zeor, cansados de enterrar os seus, fizeram as pazes no lago.
 
 ### Ano 75
 
-Linmia tinha rezado: «Que Ergue, não deixes nossos filhos morrerem de fome.» A comida voltou, e Nuak deu graças ao Que Ergue. O deus nada fez: o crédito era de graça.
+Torbeim não podia mais viver perto de Linsaim. Saiu de Zeor com dezenove pessoas e fundou Vies na praia. Em Vies nasceu a primeira criança: Loveya, filha de Linya e Miraim. Uma febre correu Nuak e levou quatro vidas. No outono, em Vies, Rue tomou para si o cuidado das preces ao Senhor do Trovão. Rue anunciou que o Senhor do Trovão proibia qualquer trato com Zeor. O deus nunca disse isso, mas Vies obedeceu.
 
 ### Ano 76
 
-Linik, o devoto, morreu dormindo, aos 57 anos. Em Mirur, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 18, só a crônica guarda. Para Zeor, o deus já não era «o Senhor do Trovão»: passou a ser «o Que Apaga o Sol». Para Gaor, o deus já não era «o Senhor do Trovão»: passou a ser «o Olho Escuro». Um raio caiu no lago durante a tempestade e matou Belinim. Em Zeor, disseram que era castigo.
+Em Vies, Rue pediu: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A comida voltou, e Vies deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? No outono, a tempestade trouxe raios para a praia. Um deles acertou Ralora. Os seus nunca esqueceram. O lugar ganhou nome: Praia do Raio.
 
 ### Ano 77
 
-Saraim, que falava pelo Que Rega em Mirur, não resistiu à fome. A seca voltou, como no ano 51: 19 dias sem chuva, até que o céu se abriu. No inverno, Torzeim rezou por Lojua até a voz acabar. Lojua morreu mesmo assim, e Torzeim nunca mais rezou. Depois de tantas preces sem resposta, Nuak concluiu que tinha pecado. Era preciso pagar. Procuraram uma culpada e acharam Torzea, que duvidava. Começaram as oferendas: frutas e peixe deixados no chão para o Que Ergue.
+No outono do ano 77, a febre levou Enu, que guiava Mirur. Mirur escolheu Engaem para guiar o grupo. Rurae queria o lugar e nunca perdoou. Vies atacou Zeor no lago em nome do Senhor do Trovão. Vies venceu e levou a comida guardada. Na luta morreram Enenut e Lorau. Depois da derrota, os jovens de Zeor passaram a treinar com lanças. Saraim, que falava pelo Que Rega em Mirur, não resistiu à fome.
 
 ### Ano 78
 
-Na primavera do ano 78, o deus não respondia, e Zeor achou que a culpa era sua: tinham feito algo errado. Começaram as oferendas: frutas e peixe deixados no chão para o Que Apaga o Sol. Misaim rezou por Viu até a voz acabar. Viu morreu mesmo assim, e Misaim nunca mais rezou. Uma febre correu Zeor e levou quinze vidas. Veio a pior fome que o mundo tinha visto: 23 dias por causa da seca em Zeor, e 27 mortos. As crianças foram as primeiras.
+Na primavera do ano 78, Lout, que falava pelo Senhor do Trovão em Zeor, morreu de velhice aos 61 anos. Morreu Vivim, que fundou Nuak e o guiava, aos 50 anos. Veio a pior fome que o mundo tinha visto: 26 dias por causa da seca em Mirur, e 35 mortos. As crianças foram as primeiras. Uma tosse que não passava matou quatro pessoas em Gaor. Depois da febre, Gaor passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 79
 
-Em nome do Que Rega, Gae proibiu casamentos e trocas com Nuak. Era vontade de Gae, não do deus. Linsaya implorou pelo filho. Kout morreu, e daquele dia em diante Linsaya cuspia no chão quando falavam do Olho Escuro. No verão, o frio levou Raline, que guiava Gaor. Um inverno duro matou duas pessoas de frio.
+Morreu Mitora, que falava pelo Senhor do Trovão em Zeor, aos 50 anos. Em nome do Senhor do Trovão, Rue proibiu casamentos e trocas com Gaor. Era vontade de Rue, não do deus.
 
 ### Ano 80
 
-No fim do ano 80, 134 pessoas viviam no mundo: Zeor (55), Mirur (36), Gaor (19) e Nuak (24).
+Morreu Torbeim, que fundou Vies e o guiava, aos 52 anos. Foram 7 dias de fome no inverno em Vies, com três mortos. Houve luta na praia: Vies atacou Gaor em nome do Senhor do Trovão. Vies venceu e levou a comida guardada. Mienu e Vienik morreram na luta. No fim do ano 80, 168 pessoas viviam no mundo: Zeor (56), Mirur (45), Gaor (15), Nuak (28) e Vies (24).
 
-*O ano 81 foi calmo.*
+### Ano 81
+
+Morreu o último que tinha visto o ano 28. Em Gaor, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Vies passou fome no inverno por 13 dias, e duas pessoas morreram. Rue tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Vies viu nisso a mão do Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Em nome do Senhor do Trovão, Misaim proibiu casamentos e trocas com Vies. Era vontade de Misaim, não do deus. O inverno foi de gelo: cinco pessoas morreram de frio.
 
 ### Ano 82
 
-Na primavera do ano 82, morreu Lout, que falava pelo Que Apaga o Sol em Zeor, aos 65 anos.
+Zeor atacou Mirur na floresta em nome do Senhor do Trovão. Mirur foi derrotado e perdeu o que tinha guardado. Na luta morreu Tatorut. Linsaim anunciou que o Senhor do Trovão proibia qualquer trato com Mirur. O deus nunca disse isso, mas Zeor obedeceu. A seca voltou, como no ano 72: 19 dias sem chuva, até que o céu se abriu. No inverno, a guerra entre Zeor e Vies continuou: Zeor voltou a atacar na praia em nome do Senhor do Trovão. Vies foi derrotado e perdeu o que tinha guardado. Na luta morreu Envia. Zeor e Mirur fizeram as pazes na floresta, antes que a briga crescesse.
 
 ### Ano 83
 
-Entorut, o medroso, morreu de repente, aos 41 anos. Em Gaor, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 28, só a crônica guarda. De novo o sol se apagou no meio do dia. Depois disso, Mirur deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Olho Escuro».
+Na primavera, Raut, de Vies, tomou por esposa Nutora, de Nuak, e os dois povos passaram a se visitar. A guerra entre Vies e Zeor continuou: Vies voltou a atacar no lago em nome do Senhor do Trovão. Zeor foi derrotado e perdeu o que tinha guardado. Na luta morreram Mimiem e Satorik. Nuak passou fome por causa da seca por 19 dias, e doze pessoas morreram. Vies passou fome por causa da seca por 25 dias, e oito pessoas morreram.
 
-*O ano 84 passou sem nada que a crônica precise guardar.*
+### Ano 84
+
+A guerra entre Zeor e Vies continuou: Zeor voltou a atacar na praia em nome do Senhor do Trovão. Vies resistiu, e Zeor voltou de mãos vazias. Vik morreu na luta.
 
 ### Ano 85
 
-Misaim tinha rezado: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Gaor deu graças ao Olho Escuro. O deus não tinha feito nada. A floresta pegou fogo sem que ninguém acendesse nada. Rumim e Mimira morreram nas chamas. Em Mirur, disseram que o lugar estava amaldiçoado.
+A floresta pegou fogo sem que ninguém acendesse nada. Entorut, Sau e Linena morreram nas chamas. Em Mirur, disseram que o lugar estava amaldiçoado. Para Mirur, o deus já não era «o Que Rega»: passou a ser «a Chama de Cima». Miu implorou pela filha. Samiu morreu, e daquele dia em diante Miu cuspia no chão quando falavam da Chama de Cima. Depois de tantas preces sem resposta, Mirur concluiu que tinha pecado. Era preciso pagar. Gaor acabou: Salinik e Ensaya foram viver em Mirur.
 
 ### Ano 86
 
-Torbeim tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeor viu nisso a mão do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 86, Rue, que guiava Vies, morreu dormindo, aos 60 anos. Vies escolheu Zem para guiar o grupo. Linmia queria o lugar e nunca perdoou. Torvira tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Senhor do Trovão. A crônica sabe que foi acaso. No verão, os de Mirur caíram sobre Nuak no morro. Nuak foi derrotado e perdeu o que tinha guardado. Saos e Nuik morreram na luta. Foram 28 dias de fome por causa da seca em Mirur, com 25 mortos.
 
-*O ano 87 passou sem nada que a crônica precise guardar.*
+### Ano 87
+
+Morreu Linloya, que guiava Zeor, aos 54 anos. De novo Zeor contra Vies, como no ano 84 em nome do Senhor do Trovão. Vies foi derrotado e perdeu o que tinha guardado. Na luta morreram Zem e Miraim. A seca voltou, como no ano 82: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 88
 
-Torbeim, que guiava Zeor, morreu de velhice aos 60 anos. A doença entrou em Nuak e matou duas pessoas. A fome no inverno durou 7 dias em Nuak e levou três vidas. Um inverno duro matou quatro pessoas de frio.
+Em Vies, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 48, só a crônica guarda.
 
 ### Ano 89
 
-Torzeim, o ambicioso, morreu de repente, aos 42 anos. Houve luta na floresta: Gaor atacou Mirur. Mirur foi derrotado e perdeu o que tinha guardado. Na luta morreu Ralina. Os de Gaor caíram sobre Mirur na floresta. Gaor venceu e levou a comida guardada. Na luta morreram Linmira, Linim, Linmios e Vim. Para Gaor, a floresta virou Floresta da Vitória. Gaor e Mirur, cansados de enterrar os seus, fizeram as pazes na floresta.
+Morreu Viem, o ambicioso, aos 45 anos. A guerra entre Zeor e Vies continuou: Zeor voltou a atacar na praia em nome do Senhor do Trovão. Vies foi derrotado e perdeu o que tinha guardado. Entoru e Beu morreram na luta. Loraya, a curiosa, cansou de dividir pouca comida. Partiu com oito pessoas para a praia e ali fundou Raem.
 
 ### Ano 90
 
-Na primavera do ano 90, morreu Gae, que falava pelo Olho Escuro em Mirur, aos 45 anos. Houve luta na floresta: Nuak atacou Mirur. Mirur expulsou os atacantes. Na luta morreram Loraya e Sanua. Desde então, Nuak chama a floresta de Floresta do Luto. Nuak e Mirur, cansados de enterrar os seus, fizeram as pazes na floresta. Nuak passou fome no inverno por 17 dias, e três pessoas morreram. No fim do ano 90, 198 pessoas viviam no mundo: Zeor (74), Mirur (51), Gaor (39) e Nuak (34).
+Em Raem, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 48, só a crônica guarda. Zeor venceu Vies e levou os sete sobreviventes para viver sob seu mando. Vies deixou de existir, mas os vencidos guardaram seus costumes em segredo. Mirur já não cabia na floresta. Gaem, o corajoso, levou quatro pessoas para a praia e fundou Isor. Ratora passou a falar pela Chama de Cima em Raem. Era a primeira a rezar e a última a duvidar. Em Isor nasceu a primeira criança: Suel, filho de Koia e Rugaut. No fim do ano 90, 146 pessoas viviam no mundo: Zeor (74), Mirur (26), Nuak (33), Raem (8) e Isor (5).
 
-*O ano 91 foi calmo.*
+### Ano 91
+
+Linsaim tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Zeor viu nisso a mão do Senhor do Trovão. O deus não tinha feito nada. De novo Nuak contra Mirur, como no ano 86 em nome do Que Ergue. Nuak venceu e levou a comida guardada. Na luta morreram Rugaut e Migaos. Para Nuak, a floresta virou Floresta da Vitória.
 
 ### Ano 92
 
-Na primavera, Vivim, que fundou Nuak e o guiava, morreu dormindo, aos 64 anos. O frio levou Misaim, que guiava Gaor. A fome no inverno durou 11 dias em Gaor e levou onze vidas. Gaor acabou: Gara e Damiu foram viver em Zeor.
+Linsaim, que guiava Zeor, morreu dormindo, aos 59 anos. No verão, Gatora, de Mirur, casou-se com Tamiem e foi viver em Raem. Foi o primeiro laço entre os dois povos.
 
 ### Ano 93
 
-No verão, Mirur já não cabia na floresta. Rugaut, o devoto, levou três pessoas para a praia e fundou Torsar. Zeor passou fome no inverno por 19 dias, e quatro pessoas morreram. Zeor atacou Mirur na floresta. Zeor venceu e levou a comida guardada. Taim morreu na luta.
+De novo a chuva sumiu, como no ano 87. Foram 19 dias de seca. Em Raem, Loraya pediu: «Chama de Cima, não nos deixes secar.» Quando a chuva voltou, Raem agradeceu à Chama de Cima. Foi só o tempo, mas quem iria dizer? No inverno, nasceu Sara, a primeira de Raem. Os de Nuak caíram sobre Isor na praia. Isor foi derrotado e perdeu o que tinha guardado. Na luta morreu Vizeu.
 
 ### Ano 94
 
-Morreu o último que tinha visto o ano 48. Em Torsar, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Vik tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
+O mesmo chão ganhou dois nomes: Praia da Vitória para Raem, Praia do Luto para Nuak. Zeor passou fome no inverno por 11 dias, e três pessoas morreram. No outono, Koia passou a falar pela Chama de Cima em Isor. Era a primeira a rezar e a última a duvidar. Um inverno duro matou dezoito pessoas de frio. Viut anunciou que o Que Ergue proibia qualquer trato com Raem. O deus nunca disse isso, mas Nuak obedeceu.
 
 ### Ano 95
 
-Depois de tantos mortos, Nuak e Mirur se encontraram na floresta e juraram paz. Saik rezou por Loim até a voz acabar. Loim morreu mesmo assim, e Saik nunca mais rezou. Desde a febre, Nuak não enterra mais ninguém: os mortos vão para o fogo. No inverno, a tempestade trouxe raios para o lago. Um deles acertou Lolora. Ninguém em Zeor teve dúvida: era castigo. Para Zeor, o deus já não era «o Que Apaga o Sol»: passou a ser «a Voz do Céu».
+Na primavera, em nome do Que Ergue, Viut proibiu casamentos e trocas com Mirur. Era vontade de Viut, não do deus. No verão, Mimira, de Isor, casou-se com Tamiem e foi viver em Raem. Foi o primeiro laço entre os dois povos.
 
-### Ano 96
-
-Mirur já não cabia na floresta. Enut, o devoto, levou dezenove pessoas para a praia e fundou Enil. Em Enil, Ra tomou para si o cuidado das preces ao Olho Escuro. Em nome do Que Ergue, Saik proibiu casamentos e trocas com Torsar. Era vontade de Saik, não do deus. Zeor e Mirur, cansados de enterrar os seus, fizeram as pazes na floresta. No outono, em Enil nasceu a primeira criança: Dotaya, filha de Mimia e Saem.
+*O ano 96 foi calmo.*
 
 ### Ano 97
 
-Benia tinha rezado: «Que Ergue, não deixes nossos filhos morrerem de fome.» A comida voltou, e Nuak deu graças ao Que Ergue. O deus nada fez: o crédito era de graça. No verão, Zeor atacou Enil na praia. Zeor venceu e levou a comida guardada. Gaem e Enut morreram na luta. O mesmo chão ganhou dois nomes: Praia da Vitória para Zeor, Praia do Luto para Enil. Beim, de Zeor, tomou por esposa Ra, de Enil, e os dois povos passaram a se visitar. Nasceu Su, a primeira de Torsar.
+Na primavera do ano 97, Benia, a corajosa, morreu de repente, aos 31 anos. Os de Nuak caíram sobre Raem na praia em nome do Que Ergue. Nuak venceu e levou a comida guardada. Na luta morreram Ratora e Loraya. Gaem tinha rezado: «Chama de Cima, não deixes nossos filhos morrerem de fome.» A comida voltou, e Isor deu graças à Chama de Cima. O deus não tinha feito nada. No outono, Tamiem anunciou que a Chama de Cima proibia qualquer trato com Nuak. O deus nunca disse isso, mas Raem obedeceu.
 
 ### Ano 98
 
-Na primavera do ano 98, Zeor atacou Enil na praia. Enil foi derrotado e perdeu o que tinha guardado. Na luta morreram Saem, Sara e Samiem. No verão, Lorau implorou pelo filho. Saviut morreu, e daquele dia em diante Lorau cuspia no chão quando falavam da Voz do Céu. Zeor rezou e não foi ouvido. Os mais firmes disseram que a Voz do Céu os estava testando, e se orgulharam de aguentar. A fome no inverno durou 22 dias em Zeor e levou cinco vidas. Uma febre correu Zeor e levou dez vidas.
+Foram 23 dias de fome por causa da seca em Isor, com cinco mortos. A praia passou a ser a praia da fome: Praia da Fome. No verão, houve luta na praia: Isor atacou Raem. Raem foi derrotado e perdeu o que tinha guardado. Mios morreu na luta. Lina passou a guiar Raem, mas Tamiem não aceitou e guardou rancor. Em nome do Senhor do Trovão, Beik proibiu casamentos e trocas com Raem. Era vontade de Beik, não do deus.
 
 ### Ano 99
 
-Morreu Linsaya, a devota, aos 55 anos. Em Enil, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 69, só a crônica guarda. Ruos, de Mirur, casou-se com Mimia e mudou-se para Enil, coisa que ninguém tinha feito antes. Houve luta na floresta: Nuak atacou Mirur. Mirur expulsou os atacantes. Na luta morreram Viut e Torjuya. Houve luta na floresta: Nuak atacou Mirur. Mirur resistiu, e Nuak voltou de mãos vazias. Na luta morreram Torena, Ralinim e Torem.
+Em Raem, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 69, só a crônica guarda. No verão, a guerra entre Raem e Nuak continuou: Raem voltou a atacar no morro em nome da Chama de Cima. Nuak expulsou os atacantes. Mimira e Misaos morreram na luta. Os últimos de Raem, Gaut e Mim, juntaram-se a Zeor. Raem deixou de existir. No inverno, depois de tantos mortos, Zeor e Mirur se encontraram na floresta e juraram paz. Nuak e Mirur, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 100
 
-Na primavera do ano 100, houve luta na praia: Zeor atacou Torsar. Torsar expulsou os atacantes. Mienik morreu na luta. Depois de tantos mortos, Zeor e Torsar se encontraram na praia e juraram paz. No verão, em Torsar, Ratora tomou para si o cuidado das preces ao Olho Escuro. No outono, Ga, de Torsar, casou-se com Zeviem e foi viver em Zeor. Foi o primeiro laço entre os dois povos. No fim do ano 100, 191 pessoas viviam no mundo: Zeor (91), Mirur (37), Nuak (39), Torsar (7) e Enil (17).
+Beik, que guiava Zeor, morreu de velhice aos 55 anos. Zeor venceu Isor e levou os sete sobreviventes para viver sob seu mando. Isor deixou de existir, mas os vencidos guardaram seus costumes em segredo. Zeor passou fome por causa da seca por 22 dias, e dezenove pessoas morreram. Depois de tanto silêncio, muitos em Nuak deixaram de acreditar: não havia ninguém no céu. As preces pararam. Os que ainda rezavam, com Rajuos à frente, deixaram Nuak, que tinha deixado de crer, e fundaram Loil na praia. Ali o deus se chama «a Voz dos Sonhos». No fim do ano 100, 124 pessoas viviam no mundo: Zeor (76), Mirur (26), Nuak (17) e Loil (5).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 91 pessoas, e planta roças; é o povo mais antigo; chama o deus de «a Voz do Céu»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 48); deixa oferendas no começo de cada estação (desde o ano 78); queima os mortos (desde o ano 78); treina os jovens com lanças (desde o ano 90).
-- **Mirur** vive na floresta, com 37 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 11; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 48); não desperdiça uma gota d'água (desde o ano 69); queima os mortos (desde o ano 69); treina os jovens com lanças (desde o ano 69).
-- **Nuak** vive no morro, com 39 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 57; chama o deus de «o Que Ergue»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 48); treina os jovens com lanças (desde o ano 69); deixa oferendas no começo de cada estação (desde o ano 77); queima os mortos (desde o ano 95).
-- **Torsar** vive na praia, com 7 pessoas, e planta roças; nasceu de uma migração em Mirur no ano 93; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 69); queima os mortos (desde o ano 69); treina os jovens com lanças (desde o ano 69).
-- **Enil** vive na praia, com 17 pessoas, e planta roças; nasceu de uma migração em Mirur no ano 96; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (a origem foi esquecida); queima os mortos (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
+- **Zeor** vive no lago, com 76 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 48); treina os jovens com lanças (desde o ano 77).
+- **Mirur** vive na floresta, com 26 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 11; chama o deus de «a Chama de Cima»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 48); não desperdiça uma gota d'água (desde o ano 69); queima os mortos (desde o ano 69); treina os jovens com lanças (desde o ano 69); deixa oferendas no começo de cada estação (desde o ano 85).
+- **Nuak** vive no morro, com 17 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 57; não reza a ninguém; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 69); queima os mortos (desde o ano 75).
+- **Loil** vive na praia, com 5 pessoas, e planta roças; nasceu de um cisma em Nuak no ano 100; chama o deus de «a Voz dos Sonhos»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 69); queima os mortos (desde o ano 75).
 
-Povos que deixaram de existir: Gaor.
+Povos que deixaram de existir: Gaor, Vies, Raem e Isor.
 
-Lugares com nome: Praia da Fome (praia, para Gaor), Praia da Vitória (praia, para Zeor), Praia do Luto (praia, para Enil), Praia da Vitória (praia, para Torsar), Lago da Chuva (lago, para Zeor), Lago da Trégua (lago, para Gaor), Floresta da Chuva (floresta, para Zeor), Floresta do Raio (floresta, para Mirur), Floresta da Vitória (floresta, para Gaor), Floresta do Luto (floresta, para Nuak), Morro da Pedra Erguida (morro, para Zeor), Morro da Pedra Erguida (morro, para Mirur), Morro da Pedra Erguida (morro, para Gaor) e Morro da Pedra Erguida (morro, para Nuak).
+Lugares com nome: Praia da Fome (praia, para Gaor), Praia do Raio (praia, para Vies), Praia do Luto (praia, para Zeor), Praia da Vitória (praia, para Raem), Praia do Luto (praia, para Nuak), Praia da Fome (praia, para Isor), Lago da Chuva (lago, para Zeor), Lago do Luto (lago, para Gaor), Lago da Vitória (lago, para Vies), Floresta da Chuva (floresta, para Zeor), Floresta do Raio (floresta, para Mirur), Floresta da Vitória (floresta, para Nuak), Morro da Pedra Erguida (morro, para Zeor), Morro da Pedra Erguida (morro, para Mirur), Morro da Pedra Erguida (morro, para Gaor), Morro da Pedra Erguida (morro, para Nuak) e Morro do Luto (morro, para Raem).
 
-Em 100 anos nasceram 797 pessoas e morreram 618.
+Em 100 anos nasceram 707 pessoas e morreram 595.

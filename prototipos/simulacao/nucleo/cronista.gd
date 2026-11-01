@@ -526,7 +526,7 @@ func _texto(e) -> String:
 		"extincao_grupo":
 			return _frase(["Não restou ninguém em {g}.", "{g} desapareceu: morreu o último dos seus."], v)
 		"conquista":
-			v["n"] = G.termo(_num(e.participantes.size()), "f", e.participantes.size())
+			v["n"] = G.termo(G.extenso(e.participantes.size(), "m"), "m", e.participantes.size())
 			v["venc"] = _g(e.outro_grupo)
 			return _frase(["{g} venceu {venc} e levou os {n} sobreviventes para viver sob seu mando. {venc} deixou de existir, mas os vencidos guardaram seus costumes em segredo.",
 				"Depois da derrota, {venc} não existia mais: os {n} que sobraram foram {venc:levados|levados} para {g}."], v)
@@ -680,7 +680,9 @@ func _nascimento(e, v: Dictionary) -> String:
 			return _frase(["Em plena fome, {mae} deu à luz {f}.", "No meio da fome, nasceu {f}, {f:filho|filha} de {mae}."], v)
 		"entre_grupos":
 			var mae = m.pessoas[e.participantes[1]]
-			var de: int = mae.veio_de if mae.veio_de != -1 else m.pessoas[e.participantes[2]].veio_de
+			var de: int = mae.veio_de if mae.veio_de != -1 and mae.veio_de != e.grupo else m.pessoas[e.participantes[2]].veio_de
+			if de == -1 or de == e.grupo:
+				return ""
 			v["de"] = _g(de)
 			return _frase(["Nasceu {f}, {f:filho|filha} de {mae} e {pai}, com sangue de {g} e de {de}."], v)
 		"linhagem":
@@ -743,8 +745,9 @@ func _separacao(e, v: Dictionary) -> String:
 			else:
 				var gn = m.grupos[e.grupo]
 				v["dn"] = _deus(gn.nome_deus, gn.genero_deus)
-				t = _frase(["Os que ainda rezavam, com {f} à frente, deixaram {pai}, que tinha deixado de crer, e fundaram {novo} {em:zona}. Ali o deus se chama {o:dn}.",
-					"{f} não aceitou um povo sem deus. Saiu de {pai} com {n} fiéis e fundou {novo} {em:zona}, onde rezam a {o:dn}."], v)
+				v["dnn"] = G.termo(gn.nome_deus)
+				t = _frase(["Os que ainda rezavam, com {f} à frente, deixaram {pai}, que tinha deixado de crer, e fundaram {novo} {em:zona}. Ali o deus se chama «{dnn}».",
+					"{f} não aceitou um povo sem deus. Saiu de {pai} com {n} fiéis e fundou {novo} {em:zona}, onde rezam {a:dn}."], v)
 	if e.dados.get("perdeu_estagio", false):
 		t += " " + _frase(["Nenhum deles sabia plantar direito: {novo} voltou a viver de coleta."], v)
 	if not _primeiros.has("separacao"):
@@ -763,8 +766,15 @@ func _ataque(e, v: Dictionary) -> String:
 	var motivo := ""
 	if atacante.proibido.has(e.outro_grupo):
 		motivo = " em nome {de:deus}"
-	t = _frase(["{a} atacou {b} {em:zona}" + motivo + ".", "Os de {a} caíram sobre {b} {em:zona}" + motivo + ".",
-		"Houve luta {em:zona}: {a} atacou {b}" + motivo + "."], v)
+	var anterior := _ataque_recente(e)
+	if anterior > 0:
+		v["ant"] = G.termo(str(anterior))
+		t = _frase(["A guerra entre {a} e {b} continuou: {a} voltou a atacar {em:zona}" + motivo + ".",
+			"De novo {a} contra {b}, como no ano {ant}" + motivo + ".",
+			"{a} não esqueceu o ano {ant} e atacou {b} outra vez."], v)
+	else:
+		t = _frase(["{a} atacou {b} {em:zona}" + motivo + ".", "Os de {a} caíram sobre {b} {em:zona}" + motivo + ".",
+			"Houve luta {em:zona}: {a} atacou {b}" + motivo + "."], v)
 	if venceu_atacante:
 		t += " " + _frase(["{a} venceu e levou a comida guardada.", "{b} foi {b:derrotado|derrotado} e perdeu o que tinha guardado."], v)
 	else:
@@ -774,6 +784,17 @@ func _ataque(e, v: Dictionary) -> String:
 	if e.dados.get("primeiro", false) and not _primeiros.has("ataque"):
 		t += " " + _frase(["Foi a primeira vez que gente matou gente no mundo." if not mortos.is_empty() else "Foi a primeira briga entre povos."], v)
 	return t
+
+
+## Ano do último ataque narrado entre os mesmos dois povos, se foi há pouco.
+func _ataque_recente(e) -> int:
+	for i in range(e.id - 1, -1, -1):
+		var x = m.eventos[i]
+		if e.ano - x.ano > 6:
+			break
+		if x.tipo == "ataque" and _usados.has(x.id) and ((x.grupo == e.grupo and x.outro_grupo == e.outro_grupo) 				or (x.grupo == e.outro_grupo and x.outro_grupo == e.grupo)):
+			return x.ano
+	return -1
 
 
 func _lugar_nomeado(e, v: Dictionary) -> String:
