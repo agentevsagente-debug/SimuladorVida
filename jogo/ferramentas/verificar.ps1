@@ -6,7 +6,8 @@ param(
     [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe",
     [int]$X = 200,
     [int]$Y = 200,
-    [switch]$SemExportar   # pula o item 8 (gerar e abrir o executável)
+    [switch]$SemExportar,  # pula o item 8 (gerar e abrir o executável)
+    [switch]$Executavel    # $Godot é o jogo exportado (builds\Simulador de vida.exe): sem --path
 )
 $ErrorActionPreference = 'Stop'
 $projeto = Split-Path $PSScriptRoot -Parent
@@ -23,9 +24,9 @@ function Registrar($nome, $ok, $detalhe) {
 
 function Iniciar-Moldura([int]$escala, [string]$log) {
     if (Test-Path $log) { Remove-Item $log }
-    $p = Start-Process -FilePath $Godot -PassThru -ArgumentList @(
-        '--path', "`"$projeto`"", '--log-file', "`"$log`"", '--',
-        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config', '--mundo-novo')
+    $caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
+    $p = Start-Process -FilePath $Godot -PassThru -ArgumentList (@($caminho) + @('--log-file', "`"$log`"", '--',
+        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config', '--mundo-novo'))
     for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
     Start-Sleep -Seconds 2
     $p.Refresh()
