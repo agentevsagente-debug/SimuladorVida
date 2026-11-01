@@ -104,7 +104,9 @@ if ($Parte -in 'capturas', 'tudo') {
     $base = @('--sem-config', '--mundo-novo', '--semente=7', '--dias=12', '--hora=10')
     $cenarios = [ordered]@{
         'QA-098-ausencia'   = $base + @('--simular-ausencia=240', '--capturar-apos=4')
-        'QA-129-extincao'   = $base + @('--extinguir', '--capturar-apos=6')
+        # a vista só relê o mundo a cada passo, e o núcleo só declara o fim na virada do dia: no 50x,
+        # das 10h à 1h são 15 passos de 2,25 s; 2 quadros, aos 6 s e aos 40 s
+        'QA-129-extincao'   = $base + @('--extinguir', '--ritmo=rapido2', '--capturar-apos=6', '--quadros=2', '--intervalo=34')
         # o --carregar fixa o começo da carga em 1 s, e ela continua subindo (0,5 por segundo):
         # a captura vai logo depois, em 1,15 s
         'QA-036-carga-raio' = $base + @('--carregar=raio:300:0.3', '--capturar-apos=1.15')
@@ -125,8 +127,9 @@ if ($Parte -in 'capturas', 'tudo') {
         if (Test-Path $png) { Remove-Item $png }
         $p = Abrir ($cenarios[$nome] + @("--capturar=$png", '--duracao=40')) $nome
         $codigo = Esperar $p 90
-        $res += [pscustomobject]@{ cenario = $nome; codigo = "$codigo"; captura = (Test-Path $png) }
-        Write-Host ("{0}: código {1}, captura {2}" -f $nome, $codigo, (Test-Path $png))
+        $tem = (Test-Path $png) -or (Test-Path ($png -replace '\.png$', '_00.png'))
+        $res += [pscustomobject]@{ cenario = $nome; codigo = "$codigo"; captura = $tem }
+        Write-Host ("{0}: código {1}, captura {2}" -f $nome, $codigo, $tem)
     }
     $res | ConvertTo-Json -Depth 3 | Set-Content (Join-Path $saida 'resultado-capturas.json') -Encoding utf8
 }

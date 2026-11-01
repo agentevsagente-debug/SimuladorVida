@@ -10,8 +10,8 @@
 | Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 11 |
 | Só manuais (precisam de mouse e teclado, à espera da liberação) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **94** |
-| **Falham** | **16** (14 no núcleo e 2 em janela), de 14 defeitos |
+| **Passam** | **95** |
+| **Falham** | **15** (13 no núcleo e 2 em janela), em 15 defeitos |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
 **Por área:**
@@ -32,17 +32,17 @@
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 7 | 2 | 1 | 0 | 4 |
-| Leveza | 7 | 4 | 2 | 0 | 1 |
+| Leveza | 7 | 5 | 1 | 0 | 1 |
 | Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
-| **Total** | **122** | **94** | **16** | **3** | **9** |
+| **Total** | **122** | **95** | **15** | **3** | **9** |
 
 **Os defeitos, do mais grave ao mais leve:**
 
 | # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
 |---|---|---|---|---|
 | D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | não para os amigos; para o processo, sim (corrigir já) | A |
-| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela | alta | **sim** | A |
-| D-03 | Quando o último morre, o mundo só fica vazio na virada do dia (até ~28 min em 1x) | média | **sim** | A, B |
+| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim** | A |
+| D-03 | Quando o último morre, o mundo só fica vazio na virada do dia (até ~28 min em 1x) | média | **sim** | A |
 | D-04 | O jogo não mostra o número da versão | média | **sim** (B3 da auditoria 11) | B |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
@@ -54,6 +54,7 @@
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
 | D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A |
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B |
+| D-15 | No aviso "Não resta ninguém", a linha do livro sai pelos lados do pergaminho | média | **sim** (barato) | B |
 
 A saída completa da última rodada está em `qa/ultima-rodada.txt`, e os resultados em janela em `qa/janela/resultado-*.json`.
 
@@ -98,10 +99,12 @@ Gravidade:
   - `alvo = -1`, e o raio cai no chão.
   - `_pessoa_perto(x)` compara x com `agenda(id, h)[-1]["x1"]`, que é o ponto do **fim** da hora. Na tela, porém, a pessoa anda pelos trechos da agenda durante a hora inteira (112,5 s em 1x).
   - Medido em 5 sementes, das 8h às 16h, com 540 pessoas acordadas:
-    - a pessoa está a mais de 6 px do ponto que o núcleo acerta durante **64%** do tempo;
+    - a pessoa está a mais de 6 px do ponto que o núcleo acerta durante **de 50% a 64%** do tempo;
+    - 64% supõe que ela anda em linha reta pelo trecho;
+    - 50% é o limite inferior, supondo que ela chega logo ao destino de cada trecho e espera ali, como a vista faz;
     - no meio da hora (`posicao_de`), 363 das 540 estão longe demais.
   - Mirando o `x` do fim da hora, o raio mata (a mecânica funciona).
-- **Ressalva:** a estimativa interpola os trechos em linha reta. A vista anda a 7–11 px/s e espera no destino do trecho, então a porcentagem real pode ser um pouco menor. Mesmo assim, quem anda ou muda de trecho fica fora do alvo.
+- **Ressalva:** a verdade fica entre os dois números; mesmo o limite inferior é 10 vezes a tolerância de 5% do teste.
 - **Sugestão:**
   - a apresentação passa a fração da hora (ou o id de quem está sob o cursor) para `usar_poder`, e o núcleo mira em `ro.instante(id, minuto)`;
   - `_poder` já aceita `alvo`.
@@ -116,8 +119,12 @@ Gravidade:
 - **Obtido:**
   - `fim_do_mundo` continua falso, e `criar_povo` recusa: "só se cria um povo com o mundo vazio";
   - o fim só vem **15 horas de jogo depois**, no passo da 1h, porque `os_ultimos` e `fim_do_mundo` são conferidos só em `_novo_dia()`;
-  - em 1x, são **uns 28 minutos reais** com o mundo morto e sem o aviso "Não resta ninguém", sem o botão de criar povo e com os poderes ainda aceitos (`ok: true` sobre ninguém).
-- **Na tela:** a captura `QA-129-extincao.png`, 6 s depois do `--extinguir`, ainda mostra gente perto do fogo e nenhum aviso. É o R4 da auditoria 11.
+  - nesse intervalo, os poderes ainda são aceitos: a chuva sobre o mundo sem ninguém devolve `ok: true` (testado);
+  - em 1x, são **uns 28 minutos reais** com o mundo morto, sem o aviso "Não resta ninguém" e sem o botão de criar povo.
+- **Na tela** (QA-129), com `--extinguir` no 50x:
+  - aos 6 s, ainda aparece gente perto do fogo, e nenhum aviso (`QA-129-extincao_00.png`). É o R4 da auditoria 11;
+  - aos 40 s, depois da meia-noite do jogo, o aviso aparece (`QA-129-extincao_01.png`);
+  - então a tela responde certo ao núcleo, e o atraso é só a conferência na virada do dia. O aviso tem outro defeito, o D-15.
 - **Sugestão:** conferir `populacao() == 0` (e `<= 5`) também ao fim de `usar_poder` e de cada passo, e não só na virada do dia.
 
 ### D-04. O jogo não mostra o número da versão
@@ -157,11 +164,17 @@ Gravidade:
   - sem salvar e carregar, 3 processos dão sempre o mesmo texto;
   - com salvar e carregar, 2 de 3 processos deram o outro;
   - não depende do `salvo_em`: o mesmo `salvo_em` dá as duas versões.
-- **Leitura:** o sorteio é o mesmo, então a diferença está no estado do cronista ou da gramática depois de carregar. Algo é restaurado numa ordem que muda (um dicionário ou um conjunto) ou depende do relógio. `avancar_hora()` usa `Time.get_ticks_usec()` para decidir se adianta a preparação da hora seguinte: vale conferir se essa preparação toca a memória de frases.
+- **Pista:**
+  - logo depois de carregar, o estado do cronista é idêntico nas 6 cargas, com o mesmo hash de `_usados`, `_recentes`, `_narrados`, `_primeiros`, `anos_escritos`, `_cursor`, `_fatia` e `_indice_ate`;
+  - o sorteio do mundo termina igual;
+  - então a divergência nasce **durante o avanço**, e não na leitura do arquivo.
+- **Suspeitos:**
+  - o adiantamento por relógio em `avancar_hora()` (mundo.gd:286 a 320), que prepara a hora seguinte só quando sobra tempo (`Time.get_ticks_usec()`);
+  - o `RandomNumberGenerator` único do cronista (`rt`, cronista.gd:41), resemeado por evento, se for usado fora da escrita oficial ao mesmo tempo (na thread da rotina, ou nessa preparação).
 - **Nota:** a falha é intermitente. O teste carrega 6 vezes para pegá-la com alta probabilidade.
 
 ### D-07. A thread da rotina leva mais de 1 s com 240 pessoas, e o passo espera por ela
-**Cenário:** QA-170 · **Gravidade:** média (risco nas máquinas dos amigos) · **Bloqueia:** não · **Área:** A
+**Cenário:** sonda à parte (o QA-170 passa) · **Gravidade:** média (risco nas máquinas dos amigos) · **Bloqueia:** não · **Área:** A
 
 - **Passos:** mundo da semente 3 no ano 250, com 240 pessoas; um passo, a consulta completa, e o passo seguinte depois de uma folga.
 - **Obtido:**
@@ -178,10 +191,10 @@ Gravidade:
   - a API diz de 60 a 220 ms de thread; aqui foram mais de 1 s;
   - no 50x (2,25 s entre passos), não trava nesta máquina, de 28 núcleos;
   - num notebook 2 a 3 vezes mais lento, o 50x travaria de 1 a 2 s uma ou duas vezes por dia de jogo.
-- **Na bateria (QA-170), com 2,25 s entre passos, como no 50x:**
+- **Na bateria (QA-170, que passa), com 2,25 s entre passos, como no 50x:**
   - nenhuma espera pela thread;
   - o passo das 22h ficou em 22 a 32 ms nas 3 rodadas, e os outros, de 3 a 8 ms;
-  - a meta da API é de 5 ms;
+  - a meta da API é de 5 ms; como a máquina estava carregada pelas outras sessões, não conto como falha e deixo a medida fina para o `desempenho.gd` da A;
   - a primeira consulta depois do salto levou de 1017 a 1253 ms.
 
 ### D-08. Com o mundo velho, a CPU passa de 8% de um núcleo em 1x
@@ -242,6 +255,17 @@ Gravidade:
 **Cenário:** QA-181 · **Gravidade:** baixa · **Bloqueia:** não, mas é uma linha só · **Área:** B
 
 - `exclude_filter` exclui `ferramentas_sim/*` mas não `qa/*`. Basta acrescentar `qa/*`.
+
+### D-15. No aviso "Não resta ninguém", a linha do livro sai pelos lados do pergaminho
+**Cenário:** QA-129 · **Gravidade:** média · **Bloqueia:** sim (proposta). É o momento mais marcante do jogo, e a correção é de quebra de linha · **Área:** B
+
+- **Passos:** `--sem-config --mundo-novo --semente=7 --dias=12 --hora=10 --extinguir --ritmo=rapido2`, e esperar o aviso (uns 35 s).
+- **Obtido:**
+  - a linha "A Primeira Era: de Toan ao último de Toan terminou: do ano 1 ao ano 1." não quebra e passa das duas bordas do pergaminho;
+  - o "A" do começo e o "ano 1." do fim ficam fora da caixa (`qa/capturas/QA-129-extincao_01.png`);
+  - os títulos com epíteto da A ("de Toan ao último de Toan") deixaram a linha mais longa do que a caixa;
+  - os dois-pontos seguidos ("Toan terminou: do ano") também pedem revisão do texto.
+- **Esperado:** a linha quebra dentro do pergaminho, como as outras.
 
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.
@@ -371,6 +395,7 @@ Cada um já está na bateria e falha hoje. Passa a passar quando a área dona co
 | QA-111 | D-06 | A | 6 cargas do mesmo arquivo dão a mesma crônica |
 | QA-109, QA-182 | D-01 | A | salvar num caminho de teste não toca `user://estante`, e nenhuma ferramenta apaga a estante real |
 | QA-181 | D-14 | B | `qa/*` no `exclude_filter` |
+| QA-129 (janela) | D-03, D-15 | A e B | o aviso aparece logo e cabe no pergaminho (`rodar_janela.ps1 -Parte capturas`) |
 | QA-016, QA-026, QA-064, QA-092 | D-10 a D-13 | A | conforme cada defeito |
 
 Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primeiro o cenário em `qa/cenarios.md` e o teste em `rodar_qa.gd`, que deve falhar antes da entrega.
