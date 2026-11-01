@@ -680,6 +680,7 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   - a crônica comum (`cronica()`, sem título) continua só a lista de anos;
   - o povo de outra era aparece nas ruínas com o nome entortado pelo tempo ("Demor" para Demur).
   Veja `ferramentas_sim/livros/`.
+- **A crônica viva** (`mundo.cronica_viva() -> String`, para a tecla C): como o livro, mas em curso. "## Até agora" (o resumo dos anos já escritos, terminando em quem vive hoje), o prólogo, os capítulos dos estágios já vividos e o capítulo aberto do estágio atual ("## Capítulo VI: Os canais e os moinhos (desde o ano 127)"), com os anos dentro, e no fim os gestos do deus no ano em curso ("### Ano N (em curso)", veja `cronica_em_curso`). Sem o "Quem foi quem" nem o epitáfio, que são do livro fechado. É montada sob demanda e guardada até o próximo ano ser escrito; os gestos do ano em curso são acrescentados a cada consulta. Custo, num mundo de 130 anos: 0,9 ms na primeira consulta do ano e 0,1 ms nas seguintes. `cronica()` continua como antes (a lista de anos, para as ferramentas).
 - **Estante** (`preload("res://nucleo/estante.gd")`): guardada em `user://estante/`, fora do mundo salvo, e sobrevive ao abandono do mundo.
   - `Estante.livros() -> Array[{id, titulo, era, semente, ano_ini, ano_fim, guardado_em}]`
   - `Estante.ler(id) -> String` devolve o markdown do livro.

@@ -4546,6 +4546,27 @@ func cronica(ano_ini: int = -1, ano_fim: int = -1, com_prologo: bool = true, com
 	return em_curso if t.strip_edges().is_empty() else t + "\n\n" + em_curso
 
 
+## A crônica viva, para abrir com a tecla C: como o livro, mas em curso. "## Até agora" (o resumo
+## dos anos já escritos: povos, até onde chegaram, os nomes do deus, a pior fome, as guerras e
+## quem vive hoje), o prólogo, os capítulos dos estágios já vividos e o capítulo aberto do estágio
+## atual ("desde o ano N"), com os anos dentro, e no fim os gestos do deus no ano em curso. Sem o
+## índice de personagens nem o epitáfio, que são do livro fechado. Montada sob demanda e guardada
+## até o próximo ano ser escrito (os gestos do ano em curso são acrescentados a cada consulta).
+var _viva_chave: Array = []
+var _viva: String = ""
+
+
+func cronica_viva() -> String:
+	var chave := [era, _cronista.ultimo_ano_escrito, era_inicio_ano]
+	if chave != _viva_chave:
+		_viva = _cronista.montar(era_inicio_ano, _cronista.ultimo_ano_escrito, "", "", true, false, true)
+		_viva_chave = chave
+	var em_curso := cronica_em_curso()
+	return _viva if em_curso.is_empty() else _viva + "
+
+" + em_curso
+
+
 ## Os gestos do deus no ano em curso, na hora: "### Ano 3 (em curso)" e uma linha por gesto,
 ## "Dia 1: Choveu do céu limpo sobre o acampamento. ...", com a reação do povo no mesmo dia.
 ## "" se o deus não fez nada no ano. Quando o ano fecha, esses gestos entram na crônica do ano.

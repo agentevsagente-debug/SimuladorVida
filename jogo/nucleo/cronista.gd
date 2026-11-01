@@ -611,7 +611,7 @@ func texto_do_ano(a: int) -> String:
 
 ## Junta os anos de ano_ini a ano_fim num texto só, resumindo os anos quietos.
 func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String = "",
-		com_prologo: bool = true, com_epilogo: bool = true) -> String:
+		com_prologo: bool = true, com_epilogo: bool = true, viva: bool = false) -> String:
 	var linhas: PackedStringArray = []
 	if not titulo.is_empty():
 		linhas.append("# " + titulo)
@@ -621,12 +621,14 @@ func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String =
 		linhas.append("")
 	# O livro (com título e epílogo) tem um resumo no começo, capítulos por estágio, o índice de
 	# quem marcou a era e um epitáfio no fim. A crônica comum (sem título) é só a lista de anos.
+	# A crônica viva (`viva`, a tecla C) tem o resumo até agora e os capítulos, o último aberto;
+	# o índice de personagens e o epitáfio ficam para o livro fechado.
 	var livro: bool = not titulo.is_empty() and com_epilogo
-	var capitulos: Array = _capitulos(ano_ini, ano_fim) if livro else []
-	if livro:
-		linhas.append("## Em resumo")
+	var capitulos: Array = _capitulos(ano_ini, ano_fim) if livro or viva else []
+	if livro or viva:
+		linhas.append("## Em resumo" if livro else "## Até agora")
 		linhas.append("")
-		linhas.append(_resumo(ano_ini, ano_fim))
+		linhas.append(_resumo(ano_ini, ano_fim, viva))
 		linhas.append("")
 	if com_prologo:
 		linhas.append(_prologo(ano_ini))
@@ -640,8 +642,9 @@ func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String =
 				linhas.append("")
 				quietos.clear()
 			var fim_cap: int = capitulos[cap + 1][0] - 1 if cap + 1 < capitulos.size() else mini(ano_fim, ultimo_ano_escrito)
+			var aberto: bool = viva and cap + 1 >= capitulos.size()
 			linhas.append("## Capítulo %s: %s (%s)" % [ROMANOS[mini(cap, ROMANOS.size() - 1)], capitulos[cap][1],
-				("ano %d" % a) if fim_cap <= a else ("anos %d a %d" % [a, fim_cap])])
+				("desde o ano %d" % a) if aberto else (("ano %d" % a) if fim_cap <= a else ("anos %d a %d" % [a, fim_cap]))])
 			linhas.append("")
 			cap += 1
 		var paragrafo: String = anos_escritos.get(a, "")
@@ -2644,7 +2647,7 @@ func titulo_do_livro(nome_era: String, ano_ini: int, ano_fim: int, extincao: boo
 
 ## O resumo do livro, para quem o pega anos depois: quanto durou, quantos povos, até onde
 ## chegaram, como chamaram o deus, a pior hora, as guerras, e como acabou.
-func _resumo(ano_ini: int, ano_fim: int) -> String:
+func _resumo(ano_ini: int, ano_fim: int, viva: bool = false) -> String:
 	var frases: PackedStringArray = []
 	var povos := {}
 	for tipo in ["inicio", "separacao", "fusao", "extincao_grupo", "conquista"]:
@@ -2655,7 +2658,7 @@ func _resumo(ano_ini: int, ano_fim: int) -> String:
 		povos[g.id] = true
 	var nomes: Array = povos.keys().map(func(id): return m.grupos[id].nome)
 	var anos := ano_fim - ano_ini + 1
-	frases.append("Esta crônica cobre %s anos, do ano %d ao %d, e %s: %s." % [str(anos), ano_ini, ano_fim,
+	frases.append(("Esta crônica cobre, por enquanto, %s anos, do ano %d ao %d, e %s: %s." if viva else "Esta crônica cobre %s anos, do ano %d ao %d, e %s: %s.") % [str(anos), ano_ini, ano_fim,
 		"um povo" if nomes.size() == 1 else "%s povos" % G.extenso(nomes.size(), "m"),
 		G.lista(nomes) if nomes.size() <= 6 else ", ".join(PackedStringArray(nomes.slice(0, 6))) + " e outros"])
 	var est := 1
@@ -2692,6 +2695,13 @@ func _resumo(ano_ini: int, ano_fim: int) -> String:
 			else "Houve %s guerras com nome%s." % [G.extenso(guerras.size(), "f"), (", entre elas a " + nomes_g[0]) if not nomes_g.is_empty() else ""])
 	if not _no_periodo("fim_do_mundo", ano_ini, ano_fim).is_empty():
 		frases.append("No fim, não restou ninguém.")
+	elif viva:
+		var vivos2 := 0
+		var povos2: Array = []
+		for g in m.grupos_vivos():
+			vivos2 += g.membros.size()
+			povos2.append(g.nome)
+		frases.append("Hoje vivem %d pessoas: %s." % [vivos2, G.lista(povos2)] if not povos2.is_empty() else "Hoje não vive ninguém.")
 	else:
 		var vivos := 0
 		for g in m.grupos_vivos():
