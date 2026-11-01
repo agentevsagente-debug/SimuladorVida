@@ -29,6 +29,7 @@ extends Node2D
 ##                                        sem ele, vale o último guardado no moldura.cfg
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
+##   --livro-arquivo=CAMINHO[:PÁGINA]     abre um livro em markdown no leitor da estante (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
@@ -123,6 +124,11 @@ func _ready() -> void:
 		get_tree().create_timer(1.0).timeout.connect(func():
 			var ev := InputEventMouseMotion.new()
 			interface.tratar(ev, Vector2(float(p[0]), float(p[1])), FAIXA))
+	if args.has("livro-arquivo"):  # abre um livro em markdown direto no leitor (testes): CAMINHO[:PÁGINA]
+		var partes: PackedStringArray = args["livro-arquivo"].rsplit(":", true, 1)
+		var pagina := int(partes[1]) if partes.size() > 1 and partes[1].is_valid_int() else 0
+		var caminho: String = partes[0] if partes.size() > 1 and partes[1].is_valid_int() else args["livro-arquivo"]
+		interface._estante.abrir_texto.call_deferred(FileAccess.get_file_as_string(caminho), pagina)
 	if args.has("carregar"):  # segura um poder sem soltar, com a carga fixa (testes da carga)
 		var c: PackedStringArray = args["carregar"].split(":")
 		get_tree().create_timer(1.0).timeout.connect(func():

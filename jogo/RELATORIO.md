@@ -2,6 +2,23 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Os livros da estante, com a estrutura nova
+
+O leitor da estante lê a estrutura que a A deu aos livros: título com epíteto, "Em resumo", capítulos por estágio, "Quem foi quem", "O mundo no fim" e o epitáfio.
+
+| O que | Como ficou |
+|---|---|
+| Estilos | Cada linha tem o seu estilo. O título do livro, os capítulos e as seções vão na fonte de títulos (vinho), com um traço sob o título do capítulo; os anos e o texto, na tinta escura. |
+| Páginas | Cada capítulo e cada seção começa numa página nova. As páginas passaram a ter 9 linhas, porque a décima encostava no número da página (isso já acontecia antes). |
+| Índice | Fica à esquerda do livro aberto, num pergaminho, com "Em resumo", "I. Os coletores"… "VII. Os últimos", "Quem foi quem", "O mundo no fim" e "O epitáfio". O trecho em que se está aparece na fonte de títulos. Clicar num item vai até ele; as teclas ↑ e ↓ pulam de capítulo. |
+| Resumo | O resumo vem logo depois do título, nas duas primeiras páginas. |
+| Epitáfio | Começa sempre numa página da esquerda, para ser lido inteiro nas duas páginas abertas. Vem centrado, na fonte de títulos e no meio da página quando cabe nela. |
+| Lombada | Com um mundo só na estante, ela mostra a era e o povo do epíteto quando cabe ("I Suem"). A dica sobre ela traz o título e, embaixo, o epíteto. |
+
+**Opção de teste nova:** `--livro-arquivo=CAMINHO[:PÁGINA]` abre um markdown no leitor. Captura com os 3 exemplos da A: `capturas/livros-da-estante.png`, com o começo da extinção, o capítulo "Sobre as ruínas" da era nova e os dois epitáfios.
+
+**A crônica (C) do jogo** não tem capítulos: o núcleo só escreve os capítulos, o resumo e o epitáfio quando o livro fecha (`montar` com `livro`). O que se vê no C é a lista de anos, como antes. Fica a pergunta para a A: dá para a crônica viva também vir com os capítulos?
+
 ## Os eventos raros, forçados para ver na tela
 
 `--cenario-raro=NOME` (`apresentacao/cenarios_raros.gd`) força, pelo próprio núcleo, o que é raro de acontecer. Os cenários servem para conferir a encenação e para as auditorias da arte. Folha: `capturas/eventos-raros.png`.

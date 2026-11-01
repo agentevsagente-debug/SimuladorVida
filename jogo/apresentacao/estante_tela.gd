@@ -28,7 +28,7 @@ const INICIO_X := 24
 const FIM_X := [456, 340]          # a segunda prateleira deixa lugar para os botões
 const LIVRO := Vector2i(112, 8)    # canto do livro aberto (256 × 144)
 const PAGINAS := [Rect2i(14, 12, 104, 118), Rect2i(138, 12, 104, 118)]
-const LINHAS := 10
+const LINHAS := 9  # a décima linha encostava no número da página
 const ALTURA_LINHA := 11
 const FECHAR := Rect2i(440, 3, 37, 14)
 const ABANDONAR := Rect2i(352, 128, 122, 16)
@@ -44,7 +44,10 @@ var livros: Array = []            # {titulo, era, semente, ano_ini, ano_fim, id 
 var _rects: Array[Rect2i] = []
 var _sob := -1
 var _sob_botao := ""
-var _paginas: Array = []          # páginas: [[texto, dourada]]
+var _paginas: Array = []          # páginas: [[texto, estilo]] (titulo, capitulo, secao, ano, texto, epitafio)
+var _indice: Array = []           # [[rótulo curto, página]]: o resumo, os capítulos, quem foi quem, o fim
+const INDICE := Rect2i(4, 8, 104, 144)  # o índice, à esquerda do livro aberto
+const ESTILOS_TITULO := ["titulo", "capitulo", "secao", "epitafio"]  # na fonte de títulos (vinho)
 var _pagina := 0                  # a página da esquerda (par)
 var _aberto := -1
 var _fim := {}                    # {titulo, ano_ini, ano_fim}
@@ -165,11 +168,41 @@ func _rotulo_do_livro(l: Dictionary) -> String:
 	for o in livros:
 		if not int(o["semente"]) in mundos:
 			mundos.append(int(o["semente"]))
-	if mundos.size() <= 1:
+	if mundos.size() <= 1:  # a era e o povo do epíteto, se couber: "I Suem"
+		var povo := _povo_do_epiteto(String(l["titulo"]))
+		var romano := rotulo(int(l["era"])).substr(4)
+		if povo != "" and (romano + " " + povo).length() <= 7:
+			return romano + " " + povo
 		return rotulo(int(l["era"]))
 	var era := rotulo(int(l["era"])).substr(4)  # o romano
 	var texto := "M%d E%s" % [mundos.find(int(l["semente"])) + 1, era]
 	return texto if texto.length() <= 7 else "M%d E%d" % [mundos.find(int(l["semente"])) + 1, int(l["era"])]
+
+
+## "A Primeira Era: de Teil ao último de Suem" -> ["A Primeira Era", "de Teil ao último de Suem"].
+static func _titulo_e_epiteto(titulo: String) -> Array:
+	var i := titulo.find(":")
+	if i < 0:
+		return [titulo, ""]
+	return [titulo.substr(0, i).strip_edges(), titulo.substr(i + 1).strip_edges()]
+
+
+## O último povo do epíteto ("de Teil ao último de Suem" -> "Suem"; "o tempo de Lour" -> "Lour").
+static func _povo_do_epiteto(titulo: String) -> String:
+	var epiteto: String = _titulo_e_epiteto(titulo)[1]
+	if epiteto == "":
+		return ""
+	var palavras := epiteto.split(" ", false)
+	return palavras[-1] if not palavras.is_empty() else ""
+
+
+## Abre um livro em markdown direto no leitor, na página `pagina` (testes: --livro-arquivo).
+func abrir_texto(md: String, pagina := 0) -> void:
+	var titulo := md.get_slice("\n", 0).trim_prefix("# ").strip_edges()
+	livros = [{"titulo": titulo, "era": 1, "semente": 0, "ano_ini": 1, "ano_fim": 1, "texto": md}]
+	_rects = [Rect2i(INICIO_X, BASES[0] - 64, 12, 64)]
+	abrir_livro(0)
+	_ir_a_pagina(pagina)
 
 
 ## A cor da lombada: a mesma para todas as eras de um mundo.
@@ -177,54 +210,106 @@ static func cor(semente: int) -> int:
 	return posmod(semente, 6)
 
 
-## Quebra o texto (markdown) em páginas de 10 linhas que cabem em 104 px. O
-## título do livro (o # do começo) vai em dourado, como pede a arte; os outros
-## títulos ficam na tinta escura, que se lê melhor no pergaminho.
+## Quebra o livro (markdown) em páginas de 9 linhas que cabem em 104 px, com
+## um estilo por linha: o título do livro, os capítulos e as seções na fonte de
+## títulos; os anos e o texto na tinta escura. Cada capítulo e cada seção
+## ("Quem foi quem", "O mundo no fim") começa numa página nova, e o epitáfio (o
+## parágrafo em itálico depois do último ---) fica sozinho na última página,
+## centrado. Monta também o índice (`_indice`).
 func _paginar(md: String) -> Array:
 	var fonte: Font = interface._fontes["escura"]
 	var largura := PAGINAS[0].size.x
-	var linhas: Array = []
-	for bruta in md.split("\n"):
-		var cabecalho := bruta.strip_edges().begins_with("#")
-		var titulo := cabecalho and linhas.is_empty()
-		var texto: String = interface._sem_markdown(bruta)
-		if texto == "":
-			if not linhas.is_empty() and linhas[-1][0] != "":
-				linhas.append(["", false])
-			continue
-		if cabecalho and not linhas.is_empty() and linhas[-1][0] != "":
-			linhas.append(["", false])
-		var atual := ""
-		for palavra in texto.split(" ", false):
-			while fonte.get_string_size(palavra, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > largura:  # palavra maior que a linha
-				var corte := palavra.length() - 1
-				while corte > 1 and fonte.get_string_size(palavra.substr(0, corte), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > largura:
-					corte -= 1
-				if atual != "":
-					linhas.append([atual, titulo])
-					atual = ""
-				linhas.append([palavra.substr(0, corte), titulo])
-				palavra = palavra.substr(corte)
-			var tentativa := palavra if atual == "" else atual + " " + palavra
-			if fonte.get_string_size(tentativa, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x <= largura:
-				atual = tentativa
-			else:
-				linhas.append([atual, titulo])
-				atual = palavra
-		if atual != "":
-			linhas.append([atual, titulo])
+	var brutas := md.split("\n")
+	var ultima_sep := -1
+	for k in brutas.size():
+		if brutas[k].strip_edges() == "---":
+			ultima_sep = k
 	var paginas: Array = []
 	var pagina: Array = []
-	for l in linhas:
-		if pagina.is_empty() and l[0] == "":
-			continue  # página não começa em branco
-		pagina.append(l)
-		if pagina.size() == LINHAS:
-			paginas.append(pagina)
-			pagina = []
-	if not pagina.is_empty():
-		paginas.append(pagina)
-	return paginas if not paginas.is_empty() else [[["(em branco)", false]]]
+	_indice = []
+	var quebrar := func():  # fecha a página (o array é o mesmo: copia e esvazia)
+		if not pagina.is_empty():
+			paginas.append(pagina.duplicate())
+			pagina.clear()
+	for k in brutas.size():
+		var bruta: String = brutas[k].strip_edges()
+		if bruta == "---":
+			continue
+		var estilo := "texto"
+		if bruta.begins_with("### "):
+			estilo = "ano"
+		elif bruta.begins_with("## "):
+			estilo = "capitulo" if bruta.begins_with("## Capítulo") else "secao"
+		elif bruta.begins_with("# "):
+			estilo = "titulo"
+		elif k > ultima_sep and ultima_sep >= 0 and bruta.begins_with("*") and bruta.length() > 2:
+			estilo = "epitafio"
+		var texto: String = interface._sem_markdown(bruta)
+		if texto == "":
+			if not pagina.is_empty() and pagina[-1][0] != "":
+				pagina.append(["", "texto"])
+				if pagina.size() == LINHAS:
+					quebrar.call()
+			continue
+		if estilo in ["capitulo", "secao", "epitafio"]:
+			quebrar.call()
+			if estilo == "epitafio" and paginas.size() % 2 == 1:  # o epitáfio abre na página da esquerda: lê-se nas duas
+				paginas.append([])
+			_indice.append([_rotulo_da_secao(texto, estilo), paginas.size()])
+			if estilo == "epitafio":  # no meio da página, se couber nela
+				var n_ep := _quebrar_linhas(texto, fonte, largura).size()
+				for b in maxi(0, (LINHAS - n_ep) / 2):
+					pagina.append(["", "texto"])
+		elif estilo == "ano" and not pagina.is_empty() and pagina[-1][0] != "":
+			pagina.append(["", "texto"])
+		for linha in _quebrar_linhas(texto, fonte, largura):
+			if pagina.is_empty() and linha == "":
+				continue
+			pagina.append([linha, estilo])
+			if pagina.size() == LINHAS:
+				quebrar.call()
+	quebrar.call()
+	return paginas if not paginas.is_empty() else [[["(em branco)", "texto"]]]
+
+
+## As linhas de um parágrafo que cabem na largura (palavras longas demais são cortadas).
+func _quebrar_linhas(texto: String, fonte: Font, largura: float) -> Array:
+	var r: Array = []
+	var atual := ""
+	for palavra in texto.split(" ", false):
+		while fonte.get_string_size(palavra, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > largura:
+			var corte := palavra.length() - 1
+			while corte > 1 and fonte.get_string_size(palavra.substr(0, corte), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > largura:
+				corte -= 1
+			if atual != "":
+				r.append(atual)
+				atual = ""
+			r.append(palavra.substr(0, corte))
+			palavra = palavra.substr(corte)
+		var tentativa := palavra if atual == "" else atual + " " + palavra
+		if fonte.get_string_size(tentativa, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x <= largura:
+			atual = tentativa
+		else:
+			r.append(atual)
+			atual = palavra
+	if atual != "":
+		r.append(atual)
+	return r
+
+
+## O rótulo curto no índice: "Capítulo VII: Os últimos (anos 161 a 162)" vira "VII. Os últimos".
+func _rotulo_da_secao(texto: String, estilo: String) -> String:
+	if estilo == "epitafio":
+		return "O epitáfio"
+	if texto.begins_with("Capítulo "):
+		var resto := texto.substr(9)
+		var dois := resto.find(":")
+		var nome := resto.substr(dois + 1).strip_edges() if dois >= 0 else resto
+		var par := nome.find(" (")
+		if par >= 0:
+			nome = nome.substr(0, par)
+		return resto.substr(0, dois) + ". " + nome
+	return texto
 
 
 # --- entrada (pos em coordenadas da tela da estante, 480 × 160) ----------------
@@ -261,7 +346,11 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 				_folhear(-2)
 			elif event.button_index == MOUSE_BUTTON_LEFT:
 				var local := p - LIVRO
-				if not Rect2i(Vector2i.ZERO, Vector2i(256, 144)).has_point(local):
+				if INDICE.has_point(p) and not _indice.is_empty():  # um capítulo do índice
+					var k := (p.y - INDICE.position.y - 6) / ALTURA_LINHA
+					if k >= 0 and k < _indice.size():
+						_ir_a_pagina(_indice[k][1])
+				elif not Rect2i(Vector2i.ZERO, Vector2i(256, 144)).has_point(local):
 					voltar()
 				else:
 					_folhear(2 if local.x >= 128 else -2)
@@ -294,9 +383,38 @@ func tecla(keycode: int) -> bool:
 			_folhear(2)
 		KEY_LEFT, KEY_PAGEUP:
 			_folhear(-2)
+		KEY_DOWN:
+			_ir_ao_capitulo(1)
+		KEY_UP:
+			_ir_ao_capitulo(-1)
 		_:
 			return false
 	return true
+
+
+## Pula para o começo do capítulo (ou da seção) seguinte (1) ou anterior (-1).
+func _ir_ao_capitulo(d: int) -> void:
+	if modo != "livro" or _indice.is_empty():
+		return
+	var atual := _secao_atual()
+	var alvo := clampi(atual + d, 0, _indice.size() - 1)
+	if d < 0 and atual >= 0 and _indice[atual][1] < _pagina:  # no meio de um capítulo: volta ao começo dele
+		alvo = atual
+	_ir_a_pagina(_indice[alvo][1])
+
+
+func _ir_a_pagina(n: int) -> void:
+	_pagina = clampi(n - n % 2, 0, maxi(0, (_paginas.size() - 1) / 2 * 2))
+	queue_redraw()
+
+
+## A seção do índice em que está a página da direita (ou -1, antes da primeira).
+func _secao_atual() -> int:
+	var r := -1
+	for k in _indice.size():
+		if _indice[k][1] <= _pagina + 1:
+			r = k
+	return r
 
 
 func _folhear(d: int) -> void:
@@ -332,7 +450,9 @@ func _mover(p: Vector2i, pos: Vector2) -> void:
 		queue_redraw()
 	if sob >= 0:
 		var l: Dictionary = livros[sob]
-		var linhas := [l["titulo"], "Mundo %d, do ano %d ao ano %d" % [l["semente"], l["ano_ini"], l["ano_fim"]]]
+		var partes := _titulo_e_epiteto(String(l["titulo"]))
+		var linhas := [partes[0]] + ([partes[1]] if partes[1] != "" else []) + \
+			["Mundo %d, do ano %d ao ano %d" % [l["semente"], l["ano_ini"], l["ano_fim"]]]
 		if l.get("atual", false):
 			linhas = [l["titulo"], "Mundo %d, desde o ano %d" % [l["semente"], l["ano_ini"]], "em curso"]
 		interface._mostrar_dica(linhas, -1, pos + position)
@@ -381,8 +501,9 @@ func _draw() -> void:
 
 func _desenhar_livro() -> void:
 	draw_texture(_livro, Vector2(LIVRO))
-	var fontes := {true: interface._fontes["titulo"], false: interface._fontes["escura"]}
-	var escura: Font = fontes[false]
+	var escura: Font = interface._fontes["escura"]
+	var titulo: Font = interface._fontes["titulo"]
+	_desenhar_indice()
 	for lado in 2:
 		var n := _pagina + lado
 		if n >= _paginas.size():
@@ -390,12 +511,34 @@ func _desenhar_livro() -> void:
 		var canto := Vector2(LIVRO + PAGINAS[lado].position)
 		var linhas: Array = _paginas[n]
 		for i in linhas.size():
-			var f: Font = fontes[linhas[i][1]]
-			draw_string(f, canto + Vector2(0, i * ALTURA_LINHA + int(f.get_ascent(TAM_FONTE))), linhas[i][0], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+			var f: Font = titulo if linhas[i][1] in ESTILOS_TITULO else escura
+			var dx := 0.0
+			if linhas[i][1] == "epitafio":  # o epitáfio, centrado
+				dx = (PAGINAS[lado].size.x - f.get_string_size(linhas[i][0], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x) / 2.0
+			draw_string(f, canto + Vector2(roundf(dx), i * ALTURA_LINHA + int(f.get_ascent(TAM_FONTE))), linhas[i][0], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+			if linhas[i][1] == "capitulo" and (i + 1 >= linhas.size() or linhas[i + 1][1] != "capitulo"):
+				draw_rect(Rect2(canto.x, canto.y + i * ALTURA_LINHA + 10, 24, 1), Arte.paleta[8])  # um traço sob o título
 		var numero := str(n + 1)
 		var w := escura.get_string_size(numero, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x
 		draw_string(escura, Vector2(LIVRO + PAGINAS[lado].position) + Vector2((PAGINAS[lado].size.x - w) / 2,
-			LINHAS * ALTURA_LINHA - 3 + int(escura.get_ascent(TAM_FONTE))), numero, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+			(LINHAS + 1) * ALTURA_LINHA - 3 + int(escura.get_ascent(TAM_FONTE))), numero, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+
+
+## O índice do livro aberto, à esquerda: o capítulo em que se está, na fonte de títulos.
+func _desenhar_indice() -> void:
+	if _indice.is_empty():
+		return
+	_caixa_pergaminho(INDICE)
+	var atual := _secao_atual()
+	var escura: Font = interface._fontes["escura"]
+	var titulo: Font = interface._fontes["titulo"]
+	for k in mini(_indice.size(), 12):
+		var f: Font = titulo if k == atual else escura
+		var texto: String = _indice[k][0]
+		while texto.length() > 3 and f.get_string_size(texto, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > INDICE.size.x - 10:
+			texto = texto.substr(0, texto.length() - 2) + "…"
+		draw_string(f, Vector2(INDICE.position) + Vector2(5, 6 + k * ALTURA_LINHA + int(f.get_ascent(TAM_FONTE))), texto,
+			HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 
 
 func _desenhar_confirmar() -> void:
