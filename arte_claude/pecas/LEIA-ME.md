@@ -105,7 +105,7 @@ A base de cada peça, o ponto que toca o chão, fica na última linha.
 | `pedra_pequena` | 8 × 8 | |
 | `pedra_grande` | 16 × 16 | com musgo |
 | `juncos` | 8 × 16 | juncos da margem |
-| `tronco_deriva`, `alga`, `samambaia_frente` | 16 × 8, 8 × 8, 16 × 16 | extras usados na montagem; a samambaia é do primeiro plano |
+| `tronco_deriva`, `alga`, `samambaia_frente` | 16 × 8, 8 × 8, 16 × 16 | extras usados na montagem. A samambaia é do primeiro plano: um tufo cheio de frondes arqueadas, com o pé na coluna 7 e a base na linha 13 (redesenhada no D6 da auditoria 3, sem mudar a âncora) |
 
 Fumaça e fagulhas da fogueira são partículas do motor.
 
