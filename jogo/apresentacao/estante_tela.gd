@@ -613,7 +613,7 @@ func _desenhar_fim() -> void:
 	var fim := int(_fim.get("ano_fim", 1))
 	var anos := ("terminou no ano %d." % fim) if ini == fim else ("terminou, do ano %d ao ano %d." % [ini, fim])
 	var linhas: Array = titulo + [anos, "O livro dela foi para a estante.", "",
-		"Quando quiser, faça nascer um povo", "novo: botão de criar povo, na alça."]
+		"Quando quiser, clique sobre o mundo", "para fazer nascer um povo novo."]
 	var caixa := CAIXA_FIM
 	caixa.size.y = 30 + linhas.size() * 11
 	caixa.position.y = (ALTURA - caixa.size.y) / 2

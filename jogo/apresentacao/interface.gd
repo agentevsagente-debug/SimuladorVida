@@ -58,7 +58,8 @@ const LARGURA_DICA := 140  # largura máxima do texto da dica, com quebra de lin
 const COR_PENSAMENTO := 29  # índice na paleta (A995DB, lilás): a linha do pensamento
 ## As dicas da primeira abertura, na ordem: cada uma aparece sozinha, discreta
 ## na alça, e some quando o jogador faz o que ela ensina.
-const DICAS := [["poder", "Escolha um poder e segure sobre o mundo"],
+const DICAS := [["criar_povo", "Clique sobre o mundo para fazer nascer um povo"],  # o mundo começa vazio (QA, D-09)
+	["poder", "Escolha um poder e segure sobre o mundo"],
 	["pessoas", "Passe o cursor sobre as pessoas"], ["cronica", "C abre a crônica do mundo"],
 	["ritmo", "0 a 3 mudam a velocidade do tempo"], ["esconder", "H esconde; o ícone fica na bandeja"]]
 const ESPERA_DICA := 4.0  # segundos entre uma dica feita e a próxima
@@ -154,6 +155,7 @@ func _montar_botoes() -> void:
 	var lista := []
 	if _mundo_vazio():  # sem ninguém, o único poder é criar um povo novo
 		aberto = "" if aberto == "poderes" else aberto
+		poder = "" if poder != "criar_povo" else poder  # um poder escolhido antes não serve mais
 		lista.append({"id": "criar_povo", "icone": "criar_povo", "selecionado": poder == "criar_povo"})
 	elif aberto == "poderes":
 		for p in PODERES:
@@ -179,7 +181,7 @@ func _montar_botoes() -> void:
 
 
 func _mundo_vazio() -> bool:
-	return vista.sim != null and vista.sim.mundo.fim_do_mundo
+	return vista.sim != null and (vista.sim.mundo.fim_do_mundo or vista.sim.grupos.is_empty())
 
 
 func _ritmo_atual() -> String:
@@ -352,7 +354,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			return false
 		var mundo_p: Vector2 = vista.para_mundo(pos - Vector2(0, faixa))
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			if event.pressed and poder == "criar_povo":
+			# no mundo vazio, o clique faz nascer um povo mesmo sem escolher o botão
+			if event.pressed and (poder == "criar_povo" or (poder == "" and _mundo_vazio())):
 				_criar_povo(mundo_p.x)
 			elif event.pressed and poder != "":
 				_carregando = true
@@ -428,6 +431,7 @@ func _criar_povo(x: float) -> void:
 	_montar_botoes()
 	if r.get("ok", false):
 		_avisar("Nasceu um povo novo: começa %s." % String(vista.sim.mundo.nome_da_era()).to_lower())
+		marcar_dica("criar_povo")
 		vista.comecar_recomeco(int(r.get("grupo", -1)))
 	else:
 		_avisar(String(r.get("motivo", "Não deu certo")))
@@ -446,6 +450,9 @@ func iniciar_dicas(feitas: Array) -> void:
 ## quem passar o cursor) vai para o fim da fila e volta depois das outras.
 func _dica_atual() -> String:
 	if not _dicas_ligadas or _fila_dicas.is_empty() or _relogio < _proxima_dica_em:
+		return ""
+	if _fila_dicas[0] == "criar_povo" and not _mundo_vazio():  # o mundo já tem gente: não há o que criar
+		_fila_dicas.pop_front()
 		return ""
 	if _relogio - _dica_desde > DICA_PULA and _fila_dicas.size() > 1:
 		_fila_dicas.push_back(_fila_dicas.pop_front())
