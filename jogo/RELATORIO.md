@@ -104,6 +104,43 @@ GIFs em 1x, em trechos de 60 s de jogo de verdade: `capturas/tarde-1x.gif` (a pa
 - **Medido no 50x** (`medicoes/rapido2.json`, 5 min): CPU de 0,171% em média (4,8% de um núcleo), pico de amostra de 0,23%, dentro da meta; 122 MB na coluna "Memória" do Gerenciador de Tarefas.
 - O verificar.ps1 foi atualizado para a alça com 10 botões e passa nos 19 itens.
 
+## Exportação para Windows (preparo, sem baixar nada)
+
+**Preset** (`jogo/export_presets.cfg`, "Windows"):
+- executável portátil, com o pacote embutido (`embed_pck`), x86_64;
+- ícone `arte/interface/icone_jogo.ico`;
+- nome "Simulador de vida", versão 0.1.0.0;
+- saída em `builds/Simulador de vida.exe`, pasta que o `.gitignore` da raiz já ignora.
+
+O `.gitignore` da raiz ignorava os presets; o de `jogo/` abre uma exceção para este.
+
+**O que vai junto:**
+- **Recursos importados** (texturas, imagens, fontes `.fnt`, cena, scripts compilados): vão pelo filtro "todos os recursos". Os atlas da sessão C não são usados pelo jogo, que lê as peças de `jogo/arte/`, então não vão.
+- **Arquivos que não são recursos:** entram pelo `include_filter`.
+  - os JSON: layout, tabelas de luz, estrelas, chaminés, trocas;
+  - a paleta (`arte/paleta.hex`);
+  - o auxiliar do atalho global (`atalho/atalho_global.ps1`).
+- **Ficam de fora:** capturas, medições, ferramentas, testes do núcleo (`ferramentas_sim/`) e os `.md`.
+
+**Conferido sem os modelos de exportação:**
+- O `--export-pack` gera só os dados (1,3 MB), e o jogo rodou só a partir desse pacote, numa pasta vazia, com mundo, alça, inverno e atalho global.
+- O teste achou e corrigiu 2 defeitos:
+  - a paleta (`.hex`) não entrava no pacote, e o jogo abria sem as trocas de cor e sem ícones;
+  - o atalho global rodava o `.ps1` direto de `res://`, que no executável fica dentro do pacote. Agora o script é copiado para `user://` e roda de lá.
+- Corrigido também: o auxiliar do atalho agora é encerrado em qualquer fechamento.
+
+**O que falta baixar** (precisa da autorização do usuário):
+- **Os modelos de exportação do Godot 4.7.2:** `Godot_v4.7.2-stable_export_templates.tpz`, cerca de 1 GB, com todas as plataformas. Pelo editor (Editor > Gerenciar modelos de exportação) ou pelo arquivo, em `%APPDATA%\Godot\export_templates.7.2.stable\`. Deles, o jogo usa só `windows_release_x86_64.exe` (e o `windows_debug_x86_64.exe`, para testes).
+- Nada mais. O ícone e a versão entram sem o rcedit, porque o Godot 4.7 grava os recursos do executável sozinho (`application/modify_resources`). A assinatura de código fica desligada: sem ela, o Windows mostra o aviso do SmartScreen na primeira abertura.
+
+**Depois de baixar:**
+
+```
+Godot --headless --path jogo --export-release "Windows"
+```
+
+O comando gera `builds/Simulador de vida.exe`.
+
 ## Primeira abertura: dicas na alça
 
 Quem abre o jogo pela primeira vez aprende sozinho, sem manual. Ao lado da alça aparece uma dica discreta de cada vez, em letra dourada numa caixa escura, e ela some quando o jogador faz o que ela ensina. A próxima vem 4 s depois:

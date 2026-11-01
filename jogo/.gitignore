@@ -1,1 +1,3 @@
 .godot/
+# o preset de exportação deste jogo vai junto (o .gitignore da raiz ignora os presets)
+!export_presets.cfg

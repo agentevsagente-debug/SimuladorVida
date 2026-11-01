@@ -254,10 +254,20 @@ func sair() -> void:
 	_guardar_config()
 	if vista.sim:
 		vista.sim.salvar()
+	_parar_atalho_global()
+	get_tree().quit()
+
+
+## Também quando o jogo fecha por outro caminho (a captura dos testes, por exemplo).
+func _exit_tree() -> void:
+	_parar_atalho_global()
+
+
+func _parar_atalho_global() -> void:
 	if _atalho_pid != 0:
 		OS.kill(_atalho_pid)
+		_atalho_pid = 0
 		_atalho_leitor.wait_to_finish()
-	get_tree().quit()
 
 
 ## Escala inicial: 2x numa tela de 96 dpi, 3x em 144 dpi (150%), 4x em
@@ -360,7 +370,16 @@ func _guardar_config() -> void:
 ## O Godot não tem atalho global. Um processo auxiliar registra o atalho no
 ## Windows e escreve uma linha a cada aperto; uma thread lê essas linhas.
 func _iniciar_atalho_global(tecla: String) -> void:
-	var script := ProjectSettings.globalize_path("res://atalho/atalho_global.ps1")
+	# no jogo exportado, res:// fica dentro do pacote e o PowerShell não o
+	# alcança: o script vai para user:// e roda de lá
+	var copia := "user://atalho_global.ps1"
+	var f := FileAccess.open(copia, FileAccess.WRITE)
+	if f == null:
+		_log("atalho_global=falhou ao copiar o script")
+		return
+	f.store_string(FileAccess.get_file_as_string("res://atalho/atalho_global.ps1"))
+	f.close()
+	var script := ProjectSettings.globalize_path(copia)
 	var r := OS.execute_with_pipe("powershell.exe", [
 		"-NoProfile", "-ExecutionPolicy", "Bypass", "-WindowStyle", "Hidden",
 		"-File", script, "-Pai", str(OS.get_process_id()), "-Tecla", tecla])
