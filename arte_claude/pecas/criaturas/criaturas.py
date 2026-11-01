@@ -12,7 +12,7 @@ sys.path.insert(0, str(AQUI.parent))
 
 from comum import PALETA, folha_quadros, gravar, para_imagem  # noqa: E402
 
-K = {"x": 30, "d": 8, "n": 9, "N": 10, "G": 12, "g": 11, "W": 31, "w": 0, "y": 22, "o": 21, "r": 20,
+K = {"R": 24, "Q": 23, "C": 12, "x": 30, "d": 8, "n": 9, "N": 10, "G": 12, "g": 11, "W": 31, "w": 0, "y": 22, "o": 21, "r": 20,
      "v": 15, "V": 14, "m": 13, "b": 18, "c": 19, "B": 17, "e": 3, "k": 4, "K": 5, "s": 16}
 
 
@@ -113,6 +113,22 @@ CRIATURAS = {
         ["c.....c", "cKKKKKc", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", ".Kn.nK.", "dnnddnd"],
         [".c.....", "....c..", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", "b.n.nKb", "dnnddnd"],
     ),
+    # raposa da madrugada (12x7), já em tons de noite: ferrugem apagada (24 e 23), peito e
+    # ponta do rabo claros (12), olho que brilha (22). Trote: as patas alternam.
+    "raposa_noite_4q": molde(
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "...Q.Q..Q.Q.", "..Q...Q..Q.."],
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "....QQ..QQ..", "....QQ..QQ.."],
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "...Q.Q.Q..Q.", "....Q.Q...Q."],
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "....QQ..QQ..", "....QQ..QQ.."],
+    ),
+    # raposa parada (12x7): olhando (olho aceso), cheirando o chão (cabeça baixa), olhando,
+    # e de orelha em pé virada para trás
+    "raposa_parada_4q": molde(
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "....Q...Q...", "....Q...Q..."],
+        ["............", "............", "C..RRRRRQ.Q.", "CQRRRRRRRRR.", ".QQRCCCRRyRR", "....Q...QCRQ", "....Q...Q..."],
+        ["........Q.Q.", "........RRR.", "C..RRRRRRyRR", "CQRRRRRRRCRx", ".QQRCCCRRC..", "....Q...Q...", "....Q...Q..."],
+        [".......Q.Q..", ".......RRR..", "C..RRRRRyRR.", "CQRRRRRRCRx.", ".QQRCCCRRC..", "....Q...Q...", "....Q...Q..."],
+    ),
     # morcego da madrugada (8x5), maior que o do entardecer e com a borda das asas clara
     # (luz da lua) para ler sobre o céu escuro; olhos vermelhos
     "morcego_noite_4q": molde(
@@ -155,6 +171,8 @@ QUANDO = {
     "bando_migrando_4q": ("inverno (e fim do outono)", "dia", "atravessa o céu alto de um lado a outro"),
     "coruja_pousada_4q": ("todas", "noite e madrugada", "pousada num galho de árvore ou no telhado; pisca"),
     "morcego_noite_4q": ("primavera, verão, outono", "noite e madrugada", "voa em zigue-zague perto das árvores e da fogueira"),
+    "raposa_noite_4q": ("todas", "noite e madrugada", "trota na beira da floresta e da vila, de cabeça baixa"),
+    "raposa_parada_4q": ("todas", "noite e madrugada", "para, cheira o chão e olha em volta; foge de gente"),
     "coruja_neve_4q": ("inverno", "noite e madrugada", "no lugar da coruja pousada quando há neve"),
     "coruja_chuva_4q": ("todas menos inverno", "noite e madrugada, com chuva", "no lugar da pousada enquanto chove"),
 }

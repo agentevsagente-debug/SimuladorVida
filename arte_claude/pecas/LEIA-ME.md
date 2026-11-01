@@ -476,7 +476,7 @@ As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e 
 
 ## 17. Vida ambiente (`criaturas/`)
 
-São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos e a coruja, que já vêm em tons de noite. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
+São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos, a coruja e a raposa, que já vêm em tons de noite. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
 
 | Folha | Quadro | Quadros | Estação | Horário | Onde e como |
 |---|---|---|---|---|---|
@@ -493,6 +493,8 @@ São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. 
 | `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
 | `coruja_pousada_4q` | 7 × 8 | 4 | todas | noite e madrugada | pousada num galho (o galho vem na peça: a linha 7 é o galho, ponha-a sobre a copa de uma árvore, a ponta de um pinheiro ou um telhado). Quadros: olhando, piscando, olhando para o lado, olhando. Fique no quadro 0 por 2 a 4 s e passe pelo 1 (piscar) ou pelo 2 (virar) por uns 0,3 s. Os olhos amarelos são o que se lê no escuro. |
 | `morcego_noite_4q` | 8 × 5 | 4 | primavera, verão, outono | noite e madrugada | maior que o do entardecer, com a borda das asas clara (a luz da lua) e olhos vermelhos, para ler sobre o céu e as árvores escuras. Voa em zigue-zague perto das árvores e da fogueira, 1 ou 2 por vez, a cada poucos minutos de 1x. |
+| `raposa_noite_4q` | 12 × 7 | 4 | todas | noite e madrugada | a raposa trotando, já em tons de noite (ferrugem apagada, peito e ponta do rabo claros, olho que brilha). A base é a última linha (as patas). Anda devagar (uns 8 px/s) na beira da floresta ou da vila e some no mato; espelhe para ir à esquerda. |
+| `raposa_parada_4q` | 12 × 7 | 4 | todas | noite e madrugada | parada: olhando (quadro 0), cheirando o chão (1), olhando (2) e virando a cabeça para trás (3). Mesmo encaixe da que trota. Alterne com ela: trota, para 2 a 4 s, cheira e segue. Se alguém chega perto, ela vira e trota para longe. |
 | `coruja_neve_4q` | 7 × 8 | 4 | inverno | noite e madrugada | a coruja pousada com neve (no cinza da noite) no alto da cabeça e no galho, e o corpo estufado de frio. Mesmos quadros e mesmo encaixe da `coruja_pousada_4q`; use no lugar dela quando há neve. |
 | `coruja_chuva_4q` | 7 × 8 | 4 | primavera, verão, outono | noite e madrugada, com chuva | encolhida, sem os tufos, com pingos batendo na cabeça e escorrendo. No quadro 2 ela se sacode e os pingos voam. Use no lugar da pousada enquanto chove. |
 
