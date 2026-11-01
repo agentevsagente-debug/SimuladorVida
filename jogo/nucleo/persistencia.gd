@@ -3,7 +3,8 @@ extends RefCounted
 ## ausência ao carregar. O arquivo guarda a hora real do salvamento.
 ##
 ## O formato é o texto de Variant do Godot (var_to_str), que preserva inteiros e
-## chaves inteiras. Os reais são gravados pelos seus 64 bits ("@f:" e um inteiro),
+## chaves inteiras. Os dicionários vão como listas de pares ("@ordem"), porque o texto do
+## Godot reordena as chaves e a ordem importa para o determinismo. Os reais são gravados pelos seus 64 bits ("@f:" e um inteiro),
 ## porque a leitura de reais em texto do Godot perde o último dígito. Assim um mundo
 ## salvo e carregado continua exatamente igual ao que nunca parou.
 
@@ -16,7 +17,7 @@ const Evento = preload("evento.gd")
 const VERSAO := 1
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
-const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "grupos", "zonas", "eventos"]
+const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
 const Estante = preload("estante.gd")
@@ -101,10 +102,12 @@ static func _codificar(v):
 		TYPE_FLOAT:
 			return PREFIXO_REAL + str(PackedFloat64Array([v]).to_byte_array().decode_s64(0))
 		TYPE_DICTIONARY:
-			var d := {}
+			# O texto do Godot ordena as chaves; a ordem conta para o determinismo, então
+			# cada dicionário vai como lista de pares.
+			var pares: Array = []
 			for k in v:
-				d[k] = _codificar(v[k])
-			return d
+				pares.append([k, _codificar(v[k])])
+			return {"@ordem": pares}
 		TYPE_ARRAY:
 			var a: Array = []
 			for x in v:
@@ -123,6 +126,10 @@ static func _decodificar(v):
 				return b.decode_double(0)
 		TYPE_DICTIONARY:
 			var d := {}
+			if v.size() == 1 and v.has("@ordem"):
+				for par in v["@ordem"]:
+					d[par[0]] = _decodificar(par[1])
+				return d
 			for k in v:
 				d[k] = _decodificar(v[k])
 			return d
@@ -176,10 +183,13 @@ static func _de_dict(d: Dictionary):
 	m.rng.seed = d["rng_seed"]
 	m.rng.state = d["rng_state"]
 	m.pessoas.clear()
+	m.vivos.clear()
 	for pd in d["pessoas"]:
 		var p := Pessoa.new()
 		_preencher(p, pd)
 		m.pessoas[p.id] = p
+		if p.vivo:
+			m.vivos[p.id] = p
 	m.grupos.clear()
 	for gd in d["grupos"]:
 		var g := Grupo.new()

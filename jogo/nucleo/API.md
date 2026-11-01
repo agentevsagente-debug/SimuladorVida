@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 6, de 01/11/2026 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 7, de 01/11/2026 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -177,7 +177,10 @@ vistos = mundo.eventos.size()
 - `causa`: "natural", "social" ou "divina";
 - `importancia`: de 0 a 10;
 - `dados`: depende do tipo. Os atos do deus trazem `x`, `grau` e `intensidade`;
-- `camada`: "ambiente", "nota" ou "chamado", as três camadas de atenção do documento funcional.
+- `camada`: "ambiente", "nota" ou "chamado", as três camadas de atenção do documento funcional;
+- `curto`: uma frase de até 40 caracteres para a dica do cursor, nos eventos de camada "nota" ou "chamado" ("Fome em Koil", "Começa a Guerra Santa", "Restam só quatro no mundo"). É vazia na camada "ambiente" e nos poucos tipos que não têm frase.
+
+`texto_curto(evento_id) -> String` devolve a mesma frase curta para qualquer evento, a qualquer momento. Ela sai da gramática, não sorteia nada do mundo e é sempre a mesma para o mesmo evento.
 
 Uma lista completa de tipos e dados de cada um fica para a próxima versão deste documento. Por enquanto, a referência é a função `registrar(...)` em `mundo.gd`. Os tipos que mais interessam à moldura:
 
@@ -195,7 +198,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `linhagem` | a pessoa acompanhada morreu, e o acompanhamento passou adiante | nota |
 | `guerra_inicio`, `guerra_fim` | uma briga vira guerra com nome (na segunda batalha) e termina: trégua, imposição do deus, conquista, extinção ou esfriou | chamado |
 | `cometa`, `terremoto`, `gemeos` | presságios naturais, além do `eclipse`. O terremoto derruba cabanas e pode matar. | nota |
-| `cultura` | um povo muda a relação com estranhos (`dados.dimensao = "estranhos"`) ou decide o que faz com os mortos (`"mortos"`) | nota |
+| `cultura` | um povo muda uma dimensão da cultura (`dados.dimensao`: "estranhos", "mortos", "poder", "recursos"). Para o poder, `dados.como` diz como: "revolta" (contra o templo), "golpe" (um ambicioso acaba com o conselho), "tirania" (o povo cansa de um líder só) ou "templo" (os sacerdotes passam a mandar) | nota |
 | `reforma` | uma geração abandona um costume herdado ou de origem esquecida | nota |
 | `dependencia`, `exigencia`, `desamparo` | o povo deixa de se preparar porque o deus sempre responde; passa a pedir coisas pequenas; e, no primeiro silêncio, paga caro | nota |
 | `expedicao` | uma família parte além da borda do mundo e nunca volta | nota |
@@ -206,6 +209,10 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `estudo_do_ceu` | o povo passa a prever eclipses: sinais no céu impressionam menos (metade no estágio 5, um quarto no 6) | nota |
 | `ruinas_saber`, `mito_ruinas` | alguém aprende nas ruínas; um povo explica ruínas de quem não existe mais ("gigantes", "castigo" ou "gente") | nota |
 | `livro_fechado` | a crônica de uma era se fechou como livro | nota |
+| `peste` | uma doença vem de longe e entra em todos os povos; mata muito por cerca de 20 dias (uma vez a cada ~150 anos) | chamado |
+| `profeta` | alguém prega outro nome para o deus. `dados.aceito`: o povo aceitou (o deus muda de nome), ou o templo chamou de heresia e os seguidores fundaram outro povo (vem em seguida uma `separacao` por cisma) | chamado |
+| `secularizacao` | um povo que escreve deixa de rezar: os sábios explicam a chuva e o raio | chamado |
+| `renascimento` | um povo que tinha deixado de rezar volta a crer, diante de algo inegável | chamado |
 
 `camada(evento)` aplica a regra: importância ≥ 8 ou tipo de chamado → "chamado"; importância ≥ 4 → "nota"; o resto → "ambiente".
 
@@ -222,6 +229,7 @@ As preces que ainda esperam resposta. São os sinais na moldura e continuam aqui
 | `desde`, `dias` | dia absoluto em que começou e há quantos dias espera |
 | `x` | onde está quem reza agora |
 | `texto` | a prece em português, sempre a mesma para o mesmo evento: «Que Rega, que a chuva volte.» |
+| `curto` | uma frase de até 40 caracteres para a dica do cursor: "Kurpeya pede comida", "Viem pede a cura de Lou" |
 
 Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o ponto cego do documento funcional.
 
@@ -347,6 +355,7 @@ Um cenário é um arquivo de texto com o que o deus faz, usado pelas ferramentas
 ano 28, dia 15: raio sobre o líder do lago        # em data marcada
 na próxima seca: chuva onde houver seca           # condicional: dispara uma vez, quando acontece
 na próxima fome, a partir do ano 55: fartura onde houver fome
+sempre que houver seca: chuva onde houver seca     # repete, no máximo uma vez por ano
 quando houver guerra: erguer terra onde houver guerra
 ano 85, dia 18: fogo forte na floresta             # "fraco"/"forte" mudam a intensidade
 ```
@@ -366,6 +375,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
+| `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder. Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
+| `medir_desempenho.gd` | Gera o maior mundo no estágio 6 (`gerar`) e mede, em outro processo, quanto custa 1 ano dele (`medir`). |
 
 ## Estágios e a relação com o deus
 

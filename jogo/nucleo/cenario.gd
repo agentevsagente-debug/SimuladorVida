@@ -16,6 +16,7 @@ extends RefCounted
 ##   na próxima fome, a partir do ano 30: fartura onde houver fome
 ##   quando houver guerra: erguer terra onde houver guerra
 ##   na próxima doença: sonho no lago
+##   sempre que houver seca: chuva onde houver seca   (repete, no máximo uma vez por ano)
 ## Condições: seca, fome, guerra, doença, prece. "onde houver" (ou sem zona) age na zona
 ## em que a condição aconteceu; com zona, age na zona dada.
 
@@ -38,7 +39,7 @@ static func ler_texto(texto: String) -> Array:
 	var re := RegEx.new()
 	re.compile("ano\\s+(\\d+)\\s*,\\s*dia\\s+(\\d+)(?:\\s*,\\s*hora\\s+(\\d+))?\\s*:\\s*(.+)")
 	var re_cond := RegEx.new()
-	re_cond.compile("^(?:na proxima|no proximo|quando houver|quando)\\s+(\\w+)(?:[^:]*?ano\\s+(\\d+))?[^:]*:\\s*(.+)")
+	re_cond.compile("^(na proxima|no proximo|quando houver|quando|sempre que houver|sempre que)\\s+(\\w+)(?:[^:]*?ano\\s+(\\d+))?[^:]*:\\s*(.+)")
 	var n_linha := 0
 	for linha in texto.split("\n"):
 		n_linha += 1
@@ -46,12 +47,13 @@ static func ler_texto(texto: String) -> Array:
 		if l.is_empty() or l.begins_with("#"):
 			continue
 		var mc := re_cond.search(l)
-		if mc != null and CONDICOES.has(mc.get_string(1)):
-			var c := _acao(mc.get_string(3), linha, n_linha, true)
+		if mc != null and CONDICOES.has(mc.get_string(2)):
+			var c := _acao(mc.get_string(4), linha, n_linha, true)
 			if c.is_empty():
 				continue
-			c.merge({"condicao": mc.get_string(1), "desde_ano": int(mc.get_string(2)) if not mc.get_string(2).is_empty() else 1,
-				"usado": false, "ordem": comandos.size()})
+			c.merge({"condicao": mc.get_string(2), "desde_ano": int(mc.get_string(3)) if not mc.get_string(3).is_empty() else 1,
+				"usado": false, "repetir": mc.get_string(1).begins_with("sempre"), "ultimo_ano": -100,
+				"ordem": comandos.size()})
 			comandos.append(c)
 			continue
 		var m := re.search(l)

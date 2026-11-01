@@ -1,0 +1,28 @@
+semente   1: 60/2p 207/4p 284/4p 268/4p 176/4p 241/4p
+   estágio máx 6 (ano 74) | povos extintos 10 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.4, máx 7 | viradas: lacuna máx 11 | quietos 9%, maior seq 4 | repetição 19% | 42.12 s (ano mais lento 0.348 s)
+semente   2: 55/2p 123/4p 204/4p 192/4p 238/4p 233/4p
+   estágio máx 6 (ano 97) | povos extintos 6 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.6, máx 11 | viradas: lacuna máx 23 | quietos 17%, maior seq 5 | repetição 20% | 49.15 s (ano mais lento 0.321 s)
+semente   3: 56/2p 226/4p 247/4p 257/4p 220/4p 209/4p
+   estágio máx 6 (ano 64) | povos extintos 14 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.4, máx 6 | viradas: lacuna máx 16 | quietos 11%, maior seq 2 | repetição 18% | 37.79 s (ano mais lento 0.340 s)
+semente   4: 94/3p 200/4p 191/4p 187/4p 208/4p 230/3p
+   estágio máx 6 (ano 59) | povos extintos 13 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.3, máx 11 | viradas: lacuna máx 12 | quietos 12%, maior seq 5 | repetição 18% | 8.56 s (ano mais lento 0.102 s)
+semente   5: 100/2p 174/2p 216/4p 240/4p 224/4p 225/4p
+   estágio máx 6 (ano 77) | povos extintos 9 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.5, máx 9 | viradas: lacuna máx 13 | quietos 17%, maior seq 4 | repetição 18% | 8.34 s (ano mais lento 0.066 s)
+semente   6: 97/2p 211/4p 227/4p 211/4p 156/4p 226/4p
+   estágio máx 6 (ano 79) | povos extintos 14 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.4, máx 8 | viradas: lacuna máx 11 | quietos 10%, maior seq 2 | repetição 16% | 8.91 s (ano mais lento 0.058 s)
+semente   7: 17/2p 140/4p 249/4p 248/4p 249/4p 178/4p
+   estágio máx 6 (ano 85) | povos extintos 10 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.5, máx 18 | viradas: lacuna máx 21 | quietos 15%, maior seq 5 | repetição 18% | 8.64 s (ano mais lento 0.063 s)
+semente   8: 59/2p 168/4p 215/3p 240/3p 179/3p 166/3p
+   estágio máx 6 (ano 99) | povos extintos 14 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.6, máx 9 | viradas: lacuna máx 14 | quietos 13%, maior seq 5 | repetição 18% | 7.59 s (ano mais lento 0.061 s)
+semente   9: 53/3p 144/4p 202/4p 246/4p 230/4p 221/4p
+   estágio máx 6 (ano 121) | povos extintos 12 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.5, máx 10 | viradas: lacuna máx 12 | quietos 13%, maior seq 3 | repetição 18% | 8.22 s (ano mais lento 0.063 s)
+semente  10: 50/2p 205/4p 188/3p 197/4p 124/3p 246/4p
+   estágio máx 6 (ano 83) | povos extintos 16 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.5, máx 7 | viradas: lacuna máx 11 | quietos 12%, maior seq 3 | repetição 16% | 8.19 s (ano mais lento 0.058 s)
+MÉDIA (10 mundos): estagio_max=6.00 extintos=11.80 fins=0.00 lacuna_media=1.48 lacuna_max=9.60 virada_max=14.40 quietos=0.13 quieto_seq=3.80 repeticao=0.18 s_por_ano_max=0.15 
+semente   1: 156/4p 166/2p 283/4p 197/2p 284/4p 267/4p
+   estágio máx 6 (ano 55) | povos extintos 16 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.1, máx 10 | viradas: lacuna máx 14 | quietos 6%, maior seq 3 | repetição 21% | 11.31 s (ano mais lento 0.148 s)
+semente   2: 54/2p 206/4p 248/4p 332/4p 229/3p 263/4p
+   estágio máx 6 (ano 120) | povos extintos 17 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.1, máx 5 | viradas: lacuna máx 11 | quietos 5%, maior seq 2 | repetição 20% | 10.88 s (ano mais lento 0.106 s)
+semente   3: 101/4p 278/4p 281/4p 249/4p 294/4p 228/4p
+   estágio máx 6 (ano 93) | povos extintos 15 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.1, máx 4 | viradas: lacuna máx 10 | quietos 3%, maior seq 2 | repetição 19% | 11.26 s (ano mais lento 0.072 s)
+MÉDIA (3 mundos): estagio_max=6.00 extintos=16.00 fins=0.00 lacuna_media=1.09 lacuna_max=6.33 virada_max=11.67 quietos=0.05 quieto_seq=2.33 repeticao=0.20 s_por_ano_max=0.11 

@@ -1,0 +1,11 @@
+   fomes/década 15.0 | guerras 24 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 2 | regressões 6
+   fomes/década 12.1 | guerras 12 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 4 | regressões 4
+   fomes/década 15.2 | guerras 18 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 1 | regressões 11
+   fomes/década 10.5 | guerras 50 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 2 | regressões 11
+   fomes/década 12.6 | guerras 21 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 3 | regressões 2
+   fomes/década 14.1 | guerras 35 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 2 | regressões 8
+   fomes/década 13.6 | guerras 36 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 3 | regressões 4
+   fomes/década 12.4 | guerras 27 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 2 | regressões 7
+   fomes/década 12.7 | guerras 28 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 4 | regressões 15
+   fomes/década 10.1 | guerras 35 | profetas 0 | secularizações 0 | renascimentos 0 | pestes 0 | mudanças de poder 2 | regressões 10
+MÉDIA (10 mundos): fomes_decada=12.84 guerras=28.60 profetas=0.00 secularizacoes=0.00 mudancas_poder=2.50 estagio_max=6.00 extintos=11.80 fins=0.00 lacuna_media=1.48 lacuna_max=9.60 virada_max=14.40 quietos=0.13 quieto_seq=3.80 repeticao=0.18 s_por_ano_max=0.06 

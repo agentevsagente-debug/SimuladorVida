@@ -20,7 +20,12 @@ const SILENCIOSOS := ["inicio", "linhagem", "rixa", "roubo", "casamento", "seca_
 ## o que muda a lista de povos (sem eles, a crônica citaria povos que não apresentou).
 const OBRIGATORIOS := ["chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "terra_erguida",
 	"sonho", "separacao", "conquista", "fusao", "extincao_grupo", "crenca", "fim_do_mundo", "os_ultimos",
-	"guerra_inicio", "guerra_fim", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura"]
+	"guerra_inicio", "guerra_fim", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura",
+	"peste", "profeta", "secularizacao", "renascimento"]
+
+## Tipos que cansam quando se repetem: perdem nota a cada vez que já foram contados há pouco.
+const CANSAM := ["prece_sem_resposta", "prece_atendida", "gemeos", "fome_fim", "doenca_fim", "seca_fim",
+	"sacerdote", "novo_lider", "inverno_rigoroso", "casamento_entre_grupos"]
 
 ## Tipos que contam uma consequência: não ganham "No verão," na frente.
 const SEM_ESTACAO := ["seca_fim", "fome_fim", "doenca_fim", "costume", "costume_esquecido",
@@ -537,6 +542,8 @@ func _nota(e) -> int:
 		if e.ano - a <= 8:
 			recentes += 1
 	n -= recentes / 2
+	if e.tipo in CANSAM:
+		n -= recentes
 	return n
 
 
@@ -936,6 +943,19 @@ func _texto(e) -> String:
 			return _guerra_fim(e, v)
 		"cultura":
 			if e.dados["dimensao"] == "poder":
+				v["l"] = _p(e.participantes[0]) if not e.participantes.is_empty() else G.termo("alguém")
+				match e.dados.get("como", ""):
+					"revolta":
+						return _frase(["{g} se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder.",
+							"Em {g}, gritaram que o templo mentia em nome {de:deus}. Os sacerdotes foram tirados do poder."], v)
+					"golpe":
+						return _frase(["{l} não esperou a vez: tomou o comando de {g} à força, e o conselho dos velhos se calou.",
+							"Com lanças e promessas, {l} acabou com o conselho de {g} e passou a mandar sozinho."], v)
+					"tirania":
+						return _frase(["Cansado de um líder que mandava sozinho, {g} passou a decidir em conselho.",
+							"Depois de anos sob um só, {g} sentou-se em roda: dali em diante, decidia-se juntos."], v)
+					"templo":
+						return _frase(["O templo de {g} ficou mais forte que o líder. {l}, que falava {por:deus}, passou a decidir tudo."], v)
 				if e.dados["valor"] == "sacerdotes":
 					return _frase(["Em {g}, quem passou a decidir foi o templo: os sacerdotes falavam {por:deus}, e o deus decidia tudo.",
 						"O templo de {g} ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome {de:deus}."], v)
@@ -999,6 +1019,27 @@ func _texto(e) -> String:
 			v["f2"] = _p(e.participantes[1])
 			v["mae"] = _p(e.participantes[2])
 			return _frase(["{mae} deu à luz gêmeos, {f1} e {f2}. Uns viram bênção; outros, mau sinal."], v)
+		"peste":
+			return _frase(["Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente.",
+				"Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo."], v)
+		"profeta":
+			v["p"] = _p(e.participantes[0])
+			v["an"] = G.termo(e.dados["antigo"])
+			v["nn"] = G.termo(e.dados["novo"])
+			v["novo"] = _deus(e.dados["novo"], e.dados["genero"])
+			if e.dados["aceito"]:
+				return _frase(["{p} disse ter ouvido o deus de outro jeito: não era «{an}», era «{nn}». {g} acreditou, e o deus mudou de nome.",
+					"Em {g}, {p} começou a pregar que o deus não era «{an}». Era «{nn}». Em poucos anos, todos rezavam assim."], v)
+			return _frase(["{p} pregou em {g} que o deus não era «{an}», mas «{nn}». O templo chamou aquilo de heresia, e {p} saiu com os que {p:o|a} seguiam.",
+				"O templo de {g} não aceitou {p}, que chamava o deus de «{nn}». Houve gritos, pedras, e os seguidores de {p} foram embora."], v)
+		"secularizacao":
+			v["dn"] = G.termo(e.dados.get("deus", ""))
+			return _frase(["Em {g}, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «{dn}».",
+				"{g} deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos."], v)
+		"renascimento":
+			v["dn"] = G.termo(e.dados.get("deus", ""))
+			return _frase(["Fazia muito tempo que {g} não rezava. Diante do que viu, voltou a chamar por «{dn}», e o templo encheu de novo.",
+				"O que aconteceu não tinha explicação. Em {g}, os que zombavam das preces foram os primeiros a ajoelhar."], v)
 		"os_ultimos":
 			var n: int = e.dados["restam"]
 			v["n"] = G.termo(G.extenso(n, "f"), "f", n)
@@ -1231,6 +1272,11 @@ func _separacao(e, v: Dictionary) -> String:
 			t = _frase(["A rixa entre {f} e {d} rachou {pai}. {f} partiu com os seus, {n} pessoas, e fundou {novo} {em:zona}.",
 				"{f} não podia mais viver perto de {d}. Saiu de {pai} com {n} pessoas e fundou {novo} {em:zona}."], v)
 		"cisma":
+			var antes = _evento(e.id - 1)
+			if antes != null and antes.tipo == "profeta" and not antes.dados.get("aceito", true):
+				v["dnn"] = G.termo(antes.dados["novo"])
+				return _frase(["Com {f} à frente, {n} pessoas fundaram {novo} {em:zona}, onde o deus se chama «{dnn}».",
+					"Os seguidores de {f} fundaram {novo} {em:zona}. Ali se reza a «{dnn}»."], v)
 			if e.dados.get("novo_cetico", false):
 				t = _frase(["Os que já não acreditavam, com {f} à frente, deixaram {pai} e fundaram {novo} {em:zona}. Lá ninguém reza.",
 					"{pai} se partiu por causa do deus. {f} levou {n} pessoas que duvidavam e fundou {novo} {em:zona}."], v)
@@ -1305,7 +1351,7 @@ func _ataque(e, v: Dictionary) -> String:
 	elif anterior > 0:
 		v["ant"] = G.termo(str(anterior))
 		t = _frase(["A guerra entre {a} e {b} continuou: {a} voltou a atacar {em:zona}" + motivo + ".",
-			"De novo {a} contra {b}, como no ano {ant}" + motivo + ".",
+			"De novo {a} contra {b}" + motivo + ", como no ano {ant}.",
 			"{a} não esqueceu o ano {ant} e atacou {b} outra vez."], v)
 	else:
 		t = _frase(["{a} atacou {b} {em:zona}" + motivo + ".", "Os de {a} caíram sobre {b} {em:zona}" + motivo + ".",
@@ -1496,6 +1542,198 @@ const TEXTOS_PRECE := {
 	"banal": ["{deus}, que amanhã faça sol para a pesca.", "{deus}, que a caça seja gorda.",
 		"{deus}, que a festa seja bonita.", "{deus}, que o vento não leve o telhado."],
 }
+
+
+## Frase curta (até uns 40 caracteres) para a dica do cursor na moldura.
+const LIMITE_CURTO := 40
+
+
+func texto_curto(e) -> String:
+	rt.seed = m.semente * 4099 + e.id
+	var v := {}
+	if e.grupo >= 0:
+		v["g"] = _g(e.grupo)
+	if e.outro_grupo >= 0:
+		v["o"] = _g(e.outro_grupo)
+	if not e.participantes.is_empty() and m.pessoas.has(e.participantes[0]):
+		v["p"] = _p(e.participantes[0])
+	var opcoes: Array = []
+	match e.tipo:
+		"prece":
+			var nec: String = e.dados["necessidade"]
+			if e.dados["alvo"] != -1:
+				v["a"] = _p(e.dados["alvo"])
+				opcoes = ["{p} pede a cura de {a}", "{p} pede a cura {a:do filho|da filha}", "{p} reza por um doente"]
+			else:
+				opcoes = {"seca": ["{p} pede chuva", "{g} pede chuva"], "fome": ["{p} pede comida", "{g} pede comida"],
+					"doenca": ["{p} pede o fim da febre"], "frio": ["{p} pede o fim do frio"],
+					"guerra": ["{p} pede proteção"], "banal": ["{p} pede sol para a pesca", "{p} pede uma caça gorda"]}.get(nec, ["{p} reza"])
+		"fome_inicio":
+			opcoes = ["Fome em {g}"]
+		"doenca_inicio":
+			opcoes = ["Febre em {g}"] if not e.dados.has("peste") else ["Peste em {g}"]
+		"ataque":
+			opcoes = ["{g} ataca {o}"]
+		"os_ultimos":
+			v["n"] = G.termo(G.extenso(e.dados["restam"], "f"), "f", e.dados["restam"])
+			opcoes = ["{n#Resta|Restam} só {n} no mundo"]
+		"fim_do_mundo":
+			opcoes = ["Não resta ninguém"]
+		"silencio":
+			opcoes = ["{g} não entende o silêncio"]
+		"culpado":
+			opcoes = ["{p} é {p:apontado|apontada} como culpad{p:o|a}", "Culpam {p} pelo silêncio"]
+		"conhecimento_perdido":
+			opcoes = ["{g} esqueceu como plantar"]
+		"regressao":
+			opcoes = ["{g} perdeu um saber"]
+		"estagio":
+			opcoes = {3: ["{g} ergue casas de pedra"], 4: ["{g} forja metal"], 5: ["{g} aprende a escrever"],
+				6: ["{g} cava canais"]}.get(e.dados["estagio"], ["{g} aprende algo novo"])
+		"crenca":
+			v["d"] = G.termo(e.dados["deus"])
+			opcoes = ["{g} chama o deus de «{d}»", "{g} começa a crer"]
+		"separacao":
+			v["pai"] = _g(e.outro_grupo)
+			opcoes = ["{g} nasce de {pai}", "Um novo povo: {g}"]
+		"conquista":
+			opcoes = ["{g} conquista {o}"]
+		"guerra_inicio":
+			v["n"] = G.termo(e.dados["nome"])
+			opcoes = ["Começa a {n}", "{g} em guerra com {o}"]
+		"guerra_fim":
+			v["n"] = G.termo(e.dados["nome"])
+			opcoes = ["Acaba a {n}", "Fim da guerra"]
+		"agricultura":
+			opcoes = ["{g} planta as primeiras roças"]
+		"peste":
+			opcoes = ["Peste em todo o mundo"]
+		"profeta":
+			opcoes = ["{p} prega outro deus", "Um profeta em {g}"]
+		"secularizacao":
+			opcoes = ["{g} deixou de rezar"]
+		"renascimento":
+			opcoes = ["{g} volta a rezar"]
+		"extincao_grupo":
+			opcoes = ["{g} deixou de existir"]
+		"morte":
+			opcoes = ["Morreu {p}"]
+		"nascimento":
+			opcoes = ["Nasceu {p}"]
+		"expedicao":
+			v["c"] = _p(e.dados["chefe"])
+			opcoes = ["{c} parte além da borda"]
+		"dependencia":
+			opcoes = ["{g} já não se prepara"]
+		"desamparo":
+			opcoes = ["{g} se sente {g:abandonado|abandonado}"]
+		"tregua":
+			opcoes = ["Paz entre {g} e {o}", "Trégua: {g} e {o}"]
+		"inicio":
+			opcoes = ["{g} chega ao mundo", "Chega o primeiro povo"]
+		"fome_fim":
+			opcoes = ["A fome passou em {g}"]
+		"doenca_fim":
+			opcoes = ["A febre deixou {g}"]
+		"linhagem":
+			if e.dados["para"] != -1:
+				v["pa"] = _p(e.dados["para"])
+				opcoes = ["Agora você acompanha {pa}", "A linhagem segue com {pa}"]
+			else:
+				opcoes = ["A linhagem acabou"]
+		"seca_inicio":
+			opcoes = ["A chuva parou"]
+		"seca_fim":
+			opcoes = ["A chuva voltou"]
+		"eclipse":
+			opcoes = ["O sol escureceu"]
+		"cometa":
+			opcoes = ["Uma estrela de cauda no céu"]
+		"terremoto", "terremoto_divino":
+			opcoes = ["A terra tremeu"]
+		"tempestade":
+			opcoes = ["Tempestade"]
+		"inverno_rigoroso":
+			opcoes = ["Um inverno de gelo"]
+		"chuva_divina":
+			opcoes = ["Choveu onde o deus quis"]
+		"raio_divino":
+			if e.dados.get("vitima", -1) != -1:
+				v["vi"] = _p(e.dados["vitima"])
+				opcoes = ["Um raio matou {vi}"]
+			else:
+				opcoes = ["Um raio do céu limpo"]
+		"fartura_divina":
+			opcoes = ["Comida em abundância"]
+		"fogo_divino":
+			opcoes = ["Fogo sem origem"]
+		"terra_erguida":
+			opcoes = ["A terra se ergueu"]
+		"sonho":
+			opcoes = ["{p} teve um sonho"]
+		"seca_divina":
+			opcoes = ["Só ali não chove"]
+		"diluvio":
+			opcoes = ["A água subiu"]
+		"pressagio":
+			opcoes = ["Um sinal no céu"]
+		"cura":
+			opcoes = ["{p} se levantou" if e.dados.get("condenado", false) else "{p} se sente bem"] if e.dados.get("curado", -1) != -1 else []
+		"costume":
+			opcoes = ["{g} tem um novo costume"]
+		"lugar_nomeado":
+			v["nome"] = G.termo(e.dados["nome"])
+			opcoes = ["{nome}", "Um lugar ganhou nome"]
+		"sacerdote":
+			opcoes = ["{p} fala pelo deus"]
+		"novo_lider":
+			opcoes = ["{p} guia {g}"]
+		"edito":
+			opcoes = ["{p} proíbe trato com {o}"]
+		"descoberta", "descoberta_tecnica":
+			opcoes = ["{p} descobriu algo"]
+		"mito_ruinas":
+			opcoes = ["{g} explica as ruínas"]
+		"reforma":
+			opcoes = ["{g} larga um costume"]
+		"cultura":
+			opcoes = ["{g} muda o jeito de viver"]
+		"deus_renomeado":
+			v["d"] = G.termo(e.dados["novo"])
+			opcoes = ["Agora o deus é «{d}»", "{g} rebatiza o deus"]
+		"casamento_entre_grupos":
+			opcoes = ["Casamento entre {o} e {g}"]
+		"gemeos":
+			opcoes = ["Nasceram gêmeos"]
+		"prece_atendida":
+			opcoes = ["{g} se diz {g:atendido|atendido}"]
+		"prece_sem_resposta":
+			opcoes = ["Uma prece sem resposta"]
+		"fusao":
+			opcoes = ["{g} se junta a {o}"]
+		"arquivo_salvou":
+			opcoes = ["As tabuletas salvaram um saber"]
+		"ruinas_saber":
+			opcoes = ["{p} aprende nas ruínas"]
+		"estudo_do_ceu":
+			opcoes = ["{g} estuda o céu"]
+		"mudanca":
+			opcoes = ["{g} muda de lugar"]
+		"nova_crenca":
+			opcoes = ["{g} tem uma nova crença"]
+		"exigencia":
+			opcoes = ["{g} pede qualquer coisa"]
+	if opcoes.is_empty():
+		return ""
+	# A primeira variante que couber; senão a mais curta, cortada.
+	var melhor := ""
+	for o in opcoes:
+		var t := G.preencher(o, v)
+		if t.length() <= LIMITE_CURTO:
+			return t
+		if melhor.is_empty() or t.length() < melhor.length():
+			melhor = t
+	return melhor.substr(0, LIMITE_CURTO - 1) + "…"
 
 
 ## Texto de uma prece, para a apresentação mostrar no sinal. Sempre o mesmo para o mesmo evento.

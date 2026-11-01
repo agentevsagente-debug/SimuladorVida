@@ -8,369 +8,325 @@ No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. En
 
 No inverno, nasceu Vikuru, a primeira de Koil.
 
-*Entre os anos 2 e 3, nada mudou o rumo do mundo.*
+### Ano 2
+
+Veio uma seca de 17 dias. O lago encolheu e a mata secou.
+
+### Ano 3
+
+Veio um inverno de gelo.
 
 ### Ano 4
 
-Veio uma seca de 23 dias. O lago encolheu e a mata secou.
+No inverno do ano 4, Koil deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Houve fome em Koil: 5 dias de barriga vazia, sem mortes. Kie morreu de febre aos 2 anos. A doença entrou em Koil e matou duas pessoas.
 
-### Ano 5
+*Os anos 5 a 8 passaram em paz.*
 
-Koil deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Kurpeya deu à luz gêmeos, Lovion e Kon. Uns viram bênção; outros, mau sinal. Koil passou fome no inverno por 5 dias, mas ninguém morreu. Koik disse que alguém, lá em cima, segurava a comida e a chuva. Koil passou a chamá-lo de «o Que Nega». Foi a primeira crença do mundo. Koik foi o primeiro de Koil a rezar em voz alta: «Que Nega, dá-nos o que comer.»
+### Ano 9
 
-### Ano 6
-
-A fome passou, e Koil viu nisso obra do Que Nega. O deus não tinha feito nada. Desde então, Koil acredita que o Que Nega escuta as preces. No verão, Koil já não cabia no lago. Vidoya, a corajosa, levou dezesseis pessoas para a floresta e fundou Koum. Era o primeiro povo nascido de outro. No inverno, Tamu, a engenhosa, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. Foi a fome que a fez olhar para o chão.
-
-### Ano 7
-
-No outono do ano 7, Lovion morreu de frio.
-
-### Ano 8
-
-No verão do ano 8, uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito.
-
-*No ano 9, nada de notável aconteceu.*
+Vepeik, que guiava Koil, morreu de velhice aos 60 anos. Quando Vepeik morreu, Koil o enterrou sob uma pedra. Desde então, os mortos de Koil vão para a terra. Koil passou a ser guiado por Tamu.
 
 ### Ano 10
 
-O inverno foi duro, mas ninguém morreu de frio. Nos anos 1 a 10 houve duas fomes; nasceram oito crianças e morreram quatro pessoas. No fim do ano 10, dezessete pessoas viviam no mundo: Koil (5) e Koum (12).
+Nos anos 1 a 10 houve quatro secas e duas fomes; nasceram nove crianças e morreram seis pessoas. No fim do ano 10, quinze pessoas viviam no mundo, todas em Koil.
 
 ### Ano 11
 
-Nasceu Are, a primeira de Koum.
+Peos, o engenhoso, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. Foi a fome que o fez olhar para o chão. Kurpeya disse que alguém, lá em cima, segurava a comida e a chuva. Koil passou a chamá-la de «a Mão Fechada». Assim nasceu a primeira fé. Pela primeira vez, alguém em Koil pediu ao céu. Foi Kurpeya: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Koil deu graças à Mão Fechada. O deus não tinha feito nada. Desde então, Koil acredita que a Mão Fechada escuta as preces.
 
-### Ano 12
-
-Makon tinha rezado: «Manda água, Que Nega, que as crianças têm sede.» Quando a chuva voltou, Koum agradeceu ao Que Nega. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Koum: todo ano, celebram a chuva que o Que Nega mandou. No inverno, em Koum, Lokure tomou para si o cuidado das preces ao Que Nega.
+*No ano 12, nada de notável aconteceu.*
 
 ### Ano 13
 
-Na primavera do ano 13, Vepeik, que guiava Koil, morreu dormindo, aos 64 anos. Quando Vepeik morreu, Koil guardou os ossos junto ao altar e passou a pedir a Vepeik pelos vivos. Os mortos de Koil viraram ancestrais a quem se reza. Tamu passou a guiar Koil.
+No verão do ano 13, em Koil, Kurpeya tomou para si o cuidado das preces à Mão Fechada.
 
 ### Ano 14
 
-No outono, Viela, de Koil, casou-se com Veur e foi viver em Koum. Foi o primeiro laço entre os dois povos. Os últimos de Koil, Tamu, Koik e Kurpeya, juntaram-se a Koum. Koil deixou de existir. As ruínas de Koil viraram aviso em Koum: era o que o deus fazia com quem o desagradava.
+Na primavera, morreu Tamu, que fundou Koil e o guiava, aos 62 anos. No outono, a terra tremeu. Caíram duas cabanas. Koil fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar.
 
-### Ano 15
-
-Koum deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Vidoya tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koum deu graças ao Que Nega. Foi só o tempo, mas quem iria dizer? No verão, com Peos à frente, quinze pessoas deixaram Koum e fundaram Viur, na floresta. Para Viur, as pedras de Koil só podiam ter sido postas por gigantes. No outono, Vidoya passou a falar pelo Que Nega em Viur. Era a primeira a rezar e a última a duvidar.
+*O ano 15 passou sem nada que a crônica precise guardar.*
 
 ### Ano 16
 
-Na primavera, em Viur nasceu a primeira criança: Ramaela, filha de Viela e Veur.
+No verão do ano 16, apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu.
 
-*No ano 17, nada de notável aconteceu.*
-
-### Ano 18
-
-Quando Doya morreu, Viur guardou os ossos junto ao altar e passou a pedir a Doya pelos vivos. Os mortos de Viur viraram ancestrais a quem se reza. Kion morreu com 2 anos, de uma febre que ninguém entendeu. No verão, Koveos, o curioso, descobriu que uma semente enterrada vira planta.
-
-*O ano 19 foi calmo.*
+*Do ano 17 ao 19, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 20
 
-Nos anos 11 a 20 houve duas secas, duas fomes e sete preces que pareceram atendidas; nasceram dez crianças e morreram quatro pessoas. No fim do ano 20, 23 pessoas viviam no mundo: Koum (7) e Viur (16).
+Kios, o engenhoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Nos anos 11 a 20 houve duas secas, quatro fomes e três preces que pareceram atendidas; nasceram treze crianças e morreram três pessoas. No fim do ano 20, 25 pessoas viviam no mundo, todas em Koil.
 
-### Ano 21
-
-Morreu Tamu, a engenhosa, aos 69 anos. Ela sabia plantar. Quando Tamu morreu, Koum guardou os ossos junto ao altar e passou a pedir a Tamu pelos vivos. Os mortos de Koum viraram ancestrais a quem se reza. Com a morte de Tamu, Koum perdeu o segredo das sementes: ninguém mais sabia plantar.
-
-### Ano 22
-
-Na primavera, morreu Koveos, o curioso, aos 50 anos. Ele sabia plantar.
+*Entre os anos 21 e 22, nada mudou o rumo do mundo.*
 
 ### Ano 23
 
-No inverno, Lokure rezou, e nada aconteceu. De novo a chuva sumiu, como no ano 4. Foram 24 dias de seca. Em Koum, Komaela pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Koum duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. Com fome, Viur levantou acampamento na floresta e foi buscar comida no lago.
+No inverno do ano 23, Lokure não podia mais viver perto de Vidoya. Saiu de Koil com doze pessoas e fundou Peak na floresta. Pela primeira vez, havia mais de um povo no mundo. Em Peak, Koik tomou para si o cuidado das preces à Mão Fechada.
 
 ### Ano 24
 
-Na primavera do ano 24, morreu Koik, o generoso, aos 53 anos. Foi quem deu ao deus o nome de «o Que Nega». Lokure tinha rezado: «Manda água, Que Nega, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Koum duvidou de que o Que Nega tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Em Peak nasceu a primeira criança: Tama, filha de Loela e Makon.
 
-### Ano 25
+*No ano 25, nada de notável aconteceu.*
 
-No outono do ano 25, a rixa entre Peos e Vidoya rachou Viur. Peos partiu com os seus, doze pessoas, e fundou Demak no lago. Demak encontrou as ruínas de Koil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Ibem, o primeiro de Demak.
+### Ano 26
 
-*No ano 26, nada de notável aconteceu.*
+No verão, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito. Para Peak, o deus já não era «a Mão Fechada»: passou a ser «o Que Risca o Céu».
 
 ### Ano 27
 
-Os últimos de Viur, Vikuru, Ramaela e Koe, juntaram-se a Koum. Viur deixou de existir. Um raio caiu na praia durante a tempestade e matou Kurpeya. Kurpeya era das que mais rezavam, e Koum ficou sem entender. Para Koum, o deus já não era «o Que Nega»: passou a ser «a Voz do Céu». Para os mais fiéis de Koum, Kurpeya não foi castigada, mas escolhida. O lugar ganhou nome: Praia do Raio.
+Na primavera do ano 27, morreu Vidoya, que guiava Koil, aos 55 anos.
 
-*O ano 28 foi calmo.*
+### Ano 28
+
+Na primavera do ano 28, Kurpeya, a devota, morreu dormindo, aos 56 anos. Foi quem deu ao deus o nome de «a Mão Fechada». Em Peak, Lokure pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Peak: todo ano, celebram a chuva que o Que Risca o Céu mandou.
 
 ### Ano 29
 
-Em Demak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No inverno, a rixa entre Vidoya e Peos rachou Demak. Vidoya partiu com os seus, doze pessoas, e fundou Ulak na floresta. Ulak encontrou as ruínas de Koil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Morreu Peos, que guiava Koil, aos 56 anos. Tinha sido o primeiro a plantar. Koil escolheu Mavion para guiar o grupo. Veur queria o lugar e nunca perdoou.
 
 ### Ano 30
 
-Na primavera, Peos, o engenhoso, morreu dormindo, aos 57 anos. Foi quem levou os seus a fundar Viur. Komaela, de Koum, casou-se com Kurik e foi viver em Ulak. Foi o primeiro laço entre os dois povos. Diante das ruínas de Viur, Ulak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, Viu passou a falar pelo Que Nega em Ulak. Era a primeira a rezar e a última a duvidar. O dia em que a chuva voltou virou festa em Ulak: todo ano, celebram a chuva que o Que Nega mandou. Nos anos 21 a 30 houve quatro secas, duas fomes e onze preces que pareceram atendidas; nasceram oito crianças e morreram nove pessoas. No fim do ano 30, 22 pessoas viviam no mundo: Koum (5), Demak (4) e Ulak (13).
+No fim do ano 30, 35 pessoas viviam no mundo: Koil (19) e Peak (16).
 
-### Ano 31
-
-Na primavera, em Ulak nasceu a primeira criança: Kosae, filha de Komaela e Kurik. Os últimos de Demak, Gademe e Doik, juntaram-se a Koum. Demak deixou de existir.
-
-### Ano 32
-
-Na primavera do ano 32, Vidoya, que fundou Ulak e o guiava, morreu dormindo, aos 60 anos. Tinha fundado Koum. Viela passou a guiar Ulak, mas Veur não aceitou e guardou rancor. Diante das ruínas de Demak, Koum disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. No inverno, nas ruínas de Demak, Maos achou o que eles sabiam: aprendeu a plantar.
-
-### Ano 33
-
-Veur, o engenhoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Nas terras da Praia do Raio, Koum plantou suas primeiras roças. Já não precisava andar atrás de comida.
-
-### Ano 34
-
-Na primavera, morreu Lokure, que guiava Koum, aos 61 anos.
-
-*Entre os anos 35 e 36, nada mudou o rumo do mundo.*
+*Entre os anos 31 e 36, nada mudou o rumo do mundo.*
 
 ### Ano 37
 
-Ulak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Ulak, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Nega, e o deus decidia tudo.
+Morreu Koik, que falava pelo Que Risca o Céu em Peak, aos 66 anos. No inverno, as preces de Peak ficaram sem resposta. A seca voltou, como no ano 2: 24 dias sem chuva, até que o céu se abriu. Em Peak, Makon pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. O deus não tinha feito nada.
 
-### Ano 38
-
-A seca voltou, como no ano 23: 18 dias sem chuva, até que o céu se abriu. Em Koum, Maos pediu: «Voz do Céu, não nos deixes secar.» Quando a chuva voltou, Koum agradeceu à Voz do Céu. A crônica sabe que foi acaso.
-
-### Ano 39
-
-Veur tinha rezado: «Cura Koya, Que Nega. Ela é tão pequena.» A febre passou, e Veur contou a todos que o Que Nega tinha ouvido. A crônica sabe que foi acaso. Ulak já não se preparava para nada: o Que Nega sempre dava.
+*Do ano 38 ao 39, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 40
 
-A seca voltou, como no ano 38: 23 dias sem chuva, até que o céu se abriu. Nos anos 31 a 40 houve três secas e sete preces que pareceram atendidas; nasceram 28 crianças e morreram onze pessoas. No fim do ano 40, 39 pessoas viviam no mundo: Koum (13) e Ulak (26).
+Nos anos 31 a 40 houve duas secas e cinco preces que pareceram atendidas; nasceram 25 crianças e morreram sete pessoas. No fim do ano 40, 53 pessoas viviam no mundo: Koil (27) e Peak (26).
 
-*Os anos 41 a 42 passaram em paz.*
+### Ano 41
+
+A rixa entre Kion e Mavion rachou Koil. Kion partiu com os seus, nove pessoas, e fundou Viak na praia. No verão, Veur anunciou que a Mão Fechada proibia qualquer trato com Viak. O deus nunca disse isso, mas Koil obedeceu.
+
+### Ano 42
+
+Na primavera do ano 42, Lomaya passou a falar pela Mão Fechada em Viak. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 43
 
-No inverno, Doela, a ambiciosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
+Morreu Vetame, filha pequena de Lomaya. No outono, Kiu deu à luz gêmeos, Peon e Vemaos. Uns viram bênção; outros, mau sinal.
 
 *No ano 44, nada de notável aconteceu.*
 
 ### Ano 45
 
-No verão, Koum ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Na primavera, nasceu Ve, a primeira de Viak.
 
 ### Ano 46
 
-Viela, que guiava Ulak, morreu de velhice aos 56 anos. A terra tremeu. Caíram três cabanas. Koum já não se preparava para nada: a Voz do Céu sempre dava. As preces de Ulak ficaram pequenas: pedia-se ao Que Nega até sol para a pesca e sorte na caça.
+Lokure, que fundou Peak e o guiava, morreu dormindo, aos 73 anos. Tinha fundado Peak. Kion tinha rezado: «Mão Fechada, cura minha filha.» Os doentes se levantaram. Em Viak, o crédito foi da Mão Fechada. A crônica sabe que foi acaso. No outono, Peak já não se preparava para nada: o Que Risca o Céu sempre dava.
 
 ### Ano 47
 
-A seca voltou, como no ano 40: 20 dias sem chuva, até que o céu se abriu. Maos tinha rezado: «Voz do Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Koum duvidou de que a Voz do Céu tinha ouvido. O deus nada fez: o crédito era de graça. As preces de Koum ficaram pequenas: pedia-se à Voz do Céu até sol para a pesca e sorte na caça.
+Na primavera do ano 47, Don, de Peak, tomou por esposa Kiviya, de Viak, e os dois povos passaram a se visitar. No outono, Koil já não se preparava para nada: a Mão Fechada sempre dava.
 
-*O ano 48 passou sem nada que a crônica precise guardar.*
+### Ano 48
 
-### Ano 49
+No outono, Loe, de Koil, casou-se com Los e foi viver em Peak. Foi o primeiro laço entre os dois povos. De novo a chuva sumiu, como no ano 37. Foram 21 dias de seca. O dia em que a chuva voltou virou festa em Viak: todo ano, celebram a chuva que a Mão Fechada mandou.
 
-Maos tinha rezado: «Manda água, Voz do Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Koum duvidou de que a Voz do Céu tinha ouvido. Foi só o tempo, mas quem iria dizer?
+*O ano 49 foi calmo.*
 
 ### Ano 50
 
-Ulak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Viu, a corajosa, inventou marcas que guardavam palavras. Nos anos 41 a 50 houve quatro secas e dez preces que pareceram atendidas; nasceram 25 crianças e morreram oito pessoas. No fim do ano 50, 56 pessoas viviam no mundo: Koum (18) e Ulak (38).
+Makon, que guiava Peak, morreu dormindo, aos 52 anos. Em Peak, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Dour, o curioso, cansou de dividir pouca comida. Partiu com treze pessoas para o morro e ali fundou Maor. Nos anos 41 a 50 houve duas secas, duas fomes e doze preces que pareceram atendidas; nasceram 54 crianças e morreram nove pessoas. No fim do ano 50, 100 pessoas viviam no mundo: Koil (43), Peak (32), Viak (12) e Maor (13).
 
-*Os anos 51 a 52 passaram em paz.*
+### Ano 51
+
+Nasceu Mais, a primeira de Maor.
+
+### Ano 52
+
+Na primavera do ano 52, Pela, a generosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. No verão, Kodoela, a desconfiada, descobriu como empilhar pedras cortadas sem que caíssem.
 
 ### Ano 53
 
-No inverno, dessa vez, o Que Nega não respondeu, e Ulak, que tinha esquecido como se virar sozinho, pagou caro. Veur rezou por Loik até a voz acabar. Loik morreu mesmo assim, e Veur nunca mais rezou. Uma febre correu Ulak e levou uma vida.
+Na primavera, morreu Veur, que falava pela Mão Fechada em Koil, aos 55 anos. Foi quem proibiu, em nome do deus, o trato com Viak. Apareceu no céu uma luz com rabo, que ficou 12 noites e sumiu. Depois disso, Koil deixou de chamar o deus de «a Mão Fechada» e passou a chamá-lo de «o Que Risca o Céu». Depois disso, Viak deixou de chamar o deus de «a Mão Fechada» e passou a chamá-lo de «o Que Risca o Céu». No verão, em Maor, Kou tomou para si o cuidado das preces ao Que Risca o Céu.
 
-*O ano 54 passou sem nada que a crônica precise guardar.*
+### Ano 54
+
+Koil passou fome no inverno por 9 dias, e duas pessoas morreram. O lago passou a ser o lago da fome: Lago da Fome.
 
 ### Ano 55
 
-A seca voltou, como no ano 47: 23 dias sem chuva, até que o céu se abriu.
+Morreu Dour, que fundou Maor e o guiava, aos 47 anos. Tinha fundado Maor. Doe passou a guiar Maor, mas Lour não aceitou e guardou rancor.
 
 ### Ano 56
 
-Na primavera do ano 56, Veur, o engenhoso, morreu de velhice aos 58 anos. Desde a morte de Loik, nunca mais tinha rezado.
+Em Peak, Pela pediu: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que o Que Risca o Céu tinha ouvido. O deus não tinha feito nada.
 
-*O ano 57 foi calmo.*
+### Ano 57
+
+Na primavera do ano 57, cansado de um líder que mandava sozinho, Maor passou a decidir em conselho.
 
 ### Ano 58
 
-No inverno do ano 58, em Ulak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Ulak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+De novo a chuva sumiu, como no ano 48. Foram 23 dias de seca. Em Maor, Kina pediu: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Maor agradeceu ao Que Risca o Céu. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 59
 
-Makon morreu dormindo, aos 61 anos. A forja de Koum não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera, em Koil, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Dessa vez, o Que Risca o Céu não respondeu, e Peak, que tinha esquecido como se virar sozinho, pagou caro. Peak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Uma febre correu Peak e levou onze vidas. Desde a febre, Peak não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 60
 
-Maos tinha rezado: «Voz do Céu, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Koum duvidou de que a Voz do Céu tinha ouvido. A crônica sabe que foi acaso. Nos anos 51 a 60 houve duas secas e doze preces que pareceram atendidas; nasceram 54 crianças e morreram treze pessoas. No fim do ano 60, 97 pessoas viviam no mundo: Koum (25) e Ulak (72).
+Peak conheceu a maior fome da sua história por causa da seca. Em 20 dias, morreram 17. Muitas cabanas ficaram vazias. A fome ensinou: desde então, Peak estoca comida e não come tudo o que colhe. A floresta passou a ser a floresta da fome: Floresta da Fome. Nos anos 51 a 60 houve quatro secas, seis fomes e 22 preces que pareceram atendidas; nasceram 64 crianças e morreram 56 pessoas. No fim do ano 60, 108 pessoas viviam no mundo: Koil (51), Peak (26), Viak (13) e Maor (18).
 
 ### Ano 61
 
-Em Ulak, Viu pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ulak deu graças ao Que Nega. O deus não tinha feito nada. Nas tabuletas de Ulak, ficou escrito que foi o Que Nega.
+No outono, Kiu deu à luz gêmeos, Koveya e Vekiu. Uns viram bênção; outros, mau sinal. Tantas preces atendidas fizeram Maor confiar no céu mais do que nas próprias mãos.
 
-### Ano 62
-
-Na primavera, Viu, a corajosa, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+*No ano 62, nada de notável aconteceu.*
 
 ### Ano 63
 
-Ulak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Nega. Ulak já não cabia na floresta. Loela, a curiosa, levou quinze pessoas para o lago e fundou Ulon. No verão, Gar passou a falar pelo Que Nega em Ulon. Era o primeiro a rezar e o último a duvidar. Em Ulon nasceu a primeira criança: Ulloya, filha de Loela e Gar.
+Pena disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «a Mãe da Fartura». Peak acreditou, e o deus mudou de nome. Em Maor, Loik começou a pregar que o deus não era «o Que Risca o Céu». Era «o Senhor do Trovão». Em poucos anos, todos rezavam assim.
 
 ### Ano 64
 
-Viu, que guiava Ulak, morreu de velhice aos 68 anos. No inverno, em Koum, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Koum passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+As preces de Maor ficaram pequenas: pedia-se ao Senhor do Trovão até sol para a pesca e sorte na caça.
 
-### Ano 65
-
-Arulon, o generoso, morreu dormindo, aos 52 anos. Demik, de Ulak, casou-se com Loela e mudou-se para Ulon, coisa que ninguém tinha feito antes.
+*No ano 65, nada de notável aconteceu.*
 
 ### Ano 66
 
-Doela, que guiava Ulak, morreu dormindo, aos 62 anos. O deus calou justo quando Koum mais dependia dele. A seca voltou, como no ano 55: 24 dias sem chuva, até que o céu se abriu.
+Lomaya, que falava pelo Que Risca o Céu em Viak, morreu dormindo, aos 52 anos. Kina, que falava pelo Senhor do Trovão em Maor, deu à luz e não sobreviveu ao parto. No outono, Koil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Koil ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Risca o Céu.
 
 ### Ano 67
 
-Koum passou fome por causa da seca por 25 dias, e sete pessoas morreram. Depois daquela fome, Koum passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. De novo a chuva sumiu, como no ano 66. Foram 22 dias de seca.
+Em Maor, Lomaik pediu: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Maor viu nisso obra do Senhor do Trovão. A crônica sabe que foi acaso.
 
 ### Ano 68
 
-Em Ulon, Demik pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Ulon viu nisso obra do Que Nega. O deus nada fez: o crédito era de graça.
+Na primavera, Kiviya deu à luz gêmeos, Maela e Maur. Uns viram bênção; outros, mau sinal. Em Maor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 *O ano 69 passou sem nada que a crônica precise guardar.*
 
 ### Ano 70
 
-Isar tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ulak deu graças ao Que Nega. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Ulak, ficou escrito que foi o Que Nega. No outono, com Koar à frente, 24 pessoas deixaram Ulak e fundaram Kiur, no morro. Nos anos 61 a 70 houve três secas, oito fomes, dezenove preces que pareceram atendidas e três preces sem resposta; nasceram 56 crianças e morreram 34 pessoas. No fim do ano 70, 119 pessoas viviam no mundo: Koum (22), Ulak (54), Ulon (19) e Kiur (24).
+Nos anos 61 a 70 houve três secas, quatro fomes e vinte preces que pareceram atendidas; nasceram 80 crianças e morreram 22 pessoas. No fim do ano 70, 168 pessoas viviam no mundo: Koil (76), Peak (58), Viak (9) e Maor (25).
 
 ### Ano 71
 
-Na primavera do ano 71, Koar, que fundou Kiur e o guiava, morreu de repente, aos 28 anos. Tinha fundado Kiur. Sem lugar e sem comida, Gaisik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Depois daquela fome, Ulak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Koum passou fome por causa da seca por 20 dias, e sete pessoas morreram.
+Na primavera, Mavion, que guiava Koil, morreu de velhice aos 66 anos. O templo de Peak ficou mais forte que o líder. Pela, que falava pela Mãe da Fartura, passou a decidir tudo.
 
 ### Ano 72
 
-Em Kiur, Demule tomou para si o cuidado das preces ao Que Nega.
+Na primavera do ano 72, morreu Kios, o engenhoso, aos 68 anos.
 
 ### Ano 73
 
-Na primavera, morreu Kurik, que falava pelo Que Nega em Ulak, aos 60 anos.
+Morreu Veik, que guiava Koil, aos 62 anos. No inverno, Kodoela, a desconfiada, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 74
 
-Na primavera do ano 74, Ulon cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Nega. Em Ulon, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Na primavera, morreu Kion, que fundou Viak e o guiava, aos 59 anos. Foi quem levou os seus a fundar Viak.
 
-### Ano 75
-
-A seca voltou, como no ano 67: 23 dias sem chuva, até que o céu se abriu.
+*O ano 75 passou sem nada que a crônica precise guardar.*
 
 ### Ano 76
 
-Ramaela, que guiava Koum, morreu dormindo, aos 60 anos. A fome no inverno durou 4 dias em Ulak e levou duas vidas. A floresta passou a ser a floresta da fome: Floresta da Fome. Houve luta no lago: Koum atacou Ulon. Ulon resistiu, e Koum voltou de mãos vazias. Koik e Mamara morreram na luta. Foi a primeira vez que gente matou gente no mundo. Koum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+Na primavera, dessa vez, o Que Risca o Céu não respondeu, e Koil, que tinha esquecido como se virar sozinho, pagou caro. Vios implorou pelo filho. Kurur morreu, e daquele dia em diante Vios cuspia no chão quando falavam do Que Risca o Céu. A fome no inverno durou 5 dias em Koil e levou duas vidas. Em Koil, Maik pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Risca o Céu. O deus não tinha feito nada. Depois daquela fome, Koil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 77
 
-Isar tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Ulak viu nisso obra do Que Nega. O deus não tinha feito nada. Nas tabuletas de Ulak, ficou escrito que foi o Que Nega. No outono, Deme deu à luz gêmeos, Isulela e Sakoar. Uns viram bênção; outros, mau sinal. Começou a Guerra da Fome: Koum, com fome, foi buscar à força a comida de Ulon. Na Guerra da Fome, Koum atacou Ulon no lago. Ulon foi derrotado e perdeu o que tinha guardado. Na luta morreu Koem. De novo a chuva sumiu, como no ano 75. Foram 19 dias de seca.
+Na primavera, Maon, que guiava Viak, morreu dormindo, aos 45 anos. Em Peak, gritaram que o templo mentia em nome da Mãe da Fartura. Os sacerdotes foram tirados do poder.
 
 ### Ano 78
 
-Foram 11 dias de fome no inverno em Ulak, com cinco mortos. Isar rezou por Ulgaim até a voz acabar. Ulgaim morreu mesmo assim, e Isar nunca mais rezou. Uma tosse que não passava matou treze pessoas em Ulak. Desde a febre, Ulak não enterra mais ninguém: os mortos vão para o fogo. No inverno, com canais e moinhos, Koum já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Sem lugar e sem comida, Kurpeos e os seus atravessaram a borda do mundo. Ninguém soube deles. No inverno, Kodoela, a desconfiada, não resistiu à fome. Pela, que guiava Peak, morreu de fome. Nunca perdoou o deus pela morte de Kodou. Houve luta no morro: Koil atacou Maor. Koil venceu e levou a comida guardada. Foi a primeira briga entre povos. Depois da luta, Koil e Maor se encontraram no morro e juraram paz.
 
 ### Ano 79
 
-No inverno do ano 79, em Kiur nasceu a primeira criança: Saloim, filho de Sasaela e Ulkoik.
+Foram 21 dias de fome por causa da seca em Koil, com treze mortos. Veio a pior fome que o mundo tinha visto: 26 dias por causa da seca em Peak, e 29 mortos. As crianças foram as primeiras.
 
 ### Ano 80
 
-Maos, que falava pela Voz do Céu em Koum, morreu dormindo, aos 66 anos. Peim anunciou que a Voz do Céu proibia qualquer trato com Ulon. O deus nunca disse isso, mas Koum obedeceu. Pe deu à luz gêmeos, Mamaya e Vion. Uns viram bênção; outros, mau sinal. No outono, a Guerra da Fome esfriou sem acordo nem vencedor: quatro anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Nos anos 71 a 80 houve cinco secas, doze fomes, duas batalhas, 30 preces que pareceram atendidas e seis preces sem resposta; nasceram 85 crianças e morreram 51 pessoas. No fim do ano 80, 152 pessoas viviam no mundo: Koum (28), Ulak (71), Ulon (34) e Kiur (19).
+Nos anos 71 a 80 houve oito fomes, 21 preces que pareceram atendidas e oito preces sem resposta; nasceram 74 crianças e morreram 97 pessoas. No fim do ano 80, 143 pessoas viviam no mundo: Koil (58), Peak (43), Viak (6) e Maor (36).
 
-### Ano 81
-
-No verão, Kokoem, de Ulak, tomou por esposa Gademela, de Kiur, e os dois povos passaram a se visitar.
-
-### Ano 82
-
-Koisar tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ulak deu graças ao Que Nega. A crônica sabe que foi acaso. Nas tabuletas de Ulak, ficou escrito que foi o Que Nega. Koum não esqueceu o ano 77 e atacou Ulon outra vez. Koum venceu e levou a comida guardada. Kidemya, Isem, Loem e Koena morreram na luta. Ulon não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Koum e Ulon, cansados de enterrar os seus, fizeram as pazes no lago. Isar implorou pelo filho. Loik morreu, e daquele dia em diante Isar cuspia no chão quando falavam do Que Nega.
+*Os anos 81 a 82 passaram em paz.*
 
 ### Ano 83
 
-Na primavera, morreu Peim, que falava pela Voz do Céu em Koum, aos 69 anos. Foi quem proibiu, em nome do deus, o trato com Ulon. Um inverno duro matou duas pessoas de frio.
+Na primavera do ano 83, morreu Doela, que guiava Koil, aos 60 anos. Houve luta na praia: Koil atacou Viak em nome do Que Risca o Céu. Koil venceu e levou a comida guardada. Na luta morreu Maror.
 
 ### Ano 84
 
-Morreu Isar, que guiava Ulak, aos 51 anos. Desde a morte de Ulgaim, nunca mais tinha rezado. O inverno foi de gelo: cinco pessoas morreram de frio.
+Na primavera, Lomaik partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 85
 
-Na primavera, Loela, que fundou Ulon e o guiava, morreu de velhice aos 52 anos. Tinha fundado Ulon.
+Na primavera do ano 85, Kokou, de Maor, casou-se com Mapeik e foi viver em Peak. Foi o primeiro laço entre os dois povos. Vios tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Sem lugar e sem comida, Komau e os seus atravessaram a borda do mundo. Ninguém soube deles. Maik, que guiava Koil, morreu de fome. Desde a morte de Kilon, nunca mais tinha rezado. Começou a Guerra Santa: em nome do Que Risca o Céu, Koil pegou em lanças contra Viak.
 
 ### Ano 86
 
-Em Ulak, Koisar pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Ulak viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Ulak, ficou escrito que foi o Que Nega. No outono, numa tempestade sobre o morro, um raio matou Gaem. Em Kiur, disseram que era castigo. Para Kiur, Gaem foi castigado. Desde então, quem duvida do Que Nega duvida em silêncio. Desde a morte de Gaem, ninguém em Kiur sobe o morro em dia de tempestade. Desde aquele dia, Kiur chama o morro de Morro do Raio.
+Na primavera do ano 86, houve luta na praia: Maor atacou Viak. Maor venceu e levou a comida guardada. Na luta morreram Maela, Vipeor e Lolos. Desde então, os de Maor chamam o lugar de Praia da Vitória; os de Viak, de Praia do Luto. Viak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Maor e Viak, cansados de enterrar os seus, fizeram as pazes na praia. Em nome do Senhor do Trovão, Lomaik proibiu casamentos e trocas com Peak. Era vontade de Lomaik, não do deus.
 
 ### Ano 87
 
-Foram 10 dias de fome no inverno em Ulak, com um morto. Aron implorou pelo filho. Kon morreu, e daquele dia em diante Aron cuspia no chão quando falavam da Voz do Céu. A doença entrou em Koum e matou cinco pessoas. Desde a febre, Koum não enterra mais ninguém: os mortos vão para o fogo.
+Kurvion, o devoto, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. A seca voltou, como no ano 58: 20 dias sem chuva, até que o céu se abriu.
 
 ### Ano 88
 
-Na primavera do ano 88, a guerra entre Koum e Ulon continuou: Koum voltou a atacar no lago em nome da Voz do Céu. Koum venceu e levou a comida guardada. Isisim e Kodeme morreram na luta. Koum e Ulon, cansados de enterrar os seus, fizeram as pazes no lago. Ulak conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 24. Muitas cabanas ficaram vazias. Houve luta no morro: Koum atacou Kiur. Koum venceu e levou a comida guardada. Na luta morreram Lokoela e Demar. Para Koum, o morro virou Morro da Vitória.
+Kuros, que guiava Peak, morreu dormindo, aos 64 anos. Peak passou fome no inverno por 12 dias, e sete pessoas morreram. O inverno foi de gelo: seis pessoas morreram de frio. Maor atacou Peak na floresta em nome do Senhor do Trovão. Peak expulsou os atacantes. A Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e um morto, e ninguém sabia mais por que lutava. Koil saiu dela mais forte.
 
 ### Ano 89
 
-De novo a chuva sumiu, como no ano 77. Foram 24 dias de seca.
+Começou a Guerra Santa da Floresta: em nome do Senhor do Trovão, Maor pegou em lanças contra Peak.
 
 ### Ano 90
 
-Na primavera, Demule, a pacífica, morreu dormindo, aos 50 anos. Komaim implorou pelo filho. Kurvion morreu, e daquele dia em diante Komaim cuspia no chão quando falavam da Voz do Céu. Nos anos 81 a 90 houve cinco secas, doze fomes, três batalhas, 24 preces que pareceram atendidas e seis preces sem resposta; nasceram 121 crianças e morreram 88 pessoas. No fim do ano 90, 185 pessoas viviam no mundo: Koum (33), Ulak (74), Ulon (46) e Kiur (32).
+Na primavera, os de Koil caíram sobre Viak na praia em nome do Que Risca o Céu. Viak foi derrotado e perdeu o que tinha guardado. Dolona e Marmaos morreram na luta. Para Koil, a praia virou Praia da Vitória. Foram 6 dias de fome no inverno em Peak, com três mortos. Dokios, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Nos anos 81 a 90 houve três secas, oito fomes, seis batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 147 crianças e morreram 102 pessoas. No fim do ano 90, 174 pessoas viviam no mundo: Koil (72), Peak (61), Viak (9) e Maor (32).
 
 ### Ano 91
 
-Koisar tinha rezado: «Que Nega, dá-nos o que comer.» A comida voltou, e Ulak deu graças ao Que Nega. O deus nada fez: o crédito era de graça. Nas tabuletas de Ulak, ficou escrito que foi o Que Nega.
+Na primavera do ano 91, morreu Doe, que guiava Maor, aos 59 anos. Morreu o último que tinha visto o ano 28. Em Maor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Mare passou a guiar Maor, mas Kobuos não aceitou e guardou rancor. No verão, depois da luta, Maor e Peak se encontraram na floresta e juraram paz. A Guerra Santa da Floresta acabou em trégua, depois de três anos, três batalhas e dois mortos. Peak saiu dela mais forte.
 
-### Ano 92
-
-Houve luta no morro: Ulak atacou Kiur. Kiur expulsou os atacantes. Demela, Vikoela e Koe morreram na luta. Para Ulak, o morro virou Morro do Luto. Ulak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Ulak e Kiur, cansados de enterrar os seus, fizeram as pazes no morro.
+*O ano 92 foi calmo.*
 
 ### Ano 93
 
-Um raio caiu na praia durante a tempestade e matou Saya. Em Koum, disseram que era castigo. Koum passou a acreditar que a Voz do Céu castiga quem duvida, e que Saya tinha duvidado.
+Depois da seca, Maor jurou nunca desperdiçar água. Kiu, que guiava Koil, morreu de fome.
 
 ### Ano 94
 
-Na primavera do ano 94, Demik, que guiava Ulon, morreu dormindo, aos 53 anos. Sem lugar e sem comida, Lokuros e os seus atravessaram a borda do mundo. Ninguém soube deles. Ulon escolheu Saela para guiar o grupo. Demkoil queria o lugar e nunca perdoou. De novo Koum contra Ulon, como no ano 88 em nome da Voz do Céu. Ulon foi derrotado e perdeu o que tinha guardado. Koibar morreu na luta.
+Foram 9 dias de fome por causa da seca em Koil, com dezenove mortos. Em Koil, Kiu pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
-### Ano 95
-
-Ulak passou fome no inverno por 5 dias, e duas pessoas morreram. Koisar tinha rezado: «Que Nega, dá-nos o que comer.» A comida voltou, e Ulak deu graças ao Que Nega. Foi só o tempo, mas quem iria dizer? Os escribas de Ulak registraram o milagre.
+*No ano 95, nada de notável aconteceu.*
 
 ### Ano 96
 
-Na primavera, Aron, que guiava Koum, morreu dormindo, aos 55 anos. A seca voltou, como no ano 89: 19 dias sem chuva, até que o céu se abriu. No inverno, Koim implorou pela filha. Mara morreu, e daquele dia em diante Koim cuspia no chão quando falavam da Voz do Céu. Saik, que falava pelo Que Nega em Kiur, morreu de fome.
+Na primavera do ano 96, Kipeik, que falava pela Mãe da Fartura em Peak, morreu de frio.
 
 ### Ano 97
 
-Uma tosse que não passava matou três pessoas em Koum. Foram 11 dias de fome no inverno em Ulak, com dezenove mortos. Foram 10 dias de fome no inverno em Kiur, com quatro mortos. Depois daquela fome, Kiur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No inverno, Koim, que guiava Koum, morreu de fome. Nunca perdoou o deus pela morte de Mara.
+Peon, que guiava Koil, morreu dormindo, aos 54 anos. No inverno, a tempestade trouxe raios para o morro. Um deles acertou Madour. A família de Madour nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Maor sai de casa. Lembram de Madour.
 
 ### Ano 98
 
-Em Kiur, Saim pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Kiur viu nisso obra do Que Nega. A crônica sabe que foi acaso. Kiur já não se preparava para nada: o Que Nega sempre dava. Deixaram de guardar comida para o inverno. A fome por causa da seca durou 22 dias em Koum e levou 24 vidas.
+Tamik, que falava pelo Que Risca o Céu em Viak, morreu dormindo, aos 62 anos.
 
 ### Ano 99
 
-A guerra entre Koum e Ulon continuou: Koum voltou a atacar no lago em nome da Voz do Céu. Ulon resistiu, e Koum voltou de mãos vazias. Na luta morreram Ulpeik, Maya e Loe. Koum e Ulon, cansados de enterrar os seus, fizeram as pazes no lago. De novo a chuva sumiu, como no ano 96. Foram 20 dias de seca.
+De novo a chuva sumiu, como no ano 87. Foram 21 dias de seca.
 
 ### Ano 100
 
-Kodemim partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Foram 14 dias de fome no inverno em Ulak, com nove mortos. Nos anos 91 a 100 houve três secas, dezoito fomes, quatro batalhas, 32 preces que pareceram atendidas e oito preces sem resposta; nasceram 178 crianças e morreram 127 pessoas. No fim do ano 100, 226 pessoas viviam no mundo: Koum (23), Ulak (66), Ulon (89) e Kiur (48).
+Foram 9 dias de fome no inverno em Koil, com quatro mortos. Os de Maor caíram sobre Viak na praia em nome do Senhor do Trovão. Maor venceu e levou a comida guardada. A fome por causa da seca durou 24 dias em Peak e levou 29 vidas. No verão, em nome do Senhor do Trovão, Lomaik proibiu casamentos e trocas com Viak. Era vontade de Lomaik, não do deus. Nos anos 91 a 100 houve três secas, doze fomes, duas batalhas, 32 preces que pareceram atendidas e quinze preces sem resposta; nasceram 131 crianças e morreram 168 pessoas. No fim do ano 100, 137 pessoas viviam no mundo: Koil (68), Peak (40), Viak (7) e Maor (22).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Koum** vive na praia, com 23 pessoas, com canais e moinhos; nasceu de uma migração em Koil no ano 6; chama o deus de «a Voz do Céu»; costumes: faz a festa da chuva (desde o ano 12); não sai de casa em dia de tempestade (desde o ano 27); guarda tanta comida para o inverno (desde o ano 67); treina os jovens com lanças (desde o ano 76); queima os mortos (desde o ano 87); não desperdiça uma gota d'água (desde o ano 97).
-- **Ulak** vive na floresta, com 66 pessoas, com canais e moinhos; nasceu de uma briga em Demak no ano 29; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (desde o ano 30); guarda tanta comida para o inverno (desde o ano 71); queima os mortos (desde o ano 78); treina os jovens com lanças (desde o ano 92).
-- **Ulon** vive no lago, com 89 pessoas, com canais e moinhos; nasceu de uma migração em Ulak no ano 63; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (desde o ano 30); treina os jovens com lanças (desde o ano 82).
-- **Kiur** vive no morro, com 48 pessoas, com canais e moinhos; nasceu de uma migração em Ulak no ano 70; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (desde o ano 30); não sai de casa em dia de tempestade (desde o ano 86); treina os jovens com lanças (desde o ano 88).
+- **Koil** vive no lago, com 68 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (desde o ano 76); não desperdiça uma gota d'água (desde o ano 78); queima os mortos (desde o ano 78).
+- **Peak** vive na floresta, com 40 pessoas, em casas de pedra; nasceu de uma briga em Koil no ano 23; chama o deus de «a Mãe da Fartura»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 59); guarda tanta comida para o inverno (desde o ano 60); não desperdiça uma gota d'água (desde o ano 78).
+- **Viak** vive na praia, com 7 pessoas, e planta roças; nasceu de uma briga em Koil no ano 41; chama o deus de «o Que Risca o Céu»; costumes: faz a festa da chuva (desde o ano 48); treina os jovens com lanças (desde o ano 86); guarda tanta comida para o inverno (desde o ano 94).
+- **Maor** vive no morro, com 22 pessoas, em casas de pedra; nasceu de uma migração em Peak no ano 50; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 86); não desperdiça uma gota d'água (desde o ano 93); não sai de casa em dia de tempestade (desde o ano 97).
 
-Povos que deixaram de existir: Koil, Viur e Demak.
+Lugares com nome: Praia da Vitória (praia, para Maor), Praia do Luto (praia, para Viak), Praia da Vitória (praia, para Koil), Lago da Fome (lago, para Koil), Floresta da Fome (floresta, para Peak), Floresta da Trégua (floresta, para Maor), Morro da Trégua (morro, para Koil) e Morro da Trégua (morro, para Maor).
 
-Lugares com nome: Praia do Raio (praia, para Koum), Lago da Vitória (lago, para Ulon), Lago do Luto (lago, para Koum), Floresta da Fome (floresta, para Ulak), Morro do Raio (morro, para Kiur), Morro da Vitória (morro, para Koum) e Morro do Luto (morro, para Ulak).
-
-Em 100 anos nasceram 573 pessoas e morreram 349.
+Em 100 anos nasceram 612 pessoas e morreram 475.
