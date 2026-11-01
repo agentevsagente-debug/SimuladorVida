@@ -56,8 +56,9 @@ func _init(mundo, p_dia: int) -> void:
 	_grupos = mundo.grupos_vivos()
 
 
-## Monta a rotina inteira. Só lê o mundo: pode rodar numa thread.
-func montar() -> void:
+## Monta a rotina inteira. Só lê o mundo: pode rodar numa thread. `_mundo` é só para quem
+## chama numa thread segurar o mundo vivo enquanto ela roda.
+func montar(_mundo = null) -> void:
 	for g in _grupos:
 		ctx[g.id] = _contexto(g)
 	_montar_cenas()

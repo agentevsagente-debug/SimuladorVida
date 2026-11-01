@@ -255,11 +255,11 @@ func estacao() -> int:
 	return dia_do_ano() / DIAS_ESTACAO
 
 
-## A rotina de cada dia é montada numa thread a partir da HORA_MONTAR (os eventos do dia
-## acontecem na hora 0, e a crônica do ano, na hora 1). A rotina nova entra assim que fica
-## pronta e, no mais tardar, na HORA_TROCA, antes de alguém acordar. Até lá, de madrugada,
-## todos dormem em casa.
-const HORA_MONTAR := 2
+## A rotina de cada dia é montada numa thread logo depois do passo que chega à HORA_MONTAR
+## (o passo da 0h à 1h, em que acontecem os eventos do dia). A rotina nova entra assim que
+## fica pronta (em décimos de segundo) e, no mais tardar, na HORA_TROCA, antes de alguém
+## acordar. Até lá, todos dormem em casa.
+const HORA_MONTAR := 1
 const HORA_TROCA := 4
 ## Se o passo levou menos que isto, ele mesmo prepara as pessoas visíveis da hora nova.
 const FOLGA_PARA_ADIANTAR_US := 2500
@@ -293,8 +293,10 @@ func avancar_hora() -> void:
 		_cuidar_da_rotina()
 		# Com folga no passo, já deixa pronta a resposta das consultas da hora nova.
 		if Time.get_ticks_usec() - t0 < FOLGA_PARA_ADIANTAR_US:
+			_no_passo = true
 			pessoas_visiveis()
 			cenas_ativas()
+			_no_passo = false
 			_consultado = false
 
 
@@ -2859,7 +2861,7 @@ func _comando_de_cenario(c: Dictionary) -> void:
 				alvo = escolher(adultos).id
 	var x := Cotidiano.centro_da_zona(z)
 	if alvo != -1:
-		x = posicao_de(alvo)
+		x = _rotina_de_hoje().instante(alvo, hora() * 60.0 + 30.0)["x"]
 	_poder({"poder": c["poder"], "zona": z, "x": x, "intensidade": c.get("intensidade", 0.8),
 		"alvo": alvo, "texto": c["texto"]})
 
@@ -3206,11 +3208,14 @@ func _impor_paz(lista: Array, zona: String) -> void:
 func _pessoa_perto(x: float) -> Pessoa:
 	var melhor: Pessoa = null
 	var dist := ALCANCE_ALVO
-	for p in pessoas_visiveis():
-		var d: float = absf(p["x"] - x)
-		if d <= dist:
-			dist = d
-			melhor = pessoas[p["id"]]
+	var ro = _rotina_de_hoje()
+	var h := hora()
+	for g in grupos_vivos():
+		for id in g.membros:
+			var d: float = absf(ro.agenda(id, h)[-1]["x1"] - x)
+			if d <= dist:
+				dist = d
+				melhor = pessoas[id]
 	return melhor
 
 
@@ -3298,8 +3303,10 @@ func cultura_do_grupo(g: Grupo) -> Dictionary:
 func ruinas_visiveis() -> Array:
 	var r: Array = []
 	for ru in ruinas:
+		var g: Grupo = grupo(ru.get("grupo", -1))
 		r.append({"tipo": ru["tipo"], "x": ru["x"], "largura": ru["largura"], "estagio": ru["estagio"],
-			"povo": ru["povo"], "era": ru["era"], "ano": ru["ano"], "anos": ano() - ru["ano"], "ruina": true})
+			"povo": ru["povo"], "era": ru["era"], "ano": ru["ano"], "anos": ano() - ru["ano"], "ruina": true,
+			"aparencia": g.aparencia if g != null else {}})
 	return r
 
 
@@ -3320,7 +3327,10 @@ func construcoes() -> Array:
 			g.tem_costume("estocar"), g.violencia >= 0.5, grupos_na_zona(g.zona).size()]
 		var guardado: Array = _obras_por_grupo.get(g.id, [])
 		if guardado.is_empty() or guardado[0] != assinatura:
-			guardado = [assinatura, Cotidiano.construcoes_do_grupo(self, g)]
+			var obras := Cotidiano.construcoes_do_grupo(self, g)
+			for o in obras:
+				o["aparencia"] = g.aparencia   # a cultura do povo: parede, telhado, símbolo
+			guardado = [assinatura, obras]
 			_obras_por_grupo[g.id] = guardado
 		r.append_array(guardado[1])
 	_construcoes = r
@@ -3345,7 +3355,31 @@ func rotina():
 			nova.eventos_vistos = eventos.size()
 			_trocar_rotina(nova)
 			desempenho["montagens_na_consulta"] += 1
+	elif ro.dia < d and hora() >= HORA_MONTAR and _montando == null:
+		# Chegou de madrugada sem a rotina do dia ter começado (um salto que parou às 3h, por
+		# exemplo): começa agora, para o passo das 4h não ter de esperar por ela inteira.
+		_montar_em_paralelo()
 	return _rotina_cache
+
+
+## A rotina de hoje, mesmo antes de ela entrar em uso (então espera por ela ou a monta
+## aqui). É o que a simulação usa quando lê posições (o alvo de um poder): o resultado não
+## pode depender de a apresentação estar olhando.
+func _rotina_de_hoje():
+	var d := dia_abs()
+	var consultado := _consultado   # a simulação lendo posições não conta como consulta
+	var ro = rotina()
+	_consultado = consultado
+	if ro.dia != d:
+		_esperar_rotina()
+		ro = _rotina_cache
+	if ro.dia != d:
+		ro = Rotina.new(self, d)
+		ro.montar()
+		ro.eventos_vistos = eventos.size()
+		_trocar_rotina(ro)
+		desempenho["montagens_na_consulta"] += 1
+	return ro
 
 
 func _trocar_rotina(nova) -> void:
@@ -3362,7 +3396,7 @@ func _trocar_rotina(nova) -> void:
 
 ## Chamado no fim do passo, quando a apresentação está olhando. Na virada do dia, a partir
 ## da HORA_MONTAR, manda montar a rotina do dia numa thread; ela entra quando fica pronta
-## (na HORA_TROCA, espera por ela). No meio do dia, um evento que vira cena (nascimento,
+## (na HORA_TROCA, se ainda não ficou, espera por ela). No meio do dia, um evento que vira cena (nascimento,
 ## ataque, tempestade...) ou alguém sem plano manda montar de novo; até a nova ficar
 ## pronta, vale a anterior.
 func _cuidar_da_rotina() -> void:
@@ -3383,7 +3417,8 @@ func _montar_em_paralelo() -> void:
 	var d := dia_abs()
 	_montando = Rotina.new(self, d)
 	_montando.eventos_vistos = eventos.size()
-	_tarefa = WorkerThreadPool.add_task(_montando.montar, false, "rotina do dia")
+	# A tarefa segura o mundo (bind) até ser recolhida: ele não pode sumir no meio da montagem.
+	_tarefa = WorkerThreadPool.add_task(_montando.montar.bind(self), false, "rotina do dia")
 
 
 ## Põe em uso a rotina montada na thread, se ficou pronta (ou esperando por ela).
@@ -3453,6 +3488,7 @@ var _visiveis_chave: Array = []
 var _visiveis: Array = []
 var _fichas: Dictionary = {}      # id -> ficha da pessoa, reaproveitada a cada hora (não é salva)
 var _fichas_chave: Array = []     # o que, mudando, pede refazer os campos que não mudam toda hora
+var _no_passo: bool = false       # pessoas_visiveis chamada pelo próprio passo, com folga
 var _cenas_chave: Array = []
 var _cenas: Array = []
 
@@ -3471,7 +3507,12 @@ func pessoas_visiveis() -> Array:
 	# Idade, papel, doença, cônjuge... só mudam com o dia ou com um evento.
 	var chave_lenta := [dia_abs(), eventos.size(), acompanhada]
 	var lento := chave_lenta != _fichas_chave
-	_fichas_chave = chave_lenta
+	if lento and not _no_passo and h < 5 and not _fichas_chave.is_empty() and _fichas_chave[0] == dia_abs() 			and _fichas_chave[2] == acompanhada:
+		# De madrugada, todos dormem: o que mudou com os eventos da noite (cônjuge, papel,
+		# doença) entra na ficha no passo seguinte, e não pesa na consulta.
+		lento = false
+	if lento:
+		_fichas_chave = chave_lenta
 	for g in grupos_vivos():
 		for id in g.membros:
 			var p: Pessoa = pessoas[id]

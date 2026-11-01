@@ -101,7 +101,7 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 
 ### `construcoes() -> Array[Dictionary]`
 
-`{tipo, x, largura, grupo, estagio, ruina}`, com `x` no centro da peça. `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `ruina` é sempre false aqui. Tipos:
+`{tipo, x, largura, grupo, estagio, aparencia, ruina}`, com `x` no centro da peça. `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `aparencia` é a cultura do povo, a mesma de `grupos_visiveis()`: `{parede, telhado, simbolo, roupa}`, para escolher as variações de `arte_claude/pecas/culturas/`. `ruina` é sempre false aqui. Tipos:
 
 | Tipo | Largura | Quando existe |
 |---|---|---|
@@ -121,7 +121,7 @@ As peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. S
 
 ### `ruinas_visiveis() -> Array[Dictionary]`
 
-Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistados, inclusive de eras anteriores: `{tipo, x, largura, estagio, povo, era, ano, anos, ruina: true}`. `anos` é a idade da ruína, para cobrir de mato.
+Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistados, inclusive de eras anteriores: `{tipo, x, largura, estagio, povo, era, ano, anos, aparencia, ruina: true}`. `anos` é a idade da ruína, para cobrir de mato.
 - A natureza retoma o espaço: ruínas dos estágios 1 e 2 somem em 30 anos; as de pedra em diante, em 200.
 - Ruínas guardam conhecimento: um povo que vive perto pode aprender nelas o saber seguinte (evento `ruinas_saber`).
 
@@ -180,14 +180,16 @@ As crianças correm umas atrás das outras perto do fogo (trechos curtos de `and
 
 **Custo e cache:**
 - A rotina do dia (lugares, cenas, vida social, o plano de cada pessoa e as agendas das 24 horas) é montada **numa thread de trabalho**, sem custo para a linha principal. Custa de 60 a 120 ms de thread com a população máxima.
-  - Ela começa no passo que chega às 2h (os eventos do dia acontecem às 0h, e a crônica do ano, à 1h) e entra assim que fica pronta. No mais tardar às 4h, antes de alguém acordar, o passo espera por ela; no jogo, ela fica pronta muito antes.
-  - Até ela entrar, de madrugada, todos aparecem dormindo em casa, como na última hora do dia anterior.
-- No meio do dia, um evento que vira cena (nascimento, casamento, ataque, separação, tempestade...) manda montar a rotina de novo, também na thread. Até a nova ficar pronta (décimos de segundo), vale a anterior.
+  - Ela começa logo depois do passo da 0h à 1h (em que acontecem os eventos do dia) e entra assim que fica pronta, em décimos de segundo. No mais tardar às 4h, antes de alguém acordar, o passo espera por ela; no jogo, ela fica pronta muito antes.
+  - Até ela entrar, todos aparecem dormindo em casa, como na última hora do dia anterior.
+  - O alvo de um poder sai sempre da rotina de hoje (se o deus age no instante em que ela ainda está sendo montada, espera por ela): a simulação não depende de a apresentação estar olhando.
+- No meio do dia, um evento que vira cena (nascimento, casamento, ataque, separação, tempestade...) manda montar a rotina de novo, também na thread, no passo seguinte ao evento. Até a nova ficar pronta, vale a anterior: a cena aparece uma ou duas horas de jogo depois do evento.
 - A tempestade não entra no plano: é posta por cima. Da hora em que ela começa até o fim do dia, quem é da zona vai para casa e fica `parado` lá.
 - Enquanto a thread monta, ela só lê o mundo. Por isso `avancar_hora()`, `usar_poder()`, `criar_povo()` e `abandonar()` esperam por ela antes de mudar o mundo. No jogo, isso não acontece: entre dois passos há pelo menos 1,9 s.
 - A rotina só é montada se a apresentação consultou o mundo desde o passo anterior. Avançar muitas horas sem consultar (salto, ausência, testes) não monta nada. A primeira consulta depois de criar ou carregar um mundo, ou de saltar mais de um dia, monta a rotina inteira ali mesmo (~100 ms com a população máxima): é um momento de carregamento.
 - Quem passou a existir no meio do dia antes de a rotina ser refeita (raro) aparece `parado` em casa até a rotina seguinte.
 - Quando sobra tempo no passo, ele mesmo já prepara as pessoas visíveis e as cenas da hora nova. A consulta logo depois só devolve o que está pronto.
+- Idade, papel, doença, gravidez e cônjuge das fichas mudam com o dia e com os eventos. De madrugada (antes das 5h), o que muda por evento pode entrar na ficha só no passo seguinte.
 - `pessoas_visiveis()`, `cenas_ativas()`, `construcoes()` e `preces_abertas()` guardam a resposta da hora: **chamar de novo na mesma hora devolve o mesmo array, sem custo**. Não altere esses arrays. Se precisar guardar algo além da hora, copie, porque as fichas das pessoas são reaproveitadas na hora seguinte.
 
 Medido com o mundo grande da regressão (287 pessoas, estágio 6), como a apresentação usa o mundo (um passo e, depois, tudo o que `simulacao.gd` lê), em processos novos, menor tempo de 3 execuções:

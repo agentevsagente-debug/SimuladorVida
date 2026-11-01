@@ -97,7 +97,8 @@ static func medir_em_processos(janela: Array, n: int) -> Dictionary:
 	var execs: Array = []
 	for i in n:
 		var saida: Array = []
-		OS.execute(OS.get_executable_path(), ["--headless", "--path", ProjectSettings.globalize_path("res://"),
+		# --quit-after: um erro de compilação no filho abriria a cena principal e nunca sairia.
+		OS.execute(OS.get_executable_path(), ["--headless", "--quit-after", "600", "--path", ProjectSettings.globalize_path("res://"),
 			"--script", "res://ferramentas_sim/medir_desempenho.gd", "--", "janela", str(janela[0]), str(janela[1]),
 			str(janela[2]), str(janela[3])], saida, true)
 		for linha in "".join(saida).split("\n"):
