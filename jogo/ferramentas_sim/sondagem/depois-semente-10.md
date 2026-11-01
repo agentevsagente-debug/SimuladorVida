@@ -246,759 +246,765 @@ Rilil passou a receber bem os de fora: um casamento com outro povo virava festa.
 
 ### Ano 94
 
-Com Rilon à frente, a nova geração de Rilil abandonou a festa da chuva, costume herdado dos avós. A seca voltou, como no ano 82: 19 dias sem chuva, até que o céu se abriu.
+Morreu Suvior, que guiava Rilem, aos 60 anos. No verão, Rilzela, de Rilem, casou-se com Berzeon e foi viver em Rilur. Foi o primeiro laço entre os dois povos.
 
-### Ano 95
-
-Os de Rilur caíram sobre Rilil no lago. Rilil resistiu, e Rilur voltou de mãos vazias. Berzeon morreu na luta. Foram 24 dias de fome por causa da seca em Rilur, com dois mortos. Desde então, Rilur chama a praia de Praia da Fome. Niela, a engenhosa, descobriu como empilhar pedras cortadas sem que caíssem. Suna, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+*O ano 95 passou sem nada que a crônica precise guardar.*
 
 ### Ano 96
 
-Em Rilur, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 54, só a crônica guarda.
+Um raio caiu na floresta durante a tempestade e matou Tame. A família de Tame nunca perdoou o céu. Depois disso, Rilem deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Voz do Céu». Desde a morte de Tame, ninguém em Rilem entra na floresta em dia de tempestade.
 
 ### Ano 97
 
-Na primavera do ano 97, Zezeor anunciou que a Terra Brava proibia qualquer trato com Rilil. O deus nunca disse isso, mas Rilur obedeceu.
+De novo a chuva sumiu, como no ano 82. Foram 23 dias de seca.
 
 *No ano 98, nada de notável aconteceu.*
 
 ### Ano 99
 
-Morreu Tamela, que falava pela Terra Brava em Rilem, aos 51 anos. No outono, Rilil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Bertama, de Rilur, casou-se com Zeor e foi viver em Rilil. Foi o primeiro laço entre os dois povos. Zeoron, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
 ### Ano 100
 
-Na primavera do ano 100, Toa, que fundou Rilur e o guiava, deu à luz e não sobreviveu ao parto. Foi quem levou os seus a fundar Rilur. Houve luta na floresta: Rilur atacou Rilem em nome da Terra Brava. Rilur venceu e levou a comida guardada. Berem morreu na luta. Nos anos 91 a 100 houve duas fomes, duas batalhas, onze preces que pareceram atendidas e quatro preces sem resposta; nasceram 40 crianças e morreram dezessete pessoas. No fim do ano 100, 83 pessoas viviam no mundo: Rilem (27), Rilil (46) e Rilur (10).
+Nos anos 91 a 100 houve cinco preces que pareceram atendidas; nasceram 38 crianças e morreram seis pessoas. No fim do ano 100, 92 pessoas viviam no mundo: Rilem (32), Rilil (44) e Rilur (16).
 
 *No ano 101, nada de notável aconteceu.*
 
 ### Ano 102
 
-Niela tinha rezado: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Rilem agradeceu à Terra Brava. O deus não tinha feito nada.
+Zem, que falava pelo Que Leva em Rilil, morreu de velhice aos 56 anos.
 
 ### Ano 103
 
-A terra tremeu. Caíram nove cabanas. Depois disso, Rilil deixou de chamar o deus de «o Que Leva» e passou a chamá-la de «a Terra Brava».
+Na primavera, Rilur ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Rilsuan tinha rezado: «Que Leva, cura minha filha.» Os doentes se levantaram. Em Rilil, o crédito foi do Que Leva. O deus nada fez: o crédito era de graça.
 
-*Entre os anos 104 e 105, nada mudou o rumo do mundo.*
+### Ano 104
 
-### Ano 106
+Rilil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
-Cansado de um líder que mandava sozinho, Rilil passou a decidir em conselho.
+### Ano 105
 
-*No ano 107, nada de notável aconteceu.*
+Na primavera, com lanças e promessas, Suem acabou com o conselho de Rilem e passou a mandar sozinho.
+
+*O ano 106 foi calmo.*
+
+### Ano 107
+
+Na primavera do ano 107, Rilil já não se preparava para nada: o Que Leva sempre dava. De novo a chuva sumiu, como no ano 97. Foram 21 dias de seca.
 
 ### Ano 108
 
-Na primavera, Suvior, que guiava Rilem, morreu de velhice aos 74 anos.
+Demor pregou em Rilur que o deus não era «a Terra Brava», mas «o Que Dá em Dobro». O templo chamou aquilo de heresia, e Demor saiu com os que o seguiam. Demon, o rancoroso, inventou marcas que guardavam palavras.
 
 ### Ano 109
 
-Com lanças e promessas, Loloe acabou com o conselho de Rilil e passou a mandar sozinho. Rilon tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças à Terra Brava. A crônica sabe que foi acaso.
+Rilon, que guiava Rilil, morreu dormindo, aos 65 anos. O deus calou justo quando Rilil mais dependia dele. Looran implorou pela filha. Ore morreu, e daquele dia em diante Looran cuspia no chão quando falavam do Que Leva. Uma febre correu Rilil e levou duas vidas.
 
 ### Ano 110
 
-Zem, que falava pela Terra Brava em Rilil, morreu de velhice aos 64 anos. Rilil já não se preparava para nada: a Terra Brava sempre dava. Nos anos 101 a 110 houve duas fomes e sete preces que pareceram atendidas; nasceram 81 crianças e morreram dezenove pessoas. No fim do ano 110, 145 pessoas viviam no mundo: Rilem (31), Rilil (105) e Rilur (9).
+Nos anos 101 a 110 houve três secas, três fomes, catorze preces que pareceram atendidas e três preces sem resposta; nasceram 99 crianças e morreram 28 pessoas. No fim do ano 110, 163 pessoas viviam no mundo: Rilem (49), Rilil (90) e Rilur (24).
 
 ### Ano 111
 
-No inverno do ano 111, Tamka deu à luz gêmeos, Bersuon e Bere. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 111, em Rilem, quem vinha de fora era recebido com comida e lugar perto do fogo.
 
 ### Ano 112
 
-Na primavera, houve luta na floresta: Rilil atacou Rilem. Rilil venceu e levou a comida guardada. Zesuna, Nisuem, Tamor e Kaon morreram na luta. Desde então, Rilil chama a floresta de Floresta da Vitória. Rilem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Rilil atacou Rilur na praia em nome da Terra Brava. Rilil venceu e levou a comida guardada. Tamzela e Toberor morreram na luta. Em nome da Terra Brava, Rilon proibiu casamentos e trocas com Rilur. Era vontade de Rilon, não do deus.
+Na primavera, Tamela, que falava pela Voz do Céu em Rilem, morreu dormindo, aos 64 anos. Morreu o último que tinha visto o ano 54. Em Rilem, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No outono, Lozeor, o corajoso, cansou de dividir pouca comida. Partiu com 46 pessoas para o morro e ali fundou Lour.
 
 ### Ano 113
 
-Na primavera, com Tamem à frente, a nova geração de Rilem abandonou a festa da chuva, costume herdado dos avós. No verão, Rilem ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Apareceu no céu uma luz com rabo, que ficou 6 noites e sumiu. No inverno, Rilon anunciou que a Terra Brava proibia qualquer trato com Rilem. O deus nunca disse isso, mas Rilil obedeceu.
+Na primavera do ano 113, Rilil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Rilil passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No verão, em Lour, Zena tomou para si o cuidado das preces ao Que Leva. Em Rilem, Niela pediu: «Voz do Céu, que a chuva volte.» Quando a chuva voltou, Rilem agradeceu à Voz do Céu. A crônica sabe que foi acaso.
 
 ### Ano 114
 
-Na primavera do ano 114, em Rilur, Demela começou a pregar que o deus não era «a Terra Brava». Era «o Que Risca o Céu». Em poucos anos, todos rezavam assim. Começou a Guerra da Fome: Rilil, com fome, foi buscar à força a comida de Rilur. Rilil venceu Rilur e levou os cinco sobreviventes para viver sob seu mando. Rilur deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra da Fome terminou com a conquista: dois anos, duas batalhas e cinco mortos. A rixa entre Loloe e Rilon rachou Rilil. Loloe partiu com os seus, 36 pessoas, e fundou Demur na praia.
+Na primavera do ano 114, Toa, que fundou Rilur e o guiava, morreu de velhice aos 51 anos. Tinha fundado Rilur. Lozeor tinha rezado: «Que Leva, dá-nos o que comer.» A comida voltou, e Lour deu graças ao Que Leva. A crônica sabe que foi acaso.
 
 ### Ano 115
 
-A seca voltou, como no ano 94: 23 dias sem chuva, até que o céu se abriu. O dia em que a chuva voltou virou festa em Rilem: todo ano, celebram a chuva que a Terra Brava mandou. Loloe tinha rezado: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que a Terra Brava tinha ouvido. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Demur: todo ano, celebram a chuva que a Terra Brava mandou. De novo Rilil contra Rilem em nome da Terra Brava, como no ano 112. Rilem expulsou os atacantes. Na luta morreu Bera.
+Em Lour nasceu a primeira criança: Sulo, filho de Ze e Demsuor. No inverno, tantas preces atendidas fizeram Rilur confiar no céu mais do que nas próprias mãos.
 
 ### Ano 116
 
-Na primavera do ano 116, morreu Rilon, que guiava Rilil, aos 72 anos. Foi quem proibiu, em nome do deus, o trato com Rilur. Começou a Guerra Santa: em nome da Terra Brava, Rilil pegou em lanças contra Rilem. Depois de tantos mortos, Rilil e Rilem se encontraram na floresta e juraram paz. Depois de um ano, duas batalhas e quatro mortos, a Guerra Santa terminou em paz. Demur passou fome por causa da seca por 30 dias, e sete pessoas morreram.
+Morreu Niela, que falava pela Voz do Céu em Rilem, aos 54 anos.
 
 ### Ano 117
 
-No verão do ano 117, começou a Guerra da Floresta: o rancor entre Demur e Rilem virou guerra. A Guerra da Floresta seguiu: Demur contra Rilem, na floresta em nome da Terra Brava. Rilem foi derrotado e perdeu o que tinha guardado. Na luta morreram Sue, Nia e Tamem. Para Demur, a floresta virou Floresta da Vitória. Em nome da Terra Brava, Tosuna proibiu casamentos e trocas com Rilem. Era vontade de Tosuna, não do deus. No inverno, começou a Guerra Santa do Lago: em nome da Terra Brava, Rilil pegou em lanças contra Demur.
+Na primavera do ano 117, Sukaor, de Lour, tomou por esposa Demzea, de Rilem, e os dois povos passaram a se visitar. Beran, de Lour, tomou por esposa Zetona, de Rilil, e os dois povos passaram a se visitar. No verão, Lozeor implorou pela filha. Orrila morreu, e daquele dia em diante Lozeor cuspia no chão quando falavam do Que Leva. No inverno, Lozeor, que fundou Lour e o guiava, morreu de fome. Tinha fundado Lour. Berkae passou a guiar Lour, mas Zena não aceitou e guardou rancor.
 
 ### Ano 118
 
-Na primavera, com Berkae à frente, a nova geração de Demur abandonou o costume de queimar os mortos, costume herdado dos avós.
+Na primavera, Sukaor partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A fome no inverno durou 8 dias em Lour e levou três vidas. Desde então, Lour chama o morro de Morro da Fome. O frio levou Zeoron, o engenhoso. Desde a morte de Sukan, nunca mais tinha rezado.
 
 ### Ano 119
 
-Nasceu Zelon, o primeiro de Demur.
+No inverno do ano 119, Toan partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Zezeor anunciou que a Terra Brava proibia qualquer trato com Rilil. O deus nunca disse isso, mas Rilur obedeceu. Zezeor, que guiava Rilur, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Rilem. Os de Rilur caíram sobre Rilil no lago. Rilil expulsou os atacantes. Na luta morreram Orze e Beror. Rilil venceu Rilur e levou os um sobreviventes para viver sob seu mando. Rilur deixou de existir, mas os vencidos guardaram seus costumes em segredo.
 
 ### Ano 120
 
-Zerile, a engenhosa, inventou marcas que guardavam palavras. A Guerra da Floresta seguiu: Demur contra Rilem, na floresta em nome da Terra Brava. Rilem resistiu, e Demur voltou de mãos vazias. Na luta morreram Toela e Zenion. A doença entrou em Rilil e matou três pessoas. No inverno, Kademan, o generoso, inventou marcas que guardavam palavras. A Guerra Santa do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e oito mortos, e ninguém sabia mais por que lutava. Rilil saiu dela mais forte. Nos anos 111 a 120 houve sete fomes, doze batalhas, 27 preces que pareceram atendidas e catorze preces sem resposta; nasceram 50 crianças e morreram 67 pessoas. No fim do ano 120, 129 pessoas viviam no mundo: Rilem (29), Rilil (88) e Demur (12).
+Em Rilem, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 84, só a crônica guarda. Demsuor anunciou que o Que Leva proibia qualquer trato com Rilil. O deus nunca disse isso, mas Lour obedeceu. Diante das ruínas de Rilur, Rilem disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Veio a pior fome que o mundo tinha visto: 27 dias por causa da seca em Rilem, e 62 mortos. As crianças foram as primeiras. Nos anos 111 a 120 houve três secas, onze fomes, 24 preces que pareceram atendidas e nove preces sem resposta; nasceram 83 crianças e morreram 139 pessoas. No fim do ano 120, 104 pessoas viviam no mundo: Rilem (6), Rilil (67) e Lour (31).
 
 ### Ano 121
 
-Na primavera, começou a Guerra Santa da Praia: em nome da Terra Brava, Rilil pegou em lanças contra Demur. A Guerra Santa da Praia seguiu: Rilil contra Demur, na praia em nome da Terra Brava. Demur foi derrotado e perdeu o que tinha guardado. Beron e Demela morreram na luta. No outono, em nome da Terra Brava, Niela proibiu casamentos e trocas com Demur. Era vontade de Niela, não do deus. No inverno, depois de tantas preces sem resposta, Demur concluiu que tinha pecado. Era preciso pagar. Desde então, Demur deixa oferendas para a Terra Brava no começo de cada estação.
+A seca voltou, como no ano 107: 21 dias sem chuva, até que o céu se abriu. Houve luta no lago: Lour atacou Rilil em nome do Que Leva. Rilil expulsou os atacantes. Na luta morreram Karilor, Zela, Looran e Demkan. Desde então, Lour chama o lago de Lago do Luto. Lour não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
-*No ano 122, nada de notável aconteceu.*
+### Ano 122
+
+Na primavera, começou a Guerra Santa: em nome do Que Leva, Lour pegou em lanças contra Rilil. A Guerra Santa seguiu: Lour contra Rilil, no lago em nome do Que Leva. Rilil foi derrotado e perdeu o que tinha guardado. Na luta morreram Bertama, Kaore e Todeman. Depois da derrota, os jovens de Rilil passaram a treinar com lanças. No verão, Demsuor anunciou que o Que Leva proibia qualquer trato com Rilem. O deus nunca disse isso, mas Lour obedeceu. Lour e Rilem, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 123
 
-Niela, que falava pela Terra Brava em Rilem, morreu de velhice aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Demur. No verão, os de Rilil caíram sobre Rilem na floresta em nome da Terra Brava. Rilem foi derrotado e perdeu o que tinha guardado. Na luta morreram Demtame, Sudeme e Toa. No inverno, depois de tanto sofrer nas mãos dos vizinhos, Demur passou a desconfiar de todo estrangeiro.
+Na primavera do ano 123, Rilkae, que guiava Rilil, morreu dormindo, aos 67 anos. Em Rilem, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 96, só a crônica guarda.
 
 ### Ano 124
 
-Morreu Demsuan, que guiava Rilem, aos 60 anos. Depois de tantos mortos, Rilil e Demur se encontraram na praia e juraram paz. A Guerra Santa da Praia acabou em trégua, depois de quatro anos, cinco batalhas e dez mortos. Rilil saiu dela mais forte. Começou a Guerra Santa da Floresta: em nome da Terra Brava, Rilil pegou em lanças contra Rilem. Depois de tanto sofrer nas mãos dos vizinhos, Rilem passou a desconfiar de todo estrangeiro.
+Beran, o generoso, inventou marcas que guardavam palavras.
 
 ### Ano 125
 
-Na primavera do ano 125, na Guerra Santa da Floresta, Rilil atacou Rilem na floresta em nome da Terra Brava. Rilil venceu e levou a comida guardada. Suem e Surila morreram na luta. Em Rilil, Suna pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças à Terra Brava. O deus não tinha feito nada. No outono, na Guerra Santa da Floresta, Rilem atacou Rilil no lago em nome da Terra Brava. Rilil expulsou os atacantes. Na luta morreram Bertona e Rildeme. Para Rilem, o lago virou Lago do Luto. No inverno, em Rilem, começaram a dizer que a Terra Brava tinha partido. As preces viraram costume, sem fé.
+No verão, Tamsuna deu à luz gêmeos, Tosuan e Sukaela. Uns viram bênção; outros, mau sinal. A Guerra Santa esfriou sem acordo nem vencedor: quatro anos, três batalhas e onze mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 126
 
-Morreu o último que tinha visto o ano 84. Em Rilem, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. No verão, a Guerra Santa da Floresta seguiu: Rilil contra Rilem, na floresta em nome da Terra Brava. Rilem foi derrotado e perdeu o que tinha guardado. Taman e Kazena morreram na luta. Rilil e Rilem, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa da Floresta acabou em trégua, depois de três anos, seis batalhas e catorze mortos. Rilil saiu dela mais forte. A fome no inverno durou 21 dias em Rilil e levou dezenove vidas.
+Na primavera, com Ze à frente, a nova geração de Lour abandonou o costume de queimar os mortos, costume herdado dos avós. No inverno, um raio caiu no morro durante a tempestade e matou Lokan. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Lour sai de casa. Lembram de Lokan.
 
-### Ano 127
-
-Na primavera, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito. Para Rilem, o deus já não era «a Terra Brava»: passou a ser «a Estrela de Cauda». Para Demur, o deus já não era «a Terra Brava»: passou a ser «a Estrela de Cauda». No inverno, a Guerra da Floresta esfriou sem acordo nem vencedor: onze anos, oito batalhas e dez mortos, e ninguém sabia mais por que lutava. Rilem saiu dela mais forte.
+*No ano 127, nada de notável aconteceu.*
 
 ### Ano 128
 
-Na primavera do ano 128, morreu Suna, que falava pela Terra Brava em Rilil, aos 52 anos. Foram 9 dias de fome no inverno em Rilil, com dezesseis mortos. Tamka não podia mais viver perto de Looran. Saiu de Rilil com oito pessoas e fundou Deman no morro. Deman passou a festejar todo ano o dia da volta da chuva, em honra da Terra Brava. Depois da derrota, Demur não existia mais: os cinco que sobraram foram levados para Rilil.
+Lodema tinha rezado: «Voz do Céu, não nos deixes secar.» Quando a chuva voltou, Rilem agradeceu à Voz do Céu. O deus nada fez: o crédito era de graça.
 
-### Ano 129
-
-Na primavera do ano 129, Rilem encontrou as ruínas de Demur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Com Bersuor à frente, doze pessoas deixaram Rilil e fundaram Kaur, na praia. Em Deman, Zean tomou para si o cuidado das preces à Terra Brava. Nasceu Kasuan, filho de Suela e Zean, com sangue de Deman e de Rilem. Kakana deu à luz gêmeos, Loan e Dema. Uns viram bênção; outros, mau sinal.
+*No ano 129, nada de notável aconteceu.*
 
 ### Ano 130
 
-Morreu o último que tinha visto o ano 84. Em Kaur, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Looran anunciou que a Terra Brava proibia qualquer trato com Deman. O deus nunca disse isso, mas Rilil obedeceu. Sukae passou a falar pela Terra Brava em Kaur. Era a primeira a rezar e a última a duvidar. Rilil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Rilil passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Nos anos 121 a 130 houve três secas, oito fomes, quinze batalhas, 29 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 62 crianças e morreram 84 pessoas. No fim do ano 130, 108 pessoas viviam no mundo: Rilem (15), Rilil (67), Deman (11) e Kaur (15).
+Na primavera, morreu Oran, o generoso, aos 50 anos. Na guerra, tinha tirado duas vidas. Loe rezou por Kademela até a voz acabar. Kademela morreu mesmo assim, e Loe nunca mais rezou. Nos anos 121 a 130 houve duas secas, três fomes, quatro batalhas, dezesseis preces que pareceram atendidas e sete preces sem resposta; nasceram 83 crianças e morreram 48 pessoas. No fim do ano 130, 140 pessoas viviam no mundo: Rilem (6), Rilil (88) e Lour (46).
 
 ### Ano 131
 
-Zeor, o medroso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+Loan, o pacífico, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
 
-### Ano 132
-
-Na primavera, Dembere, de Rilil, casou-se com Berkaon e foi viver em Kaur. Foi o primeiro laço entre os dois povos. Numa tempestade sobre o morro, um raio matou Kaela. Os seus nunca esqueceram. Depois disso, Deman deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Deman sai de casa. Lembram de Kaela. Desde aquele dia, Deman chama o morro de Morro do Raio.
+*O ano 132 passou sem nada que a crônica precise guardar.*
 
 ### Ano 133
 
-Na primavera do ano 133, morreu Goloan, filho pequeno de Tama. Kaur passou a receber bem os de fora: um casamento com outro povo virava festa. Nasceu Kawae, filha de Dembere e Berkaon, com sangue de Kaur e de Rilil. No verão, Rilil atacou Rilem na floresta em nome da Terra Brava. Rilil venceu e levou a comida guardada. Na luta morreu Tame. Rilil e Rilem, cansados de enterrar os seus, fizeram as pazes na floresta.
+Na primavera do ano 133, Rilil já não cabia no lago. Kae, a ambiciosa, levou doze pessoas para a praia e fundou Suon. As ruínas de Rilur viraram aviso em Suon: era o que o deus fazia com quem o desagradava.
 
 ### Ano 134
 
-No verão, Kaur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Kaur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, Nidema, a corajosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. A seca voltou, como no ano 115: 21 dias sem chuva, até que o céu se abriu. Suzeor tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Rilem duvidou de que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça.
+Tantas preces atendidas fizeram Lour confiar no céu mais do que nas próprias mãos. No verão, Demon passou a falar pelo Que Leva em Suon. Era o primeiro a rezar e o último a duvidar. No outono, nasceu Kaik, o primeiro de Suon.
 
 ### Ano 135
 
-Rilloela disse ter ouvido o deus de outro jeito: não era «a Terra Brava», era «a Voz do Céu». Rilil acreditou, e o deus mudou de nome. Ninguém lembrava mais a razão, e Rilem abandonou o costume de queimar os mortos.
+Na primavera do ano 135, com Ze à frente, a nova geração de Lour abandonou a festa da chuva, costume herdado dos avós. A fome no inverno durou 5 dias em Lour e levou três vidas. Kakae, de Rilil, casou-se com Ororan e foi viver em Suon. Foi o primeiro laço entre os dois povos. Lour passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Lour passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 136
 
-Na primavera, Tamka, que fundou Deman e o guiava, morreu de velhice aos 63 anos. Foi quem levou os seus a fundar Deman. Zean tinha rezado: «Manda água, Voz do Céu, que as crianças têm sede.» Quando a chuva voltou, Deman agradeceu à Voz do Céu. Foi só o tempo, mas quem iria dizer?
+Na primavera, com Lodema à frente, Rilem largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido.
 
 ### Ano 137
 
-Na primavera, sem lugar e sem comida, Zela e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Rilil, cada um passou a cercar o que tinha. Rila, de Kaur, casou-se com Kator e foi viver em Deman. Foi o primeiro laço entre os dois povos. No inverno, Rilem passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera, Kaon, o engenhoso, morreu dormindo, aos 51 anos. Em Lour, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. No outono, com canais e moinhos, Rilil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. O dia em que a chuva voltou virou festa em Rilem: todo ano, celebram a chuva que a Voz do Céu mandou. Houve luta na praia: Lour atacou Suon. Suon foi derrotado e perdeu o que tinha guardado. Na luta morreu Demon.
 
 ### Ano 138
 
-Oran, que guiava Rilil, morreu dormindo, aos 58 anos. Rilil cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Voz do Céu. Zedema passou a guiar Rilil, mas Looran não aceitou e guardou rancor. Em Rilil, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+O deus calou justo quando Lour mais dependia dele. Os de Lour caíram sobre Rilem na floresta em nome do Que Leva. Rilem expulsou os atacantes. Sutoan, Bertoan, Berkana e Kazeor morreram na luta. Orlona tinha rezado: «Que Leva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças ao Que Leva. Foi só o tempo, mas quem iria dizer? Os escribas de Rilil registraram o milagre. Em nome do Que Leva, Demsuor proibiu casamentos e trocas com Rilem. Era vontade de Demsuor, não do deus. Lour passou fome por causa da seca por 21 dias, e oito pessoas morreram.
 
 ### Ano 139
 
-Na primavera do ano 139, Looran, que falava pela Voz do Céu em Rilil, morreu de velhice aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Deman.
+Começou a Guerra da Fome: Lour, com fome, foi buscar à força a comida de Rilem. Na Guerra da Fome, Lour atacou Rilem na floresta. Rilem foi derrotado e perdeu o que tinha guardado. Na luta morreram Lodema e Suoron. Depois da derrota, Rilem não existia mais: os sete que sobraram foram levados para Lour. A Guerra da Fome terminou com a conquista: um ano, duas batalhas e seis mortos. No outono, começou a Guerra da Fome da Praia: Lour, com fome, foi buscar à força a comida de Suon.
 
 ### Ano 140
 
-Na primavera do ano 140, um raio caiu na praia durante a tempestade e matou Zeon. Ninguém em Kaur teve dúvida: era castigo. Kaur passou a acreditar que a Terra Brava castiga quem duvida, e que Zeon tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Kaur sai de casa. Lembram de Zeon. Desde aquele dia, Kaur chama a praia de Praia do Raio. Kaur passou fome por causa da seca por 21 dias, e cinco pessoas morreram. Nos anos 131 a 140 houve quatro secas, cinco fomes, 24 preces que pareceram atendidas e seis preces sem resposta; nasceram 105 crianças e morreram 52 pessoas. No fim do ano 140, 156 pessoas viviam no mundo: Rilem (31), Rilil (89), Deman (11) e Kaur (25).
+Nos anos 131 a 140 houve seis fomes, quatro batalhas, dezenove preces que pareceram atendidas e cinco preces sem resposta; nasceram 69 crianças e morreram 45 pessoas. No fim do ano 140, 165 pessoas viviam no mundo: Rilil (102), Lour (46) e Suon (17).
 
-*Entre os anos 141 e 143, nada mudou o rumo do mundo.*
+### Ano 141
+
+Kae tinha rezado: «Que Leva, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Suon duvidou de que o Que Leva tinha ouvido. O deus não tinha feito nada. No inverno, Losuan morreu de fome.
+
+### Ano 142
+
+Kademan implorou pelo filho. Zeoron morreu, e daquele dia em diante Kademan cuspia no chão quando falavam do Que Leva. Beran, o generoso, morreu de frio. Uma tosse que não passava matou nove pessoas em Rilil. No outono, a Guerra da Fome da Praia esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Lour saiu dela mais forte. O inverno foi de gelo: cinco pessoas morreram de frio.
+
+### Ano 143
+
+Na primavera do ano 143, Kae, que fundou Suon e o guiava, morreu de velhice aos 51 anos. Foi quem levou os seus a fundar Suon.
 
 ### Ano 144
 
-Na primavera, o templo de Kaur ficou mais forte que o líder. Sukae, que falava pela Terra Brava, passou a decidir tudo.
+No inverno, Tokana, a generosa, cansou de dividir pouca comida. Partiu com treze pessoas para a floresta e ali fundou Zear. Zear encontrou as ruínas de Rilur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 145
 
-Na primavera, Zedema, que guiava Rilil, morreu dormindo, aos 56 anos. Em Kaur, Bersuor pediu: «Terra Brava, cura meu filho.» Os doentes se levantaram. Em Kaur, o crédito foi da Terra Brava. O deus não tinha feito nada. Os escribas de Kaur registraram o milagre.
+Orlona, que falava pelo Que Leva em Rilil, morreu de repente, aos 44 anos. Buvena passou a falar pelo Que Leva em Zear. Era a primeira a rezar e a última a duvidar. Zear encontrou as ruínas de Rilem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, em Zear nasceu a primeira criança: Esor, filho de Tokana e Berberan. Lona deu à luz gêmeos, Demor e Kazean. Uns viram bênção; outros, mau sinal.
 
 ### Ano 146
 
-Zean, que falava pela Voz do Céu em Deman, morreu de velhice aos 49 anos. No verão, a febre levou Demkan, o desconfiado. Na guerra, tinha tirado duas vidas. No outono, Kaur já não se preparava para nada: a Terra Brava sempre dava.
+Na primavera do ano 146, em Zear, Demsuor começou a pregar que o deus não era «o Que Leva». Era «o Que Queima». Em poucos anos, todos rezavam assim. Riltor partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 147
 
-Na primavera do ano 147, Berzeon, que guiava Rilil, morreu de repente, aos 44 anos. Rilil passou fome no inverno por 8 dias, e três pessoas morreram. Foram 9 dias de fome no inverno em Kaur, com nove mortos. Deman implorou pelo filho. Toan morreu, e daquele dia em diante Deman cuspia no chão quando falavam da Voz do Céu. Uma tosse que não passava matou nove pessoas em Rilil.
+Na primavera, Ze, que guiava Lour, morreu dormindo, aos 50 anos. Com Tokana à frente, a nova geração de Zear abandonou a festa da chuva, costume herdado dos avós. A fome no inverno durou 9 dias em Rilil e levou duas vidas. Um inverno duro matou três pessoas de frio.
 
 ### Ano 148
 
-No inverno, o deus calou justo quando Kaur mais dependia dele. A seca voltou, como no ano 134: 24 dias sem chuva, até que o céu se abriu.
+No outono, tantas preces atendidas fizeram Suon confiar no céu mais do que nas próprias mãos. Em Zear, Demsuor pediu: «Que Queima, não nos deixes secar.» Quando a chuva voltou, Zear agradeceu ao Que Queima. Foi só o tempo, mas quem iria dizer? Zear passou a festejar todo ano o dia da volta da chuva, em honra do Que Queima.
 
 ### Ano 149
 
-Morreu Rilrilar, o ambicioso, aos 51 anos. Na guerra, tinha tirado duas vidas. Em Deman, quem vinha de fora era recebido com comida e lugar perto do fogo. Beya, de Deman, casou-se com Suzeor e foi viver em Rilem. Foi o primeiro laço entre os dois povos.
+Demsuor, o rancoroso, morreu de velhice aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Rilil. Rilan rezou por Deme até a voz acabar. Deme morreu mesmo assim, e Rilan nunca mais rezou. Uma tosse que não passava matou quatro pessoas em Rilil.
 
 ### Ano 150
 
-No verão do ano 150, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. O inverno foi de gelo: duas pessoas morreram de frio. Nos anos 141 a 150 houve três secas, oito fomes, 30 preces que pareceram atendidas e quatro preces sem resposta; nasceram 105 crianças e morreram 75 pessoas. No fim do ano 150, 186 pessoas viviam no mundo: Rilem (61), Rilil (88), Deman (13) e Kaur (24).
+O templo de Rilil ficou mais forte que o líder. Katon, que falava pelo Que Leva, passou a decidir tudo. Nos anos 141 a 150 houve duas secas, nove fomes, 27 preces que pareceram atendidas e três preces sem resposta; nasceram 98 crianças e morreram 70 pessoas. No fim do ano 150, 191 pessoas viviam no mundo: Rilil (104), Lour (45), Suon (25) e Zear (17).
 
 ### Ano 151
 
-No verão, Sutor, o corajoso, inventou marcas que guardavam palavras.
+Na primavera do ano 151, Berkaor disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «o Olho Escuro». Rilil acreditou, e o deus mudou de nome. Com Katon à frente, a nova geração de Rilil abandonou a festa da chuva, costume herdado dos avós. Em Suon, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Toorela partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Orloan, de Zear, tomou por esposa Loela, de Rilil, e os dois povos passaram a se visitar.
 
 ### Ano 152
 
-Kasuan, o medroso, morreu de repente, aos 23 anos.
+Com Rilkan à frente, a nova geração de Suon abandonou a festa da chuva, costume herdado dos avós.
 
 ### Ano 153
 
-Morreu Berberon, que falava pela Voz do Céu em Rilil, aos 60 anos.
+No inverno, os de Rilil caíram sobre Suon na praia. Suon foi derrotado e perdeu o que tinha guardado. Ororan e Rilkan morreram na luta. Para Rilil, a praia virou Praia da Vitória.
 
-*O ano 154 passou sem nada que a crônica precise guardar.*
+### Ano 154
+
+Na primavera do ano 154, depois dos roubos da fome, Rilil parou de dividir: cada família passou a guardar o que era seu. O deus calou justo quando Suon mais dependia dele.
 
 ### Ano 155
 
-Na primavera do ano 155, morreu Deman, que guiava Rilil, aos 58 anos. Nunca perdoou o deus pela morte de Toan. Morreu Sukae, que guiava Kaur, aos 49 anos. Kaur escolheu Tona para guiar o grupo. Ordemor queria o lugar e nunca perdoou. Rilem passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Rilem passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+A terra tremeu. Caíram 25 cabanas. Kaora, Rile, Orloe, Orora, Suo, Buna, Zetona, Nian e Kasuik morreram sob os escombros. Para Suon, o deus já não era «o Que Leva»: passou a ser «a Terra Brava». De novo a chuva sumiu, como no ano 121. Foram 19 dias de seca. O dia em que a chuva voltou virou festa em Suon: todo ano, celebram a chuva que a Terra Brava mandou. No inverno, Rilan, o pacífico, morreu de fome. Desde a morte de Deme, nunca mais tinha rezado.
 
 ### Ano 156
 
-Morreu Ordeman, que falava pela Terra Brava em Kaur, aos 54 anos. Sem lugar e sem comida, Zetor e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Rilem, Tamnior pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilem deu graças à Estrela de Cauda. O deus não tinha feito nada. Os escribas de Rilem registraram o milagre.
+O frio levou Katon, que guiava Rilil. Rilil passou fome no inverno por 9 dias, e nove pessoas morreram. No verão, Zezean anunciou que o Olho Escuro proibia qualquer trato com Suon. O deus nunca disse isso, mas Rilil obedeceu. Foram 26 dias de fome por causa da seca em Lour, com 44 mortos.
 
 ### Ano 157
 
-No verão do ano 157, Sutor, o corajoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+Na primavera, os de Rilil caíram sobre Zear na floresta. Zear foi derrotado e perdeu o que tinha guardado. Na luta morreram Loela, Buvena e Orloan. Desde então, os de Rilil chamam o lugar de Floresta da Vitória; os de Zear, de Floresta do Luto. No verão, começou a Guerra da Floresta: o rancor entre Rilil e Zear virou guerra. Em nome do Que Queima, Tamem proibiu casamentos e trocas com Rilil. Era vontade de Tamem, não do deus.
 
 ### Ano 158
 
-A doença entrou em Rilem e matou nove pessoas. Desde a febre, Rilem não enterra mais ninguém: os mortos vão para o fogo. Numa tempestade sobre o morro, um raio matou Linbean. Ninguém em Deman teve dúvida: era castigo. Para Deman, Linbean foi castigado. Desde então, quem duvida da Voz do Céu duvida em silêncio.
+A Guerra da Floresta seguiu: Zear contra Rilil, no lago em nome do Que Queima. Rilil expulsou os atacantes. Tamem e Lozean morreram na luta. Para Zear, o lago virou Lago do Luto. Em nome do Olho Escuro, Zezean proibiu casamentos e trocas com Zear. Era vontade de Zezean, não do deus. No inverno, Kaoron partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 159
 
-Na primavera, morreu Riloror, que falava pela Voz do Céu em Rilil, aos 62 anos. Nideme não esperou a vez: tomou o comando de Rilem à força, e o conselho dos velhos se calou. Com canais e moinhos, Rilem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. No outono, Lon rezou por Riloran até a voz acabar. Riloran morreu mesmo assim, e Lon nunca mais rezou. Rilkana deu à luz gêmeos, Ore e Bersuela. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 159, morreu Tor, que guiava Rilil, aos 60 anos. Na guerra, tinha tirado três vidas. Rilberela deu à luz gêmeos, Loberela e Demor. Uns viram bênção; outros, mau sinal. A fome durou 21 dias em Suon e levou seis vidas. Toan tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Suon viu nisso obra da Terra Brava. O deus nada fez: o crédito era de graça.
 
 ### Ano 160
 
-Rilil passou fome no inverno por 3 dias, e uma pessoa morreu. Nos anos 151 a 160 houve seis fomes e dezesseis preces que pareceram atendidas; nasceram 108 crianças e morreram 59 pessoas. No fim do ano 160, 227 pessoas viviam no mundo: Rilem (82), Rilil (96), Deman (10) e Kaur (39).
+Na Guerra da Floresta, Zear atacou Rilil no lago. Rilil resistiu, e Zear voltou de mãos vazias. Zebue e Eslora morreram na luta. Depois de tantos mortos, Zear e Rilil se encontraram no lago e juraram paz. Depois de três anos, quatro batalhas e oito mortos, a Guerra da Floresta terminou em paz. Rilil saiu dela mais forte. No outono, numa tempestade sobre a floresta, um raio matou Torbuo. Ninguém em Zear teve dúvida: era castigo. Para Zear, o deus já não era «o Que Queima»: passou a ser «o Que Fere». Nos anos 151 a 160 houve duas secas, dez fomes, cinco batalhas, 26 preces que pareceram atendidas e nove preces sem resposta; nasceram 86 crianças e morreram 128 pessoas. No fim do ano 160, 147 pessoas viviam no mundo: Rilil (102), Lour (8), Suon (24) e Zear (13).
 
 ### Ano 161
 
-No inverno do ano 161, Kaur atacou Deman no morro. Deman foi derrotado e perdeu o que tinha guardado. Na luta morreram Lopeya, Zetoela e Kiloem. Para Kaur, o morro virou Morro da Vitória. Depois da derrota, os jovens de Deman passaram a treinar com lanças. Começou a Guerra da Fome do Morro: Kaur, com fome, foi buscar à força a comida de Deman. A Guerra da Fome do Morro seguiu: Kaur contra Deman, no morro. Deman foi derrotado e perdeu o que tinha guardado. Oran e Zena morreram na luta.
+Zezean, que guiava Rilil, morreu de velhice aos 54 anos. Foi quem proibiu, em nome do deus, o trato com Suon. Em Lour, Toe começou a pregar que o deus não era «o Que Leva». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. Katoe passou a guiar Rilil, mas Suna não aceitou e guardou rancor.
 
 ### Ano 162
 
-Suem, que falava pela Terra Brava em Kaur, morreu de repente, aos 33 anos. O frio levou Tamnior, que falava pela Estrela de Cauda em Rilem. A fome por causa da seca durou 18 dias em Kaur e levou seis vidas. A fome no inverno durou 9 dias em Rilem e levou dezoito vidas. Ordemor anunciou que a Terra Brava proibia qualquer trato com Deman. O deus nunca disse isso, mas Kaur obedeceu.
+Na primavera do ano 162, em Zear, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. No verão, a terra tremeu. Caíram treze cabanas. Rilbera, Tona, Lona, Bertoik e Nisuela morreram sob os escombros.
 
 ### Ano 163
 
-Na Guerra da Fome do Morro, Deman atacou Kaur na praia. Kaur resistiu, e Deman voltou de mãos vazias. Na luta morreram Kademo e Beor. Para Deman, a praia virou Praia do Luto. Depois de tantos mortos, Deman e Kaur se encontraram na praia e juraram paz. Depois de dois anos, três batalhas e sete mortos, a Guerra da Fome do Morro terminou em paz. Kaur saiu dela mais forte.
+Na primavera, em Suon, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam.
 
-*O ano 164 foi calmo.*
+### Ano 164
 
-### Ano 165
+Na primavera, Berberan morreu dormindo, aos 59 anos. Na guerra, tinha tirado duas vidas. O inverno foi de gelo: duas pessoas morreram de frio.
 
-Na primavera, Bersuor, fundador de Kaur, morreu de velhice aos 61 anos. Foi quem levou os seus a fundar Kaur. A doença entrou em Rilem e matou quatro pessoas.
-
-### Ano 166
-
-Na primavera do ano 166, Suzeor, o curioso, morreu de velhice aos 55 anos. De novo a chuva sumiu, como no ano 148. Foram 18 dias de seca. Em Deman, Lozena pediu: «Manda água, Voz do Céu, que as crianças têm sede.» Quando a chuva voltou, Deman agradeceu à Voz do Céu. O deus não tinha feito nada. No inverno, Zerile, a engenhosa, não resistiu à fome.
+*Entre os anos 165 e 166, nada mudou o rumo do mundo.*
 
 ### Ano 167
 
-Um inverno duro matou 25 pessoas de frio.
+Na primavera do ano 167, Zeesa, que falava pelo Que Fere em Zear, morreu de repente, aos 23 anos. No verão, Zear já não se preparava para nada: o Que Fere sempre dava.
 
 ### Ano 168
 
-Todeme disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Que Dá». Rilil acreditou, e o deus mudou de nome.
+Em Lour, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Voz do Céu».
 
-### Ano 169
-
-De novo Kaur contra Deman em nome da Terra Brava, como no ano 163. Kaur venceu e levou a comida guardada. Dembe morreu na luta.
+*No ano 169, nada de notável aconteceu.*
 
 ### Ano 170
 
-Nos anos 161 a 170 houve três secas, doze fomes, quatro batalhas, 29 preces que pareceram atendidas e nove preces sem resposta; nasceram 128 crianças e morreram 165 pessoas. No fim do ano 170, 191 pessoas viviam no mundo: Rilem (66), Rilil (94), Deman (4) e Kaur (27).
+Toberan tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Rilil viu nisso obra do Olho Escuro. O deus não tinha feito nada. Nas tabuletas de Rilil, ficou escrito que foi o Olho Escuro. Nos anos 161 a 170 houve duas secas, quatro fomes, dezesseis preces que pareceram atendidas e três preces sem resposta; nasceram 87 crianças e morreram 64 pessoas. No fim do ano 170, 170 pessoas viviam no mundo: Rilil (105), Lour (14), Suon (31) e Zear (20).
 
-### Ano 171
-
-No outono do ano 171, Rilloela, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
+*O ano 171 passou sem nada que a crônica precise guardar.*
 
 ### Ano 172
 
-O templo de Rilem ficou mais forte que o líder. Zeberem, que falava pela Estrela de Cauda, passou a decidir tudo. Com canais e moinhos, Kaur já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Toberan, o medroso, morreu dormindo, aos 54 anos. Os de Rilil caíram sobre Lour no morro. Lour foi derrotado e perdeu o que tinha guardado. Katamon, Loloan e Toe morreram na luta. Para Rilil, o morro virou Morro da Vitória. No outono, uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito.
 
 ### Ano 173
 
-Na primavera do ano 173, Kator, que guiava Deman, morreu dormindo, aos 70 anos. Os últimos de Deman, Demya, Orela e Lopeo, juntaram-se a Rilil. Deman deixou de existir. Rilem encontrou as ruínas de Deman. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Demberela deu à luz gêmeos, Kaloela e Totoela. Uns viram bênção; outros, mau sinal.
 
-### Ano 174
-
-Na primavera do ano 174, morreu Sutor, o corajoso, aos 61 anos. Rilem passou fome no inverno por 3 dias, e três pessoas morreram. Uma tosse que não passava matou três pessoas em Rilem.
+*O ano 174 passou sem nada que a crônica precise guardar.*
 
 ### Ano 175
 
-Em Kaur, Lian pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kaur deu graças à Terra Brava. O deus não tinha feito nada. Nas tabuletas de Kaur, ficou escrito que foi a Terra Brava. No verão, Nikaem, o corajoso, cansou de dividir pouca comida. Partiu com dezessete pessoas para o morro e ali fundou Beran. Em Beran, Tama tomou para si o cuidado das preces à Estrela de Cauda. Beran encontrou as ruínas de Demur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, Tamon, de Beran, tomou por esposa Kina, de Kaur, e os dois povos passaram a se visitar.
+Em Zear, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Houve luta na floresta: Rilil atacou Zear. Rilil venceu e levou a comida guardada. Na luta morreram Daut, Esor e Faor. Zear não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Começou a Guerra da Fome do Morro: Rilil, com fome, foi buscar à força a comida de Lour. No verão, dessa vez, o Que Fere não respondeu, e Zear, que tinha esquecido como se virar sozinho, pagou caro.
 
 ### Ano 176
 
-Na primavera do ano 176, Nisuon, o devoto, morreu de velhice aos 60 anos. Em Beran, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 112, só a crônica guarda. Sudemela, a rancorosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Em Beran nasceu a primeira criança: Saya, filha de Kina e Tamon. No inverno, Kaloan, que guiava Rilil, morreu de fome.
+Os de Suon caíram sobre Zear na floresta. Zear expulsou os atacantes. Na luta morreu Rilon. No verão, começou a Guerra da Fome da Floresta: Rilil, com fome, foi buscar à força a comida de Zear. Começou a Segunda Guerra da Fome: Suon, com fome, foi buscar à força a comida de Zear. Desde então, Suon chama a floresta de Floresta da Vitória. No inverno, morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Zear perdeu o saber.
 
 ### Ano 177
 
-Na primavera do ano 177, Lisuna morreu de velhice aos 45 anos. Na guerra, tinha tirado duas vidas. O frio levou Ordemor, que guiava Kaur. Foi quem proibiu, em nome do deus, o trato com Deman. Rilil passou fome no inverno por 9 dias, e dezesseis pessoas morreram. Houve luta no morro: Kaur atacou Beran. Beran expulsou os atacantes. Kaoror morreu na luta. A fome durou 18 dias em Kaur e levou nove vidas.
+Katoe, que guiava Rilil, morreu dormindo, aos 54 anos. Tokana, que fundou Zear e o guiava, morreu dormindo, aos 72 anos. Foi quem levou os seus a fundar Zear. Em Zear, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No verão, depois de tantas preces sem resposta, Zear concluiu que tinha pecado. Era preciso pagar. Começaram as oferendas: frutas e peixe deixados no chão para o Que Fere.
 
-*O ano 178 foi calmo.*
+### Ano 178
+
+Os últimos de Zear, Buna, Zeo e Veut, juntaram-se a Lour. Zear deixou de existir. A Guerra da Fome da Floresta acabou porque um dos lados deixou de existir: três anos, duas batalhas e quatro mortos. A Segunda Guerra da Fome acabou porque um dos lados deixou de existir: dois anos, três batalhas e seis mortos. A Guerra da Fome do Morro acabou em trégua, depois de seis anos, três batalhas e cinco mortos. Rilil saiu dela mais forte. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
 
 ### Ano 179
 
-Rilloela, a engenhosa, morreu dormindo, aos 62 anos. No verão, começou a Segunda Guerra da Fome: Kaur, com fome, foi buscar à força a comida de Beran. Na Segunda Guerra da Fome, Kaur atacou Beran no morro. Beran expulsou os atacantes. Na luta morreram Lisuon, Zeniela e Nikaem. Para Beran, o morro virou Morro da Vitória. Depois da derrota, os jovens de Kaur passaram a treinar com lanças.
+Depois de anos sob um só, Suon sentou-se em roda: dali em diante, decidia-se juntos. Começou a Guerra do Morro: o rancor entre Suon e Lour virou guerra. Na Guerra do Morro, Suon atacou Lour no morro. Lour foi derrotado e perdeu o que tinha guardado. Buna e Zezeo morreram na luta. Suon venceu Lour e levou os cinco sobreviventes para viver sob seu mando. Lour deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra do Morro terminou com a conquista: três anos, duas batalhas e três mortos.
 
 ### Ano 180
 
-Nos anos 171 a 180 houve quinze fomes, duas batalhas, 33 preces que pareceram atendidas e cinco preces sem resposta; nasceram 143 crianças e morreram 103 pessoas. No fim do ano 180, 231 pessoas viviam no mundo: Rilem (78), Rilil (98), Kaur (33) e Beran (22).
+Na primavera, Sue, que falava pelo Olho Escuro em Rilil, morreu dormindo, aos 60 anos. Nos anos 171 a 180 houve dez fomes, dez batalhas, dezessete preces que pareceram atendidas e sete preces sem resposta; nasceram 63 crianças e morreram 116 pessoas. No fim do ano 180, 118 pessoas viviam no mundo: Rilil (83) e Suon (35).
 
 ### Ano 181
 
-Na primavera do ano 181, sem lugar e sem comida, Sukaon e os seus atravessaram a borda do mundo. Ninguém soube deles. Sudeman, de Rilil, casou-se com Tama e foi viver em Beran. Foi o primeiro laço entre os dois povos.
+Na primavera do ano 181, Berkaor, que falava pelo Olho Escuro em Rilil, morreu de velhice aos 58 anos. Em Suon, Orik pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Suon viu nisso obra da Terra Brava. A crônica sabe que foi acaso.
 
-*Do ano 182 ao 183, a vida seguiu sem grandes acontecimentos.*
+*No ano 182, nada de notável aconteceu.*
+
+### Ano 183
+
+Na primavera do ano 183, Nisuon rezou por Suna até a voz acabar. Suna morreu mesmo assim, e Nisuon nunca mais rezou. A doença entrou em Suon e matou duas pessoas. A fome durou 6 dias em Suon e levou uma vida. Rilkaela, que guiava Suon, morreu de fome.
 
 ### Ano 184
 
-Zeberem tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Rilem viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Nas tabuletas de Rilem, ficou escrito que foi a Estrela de Cauda. Beran ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+A fome no inverno durou 9 dias em Suon e levou três vidas.
 
 ### Ano 185
 
-Em Beran, Sudemela começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Ergue». Em poucos anos, todos rezavam assim. No verão, a Segunda Guerra da Fome esfriou sem acordo nem vencedor: oito anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. Beran saiu dela mais forte.
+Orton, o generoso, morreu dormindo, aos 59 anos. Na guerra, tinha tirado três vidas.
 
 ### Ano 186
 
-Morreu Oron, que falava pelo Que Dá em Rilil, aos 70 anos. Katon, que guiava Rilil, morreu dormindo, aos 58 anos. Sem lugar e sem comida, Goela e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Houve luta no morro: Kaur atacou Beran. Beran resistiu, e Kaur voltou de mãos vazias. Na luta morreram Sulona e Lona.
+De novo a chuva sumiu, como no ano 155. Foram 19 dias de seca.
 
 ### Ano 187
 
-Subera deu à luz gêmeos, Losuna e Lozela. Uns viram bênção; outros, mau sinal. Numa tempestade sobre o morro, um raio matou Zedema. Em Beran, disseram que era castigo. Beran passou a acreditar que o Que Ergue castiga quem duvida, e que Zedema tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Beran sai de casa. Lembram de Zedema.
+Na primavera, com Tozela à frente, 27 pessoas deixaram Rilil e fundaram Orem, na floresta. Orem encontrou as ruínas de Rilur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Orem encontrou as ruínas de Zear. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, em Orem, Demtor tomou para si o cuidado das preces ao Olho Escuro. No inverno, em Orem nasceu a primeira criança: Darilim, filho de Tozela e Demtor.
 
-### Ano 188
-
-Começou a Guerra do Morro: o rancor entre Kaur e Beran virou guerra. A Guerra do Morro seguiu: Kaur contra Beran, no morro. Kaur venceu e levou a comida guardada. Na luta morreram Suela e Sudeman. Depois de tantos mortos, Kaur e Beran se encontraram no morro e juraram paz. A Guerra do Morro acabou em trégua, depois de dois anos, duas batalhas e quatro mortos. No verão, Kina, a curiosa, deu à luz e não sobreviveu ao parto. Na guerra, tinha tirado duas vidas.
-
-### Ano 189
-
-Na primavera, Susuna, que falava pelo Que Dá em Rilil, morreu de velhice aos 50 anos. Kazeon implorou pelo filho. Sukaon morreu, e daquele dia em diante Kazeon cuspia no chão quando falavam do Que Dá. Uma tosse que não passava matou três pessoas em Rilil.
+*Entre os anos 188 e 189, nada mudou o rumo do mundo.*
 
 ### Ano 190
 
-Na primavera do ano 190, Losue passou a guiar Rilil, mas Suze não aceitou e guardou rancor. A doença entrou em Rilil e matou cinco pessoas. Kaur passou fome no inverno por 15 dias, e oito pessoas morreram. O inverno foi de gelo: nove pessoas morreram de frio. Depois da seca, Rilem jurou nunca desperdiçar água. Nos anos 181 a 190 houve duas secas, dezesseis fomes, três batalhas, 31 preces que pareceram atendidas e oito preces sem resposta; nasceram 104 crianças e morreram 109 pessoas. No fim do ano 190, 219 pessoas viviam no mundo: Rilem (69), Rilil (95), Kaur (30) e Beran (25).
+Em Suon, Toan pediu: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Suon duvidou de que a Terra Brava tinha ouvido. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Orem: todo ano, celebram a chuva que o Olho Escuro mandou. Nos anos 181 a 190 houve três secas, sete fomes e dezenove preces que pareceram atendidas; nasceram 88 crianças e morreram 48 pessoas. No fim do ano 190, 158 pessoas viviam no mundo: Rilil (93), Suon (33) e Orem (32).
 
 ### Ano 191
 
-Kasuem, que guiava Kaur, morreu de velhice aos 53 anos. Na guerra, tinha tirado duas vidas. Foram 20 dias de fome por causa da seca em Rilem, com treze mortos. Em nome do Que Dá, Suze proibiu casamentos e trocas com Beran. Era vontade de Suze, não do deus.
+Na primavera, Toan, que falava pela Terra Brava em Suon, morreu dormindo, aos 65 anos. Suon já não cabia na praia. Kasuon, o pacífico, levou treze pessoas para o morro e fundou Peil. Peil encontrou as ruínas de Rilur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Rilik passou a falar pela Terra Brava em Peil. Era o primeiro a rezar e o último a duvidar. Bera passou dias nas ruínas de Lour e voltou sabendo cortar pedra.
 
 ### Ano 192
 
-Na primavera do ano 192, morreu Zeberem, que guiava Rilem, aos 50 anos.
+Bertor, que guiava Rilil, morreu de febre aos 72 anos. Lodemon implorou pelo filho. Kakan morreu, e daquele dia em diante Lodemon cuspia no chão quando falavam do Olho Escuro. Rilik tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Peil viu nisso obra da Terra Brava. O deus não tinha feito nada. Uma febre correu Rilil e levou sete vidas.
 
-*No ano 193, nada de notável aconteceu.*
+### Ano 193
+
+Com Kasuon à frente, a nova geração de Peil abandonou a festa da chuva, costume herdado dos avós. De novo o sol se apagou no meio do dia.
 
 ### Ano 194
 
-Sudemela, a rancorosa, morreu de velhice aos 60 anos. A terra tremeu. Caíram 27 cabanas. Dema e Surile morreram sob os escombros. De novo Kaur contra Beran, como no ano 188. Beran foi derrotado e perdeu o que tinha guardado. Na luta morreu Suon.
+Nasceu Kikina, a primeira de Peil.
 
 ### Ano 195
 
-Na primavera, Tokan implorou pela filha. Kae morreu, e daquele dia em diante Tokan cuspia no chão quando falavam do Que Dá.
+Na primavera do ano 195, em Orem, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Falona, de Orem, casou-se com Suberon e foi viver em Suon. Foi o primeiro laço entre os dois povos. Rilik passou dias nas ruínas de Lour e voltou sabendo cortar pedra. O dia em que a chuva voltou virou festa em Peil: todo ano, celebram a chuva que a Terra Brava mandou.
 
 ### Ano 196
 
-Em Beran, Saya pediu: «Que Ergue, não nos deixes secar.» Quando a chuva voltou, Beran agradeceu ao Que Ergue. A crônica sabe que foi acaso.
+Um inverno duro matou duas pessoas de frio.
 
 ### Ano 197
 
-Na primavera do ano 197, em Rilem, Kilona começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Fala no Sono». Em poucos anos, todos rezavam assim.
+Morreu Kabere, a engenhosa, aos 59 anos. No inverno, Bera passou dias nas ruínas de Lour e voltou sabendo cortar pedra. De novo a chuva sumiu, como no ano 186. Foram 26 dias de seca.
 
 ### Ano 198
 
-Na primavera do ano 198, Berem, o engenhoso, morreu de velhice aos 66 anos. Berberor disse ter ouvido o deus de outro jeito: não era «o Que Dá», era «a Chama de Cima». Rilil acreditou, e o deus mudou de nome. No inverno, os de Rilil caíram sobre Beran no morro em nome da Chama de Cima. Rilil venceu e levou a comida guardada. Bersuem, Berkaon e Rilsue morreram na luta. Para Rilil, o morro virou Morro da Vitória. Rilil e Beran, cansados de enterrar os seus, fizeram as pazes no morro.
+Peil passou fome por causa da seca por 17 dias, mas ninguém morreu. No verão, em Peil, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 199
 
-Suze, que falava pela Chama de Cima em Rilil, morreu dormindo, aos 69 anos. Foi quem proibiu, em nome do deus, o trato com Beran. Morreu Lian, o devoto, aos 68 anos. Rilil passou fome no inverno por 8 dias, e duas pessoas morreram. Nisuor implorou pela filha. Bersua morreu, e daquele dia em diante Nisuor cuspia no chão quando falavam do Que Fala no Sono. Uma tosse que não passava matou cinco pessoas em Rilem.
+Na primavera do ano 199, Suela, de Orem, casou-se com Kaoran e foi viver em Rilil. Foi o primeiro laço entre os dois povos. No verão, nas ruínas de Lour, Bera achou o que eles sabiam: aprendeu a trabalhar o metal.
 
 ### Ano 200
 
-Na primavera do ano 200, Tokan, o devoto, morreu de velhice aos 51 anos. Desde a morte de Kae, nunca mais tinha rezado. Nos anos 191 a 200 houve duas secas, nove fomes, duas batalhas, 26 preces que pareceram atendidas e cinco preces sem resposta; nasceram 95 crianças e morreram 104 pessoas. No fim do ano 200, 210 pessoas viviam no mundo: Rilem (70), Rilil (82), Kaur (33) e Beran (25).
+Na primavera do ano 200, Demon, o devoto, morreu de velhice aos 60 anos. Nas ruínas de Lour, Bera achou o que eles sabiam: aprendeu a trabalhar o metal. Nos anos 191 a 200 houve três secas, sete fomes, 25 preces que pareceram atendidas e sete preces sem resposta; nasceram 75 crianças e morreram 49 pessoas. No fim do ano 200, 184 pessoas viviam no mundo: Rilil (96), Suon (27), Orem (48) e Peil (13).
 
 ### Ano 201
 
-Na primavera do ano 201, em Kaur, Orzena começou a pregar que o deus não era «a Terra Brava». Era «o Que Seca». Em poucos anos, todos rezavam assim.
+Em Rilil, Tokaon pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Rilil deu graças ao Olho Escuro. Foi só o tempo, mas quem iria dizer? Os escribas de Rilil registraram o milagre. No verão, Peil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 202
 
-Na primavera, sem lugar e sem comida, Lizean e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De novo a chuva sumiu, como no ano 166. Foram 26 dias de seca.
+Em Orem, Loan pediu: «Olho Escuro, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Orem duvidou de que o Olho Escuro tinha ouvido. O deus nada fez: o crédito era de graça. No inverno, Lodemon, o rancoroso, morreu de fome. Nunca perdoou o deus pela morte de Kakan.
 
 ### Ano 203
 
-A fome por causa da seca durou 11 dias em Rilem e levou duas vidas.
+Foram 9 dias de fome no inverno em Rilil, com dezessete mortos. No verão, em Peil, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Peil passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 204
 
-No outono do ano 204, a forja de Beran não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera, Rilik, que falava pela Terra Brava em Peil, morreu dormindo, aos 52 anos. Rilrilon, de Peil, tomou por esposa Rilbere, de Rilil, e os dois povos passaram a se visitar.
 
-### Ano 205
-
-O inverno foi de gelo: três pessoas morreram de frio.
-
-### Ano 206
-
-Na primavera, Rilberan, que falava pela Chama de Cima em Rilil, morreu de velhice aos 55 anos. Orzena tinha rezado: «Que Seca, dá-nos o que comer.» A fome passou, e Kaur viu nisso obra do Que Seca. O deus não tinha feito nada. Os escribas de Kaur registraram o milagre.
+*Os anos 205 a 206 passaram em paz.*
 
 ### Ano 207
 
-Na primavera do ano 207, em Kaur, gritaram que o templo mentia em nome do Que Seca. Os sacerdotes foram tirados do poder. Bernie deu à luz gêmeos, Tokana e Nian. Uns viram bênção; outros, mau sinal. Suzem, o engenhoso, inventou marcas que guardavam palavras.
+Na primavera, Nisuon, que guiava Suon, morreu de velhice aos 70 anos. Nunca perdoou o deus pela morte de Suna.
 
 ### Ano 208
 
-Morreu Losue, que guiava Rilil, aos 67 anos. Tama, que guiava Beran, morreu dormindo, aos 65 anos. Morreu o último que tinha visto o ano 158. Em Beran, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Rilil escolheu Kasuan para guiar o grupo. Subera queria o lugar e nunca perdoou.
+No outono, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito.
 
 ### Ano 209
 
-Na primavera, em Beran, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Beran, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Uma tosse que não passava matou três pessoas em Suon. Depois da febre, Suon passou a queimar os seus mortos, para que a doença não voltasse. Kakana deu à luz gêmeos, Orrilan e Zeulim. Uns viram bênção; outros, mau sinal. Tantas preces atendidas fizeram Peil confiar no céu mais do que nas próprias mãos.
 
 ### Ano 210
 
-Na primavera, morreu Kaniela, que guiava Rilem, aos 62 anos. No inverno, Suniel, o rancoroso, aprendeu a levar a água por canais e a fazer o vento moer o grão. Nos anos 201 a 210 houve duas secas, dezoito fomes e 32 preces que pareceram atendidas; nasceram 132 crianças e morreram 58 pessoas. No fim do ano 210, 279 pessoas viviam no mundo: Rilem (87), Rilil (105), Kaur (41) e Beran (46).
+Na primavera do ano 210, Kikina, de Peil, casou-se com Orulan e foi viver em Orem. Foi o primeiro laço entre os dois povos. Ortor partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Bersuon, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. Nos anos 201 a 210 houve duas secas, onze fomes e vinte preces que pareceram atendidas; nasceram 102 crianças e morreram 55 pessoas. No fim do ano 210, 229 pessoas viviam no mundo: Rilil (107), Suon (33), Orem (70) e Peil (19).
 
 ### Ano 211
 
-Na primavera do ano 211, morreu Zeberan, que falava pelo Que Fala no Sono em Rilem, aos 62 anos. Morreu Nibera, que guiava Kaur, aos 61 anos.
+Tokaon, que guiava Rilil, morreu dormindo, aos 54 anos. Morreu Berkaon, que falava pela Terra Brava em Suon, aos 66 anos. Berkaela tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Rilil viu nisso obra do Olho Escuro. Foi só o tempo, mas quem iria dizer? Os escribas de Rilil registraram o milagre. Com canais e moinhos, Suon já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Os sábios de Suon passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 212
 
-Uma tosse que não passava matou quatro pessoas em Rilil.
+Kaor, que falava pelo Olho Escuro em Rilil, morreu dormindo, aos 70 anos. Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Orem, o deus já não era «o Olho Escuro»: passou a ser «a Sombra». A febre levou Kasuon, que fundou Peil e o guiava. Tinha fundado Peil. O deus calou justo quando Peil mais dependia dele.
 
 ### Ano 213
 
-Na primavera, com lanças e promessas, Zena acabou com o conselho de Rilil e passou a mandar sozinho. Suil partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Rilil passou fome no inverno por 9 dias, e uma pessoa morreu.
+Demtor, que falava pela Sombra em Orem, morreu dormindo, aos 56 anos.
 
-### Ano 214
-
-Na primavera do ano 214, Beran já não se preparava para nada: o Que Ergue sempre dava. No outono, Beran cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Ergue. De novo a chuva sumiu, como no ano 202. Foram 19 dias de seca. No inverno, Berdema, que guiava Rilem, não resistiu à fome.
-
-### Ano 215
-
-Na primavera do ano 215, Gor, que guiava Kaur, morreu de frio. O frio levou Rilwaem, que guiava Kaur. Foram 9 dias de fome no inverno em Rilem, com seis mortos. Em Rilem, Berdema pediu: «Que Fala no Sono, não deixes nossos filhos morrerem de fome.» A fome passou, e Rilem viu nisso obra do Que Fala no Sono. O deus não tinha feito nada. Nas tabuletas de Rilem, ficou escrito que foi o Que Fala no Sono. Rilil passou fome no inverno por 9 dias, e quinze pessoas morreram.
+*Entre os anos 214 e 215, nada mudou o rumo do mundo.*
 
 ### Ano 216
 
-Na primavera, morreu Berberor, que falava pela Chama de Cima em Rilil, aos 61 anos.
+A terra tremeu. Caíram dezessete cabanas. Rilkae, Berkan, Orrilia, Dae, Kabera e Ze morreram sob os escombros. Um raio caiu na praia durante a tempestade e matou Niela. Em Suon, disseram que era castigo. Suon passou a acreditar que a Terra Brava castiga quem duvida, e que Niela tinha duvidado. Desde a morte de Niela, ninguém em Suon desce à praia em dia de tempestade.
 
-*O ano 217 passou sem nada que a crônica precise guardar.*
+### Ano 217
 
-### Ano 218
+Na primavera, Toela disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Risca o Céu». Rilil acreditou, e o deus mudou de nome. Com canais e moinhos, Orem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Os sábios de Orem passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
-Tamor, que falava pelo Que Ergue em Beran, morreu dormindo, aos 50 anos. Em Beran, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Em Rilem, quem vinha de fora era recebido com comida e lugar perto do fogo.
+*No ano 218, nada de notável aconteceu.*
 
-*No ano 219, nada de notável aconteceu.*
+### Ano 219
+
+Na primavera, Losuan, que falava pela Sombra em Orem, morreu de repente, aos 41 anos.
 
 ### Ano 220
 
-Na primavera do ano 220, em Beran, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Nos anos 211 a 220 houve 24 fomes e 41 preces que pareceram atendidas; nasceram 125 crianças e morreram 131 pessoas. No fim do ano 220, 267 pessoas viviam no mundo: Rilem (84), Rilil (103), Kaur (36) e Beran (44).
+Nos anos 211 a 220 houve três fomes, onze preces que pareceram atendidas e quatro preces sem resposta; nasceram 130 crianças e morreram 140 pessoas. No fim do ano 220, 219 pessoas viviam no mundo: Rilil (86), Suon (41), Orem (79) e Peil (13).
 
 ### Ano 221
 
-Na primavera, com Nukael à frente, a nova geração de Beran abandonou o costume de queimar os mortos, costume herdado dos avós.
+Na primavera, Rilela disse ter ouvido o deus de outro jeito: não era «a Terra Brava», era «a Estrela de Cauda». Suon acreditou, e o deus mudou de nome. Peil deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Suan tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Suon deu graças à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? A seca voltou, como no ano 197: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 222
 
-Uma febre correu Rilil e levou quatro vidas.
+Foram 15 dias de fome por causa da seca em Suon, com quinze mortos.
 
-### Ano 223
-
-Morreu Orzena, a devota, aos 54 anos.
+*O ano 223 foi calmo.*
 
 ### Ano 224
 
-Morreu Saya, que falava pelo Que Ergue em Beran, aos 48 anos. Oron partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 8 dias em Beran e levou cinco vidas. Dessa vez, o Que Ergue não respondeu, e Beran, que tinha esquecido como se virar sozinho, pagou caro. Kael rezou por Berel até a voz acabar. Berel morreu mesmo assim, e Kael nunca mais rezou.
+Na primavera, de novo o sol se apagou no meio do dia.
 
 ### Ano 225
 
-Demnian, que falava pelo Que Fala no Sono em Rilem, morreu de velhice aos 62 anos. Em Rilil, Deman pediu: «Chama de Cima, dá-nos o que comer.» A fome passou, e Rilil viu nisso obra da Chama de Cima. O deus não tinha feito nada. Os escribas de Rilil registraram o milagre.
+Na primavera, em Orem, gritaram que o templo mentia em nome da Sombra. Os sacerdotes foram tirados do poder. Orem passou fome no inverno por 9 dias, e duas pessoas morreram. Orem já não se preparava para nada: a Sombra sempre dava. A floresta passou a ser a floresta da fome: Floresta da Fome.
 
 ### Ano 226
 
-Morreu Deman, o engenhoso, aos 71 anos. Uma febre correu Rilem e levou quatro vidas.
+Na primavera, Zean, que guiava Rilil, morreu de velhice aos 63 anos. Tokaor implorou pelo filho. Ordeman morreu, e daquele dia em diante Tokaor cuspia no chão quando falavam do Que Risca o Céu. A doença entrou em Rilil e matou onze pessoas.
 
 ### Ano 227
 
-Na primavera do ano 227, Ze, a curiosa, morreu de velhice aos 65 anos. Toela disse ter ouvido o deus de outro jeito: não era «o Que Ergue», era «o Senhor das Lanças». Beran acreditou, e o deus mudou de nome. Sem lugar e sem comida, Lina e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera, morreu Suan, que falava pela Estrela de Cauda em Suon, aos 61 anos. A terra tremeu. Caíram vinte cabanas. Katoe, Zeberor, Loan, Zeoran, Dara e Kaik morreram sob os escombros. Fazia muito tempo que Peil não rezava. Diante do que viu, voltou a chamar por «o Que Leva», e o templo encheu de novo. Dessa vez, a Sombra não respondeu, e Orem, que tinha esquecido como se virar sozinho, pagou caro.
 
-*No ano 228, nada de notável aconteceu.*
+### Ano 228
+
+Tozela, que fundou Orem e o guiava, morreu de velhice aos 63 anos. Foi quem levou os seus a fundar Orem. Berenor partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Orem atacou Peil no morro em nome da Sombra. Peil expulsou os atacantes. Zerilan e Dana morreram na luta. No outono, Bertoan anunciou que a Sombra proibia qualquer trato com Peil. O deus nunca disse isso, mas Orem obedeceu. Um raio caiu no morro durante a tempestade e matou Doela. A família de Doela nunca perdoou o céu.
 
 ### Ano 229
 
-Sem lugar e sem comida, Orrile e os seus atravessaram a borda do mundo. Ninguém soube deles. Rilil passou fome no inverno por 20 dias, e duas pessoas morreram.
+Os de Orem caíram sobre Suon na praia em nome da Sombra. Suon foi derrotado e perdeu o que tinha guardado. Na luta morreram Rilkan e Suik. Desde então, Orem chama a praia de Praia da Vitória. Suon não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
 ### Ano 230
 
-Na primavera, Zesuor, que guiava Rilem, morreu de velhice aos 63 anos. Um inverno duro matou duas pessoas de frio. Nos anos 221 a 230 houve 33 fomes, 44 preces que pareceram atendidas e três preces sem resposta; nasceram 149 crianças e morreram 116 pessoas. No fim do ano 230, 291 pessoas viviam no mundo: Rilem (89), Rilil (110), Kaur (40) e Beran (52).
+Começou a Segunda Guerra do Morro: o rancor entre Orem e Peil virou guerra. Depois de tantos mortos, Orem e Peil se encontraram no morro e juraram paz. Depois de dois anos, duas batalhas e três mortos, a Segunda Guerra do Morro terminou em paz. Começou a Guerra Santa da Praia: em nome da Sombra, Orem pegou em lanças contra Suon. A Guerra Santa da Praia seguiu: Orem contra Suon, na praia em nome da Sombra. Orem venceu e levou a comida guardada. Na luta morreram Berbera, Nion e Enor. Nos anos 221 a 230 houve duas secas, quinze fomes, cinco batalhas, 30 preces que pareceram atendidas e sete preces sem resposta; nasceram 122 crianças e morreram 130 pessoas. No fim do ano 230, 209 pessoas viviam no mundo: Rilil (80), Suon (28), Orem (82) e Peil (19).
 
-*O ano 231 passou sem nada que a crônica precise guardar.*
+### Ano 231
 
-### Ano 232
+Rilil passou fome no inverno por 9 dias, e onze pessoas morreram. Kaoran tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Rilil deu graças ao Que Risca o Céu. A crônica sabe que foi acaso. Nas tabuletas de Rilil, ficou escrito que foi o Que Risca o Céu. O frio levou Toela, a devota. No verão, na Guerra Santa da Praia, Suon atacou Orem na floresta. Orem resistiu, e Suon voltou de mãos vazias. Na luta morreram Rilrilor e Kaoron. O inverno foi de gelo: doze pessoas morreram de frio.
 
-Susuon disse ter ouvido o deus de outro jeito: não era «o Que Fala no Sono», era «a Luz Que Avisa». Rilem acreditou, e o deus mudou de nome. O frio levou Sukana, que guiava Rilil. Rilil passou fome no inverno por 18 dias, e cinco pessoas morreram.
-
-### Ano 233
-
-Na primavera, Loe disse ter ouvido o deus de outro jeito: não era «a Chama de Cima», era «a Voz do Céu». Rilil acreditou, e o deus mudou de nome.
+*Os anos 232 a 233 passaram em paz.*
 
 ### Ano 234
 
-Em Rilil, Zekana pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças à Voz do Céu. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Rilil, ficou escrito que foi a Voz do Céu.
+No outono, a Guerra Santa da Praia esfriou sem acordo nem vencedor: cinco anos, cinco batalhas e dez mortos, e ninguém sabia mais por que lutava. Orem saiu dela mais forte.
 
 ### Ano 235
 
-Na primavera do ano 235, Gogoil, a generosa, morreu de velhice aos 45 anos.
+De novo a chuva sumiu, como no ano 221. Foram 20 dias de seca. Kaoran, o engenhoso, não resistiu à fome.
 
 ### Ano 236
 
-Morreu Zekana, a engenhosa, aos 56 anos. Orberor rezou por Berkana até a voz acabar. Berkana morreu mesmo assim, e Orberor nunca mais rezou. De novo a chuva sumiu, como no ano 214. Foram 24 dias de seca. Depois da seca, Beran jurou nunca desperdiçar água. Susue partiu com três pessoas para além da borda do mundo. Nunca voltaram.
+A doença entrou em Rilil e matou três pessoas. A fome no inverno durou 9 dias em Rilil e levou duas vidas. Bertoan rezou por Demzena até a voz acabar. Demzena morreu mesmo assim, e Bertoan nunca mais rezou. A doença entrou em Orem e matou quatro pessoas. Depois da febre, Orem passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 237
 
-Na primavera do ano 237, Suzean, que falava pela Luz Que Avisa em Rilem, morreu de frio. Rilil passou fome no inverno por 9 dias, e vinte pessoas morreram.
+Na primavera, morreu Bertoan, que falava pela Sombra em Orem, aos 54 anos. Desde a morte de Demzena, nunca mais tinha rezado. A fome no inverno durou 5 dias em Orem e levou quatro vidas.
 
 ### Ano 238
 
-Na primavera, Demdema, que guiava Rilil, morreu de velhice aos 57 anos. Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
+Na primavera do ano 238, Ore, que guiava Rilil, morreu de velhice aos 53 anos.
 
 ### Ano 239
 
-Orrilela deu à luz gêmeos, Toberon e Suzena. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 239, Orulan implorou pela filha. Kadara morreu, e daquele dia em diante Orulan cuspia no chão quando falavam da Sombra.
 
 ### Ano 240
 
-Nos anos 231 a 240 houve duas secas, 24 fomes, 30 preces que pareceram atendidas e seis preces sem resposta; nasceram 116 crianças e morreram 207 pessoas. No fim do ano 240, 197 pessoas viviam no mundo: Rilem (60), Rilil (91), Kaur (11) e Beran (35).
+Demon partiu com três pessoas para além da borda do mundo. Nunca voltaram. Oran tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Rilil viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Os escribas de Rilil registraram o milagre. Nos anos 231 a 240 houve doze fomes, duas batalhas, 28 preces que pareceram atendidas e seis preces sem resposta; nasceram 126 crianças e morreram 81 pessoas. No fim do ano 240, 250 pessoas viviam no mundo: Rilil (108), Suon (32), Orem (86) e Peil (24).
 
-*O ano 241 passou sem nada que a crônica precise guardar.*
+### Ano 241
+
+Na primavera do ano 241, houve luta no morro: Orem atacou Peil. Peil foi derrotado e perdeu o que tinha guardado. Kinion, Kanior e Suberim morreram na luta. Peil não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Orem e Peil se encontraram no morro e juraram paz.
 
 ### Ano 242
 
-Lokaon passou a guiar Rilil, mas Rillon não aceitou e guardou rancor. Loe rezou por Berzeon até a voz acabar. Berzeon morreu mesmo assim, e Loe nunca mais rezou. Uma febre correu Rilil e levou dez vidas. Uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito.
+No inverno do ano 242, houve luta no morro: Rilil atacou Peil. Peil foi derrotado e perdeu o que tinha guardado. Oror morreu na luta. Depois da luta, Rilil e Peil se encontraram no morro e juraram paz.
 
 ### Ano 243
 
-Na primavera do ano 243, morreu Liem, que guiava Kaur, aos 61 anos. Depois de anos sob um só, Rilil sentou-se em roda: dali em diante, decidia-se juntos.
+O inverno foi de gelo: duas pessoas morreram de frio.
 
-*Entre os anos 244 e 245, nada mudou o rumo do mundo.*
+### Ano 244
+
+Com Ulor à frente, a nova geração de Orem abandonou o medo das tempestades, costume herdado dos avós. Bere partiu com três pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 17 dias em Rilil e levou quatro vidas.
+
+### Ano 245
+
+De novo a chuva sumiu, como no ano 235. Foram 24 dias de seca. Sutor, que guiava Rilil, morreu de fome.
 
 ### Ano 246
 
-Na primavera, morreu Rilon, que falava pela Luz Que Avisa em Rilem, aos 70 anos. Niel tinha rezado: «Senhor das Lanças, dá-nos o que comer.» A fome passou, e Beran viu nisso obra do Senhor das Lanças. A crônica sabe que foi acaso. Nas tabuletas de Beran, ficou escrito que foi o Senhor das Lanças.
+Sem lugar e sem comida, Katoela e os seus atravessaram a borda do mundo. Ninguém soube deles. O frio levou Rillon, que guiava Rilil. A fome no inverno durou 9 dias em Rilil e levou seis vidas. A doença entrou em Orem e matou oito pessoas. Houve luta no morro: Suon atacou Peil. Suon venceu e levou a comida guardada. Na luta morreram Rilik, Kitoela, Pena e Berela.
 
-*Do ano 247 ao 249, a vida seguiu sem grandes acontecimentos.*
+*No ano 247, nada de notável aconteceu.*
+
+### Ano 248
+
+Na primavera do ano 248, Rilon, que guiava Peil, morreu de velhice aos 60 anos. Na guerra, tinha tirado duas vidas. Berloela disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Que Rega». Rilil acreditou, e o deus mudou de nome. Peon, que guiava Peil, não resistiu à fome.
+
+### Ano 249
+
+Orulan, que falava pela Sombra em Orem, morreu de velhice aos 57 anos. Desde a morte de Kadara, nunca mais tinha rezado. Em Peil, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Não restou ninguém em Peil. Suon já não cabia na praia. Loik, o devoto, levou doze pessoas para o morro e fundou Ibon. Rilrilan passou a falar pela Estrela de Cauda em Ibon. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 250
 
-A fome no inverno durou 11 dias em Beran e levou uma vida. Nos anos 241 a 250 houve sete fomes e quinze preces que pareceram atendidas; nasceram 119 crianças e morreram 64 pessoas. No fim do ano 250, 252 pessoas viviam no mundo: Rilem (81), Rilil (103), Kaur (11) e Beran (57).
+Na primavera do ano 250, para Ibon, as pedras de Peil só podiam ter sido postas por gigantes. Nos anos 241 a 250 houve dezesseis fomes, quatro batalhas, 33 preces que pareceram atendidas e catorze preces sem resposta; nasceram 145 crianças e morreram 155 pessoas. No fim do ano 250, 230 pessoas viviam no mundo: Rilil (102), Suon (31), Orem (83) e Ibon (14).
 
 ### Ano 251
 
-Morreu Susuon, o desconfiado, aos 59 anos. Sem lugar e sem comida, Berela e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A doença entrou em Rilil e matou cinco pessoas.
+Morreu Ororan, que guiava Suon, aos 59 anos. Loik, que guiava Ibon, teve um filho: Ton. Berloela tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças ao Que Rega. O deus não tinha feito nada. Nas tabuletas de Rilil, ficou escrito que foi o Que Rega.
 
 ### Ano 252
 
-A seca voltou, como no ano 236: 26 dias sem chuva, até que o céu se abriu.
+Orem passou fome no inverno por 9 dias, e quatro pessoas morreram.
 
 ### Ano 253
 
-Na primavera, morreu Waon, que falava pelo Que Seca em Kaur, aos 70 anos. Houve luta na praia: Beran atacou Kaur. Kaur foi derrotado e perdeu o que tinha guardado. Kikae e Zerilem morreram na luta. Desde então, Beran chama a praia de Praia da Vitória. Rilil passou fome por causa da seca por 9 dias, e treze pessoas morreram. Rilem passou fome por causa da seca por 11 dias, e quatro pessoas morreram.
+Enoror passou a guiar Orem, mas Enela não aceitou e guardou rancor. Em Orem, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos.
 
-*O ano 254 foi calmo.*
+### Ano 254
+
+Na primavera, Kaberor, de Rilil, tomou por esposa Nitona, de Ibon, e os dois povos passaram a se visitar. Sukaon rezou por Rilsuik até a voz acabar. Rilsuik morreu mesmo assim, e Sukaon nunca mais rezou.
 
 ### Ano 255
 
-Em Beran, Niel pediu: «Senhor das Lanças, dá-nos o que comer.» A fome passou, e Beran viu nisso obra do Senhor das Lanças. O deus nada fez: o crédito era de graça. Nas tabuletas de Beran, ficou escrito que foi o Senhor das Lanças.
+Na primavera do ano 255, Berloela, a engenhosa, morreu de repente, aos 37 anos. Morreu Demzera, a generosa, aos 61 anos. Em Ibon, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
 
 ### Ano 256
 
-Na primavera do ano 256, Orsuan, que guiava Kaur, morreu de velhice aos 55 anos.
+Na primavera, sem lugar e sem comida, Dakaim e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Rilil, com cinco mortos. Suon passou fome no inverno por 14 dias, e nove pessoas morreram. A seca voltou, como no ano 245: 19 dias sem chuva, até que o céu se abriu.
 
-### Ano 257
-
-Lokana, a ambiciosa, morreu dormindo, aos 51 anos.
+*O ano 257 passou sem nada que a crônica precise guardar.*
 
 ### Ano 258
 
-No verão, Beran passou a receber bem os de fora: um casamento com outro povo virava festa.
+Na primavera, os de Orem caíram sobre Ibon no morro. Ibon resistiu, e Orem voltou de mãos vazias. Na luta morreu Ze. Ulim rezou por Rilim até a voz acabar. Rilim morreu mesmo assim, e Ulim nunca mais rezou. No outono, em Orem, cansados do silêncio, acusaram Nina de mentir em nome da Sombra. Nina perdeu o lugar junto ao altar. O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 259
 
-Morreu Niel, que guiava Beran, aos 55 anos. Kasuor rezou por Rilon até a voz acabar. Rilon morreu mesmo assim, e Kasuor nunca mais rezou.
+Na primavera do ano 259, Rilrilan, que falava pela Estrela de Cauda em Ibon, morreu dormindo, aos 45 anos. Berdema deu à luz gêmeos, Suna e Lolona. Uns viram bênção; outros, mau sinal.
 
 ### Ano 260
 
-Na primavera do ano 260, morreu Lokaon, que guiava Rilil, aos 55 anos. Orton não esperou a vez: tomou o comando de Rilil à força, e o conselho dos velhos se calou. Uma febre correu Beran e levou duas vidas. No inverno, Demzeor implorou pela filha. Sulona morreu, e daquele dia em diante Demzeor cuspia no chão quando falavam da Voz do Céu. Nos anos 251 a 260 houve duas secas, dezessete fomes, 24 preces que pareceram atendidas e quatro preces sem resposta; nasceram 104 crianças e morreram 98 pessoas. No fim do ano 260, 252 pessoas viviam no mundo: Rilem (78), Rilil (97), Kaur (26) e Beran (51).
+No verão do ano 260, começou a Terceira Guerra da Fome: Orem, com fome, foi buscar à força a comida de Ibon. A Terceira Guerra da Fome seguiu: Orem contra Ibon, no morro. Ibon foi derrotado e perdeu o que tinha guardado. Sunion, Nior e Oria morreram na luta. Desde então, Ibon chama o morro de Morro do Luto. Depois de tantos mortos, Orem e Ibon se encontraram no morro e juraram paz. A Terceira Guerra da Fome acabou em trégua, depois de dois anos, duas batalhas e quatro mortos. Nos anos 251 a 260 houve quatro secas, catorze fomes, duas batalhas, 26 preces que pareceram atendidas e seis preces sem resposta; nasceram 111 crianças e morreram 121 pessoas. No fim do ano 260, 219 pessoas viviam no mundo: Rilil (96), Suon (34), Orem (72) e Ibon (17).
 
 ### Ano 261
 
-Na primavera, a febre levou Loe, a pacífica. Nunca perdoou o deus pela morte de Berzeon. Uma febre correu Rilil e levou cinco vidas. Houve luta na praia: Rilil atacou Kaur. Rilil venceu e levou a comida guardada. Na luta morreram Ka e Lor. Os de Beran caíram sobre Kaur na praia. Kaur resistiu, e Beran voltou de mãos vazias. Na luta morreu Sael.
+Morreu Kan, que falava pelo Que Rega em Rilil, aos 71 anos. Em Rilil, Lokaon pediu: «Que Rega, dá-nos o que comer.» A comida voltou, e Rilil deu graças ao Que Rega. A crônica sabe que foi acaso. Os escribas de Rilil registraram o milagre.
 
 ### Ano 262
 
-Na primavera, começou a Guerra da Praia: o rancor entre Beran e Kaur virou guerra. A Guerra da Praia seguiu: Beran contra Kaur, na praia. Beran venceu e levou a comida guardada. Na luta morreram Lolor, Orkior e Nie. No verão, Beran passou a receber bem os de fora: um casamento com outro povo virava festa.
+Kaorela, que falava pela Estrela de Cauda em Ibon, morreu de repente, aos 29 anos.
 
 *No ano 263, nada de notável aconteceu.*
 
 ### Ano 264
 
-Na primavera, Suya, que falava pelo Senhor das Lanças em Beran, morreu de velhice aos 69 anos. Kasuna tinha rezado: «Senhor das Lanças, dá-nos o que comer.» A fome passou, e Beran viu nisso obra do Senhor das Lanças. A crônica sabe que foi acaso. Os escribas de Beran registraram o milagre. Um inverno duro matou quatro pessoas de frio. Kazena deu à luz gêmeos, Lor e Looran. Uns viram bênção; outros, mau sinal. Depois da febre, Kaur passou a queimar os seus mortos, para que a doença não voltasse.
+Morreu Suloan, que guiava Rilil, aos 59 anos. Sutona partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Oran, que guiava Rilil, morreu de fome. Sudan, o corajoso, não resistiu à fome. Desde a morte de Daberan, nunca mais tinha rezado.
 
 ### Ano 265
 
-Tamela, que guiava Rilem, morreu de velhice aos 46 anos. Em nome do Senhor das Lanças, Nuon proibiu casamentos e trocas com Kaur. Era vontade de Nuon, não do deus. Rilem escolheu Nikaor para guiar o grupo. Berrila queria o lugar e nunca perdoou. A Guerra da Praia esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. A guerra entre Beran e Kaur continuou: Beran voltou a atacar na praia em nome do Senhor das Lanças. Beran venceu e levou a comida guardada. Na luta morreu Waem.
+Na primavera do ano 265, sem lugar e sem comida, Rilrilik e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Rilil, com 22 mortos. Foram 9 dias de fome no inverno em Orem, com dezesseis mortos. De novo a chuva sumiu, como no ano 256. Foram 20 dias de seca.
 
 ### Ano 266
 
-Na primavera do ano 266, em Rilem, Kasue começou a pregar que o deus não era «a Luz Que Avisa». Era «o Que Seca». Em poucos anos, todos rezavam assim. Rilem passou fome no inverno por 9 dias, e onze pessoas morreram. No verão, começou a Segunda Guerra Santa: em nome do Senhor das Lanças, Beran pegou em lanças contra Kaur. Beran venceu Kaur e levou os cinco sobreviventes para viver sob seu mando. Kaur deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Segunda Guerra Santa terminou com a conquista: um ano, duas batalhas e três mortos.
+Loik, de Ibon, tomou por esposa Ordemela, de Orem, e os dois povos passaram a se visitar. No verão, Zekaor rezou por Oran até a voz acabar. Oran morreu mesmo assim, e Zekaor nunca mais rezou.
 
 ### Ano 267
 
-Na primavera do ano 267, Saela pregou em Beran que o deus não era «o Senhor das Lanças», mas «a Mão Fechada». O templo chamou aquilo de heresia, e Saela saiu com os que a seguiam. Saela não aceitou um povo sem deus. Saiu de Beran com 23 fiéis e fundou Toan na praia, onde rezam à Mão Fechada. Kasuna passou a falar pela Mão Fechada em Toan. Era a primeira a rezar e a última a duvidar. Toan encontrou as ruínas de Demur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, em Toan nasceu a primeira criança: Tosut, filho de Zeya e Suor.
+Rilloia deu à luz gêmeos, Kaia e Ninior. Uns viram bênção; outros, mau sinal.
 
 ### Ano 268
 
-Um inverno duro matou três pessoas de frio.
+Na primavera do ano 268, Beron disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Que Nega». Suon acreditou, e o deus mudou de nome. Com Loik à frente, a nova geração de Ibon abandonou a festa da chuva, costume herdado dos avós. No outono, uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito.
 
 ### Ano 269
 
-Torilon implorou pelo filho. Rilkan morreu, e daquele dia em diante Torilon cuspia no chão quando falavam da Voz do Céu. Kaem, que falava pelo Que Seca em Rilem, não resistiu à fome.
+Rila, que guiava Suon, morreu de velhice aos 60 anos. No verão, Zekaor implorou pela filha. Toora morreu, e daquele dia em diante Zekaor cuspia no chão quando falavam do Que Rega.
 
 ### Ano 270
 
-Tama implorou pela filha. Totona morreu, e daquele dia em diante Tama cuspia no chão quando falavam do Que Seca. Nos anos 261 a 270 houve dezessete fomes, cinco batalhas, 40 preces que pareceram atendidas e doze preces sem resposta; nasceram 144 crianças e morreram 168 pessoas. No fim do ano 270, 232 pessoas viviam no mundo: Rilem (74), Rilil (104), Beran (25) e Toan (29).
+Na primavera do ano 270, sem lugar e sem comida, Demzeor e os seus atravessaram a borda do mundo. Ninguém soube deles. Rilrila tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Rilil viu nisso obra do Que Rega. A crônica sabe que foi acaso. Nas tabuletas de Rilil, ficou escrito que foi o Que Rega. Uma tosse que não passava matou sete pessoas em Orem. Nos anos 261 a 270 houve três secas, dezessete fomes, 32 preces que pareceram atendidas e três preces sem resposta; nasceram 111 crianças e morreram 121 pessoas. No fim do ano 270, 197 pessoas viviam no mundo: Rilil (80), Suon (29), Orem (70) e Ibon (18).
 
 ### Ano 271
 
-Na primavera, Nuon, que guiava Beran, morreu de velhice aos 51 anos. Foi quem proibiu, em nome do deus, o trato com Kaur.
+Rilrila anunciou que o Que Rega proibia qualquer trato com Ibon. O deus nunca disse isso, mas Rilil obedeceu. Rilil atacou Ibon no morro em nome do Que Rega. Rilil venceu e levou a comida guardada. Na luta morreram Lor, Rilik e Nitoan.
 
 ### Ano 272
 
-Beran se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. A fome no inverno durou 9 dias em Rilil e levou 21 vidas.
+No verão, começou a Guerra Santa do Morro: em nome do Que Rega, Rilil pegou em lanças contra Ibon. Na Guerra Santa do Morro, Rilil atacou Ibon no morro em nome do Que Rega. Rilil venceu e levou a comida guardada. Na luta morreram Kaik, Kanian e Loik. Rilrilia passou a guiar Ibon, mas Nion não aceitou e guardou rancor.
 
 ### Ano 273
 
-Na primavera do ano 273, Riltoem, de Rilem, tomou por esposa Suzena, de Toan, e os dois povos passaram a se visitar. Em Rilil, Torilon pediu: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Rilil deu graças à Voz do Céu. A crônica sabe que foi acaso. Nas tabuletas de Rilil, ficou escrito que foi a Voz do Céu. Uma tosse que não passava matou três pessoas em Rilem. De novo a chuva sumiu, como no ano 252. Foram 22 dias de seca.
+No outono, Nion anunciou que a Estrela de Cauda proibia qualquer trato com Rilil. O deus nunca disse isso, mas Ibon obedeceu. Na Guerra Santa do Morro, Ibon atacou Rilil no lago. Rilil resistiu, e Ibon voltou de mãos vazias. Enia, Nion, Ton e Rilrila morreram na luta. Ibon não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Ibon e Rilil, cansados de enterrar os seus, fizeram as pazes no lago. Depois de dois anos, quatro batalhas e onze mortos, a Guerra Santa do Morro terminou em paz. Rilil saiu dela mais forte.
 
 ### Ano 274
 
-Com Saela à frente, a nova geração de Toan abandonou o costume de queimar os mortos, costume herdado dos avós. Rilem atacou Beran no morro. Beran expulsou os atacantes. Na luta morreram Demze e Zedemor. Para Rilem, o morro virou Morro do Luto. Rilem e Beran fizeram as pazes no morro, antes que a briga crescesse. Em Toan, Saela pediu: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Toan deu graças à Mão Fechada. O deus não tinha feito nada.
+Niela morreu de velhice aos 51 anos. Na guerra, tinha tirado duas vidas.
 
 ### Ano 275
 
-Na primavera, Orton, que guiava Rilil, morreu de velhice aos 60 anos. Warilon, de Beran, tomou por esposa Zenuya, de Toan, e os dois povos passaram a se visitar. Rilil escolheu Bere para guiar o grupo. Tosuna queria o lugar e nunca perdoou. Em Rilil, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos.
+Na primavera, Orsuor, que falava pela Sombra em Orem, morreu dormindo, aos 57 anos.
 
-*Entre os anos 276 e 278, nada mudou o rumo do mundo.*
+### Ano 276
+
+Foram 9 dias de fome no inverno em Orem, com três mortos. O inverno foi de gelo: quatro pessoas morreram de frio.
+
+*O ano 277 passou sem nada que a crônica precise guardar.*
+
+### Ano 278
+
+Na primavera do ano 278, Ora morreu de repente, aos 31 anos. Na guerra, tinha tirado duas vidas. No inverno, Beror implorou pelo filho. Kademan morreu, e daquele dia em diante Beror cuspia no chão quando falavam do Que Rega.
 
 ### Ano 279
 
-Na primavera do ano 279, Rilil atacou Beran no morro em nome da Voz do Céu. Rilil venceu e levou a comida guardada. Na luta morreram Satoya, Kaya, Zenuya e Bera. Depois da derrota, os jovens de Beran passaram a treinar com lanças. Rilil e Beran, cansados de enterrar os seus, fizeram as pazes no morro.
+Na primavera, Demdan, que guiava Orem, morreu de velhice aos 62 anos. Kaberon partiu com três pessoas para além da borda do mundo. Nunca voltaram. A terra tremeu. Caíram 22 cabanas. Deman, Kazean, Rilloe, Tor, Orkan, Demor, Tona, Kanik, Berenan, Kae e Entoik morreram sob os escombros. Em Suon, Nian pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Suon viu nisso obra do Que Nega. O deus nada fez: o crédito era de graça. Sukaon rezou por Ora até a voz acabar. Ora morreu mesmo assim, e Sukaon nunca mais rezou.
 
 ### Ano 280
 
-Morreu Kursuela, filha pequena de Tozena. Nos anos 271 a 280 houve cinco secas, treze fomes, duas batalhas, 24 preces que pareceram atendidas e cinco preces sem resposta; nasceram 138 crianças e morreram 117 pessoas. No fim do ano 280, 253 pessoas viviam no mundo: Rilem (71), Rilil (98), Beran (53) e Toan (31).
+Na primavera, em Rilil, Ibali começou a pregar que o deus não era «o Que Rega». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. Nos anos 271 a 280 houve seis fomes, quatro batalhas, 21 preces que pareceram atendidas e sete preces sem resposta; nasceram 94 crianças e morreram 83 pessoas. No fim do ano 280, 205 pessoas viviam no mundo: Rilil (94), Suon (32), Orem (68) e Ibon (11).
 
 ### Ano 281
 
-Niela, a corajosa, morreu dormindo, aos 60 anos. Torilon, o engenhoso, morreu dormindo, aos 61 anos. Nunca perdoou o deus pela morte de Rilkan.
+Na primavera do ano 281, Orrilik, que guiava Suon, morreu de velhice aos 56 anos.
 
 ### Ano 282
 
-Na primavera, em Toan, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam.
+Na primavera do ano 282, com Rilrilia à frente, a nova geração de Ibon abandonou o medo das tempestades, costume herdado dos avós.
 
 ### Ano 283
 
-Morreu Susuor, que guiava Beran, aos 63 anos. Desde a morte de Berzeon, nunca mais tinha rezado. Ora disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Pai das Pedras». Rilil acreditou, e o deus mudou de nome. Toan já não se preparava para nada: a Mão Fechada sempre dava. Deixaram de poupar água. A febre levou Saela, que fundou Toan e o guiava. Tinha fundado Toan. Desde a febre, Toan não enterra mais ninguém: os mortos vão para o fogo.
+Morreu Kakaim, que guiava Orem, aos 65 anos.
 
-*No ano 284, nada de notável aconteceu.*
+### Ano 284
+
+Na primavera, Berim, que falava pela Sombra em Orem, morreu dormindo, aos 71 anos.
 
 ### Ano 285
 
-Na primavera, depois de anos sob um só, Beran sentou-se em roda: dali em diante, decidia-se juntos. Em Toan, gritaram que o templo mentia em nome da Mão Fechada. Os sacerdotes foram tirados do poder.
+A doença entrou em Rilil e matou quatro pessoas.
 
 ### Ano 286
 
-A seca voltou, como no ano 273: 25 dias sem chuva, até que o céu se abriu.
+Surilon morreu de frio. Na guerra, tinha tirado duas vidas. Foram 9 dias de fome no inverno em Rilil, com dezessete mortos.
 
 ### Ano 287
 
-Rilil passou fome no inverno por 9 dias, e duas pessoas morreram. Lokae tinha rezado: «Pai das Pedras, dá-nos o que comer.» A comida voltou, e Rilil deu graças ao Pai das Pedras. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Rilil, ficou escrito que foi o Pai das Pedras. A fome no inverno durou 11 dias em Rilem e levou cinco vidas. Dembere implorou pelo filho. Susaon morreu, e daquele dia em diante Dembere cuspia no chão quando falavam do Senhor das Lanças. A doença entrou em Beran e matou quatro pessoas.
+A seca voltou, como no ano 265: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 288
 
-Tona, que guiava Rilil, morreu de velhice aos 50 anos.
+Na primavera, Zesuan partiu com três pessoas para além da borda do mundo. Nunca voltaram. Foram 8 dias de fome no inverno em Rilil, com dois mortos. Em Rilil, Lokaon pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rilil deu graças à Voz do Céu. O deus nada fez: o crédito era de graça. Os escribas de Rilil registraram o milagre. Kaim implorou pelo filho. Ulan morreu, e daquele dia em diante Kaim cuspia no chão quando falavam da Sombra. A febre levou Kaim, que guiava Orem. Nunca perdoou o deus pela morte de Ulan.
 
 *No ano 289, nada de notável aconteceu.*
 
 ### Ano 290
 
-Na primavera, Rildemela morreu dormindo, aos 51 anos. Desde a morte de Demem, nunca mais tinha rezado. Nos anos 281 a 290 houve três secas, oito fomes, dezoito preces que pareceram atendidas e três preces sem resposta; nasceram 125 crianças e morreram 134 pessoas. No fim do ano 290, 244 pessoas viviam no mundo: Rilem (69), Rilil (99), Beran (42) e Toan (34).
+Nos anos 281 a 290 houve três secas, oito fomes e 24 preces que pareceram atendidas; nasceram 137 crianças e morreram 130 pessoas. No fim do ano 290, 208 pessoas viviam no mundo: Rilil (91), Suon (29), Orem (70) e Ibon (18).
 
-### Ano 291
-
-Zean, que guiava Rilil, morreu dormindo, aos 53 anos. Em Toan, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Foram 9 dias de fome no inverno em Toan, com três mortos. Desde então, Toan chama a praia de Praia da Fome. Subera rezou por Niem até a voz acabar. Niem morreu mesmo assim, e Subera nunca mais rezou.
-
-### Ano 292
-
-Na primavera do ano 292, Suzena deu à luz gêmeos, Suberela e Demtamem. Uns viram bênção; outros, mau sinal. No outono, um raio caiu no lago durante a tempestade e matou Katon. Em Rilil, disseram que era castigo. Rilil passou a acreditar que o Pai das Pedras castiga quem duvida, e que Katon tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Rilil sai de casa. Lembram de Katon.
-
-### Ano 293
-
-Em Beran, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No inverno, Tosuor, o curioso, morreu de fome.
+*Entre os anos 291 e 293, nada mudou o rumo do mundo.*
 
 ### Ano 294
 
-Na primavera do ano 294, Zenue partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Nut partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+Tonian, de Suon, tomou por esposa Toibia, de Ibon, e os dois povos passaram a se visitar. Uma febre correu Orem e levou três vidas.
 
 ### Ano 295
 
-Na primavera do ano 295, morreu Zerilela, que guiava Rilem, aos 66 anos.
+Morreu Demzeon, que guiava Rilil, aos 61 anos. Rilor partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Rilil escolheu Rile para guiar o grupo. Berdemon queria o lugar e nunca perdoou. Kara deu à luz gêmeos, Kadaor e Enor. Uns viram bênção; outros, mau sinal.
 
 *O ano 296 passou sem nada que a crônica precise guardar.*
 
 ### Ano 297
 
-Numa tempestade sobre a praia, um raio matou Kakaem. Ninguém em Toan teve dúvida: era castigo. Desde a morte de Kakaem, ninguém em Toan desce à praia em dia de tempestade. Tooran implorou pela filha. Bere morreu, e daquele dia em diante Tooran cuspia no chão quando falavam do Pai das Pedras. Uma tosse que não passava matou três pessoas em Rilil.
+Na primavera do ano 297, Rilulan, o desconfiado, morreu de velhice aos 59 anos. Lokaon tinha rezado: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Rilil deu graças à Voz do Céu. O deus não tinha feito nada. Nas tabuletas de Rilil, ficou escrito que foi a Voz do Céu. Beron, que guiava Suon, não resistiu à fome. No inverno, Tonian partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Depois da seca, Rilil jurou nunca desperdiçar água.
 
 ### Ano 298
 
-Em Beran, Saem começou a pregar que o deus não era «o Senhor das Lanças». Era «o Que Nega». Em poucos anos, todos rezavam assim. Em Rilil, Lokae pediu: «Pai das Pedras, dá-nos o que comer.» A comida voltou, e Rilil deu graças ao Pai das Pedras. A crônica sabe que foi acaso. Nas tabuletas de Rilil, ficou escrito que foi o Pai das Pedras.
+Em Orem, Demim começou a pregar que o deus não era «a Sombra». Era «o Pai das Pedras». Em poucos anos, todos rezavam assim. Houve luta no morro: Rilil atacou Ibon em nome da Voz do Céu. Ibon foi derrotado e perdeu o que tinha guardado. Iban morreu na luta. Rilil passou fome por causa da seca por 9 dias, e sete pessoas morreram. O frio levou Ulsuor, que guiava Orem. No inverno, em nome da Voz do Céu, Lokaon proibiu casamentos e trocas com Ibon. Era vontade de Lokaon, não do deus.
 
 ### Ano 299
 
-Na primavera, em Rilem, Bernior começou a pregar que o deus não era «o Que Seca». Era «a Terra Brava». Em poucos anos, todos rezavam assim. Sem lugar e sem comida, Riltoem e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Oron, que guiava Suon, morreu de repente, aos 42 anos. No inverno, houve luta no morro: Suon atacou Ibon. Ibon resistiu, e Suon voltou de mãos vazias. Rildaela, Niberan e Ibon morreram na luta.
 
 ### Ano 300
 
-Nos anos 291 a 300 houve duas secas, dezesseis fomes, 27 preces que pareceram atendidas e três preces sem resposta; nasceram 140 crianças e morreram 99 pessoas. No fim do ano 300, 269 pessoas viviam no mundo: Rilem (77), Rilil (108), Beran (48) e Toan (36).
+Na primavera, numa tempestade sobre o morro, um raio matou Lonion. Lonion era dos que mais rezavam, e Ibon ficou sem entender. O arquivo salvou Suon: Tosuan reaprendeu nas tabuletas o que os mortos sabiam. Os devotos de Ibon não viram castigo: para eles, a Estrela de Cauda chamou Lonion para perto. Nasceu ali a lembrança de Lonion como santo. Desde a morte de Lonion, ninguém em Ibon sobe o morro em dia de tempestade. Nos anos 291 a 300 houve duas secas, treze fomes, duas batalhas, 22 preces que pareceram atendidas e quatro preces sem resposta; nasceram 133 crianças e morreram 146 pessoas. No fim do ano 300, 193 pessoas viviam no mundo: Rilil (94), Suon (5), Orem (70) e Ibon (24).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Rilem** vive na floresta, com 77 pessoas, com canais e moinhos; nasceu de uma briga em Vies no ano 43; chama o deus de «a Terra Brava»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 112); faz a festa da chuva (desde o ano 115); queima os mortos (desde o ano 158); não desperdiça uma gota d'água (desde o ano 190).
-- **Rilil** vive no lago, com 108 pessoas, com canais e moinhos; nasceu de uma briga em Rilem no ano 75; chama o deus de «o Pai das Pedras»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 84); não sai de casa em dia de tempestade (desde o ano 292).
-- **Beran** vive no morro, com 48 pessoas, com canais e moinhos; nasceu de uma migração em Rilem no ano 175; chama o deus de «o Que Nega»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 187); queima os mortos (desde o ano 224); não desperdiça uma gota d'água (desde o ano 236); treina os jovens com lanças (desde o ano 279).
-- **Toan** vive na praia, com 36 pessoas, com canais e moinhos; nasceu de um cisma em Beran no ano 267; chama o deus de «a Mão Fechada»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 283); não sai de casa em dia de tempestade (desde o ano 297).
+- **Rilil** vive no lago, com 94 pessoas, com canais e moinhos; nasceu de uma briga em Rilem no ano 75; chama o deus de «a Voz do Céu»; costumes: guarda tanta comida para o inverno (desde o ano 54); queima os mortos (desde o ano 84); treina os jovens com lanças (desde o ano 122); não sai de casa em dia de tempestade (desde o ano 178); não desperdiça uma gota d'água (desde o ano 297).
+- **Suon** vive na praia, com 5 pessoas, com canais e moinhos; nasceu de uma migração em Rilil no ano 133; chama o deus de «o Que Nega»; costumes: guarda tanta comida para o inverno (desde o ano 54); faz a festa da chuva (desde o ano 155); queima os mortos (desde o ano 209); não sai de casa em dia de tempestade (desde o ano 216); treina os jovens com lanças (desde o ano 229); não desperdiça uma gota d'água (desde o ano 297).
+- **Orem** vive na floresta, com 70 pessoas, com canais e moinhos; nasceu de uma migração em Rilil no ano 187; chama o deus de «o Pai das Pedras»; costumes: guarda tanta comida para o inverno (desde o ano 54); faz a festa da chuva (desde o ano 190); treina os jovens com lanças (desde o ano 228); queima os mortos (desde o ano 236).
+- **Ibon** vive no morro, com 24 pessoas, com canais e moinhos; nasceu de uma migração em Suon no ano 249; chama o deus de «a Estrela de Cauda»; costumes: guarda tanta comida para o inverno (desde o ano 54); treina os jovens com lanças (desde o ano 273); não sai de casa em dia de tempestade (desde o ano 300).
 
-Povos que deixaram de existir: Vies, Rilur, Demur, Deman e Kaur.
+Povos que deixaram de existir: Vies, Rilem, Rilur, Lour, Zear e Peil.
 
-Lugares com nome: Praia da Fome (praia, para Vies), Praia da Fome (praia, para Rilur), Praia da Vitória (praia, para Rilil), Praia da Fome (praia, para Demur), Praia do Raio (praia, para Kaur), Praia do Luto (praia, para Deman), Praia da Vitória (praia, para Beran), Praia da Fome (praia, para Toan), Lago da Vitória (lago, para Rilil), Lago do Luto (lago, para Demur), Lago do Luto (lago, para Rilem), Floresta da Fome (floresta, para Rilem), Floresta da Vitória (floresta, para Rilil), Floresta da Vitória (floresta, para Demur), Morro do Raio (morro, para Deman), Morro da Vitória (morro, para Kaur), Morro da Vitória (morro, para Beran), Morro da Vitória (morro, para Rilil) e Morro do Luto (morro, para Rilem).
+Lugares com nome: Praia da Fome (praia, para Vies), Praia da Vitória (praia, para Lour), Praia do Luto (praia, para Suon), Praia da Vitória (praia, para Rilil), Praia da Vitória (praia, para Orem), Lago da Vitória (lago, para Rilil), Lago do Luto (lago, para Rilur), Lago do Luto (lago, para Lour), Lago do Luto (lago, para Zear), Lago do Luto (lago, para Ibon), Floresta da Fome (floresta, para Rilem), Floresta da Vitória (floresta, para Lour), Floresta da Vitória (floresta, para Rilil), Floresta do Luto (floresta, para Zear), Floresta da Vitória (floresta, para Suon), Floresta da Fome (floresta, para Orem), Morro da Fome (morro, para Lour), Morro da Vitória (morro, para Rilil), Morro da Vitória (morro, para Suon), Morro da Vitória (morro, para Peil), Morro do Luto (morro, para Orem) e Morro do Luto (morro, para Ibon).
 
-Em 300 anos nasceram 2527 pessoas e morreram 2213.
+Em 300 anos nasceram 2294 pessoas e morreram 2070.

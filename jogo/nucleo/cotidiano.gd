@@ -29,9 +29,13 @@ static func centro_da_zona(chave: String) -> float:
 	return (FAIXAS[chave][0] + FAIXAS[chave][1]) * 0.5
 
 
-## Número em [0, 1) fixo para cada combinação de inteiros.
+## Número em [0, 1) fixo para cada combinação de inteiros. Mistura de inteiros (sem criar
+## arrays), porque a rotina chama isto dezenas de milhares de vezes por dia de jogo.
 static func ruido(a: int, b: int, c: int) -> float:
-	return float(posmod(hash([a, b, c]), 10007)) / 10007.0
+	var h: int = (a * 73856093) ^ (b * 19349663) ^ (c * 83492791)
+	h = (h ^ (h >> 13)) * 1274126177
+	h = h ^ (h >> 16)
+	return float(posmod(h, 10007)) / 10007.0
 
 
 ## Faixa de x do acampamento de um grupo: a zona dividida entre os grupos que vivem nela.

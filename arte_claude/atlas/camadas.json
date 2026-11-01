@@ -1,0 +1,261 @@
+{
+ "nota": "céu: repita a faixa 4x160 na horizontal e ponha os detalhes em (detalhes_x, detalhes_y); demais: desenhe o recorte em (x, y) da área de 480x160",
+ "bytes_antes": 8908800,
+ "bytes_depois": 2350500,
+ "camadas": {
+  "ceu_dia": {
+   "faixa": "ceu_dia_faixa.png",
+   "detalhes": "ceu_dia_detalhes.png",
+   "detalhes_x": 36,
+   "detalhes_y": 11,
+   "bytes_antes": 307200,
+   "bytes_depois": 110848
+  },
+  "ceu_eclipse": {
+   "faixa": "ceu_eclipse_faixa.png",
+   "detalhes": "ceu_eclipse_detalhes.png",
+   "detalhes_x": 7,
+   "detalhes_y": 1,
+   "bytes_antes": 307200,
+   "bytes_depois": 127036
+  },
+  "ceu_entardecer": {
+   "faixa": "ceu_entardecer_faixa.png",
+   "detalhes": "ceu_entardecer_detalhes.png",
+   "detalhes_x": 31,
+   "detalhes_y": 11,
+   "bytes_antes": 307200,
+   "bytes_depois": 150136
+  },
+  "ceu_noite": {
+   "faixa": "ceu_noite_faixa.png",
+   "detalhes": "ceu_noite_detalhes.png",
+   "detalhes_x": 16,
+   "detalhes_y": 0,
+   "bytes_antes": 307200,
+   "bytes_depois": 178880
+  },
+  "ceu_seca": {
+   "faixa": "ceu_seca_faixa.png",
+   "detalhes": "ceu_seca_detalhes.png",
+   "detalhes_x": 56,
+   "detalhes_y": 12,
+   "bytes_antes": 307200,
+   "bytes_depois": 5924
+  },
+  "mata_distante_dia": {
+   "arquivo": "mata_distante_dia.png",
+   "x": 108,
+   "y": 105,
+   "w": 372,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25296
+  },
+  "mata_distante_entardecer": {
+   "arquivo": "mata_distante_entardecer.png",
+   "x": 108,
+   "y": 105,
+   "w": 372,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25296
+  },
+  "mata_distante_noite": {
+   "arquivo": "mata_distante_noite.png",
+   "x": 108,
+   "y": 105,
+   "w": 372,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25296
+  },
+  "montanhas_longe_dia": {
+   "arquivo": "montanhas_longe_dia.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_longe_entardecer": {
+   "arquivo": "montanhas_longe_entardecer.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_longe_noite": {
+   "arquivo": "montanhas_longe_noite.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_perto_dia": {
+   "arquivo": "montanhas_perto_dia.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  },
+  "montanhas_perto_entardecer": {
+   "arquivo": "montanhas_perto_entardecer.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  },
+  "montanhas_perto_noite": {
+   "arquivo": "montanhas_perto_noite.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  },
+  "reflexo_dia": {
+   "arquivo": "reflexo_dia.png",
+   "x": 0,
+   "y": 122,
+   "w": 82,
+   "h": 26,
+   "bytes_antes": 307200,
+   "bytes_depois": 8528
+  },
+  "reflexo_entardecer": {
+   "arquivo": "reflexo_entardecer.png",
+   "x": 0,
+   "y": 122,
+   "w": 98,
+   "h": 26,
+   "bytes_antes": 307200,
+   "bytes_depois": 10192
+  },
+  "reflexo_noite": {
+   "arquivo": "reflexo_noite.png",
+   "x": 1,
+   "y": 122,
+   "w": 121,
+   "h": 7,
+   "bytes_antes": 307200,
+   "bytes_depois": 3388
+  },
+  "mata_distante_dia_outono": {
+   "arquivo": "mata_distante_dia_outono.png",
+   "x": 112,
+   "y": 105,
+   "w": 368,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25024
+  },
+  "ceu_dia_inverno": {
+   "faixa": "ceu_dia_inverno_faixa.png",
+   "detalhes": "ceu_dia_inverno_detalhes.png",
+   "detalhes_x": 36,
+   "detalhes_y": 11,
+   "bytes_antes": 307200,
+   "bytes_depois": 111104
+  },
+  "ceu_entardecer_inverno": {
+   "faixa": "ceu_entardecer_inverno_faixa.png",
+   "detalhes": "ceu_entardecer_inverno_detalhes.png",
+   "detalhes_x": 36,
+   "detalhes_y": 11,
+   "bytes_antes": 307200,
+   "bytes_depois": 155200
+  },
+  "mata_distante_dia_inverno": {
+   "arquivo": "mata_distante_dia_inverno.png",
+   "x": 112,
+   "y": 105,
+   "w": 368,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25024
+  },
+  "mata_distante_entardecer_inverno": {
+   "arquivo": "mata_distante_entardecer_inverno.png",
+   "x": 112,
+   "y": 105,
+   "w": 368,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25024
+  },
+  "mata_distante_noite_inverno": {
+   "arquivo": "mata_distante_noite_inverno.png",
+   "x": 112,
+   "y": 105,
+   "w": 368,
+   "h": 17,
+   "bytes_antes": 307200,
+   "bytes_depois": 25024
+  },
+  "montanhas_longe_dia_inverno": {
+   "arquivo": "montanhas_longe_dia_inverno.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_longe_entardecer_inverno": {
+   "arquivo": "montanhas_longe_entardecer_inverno.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_longe_noite_inverno": {
+   "arquivo": "montanhas_longe_noite_inverno.png",
+   "x": 0,
+   "y": 49,
+   "w": 480,
+   "h": 73,
+   "bytes_antes": 307200,
+   "bytes_depois": 140160
+  },
+  "montanhas_perto_dia_inverno": {
+   "arquivo": "montanhas_perto_dia_inverno.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  },
+  "montanhas_perto_entardecer_inverno": {
+   "arquivo": "montanhas_perto_entardecer_inverno.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  },
+  "montanhas_perto_noite_inverno": {
+   "arquivo": "montanhas_perto_noite_inverno.png",
+   "x": 0,
+   "y": 81,
+   "w": 480,
+   "h": 41,
+   "bytes_antes": 307200,
+   "bytes_depois": 78720
+  }
+ }
+}

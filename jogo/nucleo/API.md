@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 8, de 01/11/2026 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 9, de 01/11/2026 (desempenho da rotina: respostas guardadas por hora e `adiantar_rotina()`). Antes: versão 8 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -178,7 +178,20 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 
 As crianças correm umas atrás das outras perto do fogo (trechos curtos de `andar` e `parado`). Cada pessoa faz de 2 a 4 atividades por dia, conforme o estágio, o papel, a zona e os traços, e as repete em ciclos até o fim da tarde. Os horários de acordar e dormir variam, e dois dias nunca são iguais (às 10h, só 4% a 6% das pessoas estão no mesmo lugar que no dia anterior). Tudo sai da semente.
 
-**Custo:** a rotina do dia é montada uma vez e guardada, e é refeita quando chega um evento novo ou muda a população. Uma consulta de `pessoas_visiveis()` com `cenas_ativas()` custa cerca de 10 ms com 120 pessoas e 25 ms com 290. O ideal é chamar uma vez por hora de jogo e guardar.
+**Custo e cache:**
+- A rotina do dia é montada uma vez: os lugares, as cenas e a vida social no começo do dia, e os planos aos poucos, de madrugada.
+- Ela é refeita se cair uma tempestade ou se aparecer no próprio dia um evento que vira cena (nascimento, casamento, ataque, separação...).
+- `pessoas_visiveis()`, `cenas_ativas()`, `construcoes()` e `preces_abertas()` guardam a resposta da hora: **chamar de novo na mesma hora devolve o mesmo array, sem custo**. Não altere esses arrays. Se precisar guardar algo além da hora, copie, porque as fichas das pessoas são reaproveitadas na hora seguinte.
+
+Medido com o maior mundo das sondagens (cerca de 290 pessoas, estágio 6), a consulta completa (as quatro funções) custa:
+
+| Momento | Custo |
+|---|---|
+| Uma vez por hora, das 5h à meia-noite | ~1,2 ms (pior 1,9 ms) |
+| Uma vez por hora, da meia-noite às 5h | 30 a 45 ms: ali se montam os planos do dia |
+| Repetida na mesma hora | 0,01 ms |
+
+**`adiantar_rotina(n = 4) -> int`** monta até `n` planos que ainda faltam e devolve quantos faltam. A apresentação pode chamar a cada quadro, de madrugada (ou sempre: quando não falta nada, custa quase zero), para espalhar o custo de montar o dia e evitar os picos dessas horas. Cada plano custa cerca de 0,3 ms: com `n = 2`, uma chamada fica em ~0,6 ms, e os 290 planos ficam prontos em ~145 quadros (5 s a 30 quadros por segundo).
 
 ### `cenas_ativas() -> Array[Dictionary]`
 

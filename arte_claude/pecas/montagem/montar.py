@@ -83,7 +83,7 @@ def camada_fundo(nome, hora, estacao):
 def montar(hora, estacao=None):
     pasta_hab = PECAS / "habitantes"
     e = ler_pasta("estagio1", estacao)
-    hab = {f.stem: ler(f) for f in pasta_hab.glob("*_*q.png")}
+    hab = ler_pasta("habitantes", estacao, lambda f: f.stem.endswith("q"))
     c = Cena()
     # 1. céu e fundo (camadas do motor)
     c.camada(camada_fundo("ceu", hora, estacao))

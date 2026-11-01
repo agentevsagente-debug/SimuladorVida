@@ -280,785 +280,799 @@ Começou a Guerra Santa da Floresta: em nome do Senhor do Trovão, Maor pegou em
 
 ### Ano 90
 
-Na primavera, os de Koil caíram sobre Viak na praia em nome do Que Risca o Céu. Viak foi derrotado e perdeu o que tinha guardado. Dolona e Marmaos morreram na luta. Para Koil, a praia virou Praia da Vitória. Foram 6 dias de fome no inverno em Peak, com três mortos. Dokios, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Nos anos 81 a 90 houve três secas, oito fomes, seis batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 147 crianças e morreram 102 pessoas. No fim do ano 90, 174 pessoas viviam no mundo: Koil (72), Peak (61), Viak (9) e Maor (32).
+Morreu Dovik, o medroso, aos 53 anos. Na Guerra Santa da Floresta, Maor atacou Peak na floresta em nome do Senhor do Trovão. Peak foi derrotado e perdeu o que tinha guardado. Kokou e Lotamu morreram na luta. Para Maor, a floresta virou Floresta da Vitória. Depois da derrota, os jovens de Peak passaram a treinar com lanças. A fome no inverno durou 6 dias em Peak e levou três vidas. Nos anos 81 a 90 houve três secas, oito fomes, seis batalhas, 27 preces que pareceram atendidas e dez preces sem resposta; nasceram 147 crianças e morreram 101 pessoas. No fim do ano 90, 175 pessoas viviam no mundo: Koil (72), Peak (55), Viak (16) e Maor (32).
 
-### Ano 91
+*O ano 91 passou sem nada que a crônica precise guardar.*
 
-Na primavera do ano 91, morreu Doe, que guiava Maor, aos 59 anos. Morreu o último que tinha visto o ano 28. Em Maor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Mare passou a guiar Maor, mas Kobuos não aceitou e guardou rancor. No verão, depois da luta, Maor e Peak se encontraram na floresta e juraram paz. A Guerra Santa da Floresta acabou em trégua, depois de três anos, três batalhas e dois mortos. Peak saiu dela mais forte.
+### Ano 92
 
-*O ano 92 foi calmo.*
+Na primavera do ano 92, morreu Doe, que guiava Maor, aos 60 anos. Morreu o último que tinha visto o ano 28. Em Maor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Na Guerra Santa da Floresta, Maor atacou Peak na floresta. Peak expulsou os atacantes. Veis e Komana morreram na luta. Depois da derrota, os jovens de Maor passaram a treinar com lanças. Depois de quatro anos, quatro batalhas e cinco mortos, a Guerra Santa da Floresta terminou em paz. Peak saiu dela mais forte.
 
 ### Ano 93
 
-Depois da seca, Maor jurou nunca desperdiçar água. Kiu, que guiava Koil, morreu de fome.
+Kiu, que guiava Koil, morreu de velhice aos 67 anos. Dolona disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Senhor do Trovão». Viak acreditou, e o deus mudou de nome.
 
 ### Ano 94
 
-Foram 9 dias de fome por causa da seca em Koil, com dezenove mortos. Em Koil, Kiu pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Tamik, que falava pelo Senhor do Trovão em Viak, morreu de velhice aos 58 anos. Viak passou a receber bem os de fora: um casamento com outro povo virava festa. No verão, Pemaela, a generosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
-*No ano 95, nada de notável aconteceu.*
+### Ano 95
+
+Kivion tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Viak viu nisso obra do Senhor do Trovão. O deus não tinha feito nada. Rae partiu com nove pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Loe, que guiava Peak, morreu de fome. Kipeik, que falava pela Mãe da Fartura em Peak, não resistiu à fome.
 
 ### Ano 96
 
-Na primavera do ano 96, Kipeik, que falava pela Mãe da Fartura em Peak, morreu de frio.
+Na primavera do ano 96, Mapeik disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «a Chama de Cima». Peak acreditou, e o deus mudou de nome. Peak passou fome no inverno por 9 dias, e dezoito pessoas morreram.
 
 ### Ano 97
 
-Peon, que guiava Koil, morreu dormindo, aos 54 anos. No inverno, a tempestade trouxe raios para o morro. Um deles acertou Madour. A família de Madour nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Maor sai de casa. Lembram de Madour.
+Peon implorou pela filha. Loviu morreu, e daquele dia em diante Peon cuspia no chão quando falavam do Que Risca o Céu.
 
 ### Ano 98
 
-Tamik, que falava pelo Que Risca o Céu em Viak, morreu dormindo, aos 62 anos.
+Um raio caiu no morro durante a tempestade e matou Loloe. Ninguém em Maor teve dúvida: era castigo. Para Maor, Loloe foi castigada. Desde então, quem duvida do Senhor do Trovão duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Maor sai de casa. Lembram de Loloe.
 
 ### Ano 99
 
-De novo a chuva sumiu, como no ano 87. Foram 21 dias de seca.
+Morreu Makoe, que falava pelo Que Risca o Céu em Koil, aos 59 anos. Em Maor, Kolour começou a pregar que o deus não era «o Senhor do Trovão». Era «o Que Queima». Em poucos anos, todos rezavam assim. Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Velour, de Koil, tomou por esposa Doela, de Viak, e os dois povos passaram a se visitar. Maor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 100
 
-Foram 9 dias de fome no inverno em Koil, com quatro mortos. Os de Maor caíram sobre Viak na praia em nome do Senhor do Trovão. Maor venceu e levou a comida guardada. A fome por causa da seca durou 24 dias em Peak e levou 29 vidas. No verão, em nome do Senhor do Trovão, Lomaik proibiu casamentos e trocas com Viak. Era vontade de Lomaik, não do deus. Nos anos 91 a 100 houve três secas, doze fomes, duas batalhas, 32 preces que pareceram atendidas e quinze preces sem resposta; nasceram 131 crianças e morreram 168 pessoas. No fim do ano 100, 137 pessoas viviam no mundo: Koil (68), Peak (40), Viak (7) e Maor (22).
+Nos anos 91 a 100 houve duas secas, nove fomes, duas batalhas, 27 preces que pareceram atendidas e cinco preces sem resposta; nasceram 112 crianças e morreram 112 pessoas. No fim do ano 100, 165 pessoas viviam no mundo: Koil (70), Peak (60), Viak (8) e Maor (27).
 
 ### Ano 101
 
-Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Começou a Guerra da Fome: Maor, com fome, foi buscar à força a comida de Viak. Na Guerra da Fome, Maor atacou Viak na praia em nome do Senhor do Trovão. Viak resistiu, e Maor voltou de mãos vazias. Na luta morreram Komana e Kobuos. Depois de um ano, três batalhas e seis mortos, a Guerra da Fome terminou em paz. Os últimos de Viak, Mae, Kure e Peraik, juntaram-se a Peak. Viak deixou de existir.
+Na primavera do ano 101, Pena, que guiava Peak, morreu de velhice aos 58 anos. Lopena passou a guiar Peak, mas Tamkos não aceitou e guardou rancor. Viak passou a receber bem os de fora: um casamento com outro povo virava festa. De novo a chuva sumiu, como no ano 87. Foram 24 dias de seca. O dia em que a chuva voltou virou festa em Peak: todo ano, celebram a chuva que a Chama de Cima mandou.
 
 ### Ano 102
 
-Morreu Makoe, que falava pelo Que Risca o Céu em Koil, aos 62 anos. Kurdoe deu à luz gêmeos, Lodoik e Lolona. Uns viram bênção; outros, mau sinal.
+Na primavera, Loik, o curioso, morreu de velhice aos 61 anos. A fome no inverno durou 9 dias em Koil e levou dez vidas. Peak passou fome por causa da seca por 23 dias, e vinte pessoas morreram. Kopela, a corajosa, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 103
 
-No verão do ano 103, Buar implorou pela filha. Vedoela morreu, e daquele dia em diante Buar cuspia no chão quando falavam do Senhor do Trovão.
+Em Maor, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Em nome da Chama de Cima, Tamtamur proibiu casamentos e trocas com Viak. Era vontade de Tamtamur, não do deus. Em nome da Chama de Cima, Tamtamur proibiu casamentos e trocas com Maor. Era vontade de Tamtamur, não do deus.
 
 ### Ano 104
 
-Na primavera do ano 104, Pena, que guiava Peak, morreu dormindo, aos 61 anos. Don, o ambicioso, cansou de dividir pouca comida. Partiu com dezessete pessoas para a praia e ali fundou Ulur. Diante das ruínas de Viak, Ulur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No verão, a forja de Peak não apagava mais. O metal mudou o trabalho e mudou a guerra. No inverno, Lokiela passou a falar pelo Que Risca o Céu em Ulur. Era a primeira a rezar e a última a duvidar.
+Houve luta no morro: Peak atacou Maor. Peak venceu e levou a comida guardada. Na luta morreram Domaur e Peik. Para Peak, o morro virou Morro da Vitória. Começou a Guerra Santa do Morro: em nome da Chama de Cima, Peak pegou em lanças contra Maor. Peak e Maor, cansados de enterrar os seus, fizeram as pazes no morro. Depois de duas batalhas e dois mortos, a Guerra Santa do Morro terminou em paz. Peak saiu dela mais forte.
 
 ### Ano 105
 
-No outono, nasceu Tamdoe, filha de Don, que guiava Ulur.
+Tamtamur tinha rezado: «Chama de Cima, não nos deixes secar.» Quando a chuva voltou, Peak agradeceu à Chama de Cima. A crônica sabe que foi acaso. Maor passou a festejar todo ano o dia da volta da chuva, em honra do Que Queima. Um raio caiu na floresta durante a tempestade e matou Kopeur. Kopeur era dos que mais rezavam, e Peak ficou sem entender. Os devotos de Peak não viram castigo: para eles, a Chama de Cima chamou Kopeur para perto. Nasceu ali a lembrança de Kopeur como santo.
 
 ### Ano 106
 
-Na primavera, Tamos disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «o Que Julga». Peak acreditou, e o deus mudou de nome. Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera, Tamya partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
 
 ### Ano 107
 
-Na primavera, Butorur, o curioso, morreu dormindo, aos 53 anos. Em Peak, Mamaos pediu: «Que Julga, dá-nos o que comer.» A fome passou, e Peak viu nisso obra do Que Julga. O deus não tinha feito nada. Kuron, de Ulur, tomou por esposa Pekie, de Koil, e os dois povos passaram a se visitar. Mamaos, o generoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Morreu Peon, que guiava Koil, aos 64 anos. Nunca perdoou o deus pela morte de Loviu. Kivion, que guiava Viak, morreu dormindo, aos 68 anos. Em Viak, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 48, só a crônica guarda. Loveos, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No verão, Kou, a ambiciosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 108
 
-Na primavera do ano 108, Tamtamur, que falava pelo Que Julga em Peak, morreu dormindo, aos 48 anos. Kurdon disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «a Voz dos Sonhos». Ulur acreditou, e o deus mudou de nome. Vikour, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Pemaos implorou pela filha. Peu morreu, e daquele dia em diante Pemaos cuspia no chão quando falavam do Que Julga. Uma tosse que não passava matou três pessoas em Peak.
+No inverno do ano 108, a forja de Peak não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 109
 
-Tamkos não esperou a vez: tomou o comando de Peak à força, e o conselho dos velhos se calou.
+Na primavera do ano 109, Dopela, que guiava Koil, morreu dormindo, aos 64 anos.
 
 ### Ano 110
 
-Kotora, a devota, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Nos anos 101 a 110 houve quatro fomes, duas batalhas, treze preces que pareceram atendidas e três preces sem resposta; nasceram 143 crianças e morreram 57 pessoas. No fim do ano 110, 225 pessoas viviam no mundo: Koil (80), Peak (83), Maor (45) e Ulur (17).
+Nos anos 101 a 110 houve duas secas, nove fomes, duas batalhas, 23 preces que pareceram atendidas e cinco preces sem resposta; nasceram 146 crianças e morreram 83 pessoas. No fim do ano 110, 226 pessoas viviam no mundo: Koil (85), Peak (81), Viak (7) e Maor (53).
 
 ### Ano 111
 
-Morreu Tamkos, que guiava Peak, aos 45 anos. Loik, o curioso, morreu dormindo, aos 70 anos. No outono, Lomaik anunciou que o Senhor do Trovão proibia qualquer trato com Koil. O deus nunca disse isso, mas Maor obedeceu. No inverno, Peak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Peak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+Na primavera, Loela, a pacífica, inventou marcas que guardavam palavras. Depois da seca, Maor jurou nunca desperdiçar água. Maor atacou Viak na praia. Maor venceu e levou a comida guardada. Kopeos e Dotorela morreram na luta. Depois da derrota, Viak não existia mais: os sete que sobraram foram levados para Peak. Diante das ruínas de Viak, Koil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 112
 
-Na primavera do ano 112, Mamaos, que falava pelo Que Julga em Peak, morreu de velhice aos 51 anos. Rar, que guiava Maor, morreu de velhice aos 60 anos. Começou a Guerra Santa da Praia: em nome do Senhor do Trovão, Maor pegou em lanças contra Ulur. Desde então, Ulur chama a praia de Praia da Vitória. No inverno, sem lugar e sem comida, Pedoe e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera, Veos rezou por Viya até a voz acabar. Viya morreu mesmo assim, e Veos nunca mais rezou. Em Koil, disseram que o Que Risca o Céu só ouvia Maor. A inveja virou rancor. Maor passou fome por causa da seca por 24 dias, e 41 pessoas morreram. Uma tosse que não passava matou seis pessoas em Koil. O inverno foi de gelo: nove pessoas morreram de frio.
 
 ### Ano 113
 
-Em Koil, Tamu começou a pregar que o deus não era «o Que Risca o Céu». Era «o Sedento». Em poucos anos, todos rezavam assim. Maor passou fome por 21 dias, e três pessoas morreram. No inverno, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Os de Peak caíram sobre Ulur na praia. Ulur foi derrotado e perdeu o que tinha guardado. Koe, Kurdon e Lokiela morreram na luta. Depois de tantos mortos, Peak e Ulur se encontraram na praia e juraram paz.
+Uma febre correu Koil e levou quatro vidas.
 
 ### Ano 114
 
-Kurdos implorou pelo filho. Maon morreu, e daquele dia em diante Kurdos cuspia no chão quando falavam do Sedento. Koil passou fome no inverno por 9 dias, e duas pessoas morreram. Foram 20 dias de fome em Peak, com dezessete mortos. Viya, que guiava Koil, morreu de frio. A doença entrou em Koil e matou cinco pessoas.
+Tamtamur tinha rezado: «Chama de Cima, não nos deixes secar.» Quando a chuva voltou, Peak agradeceu à Chama de Cima. O deus nada fez: o crédito era de graça.
 
 ### Ano 115
 
-Começou a Guerra Santa do Lago: em nome do Senhor do Trovão, Maor pegou em lanças contra Koil. A Guerra Santa do Lago seguiu: Maor contra Koil, no lago em nome do Senhor do Trovão. Koil resistiu, e Maor voltou de mãos vazias. Na luta morreram Kotora e Torur. No verão, Peak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Julga. No inverno, Don, o ambicioso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
+No inverno, Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 116
 
-Morreu o último que tinha visto o ano 86. Em Maor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Raos tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Maor deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer?
+Morreu Kon, que guiava Koil, aos 57 anos.
 
 ### Ano 117
 
-Na primavera do ano 117, morreu Kurvion, o devoto, aos 60 anos. A Guerra Santa da Praia esfriou sem acordo nem vencedor: cinco anos, três batalhas e três mortos, e ninguém sabia mais por que lutava.
+Na primavera do ano 117, Dokos, que guiava Koil, morreu dormindo, aos 62 anos. Koil escolheu Kiela para guiar o grupo. Veos queria o lugar e nunca perdoou.
 
-### Ano 118
-
-Ulur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+*No ano 118, nada de notável aconteceu.*
 
 ### Ano 119
 
-Na primavera, Don, que fundou Ulur e o guiava, morreu de velhice aos 50 anos. Foi quem levou os seus a fundar Ulur. No inverno, a Guerra Santa do Lago esfriou sem acordo nem vencedor: sete anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. Koil saiu dela mais forte.
+Makiela deu à luz gêmeos, Lokos e Lolour. Uns viram bênção; outros, mau sinal. No verão, Vepeya, a devota, inventou marcas que guardavam palavras.
 
 ### Ano 120
 
-Morreu Dokos, que falava pelo Sedento em Koil, aos 65 anos. Maor e Koil, cansados de enterrar os seus, fizeram as pazes no lago. No inverno, a tempestade trouxe raios para a floresta. Um deles acertou Lomaya. Em Peak, disseram que era castigo. Peak passou a acreditar que o Que Julga castiga quem duvida, e que Lomaya tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Peak sai de casa. Lembram de Lomaya. Nos anos 111 a 120 houve onze fomes, oito batalhas, 34 preces que pareceram atendidas e quinze preces sem resposta; nasceram 73 crianças e morreram 105 pessoas. No fim do ano 120, 189 pessoas viviam no mundo: Koil (84), Peak (72), Maor (16) e Ulur (17).
+Dokurur, que falava pelo Que Risca o Céu em Koil, morreu dormindo, aos 60 anos. Nos anos 111 a 120 houve três secas, sete fomes, duas batalhas, 23 preces que pareceram atendidas e cinco preces sem resposta; nasceram 88 crianças e morreram 149 pessoas. No fim do ano 120, 167 pessoas viviam no mundo: Koil (78), Peak (63) e Maor (26).
 
 ### Ano 121
 
-Morreu Kurdos, que falava pelo Sedento em Koil, aos 64 anos. Desde a morte de Maon, nunca mais tinha rezado. Em Ulur, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 76, só a crônica guarda. A seca voltou, como no ano 99: 26 dias sem chuva, até que o céu se abriu. Veik tinha rezado: «Voz dos Sonhos, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Ulur duvidou de que a Voz dos Sonhos tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 121, morreu Velour, que falava pelo Que Risca o Céu em Koil, aos 60 anos.
 
 ### Ano 122
 
-Na primavera do ano 122, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Depois disso, Ulur deixou de chamar o deus de «a Voz dos Sonhos» e passou a chamá-la de «a Sombra». Kiela, que guiava Koil, morreu de febre aos 58 anos. Depois da febre, Maor passou a queimar os seus mortos, para que a doença não voltasse. No outono, um raio caiu na praia durante a tempestade e matou Kovik. A família de Kovik nunca perdoou o céu.
+Kilos, o devoto, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. Depois disso, Peak deixou de chamar o deus de «a Chama de Cima» e passou a chamá-la de «a Estrela de Cauda». Depois disso, Maor deixou de chamar o deus de «o Que Queima» e passou a chamá-lo de «o Que Risca o Céu». Torur rezou por Loveik até a voz acabar. Loveik morreu mesmo assim, e Torur nunca mais rezou.
 
-*O ano 123 foi calmo.*
+### Ano 123
 
-### Ano 124
+Na primavera, Tamtamur, que falava pela Estrela de Cauda em Peak, morreu dormindo, aos 63 anos. Foi quem proibiu, em nome do deus, o trato com Viak. Em Peak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 59, só a crônica guarda. Uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito.
 
-No verão, Lokina deu à luz gêmeos, Kou e Mana. Uns viram bênção; outros, mau sinal. Peraik rezou por Maya até a voz acabar. Maya morreu mesmo assim, e Peraik nunca mais rezou.
+*O ano 124 foi calmo.*
 
 ### Ano 125
 
-Apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu. Para Maor, o deus já não era «o Senhor do Trovão»: passou a ser «o Que Risca o Céu».
+Na primavera, Tamkos, que guiava Peak, morreu de velhice aos 59 anos. Em Peak, Tamkos pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Peak deu graças à Estrela de Cauda. Foi só o tempo, mas quem iria dizer?
 
-*Do ano 126 ao 127, a vida seguiu sem grandes acontecimentos.*
+### Ano 126
+
+Na primavera, morreu Vion, que falava pelo Que Risca o Céu em Koil, aos 63 anos. Nunca perdoou o deus pela morte de Kokiu.
+
+### Ano 127
+
+Lokios não esperou a vez: tomou o comando de Peak à força, e o conselho dos velhos se calou. A terra tremeu. Caíram doze cabanas. Kie e Kois morreram sob os escombros. Depois disso, Koil deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Sacode». Os de Peak caíram sobre Maor no morro. Maor foi derrotado e perdeu o que tinha guardado. Na luta morreu Tordoik. Peak passou fome no inverno por 11 dias, e quatro pessoas morreram.
 
 ### Ano 128
 
-Pekios, que guiava Koil, morreu dormindo, aos 60 anos. Dokurya, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+No inverno do ano 128, uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito.
 
-### Ano 129
-
-Depois de anos sob um só, Peak sentou-se em roda: dali em diante, decidia-se juntos.
+*O ano 129 foi calmo.*
 
 ### Ano 130
 
-Em Peak, Dolos pediu: «Que Julga, não deixes nossos filhos morrerem de fome.» A comida voltou, e Peak deu graças ao Que Julga. Foi só o tempo, mas quem iria dizer? Os escribas de Peak registraram o milagre. Nos anos 121 a 130 houve duas secas, quatro fomes, dezessete preces que pareceram atendidas e nove preces sem resposta; nasceram 157 crianças e morreram 164 pessoas. No fim do ano 130, 185 pessoas viviam no mundo: Koil (91), Peak (60), Maor (27) e Ulur (7).
+Torur, que guiava Maor, morreu dormindo, aos 55 anos. Nunca perdoou o deus pela morte de Loveik. No inverno, em Peak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Peak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Nos anos 121 a 130 houve oito fomes e dezenove preces que pareceram atendidas; nasceram 110 crianças e morreram 55 pessoas. No fim do ano 130, 222 pessoas viviam no mundo: Koil (98), Peak (79) e Maor (45).
 
 ### Ano 131
 
-Na primavera, com Rau à frente, a nova geração de Maor abandonou a festa da chuva, costume herdado dos avós. Sem lugar e sem comida, Kion e os seus atravessaram a borda do mundo. Ninguém soube deles. Peak passou fome no inverno por 9 dias, e 33 pessoas morreram. No verão, Komais, a rancorosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. O dia em que a chuva voltou virou festa em Maor: todo ano, celebram a chuva que o Que Risca o Céu mandou.
+No verão, Makiela não podia mais viver perto de Lokios. Saiu de Peak com onze pessoas e fundou Maon na praia. Maon encontrou as ruínas de Viak. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 132
 
-A fome no inverno durou 9 dias em Koil e levou catorze vidas.
+Na primavera do ano 132, em Maon, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Em Maon, Lokios tomou para si o cuidado das preces à Estrela de Cauda.
 
-*O ano 133 passou sem nada que a crônica precise guardar.*
+### Ano 133
+
+Morreu Malos, que guiava Peak, aos 52 anos. Makiela, que fundou Maon e o guiava, morreu dormindo, aos 54 anos. Foi quem levou os seus a fundar Maon. Lomaya, de Peak, casou-se com Lokios e foi viver em Maon. Foi o primeiro laço entre os dois povos. Lomaik anunciou que o Que Risca o Céu proibia qualquer trato com Maon. O deus nunca disse isso, mas Maor obedeceu. Maor atacou Maon na praia. Maor venceu e levou a comida guardada. Koya morreu na luta.
 
 ### Ano 134
 
-No inverno, Ko, o curioso, inventou marcas que guardavam palavras.
+Em Maor, Madour pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Maor viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Nasceu Maya, filha de Lokios, que guiava Maon.
 
 ### Ano 135
 
-A seca voltou, como no ano 121: 25 dias sem chuva, até que o céu se abriu. Doya, que guiava Peak, não resistiu à fome.
+Na primavera, Madour partiu com oito pessoas para além da borda do mundo. Nunca voltaram. Lomaik anunciou que o Que Risca o Céu proibia qualquer trato com Maon. O deus nunca disse isso, mas Maor obedeceu. Tamtamon, que falava pelo Que Sacode em Koil, não resistiu à fome. No verão, Doya, a engenhosa, inventou marcas que guardavam palavras. Koil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
 
 ### Ano 136
 
-Na primavera do ano 136, Maor atacou Ulur na praia em nome do Que Risca o Céu. Ulur expulsou os atacantes. Na luta morreram Komais e Rau. Depois de tantos mortos, Maor e Ulur se encontraram na praia e juraram paz. Peak escolheu Lotamur para guiar o grupo. Kikiu queria o lugar e nunca perdoou. Koil passou fome no inverno por 9 dias, e quatro pessoas morreram.
+Na primavera, morreu Kilos, o devoto, aos 53 anos. Com Lokios à frente, a nova geração de Maon abandonou o cuidado com a água, costume herdado dos avós. Começou a Guerra da Fome: Koil, com fome, foi buscar à força a comida de Maon. Na Guerra da Fome, Koil atacou Maon na praia. Koil venceu e levou a comida guardada. Lomaya e Lolour morreram na luta.
 
 ### Ano 137
 
-Em Koil, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 78, só a crônica guarda.
+Na Guerra da Fome, Koil atacou Maon na praia. Maon foi derrotado e perdeu o que tinha guardado. Na luta morreram Kodona e Kikiela. No verão, a Guerra da Fome seguiu: Koil contra Maon, na praia. Koil venceu e levou a comida guardada. Na luta morreram Lokios e Pelour. No outono, Kurviu deu à luz gêmeos, Vemaur e Tamkie. Uns viram bênção; outros, mau sinal. Em Maon, Veur pediu: «Estrela de Cauda, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Maon duvidou de que a Estrela de Cauda tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 138
 
-Na primavera, Peos disse ter ouvido o deus de outro jeito: não era «o Que Julga», era «a Luz Que Avisa». Peak acreditou, e o deus mudou de nome.
+Vepeya, a devota, morreu de velhice aos 51 anos. Morreu o último que tinha visto o ano 90. Em Maon, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. De novo Maor contra Maon em nome do Que Risca o Céu, como no ano 133. Maor venceu e levou a comida guardada. Na luta morreram Tamlou e Kik. Foram 8 dias de fome no inverno em Peak, com um morto. No inverno, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Maon perdeu o saber.
 
 ### Ano 139
 
-Em Maor, Mados pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Maor duvidou de que o Que Risca o Céu tinha ouvido. A crônica sabe que foi acaso.
+Na primavera do ano 139, Tamkiya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Maon acabou: Mataos, Esya e Kimaos foram viver em Peak. Koil encontrou as ruínas de Maon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A Guerra da Fome acabou porque um dos lados deixou de existir: quatro anos, seis batalhas e onze mortos. Koil passou fome por causa da seca por 24 dias, e 37 pessoas morreram.
 
 ### Ano 140
 
-Na primavera, ninguém lembrava mais a razão, e Koil abandonou o cuidado com a água. No inverno, em Ulur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Ulur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 131 a 140 houve quatro secas, dez fomes, 23 preces que pareceram atendidas e quatro preces sem resposta; nasceram 108 crianças e morreram 83 pessoas. No fim do ano 140, 204 pessoas viviam no mundo: Koil (74), Peak (82), Maor (35) e Ulur (13).
+Nos anos 131 a 140 houve duas secas, dezenove fomes, oito batalhas, 36 preces que pareceram atendidas e treze preces sem resposta; nasceram 97 crianças e morreram 140 pessoas. No fim do ano 140, 168 pessoas viviam no mundo: Koil (69), Peak (67) e Maor (32).
 
 ### Ano 141
 
-A forja de Maor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Peak já não cabia na floresta. Kuror, o medroso, levou dezesseis pessoas para a praia e fundou Loar. Loar encontrou as ruínas de Maon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 142
 
-No verão do ano 142, Kikiu rezou por Mau até a voz acabar. Mau morreu mesmo assim, e Kikiu nunca mais rezou. Uma tosse que não passava matou sete pessoas em Peak.
+Em Loar, Pedoela tomou para si o cuidado das preces à Estrela de Cauda. No outono, Maor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Maor passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 143
 
-Peraik morreu dormindo, aos 56 anos. Nunca perdoou o deus pela morte de Maya. Morreu Kipe, que guiava Ulur, aos 57 anos. Koil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Koil, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Na primavera, nasceu Havera, a primeira de Loar. Kuror tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Quando a chuva voltou, Loar agradeceu à Estrela de Cauda. A crônica sabe que foi acaso.
 
 ### Ano 144
 
-De novo a chuva sumiu, como no ano 135. Foram 19 dias de seca. No inverno, Dolos, que falava pela Luz Que Avisa em Peak, não resistiu à fome.
+Depois de anos sob um só, Peak sentou-se em roda: dali em diante, decidia-se juntos. Com lanças e promessas, Malois acabou com o conselho de Maor e passou a mandar sozinho. A fome durou 18 dias em Peak e levou 28 vidas. No verão, em nome da Estrela de Cauda, Domaya proibiu casamentos e trocas com Loar. Era vontade de Domaya, não do deus.
 
 ### Ano 145
 
-A fome no inverno durou 9 dias em Koil e levou nove vidas. Mamar partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Os de Peak caíram sobre Ulur na praia. Peak venceu e levou a comida guardada. Tamkurali morreu na luta. Depois de tantos mortos, Peak e Ulur se encontraram na praia e juraram paz. No outono, Vetamik, o corajoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+No inverno, Mamau deu à luz gêmeos, Koveik e Vetamela. Uns viram bênção; outros, mau sinal.
 
 ### Ano 146
 
-Lou, que falava pela Luz Que Avisa em Peak, morreu dormindo, aos 60 anos. Houve luta na praia: Maor atacou Ulur em nome do Que Risca o Céu. Ulur foi derrotado e perdeu o que tinha guardado. Kurtamo morreu na luta. Depois de tantos mortos, Maor e Ulur se encontraram na praia e juraram paz.
+Na primavera do ano 146, morreu Domaya, que falava pela Estrela de Cauda em Peak, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Loar. Kiur, o desconfiado, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. No outono, Vikion implorou pela filha. Vikuru morreu, e daquele dia em diante Vikion cuspia no chão quando falavam do Que Sacode. De novo a chuva sumiu, como no ano 101. Foram 21 dias de seca. Dour, o ambicioso, morreu de fome.
 
 ### Ano 147
 
-A tempestade trouxe raios para o lago. Um deles acertou Domae. A família de Domae nunca perdoou o céu. Depois disso, Koil deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Koil sai de casa. Lembram de Domae.
+Na primavera, Maor atacou Loar na praia. Loar expulsou os atacantes. Na luta morreram Kurviu, Malois e Pedoela. Desde então, Loar chama a praia de Praia da Vitória. Lomaik anunciou que o Que Risca o Céu proibia qualquer trato com Peak. O deus nunca disse isso, mas Maor obedeceu. Maor atacou Peak na floresta em nome do Que Risca o Céu. Peak foi derrotado e perdeu o que tinha guardado. Na luta morreram Doveik e Mapeos. No inverno, Tamik, o ambicioso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
 
 ### Ano 148
 
-No outono, com canais e moinhos, Koil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Na primavera, sem lugar e sem comida, Kodoya e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 17 dias de fome no inverno em Peak, com dezenove mortos. Em nome do Que Risca o Céu, Lomaik proibiu casamentos e trocas com Loar. Era vontade de Lomaik, não do deus. Peak atacou Loar na praia. Loar foi derrotado e perdeu o que tinha guardado. Kiveya, Kikoik, Pena e Pemaik morreram na luta. Depois de tantos mortos, Peak e Loar se encontraram na praia e juraram paz.
 
-*No ano 149, nada de notável aconteceu.*
+### Ano 149
+
+No outono do ano 149, Torloar, o corajoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
 
 ### Ano 150
 
-A terra tremeu. Caíram dezesseis cabanas. Dolour e Dou morreram sob os escombros. Depois disso, Maor deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Sacode». Para Ulur, o deus já não era «a Sombra»: passou a ser «o Que Sacode». Em Maor, Mados pediu: «Que Sacode, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Maor duvidou de que o Que Sacode tinha ouvido. O deus nada fez: o crédito era de graça. Nos anos 141 a 150 houve três secas, sete fomes, duas batalhas, vinte preces que pareceram atendidas e oito preces sem resposta; nasceram 123 crianças e morreram 126 pessoas. No fim do ano 150, 200 pessoas viviam no mundo: Koil (86), Peak (71), Maor (32) e Ulur (11).
+No verão do ano 150, a terra tremeu. Caíram dezenove cabanas. Kodou e Dou morreram sob os escombros. Nos anos 141 a 150 houve três secas, sete fomes, três batalhas, 28 preces que pareceram atendidas e oito preces sem resposta; nasceram 131 crianças e morreram 119 pessoas. No fim do ano 150, 179 pessoas viviam no mundo: Koil (84), Peak (41), Maor (36) e Loar (18).
 
 ### Ano 151
 
-Foram 8 dias de fome no inverno em Koil, com dois mortos. Foram 9 dias de fome no inverno em Peak, com quatro mortos.
+No verão, Maor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Risca o Céu.
 
 ### Ano 152
 
-Vela, que guiava Ulur, morreu de velhice aos 60 anos. Kos não esperou a vez: tomou o comando de Peak à força, e o conselho dos velhos se calou.
+O frio levou Kou, que guiava Koil. Com canais e moinhos, Peak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 153
 
-Na primavera do ano 153, Koali deu à luz gêmeos, Loviya e Koya. Uns viram bênção; outros, mau sinal. Houve luta na praia: Maor atacou Ulur em nome do Que Sacode. Ulur foi derrotado e perdeu o que tinha guardado. Na luta morreram Esesali e Tamela. Começou a Segunda Guerra Santa: em nome do Que Sacode, Maor pegou em lanças contra Ulur. No verão, uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito.
+Na primavera, com Kuror à frente, a nova geração de Loar abandonou o treino com lanças, costume herdado dos avós. Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu. Koloela tinha rezado: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Loar agradeceu à Estrela de Cauda. A crônica sabe que foi acaso. No inverno, Vikion, que guiava Koil, morreu de fome. Nunca perdoou o deus pela morte de Vikuru. Kiur, o desconfiado, não resistiu à fome. Na guerra, tinha tirado duas vidas.
 
 ### Ano 154
 
-Na primavera do ano 154, Vetamik, o corajoso, morreu de velhice aos 52 anos.
+Na primavera do ano 154, Tamar disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «a Mão Que Cura». Maor acreditou, e o deus mudou de nome. A fome no inverno durou 9 dias em Koil e levou dezessete vidas. Com canais e moinhos, Koil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 155
 
-Na primavera do ano 155, Tamdoik, o devoto, morreu de velhice aos 69 anos.
+Na primavera, Tamu, que falava pela Estrela de Cauda em Peak, morreu de velhice aos 68 anos. Tamur, de Koil, tomou por esposa Tamtamya, de Loar, e os dois povos passaram a se visitar.
 
 ### Ano 156
 
-Mar, o ambicioso, morreu de velhice aos 54 anos. Marau, a ambiciosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A Segunda Guerra Santa esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Maor saiu dela mais forte. No verão, Tamik implorou pela filha. Koe morreu, e daquele dia em diante Tamik cuspia no chão quando falavam da Voz do Céu. Uma febre correu Koil e levou quatro vidas.
+No outono do ano 156, Loar já não se preparava para nada: a Estrela de Cauda sempre dava. Deixaram de poupar água. No inverno, Kina, de Peak, casou-se com Loik e foi viver em Loar. Foi o primeiro laço entre os dois povos.
 
 ### Ano 157
 
-Na primavera do ano 157, a terra tremeu. Caíram dezoito cabanas. Ve, Vion, Kopeik, Peya, Kurkuru, Malona, Rau e Vena morreram sob os escombros.
+Na primavera do ano 157, Peak escolheu Mamaur para guiar o grupo. Tammaos queria o lugar e nunca perdoou. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu.
 
 *O ano 158 foi calmo.*
 
 ### Ano 159
 
-Em Koil, Mapela pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças à Voz do Céu. Foi só o tempo, mas quem iria dizer? Os escribas de Koil registraram o milagre. No verão, a febre levou Tammaya, que guiava Koil. Koil escolheu Tamveya para guiar o grupo. Kurik queria o lugar e nunca perdoou. A doença entrou em Koil e matou quatro pessoas. O inverno foi de gelo: quatro pessoas morreram de frio.
+Na primavera do ano 159, Vikour, que falava pelo Que Sacode em Koil, morreu dormindo, aos 72 anos.
 
 ### Ano 160
 
-Na primavera, Kurik, o pacífico, morreu de velhice aos 70 anos. Nunca perdoou o deus pela morte de Lokios. Peos, que falava pela Luz Que Avisa em Peak, morreu de velhice aos 59 anos. Nos anos 151 a 160 houve três secas, doze fomes, duas batalhas, 25 preces que pareceram atendidas e quatro preces sem resposta; nasceram 126 crianças e morreram 98 pessoas. No fim do ano 160, 230 pessoas viviam no mundo: Koil (103), Peak (76), Maor (45) e Ulur (6).
+Em Peak, Dopeya começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Acende o Céu». Em poucos anos, todos rezavam assim. Uma febre correu Maor e levou três vidas. Desde a febre, Maor não enterra mais ninguém: os mortos vão para o fogo. Nos anos 151 a 160 houve quatro secas, três fomes e vinte preces que pareceram atendidas; nasceram 150 crianças e morreram 69 pessoas. No fim do ano 160, 260 pessoas viviam no mundo: Koil (94), Peak (93), Maor (41) e Loar (32).
 
-*Do ano 161 ao 162, a vida seguiu sem grandes acontecimentos.*
+### Ano 161
+
+Na primavera do ano 161, Tammaos, que falava pelo Que Acende o Céu em Peak, morreu de velhice aos 58 anos. Com Kuror à frente, a nova geração de Loar abandonou a festa da chuva, costume herdado dos avós.
+
+### Ano 162
+
+Na primavera, Kie disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «a Mão Que Cura». Koil acreditou, e o deus mudou de nome. Tamos tinha rezado: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Peak deu graças ao Que Acende o Céu. O deus nada fez: o crédito era de graça. Os escribas de Peak registraram o milagre. Loar passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda. As preces de Loar ficaram pequenas: pedia-se à Estrela de Cauda até sol para a pesca e sorte na caça.
 
 ### Ano 163
 
-Na primavera do ano 163, Tamon partiu com seis pessoas para além da borda do mundo. Nunca voltaram.
+Kidos, que guiava Koil, morreu de repente, aos 42 anos. Doya, que guiava Maor, morreu dormindo, aos 59 anos. Com Kuror à frente, a nova geração de Loar abandonou o medo das tempestades, costume herdado dos avós. A fome no inverno durou 9 dias em Koil e levou três vidas. A fome no inverno durou 9 dias em Peak e levou 31 vidas.
 
-*O ano 164 foi calmo.*
-
-### Ano 165
-
-Na primavera do ano 165, Mados, que guiava Maor, morreu de velhice aos 61 anos. Sem lugar e sem comida, Loloela e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
-
-### Ano 166
-
-Na primavera, Marau partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A terra tremeu. Caíram 23 cabanas. Maos, Lotamya e Madoela morreram sob os escombros. Uma tosse que não passava matou quatro pessoas em Peak.
+*Entre os anos 164 e 166, nada mudou o rumo do mundo.*
 
 ### Ano 167
 
-Kios, que falava pela Luz Que Avisa em Peak, morreu de velhice aos 60 anos.
+Kuror, que fundou Loar e o guiava, morreu de velhice aos 61 anos. Foi quem levou os seus a fundar Loar.
 
 ### Ano 168
 
-Na primavera do ano 168, morreu Mapela, a medrosa, aos 65 anos. Os de Maor caíram sobre Ulur na praia em nome do Que Sacode. Maor venceu e levou a comida guardada. Na luta morreram Kiela, Kon e Tamkurya. Depois de tantos mortos, Maor e Ulur se encontraram na praia e juraram paz. Em Maor, Raela pediu: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Maor deu graças ao Que Sacode. O deus nada fez: o crédito era de graça. No outono, Torar implorou pela filha. Toru morreu, e daquele dia em diante Torar cuspia no chão quando falavam do Que Sacode.
+Na primavera, Pekour, que guiava Koil, morreu de velhice aos 64 anos. Koil escolheu Tamya para guiar o grupo. Vekie queria o lugar e nunca perdoou. No verão, Tamviu deu à luz gêmeos, Torya e Lohau. Uns viram bênção; outros, mau sinal. No outono, Lomaik anunciou que a Mão Que Cura proibia qualquer trato com Loar. O deus nunca disse isso, mas Maor obedeceu.
 
 ### Ano 169
 
-A fome no inverno durou 9 dias em Koil e levou doze vidas.
+Uma tosse que não passava matou cinco pessoas em Koil. Lorana partiu com sete pessoas para além da borda do mundo. Nunca voltaram. No verão, Veon rezou por Loviur até a voz acabar. Loviur morreu mesmo assim, e Veon nunca mais rezou. O inverno foi de gelo: três pessoas morreram de frio. Lon, que falava pela Mão Que Cura em Koil, não resistiu à fome.
 
 ### Ano 170
 
-Morreu Lon, que guiava Koil, aos 61 anos. Kikiu, a ambiciosa, morreu de velhice aos 71 anos. Nunca perdoou o deus pela morte de Mau. Los disse ter ouvido o deus de outro jeito: não era «a Luz Que Avisa», era «o Que Leva». Peak acreditou, e o deus mudou de nome. Torar partiu com sete pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 17 dias em Maor e levou três vidas. Nos anos 161 a 170 houve dezoito fomes, 34 preces que pareceram atendidas e quatro preces sem resposta; nasceram 99 crianças e morreram 91 pessoas. No fim do ano 170, 215 pessoas viviam no mundo: Koil (94), Peak (76), Maor (36) e Ulur (9).
+Foram 9 dias de fome no inverno em Koil, com dezesseis mortos. Maya rezou por Lokona até a voz acabar. Lokona morreu mesmo assim, e Maya nunca mais rezou. Os de Maor caíram sobre Loar na praia em nome da Mão Que Cura. Loar foi derrotado e perdeu o que tinha guardado. Na luta morreram Lokim, Lomaya, Kiloela e Malos. Loar não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Dessa vez, a Estrela de Cauda não respondeu, e Loar, que tinha esquecido como se virar sozinho, pagou caro. Nos anos 161 a 170 houve duas secas, dezenove fomes, 33 preces que pareceram atendidas e quatro preces sem resposta; nasceram 122 crianças e morreram 166 pessoas. No fim do ano 170, 209 pessoas viviam no mundo: Koil (78), Peak (67), Maor (41) e Loar (23).
 
 ### Ano 171
 
-Na primavera, Loya passou a guiar Peak, mas Koik não aceitou e guardou rancor. Numa tempestade sobre o morro, um raio matou Bumana. Os seus nunca esqueceram.
+No verão do ano 171, em nome da Estrela de Cauda, Lokos proibiu casamentos e trocas com Maor. Era vontade de Lokos, não do deus.
 
 ### Ano 172
 
-Mamaik, que guiava Maor, morreu de repente, aos 42 anos. Tamkios implorou pelo filho. Veveik morreu, e daquele dia em diante Tamkios cuspia no chão quando falavam da Voz do Céu. Koil passou fome no inverno por 12 dias, e quatro pessoas morreram. A guerra entre Maor e Ulur continuou: Maor voltou a atacar na praia em nome do Que Sacode. Maor venceu e levou a comida guardada. Na luta morreu Esali. Depois de tantos mortos, Maor e Ulur se encontraram na praia e juraram paz.
+Doar, o devoto, morreu dormindo, aos 59 anos. Tamar, o generoso, morreu dormindo, aos 57 anos.
 
 ### Ano 173
 
-Na primavera do ano 173, em nome da Voz do Céu, Kuron proibiu casamentos e trocas com Ulur. Era vontade de Kuron, não do deus. No inverno, houve luta na praia: Koil atacou Ulur em nome da Voz do Céu. Koil venceu e levou a comida guardada. Na luta morreram Peo e Vitamon.
+Malou, a generosa, morreu de velhice aos 50 anos.
 
 ### Ano 174
 
-No outono, Ulur passou a receber bem os de fora: um casamento com outro povo virava festa. Vebuis partiu com zero pessoa para além da borda do mundo. Nunca voltaram. A seca voltou, como no ano 144: 21 dias sem chuva, até que o céu se abriu.
+Em Loar, Veloim começou a pregar que o deus não era «a Estrela de Cauda». Era «o Pai das Pedras». Em poucos anos, todos rezavam assim.
 
 ### Ano 175
 
-No inverno, Dolona, que falava pelo Que Leva em Peak, morreu de fome.
+Veraur tinha rezado: «Mão Que Cura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Maor deu graças à Mão Que Cura. O deus não tinha feito nada. Os escribas de Maor registraram o milagre. Lomaik anunciou que a Mão Que Cura proibia qualquer trato com Loar. O deus nunca disse isso, mas Maor obedeceu.
 
 ### Ano 176
 
-No outono, começou a Terceira Guerra Santa: em nome da Voz do Céu, Koil pegou em lanças contra Ulur. A Terceira Guerra Santa seguiu: Koil contra Ulur, na praia em nome da Voz do Céu. Ulur foi derrotado e perdeu o que tinha guardado. Don e Doviu morreram na luta. Koil venceu Ulur e levou os seis sobreviventes para viver sob seu mando. Ulur deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Terceira Guerra Santa terminou com a conquista: três anos, três batalhas e cinco mortos. Diante das ruínas de Ulur, Koil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Na primavera, morreu Peik, o generoso, aos 70 anos. Maor passou fome no inverno por 9 dias, e duas pessoas morreram. A tempestade trouxe raios para o morro. Um deles acertou Tama. A família de Tama nunca perdoou o céu.
 
 ### Ano 177
 
-Em Maor, Raela pediu: «Que Fere, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Maor duvidou de que o Que Fere tinha ouvido. O deus nada fez: o crédito era de graça. No inverno, Matamu, a curiosa, cansou de dividir pouca comida. Partiu com dez pessoas para a praia e ali fundou Tamor. Tamor encontrou as ruínas de Ulur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Kie, a devota, morreu de velhice aos 50 anos. Com Kina à frente, a nova geração de Loar abandonou o costume de queimar os mortos, costume herdado dos avós. No verão, os de Maor caíram sobre Loar na praia em nome da Mão Que Cura. Maor venceu e levou a comida guardada. Hara e Veik morreram na luta.
 
 ### Ano 178
 
-Veik, o devoto, morreu dormindo, aos 56 anos. Kuron, que guiava Koil, morreu de frio. Foi quem proibiu, em nome do deus, o trato com Ulur. No verão, em Tamor nasceu a primeira criança: Ju, filha de Mamais e Toros. Kiloela deu à luz gêmeos, Loya e Loloya. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 178, morreu Petamu, que falava pelo Que Acende o Céu em Peak, aos 61 anos.
 
 ### Ano 179
 
-Raela passou a falar pelo Que Fere em Tamor. Era a primeira a rezar e a última a duvidar. Tamkios, que falava pela Voz do Céu em Koil, morreu de frio. Nunca perdoou o deus pela morte de Veveik. O frio levou Loik, o generoso. O inverno foi de gelo: três pessoas morreram de frio. Matamu, a curiosa, inventou marcas que guardavam palavras.
+Veraur, o generoso, morreu dormindo, aos 56 anos. Na guerra, tinha tirado duas vidas.
 
 ### Ano 180
 
-No verão do ano 180, Vekios, de Koil, tomou por esposa Doela, de Tamor, e os dois povos passaram a se visitar. Nos anos 171 a 180 houve cinco secas, dezesseis fomes, quatro batalhas, 35 preces que pareceram atendidas e nove preces sem resposta; nasceram 126 crianças e morreram 124 pessoas. No fim do ano 180, 217 pessoas viviam no mundo: Koil (103), Peak (74), Maor (28) e Tamor (12).
+Nos anos 171 a 180 houve cinco fomes e doze preces que pareceram atendidas; nasceram 133 crianças e morreram 73 pessoas. No fim do ano 180, 270 pessoas viviam no mundo: Koil (104), Peak (84), Maor (48) e Loar (34).
 
 ### Ano 181
 
-Buik, que guiava Maor, morreu dormindo, aos 59 anos. Em Maor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 122, só a crônica guarda. Em Tamor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Tamor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Komana implorou pelo filho. Maur morreu, e daquele dia em diante Komana cuspia no chão quando falavam do Que Leva.
+Na primavera do ano 181, Maur morreu dormindo, aos 59 anos. Na guerra, tinha tirado duas vidas. Uma tosse que não passava matou três pessoas em Koil.
 
-### Ano 182
-
-Na primavera do ano 182, Kokon disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Que Acende o Céu». Koil acreditou, e o deus mudou de nome. No verão, Tamkik rezou por Dour até a voz acabar. Dour morreu mesmo assim, e Tamkik nunca mais rezou. Uma febre correu Koil e levou sete vidas.
+*No ano 182, nada de notável aconteceu.*
 
 ### Ano 183
 
-Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Tamu passou a guiar Peak, mas Dokona não aceitou e guardou rancor. Koil via Peak ser atendido e concluiu que o Que Acende o Céu tinha escolhido os outros. Uma tosse que não passava matou 33 pessoas em Koil. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu.
+Na primavera do ano 183, sem lugar e sem comida, Pepeu e os seus atravessaram a borda do mundo. Ninguém soube deles. Loloela deu à luz gêmeos, Pedou e Dovik. Uns viram bênção; outros, mau sinal. A fome no inverno durou 20 dias em Koil e levou oito vidas. De novo a chuva sumiu, como no ano 146. Foram 19 dias de seca.
 
 ### Ano 184
 
-Matamu, que fundou Tamor e o guiava, deu à luz e não sobreviveu ao parto. Foi quem levou os seus a fundar Tamor.
+Maon, que guiava Koil, morreu dormindo, aos 58 anos. Nunca perdoou o deus pela morte de Kimae. Koil escolheu Peu para guiar o grupo. Kopeon queria o lugar e nunca perdoou. Foram 9 dias de fome no inverno em Koil, com seis mortos. Veon tinha rezado: «Mão Que Cura, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra da Mão Que Cura. O deus nada fez: o crédito era de graça. Nas tabuletas de Koil, ficou escrito que foi a Mão Que Cura.
 
 ### Ano 185
 
-Na primavera do ano 185, em Tamor, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. Em Tamor, Raela pediu: «Que Fere, não nos deixes secar.» Quando a chuva voltou, Tamor agradeceu ao Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Tamor, ficou escrito que foi o Que Fere.
+Na primavera, ninguém lembrava mais a razão, e Peak abandonou o costume de queimar os mortos.
 
 ### Ano 186
 
-Na primavera, com Veraos à frente, Maor largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido.
+O inverno foi de gelo: três pessoas morreram de frio. Lokos implorou pela filha. Torloela morreu, e daquele dia em diante Lokos cuspia no chão quando falavam do Pai das Pedras.
 
 ### Ano 187
 
-Em Tamor, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. A tempestade trouxe raios para a praia. Um deles acertou Matamur. Em Tamor, disseram que era castigo. Desde a morte de Matamur, ninguém em Tamor desce à praia em dia de tempestade. O lugar ganhou nome: Praia do Raio.
+Maya implorou pelo filho. Lomaik morreu, e daquele dia em diante Maya cuspia no chão quando falavam do Que Acende o Céu. Uma tosse que não passava matou cinco pessoas em Peak. Depois da febre, Peak passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 188
 
-No verão, o sol escureceu outra vez.
+Um inverno duro matou oito pessoas de frio.
 
-*No ano 189, nada de notável aconteceu.*
+### Ano 189
+
+Na primavera, Raik disse ter ouvido o deus de outro jeito: não era «a Mão Que Cura», era «a Mão Fechada». Maor acreditou, e o deus mudou de nome.
 
 ### Ano 190
 
-A seca voltou, como no ano 174: 21 dias sem chuva, até que o céu se abriu. Nos anos 181 a 190 houve duas secas, três fomes, dezenove preces que pareceram atendidas e nove preces sem resposta; nasceram 122 crianças e morreram 133 pessoas. No fim do ano 190, 206 pessoas viviam no mundo: Koil (104), Peak (74), Maor (22) e Tamor (6).
+Na primavera, Lovios, o engenhoso, morreu de repente, aos 42 anos. Sem lugar e sem comida, Torveik e os seus atravessaram a borda do mundo. Ninguém soube deles. Veon, que falava pela Mão Que Cura em Koil, morreu de frio. Nunca perdoou o deus pela morte de Loviur. Loar passou fome por causa da seca por 21 dias, e quatro pessoas morreram. Nos anos 181 a 190 houve seis secas, 25 fomes, 43 preces que pareceram atendidas e sete preces sem resposta; nasceram 133 crianças e morreram 181 pessoas. No fim do ano 190, 214 pessoas viviam no mundo: Koil (86), Peak (64), Maor (41) e Loar (23).
 
 ### Ano 191
 
-Na primavera do ano 191, Dokona, que falava pelo Que Leva em Peak, morreu dormindo, aos 67 anos. Kokon, que guiava Koil, morreu de frio.
+Morreu Kokoya, que guiava Peak, aos 60 anos. Numa tempestade sobre a praia, um raio matou Kivios. Ninguém em Loar teve dúvida: era castigo. Depois disso, Loar deixou de chamar o deus de «o Pai das Pedras» e passou a chamá-lo de «o Senhor do Trovão». Para Loar, Kivios foi castigado. Desde então, quem duvida do Senhor do Trovão duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Loar sai de casa. Lembram de Kivios.
 
 ### Ano 192
 
-Na primavera do ano 192, Lodoik, que falava pelo Que Leva em Peak, morreu dormindo, aos 59 anos. Vear, o generoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Lotoru, de Loar, casou-se com Matorur e foi viver em Maor. Foi o primeiro laço entre os dois povos.
 
 ### Ano 193
 
-Los, o devoto, morreu dormindo, aos 56 anos. Kokour, de Peak, tomou por esposa Mana, de Tamor, e os dois povos passaram a se visitar. No inverno, Maor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Maor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Dopeik tinha rezado: «Mão Que Cura, dá-nos o que comer.» A fome passou, e Koil viu nisso obra da Mão Que Cura. O deus não tinha feito nada. Os escribas de Koil registraram o milagre. Lovela deu à luz gêmeos, Tame e Veveya. Uns viram bênção; outros, mau sinal.
 
 ### Ano 194
 
-Na primavera do ano 194, com lanças e promessas, Veraos acabou com o conselho de Maor e passou a mandar sozinho.
+Na primavera do ano 194, Vios partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Koil passou fome no inverno por 9 dias, e 22 pessoas morreram. Foram 9 dias de fome no inverno em Peak, com quatro mortos.
 
 ### Ano 195
 
-Em Peak, Dona pediu: «Que Leva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Peak deu graças ao Que Leva. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Peak, ficou escrito que foi o Que Leva.
+Na primavera do ano 195, Lokos, que falava pelo Senhor do Trovão em Loar, morreu de velhice aos 55 anos. Nunca perdoou o deus pela morte de Torloela.
 
-### Ano 196
-
-Na primavera do ano 196, morreu Raela, que falava pelo Que Fere em Tamor, aos 70 anos. Tamor acabou: Vela, Tora e Koibis foram viver em Koil. Koil encontrou as ruínas de Tamor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. As ruínas de Tamor viraram aviso em Peak: era o que o deus fazia com quem o desagradava.
+*O ano 196 foi calmo.*
 
 ### Ano 197
 
-No verão, um raio caiu no lago durante a tempestade e matou Maik. Os seus nunca esqueceram. Numa tempestade sobre o morro, um raio matou Velour. Ninguém em Maor teve dúvida: era castigo. Desde a morte de Velour, ninguém em Maor sobe o morro em dia de tempestade.
+Makoar, o curioso, morreu dormindo, aos 48 anos. Tammaur partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 198
 
-Na primavera, Dona, que falava pelo Que Leva em Peak, morreu dormindo, aos 62 anos. Desde a morte de Pelour, nunca mais tinha rezado. Kurlour anunciou que o Que Acende o Céu proibia qualquer trato com Maor. O deus nunca disse isso, mas Koil obedeceu. Houve luta no morro: Koil atacou Maor em nome do Que Acende o Céu. Maor foi derrotado e perdeu o que tinha guardado. Na luta morreu Mar. Uma tosse que não passava matou cinco pessoas em Peak. O inverno foi de gelo: sete pessoas morreram de frio.
+Na primavera do ano 198, morreu Maya, que falava pelo Que Acende o Céu em Peak, aos 50 anos. Desde a morte de Lokona, nunca mais tinha rezado. Matorim, que guiava Loar, morreu de repente, aos 42 anos.
 
 ### Ano 199
 
-Kurlour, que falava pelo Que Acende o Céu em Koil, morreu dormindo, aos 63 anos. Foi quem proibiu, em nome do deus, o trato com Maor. Com Raur à frente, Maor largou o cuidado com a água: sem origem lembrada, o costume perdeu o sentido. Peak atacou Maor no morro. Peak venceu e levou a comida guardada. Lois, Raik e Vear morreram na luta. Depois de tantos mortos, Peak e Maor se encontraram no morro e juraram paz. Koil passou fome no inverno por 9 dias, e três pessoas morreram.
+Em Koil, gritaram que o templo mentia em nome da Mão Que Cura. Os sacerdotes foram tirados do poder.
 
 ### Ano 200
 
-A seca voltou, como no ano 190: 25 dias sem chuva, até que o céu se abriu. Nos anos 191 a 200 houve duas secas, onze fomes, duas batalhas, vinte preces que pareceram atendidas e cinco preces sem resposta; nasceram 99 crianças e morreram 139 pessoas. No fim do ano 200, 166 pessoas viviam no mundo: Koil (84), Peak (55) e Maor (27).
+A terra tremeu. Caíram 26 cabanas. Kiloe, Peur, Dokik, Koraela, Madoar, Lobuik, Bur, Komar e Hau morreram sob os escombros. Uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito. Nos anos 191 a 200 houve três secas, dezesseis fomes e 26 preces que pareceram atendidas; nasceram 172 crianças e morreram 127 pessoas. No fim do ano 200, 250 pessoas viviam no mundo: Koil (97), Peak (79), Maor (42) e Loar (32).
 
 ### Ano 201
 
-Na primavera do ano 201, Koil não esqueceu o ano 198 e atacou Maor outra vez. Maor resistiu, e Koil voltou de mãos vazias. Kurtamon, Koya e Dodour morreram na luta. Koil não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No inverno, começou a Guerra Santa do Morro: em nome do Que Acende o Céu, Koil pegou em lanças contra Maor.
+Na primavera, a terra tremeu. Caíram 26 cabanas. Koviur, Maveos, Kurkoela, Tamlos, Lopeos e Pemaos morreram sob os escombros.
 
 ### Ano 202
 
-Na primavera do ano 202, morreu Doe, que guiava Koil, aos 62 anos. A fome no inverno durou 6 dias em Koil e levou quatro vidas. No verão, na Guerra Santa do Morro, Maor atacou Koil no lago em nome do Que Fere. Koil resistiu, e Maor voltou de mãos vazias. Na luta morreram Ratoris, Buna e Raur. Depois de tantos mortos, Maor e Koil se encontraram no lago e juraram paz. A Guerra Santa do Morro acabou em trégua, depois de um ano, três batalhas e sete mortos.
+Na primavera, Loik, que falava pelo Senhor do Trovão em Loar, morreu dormindo, aos 62 anos.
 
-### Ano 203
-
-Na primavera do ano 203, morreu Tamvion, o devoto, aos 57 anos.
+*No ano 203, nada de notável aconteceu.*
 
 ### Ano 204
 
-Kik rezou por Lopena até a voz acabar. Lopena morreu mesmo assim, e Kik nunca mais rezou. O inverno foi de gelo: três pessoas morreram de frio.
+Na primavera do ano 204, morreu Maos, que guiava Peak, aos 64 anos.
 
-*Os anos 205 a 206 passaram em paz.*
+### Ano 205
+
+Na primavera, Dopeik, que falava pela Mão Que Cura em Koil, morreu de velhice aos 65 anos. Em Koil, Makik pediu: «Mão Que Cura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças à Mão Que Cura. O deus não tinha feito nada. Nas tabuletas de Koil, ficou escrito que foi a Mão Que Cura. Pehaos partiu com sete pessoas para além da borda do mundo. Nunca voltaram. No verão, a febre levou Kopeon, que guiava Koil. No outono, Velon rezou por Kipeur até a voz acabar. Kipeur morreu mesmo assim, e Velon nunca mais rezou.
+
+*O ano 206 passou sem nada que a crônica precise guardar.*
 
 ### Ano 207
 
-Na primavera do ano 207, morreu Kina, que falava pelo Que Leva em Peak, aos 61 anos. Ninguém lembrava mais a razão, e Maor abandonou o costume de queimar os mortos.
+Uma tosse que não passava matou duas pessoas em Loar.
 
-*O ano 208 passou sem nada que a crônica precise guardar.*
+### Ano 208
 
-### Ano 209
+Makik, que falava pela Mão Que Cura em Koil, morreu de velhice aos 68 anos. Um inverno duro matou duas pessoas de frio.
 
-Na primavera, Kurur, que falava pelo Que Acende o Céu em Koil, morreu de velhice aos 64 anos. Nunca perdoou o deus pela morte de Vik. Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito.
+*O ano 209 passou sem nada que a crônica precise guardar.*
 
 ### Ano 210
 
-Kurdoik, o engenhoso, cansou de dividir pouca comida. Partiu com 23 pessoas para a praia e ali fundou Kour. Em Kour, Pemaela tomou para si o cuidado das preces ao Que Acende o Céu. Nas ruínas de Ulur, Viur achou o que eles sabiam: aprendeu a ler as marcas antigas. Para Kour, as pedras de Ulur só podiam ter sido postas por gigantes. Nos anos 201 a 210 houve quatro fomes, três batalhas, catorze preces que pareceram atendidas e oito preces sem resposta; nasceram 129 crianças e morreram 68 pessoas. No fim do ano 210, 227 pessoas viviam no mundo: Koil (85), Peak (85), Maor (34) e Kour (23).
+Na primavera, Lotoru partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 6 dias em Loar e levou duas vidas. Nos anos 201 a 210 houve catorze fomes e 30 preces que pareceram atendidas; nasceram 115 crianças e morreram 89 pessoas. No fim do ano 210, 263 pessoas viviam no mundo: Koil (100), Peak (84), Maor (45) e Loar (34).
 
 ### Ano 211
 
-Na primavera, em Kour nasceu a primeira criança: Vim, filho de Viu e Malour. Em Peak, Lotamik pediu: «Que Leva, não deixes nossos filhos morrerem de fome.» A fome passou, e Peak viu nisso obra do Que Leva. O deus não tinha feito nada. Os escribas de Peak registraram o milagre. Viur passou dias nas ruínas de Ulur e voltou sabendo ler as marcas antigas. Kour encontrou as ruínas de Tamor e disse que ali tinham vivido gigantes. No verão, Viu passou dias nas ruínas de Ulur e voltou sabendo ler as marcas antigas.
+Raraik, que guiava Maor, morreu dormindo, aos 56 anos. Lokona passou a guiar Peak, mas Lopena não aceitou e guardou rancor. Tordoar implorou pelo filho. Mabuik morreu, e daquele dia em diante Tordoar cuspia no chão quando falavam da Mão Fechada.
 
 ### Ano 212
 
-Em Kour, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No inverno, Kour passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Kour, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Maloela, que falava pelo Senhor do Trovão em Loar, morreu de velhice aos 48 anos.
 
 ### Ano 213
 
-Na primavera do ano 213, Viur, o corajoso, morreu de velhice aos 67 anos.
+Lokou partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 214
 
-Na primavera, Dos, que falava pelo Que Leva em Peak, não resistiu à fome. A fome no inverno durou 17 dias em Peak e levou quatro vidas. Em Kour, Pemaela pediu: «Que Acende o Céu, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Kour duvidou de que o Que Acende o Céu tinha ouvido. Foi só o tempo, mas quem iria dizer? Os escribas de Kour registraram o milagre. O dia em que a chuva voltou virou festa em Kour: todo ano, celebram a chuva que o Que Acende o Céu mandou. No inverno, Rau deu à luz gêmeos, Raveur e Toru. Uns viram bênção; outros, mau sinal.
+Vilon, que falava pela Mão Que Cura em Koil, morreu dormindo, aos 54 anos. Bukos, o engenhoso, morreu de velhice aos 57 anos. Vedos partiu com três pessoas para além da borda do mundo. Nunca voltaram. Em Koil, Kurkon pediu: «Mão Que Cura, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra da Mão Que Cura. A crônica sabe que foi acaso. Os escribas de Koil registraram o milagre. Torur rezou por Lobuis até a voz acabar. Lobuis morreu mesmo assim, e Torur nunca mais rezou.
 
 ### Ano 215
 
-Os de Peak caíram sobre Kour na praia. Kour foi derrotado e perdeu o que tinha guardado. Na luta morreram Kure, Pemaela e Lotame. Para Kour, a praia virou Praia do Luto. Peak passou fome no inverno por 9 dias, e quatro pessoas morreram. Em Kour, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No verão, a terra tremeu. Caíram 23 cabanas. Tamveik, Komau, Doela, Tamkou, Rais, Veik e Tamela morreram sob os escombros.
+Na primavera do ano 215, sem lugar e sem comida, Dois e os seus atravessaram a borda do mundo. Ninguém soube deles. A doença entrou em Koil e matou cinco pessoas.
 
 ### Ano 216
 
-Na primavera, com Kurdoik à frente, a nova geração de Kour abandonou o medo das tempestades, costume herdado dos avós.
+Um inverno duro matou três pessoas de frio.
 
 ### Ano 217
 
-Na primavera do ano 217, Lotamik, que falava pelo Que Leva em Peak, morreu dormindo, aos 61 anos. No verão, Kurdoik passou dias nas ruínas de Tamor e voltou sabendo cortar pedra.
+Morreu Tammaela, que falava pelo Que Acende o Céu em Peak, aos 65 anos. Desde a morte de Kikour, nunca mais tinha rezado.
 
 ### Ano 218
 
-Na primavera do ano 218, Kour ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Maor passou fome no inverno por 9 dias, e quatro pessoas morreram. No verão, Kurdoik passou dias nas ruínas de Tamor e voltou sabendo trabalhar o metal.
+Morreu Loe, a corajosa, aos 63 anos. Kotamur partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 6 dias em Peak e levou quatro vidas.
 
 ### Ano 219
 
-Em Maor, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Sacode». Madon, de Koil, tomou por esposa Doya, de Kour, e os dois povos passaram a se visitar. Tammaos rezou por Tamkiu até a voz acabar. Tamkiu morreu mesmo assim, e Tammaos nunca mais rezou. Uma febre correu Peak e levou três vidas.
+Na primavera do ano 219, Ratamu deu à luz gêmeos, Dotorar e Ramau. Uns viram bênção; outros, mau sinal.
 
 ### Ano 220
 
-Na primavera, em Peak, Dopeos começou a pregar que o deus não era «o Que Leva». Era «o Que Ergue». Em poucos anos, todos rezavam assim. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. Kour passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Nas ruínas de Ulur, Kurdoik achou o que eles sabiam: aprendeu a ler as marcas antigas. Depois da seca, Maor jurou nunca desperdiçar água. Nos anos 211 a 220 houve três secas, catorze fomes, 28 preces que pareceram atendidas e seis preces sem resposta; nasceram 116 crianças e morreram 148 pessoas. No fim do ano 220, 197 pessoas viviam no mundo: Koil (81), Peak (66), Maor (29) e Kour (21).
+Na primavera do ano 220, sem lugar e sem comida, Tormaela e os seus atravessaram a borda do mundo. Ninguém soube deles. No outono, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Nos anos 211 a 220 houve 33 fomes, 44 preces que pareceram atendidas e quatro preces sem resposta; nasceram 112 crianças e morreram 74 pessoas. No fim do ano 220, 281 pessoas viviam no mundo: Koil (105), Peak (90), Maor (52) e Loar (34).
 
 ### Ano 221
 
-Na primavera do ano 221, Koil se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Kurdoya partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Nas ruínas de Tamor, Viu achou o que eles sabiam: aprendeu a ler as marcas antigas.
+Morreu Kurkon, que falava pela Mão Que Cura em Koil, aos 65 anos.
 
 ### Ano 222
 
-Em Kour, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. No verão, Lomaik anunciou que o Que Sacode proibia qualquer trato com Kour. O deus nunca disse isso, mas Maor obedeceu.
+A doença entrou em Maor e matou quatro pessoas.
 
 ### Ano 223
 
-Na primavera do ano 223, morreu Mamae, que falava pelo Que Sacode em Kour, aos 65 anos. Lokiela partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Em Koil, Lour pediu: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Acende o Céu. O deus nada fez: o crédito era de graça. Nas tabuletas de Koil, ficou escrito que foi o Que Acende o Céu. Kour cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Sacode.
+Na primavera, Madour não esperou a vez: tomou o comando de Peak à força, e o conselho dos velhos se calou. Kurlon, que falava pela Mão Que Cura em Koil, morreu de febre aos 61 anos. Tortorar tinha rezado: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Maor deu graças à Mão Fechada. O deus nada fez: o crédito era de graça. Os escribas de Maor registraram o milagre. A fome no inverno durou 23 dias em Loar e levou três vidas.
 
 ### Ano 224
 
-No verão do ano 224, Maor atacou Kour na praia em nome do Que Sacode. Maor venceu e levou a comida guardada. Viviya, Kurdoik e Veos morreram na luta.
+Na primavera, morreu Doviur, que guiava Koil, aos 53 anos. Maik partiu com três pessoas para além da borda do mundo. Nunca voltaram.
 
-### Ano 225
-
-Na primavera do ano 225, numa tempestade sobre o morro, um raio matou Raos. Ninguém em Maor teve dúvida: era castigo.
-
-### Ano 226
-
-Na primavera, Peos, o pacífico, morreu de velhice aos 63 anos.
+*Entre os anos 225 e 226, nada mudou o rumo do mundo.*
 
 ### Ano 227
 
-A fome no inverno durou 5 dias em Koil e levou uma vida. Pekurik, de Kour, tomou por esposa Malou, de Peak, e os dois povos passaram a se visitar. O inverno foi de gelo: duas pessoas morreram de frio.
+Em Peak, Kurvie começou a pregar que o deus não era «o Que Acende o Céu». Era «a Mão Fechada». Em poucos anos, todos rezavam assim. Depois de anos sob um só, Loar sentou-se em roda: dali em diante, decidia-se juntos. Sem lugar e sem comida, Buis e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
-*No ano 228, nada de notável aconteceu.*
+### Ano 228
+
+Na primavera, morreu Pe, que guiava Koil, aos 59 anos. Tama partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 229
 
-Domaya, que falava pelo Que Ergue em Peak, morreu de velhice aos 65 anos. A doença entrou em Maor e matou duas pessoas. O inverno foi de gelo: três pessoas morreram de frio. De novo Maor contra Kour em nome do Que Sacode, como no ano 224. Kour resistiu, e Maor voltou de mãos vazias. Maveis, Buis e Rau morreram na luta.
+Na primavera, Lokour, o ambicioso, morreu dormindo, aos 61 anos. Vikios, o pacífico, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
 
 ### Ano 230
 
-Kour se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Koil passou fome no inverno por 9 dias, e 31 pessoas morreram. O frio levou Mapeos, que falava pelo Que Ergue em Peak. Foram 11 dias de fome no inverno em Peak, com seis mortos. Tammaela implorou pelo filho. Kotamik morreu, e daquele dia em diante Tammaela cuspia no chão quando falavam do Que Ergue. Nos anos 221 a 230 houve três secas, quinze fomes, duas batalhas, 25 preces que pareceram atendidas e três preces sem resposta; nasceram 161 crianças e morreram 151 pessoas. No fim do ano 230, 204 pessoas viviam no mundo: Koil (83), Peak (68), Maor (18) e Kour (35).
+Na primavera do ano 230, cansado de um líder que mandava sozinho, Maor passou a decidir em conselho. Sem lugar e sem comida, Torim e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome no inverno durou 17 dias em Maor e levou duas vidas. Dolou deu à luz gêmeos, Peik e Dokoik. Uns viram bênção; outros, mau sinal. Nos anos 221 a 230 houve 37 fomes, 43 preces que pareceram atendidas e cinco preces sem resposta; nasceram 102 crianças e morreram 93 pessoas. No fim do ano 230, 273 pessoas viviam no mundo: Koil (103), Peak (85), Maor (51) e Loar (34).
 
 ### Ano 231
 
-Na primavera do ano 231, Lokona deu à luz gêmeos, Domaik e Lolou. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 231, sem lugar e sem comida, Dou e os seus atravessaram a borda do mundo. Ninguém soube deles. No outono, com canais e moinhos, Loar já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Em Loar, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 232
 
-Pe tinha rezado: «Que Sacode, não deixes nossos filhos morrerem de fome.» A fome passou, e Kour viu nisso obra do Que Sacode. Foi só o tempo, mas quem iria dizer? Os escribas de Kour registraram o milagre. No inverno, a terra tremeu. Caíram 22 cabanas. Makiur, Mae, Vekuros, Lolos, Lokos, Lotamos e Kurlos morreram sob os escombros.
+Na primavera do ano 232, Tamrais, a devota, morreu dormindo, aos 56 anos. Loela tinha rezado: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A fome passou, e Peak viu nisso obra da Mão Fechada. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Peak, ficou escrito que foi a Mão Fechada. Kuros, que falava pela Mão Que Cura em Koil, morreu de frio. Maur implorou pela filha. Loya morreu, e daquele dia em diante Maur cuspia no chão quando falavam da Mão Fechada.
 
 ### Ano 233
 
-Na primavera, Dopeos, que falava pelo Que Ergue em Peak, morreu de velhice aos 52 anos.
+Pemaela, a devota, morreu de frio. Uma febre correu Maor e levou quatro vidas.
 
-*No ano 234, nada de notável aconteceu.*
+### Ano 234
 
-### Ano 235
+Na primavera do ano 234, Vion disse ter ouvido o deus de outro jeito: não era «a Mão Que Cura», era «o Que Rega». Koil acreditou, e o deus mudou de nome. Koil passou fome no inverno por 9 dias, e três pessoas morreram. No verão, a tempestade trouxe raios para o lago. Um deles acertou Peloya. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Koil sai de casa. Lembram de Peloya. A doença entrou em Peak e matou cinco pessoas.
 
-Morreu Kios, que guiava Peak, aos 56 anos. Nunca perdoou o deus pela morte de Maos.
+*O ano 235 passou sem nada que a crônica precise guardar.*
 
-*O ano 236 foi calmo.*
+### Ano 236
+
+Na primavera do ano 236, Lokiur, o medroso, morreu de velhice aos 65 anos. Loela, que falava pela Mão Fechada em Peak, morreu de velhice aos 63 anos. De novo a chuva sumiu, como no ano 183. Foram 26 dias de seca.
 
 ### Ano 237
 
-Pekurik partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Tantas preces atendidas fizeram Kour confiar no céu mais do que nas próprias mãos. A seca voltou, como no ano 200: 22 dias sem chuva, até que o céu se abriu. Lour, que guiava Koil, morreu de fome.
+Um inverno duro matou dezenove pessoas de frio.
 
 ### Ano 238
 
-Koil passou fome no inverno por 9 dias, e 26 pessoas morreram. Apareceu no céu uma luz com rabo, que ficou 7 noites e sumiu.
+Buveik, que guiava Maor, morreu de frio. A fome no inverno durou 9 dias em Koil e levou cinco vidas.
 
-*No ano 239, nada de notável aconteceu.*
+### Ano 239
+
+Tortorar, o pacífico, morreu dormindo, aos 62 anos. Mamaela deu à luz gêmeos, Pe e Kikurur. Uns viram bênção; outros, mau sinal.
 
 ### Ano 240
 
-Nos anos 231 a 240 houve três secas, treze fomes e 21 preces que pareceram atendidas; nasceram 149 crianças e morreram 109 pessoas. No fim do ano 240, 240 pessoas viviam no mundo: Koil (92), Peak (70), Maor (47) e Kour (31).
+Nos anos 231 a 240 houve duas secas, 29 fomes e 39 preces que pareceram atendidas; nasceram 152 crianças e morreram 154 pessoas. No fim do ano 240, 264 pessoas viviam no mundo: Koil (102), Peak (76), Maor (51) e Loar (35).
 
 ### Ano 241
 
-Morreu Kikion, que falava pelo Que Acende o Céu em Koil, aos 61 anos. Viu tinha rezado: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kour deu graças ao Que Sacode. O deus não tinha feito nada. Os escribas de Kour registraram o milagre. Em Kour, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Viviya deu à luz gêmeos, Kurtame e Pekoya. Uns viram bênção; outros, mau sinal.
+Lomaos disse ter ouvido o deus de outro jeito: não era «o Senhor do Trovão», era «o Que Afoga». Loar acreditou, e o deus mudou de nome. Em Maor, Torkos pediu: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A comida voltou, e Maor deu graças à Mão Fechada. O deus nada fez: o crédito era de graça. Os escribas de Maor registraram o milagre.
 
 ### Ano 242
 
-Doik rezou por Tamur até a voz acabar. Tamur morreu mesmo assim, e Doik nunca mais rezou.
+Vik rezou por Velon até a voz acabar. Velon morreu mesmo assim, e Vik nunca mais rezou. Uma tosse que não passava matou quatro pessoas em Koil.
 
-*No ano 243, nada de notável aconteceu.*
+### Ano 243
+
+Morreu Lokoela, a generosa, aos 47 anos. Koil passou fome no inverno por 9 dias, e quinze pessoas morreram. Dodour rezou por Kimana até a voz acabar. Kimana morreu mesmo assim, e Dodour nunca mais rezou. Uma febre correu Peak e levou seis vidas. Um inverno duro matou dezoito pessoas de frio.
 
 ### Ano 244
 
-Dotamik, que guiava Koil, morreu de velhice aos 61 anos. Koil escolheu Peik para guiar o grupo. Kikiur queria o lugar e nunca perdoou. Pekuros implorou pela filha. Kidoela morreu, e daquele dia em diante Pekuros cuspia no chão quando falavam do Que Acende o Céu.
+Na primavera do ano 244, sem lugar e sem comida, Kokoela e os seus atravessaram a borda do mundo. Ninguém soube deles. Sem lugar e sem comida, Buloar e os seus atravessaram a borda do mundo. Ninguém soube deles. Peak passou fome no inverno por 9 dias, e dezesseis pessoas morreram.
 
-### Ano 245
-
-A fome no inverno durou 5 dias em Koil e levou três vidas. A doença entrou em Koil e matou sete pessoas. O frio levou Kikiur, que falava pelo Que Acende o Céu em Koil. O inverno foi de gelo: seis pessoas morreram de frio.
+*O ano 245 foi calmo.*
 
 ### Ano 246
 
-Na primavera, morreu Koik, que guiava Maor, aos 61 anos. Na guerra, tinha tirado duas vidas.
+A seca voltou, como no ano 236: 20 dias sem chuva, até que o céu se abriu.
 
 ### Ano 247
 
-Na primavera do ano 247, o templo de Kour ficou mais forte que o líder. Viu, que falava pelo Que Sacode, passou a decidir tudo. Sem lugar e sem comida, Lomar e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera do ano 247, morreu Vepeur, que falava pelo Que Rega em Koil, aos 54 anos. Vik, que guiava Koil, morreu de frio. Desde a morte de Velon, nunca mais tinha rezado. Koil escolheu Viloela para guiar o grupo. Kion queria o lugar e nunca perdoou.
 
-### Ano 248
-
-Na primavera, Dolos, que guiava Peak, morreu dormindo, aos 64 anos. Sem lugar e sem comida, Tamkiur e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Peak, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. Dessa vez, o Que Sacode não respondeu, e Kour, que tinha esquecido como se virar sozinho, pagou caro. Um inverno duro matou quatro pessoas de frio.
+*O ano 248 passou sem nada que a crônica precise guardar.*
 
 ### Ano 249
 
-Uma tosse que não passava matou quatro pessoas em Maor. Desde a febre, Maor não enterra mais ninguém: os mortos vão para o fogo.
+No verão do ano 249, a febre levou Vion, o pacífico. Um inverno duro matou quatro pessoas de frio.
 
 ### Ano 250
 
-Na primavera do ano 250, Viu, que guiava Kour, morreu de velhice aos 67 anos. Vemaya disse ter ouvido o deus de outro jeito: não era «o Que Ergue», era «o Que Afoga». Peak acreditou, e o deus mudou de nome. Em Kour, Peon pediu: «Que Sacode, não deixes nossos filhos morrerem de fome.» A fome passou, e Kour viu nisso obra do Que Sacode. O deus nada fez: o crédito era de graça. Nas tabuletas de Kour, ficou escrito que foi o Que Sacode. Nos anos 241 a 250 houve 24 fomes, 31 preces que pareceram atendidas e sete preces sem resposta; nasceram 124 crianças e morreram 101 pessoas. No fim do ano 250, 256 pessoas viviam no mundo: Koil (100), Peak (80), Maor (42) e Kour (34).
+Foram 9 dias de fome por causa da seca em Koil, com 34 mortos. Em Koil, Tamkoik pediu: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Rega. O deus não tinha feito nada. Os escribas de Koil registraram o milagre. Nos anos 241 a 250 houve quatro secas, dezesseis fomes, 28 preces que pareceram atendidas e nove preces sem resposta; nasceram 175 crianças e morreram 238 pessoas. No fim do ano 250, 198 pessoas viviam no mundo: Koil (64), Peak (66), Maor (45) e Loar (23).
 
-### Ano 251
+*O ano 251 passou sem nada que a crônica precise guardar.*
 
-Peak passou fome no inverno por 5 dias, e duas pessoas morreram.
+### Ano 252
 
-*O ano 252 foi calmo.*
+Na primavera do ano 252, Tamkoik, que falava pelo Que Rega em Koil, morreu de velhice aos 56 anos.
 
 ### Ano 253
 
-Pe partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. A febre levou Pekuros, que falava pelo Que Acende o Céu em Koil. Desde a morte de Kidoela, nunca mais tinha rezado.
+Na primavera do ano 253, Kilos, que guiava Loar, morreu dormindo, aos 55 anos.
 
-### Ano 254
+*No ano 254, nada de notável aconteceu.*
 
-Na primavera do ano 254, depois de anos sob um só, Maor sentou-se em roda: dali em diante, decidia-se juntos. Sem lugar e sem comida, Torveik e os seus atravessaram a borda do mundo. Ninguém soube deles.
+### Ano 255
 
-*O ano 255 passou sem nada que a crônica precise guardar.*
+Na primavera do ano 255, em Maor, Domaur começou a pregar que o deus não era «a Mão Fechada». Era «o Que Julga». Em poucos anos, todos rezavam assim. Kuron implorou pela filha. Tamela morreu, e daquele dia em diante Kuron cuspia no chão quando falavam do Que Rega. Uma febre correu Koil e levou nove vidas.
 
 ### Ano 256
 
-Na primavera, Doik, que falava pelo Que Acende o Céu em Koil, morreu de velhice aos 57 anos. Nunca perdoou o deus pela morte de Tamur. Dou disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «o Que Levanta». Kour acreditou, e o deus mudou de nome.
+Tamkour, o medroso, morreu de velhice aos 52 anos. Desde a morte de Dokois, nunca mais tinha rezado. Peak passou fome no inverno por 8 dias, e três pessoas morreram.
 
-### Ano 257
-
-Koya, que falava pelo Que Afoga em Peak, morreu dormindo, aos 56 anos. Desde a morte de Lour, nunca mais tinha rezado. Torik partiu com três pessoas para além da borda do mundo. Nunca voltaram.
+*O ano 257 passou sem nada que a crônica precise guardar.*
 
 ### Ano 258
 
-Morreu Kodoik, que guiava Koil, aos 65 anos. Nunca perdoou o deus pela morte de Lokoe.
+A seca voltou, como no ano 246: 21 dias sem chuva, até que o céu se abriu.
 
 ### Ano 259
 
-Na primavera, morreu Peon, que guiava Kour, aos 56 anos. Kiela tinha rezado: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Acende o Céu. O deus nada fez: o crédito era de graça. Nas tabuletas de Koil, ficou escrito que foi o Que Acende o Céu. A terra tremeu. Caíram 26 cabanas. Lovie, Kiviela, Makiela e Vimaon morreram sob os escombros.
+Em Koil, Madou pediu: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Rega. O deus não tinha feito nada. Os escribas de Koil registraram o milagre. Foram 9 dias de fome no inverno em Maor, com dois mortos. O inverno foi de gelo: cinco pessoas morreram de frio.
 
 ### Ano 260
 
-Na primavera, morreu Tampeya, que guiava Peak, aos 61 anos. Peak escolheu Makour para guiar o grupo. Tamlour queria o lugar e nunca perdoou. Linon partiu com zero pessoa para além da borda do mundo. Nunca voltaram. No inverno, Kour rezou por Tama até a voz acabar. Tama morreu mesmo assim, e Kour nunca mais rezou. Nos anos 251 a 260 houve 34 fomes e 35 preces que pareceram atendidas; nasceram 117 crianças e morreram 94 pessoas. No fim do ano 260, 267 pessoas viviam no mundo: Koil (97), Peak (83), Maor (49) e Kour (38).
+Na primavera do ano 260, Maloik, o curioso, morreu de velhice aos 70 anos. Nos anos 251 a 260 houve quatro secas, treze fomes e 24 preces que pareceram atendidas; nasceram 134 crianças e morreram 86 pessoas. No fim do ano 260, 246 pessoas viviam no mundo: Koil (98), Peak (68), Maor (47) e Loar (33).
 
 ### Ano 261
 
-Sem lugar e sem comida, Lokiya e os seus atravessaram a borda do mundo. Ninguém soube deles. Peak passou fome no inverno por 11 dias, e uma pessoa morreu.
+Lodoela, que guiava Peak, morreu dormindo, aos 53 anos.
 
-### Ano 262
-
-Dokour rezou por Kiu até a voz acabar. Kiu morreu mesmo assim, e Dokour nunca mais rezou. A doença entrou em Koil e matou quatro pessoas.
+*O ano 262 foi calmo.*
 
 ### Ano 263
 
-Pekios partiu com cinco pessoas para além da borda do mundo. Nunca voltaram.
+Makou, que falava pelo Que Rega em Koil, morreu de velhice aos 60 anos. Kotamu partiu com três pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 264
 
-No inverno, Dodois, a devota, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
+Na primavera, Maon rezou por Vevios até a voz acabar. Vevios morreu mesmo assim, e Maon nunca mais rezou. A doença entrou em Koil e matou três pessoas.
 
-*O ano 265 passou sem nada que a crônica precise guardar.*
+### Ano 265
+
+Kurvie, que falava pela Mão Fechada em Peak, não resistiu à fome.
 
 ### Ano 266
 
-Maor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Sacode.
+Na primavera, o frio levou Viloela, que guiava Koil. Koil passou fome no inverno por 9 dias, e três pessoas morreram. A fome no inverno durou 9 dias em Peak e levou 26 vidas. Um inverno duro matou cinco pessoas de frio.
 
 *No ano 267, nada de notável aconteceu.*
 
 ### Ano 268
 
-Na primavera do ano 268, Lokona, que falava pelo Que Afoga em Peak, morreu de febre aos 67 anos. Lokona tinha rezado: «Que Afoga, dá-nos o que comer.» A fome passou, e Peak viu nisso obra do Que Afoga. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Peak, ficou escrito que foi o Que Afoga. Uma febre correu Peak e levou cinco vidas.
+Lomaos, que falava pelo Que Afoga em Loar, morreu dormindo, aos 53 anos.
 
 ### Ano 269
 
-Na primavera, Kikurik, que guiava Koil, morreu dormindo, aos 69 anos. Vevik partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Koil escolheu Kopena para guiar o grupo. Kuros queria o lugar e nunca perdoou. Em Koil, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. O frio levou Vik, que falava pelo Que Levanta em Kour.
+Kitoru deu à luz gêmeos, Halos e Haloim. Uns viram bênção; outros, mau sinal. A doença entrou em Peak e matou quatro pessoas. A terra tremeu. Caíram 32 cabanas. Tampena, Kiela, Mamaur, Dodoela, Mavira e Koya morreram sob os escombros.
 
 ### Ano 270
 
-Na primavera, numa tempestade sobre a floresta, um raio matou Los. Ninguém em Peak teve dúvida: era castigo. Peak passou fome no inverno por 9 dias, e dezoito pessoas morreram. Nos anos 261 a 270 houve 31 fomes, 28 preces que pareceram atendidas e seis preces sem resposta; nasceram 98 crianças e morreram 137 pessoas. No fim do ano 270, 212 pessoas viviam no mundo: Koil (81), Peak (60), Maor (39) e Kour (32).
+Na primavera do ano 270, Koela, a corajosa, morreu dormindo, aos 64 anos. Dobur implorou pelo filho. Dour morreu, e daquele dia em diante Dobur cuspia no chão quando falavam do Que Julga. De novo a chuva sumiu, como no ano 258. Foram 24 dias de seca. Nos anos 261 a 270 houve duas secas, onze fomes e 25 preces que pareceram atendidas; nasceram 138 crianças e morreram 155 pessoas. No fim do ano 270, 226 pessoas viviam no mundo: Koil (95), Peak (65), Maor (38) e Loar (28).
 
-*O ano 271 passou sem nada que a crônica precise guardar.*
+### Ano 271
+
+Loloela partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Maik tinha rezado: «Que Afoga, não deixes nossos filhos morrerem de fome.» A comida voltou, e Loar deu graças ao Que Afoga. Foi só o tempo, mas quem iria dizer? A fome no inverno durou 9 dias em Maor e levou onze vidas.
 
 ### Ano 272
 
-Kopena, que guiava Koil, morreu dormindo, aos 53 anos. Tammaik implorou pelo filho. Kos morreu, e daquele dia em diante Tammaik cuspia no chão quando falavam do Que Levanta.
+Na primavera, morreu Vela, que falava pelo Que Rega em Koil, aos 67 anos. Morreu Dodoar, o medroso, aos 51 anos.
 
 *No ano 273, nada de notável aconteceu.*
 
 ### Ano 274
 
-Na primavera, Peloik não esperou a vez: tomou o comando de Peak à força, e o conselho dos velhos se calou. Lokiela rezou por Doik até a voz acabar. Doik morreu mesmo assim, e Lokiela nunca mais rezou. Foram 9 dias de fome no inverno em Koil, com seis mortos. A fome no inverno durou 9 dias em Maor e levou treze vidas. Sem lugar e sem comida, Lokurim e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera do ano 274, em Peak, Kina começou a pregar que o deus não era «a Mão Fechada». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim.
 
-*O ano 275 passou sem nada que a crônica precise guardar.*
+### Ano 275
+
+Na primavera, Loveos não esperou a vez: tomou o comando de Loar à força, e o conselho dos velhos se calou.
 
 ### Ano 276
 
-Na primavera do ano 276, Dou, que falava pelo Que Levanta em Kour, morreu de velhice aos 52 anos.
+Morreu Kodos, o ambicioso, aos 59 anos. Mapeik partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. No verão, o sol escureceu outra vez.
 
 ### Ano 277
 
-Com lanças e promessas, Tamkion acabou com o conselho de Koil e passou a mandar sozinho. Sem lugar e sem comida, Kipeur e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Koil, Kiela pediu: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Acende o Céu. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Koil, ficou escrito que foi o Que Acende o Céu.
+Na primavera do ano 277, Maveur, que falava pelo Que Rega em Koil, morreu de velhice aos 59 anos. No verão, Veon rezou por Velou até a voz acabar. Velou morreu mesmo assim, e Veon nunca mais rezou. A doença entrou em Koil e matou quatro pessoas.
 
 ### Ano 278
 
-Na primavera do ano 278, morreu Vemaya, a rancorosa, aos 47 anos. Mae deu à luz gêmeos, Doloya e Kurkik. Uns viram bênção; outros, mau sinal. A doença entrou em Koil e matou quatro pessoas. No outono, o sol escureceu outra vez.
+Na primavera do ano 278, Domaur, o rancoroso, morreu de repente, aos 41 anos. Bur passou a guiar Peak, mas Komaik não aceitou e guardou rancor.
 
 ### Ano 279
 
-Sem lugar e sem comida, Pekoik e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Foram 9 dias de fome no inverno em Koil, com dez mortos. A fome no inverno durou 9 dias em Peak e levou dezenove vidas.
 
 ### Ano 280
 
-Nos anos 271 a 280 houve catorze fomes, vinte preces que pareceram atendidas e sete preces sem resposta; nasceram 179 crianças e morreram 95 pessoas. No fim do ano 280, 283 pessoas viviam no mundo: Koil (102), Peak (88), Maor (55) e Kour (38).
+Sem lugar e sem comida, Haela e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Koil, Koveu pediu: «Que Rega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Rega. Foi só o tempo, mas quem iria dizer? Os escribas de Koil registraram o milagre. Nos anos 271 a 280 houve três secas, dezesseis fomes e 25 preces que pareceram atendidas; nasceram 149 crianças e morreram 146 pessoas. No fim do ano 280, 207 pessoas viviam no mundo: Koil (82), Peak (59), Maor (39) e Loar (27).
 
 ### Ano 281
 
-Peloik, que guiava Peak, morreu de velhice aos 54 anos. Lotama disse ter ouvido o deus de outro jeito: não era «o Que Afoga», era «o Que Acende o Céu». Peak acreditou, e o deus mudou de nome. Mavik rezou por Dodoik até a voz acabar. Dodoik morreu mesmo assim, e Mavik nunca mais rezou. Uma tosse que não passava matou quatro pessoas em Koil. Um inverno duro matou quatro pessoas de frio.
+Kurur, que guiava Koil, morreu dormindo, aos 54 anos. No verão, Mamais implorou pelo filho. Vear morreu, e daquele dia em diante Mamais cuspia no chão quando falavam do Que Julga.
 
-### Ano 282
+*O ano 282 foi calmo.*
 
-Na primavera do ano 282, sem lugar e sem comida, Raos e os seus atravessaram a borda do mundo. Ninguém soube deles.
+### Ano 283
 
-*O ano 283 passou sem nada que a crônica precise guardar.*
+Na primavera, em Loar, Lovios começou a pregar que o deus não era «o Que Afoga». Era «a Chama de Cima». Em poucos anos, todos rezavam assim.
 
 ### Ano 284
 
-Kiela, que falava pelo Que Acende o Céu em Koil, morreu de repente, aos 40 anos. Pela, que falava pelo Que Acende o Céu em Peak, morreu de velhice aos 61 anos.
+Lokou, que guiava Koil, morreu dormindo, aos 61 anos.
 
 ### Ano 285
 
-Na primavera do ano 285, morreu Makour, que guiava Peak, aos 63 anos. Nunca perdoou o deus pela morte de Loloik. Uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito. Veya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Peak escolheu Lodour para guiar o grupo. Pekiela queria o lugar e nunca perdoou. Depois de tanta briga pelo comando, Peak passou a ser guiado por um conselho dos mais velhos.
+No verão do ano 285, houve luta na praia: Maor atacou Loar em nome do Que Julga. Loar foi derrotado e perdeu o que tinha guardado. Haos, Halos e Lomaim morreram na luta. Pedoya deu à luz gêmeos, Vipeos e Pekoe. Uns viram bênção; outros, mau sinal. No outono, em nome do Que Julga, Lomaik proibiu casamentos e trocas com Loar. Era vontade de Lomaik, não do deus. A terra tremeu. Caíram 24 cabanas. Kolos, Petamos, Kikuron, Vimae, Loloik, Veveya, Tamdour, Dotamos, Lolou, Dobur, Ramaik, Toros e Vim morreram sob os escombros.
 
 ### Ano 286
 
-Kikurela disse ter ouvido o deus de outro jeito: não era «o Que Acende o Céu», era «o Que Julga». Koil acreditou, e o deus mudou de nome. Pepeya tinha rezado: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Peak viu nisso obra do Que Acende o Céu. O deus nada fez: o crédito era de graça. Nas tabuletas de Peak, ficou escrito que foi o Que Acende o Céu. A fome no inverno durou 14 dias em Koil e levou uma vida.
+Morreu Buik, o corajoso, aos 64 anos. Começou a Guerra da Fome da Praia: Maor, com fome, foi buscar à força a comida de Loar. Na Guerra da Fome da Praia, Maor atacou Loar na praia. Loar foi derrotado e perdeu o que tinha guardado. Na luta morreram Peos e Torpera. Depois de tantos mortos, Maor e Loar se encontraram na praia e juraram paz. Depois de um ano, duas batalhas e cinco mortos, a Guerra da Fome da Praia terminou em paz. Maor saiu dela mais forte.
 
 ### Ano 287
 
-Na primavera do ano 287, Lobuis partiu com cinco pessoas para além da borda do mundo. Nunca voltaram.
+Uma tosse que não passava matou três pessoas em Koil.
 
 ### Ano 288
 
-Morreu Madour, que falava pelo Que Acende o Céu em Peak, aos 53 anos. Uma tosse que não passava matou quatro pessoas em Peak. Uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. Maos partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
+Na primavera, Bur rezou por Lokik até a voz acabar. Lokik morreu mesmo assim, e Bur nunca mais rezou. De novo a chuva sumiu, como no ano 270. Foram 22 dias de seca.
 
 ### Ano 289
 
-A fome no inverno durou 9 dias em Koil e levou oito vidas. Depois de tantas preces sem resposta, Koil concluiu que tinha pecado. Era preciso pagar. Procuraram uma culpada e acharam Tamya, que duvidava. Começaram as oferendas: frutas e peixe deixados no chão para o Que Julga. Acharam em Tamya a culpada: ela duvidava. Mataram-na diante de todos. O inverno foi de gelo: catorze pessoas morreram de frio.
+Torlou disse ter ouvido o deus de outro jeito: não era «o Que Rega», era «a Mãe da Fartura». Koil acreditou, e o deus mudou de nome. Em Loar, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Chama de Cima». Koil passou fome no inverno por 9 dias, e 28 pessoas morreram. Foram 9 dias de fome no inverno em Maor, com seis mortos. No outono, em nome da Mãe da Fartura, Veon proibiu casamentos e trocas com Loar. Era vontade de Veon, não do deus.
 
 ### Ano 290
 
-Nos anos 281 a 290 houve 32 fomes, 33 preces que pareceram atendidas e seis preces sem resposta; nasceram 102 crianças e morreram 141 pessoas. No fim do ano 290, 221 pessoas viviam no mundo: Koil (85), Peak (63), Maor (38) e Kour (35).
+Maik, que guiava Loar, morreu de velhice aos 66 anos. Nos anos 281 a 290 houve treze fomes, duas batalhas, 25 preces que pareceram atendidas e quatro preces sem resposta; nasceram 142 crianças e morreram 133 pessoas. No fim do ano 290, 217 pessoas viviam no mundo: Koil (89), Peak (67), Maor (41) e Loar (20).
 
 ### Ano 291
 
-A tempestade trouxe raios para o morro. Um deles acertou Torar. Ninguém em Maor teve dúvida: era castigo.
+Na primavera, Veon, que falava pela Mãe da Fartura em Koil, morreu dormindo, aos 53 anos. Desde a morte de Velou, nunca mais tinha rezado.
 
-*Os anos 292 a 294 passaram em paz.*
+### Ano 292
+
+No inverno, Tamik implorou pela filha. Kie morreu, e daquele dia em diante Tamik cuspia no chão quando falavam da Mãe da Fartura. Os de Koil caíram sobre Loar na praia em nome da Mãe da Fartura. Loar foi derrotado e perdeu o que tinha guardado. Vikoe, Kios e Matorik morreram na luta.
+
+### Ano 293
+
+Kurvion tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra da Mãe da Fartura. O deus não tinha feito nada. Os escribas de Koil registraram o milagre. Ratamela, que guiava Peak, morreu de frio. No verão, em nome do Que Julga, Lomaik proibiu casamentos e trocas com Loar. Era vontade de Lomaik, não do deus. No inverno, os de Maor caíram sobre Loar na praia em nome do Que Julga. Loar foi derrotado e perdeu o que tinha guardado. Lovios e Veloela morreram na luta.
+
+*O ano 294 foi calmo.*
 
 ### Ano 295
 
-Vetamik partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Veos implorou pela filha. Viu morreu, e daquele dia em diante Veos cuspia no chão quando falavam do Que Julga. Kurik tinha rezado: «Que Levanta, dá-nos o que comer.» A comida voltou, e Kour deu graças ao Que Levanta. Foi só o tempo, mas quem iria dizer? Os escribas de Kour registraram o milagre. Uma febre correu Koil e levou quatro vidas. De novo o sol se apagou no meio do dia.
+Loar disse ter ouvido o deus de outro jeito: não era «o Que Julga», era «o Que Rega». Maor acreditou, e o deus mudou de nome. Começou a Guerra Santa da Praia: em nome da Mãe da Fartura, Koil pegou em lanças contra Loar. A Guerra Santa da Praia seguiu: Koil contra Loar, na praia em nome da Mãe da Fartura. Loar foi derrotado e perdeu o que tinha guardado. Na luta morreram Kitorik e Vikios.
 
 ### Ano 296
 
-Na primavera do ano 296, morreu Dodois, a devota, aos 65 anos. No inverno, Komaur implorou pela filha. Lou morreu, e daquele dia em diante Komaur cuspia no chão quando falavam do Que Acende o Céu. A seca voltou, como no ano 237: 25 dias sem chuva, até que o céu se abriu.
+Na primavera do ano 296, Loar, o devoto, morreu dormindo, aos 52 anos. Koil passou fome no inverno por 8 dias, e 27 pessoas morreram. Começou a Segunda Guerra Santa: em nome do Que Rega, Maor pegou em lanças contra Loar. O inverno foi de gelo: 22 pessoas morreram de frio.
 
 ### Ano 297
 
-Tamveur, que falava pelo Que Julga em Koil, morreu dormindo, aos 67 anos. Sem lugar e sem comida, Linlinu e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Peak, com oito mortos. Pepeya, a corajosa, morreu de frio.
+Na primavera, depois de anos sob um só, Koil sentou-se em roda: dali em diante, decidia-se juntos. A Guerra Santa da Praia seguiu: Loar contra Koil, no lago. Koil expulsou os atacantes. Na luta morreu Mara. No verão, morreu o último que sabia fazer canais e moinhos, e ninguém tinha aprendido. Loar perdeu o saber. No inverno, Doya deu à luz gêmeos, Lokou e Tamu. Uns viram bênção; outros, mau sinal.
 
-### Ano 298
+*O ano 298 passou sem nada que a crônica precise guardar.*
 
-Peveya partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+### Ano 299
 
-*O ano 299 foi calmo.*
+A Segunda Guerra Santa esfriou sem acordo nem vencedor: seis anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Maor saiu dela mais forte.
 
 ### Ano 300
 
-A terra tremeu. Caíram 24 cabanas. Kurur, Kidoela, Kik, Vidoe, Love, Mana, Dolona, Mais, Vemaos e Vitame morreram sob os escombros. Nos anos 291 a 300 houve duas secas, treze fomes e dezenove preces que pareceram atendidas; nasceram 145 crianças e morreram 105 pessoas. No fim do ano 300, 247 pessoas viviam no mundo: Koil (97), Peak (68), Maor (49) e Kour (33).
+Na primavera do ano 300, com lanças e promessas, Vekik acabou com o conselho de Koil e passou a mandar sozinho. Apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu. No verão, a Guerra Santa da Praia esfriou sem acordo nem vencedor: oito anos, quatro batalhas e sete mortos, e ninguém sabia mais por que lutava. Koil saiu dela mais forte. Nos anos 291 a 300 houve duas secas, nove fomes, seis batalhas e treze preces que pareceram atendidas; nasceram 152 crianças e morreram 125 pessoas. No fim do ano 300, 245 pessoas viviam no mundo: Koil (104), Peak (86), Maor (43) e Loar (12).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Koil** vive no lago, com 97 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Que Julga»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 147); treina os jovens com lanças (desde o ano 201); queima os mortos (desde o ano 215); deixa oferendas no começo de cada estação (desde o ano 289).
-- **Peak** vive na floresta, com 68 pessoas, com canais e moinhos; nasceu de uma briga em Koil no ano 23; chama o deus de «o Que Acende o Céu»; costumes: queima os mortos (desde o ano 59); guarda tanta comida para o inverno (desde o ano 60); não desperdiça uma gota d'água (desde o ano 78); faz a festa da chuva (desde o ano 113); não sai de casa em dia de tempestade (desde o ano 120).
-- **Maor** vive no morro, com 49 pessoas, com canais e moinhos; nasceu de uma migração em Peak no ano 50; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 131); não sai de casa em dia de tempestade (desde o ano 197); não desperdiça uma gota d'água (desde o ano 220); queima os mortos (desde o ano 249).
-- **Kour** vive na praia, com 33 pessoas, com canais e moinhos; nasceu de uma migração em Koil no ano 210; chama o deus de «o Que Levanta»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 201); faz a festa da chuva (desde o ano 214).
+- **Koil** vive no lago, com 104 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «a Mãe da Fartura»; costumes: guarda tanta comida para o inverno (desde o ano 76); não desperdiça uma gota d'água (desde o ano 78); queima os mortos (desde o ano 78); treina os jovens com lanças (desde o ano 135); não sai de casa em dia de tempestade (desde o ano 234).
+- **Peak** vive na floresta, com 86 pessoas, com canais e moinhos; nasceu de uma briga em Koil no ano 23; chama o deus de «a Mãe de Dois»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 78); treina os jovens com lanças (desde o ano 90); faz a festa da chuva (desde o ano 101); não sai de casa em dia de tempestade (desde o ano 105); queima os mortos (desde o ano 187).
+- **Maor** vive no morro, com 43 pessoas, com canais e moinhos; nasceu de uma migração em Peak no ano 50; chama o deus de «o Que Rega»; costumes: guarda tanta comida para o inverno (desde o ano 86); treina os jovens com lanças (desde o ano 92); não sai de casa em dia de tempestade (desde o ano 98); faz a festa da chuva (desde o ano 105); não desperdiça uma gota d'água (desde o ano 111); queima os mortos (desde o ano 160).
+- **Loar** vive na praia, com 12 pessoas, e escreve; nasceu de uma migração em Peak no ano 141; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 162); treina os jovens com lanças (desde o ano 170); não sai de casa em dia de tempestade (desde o ano 191).
 
-Povos que deixaram de existir: Viak, Ulur e Tamor.
+Povos que deixaram de existir: Viak e Maon.
 
-Lugares com nome: Praia da Vitória (praia, para Maor), Praia do Luto (praia, para Viak), Praia da Vitória (praia, para Koil), Praia da Vitória (praia, para Ulur), Praia da Vitória (praia, para Peak), Praia do Raio (praia, para Tamor), Praia do Luto (praia, para Kour), Lago da Fome (lago, para Koil), Lago do Luto (lago, para Maor), Floresta da Fome (floresta, para Peak), Floresta da Trégua (floresta, para Maor), Morro da Trégua (morro, para Koil), Morro da Trégua (morro, para Maor) e Morro da Vitória (morro, para Peak).
+Lugares com nome: Praia da Vitória (praia, para Maor), Praia do Luto (praia, para Viak), Praia da Trégua (praia, para Maon), Praia do Luto (praia, para Koil), Praia da Vitória (praia, para Loar), Praia da Vitória (praia, para Peak), Lago da Fome (lago, para Koil), Floresta da Fome (floresta, para Peak), Floresta da Vitória (floresta, para Maor), Morro da Trégua (morro, para Koil), Morro da Trégua (morro, para Maor) e Morro da Vitória (morro, para Peak).
 
-Em 300 anos nasceram 3108 pessoas e morreram 2744.
+Em 300 anos nasceram 3246 pessoas e morreram 2873.

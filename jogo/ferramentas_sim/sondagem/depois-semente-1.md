@@ -266,775 +266,781 @@ A fome no inverno durou 9 dias em Sagak e levou 22 vidas.
 
 ### Ano 90
 
-Sagak não esqueceu o ano 86 e atacou Faur outra vez. Faur foi derrotado e perdeu o que tinha guardado. Farilem e Rilbera morreram na luta. Depois da derrota, os jovens de Faur passaram a treinar com lanças. Milinik não podia mais viver perto de Lora. Saiu de Sagak com dezoito pessoas e fundou Faon na praia. As ruínas de Selan viraram aviso em Faon: era o que o deus fazia com quem o desagradava. No inverno, em Faon nasceu a primeira criança: Miloik, filho de Beu e Milinik. Nos anos 81 a 90 houve três secas, cinco fomes, duas batalhas, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram 63 crianças e morreram 51 pessoas. No fim do ano 90, 105 pessoas viviam no mundo: Sagak (60), Faur (26) e Faon (19).
+Milinik, que guiava Sagak, morreu dormindo, aos 57 anos. Foi quem proibiu, em nome do deus, o trato com Faur. Nos anos 81 a 90 houve três secas, cinco fomes, doze preces que pareceram atendidas e três preces sem resposta; nasceram 60 crianças e morreram 50 pessoas. No fim do ano 90, 103 pessoas viviam no mundo: Sagak (77) e Faur (26).
 
 ### Ano 91
 
-No outono, em Faon, Gau tomou para si o cuidado das preces ao Olho Escuro.
+Na primavera, Enniem, que falava pelo Olho Escuro em Sagak, morreu dormindo, aos 51 anos.
 
 ### Ano 92
 
-No verão do ano 92, o sol escureceu outra vez. Para Faur, o deus já não era «o Que Risca o Céu»: passou a ser «o Olho Escuro».
+Na primavera do ano 92, Faur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Faur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Vior rezou por Linloem até a voz acabar. Linloem morreu mesmo assim, e Vior nunca mais rezou.
 
 ### Ano 93
 
-Na primavera do ano 93, Sela, que guiava Sagak, morreu dormindo, aos 51 anos. Morreu Milinik, que fundou Faon e o guiava, aos 60 anos. Tinha fundado Faon.
+No inverno do ano 93, Linor não podia mais viver perto de Gau. Saiu de Sagak com vinte pessoas e fundou Miar na praia. Diante das ruínas de Selan, Miar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 94
 
-Lout, que guiava Sagak, morreu de velhice aos 60 anos. Vior pregou em Faon que o deus não era «o Olho Escuro», mas «a Chama de Cima». O templo chamou aquilo de heresia, e Vior saiu com os que o seguiam. Os que ainda rezavam, com Vior à frente, deixaram Faon, que tinha deixado de crer, e fundaram Raur no morro. Ali o deus se chama «a Chama de Cima». Com Gau à frente, a nova geração de Faon abandonou a festa da chuva, costume herdado dos avós. As ruínas de Selan viraram aviso em Raur: era o que o deus fazia com quem o desagradava.
+Em Sagak, gritaram que o templo mentia em nome do Olho Escuro. Os sacerdotes foram tirados do poder. Em Miar, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 24, só a crônica guarda. Em Sagak, Gau pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Sagak deu graças ao Olho Escuro. O deus não tinha feito nada. Nas tabuletas de Sagak, ficou escrito que foi o Olho Escuro. Gau anunciou que o Olho Escuro proibia qualquer trato com Miar. O deus nunca disse isso, mas Sagak obedeceu. Nasceu Miu, a primeira de Miar.
 
 ### Ano 95
 
-Com Gau à frente, a nova geração de Faon abandonou o medo das tempestades, costume herdado dos avós. De novo Sagak contra Faur em nome do Olho Escuro, como no ano 90. Faur foi derrotado e perdeu o que tinha guardado. Na luta morreram Enem e Gaselut. Faur fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Sagak e Faur, cansados de enterrar os seus, fizeram as pazes no lago. No verão, Nik, o engenhoso, inventou marcas que guardavam palavras.
+Enbeik, que guiava Faur, morreu dormindo, aos 69 anos. Sagak já não cabia na floresta. Mia, a corajosa, levou treze pessoas para o morro e fundou Gaum. Em Miar, Miut tomou para si o cuidado das preces ao Olho Escuro. Gamia, de Miar, casou-se com Lorilem e foi viver em Faur. Foi o primeiro laço entre os dois povos. Gaum encontrou as ruínas de Selan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 96
 
-No inverno do ano 96, Vior, que guiava Raur, teve um filho: Arbem.
+Em Gaum, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 47, só a crônica guarda.
 
 ### Ano 97
 
-Na primavera, Selor, de Raur, tomou por esposa Doa, de Faur, e os dois povos passaram a se visitar. Nia, que falava pelo Olho Escuro em Faur, morreu ao dar à luz.
+No verão, a tempestade trouxe raios para o morro. Um deles acertou Mia. A família de Mia nunca perdoou o céu. Depois disso, Gaum deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Fere». O lugar ganhou nome: Morro do Raio.
 
 ### Ano 98
 
-Em Sagak, Enniem pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Os escribas de Sagak registraram o milagre.
+Na primavera do ano 98, Lout, o engenhoso, morreu dormindo, aos 64 anos. Morreu Enor, o rancoroso, aos 54 anos. Na guerra, tinha tirado três vidas. A terra tremeu. Caíram catorze cabanas. Galout, Sagaor, Farilem, Belora, Lor, Miu e Gaem morreram sob os escombros. Para Faur, o deus já não era «o Que Risca o Céu»: passou a ser «a Terra Brava». Para Miar, o deus já não era «o Olho Escuro»: passou a ser «a Terra Brava».
 
 ### Ano 99
 
-Faur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Faur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, Lorilem, o curioso, aprendeu a levar a água por canais e a fazer o vento moer o grão.
+Miut tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Miar duvidou de que a Terra Brava tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 100
 
-Na primavera, morreu Vior, que fundou Raur e o guiava, aos 49 anos. Tinha fundado Raur. Nos anos 91 a 100 houve três fomes e sete preces que pareceram atendidas; nasceram 99 crianças e morreram 32 pessoas. No fim do ano 100, 172 pessoas viviam no mundo: Sagak (90), Faur (42), Faon (9) e Raur (31).
+Na primavera do ano 100, com Enem à frente, a nova geração de Faur abandonou o medo das tempestades, costume herdado dos avós. No inverno, Gau, que guiava Sagak, deu à luz e não sobreviveu ao parto. Foi quem proibiu, em nome do deus, o trato com Miar. Nos anos 91 a 100 houve duas secas, três fomes e catorze preces que pareceram atendidas; nasceram 76 crianças e morreram 33 pessoas. No fim do ano 100, 146 pessoas viviam no mundo: Sagak (73), Faur (40), Miar (22) e Gaum (11).
 
 ### Ano 101
 
-No outono do ano 101, Sagak atacou Faon na praia. Sagak venceu e levou a comida guardada. Linselor e Gau morreram na luta. O mesmo chão ganhou dois nomes: Praia da Vitória para Sagak, Praia do Luto para Faon. De novo a chuva sumiu, como no ano 79. Foram 20 dias de seca. Enniem, que falava pelo Olho Escuro em Sagak, não resistiu à fome.
+No outono, a terra tremeu. Caíram dezessete cabanas. Lolinor, Selselor, Selem e Bevira morreram sob os escombros.
 
 ### Ano 102
 
-Enor, que guiava Faur, morreu de velhice aos 58 anos. Na guerra, tinha tirado três vidas. Faur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Sagak atacou Faur no lago em nome do Olho Escuro. Faur foi derrotado e perdeu o que tinha guardado. Nik, Selem, Faem e Gaor morreram na luta. A fome no inverno durou 11 dias em Sagak e levou dezesseis vidas. No inverno, com canais e moinhos, Faur já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Rilik, de Faur, tomou por esposa Niviu, de Gaum, e os dois povos passaram a se visitar. Saut implorou pela filha. Visara morreu, e daquele dia em diante Saut cuspia no chão quando falavam do Olho Escuro. A seca voltou, como no ano 79: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 103
 
-Na primavera do ano 103, em Faur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Começou a Guerra dos Irmãos: Sagak e Faon, nascidos do mesmo povo, viraram inimigos. Depois de tanto sofrer nas mãos dos vizinhos, Faon passou a desconfiar de todo estrangeiro. Sagak venceu Faon e levou os cinco sobreviventes para viver sob seu mando. Faon deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra dos Irmãos terminou com a conquista: dois anos, duas batalhas e três mortos.
+Sagak passou fome no inverno por 9 dias, e duas pessoas morreram.
 
 ### Ano 104
 
-Na primavera do ano 104, em Raur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Começou a Guerra Santa: em nome do Olho Escuro, Sagak pegou em lanças contra Faur. Lora, que guiava Raur, morreu ao dar à luz.
+Faur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Linniu, de Gaum, casou-se com Mibem e foi viver em Miar. Foi o primeiro laço entre os dois povos.
 
-### Ano 105
-
-No verão, na Guerra Santa, Sagak atacou Faur no lago em nome do Olho Escuro. Faur foi derrotado e perdeu o que tinha guardado. Na luta morreram Beik e Doik. Sagak e Faur, cansados de enterrar os seus, fizeram as pazes no lago. Depois de três anos, seis batalhas e doze mortos, a Guerra Santa terminou em paz. Sagak saiu dela mais forte.
+*O ano 105 passou sem nada que a crônica precise guardar.*
 
 ### Ano 106
 
-No verão, Sagak atacou Raur no morro. Sagak venceu e levou a comida guardada. Saut e Viselor morreram na luta. Depois de tanto sofrer nas mãos dos vizinhos, Raur passou a desconfiar de todo estrangeiro. Selor passou a guiar Raur, mas Miem não aceitou e guardou rancor.
+Na primavera, Linor, que fundou Miar e o guiava, morreu dormindo, aos 62 anos. Foi quem levou os seus a fundar Miar.
 
-### Ano 107
-
-Na primavera do ano 107, começou a Guerra do Morro: o rancor entre Sagak e Raur virou guerra. A Guerra do Morro seguiu: Sagak contra Raur, no morro. Sagak venceu e levou a comida guardada. Na luta morreram Selor e Miem. Mia tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Olho Escuro. A crônica sabe que foi acaso. Os escribas de Sagak registraram o milagre.
+*O ano 107 passou sem nada que a crônica precise guardar.*
 
 ### Ano 108
 
-Com Sau à frente, 21 pessoas deixaram Sagak e fundaram Viem, na praia. Diante das ruínas de Faon, Viem disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, a Guerra do Morro seguiu: Sagak contra Raur, no morro. Sagak venceu e levou a comida guardada. Fasuem e Nivik morreram na luta. Em Viem, Beenor tomou para si o cuidado das preces ao Olho Escuro. Nas ruínas de Faon, Via achou o que eles sabiam: aprendeu a cortar pedra.
+Na primavera, Rilbera, que falava pela Terra Brava em Faur, morreu de velhice aos 51 anos.
 
 ### Ano 109
 
-Em Viem, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 24, só a crônica guarda. Morreu o último que tinha visto o ano 47. Em Viem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Viem nasceu a primeira criança: Belim, filho de Sau e Beenor. No verão, nas ruínas de Faon, Gara achou o que eles sabiam: aprendeu a cortar pedra.
+Linut, que falava pelo Que Fere em Gaum, morreu dormindo, aos 50 anos. Em Gaum, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Sem lugar e sem comida, Sau e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Linlora passou a falar pelo Que Fere em Gaum. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 110
 
-Na primavera do ano 110, em Viem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Arara passou a falar pela Chama de Cima em Raur. Era a primeira a rezar e a última a duvidar. Nos anos 101 a 110 houve seis fomes, doze batalhas, 21 preces que pareceram atendidas e sete preces sem resposta; nasceram 81 crianças e morreram 69 pessoas. No fim do ano 110, 184 pessoas viviam no mundo: Sagak (76), Faur (50), Raur (34) e Viem (24).
+Selsa deu à luz gêmeos, Tora e Toa. Uns viram bênção; outros, mau sinal. Miut tinha rezado: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Miar agradeceu à Terra Brava. Foi só o tempo, mas quem iria dizer? Nos anos 101 a 110 houve duas secas, duas fomes, doze preces que pareceram atendidas e três preces sem resposta; nasceram 79 crianças e morreram 33 pessoas. No fim do ano 110, 182 pessoas viviam no mundo: Sagak (77), Faur (64), Miar (32) e Gaum (9).
 
 ### Ano 111
 
-Gabeu, de Viem, casou-se com Viem e foi viver em Sagak. Foi o primeiro laço entre os dois povos. No outono, a Guerra do Morro seguiu: Sagak contra Raur, no morro. Sagak venceu e levou a comida guardada. Na luta morreram Miloik e Miut. Depois de tantos mortos, Sagak e Raur se encontraram no morro e juraram paz. A Guerra do Morro acabou em trégua, depois de cinco anos, cinco batalhas e nove mortos. Sagak saiu dela mais forte. De novo a chuva sumiu, como no ano 101. Foram 21 dias de seca.
+Loik, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. No inverno, nasceu Nuik, filho de Bera e Vienut, com sangue de Gaum e de Miar.
 
 ### Ano 112
 
-Linor morreu com 9 anos, de uma febre que ninguém entendeu. A fome durou 6 dias em Sagak e levou uma vida. No outono, Saik rezou por Losa até a voz acabar. Losa morreu mesmo assim, e Saik nunca mais rezou.
+Na primavera do ano 112, Enem, que guiava Faur, morreu dormindo, aos 55 anos. Em Miar, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam.
 
 ### Ano 113
 
-Na primavera, Sagak atacou Faur no lago em nome do Olho Escuro. Sagak venceu e levou a comida guardada. Na luta morreram Loloem, Nifaut e Lina. Niut passou dias nas ruínas de Faon e voltou sabendo trabalhar o metal. Começou a Guerra Santa do Lago: em nome do Olho Escuro, Sagak pegou em lanças contra Faur. Sagak e Faur, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra Santa do Lago acabou em trégua, depois de duas batalhas e seis mortos. Sagak saiu dela mais forte.
+Morreu o último que tinha visto o ano 51. Em Miar, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê.
 
 ### Ano 114
 
-Dodoia, de Faur, casou-se com Saenor e foi viver em Viem. Foi o primeiro laço entre os dois povos. A forja de Viem não apagava mais. O metal mudou o trabalho e mudou a guerra. No inverno, a terra tremeu. Caíram catorze cabanas. Mibem, Bea, Niu, Gaem e Miu morreram sob os escombros. Para Viem, o deus já não era «o Olho Escuro»: passou a ser «o Que Sacode».
+No verão do ano 114, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. No inverno, com canais e moinhos, Faur já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
-### Ano 115
-
-Sem lugar e sem comida, Lingaik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No outono, Niut passou dias nas ruínas de Faon e voltou sabendo ler as marcas antigas. No inverno, Mia, a corajosa, morreu de febre aos 55 anos. Na guerra, tinha tirado três vidas. A doença entrou em Sagak e matou doze pessoas.
+*No ano 115, nada de notável aconteceu.*
 
 ### Ano 116
 
-Na primavera do ano 116, Linut, o medroso, morreu de velhice aos 57 anos. Na guerra, tinha tirado duas vidas. Sagak passou fome no inverno por 9 dias, e dez pessoas morreram. Em Sagak, Mia pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Olho Escuro. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Sagak, ficou escrito que foi o Olho Escuro. No outono, Sagak atacou Viem na praia. Viem foi derrotado e perdeu o que tinha guardado. Sau e Beenor morreram na luta. Para Viem, a praia virou Praia do Luto.
+Morreu Nia, que guiava Faur, aos 57 anos. Gabem partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Tantas preces atendidas fizeram Miar confiar no céu mais do que nas próprias mãos.
 
 ### Ano 117
 
-Envik, que falava pelo Olho Escuro em Sagak, morreu de velhice aos 46 anos. No verão, nas ruínas de Faon, Niut achou o que eles sabiam: aprendeu a ler as marcas antigas. Começou a Guerra dos Irmãos da Praia: Sagak e Viem, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos da Praia seguiu: Sagak contra Viem, na praia. Viem foi derrotado e perdeu o que tinha guardado. Via e Dodoia morreram na luta. Linena deu à luz gêmeos, Mior e Beviem. Uns viram bênção; outros, mau sinal.
+Em nome da Terra Brava, Miut proibiu casamentos e trocas com Gaum. Era vontade de Miut, não do deus. Dessa vez, a Terra Brava não respondeu, e Miar, que tinha esquecido como se virar sozinho, pagou caro. Mibem rezou por Mitoem até a voz acabar. Mitoem morreu mesmo assim, e Mibem nunca mais rezou. Uma febre correu Miar e levou duas vidas.
 
 ### Ano 118
 
-Na primavera, cansado de um líder que mandava sozinho, Faur passou a decidir em conselho. A guerra entre Sagak e Faur continuou: Sagak voltou a atacar no lago em nome do Olho Escuro. Faur foi derrotado e perdeu o que tinha guardado. Na luta morreram Lorilem e Sellinu. No verão, nas ruínas de Faon, Enloik achou o que eles sabiam: aprendeu a ler as marcas antigas.
+Na primavera do ano 118, Lora, que guiava Gaum, morreu dormindo, aos 53 anos. Em Miar, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. No outono, um raio caiu no morro durante a tempestade e matou Bera. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Gaum sai de casa. Lembram de Bera.
 
-*O ano 119 passou sem nada que a crônica precise guardar.*
+### Ano 119
+
+Miut tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Miar viu nisso obra da Terra Brava. O deus não tinha feito nada.
 
 ### Ano 120
 
-Aron tinha rezado: «Chama de Cima, não deixes nossos filhos morrerem de fome.» A fome passou, e Raur viu nisso obra da Chama de Cima. A crônica sabe que foi acaso. Rua rezou por Tail até a voz acabar. Tail morreu mesmo assim, e Rua nunca mais rezou. No outono, em Viem, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Viem, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No inverno, a Guerra dos Irmãos da Praia esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte. Nos anos 111 a 120 houve duas secas, cinco fomes, sete batalhas, dezoito preces que pareceram atendidas e sete preces sem resposta; nasceram 120 crianças e morreram 94 pessoas. No fim do ano 120, 210 pessoas viviam no mundo: Sagak (79), Faur (51), Raur (52) e Viem (28).
+Na primavera, Linlora, que guiava Gaum, morreu dormindo, aos 47 anos. Miar atacou Gaum no morro. Miar venceu e levou a comida guardada. Niut, Galoem e Niu morreram na luta. Para Miar, o morro virou Morro da Vitória. Miar venceu Gaum e levou os sete sobreviventes para viver sob seu mando. Gaum deixou de existir, mas os vencidos guardaram seus costumes em segredo. Diante das ruínas de Gaum, Sagak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nos anos 111 a 120 houve nove fomes e quinze preces que pareceram atendidas; nasceram 111 crianças e morreram 58 pessoas. No fim do ano 120, 229 pessoas viviam no mundo: Sagak (77), Faur (110) e Miar (42).
 
-*O ano 121 passou sem nada que a crônica precise guardar.*
+### Ano 121
+
+Em nome da Terra Brava, Miut proibiu casamentos e trocas com Faur. Era vontade de Miut, não do deus.
 
 ### Ano 122
 
-Na primavera do ano 122, Niut passou dias nas ruínas de Faon e voltou sabendo fazer canais.
+Nior disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Acende o Céu». Sagak acreditou, e o deus mudou de nome. Beut, o corajoso, cansou de dividir pouca comida. Partiu com onze pessoas para o morro e ali fundou Tosan. Tosan encontrou as ruínas de Gaum e disse que ali tinham vivido gigantes. Em Tosan, Gaut tomou para si o cuidado das preces à Terra Brava. A fome no inverno durou 17 dias em Miar e levou oito vidas.
 
 ### Ano 123
 
-No verão, Loloik implorou pelo filho. Gaem morreu, e daquele dia em diante Loloik cuspia no chão quando falavam do Olho Escuro. De novo a chuva sumiu, como no ano 111. Foram 23 dias de seca. Depois da seca, Raur jurou nunca desperdiçar água. Sem lugar e sem comida, Daselik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
+Em Tosan, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 66, só a crônica guarda. Miar passou a festejar todo ano o dia da volta da chuva, em honra da Terra Brava. Tosan passou a festejar todo ano o dia da volta da chuva, em honra da Terra Brava. Houve luta no lago: Miar atacou Faur em nome da Terra Brava. Faur resistiu, e Miar voltou de mãos vazias. Na luta morreram Loel e Selselem. Miar fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
 
 ### Ano 124
 
-Vira, que guiava Viem, morreu de velhice aos 46 anos. O frio levou Saem, que falava pelo Olho Escuro em Sagak. Na guerra, tinha tirado duas vidas. Selem partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Raur já não se preparava para nada: a Chama de Cima sempre dava. Deixaram de poupar água. Depois da seca, Viem jurou nunca desperdiçar água.
+A fome no inverno durou 9 dias em Sagak e levou seis vidas. Depois daquela fome, Faur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Começou a Guerra Santa: em nome da Terra Brava, Miar pegou em lanças contra Faur. A Guerra Santa seguiu: Miar contra Faur, no lago em nome da Terra Brava. Faur foi derrotado e perdeu o que tinha guardado. Na luta morreram Mifara, Dolinut e Selut. No outono, Totoru, a medrosa, inventou marcas que guardavam palavras.
 
-### Ano 125
-
-Savira partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Doem passou a guiar Faur, mas Gafaik não aceitou e guardou rancor. Nas ruínas de Faon, Galina achou o que eles sabiam: aprendeu a fazer canais. Viem passou fome por causa da seca por 18 dias, e oito pessoas morreram. No verão, Damia, de Raur, casou-se com Vimior e foi viver em Viem. Foi o primeiro laço entre os dois povos.
+*No ano 125, nada de notável aconteceu.*
 
 ### Ano 126
 
-Damia passou dias nas ruínas de Faon e voltou sabendo fazer canais. Com canais e moinhos, Viem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Nasceu Torem, o primeiro de Tosan.
 
 ### Ano 127
 
-Morreu Selvior, que falava pelo Olho Escuro em Sagak, aos 51 anos. Na guerra, tinha tirado duas vidas. No verão, Beor, que guiava Raur, morreu de febre aos 64 anos. A doença entrou em Raur e matou duas pessoas.
+Na primavera, a Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. A seca voltou, como no ano 102: 20 dias sem chuva, até que o céu se abriu. Beut tinha rezado: «Terra Brava, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Tosan duvidou de que a Terra Brava tinha ouvido. A crônica sabe que foi acaso.
 
 ### Ano 128
 
-Na primavera do ano 128, Ennik, o engenhoso, morreu dormindo, aos 62 anos. Na guerra, tinha tirado três vidas.
+Envik, que falava pelo Que Acende o Céu em Sagak, morreu dormindo, aos 57 anos. Com Beut à frente, a nova geração de Tosan abandonou o medo das tempestades, costume herdado dos avós. Miar passou fome por causa da seca por 23 dias, e doze pessoas morreram.
 
-*O ano 129 passou sem nada que a crônica precise guardar.*
+### Ano 129
+
+Na primavera, em nome da Terra Brava, Miut proibiu casamentos e trocas com Tosan. Era vontade de Miut, não do deus.
 
 ### Ano 130
 
-Viut, que falava pelo Olho Escuro em Sagak, morreu de velhice aos 52 anos. Desde a morte de Viniut, nunca mais tinha rezado. Com Enloik à frente, a nova geração de Viem abandonou a festa da chuva, costume herdado dos avós. Em Viem, Vimior pediu: «Que Sacode, não leves Beena.» A febre passou, e Vimior contou a todos que o Que Sacode tinha ouvido. A crônica sabe que foi acaso. Os escribas de Viem registraram o milagre. Nos anos 121 a 130 houve três secas, nove fomes, dezenove preces que pareceram atendidas e quatro preces sem resposta; nasceram 155 crianças e morreram 113 pessoas. No fim do ano 130, 244 pessoas viviam no mundo: Sagak (79), Faur (89), Raur (45) e Viem (31).
+Na primavera, com Beut à frente, a nova geração de Tosan abandonou o costume de queimar os mortos, costume herdado dos avós. Nos anos 121 a 130 houve duas secas, onze fomes, duas batalhas, catorze preces que pareceram atendidas e três preces sem resposta; nasceram 118 crianças e morreram 127 pessoas. No fim do ano 130, 220 pessoas viviam no mundo: Sagak (73), Faur (98), Miar (34) e Tosan (15).
 
 ### Ano 131
 
-Migau disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Ruge». Sagak acreditou, e o deus mudou de nome.
+Em Miar, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Miar passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 132
 
-Numa tempestade sobre o morro, um raio matou Taem. Taem era dos que mais rezavam, e Raur ficou sem entender. Para os mais fiéis de Raur, Taem não foi castigado, mas escolhido. Nasceu ali um costume: quando o céu escurece, ninguém em Raur sai de casa. Lembram de Taem. De novo a chuva sumiu, como no ano 123. Foram 23 dias de seca.
+Sem lugar e sem comida, Midoem e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Tosan, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Tosan, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Uma febre correu Faur e levou quatro vidas.
 
 ### Ano 133
 
-Na primavera, morreu Sabera, que guiava Sagak, aos 67 anos. A fome no inverno durou 9 dias em Sagak e levou oito vidas. Em Raur, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+No outono, os de Miar caíram sobre Tosan no morro em nome da Terra Brava. Tosan foi derrotado e perdeu o que tinha guardado. Na luta morreram Loia, Gaut, Lout e Toniu. Para Tosan, o morro virou Morro do Luto. Tosan não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
-### Ano 134
-
-Depois daquela fome, Faur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Uma tosse que não passava matou oito pessoas em Faur.
-
-### Ano 135
-
-Enloik, que guiava Viem, morreu dormindo, aos 62 anos. Viem escolheu Nimia para guiar o grupo. Enmior queria o lugar e nunca perdoou.
+*Entre os anos 134 e 135, nada mudou o rumo do mundo.*
 
 ### Ano 136
 
-Na primavera do ano 136, Saik, que guiava Sagak, morreu dormindo, aos 56 anos. Nunca perdoou o deus pela morte de Losa. Salor passou a guiar Sagak, mas Selut não aceitou e guardou rancor. Tantas preces atendidas fizeram Viem confiar no céu mais do que nas próprias mãos. Deixaram de poupar água. Uma febre correu Faur e levou quatro vidas.
+Na primavera, Peik morreu com 4 anos, de uma febre que ninguém entendeu. Sabera tinha rezado: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Sagak viu nisso obra do Que Acende o Céu. A crônica sabe que foi acaso. Nas tabuletas de Sagak, ficou escrito que foi o Que Acende o Céu.
 
-*O ano 137 passou sem nada que a crônica precise guardar.*
+### Ano 137
+
+Na primavera do ano 137, em nome da Terra Brava, Miut proibiu casamentos e trocas com Tosan. Era vontade de Miut, não do deus. Uma febre correu Faur e levou quatro vidas.
 
 ### Ano 138
 
-Sem lugar e sem comida, Selut e os seus atravessaram a borda do mundo. Ninguém soube deles. Beia partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Faur passou fome no inverno por 9 dias, e doze pessoas morreram.
+Sagak atacou Tosan no morro. Sagak venceu e levou a comida guardada. Beut e Gagaem morreram na luta. Desde então, Sagak chama o morro de Morro da Vitória. No inverno, começou a Guerra da Fome do Morro: Sagak, com fome, foi buscar à força a comida de Tosan. Em Tosan, já ninguém sabia cortar pedra. O que fora feito começou a ruir.
 
 ### Ano 139
 
-Na primavera do ano 139, morreu Linem, que falava pelo Que Ruge em Sagak, aos 59 anos. Em Sagak, Linem pediu: «Que Ruge, dá-nos o que comer.» A fome passou, e Sagak viu nisso obra do Que Ruge. O deus nada fez: o crédito era de graça. Os escribas de Sagak registraram o milagre. As preces de Viem ficaram pequenas: pedia-se ao Que Sacode até sol para a pesca e sorte na caça.
+Desde a febre, Tosan não enterra mais ninguém: os mortos vão para o fogo. Nisaik partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. O frio levou Sabera, que guiava Sagak. Tosan passou fome por 32 dias, e uma pessoa morreu.
 
 ### Ano 140
 
-Em Raur, Daara começou a pregar que o deus não era «a Chama de Cima». Era «o Que Seca». Em poucos anos, todos rezavam assim. Nos anos 131 a 140 houve três secas, dezoito fomes e dezoito preces que pareceram atendidas; nasceram 134 crianças e morreram 118 pessoas. No fim do ano 140, 246 pessoas viviam no mundo: Sagak (70), Faur (98), Raur (43) e Viem (35).
+Na primavera, Fara partiu com três pessoas para além da borda do mundo. Nunca voltaram. Numa tempestade sobre o lago, um raio matou Rilmik. Ninguém em Faur teve dúvida: era castigo. O inverno foi de gelo: nove pessoas morreram de frio. Miut, que guiava Miar, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Gaum. Faur passou a receber bem os de fora: um casamento com outro povo virava festa. Nos anos 131 a 140 houve vinte fomes, três batalhas, 24 preces que pareceram atendidas e três preces sem resposta; nasceram 109 crianças e morreram 161 pessoas. No fim do ano 140, 152 pessoas viviam no mundo: Sagak (60), Faur (67), Miar (21) e Tosan (4).
 
 ### Ano 141
 
-No verão do ano 141, uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito. A seca voltou, como no ano 132: 25 dias sem chuva, até que o céu se abriu. Depois da seca, Viem jurou nunca desperdiçar água.
+Na primavera, Linem, que falava pelo Que Acende o Céu em Sagak, morreu de velhice aos 61 anos. Faur passou fome no inverno por 9 dias, e doze pessoas morreram. Sagak passou fome no inverno por 11 dias, e catorze pessoas morreram. A Guerra da Fome do Morro esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte.
 
 ### Ano 142
 
-Em Sagak, gritaram que o templo mentia em nome do Que Ruge. Os sacerdotes foram tirados do poder. O deus calou justo quando Viem mais dependia dele. Faur passou fome no inverno por 9 dias, e 25 pessoas morreram. Um inverno duro matou seis pessoas de frio. Fasela deu à luz gêmeos, Selem e Selut. Uns viram bênção; outros, mau sinal.
+O sol escureceu outra vez. Depois disso, Tosan deixou de chamar o deus de «a Terra Brava» e passou a chamá-lo de «o Que Apaga o Sol».
 
-*O ano 143 passou sem nada que a crônica precise guardar.*
+### Ano 143
+
+Na primavera do ano 143, morreu Sasaik, que guiava Miar, aos 50 anos. Nas ruínas de Gaum, Torem achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 144
 
-Doem, que guiava Faur, morreu de velhice aos 54 anos.
+No verão do ano 144, nas ruínas de Gaum, Torem achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 145
 
-Arik, o generoso, morreu dormindo, aos 52 anos.
+Na primavera, Torem, que guiava Tosan, morreu de repente, aos 19 anos. Tosan acabou: Torenem, Dodora e Dopeik foram viver em Faur. As ruínas de Tosan viraram aviso em Sagak: era o que o deus fazia com quem o desagradava. Diante das ruínas de Tosan, Faur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 146
 
-Na primavera, depois de anos sob um só, Sagak sentou-se em roda: dali em diante, decidia-se juntos. A fome no inverno durou 9 dias em Raur e levou quatro vidas.
+Gara tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Miar duvidou de que a Terra Brava tinha ouvido. O deus nada fez: o crédito era de graça. Os escribas de Miar registraram o milagre.
 
-*O ano 147 passou sem nada que a crônica precise guardar.*
+### Ano 147
+
+Niem rezou por Linsaik até a voz acabar. Linsaik morreu mesmo assim, e Niem nunca mais rezou. Uma tosse que não passava matou quatro pessoas em Sagak.
 
 ### Ano 148
 
-Migoem tinha rezado: «Que Seca, não deixes nossos filhos morrerem de fome.» A comida voltou, e Raur deu graças ao Que Seca. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 148, com Logara à frente, dezoito pessoas deixaram Sagak e fundaram Loil, no morro. Linniem passou a falar pelo Que Acende o Céu em Loil. Era o primeiro a rezar e o último a duvidar. Diante das ruínas de Gaum, Loil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Uma febre correu Faur e levou seis vidas. A seca voltou, como no ano 127: 21 dias sem chuva, até que o céu se abriu.
 
-*O ano 149 passou sem nada que a crônica precise guardar.*
+### Ano 149
+
+Em Loil, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Em Loil, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 86, só a crônica guarda. Foram 9 dias de fome no inverno em Faur, com vinte mortos. Sabeut, o ambicioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Em Loil nasceu a primeira criança: You, filha de Logara e Enut.
 
 ### Ano 150
 
-Na primavera do ano 150, sem lugar e sem comida, Via e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito. Nos anos 141 a 150 houve três secas, dezesseis fomes e dezenove preces que pareceram atendidas; nasceram 168 crianças e morreram 131 pessoas. No fim do ano 150, 282 pessoas viviam no mundo: Sagak (75), Faur (117), Raur (50) e Viem (40).
+Enmiut, que guiava Sagak, morreu dormindo, aos 61 anos. Gara, que guiava Miar, morreu de velhice aos 63 anos. Em Miar, gritaram que o templo mentia em nome da Terra Brava. Os sacerdotes foram tirados do poder. Saena deu à luz gêmeos, Beut e Belout. Uns viram bênção; outros, mau sinal. Nos anos 141 a 150 houve duas secas, oito fomes, nove preces que pareceram atendidas e quatro preces sem resposta; nasceram 138 crianças e morreram 80 pessoas. No fim do ano 150, 211 pessoas viviam no mundo: Sagak (72), Faur (90), Miar (29) e Loil (20).
 
 ### Ano 151
 
-Na primavera, morreu Migau, a engenhosa, aos 51 anos. A seca voltou, como no ano 141: 21 dias sem chuva, até que o céu se abriu.
+Sabeut, de Loil, tomou por esposa Satora, de Miar, e os dois povos passaram a se visitar.
 
 ### Ano 152
 
-Galina, que guiava Viem, morreu de velhice aos 50 anos. Sagak passou fome no inverno por 9 dias, e doze pessoas morreram. A fome no inverno durou 9 dias em Faur e levou dezenove vidas.
+Selsa, que guiava Miar, morreu de velhice aos 62 anos.
 
-### Ano 153
+*No ano 153, nada de notável aconteceu.*
 
-Lout, o rancoroso, morreu de velhice aos 59 anos. Sem lugar e sem comida, Dabea e os seus atravessaram a borda do mundo. Ninguém soube deles.
+### Ano 154
 
-*Entre os anos 154 e 155, nada mudou o rumo do mundo.*
+No inverno do ano 154, Sagak passou a receber bem os de fora: um casamento com outro povo virava festa.
 
-### Ano 156
+### Ano 155
 
-A doença entrou em Faur e matou três pessoas.
+Na primavera do ano 155, Selniem, o corajoso, morreu de velhice aos 60 anos.
+
+*No ano 156, nada de notável aconteceu.*
 
 ### Ano 157
 
-Na primavera, Daara, a ambiciosa, morreu de velhice aos 56 anos. No inverno, Gaut, que falava pelo Que Ruge em Sagak, não resistiu à fome. Dessa vez, o Que Seca não respondeu, e Raur, que tinha esquecido como se virar sozinho, pagou caro. Raik rezou por Taem até a voz acabar. Taem morreu mesmo assim, e Raik nunca mais rezou.
+Saena tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Quando a chuva voltou, Miar agradeceu à Terra Brava. O deus não tinha feito nada. Nas tabuletas de Miar, ficou escrito que foi a Terra Brava.
 
 ### Ano 158
 
-Morreu Rua, que guiava Raur, aos 66 anos. Nunca perdoou o deus pela morte de Tail. Em Raur, Aron pediu: «Que Seca, dá-nos o que comer.» A comida voltou, e Raur deu graças ao Que Seca. O deus não tinha feito nada. Sagak passou fome no inverno por 11 dias, e cinco pessoas morreram. A tempestade trouxe raios para o morro. Um deles acertou Arem. Os seus nunca esqueceram.
+Na primavera do ano 158, em Sagak, Engaem começou a pregar que o deus não era «o Que Acende o Céu». Era «o Pai das Pedras». Em poucos anos, todos rezavam assim.
 
 ### Ano 159
 
-Em Raur, quem vinha de fora era recebido com comida e lugar perto do fogo. No verão, a terra tremeu. Caíram 21 cabanas. Ensau, Gaena, Faik, Taik, Data e Viela morreram sob os escombros.
+Nia deu à luz gêmeos, Fadora e Doselem. Uns viram bênção; outros, mau sinal. No outono, Sellou, de Loil, casou-se com Niut e foi viver em Sagak. Foi o primeiro laço entre os dois povos. Em Loil, Logara pediu: «Manda água, Que Acende o Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Loil duvidou de que o Que Acende o Céu tinha ouvido. O deus não tinha feito nada. No inverno, Tou, a generosa, morreu de fome.
 
 ### Ano 160
 
-Na primavera do ano 160, Sumik, que falava pelo Que Seca em Raur, morreu de velhice aos 63 anos. Morreu Nivia, que guiava Viem, aos 54 anos. Nos anos 151 a 160 houve cinco secas, dezoito fomes e vinte preces que pareceram atendidas; nasceram 157 crianças e morreram 196 pessoas. No fim do ano 160, 240 pessoas viviam no mundo: Sagak (77), Faur (89), Raur (41) e Viem (33).
+Na primavera, Samira disse ter ouvido o deus de outro jeito: não era «o Que Acende o Céu», era «o Pai das Pedras». Loil acreditou, e o deus mudou de nome. Sem lugar e sem comida, Linlinu e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Sagak, com quatro mortos. Houve luta no morro: Miar atacou Loil em nome da Terra Brava. Loil resistiu, e Miar voltou de mãos vazias. Na luta morreram Enenut e Saena. No inverno, começou a Guerra Santa do Morro: em nome da Terra Brava, Miar pegou em lanças contra Loil. Nos anos 151 a 160 houve três secas, cinco fomes, três batalhas, 23 preces que pareceram atendidas e cinco preces sem resposta; nasceram 113 crianças e morreram 122 pessoas. No fim do ano 160, 202 pessoas viviam no mundo: Sagak (64), Faur (89), Miar (18) e Loil (31).
 
 ### Ano 161
 
-A terra tremeu. Caíram 23 cabanas. Sau, Lomiut, Rilmik, Selgaik e Ra morreram sob os escombros. A seca voltou, como no ano 151: 22 dias sem chuva, até que o céu se abriu. Belinik implorou pelo filho. Nisaor morreu, e daquele dia em diante Belinik cuspia no chão quando falavam do Que Ruge.
+Sem lugar e sem comida, Loviem e os seus atravessaram a borda do mundo. Ninguém soube deles. A Guerra Santa do Morro seguiu: Miar contra Loil, no morro em nome da Terra Brava. Loil expulsou os atacantes. Na luta morreram Tomira e Enbea. A fome no inverno durou 9 dias em Faur e levou quatro vidas.
 
-### Ano 162
+*No ano 162, nada de notável aconteceu.*
 
-Sagak passou fome no inverno por 11 dias, e três pessoas morreram. Uma febre correu Sagak e levou sete vidas.
+### Ano 163
 
-*Os anos 163 a 164 passaram em paz.*
+Com Logara à frente, a nova geração de Loil abandonou a festa da chuva, costume herdado dos avós.
 
-### Ano 165
+### Ano 164
 
-Na primavera do ano 165, Aron, que falava pelo Que Seca em Raur, morreu dormindo, aos 61 anos.
+Morreu Benia, a medrosa, aos 48 anos. A Guerra Santa do Morro esfriou sem acordo nem vencedor: quatro anos, quatro batalhas e nove mortos, e ninguém sabia mais por que lutava. Loil saiu dela mais forte.
 
-### Ano 166
-
-Belinik, que falava pelo Que Ruge em Sagak, morreu de velhice aos 50 anos. Desde a morte de Nisaor, nunca mais tinha rezado. Foram 11 dias de fome no inverno em Viem, com oito mortos. Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu.
+*Do ano 165 ao 166, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 167
 
-Daaril deu à luz gêmeos, Sela e Fabem. Uns viram bênção; outros, mau sinal.
+Morreu Sela, que guiava Sagak, aos 62 anos.
 
-*O ano 168 foi calmo.*
+### Ano 168
+
+Viga tinha rezado: «Pai das Pedras, dá-nos o que comer.» A fome passou, e Sagak viu nisso obra do Pai das Pedras. Foi só o tempo, mas quem iria dizer? Os escribas de Sagak registraram o milagre.
 
 ### Ano 169
 
-No outono do ano 169, Loa implorou pela filha. Loga morreu, e daquele dia em diante Loa cuspia no chão quando falavam do Que Ruge.
+Na primavera, Samira, a ambiciosa, morreu dormindo, aos 60 anos. Cansado de um líder que mandava sozinho, Sagak passou a decidir em conselho. Sagak atacou Miar na praia em nome do Pai das Pedras. Miar expulsou os atacantes. Vibeor e Enselor morreram na luta. Desde então, Sagak chama a praia de Praia do Luto.
 
 ### Ano 170
 
-Na primavera, Lodara disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «a Voz dos Sonhos». Viem acreditou, e o deus mudou de nome. Em Sagak, Enut pediu: «Que Ruge, dá-nos o que comer.» A fome passou, e Sagak viu nisso obra do Que Ruge. Foi só o tempo, mas quem iria dizer? Os escribas de Sagak registraram o milagre. Nos anos 161 a 170 houve três secas, dez fomes e treze preces que pareceram atendidas; nasceram 115 crianças e morreram 111 pessoas. No fim do ano 170, 245 pessoas viviam no mundo: Sagak (77), Faur (95), Raur (41) e Viem (32).
+Na primavera, Nilinu, de Loil, casou-se com Linem e foi viver em Faur. Foi o primeiro laço entre os dois povos. Foram 5 dias de fome no inverno em Faur, com um morto. Uma tosse que não passava matou quatro pessoas em Faur. Nos anos 161 a 170 houve onze fomes, duas batalhas, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram 132 crianças e morreram 66 pessoas. No fim do ano 170, 265 pessoas viviam no mundo: Sagak (86), Faur (102), Miar (34) e Loil (43).
 
 ### Ano 171
 
-Na primavera do ano 171, Enviut, que falava pelo Que Ruge em Sagak, morreu dormindo, aos 53 anos. Em Sagak, Beviu começou a pregar que o deus não era «o Que Ruge». Era «a Voz dos Sonhos». Em poucos anos, todos rezavam assim. Lodara deu à luz gêmeos, Selmara e Maela. Uns viram bênção; outros, mau sinal. No verão, numa tempestade sobre o morro, um raio matou Dafaon. Os seus nunca esqueceram.
+Logara, que fundou Loil e o guiava, morreu dormindo, aos 61 anos. Tinha fundado Loil. Começou a Guerra Santa da Praia: em nome do Pai das Pedras, Sagak pegou em lanças contra Miar. A Guerra Santa da Praia seguiu: Sagak contra Miar, na praia. Miar foi derrotado e perdeu o que tinha guardado. Na luta morreram Mimiut, Toik e Tobel. Sagak e Miar, cansados de enterrar os seus, fizeram as pazes na praia. Depois de dois anos, duas batalhas e cinco mortos, a Guerra Santa da Praia terminou em paz.
 
 ### Ano 172
 
-Na primavera do ano 172, Beviu passou a guiar Sagak, mas Bebem não aceitou e guardou rancor. O sol escureceu outra vez. O inverno foi de gelo: doze pessoas morreram de frio.
+Na primavera do ano 172, Loil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Loil, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Uma febre correu Faur e levou quatro vidas. De novo a chuva sumiu, como no ano 148. Foram 23 dias de seca. Loil passou a festejar todo ano o dia da volta da chuva, em honra do Pai das Pedras.
 
 ### Ano 173
 
-Na primavera do ano 173, Ibela, que guiava Faur, morreu de velhice aos 62 anos. Sara rezou por Viut até a voz acabar. Viut morreu mesmo assim, e Sara nunca mais rezou. De novo a chuva sumiu, como no ano 161. Foram 24 dias de seca.
+Na primavera do ano 173, morreu Enut, aos 48 anos. Na guerra, tinha tirado duas vidas. Loil passou fome por causa da seca por 18 dias, e uma pessoa morreu. Um inverno duro matou quinze pessoas de frio.
 
 ### Ano 174
 
-Sem lugar e sem comida, Ibbea e os seus atravessaram a borda do mundo. Ninguém soube deles. Gadora, que guiava Faur, morreu de febre aos 51 anos. Uma febre correu Faur e levou três vidas. A fome no inverno durou 9 dias em Sagak e levou dezesseis vidas.
+Na primavera do ano 174, Linniem, que falava pelo Pai das Pedras em Loil, morreu de velhice aos 59 anos. Com Sabeut à frente, a nova geração de Loil abandonou o treino com lanças, costume herdado dos avós.
 
 ### Ano 175
 
-Morreu Ragora, que guiava Faur, aos 50 anos. Em Raur, Seldaik começou a pregar que o deus não era «o Que Seca». Era «o Que Nega». Em poucos anos, todos rezavam assim.
+Na primavera, depois de anos sob um só, Miar sentou-se em roda: dali em diante, decidia-se juntos.
 
 ### Ano 176
 
-Foram 6 dias de fome no inverno em Raur, com três mortos. No inverno, numa tempestade sobre a floresta, um raio matou Lingara. Lingara era das que mais rezavam, e Sagak ficou sem entender. Para os mais fiéis de Sagak, Lingara não foi castigada, mas escolhida.
+Com Sabeut à frente, a nova geração de Loil abandonou o costume de queimar os mortos, costume herdado dos avós.
 
 ### Ano 177
 
-Na primavera do ano 177, morreu Selim, que guiava Viem, aos 50 anos.
+Na primavera do ano 177, sem lugar e sem comida, Selut e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Sagak, Viga pediu: «Pai das Pedras, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Pai das Pedras. Foi só o tempo, mas quem iria dizer? Os escribas de Sagak registraram o milagre. No verão, Doselu, a curiosa, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
 
 ### Ano 178
 
-Morreu Suem, que guiava Raur, aos 52 anos. Em Viem, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam.
+No inverno do ano 178, tantas preces atendidas fizeram Loil confiar no céu mais do que nas próprias mãos. Beut implorou pelo filho. Toenut morreu, e daquele dia em diante Beut cuspia no chão quando falavam da Terra Brava. De novo o sol se apagou no meio do dia. Miar parou de rezar. Diziam que a Terra Brava nunca tinha existido.
 
 ### Ano 179
 
-Apareceu no céu uma luz com rabo, que ficou 7 noites e sumiu.
+Na primavera, o deus calou justo quando Loil mais dependia dele. O frio levou Sabera, que guiava Miar. Sagak passou fome no inverno por 9 dias, e vinte pessoas morreram. A fome no inverno durou 9 dias em Faur e levou 25 vidas. Depois dos roubos da fome, Loil parou de dividir: cada família passou a guardar o que era seu.
 
 ### Ano 180
 
-Saor implorou pela filha. Nibeu morreu, e daquele dia em diante Saor cuspia no chão quando falavam da Voz dos Sonhos. Nos anos 171 a 180 houve quatro secas, doze fomes e dezesseis preces que pareceram atendidas; nasceram 137 crianças e morreram 139 pessoas. No fim do ano 180, 240 pessoas viviam no mundo: Sagak (68), Faur (95), Raur (46) e Viem (31).
+Nos anos 171 a 180 houve duas secas, dezoito fomes, 22 preces que pareceram atendidas e sete preces sem resposta; nasceram 141 crianças e morreram 180 pessoas. No fim do ano 180, 221 pessoas viviam no mundo: Sagak (74), Faur (91), Miar (23) e Loil (33).
 
-### Ano 181
-
-Foram 9 dias de fome no inverno em Sagak, com cinco mortos. Enut tinha rezado: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Voz dos Sonhos. O deus não tinha feito nada. Os escribas de Sagak registraram o milagre. A doença entrou em Faur e matou quatro pessoas. Um inverno duro matou dezessete pessoas de frio.
-
-*O ano 182 foi calmo.*
+*Os anos 181 a 182 passaram em paz.*
 
 ### Ano 183
 
-Em Raur, gritaram que o templo mentia em nome do Que Nega. Os sacerdotes foram tirados do poder.
+Sagak passou fome no inverno por 9 dias, e dezessete pessoas morreram.
 
-*O ano 184 passou sem nada que a crônica precise guardar.*
+### Ano 184
+
+No inverno, com canais e moinhos, Loil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Satout partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Enmiu, que guiava Sagak, não resistiu à fome.
 
 ### Ano 185
 
-A seca voltou, como no ano 173: 22 dias sem chuva, até que o céu se abriu. Beviu, que guiava Sagak, morreu de fome.
+Na primavera, Viga, que falava pelo Pai das Pedras em Sagak, morreu de velhice aos 60 anos. Vilinem, de Sagak, tomou por esposa Mimia, de Miar, e os dois povos passaram a se visitar. Doniem partiu com três pessoas para além da borda do mundo. Nunca voltaram. Mira passou a guiar Sagak, mas Sasaor não aceitou e guardou rancor.
 
-### Ano 186
+*No ano 186, nada de notável aconteceu.*
 
-Na primavera do ano 186, morreu Enibut, que falava pela Voz dos Sonhos em Viem, aos 55 anos. Sagak passou fome no inverno por 9 dias, e dezesseis pessoas morreram. Faur passou fome no inverno por 9 dias, e dezessete pessoas morreram.
+### Ano 187
 
-*No ano 187, nada de notável aconteceu.*
+De novo a chuva sumiu, como no ano 172. Foram 19 dias de seca.
 
 ### Ano 188
 
-Na primavera, com Enem à frente, a nova geração de Viem abandonou o medo das tempestades, costume herdado dos avós. No inverno, Selfara implorou pelo filho. Suaron morreu, e daquele dia em diante Selfara cuspia no chão quando falavam do Que Nega. Salou, a medrosa, não resistiu à fome.
+Na primavera do ano 188, Lobeu, a engenhosa, morreu dormindo, aos 46 anos. Faur passou fome no inverno por 9 dias, e nove pessoas morreram. A tempestade trouxe raios para o morro. Um deles acertou Lobeik. Os seus nunca esqueceram. Desde a morte de Lobeik, ninguém em Loil sobe o morro em dia de tempestade. Um inverno duro matou 21 pessoas de frio.
 
-### Ano 189
-
-Na primavera do ano 189, morreu Raem, que guiava Raur, aos 60 anos. Viem se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder.
+*No ano 189, nada de notável aconteceu.*
 
 ### Ano 190
 
-Benia tinha rezado: «Voz dos Sonhos, dá-nos o que comer.» A comida voltou, e Sagak deu graças à Voz dos Sonhos. A crônica sabe que foi acaso. Os escribas de Sagak registraram o milagre. Nos anos 181 a 190 houve quatro secas, dezoito fomes, 21 preces que pareceram atendidas e três preces sem resposta; nasceram 167 crianças e morreram 167 pessoas. No fim do ano 190, 240 pessoas viviam no mundo: Sagak (74), Faur (92), Raur (42) e Viem (32).
+Lingaem, que guiava Faur, morreu dormindo, aos 62 anos. Nos anos 181 a 190 houve três secas, dez fomes e quinze preces que pareceram atendidas; nasceram 186 crianças e morreram 137 pessoas. No fim do ano 190, 261 pessoas viviam no mundo: Sagak (77), Faur (100), Miar (36) e Loil (48).
 
-*Entre os anos 191 e 192, nada mudou o rumo do mundo.*
+### Ano 191
+
+Sabeut, que guiava Loil, morreu dormindo, aos 58 anos. Sellora deu à luz gêmeos, Yora e Selloem. Uns viram bênção; outros, mau sinal.
+
+### Ano 192
+
+Na primavera, Nibeu, que guiava Loil, morreu de velhice aos 48 anos.
 
 ### Ano 193
 
-Suselik partiu com três pessoas para além da borda do mundo. Nunca voltaram. Selut passou a guiar Faur, mas Bebeut não aceitou e guardou rancor. Enem, que guiava Viem, morreu de frio. Nunca perdoou o deus pela morte de Maela. Viem passou fome no inverno por 11 dias, e cinco pessoas morreram.
+Uma tosse que não passava matou quatro pessoas em Faur.
 
 *O ano 194 foi calmo.*
 
 ### Ano 195
 
-Linut rezou por Linselu até a voz acabar. Linselu morreu mesmo assim, e Linut nunca mais rezou. Depois de anos sob um só, Raur sentou-se em roda: dali em diante, decidia-se juntos.
+Em Sagak, Selor pediu: «Pai das Pedras, dá-nos o que comer.» A comida voltou, e Sagak deu graças ao Pai das Pedras. O deus nada fez: o crédito era de graça. Os escribas de Sagak registraram o milagre. No verão, Linbear implorou pela filha. Domiu morreu, e daquele dia em diante Linbear cuspia no chão quando falavam do Pai das Pedras. Uma febre correu Loil e levou três vidas. Desde a febre, Loil não enterra mais ninguém: os mortos vão para o fogo. Um inverno duro matou quatro pessoas de frio.
 
 ### Ano 196
 
-No outono do ano 196, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito.
+Selbeut, que falava pelo Pai das Pedras em Loil, morreu dormindo, aos 53 anos. No verão, Vienik implorou pelo filho. Loem morreu, e daquele dia em diante Vienik cuspia no chão quando falavam do Pai das Pedras. Sagak rezou e não foi ouvido. Os mais firmes disseram que o Pai das Pedras os estava testando, e se orgulharam de aguentar. A terra tremeu. Caíram 21 cabanas. Enlora, Sasaem, Fara, Gabem, Niselem, Torel e Bebem morreram sob os escombros. O que aconteceu não tinha explicação. Em Miar, os que zombavam das preces foram os primeiros a ajoelhar.
 
 ### Ano 197
 
-A fome no inverno durou 18 dias em Faur e levou quatro vidas. A doença entrou em Faur e matou cinco pessoas. Um inverno duro matou três pessoas de frio.
+Na primavera, em Sagak, Selvior começou a pregar que o deus não era «o Pai das Pedras». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim. Miar deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
 
-### Ano 198
-
-Na primavera, a febre levou Enena, a devota. Enor implorou pelo filho. Losaut morreu, e daquele dia em diante Enor cuspia no chão quando falavam da Voz dos Sonhos. A doença entrou em Faur e matou quatro pessoas. O inverno foi de gelo: quatro pessoas morreram de frio.
+*O ano 198 passou sem nada que a crônica precise guardar.*
 
 ### Ano 199
 
-Na primavera, Gogon partiu com uma pessoa para além da borda do mundo. Nunca voltaram. O frio levou Miloik, que guiava Sagak. A fome no inverno durou 9 dias em Sagak e levou 22 vidas. Em Sagak, Benia pediu: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Voz dos Sonhos. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Sagak, ficou escrito que foi a Voz dos Sonhos.
+Na primavera do ano 199, morreu Misaem, que guiava Miar, aos 52 anos. Numa tempestade sobre o morro, um raio matou Mivira. Logo Mivira, que tanto rezava. Para os mais fiéis de Loil, Mivira não foi castigada, mas escolhida.
 
 ### Ano 200
 
-Na primavera, em Raur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Nos anos 191 a 200 houve três secas, vinte fomes, 22 preces que pareceram atendidas e três preces sem resposta; nasceram 177 crianças e morreram 211 pessoas. No fim do ano 200, 200 pessoas viviam no mundo: Sagak (61), Faur (77), Raur (40) e Viem (22).
+Uma estrela de cauda cruzou o céu por 7 noites. Ninguém dormia direito. Sagak passou fome no inverno por 8 dias, e uma pessoa morreu. A seca voltou, como no ano 187: 19 dias sem chuva, até que o céu se abriu. Vienik, o medroso, morreu de fome. Nunca perdoou o deus pela morte de Loem. Nos anos 191 a 200 houve quinze fomes, dezesseis preces que pareceram atendidas e quatro preces sem resposta; nasceram 88 crianças e morreram 144 pessoas. No fim do ano 200, 207 pessoas viviam no mundo: Sagak (63), Faur (76), Miar (25) e Loil (43).
 
 ### Ano 201
 
-Morreu Viem, que guiava Sagak, aos 50 anos. Bela deu à luz gêmeos, Linut e Miu. Uns viram bênção; outros, mau sinal.
+Sagak passou fome no inverno por 9 dias, e onze pessoas morreram. A fome no inverno durou 9 dias em Faur e levou nove vidas. O frio levou Vivik, o corajoso.
 
-### Ano 202
-
-Enmiu, que guiava Sagak, morreu dormindo, aos 50 anos. Faur escolheu Midou para guiar o grupo. Loia queria o lugar e nunca perdoou.
+*No ano 202, nada de notável aconteceu.*
 
 ### Ano 203
 
-Morreu Miaril, que guiava Raur, aos 53 anos. Viloim, que guiava Viem, morreu de velhice aos 59 anos.
+Na primavera do ano 203, morreu Bemira, que falava pela Mãe de Dois em Sagak, aos 57 anos.
 
 ### Ano 204
 
-A seca voltou, como no ano 185: 25 dias sem chuva, até que o céu se abriu.
+Misau deu à luz gêmeos, Yoar e Selu. Uns viram bênção; outros, mau sinal. Doar tinha rezado: «Pai das Pedras, não deixes nossos filhos morrerem de fome.» A comida voltou, e Loil deu graças ao Pai das Pedras. O deus nada fez: o crédito era de graça. Os escribas de Loil registraram o milagre.
 
 *O ano 205 foi calmo.*
 
 ### Ano 206
 
-Na primavera do ano 206, em Faur, quem vinha de fora era recebido com comida e lugar perto do fogo.
+Na primavera, Vik, o rancoroso, morreu de velhice aos 65 anos. Doar, o corajoso, morreu dormindo, aos 51 anos.
 
-### Ano 207
-
-Na primavera, em Viem, Vira começou a pregar que o deus não era «a Voz dos Sonhos». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim. A doença entrou em Faur e matou três pessoas. Um inverno duro matou duas pessoas de frio.
-
-*O ano 208 foi calmo.*
-
-### Ano 209
-
-Na primavera, Enut, que falava pela Voz dos Sonhos em Sagak, morreu dormindo, aos 54 anos.
+*Os anos 207 a 209 passaram em paz.*
 
 ### Ano 210
 
-Nos anos 201 a 210 houve duas secas, quatro fomes e dez preces que pareceram atendidas; nasceram 156 crianças e morreram 82 pessoas. No fim do ano 210, 275 pessoas viviam no mundo: Sagak (85), Faur (104), Raur (49) e Viem (37).
+Na primavera, houve luta na praia: Loil atacou Miar. Loil venceu e levou a comida guardada. Mia, Enel, Entorik e Tou morreram na luta. Desde então, Loil chama a praia de Praia da Vitória. Nos anos 201 a 210 houve dezoito fomes e dezessete preces que pareceram atendidas; nasceram 145 crianças e morreram 87 pessoas. No fim do ano 210, 266 pessoas viviam no mundo: Sagak (83), Faur (102), Miar (19) e Loil (62).
 
 ### Ano 211
 
-Dofara não esperou a vez: tomou o comando de Faur à força, e o conselho dos velhos se calou. Em Raur, Taon pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Raur viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer?
+No verão, começou a Guerra da Praia: o rancor entre Loil e Miar virou guerra. Na Guerra da Praia, Loil atacou Miar na praia. Miar foi derrotado e perdeu o que tinha guardado. Na luta morreram Enmiel, Mitorel, Sabeu e Enbeu.
 
 ### Ano 212
 
-A fome no inverno durou 5 dias em Faur e levou uma vida. No inverno, Lodara, que guiava Sagak, não resistiu à fome.
+Na primavera do ano 212, Selor, o medroso, morreu dormindo, aos 66 anos. Na Guerra da Praia, Loil atacou Miar na praia. Loil venceu e levou a comida guardada. Torem e Enu morreram na luta. Miar fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Em Miar, já ninguém sabia cortar pedra. O que fora feito começou a ruir.
 
 ### Ano 213
 
-Foram 9 dias de fome no inverno em Sagak, com catorze mortos. Raur passou fome no inverno por 9 dias, e doze pessoas morreram. Uma tosse que não passava matou oito pessoas em Faur.
+Morreu o último que tinha visto o ano 123. Em Miar, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Sagak, Galinor pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Mãe de Dois. O deus não tinha feito nada. Os escribas de Sagak registraram o milagre. Miar acabou: Toel, Satora e Bea foram viver em Sagak. A Guerra da Praia acabou porque um dos lados deixou de existir: três anos, três batalhas e dez mortos. Foram 21 dias de fome no inverno em Loil, com treze mortos.
 
 ### Ano 214
 
-Sutaon, o engenhoso, morreu de velhice aos 58 anos.
+Na primavera, Sellinar, o curioso, cansou de dividir pouca comida. Partiu com 22 pessoas para a praia e ali fundou Vium. Vium encontrou as ruínas de Gaum e disse que ali tinham vivido gigantes. No outono, um raio caiu no morro durante a tempestade e matou Doyora. Ninguém em Loil teve dúvida: era castigo. Viut passou a falar pelo Pai das Pedras em Vium. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 215
 
-Um inverno duro matou cinco pessoas de frio.
+Na primavera, Mira, que guiava Sagak, morreu dormindo, aos 65 anos. Em Vium nasceu a primeira criança: Demviena, filha de Belinu e Lonik.
 
 ### Ano 216
 
-Taon, o pacífico, morreu dormindo, aos 55 anos. Em Raur, Gotail começou a pregar que o deus não era «o Que Nega». Era «a Mãe da Chuva». Em poucos anos, todos rezavam assim. Sellina partiu com três pessoas para além da borda do mundo. Nunca voltaram.
+Sagak atacou Loil no morro. Loil resistiu, e Sagak voltou de mãos vazias. Na luta morreram Loselor, Samik e Mik. Vium não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No verão, começou a Guerra da Fome da Praia: Sagak, com fome, foi buscar à força a comida de Vium. A Guerra da Fome da Praia acabou em trégua, depois de três batalhas e sete mortos. Sagak saiu dela mais forte. Começou a Segunda Guerra da Fome: Sagak, com fome, foi buscar à força a comida de Loil.
 
 ### Ano 217
 
-No inverno do ano 217, Aril deu à luz gêmeos, Bem e Falout. Uns viram bênção; outros, mau sinal.
+Morreu Saut, o engenhoso, aos 55 anos. Com lanças e promessas, Faem acabou com o conselho de Faur e passou a mandar sozinho. No verão, Faur atacou Vium na praia. Faur venceu e levou a comida guardada. Na luta morreram Lonik e Befaia. Desde então, Faur chama a praia de Praia da Vitória. Em Vium, já ninguém sabia cortar pedra. O que fora feito começou a ruir.
 
 ### Ano 218
 
-Na primavera do ano 218, morreu Vira, a medrosa, aos 55 anos. Gotail rezou por Selgoik até a voz acabar. Selgoik morreu mesmo assim, e Gotail nunca mais rezou.
+Morreu Mivior, o rancoroso, aos 68 anos. Desde a morte de Ganira, nunca mais tinha rezado. Linlora, que guiava Loil, morreu de velhice aos 57 anos. Cansado de um líder que mandava sozinho, Faur passou a decidir em conselho. Começou a Terceira Guerra da Fome: Faur, com fome, foi buscar à força a comida de Vium. No outono, a terra tremeu. Caíram 22 cabanas. Ena, Beselor, Niviu, Linselem, Toru, Niselem, Loa, Linlinem, Nivik, Loyora e Yoem morreram sob os escombros.
 
 ### Ano 219
 
-A seca voltou, como no ano 204: 26 dias sem chuva, até que o céu se abriu.
+No inverno do ano 219, a Segunda Guerra da Fome esfriou sem acordo nem vencedor: três anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 220
 
-Taselem, o generoso, morreu dormindo, aos 65 anos. Em Sagak, Iba pediu: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A fome passou, e Sagak viu nisso obra da Voz dos Sonhos. O deus não tinha feito nada. Os escribas de Sagak registraram o milagre. Nos anos 211 a 220 houve três secas, 27 fomes, 26 preces que pareceram atendidas e três preces sem resposta; nasceram 112 crianças e morreram 143 pessoas. No fim do ano 220, 241 pessoas viviam no mundo: Sagak (68), Faur (91), Raur (46) e Viem (36).
+Na primavera do ano 220, Doselu, que falava pelo Pai das Pedras em Vium, morreu dormindo, aos 66 anos. Com lanças e promessas, Faut acabou com o conselho de Faur e passou a mandar sozinho. Depois da seca, Sagak jurou nunca desperdiçar água. Sagak venceu Vium e levou os seis sobreviventes para viver sob seu mando. Vium deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Terceira Guerra da Fome acabou porque um dos lados deixou de existir: três anos, três batalhas e cinco mortos. Nos anos 211 a 220 houve dezoito fomes, onze batalhas, vinte preces que pareceram atendidas e nove preces sem resposta; nasceram 81 crianças e morreram 163 pessoas. No fim do ano 220, 184 pessoas viviam no mundo: Sagak (72), Faur (84) e Loil (28).
 
 ### Ano 221
 
-Na primavera, Rilfa passou a guiar Raur, mas Dadaik não aceitou e guardou rancor. O inverno foi de gelo: quatro pessoas morreram de frio.
+Morreu Galinor, que falava pela Mãe de Dois em Sagak, aos 60 anos. Faur passou fome no inverno por 9 dias, e quatro pessoas morreram. A fome por causa da seca durou 23 dias em Sagak e levou 23 vidas.
 
 ### Ano 222
 
-Foram 9 dias de fome no inverno em Faur, com quatro mortos.
+Com Gaga à frente, doze pessoas deixaram Loil e fundaram Doan, na praia. Faur atacou Loil no morro. Loil foi derrotado e perdeu o que tinha guardado. Bear e Bebeut morreram na luta. Desde então, Faur chama o morro de Morro da Vitória. Faur e Loil fizeram as pazes no morro, antes que a briga crescesse. Diante das ruínas de Gaum, Doan disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
-*No ano 223, nada de notável aconteceu.*
+### Ano 223
+
+Na primavera do ano 223, Sellinar, que falava pela Mãe de Dois em Sagak, morreu de velhice aos 60 anos. Tinha fundado Vium. Em Doan, Yout tomou para si o cuidado das preces ao Pai das Pedras. Nasceu Viut, o primeiro de Doan. No inverno, Sagak atacou Loil no morro. Sagak venceu e levou a comida guardada. Na luta morreram Viena, Miena, Linena e Sellout.
 
 ### Ano 224
 
-Gotail, a devota, deu à luz e não sobreviveu ao parto. Desde a morte de Selgoik, nunca mais tinha rezado. No inverno, Gaor rezou por Nior até a voz acabar. Nior morreu mesmo assim, e Gaor nunca mais rezou.
+Um raio caiu no morro durante a tempestade e matou Mibear. Em Loil, disseram que era castigo. No verão, Seldoar, de Loil, tomou por esposa Miyoena, de Doan, e os dois povos passaram a se visitar.
 
 ### Ano 225
 
-Dofara, que guiava Faur, morreu dormindo, aos 62 anos. Uma febre correu Sagak e levou seis vidas. Sagak passou fome no inverno por 9 dias, e cinco pessoas morreram. Depois de tanta briga pelo comando, Faur passou a ser guiado por um conselho dos mais velhos.
+Em Loil, Yoena começou a pregar que o deus não era «o Pai das Pedras». Era «o Sedento». Em poucos anos, todos rezavam assim. Bebera, a desconfiada, deu à luz e não sobreviveu ao parto. Na guerra, tinha tirado três vidas. De novo a chuva sumiu, como no ano 200. Foram 22 dias de seca. Gaga tinha rezado: «Pai das Pedras, não nos deixes secar.» Quando a chuva voltou, Doan agradeceu ao Pai das Pedras. Foi só o tempo, mas quem iria dizer?
 
-*O ano 226 foi calmo.*
+### Ano 226
+
+Na primavera do ano 226, depois de anos sob um só, Loil sentou-se em roda: dali em diante, decidia-se juntos. Uma febre correu Faur e levou cinco vidas.
 
 ### Ano 227
 
-Sau, que guiava Sagak, morreu de velhice aos 52 anos. Ibloim, que falava pela Mãe de Dois em Viem, morreu de velhice aos 60 anos.
+Na primavera do ano 227, Yout, que falava pelo Pai das Pedras em Doan, morreu de velhice aos 47 anos. Sem lugar e sem comida, Loviem e os seus atravessaram a borda do mundo. Ninguém soube deles. No outono, Selgau deu à luz gêmeos, Sellinia e Beu. Uns viram bênção; outros, mau sinal. No inverno, Gaut, de Faur, casou-se com Gaga e foi viver em Doan. Foi o primeiro laço entre os dois povos.
 
 ### Ano 228
 
-Um inverno duro matou quinze pessoas de frio.
+Na primavera, morreu Linor, que guiava Sagak, aos 66 anos. Loia, que falava pelo Sedento em Loil, morreu de velhice aos 62 anos. Na guerra, tinha tirado duas vidas. Loniu passou a guiar Sagak, mas Selmik não aceitou e guardou rancor.
 
 *No ano 229, nada de notável aconteceu.*
 
 ### Ano 230
 
-No verão, Saem rezou por Saor até a voz acabar. Saor morreu mesmo assim, e Saem nunca mais rezou. Nos anos 221 a 230 houve três secas, doze fomes, doze preces que pareceram atendidas e três preces sem resposta; nasceram 156 crianças e morreram 142 pessoas. No fim do ano 230, 255 pessoas viviam no mundo: Sagak (83), Faur (89), Raur (45) e Viem (38).
+Nos anos 221 a 230 houve quatro secas, cinco fomes, duas batalhas, catorze preces que pareceram atendidas e três preces sem resposta; nasceram 153 crianças e morreram 111 pessoas. No fim do ano 230, 221 pessoas viviam no mundo: Sagak (84), Faur (97), Loil (26) e Doan (14).
 
-### Ano 231
-
-Na primavera, um raio caiu na floresta durante a tempestade e matou Nisela. Em Sagak, disseram que era castigo. Saem passou a guiar Sagak, mas Enbeor não aceitou e guardou rancor. Nibea deu à luz gêmeos, Sasau e Sa. Uns viram bênção; outros, mau sinal.
+*No ano 231, nada de notável aconteceu.*
 
 ### Ano 232
 
-Iba tinha rezado: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A fome passou, e Sagak viu nisso obra da Voz dos Sonhos. O deus não tinha feito nada. Nas tabuletas de Sagak, ficou escrito que foi a Voz dos Sonhos.
+Um inverno duro matou três pessoas de frio.
 
 ### Ano 233
 
-Na primavera, sem lugar e sem comida, Daik e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Toa, que falava pela Mãe de Dois em Sagak, não resistiu à fome. Os de Sagak caíram sobre Loil no morro. Loil expulsou os atacantes. Enik morreu na luta. Começou a Quarta Guerra da Fome: Sagak, com fome, foi buscar à força a comida de Loil. Na Quarta Guerra da Fome, Sagak atacou Loil no morro. Loil expulsou os atacantes. Selmiut, Selut, Linga e Dobera morreram na luta. A Quarta Guerra da Fome acabou em trégua, depois de duas batalhas e cinco mortos. Loil saiu dela mais forte.
 
 ### Ano 234
 
-Na primavera do ano 234, Gamiu, que guiava Faur, morreu de velhice aos 61 anos. Morreu Dasela, a devota, aos 61 anos. Uma febre correu Faur e levou três vidas. Iba, a medrosa, não resistiu à fome.
+Em Doan, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 172, só a crônica guarda. A fome no inverno durou 9 dias em Sagak e levou dez vidas. Selmiut tinha rezado: «Mãe de Dois, dá-nos o que comer.» A comida voltou, e Sagak deu graças à Mãe de Dois. O deus nada fez: o crédito era de graça. Nas tabuletas de Sagak, ficou escrito que foi a Mãe de Dois. Tantas preces atendidas fizeram Doan confiar no céu mais do que nas próprias mãos. Um inverno duro matou quatro pessoas de frio.
 
-### Ano 235
-
-Sagak passou fome no inverno por 9 dias, e 26 pessoas morreram. A fome no inverno durou 12 dias em Viem e levou quatro vidas. A seca voltou, como no ano 219: 19 dias sem chuva, até que o céu se abriu.
+*No ano 235, nada de notável aconteceu.*
 
 ### Ano 236
 
-A fome no inverno durou 9 dias em Faur e levou dezesseis vidas.
+Em Loil, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Sedento». No outono, em Doan, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
-### Ano 237
+*O ano 237 foi calmo.*
 
-Na primavera do ano 237, morreu Lina, que falava pela Voz dos Sonhos em Sagak, aos 62 anos.
+### Ano 238
 
-*Entre os anos 238 e 239, nada mudou o rumo do mundo.*
+Morreu Vimira, que guiava Faur, aos 47 anos. Lonia passou a guiar Faur, mas Rilia não aceitou e guardou rancor.
+
+### Ano 239
+
+Com lanças e promessas, Seldoar acabou com o conselho de Loil e passou a mandar sozinho. Mimiu deu à luz gêmeos, Sagara e Belinut. Uns viram bênção; outros, mau sinal. No outono, em Doan, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Doan, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 240
 
-No outono do ano 240, numa tempestade sobre o morro, um raio matou Fataik. A família de Fataik nunca perdoou o céu. Nos anos 231 a 240 houve quatro secas, dezesseis fomes e dezessete preces que pareceram atendidas; nasceram 122 crianças e morreram 132 pessoas. No fim do ano 240, 244 pessoas viviam no mundo: Sagak (76), Faur (93), Raur (48) e Viem (27).
+Na primavera, Loniu, que guiava Sagak, morreu dormindo, aos 50 anos. Nos anos 231 a 240 houve quatro secas, nove fomes, duas batalhas e dezessete preces que pareceram atendidas; nasceram 99 crianças e morreram 96 pessoas. No fim do ano 240, 225 pessoas viviam no mundo: Sagak (72), Faur (91), Loil (37) e Doan (25).
 
 ### Ano 241
 
-Em Sagak, Viut pediu: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Voz dos Sonhos. A crônica sabe que foi acaso. Os escribas de Sagak registraram o milagre. O inverno foi de gelo: três pessoas morreram de frio.
+No verão, apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu.
 
 ### Ano 242
 
-O inverno foi de gelo: onze pessoas morreram de frio.
+Na primavera do ano 242, Sela disse ter ouvido o deus de outro jeito: não era «o Pai das Pedras», era «a Voz dos Sonhos». Doan acreditou, e o deus mudou de nome. No verão, um raio caiu no lago durante a tempestade e matou Nibeu. Ninguém em Faur teve dúvida: era castigo.
 
 ### Ano 243
 
-Gara, que falava pela Mãe de Dois em Viem, morreu dormindo, aos 67 anos. Ragon implorou pela filha. Sutail morreu, e daquele dia em diante Ragon cuspia no chão quando falavam da Mãe da Chuva.
+Yoena, que falava pelo Sedento em Loil, morreu de velhice aos 58 anos. Na guerra, tinha tirado duas vidas. Sem lugar e sem comida, Loik e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Sagak, Satoa pediu: «Mãe de Dois, dá-nos o que comer.» A fome passou, e Sagak viu nisso obra da Mãe de Dois. A crônica sabe que foi acaso. Os escribas de Sagak registraram o milagre. A seca voltou, como no ano 225: 19 dias sem chuva, até que o céu se abriu.
 
 ### Ano 244
 
-Morreu Ragon, o pacífico, aos 52 anos. Desde a morte de Sutail, nunca mais tinha rezado. Um raio caiu no lago durante a tempestade e matou Selia. Ninguém em Faur teve dúvida: era castigo. Desde a morte de Selia, ninguém em Faur chega perto do lago em dia de tempestade.
+Na primavera do ano 244, Doan deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Sagak passou fome no inverno por 9 dias, e 24 pessoas morreram. A fome no inverno durou 9 dias em Faur e levou treze vidas. A doença entrou em Faur e matou cinco pessoas.
 
-*O ano 245 passou sem nada que a crônica precise guardar.*
+### Ano 245
+
+Na primavera do ano 245, Gaga, que fundou Doan e o guiava, morreu de repente, aos 44 anos. Tinha fundado Doan. Yora partiu com cinco pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 246
 
-Na primavera do ano 246, morreu Doa, que guiava Faur, aos 61 anos. Em Sagak, Bemior começou a pregar que o deus não era «a Voz dos Sonhos». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim. No inverno, Beloia deu à luz gêmeos, Midou e Rilut. Uns viram bênção; outros, mau sinal.
+Em Doan, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam.
 
 ### Ano 247
 
-A fome no inverno durou 6 dias em Faur e levou duas vidas. De novo a chuva sumiu, como no ano 235. Foram 19 dias de seca.
+Morreu Satoa, que falava pela Mãe de Dois em Sagak, aos 61 anos. Em Sagak, Vilinor começou a pregar que o deus não era «a Mãe de Dois». Era «o Que Acende o Céu». Em poucos anos, todos rezavam assim.
 
 ### Ano 248
 
-Lolina, que guiava Viem, não resistiu à fome. A fome no inverno durou 9 dias em Faur e levou dezenove vidas.
+Em Doan, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam.
 
 ### Ano 249
 
-Na primavera, em Viem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
+No inverno do ano 249, Niar, que guiava Doan, morreu de fome.
 
 ### Ano 250
 
-Nos anos 241 a 250 houve três secas, dezesseis fomes e dezessete preces que pareceram atendidas; nasceram 117 crianças e morreram 117 pessoas. No fim do ano 250, 245 pessoas viviam no mundo: Sagak (71), Faur (93), Raur (49) e Viem (32).
+A fome no inverno durou 9 dias em Loil e levou oito vidas. A praia passou a ser a praia da fome: Praia da Fome. Nimior rezou por Loselu até a voz acabar. Loselu morreu mesmo assim, e Nimior nunca mais rezou. Um inverno duro matou dezenove pessoas de frio. Nos anos 241 a 250 houve duas secas, quinze fomes e seis preces que pareceram atendidas; nasceram 144 crianças e morreram 133 pessoas. No fim do ano 250, 229 pessoas viviam no mundo: Sagak (61), Faur (93), Loil (47) e Doan (28).
 
 ### Ano 251
 
-Gofa passou a guiar Sagak, mas Sagau não aceitou e guardou rancor.
+A terra tremeu. Caíram dezoito cabanas. Nilinik, You e Selsela morreram sob os escombros.
 
 *O ano 252 foi calmo.*
 
 ### Ano 253
 
-Em Viem, Daloela pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A comida voltou, e Viem deu graças à Mãe de Dois. A crônica sabe que foi acaso. Nas tabuletas de Viem, ficou escrito que foi a Mãe de Dois.
+Na primavera do ano 253, Linbena partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Em Sagak, Enut pediu: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Sagak viu nisso obra do Que Acende o Céu. Foi só o tempo, mas quem iria dizer? Os escribas de Sagak registraram o milagre. Loil passou fome no inverno por 14 dias, e duas pessoas morreram.
 
-### Ano 254
-
-Na primavera, morreu Vim, o engenhoso, aos 62 anos. Maela disse ter ouvido o deus de outro jeito: não era «a Mãe de Dois», era «a Voz do Céu». Viem acreditou, e o deus mudou de nome.
+*No ano 254, nada de notável aconteceu.*
 
 ### Ano 255
 
-Morreu Gofa, que guiava Sagak, aos 57 anos. Um inverno duro matou três pessoas de frio.
+Na primavera, Gaut, que guiava Doan, morreu de velhice aos 46 anos. No inverno, o sol escureceu outra vez.
 
-### Ano 256
-
-Morreu Viut, que falava pela Mãe de Dois em Sagak, aos 60 anos.
+*O ano 256 passou sem nada que a crônica precise guardar.*
 
 ### Ano 257
 
-Na primavera do ano 257, Sela partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
+Na primavera, Vilinor, que falava pelo Que Acende o Céu em Sagak, morreu de velhice aos 54 anos. Besela partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
 
-*Entre os anos 258 e 259, nada mudou o rumo do mundo.*
+### Ano 258
+
+Na primavera do ano 258, Linselik morreu de velhice aos 52 anos. Na guerra, tinha tirado duas vidas.
+
+*No ano 259, nada de notável aconteceu.*
 
 ### Ano 260
 
-Sagak passou fome no inverno por 11 dias, e duas pessoas morreram. Selem partiu com três pessoas para além da borda do mundo. Nunca voltaram. Nos anos 251 a 260 houve dezenove fomes e 22 preces que pareceram atendidas; nasceram 127 crianças e morreram 81 pessoas. No fim do ano 260, 283 pessoas viviam no mundo: Sagak (89), Faur (107), Raur (49) e Viem (38).
+Na primavera do ano 260, Belora, que guiava Sagak, morreu de velhice aos 50 anos. Nos anos 251 a 260 houve dezessete fomes e seis preces que pareceram atendidas; nasceram 114 crianças e morreram 60 pessoas. No fim do ano 260, 278 pessoas viviam no mundo: Sagak (91), Faur (100), Loil (52) e Doan (35).
 
 ### Ano 261
 
-Sem lugar e sem comida, Maela e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Miem partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A doença entrou em Sagak e matou quatro pessoas.
 
 ### Ano 262
 
-Daloela tinha rezado: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Viem deu graças à Voz do Céu. O deus não tinha feito nada. Nas tabuletas de Viem, ficou escrito que foi a Voz do Céu. No inverno, Bemior, que falava pela Mãe de Dois em Sagak, morreu de febre aos 62 anos.
+Na primavera, Loil escolheu Miyoena para guiar o grupo. Beloena queria o lugar e nunca perdoou. Sagak passou fome no inverno por 9 dias, e uma pessoa morreu. Em Sagak, Enut pediu: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Que Acende o Céu. O deus não tinha feito nada. Nas tabuletas de Sagak, ficou escrito que foi o Que Acende o Céu.
 
 ### Ano 263
 
-Morreu Salinor, o rancoroso, aos 62 anos. Desde a morte de Linsara, nunca mais tinha rezado. Com lanças e promessas, Enut acabou com o conselho de Sagak e passou a mandar sozinho.
+O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 264
 
-Na primavera, Niloa partiu com cinco pessoas para além da borda do mundo. Nunca voltaram.
+Miselem, que guiava Sagak, morreu de repente, aos 41 anos. Sagak passou fome no inverno por 11 dias, e duas pessoas morreram. No verão, a febre levou Enut, o generoso. No outono, Beor rezou por Selloa até a voz acabar. Selloa morreu mesmo assim, e Beor nunca mais rezou.
 
 ### Ano 265
 
-Morreu Miu, que guiava Faur, aos 51 anos. Daloela, a curiosa, morreu de velhice aos 62 anos. Ensela partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
+O inverno foi de gelo: quatro pessoas morreram de frio.
 
 ### Ano 266
 
-Na primavera do ano 266, Selik rezou por Gotaik até a voz acabar. Gotaik morreu mesmo assim, e Selik nunca mais rezou.
+Sem lugar e sem comida, Bemiena e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 267
 
-Na primavera do ano 267, morreu Lomia, que guiava Raur, aos 63 anos. De novo a chuva sumiu, como no ano 247. Foram 20 dias de seca. Enem, que falava pela Mãe de Dois em Sagak, não resistiu à fome.
+No inverno do ano 267, a febre levou Beor. Nunca perdoou o deus pela morte de Selloa. Doan acabou: Mik, Selim e Vivie foram viver em Sagak.
 
 ### Ano 268
 
-A fome no inverno durou 9 dias em Sagak e levou 22 vidas. No verão, Beim rezou por Bemaut até a voz acabar. Bemaut morreu mesmo assim, e Beim nunca mais rezou. Beim, que falava pela Voz do Céu em Viem, morreu de febre aos 53 anos. Nunca perdoou o deus pela morte de Bemaut. A doença entrou em Viem e matou seis pessoas. Depois da febre, Viem passou a queimar os seus mortos, para que a doença não voltasse.
+Sagak passou fome no inverno por 9 dias, e 21 pessoas morreram. Sagak encontrou as ruínas de Doan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Uma tosse que não passava matou cinco pessoas em Sagak. No inverno, Lobear, o devoto, cansou de dividir pouca comida. Partiu com vinte pessoas para a praia e ali fundou Beor. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Loil perdeu o saber.
 
-*O ano 269 passou sem nada que a crônica precise guardar.*
+### Ano 269
+
+Beik, que guiava Sagak, morreu dormindo, aos 56 anos. Morreu o último que tinha visto o ano 188. Em Loil, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Nasceu Nibear, o primeiro de Beor. Beor encontrou as ruínas de Doan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 270
 
-Nos anos 261 a 270 houve 29 fomes, 31 preces que pareceram atendidas e quatro preces sem resposta; nasceram 121 crianças e morreram 147 pessoas. No fim do ano 270, 234 pessoas viviam no mundo: Sagak (78), Faur (88), Raur (41) e Viem (27).
+Nos anos 261 a 270 houve duas secas, 30 fomes e quinze preces que pareceram atendidas; nasceram 141 crianças e morreram 202 pessoas. No fim do ano 270, 206 pessoas viviam no mundo: Sagak (66), Faur (93), Loil (23) e Beor (24).
 
 ### Ano 271
 
-Em Sagak, Nibera pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Mãe de Dois. O deus nada fez: o crédito era de graça. Os escribas de Sagak registraram o milagre. No inverno, Sellora deu à luz gêmeos, Benik e Doem. Uns viram bênção; outros, mau sinal.
+Faur escolheu Rilem para guiar o grupo. Mibem queria o lugar e nunca perdoou. Em Faur, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. No inverno, Enena, de Sagak, casou-se com Beloar e foi viver em Beor. Foi o primeiro laço entre os dois povos. Fazia muito tempo que Loil não rezava. Diante do que viu, voltou a chamar por «o Sedento», e o templo encheu de novo. Para Loil, o deus já não era «o Sedento»: passou a ser «o Que Apaga o Sol».
 
-*No ano 272, nada de notável aconteceu.*
+### Ano 272
+
+Enena passou a falar pelo Sedento em Beor. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 273
 
-Sagak passou fome no inverno por 11 dias, e três pessoas morreram.
+Vik, que falava pelo Que Acende o Céu em Sagak, morreu de velhice aos 65 anos. Em Beor, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Sedento». Em Beor, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Em Loil, Niem pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Loil duvidou de que o Que Apaga o Sol tinha ouvido. A crônica sabe que foi acaso. Os escribas de Loil registraram o milagre.
 
-*O ano 274 passou sem nada que a crônica precise guardar.*
+### Ano 274
+
+Na primavera do ano 274, em Beor, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. A fome no inverno durou 9 dias em Faur e levou cinco vidas.
 
 ### Ano 275
 
-Na primavera, sem lugar e sem comida, Niloik e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera do ano 275, Beselem, de Beor, tomou por esposa Rilloia, de Faur, e os dois povos passaram a se visitar. A seca voltou, como no ano 243: 24 dias sem chuva, até que o céu se abriu.
 
 ### Ano 276
 
-Na primavera, Linlou, que guiava Faur, morreu dormindo, aos 58 anos. Liut implorou pelo filho. Linvim morreu, e daquele dia em diante Liut cuspia no chão quando falavam da Voz do Céu.
+No outono do ano 276, Loyoik, o devoto, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 277
 
-Morreu Lolinik, que guiava Faur, aos 54 anos. Raur passou fome no inverno por 6 dias, e duas pessoas morreram.
+Loil passou fome por causa da seca por 20 dias, e onze pessoas morreram. No verão, de novo o sol se apagou no meio do dia. Um inverno duro matou três pessoas de frio.
 
 ### Ano 278
 
-Na primavera, Liut implorou pelo filho. Mavik morreu, e daquele dia em diante Liut cuspia no chão quando falavam da Voz do Céu.
+Na primavera, Selgara, que falava pelo Que Acende o Céu em Sagak, morreu de velhice aos 65 anos. Rilu não esperou a vez: tomou o comando de Faur à força, e o conselho dos velhos se calou. No outono, um raio caiu na praia durante a tempestade e matou Yoem. Em Beor, disseram que era castigo. Desde aquele dia, Beor chama a praia de Praia do Raio.
 
-### Ano 279
-
-Na primavera, morreu Suil, que guiava Raur, aos 63 anos. A doença entrou em Faur e matou quatro pessoas.
+*O ano 279 passou sem nada que a crônica precise guardar.*
 
 ### Ano 280
 
-Na primavera, Rafa, a pacífica, morreu dormindo, aos 52 anos. Sem lugar e sem comida, Ratara e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Raur, Taem pediu: «Mãe da Chuva, dá-nos o que comer.» A fome passou, e Raur viu nisso obra da Mãe da Chuva. A crônica sabe que foi acaso. Nos anos 271 a 280 houve 23 fomes, 30 preces que pareceram atendidas e quatro preces sem resposta; nasceram 157 crianças e morreram 100 pessoas. No fim do ano 280, 285 pessoas viviam no mundo: Sagak (90), Faur (106), Raur (52) e Viem (37).
+Na primavera do ano 280, Viena, que guiava Loil, morreu dormindo, aos 56 anos. Nos anos 271 a 280 houve três secas, dez fomes e treze preces que pareceram atendidas; nasceram 149 crianças e morreram 102 pessoas. No fim do ano 280, 253 pessoas viviam no mundo: Sagak (78), Faur (96), Loil (41) e Beor (38).
 
 ### Ano 281
 
-Em Sagak, Savira começou a pregar que o deus não era «a Mãe de Dois». Era «a Mãe da Fartura». Em poucos anos, todos rezavam assim. Foram 6 dias de fome no inverno em Faur, com quatro mortos.
+Na primavera, Enmiu, que guiava Sagak, morreu de velhice aos 60 anos. Com Lobear à frente, a nova geração de Beor abandonou o costume de queimar os mortos, costume herdado dos avós. No outono, Loil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Loil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
 
 ### Ano 282
 
-Uma febre correu Faur e levou seis vidas.
+Na primavera, Nienem, o rancoroso, morreu de velhice aos 60 anos.
 
-### Ano 283
-
-Galora partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+*O ano 283 foi calmo.*
 
 ### Ano 284
 
-Rilrilu partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
+Gabeor tinha rezado: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Sagak deu graças ao Que Acende o Céu. O deus não tinha feito nada. Nas tabuletas de Sagak, ficou escrito que foi o Que Acende o Céu.
 
-*No ano 285, nada de notável aconteceu.*
+### Ano 285
+
+Foram 6 dias de fome no inverno em Beor, com dois mortos. A seca voltou, como no ano 275: 23 dias sem chuva, até que o céu se abriu. Yolinar, que guiava Loil, morreu de fome. Lobear, que fundou Beor e o guiava, não resistiu à fome. Tinha fundado Beor. Yout passou a guiar Beor, mas Milina não aceitou e guardou rancor.
 
 ### Ano 286
 
-Na primavera do ano 286, Linnik, que falava pela Mãe da Fartura em Sagak, morreu dormindo, aos 62 anos.
+A fome no inverno durou 9 dias em Sagak e levou 21 vidas. Faur passou fome no inverno por 9 dias, e onze pessoas morreram. No verão, Gaor implorou pelo filho. Linor morreu, e daquele dia em diante Gaor cuspia no chão quando falavam do Que Acende o Céu. A doença entrou em Sagak e matou quatro pessoas.
 
 ### Ano 287
 
-Morreu Ramiem, o curioso, aos 58 anos.
+No inverno do ano 287, Loil cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Apaga o Sol.
 
 ### Ano 288
 
-Morreu Enut, que guiava Sagak, aos 61 anos. O templo de Viem ficou mais forte que o líder. Liut, que falava pela Voz do Céu, passou a decidir tudo. Sem lugar e sem comida, Loloa e os seus atravessaram a borda do mundo. Ninguém soube deles. A terra tremeu. Caíram 21 cabanas. Nisara, Famiem, Galinem, Fagaia e Bemiem morreram sob os escombros. No inverno, Taem, o pacífico, não resistiu à fome.
+Gabeor, que falava pelo Que Acende o Céu em Sagak, morreu dormindo, aos 62 anos. Engara deu à luz gêmeos, Rilselik e Nirilem. Uns viram bênção; outros, mau sinal.
 
 ### Ano 289
 
-Na primavera do ano 289, Saor, que guiava Sagak, morreu de frio. Foram 9 dias de fome no inverno em Faur, com dezenove mortos. Sagak passou fome no inverno por 11 dias, e sete pessoas morreram. Saor tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças à Mãe da Fartura. O deus não tinha feito nada. Os escribas de Sagak registraram o milagre. O inverno foi de gelo: vinte pessoas morreram de frio.
+Ninguém lembrava mais a razão, e Loil abandonou o costume de queimar os mortos.
 
 ### Ano 290
 
-Nos anos 281 a 290 houve 33 fomes, 28 preces que pareceram atendidas e quatro preces sem resposta; nasceram 122 crianças e morreram 166 pessoas. No fim do ano 290, 231 pessoas viviam no mundo: Sagak (70), Faur (91), Raur (39) e Viem (31).
+Na primavera do ano 290, em Sagak, Selvira começou a pregar que o deus não era «o Que Acende o Céu». Era «o Que Apaga o Sol». Em poucos anos, todos rezavam assim. Ninguém lembrava mais a razão, e Loil abandonou o medo das tempestades. Nos anos 281 a 290 houve treze fomes e treze preces que pareceram atendidas; nasceram 123 crianças e morreram 138 pessoas. No fim do ano 290, 239 pessoas viviam no mundo: Sagak (75), Faur (100), Loil (36) e Beor (28).
 
 ### Ano 291
 
-Na primavera, Linim disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Que Dá em Dobro». Viem acreditou, e o deus mudou de nome. Com Begon à frente, a nova geração de Raur abandonou o treino com lanças, costume herdado dos avós.
+Niem, que guiava Loil, morreu dormindo, aos 64 anos.
 
 ### Ano 292
 
-Na primavera do ano 292, depois de anos sob um só, Sagak sentou-se em roda: dali em diante, decidia-se juntos. Uma febre correu Faur e levou quatro vidas.
+Uma febre correu Faur e levou quatro vidas.
 
-### Ano 293
+*O ano 293 foi calmo.*
 
-Na primavera, em Raur, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Mãe da Chuva». Linor implorou pela filha. Miena morreu, e daquele dia em diante Linor cuspia no chão quando falavam da Mãe da Fartura.
+### Ano 294
 
-*Os anos 294 a 295 passaram em paz.*
+A seca voltou, como no ano 285: 21 dias sem chuva, até que o céu se abriu.
+
+### Ano 295
+
+Yolout tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Loil deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso. Os escribas de Loil registraram o milagre. A fome no inverno durou 11 dias em Sagak e levou nove vidas.
 
 ### Ano 296
 
-Na primavera do ano 296, morreu Liut, que guiava Viem, aos 57 anos. Nunca perdoou o deus pela morte de Linvim. Em Raur, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Sagak passou fome no inverno por 9 dias, e 25 pessoas morreram. O inverno foi de gelo: cinco pessoas morreram de frio.
+Na primavera do ano 296, ninguém lembrava mais a razão, e Loil abandonou o treino com lanças.
 
-### Ano 297
-
-Na primavera do ano 297, Linena, a corajosa, morreu de repente, aos 40 anos. No verão, numa tempestade sobre o lago, um raio matou Nia. Em Faur, disseram que era castigo.
+*O ano 297 passou sem nada que a crônica precise guardar.*
 
 ### Ano 298
 
-Begora, que falava pela Mãe da Fartura em Sagak, morreu ao dar à luz.
+Na primavera, sem lugar e sem comida, Mirila e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 3 dias de fome no inverno em Loil, com dois mortos.
 
-*O ano 299 passou sem nada que a crônica precise guardar.*
+### Ano 299
+
+Na primavera, Viselut, que guiava Sagak, morreu dormindo, aos 53 anos. Sagak escolheu Dobea para guiar o grupo. Mior queria o lugar e nunca perdoou. Depois da seca, Beor jurou nunca desperdiçar água.
 
 ### Ano 300
 
-Nos anos 291 a 300 houve catorze fomes e onze preces que pareceram atendidas; nasceram 146 crianças e morreram 108 pessoas. No fim do ano 300, 269 pessoas viviam no mundo: Sagak (73), Faur (110), Raur (53) e Viem (33).
+Na primavera do ano 300, com Beloar à frente, a nova geração de Beor abandonou o medo das tempestades, costume herdado dos avós. A fome por causa da seca durou 21 dias em Beor e levou nove vidas. Nos anos 291 a 300 houve quatro secas, dezesseis fomes e onze preces que pareceram atendidas; nasceram 102 crianças e morreram 122 pessoas. No fim do ano 300, 216 pessoas viviam no mundo: Sagak (63), Faur (84), Loil (39) e Beor (30).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Sagak** vive na floresta, com 73 pessoas, com canais e moinhos; nasceu de uma briga em Zeor no ano 23; chama o deus de «a Mãe da Fartura»; costumes: faz a festa da chuva (desde o ano 24); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
-- **Faur** vive no lago, com 110 pessoas, com canais e moinhos; nasceu de uma migração em Sagak no ano 51; não reza a ninguém; costumes: queima os mortos (desde o ano 70); treina os jovens com lanças (desde o ano 90); guarda tanta comida para o inverno (desde o ano 134); não sai de casa em dia de tempestade (desde o ano 244).
-- **Raur** vive no morro, com 53 pessoas, com canais e moinhos; nasceu de um cisma em Faon no ano 94; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 51); não sai de casa em dia de tempestade (desde o ano 132).
-- **Viem** vive na praia, com 33 pessoas, com canais e moinhos; nasceu de uma migração em Sagak no ano 108; chama o deus de «o Que Dá em Dobro»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 141); queima os mortos (desde o ano 268).
+- **Sagak** vive na floresta, com 63 pessoas, com canais e moinhos; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 24); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86); não desperdiça uma gota d'água (desde o ano 220).
+- **Faur** vive no lago, com 84 pessoas, com canais e moinhos; nasceu de uma migração em Sagak no ano 51; não reza a ninguém; costumes: queima os mortos (desde o ano 70); guarda tanta comida para o inverno (desde o ano 124); treina os jovens com lanças (desde o ano 124); não sai de casa em dia de tempestade (desde o ano 140).
+- **Loil** vive no morro, com 39 pessoas, com canais e moinhos; nasceu de uma migração em Sagak no ano 148; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
+- **Beor** vive na praia, com 30 pessoas, com canais e moinhos; nasceu de uma migração em Loil no ano 268; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 299).
 
-Povos que deixaram de existir: Zeor, Selan e Faon.
+Povos que deixaram de existir: Zeor, Selan, Miar, Gaum, Tosan, Vium e Doan.
 
-Lugares com nome: Praia da Vitória (praia, para Sagak), Praia do Luto (praia, para Faon), Praia do Luto (praia, para Viem), Lago da Fome (lago, para Zeor), Lago da Vitória (lago, para Faur), Lago do Luto (lago, para Sagak), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor), Morro da Vitória (morro, para Sagak) e Morro do Luto (morro, para Raur).
+Lugares com nome: Praia da Fome (praia, para Miar), Praia do Luto (praia, para Sagak), Praia da Vitória (praia, para Loil), Praia do Luto (praia, para Vium), Praia da Vitória (praia, para Faur), Praia da Fome (praia, para Doan), Praia do Raio (praia, para Beor), Lago da Fome (lago, para Zeor), Lago da Vitória (lago, para Faur), Lago do Luto (lago, para Sagak), Lago do Luto (lago, para Miar), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor), Floresta da Trégua (floresta, para Vium), Morro do Raio (morro, para Gaum), Morro da Vitória (morro, para Miar), Morro do Luto (morro, para Tosan), Morro da Vitória (morro, para Sagak), Morro da Vitória (morro, para Loil) e Morro da Vitória (morro, para Faur).
 
-Em 300 anos nasceram 3160 pessoas e morreram 2825.
+Em 300 anos nasceram 2853 pessoas e morreram 2580.

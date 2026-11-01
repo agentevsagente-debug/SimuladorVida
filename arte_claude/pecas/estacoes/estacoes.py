@@ -206,7 +206,8 @@ def variante(pasta, nome, px, estacao):
 def montanha_inverno(px, profundidade, hora):
     """Mais neve: uma calota que segue a crista de cada montanha, com `profundidade` px e a
     borda de baixo pontilhada. Branca do lado da luz, azul-clara na sombra."""
-    claro, sombra = (31, 0) if hora != "noite" else (12, 5)
+    # à noite a neve fica em cinza-azulado e violeta, abaixo da lua e da fogueira
+    claro, sombra = (31, 0) if hora != "noite" else (11, 5)
     luz = {"dia": {1: True, 18: True, 14: True, 2: False, 17: False, 13: False},
            "entardecer": {7: True, 5: False, 4: False, 3: False},
            "noite": {5: True, 4: False, 3: False, 30: False}}[hora]
@@ -237,6 +238,13 @@ def mata_sazonal(px, estacao, hora):
     x0 = xs[0]
     out = [[None] * w for _ in range(hh)]
     noite = hora == "noite"
+    # separações entre copas em larguras irregulares (5 a 11 px), sem padrão repetido
+    import random as _r
+    rr = _r.Random(909)
+    separacoes, x = set(), x0
+    while x < w:
+        x += rr.randint(5, 11)
+        separacoes.add(x)
     for x in xs:
         t = topo[x]
         # a ponta esquerda afina em copas soltas, em vez de terminar num corte reto
@@ -265,18 +273,19 @@ def mata_sazonal(px, estacao, hora):
                 else:
                     c = px[y][x]
             else:  # inverno
-                claro, meio, corpo, escuro = (31, 0, 13, 3) if not noite else (12, 5, 3, 30)
+                claro, meio, corpo, escuro = (31, 0, 13, 3) if not noite else (11, 5, 3, 30)
                 if hora == "entardecer":
                     claro, meio, corpo, escuro = 12, 7, 4, 3
+                sep_i = x in separacoes and d > 1
                 if d == 0:
                     c = claro
                 elif d == 1:
-                    c = claro if x % 3 else meio
+                    c = claro if h(x, y, 21) < 0.7 else meio
                 elif d < 4:
-                    c = meio if pont(x, y, 0.6 - d * 0.1) else corpo
+                    c = meio if h(x, y, 22) < 0.55 - d * 0.1 else corpo
                 else:
-                    c = escuro if sep or (y > 116 and pont(x, y, 0.4)) else corpo
-                    if h(x, y, 13) < 0.08:
+                    c = escuro if sep_i or (y > 116 and h(x, y, 23) < 0.35) else corpo
+                    if h(x, y, 13) < 0.06:
                         c = claro
             out[y][x] = c
     return out
@@ -295,6 +304,59 @@ def ceu_inverno(hora):
     cena.pintar_sol(t, cfg)
     cena.pintar_nuvens(t, cfg, hora, random.Random(4))
     return t.p
+
+
+PELE, PELE_S, ROUPA = 26, 25, 28        # cores-base dos habitantes (trocas.json)
+PASTAS_PESSOAS = ("habitantes", "acoes", "estagio2", "estagio3", "estagio4", "estagio5", "estagio6")
+PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "escriba", "pescar", "carregar",
+                    "construir", "forjar", "escrever", "remar", "lutar", "dancar", "olhar", "esticar", "sentar",
+                    "agachar", "cocar", "bocejar", "conversar", "mae_", "casal", "funeral", "tocar", "andar_",
+                    "segurar")
+
+
+def vestir_inverno(px, qw, qh):
+    """Roupa de frio sobre as cores-base: capuz de lã sobre o cabelo (9/10), manto nas
+    costas (8), mangas de lã (o braço vira 10/9, as mãos ficam), polainas (9/8) e gola de
+    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece."""
+    out = [l[:] for l in px]
+    w = len(px[0])
+    adulto = qh == 12
+    mangas = range(4, 7) if adulto else range(4, 5)
+    pernas = range(9, 11) if adulto else range(6, 7)
+    for q0 in range(0, w, qw):
+        for y in mangas:
+            for x in range(q0, q0 + qw):
+                if out[y][x] == PELE:
+                    out[y][x] = 10
+                elif out[y][x] == PELE_S:
+                    out[y][x] = 9
+        for y in pernas:
+            for x in range(q0, q0 + qw):
+                if out[y][x] == PELE:
+                    out[y][x] = 9
+                elif out[y][x] == PELE_S:
+                    out[y][x] = 8
+        # gola: as pontas da roupa na linha dos ombros
+        y = 4
+        xs = [x for x in range(q0, q0 + qw) if px[y][x] == ROUPA]
+        for x in (xs[:1] + xs[-1:]) if xs else []:
+            out[y][x] = 12
+        # capuz de lã sobre o cabelo (o rosto fica de fora)
+        topo_cab = range(0, 6) if adulto else range(0, 3)
+        for y in topo_cab:
+            for x in range(q0, q0 + qw):
+                if px[y][x] in CABELOS_BASE:
+                    out[y][x] = CAPUZ[CABELOS_BASE[px[y][x]]]
+        # manto: uma coluna a mais de lã nas costas, do ombro à cintura
+        for y in (range(4, 9) if adulto else range(4, 6)):
+            xs = [x for x in range(q0, q0 + qw) if px[y][x] is not None]
+            if xs and xs[0] - 1 >= q0 and out[y][xs[0] - 1] is None:
+                out[y][xs[0] - 1] = 8
+    return out
+
+
+CABELOS_BASE = {30: "claro", 12: "claro", 8: "luz", 31: "luz"}   # cabelo e brilho (adulto e idoso)
+CAPUZ = {"claro": 9, "luz": 10}
 
 
 def gelo():
@@ -367,6 +429,20 @@ def principal():
     for hora in ("dia", "entardecer"):
         gravar(ceu_inverno(hora), AQUI / "inverno" / "montagem" / f"ceu_{hora}.png", ampliar=False)
     gravar(gelo(), AQUI / "inverno" / "terreno" / "gelo_superficie.png", ampliar=False)
+    # roupa de inverno dos habitantes (folhas de 8x12, 12x12 e 6x8)
+    import re
+    for pasta in PASTAS_PESSOAS:
+        for f in sorted((PECAS / pasta).glob("*.png")):
+            if not f.stem.startswith(PREFIXOS_PESSOAS) or f.stem.startswith(("amostra", "dormir")):
+                continue
+            px = ler(f)
+            m = re.search(r"_(\d+)q$", f.stem)
+            n = int(m.group(1)) if m else 1
+            qh = len(px)
+            if qh not in (8, 12):
+                continue
+            gravar(vestir_inverno(px, len(px[0]) // n, qh), AQUI / "inverno" / pasta / f.name, ampliar=False)
+            contagem["inverno"] += 1
     gravar(folha_quadros(neve_caindo()), PECAS / "efeitos" / "neve_4q.png")
     gravar(folha_quadros(flocos()), PECAS / "efeitos" / "floco_3v.png")
     print("estações:", contagem)

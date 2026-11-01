@@ -38,10 +38,35 @@ func _initialize() -> void:
 		var t := Time.get_ticks_usec()
 		w.avancar_dias(Mundo.DIAS_ANO)
 		print("1 ano de jogo: %.3f s (agora %d pessoas)" % [(Time.get_ticks_usec() - t) / 1e6, w.populacao()])
-	var t2 := Time.get_ticks_usec()
-	for i in 10:
+	# Consulta completa por passo: avança uma hora e pergunta tudo o que a moldura usa.
+	var primeira := 0.0
+	var repetida := 0.0
+	var pior := 0.0
+	var dia_soma := 0.0
+	var dia_pior := 0.0
+	var dia_n := 0
+	for h in 48:
+		w.avancar_hora()
+		var t2 := Time.get_ticks_usec()
 		w.pessoas_visiveis()
+		w.cenas_ativas()
 		w.construcoes()
 		w.preces_abertas()
-	print("consulta completa da apresentação: %.2f ms" % [(Time.get_ticks_usec() - t2) / 10000.0])
+		var dt := (Time.get_ticks_usec() - t2) / 1000.0
+		primeira += dt
+		pior = maxf(pior, dt)
+		if w.hora() >= 5:
+			dia_soma += dt
+			dia_pior = maxf(dia_pior, dt)
+			dia_n += 1
+		var t3 := Time.get_ticks_usec()
+		w.pessoas_visiveis()
+		w.cenas_ativas()
+		w.construcoes()
+		w.preces_abertas()
+		repetida += (Time.get_ticks_usec() - t3) / 1000.0
+	print("consulta completa por passo (%d pessoas): média %.2f ms, pior %.2f ms; repetida na mesma hora %.2f ms" % [
+		w.populacao(), primeira / 48.0, pior, repetida / 48.0])
+	print("   das 5h à meia-noite: média %.2f ms, pior %.2f ms; da meia-noite às 5h (montagem dos planos do dia): o resto" % [
+		dia_soma / maxi(1, dia_n), dia_pior])
 	quit()

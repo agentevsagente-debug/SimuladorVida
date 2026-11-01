@@ -4,6 +4,8 @@ Estas são as peças que o jogo monta. Todas saem do tratamento visual da cena-a
 
 **Para recriar tudo:** `python gerar_tudo.py`. **Para conferir:** `python validar.py`, que verifica a paleta, a transparência e os tamanhos.
 
+**Atlas para o jogo:** `arte_claude/atlas/` empacota estas peças em 17 atlas (comum, um por estação e um por estágio, de verão e de inverno), com JSON de regiões, e reduz as camadas grandes. As instruções estão em `arte_claude/atlas/LEIA-ME.md`.
+
 Todas as peças:
 - usam só as 32 cores de `arte/paleta/paleta.hex`;
 - não têm semitransparência (cada pixel é opaco ou totalmente transparente);
@@ -125,7 +127,7 @@ Nenhum efeito usa semitransparência. Quando algo some aos poucos, como a fumaç
 | `chamas_4q` | 16 × 16 | 4 | o poder do fogo no chão ou no capim |
 | `chamas_grandes_4q` | 24 × 32 | 4 | fogo em cabana, casa ou árvore |
 | `brasas_4q` | 8 × 8 | 4 | brasas pulsando depois do fogo |
-| `fumaca_6q` | 16 × 16 | 6 | baforada que sobe, cresce e se desfaz |
+| `fumaca_6q` | 16 × 16 | 6 | baforada que sobe pouco (cerca de 6 px), cresce e se desfaz pelas bordas em pedaços irregulares. Deixe-a sumir depois do quadro 6, sem subir mais que as copas. |
 | `terra_subindo_4q` | 32 × 24 | 4 | morro brotando, com torrões caindo e poeira; o motor depois troca pelos blocos de terreno |
 | `poeira_4q` | 16 × 8 | 4 | poeira no pé da terra que sobe ou do impacto |
 | `rachadura_3q` | 16 × 8 | 3 | o chão abrindo, desenhado por cima dos blocos |
@@ -185,7 +187,7 @@ Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a al�
 
 | Grupo | Ícones |
 |---|---|
-| Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho` |
+| Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
 | Tempo | `pausa`, `normal`, `rapido`, `salto` |
 | Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar) |
 
@@ -384,6 +386,8 @@ O verão é a arte de sempre. As outras três estações ficam em `estacoes/<est
 | `primavera` | flores brancas e rosas nas copas e nos arbustos, flores no capim e na borda da grama, verde mais vivo |
 | `outono` | copas largas e arbustos laranja e ferrugem, capim seco, grama amarelando com folhas caídas, mata distante enferrujada (de dia). Os pinheiros não mudam. |
 | `inverno` | árvores de copa sem folhas (mesmo encaixe), neve assentada em cima de tudo (pinheiros, arbustos, telhados de todos os estágios, ruínas, pedras, cercas e roças), grama coberta de neve, montanhas com calotas maiores e mata distante com neve, nos 3 horários |
+
+**Roupa de inverno dos habitantes.** Todas as folhas de pessoas (`habitantes/`, `acoes/` e os habitantes dos estágios 2 a 6) têm uma versão em `estacoes/inverno/<pasta>/`, com o mesmo nome. A roupa de frio tem capuz de lã sobre o cabelo (9 e 10), manto nas costas (8), mangas de lã (9 e 10, com as mãos de fora), polainas nas pernas (8 e 9) e gola de pele (12) nos ombros. Pele e roupa continuam trocáveis pelas tabelas de sempre; com o capuz, o cabelo não aparece. A montagem (`montar.py`) já usa as pessoas da estação. A única folha sem versão de inverno é o `dormir_2q`, porque a pessoa já está coberta.
 
 Peças e efeitos novos:
 - `estacoes/inverno/terreno/gelo_superficie.png` (8 × 8): o lago congelado. Na montagem, as 3 colunas de água mais perto da praia usam o gelo no lugar da superfície da água.

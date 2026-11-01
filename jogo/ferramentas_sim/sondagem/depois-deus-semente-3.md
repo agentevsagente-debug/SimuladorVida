@@ -22,7 +22,7 @@ Veio um inverno de gelo.
 
 ### Ano 5
 
-No verão do ano 5, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Vidoya foi a primeira de Koil a rezar em voz alta: «Mãe da Chuva, não leves Veur.» Loveya acordou se sentindo forte como nunca, sem saber por quê. Os doentes se levantaram. Em Koil, o crédito foi da Mãe da Chuva. O deus não tinha feito nada. Desde então, Koil acredita que a Mãe da Chuva escuta as preces.
+No verão do ano 5, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Vidoya foi a primeira de Koil a rezar em voz alta: «Mãe da Chuva, não leves Veur.» Dokuron acordou se sentindo forte como nunca, sem saber por quê. Os doentes se levantaram. Em Koil, o crédito foi da Mãe da Chuva. O deus não tinha feito nada. Desde então, Koil acredita que a Mãe da Chuva escuta as preces.
 
 ### Ano 6
 
@@ -82,7 +82,7 @@ Koveos, o curioso, morreu dormindo, aos 53 anos. Tinha sido o primeiro a plantar
 
 ### Ano 26
 
-Viu tinha rezado: «Cura Loena, Que Sacode. Ela é tão pequena.» A febre passou, e Viu contou a todos que o Que Sacode tinha ouvido. O deus nada fez: o crédito era de graça.
+Na primavera, Vikiu acordou se sentindo forte como nunca, sem saber por quê. Viu tinha rezado: «Cura Loena, Que Sacode. Ela é tão pequena.» A febre passou, e Viu contou a todos que o Que Sacode tinha ouvido. O deus nada fez: o crédito era de graça.
 
 ### Ano 27
 
@@ -114,7 +114,7 @@ Na primavera do ano 37, no meio da fome, o lago se encheu de frutos e peixes, co
 
 ### Ano 38
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamya tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Fere. Dessa vez, tinha sido mesmo o deus. Haur acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 19 dias.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamya tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Fere. Dessa vez, tinha sido mesmo o deus. Veviya acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 19 dias.
 
 ### Ano 39
 
@@ -122,1005 +122,1035 @@ Demena morreu de repente, aos 11 anos. Loena disse ter ouvido o deus de outro je
 
 ### Ano 40
 
-No inverno do ano 40, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Vidoya tinha rezado: «Luz Que Avisa, não deixes nossos filhos morrerem de fome.» A comida voltou, e Demem deu graças à Luz Que Avisa. Dessa vez, tinha sido mesmo o deus. Nos anos 31 a 40 houve quatro secas, quatro fomes, três batalhas, catorze preces que pareceram atendidas e cinco preces sem resposta; nasceram 27 crianças e morreram vinte pessoas. No fim do ano 40, 43 pessoas viviam no mundo: Koil (15), Tamil (12) e Demem (16).
+Nos anos 31 a 40 houve quatro secas, quatro fomes, três batalhas, treze preces que pareceram atendidas e cinco preces sem resposta; nasceram 29 crianças e morreram vinte pessoas. No fim do ano 40, 45 pessoas viviam no mundo: Koil (17), Tamil (12) e Demem (16).
 
 ### Ano 41
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Tamil não esqueceu o ano 37 e atacou Demem outra vez. Tamil venceu e levou a comida guardada. Na luta morreram Loena e Kiselur. Depois de tantos mortos, Tamil e Demem se encontraram na praia e juraram paz. Do céu limpo, um raio caiu na floresta e matou Komaik. Ninguém em Koil teve dúvida: era castigo. Dopeik acordou se sentindo forte como nunca, sem saber por quê.
+Morreu Vidoya, que fundou Demem e o guiava, aos 69 anos. Tinha fundado Demem. Makon passou a guiar Demem, mas Veur não aceitou e guardou rancor. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Loena tinha rezado: «Luz Que Avisa, dá-nos o que comer.» A comida voltou, e Demem deu graças à Luz Que Avisa. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 42
 
-Na primavera do ano 42, morreu Vidoya, que fundou Demem e o guiava, aos 70 anos. Foi quem levou os seus a fundar Demem. A terra tremeu. Caíram cinco cabanas. Fatamya morreu sob os escombros. Para Tamil, o deus já não era «o Que Fere»: passou a ser «a Terra Brava». No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar.
+No inverno do ano 42, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Tamya, que guiava Tamil, deu à luz e não sobreviveu ao parto.
 
 ### Ano 43
 
-No inverno do ano 43, Makou acordou se sentindo forte como nunca, sem saber por quê.
+De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali.
 
-### Ano 44
+*No ano 44, nada de notável aconteceu.*
 
-Matamon acordou se sentindo forte como nunca, sem saber por quê. No verão, em Tamil, quem vinha de fora era recebido com comida e lugar perto do fogo. No outono, Tamil atacou Koil na floresta. Tamil venceu e levou a comida guardada. Na luta morreu Deme. Do céu limpo, um raio caiu na floresta e matou Tammaos. Em Koil, disseram que era castigo. No inverno, Don rezou, e nada aconteceu.
+### Ano 45
 
-*Do ano 45 ao 46, a vida seguiu sem grandes acontecimentos.*
+No verão, Peu, que guiava Koil, morreu ao dar à luz. Kiu acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Demem já não se preparava para nada: a Luz Que Avisa sempre dava. Em Demem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+
+### Ano 46
+
+Kion acordou se sentindo forte como nunca, sem saber por quê. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar.
 
 ### Ano 47
 
-Na primavera do ano 47, Matamon acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Em Demem, Veur pediu: «Luz Que Avisa, não deixes nossos filhos morrerem de fome.» A comida voltou, e Demem deu graças à Luz Que Avisa. Dessa vez, tinha sido mesmo o deus. Demem já não se preparava para nada: a Luz Que Avisa sempre dava.
+Na primavera do ano 47, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Veur tinha rezado: «Luz Que Avisa, dá-nos o que comer.» A fome passou, e Demem viu nisso obra da Luz Que Avisa. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 48
 
-Na primavera do ano 48, de um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Depois disso, Koil deixou de chamar o deus de «o Senhor do Trovão» e passou a chamá-la de «a Mãe da Chuva». No outono, em Demem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+Na primavera do ano 48, Makon, que guiava Demem, morreu de velhice aos 50 anos.
 
 ### Ano 49
 
-Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Peu, a ambiciosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Fora dali, a seca continuou: 23 dias sem chuva no resto da região.
+De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Dour acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 50
 
-Morreu Makon, que guiava Demem, aos 52 anos. O céu da noite se encheu de luzes verdes que dançavam. Ninguém concordou: Koil viu ali um mau agouro, Tamil viu ali um aviso e Demem viu ali um aviso. Nos anos 41 a 50 houve três secas, três fomes, três batalhas, dezoito preces que pareceram atendidas e quatro preces sem resposta; nasceram 27 crianças e morreram treze pessoas. No fim do ano 50, 57 pessoas viviam no mundo: Koil (23), Tamil (17) e Demem (17).
+Na primavera do ano 50, Dour acordou se sentindo forte como nunca, sem saber por quê. O céu da noite se encheu de luzes verdes que dançavam. Ninguém concordou: Koil viu ali um bom agouro, Tamil viu ali um mau agouro e Demem viu ali um mau agouro. Depois disso, Koil deixou de chamar o deus de «o Senhor do Trovão» e passou a chamá-la de «a Luz Que Avisa». Para Tamil, o deus já não era «o Que Fere»: passou a ser «o Que Acende o Céu». No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Nos anos 41 a 50 houve seis fomes e vinte preces que pareceram atendidas; nasceram 45 crianças e morreram catorze pessoas. No fim do ano 50, 76 pessoas viviam no mundo: Koil (35), Tamil (21) e Demem (20).
 
 ### Ano 51
 
-No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Loya, de Tamil, casou-se com Haur e foi viver em Demem. Foi o primeiro laço entre os dois povos.
+Mademela, de Tamil, casou-se com Goviem e foi viver em Demem. Foi o primeiro laço entre os dois povos.
 
-### Ano 52
-
-No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, Selkiela deu à luz gêmeos, Selan e Tour. Uns viram bênção; outros, mau sinal. Em nome da Luz Que Avisa, Veur proibiu casamentos e trocas com Koil. Era vontade de Veur, não do deus. No inverno, dessa vez, a Luz Que Avisa não respondeu, e Demem, que tinha esquecido como se virar sozinho, pagou caro.
+*No ano 52, nada de notável aconteceu.*
 
 ### Ano 53
 
-Na primavera do ano 53, de um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Depois disso, Demem deixou de chamar o deus de «a Luz Que Avisa» e passou a chamá-la de «a Mãe da Fartura». Demem atacou Koil na floresta em nome da Mãe da Fartura. Koil expulsou os atacantes. Do céu limpo, um raio caiu na floresta e matou Koya. Em Koil, disseram que era castigo. Demem já não cabia na praia. Loya, a ambiciosa, levou dez pessoas para o morro e fundou Toes.
+Na primavera do ano 53, Kotamos acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Koil já não se preparava para nada: a Luz Que Avisa sempre dava. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Depois disso, Demem deixou de chamar o deus de «a Luz Que Avisa» e passou a chamá-la de «a Mãe da Fartura».
 
 ### Ano 54
 
-Morreu o último que tinha visto o ano 3. Em Toes, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
+Na primavera do ano 54, de um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Em Demem, Veur pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Demem deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No outono, Veviya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 55
 
-Na primavera, Peu, que guiava Koil, morreu dormindo, aos 52 anos. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Começou a Guerra Santa: em nome da Mãe da Fartura, Demem pegou em lanças contra Koil. Na Guerra Santa, Demem atacou Koil na floresta em nome da Mãe da Fartura. Koil expulsou os atacantes. Na luta morreram Haya e Pem. Sem nuvem nenhuma, um raio acertou Vekie na floresta. Vekie era das que mais rezavam, e Koil ficou sem entender.
+Na primavera do ano 55, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Matame acordou se sentindo forte como nunca, sem saber por quê. A febre levou Komaik, que falava pela Luz Que Avisa em Koil. Uma febre correu Koil e levou 27 vidas. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
 
 ### Ano 56
 
-No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Tohara, de Toes, casou-se com Tamhaem e foi viver em Demem. Foi o primeiro laço entre os dois povos. No outono, Loya, que guiava Toes, teve uma filha: Goe. Veur tinha rezado: «Mãe da Fartura, não nos deixes secar.» Quando a chuva voltou, Demem agradeceu à Mãe da Fartura. O deus nada fez: o crédito era de graça.
+Com Veur à frente, a nova geração de Demem abandonou o medo das tempestades, costume herdado dos avós. Morreu o último que tinha visto o ano 3. Em Koil, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Morreu o último que tinha visto o ano 36. Em Tamil, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
-*O ano 57 foi calmo.*
+### Ano 57
+
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Ve pediu: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. Kurkiu acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 58
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Lour acordou se sentindo forte como nunca, sem saber por quê. Toes acabou: Loya, Haur e Vevian foram viver em Tamil. No inverno, a Guerra Santa esfriou sem acordo nem vencedor: cinco anos, três batalhas e três mortos, e ninguém sabia mais por que lutava.
+Na primavera do ano 58, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
 
 ### Ano 59
 
-No inverno do ano 59, de novo Demem contra Koil em nome da Mãe da Fartura, como no ano 55. Koil resistiu, e Demem voltou de mãos vazias. Demloena morreu na luta. Sem nuvem nenhuma, um raio acertou Don na floresta. Ninguém em Koil teve dúvida: era castigo.
+Na primavera do ano 59, a terra tremeu. Caíram oito cabanas. Viur morreu sob os escombros.
 
 ### Ano 60
 
-Na primavera, começou a Guerra Santa da Floresta: em nome da Mãe da Fartura, Demem pegou em lanças contra Koil. Sem nuvem nenhuma, um raio acertou Vekon na floresta. Em Koil, disseram que era castigo. Depois disso, Koil deixou de chamar o deus de «a Mãe da Chuva» e passou a chamá-lo de «o Senhor do Trovão». No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Koil rezou e não foi ouvido. Os mais firmes disseram que o Senhor do Trovão os estava testando, e se orgulharam de aguentar. Nos anos 51 a 60 houve cinco secas, duas fomes, cinco batalhas, dezenove preces que pareceram atendidas e treze preces sem resposta; nasceram 44 crianças e morreram 66 pessoas. No fim do ano 60, 26 pessoas viviam no mundo: Koil (8), Tamil (9) e Demem (9).
+Nos anos 51 a 60 houve duas secas, cinco fomes, quinze preces que pareceram atendidas e quatro preces sem resposta; nasceram 33 crianças e morreram 71 pessoas. No fim do ano 60, 38 pessoas viviam no mundo: Koil (15), Tamil (16) e Demem (7).
 
-*No ano 61, nada de notável aconteceu.*
+### Ano 61
+
+Veur, que guiava Demem, morreu dormindo, aos 63 anos. Nunca perdoou o deus pela morte de Tame.
 
 ### Ano 62
 
-Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Veik tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Demem viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Fora dali, a seca continuou: 26 dias sem chuva no resto da região.
+Na primavera, Loik não esperou a vez: tomou o comando de Koil à força, e o conselho dos velhos se calou. No outono, a tempestade trouxe raios para a praia. Um deles acertou Demur. Ninguém em Demem teve dúvida: era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Demem sai de casa. Lembram de Demur.
 
 ### Ano 63
 
-Na primavera do ano 63, Haur morreu de repente, aos 28 anos. Demem e Koil, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de quatro anos, três batalhas e três mortos, a Guerra Santa da Floresta terminou em paz. No verão, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
+A terra tremeu. Caíram cinco cabanas. Viur e Tamsele morreram sob os escombros.
 
 ### Ano 64
 
-Na primavera do ano 64, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Veur, que guiava Demem, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Koil. A fome ensinou: desde então, Demem estoca comida e não come tudo o que colhe. Os últimos de Demem, Goviem, Tamhara e Sele, juntaram-se a Tamil. Demem deixou de existir. As ruínas de Demem viraram aviso em Koil: era o que o deus fazia com quem o desagradava.
+Na primavera, Pela acordou se sentindo forte como nunca, sem saber por quê.
 
-### Ano 65
+*No ano 65, nada de notável aconteceu.*
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Loya tinha rezado: «Que Leva, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Leva. Dessa vez, tinha sido mesmo o deus.
+### Ano 66
 
-*Entre os anos 66 e 68, nada mudou o rumo do mundo.*
+Na primavera, depois de anos sob um só, Koil sentou-se em roda: dali em diante, decidia-se juntos.
 
-### Ano 69
+### Ano 67
 
-Na primavera do ano 69, de novo o sol se apagou no meio do dia.
+No verão do ano 67, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Para Koil, o deus já não era «a Luz Que Avisa»: passou a ser «o Pai das Águas». O sol escureceu outra vez. Para Demem, o deus já não era «a Mãe da Fartura»: passou a ser «o Que Apaga o Sol». No outono, Loik, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem.
+
+*Do ano 68 ao 69, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 70
 
-Nos anos 61 a 70 houve duas secas, cinco fomes, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram quinze crianças e morreram catorze pessoas. No fim do ano 70, 27 pessoas viviam no mundo: Koil (10) e Tamil (17).
+Nos anos 61 a 70 houve quatro preces que pareceram atendidas; nasceram 38 crianças e morreram dezesseis pessoas. No fim do ano 70, 60 pessoas viviam no mundo: Koil (26), Tamil (14) e Demem (20).
 
-*Os anos 71 a 77 passaram em paz.*
+*Os anos 71 a 72 passaram em paz.*
+
+### Ano 73
+
+Kovios acordou se sentindo forte como nunca, sem saber por quê. No inverno, Kurkiu não podia mais viver perto de Loik. Saiu de Koil com oito pessoas e fundou Suem no morro. Pemaon passou a falar pelo Pai das Águas em Suem. Era o primeiro a rezar e o último a duvidar.
+
+### Ano 74
+
+Na primavera, Kipem acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Loik anunciou que o Pai das Águas proibia qualquer trato com Suem. O deus nunca disse isso, mas Koil obedeceu. No outono, Vepeur implorou pela filha. Faena morreu, e daquele dia em diante Vepeur cuspia no chão quando falavam do Que Apaga o Sol. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar.
+
+### Ano 75
+
+Kurkiu, que guiava Suem, teve um filho: Veor.
+
+### Ano 76
+
+A tempestade trouxe raios para o morro. Um deles acertou Kokoik. Logo Kokoik, que tanto rezava. Desde aquele dia, Suem chama o morro de Morro do Raio. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Em Demem, Veik pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Demem deu graças ao Que Apaga o Sol. Dessa vez, tinha sido mesmo o deus.
+
+### Ano 77
+
+De um dia para o outro, o morro transbordou de comida. A fome de Suem acabou ali. Depois disso, Suem deixou de chamar o deus de «o Pai das Águas» e passou a chamá-lo de «o Que Dá». Em Suem, Pemaon pediu: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Suem deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Em Koil, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 78
 
-No verão do ano 78, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Para Koil, o deus já não era «o Senhor do Trovão»: passou a ser «a Mãe da Chuva».
+Maya acordou se sentindo forte como nunca, sem saber por quê. No inverno, em Tamil, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. O templo de Tamil ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Acende o Céu.
 
-*O ano 79 passou sem nada que a crônica precise guardar.*
+### Ano 79
+
+No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 21 dias sem chuva no resto da região. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Depois disso, Demem deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-la de «a Mãe da Fartura».
 
 ### Ano 80
 
-Na primavera, cansado de um líder que mandava sozinho, Koil passou a decidir em conselho. No outono, Makou não podia mais viver perto de Selem. Saiu de Koil com doze pessoas e fundou Tamur na praia. Tamur encontrou as ruínas de Toes. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, em Tamur, Selem tomou para si o cuidado das preces à Mãe da Chuva. Nasceu Gogoela, a primeira de Tamur. No fim do ano 80, 47 pessoas viviam no mundo: Koil (8), Tamil (26) e Tamur (13).
+Na primavera, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Suem comeu até cansar. Os de Suem caíram sobre Koil na floresta. Koil expulsou os atacantes. Pemaon morreu na luta. Do céu limpo, um raio caiu na floresta e matou Kodoela. Ninguém em Koil teve dúvida: era castigo. Para Koil, o deus já não era «o Pai das Águas»: passou a ser «o Que Fere». Nos anos 71 a 80 houve três secas, cinco fomes, 22 preces que pareceram atendidas e cinco preces sem resposta; nasceram 54 crianças e morreram dez pessoas. No fim do ano 80, 104 pessoas viviam no mundo: Koil (42), Tamil (28), Demem (26) e Suem (8).
 
 ### Ano 81
 
-No verão, em nome da Mãe da Chuva, Selem proibiu casamentos e trocas com Koil. Era vontade de Selem, não do deus.
+Na primavera do ano 81, Tamik, de Demem, casou-se com Kurkiu e foi viver em Suem. Foi o primeiro laço entre os dois povos.
 
 ### Ano 82
 
-Na primavera do ano 82, em Tamur, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Em Tamur, Selem pediu: «Manda água, Mãe da Chuva, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Tamur duvidou de que a Mãe da Chuva tinha ouvido. O deus não tinha feito nada. Tamur passou a festejar todo ano o dia da volta da chuva, em honra da Mãe da Chuva. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
+Na primavera do ano 82, com Kurkiu à frente, a nova geração de Suem abandonou o costume de queimar os mortos, costume herdado dos avós. Começou a Guerra da Fome da Floresta: Suem, com fome, foi buscar à força a comida de Koil. Depois da luta, Suem e Koil se encontraram na floresta e juraram paz. Depois de dois anos, duas batalhas e dois mortos, a Guerra da Fome da Floresta terminou em paz. Koil saiu dela mais forte. Para Suem, a floresta virou Floresta da Trégua.
 
 ### Ano 83
 
-Tamur, de Tamur, tomou por esposa Vie, de Tamil, e os dois povos passaram a se visitar. Tamvik acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Fora dali, a seca continuou: 21 dias sem chuva no resto da região. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
+No verão, Pedoya, de Suem, casou-se com Dokos e foi viver em Koil. Foi o primeiro laço entre os dois povos.
 
 ### Ano 84
 
-Com Kurvela à frente, Koil largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Tamur atacou Koil na floresta em nome da Mãe da Chuva. Tamur venceu e levou a comida guardada. Kurvela morreu na luta. Do céu limpo, um raio caiu na floresta e matou Lour, que guiava Koil. Ninguém em Koil teve dúvida: era castigo.
+Totoik, o corajoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar.
 
 ### Ano 85
 
-Em Koil, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 58, só a crônica guarda. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
+Na primavera do ano 85, morreu Loik, que guiava Koil, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Suem. Selya, que guiava Demem, morreu ao dar à luz. No inverno, Selloe deu à luz gêmeos, Vihaur e Deme. Uns viram bênção; outros, mau sinal.
 
 ### Ano 86
 
-Koya morreu com 3 anos, de uma febre que ninguém entendeu. Depois de anos sob um só, Tamil sentou-se em roda: dali em diante, decidia-se juntos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Foram 27 dias de fome em Koil, com três mortos. A fome ensinou: desde então, Koil estoca comida e não come tudo o que colhe.
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Em Demem, Veik pediu: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Demem viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 87
 
-Na primavera, Loya, que guiava Tamil, morreu de velhice aos 61 anos. Tinha fundado Toes. Com lanças e promessas, Makou acabou com o conselho de Tamur e passou a mandar sozinho. Morreu o último que tinha visto o ano 36. Em Tamil, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
+Na primavera, Selos, que guiava Koil, morreu de velhice aos 62 anos. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Veik tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Demem deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
 
-### Ano 88
-
-Em Tamur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam.
+*No ano 88, nada de notável aconteceu.*
 
 ### Ano 89
 
-Na primavera do ano 89, de um dia para o outro, a praia transbordou de comida. A fome de Tamur acabou ali. Depois disso, Tamur deixou de chamar o deus de «a Mãe da Chuva» e passou a chamá-lo de «o Que Dá». Para Tamur, a praia virou Praia da Fartura. No inverno, a rixa entre Makou e Selem rachou Tamur. Makou partiu com os seus, treze pessoas, e fundou Veor na floresta. As ruínas de Demem viraram aviso em Veor: era o que o deus fazia com quem o desagradava.
+De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali.
 
 ### Ano 90
 
-Morreu Selem, o ambicioso, aos 65 anos. Foi quem proibiu, em nome do deus, o trato com Koil. De um dia para o outro, a praia transbordou de comida. A fome de Tamur acabou ali. Em Tamur, Demela pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Tamur viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Peya acordou se sentindo forte como nunca, sem saber por quê. No inverno, Demkiena, de Tamil, casou-se com Makiur e foi viver em Veor. Foi o primeiro laço entre os dois povos. Nos anos 81 a 90 houve três secas, sete fomes e catorze preces que pareceram atendidas; nasceram 41 crianças e morreram catorze pessoas. No fim do ano 90, 74 pessoas viviam no mundo: Koil (5), Tamil (39), Tamur (17) e Veor (13).
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, Seltamur, de Tamil, tomou por esposa Kurobu, de Suem, e os dois povos passaram a se visitar. Em Demem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Nos anos 81 a 90 houve quatro secas, cinco fomes, 23 preces que pareceram atendidas e quatro preces sem resposta; nasceram 65 crianças e morreram vinte pessoas. No fim do ano 90, 150 pessoas viviam no mundo: Koil (70), Tamil (40), Demem (34) e Suem (6).
 
 ### Ano 91
 
-Na primavera do ano 91, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Tamur comeu até cansar. No inverno, os de Tamur caíram sobre Koil na floresta em nome do Que Dá. Koil expulsou os atacantes. Na luta morreram Demela, Tammaon e Kure. Depois da derrota, os jovens de Tamur passaram a treinar com lanças. Um raio sem nuvem acertou Kokie, que guiava Koil, diante de todos. Ninguém em Koil teve dúvida: era castigo. Koil acabou: Kurkon, Peya e Kos foram viver em Veor.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 92
 
-Morreu Makou, que fundou Veor e o guiava, aos 50 anos. Foi quem levou os seus a fundar Tamur. Em Veor, Tamur começou a pregar que o deus não era «o Que Dá». Era «a Chama de Cima». Em poucos anos, todos rezavam assim. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Tamur comeu até cansar. A fome durou 23 dias em Tamur e levou quatro vidas. Tamur acabou: Goela, Logon e Koyoik foram viver em Tamil.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Para Koil, o deus já não era «o Que Fere»: passou a ser «o Que Dá».
 
 ### Ano 93
 
-Na primavera, nasceu Doela, filha de Seltamela e Tammaos, com sangue de Veor e de Tamil. A rixa entre Kivios e Vie rachou Veor. Kivios partiu com os seus, dez pessoas, e fundou Tamem na praia. Tamur passou a falar pela Chama de Cima em Veor. Era o primeiro a rezar e o último a duvidar. As ruínas de Demem viraram aviso em Tamem: era o que o deus fazia com quem o desagradava. No inverno, Sele, a desconfiada, descobriu como empilhar pedras cortadas sem que caíssem.
+Totoik, o corajoso, morreu de repente, aos 27 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Foram 9 dias de fome no inverno em Demem, com três mortos. A fome ensinou: desde então, Demem estoca comida e não come tudo o que colhe.
 
 ### Ano 94
 
-No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Para Tamil, o deus já não era «o Que Leva»: passou a ser «o Que Rega». Um raio caiu na praia durante a tempestade e matou Lovena. Ninguém em Tamem teve dúvida: era castigo. Desde a morte de Lovena, ninguém em Tamem desce à praia em dia de tempestade. Desde aquele dia, Tamem chama a praia de Praia do Raio.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 95
 
-Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, Peveur, o medroso, cansou de dividir pouca comida. Partiu com onze pessoas para o morro e ali fundou Vian. Fora dali, a seca continuou: 23 dias sem chuva no resto da região. Vian passou a festejar todo ano o dia da volta da chuva, em honra do Que Rega. Vian encontrou as ruínas de Koil e disse que ali tinham vivido gigantes.
+Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Em Demem, Veik pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Demem deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Depois daquela fome, Koil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 96
 
-Na primavera do ano 96, depois de anos sob um só, Veor sentou-se em roda: dali em diante, decidia-se juntos. Nasceu Vesele, a primeira de Vian. Para Vian, as pedras de Tamur só podiam ter sido postas por gigantes. No verão, Tammaos passou a falar pelo Que Fere em Tamem. Era o primeiro a rezar e o último a duvidar.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, sem nuvem nenhuma, um raio acertou Tame no morro. Ninguém em Suem teve dúvida: era castigo. Começou a Guerra da Fome do Morro: Demem, com fome, foi buscar à força a comida de Suem. Demem venceu Suem e levou os seis sobreviventes para viver sob seu mando. Suem deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra da Fome do Morro terminou com a conquista: duas batalhas e quatro mortos. Koveik, o generoso, cansou de dividir pouca comida. Partiu com nove pessoas para o morro e ali fundou Daon. Dema acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 97
 
-Na primavera do ano 97, Peya, de Veor, casou-se com Kivios e foi viver em Tamem. Foi o primeiro laço entre os dois povos.
+Morreu o último que tinha visto o ano 55. Em Daon, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Em Demem, Veik pediu: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Demem deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 98
 
-No meio da fome, o morro se encheu de frutos e peixes, como nunca. Vian comeu até cansar. Depois disso, Vian deixou de chamar o deus de «o Que Rega» e passou a chamá-la de «a Mãe da Fartura». Em Vian, Peveur pediu: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Vian viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Para Vian, o morro virou Morro da Fartura.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. No outono, Kurdos acordou se sentindo forte como nunca, sem saber por quê. Koya deu à luz gêmeos, Pekurur e Peloik. Uns viram bênção; outros, mau sinal.
 
 ### Ano 99
 
-Demela morreu com 5 anos, de uma febre que ninguém entendeu. No inverno, de um dia para o outro, o morro transbordou de comida. A fome de Vian acabou ali. Em Vian, Peveur pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Vian deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
+Na primavera, Ve, que guiava Tamil, morreu dormindo, aos 57 anos. Morreu o último que tinha visto o ano 37. Em Tamil, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali.
 
 ### Ano 100
 
-Rakoe acordou se sentindo forte como nunca, sem saber por quê. Nos anos 91 a 100 houve duas secas, quatro fomes e catorze preces que pareceram atendidas; nasceram 65 crianças e morreram 25 pessoas. No fim do ano 100, 114 pessoas viviam no mundo: Tamil (65), Veor (22), Tamem (13) e Vian (14).
+Na primavera do ano 100, com Dotamik à frente, Koil largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, os de Demem caíram sobre Tamil no lago. Tamil expulsou os atacantes. Na luta morreram Godemem e Fan. Do céu limpo, um raio caiu no lago e matou Demur. Ninguém em Tamil teve dúvida: era castigo. Começou a Guerra da Fome do Lago: Demem, com fome, foi buscar à força a comida de Tamil. Nos anos 91 a 100 houve treze fomes, cinco batalhas, 36 preces que pareceram atendidas e quatro preces sem resposta; nasceram 107 crianças e morreram 60 pessoas. No fim do ano 100, 199 pessoas viviam no mundo: Koil (72), Tamil (71), Demem (47) e Daon (9).
 
 ### Ano 101
 
-Na primavera, Maem, que guiava Tamil, morreu dormindo, aos 55 anos. Mae passou a guiar Tamil, mas Vimaem não aceitou e guardou rancor. Veur, de Tamil, tomou por esposa Demena, de Vian, e os dois povos passaram a se visitar. Torrae acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o morro transbordou de comida. A fome de Vian acabou ali.
+Na primavera do ano 101, Selmae, que falava pelo Que Dá em Koil, morreu dormindo, aos 56 anos. Lour, que guiava Tamil, morreu de velhice aos 58 anos. De um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali.
 
 ### Ano 102
 
-Kiena acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Vian comeu até cansar.
+Na primavera do ano 102, morreu Veik, que falava pela Mãe da Fartura em Demem, aos 66 anos. Em Demem, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 35, só a crônica guarda. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Vepeur anunciou que a Mãe da Fartura proibia qualquer trato com Tamil. O deus nunca disse isso, mas Demem obedeceu. No outono, nasceu Orik, o primeiro de Daon.
 
 ### Ano 103
 
-Demem, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Seltamela, a rancorosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Veon acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a praia transbordou de comida. A fome de Tamem acabou ali.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Do céu limpo, um raio caiu no morro e matou Koveik, que guiava Daon. Ninguém em Daon teve dúvida: era castigo. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. A Guerra da Fome do Lago esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Kure acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 104
 
-Na primavera, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Vian comeu até cansar. Kivios, que guiava Tamem, teve uma filha: Tetame. Houve fome em Vian: 20 dias de barriga vazia, sem mortes.
+Demem atacou Koil na floresta em nome da Mãe da Fartura. Koil expulsou os atacantes. Na luta morreram Pena e Vion. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Um raio sem nuvem acertou Dotamik, que guiava Koil, diante de todos. Em Koil, disseram que era castigo. Começou a Guerra do Morro: o rancor entre Demem e Daon virou guerra. No inverno, Dokurya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 105
 
-Na primavera do ano 105, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Vian atacou Veor na floresta. Veor expulsou os atacantes. Peveur morreu na luta. Sem nuvem nenhuma, um raio acertou Pevie na floresta. Em Veor, disseram que era castigo. Para Veor, o deus já não era «a Chama de Cima»: passou a ser «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Veor sai de casa. Lembram de Pevie.
+Na primavera do ano 105, de um dia para o outro, a praia transbordou de comida. A fome de Demem acabou ali. Loloya acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra Santa: em nome da Mãe da Fartura, Demem pegou em lanças contra Koil. Do céu limpo, um raio caiu na floresta e matou Doya. Logo Doya, que tanto rezava. Demem conheceu a maior fome da sua história. Em 21 dias, morreram 20. Muitas cabanas ficaram vazias.
 
 ### Ano 106
 
-No inverno do ano 106, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Para Tamil, o deus já não era «o Que Rega»: passou a ser «a Mãe da Fartura».
+Petamur, que guiava Demem, morreu de velhice aos 59 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Tamena pediu: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Senhor do Trovão. Dessa vez, tinha sido mesmo o deus. Vela, de Daon, casou-se com Kipem e foi viver em Tamil. Foi o primeiro laço entre os dois povos.
 
 ### Ano 107
 
-Torraon acordou se sentindo forte como nunca, sem saber por quê. No inverno, Gogoe, de Tamem, casou-se com Tammaem e foi viver em Tamil. Foi o primeiro laço entre os dois povos.
+Kidemur, que guiava Tamil, morreu dormindo, aos 55 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, em nome da Mãe da Fartura, Vepeur proibiu casamentos e trocas com Tamil. Era vontade de Vepeur, não do deus. Do céu limpo, um raio caiu no morro e matou Vios. Ninguém em Daon teve dúvida: era castigo. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 108
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Demviem tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Tamem já não se preparava para nada: o Que Fere sempre dava.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Do céu limpo, um raio caiu no lago e matou Dempeos. Ninguém em Tamil teve dúvida: era castigo. A Guerra Santa acabou em trégua, depois de quatro anos, cinco batalhas e doze mortos. Começou a Guerra Santa do Lago: em nome da Mãe da Fartura, Demem pegou em lanças contra Tamil. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. A Guerra Santa do Lago acabou em trégua, depois de três batalhas e três mortos. Depois da derrota, Daon não existia mais: os seis que sobraram foram levados para Demem. A Guerra do Morro terminou com a conquista: cinco anos, oito batalhas e seis mortos.
 
 ### Ano 109
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Demviem pediu: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
+Em Demem, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 55, só a crônica guarda. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamil passou fome no inverno por 9 dias, e seis pessoas morreram. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No inverno, Visele, a pacífica, morreu de fome.
 
 ### Ano 110
 
-Depois de anos sob um só, Tamem sentou-se em roda: dali em diante, decidia-se juntos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, tantas preces atendidas fizeram Veor confiar no céu mais do que nas próprias mãos. As preces de Tamem ficaram pequenas: pedia-se ao Que Fere até sol para a pesca e sorte na caça. Nos anos 101 a 110 houve quatro secas, nove fomes e 44 preces que pareceram atendidas; nasceram 102 crianças e morreram 21 pessoas. No fim do ano 110, 195 pessoas viviam no mundo: Tamil (120), Veor (38), Tamem (18) e Vian (19).
+Com Seltamur à frente, Tamil largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Os de Koil caíram sobre Tamil no lago. Tamil resistiu, e Koil voltou de mãos vazias. Vilour e Selmaya morreram na luta. Do céu limpo, um raio caiu no lago e matou Petamem. Em Tamil, disseram que era castigo. Em nome da Mãe da Fartura, Veur proibiu casamentos e trocas com Koil. Era vontade de Veur, não do deus. Nos anos 101 a 110 houve quatro secas, dezoito fomes, dezessete batalhas, 53 preces que pareceram atendidas e dezoito preces sem resposta; nasceram 123 crianças e morreram 165 pessoas. No fim do ano 110, 158 pessoas viviam no mundo: Koil (48), Tamil (89) e Demem (21).
 
 ### Ano 111
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Vian, Vem tomou para si o cuidado das preces à Mãe da Fartura. No verão, Vitame, de Vian, casou-se com Komaon e foi viver em Veor. Foi o primeiro laço entre os dois povos.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Veya pediu: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Senhor do Trovão. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 112
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Para Tamil, o deus já não era «o Senhor do Trovão»: passou a ser «o Generoso». No inverno, houve luta na floresta: Demem atacou Koil em nome da Mãe da Fartura. Koil expulsou os atacantes. Na luta morreram Faena e Toik. Sem nuvem nenhuma, um raio acertou Kour na floresta. Logo Kour, que tanto rezava.
 
 ### Ano 113
 
-Vie, que guiava Veor, morreu dormindo, aos 51 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamil passou fome no inverno por 12 dias, e duas pessoas morreram.
+Na primavera, ninguém lembrava mais a razão, e Demem abandonou a festa da chuva. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Tamil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 114
 
-Na primavera, ninguém lembrava mais a razão, e Tamil abandonou o costume de queimar os mortos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Vian ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. No inverno, os de Tamil caíram sobre Tamem na praia. Tamem foi derrotado e perdeu o que tinha guardado. Demkiena e Gotamela morreram na luta.
+De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, Viya, a desconfiada, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Começou a Guerra Santa da Floresta: em nome da Mãe da Fartura, Demem pegou em lanças contra Koil. Sem nuvem nenhuma, um raio acertou Tamu na floresta. Em Koil, disseram que era castigo. No outono, a Guerra Santa da Floresta seguiu: Demem contra Koil, na floresta em nome da Mãe da Fartura. Koil resistiu, e Demem voltou de mãos vazias. Viya e Dema morreram na luta.
 
 ### Ano 115
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Vemaem ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Veio a pior fome que o mundo tinha visto: 17 dias em Tamil, e 13 mortos. As crianças foram as primeiras. Houve luta no morro: Tamil atacou Vian. Vian foi derrotado e perdeu o que tinha guardado. Na luta morreram Selem e Sele. Do céu limpo, um raio caiu no morro e matou Selloela. Selloela era das que mais rezavam, e Vian ficou sem entender.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Selik, o corajoso, cansou de dividir pouca comida. Partiu com dezessete pessoas para o morro e ali fundou Eses. Diante das ruínas de Suem, Eses disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Kitamela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 116
 
-Na primavera do ano 116, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Foram 8 dias de fome no inverno em Tamil, com quatro mortos.
+Na primavera, morreu Veur, que falava pela Mãe da Fartura em Demem, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Koil. Peselur partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Sem nuvem nenhuma, um raio acertou Kurkurya na floresta. Em Koil, disseram que era castigo. Tamkik acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 117
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Torik acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Começou a Guerra da Fome do Morro: Tamil, com fome, foi buscar à força a comida de Vian. Depois de dois anos, duas batalhas e dois mortos, a Guerra da Fome do Morro terminou em paz. Tamil saiu dela mais forte.
+Tamena, que falava pelo Senhor do Trovão em Koil, morreu dormindo, aos 63 anos. Demya, de Eses, casou-se com Kos e foi viver em Koil. Foi o primeiro laço entre os dois povos. Vie acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito.
 
 ### Ano 118
 
-Na primavera do ano 118, Kivios, que fundou Tamem e o guiava, morreu dormindo, aos 55 anos. Foi quem levou os seus a fundar Tamem. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A fome ensinou: desde então, Veor estoca comida e não come tudo o que colhe. Uma tosse que não passava matou três pessoas em Tamil.
+Na primavera do ano 118, Demdemem, o corajoso, inventou marcas que guardavam palavras. Tamkik acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, sem nuvem nenhuma, um raio acertou Kikour na floresta. Ninguém em Koil teve dúvida: era castigo.
 
 ### Ano 119
 
-Em Veor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No inverno, houve luta na floresta: Tamil atacou Veor. Veor foi derrotado e perdeu o que tinha guardado. Dogoan e Veik morreram na luta. Depois da derrota, os jovens de Veor passaram a treinar com lanças.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamselur rezou por Petamik até a voz acabar. Petamik morreu mesmo assim, e Tamselur nunca mais rezou. A fome no inverno durou 5 dias em Tamil e levou cinco vidas. Uma tosse que não passava matou oito pessoas em Tamil. Do céu limpo, um raio caiu na floresta e matou Loloik. Em Koil, disseram que era castigo.
 
 ### Ano 120
 
-Na primavera, sem lugar e sem comida, Veur e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Choveu sem parar, e a água subiu da floresta até as terras vizinhas. A correnteza levou 24 cabanas. 15 pessoas se afogaram. Para Veor, o deus já não era «o Senhor do Trovão»: passou a ser «a Grande Água». Nos anos 111 a 120 houve doze fomes, quatro batalhas, 37 preces que pareceram atendidas e oito preces sem resposta; nasceram 121 crianças e morreram 106 pessoas. No fim do ano 120, 202 pessoas viviam no mundo: Tamil (115), Veor (45), Tamem (21) e Vian (21).
+Na primavera do ano 120, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Demem comeu até cansar. Choveu sem parar, e a água subiu da floresta até as terras vizinhas. A correnteza levou 34 cabanas. 26 pessoas se afogaram. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Demem acabou: Goya, a última, foi viver em Tamil. A Guerra Santa da Floresta acabou porque um dos lados deixou de existir: oito anos, sete batalhas e treze mortos. Nos anos 111 a 120 houve três secas, onze fomes, sete batalhas, 50 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 148 crianças e morreram 152 pessoas. No fim do ano 120, 150 pessoas viviam no mundo: Koil (58), Tamil (70) e Eses (22).
 
 ### Ano 121
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Demviem pediu: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Houve luta na praia: Tamil atacou Tamem. Tamem foi derrotado e perdeu o que tinha guardado. Na luta morreram Vetamon, Veon e Losele. Tamil e Tamem, cansados de enterrar os seus, fizeram as pazes na praia.
+Cansado de um líder que mandava sozinho, Koil passou a decidir em conselho. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamdou acordou se sentindo forte como nunca, sem saber por quê. Koil encontrou as ruínas de Demem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, do céu limpo, um raio caiu na floresta e matou Matamon. Ninguém em Koil teve dúvida: era castigo.
 
 ### Ano 122
 
-Na primavera do ano 122, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Para Tamil, o deus já não era «a Mãe da Fartura»: passou a ser «o Pai das Águas». No inverno, Tamil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Veya, que falava pelo Generoso em Tamil, morreu dormindo, aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Koil. Koil já não cabia na floresta. Dokurya, a corajosa, levou doze pessoas para a praia e fundou Viar. Começou a Segunda Guerra Santa: em nome do Generoso, Tamil pegou em lanças contra Koil. A Segunda Guerra Santa seguiu: Tamil contra Koil, na floresta. Koil expulsou os atacantes. Na luta morreram Vemaena e Kiveik. A Segunda Guerra Santa acabou em trégua, depois de um ano, duas batalhas e três mortos. Koil saiu dela mais forte.
 
 ### Ano 123
 
-Na primavera do ano 123, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Ran acordou se sentindo forte como nunca, sem saber por quê. Kovean implorou pelo filho. Moar morreu, e daquele dia em diante Kovean cuspia no chão quando falavam do Que Afoga. Houve luta no morro: Tamil atacou Vian. Tamil venceu e levou a comida guardada. Na luta morreu Viela. Sem nuvem nenhuma, um raio acertou Lour no morro. Em Vian, disseram que era castigo.
+Nasceu Kapeya, filha de Selselena e Kimaur, com sangue de Eses e de Tamil. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Selik tinha rezado: «Manda água, Que Afoga, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Eses duvidou de que o Que Afoga tinha ouvido. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Viar: todo ano, celebram a chuva que a Mãe da Chuva mandou. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
 
 ### Ano 124
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Selela acordou se sentindo forte como nunca, sem saber por quê. Começou a Segunda Guerra da Fome: Tamil, com fome, foi buscar à força a comida de Vian. Depois de um ano, duas batalhas e dois mortos, a Segunda Guerra da Fome terminou em paz. Tamil saiu dela mais forte. Vian já não se preparava para nada: o Que Fere sempre dava.
+Morreu Seltamur, que guiava Tamil, aos 61 anos. Morreu Pedoya, aos 57 anos. Na guerra, tinha tirado duas vidas. Com Dokurya à frente, a nova geração de Viar abandonou o treino com lanças, costume herdado dos avós. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. De um dia para o outro, o morro transbordou de comida. A fome de Eses acabou ali.
 
 ### Ano 125
 
-Na primavera do ano 125, Vimaem, que guiava Tamil, morreu dormindo, aos 47 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. A fome no inverno durou 12 dias em Tamil e levou duas vidas.
+De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Demik pediu: «Generoso, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. De novo o sol se apagou no meio do dia. Para Tamil, o deus já não era «o Generoso»: passou a ser «o Que Apaga o Sol». Dokurya, que guiava Viar, teve um filho: Loik.
 
 ### Ano 126
 
-Na primavera do ano 126, Demem, o ambicioso, morreu dormindo, aos 51 anos. Selpe, a rancorosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No inverno, Loselya deu à luz gêmeos, Maloik e Pemaela. Uns viram bênção; outros, mau sinal. Demviem, o medroso, morreu de fome.
+No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Viveik acordou se sentindo forte como nunca, sem saber por quê. Eses já não se preparava para nada: o Que Afoga sempre dava. Kiveon, de Viar, tomou por esposa Selena, de Tamil, e os dois povos passaram a se visitar.
 
 ### Ano 127
 
-Na primavera do ano 127, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Vemaem tinha rezado: «Pai das Águas, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Pai das Águas. Dessa vez, tinha sido mesmo o deus. Tamil passou fome no inverno por 15 dias, e cinco pessoas morreram.
+No inverno do ano 127, Veon acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
 
 ### Ano 128
 
-Na primavera do ano 128, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Kokoela acordou se sentindo forte como nunca, sem saber por quê. Kovean rezou por Kadoali até a voz acabar. Kadoali morreu mesmo assim, e Kovean nunca mais rezou. Uma febre correu Tamem e levou três vidas. Depois da febre, Tamem passou a queimar os seus mortos, para que a doença não voltasse.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Seltoan acordou se sentindo forte como nunca, sem saber por quê. Em Eses, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
 ### Ano 129
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A forja de Vian não apagava mais. O metal mudou o trabalho e mudou a guerra. A doença entrou em Tamil e matou quatro pessoas. Selur, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Na primavera, com Dokos à frente, Koil largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, o morro transbordou de comida. A fome de Eses acabou ali.
 
 ### Ano 130
 
-Morreu Tamur, que falava pela Grande Água em Veor, aos 63 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Sem lugar e sem comida, Famar e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Nos anos 121 a 130 houve duas secas, treze fomes, três batalhas, 44 preces que pareceram atendidas e nove preces sem resposta; nasceram 178 crianças e morreram 127 pessoas. No fim do ano 130, 253 pessoas viviam no mundo: Tamil (137), Veor (55), Tamem (21) e Vian (40).
+Na primavera do ano 130, morreu Dokos, que guiava Koil, aos 65 anos. Selena disse ter ouvido o deus de outro jeito: não era «a Mãe da Chuva», era «o Que Ruge». Viar acreditou, e o deus mudou de nome. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No inverno, Kaur acordou se sentindo forte como nunca, sem saber por quê. Nos anos 121 a 130 houve cinco secas, dez fomes, duas batalhas, 36 preces que pareceram atendidas e quatro preces sem resposta; nasceram 112 crianças e morreram 42 pessoas. No fim do ano 130, 220 pessoas viviam no mundo: Koil (48), Tamil (121), Eses (31) e Viar (20).
 
 ### Ano 131
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. O frio levou Makiur, que guiava Veor. Todos davam Yosele por morta. Ela se levantou, pediu água e sorriu. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Em nome da Grande Água, Komaon proibiu casamentos e trocas com Tamil. Era vontade de Komaon, não do deus.
+Kurela, a engenhosa, morreu de velhice aos 57 anos. Na guerra, tinha tirado duas vidas. Em Tamil, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Selselena acordou se sentindo forte como nunca, sem saber por quê. Houve luta na floresta: Tamil atacou Koil. Koil foi derrotado e perdeu o que tinha guardado. Na luta morreram Vidoya, Veos e Tamur.
 
 ### Ano 132
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Houve luta no lago: Tamem atacou Tamil. Tamil resistiu, e Tamem voltou de mãos vazias. Moik e Fakar morreram na luta. Depois de tantos mortos, Tamem e Tamil se encontraram no lago e juraram paz. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Demik, que guiava Tamil, morreu dormindo, aos 54 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Tamselur pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças ao Que Apaga o Sol. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 133
 
-Na primavera, com Selloena à frente, a nova geração de Vian abandonou o costume de queimar os mortos, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Ve acordou se sentindo forte como nunca, sem saber por quê. Desde a febre, Veor não enterra mais ninguém: os mortos vão para o fogo. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Uma febre correu Tamil e levou quatro vidas.
 
 ### Ano 134
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Para Tamil, o deus já não era «o Pai das Águas»: passou a ser «o Generoso». Vemaem tinha rezado: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Gokaela acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, Vela morreu dormindo, aos 45 anos. Na guerra, tinha tirado duas vidas. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Mavela pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças ao Que Apaga o Sol. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 135
 
-Com Komaon à frente, a nova geração de Veor abandonou a festa da chuva, costume herdado dos avós. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
+No inverno, Peos, de Koil, tomou por esposa Tamloya, de Viar, e os dois povos passaram a se visitar. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
 
 ### Ano 136
 
-Morreu Mademe, a corajosa, aos 57 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A fome no inverno durou 17 dias em Tamil e levou treze vidas. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. O dia em que a chuva voltou virou festa em Veor: todo ano, celebram a chuva que a Grande Água mandou.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamil passou fome no inverno por 3 dias, e uma pessoa morreu.
 
 ### Ano 137
 
-Kiveos, que guiava Tamil, morreu de velhice aos 51 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, Komaon anunciou que a Grande Água proibia qualquer trato com Vian. O deus nunca disse isso, mas Veor obedeceu. No inverno, Selmaela implorou pelo filho. Lotamos morreu, e daquele dia em diante Selmaela cuspia no chão quando falavam do Generoso.
+Na primavera, Maya acordou se sentindo forte como nunca, sem saber por quê. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Para Tamil, o deus já não era «o Que Apaga o Sol»: passou a ser «a Mãe da Fartura».
 
 ### Ano 138
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Os de Tamil caíram sobre Veor na floresta. Veor foi derrotado e perdeu o que tinha guardado. Na luta morreram Maraela, Goela e Kokon. Tamil e Veor, cansados de enterrar os seus, fizeram as pazes na floresta. Tamil passou fome no inverno por 9 dias, e nove pessoas morreram.
+Na primavera, a forja de Eses não apagava mais. O metal mudou o trabalho e mudou a guerra. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Viselos acordou se sentindo forte como nunca, sem saber por quê. No outono, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tantas preces atendidas fizeram Viar confiar no céu mais do que nas próprias mãos.
 
 ### Ano 139
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Vemaem tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus.
+Na primavera, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Eses comeu até cansar. Lopem acordou se sentindo forte como nunca, sem saber por quê. No verão, o frio levou Lomaik, que falava pela Mãe da Fartura em Tamil. Do céu limpo, um raio caiu na praia e matou Kurkiur. Ninguém em Viar teve dúvida: era castigo. Começou a Guerra da Fome da Praia: Tamil, com fome, foi buscar à força a comida de Viar.
 
 ### Ano 140
 
-Morreu Tammaos, que falava pelo Que Afoga em Tamem, aos 64 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, Koe deu à luz gêmeos, Veik e Tortorik. Uns viram bênção; outros, mau sinal. Nos anos 131 a 140 houve cinco secas, vinte fomes, três batalhas, 56 preces que pareceram atendidas e sete preces sem resposta; nasceram 172 crianças e morreram 177 pessoas. No fim do ano 140, 249 pessoas viviam no mundo: Tamil (139), Veor (47), Tamem (23) e Vian (40).
+Na primavera do ano 140, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Tamil perdeu o saber. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Do céu limpo, um raio caiu na praia e matou Selena. Selena era das que mais rezavam, e Viar ficou sem entender. Selkaur acordou se sentindo forte como nunca, sem saber por quê. No outono, numa tempestade sobre o morro, um raio matou Kapeya. A família de Kapeya nunca perdoou o céu. Nos anos 131 a 140 houve onze fomes, quatro batalhas, 40 preces que pareceram atendidas e cinco preces sem resposta; nasceram 151 crianças e morreram 225 pessoas. No fim do ano 140, 146 pessoas viviam no mundo: Koil (80), Tamil (2), Eses (36) e Viar (28).
 
 ### Ano 141
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Veor passou fome por 18 dias, e dezessete pessoas morreram. Uma tosse que não passava matou sete pessoas em Tamil. No outono, Tamil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Tamlon, que falava pelo Que Ruge em Viar, morreu dormindo, aos 58 anos. Os últimos de Tamil, Kios e Lopem, juntaram-se a Koil. Tamil deixou de existir. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. A Guerra da Fome da Praia acabou porque um dos lados deixou de existir: dois anos, três batalhas e oito mortos. No outono, Kurdoela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 142
 
-Na primavera, Kaela, que falava pelo Que Afoga em Tamem, morreu de velhice aos 49 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Kiena acordou se sentindo forte como nunca, sem saber por quê. Don anunciou que o Que Afoga proibia qualquer trato com Tamil. O deus nunca disse isso, mas Tamem obedeceu.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Com Selan à frente, onze pessoas deixaram Eses e fundaram Esem, no lago. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Em Esem, Seldemela tomou para si o cuidado das preces à Mãe da Fartura. O deus calou justo quando Eses mais dependia dele.
 
 ### Ano 143
 
-Na primavera do ano 143, Doela, que guiava Tamem, morreu dormindo, aos 50 anos. Desde a morte de Kokaela, nunca mais tinha rezado. Loe não esperou a vez: tomou o comando de Tamil à força, e o conselho dos velhos se calou. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Todos davam Vem por morto. Ele se levantou, pediu água e sorriu. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Morreu o último que tinha visto o ano 100. Em Esem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Eses comeu até cansar. Em Eses, Loviena pediu: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Eses viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Em Esem nasceu a primeira criança: Kaselan, filho de Tamselya e Maik. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 144
 
-Tamem atacou Tamil no lago em nome do Que Afoga. Tamil expulsou os atacantes. Don morreu na luta. Vian escolheu Gogoe para guiar o grupo. Tamveur queria o lugar e nunca perdoou. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Do céu limpo, um raio caiu no lago e matou Mapem. Ninguém em Tamil teve dúvida: era castigo. Desde a morte de Mapem, ninguém em Tamil chega perto do lago em dia de tempestade.
+Na primavera do ano 144, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Kimau acordou se sentindo forte como nunca, sem saber por quê. Viar passou fome por causa da seca por 23 dias, e treze pessoas morreram. No verão, Loik, o engenhoso, inventou marcas que guardavam palavras. Depois da febre, Koil passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 145
 
-Na primavera do ano 145, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Começou a Guerra Santa do Lago: em nome do Que Afoga, Tamem pegou em lanças contra Tamil. Sem nuvem nenhuma, um raio acertou Vela no lago. Ninguém em Tamil teve dúvida: era castigo. No inverno, todos davam Dogoe por morta. Ela se levantou, pediu água e sorriu.
+Na primavera do ano 145, Selik, que fundou Eses e o guiava, morreu de velhice aos 53 anos. Tinha fundado Eses. Em nome do Que Ruge, Vimaon proibiu casamentos e trocas com Koil. Era vontade de Vimaon, não do deus. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Viu tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. No outono, Doe, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 146
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Veor parou de rezar. Diziam que o Que Levanta nunca tinha existido. Veor atacou Vian no morro em nome do Que Levanta. Vian foi derrotado e perdeu o que tinha guardado. Tamya, Tamveur e Loselya morreram na luta. Depois de tantos mortos, Veor e Vian se encontraram no morro e juraram paz. Peya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, Viu, que falava pelo Que Dá em Koil, morreu de repente, aos 35 anos. Vela acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
 
 ### Ano 147
 
-Na primavera, morreu Vem, que falava pelo Que Levanta em Vian, aos 56 anos. Vegoik, o rancoroso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Demik pediu: «Generoso, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 12 dias em Tamil e levou três vidas.
+Na primavera do ano 147, morreu Koya, que guiava Koil, aos 65 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Esem, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Selan, de Esem, tomou por esposa Tammau, de Koil, e os dois povos passaram a se visitar. No inverno, Selan acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 148
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Vemaem pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 15 dias em Tamil e levou dezoito vidas. No outono, a Guerra Santa do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte.
+Na primavera do ano 148, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 149
 
-Na primavera, Demik, o medroso, morreu dormindo, aos 70 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Enem acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Viar passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Viar, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Kitamu acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 150
 
-Na primavera do ano 150, Kadoe, que guiava Veor, morreu de velhice aos 50 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Do céu limpo, um raio caiu na praia e matou Maselela. Ninguém em Tamem teve dúvida: era castigo. Depois disso, Tamem deixou de chamar o deus de «o Que Afoga» e passou a chamá-lo de «o Que Fere». No outono, Tamil e Veor, cansados de enterrar os seus, fizeram as pazes na floresta. Nos anos 141 a 150 houve duas secas, dezessete fomes, seis batalhas, 46 preces que pareceram atendidas e quinze preces sem resposta; nasceram 150 crianças e morreram 159 pessoas. No fim do ano 150, 241 pessoas viviam no mundo: Tamil (149), Veor (52), Tamem (21) e Vian (19).
+Veselya disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «o Que Acende o Céu». Esem acreditou, e o deus mudou de nome. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Dos ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Uma tosse que não passava matou quatro pessoas em Koil. Nos anos 141 a 150 houve duas secas, onze fomes, 34 preces que pareceram atendidas e três preces sem resposta; nasceram 136 crianças e morreram 67 pessoas. No fim do ano 150, 215 pessoas viviam no mundo: Koil (117), Eses (50), Viar (30) e Esem (18).
 
 ### Ano 151
 
-Na primavera, Kie, a rancorosa, morreu de velhice aos 66 anos. Na guerra, tinha tirado duas vidas. Kimaya acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra da Fome do Lago: Tamil, com fome, foi buscar à força a comida de Tamem. A Guerra da Fome do Lago acabou em trégua, depois de um ano, duas batalhas e três mortos. Tamil saiu dela mais forte. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Na primavera do ano 151, Kikik, que guiava Eses, morreu dormindo, aos 71 anos. Doe passou a guiar Eses, mas Kimaur não aceitou e guardou rancor. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Todos davam Mave por morta. Ela se levantou, pediu água e sorriu. Foram 9 dias de fome no inverno em Koil, com três mortos.
 
 ### Ano 152
 
-Na primavera do ano 152, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, Selpeik acordou se sentindo forte como nunca, sem saber por quê. Veor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Veur, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Dokurya, que fundou Viar e o guiava, morreu de velhice aos 50 anos. Foi quem levou os seus a fundar Viar. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Para Eses, o deus já não era «a Mãe da Fartura»: passou a ser «o Que Apaga o Sol». Os de Eses caíram sobre Koil na floresta. Koil foi derrotado e perdeu o que tinha guardado. Na luta morreram Sele, Tamvela e Kion. Eses e Koil, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 153
 
-Na primavera, Gogoela morreu dormindo, aos 73 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No outono, Gon acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 153, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Eses e Esem fizeram as pazes no lago, antes que a briga crescesse. Desde então, Eses e Esem chamam o lugar de Lago da Trégua. Vedour acordou se sentindo forte como nunca, sem saber por quê. No outono, em Eses, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles.
 
 ### Ano 154
 
-Na primavera, Vemaem, o generoso, morreu de velhice aos 45 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamil conheceu a maior fome da sua história. Em 21 dias, morreram 26. Muitas cabanas ficaram vazias.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Lou pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Em nome do Que Apaga o Sol, Kimaur proibiu casamentos e trocas com Koil. Era vontade de Kimaur, não do deus. No outono, Maloya, a engenhosa, inventou marcas que guardavam palavras. Kimaur anunciou que o Que Apaga o Sol proibia qualquer trato com Esem. O deus nunca disse isso, mas Eses obedeceu.
 
 ### Ano 155
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Sem nuvem nenhuma, um raio acertou Koe na floresta. Em Veor, disseram que era castigo. Começou a Guerra da Fome da Floresta: Tamil, com fome, foi buscar à força a comida de Veor. Depois de duas batalhas e seis mortos, a Guerra da Fome da Floresta terminou em paz. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Em Eses, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Lou pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Maselos acordou se sentindo forte como nunca, sem saber por quê. No inverno, Beru, de Viar, casou-se com Esselur e foi viver em Esem. Foi o primeiro laço entre os dois povos.
 
 ### Ano 156
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Loe tinha rezado: «Pai das Águas, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Pai das Águas. Dessa vez, tinha sido mesmo o deus. No outono, Tamil atacou Tamem na praia. Tamil venceu e levou a comida guardada. Teik morreu na luta. Do céu limpo, um raio caiu na praia e matou Pem. Em Tamem, disseram que era castigo.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Esesur acordou se sentindo forte como nunca, sem saber por quê. Kimaur, que falava pelo Que Apaga o Sol em Eses, morreu de febre aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Koil. No verão, Eses via Viar ser atendido e concluiu que o Que Apaga o Sol tinha escolhido os outros. Sem nuvem nenhuma, um raio acertou Beros na praia. Ninguém em Viar teve dúvida: era castigo.
 
 ### Ano 157
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Começou a Guerra do Lago: o rancor entre Tamil e Tamem virou guerra. Na Guerra do Lago, Tamem atacou Tamil no lago em nome do Que Fere. Tamil expulsou os atacantes. Na luta morreram Teali, Sele, Doik e Lomaela. Depois de tantos mortos, Tamem e Tamil se encontraram no lago e juraram paz. A Guerra do Lago acabou em trégua, depois de um ano, duas batalhas e cinco mortos. Tamil saiu dela mais forte.
+Na primavera do ano 157, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Sem nuvem nenhuma, um raio acertou Veselya no lago. Em Esem, disseram que era castigo. Começou a Terceira Guerra Santa: em nome do Que Apaga o Sol, Eses pegou em lanças contra Esem. No inverno, começou a Quarta Guerra Santa: em nome do Que Apaga o Sol, Eses pegou em lanças contra Koil.
 
 ### Ano 158
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Seldemena pediu: «Pai das Águas, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Pai das Águas. Dessa vez, tinha sido mesmo o deus. Gokaela acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, sem lugar e sem comida, Veon e os seus atravessaram a borda do mundo. Ninguém soube deles. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Viar cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Senhor do Trovão. Sem nuvem nenhuma, um raio acertou Peon na floresta. Ninguém em Koil teve dúvida: era castigo. A Quarta Guerra Santa acabou em trégua, depois de um ano, quatro batalhas e seis mortos. Koil saiu dela mais forte.
 
 ### Ano 159
 
-Na primavera do ano 159, Selur, o engenhoso, morreu de velhice aos 65 anos. Nunca perdoou o deus pela morte de Peya. Tamena passou a guiar Veor, mas Fae não aceitou e guardou rancor. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma febre correu Tamil e levou dez vidas.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Viloela acordou se sentindo forte como nunca, sem saber por quê. A doença entrou em Koil e matou três pessoas. No inverno, Maos, que guiava Koil, não resistiu à fome. Desde a morte de Koveu, nunca mais tinha rezado.
 
 ### Ano 160
 
-Morreu Enur, que guiava Vian, aos 53 anos. Em Vian, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 115, só a crônica guarda. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Komae acordou se sentindo forte como nunca, sem saber por quê. No inverno, Loe, que guiava Tamil, morreu de fome. Nos anos 151 a 160 houve treze fomes, sete batalhas, 37 preces que pareceram atendidas e onze preces sem resposta; nasceram 140 crianças e morreram 123 pessoas. No fim do ano 160, 258 pessoas viviam no mundo: Tamil (132), Veor (76), Tamem (23) e Vian (27).
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Pemaik ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. A Terceira Guerra Santa seguiu: Eses contra Esem, no lago. Esem foi derrotado e perdeu o que tinha guardado. Kitamu e Esselos morreram na luta. Do céu limpo, um raio caiu no lago e matou Veik. Em Esem, disseram que era castigo. No verão, depois de três anos, quatro batalhas e nove mortos, a Terceira Guerra Santa terminou em paz. Eses saiu dela mais forte. Nos anos 151 a 160 houve 22 fomes, treze batalhas, 51 preces que pareceram atendidas e 22 preces sem resposta; nasceram 117 crianças e morreram 130 pessoas. No fim do ano 160, 194 pessoas viviam no mundo: Koil (117), Eses (49), Viar (10) e Esem (18).
 
 ### Ano 161
 
-Na primavera, Selselur, que guiava Tamil, morreu dormindo, aos 62 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamil passou fome no inverno por 8 dias, e quatro pessoas morreram. Viselik rezou por Selkiela até a voz acabar. Selkiela morreu mesmo assim, e Viselik nunca mais rezou.
+Na primavera, morreu Don, que guiava Koil, aos 47 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Pedoya ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido.
 
 ### Ano 162
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A doença entrou em Tamil e matou quatro pessoas. Tamil passou fome no inverno por 9 dias, e sete pessoas morreram.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Mave acordou se sentindo forte como nunca, sem saber por quê. No inverno, houve luta no lago: Koil atacou Esem. Koil venceu e levou a comida guardada. Na luta morreram Eskuran e Seltos. Sem nuvem nenhuma, um raio acertou Tamkana no lago. Ninguém em Esem teve dúvida: era castigo. Para Esem, o deus já não era «o Que Acende o Céu»: passou a ser «o Que Fere».
 
 ### Ano 163
 
-Na primavera do ano 163, em Vian, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Vian passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No inverno, sem nuvem nenhuma, um raio acertou Viveur no morro. Viveur era dos que mais rezavam, e Vian ficou sem entender.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Começou a Segunda Guerra da Fome: Koil, com fome, foi buscar à força a comida de Esem. Sem nuvem nenhuma, um raio acertou Toem no lago. Ninguém em Esem teve dúvida: era castigo. Começou a Terceira Guerra da Fome: Eses, com fome, foi buscar à força a comida de Koil. Depois de um ano, duas batalhas e seis mortos, a Terceira Guerra da Fome terminou em paz.
 
 ### Ano 164
 
-Fadoela, que falava pelo Que Fere em Tamem, morreu dormindo, aos 53 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamem, quem vinha de fora era recebido com comida e lugar perto do fogo. Houve luta no lago: Veor atacou Tamil em nome do Que Levanta. Tamil expulsou os atacantes. Na luta morreu Koik. Do céu limpo, um raio caiu no lago e matou Lope. Em Tamil, disseram que era castigo.
+Na primavera, em Eses, gritaram que o templo mentia em nome do Que Apaga o Sol. Os sacerdotes foram tirados do poder. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Os últimos de Esem, Eskurena, Tama e Kakura, juntaram-se a Eses. Esem deixou de existir. A Segunda Guerra da Fome acabou porque um dos lados deixou de existir: dois anos, duas batalhas e seis mortos. No outono, Selselur acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 165
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Começou a Segunda Guerra Santa: em nome do Que Levanta, Veor pegou em lanças contra Tamil. Sem nuvem nenhuma, um raio acertou Selya no lago. Em Tamil, disseram que era castigo. Começou a Guerra Santa do Morro: em nome do Que Levanta, Veor pegou em lanças contra Vian.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Mave tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Foram 17 dias de fome no inverno em Eses, com dois mortos. Lour, que falava pelo Que Apaga o Sol em Eses, não resistiu à fome.
 
 ### Ano 166
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Houve luta na praia: Tamil atacou Tamem. Tamil venceu e levou a comida guardada. Na luta morreram Dotamon, Koela, Kamoe e Kamoar. A Guerra Santa do Morro acabou em trégua, depois de três anos, três batalhas e cinco mortos. Sem nuvem nenhuma, um raio acertou Gakie na praia. Em Tamem, disseram que era castigo.
+Na primavera do ano 166, os de Koil caíram sobre Viar na praia. Koil venceu e levou a comida guardada. Bukora, Kokour e Tamkou morreram na luta. Koil e Viar, cansados de enterrar os seus, fizeram as pazes na praia. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, Lokiela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 167
 
-Cansado de um líder que mandava sozinho, Tamil passou a decidir em conselho. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Sem nuvem nenhuma, um raio acertou Seldemur no lago. Ninguém em Tamil teve dúvida: era castigo. Depois de três anos, sete batalhas e catorze mortos, a Segunda Guerra Santa terminou em paz.
+Na primavera do ano 167, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kikiela não podia mais viver perto de Vevios. Saiu de Koil com 21 pessoas e fundou Peur no lago. Diante das ruínas de Demem, Peur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, nasceu Vikurur, o primeiro de Peur. No inverno, Vion passou a falar pelo Que Rega em Peur. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 168
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Selveur tinha rezado: «Que Dá, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Do acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 168, Pekuru, a devota, morreu dormindo, aos 70 anos. Na guerra, tinha tirado duas vidas. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Sem nuvem nenhuma, um raio acertou Lokure na praia. Logo Lokure, que tanto rezava. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Kolour acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 169
 
-Na primavera do ano 169, ninguém lembrava mais a razão, e Vian abandonou o medo das tempestades. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Selveur tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. No inverno, com canais e moinhos, Tamil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Em Eses, Veos tomou para si o cuidado das preces ao Que Apaga o Sol. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Depois disso, Koil deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Que Dá». Mave tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. No verão, Kidoe acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 170
 
-Na primavera do ano 170, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. O frio levou Selveur, que falava pelo Que Dá em Tamil. A forja de Tamem não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 161 a 170 houve dezoito fomes, onze batalhas, 40 preces que pareceram atendidas e onze preces sem resposta; nasceram 139 crianças e morreram 128 pessoas. No fim do ano 170, 270 pessoas viviam no mundo: Tamil (142), Veor (71), Tamem (31) e Vian (26).
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Eses atacou Koil na floresta. Koil resistiu, e Eses voltou de mãos vazias. Na luta morreram Esan, Veos e Niu. Do céu limpo, um raio caiu na floresta e matou Kurmaela. Ninguém em Koil teve dúvida: era castigo. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No inverno, Kuros acordou se sentindo forte como nunca, sem saber por quê. Nos anos 161 a 170 houve cinco secas, dezesseis fomes, sete batalhas, 41 preces que pareceram atendidas e dez preces sem resposta; nasceram 112 crianças e morreram 121 pessoas. No fim do ano 170, 186 pessoas viviam no mundo: Koil (125), Eses (7), Viar (29) e Peur (25).
 
 ### Ano 171
 
-Na primavera, Veor atacou Vian no morro em nome do Que Levanta. Veor venceu e levou a comida guardada. Na luta morreram Tamo, Selgaem e Tamviur. Depois de tantos mortos, Veor e Vian se encontraram no morro e juraram paz. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamil passou fome no inverno por 5 dias, e uma pessoa morreu. Do acordou se sentindo forte como nunca, sem saber por quê.
+Kipeu, a ambiciosa, morreu de velhice aos 53 anos. Na guerra, tinha tirado quatro vidas. Com Vevios à frente, Koil largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Kidoe acordou se sentindo forte como nunca, sem saber por quê. No verão, Dour, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
 
 ### Ano 172
 
-Em Veor, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 105, só a crônica guarda. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Na primavera do ano 172, Vevios, que guiava Koil, morreu de velhice aos 60 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 173
 
-Na primavera do ano 173, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Vela acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Loselur no lago. Em Tamil, disseram que era castigo. Começou a Terceira Guerra Santa: em nome do Que Levanta, Veor pegou em lanças contra Tamil. Depois de duas batalhas e sete mortos, a Terceira Guerra Santa terminou em paz. Tamil saiu dela mais forte.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Sem nuvem nenhuma, um raio acertou Pekios no lago. Logo Pekios, que tanto rezava. Começou a Guerra da Floresta: o rancor entre Eses e Koil virou guerra. Koil venceu Eses e levou os seis sobreviventes para viver sob seu mando. Eses deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra da Floresta terminou com a conquista: três anos, duas batalhas e quatro mortos. No outono, começou a Quarta Guerra da Fome: Koil, com fome, foi buscar à força a comida de Peur.
 
 ### Ano 174
 
-Na primavera do ano 174, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Gae acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Tampeya no lago. Ninguém em Tamil teve dúvida: era castigo. Começou a Quarta Guerra Santa: em nome do Que Fere, Tamem pegou em lanças contra Tamil. Depois de duas batalhas e cinco mortos, a Quarta Guerra Santa terminou em paz. Tamil saiu dela mais forte.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. A Quarta Guerra da Fome seguiu: Peur contra Koil, na floresta. Koil expulsou os atacantes. Tamon, Kikiela, Kou e Vipeos morreram na luta. Sem nuvem nenhuma, um raio acertou Peon no lago. Ninguém em Peur teve dúvida: era castigo. No inverno, com canais e moinhos, Koil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 175
 
-Vedemos morreu de repente, aos 43 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Madoela acordou se sentindo forte como nunca, sem saber por quê. Veor não esqueceu o ano 171 e atacou Vian outra vez. Vian foi derrotado e perdeu o que tinha guardado. Gaik, Lovik, Yo, Enem e Torela morreram na luta. Sem nuvem nenhuma, um raio acertou Pegae no morro. Em Vian, disseram que era castigo.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em nome do Que Dá, Maon proibiu casamentos e trocas com Viar. Era vontade de Maon, não do deus. Peur passou fome no inverno por 32 dias, e seis pessoas morreram. Peur acabou: Vitamur, Vikoe e Kurya foram viver em Viar. A Quarta Guerra da Fome acabou porque um dos lados deixou de existir: dois anos, quatro batalhas e dez mortos.
 
 ### Ano 176
 
-Na primavera do ano 176, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Gae ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Começou a Quinta Guerra Santa: em nome do Que Levanta, Veor pegou em lanças contra Vian. Do céu limpo, um raio caiu no morro e matou Gaem. Gaem era dos que mais rezavam, e Vian ficou sem entender.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Mave pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 14 dias em Koil e levou duas vidas. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 19 dias sem chuva no resto da região.
 
 ### Ano 177
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Depois de dois anos, cinco batalhas e quinze mortos, a Quinta Guerra Santa terminou em paz. Veor saiu dela mais forte. Em Vian, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Do céu limpo, um raio caiu no lago e matou Kiela. Ninguém em Tamil teve dúvida: era castigo. Começou a Sexta Guerra Santa: em nome do Que Levanta, Veor pegou em lanças contra Tamil.
+Na primavera, Veur, o devoto, morreu de velhice aos 61 anos. Na guerra, tinha tirado duas vidas. Vimaon, que guiava Viar, morreu de velhice aos 58 anos. Foi quem proibiu, em nome do deus, o trato com Koil. Com Dodoe à frente, Koil largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Vemaela passou a falar pelo Senhor do Trovão em Viar. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 178
 
-Na primavera do ano 178, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Vekao acordou se sentindo forte como nunca, sem saber por quê. Depois de um ano, três batalhas e nove mortos, a Sexta Guerra Santa terminou em paz. Veor saiu dela mais forte. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Do céu limpo, um raio caiu no lago e matou Kiselya. Em Tamil, disseram que era castigo. No inverno, começou a Sétima Guerra Santa: em nome do Que Fere, Tamem pegou em lanças contra Tamil.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Mave tinha rezado: «Que Dá, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Kurlou acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 179
 
-Na primavera, morreu Dofaon, que guiava Veor, aos 60 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A fome por causa da seca durou 24 dias em Tamem e levou sete vidas. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Um inverno duro matou seis pessoas de frio.
+Koil já não cabia na floresta. Vedour, o ambicioso, levou dezessete pessoas para o lago e fundou Kurak. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Koil já não cabia na floresta. Viela, a corajosa, levou dezoito pessoas para o morro e fundou Loan. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Loan passou a festejar todo ano o dia da volta da chuva, em honra do Que Dá.
 
 ### Ano 180
 
-Na primavera, depois de dois anos, três batalhas e cinco mortos, a Sétima Guerra Santa terminou em paz. Tamil saiu dela mais forte. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. A terra tremeu. Caíram 22 cabanas. Selvios, Goela e Doar morreram sob os escombros. Fazia muito tempo que Veor não rezava. Diante do que viu, voltou a chamar por «o Que Levanta», e o templo encheu de novo. Nos anos 171 a 180 houve quatro secas, 22 fomes, dezessete batalhas, 58 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 183 crianças e morreram 227 pessoas. No fim do ano 180, 220 pessoas viviam no mundo: Tamil (150), Veor (43), Tamem (19) e Vian (8).
+Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. No outono, Vekoe, de Koil, casou-se com Dos e foi viver em Kurak. Foi o primeiro laço entre os dois povos. Mau acordou se sentindo forte como nunca, sem saber por quê. Nasceu Lokura, a primeira de Loan. Nos anos 171 a 180 houve três secas, doze fomes, seis batalhas, 33 preces que pareceram atendidas e sete preces sem resposta; nasceram 76 crianças e morreram 106 pessoas. No fim do ano 180, 157 pessoas viviam no mundo: Koil (87), Viar (34), Kurak (17) e Loan (19).
 
 ### Ano 181
 
-Na primavera do ano 181, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Demmaela pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Os de Koil caíram sobre Viar na praia em nome do Que Dá. Viar expulsou os atacantes. Na luta morreram Vikoe, Loik, Kurviela e Pelos. Do céu limpo, um raio caiu na praia e matou Vitamur. Ninguém em Viar teve dúvida: era castigo. No verão, começou a Guerra Santa da Praia: em nome do Que Dá, Koil pegou em lanças contra Viar. Tamviela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 182
 
-Na primavera do ano 182, Katamali morreu dormindo, aos 51 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Houve luta no lago: Veor atacou Tamil em nome da Terra Brava. Tamil resistiu, e Veor voltou de mãos vazias. Na luta morreram Torkaon, Kae e Demmaur. Veor e Tamil, cansados de enterrar os seus, fizeram as pazes no lago. Motear acordou se sentindo forte como nunca, sem saber por quê.
+Vikoela passou dias nas ruínas de Eses e voltou sabendo cortar pedra. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No outono, um raio caiu no morro durante a tempestade e matou Kurlou. Em Loan, disseram que era castigo. No inverno, Loviu acordou se sentindo forte como nunca, sem saber por quê. A terra tremeu. Caíram dezenove cabanas. Kurdoela, Kios, Mave e Veveos morreram sob os escombros.
 
 ### Ano 183
 
-Na primavera, morreu Tamem, que falava pelo Que Dá em Tamil, aos 68 anos. Kios, o curioso, morreu dormindo, aos 60 anos. Nunca perdoou o deus pela morte de Veloena. Morreu Kamaela, que falava pela Terra Brava em Veor, aos 64 anos. Nunca perdoou o deus pela morte de Torkae. Morreu o último que tinha visto o ano 118. Em Veor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Loviu acordou se sentindo forte como nunca, sem saber por quê. Nasceu Vion, filho de Pevie e Dos, com sangue de Kurak e de Koil. Em Loan, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Viya passou dias nas ruínas de Eses e voltou sabendo trabalhar o metal. No inverno, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 184
 
-Na primavera, Faon, o ambicioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Houve luta no morro: Veor atacou Vian em nome da Terra Brava. Vian foi derrotado e perdeu o que tinha guardado. Pe morreu na luta. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Morreu Tamkurya, aos 62 anos. Na guerra, tinha tirado duas vidas. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. A forja de Loan não apagava mais. O metal mudou o trabalho e mudou a guerra. A Guerra Santa da Praia esfriou sem acordo nem vencedor: três anos, duas batalhas e sete mortos, e ninguém sabia mais por que lutava. Tamela passou dias nas ruínas de Eses e voltou sabendo ler as marcas antigas.
 
 ### Ano 185
 
-Demena partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Em nome do Que Dá, Demmaela proibiu casamentos e trocas com Veor. Era vontade de Demmaela, não do deus. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Demmaela pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 9 dias em Tamil e levou seis vidas.
+Na primavera, com lanças e promessas, Bero acabou com o conselho de Viar e passou a mandar sozinho. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Maon pediu: «Que Dá, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Nas ruínas de Eses, Vikoela achou o que eles sabiam: aprendeu a ler as marcas antigas.
 
 ### Ano 186
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamyoe acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 23 dias.
+Na primavera do ano 186, com Bero à frente, a nova geração de Viar abandonou o medo das tempestades, costume herdado dos avós. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Loan passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Loan, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Maon anunciou que o Que Dá proibia qualquer trato com Viar. O deus nunca disse isso, mas Koil obedeceu.
 
 ### Ano 187
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, Do céu limpo, um raio caiu na floresta e matou Kakae. Kakae era das que mais rezavam, e Veor ficou sem entender. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Começou a Oitava Guerra Santa: em nome do Que Dá, Tamil pegou em lanças contra Veor.
+Na primavera, Viar deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, um raio sem nuvem acertou Vedour, que guiava Kurak, diante de todos. Em Kurak, disseram que era castigo. Pemaos acordou se sentindo forte como nunca, sem saber por quê. No inverno, começou a Quinta Guerra Santa: em nome do Que Dá, Koil pegou em lanças contra Viar.
 
 ### Ano 188
 
-Na primavera do ano 188, Raraik partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Houve luta no lago: Tamem atacou Tamil em nome do Que Sacode. Tamil resistiu, e Tamem voltou de mãos vazias. Teon, Motear e Kiloem morreram na luta.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. A Quinta Guerra Santa seguiu: Koil contra Viar, na praia. Koil venceu e levou a comida guardada. Na luta morreram Berur e Bur. Sem nuvem nenhuma, um raio acertou Dokoe na praia. Em Viar, disseram que era castigo. A Quinta Guerra Santa acabou em trégua, depois de um ano, quatro batalhas e sete mortos. Koil saiu dela mais forte.
 
 ### Ano 189
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. De novo Veor contra Vian em nome da Terra Brava, como no ano 184. Vian foi derrotado e perdeu o que tinha guardado. Veve morreu na luta. Veor e Vian, cansados de enterrar os seus, fizeram as pazes no morro. Tamil passou fome no inverno por 9 dias, e quatro pessoas morreram. A Oitava Guerra Santa acabou em trégua, depois de dois anos, três batalhas e seis mortos. Tamil saiu dela mais forte.
+Na primavera do ano 189, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Começou a Sexta Guerra Santa: em nome do Que Dá, Koil pegou em lanças contra Kurak. A Sexta Guerra Santa seguiu: Koil contra Kurak, no lago em nome do Que Dá. Kurak expulsou os atacantes. Lon e Tampeya morreram na luta. Sem nuvem nenhuma, um raio acertou Pemaik no lago. Em Kurak, disseram que era castigo. No inverno, Pevios acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 190
 
-Na primavera do ano 190, Pevios, que guiava Tamil, morreu de velhice aos 52 anos. Na guerra, tinha tirado duas vidas. Sem lugar e sem comida, Tammaena e os seus atravessaram a borda do mundo. Ninguém soube deles. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Doran acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Nos anos 181 a 190 houve quatro secas, catorze fomes, oito batalhas, 60 preces que pareceram atendidas e catorze preces sem resposta; nasceram 189 crianças e morreram 135 pessoas. No fim do ano 190, 264 pessoas viviam no mundo: Tamil (159), Veor (56), Tamem (25) e Vian (24).
+Na primavera do ano 190, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Vikure ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Koil e Kurak, cansados de enterrar os seus, fizeram as pazes no lago. Depois de três anos, três batalhas e seis mortos, a Sexta Guerra Santa terminou em paz. Uma febre correu Koil e levou sete vidas. Nos anos 181 a 190 houve doze fomes, dez batalhas, 34 preces que pareceram atendidas e oito preces sem resposta; nasceram 130 crianças e morreram 77 pessoas. No fim do ano 190, 211 pessoas viviam no mundo: Koil (114), Viar (48), Kurak (25) e Loan (24).
 
 ### Ano 191
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Demmaela pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus. Uma febre correu Tamil e levou três vidas. Deme morreu de fome. Na guerra, tinha tirado duas vidas.
+Na primavera do ano 191, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. Os de Viar caíram sobre Loan no morro. Loan foi derrotado e perdeu o que tinha guardado. Tampera e Vepe morreram na luta. Sem nuvem nenhuma, um raio acertou Tamkurik no lago. Em Kurak, disseram que era castigo. No verão, Tamu acordou se sentindo forte como nunca, sem saber por quê. No inverno, Maon, que falava pelo Que Dá em Koil, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Viar.
 
 ### Ano 192
 
-Morreu Vepena, que guiava Tamil, aos 49 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Demmaela anunciou que o Que Dá proibia qualquer trato com Tamem. O deus nunca disse isso, mas Tamil obedeceu. No inverno, Do céu limpo, um raio caiu na praia e matou Motamon. Ninguém em Tamem teve dúvida: era castigo. Começou a Guerra Santa da Praia: em nome do Que Dá, Tamil pegou em lanças contra Tamem.
+Dodoe, que guiava Koil, morreu de velhice aos 53 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Foram 9 dias de fome no inverno em Koil, com treze mortos. Em Loan, Koviya tomou para si o cuidado das preces ao Que Fere.
 
 ### Ano 193
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Os de Tamil caíram sobre Veor na floresta em nome do Que Dá. Veor foi derrotado e perdeu o que tinha guardado. Na luta morreram Kogoik e Maveos. Sem nuvem nenhuma, um raio acertou Kakaela na floresta. Em Veor, disseram que era castigo. Kikio acordou se sentindo forte como nunca, sem saber por quê. No inverno, a Guerra Santa da Praia acabou em trégua, depois de um ano, quatro batalhas e onze mortos. Tamil saiu dela mais forte.
+No verão do ano 193, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar.
 
 ### Ano 194
 
-Kik, o pacífico, morreu de velhice aos 61 anos. Em Tamem, já ninguém sabia cortar pedra. O que fora feito começou a ruir. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A fome no inverno durou 21 dias em Tamem e levou oito vidas.
+Lolour, que falava pelo Que Dá em Koil, morreu de velhice aos 60 anos. Viela, que fundou Loan e o guiava, morreu de repente, aos 43 anos. Tinha fundado Loan. Loan deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Loveos passou a guiar Loan, mas Tame não aceitou e guardou rancor. Em Loan, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos.
 
 ### Ano 195
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Começou a Nona Guerra Santa: em nome do Que Dá, Tamil pegou em lanças contra Veor. Na Nona Guerra Santa, Tamil atacou Veor na floresta em nome do Que Dá. Tamil venceu e levou a comida guardada. Kon e Demmaela morreram na luta. Do céu limpo, um raio caiu na floresta e matou Doman. Em Veor, disseram que era castigo.
+Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar.
 
 ### Ano 196
 
-Em Veor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 133, só a crônica guarda. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Gae tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Raela acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 196, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. Demur acordou se sentindo forte como nunca, sem saber por quê. De novo o sol se apagou no meio do dia.
 
 ### Ano 197
 
-Vekiena, a ambiciosa, morreu dormindo, aos 66 anos. Nunca perdoou o deus pela morte de Veviem. Viselela passou a guiar Tamil, mas Kiem não aceitou e guardou rancor. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Kurak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Kurak ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Sacode. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Buo acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 198
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Na Nona Guerra Santa, Veor atacou Tamil no lago em nome do Que Fere. Tamil resistiu, e Veor voltou de mãos vazias. Mao, Mavela, Fagoela e Maveya morreram na luta. Depois de tantos mortos, Veor e Tamil se encontraram no lago e juraram paz. A Nona Guerra Santa acabou em trégua, depois de cinco anos, três batalhas e oito mortos. Tamil saiu dela mais forte.
+De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Doe acordou se sentindo forte como nunca, sem saber por quê. Tamviela deu à luz gêmeos, Lokik e Peveos. Uns viram bênção; outros, mau sinal. No outono, de novo o sol se apagou no meio do dia.
 
 ### Ano 199
 
-Na primavera, em Tamil, Mademem começou a pregar que o deus não era «o Que Dá». Era «a Estrela de Cauda». Em poucos anos, todos rezavam assim. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Gaik acordou se sentindo forte como nunca, sem saber por quê.
+Veu, que guiava Koil, morreu de velhice aos 63 anos. Depois de tanta briga pelo comando, Koil passou a ser guiado por um conselho dos mais velhos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. Lopeu acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 200
 
-Kikio, o rancoroso, descobriu como empilhar pedras cortadas sem que caíssem. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Gae tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Tamil deu graças à Estrela de Cauda. Dessa vez, tinha sido mesmo o deus. A terra tremeu na praia como nunca, e em mais nenhum lugar. Caíram onze cabanas. Nos anos 191 a 200 houve treze fomes, sete batalhas, 46 preces que pareceram atendidas e onze preces sem resposta; nasceram 135 crianças e morreram 156 pessoas. No fim do ano 200, 239 pessoas viviam no mundo: Tamil (159), Veor (53), Tamem (5) e Vian (22).
+Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. No verão, a terra tremeu na praia como nunca, e em mais nenhum lugar. Caíram dezoito cabanas. Vik, Bero, Budora e Vidoela morreram sob os escombros. Nos anos 191 a 200 houve dez fomes, duas batalhas, onze preces que pareceram atendidas e três preces sem resposta; nasceram 106 crianças e morreram 122 pessoas. No fim do ano 200, 192 pessoas viviam no mundo: Koil (81), Viar (44), Kurak (32) e Loan (35).
 
 ### Ano 201
 
-Morreu Tamon, o generoso, aos 51 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Os de Tamil caíram sobre Tamem na praia em nome da Estrela de Cauda. Tamem foi derrotado e perdeu o que tinha guardado. Na luta morreram Tamela, Goik e Mapena. Depois de tantos mortos, Tamil e Tamem se encontraram na praia e juraram paz.
+De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Os de Viar caíram sobre Kurak no lago. Viar venceu e levou a comida guardada. Rur, Vikoela e Maur morreram na luta. Depois de tantos mortos, Viar e Kurak se encontraram no lago e juraram paz. Viar passou fome no inverno por 9 dias, e dezenove pessoas morreram. Para Kurak, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
 
 ### Ano 202
 
-Na primavera do ano 202, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Selmaik, o engenhoso, morreu de fome. A doença entrou em Tamil e matou três pessoas.
+Tamya morreu dormindo, aos 52 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Loloe pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Kurya acordou se sentindo forte como nunca, sem saber por quê. No inverno, Veo, que falava pelo Senhor do Trovão em Viar, morreu de fome.
 
 ### Ano 203
 
-Na primavera do ano 203, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Pekiur acordou se sentindo forte como nunca, sem saber por quê. A fome no inverno durou 9 dias em Tamil e levou doze vidas.
+Na primavera do ano 203, Vidoik, que falava pelo Que Dá em Koil, morreu dormindo, aos 52 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. Foram 9 dias de fome no inverno em Viar, com 27 mortos.
 
 ### Ano 204
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamem acabou: Torkoan, Kotore e Tamar foram viver em Veor. Tamil encontrou as ruínas de Tamem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Kik tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Kour acordou se sentindo forte como nunca, sem saber por quê. Viu, que guiava Viar, morreu ao dar à luz. O arquivo salvou Viar: Ve reaprendeu nas tabuletas o que os mortos sabiam.
 
 ### Ano 205
 
-Na primavera do ano 205, morreu Peya, a ambiciosa, aos 52 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A fome no inverno durou 9 dias em Tamil e levou cinco vidas. Kotore acordou se sentindo forte como nunca, sem saber por quê. No inverno, Tamur implorou pelo filho. Tamloem morreu, e daquele dia em diante Tamur cuspia no chão quando falavam da Estrela de Cauda.
+A forja de Kurak não apagava mais. O metal mudou o trabalho e mudou a guerra. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 24 dias. Lour acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 206
 
-Na primavera do ano 206, Vian ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Gae pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças à Estrela de Cauda. Dessa vez, tinha sido mesmo o deus.
+De um dia para o outro, o morro transbordou de comida. A fome de Loan acabou ali. Viur acordou se sentindo forte como nunca, sem saber por quê. Vetamya, a generosa, morreu de fome.
 
 ### Ano 207
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, sem nuvem nenhuma, um raio acertou Kipem no lago. Ninguém em Tamil teve dúvida: era castigo. No outono, começou a Décima Guerra Santa: em nome do Que Fere, Veor pegou em lanças contra Tamil. Depois de duas batalhas e cinco mortos, a Décima Guerra Santa terminou em paz. Tamil saiu dela mais forte.
+Na primavera do ano 207, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. A fome no inverno durou 9 dias em Koil e levou 35 vidas.
 
 ### Ano 208
 
-Morreu Kipeos, o corajoso, aos 70 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A fome no inverno durou 9 dias em Tamil e levou cinco vidas.
+Na primavera do ano 208, de um dia para o outro, o morro transbordou de comida. A fome de Loan acabou ali. Tamlon acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 209
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamkoan acordou se sentindo forte como nunca, sem saber por quê. Houve luta no morro: Veor atacou Vian em nome do Que Fere. Vian foi derrotado e perdeu o que tinha guardado. Enyoik e Kiena morreram na luta. Depois de tantos mortos, Veor e Vian se encontraram no morro e juraram paz. No outono, Veor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
+Na primavera do ano 209, de um dia para o outro, o morro transbordou de comida. A fome de Loan acabou ali. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 210
 
-Na primavera do ano 210, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Gae pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Tamil deu graças à Estrela de Cauda. Dessa vez, tinha sido mesmo o deus. No inverno, Viselela, que guiava Tamil, morreu de fome. Tamkoe, que falava pelo Que Fere em Veor, não resistiu à fome. Na guerra, tinha tirado duas vidas. Nos anos 201 a 210 houve catorze fomes, cinco batalhas, 44 preces que pareceram atendidas e sete preces sem resposta; nasceram 150 crianças e morreram 139 pessoas. No fim do ano 210, 250 pessoas viviam no mundo: Tamil (130), Veor (78) e Vian (42).
+Na primavera do ano 210, de um dia para o outro, o morro transbordou de comida. A fome de Loan acabou ali. No inverno, em Kurak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Kurak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Nos anos 201 a 210 houve duas secas, onze fomes e quinze preces que pareceram atendidas; nasceram 141 crianças e morreram 104 pessoas. No fim do ano 210, 229 pessoas viviam no mundo: Koil (79), Viar (34), Kurak (42) e Loan (74).
 
 ### Ano 211
 
-Na primavera, Tamil já não cabia no lago. Maem, o rancoroso, levou 24 pessoas para a praia e fundou Loar. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, Veor atacou Tamil no lago em nome do Que Fere. Tamil expulsou os atacantes. Kotore, Torela e Pepeik morreram na luta.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Kik pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. O frio levou Loveos, que guiava Loan. O inverno foi de gelo: dezessete pessoas morreram de frio. Loan acabou: Raloik e Kura foram viver em Viar.
 
 ### Ano 212
 
-Morreu o último que tinha visto o ano 118. Em Loar, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Veor acabou ali. Para Veor, o deus já não era «o Que Fere»: passou a ser «a Mãe da Fartura». A fome por causa da seca durou 23 dias em Vian e levou quinze vidas.
+Morreu Kurela, a rancorosa, aos 51 anos. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Diante das ruínas de Loan, Koil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Kurak já não se preparava para nada: o Que Apaga o Sol sempre dava. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 213
 
-Na primavera do ano 213, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, em Loar, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Em nome do Que Levanta, Loene proibiu casamentos e trocas com Tamil. Era vontade de Loene, não do deus.
+Morreu Kie, aos 48 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Lokiya pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Que Dá. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 214
 
-Na primavera do ano 214, ninguém lembrava mais a razão, e Veor abandonou o costume de queimar os mortos.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar.
 
 ### Ano 215
 
-Morreu Selkios, que guiava Tamil, aos 56 anos. Desde a morte de Selvios, nunca mais tinha rezado.
+Morreu Lokiya, que guiava Koil, aos 66 anos. Nunca perdoou o deus pela morte de Maik. Kik, que falava pelo Que Dá em Koil, morreu dormindo, aos 56 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Loela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 216
 
-Na primavera do ano 216, Veor deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
+Na primavera do ano 216, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. A fome por causa da seca durou 24 dias em Viar e levou dezenove vidas.
 
 ### Ano 217
 
-No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No resto da região, a seca durou 19 dias. Vitamik tinha rezado: «Que Apaga o Sol, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Loar duvidou de que o Que Apaga o Sol tinha ouvido. O deus não tinha feito nada.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Koil passou fome no inverno por 9 dias, e 24 pessoas morreram. No outono, Lon acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 218
 
-No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+No verão do ano 218, com Tamela à frente, 23 pessoas deixaram Koil e fundaram Raon, no morro. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, houve luta no lago: Koil atacou Kurak em nome do Que Dá. Koil venceu e levou a comida guardada. Na luta morreram Maveos e Ruela. Do céu limpo, um raio caiu no lago e matou Vesaon. Em Kurak, disseram que era castigo. Vevea acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 219
 
-Na primavera, Modoela, que guiava Veor, morreu dormindo, aos 57 anos. Em Loar, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Na primavera do ano 219, Vipeon acordou se sentindo forte como nunca, sem saber por quê. O deus calou justo quando Kurak mais dependia dele. No verão, nasceu Kia, a primeira de Raon.
 
 ### Ano 220
 
-Na primavera, Demur, que falava pelo Que Apaga o Sol em Loar, morreu dormindo, aos 49 anos. No verão, em Loar, Vitamik tomou para si o cuidado das preces ao Que Apaga o Sol. No outono, Entame acordou se sentindo forte como nunca, sem saber por quê. Nasceu Videmali, filha de Tamya e Vitamik, com sangue de Loar e de Vian. Nos anos 211 a 220 houve quatro secas, cinco fomes, duas batalhas, 31 preces que pareceram atendidas e quinze preces sem resposta; nasceram 84 crianças e morreram 190 pessoas. No fim do ano 220, 142 pessoas viviam no mundo: Tamil (104), Veor (15), Vian (14) e Loar (9).
+Pela disse ter ouvido o deus de outro jeito: não era «o Que Dá», era «o Que Nega». Koil acreditou, e o deus mudou de nome. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Do céu limpo, um raio caiu na praia e matou Lobur. Em Viar, disseram que era castigo. No outono, Lolon acordou se sentindo forte como nunca, sem saber por quê. Começou a Sétima Guerra Santa: em nome do Que Nega, Koil pegou em lanças contra Viar. Nos anos 211 a 220 houve três secas, onze fomes, três batalhas e vinte preces que pareceram atendidas; nasceram 149 crianças e morreram 176 pessoas. No fim do ano 220, 199 pessoas viviam no mundo: Koil (81), Viar (33), Kurak (60) e Raon (25).
 
-*Do ano 221 ao 222, a vida seguiu sem grandes acontecimentos.*
+### Ano 221
+
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kokon tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 24 dias sem chuva no resto da região.
+
+### Ano 222
+
+De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Bere, de Viar, casou-se com Tamos e foi viver em Raon. Foi o primeiro laço entre os dois povos. Maon acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 223
 
-Na primavera do ano 223, Gae, que falava pela Estrela de Cauda em Tamil, morreu dormindo, aos 55 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Pekik tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra da Estrela de Cauda. Dessa vez, tinha sido mesmo o deus.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Kokon tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. A Sétima Guerra Santa seguiu: Koil contra Viar, na praia em nome do Que Nega. Viar expulsou os atacantes. Vela, Makoya, Tamtamik e Niela morreram na luta. Do céu limpo, um raio caiu na praia e matou Veloela. Em Viar, disseram que era castigo. A doença entrou em Koil e matou quatro pessoas.
 
 ### Ano 224
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Morreu Maos, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Kurak. Na Sétima Guerra Santa, Koil atacou Viar na praia em nome do Que Nega. Viar foi derrotado e perdeu o que tinha guardado. Mare e Bubu morreram na luta. Do céu limpo, um raio caiu na praia e matou Lo. Ninguém em Viar teve dúvida: era castigo. No inverno, na Sétima Guerra Santa, Koil atacou Viar na praia em nome do Que Nega. Viar foi derrotado e perdeu o que tinha guardado. Na luta morreram Dotamos, Kovera e Vios. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali.
 
 ### Ano 225
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Yoe acordou se sentindo forte como nunca, sem saber por quê.
+Vean, que falava pelo Que Nega em Koil, morreu de velhice aos 60 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Do céu limpo, um raio caiu na praia e matou Kurpe. Ninguém em Viar teve dúvida: era castigo. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 226
 
-No inverno do ano 226, Videmali acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Pekik tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra da Estrela de Cauda. Dessa vez, tinha sido mesmo o deus.
+Kos acordou se sentindo forte como nunca, sem saber por quê. No verão, Maron, o pacífico, desenhou o primeiro canal e a primeira roda d'água. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Sem nuvem nenhuma, um raio acertou Peya na praia. Em Viar, disseram que era castigo. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali.
 
 ### Ano 227
 
-Peselos, que falava pela Estrela de Cauda em Tamil, morreu de velhice aos 58 anos. Nunca perdoou o deus pela morte de Selselos. Em Vian, Selselya começou a pregar que o deus não era «o Que Levanta». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Vitamik acordou se sentindo forte como nunca, sem saber por quê.
+Kotamon, o pacífico, morreu dormindo, aos 62 anos. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Rutamon acordou se sentindo forte como nunca, sem saber por quê. Uma febre correu Viar e levou sete vidas. Depois da febre, Viar passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 228
 
-Na primavera do ano 228, Yoya acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Foram 3 dias de fome no inverno em Tamil, com um morto.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Kos acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 229
 
-Pekik, que falava pela Estrela de Cauda em Tamil, morreu de velhice aos 49 anos. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No resto da região, a seca durou 26 dias. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Na primavera, com canais e moinhos, Kurak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. A Sétima Guerra Santa esfriou sem acordo nem vencedor: nove anos, nove batalhas e vinte mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 230
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Selyoe acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Nos anos 221 a 230 houve três secas, cinco fomes e 27 preces que pareceram atendidas; nasceram 74 crianças e morreram 26 pessoas. No fim do ano 230, 190 pessoas viviam no mundo: Tamil (131), Veor (23), Vian (23) e Loar (13).
+Na primavera do ano 230, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kokon tinha rezado: «Que Nega, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Nega. Dessa vez, tinha sido mesmo o deus. Todos davam Saruya por morta. Ela se levantou, pediu água e sorriu. No verão, Tame deu à luz gêmeos, Pekour e Peur. Uns viram bênção; outros, mau sinal. O inverno foi de gelo: duas pessoas morreram de frio. Nos anos 221 a 230 houve quatro secas, doze fomes, sete batalhas, 29 preces que pareceram atendidas e quatro preces sem resposta; nasceram 141 crianças e morreram 84 pessoas. No fim do ano 230, 257 pessoas viviam no mundo: Koil (105), Viar (22), Kurak (93) e Raon (37).
 
 ### Ano 231
 
-Selselem, o curioso, morreu dormindo, aos 52 anos. Na guerra, tinha tirado três vidas. Tamyoe, que guiava Vian, morreu dormindo, aos 62 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, Veor atacou Tamil no lago em nome da Mãe da Fartura. Tamil expulsou os atacantes. Na luta morreram Mamae, Kaman e Tormaon. Sem nuvem nenhuma, um raio acertou Loselena no lago. Ninguém em Tamil teve dúvida: era castigo.
+Na primavera do ano 231, Kokon, o engenhoso, morreu de velhice aos 69 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Em nome do Que Nega, Kurkos proibiu casamentos e trocas com Raon. Era vontade de Kurkos, não do deus. No resto da região, a seca durou 19 dias.
 
 ### Ano 232
 
-Na primavera do ano 232, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Demvie pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Tamil deu graças à Estrela de Cauda. Dessa vez, tinha sido mesmo o deus.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. Sem lugar e sem comida, Kolou e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, houve luta no morro: Koil atacou Raon em nome do Que Nega. Raon expulsou os atacantes. Pepea, Dokurya e Loik morreram na luta. Do céu limpo, um raio caiu no morro e matou Tamos. Ninguém em Raon teve dúvida: era castigo. No outono, começou a Guerra Santa do Morro: em nome do Que Nega, Koil pegou em lanças contra Raon.
 
 ### Ano 233
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Petamur implorou pelo filho. Demmaem morreu, e daquele dia em diante Petamur cuspia no chão quando falavam da Estrela de Cauda. Uma tosse que não passava matou quatro pessoas em Tamil.
+Na primavera do ano 233, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Depois de um ano, três batalhas e sete mortos, a Guerra Santa do Morro terminou em paz. Sem nuvem nenhuma, um raio acertou Veniur na praia. Ninguém em Viar teve dúvida: era castigo. Começou a Quinta Guerra da Fome: Koil, com fome, foi buscar à força a comida de Viar. Tamveos acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 234
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Foram 5 dias de fome no inverno em Tamil, com dois mortos. Vevem rezou por Videme até a voz acabar. Videme morreu mesmo assim, e Vevem nunca mais rezou. A febre levou Vik, que falava pela Estrela de Cauda em Tamil.
+Lopeik, que guiava Viar, morreu de velhice aos 62 anos. Na guerra, tinha tirado três vidas. De um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. No inverno, Loe ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. A Quinta Guerra da Fome seguiu: Koil contra Viar, na praia. Viar foi derrotado e perdeu o que tinha guardado. Tamdora e Kurpeos morreram na luta. Depois de um ano, três batalhas e sete mortos, a Quinta Guerra da Fome terminou em paz. Koil saiu dela mais forte.
 
 ### Ano 235
 
-Na primavera do ano 235, Vie disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Que Acende o Céu». Tamil acreditou, e o deus mudou de nome. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No outono, Do céu limpo, um raio caiu na floresta e matou Ve. Ninguém em Veor teve dúvida: era castigo. Fazia muito tempo que Veor não rezava. Diante do que viu, voltou a chamar por «a Mãe da Fartura», e o templo encheu de novo.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Todos davam Dour por morto. Ele se levantou, pediu água e sorriu. Vekik implorou pela filha. Vedoya morreu, e daquele dia em diante Vekik cuspia no chão quando falavam do Que Nega. Koil passou fome no inverno por 8 dias, e 21 pessoas morreram. No outono, em nome do Que Nega, Kurkos proibiu casamentos e trocas com Raon. Era vontade de Kurkos, não do deus.
 
 ### Ano 236
 
-Na primavera do ano 236, Los, o curioso, morreu dormindo, aos 51 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamvela tinha rezado: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus.
+Na primavera do ano 236, Viviya partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Rurua tinha rezado: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Kurak viu nisso obra da Voz do Céu. Dessa vez, tinha sido mesmo o deus. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 237
 
-Na primavera do ano 237, morreu Tamvela, que falava pelo Que Acende o Céu em Tamil, aos 66 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Demhaela acordou se sentindo forte como nunca, sem saber por quê. Começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Veor. Do céu limpo, um raio caiu na floresta e matou Rago. Ninguém em Veor teve dúvida: era castigo.
+Vemarur, que guiava Kurak, morreu de velhice aos 56 anos. Kurak se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, sem nuvem nenhuma, um raio acertou Kios no morro. Ninguém em Raon teve dúvida: era castigo. Em Kurak, Vion tomou para si o cuidado das preces à Voz do Céu.
 
 ### Ano 238
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
+Na primavera do ano 238, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Kopeur acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 239
 
-Vepeik partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No outono, Vikik acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Peur acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Kurak atacou Viar na praia. Viar foi derrotado e perdeu o que tinha guardado. Na luta morreram Tampeu e Bu. Do céu limpo, um raio caiu na floresta e matou Kurik. Ninguém em Koil teve dúvida: era castigo.
 
 ### Ano 240
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Gao acordou se sentindo forte como nunca, sem saber por quê. A Décima Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte. A febre levou Loloya, a engenhosa. Os de Tamil caíram sobre Veor na floresta em nome do Que Acende o Céu. Veor foi derrotado e perdeu o que tinha guardado. Rataman, Veon e Mamaem morreram na luta. Nos anos 231 a 240 houve dez fomes, quatro batalhas, 37 preces que pareceram atendidas e sete preces sem resposta; nasceram 154 crianças e morreram 82 pessoas. No fim do ano 240, 252 pessoas viviam no mundo: Tamil (163), Veor (23), Vian (45) e Loar (21).
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Foram 9 dias de fome no inverno em Kurak, com seis mortos. No verão, começou a Sexta Guerra da Fome: Kurak, com fome, foi buscar à força a comida de Koil. Kurak e Koil, cansados de enterrar os seus, fizeram as pazes na floresta. A Sexta Guerra da Fome acabou em trégua, depois de um ano, duas batalhas e quatro mortos. Koil saiu dela mais forte. Nos anos 231 a 240 houve três secas, dezesseis fomes, onze batalhas, 47 preces que pareceram atendidas e onze preces sem resposta; nasceram 156 crianças e morreram 113 pessoas. No fim do ano 240, 284 pessoas viviam no mundo: Koil (106), Viar (17), Kurak (118) e Raon (43).
 
 ### Ano 241
 
-Na primavera, Gavio, que guiava Vian, morreu de repente, aos 43 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Loloya tinha rezado: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. Foram 11 dias de fome no inverno em Tamil, com quatro mortos.
+Na primavera do ano 241, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Pemaik tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. Vion rezou por Ruvea até a voz acabar. Ruvea morreu mesmo assim, e Vion nunca mais rezou. A doença entrou em Kurak e matou três pessoas. Kurkos anunciou que o Que Nega proibia qualquer trato com Viar. O deus nunca disse isso, mas Koil obedeceu.
 
 ### Ano 242
 
-Na primavera do ano 242, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Houve luta na praia: Tamil atacou Loar. Loar foi derrotado e perdeu o que tinha guardado. Mapena, Zeik e Vemoem morreram na luta. Para Loar, a praia virou Praia do Luto. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Morreu Tamu, a ambiciosa, aos 61 anos. De um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. Peik acordou se sentindo forte como nunca, sem saber por quê. Os de Koil caíram sobre Viar na praia em nome do Que Nega. Koil venceu e levou a comida guardada. Lodou e Viur morreram na luta. Do céu limpo, um raio caiu na praia e matou Kour, que guiava Viar. Em Viar, disseram que era castigo.
 
 ### Ano 243
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Houve luta no lago: Vian atacou Tamil em nome da Voz do Céu. Tamil expulsou os atacantes. Peo, Gatamem e Peveik morreram na luta. Depois de tantos mortos, Vian e Tamil se encontraram no lago e juraram paz. A fome por causa da seca durou 24 dias em Vian e levou dezoito vidas.
+Na primavera do ano 243, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, começou a Oitava Guerra Santa: em nome do Que Nega, Koil pegou em lanças contra Viar. Na Oitava Guerra Santa, Koil atacou Viar na praia. Viar expulsou os atacantes. Vetame, Makoik, Pekurik e Waraur morreram na luta. Depois de tantos mortos, Koil e Viar se encontraram na praia e juraram paz. A Oitava Guerra Santa acabou em trégua, depois de um ano, duas batalhas e seis mortos.
 
 ### Ano 244
 
-Na primavera, com lanças e promessas, Lomaur acabou com o conselho de Tamil e passou a mandar sozinho. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A doença entrou em Tamil e matou onze pessoas. No inverno, Petamur, que falava pelo Que Acende o Céu em Tamil, não resistiu à fome. Desde a morte de Demmaem, nunca mais tinha rezado.
+Na primavera do ano 244, Kurkos, que falava pelo Que Nega em Koil, morreu dormindo, aos 63 anos. Foi quem proibiu, em nome do deus, o trato com Raon. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kiloya ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. De novo Kurak contra Viar, como no ano 239. Viar foi derrotado e perdeu o que tinha guardado. Na luta morreram Bue, Tamtamik e Buviela.
 
 ### Ano 245
 
-Tamil escolheu Tamlos para guiar o grupo. Vevem queria o lugar e nunca perdoou. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, Tamil não esqueceu o ano 240 e atacou Veor outra vez. Tamil venceu e levou a comida guardada. Raveo e Kaik morreram na luta. Depois de tantos mortos, Tamil e Veor se encontraram na floresta e juraram paz.
+Na primavera do ano 245, de um dia para o outro, o morro transbordou de comida. A fome de Raon acabou ali. Kiloya acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Kurkure na floresta. Kurkure era das que mais rezavam, e Koil ficou sem entender. Começou a Guerra dos Irmãos: Kurak e Koil, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos acabou em trégua, depois de duas batalhas e quatro mortos.
 
 ### Ano 246
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Yoe deu à luz gêmeos, Gaena e Envik. Uns viram bênção; outros, mau sinal. Vevem implorou pelo filho. Makik morreu, e daquele dia em diante Vevem cuspia no chão quando falavam do Que Acende o Céu.
+Com lanças e promessas, Kon acabou com o conselho de Koil e passou a mandar sozinho. Vekik anunciou que o Que Nega proibia qualquer trato com Viar. O deus nunca disse isso, mas Koil obedeceu. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Koil passou fome no inverno por 9 dias, e 23 pessoas morreram. No inverno, Maur passou a guiar Viar, mas Bero não aceitou e guardou rancor.
 
 ### Ano 247
 
-Com Vitamik à frente, a nova geração de Loar abandonou o medo das tempestades, costume herdado dos avós. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A tempestade trouxe raios para o lago. Um deles acertou Viveur. Ninguém em Tamil teve dúvida: era castigo. Vem, o devoto, descobriu como empilhar pedras cortadas sem que caíssem.
+Na primavera do ano 247, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Raon comeu até cansar. Em Raon, Don pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Raon viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Em Raon, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
 ### Ano 248
 
-Sellos, que falava pelo Que Acende o Céu em Tamil, morreu de velhice aos 57 anos. Nunca perdoou o deus pela morte de Peik. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Pe tinha rezado: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus.
+Na primavera, Vion, que falava pela Voz do Céu em Kurak, morreu dormindo, aos 65 anos. Desde a morte de Ruvea, nunca mais tinha rezado. De um dia para o outro, o morro transbordou de comida. A fome de Raon acabou ali. Kurkuron acordou se sentindo forte como nunca, sem saber por quê. No verão, Vekik implorou pela filha. Kurtamu morreu, e daquele dia em diante Vekik cuspia no chão quando falavam do Que Nega.
 
 ### Ano 249
 
-Morreu Dodoan, o desconfiado, aos 60 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma febre correu Tamil e levou quatro vidas.
+Na primavera, em Kurak, Pekura começou a pregar que o deus não era «a Voz do Céu». Era «o Que Acende o Céu». Em poucos anos, todos rezavam assim. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, Kokora acordou se sentindo forte como nunca, sem saber por quê. No inverno, sem nuvem nenhuma, um raio acertou Buo na praia. Em Viar, disseram que era castigo. Os últimos de Raon, Vimaik, Maia e Makios, juntaram-se a Kurak. Raon deixou de existir.
 
 ### Ano 250
 
-Loyoena, que falava pela Voz do Céu em Vian, morreu de velhice aos 50 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamil passou fome no inverno por 9 dias, e três pessoas morreram. De novo Tamil contra Veor em nome do Que Acende o Céu, como no ano 245. Veor foi derrotado e perdeu o que tinha guardado. Taman e Tortamela morreram na luta. Do céu limpo, um raio caiu na floresta e matou Koela. Ninguém em Veor teve dúvida: era castigo. Nos anos 241 a 250 houve duas secas, doze fomes, quatro batalhas, 44 preces que pareceram atendidas e dez preces sem resposta; nasceram 157 crianças e morreram 138 pessoas. No fim do ano 250, 272 pessoas viviam no mundo: Tamil (164), Veor (35), Vian (43) e Loar (30).
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Kikiur acordou se sentindo forte como nunca, sem saber por quê. Começou a Nona Guerra Santa: em nome do Que Nega, Koil pegou em lanças contra Viar. Na Nona Guerra Santa, Koil atacou Viar na praia em nome do Que Nega. Viar expulsou os atacantes. Petamur e Doela morreram na luta. Sem nuvem nenhuma, um raio acertou Kurpe na praia. Ninguém em Viar teve dúvida: era castigo. Nos anos 241 a 250 houve duas secas, dezessete fomes, oito batalhas, 41 preces que pareceram atendidas e nove preces sem resposta; nasceram 176 crianças e morreram 250 pessoas. No fim do ano 250, 204 pessoas viviam no mundo: Koil (86), Viar (14) e Kurak (104).
 
 ### Ano 251
 
-Vevem, o ambicioso, morreu de velhice aos 60 anos. Desde a morte de Videme, nunca mais tinha rezado. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Pe pediu: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. O sol escureceu outra vez. Depois disso, Vian deixou de chamar o deus de «a Voz do Céu» e passou a chamá-lo de «o Olho Escuro».
+Na primavera, morreu Vekik, que falava pelo Que Nega em Koil, aos 58 anos. Desde a morte de Vedoya, nunca mais tinha rezado. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Na Nona Guerra Santa, Koil atacou Viar na praia em nome do Que Nega. Viar foi derrotado e perdeu o que tinha guardado. Na luta morreram Maur e Bero. Do céu limpo, um raio caiu na praia e matou Niberu. Em Viar, disseram que era castigo. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Viar perdeu o saber.
 
 ### Ano 252
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Faela acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, sem nuvem nenhuma, um raio acertou Peviela no lago. Em Tamil, disseram que era castigo. Começou a Décima Guerra Santa: em nome do Olho Escuro, Vian pegou em lanças contra Tamil. Depois de duas batalhas e cinco mortos, a Décima Guerra Santa terminou em paz. Tamil saiu dela mais forte.
+Na primavera do ano 252, Tamya, que falava pelo Que Acende o Céu em Kurak, morreu dormindo, aos 48 anos. Morreu o último que tinha visto o ano 95. Em Viar, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No inverno, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Dour pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 253
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Veor. A Décima Guerra Santa acabou em trégua, depois de três anos, duas batalhas e cinco mortos. Tamil saiu dela mais forte. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Sem nuvem nenhuma, um raio acertou Kagoe na floresta. Em Veor, disseram que era castigo.
+Na primavera do ano 253, Saur, que guiava Kurak, morreu dormindo, aos 61 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Sem nuvem nenhuma, um raio acertou Los na praia. Ninguém em Viar teve dúvida: era castigo. Dotamon acordou se sentindo forte como nunca, sem saber por quê. Com Marur à frente, 35 pessoas deixaram Kurak e fundaram Saum, no morro.
 
 ### Ano 254
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. A fome no inverno durou 8 dias em Tamil e levou quatro vidas. Os de Loar caíram sobre Tamil no lago. Tamil resistiu, e Loar voltou de mãos vazias. Na luta morreram Hae, Loya e Veik. Sem nuvem nenhuma, um raio acertou Selmaem no lago. Em Tamil, disseram que era castigo.
+Saum encontrou as ruínas de Raon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali.
 
 ### Ano 255
 
-Em nome do Que Apaga o Sol, Vitamik proibiu casamentos e trocas com Veor. Era vontade de Vitamik, não do deus. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Começou a Guerra dos Irmãos: Loar e Tamil, nascidos do mesmo povo, viraram inimigos. Do céu limpo, um raio caiu no lago e matou Demela. Em Tamil, disseram que era castigo.
+Na primavera do ano 255, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 24 dias sem chuva no resto da região.
 
 ### Ano 256
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Começou a Guerra da Floresta: o rancor entre Loar e Veor virou guerra. Na Guerra da Floresta, Loar atacou Veor na floresta em nome do Que Apaga o Sol. Veor resistiu, e Loar voltou de mãos vazias. Na luta morreram Lomae e Lovios. Do céu limpo, um raio caiu na floresta e matou Rao. Ninguém em Veor teve dúvida: era castigo.
+Na primavera do ano 256, na Nona Guerra Santa, Koil atacou Viar na praia. Viar foi derrotado e perdeu o que tinha guardado. Na luta morreram Vebur e Kiya. Koil e Viar, cansados de enterrar os seus, fizeram as pazes na praia. A Nona Guerra Santa acabou em trégua, depois de sete anos, sete batalhas e doze mortos. Koil saiu dela mais forte. De um dia para o outro, a praia transbordou de comida. A fome de Viar acabou ali. Pevie acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 257
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Sem nuvem nenhuma, um raio acertou Mapem no lago. Mapem era dos que mais rezavam, e Tamil ficou sem entender. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Começou a Décima Guerra Santa: em nome do Olho Escuro, Vian pegou em lanças contra Tamil.
+Em Saum, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Dour pediu: «Que Nega, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Nega. Dessa vez, tinha sido mesmo o deus. Mardoe acordou se sentindo forte como nunca, sem saber por quê. A fome no inverno durou 9 dias em Koil e levou dezenove vidas.
 
 ### Ano 258
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Viselur pediu: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. Doe acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, morreu Pekou, que falava pelo Que Nega em Koil, aos 62 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Nasceu Sar, filho de Marur, que guiava Saum.
 
 ### Ano 259
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamrae ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Os de Tamil caíram sobre Veor na floresta em nome do Que Acende o Céu. Veor foi derrotado e perdeu o que tinha guardado. Raela, Fatamo e Rae morreram na luta. Do céu limpo, um raio caiu na floresta e matou Tamvela. Em Veor, disseram que era castigo. A Guerra da Floresta esfriou sem acordo nem vencedor: seis anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Uma febre correu Kurak e levou quatro vidas. Desde a febre, Kurak não enterra mais ninguém: os mortos vão para o fogo. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 260
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Yoena acordou se sentindo forte como nunca, sem saber por quê. Veik teve um sonho que não sabia explicar, e acordou certo de que alguém tinha falado com ele. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. A Guerra dos Irmãos esfriou sem acordo nem vencedor: seis anos, três batalhas e onze mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte. No outono, a Décima Guerra Santa esfriou sem acordo nem vencedor: três anos, três batalhas e sete mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte. No inverno, Do céu limpo, um raio caiu no lago e matou Lomaos. Lomaos era dos que mais rezavam, e Tamil ficou sem entender. Nos anos 251 a 260 houve cinco secas, dezoito fomes, catorze batalhas, 66 preces que pareceram atendidas e 24 preces sem resposta; nasceram 144 crianças e morreram 162 pessoas. No fim do ano 260, 238 pessoas viviam no mundo: Tamil (164), Veor (41), Vian (18) e Loar (15).
+Morreu Maron, o pacífico, aos 56 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. A fome no inverno durou 9 dias em Koil e levou cinco vidas. Saruya teve um sonho estranho e não deu importância. Nos anos 251 a 260 houve duas secas, doze fomes, quatro batalhas e 29 preces que pareceram atendidas; nasceram 112 crianças e morreram 78 pessoas. No fim do ano 260, 238 pessoas viviam no mundo: Koil (107), Viar (8), Kurak (90) e Saum (33).
 
 ### Ano 261
 
-Na primavera, Selur, que falava pelo Que Acende o Céu em Tamil, morreu dormindo, aos 63 anos. Nunca perdoou o deus pela morte de Vikik. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Veor. A Décima Guerra Santa acabou em trégua, depois de dois anos, duas batalhas e cinco mortos. Tamil saiu dela mais forte. Yoe acordou se sentindo forte como nunca, sem saber por quê.
+Pepeon, de Kurak, tomou por esposa Tame, de Saum, e os dois povos passaram a se visitar. Saviya acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Dour tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 262
 
-Na primavera do ano 262, morreu Viselur, que falava pelo Que Acende o Céu em Tamil, aos 62 anos. Morreu o último que tinha visto o ano 211. Em Loar, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Sem lugar e sem comida, Vitamya e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Uma tosse que não passava matou oito pessoas em Tamil.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Vesae, de Saum, casou-se com Kios e foi viver em Koil. Foi o primeiro laço entre os dois povos. No inverno, Dopeu implorou pela filha. Doela morreu, e daquele dia em diante Dopeu cuspia no chão quando falavam do Que Nega.
 
 ### Ano 263
 
-Kilour partiu com três pessoas para além da borda do mundo. Nunca voltaram. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Começou a Décima Guerra Santa: em nome do Olho Escuro, Vian pegou em lanças contra Tamil. Sem nuvem nenhuma, um raio acertou Demselem no lago. Em Tamil, disseram que era castigo. Loena acordou se sentindo forte como nunca, sem saber por quê.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Todos davam Kokiu por morta. Ela se levantou, pediu água e sorriu.
 
 ### Ano 264
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Vela acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu na praia e matou Viali. Ninguém em Loar teve dúvida: era castigo. Para Loar, o deus já não era «o Que Apaga o Sol»: passou a ser «a Voz do Céu». No inverno, começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Loar.
+Na primavera do ano 264, em Saum, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No outono, a terra tremeu. Caíram 26 cabanas. Petamos, Kipeik, Kurviur, Kilon, Kik, Koya, Niela, Marik, Pepe e Dopeur morreram sob os escombros. A terra tremeu. Caíram 22 cabanas. Vimaela, Malour, Vitamos, Mapeya, Vesaya e Maron morreram sob os escombros. No inverno, Kokiu, a rancorosa, não resistiu à fome.
 
 ### Ano 265
 
-Na primavera do ano 265, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Depois disso, Vian deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Leva». De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A febre levou Ko, que guiava Veor. Momoe implorou pela filha. Tamena morreu, e daquele dia em diante Momoe cuspia no chão quando falavam do Que Leva.
+Depois de anos sob um só, Koil sentou-se em roda: dali em diante, decidia-se juntos. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. No outono, a tempestade trouxe raios para a praia. Um deles acertou Do. Em Viar, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Viar sai de casa. Lembram de Do.
 
 ### Ano 266
 
-A Décima Guerra Santa esfriou sem acordo nem vencedor: seis anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte. Houve luta na floresta: Tamil atacou Veor em nome do Que Acende o Céu. Veor foi derrotado e perdeu o que tinha guardado. Koe e Vipeur morreram na luta. Sem nuvem nenhuma, um raio acertou Tamrae na floresta. Tamrae era das que mais rezavam, e Veor ficou sem entender. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Na primavera do ano 266, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kove acordou se sentindo forte como nunca, sem saber por quê. A febre levou Kon, que guiava Koil. Na guerra, tinha tirado duas vidas. No verão, Koil rezou e não foi ouvido. Os mais firmes disseram que o Que Nega os estava testando, e se orgulharam de aguentar.
 
 ### Ano 267
 
-No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Veor. Depois da derrota, Veor não existia mais: os cinco que sobraram foram levados para Tamil. A Décima Guerra Santa terminou com a conquista: um ano, duas batalhas e quatro mortos. Do céu limpo, um raio caiu no lago e matou Tamselik. Ninguém em Tamil teve dúvida: era castigo. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Loar comeu até cansar. A Décima Guerra Santa esfriou sem acordo nem vencedor: três anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte.
+Na primavera do ano 267, Veruya morreu de velhice aos 49 anos. Nunca perdoou o deus pela morte de Vive. Marur, que fundou Saum e o guiava, morreu de repente, aos 44 anos. Foi quem levou os seus a fundar Saum. Saum deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Vidoya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 268
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Seltamena pediu: «Que Acende o Céu, dá-nos o que comer.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No resto da região, a seca durou 24 dias.
+Vekoela acordou se sentindo forte como nunca, sem saber por quê. No outono, a terra tremeu. Caíram dezenove cabanas. Vikurya, Tamkuron, Ruela, Koya, Vera, Mare, Pedoe, Sapeik e Maron morreram sob os escombros.
 
-### Ano 269
-
-Na primavera, morreu Yoik, que guiava Vian, aos 65 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Loar comeu até cansar. No inverno, começou a Décima Guerra Santa: em nome do Que Leva, Vian pegou em lanças contra Tamil. Tamil venceu Vian e levou os quatro sobreviventes para viver sob seu mando. Vian deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Décima Guerra Santa terminou com a conquista: dois anos, duas batalhas e três mortos.
+*O ano 269 passou sem nada que a crônica precise guardar.*
 
 ### Ano 270
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Do céu limpo, um raio caiu na praia e matou Zedeme. Logo Zedeme, que tanto rezava. Começou a Décima Guerra Santa: em nome do Que Acende o Céu, Tamil pegou em lanças contra Loar. Loar acabou: Moali e Demali foram viver em Tamil. No inverno, a Décima Guerra Santa acabou porque um dos lados deixou de existir: duas batalhas e três mortos. Nos anos 261 a 270 houve três secas, dez fomes, dez batalhas, 45 preces que pareceram atendidas e vinte preces sem resposta; nasceram 91 crianças e morreram 187 pessoas. No fim do ano 270, 133 pessoas viviam no mundo, todas em Tamil.
+Nos anos 261 a 270 houve seis fomes, 26 preces que pareceram atendidas e oito preces sem resposta; nasceram 148 crianças e morreram 205 pessoas. No fim do ano 270, 182 pessoas viviam no mundo: Koil (81), Viar (11), Kurak (76) e Saum (14).
 
 ### Ano 271
 
-Na primavera do ano 271, Tampeya, que guiava Tamil, morreu dormindo, aos 53 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Tamil já não cabia no lago. Pepeur, o rancoroso, levou 43 pessoas para a floresta e fundou Kikil. Para Kikil, as pedras de Veor só podiam ter sido postas por gigantes. Nas ruínas de Veor, Veselem achou o que eles sabiam: aprendeu a fazer canais.
+Com Peu à frente, Viar largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Veloya acordou se sentindo forte como nunca, sem saber por quê. Dos, que falava pelo Que Nega em Koil, morreu de frio. Na guerra, tinha tirado três vidas.
 
 ### Ano 272
 
-Na primavera do ano 272, Kikil encontrou as ruínas de Loar e disse que ali tinham vivido gigantes.
+Em Kurak, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Acende o Céu». Com Peu à frente, Viar largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido.
 
-### Ano 273
-
-Morreu Seltamur, que falava pelo Que Acende o Céu em Tamil, aos 64 anos. Nunca perdoou o deus pela morte de Mae. Vetamena passou dias nas ruínas de Veor e voltou sabendo fazer canais. No inverno, com canais e moinhos, Kikil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Os sábios de Kikil passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Em Kikil, Mavie tomou para si o cuidado das preces ao Que Acende o Céu.
+*No ano 273, nada de notável aconteceu.*
 
 ### Ano 274
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Pem tinha rezado: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamil viu nisso obra do Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Em Kikil nasceu a primeira criança: Haloya, filha de Vekiela e Peos.
+Vevik acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 275
 
-Na primavera, morreu Selselya, a curiosa, aos 71 anos. Kiur acordou se sentindo forte como nunca, sem saber por quê. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Ninguém lembrava mais a razão, e Viar abandonou a festa da chuva. Tamela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 276
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Moali, de Tamil, casou-se com Pepeur e foi viver em Kikil. Foi o primeiro laço entre os dois povos.
+Saon, que guiava Kurak, morreu de velhice aos 48 anos. Peur passou a guiar Kurak, mas Vevela não aceitou e guardou rancor. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Tammaur pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 277
 
-No inverno, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Em Tamil, Seltamena pediu: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Que Acende o Céu. Dessa vez, tinha sido mesmo o deus.
+Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Viar comeu até cansar. O que aconteceu não tinha explicação. Em Viar, os que zombavam das preces foram os primeiros a ajoelhar. Para Viar, o deus já não era «o Senhor do Trovão»: passou a ser «o Que Dá». Kidon tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Viar viu nisso obra do Que Dá. O deus não tinha feito nada. Nas tabuletas de Viar, ficou escrito que foi o Que Dá.
 
 ### Ano 278
 
-Morreu Seltamena, que falava pelo Que Acende o Céu em Tamil, aos 62 anos. Pem, o pacífico, morreu dormindo, aos 60 anos. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Koil passou fome no inverno por 3 dias, e uma pessoa morreu.
 
 ### Ano 279
 
-No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No inverno, Saena acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar.
+Na primavera do ano 279, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar.
 
 ### Ano 280
 
-Uma febre correu Tamil e levou cinco vidas. No verão, com Moali à frente, 33 pessoas deixaram Kikil e fundaram Goar, na praia. Em Kikil, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. No inverno, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Nos anos 271 a 280 houve duas secas, cinco fomes e 22 preces que pareceram atendidas; nasceram 101 crianças e morreram 39 pessoas. No fim do ano 280, 195 pessoas viviam no mundo: Tamil (137), Kikil (24) e Goar (34).
+Na primavera, morreu Sarur, que falava pelo Que Acende o Céu em Kurak, aos 60 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Kitamya deu à luz gêmeos, Kopeu e Tamdour. Uns viram bênção; outros, mau sinal. Nos anos 271 a 280 houve seis fomes e doze preces que pareceram atendidas; nasceram 114 crianças e morreram 44 pessoas. No fim do ano 280, 253 pessoas viviam no mundo: Koil (101), Viar (16), Kurak (114) e Saum (22).
 
 ### Ano 281
 
-Na primavera do ano 281, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Lotamya, a engenhosa, cansou de dividir pouca comida. Partiu com 23 pessoas para o morro e ali fundou Mamil. Mamil encontrou as ruínas de Veor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Mamil encontrou as ruínas de Vian. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Tamselem passou a falar pelo Que Acende o Céu em Mamil. Era o primeiro a rezar e o último a duvidar.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. Vemaos partiu com oito pessoas para além da borda do mundo. Nunca voltaram. Loveo passou dias nas ruínas de Demem e voltou sabendo cortar pedra. No verão, Tammaur rezou por Mave até a voz acabar. Mave morreu mesmo assim, e Tammaur nunca mais rezou.
 
 ### Ano 282
 
-Na primavera do ano 282, Selvios, o ambicioso, morreu dormindo, aos 48 anos. Na guerra, tinha tirado duas vidas. Nasceu Yobuena, filha de Moali, que guiava Goar. No verão, Selya, de Tamil, casou-se com Loem e foi viver em Mamil. Foi o primeiro laço entre os dois povos. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Koil atacou Saum no morro. Saum expulsou os atacantes. Vikuru, Vikuron e Kuros morreram na luta. Para Saum, o morro virou Morro da Vitória. Koil e Saum, cansados de enterrar os seus, fizeram as pazes no morro.
 
 ### Ano 283
 
-Maem, que guiava Tamil, morreu dormindo, aos 56 anos. O templo de Mamil ficou mais forte que o líder. Tamselem, que falava pelo Que Acende o Céu, passou a decidir tudo. Com Tamos à frente, a nova geração de Kikil abandonou o treino com lanças, costume herdado dos avós. Vevena acordou se sentindo forte como nunca, sem saber por quê. Nasceu Selselos, filho de Tamselem, que guiava Mamil.
+Na primavera do ano 283, de um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. Kursae ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. No verão, Loveo passou dias nas ruínas de Demem e voltou sabendo cortar pedra.
 
 ### Ano 284
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Kivik pediu: «Que Acende o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamil deu graças ao Que Acende o Céu. Dessa vez, tinha sido mesmo o deus. Um raio caiu no morro durante a tempestade e matou Matamo. Os seus nunca esqueceram. Desde aquele dia, Mamil chama o morro de Morro do Raio.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Houve luta na praia: Kurak atacou Viar. Kurak venceu e levou a comida guardada. Na luta morreram Loveo, Peu, Tamvios e Peruon. Sem nuvem nenhuma, um raio acertou Ruveur no morro. Em Saum, disseram que era castigo. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 285
 
-Na primavera, Vipeik, o curioso, morreu dormindo, aos 73 anos. Em Mamil, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali.
+Na primavera, Tammaur, o corajoso, morreu de velhice aos 63 anos. Desde a morte de Mave, nunca mais tinha rezado. Doya acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Começou a Sétima Guerra da Fome: Kurak, com fome, foi buscar à força a comida de Saum. Sem nuvem nenhuma, um raio acertou Aria no morro. Em Saum, disseram que era castigo.
 
 ### Ano 286
 
-Na primavera do ano 286, com Tamos à frente, a nova geração de Kikil abandonou o costume de queimar os mortos, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Em Tamil, Kivik pediu: «Que Acende o Céu, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Que Acende o Céu. Dessa vez, tinha sido mesmo o deus.
+Depois de anos sob um só, Kurak sentou-se em roda: dali em diante, decidia-se juntos. A Sétima Guerra da Fome seguiu: Kurak contra Saum, no morro. Saum foi derrotado e perdeu o que tinha guardado. Na luta morreram Kursa e Saur. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Do céu limpo, um raio caiu no morro e matou Pevie. Ninguém em Saum teve dúvida: era castigo.
 
 ### Ano 287
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Kurak comeu até cansar. Foram 9 dias de fome no inverno em Kurak, com dois mortos. Kiveik tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Koil, ficou escrito que foi o Que Nega. No inverno, Pedoik, o corajoso, não resistiu à fome.
 
 ### Ano 288
 
-Morreu Tamos, que guiava Kikil, aos 50 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, a terra tremeu. Caíram 23 cabanas. Lovios, Loselik, Mamaela, Saela, Demmaela, Mavena e Selan morreram sob os escombros. O inverno foi de gelo: quatro pessoas morreram de frio.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Pedoik tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 9 dias em Koil e levou 25 vidas. No inverno, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito.
 
 ### Ano 289
 
-Na primavera, Lour disse ter ouvido o deus de outro jeito: não era «o Que Acende o Céu», era «o Que Levanta». Tamil acreditou, e o deus mudou de nome. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Foram 8 dias de fome no inverno em Tamil, com seis mortos. Sem lugar e sem comida, Dempeik e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Na primavera, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Kurak perdeu o saber. De um dia para o outro, o lago transbordou de comida. A fome de Kurak acabou ali. A Sétima Guerra da Fome esfriou sem acordo nem vencedor: cinco anos, três batalhas e seis mortos, e ninguém sabia mais por que lutava. Sem nuvem nenhuma, um raio acertou Peko na praia. Em Viar, disseram que era castigo. Dokiur acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 290
 
-Na primavera do ano 290, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Os de Tamil caíram sobre Kikil na floresta. Kikil foi derrotado e perdeu o que tinha guardado. Na luta morreram Demela, Tamem, Veselik e Viya. Sem nuvem nenhuma, um raio acertou Vetamena na floresta. Em Kikil, disseram que era castigo. No verão, começou a Terceira Guerra da Fome: Tamil, com fome, foi buscar à força a comida de Kikil. Nos anos 281 a 290 houve treze fomes, duas batalhas, 32 preces que pareceram atendidas e três preces sem resposta; nasceram 140 crianças e morreram 70 pessoas. No fim do ano 290, 262 pessoas viviam no mundo: Tamil (170), Kikil (34), Goar (33) e Mamil (25).
+Em Kurak, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 187, só a crônica guarda. Pedon acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Houve luta no morro: Koil atacou Saum. Koil venceu e levou a comida guardada. Veik morreu na luta. Koil e Saum, cansados de enterrar os seus, fizeram as pazes no morro. Nos anos 281 a 290 houve dezoito fomes, nove batalhas, 22 preces que pareceram atendidas e sete preces sem resposta; nasceram 127 crianças e morreram 246 pessoas. No fim do ano 290, 127 pessoas viviam no mundo: Koil (93), Viar (12), Kurak (10) e Saum (12).
 
 ### Ano 291
 
-Na primavera do ano 291, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. A Terceira Guerra da Fome seguiu: Kikil contra Tamil, no lago. Tamil resistiu, e Kikil voltou de mãos vazias. Pevios, Demmaik e Selloik morreram na luta. Sem nuvem nenhuma, um raio acertou Tamela na floresta. Ninguém em Kikil teve dúvida: era castigo. No outono, Veloem acordou se sentindo forte como nunca, sem saber por quê. O deus não respondia, e Kikil achou que a culpa era sua: tinham feito algo errado. Procuraram uma culpada e acharam Vekiela, que duvidava.
+Na primavera do ano 291, de um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Veberela acordou se sentindo forte como nunca, sem saber por quê. Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu.
 
 ### Ano 292
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Kis acordou se sentindo forte como nunca, sem saber por quê. No inverno, Kiviela, que falava pelo Que Levanta em Tamil, não resistiu à fome.
+Dokion acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
 
 ### Ano 293
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Tamil atacou Mamil no morro. Tamil venceu e levou a comida guardada. Na luta morreram Vivios, Selya e Veve. Sem nuvem nenhuma, um raio acertou Peik no morro. Logo Peik, que tanto rezava. Nasceu ali um costume: quando o céu escurece, ninguém em Mamil sai de casa. Lembram de Peik. Beik acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
 
 ### Ano 294
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. No verão, Veenela acordou se sentindo forte como nunca, sem saber por quê. A Terceira Guerra da Fome esfriou sem acordo nem vencedor: quatro anos, três batalhas e dez mortos, e ninguém sabia mais por que lutava. Tamil saiu dela mais forte. No inverno, começou a Quarta Guerra da Fome: Tamil, com fome, foi buscar à força a comida de Mamil. Do céu limpo, um raio caiu no morro e matou Loem. Ninguém em Mamil teve dúvida: era castigo.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar.
 
 ### Ano 295
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Foram 15 dias de fome no inverno em Tamil, com sete mortos. Em nome do Que Acende o Céu, Tamselem proibiu casamentos e trocas com Tamil. Era vontade de Tamselem, não do deus. No outono, a guerra entre Kikil e Tamil continuou: Kikil voltou a atacar no lago. Tamil expulsou os atacantes. Na luta morreram Enbena, Saena, Selkiela e Vevena. Kikil e Tamil, cansados de enterrar os seus, fizeram as pazes no lago.
+Na primavera do ano 295, Kos, que guiava Koil, morreu de velhice aos 59 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Gavik acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 296
 
-Na primavera, morreu Kivik, que falava pelo Que Levanta em Tamil, aos 63 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Sem lugar e sem comida, Peya e os seus atravessaram a borda do mundo. Ninguém soube deles. A Quarta Guerra da Fome seguiu: Mamil contra Tamil, no lago em nome do Que Acende o Céu. Mamil venceu e levou a comida guardada. Vipeos e Raon morreram na luta. Um raio sem nuvem acertou Tamselem, que guiava Mamil, diante de todos. Ninguém em Mamil teve dúvida: era castigo.
+Na primavera, Kurveur, que guiava Saum, morreu dormindo, aos 52 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a floresta transbordou de comida. A fome de Koil acabou ali. Em Koil, Veon pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. No verão, o sol escureceu outra vez. Nas ruínas de Demem, Ko achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 297
 
-Lodeme partiu com três pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Maselan, de Goar, tomou por esposa Pela, de Mamil, e os dois povos passaram a se visitar. Goar atacou Tamil no lago em nome do Que Acende o Céu. Tamil resistiu, e Goar voltou de mãos vazias. Na luta morreram Kiveya e Maena. Do céu limpo, um raio caiu no lago e matou Maur. Em Tamil, disseram que era castigo.
+Na primavera, Loik partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Em Koil, Veon pediu: «Que Nega, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Nega. Dessa vez, tinha sido mesmo o deus. Em Kurak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 298
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. Pekiem tinha rezado: «Que Levanta, dá-nos o que comer.» A comida voltou, e Tamil deu graças ao Que Levanta. Dessa vez, tinha sido mesmo o deus. Uma febre correu Tamil e levou cinco vidas.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. No verão, Vela acordou se sentindo forte como nunca, sem saber por quê. Nas ruínas de Demem, Ko achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 299
 
-De um dia para o outro, o lago transbordou de comida. A fome de Tamil acabou ali. Bela ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Sem nuvem nenhuma, um raio acertou Selvie no morro. Ninguém em Mamil teve dúvida: era castigo. Começou a Décima Guerra Santa: em nome do Que Acende o Céu, Goar pegou em lanças contra Tamil. A Quarta Guerra da Fome acabou em trégua, depois de seis anos, cinco batalhas e doze mortos. Tamil saiu dela mais forte.
+Na primavera do ano 299, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. Foram 8 dias de fome no inverno em Koil, com dois mortos.
 
 ### Ano 300
 
-O templo de Goar ficou mais forte que o líder. Mavie, que falava pelo Que Acende o Céu, passou a decidir tudo. Goar e Kikil fizeram as pazes na floresta, antes que a briga crescesse. Para Goar, a floresta virou Floresta da Trégua. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Tamil comeu até cansar. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Nos anos 291 a 300 houve dezoito fomes, doze batalhas, 47 preces que pareceram atendidas e catorze preces sem resposta; nasceram 153 crianças e morreram 154 pessoas. No fim do ano 300, 250 pessoas viviam no mundo: Tamil (166), Kikil (29), Goar (36) e Mamil (19).
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Koil comeu até cansar. A fome no inverno durou 8 dias em Koil e levou duas vidas. Nos anos 291 a 300 houve dez fomes e 25 preces que pareceram atendidas; nasceram 102 crianças e morreram 32 pessoas. No fim do ano 300, 192 pessoas viviam no mundo: Koil (137), Viar (13), Kurak (33) e Saum (9).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Tamil** vive no lago, com 166 pessoas, com canais e moinhos; nasceu de uma migração em Koil no ano 14; chama o deus de «o Que Levanta»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 118); não sai de casa em dia de tempestade (desde o ano 144); treina os jovens com lanças (desde o ano 155).
-- **Kikil** vive na floresta, com 29 pessoas, com canais e moinhos; nasceu de uma migração em Tamil no ano 271; chama o deus de «o Que Acende o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 144); deixa oferendas no começo de cada estação (desde o ano 291).
-- **Goar** vive na praia, com 36 pessoas, com canais e moinhos; nasceu de uma migração em Kikil no ano 280; chama o deus de «o Que Acende o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 118); não sai de casa em dia de tempestade (desde o ano 144); treina os jovens com lanças (desde o ano 155).
-- **Mamil** vive no morro, com 19 pessoas, com canais e moinhos; nasceu de uma migração em Tamil no ano 281; chama o deus de «o Que Acende o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 118); treina os jovens com lanças (desde o ano 155); não sai de casa em dia de tempestade (desde o ano 293).
+- **Koil** vive na floresta, com 137 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Que Nega»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 144); treina os jovens com lanças (desde o ano 181); não sai de casa em dia de tempestade (desde o ano 239).
+- **Viar** vive na praia, com 13 pessoas, e planta roças; nasceu de uma migração em Koil no ano 122; chama o deus de «a Voz do Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 265); treina os jovens com lanças (desde o ano 284); faz a festa da chuva (desde o ano 284).
+- **Kurak** vive no lago, com 33 pessoas, em casas de pedra; nasceu de uma migração em Koil no ano 179; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (desde o ano 259).
+- **Saum** vive no morro, com 9 pessoas, com canais e moinhos; nasceu de uma migração em Kurak no ano 253; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 266); treina os jovens com lanças (desde o ano 284); não sai de casa em dia de tempestade (desde o ano 284).
 
-Povos que deixaram de existir: Koil, Demem, Toes, Tamur, Veor, Tamem, Vian e Loar.
+Povos que deixaram de existir: Tamil, Demem, Suem, Daon, Eses, Esem, Peur, Loan e Raon.
 
-Lugares com nome: Praia da Vitória (praia, para Demem), Praia do Luto (praia, para Tamil), Praia da Fartura (praia, para Tamur), Praia do Raio (praia, para Tamem), Praia do Luto (praia, para Loar), Praia da Fome (praia, para Goar), Lago do Raio (lago, para Tamil), Lago do Luto (lago, para Tamem), Lago do Luto (lago, para Veor), Lago do Luto (lago, para Vian), Lago do Luto (lago, para Loar), Lago do Luto (lago, para Kikil), Lago do Luto (lago, para Goar), Lago da Vitória (lago, para Mamil), Floresta da Chuva (floresta, para Koil), Floresta do Luto (floresta, para Demem), Floresta do Luto (floresta, para Tamur), Floresta do Raio (floresta, para Veor), Floresta da Vitória (floresta, para Tamil), Floresta do Luto (floresta, para Vian), Floresta da Vitória (floresta, para Loar), Floresta do Luto (floresta, para Kikil), Floresta da Trégua (floresta, para Goar), Morro da Fartura (morro, para Vian), Morro da Vitória (morro, para Tamil), Morro da Vitória (morro, para Veor), Morro da Trégua (morro, para Tamem) e Morro do Raio (morro, para Mamil).
+Lugares com nome: Praia da Vitória (praia, para Demem), Praia do Luto (praia, para Tamil), Praia do Luto (praia, para Daon), Praia da Vitória (praia, para Viar), Praia da Vitória (praia, para Eses), Praia da Vitória (praia, para Koil), Praia da Vitória (praia, para Kurak), Lago do Raio (lago, para Tamil), Lago da Trégua (lago, para Koil), Lago do Luto (lago, para Demem), Lago da Trégua (lago, para Eses), Lago da Trégua (lago, para Esem), Lago do Luto (lago, para Peur), Lago do Luto (lago, para Kurak), Lago da Vitória (lago, para Viar), Floresta da Chuva (floresta, para Koil), Floresta da Trégua (floresta, para Suem), Floresta do Luto (floresta, para Demem), Floresta do Luto (floresta, para Tamil), Floresta da Vitória (floresta, para Eses), Floresta do Luto (floresta, para Peur), Floresta do Luto (floresta, para Viar), Floresta do Luto (floresta, para Kurak), Morro do Raio (morro, para Suem), Morro da Vitória (morro, para Demem), Morro do Raio (morro, para Daon), Morro das Águas (morro, para Eses), Morro do Luto (morro, para Esem), Morro do Raio (morro, para Loan), Morro da Vitória (morro, para Koil), Morro da Vitória (morro, para Viar), Morro da Vitória (morro, para Raon), Morro da Vitória (morro, para Saum) e Morro da Vitória (morro, para Kurak).
 
-Em 300 anos nasceram 3038 pessoas e morreram 2716.
+Em 300 anos nasceram 2986 pessoas e morreram 2764.

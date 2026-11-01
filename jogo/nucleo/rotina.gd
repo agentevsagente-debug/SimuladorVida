@@ -20,6 +20,11 @@ const PRIORIDADE_CENA := ["guerra", "funeral", "migracao", "casamento", "festa",
 	"construcao", "colheita", "prece"]
 
 ## O mundo, por referência fraca: o mundo guarda a rotina do dia em cache.
+## Tipos de evento que viram cena no próprio dia: se aparecem, a rotina é refeita.
+const GERAM_CENA := ["ataque", "separacao", "mudanca", "casamento", "casamento_entre_grupos", "nascimento",
+	"estagio", "agricultura", "tempestade", "terremoto", "terremoto_divino", "diluvio"]
+
+var eventos_vistos: int = 0
 var m:
 	get:
 		return _wm.get_ref()
@@ -42,9 +47,29 @@ func _init(mundo, p_dia: int) -> void:
 		ctx[g.id] = _contexto(g)
 	_montar_cenas()
 	_montar_vida_social()
+	# Os planos são montados aos poucos, de madrugada (veja preparar), ou na hora em que
+	# alguém precisa deles: assim a virada do dia não custa tudo de uma vez.
+
+
+## Monta os planos de até `n` pessoas que ainda não têm. Chamado nas horas em que todos
+## dormem, para espalhar o custo do dia.
+func preparar(n: int) -> void:
 	for g in m.grupos_vivos():
 		for id in g.membros:
-			planos[id] = _plano(m.pessoas[id], g)
+			if n <= 0:
+				return
+			if not linhas.has(id):
+				_linha(id)
+				n -= 1
+
+
+## Onde a pessoa dorme: a casa dela. Não precisa do plano.
+func casa_de(pid: int) -> float:
+	var p = m.pessoas[pid]
+	var g = m.grupo(p.grupo)
+	if not ctx.has(g.id):
+		ctx[g.id] = _contexto(g)
+	return maxf(_casa(p, ctx[g.id]), Cotidiano.MARGEM)
 
 
 # ---------------------------------------------------------------- lugares
@@ -509,38 +534,45 @@ func _montar_vida_social() -> void:
 
 # ---------------------------------------------------------------- plano de cada pessoa
 
+var _sorte_id := 0
+var _sorte_k := 0
+
+
+## Próximo número da sequência fixa da pessoa no dia.
+func _sorte() -> float:
+	_sorte_k += 1
+	return ruido(_sorte_id, dia, _sorte_k)
+
+
 ## As tarefas do dia, em ordem: cada uma é {x, acao, dur, ida}. Variam por pessoa e por dia.
 func _tarefas(p, g, c: Dictionary) -> Array:
 	var r: Array = []
 	var idade: int = p.idade(m.ano())
-	var k := [0]   # lambdas copiam valores; o array é compartilhado
-	var sorte := func() -> float:
-		k[0] += 1
-		return ruido(p.id, dia, 300 + k[0])
+	_sorte_id = p.id
+	_sorte_k = 300
 	if idade < 12:
 		# Crianças mais velhas às vezes acompanham a lida perto de casa.
 		for i in 12:
-			r.append({"x": c["fogo"] + (sorte.call() - 0.5) * 50.0, "acao": "parado" if sorte.call() < 0.5 else "colher", "dur": 20.0 + sorte.call() * 30.0})
+			r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "parado" if _sorte() < 0.5 else "colher", "dur": 20.0 + _sorte() * 30.0})
 		return r
 	if idade > 60:
 		# Os velhos ficam perto do fogo, dão voltas curtas e conversam.
 		for i in 8:
-			r.append({"x": _lugar_fogo(p, c), "acao": "fogueira", "dur": 40.0 + sorte.call() * 50.0})
-			if sorte.call() < 0.5:
-				r.append({"x": c["fogo"] + (sorte.call() - 0.5) * 50.0, "acao": "conversar" if sorte.call() < 0.5 else "parado", "dur": 10.0 + sorte.call() * 15.0})
+			r.append({"x": _lugar_fogo(p, c), "acao": "fogueira", "dur": 40.0 + _sorte() * 50.0})
+			if _sorte() < 0.5:
+				r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "conversar" if _sorte() < 0.5 else "parado", "dur": 10.0 + _sorte() * 15.0})
 		return r
 	var menu: Array = []    # [peso, construtor]
 	var trab: Array = c["trabalho"]
-	var perto := func(x0: float, raio: float, lim: Array) -> float:
-		return clampf(x0 + (sorte.call() - 0.5) * raio * 2.0, lim[0] + 3.0, lim[1] - 3.0)
+
 	# Coletar num percurso de arbustos.
 	menu.append([3.0 if g.estagio <= 2 else 1.0, "coletar"])
-	if g.zona == "lago" or g.zona == "praia" or sorte.call() < 0.15:
+	if g.zona == "lago" or g.zona == "praia" or _sorte() < 0.15:
 		menu.append([2.5, "pescar"])
 	menu.append([1.5, "lenha"])
 	if g.estagio >= 2 and not c["rocas"].is_empty():
 		menu.append([3.0, "roca"])
-	if p.tem("engenhoso") or (g.estagio >= 3 and sorte.call() < 0.3):
+	if p.tem("engenhoso") or (g.estagio >= 3 and _sorte() < 0.3):
 		menu.append([1.5, "construir"])
 	if g.estagio >= 4 and c["forja"] >= 0.0 and (p.saberes.has("metal") or p.tem("engenhoso")):
 		menu.append([3.0, "forjar"])
@@ -555,13 +587,13 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 	if g.lider == p.id:
 		menu.append([2.5, "visitar"])
 	# De 2 a 4 atividades no dia, repetidas em ciclos até encher a jornada.
-	var n := 2 + int(sorte.call() * 3.0)
+	var n := 2 + int(_sorte() * 3.0)
 	var escolhidas: Array = []
 	for i in n:
 		var total := 0.0
 		for op in menu:
 			total += op[0]
-		var s: float = sorte.call() * total
+		var s: float = _sorte() * total
 		var escolha: String = menu[-1][1]
 		for op in menu:
 			s -= op[0]
@@ -573,39 +605,39 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 		var escolha: String = escolhidas[i % n]
 		match escolha:
 			"coletar":
-				for j in 2 + int(sorte.call() * 2.0):
-					r.append({"x": perto.call(c["fogo"], 45.0, trab), "acao": "colher", "dur": 20.0 + sorte.call() * 25.0})
+				for j in 2 + int(_sorte() * 2.0):
+					r.append({"x": clampf(c["fogo"] + (_sorte() - 0.5) * 90.0, trab[0] + 3.0, trab[1] - 3.0), "acao": "colher", "dur": 20.0 + _sorte() * 25.0})
 			"pescar":
-				r.append({"x": c["margem"] + sorte.call() * 6.0, "acao": "pescar", "dur": 60.0 + sorte.call() * 70.0, "virado": -1})
+				r.append({"x": c["margem"] + _sorte() * 6.0, "acao": "pescar", "dur": 60.0 + _sorte() * 70.0, "virado": -1})
 			"lenha":
-				r.append({"x": c["mata"] + (sorte.call() - 0.5) * 30.0, "acao": "colher", "dur": 20.0 + sorte.call() * 20.0})
+				r.append({"x": c["mata"] + (_sorte() - 0.5) * 30.0, "acao": "colher", "dur": 20.0 + _sorte() * 20.0})
 				r.append({"x": _casa(p, c) + 5.0, "acao": "parado", "dur": 6.0, "ida": "lenha"})
 			"roca":
-				var roca: float = c["rocas"][int(sorte.call() * c["rocas"].size())]
+				var roca: float = c["rocas"][int(_sorte() * c["rocas"].size())]
 				for j in 2:
-					r.append({"x": roca + (sorte.call() - 0.5) * 14.0, "acao": "colher", "dur": 35.0 + sorte.call() * 30.0})
+					r.append({"x": roca + (_sorte() - 0.5) * 14.0, "acao": "colher", "dur": 35.0 + _sorte() * 30.0})
 				if c["celeiro"] >= 0.0:
 					r.append({"x": c["celeiro"], "acao": "parado", "dur": 6.0, "ida": "lenha"})
 			"construir":
-				var alvo: float = c["casas"][int(sorte.call() * c["casas"].size())] if not c["casas"].is_empty() else c["fogo"] + 14.0
-				r.append({"x": alvo + 6.0, "acao": "construir", "dur": 50.0 + sorte.call() * 50.0, "virado": -1})
+				var alvo: float = c["casas"][int(_sorte() * c["casas"].size())] if not c["casas"].is_empty() else c["fogo"] + 14.0
+				r.append({"x": alvo + 6.0, "acao": "construir", "dur": 50.0 + _sorte() * 50.0, "virado": -1})
 			"forjar":
-				r.append({"x": c["forja"] + 4.0, "acao": "forjar", "dur": 90.0 + sorte.call() * 90.0, "virado": -1})
+				r.append({"x": c["forja"] + 4.0, "acao": "forjar", "dur": 90.0 + _sorte() * 90.0, "virado": -1})
 			"escrever":
-				r.append({"x": c["arquivo"] + (sorte.call() - 0.5) * 10.0, "acao": "escrever", "dur": 90.0 + sorte.call() * 90.0})
+				r.append({"x": c["arquivo"] + (_sorte() - 0.5) * 10.0, "acao": "escrever", "dur": 90.0 + _sorte() * 90.0})
 			"remar":
 				r.append({"x": c["margem"], "acao": "parado", "dur": 5.0})
-				r.append({"x": c["barco"] - 4.0 + sorte.call() * 8.0, "acao": "remar", "dur": 60.0 + sorte.call() * 60.0, "ida": "remar"})
+				r.append({"x": c["barco"] - 4.0 + _sorte() * 8.0, "acao": "remar", "dur": 60.0 + _sorte() * 60.0, "ida": "remar"})
 			"explorar":
-				var borda: float = Cotidiano.MARGEM + 3.0 if sorte.call() < 0.5 else Cotidiano.LARGURA_MUNDO - 6.0
-				r.append({"x": borda, "acao": "parado", "dur": 15.0 + sorte.call() * 20.0})
+				var borda: float = Cotidiano.MARGEM + 3.0 if _sorte() < 0.5 else Cotidiano.LARGURA_MUNDO - 6.0
+				r.append({"x": borda, "acao": "parado", "dur": 15.0 + _sorte() * 20.0})
 			"altar":
-				r.append({"x": c["altar"] + (sorte.call() - 0.5) * 6.0, "acao": "rezar", "dur": 20.0 + sorte.call() * 20.0})
+				r.append({"x": c["altar"] + (_sorte() - 0.5) * 6.0, "acao": "rezar", "dur": 20.0 + _sorte() * 20.0})
 			"visitar":
 				for lugar in [c["rocas"][0] if not c["rocas"].is_empty() else c["mata"], c["forja"] if c["forja"] >= 0.0 else c["margem"], c["fogo"] - 20.0]:
-					r.append({"x": lugar + 3.0, "acao": "conversar", "dur": 12.0 + sorte.call() * 10.0})
-		if r.size() > 1 and sorte.call() < 0.6:
-			r.append({"x": -1.0, "acao": "parado", "dur": 5.0 + sorte.call() * 10.0})   # pausa onde estiver
+					r.append({"x": lugar + 3.0, "acao": "conversar", "dur": 12.0 + _sorte() * 10.0})
+		if r.size() > 1 and _sorte() < 0.6:
+			r.append({"x": -1.0, "acao": "parado", "dur": 5.0 + _sorte() * 10.0})   # pausa onde estiver
 	return r
 
 
@@ -712,73 +744,116 @@ func _cumprir_bloco(plano: Array, bloco: Dictionary, t: float, x: float) -> floa
 
 # ---------------------------------------------------------------- posição
 
+## A linha do tempo de cada pessoa: o plano virado em trechos contínuos de 0 a 1440 min,
+## [t0, t1, x0, x1, acao, virado, cena]. Montada uma vez por dia; as consultas só buscam nela.
+var linhas: Dictionary = {}      # id -> Array de trechos
+var _inicios: Dictionary = {}    # id -> PackedFloat64Array com os t0, para a busca binária
+var _agendas: Dictionary = {}    # id -> as 24 agendas do dia, já cortadas
+
+
+func _linha(pid: int) -> Array:
+	if linhas.has(pid):
+		return linhas[pid]
+	if not planos.has(pid):
+		# Alguém que entrou no dia depois de montada a rotina (raro): monta só o plano dele.
+		var p = m.pessoas.get(pid)
+		if p == null or m.grupo(p.grupo) == null:
+			return []
+		var g = m.grupo(p.grupo)
+		if not ctx.has(g.id):
+			ctx[g.id] = _contexto(g)
+		planos[pid] = _plano(p, g)
+	var segs: Array = []
+	var plano: Array = planos[pid]
+	var prev: Dictionary = plano[0]
+	_trecho(segs, 0.0, prev["fim"], prev["x"], prev["x"], prev["acao"], prev["virado"], prev["cena"])
+	for i in range(1, plano.size()):
+		var pa: Dictionary = plano[i]
+		var t: float = segs[-1][1]
+		var anda: float = absf(pa["x"] - prev["x"]) / VELOCIDADE
+		if anda > 0.001:
+			_trecho(segs, t, t + anda, prev["x"], pa["x"], pa["ida"], 1 if pa["x"] > prev["x"] else -1, pa["cena"])
+			t += anda
+		if pa["ini"] > t + 0.001:
+			_trecho(segs, t, pa["ini"], pa["x"], pa["x"], "parado", pa["virado"], pa["cena"])
+			t = pa["ini"]
+		_trecho(segs, t, maxf(pa["fim"], t + 0.5), pa["x"], pa["x"], pa["acao"], pa["virado"], pa["cena"])
+		prev = pa
+	if segs[-1][1] < MIN_DIA:
+		var u: Array = segs[-1]
+		_trecho(segs, u[1], MIN_DIA, u[3], u[3], u[4], u[5], u[6])
+	var ini := PackedFloat64Array()
+	for sg in segs:
+		ini.append(sg[0])
+	linhas[pid] = segs
+	_inicios[pid] = ini
+	_agendas[pid] = _cortar_em_horas(segs)
+	return segs
+
+
+## As agendas das 24 horas, numa passada só pela linha do tempo.
+func _cortar_em_horas(segs: Array) -> Array:
+	var horas: Array = []
+	horas.resize(24)
+	for h in 24:
+		horas[h] = []
+	for sg in segs:
+		var h0 := int(sg[0] / 60.0)
+		var h1 := mini(23, int((sg[1] - 0.0001) / 60.0))
+		var dur: float = maxf(0.001, sg[1] - sg[0])
+		for h in range(h0, h1 + 1):
+			var ini := h * 60.0
+			var a := maxf(sg[0], ini)
+			var b := minf(sg[1], ini + 60.0)
+			if b - a <= 0.001:
+				continue
+			var xa: float = sg[2] if sg[2] == sg[3] else lerpf(sg[2], sg[3], (a - sg[0]) / dur)
+			var xb: float = sg[3] if sg[2] == sg[3] else lerpf(sg[2], sg[3], (b - sg[0]) / dur)
+			var lista: Array = horas[h]
+			if not lista.is_empty():
+				var u: Dictionary = lista[-1]
+				if u["acao"] == sg[4] and xa == xb and u["x0"] == u["x1"] and u["x1"] == xa:
+					u["ate"] = (b - ini) / 60.0
+					continue
+			lista.append({"de": (a - ini) / 60.0, "ate": (b - ini) / 60.0, "x0": xa, "x1": xb, "acao": sg[4],
+				"virado": sg[5], "cena": sg[6]})
+	return horas
+
+
+func _trecho(segs: Array, t0: float, t1: float, x0: float, x1: float, acao: String, virado: int, cena: Dictionary) -> void:
+	if t1 - t0 < 0.001:
+		return
+	if acao != "remar":
+		# Ninguém fica na água, a não ser remando.
+		x0 = maxf(x0, Cotidiano.MARGEM)
+		x1 = maxf(x1, Cotidiano.MARGEM)
+	x0 = minf(x0, Cotidiano.LARGURA_MUNDO - 2.0)
+	x1 = minf(x1, Cotidiano.LARGURA_MUNDO - 2.0)
+	segs.append([t0, t1, x0, x1, acao, virado, cena])
+
+
+func _indice(pid: int, minuto: float) -> int:
+	var ini: PackedFloat64Array = _inicios[pid]
+	return maxi(0, ini.bsearch(minuto, false) - 1)
+
+
 ## Onde a pessoa está, o que faz e para que lado olha no minuto dado do dia.
-## Ninguém fica na água, a não ser remando.
 func instante(pid: int, minuto: float) -> Dictionary:
-	var r := _instante(pid, minuto)
-	if r["acao"] != "remar":
-		r["x"] = maxf(r["x"], Cotidiano.MARGEM)
-	r["x"] = minf(r["x"], Cotidiano.LARGURA_MUNDO - 2.0)
-	return r
-
-
-func _instante(pid: int, minuto: float) -> Dictionary:
-	var plano: Array = planos.get(pid, [])
-	if plano.is_empty():
+	var segs := _linha(pid)
+	if segs.is_empty():
 		return {"x": 0.0, "acao": "parado", "virado": 0, "cena": {}}
-	var anterior: Dictionary = plano[0]
-	for pa in plano:
-		if minuto < pa["ini"]:
-			# Entre duas paradas: andando de uma para a outra, ou esperando ao chegar.
-			var saida: float = anterior["fim"]
-			var duracao: float = absf(pa["x"] - anterior["x"]) / VELOCIDADE
-			if duracao > 0.0 and minuto < saida + duracao:
-				var f := clampf((minuto - saida) / duracao, 0.0, 1.0)
-				var dir := 1 if pa["x"] > anterior["x"] else -1
-				return {"x": lerpf(anterior["x"], pa["x"], f), "acao": pa["ida"], "virado": dir, "cena": pa["cena"]}
-			return {"x": pa["x"], "acao": "parado", "virado": pa["virado"], "cena": pa["cena"]}
-		if minuto < pa["fim"]:
-			return {"x": pa["x"], "acao": pa["acao"], "virado": pa["virado"], "cena": pa["cena"]}
-		anterior = pa
-	return {"x": anterior["x"], "acao": anterior["acao"], "virado": anterior["virado"], "cena": anterior["cena"]}
+	var sg: Array = segs[_indice(pid, minuto)]
+	var f := clampf((minuto - sg[0]) / maxf(0.001, sg[1] - sg[0]), 0.0, 1.0)
+	return {"x": lerpf(sg[2], sg[3], f), "acao": sg[4], "virado": sg[5], "cena": sg[6]}
 
 
 ## Os trechos de uma hora: [{de, ate, x0, x1, acao, virado, cena}], com de e ate de 0 a 1.
-## Trechos com x0 == x1 são ações paradas; com x0 != x1, a pessoa anda.
+## Trechos com x0 == x1 são ações paradas; com x0 != x1, a pessoa anda. Cortados uma vez
+## por dia: a lista devolvida é a guardada.
 func agenda(pid: int, hora: int) -> Array:
-	var r: Array = []
-	var ini := hora * 60.0
-	var fim := ini + 60.0
-	# Pontos de corte: começos e fins de paradas e chegadas, dentro da hora.
-	var cortes: Array = [ini, fim]
-	var plano: Array = planos.get(pid, [])
-	var anterior = null
-	for pa in plano:
-		for t in [pa["ini"], pa["fim"]]:
-			if t > ini and t < fim:
-				cortes.append(t)
-		if anterior != null:
-			var chega: float = anterior["fim"] + absf(pa["x"] - anterior["x"]) / VELOCIDADE
-			if chega > ini and chega < fim:
-				cortes.append(chega)
-		anterior = pa
-	cortes.sort()
-	for i in range(cortes.size() - 1):
-		var a: float = cortes[i]
-		var b: float = cortes[i + 1]
-		if b - a < 0.01:
-			continue
-		var ea := instante(pid, a)
-		var eb := instante(pid, b - 0.001)
-		var meio := instante(pid, (a + b) * 0.5)
-		var trecho := {"de": (a - ini) / 60.0, "ate": (b - ini) / 60.0, "x0": ea["x"], "x1": eb["x"],
-			"acao": meio["acao"], "virado": meio["virado"], "cena": meio["cena"]}
-		if not r.is_empty() and r[-1]["acao"] == trecho["acao"] and absf(r[-1]["x1"] - trecho["x0"]) < 0.01 \
-				and absf(r[-1]["x0"] - r[-1]["x1"]) < 0.01 and absf(trecho["x0"] - trecho["x1"]) < 0.01:
-			r[-1]["ate"] = trecho["ate"]
-		else:
-			r.append(trecho)
-	return r
+	if not _agendas.has(pid):
+		_linha(pid)
+	return _agendas.get(pid, [[]])[clampi(hora, 0, 23)] if _agendas.has(pid) else []
 
 
 ## As cenas que acontecem em algum momento da hora dada.

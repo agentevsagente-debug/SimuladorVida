@@ -266,59 +266,59 @@ A fome no inverno durou 9 dias em Sagak e levou 22 vidas.
 
 ### Ano 90
 
-Sagak não esqueceu o ano 86 e atacou Faur outra vez. Faur foi derrotado e perdeu o que tinha guardado. Farilem e Rilbera morreram na luta. Depois da derrota, os jovens de Faur passaram a treinar com lanças. Milinik não podia mais viver perto de Lora. Saiu de Sagak com dezoito pessoas e fundou Faon na praia. As ruínas de Selan viraram aviso em Faon: era o que o deus fazia com quem o desagradava. No inverno, em Faon nasceu a primeira criança: Miloik, filho de Beu e Milinik. Nos anos 81 a 90 houve três secas, cinco fomes, duas batalhas, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram 63 crianças e morreram 51 pessoas. No fim do ano 90, 105 pessoas viviam no mundo: Sagak (60), Faur (26) e Faon (19).
+Milinik, que guiava Sagak, morreu dormindo, aos 57 anos. Foi quem proibiu, em nome do deus, o trato com Faur. Nos anos 81 a 90 houve três secas, cinco fomes, doze preces que pareceram atendidas e três preces sem resposta; nasceram 60 crianças e morreram 50 pessoas. No fim do ano 90, 103 pessoas viviam no mundo: Sagak (77) e Faur (26).
 
 ### Ano 91
 
-No outono, em Faon, Gau tomou para si o cuidado das preces ao Olho Escuro.
+Na primavera, Enniem, que falava pelo Olho Escuro em Sagak, morreu dormindo, aos 51 anos.
 
 ### Ano 92
 
-No verão do ano 92, o sol escureceu outra vez. Para Faur, o deus já não era «o Que Risca o Céu»: passou a ser «o Olho Escuro».
+Na primavera do ano 92, Faur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Faur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Vior rezou por Linloem até a voz acabar. Linloem morreu mesmo assim, e Vior nunca mais rezou.
 
 ### Ano 93
 
-Na primavera do ano 93, Sela, que guiava Sagak, morreu dormindo, aos 51 anos. Morreu Milinik, que fundou Faon e o guiava, aos 60 anos. Tinha fundado Faon.
+No inverno do ano 93, Linor não podia mais viver perto de Gau. Saiu de Sagak com vinte pessoas e fundou Miar na praia. Diante das ruínas de Selan, Miar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 94
 
-Lout, que guiava Sagak, morreu de velhice aos 60 anos. Vior pregou em Faon que o deus não era «o Olho Escuro», mas «a Chama de Cima». O templo chamou aquilo de heresia, e Vior saiu com os que o seguiam. Com Vior à frente, dezenove pessoas fundaram Raur no morro, onde o deus se chama «a Chama de Cima». Com Gau à frente, a nova geração de Faon abandonou a festa da chuva, costume herdado dos avós. As ruínas de Selan viraram aviso em Raur: era o que o deus fazia com quem o desagradava.
+Em Sagak, gritaram que o templo mentia em nome do Olho Escuro. Os sacerdotes foram tirados do poder. Em Miar, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 24, só a crônica guarda. Em Sagak, Gau pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Sagak deu graças ao Olho Escuro. O deus não tinha feito nada. Nas tabuletas de Sagak, ficou escrito que foi o Olho Escuro. Gau anunciou que o Olho Escuro proibia qualquer trato com Miar. O deus nunca disse isso, mas Sagak obedeceu. Nasceu Miu, a primeira de Miar.
 
 ### Ano 95
 
-Com Gau à frente, a nova geração de Faon abandonou o medo das tempestades, costume herdado dos avós. De novo Sagak contra Faur em nome do Olho Escuro, como no ano 90. Faur foi derrotado e perdeu o que tinha guardado. Na luta morreram Enem e Gaselut. Faur fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Sagak e Faur, cansados de enterrar os seus, fizeram as pazes no lago. No verão, Nik, o engenhoso, inventou marcas que guardavam palavras.
+Enbeik, que guiava Faur, morreu dormindo, aos 69 anos. Sagak já não cabia na floresta. Mia, a corajosa, levou treze pessoas para o morro e fundou Gaum. Em Miar, Miut tomou para si o cuidado das preces ao Olho Escuro. Gamia, de Miar, casou-se com Lorilem e foi viver em Faur. Foi o primeiro laço entre os dois povos. Gaum encontrou as ruínas de Selan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 96
 
-No inverno do ano 96, Vior, que guiava Raur, teve um filho: Arbem.
+Em Gaum, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 47, só a crônica guarda.
 
 ### Ano 97
 
-Na primavera, Selor, de Raur, tomou por esposa Doa, de Faur, e os dois povos passaram a se visitar. Nia, que falava pelo Olho Escuro em Faur, morreu ao dar à luz.
+No verão, a tempestade trouxe raios para o morro. Um deles acertou Mia. A família de Mia nunca perdoou o céu. Depois disso, Gaum deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Fere». O lugar ganhou nome: Morro do Raio.
 
 ### Ano 98
 
-Em Sagak, Enniem pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Sagak deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Os escribas de Sagak registraram o milagre.
+Na primavera do ano 98, Lout, o engenhoso, morreu dormindo, aos 64 anos. Morreu Enor, o rancoroso, aos 54 anos. Na guerra, tinha tirado três vidas. A terra tremeu. Caíram catorze cabanas. Galout, Sagaor, Farilem, Belora, Lor, Miu e Gaem morreram sob os escombros. Para Faur, o deus já não era «o Que Risca o Céu»: passou a ser «a Terra Brava». Para Miar, o deus já não era «o Olho Escuro»: passou a ser «a Terra Brava».
 
 ### Ano 99
 
-Faur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Faur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, Lorilem, o curioso, aprendeu a levar a água por canais e a fazer o vento moer o grão.
+Miut tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Miar duvidou de que a Terra Brava tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 100
 
-Na primavera, morreu Vior, que fundou Raur e o guiava, aos 49 anos. Tinha fundado Raur. Nos anos 91 a 100 houve três fomes e sete preces que pareceram atendidas; nasceram 99 crianças e morreram 32 pessoas. No fim do ano 100, 172 pessoas viviam no mundo: Sagak (90), Faur (42), Faon (9) e Raur (31).
+Na primavera do ano 100, com Enem à frente, a nova geração de Faur abandonou o medo das tempestades, costume herdado dos avós. No inverno, Gau, que guiava Sagak, deu à luz e não sobreviveu ao parto. Foi quem proibiu, em nome do deus, o trato com Miar. Nos anos 91 a 100 houve duas secas, três fomes e catorze preces que pareceram atendidas; nasceram 76 crianças e morreram 33 pessoas. No fim do ano 100, 146 pessoas viviam no mundo: Sagak (73), Faur (40), Miar (22) e Gaum (11).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Sagak** vive na floresta, com 90 pessoas, com canais e moinhos; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (desde o ano 24); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
-- **Faur** vive no lago, com 42 pessoas, e escreve; nasceu de uma migração em Sagak no ano 51; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (desde o ano 47); queima os mortos (desde o ano 70); treina os jovens com lanças (desde o ano 90).
-- **Faon** vive na praia, com 9 pessoas, com canais e moinhos; nasceu de uma briga em Sagak no ano 90; chama o deus de «o Olho Escuro»; costumes: guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
-- **Raur** vive no morro, com 31 pessoas, com canais e moinhos; nasceu de um cisma em Faon no ano 94; chama o deus de «a Chama de Cima»; costumes: faz a festa da chuva (desde o ano 24); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
+- **Sagak** vive na floresta, com 73 pessoas, com canais e moinhos; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (desde o ano 24); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
+- **Faur** vive no lago, com 40 pessoas, e escreve; nasceu de uma migração em Sagak no ano 51; chama o deus de «a Terra Brava»; costumes: queima os mortos (desde o ano 70).
+- **Miar** vive na praia, com 22 pessoas, e trabalha o metal; nasceu de uma briga em Sagak no ano 93; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 47); guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
+- **Gaum** vive no morro, com 11 pessoas, em casas de pedra; nasceu de uma migração em Sagak no ano 95; chama o deus de «o Que Fere»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 66); treina os jovens com lanças (desde o ano 86).
 
 Povos que deixaram de existir: Zeor e Selan.
 
-Lugares com nome: Lago da Fome (lago, para Zeor), Lago da Vitória (lago, para Faur), Lago do Luto (lago, para Sagak), Floresta da Vitória (floresta, para Sagak) e Floresta do Luto (floresta, para Zeor).
+Lugares com nome: Lago da Fome (lago, para Zeor), Lago da Vitória (lago, para Faur), Lago do Luto (lago, para Sagak), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor) e Morro do Raio (morro, para Gaum).
 
-Em 100 anos nasceram 413 pessoas e morreram 258.
+Em 100 anos nasceram 387 pessoas e morreram 258.

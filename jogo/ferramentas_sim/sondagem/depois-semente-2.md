@@ -146,7 +146,7 @@ Morreu Marut, que falava pela Estrela de Cauda em Beum, aos 60 anos. Foi quem de
 
 ### Ano 188
 
-Rakina pregou em Midar que o deus não era «o Olho Escuro», mas «o Sedento». O templo chamou aquilo de heresia, e Rakina saiu com os que a seguiam. Rakina não aceitou um povo sem deus. Saiu de Midar com dezessete fiéis e fundou Kium na praia, onde rezam ao Sedento. Nasceu Orraena, a primeira de Kium. Mimina tinha rezado: «Olho Escuro, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Midar duvidou de que o Olho Escuro tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Rakina pregou em Midar que o deus não era «o Olho Escuro», mas «o Sedento». O templo chamou aquilo de heresia, e Rakina saiu com os que a seguiam. Os seguidores de Rakina fundaram Kium na praia. Ali se reza a «o Sedento». Nasceu Orraena, a primeira de Kium. Mimina tinha rezado: «Olho Escuro, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Midar duvidou de que o Olho Escuro tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 189
 
@@ -332,7 +332,7 @@ Morreu Kiraut, que guiava Beum, aos 60 anos. Maik passou a guiar Beum, mas Raena
 
 ### Ano 242
 
-Na primavera, Linenem, o pacífico, aprendeu a tirar metal da pedra no fogo alto. A fome no inverno durou 9 dias em Beum e levou três vidas. No verão, Beum atacou Berdon na floresta em nome do Olho Escuro. Berdon foi derrotado e perdeu o que tinha guardado. Na luta morreram Kikik, Marem e Endoena. Depois de tantos mortos, Beum e Berdon se encontraram na floresta e juraram paz. Dessa vez, o Que Apaga o Sol não respondeu, e Berdon, que tinha esquecido como se virar sozinho, pagou caro.
+Na primavera, Linenem, o pacífico, aprendeu a tirar metal da pedra no fogo alto. A fome no inverno durou 9 dias em Beum e levou três vidas. No verão, Beum atacou Berdon na floresta. Berdon foi derrotado e perdeu o que tinha guardado. Na luta morreram Kikik, Marem e Endoena. Depois de tantos mortos, Beum e Berdon se encontraram na floresta e juraram paz. Dessa vez, o Que Apaga o Sol não respondeu, e Berdon, que tinha esquecido como se virar sozinho, pagou caro.
 
 ### Ano 243
 
@@ -366,203 +366,199 @@ Na primavera do ano 250, Miberik rezou por Bebem até a voz acabar. Bebem morreu
 
 ### Ano 251
 
-No verão, Yoem já não se preparava para nada: a Voz do Céu sempre dava. Deixaram de poupar água.
+No outono do ano 251, a tempestade trouxe raios para o morro. Um deles acertou Liar. Em Yoem, disseram que era castigo.
 
 ### Ano 252
 
-Sem lugar e sem comida, Oril e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
+Dana, que guiava Yoem, morreu dormindo, aos 63 anos.
 
-*No ano 253, nada de notável aconteceu.*
+### Ano 253
+
+Sem lugar e sem comida, Makiut e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 254
 
-Dana, que guiava Yoem, morreu dormindo, aos 65 anos. Miorem, de Beum, tomou por esposa Ula, de Yoem, e os dois povos passaram a se visitar. Sem lugar e sem comida, Maena e os seus atravessaram a borda do mundo. Ninguém soube deles. Beon, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. Beum cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Olho Escuro.
+Na primavera, Enula disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Sacode». Beum acreditou, e o deus mudou de nome. Beum atacou Berdon na floresta. Berdon resistiu, e Beum voltou de mãos vazias. Miberan, Linmik e Miorem morreram na luta. Depois da derrota, os jovens de Beum passaram a treinar com lanças. Começou a Guerra da Fome: Beum, com fome, foi buscar à força a comida de Berdon. A Guerra da Fome acabou em trégua, depois de duas batalhas e cinco mortos.
 
 ### Ano 255
 
-Na primavera, morreu Kimia, que falava pelo Olho Escuro em Beum, aos 64 anos. Em Yoem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+Beum cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Sacode.
 
 ### Ano 256
 
-Em Berdon, Doil pediu: «Que Sacode, dá-nos o que comer.» A fome passou, e Berdon viu nisso obra do Que Sacode. A crônica sabe que foi acaso. Markia, que falava pelo Que Sacode em Berdon, não resistiu à fome. Daorem, que falava pela Voz do Céu em Yoem, não resistiu à fome.
+Mardaena, que guiava Kium, morreu dormindo, aos 66 anos. Morreu o último que tinha visto o ano 201. Em Kium, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Maran tinha rezado: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Beum deu graças ao Que Sacode. O deus nada fez: o crédito era de graça. Nas tabuletas de Beum, ficou escrito que foi o Que Sacode. Tantas preces atendidas fizeram Yoem confiar no céu mais do que nas próprias mãos. Deixaram de poupar água.
 
 ### Ano 257
 
-Em Berdon, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 195, só a crônica guarda. Dessa vez, a Voz do Céu não respondeu, e Yoem, que tinha esquecido como se virar sozinho, pagou caro. A fome durou 20 dias em Yoem e levou três vidas. A fome por causa da seca durou 24 dias em Berdon e levou 23 vidas.
+Foram 3 dias de fome no inverno em Beum, com um morto.
 
 ### Ano 258
 
-Morreu o último que tinha visto o ano 201. Em Kium, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê.
+Morreu Markia, que falava pelo Que Sacode em Berdon, aos 69 anos. Depois de anos sob um só, Kium sentou-se em roda: dali em diante, decidia-se juntos. Em Berdon, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 195, só a crônica guarda. No inverno, Berena deu à luz gêmeos, Beran e Linran. Uns viram bênção; outros, mau sinal.
 
 ### Ano 259
 
-Na primavera do ano 259, os de Kium caíram sobre Berdon na floresta. Berdon resistiu, e Kium voltou de mãos vazias. Ulkiut e Linia morreram na luta. Desde então, Kium chama a floresta de Floresta do Luto. Depois da luta, Kium e Yoem se encontraram no morro e juraram paz. No inverno, começou a Guerra da Fome: Kium, com fome, foi buscar à força a comida de Berdon. A Guerra da Fome acabou em trégua, depois de duas batalhas e cinco mortos. Berdon saiu dela mais forte.
+Na primavera, morreu Miar, que guiava Yoem, aos 66 anos. Uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito. Kium passou fome no inverno por 14 dias, e oito pessoas morreram.
 
 ### Ano 260
 
-Na primavera, Maran rezou por Dan até a voz acabar. Dan morreu mesmo assim, e Maran nunca mais rezou. Nos anos 251 a 260 houve quinze fomes, três batalhas, 30 preces que pareceram atendidas e nove preces sem resposta; nasceram 115 crianças e morreram 89 pessoas. No fim do ano 260, 222 pessoas viviam no mundo: Beum (99), Kium (35), Berdon (64) e Yoem (24).
+Na primavera, morreu Kimia, que falava pelo Que Sacode em Beum, aos 69 anos. Os de Beum caíram sobre Yoem no morro. Beum venceu e levou a comida guardada. Na luta morreu Ular. A doença entrou em Beum e matou cinco pessoas. As preces de Yoem ficaram pequenas: pedia-se à Voz do Céu até sol para a pesca e sorte na caça. No outono, dessa vez, a Voz do Céu não respondeu, e Yoem, que tinha esquecido como se virar sozinho, pagou caro. Nos anos 251 a 260 houve dezesseis fomes, quatro batalhas, 28 preces que pareceram atendidas e quatro preces sem resposta; nasceram 114 crianças e morreram 78 pessoas. No fim do ano 260, 236 pessoas viviam no mundo: Beum (106), Kium (28), Berdon (74) e Yoem (28).
 
 ### Ano 261
 
-Morreu Milinut, que falava pelo Olho Escuro em Beum, aos 60 anos. Miberik não esperou a vez: tomou o comando de Beum à força, e o conselho dos velhos se calou. No outono, a forja de Yoem não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Sem lugar e sem comida, Milinena e os seus atravessaram a borda do mundo. Ninguém soube deles. No inverno, Bena anunciou que o Que Sacode proibia qualquer trato com Yoem. O deus nunca disse isso, mas Beum obedeceu.
 
 ### Ano 262
 
-Na primavera, em Berdon, quem vinha de fora era recebido com comida e lugar perto do fogo. No outono, numa tempestade sobre o lago, um raio matou Linena. A família de Linena nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Beum sai de casa. Lembram de Linena.
+Começou a Guerra da Fome do Morro: Beum, com fome, foi buscar à força a comida de Yoem. Oria, de Beum, casou-se com Moim e foi viver em Berdon. Foi o primeiro laço entre os dois povos.
 
 ### Ano 263
 
-Numa tempestade sobre o morro, um raio matou Bear. Ninguém em Yoem teve dúvida: era castigo. Rar, que falava pelo Que Sacode em Kium, não resistiu à fome. Sem lugar e sem comida, Bean e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Maik, que falava pelo Olho Escuro em Beum, não resistiu à fome. Desde a morte de Raia, nunca mais tinha rezado.
+Na primavera, Dout partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. O frio levou Maik, que guiava Beum. Nunca perdoou o deus pela morte de Raia. No outono, em Berdon, quem vinha de fora era recebido com comida e lugar perto do fogo. Depois disso, Kium deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Apaga o Sol». Na Guerra da Fome do Morro, Beum atacou Yoem no morro em nome do Que Sacode. Beum venceu e levou a comida guardada. Na luta morreram Ullian e Kiali.
 
 ### Ano 264
 
-Começou a Guerra da Fome do Morro: Kium, com fome, foi buscar à força a comida de Yoem. A Guerra da Fome do Morro seguiu: Kium contra Yoem, no morro. Yoem resistiu, e Kium voltou de mãos vazias. Enar, Enbena e Radoan morreram na luta. Os de Berdon caíram sobre Yoem no morro. Yoem foi derrotado e perdeu o que tinha guardado. Yokiut e Ullian morreram na luta. Yoem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois da luta, Berdon e Yoem se encontraram no morro e juraram paz.
+Na primavera, sem lugar e sem comida, Enraia e os seus atravessaram a borda do mundo. Ninguém soube deles. Na Guerra da Fome do Morro, Yoem atacou Beum no lago. Beum resistiu, e Yoem voltou de mãos vazias. Na luta morreram Arali e Yokiut. Para Yoem, o lago virou Lago do Luto. Em Yoem, quem vinha de fora era recebido com comida e lugar perto do fogo. A Guerra da Fome do Morro seguiu: Yoem contra Beum, no lago. Beum resistiu, e Yoem voltou de mãos vazias. Yoena e Enbena morreram na luta.
 
 ### Ano 265
 
-Com Ralinut à frente, Berdon largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No verão, a Guerra da Fome do Morro seguiu: Kium contra Yoem, no morro. Yoem expulsou os atacantes. Na luta morreram Doraem e Armina. No outono, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Kium perdeu o saber.
+Depois de tantos mortos, Beum e Yoem se encontraram no morro e juraram paz. A Guerra da Fome do Morro acabou em trégua, depois de cinco anos, seis batalhas e nove mortos. Beum saiu dela mais forte. Começou a Segunda Guerra da Fome: Berdon, com fome, foi buscar à força a comida de Yoem. Depois de duas batalhas e três mortos, a Segunda Guerra da Fome terminou em paz. Berdon saiu dela mais forte. No inverno, tantas preces sem resposta fizeram Yoem dizer que o Olho Escuro dormia, ou tinha ido embora. Rezava-se cada vez menos.
 
 ### Ano 266
 
-Na primavera, morreu Miut, que falava pelo Olho Escuro em Beum, aos 54 anos. Desde a morte de Linorik, nunca mais tinha rezado. Linenem, que falava pelo Que Sacode em Berdon, morreu dormindo, aos 47 anos.
+Beon, de Yoem, tomou por esposa Marmia, de Beum, e os dois povos passaram a se visitar. Em Kium, Rar pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kium deu graças ao Que Apaga o Sol. O deus nada fez: o crédito era de graça. Doem partiu com duas pessoas para além da borda do mundo. Nunca voltaram. No verão, Mardaut implorou pela filha. Berkia morreu, e daquele dia em diante Mardaut cuspia no chão quando falavam do Que Sacode. Uma tosse que não passava matou nove pessoas em Beum.
 
 ### Ano 267
 
-Na primavera, Beum passou a receber bem os de fora: um casamento com outro povo virava festa.
+Na primavera, Ibut, o pacífico, aprendeu a tirar metal da pedra no fogo alto. No outono, Linenem, o pacífico, não resistiu à fome. Ula, a pacífica, não resistiu à fome. Depois da seca, Kium jurou nunca desperdiçar água. Berdon acabou: Berim, o último, foi viver em Kium.
 
 ### Ano 268
 
-Em Beum, Maran pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Beum viu nisso obra do Olho Escuro. A crônica sabe que foi acaso. Os escribas de Beum registraram o milagre. No verão, a Guerra da Fome do Morro esfriou sem acordo nem vencedor: cinco anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. No outono, Doil, que falava pelo Que Sacode em Berdon, deu à luz e não sobreviveu ao parto.
+Morreu o último que tinha visto o ano 234. Em Yoem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Foram 9 dias de fome por causa da seca em Beum, com treze mortos. Beum encontrou as ruínas de Berdon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Yokia, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. O inverno foi de gelo: quatro pessoas morreram de frio.
 
-### Ano 269
-
-Morreu Ralinut, que guiava Berdon, aos 45 anos. Na guerra, tinha tirado duas vidas. No inverno, Mina deu à luz gêmeos, Enim e Ramaria. Uns viram bênção; outros, mau sinal.
+*No ano 269, nada de notável aconteceu.*
 
 ### Ano 270
 
-Na primavera do ano 270, Beum atacou Kium na praia. Kium expulsou os atacantes. Beum e Kium fizeram as pazes na praia, antes que a briga crescesse. Para Beum, a praia virou Praia da Trégua. Beum passou fome no inverno por 8 dias, e uma pessoa morreu. A terra tremeu. Caíram 24 cabanas. Maia, Kiran, Lina, Ululena, Doraena, Ibra, Maberut, Ena e Enara morreram sob os escombros. Nos anos 261 a 270 houve treze fomes, cinco batalhas, 33 preces que pareceram atendidas e treze preces sem resposta; nasceram 140 crianças e morreram 137 pessoas. No fim do ano 270, 220 pessoas viviam no mundo: Beum (103), Kium (8), Berdon (69) e Yoem (40).
+Na primavera, Radoan, que guiava Kium, morreu de repente, aos 41 anos. Nos anos 261 a 270 houve duas secas, 21 fomes, sete batalhas, 38 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 94 crianças e morreram 176 pessoas. No fim do ano 270, 136 pessoas viviam no mundo: Beum (81), Kium (25) e Yoem (30).
 
 ### Ano 271
 
-Sem lugar e sem comida, Endoik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De novo a chuva sumiu, como no ano 224. Foram 26 dias de seca. Depois da seca, Beum jurou nunca desperdiçar água.
+Na primavera, a terra tremeu. Caíram treze cabanas. Linil, Bermaia, Kiena, Orbear e Likia morreram sob os escombros. No verão, Yoem passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. De novo a chuva sumiu, como no ano 224. Foram 20 dias de seca.
 
 ### Ano 272
 
-Na primavera, houve luta na floresta: Beum atacou Berdon em nome do Olho Escuro. Berdon resistiu, e Beum voltou de mãos vazias. Yoena morreu na luta. Beum e Berdon, cansados de enterrar os seus, fizeram as pazes na floresta. Beum passou fome por causa da seca por 9 dias, e dezoito pessoas morreram. Raut implorou pela filha. Linena morreu, e daquele dia em diante Raut cuspia no chão quando falavam do Que Sacode. Uma febre correu Berdon e levou quatro vidas.
+Maril, que guiava Beum, morreu de velhice aos 48 anos. Kium passou fome por causa da seca por 23 dias, e oito pessoas morreram. No verão, com Orali à frente, dez pessoas deixaram Yoem e fundaram Arak, na floresta. Arak encontrou as ruínas de Midar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, Arak encontrou as ruínas de Berdon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 273
 
-Miberik, que guiava Beum, morreu de velhice aos 61 anos. Nunca perdoou o deus pela morte de Bebem. Beum escolheu Ordaik para guiar o grupo. Maril queria o lugar e nunca perdoou.
+Ralinia partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Nasceu Arali, a primeira de Arak. Orali tinha rezado: «Olho Escuro, dá-nos o que comer.» A fome passou, e Arak viu nisso obra do Olho Escuro. O deus não tinha feito nada. Em Arak, Yokia tomou para si o cuidado das preces ao Olho Escuro.
 
 ### Ano 274
 
-Na primavera do ano 274, Kimaril rezou por Malinem até a voz acabar. Malinem morreu mesmo assim, e Kimaril nunca mais rezou. A fome por causa da seca durou 23 dias em Yoem e levou doze vidas. Arali anunciou que a Voz do Céu proibia qualquer trato com Kium. O deus nunca disse isso, mas Yoem obedeceu.
+Na primavera, com Orali à frente, a nova geração de Arak abandonou o medo das tempestades, costume herdado dos avós.
 
 ### Ano 275
 
-Na primavera, houve luta na praia: Yoem atacou Kium em nome da Voz do Céu. Kium resistiu, e Yoem voltou de mãos vazias. Na luta morreram Orali, Liar e Enibena. Para Yoem, a praia virou Praia do Luto. Começou a Guerra Santa: em nome da Voz do Céu, Yoem pegou em lanças contra Kium. Na Guerra Santa, Yoem atacou Kium na praia em nome da Voz do Céu. Kium foi derrotado e perdeu o que tinha guardado. Ibut e Beon morreram na luta. Ora deu à luz gêmeos, Orbena e Kibeut. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 275, Beia, que guiava Beum, morreu dormindo, aos 63 anos. No inverno, a forja de Kium não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
-*O ano 276 passou sem nada que a crônica precise guardar.*
+### Ano 276
+
+Mimaril, a devota, morreu dormindo, aos 50 anos. Beum passou a receber bem os de fora: um casamento com outro povo virava festa.
 
 ### Ano 277
 
-Em Kium, Bena pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Kium duvidou de que o Que Sacode tinha ouvido. A crônica sabe que foi acaso. Na Guerra Santa, Yoem atacou Kium na praia em nome da Voz do Céu. Kium foi derrotado e perdeu o que tinha guardado. Bena, Kiibar e Marmaia morreram na luta.
+No inverno do ano 277, Orali, que fundou Arak e o guiava, morreu ao dar à luz. Foi quem levou os seus a fundar Arak. Ora, de Kium, casou-se com Bear e foi viver em Arak. Foi o primeiro laço entre os dois povos.
 
-### Ano 278
-
-Kium acabou: Ule e Kiene foram viver em Berdon. Beum encontrou as ruínas de Kium. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A Guerra Santa acabou porque um dos lados deixou de existir: três anos, quatro batalhas e nove mortos.
-
-### Ano 279
-
-Na primavera, morreu Maran, que falava pelo Olho Escuro em Beum, aos 54 anos. Desde a morte de Dan, nunca mais tinha rezado.
+*Entre os anos 278 e 279, nada mudou o rumo do mundo.*
 
 ### Ano 280
 
-Domana, a curiosa, inventou marcas que guardavam palavras. No inverno, Berdon já não cabia na floresta. Beena, a engenhosa, levou catorze pessoas para a praia e fundou Berem. Berem encontrou as ruínas de Midar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nos anos 271 a 280 houve quatro secas, treze fomes, cinco batalhas, 45 preces que pareceram atendidas e catorze preces sem resposta; nasceram 117 crianças e morreram 142 pessoas. No fim do ano 280, 191 pessoas viviam no mundo: Beum (95), Berdon (36), Yoem (46) e Berem (14).
+Yokia, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No outono, Enibena deu à luz gêmeos, Lienena e Kiarena. Uns viram bênção; outros, mau sinal. Nos anos 271 a 280 houve três secas, doze fomes e 25 preces que pareceram atendidas; nasceram 100 crianças e morreram 39 pessoas. No fim do ano 280, 196 pessoas viviam no mundo: Beum (107), Kium (33), Yoem (41) e Arak (15).
 
-### Ano 281
-
-Dodout morreu dormindo, aos 49 anos. Berem encontrou as ruínas de Kium. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Raut passou a falar pelo Que Sacode em Berem. Era o primeiro a rezar e o último a duvidar. De novo a chuva sumiu, como no ano 271. Foram 20 dias de seca. Arali, que guiava Yoem, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Kium.
+*O ano 281 passou sem nada que a crônica precise guardar.*
 
 ### Ano 282
 
-Os últimos de Yoem, Ular e Beut, juntaram-se a Beum. Yoem deixou de existir. Beum encontrou as ruínas de Yoem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Bermoil, de Berem, casou-se com Berorem e foi viver em Beum. Foi o primeiro laço entre os dois povos. Em Berem nasceu a primeira criança: Tamem, filho de Beena e Raut.
+Beum atacou Kium na praia. Beum venceu e levou a comida guardada. Na luta morreram Yoali, Arar, Doulem e Midoe. Desde então, Beum chama a praia de Praia da Vitória. Depois da derrota, os jovens de Kium passaram a treinar com lanças. Beum e Kium, cansados de enterrar os seus, fizeram as pazes na praia. Começou a Guerra da Fome da Floresta: Beum, com fome, foi buscar à força a comida de Arak.
 
 ### Ano 283
 
-Uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito. Depois disso, Berdon deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Risca o Céu».
+Morreu o último que tinha visto o ano 241. Em Arak, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Beum, Maena pediu: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Beum deu graças ao Que Sacode. O deus nada fez: o crédito era de graça. Os escribas de Beum registraram o milagre. No inverno, Kiara, de Arak, casou-se com Orlian e foi viver em Yoem. Foi o primeiro laço entre os dois povos.
 
-*O ano 284 foi calmo.*
+### Ano 284
+
+Na primavera, depois de anos sob um só, Yoem sentou-se em roda: dali em diante, decidia-se juntos. Maena, que falava pelo Que Sacode em Beum, morreu de frio. Kimaril rezou por Linmik até a voz acabar. Linmik morreu mesmo assim, e Kimaril nunca mais rezou. Desde a febre, Yoem não enterra mais ninguém: os mortos vão para o fogo. Houve luta no morro: Beum atacou Yoem. Yoem foi derrotado e perdeu o que tinha guardado. Na luta morreu Aron.
 
 ### Ano 285
 
-Na primavera do ano 285, Berem, que guiava Berdon, morreu dormindo, aos 64 anos. Beum atacou Berdon na floresta em nome do Olho Escuro. Berdon expulsou os atacantes. Linia morreu na luta. No inverno, começou a Guerra Santa da Floresta: em nome do Olho Escuro, Beum pegou em lanças contra Berdon. Na Guerra Santa da Floresta, Beum atacou Berdon na floresta em nome do Olho Escuro. Berdon resistiu, e Beum voltou de mãos vazias. Na luta morreram Beraik, Berberia e Linorut. A Guerra Santa da Floresta acabou em trégua, depois de duas batalhas e quatro mortos. Berdon saiu dela mais forte.
+Na primavera do ano 285, morreu Enula, a pacífica, aos 59 anos. Com lanças e promessas, Beril acabou com o conselho de Beum e passou a mandar sozinho. Beum passou fome no inverno por 11 dias, e duas pessoas morreram. No verão, Enkion anunciou que o Olho Escuro proibia qualquer trato com Arak. O deus nunca disse isso, mas Yoem obedeceu. A fome por causa da seca durou 26 dias em Yoem e levou 22 vidas.
 
 ### Ano 286
 
-Na primavera do ano 286, Enenem, que falava pelo Que Risca o Céu em Berdon, morreu de repente, aos 43 anos. Beum passou fome no inverno por 9 dias, e dezesseis pessoas morreram. Em Beum, Linmik pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Beum deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Os escribas de Beum registraram o milagre.
+Na primavera, Kimaril morreu de repente, aos 42 anos. Desde a morte de Linmik, nunca mais tinha rezado. Sem lugar e sem comida, Bedaut e os seus atravessaram a borda do mundo. Ninguém soube deles. A Guerra da Fome da Floresta seguiu: Beum contra Arak, na floresta. Arak foi derrotado e perdeu o que tinha guardado. Na luta morreram Liut, Oron e Ora. Beum e Arak, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra da Fome da Floresta acabou em trégua, depois de quatro anos, quatro batalhas e sete mortos. Beum saiu dela mais forte.
 
 ### Ano 287
 
-Na primavera, com Beena à frente, a nova geração de Berem abandonou o cuidado com a água, costume herdado dos avós. Um raio caiu na praia durante a tempestade e matou Beena. A família de Beena nunca perdoou o céu. Para Berem, o deus já não era «o Que Sacode»: passou a ser «a Voz do Céu». Desde a morte de Beena, ninguém em Berem desce à praia em dia de tempestade. Desde aquele dia, Berem chama a praia de Praia do Raio.
+Na primavera do ano 287, Rakiem disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «o Sedento». Beum acreditou, e o deus mudou de nome. Em Arak, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 263, só a crônica guarda. Kium passou fome por causa da seca por 23 dias, e sete pessoas morreram.
 
-### Ano 288
-
-Na primavera do ano 288, Momarena, a rancorosa, cansou de dividir pouca comida. Partiu com onze pessoas para o morro e ali fundou Mogor. Mogor encontrou as ruínas de Midar e disse que ali tinham vivido gigantes. Houve luta na praia: Beum atacou Berem. Beum venceu e levou a comida guardada. Enim e Kilinut morreram na luta. Apareceu no céu uma luz com rabo, que ficou 7 noites e sumiu. No inverno, em Mogor, Kiem tomou para si o cuidado das preces ao Que Risca o Céu.
-
-### Ano 289
-
-No outono do ano 289, Raut, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+*Os anos 288 a 289 passaram em paz.*
 
 ### Ano 290
 
-Mail, que falava pelo Olho Escuro em Beum, morreu dormindo, aos 62 anos. Linkil, a engenhosa, morreu de velhice aos 61 anos. Desde a morte de Mana, nunca mais tinha rezado. Em Mogor, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 242, só a crônica guarda. No verão, nasceu Moena, a primeira de Mogor. Nos anos 281 a 290 houve três secas, seis fomes, três batalhas, 24 preces que pareceram atendidas e quatro preces sem resposta; nasceram 108 crianças e morreram 112 pessoas. No fim do ano 290, 188 pessoas viviam no mundo: Beum (94), Berdon (70), Berem (13) e Mogor (11).
+Na primavera do ano 290, Orberil, que falava pelo Sedento em Beum, morreu de velhice aos 61 anos. Nos anos 281 a 290 houve duas secas, treze fomes, seis batalhas, 35 preces que pareceram atendidas e onze preces sem resposta; nasceram 97 crianças e morreram 110 pessoas. No fim do ano 290, 178 pessoas viviam no mundo: Beum (99), Kium (26), Yoem (43) e Arak (10).
 
 ### Ano 291
 
-No inverno do ano 291, Kiberan implorou pela filha. Linena morreu, e daquele dia em diante Kiberan cuspia no chão quando falavam do Olho Escuro.
+Na primavera, Armina, que falava pelo Que Apaga o Sol em Kium, morreu de velhice aos 64 anos.
 
 ### Ano 292
 
-Raut, que falava pela Voz do Céu em Berem, morreu de velhice aos 66 anos. Nunca perdoou o deus pela morte de Linena. A fome no inverno durou 3 dias em Beum e levou duas vidas. De novo a chuva sumiu, como no ano 281. Foram 22 dias de seca. Em Berem, Dout pediu: «Voz do Céu, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Berem duvidou de que a Voz do Céu tinha ouvido. O deus não tinha feito nada.
+Na primavera, Doena, a ambiciosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Damaria tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Beum deu graças ao Sedento. O deus não tinha feito nada. Nas tabuletas de Beum, ficou escrito que foi o Sedento. No outono, a terra tremeu. Caíram dezessete cabanas. Rakiem, Mina e Kie morreram sob os escombros. Depois disso, Kium deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-la de «a Terra Brava». Depois disso, Arak deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Sacode».
 
 ### Ano 293
 
-Na primavera do ano 293, Linbeik disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Queima». Beum acreditou, e o deus mudou de nome. Veio a pior fome que o mundo tinha visto: 24 dias por causa da seca em Berdon, e 36 mortos. As crianças foram as primeiras. No verão, Markiena, de Berdon, casou-se com Kiraik e foi viver em Berem. Foi o primeiro laço entre os dois povos.
+Na primavera do ano 293, em Yoem, Ororon começou a pregar que o deus não era «o Olho Escuro». Era «a Mãe da Fartura». Em poucos anos, todos rezavam assim. Beum escolheu Beut para guiar o grupo. Linan queria o lugar e nunca perdoou. Beum atacou Arak na floresta. Arak foi derrotado e perdeu o que tinha guardado. Ibkio, Are e Kibean morreram na luta. Arak fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Em nome do Que Sacode, Arali proibiu casamentos e trocas com Beum. Era vontade de Arali, não do deus.
 
-*Entre os anos 294 e 295, nada mudou o rumo do mundo.*
+### Ano 294
+
+Na primavera do ano 294, com Beyout à frente, a nova geração de Arak abandonou o treino com lanças, costume herdado dos avós. Começou a Guerra do Lago: o rancor entre Beum e Arak virou guerra. A Guerra do Lago seguiu: Arak contra Beum, no lago em nome do Que Sacode. Beum expulsou os atacantes. Beyout morreu na luta.
+
+### Ano 295
+
+Enkion, que falava pela Mãe da Fartura em Yoem, morreu dormindo, aos 50 anos. Foi quem proibiu, em nome do deus, o trato com Arak. Yoem atacou Arak na floresta em nome da Mãe da Fartura. Arak expulsou os atacantes. Na luta morreram Enan, Beon e Ena. Para Yoem, a floresta virou Floresta do Luto.
 
 ### Ano 296
 
-No verão do ano 296, Kiem, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+No verão do ano 296, Ibenena, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Beum passou fome no inverno por 14 dias, e uma pessoa morreu. Beum atacou Kium na praia. Kium foi derrotado e perdeu o que tinha guardado. Mimina morreu na luta. Beum e Kium, cansados de enterrar os seus, fizeram as pazes na praia. Começou a Guerra Santa: em nome da Mãe da Fartura, Yoem pegou em lanças contra Arak.
 
 ### Ano 297
 
-Com Momarena à frente, a nova geração de Mogor abandonou o cuidado com a água, costume herdado dos avós.
+Morreu Damil, a devota, aos 65 anos. Yoem venceu Arak e levou os cinco sobreviventes para viver sob seu mando. Arak deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra Santa terminou com a conquista: dois anos, três batalhas e oito mortos. A Guerra do Lago acabou porque um dos lados deixou de existir: quatro anos, três batalhas e cinco mortos. A terra tremeu. Caíram treze cabanas. Mimiena, Kimia, Kiberut e Raena morreram sob os escombros.
 
 ### Ano 298
 
-Momarena tinha rezado: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Mogor agradeceu ao Que Risca o Céu. O deus não tinha feito nada.
+Na primavera, Raraem não podia mais viver perto de Daia. Saiu de Kium com onze pessoas e fundou Miur na floresta. Beum passou fome no inverno por 9 dias, e dez pessoas morreram. As ruínas de Midar viraram aviso em Miur: era o que o deus fazia com quem o desagradava. No inverno, depois da luta, Yoem e Kium se encontraram na praia e juraram paz. Em Miur, Iba tomou para si o cuidado das preces à Terra Brava.
 
 ### Ano 299
 
-Na primavera do ano 299, em Mogor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Beum passou fome no inverno por 9 dias, e seis pessoas morreram. No verão, Maena, de Mogor, casou-se com Linik e foi viver em Beum. Foi o primeiro laço entre os dois povos. No inverno, tantas preces atendidas fizeram Berem confiar no céu mais do que nas próprias mãos. Linlinil partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+Nasceu Bebem, filho de Raraem, que guiava Miur.
 
 ### Ano 300
 
-Na primavera do ano 300, Marem, que falava pelo Que Queima em Beum, morreu de velhice aos 52 anos. No inverno, dessa vez, a Voz do Céu não respondeu, e Berem, que tinha esquecido como se virar sozinho, pagou caro. Numa tempestade sobre o morro, um raio matou Maenil. Maenil era das que mais rezavam, e Mogor ficou sem entender. Para os mais fiéis de Mogor, Maenil não foi castigada, mas escolhida. Desde a morte de Maenil, ninguém em Mogor sobe o morro em dia de tempestade. Nos anos 291 a 300 houve quatro secas, oito fomes, 26 preces que pareceram atendidas e cinco preces sem resposta; nasceram 107 crianças e morreram 146 pessoas. No fim do ano 300, 146 pessoas viviam no mundo: Beum (85), Berdon (34), Berem (14) e Mogor (13).
+Em Kium, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Nos anos 291 a 300 houve doze fomes, oito batalhas, 28 preces que pareceram atendidas e quinze preces sem resposta; nasceram 100 crianças e morreram 119 pessoas. No fim do ano 300, 159 pessoas viviam no mundo: Beum (98), Kium (13), Yoem (34) e Miur (14).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Beum** vive no lago, com 85 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Que Queima»; costumes: queima os mortos (desde o ano 195); guarda tanta comida para o inverno (desde o ano 207); não sai de casa em dia de tempestade (desde o ano 262); não desperdiça uma gota d'água (desde o ano 271); treina os jovens com lanças (desde o ano 285).
-- **Berdon** vive na floresta, com 34 pessoas, e trabalha o metal; nasceu de uma briga em Beum no ano 211; chama o deus de «o Que Risca o Céu»; costumes: queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (desde o ano 242); não desperdiça uma gota d'água (desde o ano 263).
-- **Berem** vive na praia, com 14 pessoas, e trabalha o metal; nasceu de uma migração em Berdon no ano 280; chama o deus de «a Voz do Céu»; costumes: queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 287).
-- **Mogor** vive no morro, com 13 pessoas, e trabalha o metal; nasceu de uma migração em Berdon no ano 288; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 300).
+- **Beum** vive no lago, com 98 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Sedento»; costumes: queima os mortos (desde o ano 195); guarda tanta comida para o inverno (desde o ano 207); treina os jovens com lanças (desde o ano 254).
+- **Kium** vive na praia, com 13 pessoas, e trabalha o metal; nasceu de um cisma em Midar no ano 188; chama o deus de «a Terra Brava»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 267); treina os jovens com lanças (desde o ano 282).
+- **Yoem** vive no morro, com 34 pessoas, e trabalha o metal; nasceu de uma briga em Kium no ano 227; chama o deus de «a Mãe da Fartura»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (desde o ano 263); queima os mortos (desde o ano 284).
+- **Miur** vive na floresta, com 14 pessoas, e trabalha o metal; nasceu de uma briga em Kium no ano 298; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 267); treina os jovens com lanças (desde o ano 282).
 
-Povos que deixaram de existir: Esar, Midar, Kium e Yoem.
+Povos que deixaram de existir: Esar, Midar, Berdon e Arak.
 
-Lugares com nome: Praia do Raio (praia, para Esar), Praia da Fome (praia, para Kium), Praia da Trégua (praia, para Beum), Praia do Luto (praia, para Yoem), Praia do Raio (praia, para Berem), Lago da Fome (lago, para Beum), Floresta do Raio (floresta, para Berdon), Floresta da Vitória (floresta, para Beum), Floresta do Luto (floresta, para Kium), Morro do Raio (morro, para Yoem), Morro da Trégua (morro, para Kium), Morro da Vitória (morro, para Berdon) e Morro do Raio (morro, para Mogor).
+Lugares com nome: Praia do Raio (praia, para Esar), Praia da Fome (praia, para Kium), Praia da Vitória (praia, para Beum), Praia da Vitória (praia, para Yoem), Lago da Fome (lago, para Beum), Lago do Luto (lago, para Yoem), Floresta do Raio (floresta, para Berdon), Floresta da Vitória (floresta, para Beum), Floresta do Luto (floresta, para Arak), Floresta do Luto (floresta, para Yoem), Morro do Raio (morro, para Yoem), Morro da Vitória (morro, para Beum) e Morro da Vitória (morro, para Berdon).
 
-Em 300 anos nasceram 1187 pessoas e morreram 1050.
+Em 300 anos nasceram 1105 pessoas e morreram 946.

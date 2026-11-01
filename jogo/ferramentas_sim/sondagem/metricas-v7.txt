@@ -1,0 +1,49 @@
+semente   1: 46/1p 172/4p 282/4p 200/4p 245/4p 269/4p
+   estágio máx 6 (ano 78) | povos extintos 3 | fins do mundo 0 | eras 1 | marcos: lacuna média 2.0, máx 10 | viradas: lacuna máx 16 | quietos 23%, maior seq 5 | repetição 24% | 8.72 s (ano mais lento 0.065 s)
+   fomes/década 11.5 | guerras 6 | profetas 13 | secularizações 2 | renascimentos 0 | pestes 1 | mudanças de poder 12 | regressões 0
+semente   2: 10/1p 7/1p 20/1p 108/3p 203/4p 146/4p
+   estágio máx 6 (ano 255) | povos extintos 4 | fins do mundo 1 | eras 2 | marcos: lacuna média 2.8, máx 28 | viradas: lacuna máx 39 | quietos 42%, maior seq 9 | repetição 21% | 3.62 s (ano mais lento 0.049 s)
+   fomes/década 3.3 | guerras 5 | profetas 3 | secularizações 0 | renascimentos 0 | pestes 2 | mudanças de poder 3 | regressões 1
+semente   3: 100/4p 137/4p 200/4p 166/3p 256/4p 247/4p
+   estágio máx 6 (ano 116) | povos extintos 3 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.6, máx 12 | viradas: lacuna máx 15 | quietos 20%, maior seq 6 | repetição 22% | 8.99 s (ano mais lento 0.056 s)
+   fomes/década 11.2 | guerras 8 | profetas 13 | secularizações 1 | renascimentos 0 | pestes 2 | mudanças de poder 18 | regressões 1
+semente   4: 49/2p 219/4p 263/4p 153/4p 208/3p 163/4p
+   estágio máx 6 (ano 133) | povos extintos 3 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.6, máx 11 | viradas: lacuna máx 16 | quietos 18%, maior seq 4 | repetição 21% | 8.43 s (ano mais lento 0.061 s)
+   fomes/década 8.6 | guerras 15 | profetas 12 | secularizações 2 | renascimentos 0 | pestes 4 | mudanças de poder 9 | regressões 4
+semente   5: 39/2p 100/3p 166/4p 136/4p 207/4p 175/4p
+   estágio máx 6 (ano 224) | povos extintos 6 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.8, máx 11 | viradas: lacuna máx 23 | quietos 22%, maior seq 5 | repetição 20% | 6.39 s (ano mais lento 0.068 s)
+   fomes/década 7.7 | guerras 9 | profetas 14 | secularizações 3 | renascimentos 0 | pestes 3 | mudanças de poder 8 | regressões 1
+semente   6: 47/1p 107/3p 211/4p 166/4p 110/3p 146/4p
+   estágio máx 6 (ano 157) | povos extintos 6 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.9, máx 14 | viradas: lacuna máx 24 | quietos 27%, maior seq 8 | repetição 19% | 6.71 s (ano mais lento 0.050 s)
+   fomes/década 8.3 | guerras 12 | profetas 9 | secularizações 1 | renascimentos 0 | pestes 4 | mudanças de poder 6 | regressões 3
+semente   7: 48/1p 118/4p 202/4p 179/4p 270/4p 230/4p
+   estágio máx 6 (ano 105) | povos extintos 5 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.6, máx 8 | viradas: lacuna máx 16 | quietos 19%, maior seq 4 | repetição 21% | 8.05 s (ano mais lento 0.061 s)
+   fomes/década 8.1 | guerras 16 | profetas 13 | secularizações 1 | renascimentos 0 | pestes 0 | mudanças de poder 8 | regressões 2
+semente   8: 39/2p 90/3p 143/4p 235/4p 185/4p 237/4p
+   estágio máx 6 (ano 173) | povos extintos 8 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.8, máx 8 | viradas: lacuna máx 16 | quietos 20%, maior seq 3 | repetição 19% | 7.42 s (ano mais lento 0.093 s)
+   fomes/década 7.1 | guerras 17 | profetas 10 | secularizações 4 | renascimentos 0 | pestes 1 | mudanças de poder 6 | regressões 5
+semente   9: 33/2p 156/4p 215/4p 171/4p 156/4p 262/4p
+   estágio máx 6 (ano 178) | povos extintos 9 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.8, máx 11 | viradas: lacuna máx 15 | quietos 22%, maior seq 4 | repetição 19% | 7.49 s (ano mais lento 0.074 s)
+   fomes/década 8.5 | guerras 11 | profetas 9 | secularizações 1 | renascimentos 0 | pestes 2 | mudanças de poder 5 | regressões 3
+semente  10: 28/2p 83/3p 186/4p 210/4p 252/4p 269/4p
+   estágio máx 6 (ano 139) | povos extintos 5 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.9, máx 11 | viradas: lacuna máx 14 | quietos 24%, maior seq 7 | repetição 22% | 30.58 s (ano mais lento 0.321 s)
+   fomes/década 10.1 | guerras 11 | profetas 16 | secularizações 0 | renascimentos 0 | pestes 1 | mudanças de poder 16 | regressões 0
+MÉDIA (10 mundos): fomes_decada=8.44 guerras=11.00 profetas=11.20 secularizacoes=1.50 mudancas_poder=9.10 estagio_max=6.00 extintos=5.20 fins=0.10 lacuna_media=1.86 lacuna_max=12.40 virada_max=19.40 quietos=0.24 quieto_seq=5.50 repeticao=0.21 s_por_ano_max=0.09 
+SCRIPT ERROR: Invalid access to property or key 'guerra' on a base object of type 'Dictionary'.
+   at: _morrer (res://nucleo/mundo.gd:936)
+   GDScript backtrace (most recent call first):
+       [0] _morrer (res://nucleo/mundo.gd:936)
+       [1] _refeicao (res://nucleo/mundo.gd:787)
+       [2] avancar_hora (res://nucleo/mundo.gd:259)
+       [3] avancar_dias (res://nucleo/mundo.gd:265)
+       [4] _initialize (res://ferramentas_sim/sondagem_longa.gd:43)
+semente   1: 12/1p 141/3p 248/4p 265/4p 240/4p 153/4p
+   estágio máx 6 (ano 157) | povos extintos 14 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.3, máx 7 | viradas: lacuna máx 12 | quietos 14%, maior seq 3 | repetição 22% | 41.18 s (ano mais lento 0.440 s)
+   fomes/década 9.8 | guerras 34 | profetas 7 | secularizações 2 | renascimentos 0 | pestes 2 | mudanças de poder 11 | regressões 8
+semente   2: 26/1p 63/1p 193/4p 240/4p 181/4p 66/3p
+   estágio máx 6 (ano 109) | povos extintos 8 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.2, máx 9 | viradas: lacuna máx 18 | quietos 6%, maior seq 4 | repetição 26% | 25.49 s (ano mais lento 0.551 s)
+   fomes/década 8.8 | guerras 24 | profetas 3 | secularizações 3 | renascimentos 0 | pestes 3 | mudanças de poder 8 | regressões 5
+semente   3: 57/3p 114/4p 241/4p 239/4p 272/4p 250/4p
+   estágio máx 6 (ano 170) | povos extintos 8 | fins do mundo 0 | eras 1 | marcos: lacuna média 1.2, máx 13 | viradas: lacuna máx 18 | quietos 10%, maior seq 7 | repetição 21% | 9.39 s (ano mais lento 0.076 s)
+   fomes/década 9.6 | guerras 35 | profetas 6 | secularizações 1 | renascimentos 2 | pestes 3 | mudanças de poder 14 | regressões 3
+MÉDIA (3 mundos): fomes_decada=9.37 guerras=31.00 profetas=5.33 secularizacoes=2.00 mudancas_poder=11.00 estagio_max=6.00 extintos=10.00 fins=0.00 lacuna_media=1.20 lacuna_max=9.67 virada_max=16.00 quietos=0.10 quieto_seq=4.67 repeticao=0.23 s_por_ano_max=0.36 

@@ -254,103 +254,105 @@ A seca voltou, como no ano 65: 21 dias sem chuva, até que o céu se abriu. Em T
 
 ### Ano 78
 
-Wanum conheceu a maior fome da sua história no inverno. Em 18 dias, morreram 11. Muitas cabanas ficaram vazias. Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Teor. O deus nunca disse isso, mas Wanum obedeceu. No inverno, Rudemia partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A guerra entre Wanum e Teur continuou: Wanum voltou a atacar na floresta em nome do Que Apaga o Sol. Teur expulsou os atacantes. Manira, Torzeia e Ruesya morreram na luta.
+Na primavera do ano 78, em nome do Que Apaga o Sol, Ruruim proibiu casamentos e trocas com Teor. Era vontade de Ruruim, não do deus. Wanum conheceu a maior fome da sua história no inverno. Em 18 dias, morreram 11. Muitas cabanas ficaram vazias. Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Teur. O deus nunca disse isso, mas Wanum obedeceu. Wanum não esqueceu o ano 72 e atacou Teur outra vez. Teur resistiu, e Wanum voltou de mãos vazias. Teim e Isesar morreram na luta. Wanum e Teur, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 79
 
-No outono, o sol escureceu outra vez.
+Morreu Suar, que guiava Teur, aos 58 anos. Enteik passou a falar pelo Que Risca o Céu em Teor. Era o primeiro a rezar e o último a duvidar. Os dois povos passaram a chamar o lugar de Lago da Trégua. No inverno, dessa vez, o Que Risca o Céu não respondeu, e Teil, que tinha esquecido como se virar sozinho, pagou caro. Numa tempestade sobre a praia, um raio matou Mademar. Em Wanum, disseram que era castigo.
 
 ### Ano 80
 
-Uma febre correu Teur e levou duas vidas. Kiesena deu à luz gêmeos, Torzena e Niibim. Uns viram bênção; outros, mau sinal. Nos anos 71 a 80 houve três secas, seis fomes, três batalhas, 29 preces que pareceram atendidas e nove preces sem resposta; nasceram 120 crianças e morreram 58 pessoas. No fim do ano 80, 173 pessoas viviam no mundo: Teil (59), Teur (59), Wanum (21) e Teor (34).
+Na primavera, a forja de Teur não apagava mais. O metal mudou o trabalho e mudou a guerra. No verão, a forja de Wanum não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 71 a 80 houve três secas, quatro fomes, quatro batalhas, 24 preces que pareceram atendidas e dez preces sem resposta; nasceram 113 crianças e morreram 54 pessoas. No fim do ano 80, 173 pessoas viviam no mundo: Teil (62), Teur (57), Wanum (25) e Teor (29).
 
 ### Ano 81
 
-Na primavera, Natena, que guiava Teil, morreu de velhice aos 54 anos.
+Na primavera, Demmaik disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «a Sombra». Teur acreditou, e o deus mudou de nome.
 
 ### Ano 82
 
-Morreu Lona, filha pequena de Ena. Uma febre correu Teor e levou três vidas. Depois da febre, Teor passou a queimar os seus mortos, para que a doença não voltasse. Tantas preces atendidas fizeram Wanum confiar no céu mais do que nas próprias mãos. Depois da seca, Teor jurou nunca desperdiçar água.
+Na primavera do ano 82, Kiena, de Teor, casou-se com Temar e foi viver em Teur. Foi o primeiro laço entre os dois povos.
 
 ### Ano 83
 
-Na primavera do ano 83, Tenana, que falava pelo Que Risca o Céu em Teil, morreu de frio. Teur conheceu a maior fome da sua história por causa da seca. Em 20 dias, morreram 13. Muitas cabanas ficaram vazias. Os de Wanum caíram sobre Teil no lago em nome do Que Apaga o Sol. Teil expulsou os atacantes. Mamaem, Maiba e Teim morreram na luta. Desde então, os de Teil chamam o lugar de Lago da Vitória; os de Wanum, de Lago do Luto. A febre levou Runa, que guiava Teur.
+Na primavera do ano 83, Eszem, que guiava Wanum, morreu de velhice aos 52 anos. Torem disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Olho Escuro». Teil acreditou, e o deus mudou de nome.
 
 ### Ano 84
 
-Wanum passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No outono, houve luta no morro: Wanum atacou Teor em nome do Que Apaga o Sol. Wanum venceu e levou a comida guardada. Na luta morreram Enya, Nasuna e Esnim. Para Wanum, o morro virou Morro da Vitória. Teor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Wanum e Teor se encontraram no morro e juraram paz.
+Ibia, de Wanum, casou-se com Isem e foi viver em Teur. Foi o primeiro laço entre os dois povos. No verão, a tempestade trouxe raios para a floresta. Um deles acertou Demmaik. Em Teur, disseram que era castigo. Teur passou a acreditar que a Sombra castiga quem duvida, e que Demmaik tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Teur sai de casa. Lembram de Demmaik.
 
-*O ano 85 foi calmo.*
+### Ano 85
+
+No outono, tantas preces atendidas fizeram Teor confiar no céu mais do que nas próprias mãos. Uma tosse que não passava matou três pessoas em Teur. Desde a febre, Teur não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 86
 
-Demem, o desconfiado, morreu de repente, aos 41 anos. Temar, o generoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. No outono, Kisuem, de Teor, tomou por esposa Niteya, de Teur, e os dois povos passaram a se visitar. Em Teur, Suena pediu: «Estrela de Cauda, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que a Estrela de Cauda tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Teur, e 14 mortos. As crianças foram as primeiras. Depois daquela fome, Teur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. O morro passou a ser o morro da fome: Morro da Fome. Wanum já não se preparava para nada: o Que Apaga o Sol sempre dava. Torisar, o corajoso, inventou marcas que guardavam palavras.
 
 ### Ano 87
 
-Em Teur, Kiesena começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Queima». Em poucos anos, todos rezavam assim. Para Teil, o deus já não era «o Que Risca o Céu»: passou a ser «o Que Apaga o Sol». No verão, Ruruim, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A guerra entre Wanum e Teil continuou: Wanum voltou a atacar no lago em nome do Que Apaga o Sol. Teil resistiu, e Wanum voltou de mãos vazias. Na luta morreram Tera e Kiena. Depois de tantos mortos, Wanum e Teil se encontraram no lago e juraram paz.
+Morreu Natena, que guiava Teil, aos 60 anos.
 
 ### Ano 88
 
-Na primavera do ano 88, Niteya deu à luz gêmeos, Fara e Naim. Uns viram bênção; outros, mau sinal. Nitorar, o medroso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+No outono do ano 88, Kiem, o generoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 89
 
-No verão, Demsura, a corajosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Em Wanum, Ruruim pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Wanum deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
 
 ### Ano 90
 
-Na primavera, sem lugar e sem comida, Ruruim e os seus atravessaram a borda do mundo. Ninguém soube deles. Nos anos 81 a 90 houve três secas, oito fomes, três batalhas, 33 preces que pareceram atendidas e oito preces sem resposta; nasceram 115 crianças e morreram 93 pessoas. No fim do ano 90, 192 pessoas viviam no mundo: Teil (82), Teur (52), Wanum (32) e Teor (26).
+Na primavera do ano 90, Tenana, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 72 anos. Enteim, o medroso, morreu dormindo, aos 66 anos. Tinha sido o primeiro a plantar. Kiteik partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Teor, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Nos anos 81 a 90 houve nove fomes e 23 preces que pareceram atendidas; nasceram 116 crianças e morreram 71 pessoas. No fim do ano 90, 215 pessoas viviam no mundo: Teil (74), Teur (69), Wanum (35) e Teor (37).
 
 ### Ano 91
 
-Enteim, que falava pelo Que Apaga o Sol em Teil, morreu de velhice aos 67 anos. Foi quem descobriu que semente vira planta.
+Na primavera do ano 91, Runa, que guiava Teur, morreu de velhice aos 56 anos. Morreu o último que tinha visto o ano 35. Em Teur, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
 
 ### Ano 92
 
-Na primavera do ano 92, Eszem, que guiava Wanum, morreu dormindo, aos 61 anos. Mademar passou a guiar Wanum, mas Nina não aceitou e guardou rancor.
+Na primavera do ano 92, o deus calou justo quando Wanum mais dependia dele. Depois da seca, Teor jurou nunca desperdiçar água. No inverno, Mara, que fundou Teor e o guiava, morreu de fome. Tinha fundado Teor. Demsuya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Teor acabou: Ibel e Torrura foram viver em Teur.
 
 ### Ano 93
 
-Em Teur, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 35, só a crônica guarda. Teur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera, com Enim à frente, dezesseis pessoas deixaram Teil e fundaram Kidon, no morro. Foram 9 dias de fome no inverno em Teil, com onze mortos. Depois daquela fome, Teil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. As ruínas de Teor viraram aviso em Teil: era o que o deus fazia com quem o desagradava. No inverno, em Kidon, Demnina tomou para si o cuidado das preces ao Olho Escuro.
 
 ### Ano 94
 
-Na primavera do ano 94, Nina não esperou a vez: tomou o comando de Wanum à força, e o conselho dos velhos se calou. Tantas preces atendidas fizeram Teor confiar no céu mais do que nas próprias mãos. Deixaram de poupar água. No outono, a forja de Teor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Ruruim, o engenhoso, inventou marcas que guardavam palavras.
 
-### Ano 95
-
-Foram 6 dias de fome no inverno em Teil, com seis mortos. Em Teil, Enar pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso. A fome ensinou: desde então, Teil estoca comida e não come tudo o que colhe.
+*No ano 95, nada de notável aconteceu.*
 
 ### Ano 96
 
-Na primavera, os de Wanum caíram sobre Teor no morro em nome do Que Apaga o Sol. Wanum venceu e levou a comida guardada. Kiteik e Torar morreram na luta. Wanum e Teor, cansados de enterrar os seus, fizeram as pazes no morro. O deus calou justo quando Teor mais dependia dele. No inverno, Wanum atacou Teur na floresta em nome do Que Apaga o Sol. Teur resistiu, e Wanum voltou de mãos vazias. Tem e Teya morreram na luta. A forja de Teil não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Kidon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Em Kidon nasceu a primeira criança: Sudoik, filho de Demnina e Enim.
 
 ### Ano 97
 
-Na primavera, morreu Ibar, que guiava Teor, aos 70 anos. Em Teor, Kisuem tomou para si o cuidado das preces ao Olho Escuro. Começou a Guerra Santa da Floresta: em nome do Que Apaga o Sol, Wanum pegou em lanças contra Teur. A Guerra Santa da Floresta seguiu: Wanum contra Teur, na floresta em nome do Que Apaga o Sol. Teur expulsou os atacantes. Na luta morreram Ruela, Nitena e Ruan. Teil conheceu a maior fome da sua história por causa da seca. Em 21 dias, morreram 22. Muitas cabanas ficaram vazias.
+Na primavera do ano 97, Torik, que falava pelo Olho Escuro em Teil, morreu de velhice aos 68 anos. No verão, Ismaik, de Teur, tomou por esposa Natera, de Kidon, e os dois povos passaram a se visitar. Esia, a engenhosa, inventou marcas que guardavam palavras.
 
 ### Ano 98
 
-Ibzear, o rancoroso, morreu de velhice aos 53 anos. Nunca perdoou o deus pela morte de War. A Guerra Santa da Floresta seguiu: Wanum contra Teur, na floresta em nome do Que Apaga o Sol. Teur resistiu, e Wanum voltou de mãos vazias. Na luta morreram Doik e Mademar.
+Na primavera do ano 98, em Teur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Teur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 99
 
-O sol escureceu outra vez.
+Enar, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 48 anos. Numa tempestade sobre o morro, um raio matou Esia. A família de Esia nunca perdoou o céu. Depois disso, Kidon deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Kidon sai de casa. Lembram de Esia. Desde aquele dia, Kidon chama o morro de Morro do Raio.
 
 ### Ano 100
 
-Morreu Rumaya, que guiava Teur, aos 51 anos. Mana, a generosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A doença entrou em Teil e matou quatro pessoas. Depois da febre, Teil passou a queimar os seus mortos, para que a doença não voltasse. Nos anos 91 a 100 houve treze fomes, cinco batalhas, 34 preces que pareceram atendidas e nove preces sem resposta; nasceram 123 crianças e morreram 96 pessoas. No fim do ano 100, 219 pessoas viviam no mundo: Teil (88), Teur (78), Wanum (22) e Teor (31).
+No outono do ano 100, Kidema deu à luz gêmeos, Torik e Demtem. Uns viram bênção; outros, mau sinal. Demnina, que falava pela Voz do Céu em Kidon, morreu ao dar à luz. Nos anos 91 a 100 houve sete fomes, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 134 crianças e morreram 142 pessoas. No fim do ano 100, 205 pessoas viviam no mundo: Teil (78), Teur (86), Wanum (26) e Kidon (15).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Teil** vive no lago, com 88 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 95); queima os mortos (desde o ano 100).
-- **Teur** vive na floresta, com 78 pessoas, e trabalha o metal; nasceu de uma briga em Teil no ano 21; chama o deus de «o Que Queima»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 83); queima os mortos (desde o ano 83).
-- **Wanum** vive na praia, com 22 pessoas, e trabalha o metal; nasceu de uma briga em Teur no ano 64; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 72); treina os jovens com lanças (desde o ano 72); guarda tanta comida para o inverno (desde o ano 73).
-- **Teor** vive no morro, com 31 pessoas, e trabalha o metal; nasceu de uma migração em Teil no ano 72; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 82); guarda tanta comida para o inverno (desde o ano 83); treina os jovens com lanças (desde o ano 84).
+- **Teil** vive no lago, com 78 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 93).
+- **Teur** vive na floresta, com 86 pessoas, e escreve; nasceu de uma briga em Teil no ano 21; chama o deus de «a Sombra»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 84); queima os mortos (desde o ano 85); guarda tanta comida para o inverno (desde o ano 86).
+- **Wanum** vive na praia, com 26 pessoas, e trabalha o metal; nasceu de uma briga em Teur no ano 64; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 72); treina os jovens com lanças (desde o ano 72); guarda tanta comida para o inverno (desde o ano 73); não sai de casa em dia de tempestade (desde o ano 79).
+- **Kidon** vive no morro, com 15 pessoas, e trabalha o metal; nasceu de uma migração em Teil no ano 93; chama o deus de «a Voz do Céu»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 99).
 
-Lugares com nome: Praia da Fome (praia, para Wanum), Lago da Vitória (lago, para Teil), Lago do Luto (lago, para Wanum), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Wanum), Morro da Fome (morro, para Teor) e Morro da Vitória (morro, para Wanum).
+Povos que deixaram de existir: Teor.
 
-Em 100 anos nasceram 530 pessoas e morreram 319.
+Lugares com nome: Praia da Fome (praia, para Wanum), Lago da Trégua (lago, para Wanum), Lago da Trégua (lago, para Teil), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Wanum), Morro da Fome (morro, para Teor) e Morro do Raio (morro, para Kidon).
+
+Em 100 anos nasceram 535 pessoas e morreram 339.

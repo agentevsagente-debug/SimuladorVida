@@ -2,1166 +2,699 @@
 
 *cenário deus_ativo.txt.*
 
-No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Kaarel e Aru, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Esar. Não tinham vila, nem plantação, nem deus.
-
-### Ano 1
-
-No verão do ano 1, nasceu Kaorut, o primeiro de Esar.
-
-### Ano 2
-
-Na primavera do ano 2, Demo morreu de repente, aos 10 anos. O inverno foi duro, mas ninguém morreu de frio.
-
-### Ano 3
-
-Aru, a curiosa, descobriu que uma semente enterrada vira planta.
-
-*No ano 4, nada de notável aconteceu.*
-
-### Ano 5
-
-No verão do ano 5, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Quando a chuva voltou, Kurkao disse que alguém tinha ouvido os lamentos. Esar passou a chamá-lo de «o Que Rega». Assim nasceu a primeira fé. Desde então, Esar chama a floresta de Floresta da Chuva. Em Esar, Kurkao tomou para si o cuidado das preces ao Que Rega. Fora dali, a seca continuou: 25 dias sem chuva no resto da região.
-
-*O ano 6 foi calmo.*
-
-### Ano 7
-
-Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
-
-### Ano 8
-
-No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
-
-### Ano 9
-
-Na primavera do ano 9, Aru não podia mais viver perto de Kaarel. Saiu de Esar com oito pessoas e fundou Torem no lago. Pela primeira vez, havia mais de um povo no mundo. No verão, Kao foi o primeiro de Esar a rezar em voz alta: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome durou 29 dias em Esar e levou sete vidas. Kao tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Esar viu nisso obra do Que Rega. Foi só o tempo, mas quem iria dizer? A fome ensinou: desde então, Esar estoca comida e não come tudo o que colhe.
-
-### Ano 10
-
-No verão, Kaarel rezou, e nada aconteceu. Desde então, Torem acredita que o Que Rega escuta as preces. No inverno, Kurkao passou a falar pelo Que Rega em Torem. Era o primeiro a rezar e o último a duvidar. Nos anos 1 a 10 houve três secas, três preces que pareceram atendidas e três preces sem resposta; nasceram catorze crianças e morreram dez pessoas. No fim do ano 10, dezessete pessoas viviam no mundo: Esar (4) e Torem (13).
-
-### Ano 11
-
-Na primavera do ano 11, morreu Aru, que fundou Torem e o guiava, aos 62 anos. Ela sabia plantar. Quando Aru morreu, Torem guardou os ossos junto ao altar e passou a pedir a Aru pelos vivos. Os mortos de Torem viraram ancestrais a quem se reza. Aru morreu sem ensinar o que sabia. O saber de plantar morreu com ela. Torem passou a ser guiado por Oro. No verão, Oro, que guiava Torem, teve um filho: Kuro.
-
-*O ano 12 passou sem nada que a crônica precise guardar.*
-
-### Ano 13
-
-Dogael disse ter ouvido o deus de outro jeito: não era «o Que Rega», era «o Que Julga». Torem acreditou, e o deus mudou de nome. No outono, a tempestade trouxe raios para o lago. Um deles acertou Kaarel. Logo Kaarel, que tanto rezava. Os devotos de Torem não viram castigo: para eles, o Que Julga chamou Kaarel para perto. Nasceu ali a lembrança de Kaarel como santo. Desde a morte de Kaarel, ninguém em Torem chega perto do lago em dia de tempestade. Desde aquele dia, Torem chama o lago de Lago do Raio.
-
-### Ano 14
-
-Os de Esar caíram sobre Torem no lago. Torem expulsou os atacantes. Kao morreu na luta. Quando Kao morreu, Esar guardou os ossos junto ao altar e passou a pedir a Kao pelos vivos. Os mortos de Esar viraram ancestrais a quem se reza. Esar e Torem fizeram as pazes no lago, antes que a briga crescesse. Os últimos de Esar, Kademo, Kaorut e Gao, juntaram-se a Torem. Esar deixou de existir. No verão, as ruínas de Esar viraram aviso em Torem: era o que o deus fazia com quem o desagradava.
-
-### Ano 15
-
-Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
-
-*O ano 16 passou sem nada que a crônica precise guardar.*
-
-### Ano 17
-
-Na primavera do ano 17, com fome, Torem levantou acampamento no lago e foi buscar comida na praia. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Demya tinha rezado: «Que Julga, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra do Que Julga. Dessa vez, tinha sido mesmo o deus. Desde então, Torem chama a praia de Praia da Fartura.
-
-### Ano 18
-
-No inverno do ano 18, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Demya tinha rezado: «Que Julga, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Que Julga. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 19
-
-Oro, que guiava Torem, morreu de velhice aos 47 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Torem já não se preparava para nada: o Que Julga sempre dava. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 18 dias.
-
-### Ano 20
-
-No verão do ano 20, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Nos anos 11 a 20 houve três secas, duas fomes e oito preces que pareceram atendidas; nasceram cinco crianças e morreram cinco pessoas. No fim do ano 20, dezessete pessoas viviam no mundo, todas em Torem.
-
-### Ano 21
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. As preces de Torem ficaram pequenas: pedia-se ao Que Julga até sol para a pesca e sorte na caça.
-
-### Ano 22
-
-No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 23
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Kurkao acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 24
-
-Dogael, que guiava Torem, morreu de velhice aos 51 anos. Kurkao, o devoto, descobriu que uma semente enterrada vira planta. Foi a fome que o fez olhar para o chão. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 25
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Para Torem, o deus já não era «o Que Julga»: passou a ser «a Mãe da Fartura». No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 26
-
-No inverno do ano 26, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Demya pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Torem deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 27
-
-Morreu Dodemena, a rancorosa, aos 55 anos. Nas terras da Praia da Fartura, Torem plantou suas primeiras roças. Já não precisava andar atrás de comida.
-
-*Do ano 28 ao 29, a vida seguiu sem grandes acontecimentos.*
-
-### Ano 30
-
-No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No resto da região, a seca durou 24 dias. Nos anos 21 a 30 houve quatro secas, quatro fomes e nove preces que pareceram atendidas; nasceram três crianças e morreram três pessoas. No fim do ano 30, dezessete pessoas viviam no mundo, todas em Torem.
-
-*O ano 31 passou sem nada que a crônica precise guardar.*
-
-### Ano 32
-
-Na primavera, Demya, que guiava Torem, morreu dormindo, aos 60 anos.
-
-### Ano 33
-
-Na primavera, Arkuria deu à luz gêmeos, Hakuria e Suese. Uns viram bênção; outros, mau sinal.
-
-### Ano 34
-
-Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 35
-
-Na primavera do ano 35, morreu Kurkao, que guiava Torem, aos 63 anos. Foi quem deu ao deus o nome de «o Que Rega».
-
-### Ano 36
-
-No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-*O ano 37 foi calmo.*
-
-### Ano 38
-
-No verão do ano 38, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
-
-*O ano 39 passou sem nada que a crônica precise guardar.*
-
-### Ano 40
-
-Nos anos 31 a 40 houve duas secas; nasceram onze crianças e morreram cinco pessoas. No fim do ano 40, 24 pessoas viviam no mundo, todas em Torem.
-
-*Do ano 41 ao 44, a vida seguiu sem grandes acontecimentos.*
-
-### Ano 45
-
-No verão, Torar, o rancoroso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Para Torem, o deus já não era «a Mãe da Fartura»: passou a ser «o Que Rega». Fora dali, a seca continuou: 22 dias sem chuva no resto da região.
-
-*O ano 46 foi calmo.*
-
-### Ano 47
-
-No inverno do ano 47, Kurkurut acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 48
-
-Arut acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 49
-
-No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
-
-### Ano 50
-
-Na primavera, o céu da noite se encheu de luzes verdes que dançavam. Torem viu ali um bom agouro. Nos anos 41 a 50 houve três secas; nasceram nove crianças e morreram sete pessoas. No fim do ano 50, 26 pessoas viviam no mundo, todas em Torem.
-
-### Ano 51
-
-Na primavera do ano 51, Kure acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 52
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Torkael pediu: «Que Rega, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Que Rega. Dessa vez, tinha sido mesmo o deus. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Suarar acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 53
-
-Apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu.
-
-### Ano 54
-
-Na primavera do ano 54, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Torkael tinha rezado: «Que Rega, dá-nos o que comer.» A fome passou, e Torem viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. Em Torem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Torem, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Rega, e o deus decidia tudo.
-
-### Ano 55
-
-Na primavera, numa tempestade sobre a praia, um raio matou Arut. Logo Arut, que tanto rezava.
-
-### Ano 56
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 57
-
-Torkael, que falava pelo Que Rega em Torem, morreu dormindo, aos 48 anos.
-
-### Ano 58
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Depois disso, Torem deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Que Dá». No verão, Kurkurel acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 59
-
-Na primavera do ano 59, Kurkurut, que falava pelo Que Dá em Torem, morreu de velhice aos 49 anos.
-
-### Ano 60
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No outono, Toro não podia mais viver perto de Gae. Saiu de Torem com onze pessoas e fundou Toron na floresta. Em Toron, Kaya tomou para si o cuidado das preces ao Que Dá. O dia em que a chuva voltou virou festa em Toron: todo ano, celebram a chuva que o Que Dá mandou. Nos anos 51 a 60 houve duas secas, cinco fomes e quinze preces que pareceram atendidas; nasceram catorze crianças e morreram cinco pessoas. No fim do ano 60, 35 pessoas viviam no mundo: Torem (23) e Toron (12).
-
-### Ano 61
-
-Torar anunciou que o Que Dá proibia qualquer trato com Toron. O deus nunca disse isso, mas Torem obedeceu. Os de Torem caíram sobre Toron na floresta em nome do Que Dá. Toron foi derrotado e perdeu o que tinha guardado. Gar e Hakuria morreram na luta. Do céu limpo, um raio caiu na floresta e matou Toro, que guiava Toron. Em Toron, disseram que era castigo. No inverno, Hakuro acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra Santa: em nome do Que Dá, Torem pegou em lanças contra Toron.
-
-### Ano 62
-
-Toron fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Do céu limpo, um raio caiu na floresta e matou Kuria. Ninguém em Toron teve dúvida: era castigo. Dessa vez, o Que Dá não respondeu, e Torem, que tinha esquecido como se virar sozinho, pagou caro. No verão, de um dia para o outro, a floresta transbordou de comida. A fome de Toron acabou ali.
-
-### Ano 63
-
-Na primavera do ano 63, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Toron comeu até cansar. Em Toron, Gao pediu: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Toron viu nisso obra do Senhor do Trovão. Dessa vez, tinha sido mesmo o deus. No outono, Gao, que guiava Toron, morreu de fome. Os últimos de Toron, Tortorena, Torut e Kurar, juntaram-se a Torem. Toron deixou de existir. A Guerra Santa acabou porque um dos lados deixou de existir: dois anos, três batalhas e quatro mortos.
-
-### Ano 64
-
-Har acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 65
-
-Suarar acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 66
-
-Na primavera do ano 66, Har acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Har pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. A doença entrou em Torem e matou uma pessoa. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 67
-
-Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 19 dias.
-
-### Ano 68
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 69
-
-No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 70
-
-Esgae acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Para Torem, o deus já não era «o Que Dá»: passou a ser «o Pai das Águas». Nos anos 61 a 70 houve três secas, cinco fomes, três batalhas, dezoito preces que pareceram atendidas e cinco preces sem resposta; nasceram vinte crianças e morreram vinte pessoas. No fim do ano 70, 36 pessoas viviam no mundo, todas em Torem.
-
-### Ano 71
-
-No verão do ano 71, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 72
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Torar pediu: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Pai das Águas. Dessa vez, tinha sido mesmo o deus. Esgae acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 73
-
-Argar acordou se sentindo forte como nunca, sem saber por quê. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 74
-
-Na primavera do ano 74, Hao, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
-
-### Ano 75
-
-Na primavera do ano 75, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Har pediu: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Pai das Águas. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 76
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 77
-
-Na primavera do ano 77, Kurya morreu dormindo, aos 63 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 26 dias.
-
-### Ano 78
-
-Na primavera do ano 78, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 79
-
-Na primavera do ano 79, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 80
-
-Torar, que guiava Torem, morreu dormindo, aos 71 anos. Foi quem proibiu, em nome do deus, o trato com Toron. Em Torem, gritaram que o templo mentia em nome do Pai das Águas. Os sacerdotes foram tirados do poder. Em Torem, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 13, só a crônica guarda. Argar passou a guiar Torem, mas Gae não aceitou e guardou rancor. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Nos anos 71 a 80 houve quatro secas, oito fomes e dezenove preces que pareceram atendidas; nasceram 23 crianças e morreram cinco pessoas. No fim do ano 80, 54 pessoas viviam no mundo, todas em Torem.
-
-### Ano 81
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Har pediu: «Pai das Águas, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças ao Pai das Águas. Dessa vez, tinha sido mesmo o deus. No inverno, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
-
-### Ano 82
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Depois disso, Torem deixou de chamar o deus de «o Pai das Águas» e passou a chamá-lo de «o Generoso». Aria acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 83
-
-Na primavera do ano 83, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Todos davam Tortorar por morto. Ele se levantou, pediu água e sorriu. Uma febre correu Torem e levou quatro vidas. Depois da febre, Torem passou a queimar os seus mortos, para que a doença não voltasse. Veio a pior fome que o mundo tinha visto: 12 dias no inverno em Torem, e 8 mortos. As crianças foram as primeiras.
-
-### Ano 84
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Har tinha rezado: «Generoso, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 85
-
-Com Argar à frente, Torem largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 86
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. A forja de Torem não apagava mais. O metal mudou o trabalho e mudou a guerra. A terra tremeu. Caíram cinco cabanas. Esgae morreu sob os escombros.
-
-### Ano 87
-
-Na primavera do ano 87, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 88
-
-Na primavera, Kurkurel, que falava pelo Generoso em Torem, morreu dormindo, aos 58 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No outono, Kar, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Kaena deu à luz gêmeos, Gaarena e Eskael. Uns viram bênção; outros, mau sinal.
-
-### Ano 89
-
-Na primavera do ano 89, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 90
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Har pediu: «Generoso, dá-nos o que comer.» A fome passou, e Torem viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Nos anos 81 a 90 houve dez fomes e 23 preces que pareceram atendidas; nasceram 30 crianças e morreram 24 pessoas. No fim do ano 90, 61 pessoas viviam no mundo, todas em Torem.
-
-### Ano 91
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, Gae acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 92
-
-Na primavera, morreu Har, o devoto, aos 61 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 93
-
-Na primavera do ano 93, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Tortorar tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. A fome durou 18 dias em Torem e levou três vidas. No inverno, Kaut, que falava pelo Generoso em Torem, não resistiu à fome.
-
-### Ano 94
-
-Na primavera do ano 94, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Veio a pior fome que o mundo tinha visto: 20 dias em Torem, e 19 mortos. As crianças foram as primeiras. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Para Torem, o deus já não era «o Generoso»: passou a ser «a Mãe da Chuva».
+Depois que a primeira era terminou, o mundo ficou vazio. O vento passava pelas casas sem ninguém. Então o deus fez um povo novo: Dobuar e Sulinali, os três filhos com quem tinham casado, e os netos, doze ao todo. Acamparam na floresta e se chamavam Teor. Não sabiam nada de quem tinha vivido antes. Mas as ruínas estavam lá.
 
 ### Ano 95
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No resto da região, a seca durou 22 dias.
+Na primavera do ano 95, Teor encontrou as ruínas de Torem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Teor nasceu a primeira criança: Buisia, filha de Berali e Liel.
 
-### Ano 96
-
-Com lanças e promessas, Arel acabou com o conselho de Torem e passou a mandar sozinho. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+*O ano 96 passou sem nada que a crônica precise guardar.*
 
 ### Ano 97
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Kurkurar acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 97, Sulinali, a curiosa, descobriu que uma semente enterrada vira planta. Quando Berali morreu, Teor a enterrou sob uma pedra. Desde então, os mortos de Teor vão para a terra.
 
 ### Ano 98
 
-Na primavera do ano 98, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Gao ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido.
+Buela morreu com 2 anos, de uma febre que ninguém entendeu.
 
-### Ano 99
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Tortorar pediu: «Mãe da Chuva, dá-nos o que comer.» A comida voltou, e Torem deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+*O ano 99 foi calmo.*
 
 ### Ano 100
 
-Na primavera do ano 100, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Nos anos 91 a 100 houve três secas, dez fomes e 22 preces que pareceram atendidas; nasceram 40 crianças e morreram 38 pessoas. No fim do ano 100, 63 pessoas viviam no mundo, todas em Torem.
+No fim do ano 100, dezesseis pessoas viviam no mundo, todas em Teor.
 
-### Ano 101
-
-Na primavera do ano 101, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Torem passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Torem, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No verão, com Kar à frente, dezesseis pessoas deixaram Torem e fundaram Lies, na floresta.
+*O ano 101 foi calmo.*
 
 ### Ano 102
 
-Na primavera, depois de anos sob um só, Torem sentou-se em roda: dali em diante, decidia-se juntos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. O dia em que a chuva voltou virou festa em Lies: todo ano, celebram a chuva que a Mãe da Chuva mandou.
+Na primavera do ano 102, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Dobut acordou se sentindo forte como nunca, sem saber por quê. Dobuar, que guiava Teor, morreu de febre aos 59 anos. Uma tosse que não passava matou oito pessoas em Teor. Desde a febre, Teor não enterra mais ninguém: os mortos vão para o fogo.
 
-### Ano 103
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Tortorar pediu: «Mãe da Chuva, dá-nos o que comer.» A fome passou, e Torem viu nisso obra da Mãe da Chuva. Dessa vez, tinha sido mesmo o deus.
+*No ano 103, nada de notável aconteceu.*
 
 ### Ano 104
 
-Na primavera, Sukurena morreu com 4 anos, de uma febre que ninguém entendeu. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Kuria passou a falar pela Mãe da Chuva em Lies. Era a primeira a rezar e a última a duvidar. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Quando a chuva voltou, Berar disse que alguém tinha ouvido os lamentos. Teor passou a chamá-la de «a Mãe da Chuva». Para Teor, a floresta virou Floresta da Chuva.
 
 ### Ano 105
 
-Morreu Hao, que falava pela Mãe da Chuva em Torem, aos 52 anos. Kurkaut, o devoto, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Kar, que guiava Lies, teve uma filha: Markaia.
+No outono, o sol escureceu outra vez.
 
-### Ano 106
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Para Torem, o deus já não era «a Mãe da Chuva»: passou a ser «o Generoso». Har acordou se sentindo forte como nunca, sem saber por quê.
-
-### Ano 107
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Kurkaia acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 21 dias sem chuva no resto da região.
+*Os anos 106 a 107 passaram em paz.*
 
 ### Ano 108
 
-Torem cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Generoso. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Tortorar tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 9 dias em Torem e levou uma vida.
+Sulinali, fundadora de Teor, morreu dormindo, aos 62 anos. Ela sabia plantar. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 18 dias.
 
 ### Ano 109
 
-Arut, o pacífico, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+No inverno, uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito.
 
 ### Ano 110
 
-Na primavera, os de Torem caíram sobre Lies na floresta. Lies foi derrotado e perdeu o que tinha guardado. Na luta morreu Kar. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Do céu limpo, um raio caiu na floresta e matou Kuresar. Em Lies, disseram que era castigo. Para Lies, o deus já não era «a Mãe da Chuva»: passou a ser «a Voz do Céu». Para Lies, Kuresar foi castigado. Desde então, quem duvida da Voz do Céu duvida em silêncio. Nos anos 101 a 110 houve três secas, dez fomes e 28 preces que pareceram atendidas; nasceram 27 crianças e morreram dez pessoas. No fim do ano 110, 80 pessoas viviam no mundo: Torem (64) e Lies (16).
+Em Teor, Ruel tomou para si o cuidado das preces à Mãe da Chuva. De novo o sol se apagou no meio do dia. Nos anos 101 a 110 houve duas secas; nasceram duas crianças e morreram dez pessoas. No fim do ano 110, oito pessoas viviam no mundo, todas em Teor.
 
 ### Ano 111
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, começou a Guerra da Fome: Torem, com fome, foi buscar à força a comida de Lies. Do céu limpo, um raio caiu na floresta e matou Hahao. Ninguém em Lies teve dúvida: era castigo.
+Na primavera do ano 111, nas terras da Floresta da Chuva, Teor plantou suas primeiras roças. Já não precisava andar atrás de comida.
 
-### Ano 112
-
-Na primavera do ano 112, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Foram 20 dias de fome em Torem, com três mortos. Kurtore não podia mais viver perto de Arel. Saiu de Torem com dezoito pessoas e fundou Yoes no lago. Em Yoes, Kael tomou para si o cuidado das preces ao Generoso. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
-
-### Ano 113
-
-Na primavera, o templo de Yoes não aceitou Haia, que chamava o deus de «o Que Dá em Dobro». Houve gritos, pedras, e os seguidores de Haia foram embora. A Guerra da Fome seguiu: Torem contra Lies, na floresta. Torem venceu e levou a comida guardada. Na luta morreram Kuria e Kurare. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Do céu limpo, um raio caiu na floresta e matou Suhael, que guiava Lies. Em Lies, disseram que era castigo. No outono, Kael anunciou que o Generoso proibia qualquer trato com Torem. O deus nunca disse isso, mas Yoes obedeceu.
+*Os anos 112 a 113 passaram em paz.*
 
 ### Ano 114
 
-Nasceu Eskar, filho de Kurtore, que guiava Yoes. Kuresel acordou se sentindo forte como nunca, sem saber por quê. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Na Guerra da Fome, Torem atacou Lies na floresta. Torem venceu e levou a comida guardada. Har e Kurkuria morreram na luta. Do céu limpo, um raio caiu na floresta e matou Suya. Em Lies, disseram que era castigo.
+No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
-### Ano 115
-
-No outono do ano 115, Torut, o medroso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Tortorar pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 116
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 117
-
-Na primavera, Argar, o ambicioso, morreu dormindo, aos 62 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Tortorar pediu: «Generoso, dá-nos o que comer.» A comida voltou, e Torem deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Torem e Lies, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de sete anos, seis batalhas e sete mortos, a Guerra da Fome terminou em paz. Torem saiu dela mais forte.
-
-### Ano 118
-
-Gao, o desconfiado, morreu de repente, aos 42 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+*Do ano 115 ao 118, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 119
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Suhaya, de Lies, casou-se com Gar e foi viver em Torem. Foi o primeiro laço entre os dois povos. No inverno, Suo acordou se sentindo forte como nunca, sem saber por quê.
+No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No resto da região, a seca durou 25 dias.
 
 ### Ano 120
 
-Kurkure acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Choveu sem parar, e a água subiu da floresta até as terras vizinhas. A correnteza levou quinze cabanas. 10 pessoas se afogaram. Depois disso, Torem deixou de chamar o deus de «o Generoso» e passou a chamá-la de «a Grande Água». Para Torem, a água foi o fim de um tempo e o começo de outro. Nos anos 111 a 120 houve nove fomes, cinco batalhas, 30 preces que pareceram atendidas e sete preces sem resposta; nasceram 35 crianças e morreram 39 pessoas. No fim do ano 120, 76 pessoas viviam no mundo: Torem (42), Lies (4) e Yoes (30).
+Choveu sem parar, e a água subiu da floresta até as terras vizinhas. A correnteza levou quatro cabanas. Liruela, Doa, Linela e Rulinela morreram afogadas. Para Teor, o deus já não era «a Mãe da Chuva»: passou a ser «a Grande Água». Para Teor, a água foi o fim de um tempo e o começo de outro. Nos anos 111 a 120 houve duas secas; nasceram seis crianças e morreram cinco pessoas. No fim do ano 120, nove pessoas viviam no mundo, todas em Teor.
 
-### Ano 121
+*O ano 121 passou sem nada que a crônica precise guardar.*
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Torem atacou Yoes no lago. Torem venceu e levou a comida guardada. Suar, Gagaena e Suel morreram na luta. Yoes não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+### Ano 122
 
-*O ano 122 passou sem nada que a crônica precise guardar.*
+Linut foi o primeiro de Teor a rezar em voz alta: «Grande Água, leva embora a febre.» Suberor acordou se sentindo forte como nunca, sem saber por quê. Os doentes se levantaram. Em Teor, o crédito foi da Grande Água. Foi só o tempo, mas quem iria dizer? Em Teor, firmou-se a certeza de que a Grande Água ouve quem pede.
 
-### Ano 123
-
-Yoes passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Yoes passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 124
-
-Na primavera, Arel, que guiava Torem, morreu de velhice aos 59 anos. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No resto da região, a seca durou 20 dias. Yoes cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Generoso. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
-
-### Ano 125
-
-Kurkaut, o devoto, morreu de repente, aos 40 anos. Os últimos de Lies, Arela, Haena e Mare, juntaram-se a Yoes. Lies deixou de existir. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Kaia acordou se sentindo forte como nunca, sem saber por quê. Torem encontrou as ruínas de Lies. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
-
-### Ano 126
-
-No inverno do ano 126, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Tortorar tinha rezado: «Grande Água, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus. Torem passou fome no inverno por 3 dias, e seis pessoas morreram.
-
-### Ano 127
-
-Aria, que guiava Torem, morreu dormindo, aos 53 anos.
-
-### Ano 128
-
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Tortorar pediu: «Grande Água, dá-nos o que comer.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus.
-
-### Ano 129
-
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+*Do ano 123 ao 129, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 130
 
-Kael, que falava pelo Generoso em Yoes, morreu de velhice aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Torem. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Tantas preces atendidas fizeram Yoes confiar no céu mais do que nas próprias mãos. Nos anos 121 a 130 houve duas secas, sete fomes e 25 preces que pareceram atendidas; nasceram 44 crianças e morreram 22 pessoas. No fim do ano 130, 98 pessoas viviam no mundo: Torem (53) e Yoes (45).
+No fim do ano 130, nove pessoas viviam no mundo, todas em Teor.
 
-### Ano 131
-
-Na primavera do ano 131, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+*No ano 131, nada de notável aconteceu.*
 
 ### Ano 132
 
-Na primavera do ano 132, Kurtore, que fundou Yoes e o guiava, morreu dormindo, aos 60 anos. Tinha fundado Yoes. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, com Ese à frente, quinze pessoas deixaram Torem e fundaram Kures, na floresta. Em Kures, Esena tomou para si o cuidado das preces à Grande Água. No outono, Kursuo acordou se sentindo forte como nunca, sem saber por quê.
+O sol escureceu outra vez.
 
-### Ano 133
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Tore, de Yoes, casou-se com Eso e foi viver em Kures. Foi o primeiro laço entre os dois povos.
-
-### Ano 134
-
-Na primavera do ano 134, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+*Entre os anos 133 e 134, nada mudou o rumo do mundo.*
 
 ### Ano 135
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. A rixa entre Kurkurar e Kursuena rachou Yoes. Kurkurar partiu com os seus, dezenove pessoas, e fundou Arum no morro. Arum encontrou as ruínas de Lies. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Arum nasceu a primeira criança: Enkao, filho de Haena e Essuo. No inverno, em Arum, Kaut tomou para si o cuidado das preces ao Generoso.
+No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Para Teor, o deus já não era «a Grande Água»: passou a ser «a Mãe da Chuva». Fora dali, a seca continuou: 18 dias sem chuva no resto da região.
 
-### Ano 136
-
-Na primavera do ano 136, Arya, a engenhosa, morreu dormindo, aos 73 anos. Haia disse ter ouvido o deus de outro jeito: não era «o Generoso», era «o Pai das Pedras». Arum acreditou, e o deus mudou de nome. Em nome do Pai das Pedras, Kaut proibiu casamentos e trocas com Yoes. Era vontade de Kaut, não do deus. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+*No ano 136, nada de notável aconteceu.*
 
 ### Ano 137
 
-Em Yoes, Gae pediu: «Generoso, não leves Kuria.» Os doentes se levantaram. Em Yoes, o crédito foi do Generoso. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Yoes, ficou escrito que foi o Generoso. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
-### Ano 138
-
-Na primavera do ano 138, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. A tempestade trouxe raios para a praia. Um deles acertou Hatorel. Ninguém em Torem teve dúvida: era castigo. Desde a morte de Hatorel, ninguém em Torem desce à praia em dia de tempestade. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
+*O ano 138 passou sem nada que a crônica precise guardar.*
 
 ### Ano 139
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Tortorar tinha rezado: «Grande Água, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Nasceu Gao, filho de Tore e Eso, com sangue de Kures e de Yoes. Tore deu à luz gêmeos, Gao e Gogoya. Uns viram bênção; outros, mau sinal.
+No verão, Lia deu à luz gêmeos, Liar e Buar. Uns viram bênção; outros, mau sinal.
 
 ### Ano 140
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, Kurtorel, de Kures, tomou por esposa Gaena, de Arum, e os dois povos passaram a se visitar. Nos anos 131 a 140 houve duas secas, dez fomes e 31 preces que pareceram atendidas; nasceram 92 crianças e morreram 26 pessoas. No fim do ano 140, 165 pessoas viviam no mundo: Torem (62), Yoes (54), Kures (19) e Arum (30).
+Na primavera, morreu Berar, que guiava Teor, aos 67 anos. Foi quem deu ao deus o nome de «a Mãe da Chuva». Nos anos 131 a 140 houve duas secas; nasceram sete crianças e morreram três pessoas. No fim do ano 140, catorze pessoas viviam no mundo, todas em Teor.
 
-### Ano 141
-
-Na primavera do ano 141, morreu Tortorar, que falava pela Grande Água em Torem, aos 65 anos. Morreu Haia, a curiosa, aos 59 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No inverno, Kures ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
-
-### Ano 142
-
-Na primavera do ano 142, Gaia, a curiosa, morreu dormindo, aos 68 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Kures passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+*Do ano 141 ao 142, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 143
 
-Na primavera do ano 143, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+No verão do ano 143, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
-### Ano 144
-
-Na primavera do ano 144, Kurkurar, que fundou Arum e o guiava, morreu de velhice aos 49 anos. Tinha fundado Arum. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Numa tempestade sobre o morro, um raio matou Gakara. Ninguém em Arum teve dúvida: era castigo. Os de Torem caíram sobre Yoes no lago. Yoes foi derrotado e perdeu o que tinha guardado. Na luta morreram Kurkaia e Gamoar. Do céu limpo, um raio caiu no lago e matou Kar. Em Yoes, disseram que era castigo.
+*No ano 144, nada de notável aconteceu.*
 
 ### Ano 145
 
-Torem passou a receber bem os de fora: um casamento com outro povo virava festa. No verão, dessa vez, o Generoso não respondeu, e Yoes, que tinha esquecido como se virar sozinho, pagou caro. No outono, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+Morreu Ruel, que falava pela Mãe da Chuva em Teor, aos 56 anos.
 
 ### Ano 146
 
-Na primavera do ano 146, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Arkurena pediu: «Grande Água, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus. No outono, Esar acordou se sentindo forte como nunca, sem saber por quê.
+Sulinela acordou se sentindo forte como nunca, sem saber por quê.
 
-### Ano 147
-
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, Esar acordou se sentindo forte como nunca, sem saber por quê. No inverno, começou a Guerra da Fome do Lago: Torem, com fome, foi buscar à força a comida de Yoes. Depois de três anos, duas batalhas e três mortos, a Guerra da Fome do Lago terminou em paz. Kuro, que falava pela Grande Água em Torem, morreu de fome.
-
-### Ano 148
-
-Na primavera do ano 148, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Torem passou fome por 21 dias, e catorze pessoas morreram. No verão, em Torem, quem vinha de fora era recebido com comida e lugar perto do fogo. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No outono, Kures já não se preparava para nada: a Grande Água sempre dava.
-
-### Ano 149
-
-Na primavera do ano 149, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Kurkurel ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Do céu limpo, um raio caiu na floresta e matou Kurtorel. Em Kures, disseram que era castigo. Começou a Guerra da Fome da Floresta: Torem, com fome, foi buscar à força a comida de Kures. Depois de duas batalhas e oito mortos, a Guerra da Fome da Floresta terminou em paz.
+*Do ano 147 ao 149, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 150
 
-Ese, que fundou Kures e o guiava, morreu dormindo, aos 63 anos. Tinha fundado Kures. Morreu o último que tinha visto o ano 83. Em Kures, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar. Arkurya tinha rezado: «Pai das Pedras, não deixes nossos filhos morrerem de fome.» A comida voltou, e Arum deu graças ao Pai das Pedras. Dessa vez, tinha sido mesmo o deus. Tantas preces atendidas fizeram Arum confiar no céu mais do que nas próprias mãos. Nos anos 141 a 150 houve três secas, onze fomes, quatro batalhas, 37 preces que pareceram atendidas e seis preces sem resposta; nasceram 102 crianças e morreram 75 pessoas. No fim do ano 150, 193 pessoas viviam no mundo: Torem (49), Yoes (67), Kures (24) e Arum (53).
+Nanaela deu à luz gêmeos, Sutea e Isbuar. Uns viram bênção; outros, mau sinal. No fim do ano 150, 23 pessoas viviam no mundo, todas em Teor.
 
 ### Ano 151
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Houve luta no morro: Torem atacou Arum. Arum foi derrotado e perdeu o que tinha guardado. Na luta morreram Kara, Yoya e Kaut. Do céu limpo, um raio caiu no morro e matou Yokurya. Ninguém em Arum teve dúvida: era castigo. A fome durou 36 dias em Torem e levou treze vidas. Torhael acordou se sentindo forte como nunca, sem saber por quê.
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Fora dali, a seca continuou: 21 dias sem chuva no resto da região.
 
-### Ano 152
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+*O ano 152 foi calmo.*
 
 ### Ano 153
 
-Na primavera do ano 153, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Sem nuvem nenhuma, um raio acertou Arel no lago. Ninguém em Yoes teve dúvida: era castigo. Arlio acordou se sentindo forte como nunca, sem saber por quê. Começou a Segunda Guerra da Fome: Torem, com fome, foi buscar à força a comida de Yoes. Depois de duas batalhas e cinco mortos, a Segunda Guerra da Fome terminou em paz.
+No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu. Depois disso, Teor deixou de chamar o deus de «a Mãe da Chuva» e passou a chamá-lo de «o Que Risca o Céu».
 
-### Ano 154
-
-No outono do ano 154, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
-
-### Ano 155
-
-Na primavera do ano 155, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar. Torar acordou se sentindo forte como nunca, sem saber por quê. No outono, do céu limpo, um raio caiu na praia e matou Torhaia. Em Torem, disseram que era castigo. No inverno, Torem via Arum ser atendido e concluiu que a Grande Água tinha escolhido os outros.
+*Os anos 154 a 155 passaram em paz.*
 
 ### Ano 156
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Eskurena pediu: «Grande Água, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus. Kurkurya acordou se sentindo forte como nunca, sem saber por quê.
+Morreu Berlinel, que falava pelo Que Risca o Céu em Teor, aos 60 anos.
 
 ### Ano 157
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+No inverno, apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu.
 
-### Ano 158
-
-Na primavera, Ese acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra Santa do Morro: em nome do Pai das Pedras, Arum pegou em lanças contra Torem. Na Guerra Santa do Morro, Torem atacou Arum no morro. Arum foi derrotado e perdeu o que tinha guardado. Yoara morreu na luta. Depois de tantos mortos, Torem e Arum se encontraram no morro e juraram paz. Depois de três anos, duas batalhas e três mortos, a Guerra Santa do Morro terminou em paz.
-
-### Ano 159
-
-No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Kurkurya pediu: «Grande Água, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus.
+*Entre os anos 158 e 159, nada mudou o rumo do mundo.*
 
 ### Ano 160
 
-Nos anos 151 a 160 houve nove fomes, seis batalhas, 31 preces que pareceram atendidas e onze preces sem resposta; nasceram 109 crianças e morreram 144 pessoas. No fim do ano 160, 158 pessoas viviam no mundo: Torem (52), Yoes (53), Kures (25) e Arum (28).
+Na primavera do ano 160, Ruisor, que guiava Teor, morreu de velhice aos 69 anos. Morreu o último que tinha visto o ano 102. Em Teor, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Isa acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No resto da região, a seca durou 26 dias. Nos anos 151 a 160 houve três secas; nasceram vinte crianças e morreram quatro pessoas. No fim do ano 160, 39 pessoas viviam no mundo, todas em Teor.
 
-### Ano 161
-
-Na primavera, Aro, que falava pela Grande Água em Torem, morreu de velhice aos 61 anos. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 25 dias sem chuva no resto da região.
-
-### Ano 162
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No outono, a terra tremeu. Caíram dezesseis cabanas. Kurare e Kurhaut morreram sob os escombros. No inverno, Kures passou a receber bem os de fora: um casamento com outro povo virava festa.
+*Os anos 161 a 162 passaram em paz.*
 
 ### Ano 163
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+No verão do ano 163, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No inverno, Bera acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 164
 
-Eskurena, que guiava Torem, morreu dormindo, aos 67 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No outono, Kure acordou se sentindo forte como nunca, sem saber por quê.
+Naberia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 165
 
-Na primavera, Kurya, que guiava Torem, morreu dormindo, aos 51 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Em Torem, Kurkurya pediu: «Grande Água, não deixes nossos filhos morrerem de fome.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Kakura acordou se sentindo forte como nunca, sem saber por quê.
+Suel, o pacífico, cansou de dividir pouca comida. Partiu com catorze pessoas para o lago e ali fundou Marum. Tea passou a falar pelo Que Risca o Céu em Marum. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 166
 
-Kursuo, que guiava Torem, morreu de repente, aos 44 anos. Nunca perdoou o deus pela morte de Torhaut. Torem escolheu Kurena para guiar o grupo. Hae queria o lugar e nunca perdoou. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Na primavera, Busut morreu com 2 anos, de uma febre que ninguém entendeu.
 
 ### Ano 167
 
-Kurkurya, a corajosa, morreu dormindo, aos 47 anos. Nunca perdoou o deus pela morte de Kuro. Com Esa à frente, a nova geração de Kures abandonou o costume de queimar os mortos, costume herdado dos avós. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Em Marum nasceu a primeira criança: Isu, filha de Tea e Suel. Tela acordou se sentindo forte como nunca, sem saber por quê. No inverno, tantas preces atendidas fizeram Teor confiar no céu mais do que nas próprias mãos.
 
 ### Ano 168
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Suo tinha rezado: «Grande Água, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus. Har acordou se sentindo forte como nunca, sem saber por quê.
+Depois de anos sob um só, Marum sentou-se em roda: dali em diante, decidia-se juntos. No outono, Sulinela, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
 ### Ano 169
 
-Na primavera do ano 169, Kurena, que guiava Torem, morreu dormindo, aos 55 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Hakurena acordou se sentindo forte como nunca, sem saber por quê. Kao implorou pelo filho. Kurhaut morreu, e daquele dia em diante Kao cuspia no chão quando falavam da Grande Água. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+No inverno do ano 169, Nanaela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 170
 
-Morreu Suo, o pacífico, aos 46 anos. Na guerra, tinha tirado duas vidas. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Houve luta na floresta: Torem atacou Kures. Kures foi derrotado e perdeu o que tinha guardado. Torkaena morreu na luta. Do céu limpo, um raio caiu na floresta e matou Haese. Em Kures, disseram que era castigo. Depois da derrota, os jovens de Arum passaram a treinar com lanças. Nos anos 161 a 170 houve três secas, dez fomes, duas batalhas, 33 preces que pareceram atendidas e quatro preces sem resposta; nasceram 122 crianças e morreram 55 pessoas. No fim do ano 170, 225 pessoas viviam no mundo: Torem (56), Yoes (85), Kures (43) e Arum (41).
+Na primavera, Isbuia acordou se sentindo forte como nunca, sem saber por quê. Nos anos 161 a 170 houve três preces que pareceram atendidas; nasceram 31 crianças e morreram oito pessoas. No fim do ano 170, 62 pessoas viviam no mundo: Teor (43) e Marum (19).
 
 ### Ano 171
 
-Na primavera do ano 171, Yoar, que falava pelo Generoso em Yoes, morreu de velhice aos 50 anos. Nunca perdoou o deus pela morte de Kakurut. Yoes deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Torem atacou Yoes no lago. Yoes resistiu, e Torem voltou de mãos vazias. Kureso e Suarya morreram na luta. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+Teor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Teor ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Risca o Céu.
 
 ### Ano 172
 
-Na primavera do ano 172, Aron acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 24 dias sem chuva no resto da região. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Depois disso, Teor deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Rega». Fora dali, a seca continuou: 21 dias sem chuva no resto da região.
 
 ### Ano 173
 
-Na primavera, Arum deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. De um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali. No inverno, Hao acordou se sentindo forte como nunca, sem saber por quê.
+Sutea acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 174
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Kurar pediu: «Grande Água, dá-nos o que comer.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus. Arsuo ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Os de Arum caíram sobre Torem na praia em nome do Pai das Pedras. Torem resistiu, e Arum voltou de mãos vazias. Na luta morreram Kaenut, Kao, Enya e Kurar. Do céu limpo, um raio caiu na praia e matou Kagael. Em Torem, disseram que era castigo.
+Na primavera do ano 174, Nanaela, que falava pelo Que Rega em Teor, morreu dormindo, aos 58 anos. Rua, de Teor, casou-se com Linar e foi viver em Marum. Foi o primeiro laço entre os dois povos. Liel acordou se sentindo forte como nunca, sem saber por quê. No outono, as preces de Teor ficaram pequenas: pedia-se ao Que Rega até sol para a pesca e sorte na caça.
 
 ### Ano 175
 
-Morreu Arsuo, filho pequeno de Haena. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+Liela não podia mais viver perto de Suberor. Saiu de Teor com oito pessoas e fundou Suak na praia. Em Suak nasceu a primeira criança: Teruela, filha de Naberia e Linbut. Lirua acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 176
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, começou a Guerra Santa da Praia: em nome do Pai das Pedras, Arum pegou em lanças contra Torem. Depois de dois anos, duas batalhas e seis mortos, a Guerra Santa da Praia terminou em paz. Torem saiu dela mais forte. Sem nuvem nenhuma, um raio acertou Kail na floresta. Logo Kail, que tanto rezava.
+Na primavera, Budoar, de Teor, tomou por esposa Beria, de Suak, e os dois povos passaram a se visitar.
 
 ### Ano 177
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Torar tinha rezado: «Grande Água, dá-nos o que comer.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus. Uma tosse que não passava matou duas pessoas em Yoes.
+Suberor, que guiava Teor, morreu dormindo, aos 58 anos.
 
 ### Ano 178
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Kurarena acordou se sentindo forte como nunca, sem saber por quê. Começou a Terceira Guerra da Fome: Torem, com fome, foi buscar à força a comida de Kures. A Terceira Guerra da Fome acabou em trégua, depois de dois anos, duas batalhas e seis mortos. Kures saiu dela mais forte. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
+No verão do ano 178, But acordou se sentindo forte como nunca, sem saber por quê. Em Suak, Bera tomou para si o cuidado das preces ao Que Rega.
 
 ### Ano 179
 
-Kao, que falava pela Grande Água em Torem, morreu de velhice aos 68 anos. Nunca perdoou o deus pela morte de Kurhaut. Gaena partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Do céu limpo, um raio caiu na praia e matou Kure. Kure era das que mais rezavam, e Torem ficou sem entender. No inverno, Torel acordou se sentindo forte como nunca, sem saber por quê.
+Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Depois disso, Marum deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Leva». Doali acordou se sentindo forte como nunca, sem saber por quê. Sulinela, que guiava Teor, morreu de febre aos 41 anos. A febre levou Liela, que fundou Suak e o guiava. Tinha fundado Suak.
 
 ### Ano 180
 
-Hasut acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra Santa do Lago: em nome do Generoso, Yoes pegou em lanças contra Torem. A Guerra Santa do Lago seguiu: Torem contra Yoes, no lago em nome da Grande Água. Torem venceu e levou a comida guardada. Na luta morreram Kura e Kakurar. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Sem nuvem nenhuma, um raio acertou Arena na praia. Em Torem, disseram que era castigo. Nos anos 171 a 180 houve duas secas, dezessete fomes, sete batalhas, 34 preces que pareceram atendidas e onze preces sem resposta; nasceram 135 crianças e morreram 109 pessoas. No fim do ano 180, 246 pessoas viviam no mundo: Torem (47), Yoes (83), Kures (73) e Arum (43).
+Isel disse ter ouvido o deus de outro jeito: não era «o Que Rega», era «o Que Nega». Suak acreditou, e o deus mudou de nome. Em Marum, Suel pediu: «Que Leva, não leves Natau.» A febre passou, e Suel contou a todos que o Que Leva tinha ouvido. A crônica sabe que foi acaso. Nos anos 171 a 180 houve duas secas, seis preces que pareceram atendidas e três preces sem resposta; nasceram 47 crianças e morreram 50 pessoas. No fim do ano 180, 59 pessoas viviam no mundo: Teor (35), Marum (17) e Suak (7).
 
 ### Ano 181
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Depois de dois anos, três batalhas e sete mortos, a Guerra Santa do Lago terminou em paz. Depois da seca, Kures jurou nunca desperdiçar água. Esa, que guiava Kures, morreu de fome.
+No outono do ano 181, Naberia deu à luz gêmeos, Isbuali e Budour. Uns viram bênção; outros, mau sinal.
 
-### Ano 182
-
-Na primavera do ano 182, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Esgae partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Ese anunciou que o Que Fere proibia qualquer trato com Yoes. O deus nunca disse isso, mas Kures obedeceu. Kures conheceu a maior fome da sua história por causa da seca. Em 26 dias, morreram 24. Muitas cabanas ficaram vazias.
+*No ano 182, nada de notável aconteceu.*
 
 ### Ano 183
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Sem nuvem nenhuma, um raio acertou Kakael no lago. Em Yoes, disseram que era castigo. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No outono, começou a Segunda Guerra Santa: em nome do Que Fere, Kures pegou em lanças contra Yoes. Depois de duas batalhas e quatro mortos, a Segunda Guerra Santa terminou em paz. Yoes saiu dela mais forte.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Suak comeu até cansar. Em Suak, Isel pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Suak viu nisso obra do Que Nega. Dessa vez, tinha sido mesmo o deus. Para Suak, a praia virou Praia da Fartura.
 
 ### Ano 184
 
-Na primavera, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Suak comeu até cansar.
 
 ### Ano 185
 
-Haarut anunciou que a Grande Água proibia qualquer trato com Kures. O deus nunca disse isso, mas Torem obedeceu. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Haarut pediu: «Grande Água, dá-nos o que comer.» A fome passou, e Torem viu nisso obra da Grande Água. Dessa vez, tinha sido mesmo o deus.
+Em Marum, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No outono, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Suak comeu até cansar. Lirut, o devoto, cansou de dividir pouca comida. Partiu com catorze pessoas para o morro e ali fundou Lies.
 
 ### Ano 186
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Houve luta na floresta: Torem atacou Kures em nome da Grande Água. Kures resistiu, e Torem voltou de mãos vazias. Na luta morreram Gaia, Haya, Kurkaia e Eskuril. Do céu limpo, um raio caiu na floresta e matou Torena. Em Kures, disseram que era castigo. Kurel ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Torem e Yoes, cansados de enterrar os seus, fizeram as pazes no lago.
+Com Suel à frente, a nova geração de Marum abandonou o costume de queimar os mortos, costume herdado dos avós. Naor acordou se sentindo forte como nunca, sem saber por quê. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Suak comeu até cansar.
 
 ### Ano 187
 
-Na primavera do ano 187, depois dos roubos da fome, Arum parou de dividir: cada família passou a guardar o que era seu. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Foram 9 dias de fome no inverno em Torem, com quatro mortos. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Kurel, o ambicioso, não resistiu à fome.
+Nasceu Berzela, filha de Lirut, que guiava Lies. No inverno, de um dia para o outro, a praia transbordou de comida. A fome de Suak acabou ali.
 
 ### Ano 188
 
-Com lanças e promessas, Enkurena acabou com o conselho de Arum e passou a mandar sozinho. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Começou a Guerra Santa da Floresta: em nome da Grande Água, Torem pegou em lanças contra Kures. A Guerra Santa da Floresta acabou em trégua, depois de dois anos, duas batalhas e seis mortos.
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Teor, o deus já não era «o Que Rega»: passou a ser «a Sombra». Em Lies, Lirut começou a pregar que o deus não era «o Que Rega». Era «o Que Dá em Dobro». Em poucos anos, todos rezavam assim. Rusuia acordou se sentindo forte como nunca, sem saber por quê. Desde a febre, Marum não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 189
 
-Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Kures comeu até cansar. Para Kures, o deus já não era «o Que Fere»: passou a ser «o Generoso». Nira acordou se sentindo forte como nunca, sem saber por quê. Os de Arum caíram sobre Torem na praia em nome do Pai das Pedras. Torem resistiu, e Arum voltou de mãos vazias. Nio, Eskurya e Kurenya morreram na luta. Sem nuvem nenhuma, um raio acertou Kuraria na praia. Ninguém em Torem teve dúvida: era castigo.
+Na primavera, morreu Ruali, filha pequena de Islinali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. No outono, de um dia para o outro, a praia transbordou de comida. A fome de Suak acabou ali. Isel tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Suak deu graças ao Que Nega. Dessa vez, tinha sido mesmo o deus. Fora dali, a seca continuou: 18 dias sem chuva no resto da região.
 
 ### Ano 190
 
-Na primavera do ano 190, Gao, que guiava Kures, morreu dormindo, aos 51 anos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, os de Yoes caíram sobre Kures na floresta. Yoes venceu e levou a comida guardada. Na luta morreu Ligo. Depois de tantos mortos, Yoes e Kures se encontraram na floresta e juraram paz. Nos anos 181 a 190 houve três secas, 22 fomes, nove batalhas, 29 preces que pareceram atendidas e onze preces sem resposta; nasceram 203 crianças e morreram 174 pessoas. No fim do ano 190, 274 pessoas viviam no mundo: Torem (44), Yoes (108), Kures (83) e Arum (39).
+Nos anos 181 a 190 houve duas secas, cinco fomes, dezenove preces que pareceram atendidas e cinco preces sem resposta; nasceram 62 crianças e morreram 59 pessoas. No fim do ano 190, 63 pessoas viviam no mundo: Teor (25), Marum (22), Suak (6) e Lies (10).
 
 ### Ano 191
 
-Na primavera do ano 191, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No verão, Tena, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Houve luta no lago: Arum atacou Yoes em nome do Pai das Pedras. Arum venceu e levou a comida guardada. Na luta morreram Mokurya, Kurgaia e Kaesar.
+Dou acordou se sentindo forte como nunca, sem saber por quê.
 
-### Ano 192
-
-Gaeso partiu com duas pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Houve luta na praia: Yoes atacou Torem em nome do Generoso. Yoes venceu e levou a comida guardada. Kurkuria, Esesel, Hakurar e Kaarena morreram na luta. Veio a pior fome que o mundo tinha visto: 26 dias por causa da seca em Kures, e 40 mortos. As crianças foram as primeiras. Yoena ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido.
-
-### Ano 193
-
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Houve luta na praia: Kures atacou Torem em nome do Generoso. Torem foi derrotado e perdeu o que tinha guardado. Na luta morreram Are, Kurkurar, Estorya e Haarar. Para Kures, a praia virou Praia da Vitória. Kures e Torem, cansados de enterrar os seus, fizeram as pazes na praia. Kurkuril ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido.
-
-### Ano 194
-
-Na primavera do ano 194, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Em Torem, Gakurya pediu: «Grande Água, não deixes nossos filhos morrerem de fome.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus. Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu. No outono, Niyoel acordou se sentindo forte como nunca, sem saber por quê.
+*Do ano 192 ao 194, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 195
 
-Na primavera do ano 195, Kuril, a devota, inventou marcas que guardavam palavras. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Do céu limpo, um raio caiu na floresta e matou Gaon. Gaon era dos que mais rezavam, e Kures ficou sem entender. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+Na primavera, Beria, a rancorosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. Para Marum, o deus já não era «o Que Leva»: passou a ser «o Olho Escuro». Para Suak, o deus já não era «o Que Nega»: passou a ser «o Olho Escuro». Maria acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 196
 
-Na primavera do ano 196, de um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali. Em Arum, quem vinha de fora era recebido com comida e lugar perto do fogo. De novo Yoes contra Torem em nome do Generoso, como no ano 192. Torem foi derrotado e perdeu o que tinha guardado. Na luta morreram Torsuo e Arkurar. Torarel acordou se sentindo forte como nunca, sem saber por quê. Para Yoes, o morro virou Morro da Vitória.
+Na primavera do ano 196, morreu Linor, que falava pela Sombra em Teor, aos 53 anos. Desde a morte de Subuel, nunca mais tinha rezado.
 
-### Ano 197
-
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Kurkao acordou se sentindo forte como nunca, sem saber por quê. Começou a Quarta Guerra da Fome: Yoes, com fome, foi buscar à força a comida de Kures. Do céu limpo, um raio caiu na floresta e matou Eso. Ninguém em Kures teve dúvida: era castigo. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
+*O ano 197 passou sem nada que a crônica precise guardar.*
 
 ### Ano 198
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. A Quarta Guerra da Fome acabou em trégua, depois de três anos, quatro batalhas e onze mortos. Yoes saiu dela mais forte. Do céu limpo, um raio caiu na floresta e matou Teteo. Em Kures, disseram que era castigo. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Bubuar acordou se sentindo forte como nunca, sem saber por quê. No resto da região, a seca durou 18 dias. Isel tinha rezado: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Suak agradeceu ao Olho Escuro. O deus nada fez: o crédito era de graça.
 
 ### Ano 199
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Sukuria tinha rezado: «Grande Água, dá-nos o que comer.» A comida voltou, e Torem deu graças à Grande Água. Dessa vez, tinha sido mesmo o deus. Os de Arum caíram sobre Torem na praia em nome do Pai das Pedras. Torem expulsou os atacantes. Na luta morreu Kayora. Depois de tantos mortos, Arum e Torem se encontraram na praia e juraram paz.
+Na primavera, Suel, que fundou Marum e o guiava, morreu dormindo, aos 64 anos. Foi quem levou os seus a fundar Marum. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Em Lies, Lirut pediu: «Que Dá em Dobro, não nos deixes secar.» Quando a chuva voltou, Lies agradeceu ao Que Dá em Dobro. O deus nada fez: o crédito era de graça.
 
 ### Ano 200
 
-Na primavera do ano 200, Yoena, que guiava Kures, morreu de velhice aos 54 anos. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No verão, sem lugar e sem comida, Suar e os seus atravessaram a borda do mundo. Ninguém soube deles. O chão da praia se sacudiu sem aviso. Caíram onze cabanas. Hakae, Torhao, Sugao e Kakura morreram sob os escombros. No outono, Sukaya acordou se sentindo forte como nunca, sem saber por quê. Nos anos 191 a 200 houve quatro secas, 21 fomes, doze batalhas, 30 preces que pareceram atendidas e onze preces sem resposta; nasceram 165 crianças e morreram 187 pessoas. No fim do ano 200, 240 pessoas viviam no mundo: Torem (41), Yoes (111), Kures (45) e Arum (43).
+Na primavera do ano 200, com Islinali à frente, Teor largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. O chão da praia se sacudiu sem aviso. Caíram quatro cabanas. Islinali e Sua morreram sob os escombros. Suak passou a acreditar que o Olho Escuro castiga, e se perguntou o que tinha feito. No inverno, Marum passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Nos anos 191 a 200 houve duas secas e oito preces que pareceram atendidas; nasceram 58 crianças e morreram quinze pessoas. No fim do ano 200, 106 pessoas viviam no mundo: Teor (39), Marum (46), Suak (5) e Lies (16).
 
-### Ano 201
-
-Na primavera do ano 201, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. De novo Yoes contra Torem em nome do Generoso, como no ano 196. Torem expulsou os atacantes. Moel morreu na luta. Do céu limpo, um raio caiu na praia e matou Hasut. Ninguém em Torem teve dúvida: era castigo.
-
-### Ano 202
-
-Na primavera do ano 202, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No outono, Enesya acordou se sentindo forte como nunca, sem saber por quê. Em Arum, quem vinha de fora era recebido com comida e lugar perto do fogo.
-
-### Ano 203
-
-Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Kureso acordou se sentindo forte como nunca, sem saber por quê. Começou a Terceira Guerra Santa: em nome da Grande Água, Torem pegou em lanças contra Kures. Do céu limpo, um raio caiu na floresta e matou Ena. Ninguém em Kures teve dúvida: era castigo. Começou a Quarta Guerra Santa: em nome do Generoso, Yoes pegou em lanças contra Torem. A Terceira Guerra Santa acabou em trégua, depois de dois anos, três batalhas e cinco mortos.
+*Entre os anos 201 e 203, nada mudou o rumo do mundo.*
 
 ### Ano 204
 
-No inverno, a Quarta Guerra Santa seguiu: Yoes contra Torem, na praia em nome do Generoso. Torem foi derrotado e perdeu o que tinha guardado. Arkure e Torya morreram na luta. Depois de tantos mortos, Yoes e Torem se encontraram na praia e juraram paz. A Quarta Guerra Santa acabou em trégua, depois de três anos, três batalhas e cinco mortos.
+Morreu Tel, que falava pelo Que Dá em Dobro em Lies, aos 53 anos.
 
 ### Ano 205
 
-Começou a Guerra da Floresta: o rancor entre Yoes e Kures virou guerra. Do céu limpo, um raio caiu na floresta e matou Gatel. Ninguém em Kures teve dúvida: era castigo. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Kures perdeu o saber. No verão, Kureso acordou se sentindo forte como nunca, sem saber por quê. No inverno, depois de dois anos, três batalhas e oito mortos, a Guerra da Floresta terminou em paz.
+Na primavera do ano 205, Berel, que guiava Teor, morreu de velhice aos 51 anos. Buela acordou se sentindo forte como nunca, sem saber por quê. De novo o sol se apagou no meio do dia.
 
 ### Ano 206
 
-Kakurena acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No outono, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Kures comeu até cansar. Liut tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A fome passou, e Kures viu nisso obra da Sombra. Dessa vez, tinha sido mesmo o deus. Fora dali, a seca continuou: 26 dias sem chuva no resto da região.
+Na primavera, Doteor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 207
 
-Uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Kures comeu até cansar.
+Na primavera, Naruel, de Lies, tomou por esposa Tamaru, de Marum, e os dois povos passaram a se visitar. Em Lies, Naruel tomou para si o cuidado das preces ao Que Dá em Dobro.
 
 ### Ano 208
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Kures comeu até cansar. Em Kures, Torarel pediu: «Sombra, dá-nos o que comer.» A fome passou, e Kures viu nisso obra da Sombra. Dessa vez, tinha sido mesmo o deus.
+Na primavera, Isel, que guiava Suak, morreu de velhice aos 49 anos. Nunca perdoou o deus pela morte de Teali. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Para Teor, o deus já não era «a Sombra»: passou a ser «o Pai das Águas». No outono, Lindoali acordou se sentindo forte como nunca, sem saber por quê. Fora dali, a seca continuou: 18 dias sem chuva no resto da região.
 
 ### Ano 209
 
-Na primavera do ano 209, de um dia para o outro, a floresta transbordou de comida. A fome de Kures acabou ali.
+Tantas preces atendidas fizeram Marum confiar no céu mais do que nas próprias mãos. De novo o sol se apagou no meio do dia. Para Lies, o deus já não era «o Que Dá em Dobro»: passou a ser «o Que Apaga o Sol».
 
 ### Ano 210
 
-Nos anos 201 a 210 houve oito fomes, nove batalhas, dezessete preces que pareceram atendidas e doze preces sem resposta; nasceram 119 crianças e morreram 169 pessoas. No fim do ano 210, 190 pessoas viviam no mundo: Torem (29), Yoes (98), Kures (18) e Arum (45).
+Nos anos 201 a 210 houve doze preces que pareceram atendidas; nasceram 93 crianças e morreram 21 pessoas. No fim do ano 210, 178 pessoas viviam no mundo: Teor (68), Marum (75), Suak (6) e Lies (29).
 
 ### Ano 211
 
-Na primavera do ano 211, morreu Yoel, que guiava Yoes, aos 71 anos.
+Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. No inverno, tantas preces atendidas fizeram Lies confiar no céu mais do que nas próprias mãos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Depois disso, Marum deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Generoso». Para Marum, o lago virou Lago da Fartura.
 
-*Os anos 212 a 213 passaram em paz.*
+### Ano 212
+
+Na primavera, Bulia, de Teor, casou-se com Toel e foi viver em Lies. Foi o primeiro laço entre os dois povos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Em Marum, Linteut pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Marum deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Em Marum, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+
+### Ano 213
+
+Na primavera do ano 213, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Suor tinha rezado: «Pai das Águas, dá-nos o que comer.» A fome passou, e Teor viu nisso obra do Pai das Águas. Dessa vez, tinha sido mesmo o deus. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Doteor acordou se sentindo forte como nunca, sem saber por quê. Isrue, a devota, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 214
 
-Na primavera do ano 214, de um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali.
+No meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. As preces de Lies ficaram pequenas: pedia-se ao Que Apaga o Sol até sol para a pesca e sorte na caça. Numa tempestade sobre a praia, um raio matou Rubut. Rubut era dos que mais rezavam, e Suak ficou sem entender. Nasceu ali um costume: quando o céu escurece, ninguém em Suak sai de casa. Lembram de Rubut. Ruia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 215
 
-De um dia para o outro, a floresta transbordou de comida. A fome de Kures acabou ali. Para Kures, o deus já não era «a Sombra»: passou a ser «o Generoso». Torteia tinha rezado: «Sombra, dá-nos o que comer.» A fome passou, e Kures viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus.
+Na primavera do ano 215, Lies se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Em Suak, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Teor conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 22. Muitas cabanas ficaram vazias. Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 216
 
-Na primavera do ano 216, Kakuro, que guiava Torem, morreu dormindo, aos 65 anos. Na guerra, tinha tirado duas vidas. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar. No outono, Teon acordou se sentindo forte como nunca, sem saber por quê.
+De um dia para o outro, o lago transbordou de comida. A fome de Marum acabou ali. Marum atacou Teor na floresta. Teor resistiu, e Marum voltou de mãos vazias. Na e Temara morreram na luta. Foi a primeira vez que gente matou gente no mundo. Do céu limpo, um raio caiu na floresta e matou Doali. Em Teor, disseram que era castigo. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Marum, e 26 mortos. As crianças foram as primeiras. Maela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 217
 
-Morreu Mokura, aos 52 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+Na primavera, Libuel, que guiava Suak, morreu de repente, aos 36 anos. Suak acabou: Isruela, Budoela e Rut foram viver em Teor. A rixa entre Linlinut e Mimarel rachou Marum. Linlinut partiu com os seus, treze pessoas, e fundou Viak na praia. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Tout acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 218
 
-De um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Berbere acordou se sentindo forte como nunca, sem saber por quê. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Começou a Guerra da Fome: Marum, com fome, foi buscar à força a comida de Teor. Sem nuvem nenhuma, um raio acertou Sulior na floresta. Ninguém em Teor teve dúvida: era castigo.
 
 ### Ano 219
 
-Na primavera do ano 219, Kaesut morreu dormindo, aos 62 anos. Na guerra, tinha tirado duas vidas. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Os de Yoes caíram sobre Torem na praia em nome do Generoso. Torem foi derrotado e perdeu o que tinha guardado. Haya morreu na luta. Sem nuvem nenhuma, um raio acertou Aria na praia. Em Torem, disseram que era castigo. Nikaya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Marum acabou ali. Dessa vez, o Que Apaga o Sol não respondeu, e Lies, que tinha esquecido como se virar sozinho, pagou caro. A Guerra da Fome seguiu: Marum contra Teor, na floresta. Teor expulsou os atacantes. Maror e Dodoar morreram na luta. Sem nuvem nenhuma, um raio acertou Kaia na floresta. Ninguém em Teor teve dúvida: era castigo. Doruor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 220
 
-De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Foram 15 dias de fome no inverno em Arum, com quatro mortos. No inverno, os de Arum caíram sobre Yoes no lago em nome do Pai das Pedras. Yoes foi derrotado e perdeu o que tinha guardado. Kurel morreu na luta. Do céu limpo, um raio caiu no lago e matou Eskuria. Em Yoes, disseram que era castigo. Nos anos 211 a 220 houve treze fomes, duas batalhas e quatro preces que pareceram atendidas; nasceram 92 crianças e morreram 77 pessoas. No fim do ano 220, 205 pessoas viviam no mundo: Torem (27), Yoes (108), Kures (24) e Arum (46).
+Linteut, que falava pelo Generoso em Marum, morreu dormindo, aos 61 anos. Sem lugar e sem comida, Runaela e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. No outono, a tempestade trouxe raios para o morro. Um deles acertou Ruzel. Ruzel era dos que mais rezavam, e Lies ficou sem entender. Desde a morte de Ruzel, ninguém em Lies sobe o morro em dia de tempestade. Nos anos 211 a 220 houve quatro secas, doze fomes, três batalhas, 44 preces que pareceram atendidas e cinco preces sem resposta; nasceram 146 crianças e morreram 105 pessoas. No fim do ano 220, 215 pessoas viviam no mundo: Teor (79), Marum (89), Lies (28) e Viak (19).
 
 ### Ano 221
 
-Morreu o último que tinha visto o ano 181. Em Kures, ninguém desperdiçava uma gota d'água, mas ninguém sabia mais dizer por quê. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. A fome no inverno durou 9 dias em Torem e levou quatro vidas.
+Na primavera do ano 221, morreu Lirut, que fundou Lies e o guiava, aos 60 anos. Tinha fundado Lies. Linlinut, que fundou Viak e o guiava, morreu dormindo, aos 57 anos. Foi quem levou os seus a fundar Viak. Em Viak, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No verão, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Isar passou a falar pelo Generoso em Viak. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 222
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Kurhae acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. De novo Torem contra Yoes em nome da Grande Água, como no ano 219. Yoes resistiu, e Torem voltou de mãos vazias. Kakurut, Kurhae, Kurtorel e Gakurar morreram na luta. Sem nuvem nenhuma, um raio acertou Mora no lago. Em Yoes, disseram que era castigo.
+Em Viak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 188, só a crônica guarda. A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. Teor saiu dela mais forte. Nabuar, o devoto, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. No outono, Dor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 223
 
-Yokael, que guiava Yoes, morreu dormindo, aos 70 anos. Na guerra, tinha tirado três vidas. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar. Começou a Quinta Guerra Santa: em nome da Grande Água, Torem pegou em lanças contra Yoes. Sem nuvem nenhuma, um raio acertou Kuresya no lago. Em Yoes, disseram que era castigo.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Suor tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Teor viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Uma febre correu Marum e levou duas vidas. Nasceu Mamarel, filho de Buela e Teisar, com sangue de Viak e de Teor.
 
 ### Ano 224
 
-Na primavera do ano 224, com Arkurya à frente, Kures largou o cuidado com a água: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. A fome no inverno durou 6 dias em Yoes e levou três vidas. No outono, depois de tantos mortos, Torem e Kures se encontraram na floresta e juraram paz.
+Na primavera, Tebur, que falava pelo Generoso em Marum, morreu dormindo, aos 57 anos. O templo de Lies ficou mais forte que o líder. Naruel, que falava pelo Que Apaga o Sol, passou a decidir tudo. Com Linmarar à frente, a nova geração de Viak abandonou o treino com lanças, costume herdado dos avós. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Kaia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 225
 
-Na primavera do ano 225, Tena deu à luz gêmeos, Kurtorena e Liteia. Uns viram bênção; outros, mau sinal. A terra tremeu. Caíram 25 cabanas. Kakurel, Gayoel, Kakaon e Goya morreram sob os escombros. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar.
+Na primavera do ano 225, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. No outono, Dosuel acordou se sentindo forte como nunca, sem saber por quê. No inverno, a tempestade trouxe raios para o lago. Um deles acertou Buali. Ninguém em Marum teve dúvida: era castigo. Depois disso, Marum deixou de chamar o deus de «o Generoso» e passou a chamá-la de «a Voz do Céu». Para Marum, Buali foi castigada. Desde então, quem duvida da Voz do Céu duvida em silêncio.
 
 ### Ano 226
 
-Na primavera, Yo partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Arum comeu até cansar. A Quinta Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e sete mortos, e ninguém sabia mais por que lutava. Yoes saiu dela mais forte.
+De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Suor tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No outono, Marum cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Voz do Céu. No inverno, Buor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 227
 
-Eskaena, a devota, morreu dormindo, aos 66 anos. Na guerra, tinha tirado três vidas. Houve luta na floresta: Yoes atacou Kures. Yoes venceu e levou a comida guardada. Arel, Lio, Arkurya e Kurlia morreram na luta. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Do céu limpo, um raio caiu na floresta e matou Liya. Liya era das que mais rezavam, e Kures ficou sem entender. Para Kures, o deus já não era «o Generoso»: passou a ser «o Que Fere».
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Todos davam Linali por morta. Ela se levantou, pediu água e sorriu. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Viak acabou: Marik, Tau e Doali foram viver em Lies. Do céu limpo, um raio caiu na floresta e matou Buberut. Ninguém em Teor teve dúvida: era castigo.
 
 ### Ano 228
 
-Na primavera do ano 228, começou a Quinta Guerra da Fome: Yoes, com fome, foi buscar à força a comida de Kures. Sem nuvem nenhuma, um raio acertou Gagaia na floresta. Em Kures, disseram que era castigo. No inverno, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Os de Lies caíram sobre Teor na floresta. Lies venceu e levou a comida guardada. Toel morreu na luta. Sem nuvem nenhuma, um raio acertou Berteut na floresta. Logo Berteut, que tanto rezava. Lies passou fome por causa da seca por 24 dias, e 22 pessoas morreram. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 229
 
-Liut, o curioso, descobriu como empilhar pedras cortadas sem que caíssem. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Kures comeu até cansar. Em Kures, Torarel pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Kures viu nisso obra do Que Fere. Dessa vez, tinha sido mesmo o deus. No resto da região, a seca durou 23 dias.
+Nabuar, que falava pela Voz do Céu em Marum, morreu dormindo, aos 47 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Linlinali acordou se sentindo forte como nunca, sem saber por quê. Marum passou fome no inverno por 8 dias, e cinco pessoas morreram. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 230
 
-De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Foram 9 dias de fome no inverno em Arum, com quatro mortos. A Quinta Guerra da Fome seguiu: Kures contra Yoes, no lago em nome do Que Fere. Yoes expulsou os atacantes. Torteo, Torarel e Liut morreram na luta. Sem nuvem nenhuma, um raio acertou Kakurya na floresta. Logo Kakurya, que tanto rezava. Nos anos 221 a 230 houve duas secas, catorze fomes, seis batalhas, dez preces que pareceram atendidas e quatro preces sem resposta; nasceram 163 crianças e morreram 155 pessoas. No fim do ano 230, 210 pessoas viviam no mundo: Torem (39), Yoes (107), Kures (27) e Arum (37).
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Mardoali anunciou que a Voz do Céu proibia qualquer trato com Teor. O deus nunca disse isso, mas Marum obedeceu. No inverno, começou a Guerra da Fome da Floresta: Lies, com fome, foi buscar à força a comida de Teor. Depois de dois anos, duas batalhas e três mortos, a Guerra da Fome da Floresta terminou em paz. Nos anos 221 a 230 houve quatro secas, quinze fomes, quatro batalhas, 42 preces que pareceram atendidas e sete preces sem resposta; nasceram 151 crianças e morreram 136 pessoas. No fim do ano 230, 223 pessoas viviam no mundo: Teor (116), Marum (81) e Lies (26).
 
 ### Ano 231
 
-Morreu o último que tinha visto o ano 195. Em Kures, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Kures acabou ali. Kurteia tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Kures viu nisso obra do Que Fere. Dessa vez, tinha sido mesmo o deus. A fome durou 21 dias em Kures e levou quatro vidas.
+Morreu Bernar, que falava pela Mãe da Fartura em Teor, aos 50 anos. Com Rua à frente, dezoito pessoas deixaram Teor e fundaram Lior, na praia. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. A forja de Teor não apagava mais. O metal mudou o trabalho e mudou a guerra. Galiel acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 232
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Os últimos de Kures, Torut e Torliut, juntaram-se a Arum. Kures deixou de existir. A Quinta Guerra da Fome acabou porque um dos lados deixou de existir: cinco anos, três batalhas e oito mortos.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Berar tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Berdoel passou a falar pela Mãe da Fartura em Lior. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 233
 
-De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. A doença entrou em Yoes e matou seis pessoas. No outono, os de Arum caíram sobre Yoes no lago em nome do Pai das Pedras. Yoes expulsou os atacantes. Kayoena e Niarya morreram na luta. Do céu limpo, um raio caiu no lago e matou Gagaut, que guiava Yoes. Em Yoes, disseram que era castigo.
+Naruel, que guiava Lies, morreu de velhice aos 48 anos. Em Lies, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 185, só a crônica guarda. Em Lior nasceu a primeira criança: Nasuela, filha de Rua e Dor. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Toberia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 234
 
-Na primavera do ano 234, Torem já não cabia na praia. Kursuena, a corajosa, levou nove pessoas para a floresta e fundou Esor. Esor encontrou as ruínas de Kures. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Yoesel acordou se sentindo forte como nunca, sem saber por quê. Esa deu à luz gêmeos, Yomoel e Kurkaia. Uns viram bênção; outros, mau sinal.
+De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Linberia acordou se sentindo forte como nunca, sem saber por quê. A doença entrou em Teor e matou três pessoas. O inverno foi de gelo: duas pessoas morreram de frio.
 
 ### Ano 235
 
-Nasceu Kasua, a primeira de Esor.
+Na primavera do ano 235, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Para Teor, o deus já não era «a Mãe da Fartura»: passou a ser «o Que Risca o Céu». No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Lior passou a festejar todo ano o dia da volta da chuva, em honra da Mãe da Fartura. Linsuel acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 236
 
-Torkurar, que guiava Torem, morreu de velhice aos 70 anos. Na guerra, tinha tirado três vidas. Começou a Sexta Guerra Santa: em nome do Pai das Pedras, Arum pegou em lanças contra Yoes. Do céu limpo, um raio caiu no lago e matou Kamoia. Ninguém em Yoes teve dúvida: era castigo.
+Na primavera do ano 236, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. No verão, os de Marum caíram sobre Teor na floresta. Teor foi derrotado e perdeu o que tinha guardado. Mia, Isela e Suteia morreram na luta. Depois de tantos mortos, Marum e Teor se encontraram na floresta e juraram paz. Nali, de Lior, casou-se com Lior e foi viver em Teor. Foi o primeiro laço entre os dois povos. Para Lies, o deus já não era «o Que Apaga o Sol»: passou a ser «a Estrela de Cauda».
 
 ### Ano 237
 
-Sukure, que guiava Torem, morreu dormindo, aos 50 anos. No outono, Yoes fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Sem nuvem nenhuma, um raio acertou Gagael no lago. Em Yoes, disseram que era castigo. No inverno, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar.
+Na primavera do ano 237, Beror, que guiava Teor, morreu dormindo, aos 62 anos. Berar, que falava pelo Que Risca o Céu em Teor, morreu de velhice aos 51 anos. Sem lugar e sem comida, Ruor e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Em Teor, Berar pediu: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Teor deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 238
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Enut acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 238, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Isela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 239
 
-Kurya, de Esor, casou-se com Eskael e foi viver em Yoes. Foi o primeiro laço entre os dois povos. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No inverno, na Sexta Guerra Santa, Arum atacou Yoes no lago em nome do Pai das Pedras. Yoes expulsou os atacantes. Yoyo e Kayout morreram na luta. Do céu limpo, um raio caiu no lago e matou Yomoar. Ninguém em Yoes teve dúvida: era castigo.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. A doença entrou em Marum e matou cinco pessoas. Berut, de Lies, tomou por esposa Linela, de Lior, e os dois povos passaram a se visitar. A fome no inverno durou 9 dias em Marum e levou uma vida. No verão, Mardoali anunciou que a Voz do Céu proibia qualquer trato com Teor. O deus nunca disse isso, mas Marum obedeceu.
 
 ### Ano 240
 
-Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Com Kursuena à frente, a nova geração de Esor abandonou o treino com lanças, costume herdado dos avós. Kurgaena acordou se sentindo forte como nunca, sem saber por quê. Kursuena, que fundou Esor e o guiava, morreu de febre aos 29 anos. Foi quem levou os seus a fundar Esor. Sem nuvem nenhuma, um raio acertou Kura no lago. Em Yoes, disseram que era castigo. Nos anos 231 a 240 houve nove fomes, sete batalhas e quatro preces que pareceram atendidas; nasceram 128 crianças e morreram 204 pessoas. No fim do ano 240, 135 pessoas viviam no mundo: Torem (22), Yoes (77), Arum (30) e Esor (6).
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Dobera acordou se sentindo forte como nunca, sem saber por quê. Tael rezou por Miur até a voz acabar. Miur morreu mesmo assim, e Tael nunca mais rezou. No outono, de novo Marum contra Teor em nome da Voz do Céu, como no ano 236. Teor expulsou os atacantes. Na luta morreram Mimaror, Bumiur, Linmaru, Marbu e Berisela. Sem nuvem nenhuma, um raio acertou Isdoela na floresta. Ninguém em Teor teve dúvida: era castigo. Nos anos 231 a 240 houve dezenove fomes, duas batalhas, 50 preces que pareceram atendidas e oito preces sem resposta; nasceram 157 crianças e morreram 101 pessoas. No fim do ano 240, 272 pessoas viviam no mundo: Teor (113), Marum (96), Lies (44) e Lior (19).
 
 ### Ano 241
 
-A Sexta Guerra Santa seguiu: Arum contra Yoes, no lago em nome do Pai das Pedras. Yoes resistiu, e Arum voltou de mãos vazias. Na luta morreram Nira, Niut e Kurara. Depois de tantos mortos, Arum e Yoes se encontraram no lago e juraram paz. A Sexta Guerra Santa acabou em trégua, depois de oito anos, seis batalhas e onze mortos. Yoes saiu dela mais forte.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Começou a Guerra Santa: em nome da Voz do Céu, Marum pegou em lanças contra Teor. A Guerra Santa acabou em trégua, depois de um ano, duas batalhas e oito mortos. Isbuel acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Teali na floresta. Ninguém em Teor teve dúvida: era castigo.
 
 ### Ano 242
 
-No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No resto da região, a seca durou 18 dias.
+De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Todos davam Linberia por morta. Ela se levantou, pediu água e sorriu. Do céu limpo, um raio caiu na praia e matou Isisela. Em Lior, disseram que era castigo. Começou a Segunda Guerra da Fome: Lies, com fome, foi buscar à força a comida de Teor. No outono, começou a Guerra Santa da Praia: em nome da Voz do Céu, Marum pegou em lanças contra Lior. Depois de duas batalhas e dois mortos, a Guerra Santa da Praia terminou em paz. Marum saiu dela mais forte.
 
 ### Ano 243
 
-Yomoel acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 243, sem lugar e sem comida, Kae e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De um dia para o outro, o morro transbordou de comida. A fome de Lies acabou ali. Nar acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu na floresta e matou Linali. Em Teor, disseram que era castigo.
 
 ### Ano 244
 
-No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
+Na primavera, morreu Terut, que guiava Teor, aos 53 anos. Mardoali, que falava pela Voz do Céu em Marum, morreu de velhice aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Teor. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Dobera acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu na floresta e matou Runar. Em Teor, disseram que era castigo.
 
 ### Ano 245
 
-Sugael, que guiava Esor, morreu de velhice aos 48 anos. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Houve luta na praia: Yoes atacou Torem em nome do Generoso. Yoes venceu e levou a comida guardada. Na luta morreu Kursuel. Depois de tantos mortos, Yoes e Torem se encontraram na praia e juraram paz.
+Na primavera do ano 245, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Budor tinha rezado: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Marum deu graças à Voz do Céu. Dessa vez, tinha sido mesmo o deus.
 
-*Entre os anos 246 e 247, nada mudou o rumo do mundo.*
+### Ano 246
+
+Morreu Isberor, o rancoroso, aos 58 anos. Bubuar, que guiava Teor, morreu dormindo, aos 52 anos. Nunca perdoou o deus pela morte de Dosuali. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Narut tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Teor viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Todos davam Linisor por morto. Ele se levantou, pediu água e sorriu.
+
+### Ano 247
+
+Isur, que guiava Marum, morreu dormindo, aos 61 anos. Na guerra, tinha tirado duas vidas. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. No verão, os de Marum caíram sobre Lior na praia. Lior resistiu, e Marum voltou de mãos vazias. Na luta morreram Marnaur e Bur. Sem nuvem nenhuma, um raio acertou Budor no lago. Budor era dos que mais rezavam, e Marum ficou sem entender. Teor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
 
 ### Ano 248
 
-No outono do ano 248, Kura acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, a Segunda Guerra da Fome esfriou sem acordo nem vencedor: sete anos, oito batalhas e treze mortos, e ninguém sabia mais por que lutava. Teor saiu dela mais forte. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Começou a Guerra dos Irmãos: Teor e Marum, nascidos do mesmo povo, viraram inimigos. Do céu limpo, um raio caiu no lago e matou Miu. Ninguém em Marum teve dúvida: era castigo. No verão, Teor e Lior fizeram as pazes na praia, antes que a briga crescesse.
 
 ### Ano 249
 
-De novo o sol se apagou no meio do dia.
+Na primavera do ano 249, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. A Guerra dos Irmãos seguiu: Marum contra Teor, na floresta em nome da Voz do Céu. Teor resistiu, e Marum voltou de mãos vazias. Na luta morreram Butear, Nanau e Naut. Do céu limpo, um raio caiu no lago e matou Naia. Em Marum, disseram que era castigo. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Lilie acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 250
 
-No verão do ano 250, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. No inverno, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Nos anos 241 a 250 houve quatro secas e duas batalhas; nasceram 75 crianças e morreram 29 pessoas. No fim do ano 250, 181 pessoas viviam no mundo: Torem (36), Yoes (95), Arum (42) e Esor (8).
+Na primavera do ano 250, Na Guerra dos Irmãos, Teor atacou Marum no lago. Teor venceu e levou a comida guardada. Na luta morreram Toela, Ta, Tolie, Tael e Dout. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Do céu limpo, um raio caiu no lago e matou Mia. Ninguém em Marum teve dúvida: era castigo. Ruruel ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Lies passou fome por causa da seca por 24 dias, e dezessete pessoas morreram. Nos anos 241 a 250 houve 22 fomes, dezenove batalhas, 64 preces que pareceram atendidas e 28 preces sem resposta; nasceram 138 crianças e morreram 137 pessoas. No fim do ano 250, 263 pessoas viviam no mundo: Teor (89), Marum (124), Lies (21) e Lior (29).
 
 ### Ano 251
 
-Na primavera, com lanças e promessas, Ararel acabou com o conselho de Yoes e passou a mandar sozinho. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali.
 
 ### Ano 252
 
-Na primavera do ano 252, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Torhar acordou se sentindo forte como nunca, sem saber por quê.
+De um dia para o outro, o lago transbordou de comida. A fome de Marum acabou ali. Linisor acordou se sentindo forte como nunca, sem saber por quê. A guerra entre Marum e Lior continuou: Marum voltou a atacar na praia. Lior foi derrotado e perdeu o que tinha guardado. Rua, Nasuela e Kaela morreram na luta. Depois de tantos mortos, Marum e Lior se encontraram na praia e juraram paz. Marum passou fome no inverno por 9 dias, e quatro pessoas morreram.
 
 ### Ano 253
 
-Enel, que guiava Arum, morreu dormindo, aos 63 anos. No outono, Torel acordou se sentindo forte como nunca, sem saber por quê. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Na primavera, Teor escolheu Tena para guiar o grupo. Susuor queria o lugar e nunca perdoou. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. A Guerra dos Irmãos esfriou sem acordo nem vencedor: seis anos, seis batalhas e dezoito mortos, e ninguém sabia mais por que lutava. Teor saiu dela mais forte. Marali partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Lintaor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 254
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Os de Yoes caíram sobre Torem na praia em nome do Generoso. Torem expulsou os atacantes. Na luta morreram Mokar e Torena. Do céu limpo, um raio caiu na praia e matou Kurare. Ninguém em Torem teve dúvida: era castigo. No outono, Yoarel acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 254, de um dia para o outro, o lago transbordou de comida. A fome de Marum acabou ali. Marum atacou Lies no morro. Lies foi derrotado e perdeu o que tinha guardado. Ruliut e Talinali morreram na luta. Para Marum, o morro virou Morro da Vitória. Do céu limpo, um raio caiu no morro e matou Zel. Ninguém em Lies teve dúvida: era castigo. Bere, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
 ### Ano 255
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. No verão, uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Começou a Sétima Guerra Santa: em nome do Generoso, Yoes pegou em lanças contra Torem. A Sétima Guerra Santa seguiu: Yoes contra Torem, na praia em nome do Generoso. Torem resistiu, e Yoes voltou de mãos vazias. Na luta morreram Kurarut, Gael e Arkao. Do céu limpo, um raio caiu na praia e matou Torkae. Ninguém em Torem teve dúvida: era castigo.
+Morreu Buteali, que guiava Marum, aos 51 anos. Marum escolheu Dolinar para guiar o grupo. Marmarel queria o lugar e nunca perdoou. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Liar tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No verão, Marum passou a receber bem os de fora: um casamento com outro povo virava festa.
 
 ### Ano 256
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Os de Arum caíram sobre Torem na praia em nome do Pai das Pedras. Torem expulsou os atacantes. Na luta morreram Niel, Kakar e Niena. Sem nuvem nenhuma, um raio acertou Tore na praia. Ninguém em Torem teve dúvida: era castigo. No outono, começou a Oitava Guerra Santa: em nome do Pai das Pedras, Arum pegou em lanças contra Torem. A Oitava Guerra Santa seguiu: Arum contra Torem, na praia em nome do Pai das Pedras. Arum venceu e levou a comida guardada. Kurgar, Kurtore, Suena e Yoena morreram na luta.
+Na primavera do ano 256, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Ruzel acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra da Fome do Morro: Marum, com fome, foi buscar à força a comida de Lies. Sem nuvem nenhuma, um raio acertou Sugael no morro. Em Lies, disseram que era castigo. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 257
 
-Na primavera, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. No inverno, a Oitava Guerra Santa seguiu: Arum contra Torem, na praia em nome do Pai das Pedras. Arum venceu e levou a comida guardada. Kakae, Kuraria e Aro morreram na luta. Depois de tantos mortos, Arum e Torem se encontraram na praia e juraram paz. Depois de um ano, três batalhas e dez mortos, a Oitava Guerra Santa terminou em paz. Sem nuvem nenhuma, um raio acertou Ese na praia. Ninguém em Torem teve dúvida: era castigo.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Todos davam Berel por morto. Ele se levantou, pediu água e sorriu. Do céu limpo, um raio caiu no morro e matou Galiel. Galiel era dos que mais rezavam, e Lies ficou sem entender. Começou a Terceira Guerra da Fome: Marum, com fome, foi buscar à força a comida de Teor. Depois de duas batalhas e quatro mortos, a Terceira Guerra da Fome terminou em paz.
 
 ### Ano 258
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Enesena acordou se sentindo forte como nunca, sem saber por quê. O sol escureceu outra vez. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Sem nuvem nenhuma, um raio acertou Haaria na praia. Em Torem, disseram que era castigo.
+Na primavera, morreu Dolinar, que guiava Marum, aos 52 anos. Nunca perdoou o deus pela morte de Namarel. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Marum comeu até cansar. Berdoel anunciou que a Voz do Céu proibia qualquer trato com Lies. O deus nunca disse isso, mas Lior obedeceu. Do céu limpo, um raio caiu no morro e matou Tokaela. Logo Tokaela, que tanto rezava. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo.
 
 ### Ano 259
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Sem nuvem nenhuma, um raio acertou Kao na praia. Em Torem, disseram que era castigo. A fome no inverno durou 9 dias em Arum e levou três vidas. Gakaya morreu de frio. Na guerra, tinha tirado duas vidas. A terra tremeu. Caíram dezoito cabanas. Torhar, Yora, Enkao e Yoar morreram sob os escombros.
+Na primavera do ano 259, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Todos davam Toberela por morta. Ela se levantou, pediu água e sorriu. No outono, houve luta na floresta: Lior atacou Teor em nome da Voz do Céu. Teor expulsou os atacantes. Naik, Linsuia, Isdoik e Dobera morreram na luta. Do céu limpo, um raio caiu na floresta e matou Tesua. Em Teor, disseram que era castigo. Começou a Guerra Santa do Morro: em nome da Voz do Céu, Lior pegou em lanças contra Lies.
 
 ### Ano 260
 
-Na primavera do ano 260, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Suesia teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela. No meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Yoarel acordou se sentindo forte como nunca, sem saber por quê. Um raio sem nuvem acertou Kurkuro, que guiava Esor, diante de todos. Em Esor, disseram que era castigo. No inverno, depois de seis anos, sete batalhas e quinze mortos, a Sétima Guerra Santa terminou em paz. Nos anos 251 a 260 houve quatro secas, doze fomes e doze batalhas; nasceram 102 crianças e morreram 89 pessoas. No fim do ano 260, 195 pessoas viviam no mundo: Torem (27), Yoes (112), Arum (45) e Esor (11).
+De um dia para o outro, o lago transbordou de comida. A fome de Marum acabou ali. Tebuela teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela. A Guerra da Fome do Morro esfriou sem acordo nem vencedor: seis anos, cinco batalhas e onze mortos, e ninguém sabia mais por que lutava. Começou a Segunda Guerra Santa: em nome da Voz do Céu, Lior pegou em lanças contra Teor. Sem nuvem nenhuma, um raio acertou Isar na floresta. Ninguém em Teor teve dúvida: era castigo. Depois de dois anos, três batalhas e cinco mortos, a Guerra Santa do Morro terminou em paz. Nos anos 251 a 260 houve duas secas, 21 fomes, treze batalhas, 60 preces que pareceram atendidas e dezoito preces sem resposta; nasceram 144 crianças e morreram 261 pessoas. No fim do ano 260, 135 pessoas viviam no mundo: Teor (97), Marum (11), Lies (13) e Lior (14).
 
 ### Ano 261
 
-Kurkura acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No inverno, Aryo, de Arum, tomou por esposa Ka, de Esor, e os dois povos passaram a se visitar.
+Tout, que guiava Lies, morreu dormindo, aos 59 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. No verão, do céu limpo, um raio caiu no lago e matou Tabua. Logo Tabua, que tanto rezava. No inverno, começou a Guerra Santa do Lago: em nome da Mãe da Fartura, Marum pegou em lanças contra Lior. Depois de duas batalhas e três mortos, a Guerra Santa do Lago terminou em paz. Marum saiu dela mais forte.
 
 ### Ano 262
 
-Morreu Kurkuria, aos 64 anos. Na guerra, tinha tirado duas vidas. Suesia anunciou que a Grande Água proibia qualquer trato com Torem. O deus nunca disse isso, mas Esor obedeceu. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. Enar acordou se sentindo forte como nunca, sem saber por quê.
+Morreu o último que tinha visto o ano 216. Em Marum, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Em Teor, Buor pediu: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Teor viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No outono, Natear acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 263
 
-Na primavera do ano 263, de um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Do céu limpo, um raio caiu no morro e matou Yoarar. Ninguém em Arum teve dúvida: era castigo. No inverno, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Esor perdeu o saber. Começou a Guerra da Fome do Morro: Yoes, com fome, foi buscar à força a comida de Arum.
+Na primavera do ano 263, de um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 22 dias sem chuva no resto da região. A Segunda Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e seis mortos, e ninguém sabia mais por que lutava. Teor saiu dela mais forte.
 
 ### Ano 264
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. A Guerra da Fome do Morro seguiu: Yoes contra Arum, no morro. Arum foi derrotado e perdeu o que tinha guardado. Na luta morreram Yoeno e Niyora. Do céu limpo, um raio caiu no morro e matou Kaya. Ninguém em Arum teve dúvida: era castigo. Foram 21 dias de fome por causa da seca em Yoes, com 37 mortos. No verão, Suesia anunciou que a Grande Água proibia qualquer trato com Yoes. O deus nunca disse isso, mas Esor obedeceu.
+De um dia para o outro, o morro transbordou de comida. A fome de Lies acabou ali. Para Lies, o deus já não era «a Mão Que Cura»: passou a ser «o Generoso». Lia partiu com três pessoas para além da borda do mundo. Nunca voltaram. No meio da seca, choveu só sobre a floresta. Em volta, o céu continuou limpo. Linisor, o rancoroso, morreu de fome.
 
 ### Ano 265
 
-No outono do ano 265, os de Yoes caíram sobre Torem na praia em nome do Generoso. Yoes venceu e levou a comida guardada. Na luta morreram Hakurya, Eshar e Kurya. Yoes e Torem, cansados de enterrar os seus, fizeram as pazes na praia.
+Na primavera, Teor se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Nanael, o pacífico, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Em Teor, Liar pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Teor deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Teor passou fome no inverno por 9 dias, e 57 pessoas morreram.
 
 ### Ano 266
 
-Na primavera, sem nuvem nenhuma, um raio acertou Yoyoya no morro. Em Arum, disseram que era castigo. A Guerra da Fome do Morro seguiu: Arum contra Yoes, no lago em nome do Pai das Pedras. Yoes resistiu, e Arum voltou de mãos vazias. Na luta morreram Enkaya e Nikaut. No inverno, Ara acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali.
+Em Lior, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 267
 
-Morreu Ararel, que guiava Yoes, aos 65 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Momoena acordou se sentindo forte como nunca, sem saber por quê. No verão, do céu limpo, um raio caiu no morro e matou Aryoena. Ninguém em Arum teve dúvida: era castigo. A Guerra da Fome do Morro seguiu: Arum contra Yoes, no lago em nome do Pai das Pedras. Yoes expulsou os atacantes. Na luta morreram Enya e Kakurel.
+Na primavera, Dodoali ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Depois disso, Lior deixou de chamar o deus de «a Voz do Céu» e passou a chamá-lo de «o Que Levanta».
 
-### Ano 268
-
-Na primavera do ano 268, morreu Gakara, aos 65 anos. Na guerra, tinha tirado duas vidas. No inverno, a Guerra da Fome do Morro seguiu: Arum contra Yoes, no lago em nome do Pai das Pedras. Yoes resistiu, e Arum voltou de mãos vazias. Na luta morreram Eskaena, Enar e Niarar. Do céu limpo, um raio caiu no morro e matou Yokaya. Em Arum, disseram que era castigo.
-
-### Ano 269
-
-Gara passou a guiar Yoes, mas Esar não aceitou e guardou rancor. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. No outono, Enkaena acordou se sentindo forte como nunca, sem saber por quê. No inverno, na Guerra da Fome do Morro, Arum atacou Yoes no lago em nome do Pai das Pedras. Yoes resistiu, e Arum voltou de mãos vazias. Yoarel e Esarena morreram na luta. Sem nuvem nenhuma, um raio acertou Esena no morro. Ninguém em Arum teve dúvida: era castigo.
+*Do ano 268 ao 269, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 270
 
-De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No outono, a Guerra da Fome do Morro seguiu: Arum contra Yoes, no lago em nome do Pai das Pedras. Yoes expulsou os atacantes. Na luta morreram Yoenut e Niesar. Arum e Yoes, cansados de enterrar os seus, fizeram as pazes no lago. Depois de sete anos, onze batalhas e 23 mortos, a Guerra da Fome do Morro terminou em paz. Yoes saiu dela mais forte. Nos anos 261 a 270 houve nove fomes e catorze batalhas; nasceram 132 crianças e morreram 116 pessoas. No fim do ano 270, 211 pessoas viviam no mundo: Torem (34), Yoes (140), Arum (29) e Esor (8).
+Nos anos 261 a 270 houve duas secas, sete fomes, três batalhas, 24 preces que pareceram atendidas e sete preces sem resposta; nasceram 89 crianças e morreram 117 pessoas. No fim do ano 270, 103 pessoas viviam no mundo: Teor (40), Marum (13), Lies (29) e Lior (21).
 
 ### Ano 271
 
-Mokaya deu à luz gêmeos, Yoesel e Kuryoar. Uns viram bênção; outros, mau sinal. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar.
+Buali acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 272
 
-Na primavera do ano 272, morreu Gao, que guiava Torem, aos 63 anos. Na guerra, tinha tirado três vidas. De um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali.
+Lies passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Sudoa acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 273
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo.
+Linela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 274
 
-Na primavera do ano 274, de um dia para o outro, o lago transbordou de comida. A fome de Yoes acabou ali.
+Na primavera do ano 274, Isia morreu de repente, aos 13 anos. Berali acordou se sentindo forte como nunca, sem saber por quê. Em Lior, Naberali pediu: «Cura Doia, Que Levanta. Ela é tão pequena.» Os doentes se levantaram. Em Lior, o crédito foi do Que Levanta. Foi só o tempo, mas quem iria dizer? No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
-### Ano 275
-
-Na primavera do ano 275, de um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Do céu limpo, um raio caiu no morro e matou Kurnio. Ninguém em Arum teve dúvida: era castigo. No verão, começou a Sexta Guerra da Fome: Yoes, com fome, foi buscar à força a comida de Arum. A fome no inverno durou 18 dias em Yoes e levou 39 vidas. A terra tremeu. Caíram 25 cabanas. Mokara e Arena morreram sob os escombros.
+*No ano 275, nada de notável aconteceu.*
 
 ### Ano 276
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Yoes comeu até cansar. Do céu limpo, um raio caiu na floresta e matou Doya. Em Esor, disseram que era castigo. Começou a Sétima Guerra da Fome: Yoes, com fome, foi buscar à força a comida de Esor. Depois da derrota, Esor não existia mais: os seis que sobraram foram levados para Yoes. A Sétima Guerra da Fome terminou com a conquista: duas batalhas e quatro mortos.
+No outono, Lies passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Lies passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, Isel, o corajoso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 ### Ano 277
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Arkael morreu de fome. Na guerra, tinha tirado duas vidas. Moena não resistiu à fome. Na guerra, tinha tirado duas vidas. Yoes atacou Torem na praia em nome do Generoso. Torem foi derrotado e perdeu o que tinha guardado. Kurhaya e Kurgaena morreram na luta. Sem nuvem nenhuma, um raio acertou Haya na praia. Em Torem, disseram que era castigo.
+Na primavera do ano 277, em Lies, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Generoso». No verão, numa tempestade sobre a praia, um raio matou Sut. Em Lior, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Lior sai de casa. Lembram de Sut.
 
 ### Ano 278
 
-Na primavera, em Yoes, já ninguém sabia escrever. O que fora feito começou a ruir. Yoes acabou: Gamora e Kamoel foram viver em Arum. A Sexta Guerra da Fome acabou porque um dos lados deixou de existir: três anos, três batalhas e oito mortos. A rixa entre Haena e Haut rachou Torem. Haena partiu com os seus, nove pessoas, e fundou Kurgar na floresta. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+Na primavera, morreu Lina, a rancorosa, aos 60 anos. Na guerra, tinha tirado duas vidas.
 
 ### Ano 279
 
-Em Kurgar, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Morreu o último que tinha visto o ano 83. Em Kurgar, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Para Kurgar, as pedras de Yoes só podiam ter sido postas por gigantes.
+Na primavera, morreu Berdoel, que guiava Lior, aos 74 anos. Foi quem proibiu, em nome do deus, o trato com Lies. Em Lior, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 215, só a crônica guarda. No outono, Nali acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 280
 
-Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Kurgar acabou ali. Houve luta na praia: Kurgar atacou Torem. Torem resistiu, e Kurgar voltou de mãos vazias. Haena e Hasuel morreram na luta. Do céu limpo, um raio caiu na praia e matou Kurkaut. Ninguém em Torem teve dúvida: era castigo. No outono, Kaniar acordou se sentindo forte como nunca, sem saber por quê. Kurgar acabou: Kakurut, Kursuar e Sue foram viver em Arum. Nos anos 271 a 280 houve doze fomes e sete batalhas; nasceram 109 crianças e morreram 244 pessoas. No fim do ano 280, 78 pessoas viviam no mundo: Torem (42) e Arum (36).
+Em Marum, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Nos anos 271 a 280 houve seis preces que pareceram atendidas; nasceram 82 crianças e morreram 27 pessoas. No fim do ano 280, 158 pessoas viviam no mundo: Teor (59), Marum (25), Lies (44) e Lior (30).
 
 ### Ano 281
 
-Na primavera, Enut acordou se sentindo forte como nunca, sem saber por quê. Torem encontrou as ruínas de Kurgar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Budoali acordou se sentindo forte como nunca, sem saber por quê.
 
-*O ano 282 foi calmo.*
+### Ano 282
+
+Na primavera, morreu Tena, que guiava Teor, aos 61 anos. De um dia para o outro, a praia transbordou de comida. A fome de Lior acabou ali. Para Lior, o deus já não era «o Que Levanta»: passou a ser «o Que Dá». Lior já não se preparava para nada: o Que Dá sempre dava. No outono, Tedoa acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 283
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+No verão do ano 283, Nazeia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 284
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Sukurut acordou se sentindo forte como nunca, sem saber por quê.
+Teor deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. No meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. Busuar tinha rezado: «Que Dá, dá-nos o que comer.» A fome passou, e Lior viu nisso obra do Que Dá. A crônica sabe que foi acaso.
 
 ### Ano 285
 
-Na primavera, Torgaia acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. Os de Torem caíram sobre Arum no morro em nome da Grande Água. Arum resistiu, e Torem voltou de mãos vazias. Na luta morreram Hakure, Suel e Kakurut. Do céu limpo, um raio caiu no morro e matou Yoya. Ninguém em Arum teve dúvida: era castigo.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Lior comeu até cansar. Em Lior, Busuar pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Lior viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Em Lior, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Kaia deu à luz gêmeos, Isbere e Totoel. Uns viram bênção; outros, mau sinal. Naliela acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 286
 
-Começou a Nona Guerra Santa: em nome da Grande Água, Torem pegou em lanças contra Arum. Na Nona Guerra Santa, Torem atacou Arum no morro em nome da Grande Água. Arum foi derrotado e perdeu o que tinha guardado. Na luta morreram Kuresel e Niena. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Do céu limpo, um raio caiu no morro e matou Enkaena. Ninguém em Arum teve dúvida: era castigo. Na Nona Guerra Santa, Torem atacou Arum no morro em nome da Grande Água. Arum resistiu, e Torem voltou de mãos vazias. Na luta morreram Eso e Torkurar.
+No meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. Berel acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 287
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar.
+Na primavera do ano 287, morreu Isnaia, que guiava Lies, aos 53 anos. Morreu Naberali, a medrosa, aos 56 anos. Em Lior, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 235, só a crônica guarda. De um dia para o outro, a praia transbordou de comida. A fome de Lior acabou ali. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca.
 
 ### Ano 288
 
-Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Fora dali, a seca continuou: 23 dias sem chuva no resto da região. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali.
+No meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. O que aconteceu não tinha explicação. Em Lies, os que zombavam das preces foram os primeiros a ajoelhar. Ruliut acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu na floresta e matou Telinut. Ninguém em Teor teve dúvida: era castigo. No inverno, em Lior, cansados do silêncio, acusaram Buia de mentir em nome do Que Dá. Buia perdeu o lugar junto ao altar.
 
 ### Ano 289
 
-Na primavera do ano 289, a Nona Guerra Santa seguiu: Torem contra Arum, no morro em nome da Grande Água. Arum resistiu, e Torem voltou de mãos vazias. Are e Haeso morreram na luta. De um dia para o outro, o morro transbordou de comida. A fome de Arum acabou ali. Sem nuvem nenhuma, um raio acertou Kurkuro no morro. Em Arum, disseram que era castigo. Foram 9 dias de fome no inverno em Arum, com um morto.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Uma febre correu Teor e levou nove vidas. Dosuali deu à luz gêmeos, Enbuel e Donaela. Uns viram bênção; outros, mau sinal. No inverno, começou a Quarta Guerra da Fome: Lior, com fome, foi buscar à força a comida de Teor. Sem nuvem nenhuma, um raio acertou Doela na floresta. Em Teor, disseram que era castigo.
 
 ### Ano 290
 
-Na primavera, morreu Enut, que guiava Arum, aos 60 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Sem nuvem nenhuma, um raio acertou Niyoar no morro. Ninguém em Arum teve dúvida: era castigo. Sukurut acordou se sentindo forte como nunca, sem saber por quê. Nos anos 281 a 290 houve três secas, nove fomes e seis batalhas; nasceram 46 crianças e morreram 31 pessoas. No fim do ano 290, 94 pessoas viviam no mundo: Torem (45) e Arum (49).
+Busuar, o engenhoso, morreu de repente, aos 30 anos. Ruela acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a praia transbordou de comida. A fome de Lior acabou ali. Nos anos 281 a 290 houve doze fomes, três batalhas, 22 preces que pareceram atendidas e seis preces sem resposta; nasceram 127 crianças e morreram 58 pessoas. No fim do ano 290, 219 pessoas viviam no mundo: Teor (100), Marum (39), Lies (46) e Lior (34).
 
 ### Ano 291
 
-Na primavera do ano 291, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. No verão, Arkuria acordou se sentindo forte como nunca, sem saber por quê. Na Nona Guerra Santa, Torem atacou Arum no morro em nome da Grande Água. Arum expulsou os atacantes. Gakuria e Sukurena morreram na luta. Do céu limpo, um raio caiu no morro e matou Gamora. Ninguém em Arum teve dúvida: era castigo.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Naruia acordou se sentindo forte como nunca, sem saber por quê. No inverno, a Quarta Guerra da Fome seguiu: Lior contra Teor, na floresta. Teor resistiu, e Lior voltou de mãos vazias. Linliar e Doali morreram na luta. Depois de tantos mortos, Lior e Teor se encontraram na floresta e juraram paz. Depois de três anos, três batalhas e quatro mortos, a Quarta Guerra da Fome terminou em paz. Teor saiu dela mais forte.
 
 ### Ano 292
 
-Na primavera do ano 292, Esarut acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Sem nuvem nenhuma, um raio acertou Arenena no morro. Ninguém em Arum teve dúvida: era castigo. Com Sugael à frente, doze pessoas deixaram Torem e fundaram Kurar, na floresta. Kurar encontrou as ruínas de Esor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+De um dia para o outro, o morro transbordou de comida. A fome de Lies acabou ali. No outono, Lies passou a receber bem os de fora: um casamento com outro povo virava festa. Dosuel, o devoto, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
 ### Ano 293
 
-Com lanças e promessas, Suese acabou com o conselho de Torem e passou a mandar sozinho. Torgaia passou a falar pela Grande Água em Kurar. Era a primeira a rezar e a última a duvidar. Enena, de Arum, casou-se com Kurhaut e foi viver em Kurar. Foi o primeiro laço entre os dois povos. Do céu limpo, um raio caiu no morro e matou Kaya. Ninguém em Arum teve dúvida: era castigo. No outono, Esyoar acordou se sentindo forte como nunca, sem saber por quê.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. No outono, Zeor acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 294
 
-Kurar deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Com Enkara à frente, onze pessoas deixaram Arum e fundaram Raur, no lago. A Nona Guerra Santa seguiu: Arum contra Torem, na praia em nome do Pai das Pedras. Torem foi derrotado e perdeu o que tinha guardado. Na luta morreram Arhar, Torare, Argaut e Kaesena. Sem nuvem nenhuma, um raio acertou Nieno no morro. Em Arum, disseram que era castigo. Raur encontrou as ruínas de Esor e disse que ali tinham vivido gigantes.
+Na primavera, Buisali partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Ruruela, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. De um dia para o outro, o morro transbordou de comida. A fome de Lies acabou ali. Foram 8 dias de fome no inverno em Lies, com três mortos. No verão, todos davam Lidoia por morta. Ela se levantou, pediu água e sorriu.
 
 ### Ano 295
 
-Na primavera do ano 295, Enkara, que guiava Raur, teve uma filha: Toya. No verão, no meio da seca, choveu só sobre a praia. Em volta, o céu continuou limpo. No inverno, a Nona Guerra Santa seguiu: Arum contra Torem, na praia em nome do Pai das Pedras. Torem foi derrotado e perdeu o que tinha guardado. Na luta morreram Kuro, Torel, Suese e Niarut. Sem nuvem nenhuma, um raio acertou Enyoya no morro. Em Arum, disseram que era castigo. A Nona Guerra Santa seguiu: Torem contra Arum, no morro em nome da Grande Água. Arum resistiu, e Torem voltou de mãos vazias. Sukurut, Kurtorar e Niyoena morreram na luta.
+Na primavera do ano 295, Isik, o pacífico, morreu de repente, aos 30 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Teor passou fome no inverno por 9 dias, e 21 pessoas morreram. Kael tinha rezado: «Generoso, dá-nos o que comer.» A comida voltou, e Lies deu graças ao Generoso. A crônica sabe que foi acaso. Os escribas de Lies registraram o milagre. Kael rezou por Ruze até a voz acabar. Ruze morreu mesmo assim, e Kael nunca mais rezou.
 
 ### Ano 296
 
-No verão, a Nona Guerra Santa seguiu: Arum contra Torem, na praia em nome do Pai das Pedras. Torem foi derrotado e perdeu o que tinha guardado. Haya, Eskurya, Arhaia e Esyoena morreram na luta. Uma nuvem parou sobre a praia e choveu ali, e só ali, no meio da seca. Do céu limpo, um raio caiu no morro e matou Sue, que guiava Arum. Ninguém em Arum teve dúvida: era castigo.
+No meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. Nanael tinha rezado: «Generoso, dá-nos o que comer.» A comida voltou, e Lies deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Suia ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Depois disso, Lies deixou de chamar o deus de «o Generoso» e passou a chamá-la de «a Mão Que Cura». Uma febre correu Lies e levou cinco vidas.
 
 ### Ano 297
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Do céu limpo, um raio caiu no morro e matou Kamoel, que guiava Arum. Em Arum, disseram que era castigo. Nasceu Arhaut, filho de Enena e Kurhaut, com sangue de Kurar e de Arum.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Teor comeu até cansar. Liruel acordou se sentindo forte como nunca, sem saber por quê. Suia, a rancorosa, não resistiu à fome.
 
 ### Ano 298
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torem acabou ali. Do céu limpo, um raio caiu no morro e matou Kuraro. Ninguém em Arum teve dúvida: era castigo.
+De um dia para o outro, o morro transbordou de comida. A fome de Lies acabou ali. A fome no inverno durou 9 dias em Lies e levou dezesseis vidas.
 
 ### Ano 299
 
-Na primavera, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torem comeu até cansar. Do céu limpo, um raio caiu no morro e matou Niya. Ninguém em Arum teve dúvida: era castigo. Torem acabou: Arar e Gaut foram viver em Raur. A Nona Guerra Santa acabou porque um dos lados deixou de existir: catorze anos, dezoito batalhas e 45 mortos.
+Na primavera do ano 299, morreu Buia, a pacífica, aos 51 anos. Nunca perdoou o deus pela morte de Isbuia. De um dia para o outro, a floresta transbordou de comida. A fome de Teor acabou ali. Lidoia acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 300
 
-Nos anos 291 a 300 houve duas secas, cinco fomes e doze batalhas; nasceram 35 crianças e morreram 63 pessoas. No fim do ano 300, 66 pessoas viviam no mundo: Arum (24), Kurar (26) e Raur (16).
+Na primavera, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Lies comeu até cansar. Tateia deu à luz gêmeos, Istau e Mibuor. Uns viram bênção; outros, mau sinal. Uma febre correu Teor e levou cinco vidas. Nos anos 291 a 300 houve dezoito fomes e vinte preces que pareceram atendidas; nasceram 167 crianças e morreram 121 pessoas. No fim do ano 300, 257 pessoas viviam no mundo: Teor (87), Marum (82), Lies (57) e Lior (31).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Arum** vive no morro, com 24 pessoas, com canais e moinhos; nasceu de uma briga em Yoes no ano 135; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 83); não sai de casa em dia de tempestade (desde o ano 136); queima os mortos (desde o ano 155); treina os jovens com lanças (desde o ano 170).
-- **Kurar** vive na floresta, com 26 pessoas, com canais e moinhos; nasceu de uma migração em Torem no ano 292; não reza a ninguém; costumes: queima os mortos (desde o ano 83); guarda tanta comida para o inverno (desde o ano 83); não sai de casa em dia de tempestade (desde o ano 138); treina os jovens com lanças (desde o ano 149).
-- **Raur** vive no lago, com 16 pessoas, com canais e moinhos; nasceu de uma migração em Arum no ano 294; chama o deus de «o Pai das Pedras»; costumes: guarda tanta comida para o inverno (desde o ano 83); não sai de casa em dia de tempestade (desde o ano 136); queima os mortos (desde o ano 155); treina os jovens com lanças (desde o ano 170).
+- **Teor** vive na floresta, com 87 pessoas, com canais e moinhos; é o povo mais antigo; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 215); não sai de casa em dia de tempestade (desde o ano 216); queima os mortos (desde o ano 227); treina os jovens com lanças (desde o ano 228).
+- **Marum** vive no lago, com 82 pessoas, em casas de pedra; nasceu de uma migração em Teor no ano 165; chama o deus de «a Mãe da Fartura»; costumes: queima os mortos (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida).
+- **Lies** vive no morro, com 57 pessoas, e escreve; nasceu de uma migração em Teor no ano 185; chama o deus de «a Mão Que Cura»; costumes: queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 230); não desperdiça uma gota d'água (desde o ano 249).
+- **Lior** vive na praia, com 31 pessoas, em casas de pedra; nasceu de uma migração em Teor no ano 231; chama o deus de «o Que Dá»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (desde o ano 260); não sai de casa em dia de tempestade (desde o ano 277); queima os mortos (desde o ano 288).
 
-Povos que deixaram de existir: Esar, Torem, Toron, Lies, Yoes, Kures, Esor e Kurgar.
+Povos que deixaram de existir: Esar, Torem, Suak e Viak.
 
-Lugares com nome: Praia da Fartura (praia, para Torem), Praia da Vitória (praia, para Arum), Praia da Vitória (praia, para Yoes), Praia da Vitória (praia, para Kures), Praia da Vitória (praia, para Esor), Praia do Luto (praia, para Kurgar), Lago do Raio (lago, para Torem), Lago da Trégua (lago, para Esar), Lago do Luto (lago, para Yoes), Lago do Luto (lago, para Kures), Lago da Vitória (lago, para Arum), Floresta da Chuva (floresta, para Esar), Floresta da Vitória (floresta, para Torem), Floresta do Luto (floresta, para Toron), Floresta do Raio (floresta, para Lies), Floresta da Vitória (floresta, para Kures), Floresta da Trégua (floresta, para Yoes), Floresta do Luto (floresta, para Esor), Floresta da Fartura (floresta, para Kurgar), Morro do Raio (morro, para Arum), Morro da Vitória (morro, para Torem) e Morro da Vitória (morro, para Yoes).
+Lugares com nome: Praia da Fartura (praia, para Suak), Praia do Raio (praia, para Lior), Praia da Trégua (praia, para Marum), Praia da Vitória (praia, para Teor), Praia da Trégua (praia, para Lies), Lago da Chuva (lago, para Torem), Lago da Fartura (lago, para Marum), Lago do Luto (lago, para Teor), Lago da Vitória (lago, para Lies), Lago da Trégua (lago, para Lior), Floresta da Chuva (floresta, para Esar), Floresta da Chuva (floresta, para Teor), Floresta do Luto (floresta, para Marum), Floresta do Luto (floresta, para Lies), Floresta do Luto (floresta, para Lior), Morro da Fartura (morro, para Lies), Morro da Vitória (morro, para Marum) e Morro do Luto (morro, para Lior).
 
-Em 300 anos nasceram 2204 pessoas e morreram 2140.
+Em 300 anos nasceram 1568 pessoas e morreram 1280.

@@ -34,7 +34,7 @@ Na primavera, Rabea, que falava pelo Pai das Águas em Zeor, deu à luz e não s
 
 ### Ano 10
 
-Viem foi o primeiro de Zeor a rezar em voz alta: «Pai das Águas, cura meu filho.» Torlinik acordou se sentindo forte como nunca, sem saber por quê. Os doentes se levantaram. Em Zeor, o crédito foi do Pai das Águas. A crônica sabe que foi acaso. Desde então, Zeor acredita que o Pai das Águas escuta as preces. No fim do ano 10, treze pessoas viviam no mundo: Zeor (8) e Linon (5).
+Viem foi o primeiro de Zeor a rezar em voz alta: «Pai das Águas, cura meu filho.» Os doentes se levantaram. Em Zeor, o crédito foi do Pai das Águas. A crônica sabe que foi acaso. Desde então, Zeor acredita que o Pai das Águas escuta as preces. No fim do ano 10, treze pessoas viviam no mundo: Zeor (8) e Linon (5).
 
 ### Ano 11
 
@@ -84,7 +84,7 @@ Desde então, Linon acredita que a Terra Brava escuta as preces.
 
 ### Ano 24
 
-Enlout acordou se sentindo forte como nunca, sem saber por quê. No outono, Zeloya passou a falar pela Terra Brava em Linon. Era a primeira a rezar e a última a duvidar.
+Zebeut acordou se sentindo forte como nunca, sem saber por quê. No outono, Zeloya passou a falar pela Terra Brava em Linon. Era a primeira a rezar e a última a duvidar.
 
 *O ano 25 passou sem nada que a crônica precise guardar.*
 
@@ -96,7 +96,7 @@ No verão, no meio da seca, choveu só sobre a floresta. Em volta, o céu contin
 
 ### Ano 29
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Zeor, o deus já não era «o Que Sacode»: passou a ser «a Sombra». Viem rezou por Zem até a voz acabar. Zem morreu mesmo assim, e Viem nunca mais rezou. A doença entrou em Zeor e matou seis pessoas.
+Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Zeor, o deus já não era «o Que Sacode»: passou a ser «a Sombra». Zebeut acordou se sentindo forte como nunca, sem saber por quê. Viem rezou por Zem até a voz acabar. Zem morreu mesmo assim, e Viem nunca mais rezou. A doença entrou em Zeor e matou seis pessoas.
 
 ### Ano 30
 
@@ -260,7 +260,7 @@ Haim morreu com 3 anos, de uma febre que ninguém entendeu.
 
 ### Ano 90
 
-No verão do ano 90, Lora acordou se sentindo forte como nunca, sem saber por quê. Loim tinha rezado: «Cura Sela, Pai das Águas. Ela é tão pequena.» A febre passou, e Loim contou a todos que o Pai das Águas tinha ouvido. A crônica sabe que foi acaso. Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Para Oror, o deus já não era «o Pai das Águas»: passou a ser «o Que Risca o Céu». Nos anos 81 a 90 houve sete preces que pareceram atendidas; nasceram 40 crianças e morreram sete pessoas. No fim do ano 90, 78 pessoas viviam no mundo: Linon (40) e Oror (38).
+No verão do ano 90, Enem acordou se sentindo forte como nunca, sem saber por quê. Loim tinha rezado: «Cura Sela, Pai das Águas. Ela é tão pequena.» A febre passou, e Loim contou a todos que o Pai das Águas tinha ouvido. A crônica sabe que foi acaso. Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Para Oror, o deus já não era «o Pai das Águas»: passou a ser «o Que Risca o Céu». Nos anos 81 a 90 houve sete preces que pareceram atendidas; nasceram 40 crianças e morreram sete pessoas. No fim do ano 90, 78 pessoas viviam no mundo: Linon (40) e Oror (38).
 
 ### Ano 91
 
@@ -280,11 +280,11 @@ Haem, que falava pelo Pai das Águas em Linon, morreu de velhice aos 60 anos. Em
 
 ### Ano 95
 
-No verão do ano 95, Oror já não cabia na floresta. Hau, a desconfiada, levou dez pessoas para a praia e fundou Demum. Lou acordou se sentindo forte como nunca, sem saber por quê. Beselu deu à luz gêmeos, Habeya e Linhaim. Uns viram bênção; outros, mau sinal. Em Demum, Linik tomou para si o cuidado das preces ao Que Risca o Céu.
+No verão do ano 95, Oror já não cabia na floresta. Hau, a desconfiada, levou dez pessoas para a praia e fundou Demum. Loloem acordou se sentindo forte como nunca, sem saber por quê. Beselu deu à luz gêmeos, Habeya e Linhaim. Uns viram bênção; outros, mau sinal. Em Demum, Linik tomou para si o cuidado das preces ao Que Risca o Céu.
 
 ### Ano 96
 
-No verão do ano 96, nasceu Harao, o primeiro de Demum. Beu acordou se sentindo forte como nunca, sem saber por quê.
+No verão do ano 96, nasceu Harao, o primeiro de Demum. Sellinim acordou se sentindo forte como nunca, sem saber por quê.
 
 *Os anos 97 a 99 passaram em paz.*
 
@@ -316,11 +316,11 @@ Na primavera do ano 106, Kios, de Oror, tomou por esposa Loa, de Demum, e os doi
 
 ### Ano 107
 
-Na primavera do ano 107, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Selem acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 107, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Ramoim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 108
 
-Na primavera do ano 108, morreu Mia, que guiava Linon, aos 59 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No outono, Kimios acordou se sentindo forte como nunca, sem saber por quê. Oror já não cabia na floresta. Linmoim, o curioso, levou 21 pessoas para o morro e fundou Tamil.
+Na primavera do ano 108, morreu Mia, que guiava Linon, aos 59 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No outono, Miraem acordou se sentindo forte como nunca, sem saber por quê. Oror já não cabia na floresta. Linmoim, o curioso, levou 21 pessoas para o morro e fundou Tamil.
 
 ### Ano 109
 
@@ -340,7 +340,7 @@ Com Linmoim à frente, a nova geração de Tamil abandonou o costume de queimar 
 
 ### Ano 113
 
-Na primavera, Kiar morreu com 2 anos, de uma febre que ninguém entendeu. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. De novo o sol se apagou no meio do dia. Momiu acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, Kiar morreu com 2 anos, de uma febre que ninguém entendeu. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. De novo o sol se apagou no meio do dia. Lohau acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 114
 
@@ -348,11 +348,11 @@ Na primavera do ano 114, de um dia para o outro, o lago transbordou de comida. A
 
 ### Ano 115
 
-Na primavera do ano 115, Enim, que guiava Linon, morreu dormindo, aos 62 anos. Sem lugar e sem comida, Bera e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Rabeya acordou se sentindo forte como nunca, sem saber por quê. No verão, numa tempestade sobre o morro, um raio matou Ra. Ninguém em Tamil teve dúvida: era castigo.
+Na primavera do ano 115, Enim, que guiava Linon, morreu dormindo, aos 62 anos. Sem lugar e sem comida, Bera e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Looros acordou se sentindo forte como nunca, sem saber por quê. No verão, numa tempestade sobre o morro, um raio matou Ra. Ninguém em Tamil teve dúvida: era castigo.
 
 ### Ano 116
 
-Na primavera do ano 116, Rahaos não esperou a vez: tomou o comando de Oror à força, e o conselho dos velhos se calou. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Raem pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. No verão, Raraem acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 116, Rahaos não esperou a vez: tomou o comando de Oror à força, e o conselho dos velhos se calou. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Raem pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. No verão, Orem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 117
 
@@ -364,7 +364,7 @@ Na primavera do ano 118, de um dia para o outro, o lago transbordou de comida. A
 
 ### Ano 119
 
-Na primavera do ano 119, Raik partiu com oito pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Rubeya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 119, Raik partiu com oito pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Tamem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 120
 
@@ -372,7 +372,7 @@ De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali
 
 ### Ano 121
 
-Raem, que guiava Linon, morreu dormindo, aos 56 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Demum passou fome por 21 dias, e seis pessoas morreram. No verão, Lilinem anunciou que o Que Dá proibia qualquer trato com Tamil. O deus nunca disse isso, mas Linon obedeceu. No outono, Linos acordou se sentindo forte como nunca, sem saber por quê.
+Raem, que guiava Linon, morreu dormindo, aos 56 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Demum passou fome por 21 dias, e seis pessoas morreram. No verão, Lilinem anunciou que o Que Dá proibia qualquer trato com Tamil. O deus nunca disse isso, mas Linon obedeceu. No outono, Moya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 122
 
@@ -380,725 +380,727 @@ No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu at
 
 ### Ano 123
 
-Na primavera do ano 123, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Demum acabou: Demselela, Linlinem e Mosela foram viver em Oror. Todos davam Lobeim por morto. Ele se levantou, pediu água e sorriu. Desde a febre, Tamil não enterra mais ninguém: os mortos vão para o fogo. Oror passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera do ano 123, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Demum acabou: Demselela, Linlinem e Mosela foram viver em Oror. Foram 9 dias de fome no inverno em Oror, com três mortos. No inverno, a rixa entre Ormoim e Linmoim rachou Tamil. Ormoim partiu com os seus, 21 pessoas, e fundou Ruem na praia. Em nome do Que Sacode, Loik proibiu casamentos e trocas com Ruem. Era vontade de Loik, não do deus.
 
 ### Ano 124
 
-Na primavera, Enbera, que falava pelo Que Afoga em Oror, morreu de velhice aos 56 anos. Lolora deu à luz gêmeos, Beu e Kilinu. Uns viram bênção; outros, mau sinal. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Vibem acordou se sentindo forte como nunca, sem saber por quê. Linon passou fome no inverno por 9 dias, e três pessoas morreram.
+Morreu Enbera, que falava pelo Que Afoga em Oror, aos 56 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, a forja de Oror não apagava mais. O metal mudou o trabalho e mudou a guerra. Em Ruem, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Linmoim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 125
 
-Na primavera, Linmoim não podia mais viver perto de Ormoim. Saiu de Tamil com quinze pessoas e fundou Kian na praia. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Kian encontrou as ruínas de Demum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Loloya acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Kimios, o engenhoso, inventou marcas que guardavam palavras. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Beraos acordou se sentindo forte como nunca, sem saber por quê. No outono, a forja de Linon não apagava mais. O metal mudou o trabalho e mudou a guerra. Ororu passou a falar pelo Que Sacode em Ruem. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 126
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Linrara tinha rezado: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. O deus calou justo quando Oror mais dependia dele. Depois daquela fome, Oror passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Em nome do Que Afoga, Bem proibiu casamentos e trocas com Linon. Era vontade de Bem, não do deus.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linrara tinha rezado: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra da Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Miselos acordou se sentindo forte como nunca, sem saber por quê. Miu deu à luz gêmeos, Kiya e Selya. Uns viram bênção; outros, mau sinal. Ramoim, de Ruem, tomou por esposa Haliu, de Linon, e os dois povos passaram a se visitar.
 
 ### Ano 127
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Linrara pediu: «Mãe da Chuva, dá-nos o que comer.» A fome passou, e Linon viu nisso obra da Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Nasceu Torem, o primeiro de Kian. Selkiya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, sem lugar e sem comida, Raloim e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Oror passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Oror passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No outono, Beraos acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 128
 
-Sem lugar e sem comida, Enlina e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Oror caíram sobre Linon no lago em nome do Que Afoga. Linon expulsou os atacantes. Na luta morreu Linhaya. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Selselya no lago. Em Linon, disseram que era castigo. Depois disso, Kian deixou de chamar o deus de «a Mão Que Cura» e passou a chamá-la de «a Estrela de Cauda».
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Linrara pediu: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. No verão, Miha, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Nasceu Vimoa, filha de Ormoim, que guiava Ruem.
 
 ### Ano 129
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Kian, Enliya tomou para si o cuidado das preces à Estrela de Cauda. Enliya, que falava pela Estrela de Cauda em Kian, deu à luz e não sobreviveu ao parto. No verão, Tamem, de Kian, tomou por esposa Momiu, de Oror, e os dois povos passaram a se visitar. No inverno, a forja de Linon não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera, morreu Enik, que guiava Linon, aos 55 anos. Bem, que falava pelo Que Afoga em Oror, morreu dormindo, aos 55 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Selhaya rezou por Enhaem até a voz acabar. Enhaem morreu mesmo assim, e Selhaya nunca mais rezou. Depois dos roubos da fome, Linon parou de dividir: cada família passou a guardar o que era seu.
 
 ### Ano 130
 
-Na primavera do ano 130, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Kia acordou se sentindo forte como nunca, sem saber por quê. No inverno, começou a Guerra Santa: em nome do Que Afoga, Oror pegou em lanças contra Linon. Do céu limpo, um raio caiu no lago e matou Raena. Logo Raena, que tanto rezava. Nos anos 121 a 130 houve três secas, dezessete fomes, três batalhas, 50 preces que pareceram atendidas e onze preces sem resposta; nasceram 127 crianças e morreram 132 pessoas. No fim do ano 130, 220 pessoas viviam no mundo: Linon (131), Oror (34), Tamil (35) e Kian (20).
+Na primavera do ano 130, Miha, a curiosa, morreu de repente, aos 38 anos. Depois de anos sob um só, Oror sentou-se em roda: dali em diante, decidia-se juntos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Foram 14 dias de fome no inverno em Linon, com três mortos. Nos anos 121 a 130 houve dezessete fomes, duas batalhas, 41 preces que pareceram atendidas e seis preces sem resposta; nasceram 130 crianças e morreram 79 pessoas. No fim do ano 130, 276 pessoas viviam no mundo: Linon (139), Oror (81), Tamil (34) e Ruem (22).
 
 ### Ano 131
 
-Na primavera do ano 131, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Veio a pior fome que o mundo tinha visto: 23 dias por causa da seca em Oror, e 33 mortos. As crianças foram as primeiras. Bem anunciou que o Que Afoga proibia qualquer trato com Kian. O deus nunca disse isso, mas Oror obedeceu. De novo o sol se apagou no meio do dia.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Foram 9 dias de fome no inverno em Linon, com cinco mortos. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Tamil já não se preparava para nada: o Que Sacode sempre dava.
 
 ### Ano 132
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon passou fome no inverno por 9 dias, e seis pessoas morreram. Depois de tantos mortos, Oror e Linon se encontraram no lago e juraram paz. A Guerra Santa acabou em trégua, depois de quatro anos, três batalhas e quatro mortos. No outono, Habeya, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Na primavera do ano 132, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Uma tosse que não passava matou cinco pessoas em Oror. No inverno, Oror atacou Linon no lago. Linon resistiu, e Oror voltou de mãos vazias. Linbeu morreu na luta. Oror acabou: Rahaem, o último, foi viver em Ruem.
 
 ### Ano 133
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Sem lugar e sem comida, Orhaos e os seus atravessaram a borda do mundo. Ninguém soube deles. Oror atacou Kian na praia em nome do Que Afoga. Kian foi derrotado e perdeu o que tinha guardado. Na luta morreram Loruya, Kiu e Moim.
+Na primavera, morreu Lilinem, que falava pela Mãe da Chuva em Linon, aos 60 anos. Nunca perdoou o deus pela morte de Miena. Em Ruem, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Dessa vez, o Que Sacode não respondeu, e Tamil, que tinha esquecido como se virar sozinho, pagou caro. Depois daquela fome, Tamil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 134
 
-Na primavera do ano 134, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Para Linon, o deus já não era «a Mãe da Chuva»: passou a ser «o Generoso». Linsela acordou se sentindo forte como nunca, sem saber por quê. A fome ensinou: desde então, Tamil estoca comida e não come tudo o que colhe. No verão, Loik anunciou que a Mão Que Cura proibia qualquer trato com Kian. O deus nunca disse isso, mas Tamil obedeceu.
+Ororu anunciou que o Que Sacode proibia qualquer trato com Linon. O deus nunca disse isso, mas Ruem obedeceu. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Para Linon, o deus já não era «a Mãe da Chuva»: passou a ser «a Mãe da Fartura». Uma febre correu Linon e levou seis vidas.
 
 ### Ano 135
 
-Na primavera, Lilinem, que falava pelo Generoso em Linon, morreu de velhice aos 62 anos. Desde a morte de Miena, nunca mais tinha rezado. Linmoim, que fundou Kian e o guiava, morreu de velhice aos 47 anos. Tinha fundado Tamil. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linrara tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Viruim acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Linrara tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Linon passou fome no inverno por 9 dias, e seis pessoas morreram.
 
 ### Ano 136
 
-Na primavera, Enik, que guiava Linon, morreu de velhice aos 62 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, os de Tamil caíram sobre Kian na praia em nome da Mão Que Cura. Tamil venceu e levou a comida guardada. Na luta morreram Bekiar e Ruraela. Do céu limpo, um raio caiu no lago e matou Selenik. Logo Selenik, que tanto rezava.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Har acordou se sentindo forte como nunca, sem saber por quê. No outono, em nome da Mãe da Fartura, Enya proibiu casamentos e trocas com Tamil. Era vontade de Enya, não do deus. A tempestade trouxe raios para o lago. Um deles acertou Libeim. A família de Libeim nunca perdoou o céu. Desde a morte de Libeim, ninguém em Linon chega perto do lago em dia de tempestade.
 
 ### Ano 137
 
-Na primavera do ano 137, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, começou a Guerra Santa do Lago: em nome da Mão Que Cura, Tamil pegou em lanças contra Linon. Sem nuvem nenhuma, um raio acertou Loenik no lago. Ninguém em Linon teve dúvida: era castigo. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Todos davam Lina por morta. Ela se levantou, pediu água e sorriu. Os de Linon caíram sobre Ruem na praia. Linon venceu e levou a comida guardada. Na luta morreram Vibela e Ruraela. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Sela não podia mais viver perto de Raenim. Saiu de Linon com dezesseis pessoas e fundou Linil na floresta.
 
 ### Ano 138
 
-Na primavera, Linrara, que falava pelo Generoso em Linon, morreu de velhice aos 52 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Beliem pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus.
+Tamos, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Os de Linon caíram sobre Tamil no morro. Linon venceu e levou a comida guardada. Na luta morreram Tamos, Orya, Mohaos e Bear. Depois de tantos mortos, Linon e Tamil se encontraram no morro e juraram paz.
 
 ### Ano 139
 
-Morreu Bem, que falava pelo Que Afoga em Oror, aos 65 anos. Foi quem proibiu, em nome do deus, o trato com Linon. Lobeim, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Oror, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles.
+Na primavera do ano 139, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Beik rezou por Selselya até a voz acabar. Selselya morreu mesmo assim, e Beik nunca mais rezou. Nas ruínas de Oror, Ha achou o que eles sabiam: aprendeu a cortar pedra. Ha passou dias nas ruínas de Oror e voltou sabendo cortar pedra.
 
 ### Ano 140
 
-Na primavera do ano 140, Lobeim, o generoso, morreu de repente, aos 24 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A Guerra Santa do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e seis mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte. Nos anos 131 a 140 houve duas secas, doze fomes, cinco batalhas, 50 preces que pareceram atendidas e catorze preces sem resposta; nasceram 157 crianças e morreram 111 pessoas. No fim do ano 140, 257 pessoas viviam no mundo: Linon (139), Oror (69), Tamil (23) e Kian (26).
+Na primavera, em Tamil, Linmoim começou a pregar que o deus não era «o Que Sacode». Era «o Que Acende o Céu». Em poucos anos, todos rezavam assim. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Do céu limpo, um raio caiu na floresta e matou Ra. Logo Ra, que tanto rezava. Começou a Guerra Santa: em nome da Mãe da Fartura, Linon pegou em lanças contra Linil. Nos anos 131 a 140 houve três secas, quinze fomes, cinco batalhas, 47 preces que pareceram atendidas e doze preces sem resposta; nasceram 128 crianças e morreram 192 pessoas. No fim do ano 140, 213 pessoas viviam no mundo: Linon (132), Tamil (40), Ruem (30) e Linil (11).
 
 ### Ano 141
 
-Na primavera, em Oror, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Ensela, a generosa, inventou marcas que guardavam palavras. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon e Tamil, cansados de enterrar os seus, fizeram as pazes no morro. No outono, do céu limpo, um raio caiu na floresta e matou Orem. Ninguém em Oror teve dúvida: era castigo.
+Na primavera do ano 141, Sela, que fundou Linil e o guiava, morreu de velhice aos 53 anos. Tinha fundado Linil. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, Enselik, de Linil, tomou por esposa Rua, de Ruem, e os dois povos passaram a se visitar. Ralinik passou dias nas ruínas de Oror e voltou sabendo cortar pedra.
 
 ### Ano 142
 
-Na primavera do ano 142, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, começou a Guerra Santa da Floresta: em nome do Generoso, Linon pegou em lanças contra Oror. A Guerra Santa da Floresta seguiu: Linon contra Oror, na floresta em nome do Generoso. Linon venceu e levou a comida guardada. Na luta morreram Miloem, Habeya, Linlos, Raraem e Liu. Do céu limpo, um raio caiu na floresta e matou Viu. Viu era das que mais rezavam, e Oror ficou sem entender.
+Na primavera, Enya, que guiava Linon, morreu de velhice aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Tamil. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Linrara pediu: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Linon viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 9 dias em Linon e levou três vidas. Nas ruínas de Oror, Ralinik achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 143
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Rubeu acordou se sentindo forte como nunca, sem saber por quê. Linon passou fome no inverno por 14 dias, e dez pessoas morreram. Os de Linon caíram sobre Kian na praia em nome do Generoso. Kian foi derrotado e perdeu o que tinha guardado. Rubeu, Tamem e Ruem morreram na luta. Sem nuvem nenhuma, um raio acertou Loel na praia. Em Kian, disseram que era castigo.
+Na primavera do ano 143, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Do céu limpo, um raio caiu na floresta e matou Enmiya. Enmiya era das que mais rezavam, e Linil ficou sem entender. No inverno, Linon e Linil, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de três anos, quatro batalhas e oito mortos, a Guerra Santa terminou em paz. Linon saiu dela mais forte. Loloya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 144
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Beliem tinha rezado: «Generoso, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Uma tosse que não passava matou três pessoas em Linon. A fome no inverno durou 11 dias em Linon e levou duas vidas.
+Na primavera do ano 144, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Enliu ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, a guerra entre Tamil e Linon continuou: Tamil voltou a atacar no lago. Linon expulsou os atacantes. Selliya, Lobeim e Enselya morreram na luta. Tamil acabou: Viem, Haloem e Ralora foram viver em Ruem.
 
 ### Ano 145
 
-Na primavera do ano 145, a forja de Tamil não apagava mais. O metal mudou o trabalho e mudou a guerra. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Momios acordou se sentindo forte como nunca, sem saber por quê. Sem lugar e sem comida, Ralina e os seus atravessaram a borda do mundo. Ninguém soube deles. A Guerra Santa da Floresta acabou em trégua, depois de quatro anos, quatro batalhas e doze mortos. Linon saiu dela mais forte.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A fome no inverno durou 9 dias em Linon e levou três vidas. Tantas preces atendidas fizeram Ruem confiar no céu mais do que nas próprias mãos. As ruínas de Tamil viraram aviso em Linon: era o que o deus fazia com quem o desagradava. No verão, Bekiar anunciou que o Que Sacode proibia qualquer trato com Linon. O deus nunca disse isso, mas Ruem obedeceu.
 
 ### Ano 146
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Rubeya no morro. Logo Rubeya, que tanto rezava. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, começou a Segunda Guerra Santa: em nome do Que Rega, Linon pegou em lanças contra Tamil. Depois de duas batalhas e quatro mortos, a Segunda Guerra Santa terminou em paz. Linon saiu dela mais forte.
+Lik, que falava pela Mãe da Fartura em Linon, morreu dormindo, aos 64 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No outono, em Linil, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. No inverno, todos davam Hahau por morta. Ela se levantou, pediu água e sorriu. Para Linon, o deus já não era «a Mãe da Fartura»: passou a ser «a Mão Que Cura».
 
 ### Ano 147
 
-Na primavera do ano 147, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. De novo Linon contra Kian em nome do Que Rega, como no ano 143. Kian resistiu, e Linon voltou de mãos vazias. Ena morreu na luta. Sem nuvem nenhuma, um raio acertou Kiloya na praia. Ninguém em Kian teve dúvida: era castigo. Começou a Guerra Santa da Praia: em nome do Que Rega, Linon pegou em lanças contra Kian.
+Beik morreu de repente, aos 40 anos. Na guerra, tinha tirado duas vidas. Em Ruem, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Uma tosse que não passava matou cinco pessoas em Linon.
 
 ### Ano 148
 
-Na primavera do ano 148, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Belinem ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Em Tamil, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Tamil, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Depois de um ano, três batalhas e sete mortos, a Guerra Santa da Praia terminou em paz.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, Linon já não cabia no lago. Selim, o devoto, levou 32 pessoas para o morro e fundou Mian. Ruem passou a festejar todo ano o dia da volta da chuva, em honra do Que Sacode.
 
 ### Ano 149
 
-Na primavera do ano 149, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, em Linon, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. A febre levou Enya, a rancorosa.
+Morreu Ormoim, que fundou Ruem e o guiava, aos 54 anos. Foi quem levou os seus a fundar Ruem. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Os de Ruem caíram sobre Linon no lago. Linon resistiu, e Ruem voltou de mãos vazias. Bera, Tamlou e Haselem morreram na luta. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Linbeim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 150
 
-Na primavera, Loik, que guiava Tamil, morreu de velhice aos 75 anos. Foi quem proibiu, em nome do deus, o trato com Kian. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Depois daquela fome, Kian passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No outono, em nome do Senhor do Trovão, Momiu proibiu casamentos e trocas com Linon. Era vontade de Momiu, não do deus. Nos anos 141 a 150 houve duas secas, catorze fomes, onze batalhas, 55 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 119 crianças e morreram 122 pessoas. No fim do ano 150, 248 pessoas viviam no mundo: Linon (134), Oror (60), Tamil (27) e Kian (27).
+Na primavera, Enrau anunciou que a Mão Que Cura proibia qualquer trato com Linon. O deus nunca disse isso, mas Mian obedeceu. De um dia para o outro, a praia transbordou de comida. A fome de Ruem acabou ali. Para Ruem, o deus já não era «o Que Sacode»: passou a ser «o Que Dá». Rahais acordou se sentindo forte como nunca, sem saber por quê. Um raio sem nuvem acertou Rua, que guiava Linil, diante de todos. Rua era das que mais rezavam, e Linil ficou sem entender. Nos anos 141 a 150 houve três secas, dezenove fomes, cinco batalhas, 54 preces que pareceram atendidas e dezoito preces sem resposta; nasceram 107 crianças e morreram 176 pessoas. No fim do ano 150, 138 pessoas viviam no mundo: Linon (87), Ruem (14), Linil (7) e Mian (30).
 
 ### Ano 151
 
-Na primavera do ano 151, os de Linon caíram sobre Tamil no morro em nome do Que Rega. Tamil foi derrotado e perdeu o que tinha guardado. Haraim, Bear e Loloya morreram na luta. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Beliem pediu: «Que Rega, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Que Rega. Dessa vez, tinha sido mesmo o deus. Do céu limpo, um raio caiu no morro e matou Orlinya. Logo Orlinya, que tanto rezava.
+Na primavera do ano 151, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Linrara pediu: «Mão Que Cura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mão Que Cura. Dessa vez, tinha sido mesmo o deus. Miraya, que guiava Linil, morreu ao dar à luz. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Linon, e 23 mortos. As crianças foram as primeiras. No outono, nas ruínas de Oror, Haik achou o que eles sabiam: aprendeu a trabalhar o metal.
 
 ### Ano 152
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Kibeya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 152, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Mian atacou Linon no lago em nome da Mão Que Cura. Linon expulsou os atacantes. Na luta morreram Mienim, Raik e Enlina. Para Mian, o lago virou Lago do Luto. Do céu limpo, um raio caiu no lago e matou Losela. Em Linon, disseram que era castigo. Linon passou a acreditar que a Mão Que Cura castiga quem duvida, e que Losela tinha duvidado.
 
 ### Ano 153
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Ruselem acordou se sentindo forte como nunca, sem saber por quê. Numa tempestade sobre o lago, um raio matou Sellia. Logo Sellia, que tanto rezava. No outono, tantas preces atendidas fizeram Kian confiar no céu mais do que nas próprias mãos. No inverno, Raenik, o corajoso, não resistiu à fome.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, começou a Guerra Santa do Lago: em nome da Mão Que Cura, Mian pegou em lanças contra Linon. Do céu limpo, um raio caiu no lago e matou Lorau. Ninguém em Linon teve dúvida: era castigo. Mian via Linon ser atendido e concluiu que a Mão Que Cura tinha escolhido os outros.
 
 ### Ano 154
 
-Na primavera do ano 154, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Foram 9 dias de fome no inverno em Linon, com onze mortos. No verão, houve luta no lago: Kian atacou Linon em nome do Senhor do Trovão. Linon expulsou os atacantes. Na luta morreram Tamdoali e Sulou. Sem nuvem nenhuma, um raio acertou Linlia no lago. Em Linon, disseram que era castigo.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Beliem pediu: «Mão Que Cura, dá-nos o que comer.» A fome passou, e Linon viu nisso obra da Mão Que Cura. Dessa vez, tinha sido mesmo o deus. Loar, que guiava Linil, teve um filho: Miselik. Haik passou dias nas ruínas de Oror e voltou sabendo trabalhar o metal.
 
 ### Ano 155
 
-Morreu Beliya, que guiava Kian, aos 69 anos. Em Kian, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 91, só a crônica guarda. Kian escolheu Mohaos para guiar o grupo. Loar queria o lugar e nunca perdoou. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
+Haliem, que guiava Linon, morreu de velhice aos 49 anos. Raya passou a falar pelo Senhor do Trovão em Linil. Era a primeira a rezar e a última a duvidar. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, Linil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 156
 
-Na primavera do ano 156, sem lugar e sem comida, Lomoem e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Momoem acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu no lago e matou Liena. Ninguém em Linon teve dúvida: era castigo. Linon cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Rega.
+Na primavera do ano 156, Marya, a generosa, inventou marcas que guardavam palavras. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. A Guerra Santa do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte. Enenem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 157
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon passou fome no inverno por 9 dias, e dez pessoas morreram. A guerra entre Linon e Tamil continuou: Linon voltou a atacar no morro em nome do Que Rega. Tamil foi derrotado e perdeu o que tinha guardado. Na luta morreram Kiraem e Selsela. Começou a Terceira Guerra Santa: em nome do Senhor do Trovão, Kian pegou em lanças contra Linon. A Terceira Guerra Santa acabou em trégua, depois de três anos, duas batalhas e cinco mortos. Linon saiu dela mais forte.
+Na primavera, morreu Selselim, que falava pela Mão Que Cura em Linon, aos 65 anos. Desde a morte de Mik, nunca mais tinha rezado. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Todos davam Bemiem por morto. Ele se levantou, pediu água e sorriu. Foram 18 dias de fome por causa da seca em Mian, com catorze mortos. No verão, em nome da Mão Que Cura, Enrau proibiu casamentos e trocas com Linon. Era vontade de Enrau, não do deus.
 
 ### Ano 158
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. No verão, começou a Quarta Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Linon. A Quarta Guerra Santa seguiu: Linon contra Oror, na floresta em nome do Que Rega. Oror foi derrotado e perdeu o que tinha guardado. Kia, Lobeya, Beu e Linloem morreram na luta. Do céu limpo, um raio caiu no lago e matou Enraim. Logo Enraim, que tanto rezava.
+Halik, que guiava Mian, teve um filho: Mim. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Para Linon, o deus já não era «a Mão Que Cura»: passou a ser «o Generoso». Todos davam Raik por morto. Ele se levantou, pediu água e sorriu. Haik passou dias nas ruínas de Oror e voltou sabendo ler as marcas antigas.
 
 ### Ano 159
 
-Na primavera do ano 159, morreu Beliem, que falava pelo Que Rega em Linon, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Oror. Linena, que guiava Tamil, morreu dormindo, aos 64 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Do céu limpo, um raio caiu no lago e matou Enloik. Ninguém em Linon teve dúvida: era castigo.
+Na primavera do ano 159, morreu Beik, o corajoso, aos 51 anos. Nunca perdoou o deus pela morte de Selselya. Linena, que guiava Ruem, morreu de velhice aos 64 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Linil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Linil, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 160
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Na Quarta Guerra Santa, Oror atacou Linon no lago em nome do Generoso. Linon foi derrotado e perdeu o que tinha guardado. Na luta morreram Enselem e Mienik. Depois de tantos mortos, Oror e Linon se encontraram no lago e juraram paz. Depois de quatro anos, sete batalhas e dezoito mortos, a Quarta Guerra Santa terminou em paz. Linon saiu dela mais forte. Nos anos 151 a 160 houve treze fomes, onze batalhas, 53 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 174 crianças e morreram 145 pessoas. No fim do ano 160, 265 pessoas viviam no mundo: Linon (132), Oror (73), Tamil (33) e Kian (27).
+Na primavera do ano 160, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Beliem tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Nos anos 151 a 160 houve duas secas, onze fomes, duas batalhas, 35 preces que pareceram atendidas e cinco preces sem resposta; nasceram 156 crianças e morreram 61 pessoas. No fim do ano 160, 233 pessoas viviam no mundo: Linon (157), Ruem (31), Linil (20) e Mian (25).
 
 ### Ano 161
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Belinem pediu: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Que Rega. Dessa vez, tinha sido mesmo o deus. Viruya acordou se sentindo forte como nunca, sem saber por quê.
+Ninguém lembrava mais a razão, e Linon abandonou o treino com lanças. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No inverno, apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu.
 
 ### Ano 162
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Belinem pediu: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. Selbeos acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Tantas preces atendidas fizeram Tamil confiar no céu mais do que nas próprias mãos.
+Na primavera, Enrau, que falava pela Mão Que Cura em Mian, morreu dormindo, aos 51 anos. Foi quem proibiu, em nome do deus, o trato com Linon. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No inverno, Linon atacou Mian no morro. Mian expulsou os atacantes. Selloim, Selik, Hara e Raraya morreram na luta. Do céu limpo, um raio caiu no morro e matou Lomira. Ninguém em Mian teve dúvida: era castigo. Começou a Guerra da Fome: Linon, com fome, foi buscar à força a comida de Mian.
 
 ### Ano 163
 
-Dou partiu com duas pessoas para além da borda do mundo. Nunca voltaram. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, todos davam Tambela por morta. Ela se levantou, pediu água e sorriu. Kian atacou Tamil no morro em nome do Senhor do Trovão. Tamil resistiu, e Kian voltou de mãos vazias. Loel, Torim e Loar morreram na luta. Do céu limpo, um raio caiu no morro e matou Loloar. Ninguém em Tamil teve dúvida: era castigo.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Na Guerra da Fome, Linon atacou Mian no morro. Mian foi derrotado e perdeu o que tinha guardado. Bem e Linloya morreram na luta. Sem nuvem nenhuma, um raio acertou Linmiem no morro. Em Mian, disseram que era castigo. Uma tosse que não passava matou seis pessoas em Linon.
 
 ### Ano 164
 
-Na primavera do ano 164, com Momiu à frente, a nova geração de Kian abandonou a festa da chuva, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Bera ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Dessa vez, a Voz do Céu não respondeu, e Tamil, que tinha esquecido como se virar sozinho, pagou caro.
+Na primavera do ano 164, sem lugar e sem comida, Beim e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Selya passou a falar pelo Senhor do Trovão em Mian. Era a primeira a rezar e a última a duvidar. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, Hafaim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 165
 
-Na primavera, com lanças e promessas, Mienim acabou com o conselho de Linon e passou a mandar sozinho. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Do céu limpo, um raio caiu no lago e matou Hahara. Em Linon, disseram que era castigo. No outono, Lira acordou se sentindo forte como nunca, sem saber por quê. Começou a Quinta Guerra Santa: em nome do Senhor do Trovão, Kian pegou em lanças contra Linon.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Todos davam Rau por morta. Ela se levantou, pediu água e sorriu. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Do céu limpo, um raio caiu na floresta e matou Bebeik. Ninguém em Linil teve dúvida: era castigo. Começou a Guerra dos Irmãos: Linon e Linil, nascidos do mesmo povo, viraram inimigos.
 
 ### Ano 166
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Loela deu à luz e não sobreviveu ao parto. Na guerra, tinha tirado duas vidas. De novo Oror contra Linon em nome do Generoso, como no ano 160. Linon resistiu, e Oror voltou de mãos vazias. Na luta morreram Mia, Raselim, Raloim e Bem. Depois de tantos mortos, Oror e Linon se encontraram no lago e juraram paz. No outono, Oror cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Generoso.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No inverno, Vera acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu no morro e matou Selya. Ninguém em Mian teve dúvida: era castigo. Os últimos de Linil, Miselik e Beis, juntaram-se a Ruem. Linil deixou de existir. A Guerra dos Irmãos acabou porque um dos lados deixou de existir: um ano, duas batalhas e seis mortos.
 
 ### Ano 167
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Todos davam Tambela por morta. Ela se levantou, pediu água e sorriu. Linon passou fome no inverno por 6 dias, e quatro pessoas morreram. Sem nuvem nenhuma, um raio acertou Ruar no morro. Em Tamil, disseram que era castigo. No inverno, a terra tremeu. Caíram 21 cabanas. Rara, Lomiem, Selem, Haenik, Selkiem e Linsela morreram sob os escombros.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Tamloim acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, sem nuvem nenhuma, um raio acertou Ra no morro. Em Mian, disseram que era castigo. Loselem, que falava pelo Generoso em Linon, morreu de fome. Desde a morte de Miu, nunca mais tinha rezado.
 
 ### Ano 168
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A doença entrou em Linon e matou onze pessoas. A fome no inverno durou 9 dias em Linon e levou cinco vidas. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, a Quinta Guerra Santa esfriou sem acordo nem vencedor: três anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Depois de tantos mortos, Ruem e Linon se encontraram no lago e juraram paz. Começou a Guerra Santa do Morro: em nome do Que Dá, Ruem pegou em lanças contra Mian. Sem nuvem nenhuma, um raio acertou Selrara no morro. Em Mian, disseram que era castigo. No inverno, Beliem, o devoto, morreu de fome. Nunca perdoou o deus pela morte de Linu.
 
 ### Ano 169
 
-Morreu Ensela, a generosa, aos 53 anos. Sem lugar e sem comida, Selbea e os seus atravessaram a borda do mundo. Ninguém soube deles. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Kian e Linon, cansados de enterrar os seus, fizeram as pazes no lago. Os últimos de Kian, Momiu, Ruselem e Doya, juntaram-se a Oror. Kian deixou de existir.
+Na primavera do ano 169, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Bemiem pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. A fome durou 20 dias em Linon e levou treze vidas. A fome durou 42 dias em Mian e levou doze vidas. A Guerra da Fome esfriou sem acordo nem vencedor: sete anos, cinco batalhas e doze mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte.
 
 ### Ano 170
 
-Na primavera do ano 170, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Selrara pediu: «Que Rega, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. Bera ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Nos anos 161 a 170 houve duas secas, catorze fomes, seis batalhas, 54 preces que pareceram atendidas e treze preces sem resposta; nasceram 184 crianças e morreram 147 pessoas. No fim do ano 170, 288 pessoas viviam no mundo: Linon (155), Oror (82) e Tamil (51).
+Em Mian, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Bemiem tinha rezado: «Generoso, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Nos anos 161 a 170 houve duas secas, dezesseis fomes, dez batalhas, 47 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 75 crianças e morreram 130 pessoas. No fim do ano 170, 161 pessoas viviam no mundo: Linon (130), Ruem (26) e Mian (5).
 
 ### Ano 171
 
-Na primavera, Demselela, que falava pelo Generoso em Oror, morreu dormindo, aos 65 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Depois da seca, Tamil jurou nunca desperdiçar água. Com Bekia à frente, nove pessoas deixaram Tamil e fundaram Beum, na praia.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A Guerra Santa do Morro esfriou sem acordo nem vencedor: quatro anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava. Ruem saiu dela mais forte. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Para Linon, o deus já não era «o Generoso»: passou a ser «a Mãe da Chuva». No outono, Loya deu à luz gêmeos, Ha e Liena. Uns viram bênção; outros, mau sinal.
 
 ### Ano 172
 
-Tamil acabou: Rabeim, Rua e Lokiya foram viver em Oror. Os últimos de Beum, Mos, Haela e Ruem, juntaram-se a Linon. Beum deixou de existir. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Do céu limpo, um raio caiu no lago e matou Miena. Em Linon, disseram que era castigo. No outono, a febre levou Momiu, a rancorosa. Foi quem proibiu, em nome do deus, o trato com Linon.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Mobeon, o medroso, morreu de frio. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No inverno, sem nuvem nenhuma, um raio acertou Lihaya no lago. Em Linon, disseram que era castigo. Começou a Segunda Guerra Santa: em nome do Que Dá, Ruem pegou em lanças contra Linon.
 
 ### Ano 173
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Uma febre correu Linon e levou oito vidas. No inverno, a rixa entre Hara e Libem rachou Linon. Hara partiu com os seus, 28 pessoas, e fundou Mian na praia. As ruínas de Kian viraram aviso em Mian: era o que o deus fazia com quem o desagradava.
+Beu anunciou que o Que Dá proibia qualquer trato com Mian. O deus nunca disse isso, mas Ruem obedeceu. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Na Segunda Guerra Santa, Ruem atacou Linon no lago em nome do Que Dá. Linon expulsou os atacantes. Ena e Dos morreram na luta. Sem nuvem nenhuma, um raio acertou Ramiya no lago. Ninguém em Linon teve dúvida: era castigo. Lomil acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 174
 
-Morreu o último que tinha visto o ano 124. Em Mian, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. As ruínas de Tamil viraram aviso em Mian: era o que o deus fazia com quem o desagradava. Liem passou a falar pelo Que Rega em Mian. Era o primeiro a rezar e o último a duvidar. Orya acordou se sentindo forte como nunca, sem saber por quê.
+Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Linon venceu Mian e levou os quatro sobreviventes para viver sob seu mando. Mian deixou de existir, mas os vencidos guardaram seus costumes em segredo. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Raim, o rancoroso, morreu de febre aos 59 anos. Foi quem proibiu, em nome do deus, o trato com Ruem.
 
 ### Ano 175
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Bera ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Começou a Sexta Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Linon. A Sexta Guerra Santa seguiu: Oror contra Linon, no lago em nome do Generoso. Linon resistiu, e Oror voltou de mãos vazias. Na luta morreram Linbeu, Linhaos e Loselim. Do céu limpo, um raio caiu no lago e matou Selenim. Logo Selenim, que tanto rezava.
+Morreu o último que tinha visto o ano 133. Em Ruem, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Raenu implorou pela filha. Rasela morreu, e daquele dia em diante Raenu cuspia no chão quando falavam da Mãe da Chuva. Uma tosse que não passava matou quatro pessoas em Linon.
 
 ### Ano 176
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Loenim pediu: «Que Rega, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. Para Mian, o deus já não era «o Que Rega»: passou a ser «o Olho Escuro». Do céu limpo, um raio caiu no lago e matou Miraik. Ninguém em Linon teve dúvida: era castigo. No inverno, em Mian nasceu a primeira criança: Nayoem, filho de Hara e Liem.
+Na primavera do ano 176, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A Segunda Guerra Santa esfriou sem acordo nem vencedor: quatro anos, três batalhas e seis mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte. Foram 8 dias de fome no inverno em Linon, com quatro mortos.
 
 ### Ano 177
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No outono, a Sexta Guerra Santa seguiu: Oror contra Linon, no lago em nome do Generoso. Linon resistiu, e Oror voltou de mãos vazias. Na luta morreram Miraos, Selhaos e Hamoa. Sem nuvem nenhuma, um raio acertou Loraem no lago. Em Linon, disseram que era castigo. Linu acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A terra tremeu. Caíram dez cabanas. Ralina, Mibem e Lilia morreram sob os escombros. No inverno, Habeik implorou pela filha. Halina morreu, e daquele dia em diante Habeik cuspia no chão quando falavam da Mãe da Chuva.
 
 ### Ano 178
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Kiu acordou se sentindo forte como nunca, sem saber por quê. No verão, em Mian, quem vinha de fora era recebido com comida e lugar perto do fogo. Linim, de Linon, tomou por esposa Lienu, de Mian, e os dois povos passaram a se visitar. Linos não podia mais viver perto de Moora. Saiu de Oror com dez pessoas e fundou Beran no morro.
+Na primavera do ano 178, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Bemiem pediu: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 8 dias em Linon e levou duas vidas. Uma febre correu Linon e levou seis vidas.
 
 ### Ano 179
 
-Na primavera, com Linos à frente, a nova geração de Beran abandonou o cuidado com a água, costume herdado dos avós. Morreu o último que tinha visto o ano 126. Em Beran, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Beik tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Que Rega. Dessa vez, tinha sido mesmo o deus. No outono, em Beran, Bebeu tomou para si o cuidado das preces ao Generoso.
+Os últimos de Ruem, Haos, Vion e Lon, juntaram-se a Linon. Ruem deixou de existir. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Bemiem pediu: «Mãe da Chuva, dá-nos o que comer.» A fome passou, e Linon viu nisso obra da Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Linon encontrou as ruínas de Ruem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 180
 
-Na primavera do ano 180, Haem disse ter ouvido o deus de outro jeito: não era «o Que Rega», era «o Que Risca o Céu». Linon acreditou, e o deus mudou de nome. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Foram 9 dias de fome no inverno em Linon, com quatro mortos. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Sem nuvem nenhuma, um raio acertou Selhaem no lago. Em Linon, disseram que era castigo. Nos anos 171 a 180 houve duas secas, dezessete fomes, seis batalhas, 47 preces que pareceram atendidas e catorze preces sem resposta; nasceram 141 crianças e morreram 180 pessoas. No fim do ano 180, 253 pessoas viviam no mundo: Linon (162), Oror (68), Mian (13) e Beran (10).
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito. No resto da região, a seca durou 19 dias. Nos anos 171 a 180 houve três secas, doze fomes, quatro batalhas, 36 preces que pareceram atendidas e doze preces sem resposta; nasceram 118 crianças e morreram 127 pessoas. No fim do ano 180, 154 pessoas viviam no mundo, todas em Linon.
 
 ### Ano 181
 
-Na primavera, morreu Mou, que falava pelo Generoso em Oror, aos 48 anos. Nunca perdoou o deus pela morte de Loselem. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, em nome do Generoso, Mikim proibiu casamentos e trocas com Beran. Era vontade de Mikim, não do deus. Foram 27 dias de fome por causa da seca em Mian, com 23 mortos. Sem nuvem nenhuma, um raio acertou Enena no lago. Ninguém em Linon teve dúvida: era castigo.
+Miem, o rancoroso, morreu de velhice aos 66 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A fome no inverno durou 14 dias em Linon e levou cinco vidas.
 
 ### Ano 182
 
-Na primavera, Loenim, o generoso, morreu de velhice aos 73 anos. Desde a morte de Lolinim, nunca mais tinha rezado. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Mian perdeu o saber. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. O dia em que a chuva voltou virou festa em Beran: todo ano, celebram a chuva que o Generoso mandou.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
 
 ### Ano 183
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Lomou acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra do Morro: o rancor entre Mian e Beran virou guerra. Do céu limpo, um raio caiu no morro e matou Moselos. Em Beran, disseram que era castigo. Tamviu passou dias nas ruínas de Kian e voltou sabendo cortar pedra.
+Na primavera, Raena morreu dormindo, aos 50 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Depois disso, Linon deixou de chamar o deus de «a Mãe da Chuva» e passou a chamá-la de «a Mãe da Fartura».
 
 ### Ano 184
 
-Linraem, que falava pelo Que Risca o Céu em Linon, morreu dormindo, aos 72 anos. Desde a morte de Enraem, nunca mais tinha rezado. Com Linos à frente, a nova geração de Beran abandonou o costume de queimar os mortos, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A Sexta Guerra Santa seguiu: Linon contra Oror, na floresta em nome do Que Risca o Céu. Linon venceu e levou a comida guardada. Na luta morreram Orem e Orbeos. Sem nuvem nenhuma, um raio acertou Enya no lago. Ninguém em Linon teve dúvida: era castigo.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, a terra tremeu. Caíram sete cabanas. Selraem e Liselim morreram sob os escombros.
 
 ### Ano 185
 
-Na primavera do ano 185, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Na Sexta Guerra Santa, Linon atacou Oror na floresta em nome do Que Risca o Céu. Linon venceu e levou a comida guardada. Na luta morreram Orhaem, Lobeos e Libem. Sem nuvem nenhuma, um raio acertou Loem no lago. Em Linon, disseram que era castigo. Depois da derrota, Beran não existia mais: os dois que sobraram foram levados para Linon. A Guerra do Morro acabou porque um dos lados deixou de existir: quatro anos, duas batalhas e quatro mortos.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A fome no inverno durou 17 dias em Linon e levou dezesseis vidas. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
 
 ### Ano 186
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A Sexta Guerra Santa seguiu: Linon contra Oror, na floresta em nome do Que Risca o Céu. Oror resistiu, e Linon voltou de mãos vazias. Na luta morreram Enlinya, Enloim e Ruem. Sem nuvem nenhuma, um raio acertou Lobeik no lago. Ninguém em Linon teve dúvida: era castigo. Começou a Guerra da Fome: Linon, com fome, foi buscar à força a comida de Mian.
+Na primavera, Habeik morreu de velhice aos 51 anos. Desde a morte de Halina, nunca mais tinha rezado. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
 
 ### Ano 187
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Mimoem acordou se sentindo forte como nunca, sem saber por quê. Depois de tantos mortos, Linon e Mian se encontraram na praia e juraram paz. Depois de um ano, três batalhas e seis mortos, a Guerra da Fome terminou em paz. Linon saiu dela mais forte. No outono, Lira, a ambiciosa, cansou de dividir pouca comida. Partiu com 23 pessoas para o morro e ali fundou Haum.
+Na primavera do ano 187, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Bemiem tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Linon deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Linon passou fome no inverno por 17 dias, e dez pessoas morreram.
 
 ### Ano 188
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Haum encontrou as ruínas de Beum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A Sexta Guerra Santa seguiu: Oror contra Linon, no lago em nome do Generoso. Linon resistiu, e Oror voltou de mãos vazias. Viya e Lohaem morreram na luta. Depois de dezesseis anos, onze batalhas e 28 mortos, a Sexta Guerra Santa terminou em paz. Linon saiu dela mais forte.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Bemiem tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Linon deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
 
 ### Ano 189
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Bera pediu: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. A doença entrou em Linon e matou sete pessoas. Mian ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Rau implorou pela filha. Enmiu morreu, e daquele dia em diante Rau cuspia no chão quando falavam da Mãe da Fartura.
 
 ### Ano 190
 
-Na primavera, Haloem morreu de repente, aos 26 anos. Na guerra, tinha tirado duas vidas. Milinu, de Haum, casou-se com Enenem e foi viver em Linon. Foi o primeiro laço entre os dois povos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon passou fome no inverno por 9 dias, e duas pessoas morreram. Nos anos 181 a 190 houve treze fomes, doze batalhas, 49 preces que pareceram atendidas e dezoito preces sem resposta; nasceram 128 crianças e morreram 123 pessoas. No fim do ano 190, 258 pessoas viviam no mundo: Linon (139), Oror (81), Mian (12) e Haum (26).
+Na primavera do ano 190, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A doença entrou em Linon e matou seis pessoas. Foram 9 dias de fome no inverno em Linon, com onze mortos. Nos anos 181 a 190 houve duas secas, dez fomes e 23 preces que pareceram atendidas; nasceram 94 crianças e morreram 110 pessoas. No fim do ano 190, 138 pessoas viviam no mundo, todas em Linon.
 
 ### Ano 191
 
-Na primavera, morreu Kimiya, a curiosa, aos 60 anos. Com Enloa à frente, Linon largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Depois da febre, Linon passou a queimar os seus mortos, para que a doença não voltasse.
+Raenu morreu de velhice aos 53 anos. Desde a morte de Rasela, nunca mais tinha rezado. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Beloim não podia mais viver perto de Linha. Saiu de Linon com quinze pessoas e fundou Waes na floresta. Diante das ruínas de Oror, Waes disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nas ruínas de Oror, Loa achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 192
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Bera pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Hamim acordou se sentindo forte como nunca, sem saber por quê. No outono, de novo Oror contra Linon em nome do Generoso, como no ano 188. Linon resistiu, e Oror voltou de mãos vazias. Na luta morreram Haorem, Raya, Miu e Selmim. Do céu limpo, um raio caiu no lago e matou Enmiem. Ninguém em Linon teve dúvida: era castigo.
+Na primavera, em Waes, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Diante das ruínas de Ruem, Waes disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, nas ruínas de Oror, Mim achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 193
 
-Na primavera do ano 193, sem lugar e sem comida, Lomim e os seus atravessaram a borda do mundo. Ninguém soube deles. Começou a Sétima Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Linon. A Sétima Guerra Santa acabou em trégua, depois de um ano, duas batalhas e seis mortos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Mimoem acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 193, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Raloem, de Linon, tomou por esposa Mia, de Waes, e os dois povos passaram a se visitar. Nas ruínas de Oror, Bea achou o que eles sabiam: aprendeu a cortar pedra. No inverno, em Waes, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 194
 
-Na primavera, Lirau, a medrosa, morreu de velhice aos 62 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Rarila acordou se sentindo forte como nunca, sem saber por quê. A forja de Mian não apagava mais. O metal mudou o trabalho e mudou a guerra. Sem nuvem nenhuma, um raio acertou Loa na praia. Ninguém em Mian teve dúvida: era castigo.
+Em Waes, Liliem tomou para si o cuidado das preces à Mãe da Fartura. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A fome no inverno durou 9 dias em Linon e levou cinco vidas. Loya, a generosa, não resistiu à fome.
 
 ### Ano 195
 
-Selbeu disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Que Sacode». Haum acreditou, e o deus mudou de nome. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No outono, Mora acordou se sentindo forte como nunca, sem saber por quê. No inverno, do céu limpo, um raio caiu no morro e matou Mihara. Mihara era das que mais rezavam, e Haum ficou sem entender. Começou a Oitava Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Mian.
+Na primavera do ano 195, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon já não cabia no lago. Linra, a curiosa, levou 50 pessoas para a praia e fundou Aril. Beraik, de Aril, tomou por esposa Bea, de Waes, e os dois povos passaram a se visitar. Para Aril, as pedras de Oror só podiam ter sido postas por gigantes.
 
 ### Ano 196
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Loliem anunciou que o Senhor do Trovão proibia qualquer trato com Oror. O deus nunca disse isso, mas Mian obedeceu. Começou a Guerra Santa do Morro: em nome do Generoso, Oror pegou em lanças contra Haum. Do céu limpo, um raio caiu no morro e matou Lira, que guiava Haum. Logo Lira, que tanto rezava. A Guerra Santa do Morro acabou em trégua, depois de um ano, quatro batalhas e dez mortos. Oror saiu dela mais forte.
+Na primavera do ano 196, Beloim, que fundou Waes e o guiava, morreu de velhice aos 64 anos. Tinha fundado Waes. Morreu o último que tinha visto o ano 127. Em Waes, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. Desde então, Aril chama a praia de Praia da Fartura.
 
 ### Ano 197
 
-Loliem, que guiava Mian, morreu de velhice aos 54 anos. Foi quem proibiu, em nome do deus, o trato com Oror. Enhau partiu com três pessoas para além da borda do mundo. Nunca voltaram. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. De novo Oror contra Linon em nome do Generoso, como no ano 192. Oror venceu e levou a comida guardada. Na luta morreu Selraim. Sem nuvem nenhuma, um raio acertou Beenya no lago. Em Linon, disseram que era castigo.
+Morreu Hasela, que guiava Linon, aos 65 anos. Na guerra, tinha tirado duas vidas. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Bemiem tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Linon viu nisso obra da Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. Com Lilim à frente, doze pessoas deixaram Aril e fundaram Aron, no morro. Raem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 198
 
-Na primavera, Haloim, o devoto, morreu de velhice aos 61 anos. Nunca perdoou o deus pela morte de Linmiya. Em Mian, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 149, só a crônica guarda. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Lohau tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Haum passou fome por 50 dias, e nove pessoas morreram.
+Morreu o último que tinha visto o ano 136. Em Aron, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. No meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. Haim tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Aril deu graças à Mãe da Fartura. Dessa vez, tinha sido mesmo o deus. No inverno, Mim passou dias nas ruínas de Oror e voltou sabendo trabalhar o metal.
 
 ### Ano 199
 
-Na primavera, morreu Linik, que falava pelo Que Risca o Céu em Linon, aos 67 anos. Desde a morte de Enselya, nunca mais tinha rezado. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Começou a Nona Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Linon. Sem nuvem nenhuma, um raio acertou Lienu no lago. Em Linon, disseram que era castigo. Depois de cinco anos, quatro batalhas e cinco mortos, a Oitava Guerra Santa terminou em paz. Oror saiu dela mais forte.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, Waes passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No outono, Mim passou dias nas ruínas de Oror e voltou sabendo ler as marcas antigas.
 
 ### Ano 200
 
-Na primavera do ano 200, morreu Lolinik, que guiava Haum, aos 61 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Na Nona Guerra Santa, Oror atacou Linon no lago em nome do Generoso. Oror venceu e levou a comida guardada. Na luta morreram Lolia, Enlinim e Halik. Do céu limpo, um raio caiu no lago e matou Ora. Ninguém em Linon teve dúvida: era castigo. A terra tremeu na praia como nunca, e em mais nenhum lugar. Caíram doze cabanas. Ralinem, Rabera, Lik e Hamim morreram sob os escombros. Nos anos 191 a 200 houve 21 fomes, catorze batalhas, 55 preces que pareceram atendidas e vinte preces sem resposta; nasceram 164 crianças e morreram 147 pessoas. No fim do ano 200, 265 pessoas viviam no mundo: Linon (144), Oror (97), Mian (12) e Haum (12).
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. O chão da praia se sacudiu sem aviso. Caíram oito cabanas. Lolim, Linra, Selhau, Lon e Suem morreram sob os escombros. Depois disso, Aril deixou de chamar o deus de «a Mãe da Fartura» e passou a chamá-lo de «o Que Sacode». No outono, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Nos anos 191 a 200 houve onze fomes e 29 preces que pareceram atendidas; nasceram 73 crianças e morreram 58 pessoas. No fim do ano 200, 153 pessoas viviam no mundo: Linon (95), Waes (16), Aril (30) e Aron (12).
 
 ### Ano 201
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Lora no morro. Em Haum, disseram que era castigo. Começou a Décima Guerra Santa: em nome do Generoso, Oror pegou em lanças contra Haum. No outono, depois de quatro anos, quatro batalhas e oito mortos, a Nona Guerra Santa terminou em paz. Oror saiu dela mais forte.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, nas ruínas de Oror, Loa achou o que eles sabiam: aprendeu a ler as marcas antigas. Nasceu Halinem, filho de Bea e Beraik, com sangue de Aril e de Waes.
 
 ### Ano 202
 
-Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Depois da derrota, Haum não existia mais: os três que sobraram foram levados para Oror. A Décima Guerra Santa terminou com a conquista: um ano, três batalhas e cinco mortos.
+No verão do ano 202, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Nas ruínas de Oror, Mim achou o que eles sabiam: aprendeu a ler as marcas antigas. No outono, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. Waes passou a festejar todo ano o dia da volta da chuva, em honra da Mãe da Fartura. Aril passou a festejar todo ano o dia da volta da chuva, em honra do Que Sacode.
 
 ### Ano 203
 
-Morreu o último que tinha visto o ano 180. Em Mian, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
+Waes passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Waes passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No outono, um raio caiu no morro durante a tempestade e matou Enhaya. Em Aron, disseram que era castigo. Selbem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 204
 
-Na primavera, Haem, o curioso, morreu de velhice aos 52 anos. Nunca perdoou o deus pela morte de Enmira.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Nasceu Tamem, o primeiro de Aron. Raloik acordou se sentindo forte como nunca, sem saber por quê. Limiem morreu de fome.
 
-*O ano 205 foi calmo.*
+### Ano 205
+
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. Tamem acordou se sentindo forte como nunca, sem saber por quê. A fome por causa da seca durou 27 dias em Aril e levou seis vidas. Os de Aril caíram sobre Aron no morro em nome do Que Sacode. Aril venceu e levou a comida guardada. Na luta morreram Sellina e Enbeik. Do céu limpo, um raio caiu no morro e matou Lilim, que guiava Aron. Ninguém em Aron teve dúvida: era castigo.
 
 ### Ano 206
 
-Na primavera, a rixa entre Hakiya e Orya rachou Oror. Hakiya partiu com os seus, vinte pessoas, e fundou Kiur no morro. Em Kiur, Ormiem tomou para si o cuidado das preces ao Generoso. Oror atacou Kiur no morro em nome do Generoso. Oror venceu e levou a comida guardada. Na luta morreram Hakiya, Bea e Kiorem. Do céu limpo, um raio caiu no morro e matou Mimoem. Em Kiur, disseram que era castigo. Depois disso, Kiur deixou de chamar o deus de «o Generoso» e passou a chamá-lo de «o Que Fere».
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Bemiem tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Haim anunciou que o Que Sacode proibia qualquer trato com Linon. O deus nunca disse isso, mas Aril obedeceu.
 
 ### Ano 207
 
-Em Kiur, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 130, só a crônica guarda. No outono, Raos acordou se sentindo forte como nunca, sem saber por quê.
+Com Mia à frente, a nova geração de Aron abandonou o costume de queimar os mortos, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Aril passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Aril, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 208
 
-Na primavera, Beoru, a devota, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Mian acabou: Lia, Tora e Toim foram viver em Linon. Nasceu Selo, o primeiro de Kiur. Diante das ruínas de Mian, Linon disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, Sellinya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 208, em Aron, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Em Linon, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 132, só a crônica guarda. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Bemiem pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 209
 
-Na primavera, Beselem, o rancoroso, morreu dormindo, aos 73 anos. Na guerra, tinha tirado duas vidas. Selena, que falava pelo Que Risca o Céu em Linon, morreu de velhice aos 72 anos. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No inverno, no meio da fome, o morro se encheu de frutos e peixes, como nunca. Kiur comeu até cansar.
+Na primavera do ano 209, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Loha acordou se sentindo forte como nunca, sem saber por quê. No inverno, tantas preces atendidas fizeram Aril confiar no céu mais do que nas próprias mãos. Deixaram de poupar água.
 
 ### Ano 210
 
-Na primavera, Linloem, de Kiur, tomou por esposa Enlia, de Linon, e os dois povos passaram a se visitar. De um dia para o outro, o morro transbordou de comida. A fome de Kiur acabou ali. Em Kiur, Orya pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kiur deu graças ao Que Fere. Dessa vez, tinha sido mesmo o deus. No inverno, Hakiu, a ambiciosa, cansou de dividir pouca comida. Partiu com dez pessoas para a praia e ali fundou Lour. Nos anos 201 a 210 houve cinco fomes, cinco batalhas, 22 preces que pareceram atendidas e doze preces sem resposta; nasceram 96 crianças e morreram 171 pessoas. No fim do ano 210, 190 pessoas viviam no mundo: Linon (95), Oror (65), Kiur (20) e Lour (10).
+De um dia para o outro, a praia transbordou de comida. A fome de Aril acabou ali. Houve luta na praia: Linon atacou Aril. Aril foi derrotado e perdeu o que tinha guardado. Na luta morreram Bea e Liem. Depois da luta, Linon e Aril se encontraram na praia e juraram paz. No inverno, o deus calou justo quando Aril mais dependia dele. Haem, o curioso, não resistiu à fome. Nos anos 201 a 210 houve duas secas, doze fomes, duas batalhas, 38 preces que pareceram atendidas e quatro preces sem resposta; nasceram 80 crianças e morreram 66 pessoas. No fim do ano 210, 167 pessoas viviam no mundo: Linon (89), Waes (31), Aril (37) e Aron (10).
 
 ### Ano 211
 
-Na primavera, cansado de um líder que mandava sozinho, Oror passou a decidir em conselho. Com Hakiu à frente, a nova geração de Lour abandonou o costume de queimar os mortos, costume herdado dos avós. Orkios acordou se sentindo forte como nunca, sem saber por quê. Lour encontrou as ruínas de Beran. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Mobeya passou dias nas ruínas de Mian e voltou sabendo cortar pedra.
+Na primavera, Mim, o curioso, desenhou o primeiro canal e a primeira roda d'água. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, do céu limpo, um raio caiu no morro e matou Selbem. Em Aron, disseram que era castigo. Haim, que falava pelo Que Sacode em Aril, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Linon.
 
 ### Ano 212
 
-Lina morreu de velhice aos 50 anos. Na guerra, tinha tirado duas vidas. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Mobeya passou a falar pelo Generoso em Lour. Era a primeira a rezar e a última a duvidar. Nas ruínas de Mian, Mobeya achou o que eles sabiam: aprendeu a cortar pedra. Moya acordou se sentindo forte como nunca, sem saber por quê.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Aril comeu até cansar. Depois disso, Aril deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Dá». Com canais e moinhos, Waes já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. No verão, Mia anunciou que a Estrela de Cauda proibia qualquer trato com Linon. O deus nunca disse isso, mas Aron obedeceu. Linu acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 213
 
-Na primavera, Mikim, que guiava Oror, morreu dormindo, aos 63 anos. Foi quem proibiu, em nome do deus, o trato com Beran. Harara deu à luz gêmeos, Miloya e Enlinim. Uns viram bênção; outros, mau sinal. No inverno, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Isu tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
+Na primavera do ano 213, Rau, a rancorosa, morreu de velhice aos 63 anos. Nunca perdoou o deus pela morte de Enmiu. Mora acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu no morro e matou Mia, que guiava Aron. Em Aron, disseram que era castigo. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Começou a Guerra do Morro: o rancor entre Linon e Aron virou guerra.
 
 ### Ano 214
 
-Na primavera do ano 214, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Moya acordou se sentindo forte como nunca, sem saber por quê. Nas ruínas de Mian, Mobeya achou o que eles sabiam: aprendeu a cortar pedra.
+Na primavera do ano 214, Enem, que guiava Aril, morreu dormindo, aos 63 anos. Em Aron, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Aril escolheu Beraik para guiar o grupo. Enhau queria o lugar e nunca perdoou. No verão, nasceu Wadaem, filho de Linenya e Daem, com sangue de Waes e de Linon. No inverno, de um dia para o outro, o morro transbordou de comida. A fome de Aron acabou ali.
 
 ### Ano 215
 
-Na primavera, Selenim, de Linon, casou-se com Hakiu e foi viver em Lour. Foi o primeiro laço entre os dois povos. Nas ruínas de Kian, Selenim achou o que eles sabiam: aprendeu a cortar pedra. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, a forja de Kiur não apagava mais. O metal mudou o trabalho e mudou a guerra. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
+Na primavera do ano 215, com Beraik à frente, a nova geração de Aril abandonou o medo das tempestades, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Aron acabou: Tamem, Tamnil e Enenil foram viver em Waes. A Guerra do Morro acabou porque um dos lados deixou de existir: quatro anos, duas batalhas e três mortos.
 
 ### Ano 216
 
-Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Ulselem acordou se sentindo forte como nunca, sem saber por quê. Kiur já não se preparava para nada: o Que Fere sempre dava. Deixaram de poupar água. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, em Lour, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Morreu Liliem, que falava pela Mãe da Fartura em Waes, aos 60 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A doença entrou em Linon e matou seis pessoas. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
 
 ### Ano 217
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
+Bemiem, que falava pelo Generoso em Linon, morreu dormindo, aos 64 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Beenem pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. No outono, Tamem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 218
 
-Enloa, que guiava Linon, morreu dormindo, aos 71 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Beenem pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. O frio levou Beenem, o pacífico. Lora deu à luz gêmeos, Suenem e Suem. Uns viram bênção; outros, mau sinal.
 
 ### Ano 219
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Isu pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
+Na primavera do ano 219, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Marem acordou se sentindo forte como nunca, sem saber por quê. Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito. A terra tremeu. Caíram quinze cabanas. Mienik, Raim, Raik, Hamira, Enmiya, Lora e Mimik morreram sob os escombros.
 
 ### Ano 220
 
-Na primavera do ano 220, Beoru, a devota, morreu de velhice aos 56 anos. Desde a morte de Ramiya, nunca mais tinha rezado. Com Orya à frente, a nova geração de Kiur abandonou o costume de queimar os mortos, costume herdado dos avós. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Enselim acordou se sentindo forte como nunca, sem saber por quê. Nos anos 211 a 220 houve duas secas, dez fomes, 35 preces que pareceram atendidas e três preces sem resposta; nasceram 139 crianças e morreram 50 pessoas. No fim do ano 220, 280 pessoas viviam no mundo: Linon (159), Oror (87), Kiur (25) e Lour (9).
+Com Enrara à frente, Linon largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No inverno, apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu. Nos anos 211 a 220 houve duas secas, dez fomes, quatro batalhas, 39 preces que pareceram atendidas e sete preces sem resposta; nasceram 141 crianças e morreram 85 pessoas. No fim do ano 220, 225 pessoas viviam no mundo: Linon (137), Waes (63) e Aril (25).
 
 ### Ano 221
 
-Na primavera do ano 221, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Oror atacou Lour na praia. Lour foi derrotado e perdeu o que tinha guardado. Hakiu, Mobeya, Lilinya e Beorem morreram na luta. Oror venceu Lour e levou os seis sobreviventes para viver sob seu mando. Lour deixou de existir, mas os vencidos guardaram seus costumes em segredo. Berara, que guiava Linon, morreu de frio.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, em Linon, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Linon passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 222
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A rixa entre Lomou e Bekia rachou Oror. Lomou partiu com os seus, catorze pessoas, e fundou Mium na praia. Rahaem acordou se sentindo forte como nunca, sem saber por quê. Linha passou dias nas ruínas de Kian e voltou sabendo cortar pedra. Mium encontrou as ruínas de Kian. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No inverno, Enrara, que guiava Linon, morreu de febre aos 65 anos. Depois de tanta briga pelo comando, Linon passou a ser guiado por um conselho dos mais velhos. Rabeik rezou por Selem até a voz acabar. Selem morreu mesmo assim, e Rabeik nunca mais rezou.
 
 ### Ano 223
 
-Na primavera, Selbem disse ter ouvido o deus de outro jeito: não era «o Generoso», era «o Que Queima». Oror acreditou, e o deus mudou de nome. Os de Oror caíram sobre Mium na praia. Mium foi derrotado e perdeu o que tinha guardado. Na luta morreram Beu e Bem. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Enim acordou se sentindo forte como nunca, sem saber por quê.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Haur acordou se sentindo forte como nunca, sem saber por quê. A fome no inverno durou 6 dias em Linon e levou três vidas. Tantas preces atendidas fizeram Waes confiar no céu mais do que nas próprias mãos. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
 
 ### Ano 224
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Isu tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Foram 9 dias de fome no inverno em Oror, com dezessete mortos. Em Mium nasceu a primeira criança: Isbera, filha de Selselu e Raos. Linha passou dias nas ruínas de Mian e voltou sabendo cortar pedra.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Hahara deu à luz gêmeos, Dara e Marwaur. Uns viram bênção; outros, mau sinal.
 
 ### Ano 225
 
-Na primavera do ano 225, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Mios acordou se sentindo forte como nunca, sem saber por quê. Oror atacou Kiur no morro em nome do Que Queima. Kiur expulsou os atacantes. Na luta morreram Ra e Raloa. A febre levou Mienu, que guiava Linon.
+Na primavera do ano 225, Rabeik, o engenhoso, morreu de velhice aos 56 anos. Desde a morte de Selem, nunca mais tinha rezado. Linon escolheu Lik para guiar o grupo. Rarau queria o lugar e nunca perdoou. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Foram 8 dias de fome no inverno em Linon, com seis mortos. Linena acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 226
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Os de Kiur caíram sobre Linon no lago em nome do Que Fere. Linon resistiu, e Kiur voltou de mãos vazias. Na luta morreram Bemoim, Haorim e Ormiem. Do céu limpo, um raio caiu no lago e matou Milinu. Logo Milinu, que tanto rezava. Começou a Décima Guerra Santa: em nome do Que Fere, Kiur pegou em lanças contra Linon.
+Na primavera, houve luta na floresta: Linon atacou Waes. Waes expulsou os atacantes. Na luta morreram Raem e Selmira. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Um raio caiu na praia durante a tempestade e matou Aru. Ninguém em Aril teve dúvida: era castigo. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
 
 ### Ano 227
 
-Mium ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Foram 12 dias de fome no inverno em Kiur, com seis mortos. Uma febre correu Linon e levou quatro vidas. No inverno, Oror e Linon, cansados de enterrar os seus, fizeram as pazes no lago.
+Na primavera do ano 227, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Rarau pediu: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Foram 6 dias de fome no inverno em Waes, com quatro mortos. No outono, Waur acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 228
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Isu tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus. Linha, a engenhosa, morreu ao dar à luz.
+Miraya, que falava pela Mãe da Chuva em Linon, morreu dormindo, aos 72 anos. Com Beraik à frente, a nova geração de Aril abandonou o costume de queimar os mortos, costume herdado dos avós. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Linraim tinha rezado: «Mãe da Chuva, dá-nos o que comer.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 229
 
-Morreu Linorem, que falava pelo Que Queima em Oror, aos 63 anos. Na guerra, tinha tirado duas vidas. Os de Linon caíram sobre Mium na praia. Linon venceu e levou a comida guardada. Na luta morreram Linhaim e Beos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Sem nuvem nenhuma, um raio acertou Raos na praia. Raos era dos que mais rezavam, e Mium ficou sem entender. Para Mium, o deus já não era «o Generoso»: passou a ser «o Que Fere».
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No verão, Loliem anunciou que a Mãe da Chuva proibia qualquer trato com Aril. O deus nunca disse isso, mas Linon obedeceu. No inverno, Enliem implorou pelo filho. Raik morreu, e daquele dia em diante Enliem cuspia no chão quando falavam da Mãe da Chuva.
 
 ### Ano 230
 
-Morreu Mora, a generosa, aos 60 anos. Na guerra, tinha tirado duas vidas. A Décima Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Nos anos 221 a 230 houve três secas, dezessete fomes, oito batalhas, 51 preces que pareceram atendidas e nove preces sem resposta; nasceram 153 crianças e morreram 136 pessoas. No fim do ano 230, 287 pessoas viviam no mundo: Linon (154), Oror (81), Kiur (34) e Mium (18).
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A doença entrou em Linon e matou seis pessoas. Linon cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Mãe da Chuva. Nos anos 221 a 230 houve três secas, onze fomes, 35 preces que pareceram atendidas e seis preces sem resposta; nasceram 148 crianças e morreram 107 pessoas. No fim do ano 230, 268 pessoas viviam no mundo: Linon (154), Waes (85) e Aril (29).
 
 ### Ano 231
 
-Na primavera do ano 231, Mibeu disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Generoso». Linon acreditou, e o deus mudou de nome. Começou a Guerra da Fome da Praia: Linon, com fome, foi buscar à força a comida de Mium. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Sem nuvem nenhuma, um raio acertou Oros na praia. Em Mium, disseram que era castigo. No inverno, depois de dois anos, três batalhas e seis mortos, a Guerra da Fome da Praia terminou em paz. Linon saiu dela mais forte.
+Na primavera do ano 231, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No inverno, Enlinik não podia mais viver perto de Beraik. Saiu de Aril com 23 pessoas e fundou Linum no morro. O arquivo salvou Aril: Bera reaprendeu nas tabuletas o que os mortos sabiam. Liu passou a falar pelo Que Dá em Linum. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 232
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No inverno, começou a Décima Guerra Santa: em nome do Que Fere, Kiur pegou em lanças contra Linon. Sem nuvem nenhuma, um raio acertou Linrara no lago. Em Linon, disseram que era castigo. A Décima Guerra Santa acabou em trégua, depois de um ano, três batalhas e sete mortos. Linon saiu dela mais forte.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Waes não esqueceu o ano 226 e atacou Linon outra vez. Waes venceu e levou a comida guardada. Liraem e Beenur morreram na luta. Do céu limpo, um raio caiu no lago e matou Linik. Linik era dos que mais rezavam, e Linon ficou sem entender. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Linaril acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 233
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Isu pediu: «Generoso, dá-nos o que comer.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Linon passou fome por 17 dias, e 21 pessoas morreram.
+Em Linum, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Linon conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 31. Muitas cabanas ficaram vazias. Beim passou a falar pelo Que Dá em Aril. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 234
 
-Na primavera do ano 234, morreu Orya, que guiava Kiur, aos 62 anos. Em Kiur, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. No inverno, Haloem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Em nome do Que Fere, Haloem proibiu casamentos e trocas com Linon. Era vontade de Haloem, não do deus.
+Na primavera, Linlik morreu de repente, aos 44 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Começou a Guerra da Fome do Lago: Waes, com fome, foi buscar à força a comida de Linon. Na Guerra da Fome do Lago, Waes atacou Linon no lago. Linon resistiu, e Waes voltou de mãos vazias. Halina e Haenim morreram na luta. Do céu limpo, um raio caiu no lago e matou Milou. Ninguém em Linon teve dúvida: era castigo.
 
 ### Ano 235
 
-Na primavera do ano 235, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Loliem anunciou que a Mãe da Chuva proibia qualquer trato com Aril. O deus nunca disse isso, mas Linon obedeceu. No verão, nasceu Suaros, filho de Rau e Enur, com sangue de Linum e de Linon. Linhaik rezou por Enem até a voz acabar. Enem morreu mesmo assim, e Linhaik nunca mais rezou.
 
 ### Ano 236
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Hara no lago. Em Linon, disseram que era castigo. No verão, Hamoem, que guiava Mium, não resistiu à fome. Na guerra, tinha tirado duas vidas. Mium acabou: Lintamos, Isos e Loju foram viver em Oror.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Lik pediu: «Mãe da Chuva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mãe da Chuva. Dessa vez, tinha sido mesmo o deus. Uma tosse que não passava matou oito pessoas em Linon. Foram 9 dias de fome no inverno em Linon, com três mortos.
 
 ### Ano 237
 
-Na primavera do ano 237, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Isu tinha rezado: «Generoso, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Linon passou fome no inverno por 9 dias, e quatro pessoas morreram. No inverno, Rau acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, Loa, a devota, morreu dormindo, aos 65 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A Guerra da Fome do Lago esfriou sem acordo nem vencedor: cinco anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Linon atacou Aril na praia. Linon venceu e levou a comida guardada. Suenem morreu na luta. Linon venceu Aril e levou os seis sobreviventes para viver sob seu mando. Aril deixou de existir, mas os vencidos guardaram seus costumes em segredo.
 
 ### Ano 238
 
-Harau, a medrosa, cansou de dividir pouca comida. Partiu com 22 pessoas para a praia e ali fundou Naon. Rakoya, a medrosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Ulselem acordou se sentindo forte como nunca, sem saber por quê. Diante das ruínas de Kian, Naon disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Morreu Linhaik, o pacífico, aos 66 anos. Desde a morte de Enem, nunca mais tinha rezado. Mim, que guiava Waes, morreu dormindo, aos 65 anos. Enenil passou a guiar Waes, mas Dau não aceitou e guardou rancor. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
 
 ### Ano 239
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Os de Linon caíram sobre Kiur no morro. Kiur foi derrotado e perdeu o que tinha guardado. Na luta morreram Koko, Ulya e Beo. No verão, sem nuvem nenhuma, um raio acertou Selik no lago. Logo Selik, que tanto rezava. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Morreu Liu, que falava pelo Que Dá em Linum, aos 50 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. A doença entrou em Linon e matou dezesseis pessoas. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
 
 ### Ano 240
 
-Na primavera do ano 240, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Começou a Décima Guerra Santa: em nome do Que Queima, Oror pegou em lanças contra Linon. A Décima Guerra Santa seguiu: Oror contra Linon, no lago em nome do Que Queima. Linon resistiu, e Oror voltou de mãos vazias. Na luta morreram Beorim, Kihaos e Kiloem. A Décima Guerra Santa acabou em trégua, depois de um ano, duas batalhas e quatro mortos. Linon saiu dela mais forte. Nos anos 231 a 240 houve duas secas, quinze fomes, dez batalhas, 51 preces que pareceram atendidas e quinze preces sem resposta; nasceram 136 crianças e morreram 141 pessoas. No fim do ano 240, 269 pessoas viviam no mundo: Linon (126), Oror (76), Kiur (41) e Naon (26).
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. A terra tremeu. Caíram 27 cabanas. Haenik, Sela, Raenu, Bem, Linur, Enwaim e Suarya morreram sob os escombros. Depois disso, Linum deixou de chamar o deus de «o Que Dá» e passou a chamá-la de «a Terra Brava». Enmoik acordou se sentindo forte como nunca, sem saber por quê. No inverno, Lik, que guiava Linon, morreu de fome. Nos anos 231 a 240 houve duas secas, dezenove fomes, quatro batalhas, 44 preces que pareceram atendidas e seis preces sem resposta; nasceram 124 crianças e morreram 248 pessoas. No fim do ano 240, 144 pessoas viviam no mundo: Linon (45), Waes (76) e Linum (23).
 
 ### Ano 241
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Houve luta na praia: Linon atacou Naon. Linon venceu e levou a comida guardada. Na luta morreram Kiulya, Ena e Haena. Para Naon, a praia virou Praia do Luto. Linon e Naon, cansados de enterrar os seus, fizeram as pazes na praia. No inverno, Selhaik, o pacífico, morreu de fome.
+Haya, de Linum, casou-se com Haenur e foi viver em Waes. Foi o primeiro laço entre os dois povos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Do céu limpo, um raio caiu no morro e matou Su. Su era das que mais rezavam, e Linum ficou sem entender. No outono, começou a Terceira Guerra Santa: em nome da Mãe da Chuva, Linon pegou em lanças contra Linum. Linum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
 ### Ano 242
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Isu pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Foram 9 dias de fome no inverno em Linon, com 22 mortos. Kiu, de Oror, casou-se com Beik e foi viver em Naon. Foi o primeiro laço entre os dois povos. No verão, Rahaya acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 242, Linenik disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «a Mãe de Dois». Waes acreditou, e o deus mudou de nome. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Em Waes, Linenik pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A comida voltou, e Waes deu graças à Mãe de Dois. Dessa vez, tinha sido mesmo o deus. Raenem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 243
 
-Na primavera do ano 243, Selya acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. A doença entrou em Kiur e matou duas pessoas. No outono, nasceu Berenim, filho de Loya e Enloem, com sangue de Naon e de Kiur.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar.
 
 ### Ano 244
 
-Linlina, de Naon, casou-se com Loloem e foi viver em Linon. Foi o primeiro laço entre os dois povos. De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. No outono, Enraim acordou se sentindo forte como nunca, sem saber por quê.
+No verão, na Terceira Guerra Santa, Linon atacou Linum no morro em nome da Mãe da Chuva. Linon venceu e levou a comida guardada. Rau e Arhaem morreram na luta. Sem nuvem nenhuma, um raio acertou Linaril no morro. Ninguém em Linum teve dúvida: era castigo.
 
 ### Ano 245
 
-Enselim morreu com 4 anos, de uma febre que ninguém entendeu. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Berrau acordou se sentindo forte como nunca, sem saber por quê. Linon passou fome no inverno por 9 dias, e oito pessoas morreram. Harau rezou por Limim até a voz acabar. Limim morreu mesmo assim, e Harau nunca mais rezou.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Beenim tinha rezado: «Mãe de Dois, dá-nos o que comer.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 246
 
-Na primavera, morreu Bekia, a pacífica, aos 61 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Do céu limpo, um raio caiu na floresta e matou Bekios. Logo Bekios, que tanto rezava. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, Enhaem partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
+Loem, que falava pela Terra Brava em Linum, morreu dormindo, aos 76 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Dau não podia mais viver perto de Enenil. Saiu de Waes com dezenove pessoas e fundou Niem na praia. Em Niem, Tamem tomou para si o cuidado das preces à Mãe de Dois. As ruínas de Oror viraram aviso em Niem: era o que o deus fazia com quem o desagradava.
 
 ### Ano 247
 
-No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Ulkiya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Sem nuvem nenhuma, um raio acertou Linem no lago. Ninguém em Linon teve dúvida: era castigo. No outono, começou a Décima Guerra Santa: em nome do Generoso, Linon pegou em lanças contra Oror. No inverno, depois de um ano, três batalhas e oito mortos, a Décima Guerra Santa terminou em paz.
+Enik, que falava pela Mãe da Chuva em Linon, morreu de velhice aos 52 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Na Terceira Guerra Santa, Linon atacou Linum no morro em nome da Mãe da Chuva. Linum resistiu, e Linon voltou de mãos vazias. Selraik e Lolinem morreram na luta. Do céu limpo, um raio caiu no morro e matou Suik. Ninguém em Linum teve dúvida: era castigo.
 
 ### Ano 248
 
-Morreu Isu, que falava pelo Generoso em Linon, aos 61 anos. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Começou a Décima Guerra Santa: em nome do Que Fere, Kiur pegou em lanças contra Linon. Do céu limpo, um raio caiu no lago e matou Selbeya. Em Linon, disseram que era castigo. No verão, Oru acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, Dau, que fundou Niem e o guiava, morreu de velhice aos 53 anos. Tinha fundado Niem. Nasceu Kour, filho de Haena e Marur, com sangue de Niem e de Linum. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar.
 
 ### Ano 249
 
-De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Em Oror, Linos pediu: «Que Queima, não deixes nossos filhos morrerem de fome.» A fome passou, e Oror viu nisso obra do Que Queima. Dessa vez, tinha sido mesmo o deus. No verão, sem lugar e sem comida, Lim e os seus atravessaram a borda do mundo. Ninguém soube deles. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Fora dali, a seca continuou: 26 dias sem chuva no resto da região.
+Morreu Enmiem, o curioso, aos 61 anos. Desde a morte de Selya, nunca mais tinha rezado. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No outono, a Terceira Guerra Santa acabou em trégua, depois de oito anos, cinco batalhas e dez mortos. Mora acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali.
 
 ### Ano 250
 
-Na primavera do ano 250, Linos, que falava pelo Que Queima em Oror, morreu de velhice aos 50 anos. A Décima Guerra Santa seguiu: Linon contra Kiur, no morro em nome do Generoso. Kiur foi derrotado e perdeu o que tinha guardado. Rau, Ragos, Ulo e Haem morreram na luta. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Haselya no lago. Em Linon, disseram que era castigo. No verão, Los acordou se sentindo forte como nunca, sem saber por quê. Nos anos 241 a 250 houve duas secas, dezessete fomes, sete batalhas, 54 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 139 crianças e morreram 159 pessoas. No fim do ano 250, 240 pessoas viviam no mundo: Linon (121), Oror (85), Kiur (23) e Naon (11).
+Na primavera do ano 250, Hamiya acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Enlina no lago. Logo Enlina, que tanto rezava. Numa tempestade sobre o morro, um raio matou Haraem. Em Linum, disseram que era castigo. Começou a Guerra dos Irmãos do Lago: Waes e Linon, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos do Lago acabou em trégua, depois de duas batalhas e cinco mortos. Linon saiu dela mais forte. Nos anos 241 a 250 houve oito fomes, sete batalhas, 25 preces que pareceram atendidas e dez preces sem resposta; nasceram 155 crianças e morreram 59 pessoas. No fim do ano 250, 241 pessoas viviam no mundo: Linon (96), Waes (100), Linum (14) e Niem (31).
 
 ### Ano 251
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. A fome no inverno durou 6 dias em Oror e levou três vidas. A Décima Guerra Santa seguiu: Linon contra Kiur, no morro em nome do Generoso. Kiur foi derrotado e perdeu o que tinha guardado. Na luta morreram Selgoa e Raloa. Do céu limpo, um raio caiu no lago e matou Ramim. Em Linon, disseram que era castigo. No verão, em nome do Generoso, Harara proibiu casamentos e trocas com Naon. Era vontade de Harara, não do deus.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Em Waes, Linenik pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus. Foram 3 dias de fome no inverno em Waes, com um morto. Waena acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 252
 
-Começou a Décima Guerra Santa: em nome do Generoso, Linon pegou em lanças contra Naon. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Sem nuvem nenhuma, um raio acertou Zelior na praia. Em Naon, disseram que era castigo. A Décima Guerra Santa acabou em trégua, depois de cinco anos, cinco batalhas e dez mortos. Linon saiu dela mais forte. No verão, Beim acordou se sentindo forte como nunca, sem saber por quê.
+No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. No resto da região, a seca durou 24 dias.
 
 ### Ano 253
 
-Na primavera do ano 253, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Os de Oror caíram sobre Kiur no morro em nome do Que Queima. Kiur resistiu, e Oror voltou de mãos vazias. Halou, Linlinya e Miselem morreram na luta. Do céu limpo, um raio caiu no morro e matou Goem. Ninguém em Kiur teve dúvida: era castigo. Linon venceu Naon e levou os três sobreviventes para viver sob seu mando. Naon deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Décima Guerra Santa terminou com a conquista: dois anos, três batalhas e seis mortos.
+Beenim, que falava pela Mãe de Dois em Waes, morreu de velhice aos 64 anos. Enmoik, de Niem, tomou por esposa Ramira, de Linum, e os dois povos passaram a se visitar. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali.
 
 ### Ano 254
 
-Em Kiur, Ulem começou a pregar que o deus não era «o Que Fere». Era «o Que Leva». Em poucos anos, todos rezavam assim. Com Enloya à frente, 36 pessoas deixaram Linon e fundaram Torur, na praia. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Harau acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Loloem acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Em Waes, Linenik pediu: «Mãe de Dois, dá-nos o que comer.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 255
 
-Tora, a corajosa, morreu de velhice aos 63 anos. Foi quem proibiu, em nome do deus, o trato com Linon. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Torur passou fome no inverno por 9 dias, e onze pessoas morreram. Desde então, Torur chama a praia de Praia da Fome. Para Torur, as pedras de Mium só podiam ter sido postas por gigantes.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, Watoru acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 256
 
-Linik, que falava pelo Generoso em Linon, morreu dormindo, aos 57 anos. Em Torur, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Loim pediu: «Generoso, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. Enloya, que guiava Torur, teve uma filha: Enbeu.
+Na primavera do ano 256, Daem, o rancoroso, morreu dormindo, aos 59 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Waes passou fome no inverno por 9 dias, e dezenove pessoas morreram.
 
 ### Ano 257
 
-No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Os de Linon caíram sobre Oror na floresta em nome do Generoso. Linon venceu e levou a comida guardada. Ormoa e Haos morreram na luta. Sem nuvem nenhuma, um raio acertou Kiraya na floresta. Ninguém em Oror teve dúvida: era castigo. Começou a Décima Guerra Santa: em nome do Generoso, Linon pegou em lanças contra Oror.
+Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Houve luta no morro: Waes atacou Linum. Linum expulsou os atacantes. Na luta morreram Waena, Moenu e Arwaik. Waes e Linum, cansados de enterrar os seus, fizeram as pazes no morro. Haenur partiu com treze pessoas para além da borda do mundo. Nunca voltaram. Halina acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 258
 
-Na primavera, Ramiu, a curiosa, morreu dormindo, aos 54 anos. Na guerra, tinha tirado duas vidas. Oru, que falava pelo Que Leva em Kiur, morreu de velhice aos 53 anos. Kilos acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Depois de um ano, três batalhas e sete mortos, a Décima Guerra Santa terminou em paz. Linon saiu dela mais forte.
+Haenu disse ter ouvido o deus de outro jeito: não era «a Mãe da Chuva», era «o Que Risca o Céu». Linon acreditou, e o deus mudou de nome. Os de Waes caíram sobre Linon no lago. Linon resistiu, e Waes voltou de mãos vazias. Na luta morreu Mara. De um dia para o outro, a praia transbordou de comida. A fome de Niem acabou ali. Do céu limpo, um raio caiu no lago e matou Enselem. Em Linon, disseram que era castigo. No inverno, começou a Segunda Guerra dos Irmãos: Waes e Linon, nascidos do mesmo povo, viraram inimigos.
 
 ### Ano 259
 
-No meio da fome, a praia se encheu de frutos e peixes, como nunca. Torur comeu até cansar. Linon atacou Kiur no morro em nome do Generoso. Kiur foi derrotado e perdeu o que tinha guardado. Na luta morreram Kimos, Mo e Enena. Sem nuvem nenhuma, um raio acertou Selselo no morro. Ninguém em Kiur teve dúvida: era castigo. No inverno, começou a Décima Guerra Santa: em nome do Generoso, Linon pegou em lanças contra Kiur. Depois de duas batalhas e quatro mortos, a Décima Guerra Santa terminou em paz. Linon saiu dela mais forte.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No verão, a Segunda Guerra dos Irmãos seguiu: Waes contra Linon, no lago. Linon foi derrotado e perdeu o que tinha guardado. Linloem, Beik, Selu e Moem morreram na luta. Depois de tantos mortos, Waes e Linon se encontraram no lago e juraram paz. A Segunda Guerra dos Irmãos acabou em trégua, depois de um ano, três batalhas e sete mortos. No outono, em Waes, quem vinha de fora era recebido com comida e lugar perto do fogo.
 
 ### Ano 260
 
-Na primavera do ano 260, Hau, que falava pelo Que Queima em Oror, morreu de velhice aos 63 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Bebeik acordou se sentindo forte como nunca, sem saber por quê. Molou teve um sonho estranho e não deu importância. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Nos anos 251 a 260 houve duas secas, dezesseis fomes, treze batalhas, 58 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 145 crianças e morreram 126 pessoas. No fim do ano 260, 251 pessoas viviam no mundo: Linon (114), Oror (93), Kiur (18) e Torur (26).
+Na primavera do ano 260, Haik partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Marena teve um sonho estranho e não deu importância. Tamem, que guiava Niem, não resistiu à fome. Nos anos 251 a 260 houve quinze fomes, quatro batalhas, 45 preces que pareceram atendidas e oito preces sem resposta; nasceram 104 crianças e morreram 97 pessoas. No fim do ano 260, 229 pessoas viviam no mundo: Linon (113), Waes (76), Linum (17) e Niem (23).
 
 ### Ano 261
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Torur passou fome no inverno por 15 dias, e sete pessoas morreram. Torur cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Generoso. Em Torur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Na primavera do ano 261, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Niem comeu até cansar. A fome no inverno durou 9 dias em Niem e levou dez vidas. Em nome da Mãe de Dois, Marik proibiu casamentos e trocas com Linon. Era vontade de Marik, não do deus. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
 
 ### Ano 262
 
-Na primavera do ano 262, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Kiur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Lomik, que guiava Linon, não resistiu à fome. De novo Linon contra Oror em nome do Generoso, como no ano 257. Oror resistiu, e Linon voltou de mãos vazias. Liya, Besela, Haenya e Beim morreram na luta. Bem acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Os de Niem caíram sobre Linon no lago. Linon expulsou os atacantes. Na luta morreram Enya e Marik. Desde então, Niem chama o lago de Lago do Luto. Depois da luta, Niem e Linon se encontraram no lago e juraram paz. No outono, Marya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 263
 
-Na primavera do ano 263, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Raraik pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Linkiu acordou se sentindo forte como nunca, sem saber por quê. Linon passou fome no inverno por 9 dias, e catorze pessoas morreram.
+Na primavera do ano 263, Enliem, o curioso, morreu dormindo, aos 70 anos. Desde a morte de Raik, nunca mais tinha rezado. Morreu Loliu, que guiava Linon, aos 59 anos. Waur acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Em Linon, Selenim pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 264
 
-Na primavera, com Enloya à frente, a nova geração de Torur abandonou o medo das tempestades, costume herdado dos avós. De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali.
+No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Selenim tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Linon viu nisso obra do Que Risca o Céu. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 265
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Selhau acordou se sentindo forte como nunca, sem saber por quê. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Do céu limpo, um raio caiu no morro e matou Linos. Ninguém em Kiur teve dúvida: era castigo. No inverno, começou a Décima Guerra Santa: em nome do Que Queima, Oror pegou em lanças contra Kiur.
+Em Niem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
 
 ### Ano 266
 
-Na primavera, morreu o último que sabia escrever, e ninguém tinha aprendido. Kiur perdeu o saber. De um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Tantas preces atendidas fizeram Torur confiar no céu mais do que nas próprias mãos. Kos acordou se sentindo forte como nunca, sem saber por quê. No inverno, sem nuvem nenhuma, um raio acertou Mim na praia. Mim era dos que mais rezavam, e Torur ficou sem entender.
+Na primavera, Lolinim, o engenhoso, morreu dormindo, aos 63 anos. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Maru acordou se sentindo forte como nunca, sem saber por quê. No verão, sem lugar e sem comida, Hamara e os seus atravessaram a borda do mundo. Ninguém soube deles. A doença entrou em Waes e matou duas pessoas.
 
 ### Ano 267
 
-Na primavera, com lanças e promessas, Enloya acabou com o conselho de Torur e passou a mandar sozinho. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Raraik pediu: «Generoso, dá-nos o que comer.» A fome passou, e Linon viu nisso obra do Generoso. Dessa vez, tinha sido mesmo o deus. No verão, o deus calou justo quando Torur mais dependia dele. Bebem morreu de fome. Na guerra, tinha tirado duas vidas.
+Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Loloem leu e aprendeu: o saber não se perdeu. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Houve luta no morro: Linon atacou Linum. Linum expulsou os atacantes. Suem, Enu, Enloim e Suaros morreram na luta. Linon e Linum, cansados de enterrar os seus, fizeram as pazes no morro. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Linon, e 62 mortos. As crianças foram as primeiras.
 
 ### Ano 268
 
-Selo, que guiava Kiur, morreu dormindo, aos 60 anos. Com lanças e promessas, Raselya acabou com o conselho de Linon e passou a mandar sozinho. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Todos davam Gomoim por morto. Ele se levantou, pediu água e sorriu. No verão, no meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
+Na primavera, Hahaur, o ambicioso, morreu dormindo, aos 61 anos. Com Beur à frente, a nova geração de Niem abandonou o treino com lanças, costume herdado dos avós. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali.
 
 ### Ano 269
 
-A Décima Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Oror saiu dela mais forte. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Gomoim ardia em febre e já não falava. De manhã, levantou-se como se nada tivesse acontecido. Sem nuvem nenhuma, um raio acertou Kiya na floresta. Em Oror, disseram que era castigo. Começou a Décima Guerra Santa: em nome do Que Queima, Oror pegou em lanças contra Kiur.
+Na primavera, em Linum, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar.
 
 ### Ano 270
 
-Em Oror, Kia começou a pregar que o deus não era «o Que Queima». Era «o Que Apaga o Sol». Em poucos anos, todos rezavam assim. Em Torur, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Generoso». No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Sem nuvem nenhuma, um raio acertou Kokoya no morro. Em Kiur, disseram que era castigo. Começou a Décima Guerra Santa: em nome do Generoso, Linon pegou em lanças contra Oror. Depois de um ano, duas batalhas e quatro mortos, a Décima Guerra Santa terminou em paz. Linon saiu dela mais forte. Torbeik acordou se sentindo forte como nunca, sem saber por quê. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. Nos anos 261 a 270 houve três secas, vinte fomes, dez batalhas, 50 preces que pareceram atendidas e doze preces sem resposta; nasceram 146 crianças e morreram 148 pessoas. No fim do ano 270, 251 pessoas viviam no mundo: Linon (135), Oror (71), Kiur (9) e Torur (36).
+Na primavera do ano 270, em Linum, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Terra Brava». De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Nos anos 261 a 270 houve treze fomes, três batalhas, 41 preces que pareceram atendidas e sete preces sem resposta; nasceram 175 crianças e morreram 174 pessoas. No fim do ano 270, 217 pessoas viviam no mundo: Linon (36), Waes (117), Linum (25) e Niem (39).
 
 ### Ano 271
 
-Na primavera do ano 271, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. A fome no inverno durou 9 dias em Oror e levou sete vidas. Do céu limpo, um raio caiu no morro e matou Koa. Ninguém em Kiur teve dúvida: era castigo. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. No inverno, Raraik, que falava pelo Generoso em Linon, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Torur.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar.
 
 ### Ano 272
 
-Na primavera do ano 272, Orbeya, a engenhosa, morreu de velhice aos 60 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Os de Kiur caíram sobre Linon no lago em nome do Que Levanta. Linon expulsou os atacantes. Na luta morreram Rabeos e Sellora. Do céu limpo, um raio caiu no lago e matou Rara. Ninguém em Linon teve dúvida: era castigo. A fome no inverno durou 9 dias em Linon e levou 31 vidas.
+Morreu Selenim, que falava pelo Que Risca o Céu em Linon, aos 58 anos. Linenik, que falava pela Mãe de Dois em Waes, morreu de velhice aos 61 anos. Desde a morte de Mowaim, nunca mais tinha rezado. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo.
 
 ### Ano 273
 
-Morreu Selha, que falava pelo Que Apaga o Sol em Oror, aos 62 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Sem nuvem nenhuma, um raio acertou Lim no lago. Lim era dos que mais rezavam, e Linon ficou sem entender. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Começou a Guerra dos Irmãos: Torur e Linon, nascidos do mesmo povo, viraram inimigos.
+Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Do céu limpo, um raio caiu no lago e matou Loik. Ninguém em Linon teve dúvida: era castigo. Começou a Quarta Guerra Santa: em nome da Mãe de Dois, Waes pegou em lanças contra Linon. Depois de duas batalhas e seis mortos, a Quarta Guerra Santa terminou em paz. No verão, Moim acordou se sentindo forte como nunca, sem saber por quê. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
 
 ### Ano 274
 
-De um dia para o outro, o morro transbordou de comida. A fome de Kiur acabou ali. Começou a Décima Guerra Santa: em nome do Que Levanta, Kiur pegou em lanças contra Linon. Linon venceu Kiur e levou os cinco sobreviventes para viver sob seu mando. Kiur deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Décima Guerra Santa terminou com a conquista: dois anos, duas batalhas e quatro mortos. A Décima Guerra Santa acabou porque um dos lados deixou de existir: cinco anos, quatro batalhas e seis mortos. A Guerra dos Irmãos acabou em trégua, depois de um ano, três batalhas e cinco mortos. Linon saiu dela mais forte. Moa acordou se sentindo forte como nunca, sem saber por quê.
+De um dia para o outro, a praia transbordou de comida. A fome de Niem acabou ali. Enbera acordou se sentindo forte como nunca, sem saber por quê. Começou a Quinta Guerra Santa: em nome da Mãe de Dois, Waes pegou em lanças contra Linum. Na Quinta Guerra Santa, Waes atacou Linum no morro em nome da Mãe de Dois. Linum foi derrotado e perdeu o que tinha guardado. Waik e Linloa morreram na luta. Do céu limpo, um raio caiu no morro e matou Enliu, que guiava Linum. Em Linum, disseram que era castigo.
 
 ### Ano 275
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Todos davam Kiya por morta. Ela se levantou, pediu água e sorriu. Oror atacou Linon no lago em nome do Que Apaga o Sol. Linon expulsou os atacantes. Na luta morreram Bea, Selu, Los e Rau. Sem nuvem nenhuma, um raio acertou Lia no lago. Ninguém em Linon teve dúvida: era castigo. Linselu, a engenhosa, morreu de frio.
+Enmoik, que guiava Niem, morreu dormindo, aos 45 anos. Desde a morte de Martorut, nunca mais tinha rezado. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Todos davam Milinim por morto. Ele se levantou, pediu água e sorriu. No verão, sem nuvem nenhuma, um raio acertou Beya no lago. Ninguém em Linon teve dúvida: era castigo. No outono, Linum cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Terra Brava.
 
 ### Ano 276
 
-Selloim acordou se sentindo forte como nunca, sem saber por quê. Começou a Décima Guerra Santa: em nome do Que Apaga o Sol, Oror pegou em lanças contra Linon. Sem nuvem nenhuma, um raio acertou Linu no lago. Linu era das que mais rezavam, e Linon ficou sem entender. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Oror parou de rezar. Diziam que o Que Apaga o Sol nunca tinha existido.
+De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Endaim tinha rezado: «Mãe de Dois, dá-nos o que comer.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus. No outono, a Quinta Guerra Santa seguiu: Waes contra Linum, no morro em nome da Mãe de Dois. Waes venceu e levou a comida guardada. Suarur, Mimarem, Marenem e Enwaya morreram na luta. Do céu limpo, um raio caiu no morro e matou Misuik. Ninguém em Linum teve dúvida: era castigo.
 
 ### Ano 277
 
-Na primavera, Moa acordou se sentindo forte como nunca, sem saber por quê. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Gomoim tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Uma febre correu Oror e levou quatro vidas. Um inverno duro matou duas pessoas de frio.
+Em Niem, Koniu começou a pregar que o deus não era «a Mãe de Dois». Era «o Que Levanta». Em poucos anos, todos rezavam assim. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Houve luta no lago: Waes atacou Linon em nome da Mãe de Dois. Linon foi derrotado e perdeu o que tinha guardado. Na luta morreram Loloem, Enfaya e Lim. Do céu limpo, um raio caiu no lago e matou Enhaik, que guiava Linon. Em Linon, disseram que era castigo. No verão, Hadaem acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 278
 
-Morreu Miena, que guiava Torur, aos 63 anos. Miem passou a guiar Torur, mas Raraem não aceitou e guardou rancor. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Gomoim tinha rezado: «Generoso, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças ao Generoso. Dessa vez, tinha sido mesmo o deus. Entoru acordou se sentindo forte como nunca, sem saber por quê.
+Na Quinta Guerra Santa, Linum atacou Waes na floresta. Waes resistiu, e Linum voltou de mãos vazias. Enwaur e Enmarem morreram na luta. Para Linum, a floresta virou Floresta do Luto. Do céu limpo, um raio caiu no morro e matou Sufaur. Em Linum, disseram que era castigo.
 
 ### Ano 279
 
-Loloik, que falava pelo Generoso em Linon, morreu de velhice aos 61 anos. Na guerra, tinha tirado duas vidas. A Décima Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e sete mortos, e ninguém sabia mais por que lutava. Linon saiu dela mais forte. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
+Morreu Endaim, o devoto, aos 67 anos. Mou partiu com oito pessoas para além da borda do mundo. Nunca voltaram. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Começou a Sexta Guerra Santa: em nome da Mãe de Dois, Waes pegou em lanças contra Linon. Um raio sem nuvem acertou Raik, que guiava Linon, diante de todos. Em Linon, disseram que era castigo.
 
 ### Ano 280
 
-Na primavera, morreu Enim, que falava pelo Generoso em Linon, aos 62 anos. Nunca perdoou o deus pela morte de Enhaik. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Sem nuvem nenhuma, um raio acertou Goulos no lago. Goulos era dos que mais rezavam, e Linon ficou sem entender. Começou a Décima Guerra Santa: em nome do Que Apaga o Sol, Oror pegou em lanças contra Linon. No verão, Bemoem não podia mais viver perto de Rahaya. Saiu de Oror com dezoito pessoas e fundou Beur no morro. Nos anos 271 a 280 houve duas secas, dezessete fomes, onze batalhas, 40 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 157 crianças e morreram 167 pessoas. No fim do ano 280, 241 pessoas viviam no mundo: Linon (122), Oror (74), Torur (26) e Beur (19).
+Na primavera do ano 280, Habeya, que guiava Linum, morreu dormindo, aos 57 anos. Enur acordou se sentindo forte como nunca, sem saber por quê. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Em Waes, Waur pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus. Nos anos 271 a 280 houve duas secas, dez fomes, nove batalhas, 38 preces que pareceram atendidas e dez preces sem resposta; nasceram 122 crianças e morreram 127 pessoas. No fim do ano 280, 203 pessoas viviam no mundo: Linon (48), Waes (122), Linum (12) e Niem (21).
 
 ### Ano 281
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Linon passou fome no inverno por 9 dias, e sete pessoas morreram. Beur encontrou as ruínas de Lour. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, na Décima Guerra Santa, Oror atacou Linon no lago em nome do Que Apaga o Sol. Linon expulsou os atacantes. Mohaim e Loloya morreram na luta. Depois de um ano, quatro batalhas e onze mortos, a Décima Guerra Santa terminou em paz. Linon saiu dela mais forte.
+Waur, que falava pela Mãe de Dois em Waes, morreu dormindo, aos 57 anos. Foi quem proibiu, em nome do deus, o trato com Linon. Wamiem, que guiava Waes, morreu de velhice aos 52 anos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Sem nuvem nenhuma, um raio acertou Enya no morro. Em Linum, disseram que era castigo. Daim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 282
 
-Na primavera do ano 282, Raselya, que guiava Linon, morreu de velhice aos 61 anos. Na guerra, tinha tirado duas vidas. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar.
+Na primavera, de um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. A Sexta Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. Waes saiu dela mais forte. Hamora acordou se sentindo forte como nunca, sem saber por quê. Na Quinta Guerra Santa, Linum atacou Waes na floresta. Waes resistiu, e Linum voltou de mãos vazias. Na luta morreram Fa, Sufaem, Wawaos e Modaim. Sem nuvem nenhuma, um raio acertou Faenil no morro. Ninguém em Linum teve dúvida: era castigo.
 
 ### Ano 283
 
-Beu morreu de velhice aos 52 anos. Na guerra, tinha tirado duas vidas. Beur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Linkiu, de Beur, casou-se com Lilinim e foi viver em Linon. Foi o primeiro laço entre os dois povos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali.
+No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Foram 3 dias de fome no inverno em Waes, com um morto. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, Bemoim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 284
 
-De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No inverno, Berau acordou se sentindo forte como nunca, sem saber por quê.
+Na primavera do ano 284, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Sem nuvem nenhuma, um raio acertou Enil no morro. Em Linum, disseram que era castigo. Os últimos de Linum, Enem, Enena e Raur, juntaram-se a Niem. Linum deixou de existir. A Quinta Guerra Santa acabou porque um dos lados deixou de existir: onze anos, sete batalhas e dezesseis mortos. Selliya acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 285
 
-Na primavera do ano 285, Selem disse ter ouvido o deus de outro jeito: não era «o Generoso», era «a Mão Fechada». Linon acreditou, e o deus mudou de nome. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Selmos acordou se sentindo forte como nunca, sem saber por quê.
+No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No inverno, com Wamarik à frente, dezenove pessoas deixaram Waes e fundaram Miar, no morro. Miar encontrou as ruínas de Oror. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Milinim tinha rezado: «Mãe de Dois, dá-nos o que comer.» A fome passou, e Waes viu nisso obra da Mãe de Dois. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 286
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Raliem tinha rezado: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Linon deu graças à Mão Fechada. Dessa vez, tinha sido mesmo o deus.
+Na primavera do ano 286, começou a Guerra Santa da Praia: em nome da Mãe de Dois, Waes pegou em lanças contra Niem. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Enu acordou se sentindo forte como nunca, sem saber por quê. Sem nuvem nenhuma, um raio acertou Koik na praia. Em Niem, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Niem sai de casa. Lembram de Koik.
 
 ### Ano 287
 
-Na primavera, de um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Em Linon, Raliem pediu: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linon deu graças à Mão Fechada. Dessa vez, tinha sido mesmo o deus. Foram 9 dias de fome no inverno em Linon, com dois mortos. No inverno, o sol escureceu outra vez.
+Morreu Haliem, que guiava Linon, aos 62 anos. Linon passou a receber bem os de fora: um casamento com outro povo virava festa. No outono, nasceu Tou, filha de Wa e Wamour, com sangue de Miar e de Linum. De um dia para o outro, a praia transbordou de comida. A fome de Niem acabou ali.
 
 ### Ano 288
 
-Na primavera, com Bemoem à frente, a nova geração de Beur abandonou a festa da chuva, costume herdado dos avós. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Houve luta no lago: Oror atacou Linon em nome do Que Apaga o Sol. Linon resistiu, e Oror voltou de mãos vazias. Haraya e Enselik morreram na luta. Sem nuvem nenhuma, um raio acertou Beoru no morro. Em Beur, disseram que era castigo.
+No meio da fome, a praia se encheu de frutos e peixes, como nunca. Niem comeu até cansar. Linim acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 289
 
-Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Começou a Guerra da Fome do Morro: Oror, com fome, foi buscar à força a comida de Beur. A Guerra da Fome do Morro seguiu: Oror contra Beur, no morro. Oror venceu e levou a comida guardada. Linmoem e Kikiem morreram na luta. Sem nuvem nenhuma, um raio acertou Ramiem no morro. Em Beur, disseram que era castigo. Raliem, que guiava Linon, morreu de frio. Na guerra, tinha tirado quatro vidas.
+A Guerra Santa da Praia esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Em Waes, Milinim pediu: «Mãe de Dois, não deixes nossos filhos morrerem de fome.» A comida voltou, e Waes deu graças à Mãe de Dois. Dessa vez, tinha sido mesmo o deus.
 
 ### Ano 290
 
-Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Linon perdeu o saber. No meio da fome, o lago se encheu de frutos e peixes, como nunca. Linon comeu até cansar. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Linon, e 119 mortos. As crianças foram as primeiras. Linon acabou: Haraem, Raik e Enloim foram viver em Torur. Oror encontrou as ruínas de Linon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nos anos 281 a 290 houve dezessete fomes, cinco batalhas e 23 preces que pareceram atendidas; nasceram 129 crianças e morreram 234 pessoas. No fim do ano 290, 136 pessoas viviam no mundo: Oror (83), Torur (43) e Beur (10).
+Na primavera do ano 290, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Halinem acordou se sentindo forte como nunca, sem saber por quê. No inverno, os de Niem caíram sobre Linon no lago. Linon resistiu, e Niem voltou de mãos vazias. Raur e Nira morreram na luta. Depois de tantos mortos, Niem e Linon se encontraram no lago e juraram paz. Koniu, a engenhosa, morreu de fome. Na guerra, tinha tirado duas vidas. Nos anos 281 a 290 houve duas secas, oito fomes, sete batalhas, 35 preces que pareceram atendidas e sete preces sem resposta; nasceram 143 crianças e morreram 135 pessoas. No fim do ano 290, 205 pessoas viviam no mundo: Linon (80), Waes (86), Niem (15) e Miar (24).
 
 ### Ano 291
 
-Na primavera do ano 291, no meio da fome, a praia se encheu de frutos e peixes, como nunca. Torur comeu até cansar. Tormia acordou se sentindo forte como nunca, sem saber por quê. Houve luta na floresta: Torur atacou Oror. Oror expulsou os atacantes. Na luta morreu Halinem. Sem nuvem nenhuma, um raio acertou Orim na floresta. Em Oror, disseram que era castigo. Para Beur, a floresta virou Floresta do Luto.
+Na primavera, Bemoem, que guiava Waes, morreu de velhice aos 62 anos. Nunca perdoou o deus pela morte de Habeim. De um dia para o outro, a praia transbordou de comida. A fome de Niem acabou ali. Wazem acordou se sentindo forte como nunca, sem saber por quê. A fome no inverno durou 9 dias em Niem e levou dezenove vidas. No verão, em nome do Que Levanta, Niut proibiu casamentos e trocas com Miar. Era vontade de Niut, não do deus.
 
 ### Ano 292
 
-De um dia para o outro, a praia transbordou de comida. A fome de Torur acabou ali. No inverno, começou a Guerra da Fome da Floresta: Torur, com fome, foi buscar à força a comida de Oror. Sem nuvem nenhuma, um raio acertou Mimia na floresta. Ninguém em Oror teve dúvida: era castigo. Na Guerra da Fome da Floresta, Torur atacou Oror na floresta. Oror resistiu, e Torur voltou de mãos vazias. Na luta morreram Selik, Tora e Ena. Enha acordou se sentindo forte como nunca, sem saber por quê.
+De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Os de Niem caíram sobre Waes na floresta em nome do Que Levanta. Waes expulsou os atacantes. Torem morreu na luta. Houve luta no morro: Niem atacou Miar. Miar resistiu, e Niem voltou de mãos vazias. Na luta morreram Dahara, Lia e Wa. O mesmo chão ganhou dois nomes: Morro da Vitória para Miar, Morro do Luto para Niem. Sem nuvem nenhuma, um raio acertou Beenu na floresta. Ninguém em Waes teve dúvida: era castigo.
 
 ### Ano 293
 
-Na primavera, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. Entoru acordou se sentindo forte como nunca, sem saber por quê. Do céu limpo, um raio caiu no morro e matou Kioros. Ninguém em Beur teve dúvida: era castigo. No verão, com Torya à frente, catorze pessoas deixaram Torur e fundaram Raes, no lago. Raes encontrou as ruínas de Kian. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Na primavera, Wara acordou se sentindo forte como nunca, sem saber por quê. Começou a Guerra dos Irmãos da Floresta: Niem e Waes, nascidos do mesmo povo, viraram inimigos. Do céu limpo, um raio caiu na floresta e matou Linur. Ninguém em Waes teve dúvida: era castigo. No meio da seca, choveu só sobre o lago. Em volta, o céu continuou limpo. No outono, de um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali.
 
 ### Ano 294
 
-No outono, a Guerra da Fome do Morro esfriou sem acordo nem vencedor: seis anos, quatro batalhas e oito mortos, e ninguém sabia mais por que lutava. Oror saiu dela mais forte. Na Guerra da Fome da Floresta, Torur atacou Oror na floresta. Torur venceu e levou a comida guardada. Mobeu e Raenya morreram na luta. Sem nuvem nenhuma, um raio acertou Selselya na floresta. Em Oror, disseram que era castigo. No inverno, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali.
+Na primavera do ano 294, o templo de Miar ficou mais forte que o líder. Waya, que falava pela Mãe de Dois, passou a decidir tudo. No verão, sem nuvem nenhuma, um raio acertou Dahaya na floresta. Em Waes, disseram que era castigo. Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Depois de dois anos, cinco batalhas e onze mortos, a Guerra dos Irmãos da Floresta terminou em paz. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali.
 
 ### Ano 295
 
-Morreu Torik, filho pequeno de Torya. Com Torya à frente, a nova geração de Raes abandonou o costume de queimar os mortos, costume herdado dos avós. Mitoros acordou se sentindo forte como nunca, sem saber por quê. Na Guerra da Fome da Floresta, Oror atacou Torur na praia. Torur foi derrotado e perdeu o que tinha guardado. Na luta morreram Besela e Mim. Sem nuvem nenhuma, um raio acertou Kiya na floresta. Ninguém em Oror teve dúvida: era castigo.
+Na primavera do ano 295, Halinem, que guiava Waes, morreu de velhice aos 50 anos. Linhaya passou a guiar Waes, mas Suena não aceitou e guardou rancor.
 
 ### Ano 296
 
-Uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Beraos acordou se sentindo forte como nunca, sem saber por quê. Na Guerra da Fome da Floresta, Oror atacou Torur na praia. Oror venceu e levou a comida guardada. Mitorem e Belinem morreram na luta. Do céu limpo, um raio caiu na floresta e matou Linos. Em Oror, disseram que era castigo. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar.
+Morreu Bebera, que falava pela Mãe de Dois em Waes, aos 64 anos. Foi quem proibiu, em nome do deus, o trato com Niem. Em Waes, Momiya começou a pregar que o deus não era «a Mãe de Dois». Era «a Mão Fechada». Em poucos anos, todos rezavam assim. De um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Em Waes, Marur pediu: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A comida voltou, e Waes deu graças à Mão Fechada. Dessa vez, tinha sido mesmo o deus. Mara acordou se sentindo forte como nunca, sem saber por quê.
 
 ### Ano 297
 
-Na primavera do ano 297, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar. No verão, Lobeos acordou se sentindo forte como nunca, sem saber por quê. A Guerra da Fome da Floresta seguiu: Torur contra Oror, na floresta. Oror expulsou os atacantes. Torenik e Raenu morreram na luta. Do céu limpo, um raio caiu na floresta e matou Hamoem. Ninguém em Oror teve dúvida: era castigo. No outono, morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Enem leu e aprendeu: o saber não se perdeu.
+De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. No outono, numa tempestade sobre o morro, um raio matou Mira. Mira era das que mais rezavam, e Miar ficou sem entender. Para os mais fiéis de Miar, Mira não foi castigada, mas escolhida. Nasceu ali um costume: quando o céu escurece, ninguém em Miar sai de casa. Lembram de Mira. No inverno, apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu.
 
 ### Ano 298
 
-Bemoem, que fundou Beur e o guiava, morreu de velhice aos 71 anos. Tinha fundado Beur. No verão, nasceu Torenya, a primeira de Raes. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Oror comeu até cansar.
+Na primavera do ano 298, de um dia para o outro, a floresta transbordou de comida. A fome de Waes acabou ali. Em Waes, Mora pediu: «Mão Fechada, dá-nos o que comer.» A fome passou, e Waes viu nisso obra da Mão Fechada. Dessa vez, tinha sido mesmo o deus. A fome no inverno durou 9 dias em Waes e levou 29 vidas. No outono, Waes atacou Miar no morro. Miar expulsou os atacantes. Momiya, Haik e Linu morreram na luta. Do céu limpo, um raio caiu no morro e matou Dau. Ninguém em Miar teve dúvida: era castigo.
 
 ### Ano 299
 
-Na primavera do ano 299, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali.
+Waya, que guiava Miar, morreu de repente, aos 33 anos. De um dia para o outro, o lago transbordou de comida. A fome de Linon acabou ali. Waes atacou Niem na praia. Niem expulsou os atacantes. Milinim, Wamoim e Miwaya morreram na luta. Do céu limpo, um raio caiu na praia e matou Niem, que guiava Niem. Em Niem, disseram que era castigo.
 
 ### Ano 300
 
-Beur acabou: Sellinim, Mimim e Tamem foram viver em Raes. No verão, uma nuvem parou sobre a floresta e choveu ali, e só ali, no meio da seca. Mobem não podia mais viver perto de Orselem. Saiu de Oror com dezenove pessoas e fundou Mour no morro. Sem nuvem nenhuma, um raio acertou Moem na floresta. Ninguém em Oror teve dúvida: era castigo. No inverno, de um dia para o outro, a floresta transbordou de comida. A fome de Oror acabou ali. Nos anos 291 a 300 houve duas secas, sete fomes e quinze batalhas; nasceram 82 crianças e morreram 65 pessoas. No fim do ano 300, 153 pessoas viviam no mundo: Oror (93), Torur (22), Raes (19) e Mour (19).
+Na primavera, Niem deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. No meio da fome, a floresta se encheu de frutos e peixes, como nunca. Waes comeu até cansar. Começou a Guerra dos Irmãos do Morro: Waes e Miar, nascidos do mesmo povo, viraram inimigos. Sem nuvem nenhuma, um raio acertou Linem no morro. Linem era dos que mais rezavam, e Miar ficou sem entender. No inverno, Toim acordou se sentindo forte como nunca, sem saber por quê. Nos anos 291 a 300 houve duas secas, onze fomes, nove batalhas, 41 preces que pareceram atendidas e treze preces sem resposta; nasceram 129 crianças e morreram 99 pessoas. No fim do ano 300, 236 pessoas viviam no mundo: Linon (110), Waes (91), Niem (22) e Miar (13).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Oror** vive na floresta, com 93 pessoas, com canais e moinhos; nasceu de uma briga em Linon no ano 84; não reza a ninguém; costumes: faz a festa da chuva (desde o ano 91); guarda tanta comida para o inverno (desde o ano 126); não desperdiça uma gota d'água (desde o ano 130); não sai de casa em dia de tempestade (desde o ano 141); queima os mortos (desde o ano 172); treina os jovens com lanças (desde o ano 269).
-- **Torur** vive na praia, com 22 pessoas, com canais e moinhos; nasceu de uma migração em Linon no ano 254; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 124); queima os mortos (desde o ano 191); faz a festa da chuva (desde o ano 254); treina os jovens com lanças (desde o ano 266); não sai de casa em dia de tempestade (desde o ano 266).
-- **Raes** vive no lago, com 19 pessoas, com canais e moinhos; nasceu de uma migração em Torur no ano 293; chama o deus de «o Generoso»; costumes: guarda tanta comida para o inverno (desde o ano 124); faz a festa da chuva (desde o ano 254); treina os jovens com lanças (desde o ano 266).
-- **Mour** vive no morro, com 19 pessoas, em casas de pedra; nasceu de uma briga em Oror no ano 300; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 91); guarda tanta comida para o inverno (desde o ano 126); não desperdiça uma gota d'água (desde o ano 130); não sai de casa em dia de tempestade (desde o ano 141); queima os mortos (desde o ano 172); treina os jovens com lanças (desde o ano 269).
+- **Linon** vive no lago, com 110 pessoas, com canais e moinhos; nasceu de uma migração em Zeor no ano 8; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (a origem foi esquecida); treina os jovens com lanças (desde o ano 162); queima os mortos (desde o ano 163); não sai de casa em dia de tempestade (desde o ano 232).
+- **Waes** vive na floresta, com 91 pessoas, com canais e moinhos; nasceu de uma briga em Linon no ano 191; chama o deus de «a Mão Fechada»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 162); faz a festa da chuva (desde o ano 202); queima os mortos (desde o ano 275); não sai de casa em dia de tempestade (desde o ano 292).
+- **Niem** vive na praia, com 22 pessoas, com canais e moinhos; nasceu de uma briga em Waes no ano 246; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 274); não sai de casa em dia de tempestade (desde o ano 286).
+- **Miar** vive no morro, com 13 pessoas, com canais e moinhos; nasceu de uma migração em Waes no ano 285; chama o deus de «a Mãe de Dois»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 162); faz a festa da chuva (desde o ano 202); queima os mortos (desde o ano 275); não sai de casa em dia de tempestade (desde o ano 297).
 
-Povos que deixaram de existir: Zeor, Linon, Demum, Tamil, Kian, Beum, Mian, Beran, Haum, Kiur, Lour, Mium, Naon e Beur.
+Povos que deixaram de existir: Zeor, Oror, Demum, Tamil, Ruem, Linil, Mian, Aril, Aron e Linum.
 
-Lugares com nome: Praia do Raio (praia, para Demum), Praia da Vitória (praia, para Oror), Praia do Luto (praia, para Kian), Praia da Vitória (praia, para Tamil), Praia da Vitória (praia, para Linon), Praia da Fome (praia, para Mian), Praia do Luto (praia, para Lour), Praia do Luto (praia, para Mium), Praia do Luto (praia, para Naon), Praia da Fome (praia, para Torur), Lago da Fartura (lago, para Linon), Lago do Luto (lago, para Oror), Lago do Luto (lago, para Tamil), Lago do Luto (lago, para Kian), Lago do Luto (lago, para Kiur), Lago do Luto (lago, para Mium), Lago do Luto (lago, para Torur), Floresta da Chuva (floresta, para Zeor), Floresta do Luto (floresta, para Linon), Floresta da Fartura (floresta, para Oror), Floresta do Luto (floresta, para Haum), Floresta da Trégua (floresta, para Mian), Floresta do Luto (floresta, para Kiur), Floresta do Luto (floresta, para Beur), Floresta do Luto (floresta, para Torur), Morro do Raio (morro, para Tamil), Morro da Trégua (morro, para Linon), Morro do Luto (morro, para Kian), Morro da Vitória (morro, para Oror), Morro do Luto (morro, para Beran), Morro do Luto (morro, para Mian), Morro do Luto (morro, para Haum), Morro do Luto (morro, para Kiur), Morro da Vitória (morro, para Beur) e Morro da Vitória (morro, para Torur).
+Lugares com nome: Praia do Raio (praia, para Demum), Praia da Trégua (praia, para Tamil), Praia da Trégua (praia, para Ruem), Praia da Vitória (praia, para Linon), Praia da Fartura (praia, para Aril), Praia da Fartura (praia, para Niem), Praia do Luto (praia, para Waes), Lago da Fartura (lago, para Linon), Lago da Trégua (lago, para Oror), Lago do Luto (lago, para Tamil), Lago do Luto (lago, para Ruem), Lago do Luto (lago, para Mian), Lago da Vitória (lago, para Waes), Lago do Luto (lago, para Niem), Floresta da Chuva (floresta, para Zeor), Floresta do Luto (floresta, para Linon), Floresta da Fartura (floresta, para Oror), Floresta do Luto (floresta, para Linil), Floresta do Luto (floresta, para Ruem), Floresta do Luto (floresta, para Waes), Floresta do Luto (floresta, para Linum), Floresta da Vitória (floresta, para Niem), Morro do Raio (morro, para Tamil), Morro da Trégua (morro, para Linon), Morro da Fome (morro, para Mian), Morro do Raio (morro, para Aron), Morro da Vitória (morro, para Aril), Morro da Vitória (morro, para Linum), Morro do Luto (morro, para Waes), Morro da Vitória (morro, para Miar) e Morro do Luto (morro, para Niem).
 
-Em 300 anos nasceram 2969 pessoas e morreram 2720.
+Em 300 anos nasceram 2655 pessoas e morreram 2346.

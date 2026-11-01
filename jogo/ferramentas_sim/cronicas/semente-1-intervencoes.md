@@ -234,7 +234,7 @@ Na primavera do ano 79, Lou, que falava pela Terra Brava em Linon, morreu dormin
 
 ### Ano 80
 
-Loya, que falava pela Terra Brava em Linon, morreu de repente, aos 40 anos. Raem pregou em Raon que o deus não era «a Terra Brava», mas «o Que Levanta». O templo chamou aquilo de heresia, e Raem saiu com os que o seguiam. Os seguidores de Raem fundaram Moum no morro. Ali se reza a «o Que Levanta». Lora passou a falar pelo Que Levanta em Moum. Era a primeira a rezar e a última a duvidar. A fome ensinou: desde então, Raon estoca comida e não come tudo o que colhe. Nos anos 71 a 80 houve quatro secas, sete fomes, dezoito preces que pareceram atendidas e quatro preces sem resposta; nasceram 66 crianças e morreram 50 pessoas. No fim do ano 80, 105 pessoas viviam no mundo: Zeor (42), Linon (39), Raon (11) e Moum (13).
+Loya, que falava pela Terra Brava em Linon, morreu de repente, aos 40 anos. Raem pregou em Raon que o deus não era «a Terra Brava», mas «o Que Levanta». O templo chamou aquilo de heresia, e Raem saiu com os que o seguiam. Os seguidores de Raem fundaram Moum no morro. Ali, o deus se chama «o Que Levanta». Lora passou a falar pelo Que Levanta em Moum. Era a primeira a rezar e a última a duvidar. A fome ensinou: desde então, Raon estoca comida e não come tudo o que colhe. Nos anos 71 a 80 houve quatro secas, sete fomes, dezoito preces que pareceram atendidas e quatro preces sem resposta; nasceram 66 crianças e morreram 50 pessoas. No fim do ano 80, 105 pessoas viviam no mundo: Zeor (42), Linon (39), Raon (11) e Moum (13).
 
 ### Ano 81
 

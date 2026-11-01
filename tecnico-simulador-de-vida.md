@@ -36,7 +36,7 @@
 | Grandeza | Valor |
 |---|---|
 | Passo de simulação | 1 hora de jogo |
-| Dia de jogo | 24 passos, cerca de 45 minutos reais no ritmo normal (um passo a cada ~1,9 s) |
+| Dia de jogo | 24 passos, cerca de 45 minutos reais no ritmo normal (um passo a cada ~1 min 52 s, ou seja, 1 minuto de jogo ≈ 1,9 s real) |
 | Ano de jogo | 40 dias (4 estações de 10 dias) = 960 passos |
 | Teto da ausência | 1 ano de jogo = 960 passos |
 

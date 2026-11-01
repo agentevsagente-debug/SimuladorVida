@@ -388,683 +388,667 @@ No outono, começou a Guerra Santa: em nome da Mãe da Fartura, Toan pegou em la
 
 Kuro, o corajoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. Linhan passou a receber bem os de fora: um casamento com outro povo virava festa.
 
-*O ano 123 foi calmo.*
+### Ano 123
+
+No inverno, na Guerra Santa, Toan atacou Juon no morro em nome da Mãe da Fartura. Juon foi derrotado e perdeu o que tinha guardado. Sujuo e Julou morreram na luta.
 
 ### Ano 124
 
-Os de Kuror caíram sobre Juon no morro. Kuror venceu e levou a comida guardada. Eno e Toe morreram na luta. Para Kuror, o morro virou Morro da Vitória. Depois da derrota, os jovens de Linhan passaram a treinar com lanças. Toan e Linhan fizeram as pazes na floresta, antes que a briga crescesse. A Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava.
+Morreu o último que tinha visto o ano 83. Em Juon, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. A Guerra Santa seguiu: Juon contra Toan, no lago. Toan resistiu, e Juon voltou de mãos vazias. Na luta morreram Toe e Tohaim. Desde então, Juon chama o lago de Lago do Luto. Juon e Toan, cansados de enterrar os seus, fizeram as pazes no lago. Depois de quatro anos, quatro batalhas e sete mortos, a Guerra Santa terminou em paz. Toan saiu dela mais forte.
 
 ### Ano 125
 
-Na primavera do ano 125, a terra tremeu. Caíram quinze cabanas. Haha, Dojuik, Yoena, Suena e Tolinur morreram sob os escombros. Halina tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Kuror viu nisso obra da Terra Brava. A crônica sabe que foi acaso.
+Juon passou fome no inverno por 24 dias, e quatro pessoas morreram. Em Juon, Eno pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Juon deu graças à Terra Brava. A crônica sabe que foi acaso. A fome ensinou: desde então, Juon estoca comida e não come tudo o que colhe.
 
 ### Ano 126
 
-Raloik, o devoto, morreu dormindo, aos 49 anos. Foram 9 dias de fome no inverno em Juon, com quatro mortos. Depois daquela fome, Juon passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Na primavera, morreu Yooril, que guiava Linhan, aos 58 anos. A fome durou 20 dias em Juon e levou duas vidas. Orsuik implorou pela filha. Sutoa morreu, e daquele dia em diante Orsuik cuspia no chão quando falavam da Mãe da Fartura. Uma febre correu Toan e levou sete vidas.
 
 ### Ano 127
 
-No inverno do ano 127, Kuror passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Os de Juon caíram sobre Linhan na floresta. Linhan foi derrotado e perdeu o que tinha guardado. Na luta morreram Halinim e Yoenim. O mesmo chão ganhou dois nomes: Floresta da Vitória para Juon, Floresta do Luto para Linhan. Linhan não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Totoe, de Linhan, casou-se com Lo e foi viver em Toan. Foi o primeiro laço entre os dois povos.
 
 ### Ano 128
 
-Sujuo, que guiava Juon, morreu dormindo, aos 50 anos. Morreu o último que tinha visto o ano 83. Em Juon, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. A terra tremeu. Caíram catorze cabanas. Rilrilim, Hadou e Toim morreram sob os escombros.
+Raloik, o devoto, morreu dormindo, aos 51 anos. Eno, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Loan implorou pelo filho. Suran morreu, e daquele dia em diante Loan cuspia no chão quando falavam da Mãe da Fartura.
 
 ### Ano 129
 
-Los, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No outono, de novo Kuror contra Juon, como no ano 124. Kuror venceu e levou a comida guardada. Losuim morreu na luta. Kuror venceu Juon e levou os cinco sobreviventes para viver sob seu mando. Juon deixou de existir, mas os vencidos guardaram seus costumes em segredo. Toan encontrou as ruínas de Juon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Kuror e Linhan fizeram as pazes na floresta, antes que a briga crescesse.
+Uma tosse que não passava matou quatro pessoas em Kuror. Depois da febre, Kuror passou a queimar os seus mortos, para que a doença não voltasse. Em Toan, quem vinha de fora era recebido com comida e lugar perto do fogo. A forja de Kuror não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 130
 
-Doyoil, que guiava Toan, morreu dormindo, aos 61 anos. A fome no inverno durou 9 dias em Toan e levou seis vidas. Foram 21 dias de fome no inverno em Kuror, com sete mortos. Desde então, Kuror chama a praia de Praia da Fome. Em Linhan, quem vinha de fora era recebido com comida e lugar perto do fogo. Nos anos 121 a 130 houve dezesseis fomes, cinco batalhas, 34 preces que pareceram atendidas e oito preces sem resposta; nasceram 81 crianças e morreram 85 pessoas. No fim do ano 130, 149 pessoas viviam no mundo: Toan (87), Kuror (23) e Linhan (39).
+Na primavera, com Losuim à frente, Juon largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No outono, Linhan passou a receber bem os de fora: um casamento com outro povo virava festa. Nos anos 121 a 130 houve treze fomes, quatro batalhas, 32 preces que pareceram atendidas e onze preces sem resposta; nasceram 86 crianças e morreram 66 pessoas. No fim do ano 130, 174 pessoas viviam no mundo: Toan (101), Kuror (30), Juon (6) e Linhan (37).
 
 ### Ano 131
 
-Yoa deu à luz gêmeos, Hatoil e Dorilik. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 131, morreu Doyoil, que guiava Toan, aos 62 anos. Yoraos, que guiava Kuror, morreu dormindo, aos 48 anos. Em Kuror, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 81, só a crônica guarda. Toan escolheu Yodoan para guiar o grupo. Orran queria o lugar e nunca perdoou. No outono, Juon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 132
 
-Na primavera, Yooril, que guiava Linhan, morreu de velhice aos 64 anos.
+Na primavera do ano 132, Tohail deu à luz gêmeos, Juo e Raik. Uns viram bênção; outros, mau sinal. Sem lugar e sem comida, Kurha e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
-### Ano 133
-
-No inverno, com Rayoil à frente, 26 pessoas deixaram Linhan e fundaram Dour, no morro. Dour encontrou as ruínas de Suran e disse que ali tinham vivido gigantes. Nasceu Yobena, a primeira de Dour.
+*O ano 133 foi calmo.*
 
 ### Ano 134
 
-Na primavera do ano 134, Rilur disse ter ouvido o deus de outro jeito: não era «o Que Julga», era «o Que Queima». Dour acreditou, e o deus mudou de nome. Para Dour, as pedras de Juon só podiam ter sido postas por gigantes. Em Toan, Doik pediu: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Toan viu nisso obra da Mãe da Fartura. O deus não tinha feito nada. Os escribas de Toan registraram o milagre. No verão, em Dour, Rilur tomou para si o cuidado das preces ao Que Queima.
+Na primavera do ano 134, sem lugar e sem comida, Totoe e os seus atravessaram a borda do mundo. Ninguém soube deles. Houve luta no morro: Kuror atacou Juon. Juon foi derrotado e perdeu o que tinha guardado. Na luta morreram Fakao e Kail. Para Kuror, o morro virou Morro da Vitória. Juon fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Kuror venceu Juon e levou os sete sobreviventes para viver sob seu mando. Juon deixou de existir, mas os vencidos guardaram seus costumes em segredo.
 
 ### Ano 135
 
-Na primavera do ano 135, Doan, de Toan, tomou por esposa Dohae, de Dour, e os dois povos passaram a se visitar. Houve luta na floresta: Toan atacou Linhan em nome da Mãe da Fartura. Toan venceu e levou a comida guardada. Rilos e Halinim morreram na luta. Depois de tantos mortos, Toan e Linhan se encontraram na floresta e juraram paz.
+Morreu Orran, que falava pela Mãe da Fartura em Toan, aos 71 anos. Desde a morte de Suhaik, nunca mais tinha rezado. Orran tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Toan viu nisso obra da Mãe da Fartura. O deus não tinha feito nada. Os escribas de Toan registraram o milagre.
 
 ### Ano 136
 
-Yoim partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Houve luta no morro: Toan atacou Dour. Dour resistiu, e Toan voltou de mãos vazias. Uma tosse que não passava matou cinco pessoas em Toan. Um inverno duro matou duas pessoas de frio.
+Na primavera, Rasuo disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «o Que Sacode». Toan acreditou, e o deus mudou de nome. A fome no inverno durou 6 dias em Toan e levou uma vida. Foram 12 dias de fome no inverno em Kuror, com dezesseis mortos. Desde então, Kuror chama a praia de Praia da Fome.
 
-### Ano 137
-
-Na primavera do ano 137, em Kuror, Los começou a pregar que o deus não era «a Terra Brava». Era «o Senhor das Lanças». Em poucos anos, todos rezavam assim. Começou a Guerra dos Irmãos da Floresta: Kuror e Linhan, nascidos do mesmo povo, viraram inimigos. Na Guerra dos Irmãos da Floresta, Kuror atacou Linhan na floresta. Kuror venceu e levou a comida guardada. Na luta morreram Bena, Enlona, Do e Faenil. A terra tremeu. Caíram 21 cabanas. Orhao e Haim morreram sob os escombros. No inverno, em Kuror, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles.
+*No ano 137, nada de notável aconteceu.*
 
 ### Ano 138
 
-Rilur tinha rezado: «Que Queima, que a chuva volte.» Quando a chuva voltou, Dour agradeceu ao Que Queima. Foi só o tempo, mas quem iria dizer? No inverno, começou a Guerra da Fome: Toan, com fome, foi buscar à força a comida de Dour. Depois da luta, Toan e Dour se encontraram no morro e juraram paz. A Guerra da Fome acabou em trégua, depois de dois anos, duas batalhas e um morto.
+Loil não esperou a vez: tomou o comando de Linhan à força, e o conselho dos velhos se calou. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. Depois disso, Kuror deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Estrela de Cauda».
 
 ### Ano 139
 
-Na primavera do ano 139, Torilan, que guiava Linhan, morreu dormindo, aos 54 anos. No outono, começou a Guerra do Morro: o rancor entre Kuror e Dour virou guerra. A Guerra do Morro seguiu: Kuror contra Dour, no morro. Kuror venceu e levou a comida guardada. Na luta morreram Dobeo, Rilur, Dodona e Linim. Depois de dois anos, duas batalhas e sete mortos, a Guerra do Morro terminou em paz. Kuror saiu dela mais forte. Depois de três anos, quatro batalhas e sete mortos, a Guerra dos Irmãos da Floresta terminou em paz.
+Depois da seca, Kuror jurou nunca desperdiçar água. No inverno, Kuro, que guiava Kuror, não resistiu à fome. Kuror acabou: Haha e Toora foram viver em Toan.
 
 ### Ano 140
 
-Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Toan, e 26 mortos. As crianças foram as primeiras. Nos anos 131 a 140 houve duas secas, treze fomes, nove batalhas, 48 preces que pareceram atendidas e treze preces sem resposta; nasceram 108 crianças e morreram 91 pessoas. No fim do ano 140, 158 pessoas viviam no mundo: Toan (79), Kuror (38), Linhan (17) e Dour (24).
+Linlo não podia mais viver perto de Torilan. Saiu de Linhan com 27 pessoas e fundou Peon na praia. Enhaim passou a falar pelo Que Julga em Peon. Era o primeiro a rezar e o último a duvidar. Torilan anunciou que o Que Julga proibia qualquer trato com Peon. O deus nunca disse isso, mas Linhan obedeceu. Houve luta na floresta: Toan atacou Linhan. Linhan foi derrotado e perdeu o que tinha guardado. Na luta morreram Sura e Dona. Depois da luta, Toan e Linhan se encontraram na floresta e juraram paz. Nos anos 131 a 140 houve quinze fomes, duas batalhas, 26 preces que pareceram atendidas e quatro preces sem resposta; nasceram 105 crianças e morreram 131 pessoas. No fim do ano 140, 142 pessoas viviam no mundo: Toan (79), Linhan (34) e Peon (29).
 
 ### Ano 141
 
-Linlo morreu dormindo, aos 56 anos. Em Dour, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 81, só a crônica guarda.
+Na primavera, houve luta na floresta: Peon atacou Linhan em nome do Que Julga. Linhan foi derrotado e perdeu o que tinha guardado. Na luta morreram Rilur e You. Para Peon, a floresta virou Floresta da Vitória. Começou a Guerra Santa da Praia: em nome do Que Julga, Peon pegou em lanças contra Linhan. No outono, Linos, de Peon, tomou por esposa Rara, de Toan, e os dois povos passaram a se visitar. Nas ruínas de Kuror, Toena achou o que eles sabiam: aprendeu a trabalhar o metal.
 
 ### Ano 142
 
-Na primavera do ano 142, Toraik, que falava pela Mãe da Fartura em Toan, morreu dormindo, aos 61 anos. Kuror passou fome por causa da seca por 24 dias, e treze pessoas morreram.
+Na primavera do ano 142, Linlo, que fundou Peon e o guiava, morreu dormindo, aos 57 anos. Tinha fundado Peon. Enos passou dias nas ruínas de Kuror e voltou sabendo trabalhar o metal. Nasceu Lopeil, filha de Toena e Enos, com sangue de Peon e de Juon. No inverno, na Guerra Santa da Praia, Linhan atacou Peon na praia em nome do Que Julga. Peon expulsou os atacantes. Na luta morreram Tou e Loil. O mesmo chão ganhou dois nomes: Praia da Vitória para Peon, Praia do Luto para Linhan.
 
 ### Ano 143
 
-Na primavera do ano 143, You, a engenhosa, deu à luz e não sobreviveu ao parto.
+Na primavera, com Torilan à frente, a nova geração de Linhan abandonou a festa da chuva, costume herdado dos avós. Morreu o último que tinha visto o ano 96. Em Peon, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Tohail deu à luz gêmeos, Orlo e Jua. Uns viram bênção; outros, mau sinal. Nas ruínas de Kuror, Dopeim achou o que eles sabiam: aprendeu a trabalhar o metal. No outono, Peon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 144
 
-De novo o sol se apagou no meio do dia. Depois disso, Linhan deixou de chamar o deus de «o Que Julga» e passou a chamá-lo de «o Que Apaga o Sol».
+Lolou tinha rezado: «Que Sacode, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Que Sacode. A crônica sabe que foi acaso. Nas tabuletas de Toan, ficou escrito que foi o Que Sacode. A Guerra Santa da Praia seguiu: Peon contra Linhan, na floresta em nome do Que Julga. Linhan resistiu, e Peon voltou de mãos vazias. Enhaim e Enos morreram na luta. Lodoe passou a guiar Peon, mas Dodona não aceitou e guardou rancor.
 
 ### Ano 145
 
-Na primavera, Halina não esperou a vez: tomou o comando de Kuror à força, e o conselho dos velhos se calou. Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito.
+No inverno, Ha, a devota, cansou de dividir pouca comida. Partiu com dez pessoas para o morro e ali fundou Ruar. Para Ruar, as pedras de Suran só podiam ter sido postas por gigantes.
 
 ### Ano 146
 
-Na primavera, Los, o engenhoso, morreu dormindo, aos 59 anos.
+Sem lugar e sem comida, Dojuim e os seus atravessaram a borda do mundo. Ninguém soube deles. Ruar encontrou as ruínas de Juon e disse que ali tinham vivido gigantes. No verão, Do passou a falar pelo Que Julga em Ruar. Era o primeiro a rezar e o último a duvidar.
 
-### Ano 147
-
-Morreu Yoraos, o engenhoso, aos 64 anos. Em Toan, quem vinha de fora era recebido com comida e lugar perto do fogo.
+*O ano 147 passou sem nada que a crônica precise guardar.*
 
 ### Ano 148
 
-Na primavera, com Enhaim à frente, a nova geração de Linhan abandonou a festa da chuva, costume herdado dos avós. Em Kuror, Tohau pediu: «Senhor das Lanças, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Kuror duvidou de que o Senhor das Lanças tinha ouvido. Foi só o tempo, mas quem iria dizer? Os escribas de Kuror registraram o milagre. O dia em que a chuva voltou virou festa em Linhan: todo ano, celebram a chuva que o Que Apaga o Sol mandou. Dour já não se preparava para nada: o Que Queima sempre dava.
+Nasceu Beil, a primeira de Ruar. Ha, que fundou Ruar e o guiava, morreu ao dar à luz. Foi quem levou os seus a fundar Ruar. Linhan passou a festejar todo ano o dia da volta da chuva, em honra do Que Julga. Loan, o engenhoso, não resistiu à fome. Desde a morte de Suran, nunca mais tinha rezado. Lolou, que falava pelo Que Sacode em Toan, morreu de fome.
 
 ### Ano 149
 
-A fome durou 20 dias em Kuror e levou seis vidas. A doença entrou em Toan e matou quatro pessoas. Kuror cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Senhor das Lanças.
+Doena, de Peon, casou-se com Dopeim e foi viver em Ruar. Foi o primeiro laço entre os dois povos. Foram 9 dias de fome no inverno em Toan, com quinze mortos. Em Ruar, Dopeim pediu: «Que Julga, dá-nos o que comer.» A fome passou, e Ruar viu nisso obra do Que Julga. O deus não tinha feito nada. No verão, Toena, a medrosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 150
 
-O sol escureceu outra vez. Nos anos 141 a 150 houve duas secas, quatro fomes e dezesseis preces que pareceram atendidas; nasceram 110 crianças e morreram 66 pessoas. No fim do ano 150, 202 pessoas viviam no mundo: Toan (103), Kuror (29), Linhan (32) e Dour (38).
+Em Linhan, Doyou começou a pregar que o deus não era «o Que Julga». Era «o Que Rega». Em poucos anos, todos rezavam assim. Em Ruar, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Peon fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. De novo a chuva sumiu, como no ano 116. Foram 22 dias de seca. Nos anos 141 a 150 houve duas secas, nove fomes, onze batalhas, 32 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 92 crianças e morreram 74 pessoas. No fim do ano 150, 155 pessoas viviam no mundo: Toan (86), Linhan (38), Peon (19) e Ruar (12).
 
 ### Ano 151
 
-Na primavera do ano 151, Halina, que guiava Kuror, morreu dormindo, aos 51 anos. Na guerra, tinha tirado duas vidas. Yotos, de Kuror, tomou por esposa Enu, de Dour, e os dois povos passaram a se visitar.
+No outono, Perilu deu à luz gêmeos, Rile e Beene. Uns viram bênção; outros, mau sinal.
 
-### Ano 152
-
-Morreu Yoenim, que falava pelo Que Queima em Dour, aos 65 anos. Na guerra, tinha tirado duas vidas. Morreu o último que tinha visto o ano 96. Em Dour, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Doyou rezou por Lohara até a voz acabar. Lohara morreu mesmo assim, e Doyou nunca mais rezou. Em Dour, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Uma febre correu Toan e levou oito vidas.
+*No ano 152, nada de notável aconteceu.*
 
 ### Ano 153
 
-Kuro, o corajoso, morreu de fome. Na guerra, tinha tirado duas vidas. Dessa vez, o Que Queima não respondeu, e Dour, que tinha esquecido como se virar sozinho, pagou caro. Foram 8 dias de fome no inverno em Toan, com dois mortos.
+Na primavera, morreu Toik, o generoso, aos 53 anos. Na guerra, tinha tirado duas vidas. Sem lugar e sem comida, Suorim e os seus atravessaram a borda do mundo. Ninguém soube deles. A Guerra Santa da Praia esfriou sem acordo nem vencedor: doze anos, onze batalhas e nove mortos, e ninguém sabia mais por que lutava. Linhan saiu dela mais forte.
 
 ### Ano 154
 
-Yoyora, que falava pela Mãe da Fartura em Toan, morreu de repente, aos 32 anos.
+Linos, de Peon, tomou por esposa Pehau, de Linhan, e os dois povos passaram a se visitar. Em Peon, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Peon passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. No inverno, a forja de Linhan não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 155
 
-Com Rayoil à frente, a nova geração de Dour abandonou a festa da chuva, costume herdado dos avós.
+Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito.
 
-### Ano 156
-
-Na primavera, morreu Tohau, que guiava Kuror, aos 53 anos.
+*No ano 156, nada de notável aconteceu.*
 
 ### Ano 157
 
-No inverno do ano 157, Kail deu à luz gêmeos, Kuros e Yodos. Uns viram bênção; outros, mau sinal.
+Sem lugar e sem comida, Lotoa e os seus atravessaram a borda do mundo. Ninguém soube deles. No outono, Peon já não se preparava para nada: o Que Julga sempre dava. De novo o sol se apagou no meio do dia.
 
 ### Ano 158
 
-Em Toan, Haran pediu: «Mãe da Fartura, dá-nos o que comer.» A comida voltou, e Toan deu graças à Mãe da Fartura. A crônica sabe que foi acaso. Nas tabuletas de Toan, ficou escrito que foi a Mãe da Fartura.
+Morreu Torilan, que guiava Linhan, aos 73 anos. Foi quem proibiu, em nome do deus, o trato com Peon. Linhan escolheu Rileno para guiar o grupo. Perilu queria o lugar e nunca perdoou. Rarilu tinha rezado: «Que Sacode, dá-nos o que comer.» A comida voltou, e Toan deu graças ao Que Sacode. O deus nada fez: o crédito era de graça. Nas tabuletas de Toan, ficou escrito que foi o Que Sacode.
 
 ### Ano 159
 
-Na primavera do ano 159, em Dour, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Toan atacou Linhan na floresta em nome da Mãe da Fartura. Toan venceu e levou a comida guardada. Rila, Bebena e Pedo morreram na luta. Numa tempestade sobre a praia, um raio matou Linan. Em Kuror, disseram que era castigo. Desde a morte de Linan, ninguém em Kuror desce à praia em dia de tempestade. No inverno, Ha partiu com seis pessoas para além da borda do mundo. Nunca voltaram.
+No verão do ano 159, houve luta no morro: Toan atacou Ruar. Toan venceu e levou a comida guardada. Doena, Dopeim, Mana e Do morreram na luta. Desde então, Ruar chama o morro de Morro do Luto. Depois da derrota, os jovens de Ruar passaram a treinar com lanças. Toan e Ruar, cansados de enterrar os seus, fizeram as pazes no morro. Uma febre correu Toan e levou seis vidas.
 
 ### Ano 160
 
-Na primavera do ano 160, em Toan, Doyou começou a pregar que o deus não era «a Mãe da Fartura». Era «o Que Apaga o Sol». Em poucos anos, todos rezavam assim. O frio levou Totoe, a curiosa. A fome no inverno durou 11 dias em Toan e levou seis vidas. A fome por causa da seca durou 18 dias em Kuror e levou quinze vidas. Uma tosse que não passava matou seis pessoas em Toan. Nos anos 151 a 160 houve três secas, treze fomes, 34 preces que pareceram atendidas e seis preces sem resposta; nasceram 126 crianças e morreram 144 pessoas. No fim do ano 160, 178 pessoas viviam no mundo: Toan (80), Kuror (26), Linhan (51) e Dour (21).
+Morreu Rilrilim, que guiava Toan, aos 62 anos. Nos anos 151 a 160 houve oito fomes, duas batalhas, 23 preces que pareceram atendidas e quatro preces sem resposta; nasceram 146 crianças e morreram 43 pessoas. No fim do ano 160, 251 pessoas viviam no mundo: Toan (110), Linhan (87), Peon (33) e Ruar (21).
 
 ### Ano 161
 
-A seca voltou, como no ano 116: 18 dias sem chuva, até que o céu se abriu.
+Peyoa deu à luz gêmeos, Hatou e Dohae. Uns viram bênção; outros, mau sinal. Houve luta na praia: Toan atacou Peon. Peon resistiu, e Toan voltou de mãos vazias. Na luta morreram Hau e Juim. No verão, Orhao implorou pela filha. Susura morreu, e daquele dia em diante Orhao cuspia no chão quando falavam do Que Sacode. No outono, o deus calou justo quando Peon mais dependia dele. Uma tosse que não passava matou quatro pessoas em Toan.
 
 ### Ano 162
 
-Rara, que guiava Toan, morreu de velhice aos 56 anos. Rau, a medrosa, morreu de velhice aos 60 anos. Linhan passou fome por 18 dias, e seis pessoas morreram.
+Foram 8 dias de fome no inverno em Linhan, com oito mortos. Começou a Guerra da Fome: Toan, com fome, foi buscar à força a comida de Peon. A Guerra da Fome seguiu: Toan contra Peon, na praia. Toan venceu e levou a comida guardada. Lopeil, Dos e Yoik morreram na luta. Toan e Peon, cansados de enterrar os seus, fizeram as pazes na praia. Depois de um ano, duas batalhas e cinco mortos, a Guerra da Fome terminou em paz.
 
-*No ano 163, nada de notável aconteceu.*
+### Ano 163
+
+Depois de anos sob um só, Toan sentou-se em roda: dali em diante, decidia-se juntos. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Toan, e 24 mortos. As crianças foram as primeiras. Linhan atacou Ruar no morro. Ruar expulsou os atacantes. Bea e Enu morreram na luta. Para Linhan, o morro virou Morro do Luto. Linhan conheceu a maior fome da sua história por causa da seca. Em 24 dias, morreram 64. Muitas cabanas ficaram vazias.
 
 ### Ano 164
 
-No verão do ano 164, Dorilan implorou pela filha. Dou morreu, e daquele dia em diante Dorilan cuspia no chão quando falavam do Que Apaga o Sol.
+Morreu Linos, o desconfiado, aos 46 anos. Os de Peon caíram sobre Ruar no morro. Ruar resistiu, e Peon voltou de mãos vazias. Na luta morreram Lindona e Beut. Desde então, Peon chama o morro de Morro do Luto. Peon fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
 
 ### Ano 165
 
-Na primavera, Bena deu à luz gêmeos, Mana e Riltoro. Uns viram bênção; outros, mau sinal. Ju implorou pelo filho. Looran morreu, e daquele dia em diante Ju cuspia no chão quando falavam do Que Apaga o Sol. A doença entrou em Toan e matou cinco pessoas.
+No outono do ano 165, a tempestade trouxe raios para a floresta. Um deles acertou Lour. Ninguém em Linhan teve dúvida: era castigo. Lindour, o engenhoso, inventou marcas que guardavam palavras. Depois disso, Linhan deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Senhor do Trovão». Linhan passou a acreditar que o Senhor do Trovão castiga quem duvida, e que Lour tinha duvidado. Desde a morte de Lour, ninguém em Linhan entra na floresta em dia de tempestade.
 
-*O ano 166 passou sem nada que a crônica precise guardar.*
+### Ano 166
+
+De novo a chuva sumiu, como no ano 150. Foram 18 dias de seca. Em Peon, Lolino pediu: «Que Julga, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Peon duvidou de que o Que Julga tinha ouvido. O deus não tinha feito nada. Nas tabuletas de Peon, ficou escrito que foi o Que Julga.
 
 ### Ano 167
 
-Lodoil tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Que Apaga o Sol. O deus não tinha feito nada. Os escribas de Toan registraram o milagre. Depois da seca, Linhan jurou nunca desperdiçar água. Haran, o engenhoso, morreu de fome.
+Linhae disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «a Chama de Cima». Toan acreditou, e o deus mudou de nome. Rilrara implorou pelo filho. Rahaim morreu, e daquele dia em diante Rilrara cuspia no chão quando falavam da Chama de Cima. Um inverno duro matou cinco pessoas de frio.
 
-### Ano 168
-
-Na primavera do ano 168, morreu Kail, que guiava Kuror, aos 52 anos. Loyoa passou a guiar Kuror, mas Yotos não aceitou e guardou rancor. Dour passou fome por causa da seca por 17 dias, e 21 pessoas morreram. A tempestade trouxe raios para a floresta. Um deles acertou Dona. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Linhan sai de casa. Lembram de Dona.
+*O ano 168 foi calmo.*
 
 ### Ano 169
 
-Na primavera do ano 169, Lolino, que falava pelo Que Apaga o Sol em Linhan, morreu dormindo, aos 52 anos.
+Rarilo, que falava pela Chama de Cima em Toan, morreu dormindo, aos 61 anos.
 
 ### Ano 170
 
-Enhaim, que guiava Linhan, morreu dormindo, aos 54 anos. Nos anos 161 a 170 houve duas secas, dez fomes, 26 preces que pareceram atendidas e cinco preces sem resposta; nasceram 158 crianças e morreram 129 pessoas. No fim do ano 170, 208 pessoas viviam no mundo: Toan (102), Kuror (32), Linhan (41) e Dour (33).
+Na primavera, um raio caiu no morro durante a tempestade e matou Beil. Logo Beil, que tanto rezava. Para os mais fiéis de Ruar, Beil não foi castigada, mas escolhida. Nasceu ali um costume: quando o céu escurece, ninguém em Ruar sai de casa. Lembram de Beil. Nos anos 161 a 170 houve três secas, oito fomes, quatro batalhas, 33 preces que pareceram atendidas e onze preces sem resposta; nasceram 102 crianças e morreram 184 pessoas. No fim do ano 170, 170 pessoas viviam no mundo: Toan (90), Linhan (14), Peon (32) e Ruar (34).
 
 ### Ano 171
 
-Doyou, a devota, morreu de velhice aos 61 anos. Nunca perdoou o deus pela morte de Lohara.
+No outono do ano 171, tantas preces atendidas fizeram Ruar confiar no céu mais do que nas próprias mãos.
 
-### Ano 172
-
-No verão do ano 172, a forja de Dour não apagava mais. O metal mudou o trabalho e mudou a guerra.
-
-### Ano 173
-
-Juim anunciou que o Que Apaga o Sol proibia qualquer trato com Dour. O deus nunca disse isso, mas Toan obedeceu. Houve luta no morro: Toan atacou Dour em nome do Que Apaga o Sol. Toan venceu e levou a comida guardada. Na luta morreram Rillinim e Betour. Depois da derrota, os jovens de Dour passaram a treinar com lanças.
+*Entre os anos 172 e 173, nada mudou o rumo do mundo.*
 
 ### Ano 174
 
-Na primavera do ano 174, morreu Rayoil, que fundou Dour e o guiava, aos 66 anos. Tinha fundado Dour. Começou a Guerra Santa do Morro: em nome do Que Apaga o Sol, Toan pegou em lanças contra Dour. Na Guerra Santa do Morro, Toan atacou Dour no morro em nome do Que Apaga o Sol. Dour foi derrotado e perdeu o que tinha guardado. Dolou e Rilos morreram na luta. Depois de tantos mortos, Dour e Toan se encontraram no lago e juraram paz. A Guerra Santa do Morro acabou em trégua, depois de um ano, três batalhas e seis mortos. Toan saiu dela mais forte.
+Ninguém lembrava mais a razão, e Toan abandonou a festa da chuva. Tama, de Ruar, casou-se com Enyos e foi viver em Linhan. Foi o primeiro laço entre os dois povos.
 
 ### Ano 175
 
-Começou a Guerra Santa do Lago: em nome do Que Apaga o Sol, Toan pegou em lanças contra Linhan. Na Guerra Santa do Lago, Linhan atacou Toan no lago em nome do Que Apaga o Sol. Toan expulsou os atacantes. Na luta morreram Your e Linhaur. Desde então, Linhan chama o lago de Lago do Luto. Depois de tantos mortos, Linhan e Toan se encontraram no lago e juraram paz. Depois de um ano, três batalhas e sete mortos, a Guerra Santa do Lago terminou em paz. Toan saiu dela mais forte.
+Na primavera, morreu Toena, a medrosa, aos 62 anos. O templo de Linhan ficou mais forte que o líder. Enim, que falava pelo Senhor do Trovão, passou a decidir tudo. O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 176
 
-Lodoil tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Toan, ficou escrito que foi o Que Apaga o Sol.
+Morreu Hao, que falava pela Chama de Cima em Toan, aos 58 anos. Com Lodoe à frente, a nova geração de Peon abandonou o treino com lanças, costume herdado dos avós. Totoik tinha rezado: «Chama de Cima, dá-nos o que comer.» A fome passou, e Toan viu nisso obra da Chama de Cima. O deus nada fez: o crédito era de graça. Os escribas de Toan registraram o milagre.
 
 ### Ano 177
 
-Ninguém lembrava mais a razão, e Toan abandonou a festa da chuva. A febre levou Juim, que falava pelo Que Apaga o Sol em Toan. Foi quem proibiu, em nome do deus, o trato com Dour. Uma tosse que não passava matou seis pessoas em Toan.
+Lodoe, que guiava Peon, morreu de velhice aos 55 anos. No outono, Peon atacou Linhan na floresta. Linhan foi derrotado e perdeu o que tinha guardado. Na luta morreram Sua, Doenos e Enyos. No inverno, Peon cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Julga. A fome por causa da seca durou 8 dias em Peon e levou sete vidas. Ruar acabou: Tamela, a última, foi viver em Toan.
 
-*O ano 178 passou sem nada que a crônica precise guardar.*
+### Ano 178
 
-### Ano 179
+A fome no inverno durou 9 dias em Toan e levou 26 vidas. Diante das ruínas de Ruar, Toan disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
-Na primavera do ano 179, sem lugar e sem comida, Dorilik e os seus atravessaram a borda do mundo. Ninguém soube deles. A guerra entre Toan e Dour continuou: Toan voltou a atacar no morro em nome do Que Apaga o Sol. Dour resistiu, e Toan voltou de mãos vazias. Na luta morreram Judo e Juo. Depois da derrota, os jovens de Toan passaram a treinar com lanças. No verão, Linhan passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Toan e Linhan, cansados de enterrar os seus, fizeram as pazes na floresta.
+*No ano 179, nada de notável aconteceu.*
 
 ### Ano 180
 
-Na primavera, começou a Segunda Guerra Santa: em nome do Que Apaga o Sol, Toan pegou em lanças contra Dour. A Segunda Guerra Santa seguiu: Toan contra Dour, no morro em nome do Que Apaga o Sol. Toan venceu e levou a comida guardada. Na luta morreram Tomao, Doe e Toro. Toan e Dour, cansados de enterrar os seus, fizeram as pazes no morro. Depois de um ano, duas batalhas e cinco mortos, a Segunda Guerra Santa terminou em paz. No inverno, Lolos partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Nos anos 171 a 180 houve onze fomes, nove batalhas, 33 preces que pareceram atendidas e treze preces sem resposta; nasceram 115 crianças e morreram 87 pessoas. No fim do ano 180, 232 pessoas viviam no mundo: Toan (101), Kuror (38), Linhan (60) e Dour (33).
+No inverno, de novo o sol se apagou no meio do dia. Para Linhan, o deus já não era «o Senhor do Trovão»: passou a ser «o Olho Escuro». Nos anos 171 a 180 houve sete fomes, dezessete preces que pareceram atendidas e quatro preces sem resposta; nasceram 109 crianças e morreram 124 pessoas. No fim do ano 180, 155 pessoas viviam no mundo: Toan (87), Linhan (32) e Peon (36).
 
 ### Ano 181
 
-Linloim, o curioso, morreu de velhice aos 63 anos. Na guerra, tinha tirado duas vidas. Toan passou fome por causa da seca por 11 dias, e dez pessoas morreram. A fome por causa da seca durou 24 dias em Linhan e levou onze vidas. Uma febre correu Kuror e levou quatro vidas. Desde a febre, Kuror não enterra mais ninguém: os mortos vão para o fogo.
+Lolino, que falava pelo Que Julga em Peon, não resistiu à fome.
 
 ### Ano 182
 
-Na primavera do ano 182, morreu Rilbeo, o rancoroso, aos 60 anos. Em Linhan, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 124, só a crônica guarda. De novo a chuva sumiu, como no ano 161. Foram 23 dias de seca.
+Foram 9 dias de fome no inverno em Linhan, com dez mortos. Apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu.
 
 ### Ano 183
 
-Na primavera, sem lugar e sem comida, Linim e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome no inverno durou 9 dias em Toan e levou quatro vidas.
+No verão, Toim, o desconfiado, cansou de dividir pouca comida. Partiu com 30 pessoas para o morro e ali fundou Juor. Suloik passou a falar pela Chama de Cima em Juor. Era o primeiro a rezar e o último a duvidar. Juor encontrou as ruínas de Suran e disse que ali tinham vivido gigantes. Em Juor nasceu a primeira criança: Berkoik, filho de Oru e Haik. Haha deu à luz gêmeos, Pelinut e Ena. Uns viram bênção; outros, mau sinal.
 
 ### Ano 184
 
-Na primavera, Lodoil, a ambiciosa, morreu dormindo, aos 56 anos. Em Linhan, Rilto começou a pregar que o deus não era «o Que Apaga o Sol». Era «a Mão Que Cura». Em poucos anos, todos rezavam assim.
+Juor encontrou as ruínas de Ruar e disse que ali tinham vivido gigantes. No outono, em nome do Que Julga, Linruos proibiu casamentos e trocas com Linhan. Era vontade de Linruos, não do deus.
 
 ### Ano 185
 
-Orhaim não esperou a vez: tomou o comando de Toan à força, e o conselho dos velhos se calou. Em Toan, Yooru pediu: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Toan deu graças ao Que Apaga o Sol. O deus não tinha feito nada. Nas tabuletas de Toan, ficou escrito que foi o Que Apaga o Sol.
+Em Peon, Perilur pediu: «Que Julga, não deixes nossos filhos morrerem de fome.» A fome passou, e Peon viu nisso obra do Que Julga. O deus não tinha feito nada. Nas tabuletas de Peon, ficou escrito que foi o Que Julga. Uma febre correu Peon e levou duas vidas. Linruos anunciou que o Que Julga proibia qualquer trato com Toan. O deus nunca disse isso, mas Peon obedeceu. Tour rezou por Loil até a voz acabar. Loil morreu mesmo assim, e Tour nunca mais rezou.
 
 ### Ano 186
 
-Orjuan implorou pela filha. Suhail morreu, e daquele dia em diante Orjuan cuspia no chão quando falavam do Que Apaga o Sol. No inverno, Rasuik não resistiu à fome. Na guerra, tinha tirado duas vidas.
+Na primavera, morreu Enim, que guiava Linhan, aos 62 anos. Peon atacou Toan no lago em nome do Que Julga. Toan resistiu, e Peon voltou de mãos vazias. Na luta morreram Tama e Pebeos. Peon não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No verão, começou a Guerra Santa do Lago: em nome do Que Julga, Peon pegou em lanças contra Toan. A Guerra Santa do Lago seguiu: Peon contra Toan, no lago em nome do Que Julga. Toan expulsou os atacantes. Linrur, Ha, Rau e Hau morreram na luta.
 
 ### Ano 187
 
-Na primavera do ano 187, Enrao partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+Começou a Guerra Santa da Floresta: em nome do Que Julga, Peon pegou em lanças contra Linhan. Linruos anunciou que o Que Julga proibia qualquer trato com Juor. O deus nunca disse isso, mas Peon obedeceu. A Guerra Santa da Floresta seguiu: Peon contra Linhan, na floresta em nome do Que Julga. Linhan resistiu, e Peon voltou de mãos vazias. Na luta morreram Rutoil, Rua, Mail e Mana.
 
 ### Ano 188
 
-Na primavera do ano 188, morreu Toan, que falava pelo Que Apaga o Sol em Toan, aos 64 anos. Na guerra, tinha tirado duas vidas. Toali partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
+Na Guerra Santa da Floresta, Peon atacou Linhan na floresta. Linhan foi derrotado e perdeu o que tinha guardado. Domana, Linpeim e Lolo morreram na luta. Depois de tantos mortos, Peon e Linhan se encontraram na floresta e juraram paz. Depois de dois anos, cinco batalhas e onze mortos, a Guerra Santa da Floresta terminou em paz. Peon saiu dela mais forte. A tempestade trouxe raios para o morro. Um deles acertou Sudoa. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Juor sai de casa. Lembram de Sudoa.
 
-*O ano 189 foi calmo.*
+### Ano 189
+
+Na primavera do ano 189, Doik, de Juor, tomou por esposa Yoa, de Linhan, e os dois povos passaram a se visitar. Os de Peon caíram sobre Juor no morro. Juor expulsou os atacantes. Pehail morreu na luta. Peon e Juor fizeram as pazes no morro, antes que a briga crescesse. De novo a chuva sumiu, como no ano 166. Foram 23 dias de seca.
 
 ### Ano 190
 
-Nos anos 181 a 190 houve quatro secas, vinte fomes, 35 preces que pareceram atendidas e nove preces sem resposta; nasceram 123 crianças e morreram 116 pessoas. No fim do ano 190, 230 pessoas viviam no mundo: Toan (97), Kuror (37), Linhan (62) e Dour (34).
+Na primavera, em Juor, Sujuil começou a pregar que o deus não era «a Chama de Cima». Era «o Que Ergue». Em poucos anos, todos rezavam assim. Peon e Toan, cansados de enterrar os seus, fizeram as pazes no lago. Depois de quatro anos, cinco batalhas e onze mortos, a Guerra Santa do Lago terminou em paz. Toan saiu dela mais forte. Orjuan, de Juor, tomou por esposa Rudoil, de Peon, e os dois povos passaram a se visitar. Nos anos 181 a 190 houve três secas, nove fomes, onze batalhas, 31 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 104 crianças e morreram 79 pessoas. No fim do ano 190, 185 pessoas viviam no mundo: Toan (100), Linhan (17), Peon (20) e Juor (48).
 
-### Ano 191
-
-Lorilur, que guiava Dour, morreu dormindo, aos 60 anos. Yolou deu à luz gêmeos, Riloril e Yora. Uns viram bênção; outros, mau sinal.
+*O ano 191 passou sem nada que a crônica precise guardar.*
 
 ### Ano 192
 
-No inverno do ano 192, Linlinim rezou por Doil até a voz acabar. Doil morreu mesmo assim, e Linlinim nunca mais rezou.
+Rilrara, que falava pela Chama de Cima em Toan, morreu de velhice aos 72 anos. Desde a morte de Rahaim, nunca mais tinha rezado. Perilur, o ambicioso, morreu de velhice aos 60 anos. No inverno, de novo o sol se apagou no meio do dia.
 
 ### Ano 193
 
-Suoro, o devoto, morreu dormindo, aos 48 anos.
+Totoik, que guiava Toan, morreu dormindo, aos 66 anos. Linur disse ter ouvido o deus de outro jeito: não era «o Que Julga», era «a Estrela de Cauda». Peon acreditou, e o deus mudou de nome. Uma tosse que não passava matou cinco pessoas em Toan.
 
 ### Ano 194
 
-Yotos, que guiava Kuror, morreu de velhice aos 61 anos. Houve luta no morro: Kuror atacou Dour. Kuror venceu e levou a comida guardada. Toyoim, Lintoro e Rilyo morreram na luta. Han tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Que Apaga o Sol. A crônica sabe que foi acaso. Os escribas de Toan registraram o milagre. Uma tosse que não passava matou sete pessoas em Toan. Os de Toan caíram sobre Dour no morro em nome do Que Apaga o Sol. Dour foi derrotado e perdeu o que tinha guardado. Linos, Beim e Rillou morreram na luta.
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Linhan, o deus já não era «o Olho Escuro»: passou a ser «o Que Leva». A febre levou Linhae, que falava pela Chama de Cima em Toan. A febre levou Beenim, que guiava Linhan. Na guerra, tinha tirado duas vidas. No verão, o arquivo salvou Peon: Linur reaprendeu nas tabuletas o que os mortos sabiam.
 
 ### Ano 195
 
-Começou a Terceira Guerra Santa: em nome do Que Apaga o Sol, Toan pegou em lanças contra Dour. Na Terceira Guerra Santa, Toan atacou Dour no morro em nome do Que Apaga o Sol. Dour expulsou os atacantes. Orjuan e Jutoan morreram na luta.
+Em Linhan, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 148, só a crônica guarda. Em Juor, Rilju pediu: «Cura Tozeo, Que Ergue. Ele é tão pequeno.» A febre passou, e Rilju contou a todos que o Que Ergue tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
-### Ano 196
-
-Na primavera do ano 196, a Terceira Guerra Santa seguiu: Toan contra Dour, no morro em nome do Que Apaga o Sol. Dour foi derrotado e perdeu o que tinha guardado. Na luta morreram Mayo, Be, Mamali, Matoro e Ratoan. Depois de tantos mortos, Toan e Dour se encontraram no morro e juraram paz. A Terceira Guerra Santa acabou em trégua, depois de dois anos, três batalhas e dez mortos. A doença entrou em Dour e matou sete pessoas. Desde a febre, Dour não enterra mais ninguém: os mortos vão para o fogo.
-
-### Ano 197
-
-Depois de tantas preces sem resposta, Linhan concluiu que tinha pecado. Era preciso pagar. Procuraram um culpado e acharam Dour, que duvidava. Desde então, Linhan deixa oferendas para a Mão Que Cura no começo de cada estação. Dour foi expulso e foi viver entre os de Toan. Toan passou fome no inverno por 9 dias, e 30 pessoas morreram. Foram 21 dias de fome por causa da seca em Kuror, com dezesseis mortos.
+*Entre os anos 196 e 197, nada mudou o rumo do mundo.*
 
 ### Ano 198
 
-No verão do ano 198, em Linhan, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Linhan passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Yorile, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Na primavera do ano 198, morreu Suyoan, o rancoroso, aos 67 anos. Nunca perdoou o deus pela morte de Rilsuan. Em Juor, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Ergue».
 
-### Ano 199
-
-Na primavera do ano 199, Rao, que guiava Toan, morreu dormindo, aos 47 anos.
+*O ano 199 passou sem nada que a crônica precise guardar.*
 
 ### Ano 200
 
-Doik, que falava pelo Que Apaga o Sol em Toan, morreu de velhice aos 56 anos. Morreu Han, o generoso, aos 53 anos. Desde a morte de Suik, nunca mais tinha rezado. Nos anos 191 a 200 houve quinze fomes, quatro batalhas, 30 preces que pareceram atendidas e quinze preces sem resposta; nasceram 148 crianças e morreram 200 pessoas. No fim do ano 200, 179 pessoas viviam no mundo: Toan (93), Kuror (27), Linhan (48) e Dour (11).
+A seca voltou, como no ano 189: 18 dias sem chuva, até que o céu se abriu. Nos anos 191 a 200 houve três secas, nove preces que pareceram atendidas e cinco preces sem resposta; nasceram 87 crianças e morreram 109 pessoas. No fim do ano 200, 163 pessoas viviam no mundo: Toan (87), Linhan (22), Peon (8) e Juor (46).
 
-*No ano 201, nada de notável aconteceu.*
+### Ano 201
+
+Na primavera, morreu Looril, a medrosa, aos 50 anos. Nunca perdoou o deus pela morte de Hatoan.
 
 ### Ano 202
 
-Na primavera, morreu Linha, que guiava Kuror, aos 55 anos. Morreu Rillona, que guiava Dour, aos 66 anos. Em Dour, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 159, só a crônica guarda. Kuror escolheu Linlinim para guiar o grupo. Rado queria o lugar e nunca perdoou.
+O inverno foi de gelo: sete pessoas morreram de frio.
 
-*O ano 203 foi calmo.*
+### Ano 203
+
+Na primavera do ano 203, com lanças e promessas, Jua acabou com o conselho de Juor e passou a mandar sozinho. O sol escureceu outra vez.
 
 ### Ano 204
 
-Yolinim tinha rezado: «Senhor das Lanças, dá-nos o que comer.» A fome passou, e Kuror viu nisso obra do Senhor das Lanças. A crônica sabe que foi acaso. Nas tabuletas de Kuror, ficou escrito que foi o Senhor das Lanças.
+Do, que falava pela Chama de Cima em Toan, morreu de repente, aos 40 anos. Em Linhan, Lorilos pediu: «Que Leva, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Linhan duvidou de que o Que Leva tinha ouvido. A crônica sabe que foi acaso.
 
 ### Ano 205
 
-Na primavera do ano 205, Rilo, que guiava Linhan, morreu de velhice aos 57 anos. Desde a morte de Lona, nunca mais tinha rezado. Totoik disse ter ouvido o deus de outro jeito: não era «o Que Apaga o Sol», era «o Que Sacode». Toan acreditou, e o deus mudou de nome. Houve luta na floresta: Kuror atacou Linhan. Kuror venceu e levou a comida guardada. Na luta morreram Enim e Rado. Começou a Guerra da Fome da Floresta: Kuror, com fome, foi buscar à força a comida de Linhan. A Guerra da Fome da Floresta acabou em trégua, depois de duas batalhas e seis mortos. Kuror saiu dela mais forte.
+Juor passou fome no inverno por 9 dias, e duas pessoas morreram.
 
 ### Ano 206
 
-No inverno do ano 206, em Dour, quem vinha de fora era recebido com comida e lugar perto do fogo.
+Morreu Sujuim, que guiava Toan, aos 64 anos. No outono, numa tempestade sobre a praia, um raio matou Beos. Ninguém em Peon teve dúvida: era castigo. Peon passou a acreditar que a Estrela de Cauda castiga quem duvida, e que Beos tinha duvidado. Desde a morte de Beos, ninguém em Peon desce à praia em dia de tempestade.
 
-*Entre os anos 207 e 208, nada mudou o rumo do mundo.*
+*O ano 207 foi calmo.*
+
+### Ano 208
+
+Na primavera, Toim, fundador de Juor, morreu de frio. Foi quem levou os seus a fundar Juor. A fome no inverno durou 9 dias em Toan e levou quatro vidas.
 
 ### Ano 209
 
-Numa tempestade sobre o morro, um raio matou Toru. Os seus nunca esqueceram. Depois disso, Dour deixou de chamar o deus de «o Que Queima» e passou a chamá-lo de «o Senhor do Trovão». Desde a morte de Toru, ninguém em Dour sobe o morro em dia de tempestade.
+Na primavera, Rildoan partiu com três pessoas para além da borda do mundo. Nunca voltaram. Em nome do Que Ergue, Suloik proibiu casamentos e trocas com Linhan. Era vontade de Suloik, não do deus. Houve luta na floresta: Juor atacou Linhan em nome do Que Ergue. Juor venceu e levou a comida guardada. Mail, Hasu e You morreram na luta. Juor venceu Peon e levou os sete sobreviventes para viver sob seu mando. Peon deixou de existir, mas os vencidos guardaram seus costumes em segredo. Começou a Segunda Guerra Santa: em nome do Que Ergue, Juor pegou em lanças contra Linhan.
 
 ### Ano 210
 
-Nos anos 201 a 210 houve cinco fomes, duas batalhas, dezoito preces que pareceram atendidas e quatro preces sem resposta; nasceram 135 crianças e morreram 75 pessoas. No fim do ano 210, 239 pessoas viviam no mundo: Toan (104), Kuror (35), Linhan (77) e Dour (23).
+No inverno, na Segunda Guerra Santa, Juor atacou Linhan na floresta em nome do Que Ergue. Linhan foi derrotado e perdeu o que tinha guardado. Linyoim, Hail e Peo morreram na luta. Nos anos 201 a 210 houve quatro secas, oito fomes, quatro batalhas e catorze preces que pareceram atendidas; nasceram 95 crianças e morreram 88 pessoas. No fim do ano 210, 166 pessoas viviam no mundo: Toan (90), Linhan (34) e Juor (42).
 
 ### Ano 211
 
-Houve luta no morro: Toan atacou Dour em nome do Que Sacode. Dour foi derrotado e perdeu o que tinha guardado. Toro morreu na luta. Depois de tantos mortos, Toan e Dour se encontraram no morro e juraram paz.
+De novo a chuva sumiu, como no ano 200. Foram 22 dias de seca.
 
 ### Ano 212
 
-De novo a chuva sumiu, como no ano 182. Foram 24 dias de seca. Beu, a generosa, não resistiu à fome.
+No verão do ano 212, de novo o sol se apagou no meio do dia. Para Linhan, o deus já não era «o Que Leva»: passou a ser «o Que Apaga o Sol». Na Segunda Guerra Santa, Linhan atacou Juor no morro. Juor resistiu, e Linhan voltou de mãos vazias. Lorilos e Linpe morreram na luta. Um inverno duro matou oito pessoas de frio.
 
 ### Ano 213
 
-Na primavera do ano 213, Lopeim, que falava pela Mão Que Cura em Linhan, morreu dormindo, aos 61 anos. Desde a morte de Beenu, nunca mais tinha rezado. Morreu Beo, que guiava Linhan, aos 60 anos. Loik partiu com três pessoas para além da borda do mundo. Nunca voltaram. Foram 9 dias de fome no inverno em Toan, com 22 mortos. O inverno foi de gelo: seis pessoas morreram de frio.
+Na primavera do ano 213, com lanças e promessas, Hayo acabou com o conselho de Toan e passou a mandar sozinho. Em Linhan, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 162, só a crônica guarda. Uma febre correu Juor e levou duas vidas.
 
 ### Ano 214
 
-Na primavera, com Enrau à frente, Dour largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Yolinim tinha rezado: «Senhor das Lanças, dá-nos o que comer.» A comida voltou, e Kuror deu graças ao Senhor das Lanças. O deus nada fez: o crédito era de graça. Os escribas de Kuror registraram o milagre. O dia em que a chuva voltou virou festa em Dour: todo ano, celebram a chuva que o Senhor do Trovão mandou. No inverno, Rillo implorou pela filha. Yoyoil morreu, e daquele dia em diante Rillo cuspia no chão quando falavam do Senhor das Lanças.
+Linur, o curioso, morreu de velhice aos 59 anos. Cansado de um líder que mandava sozinho, Juor passou a decidir em conselho. No inverno, a Segunda Guerra Santa seguiu: Linhan contra Juor, no morro. Juor resistiu, e Linhan voltou de mãos vazias. Na luta morreram Hatour e Yolinur.
 
 ### Ano 215
 
-Dotoan, que guiava Toan, morreu de velhice aos 63 anos. Na guerra, tinha tirado duas vidas. Uma febre correu Kuror e levou cinco vidas. A fome no inverno durou 15 dias em Kuror e levou onze vidas. De novo Toan contra Dour em nome do Que Sacode, como no ano 211. Dour expulsou os atacantes. Na luta morreram Rilrilil e Juim. No inverno, começou a Quarta Guerra Santa: em nome do Que Sacode, Toan pegou em lanças contra Dour.
+Na primavera, Ora deu à luz gêmeos, Dorail e Yosuim. Uns viram bênção; outros, mau sinal.
 
 ### Ano 216
 
-Mabe disse ter ouvido o deus de outro jeito: não era «a Mão Que Cura», era «a Grande Água». Linhan acreditou, e o deus mudou de nome. Em Dour, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 173, só a crônica guarda. Toan e Dour, cansados de enterrar os seus, fizeram as pazes no morro. Depois de um ano, três batalhas e sete mortos, a Quarta Guerra Santa terminou em paz.
+Rarara tinha rezado: «Chama de Cima, não deixes nossos filhos morrerem de fome.» A comida voltou, e Toan deu graças à Chama de Cima. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Toan, ficou escrito que foi a Chama de Cima.
 
-*O ano 217 passou sem nada que a crônica precise guardar.*
+### Ano 217
+
+Suloik, que falava pelo Que Ergue em Juor, morreu dormindo, aos 65 anos. Foi quem proibiu, em nome do deus, o trato com Linhan. Orim não podia mais viver perto de Hayo. Saiu de Toan com treze pessoas e fundou Sudon na praia. Sudon encontrou as ruínas de Suran. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, Sudon encontrou as ruínas de Juon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A Segunda Guerra Santa esfriou sem acordo nem vencedor: oito anos, sete batalhas e catorze mortos, e ninguém sabia mais por que lutava. Juor saiu dela mais forte.
 
 ### Ano 218
 
-Na primavera do ano 218, Juloa deu à luz gêmeos, Dou e Yoim. Uns viram bênção; outros, mau sinal.
+Em Sudon, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 77, só a crônica guarda. Em Sudon nasceu a primeira criança: Dodoik, filho de Juora e Orim. Toraim passou a falar pela Chama de Cima em Sudon. Era o primeiro a rezar e o último a duvidar. Sudon encontrou as ruínas de Kuror. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
-*O ano 219 foi calmo.*
+### Ano 219
+
+A terra tremeu. Caíram dezesseis cabanas. Yo, Linim e Rilyora morreram sob os escombros.
 
 ### Ano 220
 
-Na primavera do ano 220, morreu Suan, que falava pelo Que Sacode em Toan, aos 51 anos. Em Dour, quem vinha de fora era recebido com comida e lugar perto do fogo. Nos anos 211 a 220 houve duas secas, nove fomes, quatro batalhas, 22 preces que pareceram atendidas e doze preces sem resposta; nasceram 107 crianças e morreram 115 pessoas. No fim do ano 220, 228 pessoas viviam no mundo: Toan (96), Kuror (30), Linhan (75) e Dour (27).
+Na primavera, morreu Rarara, que falava pela Chama de Cima em Toan, aos 51 anos. Rahaik implorou pelo filho. Radoan morreu, e daquele dia em diante Rahaik cuspia no chão quando falavam da Chama de Cima. Juyora, de Sudon, casou-se com Rut e foi viver em Juor. Foi o primeiro laço entre os dois povos. Juora passou dias nas ruínas de Peon e voltou sabendo cortar pedra. Nas ruínas de Kuror, Juora achou o que eles sabiam: aprendeu a cortar pedra. Nos anos 211 a 220 houve cinco fomes, quatro batalhas, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 110 crianças e morreram 68 pessoas. No fim do ano 220, 209 pessoas viviam no mundo: Toan (104), Linhan (39), Juor (53) e Sudon (13).
 
 ### Ano 221
 
-A seca voltou, como no ano 212: 23 dias sem chuva, até que o céu se abriu. Uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. Depois disso, Dour deixou de chamar o deus de «o Senhor do Trovão» e passou a chamá-la de «a Estrela de Cauda».
+Yoik, o engenhoso, morreu de velhice aos 52 anos. Ralora, de Sudon, casou-se com Juyoim e foi viver em Toan. Foi o primeiro laço entre os dois povos. Juora passou dias nas ruínas de Peon e voltou sabendo cortar pedra.
 
 ### Ano 222
 
-Foram 26 dias de fome por causa da seca em Linhan, com 24 mortos. Ororan rezou por Orrilan até a voz acabar. Orrilan morreu mesmo assim, e Ororan nunca mais rezou. Linhan passou a receber bem os de fora: um casamento com outro povo virava festa. A doença entrou em Toan e matou nove pessoas.
+Houve luta na floresta: Juor atacou Linhan. Linhan foi derrotado e perdeu o que tinha guardado. Pena e Yodour morreram na luta. Houve luta na praia: Toan atacou Sudon. Sudon resistiu, e Toan voltou de mãos vazias. Na luta morreram Ortoim, Ora e Toraim. Desde então, Sudon chama a praia de Praia da Vitória. Depois de tantos mortos, Toan e Sudon se encontraram na praia e juraram paz. No outono, começou a Guerra da Fome da Floresta: Juor, com fome, foi buscar à força a comida de Linhan.
 
 ### Ano 223
 
-Orim, que guiava Toan, morreu de velhice aos 62 anos.
+Na primavera, em Sudon, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Em nome da Chama de Cima, Riltou proibiu casamentos e trocas com Sudon. Era vontade de Riltou, não do deus. Toan atacou Linhan na floresta. Toan venceu e levou a comida guardada. Na luta morreram Beur e Lina. Toan e Linhan, cansados de enterrar os seus, fizeram as pazes na floresta. Começou a Guerra da Fome do Morro: Toan, com fome, foi buscar à força a comida de Juor.
 
 ### Ano 224
 
-Rae, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Na primavera do ano 224, Juora passou dias nas ruínas de Peon e voltou sabendo cortar pedra. Na Guerra da Fome do Morro, Toan atacou Juor no morro em nome da Chama de Cima. Toan venceu e levou a comida guardada. Doloan e Rarila morreram na luta. O dia em que a chuva voltou virou festa em Sudon: todo ano, celebram a chuva que a Chama de Cima mandou. No inverno, na Guerra da Fome do Morro, Juor atacou Toan no lago. Toan expulsou os atacantes. Juyora, Mados e Beroros morreram na luta. Para Juor, o lago virou Lago do Luto.
 
 ### Ano 225
 
-Yolinim, que guiava Kuror, morreu de velhice aos 64 anos. Kuror escolheu Yoa para guiar o grupo. Los queria o lugar e nunca perdoou. Em Linhan, Hayo pediu: «Manda água, Grande Água, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Linhan duvidou de que a Grande Água tinha ouvido. O deus nada fez: o crédito era de graça. Nas tabuletas de Linhan, ficou escrito que foi a Grande Água.
+Na primavera, Orim, que fundou Sudon e o guiava, morreu de frio. Foi quem levou os seus a fundar Sudon. Toan passou fome no inverno por 11 dias, e dezesseis pessoas morreram. Sudon acabou: Juora e Sura foram viver em Toan. A Guerra da Fome da Floresta esfriou sem acordo nem vencedor: três anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Juor saiu dela mais forte. Raik não podia mais viver perto de Jua. Saiu de Juor com nove pessoas e fundou Doem na praia.
 
 ### Ano 226
 
-Com canais e moinhos, Linhan já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Linhan passou fome no inverno por 9 dias, e três pessoas morreram. O frio levou Mabeu, que guiava Linhan. Um inverno duro matou sete pessoas de frio. Rilyoim rezou por Tos até a voz acabar. Tos morreu mesmo assim, e Rilyoim nunca mais rezou.
+Para Doem, as pedras de Juon só podiam ter sido postas por gigantes. No verão, para Doem, as pedras de Kuror só podiam ter sido postas por gigantes. No outono, em Doem nasceu a primeira criança: Do, filho de Rau e Toik. No inverno, a Guerra da Fome do Morro seguiu: Juor contra Toan, no lago. Toan expulsou os atacantes. Bedoa e Hamaos morreram na luta.
 
 ### Ano 227
 
-Foram 12 dias de fome no inverno em Kuror, com cinco mortos. Uma tosse que não passava matou quatro pessoas em Toan. No inverno, de novo o sol se apagou no meio do dia.
+Em Juor, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Para Doem, as pedras de Sudon só podiam ter sido postas por gigantes. Na Guerra da Fome do Morro, Juor atacou Toan no lago. Toan expulsou os atacantes. Rail, Zeik e Beril morreram na luta. Depois da derrota, os jovens de Juor passaram a treinar com lanças.
 
-*O ano 228 passou sem nada que a crônica precise guardar.*
+### Ano 228
+
+Na primavera do ano 228, Rile deu à luz gêmeos, Lintona e Rilyoa. Uns viram bênção; outros, mau sinal.
 
 ### Ano 229
 
-No inverno do ano 229, Riltorim, o engenhoso, não resistiu à fome.
+Na primavera do ano 229, Lotoan, o medroso, morreu de repente, aos 44 anos. Na guerra, tinha tirado duas vidas. Rilju, que falava pelo Que Ergue em Doem, morreu de velhice aos 59 anos. Desde a morte de Raberik, nunca mais tinha rezado. Depois de anos sob um só, Toan sentou-se em roda: dali em diante, decidia-se juntos. Torilur tinha rezado: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Quando a chuva voltou, Linhan agradeceu ao Que Apaga o Sol. A crônica sabe que foi acaso. Riltou rezou por Rasura até a voz acabar. Rasura morreu mesmo assim, e Riltou nunca mais rezou.
 
 ### Ano 230
 
-Marila, que guiava Dour, morreu de repente, aos 44 anos. Nos anos 221 a 230 houve quatro secas, catorze fomes, 32 preces que pareceram atendidas e dez preces sem resposta; nasceram 135 crianças e morreram 151 pessoas. No fim do ano 230, 212 pessoas viviam no mundo: Toan (92), Kuror (29), Linhan (70) e Dour (21).
+Doem deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Sem lugar e sem comida, Rahaik e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 8 dias de fome no inverno em Toan, com três mortos. Começou a Terceira Guerra Santa: em nome da Chama de Cima, Toan pegou em lanças contra Linhan. Na Terceira Guerra Santa, Toan atacou Linhan na floresta em nome da Chama de Cima. Linhan resistiu, e Toan voltou de mãos vazias. Na luta morreram Juhara e Tohan. Nos anos 221 a 230 houve duas secas, nove fomes, quinze batalhas, 27 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 112 crianças e morreram 133 pessoas. No fim do ano 230, 186 pessoas viviam no mundo: Toan (86), Linhan (61), Juor (21) e Doem (18).
 
 ### Ano 231
 
-A seca voltou, como no ano 221: 20 dias sem chuva, até que o céu se abriu.
+A seca voltou, como no ano 211: 20 dias sem chuva, até que o céu se abriu.
 
 ### Ano 232
 
-O templo de Kuror ficou mais forte que o líder. Ran, que falava pelo Senhor das Lanças, passou a decidir tudo. Oryora morreu de frio. Na guerra, tinha tirado duas vidas.
+Na primavera do ano 232, a febre levou Behao, o ambicioso. A Terceira Guerra Santa seguiu: Toan contra Linhan, na floresta. Toan venceu e levou a comida guardada. Na luta morreram Peyo, Dotos e To. Uma febre correu Linhan e levou cinco vidas. No inverno, Linhan e Toan, cansados de enterrar os seus, fizeram as pazes no lago. A Terceira Guerra Santa acabou em trégua, depois de quatro anos, oito batalhas e dezessete mortos. Toan saiu dela mais forte.
 
 ### Ano 233
 
-Kura deu à luz gêmeos, Dopeos e Linpeur. Uns viram bênção; outros, mau sinal.
+Linhan passou fome no inverno por 15 dias, e catorze pessoas morreram. Numa tempestade sobre a floresta, um raio matou Haju. A família de Haju nunca perdoou o céu. Depois disso, Linhan deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Que Fere». Suyoik rezou por Yodora até a voz acabar. Yodora morreu mesmo assim, e Suyoik nunca mais rezou.
 
-### Ano 234
-
-Na primavera, em Kuror, Dorilu começou a pregar que o deus não era «o Senhor das Lanças». Era «a Grande Água». Em poucos anos, todos rezavam assim. Rilhaim tinha rezado: «Que Sacode, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Que Sacode. O deus nada fez: o crédito era de graça. Os escribas de Toan registraram o milagre. Totoim implorou pela filha. Beu morreu, e daquele dia em diante Totoim cuspia no chão quando falavam da Grande Água.
-
-*O ano 235 foi calmo.*
+*Os anos 234 a 235 passaram em paz.*
 
 ### Ano 236
 
-Na primavera do ano 236, Hayo, que falava pela Grande Água em Linhan, morreu de velhice aos 67 anos. Totoik implorou pela filha. Tora morreu, e daquele dia em diante Totoik cuspia no chão quando falavam do Que Sacode. Uma tosse que não passava matou três pessoas em Toan. O inverno foi de gelo: duas pessoas morreram de frio.
+Juyoim, o engenhoso, morreu dormindo, aos 50 anos. No verão, a Guerra da Fome do Morro seguiu: Toan contra Juor, no morro em nome da Chama de Cima. Juor foi derrotado e perdeu o que tinha guardado. You e Koim morreram na luta. Depois de tanto sofrer nas mãos dos vizinhos, Juor passou a desconfiar de todo estrangeiro.
 
 ### Ano 237
 
-Loim, que guiava Toan, morreu dormindo, aos 67 anos. Lohaim, o generoso, morreu dormindo, aos 52 anos. A fome no inverno durou 8 dias em Kuror e levou uma vida. No verão, Toan atacou Dour no morro em nome do Que Sacode. Dour foi derrotado e perdeu o que tinha guardado. Mali, Lotoro e Raora morreram na luta. No inverno, Rae anunciou que a Estrela de Cauda proibia qualquer trato com Toan. O deus nunca disse isso, mas Dour obedeceu.
+Na primavera do ano 237, Raik, que fundou Doem e o guiava, morreu dormindo, aos 69 anos. Foi quem levou os seus a fundar Doem. O sol escureceu outra vez.
 
 ### Ano 238
 
-Yorile, a engenhosa, morreu de frio.
+Na primavera, Riltou, que falava pela Chama de Cima em Toan, morreu de velhice aos 54 anos. Desde a morte de Rasura, nunca mais tinha rezado. Suyoik, o generoso, morreu de velhice aos 53 anos. Nunca perdoou o deus pela morte de Yodora. No verão, em Linhan, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Linhan, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No outono, Lona deu à luz gêmeos, Tobeu e Haenu. Uns viram bênção; outros, mau sinal.
 
 ### Ano 239
 
-Na primavera do ano 239, Kuror atacou Dour no morro. Kuror venceu e levou a comida guardada. Na luta morreram Tortorim e Marile. No verão, começou a Guerra da Fome do Morro: Kuror, com fome, foi buscar à força a comida de Dour. Começou a Quinta Guerra Santa: em nome do Que Sacode, Toan pegou em lanças contra Dour. A Quinta Guerra Santa seguiu: Dour contra Toan, no lago em nome da Estrela de Cauda. Toan resistiu, e Dour voltou de mãos vazias. Na luta morreram Kure, Lo e Hau. No inverno, Rae anunciou que a Estrela de Cauda proibia qualquer trato com Kuror. O deus nunca disse isso, mas Dour obedeceu.
+No outono do ano 239, a Guerra da Fome do Morro esfriou sem acordo nem vencedor: dezesseis anos, treze batalhas e 32 mortos, e ninguém sabia mais por que lutava. Toan saiu dela mais forte. A tempestade trouxe raios para a praia. Um deles acertou Doberis. Em Doem, disseram que era castigo. Doem passou a acreditar que o Que Ergue castiga quem duvida, e que Doberis tinha duvidado. Desde aquele dia, Doem chama a praia de Praia do Raio. No inverno, com canais e moinhos, Linhan já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 240
 
-A Guerra da Fome do Morro acabou em trégua, depois de um ano, cinco batalhas e nove mortos. Kuror saiu dela mais forte. No verão, em Dour, disseram que a Estrela de Cauda só ouvia Linhan. A inveja virou rancor. Os últimos de Dour, Rae e Mana, juntaram-se a Kuror. Dour deixou de existir. A Quinta Guerra Santa acabou porque um dos lados deixou de existir: três anos, três batalhas e sete mortos. Rae, a engenhosa, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Toan. Nos anos 231 a 240 houve quinze fomes, oito batalhas, 32 preces que pareceram atendidas e catorze preces sem resposta; nasceram 142 crianças e morreram 123 pessoas. No fim do ano 240, 232 pessoas viviam no mundo: Toan (105), Kuror (43) e Linhan (84).
+Ra tinha rezado: «Chama de Cima, não deixes nossos filhos morrerem de fome.» A fome passou, e Toan viu nisso obra da Chama de Cima. Foi só o tempo, mas quem iria dizer? Os escribas de Toan registraram o milagre. Nos anos 231 a 240 houve quatro secas, cinco fomes, dez batalhas, 22 preces que pareceram atendidas e nove preces sem resposta; nasceram 103 crianças e morreram 95 pessoas. No fim do ano 240, 195 pessoas viviam no mundo: Toan (93), Linhan (56), Juor (29) e Doem (17).
 
 ### Ano 241
 
-Foram 17 dias de fome no inverno em Kuror, com oito mortos.
+Na primavera, Ra, que falava pela Chama de Cima em Toan, morreu de velhice aos 53 anos. Em Doem, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Toan escolheu Hazeu para guiar o grupo. Rilim queria o lugar e nunca perdoou.
 
 ### Ano 242
 
-Morreu Totoik, o generoso, aos 58 anos. Desde a morte de Tora, nunca mais tinha rezado. Ninguém lembrava mais a razão, e Linhan abandonou o treino com lanças. A doença entrou em Linhan e matou três pessoas.
+Na primavera, Torilur, que guiava Linhan, morreu dormindo, aos 56 anos. Em Juor, os jovens deixaram de lado as oferendas. Era coisa de outro povo, diziam.
 
 ### Ano 243
 
-Na primavera do ano 243, Toan já não cabia no lago. Lodou, a rancorosa, levou 22 pessoas para o morro e fundou Suor. Em Suor, Haora tomou para si o cuidado das preces ao Que Sacode. Kuror escolheu Orsua para guiar o grupo. Lokuran queria o lugar e nunca perdoou. Foram 9 dias de fome no inverno em Toan, com dezessete mortos. Suor encontrou as ruínas de Suran. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Juora, a pacífica, morreu dormindo, aos 62 anos.
 
 ### Ano 244
 
-Em Suor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 77, só a crônica guarda. Nasceu Raraik, o primeiro de Suor. No outono, Orraik passou dias nas ruínas de Dour e voltou sabendo trabalhar o metal.
+Na primavera, Toik, que guiava Doem, morreu de velhice aos 58 anos. Na guerra, tinha tirado três vidas.
 
 ### Ano 245
 
-Kurlina, a devota, morreu de velhice aos 58 anos. O sol escureceu outra vez. Em Suor, Lodou pediu: «Que Sacode, leva embora a febre.» A febre passou, e Lodou contou a todos que o Que Sacode tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 245, Rila, a rancorosa, morreu de velhice aos 51 anos. Na guerra, tinha tirado três vidas. Berim, de Juor, tomou por esposa Raloil, de Doem, e os dois povos passaram a se visitar.
 
 ### Ano 246
 
-Na primavera do ano 246, depois de tanta briga pelo comando, Toan passou a ser guiado por um conselho dos mais velhos. Harile, de Linhan, casou-se com Rilo e foi viver em Suor. Foi o primeiro laço entre os dois povos.
+Morreu Hasuik, o desconfiado, aos 53 anos. Na guerra, tinha tirado três vidas. Em Toan, Jurilu começou a pregar que o deus não era «a Chama de Cima». Era «o Pai das Águas». Em poucos anos, todos rezavam assim. Com Dohau à frente, Linhan largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Dohau, que guiava Linhan, morreu ao dar à luz.
 
 ### Ano 247
 
-Nas ruínas de Dour, Rao achou o que eles sabiam: aprendeu a trabalhar o metal.
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Juorik implorou pelo filho. Dojuan morreu, e daquele dia em diante Juorik cuspia no chão quando falavam do Pai das Águas. Uma tosse que não passava matou 39 pessoas em Toan. Linos implorou pelo filho. Halos morreu, e daquele dia em diante Linos cuspia no chão quando falavam do Que Fere. Uma febre correu Linhan e levou 29 vidas.
 
 ### Ano 248
 
-No inverno do ano 248, Totoim rezou por Beyos até a voz acabar. Beyos morreu mesmo assim, e Totoim nunca mais rezou.
+Com Linim à frente, Linhan largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. A seca voltou, como no ano 231: 18 dias sem chuva, até que o céu se abriu.
 
-### Ano 249
-
-Com Lodou à frente, a nova geração de Suor abandonou as oferendas, costume herdado dos avós. Um raio caiu no morro durante a tempestade e matou Orim. Os seus nunca esqueceram. Para Suor, o deus já não era «o Que Sacode»: passou a ser «o Que Fere». Nasceu ali um costume: quando o céu escurece, ninguém em Suor sai de casa. Lembram de Orim. No inverno, Suor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+*O ano 249 foi calmo.*
 
 ### Ano 250
 
-No outono do ano 250, Lou deu à luz gêmeos, Lorilim e Loenos. Uns viram bênção; outros, mau sinal. Nos anos 241 a 250 houve dez fomes, vinte preces que pareceram atendidas e quatro preces sem resposta; nasceram 161 crianças e morreram 121 pessoas. No fim do ano 250, 270 pessoas viviam no mundo: Toan (107), Kuror (43), Linhan (83) e Suor (37).
+Na primavera do ano 250, com lanças e promessas, Dosuo acabou com o conselho de Toan e passou a mandar sozinho. Jurilu tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linhan deu graças ao Que Fere. O deus nada fez: o crédito era de graça. Nas tabuletas de Linhan, ficou escrito que foi o Que Fere. Nos anos 241 a 250 houve três secas, quatro fomes e sete preces que pareceram atendidas; nasceram 133 crianças e morreram 135 pessoas. No fim do ano 250, 194 pessoas viviam no mundo: Toan (82), Linhan (58), Juor (40) e Doem (14).
 
-### Ano 251
-
-Na primavera, Orraik, o engenhoso, morreu dormindo, aos 50 anos. No verão, Doyoim, de Toan, casou-se com Lodou e mudou-se para Suor, coisa que ninguém tinha feito antes. Numa tempestade sobre o morro, um raio matou Yotoa. A família de Yotoa nunca perdoou o céu. De novo a chuva sumiu, como no ano 231. Foram 21 dias de seca. Suor passou a festejar todo ano o dia da volta da chuva, em honra do Que Fere.
+*O ano 251 passou sem nada que a crônica precise guardar.*
 
 ### Ano 252
 
-Haik disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «a Voz do Céu». Toan acreditou, e o deus mudou de nome. Sem lugar e sem comida, Dorilim e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome no inverno durou 9 dias em Toan e levou quatro vidas. A fome no inverno durou 9 dias em Linhan e levou cinco vidas. Juyoil, a curiosa, inventou marcas que guardavam palavras.
+No verão, Toan passou a receber bem os de fora: um casamento com outro povo virava festa. Jura deu à luz gêmeos, Isik e Vio. Uns viram bênção; outros, mau sinal.
 
-### Ano 253
-
-Na primavera, Rildoan, o rancoroso, morreu dormindo, aos 55 anos.
-
-*No ano 254, nada de notável aconteceu.*
+*Entre os anos 253 e 254, nada mudou o rumo do mundo.*
 
 ### Ano 255
 
-Na primavera, morreu Rilhaim, o engenhoso, aos 52 anos. Lodou tinha rezado: «Manda água, Que Fere, que as crianças têm sede.» Quando a chuva voltou, Suor agradeceu ao Que Fere. Foi só o tempo, mas quem iria dizer?
+Juor passou fome no inverno por 9 dias, e vinte pessoas morreram.
 
-### Ano 256
-
-Com Lodou à frente, a nova geração de Suor abandonou o cuidado com a água, costume herdado dos avós. Suor já não se preparava para nada: o Que Fere sempre dava.
-
-### Ano 257
-
-Na primavera, Dokuros, o devoto, morreu dormindo, aos 50 anos. O frio levou Doan, que falava pela Voz do Céu em Toan. No inverno, o deus calou justo quando Suor mais dependia dele. Depois da seca, Suor jurou nunca desperdiçar água. Peur implorou pelo filho. Eno morreu, e daquele dia em diante Peur cuspia no chão quando falavam da Grande Água.
+*Os anos 256 a 257 passaram em paz.*
 
 ### Ano 258
 
-Morreu Loyoan, que guiava Kuror, aos 50 anos. Uma febre correu Linhan e levou cinco vidas. Foram 9 dias de fome no inverno em Linhan, com dez mortos. Um inverno duro matou dezessete pessoas de frio.
+Na primavera, Jurilim morreu dormindo, aos 66 anos.
 
-*O ano 259 passou sem nada que a crônica precise guardar.*
+### Ano 259
+
+Jujuim, de Doem, tomou por esposa Topena, de Linhan, e os dois povos passaram a se visitar.
 
 ### Ano 260
 
-De novo a chuva sumiu, como no ano 251. Foram 23 dias de seca. A doença entrou em Suor e matou três pessoas. Nos anos 251 a 260 houve quatro secas, treze fomes, 31 preces que pareceram atendidas e cinco preces sem resposta; nasceram 119 crianças e morreram 193 pessoas. No fim do ano 260, 194 pessoas viviam no mundo: Toan (82), Kuror (27), Linhan (59) e Suor (26).
+Loik, que falava pelo Pai das Águas em Toan, morreu dormindo, aos 74 anos. Nos anos 251 a 260 houve três secas, sete fomes e dez preces que pareceram atendidas; nasceram 131 crianças e morreram 87 pessoas. No fim do ano 260, 239 pessoas viviam no mundo: Toan (100), Linhan (72), Juor (46) e Doem (21).
 
 ### Ano 261
 
-Na primavera do ano 261, Kuror se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Suor passou fome por causa da seca por 15 dias, e cinco pessoas morreram. Doik rezou por Doil até a voz acabar. Doil morreu mesmo assim, e Doik nunca mais rezou. Em nome do Que Fere, Haora proibiu casamentos e trocas com Kuror. Era vontade de Haora, não do deus.
+Na primavera, morreu Raran, que falava pelo Pai das Águas em Toan, aos 47 anos. Oru tinha rezado: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Toan deu graças ao Pai das Águas. O deus não tinha feito nada. Os escribas de Toan registraram o milagre.
 
 ### Ano 262
 
-Lolos, o generoso, morreu dormindo, aos 63 anos.
+A fome no inverno durou 9 dias em Toan e levou três vidas. No outono, Toraik anunciou que o Pai das Águas proibia qualquer trato com Doem. O deus nunca disse isso, mas Toan obedeceu.
 
 ### Ano 263
 
-Na primavera do ano 263, morreu Haora, que falava pelo Que Fere em Suor, aos 58 anos. Foi quem proibiu, em nome do deus, o trato com Kuror. Os de Suor caíram sobre Kuror na praia em nome do Que Fere. Kuror resistiu, e Suor voltou de mãos vazias. Na luta morreram Doyoan, Hahail e Be. Para Suor, a praia virou Praia do Luto.
+Houve luta na praia: Toan atacou Doem. Doem foi derrotado e perdeu o que tinha guardado. Na luta morreram Topena e Yolou. No outono, um raio caiu no morro durante a tempestade e matou Orim. Ninguém em Juor teve dúvida: era castigo. Juor passou a acreditar que o Que Ergue castiga quem duvida, e que Orim tinha duvidado. Começou a Quarta Guerra Santa: em nome do Pai das Águas, Toan pegou em lanças contra Doem. Depois de duas batalhas e seis mortos, a Quarta Guerra Santa terminou em paz. Toan saiu dela mais forte.
 
 ### Ano 264
 
-Na primavera, começou a Guerra Santa da Praia: em nome do Que Fere, Suor pegou em lanças contra Kuror. Na Guerra Santa da Praia, Suor atacou Kuror na praia em nome do Que Fere. Kuror foi derrotado e perdeu o que tinha guardado. Juhara, Dodo e Ratoil morreram na luta.
+Na primavera, ninguém lembrava mais a razão, e Linhan abandonou a festa da chuva. Uma febre correu Linhan e levou três vidas.
 
 ### Ano 265
 
-Em Toan, Yotoim pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Toan deu graças à Voz do Céu. O deus não tinha feito nada. Nas tabuletas de Toan, ficou escrito que foi a Voz do Céu. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. Depois disso, Suor deixou de chamar o deus de «o Que Fere» e passou a chamá-lo de «o Que Risca o Céu».
+Morreu Dosuo, que guiava Toan, aos 60 anos. Uma febre correu Linhan e levou quatro vidas. Harail deu à luz gêmeos, Zeoru e Jukoil. Uns viram bênção; outros, mau sinal.
 
 ### Ano 266
 
-Na primavera do ano 266, Doik, que guiava Toan, morreu de velhice aos 63 anos. Nunca perdoou o deus pela morte de Doil. Raran não esperou a vez: tomou o comando de Toan à força, e o conselho dos velhos se calou. Na Guerra Santa da Praia, Suor atacou Kuror na praia em nome do Que Risca o Céu. Suor venceu e levou a comida guardada. Kurim e Loa morreram na luta. No verão, Peur implorou pela filha. Yoyoe morreu, e daquele dia em diante Peur cuspia no chão quando falavam da Grande Água.
+Toraik, que falava pelo Pai das Águas em Toan, morreu de velhice aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Doem. Sem lugar e sem comida, Toyoik e os seus atravessaram a borda do mundo. Ninguém soube deles. Rajuan rezou por Loha até a voz acabar. Loha morreu mesmo assim, e Rajuan nunca mais rezou. No outono, a tempestade trouxe raios para a praia. Um deles acertou Lovio. Lovio era dos que mais rezavam, e Doem ficou sem entender. Nasceu ali um costume: quando o céu escurece, ninguém em Doem sai de casa. Lembram de Lovio.
 
 ### Ano 267
 
-Lokuran, que guiava Kuror, morreu de velhice aos 51 anos. Morreu Halo, que falava pela Grande Água em Linhan, aos 64 anos. Suor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Suor passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+A seca voltou, como no ano 248: 19 dias sem chuva, até que o céu se abriu.
 
 ### Ano 268
 
-Na primavera, Yotoim, que falava pela Voz do Céu em Toan, morreu dormindo, aos 63 anos. Lodou, que fundou Suor e o guiava, morreu de velhice aos 54 anos. Foi quem levou os seus a fundar Suor. Suor escolheu Surilik para guiar o grupo. Ra queria o lugar e nunca perdoou. Toan atacou Suor no morro. Suor foi derrotado e perdeu o que tinha guardado. Na luta morreu Nanan. Começou a Segunda Guerra da Fome: Toan, com fome, foi buscar à força a comida de Suor.
+Na primavera, sem lugar e sem comida, Berik e os seus atravessaram a borda do mundo. Ninguém soube deles. Toan passou fome no inverno por 9 dias, e catorze pessoas morreram. A fome no inverno durou 9 dias em Juor e levou sete vidas.
 
 ### Ano 269
 
-Na primavera do ano 269, Enpena disse ter ouvido o deus de outro jeito: não era «a Grande Água», era «o Que Fala no Sono». Linhan acreditou, e o deus mudou de nome. Toorim anunciou que a Voz do Céu proibia qualquer trato com Kuror. O deus nunca disse isso, mas Toan obedeceu. A Guerra Santa da Praia esfriou sem acordo nem vencedor: seis anos, cinco batalhas e dez mortos, e ninguém sabia mais por que lutava. Na Segunda Guerra da Fome, Suor atacou Toan no lago. Toan expulsou os atacantes. Na luta morreram Orrilan e Tonail.
+A tempestade trouxe raios para o morro. Um deles acertou Zea. Ninguém em Juor teve dúvida: era castigo.
 
 ### Ano 270
 
-Na primavera, Kuror deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Sem lugar e sem comida, Suil e os seus atravessaram a borda do mundo. Ninguém soube deles. A seca voltou, como no ano 260: 22 dias sem chuva, até que o céu se abriu. Nos anos 261 a 270 houve sete fomes, dez batalhas, 28 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 170 crianças e morreram 140 pessoas. No fim do ano 270, 218 pessoas viviam no mundo: Toan (85), Kuror (35), Linhan (74) e Suor (24).
+Oru, a devota, morreu de repente, aos 40 anos. Nos anos 261 a 270 houve três secas, doze fomes, duas batalhas e dezessete preces que pareceram atendidas; nasceram 145 crianças e morreram 150 pessoas. No fim do ano 270, 230 pessoas viviam no mundo: Toan (87), Linhan (76), Juor (42) e Doem (25).
 
 ### Ano 271
 
-Uma febre correu Linhan e levou quatro vidas. Foram 9 dias de fome no inverno em Toan, com 26 mortos. Linhan passou fome no inverno por 9 dias, e onze pessoas morreram. Toorim anunciou que a Voz do Céu proibia qualquer trato com Suor. O deus nunca disse isso, mas Toan obedeceu.
+Em Linhan, Linenos pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Linhan deu graças ao Que Fere. O deus nada fez: o crédito era de graça. Nas tabuletas de Linhan, ficou escrito que foi o Que Fere. Os de Linhan caíram sobre Doem na praia. Doem foi derrotado e perdeu o que tinha guardado. Isis e Juik morreram na luta. Lorilu rezou por Sujura até a voz acabar. Sujura morreu mesmo assim, e Lorilu nunca mais rezou.
 
 ### Ano 272
 
-Na primavera do ano 272, Juyoil partiu com três pessoas para além da borda do mundo. Nunca voltaram. Doyoim partiu com duas pessoas para além da borda do mundo. Nunca voltaram. No inverno, na Segunda Guerra da Fome, Suor atacou Toan no lago. Toan resistiu, e Suor voltou de mãos vazias. Yosuo e Dohaik morreram na luta. O arquivo salvou Suor: Sutoik reaprendeu nas tabuletas o que os mortos sabiam. Morreu o último que sabia escrever, e ninguém tinha aprendido. Suor perdeu o saber.
+Morreu Loim, que guiava Toan, aos 55 anos. Linim, que guiava Linhan, morreu de velhice aos 51 anos. Com lanças e promessas, Linjuil acabou com o conselho de Doem e passou a mandar sozinho.
 
 ### Ano 273
 
-Na primavera, Suor rezou e não foi ouvido. Os mais firmes disseram que o Que Risca o Céu os estava testando, e se orgulharam de aguentar. Os últimos de Suor, Sutoik, Doan e Suik, juntaram-se a Linhan. Suor deixou de existir. A Segunda Guerra da Fome acabou porque um dos lados deixou de existir: cinco anos, sete batalhas e catorze mortos. Toan encontrou as ruínas de Suor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Um inverno duro matou sete pessoas de frio.
+Em Doem, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam.
 
 ### Ano 274
 
-Na primavera, morreu Toorim, que falava pela Voz do Céu em Toan, aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Kuror.
+Uma febre correu Toan e levou três vidas. O frio levou Rajuan, que guiava Toan. Nunca perdoou o deus pela morte de Loha.
 
-*O ano 275 passou sem nada que a crônica precise guardar.*
+### Ano 275
+
+Em Doem, os jovens deixaram de lado as oferendas. Era coisa de outro povo, diziam.
 
 ### Ano 276
 
-No inverno, Peur, que guiava Linhan, morreu de fome. Desde a morte de Eno, nunca mais tinha rezado.
+No outono, o sol escureceu outra vez.
 
 ### Ano 277
 
-Na primavera, Sutoik, o generoso, morreu dormindo, aos 60 anos. Em Kuror, quem vinha de fora era recebido com comida e lugar perto do fogo. Com Toenu à frente, doze pessoas deixaram Kuror e fundaram Rador, no morro. Hadoan implorou pela filha. Dora morreu, e daquele dia em diante Hadoan cuspia no chão quando falavam da Voz do Céu. Rador encontrou as ruínas de Suran. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Na primavera do ano 277, Oro, que falava pelo Pai das Águas em Toan, morreu de febre aos 64 anos. Nunca perdoou o deus pela morte de Sulou. Oro implorou pela filha. Sudoa morreu, e daquele dia em diante Oro cuspia no chão quando falavam do Pai das Águas. Foram 9 dias de fome no inverno em Linhan, com um morto. Uma tosse que não passava matou cinco pessoas em Toan.
 
 ### Ano 278
 
-Kuran disse ter ouvido o deus de outro jeito: não era «a Grande Água», era «o Que Ruge». Rador acreditou, e o deus mudou de nome. Em Rador, Kuran tomou para si o cuidado das preces ao Que Ruge. Kuran tinha rezado: «Grande Água, leva embora a febre.» Os doentes se levantaram. Em Rador, o crédito foi do Que Ruge. Foi só o tempo, mas quem iria dizer?
+Sem lugar e sem comida, Linenos e os seus atravessaram a borda do mundo. Ninguém soube deles. De novo o sol se apagou no meio do dia.
 
 ### Ano 279
 
-Pelinu, a generosa, morreu de velhice aos 52 anos. No verão, Beim implorou pelo filho. Haur morreu, e daquele dia em diante Beim cuspia no chão quando falavam do Que Fala no Sono. A seca voltou, como no ano 270: 24 dias sem chuva, até que o céu se abriu.
+Na primavera, em Doem, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Juor atacou Doem na praia. Doem resistiu, e Juor voltou de mãos vazias. Na luta morreu Yoil. Um inverno duro matou nove pessoas de frio. De novo a chuva sumiu, como no ano 267. Foram 26 dias de seca.
 
 ### Ano 280
 
-A doença entrou em Toan e matou cinco pessoas. Linhan passou fome no inverno por 9 dias, e cinco pessoas morreram. Line, de Linhan, casou-se com Rilrilos e foi viver em Rador. Foi o primeiro laço entre os dois povos. No outono, Todora deu à luz gêmeos, Dora e Sura. Uns viram bênção; outros, mau sinal. Nos anos 271 a 280 houve cinco secas, dezessete fomes, três batalhas, 27 preces que pareceram atendidas e dez preces sem resposta; nasceram 97 crianças e morreram 129 pessoas. No fim do ano 280, 180 pessoas viviam no mundo: Toan (85), Kuror (20), Linhan (62) e Rador (13).
+Começou a Guerra da Fome da Praia: Juor, com fome, foi buscar à força a comida de Doem. A Guerra da Fome da Praia seguiu: Juor contra Doem, na praia. Juor venceu e levou a comida guardada. Na luta morreu Bera. Depois da luta, Juor e Doem se encontraram na praia e juraram paz. Depois de um ano, duas batalhas e dois mortos, a Guerra da Fome da Praia terminou em paz. Toan passou fome por causa da seca por 9 dias, e cinco pessoas morreram. Nos anos 271 a 280 houve dezenove fomes, três batalhas, 24 preces que pareceram atendidas e quatro preces sem resposta; nasceram 160 crianças e morreram 155 pessoas. No fim do ano 280, 231 pessoas viviam no mundo: Toan (86), Linhan (68), Juor (43) e Doem (34).
 
 ### Ano 281
 
-Na primavera, Toenu, que fundou Rador e o guiava, morreu dormindo, aos 56 anos. Foi quem levou os seus a fundar Rador.
+Na primavera do ano 281, Jurilu, que guiava Linhan, morreu de velhice aos 57 anos. Linhan atacou Doem na praia. Linhan venceu e levou a comida guardada. Na luta morreu Rais.
 
-*Entre os anos 282 e 283, nada mudou o rumo do mundo.*
+### Ano 282
+
+Na primavera, Linena, que falava pelo Que Fere em Linhan, morreu de repente, aos 37 anos.
+
+### Ano 283
+
+Morreu Ha, a curiosa, aos 57 anos.
 
 ### Ano 284
 
-Na primavera, morreu Hadoan, aos 61 anos. Desde a morte de Dora, nunca mais tinha rezado. No inverno, nasceu Kuro, filho de Line e Rilrilos, com sangue de Rador e de Linhan.
+Enlinim rezou por Linlo até a voz acabar. Linlo morreu mesmo assim, e Enlinim nunca mais rezou.
 
 ### Ano 285
 
-Com Kuran à frente, a nova geração de Rador abandonou o medo das tempestades, costume herdado dos avós. Uma tosse que não passava matou quatro pessoas em Linhan.
+Dotou tinha rezado: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Toan deu graças ao Pai das Águas. Foi só o tempo, mas quem iria dizer? Os escribas de Toan registraram o milagre. A fome no inverno durou 9 dias em Linhan e levou catorze vidas.
 
-### Ano 286
-
-Morreu Ha, que falava pela Voz do Céu em Toan, aos 63 anos. Desde a morte de Lodoa, nunca mais tinha rezado. O templo de Rador ficou mais forte que o líder. Kuran, que falava pelo Que Ruge, passou a decidir tudo.
-
-### Ano 287
-
-Na primavera do ano 287, Rilik, que falava pela Voz do Céu em Toan, morreu de velhice aos 67 anos. Nunca perdoou o deus pela morte de Sua. Em Toan, Rilik pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Toan deu graças à Voz do Céu. A crônica sabe que foi acaso. Nas tabuletas de Toan, ficou escrito que foi a Voz do Céu. No inverno, houve luta na praia: Toan atacou Kuror em nome da Voz do Céu. Kuror resistiu, e Toan voltou de mãos vazias. Na luta morreu Rarail.
+*Os anos 286 a 287 passaram em paz.*
 
 ### Ano 288
 
-Na primavera, Sujuim passou a guiar Toan, mas Judou não aceitou e guardou rancor. No outono, começou a Sexta Guerra Santa: em nome da Voz do Céu, Toan pegou em lanças contra Kuror. Na Sexta Guerra Santa, Toan atacou Kuror na praia em nome da Voz do Céu. Kuror expulsou os atacantes. Na luta morreu Jurilik. A seca voltou, como no ano 279: 21 dias sem chuva, até que o céu se abriu. Tosura rezou por Toorim até a voz acabar. Toorim morreu mesmo assim, e Tosura nunca mais rezou.
+Uma febre correu Linhan e levou três vidas.
 
 ### Ano 289
 
-Morreu Yolinos, que guiava Kuror, aos 70 anos. Judou anunciou que a Voz do Céu proibia qualquer trato com Rador. O deus nunca disse isso, mas Toan obedeceu. Os de Toan caíram sobre Rador no morro em nome da Voz do Céu. Toan venceu e levou a comida guardada. Na luta morreram Haloil e Torilim. Desde então, Rador chama o morro de Morro do Luto. A fome no inverno durou 9 dias em Toan e levou três vidas.
+Na primavera do ano 289, morreu Dotou, que falava pelo Pai das Águas em Toan, aos 59 anos. Em Doem, cada um passou a cercar o que tinha. Foram 11 dias de fome no inverno em Juor, com dois mortos. Uma tosse que não passava matou cinco pessoas em Doem.
 
 ### Ano 290
 
-Na primavera, em Rador, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Todora deu à luz gêmeos, Sutou e Yojuo. Uns viram bênção; outros, mau sinal. A Sexta Guerra Santa seguiu: Toan contra Kuror, na praia em nome da Voz do Céu. Kuror foi derrotado e perdeu o que tinha guardado. Raos, Haenos e Raik morreram na luta. No verão, Han, de Kuror, tomou por esposa Enlinu, de Rador, e os dois povos passaram a se visitar. Em Kuror, quem vinha de fora era recebido com comida e lugar perto do fogo. Nos anos 281 a 290 houve três secas, seis fomes, seis batalhas, dezesseis preces que pareceram atendidas e sete preces sem resposta; nasceram 129 crianças e morreram 98 pessoas. No fim do ano 290, 214 pessoas viviam no mundo: Toan (99), Kuror (31), Linhan (67) e Rador (17).
+Nos anos 281 a 290 houve quatro secas, dezoito fomes e catorze preces que pareceram atendidas; nasceram 130 crianças e morreram 137 pessoas. No fim do ano 290, 224 pessoas viviam no mundo: Toan (89), Linhan (68), Juor (42) e Doem (25).
 
 ### Ano 291
 
-Na primavera, Judou, que falava pela Voz do Céu em Toan, morreu dormindo, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Rador. No outono, na Sexta Guerra Santa, Toan atacou Kuror na praia em nome da Voz do Céu. Kuror foi derrotado e perdeu o que tinha guardado. Na luta morreram Kurhae e Rilos. No inverno, a Sexta Guerra Santa seguiu: Toan contra Kuror, na praia em nome da Voz do Céu. Kuror foi derrotado e perdeu o que tinha guardado. Na luta morreram Tolino, Yos e Han.
+Linjuil, que guiava Doem, morreu de repente, aos 44 anos. Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu.
 
-*No ano 292, nada de notável aconteceu.*
+### Ano 292
+
+Sujuo implorou pelo filho. Raloik morreu, e daquele dia em diante Sujuo cuspia no chão quando falavam do Pai das Águas. A tempestade trouxe raios para a praia. Um deles acertou Iso. Ninguém em Doem teve dúvida: era castigo. De novo a chuva sumiu, como no ano 279. Foram 24 dias de seca.
 
 ### Ano 293
 
-Na primavera, morreu Raim, que falava pela Voz do Céu em Toan, aos 62 anos. Desde a morte de Ora, nunca mais tinha rezado. Em Rador, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam.
+Na primavera, Totoik, o medroso, morreu de velhice aos 53 anos.
 
 ### Ano 294
 
-No inverno, Haim, que guiava Linhan, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Kuror.
+No verão do ano 294, um raio caiu na floresta durante a tempestade e matou Petos. Em Linhan, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Linhan sai de casa. Lembram de Petos.
 
 ### Ano 295
 
-A Sexta Guerra Santa seguiu: Toan contra Kuror, na praia em nome da Voz do Céu. Kuror foi derrotado e perdeu o que tinha guardado. Na luta morreram Harilil, Enhaos e Dohau. Foram 9 dias de fome no inverno em Toan, com dezenove mortos. Foram 9 dias de fome no inverno em Linhan, com dezenove mortos. Para Linhan, o morro virou Morro da Vitória.
+Radoan tinha rezado: «Pai das Águas, dá-nos o que comer.» A fome passou, e Toan viu nisso obra do Pai das Águas. A crônica sabe que foi acaso. Nas tabuletas de Toan, ficou escrito que foi o Pai das Águas.
 
 ### Ano 296
 
-Numa tempestade sobre o morro, um raio matou Iblinela. Iblinela era das que mais rezavam, e Rador ficou sem entender. Desde a morte de Iblinela, ninguém em Rador sobe o morro em dia de tempestade. Para os mais fiéis de Rador, Line não foi castigada, mas escolhida.
+Beur, que guiava Linhan, morreu dormindo, aos 62 anos. Em Juor, quem vinha de fora era recebido com comida e lugar perto do fogo. Sem lugar e sem comida, Yotoan e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Juor caíram sobre Doem na praia. Doem foi derrotado e perdeu o que tinha guardado. Raraik morreu na luta.
 
-*O ano 297 foi calmo.*
+### Ano 297
+
+Na primavera do ano 297, Radoan, que falava pelo Pai das Águas em Toan, morreu de velhice aos 61 anos.
 
 ### Ano 298
 
-Kuran, que guiava Rador, morreu dormindo, aos 70 anos. A Sexta Guerra Santa esfriou sem acordo nem vencedor: onze anos, nove batalhas e dezessete mortos, e ninguém sabia mais por que lutava. Toan saiu dela mais forte. No inverno, de novo o sol se apagou no meio do dia.
+Na primavera, sem lugar e sem comida, Pea e os seus atravessaram a borda do mundo. Ninguém soube deles. Linhan passou fome no inverno por 8 dias, e quatro pessoas morreram. A fome no inverno durou 9 dias em Juor e levou seis vidas.
 
 *No ano 299, nada de notável aconteceu.*
 
 ### Ano 300
 
-Nos anos 291 a 300 houve três fomes, seis batalhas, treze preces que pareceram atendidas e três preces sem resposta; nasceram 121 crianças e morreram 106 pessoas. No fim do ano 300, 230 pessoas viviam no mundo: Toan (97), Kuror (33), Linhan (78) e Rador (22).
+Na primavera do ano 300, Raorik, que falava pelo Pai das Águas em Toan, morreu dormindo, aos 55 anos. Bea, a curiosa, morreu dormindo, aos 62 anos. Ene deu à luz gêmeos, Linenu e Yopeim. Uns viram bênção; outros, mau sinal. Nos anos 291 a 300 houve três secas, dezesseis fomes e catorze preces que pareceram atendidas; nasceram 138 crianças e morreram 113 pessoas. No fim do ano 300, 243 pessoas viviam no mundo: Toan (97), Linhan (68), Juor (42) e Doem (36).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Toan** vive no lago, com 97 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «a Voz do Céu»; costumes: queima os mortos (desde o ano 77); não desperdiça uma gota d'água (desde o ano 95); guarda tanta comida para o inverno (desde o ano 96); deixa oferendas no começo de cada estação (desde o ano 108); treina os jovens com lanças (desde o ano 179).
-- **Kuror** vive na praia, com 33 pessoas, com canais e moinhos; nasceu de uma migração em Toan no ano 68; não reza a ninguém; costumes: faz a festa da chuva (desde o ano 81); guarda tanta comida para o inverno (desde o ano 96); treina os jovens com lanças (desde o ano 129); não sai de casa em dia de tempestade (desde o ano 159); queima os mortos (desde o ano 181); não desperdiça uma gota d'água (desde o ano 196).
-- **Linhan** vive na floresta, com 78 pessoas, com canais e moinhos; nasceu de uma migração em Kuror no ano 97; chama o deus de «o Que Fala no Sono»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 148); não desperdiça uma gota d'água (desde o ano 167); não sai de casa em dia de tempestade (desde o ano 168); queima os mortos (desde o ano 196); deixa oferendas no começo de cada estação (desde o ano 197).
-- **Rador** vive no morro, com 22 pessoas, com canais e moinhos; nasceu de uma migração em Kuror no ano 277; chama o deus de «o Que Ruge»; costumes: faz a festa da chuva (desde o ano 81); guarda tanta comida para o inverno (desde o ano 96); treina os jovens com lanças (desde o ano 129); não sai de casa em dia de tempestade (desde o ano 296).
+- **Toan** vive no lago, com 97 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Pai das Águas»; costumes: queima os mortos (desde o ano 77); não desperdiça uma gota d'água (desde o ano 95); guarda tanta comida para o inverno (desde o ano 96); deixa oferendas no começo de cada estação (desde o ano 108); treina os jovens com lanças (desde o ano 159).
+- **Linhan** vive na floresta, com 68 pessoas, com canais e moinhos; nasceu de uma migração em Kuror no ano 97; chama o deus de «o Que Fere»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não desperdiça uma gota d'água (a origem foi esquecida); queima os mortos (desde o ano 194); não sai de casa em dia de tempestade (desde o ano 294).
+- **Juor** vive no morro, com 42 pessoas, com canais e moinhos; nasceu de uma migração em Toan no ano 183; não reza a ninguém; costumes: queima os mortos (desde o ano 77); não desperdiça uma gota d'água (desde o ano 95); guarda tanta comida para o inverno (desde o ano 96); não sai de casa em dia de tempestade (desde o ano 188); treina os jovens com lanças (desde o ano 227).
+- **Doem** vive na praia, com 36 pessoas, com canais e moinhos; nasceu de uma briga em Juor no ano 225; não reza a ninguém; costumes: queima os mortos (desde o ano 77); guarda tanta comida para o inverno (desde o ano 96); não sai de casa em dia de tempestade (desde o ano 266).
 
-Povos que deixaram de existir: Raon, Suran, Juon, Dour e Suor.
+Povos que deixaram de existir: Raon, Suran, Kuror, Juon, Peon, Ruar e Sudon.
 
-Lugares com nome: Praia da Fome (praia, para Toan), Praia da Fome (praia, para Kuror), Praia do Luto (praia, para Dour), Praia do Luto (praia, para Suor), Lago da Fome (lago, para Toan), Lago do Luto (lago, para Dour), Lago do Luto (lago, para Linhan), Lago do Luto (lago, para Suor), Floresta do Raio (floresta, para Raon), Floresta da Vitória (floresta, para Toan), Floresta do Raio (floresta, para Suran), Floresta do Luto (floresta, para Linhan), Floresta do Luto (floresta, para Kuror), Morro do Raio (morro, para Juon), Morro da Vitória (morro, para Toan), Morro da Vitória (morro, para Kuror), Morro do Luto (morro, para Dour), Morro do Raio (morro, para Suor), Morro do Luto (morro, para Rador) e Morro da Vitória (morro, para Linhan).
+Lugares com nome: Praia da Fome (praia, para Toan), Praia da Fome (praia, para Kuror), Praia da Vitória (praia, para Peon), Praia do Luto (praia, para Linhan), Praia da Vitória (praia, para Juor), Praia da Vitória (praia, para Sudon), Praia do Raio (praia, para Doem), Lago da Fome (lago, para Toan), Lago do Luto (lago, para Juon), Lago do Luto (lago, para Peon), Lago do Luto (lago, para Juor), Lago da Vitória (lago, para Linhan), Floresta do Raio (floresta, para Raon), Floresta da Vitória (floresta, para Toan), Floresta do Raio (floresta, para Suran), Floresta da Vitória (floresta, para Juon), Floresta do Luto (floresta, para Linhan), Floresta da Vitória (floresta, para Peon), Floresta da Vitória (floresta, para Juor), Morro do Raio (morro, para Juon), Morro da Vitória (morro, para Toan), Morro da Vitória (morro, para Kuror), Morro do Luto (morro, para Ruar), Morro do Luto (morro, para Linhan), Morro do Luto (morro, para Peon) e Morro do Raio (morro, para Juor).
 
-Em 300 anos nasceram 2800 pessoas e morreram 2540.
+Em 300 anos nasceram 2603 pessoas e morreram 2342.

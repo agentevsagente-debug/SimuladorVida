@@ -254,833 +254,811 @@ A seca voltou, como no ano 65: 21 dias sem chuva, até que o céu se abriu. Em T
 
 ### Ano 78
 
-Wanum conheceu a maior fome da sua história no inverno. Em 18 dias, morreram 11. Muitas cabanas ficaram vazias. Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Teor. O deus nunca disse isso, mas Wanum obedeceu. No inverno, Rudemia partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A guerra entre Wanum e Teur continuou: Wanum voltou a atacar na floresta em nome do Que Apaga o Sol. Teur expulsou os atacantes. Manira, Torzeia e Ruesya morreram na luta.
+Na primavera do ano 78, em nome do Que Apaga o Sol, Ruruim proibiu casamentos e trocas com Teor. Era vontade de Ruruim, não do deus. Wanum conheceu a maior fome da sua história no inverno. Em 18 dias, morreram 11. Muitas cabanas ficaram vazias. Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Teur. O deus nunca disse isso, mas Wanum obedeceu. Wanum não esqueceu o ano 72 e atacou Teur outra vez. Teur resistiu, e Wanum voltou de mãos vazias. Teim e Isesar morreram na luta. Wanum e Teur, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 79
 
-No outono, o sol escureceu outra vez.
+Morreu Suar, que guiava Teur, aos 58 anos. Enteik passou a falar pelo Que Risca o Céu em Teor. Era o primeiro a rezar e o último a duvidar. Os dois povos passaram a chamar o lugar de Lago da Trégua. No inverno, dessa vez, o Que Risca o Céu não respondeu, e Teil, que tinha esquecido como se virar sozinho, pagou caro. Numa tempestade sobre a praia, um raio matou Mademar. Em Wanum, disseram que era castigo.
 
 ### Ano 80
 
-Uma febre correu Teur e levou duas vidas. Kiesena deu à luz gêmeos, Torzena e Niibim. Uns viram bênção; outros, mau sinal. Nos anos 71 a 80 houve três secas, seis fomes, três batalhas, 29 preces que pareceram atendidas e nove preces sem resposta; nasceram 120 crianças e morreram 58 pessoas. No fim do ano 80, 173 pessoas viviam no mundo: Teil (59), Teur (59), Wanum (21) e Teor (34).
+Na primavera, a forja de Teur não apagava mais. O metal mudou o trabalho e mudou a guerra. No verão, a forja de Wanum não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 71 a 80 houve três secas, quatro fomes, quatro batalhas, 24 preces que pareceram atendidas e dez preces sem resposta; nasceram 113 crianças e morreram 54 pessoas. No fim do ano 80, 173 pessoas viviam no mundo: Teil (62), Teur (57), Wanum (25) e Teor (29).
 
 ### Ano 81
 
-Na primavera, Natena, que guiava Teil, morreu de velhice aos 54 anos.
+Na primavera, Demmaik disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «a Sombra». Teur acreditou, e o deus mudou de nome.
 
 ### Ano 82
 
-Morreu Lona, filha pequena de Ena. Uma febre correu Teor e levou três vidas. Depois da febre, Teor passou a queimar os seus mortos, para que a doença não voltasse. Tantas preces atendidas fizeram Wanum confiar no céu mais do que nas próprias mãos. Depois da seca, Teor jurou nunca desperdiçar água.
+Na primavera do ano 82, Kiena, de Teor, casou-se com Temar e foi viver em Teur. Foi o primeiro laço entre os dois povos.
 
 ### Ano 83
 
-Na primavera do ano 83, Tenana, que falava pelo Que Risca o Céu em Teil, morreu de frio. Teur conheceu a maior fome da sua história por causa da seca. Em 20 dias, morreram 13. Muitas cabanas ficaram vazias. Os de Wanum caíram sobre Teil no lago em nome do Que Apaga o Sol. Teil expulsou os atacantes. Mamaem, Maiba e Teim morreram na luta. Desde então, os de Teil chamam o lugar de Lago da Vitória; os de Wanum, de Lago do Luto. A febre levou Runa, que guiava Teur.
+Na primavera do ano 83, Eszem, que guiava Wanum, morreu de velhice aos 52 anos. Torem disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Olho Escuro». Teil acreditou, e o deus mudou de nome.
 
 ### Ano 84
 
-Wanum passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No outono, houve luta no morro: Wanum atacou Teor em nome do Que Apaga o Sol. Wanum venceu e levou a comida guardada. Na luta morreram Enya, Nasuna e Esnim. Para Wanum, o morro virou Morro da Vitória. Teor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Wanum e Teor se encontraram no morro e juraram paz.
+Ibia, de Wanum, casou-se com Isem e foi viver em Teur. Foi o primeiro laço entre os dois povos. No verão, a tempestade trouxe raios para a floresta. Um deles acertou Demmaik. Em Teur, disseram que era castigo. Teur passou a acreditar que a Sombra castiga quem duvida, e que Demmaik tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Teur sai de casa. Lembram de Demmaik.
 
-*O ano 85 foi calmo.*
+### Ano 85
+
+No outono, tantas preces atendidas fizeram Teor confiar no céu mais do que nas próprias mãos. Uma tosse que não passava matou três pessoas em Teur. Desde a febre, Teur não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 86
 
-Demem, o desconfiado, morreu de repente, aos 41 anos. Temar, o generoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. No outono, Kisuem, de Teor, tomou por esposa Niteya, de Teur, e os dois povos passaram a se visitar. Em Teur, Suena pediu: «Estrela de Cauda, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que a Estrela de Cauda tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Teur, e 14 mortos. As crianças foram as primeiras. Depois daquela fome, Teur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. O morro passou a ser o morro da fome: Morro da Fome. Wanum já não se preparava para nada: o Que Apaga o Sol sempre dava. Torisar, o corajoso, inventou marcas que guardavam palavras.
 
 ### Ano 87
 
-Em Teur, Kiesena começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Queima». Em poucos anos, todos rezavam assim. Para Teil, o deus já não era «o Que Risca o Céu»: passou a ser «o Que Apaga o Sol». No verão, Ruruim, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A guerra entre Wanum e Teil continuou: Wanum voltou a atacar no lago em nome do Que Apaga o Sol. Teil resistiu, e Wanum voltou de mãos vazias. Na luta morreram Tera e Kiena. Depois de tantos mortos, Wanum e Teil se encontraram no lago e juraram paz.
+Morreu Natena, que guiava Teil, aos 60 anos.
 
 ### Ano 88
 
-Na primavera do ano 88, Niteya deu à luz gêmeos, Fara e Naim. Uns viram bênção; outros, mau sinal. Nitorar, o medroso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+No outono do ano 88, Kiem, o generoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 89
 
-No verão, Demsura, a corajosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Em Wanum, Ruruim pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Wanum deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
 
 ### Ano 90
 
-Na primavera, sem lugar e sem comida, Ruruim e os seus atravessaram a borda do mundo. Ninguém soube deles. Nos anos 81 a 90 houve três secas, oito fomes, três batalhas, 33 preces que pareceram atendidas e oito preces sem resposta; nasceram 115 crianças e morreram 93 pessoas. No fim do ano 90, 192 pessoas viviam no mundo: Teil (82), Teur (52), Wanum (32) e Teor (26).
+Na primavera do ano 90, Tenana, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 72 anos. Enteim, o medroso, morreu dormindo, aos 66 anos. Tinha sido o primeiro a plantar. Kiteik partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Teor, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Nos anos 81 a 90 houve nove fomes e 23 preces que pareceram atendidas; nasceram 116 crianças e morreram 71 pessoas. No fim do ano 90, 215 pessoas viviam no mundo: Teil (74), Teur (69), Wanum (35) e Teor (37).
 
 ### Ano 91
 
-Enteim, que falava pelo Que Apaga o Sol em Teil, morreu de velhice aos 67 anos. Foi quem descobriu que semente vira planta.
+Na primavera do ano 91, Runa, que guiava Teur, morreu de velhice aos 56 anos. Morreu o último que tinha visto o ano 35. Em Teur, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
 
 ### Ano 92
 
-Na primavera do ano 92, Eszem, que guiava Wanum, morreu dormindo, aos 61 anos. Mademar passou a guiar Wanum, mas Nina não aceitou e guardou rancor.
+Na primavera do ano 92, o deus calou justo quando Wanum mais dependia dele. Depois da seca, Teor jurou nunca desperdiçar água. No inverno, Mara, que fundou Teor e o guiava, morreu de fome. Tinha fundado Teor. Demsuya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Teor acabou: Ibel e Torrura foram viver em Teur.
 
 ### Ano 93
 
-Em Teur, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 35, só a crônica guarda. Teur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera, com Enim à frente, dezesseis pessoas deixaram Teil e fundaram Kidon, no morro. Foram 9 dias de fome no inverno em Teil, com onze mortos. Depois daquela fome, Teil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. As ruínas de Teor viraram aviso em Teil: era o que o deus fazia com quem o desagradava. No inverno, em Kidon, Demnina tomou para si o cuidado das preces ao Olho Escuro.
 
 ### Ano 94
 
-Na primavera do ano 94, Nina não esperou a vez: tomou o comando de Wanum à força, e o conselho dos velhos se calou. Tantas preces atendidas fizeram Teor confiar no céu mais do que nas próprias mãos. Deixaram de poupar água. No outono, a forja de Teor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Ruruim, o engenhoso, inventou marcas que guardavam palavras.
 
-### Ano 95
-
-Foram 6 dias de fome no inverno em Teil, com seis mortos. Em Teil, Enar pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso. A fome ensinou: desde então, Teil estoca comida e não come tudo o que colhe.
+*No ano 95, nada de notável aconteceu.*
 
 ### Ano 96
 
-Na primavera, os de Wanum caíram sobre Teor no morro em nome do Que Apaga o Sol. Wanum venceu e levou a comida guardada. Kiteik e Torar morreram na luta. Wanum e Teor, cansados de enterrar os seus, fizeram as pazes no morro. O deus calou justo quando Teor mais dependia dele. No inverno, Wanum atacou Teur na floresta em nome do Que Apaga o Sol. Teur resistiu, e Wanum voltou de mãos vazias. Tem e Teya morreram na luta. A forja de Teil não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Kidon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Em Kidon nasceu a primeira criança: Sudoik, filho de Demnina e Enim.
 
 ### Ano 97
 
-Na primavera, morreu Ibar, que guiava Teor, aos 70 anos. Em Teor, Kisuem tomou para si o cuidado das preces ao Olho Escuro. Começou a Guerra Santa da Floresta: em nome do Que Apaga o Sol, Wanum pegou em lanças contra Teur. A Guerra Santa da Floresta seguiu: Wanum contra Teur, na floresta em nome do Que Apaga o Sol. Teur expulsou os atacantes. Na luta morreram Ruela, Nitena e Ruan. Teil conheceu a maior fome da sua história por causa da seca. Em 21 dias, morreram 22. Muitas cabanas ficaram vazias.
+Na primavera do ano 97, Torik, que falava pelo Olho Escuro em Teil, morreu de velhice aos 68 anos. No verão, Ismaik, de Teur, tomou por esposa Natera, de Kidon, e os dois povos passaram a se visitar. Esia, a engenhosa, inventou marcas que guardavam palavras.
 
 ### Ano 98
 
-Ibzear, o rancoroso, morreu de velhice aos 53 anos. Nunca perdoou o deus pela morte de War. A Guerra Santa da Floresta seguiu: Wanum contra Teur, na floresta em nome do Que Apaga o Sol. Teur resistiu, e Wanum voltou de mãos vazias. Na luta morreram Doik e Mademar.
+Na primavera do ano 98, em Teur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Teur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 99
 
-O sol escureceu outra vez.
+Enar, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 48 anos. Numa tempestade sobre o morro, um raio matou Esia. A família de Esia nunca perdoou o céu. Depois disso, Kidon deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Kidon sai de casa. Lembram de Esia. Desde aquele dia, Kidon chama o morro de Morro do Raio.
 
 ### Ano 100
 
-Morreu Rumaya, que guiava Teur, aos 51 anos. Mana, a generosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A doença entrou em Teil e matou quatro pessoas. Depois da febre, Teil passou a queimar os seus mortos, para que a doença não voltasse. Nos anos 91 a 100 houve treze fomes, cinco batalhas, 34 preces que pareceram atendidas e nove preces sem resposta; nasceram 123 crianças e morreram 96 pessoas. No fim do ano 100, 219 pessoas viviam no mundo: Teil (88), Teur (78), Wanum (22) e Teor (31).
+No outono do ano 100, Kidema deu à luz gêmeos, Torik e Demtem. Uns viram bênção; outros, mau sinal. Demnina, que falava pela Voz do Céu em Kidon, morreu ao dar à luz. Nos anos 91 a 100 houve sete fomes, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 134 crianças e morreram 142 pessoas. No fim do ano 100, 205 pessoas viviam no mundo: Teil (78), Teur (86), Wanum (26) e Kidon (15).
 
 ### Ano 101
 
-De novo a chuva sumiu, como no ano 77. Foram 26 dias de seca. Depois da seca, Teil jurou nunca desperdiçar água. Esdemik rezou por Demar até a voz acabar. Demar morreu mesmo assim, e Esdemik nunca mais rezou. Nik, que falava pelo Que Queima em Teur, morreu de fome. Na guerra, tinha tirado duas vidas.
+O inverno foi de gelo: duas pessoas morreram de frio.
 
 ### Ano 102
 
-Na primavera, Enar, que falava pelo Que Apaga o Sol em Teil, morreu de frio. Uma tosse que não passava matou dez pessoas em Teil. Veio a pior fome que o mundo tinha visto: 24 dias por causa da seca em Teil, e 25 mortos. As crianças foram as primeiras.
+Tornaim, que guiava Teil, morreu de velhice aos 47 anos. Demem, o desconfiado, morreu dormindo, aos 57 anos. Sem lugar e sem comida, Niya e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Teur, Nik pediu: «Sombra, dá-nos o que comer.» A fome passou, e Teur viu nisso obra da Sombra. A crônica sabe que foi acaso. Nas tabuletas de Teur, ficou escrito que foi a Sombra.
 
-### Ano 103
-
-Na primavera do ano 103, ninguém lembrava mais a razão, e Teil abandonou a festa da chuva. A Guerra Santa da Floresta esfriou sem acordo nem vencedor: sete anos, quatro batalhas e oito mortos, e ninguém sabia mais por que lutava. Teur saiu dela mais forte.
+*O ano 103 foi calmo.*
 
 ### Ano 104
 
-Nina tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Wanum deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
+Ninguém lembrava mais a razão, e Teil abandonou a festa da chuva.
 
-### Ano 105
-
-Ibiba, que guiava Teor, morreu de velhice aos 55 anos. Wanum atacou Teur na floresta em nome do Que Apaga o Sol. Wanum venceu e levou a comida guardada. Na luta morreram Zezear e Ibem. Depois da derrota, os jovens de Teur passaram a treinar com lanças. Começou a Guerra Santa da Praia: em nome do Que Apaga o Sol, Wanum pegou em lanças contra Teur. A Guerra Santa da Praia seguiu: Teur contra Wanum, na praia. Teur venceu e levou a comida guardada. Doruela e Maia morreram na luta.
+*O ano 105 foi calmo.*
 
 ### Ano 106
 
-Numa tempestade sobre o lago, um raio matou Esibia. Em Teil, disseram que era castigo. Para Teil, Esibia foi castigada. Desde então, quem duvida do Que Apaga o Sol duvida em silêncio. Desde a morte de Esibia, ninguém em Teil chega perto do lago em dia de tempestade.
+Enim tinha rezado: «Manda água, Voz do Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Kidon duvidou de que a Voz do Céu tinha ouvido. A crônica sabe que foi acaso. No inverno, Zetena, a medrosa, morreu de fome.
 
 ### Ano 107
 
-Morreu Niena, que guiava Teur, aos 61 anos. Em Teor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Teor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Sem lugar e sem comida, Demzem e os seus atravessaram a borda do mundo. Ninguém soube deles. Teur passou fome no inverno por 9 dias, e onze pessoas morreram.
 
 ### Ano 108
 
-Na primavera do ano 108, Nina, que guiava Wanum, morreu dormindo, aos 54 anos. Morreu o último que tinha visto o ano 72. Em Wanum, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. A Guerra Santa da Praia esfriou sem acordo nem vencedor: três anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Wanum não esqueceu o ano 105 e atacou Teur outra vez. Teur expulsou os atacantes. Dodoik e Wadoim morreram na luta. Wanum e Teur, cansados de enterrar os seus, fizeram as pazes na floresta.
+Morreu Tortora, que falava pelo Olho Escuro em Teil, aos 55 anos. No verão, Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Kidon. O deus nunca disse isso, mas Wanum obedeceu. Os de Wanum caíram sobre Kidon no morro. Kidon expulsou os atacantes. Na luta morreram Tem e Demik. Para Wanum, o morro virou Morro do Luto. Depois da luta, Wanum e Kidon se encontraram no morro e juraram paz.
 
 ### Ano 109
 
-A fome no inverno durou 9 dias em Teor e levou dezessete vidas.
+No verão do ano 109, Nian rezou por Man até a voz acabar. Man morreu mesmo assim, e Nian nunca mais rezou. A doença entrou em Wanum e matou quatro pessoas. Desde a febre, Wanum não enterra mais ninguém: os mortos vão para o fogo. No outono, em nome do Que Apaga o Sol, Ruruim proibiu casamentos e trocas com Kidon. Era vontade de Ruruim, não do deus.
 
 ### Ano 110
 
-Nos anos 101 a 110 houve quatro secas, dez fomes, três batalhas, 37 preces que pareceram atendidas e quinze preces sem resposta; nasceram 153 crianças e morreram 163 pessoas. No fim do ano 110, 209 pessoas viviam no mundo: Teil (96), Teur (47), Wanum (25) e Teor (41).
+Nos anos 101 a 110 houve doze fomes, 30 preces que pareceram atendidas e três preces sem resposta; nasceram 130 crianças e morreram 105 pessoas. No fim do ano 110, 221 pessoas viviam no mundo: Teil (81), Teur (71), Wanum (32) e Kidon (37).
 
 ### Ano 111
 
-Na primavera, Kiesena, que guiava Teur, morreu dormindo, aos 62 anos. Com Kisuem à frente, a nova geração de Teor abandonou a festa da chuva, costume herdado dos avós.
+No inverno, Nian implorou pela filha. Demnina morreu, e daquele dia em diante Nian cuspia no chão quando falavam do Que Apaga o Sol.
 
 ### Ano 112
 
-Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Depois disso, Teur deixou de chamar o deus de «o Que Queima» e passou a chamá-la de «a Sombra». Temar, que guiava Teur, morreu de febre aos 63 anos. Nitorar implorou pelo filho. Enel morreu, e daquele dia em diante Nitorar cuspia no chão quando falavam do Que Leva. A doença entrou em Teil e matou 45 pessoas.
+Na primavera do ano 112, Ruruim, que guiava Wanum, morreu de velhice aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Teor. A doença entrou em Teur e matou quatro pessoas.
 
 ### Ano 113
 
-Ruesa tinha rezado: «Manda água, Sombra, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que a Sombra tinha ouvido. Foi só o tempo, mas quem iria dizer? Teor passou a festejar todo ano o dia da volta da chuva, em honra do Que Leva.
+No verão, Teil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 114
 
-Na primavera do ano 114, Esdemik, que guiava Teil, morreu de velhice aos 58 anos. Nunca perdoou o deus pela morte de Demar. O sol escureceu outra vez. Niya, a desconfiada, inventou marcas que guardavam palavras.
+Nik, que falava pela Sombra em Teur, morreu dormindo, aos 66 anos. Wan disse ter ouvido o deus de outro jeito: não era «o Que Apaga o Sol», era «o Que Leva». Wanum acreditou, e o deus mudou de nome.
 
 ### Ano 115
 
-No inverno, Niela morreu ao dar à luz. Desde a morte de Dona, nunca mais tinha rezado.
+Em Teil, Esdemik pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Teil viu nisso obra do Olho Escuro. O deus não tinha feito nada.
 
 ### Ano 116
 
-Depois de anos sob um só, Teur sentou-se em roda: dali em diante, decidia-se juntos.
+Nidemar, que guiava Teur, morreu de repente, aos 43 anos. Entem partiu com oito pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Desde a febre, Teil não enterra mais ninguém: os mortos vão para o fogo. Tantas preces atendidas fizeram Kidon confiar no céu mais do que nas próprias mãos.
 
 ### Ano 117
 
-Com Nuela à frente, Wanum largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido.
+Na primavera do ano 117, Enim, que fundou Kidon e o guiava, morreu de velhice aos 46 anos. Foi quem levou os seus a fundar Kidon. Um inverno duro matou duas pessoas de frio.
 
 ### Ano 118
 
-No outono, a tempestade trouxe raios para o morro. Um deles acertou Enya. Em Teor, disseram que era castigo. Teor passou a acreditar que o Que Leva castiga quem duvida, e que Enya tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Teor sai de casa. Lembram de Enya.
+Na primavera do ano 118, morreu Esdemik, que falava pelo Olho Escuro em Teil, aos 62 anos. Sem lugar e sem comida, Tedemik e os seus atravessaram a borda do mundo. Ninguém soube deles. Doibela implorou pelo filho. Tenim morreu, e daquele dia em diante Doibela cuspia no chão quando falavam do Que Leva. Foram 12 dias de fome em Wanum, com um morto.
 
-*No ano 119, nada de notável aconteceu.*
+### Ano 119
+
+Na primavera, Demim partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Teya, que guiava Wanum, não resistiu à fome. Depois da seca, Wanum jurou nunca desperdiçar água. As preces de Kidon ficaram pequenas: pedia-se à Voz do Céu até sol para a pesca e sorte na caça. No inverno, Doibela, que guiava Wanum, não resistiu à fome. Nunca perdoou o deus pela morte de Tenim.
 
 ### Ano 120
 
-Um raio caiu no morro durante a tempestade e matou Faia. Em Teor, disseram que era castigo. Foram 9 dias de fome no inverno em Teor, com quatro mortos. Nos anos 111 a 120 houve duas secas, duas fomes, treze preces que pareceram atendidas e quatro preces sem resposta; nasceram 120 crianças e morreram 141 pessoas. No fim do ano 120, 188 pessoas viviam no mundo: Teil (87), Teur (44), Wanum (17) e Teor (40).
+Na primavera, em Wanum, já ninguém sabia trabalhar o metal. O que fora feito começou a ruir. Os últimos de Wanum, Wamar e Isan, juntaram-se a Teil. Wanum deixou de existir. Teil passou fome no inverno por 9 dias, e vinte pessoas morreram. No verão, Linem, o pacífico, cansou de dividir pouca comida. Partiu com onze pessoas para a praia e ali fundou Sues. No outono, em Sues, Tetorena tomou para si o cuidado das preces à Voz do Céu. Nos anos 111 a 120 houve duas secas, 25 fomes, 43 preces que pareceram atendidas e nove preces sem resposta; nasceram 124 crianças e morreram 182 pessoas. No fim do ano 120, 145 pessoas viviam no mundo: Teil (60), Teur (52), Kidon (21) e Sues (12).
 
 ### Ano 121
 
-Kiteya, a corajosa, inventou marcas que guardavam palavras. Um raio caiu na floresta durante a tempestade e matou Ibdemya. Ibdemya era das que mais rezavam, e Teur ficou sem entender. Para os mais fiéis de Teur, Ibdemya não foi castigada, mas escolhida. Desde a morte de Ibdemya, ninguém em Teur entra na floresta em dia de tempestade.
+Na primavera do ano 121, morreu Kiem, que guiava Kidon, aos 58 anos. Foram 9 dias de fome no inverno em Teil, com nove mortos. No verão, em nome da Sombra, Demim proibiu casamentos e trocas com Sues. Era vontade de Demim, não do deus. A seca voltou, como no ano 77: 20 dias sem chuva, até que o céu se abriu. Linem tinha rezado: «Manda água, Voz do Céu, que as crianças têm sede.» Quando a chuva voltou, Sues agradeceu à Voz do Céu. O deus não tinha feito nada.
 
 ### Ano 122
 
-Ruesa tinha rezado: «Sombra, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que a Sombra tinha ouvido. O deus nada fez: o crédito era de graça.
+Na primavera do ano 122, com Estorik à frente, Teur largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Niu, a rancorosa, inventou marcas que guardavam palavras. No inverno, Linem, que guiava Sues, teve uma filha: Ese.
 
 ### Ano 123
 
-Na primavera, Ibar partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A fome durou 20 dias em Teor e levou nove vidas.
+No outono do ano 123, Yoraena deu à luz gêmeos, Tena e Kiar. Uns viram bênção; outros, mau sinal.
 
 ### Ano 124
 
-Em Teil, Torkiya começou a pregar que o deus não era «o Que Apaga o Sol». Era «a Mãe da Fartura». Em poucos anos, todos rezavam assim. A seca voltou, como no ano 101: 25 dias sem chuva, até que o céu se abriu. Depois da seca, Teor jurou nunca desperdiçar água. Kiem, que falava pela Mãe da Fartura em Teil, morreu de fome. Desde a morte de Tordema, nunca mais tinha rezado.
+Teur passou a festejar todo ano o dia da volta da chuva, em honra da Sombra.
 
 ### Ano 125
 
-Morreu Ruesa, que falava pela Sombra em Teur, aos 62 anos. Esibena rezou por Esnara até a voz acabar. Esnara morreu mesmo assim, e Esibena nunca mais rezou. Uma febre correu Teil e levou onze vidas. Teil rezou e não foi ouvido. Os mais firmes disseram que a Mãe da Fartura os estava testando, e se orgulharam de aguentar. Foram 17 dias de fome por causa da seca em Teil, com doze mortos.
+Na primavera do ano 125, morreu Suenim, que guiava Teil, aos 54 anos. No inverno, Niem, o curioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 126
 
-No outono, Teil passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Teil, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Niu disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Que Nega». Sues acreditou, e o deus mudou de nome. Esia partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Houve luta na praia: Teur atacou Sues em nome da Sombra. Sues expulsou os atacantes. Na luta morreram Nimaem e Linu. Desde então, os de Sues chamam o lugar de Praia da Vitória; os de Teur, de Praia do Luto. Depois da derrota, os jovens de Teur passaram a treinar com lanças.
 
 ### Ano 127
 
-Na primavera, com Nuela à frente, Wanum largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Ena deu à luz gêmeos, Teik e Demem. Uns viram bênção; outros, mau sinal. No outono, Teur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Teur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+Na primavera do ano 127, com Linem à frente, a nova geração de Sues abandonou o medo das tempestades, costume herdado dos avós. Em nome da Sombra, Demim proibiu casamentos e trocas com Kidon. Era vontade de Demim, não do deus.
 
 ### Ano 128
 
-Na primavera do ano 128, morreu Suenim, que guiava Teil, aos 57 anos. Isem, que falava pela Sombra em Teur, morreu dormindo, aos 60 anos. No outono, Demsuar implorou pela filha. Nana morreu, e daquele dia em diante Demsuar cuspia no chão quando falavam da Mãe da Fartura. No inverno, Tetear, o ambicioso, aprendeu a levar a água por canais e a fazer o vento moer o grão.
+No verão do ano 128, Dokira, de Sues, casou-se com Naenik e foi viver em Kidon. Foi o primeiro laço entre os dois povos.
 
-*O ano 129 foi calmo.*
+### Ano 129
+
+Na primavera do ano 129, morreu Torisar, o corajoso, aos 62 anos. Em Teur, Tedemar começou a pregar que o deus não era «a Sombra». Era «o Que Levanta». Em poucos anos, todos rezavam assim. Com Linem à frente, a nova geração de Sues abandonou o costume de queimar os mortos, costume herdado dos avós.
 
 ### Ano 130
 
-Na primavera do ano 130, Bem, que falava pelo Que Leva em Teor, morreu dormindo, aos 47 anos. Nos anos 121 a 130 houve duas secas, quatro fomes, dezoito preces que pareceram atendidas e nove preces sem resposta; nasceram 132 crianças e morreram 81 pessoas. No fim do ano 130, 238 pessoas viviam no mundo: Teil (93), Teur (72), Wanum (22) e Teor (51).
+Nos anos 121 a 130 houve três secas, oito fomes, 27 preces que pareceram atendidas e cinco preces sem resposta; nasceram 138 crianças e morreram 70 pessoas. No fim do ano 130, 209 pessoas viviam no mundo: Teil (93), Teur (61), Kidon (37) e Sues (18).
 
-*O ano 131 foi calmo.*
+### Ano 131
+
+No outono do ano 131, Sues passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Sues, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No inverno, em Teil, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Teil passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 132
 
-Na primavera do ano 132, Dema disse ter ouvido o deus de outro jeito: não era «o Que Apaga o Sol», era «a Mãe de Dois». Wanum acreditou, e o deus mudou de nome. Beim tinha rezado: «Que Leva, dá-nos o que comer.» A comida voltou, e Teor deu graças ao Que Leva. Foi só o tempo, mas quem iria dizer? Os escribas de Teor registraram o milagre. Teur cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Sombra.
+Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Para Teil, o deus já não era «o Olho Escuro»: passou a ser «a Sombra». Temaem, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão. Em Teil, cansados do silêncio, acusaram Nanana de mentir em nome da Sombra. Nanana perdeu o lugar junto ao altar. Uma tosse que não passava matou 32 pessoas em Teil.
 
 ### Ano 133
 
-A seca voltou, como no ano 124: 24 dias sem chuva, até que o céu se abriu. Wanum passou a festejar todo ano o dia da volta da chuva, em honra da Mãe de Dois.
+Na primavera, Nanana, a devota, morreu dormindo, aos 60 anos. Em Teur, Nitorya pediu: «Que Levanta, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que o Que Levanta tinha ouvido. O deus nada fez: o crédito era de graça. Nas tabuletas de Teur, ficou escrito que foi o Que Levanta.
 
 ### Ano 134
 
-A fome por causa da seca durou 24 dias em Teil e levou 30 vidas. Teor passou fome por causa da seca por 27 dias, e 36 pessoas morreram.
+A fome no inverno durou 9 dias em Kidon e levou uma vida. A fome ensinou: desde então, Kidon estoca comida e não come tudo o que colhe.
 
 ### Ano 135
 
-Morreu Niya, a desconfiada, aos 60 anos. Beim anunciou que o Que Leva proibia qualquer trato com Wanum. O deus nunca disse isso, mas Teor obedeceu. No inverno, Teil cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Mãe da Fartura.
+Na primavera, Niesem, que falava pela Sombra em Teil, morreu de repente, aos 41 anos. De novo a chuva sumiu, como no ano 121. Foram 24 dias de seca. Depois da seca, Kidon jurou nunca desperdiçar água.
 
-*No ano 136, nada de notável aconteceu.*
+### Ano 136
+
+Kidon escolheu Dokira para guiar o grupo. Kiur queria o lugar e nunca perdoou. Em nome da Voz do Céu, Demenem proibiu casamentos e trocas com Sues. Era vontade de Demenem, não do deus. Kidon passou fome por causa da seca por 24 dias, e quinze pessoas morreram. No outono, com canais e moinhos, Teur já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Em nome da Voz do Céu, Demenem proibiu casamentos e trocas com Teur. Era vontade de Demenem, não do deus.
 
 ### Ano 137
 
-Na primavera do ano 137, Torkiya, que falava pela Mãe da Fartura em Teil, morreu de velhice aos 61 anos.
+Tornim, o rancoroso, aprendeu a levar a água por canais e a fazer o vento moer o grão.
 
 *No ano 138, nada de notável aconteceu.*
 
 ### Ano 139
 
-Tefael, o engenhoso, desenhou o primeiro canal e a primeira roda d'água.
+Na primavera do ano 139, Zeik, de Teur, tomou por esposa Buze, de Sues, e os dois povos passaram a se visitar. No outono, Niu, a rancorosa, deu à luz e não sobreviveu ao parto. Matoria deu à luz gêmeos, Kisuim e Doya. Uns viram bênção; outros, mau sinal. Os de Kidon caíram sobre Teur na floresta em nome da Voz do Céu. Kidon venceu e levou a comida guardada. Na luta morreu Buze.
 
 ### Ano 140
 
-Na primavera do ano 140, Esesya deu à luz gêmeos, Naibem e Suar. Uns viram bênção; outros, mau sinal. Teor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Leva. Nos anos 131 a 140 houve sete fomes, dezesseis preces que pareceram atendidas e quatro preces sem resposta; nasceram 147 crianças e morreram 123 pessoas. No fim do ano 140, 263 pessoas viviam no mundo: Teil (110), Teur (88), Wanum (28) e Teor (37).
+Nos anos 131 a 140 houve duas secas, duas fomes, vinte preces que pareceram atendidas e onze preces sem resposta; nasceram 132 crianças e morreram 123 pessoas. No fim do ano 140, 219 pessoas viviam no mundo: Teil (83), Teur (72), Kidon (51) e Sues (13).
 
 ### Ano 141
 
-Beim, que falava pelo Que Leva em Teor, morreu dormindo, aos 50 anos. Foi quem proibiu, em nome do deus, o trato com Wanum. Os de Teur caíram sobre Wanum na praia. Wanum foi derrotado e perdeu o que tinha guardado. Isik e Donia morreram na luta. Começou a Guerra do Morro: o rancor entre Teur e Teor virou guerra. Teur e Teor, cansados de enterrar os seus, fizeram as pazes no morro. Depois de duas batalhas e quatro mortos, a Guerra do Morro terminou em paz.
+Houve luta na praia: Kidon atacou Sues. Sues expulsou os atacantes. You e Dokira morreram na luta. Começou a Guerra Santa da Praia: em nome da Voz do Céu, Kidon pegou em lanças contra Sues. A Guerra Santa da Praia seguiu: Kidon contra Sues, na praia. Kidon venceu e levou a comida guardada. Enena, Gagaya, Monik e Raesik morreram na luta. Kidon e Sues, cansados de enterrar os seus, fizeram as pazes na praia. A Guerra Santa da Praia acabou em trégua, depois de duas batalhas e seis mortos.
 
-### Ano 142
-
-Na primavera do ano 142, Runuan, o generoso, morreu de velhice aos 60 anos. Nafaem, que guiava Teor, morreu dormindo, aos 59 anos. Em Teur, Zear pediu: «Sombra, dá-nos o que comer.» A fome passou, e Teur viu nisso obra da Sombra. A crônica sabe que foi acaso. Nas tabuletas de Teur, ficou escrito que foi a Sombra. Uma tosse que não passava matou três pessoas em Teil.
+*O ano 142 passou sem nada que a crônica precise guardar.*
 
 ### Ano 143
 
-Na primavera do ano 143, começou a Guerra da Fome: Teur, com fome, foi buscar à força a comida de Wanum. Na Guerra da Fome, Teur atacou Wanum na praia. Wanum expulsou os atacantes. Esruem, Ibim, Niesa e Ruesem morreram na luta. Teur e Wanum, cansados de enterrar os seus, fizeram as pazes na praia. Depois de dois anos, duas batalhas e seis mortos, a Guerra da Fome terminou em paz. Teruar rezou por Teim até a voz acabar. Teim morreu mesmo assim, e Teruar nunca mais rezou.
+Na primavera do ano 143, Kiur implorou pela filha. Dora morreu, e daquele dia em diante Kiur cuspia no chão quando falavam da Voz do Céu. No verão, Linim, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Demenem anunciou que a Voz do Céu proibia qualquer trato com Teur. O deus nunca disse isso, mas Kidon obedeceu. No inverno, Kiur, que guiava Kidon, não resistiu à fome. Desde a morte de Dora, nunca mais tinha rezado. Kidon acabou: Enya, a última, foi viver em Teil.
 
 ### Ano 144
 
-Sem lugar e sem comida, Kisuim e os seus atravessaram a borda do mundo. Ninguém soube deles. O inverno foi de gelo: quatro pessoas morreram de frio.
+Na primavera, Iszeya, que guiava Teur, morreu dormindo, aos 51 anos. Em Teur, Nitorya pediu: «Que Levanta, dá-nos o que comer.» A comida voltou, e Teur deu graças ao Que Levanta. O deus não tinha feito nada. Nas tabuletas de Teur, ficou escrito que foi o Que Levanta. Teil passou fome no inverno por 9 dias, e treze pessoas morreram. Teil encontrou as ruínas de Kidon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. O inverno foi de gelo: oito pessoas morreram de frio.
 
-### Ano 145
-
-Tordemik implorou pela filha. Dema morreu, e daquele dia em diante Tordemik cuspia no chão quando falavam da Mãe da Fartura. Teil passou fome no inverno por 12 dias, e uma pessoa morreu.
+*No ano 145, nada de notável aconteceu.*
 
 ### Ano 146
 
-Houve luta no morro: Wanum atacou Teor em nome da Mãe de Dois. Teor resistiu, e Wanum voltou de mãos vazias. Na luta morreram Doruik, Waniar e Naim. No outono, Teur atacou Teor no morro. Teor foi derrotado e perdeu o que tinha guardado. Nienia, Nimana e Ibsuya morreram na luta. Depois de tantos mortos, Teur e Teor se encontraram no morro e juraram paz.
+Na primavera, morreu Kitear, aos 48 anos. Nunca perdoou o deus pela morte de Torteim. Com canais e moinhos, Teil já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 147
 
-Uma tosse que não passava matou seis pessoas em Teil. Começou a Guerra Santa do Morro: em nome da Mãe de Dois, Wanum pegou em lanças contra Teor. Na Guerra Santa do Morro, Wanum atacou Teor no morro em nome da Mãe de Dois. Teor expulsou os atacantes. Nudemia e Rura morreram na luta. Nuela, que guiava Wanum, morreu de fome. Wanum escolheu Doisa para guiar o grupo. Nuia queria o lugar e nunca perdoou.
+Tormana, a curiosa, cansou de dividir pouca comida. Partiu com 25 pessoas para o morro e ali fundou Jurur. Para Jurur, as pedras de Teor só podiam ter sido postas por gigantes. Em Jurur, Tornana tomou para si o cuidado das preces à Sombra. Em Jurur nasceu a primeira criança: Enena, filha de Teya e Kisuem. Para Jurur, as pedras de Wanum só podiam ter sido postas por gigantes.
 
 ### Ano 148
 
-Enik, que falava pela Mãe da Fartura em Teil, morreu de velhice aos 62 anos. Nunca perdoou o deus pela morte de Nademya. Sem lugar e sem comida, Torim e os seus atravessaram a borda do mundo. Ninguém soube deles. Ibesa partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Teruar, que guiava Teur, morreu de frio. Desde a morte de Teim, nunca mais tinha rezado. No inverno, a Guerra Santa do Morro seguiu: Wanum contra Teor, no morro em nome da Mãe de Dois. Teor foi derrotado e perdeu o que tinha guardado. Ninaik, Natena e Wana morreram na luta.
+Com Linem à frente, a nova geração de Sues abandonou a festa da chuva, costume herdado dos avós. Morreu o último que tinha visto o ano 93. Em Jurur, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. Depois disso, Jurur deixou de chamar o deus de «a Sombra» e passou a chamá-la de «a Estrela de Cauda». No verão, Iba, de Jurur, casou-se com Zear e foi viver em Teur. Foi o primeiro laço entre os dois povos.
 
-*O ano 149 passou sem nada que a crônica precise guardar.*
+### Ano 149
+
+No verão, em nome do Que Levanta, Demim proibiu casamentos e trocas com Sues. Era vontade de Demim, não do deus. No inverno, em nome do Que Levanta, Demim proibiu casamentos e trocas com Teil. Era vontade de Demim, não do deus. Teur atacou Sues na praia. Sues foi derrotado e perdeu o que tinha guardado. Rakiena, Gaem e Sur morreram na luta. Depois da derrota, Sues não existia mais: os cinco que sobraram foram levados para Teur.
 
 ### Ano 150
 
-Na primavera do ano 150, na Guerra Santa do Morro, Wanum atacou Teor no morro em nome da Mãe de Dois. Teor expulsou os atacantes. Doisa, Runik, Ibteik e Naloik morreram na luta. No verão, a febre levou Demsuar, que guiava Teil. Desde a morte de Nana, nunca mais tinha rezado. Nos anos 141 a 150 houve 22 fomes, onze batalhas, 50 preces que pareceram atendidas e 24 preces sem resposta; nasceram 133 crianças e morreram 121 pessoas. No fim do ano 150, 263 pessoas viviam no mundo: Teil (105), Teur (86), Wanum (32) e Teor (40).
+Morreu Linem, o pacífico, aos 51 anos. Tinha fundado Sues. A tempestade trouxe raios para o morro. Um deles acertou Suenya. Suenya era das que mais rezavam, e Jurur ficou sem entender. Os devotos de Jurur não viram castigo: para eles, a Estrela de Cauda chamou Suenya para perto. Nasceu ali a lembrança de Suenya como santa. Nasceu ali um costume: quando o céu escurece, ninguém em Jurur sai de casa. Lembram de Suenya. Desde aquele dia, Jurur chama o morro de Morro do Raio. Nos anos 141 a 150 houve duas secas, nove fomes, três batalhas, 21 preces que pareceram atendidas e seis preces sem resposta; nasceram 70 crianças e morreram 110 pessoas. No fim do ano 150, 179 pessoas viviam no mundo: Teil (65), Teur (86) e Jurur (28).
 
 ### Ano 151
 
-Na primavera, Faem partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Ennana tinha rezado: «Que Leva, não deixes nossos filhos morrerem de fome.» A fome passou, e Teor viu nisso obra do Que Leva. O deus nada fez: o crédito era de graça. Nas tabuletas de Teor, ficou escrito que foi o Que Leva. A fome no inverno durou 14 dias em Teil e levou duas vidas.
+Houve luta no morro: Teur atacou Jurur. Jurur foi derrotado e perdeu o que tinha guardado. Dema, Teya e Tem morreram na luta. Depois da derrota, os jovens de Jurur passaram a treinar com lanças. Depois de tantos mortos, Teur e Jurur se encontraram no morro e juraram paz. Houve luta no lago: Teur atacou Teil. Teur venceu e levou a comida guardada. Na luta morreram Kiar, Naik e Ibdema. Teur passou fome no inverno por 14 dias, e quatro pessoas morreram.
 
 ### Ano 152
 
-Kiteya, que falava pela Mãe da Fartura em Teil, morreu de velhice aos 67 anos. No inverno, a Guerra Santa do Morro seguiu: Wanum contra Teor, no morro em nome da Mãe de Dois. Wanum venceu e levou a comida guardada. Nael, Ennana e Mana morreram na luta. Depois de tantos mortos, Wanum e Teor se encontraram no morro e juraram paz. A Guerra Santa do Morro acabou em trégua, depois de seis anos, oito batalhas e vinte mortos. Zear, o ambicioso, não resistiu à fome.
+No inverno do ano 152, Demim anunciou que o Que Levanta proibia qualquer trato com Jurur. O deus nunca disse isso, mas Teur obedeceu. De novo a chuva sumiu, como no ano 135. Foram 26 dias de seca. Depois da seca, Teur jurou nunca desperdiçar água. Em Jurur, Sukiar pediu: «Estrela de Cauda, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Jurur duvidou de que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça.
 
 ### Ano 153
 
-Demnaim partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 9 dias em Teil e levou oito vidas. No outono, Ninira deu à luz gêmeos, Nizeik e Ruesia. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 153, Demim anunciou que o Que Levanta proibia qualquer trato com Teil. O deus nunca disse isso, mas Teur obedeceu. A fome por causa da seca durou 32 dias em Teur e levou dezoito vidas. Kisuik, o curioso, inventou marcas que guardavam palavras. Um inverno duro matou quinze pessoas de frio. A rixa entre Nizeia e Nitorya rachou Teur. Nizeia partiu com os seus, treze pessoas, e fundou Ibon na praia.
 
-*O ano 154 passou sem nada que a crônica precise guardar.*
+### Ano 154
+
+Morreu o último que tinha visto o ano 84. Em Ibon, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em nome do Que Levanta, Demim proibiu casamentos e trocas com Ibon. Era vontade de Demim, não do deus. Para Ibon, as pedras de Wanum só podiam ter sido postas por gigantes. Nas ruínas de Wanum, Nizeia achou o que eles sabiam: aprendeu a cortar pedra. Nizeia passou dias nas ruínas de Sues e voltou sabendo cortar pedra.
 
 ### Ano 155
 
-Na primavera do ano 155, Nuia, que guiava Wanum, morreu de velhice aos 47 anos.
+Na primavera do ano 155, houve luta na praia: Teur atacou Ibon em nome do Que Levanta. Teur venceu e levou a comida guardada. Na luta morreu Torisem. Tenar, de Teil, tomou por esposa Zeya, de Ibon, e os dois povos passaram a se visitar. No verão, em Ibon, Nirura tomou para si o cuidado das preces ao Que Levanta. Começou a Guerra Santa da Floresta: em nome do Que Levanta, Teur pegou em lanças contra Ibon. No outono, nas ruínas de Sues, Zedemem achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 156
 
-Em Teor, quem vinha de fora era recebido com comida e lugar perto do fogo.
+Sura morreu com 3 anos, de uma febre que ninguém entendeu. Em Ibon, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Ibon nasceu a primeira criança: Zeon, filho de Ruia e Isem. Zedemem passou dias nas ruínas de Sues e voltou sabendo trabalhar o metal.
 
 ### Ano 157
 
-Na primavera, Suna, que guiava Teor, morreu de velhice aos 72 anos. O inverno foi de gelo: treze pessoas morreram de frio.
+Na primavera, Enem, que guiava Teil, morreu dormindo, aos 62 anos.
 
-*O ano 158 foi calmo.*
+### Ano 158
+
+Na primavera, Tedemar, o medroso, morreu dormindo, aos 50 anos. Nizeia, que fundou Ibon e o guiava, morreu de velhice aos 62 anos. Foi quem levou os seus a fundar Ibon. Em Jurur, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Teur atacou Jurur no morro em nome do Que Levanta. Jurur foi derrotado e perdeu o que tinha guardado. Na luta morreu Tornana. Depois de tantos mortos, Teur e Teil se encontraram no lago e juraram paz.
 
 ### Ano 159
 
-Madoia deu à luz gêmeos, Nunia e Rura. Uns viram bênção; outros, mau sinal. De novo a chuva sumiu, como no ano 133. Foram 21 dias de seca.
+Zedemem anunciou que o Que Levanta proibia qualquer trato com Teur. O deus nunca disse isso, mas Ibon obedeceu. Na Guerra Santa da Floresta, Ibon atacou Teur na floresta em nome do Que Levanta. Teur expulsou os atacantes. Na luta morreram Ibibem e Esar. Para Ibon, a floresta virou Floresta do Luto. Nisuna deu à luz gêmeos, Suibem e Enenor. Uns viram bênção; outros, mau sinal.
 
 ### Ano 160
 
-Demim, que falava pela Mãe da Fartura em Teil, morreu dormindo, aos 58 anos. Nunca perdoou o deus pela morte de Ibdemik. Em Teor, Lonael pediu: «Que Leva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças ao Que Leva. A crônica sabe que foi acaso. Nas tabuletas de Teor, ficou escrito que foi o Que Leva. Foram 9 dias de fome no inverno em Teil, com 30 mortos. Teur passou fome no inverno por 9 dias, e cinco pessoas morreram. Nos anos 151 a 160 houve três secas, dezessete fomes, duas batalhas, 30 preces que pareceram atendidas e seis preces sem resposta; nasceram 137 crianças e morreram 184 pessoas. No fim do ano 160, 212 pessoas viviam no mundo: Teil (74), Teur (69), Wanum (31) e Teor (38).
+Morreu Tormana, que fundou Jurur e o guiava, aos 50 anos. Tinha fundado Jurur. Jurur escolheu Kiteim para guiar o grupo. Torteik queria o lugar e nunca perdoou. Nos anos 151 a 160 houve duas secas, seis fomes, nove batalhas, 28 preces que pareceram atendidas e quinze preces sem resposta; nasceram 144 crianças e morreram 82 pessoas. No fim do ano 160, 242 pessoas viviam no mundo: Teil (107), Teur (88), Jurur (41) e Ibon (6).
 
 ### Ano 161
 
-Rumana, a medrosa, inventou marcas que guardavam palavras. Rumana, a medrosa, morreu de fome.
+Nadema tinha rezado: «Sombra, dá-nos o que comer.» A comida voltou, e Teil deu graças à Sombra. O deus nada fez: o crédito era de graça. Os escribas de Teil registraram o milagre. Nas ruínas de Sues, Tetem achou o que eles sabiam: aprendeu a trabalhar o metal.
 
 ### Ano 162
 
-A fome por causa da seca durou 23 dias em Wanum e levou dezesseis vidas.
+Tornim, o rancoroso, morreu de velhice aos 58 anos. Isem, de Ibon, tomou por esposa Tora, de Jurur, e os dois povos passaram a se visitar. Suem implorou pelo filho. Kinar morreu, e daquele dia em diante Suem cuspia no chão quando falavam da Sombra. A Guerra Santa da Floresta esfriou sem acordo nem vencedor: sete anos, cinco batalhas e seis mortos, e ninguém sabia mais por que lutava. Teur saiu dela mais forte.
 
-*Do ano 163 ao 164, a vida seguiu sem grandes acontecimentos.*
+### Ano 163
+
+Teil passou fome no inverno por 6 dias, e uma pessoa morreu. Zedemem passou dias nas ruínas de Sues e voltou sabendo trabalhar o metal. A seca voltou, como no ano 152: 24 dias sem chuva, até que o céu se abriu. Em Ibon, Esa pediu: «Que Levanta, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Ibon duvidou de que o Que Levanta tinha ouvido. A crônica sabe que foi acaso. Apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu.
+
+### Ano 164
+
+Na primavera, Demtorem, que guiava Teil, morreu de velhice aos 71 anos. Nadema, que falava pela Sombra em Teil, morreu de fome. A fome por causa da seca durou 20 dias em Jurur e levou quatro vidas. Um inverno duro matou onze pessoas de frio.
 
 ### Ano 165
 
-Na primavera do ano 165, Waia, que guiava Wanum, morreu dormindo, aos 50 anos. Morreu o último que tinha visto o ano 112. Em Wanum, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Ruisik implorou pelo filho. Teim morreu, e daquele dia em diante Ruisik cuspia no chão quando falavam da Sombra. A doença entrou em Teur e matou três pessoas.
+Em nome do Que Levanta, Demim proibiu casamentos e trocas com Ibon. Era vontade de Demim, não do deus. Nitorya, que guiava Teur, não resistiu à fome. Depois de tanta briga pelo comando, Teur passou a ser guiado por um conselho dos mais velhos.
 
 ### Ano 166
 
-Uma tosse que não passava matou quatro pessoas em Teur.
+Na primavera do ano 166, Tetem, que guiava Ibon, morreu de velhice aos 70 anos. Morreu o último que tinha visto o ano 124. Em Ibon, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Foram 9 dias de fome no inverno em Teur, com oito mortos. No verão, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. No inverno, nas ruínas de Sues, Esa achou o que eles sabiam: aprendeu a trabalhar o metal.
 
-*No ano 167, nada de notável aconteceu.*
+### Ano 167
+
+Na primavera, Esa passou dias nas ruínas de Sues e voltou sabendo trabalhar o metal. No verão, houve luta na praia: Teur atacou Ibon. Ibon foi derrotado e perdeu o que tinha guardado. Na luta morreram Ibruem e Esa. Para Ibon, a praia virou Praia do Luto. Depois de tantos mortos, Teur e Ibon se encontraram na praia e juraram paz.
 
 ### Ano 168
 
-No inverno, Wadoela, a pacífica, inventou marcas que guardavam palavras.
+Isem disse ter ouvido o deus de outro jeito: não era «o Que Levanta», era «o Pai das Águas». Ibon acreditou, e o deus mudou de nome.
 
 ### Ano 169
 
-Esem tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teur deu graças à Sombra. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teur, ficou escrito que foi a Sombra. A seca voltou, como no ano 159: 20 dias sem chuva, até que o céu se abriu. Esem, que guiava Teur, não resistiu à fome. Teur escolheu Maem para guiar o grupo. Mar queria o lugar e nunca perdoou.
+Na primavera, sem lugar e sem comida, Torem e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, Teim passou dias nas ruínas de Sues e voltou sabendo trabalhar o metal. Tena implorou pelo filho. Enim morreu, e daquele dia em diante Tena cuspia no chão quando falavam da Sombra.
 
 ### Ano 170
 
-Foram 9 dias de fome no inverno em Teil, com dois mortos. Teur passou fome no inverno por 9 dias, e catorze pessoas morreram. No verão, Mar anunciou que a Sombra proibia qualquer trato com Wanum. O deus nunca disse isso, mas Teur obedeceu. Lora deu à luz gêmeos, Demibya e Isniar. Uns viram bênção; outros, mau sinal. Nos anos 161 a 170 houve duas secas, catorze fomes, 28 preces que pareceram atendidas e quatro preces sem resposta; nasceram 153 crianças e morreram 144 pessoas. No fim do ano 170, 223 pessoas viviam no mundo: Teil (92), Teur (64), Wanum (33) e Teor (34).
+No verão do ano 170, Ibon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No inverno, nas ruínas de Sues, Zedemem achou o que eles sabiam: aprendeu a ler as marcas antigas. Nos anos 161 a 170 houve duas secas, dezesseis fomes, 30 preces que pareceram atendidas e sete preces sem resposta; nasceram 109 crianças e morreram 114 pessoas. No fim do ano 170, 232 pessoas viviam no mundo: Teil (92), Teur (84), Jurur (43) e Ibon (13).
 
 ### Ano 171
 
-Na primavera, Madoia, a corajosa, morreu de velhice aos 46 anos. Na guerra, tinha tirado duas vidas. Em Teil, Esya começou a pregar que o deus não era «a Mãe da Fartura». Era «a Luz Que Avisa». Em poucos anos, todos rezavam assim.
+Demim anunciou que o Que Levanta proibia qualquer trato com Ibon. O deus nunca disse isso, mas Teur obedeceu. No verão, Ibia rezou por Tormar até a voz acabar. Tormar morreu mesmo assim, e Ibia nunca mais rezou.
 
 ### Ano 172
 
-Na primavera, Faik disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «o Que Risca o Céu». Teor acreditou, e o deus mudou de nome. Com Maem à frente, Teur largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. No inverno, os de Teur caíram sobre Wanum na praia em nome da Sombra. Teur venceu e levou a comida guardada. Na luta morreram Wadoela e Maem. Começou a Segunda Guerra Santa: em nome da Sombra, Teur pegou em lanças contra Wanum. Na Segunda Guerra Santa, Wanum atacou Teur na floresta em nome da Mãe de Dois. Wanum venceu e levou a comida guardada. Tezear e Ibela morreram na luta.
+Tena tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A fome passou, e Teil viu nisso obra da Sombra. A crônica sabe que foi acaso. Os escribas de Teil registraram o milagre. Nas ruínas de Sues, Zedemem achou o que eles sabiam: aprendeu a ler as marcas antigas. A guerra entre Teur e Ibon continuou: Teur voltou a atacar na praia em nome do Que Levanta. Teur venceu e levou a comida guardada. Na luta morreu Yoiba. Tekim, que falava pela Estrela de Cauda em Jurur, morreu de fome.
 
 ### Ano 173
 
-Morreu Torena, que falava pela Luz Que Avisa em Teil, aos 58 anos. A Segunda Guerra Santa seguiu: Wanum contra Teur, na floresta em nome da Mãe de Dois. Teur expulsou os atacantes. Nuar, Dodona e Demdeman morreram na luta. Começou a Terceira Guerra Santa: em nome da Mãe de Dois, Wanum pegou em lanças contra Teor. Depois de tantos mortos, Wanum e Teor se encontraram no morro e juraram paz. Depois de duas batalhas e seis mortos, a Terceira Guerra Santa terminou em paz. Wanum saiu dela mais forte.
+Na primavera, Nana partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Depois disso, Jurur deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Apaga o Sol». A fome durou 23 dias em Jurur e levou vinte vidas. Começou a Segunda Guerra Santa: em nome do Que Levanta, Teur pegou em lanças contra Ibon. Na Segunda Guerra Santa, Teur atacou Ibon na praia em nome do Que Levanta. Ibon foi derrotado e perdeu o que tinha guardado. Zedemem, Tora e Ibtorem morreram na luta.
 
 ### Ano 174
 
-Doar, o pacífico, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. A Segunda Guerra Santa seguiu: Teur contra Wanum, na praia em nome da Sombra. Wanum resistiu, e Teur voltou de mãos vazias. Demzena, Kisura e Teibim morreram na luta. Depois de tantos mortos, Teur e Wanum se encontraram na praia e juraram paz. Depois de dois anos, quatro batalhas e dez mortos, a Segunda Guerra Santa terminou em paz. Wanum passou fome por causa da seca por 26 dias, e treze pessoas morreram.
+Tena, que falava pela Sombra em Teil, morreu de repente, aos 41 anos. Nunca perdoou o deus pela morte de Enim. Em Ibon, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Demena anunciou que a Sombra proibia qualquer trato com Ibon. O deus nunca disse isso, mas Teil obedeceu. Ibon acabou: Esruia, Bunira e Buia foram viver em Teil. A Segunda Guerra Santa acabou porque um dos lados deixou de existir: dois anos, quatro batalhas e sete mortos.
 
 ### Ano 175
 
-Teor passou a receber bem os de fora: um casamento com outro povo virava festa.
+Toresim, que guiava Teur, morreu dormindo, aos 47 anos. Teur passou fome no inverno por 9 dias, e dezesseis pessoas morreram. O inverno foi de gelo: quatro pessoas morreram de frio.
 
 ### Ano 176
 
-Demya, a generosa, morreu dormindo, aos 51 anos. Sunina partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Um inverno duro matou seis pessoas de frio.
+No inverno do ano 176, Demnik, o ambicioso, inventou marcas que guardavam palavras.
 
 ### Ano 177
 
-Na primavera, Zeim, o generoso, morreu de velhice aos 59 anos. Na guerra, tinha tirado duas vidas. Morreu Demniar, o generoso, aos 53 anos. Na guerra, tinha tirado duas vidas. No verão, Wateik implorou pela filha. Ruia morreu, e daquele dia em diante Wateik cuspia no chão quando falavam da Mãe de Dois.
+Demena, que falava pela Sombra em Teil, morreu de repente, aos 41 anos. Foi quem proibiu, em nome do deus, o trato com Ibon.
 
-*O ano 178 foi calmo.*
+### Ano 178
+
+Demem não podia mais viver perto de Runa. Saiu de Teur com dezoito pessoas e fundou Demon na praia. Em Demon nasceu a primeira criança: Juna, filha de Ruya e Maesem. Em Demon, Esisa tomou para si o cuidado das preces ao Que Levanta. Demon encontrou as ruínas de Teor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, Demim anunciou que o Que Levanta proibia qualquer trato com Demon. O deus nunca disse isso, mas Teur obedeceu.
 
 ### Ano 179
 
-No verão, a febre levou Sura, que falava pela Luz Que Avisa em Teil. Wanum passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Wanum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+A doença entrou em Teil e matou três pessoas. Demon encontrou as ruínas de Ibon. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 180
 
-Na primavera, Mar, que falava pela Sombra em Teur, morreu de velhice aos 64 anos. Foi quem proibiu, em nome do deus, o trato com Wanum. Wateik disse ter ouvido o deus de outro jeito: não era «a Mãe de Dois», era «o Que Sacode». Wanum acreditou, e o deus mudou de nome. De novo a chuva sumiu, como no ano 169. Foram 20 dias de seca. Em Wanum, Wateik pediu: «Que Sacode, que a chuva volte.» Quando a chuva voltou, Wanum agradeceu ao Que Sacode. A crônica sabe que foi acaso. Nas tabuletas de Wanum, ficou escrito que foi o Que Sacode. Nos anos 171 a 180 houve quatro secas, doze fomes, seis batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 131 crianças e morreram 116 pessoas. No fim do ano 180, 233 pessoas viviam no mundo: Teil (86), Teur (74), Wanum (28) e Teor (45).
+Na primavera do ano 180, tantas preces atendidas fizeram Jurur confiar no céu mais do que nas próprias mãos. Teur atacou Demon na praia. Teur venceu e levou a comida guardada. Ruya, Ibmaik e Ibzear morreram na luta. Desde então, Demon chama a praia de Praia do Luto. Depois de tantos mortos, Teur e Demon se encontraram na praia e juraram paz. No outono, Demenem, de Jurur, tomou por esposa Estoria, de Demon, e os dois povos passaram a se visitar. Nos anos 171 a 180 houve duas secas, dezessete fomes, cinco batalhas, 31 preces que pareceram atendidas e oito preces sem resposta; nasceram 139 crianças e morreram 125 pessoas. No fim do ano 180, 246 pessoas viviam no mundo: Teil (108), Teur (73), Jurur (49) e Demon (16).
 
 ### Ano 181
 
-Na primavera do ano 181, Ibteim rezou por Maesia até a voz acabar. Maesia morreu mesmo assim, e Ibteim nunca mais rezou. Foram 9 dias de fome no inverno em Teor, com sete mortos. Uma tosse que não passava matou sete pessoas em Teur.
+Na primavera do ano 181, Ibem disse ter ouvido o deus de outro jeito: não era «a Sombra», era «o Senhor do Trovão». Teil acreditou, e o deus mudou de nome. Demik tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teil, ficou escrito que foi o Senhor do Trovão.
 
 ### Ano 182
 
-Na primavera do ano 182, morreu Torisar, que falava pela Sombra em Teur, aos 53 anos. Enem não esperou a vez: tomou o comando de Teor à força, e o conselho dos velhos se calou. A fome no inverno durou 9 dias em Wanum e levou cinco vidas.
+Eszera morreu dormindo, aos 45 anos. Na guerra, tinha tirado duas vidas. Com Demem à frente, a nova geração de Demon abandonou a festa da chuva, costume herdado dos avós. Sem lugar e sem comida, Ibsura e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Jurur, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. No inverno, Ibtena deu à luz gêmeos, Ruibia e Isya. Uns viram bênção; outros, mau sinal.
 
 ### Ano 183
 
-Na primavera do ano 183, morreu Maia, que guiava Wanum, aos 64 anos.
+Na primavera do ano 183, morreu Maesik, que guiava Teur, aos 55 anos. No inverno, a terra tremeu. Caíram catorze cabanas. Niniena, Suim, Torik, Nia, Demruem e Demnik morreram sob os escombros. Jurur escolheu Maia para guiar o grupo. Torteik queria o lugar e nunca perdoou.
 
 ### Ano 184
 
-No outono do ano 184, a terra tremeu. Caíram 23 cabanas. Kiar, Nakiar, Teibem e Ibniar morreram sob os escombros.
+Demem, que fundou Demon e o guiava, morreu de velhice aos 60 anos. Foi quem levou os seus a fundar Demon. A fome no inverno durou 6 dias em Teil e levou uma vida. Jurur passou fome no inverno por 8 dias, e quatro pessoas morreram.
 
 ### Ano 185
 
-Maela, a pacífica, morreu dormindo, aos 50 anos. Na guerra, tinha tirado três vidas. Morreu Lonael, o medroso, aos 46 anos. Suiba partiu com três pessoas para além da borda do mundo. Nunca voltaram. Uma febre correu Teil e levou cinco vidas. O inverno foi de gelo: nove pessoas morreram de frio.
+Na primavera, morreu Runa, que guiava Demon, aos 58 anos. No outono, Niem, de Teur, tomou por esposa Maesa, de Demon, e os dois povos passaram a se visitar. O arquivo salvou Demon: Zenim reaprendeu nas tabuletas o que os mortos sabiam. Um inverno duro matou duas pessoas de frio.
 
 ### Ano 186
 
-Na primavera, morreu Faya, que falava pelo Que Risca o Céu em Teor, aos 52 anos. Nunca perdoou o deus pela morte de Teya.
+Ibik implorou pelo filho. Nasuim morreu, e daquele dia em diante Ibik cuspia no chão quando falavam do Senhor do Trovão. Uma tosse que não passava matou cinco pessoas em Teur.
 
-*No ano 187, nada de notável aconteceu.*
+### Ano 187
+
+Morreu Ruik, o corajoso, aos 52 anos. Desde a morte de Ruibia, nunca mais tinha rezado.
 
 ### Ano 188
 
-No outono, Bera deu à luz gêmeos, Sunaya e Fanim. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 188, Esisa, que falava pelo Que Levanta em Demon, morreu dormindo, aos 52 anos. Na guerra, tinha tirado duas vidas. Sem lugar e sem comida, Nidemya e os seus atravessaram a borda do mundo. Ninguém soube deles. Esnar partiu com três pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 189
 
-Na primavera, morreu Esia, que guiava Teur, aos 61 anos. Rudemem passou a guiar Teur, mas Mazera não aceitou e guardou rancor.
+Na primavera, o arquivo salvou Demon: Linmoya reaprendeu nas tabuletas o que os mortos sabiam. Estem implorou pelo filho. Tordemem morreu, e daquele dia em diante Estem cuspia no chão quando falavam do Senhor do Trovão. No inverno, Natem, o pacífico, morreu de fome.
 
 ### Ano 190
 
-Na primavera do ano 190, morreu Wateik, o generoso, aos 48 anos. Nunca perdoou o deus pela morte de Ruia. Ruar disse ter ouvido o deus de outro jeito: não era «a Sombra», era «o Generoso». Teur acreditou, e o deus mudou de nome. Nos anos 181 a 190 houve três secas, doze fomes, 26 preces que pareceram atendidas e quatro preces sem resposta; nasceram 143 crianças e morreram 122 pessoas. No fim do ano 190, 253 pessoas viviam no mundo: Teil (97), Teur (76), Wanum (35) e Teor (45).
+Nos anos 181 a 190 houve dezessete fomes, 33 preces que pareceram atendidas e quatro preces sem resposta; nasceram 114 crianças e morreram 102 pessoas. No fim do ano 190, 243 pessoas viviam no mundo: Teil (106), Teur (85), Jurur (44) e Demon (8).
 
 ### Ano 191
 
-De novo a chuva sumiu, como no ano 180. Foram 19 dias de seca. Em Wanum, Madoim pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Wanum duvidou de que o Que Sacode tinha ouvido. Foi só o tempo, mas quem iria dizer? Os escribas de Wanum registraram o milagre.
+Demik tinha rezado: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teil, ficou escrito que foi o Senhor do Trovão.
 
-### Ano 192
+*O ano 192 foi calmo.*
 
-Morreu Nura, que guiava Wanum, aos 50 anos. Teil passou fome no inverno por 8 dias, e uma pessoa morreu. A terra tremeu. Caíram 23 cabanas. Kiibim, Naena e Iban morreram sob os escombros.
+### Ano 193
 
-*No ano 193, nada de notável aconteceu.*
+Demim anunciou que o Que Levanta proibia qualquer trato com Demon. O deus nunca disse isso, mas Teur obedeceu.
 
 ### Ano 194
 
-Uma tosse que não passava matou três pessoas em Teur.
+No inverno do ano 194, os de Teur caíram sobre Demon na praia em nome do Que Levanta. Teur venceu e levou a comida guardada. Na luta morreram Torzeim e Isa.
 
 ### Ano 195
 
-Esik implorou pelo filho. Endemar morreu, e daquele dia em diante Esik cuspia no chão quando falavam da Luz Que Avisa. Uma febre correu Teil e levou quatro vidas. Depois da seca, Wanum jurou nunca desperdiçar água. Sunara, que guiava Teil, não resistiu à fome.
+Começou a Terceira Guerra Santa: em nome do Que Levanta, Teur pegou em lanças contra Demon. A Terceira Guerra Santa seguiu: Teur contra Demon, na praia. Teur venceu e levou a comida guardada. Na luta morreram Isniem e Niem. Depois de tantos mortos, Teur e Demon se encontraram na praia e juraram paz. A Terceira Guerra Santa acabou em trégua, depois de um ano, duas batalhas e quatro mortos. Teur saiu dela mais forte. Uma tosse que não passava matou sete pessoas em Teil.
 
 ### Ano 196
 
-Teil passou fome no inverno por 9 dias, e onze pessoas morreram. Teor passou fome no inverno por 9 dias, e cinco pessoas morreram. Ruiba, que falava pelo Generoso em Teur, morreu de frio.
+Na primavera, morreu Linmoya, que guiava Demon, aos 64 anos. No verão, Demim anunciou que o Que Levanta proibia qualquer trato com Demon. O deus nunca disse isso, mas Teur obedeceu. Em Jurur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Jurur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
-*O ano 197 foi calmo.*
+### Ano 197
+
+Juik partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Ibia, a engenhosa, morreu de fome. Desde a morte de Tormar, nunca mais tinha rezado. Teur passou fome no inverno por 18 dias, e dez pessoas morreram. Depois da febre, Jurur passou a queimar os seus mortos, para que a doença não voltasse. O inverno foi de gelo: seis pessoas morreram de frio.
 
 ### Ano 198
 
-Morreu Doar, o pacífico, aos 58 anos.
+Niar disse ter ouvido o deus de outro jeito: não era «o Que Levanta», era «o Que Afoga». Teur acreditou, e o deus mudou de nome. Esena partiu com três pessoas para além da borda do mundo. Nunca voltaram. No inverno, Juna deu à luz gêmeos, Manu e Nuna. Uns viram bênção; outros, mau sinal. Maia, que guiava Jurur, não resistiu à fome. Demik, que falava pelo Senhor do Trovão em Teil, morreu de fome.
 
-*O ano 199 foi calmo.*
+### Ano 199
+
+Na primavera do ano 199, morreu Esibik, que falava pelo Que Apaga o Sol em Jurur, aos 60 anos. O deus calou justo quando Jurur mais dependia dele. Os de Jurur caíram sobre Demon na praia. Demon expulsou os atacantes. Na luta morreram Rujura e Toror. Foram 9 dias de fome no inverno em Teil, com dez mortos. O frio levou Isik, o medroso. Desde a morte de Ruia, nunca mais tinha rezado.
 
 ### Ano 200
 
-Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Depois disso, Wanum deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Leva». Em Teor, Ibloya pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Teor viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Nas tabuletas de Teor, ficou escrito que foi o Que Risca o Céu. Kikiem rezou por Tedemar até a voz acabar. Tedemar morreu mesmo assim, e Kikiem nunca mais rezou. Demem, que falava pelo Generoso em Teur, morreu de febre aos 46 anos. Nos anos 191 a 200 houve duas secas, doze fomes, 26 preces que pareceram atendidas e sete preces sem resposta; nasceram 132 crianças e morreram 232 pessoas. No fim do ano 200, 153 pessoas viviam no mundo: Teil (62), Teur (52), Wanum (10) e Teor (29).
+Começou a Guerra da Fome: Jurur, com fome, foi buscar à força a comida de Demon. Na Guerra da Fome, Jurur atacou Demon na praia. Demon resistiu, e Jurur voltou de mãos vazias. Ibena e Sutena morreram na luta. De novo Teur contra Demon, como no ano 195. Teur venceu e levou a comida guardada. Ibnira e Juna morreram na luta. Depois de tantos mortos, Teur e Demon se encontraram na praia e juraram paz. Nos anos 191 a 200 houve vinte fomes, cinco batalhas, 35 preces que pareceram atendidas e nove preces sem resposta; nasceram 105 crianças e morreram 142 pessoas. No fim do ano 200, 197 pessoas viviam no mundo: Teil (89), Teur (66), Jurur (29) e Demon (13).
 
-### Ano 201
-
-Demkim não esperou a vez: tomou o comando de Teil à força, e o conselho dos velhos se calou.
+*No ano 201, nada de notável aconteceu.*
 
 ### Ano 202
 
-De novo a chuva sumiu, como no ano 191. Foram 18 dias de seca.
+No outono do ano 202, Ibor, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. Em Jurur, Ennaem pediu: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Jurur agradeceu ao Que Apaga o Sol. O deus não tinha feito nada. Os escribas de Jurur registraram o milagre.
 
-*O ano 203 passou sem nada que a crônica precise guardar.*
+### Ano 203
 
-### Ano 204
+Na primavera, a Guerra da Fome esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Demon saiu dela mais forte.
 
-Na primavera, morreu Ibtorem, que falava pelo Generoso em Teur, aos 71 anos. Numa tempestade sobre a praia, um raio matou Nuna. Em Wanum, disseram que era castigo. Wanum passou a acreditar que o Que Leva castiga quem duvida, e que Nuna tinha duvidado. Desde a morte de Nuna, ninguém em Wanum desce à praia em dia de tempestade. No inverno, numa tempestade sobre o morro, um raio matou Ennaim. Em Teor, disseram que era castigo.
+*No ano 204, nada de notável aconteceu.*
 
 ### Ano 205
 
-O sol escureceu outra vez.
+Na primavera, Ibim rezou por Isem até a voz acabar. Isem morreu mesmo assim, e Ibim nunca mais rezou.
 
-### Ano 206
-
-Na primavera, Rudemem, que guiava Teur, morreu de velhice aos 68 anos. Ibloel implorou pela filha. Ena morreu, e daquele dia em diante Ibloel cuspia no chão quando falavam do Que Risca o Céu. Teur escolheu Kiena para guiar o grupo. Ibdemik queria o lugar e nunca perdoou. A tempestade trouxe raios para o morro. Um deles acertou Ibloel. Ninguém em Teor teve dúvida: era castigo.
+*O ano 206 passou sem nada que a crônica precise guardar.*
 
 ### Ano 207
 
-Apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu.
+Na primavera do ano 207, com Zear à frente, a nova geração de Demon abandonou o medo das tempestades, costume herdado dos avós. Foram 9 dias de fome no inverno em Teur, com seis mortos. A fome por causa da seca durou 23 dias em Jurur e levou treze vidas. No verão, com canais e moinhos, Jurur já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Uma tosse que não passava matou quatro pessoas em Teur.
 
-*Os anos 208 a 209 passaram em paz.*
+### Ano 208
+
+Na primavera do ano 208, Kienem, que falava pelo Que Apaga o Sol em Jurur, morreu de velhice aos 52 anos. Com Zear à frente, a nova geração de Demon abandonou o cuidado com a água, costume herdado dos avós.
+
+### Ano 209
+
+Demon deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Kikiena deu à luz gêmeos, Torrura e Sura. Uns viram bênção; outros, mau sinal.
 
 ### Ano 210
 
-Na primavera do ano 210, Temara deu à luz gêmeos, Teesa e Torisya. Uns viram bênção; outros, mau sinal. Em Teur, Ruar pediu: «Generoso, não deixes nossos filhos morrerem de fome.» A fome passou, e Teur viu nisso obra do Generoso. O deus nada fez: o crédito era de graça. Os escribas de Teur registraram o milagre. Nos anos 201 a 210 houve quinze preces que pareceram atendidas; nasceram 155 crianças e morreram 39 pessoas. No fim do ano 210, 270 pessoas viviam no mundo: Teil (107), Teur (90), Wanum (16) e Teor (57).
+Na primavera, Tortem, que falava pelo Senhor do Trovão em Teil, morreu de repente, aos 43 anos. Ennaem, o devoto, morreu de velhice aos 64 anos. No outono, um raio caiu na praia durante a tempestade e matou Manu. Ninguém em Demon teve dúvida: era castigo. Desde a morte de Manu, ninguém em Demon desce à praia em dia de tempestade. No inverno, a tempestade trouxe raios para a floresta. Um deles acertou Ibya. Em Teur, disseram que era castigo. Nos anos 201 a 210 houve três secas, seis fomes, catorze preces que pareceram atendidas e três preces sem resposta; nasceram 136 crianças e morreram 96 pessoas. No fim do ano 210, 240 pessoas viviam no mundo: Teil (107), Teur (70), Jurur (43) e Demon (20).
 
 ### Ano 211
 
-Nienim, que falava pela Luz Que Avisa em Teil, morreu dormindo, aos 74 anos. Morreu Ibloya, que falava pelo Que Risca o Céu em Teor, aos 63 anos.
+Esiba tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Teil deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teil, ficou escrito que foi o Senhor do Trovão. O frio levou Esik, que guiava Teil. Teil escolheu Esnaya para guiar o grupo. Kidemem queria o lugar e nunca perdoou. No outono, de novo o sol se apagou no meio do dia. Um inverno duro matou catorze pessoas de frio.
 
-### Ano 212
-
-Demkim, que guiava Teil, morreu de velhice aos 48 anos. Houve luta na praia: Teur atacou Wanum em nome do Generoso. Wanum expulsou os atacantes. Na luta morreram Esdemik, Ruar e Madoim.
+*O ano 212 passou sem nada que a crônica precise guardar.*
 
 ### Ano 213
 
-Na primavera do ano 213, Matera partiu com dez pessoas para além da borda do mundo. Nunca voltaram. Começou a Quarta Guerra Santa: em nome do Generoso, Teur pegou em lanças contra Wanum. Na Quarta Guerra Santa, Teur atacou Wanum na praia em nome do Generoso. Wanum foi derrotado e perdeu o que tinha guardado. Isisa e War morreram na luta. Teur e Wanum, cansados de enterrar os seus, fizeram as pazes na praia. A Quarta Guerra Santa acabou em trégua, depois de um ano, duas batalhas e cinco mortos.
+Na primavera do ano 213, Toresem, o curioso, morreu dormindo, aos 57 anos. Esiba implorou pela filha. Nidema morreu, e daquele dia em diante Esiba cuspia no chão quando falavam do Senhor do Trovão.
 
-### Ano 214
-
-Foram 20 dias de fome no inverno em Teur, com cinco mortos.
-
-### Ano 215
-
-Na primavera, Torar, que falava pela Luz Que Avisa em Teil, morreu de velhice aos 50 anos. Ibem rezou por Nalora até a voz acabar. Nalora morreu mesmo assim, e Ibem nunca mais rezou. A doença entrou em Teur e matou cinco pessoas. Fafaim, que guiava Teor, morreu de fome. Desde a morte de Ibfara, nunca mais tinha rezado.
-
-### Ano 216
-
-Foram 9 dias de fome no inverno em Teur, com onze mortos. A fome no inverno durou 9 dias em Teor e levou doze vidas. Uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito.
-
-*No ano 217, nada de notável aconteceu.*
+*Do ano 214 ao 217, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 218
 
-Na primavera do ano 218, a guerra entre Teur e Wanum continuou: Teur voltou a atacar na praia em nome do Generoso. Wanum foi derrotado e perdeu o que tinha guardado. Na luta morreram Ruteia e Demela.
+Na primavera do ano 218, Juem partiu com doze pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 219
 
-Em Teor, Naim pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças ao Que Risca o Céu. O deus não tinha feito nada. Os escribas de Teor registraram o milagre. Começou a Quinta Guerra Santa: em nome do Generoso, Teur pegou em lanças contra Wanum. Na Quinta Guerra Santa, Teur atacou Wanum na praia em nome do Generoso. Wanum resistiu, e Teur voltou de mãos vazias. Na luta morreram Nara, Tezeim e Ibnuia.
+Na primavera do ano 219, Esenik morreu dormindo, aos 46 anos. Desde a morte de Kiena, nunca mais tinha rezado. Os de Teil caíram sobre Demon na praia. Teil venceu e levou a comida guardada. Na luta morreram Nia, Yoem e Yoar. Para Teil, a praia virou Praia da Vitória. Depois de tantos mortos, Teil e Demon se encontraram na praia e juraram paz.
 
 ### Ano 220
 
-Na primavera, a Quinta Guerra Santa seguiu: Teur contra Wanum, na praia em nome do Generoso. Teur venceu e levou a comida guardada. Na luta morreram Nia, Nudemar e Demnik. A Quinta Guerra Santa seguiu: Teur contra Wanum, na praia em nome do Generoso. Wanum resistiu, e Teur voltou de mãos vazias. Rura, Tezear e Nidoik morreram na luta. Teur e Wanum, cansados de enterrar os seus, fizeram as pazes na praia. Depois de dois anos, quatro batalhas e onze mortos, a Quinta Guerra Santa terminou em paz. Nos anos 211 a 220 houve catorze fomes, seis batalhas, 30 preces que pareceram atendidas e sete preces sem resposta; nasceram 111 crianças e morreram 134 pessoas. No fim do ano 220, 237 pessoas viviam no mundo: Teil (93), Teur (80), Wanum (12) e Teor (52).
+Ibtorik, que guiava Jurur, morreu de velhice aos 63 anos. Em Teur, Maya pediu: «Que Afoga, dá-nos o que comer.» A fome passou, e Teur viu nisso obra do Que Afoga. O deus não tinha feito nada. Nas tabuletas de Teur, ficou escrito que foi o Que Afoga. Nos anos 211 a 220 houve onze fomes e 22 preces que pareceram atendidas; nasceram 134 crianças e morreram 93 pessoas. No fim do ano 220, 269 pessoas viviam no mundo: Teil (102), Teur (84), Jurur (50) e Demon (33).
 
 ### Ano 221
 
-Na primavera, Watera, que guiava Wanum, morreu de repente, aos 43 anos.
+Na primavera do ano 221, Demnaim, o generoso, morreu dormindo, aos 73 anos. Jurur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Uma febre correu Teil e levou três vidas. No inverno, Torniar implorou pelo filho. Demnar morreu, e daquele dia em diante Torniar cuspia no chão quando falavam do Senhor do Trovão.
 
 ### Ano 222
 
-Teibik implorou pelo filho. Naem morreu, e daquele dia em diante Teibik cuspia no chão quando falavam do Que Risca o Céu. Uma tosse que não passava matou quatro pessoas em Teor. Ibem, que guiava Teor, morreu de fome. Nunca perdoou o deus pela morte de Nalora. De novo a chuva sumiu, como no ano 202. Foram 25 dias de seca.
+Na primavera, Torena, a pacífica, morreu de velhice aos 52 anos. A fome no inverno durou 8 dias em Teil e levou quatro vidas. A fome no inverno durou 9 dias em Teur e levou dezesseis vidas.
 
-### Ano 223
+*O ano 223 foi calmo.*
 
-Teil passou fome no inverno por 9 dias, e vinte pessoas morreram. Teil escolheu Kiar para guiar o grupo. Demim queria o lugar e nunca perdoou. Depois de tanta briga pelo comando, Teil passou a ser guiado por um conselho dos mais velhos.
+### Ano 224
 
-*Os anos 224 a 226 passaram em paz.*
+A seca voltou, como no ano 163: 24 dias sem chuva, até que o céu se abriu.
 
-### Ano 227
+### Ano 225
 
-Na primavera do ano 227, em Teor, Fanaem começou a pregar que o deus não era «o Que Risca o Céu». Era «o Que Ergue». Em poucos anos, todos rezavam assim. Com Manuan à frente, Wanum largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. A fome no inverno durou 6 dias em Teil e levou duas vidas.
+A fome no inverno durou 11 dias em Teur e levou seis vidas.
+
+*Entre os anos 226 e 227, nada mudou o rumo do mundo.*
 
 ### Ano 228
 
-Na primavera, morreu Zear, aos 50 anos. Nunca perdoou o deus pela morte de Teisim. Em Wanum, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Leva».
+Demjuor partiu com seis pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 229
 
-Em Teil, Kira pediu: «Luz Que Avisa, dá-nos o que comer.» A comida voltou, e Teil deu graças à Luz Que Avisa. O deus não tinha feito nada. Os escribas de Teil registraram o milagre. Os de Teur caíram sobre Wanum na praia em nome do Generoso. Wanum expulsou os atacantes. Demzeik morreu na luta. O inverno foi de gelo: 23 pessoas morreram de frio.
+Na primavera, Enim, que falava pelo Que Apaga o Sol em Jurur, morreu de repente, aos 41 anos. Zear, que guiava Demon, morreu de velhice aos 53 anos. Esiba tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Teil deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teil, ficou escrito que foi o Senhor do Trovão.
 
 ### Ano 230
 
-Um inverno duro matou quatro pessoas de frio. Torteia deu à luz gêmeos, Torisia e Demtora. Uns viram bênção; outros, mau sinal. Nos anos 221 a 230 houve quatro secas, catorze fomes, 23 preces que pareceram atendidas e três preces sem resposta; nasceram 138 crianças e morreram 155 pessoas. No fim do ano 230, 221 pessoas viviam no mundo: Teil (85), Teur (72), Wanum (15) e Teor (49).
+Na primavera, morreu Isyos, aos 50 anos. Na guerra, tinha tirado duas vidas. Maim implorou pela filha. Iba morreu, e daquele dia em diante Maim cuspia no chão quando falavam do Que Afoga. Nos anos 221 a 230 houve duas secas, dezessete fomes e dezesseis preces que pareceram atendidas; nasceram 116 crianças e morreram 119 pessoas. No fim do ano 230, 259 pessoas viviam no mundo: Teil (101), Teur (76), Jurur (47) e Demon (35).
 
 ### Ano 231
 
-Na primavera do ano 231, Suik morreu de velhice aos 63 anos. Maem, que falava pelo Generoso em Teur, morreu dormindo, aos 57 anos. A seca voltou, como no ano 222: 22 dias sem chuva, até que o céu se abriu.
+Morreu Mana, que guiava Teur, aos 65 anos. Esesya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. A terra tremeu. Caíram 22 cabanas. Enem, Nara, Esesem, Niesim, Tera, Torrura e Demya morreram sob os escombros.
 
-### Ano 232
-
-No verão do ano 232, a guerra entre Teur e Wanum continuou: Teur voltou a atacar na praia em nome do Generoso. Wanum foi derrotado e perdeu o que tinha guardado. Manuan e Zedemem morreram na luta.
-
-### Ano 233
-
-Na primavera, sem lugar e sem comida, Naesa e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma febre correu Teur e levou três vidas.
+*Do ano 232 ao 233, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 234
 
-Zeruna não esperou a vez: tomou o comando de Teur à força, e o conselho dos velhos se calou.
+Esiba, que falava pelo Senhor do Trovão em Teil, morreu dormindo, aos 63 anos. Desde a morte de Nidema, nunca mais tinha rezado. Uma tosse que não passava matou duas pessoas em Jurur.
 
 ### Ano 235
 
-Na primavera, morreu Tebeia, que guiava Teor, aos 64 anos.
+Na primavera do ano 235, Nuar partiu com três pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 236
 
-Kiar, que guiava Teil, morreu de velhice aos 52 anos. Em Teur, Maruik começou a pregar que o deus não era «o Generoso». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. Sem lugar e sem comida, Ibsuik e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera, morreu Ensuya, a desconfiada, aos 65 anos.
 
 ### Ano 237
 
-Na primavera, os de Teil caíram sobre Wanum na praia. Wanum foi derrotado e perdeu o que tinha guardado. Na luta morreu Ruan. Demsuar rezou por Nakina até a voz acabar. Nakina morreu mesmo assim, e Demsuar nunca mais rezou. Uma febre correu Teil e levou quatro vidas.
+Na primavera do ano 237, Maya, a devota, morreu dormindo, aos 70 anos. A seca voltou, como no ano 224: 19 dias sem chuva, até que o céu se abriu. No inverno, Enik passou a guiar Teil, mas Esim não aceitou e guardou rancor.
 
 ### Ano 238
 
-Em Teur, Tetear pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teur deu graças à Voz do Céu. A crônica sabe que foi acaso. Os escribas de Teur registraram o milagre. Niteim partiu com três pessoas para além da borda do mundo. Nunca voltaram. Estorim implorou pelo filho. Ruar morreu, e daquele dia em diante Estorim cuspia no chão quando falavam da Voz do Céu.
+Teil passou fome no inverno por 9 dias, e seis pessoas morreram. Em Teil, Enar pediu: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Teil viu nisso obra do Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Os escribas de Teil registraram o milagre. Teur passou fome no inverno por 9 dias, e três pessoas morreram.
 
 ### Ano 239
 
-Na primavera, começou a Guerra da Fome da Praia: Teil, com fome, foi buscar à força a comida de Wanum. A Guerra da Fome da Praia seguiu: Teil contra Wanum, na praia. Teil venceu e levou a comida guardada. Ruwar, Rudoar, Nuela e Teteia morreram na luta. Desde então, Teil chama a praia de Praia da Vitória. No inverno, a Guerra da Fome da Praia seguiu: Teil contra Wanum, na praia. Wanum expulsou os atacantes. Na luta morreram Demsuar e Nidemik. Teil não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+No outono do ano 239, um raio caiu no lago durante a tempestade e matou Susura. Em Teil, disseram que era castigo. Para Teil, Susura foi castigada. Desde então, quem duvida do Senhor do Trovão duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Teil sai de casa. Lembram de Susura.
 
 ### Ano 240
 
-Teur passou fome no inverno por 9 dias, e quinze pessoas morreram. Teor passou fome no inverno por 9 dias, e nove pessoas morreram. No verão, houve luta na praia: Teor atacou Wanum em nome do Que Ergue. Wanum expulsou os atacantes. Niloik morreu na luta. Nos anos 231 a 240 houve quatro secas, dezesseis fomes, cinco batalhas, 26 preces que pareceram atendidas e oito preces sem resposta; nasceram 132 crianças e morreram 130 pessoas. No fim do ano 240, 213 pessoas viviam no mundo: Teil (86), Teur (65), Wanum (23) e Teor (39).
+Morreu Enar, que falava pelo Senhor do Trovão em Teil, aos 60 anos. Ibya deu à luz gêmeos, Entena e Niniem. Uns viram bênção; outros, mau sinal. Nos anos 231 a 240 houve duas secas, 24 fomes e doze preces que pareceram atendidas; nasceram 136 crianças e morreram 154 pessoas. No fim do ano 240, 235 pessoas viviam no mundo: Teil (89), Teur (74), Jurur (43) e Demon (29).
 
-### Ano 241
-
-Na primavera do ano 241, a Guerra da Fome da Praia seguiu: Teil contra Wanum, na praia. Teil venceu e levou a comida guardada. Nuna e Nakim morreram na luta. Depois de tantos mortos, Teil e Wanum se encontraram na praia e juraram paz. Depois de quatro anos, quatro batalhas e nove mortos, a Guerra da Fome da Praia terminou em paz. Teil saiu dela mais forte.
-
-### Ano 242
-
-Na primavera do ano 242, Teur atacou Wanum na praia em nome da Voz do Céu. Wanum resistiu, e Teur voltou de mãos vazias. Ruesa, Tortorik e Torteya morreram na luta.
-
-### Ano 243
-
-Na primavera do ano 243, começou a Sexta Guerra Santa: em nome do Que Ergue, Teor pegou em lanças contra Wanum. No verão, a Sexta Guerra Santa seguiu: Teor contra Wanum, na praia em nome do Que Ergue. Wanum foi derrotado e perdeu o que tinha guardado. Na luta morreram Waik, Wanuna e Wara. Para Teor, a praia virou Praia da Vitória. Em Wanum, já ninguém sabia trabalhar o metal. O que fora feito começou a ruir.
-
-### Ano 244
-
-Demia, que falava pela Voz do Céu em Teur, morreu de velhice aos 62 anos. Morreu o último que tinha visto o ano 133. Em Wanum, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
+*Os anos 241 a 244 passaram em paz.*
 
 ### Ano 245
 
-Kira, que falava pela Luz Que Avisa em Teil, morreu dormindo, aos 61 anos. Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. A febre levou Estorim, o pacífico. Nunca perdoou o deus pela morte de Ruar. Uma tosse que não passava matou 36 pessoas em Teil. Depois da febre, Wanum passou a queimar os seus mortos, para que a doença não voltasse.
+Na primavera do ano 245, morreu Enik, que guiava Teil, aos 54 anos. Sem lugar e sem comida, Nuos e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 246
 
-Na primavera, morreu Esena, que guiava Teil, aos 65 anos. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Wanum perdeu o saber. Os últimos de Wanum, Doim, Donina e Wanuia, juntaram-se a Teil. Wanum deixou de existir. A Sexta Guerra Santa acabou porque um dos lados deixou de existir: seis anos, quatro batalhas e seis mortos. O sol escureceu outra vez.
+Morreu Ibesya, que falava pelo Senhor do Trovão em Teil, aos 63 anos. Kiya, que guiava Demon, morreu dormindo, aos 66 anos. No verão, Demnira rezou por Demisya até a voz acabar. Demisya morreu mesmo assim, e Demnira nunca mais rezou. Teur via Teil ser atendido e concluiu que o Que Afoga tinha escolhido os outros. De novo a chuva sumiu, como no ano 237. Foram 22 dias de seca.
 
 ### Ano 247
 
-Morreu Naim, que falava pelo Que Ergue em Teor, aos 62 anos.
+Na primavera do ano 247, Demem partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Teil passou fome no inverno por 9 dias, e 22 pessoas morreram. Suik tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Teil viu nisso obra do Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Teil, ficou escrito que foi o Senhor do Trovão. Teur passou fome no inverno por 9 dias, e dezessete pessoas morreram.
 
-*Do ano 248 ao 249, a vida seguiu sem grandes acontecimentos.*
+*No ano 248, nada de notável aconteceu.*
+
+### Ano 249
+
+Na primavera, Suik, que falava pelo Senhor do Trovão em Teil, morreu dormindo, aos 60 anos. Demia rezou por Isesik até a voz acabar. Isesik morreu mesmo assim, e Demia nunca mais rezou. A terra tremeu. Caíram 29 cabanas. Tear, Eszeik, Isia, Ibdemim e Mayona morreram sob os escombros.
 
 ### Ano 250
 
-Nos anos 241 a 250 houve sete fomes, cinco batalhas, 22 preces que pareceram atendidas e oito preces sem resposta; nasceram 148 crianças e morreram 153 pessoas. No fim do ano 250, 208 pessoas viviam no mundo: Teil (97), Teur (79) e Teor (32).
+Nos anos 241 a 250 houve catorze fomes, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram 163 crianças e morreram 142 pessoas. No fim do ano 250, 251 pessoas viviam no mundo: Teil (97), Teur (73), Jurur (49) e Demon (32).
 
-### Ano 251
+*O ano 251 passou sem nada que a crônica precise guardar.*
 
-Na primavera do ano 251, Isa passou a guiar Teur, mas Torniar não aceitou e guardou rancor.
+### Ano 252
 
-*No ano 252, nada de notável aconteceu.*
+Na primavera, Demnira, a devota, morreu de velhice aos 52 anos. Desde a morte de Demisya, nunca mais tinha rezado. Niruya partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Uma febre correu Demon e levou quatro vidas.
 
 ### Ano 253
 
-Toribem disse ter ouvido o deus de outro jeito: não era «a Luz Que Avisa», era «o Generoso». Teil acreditou, e o deus mudou de nome. Torniar tinha rezado: «Voz do Céu, dá-nos o que comer.» A fome passou, e Teur viu nisso obra da Voz do Céu. O deus nada fez: o crédito era de graça. Os escribas de Teur registraram o milagre. No verão, Torim rezou por Naim até a voz acabar. Naim morreu mesmo assim, e Torim nunca mais rezou. Uma febre correu Teil e levou quatro vidas. No inverno, Maia deu à luz gêmeos, Eskiar e Esdemim. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 253, Esim, que guiava Teil, morreu de frio. Foram 9 dias de fome no inverno em Demon, com cinco mortos.
 
-### Ano 254
-
-No inverno, Lobeik não podia mais viver perto de Nimana. Saiu de Teor com 23 pessoas e fundou Enor na praia.
+*O ano 254 passou sem nada que a crônica precise guardar.*
 
 ### Ano 255
 
-Beia morreu com 1 anos, de uma febre que ninguém entendeu. No verão, em Enor, Nara tomou para si o cuidado das preces ao Que Ergue. No inverno, o sol escureceu outra vez.
+Na primavera, Torik, que falava pelo Senhor do Trovão em Teil, morreu de velhice aos 52 anos. Ruik disse ter ouvido o deus de outro jeito: não era «o Que Afoga», era «o Que Risca o Céu». Teur acreditou, e o deus mudou de nome. No verão, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. A seca voltou, como no ano 246: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 256
 
-Na primavera do ano 256, com Lobeik à frente, a nova geração de Enor abandonou o medo das tempestades, costume herdado dos avós. Em Enor nasceu a primeira criança: Niel, filho de Nara e Lobeik.
+Na primavera do ano 256, sem lugar e sem comida, Kior e os seus atravessaram a borda do mundo. Ninguém soube deles. Enenem tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Teil deu graças ao Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Os escribas de Teil registraram o milagre. O inverno foi de gelo: duas pessoas morreram de frio.
 
-### Ano 257
-
-Niibena, que falava pelo Generoso em Teil, morreu de velhice aos 71 anos. Torteia anunciou que a Voz do Céu proibia qualquer trato com Enor. O deus nunca disse isso, mas Teur obedeceu. Houve luta no morro: Teur atacou Teor em nome da Voz do Céu. Teor foi derrotado e perdeu o que tinha guardado. Fanaem e Enbeia morreram na luta. Torteia anunciou que a Voz do Céu proibia qualquer trato com Teor. O deus nunca disse isso, mas Teur obedeceu.
+*No ano 257, nada de notável aconteceu.*
 
 ### Ano 258
 
-Sem lugar e sem comida, Esisya e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 8 dias de fome no inverno em Teil, com um morto. No outono, Teur atacou Enor na praia em nome da Voz do Céu. Teur venceu e levou a comida guardada. Lobeik, Suloia, Nara e Mana morreram na luta. Desde então, Enor chama a praia de Praia do Luto.
+No inverno do ano 258, Kiar, que falava pelo Senhor do Trovão em Teil, não resistiu à fome.
 
 ### Ano 259
 
-Naloya partiu com dez pessoas para além da borda do mundo. Nunca voltaram. Começou a Segunda Guerra do Morro: o rancor entre Teur e Teor virou guerra. A Segunda Guerra do Morro seguiu: Teur contra Teor, no morro em nome da Voz do Céu. Teur venceu e levou a comida guardada. Na luta morreram Donina, Teik e Demdemena. No outono, Niya, de Enor, casou-se com Loel e foi viver em Teor. Foi o primeiro laço entre os dois povos. Nademya, que guiava Teil, morreu de fome.
+Em Teil, Esenena começou a pregar que o deus não era «o Senhor do Trovão». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. Foram 9 dias de fome no inverno em Teil, com catorze mortos. Teur passou fome no inverno por 9 dias, e onze pessoas morreram.
 
 ### Ano 260
 
-Na primavera do ano 260, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Sem lugar e sem comida, Ibteya e os seus atravessaram a borda do mundo. Ninguém soube deles. Ibibim, que falava pelo Generoso em Teil, morreu de febre aos 35 anos. Teil passou fome no inverno por 9 dias, e doze pessoas morreram. A Segunda Guerra do Morro seguiu: Teur contra Teor, no morro em nome da Voz do Céu. Teor foi derrotado e perdeu o que tinha guardado. Na luta morreram Nael e Naloik. Nos anos 251 a 260 houve duas secas, onze fomes, cinco batalhas, 29 preces que pareceram atendidas e doze preces sem resposta; nasceram 95 crianças e morreram 171 pessoas. No fim do ano 260, 111 pessoas viviam no mundo: Teil (47), Teur (48), Teor (9) e Enor (7).
+Nos anos 251 a 260 houve cinco secas, dezessete fomes e catorze preces que pareceram atendidas; nasceram 122 crianças e morreram 157 pessoas. No fim do ano 260, 207 pessoas viviam no mundo: Teil (77), Teur (60), Jurur (43) e Demon (27).
 
-### Ano 261
-
-Na primavera do ano 261, começou a Sétima Guerra Santa: em nome da Voz do Céu, Teur pegou em lanças contra Enor. No verão, em Enor, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No outono, na Segunda Guerra do Morro, Teur atacou Teor no morro em nome da Voz do Céu. Teor foi derrotado e perdeu o que tinha guardado. Nana e Falona morreram na luta.
+*O ano 261 foi calmo.*
 
 ### Ano 262
 
-Na primavera, morreu Teya, que guiava Teil, aos 53 anos. Em Enor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 82, só a crônica guarda. A seca voltou, como no ano 231: 21 dias sem chuva, até que o céu se abriu. Beloim tinha rezado: «Manda água, Que Ergue, que as crianças têm sede.» Quando a chuva voltou, Enor agradeceu ao Que Ergue. Foi só o tempo, mas quem iria dizer?
+Na primavera, Sudemem, que falava pela Voz do Céu em Teil, morreu de velhice aos 60 anos.
 
-### Ano 263
-
-Na primavera do ano 263, apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Depois disso, Enor deixou de chamar o deus de «o Que Ergue» e passou a chamá-lo de «o Que Risca o Céu».
+*O ano 263 foi calmo.*
 
 ### Ano 264
 
-Na primavera do ano 264, Besuem, o medroso, morreu dormindo, aos 65 anos. A Sétima Guerra Santa esfriou sem acordo nem vencedor: seis anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. Teur saiu dela mais forte.
+De novo a chuva sumiu, como no ano 255. Foram 18 dias de seca.
 
 ### Ano 265
 
-No verão, na Segunda Guerra do Morro, Teor atacou Teur na floresta. Teur foi derrotado e perdeu o que tinha guardado. Mamaia, Demzem e Demim morreram na luta. Desde então, Teor chama a floresta de Floresta da Vitória.
+Em Teil, Naena pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças à Voz do Céu. A crônica sabe que foi acaso. Nas tabuletas de Teil, ficou escrito que foi a Voz do Céu. Uma febre correu Teil e levou três vidas.
 
 ### Ano 266
 
-Naik, que guiava Teil, morreu de velhice aos 61 anos. A Segunda Guerra do Morro seguiu: Teur contra Teor, no morro em nome da Voz do Céu. Teur venceu e levou a comida guardada. Na luta morreram Suem e Beenem. Teur venceu Teor e levou os três sobreviventes para viver sob seu mando. Teor deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Segunda Guerra do Morro terminou com a conquista: nove anos, nove batalhas e vinte mortos. As ruínas de Teor viraram aviso em Teil: era o que o deus fazia com quem o desagradava.
+Na primavera do ano 266, Ruena, que guiava Jurur, morreu de velhice aos 58 anos.
 
-### Ano 267
-
-Na primavera do ano 267, Isa, que guiava Teur, morreu dormindo, aos 61 anos. Demesena, de Teil, casou-se com Nik e foi viver em Enor. Foi o primeiro laço entre os dois povos.
+*O ano 267 passou sem nada que a crônica precise guardar.*
 
 ### Ano 268
 
-Naesa deu à luz gêmeos, Demtem e Kira. Uns viram bênção; outros, mau sinal. No outono, Niibya, a pacífica, cansou de dividir pouca comida. Partiu com dezesseis pessoas para o morro e ali fundou Veves. As ruínas de Teor viraram aviso em Veves: era o que o deus fazia com quem o desagradava. Nasceu Esik, o primeiro de Veves.
+Na primavera do ano 268, Sujuik, que guiava Jurur, morreu de velhice aos 60 anos. Jurur escolheu Niena para guiar o grupo. Kitem queria o lugar e nunca perdoou.
 
-### Ano 269
-
-Na primavera, morreu Loya, a pacífica, aos 66 anos. Morreu o último que tinha visto o ano 95. Em Veves, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. No outono, em Veves, Demkim tomou para si o cuidado das preces ao Generoso.
+*O ano 269 passou sem nada que a crônica precise guardar.*
 
 ### Ano 270
 
-Na primavera, Torteia, que guiava Teur, morreu dormindo, aos 68 anos. Foi quem proibiu, em nome do deus, o trato com Enor. Nos anos 261 a 270 houve seis batalhas, doze preces que pareceram atendidas e seis preces sem resposta; nasceram 128 crianças e morreram 41 pessoas. No fim do ano 270, 200 pessoas viviam no mundo: Teil (88), Teur (81), Enor (13) e Veves (18).
+Kitem não esperou a vez: tomou o comando de Jurur à força, e o conselho dos velhos se calou. Nos anos 261 a 270 houve três secas, dez fomes e doze preces que pareceram atendidas; nasceram 143 crianças e morreram 94 pessoas. No fim do ano 270, 256 pessoas viviam no mundo: Teil (100), Teur (76), Jurur (46) e Demon (34).
 
 ### Ano 271
 
-Suenena passou dias nas ruínas de Teor e voltou sabendo trabalhar o metal. A seca voltou, como no ano 262: 24 dias sem chuva, até que o céu se abriu. Em Enor, Nik pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Enor agradeceu ao Que Risca o Céu. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Veves: todo ano, celebram a chuva que o Generoso mandou.
+Na primavera, Ibya, que guiava Teil, morreu dormindo, aos 61 anos.
 
 ### Ano 272
 
-Teur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Suenena disse ter ouvido o deus de outro jeito: não era «o Generoso», era «o Que Dá em Dobro». Veves acreditou, e o deus mudou de nome. Uma febre correu Teur e levou seis vidas. A fome no inverno durou 11 dias em Teur e levou nove vidas. No inverno, Niibya, que fundou Veves e o guiava, morreu ao dar à luz. Tinha fundado Veves.
+Morreu Maos, que guiava Demon, aos 61 anos.
 
-*Os anos 273 a 274 passaram em paz.*
+### Ano 273
+
+Na primavera, Demar, o medroso, morreu de repente, aos 44 anos. Suem rezou por Nitena até a voz acabar. Nitena morreu mesmo assim, e Suem nunca mais rezou. No outono, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
+
+*O ano 274 passou sem nada que a crônica precise guardar.*
 
 ### Ano 275
 
-Em Enor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Suenena passou dias nas ruínas de Teor e voltou sabendo trabalhar o metal. Em Veves, Ensuim pediu: «Que Dá em Dobro, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Veves duvidou de que o Que Dá em Dobro tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Depois de anos sob um só, Jurur sentou-se em roda: dali em diante, decidia-se juntos. Uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito.
 
 ### Ano 276
 
-O frio levou Suna, que guiava Teil. Endemik passou a guiar Teil, mas Nar não aceitou e guardou rancor. Foram 9 dias de fome por causa da seca em Teil, com três mortos. Suenena passou dias nas ruínas de Teor e voltou sabendo trabalhar o metal.
+Nia tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Teur viu nisso obra do Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Os escribas de Teur registraram o milagre. A fome no inverno durou 17 dias em Jurur e levou uma vida. De novo a chuva sumiu, como no ano 264. Foram 19 dias de seca. O inverno foi de gelo: quatro pessoas morreram de frio. Rutear, que guiava Teur, morreu de fome. Desde a morte de Maesem, nunca mais tinha rezado.
 
 ### Ano 277
 
-Nas ruínas de Teor, Suenena achou o que eles sabiam: aprendeu a trabalhar o metal.
+Na primavera do ano 277, sem lugar e sem comida, Suya e os seus atravessaram a borda do mundo. Ninguém soube deles. Teur passou fome no inverno por 9 dias, e vinte pessoas morreram. Foram 9 dias de fome no inverno em Jurur, com quatro mortos. No verão, Naena, que falava pela Voz do Céu em Teil, morreu de febre aos 64 anos. A doença entrou em Teil e matou sete pessoas.
 
 *O ano 278 passou sem nada que a crônica precise guardar.*
 
 ### Ano 279
 
-No verão do ano 279, Suenena passou dias nas ruínas de Teor e voltou sabendo trabalhar o metal.
+Na primavera, Junira partiu com sete pessoas para além da borda do mundo. Nunca voltaram. A terra tremeu. Caíram vinte cabanas. Tetorar e Suiba morreram sob os escombros.
 
 ### Ano 280
 
-Na primavera do ano 280, de novo o sol se apagou no meio do dia. A seca voltou, como no ano 271: 24 dias sem chuva, até que o céu se abriu. Beloim implorou pela filha. Rara morreu, e daquele dia em diante Beloim cuspia no chão quando falavam do Que Risca o Céu. Nos anos 271 a 280 houve três secas, seis fomes, 21 preces que pareceram atendidas e sete preces sem resposta; nasceram 90 crianças e morreram 114 pessoas. No fim do ano 280, 176 pessoas viviam no mundo: Teil (76), Teur (63), Enor (20) e Veves (17).
+Na primavera, Esenena, que falava pela Voz do Céu em Teil, morreu de velhice aos 63 anos. Nos anos 271 a 280 houve três secas, dezesseis fomes e treze preces que pareceram atendidas; nasceram 100 crianças e morreram 127 pessoas. No fim do ano 280, 219 pessoas viviam no mundo: Teil (89), Teur (71), Jurur (43) e Demon (16).
 
 ### Ano 281
 
-Na primavera do ano 281, Naibim partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Nik, que guiava Enor, morreu de febre aos 34 anos. Uma febre correu Enor e levou seis vidas. A forja de Veves não apagava mais. O metal mudou o trabalho e mudou a guerra. Os de Teur caíram sobre Veves no morro. Teur venceu e levou a comida guardada. Na luta morreram Demdemik, Suesik e Nitora.
+A terra tremeu. Caíram dezenove cabanas. Ibesya, Ibar, Ibsuar, Niibar e Enor morreram sob os escombros.
 
 ### Ano 282
 
-Na primavera, Ensuim, que guiava Veves, morreu de repente, aos 43 anos. No verão, Suenena passou dias nas ruínas de Teor e voltou sabendo ler as marcas antigas. No outono, Demik, de Teil, tomou por esposa Kiesa, de Veves, e os dois povos passaram a se visitar. No inverno, Dema deu à luz gêmeos, Suena e Naem. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 282, Nunuya, que guiava Teil, morreu de velhice aos 67 anos.
 
 ### Ano 283
 
-No outono, em nome do Que Risca o Céu, Beloim proibiu casamentos e trocas com Veves. Era vontade de Beloim, não do deus. Começou a Terceira Guerra do Morro: o rancor entre Teur e Veves virou guerra. A Terceira Guerra do Morro seguiu: Teur contra Veves, no morro. Veves foi derrotado e perdeu o que tinha guardado. Kiesena morreu na luta.
+Com lanças e promessas, Teibim acabou com o conselho de Teur e passou a mandar sozinho.
 
-### Ano 284
-
-Na primavera, morreu Ibtorim, que falava pelo Generoso em Teil, aos 53 anos. Nas ruínas de Teor, Suenena achou o que eles sabiam: aprendeu a ler as marcas antigas. No verão, Enor atacou Veves no morro em nome do Que Risca o Céu. Veves resistiu, e Enor voltou de mãos vazias. Loibya, Beloim e Kina morreram na luta. Desde então, Enor chama o morro de Morro do Luto. Em Enor, Enur pediu: «Que Risca o Céu, não nos deixes secar.» Quando a chuva voltou, Enor agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça.
-
-### Ano 285
-
-Com lanças e promessas, Nar acabou com o conselho de Teil e passou a mandar sozinho. Teil passou fome no inverno por 9 dias, e cinco pessoas morreram. Teur passou fome por causa da seca por 20 dias, e 32 pessoas morreram. Veves passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Veves passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+*Do ano 284 ao 285, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 286
 
-No verão, a Terceira Guerra do Morro seguiu: Teur contra Veves, no morro. Veves foi derrotado e perdeu o que tinha guardado. Teesar, Nasuena e Ibnim morreram na luta. Teur e Veves, cansados de enterrar os seus, fizeram as pazes no morro. A Terceira Guerra do Morro acabou em trégua, depois de cinco anos, três batalhas e sete mortos. Teur saiu dela mais forte. Veves cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Dá em Dobro.
+Na primavera do ano 286, morreu Suibem, que guiava Teil, aos 56 anos. Teil escolheu Zeibia para guiar o grupo. Demnina queria o lugar e nunca perdoou. Ibsuik rezou por Toresik até a voz acabar. Toresik morreu mesmo assim, e Ibsuik nunca mais rezou. Naik tinha rezado: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Teil deu graças à Voz do Céu. O deus nada fez: o crédito era de graça. Os escribas de Teil registraram o milagre. De novo a chuva sumiu, como no ano 276. Foram 24 dias de seca.
 
 ### Ano 287
 
-Kikiar implorou pela filha. Kiena morreu, e daquele dia em diante Kikiar cuspia no chão quando falavam do Generoso. No inverno, Enor não esqueceu o ano 284 e atacou Veves outra vez. Veves expulsou os atacantes. Na luta morreu Enur. Enor e Veves, cansados de enterrar os seus, fizeram as pazes no morro.
+O frio levou Teibim, que guiava Teur. Depois de tanta briga pelo comando, Teur passou a ser guiado por um conselho dos mais velhos. Foram 9 dias de fome no inverno em Teur, com seis mortos. A fome no inverno durou 9 dias em Jurur e levou dez vidas. Uma tosse que não passava matou quatro pessoas em Teur.
 
-### Ano 288
-
-Na primavera do ano 288, Ibibar, que guiava Teur, morreu dormindo, aos 45 anos. Teur escolheu Isisya para guiar o grupo. Rutem queria o lugar e nunca perdoou.
+*O ano 288 foi calmo.*
 
 ### Ano 289
 
-O inverno foi de gelo: cinco pessoas morreram de frio.
+Uma tosse que não passava matou quatro pessoas em Teil.
 
 ### Ano 290
 
-Morreu Nar, que guiava Teil, aos 49 anos. Teil passou fome no inverno por 9 dias, e 27 pessoas morreram. No verão, Kikiar anunciou que o Generoso proibia qualquer trato com Veves. O deus nunca disse isso, mas Teil obedeceu. Enibar rezou por Esibya até a voz acabar. Esibya morreu mesmo assim, e Enibar nunca mais rezou. A doença entrou em Teil e matou quatro pessoas. Nos anos 281 a 290 houve três secas, catorze fomes, cinco batalhas, 28 preces que pareceram atendidas e onze preces sem resposta; nasceram 161 crianças e morreram 170 pessoas. No fim do ano 290, 162 pessoas viviam no mundo: Teil (69), Teur (69), Enor (5) e Veves (19).
+Na primavera do ano 290, em Demon, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Nos anos 281 a 290 houve duas secas, sete fomes e catorze preces que pareceram atendidas; nasceram 156 crianças e morreram 111 pessoas. No fim do ano 290, 264 pessoas viviam no mundo: Teil (104), Teur (77), Jurur (49) e Demon (34).
 
 ### Ano 291
 
-Com Lonaya à frente, a nova geração de Enor abandonou o treino com lanças, costume herdado dos avós. A seca voltou, como no ano 280: 21 dias sem chuva, até que o céu se abriu.
+Ruim rezou por Ibnim até a voz acabar. Ibnim morreu mesmo assim, e Ruim nunca mais rezou. Ruisem, que guiava Teur, não resistiu à fome.
 
 ### Ano 292
 
-Na primavera, Teur não esqueceu o ano 286 e atacou Veves outra vez. Teur venceu e levou a comida guardada. Lira morreu na luta. No verão, Teur atacou Enor na praia em nome da Voz do Céu. Enor foi derrotado e perdeu o que tinha guardado. Zeur e Lonaya morreram na luta. Enor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Teur venceu Enor e levou os quatro sobreviventes para viver sob seu mando. Enor deixou de existir, mas os vencidos guardaram seus costumes em segredo. No outono, diante das ruínas de Enor, Teil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Teil passou fome no inverno por 9 dias, e 27 pessoas morreram. A febre levou Nia, a devota. No inverno, Naik anunciou que a Voz do Céu proibia qualquer trato com Demon. O deus nunca disse isso, mas Teil obedeceu.
 
 ### Ano 293
 
-Ibik morreu de velhice aos 54 anos. Na guerra, tinha tirado duas vidas. Nikiena deu à luz gêmeos, Kinaim e Suim. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 293, morreu Maniar, que guiava Teur, aos 65 anos.
 
-### Ano 294
-
-O templo de Teil não aceitou Demena, que chamava o deus de «o Pai das Águas». Houve gritos, pedras, e os seguidores de Demena foram embora. Os que ainda rezavam, com Demena à frente, deixaram Teil, que tinha deixado de crer, e fundaram Nian na praia. Ali o deus se chama «o Pai das Águas». Em nome do Pai das Águas, Demteik proibiu casamentos e trocas com Teil. Era vontade de Demteik, não do deus. No outono, o frio levou Demteik, que falava pelo Pai das Águas em Nian. Foi quem proibiu, em nome do deus, o trato com Teil. No inverno, Demena, que fundou Nian e o guiava, não resistiu à fome. Tinha fundado Nian.
+*No ano 294, nada de notável aconteceu.*
 
 ### Ano 295
 
-Na primavera, morreu o último que sabia fazer canais e moinhos, e ninguém tinha aprendido. Nian perdeu o saber. A fome no inverno durou 9 dias em Nian e levou 22 vidas. Em Nian, Demena pediu: «Pai das Águas, dá-nos o que comer.» A fome passou, e Nian viu nisso obra do Pai das Águas. O deus não tinha feito nada. A praia passou a ser a praia da fome: Praia da Fome.
+Tornior partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Em Teil, Naik pediu: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teil deu graças à Voz do Céu. O deus não tinha feito nada. Os escribas de Teil registraram o milagre. No outono, Nadema deu à luz gêmeos, Tem e Demteim. Uns viram bênção; outros, mau sinal.
 
 ### Ano 296
 
-Sem lugar e sem comida, Torim e os seus atravessaram a borda do mundo. Ninguém soube deles. De novo Teur contra Veves, como no ano 292. Veves foi derrotado e perdeu o que tinha guardado. Na luta morreram Tetena e Toresim. Depois de tantos mortos, Teur e Veves se encontraram no morro e juraram paz.
+Morreu Niena, que guiava Jurur, aos 65 anos.
 
 ### Ano 297
 
-Na primavera do ano 297, Veves passou a receber bem os de fora: um casamento com outro povo virava festa. Teim, de Teur, tomou por esposa Vera, de Veves, e os dois povos passaram a se visitar.
+De novo a chuva sumiu, como no ano 286. Foram 19 dias de seca.
 
 ### Ano 298
 
-Esesar, o generoso, morreu dormindo, aos 57 anos. Na guerra, tinha tirado três vidas. Sem lugar e sem comida, Teik e os seus atravessaram a borda do mundo. Ninguém soube deles. Houve luta no lago: Teur atacou Teil. Teil foi derrotado e perdeu o que tinha guardado. Na luta morreram Nanara e Demruim. Desde então, Teur chama o lago de Lago da Vitória. Uma febre correu Teur e levou cinco vidas.
+Foram 12 dias de fome no inverno em Teur, com dezessete mortos. Uma tosse que não passava matou seis pessoas em Teur.
 
 *O ano 299 passou sem nada que a crônica precise guardar.*
 
 ### Ano 300
 
-Nasceu Niniel, filho de Suibem, que guiava Nian. Nos anos 291 a 300 houve nove fomes, cinco batalhas, onze preces que pareceram atendidas e cinco preces sem resposta; nasceram 117 crianças e morreram 111 pessoas. No fim do ano 300, 163 pessoas viviam no mundo: Teil (45), Teur (89), Veves (22) e Nian (7).
+Na primavera do ano 300, morreu Zeibia, que guiava Teil, aos 53 anos. Nos anos 291 a 300 houve três secas, doze fomes e dez preces que pareceram atendidas; nasceram 147 crianças e morreram 159 pessoas. No fim do ano 300, 256 pessoas viviam no mundo: Teil (101), Teur (72), Jurur (51) e Demon (32).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Teil** vive no lago, com 45 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Generoso»; costumes: guarda tanta comida para o inverno (desde o ano 95); queima os mortos (desde o ano 100); não desperdiça uma gota d'água (desde o ano 101); não sai de casa em dia de tempestade (desde o ano 106); treina os jovens com lanças (desde o ano 239).
-- **Teur** vive na floresta, com 89 pessoas, com canais e moinhos; nasceu de uma briga em Teil no ano 21; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 83); queima os mortos (desde o ano 83); não desperdiça uma gota d'água (desde o ano 101); treina os jovens com lanças (desde o ano 105); não sai de casa em dia de tempestade (desde o ano 121).
-- **Veves** vive no morro, com 22 pessoas, com canais e moinhos; nasceu de uma migração em Teil no ano 268; chama o deus de «o Que Dá em Dobro»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 239); faz a festa da chuva (desde o ano 271).
-- **Nian** vive na praia, com 7 pessoas, e escreve; nasceu de um cisma em Teil no ano 294; chama o deus de «o Pai das Águas»; costumes: guarda tanta comida para o inverno (desde o ano 95); queima os mortos (desde o ano 100); não desperdiça uma gota d'água (desde o ano 101); não sai de casa em dia de tempestade (desde o ano 106); treina os jovens com lanças (desde o ano 239).
+- **Teil** vive no lago, com 101 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «a Voz do Céu»; costumes: guarda tanta comida para o inverno (desde o ano 93); queima os mortos (desde o ano 116); treina os jovens com lanças (desde o ano 151); não sai de casa em dia de tempestade (desde o ano 239).
+- **Teur** vive na floresta, com 72 pessoas, com canais e moinhos; nasceu de uma briga em Teil no ano 21; chama o deus de «o Que Risca o Céu»; costumes: não sai de casa em dia de tempestade (desde o ano 84); queima os mortos (desde o ano 85); guarda tanta comida para o inverno (desde o ano 86); faz a festa da chuva (desde o ano 124); treina os jovens com lanças (desde o ano 126); não desperdiça uma gota d'água (desde o ano 152).
+- **Jurur** vive no morro, com 51 pessoas, com canais e moinhos; nasceu de uma migração em Teil no ano 147; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 150); treina os jovens com lanças (desde o ano 151); faz a festa da chuva (desde o ano 152); queima os mortos (desde o ano 197).
+- **Demon** vive na praia, com 32 pessoas, com canais e moinhos; nasceu de uma briga em Teur no ano 178; não reza a ninguém; costumes: queima os mortos (desde o ano 85); guarda tanta comida para o inverno (desde o ano 86); não sai de casa em dia de tempestade (desde o ano 210).
 
-Povos que deixaram de existir: Wanum, Teor e Enor.
+Povos que deixaram de existir: Wanum, Teor, Kidon, Sues e Ibon.
 
-Lugares com nome: Praia da Fome (praia, para Wanum), Praia da Vitória (praia, para Teur), Praia da Vitória (praia, para Teil), Praia da Vitória (praia, para Teor), Praia do Luto (praia, para Enor), Praia da Fome (praia, para Nian), Lago da Vitória (lago, para Teil), Lago do Luto (lago, para Wanum), Lago do Luto (lago, para Nian), Lago da Vitória (lago, para Teur), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Wanum), Floresta da Vitória (floresta, para Teor), Morro da Fome (morro, para Teor), Morro da Vitória (morro, para Wanum), Morro da Vitória (morro, para Teur), Morro do Luto (morro, para Veves) e Morro do Luto (morro, para Enor).
+Lugares com nome: Praia da Fome (praia, para Wanum), Praia da Vitória (praia, para Sues), Praia do Luto (praia, para Teur), Praia do Luto (praia, para Kidon), Praia do Luto (praia, para Ibon), Praia do Luto (praia, para Demon), Praia do Luto (praia, para Jurur), Praia da Vitória (praia, para Teil), Lago da Trégua (lago, para Wanum), Lago da Trégua (lago, para Teil), Lago da Vitória (lago, para Teur), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Wanum), Floresta do Luto (floresta, para Ibon), Morro da Fome (morro, para Teor), Morro do Raio (morro, para Kidon), Morro do Luto (morro, para Wanum), Morro do Raio (morro, para Jurur) e Morro da Vitória (morro, para Teur).
 
-Em 300 anos nasceram 3186 pessoas e morreram 2964.
+Em 300 anos nasceram 3093 pessoas e morreram 2746.

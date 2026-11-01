@@ -1,0 +1,269 @@
+{
+ "atlas": "estagio5.png",
+ "largura": 256,
+ "altura": 128,
+ "margem": 1,
+ "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
+ "regioes": {
+  "estagio4/templo_colunas_simbolo_arvore": {
+   "x": 1,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio4/templo_colunas_simbolo_lua": {
+   "x": 34,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio4/templo_colunas_simbolo_sol": {
+   "x": 67,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio4/templo_colunas_telhado_palha": {
+   "x": 100,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio4/templo_colunas_telhado_tabuas": {
+   "x": 133,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio4/templo_colunas_telhado_telha": {
+   "x": 166,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/adulto_e5_andar_4q": {
+   "x": 1,
+   "y": 100,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio5/adulto_e5_parado_2q": {
+   "x": 34,
+   "y": 100,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio5/biblioteca": {
+   "x": 199,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/biblioteca_parede": {
+   "x": 1,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/biblioteca_ruina": {
+   "x": 34,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/biblioteca_telhado_palha": {
+   "x": 67,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/biblioteca_telhado_tabuas": {
+   "x": 100,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/biblioteca_telhado_telha": {
+   "x": 133,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/escriba_sentado_2q": {
+   "x": 51,
+   "y": 100,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio5/estela": {
+   "x": 232,
+   "y": 67,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "estagio5/tabuletas_4v": {
+   "x": 68,
+   "y": 100,
+   "w": 32,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "variacoes",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio5/templo_escrita": {
+   "x": 166,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/templo_escrita_parede": {
+   "x": 199,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio5/templo_escrita_ruina": {
+   "x": 1,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/biblioteca_ruina_mato_1": {
+   "x": 34,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/biblioteca_ruina_mato_2": {
+   "x": 67,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/biblioteca_ruina_mato_3": {
+   "x": 100,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/templo_escrita_ruina_mato_1": {
+   "x": 133,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/templo_escrita_ruina_mato_2": {
+   "x": 166,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/templo_escrita_ruina_mato_3": {
+   "x": 199,
+   "y": 67,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  }
+ }
+}
