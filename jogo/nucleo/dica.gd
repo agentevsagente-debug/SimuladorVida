@@ -331,7 +331,7 @@ func _lugar(x: float) -> String:
 	if fogo >= 0.0 and absf(x - fogo) < 14.0:
 		return "perto do fogo"
 	if fogo >= 0.0 and absf(x - fogo) < 45.0:
-		return "na vila"
+		return "no acampamento" if g.estagio <= 1 else "na vila"   # no estágio 1, ainda é um acampamento
 	match Cotidiano.zona_em(x):
 		"lago":
 			return "na beira do lago"

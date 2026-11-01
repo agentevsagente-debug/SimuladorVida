@@ -276,13 +276,13 @@ Suik, que fundou Suyor e o guiava, morreu de velhice aos 51 anos. Nos anos 91 a 
 
 ## O mundo no fim da crônica
 
-- **Demur** vive na floresta, com 54 pessoas, em casas de pedra; nasceu de uma migração em Teil no ano 28; chama o deus de «a Terra Brava»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (desde o ano 59).
-- **Suyor** vive no lago, com 53 pessoas, em casas de pedra; nasceu de uma migração em Demur no ano 72; chama o deus de «o Que Risca o Céu»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida).
-- **Miur** vive na praia, com 30 pessoas, em casas de pedra; nasceu de uma migração em Demur no ano 78; chama o deus de «a Estrela de Cauda»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (desde o ano 84).
-- **Vear** vive no morro, com 18 pessoas, e planta roças; nasceu de uma briga em Suyor no ano 91; chama o deus de «o Que Sacode»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 96).
+- **Demur** vive na floresta, com 55 pessoas, em casas de pedra; nasceu de uma migração em Teil no ano 28; não reza a ninguém; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (desde o ano 59).
+- **Suyor** vive no lago, com 51 pessoas, em casas de pedra; nasceu de uma migração em Demur no ano 72; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida).
+- **Miur** vive na praia, com 29 pessoas, e trabalha o metal; nasceu de uma migração em Demur no ano 78; chama o deus de «a Estrela de Cauda»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (desde o ano 84).
+- **Vear** vive no morro, com 17 pessoas, e planta roças; nasceu de uma briga em Suyor no ano 91; chama o deus de «o Que Sacode»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 96).
 
 Povos que deixaram de existir: Teil.
 
 Lugares com nome: Praia da Fome (praia, para Miur), Lago do Raio (lago, para Teil) e Lago da Fome (lago, para Suyor).
 
-Em 100 anos nasceram 303 pessoas e morreram 148.
+Em 100 anos nasceram 303 pessoas e morreram 151.

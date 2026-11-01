@@ -320,7 +320,7 @@ Kurar achou o chão batido de casas sem ninguém, o que restava de Pelor. Os vel
 
 - **Linon** vive no lago, com 16 pessoas, em casas de pedra; nasceu de uma migração em Zeor no ano 8; chama o deus de «o Que Sacode»; costumes: queima os mortos (a origem foi esquecida); deixa oferendas no começo de cada estação (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida).
 - **Beor** vive na floresta, com 13 pessoas, e planta roças; nasceu de uma briga em Linon no ano 71; chama o deus de «o Que Ergue»; costumes: deixa oferendas no começo de cada estação (a origem foi esquecida); faz a festa da chuva (desde o ano 72); queima os mortos (desde o ano 92).
-- **Kurar** vive na praia, com 8 pessoas, e planta roças; nasceu de uma migração em Beor no ano 99; chama o deus de «o Que Ergue»; costumes: deixa oferendas no começo de cada estação (a origem foi esquecida); faz a festa da chuva (desde o ano 72); queima os mortos (desde o ano 92).
+- **Kurar** vive na praia, com 8 pessoas, e planta roças; nasceu de uma migração em Beor no ano 99; chama o deus de «o Que Ergue»; costumes: deixa oferendas no começo de cada estação (a origem foi esquecida); faz a festa da chuva (desde o ano 72).
 
 Povos que deixaram de existir: Zeor, Selan, Pelor e Linor.
 

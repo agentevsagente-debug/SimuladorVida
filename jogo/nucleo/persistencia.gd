@@ -464,7 +464,7 @@ static func _para_dict(m) -> Dictionary:
 
 
 static func _de_dict(d: Dictionary):
-	var m := Mundo.new(d["semente"])
+	var m := Mundo.new(d["semente"], [], 0)
 	_preencher(m, d["mundo"])
 	m.rng.seed = d["rng_seed"]
 	m.rng.state = d["rng_state"]

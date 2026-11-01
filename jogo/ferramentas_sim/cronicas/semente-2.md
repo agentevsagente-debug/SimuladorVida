@@ -204,7 +204,7 @@ No fim do ano 100, duas pessoas viviam no mundo, todas em Esar.
 
 ## O mundo no fim da crônica
 
-- **Esar** vive na praia, com 2 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
+- **Esar** vive na praia, com 2 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
 
 Lugares com nome: Praia do Raio (praia, para Esar).
 

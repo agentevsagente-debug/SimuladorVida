@@ -334,10 +334,66 @@ func _censo_da_decada(a: int) -> Array:
 	return r
 
 
+## Os gestos do deus no ano em curso, um por linha, na hora em que acontecem: "Dia 3: ..." com o
+## que o deus fez e, em seguida, o que o povo fez disso no mesmo dia (a prece atendida ou
+## contrariada, uma crença nova, um costume). Não marca nada como contado: quando o ano fechar,
+## a crônica oficial dele sai inteira, do jeito de sempre. "" se o deus não fez nada no ano.
+const GESTOS := ["chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "fogo_brando", "terra_erguida", "sonho",
+	"seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura"]
+const REACOES := ["prece_atendida", "prece_contrariada", "nova_crenca", "crenca", "costume", "lugar_nomeado", "estudo_do_ceu",
+	"sacerdote", "renascimento", "culpado"]
+
+
+func ano_em_curso() -> String:
+	var a: int = m.ano()
+	var evs: Array = []
+	var i: int = m.eventos.size() - 1
+	while i >= 0:
+		var e = m.eventos[i]
+		if e != null:
+			if e.ano < a:
+				break
+			evs.push_front(e)
+		i -= 1
+	if not evs.any(func(e): return GESTOS.has(e.tipo) and e.causa == "divina"):
+		return ""
+	var salvo := [_narrados.duplicate(true), _primeiros.duplicate(), _usados.duplicate()]
+	var linhas: PackedStringArray = []
+	var contados := {}
+	for e in evs:
+		if not GESTOS.has(e.tipo) or e.causa != "divina":
+			continue
+		rt.seed = _misturar(m.semente * 100003 + e.id)
+		var f := _texto(e)
+		if f.is_empty():
+			f = texto_curto(e)
+		if f.is_empty():
+			continue
+		var frases: PackedStringArray = [G.maiuscula(f)]
+		# A reação do povo no mesmo dia: o que cita o gesto (resposta, origem) ou vem logo depois dele.
+		for r in evs:
+			if r.id <= e.id or contados.has(r.id) or not REACOES.has(r.tipo) or r.dia != e.dia:
+				continue
+			if r.dados.get("resposta", -1) != e.id and r.dados.get("origem", -1) != e.id and r.dados.get("cura", -1) != e.id:
+				continue
+			rt.seed = _misturar(m.semente * 100003 + r.id)
+			var fr := _texto(r)
+			if not fr.is_empty():
+				frases.append(G.maiuscula(fr))
+				contados[r.id] = true
+		linhas.append("Dia %d: %s" % [e.dia + 1, " ".join(frases)])
+	_narrados = salvo[0]
+	_primeiros = salvo[1]
+	_usados = salvo[2]
+	if linhas.is_empty():
+		return ""
+	return "### Ano %d (em curso)\n\n%s" % [a, "\n\n".join(linhas)]
+
+
 ## Crônica de um período (a ausência): os anos que terminaram no período vêm da
 ## crônica oficial; o ano ainda em andamento é escrito à parte, sem marcar nada
 ## como contado, para que a crônica oficial desse ano saia inteira quando ele terminar.
-func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int) -> String:
+func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int, dias: int = 0) -> String:
 	var partes: PackedStringArray = []
 	for a in range(ano_ini, ano_fim + 1):
 		if a <= ultimo_ano_escrito:
@@ -358,11 +414,67 @@ func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int) -> Str
 			partes.append("### Ano %d (até agora)
 
 %s" % [a, par])
-	if partes.is_empty():
-		return "*Enquanto o deus esteve fora, nada de notável aconteceu.*"
-	return "
+	# O de sempre, em uma ou duas linhas: quem nasceu, morreu e casou, e o trabalho da estação.
+	var normal := _dia_a_dia(ev_ini, ev_fim, dias)
+	if not normal.is_empty():
+		partes.append(normal)
+	return "\n\n".join(partes)
 
-".join(partes)
+
+## O de sempre num período: "Nesses dez dias, nasceram duas crianças em Zeor e houve um
+## casamento. Em Zeor, colheram as roças." (o que a crônica não conta por ser comum).
+func _dia_a_dia(ev_ini: int, ev_fim: int, dias: int) -> String:
+	var nasc := 0
+	var mortes := 0
+	var casam := 0
+	var onde_nasc := {}
+	for i in range(ev_ini, ev_fim):
+		var e = m.eventos[i]
+		if e == null:
+			continue
+		match e.tipo:
+			"nascimento", "gemeos":
+				nasc += 1
+				onde_nasc[e.grupo] = true
+			"morte":
+				mortes += 1
+			"casamento", "casamento_entre_grupos":
+				casam += 1
+	var partes: Array = []
+	if nasc > 0:
+		var g1 := ""
+		if onde_nasc.size() == 1:
+			g1 = " em " + _g(onde_nasc.keys()[0])["t"]
+		partes.append(("nasceu uma criança" if nasc == 1 else "nasceram %s crianças" % G.extenso(nasc, "f")) + g1)
+	if mortes > 0:
+		partes.append("morreu uma pessoa" if mortes == 1 else "morreram %s pessoas" % (G.extenso(mortes, "f") if mortes <= 20 else str(mortes)))
+	if casam > 0:
+		partes.append("houve um casamento" if casam == 1 else "houve %s casamentos" % G.extenso(casam, "m"))
+	var quando := "Nesses %s dias" % G.extenso(dias, "m") if dias > 1 and dias <= 20 else ("Nesse tempo" if dias > 1 else "Nesse dia")
+	var r: Array = []
+	if partes.is_empty():
+		r.append(quando + ", ninguém nasceu e ninguém morreu.")
+	else:
+		r.append(quando + ", " + G.lista(partes) + ".")
+	# O trabalho da estação, no povo maior.
+	var maior = null
+	for g in m.grupos_vivos():
+		if maior == null or g.membros.size() > maior.membros.size():
+			maior = g
+	if maior != null:
+		var v := {"g": _g(maior.id)}
+		var est: int = m.estacao()
+		if maior.estagio <= 1:
+			r.append(_frase([["Em {g}, colheram frutos e raízes e pescaram, como sempre.", "{g} catou, pescou e caçou, como em todo começo de ano."],
+				["{g} viveu do que o verão dava: frutas, peixe, uma caça de vez em quando.", "Em {g}, o verão foi de frutas e peixe."],
+				["Em {g}, juntaram o que o outono dava, antes do frio.", "{g} encheu os cestos para o frio que vinha."],
+				["{g} juntou lenha e esperou o frio passar.", "Em {g}, o inverno foi de lenha e fogo aceso."]][est], v))
+		else:
+			r.append(_frase([["Em {g}, plantaram as roças.", "{g} abriu a terra e semeou."],
+				["As roças de {g} cresceram.", "Em {g}, cuidaram das roças sob o sol."],
+				["Em {g}, colheram as roças e guardaram o grão.", "{g} colheu, e o celeiro encheu."],
+				["{g} viveu do que tinha guardado e esperou o frio passar.", "Em {g}, o inverno foi de lenha e grão guardado."]][est], v))
+	return " ".join(r)
 
 
 # ---------------------------------------------------------------- a crônica dos povos

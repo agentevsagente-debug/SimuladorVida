@@ -331,6 +331,8 @@ A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 
 `posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
 
+**O mundo novo começa de manhã.** `Mundo.new(semente)` devolve o mundo às 7h do dia 1 (`Mundo.HORA_INICIAL`), com o povo saindo das cabanas: as horas da noite passam na criação, como passos normais. `criar_povo()` no mundo vazio também deixa o tempo correr até as 7h antes de criar o povo. Ao carregar um mundo salvo, nada disso muda (a persistência cria o mundo com `Mundo.new(semente, [], 0)`).
+
 ### `dica(pessoa_id) -> Dictionary` (a dica sobre a pessoa)
 
 Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, humor, sonho}` (vazio `{}` se a pessoa morreu). É calculada na consulta, a partir da ficha da hora de `pessoas_visiveis()` e do estado do mundo, e guardada até o próximo passo; nada nos quadros, e não usa o sorteio do mundo.
@@ -339,7 +341,7 @@ Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, 
 
 | Campo | O que é |
 |---|---|
-| `fazendo` | o que a pessoa faz agora, numa frase curta, com concordância: "catando lenha na borda da mata", "espreitando um porco", "mirando o porco com a lança", "cozinhando a caça", "vigiando o fogo", "sentada junto ao fogo", "conversando com Aru", "dormindo". Sai do `detalhe`, da `acao` e da cena (enterro, casamento, festa, prece, guerra, colheita, obra), com o lugar dito como se fala: "perto do fogo", "na vila", "na praia", "na beira do lago", "na mata", "no morro". |
+| `fazendo` | o que a pessoa faz agora, numa frase curta, com concordância (no estágio 1, "no acampamento", não "na vila"): "catando lenha na borda da mata", "espreitando um porco", "mirando o porco com a lança", "cozinhando a caça", "vigiando o fogo", "sentada junto ao fogo", "conversando com Aru", "dormindo". Sai do `detalhe`, da `acao` e da cena (enterro, casamento, festa, prece, guerra, colheita, obra), com o lugar dito como se fala: "perto do fogo", "na vila", "na praia", "na beira do lago", "na mata", "no morro". |
 | `pensamento` | uma frase de até 60 caracteres, com a primeira letra maiúscula, tirada do estado real da pessoa (abaixo). Dormindo, é o sonho ou vazio (a linha pode ser escondida): um sonho da fonte mais forte que tem sonho (um morto ou o cônjuge, a fome, a doença, o deus, o frio, a seca, um susto, o medo do escuro), sempre quando ela pesa e, quando é fraca, só em um bloco de 2 horas em cada 3. Exemplos: "Sonha com Kidema", "Sonha com comida", "Sonha com a voz do Que Sacode", "Sonha que um bicho a persegue na mata". Para mostrar o sonho como narração, use `sonho`. |
 | `sonho` | dormindo, o sonho como narração, sem aspas e em minúscula: "sonhando com Vepeik", "sonhando que um bicho a persegue na mata" ("" acordado ou sem sonho). O `pensamento` de quem dorme continua com a frase ("Sonha com Vepeik"), para quem ainda a mostra; a apresentação pode trocar por `sonho`. |
 | `humor` | uma palavra ou duas, com concordância: "contente", "aflita", "de luto", "faminto", "assustada", "grato", "amargurada", "orgulhoso", "tranquila", "alegre" (criança)... Dormindo: "dormindo"; "inquieto no sono" (doença, fome, luto, aflição) ou "sono leve" (frio, susto, medo) quando há motivo. |
@@ -580,7 +582,7 @@ O retorno:
 **O `relato`:**
 - os anos que terminaram durante a ausência vêm da crônica oficial (`### Ano N`), inteiros, inclusive o que aconteceu antes de o deus sair;
 - o ano em andamento vem como `### Ano N (até agora)`. É escrito à parte, sem consumir nada da crônica oficial, que sai completa quando o ano terminar;
-- se nada de notável aconteceu, vem uma linha dizendo isso.
+- no fim, sempre, o de sempre em uma ou duas linhas: quem nasceu, morreu e casou no período, e o trabalho da estação no povo maior ("Nesses dez dias, nasceram duas crianças em Zeor. Em Zeor, colheram as roças e guardaram o grão."). Não há mais a linha "Enquanto o deus esteve fora, nada de notável aconteceu".
 
 Exemplo de 30 dias fechado (teto de um ano):
 

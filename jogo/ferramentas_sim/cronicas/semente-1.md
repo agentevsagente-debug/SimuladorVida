@@ -324,11 +324,11 @@ Nos anos 91 a 100 houve 27 fomes, quatro batalhas, 33 preces que pareceram atend
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 75 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: treina os jovens com lanças (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 54); queima os mortos (desde o ano 70).
-- **Sagak** vive na floresta, com 58 pessoas, em casas de pedra; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 44); queima os mortos (desde o ano 64).
+- **Zeor** vive no lago, com 73 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: treina os jovens com lanças (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 54); queima os mortos (desde o ano 70).
+- **Sagak** vive na floresta, com 57 pessoas, em casas de pedra; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 44); queima os mortos (desde o ano 64).
 - **Vian** vive na praia, com 6 pessoas, em casas de pedra; nasceu de uma briga em Sagak no ano 42; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); deixa oferendas no começo de cada estação (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 98).
 - **Viak** vive no morro, com 20 pessoas, em casas de pedra; nasceu de uma migração em Vian no ano 54; chama o deus de «a Mãe de Dois»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 55); não sai de casa em dia de tempestade (desde o ano 78); treina os jovens com lanças (desde o ano 83).
 
 Lugares com nome: Praia da Vitória (praia, para Vian), Praia do Luto (praia, para Sagak), Lago da Fome (lago, para Zeor), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor), Morro do Raio (morro, para Viak), Morro da Vitória (morro, para Zeor) e Morro do Luto (morro, para Sagak).
 
-Em 100 anos nasceram 587 pessoas e morreram 416.
+Em 100 anos nasceram 587 pessoas e morreram 419.

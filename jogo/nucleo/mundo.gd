@@ -105,7 +105,13 @@ var livros: Array = []           # crônicas fechadas deste mundo: {era, titulo,
 
 # ---------------------------------------------------------------- criação
 
-func _init(p_semente: int, p_comandos: Array = []) -> void:
+## O mundo novo começa de manhã (às HORA_INICIAL), com o povo saindo das cabanas: as primeiras
+## horas da noite passam aqui, como passos normais (o mundo é o mesmo que começaria à meia-noite,
+## só que o relógio já está de manhã). Ao carregar um mundo salvo, `p_hora_inicial` é 0.
+const HORA_INICIAL := 7
+
+
+func _init(p_semente: int, p_comandos: Array = [], p_hora_inicial: int = HORA_INICIAL) -> void:
 	semente = p_semente
 	rng.seed = p_semente
 	comandos = p_comandos
@@ -126,6 +132,8 @@ func _init(p_semente: int, p_comandos: Array = []) -> void:
 		zonas[chave] = z
 	_cronista = Cronista.new(self)
 	_criar_primeiro_povo()
+	while hora() < p_hora_inicial:
+		avancar_hora()
 
 
 func _criar_primeiro_povo(zona: String = "floresta") -> void:
@@ -2301,6 +2309,9 @@ func criar_povo(x: float = 275.0) -> Dictionary:
 	var zona := Cotidiano.zona_em(clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1))
 	if zona == "lago":
 		zona = "praia"
+	# O povo novo também começa de manhã: no mundo vazio, o tempo corre até as HORA_INICIAL.
+	while hora() != HORA_INICIAL:
+		avancar_hora()
 	era += 1
 	era_inicio_ano = ano()
 	_cronista.reabrir_ano(ano())
@@ -4391,12 +4402,26 @@ func sugestoes(n: int = 5) -> Array:
 # ---------------------------------------------------------------- crônica
 
 ## A crônica dos anos completos, do ano_ini ao ano_fim (-1: até o último completo).
+## A crônica dos anos fechados; sem `ano_fim`, termina com os gestos do deus no ano em curso
+## (veja `cronica_em_curso`).
 func cronica(ano_ini: int = -1, ano_fim: int = -1, com_prologo: bool = true, com_epilogo: bool = false) -> String:
 	if ano_ini < 0:
 		ano_ini = era_inicio_ano
+	var em_curso := ""
 	if ano_fim < 0:
 		ano_fim = _cronista.ultimo_ano_escrito
-	return _cronista.montar(ano_ini, ano_fim, "", "", com_prologo, com_epilogo)
+		em_curso = cronica_em_curso()
+	var t := _cronista.montar(ano_ini, ano_fim, "", "", com_prologo, com_epilogo)
+	if em_curso.is_empty():
+		return t
+	return em_curso if t.strip_edges().is_empty() else t + "\n\n" + em_curso
+
+
+## Os gestos do deus no ano em curso, na hora: "### Ano 3 (em curso)" e uma linha por gesto,
+## "Dia 1: Choveu do céu limpo sobre o acampamento. ...", com a reação do povo no mesmo dia.
+## "" se o deus não fez nada no ano. Quando o ano fecha, esses gestos entram na crônica do ano.
+func cronica_em_curso() -> String:
+	return _cronista.ano_em_curso()
 
 
 func cronica_ano(a: int) -> String:
@@ -4442,4 +4467,4 @@ func avancar_ausencia(segundos_reais: float, segundos_por_passo: float = SEGUNDO
 		if d["camada"] == "chamado":
 			chamados.append(d)
 	return {"passos": passos, "teto_atingido": pedidos > TETO_AUSENCIA, "de": de, "ate": tempo(),
-		"relato": _cronista.relato_periodo(ev_ini, eventos.size(), de["ano"], ano()), "chamados": chamados}
+		"relato": _cronista.relato_periodo(ev_ini, eventos.size(), de["ano"], ano(), passos / HORAS_DIA), "chamados": chamados}
