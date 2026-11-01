@@ -2,6 +2,21 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Medição final do jogo completo
+
+10 minutos por cenário (`ferramentas/rodar-medicoes.ps1`, resultados em `medicoes/*.json`), com 28 núcleos lógicos. A memória vai em três medidas; a coluna "Memória" do Gerenciador de Tarefas é o conjunto de trabalho privado.
+
+| Cenário | CPU média | CPU (1 núcleo) | Pico de amostra | Gerenciador, média / máx. | Conjunto de trabalho, máx. |
+|---|---|---|---|---|---|
+| Normal, 1x (semente 7, ano 1) | 0,192% | 5,4% | 0,33% | 123 / 125 MB | 228 MB |
+| 10x | 0,179% | 5,0% | 0,27% | 128 / 130 MB | 233 MB |
+| 50x | 0,184% | 5,2% | 0,30% | 130 / 133 MB | 236 MB |
+| Escondido | 0,008% | 0,2% | 0,05% | 102 MB | 203 MB |
+| **Avançado:** 50x num mundo de 150 anos (estágio 6, 4 povos, ruínas, culturas) | 0,307% | 8,6% | 0,69% | 189 / 211 MB | 315 MB |
+
+- A CPU fica abaixo de 1% em todos os cenários, até no mundo avançado a 50x.
+- A memória cresce com o mundo: cerca de 125 MB no início e de 190 a 210 MB num mundo de 150 anos (coluna do Gerenciador). O usuário já aceitou passar dos 200 MB de conjunto de trabalho.
+
 ## Luz, inverno e agricultura (arte, seção 19)
 
 - **Janelas acesas:** as camadas `_luz` das casas dos estágios 2 a 6 ficam numa camada própria, por cima das casas e sem a tabela de noite. Acendem das 17h30 às 6h30. De madrugada (23h às 4h30), só uma casa em cada três continua acesa.

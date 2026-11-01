@@ -1,13 +1,13 @@
 ﻿{
     "cenario":  "escondido",
-    "duracao_s":  600,
+    "duracao_s":  601,
     "nucleos_logicos":  28,
-    "cpu_media_pct":  0.14,
-    "cpu_media_1nucleo":  3.93,
-    "cpu_max_amostra_pct":  0.372,
-    "ws_media_mb":  208.5,
-    "ws_max_mb":  216.8,
-    "privada_max_mb":  215.5,
-    "gerenciador_media_mb":  106.5,
-    "gerenciador_max_mb":  113.2
+    "cpu_media_pct":  0.008,
+    "cpu_media_1nucleo":  0.21,
+    "cpu_max_amostra_pct":  0.049,
+    "ws_media_mb":  202.2,
+    "ws_max_mb":  202.5,
+    "privada_max_mb":  187.8,
+    "gerenciador_media_mb":  102.2,
+    "gerenciador_max_mb":  102.3
 }

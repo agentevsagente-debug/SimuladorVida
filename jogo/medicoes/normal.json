@@ -2,12 +2,12 @@
     "cenario":  "normal",
     "duracao_s":  601,
     "nucleos_logicos":  28,
-    "cpu_media_pct":  0.164,
-    "cpu_media_1nucleo":  4.6,
-    "cpu_max_amostra_pct":  0.245,
-    "ws_media_mb":  216.9,
-    "ws_max_mb":  217.4,
-    "privada_max_mb":  217.3,
-    "gerenciador_media_mb":  113.3,
-    "gerenciador_max_mb":  113.5
+    "cpu_media_pct":  0.192,
+    "cpu_media_1nucleo":  5.39,
+    "cpu_max_amostra_pct":  0.325,
+    "ws_media_mb":  225.7,
+    "ws_max_mb":  227.9,
+    "privada_max_mb":  229.6,
+    "gerenciador_media_mb":  122.7,
+    "gerenciador_max_mb":  124.6
 }
