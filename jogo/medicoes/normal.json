@@ -1,11 +1,13 @@
 ﻿{
     "cenario":  "normal",
-    "duracao_s":  603,
+    "duracao_s":  601,
     "nucleos_logicos":  28,
-    "cpu_media_pct":  0.149,
-    "cpu_media_1nucleo":  4.18,
-    "cpu_max_amostra_pct":  0.288,
-    "ws_media_mb":  217.1,
-    "ws_max_mb":  218.2,
-    "privada_max_mb":  223.7
+    "cpu_media_pct":  0.164,
+    "cpu_media_1nucleo":  4.6,
+    "cpu_max_amostra_pct":  0.245,
+    "ws_media_mb":  216.9,
+    "ws_max_mb":  217.4,
+    "privada_max_mb":  217.3,
+    "gerenciador_media_mb":  113.3,
+    "gerenciador_max_mb":  113.5
 }

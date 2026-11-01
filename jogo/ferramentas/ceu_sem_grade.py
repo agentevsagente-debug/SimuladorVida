@@ -37,8 +37,8 @@ def isolados(img):
 
 
 ## Os estados de cada faixa de horas, como em vista.gd (estado_da_hora).
-FAIXAS = [(0, 5, "noite", "noite"), (5, 6, "noite", "entardecer"), (6, 7, "entardecer", "dia"),
-          (7, 17, "dia", "dia"), (17, 18, "dia", "entardecer"), (18, 19, "entardecer", "entardecer"),
+FAIXAS = [(0, 5, "noite", "noite"), (5, 6.5, "noite", "entardecer"), (6.5, 8, "entardecer", "dia"),
+          (8, 17, "dia", "dia"), (17, 18, "dia", "entardecer"), (18, 19, "entardecer", "entardecer"),
           (19, 20, "entardecer", "noite"), (20, 24, "noite", "noite")]
 
 

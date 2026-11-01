@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dkdv23wkrac6u"
+path="res://.godot/imported/casa_pedra.png-32c49b00567a7fd785274109882ea9cc.image"
+
+[deps]
+
+source_file="res://arte/estagio3/casa_pedra.png"
+dest_files=["res://.godot/imported/casa_pedra.png-32c49b00567a7fd785274109882ea9cc.image"]
+
+[params]
+

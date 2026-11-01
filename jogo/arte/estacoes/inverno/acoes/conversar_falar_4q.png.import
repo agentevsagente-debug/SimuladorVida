@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://nsu5fk3lsre3"
+path="res://.godot/imported/conversar_falar_4q.png-caff13d49e5f86d91c719fb5e3d5bcb6.image"
+
+[deps]
+
+source_file="res://arte/estacoes/inverno/acoes/conversar_falar_4q.png"
+dest_files=["res://.godot/imported/conversar_falar_4q.png-caff13d49e5f86d91c719fb5e3d5bcb6.image"]
+
+[params]
+

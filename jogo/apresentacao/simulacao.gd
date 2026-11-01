@@ -27,10 +27,12 @@ var tempo := {}
 var clima := {}
 var pessoas: Array = []
 var construcoes: Array = []
+var ruinas: Array = []
 var zonas: Array = []
 var preces: Array = []
 var ausencia := {}       # retorno de avancar_ausencia() ao abrir, se houve
 var _acumulado := 0.0
+var _fracao_parada := 0.0  # a fração da hora em que a pausa começou
 var _vistos := 0
 var _ultimo_dia_salvo := -1
 var _chave_zonas := []
@@ -74,8 +76,10 @@ func avancar(delta: float) -> void:
 
 ## Quanto do passo atual já passou (0..1), para o céu andar entre as horas.
 func fracao() -> float:
-	if congelado or ritmo == Ritmo.PAUSA:
+	if congelado:
 		return 0.0
+	if ritmo == Ritmo.PAUSA:
+		return _fracao_parada
 	return clampf(_acumulado / SEGUNDOS[ritmo], 0.0, 1.0)
 
 
@@ -83,9 +87,12 @@ func hora_continua() -> float:
 	return float(tempo.get("hora", 12)) + fracao()
 
 
+## Troca o ritmo sem pular a hora: a fração já passada da hora continua a mesma.
 func definir_ritmo(novo: int) -> void:
+	var f := fracao()
 	ritmo = novo
-	_acumulado = 0.0
+	_fracao_parada = f
+	_acumulado = 0.0 if novo == Ritmo.PAUSA else f * SEGUNDOS[novo]
 
 
 ## Avança até o próximo acontecimento de camada "nota" ou "chamado".
@@ -96,6 +103,7 @@ func saltar() -> Array:
 		for ev in novos:
 			if ev["camada"] != "ambiente":
 				_acumulado = 0.0
+				_fracao_parada = 0.0
 				_ler()
 				return novos
 	_ler()
@@ -129,8 +137,10 @@ func _ler(inicio := false) -> void:
 	pessoas = mundo.pessoas_visiveis()
 	preces = mundo.preces_abertas()
 	var novas: Array = mundo.construcoes()
-	if inicio or novas != construcoes:
+	var novas_ruinas: Array = mundo.ruinas_visiveis()
+	if inicio or novas != construcoes or novas_ruinas.size() != ruinas.size():
 		construcoes = novas
+		ruinas = novas_ruinas
 		construcoes_mudaram.emit()
 	zonas = mundo.zonas_visiveis()
 	# só o que muda o desenho fixo: cinzas, pedra erguida, seca

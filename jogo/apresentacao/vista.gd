@@ -34,6 +34,7 @@ const Pessoas = preload("res://apresentacao/pessoas.gd")
 const Atmosfera = preload("res://apresentacao/atmosfera.gd")
 const Sinais = preload("res://apresentacao/sinais.gd")
 const Vida = preload("res://apresentacao/vida.gd")
+const Obras = preload("res://apresentacao/obras.gd")
 const REMAP = preload("res://apresentacao/remap.gdshader")
 
 const LARGURA := 480
@@ -97,6 +98,7 @@ var _chave_fixo := []
 var _vida: Vida
 var _estacao_fundos := ""
 var _gelo := []            # colunas de água congelada
+var _tremor := 0.0
 var _tex_fogueira: Texture2D
 var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
@@ -244,14 +246,16 @@ func _ao_receber_eventos(eventos: Array) -> void:
 		match ev["tipo"]:
 			"eclipse":
 				_eclipse_ate = sim.mundo.passo + 3
-			"chuva_divina", "raio_divino", "fogo_divino", "fartura_divina", "terra_erguida", "sonho":
+			"chuva_divina", "raio_divino", "fogo_divino", "fartura_divina", "terra_erguida", "sonho", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura":
 				var d: Dictionary = ev.get("dados", {})
 				var alvo := -1.0
 				var ids: Array = ev.get("participantes", [])
 				if not ids.is_empty():
 					alvo = sim.mundo.posicao_de(ids[0])
 				_atmosfera.poder(ev["tipo"], float(d.get("x", 240.0)), String(d.get("grau", "sinal")),
-					alvo, modo_discreto)
+					alvo, modo_discreto, d)
+				if ev["tipo"] == "pressagio" and d.get("forma", "") == "eclipse":
+					_eclipse_ate = sim.mundo.passo + 3
 
 
 # --- montagem -----------------------------------------------------------
@@ -409,24 +413,26 @@ func _montar_fixo() -> void:
 			# a peça fica por cima do reflexo, como em montar.py
 			agua_mascara.blit_rect_mask(_vazio(img.get_size()), img, Rect2i(Vector2i.ZERO, img.get_size()), pos)
 
-	var cabana := Arte.imagem(Arte.da_estacao("estagio1/cabana_galhos") + ".png")
-	var altar := Arte.imagem(Arte.da_estacao("estagio2/altar") + ".png")
+	var imagens := {}
 	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
+	# as ruínas ficam atrás das construções vivas
+	for o in (sim.ruinas if sim else []):
+		_colar_obra(terreno, cor, tag, imagens, Obras.peca(o["tipo"], int(o.get("estagio", 1)), true), roundi(o["x"]))
 	for o in obras:
 		var x := roundi(o.x)
 		match o.tipo:
-			"cabana":
-				terreno.colar(cor, tag, cabana, Vector2i(x - 8, _chao(x) - 15), Arte.MUNDO)
-			"altar":
-				terreno.colar(cor, tag, altar, Vector2i(x - 8, _chao(x) - 15), Arte.MUNDO)
-			"roca":
-				# 24 px: a peça de 16 repete a cada 4 px, então duas cópias emendam
-				for dx in [-12, -4]:
-					terreno.colar(cor, tag, roca, Vector2i(x + dx, _sup[clampi(x, 0, LARGURA - 1)] - 15), Arte.MUNDO)
+			"roca":  # a roça vai sobre a grama, com a base na superfície
+				var peca := roca if not o.get("irrigada", false) else _imagem_obra(imagens, "estagio6/roca_irrigada")
+				terreno.colar(cor, tag, peca, Vector2i(x - 8, _sup[clampi(x, 0, LARGURA - 1)] - 15), Arte.OBRA)
+			"barco":  # na água: a linha 14 do barco fica na linha d'água
+				var b := _imagem_obra(imagens, Obras.peca("barco", 6))
+				terreno.colar(cor, tag, b, Vector2i(x - b.get_width() / 2, Terreno.NIVEL_AGUA - 14), Arte.OBRA)
 			"fogueira":
 				var canto := Vector2i(x - 8, _chao(x) - 15)
 				_fogos.append({"canto": canto, "centro": float(x),
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
+			_:
+				_colar_obra(terreno, cor, tag, imagens, Obras.peca(o.tipo, int(o.get("estagio", 1))), x)
 	if sim:
 		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
 		for z in sim.zonas:
@@ -467,6 +473,20 @@ func _montar_fixo() -> void:
 	_fogueiras.queue_redraw()
 
 
+## Cola uma construção (ou ruína) com a base no chão em x.
+func _colar_obra(terreno, cor: Image, tag: Image, imagens: Dictionary, caminho: String, x: int) -> void:
+	if caminho == "":
+		return
+	var img := _imagem_obra(imagens, caminho)
+	terreno.colar(cor, tag, img, Vector2i(x - img.get_width() / 2, _chao(x) - img.get_height() + 1), Arte.OBRA)
+
+
+func _imagem_obra(imagens: Dictionary, caminho: String) -> Image:
+	if not imagens.has(caminho):
+		imagens[caminho] = Obras.primeiro_quadro(caminho, Arte.imagem(Arte.da_estacao(caminho) + ".png"))
+	return imagens[caminho]
+
+
 func _fase_da_roca() -> String:
 	if sim == null:
 		return "roca_arada"
@@ -485,11 +505,12 @@ func _fase_da_roca() -> String:
 ## Construções do núcleo, ou as da cena-alvo no modo layout.
 func _construcoes() -> Array:
 	if not _modo_layout:
-		return sim.construcoes.map(func(o): return {"tipo": o["tipo"], "x": float(o["x"])})
+		return sim.construcoes.map(func(o): return {"tipo": o["tipo"], "x": float(o["x"]),
+			"estagio": int(o.get("estagio", 1)), "largura": int(o.get("largura", 16)), "irrigada": o.get("irrigada", false)})
 	var r := []
 	for item in _layout["pecas"]:
 		if item["peca"] == "cabana_galhos":
-			r.append({"tipo": "cabana", "x": item["x"] + 8.0})
+			r.append({"tipo": "cabana", "x": item["x"] + 8.0, "estagio": 1, "largura": 16})
 	r.append({"tipo": "fogueira", "x": _layout["fogueira"]["x"] + 8.0})
 	return r
 
@@ -497,7 +518,7 @@ func _construcoes() -> Array:
 func _sob_construcao(item: Dictionary, obras: Array) -> bool:
 	var x0 := float(item["x"])
 	for o in obras:
-		if abs(x0 + 4.0 - o.x) < 14.0:
+		if abs(x0 + 4.0 - o.x) < o.get("largura", 16) / 2.0 + 6.0:
 			return true
 	return false
 
@@ -505,6 +526,11 @@ func _sob_construcao(item: Dictionary, obras: Array) -> bool:
 ## Onde uma partícula toca: a linha d'água no mar, o chão no resto.
 func chao(x: int) -> int:
 	return Terreno.NIVEL_AGUA - 1 if _na_agua(x) else _chao(x)
+
+
+## O terremoto treme a vista por alguns segundos.
+func tremer(segundos: float) -> void:
+	_tremor = maxf(_tremor, segundos)
 
 
 func estacao_atual() -> String:
@@ -625,8 +651,9 @@ func _desenhar_fogueiras() -> void:
 ## Mistura de estados do céu pela hora (com minutos), quantizada em 16 passos.
 static func estado_da_hora(h: float) -> Array:
 	var faixas := [
-		[0.0, 5.0, NOITE, NOITE], [5.0, 6.0, NOITE, ENTARDECER], [6.0, 7.0, ENTARDECER, DIA],
-		[7.0, 17.0, DIA, DIA], [17.0, 18.0, DIA, ENTARDECER], [18.0, 19.0, ENTARDECER, ENTARDECER],
+		# a manhã: a noite vira entardecer até as 6h30, e o dia só fica pleno às 8h
+		[0.0, 5.0, NOITE, NOITE], [5.0, 6.5, NOITE, ENTARDECER], [6.5, 8.0, ENTARDECER, DIA],
+		[8.0, 17.0, DIA, DIA], [17.0, 18.0, DIA, ENTARDECER], [18.0, 19.0, ENTARDECER, ENTARDECER],
 		[19.0, 20.0, ENTARDECER, NOITE], [20.0, 24.0, NOITE, NOITE]]
 	for f in faixas:
 		if h >= f[0] and h < f[1]:
@@ -697,6 +724,9 @@ func _atualizar_camera(delta: float) -> void:
 	else:
 		camera = camera.move_toward(alvo, maxf(40.0, camera.distance_to(alvo) * 3.0) * delta)
 	var c := camera.round()
+	if _tremor > 0.0:  # terremoto: a vista sacode 1 px em direções sorteadas (sorteio da apresentação)
+		_tremor -= delta
+		c += Vector2(randi_range(-1, 1), randi_range(-1, 1))
 	if [zoom, c] == _camera_aplicada:
 		return
 	_camera_aplicada = [zoom, c]

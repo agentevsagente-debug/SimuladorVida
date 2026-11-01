@@ -22,6 +22,7 @@ const PASSO_ANDAR := 9.0      # px/s médio de quem anda; cada pessoa varia de 0
 const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
+const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
 ## Microanimações de quem está parado: folha, quadros, segundos.
 const MICRO := [["acoes/olhar_lados_4q", 4, 4.0], ["acoes/esticar_4q", 4, 2.0], ["acoes/sentar_chao_4q", 4, 7.0],
 	["acoes/agachar_2q", 2, 3.0], ["acoes/cocar_cabeca_4q", 4, 2.4], ["acoes/bocejar_4q", 4, 2.2]]
@@ -83,6 +84,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var t: Dictionary = trechos[id]
 		var acao: String = t.acao
 		var destino: float = lugar.get(id, t.destino)
+		if acao != "remar":  # só no barco se fica sobre a água
+			destino = maxf(destino, MARGEM)
 		var x: float = _x.get(id, destino)
 		var vel := PASSO_ANDAR * (0.8 + 0.4 * _dado(id, 0)) * rapido
 		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
@@ -123,7 +126,7 @@ func atualizar(delta: float, relogio: float) -> Array:
 				else opcoes.cabelos.size() - 1
 		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
 		var xr := roundi(x)
-		var base: int = vista.chao_pessoa(xr) - (1 if _atras.has(id) else 0) - int(visual[3])
+		var base: int = vista.chao_pessoa(xr) - (2 if _atras.has(id) else 0) - int(visual[3])
 		var largura: int = visual[1]
 		r.append({"id": id, "folha": visual[0], "quadro": visual[2], "largura": largura,
 			"x": xr - (6 if crianca else 8) / 2, "base": base, "espelho": espelho,
@@ -327,9 +330,14 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
 				_atras[roda[i]] = true
 	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
-	var xs := _empacotar(desejos.map(func(d): return d[0]))
+	# com muita gente, duas fileiras: os de índice ímpar ficam meio passo atrás,
+	# 2 px acima e desenhados antes, em vez de uma fila só de ponta a ponta
+	var denso := desejos.size() > MULTIDAO
+	var xs := _empacotar(desejos.map(func(d): return d[0]), ESPACO / 2.0 if denso else float(ESPACO))
 	for i in desejos.size():
 		lugar[desejos[i][1]] = xs[i]
+		if denso and i % 2 == 1:
+			_atras[desejos[i][1]] = true
 	return lugar
 
 
@@ -357,26 +365,26 @@ func _lugares_da_roda(f: float, n: int, cabanas: Array) -> Array:
 ## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível
 ## das desejadas (blocos que se encostam se juntam e se centram), dentro da
 ## terra e da tela.
-static func _empacotar(desejado: Array) -> Array:
-	var blocos := []  # [quantos, soma de (x - k × ESPACO)]
+static func _empacotar(desejado: Array, espaco: float = ESPACO) -> Array:
+	var blocos := []  # [quantos, soma de (x - k × espaco)]
 	for x in desejado:
 		blocos.append([1, x])
 		while blocos.size() >= 2:
 			var a: Array = blocos[-2]
 			var b: Array = blocos[-1]
-			if a[1] / a[0] + a[0] * ESPACO <= b[1] / b[0]:
+			if a[1] / a[0] + a[0] * espaco <= b[1] / b[0]:
 				break
 			blocos.pop_back()
-			blocos[-1] = [a[0] + b[0], a[1] + b[1] - b[0] * a[0] * ESPACO]
+			blocos[-1] = [a[0] + b[0], a[1] + b[1] - b[0] * a[0] * espaco]
 	var xs := []
 	for bl in blocos:
 		var inicio: float = bl[1] / bl[0]
 		for k in bl[0]:
-			xs.append(inicio + k * ESPACO)
+			xs.append(inicio + k * espaco)
 	for i in xs.size():  # a margem do lago e a borda direita
-		xs[i] = maxf(xs[i], MARGEM if i == 0 else xs[i - 1] + ESPACO)
+		xs[i] = maxf(xs[i], MARGEM if i == 0 else xs[i - 1] + espaco)
 	for i in range(xs.size() - 1, -1, -1):
-		xs[i] = minf(xs[i], LARGURA - 4.0 if i == xs.size() - 1 else xs[i + 1] - ESPACO)
+		xs[i] = minf(xs[i], LARGURA - 4.0 if i == xs.size() - 1 else xs[i + 1] - espaco)
 	return xs
 
 

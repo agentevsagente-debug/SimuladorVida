@@ -148,6 +148,7 @@ func _process(delta: float) -> void:
 			Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)])
 	# Se o jogador restaurar a janela pela barra de tarefas, volta a desenhar.
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
+		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
 		mostrar()
 	vista.avancar(delta, not escondida)
 	if not escondida:
@@ -281,11 +282,14 @@ func _aplicar_escala(nova: int, guardar := true) -> void:
 func _aplicar_passagem_mouse() -> void:
 	var k := escala
 	var alca: int = interface.largura()
+	var relogio: Rect2i = interface.RELOGIO
 	var poligono := PackedVector2Array([
 		Vector2(0, 0),
 		Vector2(alca * k, 0),
 		Vector2(alca * k, FAIXA * k),
-		Vector2(BASE.x * k, FAIXA * k),
+		Vector2(relogio.position.x * k, FAIXA * k),  # o relógio, no canto de cima à direita
+		Vector2(relogio.position.x * k, 0),
+		Vector2(BASE.x * k, 0),
 		Vector2(BASE.x * k, BASE.y * k),
 		Vector2(0, BASE.y * k),
 	])

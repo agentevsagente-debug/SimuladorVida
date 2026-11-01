@@ -14,6 +14,7 @@ const Arte = preload("res://apresentacao/arte.gd")
 
 var figuras: Array = []
 var _cache := {}
+var _cache_estacao := ""
 var _assinatura := []
 
 
@@ -30,9 +31,12 @@ func definir(novas: Array) -> void:
 
 
 func _folha(nome: String, espelho: bool) -> Texture2D:
-	var chave := "%s|%s" % [nome, espelho]
+	var chave := "%s|%s|%s" % [nome, espelho, Arte.estacao]
 	if not _cache.has(chave):
-		var img := Arte.imagem("%s.png" % nome)
+		if _cache_estacao != Arte.estacao:  # na troca de estação, as folhas de antes saem
+			_cache.clear()
+			_cache_estacao = Arte.estacao
+		var img := Arte.imagem(Arte.da_estacao(nome) + ".png")  # no inverno, capuz e manto
 		if espelho:
 			img.flip_x()
 		_cache[chave] = ImageTexture.create_from_image(img)

@@ -120,6 +120,32 @@ Em `apresentacao/vida.gd`:
 3. **Contadores do Godot:** comparado ao protótipo da fase 0, o jogo tem 6,5 MB a mais de memória estática do motor, 3 MB de texturas e 3 MB de vídeo. O resto da diferença está fora do motor: driver, bibliotecas e sobra do heap depois da montagem.
 4. **Correção de método:** desde a fase 0, chamei o conjunto de trabalho de "a Memória do Gerenciador de Tarefas", e isso está errado. A coluna "Memória" do Gerenciador de Tarefas é o conjunto de trabalho **privado**, que não conta as páginas compartilhadas do executável do editor. O `medir.ps1` agora grava as três medidas.
 
+## Auditoria visual da sessão C (itens da B)
+
+"Antes" são as capturas da auditoria, em `arte_claude/auditoria/`. "Depois" são as capturas em `jogo/capturas/auditoria-*.png`.
+
+| Item | O que mudou | Depois |
+|---|---|---|
+| **1. Construções** | `apresentacao/obras.gd` liga `construcoes()` (tipo e estágio) às peças da arte: cabana, taipa, casa de pedra, enxaimel e tijolo; templo de cada estágio; celeiro; forja; arquivo; moinho; muralha; barco na linha d'água; roça (irrigada no estágio 6). As ruínas de `ruinas_visiveis()` ficam atrás. As variações de cultura (telhado e símbolo) ainda usam a peça de exemplo, porque a API não diz a cultura de cada povo. | `auditoria-1-mundo-60-anos.png`, `auditoria-1-mundo-150-anos.png` |
+| **2. Gente sobre o lago** | Só quem `remar` fica sobre a água. Os outros têm o x preso à margem (x ≥ 130), inclusive nos trechos da agenda. | mundo de 150 anos |
+| **3 e 4. Multidão e acampamento** | Com mais de 14 pessoas paradas, formam-se duas fileiras: uma meio passo atrás, 2 px acima e desenhada antes. A roda da fogueira pula as cabanas. A distribuição fina depende do x de descanso que a sessão A vai dar a cada pessoa. | `cotidiano-*.gif` |
+| **6. Chuva** | Nuvens em duas camadas, com espaço, altura, quadro e lado irregulares, cobrindo o alto do céu sobre a chuva. | `auditoria-6-chuva.png` |
+| **9. Os 5 poderes da fase 2** | Seca, dilúvio, terremoto, presságio e cura no seletor (ícones da C) e no gesto. Efeitos: seca (calor e rachaduras), dilúvio (chuva pesada), terremoto (tela tremendo, fenda, poeira e pedras), presságio (cometa, eclipse com o céu de eclipse, ou luzes) e cura (luz e brilhos). | `auditoria-9-*.png` |
+| **10. Manhã** | A noite vira entardecer até as 6h30, e o dia só fica pleno às 8h. Às 7h há amanhecer. | `auditoria-10-manha-7h.png` |
+| **12. Raio** | A descarga e o canal esfriando duram 0,6 s, o impacto 0,8 s e o clarão 0,12 s. | `auditoria-12-raio.png` |
+| **13. Cabanas à noite** | As construções têm etiqueta própria e pegam um nível a menos de luz do fogo, então perdem o contorno néon. Por isso a fidelidade de noite com a montagem da arte passou de 0 para 59 pixels (0,08%), todos nas bordas das cabanas perto do fogo. | `auditoria-13-noite.png` |
+
+**Também mudou:**
+- **Inverno:** as pessoas usam o capuz e o manto da C.
+- **Fumaça, mata e montanhas:** vêm da arte corrigida, sincronizada por `ferramentas/sincronizar_arte.py`.
+
+## Relógio do mundo
+
+- **Onde e como:** canto superior direito da faixa da alça, numa pastilha escura (`caixa_dica_9s`), com a fonte 5×7 clara (dourada à noite).
+- **Minutos:** saem da fração da hora; no ritmo rápido, de 10 em 10; na pausa, parado; no salto, avançam junto.
+- **Cursor por cima:** a dica mostra "Dia 12 do outono, ano 37".
+- **Mouse:** a área do relógio entra no polígono de passagem do mouse.
+
 ## Tarefa 5: leveza
 
 **Método:** o mesmo da fase 0. `jogo/ferramentas/medir.ps1`:
@@ -134,6 +160,19 @@ Em `apresentacao/vida.gd`:
 - **rápido:** visível, ritmo rápido, com gente andando o tempo todo;
 - **escondido:** minimizado.
 
-__TABELA__
+**Medições de 10 minutos** (código de `90e0b6b`, peças de CPU importadas como Image, escala 3x):
 
-__LEITURA__
+| Cenário | CPU média (máquina) | % de 1 núcleo | Conjunto de trabalho (médio) | Gerenciador de Tarefas, "Memória" (médio) | Bytes privados (máx.) |
+|---|---|---|---|---|---|
+| normal | 0,164% | 4,6% | 216,9 MB | 113,3 MB | 217,3 MB |
+| rápido | 0,185% | 5,2% | 215,6 MB | 112,3 MB | 215,3 MB |
+| escondido, 6 min sozinho | ~0,014% | 0,4% | 199–200 MB | — | — |
+
+**Leitura de 60 s com o código final** (construções, poderes, relógio), em 3x: 217,8 MB de conjunto de trabalho, 114,7 MB na coluna "Memória" do Gerenciador de Tarefas e 217,1 MB de bytes privados.
+
+- **CPU:** muito abaixo da meta de 2% nos três cenários.
+- **Memória:** depende de qual medida vale para a meta.
+  - Na coluna "Memória" do Gerenciador de Tarefas, que é o que o usuário vê, o jogo usa cerca de 113 MB, abaixo de 200.
+  - No conjunto de trabalho e nos bytes privados, usa cerca de 216 MB, acima de 200.
+  - **Decisão do orquestrador:** qual das medidas vale para a meta, e se autoriza os modelos de exportação, que tirariam o código do editor.
+- **Escondido nas medições em lote:** nas duas vezes, algo de fora restaurou a janela por volta de 150 a 250 s, e a CPU e a memória subiram ao nível do visível. O CSV de `escondido` registra isso. Rodando sozinho por 6 minutos, o cenário ficou minimizado o tempo todo, sem restaurações, com 199–200 MB e 0,4% de um núcleo.

@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://g8v1xafxure"
+path="res://.godot/imported/templo_parede.png-a692e37cfcf05fd6dcf9a41c8522dec3.image"
+
+[deps]
+
+source_file="res://arte/estagio2/templo_parede.png"
+dest_files=["res://.godot/imported/templo_parede.png-a692e37cfcf05fd6dcf9a41c8522dec3.image"]
+
+[params]
+

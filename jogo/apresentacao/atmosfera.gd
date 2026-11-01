@@ -12,7 +12,7 @@ const NEBLINA = preload("res://apresentacao/neblina.gdshader")
 const DIA := 0
 const ENTARDECER := 1
 const NOITE := 2
-const CLARAO := 0.09  # segundos de céu claro num raio
+const CLARAO := 0.12  # segundos de céu claro num raio
 ## Força visual de cada grau do poder.
 const FORCA := {"sinal": 0.5, "milagre": 1.0, "imposicao": 1.5}
 
@@ -39,6 +39,7 @@ var _neve_ligada := false
 var _espera_folha := 0.0
 var _chuva_divina := Vector2i(-1, -1)
 var _chuva_divina_resta := 0.0
+var _chuva_forte := false
 
 
 ## `antes_de` é o nó que fica logo acima da neblina (o primeiro plano).
@@ -77,7 +78,7 @@ func definir_camera(origem: Vector2, zoom: float) -> void:
 
 ## Efeito visual de um poder usado em x. `alvo` é o x de quem foi atingido (raio,
 ## sonho), ou -1. No modo discreto, fogo e raio não mostram chamas nem impacto.
-func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool) -> void:
+func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, dados := {}) -> void:
 	var f: float = FORCA.get(grau, 0.5)
 	var chao: int = vista.chao(int(x))
 	match tipo:
@@ -113,6 +114,49 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool) ->
 			fosco.emitir("terra_subindo_4q", 32, 4, Vector2(x, chao + 1), Vector2.ZERO, 1.4)
 			fosco.emitir("poeira_4q", 16, 4, Vector2(x - 12, chao + 1), Vector2(-4, 0), 0.9)
 			fosco.emitir("poeira_4q", 16, 4, Vector2(x + 12, chao + 1), Vector2(4, 0), 0.9)
+		"seca_divina":  # calor subindo do chão e rachaduras abrindo na superfície
+			for i in int(6 + 6 * f):
+				var px := x + _rng.randf_range(-40.0, 40.0)
+				fosco.emitir("calor_4q", 16, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2(0, -4),
+					_rng.randf_range(2.5, 5.0), 5.0, i)
+			for dx in [-24, 8, 40]:
+				var px: float = x + dx - 8
+				fosco.emitir("seca_rachaduras_4q", 32, 4, Vector2(px, vista.chao(int(px)) + 7), Vector2.ZERO, 10.0 * f)
+		"diluvio":  # chuva pesada sobre uma faixa larga
+			var meia := int(60.0 + 50.0 * f)
+			_chuva_divina = Vector2i(maxi(0, int(x) - meia), mini(479, int(x) + meia))
+			_chuva_divina_resta = 8.0 + 10.0 * f
+			_chuva_forte = true
+		"terremoto_divino":  # a tela treme, a terra abre, sobe poeira e caem pedras
+			vista.tremer(1.5 + 1.5 * f)
+			if not discreto:
+				fosco.emitir("fenda_4q", 16, 4, Vector2(x, chao + 16), Vector2.ZERO, 4.0)
+			for i in int(3 + 3 * f):
+				var px := x + _rng.randf_range(-50.0, 50.0)
+				fosco.emitir("poeira_terremoto_4q", 32, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
+					_rng.randf_range(1.2, 2.2))
+			for i in int(6 + 6 * f):
+				var px := x + _rng.randf_range(-60.0, 60.0)
+				fosco.emitir("pedras_caindo_3v", 4, 3, Vector2(px, _rng.randf_range(50, 90)),
+					Vector2(_rng.randf_range(-4, 4), 70), 0.8, 0.0, _rng.randi_range(0, 2))
+		"pressagio":  # no céu, visto por todos: cometa, eclipse ou luzes
+			match String(dados.get("forma", "cometa")):
+				"cometa":
+					luminoso.emitir("cometa_4q", 32, 4, Vector2(500, _rng.randf_range(18, 34)), Vector2(-50, 4),
+						11.0, 6.0)
+				"eclipse":  # o disco escuro sobre o sol (o céu vira o de eclipse)
+					luminoso.emitir("eclipse_4q", 16, 4, Vector2(70, 30), Vector2.ZERO, 12.0)
+				_:
+					for i in 18:
+						luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(_rng.randf_range(20, 460), _rng.randf_range(10, 60)),
+							Vector2(_rng.randf_range(-3, 3), _rng.randf_range(-2, 2)), _rng.randf_range(3, 7), 5.0, i)
+		"cura":  # luz suave que desce sobre quem é curado
+			var px := alvo if alvo >= 0.0 else x
+			var c: int = vista.chao(int(px))
+			luminoso.emitir("cura_luz_4q", 16, 4, Vector2(px, c + 1), Vector2.ZERO, 2.5)
+			for i in 6:
+				luminoso.emitir("cura_brilho_4q", 8, 4, Vector2(px + _rng.randf_range(-8, 8), c - _rng.randf_range(4, 22)),
+					Vector2(0, -3), _rng.randf_range(1.5, 3.0), 5.0, i)
 		"sonho":
 			var px := alvo if alvo >= 0.0 else x
 			var c: int = vista.chao(int(px))
@@ -238,19 +282,30 @@ func _chuva(delta: float, clima: Dictionary) -> void:
 			faixa = _chuva_divina
 	elif _chuva_divina.x >= 0:
 		_chuva_divina = Vector2i(-1, -1)
+		_chuva_forte = false
 	if faixa != _nuvens_em:
 		fosco.limpar("nuvem_chuva_2q")
 		_nuvens_em = faixa
 		if faixa.x >= 0:
-			for x in range(faixa.x + 20, faixa.y, 40):
-				fosco.emitir("nuvem_chuva_2q", 48, 2, Vector2(x, _rng.randf_range(26, 34)), Vector2.ZERO,
-					1e9, 1.5, _rng.randi_range(0, 1))
+			# nuvens em duas camadas, com espaço, altura, quadro e lado irregulares:
+			# cobrem o alto do céu sobre a chuva, que fica mais escuro
+			var x := float(faixa.x) - 10.0
+			while x < faixa.y + 10:
+				for camada in 2:
+					fosco.emitir("nuvem_chuva_2q", 48, 2, Vector2(x + camada * _rng.randf_range(10, 22),
+						_rng.randf_range(12, 22) + camada * _rng.randf_range(8, 14)), Vector2(_rng.randf_range(-1.5, 1.5), 0),
+						1e9, _rng.randf_range(0.8, 1.8), _rng.randi_range(0, 1), {"espelho": _rng.randf() < 0.5})
+				x += _rng.randf_range(26, 40)
 	if faixa.x < 0:
 		return
-	var n := int((faixa.y - faixa.x) * delta * 1.2 + _rng.randf())
+	var n := int((faixa.y - faixa.x) * delta * (2.5 if _chuva_forte else 1.2) + _rng.randf())
 	for i in n:
-		fosco.emitir("gotas_3v", 4, 3, Vector2(_rng.randf_range(faixa.x, faixa.y), _rng.randf_range(30, 40)),
-			Vector2(-8, 150), 2.0, 0.0, _rng.randi_range(0, 2))
+		if _chuva_forte:
+			fosco.emitir("chuva_forte_3v", 4, 3, Vector2(_rng.randf_range(faixa.x, faixa.y), _rng.randf_range(30, 44)),
+				Vector2(-14, 210), 2.0, 0.0, _rng.randi_range(0, 2))
+		else:
+			fosco.emitir("gotas_3v", 4, 3, Vector2(_rng.randf_range(faixa.x, faixa.y), _rng.randf_range(30, 40)),
+				Vector2(-8, 150), 2.0, 0.0, _rng.randi_range(0, 2))
 	if forcar_raio or not tempestade.is_empty():
 		_espera_raio -= delta
 		if _espera_raio <= 0.0:
@@ -262,8 +317,9 @@ func _chuva(delta: float, clima: Dictionary) -> void:
 func raio(x: float) -> void:
 	var chao: int = vista.chao(int(x))
 	var folha: String = ["raio_a_2q", "raio_b_2q", "raio_c_2q"][_rng.randi_range(0, 2)]
-	luminoso.emitir(folha, 32, 2, Vector2(x, chao), Vector2.ZERO, 0.35)
-	luminoso.emitir("raio_impacto_4q", 16, 4, Vector2(x, chao + 2), Vector2.ZERO, 0.5)
+	# a descarga fica 0,3 s e o canal esfriando outros 0,3 s; o impacto dura 0,8 s
+	luminoso.emitir(folha, 32, 2, Vector2(x, chao), Vector2.ZERO, 0.6)
+	luminoso.emitir("raio_impacto_4q", 16, 4, Vector2(x, chao + 2), Vector2.ZERO, 0.8)
 	fosco.emitir("poeira_4q", 16, 4, Vector2(x, chao + 1), Vector2.ZERO, 0.6)
 	_clarao = CLARAO
 
@@ -271,7 +327,7 @@ func raio(x: float) -> void:
 func _respingos() -> void:
 	var tocou := []
 	for p in fosco.particulas:
-		if p.folha == "gotas_3v" and p.pos.y >= vista.chao(int(p.pos.x)):
+		if p.folha in ["gotas_3v", "chuva_forte_3v"] and p.pos.y >= vista.chao(int(p.pos.x)):
 			p.idade = p.vida
 			tocou.append(p.pos)
 	for pos in tocou:

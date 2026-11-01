@@ -145,7 +145,11 @@ void fragment() {
 				c = trocar(c, NOITE_AGUA);
 			} else {
 				float s = round(texelFetch(superficie, ivec2(p.x, 0), 0).r * 255.0);
-				c = trocar(c, float(p.y) > s + 3.0 ? NOITE : linha_de_luz(nivel(luz, p)));
+				int n = nivel(luz, p);
+				if (tag == 6) {  // construções: um nível a menos, sem contorno forte
+					n -= 1;
+				}
+				c = trocar(c, float(p.y) > s + 3.0 ? NOITE : linha_de_luz(n));
 			}
 		}
 	} else if (plano == PESSOA) {

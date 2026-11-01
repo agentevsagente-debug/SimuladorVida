@@ -22,12 +22,15 @@ const ALTURA_ALCA := 18
 const PEGA := 10          # largura da zona de arraste à esquerda
 const BOTAO := 16
 const PASSO_BOTAO := 17
-const PODERES := ["chuva", "raio", "fogo", "fartura", "erguer_terra", "sonho"]
+const PODERES := ["chuva", "raio", "fogo", "fartura", "erguer_terra", "sonho",
+	"seca", "diluvio", "terremoto", "pressagio", "cura"]
 ## Nome do poder no núcleo e na tela.
 const PODER_NUCLEO := {"chuva": "chuva", "raio": "raio", "fogo": "fogo", "fartura": "fartura",
-	"erguer_terra": "erguer", "sonho": "sonho"}
+	"erguer_terra": "erguer", "sonho": "sonho", "seca": "seca", "diluvio": "diluvio",
+	"terremoto": "terremoto", "pressagio": "pressagio", "cura": "cura"}
 const NOME_PODER := {"chuva": "Chuva", "raio": "Raio", "fogo": "Fogo", "fartura": "Fartura",
-	"erguer_terra": "Erguer a terra", "sonho": "Sonho"}
+	"erguer_terra": "Erguer a terra", "sonho": "Sonho", "seca": "Seca", "diluvio": "Dilúvio",
+	"terremoto": "Terremoto", "pressagio": "Presságio", "cura": "Cura"}
 const RITMOS := ["pausa", "normal", "rapido", "salto"]
 const NOME_RITMO := {"pausa": "Pausa", "normal": "Ritmo normal", "rapido": "Ritmo rápido",
 	"salto": "Saltar ao próximo acontecimento"}
@@ -38,6 +41,9 @@ const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "cu
 const NOME_ZONA := {"lago": "O lago", "praia": "A praia", "floresta": "A floresta", "morro": "O morro"}
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
 const CARGA_SEGUNDOS := 2.0
+## O relógio do mundo, no canto de cima à direita, numa pastilha escura.
+const RELOGIO := Rect2i(438, 1, 42, 15)
+const DA_ESTACAO := {"primavera": "da primavera", "verão": "do verão", "outono": "do outono", "inverno": "do inverno"}
 
 var vista: Node2D
 var poder := ""            # poder escolhido ("" = nenhum)
@@ -188,6 +194,12 @@ func _texto_linhagem() -> String:
 func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 	_cursor = pos
 	var na_alca := pos.y < faixa and pos.x < largura()
+	var no_relogio := RELOGIO.has_point(Vector2i(pos))
+	if event is InputEventMouseMotion and no_relogio:
+		_mostrar_dica([_data_do_relogio()], -1, Vector2(RELOGIO.position.x - 70, RELOGIO.end.y + 3), false)
+		return true
+	if event is InputEventMouseButton and no_relogio:
+		return true
 	if event is InputEventMouseMotion:
 		var b := _botao_em(pos) if na_alca else {}
 		var novo: String = b.get("id", "")
@@ -312,13 +324,29 @@ func _usar_poder() -> void:
 
 func avancar(delta: float) -> void:
 	_relogio += delta
-	var assinatura := [_carregando, int(intensidade() * 8.0) if _carregando else 0,
+	var assinatura := [_texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo]
 	if assinatura != _ultimo_desenho:
-		if _ultimo_desenho.size() > 3 and (assinatura[3] != _ultimo_desenho[3] or assinatura[4] != _ultimo_desenho[4]):
+		if _ultimo_desenho.size() > 4 and (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]):
 			_montar_botoes()
 		_ultimo_desenho = assinatura
 		queue_redraw()
+
+
+## "14:15": a hora do mundo, com os minutos da fração do passo. No ritmo rápido,
+## de 10 em 10 minutos, para não piscar; na pausa, parado.
+func _texto_relogio() -> String:
+	if vista.sim == null or vista.sim.tempo.is_empty():
+		return ""
+	var f: float = vista.sim.fracao()
+	var minutos := int(f * 6.0) * 10 if vista.sim.ritmo == Simulacao.Ritmo.RAPIDO else int(f * 60.0)
+	return "%02d:%02d" % [int(vista.sim.tempo["hora"]), mini(minutos, 59)]
+
+
+func _data_do_relogio() -> String:
+	var t: Dictionary = vista.sim.tempo
+	var dia_na_estacao := (int(t["dia"]) - 1) % 10 + 1
+	return "Dia %d %s, ano %d" % [dia_na_estacao, DA_ESTACAO.get(t["estacao"], ""), t["ano"]]
 
 
 func _avisar(texto: String) -> void:
@@ -612,11 +640,17 @@ func _draw() -> void:
 		for i in 20:
 			var cor: Color = Arte.paleta[22 if i < n else 3]
 			draw_rect(Rect2(r.position.x + 12 + i, r.position.y + 5, 1, 2), cor)
+	var hora := _texto_relogio()
+	if hora != "":
+		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), Rect2(RELOGIO), 4)
+		var fonte_relogio: Font = _fontes["dourada" if vista.sim.tempo.get("noite", false) else "clara"]
+		var w := fonte_relogio.get_string_size(hora).x
+		draw_string(fonte_relogio, Vector2(RELOGIO.position.x + roundi((RELOGIO.size.x - w) / 2.0), 12), hora)
 	if _relogio < _mensagem_ate and _mensagem != "":
 		var fonte: Font = _fontes["clara"]
 		var w := int(fonte.get_string_size(_mensagem).x)
 		var r := Rect2(largura() + 2, 2, w + 10, 14)
-		if r.end.x > 480:
+		if r.end.x > RELOGIO.position.x - 2:
 			r.position = Vector2(480 - r.size.x, ALTURA_ALCA + 1)
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), r, 4)
 		draw_string(fonte, r.position + Vector2(5, 11), _mensagem)

@@ -12,6 +12,7 @@ const PESSOA := 2
 const FOGO := 3
 const AGUA := 4
 const FRENTE := 5
+const OBRA := 6     # construções: à noite, a luz do fogo pega um nível a menos (sem "néon" nas bordas)
 
 ## Linhas da textura de tabelas, na ordem que remap.gdshader espera.
 const LINHAS_TABELA := ["", "entardecer", "noite", "fogo_medio", "fogo_perto",
