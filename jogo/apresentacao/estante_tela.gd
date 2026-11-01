@@ -247,7 +247,7 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 				return
 			if FECHAR.has_point(p):
 				fechar()
-			elif ABANDONAR.has_point(p):
+			elif ABANDONAR.has_point(p) and _pode_abandonar():
 				pedir_confirmacao()
 			else:
 				var i := _livro_em(p)
@@ -313,11 +313,17 @@ func _livro_em(p: Vector2i) -> int:
 	return -1
 
 
+## "Abandonar este mundo" só aparece do segundo ano em diante: na primeira hora,
+## é um botão perigoso e sem contexto (auditoria 8, P8).
+func _pode_abandonar() -> bool:
+	return int(vista.sim.tempo.get("ano", 1)) >= 2
+
+
 func _mover(p: Vector2i, pos: Vector2) -> void:
 	var sob := _livro_em(p) if modo == "estante" else -1
 	var botao := ""
 	if modo == "estante":
-		botao = "fechar" if FECHAR.has_point(p) else ("abandonar" if ABANDONAR.has_point(p) else "")
+		botao = "fechar" if FECHAR.has_point(p) else ("abandonar" if ABANDONAR.has_point(p) and _pode_abandonar() else "")
 	elif modo == "confirmar":
 		botao = "sim" if SIM.has_point(p) else ("nao" if NAO.has_point(p) else "")
 	if sob != _sob or botao != _sob_botao:
@@ -367,7 +373,8 @@ func _draw() -> void:
 		if l.get("atual", false):  # a era em curso: uma fita dourada saindo de cima
 			draw_rect(Rect2(r.position.x + 8, y - 3, 1, 3), Arte.paleta[22])
 	_botao_texto(FECHAR, "Fechar", _sob_botao == "fechar")
-	_botao_texto(ABANDONAR, "Abandonar este mundo", _sob_botao == "abandonar")
+	if _pode_abandonar():
+		_botao_texto(ABANDONAR, "Abandonar este mundo", _sob_botao == "abandonar")
 	if modo == "confirmar":
 		_desenhar_confirmar()
 

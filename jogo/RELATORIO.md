@@ -2,6 +2,21 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 8 (a primeira hora)
+
+| # | O que foi feito |
+|---|---|
+| **P4** | A fila de dicas não trava mais. Uma dica não feita em 60 s vai para o fim da fila e volta depois das outras. O que o jogador faz fora da ordem sai da fila na hora (antes, só contava quando chegava a vez). |
+| **P2** | Fogo brando (evento `fogo_brando`): sobre cada fogueira a até 80 px, a luz morna desce (`fogo_brando_descer_4q`, 2 s). Depois vem o instante em que acende (`fogo_brando_acender_4q`) e o calor em volta (`calor_brando_4q`), por 60 s. Não há chama nem queimada. Captura: `capturas/fogo-brando.png`. |
+| **P6** | A pessoa a até 3 px do cursor ganha do lugar (`vista.ALCANCE_PESSOA`). |
+| **P7** | Na primeira vez que o jogador esconde a janela, a alça mostra por 2 s "Para voltar: o ícone na bandeja ou Ctrl+Alt+H", e só então a janela some. O atalho global agora vem ligado no jogo de verdade, porque o aviso promete Ctrl+Alt+H; nos testes com `--sem-config`, só com `--atalho-global`. `--sem-atalho` desliga. |
+| **P9** | A dica do botão de poder tem a linha "Segure mais para um milagre". No fogo, há também "Curto, o fogo só acende e aquece". |
+| **P8** | "Abandonar este mundo" só aparece na estante do segundo ano em diante. |
+
+O **P5** (o resumo da ausência) espera o texto novo da A.
+
+GIF da tarde com pesca: `capturas/tarde-pesca-1x.gif`, com a semente 7 no dia 25, das 13h às 16h, um quadro por segundo, tocando 4 vezes mais rápido.
+
 ## Auditoria 6 (D4 e as cenas da tarde) e auditoria 7 (estágios)
 
 | # | O que foi feito |

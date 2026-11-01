@@ -58,6 +58,7 @@ const DICAS := [["poder", "Escolha um poder e segure sobre o mundo"],
 	["pessoas", "Passe o cursor sobre as pessoas"], ["cronica", "C abre a crônica do mundo"],
 	["ritmo", "0 a 3 mudam a velocidade do tempo"], ["esconder", "H esconde; o ícone fica na bandeja"]]
 const ESPERA_DICA := 4.0  # segundos entre uma dica feita e a próxima
+const DICA_PULA := 60.0   # uma dica não feita nesse tempo vai para o fim da fila (auditoria 8, P4)
 ## O tamanho em que as fontes 5x7 saem pixel a pixel (size=11 no .fnt). Sem ele,
 ## o Godot usa 16 e amplia o texto 1,45 vez, fora da grade de pixels.
 const TAM_FONTE := 11
@@ -106,6 +107,8 @@ var _estante: Node2D
 var _dicas_feitas: Array = []
 var _dicas_ligadas := false
 var _proxima_dica_em := 0.0
+var _fila_dicas: Array = []   # os nomes ainda não feitos, na ordem em que aparecem
+var _dica_desde := 0.0        # quando a dica da frente apareceu
 
 
 func criar(p_vista: Node2D) -> void:
@@ -423,29 +426,46 @@ func _criar_povo(x: float) -> void:
 func iniciar_dicas(feitas: Array) -> void:
 	_dicas_feitas = feitas.duplicate()
 	_dicas_ligadas = true
+	_fila_dicas = DICAS.map(func(d): return d[0]).filter(func(n): return not n in _dicas_feitas)
 	_proxima_dica_em = _relogio + 2.0
+	_dica_desde = _proxima_dica_em
 
 
 ## A dica que aparece agora, ou "" (nenhuma, ou esperando entre uma e outra).
+## Uma dica não feita em DICA_PULA segundos (de noite, por exemplo, não há em
+## quem passar o cursor) vai para o fim da fila e volta depois das outras.
 func _dica_atual() -> String:
-	if not _dicas_ligadas or _relogio < _proxima_dica_em:
+	if not _dicas_ligadas or _fila_dicas.is_empty() or _relogio < _proxima_dica_em:
+		return ""
+	if _relogio - _dica_desde > DICA_PULA and _fila_dicas.size() > 1:
+		_fila_dicas.push_back(_fila_dicas.pop_front())
+		_proxima_dica_em = _relogio + ESPERA_DICA
+		_dica_desde = _proxima_dica_em
 		return ""
 	for d in DICAS:
-		if not d[0] in _dicas_feitas:
+		if d[0] == _fila_dicas[0]:
 			return d[1]
 	return ""
 
 
-## O jogador fez o que a dica ensina (feita fora da ordem, ela também não volta).
+## O jogador fez o que a dica ensina. Feita fora da ordem, ela sai da fila e não volta.
 func marcar_dica(nome: String) -> void:
-	if not _dicas_ligadas or nome in _dicas_feitas:
+	if nome in _dicas_feitas:
 		return
-	var era_a_atual: bool = _dica_atual() != "" and DICAS.filter(func(d): return not d[0] in _dicas_feitas)[0][0] == nome
 	_dicas_feitas.append(nome)
-	if era_a_atual:
-		_proxima_dica_em = _relogio + ESPERA_DICA
+	if _dicas_ligadas and not _fila_dicas.is_empty():
+		var era_a_atual: bool = _fila_dicas[0] == nome and _relogio >= _proxima_dica_em
+		_fila_dicas.erase(nome)
+		if era_a_atual:
+			_proxima_dica_em = _relogio + ESPERA_DICA
+			_dica_desde = _proxima_dica_em
 	dica_feita.emit(_dicas_feitas)
 	queue_redraw()
+
+
+## O jogador já escondeu a janela alguma vez (o aviso de como voltar só sai na primeira).
+func ja_escondeu() -> bool:
+	return "esconder" in _dicas_feitas
 
 
 ## Usa um poder como se o jogador tivesse feito o gesto (testes e capturas).
@@ -693,8 +713,12 @@ func _refazer_dica(delta: float) -> void:
 
 func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 	var nome := ""
-	if id.begins_with("poder:"):
-		nome = NOME_PODER[id.substr(6)]
+	if id.begins_with("poder:"):  # o gesto curto é um sinal; segurando mais, vira milagre (auditoria 8, P9)
+		var linhas := [NOME_PODER[id.substr(6)], "Segure mais para um milagre"]
+		if id == "poder:fogo":
+			linhas.append("Curto, o fogo só acende e aquece")
+		_mostrar_dica(linhas, -1, canto + Vector2(4, 22), false)
+		return
 	elif id.begins_with("ritmo:"):
 		var r := id.substr(6)
 		if DIA_REAL.has(r):

@@ -61,6 +61,7 @@ const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
 const VAO_ENTRE_POVOS := 10.0
+const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobre a pessoa"
 
 var sim: Simulacao
 var modo_discreto := false
@@ -250,7 +251,8 @@ func objeto_em(p: Vector2) -> Dictionary:
 	var melhor := {}
 	var dist := INF
 	for f in figuras:
-		var r := Rect2(f.x - 1, f.base - 12, f.largura + 2, 14)
+		# a pessoa a até 3 px do cursor ganha do lugar (auditoria 8, P6)
+		var r := Rect2(f.x - ALCANCE_PESSOA, f.base - 12 - ALCANCE_PESSOA, f.largura + 2 * ALCANCE_PESSOA, 13 + 2 * ALCANCE_PESSOA)
 		if r.has_point(p) and absf(p.x - f.x - f.largura / 2.0) < dist:
 			dist = absf(p.x - f.x - f.largura / 2.0)
 			melhor = f
@@ -318,7 +320,7 @@ func _ao_receber_eventos(eventos: Array) -> void:
 		match ev["tipo"]:
 			"eclipse":
 				_eclipse_ate = sim.mundo.passo + 3
-			"chuva_divina", "raio_divino", "fogo_divino", "fartura_divina", "terra_erguida", "sonho", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura":
+			"chuva_divina", "raio_divino", "fogo_divino", "fogo_brando", "fartura_divina", "terra_erguida", "sonho", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura":
 				var d: Dictionary = ev.get("dados", {})
 				var alvo := -1.0
 				var ids: Array = ev.get("participantes", [])

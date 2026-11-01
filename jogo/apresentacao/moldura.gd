@@ -21,6 +21,7 @@ extends Node2D
 ##   --primeira-vez                       mostra as dicas da primeira abertura desde o começo (testes)
 ##   --duracao=S                          fecha sozinho depois de S segundos
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
+##   --sem-atalho                         não liga o atalho global (que o jogo de verdade liga sozinho)
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
 ##                                        outra janela em foco, via processo
 ##                                        auxiliar em PowerShell
@@ -51,6 +52,7 @@ var _duracao := 0.0
 var _usar_config := true
 var _bandeja: StatusIndicator
 var _atalho_pid := 0
+var _avisou_esconder := false
 var _atalho_saida: FileAccess
 var _atalho_leitor: Thread
 var _largura_alca := 0
@@ -150,8 +152,8 @@ func _ready() -> void:
 				interface._abandonar()
 				interface.alternar_estante()).call_deferred()
 	_iniciar_dicas(args.has("primeira-vez"))
-	if args.has("atalho-global"):
-		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
+	if args.has("atalho-global") or (_usar_config and not args.has("sem-atalho")):
+		_iniciar_atalho_global(args.get("atalho-global", "") if args.get("atalho-global", "") != "" else "H")
 	if args.get("cenario", "") == "escondido":
 		esconder()
 
@@ -229,6 +231,12 @@ func _acompanhar(id: int) -> void:
 
 func esconder() -> void:
 	if escondida:
+		return
+	if _usar_config and not interface.ja_escondeu() and not _avisou_esconder:
+		# na primeira vez, a alça diz como voltar e só então a janela some (auditoria 8, P7)
+		_avisou_esconder = true
+		interface._avisar("Para voltar: o ícone na bandeja ou Ctrl+Alt+H")
+		get_tree().create_timer(2.0).timeout.connect(esconder)
 		return
 	interface.marcar_dica("esconder")
 	escondida = true

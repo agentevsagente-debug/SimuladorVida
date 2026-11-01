@@ -93,6 +93,15 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 				_clarao = CLARAO
 			else:
 				raio(alvo if alvo >= 0.0 else x)
+		"fogo_brando":  # o gesto curto: a luz morna desce sobre cada fogueira da zona, acende e aquece, sem chama
+			for fogo in vista._fogos:
+				if absf(float(fogo.centro) - x) > 80.0:
+					continue
+				var base := Vector2(float(fogo.centro), float(fogo.canto.y) + 15.0)
+				luminoso.emitir("fogo_brando_descer_4q", 16, 4, base, Vector2.ZERO, 2.0, 2.0)
+				get_tree().create_timer(1.9).timeout.connect(func():
+					luminoso.emitir("fogo_brando_acender_4q", 16, 4, base, Vector2.ZERO, 0.6, 6.7)
+					luminoso.emitir("calor_brando_4q", 32, 4, base, Vector2.ZERO, 60.0, 3.0))
 		"fogo_divino":
 			var n := int(2 + 4 * f)
 			for i in n:
