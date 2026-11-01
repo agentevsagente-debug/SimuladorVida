@@ -5,7 +5,8 @@ extends RefCounted
 ##   ano 5, dia 12: chuva sobre a floresta
 ##   ano 9, dia 3, hora 14: raio sobre o líder do morro
 ##   ano 20, dia 1: sonho no lago
-## Poderes: chuva, raio, fartura, fogo, erguer (erguer terra), sonho.
+## Poderes: chuva, raio, fartura, fogo, erguer (erguer terra), sonho, seca, dilúvio, terremoto,
+## presságio e cura.
 ## Zonas: praia, lago, floresta, morro. "líder" mira o líder do grupo da zona.
 ## O dia vai de 1 a 40 e a hora de 0 a 23 (padrão: 12). "fraca" ou "forte" mudam a intensidade
 ## (0,3 ou 0,95; padrão 0,8). Repetir o mesmo poder na mesma zona em 3 dias vira imposição.
@@ -18,7 +19,8 @@ extends RefCounted
 ## Condições: seca, fome, guerra, doença, prece. "onde houver" (ou sem zona) age na zona
 ## em que a condição aconteceu; com zona, age na zona dada.
 
-const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho"]
+const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho", "seca", "diluvio", "terremoto",
+	"pressagio", "cura"]
 const ZONAS := ["praia", "lago", "floresta", "morro"]
 const CONDICOES := ["seca", "fome", "guerra", "doenca", "prece"]
 

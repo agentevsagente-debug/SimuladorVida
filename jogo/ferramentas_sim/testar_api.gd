@@ -54,9 +54,19 @@ func _initialize() -> void:
 	conferir(r["grau"] == "imposicao", "terceira chuva seguida é imposição")
 	r = m.usar_poder("vento", 10.0, 1.0)
 	conferir(not r["ok"], "poder desconhecido é recusado")
-	for nome in ["fartura", "fogo", "erguer", "sonho"]:
+	for nome in ["fartura", "fogo", "erguer", "sonho", "seca", "terremoto", "pressagio", "diluvio"]:
 		r = m.usar_poder(nome, 260.0, 0.7)
-		conferir(r["ok"], "poder " + nome)
+		conferir(r["ok"] and r["evento"] >= 0, "poder " + nome)
+		print("  ", nome, ": ", m.eventos[r["evento"]].tipo, " ", r)
+	# Cura: em alguém doente vira milagre; em alguém são, só sinal.
+	var vivos := m.pessoas_visiveis()
+	var doente: Dictionary = vivos[1]
+	m.pessoas[doente["id"]].doente = 5
+	r = m.usar_poder("cura", doente["x"], 0.8)
+	conferir(r["grau"] == "milagre" and r["alvo"] == doente["id"] and m.pessoas[doente["id"]].doente == 0, "cura de doente é milagre")
+	var sao: Dictionary = m.pessoas_visiveis()[2]
+	r = m.usar_poder("cura", sao["x"], 0.8)
+	conferir(r["alvo"] == -1 or r["grau"] == "sinal", "cura em alguém são é sinal: %s" % r)
 	# Anos depois: preces, chamados, sugestões, crônica. Ninguém na água em nenhuma hora.
 	var visto := m.eventos.size()
 	for d in 40 * 15:
