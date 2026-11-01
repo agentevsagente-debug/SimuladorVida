@@ -75,6 +75,38 @@ def principal():
             x += im.width + 4
     folha.save(AQUI / "amostra_estacoes_pecas.png")
     folha.resize((folha.width * 4, folha.height * 4), Image.NEAREST).save(AQUI / "amostra_estacoes_pecas_4x.png")
+    # construções dos estágios 2 a 6 no inverno, e agricultura nas 4 estações
+    obras = ["estagio2/casa_taipa", "estagio2/celeiro", "estagio2/templo", "estagio3/casa_pedra",
+             "estagio3/templo_pedra", "estagio4/casa_enxaimel", "estagio4/forja", "estagio5/biblioteca",
+             "estagio6/casa_tijolo", "estagio6/muralha_torre", "estagio6/templo_cupula", "estagio3/casa_pedra_ruina",
+             "estagio6/casa_tijolo_ruina"]
+    largura = sum(Image.open(PECAS / f"{o}.png").width + 3 for o in obras) + 4
+    f = Image.new("RGBA", (largura, 46), PALETA[1] + (255,))
+    g = Image.open(PECAS / "estacoes/inverno/terreno/grama_a.png")
+    for gx in range(0, largura, 8):
+        f.alpha_composite(g, (gx, 40))
+    x = 3
+    for o in obras:
+        im = Image.open(PECAS / "estacoes/inverno" / f"{o}.png")
+        f.alpha_composite(im, (x, 42 - im.height))
+        x += im.width + 3
+    roda = Image.open(PECAS / "estacoes/inverno/estagio6/roda_dagua_4q.png").crop((0, 0, 16, 16))
+    f.save(AQUI / "amostra_construcoes_inverno.png")
+    f.resize((f.width * 4, f.height * 4), Image.NEAREST).save(AQUI / "amostra_construcoes_inverno_4x.png")
+    agri = ["estagio2/roca_broto", "estagio2/roca_crescida", "estagio2/roca_madura", "estagio6/roca_irrigada",
+            "estagio2/arvore_fruta", "estagio6/roda_dagua_4q"]
+    f = Image.new("RGBA", (130, 4 * 30), PALETA[1] + (255,))
+    for i, est in enumerate(("primavera", "verao", "outono", "inverno")):
+        x = 3
+        for o in agri:
+            caminho = PECAS / "estacoes" / est / f"{o}.png"
+            im = Image.open(caminho if est != "verao" and caminho.exists() else PECAS / f"{o}.png")
+            if "roda" in o:
+                im = im.crop((0, 0, 16, 16))
+            f.alpha_composite(im, (x, i * 30 + 28 - im.height))
+            x += im.width + 3
+    f.save(AQUI / "amostra_agricultura.png")
+    f.resize((f.width * 4, f.height * 4), Image.NEAREST).save(AQUI / "amostra_agricultura_4x.png")
     print("cena nas 4 estações")
 
 

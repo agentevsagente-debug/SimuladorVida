@@ -9,5 +9,5 @@ for script in ("terreno/terreno.py", "habitantes/habitantes.py", "estagio1/estag
                "estagio3/estagio3.py", "estagio4/estagio4.py", "estagio5/estagio5.py", "estagio6/estagio6.py",
                "montagem/camadas.py", "montagem/montar.py", "cenas/cenas.py",
                "estacoes/estacoes.py", "estacoes/cena_estacoes.py", "acoes/acoes.py", "acoes/vida.py", "natureza/natureza.py",
-               "estante/estante.py", "criaturas/criaturas.py"):
+               "estante/estante.py", "criaturas/criaturas.py", "luzes/luzes.py"):
     runpy.run_path(str(AQUI / script), run_name="__main__")

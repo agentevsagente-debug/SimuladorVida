@@ -556,6 +556,31 @@ As folhas abaixo ficam em `acoes/` e seguem o padrão de sempre:
 | migração | `acoes/andar_trouxa_4q`, `acoes/andar_cesto_4q` + `objetos/trouxa`, `cesto_costas` | 4 | |
 | guerra | `acoes/carregar_estandarte_<cultura>_4q` (sol, lua ou arvore) (12 × 12), `acoes/lutar_4q` + `objetos/estandarte_*`, `escudo_*` | 4 | o pano do estandarte usa a cor da roupa (28), e por isso troca junto com a roupa do povo |
 
+## 19. Estações na agricultura e noite nas construções
+
+**Construções no inverno.** Todas as construções dos estágios 2 a 6 têm versão de inverno em `estacoes/inverno/<pasta>/`, com o mesmo nome:
+- casas, celeiro, templos, forja, biblioteca, muralha e torre, moinho, barco;
+- as partes de cultura (paredes, telhados e símbolos);
+- todas as ruínas, inclusive as cobertas de mato (`natureza/`).
+
+O `estacoes/amostra_construcoes_inverno_4x.png` mostra as construções nevadas.
+
+**Agricultura nas 4 estações.** As roças (`estagio2/roca_*` e `estagio6/roca_irrigada`) e o pomar mudam nas 4 estações; a roda d'água só congela no inverno. As variações ficam em `estacoes/<estacao>/<pasta>/`, e a amostra é `estacoes/amostra_agricultura_4x.png`.
+
+| Peça | Primavera | Outono | Inverno |
+|---|---|---|---|
+| roças | verde mais vivo e florzinhas entre os sulcos | o verde amarela, a espiga fica cor de cobre, folhas caídas no solo | coberta de neve: sulcos brancos e só pontas de palha seca; na irrigada, o rego congelado |
+| `estagio2/arvore_fruta` (pomar, 24 × 24, tronco na coluna 10; no verão, frutas verdes amarelando) | em flor (branco e rosa) | frutas maduras e folhas alaranjadas | galhos nus com neve |
+| `estagio6/roda_dagua_4q` (16 × 16, gira 11,25° por quadro e respinga) | igual ao verão | igual ao verão | parada e congelada: os 4 quadros são iguais, com gelo e pingentes |
+
+**Noite nas construções** (`luzes/luzes.py`):
+- `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
+- `luzes/chamine.png` (4 × 8): a chaminé de pedra.
+- `luzes/chamines.json`: para cada casa e cada um dos 3 telhados, onde vai a chaminé e de onde sai a fumaça, em coordenadas relativas ao canto da casa.
+- `luzes/fumaca_chamine_4q.png` (8 × 16): um fiapo fino de fumaça, irregular e sem grade, que sobe e se desfaz. Use só no inverno, nas casas com lareira.
+
+O `luzes/amostra_luzes_4x.png` mostra as casas à noite no inverno, com as janelas acesas e a fumaça.
+
 ## Critérios
 
 | Critério | Situação |

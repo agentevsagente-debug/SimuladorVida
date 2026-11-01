@@ -1,13 +1,13 @@
 {
  "atlas": "estacao_verao.png",
- "largura": 128,
+ "largura": 256,
  "altura": 128,
  "margem": 1,
  "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
  "regioes": {
   "estagio1/alga": {
-   "x": 111,
-   "y": 75,
+   "x": 94,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -16,8 +16,8 @@
    "quadro_h": 8
   },
   "estagio1/arbusto": {
-   "x": 60,
-   "y": 75,
+   "x": 43,
+   "y": 59,
    "w": 16,
    "h": 8,
    "quadros": 1,
@@ -26,8 +26,8 @@
    "quadro_h": 8
   },
   "estagio1/arbusto_frutas": {
-   "x": 77,
-   "y": 75,
+   "x": 60,
+   "y": 59,
    "w": 16,
    "h": 8,
    "quadros": 1,
@@ -56,8 +56,8 @@
    "quadro_h": 32
   },
   "estagio1/capim": {
-   "x": 1,
-   "y": 92,
+   "x": 103,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -66,8 +66,8 @@
    "quadro_h": 8
   },
   "estagio1/capim_seco": {
-   "x": 10,
-   "y": 92,
+   "x": 112,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -76,8 +76,8 @@
    "quadro_h": 8
   },
   "estagio1/juncos": {
-   "x": 18,
-   "y": 75,
+   "x": 1,
+   "y": 59,
    "w": 8,
    "h": 16,
    "quadros": 1,
@@ -86,7 +86,7 @@
    "quadro_h": 16
   },
   "estagio1/pedra_grande": {
-   "x": 59,
+   "x": 66,
    "y": 42,
    "w": 16,
    "h": 16,
@@ -96,8 +96,8 @@
    "quadro_h": 16
   },
   "estagio1/pedra_pequena": {
-   "x": 19,
-   "y": 92,
+   "x": 121,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -116,8 +116,8 @@
    "quadro_h": 40
   },
   "estagio1/pinheiro_b": {
-   "x": 34,
-   "y": 42,
+   "x": 149,
+   "y": 1,
    "w": 24,
    "h": 32,
    "quadros": 1,
@@ -126,8 +126,8 @@
    "quadro_h": 32
   },
   "estagio1/pinheiro_fundo": {
-   "x": 1,
-   "y": 42,
+   "x": 116,
+   "y": 1,
    "w": 32,
    "h": 32,
    "quadros": 1,
@@ -136,7 +136,7 @@
    "quadro_h": 32
   },
   "estagio1/samambaia_frente": {
-   "x": 76,
+   "x": 83,
    "y": 42,
    "w": 16,
    "h": 16,
@@ -146,8 +146,8 @@
    "quadro_h": 16
   },
   "estagio1/tronco_deriva": {
-   "x": 94,
-   "y": 75,
+   "x": 77,
+   "y": 59,
    "w": 16,
    "h": 8,
    "quadros": 1,
@@ -155,8 +155,88 @@
    "quadro_w": 16,
    "quadro_h": 8
   },
+  "estagio2/arvore_fruta": {
+   "x": 174,
+   "y": 1,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "estagio2/roca_arada": {
+   "x": 100,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_broto": {
+   "x": 117,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_crescida": {
+   "x": 134,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_madura": {
+   "x": 151,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_seca": {
+   "x": 168,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio6/roca_irrigada": {
+   "x": 185,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio6/roda_dagua_4q": {
+   "x": 1,
+   "y": 42,
+   "w": 64,
+   "h": 16,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
   "natureza/arvore_jovem": {
-   "x": 93,
+   "x": 202,
    "y": 42,
    "w": 16,
    "h": 16,
@@ -166,7 +246,7 @@
    "quadro_h": 16
   },
   "natureza/fogueira_antiga": {
-   "x": 110,
+   "x": 219,
    "y": 42,
    "w": 16,
    "h": 16,
@@ -176,8 +256,8 @@
    "quadro_h": 16
   },
   "natureza/muda": {
-   "x": 28,
-   "y": 92,
+   "x": 130,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -186,8 +266,8 @@
    "quadro_h": 8
   },
   "natureza/pinheiro_jovem": {
-   "x": 1,
-   "y": 75,
+   "x": 236,
+   "y": 42,
    "w": 16,
    "h": 16,
    "quadros": 1,
@@ -196,8 +276,8 @@
    "quadro_h": 16
   },
   "terreno/agua": {
-   "x": 37,
-   "y": 92,
+   "x": 139,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -206,8 +286,8 @@
    "quadro_h": 8
   },
   "terreno/agua_funda": {
-   "x": 46,
-   "y": 92,
+   "x": 148,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -216,8 +296,8 @@
    "quadro_h": 8
   },
   "terreno/agua_superficie_4q": {
-   "x": 27,
-   "y": 75,
+   "x": 10,
+   "y": 59,
    "w": 32,
    "h": 8,
    "quadros": 4,
@@ -226,8 +306,8 @@
    "quadro_h": 8
   },
   "terreno/areia_a": {
-   "x": 55,
-   "y": 92,
+   "x": 157,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -236,8 +316,8 @@
    "quadro_h": 8
   },
   "terreno/areia_b": {
-   "x": 64,
-   "y": 92,
+   "x": 166,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -246,8 +326,8 @@
    "quadro_h": 8
   },
   "terreno/areia_base": {
-   "x": 73,
-   "y": 92,
+   "x": 175,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -256,8 +336,8 @@
    "quadro_h": 8
   },
   "terreno/areia_superficie": {
-   "x": 82,
-   "y": 92,
+   "x": 184,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -266,8 +346,8 @@
    "quadro_h": 8
   },
   "terreno/chao_batido": {
-   "x": 91,
-   "y": 92,
+   "x": 193,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -276,8 +356,8 @@
    "quadro_h": 8
   },
   "terreno/grama_a": {
-   "x": 100,
-   "y": 92,
+   "x": 202,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -286,8 +366,8 @@
    "quadro_h": 8
   },
   "terreno/grama_b": {
-   "x": 109,
-   "y": 92,
+   "x": 211,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -296,8 +376,8 @@
    "quadro_h": 8
   },
   "terreno/grama_seca": {
-   "x": 118,
-   "y": 92,
+   "x": 220,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -306,8 +386,8 @@
    "quadro_h": 8
   },
   "terreno/pedra_solo": {
-   "x": 1,
-   "y": 101,
+   "x": 229,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -316,8 +396,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_1": {
-   "x": 10,
-   "y": 101,
+   "x": 238,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -326,8 +406,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_10": {
-   "x": 19,
-   "y": 101,
+   "x": 247,
+   "y": 59,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -336,8 +416,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_11": {
-   "x": 28,
-   "y": 101,
+   "x": 1,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -346,8 +426,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_12": {
-   "x": 37,
-   "y": 101,
+   "x": 10,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -356,8 +436,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_13": {
-   "x": 46,
-   "y": 101,
+   "x": 19,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -366,8 +446,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_14": {
-   "x": 55,
-   "y": 101,
+   "x": 28,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -376,8 +456,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_15": {
-   "x": 64,
-   "y": 101,
+   "x": 37,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -386,8 +466,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_16": {
-   "x": 73,
-   "y": 101,
+   "x": 46,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -396,8 +476,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_2": {
-   "x": 82,
-   "y": 101,
+   "x": 55,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -406,8 +486,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_3": {
-   "x": 91,
-   "y": 101,
+   "x": 64,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -416,8 +496,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_4": {
-   "x": 100,
-   "y": 101,
+   "x": 73,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -426,8 +506,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_5": {
-   "x": 109,
-   "y": 101,
+   "x": 82,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -436,8 +516,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_6": {
-   "x": 118,
-   "y": 101,
+   "x": 91,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -446,8 +526,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_7": {
-   "x": 1,
-   "y": 110,
+   "x": 100,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -456,8 +536,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_8": {
-   "x": 10,
-   "y": 110,
+   "x": 109,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -466,8 +546,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_9": {
-   "x": 19,
-   "y": 110,
+   "x": 118,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -476,8 +556,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_borda": {
-   "x": 28,
-   "y": 110,
+   "x": 127,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -486,8 +566,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_borda_b": {
-   "x": 37,
-   "y": 110,
+   "x": 136,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -496,8 +576,8 @@
    "quadro_h": 8
   },
   "terreno/rocha_borda_c": {
-   "x": 46,
-   "y": 110,
+   "x": 145,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -506,8 +586,8 @@
    "quadro_h": 8
   },
   "terreno/terra_a": {
-   "x": 55,
-   "y": 110,
+   "x": 154,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -516,8 +596,8 @@
    "quadro_h": 8
   },
   "terreno/terra_b": {
-   "x": 64,
-   "y": 110,
+   "x": 163,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -526,8 +606,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_a": {
-   "x": 73,
-   "y": 110,
+   "x": 172,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -536,8 +616,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_b": {
-   "x": 82,
-   "y": 110,
+   "x": 181,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -546,8 +626,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_raiz": {
-   "x": 91,
-   "y": 110,
+   "x": 190,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -556,8 +636,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_topo": {
-   "x": 100,
-   "y": 110,
+   "x": 199,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -566,8 +646,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_topo_b": {
-   "x": 109,
-   "y": 110,
+   "x": 208,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -576,8 +656,8 @@
    "quadro_h": 8
   },
   "terreno/terra_escura_topo_c": {
-   "x": 118,
-   "y": 110,
+   "x": 217,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -586,8 +666,8 @@
    "quadro_h": 8
   },
   "terreno/terra_raiz": {
-   "x": 1,
-   "y": 119,
+   "x": 226,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -596,8 +676,8 @@
    "quadro_h": 8
   },
   "terreno/terra_raiz_b": {
-   "x": 10,
-   "y": 119,
+   "x": 235,
+   "y": 76,
    "w": 8,
    "h": 8,
    "quadros": 1,

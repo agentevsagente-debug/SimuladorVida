@@ -15,7 +15,7 @@ AQUI = Path(__file__).resolve().parent
 sys.path.insert(0, str(AQUI.parent))
 sys.path.insert(0, str(AQUI.parent / "habitantes"))
 
-from comum import PALETA, folha_quadros, gravar, para_imagem, pont  # noqa: E402
+from comum import PALETA, cena, folha_quadros, gravar, para_imagem, pont  # noqa: E402
 import habitantes as hab  # noqa: E402
 
 
@@ -346,6 +346,27 @@ def pintar(moldes):
     return [[[None if ch == "." else CORES[ch] for ch in l] for l in m] for m in moldes]
 
 
+# ---------------------------------------------------------------- pomar
+
+def arvore_fruta():
+    """Árvore de pomar plantada pelo povo (24x24): copa baixa e redonda, com frutas ainda
+    verdes no verão. As estações trocam flores, frutas maduras e galhos nus."""
+    from comum import Deslocada, Folha
+    f = Folha(24, 24)
+    t = Deslocada(f)
+    for y in range(15, 24):                     # tronco curto
+        t.put(10, y, 9)
+        t.put(11, y, 9 if y < 21 else 8)
+        t.put(12, y, 8)
+    t.put(9, 23, 9)
+    t.put(13, 23, 8)
+    circ = [(11, 10, 6.5), (6, 12, 4.5), (16, 12, 4.5), (8, 7, 4), (14, 7, 4)]
+    cena.copa(t, circ, random.Random(206), frutos=9)
+    q = f.recortar()
+    # no verão as frutas estão verdes e amarelando
+    return [[{27: 22, 20: 16}.get(c, c) if c is not None else None for c in l] for l in q]
+
+
 # ---------------------------------------------------------------- saída
 
 def gerar():
@@ -364,6 +385,7 @@ def gerar():
         "templo_parede": templo_parede(),
         "templo_telhado": templo_telhado(),
         "templo_simbolo": templo_simbolo(),
+        "arvore_fruta": arvore_fruta(),
     }
     pecas["casa_taipa"] = sobrepor(pecas["casa_taipa_parede"], pecas["casa_taipa_telhado"])
     pecas["templo"] = sobrepor(sobrepor(pecas["templo_parede"], pecas["templo_telhado"]), pecas["templo_simbolo"])

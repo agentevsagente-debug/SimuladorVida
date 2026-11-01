@@ -129,7 +129,7 @@ def principal():
     resumo = {}
     # ---- comum
     comum = []
-    for pasta in ("habitantes", "acoes", "sinais", "efeitos", "criaturas", "objetos", "estante"):
+    for pasta in ("habitantes", "acoes", "sinais", "efeitos", "criaturas", "objetos", "estante", "luzes"):
         comum += nomeados(pasta)
     comum += nomeados("interface")
     comum += nomeados("interface/icones_12", prefixo="interface/icones_12")
@@ -151,7 +151,10 @@ def principal():
     # ---- estações: terreno e vegetação
     for est in ("primavera", "verao", "outono", "inverno"):
         itens = sazonal("terreno", est) + sazonal("estagio1", est, VEGETACAO_E1)
-        itens += nomeados("natureza", lambda f: f.stem in ("muda", "arvore_jovem", "pinheiro_jovem", "fogueira_antiga"))
+        # agricultura: roças e pomar mudam nas 4 estações (a roda d'água congela no inverno)
+        itens += sazonal("estagio2", est, lambda f: f.stem.startswith("roca_") or f.stem == "arvore_fruta")
+        itens += sazonal("estagio6", est, lambda f: f.stem in ("roca_irrigada", "roda_dagua_4q"))
+        itens += sazonal("natureza", est, lambda f: f.stem in ("muda", "arvore_jovem", "pinheiro_jovem", "fogueira_antiga"))
         if est == "inverno":
             itens.append(("terreno/gelo_superficie", PECAS / "estacoes" / "inverno" / "terreno" / "gelo_superficie.png"))
         W, H, reg = gerar_atlas(f"estacao_{est}", itens)
@@ -165,7 +168,8 @@ def principal():
                 itens += sazonal("estagio1", est, lambda f: not VEGETACAO_E1(f))
                 itens += sazonal("memoria", est, lambda f: f.stem == "cabana_abandonada")
             else:
-                itens += sazonal(f"estagio{n}", est)
+                itens += sazonal(f"estagio{n}", est, lambda f: not (f.stem.startswith("roca_") or
+                                                                   f.stem in ("arvore_fruta", "roda_dagua_4q")))
                 if n == 2:
                     itens += sazonal("culturas", est)
                     itens += sazonal("memoria", est, lambda f: f.stem == "casa_ruina")
@@ -174,7 +178,7 @@ def principal():
                                      not f.stem.endswith(("_ruina", "_parede")) and f.stem != "templo_colunas")
             # o mato das ruínas deste estágio
             nomes_ruina = {Path(nm).name for nm, _ in itens if nm.endswith(("_ruina", "abandonada", "naufragado"))}
-            itens += nomeados("natureza", lambda f, r=nomes_ruina: f.stem.rsplit("_mato_", 1)[0] in r)
+            itens += sazonal("natureza", est, lambda f, r=nomes_ruina: f.stem.rsplit("_mato_", 1)[0] in r)
             nome = f"estagio{n}" + ("_inverno" if inverno else "")
             W, H, reg = gerar_atlas(nome, itens)
             resumo[nome] = (W, H, len(reg))

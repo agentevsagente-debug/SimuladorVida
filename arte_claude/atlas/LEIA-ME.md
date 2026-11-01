@@ -13,32 +13,32 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 
 | Atlas | Tamanho | Peças | Memória de vídeo (L × A × 4) |
 |---|---|---|---|
-| `comum` | 512x512 | 172 | 1024 KB |
+| `comum` | 512x512 | 174 | 1024 KB |
 | `pessoas_inverno` | 256x128 | 42 | 128 KB |
-| `estacao_primavera` | 128x128 | 60 | 64 KB |
-| `estacao_verao` | 128x128 | 60 | 64 KB |
-| `estacao_outono` | 128x128 | 60 | 64 KB |
-| `estacao_inverno` | 128x128 | 61 | 64 KB |
+| `estacao_primavera` | 256x128 | 68 | 128 KB |
+| `estacao_verao` | 256x128 | 68 | 128 KB |
+| `estacao_outono` | 256x128 | 68 | 128 KB |
+| `estacao_inverno` | 256x128 | 69 | 128 KB |
 | `estagio1` | 128x64 | 7 | 32 KB |
 | `estagio1_inverno` | 128x64 | 7 | 32 KB |
-| `estagio2` | 256x128 | 37 | 128 KB |
-| `estagio2_inverno` | 256x128 | 37 | 128 KB |
-| `estagio3` | 256x128 | 20 | 128 KB |
-| `estagio3_inverno` | 256x128 | 20 | 128 KB |
-| `estagio4` | 256x256 | 31 | 256 KB |
-| `estagio4_inverno` | 256x256 | 31 | 256 KB |
+| `estagio2` | 256x128 | 33 | 128 KB |
+| `estagio2_inverno` | 256x128 | 33 | 128 KB |
+| `estagio3` | 256x128 | 21 | 128 KB |
+| `estagio3_inverno` | 256x128 | 21 | 128 KB |
+| `estagio4` | 256x256 | 32 | 256 KB |
+| `estagio4_inverno` | 256x256 | 32 | 256 KB |
 | `estagio5` | 256x128 | 26 | 128 KB |
 | `estagio5_inverno` | 256x128 | 26 | 128 KB |
 | `estagio6` | 256x256 | 43 | 256 KB |
 | `estagio6_inverno` | 256x256 | 43 | 256 KB |
 
-**Total, com todos carregados: 3,19 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,3 MB.
+**Total, com todos carregados: 3,44 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
 
 **O que vai em cada atlas:**
-- **`comum`:** habitantes, ações e vida, interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
+- **`comum`:** habitantes, ações e vida, chaminé e fumaça de chaminé (`luzes/`), interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
 - **`pessoas_inverno`:** as folhas de `habitantes/` e `acoes/` com a roupa de frio. No inverno, as regiões com o mesmo nome valem no lugar das do `comum`.
-- **`estacao_<primavera|verao|outono|inverno>`:** todos os blocos de terreno e a vegetação do estágio 1, na versão da estação (a de verão quando a estação não muda a peça), mais a muda, a árvore jovem, o pinheiro jovem e a fogueira antiga. O de inverno tem também o `gelo_superficie`.
-- **`estagio<N>` e `estagio<N>_inverno`:** as construções do estágio, as ruínas com os 3 graus de mato e os habitantes do estágio. O `_inverno` traz as mesmas peças com neve, e é ele que o motor carrega no inverno.
+- **`estacao_<primavera|verao|outono|inverno>`:** todos os blocos de terreno e a vegetação do estágio 1, na versão da estação (a de verão quando a estação não muda a peça), mais a muda, a árvore jovem, o pinheiro jovem e a fogueira antiga, a agricultura da estação (roças, pomar, roça irrigada e roda d'água). O de inverno tem também o `gelo_superficie`.
+- **`estagio<N>` e `estagio<N>_inverno`:** as construções do estágio, com as camadas de janelas acesas (`<casa>_luz`), as ruínas com os 3 graus de mato e os habitantes do estágio. As roças, o pomar e a roda d'água ficam nos atlas de estação. O `_inverno` traz as mesmas peças com neve, e é ele que o motor carrega no inverno.
   - O estágio 1 tem a cabana, as fogueiras e a cabana abandonada.
   - O estágio 2 traz também as variações de cultura de `culturas/` e a casa em ruína.
   - O estágio 5 traz também os telhados e símbolos do templo de colunas, que o templo da escrita usa.

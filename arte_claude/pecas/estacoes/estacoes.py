@@ -135,8 +135,9 @@ PINHEIROS = {"pinheiro_a", "pinheiro_b", "pinheiro_fundo"}
 ARVORES_NUAS = {"arvore_copa_a": (19, 30, 21), "arvore_copa_b": (14, 24, 22)}
 GRAMAS = {"grama_a", "grama_b", "grama_seca", "chao_batido", "areia_superficie"}
 SEM_NEVE = ("adulto_", "guerreiro", "ferreiro", "escriba", "crianca", "idoso", "amostra", "tabuletas",
-            "variacoes", "canal", "fogueira_acesa", "forja_2q", "forja.png")
-PASTAS_CONSTRUCAO = ("estagio1", "estagio2", "estagio3", "estagio4", "estagio5", "estagio6", "culturas", "memoria")
+            "variacoes", "canal", "fogueira_acesa")
+PASTAS_CONSTRUCAO = ("estagio1", "estagio2", "estagio3", "estagio4", "estagio5", "estagio6", "culturas", "memoria",
+                     "natureza")
 
 
 def variante(pasta, nome, px, estacao):
@@ -193,12 +194,71 @@ def variante(pasta, nome, px, estacao):
         if nome.startswith(("fogueira", "samambaia")):
             return None
         return neve_por_cima(px, grossa=nome not in PINHEIROS or True)
+    # agricultura: roças e pomar mudam em todas as estações
+    if nome.startswith("roca_") or nome == "arvore_fruta":
+        return agricultura(nome, px, estacao)
+    if nome == "roda_dagua_4q" and estacao == "inverno":
+        import sys as _s
+        _s.path.insert(0, str(PECAS / "estagio6"))
+        import estagio6
+        return folha_quadros([estagio6.roda_dagua(0, congelada=True)] * 4)
     # construções dos estágios, culturas e memória: só o inverno muda (neve por cima)
     if estacao != "inverno" or nome.startswith(SEM_NEVE) or (nome + ".png").startswith(SEM_NEVE):
         return None
     if nome.startswith(("roca_", "cerca")):
         return neve_por_cima(px, grossa=False)
     return neve_por_cima(px)
+
+
+def agricultura(nome, px, estacao):
+    """Roças e pomar nas estações.
+    Primavera: verde mais vivo e florzinhas entre os sulcos; pomar em flor.
+    Outono: o verde amarela, a espiga madura fica cor de cobre e caem folhas no solo;
+    pomar com frutas maduras e folhas alaranjadas.
+    Inverno: roça coberta de neve (sulcos brancos e só pontas de palha seca); pomar nu."""
+    hh, w = len(px), len(px[0])
+    if nome == "arvore_fruta":
+        if estacao == "primavera":
+            out = flores(mapear(px, {22: 31, 16: 7}), cores=(31, 7), taxa=0.25, so=(15, 14), semente=8)
+            return out
+        if estacao == "outono":
+            out = mapear(px, {22: 20, 16: 21})
+            for y, l in enumerate(out):
+                for x, c in enumerate(l):
+                    if c in (15, 14) and h(x, y, 9) < 0.25:
+                        out[y][x] = 24 if c == 14 else 21
+            return out
+        return arvore_nua(w, hh, 10, 18, 207)
+    if estacao == "primavera":
+        out = mapear(px, {14: 15, 13: 14})
+        for x in range(0, w, 4):
+            if out[12][x] in (8, 9) and h(x, 1, 30) < 0.5:
+                out[12][x] = 22 if h(x, 2, 30) < 0.5 else 31
+        return out
+    if estacao == "outono":
+        out = mapear(px, {15: 16, 14: 16, 22: 21, 31: 22})
+        for x in range(w):
+            if out[12][x] in (8, 9, 10) and h(x, 3, 31) < 0.3:
+                out[12][x] = 24 if h(x, 4, 31) < 0.5 else 21
+        return out
+    # inverno: a roça vira campo de neve com sulcos, e sobra palha seca nas pontas
+    out = [[None] * w for _ in range(hh)]
+    for x in range(w):
+        k = x % 4
+        topo = 12 if k in (1, 2) else 13
+        for y in range(topo, hh):
+            out[y][x] = 31 if y == topo else (0 if k in (0, 3) or y > topo + 1 else 31)
+            if y >= 15:
+                out[y][x] = 0
+        if k == 1 and nome not in ("roca_arada",) and px[11][x] is not None:
+            out[11][x] = 10
+            if px[10][x] is not None:
+                out[10][x] = 9
+    if nome == "roca_irrigada":
+        for x in range(0, w, 4):
+            out[13][x] = 0
+            out[14][x] = 19                     # rego congelado
+    return out
 
 
 # ---------------------------------------------------------------- montanhas e gelo
