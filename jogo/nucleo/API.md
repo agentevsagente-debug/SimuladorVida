@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 4, de 01/11/2026 (fase 1, blocos 1 a 5). A versão 4 só acrescenta campos, funções, tipos de evento e um valor de necessidade; nada do que existia mudou. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 5, de 01/11/2026 (fase 2, item 1: os 11 poderes). Desde a versão 1, só houve acréscimos; nada do que existia mudou. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -64,6 +64,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | `comida` | float 0..2 | fartura em relação ao normal (1 = cheia; acima de 1 = fartura) |
 | `seca` | bool | a zona está em seca |
 | `queimada` | bool | o fogo do deus passou por ali há pouco (para desenhar cinzas) |
+| `alagada` | bool | o dilúvio ainda cobre a zona (de 4 a 14 dias, conforme a intensidade) |
 | `pedra_erguida`, `pedra_x` | bool, float | a terra foi erguida ali, e onde |
 | `nomes` | Dictionary | id do grupo → nome que esse povo deu ao lugar ("Lago do Raio") |
 
@@ -174,7 +175,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `crenca`, `separacao`, `conquista`, `agricultura` | marcos do mundo | chamado (importância ≥ 8) |
 | `nascimento`, `morte`, `casamento` | ciclo de vida | conforme a importância |
 | `tempestade`, `seca_inicio`, `seca_fim`, `eclipse` | clima e céu | nota |
-| `chuva_divina`, `raio_divino`, `fartura_divina`, `fogo_divino`, `terra_erguida`, `sonho` | resultado de `usar_poder` | nota ou chamado |
+| `chuva_divina`, `raio_divino`, `fartura_divina`, `fogo_divino`, `terra_erguida`, `sonho`, `seca_divina`, `diluvio`, `terremoto_divino`, `pressagio`, `cura` | resultado de `usar_poder` | nota ou chamado |
 | `linhagem` | a pessoa acompanhada morreu, e o acompanhamento passou adiante | nota |
 | `guerra_inicio`, `guerra_fim` | uma briga vira guerra com nome (na segunda batalha) e termina: trégua, imposição do deus, conquista, extinção ou esfriou | chamado |
 | `cometa`, `terremoto`, `gemeos` | presságios naturais, além do `eclipse`. O terremoto derruba cabanas e pode matar. | nota |
@@ -209,7 +210,7 @@ var r := mundo.usar_poder(poder, x, intensidade)
 # se ok == false: {ok: false, motivo: String}
 ```
 
-- `poder` é um de: `"chuva"`, `"raio"`, `"fartura"`, `"fogo"`, `"erguer"`, `"sonho"`.
+- `poder` é um de: `"chuva"`, `"raio"`, `"fartura"`, `"fogo"`, `"erguer"`, `"sonho"`, `"seca"`, `"diluvio"`, `"terremoto"`, `"pressagio"`, `"cura"`. A lista está em `Mundo.PODERES`.
 - `x` é o ponto do gesto, em pixels do mundo. A zona vem de x.
 - `intensidade` vai de 0 a 1 e vem do gesto: quanto mais tempo segurando, mais forte.
 
@@ -228,8 +229,18 @@ A precisão conta para o raio e o sonho, que acertam a pessoa mais perto de x, s
 | `fogo` | queima pouco | queima a zona, cabanas e estoque, e pode matar; lido como purificação ou maldição | (mesmo efeito do milagre) |
 | `erguer` | uma pedra estranha | pedra alta, lugar sagrado com nome, e trégua entre povos em guerra | (mesmo efeito do milagre) |
 | `sonho` | sonho vago, que muitos ignoram | ideia da agricultura, ou uma visão que pode fazer um sacerdote | sonho aceito com certeza, e paz entre o povo do sonhador e seus inimigos |
+| `seca` | a zona seca um pouco | só aquela zona seca, por 6 a 28 dias, conforme a intensidade. É lida como castigo ("o que fizemos?"), e pode trazer oferendas. | seca dobrada, e oferendas |
+| `diluvio` | a água sobe e cobre a zona | com intensidade ≥ 0,7, a água chega às zonas vizinhas: cabanas, estoque e vidas se perdem. Vira mito ("o deus lavou o mundo"), e o lugar ganha nome. | o mundo inteiro alaga: o quase fim do documento funcional |
+| `terremoto` | tremor fraco na zona | a zona treme forte (e as outras, de leve): cabanas caem, pode matar, e é lido como castigo | (mesmo efeito do milagre) |
+| `pressagio` | um sinal no céu, visto por todos os povos | idem, mais forte. Pela intensidade, a forma é cometa (< 0,34), eclipse (< 0,67) ou luzes. Cada povo lê como bom agouro (a fé sobe), mau agouro (hostilidade com inimigos) ou aviso (passam a estocar). | (mesmo efeito do milagre) |
+| `cura` | em alguém são: só bem-estar | em quem está doente ou fraco, a 6 pixels de x: a pessoa se levanta. Nasce um devoto, às vezes um sacerdote, e a prece por ela é atendida de verdade. | cura todos os doentes do povo |
 
-O evento gerado traz em `dados` o `x`, o `grau` e a `intensidade` (para o efeito visual), além do que aconteceu: vítima, mortos, se acabou a seca, como o povo leu o fato.
+O evento gerado traz em `dados` o `x`, o `grau` e a `intensidade` (para o efeito visual), além do que aconteceu: vítima, mortos, se acabou a seca, como o povo leu o fato. Campos próprios dos poderes novos:
+- `seca_divina`: `dias`;
+- `diluvio`: `zonas` (as zonas alagadas), `mortos` e `cabanas`;
+- `terremoto_divino`: `mortos` e `cabanas`;
+- `pressagio`: `forma` ("cometa", "eclipse" ou "luzes") e `leituras` (id do povo → "bom", "mau" ou "aviso");
+- `cura`: `curado`, `condenado` (se a pessoa estava mesmo para morrer) e `n` (quantos se curaram).
 
 ## Linhagem acompanhada
 

@@ -488,19 +488,28 @@ func _presagios() -> void:
 			_impressionar(g, 2.5, "eclipse", e, false)
 
 
-func _terremoto() -> void:
-	var e := registrar("terremoto", "natural", 6, "", -1, [], {"mortos": [], "cabanas": 0})
+## A terra treme. Natural, em todo o mundo; ou mandado pelo deus, mais forte na zona do gesto.
+func _terremoto(zona: String = "", inten: float = 0.5, dados: Dictionary = {}, peso: float = 2.5) -> Evento:
+	var divino := not zona.is_empty()
+	var d := {"mortos": [], "cabanas": 0}
+	d.merge(dados)
+	var e := registrar("terremoto_divino" if divino else "terremoto", "divina" if divino else "natural", 6,
+		zona, -1, [], d)
 	for g in grupos_vivos():
-		var caidas := int(round(g.abrigos * rng.randf_range(0.2, 0.6)))
+		var forca := 1.0
+		if divino:
+			forca = 0.4 + 1.6 * inten if g.zona == zona else 0.3 * inten
+		var caidas := int(round(g.abrigos * clampf(rng.randf_range(0.2, 0.6) * forca, 0.0, 1.0)))
 		g.abrigos -= caidas
 		e.dados["cabanas"] += caidas
 		for p in _membros(g):
-			if chance(0.025):
+			if chance(0.025 * forca):
 				e.dados["mortos"].append(p.id)
 				e.participantes.append(p.id)
 				_morrer(p, "terremoto")
-		_impressionar(g, 2.5, "terremoto", e, false)
+		_impressionar(g, peso * (1.0 if not divino or g.zona == zona else 0.4), "terremoto", e, false)
 	e.importancia = 6 + mini(e.dados["mortos"].size(), 3)
+	return e
 
 
 func _nova_estacao() -> void:
@@ -531,13 +540,26 @@ func _clima_do_dia() -> void:
 		seca_global = false
 		var e := registrar("seca_fim", "natural", 4, "", -1, [], {"inicio": seca_evento})
 		for z in zonas.values():
-			if z.seca:
+			if z.seca and z.seca_ate <= dia:
 				z.seca = false
 		for g in grupos_vivos():
+			if zonas[g.zona].seca:
+				continue
 			if g.preces.has("seca"):
 				_impressionar(g, 1.5, "chuva", e, true)
 			_resolver_prece(g, "seca", e)
 			_avaliar_costume_seca(g, e)
+	# Fim de uma seca mandada pelo deus: a chuva volta naquela zona.
+	for z in zonas.values():
+		if z.seca and z.seca_ate > 0 and dia >= z.seca_ate and not seca_global:
+			z.seca = false
+			z.seca_ate = -1
+			var ef := registrar("seca_fim", "natural", 4, z.chave, -1, [], {"inicio": z.seca_evento, "zona_so": true})
+			for g in grupos_na_zona(z.chave):
+				if g.preces.has("seca"):
+					_impressionar(g, 1.5, "chuva", ef, true)
+				_resolver_prece(g, "seca", ef)
+				_avaliar_costume_seca(g, ef)
 	for z in zonas.values():
 		if z.seca:
 			z.agua = maxf(z.agua_min_seca, z.agua - 0.07)
@@ -1689,7 +1711,7 @@ const QUALIFICADORES := {
 	"fome": ["Fome", "f", 1], "vitoria": ["Vitória", "f", 1], "luto": ["Luto", "m", 1],
 	"tregua": ["Trégua", "f", 1], "raio": ["Raio", "m", 1], "chuva": ["Chuva", "f", 1],
 	"fartura": ["Fartura", "f", 1], "cinzas": ["Cinzas", "f", 2], "pedra": ["Pedra Erguida", "f", 1],
-	"lagrimas": ["Lágrimas", "f", 2], "sonho": ["Sonho", "m", 1],
+	"lagrimas": ["Lágrimas", "f", 2], "sonho": ["Sonho", "m", 1], "aguas": ["Águas", "f", 2],
 }
 
 
@@ -1742,6 +1764,9 @@ const NOMES_DEUS := {
 	"eclipse": [["o Olho Escuro", "m"], ["o Que Apaga o Sol", "m"]],
 	"cometa": [["o Que Risca o Céu", "m"], ["a Estrela de Cauda", "f"]],
 	"gemeos": [["a Mãe de Dois", "f"], ["o Que Dá em Dobro", "m"]],
+	"diluvio": [["o Que Afoga", "m"], ["a Grande Água", "f"]],
+	"pressagio": [["o Que Acende o Céu", "m"], ["a Luz Que Avisa", "f"]],
+	"cura": [["o Que Levanta", "m"], ["a Mão Que Cura", "f"]],
 	"terremoto": [["o Que Sacode", "m"], ["a Terra Brava", "f"]],
 	"seca": [["o Sedento", "m"], ["o Que Seca", "m"]],
 	"fome": [["o Que Nega", "m"], ["a Mão Fechada", "f"]],
@@ -2147,7 +2172,8 @@ func _explicar_silencio(g: Grupo) -> void:
 
 # ---------------------------------------------------------------- o deus
 
-const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho"]
+const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho",
+	"seca", "diluvio", "terremoto", "pressagio", "cura"]
 const PESO_GRAU := {"sinal": 1.0, "milagre": 3.0, "imposicao": 4.5}
 const ALCANCE_ALVO := 6.0   # pixels: raio e sonho acertam quem está a esta distância de x
 
@@ -2401,8 +2427,150 @@ func _poder(c: Dictionary) -> Dictionary:
 			if grau == "imposicao":
 				# Os líderes em guerra têm o mesmo sonho.
 				_impor_paz([g], g.zona)
+		"seca":
+			var dias := int(6 + 22 * inten) * (2 if grau == "imposicao" else 1)
+			e = registrar("seca_divina", "divina", 7 if grau != "sinal" else 4, z.chave, g0_id, [],
+				dados.merged({"dias": dias}))
+			z.seca = true
+			z.seca_ate = maxi(z.seca_ate, dia_abs() + dias)
+			z.seca_evento = e.id
+			z.agua = minf(z.agua, 0.6 - 0.4 * inten)
+			for g in ali:
+				_impressionar(g, peso, "seca", e, false)
+				# "Estamos sendo castigados. O que fizemos?"
+				if g.tem_crenca and not g.ceticos and grau != "sinal":
+					_nova_crenca(g, "castiga", e, {"vitima": -1})
+					if grau == "imposicao" or g.silencios >= 1:
+						_novo_costume(g, "oferendas", e)
+		"diluvio":
+			var alcance: Array = [z.chave]
+			var ordem := Cotidiano.FAIXAS.keys()
+			if grau == "imposicao":
+				alcance = ordem.duplicate()
+			elif inten >= 0.7:
+				var i := ordem.find(z.chave)
+				for j in [i - 1, i + 1]:
+					if j >= 0 and j < ordem.size():
+						alcance.append(ordem[j])
+			e = registrar("diluvio", "divina", 9 if grau != "sinal" else 5, z.chave, g0_id, [],
+				dados.merged({"zonas": alcance, "mortos": [], "cabanas": 0}))
+			for chave in alcance:
+				var zz: Zona = zonas[chave]
+				zz.alagada_ate = dia_abs() + int(4 + 10 * inten)
+				zz.seca = false
+				zz.seca_ate = -1
+				zz.agua = 1.0
+				zz.comida *= 1.0 - 0.6 * inten
+				for g in grupos_na_zona(chave):
+					var perdidas := int(round(g.abrigos * (0.3 + 0.7 * inten)))
+					g.abrigos -= perdidas
+					e.dados["cabanas"] += perdidas
+					g.estoque *= 1.0 - 0.7 * inten
+					for p in _membros(g):
+						if chance(0.18 * inten * (1.6 if p.idade(ano()) < 8 or p.idade(ano()) > 60 else 1.0)):
+							e.dados["mortos"].append(p.id)
+							e.participantes.append(p.id)
+							_morrer(p, "diluvio")
+			for g in grupos_vivos():
+				var atingido: bool = alcance.has(g.zona)
+				_impressionar(g, peso * (1.3 if atingido else 0.5), "diluvio", e, false)
+				if atingido and grau != "sinal":
+					_nomear_lugar(g, g.zona, "aguas", e)
+					if g.tem_crenca:
+						_nova_crenca(g, "diluvio", e)
+			e.importancia = mini(10, e.importancia + mini(e.dados["mortos"].size() / 3, 1))
+		"terremoto":
+			e = _terremoto(z.chave, inten, dados, peso)
+			for g in ali:
+				if g.tem_crenca and not g.ceticos and grau != "sinal":
+					_nova_crenca(g, "castiga", e, {"vitima": -1})
+		"pressagio":
+			e = registrar("pressagio", "divina", 7 if grau != "sinal" else 5, "", -1, [],
+				dados.merged({"leituras": {}, "forma": ["cometa", "eclipse", "luzes"][int(inten * 2.99)]}))
+			# Ninguém sabe o que significa, e todos opinam: cada povo lê do seu jeito.
+			for g in grupos_vivos():
+				var p_imp := peso * _crenca_no_ceu(g)
+				_impressionar(g, p_imp, "pressagio", e, true)
+				var leitura := _ler_pressagio(g)
+				e.dados["leituras"][g.id] = leitura
+				match leitura:
+					"bom":
+						for p in _membros(g):
+							p.fe = clampf(p.fe + 0.1, -1.0, 1.0)
+					"mau":
+						for outro in grupos_vivos():
+							if outro != g and g.hostilidade.get(outro.id, 0.0) > 2.0:
+								g.hostilidade[outro.id] += 1.0
+					"aviso":
+						g.estoque += 0.0
+						if not g.tem_costume("estocar") and not g.dependente and grau != "sinal":
+							_novo_costume(g, "estocar", e)
+		"cura":
+			if alvo == null:
+				alvo = _pessoa_perto(x)
+			if alvo == null:
+				e = registrar("cura", "divina", 2, z.chave, g0_id, [], dados.merged({"curado": -1}))
+				return {"ok": true, "grau": grau, "evento": e.id, "zona": z.chave, "alvo": -1}
+			var g_c: Grupo = grupos[alvo.grupo]
+			var condenado := alvo.doente > 0 or alvo.saude < 0.5
+			var curados: Array = [alvo]
+			if grau == "imposicao":
+				for p in _membros(g_c):
+					if p != alvo and p.doente > 0:
+						curados.append(p)
+			for p in curados:
+				p.doente = 0
+				p.saude = 1.0
+			if not condenado and grau != "imposicao":
+				grau = "sinal"
+				peso = PESO_GRAU["sinal"]
+			var ids: Array = []
+			for p in curados:
+				ids.append(p.id)
+			e = registrar("cura", "divina", 8 if condenado else 3, g_c.zona, g_c.id, ids,
+				dados.merged({"curado": alvo.id, "condenado": condenado, "grau": grau, "n": curados.size()}))
+			if condenado:
+				# Milagre pessoal: nasce um devoto, às vezes um profeta.
+				alvo.fe = 1.0
+				alvo.feitos += 3
+				alvo.ferida_pelo_deus = false
+				_impressionar(g_c, peso, "cura", e, true)
+				for nec in g_c.preces.keys():
+					if g_c.preces[nec]["alvo"] == alvo.id or (nec == "doenca" and grau == "imposicao"):
+						_resolver_prece(g_c, nec, e)
+				if g_c.tem_crenca and not g_c.ceticos and g_c.sacerdote == -1 and alvo.idade(ano()) >= 16:
+					g_c.sacerdote = alvo.id
+					registrar("sacerdote", "divina", 7, g_c.zona, g_c.id, [alvo.id], {"cura": e.id})
 	return {"ok": true, "grau": grau, "evento": e.id if e != null else -1, "zona": z.chave,
 		"alvo": alvo.id if alvo != null else -1}
+
+
+## Quanto um povo ainda se impressiona com sinais no céu (cai com o estudo do céu).
+func _crenca_no_ceu(g: Grupo) -> float:
+	return 1.0
+
+
+## Como um povo lê um presságio: pelos traços de quem está vivo e pelo que viveu.
+func _ler_pressagio(g: Grupo) -> String:
+	var votos := {"bom": 0.5, "mau": 0.5, "aviso": 0.5}
+	for p in _adultos(g, 16):
+		if p.tem("devoto") or p.tem("generoso"):
+			votos["bom"] += 1.0
+		if p.tem("medroso") or p.tem("rancoroso") or p.ferida_pelo_deus:
+			votos["mau"] += 1.0
+		if p.tem("desconfiado") or p.tem("engenhoso"):
+			votos["aviso"] += 0.8
+	if g.em_fome or g.doenca_evento >= 0:
+		votos["mau"] += 1.5
+	var total := 0.0
+	for k in votos:
+		total += votos[k]
+	var r := rng.randf() * total
+	for k in votos:
+		r -= votos[k]
+		if r <= 0.0:
+			return k
+	return "aviso"
 
 
 ## Imposição: os grupos dados fazem trégua com todos os inimigos.
@@ -2460,7 +2628,8 @@ func zonas_visiveis() -> Array:
 			nomes[gid] = z.nomes[gid]["nome"]
 		r.append({"chave": chave, "nome": z.nome, "x_ini": f[0], "x_fim": f[1],
 			"agua": z.agua, "comida": clampf(z.comida / z.comida_cap, 0.0, 2.0), "seca": z.seca,
-			"queimada": z.queimada_ate > dia_abs(), "pedra_erguida": z.monte_erguido,
+			"queimada": z.queimada_ate > dia_abs(), "alagada": z.alagada_ate > dia_abs(),
+			"pedra_erguida": z.monte_erguido,
 			"pedra_x": z.pedra_x, "nomes": nomes})
 	return r
 
