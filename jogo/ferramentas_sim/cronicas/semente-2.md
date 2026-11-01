@@ -174,48 +174,54 @@ Demsuia, que guiava Esar, morreu de repente, aos 41 anos.
 
 ### Ano 80
 
-Nos anos 71 a 80 houve três secas e quatro preces que pareceram atendidas; nasceram seis crianças e morreram duas pessoas. No fim do ano 80, doze pessoas viviam no mundo, todas em Esar.
+Nos anos 71 a 80 houve quatro secas e cinco preces que pareceram atendidas; nasceram sete crianças e morreram duas pessoas. No fim do ano 80, treze pessoas viviam no mundo, todas em Esar.
 
-*Entre os anos 81 e 82, nada mudou o rumo do mundo.*
+*Entre os anos 81 e 83, nada mudou o rumo do mundo.*
 
-### Ano 83
+### Ano 84
 
-Uma estrela de cauda cruzou o céu por 7 noites. Ninguém dormia direito. Depois disso, Esar deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Risca o Céu».
+Kaia, a rancorosa, descobriu como empilhar pedras cortadas sem que caíssem. No outono, o sol escureceu outra vez. Para Esar, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
 
-*Entre os anos 84 e 86, nada mudou o rumo do mundo.*
+### Ano 85
 
-### Ano 87
+Gael, que guiava Esar, morreu dormindo, aos 52 anos.
 
-Em Esar, Kaoro pediu: «Que Risca o Céu, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Risca o Céu tinha ouvido. O deus nada fez: o crédito era de graça.
+*Entre os anos 86 e 87, nada mudou o rumo do mundo.*
 
-*O ano 88 foi calmo.*
+### Ano 88
+
+No verão do ano 88, em Esar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. O templo de Esar ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Apaga o Sol.
 
 ### Ano 89
 
-No verão, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. De novo a chuva sumiu, como no ano 77. Foram 25 dias de seca.
+Kaoro, que falava pelo Que Apaga o Sol em Esar, morreu de velhice aos 56 anos.
 
 ### Ano 90
 
-Nos anos 81 a 90 houve duas secas e três preces que pareceram atendidas; nasceram uma crianças e morreram três pessoas. No fim do ano 90, dez pessoas viviam no mundo, todas em Esar.
+A seca voltou, como no ano 77: 18 dias sem chuva, até que o céu se abriu. Suaria tinha rezado: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Apaga o Sol tinha ouvido. Foi só o tempo, mas quem iria dizer? Nos anos 81 a 90 houve duas secas; nasceram sete crianças e morreram cinco pessoas. No fim do ano 90, quinze pessoas viviam no mundo, todas em Esar.
 
-*Entre os anos 91 e 95, nada mudou o rumo do mundo.*
+### Ano 91
 
-### Ano 96
+Na primavera, morreu Kaia, que guiava Esar, aos 51 anos.
 
-Morreu Kaoro, que falava pelo Que Risca o Céu em Esar, aos 63 anos.
+*Os anos 92 a 97 passaram em paz.*
 
-*Do ano 97 ao 99, a vida seguiu sem grandes acontecimentos.*
+### Ano 98
+
+Morreu Suaria, que guiava Esar, aos 57 anos.
+
+*O ano 99 foi calmo.*
 
 ### Ano 100
 
-No fim do ano 100, sete pessoas viviam no mundo, todas em Esar.
+Nos anos 91 a 100 houve duas secas; nasceram zero crianças e morreram três pessoas. No fim do ano 100, doze pessoas viviam no mundo, todas em Esar.
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Esar** vive na praia, com 7 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Risca o Céu»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
+- **Esar** vive na praia, com 12 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
 
 Lugares com nome: Praia do Raio (praia, para Esar).
 
-Em 100 anos nasceram 26 pessoas e morreram 31.
+Em 100 anos nasceram 33 pessoas e morreram 33.
