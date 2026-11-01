@@ -24,7 +24,7 @@ func conferir(cond: bool, msg: String) -> void:
 
 func rodar(semente: int, cenario: String) -> Array:
 	var cmds: Array = [] if cenario.is_empty() else Cenario.ler_arquivo(cenario)
-	var m := Mundo.new(semente, cmds)
+	var m := Mundo.new(semente, cmds, Mundo.HORA_INICIAL, true)
 	var t := Time.get_ticks_usec()
 	m.avancar_dias(Mundo.DIAS_ANO * ANOS)
 	var dt := (Time.get_ticks_usec() - t) / 1e6
@@ -58,7 +58,7 @@ func _initialize() -> void:
 		conferir(a[0].find("{") < 0 and a[0].find("}") < 0, "%s: sem marcas de modelo vazando no texto" % nome)
 	# Salvar e carregar no meio não muda nada.
 	var inteiro: String = rodar(1, "")[0]
-	var m1 := Mundo.new(1)
+	var m1 := Mundo.new(1, [], Mundo.HORA_INICIAL, true)
 	m1.avancar_dias(Mundo.DIAS_ANO * 43 + 17)
 	Persistencia.salvar(m1, "user://regressao.txt")
 	var m2 = Persistencia.carregar("user://regressao.txt")

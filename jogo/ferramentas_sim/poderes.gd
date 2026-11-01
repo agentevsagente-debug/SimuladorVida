@@ -23,7 +23,7 @@ func _initialize() -> void:
 	for b in BASES:
 		var c := "user://poderes/base-%d-%d.txt" % [b[0], b[1]]
 		if not FileAccess.file_exists(c):
-			var m := Mundo.new(b[0])
+			var m := Mundo.new(b[0], [], Mundo.HORA_INICIAL, true)
 			while m.ano() < b[1]:
 				m.avancar_dias(Mundo.DIAS_ANO)
 			while m.hora() != 10:

@@ -18,7 +18,7 @@ func _initialize() -> void:
 	var casos := [[1, 4, 10], [2, 14, 16], [3, 24, 21], [4, 34, 3], [5, 120, 17], [7, 400, 12], [2, 2400, 15], [3, 3600, 19], [4, 1600, 10], [6, 11400, 14]]
 	var impressas := 0
 	for c in casos:
-		var m := Mundo.new(c[0])
+		var m := Mundo.new(c[0], [], Mundo.HORA_INICIAL, true)
 		while m.dia_abs() < c[1]:
 			m.avancar_hora()
 		while m.hora() < c[2]:

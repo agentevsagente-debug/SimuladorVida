@@ -43,7 +43,7 @@ func _gravar(nome: String, linhas: PackedStringArray) -> void:
 func _estagio2(de: int, ate: int) -> void:
 	var linhas: PackedStringArray = []
 	for s in range(de, ate + 1):
-		var m := Mundo.new(s)
+		var m := Mundo.new(s, [], Mundo.HORA_INICIAL, true)
 		var desc := -1
 		var est2 := -1
 		var visto := 0
@@ -70,7 +70,7 @@ func _estagio2(de: int, ate: int) -> void:
 func _ausencia(de: int, ate: int) -> void:
 	var linhas: PackedStringArray = []
 	for s in range(de, ate + 1):
-		var m := Mundo.new(s)
+		var m := Mundo.new(s, [], Mundo.HORA_INICIAL, true)
 		for partida in [3, 25, 60, 120]:
 			while m.ano() < partida and not m.fim_do_mundo:
 				m.avancar_dias(Mundo.DIAS_ANO)
@@ -91,7 +91,7 @@ func _ausencia(de: int, ate: int) -> void:
 
 ## década | eventos notáveis (tipos) | população
 func _monotonia(semente: int, anos: int) -> void:
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	var linhas: PackedStringArray = []
 	var visto := 0
 	while m.ano() <= anos and not m.fim_do_mundo:

@@ -18,7 +18,7 @@ func _initialize() -> void:
 	if cenario_path != "-":
 		comandos = Cenario.ler_arquivo(cenario_path)
 		nome_cenario = "cenário %s (%d intervenções)" % [cenario_path.get_file(), comandos.size()]
-	var m := Mundo.new(semente, comandos)
+	var m := Mundo.new(semente, comandos, Mundo.HORA_INICIAL, true)
 	var t0 := Time.get_ticks_usec()
 	var t_max := 0.0
 	for a in anos:

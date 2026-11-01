@@ -7,7 +7,7 @@ extends SceneTree
 const Mundo = preload("res://nucleo/mundo.gd")
 const Persistencia = preload("res://nucleo/persistencia.gd")
 func _initialize() -> void:
-	var m := Mundo.new(2)
+	var m := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
 	var criado := -1
 	while m.ano() < 200:
 		m.avancar_dias(Mundo.DIAS_ANO)

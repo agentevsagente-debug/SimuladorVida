@@ -12,7 +12,7 @@ func _initialize() -> void:
 	var semente := int(args[0]) if args.size() > 0 else 1
 	var limite := int(args[1]) if args.size() > 1 else 1000
 	var saida: String = args[2] if args.size() > 2 else "user://cronica_estagios_%d.md" % semente
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	var primeiro := {}   # estágio -> [ano, grupo]
 	var visto := 0
 	var depois := -1

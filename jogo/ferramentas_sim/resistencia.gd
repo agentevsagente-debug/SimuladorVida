@@ -28,7 +28,7 @@ func _initialize() -> void:
 	var caminho := "user://resistencia/%s-%d.txt" % [estilo, semente]
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("user://resistencia"))
 	deus.seed = semente * 7919 + 3
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	var linhas: PackedStringArray = ["# Resistência: semente %d, estilo %s, %d anos" % [semente, estilo, anos], "",
 		"| Ano | Pessoas | Povos | Eventos | Arquivo (KB) | Salvar (ms) | Carregar (ms) | Igual depois de carregar | Ausência de 1 ano (ms) | Memória (MB) | Pico (MB) | Objetos | Pior dia (ms) | Pior ano (s) |",
 		"|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]

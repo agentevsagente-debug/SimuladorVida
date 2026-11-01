@@ -6,7 +6,8 @@ extends SceneTree
 const Mundo = preload("res://nucleo/mundo.gd")
 const Persistencia = preload("res://nucleo/persistencia.gd")
 const Estante = preload("res://nucleo/estante.gd")
-const PASTA := "user://estante"
+## A estante do mundo de teste (nunca a do jogador, user://estante).
+const PASTA := "user://teste_fase2.estante"
 
 var falhas := 0
 
@@ -19,12 +20,13 @@ func conferir(cond: bool, msg: String) -> void:
 
 func _initialize() -> void:
 	_limpar_estante()
+	_mundo_novo_vazio()
 	# Estágios e construções: procura uma semente em que algum povo chegue à escrita.
 	var m: Mundo
 	var maior := 0
 	var escritor := -1
 	for semente in range(5, 25):
-		m = Mundo.new(semente)
+		m = Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 		m.avancar_dias(40 * 100)
 		maior = 0
 		for g in m.grupos_vivos():
@@ -50,7 +52,7 @@ func _initialize() -> void:
 		conferir(not cp.is_empty(), "um povo que escreve tem a própria crônica")
 		print(cp.substr(0, 700))
 	# Fim do mundo: todos morrem.
-	var w := Mundo.new(2)
+	var w := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
 	w.avancar_dias(40 * 20)
 	for g in w.grupos_vivos():
 		for id in g.membros.duplicate():
@@ -92,3 +94,28 @@ func _limpar_estante() -> void:
 		return
 	for f in dir.get_files():
 		dir.remove(f)
+
+
+## D-09 do QA: o mundo novo começa vazio, de manhã; o primeiro gesto é criar o povo, como no
+## recomeço depois de uma extinção.
+func _mundo_novo_vazio() -> void:
+	var m := Mundo.new(3)
+	conferir(m.populacao() == 0 and m.grupos_vivos().is_empty() and m.fim_do_mundo and m.tempo()["hora"] == 7,
+		"o mundo novo começa vazio, às 7h (população %d, hora %d)" % [m.populacao(), m.tempo()["hora"]])
+	conferir(m.eventos_desde(0).is_empty() and m.livros.is_empty(), "o mundo vazio do começo não tem fim do mundo nem livro")
+	conferir(not m.usar_poder("chuva", 260.0, 0.8)["ok"], "no mundo novo vazio, os poderes sobre o povo recusam")
+	conferir(m.abandonar().is_empty(), "abandonar o mundo antes do primeiro povo não fecha livro")
+	m.avancar_dias(2)
+	var r := m.criar_povo(260.0)
+	conferir(r["ok"] and m.era == 1 and m.populacao() == 12 and not m.fim_do_mundo and m.tempo()["hora"] == 7,
+		"criar o primeiro povo: era 1, 12 pessoas, às 7h (%s)" % r)
+	conferir(m.eventos_desde(0).any(func(e): return e["tipo"] == "inicio"), "o primeiro povo tem o evento de início")
+	conferir(m.grupos_vivos()[0].zona == "floresta", "o gesto em x 260 põe o povo na floresta")
+	m.avancar_dias(Mundo.DIAS_ANO * 3)
+	conferir(m.populacao() > 0 and m.cronica_viva().contains("Ano 1"), "o primeiro povo vive, e a crônica conta desde o ano 1")
+	# Começo e recomeço funcionam igual: o mesmo mundo, salvo vazio e carregado, cria o povo.
+	var v := Mundo.new(4)
+	Persistencia.salvar(v, "user://teste_fase2_vazio.txt")
+	var c = Persistencia.carregar("user://teste_fase2_vazio.txt")
+	conferir(c != null and c.fim_do_mundo and c.populacao() == 0 and c.criar_povo(400.0)["ok"] and c.era == 1,
+		"o mundo vazio salvo e carregado cria o primeiro povo")
