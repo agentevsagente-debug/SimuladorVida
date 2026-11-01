@@ -1,11 +1,14 @@
 # Mede CPU e memória da moldura num cenário.
-# Uso: medir.ps1 -Cenario andando|parado|escondido -Segundos 600
+# Uso: medir.ps1 -Cenario normal|rapido|escondido -Segundos 600
+#   normal: visível, ritmo normal (1 hora de jogo a cada 112,5 s)
+#   rapido: visível, ritmo rápido (1 hora a cada 1,9 s: gente andando o tempo todo)
+#   escondido: minimizada, ritmo normal
 #
 # CPU% = Δ tempo de CPU do processo / (Δ tempo real × núcleos lógicos) × 100,
 # a mesma conta do Gerenciador de Tarefas. O dwm.exe, que compõe a janela
 # transparente, não pode ser lido sem administrador e fica de fora.
 param(
-    [Parameter(Mandatory)][ValidateSet('andando', 'parado', 'escondido')][string]$Cenario,
+    [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'escondido')][string]$Cenario,
     [int]$Segundos = 600,
     [int]$Intervalo = 5,
     [int]$Aquecimento = 10,
@@ -18,7 +21,8 @@ New-Item -ItemType Directory -Force $saida | Out-Null
 $nucleos = [Environment]::ProcessorCount
 
 $p = Start-Process -FilePath $Godot -PassThru -ArgumentList @(
-    '--path', "`"$projeto`"", '--', '--sem-config', "--cenario=$Cenario", "--duracao=$($Segundos + $Aquecimento + 30)")
+    '--path', "`"$projeto`"", '--', '--sem-config', '--semente=7', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
+    $(if ($Cenario -eq 'escondido') { '--cenario=escondido' } else { "--ritmo=$Cenario" }))
 Start-Sleep -Seconds $Aquecimento
 
 $linhas = @()

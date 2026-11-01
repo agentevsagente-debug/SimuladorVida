@@ -225,6 +225,78 @@ def montanha_inverno(px, profundidade, hora):
     return out
 
 
+def mata_sazonal(px, estacao, hora):
+    """Mata distante na estação: silhueta de copas com a ponta esquerda irregular (não mais
+    um corte reto) e textura de folhagem. Outono: laranja e ferrugem com copas separadas.
+    Inverno: neve nas copas e verde escuro salpicado de neve por baixo."""
+    hh, w = len(px), len(px[0])
+    topo = [next((y for y in range(hh) if px[y][x] is not None), None) for x in range(w)]
+    xs = [x for x in range(w) if topo[x] is not None]
+    if not xs:
+        return px
+    x0 = xs[0]
+    out = [[None] * w for _ in range(hh)]
+    noite = hora == "noite"
+    for x in xs:
+        t = topo[x]
+        # a ponta esquerda afina em copas soltas, em vez de terminar num corte reto
+        if x < x0 + 18:
+            sobe = (x - x0) * 0.7 + 3 * math.sin(x * 0.9) - 2
+            t = max(t, round(121 - max(0, sobe)))
+            if t >= 121:
+                continue
+        for y in range(t, hh):
+            if px[y][x] is None:
+                continue
+            d = y - t
+            sep = (x + 3) % 9 == 0 and d > 1           # separação entre copas
+            if estacao == "outono":
+                if hora == "dia":
+                    if d == 0:
+                        c = 21
+                    elif d < 3:
+                        c = 21 if pont(x, y, 0.55) else 24
+                    else:
+                        c = 23 if sep or (y > 116 and pont(x, y, 0.45)) else 24
+                        if h(x, y, 11) < 0.07:
+                            c = 16
+                        elif h(x, y, 12) < 0.08:
+                            c = 21
+                else:
+                    c = px[y][x]
+            else:  # inverno
+                claro, meio, corpo, escuro = (31, 0, 13, 3) if not noite else (12, 5, 3, 30)
+                if hora == "entardecer":
+                    claro, meio, corpo, escuro = 12, 7, 4, 3
+                if d == 0:
+                    c = claro
+                elif d == 1:
+                    c = claro if x % 3 else meio
+                elif d < 4:
+                    c = meio if pont(x, y, 0.6 - d * 0.1) else corpo
+                else:
+                    c = escuro if sep or (y > 116 and pont(x, y, 0.4)) else corpo
+                    if h(x, y, 13) < 0.08:
+                        c = claro
+            out[y][x] = c
+    return out
+
+
+def ceu_inverno(hora):
+    """Céu de inverno: mais frio e pálido. Mesmo sol, lua e nuvens do verão."""
+    from comum import cena
+    cfg = dict(cena.HORARIOS[hora])
+    if hora == "dia":
+        cfg.update(ceu=[1, 19, 0], faixas=[(30, 14), (74, 12)], sol_cores=(31, 31, 0), nuvem=(31, 0, 19))
+    else:
+        cfg.update(ceu=[4, 5, 7, 12], faixas=[(22, 12), (46, 12), (68, 9)], nuvem=(12, 7, 5))
+    t = cena.Tela()
+    cena.pintar_ceu(t, cfg, random.Random(7))
+    cena.pintar_sol(t, cfg)
+    cena.pintar_nuvens(t, cfg, hora, random.Random(4))
+    return t.p
+
+
 def gelo():
     """Superfície do lago congelada (8x8), para as colunas de água perto da margem."""
     q = [[None] * 8 for _ in range(8)]
@@ -285,15 +357,15 @@ def principal():
     for nome, ln in linhas.items():
         for hora in ("entardecer", "dia", "noite"):
             px = ler(PECAS / "montagem" / f"{nome}_{hora}.png")
-            v = montanha_inverno(px, ln, hora) if nome != "mata_distante" else neve_por_cima(
-                px, grossa=False, claro=31 if hora != "noite" else 12, sombra=0 if hora != "noite" else 5)
+            v = montanha_inverno(px, ln, hora) if nome != "mata_distante" else mata_sazonal(px, "inverno", hora)
             gravar(v, AQUI / "inverno" / "montagem" / f"{nome}_{hora}.png", ampliar=False)
             contagem["inverno"] += 1
-    # outono: a mata distante amarela e enferruja
-    for hora, mapa in (("dia", {14: 24, 13: 23}), ("entardecer", {}), ("noite", {})):
-        if mapa:
-            px = ler(PECAS / "montagem" / f"mata_distante_{hora}.png")
-            gravar(mapear(px, mapa), AQUI / "outono" / "montagem" / f"mata_distante_{hora}.png", ampliar=False)
+    # outono: a mata distante enferruja (de dia) e ganha copas de verdade
+    px = ler(PECAS / "montagem" / "mata_distante_dia.png")
+    gravar(mata_sazonal(px, "outono", "dia"), AQUI / "outono" / "montagem" / "mata_distante_dia.png", ampliar=False)
+    # inverno: céu mais frio e pálido
+    for hora in ("dia", "entardecer"):
+        gravar(ceu_inverno(hora), AQUI / "inverno" / "montagem" / f"ceu_{hora}.png", ampliar=False)
     gravar(gelo(), AQUI / "inverno" / "terreno" / "gelo_superficie.png", ampliar=False)
     gravar(folha_quadros(neve_caindo()), PECAS / "efeitos" / "neve_4q.png")
     gravar(folha_quadros(flocos()), PECAS / "efeitos" / "floco_3v.png")

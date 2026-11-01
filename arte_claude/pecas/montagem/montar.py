@@ -86,7 +86,7 @@ def montar(hora, estacao=None):
     hab = {f.stem: ler(f) for f in pasta_hab.glob("*_*q.png")}
     c = Cena()
     # 1. céu e fundo (camadas do motor)
-    c.camada(ler(AQUI / f"ceu_{hora}.png"))
+    c.camada(camada_fundo("ceu", hora, estacao))
     for nome in ("montanhas_longe", "montanhas_perto", "mata_distante"):
         c.camada(camada_fundo(nome, hora, estacao))
     # 2. terreno em blocos

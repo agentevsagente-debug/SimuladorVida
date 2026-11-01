@@ -29,24 +29,28 @@
                    },
     "clique atravessa":  {
                              "ok":  true,
-                             "detalhe":  "cliques recebidos pelo alvo: 1"
+                             "detalhe":  "cliques recebidos pelo alvo: 1 (tentativas: 1)"
                          },
     "clique chega ao mundo":  {
                                   "ok":  true,
-                                  "detalhe":  "registrado no log da moldura"
+                                  "detalhe":  "registrado no log da moldura (tentativas: 1)"
                               },
     "clique no mundo fica":  {
                                  "ok":  true,
                                  "detalhe":  "alvo continua com 1 clique(s)"
                              },
+    "gesto do poder (raio)":  {
+                                  "ok":  true,
+                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": -1 }"
+                              },
     "arrastar":  {
                      "ok":  true,
-                     "detalhe":  "deslocou (120, 60), esperado (120, 60)"
+                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px"
                  },
-    "botao + (3x)":  {
-                         "ok":  true,
-                         "detalhe":  "janela 1440x528"
-                     },
+    "roda na alca (3x)":  {
+                              "ok":  true,
+                              "detalhe":  "janela 1440x534"
+                          },
     "passagem refeita em 3x":  {
                                    "ok":  true,
                                    "detalhe":  ""
@@ -57,7 +61,7 @@
                          },
     "mostrar (barra tarefas)":  {
                                     "ok":  true,
-                                    "detalhe":  "janela de volta em (320, 84) 1440x528"
+                                    "detalhe":  "janela de volta em (320, 82) 1440x534"
                                 },
     "passagem apos mostrar":  {
                                   "ok":  true,
