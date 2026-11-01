@@ -17,7 +17,8 @@ const Evento = preload("evento.gd")
 const VERSAO := 1
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
-const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos"]
+const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos",
+	"_rotina_cache", "_rotina_chave"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
 const Estante = preload("estante.gd")

@@ -10,6 +10,7 @@ const Evento = preload("evento.gd")
 const Nomes = preload("nomes.gd")
 const Cotidiano = preload("cotidiano.gd")
 const Cronista = preload("cronista.gd")
+const Rotina = preload("rotina.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40
@@ -48,6 +49,8 @@ var pessoas: Dictionary = {}     # id -> Pessoa (vivas e mortas)
 ## depois de séculos de mortos. Derivado de `pessoas`; não é salvo.
 var vivos: Dictionary = {}
 var peste_ate: int = -1
+var _rotina_cache = null          # Rotina do dia, refeita quando o mundo muda (não é salva)
+var _rotina_chave: Array = []
 var grupos: Array = []           # Grupo, inclusive extintos
 var zonas: Dictionary = {}       # chave -> Zona
 var eventos: Array = []
@@ -3240,26 +3243,53 @@ func construcoes() -> Array:
 	return r
 
 
-## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora e na anterior.
+## A rotina do dia corrente: planos de todos e cenas. Refeita quando muda o dia, chega
+## evento novo ou muda a população; uma consulta pura, que não toca no sorteio do mundo.
+func rotina():
+	var chave := [dia_abs(), eventos.size(), populacao(), tempestade.get("evento", -1)]
+	if _rotina_cache == null or chave != _rotina_chave:
+		_rotina_cache = Rotina.new(self, dia_abs())
+		_rotina_chave = chave
+	return _rotina_cache
+
+
+## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora.
+## `x_anterior` é onde a pessoa está no começo da hora, e `x`, no fim; `agenda` traz os
+## trechos da hora em detalhe (veja nucleo/API.md).
 func pessoas_visiveis() -> Array:
 	var r: Array = []
 	var a := ano()
+	var ro = rotina()
+	var h := hora()
 	for g in grupos_vivos():
-		var obras := Cotidiano.construcoes_do_grupo(self, g)
 		for id in g.membros:
 			var p: Pessoa = pessoas[id]
-			var agora := Cotidiano.pessoa_no_passo(self, p, g, obras, passo)
-			var antes := Cotidiano.pessoa_no_passo(self, p, g, obras, maxi(0, passo - 1))
+			var comeco: Dictionary = ro.instante(id, h * 60.0)
+			var meio: Dictionary = ro.instante(id, h * 60.0 + 30.0)
+			var fim: Dictionary = ro.instante(id, h * 60.0 + 59.9)
 			var papel := ""
 			if g.lider == id:
 				papel = "lider"
 			elif g.sacerdote == id:
 				papel = "sacerdote"
 			r.append({"id": id, "nome": p.nome, "sexo": p.sexo, "idade": p.idade(a),
-				"crianca": p.idade(a) < 12, "grupo": g.id, "x": agora["x"], "x_anterior": antes["x"],
-				"acao": agora["acao"], "papel": papel, "tracos": p.tracos.duplicate(),
+				"crianca": p.idade(a) < 12, "grupo": g.id, "x": fim["x"], "x_anterior": comeco["x"],
+				"acao": meio["acao"], "virado": meio["virado"], "cena": meio["cena"].duplicate(),
+				"agenda": ro.agenda(id, h), "papel": papel, "tracos": p.tracos.duplicate(),
 				"doente": p.doente > 0, "gravida": p.gravidez > 0, "acompanhada": id == acompanhada,
 				"pai": p.pai, "mae": p.mae, "conjuge": p.conjuge})
+	return r
+
+
+## Cenas que acontecem nesta hora: funeral, nascimento, casamento, festa, migração,
+## guerra, corvos, prece coletiva, colheita e construção.
+func cenas_ativas() -> Array:
+	var r: Array = []
+	for c in rotina().cenas_na_hora(hora()):
+		var d: Dictionary = c.duplicate(true)
+		d["ini"] = c["ini"] / 60.0
+		d["fim"] = c["fim"] / 60.0
+		r.append(d)
 	return r
 
 
@@ -3267,8 +3297,7 @@ func posicao_de(pessoa_id: int) -> float:
 	var p: Pessoa = pessoas.get(pessoa_id)
 	if p == null or not p.vivo:
 		return -1.0
-	var g: Grupo = grupos[p.grupo]
-	return Cotidiano.pessoa_no_passo(self, p, g, Cotidiano.construcoes_do_grupo(self, g), passo)["x"]
+	return rotina().instante(pessoa_id, hora() * 60.0 + 30.0)["x"]
 
 
 ## Preces esperando resposta: os sinais da moldura.

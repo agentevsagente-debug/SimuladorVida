@@ -22,8 +22,8 @@ func _initialize() -> void:
 	var ps := m.pessoas_visiveis()
 	conferir(ps.size() == m.populacao(), "uma entrada por pessoa viva")
 	for p in ps:
-		conferir(p["x"] >= 126 and p["x"] < 480, "x fora da água e dentro do mundo: %s" % p)
-		conferir(p["acao"] in ["dormir", "andar", "parado", "colher", "rezar", "fogueira"], "ação conhecida: " + p["acao"])
+		conferir((p["x"] >= 126 or p["acao"] == "remar") and p["x"] < 480, "x fora da água e dentro do mundo: %s" % p)
+		conferir(p["acao"] in preload("res://nucleo/rotina.gd").ACOES, "ação conhecida: " + p["acao"])
 	print("pessoa: ", ps[0])
 	print("construções: ", m.construcoes())
 	print("zona: ", m.zonas_visiveis()[2])
@@ -60,10 +60,11 @@ func _initialize() -> void:
 		print("  ", nome, ": ", m.eventos[r["evento"]].tipo, " ", r)
 	# Cura: em alguém doente vira milagre; em alguém são, só sinal.
 	var vivos := m.pessoas_visiveis()
-	var doente: Dictionary = vivos[1]
-	m.pessoas[doente["id"]].doente = 5
-	r = m.usar_poder("cura", doente["x"], 0.8)
-	conferir(r["grau"] == "milagre" and r["alvo"] == doente["id"] and m.pessoas[doente["id"]].doente == 0, "cura de doente é milagre")
+	var gesto: float = vivos[1]["x"]
+	var quem = m._pessoa_perto(gesto)
+	quem.doente = 5
+	r = m.usar_poder("cura", gesto, 0.8)
+	conferir(r["grau"] == "milagre" and r["alvo"] == quem.id and quem.doente == 0, "cura de doente é milagre: %s" % r)
 	var sao: Dictionary = m.pessoas_visiveis()[2]
 	r = m.usar_poder("cura", sao["x"], 0.8)
 	conferir(r["alvo"] == -1 or r["grau"] == "sinal", "cura em alguém são é sinal: %s" % r)
@@ -74,7 +75,7 @@ func _initialize() -> void:
 		if d % 7 == 0:
 			for h in 24:
 				for p in m.pessoas_visiveis():
-					conferir(p["x"] >= 126, "pessoa na água: %s" % p)
+					conferir(p["x"] >= 126 or p["acao"] == "remar", "pessoa na água: %s" % p)
 				m.avancar_hora()
 	var novos := m.eventos_desde(visto)
 	var chamados := novos.filter(func(d): return d["camada"] == "chamado")

@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 7, de 01/11/2026 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 8, de 01/11/2026 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -131,32 +131,72 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 |---|---|
 | `id`, `nome`, `sexo` ("m"/"f"), `idade`, `crianca` (idade < 12) | quem é |
 | `grupo` | id do povo |
-| `x`, `x_anterior` | posição neste passo e no anterior |
-| `acao` | uma de: `dormir`, `andar`, `parado`, `colher`, `rezar`, `fogueira` (sentado em volta do fogo) |
+| `x_anterior`, `x` | posição no **começo** e no **fim** desta hora |
+| `acao` | a ação no meio da hora (lista abaixo) |
+| `virado` | para onde olha no meio da hora: -1 (esquerda), 1 (direita) ou 0 (tanto faz). Andando, é o sentido da caminhada; conversando, lutando ou dançando, é para o outro. |
+| `cena` | `{tipo, id}` se a pessoa está numa cena no meio da hora; `{}` se não |
+| `agenda` | os trechos da hora, em detalhe (abaixo). É o que dá vida ao cotidiano. |
 | `papel` | "lider", "sacerdote" ou "" |
 | `tracos` | dois de: ambicioso, pacifico, rancoroso, curioso, devoto, desconfiado, generoso, engenhoso, corajoso, medroso |
 | `doente`, `gravida` | estados atuais |
 | `acompanhada` | é a pessoa acompanhada pelo jogador |
 | `pai`, `mae`, `conjuge` | ids, ou -1 |
 
-A rotina de um dia comum:
+**A agenda da hora.** Uma hora de jogo dura 112,5 s no ritmo normal, e ninguém fica a hora toda parado num ponto: a pessoa anda entre arbustos, vai pescar, traz lenha, conversa. `agenda` é a lista dos trechos da hora, em ordem:
 
-| Hora | Ação |
+```
+{de, ate, x0, x1, acao, virado, cena}
+```
+
+- `de` e `ate` vão de 0 a 1, a fração da hora;
+- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha` ou `carregar_morto`, ou `remar` indo para o barco);
+- se `x0 == x1`, ela fica ali fazendo a `acao`.
+
+Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho da fração corrente e interpole `x` entre `x0` e `x1`. Os trechos vêm colados (o `ate` de um é o `de` do seguinte), e o último termina em 1. O primeiro trecho começa no `x_anterior`, e o último termina no `x`. Das 7h às 16h, há em média de 4 a 5 trechos por pessoa por hora.
+
+**Ações** (todas casam com `arte_claude/pecas/acoes/` ou com os habitantes):
+
+| Ação | Quando |
 |---|---|
-| 21h às 5h | `dormir` na cabana |
-| 6h | `andar` até o trabalho |
-| 7h às 16h | `colher` na zona ou na roça |
-| 17h | `andar` de volta ao fogo |
-| 18h às 20h | `fogueira` |
+| `dormir` | à noite, em casa; doentes, de dia também |
+| `andar` | caminhando entre dois pontos |
+| `parado` | pausa curta, espera, olhar a borda do mundo; em casa durante tempestade |
+| `colher` | coletar em arbustos, trabalhar na roça, cortar lenha na mata, colher na colheita |
+| `pescar` | na margem do lago, olhando para a água (à esquerda) |
+| `lenha` | caminhando com carga: lenha da mata, colheita para o celeiro, mudança na migração |
+| `construir` | martelando numa casa ou na obra nova (os engenhosos mais que os outros) |
+| `forjar` | na forja, estágio 4 em diante, quem sabe o metal |
+| `escrever` | no arquivo, estágio 5 em diante, escribas, curiosos e sacerdotes |
+| `remar` | no barco, estágio 6, povos do lago e da praia. Única ação permitida na água (x < 126). |
+| `rezar` | no altar: o sacerdote de manhã e ao entardecer, quem tem prece aberta, os devotos, a prece coletiva e o funeral |
+| `fogueira` | sentado em volta do fogo à noite; os velhos passam boa parte do dia ali |
+| `conversar` | em pares, um de frente para o outro (`virado` oposto), no almoço e à noite; o líder visitando quem trabalha; visitas ao recém-nascido |
+| `cuidar` | mãe com bebê, perto de casa |
+| `dancar` | casamentos e festas, em volta do fogo |
+| `lutar` | guerra: as duas linhas frente a frente |
+| `carregar_morto` | os dois primeiros do cortejo do funeral |
 
-Exceções:
-- as crianças brincam perto do fogo (`andar`/`parado`);
-- os velhos ficam na `fogueira`;
-- os doentes ficam deitados (`dormir`);
-- durante uma tempestade na zona, todos ficam `parado` na cabana;
-- quem tem uma prece aberta vai `rezar` no altar às 6h e às 18h; o sacerdote reza às 7h e às 18h.
+As crianças correm umas atrás das outras perto do fogo (trechos curtos de `andar` e `parado`). Cada pessoa faz de 2 a 4 atividades por dia, conforme o estágio, o papel, a zona e os traços, e as repete em ciclos até o fim da tarde. Os horários de acordar e dormir variam, e dois dias nunca são iguais (às 10h, só 4% a 6% das pessoas estão no mesmo lugar que no dia anterior). Tudo sai da semente.
 
-`posicao_de(pessoa_id) -> float` devolve o x atual de uma pessoa (-1 se ela morreu).
+**Custo:** a rotina do dia é montada uma vez e guardada, e é refeita quando chega um evento novo ou muda a população. Uma consulta de `pessoas_visiveis()` com `cenas_ativas()` custa cerca de 10 ms com 120 pessoas e 25 ms com 290. O ideal é chamar uma vez por hora de jogo e guardar.
+
+### `cenas_ativas() -> Array[Dictionary]`
+
+As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, ini, fim, participantes, x, ...}`. `ini` e `fim` são em horas do dia (por exemplo, 8.0 e 11.3). `x` é o lugar principal da cena. Quem participa tem `cena: {tipo, id}` em `pessoas_visiveis()`, e a própria agenda já traz o que a pessoa faz na cena.
+
+| Tipo | Quando | O que se vê | Campos extras |
+|---|---|---|---|
+| `funeral` | no dia seguinte a uma morte (de quem tinha 12 anos ou mais), das 8h às 11h | cortejo do fogo ao lugar dos mortos, dois à frente com `carregar_morto`; reza ali | `morto`, `rito` ("enterram", "queimam", "veneram"), `x_tumulo` |
+| `nascimento` | no dia do nascimento, das 8h às 12h | a mãe `cuidar` em casa, visitas conversando em volta | `mae`, `crianca` |
+| `casamento`, `festa` | à noite, das 19h às 21h; a festa é no aniversário da chuva, em povos com esse costume | dança em volta do fogo | |
+| `migracao` | no dia de uma separação ou mudança, a partir das 6h30 | fila de gente com carga, da aldeia antiga até a nova | `de`, `para` |
+| `guerra` | no dia de um ataque, das 7h30 às 12h | marcha, as duas linhas frente a frente com `lutar` das 9h às 10h30, e a volta | `outro_grupo`, `x_combate`, `mortos` |
+| `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
+| `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
+| `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
+| `construcao` | no dia e no seguinte a uma conquista de estágio, à agricultura, ou a cabanas derrubadas por tempestade, terremoto ou dilúvio | até 6 pessoas `construir` na obra nova (templo, forja, arquivo, moinho ou casas) | `obra` |
+
+`posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
 
 ## Eventos, preces e chamados
 
