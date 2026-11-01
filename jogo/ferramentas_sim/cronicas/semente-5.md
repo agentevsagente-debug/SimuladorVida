@@ -44,7 +44,7 @@ Na primavera, com fome, Taur levantou acampamento na floresta e foi buscar comid
 
 ### Ano 14
 
-De novo a chuva sumiu, como no ano 1. Foram 19 dias de seca. Taur passou a festejar todo ano o dia da volta da chuva, em honra do Que Risca o Céu.
+Faltou chuva outra vez, a primeira desde o ano 1: 19 dias de céu limpo. Taur passou a festejar todo ano o dia da volta da chuva, em honra do Que Risca o Céu.
 
 *Os anos 15 a 17 passaram em paz.*
 
@@ -68,7 +68,7 @@ No inverno, com Lopeor à frente, nove pessoas deixaram Taur e fundaram Marak, n
 
 ### Ano 23
 
-Na primavera, Nil, de Taur, casou-se com Ruim e foi viver em Marak. Foi o primeiro laço entre os dois povos. No outono, Sau passou a falar pelo Que Risca o Céu em Marak. Era a primeira a rezar e a última a duvidar. Nasceu Maril, a primeira de Marak.
+Na primavera, Nil, de Taur, foi viver em Marak com Ruim: o primeiro casamento entre os dois povos. No outono, Sau passou a falar pelo Que Risca o Céu em Marak. Era a primeira a rezar e a última a duvidar. Nasceu Maril, a primeira de Marak.
 
 *Os anos 24 a 25 passaram em paz.*
 
@@ -80,7 +80,7 @@ Sau, que falava pelo Que Risca o Céu em Marak, morreu de velhice aos 54 anos. F
 
 ### Ano 28
 
-A seca voltou, como no ano 14: 21 dias sem chuva, até que o céu se abriu. Marak deixou o lago, onde a comida tinha acabado, e foi viver na praia. Em Marak, Lopeor pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Marak viu nisso obra do Que Risca o Céu. O deus nada fez: o crédito era de graça.
+A seca voltou, como no ano 14: 21 dias sem chuva, até que o céu se abriu. Marak deixou o lago, onde a comida tinha acabado, e foi viver na praia. Em Marak, Lopeor pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Marak viu nisso obra do Que Risca o Céu.
 
 *O ano 29 passou sem nada que a crônica precise guardar.*
 
@@ -92,7 +92,7 @@ No verão do ano 30, Taur fez as primeiras roças na floresta. Deixou de viver s
 
 ### Ano 32
 
-Lopeor, que fundou Marak e o guiava, morreu de velhice aos 62 anos. Tinha fundado Marak.
+Lopeor, que fundou Marak e o guiava, morreu de velhice aos 62 anos.
 
 ### Ano 33
 
@@ -106,7 +106,7 @@ Tepeu, que falava pelo Que Risca o Céu em Marak, morreu ao dar à luz. Tepeu ti
 
 ### Ano 38
 
-No verão, Marak atacou Taur na floresta em nome do Que Risca o Céu. Taur foi derrotado e perdeu o que tinha guardado. Rumaran e Naim morreram na luta. Foi a primeira vez que gente matou gente no mundo. O mesmo chão ganhou dois nomes: Floresta da Vitória para Marak, Floresta do Luto para Taur. Depois da derrota, os jovens de Taur passaram a treinar com lanças. No inverno, as preces de Taur ficaram sem resposta.
+No verão, Marak atacou Taur na floresta em nome do Que Risca o Céu. Taur foi derrotado e perdeu o que tinha guardado. Caíram Rumaran e Naim. Foi a primeira vez que gente matou gente no mundo. O mesmo chão ganhou dois nomes: Floresta da Vitória para Marak, Floresta do Luto para Taur. Depois da derrota, os jovens de Taur passaram a treinar com lanças. No inverno, as preces de Taur ficaram sem resposta.
 
 ### Ano 39
 
@@ -130,7 +130,7 @@ Na primavera, Tean, o curioso, cansou de dividir pouca comida. Partiu com treze 
 
 ### Ano 44
 
-Na primavera, morreu Ruem, que guiava Taur, aos 72 anos. Pem passou a guiar Taur, mas Ruloa não aceitou e guardou rancor. Com fome, Nion levantou acampamento na praia e foi buscar comida no lago. Em Nion, Tean pediu: «Que Levanta, dá-nos o que comer.» A fome passou, e Nion viu nisso obra do Que Levanta. O deus não tinha feito nada. No outono, em Nion nasceu a primeira criança: Tamhaor, filho de Maril e Penian.
+Na primavera, morreu Ruem, que guiava Taur, aos 72 anos. Pem passou a guiar Taur, mas Ruloa não aceitou e guardou rancor. Com fome, Nion levantou acampamento na praia e foi buscar comida no lago. Em Nion, Tean pediu: «Que Levanta, dá-nos o que comer.» A fome passou, e Nion viu nisso obra do Que Levanta. O deus nada fez: o crédito era de graça. No outono, em Nion nasceu a primeira criança: Tamhaor, filho de Maril e Penian.
 
 ### Ano 45
 
@@ -146,13 +146,13 @@ No outono do ano 47, nas terras do lago, Nion plantou suas primeiras roças. Já
 
 ### Ano 48
 
-Tean, que fundou Nion e o guiava, morreu de repente, aos 33 anos. Foi quem levou os seus a fundar Nion. Nion passou a receber bem os de fora: um casamento com outro povo virava festa.
+Tean, que fundou Nion e o guiava, morreu de repente, aos 33 anos. Nion passou a receber bem os de fora: um casamento com outro povo virava festa.
 
 *O ano 49 foi calmo.*
 
 ### Ano 50
 
-Os últimos de Marak, Namaril, Enmaril e Daena, juntaram-se a Nion. Marak deixou de existir. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Taur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Nion, o chão batido de casas sem ninguém virou aviso: era o que o deus fazia com quem o desagradava, como fez com Marak. Nos anos 41 a 50 houve duas secas, sete fomes e quinze preces que pareceram atendidas; nasceram dezessete crianças e morreram seis pessoas. No fim do ano 50, 47 pessoas viviam no mundo: Taur (24) e Nion (23).
+Os últimos de Marak, Namaril, Enmaril e Daena, juntaram-se a Nion. Marak deixou de existir. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Taur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Para Nion, as mesmas ruínas eram castigo do deus. Nos anos 41 a 50 houve duas secas, sete fomes e quinze preces que pareceram atendidas; nasceram dezessete crianças e morreram seis pessoas. No fim do ano 50, 47 pessoas viviam no mundo: Taur (24) e Nion (23).
 
 ### Ano 51
 
@@ -162,11 +162,11 @@ Na primavera do ano 51, morreu Namaril, a ambiciosa, aos 60 anos. Foi quem proib
 
 ### Ano 56
 
-Na primavera, Sau pregou em Taur que o deus não era «o Que Risca o Céu», mas «a Mão Fechada». O templo chamou aquilo de heresia, e Sau saiu com os que a seguiam. Com Sau à frente, quinze pessoas fundaram Loes na praia, onde o deus se chama «a Mão Fechada». Daor, de Nion, tomou por esposa Rua, de Loes, e os dois povos passaram a se visitar. Maril, a devota, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. No outono, Ninior passou a falar pela Mão Fechada em Loes. Era o primeiro a rezar e o último a duvidar.
+Na primavera, Sau pregou em Taur que o deus não era «o Que Risca o Céu», mas «a Mão Fechada». O templo chamou aquilo de heresia, e Sau saiu com os que a seguiam. Com Sau à frente, quinze pessoas fundaram Loes na praia, onde o deus se chama «a Mão Fechada». Rua, de Loes, foi viver em Nion com Daor: o primeiro casamento entre os dois povos. Maril, a devota, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. No outono, Ninior passou a falar pela Mão Fechada em Loes. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 57
 
-No outono do ano 57, Kior, que guiava Loes, teve uma filha: Rila. Sau, que fundou Loes e o guiava, deu à luz e não sobreviveu ao parto. Foi quem levou os seus a fundar Loes. Naruor tinha rezado: «Cura Mara, Mão Fechada. Ela é tão pequena.» Os doentes se levantaram. Em Loes, o crédito foi da Mão Fechada. A crônica sabe que foi acaso.
+No outono do ano 57, Kior, que guiava Loes, teve uma filha: Rila. Sau, que fundou Loes e o guiava, deu à luz e não sobreviveu ao parto. Naruor tinha rezado: «Cura Mara, Mão Fechada. Ela é tão pequena.» Os doentes se levantaram. Em Loes, o crédito foi da Mão Fechada. A crônica sabe que foi acaso.
 
 ### Ano 58
 
@@ -174,37 +174,37 @@ No outono do ano 58, nasceram gêmeos de Damaril: Narua e Na. No inverno, por 15
 
 ### Ano 59
 
-No verão do ano 59, Marnim, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem. A seca voltou, como no ano 40: 19 dias sem chuva, até que o céu se abriu.
+No verão do ano 59, o saber de Nion chegou a Taur: Marnim aprendeu a cortar e empilhar pedra. Faltou chuva outra vez, a primeira desde o ano 40: 19 dias de céu limpo.
 
 ### Ano 60
 
-A fome ensinou: desde então, Nion estoca comida e não come tudo o que colhe. No verão, Pem não podia mais viver perto de Marnim. Saiu de Taur com dezesseis pessoas e fundou Ruon no morro. Ruon passou longe de o chão batido de casas sem ninguém: diziam que Marak tinha desagradado o deus e pagado por isso. Nos anos 51 a 60 houve duas secas e seis preces que pareceram atendidas; nasceram 49 crianças e morreram dezessete pessoas. No fim do ano 60, 80 pessoas viviam no mundo: Taur (4), Nion (42), Loes (18) e Ruon (16).
+A fome ensinou: desde então, Nion estoca comida e não come tudo o que colhe. No verão, Pem não podia mais viver perto de Marnim. Saiu de Taur com dezesseis pessoas e fundou Ruon no morro. Em Ruon, o chão batido de casas sem ninguém virou aviso: era o que o deus fazia com quem o desagradava, como fez com Marak. Nos anos 51 a 60 houve duas secas e seis preces que pareceram atendidas; nasceram 49 crianças e morreram dezessete pessoas. No fim do ano 60, 80 pessoas viviam no mundo: Taur (4), Nion (42), Loes (18) e Ruon (16).
 
 ### Ano 61
 
-Na primavera, Na morreu com 3 anos, de uma febre que ninguém entendeu. Morreu o último que tinha visto o ano 14. Em Ruon, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Os de Ruon caíram sobre Taur na floresta. Ruon venceu e levou a comida guardada. Na luta morreu Nia. Taur acabou: Naem, Marnim e Markil foram viver em Nion. Diante das ruínas de Taur, um templo de barro desabado, Nion disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Na primavera, Na morreu com 3 anos, de uma febre que ninguém entendeu. Morreu o último que tinha visto o ano 14. Em Ruon, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Os de Ruon caíram sobre Taur na floresta. Ruon venceu e levou a comida guardada. Nia morreu na luta. Taur acabou: Naem, Marnim e Markil foram viver em Nion. Nion passou longe de um templo de barro desabado: diziam que Taur tinha desagradado o deus e pagado por isso.
 
 *O ano 62 foi calmo.*
 
 ### Ano 63
 
-Na primavera do ano 63, Lokia, de Ruon, casou-se com Tamhaor e foi viver em Nion. Foi o primeiro laço entre os dois povos. Nion ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Na primavera do ano 63, Tamhaor, de Nion, tomou por esposa Lokia, de Ruon, e os dois povos passaram a se visitar. Nion ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 64
 
-Em Ruon, Taniem tomou para si o cuidado das preces ao Que Risca o Céu. Em Ruon, Pem pediu: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Ruon agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça.
+Em Ruon, Taniem tomou para si o cuidado das preces ao Que Risca o Céu. Em Ruon, Pem pediu: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Ruon agradeceu ao Que Risca o Céu.
 
 ### Ano 65
 
-Na primavera do ano 65, em Ruon, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. O dia em que a chuva voltou virou festa em Ruon: todo ano, celebram a chuva que o Que Risca o Céu mandou.
+Na primavera do ano 65, Ruon deixou a festa da chuva para trás: os jovens já não viam sentido naquilo. O dia em que a chuva voltou virou festa em Ruon: todo ano, celebram a chuva que o Que Risca o Céu mandou.
 
 ### Ano 66
 
-Na primavera, Nion já não cabia no lago. Taruim, o devoto, levou 29 pessoas para a floresta e fundou Marum. Em Marum, o chão batido de casas sem ninguém virou aviso: era o que o deus fazia com quem o desagradava, como fez com Marak. Saor, de Loes, tomou por esposa Niu, de Ruon, e os dois povos passaram a se visitar. Daena passou a falar pelo Que Levanta em Marum. Era a primeira a rezar e a última a duvidar.
+Na primavera, Nion já não cabia no lago. Taruim, o devoto, levou 29 pessoas para a floresta e fundou Marum. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Marum disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Niu, de Ruon, casou-se com Saor e foi viver em Loes. Foi o primeiro laço entre os dois povos. Daena passou a falar pelo Que Levanta em Marum. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 67
 
-Na primavera, em Nion, Enmaril começou a pregar que o deus não era «o Que Levanta». Era «a Luz Que Avisa». Em poucos anos, todos rezavam assim. Em Ruon, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Ruon, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Risca o Céu, e o deus decidia tudo. Nasceu Vebera, a primeira de Ruon.
+Na primavera, em Nion, Enmaril começou a pregar que o deus não era «o Que Levanta». Era «a Luz Que Avisa». Em poucos anos, todos rezavam assim. Depois de Nion, foi Ruon que ergueu paredes de pedra. Em Ruon, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Risca o Céu, e o deus decidia tudo. Nasceu Vebera, a primeira de Ruon.
 
 ### Ano 68
 
@@ -220,13 +220,13 @@ Nos anos 61 a 70 houve duas secas, cinco fomes e catorze preces que pareceram at
 
 ### Ano 71
 
-Com Kikia à frente, a nova geração de Loes abandonou o treino com lanças, costume herdado dos avós. No outono, a tempestade trouxe raios para o morro. Um deles acertou Kim. A família de Kim nunca perdoou o céu. Desde a morte de Kim, ninguém em Ruon sobe o morro em dia de tempestade. O lugar ganhou nome: Morro do Raio.
+Em Loes, os jovens deixaram de lado o treino com lanças. Era coisa dos velhos, diziam. No outono, a tempestade trouxe raios para o morro. Um deles acertou Kim. A família de Kim nunca perdoou o céu. Desde a morte de Kim, ninguém em Ruon sobe o morro em dia de tempestade. O lugar ganhou nome: Morro do Raio.
 
 *O ano 72 passou sem nada que a crônica precise guardar.*
 
 ### Ano 73
 
-Na primavera do ano 73, em Ruon, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Ninior tinha rezado: «Mão Fechada, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Loes duvidou de que a Mão Fechada tinha ouvido. O deus não tinha feito nada.
+Na primavera do ano 73, com Pem à frente, a nova geração de Ruon abandonou o treino com lanças, costume herdado dos avós. Ninior tinha rezado: «Mão Fechada, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Loes duvidou de que a Mão Fechada tinha ouvido.
 
 ### Ano 74
 
@@ -234,7 +234,7 @@ Na primavera do ano 74, com lanças e promessas, Taruim acabou com o conselho de
 
 ### Ano 75
 
-Em Marum, Taruim pediu: «Manda água, Que Levanta, que as crianças têm sede.» Quando a chuva voltou, Marum agradeceu ao Que Levanta. Foi só o tempo, mas quem iria dizer? No inverno, em nome da Mão Fechada, Ninior proibiu casamentos e trocas com Nion. Era vontade de Ninior, não do deus.
+Em Marum, Taruim pediu: «Manda água, Que Levanta, que as crianças têm sede.» Quando a chuva voltou, Marum agradeceu ao Que Levanta. No inverno, em nome da Mão Fechada, Ninior proibiu casamentos e trocas com Nion. Era vontade de Ninior, não do deus.
 
 ### Ano 76
 
@@ -244,27 +244,27 @@ Depois daquela fome, Loes passou a guardar comida para o inverno. Nunca mais dei
 
 ### Ano 78
 
-Morreu Marlo, filho pequeno de Tama. Na Guerra da Fome, Loes atacou Ruon no morro em nome da Mão Fechada. Ruon foi derrotado e perdeu o que tinha guardado. Tamora morreu na luta. De novo a chuva sumiu, como no ano 59. Foram 24 dias de seca. Começou a Guerra Santa da Floresta: em nome da Mão Fechada, Loes pegou em lanças contra Marum. A Guerra Santa da Floresta seguiu: Loes contra Marum, na floresta em nome da Mão Fechada. Marum expulsou os atacantes. Na luta morreram Naruor e Kikia.
+Morreu Marlo, filho pequeno de Tama. Na Guerra da Fome, Loes atacou Ruon no morro em nome da Mão Fechada. Ruon foi derrotado e perdeu o que tinha guardado. Caiu Tamora. A seca voltou, como no ano 59: 24 dias sem chuva, até que o céu se abriu. Começou a Guerra Santa da Floresta: em nome da Mão Fechada, Loes pegou em lanças contra Marum. A Guerra Santa da Floresta seguiu: Loes contra Marum, na floresta em nome da Mão Fechada. Os de Marum não cederam, e Loes recuou. Na luta morreram Naruor e Kikia.
 
 ### Ano 79
 
-Na primavera do ano 79, a Guerra da Fome seguiu: Loes contra Ruon, no morro em nome da Mão Fechada. Ruon resistiu, e Loes voltou de mãos vazias. Na luta morreram Marem e Ha. Para Loes, o morro virou Morro do Luto. Loes fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
+Na primavera do ano 79, a Guerra da Fome seguiu: Loes contra Ruon, no morro em nome da Mão Fechada. Ruon resistiu, e Loes voltou de mãos vazias. Marem e Ha morreram na luta. Para Loes, o morro virou Morro do Luto. Loes fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
 
 ### Ano 80
 
-Na Guerra Santa da Floresta, Loes atacou Marum na floresta em nome da Mão Fechada. Loes venceu e levou a comida guardada. Maro e Marhaim morreram na luta. Marum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Nos anos 71 a 80 houve três secas, três fomes, onze batalhas, 30 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 104 crianças e morreram 28 pessoas. No fim do ano 80, 175 pessoas viviam no mundo: Nion (50), Loes (29), Ruon (34) e Marum (62).
+Na Guerra Santa da Floresta, Loes atacou Marum na floresta em nome da Mão Fechada. Loes voltou com o que Marum tinha guardado. Na luta morreram Maro e Marhaim. Marum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Nos anos 71 a 80 houve três secas, três fomes, onze batalhas, 30 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 104 crianças e morreram 28 pessoas. No fim do ano 80, 175 pessoas viviam no mundo: Nion (50), Loes (29), Ruon (34) e Marum (62).
 
 ### Ano 81
 
-Taruim, que fundou Marum e o guiava, morreu de velhice aos 54 anos. Tinha fundado Marum. Ruon se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Marum escolheu Teo para guiar o grupo. Nilo queria o lugar e nunca perdoou. A Guerra Santa da Floresta seguiu: Loes contra Marum, na floresta em nome da Mão Fechada. Marum expulsou os atacantes. Na luta morreram Penae, Naor, Saloan e Marorim.
+Taruim, que fundou Marum e o guiava, morreu de velhice aos 54 anos. Ruon se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Marum escolheu Teo para guiar o grupo. Nilo queria o lugar e nunca perdoou. A Guerra Santa da Floresta seguiu: Loes contra Marum, na floresta em nome da Mão Fechada. Marum expulsou os atacantes. Caíram Penae, Naor, Saloan e Marorim.
 
 ### Ano 82
 
-Na primavera, Daena, que falava pelo Que Levanta em Marum, morreu de repente, aos 42 anos. A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e quatro mortos, e ninguém sabia mais por que lutava. Ruon saiu dela mais forte. No outono, Loim, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Maril, a devota, morreu de fome. Foi quem descobriu que semente vira planta. Ruil partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
+Na primavera, Daena, que falava pelo Que Levanta em Marum, morreu de repente, aos 42 anos. A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e quatro mortos, e ninguém sabia mais por que lutava. Ruon terminou maior do que tinha começado. No outono, Loim, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Maril, a devota, morreu de fome. Foi quem descobriu que semente vira planta. Ruil partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 83
 
-Na Guerra Santa da Floresta, Loes atacou Marum na floresta. Marum foi derrotado e perdeu o que tinha guardado. Loim, Ennio e Eno morreram na luta. Loes e Marum, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa da Floresta acabou em trégua, depois de sete anos, oito batalhas e quinze mortos. Marum saiu dela mais forte. Sem lugar e sem comida, Marniu e os seus atravessaram a borda do mundo. Ninguém soube deles. A doença entrou em Nion e matou cinco pessoas.
+Na Guerra Santa da Floresta, Loes atacou Marum na floresta. Os cestos de Marum ficaram vazios. Loim, Ennio e Eno morreram na luta. Loes e Marum, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa da Floresta acabou em trégua, depois de sete anos, oito batalhas e quinze mortos. Quem ganhou com isso foi Marum. Sem lugar e sem comida, Marniu e os seus atravessaram a borda do mundo. Ninguém soube deles. A doença entrou em Nion e matou cinco pessoas.
 
 ### Ano 84
 
@@ -272,7 +272,7 @@ Daor, que falava pela Luz Que Avisa em Nion, morreu dormindo, aos 57 anos. No ou
 
 ### Ano 85
 
-Morreu Enmaril, que falava pela Luz Que Avisa em Nion, aos 53 anos. Marnim passou a guiar Nion, mas Orur não aceitou e guardou rancor. Dail, a curiosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Morreu Enmaril, que falava pela Luz Que Avisa em Nion, aos 53 anos. Marnim passou a guiar Nion, mas Orur não aceitou e guardou rancor. O saber de Marum chegou a Ruon: Dail aprendeu a tirar metal da pedra. A guerra apressou a ideia.
 
 *O ano 86 foi calmo.*
 
@@ -282,7 +282,7 @@ Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito. Depois
 
 ### Ano 88
 
-Morreu Pem, que fundou Ruon e o guiava, aos 66 anos. Foi quem levou os seus a fundar Ruon. Naim tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Loes duvidou de que a Estrela de Cauda tinha ouvido. A crônica sabe que foi acaso.
+Morreu Pem, que fundou Ruon e o guiava, aos 66 anos. Naim tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Loes duvidou de que a Estrela de Cauda tinha ouvido. A crônica sabe que foi acaso.
 
 ### Ano 89
 
@@ -296,7 +296,7 @@ Nos anos 81 a 90 houve duas secas, cinco fomes, três batalhas, 25 preces que pa
 
 ### Ano 92
 
-No outono, Ruon ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. No inverno, a forja de Marum não apagava mais. O metal mudou o trabalho e mudou a guerra.
+No outono, Ruon voltou a erguer casas de pedra. No inverno, a forja de Marum não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 93
 
@@ -306,17 +306,17 @@ Na primavera, Marnim, que guiava Nion, morreu de velhice aos 62 anos. Numa tempe
 
 ### Ano 95
 
-Na primavera do ano 95, Ninior, que guiava Loes, morreu dormindo, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Nion. Tamhaor, que falava pelo Que Risca o Céu em Ruon, morreu de velhice aos 51 anos. Nunca perdoou o deus pela morte de Isha. Ruon passou fome no inverno por 15 dias, e cinco pessoas morreram. No outono, Nion passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Um inverno duro matou duas pessoas de frio.
+Na primavera do ano 95, Ninior, que guiava Loes, morreu dormindo, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Nion. Tamhaor, que falava pelo Que Risca o Céu em Ruon, morreu de velhice aos 51 anos. Nunca perdoou o deus pela morte de Isha. Ruon passou fome no inverno por 15 dias, e cinco pessoas morreram. No outono, o metal chegou a Nion, e a forja ficou acesa dia e noite. Um inverno duro matou duas pessoas de frio.
 
 *No ano 96, nada de notável aconteceu.*
 
 ### Ano 97
 
-Ruon atacou Marum na floresta. Marum resistiu, e Ruon voltou de mãos vazias. Na luta morreram Niisa e Nuhaim. Desde então, Ruon chama a floresta de Floresta do Luto. Depois da derrota, os jovens de Ruon passaram a treinar com lanças. Ruon e Marum fizeram as pazes na floresta, antes que a briga crescesse. Os últimos de Ruon, Tesaor, Damaril e Tea, juntaram-se a Marum. Ruon deixou de existir.
+Ruon atacou Marum na floresta. Os de Marum não cederam, e Ruon recuou. Na luta morreram Niisa e Nuhaim. Desde então, Ruon chama a floresta de Floresta do Luto. Depois da derrota, os jovens de Ruon passaram a treinar com lanças. Ruon e Marum fizeram as pazes na floresta, antes que a briga crescesse. Os últimos de Ruon, Tesaor, Damaril e Tea, juntaram-se a Marum. Ruon deixou de existir.
 
 ### Ano 98
 
-Na primavera do ano 98, morreu Mara, que guiava Loes, aos 49 anos. Desde a morte de Nimaran, nunca mais tinha rezado. Em Loes, Kira pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Loes viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Kira, que guiava Loes, não resistiu à fome.
+Na primavera do ano 98, morreu Mara, que guiava Loes, aos 49 anos. Desde a morte de Nimaran, nunca mais tinha rezado. Em Loes, Kira pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Loes viu nisso obra da Estrela de Cauda. O deus não tinha feito nada. Kira, que guiava Loes, não resistiu à fome.
 
 ### Ano 99
 

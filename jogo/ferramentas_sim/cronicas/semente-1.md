@@ -40,7 +40,7 @@ Loenu, a devota, notou que as sementes jogadas perto do acampamento brotavam. Co
 
 ### Ano 12
 
-De novo a chuva sumiu, como no ano 2. Foram 26 dias de seca.
+A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
 
 *Os anos 13 a 14 passaram em paz.*
 
@@ -74,7 +74,7 @@ A rixa entre Satora e Linut rachou Zeor. Satora partiu com os seus, catorze pess
 
 ### Ano 24
 
-Na primavera, Loenu, que fundou Zeor e o guiava, morreu dormindo, aos 70 anos. Tinha sido a primeira a plantar. Os de Zeor caíram sobre Sagak na floresta. Sagak expulsou os atacantes. Enloya e Bezeim morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Sagak chamam o lugar de Floresta da Vitória; os de Zeor, de Floresta do Luto. Zeor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No outono, começou a Guerra da Fome: Zeor, com fome, foi buscar à força a comida de Sagak.
+Na primavera, Loenu, que fundou Zeor e o guiava, morreu dormindo, aos 70 anos. Tinha sido a primeira a plantar. Os de Zeor caíram sobre Sagak na floresta. Os de Sagak não cederam, e Zeor recuou. Enloya e Bezeim morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Sagak chamam o lugar de Floresta da Vitória; os de Zeor, de Floresta do Luto. Zeor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No outono, começou a Guerra da Fome: Zeor, com fome, foi buscar à força a comida de Sagak.
 
 ### Ano 25
 
@@ -82,29 +82,29 @@ Torraim rezou, e nada aconteceu. Em Zeor, Torraim pediu: «Que Nega, dá-nos o q
 
 ### Ano 26
 
-Viu, que guiava Zeor, morreu de repente, aos 25 anos. Na Guerra da Fome, Zeor atacou Sagak na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Na luta morreu Torraim.
+Viu, que guiava Zeor, morreu de repente, aos 25 anos. Na Guerra da Fome, Zeor atacou Sagak na floresta. Sagak expulsou os atacantes. Na luta morreu Torraim.
 
 ### Ano 27
 
-A Guerra da Fome seguiu: Zeor contra Sagak, na floresta. Sagak expulsou os atacantes. Lout e Zera morreram na luta.
+A Guerra da Fome seguiu: Zeor contra Sagak, na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Caíram Lout e Zera.
 
 *Os anos 28 a 29 passaram em paz.*
 
 ### Ano 30
 
-No verão do ano 30, a Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e seis mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte. Satora tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. Nos anos 21 a 30 houve duas secas, quatro fomes, quatro batalhas, dezessete preces que pareceram atendidas e oito preces sem resposta; nasceram dezessete crianças e morreram 24 pessoas. No fim do ano 30, 32 pessoas viviam no mundo: Zeor (10) e Sagak (22).
+A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e seis mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte. Satora tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Nega tinha ouvido. Nos anos 21 a 30 houve duas secas, quatro fomes, quatro batalhas, dezessete preces que pareceram atendidas e oito preces sem resposta; nasceram dezessete crianças e morreram 24 pessoas. No fim do ano 30, 32 pessoas viviam no mundo: Zeor (10) e Sagak (22).
 
 *O ano 31 foi calmo.*
 
 ### Ano 32
 
-A seca voltou, como no ano 12: 19 dias sem chuva, até que o céu se abriu.
+Faltou chuva outra vez, a primeira desde o ano 12: 19 dias de céu limpo.
 
 *Do ano 33 ao 34, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 35
 
-Morreu Satora, que fundou Sagak e o guiava, aos 56 anos. Foi quem levou os seus a fundar Sagak. Sagak escolheu Rabea para guiar o grupo. Linut queria o lugar e nunca perdoou.
+Morreu Satora, que fundou Sagak e o guiava, aos 56 anos. Sagak escolheu Rabea para guiar o grupo. Linut queria o lugar e nunca perdoou.
 
 ### Ano 36
 
@@ -142,7 +142,7 @@ Nos anos 41 a 50 houve quatro preces que pareceram atendidas; nasceram dezesseis
 
 ### Ano 51
 
-De novo a chuva sumiu, como no ano 32. Foram 19 dias de seca. Em Sagak, Torut pediu: «Que Leva, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. Foi só o tempo, mas quem iria dizer?
+A seca voltou, como no ano 32: 19 dias sem chuva, até que o céu se abriu. Em Sagak, Torut pediu: «Que Leva, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 52
 
@@ -174,7 +174,7 @@ No inverno, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olhar
 
 ### Ano 63
 
-Enik, o pacífico, descobriu como empilhar pedras cortadas sem que caíssem. A seca voltou, como no ano 51: 25 dias sem chuva, até que o céu se abriu. Vinik tinha rezado: «Manda água, Que Leva, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Leva tinha ouvido. A crônica sabe que foi acaso.
+Enik, o pacífico, descobriu como empilhar pedras cortadas sem que caíssem. De novo a chuva sumiu, como no ano 51. Foram 25 dias de seca. Vinik tinha rezado: «Manda água, Que Leva, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Leva tinha ouvido. A crônica sabe que foi acaso.
 
 *O ano 64 foi calmo.*
 
@@ -200,13 +200,13 @@ Na primavera, Ralina, a pacífica, morreu dormindo, aos 52 anos. Em Sagak, já n
 
 ### Ano 74
 
-De novo a chuva sumiu, como no ano 63. Foram 20 dias de seca. Em Sagak, Selvik pediu: «Que Leva, não nos deixes secar.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. O deus nada fez: o crédito era de graça.
+Faltou chuva outra vez, a primeira desde o ano 63: 20 dias de céu limpo. Em Sagak, Selvik pediu: «Que Leva, não nos deixes secar.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. O deus nada fez: o crédito era de graça.
 
 *O ano 75 foi calmo.*
 
 ### Ano 76
 
-Na primavera, Raut, que fundou Linil e o guiava, morreu de velhice aos 61 anos. Tinha fundado Linil.
+Na primavera, Raut, que fundou Linil e o guiava, morreu de velhice aos 61 anos.
 
 ### Ano 77
 
@@ -230,11 +230,11 @@ Na primavera do ano 81, por 8 noites, uma estrela de cauda ficou no céu, e as c
 
 ### Ano 84
 
-Enik tinha rezado: «Olho Escuro, cura meu filho.» Os doentes se levantaram. Em Linil, o crédito foi do Olho Escuro. O deus não tinha feito nada.
+Enik tinha rezado: «Olho Escuro, cura meu filho.» Os doentes se levantaram. Em Linil, o crédito foi do Olho Escuro.
 
 ### Ano 85
 
-Nienu, de Linil, casou-se com Sellor e foi viver em Sagak. Foi o primeiro laço entre os dois povos.
+Sellor, de Sagak, tomou por esposa Nienu, de Linil, e os dois povos passaram a se visitar.
 
 ### Ano 86
 
@@ -266,7 +266,7 @@ Morreu Enik, o pacífico, aos 56 anos. Lou, que guiava Linil, morreu dormindo, a
 
 ### Ano 95
 
-Em Sagak, Loik pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Apaga o Sol tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Em Sagak, Loik pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Apaga o Sol tinha ouvido.
 
 ### Ano 96
 
@@ -282,7 +282,7 @@ Em Selum nasceu a primeira criança: Ene, filha de Sellina e Linik.
 
 ### Ano 99
 
-Em Selum, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
+Em Selum, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam.
 
 ### Ano 100
 

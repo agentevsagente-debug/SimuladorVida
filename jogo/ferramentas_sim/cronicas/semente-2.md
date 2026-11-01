@@ -44,7 +44,7 @@ No inverno, Kurkao disse que alguém, lá em cima, segurava a comida e a chuva. 
 
 ### Ano 12
 
-A comida voltou, e Esar deu graças ao Que Nega. O deus nada fez: o crédito era de graça. Desde então, Esar acredita que o Que Nega escuta as preces. Em Esar, Demya pediu: «Cura Gaut, Que Nega. Ele é tão pequeno.» A febre passou, e Demya contou a todos que o Que Nega tinha ouvido. A crônica sabe que foi acaso. No outono, Kurkao passou a falar pelo Que Nega em Esar. Era o primeiro a rezar e o último a duvidar.
+A comida voltou, e Esar deu graças ao Que Nega. O deus nada fez: o crédito era de graça. Desde então, Esar acredita que o Que Nega escuta as preces. Em Esar, Demya pediu: «Cura Gaut, Que Nega. Ele é tão pequeno.» A febre passou, e Demya contou a todos que o Que Nega tinha ouvido. No outono, Kurkao passou a falar pelo Que Nega em Esar. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 13
 
@@ -96,11 +96,11 @@ No fim do ano 40, oito pessoas viviam no mundo, todas em Esar.
 
 ### Ano 44
 
-Na primavera, o chão tremeu sem aviso. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Sacode. O deus nada fez: o crédito era de graça.
+Na primavera, o chão tremeu sem aviso. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Sacode.
 
 ### Ano 45
 
-A seca voltou, como no ano 5: 26 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 5. Foram 26 dias de seca.
 
 *O ano 46 foi calmo.*
 
@@ -122,7 +122,7 @@ Gaut tinha rezado: «Que Sacode, que a chuva volte.» Dias depois, a chuva volto
 
 ### Ano 54
 
-De novo a chuva sumiu, como no ano 45. Foram 21 dias de seca.
+Faltou chuva outra vez, a primeira desde o ano 45: 21 dias de céu limpo.
 
 ### Ano 55
 
