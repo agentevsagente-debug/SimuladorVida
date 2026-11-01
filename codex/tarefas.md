@@ -2,12 +2,15 @@
 
 *Faça as tarefas na ordem. O protocolo está em `LEIA-ME.md` e as regras visuais em `guia-de-estilo.md`.*
 
-> **Revisão do Claude (01/11):** as entregas T001 a T005 ficam como **rascunho técnico**: os formatos, tamanhos e scripts estão certos, mas o visual ainda não é o do jogo. Elas serão refeitas na direção visual escolhida a partir da T001A. Não as refaça por conta própria: novas tarefas serão criadas depois da escolha.
+> **Revisão do Claude (01/11):**
+> - **T001 (paleta): APROVADA.**
+> - **T001A (prancha): APROVADA.** O usuário escolheu a **direção C, Clássica 16 bits**. O guia de estilo foi atualizado.
+> - **T002 a T005: SUBSTITUÍDAS.** Ficam como referência técnica de formato e são refeitas na direção C pelas tarefas T006 a T010. Não as altere.
 
 ---
 
 ## T001 — Paleta
-**Estado:** ENTREGUE
+**Estado:** APROVADA
 
 Criar a paleta de 32 cores seguindo a tabela "Paleta" do guia de estilo.
 
@@ -27,7 +30,7 @@ Criar a paleta de 32 cores seguindo a tabela "Paleta" do guia de estilo.
 ---
 
 ## T001A — Prancha de estilo (3 direções)
-**Estado:** PENDENTE
+**Estado:** APROVADA
 
 Esta é a tarefa mais importante da fase de arte. Antes de produzir peças, precisamos **ver como o jogo vai parecer**. Pinte a **mesma cena** em 3 direções visuais diferentes, como se fossem 3 capturas de tela do jogo pronto. O usuário escolhe uma, e todas as tarefas seguintes passam a seguir a direção escolhida.
 
@@ -70,7 +73,7 @@ Não copie nenhuma imagem desses jogos. Use apenas o espírito visual descrito.
 ---
 
 ## T002 — Terreno
-**Estado:** ENTREGUE
+**Estado:** SUBSTITUÍDA
 
 Blocos de terreno de 8 × 8 pixels.
 
@@ -96,7 +99,7 @@ Blocos de terreno de 8 × 8 pixels.
 ---
 
 ## T003 — Habitantes
-**Estado:** ENTREGUE
+**Estado:** SUBSTITUÍDA
 
 Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 
@@ -116,7 +119,7 @@ Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 ---
 
 ## T004 — Estágio 1: abrigo e natureza
-**Estado:** ENTREGUE
+**Estado:** SUBSTITUÍDA
 
 **Entregar em `arte/estagio1/`:**
 - `cabana_galhos.png`: abrigo de galhos e folhas, 16 × 16;
@@ -133,7 +136,7 @@ Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 ---
 
 ## T005 — Cena de teste
-**Estado:** ENTREGUE
+**Estado:** SUBSTITUÍDA
 
 Montar uma cena com tudo o que foi entregue nas tarefas T001 a T004.
 
@@ -146,3 +149,76 @@ Montar uma cena com tudo o que foi entregue nas tarefas T001 a T004.
 - em 1x, dá para contar as pessoas e distinguir adultos de crianças;
 - a cena noturna é escura mas legível, com a fogueira como foco de luz;
 - o conjunto parece um único estilo coerente.
+
+---
+
+# Produção na direção C
+
+*Todas as tarefas abaixo seguem a seção "Direção escolhida: C, Clássica 16 bits" do guia de estilo, incluindo as correções. Gere por código, com o script ao lado de cada PNG, como nas tarefas anteriores. Use só a paleta da T001.*
+
+---
+
+## T006 — Cena-alvo da direção C
+**Estado:** PENDENTE
+
+Repintar a cena da prancha na direção C **com todas as correções do guia**. Esta cena passa a ser a imagem de referência do jogo: todas as peças seguintes precisam combinar com ela.
+
+**Entregar em `arte/alvo/`:**
+- `alvo_entardecer.png`, `alvo_dia.png`, `alvo_noite.png`: 480 × 160;
+- as mesmas três ampliadas 4 vezes (`_4x`), sem suavização;
+- os scripts `.py`.
+
+**Critérios de aceite:**
+- superfície do chão por volta de 75% da altura, com camadas de solo visíveis abaixo;
+- pessoas nítidas e definidas, o elemento mais legível da cena em 1x;
+- pelo menos 3 tipos de vegetação com o mesmo tratamento de luz;
+- na noite, a fogueira ilumina o chão e as pessoas próximas;
+- comparada com `arte/prancha/direcao_c.png`, a cena é claramente melhor e mantém o mesmo estilo.
+
+---
+
+## T007 — Terreno na direção C
+**Estado:** PENDENTE
+
+Refazer os blocos da T002 no estilo da cena-alvo. Mesmos arquivos e tamanhos da T002, agora em `arte/terreno_c/`, com estes blocos a mais na folha:
+- terra escura com raízes;
+- rocha;
+- borda de grama irregular (2 variações), para quebrar a linha reta do chão;
+- pedra aflorada pequena (8 × 8, com fundo transparente).
+
+**Critérios de aceite:** os da T002, e uma montagem `terreno_c_teste.png` (480 × 160) com o perfil do terreno da cena-alvo que pareça a própria cena-alvo sem pessoas e sem objetos.
+
+---
+
+## T008 — Habitantes na direção C
+**Estado:** PENDENTE
+
+Refazer os habitantes da T003 com a definição pedida no guia. Mesmos arquivos, quadros e tamanhos da T003, agora em `arte/habitantes_c/`, com estes a mais:
+- `idoso_andar_4q.png` (8 × 12, postura curvada);
+- `adulto_a_rezar_2q.png` (8 × 12, ajoelhado com os braços erguidos);
+- `adulto_a_colher_4q.png` (8 × 12, abaixando para pegar algo do chão).
+
+**Critérios de aceite:** os da T003, e as pessoas precisam ter a mesma definição das pessoas da cena-alvo.
+
+---
+
+## T009 — Estágio 1 na direção C
+**Estado:** PENDENTE
+
+Refazer as peças da T004 no estilo da cena-alvo, em `arte/estagio1_c/`, com estas a mais:
+- `pinheiro_a.png` e `pinheiro_b.png` (16 × 32);
+- `capim.png` (8 × 8);
+- `pedra_grande.png` (16 × 16).
+
+**Critérios de aceite:** os da T004, e todas as peças combinam com a vegetação e as cabanas da cena-alvo.
+
+---
+
+## T010 — Cena montada com as peças
+**Estado:** PENDENTE
+
+Montar a cena-alvo **usando somente as peças das T007 a T009**, sem pintar nada à mão. Isso prova que o jogo, montando as peças, chega ao visual da cena-alvo.
+
+**Entregar em `arte/cenas_c/`:** `montada_dia.png` e `montada_noite.png` (480 × 160), as versões 4x e o script.
+
+**Critérios de aceite:** lado a lado com `arte/alvo/alvo_dia.png`, as duas imagens parecem o mesmo jogo. As únicas diferenças aceitas são céu, neblina, reflexo e luz, que no jogo serão efeitos do motor.

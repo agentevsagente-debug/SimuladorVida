@@ -6,7 +6,24 @@ Um pequeno mundo visto **de lado**, como um diorama, dentro de uma moldura na á
 
 Referências de leitura: as **criaturas e vilas do WorldBox** (legibilidade em tamanho pequeno), o **clima acolhedor do Terraglass** e a **atmosfera em corte lateral de Kingdom Two Crowns**. Não copie nenhuma delas.
 
-**A direção visual definitiva sai da prancha de estilo (T001A).** Depois que o usuário escolher uma das 3 direções, este guia será atualizado com ela.
+## Direção escolhida: C, Clássica 16 bits
+
+Escolhida pelo usuário na prancha T001A. A referência é `arte/prancha/direcao_c.png` e `direcao_c_noite.png`, **com as correções abaixo**.
+
+**O que manter da direção C:**
+- céu em degradê com pontilhado (dithering) e nuvens alongadas com sombra;
+- montanhas em dois tons ao fundo, criando profundidade;
+- pinheiros segmentados com luz nas bordas;
+- textura mineral no terreno (pontos e grãos);
+- contornos feitos com a cor mais escura do próprio material, nunca preto;
+- reflexo do sol em traços horizontais na água.
+
+**O que corrigir:**
+- **Chão baixo:** a superfície fica por volta de 75% da altura da cena. Abaixo dela, camadas visíveis: grama, terra, terra escura com raízes e pedras, rocha. Nada de bloco liso ocupando metade da tela.
+- **Pessoas mais definidas** dentro dos 8 × 12 pixels: cabeça com cabelo, rosto com um pixel de sombra, tronco com roupa sombreada, braços que se distinguem do corpo e pernas com dois tons. Elas precisam ser o elemento mais nítido da cena.
+- **Mais variedade no estilo da vegetação:** pinheiros, árvores de copa larga, arbustos e capim, todos com o mesmo tratamento de luz nas bordas.
+- **Perfil do terreno orgânico:** saliências, pedras afloradas e grama irregular na borda.
+- **Luz da fogueira à noite:** ela ilumina o chão e as pessoas próximas com tons quentes. Na cena noturna, isso vale como referência para o efeito que o motor vai fazer.
 
 **Efeitos do motor:** céu em degradê, reflexo na água, brilho do fogo, neblina, partículas e clima são feitos pelo jogo, por código. Não pinte esses efeitos nas peças avulsas (sprites, blocos). Pinte-os apenas nas cenas de teste e na prancha, para mostrar como o jogo vai ficar.
 

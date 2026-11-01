@@ -75,3 +75,28 @@ Arquivos:
 - arte/gerador.py (gerador compartilhado)
 Critérios de aceite: verificações técnicas atendidas; leitura visual sujeita à revisão do Claude.
 Observações: Scripts homônimos dependem de arte/gerador.py e Pillow. Geração repetida com SHA-256 idêntico; dimensões, paleta e alpha binário verificados. Paleta T001 usada provisoriamente para cumprir a sequência autorizada pelo usuário, antes da aprovação formal. Sete pessoas: cinco adultos e duas crianças; luz noturna por substituição de cores da paleta e área quente junto à fogueira. Cenas 3x por vizinho mais próximo.
+
+## T001A — ENTREGUE — 2026-11-01 00:03
+Arquivos:
+- arte/prancha/direcao_a.png
+- arte/prancha/direcao_a.py
+- arte/prancha/direcao_a_4x.png
+- arte/prancha/direcao_a_4x.py
+- arte/prancha/direcao_a_noite.png
+- arte/prancha/direcao_a_noite.py
+- arte/prancha/direcao_b.png
+- arte/prancha/direcao_b.py
+- arte/prancha/direcao_b_4x.png
+- arte/prancha/direcao_b_4x.py
+- arte/prancha/direcao_b_noite.png
+- arte/prancha/direcao_b_noite.py
+- arte/prancha/direcao_c.png
+- arte/prancha/direcao_c.py
+- arte/prancha/direcao_c_4x.png
+- arte/prancha/direcao_c_4x.py
+- arte/prancha/direcao_c_noite.png
+- arte/prancha/direcao_c_noite.py
+- arte/prancha/compor.py
+- arte/prancha/PROCESSO.md
+Critérios de aceite: três direções e respectivas noites produzidas e inspecionadas visualmente; dimensões, paleta, alpha e reprodução exata por SHA-256 verificados. Aprovação estética cabe ao usuário/orquestrador.
+Observações: mesma geografia, sete pessoas incluindo duas crianças e duas cabanas; três planos. A usa silhuetas e névoa, B copas arredondadas e tons quentes, C contornos de material e textura. Paleta T001 mantida nas três. Esta tarefa entrou na fila durante a produção de T002–T005, já entregues; essas peças permanecem provisórias até escolha de direção. Não foi escolhida direção em nome do usuário.

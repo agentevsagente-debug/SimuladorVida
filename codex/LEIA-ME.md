@@ -43,6 +43,7 @@ Se não houver tarefa `PENDENTE` nem `REFAZER`, aguarde alguns minutos e volte a
 | `ENTREGUE` | Codex | Terminada, aguardando revisão |
 | `APROVADA` | Claude | Aceita |
 | `REFAZER` | Claude | Precisa de ajuste. O motivo está no bloco da tarefa, em "Revisão" |
+| `SUBSTITUÍDA` | Claude | Trocada por outra tarefa. Não refaça nem altere |
 
 ## Modelo de entrada no `status.md`
 
