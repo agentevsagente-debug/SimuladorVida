@@ -1,0 +1,58 @@
+== semente 3 ano 55
+  Koil: estágio 3, 22 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 2, "altar(e3)": 1 }
+  Peak: estágio 3, 8 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 1, "altar(e3)": 1, "roca(e3)": 1 }
+  ruínas: 0
+== semente 3 ano 90
+  Koil: estágio 4, 28 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e4)": 1, "cabana(e4)": 1, "altar(e4)": 1 }
+  Peak: estágio 3, 49 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 4, "altar(e3)": 1, "roca(e3)": 1 }
+  Toran: estágio 4, 24 pessoas, {"parede":"madeira","roupa":"turquesa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e4)": 1, "cabana(e4)": 1, "altar(e4)": 1 }
+  Zean: estágio 3, 10 pessoas, {"parede":"madeira","roupa":"lilas","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 1, "altar(e3)": 1, "roca(e3)": 1 }
+  ruínas: 0
+== semente 3 ano 120
+  Koil: estágio 5, 84 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e5)": 1, "templo(e5)": 1, "cabana(e5)": 1 }
+  Peak: estágio 4, 24 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e4)": 1, "templo(e4)": 1, "forja(e4)": 1, "cabana(e4)": 3, "altar(e4)": 1, "roca(e4)": 2 }
+  Toran: estágio 5, 36 pessoas, {"parede":"madeira","roupa":"turquesa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e5)": 1, "estela(e5)": 1 }
+  Zean: estágio 4, 16 pessoas, {"parede":"madeira","roupa":"lilas","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e4)": 1, "templo(e4)": 1, "forja(e4)": 1, "cabana(e4)": 2, "altar(e4)": 1, "roca(e4)": 1 }
+  ruínas: 0
+== semente 3 ano 200
+  Koil: estágio 6, 86 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "templo(e6)": 1, "cabana(e6)": 1, "barco(e6)": 1 }
+  Peak: estágio 6, 60 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e6)": 1, "templo(e6)": 1, "roda_dagua(e6)": 1, "moinho(e6)": 1, "estela(e6)": 1, "cabana(e6)": 3, "altar(e6)": 1 }
+  Kium: estágio 6, 46 pessoas, {"parede":"pedra","roupa":"lilas","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "muralha(e6)": 2, "roda_dagua(e6)": 1, "moinho(e6)": 1, "estela(e6)": 1, "cabana(e6)": 3 }
+  Loak: estágio 6, 25 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "estela(e6)": 1, "barco(e6)": 1 }
+  ruínas: 7
+== semente 3 ano 400
+  Koil: estágio 6, 84 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "roda_dagua(e6)": 1, "estela(e6)": 1, "cabana(e6)": 1, "barco(e6)": 1 }
+  Peak: estágio 6, 86 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e6)": 1, "roda_dagua(e6)": 1, "moinho(e6)": 1, "templo(e6)": 1, "estela(e6)": 1, "cabana(e6)": 3 }
+  Kium: estágio 2, 25 pessoas, {"parede":"pedra","roupa":"lilas","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e2)": 1, "cabana(e2)": 7, "templo(e2)": 1, "celeiro(e2)": 1 }
+  Loak: estágio 6, 32 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "estela(e6)": 1, "barco(e6)": 1 }
+  ruínas: 0
+== semente 7 ano 90
+  Raon: estágio 3, 87 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 1 }
+  Loum: estágio 3, 36 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 4, "altar(e3)": 1, "roca(e3)": 1 }
+  Teyor: estágio 3, 28 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e3)": 1 }
+  Orar: estágio 3, 12 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"sol","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 2, "altar(e3)": 1, "celeiro(e3)": 1, "roca(e3)": 1 }
+  ruínas: 0
+== semente 7 ano 130
+  Raon: estágio 4, 86 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e4)": 1, "templo(e4)": 1, "cabana(e4)": 1 }
+  Loum: estágio 3, 25 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 3, "roca(e3)": 2 }
+  Teyor: estágio 2, 9 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e2)": 1, "cabana(e2)": 1, "altar(e2)": 1 }
+  Orar: estágio 2, 9 pessoas, {"parede":"taipa","roupa":"turquesa","simbolo":"sol","telhado":"telha"}, obras { "fogueira(e2)": 1, "cabana(e2)": 4, "templo(e2)": 1, "celeiro(e2)": 1 }
+  ruínas: 0
+== semente 7 ano 250
+  Raon: estágio 6, 102 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"lua","telhado":"telha"}, obras { "fogueira(e6)": 1, "roda_dagua(e6)": 1, "estela(e6)": 1, "cabana(e6)": 1, "barco(e6)": 1 }
+  Loum: estágio 2, 62 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e2)": 1, "cabana(e2)": 5, "templo(e2)": 1, "altar(e2)": 1 }
+  Viar: estágio 5, 25 pessoas, {"parede":"taipa","roupa":"lilas","simbolo":"sol","telhado":"palha"}, obras { "fogueira(e5)": 1 }
+  Dolor: estágio 3, 42 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"lua","telhado":"tabuas"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 4, "celeiro(e3)": 1, "roca(e3)": 1 }
+  ruínas: 2
+== semente 1 ano 115
+  Zeor: estágio 3, 62 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"arvore","telhado":"palha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 1 }
+  Sagak: estágio 5, 49 pessoas, {"parede":"madeira","roupa":"lilas","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e5)": 1, "templo(e5)": 1, "arquivo(e5)": 1, "estela(e5)": 1, "cabana(e5)": 3, "altar(e5)": 1 }
+  Linum: estágio 4, 31 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e4)": 1 }
+  Saem: estágio 3, 22 pessoas, {"parede":"madeira","roupa":"turquesa","simbolo":"arvore","telhado":"telha"}, obras { "fogueira(e3)": 1, "templo(e3)": 1, "cabana(e3)": 3, "altar(e3)": 1, "celeiro(e3)": 1, "roca(e3)": 1 }
+  ruínas: 0
+== semente 1 ano 300
+  Zeor: estágio 6, 104 pessoas, {"parede":"madeira","roupa":"rosa","simbolo":"arvore","telhado":"palha"}, obras { "fogueira(e6)": 1, "roda_dagua(e6)": 1, "estela(e6)": 1, "cabana(e6)": 1, "barco(e6)": 1 }
+  Sagak: estágio 6, 82 pessoas, {"parede":"madeira","roupa":"lilas","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e6)": 1, "roda_dagua(e6)": 1, "moinho(e6)": 1, "templo(e6)": 1, "estela(e6)": 1, "cabana(e6)": 3 }
+  Linum: estágio 2, 13 pessoas, {"parede":"taipa","roupa":"rosa","simbolo":"arvore","telhado":"tabuas"}, obras { "fogueira(e2)": 1 }
+  Loan: estágio 6, 47 pessoas, {"parede":"madeira","roupa":"lilas","simbolo":"sol","telhado":"palha"}, obras { "fogueira(e6)": 1, "muralha(e6)": 2, "roda_dagua(e6)": 1, "moinho(e6)": 1, "estela(e6)": 1, "cabana(e6)": 3 }
+  ruínas: 0
