@@ -93,6 +93,7 @@ Há seis poses: em pé, andando, apontando para o fogo, sentado num tronco, com 
 ## Conflitos e compromissos
 
 - **Sombra da roupa fora do grupo "tecidos".** O guia pede roupa sombreada, mas a paleta só tem três tecidos e nenhum tom escuro para eles. Usei como sombra o vermelho do fogo para o rosa (27 → 20), a água média para o turquesa (28 → 18) e o violeta da noite para o lilás (29 → 5). **Na hora de trocar a cor da roupa por cultura, o motor precisa trocar também esses pares de sombra.** Outra saída seria acrescentar três tons escuros de tecido à paleta.
+- **A luz de contorno do entardecer também tira a roupa do grupo de tecidos.** Na borda iluminada, rosa vira laranja do fogo (27 → 21), turquesa vira espuma (28 → 19) e lilás vira rosa do entardecer (29 → 7). É um efeito de luz do motor, pintado só nesta cena de teste. A camada que troca a cor da roupa por cultura não deve depender dele.
 - **Crianças com 6 × 8.** A tarefa fala em pessoas de 8 × 12, e o guia define crianças com 6 × 8. Segui o guia.
 - **Cabana.** O corpo da cabana tem 16 × 16. As pontas dos galhos cruzados passam 2 pixels acima desse quadro.
 - **A luz do fogo não entra no corte do solo.** Ela ilumina só a superfície e até 3 pixels abaixo dela, porque o corte do solo é uma vista "de raio X", e não algo que o fogo alcançaria.
