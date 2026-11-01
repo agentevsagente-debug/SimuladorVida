@@ -183,6 +183,11 @@ func _ready() -> void:
 ## Ao voltar, a crônica abre com o que aconteceu enquanto o jogador esteve fora.
 func _mostrar_ausencia() -> void:
 	var a: Dictionary = vista.sim.ausencia
+	if vista.sim.ilegivel != "" and str(a.get("recuperado_de", "")) == "":  # nada se leu: começou um mundo novo
+		_log("mundo salvo ilegível, guardado em %s" % vista.sim.ilegivel)
+		interface.mostrar_cronica.call_deferred("O mundo salvo não pôde ser aberto (estragado, ou de uma versão mais nova do jogo). " +
+			"Ele ficou guardado em %s, e começou um mundo novo." % vista.sim.ilegivel.get_file(), "O mundo salvo não abriu")
+		return
 	var copia := str(a.get("recuperado_de", ""))  # o mundo salvo estava estragado e voltou de uma cópia
 	if a.is_empty() or (int(a.get("passos", 0)) < 24 and copia == ""):
 		return

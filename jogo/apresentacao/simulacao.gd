@@ -43,6 +43,7 @@ var cenas: Array = []    # cenas_ativas() da hora: caça, incidentes, festas...
 var zonas: Array = []
 var preces: Array = []
 var ausencia := {}       # retorno de avancar_ausencia() ao abrir, se houve
+var ilegivel := ""       # o mundo salvo não se leu e foi guardado à parte neste caminho (QA, D-05)
 var salvamento_falhou := false  # o último salvamento não foi ao disco (disco cheio?): a moldura avisa
 var _acumulado := 0.0
 var _fracao_parada := 0.0  # a fração da hora em que a pausa começou
@@ -61,6 +62,12 @@ func iniciar(semente: int, hora_inicial: int = -1, carregar := true, com_povo :=
 		if r != null:
 			mundo = r["mundo"]
 			ausencia = r["ausencia"]
+		# o núcleo guarda o arquivo ilegível à parte (6bc1ff8); o de antes não tem o campo
+		var script: Script = Persistencia
+		if "ultimo_ilegivel" in script:
+			ilegivel = str(script.get("ultimo_ilegivel"))
+		if r != null and ilegivel == "":
+			ilegivel = str(ausencia.get("ilegivel", ""))
 	if mundo == null:
 		mundo = novo_mundo(semente, com_povo)
 		if hora_inicial >= 0:
