@@ -6,9 +6,15 @@ Um pequeno mundo visto **de lado**, como um diorama, dentro de uma moldura na á
 
 Referências de leitura: as **criaturas e vilas do WorldBox** (legibilidade em tamanho pequeno), o **clima acolhedor do Terraglass** e a **atmosfera em corte lateral de Kingdom Two Crowns**. Não copie nenhuma delas.
 
+## Referência visual oficial
+
+**A referência do jogo é a cena-alvo pintada pelo Claude:** `arte_claude/alvo/alvo_dia.png`, `alvo_entardecer.png` e `alvo_noite.png` (e as versões `_4x`). O usuário a escolheu numa comparação com a cena do Codex (`arte/alvo/`). **Toda peça nova precisa parecer ter saído dessa cena.** Em caso de dúvida, abra a versão 4x e copie o tratamento: margem orgânica da praia, montanhas com neve e sombras, subsolo com raízes e pedras, floresta densa e variada, e a luz da fogueira iluminando as pessoas à noite.
+
+Toda a arte do jogo agora é feita por sessões do Claude, em `arte_claude/`. As peças modulares (terreno, habitantes, estágio 1) ficam em `arte_claude/pecas/`. O Codex foi desligado.
+
 ## Direção escolhida: C, Clássica 16 bits
 
-Escolhida pelo usuário na prancha T001A. A referência é `arte/prancha/direcao_c.png` e `direcao_c_noite.png`, **com as correções abaixo**.
+Escolhida pelo usuário na prancha T001A. A cena-alvo do Claude, acima, já aplica esta direção com as correções abaixo.
 
 **O que manter da direção C:**
 - céu em degradê com pontilhado (dithering) e nuvens alongadas com sombra;

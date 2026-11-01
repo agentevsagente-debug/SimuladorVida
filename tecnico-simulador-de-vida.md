@@ -9,7 +9,7 @@
 | Plataforma | Windows 10 e 11, 64 bits |
 | Distribuição | Gratuita, como executável portátil (sem instalador obrigatório) |
 | Dependências externas | Nenhuma: sem internet, sem serviços, sem modelo de linguagem |
-| Construção | Tudo por IA: sessões do Claude Code orquestradas pelo Claude, e arte feita pelo Codex |
+| Construção | Tudo por IA: sessões do Claude Code orquestradas pelo Claude, inclusive a arte |
 | Estilo visual | Pixel art 2D, corte lateral (diorama) |
 | Motor | Godot 4.7.2, versão padrão (GDScript), sem .NET |
 | Idioma | Português do Brasil |
@@ -156,5 +156,6 @@ O restante do modelo funcional: os 11 poderes, as culturas completas, o progress
 
 - **Claude (orquestrador):** divide o trabalho, escreve os briefings e as tarefas, revisa entregas, junta as partes e mantém este documento atualizado.
 - **Sessões do Claude Code:** cada uma trabalha só na própria pasta e entrega um relatório no fim.
-- **Codex:** produz arte a partir de `codex/tarefas.md`, responde em `codex/status.md` e para quando `codex/controle.md` contiver `Desligar_Codex = True`. O protocolo completo está em `codex/LEIA-ME.md`.
+- **Arte:** feita por sessões do Claude Code, em `arte_claude/`. A referência visual oficial é a cena-alvo `arte_claude/alvo/`, e as regras estão em `codex/guia-de-estilo.md`, que continua valendo como guia de estilo do projeto.
+- **Codex:** desligado em 01/11/2026 (`codex/controle.md` com `Desligar_Codex = True`). O usuário comparou as duas cenas-alvo e escolheu a do Claude. A pasta `arte/` fica como histórico: só a paleta (`arte/paleta/`) continua em uso.
 - **Versão:** o projeto usa git. Cada sessão trabalha em pasta própria para que nunca duas mexam nos mesmos arquivos.
