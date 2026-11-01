@@ -12,6 +12,7 @@ const Cotidiano = preload("cotidiano.gd")
 const Cronista = preload("cronista.gd")
 const Rotina = preload("rotina.gd")
 const Antigos = preload("antigos.gd")
+const Dica = preload("dica.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40
@@ -3977,6 +3978,31 @@ func cenas_ativas() -> Array:
 	_cenas = r
 	_cenas_chave = chave
 	return r
+
+
+## A dica sobre uma pessoa viva: {fazendo, pensamento, humor} (veja "A dica" em nucleo/API.md).
+## Calculada na consulta, a partir da ficha da hora; guardada até o próximo passo.
+var _dicas: Dictionary = {}       # id -> dica, nesta hora (não é salvo)
+var _dicas_passo := -1
+
+
+func dica(pessoa_id: int) -> Dictionary:
+	var p: Pessoa = pessoas.get(pessoa_id)
+	if p == null or not p.vivo or grupo(p.grupo) == null:
+		return {}
+	if _dicas_passo != passo:
+		_dicas.clear()
+		_dicas_passo = passo
+	if _dicas.has(pessoa_id):
+		return _dicas[pessoa_id]
+	var ficha: Dictionary = {}
+	for f in pessoas_visiveis():
+		if f["id"] == pessoa_id:
+			ficha = f
+			break
+	var d: Dictionary = Dica.new(self, p, grupo(p.grupo)).montar(ficha)
+	_dicas[pessoa_id] = d
+	return d
 
 
 func posicao_de(pessoa_id: int) -> float:
