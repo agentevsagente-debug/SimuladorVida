@@ -204,6 +204,14 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			_dica.visible = false
 		return false
 	if event is InputEventMouseButton:
+		if OS.has_environment("DEPURAR_ALCA"):
+			print("[alca] botao=%d apertado=%s duplo=%s pos=%s botoes=%s" % [event.button_index, event.pressed,
+				event.double_click, pos, botoes.map(func(b): return [b.id, b.rect.position.x])])
+		# No Windows, um clique rápido depois de outro chega duas vezes: o
+		# "apertou" normal e outro marcado como duplo, sem soltar no meio.
+		# O segundo apertaria o botão de novo ou reiniciaria a carga do gesto.
+		if event.double_click:
+			return true
 		if event.pressed and na_alca:
 			if event.button_index == MOUSE_BUTTON_LEFT:
 				var b := _botao_em(pos)
@@ -292,6 +300,7 @@ func intensidade() -> float:
 
 func _usar_poder() -> void:
 	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade())
+	print("[interface] poder %s em x=%d intensidade=%.2f -> %s" % [poder, _carga_ponto.x, intensidade(), r])
 	if r.get("ok", false):
 		var alvo := ""
 		if int(r.get("alvo", -1)) >= 0:
@@ -465,7 +474,7 @@ func _criar_cronica() -> void:
 	var recorte := Control.new()
 	recorte.clip_contents = true
 	recorte.position = Vector2(10, 8)
-	recorte.size = Vector2(412, 132)  # 11 linhas inteiras
+	recorte.size = Vector2(412, 132)  # ajustado a linhas inteiras em _rolar()
 	recorte.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_cronica.add_child(recorte)
 	_cronica_texto = Label.new()
@@ -504,9 +513,12 @@ func mostrar_cronica(antes: String) -> void:
 
 
 func _rolar(d: int) -> void:
+	var altura := _cronica_texto.get_line_height()
+	var cabem := int(136 / altura)
+	_cronica_texto.get_parent().size.y = cabem * altura
 	var linhas := _cronica_texto.get_line_count()
-	_cronica_rolagem = clampi(_cronica_rolagem + d, 0, maxi(0, linhas - 11))
-	_cronica_texto.position.y = -_cronica_rolagem * 12
+	_cronica_rolagem = clampi(_cronica_rolagem + d, 0, maxi(0, linhas - cabem))
+	_cronica_texto.position.y = -_cronica_rolagem * altura
 
 
 static func _sem_markdown(md: String) -> String:

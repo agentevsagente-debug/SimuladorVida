@@ -43,6 +43,18 @@ public static class Win32 {
         SetCursorPos(antes.X, antes.Y);
     }
 
+    // Aperta, segura por `ms` e solta, sem mexer o cursor (o gesto dos poderes).
+    public static void Segurar(int x, int y, int ms) {
+        POINT antes; GetCursorPos(out antes);
+        SetCursorPos(x, y);
+        System.Threading.Thread.Sleep(60);
+        mouse_event(0x0002, 0, 0, 0, IntPtr.Zero);
+        System.Threading.Thread.Sleep(ms);
+        mouse_event(0x0004, 0, 0, 0, IntPtr.Zero);
+        System.Threading.Thread.Sleep(60);
+        SetCursorPos(antes.X, antes.Y);
+    }
+
     public static void Rolar(int x, int y, int passos) {
         POINT antes; GetCursorPos(out antes);
         SetCursorPos(x, y);

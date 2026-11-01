@@ -17,6 +17,7 @@ extends Node2D
 ##   --semente=N          semente do mundo novo
 ##   --mundo-novo         ignora o mundo salvo e não grava nada
 ##   --anos=N             avança N anos antes de abrir (mundo novo, testes)
+##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
 ##   --capturar-tudo      captura a tela inteira (480 × 178), com a alça
@@ -97,6 +98,7 @@ var _refazer := true
 var _chave_fixo := []
 var _virada := {}          # id da pessoa -> espelho (olhando para a esquerda)
 var _x_visto := {}         # id da pessoa -> x desenhado (anda até o x do núcleo)
+var _acordou := {}         # id da pessoa -> quando saiu da cabana (para saírem em fila)
 var _tex_fogueira: Texture2D
 var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
@@ -126,7 +128,7 @@ func _ready() -> void:
 		sim.construcoes_mudaram.connect(func(): _refazer = true)
 		sim.zonas_mudaram.connect(func(): _refazer = true)
 		sim.eventos_novos.connect(_ao_receber_eventos)
-		var novo := args.has("mundo-novo") or args.has("capturar") or args.has("semente")
+		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena")
 		sim.salvar_em_disco = not novo
 		var semente := int(args.get("semente", str(randi())))
 		var hf := float(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1.0
@@ -139,6 +141,9 @@ func _ready() -> void:
 			sim.iniciar_de_mundo()
 		else:
 			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo)
+		if args.has("simular-ausencia"):  # teste: como se o jogador tivesse saído N horas
+			sim.ausencia = sim.mundo.avancar_ausencia(float(args["simular-ausencia"]) * 3600.0)
+			sim.iniciar_de_mundo()
 		sim.congelado = args.has("congelar")
 		if sim.congelado and hf >= 0.0:
 			_minutos = hf - floorf(hf)
@@ -167,6 +172,8 @@ func avancar(delta: float, desenhar: bool) -> void:
 	figuras = _figuras_layout() if _modo_layout else _figuras_nucleo(delta)
 	_atualizar_camera(delta)
 	_pessoas.definir(figuras)
+	if OS.has_environment("CONTAR_SOBREPOSICAO") and sim:
+		_contar_sobreposicao()
 	if sim:
 		_sinais.atualizar(sim, self, _relogio, figuras)
 	_atmosfera.avancar(delta, _hora(), _estado[0] if _estado[2] < 0.5 else _estado[1], _fogos,
@@ -666,68 +673,85 @@ func _figuras_layout() -> Array:
 	return r
 
 
-## Onde cada pessoa parada fica, sem amontoar: em volta da fogueira, os
-## sentados ocupam lugares dos dois lados; nos outros grupos, quem cai perto
-## de outra pessoa é afastado. A ordem é pelo id, então ninguém troca de lugar
-## de um quadro para o outro.
+## Onde cada pessoa fica, sem amontoar. Quem está na fogueira quer um lugar
+## da roda, dos dois lados do fogo; os outros querem o x do núcleo. Depois,
+## todos são empacotados numa fila só, com ESPACO entre vizinhos: blocos que se
+## encostam se juntam e se centram nas posições desejadas. A ordem é pelo x
+## desejado e pelo id, então ninguém troca de lugar de um quadro para o outro.
 func _lugares(pessoas: Array) -> Dictionary:
-	var lugar := {}
-	var na_fogueira := {}
-	var outros := []
+	var desejos := []  # [x desejado, id]
+	var rodas := {}
 	for p in pessoas:
-		if p["acao"] == "dormir" or p["acao"] == "andar":
+		if p["acao"] == "dormir":
 			continue
 		if p["acao"] == "fogueira":
 			var f := _fogo_mais_perto(p["x"])
-			if not na_fogueira.has(f):
-				na_fogueira[f] = []
-			na_fogueira[f].append(p)
+			if not rodas.has(f):
+				rodas[f] = []
+			rodas[f].append(p["id"])
 		else:
-			outros.append(p)
-	for f in na_fogueira:
-		var roda: Array = na_fogueira[f]
-		roda.sort_custom(func(a, b): return a["id"] < b["id"])
-		var xs := []
+			desejos.append([float(p["x"]), p["id"]])
+	for f in rodas:
+		var roda: Array = rodas[f]
+		roda.sort()
 		for i in roda.size():
 			var lado := -1.0 if i % 2 == 0 else 1.0
-			xs.append(f + lado * (11.0 + ESPACO * (i / 2)))
-		_na_terra(xs)
-		for i in roda.size():
-			lugar[roda[i]["id"]] = xs[i]
-	# os outros: em grupos de quem está a menos de ESPACO um do outro
-	outros.sort_custom(func(a, b): return a["x"] < b["x"] or (a["x"] == b["x"] and a["id"] < b["id"]))
-	var grupo := []
-	for i in outros.size() + 1:
-		if i < outros.size() and (grupo.is_empty() or outros[i]["x"] - grupo[-1]["x"] < ESPACO):
-			grupo.append(outros[i])
-			continue
-		if not grupo.is_empty():
-			var meio := 0.0
-			for p in grupo:
-				meio += p["x"]
-			meio /= grupo.size()
-			grupo.sort_custom(func(a, b): return a["id"] < b["id"])
-			var xs := []
-			for j in grupo.size():
-				xs.append(meio + (j - (grupo.size() - 1) / 2.0) * ESPACO)
-			_na_terra(xs)
-			for j in grupo.size():
-				lugar[grupo[j]["id"]] = xs[j]
-		grupo = [outros[i]] if i < outros.size() else []
+			desejos.append([f + lado * (11.0 + ESPACO * (i / 2)), roda[i]])
+	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
+	var xs := _empacotar(desejos.map(func(d): return d[0]))
+	var lugar := {}
+	for i in desejos.size():
+		lugar[desejos[i][1]] = xs[i]
 	return lugar
 
 
-## Desloca um grupo inteiro para não sair da terra nem da tela.
-static func _na_terra(xs: Array) -> void:
-	var menor: float = xs.min()
-	var maior: float = xs.max()
-	var d := 0.0
-	if menor < MARGEM:
-		d = MARGEM - menor
-	elif maior > LARGURA - 4:
-		d = LARGURA - 4 - maior
-	for i in xs.size():
-		xs[i] += d
+## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível
+## das desejadas (blocos que se encostam se juntam e se centram), dentro da
+## terra e da tela.
+static func _empacotar(desejado: Array) -> Array:
+	var blocos := []  # [quantos, soma de (x - k × ESPACO)]
+	for x in desejado:
+		blocos.append([1, x])
+		while blocos.size() >= 2:
+			var a: Array = blocos[-2]
+			var b: Array = blocos[-1]
+			if a[1] / a[0] + a[0] * ESPACO <= b[1] / b[0]:
+				break
+			blocos.pop_back()
+			blocos[-1] = [a[0] + b[0], a[1] + b[1] - b[0] * a[0] * ESPACO]
+	var xs := []
+	for bl in blocos:
+		var inicio: float = bl[1] / bl[0]
+		for k in bl[0]:
+			xs.append(inicio + k * ESPACO)
+	for i in xs.size():  # a margem do lago e a borda direita
+		xs[i] = maxf(xs[i], MARGEM if i == 0 else xs[i - 1] + ESPACO)
+	for i in range(xs.size() - 1, -1, -1):
+		xs[i] = minf(xs[i], LARGURA - 4.0 if i == xs.size() - 1 else xs[i + 1] - ESPACO)
+	return xs
+
+
+var _maior_sobreposicao := [0, 0]
+
+
+## Teste: quantas figuras cobrem a mesma coluna de pixels (a regra é no máximo 2).
+## Conta só quem está parado no lugar, e à parte quem está andando.
+func _contar_sobreposicao() -> void:
+	var maiores := [0, 0]  # só os parados, e todos
+	for so_parados in [true, false]:
+		var colunas := PackedInt32Array()
+		colunas.resize(LARGURA)
+		for f in figuras:
+			if so_parados and f.movendo:
+				continue
+			for x in range(maxi(0, f.x + 1), mini(LARGURA, f.x + f.largura - 1)):  # sem a borda de 1 px
+				colunas[x] += 1
+		for c in colunas:
+			maiores[0 if so_parados else 1] = maxi(maiores[0 if so_parados else 1], c)
+	if maiores[0] > _maior_sobreposicao[0] or maiores[1] > _maior_sobreposicao[1]:
+		_maior_sobreposicao = [maxi(maiores[0], _maior_sobreposicao[0]), maxi(maiores[1], _maior_sobreposicao[1])]
+		print("[sobreposicao] parados=%d todos=%d hora=%s figuras=%d" % [_maior_sobreposicao[0], _maior_sobreposicao[1],
+			sim.tempo.get("hora"), figuras.size()])
 
 
 func _figuras_nucleo(delta: float) -> Array:
@@ -740,13 +764,22 @@ func _figuras_nucleo(delta: float) -> Array:
 		vivos[id] = true
 		var destino: float = lugar.get(id, p["x"])
 		var x: float = _x_visto.get(id, destino)
-		var vel := maxf(PASSO_ANDAR, absf(destino - x) / 3.0)
+		# todos na mesma velocidade: quem sai em fila espaçada chega em fila espaçada
+		var vel := PASSO_ANDAR * (4.0 if sim.ritmo == Simulacao.Ritmo.RAPIDO else 1.0)
 		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
 			x = destino
 		var anterior := x
 		x = move_toward(x, destino, vel * delta)
 		_x_visto[id] = x
 		if p["acao"] == "dormir":
+			_acordou.erase(id)
+			continue
+		# quem acorda junto sai da cabana em fila, não empilhado
+		if not _acordou.has(id):
+			_acordou[id] = _relogio
+		var espera := (id % 10) * ESPACO / vel
+		if _relogio - _acordou[id] < espera and absf(destino - x) > ESPACO:
+			_x_visto[id] = anterior
 			continue
 		var crianca: bool = p["crianca"]
 		var idoso: bool = p["idade"] >= 55 and not crianca
@@ -798,11 +831,12 @@ func _figuras_nucleo(delta: float) -> Array:
 			base = Terreno.NIVEL_AGUA + 2
 		r.append({"id": id, "folha": folha, "quadro": quadro, "largura": largura, "x": xr - largura / 2,
 			"base": base, "espelho": espelho, "codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo,
-			"acompanhada": p.get("acompanhada", false)})
+			"acompanhada": p.get("acompanhada", false), "movendo": movendo})
 	for id in _x_visto.keys():
 		if not vivos.has(id):
 			_x_visto.erase(id)
 			_virada.erase(id)
+			_acordou.erase(id)
 	return r
 
 

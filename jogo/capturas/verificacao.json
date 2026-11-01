@@ -29,19 +29,23 @@
                    },
     "clique atravessa":  {
                              "ok":  true,
-                             "detalhe":  "cliques recebidos pelo alvo: 1"
+                             "detalhe":  "cliques recebidos pelo alvo: 1 (tentativas: 1)"
                          },
     "clique chega ao mundo":  {
                                   "ok":  true,
-                                  "detalhe":  "registrado no log da moldura"
+                                  "detalhe":  "registrado no log da moldura (tentativas: 1)"
                               },
     "clique no mundo fica":  {
                                  "ok":  true,
                                  "detalhe":  "alvo continua com 1 clique(s)"
                              },
+    "gesto do poder (raio)":  {
+                                  "ok":  true,
+                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": -1 }"
+                              },
     "arrastar":  {
-                     "ok":  false,
-                     "detalhe":  "deslocou (119, 61), esperado (120, 60)"
+                     "ok":  true,
+                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px"
                  },
     "roda na alca (3x)":  {
                               "ok":  true,
@@ -57,7 +61,7 @@
                          },
     "mostrar (barra tarefas)":  {
                                     "ok":  true,
-                                    "detalhe":  "janela de volta em (319, 83) 1440x534"
+                                    "detalhe":  "janela de volta em (320, 82) 1440x534"
                                 },
     "passagem apos mostrar":  {
                                   "ok":  true,

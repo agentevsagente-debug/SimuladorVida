@@ -68,18 +68,36 @@ $nitidez = [Win32]::BlocosUniformes($com, 0, $faixa * $k, 480 * $k, 160 * $k, $k
 Registrar 'nitidez 2x' ($nitidez -gt 0.999) ('{0:P2} dos blocos 2x2 de cor unica' -f $nitidez)
 
 # 3. Cliques: um na faixa transparente (deve chegar ao alvo) e um no céu (chuva).
+# O primeiro clique sintético numa janela que acabou de perder o foco às vezes
+# se perde no Windows (aconteceu também com a janela-alvo, que não é o jogo).
+# Por isso cada clique é tentado de novo uma vez, e o relatório diz quantas.
+$tentativas = 1
 [Win32]::Clicar($pontoFaixa[0], $pontoFaixa[1])
 Start-Sleep -Milliseconds 500
+if ([int](Get-Content $cliques) -eq 0) { $tentativas++; [Win32]::Clicar($pontoFaixa[0], $pontoFaixa[1]); Start-Sleep -Milliseconds 500 }
 $n = [int](Get-Content $cliques)
-Registrar 'clique atravessa' ($n -eq 1) "cliques recebidos pelo alvo: $n"
+Registrar 'clique atravessa' ($n -eq 1) "cliques recebidos pelo alvo: $n (tentativas: $tentativas)"
+$tentativas = 1
 [Win32]::Clicar($pontoCeu[0], $pontoCeu[1])
 Start-Sleep -Milliseconds 800
+if (-not (Select-String -Path $log -Pattern 'clique no mundo' -Quiet)) { $tentativas++; [Win32]::Clicar($pontoCeu[0], $pontoCeu[1]); Start-Sleep -Milliseconds 800 }
 $cliqueMundo = Select-String -Path $log -Pattern 'clique no mundo' -Quiet
-Registrar 'clique chega ao mundo' ([bool]$cliqueMundo) 'registrado no log da moldura'
+Registrar 'clique chega ao mundo' ([bool]$cliqueMundo) "registrado no log da moldura (tentativas: $tentativas)"
 [Win32]::Clicar($pontoChao[0], $pontoChao[1])
 Start-Sleep -Milliseconds 300
 $n2 = [int](Get-Content $cliques)
 Registrar 'clique no mundo fica' ($n2 -eq 1) "alvo continua com $n2 clique(s)"
+
+# 3b. O gesto de um poder, com o mouse de verdade: abre os poderes na alça,
+# escolhe o raio (2º botão da fileira aberta), segura 1,5 s sobre o céu e solta.
+[Win32]::Clicar($X + 18 * $k, $Y + 9 * $k)
+Start-Sleep -Milliseconds 1000
+[Win32]::Clicar($X + (10 + 17 + 8) * $k, $Y + 9 * $k)
+Start-Sleep -Milliseconds 1000
+[Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500)
+Start-Sleep -Milliseconds 600
+$gesto = Select-String -Path $log -Pattern 'poder raio em x=300 intensidade=0\.(6|7|8)' | Select-Object -First 1
+Registrar 'gesto do poder (raio)' ([bool]$gesto) $(if ($gesto) { $gesto.Line } else { 'nada no log' })
 
 # 4. Arrastar pela alça.
 Start-Sleep -Seconds 1

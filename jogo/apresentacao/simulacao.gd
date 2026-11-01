@@ -51,6 +51,8 @@ func iniciar(semente: int, hora_inicial: int = -1, carregar := true) -> void:
 	_vistos = mundo.eventos.size()
 	_ultimo_dia_salvo = mundo.dia_abs()
 	_ler(true)
+	print("[simulacao] %s ano=%d dia=%d hora=%d passo=%d ausencia=%d passos" % ["carregado" if not ausencia.is_empty() else "novo",
+		tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"], int(ausencia.get("passos", 0))])
 
 
 ## Recomeça a leitura depois de o mundo ter sido avançado por fora (testes).
@@ -108,7 +110,8 @@ func usar_poder(poder: String, x: float, intensidade: float) -> Dictionary:
 
 func salvar() -> void:
 	if salvar_em_disco and mundo != null:
-		Persistencia.salvar(mundo)
+		var ok: bool = Persistencia.salvar(mundo)
+		print("[simulacao] salvo=%s ano=%d dia=%d hora=%d passo=%d" % [ok, tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"]])
 
 
 func _passo() -> void:
