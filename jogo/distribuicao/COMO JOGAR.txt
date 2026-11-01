@@ -48,7 +48,7 @@ ONDE FICA O MUNDO SALVO
 O mundo é salvo sozinho, todo dia de jogo e ao fechar. Quando você volta,
 ele seguiu vivendo e a crônica conta o que aconteceu.
 
-Pasta: %APPDATA%\Godot\app_userdata\Simulador de vida
+Pasta: %APPDATA%\Simulador de vida
 (cole isso na barra de endereço do Explorador de Arquivos)
 
   mundo.txt   o mundo de agora (e mundo.1.txt, mundo.2.txt... as cópias)
@@ -77,4 +77,4 @@ Mande para quem te passou o jogo:
   - a versão (passe o cursor sobre o relógio, no canto da alça);
   - o que você fez logo antes;
   - o arquivo de registro:
-    %APPDATA%\Godot\app_userdata\Simulador de vida\logs\godot.log
+    %APPDATA%\Simulador de vida\logs\godot.log
