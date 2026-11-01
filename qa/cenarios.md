@@ -189,6 +189,7 @@
 | QA-162 | **Dado** a janela, **quando** o jogador muda a escala, **então** é sempre um inteiro (2x, 3x, 4x). | TEC Moldura | N | AJ (`--escala`) + M |
 | QA-163 | **Dado** H ou Ctrl+Alt+H, **então** a moldura some na hora e volta pela bandeja ou pelo atalho. | FUN "esconder a moldura na hora" | B | M |
 | QA-164 | **Dado** o jogo fechado normalmente, **então** sai sem falha (código de saída 0) e salva. | robustez (falha de segmentação conhecida) | B | AJ (10 aberturas) |
+| QA-167 | **Dado** o jogo com o atalho global ligado (como no jogo de verdade), **quando** ele fecha pelo "Sair" ou pela mensagem da janela (Alt+F4), inclusive durante um salvamento em segundo plano, **então** sai com código 0, o log diz "threads encerradas", não há aviso de thread destruída e o PowerShell do atalho não fica órfão. Confirma a correção da B (c06e4d0). | robustez (falha de segmentação ao fechar) | B | AJ (`rodar_janela.ps1 -ComAtalho`) |
 | QA-165 | **Dado** a janela arrastada e redimensionada, **quando** o jogo fecha e abre, **então** volta no mesmo lugar e escala. | FUN A moldura | N | M |
 | QA-166 | **Dado** o jogo, **então** mostra um número de versão (auditoria 11, B3). | produto | B | AJ (busca no código) |
 

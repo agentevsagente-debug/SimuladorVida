@@ -1,17 +1,17 @@
 # Relatório de QA (sessão D)
 
-*Primeira rodada, 01/11/2026, sobre a branch `claude/qa-cenarios-3b8628` (a `main` em `ae1faa8`). A fonte de verdade é o documento funcional. A matriz completa está em `qa/cenarios.md`.*
+*Primeira rodada, 01/11/2026, sobre a branch `claude/qa-cenarios-3b8628`, com a `main` até `c06e4d0` (a correção da falha ao fechar e a versão visível). A fonte de verdade é o documento funcional. A matriz completa está em `qa/cenarios.md`.*
 
 ## Números
 
 | | Quantos |
 |---|---|
-| Cenários na matriz | 122 |
+| Cenários na matriz | 123 |
 | Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
-| Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 11 |
+| Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
 | Só manuais (precisam de mouse e teclado, à espera da liberação) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **95** |
-| **Falham** | **15** (13 no núcleo e 2 em janela), em 15 defeitos |
+| **Passam** | **97** |
+| **Falham** | **14** (12 no núcleo e 2 em janela), em 14 defeitos abertos (o D-04 foi corrigido) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
 **Por área:**
@@ -31,10 +31,10 @@
 | Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 9 | 2 | 1 | 0 |
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
-| Moldura (esconder, escala, passagem do mouse) | 7 | 2 | 1 | 0 | 4 |
+| Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 5 | 1 | 0 | 1 |
 | Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
-| **Total** | **122** | **95** | **15** | **3** | **9** |
+| **Total** | **123** | **97** | **14** | **3** | **9** |
 
 **Os defeitos, do mais grave ao mais leve:**
 
@@ -43,7 +43,7 @@
 | D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | não para os amigos; para o processo, sim (corrigir já) | A |
 | D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim** | A |
 | D-03 | Quando o último morre, o mundo só fica vazio na virada do dia (até ~28 min em 1x) | média | **sim** | A |
-| D-04 | O jogo não mostra o número da versão | média | **sim** (B3 da auditoria 11) | B |
+| D-04 | ~~O jogo não mostra o número da versão~~ **corrigido** em `c06e4d0` (`config/version` 0.1.0; QA-166 passa) | — | — | B |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
 | D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
@@ -127,8 +127,10 @@ Gravidade:
   - então a tela responde certo ao núcleo, e o atraso é só a conferência na virada do dia. O aviso tem outro defeito, o D-15.
 - **Sugestão:** conferir `populacao() == 0` (e `<= 5`) também ao fim de `usar_poder` e de cada passo, e não só na virada do dia.
 
-### D-04. O jogo não mostra o número da versão
-**Cenário:** QA-166 · **Gravidade:** média · **Bloqueia:** sim (é o B3 da auditoria 11) · **Área:** B
+### D-04. O jogo não mostra o número da versão (corrigido)
+**Cenário:** QA-166 · **Situação:** corrigido pela B em `c06e4d0`. O `project.godot` agora tem `config/version="0.1.0"`, e o QA-166 passa. Não conferi na tela onde a versão aparece. · **Área:** B
+
+O registro original fica abaixo.
 
 - **Obtido:**
   - `project.godot` não tem `config/version`;
@@ -278,13 +280,22 @@ Gravidade:
 **Área:** B · Para a página "como jogar" (B2 da auditoria 11).
 
 - O jogo pelo editor usa `%APPDATA%\Godot\app_userdata\Simulador de vida\`.
-- O `.exe` exportado roda o atalho de `%APPDATA%\Simulador de vida\atalho_global.ps1`, então o `user://` dele é `%APPDATA%\Simulador de vida\`.
+- O `.exe` exportado usa uma pasta própria, `%APPDATA%\Simulador de vida\` (`config/use_custom_user_dir.template` no `project.godot`), separada da pasta do Godot que os testes usam.
 - É essa a pasta que a página deve indicar para "onde fica o mundo salvo e como começar de novo".
 
 ## Pontos conhecidos, conferidos
 
-### Falha de segmentação ao fechar (B investigando)
-**Não reproduzi em 36 fechamentos** (QA-164), todos com código 0 e sem erro no log:
+### Falha de segmentação ao fechar: corrigida e confirmada (QA-167 passa)
+A B corrigiu em `c06e4d0`: `simulacao.encerrar()` espera as threads do núcleo em todas as saídas, e o fechamento pela janela agora também chama `_parar_atalho_global()`.
+
+**Confirmado com o atalho ligado** (QA-167), usando Ctrl+Alt+J (`--atalho-global=J`), porque o Ctrl+Alt+H estava com outro jogo aberto:
+
+| Caminho, com o atalho ligado | Aberturas | Código 0 | Atalho registrado | "threads encerradas" no log | Auxiliar órfão | Aviso de thread |
+|---|---|---|---|---|---|---|
+| Mensagem de fechar a janela (Alt+F4), no 50x, de 6 a 52 s (5 durante um `salvar_async`) | 10 | 10 | 10 | 10 | 0 | 0 |
+| `sair()`, pelo `--duracao` (5 com mundo de teste, 5 com o mundo salvo) | 10 | 10 | 10 | 10 | 0 | 0 |
+
+**Antes da correção**, sem o atalho, também não reproduzi em 36 fechamentos:
 
 | Caminho | Aberturas | Código 0 | Observação |
 |---|---|---|---|
@@ -292,14 +303,14 @@ Gravidade:
 | Mensagem de fechar a janela (WM_CLOSE: Alt+F4, fechar pela barra de tarefas), pelo `CloseMainWindow()`, no 50x | 10 | 10 | de 6 a 52 s; em 5 havia um `salvar_async` do dia na sessão |
 | Os dois caminhos acima com `--atalho-global` | 16 | 16 | **não vale:** o atalho falhou ao registrar (`atalho_em_uso`), porque outro teste da B, um `.exe` de 1 hora aberto às 19h23 com `--atalho-global`, segurava o Ctrl+Alt+H |
 
-**Suspeita para B, ainda a confirmar:**
+**A suspeita que eu tinha, já resolvida por `c06e4d0`:**
 - O fechamento pela janela (`_notification(NOTIFICATION_WM_CLOSE_REQUEST)`) salva, mas **não chama `_parar_atalho_global()`**, que só roda em `sair()`.
 - Com o atalho ligado, que é o padrão do jogo de verdade:
   - a thread `_atalho_leitor` fica bloqueada lendo o processo auxiliar;
   - o Godot destrói um `Thread` em andamento ao sair;
   - o PowerShell auxiliar pode ficar órfão.
 - É o caminho mais provável da falha de segmentação.
-- Para confirmar: `rodar_janela.ps1 -Parte fecharjanela -ComAtalho`, quando o Ctrl+Alt+H estiver livre. A parte já conta os auxiliares órfãos depois de cada fechamento.
+- Para repetir a confirmação: `rodar_janela.ps1 -Parte fecharjanela -ComAtalho` e `-Parte fechar -ComAtalho`. A tecla padrão é J; use `-Tecla` para trocar.
 
 ### A cena de guerra no horário antigo depois de um ataque forçado (A investigando)
 - **No núcleo, está corrigido (QA-180 passa).** Um ataque às 8h, com o mundo consultado a cada hora como faz a apresentação, gera a cena `guerra` com `ini` 10,0 e `fim` 14,5, vista a partir da hora 10. É o que a API promete: começa em hora + 2 e dura 4h30.
@@ -390,7 +401,7 @@ Cada um já está na bateria e falha hoje. Passa a passar quando a área dona co
 |---|---|---|---|
 | QA-027 | D-02 | A | o raio sobre quem está na tela acerta essa pessoa durante pelo menos 95% da hora |
 | QA-131 | D-03 | A | uma hora depois da última morte, `fim_do_mundo` vale e `criar_povo` funciona |
-| QA-166 | D-04 | B | a apresentação lê e mostra `application/config/version` |
+| ~~QA-166~~ | D-04 | B | passa desde `c06e4d0` |
 | QA-104, QA-105 | D-05 | A e B | o mundo ilegível sobrevive a 4 salvamentos do mundo novo |
 | QA-111 | D-06 | A | 6 cargas do mesmo arquivo dão a mesma crônica |
 | QA-109, QA-182 | D-01 | A | salvar num caminho de teste não toca `user://estante`, e nenhuma ferramenta apaga a estante real |

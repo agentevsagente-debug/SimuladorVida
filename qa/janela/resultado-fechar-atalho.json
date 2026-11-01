@@ -6,6 +6,8 @@
         "modo":  "mundo-novo",
         "codigo":  "0",
         "salvou":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  false,
         "erros":  ""
     },
@@ -16,6 +18,8 @@
         "modo":  "mundo-salvo",
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  true,
         "erros":  ""
     },
@@ -26,6 +30,8 @@
         "modo":  "mundo-novo",
         "codigo":  "0",
         "salvou":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  false,
         "erros":  ""
     },
@@ -36,6 +42,8 @@
         "modo":  "mundo-salvo",
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  true,
         "erros":  ""
     },
@@ -46,6 +54,8 @@
         "modo":  "mundo-novo",
         "codigo":  "0",
         "salvou":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  false,
         "erros":  ""
     },
@@ -56,6 +66,56 @@
         "modo":  "mundo-salvo",
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  7,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  8,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  9,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  10,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "carregou":  true,
         "erros":  ""
     }

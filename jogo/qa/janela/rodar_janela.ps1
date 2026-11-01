@@ -12,7 +12,8 @@ param(
     [int]$Segundos = 90,
     [int]$Aberturas = 10,
     [int[]]$AnosLeveza = @(0, 200),
-    [switch]$ComAtalho,   # liga o atalho global (Ctrl+Alt+H), como no jogo de verdade: sem ele, --sem-atalho
+    [switch]$ComAtalho,
+    [string]$Tecla = 'J',   # Ctrl+Alt+J: não disputa o Ctrl+Alt+H de outro jogo aberto   # liga o atalho global (Ctrl+Alt+H), como no jogo de verdade: sem ele, --sem-atalho
     [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe"
 )
 $ErrorActionPreference = 'Stop'
@@ -29,7 +30,7 @@ $nucleos = [Environment]::ProcessorCount
 
 function Abrir([string[]]$opcoes, [string]$rotulo) {
     $log = Join-Path $saida "log-$rotulo.txt"
-    $atalho = if ($ComAtalho) { '--atalho-global' } else { '--sem-atalho' }
+    $atalho = if ($ComAtalho) { "--atalho-global=$Tecla" } else { '--sem-atalho' }
     $argumentos = @('--path', "`"$projeto`"", '--') + $opcoes + @('--sem-foco', $atalho)
     # -NoNewWindow: o console fica no do PowerShell; a janela do jogo abre normal (não escondida,
     # para a medição de leveza valer com o jogo visível)
@@ -60,8 +61,9 @@ if ($Parte -in 'fechar', 'tudo') {
         $orfaos | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
         $res += [pscustomobject]@{
             abertura = $i; atalho = [bool]$ComAtalho; auxiliares_orfaos = $orfaos.Count; modo = $(if ($i % 2) { 'mundo-novo' } else { 'mundo-salvo' }); codigo = "$codigo"
-            salvou = [bool]($log -match 'salvo=true'); carregou = [bool]($log -match '\[simulacao\] carregado')
-            erros = (($err + $log) -split "`n" | Where-Object { $_ -match 'ERROR|SCRIPT ERROR|CrashHandler|signal 11|Segmentation' } | Select-Object -First 5) -join ' | '
+            salvou = [bool]($log -match 'salvo=true'); threads_encerradas = [bool]($log -match 'threads encerradas')
+            atalho_registrado = $ComAtalho -and -not [bool]($log -match 'atalho_em_uso'); carregou = [bool]($log -match '\[simulacao\] carregado')
+            erros = (($err + $log) -split "`n" | Where-Object { $_ -match 'ERROR|SCRIPT ERROR|CrashHandler|signal 11|Segmentation|Thread object|wait_to_finish|destroyed without' } | Select-Object -First 5) -join ' | '
         }
         Write-Host ("fechar {0}: código {1}" -f $i, $codigo)
     }
@@ -92,8 +94,9 @@ if ($Parte -in 'fecharjanela', 'tudo') {
         $orfaos = @(Get-CimInstance Win32_Process -Filter "Name like 'powershell%'" | Where-Object { $_.CommandLine -match 'simvida_qa_janela' -and $_.CommandLine -match 'atalho_global' })
         $orfaos | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
         $res += [pscustomobject]@{ abertura = $i; segundos = $espera; atalho = [bool]$ComAtalho; auxiliares_orfaos = $orfaos.Count; mensagem_entregue = $fechou; codigo = "$codigo"
-            salvou = [bool]($log -match 'salvo=true'); salvando_em_segundo_plano = [bool]($log -match 'salvando em segundo plano')
-            erros = (($err + $log) -split "`n" | Where-Object { $_ -match 'ERROR|SCRIPT ERROR|CrashHandler|signal 11|Segmentation' } | Select-Object -First 5) -join ' | ' }
+            salvou = [bool]($log -match 'salvo=true'); threads_encerradas = [bool]($log -match 'threads encerradas')
+            atalho_registrado = $ComAtalho -and -not [bool]($log -match 'atalho_em_uso'); salvando_em_segundo_plano = [bool]($log -match 'salvando em segundo plano')
+            erros = (($err + $log) -split "`n" | Where-Object { $_ -match 'ERROR|SCRIPT ERROR|CrashHandler|signal 11|Segmentation|Thread object|wait_to_finish|destroyed without' } | Select-Object -First 5) -join ' | ' }
         Write-Host ("fecharjanela {0} ({1} s): mensagem {2}, código {3}" -f $i, $espera, $fechou, $codigo)
     }
     $res | ConvertTo-Json -Depth 3 | Set-Content (Join-Path $saida "resultado-fecharjanela$sufixo.json") -Encoding utf8

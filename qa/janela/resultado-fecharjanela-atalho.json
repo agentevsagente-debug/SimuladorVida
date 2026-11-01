@@ -7,6 +7,8 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
@@ -18,6 +20,8 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
@@ -29,7 +33,9 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
-        "salvando_em_segundo_plano":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -40,6 +46,8 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
@@ -51,7 +59,9 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
-        "salvando_em_segundo_plano":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
     {
@@ -62,7 +72,9 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
-        "salvando_em_segundo_plano":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -73,7 +85,9 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
-        "salvando_em_segundo_plano":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
     {
@@ -84,6 +98,8 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
@@ -95,7 +111,9 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
-        "salvando_em_segundo_plano":  false,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -106,6 +124,8 @@
         "mensagem_entregue":  true,
         "codigo":  "0",
         "salvou":  true,
+        "threads_encerradas":  true,
+        "atalho_registrado":  true,
         "salvando_em_segundo_plano":  true,
         "erros":  ""
     }
