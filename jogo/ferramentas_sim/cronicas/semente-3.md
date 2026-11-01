@@ -82,11 +82,11 @@ Morreu Kurpeya, a devota, aos 56 anos. Foi quem deu ao deus o nome de «a Mão F
 
 ### Ano 29
 
-Peos, que guiava Koil, morreu dormindo, aos 56 anos. Tinha sido o primeiro a plantar. No inverno, as preces de Peak ficaram sem resposta. A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
+Peos, que guiava Koil, morreu dormindo, aos 56 anos. Tinha sido o primeiro a plantar. No inverno, as preces de Peak ficaram sem resposta. Faltou chuva outra vez, a primeira desde o ano 2: 26 dias de céu limpo.
 
 ### Ano 30
 
-Koik, que falava pelo Que Risca o Céu em Peak, morreu dormindo, aos 59 anos. Nos anos 21 a 30 houve duas secas; nasceram treze crianças e morreram seis pessoas. No fim do ano 30, 32 pessoas viviam no mundo: Koil (17) e Peak (15).
+Nos anos 21 a 30 houve duas secas; nasceram treze crianças e morreram seis pessoas. No fim do ano 30, 32 pessoas viviam no mundo: Koil (17) e Peak (15).
 
 *Do ano 31 ao 32, a vida seguiu sem grandes acontecimentos.*
 
@@ -98,7 +98,7 @@ Na primavera, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos.
 
 ### Ano 37
 
-Makon tinha rezado: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que o Que Risca o Céu tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Makon tinha rezado: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que o Que Risca o Céu tinha ouvido.
 
 ### Ano 38
 
@@ -108,7 +108,7 @@ De novo a chuva sumiu, como no ano 29. Foram 25 dias de seca.
 
 ### Ano 40
 
-Tama, de Peak, foi viver em Koil com Kion: o primeiro casamento entre os dois povos. Nos anos 31 a 40 houve três secas e cinco preces que pareceram atendidas; nasceram 21 crianças e morreram nove pessoas. No fim do ano 40, 44 pessoas viviam no mundo: Koil (24) e Peak (20).
+Na primavera do ano 40, Kion, de Koil, tomou por esposa Tama, de Peak, e os dois povos passaram a se visitar. Nos anos 31 a 40 houve três secas e três preces que pareceram atendidas; nasceram 21 crianças e morreram nove pessoas. No fim do ano 40, 44 pessoas viviam no mundo: Koil (24) e Peak (20).
 
 ### Ano 41
 
@@ -118,43 +118,43 @@ No outono, em Peak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganha
 
 ### Ano 43
 
-No verão do ano 43, Veik, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem.
+Veik, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 *Entre os anos 44 e 45, nada mudou o rumo do mundo.*
 
 ### Ano 46
 
-Na primavera do ano 46, Maik disse ter ouvido o deus de outro jeito: não era «a Mão Fechada», era «o Que Levanta». Koil acreditou, e o deus mudou de nome.
+Em Koil, Maik começou a pregar que o deus não era «a Mão Fechada». Era «o Que Levanta». Em poucos anos, todos rezavam assim.
 
 *O ano 47 passou sem nada que a crônica precise guardar.*
 
 ### Ano 48
 
-Cansado de um líder que mandava sozinho, Peak passou a decidir em conselho.
+Na primavera do ano 48, depois de anos sob um só, Peak sentou-se em roda: dali em diante, decidia-se juntos.
 
 ### Ano 49
 
-Na primavera do ano 49, morreu Veur, que guiava Koil, aos 51 anos. Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Mavion implorou pelo filho. Pevik morreu, e daquele dia em diante Mavion cuspia no chão quando falavam do Que Levanta. Uma tosse que não passava matou dezoito pessoas em Koil. Depois da febre, Koil passou a queimar os seus mortos, para que a doença não voltasse.
+Na primavera, morreu Veur, que guiava Koil, aos 51 anos. Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Mavion rezou por Pevik até a voz acabar. Pevik morreu mesmo assim, e Mavion nunca mais rezou. Uma febre correu Koil e levou dezoito vidas. Depois da febre, Koil passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 50
 
-Makon, que guiava Peak, morreu de velhice aos 52 anos. Nunca perdoou o deus pela morte de Lopeik. Os últimos de Peak, Tamos, Pelour e Peur, juntaram-se a Koil. Peak deixou de existir. Koil também trocou as cabanas por casas de pedra. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
+Makon, que guiava Peak, morreu de velhice aos 52 anos. Desde a morte de Lopeik, nunca mais tinha rezado. Peak acabou: Tamos, Pelour e Peur foram viver em Koil. Depois de Peak, foi Koil que ergueu paredes de pedra. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
 
 *Do ano 51 ao 53, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 54
 
-Na primavera, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Veik rezou por Veur até a voz acabar. Veur morreu mesmo assim, e Veik nunca mais rezou. A febre levou Veik, que guiava Koil. Nunca perdoou o deus pela morte de Veur. Maik, que falava pelo Que Levanta em Koil, morreu de febre aos 34 anos. Uma febre correu Koil e levou dez vidas.
+Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Veik implorou pelo filho. Veur morreu, e daquele dia em diante Veik cuspia no chão quando falavam do Que Levanta. Veik, que guiava Koil, morreu de febre aos 43 anos. Desde a morte de Veur, nunca mais tinha rezado. Maik, que falava pelo Que Levanta em Koil, morreu de febre aos 34 anos. A doença entrou em Koil e matou dez pessoas.
 
 ### Ano 55
 
-A seca voltou, como no ano 38: 26 dias sem chuva, até que o céu se abriu.
+Faltou chuva outra vez, a primeira desde o ano 38: 26 dias de céu limpo.
 
 *Os anos 56 a 58 passaram em paz.*
 
 ### Ano 59
 
-Koil deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
+Em Koil, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Levanta».
 
 ### Ano 60
 
@@ -164,7 +164,7 @@ Nos anos 51 a 60 houve quatro secas; nasceram oito crianças e morreram treze pe
 
 ### Ano 66
 
-Na primavera, morreu Pelour, que falava pelo Que Levanta em Koil, aos 53 anos.
+Na primavera do ano 66, Pelour, que falava pelo Que Levanta em Koil, morreu dormindo, aos 53 anos.
 
 *Os anos 67 a 69 passaram em paz.*
 
@@ -182,59 +182,59 @@ No fim do ano 80, 24 pessoas viviam no mundo, todas em Koil.
 
 ### Ano 82
 
-Vion não podia mais viver perto de Kuros. Saiu de Koil com quinze pessoas e fundou Pear na floresta. Em Pear, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.
+No outono, a rixa entre Vion e Kuros rachou Koil. Vion partiu com os seus, quinze pessoas, e fundou Pear na floresta. Pear encontrou as ruínas de Peak: o chão batido de casas sem ninguém. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 83
 
-No verão, em Pear nasceu a primeira criança: Lou, filha de Pemaya e Vion.
+No verão do ano 83, em Pear nasceu a primeira criança: Lou, filha de Pemaya e Vion.
 
 ### Ano 84
 
-Maos tinha rezado: «Que Levanta, não leves mais ninguém.» Os doentes se levantaram. Em Pear, o crédito foi do Que Levanta. A crônica sabe que foi acaso.
+Em Pear, Maos pediu: «Que Levanta, leva embora a febre.» A febre passou, e Maos contou a todos que o Que Levanta tinha ouvido. A crônica sabe que foi acaso.
 
 *O ano 85 passou sem nada que a crônica precise guardar.*
 
 ### Ano 86
 
-Morreu Kuros, que guiava Koil, aos 62 anos. Em Pear, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam.
+Na primavera do ano 86, Kuros, que guiava Koil, morreu de velhice aos 62 anos. Com Vion à frente, a nova geração de Pear abandonou o costume de queimar os mortos, costume herdado dos avós.
 
 ### Ano 87
 
-Morreu Jur, filho pequeno de Pemaya. Maos passou a falar pelo Que Levanta em Pear. Era o primeiro a rezar e o último a duvidar. A seca voltou, como no ano 55: 21 dias sem chuva, até que o céu se abriu. O dia em que a chuva voltou virou festa em Pear: todo ano, celebram a chuva que o Que Levanta mandou.
+Jur morreu com 2 anos, de uma febre que ninguém entendeu. Em Pear, Maos tomou para si o cuidado das preces ao Que Levanta. Faltou chuva outra vez, a primeira desde o ano 55: 21 dias de céu limpo. O dia em que a chuva voltou virou festa em Pear: todo ano, celebram a chuva que o Que Levanta mandou.
 
 ### Ano 88
 
-Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade de Maos, não do deus. Houve luta no lago: Pear atacou Koil. Koil foi derrotado e perdeu o que tinha guardado. Caiu Maveur. Foi a primeira vez que gente matou gente no mundo. Pear venceu Koil e levou os cinco sobreviventes para viver sob seu mando. Koil deixou de existir, mas os vencidos guardaram seus costumes em segredo.
+Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade de Maos, não do deus. Pear atacou Koil no lago. Pear venceu e levou a comida guardada. Maveur morreu na luta. Foi a primeira vez que gente matou gente no mundo. Depois da derrota, Koil não existia mais: os cinco que sobraram foram levados para Pear.
 
 ### Ano 89
 
-Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. Depois daquela fome, Pear passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Pear achou o chão batido de casas sem ninguém, o que restava de Koil. Os velhos diziam que eram parentes antigos, que se perderam. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. A fome ensinou: desde então, Pear estoca comida e não come tudo o que colhe. Pear achou o chão batido de casas sem ninguém, o que restava de Koil. Os velhos diziam que eram parentes antigos, que se perderam. No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender.
 
 ### Ano 90
 
-Nos anos 81 a 90 houve duas secas e seis preces que pareceram atendidas; nasceram nove crianças e morreram cinco pessoas. No fim do ano 90, 28 pessoas viviam no mundo, todas em Pear.
+Nos anos 81 a 90 houve duas secas e cinco preces que pareceram atendidas; nasceram nove crianças e morreram cinco pessoas. No fim do ano 90, 28 pessoas viviam no mundo, todas em Pear.
 
 *Do ano 91 ao 92, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 93
 
-Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Pear escolheu Maloik para guiar o grupo. Maos queria o lugar e nunca perdoou. No inverno, nasceram gêmeos de Tamya: Selloim e Pekuron.
+Na primavera, Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Maloik passou a guiar Pear, mas Maos não aceitou e guardou rancor. No inverno, Tamya deu à luz gêmeos, Selloim e Pekuron. Uns viram bênção; outros, mau sinal.
 
 *Os anos 94 a 96 passaram em paz.*
 
 ### Ano 97
 
-Numa tempestade sobre a floresta, um raio matou Maloik. A família de Maloik nunca perdoou o céu. Desde a morte de Maloik, ninguém em Pear entra na floresta em dia de tempestade. Desde aquele dia, Pear chama a floresta de Floresta do Raio.
+No outono do ano 97, numa tempestade sobre a floresta, um raio matou Maloik. A família de Maloik nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Pear sai de casa. Lembram de Maloik. Desde aquele dia, Pear chama a floresta de Floresta do Raio.
 
 *No ano 98, nada de notável aconteceu.*
 
 ### Ano 99
 
-Peur pregou em Pear que o deus não era «o Que Levanta», mas «o Que Julga». O templo chamou aquilo de heresia, e Peur saiu com os que o seguiam. Os seguidores de Peur fundaram Viur no lago. Ali, o deus se chama «o Que Julga». Nasceu Rilveim, o primeiro de Viur. Diante das ruínas de Peak, o chão batido de casas sem ninguém, Viur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Viur, Mau tomou para si o cuidado das preces ao Que Julga.
+Na primavera, o templo de Pear não aceitou Peur, que chamava o deus de «o Que Julga». Houve gritos, pedras, e os seguidores de Peur foram embora. Com Peur à frente, 30 pessoas fundaram Viur no lago, onde o deus se chama «o Que Julga». Nasceu Rilveim, o primeiro de Viur. Em Viur, o chão batido de casas sem ninguém virou aviso: era o que o deus fazia com quem o desagradava, como fez com Peak. Mau passou a falar pelo Que Julga em Viur. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 100
 
-Tamya, de Pear, casou-se com Lour e foi viver em Viur. Foi o primeiro laço entre os dois povos. Em Pear, Maos pediu: «Manda água, Que Levanta, que as crianças têm sede.» Quando a chuva voltou, Pear agradeceu ao Que Levanta. Nos anos 91 a 100 houve três secas e cinco preces que pareceram atendidas; nasceram 31 crianças e morreram cinco pessoas. No fim do ano 100, 55 pessoas viviam no mundo: Pear (19) e Viur (36).
+Tamya, de Pear, foi viver em Viur com Lour: o primeiro casamento entre os dois povos. Maos tinha rezado: «Manda água, Que Levanta, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Pear duvidou de que o Que Levanta tinha ouvido. Foi só o tempo, mas quem iria dizer? Nos anos 91 a 100 houve três secas e cinco preces que pareceram atendidas; nasceram 31 crianças e morreram cinco pessoas. No fim do ano 100, 55 pessoas viviam no mundo: Pear (19) e Viur (36).
 
 ---
 

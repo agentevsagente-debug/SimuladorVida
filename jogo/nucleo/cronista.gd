@@ -1128,6 +1128,8 @@ func _texto(e) -> String:
 			return _prece_atendida(e, v)
 		"prece_sem_resposta":
 			return _prece_sem_resposta(e, v)
+		"prece_contrariada":
+			return _prece_contrariada(e, v)
 		"silencio":
 			return _silencio(e, v)
 		"culpado":
@@ -1806,7 +1808,9 @@ func texto_curto(e) -> String:
 			else:
 				opcoes = {"seca": ["{p} pede chuva", "{g} pede chuva"], "fome": ["{p} pede comida", "{g} pede comida"],
 					"doenca": ["{p} pede o fim da febre"], "frio": ["{p} pede o fim do frio"],
-					"guerra": ["{p} pede proteção"], "banal": ["{p} pede sol para a pesca", "{p} pede uma caça gorda"]}.get(nec, ["{p} reza"])
+					"guerra": ["{p} pede vitória" if e.dados.get("atacou", false) else "{p} pede proteção"], "banal": ["{p} pede sol para a pesca", "{p} pede uma caça gorda"]}.get(nec, ["{p} reza"])
+		"prece_contrariada":
+			opcoes = ["{g} pediu, e veio o contrário", "{p} foi contrariad{p:o|a}"]
 		"fome_inicio":
 			opcoes = ["Fome em {g}"]
 		"doenca_inicio":
@@ -1991,6 +1995,9 @@ func _texto_prece(e, v: Dictionary) -> String:
 			"Cura {alvo}, {deus}. {alvo:Ele|Ela} é tão pequen{alvo:o|a}."]), vv)
 	var inimigo: int = e.dados.get("inimigo", -1)
 	vv["inimigo"] = G.termo("inimigo", "m", 1, true) if inimigo < 0 else _g(inimigo)
+	if nec == "guerra" and e.dados.get("atacou", false):
+		return G.preencher(_escolher(["{deus}, dá-nos a vitória sobre {inimigo}.", "{deus}, que {inimigo} caia da próxima vez.",
+			"{deus}, fortalece nossas lanças contra {inimigo}."]), vv)
 	return G.preencher(_escolher(TEXTOS_PRECE.get(nec, ["{deus}, ajuda-nos."])), vv)
 
 
@@ -2122,6 +2129,27 @@ func _mito_ruinas(e, v: Dictionary) -> String:
 	return _frase(["{g} encontrou as ruínas de {povo}: {visto}. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.",
 		"Em {g}, olharam {visto} e disseram que {povo} tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.",
 		"{g} achou {visto}, o que restava de {povo}. Os velhos diziam que eram parentes antigos, que se perderam."], v) + antes
+
+
+## Pediram uma coisa e o deus mandou o contrário.
+func _prece_contrariada(e, v: Dictionary) -> String:
+	v["p"] = _p(e.participantes[0])
+	var pedidos: Array = []
+	for nec in e.dados.get("necessidades", [e.dados["necessidade"]]):
+		pedidos.append({"seca": "chuva", "fome": "comida", "doenca": "a cura", "frio": "calor", "guerra": "proteção",
+			"banal": "um dia bom"}.get(nec, "ajuda"))
+	var pedido: String = G.lista(pedidos)
+	var veio: String = {"seca": "a seca", "fogo": "o fogo", "diluvio": "a enchente", "terremoto": "o tremor",
+		"raio": "o raio"}.get(e.dados["poder"], "o contrário")
+	v["pedido"] = G.termo(pedido)
+	v["veio"] = G.termo(veio)
+	if e.participantes.size() > 1:
+		v["a"] = _p(e.participantes[1])
+		return _frase(["{p} pediu a cura de {a}, e veio {veio}. Em {g}, ninguém mais rezou por doente.",
+			"{p} tinha rezado por {a}. A resposta foi {veio}, e {p} nunca entendeu o porquê."], v)
+	return _frase(["{g} pediu {pedido}, e veio {veio}. Foi como se {o:deus} tivesse dito não.",
+		"{p} tinha pedido {pedido}. Veio {veio}, e em {g} perguntaram o que tinham feito de errado.",
+		"Em {g}, rezavam por {pedido}. A resposta foi {veio}, e a fé de muitos não voltou mais."], v)
 
 
 func _prece_sem_resposta(e, v: Dictionary) -> String:

@@ -78,227 +78,257 @@ Na primavera, Loenu, que fundou Zeor e o guiava, morreu dormindo, aos 70 anos. T
 
 ### Ano 25
 
-Torraim rezou, e nada aconteceu. Em Zeor, Torraim pediu: «Que Nega, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Nega. A crônica sabe que foi acaso.
+As preces de Zeor ficaram sem resposta. Torraim tinha rezado: «Que Nega, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Nega.
 
 ### Ano 26
 
-Viu, que guiava Zeor, morreu de repente, aos 25 anos. Na Guerra da Fome, Zeor atacou Sagak na floresta. Sagak expulsou os atacantes. Na luta morreu Torraim.
+Na primavera do ano 26, Viu, que guiava Zeor, morreu de repente, aos 25 anos. Na Guerra da Fome, Zeor atacou Sagak na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Caiu Torraim.
 
 ### Ano 27
 
-A Guerra da Fome seguiu: Zeor contra Sagak, na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Caíram Lout e Zera.
+A Guerra da Fome seguiu: Zeor contra Sagak, na floresta. Sagak expulsou os atacantes. Na luta morreram Lout e Zera. No outono, em Sagak, cansados do silêncio, acusaram Torut de mentir em nome do Que Nega. Torut perdeu o lugar junto ao altar.
 
-*Os anos 28 a 29 passaram em paz.*
+### Ano 28
+
+Na primavera, Rabea, a devota, morreu de velhice aos 49 anos. Foi quem deu ao deus o nome de «o Que Nega».
+
+*No ano 29, nada de notável aconteceu.*
 
 ### Ano 30
 
-A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e seis mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte. Satora tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Nega tinha ouvido. Nos anos 21 a 30 houve duas secas, quatro fomes, quatro batalhas, dezessete preces que pareceram atendidas e oito preces sem resposta; nasceram dezessete crianças e morreram 24 pessoas. No fim do ano 30, 32 pessoas viviam no mundo: Zeor (10) e Sagak (22).
+Na primavera, Miviu, de Zeor, casou-se com Raviem e foi viver em Sagak. Foi o primeiro laço entre os dois povos. No verão, a Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e seis mortos, e ninguém sabia mais por que lutava. Sagak saiu dela mais forte. Nos anos 21 a 30 houve quatro fomes, quatro batalhas, sete preces que pareceram atendidas e oito preces sem resposta; nasceram dezessete crianças e morreram 25 pessoas. No fim do ano 30, 31 pessoas viviam no mundo: Zeor (10) e Sagak (21).
 
-*O ano 31 foi calmo.*
+### Ano 31
+
+Torut disse ter ouvido o deus de outro jeito: não era «o Que Nega», era «o Senhor do Trovão». Sagak acreditou, e o deus mudou de nome.
 
 ### Ano 32
 
-Faltou chuva outra vez, a primeira desde o ano 12: 19 dias de céu limpo.
+Em Sagak, Torut pediu: «Senhor do Trovão, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Senhor do Trovão tinha ouvido.
 
-*Do ano 33 ao 34, a vida seguiu sem grandes acontecimentos.*
+*No ano 33, nada de notável aconteceu.*
+
+### Ano 34
+
+Nasceu Loena, filha de Miviu e Raviem, com sangue de Sagak e de Zeor.
 
 ### Ano 35
 
-Morreu Satora, que fundou Sagak e o guiava, aos 56 anos. Sagak escolheu Rabea para guiar o grupo. Linut queria o lugar e nunca perdoou.
+Torut, o devoto, morreu de repente, aos 32 anos.
 
 ### Ano 36
 
-Na primavera, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Para Sagak, o deus já não era «o Que Nega»: passou a ser «o Que Leva». Zetoru, que guiava Zeor, morreu de febre aos 23 anos. Desde a morte de Enya, nunca mais tinha rezado. A doença entrou em Zeor e matou dez pessoas. Zeor acabou: Raut, Bera e Torik foram viver em Sagak.
+Saut morreu de repente, aos 40 anos. Na guerra, tinha tirado duas vidas.
 
-*Os anos 37 a 39 passaram em paz.*
+### Ano 37
+
+No verão, Sau, a desconfiada, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+
+*Do ano 38 ao 39, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 40
 
-Nos anos 31 a 40 houve duas secas e quatro preces que pareceram atendidas; nasceram dezesseis crianças e morreram 31 pessoas. No fim do ano 40, dezessete pessoas viviam no mundo, todas em Sagak.
+Faltou chuva outra vez, a primeira desde o ano 12: 22 dias de céu limpo. Nos anos 31 a 40 houve quatro secas e sete preces que pareceram atendidas; nasceram 32 crianças e morreram oito pessoas. No fim do ano 40, 55 pessoas viviam no mundo: Zeor (21) e Sagak (34).
 
-*Entre os anos 41 e 43, nada mudou o rumo do mundo.*
+### Ano 41
+
+Satora tinha rezado: «Senhor do Trovão, não nos deixes secar.» Quando a chuva voltou, Sagak agradeceu ao Senhor do Trovão.
+
+### Ano 42
+
+Satora não podia mais viver perto de Linut. Saiu de Sagak com onze pessoas e fundou Vian na praia. Raviem passou a falar pelo Senhor do Trovão em Vian. Era o primeiro a rezar e o último a duvidar. Em Vian nasceu a primeira criança: Galon, filho de Vimiya e Viloik.
+
+### Ano 43
+
+Houve fome em Sagak: 15 dias de barriga vazia, sem mortes. Depois daquela fome, Sagak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 44
 
-No outono do ano 44, numa tempestade sobre a floresta, um raio matou Viem. Ninguém em Sagak teve dúvida: era castigo. Sagak passou a acreditar que o Que Leva castiga quem duvida, e que Viem tinha duvidado. Desde a morte de Viem, ninguém em Sagak entra na floresta em dia de tempestade.
+Logara morreu com 1 anos, de uma febre que ninguém entendeu. Sagak passou fome no inverno por 9 dias, e duas pessoas morreram. Sagak atacou Vian na praia. Os de Vian não cederam, e Sagak recuou. Sabem e Viloik morreram na luta. O mesmo chão ganhou dois nomes: Praia da Vitória para Vian, Praia do Luto para Sagak. Depois da derrota, os jovens de Sagak passaram a treinar com lanças.
 
-*O ano 45 foi calmo.*
-
-### Ano 46
-
-Morreu Rabea, que guiava Sagak, aos 67 anos. Foi quem deu ao deus o nome de «o Que Nega».
-
-*O ano 47 foi calmo.*
+*Entre os anos 45 e 47, nada mudou o rumo do mundo.*
 
 ### Ano 48
 
-No outono, nasceu Nibeu, filha de Saut, que guiava Sagak.
+Em Vian, Raviem pediu: «Manda água, Senhor do Trovão, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Vian duvidou de que o Senhor do Trovão tinha ouvido.
 
 *O ano 49 foi calmo.*
 
 ### Ano 50
 
-Nos anos 41 a 50 houve quatro preces que pareceram atendidas; nasceram dezesseis crianças e morreram sete pessoas. No fim do ano 50, 26 pessoas viviam no mundo, todas em Sagak.
+Na primavera, Satora, que fundou Vian e o guiava, morreu de velhice aos 71 anos. Nos anos 41 a 50 houve duas secas, quatro fomes e doze preces que pareceram atendidas; nasceram 58 crianças e morreram 23 pessoas. No fim do ano 50, 90 pessoas viviam no mundo: Zeor (40), Sagak (26) e Vian (24).
 
-### Ano 51
-
-A seca voltou, como no ano 32: 19 dias sem chuva, até que o céu se abriu. Em Sagak, Torut pediu: «Que Leva, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. Foi só o tempo, mas quem iria dizer?
+*O ano 51 passou sem nada que a crônica precise guardar.*
 
 ### Ano 52
 
-Na primavera, Saut, que guiava Sagak, morreu de velhice aos 56 anos. Na guerra, tinha tirado duas vidas.
+Viut, o generoso, descobriu como empilhar pedras cortadas sem que caíssem.
 
-*Do ano 53 ao 54, a vida seguiu sem grandes acontecimentos.*
+*No ano 53, nada de notável aconteceu.*
+
+### Ano 54
+
+No verão, Vian já não cabia na praia. Miviu, a devota, levou oito pessoas para o morro e fundou Viak. Em Viak, Raviem tomou para si o cuidado das preces ao Senhor do Trovão. No outono, numa tempestade sobre o lago, um raio matou Vitorut. A família de Vitorut nunca perdoou o céu. Depois disso, Zeor deixou de chamar o deus de «o Que Nega» e passou a chamá-lo de «o Que Fere». Nasceu ali um costume: quando o céu escurece, ninguém em Zeor sai de casa. Lembram de Vitorut.
 
 ### Ano 55
 
-Torut, o devoto, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Na primavera do ano 55, Sagak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Sagak, quem passou a decidir foi o templo: os sacerdotes falavam pelo Senhor do Trovão, e o deus decidia tudo. Vian passou fome por causa da seca por 24 dias, mas ninguém morreu. A fome ensinou: desde então, Vian estoca comida e não come tudo o que colhe. Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 *No ano 56, nada de notável aconteceu.*
 
 ### Ano 57
 
-Na primavera, morreu Torut, que falava pelo Que Leva em Sagak, aos 54 anos. Nunca perdoou o deus pela morte de Linik.
+Miviu, que fundou Viak e o guiava, morreu de repente, aos 43 anos. Morreu Raviem, que falava pelo Senhor do Trovão em Viak, aos 50 anos. Em Viak, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 24, só a crônica guarda.
 
-*O ano 58 foi calmo.*
-
-### Ano 59
-
-Na primavera do ano 59, Viloik, que guiava Sagak, morreu de repente, aos 40 anos.
+*Entre os anos 58 e 59, nada mudou o rumo do mundo.*
 
 ### Ano 60
 
-No inverno, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Nos anos 51 a 60 houve três secas e nove preces que pareceram atendidas; nasceram 25 crianças e morreram seis pessoas. No fim do ano 60, 45 pessoas viviam no mundo, todas em Sagak.
+Sau, a desconfiada, morreu dormindo, aos 62 anos. Mik, de Viak, tomou por esposa Ensara, de Vian, e os dois povos passaram a se visitar. No outono, Vian também trocou as cabanas por casas de pedra. No inverno, nasceu Vivik, o primeiro de Viak. A seca voltou, como no ano 40: 24 dias sem chuva, até que o céu se abriu. Nos anos 51 a 60 houve duas secas, duas fomes, nove preces que pareceram atendidas e cinco preces sem resposta; nasceram 83 crianças e morreram 28 pessoas. No fim do ano 60, 145 pessoas viviam no mundo: Zeor (62), Sagak (53), Vian (25) e Viak (5).
 
-*Os anos 61 a 62 passaram em paz.*
+### Ano 61
 
-### Ano 63
+Foram 9 dias de fome no inverno em Zeor, com quatro mortos. Zetoru tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Que Fere. O deus nada fez: o crédito era de graça. O inverno foi de gelo: três pessoas morreram de frio.
 
-Enik, o pacífico, descobriu como empilhar pedras cortadas sem que caíssem. De novo a chuva sumiu, como no ano 51. Foram 25 dias de seca. Vinik tinha rezado: «Manda água, Que Leva, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Leva tinha ouvido. A crônica sabe que foi acaso.
+### Ano 62
 
-*O ano 64 foi calmo.*
+Mira, que guiava Vian, morreu dormindo, aos 45 anos. Mibera disse ter ouvido o deus de outro jeito: não era «o Senhor do Trovão», era «o Olho Escuro». Vian acreditou, e o deus mudou de nome. Sara, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
+
+*No ano 63, nada de notável aconteceu.*
+
+### Ano 64
+
+A doença entrou em Zeor e matou uma pessoa. Em Viak, Sara pediu: «Senhor do Trovão, que a chuva volte.» Quando a chuva voltou, Viak agradeceu ao Senhor do Trovão. Uma tosse que não passava matou catorze pessoas em Sagak. Desde a febre, Sagak não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 65
 
-Veio a pior fome que o mundo tinha visto: 18 dias por causa da seca em Sagak, e 16 mortos. As crianças foram as primeiras. A fome ensinou: desde então, Sagak estoca comida e não come tudo o que colhe.
+A fome no inverno durou 9 dias em Zeor e levou sete vidas. Sagak conheceu a maior fome da sua história por causa da seca. Em 21 dias, morreram 22. Muitas cabanas ficaram vazias.
 
-*Os anos 66 a 69 passaram em paz.*
+### Ano 66
+
+O saber de Sagak chegou a Zeor: Torlora aprendeu a cortar e empilhar pedra. No outono, Lora teve dois de uma vez, Raena e Enlout, e todos foram ver.
+
+*Os anos 67 a 69 passaram em paz.*
 
 ### Ano 70
 
-Nos anos 61 a 70 houve duas secas, duas fomes e quatro preces que pareceram atendidas; nasceram 33 crianças e morreram 22 pessoas. No fim do ano 70, 56 pessoas viviam no mundo, todas em Sagak.
+Na primavera do ano 70, Raut, que falava pelo Que Fere em Zeor, morreu de velhice aos 55 anos. Faltou chuva outra vez, a primeira desde o ano 60: 25 dias de céu limpo. Zetoru, que guiava Zeor, morreu de fome. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse. Nos anos 61 a 70 houve duas secas, cinco fomes, dezoito preces que pareceram atendidas e quatro preces sem resposta; nasceram 88 crianças e morreram 103 pessoas. No fim do ano 70, 131 pessoas viviam no mundo: Zeor (55), Sagak (43), Vian (24) e Viak (9).
 
-*O ano 71 foi calmo.*
+### Ano 71
 
-### Ano 72
+Na primavera, em Sagak, Selem começou a pregar que o deus não era «o Senhor do Trovão». Era «o Que Risca o Céu». Em poucos anos, todos rezavam assim. As casas de pedra chegaram a Zeor, e com elas um templo. Viem rezou por Vil até a voz acabar. Vil morreu mesmo assim, e Viem nunca mais rezou. O deus não respondia, e Vian achou que a culpa era sua: tinham feito algo errado. No outono, Entora, de Zeor, casou-se com Beik e foi viver em Vian. Foi o primeiro laço entre os dois povos.
 
-Na primavera, Raut não podia mais viver perto de Losaut. Saiu de Sagak com vinte pessoas e fundou Linil no lago. Lou passou a falar pelo Que Leva em Linil. Era a primeira a rezar e a última a duvidar. No verão, em Linil nasceu a primeira criança: Linloik, filho de Sela e Milinor.
+*O ano 72 foi calmo.*
 
 ### Ano 73
 
-Na primavera, Ralina, a pacífica, morreu dormindo, aos 52 anos. Em Sagak, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 24, só a crônica guarda.
+Na primavera, Enbeik disse ter ouvido o deus de outro jeito: não era «o Senhor do Trovão», era «a Mãe de Dois». Viak acreditou, e o deus mudou de nome. Mia, de Sagak, foi viver em Vian com Gaor: o primeiro casamento entre os dois povos.
 
 ### Ano 74
 
-Faltou chuva outra vez, a primeira desde o ano 63: 20 dias de céu limpo. Em Sagak, Selvik pediu: «Que Leva, não nos deixes secar.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. O deus nada fez: o crédito era de graça.
+Na primavera, em Sagak, gritaram que o templo mentia em nome do Que Risca o Céu. Os sacerdotes foram tirados do poder. Miena tinha rezado: «Manda água, Que Risca o Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Risca o Céu tinha ouvido.
 
 *O ano 75 foi calmo.*
 
 ### Ano 76
 
-Na primavera, Raut, que fundou Linil e o guiava, morreu de velhice aos 61 anos.
+Na primavera, Visara juntou quatro pessoas e foi embora pela borda do mundo, atrás de terra melhor. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Via deu à luz gêmeos, Miviu e Sa. Uns viram bênção; outros, mau sinal.
 
 ### Ano 77
 
-Na primavera, Nienu disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «o Olho Escuro». Linil acreditou, e o deus mudou de nome. No verão, nasceram gêmeos de Linnia: Sellina e Beenor.
+Na primavera do ano 77, morreu Niem, que guiava Sagak, aos 50 anos. Morreu o último que tinha visto o ano 24. Em Zeor, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê.
 
 ### Ano 78
 
-Na primavera do ano 78, ninguém lembrava mais a razão, e Sagak abandonou a festa da chuva. Linil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Linil ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Olho Escuro.
+No verão, a tempestade trouxe raios para o morro. Um deles acertou Vivik. Em Viak, disseram que era castigo. Viak passou a acreditar que a Mãe de Dois castiga quem duvida, e que Vivik tinha duvidado. Desde a morte de Vivik, ninguém em Viak sobe o morro em dia de tempestade. Desde aquele dia, Viak chama o morro de Morro do Raio. No outono, um raio caiu no lago durante a tempestade e matou Miraim. Miraim era dos que mais rezavam, e Zeor ficou sem entender.
 
-*O ano 79 passou sem nada que a crônica precise guardar.*
+### Ano 79
+
+Sagak passou fome no inverno por 11 dias, e uma pessoa morreu. Bebera, a pacífica, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 80
 
-O dia em que a chuva voltou virou festa em Sagak: todo ano, celebram a chuva que o Que Leva mandou. Nos anos 71 a 80 houve duas secas e cinco preces que pareceram atendidas; nasceram 45 crianças e morreram dez pessoas. No fim do ano 80, 92 pessoas viviam no mundo: Sagak (48) e Linil (44).
+Nos anos 71 a 80 houve três secas, seis fomes e 23 preces que pareceram atendidas; nasceram 119 crianças e morreram 58 pessoas. No fim do ano 80, 189 pessoas viviam no mundo: Zeor (83), Sagak (61), Vian (31) e Viak (14).
 
 ### Ano 81
 
-Na primavera do ano 81, por 8 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
+A forja de Vian não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
-*Do ano 82 ao 83, a vida seguiu sem grandes acontecimentos.*
+*No ano 82, nada de notável aconteceu.*
+
+### Ano 83
+
+Na primavera, houve luta no morro: Zeor atacou Viak. Zeor venceu e levou a comida guardada. Caiu Enbeik. No verão, começou a Guerra da Fome do Morro: Zeor, com fome, foi buscar à força a comida de Viak. Desde então, Zeor chama o morro de Morro da Vitória. Viak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
 
 ### Ano 84
 
-Enik tinha rezado: «Olho Escuro, cura meu filho.» Os doentes se levantaram. Em Linil, o crédito foi do Olho Escuro.
+Em Sagak, Sellinu pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Sagak viu nisso obra do Olho Escuro. A Guerra da Fome do Morro seguiu: Viak contra Zeor, no lago. Os de Zeor não cederam, e Viak recuou. Gaut morreu na luta.
 
 ### Ano 85
 
-Sellor, de Sagak, tomou por esposa Nienu, de Linil, e os dois povos passaram a se visitar.
+Um dia, Linbeu e mais três pessoas pegaram o que tinham e passaram da borda do mundo. Ninguém os viu de novo. Em Zeor, nasceu a mesma lenda: além da borda, uma terra sem fome. Foram 15 dias de fome no inverno em Zeor, com quatro mortos. Um inverno duro matou dez pessoas de frio. Sasaik, o devoto, não resistiu à fome.
 
 ### Ano 86
 
-De novo o sol se apagou no meio do dia. Depois disso, Sagak deixou de chamar o deus de «o Que Leva» e passou a chamá-lo de «o Que Apaga o Sol».
+O templo de Sagak ficou mais forte que o líder. Sellinu, que falava pelo Olho Escuro, passou a decidir tudo. Bebea partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Sem lugar e sem comida, Linvira e os seus atravessaram a borda do mundo. Ninguém soube deles. Sagak também passou a contar histórias da terra além da borda. Viak fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
 
-*O ano 87 foi calmo.*
-
-### Ano 88
-
-Na primavera do ano 88, em Linil, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Olho Escuro». A seca voltou, como no ano 74: 25 dias sem chuva, até que o céu se abriu. Depois da seca, Sagak jurou nunca desperdiçar água.
+*Entre os anos 87 e 88, nada mudou o rumo do mundo.*
 
 ### Ano 89
 
-Sagak conheceu a maior fome da sua história por causa da seca. Em 17 dias, morreram 21. Muitas cabanas ficaram vazias. No inverno, Selvik, o devoto, não resistiu à fome. Linniem, que falava pelo Que Apaga o Sol em Sagak, morreu de fome.
+Na primavera do ano 89, Linmim, que falava pelo Que Apaga o Sol em Zeor, morreu dormindo, aos 56 anos. Morreu Viut, o generoso, aos 61 anos. A Guerra da Fome do Morro esfriou sem acordo nem vencedor: seis anos, cinco batalhas e seis mortos, e ninguém sabia mais por que lutava. Zeor saiu dela mais forte.
 
 ### Ano 90
 
-Sellora, que guiava Linil, morreu de repente, aos 43 anos. Morreu o último que tinha visto o ano 36. Em Sagak, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Foram 20 dias de fome por causa da seca em Sagak, com 21 mortos. Nos anos 81 a 90 houve três secas, cinco fomes, catorze preces que pareceram atendidas e quatro preces sem resposta; nasceram 40 crianças e morreram 57 pessoas. No fim do ano 90, 75 pessoas viviam no mundo: Sagak (28) e Linil (47).
+Na primavera do ano 90, Via não quis esperar a fome passar: levou cinco pessoas para além da borda. Nos anos 81 a 90 houve dezesseis fomes, cinco batalhas, 24 preces que pareceram atendidas e sete preces sem resposta; nasceram 92 crianças e morreram 63 pessoas. No fim do ano 90, 199 pessoas viviam no mundo: Zeor (81), Sagak (70), Vian (29) e Viak (19).
 
-*Entre os anos 91 e 92, nada mudou o rumo do mundo.*
+### Ano 91
+
+Em Zeor, foi Bemim quem aprendeu a tirar metal da pedra. A guerra apressou a ideia.
+
+### Ano 92
+
+Na primavera do ano 92, Zeor atacou Viak no morro. Viak foi derrotado e perdeu o que tinha guardado. Na luta morreram Mibera e Tora. Depois de tanto sofrer nas mãos dos vizinhos, Viak passou a desconfiar de todo estrangeiro.
 
 ### Ano 93
 
-A rixa entre Losaut e Mira rachou Sagak. Losaut partiu com os seus, quinze pessoas, e fundou Viar na praia. No inverno, Selu teve dois de uma vez, Enbeut e Selbem, e todos foram ver. Nasceu Jugaor, o primeiro de Viar.
+Sara, que guiava Viak, morreu de velhice aos 47 anos. Sagak se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Beik tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Vian deu graças ao Olho Escuro. No inverno, o sol escureceu outra vez.
 
 ### Ano 94
 
-Morreu Enik, o pacífico, aos 56 anos. Lou, que guiava Linil, morreu dormindo, aos 57 anos. Em Viar, Selem tomou para si o cuidado das preces ao Que Apaga o Sol.
+Na primavera, Torlora, que guiava Zeor, morreu dormindo, aos 60 anos.
 
 ### Ano 95
 
-Em Sagak, Loik pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Apaga o Sol tinha ouvido.
+Na primavera do ano 95, morreu Sellinu, que guiava Sagak, aos 64 anos. Em Sagak, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 43, só a crônica guarda. Torya passou a guiar Sagak, mas Lolinut não aceitou e guardou rancor. Raenik implorou pelo filho. Beut morreu, e daquele dia em diante Raenik cuspia no chão quando falavam do Que Apaga o Sol. Bebera, a pacífica, inventou marcas que guardavam palavras.
 
 ### Ano 96
 
-Linil já não cabia no lago. Linik, o curioso, levou dezesseis pessoas para o morro e fundou Selum.
+Na primavera, Beik rezou por Ensara até a voz acabar. Ensara morreu mesmo assim, e Beik nunca mais rezou.
 
-### Ano 97
-
-Na primavera, com Linik à frente, a nova geração de Selum abandonou o medo das tempestades, costume herdado dos avós.
+*O ano 97 foi calmo.*
 
 ### Ano 98
 
-Em Selum nasceu a primeira criança: Ene, filha de Sellina e Linik.
+Na primavera, Bebera, a pacífica, morreu dormindo, aos 52 anos. Zeor também aprendeu a forjar metal. Os de Sagak caíram sobre Viak no morro. Os cestos de Viak ficaram vazios. Caiu Misuor. No verão, Mia juntou cinco pessoas e foi embora pela borda do mundo, atrás de terra melhor. Depois da seca, Vian jurou nunca desperdiçar água.
 
 ### Ano 99
 
-Em Selum, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam.
+Na primavera do ano 99, morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Vian perdeu o saber. Começou a Segunda Guerra da Fome: Sagak, com fome, foi buscar à força a comida de Viak. Viak também trocou as cabanas por casas de pedra. Sagak e Viak, cansados de enterrar os seus, fizeram as pazes no morro. Depois de um ano, três batalhas e quatro mortos, a Segunda Guerra da Fome terminou em paz.
 
 ### Ano 100
 
-Nos anos 91 a 100 houve duas secas e quatro preces que pareceram atendidas; nasceram 71 crianças e morreram quinze pessoas. No fim do ano 100, 132 pessoas viviam no mundo: Sagak (36), Linil (66), Viar (15) e Selum (15).
+Nos anos 91 a 100 houve 27 fomes, quatro batalhas, 33 preces que pareceram atendidas e doze preces sem resposta; nasceram 66 crianças e morreram 101 pessoas. No fim do ano 100, 159 pessoas viviam no mundo: Zeor (75), Sagak (58), Vian (6) e Viak (20).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Sagak** vive na floresta, com 36 pessoas, e planta roças; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Que Apaga o Sol»; costumes: queima os mortos (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 44); guarda tanta comida para o inverno (desde o ano 65); faz a festa da chuva (desde o ano 80); não desperdiça uma gota d'água (desde o ano 88).
-- **Linil** vive no lago, com 66 pessoas, em casas de pedra; nasceu de uma briga em Sagak no ano 72; não reza a ninguém; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 44); guarda tanta comida para o inverno (desde o ano 65).
-- **Viar** vive na praia, com 15 pessoas, e planta roças; nasceu de uma briga em Sagak no ano 93; chama o deus de «o Que Apaga o Sol»; costumes: queima os mortos (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 44); guarda tanta comida para o inverno (desde o ano 65); faz a festa da chuva (desde o ano 80); não desperdiça uma gota d'água (desde o ano 88).
-- **Selum** vive no morro, com 15 pessoas, em casas de pedra; nasceu de uma migração em Linil no ano 96; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 65).
+- **Zeor** vive no lago, com 75 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: treina os jovens com lanças (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 54); queima os mortos (desde o ano 70).
+- **Sagak** vive na floresta, com 58 pessoas, em casas de pedra; nasceu de uma briga em Zeor no ano 23; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 44); queima os mortos (desde o ano 64).
+- **Vian** vive na praia, com 6 pessoas, em casas de pedra; nasceu de uma briga em Sagak no ano 42; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); deixa oferendas no começo de cada estação (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 98).
+- **Viak** vive no morro, com 20 pessoas, em casas de pedra; nasceu de uma migração em Vian no ano 54; chama o deus de «a Mãe de Dois»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 55); não sai de casa em dia de tempestade (desde o ano 78); treina os jovens com lanças (desde o ano 83).
 
-Povos que deixaram de existir: Zeor.
+Lugares com nome: Praia da Vitória (praia, para Vian), Praia do Luto (praia, para Sagak), Lago da Fome (lago, para Zeor), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor), Morro do Raio (morro, para Viak), Morro da Vitória (morro, para Zeor) e Morro do Luto (morro, para Sagak).
 
-Lugares com nome: Lago da Fome (lago, para Zeor), Floresta da Vitória (floresta, para Sagak) e Floresta do Luto (floresta, para Zeor).
-
-Em 100 anos nasceram 295 pessoas e morreram 179.
+Em 100 anos nasceram 587 pessoas e morreram 416.
