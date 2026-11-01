@@ -18,11 +18,13 @@ const VERSAO := 1
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
 const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos",
-	"_rotina_cache", "_rotina_chave", "_visiveis_chave", "_visiveis", "_fichas", "_cenas_chave", "_cenas",
+	"recuperado_de", "_rotina_cache", "_montando", "_tarefa", "_descartes", "_fichas_chave", "_eventos_por_tipo", "_por_tipo_ate", "_rotina_versao", "_consultado", "desempenho", "_visiveis_chave", "_visiveis", "_fichas", "_cenas_chave", "_cenas",
 	"_construcoes_chave", "_construcoes", "_preces_chave", "_preces", "_textos_prece", "_obras_por_grupo"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
 const Estante = preload("estante.gd")
+const Arquivo = preload("arquivo.gd")
+const COPIAS := Arquivo.COPIAS
 
 
 ## Grava o mundo. Devolve true se deu certo. Livros fechados ainda fora da estante vão para ela.
@@ -34,20 +36,7 @@ static func salvar(m, caminho: String = CAMINHO_PADRAO) -> bool:
 			livro["na_estante"] = true
 	var texto := "# Simulador de vida: mundo salvo. Arquivo de texto do Godot (var_to_str).\n"
 	texto += var_to_str(_codificar(_para_dict(m))) + "\n"
-	var tmp := caminho + ".novo"
-	var f := FileAccess.open(tmp, FileAccess.WRITE)
-	if f == null:
-		push_error("Não foi possível gravar " + tmp)
-		return false
-	f.store_string(texto)
-	f.close()
-	# Troca o arquivo só depois de gravar tudo: um corte de energia não estraga o mundo salvo.
-	var dir := DirAccess.open(caminho.get_base_dir())
-	if dir == null:
-		return false
-	if FileAccess.file_exists(caminho):
-		dir.remove(caminho.get_file())
-	return dir.rename(tmp.get_file(), caminho.get_file()) == OK
+	return Arquivo.gravar_com_copias(caminho, texto)
 
 
 ## Abandona o mundo: fecha a crônica da era como livro, guarda na estante e apaga o mundo salvo.
@@ -58,29 +47,69 @@ static func abandonar(m, caminho: String = CAMINHO_PADRAO) -> Dictionary:
 		if not l["na_estante"]:
 			Estante.guardar(l)
 			l["na_estante"] = true
-	if FileAccess.file_exists(caminho):
-		DirAccess.remove_absolute(ProjectSettings.globalize_path(caminho))
+	# O mundo abandonado não volta: vão também as cópias de segurança dele.
+	for c in [caminho] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(caminho, n)):
+		if FileAccess.file_exists(c):
+			DirAccess.remove_absolute(ProjectSettings.globalize_path(c))
 	return livro
 
 
 static func existe(caminho: String = CAMINHO_PADRAO) -> bool:
-	return FileAccess.file_exists(caminho)
+	if FileAccess.file_exists(caminho):
+		return true
+	for n in range(1, COPIAS + 1):
+		if FileAccess.file_exists(Arquivo.copia(caminho, n)):
+			return true
+	return false
 
 
-## Lê um mundo salvo. Devolve null se o arquivo não existe ou não é um mundo.
+## Lê um mundo salvo. Se o arquivo está estragado ou ilegível, tenta as cópias, da mais nova
+## para a mais velha; o mundo que voltou de uma cópia traz `recuperado_de` (o caminho dela).
+## Devolve null se nenhum serve.
 static func carregar(caminho: String = CAMINHO_PADRAO):
+	var m = _ler_mundo(caminho)
+	if m != null:
+		return m
+	for n in range(1, COPIAS + 1):
+		m = _ler_mundo(Arquivo.copia(caminho, n))
+		if m != null:
+			push_warning("Mundo salvo estragado: recuperado de " + Arquivo.copia(caminho, n))
+			m.recuperado_de = Arquivo.copia(caminho, n)
+			return m
+	return null
+
+
+static func _ler_mundo(caminho: String):
 	if not FileAccess.file_exists(caminho):
 		return null
 	var f := FileAccess.open(caminho, FileAccess.READ)
+	if f == null:
+		return null
 	var linhas := f.get_as_text().split("\n", true, 1)
 	f.close()
-	if linhas.size() < 2:
+	if linhas.size() < 2 or not linhas[0].begins_with("# Simulador de vida: mundo salvo."):
 		return null
 	var d = _decodificar(str_to_var(linhas[1]))
-	if typeof(d) != TYPE_DICTIONARY or d.get("versao", 0) != VERSAO:
-		push_error("Arquivo de mundo inválido ou de outra versão: " + caminho)
+	if typeof(d) != TYPE_DICTIONARY or d.get("versao", 0) != VERSAO or not _completo(d):
+		push_warning("Arquivo de mundo inválido ou de outra versão: " + caminho)
 		return null
 	return _de_dict(d)
+
+
+## O dicionário tem tudo o que um mundo salvo precisa (um arquivo cortado ou mexido não tem).
+static func _completo(d: Dictionary) -> bool:
+	for k in ["semente", "mundo", "rng_seed", "rng_state", "pessoas", "grupos", "zonas", "eventos", "cronista"]:
+		if not d.has(k):
+			return false
+	if typeof(d["mundo"]) != TYPE_DICTIONARY or typeof(d["cronista"]) != TYPE_DICTIONARY:
+		return false
+	for k in ["pessoas", "grupos", "eventos"]:
+		if typeof(d[k]) != TYPE_ARRAY:
+			return false
+	for k in CAMPOS_CRONISTA:
+		if not d["cronista"].has(k):
+			return false
+	return true
 
 
 ## Carrega e já avança o tempo que passou desde o salvamento, até o teto de 1 ano.
@@ -91,7 +120,13 @@ static func carregar_e_avancar(caminho: String = CAMINHO_PADRAO, agora: int = -1
 		return null
 	if agora < 0:
 		agora = int(Time.get_unix_time_from_system())
-	return {"mundo": m, "ausencia": m.avancar_ausencia(agora - m.salvo_em)}
+	var aus: Dictionary = m.avancar_ausencia(agora - m.salvo_em)
+	if not m.recuperado_de.is_empty():
+		# O retorno conta que o mundo voltou de uma cópia: o que veio depois dela se perdeu.
+		aus["recuperado_de"] = m.recuperado_de
+		aus["relato"] = ("*O mundo salvo estava estragado. Ele voltou da cópia de segurança de %s, e o que aconteceu " +
+			"depois dela se perdeu.*\n\n") % Time.get_datetime_string_from_unix_time(m.salvo_em, true) + aus["relato"]
+	return {"mundo": m, "ausencia": aus}
 
 
 # ---------------------------------------------------------------- conversão
@@ -209,4 +244,6 @@ static func _de_dict(d: Dictionary):
 		m.eventos.append(e)
 	for k in CAMPOS_CRONISTA:
 		m._cronista.set(k, d["cronista"][k])
+	m.reindexar()
+	m._cronista.aquecer()
 	return m

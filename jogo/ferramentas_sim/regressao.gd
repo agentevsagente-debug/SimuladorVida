@@ -1,13 +1,16 @@
 extends SceneTree
-## Regressão do núcleo, sem gráfico. Roda as sementes 1 a 5 por 100 anos, e a semente 1
-## com o cenário de intervenções; cada mundo roda duas vezes e as crônicas têm de sair
-## iguais. A semente 1 também é salva e carregada no meio e tem de terminar igual.
+## Regressão do núcleo, sem gráfico. Primeiro, o desempenho com a população máxima: nenhum
+## passo acima de 5 ms e nenhuma consulta acima de 2 ms (veja desempenho.gd). Depois, roda
+## as sementes 1 a 5 por 100 anos, e a semente 1 com o cenário de intervenções; cada mundo
+## roda duas vezes e as crônicas têm de sair iguais. A semente 1 também é salva e carregada
+## no meio e tem de terminar igual.
 ## Grava as crônicas em ferramentas_sim/cronicas/. Sai com código 1 se algo falhar.
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/regressao.gd
 
 const Mundo = preload("res://nucleo/mundo.gd")
 const Cenario = preload("res://nucleo/cenario.gd")
 const Persistencia = preload("res://nucleo/persistencia.gd")
+const Desempenho = preload("res://ferramentas_sim/desempenho.gd")
 const ANOS := 100
 
 var falhas := 0
@@ -30,6 +33,16 @@ func rodar(semente: int, cenario: String) -> Array:
 
 
 func _initialize() -> void:
+	# Desempenho: cada janela em processos novos; se passar da meta, mede de novo, com mais
+	# execuções, antes de dar como falha (esta máquina tem picos de outros processos).
+	for janela in Desempenho.JANELAS:
+		var r := Desempenho.medir_em_processos(janela, 3)
+		if not Desempenho.falhas(r).is_empty():
+			r = Desempenho.medir_em_processos(janela, 5)
+		var f := Desempenho.falhas(r)
+		conferir(f.is_empty(), "desempenho: " + Desempenho.texto(r) + ("" if f.is_empty() else "
+        " + "
+        ".join(f)))
 	var casos := [[1, ""], [2, ""], [3, ""], [4, ""], [5, ""],
 		[1, "res://ferramentas_sim/cenarios/semente1-intervencoes.txt"]]
 	for caso in casos:
