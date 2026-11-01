@@ -189,7 +189,7 @@ Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a al�
 |---|---|
 | Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
 | Tempo | `pausa`, `normal`, `rapido`, `rapido2` (três setas, para o ritmo de 50x), `salto` |
-| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar) |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio) |
 
 Os ícones foram desenhados para o fundo escuro da alça.
 
@@ -618,6 +618,31 @@ As folhas abaixo ficam em `acoes/` e seguem o mesmo padrão das outras ações (
 | `porco_do_mato_4q` | 10 × 6 | 4 | anda e fuça na borda da floresta e no mato, de dia; foge de gente |
 | `ave_grande_4q` | 8 × 8 | 4 | anda e bica o chão nos campos e na margem, de dia |
 | `porco_abatido`, `ave_abatida` | 10 × 6, 8 × 8 | 1 | o animal caído, depois da caça |
+
+## 21. Nuvens soltas e céus de chuva (`nuvens/`)
+
+**Nuvens soltas para o céu vivo:** `nuvem_<clima>_<camada>_<p|m|g>.png`.
+- **Climas:** `dia`, `entardecer`, `noite`, `tempestade` e `seca`.
+- **Camadas:** `longe`, `meio` e `perto`.
+- **Tamanhos:**
+
+  | Camada | p | m | g |
+  |---|---|---|---|
+  | longe | 16 × 8 | 24 × 8 | 32 × 8 |
+  | meio | 24 × 8 | 32 × 12 | 48 × 12 |
+  | perto | 32 × 12 | 48 × 16 | 64 × 16 |
+
+- **Desenho:** cada nuvem é feita de vários "puffs", com base reta de pontas arredondadas, luz em cima à esquerda e sombra embaixo.
+- **Fiapos:** traços curtos (2 a 6 px), com vãos sorteados sob a base. Não há linhas pontilhadas nem padrão repetido.
+- **Profundidade:** a nuvem de longe é mais baixa e com menos contraste; a de perto é maior e mais marcada.
+- **Tempestade:** as nuvens soltam riscos curtos de chuva pela base.
+- **Uso:** são estáticas. O motor as move, cada camada numa velocidade, e pode espelhar para variar.
+
+A amostra é `nuvens/amostra_nuvens_4x.png`, com uma linha por clima, sobre a cor do céu dele.
+
+**Céus de chuva**, em `montagem/` (480 × 160, como os de seca e eclipse):
+- `ceu_tempestade.png`: degradê escuro sem sol, coberto por nuvens pesadas. Use enquanto chove forte e no raio.
+- `ceu_diluvio.png`: o mesmo, mais escuro e carregado. Use no dilúvio.
 
 ## Critérios
 
