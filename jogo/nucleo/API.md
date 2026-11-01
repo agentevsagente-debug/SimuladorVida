@@ -150,7 +150,7 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 ```
 
 - `de` e `ate` vão de 0 a 1, a fração da hora;
-- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha` ou `carregar_morto`, ou `remar` indo para o barco);
+- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha`, `carregar_morto`, `carregar_caca`, `brincar` correndo, ou `remar` indo para o barco);
 - se `x0 == x1`, ela fica ali fazendo a `acao`;
 - `detalhe` diz o que exatamente ela faz (ou leva, andando); "" quando não há. A `acao` continua sendo a genérica: quem não usar o `detalhe` vê o mesmo de antes.
 
@@ -179,6 +179,12 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `carregar_morto` | os dois primeiros do cortejo do funeral |
 | `cacar` | na caçada, longe do acampamento, de ponto em ponto |
 | `carregar_caca` | andando de volta da caçada com a caça |
+| `brincar` | crianças brincando, na praia ou perto do fogo; também andando (correndo uma atrás da outra) |
+| `deitar` | descansando deitado à sombra: uma pausa no trabalho, ou o fim de tarde em casa |
+| `tecer` | tecendo cesto, em casa (adultos no fim de tarde, os velhos de dia) |
+| `consertar` | consertando uma ferramenta, em casa |
+| `cozinhar` | preparando o jantar perto do fogo, das 17h30 às 19h |
+| `comer` | jantando perto do fogo (as crianças comem depois dos grandes) |
 
 **Detalhes** (campo `detalhe`, nos trechos da agenda e na ficha):
 
@@ -191,9 +197,10 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `levar_cesto`, `levar_vara`, `levar_machado`, `levar_pote`, `levar_lanca` | `andar` | a ida ao trabalho com a ferramenta: cesto (coleta), vara (pesca), machado (lenha, obra, forja), pote (água), lança (caçada) |
 | `buscar_agua`, `banho` | `parado` | na margem do lago |
 | `guardar` | `parado` | guardando a carga em casa ou no celeiro |
-| `descansar` | `parado`, `conversar` | uma pausa, ou o fim de tarde em casa |
-| `cozinhar`, `comer` | `fogueira` | o jantar, das 17h30 às 19h |
-| `brincar` | `parado` | crianças brincando, na praia ou perto do fogo |
+| `descansar` | `deitar` | a pausa à sombra no meio do trabalho |
+| `cozinhar`, `comer` | `cozinhar`, `comer` | o jantar, das 17h30 às 19h |
+| `brincar` | `brincar` | crianças brincando, na praia ou perto do fogo |
+| `ninar` | `cuidar` | depois do jantar, quem tem filho pequeno nina em casa |
 | `vigia` | `fogueira`, `parado` | o vigia da noite: sentado no fogo, ou de pé na beira do acampamento |
 | `olhar_ceu` | `conversar` | um casal olhando o céu à noite |
 | `reza_noturna` | `rezar` | quem reza tarde da noite |
@@ -204,7 +211,7 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 
 **O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos de manhã para a caçada no morro (ou na mata alta, para quem mora no morro) e voltam entre 16h e 17h. Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
 
-**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham e os outros conversam e comem perto do fogo. Até as 21h30 ou 22h30 fica-se na fogueira, com conversas e crianças correndo. Dorme-se das 21h30 às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
+**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham (`cozinhar`) e os outros conversam e comem (`comer`); as crianças brincam na praia até 17h50 e comem depois dos grandes. Depois do jantar, uns ninam os pequenos, tecem ou consertam em casa, e o resto fica na fogueira, com conversas e crianças correndo. Dorme-se das 21h às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
 
 **Lugares sem fila.** Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não muda: os lugares ficam a 7 px uns dos outros, alternando os lados da fogueira e a pelo menos 6 px do centro dela, por ordem de chegada ao mundo. É ali que ela fica na `fogueira` da noite e nas conversas em volta do fogo. Quem não cabe na faixa do povo vai direto para casa à noite (`dormir`). Em casa, cada um dorme num ponto próprio ao longo da largura da moradia. Em povos grandes, a coleta se espalha pela faixa de trabalho inteira. Ninguém fica na água (x < 126), a não ser remando; quem pesca fica na margem, de 126 a 136.
 
@@ -496,7 +503,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
-| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação e gente em 3 das 4 zonas; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `estilos.gd` | Simula 4 deuses (benevolente, cruel, ausente, caprichoso) por 100 anos, em 3 sementes, e compara fé, nomes do deus, costumes, dependência, guerras santas, secularizações e população. Tabela, trechos de crônica e leitura em `estilos/`. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
@@ -545,3 +553,12 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   - Tudo tem cópia, porque a estante é insubstituível. Cada livro é gravado também como `<id>.1.md`, e `ler` usa a cópia se o arquivo sumiu ou está vazio. O índice guarda as 3 versões anteriores (`indice.1.txt` a `indice.3.txt`); se ele estiver estragado, valem as cópias, e se todas estiverem, o índice é refeito a partir dos livros (com o título da primeira linha).
   - `Persistencia.salvar(mundo)` leva para a estante os livros que ainda não estão lá.
 - **Abandonar o mundo:** `Persistencia.abandonar(mundo) -> livro` fecha a crônica da era atual como livro (mesmo com o povo vivo), guarda o livro na estante e apaga o mundo salvo. Depois, a apresentação começa outro mundo com `Mundo.new(semente)`, e a estante continua lá.
+
+## Como o povo reage ao estilo do deus
+
+O custo de intervir é a interpretação: o mesmo povo sai diferente conforme o deus que tem. Veja `ferramentas_sim/estilos/`.
+- **O acaso convence menos que o deus:** uma prece que se cumpre sozinha sobe a fé em 0,08, contra 0,15 de um milagre de verdade. Ela também alivia menos o silêncio e não conta para a dependência: só um deus que responde de verdade cria povos dependentes e, depois, exigentes.
+- **Um deus que nunca aparece é esquecido:** depois de 15 anos sem nenhum gesto do deus (qualquer poder que o povo sinta), a fé de quem não é devoto esfria 3% ao ano. O povo pode se secularizar a partir do estágio 3.
+- **Um deus que mata é aplacado:** um raio do deus que mata alguém, lido como castigo, cria o costume das oferendas.
+- **A terra tem limite:** acima de 320 pessoas no mundo, nascem cada vez menos crianças (`Mundo.LOTACAO`).
+- `grupo.ultimo_divino`: o dia do último gesto do deus que o povo sentiu (-1: nunca).

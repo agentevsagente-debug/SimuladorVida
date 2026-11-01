@@ -1,8 +1,11 @@
 extends SceneTree
 ## Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações (dias 4, 14, 24 e 34
 ## do primeiro ano). Metas:
-## - de dia (7h às 17h), nunca mais de 40% das pessoas na mesma ação visível (o `detalhe`,
-##   quando há, senão a `acao`);
+## - de dia (7h às 17h), nunca mais de 40% das pessoas na mesma ação, como a tela mostra: a
+##   `acao`, salvo em `colher` e nas caminhadas (`andar`, `lenha`), em que o `detalhe` é o que
+##   se vê (arbusto, raiz, lenha; cesto, vara, machado). `parado` é parado, com ou sem detalhe;
+## - no fim de tarde e à noite (17h às 21h), nunca mais de 75% na mesma ação: sempre alguns
+##   fazendo outra coisa (cozinhar, ninar, tecer, buscar lenha);
 ## - de dia, gente em pelo menos 3 das 4 zonas (lago, praia, floresta, morro), pelo lugar de
 ##   cada um no meio da hora;
 ## - à noite (22h às 5h), pelo menos 1 pessoa acordada;
@@ -54,9 +57,9 @@ func _horas(semente: int, dia: int) -> Array:
 		var xmin := 999.0
 		var xmax := -1.0
 		for p in ps:
-			var vis: String = p.get("detalhe", "")
-			if vis.is_empty():
-				vis = p["acao"]
+			var vis: String = p["acao"]
+			if vis in ["colher", "andar", "lenha"] and not p.get("detalhe", "").is_empty():
+				vis = p["detalhe"]
 			acoes[vis] = acoes.get(vis, 0) + 1
 			# Onde a pessoa está no meio da hora.
 			var xm: float = p["x"]
@@ -85,6 +88,8 @@ func _horas(semente: int, dia: int) -> Array:
 		var dia_claro := h >= 7 and h <= 17
 		if dia_claro and topn > 0.4 * ps.size():
 			problemas.append("%d%% em %s" % [100 * topn / ps.size(), top])
+		if h >= 17 and h <= 21 and topn > 0.75 * ps.size():
+			problemas.append("%d%% em %s à noitinha" % [100 * topn / ps.size(), top])
 		if dia_claro and zonas.size() < 3:
 			problemas.append("só %d zonas (%s)" % [zonas.size(), ", ".join(zonas.keys())])
 		if (h >= 22 or h <= 4) and acordados == 0:

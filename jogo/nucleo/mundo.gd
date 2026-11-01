@@ -883,8 +883,14 @@ func _comecar_doenca(g: Grupo) -> void:
 
 # ---------------------------------------------------------------- vida
 
+## Acima disto, a terra não dá para todos: nascem cada vez menos crianças. Nos mundos sem
+## deus quase nunca se chega aqui; um deus que dá comida sempre levaria a população longe.
+const LOTACAO := 320
+
+
 func _vida_do_dia() -> void:
 	var a := ano()
+	var lotacao := clampf(1.0 - float(populacao() - LOTACAO) / 150.0, 0.05, 1.0)
 	for g in grupos_vivos():
 		var bem_alimentado = g.fome_dias == 0
 		for p in _membros(g):
@@ -899,7 +905,7 @@ func _vida_do_dia() -> void:
 					if marido.vivo and marido.grupo == p.grupo:
 						var c := 1.0 / 55.0 if bem_alimentado else 1.0 / 220.0
 						# Com pouca comida guardada, nascem menos crianças.
-						c *= clampf(g.estoque / (g.membros.size() * 3.0), 0.2, 1.0)
+						c *= clampf(g.estoque / (g.membros.size() * 3.0), 0.2, 1.0) * lotacao
 						if chance(c):
 							p.gravidez = 12
 
@@ -1810,12 +1816,19 @@ func _fe_e_poder_do_ano() -> void:
 			for p in _membros(g):
 				if not p.tem("devoto"):
 					p.fe *= 0.95
+		# Um deus que nunca aparece vai sendo esquecido: depois de 15 anos sem nenhum gesto
+		# dele, a fé de quem não é devoto esfria um pouco a cada ano.
+		var esquecido: bool = g.ultimo_divino < 0 or dia_abs() - g.ultimo_divino > 15 * DIAS_ANO
+		if esquecido and a - g.origem.get("ano", 1) > 15:
+			for p in _membros(g):
+				if not p.tem("devoto"):
+					p.fe *= 0.97
 		var fe_media := 0.0
 		for p in _membros(g):
 			fe_media += p.fe
 		fe_media /= g.membros.size()
 		if g.tem_crenca and not g.ceticos:
-			if g.estagio >= 5 and fe_media < 0.45 and chance(0.04):
+			if (g.estagio >= 5 or (g.estagio >= 3 and esquecido)) and fe_media < 0.45 and chance(0.04):
 				g.ceticos = true
 				g.preces.clear()
 				registrar("secularizacao", "social", 8, g.zona, g.id, [], {"deus": g.nome_deus})
@@ -2441,6 +2454,8 @@ const NOMES_DEUS := {
 func _impressionar(g: Grupo, peso: float, natureza: String, e: Evento, benigno: bool) -> void:
 	if g.extinto:
 		return
+	if e != null and e.causa == "divina":
+		g.ultimo_divino = dia_abs()
 	for p in _membros(g):
 		var d := 0.05 * peso
 		if p.tem("devoto"):
@@ -2546,6 +2561,9 @@ func _reagir_raio(g: Grupo, vitima: Pessoa, e: Evento, divino: bool) -> void:
 	_impressionar(g, 3.0 if divino else 2.0, "raio", e, false)
 	if g.tem_crenca and leitura == "castigo":
 		_nova_crenca(g, "castiga", e, {"vitima": vitima.id})
+		# Um deus que mata pede para ser aplacado.
+		if divino and not g.tem_costume("oferendas"):
+			_novo_costume(g, "oferendas", e)
 	if leitura == "martir" and g.tem_crenca:
 		_nova_crenca(g, "martir", e, {"vitima": vitima.id})
 	if not g.tem_costume("tabu_tempestade"):
@@ -2674,14 +2692,17 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 	var pr: Dictionary = g.preces[nec]
 	g.preces.erase(nec)
 	var autor: Pessoa = pessoas[pr["autor"]]
+	var falso := resposta.causa != "divina"
+	# O acaso convence menos que o deus: a fé sobe menos, o silêncio pesa mais, e só um deus
+	# que responde de verdade cria dependência.
 	for p in _membros(g):
-		p.fe = clampf(p.fe + (0.15 if not p.tem("desconfiado") else 0.03), -1.0, 1.0)
+		p.fe = clampf(p.fe + (0.03 if p.tem("desconfiado") else (0.08 if falso else 0.15)), -1.0, 1.0)
 	autor.fe = clampf(autor.fe + 0.2, -1.0, 1.0)
 	autor.feitos += 1
-	g.silencios = maxi(0, g.silencios - 2)
+	g.silencios = maxi(0, g.silencios - 1) if falso else 0
 	ultimo_milagre[g.id] = dia_abs()
-	g.atendidas_seguidas += 1
-	var falso := resposta.causa != "divina"
+	if not falso:
+		g.atendidas_seguidas += 1
 	registrar("prece_atendida", "social", 6, g.zona, g.id, [autor.id], {"necessidade": nec,
 		"prece": pr["evento"], "resposta": resposta.id, "falso_milagre": falso})
 	if not g.tem_crenca_chave("ouve_preces"):
