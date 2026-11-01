@@ -29,7 +29,23 @@ import cacada  # noqa: E402
 import forte  # noqa: E402
 import pesca  # noqa: E402
 
-FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS, **pesca.FOLHAS}
+sys.path.insert(0, str(PECAS / "habitantes"))
+import habitantes as hb  # noqa: E402
+
+# As folhas de sempre dos habitantes (andar, parado, rezar, colher, sentado; criança e idoso),
+# com o mesmo nome: são as que ficam mais tempo na tela (auditoria 7). As `adulto_eN_*` dos
+# estágios continuam como amostra da roupa.
+HABITANTES = {
+    "adulto_a_parado_2q": lambda: hb.parado(hb.CABECA_A, hb.TRONCO_A, hb.PERNAS),
+    "adulto_a_andar_4q": lambda: hb.andando(hb.CABECA_A, hb.TRONCO_A, hb.PERNAS),
+    "adulto_b_parado_2q": lambda: hb.parado(hb.CABECA_B, hb.TRONCO_B, hb.PERNAS_B),
+    "adulto_b_andar_4q": lambda: hb.andando(hb.CABECA_B, hb.TRONCO_B, hb.PERNAS_B),
+    "crianca_andar_4q": lambda: hb.CRIANCA, "idoso_andar_4q": lambda: hb.IDOSO,
+    "adulto_a_rezar_2q": lambda: hb.REZAR, "adulto_a_colher_4q": lambda: hb.COLHER,
+    "adulto_a_sentado_1q": lambda: hb.SENTADO,
+}
+
+FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS, **pesca.FOLHAS, **HABITANTES}
 
 
 def pontos(g, chars):

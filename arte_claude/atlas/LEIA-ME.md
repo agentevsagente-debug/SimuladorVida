@@ -24,14 +24,14 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 | `estagio1_inverno` | 128x64 | 7 | 32 KB |
 | `estagio2` | 256x128 | 33 | 128 KB |
 | `estagio2_inverno` | 256x128 | 33 | 128 KB |
-| `estagio3` | 256x256 | 42 | 256 KB |
-| `estagio3_inverno` | 256x256 | 42 | 256 KB |
-| `estagio4` | 256x256 | 53 | 256 KB |
-| `estagio4_inverno` | 256x256 | 53 | 256 KB |
-| `estagio5` | 256x256 | 47 | 256 KB |
-| `estagio5_inverno` | 256x256 | 47 | 256 KB |
-| `estagio6` | 256x256 | 64 | 256 KB |
-| `estagio6_inverno` | 256x256 | 64 | 256 KB |
+| `estagio3` | 256x256 | 51 | 256 KB |
+| `estagio3_inverno` | 256x256 | 51 | 256 KB |
+| `estagio4` | 256x256 | 62 | 256 KB |
+| `estagio4_inverno` | 256x256 | 62 | 256 KB |
+| `estagio5` | 256x256 | 66 | 256 KB |
+| `estagio5_inverno` | 256x256 | 66 | 256 KB |
+| `estagio6` | 256x256 | 73 | 256 KB |
+| `estagio6_inverno` | 256x256 | 73 | 256 KB |
 
 **Total, com todos carregados: 5,19 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 2,2 a 2,5 MB (o inverno soma o `pessoas_inverno`).
 

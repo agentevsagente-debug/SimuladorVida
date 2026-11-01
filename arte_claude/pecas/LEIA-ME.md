@@ -357,6 +357,8 @@ Cada pasta tem uma `amostra_estagioN_4x.png`.
 |---|---|---|
 | `tabuletas_4v` | 8 × 8 | 4 variações: tabuleta de barro, rolo, estela pequena e pilha de tabuletas |
 | `estela` | 8 × 16 | pedra escrita |
+| `casa_caiada` (`_parede`, `_telhado_<cultura>`, `_luz`) | 32 × 32 | **a casa do estágio 5** (auditoria 7): paredes caiadas, cunhais de pedra, rodapé ocre, o friso escrito da biblioteca sob o telhado, porta em arco e janelas com postigos. Mesmo encaixe da `casa_enxaimel` (parede da linha 13 à 31). Antes, o estágio 5 usava a casa do 4 e não se distinguia dele. |
+| `casa_caiada_ruina` | 32 × 32 | a ruína dela; com o mato em `natureza/` |
 | `biblioteca` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | o arquivo: pórtico de colunas, friso escrito e estantes com tabuletas e rolos |
 | `templo_escrita` (`_parede`) | 32 × 32 | o templo de colunas com friso escrito; usa os telhados e símbolos de `estagio4/templo_colunas_*` |
 | `biblioteca_ruina`, `templo_escrita_ruina` | | a ruína do arquivo tem tabuletas espalhadas |
@@ -601,7 +603,7 @@ O `estacoes/amostra_construcoes_inverno_4x.png` mostra as construções nevadas.
 | `estagio6/roda_dagua_4q` (16 × 16, gira 11,25° por quadro e respinga) | igual ao verão | igual ao verão | parada e congelada: os 4 quadros são iguais, com gelo e pingentes |
 
 **Noite nas construções** (`luzes/luzes.py`):
-- `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
+- `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel`, `estagio5/casa_caiada` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
 - `luzes/chamine.png` (4 × 8): a chaminé de pedra.
 - `luzes/chamines.json`: para cada casa e cada um dos 3 telhados, onde vai a chaminé e de onde sai a fumaça, em coordenadas relativas ao canto da casa.
 - `luzes/fumaca_chamine_4q.png` (8 × 16): 3 baforadas cinzas, com o lado de cima claro, que nascem com 1 px na boca da chaminé (a última linha), crescem até 3 px, derivam para a direita e se desfazem em pedaços no alto. Os 4 quadros fecham o ciclo; deixe em loop, presa à chaminé. Use só no inverno, nas casas com lareira.
@@ -751,7 +753,8 @@ As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente 
 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 
-- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 21 folhas são as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **As folhas de sempre dos habitantes** (auditoria 7): `adulto_a_parado_2q`, `adulto_a_andar_4q`, `adulto_b_parado_2q`, `adulto_b_andar_4q`, `crianca_andar_4q`, `idoso_andar_4q`, `adulto_a_rezar_2q`, `adulto_a_colher_4q` e `adulto_a_sentado_1q` também têm a roupa do estágio, com o mesmo nome em `estagioN/`. São as que ficam mais tempo na tela: sem elas, um povo do estágio 6 andava e ficava parado com a roupa do estágio 1, e só as ações de 1x mostravam o chapéu. As `adulto_eN_*` continuam como amostra.
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 30 folhas são as 9 folhas de sempre dos habitantes (acima), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
 - **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
 - **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
 - **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).

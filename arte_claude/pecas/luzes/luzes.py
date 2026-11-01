@@ -24,7 +24,7 @@ from comum import PALETA, cena, folha_quadros, gravar, para_imagem  # noqa: E402
 
 INDICE = {rgb: i for i, rgb in enumerate(PALETA)}
 CASAS = [("estagio2", "casa_taipa"), ("estagio3", "casa_pedra"), ("estagio4", "casa_enxaimel"),
-         ("estagio6", "casa_tijolo")]
+         ("estagio5", "casa_caiada"), ("estagio6", "casa_tijolo")]
 TELHADOS = ("palha", "telha", "tabuas")
 
 
