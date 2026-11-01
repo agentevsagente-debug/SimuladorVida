@@ -1,0 +1,52 @@
+﻿[
+    {
+        "cenario":  "QA-098-ausencia",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-129-extincao",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-036-carga-raio",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-036-carga-fogo",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-145-estante",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-151-discreto",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-151-normal",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-162-escala4",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-018-salto",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
+        "cenario":  "QA-180-batalha",
+        "codigo":  "0",
+        "captura":  false
+    }
+]

@@ -1,0 +1,82 @@
+﻿[
+    {
+        "abertura":  1,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  2,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  3,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  4,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  5,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  6,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  7,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  8,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  9,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  10,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    }
+]
