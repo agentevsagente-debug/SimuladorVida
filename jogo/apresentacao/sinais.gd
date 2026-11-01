@@ -17,6 +17,10 @@ const FOLHAS := {
 	"os_ultimos": ["os_ultimos_4q", 24],
 }
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
+## Fome e prece do mesmo povo no mesmo dia: um sinal só (arte, seção 8).
+const FOME_PRECE := ["fome_prece_4q", 16]
+var marcas: Array = []  # {folha, largura, quadros, fps, ini, dura, id, x, base, espelho}: profeta e separação
+var _relogio := 0.0
 
 var sinais: Array = []  # [{folha, largura, x, base, prece}]
 var baloes: Array = []  # [{x, base, variacao, espelho}] balões de fala sobre a cabeça
@@ -66,7 +70,11 @@ func atualizar(sim: Node, vista: Node2D, relogio: float, figuras: Array) -> void
 			var f: Dictionary = cabecas[p["autor"]]
 			x = f.x + f.largura / 2.0
 			base = f.base - (8 if f.folha.contains("crianca") else 12) - 1
-		novos.append({"folha": FOLHAS[nivel][0], "largura": FOLHAS[nivel][1], "x": roundi(x), "base": base,
+		var folha: Array = FOLHAS[nivel]
+		if p["necessidade"] == "fome" and int(p["dias"]) == 0:  # a fome começou hoje: fome e prece num sinal só
+			folha = FOME_PRECE
+			base -= 1
+		novos.append({"folha": folha[0], "largura": folha[1], "x": roundi(x), "base": base,
 			"prece": p, "nivel": nivel})
 	if _os_ultimos(sim) and not sim.construcoes.is_empty():
 		var x: float = sim.construcoes[0]["x"]
@@ -78,10 +86,12 @@ func atualizar(sim: Node, vista: Node2D, relogio: float, figuras: Array) -> void
 			if absi(novos[i].x - novos[j].x) < 6 and absi(novos[i].base - novos[j].base) < 8:
 				novos[i].x = novos[j].x + 8
 	sinais = novos
+	_relogio = relogio
+	_atualizar_marcas(sim, cabecas, relogio)
 	_quadro = int(relogio * 4.0) % 4
 	_baloes(figuras, relogio)
 	_bichos_da_madrugada(sim, vista, relogio)
-	var assinatura := [_quadro, baloes.hash(), bichos.hash()]
+	var assinatura := [_quadro, baloes.hash(), bichos.hash(), marcas.size(), int(relogio * 4.0)]
 	for s in sinais:
 		assinatura.append([s.folha, s.x, s.base])
 	for b in baloes:
@@ -198,6 +208,31 @@ func sinal_em(p: Vector2) -> Dictionary:
 	return {}
 
 
+## Uma marca do profeta ou da separação (arte, seção 8): `id` segue a cabeça de
+## alguém; senão, fica em x/base. `desde`: começa depois de tantos segundos.
+func marcar(folha: String, largura: int, quadros: int, fps: float, dura: float, id := -1, x := 0.0, base := 0,
+		espelho := false, desde := 0.0) -> void:
+	marcas.append({"folha": folha, "largura": largura, "quadros": quadros, "fps": fps, "ini": _relogio + desde,
+		"dura": dura, "id": id, "x": x, "base": base, "espelho": espelho})
+
+
+func _atualizar_marcas(sim: Node, cabecas: Dictionary, relogio: float) -> void:
+	var vivas := []
+	for m in marcas:
+		if relogio - float(m.ini) > float(m.dura):
+			continue
+		if int(m.id) >= 0:
+			var p = sim.mundo.pessoa(int(m.id))
+			if p == null or not p.vivo:
+				continue  # a marca do profeta dura enquanto ele vive
+			if cabecas.has(int(m.id)):
+				var f: Dictionary = cabecas[int(m.id)]
+				m.x = f.x + f.largura / 2.0
+				m.base = f.base - (8 if f.folha.contains("crianca") else 12) - 1
+		vivas.append(m)
+	marcas = vivas
+
+
 func _textura(folha: String) -> Texture2D:
 	if not _texturas.has(folha):
 		_texturas[folha] = Arte.textura("sinais/%s.png" % folha)
@@ -230,3 +265,18 @@ func _draw() -> void:
 		var w: int = s.largura
 		var h := tex.get_height()
 		draw_texture_rect_region(tex, Rect2(s.x - w / 2, s.base - h + 1, w, h), Rect2(_quadro * w, 0, w, h))
+	for m in marcas:
+		var t := _relogio - float(m.ini)
+		if t < 0.0:
+			continue
+		var tex_m := _textura(m.folha)
+		var wm: int = m.largura
+		var hm := tex_m.get_height()
+		var q := int(t * float(m.fps)) % int(m.quadros)
+		var rm := Rect2(roundi(m.x) - wm / 2, int(m.base) - hm + 1, wm, hm)
+		if m.espelho:
+			draw_set_transform(Vector2(rm.position.x + wm, rm.position.y), 0.0, Vector2(-1, 1))
+			draw_texture_rect_region(tex_m, Rect2(0, 0, wm, hm), Rect2(q * wm, 0, wm, hm))
+			draw_set_transform(Vector2.ZERO)
+		else:
+			draw_texture_rect_region(tex_m, rm, Rect2(q * wm, 0, wm, hm))
