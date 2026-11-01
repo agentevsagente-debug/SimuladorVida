@@ -1,4 +1,5 @@
-"""Efeitos dos 5 poderes da fase 2: seca, dilúvio, terremoto, presságio (cometa e eclipse) e cura.
+"""Efeitos dos 5 poderes da fase 2: seca, dilúvio, terremoto, presságio (cometa e eclipse) e cura,
+mais o fogo brando (o fogo em intensidade baixa, que acende a fogueira e aquece sem queimar).
 
 Mesmas regras de `efeitos.py`: `_Nq` são quadros, `_Nv` variações, sumiço por pontilhado.
 Os céus de seca e de eclipse são camadas de 480x160, como os céus de `montagem/`.
@@ -351,6 +352,99 @@ def cura_brilho():
     return out
 
 
+# ---------------------------------------------------------------- fogo brando
+
+def fogo_brando_descer():
+    """O fogo em intensidade baixa (o deus atende a prece de frio): uma coluna de luz morna que
+    desce do céu sobre a fogueira (16x32), sem chama. As bordas são pontilhadas em âmbar, e
+    fagulhas douradas descem em espiral com um rastro curto acima. A base (linha 31) é o
+    centro da fogueira, onde a coluna se abre num brilho baixo."""
+    quadros = []
+    for k in range(4):
+        q = novo(16, 32)
+        rng = random.Random(611 + k)
+        for y in range(29):
+            meia = 1.5 + y / 28 * 3
+            for x in range(16):
+                d = abs(x - 7.5)
+                if d <= meia - 0.6 and rng.random() < 0.05:
+                    put(q, x, y, 22)
+                elif abs(d - meia) < 0.6 and (y + k) % 3 == 0:
+                    put(q, x, y, 21)
+        for i in range(6):                       # fagulhas descendo em espiral
+            a = i * 1.1 + k * 0.6
+            y = (i * 5 + k * 3) % 28
+            x = round(7.5 + math.cos(a) * (1.5 + y / 10))
+            put(q, x, y, 31)
+            put(q, x, y - 1, 22)
+            if i % 2:
+                put(q, x, y - 2, 21)
+        # o brilho baixo na base, que pulsa
+        larg = (3, 4, 5, 4)[k]
+        for x in range(8 - larg, 8 + larg):
+            if (x + k) % 2 == 0:
+                put(q, x, 31, 22)
+            if abs(x - 7.5) < larg - 1.5:
+                put(q, x, 30, 21 if (x + k) % 3 else 22)
+        put(q, 7, 29, 31)
+        put(q, 8, 29, 22)
+        quadros.append(q)
+    return quadros
+
+
+def fogo_brando_acender():
+    """O instante em que a luz chega à fogueira (16x8): um ponto dourado, um anel de fagulhas,
+    as fagulhas subindo e sumindo. A base (linha 7) é a base da fogueira. Depois, a fogueira
+    acesa de sempre e o `calor_brando_4q`."""
+    formas = [
+        [(7, 6, 31), (8, 6, 22), (7, 5, 22)],
+        [(7, 6, 31), (8, 6, 31), (4, 6, 22), (11, 6, 22), (5, 4, 21), (10, 4, 21), (7, 3, 22), (8, 4, 22)],
+        [(3, 5, 21), (12, 5, 21), (4, 2, 22), (11, 2, 22), (6, 1, 31), (9, 1, 31), (7, 3, 21), (8, 6, 22)],
+        [(2, 3, 21), (13, 3, 21), (5, 0, 22), (10, 0, 21), (8, 2, 21)],
+    ]
+    out = []
+    for f in formas:
+        q = novo(16, 8)
+        for x, y, c in f:
+            put(q, x, y, c)
+        out.append(q)
+    return out
+
+
+def calor_brando():
+    """O calor em volta da fogueira acesa pelo deus (32x16), enquanto ela queima: tracinhos
+    ondulados mornos subindo dos dois lados (o meio, onde fica a fogueira, fica livre), uma
+    fagulha clara de vez em quando e, no chão, um halo pontilhado que pulsa. É luz: não passa
+    pela tabela da noite. A base (linha 15) é o chão da fogueira, com o centro na coluna 16."""
+    rng = random.Random(612)
+    tracos = []
+    while len(tracos) < 9:
+        x0 = rng.randrange(1, 30)
+        if 12 <= x0 <= 18:                       # o meio fica para a fogueira
+            continue
+        tracos.append((x0, rng.randrange(14), rng.randint(2, 3)))
+    quadros = []
+    for k in range(4):
+        q = novo(32, 16)
+        for x0, y0, comp in tracos:
+            y = (y0 - k * 3) % 14
+            for i in range(comp):
+                x = x0 + i
+                yy = y + (1 if (x + k) % 4 < 2 else 0)
+                put(q, x, yy, 21 if yy > 8 else 22)
+        for i, (x, y) in enumerate(((5, 11), (26, 9), (9, 4), (23, 3))):
+            if (i + k) % 4 == 0:
+                put(q, x, (y - k) % 14, 31)
+        larg = (10, 12, 13, 12)[k]               # o halo no chão, que pulsa
+        for x in range(16 - larg, 16 + larg):
+            if (x + k) % 3 == 0 and not 13 <= x <= 18:
+                put(q, x, 15, 21)
+            if (x + k) % 5 == 0 and abs(x - 16) < larg - 3 and not 12 <= x <= 19:
+                put(q, x, 14, 22)
+        quadros.append(q)
+    return quadros
+
+
 def gerar():
     return {
         "seca_rachaduras_4q": seca_rachaduras(),
@@ -367,6 +461,9 @@ def gerar():
         "eclipse_4q": eclipse(),
         "cura_luz_4q": cura_luz(),
         "cura_brilho_4q": cura_brilho(),
+        "fogo_brando_descer_4q": fogo_brando_descer(),
+        "fogo_brando_acender_4q": fogo_brando_acender(),
+        "calor_brando_4q": calor_brando(),
     }
 
 
