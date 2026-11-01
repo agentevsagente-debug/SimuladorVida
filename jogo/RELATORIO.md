@@ -17,6 +17,17 @@ Capturas:
 
 O **D4** (a dica da cabana à noite) espera o dado da A.
 
+**Pássaro pousado:** troquei pelo `passaro_pousado_forte_2q` (5 × 3), da arte nova da C.
+
+**Memória depois da arte nova:** medi 10 min em 1x, pelo editor. O resultado não substituiu a medição final no repositório.
+
+| | CPU | Gerenciador, média | Gerenciador, máximo |
+|---|---|---|---|
+| Agora | 0,185% | 127,8 MB | 128,5 MB |
+| Medição final | 0,192% | 122,7 MB | 124,6 MB |
+
+A diferença de cerca de 5 MB vem das 53 peças novas e da dica. O jogo não carrega os atlas, então o atlas de 1024 × 512 não pesa.
+
 ## O executável (builds/Simulador de vida.exe)
 
 **Exportação:** fiz com `--export-release "Windows"` a partir desta branch, que é a main com as entregas da B. O executável tem 105 MB.
