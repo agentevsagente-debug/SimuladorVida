@@ -218,13 +218,13 @@ Faltou chuva outra vez, a primeira desde o ano 52: 20 dias de céu limpo. A forj
 
 ### Ano 74
 
-Torena, que guiava Teil, morreu de velhice aos 56 anos. Desde a morte de Ibena, nunca mais tinha rezado. Teil deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
+Na primavera do ano 74, Torena, que guiava Teil, morreu de velhice aos 56 anos. Nunca perdoou o deus pela morte de Ibena. Teil deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
 
 *Os anos 75 a 76 passaram em paz.*
 
 ### Ano 77
 
-Na primavera do ano 77, Ibim, o engenhoso, morreu dormindo, aos 74 anos. Tinha sido o primeiro a plantar. Em Teil, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 16, só a crônica guarda. Enim, o devoto, cansou de dividir pouca comida. Partiu com quinze pessoas para a praia e ali fundou Zean. Nasceu Suna, a primeira de Zean.
+Ibim, o engenhoso, morreu dormindo, aos 74 anos. Tinha sido o primeiro a plantar. Em Teil, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 16, só a crônica guarda. Enim, o devoto, cansou de dividir pouca comida. Partiu com quinze pessoas para a praia e ali fundou Zean. Nasceu Suna, a primeira de Zean.
 
 ### Ano 78
 
@@ -244,7 +244,7 @@ Em Toror, já ninguém lembrava por que os mortos eram queimados, e não enterra
 
 ### Ano 82
 
-Nao, o devoto, inventou marcas que guardavam palavras. No inverno, Enya, que falava pelo Que Apaga o Sol em Demur, morreu ao dar à luz.
+Nao, o devoto, inventou marcas que guardavam palavras. Enya, que falava pelo Que Apaga o Sol em Demur, morreu ao dar à luz.
 
 ### Ano 83
 
@@ -296,7 +296,7 @@ Morreu Ulya, filha pequena de Tedemena.
 
 ### Ano 95
 
-Na primavera, Enim, que fundou Zean e o guiava, morreu de velhice aos 60 anos. Houve luta na praia: Demur atacou Zean. Zean foi derrotado e perdeu o que tinha guardado. Caíram Kitera e Demim. Foi a primeira vez que gente matou gente no mundo. Para Demur, a praia virou Praia da Vitória. Zean não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois da luta, Demur e Zean se encontraram na praia e juraram paz.
+Na primavera do ano 95, Enim, que fundou Zean e o guiava, morreu de velhice aos 60 anos. Houve luta na praia: Demur atacou Zean. Zean foi derrotado e perdeu o que tinha guardado. Caíram Kitera e Demim. Foi a primeira vez que gente matou gente no mundo. Para Demur, a praia virou Praia da Vitória. Zean não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois da luta, Demur e Zean se encontraram na praia e juraram paz.
 
 *Os anos 96 a 97 passaram em paz.*
 

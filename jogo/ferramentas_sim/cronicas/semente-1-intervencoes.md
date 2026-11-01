@@ -54,13 +54,13 @@ Na primavera do ano 13, morreu Zeloya, filha pequena de Bera.
 
 ### Ano 14
 
-Loenu, fundadora de Zeor, morreu dormindo, aos 60 anos.
+Na primavera do ano 14, Loenu, fundadora de Zeor, morreu dormindo, aos 60 anos.
 
 *No ano 15, nada de notável aconteceu.*
 
 ### Ano 16
 
-Linim, que fundou Linon e o guiava, morreu de repente, aos 40 anos. Linon passou a ser guiado por Bera.
+Na primavera do ano 16, Linim, que fundou Linon e o guiava, morreu de repente, aos 40 anos. Linon passou a ser guiado por Bera.
 
 ### Ano 17
 
@@ -122,7 +122,7 @@ Um raio caiu no lago durante a tempestade e matou Bebem. Em Linon, disseram que 
 
 ### Ano 35
 
-Na primavera do ano 35, morreu Mik, que guiava Linon, aos 59 anos. Foi quem descobriu que semente vira planta. Com a morte de Mik, Linon perdeu o segredo das sementes: ninguém mais sabia plantar. Linon escolheu Lisela para guiar o grupo. Loliem queria o lugar e nunca perdoou.
+Na primavera, morreu Mik, que guiava Linon, aos 59 anos. Foi quem descobriu que semente vira planta. Com a morte de Mik, Linon perdeu o segredo das sementes: ninguém mais sabia plantar. Linon escolheu Lisela para guiar o grupo. Loliem queria o lugar e nunca perdoou.
 
 ### Ano 36
 
@@ -188,7 +188,7 @@ Na primavera, Ena, de Selum, casou-se com Lim e foi viver em Linon. Foi o primei
 
 ### Ano 55
 
-Na primavera, Loliem, que fundou Selum e o guiava, morreu de repente, aos 41 anos.
+Loliem, que fundou Selum e o guiava, morreu de repente, aos 41 anos.
 
 ### Ano 56
 
@@ -230,7 +230,7 @@ Houve fome em Selum no inverno: 3 dias de barriga vazia, sem mortes.
 
 ### Ano 70
 
-Na primavera do ano 70, Torzera, que guiava Selum, morreu de velhice aos 50 anos. Tinha levado o saber de plantar para Linon. Morreu o último que tinha visto o ano 28. Em Selum, se deixavam oferendas no começo de cada estação, mas ninguém sabia mais dizer por quê. Nos anos 61 a 70 houve três fomes e sete preces que pareceram atendidas; nasceram 21 crianças e morreram oito pessoas. No fim do ano 70, 37 pessoas viviam no mundo: Zeor (9), Linon (13) e Selum (15).
+Na primavera, Torzera, que guiava Selum, morreu de velhice aos 50 anos. Tinha levado o saber de plantar para Linon. Morreu o último que tinha visto o ano 28. Em Selum, se deixavam oferendas no começo de cada estação, mas ninguém sabia mais dizer por quê. Nos anos 61 a 70 houve três fomes e sete preces que pareceram atendidas; nasceram 21 crianças e morreram oito pessoas. No fim do ano 70, 37 pessoas viviam no mundo: Zeor (9), Linon (13) e Selum (15).
 
 *O ano 71 foi calmo.*
 
@@ -262,7 +262,7 @@ Nos anos 71 a 80 houve duas secas, três fomes e nove preces que pareceram atend
 
 ### Ano 83
 
-Zezeu, que falava pelo Generoso em Selum, morreu de repente, aos 41 anos.
+Na primavera, Zezeu, que falava pelo Generoso em Selum, morreu de repente, aos 41 anos.
 
 ### Ano 84
 
@@ -274,7 +274,7 @@ A fome ensinou: desde então, Selum estoca comida e não come tudo o que colhe. 
 
 ### Ano 86
 
-Na primavera do ano 86, em Selum, os jovens deixaram de lado as oferendas. Era coisa dos velhos, diziam. Selum atacou Linon no lago. Os cestos de Linon ficaram vazios. Foi a primeira briga entre povos. A terra se ergueu no lago: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma. Os dois povos passaram a chamar o lugar de Lago da Pedra Erguida. Depois disso, Linon deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Ergue».
+Na primavera do ano 86, em Selum, os jovens deixaram de lado as oferendas. Era coisa dos velhos, diziam. Selum atacou Linon no lago. Os cestos de Linon ficaram vazios. Foi a primeira briga entre povos. A terra se ergueu no lago: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma. Desde então, os de Zeor chamam o lugar de Lago da Pedra Erguida; os de Selum, de Lago da Pedra Erguida de Selum. Depois disso, Linon deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Que Ergue».
 
 ### Ano 87
 
@@ -298,11 +298,11 @@ No verão do ano 91, a Guerra da Fome esfriou sem acordo nem vencedor: cinco ano
 
 ### Ano 92
 
-Mivira, a engenhosa, morreu de repente, aos 40 anos. O saber de Zeor chegou a Linon: Enmik aprendeu a cortar e empilhar pedra.
+Na primavera, Mivira, a engenhosa, morreu de repente, aos 40 anos. O saber de Zeor chegou a Linon: Enmik aprendeu a cortar e empilhar pedra.
 
 ### Ano 93
 
-Haraik, que falava pela Voz do Céu em Selum, morreu de velhice aos 55 anos. Foi quem proibiu, em nome do deus, o trato com Zeor. As casas de pedra chegaram a Linon, e com elas um templo. Loem tinha rezado: «Manda água, Que Queima, que as crianças têm sede.» Quando a chuva voltou, Zeor agradeceu ao Que Queima. Zeor passou a festejar todo ano o dia da volta da chuva, em honra do Que Queima.
+Na primavera do ano 93, Haraik, que falava pela Voz do Céu em Selum, morreu de velhice aos 55 anos. Foi quem proibiu, em nome do deus, o trato com Zeor. As casas de pedra chegaram a Linon, e com elas um templo. Loem tinha rezado: «Manda água, Que Queima, que as crianças têm sede.» Quando a chuva voltou, Zeor agradeceu ao Que Queima. Zeor passou a festejar todo ano o dia da volta da chuva, em honra do Que Queima.
 
 ### Ano 94
 
@@ -310,11 +310,11 @@ Na primavera do ano 94, ninguém lembrava mais a razão, e Zeor abandonou o medo
 
 ### Ano 95
 
-Na primavera, morreu Selem, que guiava Selum, aos 57 anos. Selum escolheu Selya para guiar o grupo. Kikia queria o lugar e nunca perdoou.
+Morreu Selem, que guiava Selum, aos 57 anos. Selum escolheu Selya para guiar o grupo. Kikia queria o lugar e nunca perdoou.
 
 ### Ano 96
 
-Milina, que guiava Zeor, morreu de velhice aos 54 anos. Enmik, que guiava Linon, morreu dormindo, aos 65 anos. No outono, Saim, o rancoroso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Depois de Zeor, foi Selum que ergueu paredes de pedra. Em Selum, quem passou a decidir foi o templo: os sacerdotes falavam pela Voz do Céu, e o deus decidia tudo.
+Na primavera do ano 96, Milina, que guiava Zeor, morreu de velhice aos 54 anos. Enmik, que guiava Linon, morreu dormindo, aos 65 anos. No outono, Saim, o rancoroso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Depois de Zeor, foi Selum que ergueu paredes de pedra. Em Selum, quem passou a decidir foi o templo: os sacerdotes falavam pela Voz do Céu, e o deus decidia tudo.
 
 *Entre os anos 97 e 98, nada mudou o rumo do mundo.*
 
@@ -347,7 +347,7 @@ Em Linon, foi Linlinya quem aprendeu a tirar metal da pedra. Nos anos 91 a 100 h
 - **Linon** vive no lago, com 34 pessoas, em casas de pedra; nasceu de uma migração em Zeor no ano 8; chama o deus de «o Olho Escuro»; costumes: deixa oferendas no começo de cada estação (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida).
 - **Selum** vive na praia, com 40 pessoas, em casas de pedra; nasceu de uma briga em Linon no ano 48; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 53); queima os mortos (desde o ano 56); guarda tanta comida para o inverno (desde o ano 85); não sai de casa em dia de tempestade (desde o ano 87).
 
-Lugares com nome: Praia da Fartura (praia, para Selum), Lago do Raio (lago, para Linon), Lago da Pedra Erguida (lago, para Zeor), Lago da Pedra Erguida (lago, para Selum), Floresta da Chuva (floresta, para Zeor) e Floresta da Vitória (floresta, para Selum).
+Lugares com nome: Praia da Fartura (praia, para Selum), Lago do Raio (lago, para Linon), Lago da Pedra Erguida (lago, para Zeor), Lago da Pedra Erguida de Selum (lago, para Selum), Floresta da Chuva (floresta, para Zeor) e Floresta da Vitória (floresta, para Selum).
 
 Em 100 anos nasceram 211 pessoas e morreram 141.
 

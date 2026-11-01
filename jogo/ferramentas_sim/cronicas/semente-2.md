@@ -112,7 +112,7 @@ Em Esar, Demya pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva volt
 
 ### Ano 38
 
-Na primavera do ano 38, Demya, que guiava Esar, morreu de velhice aos 66 anos. Nunca perdoou o deus pela morte de Esel.
+Demya, que guiava Esar, morreu de velhice aos 66 anos. Desde a morte de Esel, nunca mais tinha rezado.
 
 *O ano 39 passou sem nada que a crônica precise guardar.*
 
@@ -188,7 +188,7 @@ Gaaria tinha rezado: «Que Sacode, que a chuva volte.» Quando a chuva voltou, E
 
 ### Ano 66
 
-Na primavera, morreu Gaaria, que guiava Esar, aos 50 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
+Morreu Gaaria, que guiava Esar, aos 50 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
 
 *Entre os anos 67 e 68, nada mudou o rumo do mundo.*
 

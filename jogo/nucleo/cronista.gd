@@ -58,6 +58,9 @@ var _nomes_grupos_ate: int = 0
 
 func _init(mundo) -> void:
 	_wm = weakref(mundo)
+	# Uma semente fixa: um RandomNumberGenerator novo nasce com semente ao acaso, e um uso antes de
+	# ressemear daria frases diferentes a cada carga do mesmo mundo (QA D-06).
+	rt.seed = 0x5EED
 
 
 # ---------------------------------------------------------------- termos
@@ -403,6 +406,11 @@ func ano_em_curso() -> String:
 ## como contado, para que a crônica oficial desse ano saia inteira quando ele terminar.
 func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int, dias: int = 0) -> String:
 	var partes: PackedStringArray = []
+	# O relato não muda a crônica oficial (nem a memória das frases repetidas, `_recentes`, nem o
+	# sorteio das frases), e o sorteio dele depende só do período (QA D-06).
+	var recentes_antes: Dictionary = _recentes.duplicate(true)
+	var rt_antes := rt.state
+	rt.seed = _misturar(m.semente * 6151 + ev_ini)
 	for a in range(ano_ini, ano_fim + 1):
 		if a <= ultimo_ano_escrito:
 			var t := texto_do_ano(a)
@@ -426,6 +434,8 @@ func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int, dias: 
 	var normal := _dia_a_dia(ev_ini, ev_fim, dias)
 	if not normal.is_empty():
 		partes.append(normal)
+	_recentes = recentes_antes
+	rt.state = rt_antes
 	return "\n\n".join(partes)
 
 
@@ -1556,6 +1566,9 @@ func _feito_de(pid: int, ate: int) -> String:
 	var melhor_nota := -1
 	var matou := 0
 	var v := {"p": _p(pid)}
+	# As frases do feito dependem só da pessoa e do momento, não do que se sorteou antes (o mundo
+	# carregado e o que nunca parou escrevem o mesmo; QA D-06).
+	rt.seed = _misturar(m.semente * 3571 + pid * 7 + ate)
 	_indexar_ate(ate)
 	for i in _por_pessoa.get(pid, []):
 		if i >= ate:

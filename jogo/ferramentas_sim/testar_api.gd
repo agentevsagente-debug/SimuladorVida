@@ -100,6 +100,7 @@ func _initialize() -> void:
 	print("consulta completa: %.2f ms (%d pessoas)" % [(Time.get_ticks_usec() - t) / 100000.0, m.populacao()])
 	_batalha_no_meio_do_dia()
 	_mira_dos_poderes()
+	_qa_pequenos()
 	print("%d falhas" % falhas)
 	quit()
 
@@ -162,3 +163,39 @@ func _batalha_no_meio_do_dia() -> void:
 		if c["tipo"] == "guerra" and c["participantes"].size() >= 4 and is_equal_approx(c["ini"], 8.5) and is_equal_approx(c["fim"], 13.0):
 			viu = true
 	conferir(viu, "o ataque às 8h vira a cena de guerra das 8h30 às 13h, já na mesma hora")
+
+
+## D-11, D-12 e D-13 do QA.
+func _qa_pequenos() -> void:
+	# D-11: todo gesto do deus é nota ou chamado, nunca ambiente (a chuva sem seca, a cura em quem está são).
+	for poder in Mundo.PODERES:
+		var m := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
+		var r: Dictionary = m.usar_poder(poder, 260.0, 0.6)
+		if r.get("ok", false) and r.get("evento", -1) >= 0:
+			var d: Dictionary = m.eventos_desde(r["evento"])[0]
+			conferir(d["camada"] != "ambiente", "D-11: o gesto %s (0,6) é %s, com importância %d" % [poder, d["camada"], d["importancia"]])
+	# D-12: dois povos vivos não dão o mesmo nome ao mesmo lugar (semente 3, ano 120).
+	var w := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
+	while w.ano() < 120:
+		w.avancar_dias(Mundo.DIAS_ANO)
+	var repetidos: Array = []
+	var nomes := 0
+	for z in w.zonas.values():
+		var vistos := {}
+		for gid in z.nomes:
+			var g = w.grupo(int(gid))
+			if g == null or g.extinto:
+				continue
+			nomes += 1
+			var n: String = z.nomes[gid]["nome"]
+			if vistos.has(n):
+				repetidos.append("%s: %s" % [z.chave, n])
+			vistos[n] = true
+	print("D-12: %d nomes de povos vivos, repetidos %s" % [nomes, repetidos])
+	conferir(nomes > 0 and repetidos.is_empty(), "D-12: cada povo vivo dá o seu nome ao lugar: %s" % [repetidos])
+	# D-13: exatamente um ano fora conta como teto atingido.
+	var a := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
+	var aus: Dictionary = a.avancar_ausencia(Mundo.TETO_AUSENCIA * Mundo.SEGUNDOS_POR_PASSO)
+	conferir(aus["passos"] == Mundo.TETO_AUSENCIA and aus["teto_atingido"], "D-13: um ano exato fora: %d passos, teto %s" % [aus["passos"], aus["teto_atingido"]])
+	var b := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
+	conferir(not b.avancar_ausencia((Mundo.TETO_AUSENCIA - 1) * Mundo.SEGUNDOS_POR_PASSO)["teto_atingido"], "D-13: uma hora a menos que o ano não é o teto")

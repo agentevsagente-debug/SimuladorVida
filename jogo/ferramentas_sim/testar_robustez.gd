@@ -71,6 +71,9 @@ func _initialize() -> void:
 	f3.store_string(s.substr(0, s.find(Persistencia.SOMA)) + s.substr(s.find("\n")))
 	f3.close()
 	_conferir_carga(caminho, "salvo antes da soma", false)
+	# D-05 do QA: os 4 arquivos de uma versão mais nova (ou estragados): carregar() devolve null,
+	# mas o mais novo fica guardado à parte e sobrevive a 4 salvamentos de um mundo novo.
+	_ilegiveis(caminho, bons)
 	# O relógio.
 	_relogio(caminho, bons)
 	# O disco cheio.
@@ -155,7 +158,7 @@ func _restaurar(bons: Dictionary) -> void:
 
 
 func _limpar(caminho: String) -> void:
-	for c in [caminho, caminho + ".novo", Persistencia.caminho_antigos(caminho)] + range(1, Arquivo.COPIAS + 1).map(func(k): return Arquivo.copia(caminho, k)):
+	for c in [caminho, caminho + ".novo", Persistencia.caminho_antigos(caminho)] + range(1, Arquivo.COPIAS + 1).map(func(k): return Arquivo.copia(caminho, k)) 			+ range(1, 40).map(func(k): return Persistencia.caminho_ilegivel(caminho, k)):
 		if FileAccess.file_exists(c):
 			DirAccess.remove_absolute(ProjectSettings.globalize_path(c))
 
@@ -196,3 +199,30 @@ func _outra_versao(t: PackedByteArray) -> PackedByteArray:
 	if k >= 0:
 		linhas[0] = linhas[0].substr(0, k) + Persistencia.SOMA + linhas[1].md5_text()
 	return (linhas[0] + "\n" + linhas[1]).to_utf8_buffer()
+
+
+func _ilegiveis(caminho: String, bons: Dictionary) -> void:
+	_limpar(caminho)
+	for c in bons:
+		var f := FileAccess.open(c, FileAccess.WRITE)
+		f.store_buffer(_outra_versao(bons[c]))
+		f.close()
+	var m = Persistencia.carregar(caminho)
+	var guardado: String = Persistencia.ultimo_ilegivel
+	conferir(m == null and guardado == Persistencia.caminho_ilegivel(caminho), "ilegíveis: carregar devia dar null e guardar o principal (%s)" % guardado)
+	var novo := Mundo.new(77, [], Mundo.HORA_INICIAL, true)
+	for d in 4:
+		Persistencia.salvar(novo, caminho)
+		novo.avancar_dias(1)
+	conferir(FileAccess.file_exists(guardado) and FileAccess.get_file_as_string(guardado).contains("[\"versao\", 99"),
+		"ilegíveis: o mundo de versão mais nova sobrevive a 4 salvamentos, em %s" % guardado)
+	# Outro principal ilegível, com o primeiro ainda guardado: não sobrescreve, vira .ilegivel.2.
+	var f2 := FileAccess.open(caminho, FileAccess.WRITE)
+	f2.store_string("lixo")
+	f2.close()
+	var m2 = Persistencia.carregar(caminho)
+	conferir(m2 != null and Persistencia.ultimo_ilegivel == Persistencia.caminho_ilegivel(caminho, 2) and FileAccess.file_exists(guardado),
+		"ilegíveis: o segundo vai para .ilegivel.2, e o primeiro fica (%s)" % Persistencia.ultimo_ilegivel)
+	print("  ilegíveis: o principal guardado em %s, e sobreviveu a 4 salvamentos" % guardado.get_file())
+	_limpar(caminho)
+	_restaurar(bons)

@@ -56,7 +56,7 @@ A seca voltou, como no ano 1: 19 dias sem chuva, até que o céu se abriu. O dia
 
 ### Ano 18
 
-Na primavera, Ruteor, o medroso, morreu de repente, aos 42 anos.
+Na primavera do ano 18, Ruteor, o medroso, morreu de repente, aos 42 anos.
 
 *O ano 19 foi calmo.*
 
@@ -224,7 +224,7 @@ Na primavera, Taruim rezou por Marlo até a voz acabar. Marlo morreu mesmo assim
 
 ### Ano 67
 
-Morreu Naem, que guiava Taur, aos 69 anos. Foi quem descobriu que semente vira planta. Em Zear, Teha começou a pregar que o deus não era «o Que Risca o Céu». Era «o Senhor das Lanças». Em poucos anos, todos rezavam assim. No outono, Teha, a medrosa, deu à luz e não sobreviveu ao parto.
+Morreu Naem, que guiava Taur, aos 69 anos. Tinha sido o primeiro a plantar. Em Zear, Teha começou a pregar que o deus não era «o Que Risca o Céu». Era «o Senhor das Lanças». Em poucos anos, todos rezavam assim. No outono, Teha, a medrosa, deu à luz e não sobreviveu ao parto.
 
 ### Ano 68
 
@@ -236,7 +236,7 @@ Isloa, de Daon, foi viver em Marak com Loim: o primeiro casamento entre os dois 
 
 ### Ano 70
 
-Marsaim, que falava pelo Que Levanta em Marak, morreu dormindo, aos 64 anos. Nos anos 61 a 70 houve duas fomes, duas batalhas, nove preces que pareceram atendidas e quatro preces sem resposta; nasceram 61 crianças e morreram dezoito pessoas. No fim do ano 70, 104 pessoas viviam no mundo: Taur (12), Marak (33), Daon (30) e Zear (29).
+Na primavera, Marsaim, que falava pelo Que Levanta em Marak, morreu dormindo, aos 64 anos. Nos anos 61 a 70 houve duas fomes, duas batalhas, nove preces que pareceram atendidas e quatro preces sem resposta; nasceram 61 crianças e morreram dezoito pessoas. No fim do ano 70, 104 pessoas viviam no mundo: Taur (12), Marak (33), Daon (30) e Zear (29).
 
 ### Ano 71
 
@@ -248,7 +248,7 @@ No outono do ano 72, Daor, o corajoso, aprendeu a cortar a pedra em blocos e a e
 
 ### Ano 73
 
-Morreu Daor, o corajoso, aos 46 anos. Maril, a devota, morreu de velhice aos 50 anos. Tinha sido a primeira a plantar.
+Na primavera, morreu Daor, o corajoso, aos 46 anos. Maril, a devota, morreu de velhice aos 50 anos. Tinha sido a primeira a plantar.
 
 ### Ano 74
 
@@ -298,7 +298,7 @@ Na primavera, Kitena morreu com 3 anos, de uma febre que ninguém entendeu. De n
 
 ### Ano 87
 
-Loa, que falava pela Voz dos Sonhos em Kiak, morreu ao dar à luz. Em Kiak, quem vinha de fora era recebido com comida e lugar perto do fogo.
+Na primavera do ano 87, Loa, que falava pela Voz dos Sonhos em Kiak, morreu ao dar à luz. Em Kiak, quem vinha de fora era recebido com comida e lugar perto do fogo.
 
 ## Capítulo III: As casas de pedra (anos 88 a 100)
 
@@ -310,13 +310,13 @@ Na primavera, morreu Da, que falava pela Voz dos Sonhos em Marak, aos 47 anos. E
 
 ### Ano 90
 
-Peor, que falava pelo Sedento em Taur, morreu de repente, aos 41 anos. Nos anos 81 a 90 houve quatro secas e treze preces que pareceram atendidas; nasceram 63 crianças e morreram onze pessoas. No fim do ano 90, 117 pessoas viviam no mundo: Taur (25), Marak (70) e Kiak (22).
+Na primavera, Peor, que falava pelo Sedento em Taur, morreu de repente, aos 41 anos. Nos anos 81 a 90 houve quatro secas e treze preces que pareceram atendidas; nasceram 63 crianças e morreram onze pessoas. No fim do ano 90, 117 pessoas viviam no mundo: Taur (25), Marak (70) e Kiak (22).
 
 *Os anos 91 a 92 passaram em paz.*
 
 ### Ano 93
 
-Na primavera do ano 93, morreu Loan, que guiava Marak, aos 68 anos. Temaro implorou pela filha. Ruloil morreu, e daquele dia em diante Temaro cuspia no chão quando falavam da Voz dos Sonhos. Uma tosse que não passava matou treze pessoas em Marak. Depois da febre, Marak passou a queimar os seus mortos, para que a doença não voltasse. No inverno, Kiak também trocou as cabanas por casas de pedra.
+Morreu Loan, que guiava Marak, aos 68 anos. Temaro implorou pela filha. Ruloil morreu, e daquele dia em diante Temaro cuspia no chão quando falavam da Voz dos Sonhos. Uma tosse que não passava matou treze pessoas em Marak. Depois da febre, Marak passou a queimar os seus mortos, para que a doença não voltasse. No inverno, Kiak também trocou as cabanas por casas de pedra.
 
 ### Ano 94
 
@@ -324,7 +324,7 @@ No verão do ano 94, Marak passou a receber bem os de fora: um casamento com out
 
 ### Ano 95
 
-Na primavera do ano 95, Isloa, que falava pela Voz dos Sonhos em Kiak, morreu de velhice aos 45 anos. Em Kiak, os jovens deixaram de lado o medo das tempestades. Era coisa dos velhos, diziam.
+Isloa, que falava pela Voz dos Sonhos em Kiak, morreu de velhice aos 45 anos. Em Kiak, os jovens deixaram de lado o medo das tempestades. Era coisa dos velhos, diziam.
 
 ### Ano 96
 

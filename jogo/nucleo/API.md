@@ -294,7 +294,7 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `nascimento` | no dia do nascimento, das 8h às 12h | a mãe `cuidar` em casa, visitas conversando em volta | `mae`, `crianca` |
 | `casamento`, `festa` | à noite, das 19h às 21h; a festa é no aniversário da chuva, em povos com esse costume | dança em volta do fogo | |
 | `migracao` | no dia de uma separação ou mudança, a partir das 6h30 | fila de gente com carga, da aldeia antiga até a nova | `de`, `para` |
-| `guerra` | no dia de um ataque, das 7h30 às 12h (o ataque da virada do dia). Um ataque registrado depois das 6h (forçado no meio do dia) vira a cena na mesma hora: a primeira consulta depois dele (ou o fim do passo) refaz a rotina na linha principal, sem esperar a thread (uma vez por ataque, 100 a 250 ms). A cena começa meia hora depois do ataque e dura 4h30 (luta de hora + 2h a hora + 3h30); depois das 18h, não há cena no dia | marcha, as duas linhas frente a frente com `lutar` (1h30), e a volta | `outro_grupo`, `x_combate`, `mortos` |
+| `guerra` | no dia de um ataque, das 7h30 às 12h (o ataque da virada do dia). Um ataque registrado depois das 6h (forçado no meio do dia) vira a cena na mesma hora: a primeira consulta depois dele (ou o fim do passo) refaz a rotina na linha principal, sem esperar a thread (uma montagem inteira: perto de 1 s num mundo velho de 270 pessoas; só num ataque forçado no meio do dia, porque os ataques do jogo vêm na virada do dia). A cena começa meia hora depois do ataque e dura 4h30 (luta de hora + 2h a hora + 3h30); depois das 18h, não há cena no dia | marcha, as duas linhas frente a frente com `lutar` (1h30), e a volta | `outro_grupo`, `x_combate`, `mortos` |
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
@@ -432,7 +432,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `secularizacao` | um povo que escreve deixa de rezar: os sábios explicam a chuva e o raio | chamado |
 | `renascimento` | um povo que tinha deixado de rezar volta a crer, diante de algo inegável | chamado |
 
-`camada(evento)` aplica a regra: importância ≥ 8 ou tipo de chamado → "chamado"; importância ≥ 4 → "nota"; o resto → "ambiente".
+`camada(evento)` aplica a regra: importância ≥ 8 ou tipo de chamado → "chamado"; importância ≥ 4 → "nota"; o evento de um gesto do deus (causa "divina", com `grau`) → pelo menos "nota", mesmo a chuva sem seca e a cura em quem está são (QA D-11); o resto → "ambiente".
 
 ### `preces_abertas() -> Array[Dictionary]`
 
@@ -526,6 +526,10 @@ A crônica é escrita **ano a ano**, quando cada ano termina. Um ano escrito nã
 
 O ano em andamento ainda não está na crônica. Para mostrar o que acabou de acontecer, a apresentação usa os eventos de camada "nota" e "chamado".
 
+**O mesmo mundo, a mesma crônica** (QA D-06). O sorteio das frases do cronista tem semente fixa ao nascer e é ressemeado por evento e por pessoa: um mundo carregado escreve a mesma crônica que o mundo que nunca parou, a cada carga. O relato da ausência não muda a crônica oficial (nem a memória das frases repetidas).
+
+**Os nomes dos lugares** (QA D-12): cada povo vivo dá ao lugar o seu nome. Se outro povo vivo já chama o lugar assim (duas vitórias no mesmo lago, ou a trégua dos dois), o nome diz de quem é: "Lago da Vitória de Peak".
+
 **Repetição.** Quando um evento tem mais de uma frase possível, a crônica evita a que já usou nos últimos 25 anos (se todas foram usadas, fica a mais antiga). Essa memória é gravada com o mundo. Só a escrita oficial de cada ano a usa e muda: as notas ao vivo (`curto`) e o relato da ausência não mexem nela.
 
 ## Determinismo
@@ -577,6 +581,7 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`), 
 - `carregar_e_avancar()` conta isso no retorno: `ausencia.recuperado_de`, e o `relato` começa com "*O mundo salvo estava estragado. Ele voltou da cópia de segurança de <data>, e o que aconteceu depois dela se perdeu.*" Quando veio do `.novo`, nada se perdeu: `recuperado_de` vem preenchido, mas o relato não traz o aviso.
 - **O relógio do sistema:** a ausência é `agora - salvo_em`, entre 0 e o teto de 1 ano. Relógio para trás (até 1970) dá ausência 0; relógio pulando anos (até 2106) dá o teto. O núcleo não sabe distinguir o relógio errado do tempo de verdade: se o jogador salva com o relógio atrasado e depois o acerta, a próxima ausência conta o salto, até o teto.
 - `existe()` também vale quando só há cópias.
+- **O mundo salvo que não se lê não se perde** (QA D-05). Se o `mundo.txt` existe e não se lê (estragado ou de uma versão mais nova), `carregar()` o move para `mundo.ilegivel.txt` (ou `mundo.ilegivel.2.txt`, ..., sem sobrescrever) antes de tentar as cópias: a rotação dos salvamentos seguintes nunca passa por cima dele. `Persistencia.ultimo_ilegivel` diz onde ele ficou na última chamada de `carregar()` ("" se não houve), e `carregar_e_avancar()` o põe em `ausencia.ilegivel`. Se nada se lê, `carregar()` devolve null, mas o arquivo fica guardado: a apresentação avisa o jogador ("O mundo salvo não pôde ser aberto; ficou guardado em mundo.ilegivel.txt") e começa outro. `Persistencia.caminho_ilegivel(caminho, n)` dá o nome.
 - `abandonar()` apaga o mundo e as cópias dele, e o arquivo dos antigos com as cópias dele.
 
 **Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. Com 284 anos (o mundo grande da regressão, 10 mil eventos), o arquivo tem 3 MB; `salvar_async` custa menos de 1 ms na linha principal (e ~370 ms na thread), `salvar` ~360 ms e `carregar` ~420 ms. Com 1000 anos, graças ao arquivo dos antigos, o `mundo.txt` tem 4,5 a 5,3 MB (e o arquivo dos antigos, uns 6 MB), `carregar` leva 360 a 390 ms, `salvar_async` 1 a 3 ms na linha principal (e ~0,6 s na thread), e o mundo carregado ocupa 82 a 88 MB (veja `ferramentas_sim/resistencia/LEIAME.md`). O documento técnico pede salvar a cada dia de jogo e ao fechar: durante o jogo, use `salvar_async`. Isso é decisão da apresentação; o núcleo só salva quando chamado.
@@ -594,7 +599,7 @@ O retorno:
 | Campo | O que é |
 |---|---|
 | `passos` | quantas horas de jogo passaram |
-| `teto_atingido` | bool: a ausência passou de um ano, e o mundo esperou no teto |
+| `teto_atingido` | bool: a ausência chegou a um ano (exatamente um ano já conta, QA D-13), e o mundo esperou no teto |
 | `de`, `ate` | `tempo()` antes e depois |
 | `relato` | a crônica do período, em markdown (veja abaixo) |
 | `chamados` | os eventos de camada "chamado" que aconteceram no período, no formato de `eventos_desde()`. Inclui `os_ultimos` e `fim_do_mundo`, se a extinção aconteceu durante a ausência. |
