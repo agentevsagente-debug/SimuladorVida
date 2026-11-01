@@ -65,18 +65,33 @@ class Cena:
                             or (x + 0.5 - centro_fogo) * (meio - centro_fogo) <= 0 else 0
 
 
-def montar(hora):
-    pasta_e1, pasta_hab = PECAS / "estagio1", PECAS / "habitantes"
-    e = {f.stem: ler(f) for f in pasta_e1.glob("*.png")}
+def ler_pasta(pasta, estacao=None, filtro=lambda f: True):
+    """Peças de uma pasta; na estação pedida, as variações de `estacoes/` substituem as de verão."""
+    out = {f.stem: ler(f) for f in (PECAS / pasta).glob("*.png") if filtro(f)}
+    if estacao:
+        for f in (PECAS / "estacoes" / estacao / pasta).glob("*.png"):
+            if f.stem in out:
+                out[f.stem] = ler(f)
+    return out
+
+
+def camada_fundo(nome, hora, estacao):
+    sazonal = PECAS / "estacoes" / (estacao or "-") / "montagem" / f"{nome}_{hora}.png"
+    return ler(sazonal if sazonal.exists() else AQUI / f"{nome}_{hora}.png")
+
+
+def montar(hora, estacao=None):
+    pasta_hab = PECAS / "habitantes"
+    e = ler_pasta("estagio1", estacao)
     hab = {f.stem: ler(f) for f in pasta_hab.glob("*_*q.png")}
     c = Cena()
     # 1. céu e fundo (camadas do motor)
     c.camada(ler(AQUI / f"ceu_{hora}.png"))
     for nome in ("montanhas_longe", "montanhas_perto", "mata_distante"):
-        c.camada(ler(AQUI / f"{nome}_{hora}.png"))
+        c.camada(camada_fundo(nome, hora, estacao))
     # 2. terreno em blocos
-    blocos = {f.stem: ler(f) for f in (PECAS / "terreno").glob("*.png")
-              if f.stem not in ("terreno_teste", "blocos_prancha", "agua_superficie_4q")}
+    blocos = ler_pasta("terreno", estacao, lambda f: f.stem not in ("terreno_teste", "blocos_prancha",
+                                                                    "agua_superficie_4q"))
     folha_agua = ler(PECAS / "terreno" / "agua_superficie_4q.png")
     quadros = [quadro(folha_agua, i, 8) for i in range(4)]
     lay = json.loads((AQUI / "layout.json").read_text(encoding="utf-8"))
@@ -86,6 +101,15 @@ def montar(hora):
             if px[y][x] is not None:
                 c.p[y][x], c.tag[y][x] = px[y][x], tags[y][x]
     c.camada(ler(AQUI / f"reflexo_{hora}.png"), tag=REFLEXO, so_onde=AGUA)
+    if estacao == "inverno":
+        # lago congelado na borda: as 3 colunas de água mais perto da praia viram gelo
+        gelo = ler(PECAS / "estacoes" / "inverno" / "terreno" / "gelo_superficie.png")
+        agua_cols = [cx for cx in range(0, W, 8) if c.tag[122][cx + 4] in (AGUA, REFLEXO)]
+        for cx in agua_cols[-3:]:
+            for j in range(8):
+                for i in range(8):
+                    if gelo[j][i] is not None:
+                        c.p[120 + j][cx + i], c.tag[120 + j][cx + i] = gelo[j][i], AGUA
 
     # 3. peças, na ordem e nas posições de layout.json
     centro = lay["fogueira"]["x"] + 8

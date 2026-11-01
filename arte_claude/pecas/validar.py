@@ -56,6 +56,8 @@ for f in sorted(AQUI.rglob("*.png")):
             erros.append(f"{rel}: quadro de habitante {qw}x{h} fora do padrão")
         if not pessoa and (qw % 8 or h % 8):
             erros.append(f"{rel}: tamanho {qw}x{h} não é múltiplo de 8")
+    if pasta == "acoes" and not f.stem.startswith("amostra") and (w != 8 * nq or h != 12):
+        erros.append(f"{rel}: ação deve ter quadros de 8x12")
     if pasta == "cenas" and not f.stem.startswith("amostra") and (w, h) != (480, 160):
         erros.append(f"{rel}: cena deve ter 480x160")
     if pasta in ("estagio1", "memoria", "culturas") and not f.stem.startswith("amostra") and (w % (8 * nq) or h % 8):
