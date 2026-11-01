@@ -186,7 +186,28 @@ Os ícones foram desenhados para o fundo escuro da alça.
   - todos os acentos do português: á à â ã é ê í ó ô õ ú ü, as maiúsculas acentuadas correspondentes, ç e Ç;
   - pontuação: `. , : ; ! ? - — ' " ( ) « » / % + = … º ª`.
 
-## 7. Camadas do motor (`montagem/`)
+## 7. Estágio 2, agricultura (`estagio2/`)
+
+A base de cada peça, o ponto que toca o chão, fica na última linha, como no estágio 1. `amostra_estagio2_4x.png` mostra as peças sobre o chão da cena.
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `roca_arada`, `roca_broto`, `roca_crescida`, `roca_madura` | 16 × 16 | as 4 fases da roça. Os sulcos ficam nas 4 últimas linhas, e as plantas se repetem a cada 4 px, então uma roça larga é a mesma peça repetida lado a lado. A peça vai sobre a grama, com a base na superfície. |
+| `roca_seca` | 16 × 16 | talos secos tombados e solo rachado |
+| `casa_taipa` | 24 × 24 | casa de taipa com telhado de palha (peça montada) |
+| `casa_taipa_parede`, `casa_taipa_telhado` | 24 × 24 | a mesma casa em duas camadas, para as culturas trocarem parede e telhado. Desenhe a parede primeiro e o telhado por cima. |
+| `celeiro` | 24 × 24 | celeiro sobre esteios, com escada |
+| `cerca` | 8 × 8 | trecho que se repete na horizontal: um poste e dois trilhos |
+| `cerca_poste` | 8 × 8 | poste solto, para fechar a ponta direita da cerca |
+| `altar` | 16 × 16 | laje de pedra com oferendas e duas chamas |
+| `templo` | 32 × 32 | primeiro templo pequeno: pedra, colunas de madeira, palha e o símbolo no alto (peça montada) |
+| `templo_parede`, `templo_telhado`, `templo_simbolo` | 32 × 32 | o templo em 3 camadas, desenhadas nesta ordem. O símbolo (o sol) é a parte que cada cultura troca. |
+| `adulto_enxada_andar_4q` | quadro de 12 × 12 | 4 quadros, andando com a enxada no ombro |
+| `adulto_enxada_trabalhar_4q` | quadro de 12 × 12 | 4 quadros: ergue, golpeia, crava e puxa a terra |
+
+**As folhas com enxada têm quadros de 12 × 12.** O corpo ocupa as colunas 0 a 7, igual aos outros habitantes, e a enxada usa as colunas 8 a 11. O motor alinha pelo canto esquerdo e pela base, como faz com o habitante de 8 × 12. As cores-base e as trocas de pele, cabelo e roupa são as mesmas de `habitantes/trocas.json`.
+
+## 8. Camadas do motor (`montagem/`)
 
 | Arquivo | O que é |
 |---|---|
