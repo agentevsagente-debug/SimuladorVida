@@ -150,7 +150,7 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 ```
 
 - `de` e `ate` vão de 0 a 1, a fração da hora;
-- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha` ou `carregar_morto`, ou `remar` indo para o barco);
+- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha`, `carregar_morto`, `carregar_caca`, `brincar` correndo, ou `remar` indo para o barco);
 - se `x0 == x1`, ela fica ali fazendo a `acao`;
 - `detalhe` diz o que exatamente ela faz (ou leva, andando); "" quando não há. A `acao` continua sendo a genérica: quem não usar o `detalhe` vê o mesmo de antes.
 
@@ -179,6 +179,12 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `carregar_morto` | os dois primeiros do cortejo do funeral |
 | `cacar` | na caçada, longe do acampamento, de ponto em ponto |
 | `carregar_caca` | andando de volta da caçada com a caça |
+| `brincar` | crianças brincando, na praia ou perto do fogo; também andando (correndo uma atrás da outra) |
+| `deitar` | descansando deitado à sombra: uma pausa no trabalho, ou o fim de tarde em casa |
+| `tecer` | tecendo cesto, em casa (adultos no fim de tarde, os velhos de dia) |
+| `consertar` | consertando uma ferramenta, em casa |
+| `cozinhar` | preparando o jantar perto do fogo, das 17h30 às 19h |
+| `comer` | jantando perto do fogo (as crianças comem depois dos grandes) |
 
 **Detalhes** (campo `detalhe`, nos trechos da agenda e na ficha):
 
@@ -191,9 +197,10 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `levar_cesto`, `levar_vara`, `levar_machado`, `levar_pote`, `levar_lanca` | `andar` | a ida ao trabalho com a ferramenta: cesto (coleta), vara (pesca), machado (lenha, obra, forja), pote (água), lança (caçada) |
 | `buscar_agua`, `banho` | `parado` | na margem do lago |
 | `guardar` | `parado` | guardando a carga em casa ou no celeiro |
-| `descansar` | `parado`, `conversar` | uma pausa, ou o fim de tarde em casa |
-| `cozinhar`, `comer` | `fogueira` | o jantar, das 17h30 às 19h |
-| `brincar` | `parado` | crianças brincando, na praia ou perto do fogo |
+| `descansar` | `deitar` | a pausa à sombra no meio do trabalho |
+| `cozinhar`, `comer` | `cozinhar`, `comer` | o jantar, das 17h30 às 19h |
+| `brincar` | `brincar` | crianças brincando, na praia ou perto do fogo |
+| `ninar` | `cuidar` | depois do jantar, quem tem filho pequeno nina em casa |
 | `vigia` | `fogueira`, `parado` | o vigia da noite: sentado no fogo, ou de pé na beira do acampamento |
 | `olhar_ceu` | `conversar` | um casal olhando o céu à noite |
 | `reza_noturna` | `rezar` | quem reza tarde da noite |
@@ -204,7 +211,7 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 
 **O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos de manhã para a caçada no morro (ou na mata alta, para quem mora no morro) e voltam entre 16h e 17h. Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
 
-**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham e os outros conversam e comem perto do fogo. Até as 21h30 ou 22h30 fica-se na fogueira, com conversas e crianças correndo. Dorme-se das 21h30 às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
+**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham (`cozinhar`) e os outros conversam e comem (`comer`); as crianças brincam na praia até 17h50 e comem depois dos grandes. Depois do jantar, uns ninam os pequenos, tecem ou consertam em casa, e o resto fica na fogueira, com conversas e crianças correndo. Dorme-se das 21h às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
 
 **Lugares sem fila.** Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não muda: os lugares ficam a 7 px uns dos outros, alternando os lados da fogueira e a pelo menos 6 px do centro dela, por ordem de chegada ao mundo. É ali que ela fica na `fogueira` da noite e nas conversas em volta do fogo. Quem não cabe na faixa do povo vai direto para casa à noite (`dormir`). Em casa, cada um dorme num ponto próprio ao longo da largura da moradia. Em povos grandes, a coleta se espalha pela faixa de trabalho inteira. Ninguém fica na água (x < 126), a não ser remando; quem pesca fica na margem, de 126 a 136.
 
@@ -496,7 +503,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
-| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação e gente em 3 das 4 zonas; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
