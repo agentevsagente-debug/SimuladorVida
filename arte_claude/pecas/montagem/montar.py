@@ -79,18 +79,45 @@ def montar(hora):
               if f.stem not in ("terreno_teste", "blocos_prancha", "agua_superficie_4q")}
     folha_agua = ler(PECAS / "terreno" / "agua_superficie_4q.png")
     quadros = [quadro(folha_agua, i, 8) for i in range(4)]
-    px, tags, sup = terreno.montar_terreno(blocos, quadros)
+    lay = json.loads((AQUI / "layout.json").read_text(encoding="utf-8"))
+    px, tags, sup = terreno.montar_terreno(blocos, quadros, colunas=[tuple(cl) for cl in lay["colunas"]])
     for y in range(H):
         for x in range(W):
             if px[y][x] is not None:
                 c.p[y][x], c.tag[y][x] = px[y][x], tags[y][x]
     c.camada(ler(AQUI / f"reflexo_{hora}.png"), tag=REFLEXO, so_onde=AGUA)
 
-    # 3. vegetação e objetos nas posições da cena-alvo (x da cena = tronco/centro)
-    def por(nome, x_centro, base, tag=MUNDO, ancora=None):
-        p = e[nome]
-        ax = ancora if ancora is not None else len(p[0]) // 2
-        c.sprite(p, x_centro - ax, base, tag)
+    # 3. peças, na ordem e nas posições de layout.json
+    centro = lay["fogueira"]["x"] + 8
+    for item in lay["pecas"]:
+        pasta = hab if item["plano"] == "pessoa" else e
+        folha = pasta[item["peca"]]
+        px = quadro(folha, item.get("quadro", 0), item.get("larg_quadro", len(folha[0])))
+        if item.get("troca"):
+            px = trocar(px, {int(k): v for k, v in item["troca"].items()})
+        if item.get("espelho"):
+            px = espelhar(px)
+        tag = {"mundo": MUNDO, "agua": AGUA, "fogo": FOGO, "pessoa": PESSOA, "frente": FRENTE}[item["plano"]]
+        c.sprite(px, item["x"], item["base"], tag, centro_fogo=centro if tag == PESSOA else None)
+    fx, fy = lay["fogueira"]["x"], lay["fogueira"]["y"]
+
+    if hora == "noite":
+        noite(c, sup, (fx, fy))
+    return c
+
+
+def gerar_layout():
+    """Posições das peças na cena-alvo, gravadas como dados para o motor (layout.json).
+    x = canto esquerdo da peça; base = linha da tela onde fica a última linha da peça."""
+    from habitantes import troca
+    colunas = terreno.perfil_colunas()
+    sup = [colunas[x // 8][0] for x in range(W)]
+    larg = {f.stem: Image.open(f).width for f in (PECAS / "estagio1").glob("*.png")}
+    pecas = []
+
+    def por(nome, x_centro, base, plano="mundo", ancora=None, espelho=False):
+        ax = ancora if ancora is not None else larg[nome] // 2
+        pecas.append({"peca": nome, "x": x_centro - ax, "base": base, "plano": plano, "espelho": espelho})
 
     for x in (338, 362, 392, 416, 446, 470):
         por("pinheiro_fundo", x, sup[x] - 2, ancora=15)
@@ -107,7 +134,7 @@ def montar(hora):
     for x in (122, 132, 140, 147):
         por("capim_seco", x, sup[x] - 1, ancora=4)
     for x in (20, 27, 58, 66, 83):
-        por("alga", x, sup[x] - 1, AGUA, ancora=2)
+        por("alga", x, sup[x] - 1, "agua", ancora=2)
     por("juncos", 107, sup[110] - 1, ancora=0)
     por("pedra_pequena", 144, sup[144] + 2, ancora=4)
     por("pedra_grande", 314, sup[314] + 3, ancora=8)
@@ -116,39 +143,35 @@ def montar(hora):
     por("tronco_deriva", 116, sup[122] - 1, ancora=0)
     por("cabana_galhos", 164, 119, ancora=0)
     por("cabana_galhos", 268, 119, ancora=0)
-    fogo = quadro(e["fogueira_acesa_4q"], 0, 16)
     fx, fy = cena.FOGO_X - 8, 104             # canto da peça: múltiplos de 4
-    c.sprite(fogo, fx, fy + 15, FOGO)
+    pecas.append({"peca": "fogueira_acesa_4q", "quadro": 0, "larg_quadro": 16, "x": fx, "base": fy + 15,
+                  "plano": "fogo"})
 
-    # 4. pessoas, com as trocas de pele, cabelo e roupa
-    from habitantes import troca  # noqa: E402
-    centro = cena.FOGO_X
+    def gente(nome, q, lq, x, mapa, espelho=False):
+        pecas.append({"peca": nome, "quadro": q, "larg_quadro": lq, "x": x,
+                      "base": 119 if x > 150 else sup[x + 4] - 1, "plano": "pessoa",
+                      "espelho": espelho, "troca": {str(k): v for k, v in mapa.items()}})
 
-    def gente(nome, q, larg, x, pele, cabelo, tecido, espelho=False):
-        p = trocar(quadro(hab[nome], q, larg), troca(pele, cabelo, tecido))
-        if espelho:
-            p = espelhar(p)
-        c.sprite(p, x, 119 if x > 150 else sup[x + 4] - 1, PESSOA, centro_fogo=centro)
-
-    gente("adulto_a_parado_2q", 0, 8, 136, 24, 30, 28)
-    gente("adulto_a_andar_4q", 1, 8, 188, 26, 23, 27)
-    gente("crianca_andar_4q", 1, 6, 198, 25, 8, 29)
-    gente("adulto_a_sentado_1q", 0, 8, 206, 23, 30, 28)
-    gente("adulto_b_parado_2q", 0, 8, 234, 25, 8, 29, espelho=True)
-    gente("crianca_andar_4q", 3, 6, 244, 26, 10, 27, espelho=True)
-    idoso = espelhar(quadro(hab["idoso_andar_4q"], 1, 8))
-    c.sprite(trocar(idoso, troca(pele=24, tecido=27)), 252, 119, PESSOA, centro_fogo=centro)
-    gente("adulto_a_andar_4q", 3, 8, 288, 25, 23, 28, espelho=True)
-
-    # 5. primeiro plano
-    sam = e["samambaia_frente"]
+    gente("adulto_a_parado_2q", 0, 8, 136, troca(24, 30, 28))
+    gente("adulto_a_andar_4q", 1, 8, 188, troca(26, 23, 27))
+    gente("crianca_andar_4q", 1, 6, 198, troca(25, 8, 29))
+    gente("adulto_a_sentado_1q", 0, 8, 206, troca(23, 30, 28))
+    gente("adulto_b_parado_2q", 0, 8, 234, troca(25, 8, 29), espelho=True)
+    gente("crianca_andar_4q", 3, 6, 244, troca(26, 10, 27), espelho=True)
+    gente("idoso_andar_4q", 1, 8, 252, troca(pele=24, tecido=27), espelho=True)
+    gente("adulto_a_andar_4q", 3, 8, 288, troca(25, 23, 28), espelho=True)
     for x, base, esp in ((2, 125, False), (7, 127, True), (474, sup[474] + 6, True),
                          (468, sup[468] + 8, False), (316, sup[316] + 5, False)):
-        c.sprite(espelhar(sam) if esp else sam, x - 7, base + 2, FRENTE)
-
-    if hora == "noite":
-        noite(c, sup, (fx, fy))
-    return c
+        pecas.append({"peca": "samambaia_frente", "x": x - 7, "base": base + 2, "plano": "frente",
+                      "espelho": esp})
+    return {
+        "nota": "colunas: [superfície y, tipo] de cada coluna de 8 px; x = canto esquerdo da peça; "
+                "base = linha da tela da última linha da peça; troca = cor-base -> cor (índices da paleta); "
+                "a ordem da lista é a ordem de desenho",
+        "colunas": [list(cl) for cl in colunas],
+        "fogueira": {"x": fx, "y": fy},
+        "pecas": pecas,
+    }
 
 
 def noite(c, sup, canto_fogo):
@@ -198,6 +221,8 @@ def imagem(c):
 
 
 def principal():
+    (AQUI / "layout.json").write_text(json.dumps(gerar_layout(), indent=1, ensure_ascii=False),
+                                      encoding="utf-8")
     for hora in ("dia", "noite"):
         img = imagem(montar(hora))
         gravar(img.convert("RGBA"), AQUI / f"montagem_{hora}.png")

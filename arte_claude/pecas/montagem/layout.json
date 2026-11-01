@@ -1,0 +1,751 @@
+{
+ "nota": "colunas: [superfície y, tipo] de cada coluna de 8 px; x = canto esquerdo da peça; base = linha da tela da última linha da peça; troca = cor-base -> cor (índices da paleta); a ordem da lista é a ordem de desenho",
+ "colunas": [
+  [
+   149,
+   "areia"
+  ],
+  [
+   148,
+   "areia"
+  ],
+  [
+   147,
+   "areia"
+  ],
+  [
+   146,
+   "areia"
+  ],
+  [
+   144,
+   "areia"
+  ],
+  [
+   142,
+   "areia"
+  ],
+  [
+   139,
+   "areia"
+  ],
+  [
+   136,
+   "areia"
+  ],
+  [
+   133,
+   "areia"
+  ],
+  [
+   130,
+   "areia"
+  ],
+  [
+   128,
+   "areia"
+  ],
+  [
+   125,
+   "areia"
+  ],
+  [
+   123,
+   "areia"
+  ],
+  [
+   124,
+   "areia"
+  ],
+  [
+   124,
+   "areia"
+  ],
+  [
+   123,
+   "areia"
+  ],
+  [
+   122,
+   "areia"
+  ],
+  [
+   121,
+   "seca"
+  ],
+  [
+   120,
+   "seca"
+  ],
+  [
+   121,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   119,
+   "grama"
+  ],
+  [
+   119,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   121,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   120,
+   "grama"
+  ],
+  [
+   119,
+   "grama"
+  ],
+  [
+   118,
+   "grama"
+  ],
+  [
+   118,
+   "grama"
+  ],
+  [
+   115,
+   "grama"
+  ],
+  [
+   112,
+   "grama"
+  ],
+  [
+   108,
+   "grama"
+  ],
+  [
+   104,
+   "grama"
+  ],
+  [
+   99,
+   "grama"
+  ],
+  [
+   96,
+   "grama"
+  ],
+  [
+   95,
+   "grama"
+  ],
+  [
+   94,
+   "grama"
+  ],
+  [
+   94,
+   "grama"
+  ],
+  [
+   92,
+   "grama"
+  ],
+  [
+   92,
+   "grama"
+  ],
+  [
+   92,
+   "grama"
+  ],
+  [
+   93,
+   "grama"
+  ],
+  [
+   94,
+   "grama"
+  ],
+  [
+   93,
+   "grama"
+  ],
+  [
+   91,
+   "grama"
+  ],
+  [
+   91,
+   "grama"
+  ],
+  [
+   92,
+   "grama"
+  ],
+  [
+   92,
+   "grama"
+  ]
+ ],
+ "fogueira": {
+  "x": 216,
+  "y": 104
+ },
+ "pecas": [
+  {
+   "peca": "pinheiro_fundo",
+   "x": 323,
+   "base": 110,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_fundo",
+   "x": 347,
+   "base": 97,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_fundo",
+   "x": 377,
+   "base": 92,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_fundo",
+   "x": 401,
+   "base": 90,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_fundo",
+   "x": 431,
+   "base": 91,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_fundo",
+   "x": 455,
+   "base": 90,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_b",
+   "x": 311,
+   "base": 118,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_b",
+   "x": 339,
+   "base": 108,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_a",
+   "x": 359,
+   "base": 95,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_b",
+   "x": 393,
+   "base": 92,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_a",
+   "x": 413,
+   "base": 94,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_b",
+   "x": 447,
+   "base": 91,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pinheiro_b",
+   "x": 467,
+   "base": 92,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arvore_copa_a",
+   "x": 287,
+   "base": 119,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arvore_copa_b",
+   "x": 430,
+   "base": 94,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arvore_copa_b",
+   "x": 146,
+   "base": 120,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto_frutas",
+   "x": 178,
+   "base": 120,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto_frutas",
+   "x": 288,
+   "base": 121,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto",
+   "x": 332,
+   "base": 113,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto_frutas",
+   "x": 410,
+   "base": 93,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto",
+   "x": 146,
+   "base": 122,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "arbusto",
+   "x": 458,
+   "base": 93,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 172,
+   "base": 118,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 254,
+   "base": 120,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 308,
+   "base": 117,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 326,
+   "base": 114,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 362,
+   "base": 98,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 388,
+   "base": 93,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 420,
+   "base": 92,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim",
+   "x": 448,
+   "base": 90,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim_seco",
+   "x": 118,
+   "base": 122,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim_seco",
+   "x": 128,
+   "base": 121,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim_seco",
+   "x": 136,
+   "base": 120,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "capim_seco",
+   "x": 143,
+   "base": 119,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "alga",
+   "x": 18,
+   "base": 146,
+   "plano": "agua",
+   "espelho": false
+  },
+  {
+   "peca": "alga",
+   "x": 25,
+   "base": 145,
+   "plano": "agua",
+   "espelho": false
+  },
+  {
+   "peca": "alga",
+   "x": 56,
+   "base": 135,
+   "plano": "agua",
+   "espelho": false
+  },
+  {
+   "peca": "alga",
+   "x": 64,
+   "base": 132,
+   "plano": "agua",
+   "espelho": false
+  },
+  {
+   "peca": "alga",
+   "x": 81,
+   "base": 127,
+   "plano": "agua",
+   "espelho": false
+  },
+  {
+   "peca": "juncos",
+   "x": 107,
+   "base": 123,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pedra_pequena",
+   "x": 140,
+   "base": 122,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pedra_grande",
+   "x": 306,
+   "base": 121,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pedra_pequena",
+   "x": 382,
+   "base": 96,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "pedra_pequena",
+   "x": 286,
+   "base": 122,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "tronco_deriva",
+   "x": 116,
+   "base": 122,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "cabana_galhos",
+   "x": 164,
+   "base": 119,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "cabana_galhos",
+   "x": 268,
+   "base": 119,
+   "plano": "mundo",
+   "espelho": false
+  },
+  {
+   "peca": "fogueira_acesa_4q",
+   "quadro": 0,
+   "larg_quadro": 16,
+   "x": 216,
+   "base": 119,
+   "plano": "fogo"
+  },
+  {
+   "peca": "adulto_a_parado_2q",
+   "quadro": 0,
+   "larg_quadro": 8,
+   "x": 136,
+   "base": 120,
+   "plano": "pessoa",
+   "espelho": false,
+   "troca": {
+    "26": 24,
+    "25": 23,
+    "30": 30,
+    "8": 8,
+    "28": 28
+   }
+  },
+  {
+   "peca": "adulto_a_andar_4q",
+   "quadro": 1,
+   "larg_quadro": 8,
+   "x": 188,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": false,
+   "troca": {
+    "26": 26,
+    "25": 25,
+    "30": 23,
+    "8": 24,
+    "28": 27
+   }
+  },
+  {
+   "peca": "crianca_andar_4q",
+   "quadro": 1,
+   "larg_quadro": 6,
+   "x": 198,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": false,
+   "troca": {
+    "26": 25,
+    "25": 24,
+    "30": 8,
+    "8": 9,
+    "28": 29
+   }
+  },
+  {
+   "peca": "adulto_a_sentado_1q",
+   "quadro": 0,
+   "larg_quadro": 8,
+   "x": 206,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": false,
+   "troca": {
+    "26": 23,
+    "25": 8,
+    "30": 30,
+    "8": 8,
+    "28": 28
+   }
+  },
+  {
+   "peca": "adulto_b_parado_2q",
+   "quadro": 0,
+   "larg_quadro": 8,
+   "x": 234,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": true,
+   "troca": {
+    "26": 25,
+    "25": 24,
+    "30": 8,
+    "8": 9,
+    "28": 29
+   }
+  },
+  {
+   "peca": "crianca_andar_4q",
+   "quadro": 3,
+   "larg_quadro": 6,
+   "x": 244,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": true,
+   "troca": {
+    "26": 26,
+    "25": 25,
+    "30": 10,
+    "8": 16,
+    "28": 27
+   }
+  },
+  {
+   "peca": "idoso_andar_4q",
+   "quadro": 1,
+   "larg_quadro": 8,
+   "x": 252,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": true,
+   "troca": {
+    "26": 24,
+    "25": 23,
+    "30": 30,
+    "8": 8,
+    "28": 27
+   }
+  },
+  {
+   "peca": "adulto_a_andar_4q",
+   "quadro": 3,
+   "larg_quadro": 8,
+   "x": 288,
+   "base": 119,
+   "plano": "pessoa",
+   "espelho": true,
+   "troca": {
+    "26": 25,
+    "25": 24,
+    "30": 23,
+    "8": 24,
+    "28": 28
+   }
+  },
+  {
+   "peca": "samambaia_frente",
+   "x": -5,
+   "base": 127,
+   "plano": "frente",
+   "espelho": false
+  },
+  {
+   "peca": "samambaia_frente",
+   "x": 0,
+   "base": 129,
+   "plano": "frente",
+   "espelho": true
+  },
+  {
+   "peca": "samambaia_frente",
+   "x": 467,
+   "base": 100,
+   "plano": "frente",
+   "espelho": true
+  },
+  {
+   "peca": "samambaia_frente",
+   "x": 461,
+   "base": 102,
+   "plano": "frente",
+   "espelho": false
+  },
+  {
+   "peca": "samambaia_frente",
+   "x": 309,
+   "base": 125,
+   "plano": "frente",
+   "espelho": false
+  }
+ ]
+}

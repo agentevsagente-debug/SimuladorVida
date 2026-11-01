@@ -16,8 +16,9 @@ A pasta `_4x/` de cada seção tem as versões ampliadas, só para olhar.
 
 `montagem/comparacao_dia.png` e `montagem/comparacao_noite.png` mostram a cena-alvo em cima e, embaixo, a mesma cena remontada pelo `montagem/montar.py`. Esse script:
 - **lê os PNGs entregues**, sem chamar o código de desenho;
+- lê a disposição da cena em `montagem/layout.json`: a altura e o tipo de cada coluna de 8 px, o canto da fogueira e cada peça com quadro, posição, base, espelhamento, troca de cores e plano, na ordem de desenho;
 - monta o terreno em blocos;
-- coloca as peças nas posições da cena;
+- coloca as peças nas posições do `layout.json`;
 - troca as cores das pessoas;
 - faz a noite só com `tabelas_luz.json` e os mapas de luz.
 

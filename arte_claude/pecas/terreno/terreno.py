@@ -328,7 +328,7 @@ def pilha(c, s, tp):
     return itens
 
 
-def montar_terreno(blocos, quadros, quadro_agua=0):
+def montar_terreno(blocos, quadros, quadro_agua=0, colunas=None):
     """Devolve (pixels 480x160 com None no vazio, etiquetas, superfície por coluna)."""
     W, H = cena.W, cena.H
     px = [[None] * W for _ in range(H)]
@@ -343,7 +343,7 @@ def montar_terreno(blocos, quadros, quadro_agua=0):
                 for i in range(T):
                     px[y0 + j][x0 + i] = bloco[j][i]
                     tag[y0 + j][x0 + i] = cena.MUNDO
-    for c, (s, tp) in enumerate(perfil_colunas()):
+    for c, (s, tp) in enumerate(colunas or perfil_colunas()):
         for x in range(c * T, c * T + T):
             sup[x] = s
         for y0, nome in pilha(c, s, tp):
