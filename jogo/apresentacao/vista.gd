@@ -61,6 +61,7 @@ const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
 const VAO_ENTRE_POVOS := 10.0
+const FILEIRA_ATRAS := 4  # px acima que a fileira de trás fica (API: `fileira` 1)
 const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobre a pessoa"
 
 var sim: Simulacao
@@ -125,7 +126,8 @@ var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
 var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
 var chamines: Array = []     # pontos de onde sobe a fumaça das lareiras no inverno
 var beira_visivel := 0         # a primeira coluna depois da água desenhada do lago
-var telhados: Array = []     # pontos no alto das casas onde os pássaros pousam: Vector2(x, linha de cima)
+var telhados: Array = []
+var estandartes: Array = []  # [{folha, x, base}] no alto da casa principal de cada povo (a vida anima)     # pontos no alto das casas onde os pássaros pousam: Vector2(x, linha de cima)
 var _chamines_json := {}
 var _camera_aplicada := [-1, Vector2(-1, -1)]
 
@@ -531,6 +533,8 @@ func _montar_fixo() -> void:
 	rodas = []
 	chamines = []
 	telhados = []
+	estandartes = []
+	var com_estandarte := {}  # grupos que já têm o estandarte na casa principal
 	var luz_todas := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var luz_madrugada := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
@@ -548,9 +552,22 @@ func _montar_fixo() -> void:
 			var px := x + (lado if posmod(x, 2) == 0 else -lado)
 			if not _na_agua(px):
 				_colar_obra(terreno, cor, tag, imagens, [planta], px, Arte.MUNDO)
-	for o in obras:
+	# as casas da fileira de trás antes, mais altas, para as da frente as cobrirem
+	var em_ordem := obras.filter(func(o): return int(o.get("fileira", 0)) == 1) + \
+		obras.filter(func(o): return int(o.get("fileira", 0)) != 1)
+	for o in em_ordem:
 		var x := roundi(o.x)
+		var atras := FILEIRA_ATRAS if int(o.get("fileira", 0)) == 1 else 0
 		match o.tipo:
+			"roda_dagua":  # animada, desenhada pela vida
+				rodas.append({"x": x, "base": _chao(x)})
+			"muralha":  # um trecho de muro entre duas torres
+				var muro := _imagem_obra(imagens, "estagio6/muralha")
+				var meia := int(o.get("largura", 28)) / 2
+				for mx in range(x - meia, x + meia, muro.get_width()):
+					terreno.colar(cor, tag, muro, Vector2i(mx, _chao(mx + 4) - muro.get_height() + 1), Arte.OBRA)
+				for tx in [x - meia, x + meia]:
+					_colar_obra(terreno, cor, tag, imagens, ["estagio6/muralha_torre"], tx)
 			"roca":  # a roça vai sobre a grama, com a base na superfície
 				var irrigada: bool = o.get("irrigada", false)
 				if not irrigada and posmod(x, 3) != 0:  # o pomar ao lado de umas roças (tronco na coluna 10)
@@ -574,12 +591,20 @@ func _montar_fixo() -> void:
 				var aparencia: Dictionary = o.get("aparencia", {})
 				if aparencia.is_empty() and sim:
 					aparencia = sim.aparencia(int(o.get("grupo", -1)))
-				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x)
-				if o.tipo == "cabana":
+				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x,
+					Arte.OBRA, atras)
+				if o.tipo == "cabana" and atras == 0:
 					for dx in [-4, 0, 4]:
 						var topo := _topo_da_obra(tag, x + dx)
 						if topo > 0:
 							telhados.append(Vector2(x + dx, topo))
+					# o estandarte do povo na cumeeira da casa principal (auditoria 7, C1)
+					var g := int(o.get("grupo", -1))
+					if g >= 0 and not com_estandarte.has(g):
+						com_estandarte[g] = true
+						var folha := "objetos/estandarte_%s_%s_2q" % [aparencia.get("roupa", "lilas"), aparencia.get("simbolo", "sol")]
+						if ResourceLoader.exists(Arte.RAIZ + folha + ".png"):
+							estandartes.append({"folha": folha, "x": x, "base": _topo_da_obra(tag, x)})
 				if o.tipo == "cabana" and int(o.get("estagio", 1)) >= 2:
 					_luz_e_chamine(o, aparencia, x, imagens, terreno, cor, tag, luz_todas, luz_madrugada)
 	if sim:
@@ -627,12 +652,12 @@ func _montar_fixo() -> void:
 ## Cola uma construção (ou ruína) com a base no chão em x: as camadas, de baixo
 ## para cima (parede, telhado e símbolo da cultura), no mesmo encaixe.
 func _colar_obra(terreno, cor: Image, tag: Image, imagens: Dictionary, camadas: Array, x: int,
-		etiqueta := Arte.OBRA) -> void:
+		etiqueta := Arte.OBRA, acima := 0) -> void:
 	for caminho in camadas:
 		if caminho == "":
 			continue
 		var img := _imagem_obra(imagens, caminho)
-		terreno.colar(cor, tag, img, Vector2i(x - img.get_width() / 2, _chao(x) - img.get_height() + 1), etiqueta)
+		terreno.colar(cor, tag, img, Vector2i(x - img.get_width() / 2, _chao(x) - img.get_height() + 1 - acima), etiqueta)
 
 
 func _imagem_obra(imagens: Dictionary, caminho: String) -> Image:
@@ -678,7 +703,8 @@ func _construcoes() -> Array:
 ## peças se encostam um pouco, sem amontoar numa ponta. O barco, na água, fica
 ## de fora; o que o núcleo pôs na praia continua lá.
 func _encaixar_lotes(obras: Array) -> void:
-	var fila := obras.filter(func(o): return o.tipo != "barco")
+	# a fileira de trás (API: `fileira` 1) pode cruzar a da frente em x: fica fora do encaixe
+	var fila := obras.filter(func(o): return o.tipo != "barco" and int(o.get("fileira", 0)) == 0)
 	if fila.size() < 2:
 		return
 	fila.sort_custom(func(a, b): return a.x < b.x)

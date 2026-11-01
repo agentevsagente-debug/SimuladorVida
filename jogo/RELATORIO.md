@@ -32,7 +32,14 @@ GIF da tarde com pesca: `capturas/tarde-pesca-1x.gif`, com a semente 7 no dia 25
 | **C1** | 10 px a mais entre construções de povos diferentes, no encaixe dos lotes. |
 | **E4** | A baforada nasce dentro das chamas, sobe só 3 a 5 px, dura 2,2 s e sai a cada 2,5 a 4 s. Ela some rente ao fogo, sem ficar no céu. |
 
-Captura: `capturas/auditoria7-estagios.png`, com a semente 3 nos anos 250 e 500 e a semente 7 nos anos 122 e 400 (às 10h e às 19h).
+**As peças novas da A:**
+- **Fileira de trás** (`fileira` 1): as casas que não cabem na frente são desenhadas antes e 4 px mais altas (`FILEIRA_ATRAS`), e as da frente as cobrem. Elas ficam fora do encaixe dos lotes, porque podem cruzar a frente em x.
+- **Estela:** `estagio5/estela`, pela tabela de peças.
+- **Roda d'água solta:** animada pela vida, como a do canal.
+- **Muralha:** o muro repetido por toda a largura, com uma torre em cada ponta.
+- **Estandarte** (arte da C, seção 27): na cumeeira da casa principal de cada povo, com a cor da roupa e o símbolo do povo, balançando ao vento.
+
+Captura: `capturas/auditoria7-estagios.png`, com a semente 3 nos anos 250 e 500 e a semente 7 nos anos 122 e 400 (às 10h e às 21h), já com a main `bdd6463`.
 
 ## Auditoria 6 (B)
 
