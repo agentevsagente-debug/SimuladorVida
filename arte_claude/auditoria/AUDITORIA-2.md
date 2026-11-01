@@ -4,7 +4,7 @@
 
 ## Como foi feito
 
-Usei o mesmo método da primeira auditoria. Os comandos estão em `capturar2.sh`, e as 85 capturas, em `capturas2/`.
+Usei o mesmo método da primeira auditoria. Os comandos estão em `capturar2.sh`, e as 86 capturas, em `capturas2/`.
 
 | Grupo | Capturas |
 |---|---|
@@ -14,7 +14,7 @@ Usei o mesmo método da primeira auditoria. Os comandos estão em `capturar2.sh`
 | Vida | `vida_manha_seq` e `vida_tarde_seq` (6 quadros com 1 s de intervalo) |
 | Poderes | os **11** poderes, 5 quadros cada, de 0,25 em 0,25 s depois do gesto |
 
-**Verificações automáticas.** Nenhuma das 85 capturas tem cor fora da paleta ou pixel semitransparente. Todas estão na escala inteira.
+**Verificações automáticas.** Nenhuma das 86 capturas tem cor fora da paleta ou pixel semitransparente. Todas estão na escala inteira.
 
 A importação do Godot, necessária para rodar, mexeu de novo em `.import` e `.uid` dentro de `jogo/`. Desfiz tudo depois; nada fora de `arte_claude/` foi alterado.
 
