@@ -99,10 +99,10 @@ func _initialize() -> void:
 			while not WorkerThreadPool.is_task_completed(m._tarefa):
 				OS.delay_msec(5)
 			var feita = m._montando
-			var aqui = preload("res://nucleo/rotina.gd").new(m, m.dia_abs())
+			var aqui = preload("res://nucleo/rotina.gd").new(m, feita.dia)   # às 23h, a de amanhã
 			aqui.montar()
 			conferir(feita._agendas == aqui._agendas and feita.cenas == aqui.cenas and feita.planos == aqui.planos,
-				"rotina da thread igual à da linha principal (dia %d)" % m.dia_abs())
+				"rotina da thread igual à da linha principal (dia %d)" % feita.dia)
 			dias_vistos += 1
 	conferir(m.desempenho["substitutos"] == 0, "ninguém acordado sem plano (%s)" % m.desempenho)
 	print("%d falhas" % falhas)

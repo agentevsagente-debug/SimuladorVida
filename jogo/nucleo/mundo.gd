@@ -1951,6 +1951,7 @@ func _peste() -> void:
 
 ## Um povo que acaba ou se muda deixa ruínas, que guardam o que ele sabia.
 func _deixar_ruinas(g: Grupo) -> void:
+	casas_vazias.erase(g.id)
 	var saberes: Array = []
 	if g.estagio >= 2:
 		saberes.append("agricultura")
@@ -3385,12 +3386,65 @@ func cultura_do_grupo(g: Grupo) -> Dictionary:
 ## Construções abandonadas, de povos que acabaram ou se mudaram, e de eras anteriores.
 func ruinas_visiveis() -> Array:
 	var r: Array = []
+	# Onde há uma vila viva, as ruínas antigas foram desmanchadas para fazer casa nova: não
+	# aparecem no meio dela.
+	var vivas: Array = construcoes()
 	for ru in ruinas:
+		if _sob_obra(ru["x"], ru["largura"], vivas):
+			continue
 		var g: Grupo = grupo(ru.get("grupo", -1))
 		r.append({"tipo": ru["tipo"], "x": ru["x"], "largura": ru["largura"], "estagio": ru["estagio"],
 			"povo": ru["povo"], "era": ru["era"], "ano": ru["ano"], "anos": ano() - ru["ano"], "ruina": true,
-			"aparencia": g.aparencia if g != null else {}})
+			"aparencia": g.aparencia if g != null else {}, "abandonada": false})
+	# As casas que a vila deixou vazias ao encolher: ficam nas pontas, e o mato cresce nelas.
+	for gid in casas_vazias:
+		var g: Grupo = grupo(gid)
+		if g == null or g.extinto:
+			continue
+		for cv in casas_vazias[gid]:
+			if _sob_obra(cv["x"], cv["largura"], vivas):
+				continue
+			r.append({"tipo": "cabana", "x": cv["x"], "largura": cv["largura"], "estagio": cv["estagio"], "povo": g.nome,
+				"era": era, "ano": cv["desde"], "anos": ano() - cv["desde"], "ruina": true, "aparencia": g.aparencia,
+				"abandonada": true, "grupo": gid})
 	return r
+
+
+func _sob_obra(x: float, largura: float, obras: Array) -> bool:
+	for o in obras:
+		if o["tipo"] == "barco":
+			continue
+		if absf(o["x"] - x) < (o["largura"] + largura) * 0.5:
+			return true
+	return false
+
+
+## Casas que a vila deixou vazias ao encolher: id do grupo -> [{x, largura, estagio, desde}].
+## Só a apresentação lê (a simulação não usa); somem com o tempo, ou quando a vila cresce de
+## novo e volta a morar nelas.
+var casas_vazias: Dictionary = {}
+
+
+func _casas_que_esvaziaram(g: Grupo, antes: Array, depois: Array) -> void:
+	var vazias: Array = casas_vazias.get(g.id, [])
+	var casas_antes: Array = antes.filter(func(o): return o["tipo"] == "cabana")
+	var n_depois: int = depois.filter(func(o): return o["tipo"] == "cabana").size()
+	if casas_antes.size() > n_depois:
+		# As que ficam vazias são as mais longe do fogo: as das pontas.
+		var fogo: float = antes[0]["x"]
+		casas_antes.sort_custom(func(a, b): return absf(a["x"] - fogo) > absf(b["x"] - fogo))
+		for o in casas_antes.slice(0, casas_antes.size() - n_depois):
+			vazias.append({"x": o["x"], "largura": o["largura"], "estagio": o["estagio"], "desde": ano()})
+	# Uma casa nova onde havia uma vazia: a vazia foi ocupada de novo.
+	var restam: Array = []
+	for cv in vazias:
+		var limite := 30 if cv["estagio"] <= 2 else 200
+		if ano() - cv["desde"] <= limite and not _sob_obra(cv["x"], cv["largura"], depois):
+			restam.append(cv)
+	if restam.is_empty():
+		casas_vazias.erase(g.id)
+	else:
+		casas_vazias[g.id] = restam
 
 
 var _construcoes_chave: Array = []
@@ -3406,13 +3460,21 @@ func construcoes() -> Array:
 	var r: Array = []
 	for g in grupos_vivos():
 		# Cada povo só refaz as peças quando algo que as define muda.
+		var vizinhos: Array = grupos_na_zona(g.zona)
+		if g.zona == "lago" or g.zona == "praia":
+			vizinhos = grupos_na_zona("lago") + grupos_na_zona("praia")
 		var assinatura := [g.zona, g.abrigos, g.estagio, g.membros.size(), g.tem_crenca, g.ceticos,
-			g.tem_costume("estocar"), g.violencia >= 0.5, grupos_na_zona(g.zona).size()]
+			g.tem_costume("estocar"), g.violencia >= 0.5,
+			vizinhos.map(func(o): return [o.id, o.estagio, Cotidiano.peso_na_faixa(o)])]
 		var guardado: Array = _obras_por_grupo.get(g.id, [])
 		if guardado.is_empty() or guardado[0] != assinatura:
 			var obras := Cotidiano.construcoes_do_grupo(self, g)
 			for o in obras:
 				o["aparencia"] = g.aparencia   # a cultura do povo: parede, telhado, símbolo
+			# Se o povo continua no mesmo lugar e encolheu, as casas das pontas ficam vazias (e não
+			# quando a faixa encolheu porque um vizinho cresceu).
+			if not guardado.is_empty() and guardado[0][0] == g.zona and g.membros.size() < guardado[0][3]:
+				_casas_que_esvaziaram(g, guardado[1], obras)
 			guardado = [assinatura, obras]
 			_obras_por_grupo[g.id] = guardado
 		r.append_array(guardado[1])
@@ -3456,7 +3518,9 @@ func _rotina_de_hoje():
 	if ro.dia != d:
 		_esperar_threads()
 		ro = _rotina_cache
-	if ro.dia != d:
+	# Só vale uma rotina montada depois dos eventos do dia (e, antes deles, montada agora).
+	var ja_depois: bool = ro.montada_no_passo >= d * HORAS_DIA + HORA_MONTAR if hora() >= HORA_MONTAR else ro.montada_no_passo == passo
+	if ro.dia != d or not ja_depois:
 		ro = Rotina.new(self, d)
 		ro.montar()
 		ro.eventos_vistos = eventos.size()
@@ -3492,12 +3556,20 @@ func _cuidar_da_rotina() -> void:
 			_montar_em_paralelo()
 		if hora() >= HORA_TROCA:
 			_receber_rotina(true)
-	elif _montando == null and _rotina_mudou():
+		return
+	# A rotina de hoje montada antes dos eventos do dia (às 23h de ontem) é refeita depois deles.
+	var antes_dos_eventos: bool = _rotina_cache.montada_no_passo < d * HORAS_DIA + HORA_MONTAR and hora() >= HORA_MONTAR
+	if _montando == null and (_rotina_mudou() or antes_dos_eventos):
 		_montar_em_paralelo()
+	elif _montando == null and hora() == 23:
+		# A madrugada de amanhã já entra pronta: monta às 23h a rotina do dia seguinte (refeita
+		# na 1h, depois dos eventos do dia). Sem isso, da meia-noite à 1h só se veria a última
+		# hora de ontem.
+		_montar_em_paralelo(d + 1)
 
 
-func _montar_em_paralelo() -> void:
-	var d := dia_abs()
+func _montar_em_paralelo(dia_da_rotina: int = -1) -> void:
+	var d := dia_abs() if dia_da_rotina < 0 else dia_da_rotina
 	_montando = Rotina.new(self, d)
 	_montando.eventos_vistos = eventos.size()
 	# A tarefa segura o mundo (bind) até ser recolhida: ele não pode sumir no meio da montagem.

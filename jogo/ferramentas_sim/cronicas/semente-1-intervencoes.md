@@ -176,7 +176,7 @@ Selan acabou: Beim, Loya e Mim foram viver em Zeor.
 
 ### Ano 59
 
-Na primavera do ano 59, Saut, que guiava Zeor, morreu dormindo, aos 63 anos. Zeor achou um templo de barro desabado, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. Linon encontrou as ruínas de Selan: um templo de barro desabado. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Na primavera do ano 59, Saut, que guiava Zeor, morreu dormindo, aos 63 anos. Zeor achou pedras de fogueira cobertas de cinza velha, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. Linon encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 60
 
@@ -220,7 +220,7 @@ Nos anos 61 a 70 houve quatro secas, três fomes e catorze preces que pareceram 
 
 ### Ano 71
 
-Mizea não podia mais viver perto de Linenya. Saiu de Linon com dezenove pessoas e fundou Beor na floresta. Beor achou o chão batido de casas sem ninguém, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam. Beor encontrou as ruínas de Selan: um templo de barro desabado. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Lolinim, o primeiro de Beor.
+Mizea não podia mais viver perto de Linenya. Saiu de Linon com dezenove pessoas e fundou Beor na floresta. Beor achou o chão batido de casas sem ninguém, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam. Beor encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Lolinim, o primeiro de Beor.
 
 ### Ano 72
 
@@ -252,7 +252,7 @@ Na primavera do ano 80, em Beor, os jovens deixaram de lado o costume de queimar
 
 ### Ano 82
 
-A rixa entre Linhaem e Bea rachou Beor. Linhaem partiu com os seus, oito pessoas, e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Pelor achou um templo de barro desabado, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. No inverno, Bea passou a falar pelo Que Sacode em Pelor. Era a primeira a rezar e a última a duvidar. Em nome do Que Sacode, Bea proibiu casamentos e trocas com Beor. Era vontade de Bea, não do deus.
+A rixa entre Linhaem e Bea rachou Beor. Linhaem partiu com os seus, oito pessoas, e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Pelor achou pedras de fogueira cobertas de cinza velha, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. No inverno, Bea passou a falar pelo Que Sacode em Pelor. Era a primeira a rezar e a última a duvidar. Em nome do Que Sacode, Bea proibiu casamentos e trocas com Beor. Era vontade de Bea, não do deus.
 
 ### Ano 83
 
@@ -268,7 +268,7 @@ Em Pelor, Bea pediu: «Que Sacode, não deixes nossos filhos morrerem de fome.»
 
 ### Ano 86
 
-No outono do ano 86, Beor já não cabia na floresta. Enselem, o desconfiado, levou onze pessoas para o morro e fundou Saem. Saem encontrou as ruínas de Selan: um templo de barro desabado. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, em Saem, olharam um templo de degraus tomado pelo mato e disseram que Zeor tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.
+No outono do ano 86, Beor já não cabia na floresta. Enselem, o desconfiado, levou onze pessoas para o morro e fundou Saem. Saem encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, em Saem, olharam um templo de degraus tomado pelo mato e disseram que Zeor tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.
 
 ### Ano 87
 

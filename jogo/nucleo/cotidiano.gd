@@ -39,55 +39,99 @@ static func ruido(a: int, b: int, c: int) -> float:
 
 
 ## Faixa de x do acampamento de um grupo: a zona dividida entre os grupos que vivem nela.
+## O lago e a praia dividem a mesma faixa de areia (126 a 200), o povo do lago à esquerda:
+## as duas faixas se sobrepunham, e as vilas se encostavam.
 static func faixa_do_grupo(m, g) -> Array:
 	var z: Array = ACAMPAMENTO[g.zona]
 	var ali: Array = m.grupos_na_zona(g.zona)
-	var n := maxi(1, ali.size())
-	var i := maxi(0, ali.find(g))
-	var w := float(z[1] - z[0]) / n
-	return [z[0] + w * i, z[0] + w * (i + 1)]
+	if g.zona == "lago" or g.zona == "praia":
+		z = [ACAMPAMENTO["lago"][0], ACAMPAMENTO["praia"][1]]
+		ali = m.grupos_na_zona("lago") + m.grupos_na_zona("praia")
+	# Cada povo fica com uma parte conforme o porte (veja peso_na_faixa).
+	var antes := 0.0
+	for o in ali:
+		var peso := peso_na_faixa(o)
+		if o == g:
+			var ini: float = z[0] + (z[1] - z[0]) * antes / maxf(1.0, total_de(ali))
+			return [ini, ini + (z[1] - z[0]) * peso / maxf(1.0, total_de(ali))]
+		antes += peso
+	return [z[0], z[1]]
+
+
+static func total_de(ali: Array) -> float:
+	var t := 0.0
+	for o in ali:
+		t += peso_na_faixa(o)
+	return t
+
+
+## O porte do povo na divisão da terra: 1 (até 39 pessoas), 2 (40 a 99) ou 3 (100 ou mais).
+## Em degraus, e não proporcional, para que a vila não escorregue a cada nascimento.
+static func peso_na_faixa(g) -> float:
+	var n: int = g.membros.size()
+	return 1.0 + (1.0 if n >= 40 else 0.0) + (1.0 if n >= 100 else 0.0)
 
 
 ## Construções de um grupo, com posição, por estágio. Cada peça é posta no primeiro
 ## lugar livre perto da fogueira, numa ordem fixa: a posição só muda quando o número
-## de peças muda ou quando o povo se muda.
+## de peças muda ou quando o povo se muda. Nenhuma peça encosta em outra (ficam a 2 px no
+## mínimo) nem sai da faixa do povo: o que não cabe fica de fora, das últimas da ordem
+## para as primeiras (as duas primeiras casas, o altar e o templo vêm antes das outras).
 static func construcoes_do_grupo(m, g) -> Array:
 	var r: Array = []
 	var faixa := faixa_do_grupo(m, g)
 	var c: float = (faixa[0] + faixa[1]) * 0.5
+	# Numa faixa estreita, a fogueira no meio partiria a terra em dois pedaços pequenos demais
+	# para uma casa: ela vai para a ponta do lado da água.
+	if faixa[1] - faixa[0] < 110.0:
+		c = faixa[0] + 8.0
 	var ocupado: Array = []
 	var est: int = g.estagio
 	var por: Callable = func(tipo: String, largura: float, extra: Dictionary, obrigatoria: bool):
 		var x := _lugar_livre(c, largura, faixa, ocupado)
 		if x < -9000.0:
-			if not obrigatoria:
-				return
-			x = clampf(c, faixa[0] + largura * 0.5, faixa[1] - largura * 0.5)
+			return
 		ocupado.append([x - largura * 0.5, x + largura * 0.5])
 		var o := {"tipo": tipo, "x": x, "largura": largura, "grupo": g.id, "estagio": est, "ruina": false}
 		o.merge(extra)
 		r.append(o)
 	ocupado.append([c - 4.0, c + 4.0])
 	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id, "estagio": est, "ruina": false})
+	# A muralha do povo guerreiro fica nas pontas: reservadas antes das outras peças.
+	if est >= 6 and g.violencia >= 0.5 and faixa[1] - faixa[0] >= 140.0:
+		for borda in [faixa[0] + 8.0, faixa[1] - 8.0]:
+			ocupado.append([borda - 8.0, borda + 8.0])
+			r.append({"tipo": "muralha", "x": borda, "largura": 16.0, "grupo": g.id, "estagio": est, "ruina": false})
 	var largura_casa := 16.0 if est == 1 else (24.0 if est == 2 else 32.0)
 	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, int(ceil(g.membros.size() / 8.0)))
-	# Duas moradias vêm antes das obras grandes: uma vila nunca fica só de templo e forja.
-	for i in mini(casas, 2):
+	var cre: bool = g.tem_crenca and not g.ceticos
+	# A ordem diz o que fica quando falta terra: uma casa, o templo (ou o altar), a obra que
+	# marca o estágio (moinho, arquivo ou forja), outra casa, e só então o resto.
+	if casas >= 1:
 		por.call("cabana", largura_casa, {}, false)
-	if g.tem_crenca and not g.ceticos:
-		por.call("altar", LARGURAS["altar"], {}, true)
-		if est >= 2:
-			por.call("templo", 32.0, {}, true)
+	if cre and est >= 2:
+		por.call("templo", 32.0, {}, false)
+	elif cre:
+		por.call("altar", LARGURAS["altar"], {}, false)
+	if est >= 6:
+		por.call("moinho", 32.0, {}, false)
+	elif est == 5:
+		por.call("arquivo", 32.0, {}, false)
+	elif est == 4:
+		por.call("forja", 24.0, {}, false)
+	if casas >= 2:
+		por.call("cabana", largura_casa, {}, false)
+	if cre and est >= 2:
+		por.call("altar", LARGURAS["altar"], {}, false)
+	# As outras obras dos estágios de cima, se couberem.
+	if est >= 6:
+		por.call("arquivo", 32.0, {}, false)
 	if est >= 5:
-		por.call("arquivo", 32.0, {}, true)
-	if est >= 4:
-		por.call("forja", 24.0, {}, true)
+		por.call("forja", 24.0, {}, false)
 	for i in range(2, casas):
 		por.call("cabana", largura_casa, {}, false)
 	if est >= 2 and g.tem_costume("estocar"):
 		por.call("celeiro", 24.0, {}, false)
-	if est >= 6:
-		por.call("moinho", 32.0, {}, false)
 	if est >= 2:
 		var adultos := 0
 		for id in g.membros:
@@ -96,11 +140,15 @@ static func construcoes_do_grupo(m, g) -> Array:
 		var rocas := clampi(int(ceil(adultos / 6.0)), 1, 4)
 		for j in rocas:
 			por.call("roca", LARGURAS["roca"], {"irrigada": est >= 6}, false)
-	if est >= 6 and g.violencia >= 0.5:
-		for borda in [faixa[0] + 8.0, faixa[1] - 8.0]:
-			r.append({"tipo": "muralha", "x": borda, "largura": 16.0, "grupo": g.id, "estagio": est, "ruina": false})
 	if est >= 6 and (g.zona == "lago" or g.zona == "praia"):
-		r.append({"tipo": "barco", "x": 112.0, "largura": 24.0, "grupo": g.id, "estagio": est, "ruina": false})
+		# Um barco por povo da beira, um ao lado do outro na água.
+		var k := 0
+		for o in m.grupos_na_zona("lago") + m.grupos_na_zona("praia"):
+			if o == g:
+				break
+			if o.estagio >= 6:
+				k += 1
+		r.append({"tipo": "barco", "x": 112.0 - 28.0 * k, "largura": 24.0, "grupo": g.id, "estagio": est, "ruina": false})
 	return r
 
 
@@ -116,7 +164,7 @@ static func _lugar_livre(c: float, largura: float, faixa: Array, ocupado: Array)
 			continue
 		var livre := true
 		for o in ocupado:
-			if ini < o[1] + 1.0 and fim > o[0] - 1.0:
+			if ini < o[1] + 2.0 and fim > o[0] - 2.0:
 				livre = false
 				break
 		if livre:

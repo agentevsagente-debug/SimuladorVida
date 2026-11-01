@@ -152,7 +152,7 @@ Tean, que fundou Nion e o guiava, morreu de repente, aos 33 anos. Foi quem levou
 
 ### Ano 50
 
-Os últimos de Marak, Namaril, Enmaril e Daena, juntaram-se a Nion. Marak deixou de existir. Diante das ruínas de Marak, pedras de fogueira cobertas de cinza velha, Taur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Diante das ruínas de Marak, pedras de fogueira cobertas de cinza velha, Nion disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nos anos 41 a 50 houve duas secas, sete fomes e quinze preces que pareceram atendidas; nasceram dezessete crianças e morreram seis pessoas. No fim do ano 50, 47 pessoas viviam no mundo: Taur (24) e Nion (23).
+Os últimos de Marak, Namaril, Enmaril e Daena, juntaram-se a Nion. Marak deixou de existir. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Taur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Nion disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nos anos 41 a 50 houve duas secas, sete fomes e quinze preces que pareceram atendidas; nasceram dezessete crianças e morreram seis pessoas. No fim do ano 50, 47 pessoas viviam no mundo: Taur (24) e Nion (23).
 
 ### Ano 51
 
@@ -178,7 +178,7 @@ No verão do ano 59, Marnim, o ambicioso, aprendeu a cortar a pedra em blocos e 
 
 ### Ano 60
 
-A fome ensinou: desde então, Nion estoca comida e não come tudo o que colhe. No verão, Pem não podia mais viver perto de Marnim. Saiu de Taur com dezesseis pessoas e fundou Ruon no morro. Diante das ruínas de Marak, pedras de fogueira cobertas de cinza velha, Ruon disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nos anos 51 a 60 houve duas secas e seis preces que pareceram atendidas; nasceram 49 crianças e morreram dezessete pessoas. No fim do ano 60, 80 pessoas viviam no mundo: Taur (4), Nion (42), Loes (18) e Ruon (16).
+A fome ensinou: desde então, Nion estoca comida e não come tudo o que colhe. No verão, Pem não podia mais viver perto de Marnim. Saiu de Taur com dezesseis pessoas e fundou Ruon no morro. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Ruon disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nos anos 51 a 60 houve duas secas e seis preces que pareceram atendidas; nasceram 49 crianças e morreram dezessete pessoas. No fim do ano 60, 80 pessoas viviam no mundo: Taur (4), Nion (42), Loes (18) e Ruon (16).
 
 ### Ano 61
 
@@ -200,7 +200,7 @@ Na primavera do ano 65, em Ruon, os jovens deixaram de lado a festa da chuva. Er
 
 ### Ano 66
 
-Na primavera, Nion já não cabia no lago. Taruim, o devoto, levou 29 pessoas para a floresta e fundou Marum. Diante das ruínas de Marak, pedras de fogueira cobertas de cinza velha, Marum disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Saor, de Loes, tomou por esposa Niu, de Ruon, e os dois povos passaram a se visitar. Em Marum, Daena tomou para si o cuidado das preces ao Que Levanta.
+Na primavera, Nion já não cabia no lago. Taruim, o devoto, levou 29 pessoas para a floresta e fundou Marum. Diante das ruínas de Marak, o chão batido de casas sem ninguém, Marum disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Saor, de Loes, tomou por esposa Niu, de Ruon, e os dois povos passaram a se visitar. Em Marum, Daena tomou para si o cuidado das preces ao Que Levanta.
 
 ### Ano 67
 

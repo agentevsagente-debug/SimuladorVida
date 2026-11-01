@@ -1,0 +1,30 @@
+Quanto tempo leva para passar pelos 6 estágios: 10 mundos de 300 anos, sem intervenção do deus.
+
+Ano em que o primeiro povo do mundo chega ao estágio (o mundo começa no 1, coleta):
+
+| Estágio | Chegaram | Mínimo | Mediana | Máximo |
+|---|---|---|---|---|
+| 2, agricultura | 10 de 10 | 15 | 30.5 | 87 |
+| 3, pedra | 10 de 10 | 42 | 77 | 230 |
+| 4, metal | 10 de 10 | 92 | 103 | 250 |
+| 5, escrita | 10 de 10 | 122 | 155 | 293 |
+| 6, engenharia | 9 de 10 | 133 | 160 | 201 |
+
+Quanto o mundo fica em cada estágio, do primeiro povo que chega a ele ao primeiro que chega ao seguinte (anos):
+
+| Estágio | Mundos | Mínimo | Mediana | Máximo |
+|---|---|---|---|---|
+| 1, coleta | 10 | 14 | 29.5 | 86 |
+| 2, agricultura | 10 | 27 | 47 | 214 |
+| 3, pedra | 10 | 10 | 29 | 83 |
+| 4, metal | 10 | 10 | 36 | 63 |
+| 5, escrita | 9 | 3 | 9 | 18 |
+
+Quanto cada povo fica em cada estágio, quando passa ao seguinte (anos; povos que nasceram de outro só contam do estágio em que nasceram em diante):
+
+| Estágio | Povos | Mínimo | Mediana | Máximo |
+|---|---|---|---|---|
+| 2, agricultura | 11 | 16 | 45 | 101 |
+| 3, pedra | 30 | 1 | 24.5 | 83 |
+| 4, metal | 28 | 0 | 33 | 77 |
+| 5, escrita | 27 | 1 | 9 | 23 |

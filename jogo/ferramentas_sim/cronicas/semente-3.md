@@ -208,7 +208,7 @@ Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade d
 
 ### Ano 89
 
-Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. Depois daquela fome, Pear passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Em Pear, olharam pedras de fogueira cobertas de cinza velha e disseram que Koil tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. Depois daquela fome, Pear passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Em Pear, olharam o chão batido de casas sem ninguém e disseram que Koil tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
 
 ### Ano 90
 
