@@ -334,8 +334,8 @@ func _censo_da_decada(a: int) -> Array:
 	return r
 
 
-## Os gestos do deus no ano em curso, um por linha, na hora em que acontecem: "Dia 3: ..." com o
-## que o deus fez e, em seguida, o que o povo fez disso no mesmo dia (a prece atendida ou
+## Os gestos do deus no ano em curso, na hora em que acontecem, um parágrafo por dia: "No dia 3,
+## ..." com o que o deus fez e, em seguida, o que o povo fez disso no mesmo dia (a prece atendida ou
 ## contrariada, uma crença nova, um costume). Não marca nada como contado: quando o ano fechar,
 ## a crônica oficial dele sai inteira, do jeito de sempre. "" se o deus não fez nada no ano.
 const GESTOS := ["chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "fogo_brando", "terra_erguida", "sonho",
@@ -358,7 +358,7 @@ func ano_em_curso() -> String:
 	if not evs.any(func(e): return GESTOS.has(e.tipo) and e.causa == "divina"):
 		return ""
 	var salvo := [_narrados.duplicate(true), _primeiros.duplicate(), _usados.duplicate()]
-	var linhas: PackedStringArray = []
+	var dias: Array = []          # [dia, [frases]], em ordem
 	var contados := {}
 	for e in evs:
 		if not GESTOS.has(e.tipo) or e.causa != "divina":
@@ -381,12 +381,20 @@ func ano_em_curso() -> String:
 			if not fr.is_empty():
 				frases.append(G.maiuscula(fr))
 				contados[r.id] = true
-		linhas.append("Dia %d: %s" % [e.dia + 1, " ".join(frases)])
+		if not dias.is_empty() and dias[-1][0] == e.dia:
+			dias[-1][1].append_array(frases)
+		else:
+			dias.append([e.dia, frases])
 	_narrados = salvo[0]
 	_primeiros = salvo[1]
 	_usados = salvo[2]
-	if linhas.is_empty():
+	if dias.is_empty():
 		return ""
+	var linhas: PackedStringArray = []
+	for d in dias:
+		var fs: PackedStringArray = d[1]
+		fs[0] = _minuscula_inicial(fs[0])
+		linhas.append("No dia %d, %s" % [d[0] + 1, " ".join(fs)])
 	return "### Ano %d (em curso)\n\n%s" % [a, "\n\n".join(linhas)]
 
 

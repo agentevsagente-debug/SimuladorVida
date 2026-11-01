@@ -4562,13 +4562,16 @@ func cronica_viva() -> String:
 		_viva = _cronista.montar(era_inicio_ano, _cronista.ultimo_ano_escrito, "", "", true, false, true)
 		_viva_chave = chave
 	var em_curso := cronica_em_curso()
-	return _viva if em_curso.is_empty() else _viva + "
+	var fecho := "*Ano %d, dia %d. O ano continua.*" % [ano(), dia_do_ano() + 1]
+	return _viva + "
 
-" + em_curso
+" + (em_curso + "
+
+" if not em_curso.is_empty() else "") + fecho
 
 
-## Os gestos do deus no ano em curso, na hora: "### Ano 3 (em curso)" e uma linha por gesto,
-## "Dia 1: Choveu do céu limpo sobre o acampamento. ...", com a reação do povo no mesmo dia.
+## Os gestos do deus no ano em curso, na hora: "### Ano 3 (em curso)" e um parágrafo por dia,
+## "No dia 1, choveu do céu limpo sobre o acampamento. ...", com a reação do povo no mesmo dia.
 ## "" se o deus não fez nada no ano. Quando o ano fecha, esses gestos entram na crônica do ano.
 func cronica_em_curso() -> String:
 	return _cronista.ano_em_curso()
