@@ -23,7 +23,7 @@ const REGRAS := {
 	"ave_grande": [["primavera", "verão", "outono"], 7.0, 17.0, 20.0, 60.0, 2],
 }
 const FOLHAS := {
-	"passaros": "passaro_voar_4q", "pousado": "passaro_pousado_2q", "peixe": "peixe_saltar_4q",
+	"passaros": "passaro_voar_4q", "pousado": "passaro_pousado_forte_2q", "peixe": "peixe_saltar_4q",
 	"sapo": "sapo_2q", "garca": "garca_2q", "coelho": "coelho_4q", "coelho_tarde": "coelho_4q", "coelho_dia": "coelho_4q",
 	"cervo": "cervo_4q", "morcego": "morcego_4q", "migrando": "bando_migrando_4q",
 	"porco": "porco_do_mato_4q", "ave_grande": "ave_grande_4q",
@@ -94,13 +94,13 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 		"pousado":  # a maioria nos telhados (contra o céu), o resto no chão da clareira ou da praia, longe de gente
 			if not vista.telhados.is_empty() and _rng.randf() < 0.6:
 				var t: Vector2 = vista.telhados[_rng.randi() % vista.telhados.size()]
-				fosco.emitir(folha, 4, 2, Vector2(t.x, t.y - 1), Vector2.ZERO, _rng.randf_range(20, 45),
+				fosco.emitir(folha, 5, 2, Vector2(t.x, t.y - 1), Vector2.ZERO, _rng.randf_range(20, 45),
 					_rng.randf_range(0.8, 1.6), 0, {"espelho": _rng.randf() < 0.5})
 				return
 			for tentativa in 6:
 				var x := _rng.randf_range(140, 330)
 				if _longe_de_gente(x, pessoas_x, 16.0):
-					fosco.emitir(folha, 4, 2, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(15, 35),
+					fosco.emitir(folha, 5, 2, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(15, 35),
 						_rng.randf_range(0.8, 1.6), 0, {"espelho": _rng.randf() < 0.5})
 					break
 		"peixe":  # salta do lago e volta
