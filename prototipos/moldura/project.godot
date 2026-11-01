@@ -1,0 +1,48 @@
+; Moldura da fase 0: janela transparente, sempre por cima, leve.
+
+config_version=5
+
+[application]
+
+config/name="Moldura (fase 0)"
+run/main_scene="res://moldura.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+run/max_fps=30
+run/low_processor_mode=true
+run/low_processor_mode_sleep_usec=33333
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 0)
+
+[audio]
+
+driver/driver="Dummy"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=176
+window/size/window_width_override=960
+window/size/window_height_override=352
+window/size/resizable=false
+window/size/borderless=true
+window/size/always_on_top=true
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+window/stretch/scale_mode="integer"
+window/energy_saving/keep_screen_on=false
+
+[physics]
+
+common/physics_ticks_per_second=10
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
+viewport/transparent_background=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 0)

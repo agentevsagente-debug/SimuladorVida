@@ -1,0 +1,11 @@
+﻿{
+    "cenario":  "andando",
+    "duracao_s":  602,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.053,
+    "cpu_media_1nucleo":  1.48,
+    "cpu_max_amostra_pct":  0.156,
+    "ws_media_mb":  179.5,
+    "ws_max_mb":  179.7,
+    "privada_max_mb":  167.6
+}

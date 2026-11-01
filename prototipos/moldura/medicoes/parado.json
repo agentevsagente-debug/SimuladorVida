@@ -1,0 +1,11 @@
+﻿{
+    "cenario":  "parado",
+    "duracao_s":  602,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.019,
+    "cpu_media_1nucleo":  0.52,
+    "cpu_max_amostra_pct":  0.122,
+    "ws_media_mb":  184.3,
+    "ws_max_mb":  195.5,
+    "privada_max_mb":  209.9
+}
