@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 10, de 01/11/2026 (sem picos: a rotina do dia é montada numa thread; nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms com a população máxima; `adiantar_rotina()` não é mais preciso). Antes: versão 9 (desempenho da rotina: respostas guardadas por hora e `adiantar_rotina()`). Antes: versão 8 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 10, de 01/11/2026 (sem picos: a rotina do dia é montada numa thread; nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms com a população máxima; `adiantar_rotina()` não é mais preciso; lugares de descanso sem fila; construções e ruínas com a cultura; cópias de segurança do mundo salvo e da estante). Antes: versão 9 (desempenho da rotina: respostas guardadas por hora e `adiantar_rotina()`). Antes: versão 8 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -117,7 +117,7 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 | `muralha` | 16 | estágio 6, povo guerreiro: uma torre em cada ponta do acampamento |
 | `barco` | 24 | estágio 6, povo do lago ou da praia: na água, em x = 112 |
 
-As peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. Só mudam de lugar quando o número de peças muda ou quando o povo se muda. Moradias, celeiro, moinho e roças que não cabem na faixa do povo ficam de fora. As peças únicas (altar, templo, arquivo, forja) sempre aparecem, mesmo encostadas.
+As peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. As duas primeiras moradias vêm logo depois da fogueira, antes do altar e das obras grandes, para que uma vila nunca fique sem casa. Só mudam de lugar quando o número de peças muda ou quando o povo se muda. Moradias, celeiro, moinho e roças que não cabem na faixa do povo ficam de fora. As peças únicas (altar, templo, arquivo, forja) sempre aparecem, mesmo encostadas.
 
 ### `ruinas_visiveis() -> Array[Dictionary]`
 
@@ -169,12 +169,14 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `escrever` | no arquivo, estágio 5 em diante, escribas, curiosos e sacerdotes |
 | `remar` | no barco, estágio 6, povos do lago e da praia. Única ação permitida na água (x < 126). |
 | `rezar` | no altar: o sacerdote de manhã e ao entardecer, quem tem prece aberta, os devotos, a prece coletiva e o funeral |
-| `fogueira` | sentado em volta do fogo à noite; os velhos passam boa parte do dia ali |
+| `fogueira` | sentado em volta do fogo à noite, olhando para ele (`virado`); os velhos passam boa parte do dia ali |
 | `conversar` | em pares, um de frente para o outro (`virado` oposto), no almoço e à noite; o líder visitando quem trabalha; visitas ao recém-nascido |
 | `cuidar` | mãe com bebê, perto de casa |
 | `dancar` | casamentos e festas, em volta do fogo |
 | `lutar` | guerra: as duas linhas frente a frente |
 | `carregar_morto` | os dois primeiros do cortejo do funeral |
+
+**Lugares sem fila.** Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não muda: os lugares ficam a 7 px uns dos outros, alternando os lados da fogueira e a pelo menos 6 px do centro dela, por ordem de chegada ao mundo. É ali que ela fica na `fogueira` da noite e nas conversas em volta do fogo. Quem não cabe na faixa do povo vai direto para casa à noite (`dormir`). Em casa, cada um dorme num ponto próprio ao longo da largura da moradia. Em povos grandes, a coleta se espalha pela faixa de trabalho inteira. Ninguém fica na água (x < 126), a não ser remando; quem pesca fica na margem, de 126 a 136.
 
 As crianças correm umas atrás das outras perto do fogo (trechos curtos de `andar` e `parado`). Cada pessoa faz de 2 a 4 atividades por dia, conforme o estágio, o papel, a zona e os traços, e as repete em ciclos até o fim da tarde. Os horários de acordar e dormir variam, e dois dias nunca são iguais (às 10h, só 4% a 6% das pessoas estão no mesmo lugar que no dia anterior). Tudo sai da semente.
 
@@ -380,7 +382,13 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`).
 
 **O arquivo** é texto: o formato de Variant do Godot (`var_to_str`), com uma linha de cabeçalho. Ele guarda o mundo inteiro, incluindo o estado do sorteio e o estado do cronista, e também a hora real do salvamento (`mundo.salvo_em`, em segundos Unix). Os números reais são gravados pelos seus 64 bits ("@f:" seguido de um inteiro), porque a leitura de reais em texto do Godot perde o último dígito. O resultado é exato: um mundo salvo e carregado segue igual, passo a passo, ao que nunca parou.
 
-**A gravação é segura:** o núcleo grava num arquivo `.novo` e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
+**A gravação é segura:** o núcleo grava num arquivo `.novo`, confere o que gravou e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
+
+**Cópias de segurança:** a cada salvamento bem-sucedido, as 3 versões anteriores ficam guardadas, rodando: `mundo.1.txt` é a anterior, `mundo.2.txt` a de antes, `mundo.3.txt` a mais velha.
+- Se o `mundo.txt` estiver estragado ou ilegível (cortado, vazio, com lixo, sem alguma parte), `carregar()` tenta as cópias, da mais nova para a mais velha. O mundo que voltou de uma cópia traz `mundo.recuperado_de` com o caminho dela (vazio quando veio do arquivo certo). Se nenhuma serve, devolve null.
+- `carregar_e_avancar()` conta isso no retorno: `ausencia.recuperado_de`, e o `relato` começa com "*O mundo salvo estava estragado. Ele voltou da cópia de segurança de <data>, e o que aconteceu depois dela se perdeu.*"
+- `existe()` também vale quando só há cópias.
+- `abandonar()` apaga o mundo e as cópias dele.
 
 **Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. Com 284 anos (o mundo grande da regressão, 10 mil eventos), o arquivo tem 5,6 MB e salvar leva cerca de 800 ms. O documento técnico pede salvar a cada dia de jogo e ao fechar. Isso é decisão da apresentação; o núcleo só salva quando chamado.
 
@@ -436,12 +444,12 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 |---|---|
 | `regressao.gd` | Primeiro, mede o desempenho com a população máxima (veja `desempenho.gd`): nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms. Depois, roda as sementes 1 a 5 e o cenário de intervenções por 100 anos. Cada uma roda duas vezes e precisa dar a mesma crônica. Também salva e carrega a semente 1 no meio. Grava as crônicas em `cronicas/` e sai com código 1 se algo falhar. |
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
-| `testar_persistencia.gd` | Testa salvar, carregar e a ausência. |
+| `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
-| `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder. Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
+| `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder, e o ano em que o primeiro povo chega a cada estágio (tabela de mínimo, mediana e máximo em `sondagem/<rotulo>-estagios.txt`; a de 10 sementes por 300 anos está em `sondagem/estagios.txt`). Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
 | `medir_desempenho.gd` | `medir` (padrão) mede as janelas de desempenho e mostra os piores passos e consultas. `gerar` procura o maior mundo no estágio 6 e o guarda, comprimido, em `mundo_grande.bin` (refazer se o formato do mundo salvo mudar). |
 | `desempenho.gd` | Mede como a apresentação usa o mundo: a cada passo, avança uma hora e consulta tudo o que `simulacao.gd` lê. Cada janela (uma virada de ano com 287 pessoas e uma virada de década) roda em 3 processos novos, e vale o menor tempo de cada passo, porque esta máquina tem picos de outros processos. |
 
@@ -481,5 +489,6 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
 - **Estante** (`preload("res://nucleo/estante.gd")`): guardada em `user://estante/`, fora do mundo salvo, e sobrevive ao abandono do mundo.
   - `Estante.livros() -> Array[{id, titulo, era, semente, ano_ini, ano_fim, guardado_em}]`
   - `Estante.ler(id) -> String` devolve o markdown do livro.
+  - Tudo tem cópia, porque a estante é insubstituível. Cada livro é gravado também como `<id>.1.md`, e `ler` usa a cópia se o arquivo sumiu ou está vazio. O índice guarda as 3 versões anteriores (`indice.1.txt` a `indice.3.txt`); se ele estiver estragado, valem as cópias, e se todas estiverem, o índice é refeito a partir dos livros (com o título da primeira linha).
   - `Persistencia.salvar(mundo)` leva para a estante os livros que ainda não estão lá.
 - **Abandonar o mundo:** `Persistencia.abandonar(mundo) -> livro` fecha a crônica da era atual como livro (mesmo com o povo vivo), guarda o livro na estante e apaga o mundo salvo. Depois, a apresentação começa outro mundo com `Mundo.new(semente)`, e a estante continua lá.

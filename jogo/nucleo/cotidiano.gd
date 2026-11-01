@@ -69,6 +69,11 @@ static func construcoes_do_grupo(m, g) -> Array:
 		r.append(o)
 	ocupado.append([c - 4.0, c + 4.0])
 	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id, "estagio": est, "ruina": false})
+	var largura_casa := 16.0 if est == 1 else (24.0 if est == 2 else 32.0)
+	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, int(ceil(g.membros.size() / 8.0)))
+	# Duas moradias vêm antes das obras grandes: uma vila nunca fica só de templo e forja.
+	for i in mini(casas, 2):
+		por.call("cabana", largura_casa, {}, false)
 	if g.tem_crenca and not g.ceticos:
 		por.call("altar", LARGURAS["altar"], {}, true)
 		if est >= 2:
@@ -77,9 +82,7 @@ static func construcoes_do_grupo(m, g) -> Array:
 		por.call("arquivo", 32.0, {}, true)
 	if est >= 4:
 		por.call("forja", 24.0, {}, true)
-	var largura_casa := 16.0 if est == 1 else (24.0 if est == 2 else 32.0)
-	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, int(ceil(g.membros.size() / 8.0)))
-	for i in casas:
+	for i in range(2, casas):
 		por.call("cabana", largura_casa, {}, false)
 	if est >= 2 and g.tem_costume("estocar"):
 		por.call("celeiro", 24.0, {}, false)

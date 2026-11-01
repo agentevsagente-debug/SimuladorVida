@@ -4,6 +4,10 @@ extends RefCounted
 ## estado do mundo e de `ruido(id, dia, k)`, sem tocar no sorteio da simulação. A mesma
 ## pessoa no mesmo dia faz sempre a mesma coisa; dois dias nunca são iguais.
 ##
+## Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não
+## muda: os lugares ficam a ESPACO px uns dos outros, alternando os lados da fogueira. Quem
+## não cabe na faixa do povo não vai ao fogo à noite: recolhe-se em casa mais cedo.
+##
 ## O plano é uma lista de paradas {ini, fim, x, acao, ida, virado, cena}, em minutos
 ## do dia (0 a 1440). Entre uma parada e outra a pessoa anda a VELOCIDADE px por minuto
 ## de jogo, com a ação `ida` (andar, lenha...). Blocos fixos (cenas, conversas, crianças
@@ -16,6 +20,7 @@ extends RefCounted
 const Cotidiano = preload("cotidiano.gd")
 
 const VELOCIDADE := 5.0          # px por minuto de jogo andando
+const ESPACO := 7.0              # px entre dois lugares de descanso em volta do fogo
 const MIN_DIA := 1440.0
 const ACOES := ["dormir", "andar", "parado", "colher", "rezar", "fogueira", "pescar", "lenha",
 	"construir", "forjar", "escrever", "remar", "lutar", "carregar_morto", "dancar", "cuidar", "conversar"]
@@ -130,7 +135,7 @@ func casa_de(pid: int) -> float:
 # ---------------------------------------------------------------- lugares
 
 func _contexto(g) -> Dictionary:
-	var c := {"casas": [], "rocas": [], "fogo": 0.0, "altar": -1.0, "templo": -1.0, "forja": -1.0,
+	var c := {"casas": [], "largura_casa": 16.0, "rocas": [], "fogo": 0.0, "altar": -1.0, "templo": -1.0, "forja": -1.0,
 		"arquivo": -1.0, "celeiro": -1.0, "moinho": -1.0, "barco": -1.0}
 	for o in Cotidiano.construcoes_do_grupo(m, g):
 		match o["tipo"]:
@@ -138,6 +143,7 @@ func _contexto(g) -> Dictionary:
 				c["fogo"] = o["x"]
 			"cabana":
 				c["casas"].append(o["x"])
+				c["largura_casa"] = o["largura"]
 			"roca":
 				c["rocas"].append(o["x"])
 			"altar", "templo", "forja", "arquivo", "celeiro", "moinho", "barco":
@@ -153,17 +159,35 @@ func _contexto(g) -> Dictionary:
 		c["mata"] = clampf(c["fogo"] + 30.0 * (1.0 if ruido(g.id, dia, 1) < 0.5 else -1.0), mata[0] + 6.0, Cotidiano.FAIXAS["morro"][1] - 8.0)
 	# Onde se pesca: a margem do lago.
 	c["margem"] = Cotidiano.MARGEM + 2.0
+	# O lugar de descanso de cada um, pela ordem de chegada ao mundo (o id): os primeiros
+	# ficam mais perto do fogo, um de cada lado, a ESPACO px uns dos outros.
+	var ids: Array = g.membros.duplicate()
+	ids.sort()
+	var descanso := {}
+	for i in ids.size():
+		var x: float = c["fogo"] + (1.0 if i % 2 == 0 else -1.0) * (6.0 + ESPACO * (i / 2))
+		if x >= c["faixa"][0] + 3.0 and x <= c["faixa"][1] - 3.0 and x >= Cotidiano.MARGEM:
+			descanso[ids[i]] = x
+	c["descanso"] = descanso
+	# Quanto o trabalho se espalha: povos grandes ocupam a faixa de trabalho inteira.
+	c["espalhar"] = maxf(90.0, g.membros.size() * 3.0)
 	return c
 
 
 func _casa(p, c: Dictionary) -> float:
 	if c["casas"].is_empty():
 		return c["fogo"] - 6.0
-	return c["casas"][p.id % c["casas"].size()] + (ruido(p.id, 0, 7) - 0.5) * 8.0
+	return c["casas"][p.id % c["casas"].size()] + (ruido(p.id, 0, 7) - 0.5) * (c["largura_casa"] - 4.0)
 
 
+## O lugar de descanso da pessoa perto do fogo; quem não cabe fica perto de casa.
 func _lugar_fogo(p, c: Dictionary) -> float:
-	return c["fogo"] + (ruido(p.id, 0, 1) - 0.5) * 24.0
+	return c["descanso"].get(p.id, _casa(p, c))
+
+
+## Para que lado olha quem está em `x`: para o fogo.
+func _virado_ao_fogo(x: float, c: Dictionary) -> int:
+	return -1 if x > c["fogo"] else 1
 
 
 # ---------------------------------------------------------------- blocos fixos
@@ -545,7 +569,7 @@ func _vida_social(g) -> void:
 		for i in range(0, n, 2):
 			var a = adultos[i]
 			var b = adultos[i + 1]
-			var x := _lugar_fogo(a, c) + (ruido(a.id, dia, janela[2]) - 0.5) * 20.0
+			var x := _lugar_fogo(a, c) + (ruido(a.id, dia, janela[2]) - 0.5) * 6.0
 			var info := {}
 			if _fixar(a.id, [_parada(janela[0], janela[1], x - 4.0, "conversar", "andar", 1)]):
 				if not _fixar(b.id, [_parada(janela[0], janela[1], x + 4.0, "conversar", "andar", -1)]):
@@ -630,7 +654,8 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 	if idade > 60:
 		# Os velhos ficam perto do fogo, dão voltas curtas e conversam.
 		for i in 8:
-			r.append({"x": _lugar_fogo(p, c), "acao": "fogueira", "dur": 40.0 + _sorte() * 50.0})
+			var lugar := _lugar_fogo(p, c)
+			r.append({"x": lugar, "acao": "fogueira", "dur": 40.0 + _sorte() * 50.0, "virado": _virado_ao_fogo(lugar, c)})
 			if _sorte() < 0.5:
 				r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "conversar" if _sorte() < 0.5 else "parado", "dur": 10.0 + _sorte() * 15.0})
 		return r
@@ -692,7 +717,7 @@ func _mais_tarefas(r: Array) -> bool:
 	match escolha:
 		"coletar":
 			for j in 2 + int(_sorte() * 2.0):
-				r.append({"x": clampf(c["fogo"] + (_sorte() - 0.5) * 90.0, trab[0] + 3.0, trab[1] - 3.0), "acao": "colher", "dur": 20.0 + _sorte() * 25.0})
+				r.append({"x": clampf(c["fogo"] + (_sorte() - 0.5) * c["espalhar"], trab[0] + 3.0, trab[1] - 3.0), "acao": "colher", "dur": 20.0 + _sorte() * 25.0})
 		"pescar":
 			r.append({"x": c["margem"] + _sorte() * 6.0, "acao": "pescar", "dur": 60.0 + _sorte() * 70.0, "virado": -1})
 		"lenha":
@@ -792,10 +817,12 @@ func _plano(p, g) -> Array:
 		x = blocos[bi]["paradas"][-1]["x"]
 		bi += 1
 	# O fim do dia em volta do fogo, e depois casa.
+	# Quem não tem lugar perto do fogo (povo grande demais para a faixa) vai direto para casa.
 	var fogo := _lugar_fogo(p, c)
 	var chega_fogo := t + absf(fogo - x) / VELOCIDADE
-	if chega_fogo < deita - 20.0:
-		plano.append(_parada(chega_fogo, deita - absf(casa - fogo) / VELOCIDADE, fogo, "fogueira"))
+	if c["descanso"].has(p.id) and chega_fogo < deita - 20.0:
+		plano.append(_parada(chega_fogo, deita - absf(casa - fogo) / VELOCIDADE, fogo, "fogueira", "andar",
+			_virado_ao_fogo(fogo, c)))
 		t = deita - absf(casa - fogo) / VELOCIDADE
 		x = fogo
 	var chega_casa := maxf(t + absf(casa - x) / VELOCIDADE, deita)

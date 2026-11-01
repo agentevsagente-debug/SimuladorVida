@@ -50,6 +50,9 @@ var pessoas: Dictionary = {}     # id -> Pessoa (vivas e mortas)
 var vivos: Dictionary = {}
 var peste_ate: int = -1
 # A rotina visível (nucleo/rotina.gd). Nada disto é salvo.
+## Se este mundo foi carregado de uma cópia de segurança (o salvo estava estragado), o
+## caminho dela; senão, "". Não é salvo.
+var recuperado_de: String = ""
 var _rotina_cache = null          # a rotina em uso: a de hoje (de madrugada, ainda a de ontem)
 var _montando = null              # a rotina sendo montada numa thread de trabalho
 var _tarefa: int = -1             # a tarefa dessa montagem no WorkerThreadPool
