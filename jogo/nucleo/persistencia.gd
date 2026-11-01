@@ -33,6 +33,8 @@ const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zo
 	"_construcoes_chave", "_construcoes", "_preces_chave", "_preces", "_textos_prece", "_obras_por_grupo"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
+## Campos do cronista que os arquivos antigos não têm: gravados sempre, lidos se existirem.
+const CAMPOS_CRONISTA_NOVOS := ["_recentes"]
 const Estante = preload("estante.gd")
 const Arquivo = preload("arquivo.gd")
 const COPIAS := Arquivo.COPIAS
@@ -309,7 +311,7 @@ static func _retrato(m) -> Dictionary:
 		if not CAMPOS_ESPECIAIS.has(nome):
 			mundo[nome] = _copia(m.get(nome))
 	var cron := {}
-	for k in CAMPOS_CRONISTA:
+	for k in CAMPOS_CRONISTA + CAMPOS_CRONISTA_NOVOS:
 		cron[k] = _copia(m._cronista.get(k))
 	# Os nomes das colunas são calculados aqui, para a thread só ler o que já está guardado.
 	for o in [Pessoa.new(), Grupo.new(), Zona.new(), Evento.new()]:
@@ -377,6 +379,9 @@ static func _de_dict(d: Dictionary):
 		m.eventos.append(e)
 	for k in CAMPOS_CRONISTA:
 		m._cronista.set(k, d["cronista"][k])
+	for k in CAMPOS_CRONISTA_NOVOS:
+		if d["cronista"].has(k) and typeof(d["cronista"][k]) == typeof(m._cronista.get(k)):
+			m._cronista.set(k, d["cronista"][k])
 	m.reindexar()
 	m._cronista.aquecer()
 	return m

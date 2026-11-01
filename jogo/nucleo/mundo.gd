@@ -883,8 +883,14 @@ func _comecar_doenca(g: Grupo) -> void:
 
 # ---------------------------------------------------------------- vida
 
+## Acima disto, a terra não dá para todos: nascem cada vez menos crianças. Nos mundos sem
+## deus quase nunca se chega aqui; um deus que dá comida sempre levaria a população longe.
+const LOTACAO := 320
+
+
 func _vida_do_dia() -> void:
 	var a := ano()
+	var lotacao := clampf(1.0 - float(populacao() - LOTACAO) / 150.0, 0.05, 1.0)
 	for g in grupos_vivos():
 		var bem_alimentado = g.fome_dias == 0
 		for p in _membros(g):
@@ -899,7 +905,7 @@ func _vida_do_dia() -> void:
 					if marido.vivo and marido.grupo == p.grupo:
 						var c := 1.0 / 55.0 if bem_alimentado else 1.0 / 220.0
 						# Com pouca comida guardada, nascem menos crianças.
-						c *= clampf(g.estoque / (g.membros.size() * 3.0), 0.2, 1.0)
+						c *= clampf(g.estoque / (g.membros.size() * 3.0), 0.2, 1.0) * lotacao
 						if chance(c):
 							p.gravidez = 12
 
@@ -1366,8 +1372,7 @@ func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cet
 		if not novo_cetico:
 			# Os fiéis que partem dão ao deus um nome novo.
 			var nat := _natureza_do_nome(g.nome_deus)
-			var opcoes: Array = NOMES_DEUS["sonho" if nat != "sonho" else "chuva"]
-			var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+			var escolha: Array = _nome_livre(NOMES_DEUS["sonho" if nat != "sonho" else "chuva"], g)
 			novo.nome_deus = escolha[0]
 			novo.genero_deus = escolha[1]
 			for p in levar:
@@ -1810,12 +1815,19 @@ func _fe_e_poder_do_ano() -> void:
 			for p in _membros(g):
 				if not p.tem("devoto"):
 					p.fe *= 0.95
+		# Um deus que nunca aparece vai sendo esquecido: depois de 15 anos sem nenhum gesto
+		# dele, a fé de quem não é devoto esfria um pouco a cada ano.
+		var esquecido: bool = g.ultimo_divino < 0 or dia_abs() - g.ultimo_divino > 15 * DIAS_ANO
+		if esquecido and a - g.origem.get("ano", 1) > 15:
+			for p in _membros(g):
+				if not p.tem("devoto"):
+					p.fe *= 0.97
 		var fe_media := 0.0
 		for p in _membros(g):
 			fe_media += p.fe
 		fe_media /= g.membros.size()
 		if g.tem_crenca and not g.ceticos:
-			if g.estagio >= 5 and fe_media < 0.45 and chance(0.04):
+			if (g.estagio >= 5 or (g.estagio >= 3 and esquecido)) and fe_media < 0.45 and chance(0.04):
 				g.ceticos = true
 				g.preces.clear()
 				registrar("secularizacao", "social", 8, g.zona, g.id, [], {"deus": g.nome_deus})
@@ -1840,8 +1852,7 @@ func _profeta(g: Grupo) -> void:
 	var nat: String = naturezas[rng.randi_range(0, naturezas.size() - 1)]
 	if nat == atual:
 		nat = naturezas[(naturezas.find(nat) + 1) % naturezas.size()]
-	var opcoes: Array = NOMES_DEUS[nat]
-	var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+	var escolha: Array = _nome_livre(NOMES_DEUS[nat], g)
 	profeta.feitos += 3
 	profeta.fe = 1.0
 	var templo_forte = g.poder == "sacerdotes" or (g.sacerdote != -1 and (pessoas[g.sacerdote].tem("rancoroso") or pessoas[g.sacerdote].tem("ambicioso")))
@@ -1938,6 +1949,7 @@ func _peste() -> void:
 
 ## Um povo que acaba ou se muda deixa ruínas, que guardam o que ele sabia.
 func _deixar_ruinas(g: Grupo) -> void:
+	casas_vazias.erase(g.id)
 	var saberes: Array = []
 	if g.estagio >= 2:
 		saberes.append("agricultura")
@@ -2441,6 +2453,8 @@ const NOMES_DEUS := {
 func _impressionar(g: Grupo, peso: float, natureza: String, e: Evento, benigno: bool) -> void:
 	if g.extinto:
 		return
+	if e != null and e.causa == "divina":
+		g.ultimo_divino = dia_abs()
 	for p in _membros(g):
 		var d := 0.05 * peso
 		if p.tem("devoto"):
@@ -2471,13 +2485,26 @@ func _impressionar(g: Grupo, peso: float, natureza: String, e: Evento, benigno: 
 		var atual := _natureza_do_nome(g.nome_deus)
 		if atual != natureza and NOMES_DEUS.has(natureza):
 			var antigo := g.nome_deus
-			var opcoes: Array = NOMES_DEUS[natureza]
-			var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+			var escolha: Array = _nome_livre(NOMES_DEUS[natureza], g)
 			g.nome_deus = escolha[0]
 			g.genero_deus = escolha[1]
 			g.deus_renomeado_ano = ano()
 			registrar("deus_renomeado", "social", 7, g.zona, g.id, [], {"antigo": antigo,
 				"novo": g.nome_deus, "genero": g.genero_deus, "origem": e.id})
+
+
+## Um nome para o deus que nenhum outro povo vivo usa agora (nem este povo): dois povos que
+## nunca se falaram não chegam ao mesmo nome. Se todos os da natureza estão em uso, vale
+## qualquer um. Um sorteio só, como antes.
+func _nome_livre(opcoes: Array, g: Grupo) -> Array:
+	var usados := {g.nome_deus: true}
+	for o in grupos_vivos():
+		if o != g and o.tem_crenca:
+			usados[o.nome_deus] = true
+	var livres: Array = opcoes.filter(func(par): return not usados.has(par[0]))
+	if livres.is_empty():
+		livres = opcoes
+	return livres[rng.randi_range(0, livres.size() - 1)]
 
 
 func _natureza_do_nome(nome: String) -> String:
@@ -2491,8 +2518,7 @@ func _natureza_do_nome(nome: String) -> String:
 func _nascer_crenca(g: Grupo, natureza: String, e: Evento) -> void:
 	if not NOMES_DEUS.has(natureza):
 		natureza = "tempestade"
-	var opcoes: Array = NOMES_DEUS[natureza]
-	var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+	var escolha: Array = _nome_livre(NOMES_DEUS[natureza], g)
 	g.tem_crenca = true
 	g.ceticos = false
 	g.nome_deus = escolha[0]
@@ -2546,6 +2572,9 @@ func _reagir_raio(g: Grupo, vitima: Pessoa, e: Evento, divino: bool) -> void:
 	_impressionar(g, 3.0 if divino else 2.0, "raio", e, false)
 	if g.tem_crenca and leitura == "castigo":
 		_nova_crenca(g, "castiga", e, {"vitima": vitima.id})
+		# Um deus que mata pede para ser aplacado.
+		if divino and not g.tem_costume("oferendas"):
+			_novo_costume(g, "oferendas", e)
 	if leitura == "martir" and g.tem_crenca:
 		_nova_crenca(g, "martir", e, {"vitima": vitima.id})
 	if not g.tem_costume("tabu_tempestade"):
@@ -2674,14 +2703,17 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 	var pr: Dictionary = g.preces[nec]
 	g.preces.erase(nec)
 	var autor: Pessoa = pessoas[pr["autor"]]
+	var falso := resposta.causa != "divina"
+	# O acaso convence menos que o deus: a fé sobe menos, o silêncio pesa mais, e só um deus
+	# que responde de verdade cria dependência.
 	for p in _membros(g):
-		p.fe = clampf(p.fe + (0.15 if not p.tem("desconfiado") else 0.03), -1.0, 1.0)
+		p.fe = clampf(p.fe + (0.03 if p.tem("desconfiado") else (0.08 if falso else 0.15)), -1.0, 1.0)
 	autor.fe = clampf(autor.fe + 0.2, -1.0, 1.0)
 	autor.feitos += 1
-	g.silencios = maxi(0, g.silencios - 2)
+	g.silencios = maxi(0, g.silencios - 1) if falso else 0
 	ultimo_milagre[g.id] = dia_abs()
-	g.atendidas_seguidas += 1
-	var falso := resposta.causa != "divina"
+	if not falso:
+		g.atendidas_seguidas += 1
 	registrar("prece_atendida", "social", 6, g.zona, g.id, [autor.id], {"necessidade": nec,
 		"prece": pr["evento"], "resposta": resposta.id, "falso_milagre": falso})
 	if not g.tem_crenca_chave("ouve_preces"):
@@ -3364,12 +3396,65 @@ func cultura_do_grupo(g: Grupo) -> Dictionary:
 ## Construções abandonadas, de povos que acabaram ou se mudaram, e de eras anteriores.
 func ruinas_visiveis() -> Array:
 	var r: Array = []
+	# Onde há uma vila viva, as ruínas antigas foram desmanchadas para fazer casa nova: não
+	# aparecem no meio dela.
+	var vivas: Array = construcoes()
 	for ru in ruinas:
+		if _sob_obra(ru["x"], ru["largura"], vivas):
+			continue
 		var g: Grupo = grupo(ru.get("grupo", -1))
 		r.append({"tipo": ru["tipo"], "x": ru["x"], "largura": ru["largura"], "estagio": ru["estagio"],
 			"povo": ru["povo"], "era": ru["era"], "ano": ru["ano"], "anos": ano() - ru["ano"], "ruina": true,
-			"aparencia": g.aparencia if g != null else {}})
+			"aparencia": g.aparencia if g != null else {}, "abandonada": false})
+	# As casas que a vila deixou vazias ao encolher: ficam nas pontas, e o mato cresce nelas.
+	for gid in casas_vazias:
+		var g: Grupo = grupo(gid)
+		if g == null or g.extinto:
+			continue
+		for cv in casas_vazias[gid]:
+			if _sob_obra(cv["x"], cv["largura"], vivas):
+				continue
+			r.append({"tipo": "cabana", "x": cv["x"], "largura": cv["largura"], "estagio": cv["estagio"], "povo": g.nome,
+				"era": era, "ano": cv["desde"], "anos": ano() - cv["desde"], "ruina": true, "aparencia": g.aparencia,
+				"abandonada": true, "grupo": gid})
 	return r
+
+
+func _sob_obra(x: float, largura: float, obras: Array) -> bool:
+	for o in obras:
+		if o["tipo"] == "barco":
+			continue
+		if absf(o["x"] - x) < (o["largura"] + largura) * 0.5:
+			return true
+	return false
+
+
+## Casas que a vila deixou vazias ao encolher: id do grupo -> [{x, largura, estagio, desde}].
+## Só a apresentação lê (a simulação não usa); somem com o tempo, ou quando a vila cresce de
+## novo e volta a morar nelas.
+var casas_vazias: Dictionary = {}
+
+
+func _casas_que_esvaziaram(g: Grupo, antes: Array, depois: Array) -> void:
+	var vazias: Array = casas_vazias.get(g.id, [])
+	var casas_antes: Array = antes.filter(func(o): return o["tipo"] == "cabana")
+	var n_depois: int = depois.filter(func(o): return o["tipo"] == "cabana").size()
+	if casas_antes.size() > n_depois:
+		# As que ficam vazias são as mais longe do fogo: as das pontas.
+		var fogo: float = antes[0]["x"]
+		casas_antes.sort_custom(func(a, b): return absf(a["x"] - fogo) > absf(b["x"] - fogo))
+		for o in casas_antes.slice(0, casas_antes.size() - n_depois):
+			vazias.append({"x": o["x"], "largura": o["largura"], "estagio": o["estagio"], "desde": ano()})
+	# Uma casa nova onde havia uma vazia: a vazia foi ocupada de novo.
+	var restam: Array = []
+	for cv in vazias:
+		var limite := 30 if cv["estagio"] <= 2 else 200
+		if ano() - cv["desde"] <= limite and not _sob_obra(cv["x"], cv["largura"], depois):
+			restam.append(cv)
+	if restam.is_empty():
+		casas_vazias.erase(g.id)
+	else:
+		casas_vazias[g.id] = restam
 
 
 var _construcoes_chave: Array = []
@@ -3385,13 +3470,21 @@ func construcoes() -> Array:
 	var r: Array = []
 	for g in grupos_vivos():
 		# Cada povo só refaz as peças quando algo que as define muda.
+		var vizinhos: Array = grupos_na_zona(g.zona)
+		if g.zona == "lago" or g.zona == "praia":
+			vizinhos = grupos_na_zona("lago") + grupos_na_zona("praia")
 		var assinatura := [g.zona, g.abrigos, g.estagio, g.membros.size(), g.tem_crenca, g.ceticos,
-			g.tem_costume("estocar"), g.violencia >= 0.5, grupos_na_zona(g.zona).size()]
+			g.tem_costume("estocar"), g.violencia >= 0.5,
+			vizinhos.map(func(o): return [o.id, o.estagio, Cotidiano.peso_na_faixa(o)])]
 		var guardado: Array = _obras_por_grupo.get(g.id, [])
 		if guardado.is_empty() or guardado[0] != assinatura:
 			var obras := Cotidiano.construcoes_do_grupo(self, g)
 			for o in obras:
 				o["aparencia"] = g.aparencia   # a cultura do povo: parede, telhado, símbolo
+			# Se o povo continua no mesmo lugar e encolheu, as casas das pontas ficam vazias (e não
+			# quando a faixa encolheu porque um vizinho cresceu).
+			if not guardado.is_empty() and guardado[0][0] == g.zona and g.membros.size() < guardado[0][3]:
+				_casas_que_esvaziaram(g, guardado[1], obras)
 			guardado = [assinatura, obras]
 			_obras_por_grupo[g.id] = guardado
 		r.append_array(guardado[1])
@@ -3435,7 +3528,9 @@ func _rotina_de_hoje():
 	if ro.dia != d:
 		_esperar_threads()
 		ro = _rotina_cache
-	if ro.dia != d:
+	# Só vale uma rotina montada depois dos eventos do dia (e, antes deles, montada agora).
+	var ja_depois: bool = ro.montada_no_passo >= d * HORAS_DIA + HORA_MONTAR if hora() >= HORA_MONTAR else ro.montada_no_passo == passo
+	if ro.dia != d or not ja_depois:
 		ro = Rotina.new(self, d)
 		ro.montar()
 		ro.eventos_vistos = eventos.size()
@@ -3471,12 +3566,20 @@ func _cuidar_da_rotina() -> void:
 			_montar_em_paralelo()
 		if hora() >= HORA_TROCA:
 			_receber_rotina(true)
-	elif _montando == null and _rotina_mudou():
+		return
+	# A rotina de hoje montada antes dos eventos do dia (às 23h de ontem) é refeita depois deles.
+	var antes_dos_eventos: bool = _rotina_cache.montada_no_passo < d * HORAS_DIA + HORA_MONTAR and hora() >= HORA_MONTAR
+	if _montando == null and (_rotina_mudou() or antes_dos_eventos):
 		_montar_em_paralelo()
+	elif _montando == null and hora() == 23:
+		# A madrugada de amanhã já entra pronta: monta às 23h a rotina do dia seguinte (refeita
+		# na 1h, depois dos eventos do dia). Sem isso, da meia-noite à 1h só se veria a última
+		# hora de ontem.
+		_montar_em_paralelo(d + 1)
 
 
-func _montar_em_paralelo() -> void:
-	var d := dia_abs()
+func _montar_em_paralelo(dia_da_rotina: int = -1) -> void:
+	var d := dia_abs() if dia_da_rotina < 0 else dia_da_rotina
 	_montando = Rotina.new(self, d)
 	_montando.eventos_vistos = eventos.size()
 	# A tarefa segura o mundo (bind) até ser recolhida: ele não pode sumir no meio da montagem.

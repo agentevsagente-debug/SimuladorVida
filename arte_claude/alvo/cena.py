@@ -681,17 +681,50 @@ def junco(t, x, base, alt, tag=MUNDO):
 
 
 def samambaia_frente(t, x, base, alt, rng, espelho=False):
-    """Planta do primeiro plano: mais escura, maior, sobreposta ao chão."""
+    """Planta do primeiro plano: tufo cheio de frondes arqueadas que saem da base e caem nas
+    pontas, com folíolos em todas as linhas. Borda de cima clara (14 e 15), miolo escuro (13)
+    e a sombra (3) só junto da base. `rng` não é usado (a forma é fixa por `alt`)."""
     s = -1 if espelho else 1
-    for k in range(alt):
-        t.put(x, base - k, 13, FRENTE)
-        if k > 1 and k % 2 == 0:
-            comp = max(1, (alt - k) // 2)
-            for i in range(1, comp + 1):
-                yy = base - k + i // 2
-                t.put(x + s * i, yy, 13 if i < comp else 14, FRENTE)
-                t.put(x - s * i, yy + 1, 3, FRENTE)
-    t.put(x, base - alt, 14, FRENTE)
+    pontos = []   # (x, y, tipo) em ponto flutuante; tipo 2 = nervura, 1 = folíolo
+    # (ângulo em graus a partir da vertical, comprimento relativo)
+    frondes = ((-52, .70), (-30, .90), (-10, 1.0), (8, .96), (26, .88), (48, .72))
+    for ang, rel in frondes:
+        a = math.radians(ang * s)
+        comp = alt * rel
+        n = max(2, int(comp * 2))
+        for i in range(n + 1):
+            u = i / n
+            d = comp * u
+            px = x + math.sin(a) * d + (1 if ang * s > 0 else -1) * comp * 0.12 * u * u
+            py = base - math.cos(a) * d + comp * 0.30 * u * u * abs(math.sin(a))
+            pontos.append((px, py, 2))
+            # folíolos dos dois lados, mais longos no meio da fronde
+            lf = int(round((1 - u) * (0.5 + u) * alt * 0.13))
+            if u > 0.12 and lf > 0:
+                nx, ny = -math.cos(a), -math.sin(a)
+                for k in range(1, lf + 1):
+                    for lado in (1, -1):
+                        pontos.append((px + nx * k * lado, py + ny * k * lado + k * 0.35, 1))
+    # o tufo cabe em alt * 0,54 para cada lado (a peça de 16 px tem o pé na coluna 7)
+    larg = max(abs(px - x) for px, _, _ in pontos)
+    f = min(1.0, alt * 0.54 / larg)
+    cheio = {}
+    for px, py, tipo in pontos:
+        chave = (int(round(x + (px - x) * f)), int(round(py)))
+        cheio[chave] = max(cheio.get(chave, 0), tipo)
+    for (cx, cy), tipo in cheio.items():
+        if cy > base:
+            continue
+        acima = (cx, cy - 1) in cheio
+        if (cy == base and abs(cx - x) <= 1) or (cy == base - 1 and cx == x):
+            c = 3
+        elif not acima:
+            c = 15 if (cx * 3 + cy) % 3 == 0 else 14
+        elif tipo == 2:
+            c = 14 if (cx * 7 + cy * 3) % 5 == 0 and cy < base - 2 else 13
+        else:
+            c = 13
+        t.put(cx, cy, c, FRENTE)
 
 
 # ---------------------------------------------------------------- cabanas e fogo

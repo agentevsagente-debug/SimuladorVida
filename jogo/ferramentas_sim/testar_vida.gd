@@ -1,12 +1,22 @@
 extends SceneTree
 ## Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações (dias 4, 14, 24 e 34
 ## do primeiro ano). Metas:
-## - de dia (7h às 17h), nunca mais de 40% das pessoas na mesma ação visível (o `detalhe`,
-##   quando há, senão a `acao`);
+## - de dia (7h às 17h), nunca mais de 40% das pessoas na mesma ação (em gente inteira,
+##   arredondado para cima: de 12 pessoas, no máximo 5), como a tela mostra: a
+##   `acao`, salvo em `colher` e nas caminhadas (`andar`, `lenha`), em que o `detalhe` é o que
+##   se vê (arbusto, raiz, lenha; cesto, vara, machado). `parado` é parado, com ou sem detalhe;
+## - no fim de tarde e à noite (17h às 21h), nunca mais de 75% na mesma ação: sempre alguns
+##   fazendo outra coisa (cozinhar, ninar, tecer, buscar lenha);
 ## - de dia, gente em pelo menos 3 das 4 zonas (lago, praia, floresta, morro), pelo lugar de
 ##   cada um no meio da hora;
 ## - à noite (22h às 5h), pelo menos 1 pessoa acordada;
-## - a cada hora, pelo menos 1 pessoa mudando de lugar.
+## - a cada hora, pelo menos 1 pessoa mudando de lugar;
+## - de 6h às 20h, a cada hora, um acontecimento legível em 1x: alguém atravessando pelo menos
+##   40 px com uma carga grande (água, feixe, cesto, caça) ou com a ferramenta, crianças
+##   correndo, ou um incidente;
+## - de madrugada (0h às 4h), a cada hora, algo além do vigia: alguém que acorda, o fogo em
+##   brasas, um bicho da noite.
+## - ninguém parado a menos de 6 px do centro da fogueira do seu povo.
 ## Imprime a tabela hora a hora da semente 1, dia 4. Sai com código 1 se alguma meta falhar.
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_vida.gd [-- so_tabela]
 
@@ -51,12 +61,25 @@ func _horas(semente: int, dia: int) -> Array:
 		var zonas := {}
 		var acordados := 0
 		var movendo := 0
+		var fogos := {}
+		for o in m.construcoes():
+			if o["tipo"] == "fogueira":
+				fogos[o["grupo"]] = o["x"]
+		var no_fogo := 0
+		var legivel := false
+		for cn in m.cenas_ativas():
+			if cn["tipo"] in ["briga_criancas", "tombo", "animal", "perdido", "discussao", "cacada", "caca_vazia"]:
+				legivel = true
+		var madrugada := false
+		for cn in m.cenas_ativas():
+			if cn["tipo"] in ["brasas", "bicho_noturno", "acordou"]:
+				madrugada = true
 		var xmin := 999.0
 		var xmax := -1.0
 		for p in ps:
-			var vis: String = p.get("detalhe", "")
-			if vis.is_empty():
-				vis = p["acao"]
+			var vis: String = p["acao"]
+			if vis in ["colher", "andar", "lenha"] and not p.get("detalhe", "").is_empty():
+				vis = p["detalhe"]
 			acoes[vis] = acoes.get(vis, 0) + 1
 			# Onde a pessoa está no meio da hora.
 			var xm: float = p["x"]
@@ -73,6 +96,19 @@ func _horas(semente: int, dia: int) -> Array:
 				anda = anda or absf(tr["x0"] - tr["x1"]) > 0.5
 			if anda:
 				movendo += 1
+			for tr in p["agenda"]:
+				if tr["x0"] == tr["x1"] and fogos.has(p["grupo"]) and absf(tr["x0"] - fogos[p["grupo"]]) < 5.99:
+					no_fogo += 1
+					break
+			var carga := 0.0
+			for tr in p["agenda"]:
+				if tr.get("detalhe", "") in ["carregar_agua", "carregar_feixe", "carregar_cesto_cabeca", "carregar_cesto", "caca_no_pau",
+						"levar_pote", "levar_machado", "levar_cesto", "levar_lanca", "levar_vara"] 						or tr["acao"] == "brincar":
+					carga += absf(tr["x1"] - tr["x0"])
+			if carga >= 40.0 or (p["acao"] == "brincar" and anda):
+				legivel = true
+			if p.get("detalhe", "") in ["bocejar", "aticar"]:
+				madrugada = true
 			xmin = minf(xmin, p["x"])
 			xmax = maxf(xmax, p["x"])
 		var top := ""
@@ -83,14 +119,23 @@ func _horas(semente: int, dia: int) -> Array:
 				top = a
 		var problemas: Array = []
 		var dia_claro := h >= 7 and h <= 17
-		if dia_claro and topn > 0.4 * ps.size():
+		# 40% em gente inteira, arredondado para cima: de 12 pessoas, no máximo 5.
+		if dia_claro and topn > ceili(0.4 * ps.size()):
 			problemas.append("%d%% em %s" % [100 * topn / ps.size(), top])
+		if h >= 17 and h <= 21 and topn > 0.75 * ps.size():
+			problemas.append("%d%% em %s à noitinha" % [100 * topn / ps.size(), top])
 		if dia_claro and zonas.size() < 3:
 			problemas.append("só %d zonas (%s)" % [zonas.size(), ", ".join(zonas.keys())])
 		if (h >= 22 or h <= 4) and acordados == 0:
 			problemas.append("ninguém acordado")
 		if movendo == 0:
 			problemas.append("ninguém mudou de lugar")
+		if no_fogo > 0:
+			problemas.append("%d em cima da fogueira" % no_fogo)
+		if h >= 6 and h <= 20 and not legivel:
+			problemas.append("nenhum acontecimento legível")
+		if h <= 4 and not madrugada:
+			problemas.append("madrugada vazia")
 		r.append({"hora": h, "n": ps.size(), "top": top, "topn": topn, "zonas": zonas.keys(), "acordados": acordados,
 			"movendo": movendo, "x": [xmin, xmax], "acoes": acoes, "problemas": problemas})
 		m.avancar_hora()

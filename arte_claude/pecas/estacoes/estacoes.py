@@ -56,9 +56,11 @@ def flores(px, cores=(31, 7, 22), taxa=0.08, so=(15, 16), semente=1):
     return out
 
 
-def neve_por_cima(px, grossa=True, claro=31, sombra=0):
+def neve_por_cima(px, grossa=True, claro=31, sombra=0, espessura=1):
     """Neve assentada: o pixel exposto para cima vira neve, e o de baixo vira neve
-    pontilhada (se a neve for grossa). Vale para copas, telhados, pedras e grama."""
+    pontilhada (se a neve for grossa). Vale para copas, telhados, pedras e grama.
+    `espessura` > 1 cobre mais pixels sólidos abaixo do exposto (telhados: a neve cobre a
+    água do telhado, e não só a borda)."""
     hgt, w = len(px), len(px[0])
     out = [l[:] for l in px]
     for x in range(w):
@@ -69,6 +71,13 @@ def neve_por_cima(px, grossa=True, claro=31, sombra=0):
             if not exposto:
                 continue
             out[y][x] = claro
+            for e in range(1, espessura):
+                if y + e >= hgt or px[y + e][x] is None:
+                    break
+                out[y + e][x] = claro
+            y += espessura - 1
+            if y >= hgt or px[y][x] is None:
+                continue
             if grossa and y + 1 < hgt and px[y + 1][x] is not None:
                 out[y + 1][x] = claro if x % 3 else sombra
                 if y + 2 < hgt and px[y + 2][x] is not None and pont(x, y + 2, 0.5):
@@ -207,7 +216,7 @@ def variante(pasta, nome, px, estacao):
         return None
     if nome.startswith(("roca_", "cerca")):
         return neve_por_cima(px, grossa=False)
-    return neve_por_cima(px)
+    return neve_por_cima(px, espessura=3)
 
 
 def agricultura(nome, px, estacao):
@@ -266,8 +275,9 @@ def agricultura(nome, px, estacao):
 def montanha_inverno(px, profundidade, hora):
     """Mais neve: uma calota que segue a crista de cada montanha, com `profundidade` px e a
     borda de baixo pontilhada. Branca do lado da luz, azul-clara na sombra."""
-    # à noite a neve fica em cinza-azulado e violeta, abaixo da lua e da fogueira
-    claro, sombra = (31, 0) if hora != "noite" else (11, 5)
+    # à noite a neve fica azul de lua (18) e azul-escuro na sombra (4): o cinza (11) pesava
+    # mais que o resto da cena e puxava para o oliva (auditoria 3b)
+    claro, sombra = (31, 0) if hora != "noite" else (18, 4)
     luz = {"dia": {1: True, 18: True, 14: True, 2: False, 17: False, 13: False},
            "entardecer": {7: True, 5: False, 4: False, 3: False},
            "noite": {5: True, 4: False, 3: False, 30: False}}[hora]
@@ -375,10 +385,13 @@ PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "esc
                     "vigia", "contar", "ouvir", "criancas", "tropecar", "espantar", "discutir", "abraco")
 
 
-def vestir_inverno(px, qw, qh):
+def vestir_inverno(px, qw, qh, idoso=False):
     """Roupa de frio sobre as cores-base: capuz de lã sobre o cabelo (9/10), manto nas
     costas (8), mangas de lã (o braço vira 10/9, as mãos ficam), polainas (9/8) e gola de
-    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece."""
+    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece.
+    O cabelo branco do idoso (12 e 31) só vira capuz nas folhas de idoso: nas outras, 12 e 31
+    na altura da cabeça são objetos (palha do cesto, ponta da lança) e ficam como estão."""
+    cabelos = CABELOS_BASE if idoso else {c: t for c, t in CABELOS_BASE.items() if c in (30, 8)}
     out = [l[:] for l in px]
     w = len(px[0])
     adulto = qh == 12
@@ -406,8 +419,8 @@ def vestir_inverno(px, qw, qh):
         topo_cab = range(0, 6) if adulto else range(0, 3)
         for y in topo_cab:
             for x in range(q0, q0 + qw):
-                if px[y][x] in CABELOS_BASE:
-                    out[y][x] = CAPUZ[CABELOS_BASE[px[y][x]]]
+                if px[y][x] in cabelos:
+                    out[y][x] = CAPUZ[cabelos[px[y][x]]]
         # manto: uma coluna a mais de lã nas costas, do ombro à cintura
         for y in (range(4, 9) if adulto else range(4, 6)):
             xs = [x for x in range(q0, q0 + qw) if px[y][x] is not None]
@@ -502,7 +515,7 @@ def principal():
             qh = len(px)
             if qh not in (8, 12):
                 continue
-            gravar(vestir_inverno(px, len(px[0]) // n, qh), AQUI / "inverno" / pasta / f.name, ampliar=False)
+            gravar(vestir_inverno(px, len(px[0]) // n, qh, f.stem.startswith("idoso")), AQUI / "inverno" / pasta / f.name, ampliar=False)
             contagem["inverno"] += 1
     gravar(folha_quadros(neve_caindo()), PECAS / "efeitos" / "neve_4q.png")
     gravar(folha_quadros(flocos()), PECAS / "efeitos" / "floco_3v.png")

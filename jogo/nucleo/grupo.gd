@@ -46,6 +46,7 @@ var estranhos: float = 0.0       # relação com estranhos: -1 desconfiada, 1 ac
 var mortos: String = ""          # o que se faz com os mortos: enterram, queimam, veneram
 var atendidas_seguidas: int = 0  # preces atendidas sem nenhum silêncio no meio
 var dependente: bool = false     # deixou de se preparar: o deus sempre dá
+var ultimo_divino: int = -1      # dia do último gesto do deus que o povo sentiu (-1: nunca)
 var exigente: bool = false       # passou a pedir coisas pequenas
 var poder: String = "lider"      # quem decide: lider, conselho ou sacerdotes
 var recursos: String = "partilha"  # partilha ou acumula

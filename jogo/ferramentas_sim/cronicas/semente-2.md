@@ -72,7 +72,7 @@ Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de po
 
 ### Ano 23
 
-Em Esar, Demya pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Nega mandou.
+Demya tinha rezado: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Nega mandou.
 
 *Entre os anos 24 e 29, nada mudou o rumo do mundo.*
 
@@ -96,7 +96,7 @@ No fim do ano 40, oito pessoas viviam no mundo, todas em Esar.
 
 ### Ano 44
 
-Na primavera do ano 44, a terra tremeu. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus nada fez: o crédito era de graça.
+Na primavera, o chão tremeu sem aviso. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Sacode. O deus nada fez: o crédito era de graça.
 
 ### Ano 45
 
@@ -106,7 +106,7 @@ A seca voltou, como no ano 5: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 47
 
-O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito.
+O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Por 10 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
 
 *Os anos 48 a 49 passaram em paz.*
 
@@ -118,110 +118,94 @@ Na primavera do ano 50, a terra tremeu. Caiu uma cabana. Nos anos 41 a 50 houve 
 
 ### Ano 53
 
-Em Esar, Dout pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus não tinha feito nada.
+Gaut tinha rezado: «Que Sacode, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus não tinha feito nada.
 
 ### Ano 54
 
-A seca voltou, como no ano 45: 21 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 45. Foram 21 dias de seca.
 
 ### Ano 55
 
-Dout, o generoso, morreu dormindo, aos 58 anos. Gaut, que falava pelo Que Sacode em Esar, morreu de repente, aos 44 anos.
+Gaut, que falava pelo Que Sacode em Esar, morreu de repente, aos 44 anos. Um raio caiu na praia durante a tempestade e matou Suaria. Os seus nunca esqueceram.
 
 *Do ano 56 ao 59, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 60
 
-Nos anos 51 a 60 houve quatro secas e quatro preces que pareceram atendidas; nasceram uma crianças e morreram duas pessoas. No fim do ano 60, nove pessoas viviam no mundo, todas em Esar.
+Nos anos 51 a 60 houve quatro secas e três preces que pareceram atendidas; nasceram uma crianças e morreram três pessoas. No fim do ano 60, oito pessoas viviam no mundo, todas em Esar.
 
 *Entre os anos 61 e 65, nada mudou o rumo do mundo.*
 
 ### Ano 66
 
-De novo o sol se apagou no meio do dia.
+Houve um tremor de terra. Caiu uma cabana.
 
 ### Ano 67
 
-De novo a chuva sumiu, como no ano 54. Foram 19 dias de seca. Em Esar, Kaoro pediu: «Manda água, Que Sacode, que as crianças têm sede.» Quando a chuva voltou, Esar agradeceu ao Que Sacode. O deus não tinha feito nada.
+A seca voltou, como no ano 54: 24 dias sem chuva, até que o céu se abriu.
 
-*No ano 68, nada de notável aconteceu.*
+### Ano 68
+
+De novo o sol se apagou no meio do dia.
 
 ### Ano 69
 
-Na primavera do ano 69, Maena, que guiava Esar, morreu de velhice aos 65 anos. Em Esar, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 17, só a crônica guarda. Em Esar, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 20, só a crônica guarda.
+Maena, que guiava Esar, morreu de velhice aos 65 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Esar, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 20, só a crônica guarda.
 
 ### Ano 70
 
-Nos anos 61 a 70 houve duas secas e três preces que pareceram atendidas; nasceram zero crianças e morreram uma pessoas. No fim do ano 70, oito pessoas viviam no mundo, todas em Esar.
+Nos anos 61 a 70 houve três secas; nasceram zero crianças e morreram uma pessoas. No fim do ano 70, sete pessoas viviam no mundo, todas em Esar.
 
-*Os anos 71 a 74 passaram em paz.*
+*Os anos 71 a 75 passaram em paz.*
 
-### Ano 75
+### Ano 76
 
-No outono do ano 75, a terra tremeu.
-
-*O ano 76 passou sem nada que a crônica precise guardar.*
+Por 15 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
 
 ### Ano 77
 
-A seca voltou, como no ano 67: 21 dias sem chuva, até que o céu se abriu. Kaoro tinha rezado: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. A crônica sabe que foi acaso.
+De novo a chuva sumiu, como no ano 67. Foram 19 dias de seca.
 
-### Ano 78
-
-Demsuia, que guiava Esar, morreu de repente, aos 41 anos.
-
-*O ano 79 foi calmo.*
+*Do ano 78 ao 79, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 80
 
-Nos anos 71 a 80 houve quatro secas e cinco preces que pareceram atendidas; nasceram sete crianças e morreram duas pessoas. No fim do ano 80, treze pessoas viviam no mundo, todas em Esar.
+O chão tremeu sem aviso. Caiu uma cabana. Kuroru morreu sob os escombros. Nos anos 71 a 80 houve duas secas; nasceram três crianças e morreram duas pessoas. No fim do ano 80, oito pessoas viviam no mundo, todas em Esar.
 
-*Entre os anos 81 e 83, nada mudou o rumo do mundo.*
-
-### Ano 84
-
-Kaia, a rancorosa, descobriu como empilhar pedras cortadas sem que caíssem. No outono, o sol escureceu outra vez. Para Esar, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
-
-### Ano 85
-
-Gael, que guiava Esar, morreu dormindo, aos 52 anos.
-
-*Entre os anos 86 e 87, nada mudou o rumo do mundo.*
-
-### Ano 88
-
-No verão do ano 88, em Esar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. O templo de Esar ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Apaga o Sol.
-
-### Ano 89
-
-Kaoro, que falava pelo Que Apaga o Sol em Esar, morreu de velhice aos 56 anos.
+*Entre os anos 81 e 89, nada mudou o rumo do mundo.*
 
 ### Ano 90
 
-A seca voltou, como no ano 77: 18 dias sem chuva, até que o céu se abriu. Suaria tinha rezado: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Apaga o Sol tinha ouvido. Foi só o tempo, mas quem iria dizer? Nos anos 81 a 90 houve duas secas; nasceram sete crianças e morreram cinco pessoas. No fim do ano 90, quinze pessoas viviam no mundo, todas em Esar.
+No fim do ano 90, oito pessoas viviam no mundo, todas em Esar.
 
-### Ano 91
+*Entre os anos 91 e 92, nada mudou o rumo do mundo.*
 
-Na primavera, morreu Kaia, que guiava Esar, aos 51 anos.
+### Ano 93
 
-*Os anos 92 a 97 passaram em paz.*
+A seca voltou, como no ano 77: 18 dias sem chuva, até que o céu se abriu.
 
-### Ano 98
+*Do ano 94 ao 95, a vida seguiu sem grandes acontecimentos.*
 
-Morreu Suaria, que guiava Esar, aos 57 anos.
+### Ano 96
 
-*O ano 99 foi calmo.*
+Na primavera, morreu Kaoro, que guiava Esar, aos 63 anos. De novo o sol se apagou no meio do dia. Para Esar, o deus já não era «o Que Sacode»: passou a ser «o Olho Escuro».
+
+*Do ano 97 ao 98, a vida seguiu sem grandes acontecimentos.*
+
+### Ano 99
+
+Kaia, que guiava Esar, morreu de velhice aos 59 anos.
 
 ### Ano 100
 
-Nos anos 91 a 100 houve duas secas; nasceram zero crianças e morreram três pessoas. No fim do ano 100, doze pessoas viviam no mundo, todas em Esar.
+No fim do ano 100, duas pessoas viviam no mundo, todas em Esar.
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Esar** vive na praia, com 12 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
+- **Esar** vive na praia, com 2 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
 
 Lugares com nome: Praia do Raio (praia, para Esar).
 
-Em 100 anos nasceram 33 pessoas e morreram 33.
+Em 100 anos nasceram 22 pessoas e morreram 32.

@@ -76,7 +76,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | `zona`, `x_ini`, `x_fim` | onde vive; `x_ini` e `x_fim` são a faixa do acampamento. Se dois povos dividem uma zona, cada um fica com uma parte. |
 | `membros`, `estagio` | quantas pessoas; estágio 1 = coleta, 2 = agricultura, 3 = pedra, 4 = metal, 5 = escrita, 6 = engenharia |
 | `lider`, `sacerdote` | id da pessoa, ou -1 |
-| `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético |
+| `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético. Um nome novo (crença, rebatismo, profeta, cisma) nunca é o de outro povo vivo; só os povos que se separaram de um mesmo povo e levaram a fé junto chamam o deus do mesmo jeito. |
 | `ceticos` | o povo deixou de rezar |
 | `em_fome`, `doenca` | estados atuais |
 | `costumes` | lista de chaves: "estocar", "agua", "festa_chuva", "tabu_tempestade", "queimar_mortos", "lancas", "oferendas" |
@@ -115,13 +115,20 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 | `arquivo` | 32 | estágio 5 ou mais (a biblioteca da arte) |
 | `moinho` | 32 | estágio 6 |
 | `muralha` | 16 | estágio 6, povo guerreiro: uma torre em cada ponta do acampamento |
-| `barco` | 24 | estágio 6, povo do lago ou da praia: na água, em x = 112 |
+| `barco` | 24 | estágio 6, povo do lago ou da praia: na água, em x = 112 − 28·k (um barco por povo da margem) |
 
-As peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. As duas primeiras moradias vêm logo depois da fogueira, antes do altar e das obras grandes, para que uma vila nunca fique sem casa. Só mudam de lugar quando o número de peças muda ou quando o povo se muda. Moradias, celeiro, moinho e roças que não cabem na faixa do povo ficam de fora. As peças únicas (altar, templo, arquivo, forja) sempre aparecem, mesmo encostadas.
+**Os lotes.** Cada povo tem uma faixa de terra própria, e as peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. Só mudam de lugar quando o número de peças muda, quando a faixa muda ou quando o povo se muda.
+- **A faixa.** Os povos de uma zona dividem a terra dela conforme o porte: 1 parte até 39 pessoas, 2 de 40 a 99 e 3 de 100 em diante (em degraus, para que a vila não escorregue a cada nascimento). O lago e a praia dividem juntos a terra de 126 a 200, com o povo do lago à esquerda. Numa faixa com menos de 110 px, a fogueira vai para a ponta do lado da água (8 px da beira), para sobrar terra inteira do outro lado.
+- **A ordem.** Fogueira, a primeira casa, o templo (ou o altar, se não há templo), a obra do estágio (moinho no 6, arquivo no 5, forja no 4), a segunda casa, o altar, o arquivo (no 6), a forja (no 5 e no 6), as outras casas, o celeiro e as roças.
+- **Nenhuma peça encosta em outra** (ficam a 2 px no mínimo) nem sai da faixa: o que não cabe fica de fora, a começar pelo fim da ordem. **Isto muda uma regra anterior**: o altar, o templo, o arquivo e a forja não aparecem mais "mesmo encostados"; com pouca terra, podem faltar.
+- **As muralhas** só ocupam as pontas quando a faixa tem 140 px ou mais.
+- **O limite da terra.** Com 4 povos no estágio 6 (o mundo grande da regressão), cabem 15 peças, 248 px no total, sem nenhum par encostado. Os povos do lago e da praia ficam com 44 e 30 px: cabem a fogueira e o altar (e, no do lago, uma roça), com o barco na água, e nenhuma casa. O povo da floresta fica com 2 casas, o templo, o altar e uma roça; o do morro, com as 2 muralhas, 1 casa e o moinho.
 
 ### `ruinas_visiveis() -> Array[Dictionary]`
 
 Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistados, inclusive de eras anteriores: `{tipo, x, largura, estagio, povo, era, ano, anos, aparencia, ruina: true}`. `anos` é a idade da ruína, para cobrir de mato.
+- **Casas vazias de um povo vivo.** Quando um povo perde gente e, com isso, casas (e não quando a faixa encolhe porque um vizinho cresceu), as que ficaram vazias aparecem aqui também, com `abandonada: true` e `anos` (há quantos anos estão vazias, para o mato crescer). São as casas das pontas da vila, nunca as do meio. Somem como as outras ruínas (30 anos nos estágios 1 e 2, 200 da pedra em diante), ou quando uma peça viva passa a ocupar o lugar.
+- Uma ruína que fica embaixo de uma peça viva (de um povo que se mudou para cima dela) não aparece: só a peça viva.
 - A natureza retoma o espaço: ruínas dos estágios 1 e 2 somem em 30 anos; as de pedra em diante, em 200.
 - Ruínas guardam conhecimento: um povo que vive perto pode aprender nelas o saber seguinte (evento `ruinas_saber`).
 
@@ -150,7 +157,7 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 ```
 
 - `de` e `ate` vão de 0 a 1, a fração da hora;
-- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha` ou `carregar_morto`, ou `remar` indo para o barco);
+- se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha`, `carregar_morto`, `carregar_caca`, `brincar` correndo, ou `remar` indo para o barco);
 - se `x0 == x1`, ela fica ali fazendo a `acao`;
 - `detalhe` diz o que exatamente ela faz (ou leva, andando); "" quando não há. A `acao` continua sendo a genérica: quem não usar o `detalhe` vê o mesmo de antes.
 
@@ -179,6 +186,12 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `carregar_morto` | os dois primeiros do cortejo do funeral |
 | `cacar` | na caçada, longe do acampamento, de ponto em ponto |
 | `carregar_caca` | andando de volta da caçada com a caça |
+| `brincar` | crianças brincando, na praia ou perto do fogo; também andando (correndo uma atrás da outra) |
+| `deitar` | descansando deitado à sombra: uma pausa no trabalho, ou o fim de tarde em casa |
+| `tecer` | tecendo cesto, em casa (adultos no fim de tarde, os velhos de dia) |
+| `consertar` | consertando uma ferramenta, em casa |
+| `cozinhar` | preparando o jantar perto do fogo, das 17h30 às 19h |
+| `comer` | jantando perto do fogo (as crianças comem depois dos grandes) |
 
 **Detalhes** (campo `detalhe`, nos trechos da agenda e na ficha):
 
@@ -191,9 +204,10 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `levar_cesto`, `levar_vara`, `levar_machado`, `levar_pote`, `levar_lanca` | `andar` | a ida ao trabalho com a ferramenta: cesto (coleta), vara (pesca), machado (lenha, obra, forja), pote (água), lança (caçada) |
 | `buscar_agua`, `banho` | `parado` | na margem do lago |
 | `guardar` | `parado` | guardando a carga em casa ou no celeiro |
-| `descansar` | `parado`, `conversar` | uma pausa, ou o fim de tarde em casa |
-| `cozinhar`, `comer` | `fogueira` | o jantar, das 17h30 às 19h |
-| `brincar` | `parado` | crianças brincando, na praia ou perto do fogo |
+| `descansar` | `deitar` | a pausa à sombra no meio do trabalho |
+| `cozinhar`, `comer` | `cozinhar`, `comer` | o jantar, das 17h30 às 19h |
+| `brincar` | `brincar` | crianças brincando, na praia ou perto do fogo |
+| `ninar` | `cuidar` | depois do jantar, quem tem filho pequeno nina em casa |
 | `vigia` | `fogueira`, `parado` | o vigia da noite: sentado no fogo, ou de pé na beira do acampamento |
 | `olhar_ceu` | `conversar` | um casal olhando o céu à noite |
 | `reza_noturna` | `rezar` | quem reza tarde da noite |
@@ -201,19 +215,36 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `doente` | `parado` | o doente acordado em casa |
 | `repartir`, `maos_vazias` | `parado` | a volta da caçada: repartindo a caça, ou sem nada |
 | `brigar`, `separar`, `machucado`, `espantar`, `perdido`, `buscar`, `discutir` | `parado`, `conversar` | os pequenos incidentes (veja as cenas) |
+| `carregar_feixe` | `lenha` (andando) | a volta da mata com um feixe grande de lenha nas costas |
+| `carregar_cesto_cabeca` | `lenha` (andando) | a volta com um cesto grande na cabeça (da praia ou de longe) |
+| `espreitar` | `cacar` | a caçada: agachado, chegando aos poucos perto do porco, com a lança |
+| `arremessar` | `cacar` | a caçada: o arremesso da lança |
+| `recolher_caca` | `parado` | a caçada: abaixado junto do bicho caído |
+| `caca_no_pau` | `carregar_caca` (andando) | a volta da caçada com o porco amarrado num pau, nos ombros |
+| `bocejar` | `parado` | de madrugada, alguém acorda em casa e se espreguiça |
+| `aticar` | `fogueira` | de madrugada, quem acordou atiça o fogo |
+| `cochilar` | `fogueira` | o vigia cochilando sentado no fogo (no lugar de `vigia`) |
 
-**O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos de manhã para a caçada no morro (ou na mata alta, para quem mora no morro) e voltam entre 16h e 17h. Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
+Precisam de arte (B ou C): `carregar_feixe`, `carregar_cesto_cabeca`, `espreitar`, `arremessar`, `recolher_caca`, `caca_no_pau`, `bocejar`, `aticar`, `cochilar`; as cenas `brasas` e `bicho_noturno` (coruja, morcego, raposa, sapo); o porco da caçada.
 
-**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham e os outros conversam e comem perto do fogo. Até as 21h30 ou 22h30 fica-se na fogueira, com conversas e crianças correndo. Dorme-se das 21h30 às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
+**O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos à tarde para a caçada na borda da floresta (veja a cena `cacada`). Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
+
+**Um acontecimento por hora.** Das 6h às 20h, a cada hora, alguém de cada povo atravessa a tela: sai de casa (às vezes com a ferramenta, `levar_pote` ou `levar_machado`), vai ao lago, à mata, à praia ou longe, trabalha uns minutos e volta para casa com uma carga grande (`carregar_agua`, `carregar_feixe` ou `carregar_cesto_cabeca`). A ida e a volta somam pelo menos 40 px. Quem atravessa é um adulto de 10 a 70 anos sem papel no dia (nem o pescador, nem os caçadores). Junto com as crianças correndo, os incidentes e a caçada, isso dá em 1x (≈1 a 2 min por hora de jogo) sempre alguma coisa legível acontecendo.
+
+**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham (`cozinhar`) e os outros conversam e comem (`comer`); as crianças brincam na praia até 17h50 e comem depois dos grandes. Depois do jantar, uns ninam os pequenos, tecem ou consertam em casa, e o resto fica na fogueira, com conversas e crianças correndo. Dorme-se das 21h às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
+
+**A madrugada (0h às 5h).** Nos dois primeiros turnos, o vigia às vezes cochila sentado no fogo (`cochilar`, em cerca de um terço das paradas no fogo) e depois volta à ronda. Uma ou duas vezes por noite, alguém acorda em casa (`bocejar`), vai ao seu lugar no fogo e o atiça (`aticar`); a pessoa tem `cena: {tipo: "acordou", id}` nesses trechos. Enquanto ninguém atiça, o fogo baixa para brasas: a cena `brasas` vai de 0h40 até quem atiçar chegar, e volta 50 min depois, até as 5h. Uma ou duas vezes por noite, um bicho da noite chega perto (cena `bicho_noturno`).
+
+**Ninguém em cima do fogo.** Depois de montado o plano, quem ficaria parado a menos de 6 px do centro da fogueira (`FOGO_LIVRE`) é afastado para 6 px, do lado em que já estava. Vale para a fogueira, o jantar, o vigia e todas as cenas.
 
 **Lugares sem fila.** Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não muda: os lugares ficam a 7 px uns dos outros, alternando os lados da fogueira e a pelo menos 6 px do centro dela, por ordem de chegada ao mundo. É ali que ela fica na `fogueira` da noite e nas conversas em volta do fogo. Quem não cabe na faixa do povo vai direto para casa à noite (`dormir`). Em casa, cada um dorme num ponto próprio ao longo da largura da moradia. Em povos grandes, a coleta se espalha pela faixa de trabalho inteira. Ninguém fica na água (x < 126), a não ser remando; quem pesca fica na margem, de 126 a 136.
 
 As crianças correm umas atrás das outras perto do fogo (trechos curtos de `andar` e `parado`). Cada pessoa faz de 2 a 4 atividades por dia, conforme o estágio, o papel, a zona e os traços, e as repete em ciclos até o fim da tarde. Os horários de acordar e dormir variam, e dois dias nunca são iguais (às 10h, só 4% a 6% das pessoas estão no mesmo lugar que no dia anterior). Tudo sai da semente.
 
 **Custo e cache:**
-- A rotina do dia (lugares, cenas, vida social, o plano de cada pessoa e as agendas das 24 horas) é montada **numa thread de trabalho**, sem custo para a linha principal. Custa de 60 a 120 ms de thread com a população máxima.
-  - Ela começa logo depois do passo da 0h à 1h (em que acontecem os eventos do dia) e entra assim que fica pronta, em décimos de segundo. No mais tardar às 4h, antes de alguém acordar, o passo espera por ela; no jogo, ela fica pronta muito antes.
-  - Até ela entrar, todos aparecem dormindo em casa, como na última hora do dia anterior.
+- A rotina do dia (lugares, cenas, vida social, o plano de cada pessoa e as agendas das 24 horas) é montada **numa thread de trabalho**, sem custo para a linha principal. Custa de 60 a 180 ms de thread com a população máxima.
+  - A rotina de amanhã começa a ser montada às 23h, para a madrugada já entrar pronta (vigia, brasas, quem acorda). Depois do passo da 0h à 1h, em que acontecem os eventos do dia, ela é montada de novo, com os eventos, e entra assim que fica pronta, em décimos de segundo. No mais tardar às 4h, o passo espera por ela; no jogo, ela fica pronta muito antes.
+  - Se a rotina das 23h não ficou pronta (um salto, um mundo recém-carregado), até a nova entrar todos aparecem dormindo em casa, como na última hora do dia anterior.
   - O alvo de um poder sai sempre da rotina de hoje (se o deus age no instante em que ela ainda está sendo montada, espera por ela): a simulação não depende de a apresentação estar olhando.
 - No meio do dia, um evento que vira cena (nascimento, casamento, ataque, separação, tempestade...) manda montar a rotina de novo, também na thread, no passo seguinte ao evento. Até a nova ficar pronta, vale a anterior: a cena aparece uma ou duas horas de jogo depois do evento.
 - A tempestade não entra no plano: é posta por cima. Da hora em que ela começa até o fim do dia, quem é da zona vai para casa e fica `parado` lá.
@@ -252,9 +283,11 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
-| `cacada` | quase todo dia, das 6h20 até a volta, entre 16h e 17h | 2 a 4 adultos caçando longe (`x` é o lugar da caça) | `vazia`: voltaram sem nada |
+| `cacada` | quase todo dia, à tarde: saem do fogo entre 12h40 e 13h, espreitam até o arremesso (entre 15h20 e 15h40) e voltam | 2 a 4 adultos na borda da floresta mais perto do fogo, perto da vista (`x` é onde o porco está) | `vazia`: erraram e voltaram sem nada; `bicho`: "porco"; `etapas` (abaixo) |
 | `caca_vazia` | na volta de uma caçada sem caça | os caçadores, de mãos vazias perto do fogo | |
-| `vigia` | toda noite, em três turnos | o vigia, que vai e volta entre o fogo e a beira do acampamento | |
+| `vigia` | toda noite, em três turnos | o vigia, que vai e volta entre o fogo e a beira do acampamento; às vezes cochila no fogo | |
+| `brasas` | de madrugada, de 0h40 até alguém atiçar, e de novo 50 min depois, até as 5h | sem participantes: a fogueira baixa, em brasas (`x` é a fogueira) | |
+| `bicho_noturno` | 1 ou 2 por noite, entre 0h20 e 4h40, por 25 a 45 min | sem participantes: um bicho perto do acampamento (`x` é onde ele está) | `bicho`: "coruja" (na mata), "morcego" ou "sapo" (no lago), "raposa" (na beira do acampamento) |
 | `historias` | algumas noites sem tempestade, 21h15 às 23h | até 6 pessoas conversando em volta do fogo | |
 | `briga_criancas` | incidente: 2 ou 3 por povo por dia, entre 9h20 e 16h20 | duas crianças brigando; um adulto separa | |
 | `tombo` | incidente | alguém se machuca de leve; outro cuida | |
@@ -262,6 +295,20 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `perdido` | incidente | uma criança se perde longe do acampamento; um adulto vai buscar | |
 | `discussao` | incidente | dois adultos (de preferência rancorosos ou ambiciosos) discutem | |
 | `construcao` | no dia e no seguinte a uma conquista de estágio, à agricultura, ou a cabanas derrubadas por tempestade, terremoto ou dilúvio | até 6 pessoas `construir` na obra nova (templo, forja, arquivo, moinho ou casas) | `obra` |
+
+**As etapas da caçada.** A cena `cacada` traz `etapas`, em ordem, para a apresentação encenar o bicho e a lança: `{etapa, ini, fim, x, x_bicho}`, com `ini` e `fim` em horas do dia, `x` onde estão os caçadores e `x_bicho` onde está o porco (-1 quando ele não está mais no chão).
+
+| Etapa | O que se vê | Detalhe dos caçadores |
+|---|---|---|
+| `saida` | juntos no fogo, prontos para sair; o porco já aparece na borda (`x_bicho`) | `parado` |
+| `espreita` | agachados, chegando aos poucos, de 12 em 12 minutos; o porco fuça e se mexe um pouco | `espreitar` (andando, `levar_lanca`) |
+| `arremesso` | a lança voa até o porco | `arremessar` |
+| `abatido` | o porco caído; os caçadores abaixados junto dele | `recolher_caca` |
+| `fuga` | (no lugar de `abatido`, quando `vazia`) o porco foge 40 px para dentro da mata | — |
+| `volta` | a volta até o fogo, com o porco amarrado no pau (ou de mãos vazias) | `caca_no_pau` (andando) |
+| `repartir` | no fogo, repartindo a caça (ou `maos_vazias`, com a cena `caca_vazia`) | `repartir` |
+
+A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 
 `posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
 
@@ -402,6 +449,8 @@ A crônica é escrita **ano a ano**, quando cada ano termina. Um ano escrito nã
 
 O ano em andamento ainda não está na crônica. Para mostrar o que acabou de acontecer, a apresentação usa os eventos de camada "nota" e "chamado".
 
+**Repetição.** Quando um evento tem mais de uma frase possível, a crônica evita a que já usou nos últimos 25 anos (se todas foram usadas, fica a mais antiga). Essa memória é gravada com o mundo. Só a escrita oficial de cada ano a usa e muda: as notas ao vivo (`curto`) e o relato da ausência não mexem nela.
+
 ## Determinismo
 
 Todo sorteio da simulação vem de `mundo.rng`, com a semente dada. As consultas desta API não sorteiam nada. A mesma semente, com os mesmos poderes usados nos mesmos passos, dá o mesmo mundo e a mesma crônica.
@@ -496,11 +545,15 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
-| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação e gente em 3 das 4 zonas; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar; das 6h às 20h, a cada hora, um acontecimento legível (alguém atravessando 40 px ou mais com carga ou ferramenta, crianças correndo, um incidente ou a caçada); de 0h às 4h, algo além do vigia (alguém que acorda, as brasas, um bicho da noite); ninguém parado a menos de 6 px do centro da fogueira do seu povo. Os 40% contam gente inteira, arredondando para cima: de 12 pessoas, até 5 (41,7%) na mesma ação passam. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `estilos.gd` | Simula 4 deuses (benevolente, cruel, ausente, caprichoso) por 100 anos, em 3 sementes, e compara fé, nomes do deus, costumes, dependência, guerras santas, secularizações e população. Tabela, trechos de crônica e leitura em `estilos/`. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
 | `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder, e o ano em que o primeiro povo chega a cada estágio (tabela de mínimo, mediana e máximo em `sondagem/<rotulo>-estagios.txt`; a de 10 sementes por 300 anos está em `sondagem/estagios.txt`). Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
+| `resistencia.gd` | Teste de resistência: um mundo por muitos anos (`-- <semente> <nenhum\|caprichoso> [anos]`), medindo a cada 50 anos o tamanho do mundo salvo, salvar, carregar (e se o mundo carregado é igual), memória, objetos vivos, a ausência de 1 ano e o pior dia e ano. Resultados de 5 sementes por 1000 anos, com e sem deus, em `resistencia/LEIAME.md`. |
+| `resistencia_passos.gd` | Carrega um mundo velho salvo por `resistencia.gd` e mede passo a passo, como a apresentação usa o mundo: piores passos e consultas, `salvar_async` e a montagem da rotina. |
+| `resistencia_ciclo.gd` | O ciclo completo: fim do mundo, livro na estante, povo novo nas ruínas, salvar e carregar depois do fim. |
 | `medir_desempenho.gd` | `medir` (padrão) mede as janelas de desempenho e mostra os piores passos e consultas. `gerar` procura o maior mundo no estágio 6 e o guarda, comprimido, em `mundo_grande.bin` (refazer se o formato do mundo salvo mudar). |
 | `desempenho.gd` | Mede como a apresentação usa o mundo: a cada passo, avança uma hora e consulta tudo o que `simulacao.gd` lê. Cada janela (uma virada de ano com 287 pessoas e uma virada de década) roda em 3 processos novos, e vale o menor tempo de cada passo, porque esta máquina tem picos de outros processos. |
 
@@ -513,7 +566,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | 5, escrita | escrever | gente engenhosa ou curiosa; mais depressa com sacerdote | os costumes não se esquecem mais; o saber se ensina 3 vezes mais rápido; o arquivo pode salvar um saber perdido; o povo escreve a própria crônica; o estudo do céu enfraquece o presságio |
 | 6, engenharia | canais e moinhos | povo com 30 pessoas ou mais; mais depressa depois de fome | irrigação: a seca pesa pouco e não gera prece por chuva; tudo impressiona 40% menos, porque o povo precisa menos do deus. É o teto. |
 
-Quanto tempo leva: veja `jogo/ferramentas_sim/sondagem/estagios.txt` (10 mundos de 300 anos). Depois de 40 anos no mesmo estágio, a necessidade ensina: a chance de descobrir o próximo saber cresce a cada década a mais, e qualquer adulto pode descobrir, não só os engenhosos e curiosos. Isso encurta os platôs longos (que chegavam a 158 anos, ou dois meses reais sem mudar de estágio) sem mexer no tempo típico.
+Quanto tempo leva: veja `jogo/ferramentas_sim/sondagem/estagios.txt` (10 mundos de 300 anos). Depois de 40 anos no mesmo estágio, a necessidade ensina: a chance de descobrir o próximo saber cresce a cada década a mais, e qualquer adulto pode descobrir, não só os engenhosos e curiosos. Isso encurta os platôs longos (que chegavam a 158 anos, ou dois meses reais sem mudar de estágio) sem mexer no tempo típico. Na tabela atual (`estagios.txt`, refeita depois do limite da terra e do esquecimento do deus ausente), nenhum povo fica mais de 101 anos na agricultura. O mundo da semente 2 aparece com 214 anos no estágio 2 porque ficou vazio e recomeçou no ano 146 com um povo novo, que levou ~60 anos para chegar à pedra.
 
 O saber de cada estágio vive nas pessoas, que o ensinam devagar. Quando morre o último que sabia, o povo regride um estágio, a não ser que a escrita o salve. O sonho do deus dá a alguém o saber do próximo estágio, que pode servir à paz ou à guerra.
 
@@ -545,3 +598,12 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   - Tudo tem cópia, porque a estante é insubstituível. Cada livro é gravado também como `<id>.1.md`, e `ler` usa a cópia se o arquivo sumiu ou está vazio. O índice guarda as 3 versões anteriores (`indice.1.txt` a `indice.3.txt`); se ele estiver estragado, valem as cópias, e se todas estiverem, o índice é refeito a partir dos livros (com o título da primeira linha).
   - `Persistencia.salvar(mundo)` leva para a estante os livros que ainda não estão lá.
 - **Abandonar o mundo:** `Persistencia.abandonar(mundo) -> livro` fecha a crônica da era atual como livro (mesmo com o povo vivo), guarda o livro na estante e apaga o mundo salvo. Depois, a apresentação começa outro mundo com `Mundo.new(semente)`, e a estante continua lá.
+
+## Como o povo reage ao estilo do deus
+
+O custo de intervir é a interpretação: o mesmo povo sai diferente conforme o deus que tem. Veja `ferramentas_sim/estilos/`.
+- **O acaso convence menos que o deus:** uma prece que se cumpre sozinha sobe a fé em 0,08, contra 0,15 de um milagre de verdade. Ela também alivia menos o silêncio e não conta para a dependência: só um deus que responde de verdade cria povos dependentes e, depois, exigentes.
+- **Um deus que nunca aparece é esquecido:** depois de 15 anos sem nenhum gesto do deus (qualquer poder que o povo sinta), a fé de quem não é devoto esfria 3% ao ano. O povo pode se secularizar a partir do estágio 3.
+- **Um deus que mata é aplacado:** um raio do deus que mata alguém, lido como castigo, cria o costume das oferendas.
+- **A terra tem limite:** acima de 320 pessoas no mundo, nascem cada vez menos crianças (`Mundo.LOTACAO`).
+- `grupo.ultimo_divino`: o dia do último gesto do deus que o povo sentiu (-1: nunca).
