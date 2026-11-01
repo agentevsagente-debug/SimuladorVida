@@ -338,7 +338,7 @@ Linim não quis esperar a fome passar: foi sozinho para além da borda. Loes tam
 
 ## O mundo no fim da crônica
 
-- **Nion** vive no lago, com 77 pessoas, e trabalha o metal; nasceu de uma migração em Marak no ano 43; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (desde o ano 60).
+- **Nion** vive no lago, com 76 pessoas, e trabalha o metal; nasceu de uma migração em Marak no ano 43; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (desde o ano 60).
 - **Loes** vive na praia, com 19 pessoas, e planta roças; nasceu de um cisma em Taur no ano 56; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 76); treina os jovens com lanças (desde o ano 80).
 - **Marum** vive na floresta, com 45 pessoas, em casas de pedra; nasceu de uma migração em Nion no ano 66; chama o deus de «o Olho Escuro»; costumes: guarda tanta comida para o inverno (desde o ano 60); queima os mortos (desde o ano 85); treina os jovens com lanças (desde o ano 87); faz a festa da chuva (desde o ano 93); não desperdiça uma gota d'água (desde o ano 93).
 - **Teum** vive no morro, com 12 pessoas, e planta roças; nasceu de uma migração em Loes no ano 84; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (desde o ano 76); faz a festa da chuva (desde o ano 97).
@@ -347,4 +347,4 @@ Povos que deixaram de existir: Taur, Marak e Ruon.
 
 Lugares com nome: Praia da Trégua (praia, para Marum), Praia da Trégua (praia, para Loes), Lago da Vitória (lago, para Nion), Lago do Luto (lago, para Marum), Floresta da Vitória (floresta, para Marak), Floresta do Luto (floresta, para Taur), Floresta da Fome (floresta, para Marum), Morro do Raio (morro, para Ruon), Morro da Vitória (morro, para Loes), Morro da Vitória (morro, para Marum) e Morro do Luto (morro, para Teum).
 
-Em 100 anos nasceram 426 pessoas e morreram 258.
+Em 100 anos nasceram 426 pessoas e morreram 259.
