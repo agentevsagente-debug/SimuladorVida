@@ -9,7 +9,8 @@ extends RefCounted
 ##   dependencia 6 chuvas sobre o mesmo povo, uma a cada 2 dias (costume e dependência na alça)
 ##   coleta      avança até o primeiro dia com a volta da coleta do morro, às 14h
 ##   guerra      dois povos em guerra, e o primeiro reza contra o outro (a seta no fogo inimigo)
-##   batalha     o primeiro povo ataca o segundo hoje: a cena de guerra (a luta é das 9h às 10h30)
+##   batalha     o primeiro povo ataca o segundo agora e o mundo avança até a luta (A, edb5598:
+##               um ataque às H vira cena de H + 2h a H + 6h30, com a luta de H + 3h30 a H + 5h)
 
 const NOMES := ["estranhos", "doentes", "sonho", "dependencia", "coleta", "guerra", "batalha"]
 
@@ -53,6 +54,8 @@ static func preparar(nome: String, vista: Node2D) -> void:
 			var vivos: Array = m.grupos_vivos()
 			if vivos.size() >= 2:
 				m._atacar(vivos[0], vivos[1])
+				for h in 4:  # até o meio da luta (3h30 depois do ataque)
+					m.avancar_hora()
 				sim.iniciar_de_mundo()
 		"guerra":
 			var vivos: Array = m.grupos_vivos()
