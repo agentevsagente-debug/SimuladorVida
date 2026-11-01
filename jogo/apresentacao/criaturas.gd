@@ -9,12 +9,13 @@ const Efeitos = preload("res://apresentacao/efeitos.gd")
 ## tipo -> [estações, hora de início, hora de fim, intervalo mínimo e máximo em s, quantos no máximo]
 const REGRAS := {
 	"passaros": [["primavera", "verão", "outono"], 7.0, 17.0, 18.0, 40.0, 1],
-	"pousado": [["primavera", "verão", "outono"], 7.0, 17.0, 15.0, 30.0, 3],
+	"pousado": [["primavera", "verão", "outono"], 7.0, 17.0, 10.0, 22.0, 4],
 	"peixe": [["primavera", "verão", "outono"], 7.0, 19.0, 8.0, 25.0, 1],
 	"sapo": [["primavera", "verão"], 18.0, 23.5, 10.0, 30.0, 2],
 	"garca": [["primavera", "verão", "outono"], 5.5, 16.0, 30.0, 90.0, 1],
 	"coelho": [["primavera", "verão", "outono", "inverno"], 5.0, 8.5, 12.0, 35.0, 2],
 	"coelho_tarde": [["primavera", "verão", "outono", "inverno"], 17.0, 19.5, 12.0, 35.0, 2],
+	"coelho_dia": [["primavera", "verão", "outono"], 8.5, 17.0, 60.0, 150.0, 1],  # na borda da roça
 	"cervo": [["primavera", "verão", "outono"], 5.0, 9.0, 25.0, 70.0, 1],
 	"morcego": [["primavera", "verão", "outono"], 18.5, 22.0, 6.0, 18.0, 3],
 	"migrando": [["inverno"], 8.0, 16.0, 40.0, 100.0, 1],
@@ -23,7 +24,7 @@ const REGRAS := {
 }
 const FOLHAS := {
 	"passaros": "passaro_voar_4q", "pousado": "passaro_pousado_2q", "peixe": "peixe_saltar_4q",
-	"sapo": "sapo_2q", "garca": "garca_2q", "coelho": "coelho_4q", "coelho_tarde": "coelho_4q",
+	"sapo": "sapo_2q", "garca": "garca_2q", "coelho": "coelho_4q", "coelho_tarde": "coelho_4q", "coelho_dia": "coelho_4q",
 	"cervo": "cervo_4q", "morcego": "morcego_4q", "migrando": "bando_migrando_4q",
 	"porco": "porco_do_mato_4q", "ave_grande": "ave_grande_4q",
 }
@@ -90,7 +91,12 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 			var dir := 1.0 if _rng.randf() < 0.5 else -1.0
 			fosco.emitir(folha, 24, 4, Vector2(-20.0 if dir > 0.0 else 500.0, _rng.randf_range(12, 26)),
 				Vector2(18.0 * dir, 0), 540.0 / 18.0, 6.0, 0, {"espelho": dir < 0.0})
-		"pousado":  # no chão da clareira ou da praia, longe de gente
+		"pousado":  # a maioria nos telhados (contra o céu), o resto no chão da clareira ou da praia, longe de gente
+			if not vista.telhados.is_empty() and _rng.randf() < 0.6:
+				var t: Vector2 = vista.telhados[_rng.randi() % vista.telhados.size()]
+				fosco.emitir(folha, 4, 2, Vector2(t.x, t.y - 1), Vector2.ZERO, _rng.randf_range(20, 45),
+					_rng.randf_range(0.8, 1.6), 0, {"espelho": _rng.randf() < 0.5})
+				return
 			for tentativa in 6:
 				var x := _rng.randf_range(140, 330)
 				if _longe_de_gente(x, pessoas_x, 16.0):
@@ -115,6 +121,25 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 					dir = signf(x - px) if x != px else dir
 			fosco.emitir(folha, 6, 4, Vector2(x, vista.chao(int(x))), Vector2(14.0 * dir, 0), _rng.randf_range(3, 6),
 				8.0, 0, {"espelho": dir < 0.0, "rente": true})
+		"coelho_dia":  # sai do mato e atravessa a borda de uma roça (sem roça, a ponta da vila), aos pulos
+			var obras: Array = vista.sim.construcoes if vista.sim else []
+			var rocas: Array = obras.filter(func(o): return o["tipo"] == "roca")
+			var xs: Array = rocas.map(func(o): return float(o["x"]))
+			if xs.is_empty() and not obras.is_empty():
+				var todos: Array = obras.map(func(o): return float(o["x"]))
+				xs = [todos.min() - 24.0, todos.max() + 24.0]
+			if xs.is_empty():
+				return
+			var meio: float = obras.reduce(func(soma, o): return soma + float(o["x"]), 0.0) / obras.size()
+			xs.shuffle()
+			for borda in xs:  # a primeira borda sem gente perto; foge para fora da vila
+				var dir := 1.0 if borda >= meio else -1.0
+				# em chão aberto (sem arbusto ou capim na frente), nunca na praia nem no lago
+				var x: float = vista.chao_aberto(clampf(borda - dir * 10.0, 150.0, 440.0), dir)
+				if _longe_de_gente(x, pessoas_x, 12.0):
+					fosco.emitir(folha, 6, 4, Vector2(x, vista.chao(int(x))), Vector2(14.0 * dir, 0), 40.0 / 14.0 + 0.4,
+						8.0, 0, {"espelho": dir < 0.0, "rente": true})
+					break
 		"cervo":  # pastando na borda da floresta do morro
 			var x := _rng.randf_range(400, 470)
 			if _longe_de_gente(x, pessoas_x, 50.0):
