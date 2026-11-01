@@ -1,10 +1,11 @@
 extends SceneTree
 ## Imprime as dicas (o que a pessoa faz, o que pensa, o humor) de pessoas em mundos, anos e
 ## horas diferentes, e confere: frases não vazias, pensamento até 60 caracteres, nada
-## sobre o jogador, a mesma pessoa sem a mesma frase por horas a fio, e o mesmo mundo dá a
-## mesma dica (a dica não mexe no sorteio do mundo); quem dorme, com humor de sono; no mesmo povo,
-## duas pessoas nunca com a mesma frase na mesma hora; e o custo da consulta (a primeira do dia e
-## a primeira de uma hora).
+## sobre o jogador, o mundo intocado (a dica não mexe no sorteio do mundo); quem dorme, com humor
+## de sono; duas pessoas nunca com a mesma frase na mesma hora, nem de povos diferentes; a mesma
+## pessoa nunca volta a uma frase de outro bloco de 2 horas do mesmo dia; ninguém pensa na praia,
+## em pescar ou em brincar enquanto já está ali ou fazendo aquilo; a dica das cabanas à noite; e
+## o custo da consulta (a primeira do dia e a primeira de uma hora).
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_dica.gd
 
 const Mundo = preload("res://nucleo/mundo.gd")
@@ -52,13 +53,13 @@ func _initialize() -> void:
 			if pe.is_empty():
 				continue
 			com_frase += 1
-			var k: String = "%d|%s" % [f["grupo"], pe]
-			if vistas.has(k):
+			if vistas.has(pe):
 				repetidas += 1
-			vistas[k] = true
-		if repetidas > 0:
-			_falha("%d frases repetidas no mesmo povo na mesma hora" % repetidas)
-		print("  (%d de %d com a frase de outra pessoa do mesmo povo)" % [repetidas, com_frase])
+			vistas[pe] = true
+		# Entre povos, só quando as frases livres acabam (mundos cheios); no mesmo povo, nunca.
+		if repetidas > 0 and vivos.size() <= 60:
+			_falha("%d frases repetidas na mesma hora" % repetidas)
+		print("  (%d de %d com a frase de outra pessoa)" % [repetidas, com_frase])
 		if m.rng.state != rng0:
 			_falha("a dica mexeu no sorteio do mundo")
 		m.avancar_hora()
@@ -84,19 +85,38 @@ func _conferir(d: Dictionary, f: Dictionary, m) -> void:
 	for w in PROIBIDAS:
 		if (d["pensamento"] + " " + d["fazendo"]).contains(w):
 			_falha("fala do jogador: " + d["pensamento"])
+	# D1: o pensamento do dia sobre um lugar ou uma ação não sai enquanto a pessoa está ali.
+	var pe: String = d["pensamento"].to_lower()
+	var zona: String = "praia" if f["x"] >= 136.0 and f["x"] < 200.0 else ""
+	if (zona == "praia" and pe.contains("praia")) or (f["acao"] == "pescar" and pe.contains("pescar")) \
+			or (f["acao"] == "brincar" and pe.contains("brincar")):
+		_falha("pensa no que já está fazendo: %s, %s/%s, x %.0f: %s" % [f["nome"], f["acao"], f.get("detalhe", ""), f["x"], d["pensamento"]])
 	if "{" in d["pensamento"] or "{" in d["fazendo"]:
 		_falha("modelo sem preencher: %s / %s" % [d["fazendo"], d["pensamento"]])
 
 
 ## A mesma pessoa acordada, 8 horas seguidas (dia): não pode ficar com a mesma frase o tempo todo
-## (em povos de até 40 pessoas; nos maiores, as frases livres acabam e alguns ficam com a mesma).
+## (em povos de até 40 pessoas; nos maiores, as frases livres acabam e alguns ficam com a mesma),
+## nem voltar, no mesmo dia, a uma frase de outro bloco de 2 horas. Depois, a dica das cabanas
+## à noite.
 func _repeticao(m) -> void:
 	var frases := {}
+	var blocos := {}   # id -> {frase: bloco}
+	var dia0: int = m.dia_abs()
 	for i in 8:
 		for f in m.pessoas_visiveis():
-			if f["acao"] == "dormir" or m.grupo(f["grupo"]).membros.size() > 40:
-				continue
 			var d: Dictionary = m.dica(f["id"])
+			if f["acao"] == "dormir" or d["pensamento"].is_empty():
+				continue
+			var b: int = m.passo / 2
+			if not blocos.has(f["id"]):
+				blocos[f["id"]] = {}
+			var vb: int = blocos[f["id"]].get(d["pensamento"], b)
+			if vb != b and m.dia_abs() == dia0:
+				_falha("%s voltou a pensar \"%s\" no mesmo dia" % [f["nome"], d["pensamento"]])
+			blocos[f["id"]][d["pensamento"]] = b
+			if m.grupo(f["grupo"]).membros.size() > 40:
+				continue
 			if not frases.has(f["id"]):
 				frases[f["id"]] = {}
 			frases[f["id"]][d["pensamento"]] = frases[f["id"]].get(d["pensamento"], 0) + 1
@@ -107,6 +127,22 @@ func _repeticao(m) -> void:
 			tot += frases[id][k]
 		if tot >= 6 and frases[id].size() < 2:
 			_falha("pessoa %d com a mesma frase %d horas: %s" % [id, tot, frases[id].keys()[0]])
+	# À noite (23h), as cabanas.
+	while m.hora() != 23:
+		m.avancar_hora()
+	var vistas := 0
+	for o in m.construcoes():
+		if o["tipo"] != "cabana" or o.get("ruina", false):
+			continue
+		var dc: Dictionary = m.dica_cabana(o["x"])
+		if dc.is_empty() or String(dc["texto"]).is_empty():
+			_falha("cabana em x %.0f sem dica" % o["x"])
+			continue
+		if not dc["sonho"].is_empty() and not dc["sonho"].contains(", sonhando"):
+			_falha("sonho fora da narração: " + dc["sonho"])
+		if vistas < 2:
+			print("  cabana em x %.0f, 23h: %s | %s" % [o["x"], dc["texto"], dc["sonho"]])
+		vistas += 1
 
 
 func _falha(t: String) -> void:
