@@ -453,6 +453,31 @@ As amostras são `amostra_natureza_4x.png` (4 ruínas nos 3 graus) e `amostra_na
 
 As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e `amostra_tela_livro_4x.png`. As duas telas têm 480 × 160.
 
+## 17. Vida ambiente (`criaturas/`)
+
+São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos, que já são escuros. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
+
+| Folha | Quadro | Quadros | Estação | Horário | Onde e como |
+|---|---|---|---|---|---|
+| `passaro_voar_4q` | 6 × 4 | 4 | primavera, verão, outono | dia | bando de 3 a 5 que voa e pousa |
+| `passaro_pousado_2q` | 4 × 4 | 2 | primavera, verão, outono | dia | no chão, nas cercas e nos telhados |
+| `peixe_saltar_4q` | 8 × 8 | 4 | primavera, verão, outono | dia e entardecer | salta do lago e volta; não no gelo |
+| `sapo_2q` | 6 × 4 | 2 | primavera, verão | entardecer e noite | na margem e no junco |
+| `garca_2q` | 8 × 8 | 2 | primavera, verão, outono | manhã e dia | parada na água rasa da margem |
+| `coelho_4q` | 6 × 4 | 4 | todas | manhã e entardecer | no mato e na borda das roças; foge de gente |
+| `cervo_4q` | 10 × 8 | 4 | todas menos inverno fundo | manhã (até 9h) | na borda da floresta do morro |
+| `corvo_voar_4q` | 6 × 4 | 4 | todas | dia | sobre campos de batalha e onde há mortos |
+| `corvo_pousado_2q` | 5 × 4 | 2 | todas | dia | pousado perto dos mortos e das ruínas |
+| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas |
+| `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
+
+O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do limite de 12 × 8. Cada pássaro tem 3 × 2. Os bandos pequenos de verão saem de vários `passaro_voar_4q`, com os quadros defasados.
+
+**Ajustes na mata distante e no céu de inverno:**
+- **Outono:** a mata distante tem copas laranja e ferrugem separadas, com textura, e a ponta esquerda termina em copas soltas, sem corte reto.
+- **Inverno:** a mata distante tem neve nas copas e verde escuro salpicado de neve, nos 3 horários.
+- **Céu de inverno:** os céus de dia e de entardecer ficaram mais frios e pálidos (`estacoes/inverno/montagem/ceu_<hora>.png`). A montagem agora também procura o céu na pasta da estação.
+
 ## Critérios
 
 | Critério | Situação |
