@@ -20,7 +20,7 @@ var _assinatura := []
 func definir(novas: Array) -> void:
 	var assinatura := []
 	for f in novas:
-		assinatura.append([f.folha, f.quadro, f.x, f.base, f.espelho, f.codigo, f.fogo])
+		assinatura.append([f.folha, f.quadro, f.x, f.base, f.espelho, f.codigo, f.fogo, f.get("atras", false)])
 	if assinatura == _assinatura:
 		return
 	_assinatura = assinatura
@@ -46,5 +46,6 @@ func _draw() -> void:
 		var n := tex.get_width() / w
 		# a folha espelhada tem os quadros em ordem inversa
 		var q: int = (n - 1 - f.quadro) if f.espelho else f.quadro
-		var info := Color((f.x + w / 2.0) / 512.0, f.fogo / 512.0, f.codigo / 255.0, 1.0)
+		# alfa 0,5 marca a segunda fileira da roda (o shader a escurece; o alfa não é usado como transparência)
+		var info := Color((f.x + w / 2.0) / 512.0, f.fogo / 512.0, f.codigo / 255.0, 0.5 if f.get("atras", false) else 1.0)
 		draw_texture_rect_region(tex, Rect2(f.x, f.base - h + 1, w, h), Rect2(q * w, 0, w, h), info)

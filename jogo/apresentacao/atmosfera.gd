@@ -124,21 +124,19 @@ func avancar(delta: float, hora: float, estado: int, fogos: Array, clima: Dictio
 	_respingos()
 
 
-## Força 0..1 da neblina pela hora: forte de madrugada, rala à noite.
+## Força 0..1 da neblina pela hora: só de manhã, depois que o dia clareia.
 static func forca_neblina(h: float) -> float:
-	if h >= 4.0 and h < 6.0:
-		return lerpf(0.25, 1.0, (h - 4.0) / 2.0)
-	if h >= 6.0 and h < 8.5:
-		return lerpf(1.0, 0.0, (h - 6.0) / 2.5)
-	if h >= 21.0 or h < 4.0:
-		return 0.25
+	if h >= 6.5 and h < 7.5:
+		return lerpf(0.0, 1.0, h - 6.5)
+	if h >= 7.5 and h < 9.0:
+		return lerpf(1.0, 0.0, (h - 7.5) / 1.5)
 	return 0.0
 
 
 func _atualizar_neblina(hora: float, estado: int) -> void:
 	_deriva += get_process_delta_time() * 1.5
 	var forca := floorf(forca_neblina(hora) * 16.0) / 16.0
-	var cor: Color = vista.cor_paleta(4 if estado == NOITE else (1 if estado == ENTARDECER else 0))
+	var cor: Color = vista.cor_paleta(19)  # tom vizinho do azul das montanhas de dia
 	var novo := [forca, floori(_deriva), cor]
 	if novo == _neblina_estado:
 		return

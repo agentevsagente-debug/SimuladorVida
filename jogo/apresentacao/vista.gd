@@ -53,6 +53,7 @@ const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "p
 const PASSO_ANDAR := 9.0      # px/s de quem anda
 const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
+const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const ZOOM_SEGUIR := 2
 
 var sim: Simulacao
@@ -99,6 +100,7 @@ var _chave_fixo := []
 var _virada := {}          # id da pessoa -> espelho (olhando para a esquerda)
 var _x_visto := {}         # id da pessoa -> x desenhado (anda até o x do núcleo)
 var _acordou := {}         # id da pessoa -> quando saiu da cabana (para saírem em fila)
+var _atras := {}           # ids na segunda fileira da roda da fogueira
 var _tex_fogueira: Texture2D
 var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
@@ -271,6 +273,8 @@ func _criar_nos() -> void:
 			_tex_fundo["%s_%s" % [nome, nomes[i]]] = corte[1][i]
 		_canto_fundo.append(Vector2(corte[0].position))
 		_fundos.append(_sprite(0, paleta, tabelas))
+		if nome == "ceu":
+			_fundos[-1].material.set_shader_parameter("frente_ativa", true)
 	_agua = _sprite(4, paleta, tabelas)
 	_mundo = _sprite(1, paleta, tabelas)
 	_fogueiras = Node2D.new()
@@ -573,7 +577,7 @@ static func estado_da_hora(h: float) -> Array:
 	for f in faixas:
 		if h >= f[0] and h < f[1]:
 			var t: float = (h - f[0]) / (f[1] - f[0]) if f[2] != f[3] else 0.0
-			return [f[2], f[3], floorf(t * 16.0) / 16.0]
+			return [f[2], f[3], floorf(t * 82.0) / 82.0]  # a frente anda de 2 em 2 linhas
 	return [NOITE, NOITE, 0.0]
 
 
@@ -601,10 +605,13 @@ func _atualizar_horario() -> void:
 		_fundos[i].material.set_shader_parameter("tex_b", _tex_fundo[_nome_fundo(i, b, especial)])
 	_reflexo.texture = _tex_reflexo[a]
 	_reflexo.material.set_shader_parameter("tex_b", _tex_reflexo[b])
+	# a noite desce do alto; a manhã sobe do horizonte
+	var descendo := not (a == NOITE or (a == ENTARDECER and b == DIA))
 	for m in _materiais:
 		m.set_shader_parameter("estado_a", a)
 		m.set_shader_parameter("estado_b", b)
 		m.set_shader_parameter("t", e[2])
+		m.set_shader_parameter("descendo", descendo)
 
 
 ## O céu de dia vira o de seca ou o de eclipse quando é o caso.
@@ -674,12 +681,16 @@ func _figuras_layout() -> Array:
 
 
 ## Onde cada pessoa fica, sem amontoar. Quem está na fogueira quer um lugar
-## da roda, dos dois lados do fogo; os outros querem o x do núcleo. Depois,
-## todos são empacotados numa fila só, com ESPACO entre vizinhos: blocos que se
+## da roda, dos dois lados do fogo e fora das cabanas; passando de RODA_MAX
+## pessoas, as outras formam uma segunda fileira, meio passo atrás (veja
+## _atras). Os outros querem o x do núcleo. Depois, todos os da frente são
+## empacotados numa fila só, com ESPACO entre vizinhos: blocos que se
 ## encostam se juntam e se centram nas posições desejadas. A ordem é pelo x
 ## desejado e pelo id, então ninguém troca de lugar de um quadro para o outro.
 func _lugares(pessoas: Array) -> Dictionary:
+	_atras.clear()
 	var desejos := []  # [x desejado, id]
+	var lugar := {}
 	var rodas := {}
 	for p in pessoas:
 		if p["acao"] == "dormir":
@@ -691,18 +702,44 @@ func _lugares(pessoas: Array) -> Dictionary:
 			rodas[f].append(p["id"])
 		else:
 			desejos.append([float(p["x"]), p["id"]])
+	var cabanas := sim.construcoes.filter(func(o): return o["tipo"] == "cabana").map(func(o): return float(o["x"]))
 	for f in rodas:
 		var roda: Array = rodas[f]
 		roda.sort()
+		var lugares := _lugares_da_roda(f, mini(roda.size(), RODA_MAX), cabanas)
 		for i in roda.size():
-			var lado := -1.0 if i % 2 == 0 else 1.0
-			desejos.append([f + lado * (11.0 + ESPACO * (i / 2)), roda[i]])
+			if i < lugares.size():
+				desejos.append([lugares[i], roda[i]])
+			else:  # segunda fileira: entre dois da frente, fora da fila empacotada
+				var k := (i - lugares.size()) % lugares.size()
+				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
+				_atras[roda[i]] = true
 	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
 	var xs := _empacotar(desejos.map(func(d): return d[0]))
-	var lugar := {}
 	for i in desejos.size():
 		lugar[desejos[i][1]] = xs[i]
 	return lugar
+
+
+## Lugares da roda em volta do fogo em f: dos dois lados, alternando, a partir
+## de 11 px do centro, pulando o que cairia na frente de uma cabana.
+func _lugares_da_roda(f: float, n: int, cabanas: Array) -> Array:
+	var r := []
+	var d := [11.0, 11.0]  # próxima distância livre à esquerda e à direita
+	var lado := 0
+	while r.size() < n:
+		var x: float = f + (-1.0 if lado == 0 else 1.0) * d[lado]
+		d[lado] += ESPACO
+		var livre := x > MARGEM and x < LARGURA - 4
+		for c in cabanas:
+			if absf(c - x) < 12.0:
+				livre = false
+		if livre:
+			r.append(x)
+		if d[0] > 80.0 and d[1] > 80.0:
+			break  # não há mais lugar perto do fogo
+		lado = 1 - lado
+	return r
 
 
 ## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível
@@ -826,12 +863,13 @@ func _figuras_nucleo(delta: float) -> Array:
 		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
 
 		var xr := roundi(x)
-		var base := _chao(xr)
+		var base := _chao(xr) - (1 if _atras.has(id) else 0)
 		if _na_agua(xr):
 			base = Terreno.NIVEL_AGUA + 2
 		r.append({"id": id, "folha": folha, "quadro": quadro, "largura": largura, "x": xr - largura / 2,
 			"base": base, "espelho": espelho, "codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo,
-			"acompanhada": p.get("acompanhada", false), "movendo": movendo})
+			"acompanhada": p.get("acompanhada", false), "movendo": movendo, "atras": _atras.has(id)})
+	r.sort_custom(func(a, b): return a.atras and not b.atras)  # a segunda fileira fica atrás
 	for id in _x_visto.keys():
 		if not vivos.has(id):
 			_x_visto.erase(id)
