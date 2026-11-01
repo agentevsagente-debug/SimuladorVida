@@ -1,10 +1,12 @@
 # Verifica a moldura do jogo no Windows: estilo da janela, transparência, mouse
 # atravessando, cliques, arraste, troca de escala, nitidez e esconder/mostrar.
-# Move o cursor por instantes e devolve ele ao lugar. Leva cerca de 1 minuto.
+# Move o cursor por instantes e devolve ele ao lugar. Leva cerca de 1 minuto,
+# mais 1 a 2 minutos do item 8 (exportar e abrir o executável).
 param(
     [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe",
     [int]$X = 200,
-    [int]$Y = 200
+    [int]$Y = 200,
+    [switch]$SemExportar   # pula o item 8 (gerar e abrir o executável)
 )
 $ErrorActionPreference = 'Stop'
 $projeto = Split-Path $PSScriptRoot -Parent
@@ -148,4 +150,42 @@ foreach ($e in 3, 4) {
 }
 
 Stop-Process -Id $alvo.Id -ErrorAction SilentlyContinue
+
+# 8. O executável: exporta com o preset "Windows" (modelos de exportação instalados) e
+# abre por 15 s. A exportação reimporta e troca as quebras de linha dos .import; as que
+# só mudaram nisso voltam ao que está no git.
+if (-not $SemExportar) {
+    $console = $Godot -replace '\.exe$', '_console.exe'
+    $exe = Join-Path (Split-Path $projeto -Parent) 'builds\Simulador de vida.exe'
+    $antes = if (Test-Path $exe) { (Get-Item $exe).LastWriteTime } else { [datetime]::MinValue }
+    New-Item -ItemType Directory -Force (Split-Path $exe -Parent) | Out-Null
+    $ErrorActionPreference = 'Continue'  # o Godot escreve avisos na saída de erro
+    & $console --headless --path $projeto --export-release 'Windows' 2>&1 | Out-Null
+    $ErrorActionPreference = 'Stop'
+    $novo = (Test-Path $exe) -and (Get-Item $exe).LastWriteTime -gt $antes
+    Registrar 'exportar' $novo $(if ($novo) { '{0:N0} MB' -f ((Get-Item $exe).Length / 1MB) } else { 'sem executável novo' })
+    foreach ($f in (git -C $projeto diff --name-only -- '*.import')) {
+        git -C $projeto diff --ignore-cr-at-eol --quiet -- $f
+        if ($LASTEXITCODE -eq 0) { git -C $projeto checkout -- $f }
+    }
+    if ($novo) {
+        $logx = Join-Path $env:TEMP 'moldura-exe.log'
+        if (Test-Path $logx) { Remove-Item $logx }
+        $p = Start-Process -FilePath $exe -PassThru -ArgumentList @('--log-file', "`"$logx`"", '--',
+            "--pos=$X,$Y", '--escala=2', '--duracao=15', '--sem-config', '--mundo-novo')
+        for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
+        Start-Sleep -Seconds 3
+        $h = $p.MainWindowHandle
+        $r = Retangulo $h
+        $janela = $h -ne 0 -and ($r.Right - $r.Left) -eq 960
+        $passa = $janela -and ([Win32]::RaizEm($r.Left + 300 * 2, $r.Top + 8 * 2) -ne $h)
+        Registrar 'executavel abre' $janela ('{0}x{1}' -f ($r.Right - $r.Left), ($r.Bottom - $r.Top))
+        Registrar 'executavel passagem' $passa ''
+        $p.WaitForExit(20000) | Out-Null
+        $erros = if (Test-Path $logx) { @(Select-String -Path $logx -Pattern 'ERROR|SCRIPT ERROR').Count } else { -1 }
+        Registrar 'executavel sem erros' ($erros -eq 0) "$erros erros no log"
+        Stop-Process -Id $p.Id -ErrorAction SilentlyContinue
+    }
+}
+
 $resultados | ConvertTo-Json | Set-Content (Join-Path $saida 'verificacao.json') -Encoding utf8

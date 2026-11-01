@@ -81,6 +81,10 @@ var _cursor := Vector2(-100, -100)
 var _dica: NinePatchRect
 var _dica_textos: Array[Label] = []
 var _dica_icone: TextureRect
+## A caixa desenhada na faixa transparente ao lado da alça (dica da primeira
+## abertura ou aviso), ou vazia. A moldura a inclui na região da janela: no
+## Windows, a passagem do mouse recorta também o desenho.
+var caixa_na_faixa := Rect2()
 var _dica_bico: TextureRect   # o bico embaixo da dica, apontando para quem ela descreve
 var _dica_balao: TextureRect  # o balãozinho de pensamento ao lado da linha do pensamento
 var _dica_ponto := []         # [mundo, tela] da última dica de pessoa, para atualizar com o cursor parado
@@ -901,6 +905,7 @@ func _desenhar_9(tex: Texture2D, r: Rect2, m: int, alvo: CanvasItem = null) -> v
 
 
 func _draw() -> void:
+	var na_faixa := Rect2()
 	_desenhar_9(_alca, Rect2(0, 0, largura(), ALTURA_ALCA), 4)
 	for y in [5, 8, 11]:  # pega de arraste
 		for x in [3, 6]:
@@ -939,6 +944,8 @@ func _draw() -> void:
 			rd.position = Vector2(480 - rd.size.x, ALTURA_ALCA + 1)
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), rd, 4)
 		draw_string(fd, rd.position + Vector2(5, 11), dica, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+		if rd.position.y < ALTURA_ALCA:
+			na_faixa = rd
 	if _relogio < _mensagem_ate and _mensagem != "":
 		var fonte: Font = _fontes["clara"]
 		var w := int(fonte.get_string_size(_mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
@@ -947,3 +954,8 @@ func _draw() -> void:
 			r.position = Vector2(480 - r.size.x, ALTURA_ALCA + 1)
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), r, 4)
 		draw_string(fonte, r.position + Vector2(5, 11), _mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+		if r.position.y < ALTURA_ALCA:
+			na_faixa = r
+	if na_faixa != caixa_na_faixa:
+		caixa_na_faixa = na_faixa
+		largura_mudou.emit.call_deferred()  # a moldura refaz a região da janela
