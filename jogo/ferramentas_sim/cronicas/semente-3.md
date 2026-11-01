@@ -92,7 +92,7 @@ Koik, que falava pelo Que Risca o Céu em Peak, morreu dormindo, aos 59 anos. No
 
 ### Ano 33
 
-Na primavera, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos. Tinha fundado Peak.
+Na primavera, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos.
 
 *Do ano 34 ao 36, a vida seguiu sem grandes acontecimentos.*
 
@@ -108,7 +108,7 @@ De novo a chuva sumiu, como no ano 29. Foram 25 dias de seca.
 
 ### Ano 40
 
-Kion, de Koil, tomou por esposa Tama, de Peak, e os dois povos passaram a se visitar. Nos anos 31 a 40 houve três secas e cinco preces que pareceram atendidas; nasceram 21 crianças e morreram nove pessoas. No fim do ano 40, 44 pessoas viviam no mundo: Koil (24) e Peak (20).
+Tama, de Peak, foi viver em Koil com Kion: o primeiro casamento entre os dois povos. Nos anos 31 a 40 houve três secas e cinco preces que pareceram atendidas; nasceram 21 crianças e morreram nove pessoas. No fim do ano 40, 44 pessoas viviam no mundo: Koil (24) e Peak (20).
 
 ### Ano 41
 
@@ -138,7 +138,7 @@ Na primavera do ano 49, morreu Veur, que guiava Koil, aos 51 anos. Uma doença n
 
 ### Ano 50
 
-Makon, que guiava Peak, morreu de velhice aos 52 anos. Nunca perdoou o deus pela morte de Lopeik. Os últimos de Peak, Tamos, Pelour e Peur, juntaram-se a Koil. Peak deixou de existir. Koil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
+Makon, que guiava Peak, morreu de velhice aos 52 anos. Nunca perdoou o deus pela morte de Lopeik. Os últimos de Peak, Tamos, Pelour e Peur, juntaram-se a Koil. Peak deixou de existir. Koil também trocou as cabanas por casas de pedra. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
 
 *Do ano 51 ao 53, a vida seguiu sem grandes acontecimentos.*
 
@@ -196,7 +196,7 @@ Maos tinha rezado: «Que Levanta, não leves mais ninguém.» Os doentes se leva
 
 ### Ano 86
 
-Morreu Kuros, que guiava Koil, aos 62 anos. Com Vion à frente, a nova geração de Pear abandonou o costume de queimar os mortos, costume herdado dos avós.
+Morreu Kuros, que guiava Koil, aos 62 anos. Em Pear, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam.
 
 ### Ano 87
 
@@ -204,7 +204,7 @@ Morreu Jur, filho pequeno de Pemaya. Maos passou a falar pelo Que Levanta em Pea
 
 ### Ano 88
 
-Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade de Maos, não do deus. Houve luta no lago: Pear atacou Koil. Koil foi derrotado e perdeu o que tinha guardado. Maveur morreu na luta. Foi a primeira vez que gente matou gente no mundo. Pear venceu Koil e levou os cinco sobreviventes para viver sob seu mando. Koil deixou de existir, mas os vencidos guardaram seus costumes em segredo.
+Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade de Maos, não do deus. Houve luta no lago: Pear atacou Koil. Koil foi derrotado e perdeu o que tinha guardado. Caiu Maveur. Foi a primeira vez que gente matou gente no mundo. Pear venceu Koil e levou os cinco sobreviventes para viver sob seu mando. Koil deixou de existir, mas os vencidos guardaram seus costumes em segredo.
 
 ### Ano 89
 
@@ -218,7 +218,7 @@ Nos anos 81 a 90 houve duas secas e seis preces que pareceram atendidas; nascera
 
 ### Ano 93
 
-Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Tinha fundado Pear. Pear escolheu Maloik para guiar o grupo. Maos queria o lugar e nunca perdoou. No inverno, nasceram gêmeos de Tamya: Selloim e Pekuron.
+Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Pear escolheu Maloik para guiar o grupo. Maos queria o lugar e nunca perdoou. No inverno, nasceram gêmeos de Tamya: Selloim e Pekuron.
 
 *Os anos 94 a 96 passaram em paz.*
 
@@ -234,7 +234,7 @@ Peur pregou em Pear que o deus não era «o Que Levanta», mas «o Que Julga». 
 
 ### Ano 100
 
-Tamya, de Pear, casou-se com Lour e foi viver em Viur. Foi o primeiro laço entre os dois povos. Em Pear, Maos pediu: «Manda água, Que Levanta, que as crianças têm sede.» Quando a chuva voltou, Pear agradeceu ao Que Levanta. O deus não tinha feito nada. Nos anos 91 a 100 houve três secas e cinco preces que pareceram atendidas; nasceram 31 crianças e morreram cinco pessoas. No fim do ano 100, 55 pessoas viviam no mundo: Pear (19) e Viur (36).
+Tamya, de Pear, casou-se com Lour e foi viver em Viur. Foi o primeiro laço entre os dois povos. Em Pear, Maos pediu: «Manda água, Que Levanta, que as crianças têm sede.» Quando a chuva voltou, Pear agradeceu ao Que Levanta. Nos anos 91 a 100 houve três secas e cinco preces que pareceram atendidas; nasceram 31 crianças e morreram cinco pessoas. No fim do ano 100, 55 pessoas viviam no mundo: Pear (19) e Viur (36).
 
 ---
 

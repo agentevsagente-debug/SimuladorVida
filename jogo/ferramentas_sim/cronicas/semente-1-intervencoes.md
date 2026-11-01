@@ -60,7 +60,7 @@ No verão do ano 16, o sol se apagou no meio da tarde e voltou pouco depois. Nin
 
 ### Ano 17
 
-Na primavera, Saut, de Zeor, tomou por esposa Sau, de Linon, e os dois povos passaram a se visitar. No inverno, as preces de Zeor ficaram sem resposta. A seca voltou, como no ano 2: 24 dias sem chuva, até que o céu se abriu.
+Na primavera, Sau, de Linon, foi viver em Zeor com Saut: o primeiro casamento entre os dois povos. No inverno, as preces de Zeor ficaram sem resposta. A seca voltou, como no ano 2: 24 dias sem chuva, até que o céu se abriu.
 
 *Do ano 18 ao 19, a vida seguiu sem grandes acontecimentos.*
 
@@ -76,7 +76,7 @@ Na primavera do ano 21, Samiem, o desconfiado, descobriu que uma semente enterra
 
 ### Ano 23
 
-Em Zeor, Viem pediu: «Que Apaga o Sol, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Zeor duvidou de que o Que Apaga o Sol tinha ouvido. A crônica sabe que foi acaso.
+Em Zeor, Viem pediu: «Que Apaga o Sol, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Zeor duvidou de que o Que Apaga o Sol tinha ouvido.
 
 *Entre os anos 24 e 27, nada mudou o rumo do mundo.*
 
@@ -150,7 +150,7 @@ Nos anos 41 a 50 houve três fomes e quatro preces que pareceram atendidas; nasc
 
 ### Ano 51
 
-Na primavera do ano 51, Zevim, de Zeor, tomou por esposa Ena, de Selan, e os dois povos passaram a se visitar. Com Ena chegou a Zeor o saber de plantar. No verão, nas terras da Floresta da Chuva, Zeor plantou suas primeiras roças. Já não precisava andar atrás de comida.
+Na primavera do ano 51, Ena, de Selan, foi viver em Zeor com Zevim: o primeiro casamento entre os dois povos. Com Ena chegou a Zeor o saber de plantar. No verão, nas terras da Floresta da Chuva, Zeor plantou suas primeiras roças. Já não precisava andar atrás de comida.
 
 ### Ano 52
 
@@ -158,7 +158,7 @@ Em Linon, Mizea tomou para si o cuidado das preces à Estrela de Cauda.
 
 ### Ano 53
 
-Na primavera, Linon passou a receber bem os de fora: um casamento com outro povo virava festa. Selena, de Selan, casou-se com Enem e foi viver em Linon. Foi o primeiro laço entre os dois povos.
+Na primavera, Linon passou a receber bem os de fora: um casamento com outro povo virava festa. Enem, de Linon, tomou por esposa Selena, de Selan, e os dois povos passaram a se visitar.
 
 ### Ano 54
 
@@ -166,7 +166,7 @@ No verão do ano 54, Linvia deu à luz gêmeos, Torbeya e Torya. Uns viram bên�
 
 ### Ano 55
 
-Morreu Samiem, que fundou Selan e o guiava, aos 52 anos. Tinha sido o primeiro a plantar. Em Selan, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 9, só a crônica guarda. Morreu o último que tinha visto o ano 28. Em Selan, se deixavam oferendas no começo de cada estação, mas ninguém sabia mais dizer por quê. Em Linon, Mizea pediu: «Estrela de Cauda, leva embora a febre.» A febre passou, e Mizea contou a todos que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça.
+Morreu Samiem, que fundou Selan e o guiava, aos 52 anos. Tinha sido o primeiro a plantar. Em Selan, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 9, só a crônica guarda. Morreu o último que tinha visto o ano 28. Em Selan, se deixavam oferendas no começo de cada estação, mas ninguém sabia mais dizer por quê. Em Linon, Mizea pediu: «Estrela de Cauda, leva embora a febre.» A febre passou, e Mizea contou a todos que a Estrela de Cauda tinha ouvido.
 
 *Do ano 56 ao 57, a vida seguiu sem grandes acontecimentos.*
 
@@ -176,7 +176,7 @@ Selan acabou: Beim, Loya e Mim foram viver em Zeor.
 
 ### Ano 59
 
-Na primavera do ano 59, Saut, que guiava Zeor, morreu dormindo, aos 63 anos. Zeor achou pedras de fogueira cobertas de cinza velha, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. Linon encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Na primavera do ano 59, Saut, que guiava Zeor, morreu dormindo, aos 63 anos. Zeor achou pedras de fogueira cobertas de cinza velha, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. Também Linon foi olhar o que restava de Selan. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 60
 
@@ -204,11 +204,11 @@ Na primavera, Liem, que guiava Linon, morreu de velhice aos 51 anos. O chão tre
 
 ### Ano 67
 
-A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe. No outono, Torlinik, que falava pela Mãe da Fartura em Zeor, não resistiu à fome. Houve luta no lago: Zeor atacou Linon. Linon resistiu, e Zeor voltou de mãos vazias. Saim morreu na luta. Foi a primeira vez que gente matou gente no mundo. Depois da luta, Zeor e Linon se encontraram no lago e juraram paz. Os últimos de Zeor, Bea e Linenya, juntaram-se a Linon. Zeor deixou de existir.
+A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe. No outono, Torlinik, que falava pela Mãe da Fartura em Zeor, não resistiu à fome. Houve luta no lago: Zeor atacou Linon. Linon expulsou os atacantes. Caiu Saim. Foi a primeira vez que gente matou gente no mundo. Depois da luta, Zeor e Linon se encontraram no lago e juraram paz. Os últimos de Zeor, Bea e Linenya, juntaram-se a Linon. Zeor deixou de existir.
 
 ### Ano 68
 
-Em Linon, olharam um templo de barro desabado e disseram que Zeor tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.
+Linon encontrou as ruínas de Zeor: um templo de barro desabado. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 69
 
@@ -220,21 +220,21 @@ Nos anos 61 a 70 houve quatro secas, três fomes e catorze preces que pareceram 
 
 ### Ano 71
 
-Mizea não podia mais viver perto de Linenya. Saiu de Linon com dezenove pessoas e fundou Beor na floresta. Beor achou o chão batido de casas sem ninguém, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam. Beor encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Lolinim, o primeiro de Beor.
+Mizea não podia mais viver perto de Linenya. Saiu de Linon com dezenove pessoas e fundou Beor na floresta. Em Beor, olharam o chão batido de casas sem ninguém e disseram que Zeor tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Beor achou pedras de fogueira cobertas de cinza velha, o que restava de Selan. Os velhos diziam que eram parentes antigos, que se perderam. No inverno, nasceu Lolinim, o primeiro de Beor.
 
 ### Ano 72
 
-Bea passou a falar pelo Que Sacode em Beor. Era a primeira a rezar e a última a duvidar. A seca voltou, como no ano 61: 19 dias sem chuva, até que o céu se abriu. Em Beor, Bea pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Beor agradeceu ao Que Sacode. A crônica sabe que foi acaso. Beor passou a festejar todo ano o dia da volta da chuva, em honra do Que Sacode. Bea passou dias nas ruínas de Zeor e voltou sabendo cortar pedra.
+Bea passou a falar pelo Que Sacode em Beor. Era a primeira a rezar e a última a duvidar. Faltou chuva outra vez, a primeira desde o ano 61: 19 dias de céu limpo. Em Beor, Bea pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Beor agradeceu ao Que Sacode. A crônica sabe que foi acaso. Beor passou a festejar todo ano o dia da volta da chuva, em honra do Que Sacode. Bea passou dias nas ruínas de Zeor e voltou sabendo cortar pedra.
 
 ### Ano 73
 
-Na primavera, Mizea, que fundou Beor e o guiava, morreu de repente, aos 41 anos. Foi quem levou os seus a fundar Beor.
+Na primavera, Mizea, que fundou Beor e o guiava, morreu de repente, aos 41 anos.
 
 *Do ano 74 ao 75, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 76
 
-Com Linhaem à frente, a nova geração de Beor abandonou o medo das tempestades, costume herdado dos avós. No verão, Selhaem, de Beor, tomou por esposa Haena, de Linon, e os dois povos passaram a se visitar.
+Beor deixou o medo das tempestades para trás: os jovens já não viam sentido naquilo. No verão, Haena, de Linon, casou-se com Selhaem e foi viver em Beor. Foi o primeiro laço entre os dois povos.
 
 *O ano 77 passou sem nada que a crônica precise guardar.*
 
@@ -246,17 +246,17 @@ No inverno do ano 78, Hau, que guiava Linon, deu à luz e não sobreviveu ao par
 
 ### Ano 80
 
-Na primavera do ano 80, em Beor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No fim do ano 80, 43 pessoas viviam no mundo: Linon (7) e Beor (36).
+Na primavera do ano 80, em Beor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam. No fim do ano 80, 43 pessoas viviam no mundo: Linon (7) e Beor (36).
 
 *O ano 81 passou sem nada que a crônica precise guardar.*
 
 ### Ano 82
 
-A rixa entre Linhaem e Bea rachou Beor. Linhaem partiu com os seus, oito pessoas, e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Em Pelor, olharam pedras de fogueira cobertas de cinza velha e disseram que Selan tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. No inverno, em Pelor, Bea tomou para si o cuidado das preces ao Que Sacode. Em nome do Que Sacode, Bea proibiu casamentos e trocas com Beor. Era vontade de Bea, não do deus.
+A rixa entre Linhaem e Bea rachou Beor. Linhaem partiu com os seus, oito pessoas, e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Pelor encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, em Pelor, Bea tomou para si o cuidado das preces ao Que Sacode. Em nome do Que Sacode, Bea proibiu casamentos e trocas com Beor. Era vontade de Bea, não do deus.
 
 ### Ano 83
 
-Nas ruínas de Zeor, Liselik achou o que eles sabiam: aprendeu a cortar pedra. No outono, houve luta na floresta: Pelor atacou Beor em nome do Que Sacode. Beor expulsou os atacantes. A floresta amanheceu com uma pedra grande onde antes era chão batido. Depois disso, Beor deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Ergue». A floresta virou lugar sagrado para Beor. Ninguém ali corta árvore nem caça perto da pedra.
+Nas ruínas de Zeor, Liselik achou o que eles sabiam: aprendeu a cortar pedra. No outono, houve luta na floresta: Pelor atacou Beor em nome do Que Sacode. Os de Beor não cederam, e Pelor recuou. A floresta amanheceu com uma pedra grande onde antes era chão batido. Depois disso, Beor deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Ergue». A floresta virou lugar sagrado para Beor. Ninguém ali corta árvore nem caça perto da pedra.
 
 ### Ano 84
 
@@ -264,11 +264,11 @@ Na primavera, Sellinu morreu com 3 anos, de uma febre que ninguém entendeu. No 
 
 ### Ano 85
 
-Bea tinha rezado: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Pelor deu graças ao Que Sacode. Foi só o tempo, mas quem iria dizer? Linhaem implorou pela filha. Kuria morreu, e daquele dia em diante Linhaem cuspia no chão quando falavam do Que Sacode. A floresta pegou fogo sem que ninguém acendesse nada. Selem, Ha, Beik, Hahaem, Pera e Behaya morreram nas chamas. Para Beor, aquela terra ficou marcada.
+Bea tinha rezado: «Que Sacode, não deixes nossos filhos morrerem de fome.» A comida voltou, e Pelor deu graças ao Que Sacode. Linhaem implorou pela filha. Kuria morreu, e daquele dia em diante Linhaem cuspia no chão quando falavam do Que Sacode. A floresta pegou fogo sem que ninguém acendesse nada. Selem, Ha, Beik, Hahaem, Pera e Behaya morreram nas chamas. Para Beor, aquela terra ficou marcada.
 
 ### Ano 86
 
-No outono do ano 86, Beor já não cabia na floresta. Enselem, o desconfiado, levou onze pessoas para o morro e fundou Saem. Saem encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, Saem achou um templo de degraus tomado pelo mato, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam.
+No outono do ano 86, Beor já não cabia na floresta. Enselem, o desconfiado, levou onze pessoas para o morro e fundou Saem. Em Saem, olharam pedras de fogueira cobertas de cinza velha e disseram que Selan tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. No inverno, Saem achou um templo de degraus tomado pelo mato, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam.
 
 ### Ano 87
 
@@ -276,11 +276,11 @@ Na primavera, em Saem nasceu a primeira criança: Veu, filha de Halinya e Liraim
 
 ### Ano 88
 
-Linia, de Pelor, casou-se com Selenem e foi viver em Linon. Foi o primeiro laço entre os dois povos.
+Selenem, de Linon, tomou por esposa Linia, de Pelor, e os dois povos passaram a se visitar.
 
 ### Ano 89
 
-Na primavera do ano 89, morreu Loya, que guiava Linon, aos 48 anos. Linon escolheu Enlinem para guiar o grupo. Lik queria o lugar e nunca perdoou. Lolinim, de Beor, tomou por esposa Kurena, de Pelor, e os dois povos passaram a se visitar.
+Na primavera do ano 89, morreu Loya, que guiava Linon, aos 48 anos. Linon escolheu Enlinem para guiar o grupo. Lik queria o lugar e nunca perdoou. Kurena, de Pelor, foi viver em Beor com Lolinim: o primeiro casamento entre os dois povos.
 
 ### Ano 90
 
@@ -298,7 +298,7 @@ Selenem, o ambicioso, aprendeu a cortar a pedra em blocos e a erguer paredes que
 
 ### Ano 95
 
-Em Beor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. O templo de Beor ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Ergue.
+Beor também trocou as cabanas por casas de pedra. O templo de Beor ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Ergue.
 
 ### Ano 96
 
@@ -306,11 +306,11 @@ Na primavera, com Enselem à frente, a nova geração de Saem abandonou as ofere
 
 ### Ano 97
 
-No outono, Pelor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Pelor, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Apaga o Sol, e o deus decidia tudo.
+No outono, depois de Zeor, foi Pelor que ergueu paredes de pedra. Em Pelor, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Apaga o Sol, e o deus decidia tudo.
 
 ### Ano 98
 
-De novo a chuva sumiu, como no ano 72. Foram 25 dias de seca. Em Beor, Selhaem pediu: «Que Ergue, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Beor duvidou de que o Que Ergue tinha ouvido. A crônica sabe que foi acaso.
+Faltou chuva outra vez, a primeira desde o ano 72: 25 dias de céu limpo. Em Beor, Selhaem pediu: «Que Ergue, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Beor duvidou de que o Que Ergue tinha ouvido.
 
 *O ano 99 passou sem nada que a crônica precise guardar.*
 

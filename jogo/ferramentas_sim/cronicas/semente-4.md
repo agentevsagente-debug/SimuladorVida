@@ -56,7 +56,7 @@ No inverno do ano 17, Torik rezou, e nada aconteceu.
 
 ### Ano 18
 
-A seca voltou, como no ano 9: 26 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 9. Foram 26 dias de seca.
 
 ### Ano 19
 
@@ -64,7 +64,7 @@ Numa tempestade sobre o lago, um raio matou Kidema. Ninguém em Teil teve dúvid
 
 ### Ano 20
 
-Em Teil, Torik pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Teil viu nisso obra do Que Nega. O deus não tinha feito nada. Nos anos 11 a 20 houve quatro secas, oito fomes e doze preces que pareceram atendidas; nasceram sete crianças e morreram cinco pessoas. No fim do ano 20, dezoito pessoas viviam no mundo, todas em Teil.
+Em Teil, Torik pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Teil viu nisso obra do Que Nega. Nos anos 11 a 20 houve quatro secas, oito fomes e doze preces que pareceram atendidas; nasceram sete crianças e morreram cinco pessoas. No fim do ano 20, dezoito pessoas viviam no mundo, todas em Teil.
 
 ### Ano 21
 
@@ -78,11 +78,11 @@ A doença entrou em Teil e matou duas pessoas. Foram 8 dias de fome no inverno e
 
 ### Ano 28
 
-Com Kiar à frente, dez pessoas deixaram Teil e fundaram Demur, na floresta. Pela primeira vez, havia mais de um povo no mundo. De novo a chuva sumiu, como no ano 18. Foram 23 dias de seca. Kiar tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que o Que Nega tinha ouvido. A crônica sabe que foi acaso.
+Com Kiar à frente, dez pessoas deixaram Teil e fundaram Demur, na floresta. Pela primeira vez, havia mais de um povo no mundo. Faltou chuva outra vez, a primeira desde o ano 18: 23 dias de céu limpo. Kiar tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada.
 
 ### Ano 29
 
-Na primavera do ano 29, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Ibya implorou pelo filho. Esik morreu, e daquele dia em diante Ibya cuspia no chão quando falavam do Que Nega. Uma febre correu Teil e levou cinco vidas. Desde a febre, Teil não enterra mais ninguém: os mortos vão para o fogo. Kiar, de Demur, tomou por esposa Tora, de Teil, e os dois povos passaram a se visitar.
+Na primavera do ano 29, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Ibya implorou pelo filho. Esik morreu, e daquele dia em diante Ibya cuspia no chão quando falavam do Que Nega. Uma febre correu Teil e levou cinco vidas. Desde a febre, Teil não enterra mais ninguém: os mortos vão para o fogo. Tora, de Teil, foi viver em Demur com Kiar: o primeiro casamento entre os dois povos.
 
 ### Ano 30
 
@@ -122,7 +122,7 @@ Na primavera, morreu Yoali, filha pequena de Tora.
 
 ### Ano 49
 
-Na primavera do ano 49, em Demur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. De novo a chuva sumiu, como no ano 39. Foram 26 dias de seca. Kiar tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que a Estrela de Cauda tinha ouvido. O deus não tinha feito nada. Demur passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
+Na primavera do ano 49, com Kiar à frente, a nova geração de Demur abandonou a festa da chuva, costume herdado dos avós. De novo a chuva sumiu, como no ano 39. Foram 26 dias de seca. Kiar tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que a Estrela de Cauda tinha ouvido. Demur passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
 
 ### Ano 50
 
@@ -132,13 +132,13 @@ Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasce
 
 ### Ano 52
 
-Morreu Kiar, que fundou Demur e o guiava, aos 60 anos. Tinha fundado Demur.
+Morreu Kiar, que fundou Demur e o guiava, aos 60 anos.
 
 *Do ano 53 ao 58, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 59
 
-A seca voltou, como no ano 49: 18 dias sem chuva, até que o céu se abriu. Em Demur, Yoyora pediu: «Estrela de Cauda, não nos deixes secar.» Quando a chuva voltou, Demur agradeceu à Estrela de Cauda. Foi só o tempo, mas quem iria dizer?
+Faltou chuva outra vez, a primeira desde o ano 49: 18 dias de céu limpo. Em Demur, Yoyora pediu: «Estrela de Cauda, não nos deixes secar.» Quando a chuva voltou, Demur agradeceu à Estrela de Cauda.
 
 ### Ano 60
 
@@ -168,11 +168,11 @@ De novo o sol se apagou no meio do dia.
 
 ### Ano 72
 
-No verão do ano 72, com Suik à frente, dezesseis pessoas deixaram Demur e fundaram Suyor, no lago. De novo a chuva sumiu, como no ano 59. Foram 19 dias de seca. Torena tinha rezado: «Olho Escuro, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que o Olho Escuro tinha ouvido. O deus nada fez: o crédito era de graça.
+No verão do ano 72, com Suik à frente, dezesseis pessoas deixaram Demur e fundaram Suyor, no lago. A seca voltou, como no ano 59: 19 dias sem chuva, até que o céu se abriu. Torena tinha rezado: «Olho Escuro, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que o Olho Escuro tinha ouvido. O deus nada fez: o crédito era de graça.
 
 ### Ano 73
 
-Na primavera, com Suik à frente, a nova geração de Suyor abandonou a festa da chuva, costume herdado dos avós. Morreu o último que tinha visto o ano 19. Em Suyor, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Suyor, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 27, só a crônica guarda. Em Suyor nasceu a primeira criança: Tesuim, filho de Gali e Losuim.
+Na primavera, Suyor deixou a festa da chuva para trás: os jovens já não viam sentido naquilo. Morreu o último que tinha visto o ano 19. Em Suyor, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Suyor, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 27, só a crônica guarda. Em Suyor nasceu a primeira criança: Tesuim, filho de Gali e Losuim.
 
 ### Ano 74
 
@@ -200,7 +200,7 @@ Morreu o último que tinha visto o ano 29. Em Demur, os mortos eram queimados, e
 
 ### Ano 80
 
-Na primavera, em Suyor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Nos anos 71 a 80 houve duas secas e cinco preces que pareceram atendidas; nasceram 49 crianças e morreram nove pessoas. No fim do ano 80, 90 pessoas viviam no mundo: Demur (24), Suyor (39) e Miur (27).
+Na primavera, em Suyor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam. Nos anos 71 a 80 houve duas secas e cinco preces que pareceram atendidas; nasceram 49 crianças e morreram nove pessoas. No fim do ano 80, 90 pessoas viviam no mundo: Demur (24), Suyor (39) e Miur (27).
 
 ### Ano 81
 
@@ -208,13 +208,13 @@ Na primavera, com Nitena à frente, a nova geração de Miur abandonou a festa d
 
 ### Ano 82
 
-Em Miur, Esim pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Miur viu nisso obra da Terra Brava. A crônica sabe que foi acaso. No outono, Yoali, de Miur, casou-se com Lolo e foi viver em Suyor. Foi o primeiro laço entre os dois povos.
+Em Miur, Esim pediu: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Miur viu nisso obra da Terra Brava. Foi só o tempo, mas quem iria dizer? No outono, Yoali, de Miur, foi viver em Suyor com Lolo: o primeiro casamento entre os dois povos.
 
 *No ano 83, nada de notável aconteceu.*
 
 ### Ano 84
 
-Na primavera do ano 84, Esim, que falava pela Terra Brava em Miur, morreu de velhice aos 54 anos. Em Miur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. O dia em que a chuva voltou virou festa em Miur: todo ano, celebram a chuva que a Terra Brava mandou. No inverno, Yoali, a ambiciosa, descobriu como empilhar pedras cortadas sem que caíssem. Nitena, que fundou Miur e o guiava, morreu de fome. Tinha fundado Miur.
+Na primavera do ano 84, Esim, que falava pela Terra Brava em Miur, morreu de velhice aos 54 anos. Miur deixou o medo das tempestades para trás: os jovens já não viam sentido naquilo. O dia em que a chuva voltou virou festa em Miur: todo ano, celebram a chuva que a Terra Brava mandou. No inverno, Yoali, a ambiciosa, descobriu como empilhar pedras cortadas sem que caíssem. Nitena, que fundou Miur e o guiava, morreu de fome.
 
 ### Ano 85
 
@@ -222,7 +222,7 @@ Miur conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 9. M
 
 ### Ano 86
 
-Na primavera do ano 86, Yonar, de Miur, tomou por esposa Loyoali, de Demur, e os dois povos passaram a se visitar. Em Demur, quem vinha de fora era recebido com comida e lugar perto do fogo. Suik tinha rezado: «Que Sacode, dá-nos o que comer.» A comida voltou, e Suyor deu graças ao Que Sacode. O deus não tinha feito nada. A terra tremeu. Caíram nove cabanas. Nayora, Esali, Nik, Yoyora e Esesik morreram sob os escombros. A seca voltou, como no ano 72: 21 dias sem chuva, até que o céu se abriu.
+Na primavera do ano 86, Loyoali, de Demur, casou-se com Yonar e foi viver em Miur. Foi o primeiro laço entre os dois povos. Em Demur, quem vinha de fora era recebido com comida e lugar perto do fogo. Suik tinha rezado: «Que Sacode, dá-nos o que comer.» A comida voltou, e Suyor deu graças ao Que Sacode. A crônica sabe que foi acaso. A terra tremeu. Caíram nove cabanas. Nayora, Esali, Nik, Yoyora e Esesik morreram sob os escombros. Faltou chuva outra vez, a primeira desde o ano 72: 21 dias de céu limpo.
 
 ### Ano 87
 
@@ -242,7 +242,7 @@ Na primavera do ano 91, Lolo não podia mais viver perto de Suik. Saiu de Suyor 
 
 ### Ano 93
 
-Na primavera do ano 93, Essuik, que falava pela Terra Brava em Demur, morreu dormindo, aos 51 anos. Depois de anos sob um só, Demur sentou-se em roda: dali em diante, decidia-se juntos. Com Lolo à frente, a nova geração de Vear abandonou o medo das tempestades, costume herdado dos avós. Sunaena, a pacífica, descobriu como empilhar pedras cortadas sem que caíssem.
+Na primavera do ano 93, Essuik, que falava pela Terra Brava em Demur, morreu dormindo, aos 51 anos. Depois de anos sob um só, Demur sentou-se em roda: dali em diante, decidia-se juntos. Em Vear, os jovens deixaram de lado o medo das tempestades. Era coisa dos velhos, diziam. Sunaena, a pacífica, também aprendeu a cortar e empilhar pedra, como já faziam em Suyor.
 
 ### Ano 94
 
@@ -250,23 +250,23 @@ Na primavera, o chão tremeu sem aviso. Caíram doze cabanas. Ibteu, Esa, Yosuo 
 
 ### Ano 95
 
-No outono, um raio caiu no morro durante a tempestade e matou Yoya. A família de Yoya nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Vear sai de casa. Lembram de Yoya. Desde aquele dia, Vear chama o morro de Morro do Raio. Esena, de Miur, casou-se com Berim e foi viver em Vear. Foi o primeiro laço entre os dois povos.
+No outono, um raio caiu no morro durante a tempestade e matou Yoya. A família de Yoya nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Vear sai de casa. Lembram de Yoya. Desde aquele dia, Vear chama o morro de Morro do Raio. Berim, de Vear, tomou por esposa Esena, de Miur, e os dois povos passaram a se visitar.
 
 ### Ano 96
 
-Na primavera, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Para Vear, o deus já não era «o Que Sacode»: passou a ser «a Estrela de Cauda». De novo a chuva sumiu, como no ano 86. Foram 26 dias de seca. Em Demur, Loyoena pediu: «Terra Brava, não nos deixes secar.» Quando a chuva voltou, Demur agradeceu à Terra Brava. Foi só o tempo, mas quem iria dizer? Vear passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
+Na primavera, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Para Vear, o deus já não era «o Que Sacode»: passou a ser «a Estrela de Cauda». De novo a chuva sumiu, como no ano 86. Foram 26 dias de seca. Em Demur, Loyoena pediu: «Terra Brava, não nos deixes secar.» Quando a chuva voltou, Demur agradeceu à Terra Brava. O deus não tinha feito nada. Vear passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
 
 ### Ano 97
 
-Na primavera, em Demur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. No outono, Loik, o curioso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. No inverno, em Miur, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Na primavera, com Loyoena à frente, a nova geração de Demur abandonou o medo das tempestades, costume herdado dos avós. No outono, o saber de Suyor chegou a Demur: Loik aprendeu a cortar e empilhar pedra. No inverno, depois de Suyor, foi Miur que ergueu paredes de pedra.
 
 ### Ano 98
 
-Depois da seca, Demur jurou nunca desperdiçar água. Gali tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Vear duvidou de que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça. Houve luta na floresta: Miur atacou Demur. Demur resistiu, e Miur voltou de mãos vazias. Teik, Gayoya e Yonira morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Demur chamam o lugar de Floresta da Vitória; os de Miur, de Floresta do Luto. Niena, que falava pela Terra Brava em Demur, morreu de fome.
+Depois da seca, Demur jurou nunca desperdiçar água. Gali tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Vear duvidou de que a Estrela de Cauda tinha ouvido. Houve luta na floresta: Miur atacou Demur. Os de Demur não cederam, e Miur recuou. Na luta morreram Teik, Gayoya e Yonira. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Demur chamam o lugar de Floresta da Vitória; os de Miur, de Floresta do Luto. Niena, que falava pela Terra Brava em Demur, morreu de fome.
 
 ### Ano 99
 
-Yoyoena partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Começou a Guerra da Fome: Miur, com fome, foi buscar à força a comida de Demur. Miur e Demur, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra da Fome acabou em trégua, depois de um ano, duas batalhas e quatro mortos. Demur saiu dela mais forte. A fome durou 18 dias em Miur e levou quatro vidas.
+Yoyoena partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Começou a Guerra da Fome: Miur, com fome, foi buscar à força a comida de Demur. Miur e Demur, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra da Fome acabou em trégua, depois de um ano, duas batalhas e quatro mortos. Quem ganhou com isso foi Demur. A fome durou 18 dias em Miur e levou quatro vidas.
 
 ### Ano 100
 
