@@ -6,8 +6,8 @@ para as casas com lareira no inverno.
   `noite`, porque é luz;
 - `luzes/chamine.png` (4x8) e `luzes/chamines.json`: onde pôr a chaminé em cada casa,
   para cada um dos 3 telhados de cultura, e de onde sai a fumaça;
-- `luzes/fumaca_chamine_4q.png` (8x16): fiapo de fumaça fino e irregular (sem pontilhado
-  em grade), que sobe e se desfaz.
+- `luzes/fumaca_chamine_4q.png` (8x16): baforadas cinzas que sobem, crescem, derivam e se
+  desfazem em pedaços no alto (sem pontilhado em grade).
 """
 from pathlib import Path
 import json
@@ -78,21 +78,28 @@ def chamine():
 
 
 def fumaca_chamine():
-    """Fiapo fino: 3 a 6 tufos de 1 a 2 px subindo e balançando, cada vez mais ralos.
-    Sorteio fixo por quadro, sem grade."""
+    """Baforadas que sobem da chaminé: 3 tufos por quadro, separados por ~5 px, que sobem 4 px
+    por quadro (o ciclo de 4 quadros fecha em 16 px), crescem de 1 para 3 px, derivam para a
+    direita e se desfazem em pedaços no alto. Cinza (11) com o lado de cima claro (12), para
+    ler sobre o céu e a neve claros do inverno."""
+    import math
     quadros = []
     for k in range(4):
-        rng = random.Random(800 + k)
         q = [[None] * 8 for _ in range(16)]
-        x = 3.5
-        for y in range(15, -1, -1):
-            x += rng.choice((-0.5, 0, 0, 0.5)) + (0.25 if (y + k * 3) % 6 < 3 else -0.15)
-            subida = 15 - y
-            if rng.random() < 0.85 - subida * 0.045:
-                xi = max(0, min(7, round(x)))
-                q[y][xi] = 12 if subida < 6 else 11
-                if subida < 5 and rng.random() < 0.5 and xi + 1 < 8:
-                    q[y][xi + 1] = 11
+        for j in range(3):
+            s = (j * 16 / 3 + k * 4) % 16           # altura acima da boca da chaminé
+            cy = 15 - s
+            cx = 2.5 + s * 0.22 + 0.6 * math.sin(s * 0.8 + j)
+            r = 0.6 if s < 3 else 1.1 if s < 8 else 1.6
+            for y in range(16):
+                for x in range(8):
+                    d = math.hypot((x - cx) * 0.9, y - cy)
+                    if d > r:
+                        continue
+                    # no alto, o tufo se desfaz em pedaços (sorteio fixo por pixel)
+                    if s > 10 and ((x * 7 + y * 13 + j * 5) % 10) / 10 < (s - 10) / 6:
+                        continue
+                    q[y][x] = 12 if y < cy - 0.2 else 11
         quadros.append(q)
     return quadros
 

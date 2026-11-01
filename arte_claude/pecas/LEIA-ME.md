@@ -401,7 +401,7 @@ O verão é a arte de sempre. As outras três estações ficam em `estacoes/<est
 |---|---|
 | `primavera` | flores brancas e rosas nas copas e nos arbustos, flores no capim e na borda da grama, verde mais vivo |
 | `outono` | copas largas e arbustos laranja e ferrugem, capim seco, grama amarelando com folhas caídas, mata distante enferrujada (de dia). Os pinheiros não mudam. |
-| `inverno` | árvores de copa sem folhas (mesmo encaixe), neve assentada em cima de tudo (pinheiros, arbustos, telhados de todos os estágios, ruínas, pedras, cercas e roças), grama coberta de neve, montanhas com calotas maiores e mata distante com neve, nos 3 horários |
+| `inverno` | árvores de copa sem folhas (mesmo encaixe), neve assentada em cima de tudo (pinheiros, arbustos, telhados de todos os estágios (nas construções, a neve tem 3 px de espessura e cobre o alto de cada água do telhado), ruínas, pedras, cercas e roças), grama coberta de neve, montanhas com calotas maiores e mata distante com neve, nos 3 horários; à noite, a neve das montanhas é azul de lua (18), com a sombra azul-escura (4) |
 
 **Roupa de inverno dos habitantes.** Todas as folhas de pessoas (`habitantes/`, `acoes/` e os habitantes dos estágios 2 a 6) têm uma versão em `estacoes/inverno/<pasta>/`, com o mesmo nome. A roupa de frio tem capuz de lã sobre o cabelo (9 e 10), manto nas costas (8), mangas de lã (9 e 10, com as mãos de fora), polainas nas pernas (8 e 9) e gola de pele (12) nos ombros. Pele e roupa continuam trocáveis pelas tabelas de sempre; com o capuz, o cabelo não aparece. A montagem (`montar.py`) já usa as pessoas da estação. A única folha sem versão de inverno é o `dormir_2q`, porque a pessoa já está coberta.
 
@@ -599,7 +599,7 @@ O `estacoes/amostra_construcoes_inverno_4x.png` mostra as construções nevadas.
 - `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
 - `luzes/chamine.png` (4 × 8): a chaminé de pedra.
 - `luzes/chamines.json`: para cada casa e cada um dos 3 telhados, onde vai a chaminé e de onde sai a fumaça, em coordenadas relativas ao canto da casa.
-- `luzes/fumaca_chamine_4q.png` (8 × 16): um fiapo fino de fumaça, irregular e sem grade, que sobe e se desfaz. Use só no inverno, nas casas com lareira.
+- `luzes/fumaca_chamine_4q.png` (8 × 16): 3 baforadas cinzas, com o lado de cima claro, que nascem com 1 px na boca da chaminé (a última linha), crescem até 3 px, derivam para a direita e se desfazem em pedaços no alto. Os 4 quadros fecham o ciclo; deixe em loop, presa à chaminé. Use só no inverno, nas casas com lareira.
 
 O `luzes/amostra_luzes_4x.png` mostra as casas à noite no inverno, com as janelas acesas e a fumaça.
 
