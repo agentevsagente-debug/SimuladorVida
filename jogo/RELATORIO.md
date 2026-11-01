@@ -104,9 +104,17 @@ GIFs em 1x, em trechos de 60 s de jogo de verdade: `capturas/tarde-1x.gif` (a pa
 - **Medido no 50x** (`medicoes/rapido2.json`, 5 min): CPU de 0,171% em média (4,8% de um núcleo), pico de amostra de 0,23%, dentro da meta; 122 MB na coluna "Memória" do Gerenciador de Tarefas.
 - O verificar.ps1 foi atualizado para a alça com 10 botões e passa nos 19 itens.
 
-## Dica da primeira execução
+## Primeira abertura: dicas na alça
 
-Na primeira vez que o jogo abre, um pergaminho sobre o mundo explica três coisas: o gesto do poder (escolher na alça e segurar sobre o mundo; o botão direito cancela), como esconder (tecla H ou o último botão da alça) e onde fica o ícone para voltar (a bandeja do Windows, junto ao relógio, ou a seta dos ícones ocultos). A dica some com um clique ou sozinha em 40 s e não volta mais: a marca fica em `user://dicas.cfg`, separada do `moldura.cfg`. Os testes com `--sem-config` não a mostram; `--primeira-vez` força a dica (`capturas/primeira-vez.png`). Conferido: depois de uma execução normal, o `dicas.cfg` fica com `primeira_vez=true`.
+Quem abre o jogo pela primeira vez aprende sozinho, sem manual. Ao lado da alça aparece uma dica discreta de cada vez, em letra dourada numa caixa escura, e ela some quando o jogador faz o que ela ensina. A próxima vem 4 s depois:
+
+1. "Escolha um poder e segure sobre o mundo": some quando um poder é usado.
+2. "Passe o cursor sobre as pessoas": some com a primeira dica de pessoa.
+3. "C abre a crônica do mundo": some quando a crônica abre.
+4. "0 a 3 mudam a velocidade do tempo": some com qualquer troca de ritmo.
+5. "H esconde; o ícone fica na bandeja": some ao esconder.
+
+Uma ação feita fora da ordem também conta, e a dica dela não aparece mais. O registro fica no `moldura.cfg`, em `[dicas] feitas`: conferido que, depois de usar um poder, ele grava `feitas=["poder"]`. O `_guardar_config` agora preserva o que já havia no arquivo. A mensagem de um aviso tem prioridade sobre a dica. Os testes com `--sem-config` não mostram as dicas, e `--primeira-vez` mostra todas desde o começo. O pergaminho de boas-vindas anterior saiu. Captura: `capturas/dicas-primeira-abertura.png`.
 
 ## Fase 2 na tela (API v6 a v10)
 

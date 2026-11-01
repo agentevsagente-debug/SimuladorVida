@@ -16,6 +16,7 @@ signal arrastar
 signal esconder
 signal escala(delta: int)
 signal ritmo_mudou
+signal dica_feita(feitas: Array)
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
@@ -49,6 +50,12 @@ const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "cu
 const NOME_ZONA := {"lago": "O lago", "praia": "A praia", "floresta": "A floresta", "morro": "O morro"}
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
 const CARGA_SEGUNDOS := 2.0
+## As dicas da primeira abertura, na ordem: cada uma aparece sozinha, discreta
+## na alça, e some quando o jogador faz o que ela ensina.
+const DICAS := [["poder", "Escolha um poder e segure sobre o mundo"],
+	["pessoas", "Passe o cursor sobre as pessoas"], ["cronica", "C abre a crônica do mundo"],
+	["ritmo", "0 a 3 mudam a velocidade do tempo"], ["esconder", "H esconde; o ícone fica na bandeja"]]
+const ESPERA_DICA := 4.0  # segundos entre uma dica feita e a próxima
 ## O tamanho em que as fontes 5x7 saem pixel a pixel (size=11 no .fnt). Sem ele,
 ## o Godot usa 16 e amplia o texto 1,45 vez, fora da grade de pixels.
 const TAM_FONTE := 11
@@ -85,6 +92,9 @@ var _fontes := {}
 var _relogio := 0.0
 var _ultimo_desenho := []
 var _estante: Node2D
+var _dicas_feitas: Array = []
+var _dicas_ligadas := false
+var _proxima_dica_em := 0.0
 
 
 func criar(p_vista: Node2D) -> void:
@@ -129,7 +139,7 @@ func _montar_botoes() -> void:
 	for r in RITMOS:
 		lista.append({"id": "ritmo:" + r, "icone": r, "selecionado": r == ritmo})
 	lista.append({"id": "cronica", "icone": "cronica", "selecionado": _cronica.visible})
-	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo not in ["fim", "boas_vindas"]})
+	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo != "fim"})
 	if not _mundo_vazio():  # sem ninguém vivo, não há linhagem para seguir
 		lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
@@ -171,6 +181,7 @@ func _apertar(id: String) -> void:
 		_avisar(NOME_PODER[poder] + ": segure sobre o mundo" if poder != "" else "Nenhum poder escolhido")
 	elif id.begins_with("ritmo:"):
 		aberto = ""
+		marcar_dica("ritmo")
 		var r := id.substr(6)
 		if r == "salto":
 			_saltar()
@@ -195,7 +206,7 @@ func _apertar(id: String) -> void:
 
 
 func alternar_estante() -> void:
-	if _estante.visible and _estante.modo not in ["fim", "boas_vindas"]:
+	if _estante.visible and _estante.modo != "fim":
 		_estante.fechar()
 	else:
 		if _cronica.visible:
@@ -270,7 +281,7 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			queue_redraw()
 		if _cronica.visible:
 			return true
-		if _estante.visible and _estante.modo not in ["fim", "boas_vindas"] and not na_alca and pos.y >= faixa:
+		if _estante.visible and _estante.modo != "fim" and not na_alca and pos.y >= faixa:
 			_estante.tratar(event, pos - Vector2(0, faixa))
 			return true
 		if not na_alca and pos.y >= faixa:
@@ -396,6 +407,34 @@ func _criar_povo(x: float) -> void:
 		_avisar(String(r.get("motivo", "Não deu certo")))
 
 
+func iniciar_dicas(feitas: Array) -> void:
+	_dicas_feitas = feitas.duplicate()
+	_dicas_ligadas = true
+	_proxima_dica_em = _relogio + 2.0
+
+
+## A dica que aparece agora, ou "" (nenhuma, ou esperando entre uma e outra).
+func _dica_atual() -> String:
+	if not _dicas_ligadas or _relogio < _proxima_dica_em:
+		return ""
+	for d in DICAS:
+		if not d[0] in _dicas_feitas:
+			return d[1]
+	return ""
+
+
+## O jogador fez o que a dica ensina (feita fora da ordem, ela também não volta).
+func marcar_dica(nome: String) -> void:
+	if not _dicas_ligadas or nome in _dicas_feitas:
+		return
+	var era_a_atual: bool = _dica_atual() != "" and DICAS.filter(func(d): return not d[0] in _dicas_feitas)[0][0] == nome
+	_dicas_feitas.append(nome)
+	if era_a_atual:
+		_proxima_dica_em = _relogio + ESPERA_DICA
+	dica_feita.emit(_dicas_feitas)
+	queue_redraw()
+
+
 ## Usa um poder como se o jogador tivesse feito o gesto (testes e capturas).
 func demo(p: String, x: float, intensidade_fixa: float) -> void:
 	if p == "criar_povo":
@@ -416,6 +455,7 @@ func _usar_poder() -> void:
 	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade())
 	print("[interface] poder %s em x=%d intensidade=%.2f -> %s" % [poder, _carga_ponto.x, intensidade(), r])
 	if r.get("ok", false):
+		marcar_dica("poder")
 		var alvo := ""
 		if int(r.get("alvo", -1)) >= 0:
 			alvo = " sobre " + String(vista.sim.mundo.pessoa(r["alvo"]).nome)
@@ -437,7 +477,7 @@ func _cabeca_seguida() -> Vector2:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
-		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio()]
+		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio(), _dica_atual()]
 	if assinatura != _ultimo_desenho:
 		if _ultimo_desenho.size() <= 4 or (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]
 				or assinatura[6] != _ultimo_desenho[6]):
@@ -506,6 +546,7 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var alvo := tela
 	match o.get("tipo", ""):
 		"pessoa":
+			marcar_dica("pessoas")
 			var fig: Dictionary = o.get("figura", {})
 			if not fig.is_empty():  # o bico aponta para a cabeça de quem a dica descreve
 				alvo = vista.para_tela(Vector2(fig.x + fig.largura / 2.0, fig.base - 12)) + Vector2(0, ALTURA_ALCA)
@@ -684,6 +725,7 @@ func alternar_cronica() -> void:
 	_cronica.visible = not _cronica.visible
 	_dica.visible = false
 	if _cronica.visible:
+		marcar_dica("cronica")
 		mostrar_cronica("")
 	_montar_botoes()
 
@@ -821,6 +863,16 @@ func _draw() -> void:
 		var fonte_relogio: Font = _fontes["dourada" if vista.sim.tempo.get("noite", false) else "clara"]
 		var w := fonte_relogio.get_string_size(hora, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x
 		draw_string(fonte_relogio, Vector2(RELOGIO.position.x + roundi((RELOGIO.size.x - w) / 2.0), 12), hora, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+	var dica := _dica_atual()
+	if dica != "" and not (_relogio < _mensagem_ate and _mensagem != ""):
+		# a dica da primeira abertura: discreta, ao lado da alça, com a letra dourada
+		var fd: Font = _fontes["dourada"]
+		var wd := int(fd.get_string_size(dica, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
+		var rd := Rect2(largura() + 2, 2, wd + 10, 14)
+		if rd.end.x > RELOGIO.position.x - 2:
+			rd.position = Vector2(480 - rd.size.x, ALTURA_ALCA + 1)
+		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), rd, 4)
+		draw_string(fd, rd.position + Vector2(5, 11), dica, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	if _relogio < _mensagem_ate and _mensagem != "":
 		var fonte: Font = _fontes["clara"]
 		var w := int(fonte.get_string_size(_mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)

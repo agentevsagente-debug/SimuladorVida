@@ -17,8 +17,8 @@ extends Node2D
 ##   --escala=N                           escala inteira de 2 a 4
 ##   --pos=X,Y                            posição da janela na tela
 ##   --sem-config                         ignora e não grava a escala e a posição guardadas
-##                                        (e não mostra a dica da primeira execução)
-##   --primeira-vez                       mostra a dica da primeira execução (testes)
+##                                        (e não mostra as dicas da primeira abertura)
+##   --primeira-vez                       mostra as dicas da primeira abertura desde o começo (testes)
 ##   --duracao=S                          fecha sozinho depois de S segundos
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
@@ -43,9 +43,6 @@ const ESCALA_MAX := 4
 const FPS_VISIVEL := 30
 const FPS_ESCONDIDA := 4  # o mundo anda 1 passo a cada 112 s; não precisa de mais
 const ARQUIVO_CONFIG := "user://moldura.cfg"
-## Marca que a dica da primeira execução já apareceu (à parte, para o
-## _guardar_config não apagar).
-const ARQUIVO_DICAS := "user://dicas.cfg"
 
 var escala := 2
 var escondida := false
@@ -139,7 +136,7 @@ func _ready() -> void:
 			(func():
 				interface._abandonar()
 				interface.alternar_estante()).call_deferred()
-	_dica_primeira_vez(args.has("primeira-vez"))
+	_iniciar_dicas(args.has("primeira-vez"))
 	if args.has("atalho-global"):
 		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if args.get("cenario", "") == "escondido":
@@ -220,6 +217,7 @@ func _acompanhar(id: int) -> void:
 func esconder() -> void:
 	if escondida:
 		return
+	interface.marcar_dica("esconder")
 	escondida = true
 	# Window.visible = false não esconde a janela principal no Windows: ela some
 	# da tela, mas continua lá segurando os cliques. Minimizar funciona.
@@ -323,23 +321,35 @@ func _aplicar_passagem_mouse() -> void:
 		_log("alca largura=%d" % alca)
 
 
-## Na primeira vez que o jogo abre: onde fica o ícone, o gesto e como esconder.
-## Aparece uma vez só (guardado em user://dicas.cfg).
-func _dica_primeira_vez(forcar: bool) -> void:
-	var dicas := ConfigFile.new()
-	dicas.load(ARQUIVO_DICAS)
-	if not forcar and (not _usar_config or dicas.get_value("dicas", "primeira_vez", false)):
+## As dicas da primeira abertura (uma de cada vez, na alça): as que o jogador
+## já fez ficam em moldura.cfg ([dicas] feitas) e não voltam. Os testes com
+## --sem-config não as mostram; --primeira-vez mostra todas de novo.
+func _iniciar_dicas(desde_o_comeco: bool) -> void:
+	if not _usar_config and not desde_o_comeco:
 		return
-	interface._estante.boas_vindas.call_deferred()
-	if _usar_config:
-		dicas.set_value("dicas", "primeira_vez", true)
-		dicas.save(ARQUIVO_DICAS)
+	var feitas: Array = []
+	if _usar_config and not desde_o_comeco:
+		var config := ConfigFile.new()
+		config.load(ARQUIVO_CONFIG)
+		feitas = config.get_value("dicas", "feitas", [])
+	interface.dica_feita.connect(_guardar_dica)
+	interface.iniciar_dicas(feitas)
+
+
+func _guardar_dica(feitas: Array) -> void:
+	if not _usar_config:
+		return
+	var config := ConfigFile.new()
+	config.load(ARQUIVO_CONFIG)
+	config.set_value("dicas", "feitas", feitas)
+	config.save(ARQUIVO_CONFIG)
 
 
 func _guardar_config() -> void:
 	if not _usar_config or escondida:
 		return
 	var config := ConfigFile.new()
+	config.load(ARQUIVO_CONFIG)  # guarda junto o que já havia (as dicas feitas)
 	config.set_value("moldura", "escala", escala)
 	config.set_value("moldura", "posicao", get_window().position)
 	if vista.sim:

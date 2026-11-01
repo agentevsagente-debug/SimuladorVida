@@ -12,8 +12,6 @@ extends Node2D
 ##   esquerda volta; a roda também folheia. Fora do livro, volta à estante.
 ## - "confirmar": a pergunta antes de abandonar o mundo.
 ## - "fim": o aviso de que não resta ninguém, sobre o mundo vazio.
-## - "boas_vindas": a dica da primeira execução (poderes, esconder, bandeja),
-##   que some com um clique ou sozinha depois de um tempo.
 ## O botão direito e o Esc voltam um passo (do livro à estante, da estante ao mundo).
 
 signal abandonar
@@ -38,13 +36,6 @@ const CAIXA_CONFIRMAR := Rect2i(110, 34, 260, 84)
 const NAO := Rect2i(150, 96, 84, 16)   # o padrão, à esquerda
 const SIM := Rect2i(246, 96, 84, 16)   # abandonar, à direita e discreto
 const CAIXA_FIM := Rect2i(100, 30, 280, 74)
-const CAIXA_BOAS_VINDAS := Rect2i(24, 26, 432, 98)
-const BOAS_VINDAS := ["Poderes: escolha um na alça e segure o botão sobre o mundo;",
-	"quanto mais tempo, mais forte. O botão direito cancela.",
-	"Esconder: tecla H ou o último botão da alça. Para voltar, clique",
-	"no ícone da bandeja do Windows, junto ao relógio (se não estiver",
-	"lá, na seta dos ícones ocultos)."]
-const SEGUNDOS_BOAS_VINDAS := 40.0
 
 var interface: Node2D             # fontes, caixas de 9 partes e a dica
 var vista: Node2D
@@ -94,16 +85,6 @@ func avisar_fim(livro: Dictionary) -> void:
 	modo = "fim"
 	visible = true
 	queue_redraw()
-
-
-## A dica da primeira execução; some sozinha depois de um tempo.
-func boas_vindas() -> void:
-	modo = "boas_vindas"
-	visible = true
-	queue_redraw()
-	await get_tree().create_timer(SEGUNDOS_BOAS_VINDAS).timeout
-	if modo == "boas_vindas":
-		fechar()
 
 
 ## Abre o livro i (testes: --abrir=livro).
@@ -259,7 +240,7 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 		voltar()
 		return
 	match modo:
-		"fim", "boas_vindas":
+		"fim":
 			fechar()
 		"estante":
 			if event.button_index != MOUSE_BUTTON_LEFT:
@@ -360,13 +341,6 @@ func _draw() -> void:
 		return
 	if modo == "fim":
 		_desenhar_fim()
-		return
-	if modo == "boas_vindas":
-		_caixa_pergaminho(CAIXA_BOAS_VINDAS)
-		_texto_centrado("Primeiros passos", CAIXA_BOAS_VINDAS.position.y + 7, "escura")
-		for i in BOAS_VINDAS.size():
-			_texto_centrado(BOAS_VINDAS[i], CAIXA_BOAS_VINDAS.position.y + 22 + i * 11, "escura")
-		_texto_centrado("(clique para fechar)", CAIXA_BOAS_VINDAS.end.y - 17, "escura")
 		return
 	for y in range(0, ALTURA, 16):
 		for x in range(0, LARGURA, 16):
