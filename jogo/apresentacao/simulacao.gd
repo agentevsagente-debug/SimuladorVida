@@ -8,9 +8,14 @@ signal passo_dado
 signal construcoes_mudaram
 signal zonas_mudaram
 signal eventos_novos(eventos: Array)
+signal mundo_trocado
 
 const Mundo = preload("res://nucleo/mundo.gd")
 const Persistencia = preload("res://nucleo/persistencia.gd")
+const Estante = preload("res://nucleo/estante.gd")
+const Obras = preload("res://apresentacao/obras.gd")
+## Os mundos de teste (que não salvam) guardam os livros numa estante à parte.
+const ESTANTE_TESTE := "user://estante_teste"
 
 enum Ritmo { PAUSA, NORMAL, RAPIDO }
 ## Segundos reais por passo (1 hora de jogo) em cada ritmo.
@@ -28,6 +33,7 @@ var clima := {}
 var pessoas: Array = []
 var construcoes: Array = []
 var ruinas: Array = []
+var grupos: Array = []
 var zonas: Array = []
 var preces: Array = []
 var ausencia := {}       # retorno de avancar_ausencia() ao abrir, se houve
@@ -36,6 +42,7 @@ var _fracao_parada := 0.0  # a fração da hora em que a pausa começou
 var _vistos := 0
 var _ultimo_dia_salvo := -1
 var _chave_zonas := []
+var _chave_ruinas := []
 
 
 ## Carrega o mundo salvo (avançando a ausência) ou cria um novo.
@@ -116,6 +123,48 @@ func usar_poder(poder: String, x: float, intensidade: float) -> Dictionary:
 	return r
 
 
+## Só com o mundo vazio: o povo novo nasce na zona de x e começa outra era.
+func criar_povo(x: float) -> Dictionary:
+	var r: Dictionary = mundo.criar_povo(x)
+	_ler()
+	return r
+
+
+## Fecha a crônica da era como livro, guarda na estante e começa outro mundo.
+func abandonar() -> Dictionary:
+	var livro: Dictionary
+	if salvar_em_disco:
+		livro = Persistencia.abandonar(mundo)
+	else:
+		livro = mundo.abandonar()
+		for l in mundo.livros:
+			if not l["na_estante"]:
+				Estante.guardar(l, ESTANTE_TESTE)
+				l["na_estante"] = true
+	print("[simulacao] mundo abandonado: %s, anos %d a %d" % [livro.get("titulo", "?"), livro.get("ano_ini", 0),
+		livro.get("ano_fim", 0)])
+	mundo = Mundo.new(randi())
+	ausencia = {}
+	_acumulado = 0.0
+	_fracao_parada = 0.0
+	iniciar_de_mundo()
+	salvar()
+	mundo_trocado.emit()
+	return livro
+
+
+func pasta_estante() -> String:
+	return Estante.PASTA_PADRAO if salvar_em_disco else ESTANTE_TESTE
+
+
+## A aparência do povo (parede, telhado, símbolo, roupa), ou {}.
+func aparencia(grupo_id: int) -> Dictionary:
+	for g in grupos:
+		if g["id"] == grupo_id:
+			return g.get("aparencia", {})
+	return {}
+
+
 func salvar() -> void:
 	if salvar_em_disco and mundo != null:
 		var ok: bool = Persistencia.salvar(mundo)
@@ -134,13 +183,17 @@ func _passo() -> void:
 func _ler(inicio := false) -> void:
 	tempo = mundo.tempo()
 	clima = mundo.clima()
+	grupos = mundo.grupos_visiveis()
 	pessoas = mundo.pessoas_visiveis()
 	preces = mundo.preces_abertas()
 	var novas: Array = mundo.construcoes()
 	var novas_ruinas: Array = mundo.ruinas_visiveis()
-	if inicio or novas != construcoes or novas_ruinas.size() != ruinas.size():
+	# as ruínas mudam de desenho quando o mato cresce
+	var chave_ruinas := novas_ruinas.map(func(o): return [o["x"], Obras.grau_natureza(int(o["anos"]))])
+	if inicio or novas != construcoes or chave_ruinas != _chave_ruinas:
 		construcoes = novas
 		ruinas = novas_ruinas
+		_chave_ruinas = chave_ruinas
 		construcoes_mudaram.emit()
 	zonas = mundo.zonas_visiveis()
 	# só o que muda o desenho fixo: cinzas, pedra erguida, seca

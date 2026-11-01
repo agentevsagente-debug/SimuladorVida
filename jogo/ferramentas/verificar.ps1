@@ -61,7 +61,7 @@ Registrar 'mundo: moldura' ([Win32]::RaizEm($pontoCeu[0], $pontoCeu[1]) -eq $h) 
 $com = [Win32]::Capturar($X, $Y, 960, 356)
 $com.Save((Join-Path $saida 'escala2.png'))
 # a faixa entre a alça e o relógio (438 em diante) é transparente
-$transp = [Win32]::Iguais($fundo, $com, 110 * $k, 0, 320 * $k, $faixa * $k)
+$transp = [Win32]::Iguais($fundo, $com, 120 * $k, 0, 310 * $k, $faixa * $k)
 $mundoDif = 1 - [Win32]::Iguais($fundo, $com, 0, $faixa * $k, 480 * $k, 160 * $k)
 Registrar 'transparencia da faixa' ($transp -gt 0.999) ('{0:P2} dos pixels iguais ao fundo' -f $transp)
 Registrar 'mundo opaco' ($mundoDif -gt 0.99) ('{0:P2} dos pixels diferentes do fundo' -f $mundoDif)
@@ -118,8 +118,8 @@ Registrar 'roda na alca (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bott
 $hFaixa3 = [Win32]::RaizEm($r3.Left + 300 * 3, $r3.Top + 8 * 3)
 Registrar 'passagem refeita em 3x' ($hFaixa3 -ne $h) ''
 
-# 6. Esconder pelo botão.
-[Win32]::Clicar($r3.Left + 86 * 3, $r3.Top + 9 * 3)
+# 6. Esconder pelo botão (o sexto da alça: poderes, ritmo, crônica, estante, linhagem, esconder).
+[Win32]::Clicar($r3.Left + 103 * 3, $r3.Top + 9 * 3)
 Start-Sleep -Milliseconds 800
 $escondida = (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h)
 $hMeio = [Win32]::RaizEm($r3.Left + 240 * 3, $r3.Top + 100 * 3)

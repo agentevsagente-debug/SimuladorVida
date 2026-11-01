@@ -41,7 +41,7 @@
                              },
     "gesto do poder (raio)":  {
                                   "ok":  true,
-                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.77 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": 11 }"
+                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": 11 }"
                               },
     "arrastar":  {
                      "ok":  true,

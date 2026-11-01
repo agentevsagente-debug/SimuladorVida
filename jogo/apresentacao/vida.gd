@@ -23,6 +23,8 @@ const ESPACO := 7             # distância mínima entre pessoas paradas lado a 
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
+## Cor da roupa do povo -> índice em opcoes_troca().roupas ([28 turquesa, 27 rosa, 29 lilás]).
+const ROUPAS := {"turquesa": 0, "rosa": 1, "lilas": 2}
 ## Microanimações de quem está parado: folha, quadros, segundos.
 const MICRO := [["acoes/olhar_lados_4q", 4, 4.0], ["acoes/esticar_4q", 4, 2.0], ["acoes/sentar_chao_4q", 4, 7.0],
 	["acoes/agachar_2q", 2, 3.0], ["acoes/cocar_cabeca_4q", 4, 2.4], ["acoes/bocejar_4q", 4, 2.2]]
@@ -124,7 +126,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		if idoso:
 			cabelo = 5 if String(visual[0]).begins_with("habitantes/idoso") or String(visual[0]).ends_with("idoso_parado_2q") \
 				else opcoes.cabelos.size() - 1
-		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
+		# a roupa é a cor do povo (aparencia.roupa): turquesa, rosa ou lilás
+		var roupa: int = ROUPAS.get(sim.aparencia(int(p["grupo"])).get("roupa", ""), (id * 5 + int(p["grupo"])) % opcoes.roupas.size())
 		var xr := roundi(x)
 		var base: int = vista.chao_pessoa(xr) - (2 if _atras.has(id) else 0) - int(visual[3])
 		var largura: int = visual[1]

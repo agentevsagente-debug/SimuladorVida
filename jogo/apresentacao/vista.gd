@@ -18,6 +18,7 @@ extends Node2D
 ##   --mundo-novo         ignora o mundo salvo e não grava nada
 ##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
+##   --extinguir[=N]      teste: todos morrem (e o mundo vazio anda N anos)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
 ##   --capturar-tudo      captura a tela inteira (480 × 178), com a alça
@@ -130,6 +131,7 @@ func _ready() -> void:
 		sim.construcoes_mudaram.connect(func(): _refazer = true)
 		sim.zonas_mudaram.connect(func(): _refazer = true)
 		sim.eventos_novos.connect(_ao_receber_eventos)
+		sim.mundo_trocado.connect(_ao_trocar_mundo)
 		_vida = Vida.new(self, sim)
 		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena") or args.has("dias")
 		sim.salvar_em_disco = not novo
@@ -144,6 +146,8 @@ func _ready() -> void:
 			sim.iniciar_de_mundo()
 		else:
 			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo)
+		if args.has("extinguir"):  # teste: todos morrem; com N > 0, o mundo vazio anda N anos
+			_extinguir(int(args["extinguir"]) if args["extinguir"] != "" else 0)
 		if args.has("simular-ausencia"):  # teste: como se o jogador tivesse saído N horas
 			sim.ausencia = sim.mundo.avancar_ausencia(float(args["simular-ausencia"]) * 3600.0)
 			sim.iniciar_de_mundo()
@@ -248,6 +252,27 @@ func alternar_seguir() -> void:
 
 
 ## Efeito do resultado de um poder (e de outros eventos com dados de ponto).
+## Teste do fim do mundo: todos morrem de doença. Com anos = 0, o mundo segue e
+## o fim chega na próxima hora (com o aviso); com anos > 0, o mundo vazio anda.
+func _extinguir(anos: int) -> void:
+	var m = sim.mundo
+	for g in m.grupos_vivos():
+		for id in g.membros.duplicate():
+			m._morrer(m.pessoas[id], "doenca")
+	if anos > 0:
+		m.avancar_dias(40 * anos)
+		sim.iniciar_de_mundo()
+	print("[vista] extinção de teste, %d anos depois" % anos)
+
+
+## Outro mundo (abandono): a vida em cena e o desenho fixo recomeçam.
+func _ao_trocar_mundo() -> void:
+	_vida = Vida.new(self, sim)
+	seguindo = false
+	_eclipse_ate = -1
+	_refazer = true
+
+
 func _ao_receber_eventos(eventos: Array) -> void:
 	for ev in eventos:
 		match ev["tipo"]:
@@ -440,8 +465,19 @@ func _montar_fixo() -> void:
 	var imagens := {}
 	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
 	# as ruínas ficam atrás das construções vivas
+	# e a natureza as retoma: mato pelos anos, uma muda e depois uma árvore jovem ao lado
 	for o in (sim.ruinas if sim else []):
-		_colar_obra(terreno, cor, tag, imagens, Obras.peca(o["tipo"], int(o.get("estagio", 1)), true), roundi(o["x"]))
+		var anos := int(o.get("anos", 0))
+		var x := roundi(o["x"])
+		var ruina := "natureza/fogueira_antiga" if o["tipo"] == "fogueira" else Obras.peca(o["tipo"], int(o.get("estagio", 1)), true)
+		var com_mato := Obras.ruina_com_mato(ruina, anos)
+		_colar_obra(terreno, cor, tag, imagens, [com_mato if ResourceLoader.exists(Arte.RAIZ + com_mato + ".png") else ruina], x)
+		var planta := Obras.planta_da_ruina(anos, o["x"])
+		if planta != "" and o["tipo"] not in ["fogueira", "roca", "barco"]:
+			var lado := int(o.get("largura", 16)) / 2 + 3
+			var px := x + (lado if posmod(x, 2) == 0 else -lado)
+			if not _na_agua(px):
+				_colar_obra(terreno, cor, tag, imagens, [planta], px, Arte.MUNDO)
 	for o in obras:
 		var x := roundi(o.x)
 		match o.tipo:
@@ -456,7 +492,8 @@ func _montar_fixo() -> void:
 				_fogos.append({"canto": canto, "centro": float(x),
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
 			_:
-				_colar_obra(terreno, cor, tag, imagens, Obras.peca(o.tipo, int(o.get("estagio", 1))), x)
+				var aparencia: Dictionary = sim.aparencia(int(o.get("grupo", -1))) if sim else {}
+				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x)
 	if sim:
 		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
 		for z in sim.zonas:
@@ -497,12 +534,15 @@ func _montar_fixo() -> void:
 	_fogueiras.queue_redraw()
 
 
-## Cola uma construção (ou ruína) com a base no chão em x.
-func _colar_obra(terreno, cor: Image, tag: Image, imagens: Dictionary, caminho: String, x: int) -> void:
-	if caminho == "":
-		return
-	var img := _imagem_obra(imagens, caminho)
-	terreno.colar(cor, tag, img, Vector2i(x - img.get_width() / 2, _chao(x) - img.get_height() + 1), Arte.OBRA)
+## Cola uma construção (ou ruína) com a base no chão em x: as camadas, de baixo
+## para cima (parede, telhado e símbolo da cultura), no mesmo encaixe.
+func _colar_obra(terreno, cor: Image, tag: Image, imagens: Dictionary, camadas: Array, x: int,
+		etiqueta := Arte.OBRA) -> void:
+	for caminho in camadas:
+		if caminho == "":
+			continue
+		var img := _imagem_obra(imagens, caminho)
+		terreno.colar(cor, tag, img, Vector2i(x - img.get_width() / 2, _chao(x) - img.get_height() + 1), etiqueta)
 
 
 func _imagem_obra(imagens: Dictionary, caminho: String) -> Image:
@@ -530,11 +570,12 @@ func _fase_da_roca() -> String:
 func _construcoes() -> Array:
 	if not _modo_layout:
 		return sim.construcoes.map(func(o): return {"tipo": o["tipo"], "x": float(o["x"]),
-			"estagio": int(o.get("estagio", 1)), "largura": int(o.get("largura", 16)), "irrigada": o.get("irrigada", false)})
+			"estagio": int(o.get("estagio", 1)), "largura": int(o.get("largura", 16)), "irrigada": o.get("irrigada", false),
+			"grupo": int(o.get("grupo", -1))})
 	var r := []
 	for item in _layout["pecas"]:
 		if item["peca"] == "cabana_galhos":
-			r.append({"tipo": "cabana", "x": item["x"] + 8.0, "estagio": 1, "largura": 16})
+			r.append({"tipo": "cabana", "x": item["x"] + 8.0, "estagio": 1, "largura": 16, "grupo": -1})
 	r.append({"tipo": "fogueira", "x": _layout["fogueira"]["x"] + 8.0})
 	return r
 
