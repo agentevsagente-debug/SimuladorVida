@@ -3,6 +3,7 @@ from pathlib import Path
 import runpy
 
 AQUI = Path(__file__).resolve().parent
-for script in ("terreno/terreno.py", "habitantes/habitantes.py", "estagio1/estagio1.py", "efeitos/efeitos.py",
+for script in ("terreno/terreno.py", "habitantes/habitantes.py", "estagio1/estagio1.py",
+               "efeitos/efeitos.py", "sinais/sinais.py", "interface/interface.py",
                "montagem/camadas.py", "montagem/montar.py"):
     runpy.run_path(str(AQUI / script), run_name="__main__")

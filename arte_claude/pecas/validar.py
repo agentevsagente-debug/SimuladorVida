@@ -38,7 +38,9 @@ for f in sorted(AQUI.rglob("*.png")):
         qw = w // nq
         if (qw, h) not in ((8, 12), (6, 8)) or w % nq:
             erros.append(f"{rel}: quadro {qw}x{h} fora do padrão")
-    if pasta == "efeitos" and not f.stem.startswith("amostra"):
+    if pasta in ("icones_12", "icones_8") and (w, h) != ((12, 12) if pasta == "icones_12" else (8, 8)):
+        erros.append(f"{rel}: ícone {w}x{h} fora do tamanho")
+    if pasta in ("efeitos", "sinais") and not f.stem.startswith("amostra"):
         fim = f.stem.rsplit("_", 1)[1]
         n = int(fim[:-1]) if fim[-1] in "qv" and fim[:-1].isdigit() else 1
         if w % n or (w // n) % 4 or h % 4:
