@@ -7,6 +7,11 @@
 # CPU% = Δ tempo de CPU do processo / (Δ tempo real × núcleos lógicos) × 100,
 # a mesma conta do Gerenciador de Tarefas. O dwm.exe, que compõe a janela
 # transparente, não pode ser lido sem administrador e fica de fora.
+#
+# Memória, três medidas:
+#   working_set_mb: conjunto de trabalho (inclui as páginas compartilhadas do executável);
+#   privada_mb: bytes privados (memória reservada só para o processo);
+#   gerenciador_mb: conjunto de trabalho privado, a coluna "Memória" do Gerenciador de Tarefas.
 param(
     [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'escondido')][string]$Cenario,
     [int]$Segundos = 600,
@@ -41,6 +46,7 @@ while (((Get-Date) - $t0).TotalSeconds -lt $Segundos) {
         cpu_pct_1nucleo  = [math]::Round(($cpu - $cpuAnt) / $dt * 100, 2)
         working_set_mb   = [math]::Round($p.WorkingSet64 / 1MB, 1)
         privada_mb       = [math]::Round($p.PrivateMemorySize64 / 1MB, 1)
+        gerenciador_mb   = [math]::Round((Get-CimInstance Win32_PerfFormattedData_PerfProc_Process -Filter "IDProcess=$($p.Id)").WorkingSetPrivate / 1MB, 1)
     }
     $tAnt = $t; $cpuAnt = $cpu
 }
@@ -58,6 +64,8 @@ $resumo = [pscustomobject]@{
     ws_media_mb         = [math]::Round(($linhas | Measure-Object working_set_mb -Average).Average, 1)
     ws_max_mb           = ($linhas | Measure-Object working_set_mb -Maximum).Maximum
     privada_max_mb      = ($linhas | Measure-Object privada_mb -Maximum).Maximum
+    gerenciador_media_mb = [math]::Round(($linhas | Measure-Object gerenciador_mb -Average).Average, 1)
+    gerenciador_max_mb  = ($linhas | Measure-Object gerenciador_mb -Maximum).Maximum
 }
 $resumo | ConvertTo-Json | Set-Content (Join-Path $saida "$Cenario.json") -Encoding utf8
 $resumo

@@ -48,10 +48,12 @@ static func json(caminho: String) -> Variant:
 	return JSON.parse_string(FileAccess.get_file_as_string(RAIZ + caminho))
 
 
-## Imagem RGBA8 de um PNG importado. A textura importada é solta logo depois.
+## Imagem RGBA8 de um PNG. As peças usadas só na CPU (terreno, peças, camadas,
+## folhas de pessoas, estações) são importadas como Image, sem passar pela GPU:
+## criar uma textura só para ler a imagem de volta custava memória no driver.
 static func imagem(caminho: String) -> Image:
-	var tex: Texture2D = load(RAIZ + caminho)
-	var img := tex.get_image()
+	var recurso = load(RAIZ + caminho)
+	var img: Image = recurso.duplicate() if recurso is Image else (recurso as Texture2D).get_image()
 	if img.is_compressed():
 		img.decompress()
 	img.convert(Image.FORMAT_RGBA8)
