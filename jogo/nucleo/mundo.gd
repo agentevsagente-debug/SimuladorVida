@@ -423,6 +423,12 @@ func peso_pessoa(p: Pessoa) -> int:
 
 # ---------------------------------------------------------------- eventos
 
+## Os acontecimentos que um povo que escreve marca numa estela (o último deles, do estágio 5 em
+## diante; a própria chegada ao estágio, se nada mais aconteceu).
+const MARCOS_DA_ESTELA := ["estagio", "edito", "guerra_fim", "conquista", "novo_lider", "reforma", "costume", "lugar_nomeado",
+	"arquivo_salvou"]
+
+
 func registrar(tipo: String, causa: String, importancia: int, zona: String, grupo_id: int,
 		participantes: Array = [], dados: Dictionary = {}, outro_grupo: int = -1) -> Evento:
 	var e := Evento.new()
@@ -442,6 +448,8 @@ func registrar(tipo: String, causa: String, importancia: int, zona: String, grup
 		e.dados["_deus"] = grupos[grupo_id].nome_deus
 		e.dados["_gdeus"] = grupos[grupo_id].genero_deus
 	eventos.append(e)
+	if grupo_id >= 0 and grupo_id < grupos.size() and MARCOS_DA_ESTELA.has(tipo) and (grupos[grupo_id].estagio >= 5 or tipo == "estagio"):
+		grupos[grupo_id].estela = e.id
 	for id in participantes:
 		if pessoas.has(id):
 			pessoas[id].lembrar(e.id)
@@ -793,7 +801,8 @@ func _refeicao() -> void:
 			razao = clampf(g.estoque / necessidade, 0.0, 1.0)
 		g.estoque = maxf(0.0, g.estoque - necessidade)
 		var sem_abrigo := 0.0
-		if estacao() == 3:
+		# Aquecido pelo fogo brando do deus: ninguém sofre o frio por uns dias.
+		if estacao() == 3 and dia_abs() >= aquecidos.get(g.id, -1):
 			var lugares = g.abrigos * PESSOAS_POR_ABRIGO
 			if membros.size() > lugares:
 				sem_abrigo = float(membros.size() - lugares) / membros.size()
@@ -1222,6 +1231,7 @@ func _eventos_lembrados() -> Dictionary:
 			lembrados[c["evento"]] = true
 		for nec in g.preces:
 			lembrados[g.preces[nec]["evento"]] = true
+		lembrados[g.estela] = true
 	for z in zonas.values():
 		lembrados[z.seca_evento] = true
 		for gid in z.nomes:
@@ -1635,16 +1645,21 @@ func _aparencia_inicial(nome: String) -> Dictionary:
 		"simbolo": SIMBOLOS[posmod(h / 9, 3)], "roupa": ROUPAS[posmod(h / 27, 3)]}
 
 
-## Um povo novo herda a aparência do povo de onde saiu e muda uma coisa.
+## Um povo novo herda a aparência do povo de onde saiu e muda duas coisas. A roupa, que se vê
+## de longe em cada pessoa, entra duas vezes no sorteio.
 func _aparencia_derivada(mae: Dictionary, nome: String) -> Dictionary:
 	if mae.is_empty():
 		return _aparencia_inicial(nome)
 	var a := mae.duplicate()
 	var h := hash(nome)
 	var listas := {"parede": PAREDES, "telhado": TELHADOS, "simbolo": SIMBOLOS, "roupa": ROUPAS}
-	var chave: String = listas.keys()[posmod(h, 4)]
-	var opcoes: Array = listas[chave]
-	a[chave] = opcoes[posmod(opcoes.find(a[chave]) + 1 + posmod(h / 4, 2), 3)]
+	var sorteio := ["parede", "telhado", "simbolo", "roupa", "roupa"]
+	var primeira: String = sorteio[posmod(h, 5)]
+	var resto: Array = sorteio.filter(func(k): return k != primeira)
+	var segunda: String = resto[posmod(h / 5, resto.size())]
+	for chave in [primeira, segunda]:
+		var opcoes: Array = listas[chave]
+		a[chave] = opcoes[posmod(opcoes.find(a[chave]) + 1 + posmod(h / 25, 2), 3)]
 	return a
 
 
@@ -2819,7 +2834,7 @@ func _necessidades(g: Grupo) -> Array:
 		r.append("fome")
 	if g.doenca_evento >= 0:
 		r.append("doenca")
-	if inverno_rigoroso and g.abrigos * PESSOAS_POR_ABRIGO < g.membros.size():
+	if inverno_rigoroso and g.abrigos * PESSOAS_POR_ABRIGO < g.membros.size() and dia_abs() >= aquecidos.get(g.id, -1):
 		r.append("frio")
 	if dia_abs() - g.ultimo_ataque_sofrido < 20:
 		r.append("guerra")
@@ -3288,6 +3303,14 @@ func _poder(c: Dictionary) -> Dictionary:
 				if g.zona != z.chave and g.em_fome and not ali.is_empty():
 					g.hostilidade[ali[0].id] = g.hostilidade.get(ali[0].id, 0.0) + 1.5
 		"fogo":
+			if inten < FOGO_BRANDO and rep < 2:
+				# O gesto curto: o fogo desce manso, acende as fogueiras e aquece o povo, sem queimar.
+				e = registrar("fogo_brando", "divina", 5 if inverno_rigoroso else 3, z.chave, g0_id, [], dados)
+				for g in ali:
+					aquecidos[g.id] = dia_abs() + DIAS_AQUECIDO
+					_impressionar(g, peso * (1.0 if inverno_rigoroso else 0.4), "fogo", e, true)
+					_resolver_prece(g, "frio", e)
+				return {"ok": true, "grau": grau, "evento": e.id, "zona": z.chave, "alvo": -1}
 			var f := 0.3 + 0.6 * inten
 			z.comida *= 1.0 - f
 			z.madeira *= 1.0 - f
@@ -3705,13 +3728,16 @@ func construcoes() -> Array:
 		if g.zona == "lago" or g.zona == "praia":
 			vizinhos = grupos_na_zona("lago") + grupos_na_zona("praia")
 		var assinatura := [g.zona, g.abrigos, g.estagio, g.membros.size(), g.tem_crenca, g.ceticos,
-			g.tem_costume("estocar"), g.violencia >= 0.5,
+			g.tem_costume("estocar"), g.violencia >= 0.5, g.estela, g.nome_deus.is_empty(),
 			vizinhos.map(func(o): return [o.id, o.estagio, Cotidiano.peso_na_faixa(o)])]
 		var guardado: Array = _obras_por_grupo.get(g.id, [])
 		if guardado.is_empty() or guardado[0] != assinatura:
 			var obras := Cotidiano.construcoes_do_grupo(self, g)
 			for o in obras:
 				o["aparencia"] = g.aparencia   # a cultura do povo: parede, telhado, símbolo
+				if o["tipo"] == "estela":
+					var ev: Evento = evento(o["evento"])
+					o["texto"] = _cronista.texto_curto(ev) if ev != null else ""
 			# Se o povo continua no mesmo lugar e encolheu, as casas das pontas ficam vazias (e não
 			# quando a faixa encolheu porque um vizinho cresceu).
 			if not guardado.is_empty() and guardado[0][0] == g.zona and g.membros.size() < guardado[0][3]:
@@ -4165,7 +4191,7 @@ func preces_abertas() -> Array:
 				"necessidade": nec, "desde": pr["dia"], "dias": dia_abs() - pr["dia"],
 				"x": posicao_de(pr["autor"]), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1],
 				"x_povo": _fogo_do_povo(g), "inimigo": e.dados.get("inimigo", -1), "atendem": PODERES_QUE_ATENDEM.get(nec, []),
-				"contrariam": PODERES_QUE_CONTRARIAM.get(nec, [])})
+				"contrariam": PODERES_QUE_CONTRARIAM.get(nec, []), "fogo_brando": nec == "frio"})
 	_preces = r
 	_preces_chave = chave
 	return r
@@ -4210,13 +4236,20 @@ func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary
 
 
 ## Os poderes que atendem cada prece e os que a contrariam (para a apresentação sugerir; veja
-## `preces_abertas`). O frio e os pedidos pequenos não têm poder que os atenda.
+## `preces_abertas`). O frio é atendido pelo fogo brando (intensidade abaixo de FOGO_BRANDO); o
+## fogo forte o contraria. Os pedidos pequenos não têm poder que os atenda.
 const PODERES_QUE_ATENDEM := {"seca": ["chuva"], "fome": ["fartura"], "doenca": ["cura"], "guerra": ["raio", "terremoto"],
-	"frio": [], "banal": []}
+	"frio": ["fogo"], "banal": []}
 const PODERES_QUE_CONTRARIAM := {"seca": ["seca", "fogo", "diluvio", "terremoto"], "fome": ["seca", "fogo", "diluvio", "terremoto"],
 	"doenca": ["raio", "fogo", "diluvio", "terremoto"], "guerra": ["fogo", "diluvio", "terremoto", "raio"],
 	"frio": ["diluvio", "terremoto", "fogo", "raio"], "banal": ["seca", "fogo", "diluvio", "terremoto", "raio"]}
 const ESPERA_PARA_REZAR := 10   # dias depois de uma prece sem resposta ou contrariada
+## O fogo em intensidade baixa (o gesto curto, abaixo de FOGO_BRANDO) não queima: acende as
+## fogueiras e aquece o povo da zona por DIAS_AQUECIDO dias (ninguém sofre o frio), e atende a
+## prece de frio. Em intensidade média e alta, o fogo queima.
+const FOGO_BRANDO := 0.35
+const DIAS_AQUECIDO := 6
+var aquecidos: Dictionary = {}   # id do povo -> dia absoluto até quando está aquecido pelo fogo brando
 var preces_fechadas: Dictionary = {}   # id do povo -> {necessidade: dia em que a prece fechou sem ser atendida}
 
 
@@ -4245,7 +4278,8 @@ func _preces_diante_do_gesto(e: Evento, poder: String) -> void:
 			if not g.preces.has(nec):
 				continue
 			var pr: Dictionary = g.preces[nec]
-			var ferido: bool = (poder in ["seca", "fogo", "diluvio", "terremoto"] and e.zona == g.zona) or (poder == "raio" and mortos.has(g.id))
+			var ferido: bool = (poder in ["seca", "fogo", "diluvio", "terremoto"] and e.zona == g.zona and e.tipo != "fogo_brando") \
+				or (poder == "raio" and mortos.has(g.id))
 			if nec == "guerra" and not ferido:
 				var ini: Grupo = grupo(evento(pr["evento"]).dados.get("inimigo", -1))
 				if ini != null and not ini.extinto and e.zona == ini.zona and (poder in ["seca", "fogo", "diluvio", "terremoto"]

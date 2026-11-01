@@ -493,6 +493,10 @@ func _acontecimentos(cands: Array) -> void:
 				_nec(cands, forca, [_f("{o:d} mostrou a força {d:dele|dela}", {"d": deus}) if g.tem_crenca
 					else "O fogo caiu do céu bem ali", "Ainda ouço o estrondo"] if adulto
 					else ["O céu fez fogo, que medo!"], "assustad" + a, "sonha com o estrondo")
+			"fogo_brando":
+				_nec(cands, forca, [_f("{o:d} mandou o calor", {"d": deus}) if g.tem_crenca else "O céu acendeu nossa fogueira",
+					"Que fogo bom, aquece e não queima", "Enfim, as mãos quentes"] if adulto
+					else ["O fogo caiu do céu e não queimou!", "Agora não tem mais frio"], "aquecid" + a, "sonha com um fogo que não queima")
 			"fartura_natural", "fartura_divina":
 				var f2: Array = ["Nunca vi tanta comida", "Hoje ninguém dorme com fome"]
 				if e.tipo == "fartura_divina" and g.tem_crenca:

@@ -81,7 +81,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | `em_fome`, `doenca` | estados atuais |
 | `costumes` | lista de chaves: "estocar", "agua", "festa_chuva", "tabu_tempestade", "queimar_mortos", "lancas", "oferendas" |
 | `cultura` | as 6 dimensões culturais, como palavras: `deus` ("devota", "temerosa", "cetica" ou "" se ainda não crê), `estranhos` ("acolhedora", "desconfiada"), `poder` ("lider", "conselho", "sacerdotes"), `recursos` ("partilha", "acumula"), `violencia` ("pacifica", "guerreira"), `mortos` ("enterram", "queimam", "veneram" ou "") |
-| `aparencia` | `{parede, telhado, simbolo, roupa}`, para escolher as peças de `arte_claude/pecas/culturas/` e dos estágios: parede "taipa", "pedra" ou "madeira"; telhado "palha", "telha" ou "tabuas"; símbolo "sol", "lua" ou "arvore"; roupa "turquesa", "lilas" ou "rosa". Sai do nome do povo (não sorteia nada); um povo novo herda a do povo de onde saiu e muda uma coisa. |
+| `aparencia` | `{parede, telhado, simbolo, roupa}`, para escolher as peças de `arte_claude/pecas/culturas/` e dos estágios: parede "taipa", "pedra" ou "madeira"; telhado "palha", "telha" ou "tabuas"; símbolo "sol", "lua" ou "arvore"; roupa "turquesa", "lilas" ou "rosa". Sai do nome do povo (não sorteia nada); um povo novo herda a do povo de onde saiu e muda duas coisas (a roupa, que se vê de longe, tem o dobro da chance de mudar). |
 | `escreve` | o povo chegou à escrita e tem a própria crônica (`cronica_do_povo`) |
 | `origem` | `{}` para o povo original, ou `{pai, causa ("migracao", "briga", "cisma"), ano, evento}` |
 | `estranhos` | float de -1 (desconfia de quem vem de fora) a 1 (acolhe). Muda com casamentos entre povos e com ataques. |
@@ -101,28 +101,30 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 
 ### `construcoes() -> Array[Dictionary]`
 
-`{tipo, x, largura, grupo, estagio, aparencia, ruina}`, com `x` no centro da peça. `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `aparencia` é a cultura do povo, a mesma de `grupos_visiveis()`: `{parede, telhado, simbolo, roupa}`, para escolher as variações de `arte_claude/pecas/culturas/`. `ruina` é sempre false aqui. Tipos:
+`{tipo, x, largura, grupo, estagio, aparencia, ruina, fileira}`, com `x` no centro da peça. `fileira` é 0 (a fileira da frente) ou 1 (a fileira de trás: casas que não couberam na frente; ficam atrás das peças da frente, podendo cruzar com elas em x, e a apresentação as desenha mais altas e por trás). `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `aparencia` é a cultura do povo, a mesma de `grupos_visiveis()`: `{parede, telhado, simbolo, roupa}`, para escolher as variações de `arte_claude/pecas/culturas/`. `ruina` é sempre false aqui. Tipos:
 
 | Tipo | Largura | Quando existe |
 |---|---|---|
 | `fogueira` | 8 | sempre, no centro do acampamento |
 | `altar` | 8 | o povo crê (e não é cético) |
-| `templo` | 32 | o povo crê e está no estágio 2 ou mais (o templo do estágio: degraus no 3, colunas no 4, escrita no 5, cúpula no 6) |
-| `cabana` | 16, 24 ou 32 | as moradias: cabana no estágio 1 (16), casa de taipa no 2 (24), casas maiores do 3 em diante (32). Do estágio 3 em diante, há uma casa para cada 8 pessoas. |
+| `templo` | 32 | o povo está no estágio 2 ou mais e crê, ou já creu (o templo acompanha o estágio: degraus no 3, colunas no 4, escrita no 5, cúpula no 6; quando o povo sobe, o templo é o do estágio novo). `abandonado: true` quando o povo deixou de rezar: o templo fica de pé, vazio |
+| `cabana` | 16, 24 ou 32 | as moradias: cabana no estágio 1 (16), casa de taipa no 2 (24), casas maiores do 3 em diante (32). Do estágio 3 em diante, uma casa para cada 10 pessoas (até as que o povo ergueu); as que não cabem na frente vão para a fileira de trás (`fileira`: 1), se couberem |
+| `estela` | 6 | estágio 5 ou mais: uma pedra que marca um acontecimento do povo, o último entre a chegada ao estágio, um édito, o fim de uma guerra, uma conquista, um novo líder, uma reforma, um costume, um lugar com nome ou o arquivo que salvou um saber. `evento`: o id; `texto`: a frase curta dele ("Acaba a Terceira Guerra da Fome", "Ulyora guia Raon") |
+| `roda_dagua` | 16 | estágio 6: a roda d'água na ponta da faixa do lado do lago |
 | `celeiro` | 24 | estágio 2 ou mais, se o povo tem o costume de estocar |
 | `roca` | 16 | estágio 2 ou mais, uma para cada ~6 adultos, até 4; `irrigada: true` no estágio 6 (canal ao lado) |
 | `forja` | 24 | estágio 4 ou mais |
 | `arquivo` | 32 | estágio 5 ou mais (a biblioteca da arte) |
 | `moinho` | 32 | estágio 6 |
-| `muralha` | 16 | estágio 6, povo guerreiro: uma torre em cada ponta do acampamento |
+| `muralha` | 28 | estágio 6, povo guerreiro: em cada ponta do acampamento, um trecho de muro entre duas torres (`torres`: 2) |
 | `barco` | 24 | estágio 6, povo do lago ou da praia: na água, em x = 112 − 28·k (um barco por povo da margem) |
 
 **Os lotes.** Cada povo tem uma faixa de terra própria, e as peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. Só mudam de lugar quando o número de peças muda, quando a faixa muda ou quando o povo se muda.
 - **A faixa.** Os povos de uma zona dividem a terra dela conforme o porte: 1 parte até 39 pessoas, 2 de 40 a 99 e 3 de 100 em diante (em degraus, para que a vila não escorregue a cada nascimento). O lago e a praia dividem juntos a terra de 126 a 200, com o povo do lago à esquerda. Numa faixa com menos de 110 px, a fogueira vai para a ponta do lado da água (8 px da beira), para sobrar terra inteira do outro lado.
-- **A ordem.** Fogueira, a primeira casa, o templo (ou o altar, se não há templo), a obra do estágio (moinho no 6, arquivo no 5, forja no 4), a segunda casa, o altar, o arquivo (no 6), a forja (no 5 e no 6), as outras casas, o celeiro e as roças.
+- **A ordem.** Fogueira; nos estágios 1 e 2, a primeira casa; o templo de quem crê (ou o altar, se não há templo); a obra do estágio (roda d'água e moinho no 6, arquivo no 5, forja no 4); o templo abandonado; a estela; do estágio 3 em diante, a primeira casa; a segunda casa; o altar; o arquivo (no 6); a forja (no 5 e no 6); o celeiro; as roças; e as outras casas. As casas que não cabem na frente vão para trás.
 - **Nenhuma peça encosta em outra** (ficam a 2 px no mínimo) nem sai da faixa: o que não cabe fica de fora, a começar pelo fim da ordem. **Isto muda uma regra anterior**: o altar, o templo, o arquivo e a forja não aparecem mais "mesmo encostados"; com pouca terra, podem faltar.
 - **As muralhas** só ocupam as pontas quando a faixa tem 140 px ou mais.
-- **O limite da terra.** Com 4 povos no estágio 6 (o mundo grande da regressão), cabem 15 peças, 248 px no total, sem nenhum par encostado. Os povos do lago e da praia ficam com 44 e 30 px: cabem a fogueira e o altar (e, no do lago, uma roça), com o barco na água, e nenhuma casa. O povo da floresta fica com 2 casas, o templo, o altar e uma roça; o do morro, com as 2 muralhas, 1 casa e o moinho.
+- **O limite da terra.** Com a fogueira no meio, uma faixa de 130 px (a floresta) tem lugar na frente para duas peças grandes, uma de cada lado. Nos mundos de 200 a 400 anos (sementes 3 e 7): o povo da floresta no estágio 6 fica com a roda d'água, o moinho, o templo abandonado e a estela na frente, e 3 casas atrás; o do morro no 5, com o templo, o arquivo, a estela, o altar e 2 roças na frente, e 3 casas atrás; o do lago (50 a 56 px), com a roda d'água, a estela e 1 casa na frente, e 1 atrás, com o barco na água; o da praia (18 a 25 px), só com a fogueira e a estela (ou o altar).
 
 ### `ruinas_visiveis() -> Array[Dictionary]`
 
@@ -295,10 +297,10 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
-| `cacada` | quase todo dia, à tarde: saem do fogo entre 13h30 e 14h, espreitam das 14h às 16h30 (com pausas longas), arremessam entre 16h30 e 16h40 e chegam ao fogo com a caça entre 17h15 e 17h23; a cena acaba entre 17h37 e 17h45 | 2 a 4 adultos, longe do acampamento: o porco aparece 35 px além da última cabana, um dia na borda da mata (do lado da praia) e outro na do morro (na vila inicial, x 200 a 206 ou 344 a 350, a 60 a 85 px do fogo), em chão aberto. Os caçadores vão escalonados, a 7 px uns dos outros; enquanto dura a caçada (da saída ao fim do abate), ninguém de fora dela fica parado a menos de 27 px do porco. A volta atravessa a vila até a fogueira, e até 3 crianças (de 3 a 8 anos; uma, pelo menos, fica na praia) esperam na beira da vila e correm atrás dos caçadores (`x` é onde o porco está) | `vazia`: erraram e voltaram sem nada; `bicho`: "porco"; `etapas` (abaixo); `cozinha`: o id de quem espera a caça no fogo com o espeto (-1 se ninguém, e sempre -1 quando `vazia`); `criancas`: os ids das crianças que correm atrás da volta (ação `brincar`, com a cena `cacada`) |
-| `pesca_lanca` | nos dias sem caçada (um em cada três), no começo da tarde: das 13h30 às 15h20, mais ou menos | um adulto na beira do lago (na água rasa, para a apresentação), com a lança de pesca: espera parado com a lança erguida (`pescar_lanca`), golpeia (`golpear`), erra de 2 a 4 vezes, acerta, ergue o peixe na ponta (`peixe_na_lanca`) e leva ao fogo | `etapas`: `ida`, `espera`, `golpe` (com `acerto`: true só no último), `peixe`, `volta`, `entrega` |
-| `coleta_morro` | nos dias sem caçada (um em cada três), das 13h30 às 16h15 | 3 ou 4 adultos sobem ao morro, colhem até 15h35 e descem em fila, a 8 px uns dos outros, com o cesto na cabeça (`carregar_cesto_cabeca`); no fogo, despejam os cestos (`despejar`) | `etapas`: `subida`, `coleta`, `descida`, `despejar` |
-| `lavagem` | nos dias sem caçada (um em cada três), das 13h30 às 15h | 2 adultos lavam na beira do lago (`lavar`), e até 4 crianças (de 3 a 10 anos) brincam na água rasa (`brincar`, detalhe `banho`) | `etapas`: `ida`, `lavar`, `volta`; `criancas` |
+| `cacada` | em cerca de 2 de cada 3 dias, à tarde: saem do fogo entre 13h30 e 14h, espreitam das 14h às 16h30 (com pausas longas), arremessam entre 16h30 e 16h40 e chegam ao fogo com a caça entre 17h15 e 17h23; a cena acaba entre 17h37 e 17h45 | 2 a 4 adultos, longe do acampamento: o porco aparece 35 px além da última cabana, um dia na borda da mata (do lado da praia) e outro na do morro (na vila inicial, x 200 a 206 ou 344 a 350, a 60 a 85 px do fogo), em chão aberto. Os caçadores vão escalonados, a 7 px uns dos outros; enquanto dura a caçada (da saída ao fim do abate), ninguém de fora dela fica parado a menos de 27 px do porco. A volta atravessa a vila até a fogueira, e até 3 crianças (de 3 a 8 anos; uma, pelo menos, fica na praia) esperam na beira da vila e correm atrás dos caçadores (`x` é onde o porco está) | `vazia`: erraram e voltaram sem nada; `bicho`: "porco"; `etapas` (abaixo); `cozinha`: o id de quem espera a caça no fogo com o espeto (-1 se ninguém, e sempre -1 quando `vazia`); `criancas`: os ids das crianças que correm atrás da volta (ação `brincar`, com a cena `cacada`) |
+| `pesca_lanca` | nos dias sem caçada (cerca de 1 em cada 3 dias), uma das três cenas do começo da tarde, alternando: das 13h30 às 15h20, mais ou menos | um adulto na beira do lago (na água rasa, para a apresentação), com a lança de pesca: espera parado com a lança erguida (`pescar_lanca`), golpeia (`golpear`), erra de 2 a 4 vezes, acerta, ergue o peixe na ponta (`peixe_na_lanca`) e leva ao fogo | `etapas`: `ida`, `espera`, `golpe` (com `acerto`: true só no último), `peixe`, `volta`, `entrega` |
+| `coleta_morro` | nos dias sem caçada, alternando com as outras duas, das 13h30 às 16h15 | 3 ou 4 adultos sobem ao morro, colhem até 15h35 e descem em fila, a 8 px uns dos outros, com o cesto na cabeça (`carregar_cesto_cabeca`); no fogo, despejam os cestos (`despejar`) | `etapas`: `subida`, `coleta`, `descida`, `despejar` |
+| `lavagem` | nos dias sem caçada, alternando com as outras duas, das 13h30 às 15h | 2 adultos lavam na beira do lago (`lavar`), e até 4 crianças (de 3 a 10 anos) brincam na água rasa (`brincar`, detalhe `banho`) | `etapas`: `ida`, `lavar`, `volta`; `criancas` |
 | `caca_vazia` | na volta de uma caçada sem caça | os caçadores, de mãos vazias perto do fogo | |
 | `vigia` | toda noite, em três turnos | o vigia, que vai e volta entre o fogo e a beira do acampamento; às vezes cochila no fogo | |
 | `brasas` | de madrugada, de 0h40 até alguém atiçar, e de novo 50 min depois, até as 5h | sem participantes: a fogueira baixa, em brasas (`x` é a fogueira) | |
@@ -397,6 +399,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `crenca`, `separacao`, `conquista`, `agricultura` | marcos do mundo | chamado (importância ≥ 8) |
 | `nascimento`, `morte`, `casamento` | ciclo de vida | conforme a importância |
 | `tempestade`, `seca_inicio`, `seca_fim`, `eclipse` | clima e céu; `seca_fim` traz `dados.irrigados`, os povos com canais (estágio 6), que quase não sentiram a seca | nota |
+| `fogo_brando` | o fogo em intensidade baixa (abaixo de 0,35, o gesto curto): desce manso, acende as fogueiras da zona e aquece o povo por 6 dias, sem queimar (ninguém sofre o frio, e a prece de frio é atendida). O povo pode ver nisso o deus mandando o calor | nota |
 | `chuva_divina`, `raio_divino`, `fartura_divina`, `fogo_divino`, `terra_erguida`, `sonho`, `seca_divina`, `diluvio`, `terremoto_divino`, `pressagio`, `cura` | resultado de `usar_poder` | nota ou chamado |
 | `linhagem` | a pessoa acompanhada morreu, e o acompanhamento passou adiante | nota |
 | `guerra_inicio`, `guerra_fim` | uma briga vira guerra com nome (na segunda batalha) e termina: trégua, imposição do deus, conquista, extinção ou esfriou | chamado |
@@ -413,6 +416,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `ruinas_saber`, `mito_ruinas` | alguém aprende nas ruínas (só o que ninguém do povo sabe ainda); um povo explica ruínas de quem não existe mais ("gigantes", "castigo" ou "gente"), pelo que viu lá (`dados.obra`: templo, muralha, moinho, arquivo, forja, celeiro, cabana ou fogueira; `dados.antiga`: de uma era anterior) | nota |
 | `livro_fechado` | a crônica de uma era se fechou como livro | nota |
 | `peste` | uma doença vem de longe e entra em todos os povos; mata muito por cerca de 20 dias (uma vez a cada ~150 anos) | chamado |
+| `estagio` (e os marcos da estela) | do estágio 5 em diante, o último marco do povo vai para a estela (`Grupo.estela`, veja `construcoes()`) | |
 | `profeta` | alguém prega outro nome para o deus. `dados.aceito`: o povo aceitou (o deus muda de nome), ou o templo chamou de heresia e os seguidores fundaram outro povo (vem em seguida uma `separacao` por cisma) | chamado |
 | `secularizacao` | um povo que escreve deixa de rezar: os sábios explicam a chuva e o raio | chamado |
 | `renascimento` | um povo que tinha deixado de rezar volta a crer, diante de algo inegável | chamado |
@@ -433,14 +437,15 @@ As preces que ainda esperam resposta. São os sinais na moldura e continuam aqui
 | `x` | onde está quem reza agora (pode estar trabalhando longe, até em outra zona) |
 | `x_povo` | onde um gesto do deus atinge o povo que reza: a fogueira, dentro da zona do povo. É aqui que um poder atende ou contraria a prece (não em `x`) |
 | `inimigo` | na prece de guerra, o id do povo inimigo (-1 se não se sabe) |
-| `atendem` | os poderes que atendem a prece: seca, `["chuva"]`; fome, `["fartura"]`; doença, `["cura"]` (no doente que é `alvo`; sem alvo, só a cura imposta, repetida, cura todos); guerra, `["raio", "terremoto"]`, **no povo inimigo**; frio e banal, `[]` (nenhum poder atende: o frio passa com o inverno) |
+| `atendem` | os poderes que atendem a prece: seca, `["chuva"]`; fome, `["fartura"]`; doença, `["cura"]` (no doente que é `alvo`; sem alvo, só a cura imposta, repetida, cura todos); guerra, `["raio", "terremoto"]`, **no povo inimigo**; frio, `["fogo"]`, **em intensidade baixa** (o gesto curto, abaixo de 0,35: veja `fogo_brando`); banal, `[]` |
+| `fogo_brando` | true na prece de frio: o fogo que atende é o brando (intensidade abaixo de `Mundo.FOGO_BRANDO`, 0,35); o fogo médio ou forte queima e contraria a prece |
 | `contrariam` | os poderes que contrariam a prece quando caem no povo que reza: seca e fome, `["seca", "fogo", "diluvio", "terremoto"]`; doença, frio e guerra, também o raio que mata alguém do povo. Na guerra, raio e terremoto atendem no inimigo e contrariam no próprio povo |
 | `texto` | a prece em português, sempre a mesma para o mesmo evento: «Que Rega, que a chuva volte.» |
 | `curto` | uma frase de até 40 caracteres para a dica do cursor: "Kurpeya pede comida", "Viem pede a cura de Lou" |
 
 Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o ponto cego do documento funcional.
 
-**O que acontece com a prece.** Atendida por um poder (a chuva na seca, a fartura na fome, a cura no doente, o raio ou o terremoto no inimigo): `prece_atendida`, a fé sobe, e o povo agradece. Atendida pelo acaso (a necessidade passou sozinha): `prece_atendida` com `falso_milagre`, e o povo agradece do mesmo jeito. Sem resposta em 14 dias: `prece_sem_resposta`, a fé cai, e três silêncios viram uma explicação (`silencio`). Contrariada: `prece_contrariada` (acima). Depois de uma prece sem resposta ou contrariada, o povo espera 10 dias para pedir de novo a mesma coisa (`Mundo.ESPERA_PARA_REZAR`). Quem rezou pensa no desfecho por 2 dias (veja a dica: "O Que Nega ouviu a nossa prece", "Pedi chuva, e veio o castigo", "O Que Nega nos esqueceu").
+**O que acontece com a prece.** Atendida por um poder (a chuva na seca, a fartura na fome, a cura no doente, o raio ou o terremoto no inimigo, o fogo brando no frio): `prece_atendida`, a fé sobe, e o povo agradece. Atendida pelo acaso (a necessidade passou sozinha): `prece_atendida` com `falso_milagre`, e o povo agradece do mesmo jeito. Sem resposta em 14 dias: `prece_sem_resposta`, a fé cai, e três silêncios viram uma explicação (`silencio`). Contrariada: `prece_contrariada` (acima). Depois de uma prece sem resposta ou contrariada, o povo espera 10 dias para pedir de novo a mesma coisa (`Mundo.ESPERA_PARA_REZAR`). Quem rezou pensa no desfecho por 2 dias (veja a dica: "O Que Nega ouviu a nossa prece", "Pedi chuva, e veio o castigo", "O Que Nega nos esqueceu").
 
 ## Poderes
 
@@ -466,7 +471,7 @@ A precisão conta para o raio e o sonho, que acertam a pessoa mais perto de x, s
 | `chuva` | garoa: sobe a água, não acaba a seca | acaba a seca naquela zona; os vizinhos ainda secos sentem inveja | idem, e força trégua entre os povos da zona e seus inimigos |
 | `raio` | cai perto, não mata ninguém | mata quem está sob x, lido como castigo, martírio ou azar; ou cai no chão, se não houver ninguém | idem, mais trégua forçada; o lugar fica amaldiçoado e o povo tende a partir |
 | `fartura` | comida a mais, parece natural | fartura que acaba a fome; os povos com fome em outras zonas sentem inveja | (mesmo efeito do milagre) |
-| `fogo` | queima pouco | queima a zona, cabanas e estoque, e pode matar; lido como purificação ou maldição | (mesmo efeito do milagre) |
+| `fogo` | abaixo de 0,35 (o gesto curto), **fogo brando**: acende as fogueiras e aquece o povo da zona por 6 dias, sem queimar, e atende a prece de frio (evento `fogo_brando`); de 0,35 a 0,5, queima pouco | queima a zona, cabanas e estoque, e pode matar; lido como purificação ou maldição | (mesmo efeito do milagre) |
 | `erguer` | uma pedra estranha | pedra alta, lugar sagrado com nome, e trégua entre povos em guerra | (mesmo efeito do milagre) |
 | `sonho` | sonho vago, que muitos ignoram | ideia da agricultura, ou uma visão que pode fazer um sacerdote | sonho aceito com certeza, e paz entre o povo do sonhador e seus inimigos |
 | `seca` | a zona seca um pouco | só aquela zona seca, por 6 a 28 dias, conforme a intensidade. É lida como castigo ("o que fizemos?"), e pode trazer oferendas. | seca dobrada, e oferendas |

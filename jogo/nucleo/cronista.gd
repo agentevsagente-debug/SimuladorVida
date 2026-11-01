@@ -1130,6 +1130,13 @@ func _texto(e) -> String:
 			return _prece_sem_resposta(e, v)
 		"prece_contrariada":
 			return _prece_contrariada(e, v)
+		"fogo_brando":
+			if e.importancia >= 5:
+				return _frase(["No meio do frio, um fogo manso desceu do céu e acendeu as fogueiras {em:zona}. Ninguém se queimou, e ninguém mais tremeu.",
+					"O inverno apertava quando as fogueiras {de:zona} se acenderam sozinhas, com um fogo que aquecia e não queimava.",
+					"Desceu do céu um fogo que não queimava. Pegou nas fogueiras {de:zona}, e o frio foi embora das casas."], v)
+			return _frase(["Um fogo manso desceu do céu e acendeu as fogueiras {de:zona}, sem queimar nada.",
+				"As fogueiras {de:zona} se acenderam sozinhas, com uma chama que não queimava."], v)
 		"silencio":
 			return _silencio(e, v)
 		"culpado":
@@ -1811,6 +1818,8 @@ func texto_curto(e) -> String:
 					"guerra": ["{p} pede vitória" if e.dados.get("atacou", false) else "{p} pede proteção"], "banal": ["{p} pede sol para a pesca", "{p} pede uma caça gorda"]}.get(nec, ["{p} reza"])
 		"prece_contrariada":
 			opcoes = ["{g} pediu, e veio o contrário", "{p} foi contrariad{p:o|a}"]
+		"fogo_brando":
+			opcoes = ["Um fogo que aquece e não queima", "As fogueiras se acendem sozinhas"]
 		"fome_inicio":
 			opcoes = ["Fome em {g}"]
 		"doenca_inicio":
