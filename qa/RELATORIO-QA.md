@@ -38,19 +38,39 @@
 | Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
 | **Total** | **123** | **100** | **11** | **3** | **9** |
 
+**Na branch da A (`84ae9d7`, ainda fora da main):** a bateria dá **93 passam, 6 falham e 3 pulados** em 102 cenários do núcleo. Na main `69791ad`, dá 90, 9 e 3, e falha também no QA-185 novo. A saída está em `qa/rodada-branch-a-84ae9d7.txt`.
+
+| Item da A | Teste | Na branch `84ae9d7` |
+|---|---|---|
+| D-01, a estante | QA-109, QA-182 | **passam**: o mundo de teste guarda os livros em `<nome>.estante`, ao lado do arquivo; só `user://mundo.txt` usa `user://estante`; nenhuma ferramenta apaga a estante real |
+| D-02, a mira (núcleo) | QA-027 | **passa**: com o minuto, 10.800 de 10.800 toques acertam quem está sob o dedo (70 deles em gente sobreposta, no mesmo ponto) |
+| D-02, a mira (ponta a ponta) | **QA-185 (novo)** | **falha**: a apresentação ainda chama `usar_poder(poder, x, intensidade)` sem o minuto. O núcleo mira o meio da hora, e o raio cai no chão (alvo -1). Na main, acerta **outra pessoa** (alvo 12, esperado 1). Falta a B passar `sim.fracao() * 60` ou o id de quem está sob o cursor |
+| D-03, o fim do mundo | QA-131 | passa (já estava na main) |
+| D-09, o começo vazio | QA-002 | **passa**: população 0 às 7h, e criar povo dá 12 coletores na Primeira Era |
+| D-05, D-06, D-11, D-12, D-13 | QA-105, QA-111, QA-026, QA-064, QA-092 | ainda falham (a fazer) |
+
+**Notas desta rodada:**
+- **A bateria serve às duas versões.** Ela confere a API pela lista de métodos:
+  - `Mundo.new(s, [], HORA_INICIAL, true)` dá o mundo pronto;
+  - o QA-027 mede pelo minuto quando `_pessoa_perto(x, minuto)` existe;
+  - as estantes vêm de `Persistencia.pasta_estante()`;
+  - o QA-105 procura a versão 99 também em `mundo.ilegivel.txt`.
+- **Os testes da estante (QA-140 a QA-144)** passaram a ler a estante do caminho do mundo, porque o D-01 mudou onde os livros de teste ficam.
+- **Cuidado com o caminho longo:** com o `user://` numa pasta funda (mais de 260 caracteres no Windows), `Persistencia.salvar` devolve falso, e 17 testes caem. Rode a bateria com um `TEMP` curto. A pasta real do jogador (`%APPDATA%\Simulador de vida`) é curta, então isso não afeta o jogo.
+
 **Os defeitos, do mais grave ao mais leve:**
 
 | # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
 |---|---|---|---|---|
-| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade** (decisão do orquestrador) | A |
-| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim** | A |
+| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade**; corrigido na branch da A (`84ae9d7`), à espera do merge | A |
+| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim**; o núcleo está corrigido na branch da A, e **falta a B** passar o minuto (QA-185) | A, B |
 | D-03 | ~~Quando o último morre, o mundo só fica vazio na virada do dia~~ **corrigido** em `ece2046` (QA-131 passa) | — | — | A |
 | D-04 | ~~O jogo não mostra o número da versão~~ **corrigido** em `c06e4d0` (`config/version` 0.1.0; QA-166 passa) | — | — | B |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
 | D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
 | D-08 | ~~Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x~~ **corrigido** em `a30292f`: 7,1% a 7,3% na minha medida (QA-172 passa) | — | — | B |
-| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: o mundo começa vazio**; A e B implementam | A, B |
+| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: começa vazio**; o núcleo está feito na branch da A (QA-002 passa) | A, B |
 | D-10 | ~~A noite dura 18,75 min reais, e o documento diz 15~~ **resolvido pelo documento** (`f87b764`: 26 min de dia e 19 de noite; QA-016 passa) | — | — | — |
 | D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A |
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
@@ -421,6 +441,7 @@ Cada linha abaixo é um teste que **falha hoje** (conferido na rodada de `f87b76
 
 | Defeito | Teste | Falha hoje com | Passa quando |
 |---|---|---|---|
+| **D-02** (bloqueia), a parte da tela | QA-185 | `simulacao.usar_poder(poder, x, intensidade)` não passa o minuto; no minuto 50, o raio cai no chão (núcleo da A) ou acerta outra pessoa (main) | pela `simulacao.gd`, no minuto 50 da hora 11 da semente 4, o raio solto onde a pessoa está na tela (a agenda naquele minuto) devolve `alvo` igual ao id dela |
 | **D-15** (bloqueia) | QA-129, em janela | a linha do livro sai pelas duas bordas do pergaminho do "Não resta ninguém" | `rodar_janela.ps1 -Parte capturas`: no quadro `QA-129-extincao_01.png` o aviso aparece e todo o texto fica dentro do pergaminho (conferência a olho na captura). Com o D-03 corrigido, o aviso deve aparecer já no primeiro quadro |
 | D-14 | QA-181 | `exclude_filter` sem `qa/*` | `exclude_filter` contém `qa/` |
 | D-05 (aviso) | manual | nenhum aviso quando o mundo salvo não se lê | a apresentação mostra um aviso quando `Persistencia.existe()` é verdadeiro e `carregar_e_avancar()` devolve null |

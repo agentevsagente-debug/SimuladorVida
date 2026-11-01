@@ -153,13 +153,27 @@ func _resumo() -> void:
 
 # ---------------------------------------------------------------- ajudas
 
-## Um mundo com o primeiro povo, como o jogador o encontra depois do primeiro gesto. Hoje o
-## núcleo já cria o povo em Mundo.new(); com o começo vazio (D-09), o povo vem de criar_povo().
+## Um mundo com o primeiro povo, o mesmo de antes do começo vazio (D-09). Com a API nova da A,
+## é Mundo.new(s, [], HORA_INICIAL, true); no núcleo antigo, Mundo.new(s) já trazia o povo.
 func _mundo(semente: int) -> Mundo:
-	var m := Mundo.new(semente)
+	var m: Mundo
+	if _args(Mundo, "_init") >= 4:
+		var ms: Object = Mundo   # sem tipo: a API nova não passa pelo analisador do núcleo antigo
+		m = ms.callv("new", [semente, [], Mundo.HORA_INICIAL, true])
+	else:
+		m = Mundo.new(semente)
 	if m.populacao() == 0:
 		m.criar_povo(275.0)
 	return m
+
+
+## Quantos argumentos um método de um script aceita (-1 se não existe): a bateria serve ao
+## núcleo antes e depois de uma mudança de API.
+func _args(script: Script, metodo: String) -> int:
+	for mt in script.get_script_method_list():
+		if mt["name"] == metodo:
+			return mt["args"].size()
+	return -1
 
 
 func _caminho(nome: String) -> String:
@@ -454,6 +468,8 @@ func _bloco_poderes() -> void:
 		conferir("QA-025", not r.get("ok", true) and r.has("motivo"), "poder desconhecido recusado: %s" % r.get("motivo", ""))
 	if _quer("QA-027") or _quer("QA-028"):
 		_raio_na_pessoa()
+	if _quer("QA-185"):
+		_gesto_pela_simulacao()
 	if _quer("QA-030"):
 		_cura()
 	if _quer("QA-031"):
@@ -547,9 +563,93 @@ func _raio_na_pessoa() -> void:
 						longe_min += 1
 	var pct := 100.0 * longe / maxi(1, amostras)
 	var pct_min := 100.0 * longe_min / maxi(1, amostras)
-	info("raio: %d pessoas acordadas (8h às 16h, 5 sementes); a mais de 6 px do ponto que o raio acerta: %.1f%% do tempo andando em linha reta, %.1f%% se cada trecho chega logo ao destino e espera (limite inferior); no meio da hora (posicao_de), %d de %d" % [gente, pct, pct_min, meio_longe, gente])
-	conferir("QA-027", pct_min <= 5.0, "quem se toca na tela é quem o raio acerta: a pessoa está longe do alvo do núcleo de %.1f%% a %.1f%% do tempo" % [pct_min, pct])
-	r = w.usar_poder("raio", w.posicao_de(p["id"]), 0.9)
+	info("raio, mira pelo fim da hora: %d pessoas acordadas (8h às 16h, 5 sementes); a mais de 6 px do ponto do fim da hora: %.1f%% do tempo andando em linha reta, %.1f%% se cada trecho chega logo ao destino; no meio da hora (posicao_de), %d de %d" % [gente, pct, pct_min, meio_longe, gente])
+	if _args(Mundo, "_pessoa_perto") < 2:
+		conferir("QA-027", pct_min <= 5.0, "quem se toca na tela é quem o raio acerta: a pessoa está longe do alvo do núcleo de %.1f%% a %.1f%% do tempo" % [pct_min, pct])
+		return
+	# API nova da A (D-02): usar_poder(poder, x, intensidade, alvo, minuto) mira a pessoa mais perto
+	# de x naquele minuto da hora. Mede quem o núcleo acertaria se o jogador tocasse a pessoa onde
+	# ela está na tela (a agenda interpolada), em 20 instantes de cada hora.
+	var acertos := 0
+	var tentativas := 0
+	var empates := 0
+	for s in range(1, 6):
+		var v := _mundo(s)
+		v.avancar_dias(3)
+		for h in range(8, 17):
+			_ate_hora(v, h)
+			for q in v.pessoas_visiveis():
+				if q["acao"] == "dormir":
+					continue
+				for f in range(20):
+					var fr := (f + 0.5) / 20.0
+					var xt := _x_na_agenda(q["agenda"], fr)
+					var vu: Object = v
+					var alvo_p = vu.call("_pessoa_perto", xt, fr * 60.0)
+					tentativas += 1
+					if alvo_p != null and alvo_p.id == q["id"]:
+						acertos += 1
+					elif alvo_p != null:
+						# outra pessoa no mesmo ponto da tela: o toque é ambíguo, não é erro de mira
+						var xo := _x_na_agenda(_agenda_de(v, alvo_p.id), fr)
+						if absf(xo - xt) <= 1.0:
+							acertos += 1
+							empates += 1
+	var taxa := 100.0 * acertos / maxi(1, tentativas)
+	info("raio, mira pelo minuto: %d de %d toques acertam quem está sob o dedo (%.1f%%; %d em gente sobreposta)" % [acertos, tentativas, taxa, empates])
+	conferir("QA-027", taxa >= 95.0, "quem se toca na tela é quem o raio acerta, no minuto do toque: %.1f%% (meta: 95%%)" % taxa)
+	# e pela API pública, um raio no minuto 50 sobre onde a pessoa está nesse minuto
+	var z := _mundo(4)
+	z.avancar_dias(3)
+	_ate_hora(z, 11)
+	var alvo_q: Dictionary = {}
+	for q in z.pessoas_visiveis():
+		if q["acao"] != "dormir" and not q["crianca"] and absf(_x_na_agenda(q["agenda"], 50.0 / 60.0) - q["x"]) > Mundo.ALCANCE_ALVO:
+			alvo_q = q
+			break
+	if alvo_q.is_empty():
+		pular("QA-027", "ninguém longe do ponto do fim da hora no minuto 50 (semente 4, 11h)")
+	else:
+		var zu: Object = z
+		var rr: Dictionary = zu.callv("usar_poder", ["raio", _x_na_agenda(alvo_q["agenda"], 50.0 / 60.0), 0.9, -1, 50.0])
+		conferir("QA-027", rr.get("alvo", -1) == alvo_q["id"] and not z.pessoa(alvo_q["id"]).vivo,
+			"usar_poder no minuto 50 acerta quem está ali naquele minuto, longe do ponto do fim da hora (alvo %d, esperado %d)" % [rr.get("alvo", -1), alvo_q["id"]])
+
+
+## QA-185: o caminho inteiro do gesto, como o jogo faz: a simulação da apresentação
+## (simulacao.gd) no minuto 50 da hora, e o raio onde a pessoa está nesse minuto.
+func _gesto_pela_simulacao() -> void:
+	var sim = load("res://apresentacao/simulacao.gd").new()
+	sim.salvar_em_disco = false
+	sim.iniciar(4, -1, false)
+	if sim.mundo.populacao() == 0:
+		sim.criar_povo(260.0)
+	sim.mundo.avancar_dias(3)
+	_ate_hora(sim.mundo, 11)
+	sim.iniciar_de_mundo()
+	sim.definir_ritmo(1)   # Ritmo.NORMAL
+	sim.avancar(Mundo.SEGUNDOS_POR_PASSO * 50.0 / 60.0)
+	var f: float = sim.fracao()
+	var alvo_q: Dictionary = {}
+	for q in sim.mundo.pessoas_visiveis():
+		var xt := _x_na_agenda(q["agenda"], f)
+		if q["acao"] != "dormir" and not q["crianca"] and absf(xt - q["x"]) > Mundo.ALCANCE_ALVO 				and absf(xt - sim.mundo.posicao_de(q["id"])) > Mundo.ALCANCE_ALVO:
+			alvo_q = q
+			break
+	if alvo_q.is_empty():
+		pular("QA-185", "ninguém longe do meio e do fim da hora no minuto %.0f" % (f * 60.0))
+	else:
+		var r: Dictionary = sim.usar_poder("raio", _x_na_agenda(alvo_q["agenda"], f), 0.9)
+		conferir("QA-185", r.get("alvo", -1) == alvo_q["id"],
+			"o raio pela simulação do jogo, no minuto %.0f, acerta quem está sob o gesto (alvo %d, esperado %d): a apresentação passa o minuto da hora" % [f * 60.0, r.get("alvo", -1), alvo_q["id"]])
+	sim.free()
+
+
+func _agenda_de(m, id: int) -> Array:
+	for q in m.pessoas_visiveis():
+		if q["id"] == id:
+			return q["agenda"]
+	return []
 
 
 ## O x da pessoa na fração f da hora. `no_destino`: como a vista anda (rápido, e espera no fim
@@ -1125,6 +1225,14 @@ func _bloco_persistencia() -> void:
 		Persistencia.salvar(w, c)
 		var depois := Estante.livros().size()
 		conferir("QA-109", depois == antes, "salvar um mundo de teste em %s não escreve na estante padrão user://estante (%d → %d livros)" % [c, antes, depois])
+		if _args(Persistencia, "pasta_estante") >= 0:
+			var ps: Object = Persistencia
+			var pasta: String = ps.call("pasta_estante", c)
+			conferir("QA-109", pasta != Estante.PASTA_PADRAO and Estante.livros(pasta).size() == 1,
+				"o livro vai para a estante do mundo de teste, %s (%d livro)" % [pasta, Estante.livros(pasta).size()])
+			conferir("QA-109", ps.call("pasta_estante") == Estante.PASTA_PADRAO, "e o mundo do jogador continua com user://estante")
+			_limpar_pasta(pasta)
+			DirAccess.remove_absolute(ProjectSettings.globalize_path(pasta))
 		_apagar_mundo(c)
 		_limpar_pasta("user://estante")
 	if _quer("QA-111"):
@@ -1241,12 +1349,16 @@ func _versao_futura() -> void:
 	for dia in 4:
 		Persistencia.salvar(novo, c)
 		novo.avancar_dias(1)
-	var restam := 0
-	for n in [0, 1, 2, 3]:
-		var arq := c if n == 0 else Arquivo.copia(c, n)
-		if FileAccess.file_exists(arq) and FileAccess.get_file_as_string(arq).contains("[\"versao\", 99]"):
-			restam += 1
-	conferir("QA-105", restam > 0, "depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo (%d de 4)" % restam)
+	# o mundo ilegível pode sobreviver no próprio lugar ou guardado à parte (a A anunciou
+	# mundo.ilegivel.txt): vale qualquer arquivo da pasta com o nome do mundo
+	var restam := []
+	for f in DirAccess.get_files_at(c.get_base_dir()):
+		var arq := c.get_base_dir().path_join(f)
+		if f.begins_with(c.get_file().get_basename()) and FileAccess.get_file_as_string(arq).contains("[\"versao\", 99]"):
+			restam.append(f)
+	conferir("QA-105", not restam.is_empty(), "depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo (%s)" % [restam])
+	for f in restam:
+		DirAccess.remove_absolute(ProjectSettings.globalize_path(c.get_base_dir().path_join(f)))
 	_apagar_mundo(c)
 
 
@@ -1363,47 +1475,58 @@ func _bloco_fim() -> void:
 
 # ---------------------------------------------------------------- 12. estante e abandono
 
+## Onde a persistência guarda os livros de um mundo salvo em `caminho`: desde o D-01 (A), só o
+## mundo do jogador (user://mundo.txt) usa user://estante; os outros, <nome>.estante ao lado.
+func _pasta_estante(caminho: String) -> String:
+	if _args(Persistencia, "pasta_estante") >= 0:
+		var ps: Object = Persistencia
+		return ps.call("pasta_estante", caminho)
+	return Estante.PASTA_PADRAO
+
+
 func _bloco_estante() -> void:
-	_limpar_pasta("user://estante")
+	var c := _caminho("abandono")
+	var pasta := _pasta_estante(c)
+	_limpar_pasta(pasta)
 	var m := _mundo(9)
 	m.avancar_dias(40 * 6)
-	var c := _caminho("abandono")
 	_apagar_mundo(c)
 	Persistencia.salvar(m, c)
 	m.avancar_hora()
 	Persistencia.salvar(m, c)
 	var livro: Dictionary = Persistencia.abandonar(m, c)
 	var restos := [c, Arquivo.copia(c, 1), Arquivo.copia(c, 2), Persistencia.caminho_antigos(c)].filter(func(x): return FileAccess.file_exists(x))
-	var est := Estante.livros()
+	var est := Estante.livros(pasta)
 	if _quer("QA-140"):
 		conferir("QA-140", livro.get("titulo", "").begins_with("A Primeira Era"), "abandonar fecha a crônica como livro: «%s»" % livro.get("titulo", ""))
-		conferir("QA-140", est.size() == 1, "o livro vai para a estante (%d)" % est.size())
+		conferir("QA-140", est.size() == 1, "o livro vai para a estante do mundo, %s (%d)" % [pasta, est.size()])
 		conferir("QA-140", restos.is_empty(), "o mundo salvo e as cópias foram apagados (%s)" % [restos])
 	if _quer("QA-141"):
 		var novo := _mundo(10)
 		novo.avancar_dias(3)
-		var est2 := Estante.livros()
-		conferir("QA-141", est2.size() == 1 and Estante.ler(est2[0]["id"]).begins_with("# A Primeira Era"), "com outro mundo, o livro continua lá e se lê")
+		var est2 := Estante.livros(pasta)
+		conferir("QA-141", est2.size() == 1 and Estante.ler(est2[0]["id"], pasta).begins_with("# A Primeira Era"), "com outro mundo, o livro continua lá e se lê")
 	if _quer("QA-144"):
+		# o segundo mundo, no mesmo lugar do primeiro, como o jogador faz depois de abandonar
 		var w := _mundo(11)
 		w.avancar_dias(40 * 2)
-		var c2 := _caminho("abandono2")
-		Persistencia.salvar(w, c2)
-		Persistencia.abandonar(w, c2)
-		var est3 := Estante.livros()
-		conferir("QA-144", est3.size() == 2 and est3[0]["id"] != est3[1]["id"], "dois abandonos, dois livros com ids diferentes")
-		_apagar_mundo(c2)
+		Persistencia.salvar(w, c)
+		Persistencia.abandonar(w, c)
+		var est3 := Estante.livros(pasta)
+		conferir("QA-144", est3.size() == 2 and est3[0]["id"] != est3[1]["id"], "dois abandonos, dois livros com ids diferentes (%d)" % est3.size())
+		_apagar_mundo(c)
 	if _quer("QA-142") and not est.is_empty():
 		var id: String = est[0]["id"]
-		DirAccess.remove_absolute(ProjectSettings.globalize_path("user://estante/" + id + ".md"))
-		conferir("QA-142", Estante.ler(id).begins_with("# A Primeira Era"), "o livro sem o arquivo principal se lê pela cópia")
+		DirAccess.remove_absolute(ProjectSettings.globalize_path(pasta.path_join(id + ".md")))
+		conferir("QA-142", Estante.ler(id, pasta).begins_with("# A Primeira Era"), "o livro sem o arquivo principal se lê pela cópia")
+	_limpar_pasta(pasta)
 	_limpar_pasta("user://estante")
 
 
 # ---------------------------------------------------------------- 16. guerra (TDD para A)
 
-## Um ataque registrado às 8h (forçado como faz `--cenario-raro=batalha`) deve virar a cena
-## `guerra` 2 horas depois (API, cenas_ativas: começa em hora + 2, luta de hora + 3h30 a hora + 5h).
+## Um ataque registrado às 8h (forçado como faz `--cenario-raro=batalha`) vira a cena `guerra`
+## meia hora depois (API desde ece2046: começa em hora + 0,5 e dura 4h30).
 func _bloco_guerra() -> void:
 	if not _quer("QA-180") and not _quer("QA-034"):
 		return

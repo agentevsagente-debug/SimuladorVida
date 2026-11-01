@@ -211,4 +211,5 @@
 |---|---|---|---|---|
 | QA-180 | **Dado** um ataque registrado às 8h (forçado no meio do dia), **quando** o mundo é consultado a cada hora, **então** a cena `guerra` começa às 8h30 e termina às 13h, com a luta das 10h às 11h30, e já aparece na hora seguinte (API desde ece2046). | API `cenas_ativas` (guerra) | N | AN |
 | QA-181 | **Dado** o pacote exportado, **então** não leva os testes de QA (`qa/`). | produto | N | AN (lê `export_presets.cfg`) |
+| QA-185 | **Dado** o jogo no minuto 50 de uma hora, **quando** o jogador solta o raio onde uma pessoa está na tela (pela simulação da apresentação, `simulacao.gd`), **então** o raio acerta essa pessoa, e não quem estaria ali no meio ou no fim da hora. É o D-02 de ponta a ponta. | FUN "Atingir uma pessoa específica" | B | AN |
 | QA-182 | **Dado** as ferramentas de teste do núcleo, **então** nenhuma apaga ou escreve na estante real do jogador. | perda de dados | B | AN (lê o código) |
