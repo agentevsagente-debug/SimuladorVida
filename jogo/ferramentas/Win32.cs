@@ -9,6 +9,16 @@ public static class Win32 {
     [StructLayout(LayoutKind.Sequential)] public struct RECT { public int Left, Top, Right, Bottom; }
 
     [DllImport("user32.dll")] public static extern bool SetProcessDPIAware();
+    [DllImport("user32.dll")] public static extern void keybd_event(byte vk, byte scan, uint flags, IntPtr extra);
+    [DllImport("user32.dll")] public static extern bool PostMessage(IntPtr h, uint msg, IntPtr w, IntPtr l);
+    [DllImport("user32.dll")] public static extern IntPtr GetWindow(IntPtr h, uint cmd);
+
+    // Aperta e solta as teclas na ordem (modificadores primeiro), e solta de trás para a frente.
+    public static void Teclas(params byte[] vks) {
+        foreach (var vk in vks) keybd_event(vk, 0, 0, IntPtr.Zero);
+        System.Threading.Thread.Sleep(60);
+        for (int i = vks.Length - 1; i >= 0; i--) keybd_event(vks[i], 0, 2, IntPtr.Zero);
+    }
     [DllImport("user32.dll")] public static extern IntPtr WindowFromPoint(POINT p);
     [DllImport("user32.dll")] public static extern IntPtr GetAncestor(IntPtr h, uint flags);
     [DllImport("user32.dll")] public static extern int GetWindowLong(IntPtr h, int index);

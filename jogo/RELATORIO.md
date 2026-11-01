@@ -37,6 +37,19 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **Para medir de novo:** `DEPURAR_TEMPO=1` faz a vista imprimir, a cada 10 s, os µs por quadro de cada parte.
 - **D8, a memória:** o Gerenciador fica em 179 MB, abaixo dos 200 MB. O conjunto de trabalho (282 MB) inclui as páginas compartilhadas do driver de vídeo, que o Gerenciador não conta.
 
+**O executável 0.1.0 e o B1.** `builds/Simulador de vida.exe` (106 MB) vai com o `COMO JOGAR.txt` (CRLF). A passada foi feita no próprio `.exe`:
+- **`verificar.ps1 -Godot "..\builds\Simulador de vida.exe" -Executavel -SemExportar`:** os 19 itens passaram. Entram:
+  - o "sempre por cima", a transparência e a passagem do mouse;
+  - o clique no mundo e o gesto do raio com o mouse de verdade;
+  - o arraste pela alça e a troca de escala pela roda (2x para 3x);
+  - esconder pelo botão e trazer de volta, e a nitidez em 2x, 3x e 4x.
+- **`ferramentas/b1.ps1`** (novo):
+  - Ctrl+Alt+H esconde e traz de volta: OK;
+  - fechar pelo X da janela (WM_CLOSE): 3 de 3 limpos, com saída 0, "threads encerradas", sem erro no registro e sem o processo do atalho órfão;
+  - a janela por cima dos outros programas por 60 min, conferida a cada minuto: o resultado está mais abaixo.
+- **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
+- **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
+
 **Desejáveis (D1 a D3).**
 - **D1:** o impacto do raio fica 1,5 s (antes, 0,8 s). Onde ele cai, dois blocos de terra queimada (`memoria/terra_queimada_a` e `_b`) ficam no chão por 60 s.
 - **D2:**
