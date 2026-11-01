@@ -31,7 +31,9 @@ const FAZENDO_DETALHE := {
 	"carregar_feixe": "trazendo um feixe de lenha", "carregar_cesto_cabeca": "trazendo um cesto na cabeça",
 	"espreitar": "espreitando um porco", "mirar": "mirando o porco com a lança",
 	"arremessar": "arremessando a lança no porco", "apontar": "apontando o porco para quem mira",
-	"espeto": "esperando a caça com o espeto", "recolher_caca": "amarrando o porco abatido",
+	"espeto": "esperando a caça com o espeto", "pescar_lanca": "de lança erguida na água rasa, esperando o peixe",
+	"golpear": "golpeando a água com a lança", "peixe_na_lanca": "com o peixe na ponta da lança",
+	"despejar": "despejando o cesto perto do fogo", "lavar": "lavando na beira do lago", "recolher_caca": "amarrando o porco abatido",
 	"caca_no_pau": "trazendo o porco no pau", "bocejar": "acordando, espreguiçando-se",
 	"aticar": "atiçando as brasas", "cochilar": "cochilando na vigia",
 	"levar_cesto": "indo colher, com o cesto", "levar_vara": "indo pescar, com a vara",
@@ -185,6 +187,8 @@ func _fazendo(f: Dictionary) -> String:
 		t = "dormindo"
 	elif FAZENDO_CENA.has(cena.get("tipo", "")) and acao != "andar":
 		t = FAZENDO_CENA[cena["tipo"]]
+	elif acao == "brincar" and cena.get("tipo", "") == "cacada":
+		t = "correndo atrás dos caçadores"
 	elif FAZENDO_DETALHE.has(det):
 		t = FAZENDO_DETALHE[det]
 	elif acao == "colher" and x < 140.0:
@@ -552,6 +556,9 @@ func _tracos(cands: Array) -> void:
 
 ## O que se pensa fazendo certas coisas: a caçada, a vigia, a roda de histórias.
 func _no_que_faz(cands: Array, f: Dictionary) -> void:
+	if f.get("acao", "") == "brincar" and f.get("cena", {}).get("tipo", "") == "cacada":
+		_nec(cands, 7, ["Lá vêm eles com o porco!", "Eu vi o porco no pau!", "Corre, que eles chegaram!"], "agitad" + a)
+		return
 	match f.get("detalhe", ""):
 		"espreitar":
 			_nec(cands, 6, ["Devagar... ele ainda não me viu", "Nem um galho pode estalar"], "atent" + a)
@@ -565,6 +572,14 @@ func _no_que_faz(cands: Array, f: Dictionary) -> void:
 			_nec(cands, 6, ["O porco foi mais esperto hoje", "Amanhã a gente pega ele"], "frustrad" + a)
 		"espeto":
 			_nec(cands, 5, ["O cheiro da carne já me dá fome", "Lá vêm eles com a caça!"], "contente")
+		"pescar_lanca", "golpear":
+			_nec(cands, 6, ["Quieto, o peixe está bem ali", "Esse peixe não me escapa", "A água fria nos pés, e nada de peixe"], "atent" + a)
+		"peixe_na_lanca":
+			_nec(cands, 6, ["Peguei! E é dos grandes", "Hoje tem peixe no fogo"], "orgulhos" + a)
+		"despejar":
+			_nec(cands, 5, ["O cesto veio cheio do morro", "Ufa, que descida comprida"], "contente")
+		"lavar":
+			_nec(cands, 4, ["A água leva a sujeira e o cansaço", "Essas crianças não saem da água"], "tranquil" + a)
 		"vigia", "cochilar":
 			_nec(cands, 4, ["O fogo não pode apagar", "Algum bicho rondando lá fora?"], "sonolent" + a)
 		"historias":
