@@ -44,315 +44,247 @@ Kira disse que alguém, lá em cima, segurava a comida e a chuva. Teil passou a 
 
 Ibnira, que fundou Teil e o guiava, morreu de velhice aos 60 anos.
 
-### Ano 13
+*Do ano 13 ao 15, a vida seguiu sem grandes acontecimentos.*
 
-Na primavera do ano 13, Torik passou a falar pelo Que Nega em Teil. Era o primeiro a rezar e o último a duvidar.
+### Ano 16
 
-### Ano 14
+Torik passou a falar pelo Que Nega em Teil. Era o primeiro a rezar e o último a duvidar. O dia em que a chuva voltou virou festa em Teil: todo ano, celebram a chuva que o Que Nega mandou.
 
-No inverno, Torik rezou, e nada aconteceu. O dia em que a chuva voltou virou festa em Teil: todo ano, celebram a chuva que o Que Nega mandou.
+### Ano 17
 
-*Os anos 15 a 18 passaram em paz.*
+No inverno do ano 17, Torik rezou, e nada aconteceu.
+
+### Ano 18
+
+A seca voltou, como no ano 9: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 19
 
-A seca voltou, como no ano 9: 18 dias sem chuva, até que o céu se abriu.
+Numa tempestade sobre o lago, um raio matou Kidema. Ninguém em Teil teve dúvida: era castigo. Para Teil, Kidema foi castigada. Desde então, quem duvida do Que Nega duvida em silêncio. Desde a morte de Kidema, ninguém em Teil chega perto do lago em dia de tempestade. Desde aquele dia, Teil chama o lago de Lago do Raio.
 
 ### Ano 20
 
-Nitorik tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Teil viu nisso obra do Que Nega. A crônica sabe que foi acaso. Nos anos 11 a 20 houve quatro secas, sete fomes e nove preces que pareceram atendidas; nasceram nove crianças e morreram cinco pessoas. No fim do ano 20, vinte pessoas viviam no mundo, todas em Teil.
+Em Teil, Torik pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Teil viu nisso obra do Que Nega. O deus não tinha feito nada. Nos anos 11 a 20 houve quatro secas, oito fomes e doze preces que pareceram atendidas; nasceram sete crianças e morreram cinco pessoas. No fim do ano 20, dezoito pessoas viviam no mundo, todas em Teil.
 
 ### Ano 21
 
-Na primavera do ano 21, Teil já não se preparava para nada: o Que Nega sempre dava. No inverno, Kiar não podia mais viver perto de Torya. Saiu de Teil com oito pessoas e fundou Teur na floresta. Pela primeira vez, havia mais de um povo no mundo.
+Em Teil, cada um passou a cercar o que tinha. A terra tremeu. Caíram duas cabanas. Sutear morreu sob os escombros.
 
-### Ano 22
-
-Em Teur, Ennim tomou para si o cuidado das preces ao Que Nega. As preces de Teil ficaram pequenas: pedia-se ao Que Nega até sol para a pesca e sorte na caça. O frio levou Tetena.
-
-*O ano 23 foi calmo.*
-
-### Ano 24
-
-Kiar tinha rezado: «Manda água, Que Nega, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que o Que Nega tinha ouvido. A crônica sabe que foi acaso.
-
-### Ano 25
-
-Em Teil, cada um passou a cercar o que tinha.
-
-*O ano 26 passou sem nada que a crônica precise guardar.*
+*Os anos 22 a 26 passaram em paz.*
 
 ### Ano 27
 
-Na primavera, nasceu Ibia, a primeira de Teur. Teil passou fome no inverno por 5 dias, e uma pessoa morreu.
+A doença entrou em Teil e matou duas pessoas. Foram 8 dias de fome no inverno em Teil, com um morto. A fome ensinou: desde então, Teil estoca comida e não come tudo o que colhe.
 
-*No ano 28, nada de notável aconteceu.*
+### Ano 28
+
+Com Kiar à frente, dez pessoas deixaram Teil e fundaram Demur, na floresta. Pela primeira vez, havia mais de um povo no mundo. A seca voltou, como no ano 18: 23 dias sem chuva, até que o céu se abriu. Em Demur, Kiar pediu: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Demur duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada.
 
 ### Ano 29
 
-Torik, que falava pelo Que Nega em Teil, morreu dormindo, aos 54 anos.
+Na primavera do ano 29, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Ibya implorou pelo filho. Esik morreu, e daquele dia em diante Ibya cuspia no chão quando falavam do Que Nega. Uma febre correu Teil e levou cinco vidas. Desde a febre, Teil não enterra mais ninguém: os mortos vão para o fogo. Kiar, de Demur, tomou por esposa Tora, de Teil, e os dois povos passaram a se visitar.
 
 ### Ano 30
 
-Nos anos 21 a 30 houve quatro fomes e sete preces que pareceram atendidas; nasceram nove crianças e morreram cinco pessoas. No fim do ano 30, 24 pessoas viviam no mundo: Teil (16) e Teur (8).
+Torya, que guiava Teil, morreu de velhice aos 53 anos. Teil acabou: Nim, Kiteya e Tordemena foram viver em Demur. Demur achou o chão batido de casas sem ninguém, o que restava de Teil. Os velhos diziam que eram parentes antigos, que se perderam. Nasceu Esim, o primeiro de Demur. Nos anos 21 a 30 houve três secas, sete fomes e treze preces que pareceram atendidas; nasceram treze crianças e morreram 22 pessoas. No fim do ano 30, nove pessoas viviam no mundo, todas em Demur.
 
-*O ano 31 foi calmo.*
-
-### Ano 32
-
-Ibya deu à luz gêmeos, Nira e Ruya. Uns viram bênção; outros, mau sinal.
-
-### Ano 33
-
-Em Teur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam.
-
-### Ano 34
-
-Em Teil, Nitorik pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Teil viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? No inverno, Demniem, de Teur, tomou por esposa Tora, de Teil, e os dois povos passaram a se visitar.
-
-### Ano 35
-
-O dia em que a chuva voltou virou festa em Teur: todo ano, celebram a chuva que o Que Nega mandou.
+*Entre os anos 31 e 35, nada mudou o rumo do mundo.*
 
 ### Ano 36
 
-Nitorik, que falava pelo Que Nega em Teil, morreu dormindo, aos 62 anos.
+Torena, a curiosa, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito.
 
-*O ano 37 foi calmo.*
+### Ano 37
+
+Apareceu no céu uma luz com rabo, que ficou 12 noites e sumiu.
 
 ### Ano 38
 
-Na primavera do ano 38, Torya, que guiava Teil, morreu dormindo, aos 61 anos.
+Em Demur, Torena tomou para si o cuidado das preces ao Que Nega.
 
-*No ano 39, nada de notável aconteceu.*
+### Ano 39
+
+Demur fez as primeiras roças na floresta. Deixou de viver só do que achava e passou a plantar. A seca voltou, como no ano 28: 18 dias sem chuva, até que o céu se abriu. Kiar tinha rezado: «Que Nega, que a chuva volte.» Quando a chuva voltou, Demur agradeceu ao Que Nega. O deus nada fez: o crédito era de graça.
 
 ### Ano 40
 
-Nos anos 31 a 40 houve quatro fomes e seis preces que pareceram atendidas; nasceram 24 crianças e morreram sete pessoas. No fim do ano 40, 42 pessoas viviam no mundo: Teil (19) e Teur (23).
+Nos anos 31 a 40 houve três secas e oito preces que pareceram atendidas; nasceram três crianças e ninguém morreu. No fim do ano 40, doze pessoas viviam no mundo, todas em Demur.
 
 ### Ano 41
 
-Teur deixou a floresta, onde a comida tinha acabado, e foi viver na praia. No outono, uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito. Depois disso, Teil deixou de chamar o deus de «o Que Nega» e passou a chamá-lo de «o Que Risca o Céu». Depois disso, Teur deixou de chamar o deus de «o Que Nega» e passou a chamá-la de «a Estrela de Cauda».
+Apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu. Depois disso, Demur deixou de chamar o deus de «o Que Nega» e passou a chamá-la de «a Estrela de Cauda».
 
 ### Ano 42
 
-Teur já não se preparava para nada: a Estrela de Cauda sempre dava. Enteim, o medroso, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. A seca voltou, como no ano 19: 19 dias sem chuva, até que o céu se abriu. O inverno foi de gelo: duas pessoas morreram de frio.
+Na primavera, morreu Yoali, filha pequena de Tora.
 
-### Ano 43
+*Entre os anos 43 e 48, nada mudou o rumo do mundo.*
 
-Em Teur, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Em Teil, Tenana pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Teil viu nisso obra do Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Ibia, a engenhosa, descobriu que uma semente enterrada vira planta. Foi a fome que a fez olhar para o chão.
+### Ano 49
 
-### Ano 44
-
-Teur passou fome no inverno por 5 dias, e uma pessoa morreu. O deus calou justo quando Teur mais dependia dele.
-
-### Ano 45
-
-Kidema, que guiava Teil, morreu de repente, aos 44 anos.
-
-### Ano 46
-
-No verão, Teur fez as primeiras roças na floresta. Deixou de viver só do que achava e passou a plantar.
-
-### Ano 47
-
-Teil fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar.
-
-*Os anos 48 a 49 passaram em paz.*
+Na primavera do ano 49, em Demur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. A seca voltou, como no ano 39: 26 dias sem chuva, até que o céu se abriu. Em Demur, Kiar pediu: «Manda água, Estrela de Cauda, que as crianças têm sede.» Quando a chuva voltou, Demur agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça. Demur passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
 
 ### Ano 50
 
-Enteim, o medroso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. No inverno, Ibia, a engenhosa, descobriu como empilhar pedras cortadas sem que caíssem. Nos anos 41 a 50 houve três secas, oito fomes e dezesseis preces que pareceram atendidas; nasceram 31 crianças e morreram 24 pessoas. No fim do ano 50, 49 pessoas viviam no mundo: Teil (21) e Teur (28).
+Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram onze crianças e morreram cinco pessoas. No fim do ano 50, dezoito pessoas viviam no mundo, todas em Demur.
 
-### Ano 51
+*No ano 51, nada de notável aconteceu.*
 
-O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Ibia, a engenhosa, deu à luz e não sobreviveu ao parto. Tinha sido a primeira a plantar.
+### Ano 52
 
-*O ano 52 foi calmo.*
+Morreu Kiar, que fundou Demur e o guiava, aos 60 anos. Foi quem levou os seus a fundar Demur.
 
-### Ano 53
+*Do ano 53 ao 58, a vida seguiu sem grandes acontecimentos.*
 
-De novo a chuva sumiu, como no ano 42. Foram 22 dias de seca. Kiar tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Quando a chuva voltou, Teur agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça.
+### Ano 59
 
-### Ano 54
-
-Teur ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
-
-*Entre os anos 55 e 56, nada mudou o rumo do mundo.*
-
-### Ano 57
-
-Na primavera do ano 57, morreu Ennim, que falava pela Estrela de Cauda em Teur, aos 55 anos. Teil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
-
-### Ano 58
-
-Na primavera do ano 58, morreu Kiar, que fundou Teur e o guiava, aos 66 anos. Foi quem levou os seus a fundar Teur. Tora passou a guiar Teur, mas Dema não aceitou e guardou rancor.
-
-*O ano 59 passou sem nada que a crônica precise guardar.*
+De novo a chuva sumiu, como no ano 49. Foram 18 dias de seca. Em Demur, Yoyora pediu: «Manda água, Estrela de Cauda, que as crianças têm sede.» Quando a chuva voltou, Demur agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça.
 
 ### Ano 60
 
-Nos anos 51 a 60 houve seis preces que pareceram atendidas; nasceram 38 crianças e morreram onze pessoas. No fim do ano 60, 76 pessoas viviam no mundo: Teil (38) e Teur (38).
+Nos anos 51 a 60 houve duas secas; nasceram dezenove crianças e morreram três pessoas. No fim do ano 60, 34 pessoas viviam no mundo, todas em Demur.
 
-### Ano 61
+*O ano 61 foi calmo.*
 
-Ibem, que guiava Teil, morreu dormindo, aos 57 anos.
+### Ano 62
 
-*Do ano 62 ao 63, a vida seguiu sem grandes acontecimentos.*
+No verão do ano 62, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Para Demur, o deus já não era «a Estrela de Cauda»: passou a ser «o Olho Escuro».
 
-### Ano 64
-
-Na primavera, em Teur, quem vinha de fora era recebido com comida e lugar perto do fogo. Dema não podia mais viver perto de Tora. Saiu de Teur com 25 pessoas e fundou Wanum na praia. Em Wanum nasceu a primeira criança: Teibia, filha de Isa e Rumaem. Entorem passou a falar pela Estrela de Cauda em Wanum. Era o primeiro a rezar e o último a duvidar.
+*Entre os anos 63 e 64, nada mudou o rumo do mundo.*
 
 ### Ano 65
 
-Na primavera do ano 65, em nome da Estrela de Cauda, Entorem proibiu casamentos e trocas com Teur. Era vontade de Entorem, não do deus. De novo a chuva sumiu, como no ano 53. Foram 23 dias de seca. Em Teur, Demniem pediu: «Manda água, Estrela de Cauda, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Teur duvidou de que a Estrela de Cauda tinha ouvido. O deus não tinha feito nada.
+Morreu Nim, que guiava Demur, aos 62 anos.
 
-*No ano 66, nada de notável aconteceu.*
-
-### Ano 67
-
-Morreu Isdema, filha pequena de Demya. No verão, Mana deu à luz gêmeos, Esesik e Mazeya. Uns viram bênção; outros, mau sinal.
-
-### Ano 68
-
-Na primavera do ano 68, Demniem, que falava pela Estrela de Cauda em Teur, morreu de velhice aos 50 anos.
-
-### Ano 69
-
-Tora, que guiava Teur, morreu de velhice aos 60 anos.
+*Do ano 66 ao 69, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 70
 
-Cansado de um líder que mandava sozinho, Teil passou a decidir em conselho. Em Wanum, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Em Wanum, Dema pediu: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Wanum viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Nos anos 61 a 70 houve nove preces que pareceram atendidas; nasceram 51 crianças e morreram catorze pessoas. No fim do ano 70, 114 pessoas viviam no mundo: Teil (53), Teur (29) e Wanum (32).
+Nos anos 61 a 70 houve quatro preces que pareceram atendidas; nasceram 29 crianças e morreram treze pessoas. No fim do ano 70, 50 pessoas viviam no mundo, todas em Demur.
 
 ### Ano 71
 
-Na primavera, Ibzear rezou por War até a voz acabar. War morreu mesmo assim, e Ibzear nunca mais rezou. A doença entrou em Wanum e matou duas pessoas. Esa, de Teil, casou-se com Rumaem e foi viver em Wanum. Foi o primeiro laço entre os dois povos.
+De novo o sol se apagou no meio do dia.
 
 ### Ano 72
 
-Morreu Dema, que fundou Wanum e o guiava, aos 53 anos. Tinha fundado Wanum. O dia em que a chuva voltou virou festa em Wanum: todo ano, celebram a chuva que a Estrela de Cauda mandou. No inverno, Mara, a ambiciosa, cansou de dividir pouca comida. Partiu com dezenove pessoas para o morro e ali fundou Teor. Os de Wanum caíram sobre Teur na floresta em nome da Estrela de Cauda. Teur expulsou os atacantes. Sudema e Esa morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Teur chamam o lugar de Floresta da Vitória; os de Wanum, de Floresta do Luto.
+No verão do ano 72, com Suik à frente, dezesseis pessoas deixaram Demur e fundaram Suyor, no lago. A seca voltou, como no ano 59: 19 dias sem chuva, até que o céu se abriu. Em Demur, Torena pediu: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Demur agradeceu ao Olho Escuro. O deus nada fez: o crédito era de graça.
 
 ### Ano 73
 
-Morreu o último que tinha visto o ano 14. Em Teor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Foram 21 dias de fome em Wanum, com cinco mortos. No outono, começou a Guerra Santa: em nome do Que Apaga o Sol, Wanum pegou em lanças contra Teur. Wanum e Teur, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa acabou em trégua, depois de um ano, duas batalhas e três mortos.
+Na primavera, com Suik à frente, a nova geração de Suyor abandonou a festa da chuva, costume herdado dos avós. Morreu o último que tinha visto o ano 19. Em Suyor, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Morreu o último que tinha visto o ano 27. Em Suyor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Em Suyor nasceu a primeira criança: Tesuim, filho de Gali e Losuim.
 
 ### Ano 74
 
-No outono do ano 74, Zetena, a medrosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. No inverno, Mara, que guiava Teor, teve uma filha: Bebeia.
+Na primavera do ano 74, morreu Torena, que guiava Demur, aos 56 anos. Tinha sido a primeira a plantar. Loyoena passou a guiar Demur, mas Niena não aceitou e guardou rancor. Esnik, de Suyor, tomou por esposa Loali, de Demur, e os dois povos passaram a se visitar.
 
 ### Ano 75
 
-No verão do ano 75, Ibiba, de Wanum, casou-se com Esnim e foi viver em Teor. Foi o primeiro laço entre os dois povos. No inverno, Ruruim, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
+Gali passou a falar pelo Olho Escuro em Suyor. Era a primeira a rezar e a última a duvidar.
 
-*O ano 76 foi calmo.*
+### Ano 76
+
+Na primavera, morreu Bero, filho pequeno de Gagara.
 
 ### Ano 77
 
-A seca voltou, como no ano 65: 21 dias sem chuva, até que o céu se abriu. Em Teor, Mara pediu: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Teor duvidou de que o Que Risca o Céu tinha ouvido. A crônica sabe que foi acaso.
+Na primavera do ano 77, a terra tremeu. Caíram cinco cabanas. Nateali morreu sob os escombros. Depois disso, Demur deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Terra Brava». Para Suyor, o deus já não era «o Olho Escuro»: passou a ser «o Que Sacode».
 
-### Ano 78
-
-Em nome do Que Apaga o Sol, Ruruim proibiu casamentos e trocas com Teor. Era vontade de Ruruim, não do deus. Veio a pior fome que o mundo tinha visto: 18 dias no inverno em Wanum, e 11 mortos. As crianças foram as primeiras. No verão, Ruruim anunciou que o Que Apaga o Sol proibia qualquer trato com Teur. O deus nunca disse isso, mas Wanum obedeceu. Wanum não esqueceu o ano 72 e atacou Teur outra vez. Teur resistiu, e Wanum voltou de mãos vazias. Na luta morreram Teim e Isesar. Wanum e Teur, cansados de enterrar os seus, fizeram as pazes na floresta.
+*No ano 78, nada de notável aconteceu.*
 
 ### Ano 79
 
-Suar, que guiava Teur, morreu de velhice aos 58 anos. Em Teor, Enteik tomou para si o cuidado das preces ao Que Risca o Céu. Os dois povos passaram a chamar o lugar de Lago da Trégua. Dessa vez, o Que Risca o Céu não respondeu, e Teil, que tinha esquecido como se virar sozinho, pagou caro. Um raio caiu na praia durante a tempestade e matou Mademar. Ninguém em Wanum teve dúvida: era castigo.
+No outono, a rixa entre Loyoena e Esim rachou Demur. Loyoena partiu com os seus, catorze pessoas, e fundou Suem na praia.
 
 ### Ano 80
 
-Teur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. A forja de Wanum não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 71 a 80 houve três secas, quatro fomes, quatro batalhas, 24 preces que pareceram atendidas e dez preces sem resposta; nasceram 113 crianças e morreram 54 pessoas. No fim do ano 80, 173 pessoas viviam no mundo: Teil (62), Teur (57), Wanum (25) e Teor (29).
+Em Suem, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 29, só a crônica guarda. Gali, a medrosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Gali, que falava pelo Que Sacode em Suyor, morreu ao dar à luz. Loali, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Em Suem nasceu a primeira criança: Gaim, filho de Loyoena e Suloar. Nos anos 71 a 80 houve duas secas e quatro preces que pareceram atendidas; nasceram 54 crianças e morreram dez pessoas. No fim do ano 80, 94 pessoas viviam no mundo: Demur (40), Suyor (39) e Suem (15).
 
 ### Ano 81
 
-Na primavera, Demmaik disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «a Sombra». Teur acreditou, e o deus mudou de nome.
+No inverno, Loali, a engenhosa, morreu ao dar à luz.
 
 ### Ano 82
 
-Na primavera, Temar, de Teur, tomou por esposa Kiena, de Teor, e os dois povos passaram a se visitar.
+Na primavera do ano 82, Losuim, de Suyor, tomou por esposa Esena, de Suem, e os dois povos passaram a se visitar.
 
 ### Ano 83
 
-Eszem, que guiava Wanum, morreu de velhice aos 52 anos. Torem disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Olho Escuro». Teil acreditou, e o deus mudou de nome.
+A seca voltou, como no ano 72: 23 dias sem chuva, até que o céu se abriu. Em Demur, Sura pediu: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Demur agradeceu à Terra Brava. O deus não tinha feito nada.
 
 ### Ano 84
 
-Na primavera do ano 84, Isem, de Teur, tomou por esposa Ibia, de Wanum, e os dois povos passaram a se visitar. Numa tempestade sobre a floresta, um raio matou Demmaik. Ninguém em Teur teve dúvida: era castigo. Para Teur, Demmaik foi castigado. Desde então, quem duvida da Sombra duvida em silêncio. Desde a morte de Demmaik, ninguém em Teur entra na floresta em dia de tempestade.
+Em Suem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Suloar passou a falar pela Terra Brava em Suem. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 85
 
-Teor já não se preparava para nada: o Que Risca o Céu sempre dava. A doença entrou em Teur e matou três pessoas. Desde a febre, Teur não enterra mais ninguém: os mortos vão para o fogo.
+Na primavera do ano 85, morreu Yoyora, a rancorosa, aos 46 anos.
 
 ### Ano 86
 
-Teur conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 14. Muitas cabanas ficaram vazias. A fome ensinou: desde então, Teur estoca comida e não come tudo o que colhe. Desde então, Teor chama o morro de Morro da Fome. Wanum já não se preparava para nada: o Que Apaga o Sol sempre dava. Torisar, o corajoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Na primavera, Loyoena, que fundou Suem e o guiava, morreu de repente, aos 35 anos. Foi quem levou os seus a fundar Suem. Morreu o último que tinha visto o ano 49. Em Suem, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Loyoali, de Demur, casou-se com Esesik e foi viver em Suem. Foi o primeiro laço entre os dois povos. Em Suyor, Suik pediu: «Que Sacode, dá-nos o que comer.» A comida voltou, e Suyor deu graças ao Que Sacode. Foi só o tempo, mas quem iria dizer? Loik, o curioso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
-### Ano 87
-
-Na primavera do ano 87, Natena, que guiava Teil, morreu de velhice aos 60 anos.
+*No ano 87, nada de notável aconteceu.*
 
 ### Ano 88
 
-No outono, Kiem, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
+Na primavera, Suik, que fundou Suyor e o guiava, morreu de repente, aos 39 anos. Foi quem levou os seus a fundar Suyor. No outono, Demur ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
-### Ano 89
-
-Ruruim tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Wanum deu graças ao Que Apaga o Sol. O deus nada fez: o crédito era de graça.
+*O ano 89 foi calmo.*
 
 ### Ano 90
 
-Tenana, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 72 anos. Enteim, o medroso, morreu dormindo, aos 66 anos. Foi quem descobriu que semente vira planta. Sem lugar e sem comida, Kiteik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. As preces de Teor ficaram pequenas: pedia-se ao Que Risca o Céu até sol para a pesca e sorte na caça. Nos anos 81 a 90 houve nove fomes e 23 preces que pareceram atendidas; nasceram 116 crianças e morreram 71 pessoas. No fim do ano 90, 215 pessoas viviam no mundo: Teil (74), Teur (69), Wanum (35) e Teor (37).
+Em nome da Terra Brava, Esim proibiu casamentos e trocas com Suyor. Era vontade de Esim, não do deus. Demur conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 17. Muitas cabanas ficaram vazias. A floresta passou a ser a floresta da fome: Floresta da Fome. Yoyoim rezou por Nara até a voz acabar. Nara morreu mesmo assim, e Yoyoim nunca mais rezou. A doença entrou em Demur e matou seis pessoas. Nos anos 81 a 90 houve duas secas, duas fomes e dez preces que pareceram atendidas; nasceram 63 crianças e morreram 38 pessoas. No fim do ano 90, 119 pessoas viviam no mundo: Demur (43), Suyor (46) e Suem (30).
 
 ### Ano 91
 
-Na primavera, Runa, que guiava Teur, morreu dormindo, aos 56 anos. Morreu o último que tinha visto o ano 35. Em Teur, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
+Houve luta no lago: Demur atacou Suyor em nome da Terra Brava. Suyor expulsou os atacantes. Foi a primeira briga entre povos.
 
 ### Ano 92
 
-O deus calou justo quando Wanum mais dependia dele. Depois da seca, Teor jurou nunca desperdiçar água. Mara, que fundou Teor e o guiava, não resistiu à fome. Foi quem levou os seus a fundar Teor. Sem lugar e sem comida, Demsuya e os seus atravessaram a borda do mundo. Ninguém soube deles. Teor acabou: Ibel e Torrura foram viver em Teur.
+Na primavera do ano 92, morreu Esim, que guiava Demur, aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Suyor. Yosuo passou a guiar Demur, mas Niena não aceitou e guardou rancor. No verão, com Yoya à frente, quinze pessoas deixaram Suyor e fundaram Linem, no morro.
 
 ### Ano 93
 
-Na primavera, Enim, o corajoso, cansou de dividir pouca comida. Partiu com dezesseis pessoas para o morro e ali fundou Kidon. Foram 9 dias de fome no inverno em Teil, com onze mortos. A fome ensinou: desde então, Teil estoca comida e não come tudo o que colhe. Diante das ruínas de Teor, o chão batido de casas sem ninguém, Teil disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No inverno, Demnina passou a falar pelo Olho Escuro em Kidon. Era a primeira a rezar e a última a duvidar.
+Na primavera, nasceu Suali, a primeira de Linem.
 
-### Ano 94
+*O ano 94 passou sem nada que a crônica precise guardar.*
 
-No verão do ano 94, Ruruim, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+### Ano 95
 
-*O ano 95 foi calmo.*
+Loyoali tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A fome passou, e Suem viu nisso obra da Terra Brava. O deus não tinha feito nada. Linem passou a festejar todo ano o dia da volta da chuva, em honra do Que Sacode.
 
 ### Ano 96
 
-Na primavera do ano 96, Kidon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No inverno, nasceu Sudoik, o primeiro de Kidon.
+Yonar, que guiava Suem, morreu de repente, aos 32 anos. Em Linem, Yoya começou a pregar que o deus não era «o Que Sacode». Era «o Senhor das Lanças». Em poucos anos, todos rezavam assim. No verão, Teik, de Suem, tomou por esposa Ibena, de Linem, e os dois povos passaram a se visitar.
 
 ### Ano 97
 
-Torik, que falava pelo Olho Escuro em Teil, morreu dormindo, aos 68 anos. No verão, Ismaik, de Teur, tomou por esposa Natera, de Kidon, e os dois povos passaram a se visitar. Esia, a engenhosa, inventou marcas que guardavam palavras.
+Na primavera, com Yoya à frente, a nova geração de Linem abandonou o medo das tempestades, costume herdado dos avós. Naena passou a falar pelo Senhor das Lanças em Linem. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 98
 
-Na primavera do ano 98, em Teur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Teur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Sura, que falava pela Terra Brava em Demur, morreu de velhice aos 45 anos.
 
 ### Ano 99
 
-Na primavera do ano 99, Enar, que falava pelo Olho Escuro em Teil, morreu de velhice aos 48 anos. Um raio caiu no morro durante a tempestade e matou Esia. A família de Esia nunca perdoou o céu. Depois disso, Kidon deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Kidon sai de casa. Lembram de Esia. O lugar ganhou nome: Morro do Raio.
+Demur passou a receber bem os de fora: um casamento com outro povo virava festa. No verão, Naim, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 100
 
-No outono, Kidema deu à luz gêmeos, Torik e Demtem. Uns viram bênção; outros, mau sinal. Demnina, que falava pela Voz do Céu em Kidon, morreu ao dar à luz. Nos anos 91 a 100 houve sete fomes, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 134 crianças e morreram 142 pessoas. No fim do ano 100, 205 pessoas viviam no mundo: Teil (78), Teur (86), Wanum (26) e Kidon (15).
+A seca voltou, como no ano 83: 25 dias sem chuva, até que o céu se abriu. Depois da seca, Demur jurou nunca desperdiçar água. Naena tinha rezado: «Manda água, Senhor das Lanças, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Linem duvidou de que o Senhor das Lanças tinha ouvido. O deus não tinha feito nada. Loyoali, que falava pela Terra Brava em Suem, não resistiu à fome. Os de Suem caíram sobre Linem no morro. Linem resistiu, e Suem voltou de mãos vazias. Nik morreu na luta. Nos anos 91 a 100 houve duas secas, seis fomes, duas batalhas, vinte preces que pareceram atendidas e seis preces sem resposta; nasceram 107 crianças e morreram 66 pessoas. No fim do ano 100, 160 pessoas viviam no mundo: Demur (52), Suyor (79), Suem (7) e Linem (22).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Teil** vive no lago, com 78 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 93).
-- **Teur** vive na floresta, com 86 pessoas, e escreve; nasceu de uma briga em Teil no ano 21; chama o deus de «a Sombra»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 84); queima os mortos (desde o ano 85); guarda tanta comida para o inverno (desde o ano 86).
-- **Wanum** vive na praia, com 26 pessoas, e trabalha o metal; nasceu de uma briga em Teur no ano 64; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (desde o ano 72); treina os jovens com lanças (desde o ano 72); guarda tanta comida para o inverno (desde o ano 73); não sai de casa em dia de tempestade (desde o ano 79).
-- **Kidon** vive no morro, com 15 pessoas, e trabalha o metal; nasceu de uma migração em Teil no ano 93; chama o deus de «a Voz do Céu»; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 99).
+- **Demur** vive na floresta, com 52 pessoas, em casas de pedra; nasceu de uma migração em Teil no ano 28; chama o deus de «a Terra Brava»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 100).
+- **Suyor** vive no lago, com 79 pessoas, e planta roças; nasceu de uma migração em Demur no ano 72; chama o deus de «o Que Sacode»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida).
+- **Suem** vive na praia, com 7 pessoas, e planta roças; nasceu de uma briga em Demur no ano 79; chama o deus de «a Terra Brava»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida).
+- **Linem** vive no morro, com 22 pessoas, e planta roças; nasceu de uma migração em Suyor no ano 92; chama o deus de «o Senhor das Lanças»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); faz a festa da chuva (desde o ano 95).
 
-Povos que deixaram de existir: Teor.
+Povos que deixaram de existir: Teil.
 
-Lugares com nome: Praia da Fome (praia, para Wanum), Lago da Trégua (lago, para Wanum), Lago da Trégua (lago, para Teil), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Wanum), Morro da Fome (morro, para Teor) e Morro do Raio (morro, para Kidon).
+Lugares com nome: Lago do Raio (lago, para Teil) e Floresta da Fome (floresta, para Demur).
 
-Em 100 anos nasceram 535 pessoas e morreram 339.
+Em 100 anos nasceram 316 pessoas e morreram 168.

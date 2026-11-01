@@ -504,6 +504,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
 | `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
+| `estilos.gd` | Simula 4 deuses (benevolente, cruel, ausente, caprichoso) por 100 anos, em 3 sementes, e compara fé, nomes do deus, costumes, dependência, guerras santas, secularizações e população. Tabela, trechos de crônica e leitura em `estilos/`. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
@@ -552,3 +553,12 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   - Tudo tem cópia, porque a estante é insubstituível. Cada livro é gravado também como `<id>.1.md`, e `ler` usa a cópia se o arquivo sumiu ou está vazio. O índice guarda as 3 versões anteriores (`indice.1.txt` a `indice.3.txt`); se ele estiver estragado, valem as cópias, e se todas estiverem, o índice é refeito a partir dos livros (com o título da primeira linha).
   - `Persistencia.salvar(mundo)` leva para a estante os livros que ainda não estão lá.
 - **Abandonar o mundo:** `Persistencia.abandonar(mundo) -> livro` fecha a crônica da era atual como livro (mesmo com o povo vivo), guarda o livro na estante e apaga o mundo salvo. Depois, a apresentação começa outro mundo com `Mundo.new(semente)`, e a estante continua lá.
+
+## Como o povo reage ao estilo do deus
+
+O custo de intervir é a interpretação: o mesmo povo sai diferente conforme o deus que tem. Veja `ferramentas_sim/estilos/`.
+- **O acaso convence menos que o deus:** uma prece que se cumpre sozinha sobe a fé em 0,08, contra 0,15 de um milagre de verdade. Ela também alivia menos o silêncio e não conta para a dependência: só um deus que responde de verdade cria povos dependentes e, depois, exigentes.
+- **Um deus que nunca aparece é esquecido:** depois de 15 anos sem nenhum gesto do deus (qualquer poder que o povo sinta), a fé de quem não é devoto esfria 3% ao ano. O povo pode se secularizar a partir do estágio 3.
+- **Um deus que mata é aplacado:** um raio do deus que mata alguém, lido como castigo, cria o costume das oferendas.
+- **A terra tem limite:** acima de 320 pessoas no mundo, nascem cada vez menos crianças (`Mundo.LOTACAO`).
+- `grupo.ultimo_divino`: o dia do último gesto do deus que o povo sentiu (-1: nunca).
