@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dfbe6033j626l"
+path="res://.godot/imported/buscar_agua_4q.png-5eb8e4074db904a86c994ba1b2ae16df.image"
+
+[deps]
+
+source_file="res://arte/estacoes/inverno/acoes/buscar_agua_4q.png"
+dest_files=["res://.godot/imported/buscar_agua_4q.png-5eb8e4074db904a86c994ba1b2ae16df.image"]
+
+[params]
+

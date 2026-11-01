@@ -1,0 +1,13 @@
+﻿{
+    "cenario":  "rapido2",
+    "duracao_s":  300,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.171,
+    "cpu_media_1nucleo":  4.8,
+    "cpu_max_amostra_pct":  0.232,
+    "ws_media_mb":  225.1,
+    "ws_max_mb":  226.4,
+    "privada_max_mb":  226.3,
+    "gerenciador_media_mb":  122.4,
+    "gerenciador_max_mb":  123.3
+}

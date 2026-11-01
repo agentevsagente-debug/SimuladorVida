@@ -17,9 +17,14 @@ const Obras = preload("res://apresentacao/obras.gd")
 ## Os mundos de teste (que não salvam) guardam os livros numa estante à parte.
 const ESTANTE_TESTE := "user://estante_teste"
 
-enum Ritmo { PAUSA, NORMAL, RAPIDO }
+## RAPIDO é o 10x e MUITO_RAPIDO o 50x (documento funcional: velocidades 1x, 10x e 50x).
+enum Ritmo { PAUSA, NORMAL, RAPIDO, MUITO_RAPIDO }
 ## Segundos reais por passo (1 hora de jogo) em cada ritmo.
-const SEGUNDOS := {Ritmo.PAUSA: INF, Ritmo.NORMAL: Mundo.SEGUNDOS_POR_PASSO, Ritmo.RAPIDO: 1.9}
+const SEGUNDOS := {Ritmo.PAUSA: INF, Ritmo.NORMAL: Mundo.SEGUNDOS_POR_PASSO,
+	Ritmo.RAPIDO: Mundo.SEGUNDOS_POR_PASSO / 10.0, Ritmo.MUITO_RAPIDO: Mundo.SEGUNDOS_POR_PASSO / 50.0}
+## Nome do ritmo na alça, na linha de comando e no moldura.cfg.
+const NOME_RITMO := {Ritmo.PAUSA: "pausa", Ritmo.NORMAL: "normal", Ritmo.RAPIDO: "rapido",
+	Ritmo.MUITO_RAPIDO: "rapido2"}
 const PASSOS_POR_DIA := 24
 ## O salto procura o próximo acontecimento até este limite (um ano de jogo).
 const SALTO_MAXIMO := 960

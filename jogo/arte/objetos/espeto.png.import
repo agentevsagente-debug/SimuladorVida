@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://de3kiogrtq0r1"
+path="res://.godot/imported/espeto.png-fea4a0b959929a7c93a952ae38f6f555.image"
+
+[deps]
+
+source_file="res://arte/objetos/espeto.png"
+dest_files=["res://.godot/imported/espeto.png-fea4a0b959929a7c93a952ae38f6f555.image"]
+
+[params]
+

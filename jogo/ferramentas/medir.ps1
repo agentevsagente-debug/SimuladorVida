@@ -1,9 +1,10 @@
 ﻿# Mede CPU e memória da moldura num cenário.
-# Uso: medir.ps1 -Cenario normal|rapido|escondido|avancado -Segundos 600
+# Uso: medir.ps1 -Cenario normal|rapido|rapido2|escondido|avancado -Segundos 600
 #   normal: visível, ritmo normal (1 hora de jogo a cada 112,5 s)
-#   rapido: visível, ritmo rápido (1 hora a cada 1,9 s: gente andando o tempo todo)
+#   rapido: visível, ritmo 10x (1 hora a cada 11,25 s)
+#   rapido2: visível, ritmo 50x (1 hora a cada 2,25 s: gente andando o tempo todo)
 #   escondido: minimizada, ritmo normal
-#   avancado: visível, ritmo rápido, num mundo de 150 anos (estágios altos,
+#   avancado: visível, ritmo 50x, num mundo de 150 anos (estágios altos,
 #             culturas, ruínas e mais gente: o jogo completo)
 #
 # CPU% = Δ tempo de CPU do processo / (Δ tempo real × núcleos lógicos) × 100,
@@ -15,7 +16,7 @@
 #   privada_mb: bytes privados (memória reservada só para o processo);
 #   gerenciador_mb: conjunto de trabalho privado, a coluna "Memória" do Gerenciador de Tarefas.
 param(
-    [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'escondido', 'avancado')][string]$Cenario,
+    [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'rapido2', 'escondido', 'avancado')][string]$Cenario,
     [int]$Segundos = 600,
     [int]$Intervalo = 5,
     [int]$Aquecimento = 10,
@@ -29,7 +30,7 @@ $nucleos = [Environment]::ProcessorCount
 
 $p = Start-Process -FilePath $Godot -PassThru -ArgumentList @(
     '--path', "`"$projeto`"", '--', '--sem-config', '--semente=7', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
-    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido --anos=150' } default { "--ritmo=$Cenario" } }))
+    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } default { "--ritmo=$Cenario" } }))
 Start-Sleep -Seconds $Aquecimento
 
 $linhas = @()

@@ -2,6 +2,22 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Ritmos 1x, 10x e 50x
+
+| Ritmo | Hora de jogo | Um dia dura | Tecla |
+|---|---|---|---|
+| Pausa | — | — | 0 (e espaço) |
+| Normal, 1x | 112,5 s | 45 min | 1 |
+| 10x | 11,25 s | 4,5 min | 2 |
+| 50x | 2,25 s | 54 s | 3 |
+| Salto até o próximo acontecimento | — | — | S |
+
+- **Alça:** cada ritmo tem o seu botão, com o atual marcado. O 10x usa o ícone `rapido` e o 50x o `rapido2`, da arte. A dica do botão diz o nome, a tecla e quanto dura um dia (`capturas/ritmos-alca.png`). A escala passou para Ctrl+2, Ctrl+3 e Ctrl+4.
+- **Andar:** o passo acelera 2,5 vezes no 10x e 4 vezes no 50x (teto), e a animação das pernas acompanha. No 50x, o relógio anda de 10 em 10 minutos.
+- **Persistência:** o ritmo fica no `moldura.cfg` e volta na abertura seguinte. Se a ausência passou de um dia real, o jogo abre no normal. `--ritmo=` ainda manda nos testes.
+- **Medido no 50x** (`medicoes/rapido2.json`, 5 min): CPU de 0,171% em média (4,8% de um núcleo), pico de amostra de 0,23%, dentro da meta; 122 MB na coluna "Memória" do Gerenciador de Tarefas.
+- O verificar.ps1 foi atualizado para a alça com 10 botões e passa nos 19 itens.
+
 ## Dica da primeira execução
 
 Na primeira vez que o jogo abre, um pergaminho sobre o mundo explica três coisas: o gesto do poder (escolher na alça e segurar sobre o mundo; o botão direito cancela), como esconder (tecla H ou o último botão da alça) e onde fica o ícone para voltar (a bandeja do Windows, junto ao relógio, ou a seta dos ícones ocultos). A dica some com um clique ou sozinha em 40 s e não volta mais: a marca fica em `user://dicas.cfg`, separada do `moldura.cfg`. Os testes com `--sem-config` não a mostram; `--primeira-vez` força a dica (`capturas/primeira-vez.png`). Conferido: depois de uma execução normal, o `dicas.cfg` fica com `primeira_vez=true`.

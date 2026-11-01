@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cpe5yyy77hip6"
+path="res://.godot/imported/caca_no_pau_porco.png-8eb58bcce39c9fe5fd5ea444b0923e66.image"
+
+[deps]
+
+source_file="res://arte/objetos/caca_no_pau_porco.png"
+dest_files=["res://.godot/imported/caca_no_pau_porco.png-8eb58bcce39c9fe5fd5ea444b0923e66.image"]
+
+[params]
+

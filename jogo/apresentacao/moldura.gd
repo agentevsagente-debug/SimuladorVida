@@ -24,7 +24,8 @@ extends Node2D
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
 ##                                        outra janela em foco, via processo
 ##                                        auxiliar em PowerShell
-##   --ritmo=pausa|normal|rapido          ritmo inicial do tempo
+##   --ritmo=pausa|normal|rapido|rapido2  ritmo inicial do tempo (rapido = 10x, rapido2 = 50x);
+##                                        sem ele, vale o último guardado no moldura.cfg
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
@@ -80,17 +81,20 @@ func _ready() -> void:
 	interface.esconder.connect(esconder)
 	interface.escala.connect(func(d): _aplicar_escala(escala + d))
 	vista.pessoa_clicada.connect(_acompanhar)
-	if vista.sim:
-		match args.get("ritmo", ""):
-			"pausa":
-				vista.sim.definir_ritmo(Simulacao.Ritmo.PAUSA)
-			"rapido":
-				vista.sim.definir_ritmo(Simulacao.Ritmo.RAPIDO)
-		_mostrar_ausencia()
-
+	interface.ritmo_mudou.connect(_guardar_config)
 	var config := ConfigFile.new()
 	if _usar_config:
 		config.load(ARQUIVO_CONFIG)
+	if vista.sim:
+		# o ritmo escolhido volta na abertura seguinte, salvo depois de mais de
+		# um dia real fora: aí o jogo abre no normal, para o jogador ver o que mudou
+		var a: Dictionary = vista.sim.ausencia
+		var longe: bool = a.get("teto_atingido", false) or a.get("passos", 0) * Simulacao.Mundo.SEGUNDOS_POR_PASSO > 86400.0
+		var ritmo: String = args.get("ritmo", "" if longe else config.get_value("moldura", "ritmo", ""))
+		var r: int = Simulacao.NOME_RITMO.find_key(ritmo) if Simulacao.NOME_RITMO.values().has(ritmo) else -1
+		if r >= 0:
+			vista.sim.definir_ritmo(r)
+		_mostrar_ausencia()
 	var nova: int = config.get_value("moldura", "escala", _escala_pela_tela(tela))
 	if args.has("escala"):
 		nova = int(args["escala"])
@@ -189,13 +193,14 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouse:
 		interface.tratar(event, event.position, FAIXA)
 	elif event is InputEventKey and event.pressed and not event.echo:
+		if event.ctrl_pressed and event.keycode in [KEY_2, KEY_3, KEY_4]:  # 2, 3 e 4 sozinhos são ritmos
+			_aplicar_escala(event.keycode - KEY_0)
+			return
 		if interface.tecla(event.keycode):
 			return
 		match event.keycode:
 			KEY_H, KEY_F8:
 				esconder()
-			KEY_2, KEY_3, KEY_4:
-				_aplicar_escala(event.keycode - KEY_0)
 			KEY_Q:
 				if event.ctrl_pressed:
 					sair()
@@ -337,6 +342,8 @@ func _guardar_config() -> void:
 	var config := ConfigFile.new()
 	config.set_value("moldura", "escala", escala)
 	config.set_value("moldura", "posicao", get_window().position)
+	if vista.sim:
+		config.set_value("moldura", "ritmo", Simulacao.NOME_RITMO[vista.sim.ritmo])
 	config.save(ARQUIVO_CONFIG)
 
 

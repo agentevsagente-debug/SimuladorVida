@@ -16,6 +16,7 @@ extends RefCounted
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Terreno = preload("res://apresentacao/terreno.gd")
+const Simulacao = preload("res://apresentacao/simulacao.gd")
 
 const LARGURA := 480
 const PASSO_ANDAR := 9.0      # px/s médio de quem anda; cada pessoa varia de 0,8 a 1,2 disto
@@ -23,6 +24,8 @@ const ESPACO := 7             # distância mínima entre pessoas paradas lado a 
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
+## Quanto o passo e a animação de andar aceleram em cada ritmo (10x e 50x).
+const ACELERA := {Simulacao.Ritmo.RAPIDO: 2.5, Simulacao.Ritmo.MUITO_RAPIDO: 4.0}
 ## Cor da roupa do povo -> índice em opcoes_troca().roupas ([28 turquesa, 27 rosa, 29 lilás]).
 const ROUPAS := {"turquesa": 0, "rosa": 1, "lilas": 2}
 ## Microanimações de quem está parado: folha, quadros, segundos.
@@ -79,7 +82,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 	var r := []
 	objetos = []
 	var vivos := {}
-	var rapido: float = 4.0 if sim.ritmo == sim.Ritmo.RAPIDO else 1.0
+	# andam mais depressa nos ritmos rápidos, com teto, para ninguém "teletransportar"
+	var rapido: float = ACELERA.get(sim.ritmo, 1.0)
 	for p in sim.pessoas:
 		var id: int = p["id"]
 		vivos[id] = true
@@ -154,7 +158,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 	var crianca: bool = p["crianca"]
 	var idoso: bool = p["idade"] >= 55 and not crianca
 	var feminina: bool = p["sexo"] == "f"
-	var fase := relogio + id * 0.37
+	# andando num ritmo rápido, as pernas acompanham o passo maior
+	var fase: float = relogio * (ACELERA.get(sim.ritmo, 1.0) if anda else 1.0) + id * 0.37
 	var cena: String = t.cena.get("tipo", "")
 	var q4 := int(fase * 5.0) % 4
 	if crianca:

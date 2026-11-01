@@ -3,7 +3,8 @@ extends Node2D
 ## cursor, o leitor da crônica, o gesto dos poderes e mensagens curtas.
 ##
 ## A alça fica na faixa de cima (18 px). Ela é discreta: mostra o poder e o
-## ritmo atuais e só se abre para mostrar as opções quando o jogador clica.
+## ritmo atuais; os poderes só se abrem quando o jogador clica. Os ritmos têm
+## um botão cada (pausa, 1x, 10x, 50x e salto), com o atual marcado.
 ## Os ícones só aparecem sobre fundo escuro (a alça ou uma caixa de dica),
 ## nunca direto sobre o céu.
 ##
@@ -14,6 +15,7 @@ signal largura_mudou
 signal arrastar
 signal esconder
 signal escala(delta: int)
+signal ritmo_mudou
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
@@ -32,9 +34,14 @@ const PODER_NUCLEO := {"chuva": "chuva", "raio": "raio", "fogo": "fogo", "fartur
 const NOME_PODER := {"chuva": "Chuva", "raio": "Raio", "fogo": "Fogo", "fartura": "Fartura",
 	"erguer_terra": "Erguer a terra", "sonho": "Sonho", "seca": "Seca", "diluvio": "Dilúvio",
 	"terremoto": "Terremoto", "pressagio": "Presságio", "cura": "Cura"}
-const RITMOS := ["pausa", "normal", "rapido", "salto"]
-const NOME_RITMO := {"pausa": "Pausa", "normal": "Ritmo normal", "rapido": "Ritmo rápido",
-	"salto": "Saltar ao próximo acontecimento"}
+const RITMOS := ["pausa", "normal", "rapido", "rapido2", "salto"]
+const NOME_RITMO := {"pausa": "Pausa (0)", "normal": "Ritmo normal, 1x (1)", "rapido": "Ritmo 10x (2)",
+	"rapido2": "Ritmo 50x (3)", "salto": "Saltar ao próximo acontecimento (S)"}
+## Quanto tempo real dura um dia de jogo em cada ritmo (dica do botão).
+const DIA_REAL := {"normal": "um dia dura 45 min", "rapido": "um dia dura 4,5 min", "rapido2": "um dia dura 54 s",
+	"pausa": "o tempo parado"}
+const RITMO_DE := {"pausa": Simulacao.Ritmo.PAUSA, "normal": Simulacao.Ritmo.NORMAL,
+	"rapido": Simulacao.Ritmo.RAPIDO, "rapido2": Simulacao.Ritmo.MUITO_RAPIDO}
 const NOME_GRAU := {"sinal": "um sinal", "milagre": "um milagre", "imposicao": "uma imposição"}
 const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "curioso",
 	"ambicioso": "ambicioso", "rancoroso": "rancoroso", "desconfiado": "desconfiado",
@@ -51,7 +58,7 @@ const DA_ESTACAO := {"primavera": "da primavera", "verão": "do verão", "outono
 
 var vista: Node2D
 var poder := ""            # poder escolhido ("" = nenhum)
-var aberto := ""           # "poderes", "ritmo" ou ""
+var aberto := ""           # "poderes" ou ""
 var botoes: Array = []     # [{id, rect, icone, selecionado}]
 
 var _icones := {}
@@ -116,11 +123,8 @@ func _montar_botoes() -> void:
 			lista.append({"id": "poder:" + p, "icone": p, "selecionado": p == poder})
 	else:
 		lista.append({"id": "poderes", "icone": poder if poder != "" else "chuva", "selecionado": poder != ""})
-	if aberto == "ritmo":
-		for r in RITMOS:
-			lista.append({"id": "ritmo:" + r, "icone": r, "selecionado": r == ritmo})
-	else:
-		lista.append({"id": "ritmo", "icone": ritmo, "selecionado": false})
+	for r in RITMOS:
+		lista.append({"id": "ritmo:" + r, "icone": r, "selecionado": r == ritmo})
 	lista.append({"id": "cronica", "icone": "cronica", "selecionado": _cronica.visible})
 	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo not in ["fim", "boas_vindas"]})
 	lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
@@ -143,12 +147,7 @@ func _mundo_vazio() -> bool:
 func _ritmo_atual() -> String:
 	if vista.sim == null:
 		return "normal"
-	match vista.sim.ritmo:
-		Simulacao.Ritmo.PAUSA:
-			return "pausa"
-		Simulacao.Ritmo.RAPIDO:
-			return "rapido"
-	return "normal"
+	return Simulacao.NOME_RITMO[vista.sim.ritmo]
 
 
 func _botao_em(p: Vector2) -> Dictionary:
@@ -166,19 +165,14 @@ func _apertar(id: String) -> void:
 		poder = "" if p == poder else p
 		aberto = ""
 		_avisar(NOME_PODER[poder] + ": segure sobre o mundo" if poder != "" else "Nenhum poder escolhido")
-	elif id == "ritmo":
-		aberto = "" if aberto == "ritmo" else "ritmo"
 	elif id.begins_with("ritmo:"):
 		aberto = ""
-		match id.substr(6):
-			"pausa":
-				vista.sim.definir_ritmo(Simulacao.Ritmo.PAUSA)
-			"normal":
-				vista.sim.definir_ritmo(Simulacao.Ritmo.NORMAL)
-			"rapido":
-				vista.sim.definir_ritmo(Simulacao.Ritmo.RAPIDO)
-			"salto":
-				_saltar()
+		var r := id.substr(6)
+		if r == "salto":
+			_saltar()
+		else:
+			vista.sim.definir_ritmo(RITMO_DE[r])
+			ritmo_mudou.emit()
 	elif id == "criar_povo":
 		poder = "" if poder == "criar_povo" else "criar_povo"
 		_avisar("Criar um povo: clique onde ele vai nascer" if poder != "" else "Nenhum poder escolhido")
@@ -361,6 +355,16 @@ func tecla(keycode: int) -> bool:
 			_avisar("Modo discreto ligado" if vista.modo_discreto else "Modo discreto desligado")
 		KEY_SPACE:
 			_apertar("ritmo:normal" if vista.sim.ritmo == Simulacao.Ritmo.PAUSA else "ritmo:pausa")
+		KEY_0, KEY_KP_0:
+			_apertar("ritmo:pausa")
+		KEY_1, KEY_KP_1:
+			_apertar("ritmo:normal")
+		KEY_2, KEY_KP_2:
+			_apertar("ritmo:rapido")
+		KEY_3, KEY_KP_3:
+			_apertar("ritmo:rapido2")
+		KEY_S:
+			_apertar("ritmo:salto")
 		KEY_ESCAPE:
 			if _estante.visible:
 				_estante.voltar()
@@ -371,8 +375,6 @@ func tecla(keycode: int) -> bool:
 				_carregando = false
 				poder = ""
 				_montar_botoes()
-		KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6:
-			return false
 		_:
 			return false
 	return true
@@ -422,20 +424,20 @@ func avancar(delta: float) -> void:
 	var assinatura := [_texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio()]
 	if assinatura != _ultimo_desenho:
-		if _ultimo_desenho.size() > 4 and (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]
+		if _ultimo_desenho.size() <= 4 or (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]
 				or assinatura[6] != _ultimo_desenho[6]):
 			_montar_botoes()
 		_ultimo_desenho = assinatura
 		queue_redraw()
 
 
-## "14:15": a hora do mundo, com os minutos da fração do passo. No ritmo rápido,
-## de 10 em 10 minutos, para não piscar; na pausa, parado.
+## "14:15": a hora do mundo, com os minutos da fração do passo. No 50x, de 10
+## em 10 minutos, para não piscar; na pausa, parado.
 func _texto_relogio() -> String:
 	if vista.sim == null or vista.sim.tempo.is_empty():
 		return ""
 	var f: float = vista.sim.fracao()
-	var minutos := int(f * 6.0) * 10 if vista.sim.ritmo == Simulacao.Ritmo.RAPIDO else int(f * 60.0)
+	var minutos := int(f * 6.0) * 10 if vista.sim.ritmo == Simulacao.Ritmo.MUITO_RAPIDO else int(f * 60.0)
 	return "%02d:%02d" % [int(vista.sim.tempo["hora"]), mini(minutos, 59)]
 
 
@@ -529,7 +531,11 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 	if id.begins_with("poder:"):
 		nome = NOME_PODER[id.substr(6)]
 	elif id.begins_with("ritmo:"):
-		nome = NOME_RITMO[id.substr(6)]
+		var r := id.substr(6)
+		if DIA_REAL.has(r):
+			_mostrar_dica([NOME_RITMO[r], DIA_REAL[r]], -1, canto + Vector2(4, 22), false)
+			return
+		nome = NOME_RITMO[r]
 	else:
 		nome = {"poderes": "Poderes", "ritmo": "Ritmo do tempo", "cronica": "Crônica (C)",
 			"criar_povo": "Criar um povo novo", "estante": "Estante de crônicas (E)",
