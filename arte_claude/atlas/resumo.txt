@@ -1,4 +1,4 @@
-comum: 512x512, 236 peças, 1024 KB
+comum: 512x512, 238 peças, 1024 KB
 pessoas_inverno: 256x256, 75 peças, 256 KB
 nuvens: 256x128, 45 peças, 128 KB
 estacao_primavera: 256x128, 68 peças, 128 KB
