@@ -13,6 +13,7 @@ const Cronista = preload("cronista.gd")
 const Rotina = preload("rotina.gd")
 const Antigos = preload("antigos.gd")
 const Dica = preload("dica.gd")
+const Gramatica = preload("gramatica.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40
@@ -3989,6 +3990,8 @@ var _dicas: Dictionary = {}       # id -> dica, nesta hora
 var _dicas_passo := -1
 var _dica_fontes: Dictionary = {} # id -> candidatos do dia (Dica.candidatos)
 var _dica_fontes_dia := -1
+var _dica_hoje: Dictionary = {}   # id -> {bloco de 2 horas: [pensamentos]}: ninguém repete a frase no mesmo dia
+var _dicas_usadas: Dictionary = {}  # pensamento desta hora -> povo de quem pensa (todos os povos já consultados)
 
 
 func dica(pessoa_id: int) -> Dictionary:
@@ -3997,9 +4000,11 @@ func dica(pessoa_id: int) -> Dictionary:
 		return {}
 	if _dicas_passo != passo:
 		_dicas.clear()
+		_dicas_usadas.clear()
 		_dicas_passo = passo
 	if _dica_fontes_dia != dia_abs():
 		_dica_fontes.clear()
+		_dica_hoje.clear()
 		_dica_fontes_dia = dia_abs()
 	var g: Grupo = grupo(p.grupo)
 	var fichas := {}
@@ -4017,8 +4022,11 @@ func dica(pessoa_id: int) -> Dictionary:
 	return d
 
 
+## O povo de uma vez, em ordem de id. As frases desta hora valem para todos os povos já
+## consultados (`_dicas_usadas`): entre povos, depende de qual foi consultado antes, o que não
+## mexe no mundo. Cada pessoa evita o que já pensou hoje em outro bloco de 2 horas.
 func _pensar_povo(g: Grupo, fichas: Dictionary, contexto: Dictionary) -> void:
-	var usadas := {}
+	var bloco: int = passo / Dica.BLOCO
 	var ids: Array = g.membros.duplicate()
 	ids.sort()
 	for id in ids:
@@ -4027,10 +4035,63 @@ func _pensar_povo(g: Grupo, fichas: Dictionary, contexto: Dictionary) -> void:
 		var dc := Dica.new(self, pessoas[id], g, contexto)
 		if not _dica_fontes.has(id):
 			_dica_fontes[id] = dc.candidatos()
-		var escolha: Array = dc.escolher(fichas.get(id, {}), _dica_fontes[id], usadas)
+		var hoje: Dictionary = _dica_hoje.get(id, {})
+		var proibidas := {}
+		for b in hoje:
+			if b != bloco:
+				for t in hoje[b]:
+					proibidas[t] = true
+		var ficha: Dictionary = fichas.get(id, {})
+		var escolha: Array = dc.escolher(ficha, _dica_fontes[id], _dicas_usadas, proibidas)
+		var d := {"pensamento": escolha[0], "humor": escolha[1], "sonho": ""}
 		if not escolha[0].is_empty():
-			usadas[escolha[0]] = true
-		_dicas[id] = {"pensamento": escolha[0], "humor": escolha[1]}
+			_dicas_usadas[escolha[0]] = g.id
+			if ficha.get("acao", "") == "dormir":
+				# O sonho, como narração: "sonhando com Vepeik".
+				d["sonho"] = "sonhando" + escolha[0].substr(5) if escolha[0].begins_with("Sonha") else escolha[0].to_lower()
+			else:
+				if not hoje.has(bloco):
+					hoje[bloco] = []
+				if not hoje[bloco].has(escolha[0]):
+					hoje[bloco].append(escolha[0])
+				_dica_hoje[id] = hoje
+		_dicas[id] = d
+
+
+## A dica de uma cabana: quem mora ali, quem dorme agora e o sonho de um deles, para a
+## apresentação mostrar à noite, quando quem dorme não é desenhado. {} se não há cabana em x.
+## {x, grupo, moram: [ids], dormem: [ids], texto: "Dormem aqui: Tamu e Peos" (ou "Moram aqui:
+## ..." quando ninguém dorme), quem_sonha: id (-1 se ninguém sonha), sonho: "Tamu, sonhando com
+## Vepeik" ("" se ninguém sonha)}.
+func dica_cabana(x: float) -> Dictionary:
+	var cab: Dictionary = {}
+	for o in construcoes():
+		if o["tipo"] == "cabana" and not o.get("ruina", false) and absf(o["x"] - x) <= o["largura"] / 2.0:
+			cab = o
+			break
+	if cab.is_empty():
+		return {}
+	var ro = rotina()
+	var moram: Array = []
+	var dormem: Array = []
+	for f in pessoas_visiveis():
+		if f["grupo"] == cab["grupo"] and absf(ro.casa_de(f["id"]) - cab["x"]) <= cab["largura"] / 2.0:
+			moram.append(f["id"])
+			if f["acao"] == "dormir":
+				dormem.append(f["id"])
+	moram.sort()
+	dormem.sort()
+	var nomes: Array = (dormem if not dormem.is_empty() else moram).map(func(id): return pessoas[id].nome)
+	var r := {"x": cab["x"], "grupo": cab["grupo"], "moram": moram, "dormem": dormem, "quem_sonha": -1, "sonho": "",
+		"texto": ("Dormem aqui: " if dormem.size() > 1 else "Dorme aqui: ") + Gramatica.lista(nomes) if not dormem.is_empty()
+			else (("Moram aqui: " if moram.size() > 1 else "Mora aqui: ") + Gramatica.lista(nomes) if not moram.is_empty() else "Ninguém mora aqui")}
+	for id in dormem:
+		var s2: String = dica(id).get("sonho", "")
+		if not s2.is_empty():
+			r["quem_sonha"] = id
+			r["sonho"] = pessoas[id].nome + ", " + s2
+			break
+	return r
 
 
 func posicao_de(pessoa_id: int) -> float:

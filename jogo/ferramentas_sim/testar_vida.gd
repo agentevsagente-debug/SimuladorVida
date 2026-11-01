@@ -17,6 +17,7 @@ extends SceneTree
 ## - de madrugada (0h às 4h), a cada hora, algo além do vigia: alguém que acorda, o fogo em
 ##   brasas, um bicho da noite.
 ## - ninguém parado a menos de 6 px do centro da fogueira do seu povo;
+## - durante a caçada, ninguém de fora dela parado a menos de 20 px do porco;
 ## - de dia (6h às 17h), ninguém de pé, deitado, sentado no fogo ou conversando no mesmo ponto
 ##   por mais de 21 min seguidos, fora das cenas;
 ## - à tarde, das 12h45 às 16h45, em média uma conversa a cada 20 min de jogo ou menos, num
@@ -81,12 +82,21 @@ func _horas(semente: int, dia: int) -> Array:
 		var no_fogo := 0
 		var legivel := false
 		for cn in m.cenas_ativas():
-			if cn["tipo"] in ["briga_criancas", "tombo", "animal", "perdido", "discussao", "cacada", "caca_vazia"]:
+			if cn["tipo"] in ["briga_criancas", "tombo", "animal", "perdido", "discussao", "cacada", "caca_vazia", "pesca_lanca",
+					"coleta_morro", "lavagem"]:
 				legivel = true
 		var madrugada := false
 		for cn in m.cenas_ativas():
 			if cn["tipo"] in ["brasas", "bicho_noturno", "acordou"]:
 				madrugada = true
+		# Durante a caçada, onde está o porco nesta hora (para ninguém de fora parar perto dele).
+		var porcos: Array = []
+		for cn in m.cenas_ativas():
+			if cn["tipo"] == "cacada":
+				for e in cn["etapas"]:
+					if e["x_bicho"] >= 0.0 and e["etapa"] != "fuga" and e["fim"] > h and e["ini"] < h + 1:
+						porcos.append([e["x_bicho"], cn["participantes"], h * 60.0 + maxf(0.0, e["ini"] - h) * 60.0, h * 60.0 + minf(1.0, e["fim"] - h) * 60.0])
+		var perto_do_porco := 0
 		var xmin := 999.0
 		var xmax := -1.0
 		var parado_demais := 0
@@ -131,6 +141,15 @@ func _horas(semente: int, dia: int) -> Array:
 				anda = anda or absf(tr["x0"] - tr["x1"]) > 0.5
 			if anda:
 				movendo += 1
+			for pc in porcos:
+				if pc[1].has(p["id"]):
+					continue
+				for tr in p["agenda"]:
+					var a0: float = h * 60.0 + tr["de"] * 60.0
+					var a1: float = h * 60.0 + tr["ate"] * 60.0
+					if tr["x0"] == tr["x1"] and a1 > pc[2] and a0 < pc[3] and absf(tr["x0"] - pc[0]) < 20.0:
+						perto_do_porco += 1
+						break
 			for tr in p["agenda"]:
 				if tr["x0"] == tr["x1"] and fogos.has(p["grupo"]) and absf(tr["x0"] - fogos[p["grupo"]]) < 5.99:
 					no_fogo += 1
@@ -165,6 +184,8 @@ func _horas(semente: int, dia: int) -> Array:
 			problemas.append("ninguém acordado")
 		if movendo == 0:
 			problemas.append("ninguém mudou de lugar")
+		if perto_do_porco > 0:
+			problemas.append("%d de fora da caçada parados a menos de 20 px do porco" % perto_do_porco)
 		if no_fogo > 0:
 			problemas.append("%d em cima da fogueira" % no_fogo)
 		if h >= 6 and h <= 20 and not legivel:
