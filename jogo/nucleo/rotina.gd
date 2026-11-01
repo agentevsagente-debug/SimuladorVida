@@ -1303,7 +1303,8 @@ var _porcos: Array = []    # as caçadas do dia: {x0, x1, ini, fim, cacadores}, 
 
 func _cacada(g, c: Dictionary) -> void:
 	var adultos := _embaralhados(_adultos(g, 16, 50), 901)
-	if adultos.size() < 3 or ruido(g.id, dia, 900) > 0.9:
+	# Um dia em cada três, mais ou menos, não há caçada: entra uma cena do começo da tarde.
+	if adultos.size() < 3 or ruido(g.id, dia, 900) > 0.67:
 		c["sem_cacada"] = true
 		return
 	var n := clampi(adultos.size() / 3, 2, 4)

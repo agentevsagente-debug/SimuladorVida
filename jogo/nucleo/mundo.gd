@@ -793,7 +793,8 @@ func _refeicao() -> void:
 			razao = clampf(g.estoque / necessidade, 0.0, 1.0)
 		g.estoque = maxf(0.0, g.estoque - necessidade)
 		var sem_abrigo := 0.0
-		if estacao() == 3:
+		# Aquecido pelo fogo brando do deus: ninguém sofre o frio por uns dias.
+		if estacao() == 3 and dia_abs() >= aquecidos.get(g.id, -1):
 			var lugares = g.abrigos * PESSOAS_POR_ABRIGO
 			if membros.size() > lugares:
 				sem_abrigo = float(membros.size() - lugares) / membros.size()
@@ -2819,7 +2820,7 @@ func _necessidades(g: Grupo) -> Array:
 		r.append("fome")
 	if g.doenca_evento >= 0:
 		r.append("doenca")
-	if inverno_rigoroso and g.abrigos * PESSOAS_POR_ABRIGO < g.membros.size():
+	if inverno_rigoroso and g.abrigos * PESSOAS_POR_ABRIGO < g.membros.size() and dia_abs() >= aquecidos.get(g.id, -1):
 		r.append("frio")
 	if dia_abs() - g.ultimo_ataque_sofrido < 20:
 		r.append("guerra")
@@ -3288,6 +3289,14 @@ func _poder(c: Dictionary) -> Dictionary:
 				if g.zona != z.chave and g.em_fome and not ali.is_empty():
 					g.hostilidade[ali[0].id] = g.hostilidade.get(ali[0].id, 0.0) + 1.5
 		"fogo":
+			if inten < FOGO_BRANDO and rep < 2:
+				# O gesto curto: o fogo desce manso, acende as fogueiras e aquece o povo, sem queimar.
+				e = registrar("fogo_brando", "divina", 5 if inverno_rigoroso else 3, z.chave, g0_id, [], dados)
+				for g in ali:
+					aquecidos[g.id] = dia_abs() + DIAS_AQUECIDO
+					_impressionar(g, peso * (1.0 if inverno_rigoroso else 0.4), "fogo", e, true)
+					_resolver_prece(g, "frio", e)
+				return {"ok": true, "grau": grau, "evento": e.id, "zona": z.chave, "alvo": -1}
 			var f := 0.3 + 0.6 * inten
 			z.comida *= 1.0 - f
 			z.madeira *= 1.0 - f
@@ -4165,7 +4174,7 @@ func preces_abertas() -> Array:
 				"necessidade": nec, "desde": pr["dia"], "dias": dia_abs() - pr["dia"],
 				"x": posicao_de(pr["autor"]), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1],
 				"x_povo": _fogo_do_povo(g), "inimigo": e.dados.get("inimigo", -1), "atendem": PODERES_QUE_ATENDEM.get(nec, []),
-				"contrariam": PODERES_QUE_CONTRARIAM.get(nec, [])})
+				"contrariam": PODERES_QUE_CONTRARIAM.get(nec, []), "fogo_brando": nec == "frio"})
 	_preces = r
 	_preces_chave = chave
 	return r
@@ -4210,13 +4219,20 @@ func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary
 
 
 ## Os poderes que atendem cada prece e os que a contrariam (para a apresentação sugerir; veja
-## `preces_abertas`). O frio e os pedidos pequenos não têm poder que os atenda.
+## `preces_abertas`). O frio é atendido pelo fogo brando (intensidade abaixo de FOGO_BRANDO); o
+## fogo forte o contraria. Os pedidos pequenos não têm poder que os atenda.
 const PODERES_QUE_ATENDEM := {"seca": ["chuva"], "fome": ["fartura"], "doenca": ["cura"], "guerra": ["raio", "terremoto"],
-	"frio": [], "banal": []}
+	"frio": ["fogo"], "banal": []}
 const PODERES_QUE_CONTRARIAM := {"seca": ["seca", "fogo", "diluvio", "terremoto"], "fome": ["seca", "fogo", "diluvio", "terremoto"],
 	"doenca": ["raio", "fogo", "diluvio", "terremoto"], "guerra": ["fogo", "diluvio", "terremoto", "raio"],
 	"frio": ["diluvio", "terremoto", "fogo", "raio"], "banal": ["seca", "fogo", "diluvio", "terremoto", "raio"]}
 const ESPERA_PARA_REZAR := 10   # dias depois de uma prece sem resposta ou contrariada
+## O fogo em intensidade baixa (o gesto curto, abaixo de FOGO_BRANDO) não queima: acende as
+## fogueiras e aquece o povo da zona por DIAS_AQUECIDO dias (ninguém sofre o frio), e atende a
+## prece de frio. Em intensidade média e alta, o fogo queima.
+const FOGO_BRANDO := 0.35
+const DIAS_AQUECIDO := 6
+var aquecidos: Dictionary = {}   # id do povo -> dia absoluto até quando está aquecido pelo fogo brando
 var preces_fechadas: Dictionary = {}   # id do povo -> {necessidade: dia em que a prece fechou sem ser atendida}
 
 
@@ -4245,7 +4261,8 @@ func _preces_diante_do_gesto(e: Evento, poder: String) -> void:
 			if not g.preces.has(nec):
 				continue
 			var pr: Dictionary = g.preces[nec]
-			var ferido: bool = (poder in ["seca", "fogo", "diluvio", "terremoto"] and e.zona == g.zona) or (poder == "raio" and mortos.has(g.id))
+			var ferido: bool = (poder in ["seca", "fogo", "diluvio", "terremoto"] and e.zona == g.zona and e.tipo != "fogo_brando") \
+				or (poder == "raio" and mortos.has(g.id))
 			if nec == "guerra" and not ferido:
 				var ini: Grupo = grupo(evento(pr["evento"]).dados.get("inimigo", -1))
 				if ini != null and not ini.extinto and e.zona == ini.zona and (poder in ["seca", "fogo", "diluvio", "terremoto"]
