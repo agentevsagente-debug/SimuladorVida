@@ -468,7 +468,7 @@ Os quadros têm 8 × 12, olhando para a direita, com a base na última linha. S�
 **Ruínas cobertas pelo mato.** Toda ruína ganhou 3 graus, `<ruina>_mato_1`, `_mato_2` e `_mato_3`, com o mesmo tamanho e encaixe da ruína.
 - **Grau 1:** capim na base e as primeiras trepadeiras.
 - **Grau 2:** trepadeiras até o meio, moitas encostadas e musgo nos topos.
-- **Grau 3:** trepadeiras por quase tudo, mais moitas e uma muda brotando em cima.
+- **Grau 3:** trepadeiras até uns 3/4 da altura, mais moitas e uma muda brotando em cima. O alto das paredes, a cumeeira e as colunas continuam à mostra: a ruína tem de ler como o lugar onde alguém viveu, e não como uma moita (revisão do mundo vazio).
 
 São 17 ruínas: `cabana_abandonada`, `casa_ruina`, `tumulo`, `pedra_erguida` e todas as `_ruina` dos estágios 3 a 6, mais o `barco_naufragado`.
 
@@ -817,6 +817,15 @@ Um estandarte pequeno no alto da casa principal de cada povo, na cor da roupa do
 | `objetos/estandarte_<roupa>_<símbolo>_2q` | 4 × 8 | 2 | `<roupa>` é `turquesa`, `rosa` ou `lilas` e `<símbolo>` é `sol`, `lua` ou `arvore`, da `aparencia` do povo: são 9 folhas, com as cores já prontas (não passe pela troca). O quadro 0 é a bandeira parada; o 1, a ponta solta caída ao vento. Alterne a cada 0,5 a 1 s quando venta (mais rápido com chuva e tempestade) ou fique no 0. O mastro é a coluna 0 e a base é a linha 7 (o pé do mastro): ponha-a na cumeeira da casa principal, no meio do telhado, em todos os estágios (na cabana do estágio 1, na ponta dos galhos). Espelhe junto com a casa, se for o caso. |
 
 A bandeira tem o rabo de andorinha na ponta solta e a barra de baixo mais escura. Os símbolos: o sol é uma cruz dourada com o centro claro, a lua é um crescente claro e a árvore é a copa verde com o tronco. De noite, passa pela tabela `noite`, como as casas. `culturas/amostra_estandartes_4x.png` mostra os 9, parados e ao vento, sobre o dia, o entardecer e a noite.
+
+## 28. O recomeço: a primeira fogueira do povo novo (`acoes/recomeco.py`)
+
+Quando o jogador cria um povo no mundo vazio, o povo chega com a trouxa (`acoes/andar_trouxa_4q`), acende a primeira fogueira e só então ergue as cabanas.
+
+| Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|
+| `acoes/acender_fogo_4q` | 12 × 12 | 4 | ajoelhado, gira o pau entre as mãos sobre a tábua (quadros 0 e 1, alternando por uns 4 s), sai um fio de fumaça (2) e ele se curva para soprar a brasa (3, uns 2 s). O corpo fica nas colunas 0 a 7 e a tábua nas colunas 7 a 11: ponha a coluna 9 a uns 2 px à esquerda do centro da fogueira. Só o estágio 1 (o povo novo), com a roupa de inverno em `estacoes/inverno/acoes/`. |
+| `estagio1/fogueira_nascendo_4q` | 16 × 16 | 4 | o mesmo encaixe da `fogueira_acesa_4q`: a lenha com a palha e o fio de fumaça (0), a brasa (1), a chama pequena (2) e a chama crescendo (3). Acompanhe os quadros de quem acende: 0 e 1 durante o giro, 2 e 3 enquanto ele sopra. Depois, troque pela `fogueira_acesa_4q`. |
 
 ## Critérios
 

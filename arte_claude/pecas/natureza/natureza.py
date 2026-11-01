@@ -37,7 +37,10 @@ def ler(caminho):
 
 def cobrir(px, grau, semente):
     """Grau 1: capim na base e as primeiras trepadeiras. Grau 2: trepadeiras até o meio e
-    musgo nos topos. Grau 3: trepadeiras por quase tudo, musgo e uma muda brotando em cima."""
+    musgo nos topos. Grau 3: trepadeiras até uns 3/4 da altura, musgo e uma muda brotando em
+    cima. Mesmo no grau 3, o alto das paredes, a cumeeira e as colunas continuam à mostra: a
+    ruína tem de ler como o lugar onde alguém viveu, e não como uma moita (revisão do mundo
+    vazio, antes da auditoria 9)."""
     rng = random.Random(semente * 10 + grau)
     h, w = len(px), len(px[0])
     out = [l[:] for l in px]
@@ -51,10 +54,10 @@ def cobrir(px, grau, semente):
                 if h - 1 - k >= 0:
                     out[h - 1 - k][x] = 15 if k == 0 or rng.random() < 0.3 else 14
     # trepadeiras subindo
-    n = max(1, w * (1, 3, 7)[grau - 1] // 12)
+    n = max(1, w * (1, 3, 5)[grau - 1] // 12)
     for _ in range(n):
         x = rng.randrange(w)
-        alcance = int(altura * (0.35, 0.65, 0.95)[grau - 1] * rng.uniform(0.7, 1.0))
+        alcance = int(altura * (0.35, 0.55, 0.75)[grau - 1] * rng.uniform(0.7, 1.0))
         y = h - 1
         for _ in range(alcance):
             if not ocupado(x, y):
@@ -77,8 +80,8 @@ def cobrir(px, grau, semente):
                 break
     # moitas encostadas na base
     if grau >= 2:
-        for _ in range(w // (10 if grau == 2 else 5)):
-            cx, r = rng.randrange(w), rng.uniform(1.5, 2.5 + grau * 0.5)
+        for _ in range(w // (10 if grau == 2 else 7)):
+            cx, r = rng.randrange(w), rng.uniform(1.5, 2.5 + grau * 0.3)
             for y in range(h - 1, max(-1, h - 1 - int(r * 1.6)), -1):
                 for x in range(int(cx - r), int(cx + r) + 1):
                     if 0 <= x < w and (x - cx) ** 2 + ((y - (h - 1)) * 0.9) ** 2 <= r * r:
@@ -88,7 +91,7 @@ def cobrir(px, grau, semente):
         for x in range(w):
             for y in range(h):
                 if px[y][x] is not None and (y == 0 or px[y - 1][x] is None):
-                    if rng.random() < (0, 0.35, 0.7)[grau - 1]:
+                    if rng.random() < (0, 0.25, 0.4)[grau - 1]:
                         out[y][x] = 15 if rng.random() < 0.5 else 14
                     break
     # uma muda no alto (grau 3)
