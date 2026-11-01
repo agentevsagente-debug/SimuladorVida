@@ -9,11 +9,9 @@ extends RefCounted
 ## de jogo, com a ação `ida` (andar, lenha...). Blocos fixos (cenas, conversas, crianças
 ## correndo, reza) têm horário marcado; as tarefas do dia preenchem o resto.
 ##
-## A montagem é feita aos poucos, em etapas (`trabalhar`), para caber nas sobras de cada
-## passo: lugares de cada povo, cenas, vida social de cada povo e, por fim, o plano de cada
-## pessoa. Uma rotina pode nascer de outra do mesmo dia (`base`): quem tem as mesmas
-## entradas (assinatura) reaproveita o plano, e só os outros são refeitos. As horas são
-## cortadas em agendas uma de cada vez (`cortar_hora`), na hora em que chegam.
+## `montar` faz tudo de uma vez: lugares de cada povo, cenas, vida social, o plano de cada
+## pessoa e as agendas das 24 horas. O mundo a monta numa thread de trabalho, só lendo o
+## estado; enquanto isso, nada no mundo muda (veja mundo._esperar_rotina).
 
 const Cotidiano = preload("cotidiano.gd")
 
@@ -30,122 +28,63 @@ const PRIORIDADE_CENA := ["guerra", "funeral", "migracao", "casamento", "festa",
 const GERAM_CENA := ["ataque", "separacao", "mudanca", "casamento", "casamento_entre_grupos", "nascimento",
 	"estagio", "agricultura", "tempestade", "terremoto", "terremoto_divino", "diluvio"]
 
-## Custo estimado de uma unidade de trabalho de cada etapa, em microssegundos: uma unidade
-## só começa se cabe no tempo que sobra.
-const CUSTO_US := [400, 2500, 1500, 0, 300]
-
 var eventos_vistos: int = 0
 var m:
 	get:
 		return _wm.get_ref()
 var _wm: WeakRef
 var dia: int = 0
-var ano: int = 1                 # o ano do dia da rotina (a de amanhã é montada hoje)
+var ano: int = 1                 # o ano do dia da rotina
 var ctx: Dictionary = {}         # id do grupo -> contexto (lugares do acampamento)
 var cenas: Array = []            # cenas do dia
 var fixos: Dictionary = {}       # id da pessoa -> [blocos de paradas com horário fixo]
 var planos: Dictionary = {}      # id da pessoa -> plano do dia
-var assinaturas: Dictionary = {} # id da pessoa -> tudo o que o plano dela usou
 var abrigos: Dictionary = {}     # zona -> minuto em que a tempestade mandou todos para casa
-var completa := false            # todas as etapas feitas
-var base = null                  # rotina do mesmo dia cujos planos podem ser reaproveitados
-var reaproveitados := 0
-var refeitos := 0
 var faltou := false              # uma consulta achou alguém sem plano
-var _etapa := 0
 var _grupos: Array = []
-var _i := 0
-var _fila: Array = []
 
 
 static func ruido(a: int, b: int, c: int) -> float:
 	return Cotidiano.ruido(a, b, c)
 
 
-## Uma rotina vazia do dia `p_dia`; `trabalhar` a monta. Com `p_base`, uma rotina do
-## mesmo dia, os planos que continuam valendo são reaproveitados dela.
-func _init(mundo, p_dia: int, p_base = null) -> void:
+## Uma rotina vazia do dia `p_dia`; `montar` a preenche.
+func _init(mundo, p_dia: int) -> void:
 	_wm = weakref(mundo)
 	dia = p_dia
 	ano = p_dia / mundo.DIAS_ANO + 1
-	base = p_base
-	if base != null:
-		abrigos = base.abrigos.duplicate()
 	_grupos = mundo.grupos_vivos()
-	eventos_vistos = mundo.eventos.size()
 
 
-## Faz unidades de trabalho até acabar ou até o relógio (Time.get_ticks_usec) chegar a
-## `fim_us`; com `fim_us` < 0, faz tudo. Devolve true quando a rotina está completa.
-func trabalhar(fim_us: int) -> bool:
-	while not completa:
-		if fim_us >= 0 and Time.get_ticks_usec() + CUSTO_US[_etapa] > fim_us:
-			return false
-		_unidade()
-	return true
+## Monta a rotina inteira. Só lê o mundo: pode rodar numa thread.
+func montar() -> void:
+	for g in _grupos:
+		ctx[g.id] = _contexto(g)
+	_montar_cenas()
+	for g in _grupos:
+		_vida_social(g)
+	var t: Dictionary = m.tempestade
+	if not t.is_empty():
+		abrigos[t["zona"]] = t["inicio"] * 60.0
+	for g in _grupos:
+		for pid in g.membros:
+			planos[pid] = _plano(m.pessoas[pid], g)
+			_linha(pid)
+			_cortar_dia(pid)
+	_grupos = []
 
 
-func _unidade() -> void:
-	match _etapa:
-		0:   # os lugares de um povo
-			if _i < _grupos.size():
-				ctx[_grupos[_i].id] = _contexto(_grupos[_i])
-				_i += 1
-			else:
-				_etapa = 1
-		1:   # as cenas do dia, de todos os povos
-			_montar_cenas()
-			_etapa = 2
-			_i = 0
-		2:   # a vida social de um povo
-			if _i < _grupos.size():
-				_vida_social(_grupos[_i])
-				_i += 1
-			else:
-				_etapa = 3
-		3:   # quem precisa de plano
-			for g in _grupos:
-				_fila.append_array(g.membros)
-			_i = 0
-			_etapa = 4
-		4:   # o plano de uma pessoa
-			if _i < _fila.size():
-				_plano_de(_fila[_i])
-				_i += 1
-			else:
-				completa = true
-				base = null
-
-
-func _plano_de(pid: int) -> void:
-	var p = m.pessoas.get(pid)
-	if p == null or not p.vivo:
-		return
-	var g = m.grupo(p.grupo)
-	if g == null or not ctx.has(g.id):
-		return
-	var a := _assinatura(p, g)
-	if base != null and base.linhas.has(pid) and base.assinaturas.get(pid) == a:
-		planos[pid] = base.planos[pid]
-		linhas[pid] = base.linhas[pid]
-		_inicios[pid] = base._inicios[pid]
-		_agendas[pid] = base._agendas[pid]   # o mesmo array: as horas já cortadas valem para as duas
-		assinaturas[pid] = a
-		reaproveitados += 1
-		return
-	planos[pid] = _plano(p, g)
-	assinaturas[pid] = a
-	_linha(pid)
-	refeitos += 1
-
-
-## Tudo o que o plano da pessoa usa além do sorteio fixo do dia: com a mesma assinatura,
-## o plano sai igual.
-func _assinatura(p, g) -> Array:
-	var idade: int = p.idade(ano)
-	return [ctx[g.id]["assinatura"], g.id, g.estagio, g.zona, g.lider == p.id, g.sacerdote == p.id,
-		0 if idade < 12 else (2 if idade > 60 else 1), p.doente > 0, p.tem("engenhoso"), p.tem("curioso"),
-		p.tem("devoto"), p.saberes.has("metal"), p.saberes.has("escrita"), fixos.get(p.id, [])]
+## Solta tudo o que a rotina guarda. O mundo chama numa thread quando a troca por outra:
+## desmontar dezenas de milhares de listas e dicionários custa vários milissegundos.
+func desmontar() -> void:
+	linhas.clear()
+	_inicios.clear()
+	_agendas.clear()
+	planos.clear()
+	fixos.clear()
+	cenas.clear()
+	ctx.clear()
+	_sono.clear()
 
 
 ## Quantas pessoas vivas ainda não têm plano nesta rotina.
@@ -156,6 +95,26 @@ func faltam() -> int:
 			if not linhas.has(id):
 				n += 1
 	return n
+
+
+var _sono: Dictionary = {}   # id -> a hora dormindo em casa, guardada
+
+
+## Uma hora inteira dormindo em casa: a madrugada antes de a rotina do dia entrar. É a
+## última hora do dia da rotina, quando todos já dormiram.
+func dormindo(pid: int) -> Array:
+	if not _sono.has(pid):
+		var x := 0.0
+		if _agendas.has(pid):
+			var u: Array = agenda(pid, 23)
+			if u.size() == 1 and u[0]["acao"] == "dormir":
+				_sono[pid] = u
+				return u
+			x = u[-1]["x1"]
+		elif m.pessoas.has(pid):
+			x = casa_de(pid)
+		_sono[pid] = [{"de": 0.0, "ate": 1.0, "x0": x, "x1": x, "acao": "dormir", "virado": 0, "cena": {}}]
+	return _sono[pid]
 
 
 ## Onde a pessoa dorme: a casa dela. Não precisa do plano.
@@ -170,7 +129,7 @@ func casa_de(pid: int) -> float:
 # ---------------------------------------------------------------- lugares
 
 func _contexto(g) -> Dictionary:
-	var c := {"g": g, "casas": [], "rocas": [], "fogo": 0.0, "altar": -1.0, "templo": -1.0, "forja": -1.0,
+	var c := {"casas": [], "rocas": [], "fogo": 0.0, "altar": -1.0, "templo": -1.0, "forja": -1.0,
 		"arquivo": -1.0, "celeiro": -1.0, "moinho": -1.0, "barco": -1.0}
 	for o in Cotidiano.construcoes_do_grupo(m, g):
 		match o["tipo"]:
@@ -193,8 +152,6 @@ func _contexto(g) -> Dictionary:
 		c["mata"] = clampf(c["fogo"] + 30.0 * (1.0 if ruido(g.id, dia, 1) < 0.5 else -1.0), mata[0] + 6.0, Cotidiano.FAIXAS["morro"][1] - 8.0)
 	# Onde se pesca: a margem do lago.
 	c["margem"] = Cotidiano.MARGEM + 2.0
-	c["assinatura"] = [c["casas"], c["rocas"], c["fogo"], c["altar"], c["templo"], c["forja"], c["arquivo"],
-		c["celeiro"], c["moinho"], c["barco"], c["faixa"], c["trabalho"], c["mata"]]
 	return c
 
 
@@ -261,8 +218,9 @@ func _dia_do_evento(e) -> int:
 
 func _montar_cenas() -> void:
 	var candidatas: Array = []
-	for i in range(m.eventos.size() - 1, -1, -1):
-		var e = m.eventos[i]
+	var recentes: Array = m.eventos_recentes(dia - 2)
+	for i in range(recentes.size() - 1, -1, -1):
+		var e = recentes[i]
 		var d := _dia_do_evento(e)
 		if d < dia - 2:
 			break
@@ -302,7 +260,7 @@ func _montar_cenas() -> void:
 		var c: Dictionary = ctx[g.id]
 		if g.tem_costume("festa_chuva"):
 			for cos in g.costumes:
-				if cos["tipo"] == "festa_chuva" and m.eventos[cos["evento"]].dia == dia % m.DIAS_ANO:
+				if cos["tipo"] == "festa_chuva" and m.evento(cos["evento"]).dia == dia % m.DIAS_ANO:
 					_cena_danca("festa", g, c, [], "festa:%d:%d" % [g.id, dia], ja)
 		if g.estagio >= 2 and dia % m.DIAS_ANO >= 26 and dia % m.DIAS_ANO <= 29 and not c["rocas"].is_empty():
 			_cena_colheita(g, c, ja)
@@ -890,19 +848,26 @@ func _linha(pid: int) -> Array:
 		ini.append(sg[0])
 	linhas[pid] = segs
 	_inicios[pid] = ini
-	var horas: Array = []
-	horas.resize(24)
-	_agendas[pid] = horas
 	return segs
 
 
-## Corta a hora `h` de todos os que têm plano. O mundo chama no passo em que a hora começa;
-## o que já estava cortado não custa nada.
-func cortar_hora(h: int) -> void:
-	ver_tempestade()
-	for pid in _agendas:
-		var horas: Array = _agendas[pid]
-		if horas[h] == null:
+## As agendas das 24 horas, numa passada só pela linha do tempo; com tempestade, as horas
+## dali em diante são cortadas de novo, com o abrigo por cima.
+func _cortar_dia(pid: int) -> void:
+	var segs: Array = linhas[pid]
+	var horas: Array = []
+	horas.resize(24)
+	for h in 24:
+		horas[h] = []
+	for sg in segs:
+		var h0 := int(sg[0] / 60.0)
+		var h1 := mini(23, int((sg[1] - 0.0001) / 60.0))
+		for h in range(h0, h1 + 1):
+			_pedaco(horas[h], sg, h * 60.0, h * 60.0 + 60.0)
+	_agendas[pid] = horas
+	var abrigo := _abrigo(pid)
+	if abrigo >= 0.0:
+		for h in range(int(abrigo / 60.0), 24):
 			horas[h] = _cortar_hora(pid, h)
 
 
@@ -1036,7 +1001,7 @@ func agenda(pid: int, hora: int) -> Array:
 		var casa := casa_de(pid) if m.pessoas.has(pid) else 0.0
 		var acordado := h >= 5 and h < 22
 		if acordado:
-			m.desempenho["substitutos"] = m.desempenho.get("substitutos", 0) + 1
+			m.desempenho["substitutos"] += 1
 		return [{"de": 0.0, "ate": 1.0, "x0": casa, "x1": casa, "acao": "parado" if acordado else "dormir",
 			"virado": 0, "cena": {}}]
 	var ag = horas[h]

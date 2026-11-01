@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 9, de 01/11/2026 (desempenho da rotina: respostas guardadas por hora e `adiantar_rotina()`). Antes: versão 8 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 10, de 01/11/2026 (sem picos: a rotina do dia é montada numa thread; nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms com a população máxima; `adiantar_rotina()` não é mais preciso). Antes: versão 9 (desempenho da rotina: respostas guardadas por hora e `adiantar_rotina()`). Antes: versão 8 (rotina rica e cenas: o plano do dia de cada pessoa, 11 ações novas, `agenda`, `virado`, `cena` e `cenas_ativas()`). Antes: versão 7 (qualidade de longo prazo: textos curtos para a moldura, peste, profetas, secularização, revoltas). Antes: versão 6 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -179,19 +179,30 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 As crianças correm umas atrás das outras perto do fogo (trechos curtos de `andar` e `parado`). Cada pessoa faz de 2 a 4 atividades por dia, conforme o estágio, o papel, a zona e os traços, e as repete em ciclos até o fim da tarde. Os horários de acordar e dormir variam, e dois dias nunca são iguais (às 10h, só 4% a 6% das pessoas estão no mesmo lugar que no dia anterior). Tudo sai da semente.
 
 **Custo e cache:**
-- A rotina do dia é montada uma vez: os lugares, as cenas e a vida social no começo do dia, e os planos aos poucos, de madrugada.
-- Ela é refeita se cair uma tempestade ou se aparecer no próprio dia um evento que vira cena (nascimento, casamento, ataque, separação...).
+- A rotina do dia (lugares, cenas, vida social, o plano de cada pessoa e as agendas das 24 horas) é montada **numa thread de trabalho**, sem custo para a linha principal. Custa de 60 a 120 ms de thread com a população máxima.
+  - Ela começa no passo que chega às 2h (os eventos do dia acontecem às 0h, e a crônica do ano, à 1h) e entra assim que fica pronta. No mais tardar às 4h, antes de alguém acordar, o passo espera por ela; no jogo, ela fica pronta muito antes.
+  - Até ela entrar, de madrugada, todos aparecem dormindo em casa, como na última hora do dia anterior.
+- No meio do dia, um evento que vira cena (nascimento, casamento, ataque, separação, tempestade...) manda montar a rotina de novo, também na thread. Até a nova ficar pronta (décimos de segundo), vale a anterior.
+- A tempestade não entra no plano: é posta por cima. Da hora em que ela começa até o fim do dia, quem é da zona vai para casa e fica `parado` lá.
+- Enquanto a thread monta, ela só lê o mundo. Por isso `avancar_hora()`, `usar_poder()`, `criar_povo()` e `abandonar()` esperam por ela antes de mudar o mundo. No jogo, isso não acontece: entre dois passos há pelo menos 1,9 s.
+- A rotina só é montada se a apresentação consultou o mundo desde o passo anterior. Avançar muitas horas sem consultar (salto, ausência, testes) não monta nada. A primeira consulta depois de criar ou carregar um mundo, ou de saltar mais de um dia, monta a rotina inteira ali mesmo (~100 ms com a população máxima): é um momento de carregamento.
+- Quem passou a existir no meio do dia antes de a rotina ser refeita (raro) aparece `parado` em casa até a rotina seguinte.
+- Quando sobra tempo no passo, ele mesmo já prepara as pessoas visíveis e as cenas da hora nova. A consulta logo depois só devolve o que está pronto.
 - `pessoas_visiveis()`, `cenas_ativas()`, `construcoes()` e `preces_abertas()` guardam a resposta da hora: **chamar de novo na mesma hora devolve o mesmo array, sem custo**. Não altere esses arrays. Se precisar guardar algo além da hora, copie, porque as fichas das pessoas são reaproveitadas na hora seguinte.
 
-Medido com o maior mundo das sondagens (cerca de 290 pessoas, estágio 6), a consulta completa (as quatro funções) custa:
+Medido com o mundo grande da regressão (287 pessoas, estágio 6), como a apresentação usa o mundo (um passo e, depois, tudo o que `simulacao.gd` lê), em processos novos, menor tempo de 3 execuções:
 
 | Momento | Custo |
 |---|---|
-| Uma vez por hora, das 5h à meia-noite | ~1,2 ms (pior 1,9 ms) |
-| Uma vez por hora, da meia-noite às 5h | 30 a 45 ms: ali se montam os planos do dia |
-| Repetida na mesma hora | 0,01 ms |
+| Passo (`avancar_hora`), pior caso: a virada do ano | 3,4 a 3,6 ms |
+| Passo, média | ~1,3 ms (inclui preparar as pessoas visíveis da hora) |
+| Consulta completa depois do passo, pior caso | 0,4 a 0,9 ms |
+| Consulta completa, média | ~0,1 ms |
+| Repetida na mesma hora | ~0,1 ms |
 
-**`adiantar_rotina(n = 4) -> int`** monta até `n` planos que ainda faltam e devolve quantos faltam. A apresentação pode chamar a cada quadro, de madrugada (ou sempre: quando não falta nada, custa quase zero), para espalhar o custo de montar o dia e evitar os picos dessas horas. Cada plano custa cerca de 0,3 ms: com `n = 2`, uma chamada fica em ~0,6 ms, e os 290 planos ficam prontos em ~145 quadros (5 s a 30 quadros por segundo).
+A regressão confere isso a cada rodada: nenhum passo acima de 5 ms, nenhuma consulta acima de 2 ms, nenhuma montagem dentro de uma consulta, nenhuma espera pela thread e ninguém acordado sem plano.
+
+**`adiantar_rotina(n = 4) -> int`** ficou só por compatibilidade: a rotina é montada na thread e não precisa mais ser adiantada. Devolve quantas pessoas vivas estão sem plano na rotina em uso (normalmente 0).
 
 ### `cenas_ativas() -> Array[Dictionary]`
 
@@ -343,7 +354,7 @@ A crônica é escrita **ano a ano**, quando cada ano termina. Um ano escrito nã
 | Chamada | Retorno |
 |---|---|
 | `cronica(ano_ini = 1, ano_fim = -1, com_prologo = true, com_epilogo = false) -> String` | Markdown dos anos completos no intervalo (-1 = até o último escrito), com os anos quietos resumidos numa linha |
-| `cronica_ano(ano) -> String` | Markdown de um ano (`### Ano N` e o parágrafo), ou "" se o ano foi quieto ou ainda não terminou |
+| `cronica_ano(ano) -> String` | Markdown de um ano (`### Ano N` e o parágrafo), ou "" se o ano foi quieto ou ainda não terminou. O ano que acabou é escrito na hora 1 do dia 0 do ano seguinte (assim o custo não se soma ao da virada). |
 | `ultimo_ano_na_cronica() -> int` | o último ano escrito (é sempre o ano anterior ao atual) |
 
 O ano em andamento ainda não está na crônica. Para mostrar o que acabou de acontecer, a apresentação usa os eventos de camada "nota" e "chamado".
@@ -369,7 +380,7 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`).
 
 **A gravação é segura:** o núcleo grava num arquivo `.novo` e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
 
-**Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. O documento técnico pede salvar a cada dia de jogo e ao fechar. Isso é decisão da apresentação; o núcleo só salva quando chamado.
+**Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. Com 284 anos (o mundo grande da regressão, 10 mil eventos), o arquivo tem 5,6 MB e salvar leva cerca de 800 ms. O documento técnico pede salvar a cada dia de jogo e ao fechar. Isso é decisão da apresentação; o núcleo só salva quando chamado.
 
 ### Ausência
 
@@ -421,7 +432,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 
 | Script | O que faz |
 |---|---|
-| `regressao.gd` | Roda as sementes 1 a 5 e o cenário de intervenções por 100 anos. Cada uma roda duas vezes e precisa dar a mesma crônica. Também salva e carrega a semente 1 no meio. Grava as crônicas em `cronicas/` e sai com código 1 se algo falhar. |
+| `regressao.gd` | Primeiro, mede o desempenho com a população máxima (veja `desempenho.gd`): nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms. Depois, roda as sementes 1 a 5 e o cenário de intervenções por 100 anos. Cada uma roda duas vezes e precisa dar a mesma crônica. Também salva e carrega a semente 1 no meio. Grava as crônicas em `cronicas/` e sai com código 1 se algo falhar. |
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência. |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
@@ -429,7 +440,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
 | `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder. Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
-| `medir_desempenho.gd` | Gera o maior mundo no estágio 6 (`gerar`) e mede, em outro processo, quanto custa 1 ano dele (`medir`). |
+| `medir_desempenho.gd` | `medir` (padrão) mede as janelas de desempenho e mostra os piores passos e consultas. `gerar` procura o maior mundo no estágio 6 e o guarda, comprimido, em `mundo_grande.bin` (refazer se o formato do mundo salvo mudar). |
+| `desempenho.gd` | Mede como a apresentação usa o mundo: a cada passo, avança uma hora e consulta tudo o que `simulacao.gd` lê. Cada janela (uma virada de ano com 287 pessoas e uma virada de década) roda em 3 processos novos, e vale o menor tempo de cada passo, porque esta máquina tem picos de outros processos. |
 
 ## Estágios e a relação com o deus
 
