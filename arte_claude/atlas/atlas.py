@@ -148,6 +148,9 @@ def principal():
             inverno.append((f"{pasta}/{f.stem}", f))
     W, H, reg = gerar_atlas("pessoas_inverno", inverno)
     resumo["pessoas_inverno"] = (W, H, len(reg))
+    # ---- nuvens soltas do céu vivo (5 climas x 3 camadas x 3 tamanhos)
+    W, H, reg = gerar_atlas("nuvens", nomeados("nuvens"))
+    resumo["nuvens"] = (W, H, len(reg))
     # ---- estações: terreno e vegetação
     for est in ("primavera", "verao", "outono", "inverno"):
         itens = sazonal("terreno", est) + sazonal("estagio1", est, VEGETACAO_E1)

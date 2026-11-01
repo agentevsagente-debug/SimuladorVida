@@ -62,6 +62,8 @@ func _initialize() -> void:
 	_apagar_com_copias(CAMINHO)
 	_testar_copias()
 	_testar_estante()
+	_testar_async()
+	_testar_interrompido()
 	print("%d falhas" % falhas)
 	quit()
 
@@ -172,3 +174,48 @@ func _apagar_pasta(pasta: String) -> void:
 	for f in dir.get_files():
 		dir.remove(f)
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(pasta))
+
+
+## Salvar numa thread: o arquivo é o mesmo do salvar síncrono, e o passo seguinte espera a
+## gravação acabar (o arquivo é o retrato de antes do passo).
+func _testar_async() -> void:
+	var m := Mundo.new(4)
+	m.avancar_dias(40 * 30)
+	Persistencia.salvar(m, CAMINHO)
+	var sinc := FileAccess.get_file_as_string(CAMINHO)
+	Persistencia.salvar_async(m, CAMINHO)
+	var antes: int = m.rng.state
+	var passo_antes: int = m.passo
+	m.avancar_hora()   # espera a gravação
+	conferir(m.passo == passo_antes + 1 and Persistencia.terminar_salvamento(m), "async: gravou, e o passo esperou")
+	var b = Persistencia.carregar(CAMINHO)
+	conferir(b != null and b.rng.state == antes and b.passo == passo_antes, "async: o arquivo é o mundo de antes do passo")
+	conferir(FileAccess.get_file_as_string(CAMINHO).length() == sinc.length(), "async: mesmo arquivo que o salvar síncrono")
+	_apagar_com_copias(CAMINHO)
+
+
+## Uma gravação interrompida no meio (o processo morto a qualquer momento) nunca deixa o
+## mundo ilegível: vale o arquivo ou uma das cópias.
+func _testar_interrompido() -> void:
+	var caminho := "user://teste_interrompido.txt"
+	_apagar_com_copias(caminho)
+	var ok := 0
+	var no_meio := 0
+	for i in 6:
+		var pid := OS.create_process(OS.get_executable_path(), ["--headless", "--quit-after", "100000", "--path",
+			ProjectSettings.globalize_path("res://"), "--script", "res://ferramentas_sim/gravar_sem_parar.gd", "--", caminho])
+		# Espera o mundo existir e mata o processo num momento qualquer de uma gravação.
+		var t := Time.get_ticks_msec()
+		while not FileAccess.file_exists(caminho) and Time.get_ticks_msec() - t < 30000:
+			OS.delay_msec(20)
+		OS.delay_msec(150 + 137 * i)
+		OS.kill(pid)
+		OS.delay_msec(200)
+		if FileAccess.file_exists(caminho + ".novo") or not FileAccess.file_exists(caminho):
+			no_meio += 1
+		var m = Persistencia.carregar(caminho)
+		if m != null and m.populacao() > 0:
+			ok += 1
+	print("gravação interrompida: o mundo carregou %d de 6 vezes; %d mortes deixaram um arquivo pela metade" % [ok, no_meio])
+	conferir(ok == 6, "interrompido: depois de matar o processo no meio da gravação, o mundo carrega (%d de 6; %d mortes com um arquivo pela metade)" % [ok, no_meio])
+	_apagar_com_copias(caminho)

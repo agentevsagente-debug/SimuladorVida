@@ -14,7 +14,7 @@ sys.path.insert(0, str(AQUI.parent))
 
 from comum import PALETA, gravar, para_imagem, pont  # noqa: E402
 
-K = {"W": 31, "w": 0, "c": 19, "b": 18, "B": 17, "G": 12, "g": 11, "k": 4, "K": 5, "y": 22, "o": 21,
+K = {"S": 26, "T": 28, "W": 31, "w": 0, "c": 19, "b": 18, "B": 17, "G": 12, "g": 11, "k": 4, "K": 5, "y": 22, "o": 21,
      "r": 20, "n": 10, "N": 9, "d": 8, "v": 15, "V": 14, "m": 13, "s": 16, "p": 29, "P": 7, "x": 30, "e": 3}
 
 
@@ -27,6 +27,34 @@ def molde(linhas):
 # ---------------------------------------------------------------- ícones 12x12
 
 ICONES_12 = {
+    "estante": [
+        "............",
+        ".nnnnnnnnnn.",
+        ".nrrbbvvppn.",
+        ".nrryyvvyyn.",
+        ".nrrbbvvppn.",
+        ".nyrbbyvppn.",
+        ".nrrbbvvppn.",
+        ".NNNNNNNNNN.",
+        ".nvvpp...rn.",
+        ".nvyp...r.n.",
+        ".nvvp..r..n.",
+        ".NNNNNNNNNN.",
+    ],
+    "criar_povo": [
+        ".....y......",
+        "....yWy.....",
+        ".....y......",
+        "...dd.......",
+        "...SS.......",
+        "..TTTT..dd..",
+        "..TTTT..SS..",
+        "...TT..TTT..",
+        "...TT...TT..",
+        "...S.S..S.S.",
+        "vvvvvvvvvvvv",
+        "VVVVVVVVVVVV",
+    ],
     "rapido2": [
         "............",
         "............",
@@ -296,6 +324,8 @@ ICONES_12 = {
 }
 
 ICONES_8 = {
+    "estante": ["nnnnnnnn", "nrrbbvpn", "nryybypn", "nrrbbvpn", "NNNNNNNN", "nvvp..rn", "nvyp.r.n", "NNNNNNNN"],
+    "criar_povo": ["...y....", "..yWy...", "..dd..d.", "..SS..S.", ".TTTT.TT", "..S.S.S.", "vvvvvvvv", "VVVVVVVV"],
     "rapido2": ["........", "W..W..W.", "WW.WW.WW", "WWGWWGWW", "WG.WG.WG", "........", "........", "........"],
     "seca": [".y.y.y..", "..yyy...", ".yWWWy..", "..yyy...", ".y.y.y..", "nnnnnnnn", "NxNNNxNN", "ddxdddxd"],
     "diluvio": [".GWWWG..", "GGGGGGG.", "c.c.c.c.", ".b.b.b..", "cc..cc..", "bbccbbcc", "bbbbbbbb", "BBBBBBBB"],

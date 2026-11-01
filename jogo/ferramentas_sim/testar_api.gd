@@ -33,15 +33,19 @@ func _initialize() -> void:
 	var antes := m.rng.state
 	conferir(str(m.pessoas_visiveis()) == str(ps), "consulta repetida é igual")
 	conferir(m.rng.state == antes, "consulta não consome sorteio")
-	# Noite: todos dormem perto de casa.
+	# Noite: quase todos dormem perto de casa; o vigia (e às vezes mais alguém) fica acordado.
 	var noite := 0
+	var acordados := 0
 	m.avancar_hora()
 	while m.hora() != 2:
 		m.avancar_hora()
 	for p in m.pessoas_visiveis():
 		if p["acao"] == "dormir":
 			noite += 1
-	conferir(noite == m.populacao(), "todos dormem às 2h")
+		elif p.get("detalhe", "") in ["vigia", "olhar_ceu", "reza_noturna", "buscar_agua", "historias", "doente"] or p["cena"].get("tipo", "") == "vigia":
+			acordados += 1
+	conferir(acordados >= 1 and m.populacao() - noite <= 3,
+		"às 2h todos dormem, menos o vigia e poucos outros (%d de %d acordados)" % [m.populacao() - noite, m.populacao()])
 	# Poderes.
 	var alvo: Dictionary = m.pessoas_visiveis()[3]
 	var r := m.usar_poder("raio", alvo["x"], 0.9)

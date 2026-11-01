@@ -11,6 +11,7 @@ var fundador: int = -1
 var estoque: float = 0.0
 var abrigos: int = 0
 var estagio: int = 1            # 1 coleta, 2 agricultura
+var estagio_desde: int = -1     # ano em que chegou ao estágio atual (-1: desde que o povo nasceu)
 var extinto: bool = false
 var origem: Dictionary = {}     # {"pai", "causa", "ano", "evento"}
 var cultura: Dictionary = {}    # sílabas para nomes
