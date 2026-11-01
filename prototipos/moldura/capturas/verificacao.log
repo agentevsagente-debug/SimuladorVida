@@ -1,18 +1,18 @@
 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
 OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
 
-[0.6] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU NVIDIA escala_tela=1.00
-[0.6] transparencia_por_pixel=true bandeja=true cenario=andando
+[0.5] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU NVIDIA escala_tela=1.00
+[0.5] transparencia_por_pixel=true bandeja=true cenario=andando
 [0.6] escala=2x janela=(960, 352)
 [0.6] bandeja_rect=[P: (2124.0, 1528.0), S: (48.0, 72.0)]
-[3.3] mouse botao=1 pos=(207, 64)
-[3.3] chuva x=207 y=48
-[4.3] mouse botao=1 pos=(240, 169)
-[5.7] mouse botao=1 pos=(20, 7)
-[5.7] arraste
-[6.1] arraste fim pos=(320, 260)
-[6.8] mouse botao=1 pos=(65, 7)
-[6.8] escala=3x janela=(1440, 528)
-[7.7] mouse botao=1 pos=(79, 7)
-[7.8] escondida
-[9.0] visivel
+[3.8] mouse botao=1 pos=(240, 60)
+[3.8] chuva x=240 y=44
+[4.8] mouse botao=1 pos=(240, 170)
+[6.3] mouse botao=1 pos=(20, 7)
+[6.3] arraste
+[6.7] arraste fim pos=(320, 260)
+[7.4] mouse botao=1 pos=(65, 7)
+[7.4] escala=3x janela=(1440, 528)
+[8.4] mouse botao=1 pos=(79, 7)
+[8.4] escondida
+[9.6] visivel
