@@ -319,7 +319,7 @@ func peso_pessoa(p: Pessoa) -> int:
 		if g.lider == p.id:
 			w += 3
 		if g.sacerdote == p.id:
-			w += 3
+			w += 1
 		if g.fundador == p.id:
 			w += 3
 		if p.sabe_agricultura and g.estagio == 1:
@@ -346,6 +346,9 @@ func registrar(tipo: String, causa: String, importancia: int, zona: String, grup
 	e.causa = causa
 	e.importancia = clampi(importancia, 0, 10)
 	e.dados = dados
+	if grupo_id >= 0 and grupo_id < grupos.size() and grupos[grupo_id].tem_crenca:
+		e.dados["_deus"] = grupos[grupo_id].nome_deus
+		e.dados["_gdeus"] = grupos[grupo_id].genero_deus
 	eventos.append(e)
 	for id in participantes:
 		if pessoas.has(id):
@@ -419,7 +422,8 @@ func _novo_ano() -> void:
 			var ano_origem: int = c["ano"]
 			var alguem_lembra := false
 			for p in _membros(g):
-				if p.nasc_ano + 6 <= ano_origem:
+				# Quem cresceu ouvindo os que viveram aquilo ainda lembra.
+				if p.nasc_ano <= ano_origem + 5:
 					alguem_lembra = true
 					break
 			if not alguem_lembra:
@@ -917,10 +921,11 @@ func _rancores_e_separacoes() -> void:
 		for p in adultos:
 			var alvo := -1
 			for id in p.rancores:
-				if p.rancores[id] >= 3 and pessoas[id].vivo and pessoas[id].grupo == g.id:
+				if p.rancores[id] >= 4 and pessoas[id].vivo and pessoas[id].grupo == g.id:
 					alvo = id
 					break
-			if alvo != -1 and chance(0.12 if grupos_vivos().size() < 4 else 0.04):
+			var n_grupos := grupos_vivos().size()
+			if alvo != -1 and n_grupos < 5 and chance(0.1 if n_grupos < 3 else 0.03):
 				_separar(g, p, "briga", alvo)
 				return
 
@@ -963,6 +968,8 @@ func _migracoes() -> void:
 			p_mig = 0.02
 		if grupos_vivos().size() >= 4:
 			p_mig *= 0.3
+		if grupos_vivos().size() >= 6:
+			p_mig = 0.0
 		if g.amaldicoada:
 			p_mig = 0.3
 		if g.estagio == 2:
@@ -1068,7 +1075,7 @@ func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cet
 	if levar.size() < 3 or levar.size() > g.membros.size() - 3:
 		return
 	var cultura := Nomes.cultura_derivada(g.cultura, rng)
-	var novo := _novo_grupo(Nomes.grupo(cultura, rng), destino, cultura)
+	var novo := _novo_grupo(_nome_de_grupo(cultura), destino, cultura)
 	for p in levar:
 		_mudar_de_grupo(p, novo)
 	novo.lider = fundador.id
@@ -1144,6 +1151,19 @@ func _expedicao(g: Grupo, chefe: Pessoa) -> void:
 	var e := registrar("expedicao", "social", 7, g.zona, g.id, ids, {"chefe": chefe.id, "n": foram.size()})
 	if g.tem_crenca and not g.tem_crenca_chave("alem_da_borda"):
 		_nova_crenca(g, "alem_da_borda", e)
+
+
+func _nome_de_grupo(cultura: Dictionary) -> String:
+	var nome := ""
+	for tentativa in 20:
+		nome = Nomes.grupo(cultura, rng)
+		var repetido := false
+		for g in grupos:
+			if g.nome == nome:
+				repetido = true
+		if not repetido:
+			return nome
+	return nome + "a"
 
 
 func _escolher_lider(g: Grupo) -> void:
@@ -1229,11 +1249,11 @@ func _ensino() -> void:
 						{"fome_recente": a - g.fome_ultima_ano <= 3})
 			continue
 		for m in mestres:
-			var p_ensinar := 0.25
+			var p_ensinar := 0.07
 			if m.tem("generoso"):
-				p_ensinar = 0.45
+				p_ensinar = 0.14
 			if m.tem("desconfiado") or m.tem("ambicioso"):
-				p_ensinar = 0.1
+				p_ensinar = 0.025
 			if g.em_fome:
 				p_ensinar *= 0.5
 			if aprendizes.is_empty() or not chance(p_ensinar):
@@ -1273,7 +1293,7 @@ func _relacoes_entre_grupos() -> void:
 				if zonas[a_g.zona].comida < zonas[a_g.zona].comida_cap * 0.35:
 					h += 0.03
 			if a_g.proibido.has(b_g.id):
-				h += 0.02
+				h += 0.004
 			a_g.hostilidade[b_g.id] = h
 	for a_g in vivos:
 		for b_g in vivos:
@@ -1284,7 +1304,7 @@ func _relacoes_entre_grupos() -> void:
 			var h: float = a_g.hostilidade.get(b_g.id, 0.0)
 			if h < 4.0:
 				continue
-			var p_ataque := 0.012
+			var p_ataque := 0.008
 			if a_g.em_fome:
 				p_ataque += 0.03
 			p_ataque *= 0.5 + a_g.violencia
@@ -1355,7 +1375,7 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 	e.dados["mortos"] = mortos
 	e.dados["saque"] = saque
 	e.importancia = 6 + mini(mortos.size(), 3)
-	perdedor.hostilidade[vencedor.id] = perdedor.hostilidade.get(vencedor.id, 0.0) + 2.0 + mortos.size()
+	perdedor.hostilidade[vencedor.id] = perdedor.hostilidade.get(vencedor.id, 0.0) + 1.5 + mortos.size() * 0.5
 	vencedor.hostilidade[perdedor.id] = maxf(0.0, vencedor.hostilidade.get(perdedor.id, 0.0) - 0.5)
 	_impressionar(perdedor, 0.3, "guerra", e, false)
 	if mortos.size() >= 2:
@@ -1639,6 +1659,8 @@ func _preces_do_dia() -> void:
 		# A necessidade passou sozinha: o grupo vê nisso a resposta.
 		# Se dura demais, a prece fica sem resposta.
 		for nec in g.preces.keys():
+			if not g.preces.has(nec):
+				continue
 			var pr: Dictionary = g.preces[nec]
 			if not necessidades.has(nec):
 				_resolver_prece(g, nec, eventos[pr["evento"]])
@@ -1678,10 +1700,10 @@ func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
 	var part: Array = [autor.id]
 	if alvo != -1:
 		part.append(alvo)
-	var primeira := not _ja_houve("prece", g.id)
+	var primeira := not _ja_houve("prece", g.id) and not g.origem.has("pai")
 	var imp := 6 if primeira else 3
 	if alvo != -1:
-		imp = 4
+		imp = 3
 	var e := registrar("prece", "social", imp, g.zona, g.id, part, {"necessidade": nec,
 		"alvo": alvo, "primeira": primeira, "deus": g.nome_deus, "genero_deus": g.genero_deus,
 		"inimigo": origem.grupo if origem != null and nec == "guerra" else -1})

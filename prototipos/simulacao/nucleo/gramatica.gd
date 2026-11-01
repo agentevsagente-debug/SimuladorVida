@@ -87,7 +87,7 @@ static func genero_conjunto(generos: Array) -> String:
 	return "f" if not generos.is_empty() else "m"
 
 
-static func preencher(modelo: String, vars: Dictionary) -> String:
+static func preencher(modelo: String, vars: Dictionary, capitalizar: bool = true) -> String:
 	var saida := ""
 	var i := 0
 	while i < modelo.length():
@@ -102,7 +102,7 @@ static func preencher(modelo: String, vars: Dictionary) -> String:
 			break
 		saida += _token(modelo.substr(i + 1, fim - i - 1), vars)
 		i = fim + 1
-	return _maiusculas_de_frase(saida)
+	return _maiusculas_de_frase(saida) if capitalizar else saida
 
 
 static func _token(tok: String, vars: Dictionary) -> String:
