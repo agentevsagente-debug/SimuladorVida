@@ -153,6 +153,15 @@ func _resumo() -> void:
 
 # ---------------------------------------------------------------- ajudas
 
+## Um mundo com o primeiro povo, como o jogador o encontra depois do primeiro gesto. Hoje o
+## núcleo já cria o povo em Mundo.new(); com o começo vazio (D-09), o povo vem de criar_povo().
+func _mundo(semente: int) -> Mundo:
+	var m := Mundo.new(semente)
+	if m.populacao() == 0:
+		m.criar_povo(275.0)
+	return m
+
+
 func _caminho(nome: String) -> String:
 	return TMP.path_join(nome + ".txt")
 
@@ -231,13 +240,13 @@ func _rodar_tudo() -> void:
 # ---------------------------------------------------------------- 1. começo do mundo
 
 func _bloco_comeco() -> void:
-	var m := Mundo.new(1)
+	var m := _mundo(1)
 	if _quer("QA-001"):
 		var chaves := m.zonas_visiveis().map(func(z): return z["chave"])
 		chaves.sort()
 		conferir("QA-001", chaves == ["floresta", "lago", "morro", "praia"], "zonas: %s" % [chaves])
 	if _quer("QA-002"):
-		conferir("QA-002", m.populacao() == 0, "o mundo novo começa vazio, à espera do primeiro gesto (população: %d)" % m.populacao())
+		_comeco_vazio()
 	if _quer("QA-003"):
 		var gv: Array = m.grupos_visiveis()
 		conferir("QA-003", m.populacao() >= 10 and m.populacao() <= 14, "cerca de 12 pessoas (%d)" % m.populacao())
@@ -257,8 +266,29 @@ func _bloco_comeco() -> void:
 		_consultas_puras()
 
 
+## D-09 (decisão do orquestrador): o jogo novo abre com a região vazia, de manhã, e o primeiro
+## gesto do jogador é criar o povo, com o mesmo poder do recomeço. Testado como o jogo começa:
+## pela simulação da apresentação (simulacao.gd), sem tela e sem salvar.
+func _comeco_vazio() -> void:
+	var sim = load("res://apresentacao/simulacao.gd").new()
+	sim.salvar_em_disco = false
+	sim.iniciar(4242, -1, false)
+	var w = sim.mundo
+	var h: int = w.tempo()["hora"]
+	conferir("QA-002", w.populacao() == 0, "o jogo novo abre com a região vazia (população: %d)" % w.populacao())
+	conferir("QA-002", h >= 6 and h <= 9, "e de manhã (%dh)" % h)
+	var r: Dictionary = sim.criar_povo(260.0)
+	var gv: Array = w.grupos_visiveis()
+	conferir("QA-002", r.get("ok", false) and w.populacao() == 12, "o primeiro gesto, criar povo, funciona no mundo novo (%s, %d pessoas)" % [r.get("motivo", "ok"), w.populacao()])
+	conferir("QA-002", gv.size() == 1 and gv[0]["estagio"] == 1 and gv[0]["zona"] == "floresta", "um povo de coletores no estágio 1, na zona do gesto (floresta)")
+	conferir("QA-002", w.era == 1 and w.livros.is_empty() and _eventos_tipo(w, "fim_do_mundo").is_empty(),
+		"é a Primeira Era: nenhum livro fechado e nenhum fim do mundo antes dela (era %d, %d livros)" % [w.era, w.livros.size()])
+	conferir("QA-002", w.acompanhada >= 0, "há uma pessoa acompanhada desde o começo")
+	sim.free()
+
+
 func _mundo_com_gestos(semente: int, anos: int):
-	var m := Mundo.new(semente)
+	var m := _mundo(semente)
 	for ano in anos:
 		m.avancar_dias(13)
 		m.usar_poder(["chuva", "fartura", "sonho", "raio", "pressagio"][ano % 5], 120.0 + 11.0 * (ano % 30), 0.3 + 0.1 * (ano % 7))
@@ -267,8 +297,8 @@ func _mundo_com_gestos(semente: int, anos: int):
 
 
 func _consultas_puras() -> void:
-	var a := Mundo.new(5)
-	var b := Mundo.new(5)
+	var a := _mundo(5)
+	var b := _mundo(5)
 	var na_agua := 0
 	var horas := 24 * 40 * 2
 	if not longo:
@@ -307,7 +337,7 @@ func _consultas_puras() -> void:
 # ---------------------------------------------------------------- 2. cotidiano e tempo
 
 func _bloco_cotidiano() -> void:
-	var m := Mundo.new(2)
+	var m := _mundo(2)
 	if _quer("QA-011"):
 		var ruins := m.pessoas_visiveis().filter(func(p): return p["tracos"].size() != 2 or p["tracos"].any(func(t): return not Mundo.TRACOS.has(t)))
 		conferir("QA-011", ruins.is_empty(), "todos com dois traços da lista (%d fora)" % ruins.size())
@@ -319,9 +349,10 @@ func _bloco_cotidiano() -> void:
 			if m.tempo()["noite"]:
 				noite += 1
 		var min_noite := noite * Mundo.SEGUNDOS_POR_PASSO / 60.0
-		conferir("QA-016", absf(min_noite - 15.0) <= 2.0, "noite de cerca de 15 min reais (tem %d horas de jogo = %.2f min)" % [noite, min_noite])
+		# documento funcional desde f87b764: cerca de 26 min de dia e 19 de noite (das 20h às 6h)
+		conferir("QA-016", absf(min_noite - 19.0) <= 1.5, "noite de cerca de 19 min reais (tem %d horas de jogo = %.2f min)" % [noite, min_noite])
 	if _quer("QA-017"):
-		var w := Mundo.new(2)
+		var w := _mundo(2)
 		var ano0: int = w.tempo()["ano"]
 		var estacoes := []
 		for d in 40:
@@ -331,7 +362,7 @@ func _bloco_cotidiano() -> void:
 			w.avancar_dias(1)
 		conferir("QA-017", Mundo.DIAS_ANO == 40 and w.tempo()["ano"] == ano0 + 1, "40 dias fazem um ano")
 		conferir("QA-017", estacoes == ["primavera", "verão", "outono", "inverno"], "4 estações em ordem: %s" % [estacoes])
-	var l := Mundo.new(4)
+	var l := _mundo(4)
 	l.avancar_dias(40 * 50)
 	var tipos := _tipos(l)
 	if _quer("QA-013"):
@@ -347,7 +378,7 @@ func _bloco_cotidiano() -> void:
 				nomes.append(str(z["nomes"][gid]))
 		conferir("QA-014", not nomes.is_empty(), "em 100 anos, lugares com nome: %s" % [nomes.slice(0, 4)])
 	if _quer("QA-015"):
-		var w := Mundo.new(6)
+		var w := _mundo(6)
 		w.avancar_dias(40 * 3)
 		_ate_hora(w, 10)
 		var ruins := 0
@@ -371,10 +402,10 @@ func _bloco_cotidiano() -> void:
 # ---------------------------------------------------------------- 3. poderes
 
 func _bloco_poderes() -> void:
-	var fogo0 := _fogo(Mundo.new(3), 0)
+	var fogo0 := _fogo(_mundo(3), 0)
 	if _quer("QA-020") or _quer("QA-026"):
 		for poder in Mundo.PODERES:
-			var m := Mundo.new(3)
+			var m := _mundo(3)
 			var g0: int = m.grupos_vivos()[0].id
 			var x := _fogo(m, g0)
 			var r: Dictionary = m.usar_poder(poder, x, 0.6)
@@ -388,30 +419,30 @@ func _bloco_poderes() -> void:
 				conferir("QA-026", false, "%s: sem evento (%s)" % [poder, r])
 	if _quer("QA-021"):
 		for par in [[0.0, "sinal"], [0.2, "sinal"], [0.499, "sinal"], [0.5, "milagre"], [1.0, "milagre"]]:
-			var m := Mundo.new(3)
+			var m := _mundo(3)
 			var r: Dictionary = m.usar_poder("chuva", fogo0, par[0])
 			conferir("QA-021", r.get("grau", "") == par[1], "chuva %.3f → %s (veio %s)" % [par[0], par[1], r.get("grau", "?")])
 	if _quer("QA-022"):
-		var m := Mundo.new(3)
+		var m := _mundo(3)
 		var graus := []
 		for i in 3:
 			graus.append(m.usar_poder("chuva", fogo0, 0.2)["grau"])
 			m.avancar_dias(1)
 		conferir("QA-022", graus[2] == "imposicao", "3ª chuva na mesma zona em 3 dias é imposição: %s" % [graus])
 	if _quer("QA-023"):
-		var m := Mundo.new(3)
+		var m := _mundo(3)
 		var graus := []
 		for x in [150.0, 260.0, 400.0]:
 			graus.append(m.usar_poder("chuva", x, 0.2)["grau"])
 		conferir("QA-023", not graus.has("imposicao"), "3 zonas diferentes, nenhuma imposição: %s" % [graus])
-		var w := Mundo.new(3)
+		var w := _mundo(3)
 		graus = []
 		for i in 3:
 			graus.append(w.usar_poder("chuva", fogo0, 0.2)["grau"])
 			w.avancar_dias(2)
 		conferir("QA-023", graus[2] != "imposicao", "dias 0, 2 e 4 (4 dias entre o 1º e o 3º): %s" % [graus])
 	if _quer("QA-024"):
-		var m := Mundo.new(3)
+		var m := _mundo(3)
 		var r: Dictionary = m.usar_poder("chuva", -50.0, 3.0)
 		var dd: Dictionary = m.eventos_desde(r["evento"])[0]["dados"] if r.get("ok", false) else {}
 		conferir("QA-024", r.get("ok", false) and is_equal_approx(dd.get("intensidade", -1.0), 1.0) and dd.get("x", -1.0) == 0.0,
@@ -419,7 +450,7 @@ func _bloco_poderes() -> void:
 		r = m.usar_poder("fogo", 99999.0, -1.0)
 		conferir("QA-024", r.get("ok", false), "x 99999 e intensidade -1 também não quebram")
 	if _quer("QA-025"):
-		var r: Dictionary = Mundo.new(3).usar_poder("praga", 200.0, 0.5)
+		var r: Dictionary = _mundo(3).usar_poder("praga", 200.0, 0.5)
 		conferir("QA-025", not r.get("ok", true) and r.has("motivo"), "poder desconhecido recusado: %s" % r.get("motivo", ""))
 	if _quer("QA-027") or _quer("QA-028"):
 		_raio_na_pessoa()
@@ -428,7 +459,7 @@ func _bloco_poderes() -> void:
 	if _quer("QA-031"):
 		var formas := []
 		for i in [0.2, 0.5, 0.9]:
-			var m := Mundo.new(3)
+			var m := _mundo(3)
 			var r: Dictionary = m.usar_poder("pressagio", 260.0, i)
 			var dd: Dictionary = m.eventos_desde(r["evento"])[0]["dados"]
 			formas.append(dd.get("forma", "?"))
@@ -436,7 +467,7 @@ func _bloco_poderes() -> void:
 				conferir("QA-031", dd.get("leituras", {}).size() == m.grupos_vivos().size(), "todos os povos leem o presságio: %s" % [dd.get("leituras", {})])
 		conferir("QA-031", formas == ["cometa", "eclipse", "luzes"], "formas: %s" % [formas])
 	if _quer("QA-033") or _quer("QA-130"):
-		var m := Mundo.new(3)
+		var m := _mundo(3)
 		var antes := m.populacao()
 		var r: Dictionary = {}
 		for i in 3:
@@ -450,7 +481,7 @@ func _bloco_poderes() -> void:
 		else:
 			pular("QA-130", "a semente 3 não deu um quase fim com 3 dilúvios (%d de %d)" % [m.populacao(), antes])
 	if _quer("QA-035"):
-		var m := Mundo.new(3)
+		var m := _mundo(3)
 		var x := fogo0
 		var ini := m.eventos.size()
 		for i in 6:
@@ -463,7 +494,7 @@ func _bloco_poderes() -> void:
 	if _quer("QA-032"):
 		var achou := false
 		for s in range(1, 9):
-			var m := Mundo.new(s)
+			var m := _mundo(s)
 			_ate_hora(m, 10)
 			var alvo: Dictionary = m.pessoas_visiveis().filter(func(p): return not p["crianca"])[0]
 			var r: Dictionary = m.usar_poder("sonho", m.posicao_de(alvo["id"]), 0.8)
@@ -476,7 +507,7 @@ func _bloco_poderes() -> void:
 
 
 func _raio_na_pessoa() -> void:
-	var m := Mundo.new(3)
+	var m := _mundo(3)
 	_ate_hora(m, 10)
 	var p: Dictionary = m.pessoas_visiveis().filter(func(q): return not q["crianca"] and q["acao"] != "dormir")[0]
 	var antes := m.populacao()
@@ -484,7 +515,7 @@ func _raio_na_pessoa() -> void:
 	m.avancar_hora()
 	conferir("QA-028", m.populacao() == antes, "raio de sinal não mata ninguém (%d → %d)" % [antes, m.populacao()])
 	# O raio de milagre mira o x do fim da hora (agenda[-1].x1, o `x` de pessoas_visiveis)...
-	var w := Mundo.new(3)
+	var w := _mundo(3)
 	_ate_hora(w, 10)
 	p = w.pessoas_visiveis().filter(func(q): return not q["crianca"] and q["acao"] != "dormir")[0]
 	r = w.usar_poder("raio", p["x"], 0.9)
@@ -498,7 +529,7 @@ func _raio_na_pessoa() -> void:
 	var meio_longe := 0
 	var gente := 0
 	for s in range(1, 6):
-		var v := Mundo.new(s)
+		var v := _mundo(s)
 		v.avancar_dias(3)
 		for h in range(8, 17):
 			_ate_hora(v, h)
@@ -534,7 +565,7 @@ func _x_na_agenda(agenda: Array, f: float, no_destino := false) -> float:
 
 
 func _cura() -> void:
-	var m := Mundo.new(3)
+	var m := _mundo(3)
 	_ate_hora(m, 10)
 	var g = m.grupos_vivos()[0]
 	var doentes := []
@@ -563,7 +594,7 @@ func _procurar_preces(precisa: Array) -> void:
 	for s in [1, 2, 3, 4, 5, 6]:
 		if faltam.is_empty():
 			break
-		var m := Mundo.new(s)
+		var m := _mundo(s)
 		var vistos := m.eventos.size()
 		for d in 40 * (60 if longo else 45):
 			m.avancar_dias(1)
@@ -652,7 +683,7 @@ func _bloco_preces() -> void:
 
 ## Um mundo sem deus por muitos anos: ponto cego, falso milagre e silêncio prolongado.
 func _preces_mundo_longo() -> void:
-	var m := Mundo.new(1)
+	var m := _mundo(1)
 	var violacoes := 0
 	var anos := 150 if longo else 100
 	var crentes_antes := -1
@@ -695,7 +726,7 @@ func _preces_mundo_longo() -> void:
 
 func _bloco_religiao_culturas() -> void:
 	if _quer("QA-050"):
-		var m := Mundo.new(1)
+		var m := _mundo(1)
 		var ini := m.eventos.size()
 		var dias := 0
 		while dias < 40 * 3 and m.grupos_visiveis()[0]["nome_deus"] == "":
@@ -706,7 +737,7 @@ func _bloco_religiao_culturas() -> void:
 		var cr := _eventos_tipo(m, "crenca", ini)
 		conferir("QA-050", not cr.is_empty() and m.grupos_visiveis()[0]["nome_deus"] != "",
 			"milagres fazem nascer a crença em %d dias: «%s»" % [dias, m.grupos_visiveis()[0]["nome_deus"]])
-	var m := Mundo.new(SEMENTE_LONGA)
+	var m := _mundo(SEMENTE_LONGA)
 	var mesmos_nomes := 0
 	var anos := 200 if longo else 120
 	var exemplo := ""
@@ -798,7 +829,7 @@ func _bloco_estagios() -> void:
 		var sementes := range(1, 21) if longo else range(1, 6)
 		var tarde := []
 		for s in sementes:
-			var m := Mundo.new(s)
+			var m := _mundo(s)
 			var ano := -1
 			for a in 50:
 				m.avancar_dias(40)
@@ -808,7 +839,7 @@ func _bloco_estagios() -> void:
 			if ano < 0:
 				tarde.append(s)
 		conferir("QA-070", tarde.is_empty(), "agricultura em até 50 anos em %d sementes (falharam: %s)" % [sementes.size(), tarde])
-	var m := Mundo.new(SEMENTE_LONGA)
+	var m := _mundo(SEMENTE_LONGA)
 	var anos := 250
 	var fora := 0
 	var maior := 0
@@ -893,7 +924,7 @@ func _bloco_estagios() -> void:
 # ---------------------------------------------------------------- 8. linhagem
 
 func _bloco_linhagem() -> void:
-	var m := Mundo.new(1)
+	var m := _mundo(1)
 	if _quer("QA-080"):
 		conferir("QA-080", m.acompanhada >= 0 and m.pessoa(m.acompanhada).vivo, "há uma pessoa acompanhada, viva (%d)" % m.acompanhada)
 	if _quer("QA-082"):
@@ -902,7 +933,7 @@ func _bloco_linhagem() -> void:
 	if _quer("QA-081"):
 		var feito := false
 		for s in range(1, 10):
-			var w := Mundo.new(s)
+			var w := _mundo(s)
 			w.avancar_dias(40 * 8)
 			_ate_hora(w, 10)
 			var alvo: int = w.acompanhada
@@ -928,7 +959,7 @@ func _bloco_linhagem() -> void:
 		if not feito:
 			pular("QA-081", "nenhuma semente com o raio acertando a pessoa acompanhada com descendentes")
 	if _quer("QA-083"):
-		var w := Mundo.new(2)
+		var w := _mundo(2)
 		w.avancar_dias(40 * 10)
 		info("sugestões num mundo de 10 anos sem deus (semente 2): %s" % [w.sugestoes()])
 		# O exemplo do documento: «esta mulher acabou de ter uma visão».
@@ -961,7 +992,7 @@ func _descendente_mais_velho(m, id: int) -> int:
 # ---------------------------------------------------------------- 9. ausência
 
 func _bloco_ausencia() -> void:
-	var m := Mundo.new(7)
+	var m := _mundo(7)
 	m.avancar_dias(40 * 10)
 	var c := _caminho("ausencia")
 	_apagar_mundo(c)
@@ -999,7 +1030,7 @@ func _bloco_ausencia() -> void:
 		conferir("QA-095", aus["passos"] == 960, "5 anos fora avançam só 1 ano (%d passos)" % aus["passos"])
 		conferir("QA-096", seg < 3.0, "carregar e avançar um ano leva %.2f s" % seg)
 	if _quer("QA-097"):
-		var w := Mundo.new(7)
+		var w := _mundo(7)
 		w.avancar_dias(40 * 10)
 		# Preparação (gancho interno): resta uma pessoa, muito fraca.
 		var vivos: Array = w.vivos.keys()
@@ -1025,12 +1056,12 @@ func _bloco_ausencia() -> void:
 
 func _bloco_persistencia() -> void:
 	if _quer("QA-100") or _quer("QA-101"):
-		var a := Mundo.new(1)
+		var a := _mundo(1)
 		a.avancar_dias(40 * 20 + 7)
 		for i in 5:
 			a.avancar_hora()
 		a.usar_poder("chuva", 150.0, 0.6)
-		var cont := Mundo.new(1)
+		var cont := _mundo(1)
 		cont.avancar_dias(40 * 20 + 7)
 		for i in 5:
 			cont.avancar_hora()
@@ -1055,7 +1086,7 @@ func _bloco_persistencia() -> void:
 	if _quer("QA-104") or _quer("QA-105"):
 		_versao_futura()
 	if _quer("QA-107"):
-		var m := Mundo.new(2)
+		var m := _mundo(2)
 		m.avancar_dias(40 * 5)
 		var c := _caminho("async")
 		_apagar_mundo(c)
@@ -1068,6 +1099,7 @@ func _bloco_persistencia() -> void:
 		_apagar_mundo(c)
 	if _quer("QA-108"):
 		var pasta := TMP.path_join("estante_corrompida")
+		_limpar_pasta(pasta)   # sem restos de outra rodada
 		var l1 := {"era": 1, "titulo": "A Primeira Era: teste", "ano_ini": 1, "ano_fim": 10, "semente": 1, "texto": "# A Primeira Era: teste\n\nUm."}
 		var l2 := {"era": 2, "titulo": "A Segunda Era: teste", "ano_ini": 11, "ano_fim": 20, "semente": 1, "texto": "# A Segunda Era: teste\n\nDois."}
 		Estante.guardar(l1, pasta)
@@ -1081,7 +1113,7 @@ func _bloco_persistencia() -> void:
 		var lv := Estante.livros(pasta)
 		conferir("QA-108", lv.size() == 2 and Estante.ler(lv[1]["id"], pasta).contains("Dois"), "índice e cópias estragados: a estante se refaz com %d livros" % lv.size())
 	if _quer("QA-109"):
-		var w := Mundo.new(2)
+		var w := _mundo(2)
 		w.avancar_dias(40 * 5)
 		for g in w.grupos_vivos():
 			for id in g.membros.duplicate():
@@ -1098,7 +1130,7 @@ func _bloco_persistencia() -> void:
 	if _quer("QA-111"):
 		# O mesmo arquivo, carregado várias vezes e avançado do mesmo jeito, tem de dar o mesmo mundo
 		# e a mesma crônica (documento técnico: determinismo; API: "um mundo salvo e carregado segue igual").
-		var m := Mundo.new(7)
+		var m := _mundo(7)
 		m.avancar_dias(40 * 10)
 		var c := _caminho("det")
 		_apagar_mundo(c)
@@ -1133,7 +1165,7 @@ func _escrever(caminho: String, conteudo) -> void:
 
 
 func _corrompidos() -> void:
-	var m := Mundo.new(3)
+	var m := _mundo(3)
 	m.avancar_dias(40 * 3)
 	var c := _caminho("corrompido")
 	var bom := ""
@@ -1184,7 +1216,7 @@ func _corrompidos() -> void:
 ## Um mundo salvo por uma versão mais nova do jogo: o núcleo não o lê. O que acontece com ele
 ## quando a apresentação (simulacao.gd) cria um mundo novo e passa a salvar todo dia?
 func _versao_futura() -> void:
-	var m := Mundo.new(3)
+	var m := _mundo(3)
 	m.avancar_dias(40 * 2)
 	var c := _caminho("futuro")
 	_apagar_mundo(c)
@@ -1205,7 +1237,7 @@ func _versao_futura() -> void:
 	conferir("QA-104", b == null, "um mundo de versão futura não é lido (e não volta de uma cópia velha)")
 	conferir("QA-104", Persistencia.existe(c), "mas existe() continua verdadeiro: a apresentação sabe que havia um mundo")
 	# O que simulacao.iniciar faz: carregar falhou, cria um mundo novo e salva (a cada dia e ao fechar).
-	var novo := Mundo.new(77)
+	var novo := _mundo(77)
 	for dia in 4:
 		Persistencia.salvar(novo, c)
 		novo.avancar_dias(1)
@@ -1221,7 +1253,7 @@ func _versao_futura() -> void:
 # ---------------------------------------------------------------- 11. fim do mundo
 
 func _bloco_fim() -> void:
-	var m := Mundo.new(1)
+	var m := _mundo(1)
 	var ini := m.eventos.size()
 	var raios := 0
 	var dias := 0
@@ -1286,7 +1318,7 @@ func _bloco_fim() -> void:
 			pular("QA-127", "o primeiro povo não passou do estágio 1: não havia saber nas ruínas")
 	if _quer("QA-131"):
 		# O último morre às 10h (pelo raio do deus): o mundo vazio deve valer já, e não à meia-noite.
-		var w := Mundo.new(1)
+		var w := _mundo(1)
 		_ate_hora(w, 10)
 		var vivos: Array = w.vivos.keys()
 		vivos.sort()
@@ -1315,7 +1347,7 @@ func _bloco_fim() -> void:
 		conferir("QA-131", vazio_ja, "1 hora depois da última morte, o mundo já está vazio (fim_do_mundo %s; só veio depois de %d horas, às %dh)" % [vazio_ja, horas, w.tempo()["hora"]])
 		conferir("QA-131", criar.get("ok", false), "e criar povo já funciona (%s)" % criar.get("motivo", "ok"))
 	if _quer("QA-125"):
-		var w := Mundo.new(2)
+		var w := _mundo(2)
 		for id in w.vivos.keys():
 			w._morrer(w.pessoas[id], "doenca")
 		w.avancar_dias(1)
@@ -1333,7 +1365,7 @@ func _bloco_fim() -> void:
 
 func _bloco_estante() -> void:
 	_limpar_pasta("user://estante")
-	var m := Mundo.new(9)
+	var m := _mundo(9)
 	m.avancar_dias(40 * 6)
 	var c := _caminho("abandono")
 	_apagar_mundo(c)
@@ -1348,12 +1380,12 @@ func _bloco_estante() -> void:
 		conferir("QA-140", est.size() == 1, "o livro vai para a estante (%d)" % est.size())
 		conferir("QA-140", restos.is_empty(), "o mundo salvo e as cópias foram apagados (%s)" % [restos])
 	if _quer("QA-141"):
-		var novo := Mundo.new(10)
+		var novo := _mundo(10)
 		novo.avancar_dias(3)
 		var est2 := Estante.livros()
 		conferir("QA-141", est2.size() == 1 and Estante.ler(est2[0]["id"]).begins_with("# A Primeira Era"), "com outro mundo, o livro continua lá e se lê")
 	if _quer("QA-144"):
-		var w := Mundo.new(11)
+		var w := _mundo(11)
 		w.avancar_dias(40 * 2)
 		var c2 := _caminho("abandono2")
 		Persistencia.salvar(w, c2)
@@ -1375,7 +1407,7 @@ func _bloco_estante() -> void:
 func _bloco_guerra() -> void:
 	if not _quer("QA-180") and not _quer("QA-034"):
 		return
-	var m := Mundo.new(SEMENTE_LONGA)
+	var m := _mundo(SEMENTE_LONGA)
 	m.avancar_dias(40 * 60)
 	if m.grupos_vivos().size() < 2:
 		pular("QA-180", "a semente %d não tem dois povos no ano 60" % SEMENTE_LONGA)
@@ -1424,8 +1456,10 @@ func _bloco_guerra() -> void:
 		conferir("QA-180", false, "ataque às %dh: nenhuma cena de guerra nas 8 horas seguintes" % hora_ataque)
 		return
 	info("cena de guerra: ini %.2f, fim %.2f, vista primeiro na hora %d" % [guerra["ini"], guerra["fim"], vista["hora"]])
-	conferir("QA-180", absf(float(guerra["ini"]) - (hora_ataque + 2)) <= 0.5, "ataque às %dh: a cena começa às %dh (veio %.2f)" % [hora_ataque, hora_ataque + 2, guerra["ini"]])
-	conferir("QA-180", absf(float(guerra["fim"]) - (hora_ataque + 6.5)) <= 0.5, "e termina às %.1fh (veio %.2f)" % [hora_ataque + 6.5, guerra["fim"]])
+	# API desde ece2046: a cena começa meia hora depois do ataque e dura 4h30 (luta de hora + 2h a hora + 3h30)
+	conferir("QA-180", absf(float(guerra["ini"]) - (hora_ataque + 0.5)) <= 0.25, "ataque às %dh: a cena começa às %.1fh (veio %.2f)" % [hora_ataque, hora_ataque + 0.5, guerra["ini"]])
+	conferir("QA-180", absf(float(guerra["fim"]) - (hora_ataque + 5.0)) <= 0.25, "e termina às %.1fh (veio %.2f)" % [hora_ataque + 5.0, guerra["fim"]])
+	conferir("QA-180", vista.get("hora", 99) <= hora_ataque + 1, "e já aparece na hora seguinte ao ataque (vista na hora %d)" % vista.get("hora", -1))
 
 
 # ---------------------------------------------------------------- inspeção do código

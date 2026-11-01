@@ -4,14 +4,16 @@
 
 ## Números
 
+*Atualizado depois das entregas da A em `ece2046` e `4a47816` e das decisões do orquestrador (main em `f87b764`).*
+
 | | Quantos |
 |---|---|
 | Cenários na matriz | 123 |
 | Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
-| Só manuais (precisam de mouse e teclado, à espera da liberação) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **97** |
-| **Falham** | **14** (12 no núcleo e 2 em janela), em 14 defeitos abertos (o D-04 foi corrigido) |
+| Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
+| **Passam** | **99** |
+| **Falham** | **12** (10 no núcleo e 2 em janela) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
 **Por área:**
@@ -19,7 +21,7 @@
 | Área | Cenários | Passam | Falham | Pulados | Manuais, não rodados |
 |---|---|---|---|---|---|
 | Começo do mundo | 5 | 4 | 1 | 0 | 0 |
-| Cotidiano | 10 | 8 | 1 | 0 | 1 |
+| Cotidiano | 10 | 9 | 0 | 0 | 1 |
 | Os 11 poderes e as 3 intensidades | 18 | 15 | 2 | 0 | 1 |
 | Preces e respostas | 9 | 9 | 0 | 0 | 0 |
 | Religião, crença e nome do deus | 5 | 4 | 0 | 1 | 0 |
@@ -28,28 +30,28 @@
 | Linhagem acompanhada | 5 | 4 | 0 | 0 | 1 |
 | Ausência e teto de 1 ano | 9 | 8 | 1 | 0 | 0 |
 | Persistência e saves corrompidos | 12 | 8 | 3 | 1 | 0 |
-| Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 9 | 2 | 1 | 0 |
+| Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 10 | 1 | 1 | 0 |
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 5 | 1 | 0 | 1 |
 | Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
-| **Total** | **123** | **97** | **14** | **3** | **9** |
+| **Total** | **123** | **99** | **12** | **3** | **9** |
 
 **Os defeitos, do mais grave ao mais leve:**
 
 | # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
 |---|---|---|---|---|
-| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | não para os amigos; para o processo, sim (corrigir já) | A |
+| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade** (decisão do orquestrador) | A |
 | D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim** | A |
-| D-03 | Quando o último morre, o mundo só fica vazio na virada do dia (até ~28 min em 1x) | média | **sim** | A |
+| D-03 | ~~Quando o último morre, o mundo só fica vazio na virada do dia~~ **corrigido** em `ece2046` (QA-131 passa) | — | — | A |
 | D-04 | ~~O jogo não mostra o número da versão~~ **corrigido** em `c06e4d0` (`config/version` 0.1.0; QA-166 passa) | — | — | B |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
 | D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
 | D-08 | Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x | média | não | B, A |
-| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | não (decisão) | A, B |
-| D-10 | A noite dura 18,75 min reais, e o documento diz 15 | baixa | não | A |
+| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: o mundo começa vazio**; A e B implementam | A, B |
+| D-10 | ~~A noite dura 18,75 min reais, e o documento diz 15~~ **resolvido pelo documento** (`f87b764`: 26 min de dia e 19 de noite; QA-016 passa) | — | — | — |
 | D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A |
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
 | D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A |
@@ -109,7 +111,7 @@ Gravidade:
   - a apresentação passa a fração da hora (ou o id de quem está sob o cursor) para `usar_poder`, e o núcleo mira em `ro.instante(id, minuto)`;
   - `_poder` já aceita `alvo`.
 
-### D-03. Quando o último morre, o mundo só fica vazio na virada do dia
+### D-03. Quando o último morre, o mundo só fica vazio na virada do dia (corrigido em `ece2046`)
 **Cenários:** QA-131, e por isso QA-129 · **Gravidade:** média · **Bloqueia:** sim (proposta). A extinção é uma promessa central, e a correção parece pequena · **Área:** A (e B para a tela)
 
 - **Passos:**
@@ -125,6 +127,7 @@ Gravidade:
   - aos 6 s, ainda aparece gente perto do fogo, e nenhum aviso (`QA-129-extincao_00.png`). É o R4 da auditoria 11;
   - aos 40 s, depois da meia-noite do jogo, o aviso aparece (`QA-129-extincao_01.png`);
   - então a tela responde certo ao núcleo, e o atraso é só a conferência na virada do dia. O aviso tem outro defeito, o D-15.
+- **Depois de `ece2046`:** com o mesmo comando, o aviso já aparece no quadro dos 6 s (`QA-129-extincao_00.png`). A correção chegou à tela. O D-15 continua.
 - **Sugestão:** conferir `populacao() == 0` (e `<= 5`) também ao fim de `usar_poder` e de cada passo, e não só na virada do dia.
 
 ### D-04. O jogo não mostra o número da versão (corrigido)
@@ -206,7 +209,7 @@ O registro original fica abaixo.
 - **Esperado:** abaixo de 8%.
 - O mundo novo fica em 5,98%, e o de 50 anos em 7,38%, já no limite. Os números estão em "Pontos conhecidos", abaixo.
 
-### D-09. O mundo novo já começa com o povo, e o documento diz que começa vazio
+### D-09. O mundo novo já começa com o povo, e o documento diz que começa vazio (decidido: começa vazio)
 **Cenário:** QA-002 · **Gravidade:** média · **Bloqueia:** não. É uma decisão do orquestrador · **Área:** A e B
 
 - **Documento funcional, "Começo do mundo" e "Menor conjunto", item 1:**
@@ -219,7 +222,7 @@ O registro original fica abaixo.
   - criar o povo só existe depois de uma extinção.
 - **Ressalva:** a auditoria 11 elogia abrir de manhã com gente andando, e o plano da fase 1 diz "cria o primeiro povo". Se a escolha foi deliberada, o documento funcional precisa ser atualizado. Senão, o recomeço (que já tem a chegada do povo e a primeira fogueira) serve também para o começo.
 
-### D-10. A noite dura 18,75 min reais, e o documento diz 15
+### D-10. A noite dura 18,75 min reais, e o documento diz 15 (resolvido: o documento mudou em `f87b764`)
 **Cenário:** QA-016 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
 
 - O documento funcional diz "cerca de 45 minutos reais por dia de jogo (30 de dia e 15 de noite)". Isso dá 8 horas de jogo de noite.
@@ -268,6 +271,7 @@ O registro original fica abaixo.
   - os títulos com epíteto da A ("de Toan ao último de Toan") deixaram a linha mais longa do que a caixa;
   - os dois-pontos seguidos ("Toan terminou: do ano") também pedem revisão do texto.
 - **Esperado:** a linha quebra dentro do pergaminho, como as outras.
+- **Reconferido na main `f87b764`:** continua igual. O "A" do começo e o "ano 1." do fim passam das bordas (`QA-129-extincao_00.png`).
 
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.
@@ -393,21 +397,39 @@ Procurei onde o jogo quebra a promessa, então os acertos abaixo valem por terem
   - o mundo vazio salvo e carregado (QA-128).
 - **Estante:** abandonar fecha o livro e apaga o mundo com as cópias; o livro sobrevive ao mundo novo e se lê pela cópia; dois abandonos (QA-140 a QA-144).
 
-## TDD: os testes que já falham e esperam a correção
+## TDD: o contrato de cada teste
 
-Cada um já está na bateria e falha hoje. Passa a passar quando a área dona corrigir. Para rodar só ele: `-- --so=ID`.
+Cada linha abaixo é um teste que **falha hoje** (conferido na rodada de `f87b764`) e diz exatamente o que precisa ser verdade para passar. Para rodar só ele: `-- --so=ID`. Um teste só conta como passando com **todas** as suas conferências `ok`.
 
-| Teste | Defeito | Área | O que precisa acontecer para passar |
+### Itens da A
+
+| Defeito | Teste | Falha hoje com | Passa quando |
 |---|---|---|---|
-| QA-027 | D-02 | A | o raio sobre quem está na tela acerta essa pessoa durante pelo menos 95% da hora |
-| QA-131 | D-03 | A | uma hora depois da última morte, `fim_do_mundo` vale e `criar_povo` funciona |
-| ~~QA-166~~ | D-04 | B | passa desde `c06e4d0` |
-| QA-104, QA-105 | D-05 | A e B | o mundo ilegível sobrevive a 4 salvamentos do mundo novo |
-| QA-111 | D-06 | A | 6 cargas do mesmo arquivo dão a mesma crônica |
-| QA-109, QA-182 | D-01 | A | salvar num caminho de teste não toca `user://estante`, e nenhuma ferramenta apaga a estante real |
-| QA-181 | D-14 | B | `qa/*` no `exclude_filter` |
-| QA-129 (janela) | D-03, D-15 | A e B | o aviso aparece logo e cabe no pergaminho (`rodar_janela.ps1 -Parte capturas`) |
-| QA-016, QA-026, QA-064, QA-092 | D-10 a D-13 | A | conforme cada defeito |
+| **D-01** (prioridade) | QA-109 | `salvar(mundo_com_livro, "user://qa_tmp/isolado/mundo.txt")` grava 1 livro em `user://estante` | salvar e abandonar um mundo fora do caminho padrão **não muda** `Estante.livros()` da pasta padrão (0 → 0). O livro vai para uma estante ligada ao caminho do mundo, ou para uma pasta passada como parâmetro |
+| D-01 | QA-182 | `testar_fase2.gd` usa `"user://estante"` e apaga arquivos dela | nenhum `ferramentas_sim/*.gd` tem a string `"user://estante"` junto de `.remove(` ou `remove_absolute` |
+| **D-02** (bloqueia) | QA-027 | a pessoa fica a mais de 6 px do ponto que o raio acerta de 50,2% a 64,0% do tempo da hora | em 5 sementes, das 8h às 16h, a pessoa acordada fica a até 6 px do ponto que o núcleo acerta em **pelo menos 95%** das frações da hora, mesmo no limite inferior (cada trecho já no destino). Na prática: mirar onde a pessoa está naquele instante (`ro.instante(id, minuto)`, ou a apresentação passa o minuto ou o id). A primeira conferência (mirar o `x` do fim da hora mata) continua valendo |
+| **D-09** (decidido) | QA-002 | o jogo novo abre com 12 pessoas, e `criar_povo` recusa ("só se cria um povo com o mundo vazio") | pela `simulacao.gd`, com `iniciar(4242, -1, false)`: população 0 e hora entre 6h e 9h; depois, `criar_povo(260)` devolve `ok` com 12 pessoas, 1 povo no estágio 1 na floresta, `era == 1`, nenhum livro e nenhum evento `fim_do_mundo`, e com uma pessoa acompanhada. Os outros testes não dependem disso: `_mundo(s)` cria o povo se o mundo vier vazio |
+| D-05 | QA-105 | 0 dos 4 arquivos de um mundo ilegível (versão 99) sobrevivem a 4 salvamentos de um mundo novo no mesmo caminho | pelo menos 1 arquivo com `["versao", 99]` ainda existe depois dos 4 salvamentos (por exemplo, guardado à parte como `mundo.ilegivel.txt` ao lado). O aviso ao jogador é da B e fica para a janela |
+| D-06 | QA-111 | 6 cargas do mesmo arquivo dão 2 textos de crônica diferentes | as 6 cargas dão **1** texto e 1 estado de sorteio |
+| D-11 | QA-026 | a chuva de milagre (0,6) sem seca e a cura de milagre em quem está são saem na camada "ambiente" | os 11 poderes, a 0,6 no primeiro dia, geram evento com `x`, `grau` e `intensidade` e camada "nota" ou "chamado" |
+| D-12 | QA-064 | no mundo da semente 3 no ano 120, "Lago da Vitória" (Koil e Peak) e "Morro da Vitória" (Peak e Toran) | nenhum par de povos vivos dá o mesmo nome à mesma zona |
+| D-13 | QA-092 | `carregar_e_avancar` com exatamente 960 × 112,5 s dá `teto_atingido = false` | 960 passos e `teto_atingido = true` (a conta usa `>=`). Os outros casos de ausência continuam: 16 h dão 512 passos sem teto, e 30 dias e 5 anos dão 960 com teto |
+| ~~D-03~~ | QA-131 | — | **já passa** desde `ece2046` |
+
+### Itens da B
+
+| Defeito | Teste | Falha hoje com | Passa quando |
+|---|---|---|---|
+| **D-15** (bloqueia) | QA-129, em janela | a linha do livro sai pelas duas bordas do pergaminho do "Não resta ninguém" | `rodar_janela.ps1 -Parte capturas`: no quadro `QA-129-extincao_01.png` o aviso aparece e todo o texto fica dentro do pergaminho (conferência a olho na captura). Com o D-03 corrigido, o aviso deve aparecer já no primeiro quadro |
+| D-14 | QA-181 | `exclude_filter` sem `qa/*` | `exclude_filter` contém `qa/` |
+| D-05 (aviso) | manual | nenhum aviso quando o mundo salvo não se lê | a apresentação mostra um aviso quando `Persistencia.existe()` é verdadeiro e `carregar_e_avancar()` devolve null |
+
+### Sem dono por enquanto
+
+| Defeito | Teste | Situação |
+|---|---|---|
+| D-07 | sonda à parte | risco de desempenho; o QA-170 passa (nenhuma espera pela thread no 50x) |
+| D-08 | QA-172, em janela | 14,4% de um núcleo no mundo de 200 anos; não bloqueia a 0.1 |
 
 Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primeiro o cenário em `qa/cenarios.md` e o teste em `rodar_qa.gd`, que deve falhar antes da entrega.
 
