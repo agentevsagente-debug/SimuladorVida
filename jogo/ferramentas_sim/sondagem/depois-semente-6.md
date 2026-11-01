@@ -290,703 +290,678 @@ Dohais deu à luz gêmeos, Gali e Mamarik. Uns viram bênção; outros, mau sina
 
 ### Ano 112
 
-Na primavera do ano 112, morreu Damarel, o corajoso, aos 45 anos. No verão, a Guerra dos Irmãos esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Tohak saiu dela mais forte.
+Na primavera do ano 112, morreu Damarel, o corajoso, aos 45 anos. No verão, a Guerra dos Irmãos esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Tohak saiu dela mais forte. No inverno, Lovia, a ambiciosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
 ### Ano 113
 
-Na primavera do ano 113, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Depois disso, Tohak deixou de chamar o deus de «a Luz Que Avisa» e passou a chamá-lo de «o Que Risca o Céu». Margaut tinha rezado: «Luz Que Avisa, dá-nos o que comer.» A comida voltou, e Tohak deu graças ao Que Risca o Céu. O deus nada fez: o crédito era de graça. No verão, Tohak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Margaut tinha rezado: «Luz Que Avisa, dá-nos o que comer.» A comida voltou, e Tohak deu graças à Luz Que Avisa. O deus não tinha feito nada. Tohak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 114
 
-Na primavera do ano 114, Margaut, que falava pelo Que Risca o Céu em Tohak, morreu dormindo, aos 47 anos. Kidaut rezou por Gahail até a voz acabar. Gahail morreu mesmo assim, e Kidaut nunca mais rezou. Uma febre correu Tohak e levou oito vidas. No inverno, apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu.
+No verão, Doar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 115
 
-Orur, que guiava Marum, morreu de velhice aos 51 anos. Tohak atacou Mabem na praia. Mabem foi derrotado e perdeu o que tinha guardado. Na luta morreram Veia, Kiem e Daur. Para Tohak, a praia virou Praia da Vitória. Mabem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Tohak e Mabem se encontraram na praia e juraram paz.
+Na primavera do ano 115, Orur, que guiava Marum, morreu dormindo, aos 51 anos.
 
 ### Ano 116
 
-Na primavera do ano 116, Hadail, que fundou Doar e o guiava, morreu de repente, aos 44 anos. Tinha fundado Doar. Doar escolheu Esel para guiar o grupo. Lovia queria o lugar e nunca perdoou. Começou a Guerra dos Irmãos do Lago: Tohak e Marum, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos do Lago seguiu: Marum contra Tohak, no lago em nome do Que Afoga. Tohak expulsou os atacantes. Beali morreu na luta.
+Na primavera, Habeis partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
-### Ano 117
-
-No verão, Marel implorou pelo filho. Dogael morreu, e daquele dia em diante Marel cuspia no chão quando falavam do Que Risca o Céu.
-
-*O ano 118 passou sem nada que a crônica precise guardar.*
+*Os anos 117 a 118 passaram em paz.*
 
 ### Ano 119
 
-Na primavera do ano 119, a Guerra dos Irmãos do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Tohak saiu dela mais forte. Doar já não se preparava para nada: a Estrela de Cauda sempre dava. A guerra entre Marum e Tohak continuou: Marum voltou a atacar no lago em nome do Que Afoga. Tohak resistiu, e Marum voltou de mãos vazias. Mara e Gahaur morreram na luta. Desde então, Marum chama o lago de Lago do Luto.
+Margaut, que falava pela Luz Que Avisa em Tohak, morreu de velhice aos 52 anos. No verão, Mabem já não se preparava para nada: o Que Fere sempre dava.
 
 ### Ano 120
 
-Com lanças e promessas, Marveia acabou com o conselho de Mabem e passou a mandar sozinho. Apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu. Depois disso, Mabem deixou de chamar o deus de «o Que Fere» e passou a chamá-la de «a Estrela de Cauda». Nos anos 111 a 120 houve sete fomes, quatro batalhas, 23 preces que pareceram atendidas e nove preces sem resposta; nasceram 84 crianças e morreram 47 pessoas. No fim do ano 120, 150 pessoas viviam no mundo: Tohak (94), Marum (5), Mabem (16) e Doar (35).
+Kik, que guiava Tohak, morreu de velhice aos 50 anos. Nos anos 111 a 120 houve sete fomes e catorze preces que pareceram atendidas; nasceram 121 crianças e morreram 41 pessoas. No fim do ano 120, 190 pessoas viviam no mundo: Tohak (106), Marum (18), Mabem (24) e Doar (42).
 
-*No ano 121, nada de notável aconteceu.*
+### Ano 121
+
+Com Gail à frente, Tohak largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Tohak atacou Marum na floresta. Tohak venceu e levou a comida guardada. Veur e Kiut morreram na luta. Depois de tantos mortos, Tohak e Marum se encontraram na floresta e juraram paz. Depois da derrota, os jovens de Tohak passaram a treinar com lanças. No outono, tantas preces atendidas fizeram Doar confiar no céu mais do que nas próprias mãos.
 
 ### Ano 122
 
-Dout partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A tempestade trouxe raios para o morro. Um deles acertou Loel. Em Doar, disseram que era castigo. Depois disso, Doar deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Senhor do Trovão». Em Doar, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+Dessa vez, a Estrela de Cauda não respondeu, e Doar, que tinha esquecido como se virar sozinho, pagou caro. Tohak passou fome no inverno por 9 dias, e três pessoas morreram. Doar conheceu a maior fome da sua história. Em 20 dias, morreram 12. Muitas cabanas ficaram vazias. Depois daquela fome, Doar passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. O morro passou a ser o morro da fome: Morro da Fome.
 
 ### Ano 123
 
-Na primavera, Ora partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Mabem, Marveia pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Mabem viu nisso obra da Estrela de Cauda. O deus não tinha feito nada. De novo Marum contra Tohak em nome do Que Afoga, como no ano 119. Tohak resistiu, e Marum voltou de mãos vazias. Bea morreu na luta. Uma tosse que não passava matou seis pessoas em Tohak.
+Ninguém lembrava mais a razão, e Tohak abandonou o medo das tempestades. Mara partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Kimarur, que guiava Marum, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Tohak. Marum acabou: Vel, o último, foi viver em Mabem. Diante das ruínas de Marum, Tohak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 124
 
-Morreu Kimarur, que guiava Marum, aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Tohak. Com Kik à frente, Tohak largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. Marum acabou: Veveali, Marmarali e Dobeali foram viver em Doar. Tohak encontrou as ruínas de Marum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. As ruínas de Marum viraram aviso em Mabem: era o que o deus fazia com quem o desagradava.
+Na primavera, em Mabem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Em Mabem, Bebeis pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Mabem viu nisso obra do Que Fere. A crônica sabe que foi acaso.
 
 ### Ano 125
 
-Lovia tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Doar deu graças ao Senhor do Trovão. O deus não tinha feito nada.
+Esel tinha rezado: «Estrela de Cauda, não nos deixes secar.» Quando a chuva voltou, Doar agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça. A doença entrou em Doar e matou duas pessoas.
 
 ### Ano 126
 
-No verão, Tohak já não cabia no lago. Ordais, a medrosa, levou dezenove pessoas para a floresta e fundou Daum. Em Daum, Gaorut tomou para si o cuidado das preces ao Que Risca o Céu. Daum encontrou as ruínas de Marum e disse que ali tinham vivido gigantes. No inverno, Esel anunciou que o Senhor do Trovão proibia qualquer trato com Mabem. O deus nunca disse isso, mas Doar obedeceu. Em Daum nasceu a primeira criança: Kiorik, filho de Bebeis e Gaorut.
+Na primavera, com lanças e promessas, Kimaur acabou com o conselho de Tohak e passou a mandar sozinho. Em Mabem, Ora começou a pregar que o deus não era «o Que Fere». Era «o Que Levanta». Em poucos anos, todos rezavam assim. Veio a pior fome que o mundo tinha visto: 24 dias por causa da seca em Doar, e 15 mortos. As crianças foram as primeiras. Toil implorou pelo filho. Togael morreu, e daquele dia em diante Toil cuspia no chão quando falavam da Luz Que Avisa. Um inverno duro matou sete pessoas de frio.
 
 ### Ano 127
 
-No outono, Doar atacou Mabem na praia em nome do Senhor do Trovão. Mabem expulsou os atacantes. Kiur morreu na luta. Depois da luta, Doar e Mabem se encontraram na praia e juraram paz. Para Doar, a praia virou Praia da Trégua.
+Na primavera do ano 127, Gail, que falava pela Luz Que Avisa em Tohak, morreu dormindo, aos 56 anos.
 
 ### Ano 128
 
-Na primavera, o deus calou justo quando Doar mais dependia dele. O dia em que a chuva voltou virou festa em Mabem: todo ano, celebram a chuva que a Estrela de Cauda mandou. De novo o sol se apagou no meio do dia. Para Tohak, o deus já não era «o Que Risca o Céu»: passou a ser «o Olho Escuro». Depois disso, Daum deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Olho Escuro».
+Mabem passou a receber bem os de fora: um casamento com outro povo virava festa. Veu, de Doar, casou-se com Belour e foi viver em Mabem. Foi o primeiro laço entre os dois povos. Lovia não podia mais viver perto de Hadail. Saiu de Doar com oito pessoas e fundou Viem na floresta. Viem encontrou as ruínas de Marum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 129
 
-Gail, a curiosa, morreu dormindo, aos 58 anos. Doar passou fome por 21 dias, e cinco pessoas morreram. A fome ensinou: desde então, Doar estoca comida e não come tudo o que colhe. Esel anunciou que o Senhor do Trovão proibia qualquer trato com Daum. O deus nunca disse isso, mas Doar obedeceu. O inverno foi de gelo: três pessoas morreram de frio.
+Na primavera do ano 129, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Para Tohak, o deus já não era «a Luz Que Avisa»: passou a ser «o Que Risca o Céu». No verão, Esel passou a falar pela Estrela de Cauda em Viem. Era o primeiro a rezar e o último a duvidar. Esel anunciou que a Estrela de Cauda proibia qualquer trato com Doar. O deus nunca disse isso, mas Viem obedeceu. Em Viem nasceu a primeira criança: Kurel, filho de Marbea e Marem.
 
 ### Ano 130
 
-Na primavera, sem lugar e sem comida, Veveali e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Kik, que guiava Tohak, morreu de frio. A doença entrou em Tohak e matou cinco pessoas. No inverno, Kiu, a corajosa, inventou marcas que guardavam palavras. Nos anos 121 a 130 houve duas secas, dezesseis fomes, duas batalhas, 30 preces que pareceram atendidas e sete preces sem resposta; nasceram 55 crianças e morreram 58 pessoas. No fim do ano 130, 138 pessoas viviam no mundo: Tohak (74), Mabem (16), Doar (26) e Daum (22).
+Em Doar, quem vinha de fora era recebido com comida e lugar perto do fogo. Houve luta no morro: Viem atacou Doar. Viem venceu e levou a comida guardada. Depois da luta, Viem e Doar se encontraram no morro e juraram paz. Desde então, Viem chama o morro de Morro da Trégua. Nos anos 121 a 130 houve três secas, dez fomes, três batalhas, 29 preces que pareceram atendidas e catorze preces sem resposta; nasceram 68 crianças e morreram 138 pessoas. No fim do ano 130, 117 pessoas viviam no mundo: Tohak (70), Mabem (15), Doar (23) e Viem (9).
 
 ### Ano 131
 
-Na primavera do ano 131, Lovia, a ambiciosa, morreu dormindo, aos 45 anos.
+Maut, o corajoso, morreu de velhice aos 50 anos. Na guerra, tinha tirado duas vidas. No verão, Viem passou a receber bem os de fora: um casamento com outro povo virava festa. No outono, um raio caiu no lago durante a tempestade e matou Dahaia. Ninguém em Tohak teve dúvida: era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Tohak sai de casa. Lembram de Dahaia. Marbea, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
-*O ano 132 passou sem nada que a crônica precise guardar.*
-
-### Ano 133
-
-Gamarur, que falava pelo Olho Escuro em Tohak, morreu de velhice aos 57 anos.
+*Os anos 132 a 133 passaram em paz.*
 
 ### Ano 134
 
-Na primavera do ano 134, Dou deu à luz gêmeos, Kiorali e Orel. Uns viram bênção; outros, mau sinal. No verão, em Mabem, quem vinha de fora era recebido com comida e lugar perto do fogo.
+Na primavera, morreu Kimaur, que guiava Tohak, aos 52 anos. Tohak escolheu Ma para guiar o grupo. Tokis queria o lugar e nunca perdoou. No verão, Marbea deu à luz gêmeos, Rael e Raur. Uns viram bênção; outros, mau sinal.
 
 ### Ano 135
 
-No verão do ano 135, houve luta na praia: Doar atacou Mabem em nome do Senhor do Trovão. Doar venceu e levou a comida guardada. Vem e Marveia morreram na luta. No outono, Kurmaru, a engenhosa, descobriu como empilhar pedras cortadas sem que caíssem.
+Na primavera do ano 135, com Kiem à frente, a nova geração de Mabem abandonou a festa da chuva, costume herdado dos avós. Em Mabem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Viem, Esel pediu: «Estrela de Cauda, não leves mais ninguém.» Os doentes se levantaram. Em Viem, o crédito foi da Estrela de Cauda. O deus não tinha feito nada.
 
-### Ano 136
-
-Na primavera do ano 136, Ordais, que fundou Daum e o guiava, morreu de velhice aos 54 anos. Tinha fundado Daum. Morreu o último que tinha visto o ano 90. Em Mabem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Tohak, Todali pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Tohak viu nisso obra do Olho Escuro. A crônica sabe que foi acaso. No outono, Toia, de Mabem, casou-se com Kimarel e foi viver em Daum. Foi o primeiro laço entre os dois povos. Mais, de Tohak, casou-se com Gaorik e foi viver em Daum. Foi o primeiro laço entre os dois povos.
+*O ano 136 passou sem nada que a crônica precise guardar.*
 
 ### Ano 137
 
-Morreu Todali, que falava pelo Olho Escuro em Tohak, aos 60 anos. Mabem passou a receber bem os de fora: um casamento com outro povo virava festa. Uma febre correu Tohak e levou seis vidas.
+Na primavera, morreu Mali, a generosa, aos 56 anos. Mabem passou a festejar todo ano o dia da volta da chuva, em honra do Que Levanta.
 
 ### Ano 138
 
-Na primavera do ano 138, Marmarem, que falava pela Estrela de Cauda em Mabem, morreu de repente, aos 28 anos. No verão, tantas preces atendidas fizeram Daum confiar no céu mais do que nas próprias mãos.
+Kiem, que guiava Mabem, morreu de repente, aos 40 anos. Morreu Hadail, que fundou Doar e o guiava, aos 66 anos. Tinha fundado Doar. Dagaut implorou pela filha. Daorali morreu, e daquele dia em diante Dagaut cuspia no chão quando falavam do Que Risca o Céu. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Tohak, e 17 mortos. As crianças foram as primeiras. A doença entrou em Tohak e matou quinze pessoas.
 
 ### Ano 139
 
-No verão do ano 139, Tohak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Tohak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Foram 23 dias de fome no inverno em Mabem, com um morto. Depois daquela fome, Mabem passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Todali, que falava pelo Que Risca o Céu em Tohak, morreu de velhice aos 62 anos. Esel, que falava pela Estrela de Cauda em Viem, morreu dormindo, aos 53 anos. Foi quem proibiu, em nome do deus, o trato com Doar.
 
 ### Ano 140
 
-Morreu Ma, que guiava Daum, aos 55 anos. Doar passou a receber bem os de fora: um casamento com outro povo virava festa. Nos anos 131 a 140 houve cinco fomes e dezesseis preces que pareceram atendidas; nasceram 119 crianças e morreram 63 pessoas. No fim do ano 140, 195 pessoas viviam no mundo: Tohak (98), Mabem (9), Doar (43) e Daum (45).
+Foram 9 dias de fome no inverno em Doar, com dez mortos. Gaorut, de Tohak, tomou por esposa Maviu, de Viem, e os dois povos passaram a se visitar. Nos anos 131 a 140 houve duas secas, seis fomes e dezoito preces que pareceram atendidas; nasceram 99 crianças e morreram 82 pessoas. No fim do ano 140, 136 pessoas viviam no mundo: Tohak (67), Mabem (26), Doar (32) e Viem (11).
 
 ### Ano 141
 
-Na primavera do ano 141, Doar não esqueceu o ano 135 e atacou Mabem outra vez. Mabem foi derrotado e perdeu o que tinha guardado. Dodoil, Kiel e Beali morreram na luta. Doar e Mabem, cansados de enterrar os seus, fizeram as pazes na praia.
+Lovia, que fundou Viem e o guiava, morreu de velhice aos 55 anos. Foi quem levou os seus a fundar Viem. Kuris disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «a Voz dos Sonhos». Doar acreditou, e o deus mudou de nome. Morreu o último que tinha visto o ano 90. Em Viem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
 
-### Ano 142
-
-Com Kiali à frente, Tohak largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Morreu o último que tinha visto o ano 115. Em Mabem, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. Uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito. Depois disso, Daum deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Risca o Céu». As preces de Daum ficaram pequenas: pedia-se ao Que Risca o Céu até sol para a pesca e sorte na caça.
-
-### Ano 143
-
-Em Doar, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Doar atacou Daum na floresta em nome do Senhor do Trovão. Daum resistiu, e Doar voltou de mãos vazias. Marali morreu na luta. Começou a Guerra Santa: em nome do Senhor do Trovão, Doar pegou em lanças contra Daum. O deus calou justo quando Daum mais dependia dele.
+*Do ano 142 ao 143, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 144
 
-No verão, Mabem passou a receber bem os de fora: um casamento com outro povo virava festa. Em Daum, Gaorut pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Daum agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. No inverno, em Doar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Maut, que falava pelo Olho Escuro em Tohak, não resistiu à fome.
+Tomais implorou pela filha. Gali morreu, e daquele dia em diante Tomais cuspia no chão quando falavam do Que Risca o Céu.
 
 ### Ano 145
 
-Na primavera, na Guerra Santa, Doar atacou Daum na floresta em nome do Senhor do Trovão. Daum resistiu, e Doar voltou de mãos vazias. Na luta morreram Berael e Maril. O mesmo chão ganhou dois nomes: Floresta da Vitória para Daum, Floresta do Luto para Doar. Depois da derrota, os jovens de Doar passaram a treinar com lanças. Tohak conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 11. Muitas cabanas ficaram vazias. Doar conheceu a maior fome da sua história. Em 24 dias, morreram 12. Muitas cabanas ficaram vazias.
+Kikiali, a ambiciosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 146
 
-Os últimos de Mabem, Mabel, Bemael e Kiur, juntaram-se a Tohak. Mabem deixou de existir. Tohak encontrou as ruínas de Mabem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Doar encontrou as ruínas de Mabem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Bedali, a curiosa, cansou de dividir pouca comida. Partiu com dezessete pessoas para a praia e ali fundou Marur.
+Na primavera, Dour, que falava pela Voz dos Sonhos em Doar, morreu de velhice aos 58 anos. Viem passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Uma tosse que não passava matou cinco pessoas em Mabem. Desde a febre, Mabem não enterra mais ninguém: os mortos vão para o fogo. No inverno, a terra tremeu. Caíram dezesseis cabanas. Hail, Hamali, Hahais e Kuris morreram sob os escombros.
 
 ### Ano 147
 
-Morreu o último que tinha visto o ano 76. Em Daum, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Em Marur, Dail tomou para si o cuidado das preces ao Olho Escuro. Marur encontrou as ruínas de Mabem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nasceu Dais, a primeira de Marur. No inverno, Malinut, de Daum, tomou por esposa Margaia, de Marur, e os dois povos passaram a se visitar.
+No verão do ano 147, Daut rezou por Toorut até a voz acabar. Toorut morreu mesmo assim, e Daut nunca mais rezou.
 
 ### Ano 148
 
-Na primavera do ano 148, a Guerra Santa esfriou sem acordo nem vencedor: cinco anos, três batalhas e quatro mortos, e ninguém sabia mais por que lutava. No inverno, Doar não esqueceu o ano 145 e atacou Daum outra vez. Daum foi derrotado e perdeu o que tinha guardado.
+Loel, que guiava Doar, morreu dormindo, aos 55 anos. Em Mabem, Belour pediu: «Que Levanta, dá-nos o que comer.» A fome passou, e Mabem viu nisso obra do Que Levanta. O deus não tinha feito nada. No inverno, Raesis, a generosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 149
 
-Na primavera, Dour, o pacífico, morreu dormindo, aos 61 anos. Em Marur, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
+Morreu Tokis, que guiava Tohak, aos 57 anos. Veia, que falava pela Voz dos Sonhos em Doar, morreu de velhice aos 56 anos. Viem já não se preparava para nada: a Estrela de Cauda sempre dava. Foram 18 dias de fome no inverno em Mabem, com três mortos.
 
 ### Ano 150
 
-Na primavera do ano 150, Kiali, que guiava Tohak, morreu de velhice aos 65 anos. Viel, de Doar, tomou por esposa Toil, de Marur, e os dois povos passaram a se visitar. Começou a Guerra Santa da Floresta: em nome do Senhor do Trovão, Doar pegou em lanças contra Daum. Nos anos 141 a 150 houve onze fomes, sete batalhas, 35 preces que pareceram atendidas e onze preces sem resposta; nasceram 122 crianças e morreram 107 pessoas. No fim do ano 150, 211 pessoas viviam no mundo: Tohak (84), Doar (40), Daum (71) e Marur (16).
+Em Doar, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Em Viem, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Viem, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Os de Tohak caíram sobre Viem na floresta. Viem foi derrotado e perdeu o que tinha guardado. Na luta morreram Kurel, Marbea, Vera e Kiut. Depois da derrota, os jovens de Viem passaram a treinar com lanças. Nos anos 141 a 150 houve seis fomes, dezesseis preces que pareceram atendidas e três preces sem resposta; nasceram 98 crianças e morreram 57 pessoas. No fim do ano 150, 172 pessoas viviam no mundo: Tohak (93), Mabem (28), Doar (38) e Viem (13).
 
 ### Ano 151
 
-Um inverno duro matou duas pessoas de frio.
+No verão do ano 151, em Viem, quem vinha de fora era recebido com comida e lugar perto do fogo. O deus calou justo quando Viem mais dependia dele.
 
 ### Ano 152
 
-Na primavera do ano 152, morreu Esel, que guiava Doar, aos 66 anos. Foi quem proibiu, em nome do deus, o trato com Mabem. Orali, a medrosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Uma tosse que não passava matou três pessoas em Daum. Depois da febre, Daum passou a queimar os seus mortos, para que a doença não voltasse. No inverno, Kiut rezou por Haur até a voz acabar. Haur morreu mesmo assim, e Kiut nunca mais rezou.
+Depois de anos sob um só, Tohak sentou-se em roda: dali em diante, decidia-se juntos. Apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu.
 
 ### Ano 153
 
-Em Tohak, Hatoia pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Tohak deu graças ao Olho Escuro. A crônica sabe que foi acaso. Nas tabuletas de Tohak, ficou escrito que foi o Olho Escuro. Uma febre correu Tohak e levou cinco vidas. Daum conheceu a maior fome da sua história por causa da seca. Em 21 dias, morreram 30. Muitas cabanas ficaram vazias. A Guerra Santa da Floresta esfriou sem acordo nem vencedor: cinco anos, três batalhas e dois mortos, e ninguém sabia mais por que lutava. Um inverno duro matou três pessoas de frio.
+Com Dout à frente, Tohak largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. No outono, começou a Guerra da Fome: Tohak, com fome, foi buscar à força a comida de Viem. Na Guerra da Fome, Tohak atacou Viem na floresta. Viem foi derrotado e perdeu o que tinha guardado. Na luta morreram Lokiali e Tomaur. Tohak e Viem, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra da Fome acabou em trégua, depois de três anos, duas batalhas e seis mortos. Tohak saiu dela mais forte.
 
 *O ano 154 foi calmo.*
 
 ### Ano 155
 
-No verão do ano 155, Doar atacou Daum na floresta em nome do Senhor do Trovão. Daum resistiu, e Doar voltou de mãos vazias. Na luta morreram Hatoia e Doan. Depois de tantos mortos, Doar e Daum se encontraram na floresta e juraram paz. No outono, Mail, a engenhosa, deu à luz e não sobreviveu ao parto.
+Morreu Kia, aos 54 anos. Na guerra, tinha tirado duas vidas. A forja de Mabem não apagava mais. O metal mudou o trabalho e mudou a guerra. No inverno, Tour, que falava pelo Que Risca o Céu em Tohak, morreu de fome.
 
 ### Ano 156
 
-Com canais e moinhos, Tohak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Morreu o último que tinha visto o ano 76. Em Tohak, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Foram 9 dias de fome no inverno em Tohak, com nove mortos. Foram 9 dias de fome no inverno em Mabem, com dez mortos. No outono, uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito.
 
-*O ano 157 foi calmo.*
+### Ano 157
+
+Em Mabem, Mamarali começou a pregar que o deus não era «o Que Levanta». Era «o Senhor do Trovão». Em poucos anos, todos rezavam assim. O sol escureceu outra vez. Depois disso, Doar deixou de chamar o deus de «a Voz dos Sonhos» e passou a chamá-lo de «o Olho Escuro».
 
 ### Ano 158
 
-Na primavera, Gaorut, que guiava Daum, morreu de velhice aos 59 anos.
+Dout, que guiava Tohak, morreu dormindo, aos 62 anos. Kikiali passou a guiar Tohak, mas Daut não aceitou e guardou rancor. Markura deu à luz gêmeos, Kuru e Beis. Uns viram bênção; outros, mau sinal.
 
 ### Ano 159
 
-Na primavera do ano 159, morreu Daut, que guiava Tohak, aos 62 anos.
+Na primavera, em Mabem, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Mabem, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No inverno, em Tohak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Tohak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 160
 
-Na primavera, sem lugar e sem comida, Doveu e os seus atravessaram a borda do mundo. Ninguém soube deles. Nos anos 151 a 160 houve quatro fomes, 21 preces que pareceram atendidas e cinco preces sem resposta; nasceram 131 crianças e morreram 106 pessoas. No fim do ano 160, 233 pessoas viviam no mundo: Tohak (97), Doar (40), Daum (73) e Marur (23).
+No verão do ano 160, Hael, o devoto, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. Nos anos 151 a 160 houve onze fomes e vinte preces que pareceram atendidas; nasceram 85 crianças e morreram 75 pessoas. No fim do ano 160, 184 pessoas viviam no mundo: Tohak (83), Mabem (36), Doar (38) e Viem (27).
 
-*O ano 161 foi calmo.*
+### Ano 161
+
+Em Mabem, Doel pediu: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A fome passou, e Mabem viu nisso obra do Senhor do Trovão. O deus não tinha feito nada. Os escribas de Mabem registraram o milagre.
 
 ### Ano 162
 
-Morreu Kiu, que guiava Tohak, aos 66 anos. Kurel, que falava pelo Senhor do Trovão em Doar, morreu dormindo, aos 47 anos. No verão, em Daum, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Daum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Morreu Veis, que falava pela Estrela de Cauda em Viem, aos 55 anos. A doença entrou em Tohak e matou oito pessoas. Depois da febre, Tohak passou a queimar os seus mortos, para que a doença não voltasse. No inverno, Orel, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. Tohak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Risca o Céu.
 
 ### Ano 163
 
-Na primavera do ano 163, Ororali disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Ergue». Tohak acreditou, e o deus mudou de nome. Kiorik tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A comida voltou, e Daum deu graças ao Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Os escribas de Daum registraram o milagre. Dais deu à luz gêmeos, Aril e Marur. Uns viram bênção; outros, mau sinal.
+Na primavera, Daut, que falava pelo Que Risca o Céu em Tohak, morreu de velhice aos 66 anos. Nunca perdoou o deus pela morte de Toorut. Mabem atacou Viem na floresta. Viem expulsou os atacantes. Vel, Orel, Ramaru, Toil e Eskiali morreram na luta. Para Mabem, a floresta virou Floresta do Luto. Mabem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Mabem acabou: Doel e Maoria foram viver em Doar.
 
-*Os anos 164 a 165 passaram em paz.*
+### Ano 164
+
+Marbeur pregou em Tohak que o deus não era «o Que Risca o Céu», mas «o Que Afoga». O templo chamou aquilo de heresia, e Marbeur saiu com os que o seguiam. Com Marbeur à frente, 54 pessoas fundaram Doem na praia, onde o deus se chama «o Que Afoga». Em Doem nasceu a primeira criança: Marik, filho de Doia e Marbeur. Desde então, Doem chama a praia de Praia da Fome. Doia passou a falar pelo Que Afoga em Doem. Era a primeira a rezar e a última a duvidar.
+
+### Ano 165
+
+Foram 14 dias de fome no inverno em Doem, com quatro mortos. Em Doem, Marbeur pediu: «Que Afoga, não deixes nossos filhos morrerem de fome.» A fome passou, e Doem viu nisso obra do Que Afoga. O deus nada fez: o crédito era de graça. Com canais e moinhos, Viem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Houve luta na floresta: Doar atacou Viem. Doar venceu e levou a comida guardada. Zeur e Man morreram na luta. Depois da luta, Doar e Viem se encontraram na floresta e juraram paz.
 
 ### Ano 166
 
-Na primavera do ano 166, em Marur, Hamais começou a pregar que o deus não era «o Olho Escuro». Era «o Que Seca». Em poucos anos, todos rezavam assim. Sem lugar e sem comida, Hael e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, houve luta na praia: Daum atacou Marur. Marur expulsou os atacantes. Na luta morreu Beut. Daum e Marur fizeram as pazes na praia, antes que a briga crescesse. Daum passou fome no inverno por 18 dias, e quatro pessoas morreram.
+Na primavera, Mahais disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Senhor das Lanças». Viem acreditou, e o deus mudou de nome. De novo a chuva sumiu, como no ano 101. Foram 25 dias de seca.
 
 ### Ano 167
 
-Na primavera do ano 167, Marem, que guiava Doar, morreu dormindo, aos 61 anos.
+Em Doar, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. A tempestade trouxe raios para o morro. Um deles acertou Kuran. Em Doar, disseram que era castigo. Desde a morte de Kuran, ninguém em Doar sobe o morro em dia de tempestade. Doem atacou Tohak no lago. Tohak resistiu, e Doem voltou de mãos vazias. Na luta morreram Hadaik, Daik e Kimarut. Depois de tantos mortos, Doem e Tohak se encontraram no lago e juraram paz.
 
 ### Ano 168
 
-No verão do ano 168, a tempestade trouxe raios para o morro. Um deles acertou Haia. Em Doar, disseram que era castigo. Desde a morte de Haia, ninguém em Doar sobe o morro em dia de tempestade. A doença entrou em Tohak e matou cinco pessoas. No inverno, Esu, a curiosa, morreu de fome.
+Em Doem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Em Doar, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 122, só a crônica guarda.
 
-### Ano 169
-
-Na primavera, sem lugar e sem comida, Berut e os seus atravessaram a borda do mundo. Ninguém soube deles.
+*O ano 169 passou sem nada que a crônica precise guardar.*
 
 ### Ano 170
 
-Na primavera do ano 170, Orhaik, que falava pelo Que Seca em Marur, morreu de velhice aos 70 anos. Nos anos 161 a 170 houve dezoito fomes, 31 preces que pareceram atendidas e quatro preces sem resposta; nasceram 105 crianças e morreram 85 pessoas. No fim do ano 170, 243 pessoas viviam no mundo: Tohak (103), Doar (42), Daum (73) e Marur (25).
+Mali implorou pela filha. Madoe morreu, e daquele dia em diante Mali cuspia no chão quando falavam do Que Afoga. Nos anos 161 a 170 houve duas secas, dez fomes, três batalhas, 30 preces que pareceram atendidas e quinze preces sem resposta; nasceram 113 crianças e morreram 133 pessoas. No fim do ano 170, 166 pessoas viviam no mundo: Tohak (49), Doar (39), Viem (43) e Doem (35).
 
 ### Ano 171
 
-Morreu Mardoel, que falava pelo Que Seca em Marur, aos 50 anos. No verão, Kura partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
+Kikiali, que guiava Tohak, morreu de velhice aos 60 anos. Bekiali deu à luz gêmeos, Dodaia e Hakik. Uns viram bênção; outros, mau sinal.
 
 ### Ano 172
 
-Na primavera do ano 172, com Kiorik à frente, a nova geração de Daum abandonou a festa da chuva, costume herdado dos avós. Em Tohak, Mardout pediu: «Que Ergue, não deixes nossos filhos morrerem de fome.» A fome passou, e Tohak viu nisso obra do Que Ergue. O deus não tinha feito nada. Os escribas de Tohak registraram o milagre. No outono, a guerra entre Daum e Marur continuou: Daum voltou a atacar na praia. Marur foi derrotado e perdeu o que tinha guardado. Na luta morreu Kois. Depois da luta, Daum e Marur se encontraram na praia e juraram paz. O inverno foi de gelo: duas pessoas morreram de frio.
+Na primavera do ano 172, Domael, que falava pelo Que Risca o Céu em Tohak, morreu dormindo, aos 58 anos. A tempestade trouxe raios para o morro. Um deles acertou Esvian. Logo Esvian, que tanto rezava. Depois disso, Doar deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Senhor do Trovão». Os devotos de Doar não viram castigo: para eles, o Senhor do Trovão chamou Esvian para perto. Nasceu ali a lembrança de Esvian como santo.
 
-### Ano 173
-
-Na primavera, em Marur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Mardout rezou por Gadaia até a voz acabar. Gadaia morreu mesmo assim, e Mardout nunca mais rezou. Mau rezou por Ma até a voz acabar. Ma morreu mesmo assim, e Mau nunca mais rezou.
+*O ano 173 foi calmo.*
 
 ### Ano 174
 
-Com lanças e promessas, Vis acabou com o conselho de Doar e passou a mandar sozinho. Doar atacou Marur na praia. Doar venceu e levou a comida guardada. Gail partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Tohak passou fome no inverno por 8 dias, e duas pessoas morreram.
+Em Doar, Kurmarel pediu: «Senhor do Trovão, não deixes nossos filhos morrerem de fome.» A fome passou, e Doar viu nisso obra do Senhor do Trovão. O deus não tinha feito nada. Doem já não se preparava para nada: o Que Afoga sempre dava.
 
 ### Ano 175
 
-Começou a Guerra da Fome: Doar, com fome, foi buscar à força a comida de Marur. Na Guerra da Fome, Doar atacou Marur na praia. Marur foi derrotado e perdeu o que tinha guardado. Koim e Rumaran morreram na luta. Depois da derrota, os jovens de Marur passaram a treinar com lanças. Doar e Marur fizeram as pazes na praia, antes que a briga crescesse. Depois de um ano, duas batalhas e dois mortos, a Guerra da Fome terminou em paz. Doar saiu dela mais forte.
+Doem passou fome no inverno por 6 dias, e uma pessoa morreu. Vimael, que falava pelo Senhor do Trovão em Doar, não resistiu à fome. Desde a morte de Ruis, nunca mais tinha rezado.
 
 ### Ano 176
 
-Na primavera, morreu Bedali, que fundou Marur e o guiava, aos 62 anos. Foi quem levou os seus a fundar Marur. Com Vis à frente, a nova geração de Doar abandonou a festa da chuva, costume herdado dos avós. No verão, Dodaik, o ambicioso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. Uma febre correu Tohak e levou cinco vidas. Um inverno duro matou cinco pessoas de frio.
+Na primavera do ano 176, Betois disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Que Fere». Tohak acreditou, e o deus mudou de nome. Doar atacou Viem na floresta. Viem resistiu, e Doar voltou de mãos vazias. Ruem morreu na luta. Viem venceu Doar e levou os três sobreviventes para viver sob seu mando. Doar deixou de existir, mas os vencidos guardaram seus costumes em segredo. A fome no inverno durou 9 dias em Doem e levou onze vidas. Tohak encontrou as ruínas de Doar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
-### Ano 177
-
-Dali tinha rezado: «Que Seca, dá-nos o que comer.» A fome passou, e Marur viu nisso obra do Que Seca. Foi só o tempo, mas quem iria dizer?
+*O ano 177 passou sem nada que a crônica precise guardar.*
 
 ### Ano 178
 
-Depois de anos sob um só, Doar sentou-se em roda: dali em diante, decidia-se juntos.
+Na primavera, Toali, que falava pelo Que Fere em Tohak, morreu de repente, aos 40 anos.
 
-### Ano 179
-
-No inverno do ano 179, numa tempestade sobre o lago, um raio matou Marmaia. Logo Marmaia, que tanto rezava. Para os mais fiéis de Tohak, Marmaia não foi castigada, mas escolhida. Desde a morte de Marmaia, ninguém em Tohak chega perto do lago em dia de tempestade.
+*O ano 179 passou sem nada que a crônica precise guardar.*
 
 ### Ano 180
 
-Na primavera do ano 180, Ordoik morreu dormindo, aos 63 anos. Nunca perdoou o deus pela morte de Marik. Morreu Hadoia, a engenhosa, aos 56 anos. Nos anos 171 a 180 houve 31 fomes, três batalhas, 49 preces que pareceram atendidas e doze preces sem resposta; nasceram 120 crianças e morreram 95 pessoas. No fim do ano 180, 260 pessoas viviam no mundo: Tohak (97), Doar (41), Daum (87) e Marur (35).
+Mahais, a engenhosa, morreu de velhice aos 67 anos. Em Tohak, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Fere». No outono, Tomail deu à luz gêmeos, Daik e Gaut. Uns viram bênção; outros, mau sinal. Nos anos 171 a 180 houve sete fomes e dezoito preces que pareceram atendidas; nasceram 100 crianças e morreram 91 pessoas. No fim do ano 180, 177 pessoas viviam no mundo: Tohak (65), Viem (81) e Doem (31).
 
 ### Ano 181
 
-Tantas preces atendidas fizeram Marur confiar no céu mais do que nas próprias mãos. Doar passou a festejar todo ano o dia da volta da chuva, em honra do Senhor do Trovão. A doença entrou em Daum e matou seis pessoas. Em Marur, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Makik, o rancoroso, morreu de fome. Na guerra, tinha tirado duas vidas.
+Na primavera, Orela, de Viem, casou-se com Haut e foi viver em Doem. Foi o primeiro laço entre os dois povos. Oril não podia mais viver perto de Mardaur. Saiu de Tohak com dezessete pessoas e fundou Ortar no morro. Makiel passou a falar pelo Que Fere em Ortar. Era o primeiro a rezar e o último a duvidar. Ortar encontrou as ruínas de Mabem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nasceu Sais, a primeira de Ortar.
 
 ### Ano 182
 
-Na primavera do ano 182, morreu Mardout, o medroso, aos 64 anos. Nunca perdoou o deus pela morte de Gadaia. Morreu Bekiya, a rancorosa, aos 52 anos. Doar passou a receber bem os de fora: um casamento com outro povo virava festa. A fome no inverno durou 9 dias em Daum e levou dezesseis vidas. Depois da febre, Marur passou a queimar os seus mortos, para que a doença não voltasse.
+Em nome do Que Fere, Makiel proibiu casamentos e trocas com Tohak. Era vontade de Makiel, não do deus.
 
 ### Ano 183
 
-Em Doar, Vivel começou a pregar que o deus não era «o Senhor do Trovão». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim. De novo a chuva sumiu, como no ano 101. Foram 21 dias de seca. Toik, que falava pelo Que Ergue em Tohak, não resistiu à fome. Os de Doar caíram sobre Daum na floresta em nome da Mãe de Dois. Doar venceu e levou a comida guardada. Linya, Dout e Beria morreram na luta.
+No verão, os de Ortar caíram sobre Tohak no lago em nome do Que Fere. Tohak expulsou os atacantes. Na luta morreu Ormarur. Ramau, de Ortar, casou-se com Kurorel e foi viver em Viem. Foi o primeiro laço entre os dois povos.
 
 ### Ano 184
 
-Na primavera, Tohak escolheu Linis para guiar o grupo. Gakiali queria o lugar e nunca perdoou. Tohak passou fome no inverno por 9 dias, e dezessete pessoas morreram. Doar passou fome por causa da seca por 20 dias, e seis pessoas morreram. Um inverno duro matou três pessoas de frio. Beran, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
+Marbeur tinha rezado: «Que Afoga, não deixes nossos filhos morrerem de fome.» A comida voltou, e Doem deu graças ao Que Afoga. Foi só o tempo, mas quem iria dizer? As preces de Doem ficaram pequenas: pedia-se ao Que Afoga até sol para a pesca e sorte na caça.
 
 ### Ano 185
 
-No verão, Daum cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Risca o Céu. Começou a Segunda Guerra Santa: em nome da Mãe de Dois, Doar pegou em lanças contra Daum. A Segunda Guerra Santa seguiu: Doar contra Daum, na floresta em nome da Mãe de Dois. Daum foi derrotado e perdeu o que tinha guardado. Dabel morreu na luta.
+Viem passou fome no inverno por 15 dias, mas ninguém morreu. A doença entrou em Viem e matou três pessoas. Viem atacou Ortar no morro. Ortar foi derrotado e perdeu o que tinha guardado. Tout e Oril morreram na luta. Desde então, Ortar chama o morro de Morro do Luto.
 
 ### Ano 186
 
-Veran tinha rezado: «Manda água, Mãe de Dois, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Doar duvidou de que a Mãe de Dois tinha ouvido. A crônica sabe que foi acaso. Sem lugar e sem comida, Toorali e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Toik, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
 ### Ano 187
 
-Na primavera do ano 187, a Segunda Guerra Santa seguiu: Doar contra Daum, na floresta em nome da Mãe de Dois. Doar venceu e levou a comida guardada. Kiberia, Ordoia, Gali e Hakis morreram na luta. Doar e Daum, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de quatro anos, três batalhas e oito mortos, a Segunda Guerra Santa terminou em paz. Doar saiu dela mais forte.
+Na primavera, Mabeali, a engenhosa, morreu de velhice aos 52 anos. Morreu Gail, que falava pelo Senhor das Lanças em Viem, aos 45 anos. Radoel partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
-*O ano 188 passou sem nada que a crônica precise guardar.*
+### Ano 188
+
+Na primavera, Doia, que falava pelo Que Afoga em Doem, morreu de velhice aos 45 anos. Viem atacou Tohak no lago. Tohak expulsou os atacantes. Marel, Kurur e Viruel morreram na luta. Desde então, Viem chama o lago de Lago do Luto.
 
 ### Ano 189
 
-Veran, que falava pela Mãe de Dois em Doar, morreu dormindo, aos 55 anos.
+No verão, começou a Guerra do Lago: o rancor entre Viem e Tohak virou guerra. A Guerra do Lago seguiu: Viem contra Tohak, no lago. Viem venceu e levou a comida guardada. Na luta morreram Maril, Dokis e Doel.
 
 ### Ano 190
 
-Nos anos 181 a 190 houve três secas, dezesseis fomes, três batalhas, 40 preces que pareceram atendidas e oito preces sem resposta; nasceram 163 crianças e morreram 176 pessoas. No fim do ano 190, 243 pessoas viviam no mundo: Tohak (99), Doar (38), Daum (74) e Marur (32).
+Na Guerra do Lago, Viem atacou Tohak no lago. Viem venceu e levou a comida guardada. Daur, Kiut e Rakurur morreram na luta. Nos anos 181 a 190 houve dez fomes, cinco batalhas, dezesseis preces que pareceram atendidas e três preces sem resposta; nasceram 106 crianças e morreram 50 pessoas. No fim do ano 190, 226 pessoas viviam no mundo: Tohak (80), Viem (87), Doem (31) e Ortar (28).
 
 ### Ano 191
 
-Na primavera do ano 191, morreu Ran, o generoso, aos 56 anos. Malinut, que falava pelo Que Risca o Céu em Daum, morreu de velhice aos 62 anos. Nunca perdoou o deus pela morte de Linel. Doar passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Em Ortar, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 121, só a crônica guarda. A seca voltou, como no ano 166: 19 dias sem chuva, até que o céu se abriu. Ormaik tinha rezado: «Que Fere, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Ortar duvidou de que o Que Fere tinha ouvido. Foi só o tempo, mas quem iria dizer? Ortar passou a festejar todo ano o dia da volta da chuva, em honra do Que Fere.
 
 ### Ano 192
 
-Morreu Kiorik, que guiava Daum, aos 66 anos.
+Kiur, que falava pelo Que Afoga em Doem, morreu dormindo, aos 69 anos. Kurorur rezou por Esorel até a voz acabar. Esorel morreu mesmo assim, e Kurorur nunca mais rezou.
 
 ### Ano 193
 
-Ororut não esperou a vez: tomou o comando de Tohak à força, e o conselho dos velhos se calou.
+Na primavera, Viel, que guiava Viem, morreu de velhice aos 63 anos. Sem lugar e sem comida, Ruan e os seus atravessaram a borda do mundo. Ninguém soube deles. O frio levou Kurorur, que falava pelo Senhor das Lanças em Viem. Nunca perdoou o deus pela morte de Esorel. Foram 17 dias de fome no inverno em Viem, com seis mortos. A Guerra do Lago esfriou sem acordo nem vencedor: cinco anos, três batalhas e nove mortos, e ninguém sabia mais por que lutava.
 
-### Ano 194
-
-Em Doar, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 129, só a crônica guarda. Sem lugar e sem comida, Dobeia e os seus atravessaram a borda do mundo. Ninguém soube deles.
+*O ano 194 foi calmo.*
 
 ### Ano 195
 
-Em Tohak, Kiel pediu: «Que Ergue, não deixes nossos filhos morrerem de fome.» A fome passou, e Tohak viu nisso obra do Que Ergue. O deus nada fez: o crédito era de graça. Nas tabuletas de Tohak, ficou escrito que foi o Que Ergue. Doberya partiu com sete pessoas para além da borda do mundo. Nunca voltaram. Uma tosse que não passava matou quatro pessoas em Daum.
+Na primavera, Kiali deu à luz gêmeos, Enenali e Gabeis. Uns viram bênção; outros, mau sinal.
 
-### Ano 196
-
-No verão do ano 196, Via morreu ao dar à luz. Na guerra, tinha tirado duas vidas.
+*O ano 196 passou sem nada que a crônica precise guardar.*
 
 ### Ano 197
 
-Na primavera do ano 197, Daut disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Que Levanta». Daum acreditou, e o deus mudou de nome. Uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito. Para Marur, o deus já não era «o Que Seca»: passou a ser «a Estrela de Cauda».
+Uma febre correu Tohak e levou cinco vidas. No verão, a terra tremeu. Caíram 21 cabanas. Gail, Viur, Vikurel, Kurela e Mael morreram sob os escombros. Para Ortar, o deus já não era «o Que Fere»: passou a ser «a Terra Brava». O inverno foi de gelo: quatro pessoas morreram de frio.
 
 ### Ano 198
 
-Nuia partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
+Na primavera, sem lugar e sem comida, Haut e os seus atravessaram a borda do mundo. Ninguém soube deles. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Tohak, e 23 mortos. As crianças foram as primeiras. Depois dos roubos da fome, Ortar parou de dividir: cada família passou a guardar o que era seu. Ortar já não se preparava para nada: a Terra Brava sempre dava. Um inverno duro matou oito pessoas de frio.
 
 ### Ano 199
 
-Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Numa tempestade sobre a praia, um raio matou Armaria. Em Marur, disseram que era castigo. Marur passou a acreditar que a Estrela de Cauda castiga quem duvida, e que Armaria tinha duvidado. Desde a morte de Armaria, ninguém em Marur desce à praia em dia de tempestade. Dessa vez, a Estrela de Cauda não respondeu, e Marur, que tinha esquecido como se virar sozinho, pagou caro.
+Mardaur, que guiava Tohak, morreu de velhice aos 60 anos. Morreu Marbeur, que fundou Doem e o guiava, aos 56 anos. Tinha fundado Doem. Mahaut passou a guiar Doem, mas Hali não aceitou e guardou rancor. No verão, apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu.
 
 ### Ano 200
 
-Na primavera do ano 200, morreu Maorya, que guiava Daum, aos 57 anos. Desde a morte de Daberik, nunca mais tinha rezado. Em Doar, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 145, só a crônica guarda. Sem lugar e sem comida, Daim e os seus atravessaram a borda do mundo. Ninguém soube deles. A seca voltou, como no ano 183: 19 dias sem chuva, até que o céu se abriu. Nos anos 191 a 200 houve duas secas, 22 fomes, 38 preces que pareceram atendidas e cinco preces sem resposta; nasceram 112 crianças e morreram 169 pessoas. No fim do ano 200, 166 pessoas viviam no mundo: Tohak (68), Doar (25), Daum (58) e Marur (15).
+A terra tremeu. Caíram dezoito cabanas. Hae, Dodour, Mau, Naik, Beorur e Gabeis morreram sob os escombros. Nos anos 191 a 200 houve duas secas, nove fomes, dezenove preces que pareceram atendidas e três preces sem resposta; nasceram 144 crianças e morreram 125 pessoas. No fim do ano 200, 238 pessoas viviam no mundo: Tohak (93), Viem (80), Doem (27) e Ortar (38).
 
 ### Ano 201
 
-Foram 15 dias de fome no inverno em Doar, com cinco mortos.
+Em Ortar, Kidael pediu: «Terra Brava, não nos deixes secar.» Quando a chuva voltou, Ortar agradeceu à Terra Brava. O deus nada fez: o crédito era de graça.
 
-*No ano 202, nada de notável aconteceu.*
+### Ano 202
+
+Foram 9 dias de fome no inverno em Viem, com 22 mortos. Foram 9 dias de fome no inverno em Ortar, com cinco mortos. As preces de Ortar ficaram pequenas: pedia-se à Terra Brava até sol para a pesca e sorte na caça.
 
 ### Ano 203
 
-Na primavera do ano 203, morreu Bedoali, que guiava Daum, aos 65 anos.
+Na primavera, em Doem, Hamiel começou a pregar que o deus não era «o Que Afoga». Era «o Que Risca o Céu». Em poucos anos, todos rezavam assim. No outono, Dahaia, de Doem, casou-se com Marhaut e foi viver em Ortar. Foi o primeiro laço entre os dois povos. A forja de Ortar não apagava mais. O metal mudou o trabalho e mudou a guerra. Ortar passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Ortar, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
-*Do ano 204 ao 205, a vida seguiu sem grandes acontecimentos.*
+### Ano 204
+
+Apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu.
+
+### Ano 205
+
+Doali partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Beu deu à luz gêmeos, Viesis e Rau. Uns viram bênção; outros, mau sinal. Uma tosse que não passava matou oito pessoas em Tohak.
 
 ### Ano 206
 
-Na primavera, Bedour, que falava pelo Que Ergue em Tohak, morreu de velhice aos 71 anos. Desde a morte de Totoia, nunca mais tinha rezado. Berya tinha rezado: «Que Levanta, não deixes nossos filhos morrerem de fome.» A comida voltou, e Daum deu graças ao Que Levanta. O deus nada fez: o crédito era de graça. Nas tabuletas de Daum, ficou escrito que foi o Que Levanta.
+Toik, que guiava Ortar, morreu de velhice aos 67 anos.
 
 ### Ano 207
 
-No verão, Beoris deu à luz gêmeos, Linmaik e Berorut. Uns viram bênção; outros, mau sinal.
+Na primavera, em Doem, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Ortar cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Terra Brava.
 
 ### Ano 208
 
-Foram 9 dias de fome no inverno em Daum, com dois mortos. No outono, a terra tremeu. Caíram 25 cabanas. Mabeik, Toali e Beria morreram sob os escombros.
+O frio levou Betois, a medrosa.
 
-*O ano 209 foi calmo.*
+### Ano 209
+
+Na primavera do ano 209, Bean, o rancoroso, morreu de frio.
 
 ### Ano 210
 
-Esmarel, o curioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Nos anos 201 a 210 houve seis fomes e catorze preces que pareceram atendidas; nasceram 145 crianças e morreram 38 pessoas. No fim do ano 210, 274 pessoas viviam no mundo: Tohak (115), Doar (41), Daum (88) e Marur (30).
+Em Ortar, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Em Viem, Vimaran pediu: «Senhor das Lanças, não deixes nossos filhos morrerem de fome.» A fome passou, e Viem viu nisso obra do Senhor das Lanças. Foi só o tempo, mas quem iria dizer? Os escribas de Viem registraram o milagre. Kil, a generosa, não resistiu à fome. Na guerra, tinha tirado duas vidas. Nos anos 201 a 210 houve duas secas, doze fomes e dez preces que pareceram atendidas; nasceram 158 crianças e morreram 158 pessoas. No fim do ano 210, 238 pessoas viviam no mundo: Tohak (87), Viem (69), Doem (36) e Ortar (46).
 
 ### Ano 211
 
-Sem lugar e sem comida, Todoik e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Tohak caíram sobre Doar no morro. Tohak venceu e levou a comida guardada. Na luta morreu Vemais. No verão, os de Tohak caíram sobre Marur na praia. Marur foi derrotado e perdeu o que tinha guardado. Nuel, Lingaut e Gamarel morreram na luta. Tohak e Marur, cansados de enterrar os seus, fizeram as pazes na praia. Gadaik rezou por Beut até a voz acabar. Beut morreu mesmo assim, e Gadaik nunca mais rezou.
+Na primavera do ano 211, Vimaran, que falava pelo Senhor das Lanças em Viem, morreu dormindo, aos 50 anos. Dali partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Foram 9 dias de fome no inverno em Tohak, com dezesseis mortos. A fome no inverno durou 9 dias em Viem e levou 21 vidas. Um inverno duro matou dezessete pessoas de frio.
 
 ### Ano 212
 
-Na primavera do ano 212, em nome do Que Ergue, Gail proibiu casamentos e trocas com Doar. Era vontade de Gail, não do deus. Kiel, o generoso, morreu de fome. Numa tempestade sobre o morro, um raio matou Vekuran. A família de Vekuran nunca perdoou o céu. Depois disso, Doar deixou de chamar o deus de «a Mãe de Dois» e passou a chamá-la de «a Voz do Céu». No inverno, Daum atacou Doar no morro em nome do Que Levanta. Doar resistiu, e Daum voltou de mãos vazias. Na luta morreram Tolinut, Kioris e Linya.
+Com Kiali à frente, a nova geração de Ortar abandonou o medo das tempestades, costume herdado dos avós. Mamarel partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 213
 
-No inverno, começou a Guerra da Fome do Morro: Tohak, com fome, foi buscar à força a comida de Doar. A Guerra da Fome do Morro seguiu: Tohak contra Doar, no morro em nome do Que Ergue. Tohak venceu e levou a comida guardada. Na luta morreram Ruis, Marais e Kikiut. Desde então, Tohak chama o morro de Morro da Vitória. A Guerra da Fome do Morro seguiu: Tohak contra Doar, no morro em nome do Que Ergue. Tohak venceu e levou a comida guardada. Na luta morreram Nuil e Doan.
+Na primavera do ano 213, com Mabeis à frente, a nova geração de Viem abandonou o costume de queimar os mortos, costume herdado dos avós.
 
 ### Ano 214
 
-Radou, que guiava Tohak, morreu de velhice aos 54 anos. A Guerra da Fome do Morro seguiu: Tohak contra Doar, no morro em nome do Que Ergue. Doar foi derrotado e perdeu o que tinha guardado. Hadoia, Rukurel e Rais morreram na luta.
+Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Dessa vez, o Que Risca o Céu não respondeu, e Doem, que tinha esquecido como se virar sozinho, pagou caro. Em Viem, já ninguém sabia escrever. O que fora feito começou a ruir. O arquivo salvou Doem: Hamiel reaprendeu nas tabuletas o que os mortos sabiam. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Viem perdeu o saber.
 
 ### Ano 215
 
-Começou a Guerra Santa do Morro: em nome do Que Levanta, Daum pegou em lanças contra Doar. No outono, Ruesis, que falava pela Voz do Céu em Doar, não resistiu à fome. Desde a morte de Bevian, nunca mais tinha rezado. Os últimos de Doar, Doem, Mamaru e Ra, juntaram-se a Marur. Doar deixou de existir. A Guerra da Fome do Morro acabou porque um dos lados deixou de existir: quatro anos, quatro batalhas e nove mortos. A Guerra Santa do Morro acabou porque um dos lados deixou de existir: três anos, três batalhas e dez mortos.
+Em Doem, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Risca o Céu». Em Viem, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 150, só a crônica guarda. Rais deu à luz gêmeos, Betoia e Gaur. Uns viram bênção; outros, mau sinal. No verão, a terra tremeu. Caíram 28 cabanas. Oris e Hamiut morreram sob os escombros. De novo a chuva sumiu, como no ano 191. Foram 21 dias de seca.
 
 ### Ano 216
 
-Daut, o rancoroso, morreu dormindo, aos 45 anos. Em Tohak, já ninguém sabia escrever. O que fora feito começou a ruir. Nugael, o desconfiado, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Tohak conheceu a maior fome da sua história no inverno. Em 9 dias, morreram 73. Muitas cabanas ficaram vazias. O inverno foi de gelo: quatro pessoas morreram de frio.
+Em Viem, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Viem passou a festejar todo ano o dia da volta da chuva, em honra do Senhor das Lanças.
 
-### Ano 217
+*Os anos 217 a 218 passaram em paz.*
 
-Morreu o último que tinha visto o ano 130. Em Tohak, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê.
+### Ano 219
 
-### Ano 218
-
-Berya tinha rezado: «Que Levanta, não deixes nossos filhos morrerem de fome.» A comida voltou, e Daum deu graças ao Que Levanta. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Daum, ficou escrito que foi o Que Levanta.
-
-*No ano 219, nada de notável aconteceu.*
+Tomael morreu de velhice aos 53 anos. Na guerra, tinha tirado duas vidas.
 
 ### Ano 220
 
-Na primavera, Gadaik, o generoso, morreu dormindo, aos 63 anos. Nunca perdoou o deus pela morte de Beut. Kiya implorou pela filha. Linya morreu, e daquele dia em diante Kiya cuspia no chão quando falavam do Que Levanta. No verão, Berya anunciou que o Que Levanta proibia qualquer trato com Marur. O deus nunca disse isso, mas Daum obedeceu. No inverno, os de Daum caíram sobre Marur na praia em nome do Que Levanta. Daum venceu e levou a comida guardada. Na luta morreram Todout e Numaria. Nos anos 211 a 220 houve dezoito fomes, nove batalhas, 34 preces que pareceram atendidas e quinze preces sem resposta; nasceram 110 crianças e morreram 227 pessoas. No fim do ano 220, 132 pessoas viviam no mundo: Tohak (23), Daum (85) e Marur (24).
+Em Viem, Kurviel pediu: «Senhor das Lanças, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Viem duvidou de que o Senhor das Lanças tinha ouvido. O deus não tinha feito nada. Os escribas de Viem registraram o milagre. Nos anos 211 a 220 houve quatro secas, doze fomes, dezoito preces que pareceram atendidas e cinco preces sem resposta; nasceram 114 crianças e morreram 187 pessoas. No fim do ano 220, 162 pessoas viviam no mundo: Tohak (80), Viem (25), Doem (10) e Ortar (47).
 
-### Ano 221
-
-No verão, começou a Guerra Santa da Praia: em nome do Que Levanta, Daum pegou em lanças contra Marur. No outono, Berya anunciou que o Que Levanta proibia qualquer trato com Tohak. O deus nunca disse isso, mas Daum obedeceu. Daum atacou Tohak no lago em nome do Que Levanta. Tohak foi derrotado e perdeu o que tinha guardado. Na luta morreram Makik, Marur e Nunuis. Tohak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No inverno, o deus não respondia, e Marur achou que a culpa era sua: tinham feito algo errado. Procuraram um culpado e acharam Ganut, que duvidava.
+*O ano 221 foi calmo.*
 
 ### Ano 222
 
-Morreu o último que tinha visto o ano 175. Em Marur, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. A forja de Marur não apagava mais. O metal mudou o trabalho e mudou a guerra. Kiali, que guiava Marur, morreu ao dar à luz.
+Morreu Kurviel, que guiava Viem, aos 55 anos. Em Doem, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Viem escolheu Mau para guiar o grupo. Rumaran queria o lugar e nunca perdoou.
 
-### Ano 223
-
-Na Guerra Santa da Praia, Daum atacou Marur na praia em nome do Que Levanta. Daum venceu e levou a comida guardada. Nugael e Danur morreram na luta. Depois de tantos mortos, Daum e Marur se encontraram na praia e juraram paz. A Guerra Santa da Praia acabou em trégua, depois de três anos, quatro batalhas e seis mortos. Daum saiu dela mais forte.
+*No ano 223, nada de notável aconteceu.*
 
 ### Ano 224
 
-Toya, que guiava Tohak, morreu de velhice aos 64 anos. A fome no inverno durou 20 dias em Daum e levou cinco vidas. O inverno foi de gelo: sete pessoas morreram de frio.
+Kiali, que guiava Ortar, morreu dormindo, aos 61 anos. Desde a morte de Kiu, nunca mais tinha rezado. De novo o sol se apagou no meio do dia. Depois disso, Viem deixou de chamar o deus de «o Senhor das Lanças» e passou a chamá-lo de «o Que Apaga o Sol».
 
 *O ano 225 foi calmo.*
 
 ### Ano 226
 
-Matoali, a curiosa, morreu de repente, aos 27 anos. Na guerra, tinha tirado três vidas. De novo Daum contra Tohak em nome do Que Levanta, como no ano 221. Tohak foi derrotado e perdeu o que tinha guardado. Na luta morreram Maur e Dotoik. Começou a Guerra Santa do Lago: em nome do Que Levanta, Daum pegou em lanças contra Tohak. Daum e Tohak, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra Santa do Lago acabou em trégua, depois de duas batalhas e três mortos. Daum saiu dela mais forte.
+Matour, que guiava Tohak, morreu dormindo, aos 61 anos. A seca voltou, como no ano 215: 18 dias sem chuva, até que o céu se abriu.
 
 ### Ano 227
 
-Em Daum, Berya pediu: «Que Levanta, não deixes nossos filhos morrerem de fome.» A comida voltou, e Daum deu graças ao Que Levanta. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Daum, ficou escrito que foi o Que Levanta. Tohak passou fome por 36 dias, e oito pessoas morreram. A doença entrou em Daum e matou três pessoas.
+Na primavera do ano 227, com Mau à frente, Viem largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Tohak passou fome no inverno por 9 dias, e três pessoas morreram. Ortar passou fome no inverno por 9 dias, e quatro pessoas morreram. O inverno foi de gelo: sete pessoas morreram de frio.
 
-### Ano 228
-
-Foram 9 dias de fome no inverno em Daum, com sete mortos. Toia deu à luz gêmeos, Gaim e Mardour. Uns viram bênção; outros, mau sinal.
+*O ano 228 foi calmo.*
 
 ### Ano 229
 
-Tohak acabou: Margali e Dokiut foram viver em Marur. As ruínas de Tohak viraram aviso em Daum: era o que o deus fazia com quem o desagradava. O frio levou Margali, a engenhosa.
+A doença entrou em Tohak e matou quatro pessoas. Nakik tinha rezado: «Terra Brava, dá-nos o que comer.» A comida voltou, e Ortar deu graças à Terra Brava. O deus nada fez: o crédito era de graça. Os escribas de Ortar registraram o milagre.
 
 ### Ano 230
 
-Na primavera do ano 230, morreu Berya, que falava pelo Que Levanta em Daum, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Marur. No inverno, Marur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Marur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 221 a 230 houve dez fomes, seis batalhas, 22 preces que pareceram atendidas e onze preces sem resposta; nasceram 69 crianças e morreram 89 pessoas. No fim do ano 230, 113 pessoas viviam no mundo: Daum (79) e Marur (34).
+Nos anos 221 a 230 houve duas secas, cinco fomes e oito preces que pareceram atendidas; nasceram 114 crianças e morreram 70 pessoas. No fim do ano 230, 206 pessoas viviam no mundo: Tohak (97), Viem (47), Doem (20) e Ortar (42).
 
-*No ano 231, nada de notável aconteceu.*
+### Ano 231
+
+Morreu Zeviela, que guiava Tohak, aos 51 anos. Nakik, que falava pela Terra Brava em Ortar, morreu de velhice aos 49 anos.
 
 ### Ano 232
 
-Na primavera do ano 232, Orgali, que guiava Daum, morreu de febre aos 62 anos. Malinel passou a guiar Daum, mas Toik não aceitou e guardou rancor. Uma tosse que não passava matou cinco pessoas em Daum. No inverno, com Beur à frente, onze pessoas deixaram Marur e fundaram Nuan, no lago. As ruínas de Doar viraram aviso em Nuan: era o que o deus fazia com quem o desagradava.
+Na primavera do ano 232, Marhaut, que falava pela Terra Brava em Ortar, morreu dormindo, aos 52 anos. No verão, Mabel, o engenhoso, descobriu como empilhar pedras cortadas sem que caíssem.
 
-### Ano 233
-
-Na primavera do ano 233, com Kidais à frente, catorze pessoas deixaram Daum e fundaram Beak, no morro. Beya tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Nuan deu graças à Estrela de Cauda. A crônica sabe que foi acaso. Em Beak, Linmaik tomou para si o cuidado das preces ao Que Levanta. Diante das ruínas de Tohak, Nuan disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Doik passou dias nas ruínas de Doar e voltou sabendo trabalhar o metal.
+*O ano 233 foi calmo.*
 
 ### Ano 234
 
-Em Beak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 152, só a crônica guarda. De novo a chuva sumiu, como no ano 200. Foram 22 dias de seca.
+Na primavera do ano 234, com Ensaik à frente, a nova geração de Ortar abandonou o costume de queimar os mortos, costume herdado dos avós.
 
 ### Ano 235
 
-Na primavera, Kiel, de Beak, tomou por esposa Kis, de Daum, e os dois povos passaram a se visitar. Nasceu Bera, a primeira de Beak. No inverno, Linut passou dias nas ruínas de Doar e voltou sabendo trabalhar o metal.
+Na primavera do ano 235, Ortar deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. No verão, houve luta na praia: Ortar atacou Doem. Doem foi derrotado e perdeu o que tinha guardado. Na luta morreram Dae, Marmarel e Kinali. Para Ortar, a praia virou Praia da Vitória. Doem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Ortar e Doem se encontraram na praia e juraram paz.
 
-### Ano 236
-
-Na primavera, Kidoya, a pacífica, morreu de velhice aos 48 anos. Em Beak, Kidais começou a pregar que o deus não era «o Que Levanta». Era «a Mãe da Chuva». Em poucos anos, todos rezavam assim.
+*No ano 236, nada de notável aconteceu.*
 
 ### Ano 237
 
-Com Beur à frente, a nova geração de Nuan abandonou o costume de queimar os mortos, costume herdado dos avós. Malinel, de Daum, tomou por esposa Mail, de Nuan, e os dois povos passaram a se visitar. No verão, Kiel passou dias nas ruínas de Doar e voltou sabendo trabalhar o metal. No inverno, a forja de Beak não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Enenali, que falava pela Terra Brava em Ortar, morreu de repente, aos 42 anos. Numa tempestade sobre o morro, um raio matou Enis. Em Ortar, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Ortar sai de casa. Lembram de Enis.
 
 ### Ano 238
 
-Na primavera do ano 238, nasceu Beis, filha de Beur, que guiava Nuan.
+Foram 9 dias de fome no inverno em Tohak, com treze mortos. A fome no inverno durou 9 dias em Viem e levou catorze vidas. Kurman tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Viem viu nisso obra do Que Apaga o Sol. O deus nada fez: o crédito era de graça. Nas tabuletas de Viem, ficou escrito que foi o Que Apaga o Sol. Houve luta na praia: Tohak atacou Doem. Tohak venceu e levou a comida guardada. Na luta morreu Bemik.
 
-*O ano 239 foi calmo.*
+### Ano 239
+
+No outono, começou a Guerra dos Irmãos da Praia: Tohak e Doem, nascidos do mesmo povo, viraram inimigos. Na Guerra dos Irmãos da Praia, Tohak atacou Doem na praia. Tohak venceu e levou a comida guardada. Marel e Marbeis morreram na luta. Em Viem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 240
 
-Na primavera, morreu Gail, a rancorosa, aos 65 anos. Foi quem proibiu, em nome do deus, o trato com Doar. Um inverno duro matou duas pessoas de frio. Nos anos 231 a 240 houve duas secas, nove fomes e dezenove preces que pareceram atendidas; nasceram 65 crianças e morreram 34 pessoas. No fim do ano 240, 144 pessoas viviam no mundo: Daum (79), Marur (36), Nuan (11) e Beak (18).
+Uma tosse que não passava matou três pessoas em Tohak. Nos anos 231 a 240 houve catorze fomes, quatro batalhas e nove preces que pareceram atendidas; nasceram 128 crianças e morreram 113 pessoas. No fim do ano 240, 221 pessoas viviam no mundo: Tohak (102), Viem (54), Doem (14) e Ortar (51).
 
 ### Ano 241
 
-Na primavera, Tout rezou por Lindaik até a voz acabar. Lindaik morreu mesmo assim, e Tout nunca mais rezou.
+Na primavera do ano 241, com lanças e promessas, Orut acabou com o conselho de Tohak e passou a mandar sozinho. No verão, sem lugar e sem comida, Gaur e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma tosse que não passava matou sete pessoas em Tohak.
 
 ### Ano 242
 
-Na primavera, houve luta no morro: Daum atacou Beak. Daum venceu e levou a comida guardada. Na luta morreram Kidais e Mail. Para Beak, o morro virou Morro do Luto. No inverno, Dakout, que guiava Marur, morreu de febre aos 39 anos. Desde a morte de Nuia, nunca mais tinha rezado. O deus não respondia, e Marur achou que a culpa era sua: tinham feito algo errado. Procuraram um culpado e acharam Koim, que duvidava. A doença entrou em Marur e matou sete pessoas.
+Na primavera, Gaik morreu de velhice aos 52 anos.
 
 ### Ano 243
 
-Morreu Belinik, que falava pelo Que Levanta em Daum, aos 50 anos. Na guerra, tinha tirado duas vidas. Em Beak, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Em nome da Estrela de Cauda, Haoria proibiu casamentos e trocas com Nuan. Era vontade de Haoria, não do deus. A fome por causa da seca durou 26 dias em Marur e levou dezesseis vidas. Martoil tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Marur deu graças à Estrela de Cauda. O deus nada fez: o crédito era de graça. Os escribas de Marur registraram o milagre.
+Em Doem, quem vinha de fora era recebido com comida e lugar perto do fogo. Viem passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Maru passou a guiar Ortar, mas Margaor não aceitou e guardou rancor. Ortar passou fome no inverno por 9 dias, e vinte pessoas morreram. A seca voltou, como no ano 226: 20 dias sem chuva, até que o céu se abriu.
 
 ### Ano 244
 
-Na primavera do ano 244, em nome da Estrela de Cauda, Haoria proibiu casamentos e trocas com Beak. Era vontade de Haoria, não do deus. Toik anunciou que o Que Levanta proibia qualquer trato com Nuan. O deus nunca disse isso, mas Daum obedeceu. Daum atacou Nuan no lago em nome do Que Levanta. Daum venceu e levou a comida guardada. Na luta morreram Malinut, Beya e Bekia. Desde então, Nuan chama o lago de Lago do Luto.
+Viem passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Com canais e moinhos, Viem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 245
 
-Os de Daum caíram sobre Marur na praia em nome do Que Levanta. Marur foi derrotado e perdeu o que tinha guardado. Na luta morreu Linur. Aris passou a falar pela Estrela de Cauda em Nuan. Era a primeira a rezar e a última a duvidar. Houve luta no morro: Marur atacou Beak em nome da Estrela de Cauda. Marur venceu e levou a comida guardada. Na luta morreram Ortoel e Berlinik. Para Marur, o morro virou Morro da Vitória.
+Gais deu à luz gêmeos, Oror e Marorur. Uns viram bênção; outros, mau sinal. A Guerra dos Irmãos da Praia esfriou sem acordo nem vencedor: sete anos, quatro batalhas e cinco mortos, e ninguém sabia mais por que lutava. Tohak saiu dela mais forte.
 
-### Ano 246
-
-A guerra entre Daum e Beak continuou: Daum voltou a atacar no morro em nome do Que Levanta. Beak expulsou os atacantes. Dali morreu na luta. Depois de tantos mortos, Daum e Beak se encontraram no morro e juraram paz.
-
-### Ano 247
-
-Morreu Toik, que falava pelo Que Levanta em Daum, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Nuan. Doali partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Começou a Terceira Guerra Santa: em nome do Que Levanta, Daum pegou em lanças contra Nuan. A Terceira Guerra Santa seguiu: Daum contra Nuan, no lago em nome do Que Levanta. Nuan foi derrotado e perdeu o que tinha guardado. Na luta morreram Aris e Beur. De novo a chuva sumiu, como no ano 234. Foram 25 dias de seca.
-
-### Ano 248
-
-Na primavera do ano 248, começou a Quarta Guerra Santa: em nome do Que Levanta, Daum pegou em lanças contra Marur. Na Quarta Guerra Santa, Daum atacou Marur na praia em nome do Que Levanta. Daum venceu e levou a comida guardada. Arel e Maria morreram na luta. A fome no inverno durou 9 dias em Daum e levou dezesseis vidas. Em nome da Estrela de Cauda, Haoria proibiu casamentos e trocas com Daum. Era vontade de Haoria, não do deus. Linmaik tinha rezado: «Manda água, Mãe da Chuva, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Beak duvidou de que a Mãe da Chuva tinha ouvido. O deus não tinha feito nada.
+*Os anos 246 a 248 passaram em paz.*
 
 ### Ano 249
 
-Em Nuan, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No outono, a Quarta Guerra Santa seguiu: Marur contra Daum, na floresta em nome da Estrela de Cauda. Daum expulsou os atacantes. Koel, Gael e Daim morreram na luta. Desde então, Marur chama a floresta de Floresta do Luto. No inverno, Arlinim morreu de fome.
+Morreu Rumaran, que guiava Viem, aos 45 anos. Hamiel, que guiava Doem, morreu de velhice aos 72 anos. Desde a morte de Dobeil, nunca mais tinha rezado.
 
 ### Ano 250
 
-Doik, o rancoroso, morreu de velhice aos 45 anos. Nuan acabou: Linbel, o último, foi viver em Marur. A Terceira Guerra Santa acabou porque um dos lados deixou de existir: seis anos, três batalhas e oito mortos. Daum encontrou as ruínas de Nuan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, Gali deu à luz gêmeos, Totois e Berdoya. Uns viram bênção; outros, mau sinal. Nos anos 241 a 250 houve quatro secas, onze fomes, dez batalhas, 37 preces que pareceram atendidas e vinte preces sem resposta; nasceram 70 crianças e morreram 103 pessoas. No fim do ano 250, 110 pessoas viviam no mundo: Daum (75), Marur (15) e Beak (20).
+Nos anos 241 a 250 houve quatro secas, catorze fomes, duas batalhas e sete preces que pareceram atendidas; nasceram 153 crianças e morreram 122 pessoas. No fim do ano 250, 252 pessoas viviam no mundo: Tohak (106), Viem (85), Doem (7) e Ortar (54).
 
 ### Ano 251
 
-Numa tempestade sobre o morro, um raio matou Toya. Em Beak, disseram que era castigo. Para Beak, o deus já não era «a Mãe da Chuva»: passou a ser «a Voz do Céu». Desde a morte de Toya, ninguém em Beak sobe o morro em dia de tempestade. No inverno, depois de tantos mortos, Marur e Daum se encontraram na floresta e juraram paz. Depois de seis anos, cinco batalhas e dez mortos, a Quarta Guerra Santa terminou em paz. Daum saiu dela mais forte.
+Na primavera, houve luta na praia: Tohak atacou Doem. Doem expulsou os atacantes. Na luta morreram Magaia, Daik, Ororel e Gaorik. Depois de tantos mortos, Tohak e Doem se encontraram na praia e juraram paz. A doença entrou em Tohak e matou sete pessoas. A terra tremeu. Caíram 26 cabanas. Kik, Sali, Gaut, Orela e Beur morreram sob os escombros. Ruzeis rezou por Kurbel até a voz acabar. Kurbel morreu mesmo assim, e Ruzeis nunca mais rezou.
 
 ### Ano 252
 
-Na primavera do ano 252, morreu Kik, que falava pelo Que Levanta em Daum, aos 63 anos. Marur acabou: Martoil, Makout e Lintoia foram viver em Daum. Daum encontrou as ruínas de Marur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Beak encontrou as ruínas de Marur e disse que ali tinham vivido gigantes.
+Viem passou fome no inverno por 3 dias, e uma pessoa morreu. Zeoran tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Viem deu graças ao Que Apaga o Sol. O deus não tinha feito nada. Nas tabuletas de Viem, ficou escrito que foi o Que Apaga o Sol. Ramarur rezou por Orrael até a voz acabar. Orrael morreu mesmo assim, e Ramarur nunca mais rezou.
 
 ### Ano 253
 
-No inverno, Beak já não se preparava para nada: a Voz do Céu sempre dava. Deixaram de poupar água.
+De novo a chuva sumiu, como no ano 243. Foram 20 dias de seca.
 
-*Do ano 254 ao 255, a vida seguiu sem grandes acontecimentos.*
+### Ano 254
 
-### Ano 256
+Na primavera, Zeoran, que falava pelo Que Apaga o Sol em Viem, morreu de velhice aos 70 anos. Mabel, o engenhoso, morreu de velhice aos 51 anos. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Tohak, e 34 mortos. As crianças foram as primeiras. No inverno, Zebeis deu à luz gêmeos, Orman e Zeur. Uns viram bênção; outros, mau sinal.
 
-Berel, que falava pelo Que Levanta em Daum, morreu dormindo, aos 64 anos. Na guerra, tinha tirado duas vidas.
-
-*No ano 257, nada de notável aconteceu.*
+*Entre os anos 255 e 257, nada mudou o rumo do mundo.*
 
 ### Ano 258
 
-Kidoali tinha rezado: «Que Levanta, dá-nos o que comer.» A fome passou, e Daum viu nisso obra do Que Levanta. Foi só o tempo, mas quem iria dizer? Os escribas de Daum registraram o milagre.
+Na primavera do ano 258, Ruzeis partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Houve luta na praia: Viem atacou Doem. Viem venceu e levou a comida guardada. Na luta morreu Maik. Uma tosse que não passava matou quatro pessoas em Tohak. Depois da seca, Tohak jurou nunca desperdiçar água. Depois da seca, Viem jurou nunca desperdiçar água.
 
 ### Ano 259
 
-Na primavera do ano 259, Maberya pregou em Daum que o deus não era «o Que Levanta», mas «a Sombra». O templo chamou aquilo de heresia, e Maberya saiu com os que a seguiam. Os que ainda rezavam, com Maberya à frente, deixaram Daum, que tinha deixado de crer, e fundaram Selor no lago. Ali o deus se chama «a Sombra». Bera, de Beak, casou-se com Maik e foi viver em Selor. Foi o primeiro laço entre os dois povos. Em Beak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os de Daum caíram sobre Selor no lago em nome do Que Levanta. Selor foi derrotado e perdeu o que tinha guardado. Na luta morreram Dois e Orik.
+Na primavera do ano 259, em nome do Que Apaga o Sol, Bemaran proibiu casamentos e trocas com Doem. Era vontade de Bemaran, não do deus. Começou a Guerra da Fome da Praia: Viem, com fome, foi buscar à força a comida de Doem. Depois da derrota, Doem não existia mais: os sete que sobraram foram levados para Viem. A Guerra da Fome da Praia terminou com a conquista: um ano, duas batalhas e três mortos. No inverno, Orut não podia mais viver perto de Kidour. Saiu de Tohak com dezesseis pessoas e fundou Saes na praia.
 
 ### Ano 260
 
-Na primavera do ano 260, Berik morreu de velhice aos 55 anos. No outono, nasceu Beru, filha de Maberya, que guiava Selor. No inverno, em Selor, Galinis tomou para si o cuidado das preces à Sombra. De novo a chuva sumiu, como no ano 247. Foram 22 dias de seca. Nos anos 251 a 260 houve duas secas, três fomes, duas batalhas, doze preces que pareceram atendidas e sete preces sem resposta; nasceram 55 crianças e morreram 45 pessoas. No fim do ano 260, 120 pessoas viviam no mundo: Daum (31), Beak (26) e Selor (63).
+Nasceu Beut, o primeiro de Saes. Saes encontrou as ruínas de Doar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Saes encontrou as ruínas de Doem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Daia passou a falar pelo Que Fere em Saes. Era a primeira a rezar e a última a duvidar. Nos anos 251 a 260 houve duas secas, dezoito fomes, três batalhas, doze preces que pareceram atendidas e quatro preces sem resposta; nasceram 175 crianças e morreram 205 pessoas. No fim do ano 260, 222 pessoas viviam no mundo: Tohak (64), Viem (88), Ortar (51) e Saes (19).
 
 ### Ano 261
 
-Na primavera do ano 261, Linmaik, que guiava Beak, morreu de velhice aos 54 anos. Na guerra, tinha tirado duas vidas. Toali passou a guiar Beak, mas Dais não aceitou e guardou rancor. No outono, as preces de Beak ficaram pequenas: pedia-se à Voz do Céu até sol para a pesca e sorte na caça. Apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu. A terra tremeu. Caíram catorze cabanas. Lindais e Orali morreram sob os escombros.
+Na primavera, em Saes, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Fere». Rais partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Kurman tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Viem deu graças ao Que Apaga o Sol. O deus não tinha feito nada. Os escribas de Viem registraram o milagre.
 
 ### Ano 262
 
-Na primavera, Kidoali, que falava pelo Que Levanta em Daum, morreu dormindo, aos 57 anos. Foi quem proibiu, em nome do deus, o trato com Selor. Com Maberya à frente, a nova geração de Selor abandonou o cuidado com a água, costume herdado dos avós.
+Orut, que fundou Saes e o guiava, morreu dormindo, aos 60 anos. Tinha fundado Saes. A fome no inverno durou 9 dias em Viem e levou cinco vidas. Em nome do Que Apaga o Sol, Bemaran proibiu casamentos e trocas com Tohak. Era vontade de Bemaran, não do deus. Os de Viem caíram sobre Tohak no lago em nome do Que Apaga o Sol. Tohak resistiu, e Viem voltou de mãos vazias. Kurel e Raoru morreram na luta. Numa tempestade sobre o morro, um raio matou Marsaor. Ninguém em Ortar teve dúvida: era castigo.
 
 ### Ano 263
 
-Na primavera do ano 263, em Beak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam.
+Com Kiel à frente, a nova geração de Saes abandonou o medo das tempestades, costume herdado dos avós.
 
 ### Ano 264
 
-Morreu Malinel, que guiava Daum, aos 61 anos. Na guerra, tinha tirado duas vidas. Daum deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
+Dogais, de Saes, casou-se com Gadoel e foi viver em Ortar. Foi o primeiro laço entre os dois povos. Começou a Guerra Santa: em nome do Que Apaga o Sol, Viem pegou em lanças contra Tohak. A Guerra Santa seguiu: Viem contra Tohak, no lago em nome do Que Apaga o Sol. Tohak resistiu, e Viem voltou de mãos vazias. Maur e Hae morreram na luta. No inverno, na Guerra Santa, Viem atacou Tohak no lago em nome do Que Apaga o Sol. Tohak resistiu, e Viem voltou de mãos vazias. Rur, Oresan e Ormaris morreram na luta.
 
-*Os anos 265 a 266 passaram em paz.*
+### Ano 265
+
+A Guerra Santa seguiu: Viem contra Tohak, no lago. Tohak resistiu, e Viem voltou de mãos vazias. Ramarur e Esur morreram na luta. Viem e Tohak, cansados de enterrar os seus, fizeram as pazes no lago. Depois de três anos, quatro batalhas e nove mortos, a Guerra Santa terminou em paz. Tohak saiu dela mais forte.
+
+### Ano 266
+
+Em Saes, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. Maru, que guiava Ortar, morreu de frio. Ortar escolheu Gadour para guiar o grupo. Saor queria o lugar e nunca perdoou. Os de Viem caíram sobre Saes na praia em nome do Que Apaga o Sol. Saes foi derrotado e perdeu o que tinha guardado. Na luta morreram Gaia e Hadoali. Para Saes, a praia virou Praia do Luto.
 
 ### Ano 267
 
-Morreu Mais, aos 61 anos. Na guerra, tinha tirado duas vidas.
+Houve luta na praia: Ortar atacou Saes. Ortar venceu e levou a comida guardada. Dagais e Kiel morreram na luta.
 
 *No ano 268, nada de notável aconteceu.*
 
 ### Ano 269
 
-Selor já não se preparava para nada: a Sombra sempre dava. Selor já não cabia no lago. Dobeik, o corajoso, levou 31 pessoas para a praia e fundou Marem. Marem encontrou as ruínas de Doar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nasceu Kimaut, o primeiro de Marem. No outono, em Marem, Beis tomou para si o cuidado das preces à Sombra.
+Na primavera do ano 269, Bemaran, que falava pelo Que Apaga o Sol em Viem, morreu dormindo, aos 68 anos. Foi quem proibiu, em nome do deus, o trato com Doem. Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Em Viem, quem vinha de fora era recebido com comida e lugar perto do fogo. Bekuran implorou pela filha. Virau morreu, e daquele dia em diante Bekuran cuspia no chão quando falavam do Que Apaga o Sol. A doença entrou em Ortar e matou dezenove pessoas.
 
 ### Ano 270
 
-Na primavera do ano 270, Bergaya, a desconfiada, morreu de velhice aos 69 anos. Na guerra, tinha tirado três vidas. Morreu Kiel, o engenhoso, aos 53 anos. Em Marem, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Marem encontrou as ruínas de Marur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Matois tinha rezado: «Sombra, cura meu filho.» Os doentes se levantaram. Em Marem, o crédito foi da Sombra. O deus nada fez: o crédito era de graça. Nos anos 261 a 270 houve duas secas e quinze preces que pareceram atendidas; nasceram 93 crianças e morreram 32 pessoas. No fim do ano 270, 181 pessoas viviam no mundo: Daum (41), Beak (36), Selor (72) e Marem (32).
+Na primavera do ano 270, morreu Kurman, o generoso, aos 69 anos. Em Saes, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Em Viem, Kurman pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Viem viu nisso obra do Que Apaga o Sol. O deus nada fez: o crédito era de graça. Nas tabuletas de Viem, ficou escrito que foi o Que Apaga o Sol. Nos anos 261 a 270 houve quatro secas, nove fomes, seis batalhas, nove preces que pareceram atendidas e cinco preces sem resposta; nasceram 116 crianças e morreram 132 pessoas. No fim do ano 270, 202 pessoas viviam no mundo: Tohak (92), Viem (72), Ortar (31) e Saes (7).
 
-### Ano 271
-
-Em Marem, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 181, só a crônica guarda. Doberel, de Marem, tomou por esposa Doberis, de Selor, e os dois povos passaram a se visitar. Doberis passou dias nas ruínas de Tohak e voltou sabendo cortar pedra. As preces de Selor ficaram pequenas: pedia-se à Sombra até sol para a pesca e sorte na caça. Gakik passou dias nas ruínas de Marur e voltou sabendo cortar pedra.
+*No ano 271, nada de notável aconteceu.*
 
 ### Ano 272
 
-Na primavera, Marem ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Nas ruínas de Tohak, Doberis achou o que eles sabiam: aprendeu a trabalhar o metal. A forja de Marem não apagava mais. O metal mudou o trabalho e mudou a guerra. Marem passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Marem, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Na primavera do ano 272, morreu Orur, que guiava Tohak, aos 59 anos. Em Saes, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 273
 
-Na primavera do ano 273, Dabeik, o engenhoso, morreu dormindo, aos 57 anos. Morreu Dobeik, que fundou Marem e o guiava, aos 51 anos. Tinha fundado Marem. Marem escolheu Kibeik para guiar o grupo. Matois queria o lugar e nunca perdoou. Marem cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Sombra. Dail, a devota, desenhou o primeiro canal e a primeira roda d'água.
+Dahaik morreu de velhice aos 51 anos. Na guerra, tinha tirado duas vidas.
 
-*No ano 274, nada de notável aconteceu.*
+### Ano 274
+
+De novo a chuva sumiu, como no ano 253. Foram 19 dias de seca.
 
 ### Ano 275
 
-Na primavera, com Maberya à frente, a nova geração de Selor abandonou o costume de queimar os mortos, costume herdado dos avós. No inverno, dessa vez, a Voz do Céu não respondeu, e Beak, que tinha esquecido como se virar sozinho, pagou caro. De novo a chuva sumiu, como no ano 260. Foram 26 dias de seca. O dia em que a chuva voltou virou festa em Beak: todo ano, celebram a chuva que a Voz do Céu mandou.
+Os de Viem caíram sobre Saes na praia. Viem venceu e levou a comida guardada. Kihaia e Markik morreram na luta. Saes não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Foram 11 dias de fome no inverno em Viem, com três mortos. Houve luta no morro: Viem atacou Ortar. Ortar foi derrotado e perdeu o que tinha guardado. Na luta morreram Ensael, Daia e Taur. Viem e Ortar, cansados de enterrar os seus, fizeram as pazes no morro.
 
-### Ano 276
-
-Marem passou fome por causa da seca por 12 dias, e três pessoas morreram. A praia passou a ser a praia da fome: Praia da Fome. Beak passou fome por causa da seca por 14 dias, e quatro pessoas morreram.
-
-### Ano 277
-
-Linik, o ambicioso, morreu de repente, aos 36 anos. Em Selor, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No inverno, com canais e moinhos, Beak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
-
-### Ano 278
-
-Na primavera do ano 278, em Marem, Bedaik começou a pregar que o deus não era «a Sombra». Era «o Que Seca». Em poucos anos, todos rezavam assim.
+*Os anos 276 a 278 passaram em paz.*
 
 ### Ano 279
 
-A doença entrou em Selor e matou três pessoas. Depois da febre, Selor passou a queimar os seus mortos, para que a doença não voltasse. Em Selor, Maberya pediu: «Cura Maya, Sombra. Ela é tão pequena.» A febre passou, e Maberya contou a todos que a Sombra tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Em Viem, Orzean pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Viem viu nisso obra do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Viem, ficou escrito que foi o Que Apaga o Sol. No inverno, Doil, que guiava Viem, morreu de fome.
 
 ### Ano 280
 
-A fome no inverno durou 9 dias em Selor e levou 25 vidas. Nos anos 271 a 280 houve quatro secas, seis fomes e dezesseis preces que pareceram atendidas; nasceram 120 crianças e morreram 87 pessoas. No fim do ano 280, 214 pessoas viviam no mundo: Daum (69), Beak (41), Selor (76) e Marem (28).
+Viem não esqueceu o ano 275 e atacou Ortar outra vez. Viem venceu e levou a comida guardada. Na luta morreram Marorur e Sael. Depois de tantos mortos, Viem e Ortar se encontraram no morro e juraram paz. Viem passou fome no inverno por 9 dias, e vinte pessoas morreram. Tali deu à luz gêmeos, Mahaik e Kihael. Uns viram bênção; outros, mau sinal. No outono, um raio caiu no morro durante a tempestade e matou Marel. Em Ortar, disseram que era castigo. Nos anos 271 a 280 houve três secas, sete fomes, três batalhas e nove preces que pareceram atendidas; nasceram 93 crianças e morreram 95 pessoas. No fim do ano 280, 202 pessoas viviam no mundo: Tohak (98), Viem (66), Ortar (33) e Saes (5).
 
-### Ano 281
+*No ano 281, nada de notável aconteceu.*
 
-Na primavera, os de Marem caíram sobre Daum na floresta. Daum expulsou os atacantes. Na luta morreram Lindaia, Kibeik, Bedaik e Lintoik. Depois de tantos mortos, Marem e Daum se encontraram na floresta e juraram paz. A doença entrou em Beak e matou cinco pessoas. O deus calou justo quando Selor mais dependia dele. Maberya rezou por Linu até a voz acabar. Linu morreu mesmo assim, e Maberya nunca mais rezou.
+### Ano 282
 
-*O ano 282 passou sem nada que a crônica precise guardar.*
+Na primavera, Tomais, que guiava Tohak, morreu de velhice aos 59 anos.
 
-### Ano 283
+*No ano 283, nada de notável aconteceu.*
 
-Na primavera do ano 283, a terra tremeu. Caíram dezesseis cabanas. Linel, Tomaya, Kidaut, Togali, Kis, Berik, Bedoel e Beis morreram sob os escombros.
+### Ano 284
 
-*O ano 284 foi calmo.*
+Sem lugar e sem comida, Zel e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 285
 
-De novo a chuva sumiu, como no ano 275. Foram 21 dias de seca.
+Na primavera, o sol escureceu outra vez.
 
 ### Ano 286
 
-Na primavera do ano 286, Dail, que falava pela Voz do Céu em Beak, morreu de frio. Foram 12 dias de fome no inverno em Beak, com dois mortos. Um inverno duro matou quinze pessoas de frio.
+Tohak atacou Saes na praia. Tohak venceu e levou a comida guardada. Maroris e Lindaut morreram na luta. Depois da luta, Tohak e Saes se encontraram na praia e juraram paz. A febre levou Toil, que guiava Tohak. No outono, houve luta no morro: Tohak atacou Ortar. Ortar resistiu, e Tohak voltou de mãos vazias. Gakiut e Saoror morreram na luta. Desde então, Tohak chama o morro de Morro do Luto.
 
-*O ano 287 passou sem nada que a crônica precise guardar.*
+### Ano 287
+
+Na primavera do ano 287, Kidout morreu dormindo, aos 63 anos. Na guerra, tinha tirado duas vidas. Uma tosse que não passava matou cinco pessoas em Tohak. Sem lugar e sem comida, Magael e os seus atravessaram a borda do mundo. Ninguém soube deles. Bekuru rezou por Marraur até a voz acabar. Marraur morreu mesmo assim, e Bekuru nunca mais rezou.
 
 ### Ano 288
 
-Na primavera do ano 288, morreu Orberis, que guiava Beak, aos 57 anos. Bel tinha rezado: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Beak viu nisso obra da Voz do Céu. Foi só o tempo, mas quem iria dizer? Os escribas de Beak registraram o milagre. No inverno, de novo o sol se apagou no meio do dia.
+Em Viem, Bezeur pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Viem viu nisso obra do Que Apaga o Sol. O deus nada fez: o crédito era de graça. Os escribas de Viem registraram o milagre.
 
 ### Ano 289
 
-Na primavera, tantas preces atendidas fizeram Marem confiar no céu mais do que nas próprias mãos.
+Na primavera, Maresis, que guiava Tohak, morreu dormindo, aos 53 anos. Oris passou a guiar Tohak, mas Makiut não aceitou e guardou rancor. Depois de tanta briga pelo comando, Tohak passou a ser guiado por um conselho dos mais velhos.
 
 ### Ano 290
 
-Na primavera do ano 290, Dadaik, que guiava Daum, morreu de velhice aos 66 anos. Daum escolheu Mamaik para guiar o grupo. Maberik queria o lugar e nunca perdoou. Um inverno duro matou doze pessoas de frio. Galinis, que falava pela Sombra em Selor, morreu de fome. Nos anos 281 a 290 houve duas secas, dezesseis fomes e 23 preces que pareceram atendidas; nasceram 160 crianças e morreram 162 pessoas. No fim do ano 290, 212 pessoas viviam no mundo: Daum (60), Beak (42), Selor (83) e Marem (27).
+Na primavera, Rael, que guiava Viem, morreu de velhice aos 67 anos. A fome no inverno durou 15 dias em Tohak e levou duas vidas. No inverno, um raio caiu na praia durante a tempestade e matou Maon. Ninguém em Saes teve dúvida: era castigo. Desde a morte de Maon, ninguém em Saes desce à praia em dia de tempestade. A doença entrou em Tohak e matou dez pessoas. Nos anos 281 a 290 houve duas secas, catorze fomes, duas batalhas e oito preces que pareceram atendidas; nasceram 110 crianças e morreram 120 pessoas. No fim do ano 290, 186 pessoas viviam no mundo: Tohak (64), Viem (66), Ortar (45) e Saes (11).
 
 ### Ano 291
 
-Na primavera, sem lugar e sem comida, Gabeik e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma tosse que não passava matou dezesseis pessoas em Daum. A fome no inverno durou 9 dias em Daum e levou oito vidas. A fome no inverno durou 9 dias em Beak e levou quatro vidas. Dessa vez, o Que Seca não respondeu, e Marem, que tinha esquecido como se virar sozinho, pagou caro.
+De novo Tohak contra Saes, como no ano 286. Saes foi derrotado e perdeu o que tinha guardado. Naorali, Gaur e Bea morreram na luta. Depois de tantos mortos, Tohak e Saes se encontraram na praia e juraram paz. Tohak passou fome no inverno por 9 dias, e dezoito pessoas morreram. Viem passou fome no inverno por 9 dias, e dezenove pessoas morreram. De novo a chuva sumiu, como no ano 274. Foram 18 dias de seca.
 
-*Os anos 292 a 293 passaram em paz.*
+### Ano 292
+
+Sadoali partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os de Viem caíram sobre Saes na praia. Viem venceu e levou a comida guardada. Na luta morreu Gael. No outono, Tour, de Tohak, casou-se com Nagali e mudou-se para Saes, coisa que ninguém tinha feito antes.
+
+*O ano 293 foi calmo.*
 
 ### Ano 294
 
-Em Marem, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
+Houve luta no morro: Tohak atacou Ortar. Ortar expulsou os atacantes. Marhaia e Makiut morreram na luta. Começou a Guerra dos Irmãos do Morro: Tohak e Ortar, nascidos do mesmo povo, viraram inimigos.
 
 ### Ano 295
 
-Na primavera do ano 295, Berim partiu com três pessoas para além da borda do mundo. Nunca voltaram.
+Raela, a generosa, morreu de velhice aos 50 anos. Sem lugar e sem comida, Hagais e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 296
 
-Morreu Bel, que falava pela Voz do Céu em Beak, aos 47 anos. Dogael não esperou a vez: tomou o comando de Beak à força, e o conselho dos velhos se calou.
+No verão do ano 296, Tour partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Saes perdeu o saber. Os últimos de Saes, Gali e Isis, juntaram-se a Ortar. Saes deixou de existir.
 
 ### Ano 297
 
-Mamaik, que guiava Daum, morreu de repente, aos 41 anos. Em Selor, Seldoim pediu: «Sombra, não deixes nossos filhos morrerem de fome.» A comida voltou, e Selor deu graças à Sombra. O deus nada fez: o crédito era de graça.
+Esan tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Viem viu nisso obra do Que Apaga o Sol. A crônica sabe que foi acaso. Os escribas de Viem registraram o milagre. Zeur rezou por Maran até a voz acabar. Maran morreu mesmo assim, e Zeur nunca mais rezou. No inverno, a Guerra dos Irmãos do Morro esfriou sem acordo nem vencedor: três anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Ortar saiu dela mais forte.
 
 ### Ano 298
 
-Orya, a curiosa, morreu de repente, aos 41 anos. Linia deu à luz gêmeos, Doya e Dois. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 298, morreu Bekuru, que falava pelo Que Apaga o Sol em Viem, aos 53 anos. Desde a morte de Marraur, nunca mais tinha rezado. No verão, a terra tremeu. Caíram 21 cabanas. Totoia, Maur, Marais, Orkuran, Esel e Enia morreram sob os escombros. No inverno, a terra tremeu. Caíram 21 cabanas. Marur, Oria, Oril, Bezeur, Esesel e Tael morreram sob os escombros.
 
 ### Ano 299
 
-Na primavera, Gaik, que falava pela Voz do Céu em Beak, morreu dormindo, aos 50 anos. Dotoik, que falava pela Sombra em Selor, morreu de velhice aos 45 anos. A terra tremeu. Caíram 23 cabanas. Kiut, Kiorut, Maia, Dogaya, Makiel, Linmaut, Doarya, Selberel, Arel, Selulik e Kimaut morreram sob os escombros.
+Na primavera, Bel, o desconfiado, morreu dormindo, aos 51 anos. Na guerra, tinha tirado três vidas.
 
 ### Ano 300
 
-Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Daorel rezou por Daia até a voz acabar. Daia morreu mesmo assim, e Daorel nunca mais rezou. Uma febre correu Daum e levou 49 vidas. Depois da febre, Marem passou a queimar os seus mortos, para que a doença não voltasse. No outono, numa tempestade sobre o morro, um raio matou Gaia. Ninguém em Beak teve dúvida: era castigo. Nos anos 291 a 300 houve dezesseis fomes, 23 preces que pareceram atendidas e seis preces sem resposta; nasceram 149 crianças e morreram 211 pessoas. No fim do ano 300, 146 pessoas viviam no mundo: Daum (43), Beak (33), Selor (60) e Marem (10).
+Na primavera, Mabeis, que guiava Viem, morreu de velhice aos 66 anos. Tohak passou fome no inverno por 8 dias, e uma pessoa morreu. Miut rezou por Kuru até a voz acabar. Kuru morreu mesmo assim, e Miut nunca mais rezou. Uma tosse que não passava matou três pessoas em Viem. Nos anos 291 a 300 houve duas secas, quinze fomes, quatro batalhas, onze preces que pareceram atendidas e três preces sem resposta; nasceram 138 crianças e morreram 101 pessoas. No fim do ano 300, 208 pessoas viviam no mundo: Tohak (98), Viem (70) e Ortar (40).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Daum** vive na floresta, com 43 pessoas, com canais e moinhos; nasceu de uma migração em Tohak no ano 126; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 152); faz a festa da chuva (desde o ano 181); não desperdiça uma gota d'água (desde o ano 181).
-- **Beak** vive no morro, com 33 pessoas, com canais e moinhos; nasceu de uma migração em Daum no ano 233; chama o deus de «a Voz do Céu»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 251); faz a festa da chuva (desde o ano 275); queima os mortos (desde o ano 281).
-- **Selor** vive no lago, com 60 pessoas, com canais e moinhos; nasceu de um cisma em Daum no ano 259; chama o deus de «a Sombra»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 279).
-- **Marem** vive na praia, com 10 pessoas, com canais e moinhos; nasceu de uma migração em Selor no ano 269; chama o deus de «o Que Seca»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 300).
+- **Tohak** vive no lago, com 98 pessoas, com canais e moinhos; é o povo mais antigo; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (desde o ano 121); não sai de casa em dia de tempestade (desde o ano 131); queima os mortos (desde o ano 162); não desperdiça uma gota d'água (desde o ano 258).
+- **Viem** vive na floresta, com 70 pessoas, com canais e moinhos; nasceu de uma briga em Doar no ano 128; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 214); faz a festa da chuva (desde o ano 216); não desperdiça uma gota d'água (desde o ano 258); treina os jovens com lanças (desde o ano 262).
+- **Ortar** vive no morro, com 40 pessoas, com canais e moinhos; nasceu de uma briga em Tohak no ano 181; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 191); queima os mortos (desde o ano 235); não sai de casa em dia de tempestade (desde o ano 237); treina os jovens com lanças (desde o ano 275).
 
-Povos que deixaram de existir: Tohak, Marum, Mabem, Doar, Marur e Nuan.
+Povos que deixaram de existir: Marum, Mabem, Doar, Doem e Saes.
 
-Lugares com nome: Praia do Raio (praia, para Mabem), Praia da Vitória (praia, para Tohak), Praia da Trégua (praia, para Doar), Praia da Trégua (praia, para Daum), Praia da Trégua (praia, para Marur), Praia da Fome (praia, para Marem), Lago da Fome (lago, para Tohak), Lago do Luto (lago, para Marum), Lago da Vitória (lago, para Daum), Lago do Luto (lago, para Nuan), Lago do Luto (lago, para Selor), Floresta do Raio (floresta, para Tohak), Floresta do Luto (floresta, para Marum), Floresta da Vitória (floresta, para Daum), Floresta do Luto (floresta, para Doar), Floresta do Luto (floresta, para Marur), Floresta do Luto (floresta, para Marem), Morro do Raio (morro, para Doar), Morro do Luto (morro, para Daum), Morro da Vitória (morro, para Tohak), Morro do Luto (morro, para Beak) e Morro da Vitória (morro, para Marur).
+Lugares com nome: Praia do Raio (praia, para Mabem), Praia do Luto (praia, para Tohak), Praia da Fome (praia, para Doem), Praia da Vitória (praia, para Ortar), Praia da Vitória (praia, para Viem), Praia do Luto (praia, para Saes), Lago da Fome (lago, para Tohak), Lago do Luto (lago, para Doem), Lago do Luto (lago, para Viem), Floresta do Raio (floresta, para Tohak), Floresta do Luto (floresta, para Marum), Floresta do Luto (floresta, para Viem), Floresta do Luto (floresta, para Mabem), Floresta da Vitória (floresta, para Doar), Floresta da Trégua (floresta, para Ortar), Morro da Fome (morro, para Doar), Morro da Trégua (morro, para Viem), Morro do Luto (morro, para Ortar) e Morro do Luto (morro, para Tohak).
 
-Em 300 anos nasceram 2313 pessoas e morreram 2103.
+Em 300 anos nasceram 2499 pessoas e morreram 2264.

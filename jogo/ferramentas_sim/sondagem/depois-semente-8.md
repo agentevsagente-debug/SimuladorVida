@@ -244,819 +244,789 @@ No verão do ano 77, os de Esan caíram sobre Zegak na floresta em nome da Terra
 
 ### Ano 78
 
-Haor morreu de repente, aos 40 anos. Desde a morte de Berruel, nunca mais tinha rezado. Ruzeya deu à luz gêmeos, Vihail e Zean. Uns viram bênção; outros, mau sinal. Começou a Guerra Santa: em nome da Terra Brava, Esan pegou em lanças contra Zegak. A Guerra Santa seguiu: Esan contra Zegak, na floresta em nome da Terra Brava. Zegak resistiu, e Esan voltou de mãos vazias. Na luta morreram Haniela e Zeor. Haniela morreu sem ensinar o que sabia. O saber de plantar morreu com ela.
+No inverno, começou a Guerra Santa: em nome da Terra Brava, Esan pegou em lanças contra Zegak. A Guerra Santa seguiu: Esan contra Zegak, na floresta em nome da Terra Brava. Zegak foi derrotado e perdeu o que tinha guardado. Na luta morreram Mamau e Behaor. Depois da derrota, os jovens de Zegak passaram a treinar com lanças.
 
 *No ano 79, nada de notável aconteceu.*
 
 ### Ano 80
 
-Rilar tinha rezado: «Manda água, Que Risca o Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Zegak duvidou de que o Que Risca o Céu tinha ouvido. O deus não tinha feito nada. No inverno, Niniel, o curioso, descobriu que uma semente enterrada vira planta. Foi a fome que o fez olhar para o chão. Nos anos 71 a 80 houve cinco secas, doze fomes, quatro batalhas, 42 preces que pareceram atendidas e onze preces sem resposta; nasceram 62 crianças e morreram 56 pessoas. No fim do ano 80, 97 pessoas viviam no mundo: Zegak (56), Esan (17) e Haes (24).
+Rilar tinha rezado: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Zegak agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. Nos anos 71 a 80 houve quatro secas, doze fomes, três batalhas, 39 preces que pareceram atendidas e nove preces sem resposta; nasceram 62 crianças e morreram 54 pessoas. No fim do ano 80, 98 pessoas viviam no mundo: Zegak (55), Esan (17) e Haes (26).
 
 ### Ano 81
 
-Na primavera, Viya não podia mais viver perto de Hagaela. Saiu de Haes com treze pessoas e fundou Fail no morro. Bear partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. No verão, a Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Zegak saiu dela mais forte. No outono, de novo Esan contra Zegak em nome da Terra Brava, como no ano 78. Zegak expulsou os atacantes. Ruzeya, Viel e Nibear morreram na luta. Haes acabou: Haya e Ruruar foram viver em Zegak.
+A Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 82
 
-Nasceu Buar, filho de Hau e Rubel, com sangue de Fail e de Zegak. Berbela, de Fail, casou-se com Hahar e foi viver em Esan. Foi o primeiro laço entre os dois povos. Berbela levou consigo o segredo das sementes. A terra tremeu. Caíram dez cabanas. Nigael e Viela morreram sob os escombros.
+Morreu o último que tinha visto o ano 18. Em Zegak, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
 
 ### Ano 83
 
-No inverno do ano 83, começou a Guerra Santa da Floresta: em nome da Terra Brava, Esan pegou em lanças contra Zegak. Na Guerra Santa da Floresta, Esan atacou Zegak na floresta em nome da Terra Brava. Zegak expulsou os atacantes. Na luta morreram Hahar e Niniel.
+Na primavera do ano 83, morreu Maviur, que falava pela Terra Brava em Haes, aos 55 anos. Tinha sido o primeiro a plantar.
 
-### Ano 84
-
-Com a morte de Berbela, Esan perdeu o segredo das sementes: ninguém mais sabia plantar. De novo a chuva sumiu, como no ano 72. Foram 21 dias de seca. Rubem tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Fail duvidou de que a Terra Brava tinha ouvido. O deus não tinha feito nada.
+*No ano 84, nada de notável aconteceu.*
 
 ### Ano 85
 
-No outono, o frio levou Hanuor, o devoto. Uma tosse que não passava matou três pessoas em Zegak. Desde a febre, Zegak não enterra mais ninguém: os mortos vão para o fogo.
+Rilar, que falava pelo Que Risca o Céu em Zegak, morreu dormindo, aos 54 anos. Esan atacou Zegak na floresta. Zegak resistiu, e Esan voltou de mãos vazias. Ruzeya e Niniel morreram na luta. Esan e Zegak, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 86
 
-Zegak passou fome no inverno por 6 dias, e uma pessoa morreu. No outono, numa tempestade sobre o morro, um raio matou Viya. Em Fail, disseram que era castigo. Para Fail, Viya foi castigada. Desde então, quem duvida da Terra Brava duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Fail sai de casa. Lembram de Viya. O lugar ganhou nome: Morro do Raio.
+Morreu Esil, que guiava Zegak, aos 59 anos. Zegak escolheu Zear para guiar o grupo. Mar queria o lugar e nunca perdoou.
 
-### Ano 87
-
-Em Zegak, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 18, só a crônica guarda. A fome por causa da seca durou 15 dias em Zegak e levou nove vidas. No inverno, a Guerra Santa da Floresta esfriou sem acordo nem vencedor: seis anos, quatro batalhas e seis mortos, e ninguém sabia mais por que lutava. Zegak saiu dela mais forte.
+*O ano 87 passou sem nada que a crônica precise guardar.*
 
 ### Ano 88
 
-Os de Zegak caíram sobre Fail no morro. Zegak venceu e levou a comida guardada. Rubem e Bean morreram na luta. Para Zegak, o morro virou Morro da Vitória. Depois da derrota, os jovens de Fail passaram a treinar com lanças. Começou a Guerra do Morro: o rancor entre Zegak e Fail virou guerra.
+Na primavera, morreu Viya, que guiava Haes, aos 57 anos. A fome por causa da seca durou 23 dias em Zegak e levou quinze vidas. Foram 26 dias de fome por causa da seca em Haes, com cinco mortos. Depois daquela fome, Haes passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A praia passou a ser a praia da fome: Praia da Fome.
 
 ### Ano 89
 
-Em Fail, Ruar tomou para si o cuidado das preces à Terra Brava. Zegar, de Zegak, tomou por esposa Berhaya, de Fail, e os dois povos passaram a se visitar.
+Na primavera, Berel, que falava pela Terra Brava em Esan, morreu de velhice aos 48 anos. Foi quem proibiu, em nome do deus, o trato com Haes. Em Esan, Berel pediu: «Terra Brava, dá-nos o que comer.» A comida voltou, e Esan deu graças à Terra Brava. O deus não tinha feito nada.
 
 ### Ano 90
 
-Na primavera do ano 90, morreu Esil, que guiava Zegak, aos 63 anos. Runil, que guiava Esan, morreu dormindo, aos 58 anos. Com Hagaela à frente, a nova geração de Fail abandonou a festa da chuva, costume herdado dos avós. Maela passou a guiar Zegak, mas Mar não aceitou e guardou rancor. Nos anos 81 a 90 houve três secas, sete fomes, seis batalhas, 25 preces que pareceram atendidas e oito preces sem resposta; nasceram 52 crianças e morreram 55 pessoas. No fim do ano 90, 88 pessoas viviam no mundo: Zegak (57), Esan (9) e Fail (22).
+Na primavera, morreu Haor, o rancoroso, aos 52 anos. Desde a morte de Berruel, nunca mais tinha rezado. Eshaur, o curioso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Nos anos 81 a 90 houve doze fomes, vinte preces que pareceram atendidas e quatro preces sem resposta; nasceram 43 crianças e morreram 46 pessoas. No fim do ano 90, 95 pessoas viviam no mundo: Zegak (55), Esan (15) e Haes (25).
 
-### Ano 91
-
-Na primavera do ano 91, a Guerra do Morro esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Zegak saiu dela mais forte. Os de Esan caíram sobre Zegak na floresta em nome da Terra Brava. Zegak foi derrotado e perdeu o que tinha guardado. Viu e Beor morreram na luta. Zegak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No outono, Ruel, o corajoso, descobriu como empilhar pedras cortadas sem que caíssem. No inverno, começou a Segunda Guerra Santa: em nome da Terra Brava, Esan pegou em lanças contra Zegak.
-
-### Ano 92
-
-Fail passou a festejar todo ano o dia da volta da chuva, em honra da Terra Brava.
+*Entre os anos 91 e 92, nada mudou o rumo do mundo.*
 
 ### Ano 93
 
-Rilar, que falava pelo Que Risca o Céu em Zegak, morreu dormindo, aos 62 anos. Hagaela, que guiava Fail, morreu de velhice aos 61 anos. Tinha levado o saber de plantar para Esan. No outono, Zegak venceu Esan e levou os sete sobreviventes para viver sob seu mando. Esan deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Segunda Guerra Santa terminou com a conquista: dois anos, cinco batalhas e seis mortos. No inverno, Zegak encontrou as ruínas de Esan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Na primavera, Hagaela morreu dormindo, aos 61 anos. Tinha levado o saber de plantar para Esan. Em Zegak, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 31, só a crônica guarda.
 
 ### Ano 94
 
-De novo a chuva sumiu, como no ano 84. Foram 22 dias de seca. Esar tinha rezado: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Zegak agradeceu ao Que Risca o Céu. A crônica sabe que foi acaso. Mar, que falava pelo Que Risca o Céu em Zegak, morreu de fome.
+Esan passou a receber bem os de fora: um casamento com outro povo virava festa.
 
 ### Ano 95
 
-Zeur rezou por Zeu até a voz acabar. Zeu morreu mesmo assim, e Zeur nunca mais rezou. Zegak via Fail ser atendido e concluiu que o Que Risca o Céu tinha escolhido os outros. Uma febre correu Zegak e levou cinco vidas. A fome por causa da seca durou 18 dias em Fail e levou sete vidas. Depois daquela fome, Fail passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Zegak escolheu Vinuil para guiar o grupo. Gau queria o lugar e nunca perdoou. Com Berbela à frente, dez pessoas deixaram Haes e fundaram Toran, no morro.
 
-*O ano 96 passou sem nada que a crônica precise guardar.*
+### Ano 96
+
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Para Zegak, o deus já não era «o Que Risca o Céu»: passou a ser «a Sombra». Uma febre correu Zegak e levou 48 vidas. Os últimos de Toran, Berbela e Berberem, juntaram-se a Zegak. Toran deixou de existir. Zegak encontrou as ruínas de Toran. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 97
 
-Na primavera, Esar, o pacífico, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Na primavera do ano 97, Vior, que falava pela Sombra em Zegak, morreu de velhice aos 60 anos. Morreu Haniela, que falava pelo Que Leva em Esan, aos 49 anos. Tinha levado o saber de plantar para Esan. Com a morte de Haniela, Esan perdeu o segredo das sementes: ninguém mais sabia plantar.
 
 ### Ano 98
 
-No inverno do ano 98, a rixa entre Beruar e Ruar rachou Fail. Beruar partiu com os seus, treze pessoas, e fundou Maror no lago. Hau passou a falar pela Terra Brava em Maror. Era a primeira a rezar e a última a duvidar. Maror encontrou as ruínas de Esan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+No outono do ano 98, a forja de Zegak não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
-### Ano 99
-
-Maror encontrou as ruínas de Haes. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Mahaya, de Zegak, casou-se com Beniel e foi viver em Maror. Foi o primeiro laço entre os dois povos. Em Maror nasceu a primeira criança: Berya, filha de Faesya e Buar.
+*O ano 99 foi calmo.*
 
 ### Ano 100
 
-Na primavera, Hau, que falava pela Terra Brava em Maror, morreu dormindo, aos 52 anos. Nos anos 91 a 100 houve três secas, quatro fomes, cinco batalhas, dezenove preces que pareceram atendidas e nove preces sem resposta; nasceram 61 crianças e morreram 59 pessoas. No fim do ano 100, 90 pessoas viviam no mundo: Zegak (60), Fail (11) e Maror (19).
+Na primavera do ano 100, Ruan, que falava pelo Que Leva em Esan, morreu de repente, aos 25 anos. Beor tinha rezado: «Manda água, Sombra, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Zegak duvidou de que a Sombra tinha ouvido. O deus nada fez: o crédito era de graça. Nos anos 91 a 100 houve duas fomes, onze preces que pareceram atendidas e seis preces sem resposta; nasceram 42 crianças e morreram 86 pessoas. No fim do ano 100, 51 pessoas viviam no mundo: Zegak (31), Esan (9) e Haes (11).
 
 ### Ano 101
 
-Morreu Berel, que guiava Zegak, aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Haes.
+No verão, Gael, o rancoroso, inventou marcas que guardavam palavras.
 
 *No ano 102, nada de notável aconteceu.*
 
 ### Ano 103
 
-Hamar morreu dormindo, aos 51 anos. Na guerra, tinha tirado duas vidas. No inverno, a forja de Zegak não apagava mais. O metal mudou o trabalho e mudou a guerra. Zeur, o engenhoso, não resistiu à fome. Desde a morte de Zeu, nunca mais tinha rezado. Depois disso, Zegak deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-lo de «o Olho Escuro». Depois disso, Fail deixou de chamar o deus de «a Terra Brava» e passou a chamá-lo de «o Que Apaga o Sol».
+Na primavera, morreu Ruar, que guiava Haes, aos 53 anos. Morreu o último que tinha visto o ano 52. Em Haes, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
 
 ### Ano 104
 
-Na primavera, em nome do Olho Escuro, Zear proibiu casamentos e trocas com Maror. Era vontade de Zear, não do deus. Zegak conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 36. Muitas cabanas ficaram vazias. No outono, começou a Guerra Santa do Lago: em nome do Olho Escuro, Zegak pegou em lanças contra Maror. Depois de tantos mortos, Zegak e Maror se encontraram no lago e juraram paz. A Guerra Santa do Lago acabou em trégua, depois de duas batalhas e quatro mortos.
+Na primavera, Runil, que guiava Esan, morreu de velhice aos 72 anos.
 
-*No ano 105, nada de notável aconteceu.*
+### Ano 105
+
+Na primavera do ano 105, Faela, de Haes, casou-se com Niberar e foi viver em Esan. Faela levou consigo o segredo das sementes.
 
 ### Ano 106
 
-Na primavera, em Maror, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Beruar tinha rezado: «Cura Nifael, Terra Brava. Ele é tão pequeno.» A febre passou, e Beruar contou a todos que a Terra Brava tinha ouvido. A crônica sabe que foi acaso. De novo a chuva sumiu, como no ano 94. Foram 18 dias de seca. No inverno, Niniya, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Com Gau à frente, Zegak largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Zezela, de Zegak, casou-se com Vian e foi viver em Esan. Zezela levou consigo o segredo das sementes. No inverno, Esan fez as primeiras roças no Lago do Raio. Deixou de viver só do que achava e passou a plantar.
 
-*O ano 107 foi calmo.*
+### Ano 107
+
+No inverno do ano 107, Zegak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Zegak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 108
 
-Gaor, o medroso, inventou marcas que guardavam palavras.
+Na primavera do ano 108, morreu Gau, que guiava Zegak, aos 55 anos.
 
 ### Ano 109
 
-Na primavera, Nu morreu dormindo, aos 47 anos. Na guerra, tinha tirado duas vidas.
+Berar, que guiava Haes, morreu de velhice aos 50 anos.
 
 ### Ano 110
 
-No inverno do ano 110, a rixa entre Zear e Vinuil rachou Zegak. Zear partiu com os seus, dezenove pessoas, e fundou Rilur na praia. Em Rilur nasceu a primeira criança: Maya, filha de Nuya e Gabear. Rilur encontrou as ruínas de Esan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Nos anos 101 a 110 houve três secas, duas batalhas, dezesseis preces que pareceram atendidas e seis preces sem resposta; nasceram 68 crianças e morreram 60 pessoas. No fim do ano 110, 98 pessoas viviam no mundo: Zegak (26), Fail (17), Maror (35) e Rilur (20).
+No fim do ano 110, 82 pessoas viviam no mundo: Zegak (47), Esan (20) e Haes (15).
 
-### Ano 111
-
-Na primavera do ano 111, em Rilur, Nuya começou a pregar que o deus não era «o Olho Escuro». Era «a Voz do Céu». Em poucos anos, todos rezavam assim. Mail passou a falar pela Voz do Céu em Rilur. Era a primeira a rezar e a última a duvidar. No verão, Mail anunciou que a Voz do Céu proibia qualquer trato com Zegak. O deus nunca disse isso, mas Rilur obedeceu. Rilur atacou Zegak na floresta em nome da Voz do Céu. Zegak resistiu, e Rilur voltou de mãos vazias. Na luta morreram Ruzel, Mazela e Nuya. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Rilur perdeu o saber.
-
-### Ano 112
-
-Na primavera do ano 112, Zear, que fundou Rilur e o guiava, morreu dormindo, aos 61 anos. Foi quem levou os seus a fundar Rilur. No outono, Maror ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Gaela tinha rezado: «Voz do Céu, não nos deixes secar.» Quando a chuva voltou, Rilur agradeceu à Voz do Céu. Foi só o tempo, mas quem iria dizer?
+*Do ano 111 ao 112, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 113
 
-Na primavera do ano 113, Ruar, que guiava Fail, morreu dormindo, aos 63 anos. Niesel, de Fail, tomou por esposa Beil, de Rilur, e os dois povos passaram a se visitar.
+Na primavera, morreu Esnior, que guiava Esan, aos 62 anos. Em Esan, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 52, só a crônica guarda.
 
 ### Ano 114
 
-Na primavera do ano 114, morreu Esar, que falava pelo Olho Escuro em Zegak, aos 66 anos. Com Zegar à frente, a nova geração de Rilur abandonou o costume de queimar os mortos, costume herdado dos avós. No outono, Habela deu à luz gêmeos, Zela e Nubeur. Uns viram bênção; outros, mau sinal.
+Na primavera, Beor, que falava pela Sombra em Zegak, morreu dormindo, aos 62 anos.
 
-### Ano 115
-
-Na primavera, a guerra entre Rilur e Zegak continuou: Rilur voltou a atacar na floresta em nome da Voz do Céu. Zegak expulsou os atacantes. Na luta morreu Maor.
+*O ano 115 passou sem nada que a crônica precise guardar.*
 
 ### Ano 116
 
-Na primavera do ano 116, Berar, que guiava Fail, morreu dormindo, aos 57 anos. Maror já não se preparava para nada: a Terra Brava sempre dava.
+Na primavera, Zegar, que guiava Zegak, morreu de velhice aos 50 anos. Berbela passou a guiar Zegak, mas Benuel não aceitou e guardou rancor.
 
 *O ano 117 foi calmo.*
 
 ### Ano 118
 
-Na primavera do ano 118, Vinuil, que guiava Zegak, morreu de velhice aos 62 anos. Em Zegak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Zegak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Maya, que guiava Haes, morreu de repente, aos 42 anos. No outono, uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito. Para Haes, o deus já não era «o Que Leva»: passou a ser «a Estrela de Cauda».
 
 ### Ano 119
 
-Na primavera, com Beruar à frente, a nova geração de Maror abandonou o treino com lanças, costume herdado dos avós.
+Vian tinha rezado: «Que Leva, dá-nos o que comer.» A comida voltou, e Esan deu graças ao Que Leva. O deus nada fez: o crédito era de graça. No verão, Faela, que falava pela Sombra em Zegak, morreu ao dar à luz. Tinha levado o saber de plantar para Esan. Hazeil deu à luz gêmeos, Benior e Esruil. Uns viram bênção; outros, mau sinal.
 
 ### Ano 120
 
-Na primavera do ano 120, morreu Rilzeor, que guiava Zegak, aos 55 anos. Nunca perdoou o deus pela morte de Niar. Beruar, que fundou Maror e o guiava, morreu de velhice aos 52 anos. Tinha fundado Maror. Com Zegar à frente, a nova geração de Rilur abandonou o treino com lanças, costume herdado dos avós. No outono, Ibfaya, de Maror, casou-se com Esel e foi viver em Fail. Foi o primeiro laço entre os dois povos. No inverno, em Fail, quem vinha de fora era recebido com comida e lugar perto do fogo. Nos anos 111 a 120 houve duas secas, quatro fomes, duas batalhas, 21 preces que pareceram atendidas e sete preces sem resposta; nasceram 76 crianças e morreram 27 pessoas. No fim do ano 120, 148 pessoas viviam no mundo: Zegak (54), Fail (31), Maror (52) e Rilur (11).
+No inverno do ano 120, Zeu, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. De novo a chuva sumiu, como no ano 72. Foram 26 dias de seca. Nos anos 111 a 120 houve duas fomes, dez preces que pareceram atendidas e três preces sem resposta; nasceram 68 crianças e morreram 72 pessoas. No fim do ano 120, 79 pessoas viviam no mundo: Zegak (36), Esan (27) e Haes (16).
 
 ### Ano 121
 
-Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Para Fail, o deus já não era «o Que Apaga o Sol»: passou a ser «a Estrela de Cauda». Depois disso, Maror deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Estrela de Cauda».
+Zegak conheceu a maior fome da sua história por causa da seca. Em 27 dias, morreram 52. Muitas cabanas ficaram vazias. Haberar rezou por Esruil até a voz acabar. Esruil morreu mesmo assim, e Haberar nunca mais rezou.
 
-*O ano 122 passou sem nada que a crônica precise guardar.*
+### Ano 122
+
+A doença entrou em Esan e matou duas pessoas. Em nome do Que Leva, Vian proibiu casamentos e trocas com Haes. Era vontade de Vian, não do deus.
 
 ### Ano 123
 
-Houve luta na floresta: Rilur atacou Zegak em nome da Voz do Céu. Zegak expulsou os atacantes. Haviar e Magaya morreram na luta. Rilur não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+No inverno do ano 123, com canais e moinhos, Zegak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
 ### Ano 124
 
-No inverno, em Maror, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Beran implorou pelo filho. Ruruan morreu, e daquele dia em diante Beran cuspia no chão quando falavam da Estrela de Cauda. A febre levou Zeu, a engenhosa. A febre levou Berbela, que guiava Zegak. Foi quem levou os seus a fundar Toran. Vian, que guiava Esan, morreu de febre aos 42 anos. Foi quem proibiu, em nome do deus, o trato com Haes.
 
-### Ano 125
-
-Gar, de Rilur, tomou por esposa Rubeya, de Maror, e os dois povos passaram a se visitar. No inverno, Habela morreu ao dar à luz. Na guerra, tinha tirado duas vidas.
+*No ano 125, nada de notável aconteceu.*
 
 ### Ano 126
 
-Morreu Mail, que falava pela Voz do Céu em Rilur, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Zegak. Morreu o último que tinha visto o ano 63. Em Rilur, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Ibfaya partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Rilur escolheu Maribis para guiar o grupo. Rubeya queria o lugar e nunca perdoou.
+Em Esan, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 73, só a crônica guarda. No inverno, em Haes, disseram que a Estrela de Cauda só ouvia Zegak. A inveja virou rancor.
 
 ### Ano 127
 
-Na primavera, Bubeya, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No inverno, tantas preces atendidas fizeram Fail confiar no céu mais do que nas próprias mãos.
+Na primavera do ano 127, Mail, que falava pela Estrela de Cauda em Haes, morreu de velhice aos 62 anos.
 
 ### Ano 128
 
-Na primavera, Gabear, que guiava Zegak, morreu dormindo, aos 60 anos.
+Na primavera, em Zegak, Hail começou a pregar que o deus não era «a Sombra». Era «a Terra Brava». Em poucos anos, todos rezavam assim.
 
-### Ano 129
-
-Morreu Garilela, que guiava Zegak, aos 53 anos. Gaela, a curiosa, descobriu como empilhar pedras cortadas sem que caíssem.
+*No ano 129, nada de notável aconteceu.*
 
 ### Ano 130
 
-No outono do ano 130, sem lugar e sem comida, Begail e os seus atravessaram a borda do mundo. Ninguém soube deles. No inverno, dessa vez, a Estrela de Cauda não respondeu, e Fail, que tinha esquecido como se virar sozinho, pagou caro. Depois da seca, Fail jurou nunca desperdiçar água. Em nome da Estrela de Cauda, Hail proibiu casamentos e trocas com Rilur. Era vontade de Hail, não do deus. Gaela, a curiosa, morreu de fome. Nos anos 121 a 130 houve duas fomes, dezenove preces que pareceram atendidas e seis preces sem resposta; nasceram 114 crianças e morreram 122 pessoas. No fim do ano 130, 131 pessoas viviam no mundo: Zegak (43), Maror (66) e Rilur (22).
+Nos anos 121 a 130 houve três secas, três fomes, onze preces que pareceram atendidas e seis preces sem resposta; nasceram 57 crianças e morreram 52 pessoas. No fim do ano 130, 84 pessoas viviam no mundo: Zegak (57), Esan (20) e Haes (7).
 
 ### Ano 131
 
-Beniel, que falava pela Estrela de Cauda em Maror, morreu de velhice aos 50 anos. Fail desapareceu: morreu o último dos seus. O deus calou justo quando Maror mais dependia dele. As ruínas de Fail viraram aviso em Zegak: era o que o deus fazia com quem o desagradava. Maror passou fome por causa da seca por 21 dias, e dezenove pessoas morreram.
+Em Haes, Esruela pediu: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Haes agradeceu à Estrela de Cauda. O deus não tinha feito nada.
 
-### Ano 132
-
-Na primavera, Zegak atacou Rilur na praia. Rilur foi derrotado e perdeu o que tinha guardado. Na luta morreram Esniya e Esesar. Desde então, Rilur chama a praia de Praia do Luto. A rixa entre Maribis e Maniur rachou Rilur. Maribis partiu com os seus, nove pessoas, e fundou Mavil no morro. Mavil encontrou as ruínas de Fail e disse que ali tinham vivido gigantes.
+*O ano 132 foi calmo.*
 
 ### Ano 133
 
-Na primavera do ano 133, em Mavil, Haur começou a pregar que o deus não era «a Voz do Céu». Era «o Que Dá». Em poucos anos, todos rezavam assim. Em Mavil, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. No verão, em Mavil, Haur tomou para si o cuidado das preces ao Que Dá.
+No verão, em Haes, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 134
 
-Com Maribis à frente, a nova geração de Mavil abandonou a festa da chuva, costume herdado dos avós.
+Depois de anos sob um só, Zegak sentou-se em roda: dali em diante, decidia-se juntos. Ninguém lembrava mais a razão, e Haes abandonou a festa da chuva.
 
-### Ano 135
+*Do ano 135 ao 136, a vida seguiu sem grandes acontecimentos.*
 
-Gaor tinha rezado: «Olho Escuro, não nos deixes secar.» Quando a chuva voltou, Zegak agradeceu ao Olho Escuro. O deus não tinha feito nada. Os escribas de Zegak registraram o milagre. O dia em que a chuva voltou virou festa em Mavil: todo ano, celebram a chuva que o Que Dá mandou. No inverno, nasceu Rilbuya, a primeira de Mavil.
+### Ano 137
 
-### Ano 136
+Na primavera, em Zegak, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Terra Brava».
 
-Na primavera do ano 136, Berbear partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Foram 9 dias de fome no inverno em Maror, com nove mortos.
-
-*O ano 137 foi calmo.*
-
-### Ano 138
-
-Na primavera do ano 138, cansado de um líder que mandava sozinho, Rilur passou a decidir em conselho. Com Rubeya à frente, a nova geração de Rilur abandonou o cuidado com a água, costume herdado dos avós. Maribis, que fundou Mavil e o guiava, morreu ao dar à luz. Foi quem levou os seus a fundar Mavil. No outono, Mazeur, de Zegak, tomou por esposa Rilnis, de Mavil, e os dois povos passaram a se visitar.
+*O ano 138 passou sem nada que a crônica precise guardar.*
 
 ### Ano 139
 
-Haur, de Mavil, tomou por esposa Marruis, de Maror, e os dois povos passaram a se visitar.
+Com Berberem à frente, Zegak largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Com Zeur à frente, oito pessoas deixaram Zegak e fundaram Zeur, no morro.
 
 ### Ano 140
 
-Nifan implorou pela filha. Ruruela morreu, e daquele dia em diante Nifan cuspia no chão quando falavam da Estrela de Cauda. De novo o sol se apagou no meio do dia. O inverno foi de gelo: duas pessoas morreram de frio. Nos anos 131 a 140 houve três fomes, quinze preces que pareceram atendidas e quatro preces sem resposta; nasceram 131 crianças e morreram 49 pessoas. No fim do ano 140, 211 pessoas viviam no mundo: Zegak (84), Maror (82), Rilur (34) e Mavil (11).
+Na primavera, Nibeor morreu de repente, aos 43 anos. Nurilya não esperou a vez: tomou o comando de Zegak à força, e o conselho dos velhos se calou. Morreu o último que tinha visto o ano 63. Em Zeur, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Zeur tinha rezado: «Terra Brava, dá-nos o que comer.» A comida voltou, e Zeur deu graças à Terra Brava. O deus nada fez: o crédito era de graça. No inverno, em Zeur nasceu a primeira criança: Zeya, filha de Haniela e Zeur. Nos anos 131 a 140 houve três fomes e sete preces que pareceram atendidas; nasceram 96 crianças e morreram dezesseis pessoas. No fim do ano 140, 164 pessoas viviam no mundo: Zegak (91), Esan (49), Haes (15) e Zeur (9).
 
-*O ano 141 foi calmo.*
+### Ano 141
 
-### Ano 142
+Na primavera, morreu Nigael, que guiava Haes, aos 75 anos. Em Haes, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 88, só a crônica guarda. Uma febre correu Zegak e levou seis vidas.
 
-Na primavera do ano 142, com Zeya à frente, Zegak largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Buya deu à luz gêmeos, Bebeya e Ruya. Uns viram bênção; outros, mau sinal.
+*O ano 142 foi calmo.*
 
 ### Ano 143
 
-Em Rilur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Rilur já não se preparava para nada: a Voz do Céu sempre dava. Uma febre correu Maror e levou nove vidas. Depois da febre, Maror passou a queimar os seus mortos, para que a doença não voltasse.
+Zegak atacou Haes na praia. Haes foi derrotado e perdeu o que tinha guardado. Na luta morreu Hanu. Zegak passou fome no inverno por 15 dias, e duas pessoas morreram.
 
 ### Ano 144
 
-Na primavera, em Zegak, Zeesar começou a pregar que o deus não era «o Olho Escuro». Era «a Terra Brava». Em poucos anos, todos rezavam assim. Em Zegak, Gaor pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zegak deu graças à Terra Brava. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zegak, ficou escrito que foi a Terra Brava. No outono, a forja de Maror não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Começou a Guerra da Fome: Zegak, com fome, foi buscar à força a comida de Haes. A Guerra da Fome seguiu: Zegak contra Haes, na praia. Zegak venceu e levou a comida guardada. Na luta morreram Berfaya e Esem. Depois da derrota, os jovens de Haes passaram a treinar com lanças. Em Zeur, Haniela tomou para si o cuidado das preces à Terra Brava. No inverno, em Esan, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 145
 
-Na primavera do ano 145, Maror passou a receber bem os de fora: um casamento com outro povo virava festa. Dessa vez, a Voz do Céu não respondeu, e Rilur, que tinha esquecido como se virar sozinho, pagou caro. Houve fome em Rilur no inverno: 17 dias de barriga vazia, sem mortes.
+Na Guerra da Fome, Zegak atacou Haes na praia. Zegak venceu e levou a comida guardada. Na luta morreram Ruberela, Gaesya e Rilrilor. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Haes perdeu o saber. No outono, depois da luta, Zegak e Zeur se encontraram no morro e juraram paz. Não restou ninguém em Haes. A Guerra da Fome acabou porque um dos lados deixou de existir: dois anos, quatro batalhas e oito mortos.
 
 ### Ano 146
 
-Na primavera do ano 146, o templo de Maror ficou mais forte que o líder. Niniya, que falava pela Estrela de Cauda, passou a decidir tudo. Niya, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. No inverno, Gaor, o medroso, não resistiu à fome.
+Na primavera do ano 146, Esfaela, que falava pelo Que Leva em Esan, morreu de velhice aos 55 anos.
 
 ### Ano 147
 
-Na primavera, Niniya, que guiava Maror, morreu dormindo, aos 62 anos. Sem lugar e sem comida, Vil e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, a febre levou Bufan, que guiava Maror. Em Maror, disseram que a Estrela de Cauda só ouvia Rilur. A inveja virou rancor. Houve luta no morro: Rilur atacou Mavil. Mavil resistiu, e Rilur voltou de mãos vazias.
+Zegak já não cabia na floresta. Zenior, o generoso, levou dezoito pessoas para a praia e fundou Isil. Isil encontrou as ruínas de Haes. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A fome no inverno durou 11 dias em Zegak e levou quatro vidas. No verão, a febre levou Nihar, o medroso. Na guerra, tinha tirado três vidas. Os de Zegak caíram sobre Esan no lago. Esan foi derrotado e perdeu o que tinha guardado. Na luta morreram Haor, Hail, Vihaya e Rilesya.
 
 ### Ano 148
 
-Na primavera, Gar disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «o Que Risca o Céu». Rilur acreditou, e o deus mudou de nome. No verão, houve luta no morro: Zegak atacou Mavil. Mavil foi derrotado e perdeu o que tinha guardado. Na luta morreram Marruis e Niar. Para Mavil, o morro virou Morro do Luto. No outono, começou a Guerra da Fome: Zegak, com fome, foi buscar à força a comida de Mavil. No inverno, a Guerra da Fome acabou em trégua, depois de três batalhas e sete mortos.
+Em Isil nasceu a primeira criança: Nupear, filho de Rilela e Zenior. Zegael, de Zeur, tomou por esposa Beesya, de Esan, e os dois povos passaram a se visitar. No verão, Rilela passou a falar pela Terra Brava em Isil. Era a primeira a rezar e a última a duvidar. Gaya, de Esan, casou-se com Esgar e foi viver em Isil. Foi o primeiro laço entre os dois povos. Zeur passou a festejar todo ano o dia da volta da chuva, em honra da Terra Brava.
 
 ### Ano 149
 
-A fome por causa da seca durou 21 dias em Zegak e levou dezesseis vidas. Ibar, que guiava Maror, morreu de febre aos 50 anos. Maror passou fome por causa da seca por 24 dias, e 29 pessoas morreram. Bebean rezou por Fael até a voz acabar. Fael morreu mesmo assim, e Bebean nunca mais rezou. Uma febre correu Maror e levou nove vidas.
+Morreu Zean, que guiava Esan, aos 66 anos. Em Esan, Zean pediu: «Que Leva, dá-nos o que comer.» A fome passou, e Esan viu nisso obra do Que Leva. A crônica sabe que foi acaso.
 
 ### Ano 150
 
-Nos anos 141 a 150 houve vinte fomes, quatro batalhas, 39 preces que pareceram atendidas e quinze preces sem resposta; nasceram 95 crianças e morreram 161 pessoas. No fim do ano 150, 143 pessoas viviam no mundo: Zegak (63), Maror (64), Rilur (8) e Mavil (8).
+Haniela, que falava pela Terra Brava em Zeur, morreu de repente, aos 40 anos. Nos anos 141 a 150 houve duas secas, nove fomes, seis batalhas, doze preces que pareceram atendidas e cinco preces sem resposta; nasceram 74 crianças e morreram 76 pessoas. No fim do ano 150, 164 pessoas viviam no mundo: Zegak (73), Esan (53), Zeur (12) e Isil (26).
 
-### Ano 151
-
-Na primavera do ano 151, Ibnian, que guiava Maror, morreu dormindo, aos 50 anos. Vimaon tinha rezado: «Que Dá, não nos deixes secar.» Quando a chuva voltou, Mavil agradeceu ao Que Dá. O deus não tinha feito nada. No inverno, Buya, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+*O ano 151 passou sem nada que a crônica precise guardar.*
 
 ### Ano 152
 
-Na primavera, morreu Marberya, que falava pela Estrela de Cauda em Maror, aos 50 anos. Zegak escolheu Gabeil para guiar o grupo. Zela queria o lugar e nunca perdoou. No inverno, a guerra entre Rilur e Mavil continuou: Rilur voltou a atacar no morro. Mavil foi derrotado e perdeu o que tinha guardado. Na luta morreu Bermiel. Depois da luta, Rilur e Mavil se encontraram no morro e juraram paz. Desde então, Rilur chama o morro de Morro da Trégua.
+Em Isil, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. No outono, a tempestade trouxe raios para o morro. Um deles acertou Niesar. A família de Niesar nunca perdoou o céu. Desde a morte de Niesar, ninguém em Zeur sobe o morro em dia de tempestade.
 
-*O ano 153 foi calmo.*
+### Ano 153
 
-### Ano 154
+Beril deu à luz gêmeos, Isela e Nunuel. Uns viram bênção; outros, mau sinal.
 
-Na primavera do ano 154, Far disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Pai das Águas». Maror acreditou, e o deus mudou de nome.
+*O ano 154 passou sem nada que a crônica precise guardar.*
 
 ### Ano 155
 
-Em Maror, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 95, só a crônica guarda. No verão, a terra tremeu. Caíram quinze cabanas. Berilor, Faberan e Mariban morreram sob os escombros. Para Mavil, o deus já não era «o Que Dá»: passou a ser «o Que Sacode».
+Vibear, que falava pela Terra Brava em Zegak, morreu dormindo, aos 55 anos. Ruesela partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De novo a chuva sumiu, como no ano 120. Foram 21 dias de seca.
 
 ### Ano 156
 
-Na primavera, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Faya deu à luz gêmeos, Faruel e Nifaya. Uns viram bênção; outros, mau sinal. Haya, que guiava Mavil, morreu ao dar à luz.
+Bela partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Houve luta no morro: Zegak atacou Zeur. Zegak venceu e levou a comida guardada. Na luta morreram Ganuel e Niviar. Começou a Guerra da Fome do Morro: Zegak, com fome, foi buscar à força a comida de Zeur. Depois de duas batalhas e seis mortos, a Guerra da Fome do Morro terminou em paz. Zegak saiu dela mais forte. Berar, o corajoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 157
 
-Vie, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. Em Maror, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Maror passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+Na primavera do ano 157, Gail partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu. Para Esan, o deus já não era «o Que Leva»: passou a ser «o Que Risca o Céu». Depois disso, Zeur deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Estrela de Cauda».
 
 ### Ano 158
 
-Um raio caiu no morro durante a tempestade e matou Vimaon. Em Mavil, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Mavil sai de casa. Lembram de Vimaon.
+Na primavera, a terra tremeu. Caíram dezenove cabanas. Esil, Eshar, Maesar e Gaberela morreram sob os escombros.
 
 ### Ano 159
 
-Na primavera, Zeesar, o engenhoso, morreu dormindo, aos 64 anos. Na guerra, tinha tirado duas vidas. Um inverno duro matou quatro pessoas de frio.
+Na primavera do ano 159, o templo de Isil ficou mais forte que o líder. Rilela, que falava pela Terra Brava, passou a decidir tudo.
 
 ### Ano 160
 
-Na primavera, Nunur implorou pelo filho. Beur morreu, e daquele dia em diante Nunur cuspia no chão quando falavam da Terra Brava. Numa tempestade sobre o lago, um raio matou Fafaya. Os seus nunca esqueceram. Zegak passou fome por 3 dias, e uma pessoa morreu. Em Zegak, Bevior pediu: «Terra Brava, dá-nos o que comer.» A fome passou, e Zegak viu nisso obra da Terra Brava. O deus não tinha feito nada. Nas tabuletas de Zegak, ficou escrito que foi a Terra Brava. Vie, a engenhosa, morreu ao dar à luz. Nos anos 151 a 160 houve três secas, cinco fomes e 27 preces que pareceram atendidas; nasceram 120 crianças e morreram 134 pessoas. No fim do ano 160, 131 pessoas viviam no mundo: Zegak (47), Maror (58), Rilur (19) e Mavil (7).
+Morreu Nurilya, que guiava Zegak, aos 56 anos. Berar implorou pelo filho. Bevian morreu, e daquele dia em diante Berar cuspia no chão quando falavam do Que Risca o Céu. Em Isil, Zenior pediu: «Terra Brava, cura meu filho.» A febre passou, e Zenior contou a todos que a Terra Brava tinha ouvido. O deus nada fez: o crédito era de graça. Nos anos 151 a 160 houve nove fomes, duas batalhas e quinze preces que pareceram atendidas; nasceram 109 crianças e morreram 55 pessoas. No fim do ano 160, 209 pessoas viviam no mundo: Zegak (86), Esan (82), Zeur (7) e Isil (34).
 
 ### Ano 161
 
-Gar, que falava pelo Que Risca o Céu em Rilur, morreu dormindo, aos 54 anos. Sem lugar e sem comida, Bemarela e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Maror, com 36 mortos. Foram 24 dias de fome por causa da seca em Zegak, com 31 mortos.
+A guerra entre Zegak e Zeur continuou: Zegak voltou a atacar no morro. Zeur foi derrotado e perdeu o que tinha guardado. Zeveut e Orgaut morreram na luta. Depois da derrota, Zeur não existia mais: os cinco que sobraram foram levados para Zegak. Zegak encontrou as ruínas de Zeur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Esan encontrou as ruínas de Zeur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Uma febre correu Zegak e levou onze vidas.
 
 ### Ano 162
 
-Na primavera, Nuviur, que falava pela Terra Brava em Zegak, morreu de velhice aos 51 anos. De novo o sol se apagou no meio do dia.
+A fome ensinou: desde então, Esan estoca comida e não come tudo o que colhe. A fome durou 23 dias em Zegak e levou 23 vidas. Isil já não se preparava para nada: a Terra Brava sempre dava. No outono, a rixa entre Haya e Berar rachou Esan. Haya partiu com os seus, dezesseis pessoas, e fundou Rues no morro. Em Rues, Eshael tomou para si o cuidado das preces ao Que Risca o Céu.
 
 *O ano 163 foi calmo.*
 
 ### Ano 164
 
-A seca voltou, como no ano 106: 26 dias sem chuva, até que o céu se abriu.
+Na primavera, as preces de Isil ficaram pequenas: pedia-se à Terra Brava até sol para a pesca e sorte na caça. De novo a chuva sumiu, como no ano 155. Foram 22 dias de seca. Haya tinha rezado: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Rues duvidou de que o Que Risca o Céu tinha ouvido. O deus não tinha feito nada. Ishar não resistiu à fome.
 
-*Entre os anos 165 e 167, nada mudou o rumo do mundo.*
+### Ano 165
+
+Na primavera do ano 165, Beril disse ter ouvido o deus de outro jeito: não era «a Terra Brava», era «o Que Ergue». Isil acreditou, e o deus mudou de nome. O deus calou justo quando Isil mais dependia dele. O frio levou Rilela, que guiava Isil. Gaesor passou a guiar Isil, mas Zeya não aceitou e guardou rancor. A praia passou a ser a praia da fome: Praia da Fome.
+
+### Ano 166
+
+No outono, nasceu Ruena, filha de Haya, que guiava Rues. Gaviela deu à luz gêmeos, Gau e Viya. Uns viram bênção; outros, mau sinal.
+
+*O ano 167 foi calmo.*
 
 ### Ano 168
 
-Ganiu, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
+Na primavera do ano 168, com Haya à frente, a nova geração de Rues abandonou a festa da chuva, costume herdado dos avós. No inverno, Bevil, de Rues, casou-se com Peur e foi viver em Isil. Foi o primeiro laço entre os dois povos.
 
-*No ano 169, nada de notável aconteceu.*
+### Ano 169
+
+Na primavera, Berar, que guiava Esan, morreu de velhice aos 60 anos. Desde a morte de Bevian, nunca mais tinha rezado. Bepear partiu com uma pessoa para além da borda do mundo. Nunca voltaram. O dia em que a chuva voltou virou festa em Rues: todo ano, celebram a chuva que o Que Risca o Céu mandou.
 
 ### Ano 170
 
-Na primavera, Esrilel, que guiava Zegak, morreu de velhice aos 53 anos. Nos anos 161 a 170 houve quatro fomes, doze preces que pareceram atendidas e cinco preces sem resposta; nasceram 135 crianças e morreram 40 pessoas. No fim do ano 170, 222 pessoas viviam no mundo: Zegak (80), Maror (97), Rilur (27) e Mavil (18).
+Foram 9 dias de fome no inverno em Zegak, com quatro mortos. A fome no inverno durou 9 dias em Esan e levou catorze vidas. Um inverno duro matou treze pessoas de frio. Nos anos 161 a 170 houve três secas, dezesseis fomes e treze preces que pareceram atendidas; nasceram 115 crianças e morreram 138 pessoas. No fim do ano 170, 185 pessoas viviam no mundo: Zegak (55), Esan (67), Isil (32) e Rues (31).
 
 ### Ano 171
 
-Morreu Bevior, o rancoroso, aos 64 anos. Zear, que falava pela Terra Brava em Zegak, morreu de velhice aos 58 anos.
+Na primavera, Isil atacou Rues no morro. Isil venceu e levou a comida guardada. Na luta morreram Eshael, Zebeil e Doel. O mesmo chão ganhou dois nomes: Morro da Vitória para Isil, Morro do Luto para Rues. Isil e Rues, cansados de enterrar os seus, fizeram as pazes no morro.
 
 ### Ano 172
 
-No outono, com canais e moinhos, Zegak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Em Isil, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Zeniur implorou pela filha. Zebeu morreu, e daquele dia em diante Zeniur cuspia no chão quando falavam do Que Ergue. Dour rezou por Miisar até a voz acabar. Miisar morreu mesmo assim, e Dour nunca mais rezou. Uma febre correu Isil e levou duas vidas. Beril, que falava pelo Que Ergue em Isil, morreu de frio.
 
 ### Ano 173
 
-Ibmaran, que guiava Maror, morreu dormindo, aos 71 anos. Beis partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Foram 3 dias de fome no inverno em Maror, com três mortos. No inverno, numa tempestade sobre a praia, um raio matou Berela. Em Rilur, disseram que era castigo. Depois disso, Rilur deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-la de «a Voz do Céu».
+Na primavera do ano 173, em Rues, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam.
 
 ### Ano 174
 
-Maor tinha rezado: «Terra Brava, dá-nos o que comer.» A comida voltou, e Zegak deu graças à Terra Brava. A crônica sabe que foi acaso. Os escribas de Zegak registraram o milagre. A seca voltou, como no ano 164: 20 dias sem chuva, até que o céu se abriu. Makoela, de Mavil, casou-se com Maberor e foi viver em Rilur. Foi o primeiro laço entre os dois povos. Nimarar, que falava pelo Pai das Águas em Maror, morreu de fome.
+Cansado de um líder que mandava sozinho, Zegak passou a decidir em conselho. Garuil partiu com sete pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Isil, Zenior pediu: «Que Ergue, não deixes nossos filhos morrerem de fome.» A fome passou, e Isil viu nisso obra do Que Ergue. O deus não tinha feito nada.
 
 ### Ano 175
 
-Em Zegak, Haela começou a pregar que o deus não era «a Terra Brava». Era «o Que Nega». Em poucos anos, todos rezavam assim. A fome no inverno durou 9 dias em Zegak e levou 25 vidas. No outono, a febre levou Zerilar, que falava pela Voz do Céu em Rilur. A doença entrou em Rilur e matou três pessoas. Desde a febre, Rilur não enterra mais ninguém: os mortos vão para o fogo.
+Foram 9 dias de fome no inverno em Rues, com cinco mortos. Uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito. No verão, em nome do Que Ergue, Peur proibiu casamentos e trocas com Esan. Era vontade de Peur, não do deus.
 
 ### Ano 176
 
-Faela, a devota, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+Esur partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Isil atacou Esan no lago. Esan expulsou os atacantes. Niel morreu na luta. Isil e Esan fizeram as pazes no lago, antes que a briga crescesse. No inverno, Esan passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 177
 
-Buruar implorou pelo filho. Ibar morreu, e daquele dia em diante Buruar cuspia no chão quando falavam do Pai das Águas.
+No inverno, tantas preces atendidas fizeram Rues confiar no céu mais do que nas próprias mãos.
 
 ### Ano 178
 
-Na primavera do ano 178, Marmarela partiu com duas pessoas para além da borda do mundo. Nunca voltaram. No inverno, com canais e moinhos, Maror já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+Suhaena morreu com 4 anos, de uma febre que ninguém entendeu. Em Isil, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Ruberela deu à luz gêmeos, Hagaya e Gaor. Uns viram bênção; outros, mau sinal.
 
-*O ano 179 passou sem nada que a crônica precise guardar.*
+### Ano 179
+
+A terra tremeu. Caíram dezoito cabanas. Manur, Esnil, Ruil, Veya, Viesu, Viesar, Zerilela e Suena morreram sob os escombros.
 
 ### Ano 180
 
-Apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu. Nos anos 171 a 180 houve duas secas, nove fomes, vinte preces que pareceram atendidas e seis preces sem resposta; nasceram 138 crianças e morreram 136 pessoas. No fim do ano 180, 215 pessoas viviam no mundo: Zegak (70), Maror (91), Rilur (26) e Mavil (28).
+Na primavera, Ruruan, o devoto, inventou marcas que guardavam palavras. Nos anos 171 a 180 houve duas secas, doze fomes, duas batalhas, 32 preces que pareceram atendidas e sete preces sem resposta; nasceram 158 crianças e morreram 108 pessoas. No fim do ano 180, 222 pessoas viviam no mundo: Zegak (85), Esan (84), Isil (37) e Rues (16).
 
 ### Ano 181
 
-Fabela deu à luz gêmeos, Berruan e Beibela. Uns viram bênção; outros, mau sinal.
+Behar disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «a Mão Que Cura». Rues acreditou, e o deus mudou de nome. De novo a chuva sumiu, como no ano 164. Foram 18 dias de seca. No inverno, Haniar, que guiava Esan, morreu de fome.
 
 ### Ano 182
 
-Na primavera, morreu Maor, que falava pelo Que Nega em Zegak, aos 60 anos.
+Haya, que fundou Rues e o guiava, morreu de velhice aos 58 anos. Tinha fundado Rues. Zenior, fundador de Isil, morreu de frio. Tinha fundado Isil. A fome no inverno durou 9 dias em Zegak e levou 24 vidas. Zeniur partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Desde a febre, Isil não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 183
 
-Bubela, que guiava Maror, morreu dormindo, aos 65 anos. A terra tremeu. Caíram 24 cabanas. Nuor, Nubeor, Nis, Ibela, Ibberan e Esvion morreram sob os escombros.
+Isil deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Em Esan, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Esan, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 184
 
-Na primavera, Haor, que guiava Zegak, morreu dormindo, aos 64 anos.
+A tempestade trouxe raios para a praia. Um deles acertou Zeesil. Em Isil, disseram que era castigo. Desde a morte de Zeesil, ninguém em Isil desce à praia em dia de tempestade.
 
 *O ano 185 passou sem nada que a crônica precise guardar.*
 
 ### Ano 186
 
-Nuis tinha rezado: «Voz do Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Rilur viu nisso obra da Voz do Céu. O deus nada fez: o crédito era de graça.
+No outono do ano 186, em Rues, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
 ### Ano 187
 
-Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu. No inverno, Rilon partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Nuis, que guiava Rilur, não resistiu à fome.
+Ruruan, o devoto, morreu de repente, aos 25 anos. Esan passou fome no inverno por 3 dias, e duas pessoas morreram. Ruruela tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Esan viu nisso obra do Que Risca o Céu. O deus não tinha feito nada. Os escribas de Esan registraram o milagre. Niniel, o curioso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
 
-### Ano 188
-
-Foram 11 dias de fome no inverno em Zegak, com um morto. Tantas preces atendidas fizeram Mavil confiar no céu mais do que nas próprias mãos. Rilur passou fome por causa da seca por 26 dias, e 21 pessoas morreram.
+*No ano 188, nada de notável aconteceu.*
 
 ### Ano 189
 
-Morreu Buar, que guiava Maror, aos 66 anos.
+Na primavera, morreu Gaesor, que guiava Isil, aos 61 anos. Ruberela implorou pelo filho. Vian morreu, e daquele dia em diante Ruberela cuspia no chão quando falavam do Que Risca o Céu. A doença entrou em Esan e matou cinco pessoas. Um inverno duro matou três pessoas de frio.
 
 ### Ano 190
 
-Na primavera do ano 190, Esvior, que falava pela Voz do Céu em Rilur, morreu de repente, aos 40 anos. O sol escureceu outra vez. Para Mavil, o deus já não era «o Que Sacode»: passou a ser «o Olho Escuro». Nos anos 181 a 190 houve sete fomes e 23 preces que pareceram atendidas; nasceram 111 crianças e morreram 106 pessoas. No fim do ano 190, 220 pessoas viviam no mundo: Zegak (72), Maror (103), Rilur (12) e Mavil (33).
+Na primavera, Esan cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Risca o Céu. Nos anos 181 a 190 houve duas secas, dez fomes, quinze preces que pareceram atendidas e três preces sem resposta; nasceram 118 crianças e morreram 98 pessoas. No fim do ano 190, 237 pessoas viviam no mundo: Zegak (74), Esan (83), Isil (37) e Rues (43).
 
 ### Ano 191
 
-Na primavera, Buel, que guiava Maror, morreu de repente, aos 40 anos. Em Rilur, já ninguém lembrava por que ninguém desperdiçava uma gota d'água. O que aconteceu no ano 148, só a crônica guarda.
+Esela morreu de velhice aos 65 anos. Na guerra, tinha tirado duas vidas. Morreu Niniel, que falava pelo Que Risca o Céu em Esan, aos 61 anos. Dessa vez, a Mão Que Cura não respondeu, e Rues, que tinha esquecido como se virar sozinho, pagou caro.
 
-*O ano 192 foi calmo.*
+### Ano 192
+
+Na primavera do ano 192, Ruhaela partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 11 dias em Isil e levou uma vida. Rues passou fome por causa da seca por 24 dias, e 26 pessoas morreram. A doença entrou em Zegak e matou sete pessoas. De novo a chuva sumiu, como no ano 181. Foram 21 dias de seca.
 
 ### Ano 193
 
-Na primavera, morreu Niesor, o pacífico, aos 59 anos. Houve luta na praia: Maror atacou Rilur. Rilur foi derrotado e perdeu o que tinha guardado. Na luta morreu Makoela. Foram 20 dias de fome no inverno em Maror, com seis mortos. No inverno, começou a Guerra da Fome da Praia: Maror, com fome, foi buscar à força a comida de Rilur.
+Peur, que guiava Isil, morreu de repente, aos 42 anos. Foi quem proibiu, em nome do deus, o trato com Esan. Viviel, que guiava Rues, morreu de velhice aos 51 anos.
 
-### Ano 194
-
-Com Ruel à frente, a nova geração de Maror abandonou o medo das tempestades, costume herdado dos avós. Dessa vez, o Olho Escuro não respondeu, e Mavil, que tinha esquecido como se virar sozinho, pagou caro. De novo a chuva sumiu, como no ano 174. Foram 24 dias de seca.
+*No ano 194, nada de notável aconteceu.*
 
 ### Ano 195
 
-Na primavera do ano 195, sem lugar e sem comida, Bubeya e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Maror, Buberela pediu: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Maror deu graças ao Pai das Águas. O deus nada fez: o crédito era de graça. Nas tabuletas de Maror, ficou escrito que foi o Pai das Águas. Mavil passou fome por causa da seca por 24 dias, e dez pessoas morreram.
+Isil se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. Com Bear à frente, Esan largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido.
 
-### Ano 196
-
-Na primavera do ano 196, Viel, que guiava Mavil, morreu de velhice aos 58 anos. Beis disse ter ouvido o deus de outro jeito: não era «o Pai das Águas», era «o Senhor das Lanças». Maror acreditou, e o deus mudou de nome. A Guerra da Fome da Praia seguiu: Maror contra Rilur, na praia. Rilur foi derrotado e perdeu o que tinha guardado. Numiar e Maberor morreram na luta. Desde então, Maror chama a praia de Praia da Vitória.
+*No ano 196, nada de notável aconteceu.*
 
 ### Ano 197
 
-Na primavera, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito. No inverno, Ibberis deu à luz gêmeos, Maela e Maor. Uns viram bênção; outros, mau sinal.
+Ruruela tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Esan viu nisso obra do Que Risca o Céu. O deus nada fez: o crédito era de graça. Os escribas de Esan registraram o milagre.
 
 ### Ano 198
 
-Com Niar à frente, Zegak largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. No outono, apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu. Depois disso, Rilur deixou de chamar o deus de «a Voz do Céu» e passou a chamá-la de «a Estrela de Cauda».
+Zeor, que guiava Zegak, morreu de fome. Gaberya passou a guiar Zegak, mas Gaela não aceitou e guardou rancor.
 
 ### Ano 199
 
-Na primavera do ano 199, morreu Fabuela, que guiava Mavil, aos 64 anos. Em Mavil, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 135, só a crônica guarda. A Guerra da Fome da Praia esfriou sem acordo nem vencedor: seis anos, três batalhas e quatro mortos, e ninguém sabia mais por que lutava. Maror saiu dela mais forte. Maror atacou Mavil no morro. Maror venceu e levou a comida guardada. Rilor, Rilberel e Komion morreram na luta. Maror e Mavil, cansados de enterrar os seus, fizeram as pazes no morro.
+Uma febre correu Zegak e levou seis vidas. Zegak passou fome no inverno por 9 dias, e treze pessoas morreram. No outono, numa tempestade sobre o morro, um raio matou Bernior. A família de Bernior nunca perdoou o céu.
 
 ### Ano 200
 
-Na primavera do ano 200, morreu Ganiu, a engenhosa, aos 63 anos. Fael partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Zel, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Nos anos 191 a 200 houve treze fomes, quatro batalhas, 22 preces que pareceram atendidas e nove preces sem resposta; nasceram 112 crianças e morreram 85 pessoas. No fim do ano 200, 235 pessoas viviam no mundo: Zegak (82), Maror (111), Rilur (15) e Mavil (27).
+Nos anos 191 a 200 houve três secas, catorze fomes e dezessete preces que pareceram atendidas; nasceram 109 crianças e morreram 144 pessoas. No fim do ano 200, 196 pessoas viviam no mundo: Zegak (66), Esan (84), Isil (28) e Rues (18).
 
 ### Ano 201
 
-Na primavera, ninguém lembrava mais a razão, e Rilur abandonou o treino com lanças. Berviela, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. De novo Maror contra Rilur, como no ano 196. Maror venceu e levou a comida guardada. Zel e Maeson morreram na luta. Depois da derrota, os jovens de Rilur passaram a treinar com lanças. Começou a Guerra da Fome do Lago: Maror, com fome, foi buscar à força a comida de Rilur.
+Na primavera do ano 201, Ruberela morreu dormindo, aos 50 anos. Desde a morte de Vian, nunca mais tinha rezado. Ninguém lembrava mais a razão, e Esan abandonou o treino com lanças.
 
 ### Ano 202
 
-Maur, que falava pelo Que Nega em Zegak, morreu de velhice aos 51 anos. Em Rilur, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 173, só a crônica guarda. O frio levou Faela, a devota. No verão, Fabela implorou pela filha. Beya morreu, e daquele dia em diante Fabela cuspia no chão quando falavam do Senhor das Lanças. Uma tosse que não passava matou oito pessoas em Maror.
+Na primavera, Gadar, o ambicioso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
 ### Ano 203
 
-O templo de Mavil ficou mais forte que o líder. Miviel, que falava pelo Olho Escuro, passou a decidir tudo. O frio levou Ibel, que falava pelo Senhor das Lanças em Maror. Em Rilur, já ninguém sabia cortar pedra. O que fora feito começou a ruir. A guerra entre Maror e Mavil continuou: Maror voltou a atacar no morro. Maror venceu e levou a comida guardada. Rilnil, Rilkor e Kobuya morreram na luta. Depois de tantos mortos, Maror e Mavil se encontraram no morro e juraram paz.
+Na primavera do ano 203, Beniela, que falava pelo Que Risca o Céu em Esan, morreu dormindo, aos 63 anos.
 
 ### Ano 204
 
-Buberela, que falava pelo Senhor das Lanças em Maror, morreu dormindo, aos 54 anos. Miel, o rancoroso, morreu de velhice aos 58 anos. Com Miviel à frente, Mavil largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. No verão, os de Zegak caíram sobre Mavil no morro. Zegak venceu e levou a comida guardada. Na luta morreram Miviel e Komior. Depois de tantos mortos, Zegak e Mavil se encontraram no morro e juraram paz.
+Foram 9 dias de fome no inverno em Zegak, com dez mortos.
 
-*No ano 205, nada de notável aconteceu.*
+### Ano 205
+
+Na primavera, Bean, que guiava Rues, morreu de repente, aos 42 anos. No verão, Rues passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 206
 
-Na primavera do ano 206, a Guerra da Fome do Lago esfriou sem acordo nem vencedor: cinco anos, quatro batalhas e cinco mortos, e ninguém sabia mais por que lutava. Maror saiu dela mais forte. Maror não esqueceu o ano 201 e atacou Rilur outra vez. Maror venceu e levou a comida guardada. Bermiela, Nuniar e Bebuan morreram na luta. Depois da derrota, Rilur não existia mais: os cinco que sobraram foram levados para Maror. Zegak encontrou as ruínas de Rilur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Mavil passou a festejar todo ano o dia da volta da chuva, em honra do Olho Escuro.
+Na primavera, Bear, que guiava Esan, morreu dormindo, aos 58 anos. Em Rues, gritaram que o templo mentia em nome da Mão Que Cura. Os sacerdotes foram tirados do poder. Rilnuil deu à luz gêmeos, Zepeu e Miu. Uns viram bênção; outros, mau sinal.
 
 ### Ano 207
 
-Maror passou fome no inverno por 9 dias, e 25 pessoas morreram. Ruela tinha rezado: «Senhor das Lanças, não deixes nossos filhos morrerem de fome.» A comida voltou, e Maror deu graças ao Senhor das Lanças. O deus não tinha feito nada. Nas tabuletas de Maror, ficou escrito que foi o Senhor das Lanças. Zegak passou fome no inverno por 11 dias, e dez pessoas morreram.
+De novo a chuva sumiu, como no ano 192. Foram 18 dias de seca. Behar tinha rezado: «Mão Que Cura, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Rues duvidou de que a Mão Que Cura tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
-*No ano 208, nada de notável aconteceu.*
+### Ano 208
 
-### Ano 209
+Na primavera, Zeya, a generosa, morreu dormindo, aos 66 anos. Foram 9 dias de fome no inverno em Zegak, com seis mortos. Esan passou fome no inverno por 9 dias, e cinco pessoas morreram. O inverno foi de gelo: 25 pessoas morreram de frio.
 
-Ruela, que falava pelo Senhor das Lanças em Maror, morreu dormindo, aos 57 anos. Mavil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+*O ano 209 passou sem nada que a crônica precise guardar.*
 
 ### Ano 210
 
-Rilmiya deu à luz gêmeos, Haniar e Bel. Uns viram bênção; outros, mau sinal. Nos anos 201 a 210 houve duas secas, treze fomes, sete batalhas, 34 preces que pareceram atendidas e nove preces sem resposta; nasceram 94 crianças e morreram 133 pessoas. No fim do ano 210, 197 pessoas viviam no mundo: Zegak (78), Maror (90) e Mavil (29).
+Nos anos 201 a 210 houve duas secas, oito fomes e onze preces que pareceram atendidas; nasceram 167 crianças e morreram 105 pessoas. No fim do ano 210, 259 pessoas viviam no mundo: Zegak (82), Esan (96), Isil (38) e Rues (43).
 
 ### Ano 211
 
-Morreu Manuya, a generosa, aos 61 anos.
+Sem lugar e sem comida, Doesela e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 212
 
-A fome no inverno durou 9 dias em Zegak e levou dezenove vidas.
+Na primavera do ano 212, Ruruela, que guiava Esan, morreu de velhice aos 61 anos. Sem lugar e sem comida, Numaya e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 213
 
-Na primavera, um raio caiu no morro durante a tempestade e matou Maor. Os seus nunca esqueceram.
+O inverno foi de gelo: três pessoas morreram de frio. Begaena implorou pela filha. Susuena morreu, e daquele dia em diante Begaena cuspia no chão quando falavam da Mão Que Cura.
 
-*Do ano 214 ao 215, a vida seguiu sem grandes acontecimentos.*
+### Ano 214
+
+Na primavera, Gaberya, que guiava Zegak, morreu de velhice aos 64 anos. Com Ruzel à frente, Esan largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Zegak escolheu Nibeil para guiar o grupo. Nu queria o lugar e nunca perdoou. No verão, a terra tremeu. Caíram 23 cabanas. Rilel e Esesar morreram sob os escombros. Para Rues, o deus já não era «a Mão Que Cura»: passou a ser «a Terra Brava».
+
+*No ano 215, nada de notável aconteceu.*
 
 ### Ano 216
 
-Na primavera do ano 216, Zegak já não cabia na floresta. Gaya, a curiosa, levou 23 pessoas para a praia e fundou Esak. Para Esak, as pedras de Rilur só podiam ter sido postas por gigantes. A febre levou Bere, a devota. Uma tosse que não passava matou dez pessoas em Mavil. Maror via Mavil ser atendido e concluiu que o Senhor das Lanças tinha escolhido os outros.
+Em Esan, Gael pediu: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Esan deu graças ao Que Risca o Céu. A crônica sabe que foi acaso. Nas tabuletas de Esan, ficou escrito que foi o Que Risca o Céu. No inverno, Mibear, que guiava Isil, não resistiu à fome. Em Isil, cada um passou a cercar o que tinha.
 
 ### Ano 217
 
-Na primavera, em Esak nasceu a primeira criança: Zebeos, filho de Zehau e Maniur. Em Esak, Rilur tomou para si o cuidado das preces ao Que Nega.
+Dobeu partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Zegak passou fome no inverno por 9 dias, e cinco pessoas morreram. Foram 9 dias de fome no inverno em Esan, com quinze mortos. Uma tosse que não passava matou cinco pessoas em Zegak.
 
 ### Ano 218
 
-No verão, Beis implorou pela filha. Nibeya morreu, e daquele dia em diante Beis cuspia no chão quando falavam do Senhor das Lanças. A seca voltou, como no ano 194: 20 dias sem chuva, até que o céu se abriu. Em Mavil, Zemae pediu: «Olho Escuro, não nos deixes secar.» Quando a chuva voltou, Mavil agradeceu ao Olho Escuro. A crônica sabe que foi acaso. Buan, que guiava Maror, morreu de fome. Famarar passou a guiar Maror, mas Nifaya não aceitou e guardou rancor.
+Suil, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 219
 
-Morreu o último que tinha visto o ano 148. Em Mavil, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. Maror passou fome no inverno por 9 dias, e quatro pessoas morreram. Uma febre correu Maror e levou seis vidas. Um raio caiu na floresta durante a tempestade e matou Gamaur. Em Zegak, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Zegak sai de casa. Lembram de Gamaur.
+Na primavera, Niel partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Berzela deu à luz gêmeos, Viu e Vibeil. Uns viram bênção; outros, mau sinal. No outono, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
 
 ### Ano 220
 
-Com Gaya à frente, a nova geração de Esak abandonou o costume de queimar os mortos, costume herdado dos avós. Nos anos 211 a 220 houve cinco secas, nove fomes, 23 preces que pareceram atendidas e nove preces sem resposta; nasceram 119 crianças e morreram 122 pessoas. No fim do ano 220, 194 pessoas viviam no mundo: Zegak (53), Maror (77), Mavil (33) e Esak (31).
+Na primavera, sem lugar e sem comida, Garuar e os seus atravessaram a borda do mundo. Ninguém soube deles. Nos anos 211 a 220 houve vinte fomes e dezenove preces que pareceram atendidas; nasceram 122 crianças e morreram 119 pessoas. No fim do ano 220, 236 pessoas viviam no mundo: Zegak (72), Esan (97), Isil (29) e Rues (38).
 
 ### Ano 221
 
-Rilmaya, que falava pelo Que Nega em Zegak, morreu de velhice aos 60 anos. Mavil passou fome por causa da seca por 17 dias, e cinco pessoas morreram. No verão, em nome do Olho Escuro, Rilvior proibiu casamentos e trocas com Zegak. Era vontade de Rilvior, não do deus. Os de Mavil caíram sobre Esak na praia em nome do Olho Escuro. Esak resistiu, e Mavil voltou de mãos vazias. Mie e Buon morreram na luta. O mesmo chão ganhou dois nomes: Praia da Vitória para Esak, Praia do Luto para Mavil.
+No inverno, Nibela deu à luz gêmeos, Dar e Beruor. Uns viram bênção; outros, mau sinal.
 
-### Ano 222
-
-Buvior, que guiava Mavil, morreu de repente, aos 41 anos. Mavil atacou Zegak na floresta em nome do Olho Escuro. Zegak resistiu, e Mavil voltou de mãos vazias. Mivie, Rilmion e Buela morreram na luta. Para Mavil, a floresta virou Floresta do Luto. No inverno, de novo o sol se apagou no meio do dia.
-
-### Ano 223
-
-No verão, numa tempestade sobre a praia, um raio matou Gaya. Em Esak, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Esak sai de casa. Lembram de Gaya. No outono, começou a Guerra Santa da Praia: em nome do Olho Escuro, Mavil pegou em lanças contra Esak. No inverno, a Guerra Santa da Praia seguiu: Mavil contra Esak, na praia em nome do Olho Escuro. Esak foi derrotado e perdeu o que tinha guardado. Zehau, Nuel, Zegau e Rilel morreram na luta.
+*Do ano 222 ao 223, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 224
 
-Niar, que guiava Zegak, morreu de velhice aos 71 anos. Em Esak, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. Começou a Terceira Guerra Santa: em nome do Olho Escuro, Mavil pegou em lanças contra Zegak. A Terceira Guerra Santa seguiu: Mavil contra Zegak, na floresta em nome do Olho Escuro. Zegak resistiu, e Mavil voltou de mãos vazias. Rilkoil, Rilbuel, Rilela e Beil morreram na luta.
+Na primavera, morreu Gael, que falava pelo Que Risca o Céu em Esan, aos 61 anos. Sem lugar e sem comida, Vizela e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 225
 
-Na primavera do ano 225, em Maror, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Senhor das Lanças». Maniur tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Esak viu nisso obra do Que Nega. O deus não tinha feito nada.
+Na primavera do ano 225, em Esan, Niviar começou a pregar que o deus não era «o Que Risca o Céu». Era «o Que Nega». Em poucos anos, todos rezavam assim. Os de Esan caíram sobre Isil na praia em nome do Que Nega. Isil foi derrotado e perdeu o que tinha guardado. Miela, Manuya e Doela morreram na luta. Isil não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Berhaya anunciou que o Que Nega proibia qualquer trato com Isil. O deus nunca disse isso, mas Esan obedeceu. Começou a Guerra da Fome da Praia: Esan, com fome, foi buscar à força a comida de Isil.
 
 ### Ano 226
 
-Na primavera do ano 226, Berilor, que falava pelo Que Nega em Zegak, morreu dormindo, aos 62 anos.
+Em Esan, Esel pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Esan viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? Os escribas de Esan registraram o milagre. Nibela morreu ao dar à luz.
 
 ### Ano 227
 
-A Guerra Santa da Praia esfriou sem acordo nem vencedor: seis anos, quatro batalhas e oito mortos, e ninguém sabia mais por que lutava. Mavil saiu dela mais forte. A Terceira Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e sete mortos, e ninguém sabia mais por que lutava. Zegak saiu dela mais forte. De novo a chuva sumiu, como no ano 218. Foram 22 dias de seca.
+Na primavera do ano 227, Berhaya, que falava pelo Que Nega em Esan, morreu de velhice aos 53 anos. Foi quem proibiu, em nome do deus, o trato com Isil. Nuil passou a guiar Isil, mas Rilela não aceitou e guardou rancor. No inverno, Gail partiu com uma pessoa para além da borda do mundo. Nunca voltaram.
 
 ### Ano 228
 
-Na primavera, Beu, que guiava Zegak, morreu de velhice aos 61 anos. Mavil passou a receber bem os de fora: um casamento com outro povo virava festa. No outono, de novo Mavil contra Zegak em nome do Olho Escuro, como no ano 224. Zegak resistiu, e Mavil voltou de mãos vazias. Na luta morreram Buel, Bermarela, Mamaya e Hau.
+Na primavera, na Guerra da Fome da Praia, Esan atacou Isil na praia. Isil foi derrotado e perdeu o que tinha guardado. Pezear e Hau morreram na luta. Foram 9 dias de fome no inverno em Esan, com onze mortos. Uma febre correu Esan e levou onze vidas. No inverno, Isil e Esan, cansados de enterrar os seus, fizeram as pazes no lago. Depois de três anos, quatro batalhas e nove mortos, a Guerra da Fome da Praia terminou em paz. Esan saiu dela mais forte.
 
 ### Ano 229
 
-Na primavera, em Esak, Gar começou a pregar que o deus não era «o Que Nega». Era «o Que Julga». Em poucos anos, todos rezavam assim. Começou a Quarta Guerra Santa: em nome do Olho Escuro, Mavil pegou em lanças contra Zegak. Na Quarta Guerra Santa, Mavil atacou Zegak na floresta em nome do Olho Escuro. Zegak resistiu, e Mavil voltou de mãos vazias. Na luta morreram Zemaor e Rilrilil.
+Na primavera, Nimaor, que guiava Zegak, morreu dormindo, aos 57 anos.
 
 ### Ano 230
 
-Na primavera do ano 230, Far, de Maror, tomou por esposa Viya, de Esak, e os dois povos passaram a se visitar. Na Quarta Guerra Santa, Mavil atacou Zegak na floresta em nome do Olho Escuro. Zegak expulsou os atacantes. Rilor e Mikor morreram na luta. Houve luta na praia: Mavil atacou Esak em nome do Olho Escuro. Esak expulsou os atacantes. Zeviel, Ibya e Rilmaor morreram na luta. Em Zegak, disseram que o Que Nega só ouvia Esak. A inveja virou rancor. Nos anos 221 a 230 houve três secas, seis fomes, onze batalhas, 22 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 114 crianças e morreram 99 pessoas. No fim do ano 230, 209 pessoas viviam no mundo: Zegak (75), Maror (87), Mavil (25) e Esak (22).
+Em Esan, gritaram que o templo mentia em nome do Que Nega. Os sacerdotes foram tirados do poder. Nos anos 221 a 230 houve duas secas, doze fomes, quatro batalhas, 22 preces que pareceram atendidas e quatro preces sem resposta; nasceram 119 crianças e morreram 144 pessoas. No fim do ano 230, 207 pessoas viviam no mundo: Zegak (68), Esan (84), Isil (29) e Rues (26).
 
 ### Ano 231
 
-Zeur, que guiava Esak, morreu dormindo, aos 66 anos. Niniu, de Zegak, casou-se com Bezeur e foi viver em Esak. Foi o primeiro laço entre os dois povos. No verão, na Quarta Guerra Santa, Mavil atacou Zegak na floresta em nome do Olho Escuro. Mavil venceu e levou a comida guardada. Na luta morreram Nuzela, Vihaur e Buor. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Mavil perdeu o saber. No inverno, começou a Quinta Guerra Santa: em nome do Olho Escuro, Mavil pegou em lanças contra Esak.
+Ruzel, que guiava Esan, morreu dormindo, aos 58 anos. Niruil, que guiava Rues, morreu de velhice aos 64 anos. Morreu o último que tinha visto o ano 162. Em Rues, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Em Esan, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. Rudaena deu à luz gêmeos, Daela e Dazear. Uns viram bênção; outros, mau sinal.
 
 ### Ano 232
 
-No inverno, Rilvior, que guiava Mavil, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Zegak. Em Mavil, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Mavil acabou: Mael, Mamiela e Maor foram viver em Maror. A Quarta Guerra Santa acabou porque um dos lados deixou de existir: quatro anos, seis batalhas e catorze mortos. A Quinta Guerra Santa acabou porque um dos lados deixou de existir: dois anos, duas batalhas e quatro mortos.
+Berar implorou pelo filho. Esberar morreu, e daquele dia em diante Berar cuspia no chão quando falavam do Que Nega.
 
 ### Ano 233
 
-Maniur, que guiava Esak, morreu dormindo, aos 65 anos. Zegak encontrou as ruínas de Mavil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Na primavera, em Rues, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. A tempestade trouxe raios para a praia. Um deles acertou Miar. Em Isil, disseram que era castigo.
 
 ### Ano 234
 
-Foram 5 dias de fome no inverno em Maror, com dois mortos.
+Morreu Niviar, que falava pelo Que Nega em Esan, aos 61 anos.
 
-### Ano 235
-
-Em Zegak, Hael pediu: «Que Nega, dá-nos o que comer.» A fome passou, e Zegak viu nisso obra do Que Nega. A crônica sabe que foi acaso. Nas tabuletas de Zegak, ficou escrito que foi o Que Nega. A fome no inverno durou 9 dias em Maror e levou vinte vidas. Hael, que falava pelo Que Nega em Zegak, morreu de frio.
+*O ano 235 foi calmo.*
 
 ### Ano 236
 
-De novo o sol se apagou no meio do dia. A rixa entre Nizear e Nihaur rachou Zegak. Nizear partiu com os seus, dez pessoas, e fundou Maem no morro. Haya passou a guiar Zegak, mas Nihaur não aceitou e guardou rancor. Maem encontrou as ruínas de Mavil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Nian tinha rezado: «Terra Brava, não nos deixes secar.» Quando a chuva voltou, Rues agradeceu à Terra Brava. O deus não tinha feito nada. No inverno, Esel, que falava pelo Que Nega em Esan, não resistiu à fome.
 
 ### Ano 237
 
-Na primavera, Nizear, que fundou Maem e o guiava, morreu de velhice aos 51 anos. Foi quem levou os seus a fundar Maem. Em Maem, já ninguém sabia escrever. O que fora feito começou a ruir. Gail passou a falar pelo Que Nega em Maem. Era a primeira a rezar e a última a duvidar. Em nome do Que Nega, Gail proibiu casamentos e trocas com Zegak. Era vontade de Gail, não do deus. Houve luta na floresta: Maem atacou Zegak em nome do Que Nega. Zegak expulsou os atacantes. Na luta morreu Gail.
+Zegak passou fome no inverno por 9 dias, e sete pessoas morreram. Foram 9 dias de fome no inverno em Esan, com dezessete mortos.
 
-### Ano 238
-
-Morreu o último que tinha visto o ano 74. Em Maem, ninguém desperdiçava uma gota d'água, mas ninguém sabia mais dizer por quê. No verão, em Maem nasceu a primeira criança: Yoesela, filha de Haniya e Nimael. O inverno foi de gelo: duas pessoas morreram de frio.
-
-### Ano 239
-
-Esak já não se preparava para nada: o Que Julga sempre dava. No outono, começou a Sexta Guerra Santa: em nome do Que Nega, Maem pegou em lanças contra Zegak. Na Sexta Guerra Santa, Maem atacou Zegak na floresta em nome do Que Nega. Zegak expulsou os atacantes. Rilnur, Nimael, Haniya e Haur morreram na luta. Depois da derrota, Maem não existia mais: os cinco que sobraram foram levados para Zegak. A Sexta Guerra Santa terminou com a conquista: dois anos, duas batalhas e cinco mortos.
+*Entre os anos 238 e 239, nada mudou o rumo do mundo.*
 
 ### Ano 240
 
-Na primavera do ano 240, Ruan, que falava pelo Senhor das Lanças em Maror, morreu de velhice aos 64 anos. Esak já não cabia na praia. Esrilela, a devota, levou dezesseis pessoas para o morro e fundou Moar. As ruínas de Mavil viraram aviso em Moar: era o que o deus fazia com quem o desagradava. Nos anos 231 a 240 houve oito fomes, cinco batalhas, vinte preces que pareceram atendidas e sete preces sem resposta; nasceram 112 crianças e morreram 104 pessoas. No fim do ano 240, 217 pessoas viviam no mundo: Zegak (74), Maror (101), Esak (26) e Moar (16).
+Nos anos 231 a 240 houve três fomes e dez preces que pareceram atendidas; nasceram 150 crianças e morreram 97 pessoas. No fim do ano 240, 264 pessoas viviam no mundo: Zegak (79), Esan (99), Isil (33) e Rues (53).
 
 ### Ano 241
 
-Apareceu no céu uma luz com rabo, que ficou 12 noites e sumiu. Esya passou a falar pelo Que Julga em Moar. Era a primeira a rezar e a última a duvidar.
+Niruan rezou por Zeor até a voz acabar. Zeor morreu mesmo assim, e Niruan nunca mais rezou. Uma febre correu Esan e levou três vidas. No verão, Nian, o devoto, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Depois da seca, Rues jurou nunca desperdiçar água. Rues acabou: Berut e Benuya foram viver em Zegak.
 
 ### Ano 242
 
-No outono, uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito. No inverno, em Moar nasceu a primeira criança: Rilselel, filho de Esrilela e Gaur.
+Isu, que guiava Esan, morreu dormindo, aos 60 anos. Foram 9 dias de fome no inverno em Zegak, com dezessete mortos. Zegak encontrou as ruínas de Rues. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Uma febre correu Zegak e levou quatro vidas.
 
 ### Ano 243
 
-Em Esak, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Gau deu à luz gêmeos, Hau e Gabela. Uns viram bênção; outros, mau sinal. Nihaur implorou pelo filho. Hagael morreu, e daquele dia em diante Nihaur cuspia no chão quando falavam do Que Nega. Uma tosse que não passava matou três pessoas em Zegak.
+Na primavera, Viel, que guiava Esan, morreu dormindo, aos 57 anos.
 
 ### Ano 244
 
-Na primavera, Nuil disse ter ouvido o deus de outro jeito: não era «o Que Nega», era «a Estrela de Cauda». Zegak acreditou, e o deus mudou de nome. Harilur partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. Esya tinha rezado: «Que Julga, não deixes nossos filhos morrerem de fome.» A fome passou, e Moar viu nisso obra do Que Julga. O deus nada fez: o crédito era de graça. Foram 9 dias de fome no inverno em Zegak, com 21 mortos. Maror passou fome no inverno por 9 dias, e dezesseis pessoas morreram.
+Na primavera do ano 244, Beisu, que guiava Zegak, morreu de velhice aos 58 anos.
 
 ### Ano 245
 
-Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu.
+Niruan rezou por Ruan até a voz acabar. Ruan morreu mesmo assim, e Niruan nunca mais rezou. Morreu Nuil, que guiava Isil, aos 62 anos. Isil escolheu Mil para guiar o grupo. Vibeu queria o lugar e nunca perdoou. Depois de tanta briga pelo comando, Isil passou a ser guiado por um conselho dos mais velhos.
 
-*No ano 246, nada de notável aconteceu.*
-
-### Ano 247
-
-Na primavera do ano 247, Nuel, de Zegak, tomou por esposa Mogaya, de Moar, e os dois povos passaram a se visitar.
-
-### Ano 248
-
-Morreu Nihaur, que guiava Zegak, aos 51 anos. Desde a morte de Hagael, nunca mais tinha rezado. Sem lugar e sem comida, Peesos e os seus atravessaram a borda do mundo. Ninguém soube deles. As preces de Esak ficaram pequenas: pedia-se ao Que Julga até sol para a pesca e sorte na caça. O deus calou justo quando Esak mais dependia dele. A doença entrou em Esak e matou onze pessoas.
+*Do ano 246 ao 248, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 249
 
-Zegak passou fome no inverno por 9 dias, e cinco pessoas morreram. O inverno foi de gelo: 22 pessoas morreram de frio.
+Em Esan, Ruvil pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Esan viu nisso obra do Que Nega. O deus nada fez: o crédito era de graça. Nas tabuletas de Esan, ficou escrito que foi o Que Nega.
 
 ### Ano 250
 
-Na primavera do ano 250, com Esrilela à frente, a nova geração de Moar abandonou a festa da chuva, costume herdado dos avós. Nuil, a devota, morreu ao dar à luz. No inverno, Esya, que falava pelo Que Julga em Moar, deu à luz e não sobreviveu ao parto. Nos anos 241 a 250 houve duas secas, treze fomes, doze preces que pareceram atendidas e seis preces sem resposta; nasceram 151 crianças e morreram 177 pessoas. No fim do ano 250, 185 pessoas viviam no mundo: Zegak (69), Maror (76), Esak (21) e Moar (19).
+Esan já não cabia no lago. Viar, o pacífico, levou dezenove pessoas para o morro e fundou Zenan. A fome no inverno durou 9 dias em Zegak e levou 24 vidas. Zenan encontrou as ruínas de Zeur e disse que ali tinham vivido gigantes. No verão, nasceu Dadaya, a primeira de Zenan. A doença entrou em Zegak e matou cinco pessoas. Nos anos 241 a 250 houve duas secas, quinze fomes, onze preces que pareceram atendidas e quatro preces sem resposta; nasceram 123 crianças e morreram 197 pessoas. No fim do ano 250, 190 pessoas viviam no mundo: Zegak (55), Esan (86), Isil (29) e Zenan (20).
 
-### Ano 251
-
-Na primavera, com Esrilela à frente, a nova geração de Moar abandonou o treino com lanças, costume herdado dos avós. Espeu, de Esak, casou-se com Nios e foi viver em Moar. Foi o primeiro laço entre os dois povos.
+*O ano 251 foi calmo.*
 
 ### Ano 252
 
-No verão do ano 252, o sol escureceu outra vez.
+Morreu Bevian, que guiava Esan, aos 62 anos. Desde a morte de Ruberan, nunca mais tinha rezado.
 
 ### Ano 253
 
-Na primavera do ano 253, Gar, que falava pelo Que Julga em Esak, morreu de repente, aos 42 anos. Em Moar, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Julga». Esbeya deu à luz gêmeos, Gamar e Rilel. Uns viram bênção; outros, mau sinal.
+A seca voltou, como no ano 207: 25 dias sem chuva, até que o céu se abriu.
 
-*No ano 254, nada de notável aconteceu.*
+### Ano 254
+
+Em Zenan, Ruvil tomou para si o cuidado das preces ao Que Nega.
 
 ### Ano 255
 
-Em Zegak, Nu pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zegak deu graças à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? Os escribas de Zegak registraram o milagre. De novo o sol se apagou no meio do dia.
+Foram 11 dias de fome no inverno em Isil, com três mortos. O inverno foi de gelo: quatro pessoas morreram de frio.
 
-*Entre os anos 256 e 257, nada mudou o rumo do mundo.*
+### Ano 256
+
+Em Zenan, Vil começou a pregar que o deus não era «o Que Nega». Era «o Que Julga». Em poucos anos, todos rezavam assim.
+
+### Ano 257
+
+Na primavera do ano 257, Beril, de Zenan, casou-se com Viesel e foi viver em Zegak. Foi o primeiro laço entre os dois povos. No outono, de novo o sol se apagou no meio do dia. No inverno, Habeil deu à luz gêmeos, Zezel e Miar. Uns viram bênção; outros, mau sinal.
 
 ### Ano 258
 
-Zegak atacou Moar no morro. Moar resistiu, e Zegak voltou de mãos vazias. Na luta morreram Nizeur, Loela e Viel. Desde então, Moar chama o morro de Morro da Vitória. Começou a Segunda Guerra do Morro: o rancor entre Zegak e Moar virou guerra.
+Em Esan, Beruar pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Esan viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Esan, ficou escrito que foi o Que Nega.
 
-*No ano 259, nada de notável aconteceu.*
+### Ano 259
+
+Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Rilzela partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Uma tosse que não passava matou 35 pessoas em Esan. A febre levou Viar, que fundou Zenan e o guiava. Tinha fundado Zenan. No verão, morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Isil perdeu o saber.
 
 ### Ano 260
 
-Sem lugar e sem comida, Vil e os seus atravessaram a borda do mundo. Ninguém soube deles. A Segunda Guerra do Morro seguiu: Zegak contra Moar, no morro. Zegak venceu e levou a comida guardada. Na luta morreu Monil. A Segunda Guerra do Morro seguiu: Zegak contra Moar, no morro. Zegak venceu e levou a comida guardada. Nios e Moesos morreram na luta. Moar não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. De novo a chuva sumiu, como no ano 227. Foram 21 dias de seca. Nos anos 251 a 260 houve sete fomes, cinco batalhas, oito preces que pareceram atendidas e três preces sem resposta; nasceram 139 crianças e morreram 86 pessoas. No fim do ano 260, 231 pessoas viviam no mundo: Zegak (97), Maror (79), Esak (29) e Moar (26).
+Esil, que guiava Isil, morreu de repente, aos 40 anos. Em Isil, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 182, só a crônica guarda. Nos anos 251 a 260 houve três secas, nove fomes e seis preces que pareceram atendidas; nasceram 109 crianças e morreram 139 pessoas. No fim do ano 260, 156 pessoas viviam no mundo: Zegak (57), Esan (63), Isil (17) e Zenan (19).
 
-### Ano 261
-
-Maror passou fome no inverno por 9 dias, e dezoito pessoas morreram. Na Segunda Guerra do Morro, Zegak atacou Moar no morro. Moar foi derrotado e perdeu o que tinha guardado. Peur e Rilselel morreram na luta.
-
-### Ano 262
-
-No outono do ano 262, a Segunda Guerra do Morro seguiu: Moar contra Zegak, na floresta. Zegak resistiu, e Moar voltou de mãos vazias. Mos e Rilesor morreram na luta. Desde então, Moar chama a floresta de Floresta do Luto. O inverno foi de gelo: oito pessoas morreram de frio.
+*Os anos 261 a 262 passaram em paz.*
 
 ### Ano 263
 
-A febre levou Rilar, que guiava Zegak. Uma febre correu Zegak e levou nove vidas. No verão, começou a Guerra dos Irmãos: Zegak e Esak, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos seguiu: Zegak contra Esak, na praia. Zegak venceu e levou a comida guardada. Na luta morreram Lorilos, Esos e Niar. Esak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+Ruzear, que guiava Esan, morreu dormindo, aos 62 anos.
 
 ### Ano 264
 
-Na primavera, Esbeya, a pacífica, morreu de velhice aos 52 anos. No outono, a Segunda Guerra do Morro seguiu: Moar contra Zegak, na floresta. Zegak expulsou os atacantes. Niesos e Nur morreram na luta.
+Na primavera, em Zenan, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No inverno, uma estrela de cauda cruzou o céu por 9 noites. Ninguém dormia direito.
 
 ### Ano 265
 
-No verão, a Guerra dos Irmãos seguiu: Zegak contra Esak, na praia. Esak foi derrotado e perdeu o que tinha guardado. Marbuya e Niniu morreram na luta.
+Na primavera do ano 265, a terra tremeu. Caíram vinte cabanas. Beil, Ruviela, Gazeil, Rilu e Esruya morreram sob os escombros.
 
 ### Ano 266
 
-Na primavera, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Haniur implorou pelo filho. Gaur morreu, e daquele dia em diante Haniur cuspia no chão quando falavam da Estrela de Cauda. A febre levou Bebuan, que guiava Maror. Uma febre correu Zegak e levou 25 vidas. Depois da febre, Moar passou a queimar os seus mortos, para que a doença não voltasse.
+Em Esan, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Nega». A tempestade trouxe raios para o morro. Um deles acertou Ruzeor. Ninguém em Zenan teve dúvida: era castigo. Para Zenan, Ruzeor foi castigado. Desde então, quem duvida do Que Julga duvida em silêncio. Desde a morte de Ruzeor, ninguém em Zenan sobe o morro em dia de tempestade. Desde aquele dia, Zenan chama o morro de Morro do Raio.
 
-*O ano 267 foi calmo.*
-
-### Ano 268
-
-Em Maror, gritaram que o templo mentia em nome do Senhor das Lanças. Os sacerdotes foram tirados do poder. A Guerra dos Irmãos seguiu: Esak contra Zegak, na floresta. Zegak expulsou os atacantes. Esrilur e Niesela morreram na luta. Zegak venceu Moar e levou os sete sobreviventes para viver sob seu mando. Moar deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Segunda Guerra do Morro terminou com a conquista: dez anos, dez batalhas e dezessete mortos. Depois de tantas preces sem resposta, Esak concluiu que tinha pecado. Era preciso pagar.
+*Entre os anos 267 e 268, nada mudou o rumo do mundo.*
 
 ### Ano 269
 
-Na Guerra dos Irmãos, Esak atacou Zegak na floresta. Zegak resistiu, e Esak voltou de mãos vazias. Esur e Nipeur morreram na luta. Zegak venceu Esak e levou os sete sobreviventes para viver sob seu mando. Esak deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra dos Irmãos terminou com a conquista: nove anos, sete batalhas e quinze mortos. No verão, Zegak encontrou as ruínas de Esak. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+A terra tremeu. Caíram 21 cabanas. Nuhaela, Hahar, Marilya, Ruan, Berniya e Zebeu morreram sob os escombros. No inverno, Haela deu à luz gêmeos, Zeesan e Zeniya. Uns viram bênção; outros, mau sinal.
 
 ### Ano 270
 
-Na primavera, morreu Viar, aos 47 anos. Na guerra, tinha tirado duas vidas. Nos anos 261 a 270 houve quatro fomes, doze batalhas, dezoito preces que pareceram atendidas e dezessete preces sem resposta; nasceram 110 crianças e morreram 180 pessoas. No fim do ano 270, 161 pessoas viviam no mundo: Zegak (82) e Maror (79).
+Nos anos 261 a 270 houve três preces que pareceram atendidas; nasceram 117 crianças e morreram 56 pessoas. No fim do ano 270, 219 pessoas viviam no mundo: Zegak (92), Esan (80), Isil (25) e Zenan (22).
 
-*Entre os anos 271 e 273, nada mudou o rumo do mundo.*
+### Ano 271
 
-### Ano 274
+Ruil tinha rezado: «Cura Niela, Que Julga. Ela é tão pequena.» A febre passou, e Ruil contou a todos que o Que Julga tinha ouvido. A crônica sabe que foi acaso. De novo a chuva sumiu, como no ano 253. Foram 24 dias de seca.
 
-Em Zegak, Nu pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Zegak viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Os escribas de Zegak registraram o milagre. No inverno, Haniur rezou por Haya até a voz acabar. Haya morreu mesmo assim, e Haniur nunca mais rezou.
+### Ano 272
+
+Zegak passou fome no inverno por 9 dias, e 27 pessoas morreram.
+
+*Do ano 273 ao 274, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 275
 
-Na primavera, Gamaor, que guiava Zegak, morreu dormindo, aos 57 anos. Nunca perdoou o deus pela morte de Rilil.
+Zenan já não se preparava para nada: o Que Julga sempre dava. Nitela, de Zenan, casou-se com Nudoel e foi viver em Isil. Foi o primeiro laço entre os dois povos.
 
 ### Ano 276
 
-Na primavera, Nu, que falava pela Estrela de Cauda em Zegak, morreu de velhice aos 60 anos. Bemaur, que guiava Zegak, morreu dormindo, aos 50 anos. Foram 3 dias de fome no inverno em Zegak, com um morto.
+Uma febre correu Esan e levou três vidas.
 
-*O ano 277 foi calmo.*
+### Ano 277
+
+A fome no inverno durou 9 dias em Esan e levou quatro vidas. No outono, o sol escureceu outra vez.
 
 ### Ano 278
 
-Na primavera do ano 278, Maror escolheu Buar para guiar o grupo. Beiban queria o lugar e nunca perdoou. A doença entrou em Maror e matou três pessoas. A seca voltou, como no ano 260: 21 dias sem chuva, até que o céu se abriu.
+Na primavera do ano 278, morreu Beruar, que falava pelo Que Nega em Esan, aos 60 anos. Ruvil, que guiava Zenan, morreu dormindo, aos 68 anos.
 
-### Ano 279
-
-Maror passou fome no inverno por 9 dias, e 25 pessoas morreram. Zegak passou fome no inverno por 11 dias, e sete pessoas morreram. No outono, a terra tremeu. Caíram catorze cabanas.
+*O ano 279 passou sem nada que a crônica precise guardar.*
 
 ### Ano 280
 
-Nos anos 271 a 280 houve oito fomes e nove preces que pareceram atendidas; nasceram 79 crianças e morreram 91 pessoas. No fim do ano 280, 149 pessoas viviam no mundo: Zegak (73) e Maror (76).
+Nos anos 271 a 280 houve duas secas, sete fomes e três preces que pareceram atendidas; nasceram 126 crianças e morreram 103 pessoas. No fim do ano 280, 242 pessoas viviam no mundo: Zegak (71), Esan (101), Isil (34) e Zenan (36).
 
-*Os anos 281 a 283 passaram em paz.*
+### Ano 281
+
+No verão do ano 281, sem lugar e sem comida, Mihail e os seus atravessaram a borda do mundo. Ninguém soube deles.
+
+*O ano 282 passou sem nada que a crônica precise guardar.*
+
+### Ano 283
+
+Na primavera do ano 283, Gagail partiu com sete pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 284
 
-Ruibela deu à luz gêmeos, Ibiban e Faruis. Uns viram bênção; outros, mau sinal.
+De novo a chuva sumiu, como no ano 271. Foram 25 dias de seca.
 
 ### Ano 285
 
-Na primavera, o templo de Zegak não aceitou Viela, que chamava o deus de «o Pai das Pedras». Houve gritos, pedras, e os seguidores de Viela foram embora. Viela não aceitou um povo sem deus. Saiu de Zegak com 47 fiéis e fundou Esum na praia, onde rezam ao Pai das Pedras. Diante das ruínas de Maem, Esum disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Esum nasceu a primeira criança: Gaviur, filho de Haela e Maviel. No verão, Maviel passou a falar pelo Pai das Pedras em Esum. Era o primeiro a rezar e o último a duvidar.
+Na primavera, com Vizear à frente, Esan largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. A fome no inverno durou 9 dias em Isil e levou cinco vidas. Vizear, que guiava Esan, não resistiu à fome.
 
 ### Ano 286
 
-Em Esum, quem vinha de fora era recebido com comida e lugar perto do fogo. Gaela, de Esum, casou-se com Zeur e foi viver em Zegak. Foi o primeiro laço entre os dois povos. Foram 9 dias de fome no inverno em Esum, com 25 mortos. Em Esum, Viela pediu: «Pai das Pedras, não deixes nossos filhos morrerem de fome.» A comida voltou, e Esum deu graças ao Pai das Pedras. O deus não tinha feito nada. A praia passou a ser a praia da fome: Praia da Fome.
+Morreu Bebear, que guiava Isil, aos 62 anos. Sem lugar e sem comida, Isela e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Zegak, com oito mortos. Foram 9 dias de fome no inverno em Esan, com 30 mortos.
 
 ### Ano 287
 
-No verão, Maror já não cabia no lago. Ruibela, a rancorosa, levou 22 pessoas para o morro e fundou Faor. Faor encontrou as ruínas de Maem e disse que ali tinham vivido gigantes. Nas ruínas de Moar, Ibniela achou o que eles sabiam: aprendeu a cortar pedra. Ibniela passou dias nas ruínas de Moar e voltou sabendo cortar pedra. No outono, Faor encontrou as ruínas de Moar e disse que ali tinham vivido gigantes.
+Na primavera, Zepeu, que guiava Isil, morreu dormindo, aos 45 anos. No inverno, Isil atacou Zenan no morro. Zenan resistiu, e Isil voltou de mãos vazias. Na luta morreram Iszear, Nitela, Ishael e Nigaela.
 
 ### Ano 288
 
-Na primavera do ano 288, Esniel morreu de velhice aos 64 anos. Em Faor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 143, só a crônica guarda. Nas ruínas de Moar, Fabuan achou o que eles sabiam: aprendeu a cortar pedra. Nasceu Ibibis, a primeira de Faor. No inverno, o sol escureceu outra vez.
+Haesil, que guiava Zegak, morreu de velhice aos 60 anos. Vimau passou a guiar Zegak, mas Maur não aceitou e guardou rancor. No verão, o deus calou justo quando Zenan mais dependia dele.
 
 ### Ano 289
 
-Cansado de um líder que mandava sozinho, Zegak passou a decidir em conselho. Em Esum, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam.
+No verão do ano 289, Miel, o medroso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Começou a Guerra do Morro: o rancor entre Isil e Zenan virou guerra. Na Guerra do Morro, Isil atacou Zenan no morro. Zenan expulsou os atacantes. Na luta morreram Habear, Nuela e Viya. A Guerra do Morro seguiu: Isil contra Zenan, no morro. Zenan resistiu, e Isil voltou de mãos vazias. Na luta morreram Esisel, Nudoel e Niya.
 
 ### Ano 290
 
-Na primavera, com Viela à frente, a nova geração de Esum abandonou o medo das tempestades, costume herdado dos avós. No verão, Viela, que fundou Esum e o guiava, morreu ao dar à luz. Foi quem levou os seus a fundar Esum. A seca voltou, como no ano 278: 25 dias sem chuva, até que o céu se abriu. Fabuan passou dias nas ruínas de Moar e voltou sabendo cortar pedra. Nos anos 281 a 290 houve três secas, seis fomes e quatro preces que pareceram atendidas; nasceram 113 crianças e morreram 76 pessoas. No fim do ano 290, 188 pessoas viviam no mundo: Zegak (53), Maror (92), Esum (19) e Faor (24).
+Com lanças e promessas, Maur acabou com o conselho de Zegak e passou a mandar sozinho. A terra tremeu. Caíram 24 cabanas. Hazeur, Hail e Havian morreram sob os escombros. Nos anos 281 a 290 houve quatro secas, quinze fomes, três batalhas e quatro preces que pareceram atendidas; nasceram 119 crianças e morreram 133 pessoas. No fim do ano 290, 213 pessoas viviam no mundo: Zegak (68), Esan (83), Isil (17) e Zenan (45).
 
 ### Ano 291
 
-Na primavera do ano 291, com lanças e promessas, Mabeur acabou com o conselho de Zegak e passou a mandar sozinho. Ibberis passou dias nas ruínas de Moar e voltou sabendo cortar pedra. Foram 14 dias de fome por causa da seca em Faor, com um morto. No outono, Faor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Na primavera, ninguém lembrava mais a razão, e Isil abandonou o costume de queimar os mortos. Beresya deu à luz gêmeos, Ruruya e Beruela. Uns viram bênção; outros, mau sinal.
 
 ### Ano 292
 
-Em Zegak, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Estrela de Cauda». Nas ruínas de Maem, Fabuan achou o que eles sabiam: aprendeu a trabalhar o metal.
+Em Isil, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 225, só a crônica guarda. A doença entrou em Esan e matou quatro pessoas. Desde a febre, Esan não enterra mais ninguém: os mortos vão para o fogo. Haruan tinha rezado: «Que Julga, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zenan deu graças ao Que Julga. O deus nada fez: o crédito era de graça.
 
-### Ano 293
+*Os anos 293 a 294 passaram em paz.*
 
-Na primavera, Buar, que guiava Maror, morreu de velhice aos 55 anos. A forja de Faor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+### Ano 295
 
-### Ano 294
-
-Na primavera do ano 294, Mabeur, que guiava Zegak, morreu de velhice aos 49 anos. Gaela deu à luz gêmeos, Rilya e Rilil. Uns viram bênção; outros, mau sinal.
-
-*O ano 295 passou sem nada que a crônica precise guardar.*
+A seca voltou, como no ano 284: 18 dias sem chuva, até que o céu se abriu.
 
 ### Ano 296
 
-Em Esum, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Pai das Pedras». Rilur, de Esum, tomou por esposa Ruela, de Faor, e os dois povos passaram a se visitar. Faor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Faor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Houve luta na floresta: Maror atacou Zegak. Zegak foi derrotado e perdeu o que tinha guardado. Hagar, Rilbeur e Viniela morreram na luta.
+Com lanças e promessas, Nael acabou com o conselho de Zenan e passou a mandar sozinho. Foram 9 dias de fome no inverno em Zegak, com seis mortos. Zenan passou fome no inverno por 9 dias, e nove pessoas morreram. A Guerra do Morro esfriou sem acordo nem vencedor: nove anos, cinco batalhas e doze mortos, e ninguém sabia mais por que lutava. Zenan saiu dela mais forte. Uma febre correu Zegak e levou oito vidas.
 
 ### Ano 297
 
-Morreu Nuel, que falava pela Estrela de Cauda em Zegak, aos 70 anos. Desde a morte de Haya, nunca mais tinha rezado. Maror atacou Esum na praia. Maror venceu e levou a comida guardada. Esgau e Ruela morreram na luta. No verão, começou a Guerra da Fome da Floresta: Maror, com fome, foi buscar à força a comida de Zegak. No inverno, com canais e moinhos, Faor já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Começou a Segunda Guerra da Fome: Maror, com fome, foi buscar à força a comida de Esum.
+No inverno, Dopeu, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 298
 
-Com Rilur à frente, a nova geração de Esum abandonou o costume de queimar os mortos, costume herdado dos avós. Em nome do Pai das Pedras, Rilur proibiu casamentos e trocas com Maror. Era vontade de Rilur, não do deus. A Segunda Guerra da Fome seguiu: Esum contra Maror, no lago em nome do Pai das Pedras. Maror resistiu, e Esum voltou de mãos vazias. Manil, Gazel e Virilu morreram na luta. Desde então, Esum chama o lago de Lago do Luto.
+De novo o sol se apagou no meio do dia. O que aconteceu não tinha explicação. Em Isil, os que zombavam das preces foram os primeiros a ajoelhar. Depois disso, Isil deixou de chamar o deus de «o Que Ergue» e passou a chamá-lo de «o Olho Escuro».
 
-### Ano 299
-
-Maror atacou Faor no morro. Faor foi derrotado e perdeu o que tinha guardado. Na luta morreram Far, Ruibela e Rumarel. Para Faor, o morro virou Morro do Luto. Faor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Maror e Faor se encontraram no morro e juraram paz. Na Guerra da Fome da Floresta, Maror atacou Zegak na floresta. Maror venceu e levou a comida guardada. Na luta morreram Esvior e Ibniela.
+*O ano 299 foi calmo.*
 
 ### Ano 300
 
-A Segunda Guerra da Fome seguiu: Esum contra Maror, no lago em nome do Pai das Pedras. Maror resistiu, e Esum voltou de mãos vazias. Na luta morreram Beos e Mau. Nos anos 291 a 300 houve oito fomes e catorze batalhas; nasceram 110 crianças e morreram 63 pessoas. No fim do ano 300, 237 pessoas viviam no mundo: Zegak (74), Maror (119), Esum (20) e Faor (24).
+Dadaya, que guiava Esan, morreu de velhice aos 50 anos. Morreu Ruil, que falava pelo Que Julga em Zenan, aos 62 anos. O sol escureceu outra vez. Nos anos 291 a 300 houve duas secas, onze fomes, duas batalhas e oito preces que pareceram atendidas; nasceram 122 crianças e morreram 96 pessoas. No fim do ano 300, 241 pessoas viviam no mundo: Zegak (81), Esan (103), Isil (12) e Zenan (45).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zegak** vive na floresta, com 74 pessoas, com canais e moinhos; é o povo mais antigo; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 63); não desperdiça uma gota d'água (desde o ano 74); queima os mortos (desde o ano 85); treina os jovens com lanças (desde o ano 91); faz a festa da chuva (desde o ano 148); não sai de casa em dia de tempestade (desde o ano 219).
-- **Maror** vive no lago, com 119 pessoas, com canais e moinhos; nasceu de uma briga em Fail no ano 98; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 143); treina os jovens com lanças (desde o ano 297).
-- **Esum** vive na praia, com 20 pessoas, com canais e moinhos; nasceu de um cisma em Zegak no ano 285; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 63); treina os jovens com lanças (desde o ano 91); faz a festa da chuva (desde o ano 148).
-- **Faor** vive no morro, com 24 pessoas, com canais e moinhos; nasceu de uma migração em Maror no ano 287; chama o deus de «o Senhor das Lanças»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 299).
+- **Zegak** vive na floresta, com 81 pessoas, com canais e moinhos; é o povo mais antigo; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 63); não desperdiça uma gota d'água (desde o ano 74); treina os jovens com lanças (desde o ano 78); queima os mortos (desde o ano 96).
+- **Esan** vive no lago, com 103 pessoas, com canais e moinhos; nasceu de uma migração em Zegak no ano 29; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 162); queima os mortos (desde o ano 292).
+- **Isil** vive na praia, com 12 pessoas, em casas de pedra; nasceu de uma migração em Zegak no ano 147; chama o deus de «o Olho Escuro»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
+- **Zenan** vive no morro, com 45 pessoas, com canais e moinhos; nasceu de uma migração em Esan no ano 250; chama o deus de «o Que Julga»; costumes: guarda tanta comida para o inverno (desde o ano 162); não sai de casa em dia de tempestade (desde o ano 266).
 
-Povos que deixaram de existir: Esan, Haes, Fail, Rilur, Mavil, Esak, Maem e Moar.
+Povos que deixaram de existir: Haes, Toran, Zeur e Rues.
 
-Lugares com nome: Praia do Raio (praia, para Zegak), Praia da Fome (praia, para Haes), Praia do Luto (praia, para Rilur), Praia da Vitória (praia, para Maror), Praia da Vitória (praia, para Esak), Praia do Luto (praia, para Mavil), Praia da Fome (praia, para Esum), Lago do Raio (lago, para Esan), Lago da Vitória (lago, para Zegak), Lago do Luto (lago, para Maror), Lago do Luto (lago, para Esum), Floresta do Raio (floresta, para Zegak), Floresta do Luto (floresta, para Esan), Floresta do Luto (floresta, para Rilur), Floresta do Luto (floresta, para Mavil), Floresta do Luto (floresta, para Maem), Floresta do Luto (floresta, para Moar), Floresta do Luto (floresta, para Esak), Floresta da Vitória (floresta, para Maror), Morro do Raio (morro, para Fail), Morro da Vitória (morro, para Zegak), Morro do Luto (morro, para Mavil), Morro da Trégua (morro, para Rilur), Morro da Vitória (morro, para Maror), Morro da Vitória (morro, para Moar) e Morro do Luto (morro, para Faor).
+Lugares com nome: Praia do Raio (praia, para Zegak), Praia da Fome (praia, para Haes), Praia da Fome (praia, para Isil), Praia da Vitória (praia, para Esan), Lago do Raio (lago, para Esan), Lago da Vitória (lago, para Zegak), Lago da Trégua (lago, para Isil), Floresta do Raio (floresta, para Zegak), Floresta do Luto (floresta, para Esan), Morro da Trégua (morro, para Zegak), Morro da Trégua (morro, para Zeur), Morro da Vitória (morro, para Isil), Morro do Luto (morro, para Rues) e Morro do Raio (morro, para Zenan).
 
-Em 300 anos nasceram 2563 pessoas e morreram 2290.
+Em 300 anos nasceram 2514 pessoas e morreram 2214.

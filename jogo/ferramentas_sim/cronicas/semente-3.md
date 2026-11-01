@@ -280,53 +280,55 @@ Começou a Guerra Santa da Floresta: em nome do Senhor do Trovão, Maor pegou em
 
 ### Ano 90
 
-Na primavera, os de Koil caíram sobre Viak na praia em nome do Que Risca o Céu. Viak foi derrotado e perdeu o que tinha guardado. Dolona e Marmaos morreram na luta. Para Koil, a praia virou Praia da Vitória. Foram 6 dias de fome no inverno em Peak, com três mortos. Dokios, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Nos anos 81 a 90 houve três secas, oito fomes, seis batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 147 crianças e morreram 102 pessoas. No fim do ano 90, 174 pessoas viviam no mundo: Koil (72), Peak (61), Viak (9) e Maor (32).
+Morreu Dovik, o medroso, aos 53 anos. Na Guerra Santa da Floresta, Maor atacou Peak na floresta em nome do Senhor do Trovão. Peak foi derrotado e perdeu o que tinha guardado. Kokou e Lotamu morreram na luta. Para Maor, a floresta virou Floresta da Vitória. Depois da derrota, os jovens de Peak passaram a treinar com lanças. A fome no inverno durou 6 dias em Peak e levou três vidas. Nos anos 81 a 90 houve três secas, oito fomes, seis batalhas, 27 preces que pareceram atendidas e dez preces sem resposta; nasceram 147 crianças e morreram 101 pessoas. No fim do ano 90, 175 pessoas viviam no mundo: Koil (72), Peak (55), Viak (16) e Maor (32).
 
-### Ano 91
+*O ano 91 passou sem nada que a crônica precise guardar.*
 
-Na primavera do ano 91, morreu Doe, que guiava Maor, aos 59 anos. Morreu o último que tinha visto o ano 28. Em Maor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Mare passou a guiar Maor, mas Kobuos não aceitou e guardou rancor. No verão, depois da luta, Maor e Peak se encontraram na floresta e juraram paz. A Guerra Santa da Floresta acabou em trégua, depois de três anos, três batalhas e dois mortos. Peak saiu dela mais forte.
+### Ano 92
 
-*O ano 92 foi calmo.*
+Na primavera do ano 92, morreu Doe, que guiava Maor, aos 60 anos. Morreu o último que tinha visto o ano 28. Em Maor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Na Guerra Santa da Floresta, Maor atacou Peak na floresta. Peak expulsou os atacantes. Veis e Komana morreram na luta. Depois da derrota, os jovens de Maor passaram a treinar com lanças. Depois de quatro anos, quatro batalhas e cinco mortos, a Guerra Santa da Floresta terminou em paz. Peak saiu dela mais forte.
 
 ### Ano 93
 
-Depois da seca, Maor jurou nunca desperdiçar água. Kiu, que guiava Koil, morreu de fome.
+Kiu, que guiava Koil, morreu de velhice aos 67 anos. Dolona disse ter ouvido o deus de outro jeito: não era «o Que Risca o Céu», era «o Senhor do Trovão». Viak acreditou, e o deus mudou de nome.
 
 ### Ano 94
 
-Foram 9 dias de fome por causa da seca em Koil, com dezenove mortos. Em Koil, Kiu pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Que Risca o Céu. A crônica sabe que foi acaso. Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Tamik, que falava pelo Senhor do Trovão em Viak, morreu de velhice aos 58 anos. Viak passou a receber bem os de fora: um casamento com outro povo virava festa. No verão, Pemaela, a generosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
 
-*No ano 95, nada de notável aconteceu.*
+### Ano 95
+
+Kivion tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Viak viu nisso obra do Senhor do Trovão. O deus não tinha feito nada. Rae partiu com nove pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Loe, que guiava Peak, morreu de fome. Kipeik, que falava pela Mãe da Fartura em Peak, não resistiu à fome.
 
 ### Ano 96
 
-Na primavera do ano 96, Kipeik, que falava pela Mãe da Fartura em Peak, morreu de frio.
+Na primavera do ano 96, Mapeik disse ter ouvido o deus de outro jeito: não era «a Mãe da Fartura», era «a Chama de Cima». Peak acreditou, e o deus mudou de nome. Peak passou fome no inverno por 9 dias, e dezoito pessoas morreram.
 
 ### Ano 97
 
-Peon, que guiava Koil, morreu dormindo, aos 54 anos. No inverno, a tempestade trouxe raios para o morro. Um deles acertou Madour. A família de Madour nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Maor sai de casa. Lembram de Madour.
+Peon implorou pela filha. Loviu morreu, e daquele dia em diante Peon cuspia no chão quando falavam do Que Risca o Céu.
 
 ### Ano 98
 
-Tamik, que falava pelo Que Risca o Céu em Viak, morreu dormindo, aos 62 anos.
+Um raio caiu no morro durante a tempestade e matou Loloe. Ninguém em Maor teve dúvida: era castigo. Para Maor, Loloe foi castigada. Desde então, quem duvida do Senhor do Trovão duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Maor sai de casa. Lembram de Loloe.
 
 ### Ano 99
 
-De novo a chuva sumiu, como no ano 87. Foram 21 dias de seca.
+Morreu Makoe, que falava pelo Que Risca o Céu em Koil, aos 59 anos. Em Maor, Kolour começou a pregar que o deus não era «o Senhor do Trovão». Era «o Que Queima». Em poucos anos, todos rezavam assim. Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Velour, de Koil, tomou por esposa Doela, de Viak, e os dois povos passaram a se visitar. Maor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 100
 
-Foram 9 dias de fome no inverno em Koil, com quatro mortos. Os de Maor caíram sobre Viak na praia em nome do Senhor do Trovão. Maor venceu e levou a comida guardada. A fome por causa da seca durou 24 dias em Peak e levou 29 vidas. No verão, em nome do Senhor do Trovão, Lomaik proibiu casamentos e trocas com Viak. Era vontade de Lomaik, não do deus. Nos anos 91 a 100 houve três secas, doze fomes, duas batalhas, 32 preces que pareceram atendidas e quinze preces sem resposta; nasceram 131 crianças e morreram 168 pessoas. No fim do ano 100, 137 pessoas viviam no mundo: Koil (68), Peak (40), Viak (7) e Maor (22).
+Nos anos 91 a 100 houve duas secas, nove fomes, duas batalhas, 27 preces que pareceram atendidas e cinco preces sem resposta; nasceram 112 crianças e morreram 112 pessoas. No fim do ano 100, 165 pessoas viviam no mundo: Koil (70), Peak (60), Viak (8) e Maor (27).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Koil** vive no lago, com 68 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (desde o ano 76); não desperdiça uma gota d'água (desde o ano 78); queima os mortos (desde o ano 78).
-- **Peak** vive na floresta, com 40 pessoas, em casas de pedra; nasceu de uma briga em Koil no ano 23; chama o deus de «a Mãe da Fartura»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 59); guarda tanta comida para o inverno (desde o ano 60); não desperdiça uma gota d'água (desde o ano 78).
-- **Viak** vive na praia, com 7 pessoas, e planta roças; nasceu de uma briga em Koil no ano 41; chama o deus de «o Que Risca o Céu»; costumes: faz a festa da chuva (desde o ano 48); treina os jovens com lanças (desde o ano 86); guarda tanta comida para o inverno (desde o ano 94).
-- **Maor** vive no morro, com 22 pessoas, em casas de pedra; nasceu de uma migração em Peak no ano 50; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 86); não desperdiça uma gota d'água (desde o ano 93); não sai de casa em dia de tempestade (desde o ano 97).
+- **Koil** vive no lago, com 70 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Risca o Céu»; costumes: guarda tanta comida para o inverno (desde o ano 76); não desperdiça uma gota d'água (desde o ano 78); queima os mortos (desde o ano 78).
+- **Peak** vive na floresta, com 60 pessoas, em casas de pedra; nasceu de uma briga em Koil no ano 23; chama o deus de «a Chama de Cima»; costumes: queima os mortos (desde o ano 59); guarda tanta comida para o inverno (desde o ano 60); não desperdiça uma gota d'água (desde o ano 78); treina os jovens com lanças (desde o ano 90).
+- **Viak** vive na praia, com 8 pessoas, e planta roças; nasceu de uma briga em Koil no ano 41; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (desde o ano 48); treina os jovens com lanças (desde o ano 86).
+- **Maor** vive no morro, com 27 pessoas, e trabalha o metal; nasceu de uma migração em Peak no ano 50; chama o deus de «o Que Queima»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 86); treina os jovens com lanças (desde o ano 92); não sai de casa em dia de tempestade (desde o ano 98).
 
-Lugares com nome: Praia da Vitória (praia, para Maor), Praia do Luto (praia, para Viak), Praia da Vitória (praia, para Koil), Lago da Fome (lago, para Koil), Floresta da Fome (floresta, para Peak), Floresta da Trégua (floresta, para Maor), Morro da Trégua (morro, para Koil) e Morro da Trégua (morro, para Maor).
+Lugares com nome: Praia da Vitória (praia, para Maor), Praia do Luto (praia, para Viak), Lago da Fome (lago, para Koil), Floresta da Fome (floresta, para Peak), Floresta da Vitória (floresta, para Maor), Morro da Trégua (morro, para Koil) e Morro da Trégua (morro, para Maor).
 
-Em 100 anos nasceram 612 pessoas e morreram 475.
+Em 100 anos nasceram 593 pessoas e morreram 418.

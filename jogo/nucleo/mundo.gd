@@ -2182,6 +2182,16 @@ func _terminar_guerra(gu: Dictionary, desfecho: String, vencedor: int) -> void:
 	if not gu["ativa"]:
 		return
 	gu["ativa"] = false
+	# O fim de uma guerra esfria os dois lados: o édito que a motivou cai, e vêm anos de trégua.
+	var ga: Grupo = grupos[gu["a"]]
+	var gb: Grupo = grupos[gu["b"]]
+	ga.proibido.erase(gb.id)
+	gb.proibido.erase(ga.id)
+	var ate := dia_abs() + DIAS_ANO * 3
+	ga.tregua_ate[gb.id] = maxi(ga.tregua_ate.get(gb.id, -1), ate)
+	gb.tregua_ate[ga.id] = maxi(gb.tregua_ate.get(ga.id, -1), ate)
+	ga.hostilidade[gb.id] = minf(ga.hostilidade.get(gb.id, 0.0), 2.0)
+	gb.hostilidade[ga.id] = minf(gb.hostilidade.get(ga.id, 0.0), 2.0)
 	if gu["nome"].is_empty():
 		return
 	if vencedor == -1:
@@ -3236,60 +3246,149 @@ func ruinas_visiveis() -> Array:
 	return r
 
 
+var _construcoes_chave: Array = []
+var _construcoes: Array = []
+var _obras_por_grupo: Dictionary = {}   # id do grupo -> [assinatura, construções] (não é salvo)
+
+
+## Guardadas por hora: o mesmo array volta até a hora seguinte (copie se precisar guardar).
 func construcoes() -> Array:
+	var chave := [passo, eventos.size()]
+	if chave == _construcoes_chave:
+		return _construcoes
 	var r: Array = []
 	for g in grupos_vivos():
-		r.append_array(Cotidiano.construcoes_do_grupo(self, g))
+		# Cada povo só refaz as peças quando algo que as define muda.
+		var assinatura := [g.zona, g.abrigos, g.estagio, g.membros.size(), g.tem_crenca, g.ceticos,
+			g.tem_costume("estocar"), g.violencia >= 0.5, grupos_na_zona(g.zona).size()]
+		var guardado: Array = _obras_por_grupo.get(g.id, [])
+		if guardado.is_empty() or guardado[0] != assinatura:
+			guardado = [assinatura, Cotidiano.construcoes_do_grupo(self, g)]
+			_obras_por_grupo[g.id] = guardado
+		r.append_array(guardado[1])
+	_construcoes = r
+	_construcoes_chave = chave
 	return r
 
 
 ## A rotina do dia corrente: planos de todos e cenas. Refeita quando muda o dia, chega
 ## evento novo ou muda a população; uma consulta pura, que não toca no sorteio do mundo.
 func rotina():
-	var chave := [dia_abs(), eventos.size(), populacao(), tempestade.get("evento", -1)]
-	if _rotina_cache == null or chave != _rotina_chave:
+	# Refeita por dia (e se cair uma tempestade): os eventos que geram cenas acontecem no
+	# começo do dia, e quem nasce ou chega depois ganha o plano na hora em que aparece.
+	var chave := [dia_abs(), tempestade.get("evento", -1), era]
+	var refazer := _rotina_cache == null or _rotina_chave.slice(0, 3) != chave
+	if not refazer:
+		# Um evento novo que vira cena hoje (nascimento, casamento, ataque...) refaz a rotina.
+		for i in range(_rotina_cache.eventos_vistos, eventos.size()):
+			if Rotina.GERAM_CENA.has(eventos[i].tipo):
+				refazer = true
+				break
+		_rotina_cache.eventos_vistos = eventos.size()
+	if refazer:
 		_rotina_cache = Rotina.new(self, dia_abs())
-		_rotina_chave = chave
+		_rotina_cache.eventos_vistos = eventos.size()
+		_rotina_chave = chave + [eventos.size()]
 	return _rotina_cache
 
 
 ## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora.
 ## `x_anterior` é onde a pessoa está no começo da hora, e `x`, no fim; `agenda` traz os
-## trechos da hora em detalhe (veja nucleo/API.md).
+## trechos da hora em detalhe (veja nucleo/API.md). A resposta é guardada por hora e o
+## mesmo array é devolvido de novo: copie o que precisar guardar além da hora.
+var _visiveis_chave: Array = []
+var _visiveis: Array = []
+var _fichas: Dictionary = {}      # id -> ficha da pessoa, reaproveitada a cada hora (não é salva)
+var _cenas_chave: Array = []
+var _cenas: Array = []
+
+
 func pessoas_visiveis() -> Array:
-	var r: Array = []
-	var a := ano()
 	var ro = rotina()
+	var chave := [_rotina_chave, passo, populacao(), acompanhada]
+	if chave == _visiveis_chave:
+		return _visiveis
+	var a := ano()
 	var h := hora()
+	var r: Array = []
 	for g in grupos_vivos():
 		for id in g.membros:
 			var p: Pessoa = pessoas[id]
-			var comeco: Dictionary = ro.instante(id, h * 60.0)
-			var meio: Dictionary = ro.instante(id, h * 60.0 + 30.0)
-			var fim: Dictionary = ro.instante(id, h * 60.0 + 59.9)
-			var papel := ""
-			if g.lider == id:
-				papel = "lider"
-			elif g.sacerdote == id:
-				papel = "sacerdote"
-			r.append({"id": id, "nome": p.nome, "sexo": p.sexo, "idade": p.idade(a),
-				"crianca": p.idade(a) < 12, "grupo": g.id, "x": fim["x"], "x_anterior": comeco["x"],
-				"acao": meio["acao"], "virado": meio["virado"], "cena": meio["cena"].duplicate(),
-				"agenda": ro.agenda(id, h), "papel": papel, "tracos": p.tracos.duplicate(),
-				"doente": p.doente > 0, "gravida": p.gravidez > 0, "acompanhada": id == acompanhada,
-				"pai": p.pai, "mae": p.mae, "conjuge": p.conjuge})
+			var f: Dictionary = _fichas.get(id, {})
+			if f.is_empty() or f["_dia"] != dia_abs():
+				f = {"id": id, "nome": p.nome, "sexo": p.sexo, "tracos": p.tracos.duplicate(), "pai": p.pai,
+					"mae": p.mae, "_dia": dia_abs()}
+				_fichas[id] = f
+			var ag: Array
+			if h < 5 and not ro.linhas.has(id):
+				# De madrugada todos dormem em casa; o plano do dia ainda está sendo montado.
+				var casa: float = ro.casa_de(id)
+				ag = [{"de": 0.0, "ate": 1.0, "x0": casa, "x1": casa, "acao": "dormir", "virado": 0, "cena": {}}]
+			else:
+				ag = ro.agenda(id, h)
+			# A ação, o lado e a cena do meio da hora saem do trecho que cobre a metade dela.
+			var meio: Dictionary = ag[-1]
+			for tr in ag:
+				if tr["ate"] > 0.5:
+					meio = tr
+					break
+			var idade: int = p.idade(a)
+			f["idade"] = idade
+			f["crianca"] = idade < 12
+			f["grupo"] = g.id
+			f["x_anterior"] = ag[0]["x0"]
+			f["x"] = ag[-1]["x1"]
+			f["acao"] = meio["acao"]
+			f["virado"] = meio["virado"]
+			f["cena"] = meio["cena"]
+			f["agenda"] = ag
+			f["papel"] = "lider" if g.lider == id else ("sacerdote" if g.sacerdote == id else "")
+			f["doente"] = p.doente > 0
+			f["gravida"] = p.gravidez > 0
+			f["acompanhada"] = id == acompanhada
+			f["conjuge"] = p.conjuge
+			r.append(f)
+	if _fichas.size() > r.size() * 2 + 50:
+		var vivas := {}
+		for f in r:
+			vivas[f["id"]] = _fichas[f["id"]]
+		_fichas = vivas
+	if h < 5:
+		ro.preparar(int(ceil(r.size() / float(5 - h))))
+	_visiveis = r
+	_visiveis_chave = chave
 	return r
 
 
+## Monta até `n` planos do dia que ainda faltam. A apresentação pode chamar a cada quadro
+## (por exemplo, com n = 4) para espalhar o custo da montagem do dia, que de outro modo
+## cai nas primeiras horas da madrugada. Devolve quantos ainda faltam.
+func adiantar_rotina(n: int = 4) -> int:
+	var ro = rotina()
+	ro.preparar(n)
+	var faltam := 0
+	for g in grupos_vivos():
+		for id in g.membros:
+			if not ro.linhas.has(id):
+				faltam += 1
+	return faltam
+
+
 ## Cenas que acontecem nesta hora: funeral, nascimento, casamento, festa, migração,
-## guerra, corvos, prece coletiva, colheita e construção.
+## guerra, corvos, prece coletiva, colheita e construção. Guardadas por hora, como acima.
 func cenas_ativas() -> Array:
+	var chave := [_rotina_chave, passo]
+	rotina()
+	if chave == _cenas_chave:
+		return _cenas
 	var r: Array = []
 	for c in rotina().cenas_na_hora(hora()):
-		var d: Dictionary = c.duplicate(true)
+		var d: Dictionary = c.duplicate()
 		d["ini"] = c["ini"] / 60.0
 		d["fim"] = c["fim"] / 60.0
 		r.append(d)
+	_cenas = r
+	_cenas_chave = [_rotina_chave, passo]
 	return r
 
 
@@ -3301,15 +3400,28 @@ func posicao_de(pessoa_id: int) -> float:
 
 
 ## Preces esperando resposta: os sinais da moldura.
+var _preces_chave: Array = []
+var _preces: Array = []
+var _textos_prece: Dictionary = {}   # id do evento -> [texto, curto] (não é salvo)
+
+
+## Guardadas por hora, como as construções.
 func preces_abertas() -> Array:
+	var chave := [passo, eventos.size()]
+	if chave == _preces_chave:
+		return _preces
 	var r: Array = []
 	for g in grupos_vivos():
 		for nec in g.preces:
 			var pr: Dictionary = g.preces[nec]
 			var e: Evento = eventos[pr["evento"]]
+			if not _textos_prece.has(e.id):
+				_textos_prece[e.id] = [_cronista.texto_prece(e), _cronista.texto_curto(e)]
 			r.append({"evento": e.id, "grupo": g.id, "autor": pr["autor"], "alvo": pr["alvo"],
 				"necessidade": nec, "desde": pr["dia"], "dias": dia_abs() - pr["dia"],
-				"x": posicao_de(pr["autor"]), "texto": _cronista.texto_prece(e), "curto": _cronista.texto_curto(e)})
+				"x": posicao_de(pr["autor"]), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1]})
+	_preces = r
+	_preces_chave = chave
 	return r
 
 

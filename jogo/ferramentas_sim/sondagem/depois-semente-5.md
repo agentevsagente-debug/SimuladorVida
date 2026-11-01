@@ -284,7 +284,7 @@ No inverno do ano 91, Pea deu à luz e não sobreviveu ao parto.
 
 ### Ano 93
 
-Na primavera do ano 93, morreu Rua, que guiava Taur, aos 60 anos. Estau pregou em Miak que o deus não era «a Terra Brava», mas «o Que Queima». O templo chamou aquilo de heresia, e Estau saiu com os que a seguiam. Os que ainda rezavam, com Estau à frente, deixaram Miak, que tinha deixado de crer, e fundaram Zeum no morro. Ali o deus se chama «o Que Queima». Nasceu Isloe, a primeira de Zeum. Em Zeum, Losan tomou para si o cuidado das preces ao Que Queima.
+Na primavera do ano 93, morreu Rua, que guiava Taur, aos 60 anos. Estau pregou em Miak que o deus não era «a Terra Brava», mas «o Que Queima». O templo chamou aquilo de heresia, e Estau saiu com os que a seguiam. Com Estau à frente, catorze pessoas fundaram Zeum no morro, onde o deus se chama «o Que Queima». Nasceu Isloe, a primeira de Zeum. Em Zeum, Losan tomou para si o cuidado das preces ao Que Queima.
 
 ### Ano 94
 
@@ -350,695 +350,683 @@ Taur atacou Kian na floresta. Taur venceu e levou a comida guardada. Taur e Kian
 
 ### Ano 110
 
-Rutais, que falava pelo Que Leva em Martak, morreu dormindo, aos 56 anos. Ruem disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «a Voz do Céu». Kian acreditou, e o deus mudou de nome. Foram 9 dias de fome por causa da seca em Martak, com três mortos. A fome ensinou: desde então, Martak estoca comida e não come tudo o que colhe. No verão, Ruil anunciou que o Que Risca o Céu proibia qualquer trato com Kian. O deus nunca disse isso, mas Taur obedeceu. Nos anos 101 a 110 houve sete fomes, duas batalhas, dezenove preces que pareceram atendidas e oito preces sem resposta; nasceram 72 crianças e morreram 72 pessoas. No fim do ano 110, 100 pessoas viviam no mundo: Taur (5), Martak (57), Zeum (26) e Kian (12).
+Rutais, que falava pelo Que Leva em Martak, morreu dormindo, aos 56 anos. Ruem disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «a Voz do Céu». Kian acreditou, e o deus mudou de nome. Foram 9 dias de fome por causa da seca em Martak, com três mortos. A fome ensinou: desde então, Martak estoca comida e não come tudo o que colhe. Ruil anunciou que o Que Risca o Céu proibia qualquer trato com Martak. O deus nunca disse isso, mas Taur obedeceu. Nos anos 101 a 110 houve sete fomes, duas batalhas, dezoito preces que pareceram atendidas e oito preces sem resposta; nasceram 71 crianças e morreram 64 pessoas. No fim do ano 110, 107 pessoas viviam no mundo: Taur (8), Martak (60), Zeum (27) e Kian (12).
 
 ### Ano 111
 
-Kian, que guiava Martak, morreu de velhice aos 57 anos. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Taur perdeu o saber. Taur conheceu a maior fome da sua história no inverno. Em 8 dias, morreram 23. Muitas cabanas ficaram vazias. Pea, de Kian, casou-se com Pesaor e foi viver em Martak. Foi o primeiro laço entre os dois povos.
+Na primavera do ano 111, em Kian, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Pea, de Kian, casou-se com Esem e foi viver em Martak. Foi o primeiro laço entre os dois povos. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Taur, e 21 mortos. As crianças foram as primeiras. No verão, em nome do Que Risca o Céu, Ruil proibiu casamentos e trocas com Kian. Era vontade de Ruil, não do deus. Kian passou a festejar todo ano o dia da volta da chuva, em honra da Voz do Céu.
 
 ### Ano 112
 
-Em Kian, Kimara pediu: «Manda água, Voz do Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Kian duvidou de que a Voz do Céu tinha ouvido. A crônica sabe que foi acaso. No inverno, Taur atacou Martak no lago em nome do Que Risca o Céu. Martak resistiu, e Taur voltou de mãos vazias. Temarim morreu na luta. Depois da derrota, Taur não existia mais: os seis que sobraram foram levados para Martak.
+Sem lugar e sem comida, Esem e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Ruil, que guiava Taur, morreu ao dar à luz. Foi quem proibiu, em nome do deus, o trato com Zeum.
 
-### Ano 113
+*No ano 113, nada de notável aconteceu.*
 
-Martak encontrou as ruínas de Taur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. As ruínas de Taur viraram aviso em Zeum: era o que o deus fazia com quem o desagradava.
+### Ano 114
 
-*O ano 114 passou sem nada que a crônica precise guardar.*
+Morreu Pesan, que guiava Martak, aos 62 anos.
 
 ### Ano 115
 
-Na primavera, Tata, que falava pelo Que Leva em Martak, morreu de velhice aos 60 anos. Maris, a ambiciosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Em Martak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
-### Ano 116
-
-Samarem, de Kian, tomou por esposa Isa, de Zeum, e os dois povos passaram a se visitar. No inverno, Martak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+*No ano 116, nada de notável aconteceu.*
 
 ### Ano 117
 
-Na primavera, Kimara, a generosa, morreu de velhice aos 52 anos. Morreu Taruem, que falava pela Voz do Céu em Kian, aos 55 anos.
+Isa, a generosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Isa, a generosa, deu à luz e não sobreviveu ao parto.
 
-### Ano 118
-
-Maris, a ambiciosa, cansou de dividir pouca comida. Partiu com onze pessoas para a praia e ali fundou Kium. Kium encontrou as ruínas de Miak e disse que ali tinham vivido gigantes.
-
-### Ano 119
-
-Na primavera do ano 119, diante das ruínas de Taur, Kium disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, nasceu Ruik, o primeiro de Kium.
+*Entre os anos 118 e 119, nada mudou o rumo do mundo.*
 
 ### Ano 120
 
-Nos anos 111 a 120 houve quatro fomes e catorze preces que pareceram atendidas; nasceram 57 crianças e morreram 29 pessoas. No fim do ano 120, 128 pessoas viviam no mundo: Martak (76), Zeum (23), Kian (15) e Kium (14).
+Em Zeum, Tem pediu: «Que Queima, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeum deu graças ao Que Queima. Foi só o tempo, mas quem iria dizer? Nos anos 111 a 120 houve quatro fomes e quinze preces que pareceram atendidas; nasceram 64 crianças e morreram 21 pessoas. No fim do ano 120, 144 pessoas viviam no mundo: Taur (11), Martak (79), Zeum (43) e Kian (11).
 
 ### Ano 121
 
-Morreu Peor, que guiava Martak, aos 66 anos. Nanaor, que fundou Kian e o guiava, morreu de repente, aos 41 anos. Foi quem levou os seus a fundar Kian. No verão, Esesor, de Martak, tomou por esposa Isisil, de Kium, e os dois povos passaram a se visitar.
+Na primavera, Maris, que guiava Zeum, morreu de repente, aos 35 anos. Tantas preces atendidas fizeram Zeum confiar no céu mais do que nas próprias mãos. Uma tosse que não passava matou três pessoas em Martak. Depois da febre, Martak passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 122
 
-Na primavera do ano 122, em Kium, Runuo tomou para si o cuidado das preces ao Que Queima. Zeum já não se preparava para nada: o Que Queima sempre dava.
+No inverno do ano 122, dessa vez, o Que Queima não respondeu, e Zeum, que tinha esquecido como se virar sozinho, pagou caro. Tem, que falava pelo Que Queima em Zeum, morreu de fome. De novo a chuva sumiu, como no ano 90. Foram 25 dias de seca. Depois da seca, Zeum jurou nunca desperdiçar água. Zeum acabou: Iswaik, o último, foi viver em Martak.
 
 ### Ano 123
 
-Em Martak, Naesem começou a pregar que o deus não era «o Que Leva». Era «o Sedento». Em poucos anos, todos rezavam assim. Milim disse ter ouvido o deus de outro jeito: não era «o Que Queima», era «o Que Fere». Kium acreditou, e o deus mudou de nome. Sem lugar e sem comida, Gapean e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Depois disso, Zeum deixou de chamar o deus de «o Que Queima» e passou a chamá-lo de «o Que Apaga o Sol».
+Na primavera, Taur encontrou as ruínas de Zeum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. A fome por causa da seca durou 23 dias em Martak e levou catorze vidas.
 
-*O ano 124 foi calmo.*
+### Ano 124
 
-### Ano 125
+Pem rezou por Rukian até a voz acabar. Rukian morreu mesmo assim, e Pem nunca mais rezou.
 
-No verão do ano 125, Kium ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+*No ano 125, nada de notável aconteceu.*
 
-*O ano 126 passou sem nada que a crônica precise guardar.*
+### Ano 126
+
+Morreu Markior, que guiava Taur, aos 47 anos. Em Taur, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 77, só a crônica guarda. A fome no inverno durou 3 dias em Martak e levou duas vidas.
 
 ### Ano 127
 
-Taon tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Martak deu graças ao Sedento. O deus não tinha feito nada. Apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu. Para Kian, o deus já não era «a Voz do Céu»: passou a ser «o Que Risca o Céu».
+Na primavera do ano 127, em Martak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam.
 
 ### Ano 128
 
-Em Zeum, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. No outono, em Zeum, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+No verão, Ta não podia mais viver perto de Kia. Saiu de Martak com dez pessoas e fundou Natan no morro. Natan encontrou as ruínas de Zeum. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 129
 
-Na primavera do ano 129, Naesem rezou por Rukion até a voz acabar. Rukion morreu mesmo assim, e Naesem nunca mais rezou. Uma febre correu Martak e levou sete vidas. A seca voltou, como no ano 90: 21 dias sem chuva, até que o céu se abriu. Kian já não se preparava para nada: o Que Risca o Céu sempre dava. Em Kium, Maris pediu: «Que Fere, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Kium duvidou de que o Que Fere tinha ouvido. A crônica sabe que foi acaso.
+Na primavera, Kimara, a generosa, morreu de velhice aos 64 anos. Em Natan, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Gapeis, de Natan, casou-se com Lotaem e foi viver em Taur. Foi o primeiro laço entre os dois povos. Em Taur, Lotaem pediu: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Taur agradeceu ao Que Risca o Céu. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Natan: todo ano, celebram a chuva que o Que Leva mandou.
 
 ### Ano 130
 
-Na primavera do ano 130, dessa vez, o Que Apaga o Sol não respondeu, e Zeum, que tinha esquecido como se virar sozinho, pagou caro. Sem lugar e sem comida, Marnail e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Martak caíram sobre Kian na floresta. Kian foi derrotado e perdeu o que tinha guardado. Samarem morreu na luta. Martak passou fome por causa da seca por 24 dias, e 22 pessoas morreram. A fome por causa da seca durou 24 dias em Zeum e levou dezenove vidas. Nos anos 121 a 130 houve sete fomes, 21 preces que pareceram atendidas e quatro preces sem resposta; nasceram 92 crianças e morreram 77 pessoas. No fim do ano 130, 134 pessoas viviam no mundo: Martak (62), Zeum (24), Kian (16) e Kium (32).
+Nos anos 121 a 130 houve duas secas, seis fomes, dezesseis preces que pareceram atendidas e cinco preces sem resposta; nasceram 53 crianças e morreram 91 pessoas. No fim do ano 130, 106 pessoas viviam no mundo: Taur (19), Martak (66), Kian (14) e Natan (7).
 
 ### Ano 131
 
-Na primavera, Kia, que guiava Martak, morreu de velhice aos 55 anos. Os de Martak caíram sobre Kium na praia. Martak venceu e levou a comida guardada. Takia, Maris e Rue morreram na luta. Desde então, Kium chama a praia de Praia do Luto. Depois da derrota, os jovens de Kium passaram a treinar com lanças. Martak e Kium, cansados de enterrar os seus, fizeram as pazes na praia.
+Na primavera, morreu Taruem, que falava pela Voz do Céu em Kian, aos 69 anos.
 
-*O ano 132 foi calmo.*
-
-### Ano 133
-
-Lio, o ambicioso, aprendeu a tirar metal da pedra no fogo alto.
+*Entre os anos 132 e 133, nada mudou o rumo do mundo.*
 
 ### Ano 134
 
-Na primavera do ano 134, Kiru morreu dormindo, aos 51 anos. Runuo, que falava pelo Que Fere em Kium, morreu de velhice aos 52 anos. Com Milim à frente, a nova geração de Kium abandonou a festa da chuva, costume herdado dos avós. Em Kium, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 77, só a crônica guarda. No verão, uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito.
+Ta, que fundou Natan e o guiava, morreu de velhice aos 51 anos. Tinha fundado Natan. Taon, o devoto, morreu dormindo, aos 63 anos.
 
 ### Ano 135
 
-Na primavera, Naesem, o generoso, morreu de velhice aos 56 anos. Desde a morte de Rukion, nunca mais tinha rezado. Uma febre correu Martak e levou cinco vidas. No inverno, a guerra entre Martak e Kian continuou: Martak voltou a atacar na floresta. Kian expulsou os atacantes. Taruon e Ruon morreram na luta. Depois da derrota, os jovens de Martak passaram a treinar com lanças. Depois de tantos mortos, Martak e Kian se encontraram na floresta e juraram paz.
+Natan acabou: Kinais, Gail e Gamaril foram viver em Taur. Taur encontrou as ruínas de Natan. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 136
 
-Na primavera do ano 136, Taon, que falava pelo Sedento em Martak, morreu dormindo, aos 65 anos. Tem, que falava pelo Que Apaga o Sol em Zeum, morreu dormindo, aos 57 anos. O dia em que a chuva voltou virou festa em Kium: todo ano, celebram a chuva que o Que Fere mandou. Kium já não se preparava para nada: o Que Fere sempre dava.
+A fome no inverno durou 8 dias em Martak e levou uma vida. Numa tempestade sobre a floresta, um raio matou Rukis. A família de Rukis nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Kian sai de casa. Lembram de Rukis.
 
 ### Ano 137
 
-Esem, que guiava Martak, morreu de velhice aos 56 anos. Martak escolheu Tasan para guiar o grupo. Esor queria o lugar e nunca perdoou. Kium passou fome no inverno por 9 dias, e cinco pessoas morreram.
+Kia não podia mais viver perto de Gapean. Saiu de Martak com treze pessoas e fundou Rues no morro. Rues encontrou as ruínas de Zeum e disse que ali tinham vivido gigantes. A seca voltou, como no ano 122: 25 dias sem chuva, até que o céu se abriu. Em Kian, Gaor pediu: «Manda água, Voz do Céu, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Kian duvidou de que a Voz do Céu tinha ouvido. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Rues: todo ano, celebram a chuva que o Que Leva mandou.
 
 ### Ano 138
 
-Houve luta na floresta: Kium atacou Kian. Kian resistiu, e Kium voltou de mãos vazias. Tamaril e Ruo morreram na luta. Para Kium, a floresta virou Floresta do Luto. Milim tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Kium deu graças ao Que Fere. O deus nada fez: o crédito era de graça. Dessa vez, o Que Fere não respondeu, e Kium, que tinha esquecido como se virar sozinho, pagou caro.
+Na primavera, Kitais passou a falar pelo Que Leva em Rues. Era a primeira a rezar e a última a duvidar. Foram 9 dias de fome no inverno em Martak, com quatro mortos. Kia tinha rezado: «Que Leva, não deixes nossos filhos morrerem de fome.» A comida voltou, e Rues deu graças ao Que Leva. A crônica sabe que foi acaso.
 
 ### Ano 139
 
-No outono do ano 139, começou a Guerra da Fome: Kium, com fome, foi buscar à força a comida de Kian. Na Guerra da Fome, Kium atacou Kian na floresta. Kium venceu e levou a comida guardada. Gaor, Marsa e Selem morreram na luta. Kian não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Na Guerra da Fome, Kium atacou Kian na floresta. Kian foi derrotado e perdeu o que tinha guardado. Fakiut, Tamis, Marmarem e Mim morreram na luta.
+Na primavera do ano 139, Kia, que fundou Rues e o guiava, morreu dormindo, aos 63 anos. Tinha fundado Rues. Gamara, a medrosa, morreu de velhice aos 67 anos. Em Rues, Kiu começou a pregar que o deus não era «o Que Leva». Era «o Generoso». Em poucos anos, todos rezavam assim. Eson, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. Tarua, de Martak, casou-se com Rukion e foi viver em Rues. Foi o primeiro laço entre os dois povos.
 
 ### Ano 140
 
-Na primavera do ano 140, com Milim à frente, a nova geração de Kium abandonou o medo das tempestades, costume herdado dos avós. Depois de tantos mortos, Kium e Kian se encontraram na floresta e juraram paz. Depois de dois anos, quatro batalhas e nove mortos, a Guerra da Fome terminou em paz. Kium saiu dela mais forte. No verão, uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito. Para Martak, o deus já não era «o Sedento»: passou a ser «a Estrela de Cauda». Nos anos 131 a 140 houve dez fomes, seis batalhas, 27 preces que pareceram atendidas e oito preces sem resposta; nasceram 110 crianças e morreram 55 pessoas. No fim do ano 140, 189 pessoas viviam no mundo: Martak (88), Zeum (44), Kian (23) e Kium (34).
+Na primavera do ano 140, Maru, que falava pelo Que Leva em Martak, morreu de velhice aos 56 anos. Nasceu Peis, filha de Tarua e Rukion, com sangue de Rues e de Martak. Taur passou fome por causa da seca por 23 dias, e oito pessoas morreram. Nos anos 131 a 140 houve duas secas, seis fomes, dezenove preces que pareceram atendidas e quatro preces sem resposta; nasceram 63 crianças e morreram 61 pessoas. No fim do ano 140, 108 pessoas viviam no mundo: Taur (20), Martak (62), Kian (12) e Rues (14).
 
-*O ano 141 foi calmo.*
+### Ano 141
+
+Rues escolheu Tau para guiar o grupo. Rukion queria o lugar e nunca perdoou. Tamis deu à luz gêmeos, Kil e Tagaon. Uns viram bênção; outros, mau sinal. Em nome do Que Leva, Esan proibiu casamentos e trocas com Taur. Era vontade de Esan, não do deus.
 
 ### Ano 142
 
-A tempestade trouxe raios para a praia. Um deles acertou Mik. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Kium sai de casa. Lembram de Mik. Milim, que guiava Kium, morreu de fome. Tau passou a guiar Kium, mas Ruik não aceitou e guardou rancor. Esesor rezou por Kikior até a voz acabar. Kikior morreu mesmo assim, e Esesor nunca mais rezou.
+Numa tempestade sobre o morro, um raio matou Esil. Em Rues, disseram que era castigo. Para Rues, Esil foi castigada. Desde então, quem duvida do Generoso duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Rues sai de casa. Lembram de Esil. Desde aquele dia, Rues chama o morro de Morro do Raio. No outono, Martak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 143
 
-Gagais partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Kium passou fome no inverno por 9 dias, e dezesseis pessoas morreram. Sem lugar e sem comida, Ze e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No inverno, Runaor, que falava pela Estrela de Cauda em Martak, não resistiu à fome.
+Na primavera, Nanaor, que fundou Kian e o guiava, morreu de velhice aos 63 anos. Foi quem levou os seus a fundar Kian.
 
-### Ano 144
+*Entre os anos 144 e 145, nada mudou o rumo do mundo.*
 
-Sem lugar e sem comida, Sapeis e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Martak, com dez mortos. Um inverno duro matou duas pessoas de frio. De novo o sol se apagou no meio do dia. Os de Martak caíram sobre Kian na floresta. Kian resistiu, e Martak voltou de mãos vazias. Ru e Kion morreram na luta.
+### Ano 146
 
-### Ano 145
+Em Martak, Marem começou a pregar que o deus não era «o Que Leva». Era «o Que Apaga o Sol». Em poucos anos, todos rezavam assim. De novo a chuva sumiu, como no ano 137. Foram 21 dias de seca.
 
-Em Kian, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Pefau partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Ruem, que falava pelo Que Risca o Céu em Kian, não resistiu à fome. Kian acabou: Eskia e Dasela foram viver em Zeum.
+### Ano 147
 
-*Os anos 146 a 147 passaram em paz.*
+Na primavera, morreu Gapean, que guiava Martak, aos 62 anos. Gail partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Foram 23 dias de fome por causa da seca em Taur, com sete mortos. O inverno foi de gelo: seis pessoas morreram de frio.
 
 ### Ano 148
 
-Kik tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeum viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Ruis, a corajosa, cansou de dividir pouca comida. Partiu com doze pessoas para a floresta e ali fundou Toem. Diante das ruínas de Kian, Toem disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Eson, o engenhoso, morreu de velhice aos 54 anos. Esan anunciou que o Que Apaga o Sol proibia qualquer trato com Rues. O deus nunca disse isso, mas Martak obedeceu. Samarem tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Taur viu nisso obra do Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Taur atacou Kian na floresta em nome do Que Risca o Céu. Kian expulsou os atacantes.
 
 ### Ano 149
 
-Esesor, que falava pela Estrela de Cauda em Martak, morreu dormindo, aos 61 anos. Nunca perdoou o deus pela morte de Kikior. Zeil disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Que Sacode». Toem acreditou, e o deus mudou de nome. Morreu o último que tinha visto o ano 95. Em Toem, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Pem passou a falar pelo Que Sacode em Toem. Era o primeiro a rezar e o último a duvidar.
+Na primavera do ano 149, Gaor, o medroso, morreu de velhice aos 53 anos. Uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito. No verão, começou a Guerra Santa: em nome do Que Risca o Céu, Taur pegou em lanças contra Kian. Depois da luta, Taur e Kian se encontraram na floresta e juraram paz. A Guerra Santa acabou em trégua, depois de um ano, duas batalhas e um morto. Kian saiu dela mais forte.
 
 ### Ano 150
 
-Em Toem nasceu a primeira criança: Zean, filho de Ruis e Pem. Nos anos 141 a 150 houve quinze fomes, 27 preces que pareceram atendidas e cinco preces sem resposta; nasceram 86 crianças e morreram 98 pessoas. No fim do ano 150, 166 pessoas viviam no mundo: Martak (87), Zeum (29), Kium (38) e Toem (12).
+Lotaem, que falava pelo Que Risca o Céu em Taur, morreu de velhice aos 52 anos. Esan, que falava pelo Que Apaga o Sol em Martak, morreu dormindo, aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Taur. Nos anos 141 a 150 houve três secas, seis fomes, duas batalhas, 23 preces que pareceram atendidas e oito preces sem resposta; nasceram 71 crianças e morreram 41 pessoas. No fim do ano 150, 138 pessoas viviam no mundo: Taur (22), Martak (86), Kian (11) e Rues (19).
 
 ### Ano 151
 
-No outono, a febre levou Iswaik, o medroso. Depois da seca, Kium jurou nunca desperdiçar água. Iswaik rezou por Isik até a voz acabar. Isik morreu mesmo assim, e Iswaik nunca mais rezou. Uma febre correu Kium e levou doze vidas. No inverno, a forja de Zeum não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Morreu Samarem, que guiava Taur, aos 59 anos. Em Taur, quem vinha de fora era recebido com comida e lugar perto do fogo.
 
 ### Ano 152
 
-Houve luta na floresta: Martak atacou Toem. Martak venceu e levou a comida guardada. Uma tosse que não passava matou oito pessoas em Martak. Em nome da Estrela de Cauda, Ruik proibiu casamentos e trocas com Zeum. Era vontade de Ruik, não do deus. Veio a pior fome que o mundo tinha visto: 20 dias por causa da seca em Martak, e 25 mortos. As crianças foram as primeiras. No inverno, começou a Guerra da Fome da Floresta: Kium, com fome, foi buscar à força a comida de Toem.
+Saon, o curioso, inventou marcas que guardavam palavras.
 
 ### Ano 153
 
-Na primavera, Esil anunciou que a Estrela de Cauda proibia qualquer trato com Toem. O deus nunca disse isso, mas Martak obedeceu. Começou a Segunda Guerra da Fome: Martak, com fome, foi buscar à força a comida de Toem. A Segunda Guerra da Fome seguiu: Martak contra Toem, na floresta em nome da Estrela de Cauda. Martak venceu e levou a comida guardada. Na luta morreram Zeil e Taor. Depois da derrota, os jovens de Toem passaram a treinar com lanças. A Segunda Guerra da Fome acabou em trégua, depois de um ano, duas batalhas e dois mortos. Martak saiu dela mais forte.
+Na primavera do ano 153, Rutan, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. No verão, Martak atacou Rues no morro. Rues foi derrotado e perdeu o que tinha guardado. Kitais, Ruon e Gamaril morreram na luta. Desde então, Martak chama o morro de Morro da Vitória. Depois da derrota, os jovens de Rues passaram a treinar com lanças. Martak e Rues, cansados de enterrar os seus, fizeram as pazes no morro.
 
-*O ano 154 passou sem nada que a crônica precise guardar.*
+### Ano 154
+
+Taruor, que guiava Martak, morreu dormindo, aos 55 anos. Foram 17 dias de fome no inverno em Martak, com dezesseis mortos.
 
 ### Ano 155
 
-Kizeik, que falava pela Estrela de Cauda em Zeum, morreu dormindo, aos 59 anos. Numa tempestade sobre o lago, um raio matou Napeor. Napeor era dos que mais rezavam, e Martak ficou sem entender. Depois disso, Martak deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Fere». Os devotos de Martak não viram castigo: para eles, o Que Fere chamou Napeor para perto. Nasceu ali a lembrança de Napeor como santo. A Guerra da Fome da Floresta esfriou sem acordo nem vencedor: três anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava.
+Na primavera, Kian passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
-*O ano 156 passou sem nada que a crônica precise guardar.*
-
-### Ano 157
-
-Kium atacou Toem na floresta em nome do Que Apaga o Sol. Toem foi derrotado e perdeu o que tinha guardado. Começou a Guerra Santa: em nome do Que Apaga o Sol, Kium pegou em lanças contra Toem.
-
-### Ano 158
-
-Na primavera do ano 158, Esil, que falava pelo Que Fere em Martak, morreu dormindo, aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Toem. Com Lio à frente, Zeum largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Kiem implorou pela filha. Eskil morreu, e daquele dia em diante Kiem cuspia no chão quando falavam do Que Fere. Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu.
+*Os anos 156 a 158 passaram em paz.*
 
 ### Ano 159
 
-Na primavera do ano 159, a Guerra Santa seguiu: Kium contra Toem, na floresta em nome do Que Apaga o Sol. Toem resistiu, e Kium voltou de mãos vazias. Buim e Ruik morreram na luta. Kium e Toem, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa acabou em trégua, depois de dois anos, três batalhas e dois mortos. A seca voltou, como no ano 129: 22 dias sem chuva, até que o céu se abriu. Sem lugar e sem comida, Tail e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Em Martak, Taor pediu: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Martak deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
 
 ### Ano 160
 
-Na primavera, com Taruor à frente, a nova geração de Martak abandonou a festa da chuva, costume herdado dos avós. Zeum passou fome por causa da seca por 21 dias, e cinco pessoas morreram. Nau, a curiosa, inventou marcas que guardavam palavras. No outono, os de Zeum caíram sobre Kium na praia. Zeum venceu e levou a comida guardada. Na luta morreram Ismia, Kiibim e Buisik. Zeum e Kium, cansados de enterrar os seus, fizeram as pazes na praia. Nos anos 151 a 160 houve duas secas, sete fomes, oito batalhas, 31 preces que pareceram atendidas e treze preces sem resposta; nasceram 108 crianças e morreram 120 pessoas. No fim do ano 160, 147 pessoas viviam no mundo: Martak (79), Zeum (37), Kium (17) e Toem (14).
+Morreu o último que tinha visto o ano 94. Em Taur, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Tail, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. Nos anos 151 a 160 houve seis fomes e treze preces que pareceram atendidas; nasceram 81 crianças e morreram 48 pessoas. No fim do ano 160, 171 pessoas viviam no mundo: Taur (34), Martak (93), Kian (28) e Rues (16).
 
 ### Ano 161
 
-Morreu Zekik, o rancoroso, aos 57 anos. No inverno, Miisik, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Kium escolheu Tanail para guiar o grupo. Kiibem queria o lugar e nunca perdoou.
+Na primavera, Taor, que falava pelo Que Apaga o Sol em Martak, morreu de velhice aos 55 anos. Kiem disse ter ouvido o deus de outro jeito: não era «a Voz do Céu», era «a Sombra». Kian acreditou, e o deus mudou de nome.
 
 ### Ano 162
 
-Foram 35 dias de fome em Kium, com sete mortos. Em Kium, Kiibem pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kium deu graças ao Que Apaga o Sol. A crônica sabe que foi acaso.
+Marsa, que guiava Kian, morreu de velhice aos 63 anos. No inverno, os de Martak caíram sobre Kian na floresta. Kian foi derrotado e perdeu o que tinha guardado. Na luta morreram Rua, Peloil e Daesor. Depois da derrota, os jovens de Kian passaram a treinar com lanças. Taur atacou Kian na floresta. Kian resistiu, e Taur voltou de mãos vazias. Loan, Niteor e Tail morreram na luta. Depois de tantos mortos, Taur e Kian se encontraram na floresta e juraram paz.
 
 ### Ano 163
 
-Houve luta na floresta: Martak atacou Toem em nome do Que Fere. Martak venceu e levou a comida guardada.
+A fome por causa da seca durou 15 dias em Martak e levou treze vidas. Uma febre correu Martak e levou cinco vidas. Os de Taur caíram sobre Rues no morro. Rues foi derrotado e perdeu o que tinha guardado. Pepeon e Tar morreram na luta. Um inverno duro matou quatro pessoas de frio. Começou a Guerra da Fome: Taur, com fome, foi buscar à força a comida de Rues.
 
-*O ano 164 foi calmo.*
+### Ano 164
 
-### Ano 165
+Em nome do Generoso, Rukion proibiu casamentos e trocas com Taur. Era vontade de Rukion, não do deus. No inverno, os de Martak caíram sobre Rues no morro. Rues resistiu, e Martak voltou de mãos vazias. Na luta morreram Nakion e Kimarem. Martak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Começou a Guerra da Fome da Floresta: Martak, com fome, foi buscar à força a comida de Kian. A Guerra da Fome da Floresta acabou em trégua, depois de dois anos, duas batalhas e sete mortos. Martak saiu dela mais forte.
 
-Na primavera do ano 165, o frio levou Taruor, que guiava Martak. No verão, sem lugar e sem comida, Bue e os seus atravessaram a borda do mundo. Ninguém soube deles. Começou a Guerra Santa da Floresta: em nome do Que Fere, Martak pegou em lanças contra Toem. No inverno, numa tempestade sobre o morro, um raio matou Ispem. Em Zeum, disseram que era castigo. Desde a morte de Ispem, ninguém em Zeum sobe o morro em dia de tempestade.
+*O ano 165 passou sem nada que a crônica precise guardar.*
 
 ### Ano 166
 
-Na primavera do ano 166, Kisa deu à luz gêmeos, Esmarem e Kiruon. Uns viram bênção; outros, mau sinal. Sem lugar e sem comida, Ispe e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera, Nata, que falava pelo Que Apaga o Sol em Martak, morreu dormindo, aos 60 anos. Taem partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Começou a Guerra dos Irmãos: Martak e Rues, nascidos do mesmo povo, viraram inimigos. A Guerra dos Irmãos acabou em trégua, depois de dois anos, duas batalhas e quatro mortos. Rues saiu dela mais forte. No inverno, a Guerra da Fome esfriou sem acordo nem vencedor: três anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. Taur saiu dela mais forte.
 
 *O ano 167 passou sem nada que a crônica precise guardar.*
 
 ### Ano 168
 
-Tanail, que guiava Kium, morreu de velhice aos 54 anos. Em Kium, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 131, só a crônica guarda. No verão, a Guerra Santa da Floresta esfriou sem acordo nem vencedor: cinco anos, duas batalhas e um morto, e ninguém sabia mais por que lutava.
+No outono do ano 168, em Martak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Martak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. De novo a chuva sumiu, como no ano 146. Foram 19 dias de seca. Tatan tinha rezado: «Que Risca o Céu, não nos deixes secar.» Quando a chuva voltou, Taur agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. Isisil, que guiava Martak, morreu de fome.
 
 ### Ano 169
 
-Na primavera do ano 169, Gakil, que guiava Martak, morreu dormindo, aos 64 anos. Mil, de Zeum, casou-se com Waim e foi viver em Toem. Foi o primeiro laço entre os dois povos. Kium passou a receber bem os de fora: um casamento com outro povo virava festa.
+Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Martak, e 27 mortos. As crianças foram as primeiras. No outono, tantas preces atendidas fizeram Rues confiar no céu mais do que nas próprias mãos. No inverno, tantas preces atendidas fizeram Kian confiar no céu mais do que nas próprias mãos.
 
 ### Ano 170
 
-Nos anos 161 a 170 houve sete fomes, duas batalhas, 24 preces que pareceram atendidas e sete preces sem resposta; nasceram 74 crianças e morreram 56 pessoas. No fim do ano 170, 157 pessoas viviam no mundo: Martak (82), Zeum (48), Kium (5) e Toem (22).
+Nos anos 161 a 170 houve três secas, onze fomes, sete batalhas, 38 preces que pareceram atendidas e catorze preces sem resposta; nasceram 104 crianças e morreram 114 pessoas. No fim do ano 170, 159 pessoas viviam no mundo: Taur (27), Martak (65), Kian (34) e Rues (33).
 
 ### Ano 171
 
-Tanaem tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Martak viu nisso obra do Que Fere. O deus nada fez: o crédito era de graça. Ruruem rezou por Zelia até a voz acabar. Zelia morreu mesmo assim, e Ruruem nunca mais rezou. Uma febre correu Zeum e levou quatro vidas. Depois da febre, Zeum passou a queimar os seus mortos, para que a doença não voltasse. A forja de Toem não apagava mais. O metal mudou o trabalho e mudou a guerra.
+No verão do ano 171, a forja de Rues não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 172
 
-Na primavera, Martak atacou Toem na floresta em nome do Que Fere. Martak venceu e levou a comida guardada. Na luta morreram Ruis, Zezem e Ulil. Em nome do Que Sacode, Pem proibiu casamentos e trocas com Martak. Era vontade de Pem, não do deus. Começou a Guerra Santa do Lago: em nome do Que Fere, Martak pegou em lanças contra Toem. Toem e Martak, cansados de enterrar os seus, fizeram as pazes no lago. Depois de duas batalhas e cinco mortos, a Guerra Santa do Lago terminou em paz. Martak saiu dela mais forte.
+Em Rues, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
-*O ano 173 passou sem nada que a crônica precise guardar.*
+### Ano 173
+
+Na primavera, morreu Taesan, que falava pelo Que Apaga o Sol em Martak, aos 50 anos.
 
 ### Ano 174
 
-Em Toem, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. A fome no inverno durou 18 dias em Martak e levou quatro vidas. Em nome do Que Fere, Nail proibiu casamentos e trocas com Kium. Era vontade de Nail, não do deus.
+Na primavera, as preces de Kian ficaram pequenas: pedia-se à Sombra até sol para a pesca e sorte na caça. O sol escureceu outra vez. Para Taur, o deus já não era «o Que Risca o Céu»: passou a ser «o Olho Escuro». Para Kian, o deus já não era «a Sombra»: passou a ser «o Que Apaga o Sol».
 
 ### Ano 175
 
-Martak passou fome no inverno por 18 dias, e cinco pessoas morreram. Os de Zeum caíram sobre Kium na praia. Zeum venceu e levou a comida guardada. Na luta morreram Buem e Isil. Depois da derrota, Kium não existia mais: os três que sobraram foram levados para Zeum. O inverno foi de gelo: treze pessoas morreram de frio. Depois da seca, Martak jurou nunca desperdiçar água.
+Na primavera do ano 175, em Rues, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Peu deu à luz gêmeos, Nira e Tateor. Uns viram bênção; outros, mau sinal. Dessa vez, o Que Apaga o Sol não respondeu, e Kian, que tinha esquecido como se virar sozinho, pagou caro. Dessa vez, o Olho Escuro não respondeu, e Rues, que tinha esquecido como se virar sozinho, pagou caro. Rukion, que guiava Rues, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Taur.
 
 ### Ano 176
 
-Em Martak, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 110, só a crônica guarda. Os de Zeum caíram sobre Toem na floresta. Toem foi derrotado e perdeu o que tinha guardado. Iskio e Lia morreram na luta. Desde então, Zeum chama a floresta de Floresta da Vitória. Martak passou fome por causa da seca por 23 dias, e 25 pessoas morreram. No outono, Rupeis deu à luz gêmeos, Napeu e Nail. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 176, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. A doença entrou em Martak e matou oito pessoas. Kipeon, que guiava Rues, morreu de febre aos 41 anos. Em Taur, cansados do silêncio, acusaram Tatan de mentir em nome do Olho Escuro. Tatan perdeu o lugar junto ao altar. A fome por causa da seca durou 23 dias em Rues e levou treze vidas.
 
-### Ano 177
+*Entre os anos 177 e 178, nada mudou o rumo do mundo.*
 
-A guerra entre Martak e Toem continuou: Martak voltou a atacar na floresta em nome do Que Fere. Martak venceu e levou a comida guardada. Na luta morreram Mil, Mitoan, Wao e Tasaon. Martak e Toem, cansados de enterrar os seus, fizeram as pazes na floresta. Depois da seca, Zeum jurou nunca desperdiçar água. Lio, que guiava Zeum, morreu de fome. Zeim, o pacífico, não resistiu à fome.
+### Ano 179
 
-### Ano 178
-
-Ruesem, que falava pelo Que Fere em Martak, morreu de velhice aos 48 anos. Em Toem, Wan pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Toem agradeceu ao Que Sacode. O deus nada fez: o crédito era de graça.
-
-*No ano 179, nada de notável aconteceu.*
+Naesa, que guiava Kian, morreu dormindo, aos 51 anos. A seca voltou, como no ano 168: 20 dias sem chuva, até que o céu se abriu. Nior tinha rezado: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Taur agradeceu ao Olho Escuro. A crônica sabe que foi acaso.
 
 ### Ano 180
 
-A seca voltou, como no ano 159: 25 dias sem chuva, até que o céu se abriu. Nos anos 171 a 180 houve cinco secas, doze fomes, cinco batalhas, 31 preces que pareceram atendidas e dezenove preces sem resposta; nasceram 88 crianças e morreram 147 pessoas. No fim do ano 180, 99 pessoas viviam no mundo: Martak (70), Zeum (11) e Toem (18).
+Foram 9 dias de fome no inverno em Martak, com oito mortos. Nos anos 171 a 180 houve três secas, sete fomes, 26 preces que pareceram atendidas e dez preces sem resposta; nasceram 119 crianças e morreram 129 pessoas. No fim do ano 180, 150 pessoas viviam no mundo: Taur (29), Martak (78), Kian (30) e Rues (13).
 
 ### Ano 181
 
-Pea, a medrosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Na primavera do ano 181, Saon, o curioso, morreu dormindo, aos 51 anos.
 
 ### Ano 182
 
-Pem, que guiava Toem, morreu de velhice aos 60 anos. Foi quem proibiu, em nome do deus, o trato com Martak.
+No inverno do ano 182, Namaril, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
 
 ### Ano 183
 
-Em Martak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 123, só a crônica guarda. No inverno, Maron implorou pela filha. Ruis morreu, e daquele dia em diante Maron cuspia no chão quando falavam do Que Fere.
+Morreu Tatan, o pacífico, aos 53 anos. Desde a morte de Sakiem, nunca mais tinha rezado.
 
 ### Ano 184
 
-Martak passou fome no inverno por 9 dias, e duas pessoas morreram. Takion, que guiava Martak, morreu de frio. Namaru passou a guiar Martak, mas Peon não aceitou e guardou rancor.
+Na primavera do ano 184, morreu Gan, que falava pelo Olho Escuro em Rues, aos 45 anos. Martak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Apaga o Sol.
 
 ### Ano 185
 
-No inverno do ano 185, os de Zeum caíram sobre Toem na floresta. Toem resistiu, e Zeum voltou de mãos vazias. Pemio morreu na luta. Começou a Guerra dos Irmãos: Zeum e Toem, nascidos do mesmo povo, viraram inimigos.
+Sem lugar e sem comida, Nalou e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
 ### Ano 186
 
-O templo de Martak não aceitou Esmarem, que chamava o deus de «o Generoso». Houve gritos, pedras, e os seguidores de Esmarem foram embora. Esmarem não aceitou um povo sem deus. Saiu de Martak com 48 fiéis e fundou Argak na praia, onde rezam ao Generoso. Diante das ruínas de Kian, Argak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Argak, Petau tomou para si o cuidado das preces ao Generoso. Esmarem, que fundou Argak e o guiava, não resistiu à fome. Foi quem levou os seus a fundar Argak.
+A fome no inverno durou 6 dias em Martak e levou duas vidas. No verão, numa tempestade sobre a floresta, um raio matou Faem. Faem era dos que mais rezavam, e Kian ficou sem entender. Depois disso, Kian deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Senhor do Trovão». Os devotos de Kian não viram castigo: para eles, o Senhor do Trovão chamou Faem para perto. Nasceu ali a lembrança de Faem como santo.
 
-### Ano 187
-
-Em Argak, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 135, só a crônica guarda. A fome no inverno durou 9 dias em Argak e levou 28 vidas. Esmarem tinha rezado: «Generoso, dá-nos o que comer.» A fome passou, e Argak viu nisso obra do Generoso. A crônica sabe que foi acaso. A praia passou a ser a praia da fome: Praia da Fome. Na Guerra dos Irmãos, Zeum atacou Toem na floresta. Toem expulsou os atacantes. Na luta morreu Zea.
-
-### Ano 188
-
-Nau disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «o Que Seca». Toem acreditou, e o deus mudou de nome.
-
-### Ano 189
-
-Morreu Nau, que guiava Toem, aos 52 anos. Com Ruesil à frente, a nova geração de Argak abandonou o cuidado com a água, costume herdado dos avós. A Guerra dos Irmãos seguiu: Zeum contra Toem, na floresta. Zeum venceu e levou a comida guardada. Na luta morreram Limian e Toem. Depois de tanto sofrer nas mãos dos vizinhos, Toem passou a desconfiar de todo estrangeiro. Depois de quatro anos, quatro batalhas e cinco mortos, a Guerra dos Irmãos terminou em paz.
+*Entre os anos 187 e 189, nada mudou o rumo do mundo.*
 
 ### Ano 190
 
-Nos anos 181 a 190 houve duas secas, quatro fomes, quatro batalhas, dezesseis preces que pareceram atendidas e oito preces sem resposta; nasceram 51 crianças e morreram 71 pessoas. No fim do ano 190, 80 pessoas viviam no mundo: Martak (29), Zeum (21), Toem (24) e Argak (6).
+Tapeis, que falava pelo Que Apaga o Sol em Martak, morreu de fome. Nos anos 181 a 190 houve duas fomes, treze preces que pareceram atendidas e três preces sem resposta; nasceram 82 crianças e morreram 40 pessoas. No fim do ano 190, 186 pessoas viviam no mundo: Taur (29), Martak (91), Kian (52) e Rues (14).
 
 ### Ano 191
 
-Na primavera do ano 191, Namaru, que guiava Martak, morreu de velhice aos 61 anos. No outono, Markil deu à luz gêmeos, Markia e Sail. Uns viram bênção; outros, mau sinal.
+Terura, que falava pelo Olho Escuro em Taur, deu à luz e não sobreviveu ao parto.
 
 ### Ano 192
 
-Argak passou a festejar todo ano o dia da volta da chuva, em honra do Generoso.
+Kiloan tinha rezado: «Olho Escuro, não nos deixes secar.» Quando a chuva voltou, Taur agradeceu ao Olho Escuro. Foi só o tempo, mas quem iria dizer? No inverno, numa tempestade sobre a praia, um raio matou Kiloan. Ninguém em Taur teve dúvida: era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Taur sai de casa. Lembram de Kiloan.
 
-*No ano 193, nada de notável aconteceu.*
+### Ano 193
+
+Na primavera, morreu Nana, que guiava Martak, aos 63 anos. Sem lugar e sem comida, Tesail e os seus atravessaram a borda do mundo. Ninguém soube deles. Maril passou a guiar Martak, mas Kian não aceitou e guardou rancor.
 
 ### Ano 194
 
-Tais deu à luz gêmeos, Wapem e Miem. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 194, Saim, que guiava Taur, morreu de repente, aos 40 anos.
 
-### Ano 195
+*Os anos 195 a 196 passaram em paz.*
 
-Taeson implorou pelo filho. Espem morreu, e daquele dia em diante Taeson cuspia no chão quando falavam do Que Fere. No outono, Kion, de Argak, tomou por esposa Mize, de Toem, e os dois povos passaram a se visitar.
+### Ano 197
 
-### Ano 196
-
-Na primavera do ano 196, Waim, que guiava Toem, morreu de velhice aos 62 anos. Morreu o último que tinha visto o ano 153. Em Toem, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. Nasceu Ara, filha de Mize e Kion, com sangue de Argak e de Toem.
-
-*O ano 197 passou sem nada que a crônica precise guardar.*
+Gana disse ter ouvido o deus de outro jeito: não era «o Que Apaga o Sol», era «o Que Rega». Martak acreditou, e o deus mudou de nome.
 
 ### Ano 198
 
-Martak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. A seca voltou, como no ano 180: 21 dias sem chuva, até que o céu se abriu. Ruo tinha rezado: «Olho Escuro, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Zeum duvidou de que o Olho Escuro tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Martak passou fome no inverno por 12 dias, e uma pessoa morreu. Depois daquela fome, Kian passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 199
 
-Kira, que guiava Toem, morreu de repente, aos 25 anos.
+Morreu Maril, que guiava Martak, aos 55 anos. Daesis partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Uma febre correu Martak e levou três vidas. Depois da seca, Kian jurou nunca desperdiçar água.
 
 ### Ano 200
 
-No inverno do ano 200, a forja de Argak não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 191 a 200 houve três secas e dezesseis preces que pareceram atendidas; nasceram 80 crianças e morreram 26 pessoas. No fim do ano 200, 136 pessoas viviam no mundo: Martak (52), Zeum (41), Toem (30) e Argak (13).
+Rutaor, que falava pelo Olho Escuro em Rues, morreu de velhice aos 61 anos. Em Kian, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 136, só a crônica guarda. A fome no inverno durou 9 dias em Martak e levou vinte vidas. Selruor anunciou que o Senhor do Trovão proibia qualquer trato com Rues. O deus nunca disse isso, mas Kian obedeceu. No verão, Kipeu rezou por Pem até a voz acabar. Pem morreu mesmo assim, e Kipeu nunca mais rezou. Nos anos 191 a 200 houve duas secas, treze fomes, 29 preces que pareceram atendidas e três preces sem resposta; nasceram 117 crianças e morreram 153 pessoas. No fim do ano 200, 132 pessoas viviam no mundo: Taur (14), Martak (72), Kian (18) e Rues (28).
 
 ### Ano 201
 
-A fome durou 18 dias em Zeum e levou duas vidas.
+Morreu Kipeu, que falava pelo Que Rega em Martak, aos 57 anos. Nunca perdoou o deus pela morte de Pem. No verão, Gagaor, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Estais deu à luz gêmeos, Kiselu e Maris. Uns viram bênção; outros, mau sinal.
 
 ### Ano 202
 
-Maran, o curioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Naor, que guiava Martak, morreu dormindo, aos 63 anos. Morreu o último que tinha visto o ano 137. Em Rues, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Kian atacou Rues no morro. Rues foi derrotado e perdeu o que tinha guardado. Tail, Ruan e Takiu morreram na luta. Para Kian, o morro virou Morro da Vitória. Depois de tantos mortos, Kian e Rues se encontraram no morro e juraram paz.
 
 ### Ano 203
 
-Isloil deu à luz gêmeos, Peu e Kitaon. Uns viram bênção; outros, mau sinal.
+Na primavera, Gail, que guiava Taur, morreu de repente, aos 44 anos.
 
-### Ano 204
-
-Toem já não se preparava para nada: o Que Seca sempre dava.
+*O ano 204 passou sem nada que a crônica precise guardar.*
 
 ### Ano 205
 
-Morreu Tamarem, que falava pelo Que Fere em Martak, aos 72 anos. Sakiem disse ter ouvido o deus de outro jeito: não era «o Que Fere», era «a Voz dos Sonhos». Martak acreditou, e o deus mudou de nome. Tantas preces atendidas fizeram Argak confiar no céu mais do que nas próprias mãos.
+Selruor, que falava pelo Senhor do Trovão em Kian, morreu de repente, aos 43 anos. Foi quem proibiu, em nome do deus, o trato com Rues.
 
 ### Ano 206
 
-Gaor, que falava pela Voz dos Sonhos em Martak, morreu de velhice aos 53 anos. Ruo, que guiava Zeum, morreu de velhice aos 62 anos. Na guerra, tinha tirado duas vidas. As preces de Argak ficaram pequenas: pedia-se ao Generoso até sol para a pesca e sorte na caça. Loem passou a guiar Toem, mas Liem não aceitou e guardou rancor.
+Marem disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Dá». Taur acreditou, e o deus mudou de nome. A seca voltou, como no ano 179: 22 dias sem chuva, até que o céu se abriu. Teor tinha rezado: «Manda água, Que Dá, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Taur duvidou de que o Que Dá tinha ouvido. A crônica sabe que foi acaso.
 
-*No ano 207, nada de notável aconteceu.*
+### Ano 207
+
+Depois dos roubos da fome, Rues parou de dividir: cada família passou a guardar o que era seu.
 
 ### Ano 208
 
-Na primavera do ano 208, com Ruesil à frente, a nova geração de Argak abandonou o costume de queimar os mortos, costume herdado dos avós. Tora, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Isisem, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+Na primavera, Gapeon rezou por Marruon até a voz acabar. Marruon morreu mesmo assim, e Gapeon nunca mais rezou. Uma febre correu Martak e levou quatro vidas. A fome por causa da seca durou 23 dias em Rues e levou catorze vidas. No outono, Sataor anunciou que o Olho Escuro proibia qualquer trato com Kian. O deus nunca disse isso, mas Rues obedeceu. O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 209
 
-A seca voltou, como no ano 198: 22 dias sem chuva, até que o céu se abriu. Em Zeum, Isisem pediu: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Zeum agradeceu ao Olho Escuro. O deus nada fez: o crédito era de graça. Marta, que guiava Zeum, não resistiu à fome.
+Com Sagaon à frente, Rues largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Rues atacou Kian na floresta em nome do Olho Escuro. Kian expulsou os atacantes. Nira e Martan morreram na luta. Desde então, Rues chama a floresta de Floresta do Luto. Começou a Guerra Santa da Floresta: em nome do Olho Escuro, Rues pegou em lanças contra Kian. Na Guerra Santa da Floresta, Rues atacou Kian na floresta em nome do Olho Escuro. Kian expulsou os atacantes. Na luta morreram Ruar e Buar.
 
 ### Ano 210
 
-Na primavera do ano 210, Pekion partiu com três pessoas para além da borda do mundo. Nunca voltaram. Martak passou fome no inverno por 9 dias, e cinco pessoas morreram. Em Toem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. No verão, em Argak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Argak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 201 a 210 houve três fomes e 21 preces que pareceram atendidas; nasceram 117 crianças e morreram 57 pessoas. No fim do ano 210, 193 pessoas viviam no mundo: Martak (73), Zeum (24), Toem (67) e Argak (29).
+Nos anos 201 a 210 houve duas secas, quatro fomes, três batalhas, 26 preces que pareceram atendidas e sete preces sem resposta; nasceram 119 crianças e morreram 70 pessoas. No fim do ano 210, 182 pessoas viviam no mundo: Taur (22), Martak (97), Kian (40) e Rues (23).
 
 ### Ano 211
 
-No outono do ano 211, Runaem, o devoto, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+No outono do ano 211, a tempestade trouxe raios para o morro. Um deles acertou Tais. Em Rues, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Rues sai de casa. Lembram de Tais.
 
 ### Ano 212
 
-Na primavera do ano 212, Ruesil, que guiava Argak, morreu dormindo, aos 51 anos. No verão, Mizem, de Zeum, tomou por esposa Ara, de Argak, e os dois povos passaram a se visitar.
+A Guerra Santa da Floresta seguiu: Rues contra Kian, na floresta em nome do Olho Escuro. Kian resistiu, e Rues voltou de mãos vazias. Esor, Sasail e Kis morreram na luta. No inverno, apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Depois disso, Rues deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Risca o Céu».
 
-*O ano 213 foi calmo.*
+### Ano 213
+
+Na primavera, em Rues, quem vinha de fora era recebido com comida e lugar perto do fogo. No outono, Nau, que guiava Taur, deu à luz e não sobreviveu ao parto.
 
 ### Ano 214
 
-No verão do ano 214, o sol escureceu outra vez.
+Sagan partiu com duas pessoas para além da borda do mundo. Nunca voltaram.
 
 ### Ano 215
 
-Na primavera do ano 215, Peon, que guiava Martak, morreu dormindo, aos 62 anos.
+Rutaem rezou por Samaran até a voz acabar. Samaran morreu mesmo assim, e Rutaem nunca mais rezou.
 
 ### Ano 216
 
-Pezeik, que falava pelo Que Seca em Toem, morreu de velhice aos 53 anos. Zerura deu à luz gêmeos, Lim e Ruo. Uns viram bênção; outros, mau sinal. O inverno foi de gelo: duas pessoas morreram de frio.
+Na primavera, morreu Estaut, que guiava Kian, aos 53 anos. Morreu Sataor, que falava pelo Que Risca o Céu em Rues, aos 51 anos. Foi quem proibiu, em nome do deus, o trato com Kian. Morreu o último que tinha visto o ano 162. Em Kian, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. A Guerra Santa da Floresta seguiu: Rues contra Kian, na floresta em nome do Que Risca o Céu. Kian resistiu, e Rues voltou de mãos vazias. Gar e Petaem morreram na luta. Rutaem, o corajoso, não resistiu à fome. Nunca perdoou o deus pela morte de Samaran.
 
 ### Ano 217
 
-No inverno, Narua passou a guiar Argak, mas Maran não aceitou e guardou rancor.
+Martak passou fome no inverno por 9 dias, e sete pessoas morreram. Kiesor tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Martak deu graças ao Que Rega. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Martak, ficou escrito que foi o Que Rega. Taur passou fome por causa da seca por 23 dias, e três pessoas morreram. Taur atacou Rues no morro. Taur venceu e levou a comida guardada. Maru, Tar e Petan morreram na luta. No inverno, Peru deu à luz gêmeos, Rumarem e Taem. Uns viram bênção; outros, mau sinal.
 
-### Ano 218
-
-Na primavera, Lil disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «o Que Dá em Dobro». Zeum acreditou, e o deus mudou de nome. Em Zeum, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 165, só a crônica guarda. Em Martak, Naon pediu: «Voz dos Sonhos, não deixes nossos filhos morrerem de fome.» A fome passou, e Martak viu nisso obra da Voz dos Sonhos. Foi só o tempo, mas quem iria dizer? A fome no inverno durou 9 dias em Toem e levou treze vidas. Argak passou fome no inverno por 9 dias, e onze pessoas morreram.
+*O ano 218 passou sem nada que a crônica precise guardar.*
 
 ### Ano 219
 
-Morreu Kipeil, a rancorosa, aos 66 anos.
+A Guerra Santa da Floresta esfriou sem acordo nem vencedor: dez anos, cinco batalhas e dez mortos, e ninguém sabia mais por que lutava. Kian saiu dela mais forte.
 
 ### Ano 220
 
-Na primavera, com Tatais à frente, Martak largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. Zeum passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Zeum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 211 a 220 houve duas secas, onze fomes e 31 preces que pareceram atendidas; nasceram 117 crianças e morreram 106 pessoas. No fim do ano 220, 205 pessoas viviam no mundo: Martak (79), Zeum (36), Toem (66) e Argak (24).
+Na primavera, os de Taur caíram sobre Kian na floresta. Kian resistiu, e Taur voltou de mãos vazias. Na luta morreram Teor e Tan. No verão, começou a Guerra do Morro: o rancor entre Taur e Rues virou guerra. Taur e Rues, cansados de enterrar os seus, fizeram as pazes no morro. Depois de três anos, três batalhas e oito mortos, a Guerra do Morro terminou em paz. Taur saiu dela mais forte. No inverno, a febre levou Buan, que falava pelo Que Risca o Céu em Rues. Nos anos 211 a 220 houve cinco secas, sete fomes, sete batalhas, 45 preces que pareceram atendidas e vinte preces sem resposta; nasceram 87 crianças e morreram 95 pessoas. No fim do ano 220, 172 pessoas viviam no mundo: Taur (19), Martak (87), Kian (50) e Rues (16).
 
 ### Ano 221
 
-Mize, que falava pelo Generoso em Argak, morreu de velhice aos 51 anos. Com lanças e promessas, Ru acabou com o conselho de Martak e passou a mandar sozinho. Litoik partiu com quatro pessoas para além da borda do mundo. Nunca voltaram.
+Na primavera, morreu Faselor, que falava pelo Senhor do Trovão em Kian, aos 47 anos. Começou a Segunda Guerra da Fome: Taur, com fome, foi buscar à força a comida de Kian. A Segunda Guerra da Fome seguiu: Taur contra Kian, na floresta. Kian foi derrotado e perdeu o que tinha guardado. Na luta morreram Fapeu, Kiselu e Peya. Um raio caiu no lago durante a tempestade e matou Rumaron. Ninguém em Martak teve dúvida: era castigo. No inverno, a terra tremeu. Caíram dezessete cabanas. Nagaon, Nakiem e Ruruis morreram sob os escombros.
 
 ### Ano 222
 
-No outono do ano 222, Lil, a curiosa, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. De novo a chuva sumiu, como no ano 209. Foram 20 dias de seca. Depois da seca, Toem jurou nunca desperdiçar água. Uma tosse que não passava matou três pessoas em Toem. Naon, que falava pela Voz dos Sonhos em Martak, morreu de fome.
+Na primavera, a Segunda Guerra da Fome seguiu: Taur contra Kian, na floresta. Kian resistiu, e Taur voltou de mãos vazias. Sarua, Tamselis, Esselu e Taruem morreram na luta. No inverno, Marem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 223
 
-Na primavera do ano 223, Maran não esperou a vez: tomou o comando de Argak à força, e o conselho dos velhos se calou. Morreu o último que tinha visto o ano 155. Em Martak, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Dessa vez, o Generoso não respondeu, e Argak, que tinha esquecido como se virar sozinho, pagou caro. Runaos partiu com zero pessoa para além da borda do mundo. Nunca voltaram. No inverno, com canais e moinhos, Zeum já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+No verão, Takira, a engenhosa, inventou marcas que guardavam palavras.
 
 ### Ano 224
 
-Na primavera, em Argak, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam.
+Penau, a devota, morreu de velhice aos 52 anos. Desde a morte de Sata, nunca mais tinha rezado. Na Segunda Guerra da Fome, Taur atacou Kian na floresta. Taur venceu e levou a comida guardada. Na luta morreram Dakian e Daesem. Depois de tantos mortos, Taur e Kian se encontraram na floresta e juraram paz. Depois de quatro anos, quatro batalhas e onze mortos, a Segunda Guerra da Fome terminou em paz.
 
-### Ano 225
-
-Maran, que guiava Argak, morreu de repente, aos 40 anos. Tora, a curiosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
-
-### Ano 226
-
-Com Isil à frente, Zeum largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Houve luta na floresta: Martak atacou Toem em nome da Voz dos Sonhos. Toem resistiu, e Martak voltou de mãos vazias. Na luta morreram Ruem e Peor. Depois de tantos mortos, Martak e Toem se encontraram na floresta e juraram paz. Foram 23 dias de fome por causa da seca em Martak, com dezesseis mortos.
+*Os anos 225 a 226 passaram em paz.*
 
 ### Ano 227
 
-Loe, a pacífica, morreu de velhice aos 53 anos. Ruwaik tinha rezado: «Que Seca, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Toem duvidou de que o Que Seca tinha ouvido. O deus nada fez: o crédito era de graça. Nas tabuletas de Toem, ficou escrito que foi o Que Seca.
+Na primavera do ano 227, com lanças e promessas, Naem acabou com o conselho de Taur e passou a mandar sozinho. Taur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. San, que guiava Martak, morreu de frio. No outono, em Rues, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Rues, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 228
 
-Kirua, que falava pelo Que Seca em Toem, morreu dormindo, aos 64 anos. Cansado de um líder que mandava sozinho, Argak passou a decidir em conselho. Sem lugar e sem comida, Raruor e os seus atravessaram a borda do mundo. Ninguém soube deles.
+Na primavera do ano 228, Sanaim morreu de repente, aos 37 anos. Desde a morte de Losa, nunca mais tinha rezado. Taman, o corajoso, morreu de repente, aos 40 anos. Na guerra, tinha tirado cinco vidas.
 
 ### Ano 229
 
-Na primavera, Arnau deu à luz gêmeos, Tasau e Arrail. Uns viram bênção; outros, mau sinal.
+Na primavera, ninguém lembrava mais a razão, e Taur abandonou o cuidado com a água. No verão, em Kian, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Kian passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Um inverno duro matou três pessoas de frio.
 
 ### Ano 230
 
-Nos anos 221 a 230 houve quatro secas, onze fomes, 31 preces que pareceram atendidas e sete preces sem resposta; nasceram 150 crianças e morreram 144 pessoas. No fim do ano 230, 199 pessoas viviam no mundo: Martak (83), Zeum (38), Toem (48) e Argak (30).
+Nos anos 221 a 230 houve três fomes, três batalhas, dezenove preces que pareceram atendidas e cinco preces sem resposta; nasceram 113 crianças e morreram 70 pessoas. No fim do ano 230, 215 pessoas viviam no mundo: Taur (31), Martak (103), Kian (70) e Rues (11).
 
-### Ano 231
-
-Com canais e moinhos, Toem já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Gaem rezou por Gapeon até a voz acabar. Gapeon morreu mesmo assim, e Gaem nunca mais rezou. Foram 9 dias de fome no inverno em Zeum, com quinze mortos. Uma febre correu Martak e levou oito vidas. Depois da febre, Martak passou a queimar os seus mortos, para que a doença não voltasse.
+*O ano 231 passou sem nada que a crônica precise guardar.*
 
 ### Ano 232
 
-Ulzeo não esperou a vez: tomou o comando de Toem à força, e o conselho dos velhos se calou. A tempestade trouxe raios para o morro. Um deles acertou Kil. Logo Kil, que tanto rezava. Para os mais fiéis de Zeum, Kil não foi castigada, mas escolhida. Desde a morte de Kil, ninguém em Zeum sobe o morro em dia de tempestade.
+Kiesor tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Martak deu graças ao Que Rega. O deus não tinha feito nada. Os escribas de Martak registraram o milagre. A seca voltou, como no ano 206: 19 dias sem chuva, até que o céu se abriu. No inverno, Kidan rezou por Ruesis até a voz acabar. Ruesis morreu mesmo assim, e Kidan nunca mais rezou. Em Kian, cansados do silêncio, acusaram Daut de mentir em nome do Senhor do Trovão. Daut perdeu o lugar junto ao altar. A doença entrou em Kian e matou dez pessoas.
 
 ### Ano 233
 
-Na primavera, Isil, que guiava Zeum, morreu de velhice aos 53 anos. Markia rezou por Tagais até a voz acabar. Tagais morreu mesmo assim, e Markia nunca mais rezou.
+Martak passou fome no inverno por 9 dias, e vinte pessoas morreram. Os de Taur caíram sobre Rues no morro. Taur venceu e levou a comida guardada. Na luta morreram Gais e Kisaya. Começou a Guerra da Fome do Morro: Taur, com fome, foi buscar à força a comida de Rues. Foram 23 dias de fome por causa da seca em Kian, com quinze mortos.
 
 ### Ano 234
 
-A seca voltou, como no ano 222: 22 dias sem chuva, até que o céu se abriu. Uma febre correu Martak e levou cinco vidas.
+Nasan, o generoso, morreu de repente, aos 33 anos. Morreu Sagaon, que guiava Rues, aos 59 anos. Nunca perdoou o deus pela morte de Ruar. Ninguém lembrava mais a razão, e Taur abandonou o treino com lanças.
 
 ### Ano 235
 
-Na primavera do ano 235, Ulzeo, que guiava Toem, morreu dormindo, aos 49 anos. Com Ru à frente, Martak largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Martak passou fome no inverno por 9 dias, e 32 pessoas morreram.
+No outono, Taur passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Taur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. No inverno, Rutail deu à luz gêmeos, Naim e Peil. Uns viram bênção; outros, mau sinal.
 
 ### Ano 236
 
-Com Ru à frente, Martak largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Os de Martak caíram sobre Toem na floresta em nome da Voz dos Sonhos. Toem resistiu, e Martak voltou de mãos vazias. Espeu morreu na luta.
+Na primavera, Gaga, que guiava Kian, morreu de velhice aos 58 anos. Gagaor, que guiava Rues, morreu de velhice aos 67 anos. Nunca perdoou o deus pela morte de Kis. Em Rues, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Martak escolheu Takian para guiar o grupo. Kiesor queria o lugar e nunca perdoou. A Guerra da Fome do Morro esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Taur saiu dela mais forte.
 
 ### Ano 237
 
-Na primavera, morreu Isisem, o engenhoso, aos 57 anos. Começou a Segunda Guerra Santa: em nome da Voz dos Sonhos, Martak pegou em lanças contra Toem. A Segunda Guerra Santa seguiu: Martak contra Toem, na floresta em nome da Voz dos Sonhos. Toem foi derrotado e perdeu o que tinha guardado. Toem e Wail morreram na luta. Martak e Toem, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de um ano, duas batalhas e três mortos, a Segunda Guerra Santa terminou em paz.
+Morreu o último que tinha visto o ano 176. Em Rues, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Os últimos de Rues, Kiar, Estail e Pebuar, juntaram-se a Martak. Rues deixou de existir. Taur encontrou as ruínas de Rues. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
-*O ano 238 foi calmo.*
+### Ano 238
+
+Kidan, o curioso, morreu de velhice aos 62 anos. Desde a morte de Ruesis, nunca mais tinha rezado.
 
 ### Ano 239
 
-Na primavera, Kion, que guiava Argak, morreu dormindo, aos 60 anos. A tempestade trouxe raios para o morro. Um deles acertou Wapem. Wapem era dos que mais rezavam, e Zeum ficou sem entender. Rutan tinha rezado: «Manda água, Generoso, que as crianças têm sede.» Quando a chuva voltou, Argak agradeceu ao Generoso. O deus nada fez: o crédito era de graça. Os escribas de Argak registraram o milagre. Taor, o medroso, não resistiu à fome.
+Na primavera, Naem, que guiava Taur, morreu de repente, aos 37 anos. Na guerra, tinha tirado duas vidas. No verão, Tamis rezou por Estaman até a voz acabar. Estaman morreu mesmo assim, e Tamis nunca mais rezou.
 
 ### Ano 240
 
-Gaem, que falava pela Voz dos Sonhos em Martak, morreu de velhice aos 60 anos. Desde a morte de Gapeon, nunca mais tinha rezado. Morreu o último que tinha visto o ano 175. Em Martak, ninguém desperdiçava uma gota d'água, mas ninguém sabia mais dizer por quê. Lirue partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Martak conheceu a maior fome da sua história por causa da seca. Em 24 dias, morreram 38. Muitas cabanas ficaram vazias. No verão, Rukior, o medroso, inventou marcas que guardavam palavras. Nos anos 231 a 240 houve três secas, dez fomes, duas batalhas, 27 preces que pareceram atendidas e onze preces sem resposta; nasceram 152 crianças e morreram 133 pessoas. No fim do ano 240, 216 pessoas viviam no mundo: Martak (60), Zeum (46), Toem (86) e Argak (24).
+Nos anos 231 a 240 houve quatro fomes, duas batalhas, doze preces que pareceram atendidas e sete preces sem resposta; nasceram 118 crianças e morreram 119 pessoas. No fim do ano 240, 216 pessoas viviam no mundo: Taur (39), Martak (96) e Kian (81).
 
 ### Ano 241
 
-Peisim partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Foram 14 dias de fome no inverno em Toem, com seis mortos. No outono, Rutan, que falava pelo Generoso em Argak, morreu de frio.
+Na primavera do ano 241, Marem, o engenhoso, morreu dormindo, aos 61 anos. Numa tempestade sobre a praia, um raio matou Kiya. A família de Kiya nunca perdoou o céu. Depois disso, Taur deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Voz do Céu».
 
 ### Ano 242
 
-No inverno do ano 242, Mil deu à luz gêmeos, Iswaem e Lipea. Uns viram bênção; outros, mau sinal.
+Morreu Peut, que guiava Kian, aos 57 anos. Em Kian, Maran pediu: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Kian viu nisso obra do Senhor do Trovão. Foi só o tempo, mas quem iria dizer? Os escribas de Kian registraram o milagre. Uma tosse que não passava matou quatro pessoas em Kian.
 
-*Entre os anos 243 e 246, nada mudou o rumo do mundo.*
+### Ano 243
+
+Na primavera do ano 243, com Lotan à frente, Taur largou o costume de queimar os mortos: sem origem lembrada, o costume perdeu o sentido. Fadaut rezou por Petaman até a voz acabar. Petaman morreu mesmo assim, e Fadaut nunca mais rezou. Depois da seca, Taur jurou nunca desperdiçar água. Daut, o pacífico, não resistiu à fome. Desde a morte de Kifais, nunca mais tinha rezado. Peruim, que falava pela Voz do Céu em Taur, não resistiu à fome. Na guerra, tinha tirado duas vidas.
+
+### Ano 244
+
+Martak passou fome no inverno por 9 dias, e 29 pessoas morreram. Uma tosse que não passava matou seis pessoas em Martak. Foram 24 dias de fome por causa da seca em Kian, com 31 mortos. De novo a chuva sumiu, como no ano 232. Foram 19 dias de seca.
+
+### Ano 245
+
+Tamarut, o devoto, morreu de repente, aos 43 anos. Desde a morte de Tama, nunca mais tinha rezado.
+
+### Ano 246
+
+Houve luta na praia: Kian atacou Taur. Kian venceu e levou a comida guardada. Nakim e Tamaris morreram na luta. Desde então, Kian chama a praia de Praia da Vitória. Depois da derrota, os jovens de Taur passaram a treinar com lanças. Depois da derrota, Taur não existia mais: os seis que sobraram foram levados para Kian.
 
 ### Ano 247
 
-Na primavera do ano 247, Saaran disse ter ouvido o deus de outro jeito: não era «o Generoso», era «a Chama de Cima». Argak acreditou, e o deus mudou de nome. Sem lugar e sem comida, Kiu e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma estrela de cauda cruzou o céu por 12 noites. Ninguém dormia direito. Para Martak, o deus já não era «a Voz dos Sonhos»: passou a ser «o Que Risca o Céu».
+Na primavera, ninguém lembrava mais a razão, e Kian abandonou a festa da chuva. Foram 14 dias de fome por causa da seca em Kian, com seis mortos. As ruínas de Taur viraram aviso em Martak: era o que o deus fazia com quem o desagradava. Kian passou a festejar todo ano o dia da volta da chuva, em honra do Senhor do Trovão.
 
 ### Ano 248
 
-Na primavera do ano 248, Gaon, que falava pelo Que Risca o Céu em Martak, morreu dormindo, aos 60 anos. Ninguém lembrava mais a razão, e Martak abandonou o cuidado com a água. Depois dos roubos da fome, Zeum parou de dividir: cada família passou a guardar o que era seu. Os de Martak caíram sobre Argak na praia. Martak venceu e levou a comida guardada. Na luta morreram Arnau, Ruan e Esela. Depois da derrota, os jovens de Argak passaram a treinar com lanças.
+Kiesor, que guiava Martak, morreu de velhice aos 64 anos. Kipeis pregou em Kian que o deus não era «o Senhor do Trovão», mas «a Grande Água». O templo chamou aquilo de heresia, e Kipeis saiu com os que a seguiam. Os seguidores de Kipeis fundaram Farur na praia. Ali se reza a «a Grande Água». Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Peesu leu e aprendeu: o saber não se perdeu. Diante das ruínas de Natan, Farur disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 249
 
-Zeum passou fome no inverno por 9 dias, e onze pessoas morreram. No verão, em Martak, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Martak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Toem atacou Argak na praia. Argak resistiu, e Toem voltou de mãos vazias. Na luta morreram Rue, Toloan, Ulem e Zelia. Desde então, Toem chama a praia de Praia do Luto.
+Ruis, de Martak, casou-se com Peor e foi viver em Farur. Foi o primeiro laço entre os dois povos. A praia passou a ser a praia da fome: Praia da Fome. Em Farur, Daor tomou para si o cuidado das preces à Grande Água. No inverno, Lotan, o generoso, não resistiu à fome. Na guerra, tinha tirado duas vidas. Kipeis, que fundou Farur e o guiava, morreu de fome. Tinha fundado Farur.
 
 ### Ano 250
 
-Rukior, o medroso, morreu dormindo, aos 47 anos. Nos anos 241 a 250 houve dezenove fomes, duas batalhas, 35 preces que pareceram atendidas e cinco preces sem resposta; nasceram 142 crianças e morreram 140 pessoas. No fim do ano 250, 207 pessoas viviam no mundo: Martak (64), Zeum (46), Toem (68) e Argak (29).
+Na primavera, em Farur, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Farur passou fome no inverno por 12 dias, e 27 pessoas morreram. Daor tinha rezado: «Grande Água, não deixes nossos filhos morrerem de fome.» A fome passou, e Farur viu nisso obra da Grande Água. O deus nada fez: o crédito era de graça. Nasceu Ruobis, filha de Ga e Maror, com sangue de Farur e de Martak. Uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito. Nos anos 241 a 250 houve seis secas, dezoito fomes, 36 preces que pareceram atendidas e seis preces sem resposta; nasceram 99 crianças e morreram 193 pessoas. No fim do ano 250, 123 pessoas viviam no mundo: Martak (94), Kian (21) e Farur (8).
 
 ### Ano 251
 
-No outono, Martak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Risca o Céu.
+Peesu rezou por Kian até a voz acabar. Kian morreu mesmo assim, e Peesu nunca mais rezou. Em Farur, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 176, só a crônica guarda. No verão, Dadais passou dias nas ruínas de Taur e voltou sabendo cortar pedra. Houve luta na floresta: Farur atacou Kian. Kian foi derrotado e perdeu o que tinha guardado. Taem e Marim morreram na luta. No inverno, Mara anunciou que o Senhor do Trovão proibia qualquer trato com Farur. O deus nunca disse isso, mas Kian obedeceu.
 
 ### Ano 252
 
-Na primavera do ano 252, Kiem, que falava pelo Que Risca o Céu em Martak, morreu dormindo, aos 57 anos. Morreu Ruwaik, que falava pelo Que Seca em Toem, aos 53 anos. Zeo tinha rezado: «Que Dá em Dobro, dá-nos o que comer.» A fome passou, e Zeum viu nisso obra do Que Dá em Dobro. O deus nada fez: o crédito era de graça. Os escribas de Zeum registraram o milagre. No verão, Monau deu à luz gêmeos, Esem e Estaem. Uns viram bênção; outros, mau sinal.
+Começou a Guerra dos Irmãos da Praia: Farur e Kian, nascidos do mesmo povo, viraram inimigos. Na Guerra dos Irmãos da Praia, Kian atacou Farur na praia em nome do Senhor do Trovão. Farur resistiu, e Kian voltou de mãos vazias. Na luta morreram Tammaror, Maran e Esdaem.
 
 ### Ano 253
 
-Markia, que falava pelo Que Risca o Céu em Martak, morreu dormindo, aos 62 anos. Desde a morte de Tagais, nunca mais tinha rezado. Raela passou a guiar Martak, mas Ganau não aceitou e guardou rancor.
+Na primavera, Dadais passou dias nas ruínas de Taur e voltou sabendo cortar pedra. Uma estrela de cauda cruzou o céu por 13 noites. Ninguém dormia direito. Nas ruínas de Taur, Dadais achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 254
 
-Rura, que falava pelo Que Seca em Toem, morreu dormindo, aos 54 anos.
+Dakiem, que guiava Kian, morreu de velhice aos 64 anos. Nas ruínas de Taur, Dadais achou o que eles sabiam: aprendeu a cortar pedra. Farur ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 255
 
-Morreu Lomian, que guiava Toem, aos 62 anos. Zeum escolheu Ta para guiar o grupo. Mil queria o lugar e nunca perdoou.
+Ga morreu ao dar à luz. Na guerra, tinha tirado duas vidas.
 
 ### Ano 256
 
-Na primavera do ano 256, em Argak, cada um passou a cercar o que tinha.
+A Guerra dos Irmãos da Praia esfriou sem acordo nem vencedor: cinco anos, três batalhas e seis mortos, e ninguém sabia mais por que lutava. Farur saiu dela mais forte. A terra tremeu. Caíram dezenove cabanas. Tais, Saru, Maresem e Pekior morreram sob os escombros.
 
 ### Ano 257
 
-Na primavera do ano 257, sem lugar e sem comida, Kil e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Toem caíram sobre Martak no lago em nome do Que Seca. Martak foi derrotado e perdeu o que tinha guardado. Gakior, Taesis, Marta e Waulem morreram na luta. Depois da derrota, os jovens de Martak passaram a treinar com lanças. Toem e Martak, cansados de enterrar os seus, fizeram as pazes no lago.
+A fome no inverno durou 9 dias em Martak e levou doze vidas. Gataem rezou por Esil até a voz acabar. Esil morreu mesmo assim, e Gataem nunca mais rezou. A doença entrou em Martak e matou cinco pessoas.
 
 ### Ano 258
 
-Sem lugar e sem comida, Wa e os seus atravessaram a borda do mundo. Ninguém soube deles.
+No inverno, Dadais passou dias nas ruínas de Taur e voltou sabendo trabalhar o metal.
 
-*O ano 259 foi calmo.*
+### Ano 259
+
+Dadais passou dias nas ruínas de Taur e voltou sabendo trabalhar o metal.
 
 ### Ano 260
 
-Argak passou fome no inverno por 8 dias, e três pessoas morreram. Argak cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Chama de Cima. Nos anos 251 a 260 houve dezesseis fomes e 29 preces que pareceram atendidas; nasceram 133 crianças e morreram 61 pessoas. No fim do ano 260, 274 pessoas viviam no mundo: Martak (99), Zeum (57), Toem (89) e Argak (29).
+Na primavera, Mara, que guiava Kian, morreu de velhice aos 53 anos. Foi quem proibiu, em nome do deus, o trato com Farur. Em Farur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. Dadais passou dias nas ruínas de Taur e voltou sabendo trabalhar o metal. Nos anos 251 a 260 houve três fomes, três batalhas, dezesseis preces que pareceram atendidas e sete preces sem resposta; nasceram 80 crianças e morreram 72 pessoas. No fim do ano 260, 131 pessoas viviam no mundo: Martak (92), Kian (25) e Farur (14).
 
 ### Ano 261
 
-Foram 20 dias de fome no inverno em Zeum, com quatro mortos. No inverno, de novo Toem contra Martak em nome do Que Seca, como no ano 257. Martak foi derrotado e perdeu o que tinha guardado. Pemil, Marga e Sais morreram na luta. Ta, que guiava Zeum, não resistiu à fome. Mil, que guiava Zeum, não resistiu à fome. Depois de tanta briga pelo comando, Toem passou a ser guiado por um conselho dos mais velhos.
+A forja de Farur não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 262
 
-Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Pewail leu e aprendeu: o saber não se perdeu. Os últimos de Zeum, Pewail e Mie, juntaram-se a Toem. Zeum deixou de existir. Sa tinha rezado: «Que Risca o Céu, dá-nos o que comer.» A comida voltou, e Martak deu graças ao Que Risca o Céu. O deus não tinha feito nada. Nas tabuletas de Martak, ficou escrito que foi o Que Risca o Céu. As ruínas de Zeum viraram aviso em Martak: era o que o deus fazia com quem o desagradava. Veio a pior fome que o mundo tinha visto: 18 dias por causa da seca em Toem, e 62 mortos. As crianças foram as primeiras.
+Nanaor tinha rezado: «Que Rega, dá-nos o que comer.» A comida voltou, e Martak deu graças ao Que Rega. A crônica sabe que foi acaso. Nas tabuletas de Martak, ficou escrito que foi o Que Rega. No outono, Dadais passou dias nas ruínas de Taur e voltou sabendo ler as marcas antigas. No inverno, Peon rezou por Taor até a voz acabar. Taor morreu mesmo assim, e Peon nunca mais rezou.
 
-### Ano 263
-
-Morreu Raela, que guiava Martak, aos 61 anos. Começou a Terceira Guerra Santa: em nome do Que Seca, Toem pegou em lanças contra Martak. Na Terceira Guerra Santa, Martak atacou Toem na floresta em nome do Que Risca o Céu. Toem foi derrotado e perdeu o que tinha guardado. Na luta morreram Lokio, Walo e Taem. Depois de tantos mortos, Martak e Toem se encontraram na floresta e juraram paz. Depois de dois anos, duas batalhas e seis mortos, a Terceira Guerra Santa terminou em paz.
-
-### Ano 264
-
-Bea não podia mais viver perto de Gail. Saiu de Argak com onze pessoas e fundou Selur no morro. Selur encontrou as ruínas de Kian. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. As ruínas de Kium viraram aviso em Selur: era o que o deus fazia com quem o desagradava. Em Selur nasceu a primeira criança: Viga, filha de Ara e Naos. No inverno, Tanaon, o desconfiado, morreu de fome.
+*Os anos 263 a 264 passaram em paz.*
 
 ### Ano 265
 
-Com Bea à frente, a nova geração de Selur abandonou o treino com lanças, costume herdado dos avós. Uma tosse que não passava matou cinco pessoas em Martak. No outono, Ara passou a falar pela Chama de Cima em Selur. Era a primeira a rezar e a última a duvidar.
+Ruem disse ter ouvido o deus de outro jeito: não era «o Senhor do Trovão», era «a Chama de Cima». Kian acreditou, e o deus mudou de nome. A tempestade trouxe raios para a praia. Um deles acertou Obfais. Em Farur, disseram que era castigo. Farur passou a acreditar que a Grande Água castiga quem duvida, e que Obfais tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Farur sai de casa. Lembram de Obfais. Sakior passou dias nas ruínas de Taur e voltou sabendo ler as marcas antigas.
 
 ### Ano 266
 
-Na primavera, Kik, que falava pelo Que Seca em Toem, morreu dormindo, aos 65 anos. Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Bearem implorou pelo filho. Aran morreu, e daquele dia em diante Bearem cuspia no chão quando falavam da Chama de Cima. A doença entrou em Toem e matou onze pessoas. Desde a febre, Argak não enterra mais ninguém: os mortos vão para o fogo.
+No verão, Taon rezou por Esnaon até a voz acabar. Esnaon morreu mesmo assim, e Taon nunca mais rezou.
 
 ### Ano 267
 
-Na primavera do ano 267, Eson rezou por Marsaor até a voz acabar. Marsaor morreu mesmo assim, e Eson nunca mais rezou.
+No outono, em Farur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Farur, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. A seca voltou, como no ano 244: 22 dias sem chuva, até que o céu se abriu.
 
-### Ano 268
-
-Na primavera do ano 268, o frio levou Esu. Na guerra, tinha tirado duas vidas. No verão, a tempestade trouxe raios para a floresta. Um deles acertou Ule. Em Toem, disseram que era castigo. Toem passou a acreditar que o Que Seca castiga quem duvida, e que Ule tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Toem sai de casa. Lembram de Ule. Um inverno duro matou dez pessoas de frio.
-
-### Ano 269
-
-A tempestade trouxe raios para o morro. Um deles acertou Bea. Em Selur, disseram que era castigo. Para Selur, Bea foi castigada. Desde então, quem duvida da Chama de Cima duvida em silêncio. Desde a morte de Bea, ninguém em Selur sobe o morro em dia de tempestade. O lugar ganhou nome: Morro do Raio.
+*Entre os anos 268 e 269, nada mudou o rumo do mundo.*
 
 ### Ano 270
 
-Na primavera, morreu Naor, que falava pelo Que Risca o Céu em Martak, aos 73 anos. Desde a morte de Kior, nunca mais tinha rezado. Com Zeruan à frente, Toem largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Nos anos 261 a 270 houve três secas, oito fomes, duas batalhas, 22 preces que pareceram atendidas e nove preces sem resposta; nasceram 86 crianças e morreram 221 pessoas. No fim do ano 270, 139 pessoas viviam no mundo: Martak (91), Toem (28), Argak (14) e Selur (6).
+No inverno do ano 270, a terra tremeu. Caíram onze cabanas. Napean, Narura e Esu morreram sob os escombros. Gais deu à luz gêmeos, Gau e Taem. Uns viram bênção; outros, mau sinal. Nos anos 261 a 270 houve duas secas, cinco fomes e quinze preces que pareceram atendidas; nasceram 73 crianças e morreram 55 pessoas. No fim do ano 270, 150 pessoas viviam no mundo: Martak (92), Kian (36) e Farur (22).
 
-*Do ano 271 ao 272, a vida seguiu sem grandes acontecimentos.*
+### Ano 271
+
+Dais, que falava pela Chama de Cima em Kian, morreu ao dar à luz.
+
+*O ano 272 foi calmo.*
 
 ### Ano 273
 
-Na primavera do ano 273, morreu Peu, que falava pelo Que Risca o Céu em Martak, aos 70 anos. Em Martak, Peon pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Martak viu nisso obra do Que Risca o Céu. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Martak, ficou escrito que foi o Que Risca o Céu.
+Sasaon tinha rezado: «Que Rega, não deixes nossos filhos morrerem de fome.» A comida voltou, e Martak deu graças ao Que Rega. O deus não tinha feito nada. Os escribas de Martak registraram o milagre. Ruis, que guiava Farur, morreu ao dar à luz.
 
 ### Ano 274
 
-Morreu Gail, que guiava Argak, aos 69 anos.
+A fome no inverno durou 6 dias em Martak e levou uma vida. Fataor, de Farur, tomou por esposa Daru, de Kian, e os dois povos passaram a se visitar.
 
 ### Ano 275
 
-Na primavera do ano 275, em Toem, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Seca». Sem lugar e sem comida, Saem e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome no inverno durou 9 dias em Martak e levou vinte vidas.
+A fome no inverno durou 3 dias em Martak e levou duas vidas. No outono, Farur já não se preparava para nada: a Grande Água sempre dava. Deixaram de poupar água.
 
 ### Ano 276
 
-Selur deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Os de Martak caíram sobre Toem na floresta em nome do Que Risca o Céu. Martak venceu e levou a comida guardada. Toa, Zeruan e Liwae morreram na luta. Toem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Martak e Toem, cansados de enterrar os seus, fizeram as pazes na floresta.
+Na primavera, o frio levou Sasaon, que falava pelo Que Rega em Martak. Da não podia mais viver perto de Maril. Saiu de Kian com dezesseis pessoas e fundou Ruon no morro. Para Ruon, as pedras de Natan só podiam ter sido postas por gigantes. Em Ruon nasceu a primeira criança: Lindaem, filho de Da e Tasan.
 
 ### Ano 277
 
-Na primavera do ano 277, Eson, que falava pelo Que Risca o Céu em Martak, morreu de velhice aos 50 anos. Desde a morte de Marsaor, nunca mais tinha rezado. Cansado de um líder que mandava sozinho, Martak passou a decidir em conselho.
+Ruon encontrou as ruínas de Taur e disse que ali tinham vivido gigantes. Em Ruon, Da pediu: «Chama de Cima, que a chuva volte.» Quando a chuva voltou, Ruon agradeceu à Chama de Cima. Foi só o tempo, mas quem iria dizer? No inverno, em Ruon, Tasan tomou para si o cuidado das preces à Chama de Cima.
 
 ### Ano 278
 
-Ruon rezou por Estan até a voz acabar. Estan morreu mesmo assim, e Ruon nunca mais rezou. Uma tosse que não passava matou quatro pessoas em Martak.
+Na primavera do ano 278, Esruis, a medrosa, morreu dormindo, aos 54 anos.
 
 ### Ano 279
 
-O inverno foi de gelo: duas pessoas morreram de frio.
+Dadais, que falava pela Grande Água em Farur, morreu de velhice aos 57 anos. Na guerra, tinha tirado duas vidas. Sakior disse ter ouvido o deus de outro jeito: não era «a Grande Água», era «o Que Julga». Farur acreditou, e o deus mudou de nome.
 
 ### Ano 280
 
-Nos anos 271 a 280 houve cinco fomes e onze preces que pareceram atendidas; nasceram 111 crianças e morreram 85 pessoas. No fim do ano 280, 162 pessoas viviam no mundo: Martak (100), Toem (36), Argak (15) e Selur (11).
+Nos anos 271 a 280 houve duas secas, cinco fomes e dezoito preces que pareceram atendidas; nasceram 110 crianças e morreram 69 pessoas. No fim do ano 280, 191 pessoas viviam no mundo: Martak (90), Kian (50), Farur (34) e Ruon (17).
 
-*O ano 281 passou sem nada que a crônica precise guardar.*
+### Ano 281
+
+Em Farur, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Julga». Ninguém lembrava mais a razão, e Kian abandonou o medo das tempestades.
 
 ### Ano 282
 
-Na primavera, Loruem, de Toem, tomou por esposa Moviena, de Selur, e os dois povos passaram a se visitar. Em Martak, Peon pediu: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Martak viu nisso obra do Que Risca o Céu. O deus não tinha feito nada. Nas tabuletas de Martak, ficou escrito que foi o Que Risca o Céu.
+Peu, que falava pelo Que Rega em Martak, morreu de velhice aos 63 anos. No verão, Esobis, de Farur, casou-se com Kiem e foi viver em Ruon. Foi o primeiro laço entre os dois povos.
 
-### Ano 283
-
-Na primavera, morreu Ru, filha pequena de Ara. Em Argak, Ruru começou a pregar que o deus não era «a Chama de Cima». Era «o Que Acende o Céu». Em poucos anos, todos rezavam assim. O sol escureceu outra vez.
+*O ano 283 foi calmo.*
 
 ### Ano 284
 
-Naem, que falava pelo Que Risca o Céu em Martak, morreu dormindo, aos 57 anos.
+Morreu Taon, que falava pelo Que Rega em Martak, aos 63 anos. Desde a morte de Esnaon, nunca mais tinha rezado. Ninguém lembrava mais a razão, e Kian abandonou o treino com lanças. Saruor rezou por Tasau até a voz acabar. Tasau morreu mesmo assim, e Saruor nunca mais rezou. Martak parou de rezar. Diziam que o Que Rega nunca tinha existido. A doença entrou em Martak e matou seis pessoas.
 
-### Ano 285
+*O ano 285 foi calmo.*
 
-Na primavera do ano 285, Mobeil, que guiava Toem, morreu de repente, aos 38 anos. Morreu Arruela, que guiava Argak, aos 57 anos. Na guerra, tinha tirado duas vidas. Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Argak deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos. Uma febre correu Martak e levou 45 vidas.
+### Ano 286
 
-*O ano 286 passou sem nada que a crônica precise guardar.*
+Esut, de Kian, tomou por esposa Takis, de Ruon, e os dois povos passaram a se visitar.
 
 ### Ano 287
 
-Na primavera do ano 287, Naesan, que falava pelo Que Risca o Céu em Martak, morreu dormindo, aos 49 anos. Nunca perdoou o deus pela morte de Pepeu.
+Fafaor partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. No inverno, Faesan, o engenhoso, desenhou o primeiro canal e a primeira roda d'água.
 
 ### Ano 288
 
-Na primavera, Rusaon, que guiava Martak, morreu de velhice aos 60 anos. Nunca perdoou o deus pela morte de Tanaem. A seca voltou, como no ano 234: 26 dias sem chuva, até que o céu se abriu.
+Taesa partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. A fome no inverno durou 12 dias em Martak e levou uma vida. No verão, Ruem implorou pelo filho. Petaem morreu, e daquele dia em diante Ruem cuspia no chão quando falavam da Chama de Cima. Kian cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Chama de Cima. Tau passou a guiar Farur, mas Peoban não aceitou e guardou rancor.
 
 ### Ano 289
 
-Em Martak, Maran começou a pregar que o deus não era «o Que Risca o Céu». Era «a Chama de Cima». Em poucos anos, todos rezavam assim.
+Foram 9 dias de fome no inverno em Martak, com 31 mortos. Em Kian, Dau pediu: «Chama de Cima, não deixes nossos filhos morrerem de fome.» A comida voltou, e Kian deu graças à Chama de Cima. O deus não tinha feito nada. Os escribas de Kian registraram o milagre. Sem lugar e sem comida, Tapeu e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome por causa da seca durou 27 dias em Farur e levou sete vidas. Ruon já não se preparava para nada: a Chama de Cima sempre dava. Deixaram de poupar água.
 
 ### Ano 290
 
-Nos anos 281 a 290 houve quatro secas, três fomes, cinco preces que pareceram atendidas e três preces sem resposta; nasceram 103 crianças e morreram 111 pessoas. No fim do ano 290, 154 pessoas viviam no mundo: Martak (81), Toem (42), Argak (16) e Selur (15).
+Nos anos 281 a 290 houve quinze fomes, doze preces que pareceram atendidas e quatro preces sem resposta; nasceram 131 crianças e morreram 100 pessoas. No fim do ano 290, 205 pessoas viviam no mundo: Martak (83), Kian (73), Farur (20) e Ruon (29).
 
-*Do ano 291 ao 295, a vida seguiu sem grandes acontecimentos.*
+### Ano 291
+
+Na primavera, Da, que fundou Ruon e o guiava, morreu dormindo, aos 57 anos. Foi quem levou os seus a fundar Ruon. Com Tau à frente, a nova geração de Farur abandonou a festa da chuva, costume herdado dos avós.
+
+*O ano 292 passou sem nada que a crônica precise guardar.*
+
+### Ano 293
+
+No inverno, dessa vez, a Chama de Cima não respondeu, e Ruon, que tinha esquecido como se virar sozinho, pagou caro. De novo a chuva sumiu, como no ano 267. Foram 26 dias de seca.
+
+### Ano 294
+
+Na primavera, Pepeis, que falava pela Chama de Cima em Kian, morreu de frio. Um inverno duro matou dez pessoas de frio.
+
+*O ano 295 passou sem nada que a crônica precise guardar.*
 
 ### Ano 296
 
-Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Gataem implorou pelo filho. Peesem morreu, e daquele dia em diante Gataem cuspia no chão quando falavam da Chama de Cima. Uma febre correu Martak e levou 37 vidas. Uma tosse que não passava matou quinze pessoas em Toem. A febre levou Esor, que falava pelo Que Acende o Céu em Argak.
+Gapeu, que guiava Martak, morreu dormindo, aos 60 anos.
 
 *O ano 297 passou sem nada que a crônica precise guardar.*
 
 ### Ano 298
 
-De novo a chuva sumiu, como no ano 288. Foram 22 dias de seca.
+Na primavera, com lanças e promessas, Oban acabou com o conselho de Farur e passou a mandar sozinho. Sem lugar e sem comida, Dais e os seus atravessaram a borda do mundo. Ninguém soube deles. Tasan tinha rezado: «Chama de Cima, dá-nos o que comer.» A fome passou, e Ruon viu nisso obra da Chama de Cima. O deus nada fez: o crédito era de graça. A fome no inverno durou 9 dias em Kian e levou uma vida.
 
 ### Ano 299
 
-Maran, que falava pela Chama de Cima em Martak, morreu de repente, aos 44 anos. Gabeil deu à luz gêmeos, Peu e Esmaror. Uns viram bênção; outros, mau sinal.
+Na primavera, morreu Fakis, que falava pela Chama de Cima em Kian, aos 50 anos.
 
 ### Ano 300
 
-No fim do ano 300, 175 pessoas viviam no mundo: Martak (98), Toem (44), Argak (9) e Selur (24).
+Nos anos 291 a 300 houve três secas, onze fomes e treze preces que pareceram atendidas; nasceram 129 crianças e morreram 82 pessoas. No fim do ano 300, 249 pessoas viviam no mundo: Martak (109), Kian (70), Farur (25) e Ruon (45).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Martak** vive no lago, com 98 pessoas, com canais e moinhos; nasceu de uma migração em Taur no ano 29; chama o deus de «a Chama de Cima»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 231); treina os jovens com lanças (desde o ano 257).
-- **Toem** vive na floresta, com 44 pessoas, com canais e moinhos; nasceu de uma migração em Zeum no ano 148; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 175); não desperdiça uma gota d'água (desde o ano 222); queima os mortos (desde o ano 222); não sai de casa em dia de tempestade (desde o ano 268); treina os jovens com lanças (desde o ano 276).
-- **Argak** vive na praia, com 9 pessoas, com canais e moinhos; nasceu de um cisma em Martak no ano 186; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 192); treina os jovens com lanças (desde o ano 248); queima os mortos (desde o ano 266).
-- **Selur** vive no morro, com 24 pessoas, com canais e moinhos; nasceu de uma briga em Argak no ano 264; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (desde o ano 266); não sai de casa em dia de tempestade (desde o ano 269).
+- **Martak** vive no lago, com 109 pessoas, com canais e moinhos; nasceu de uma migração em Taur no ano 29; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 110); queima os mortos (desde o ano 121); não desperdiça uma gota d'água (desde o ano 162); treina os jovens com lanças (desde o ano 164); não sai de casa em dia de tempestade (desde o ano 221).
+- **Kian** vive na floresta, com 70 pessoas, com canais e moinhos; nasceu de uma migração em Martak no ano 103; chama o deus de «a Chama de Cima»; costumes: queima os mortos (desde o ano 176); guarda tanta comida para o inverno (desde o ano 198); não desperdiça uma gota d'água (desde o ano 199); faz a festa da chuva (desde o ano 247).
+- **Farur** vive na praia, com 25 pessoas, e escreve; nasceu de um cisma em Kian no ano 248; não reza a ninguém; costumes: treina os jovens com lanças (a origem foi esquecida); queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 265).
+- **Ruon** vive no morro, com 45 pessoas, e escreve; nasceu de uma briga em Kian no ano 276; chama o deus de «a Chama de Cima»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); queima os mortos (desde o ano 176); guarda tanta comida para o inverno (desde o ano 198); faz a festa da chuva (desde o ano 247).
 
-Povos que deixaram de existir: Taur, Sasan, Miak, Zeum, Kian e Kium.
+Povos que deixaram de existir: Taur, Sasan, Miak, Zeum, Natan e Rues.
 
-Lugares com nome: Praia da Fome (praia, para Martak), Praia do Raio (praia, para Taur), Praia do Luto (praia, para Kium), Praia da Vitória (praia, para Zeum), Praia da Fome (praia, para Argak), Praia do Luto (praia, para Toem), Lago da Fome (lago, para Taur), Lago da Fome (lago, para Martak), Lago do Luto (lago, para Toem), Floresta da Fome (floresta, para Martak), Floresta da Trégua (floresta, para Taur), Floresta da Trégua (floresta, para Kian), Floresta do Luto (floresta, para Kium), Floresta do Luto (floresta, para Toem), Floresta da Vitória (floresta, para Zeum), Morro do Raio (morro, para Zeum), Morro da Trégua (morro, para Taur) e Morro do Raio (morro, para Selur).
+Lugares com nome: Praia da Fome (praia, para Martak), Praia do Raio (praia, para Taur), Praia da Vitória (praia, para Kian), Praia da Fome (praia, para Farur), Lago da Fome (lago, para Taur), Lago da Fome (lago, para Martak), Floresta da Fome (floresta, para Martak), Floresta da Trégua (floresta, para Taur), Floresta da Trégua (floresta, para Kian), Floresta do Luto (floresta, para Rues), Floresta da Vitória (floresta, para Farur), Morro do Raio (morro, para Zeum), Morro da Trégua (morro, para Taur), Morro do Raio (morro, para Rues), Morro da Vitória (morro, para Martak) e Morro da Vitória (morro, para Kian).
 
-Em 300 anos nasceram 2260 pessoas e morreram 2033.
+Em 300 anos nasceram 2104 pessoas e morreram 1820.

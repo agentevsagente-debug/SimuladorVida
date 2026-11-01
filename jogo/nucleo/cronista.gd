@@ -1276,7 +1276,7 @@ func _separacao(e, v: Dictionary) -> String:
 			if antes != null and antes.tipo == "profeta" and not antes.dados.get("aceito", true):
 				v["dnn"] = G.termo(antes.dados["novo"])
 				return _frase(["Com {f} à frente, {n} pessoas fundaram {novo} {em:zona}, onde o deus se chama «{dnn}».",
-					"Os seguidores de {f} fundaram {novo} {em:zona}. Ali se reza a «{dnn}»."], v)
+					"Os seguidores de {f} fundaram {novo} {em:zona}. Ali, o deus se chama «{dnn}»."], v)
 			if e.dados.get("novo_cetico", false):
 				t = _frase(["Os que já não acreditavam, com {f} à frente, deixaram {pai} e fundaram {novo} {em:zona}. Lá ninguém reza.",
 					"{pai} se partiu por causa do deus. {f} levou {n} pessoas que duvidavam e fundou {novo} {em:zona}."], v)

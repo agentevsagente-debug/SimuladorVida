@@ -250,785 +250,777 @@ Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Niar, e 22 mortos
 
 ### Ano 92
 
-Zepena partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Niraur, que guiava Ruar, morreu de frio. A fome por causa da seca durou 23 dias em Zeil e levou onze vidas. Zeil atacou Enak no morro. Enak expulsou os atacantes. Na luta morreram Linan e Saela. Zeil e Enak fizeram as pazes no morro, antes que a briga crescesse.
+Zepena partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Niraur, que guiava Ruar, morreu de frio. Nasceu Nina, a primeira de Enak. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Ruar perdeu o saber. Zeil passou fome por causa da seca por 23 dias, e onze pessoas morreram.
 
 ### Ano 93
 
-Na primavera do ano 93, Kurdan, de Enak, tomou por esposa Linpena, de Niar, e os dois povos passaram a se visitar. Niali, a medrosa, deu à luz e não sobreviveu ao parto.
+Na primavera, numa tempestade sobre a praia, um raio matou Pean. A família de Pean nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Zeil sai de casa. Lembram de Pean. Em Ruar, Toruor pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Ruar deu graças ao Olho Escuro. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 94
 
-Na primavera do ano 94, em Enak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Nasceu Aror, filho de Linpena e Kurdan, com sangue de Enak e de Niar. Ruos tinha rezado: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Niar agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Enak: todo ano, celebram a chuva que o Olho Escuro mandou.
+Na primavera, Linnina disse ter ouvido o deus de outro jeito: não era «o Que Sacode», era «o Que Dá». Niar acreditou, e o deus mudou de nome.
 
 ### Ano 95
 
-Ruar passou a receber bem os de fora: um casamento com outro povo virava festa. Enteur, de Enak, tomou por esposa Ruela, de Ruar, e os dois povos passaram a se visitar. O frio levou Ruos, que falava pela Estrela de Cauda em Niar.
+No verão, Zeil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Zeil ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Apaga o Sol.
 
 ### Ano 96
 
-Na primavera, Raos disse ter ouvido o deus de outro jeito: não era «o Olho Escuro», era «a Mão Fechada». Enak acreditou, e o deus mudou de nome.
+Em Enak, Dakuros pediu: «Olho Escuro, não nos deixes secar.» Quando a chuva voltou, Enak agradeceu ao Olho Escuro. O deus não tinha feito nada.
 
 ### Ano 97
 
-Na primavera do ano 97, numa tempestade sobre a praia, um raio matou Tosan. Logo Tosan, que tanto rezava. Os devotos de Zeil não viram castigo: para eles, o Que Apaga o Sol chamou Tosan para perto. Nasceu ali a lembrança de Tosan como santo. Desde a morte de Tosan, ninguém em Zeil desce à praia em dia de tempestade.
+Na primavera do ano 97, Nina morreu com 5 anos, de uma febre que ninguém entendeu. No outono, Tela deu à luz gêmeos, Daara e Rana. Uns viram bênção; outros, mau sinal.
 
-*Entre os anos 98 e 99, nada mudou o rumo do mundo.*
+### Ano 98
+
+De novo a chuva sumiu, como no ano 76. Foram 19 dias de seca. Ruos, que falava pelo Que Dá em Niar, morreu de fome.
+
+### Ano 99
+
+Niar passou fome por causa da seca por 24 dias, e quinze pessoas morreram. Nikaik, de Zeil, tomou por esposa Rua, de Enak, e os dois povos passaram a se visitar.
 
 ### Ano 100
 
-A terra tremeu. Caíram doze cabanas. Saya, Saor e Isenur morreram sob os escombros. No outono, numa tempestade sobre a praia, um raio matou Ordaon. A família de Ordaon nunca perdoou o céu. Depois disso, Zeil deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-la de «a Voz do Céu». Nos anos 91 a 100 houve duas secas, sete fomes, 21 preces que pareceram atendidas e quatro preces sem resposta; nasceram 98 crianças e morreram 64 pessoas. No fim do ano 100, 156 pessoas viviam no mundo: Ruar (24), Niar (68), Zeil (19) e Enak (45).
+Na primavera do ano 100, Saor, que guiava Zeil, morreu de velhice aos 45 anos. Cansado de um líder que mandava sozinho, Niar passou a decidir em conselho. Enela, de Enak, casou-se com Kurnior e foi viver em Ruar. Foi o primeiro laço entre os dois povos. Nos anos 91 a 100 houve três secas, oito fomes e 22 preces que pareceram atendidas; nasceram 91 crianças e morreram 70 pessoas. No fim do ano 100, 145 pessoas viviam no mundo: Ruar (25), Niar (59), Zeil (31) e Enak (30).
 
-### Ano 101
-
-Na primavera, Enenya, que guiava Ruar, morreu de velhice aos 55 anos. Morreu o último que tinha visto o ano 42. Em Ruar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Dakuros tinha rezado: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A fome passou, e Enak viu nisso obra da Mão Fechada. A crônica sabe que foi acaso.
+*O ano 101 passou sem nada que a crônica precise guardar.*
 
 ### Ano 102
 
-Na primavera, tantas preces atendidas fizeram Enak confiar no céu mais do que nas próprias mãos.
+Na primavera, em Enak, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam.
 
 ### Ano 103
 
-Na primavera do ano 103, sem lugar e sem comida, Zearela e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. No verão, Enteur anunciou que a Mão Fechada proibia qualquer trato com Zeil. O deus nunca disse isso, mas Enak obedeceu. Dessa vez, a Mão Fechada não respondeu, e Enak, que tinha esquecido como se virar sozinho, pagou caro. Os de Enak caíram sobre Zeil na praia em nome da Mão Fechada. Enak venceu e levou a comida guardada. Sakan e Torua morreram na luta.
+Morreu Dakuros, que fundou Enak e o guiava, aos 65 anos. Tinha fundado Enak. Morreu o último que tinha visto o ano 42. Em Enak, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Enenan, o curioso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 ### Ano 104
 
-Na primavera do ano 104, em Niar, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No inverno, Artos morreu de fome.
+Depois da seca, Zeil jurou nunca desperdiçar água. No inverno, Nitoik, que guiava Zeil, morreu de fome. Sakan passou a guiar Zeil, mas Ordaon não aceitou e guardou rancor. Peur, que falava pelo Que Dá em Niar, morreu de fome.
 
 ### Ano 105
 
-Morreu Nitoik, que falava pela Voz do Céu em Zeil, aos 56 anos. Foram 9 dias de fome no inverno em Enak, com quinze mortos. No verão, Tozeik, o engenhoso, descobriu como empilhar pedras cortadas sem que caíssem. No outono, houve luta na praia: Niar atacou Zeil. Niar venceu e levou a comida guardada. Niar e Zeil fizeram as pazes na praia, antes que a briga crescesse.
+Niar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Zeil, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Os últimos de Zeil, Ruela e Ora, juntaram-se a Niar. Zeil deixou de existir. Diante das ruínas de Zeil, Ruar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. A fome ensinou: desde então, Enak estoca comida e não come tudo o que colhe.
 
 ### Ano 106
 
-Depois da febre, Niar passou a queimar os seus mortos, para que a doença não voltasse. Zeil acabou: Ibela, Ora e Ibdaon foram viver em Niar. As ruínas de Zeil viraram aviso em Ruar: era o que o deus fazia com quem o desagradava. Começou a Guerra da Fome: Niar, com fome, foi buscar à força a comida de Ruar. Depois de duas batalhas e três mortos, a Guerra da Fome terminou em paz. Ruar saiu dela mais forte.
+Zela tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Enak viu nisso obra do Olho Escuro. Foi só o tempo, mas quem iria dizer? No verão, em nome do Olho Escuro, Enteur proibiu casamentos e trocas com Ruar. Era vontade de Enteur, não do deus. Enak já não se preparava para nada: o Olho Escuro sempre dava.
 
-*O ano 107 foi calmo.*
+### Ano 107
+
+Na primavera, com Dadan à frente, a nova geração de Niar abandonou a festa da chuva, costume herdado dos avós.
 
 ### Ano 108
 
-Enak atacou Ruar no lago em nome da Mão Fechada. Enak venceu e levou a comida guardada. Kurnior, Rukuros e Toa morreram na luta. Para Enak, o lago virou Lago da Vitória. No inverno, Dadan não podia mais viver perto de Dadaur. Saiu de Niar com onze pessoas e fundou Ruor na praia. Diante das ruínas de Zeil, Ruor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Na primavera, morreu Enteur, que guiava Enak, aos 50 anos. Foi quem proibiu, em nome do deus, o trato com Ruar. Enak escolheu Kurdan para guiar o grupo. Zela queria o lugar e nunca perdoou. No outono, Zela passou a falar pelo Olho Escuro em Enak. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 109
 
-Em Ruor, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 58, só a crônica guarda.
+A seca voltou, como no ano 98: 23 dias sem chuva, até que o céu se abriu. O dia em que a chuva voltou virou festa em Niar: todo ano, celebram a chuva que o Que Dá mandou.
 
 ### Ano 110
 
-Na primavera do ano 110, em Ruor, Linarela tomou para si o cuidado das preces à Estrela de Cauda. Em Ruor nasceu a primeira criança: Toruena, filha de Linarela e Dadan. Nos anos 101 a 110 houve treze fomes, cinco batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 86 crianças e morreram 54 pessoas. No fim do ano 110, 175 pessoas viviam no mundo: Ruar (59), Niar (61), Enak (43) e Ruor (12).
+Na primavera, com Zean à frente, catorze pessoas deixaram Enak e fundaram Nion, na praia. Em Nion nasceu a primeira criança: Isdaur, filho de Kurya e Zeos. Nion encontrou as ruínas de Zeil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, Linpena passou a falar pelo Olho Escuro em Nion. Era a primeira a rezar e a última a duvidar. No inverno, Kuros, de Ruar, tomou por esposa Enkurya, de Nion, e os dois povos passaram a se visitar. Nos anos 101 a 110 houve quatro secas, sete fomes, 23 preces que pareceram atendidas e três preces sem resposta; nasceram 71 crianças e morreram 119 pessoas. No fim do ano 110, 97 pessoas viviam no mundo: Ruar (46), Niar (21), Enak (15) e Nion (15).
 
 ### Ano 111
 
-Kurdan tinha rezado: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Enak deu graças à Mão Fechada. Foi só o tempo, mas quem iria dizer?
+Linpena, que falava pelo Olho Escuro em Nion, morreu ao dar à luz.
 
 ### Ano 112
 
-Em Ruor, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam. Uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito. Para Ruar, o deus já não era «o Olho Escuro»: passou a ser «a Estrela de Cauda». Linali, de Ruor, casou-se com Rurur e foi viver em Ruar. Foi o primeiro laço entre os dois povos.
+Ninguém lembrava mais a razão, e Ruar abandonou o medo das tempestades.
 
 ### Ano 113
 
-Morreu Enteur, que guiava Enak, aos 55 anos. Foi quem proibiu, em nome do deus, o trato com Zeil. Zeos passou a falar pela Mão Fechada em Enak. Era o primeiro a rezar e o último a duvidar.
+Zela, que falava pelo Olho Escuro em Nion, morreu de velhice aos 51 anos. No outono, Enniya, de Enak, casou-se com Ruor e foi viver em Nion. Foi o primeiro laço entre os dois povos.
 
-### Ano 114
-
-Da, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Niar atacou Ruor na praia. Niar venceu e levou a comida guardada. Dadan morreu na luta.
+*O ano 114 foi calmo.*
 
 ### Ano 115
 
-Em Enak, cada um passou a cercar o que tinha. Rukura, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. No verão, Niar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Sem lugar e sem comida, Dadaos e os seus atravessaram a borda do mundo. Ninguém soube deles. Uma febre correu Niar e levou cinco vidas.
+Na primavera do ano 115, Zean, que fundou Nion e o guiava, morreu dormindo, aos 54 anos. Foi quem levou os seus a fundar Nion. A terra tremeu. Caíram dezesseis cabanas. Niali, Kurdan e Nitoya morreram sob os escombros. Depois disso, Niar deixou de chamar o deus de «o Que Dá» e passou a chamá-la de «a Terra Brava». Depois disso, Enak deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Terra Brava». No verão, as preces de Enak ficaram pequenas: pedia-se à Terra Brava até sol para a pesca e sorte na caça.
 
-### Ano 116
+*Do ano 116 ao 118, a vida seguiu sem grandes acontecimentos.*
 
-Na primavera, morreu Peur, que falava pela Estrela de Cauda em Niar, aos 70 anos. Niar via Ruor ser atendido e concluiu que a Estrela de Cauda tinha escolhido os outros. Começou a Guerra dos Irmãos: Niar e Ruor, nascidos do mesmo povo, viraram inimigos. Ruor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Veio a pior fome que o mundo tinha visto: 21 dias por causa da seca em Enak, e 39 mortos. As crianças foram as primeiras.
+### Ano 119
 
-### Ano 117
-
-Na primavera, Toela disse ter ouvido o deus de outro jeito: não era «a Estrela de Cauda», era «o Que Seca». Ruor acreditou, e o deus mudou de nome. No verão, Niar venceu Ruor e levou os cinco sobreviventes para viver sob seu mando. Ruor deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra dos Irmãos terminou com a conquista: três anos, quatro batalhas e seis mortos. A terra tremeu. Caíram doze cabanas. Rudan, Ran, Peya e Saela morreram sob os escombros. Depois disso, Enak deixou de chamar o deus de «a Mão Fechada» e passou a chamá-la de «a Terra Brava».
-
-### Ano 118
-
-Uma tosse que não passava matou seis pessoas em Ruar. Niya deu à luz gêmeos, Ninik e Lintoik. Uns viram bênção; outros, mau sinal.
-
-*No ano 119, nada de notável aconteceu.*
+Toruor, que guiava Ruar, morreu de velhice aos 49 anos.
 
 ### Ano 120
 
-Na primavera do ano 120, com Toruor à frente, Ruar largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Tedaya, a engenhosa, cansou de dividir pouca comida. Partiu com 28 pessoas para a praia e ali fundou Teor. Teor encontrou as ruínas de Zeil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Zeali passou a falar pela Estrela de Cauda em Teor. Era a primeira a rezar e a última a duvidar. Em Teor nasceu a primeira criança: Ibia, filha de Tedaya e Sadan. Nos anos 111 a 120 houve dezesseis fomes, cinco batalhas, 33 preces que pareceram atendidas e oito preces sem resposta; nasceram 96 crianças e morreram 105 pessoas. No fim do ano 120, 165 pessoas viviam no mundo: Ruar (76), Niar (52), Enak (8) e Teor (29).
+No verão do ano 120, Ruar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Nos anos 111 a 120 houve sete preces que pareceram atendidas; nasceram 87 crianças e morreram 29 pessoas. No fim do ano 120, 155 pessoas viviam no mundo: Ruar (79), Niar (39), Enak (21) e Nion (16).
 
 ### Ano 121
 
-Ninguém lembrava mais a razão, e Ruar abandonou a festa da chuva. Nitoela, de Teor, casou-se com Arraor e foi viver em Ruar. Foi o primeiro laço entre os dois povos.
+Na primavera do ano 121, com Kurnior à frente, Ruar largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido. Raena tinha rezado: «Terra Brava, não leves mais ninguém.» Os doentes se levantaram. Em Nion, o crédito foi da Terra Brava. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 122
 
-Em Ruar, Toruor pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça.
+Na primavera do ano 122, morreu Dadan, que guiava Niar, aos 55 anos.
 
 ### Ano 123
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Ruaror implorou pela filha. Arniela morreu, e daquele dia em diante Ruaror cuspia no chão quando falavam da Estrela de Cauda. Dan rezou por Dadaya até a voz acabar. Dadaya morreu mesmo assim, e Dan nunca mais rezou. A febre levou Ninik. No verão, em nome da Estrela de Cauda, Toruor proibiu casamentos e trocas com Enak. Era vontade de Toruor, não do deus.
+Ruela, que guiava Niar, morreu de repente, aos 44 anos. A terra tremeu. Caíram doze cabanas. Enos, Tos e Rada morreram sob os escombros. No outono, Danian, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
 ### Ano 124
 
-Ruar passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Ruar atacou Enak no morro em nome da Estrela de Cauda. Ruar venceu e levou a comida guardada. Daor e Toda morreram na luta. No inverno, começou a Guerra Santa: em nome da Estrela de Cauda, Ruar pegou em lanças contra Enak. Depois da derrota, Enak não existia mais: os quatro que sobraram foram levados para Ruar. A Guerra Santa terminou com a conquista: duas batalhas e quatro mortos.
+Na primavera, Zeos, que guiava Enak, morreu dormindo, aos 51 anos.
 
-*O ano 125 passou sem nada que a crônica precise guardar.*
+### Ano 125
+
+No verão do ano 125, Kurya deu à luz gêmeos, Niya e Ibim. Uns viram bênção; outros, mau sinal. A tempestade trouxe raios para o morro. Um deles acertou Daut. A família de Daut nunca perdoou o céu.
 
 ### Ano 126
 
-Na primavera do ano 126, Toruor, que guiava Ruar, morreu dormindo, aos 56 anos. Foi quem proibiu, em nome do deus, o trato com Enak. Dan não podia mais viver perto de Nisan. Saiu de Niar com nove pessoas e fundou Nidar no morro. Diante das ruínas de Zeil, Nidar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Nisaur, de Teor, tomou por esposa Pezela, de Nidar, e os dois povos passaram a se visitar. Em Nidar, Salinela tomou para si o cuidado das preces à Estrela de Cauda.
+Kuros rezou por Raenur até a voz acabar. Raenur morreu mesmo assim, e Kuros nunca mais rezou. Ruar passou fome no inverno por 9 dias, e doze pessoas morreram. Em nome do Olho Escuro, Kurnior proibiu casamentos e trocas com Nion. Era vontade de Kurnior, não do deus. Uma tosse que não passava matou nove pessoas em Ruar. De novo a chuva sumiu, como no ano 109. Foram 23 dias de seca.
 
 ### Ano 127
 
-Na primavera, Zena, que falava pela Estrela de Cauda em Niar, morreu dormindo, aos 60 anos.
+Na primavera do ano 127, houve luta na praia: Ruar atacou Nion em nome do Olho Escuro. Ruar venceu e levou a comida guardada. Isdaur e Enenan morreram na luta. Desde então, os de Ruar chamam o lugar de Praia da Vitória; os de Nion, de Praia do Luto. Nion não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No verão, Kurnior anunciou que o Olho Escuro proibia qualquer trato com Enak. O deus nunca disse isso, mas Ruar obedeceu. Nior, de Niar, casou-se com Kurya e mudou-se para Nion, coisa que ninguém tinha feito antes.
 
 ### Ano 128
 
-No inverno do ano 128, um raio caiu no morro durante a tempestade e matou Dadan. Ninguém em Nidar teve dúvida: era castigo. Para Nidar, o deus já não era «a Estrela de Cauda»: passou a ser «a Voz do Céu». Nidar passou a acreditar que a Voz do Céu castiga quem duvida, e que Dadan tinha duvidado. Desde a morte de Dadan, ninguém em Nidar sobe o morro em dia de tempestade. O lugar ganhou nome: Morro do Raio.
+Peteik, que falava pela Terra Brava em Niar, morreu dormindo, aos 51 anos.
 
 ### Ano 129
 
-Em Nidar nasceu a primeira criança: Berdaur, filho de Tesaela e Dan.
+No verão do ano 129, houve luta no morro: Ruar atacou Enak em nome do Olho Escuro. Ruar venceu e levou a comida guardada. Ara e Daraya morreram na luta. Para Ruar, o morro virou Morro da Vitória. Depois da derrota, os jovens de Enak passaram a treinar com lanças. No inverno, o deus calou justo quando Enak mais dependia dele.
 
 ### Ano 130
 
-Nos anos 121 a 130 houve duas fomes, duas batalhas, nove preces que pareceram atendidas e sete preces sem resposta; nasceram 86 crianças e morreram 97 pessoas. No fim do ano 130, 155 pessoas viviam no mundo: Ruar (100), Niar (34), Teor (14) e Nidar (7).
+Na primavera, em Nion, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Zeur tinha rezado: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Niar agradeceu à Terra Brava. Foi só o tempo, mas quem iria dizer? Nos anos 121 a 130 houve três secas, sete fomes, duas batalhas, 27 preces que pareceram atendidas e oito preces sem resposta; nasceram 97 crianças e morreram 73 pessoas. No fim do ano 130, 181 pessoas viviam no mundo: Ruar (65), Niar (53), Enak (32) e Nion (31).
 
 ### Ano 131
 
-Raruos tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Estrela de Cauda. Foi só o tempo, mas quem iria dizer? No inverno, o sol escureceu outra vez. Depois disso, Niar deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Apaga o Sol». Para Teor, o deus já não era «a Estrela de Cauda»: passou a ser «o Olho Escuro».
+Ruar passou fome por causa da seca por 12 dias, e treze pessoas morreram. Nion passou fome por causa da seca por 26 dias, e cinco pessoas morreram. O inverno foi de gelo: onze pessoas morreram de frio. Entout partiu com onze pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
-*O ano 132 foi calmo.*
+### Ano 132
+
+Tean, o curioso, aprendeu a tirar metal da pedra no fogo alto. O inverno foi de gelo: cinco pessoas morreram de frio.
 
 ### Ano 133
 
-Ruar atacou Nidar no morro. Nidar foi derrotado e perdeu o que tinha guardado. Na luta morreram Salinela e Nian. Ruar venceu Nidar e levou os quatro sobreviventes para viver sob seu mando. Nidar deixou de existir, mas os vencidos guardaram seus costumes em segredo. No verão, diante das ruínas de Nidar, Ruar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. As ruínas de Nidar viraram aviso em Niar: era o que o deus fazia com quem o desagradava.
+Ruaror morreu dormindo, aos 55 anos.
 
 ### Ano 134
 
-No verão do ano 134, Ruar atacou Niar na floresta. Niar resistiu, e Ruar voltou de mãos vazias. Ruar passou fome no inverno por 20 dias, e duas pessoas morreram.
+Kurnior, que guiava Ruar, morreu de velhice aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Nion. Teor, que guiava Niar, morreu dormindo, aos 67 anos. Nion já não se preparava para nada: a Terra Brava sempre dava.
 
 ### Ano 135
 
-Na primavera, começou a Guerra da Fome da Floresta: Ruar, com fome, foi buscar à força a comida de Niar. Na Guerra da Fome da Floresta, Ruar atacou Niar na floresta. Niar foi derrotado e perdeu o que tinha guardado. Tosan e Tetoik morreram na luta. Para Ruar, a floresta virou Floresta da Vitória. A fome no inverno durou 11 dias em Ruar e levou quatro vidas. No verão, na Guerra da Fome da Floresta, Ruar atacou Niar na floresta. Niar foi derrotado e perdeu o que tinha guardado. Na luta morreram Nior e Nisan.
+Kurya, que guiava Nion, morreu de repente, aos 43 anos. Endaur passou a guiar Nion, mas Ruor não aceitou e guardou rancor. No verão, a terra tremeu. Caíram dezoito cabanas. Sazeik, Saur, Datoya, Kurut e Arenos morreram sob os escombros. Depois disso, Ruar deixou de chamar o deus de «o Olho Escuro» e passou a chamá-la de «a Terra Brava». A seca voltou, como no ano 126: 19 dias sem chuva, até que o céu se abriu.
 
 ### Ano 136
 
-Tedaya tinha rezado: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Teor agradeceu ao Olho Escuro. A crônica sabe que foi acaso.
+Na primavera, Zeur, que falava pela Terra Brava em Niar, morreu de repente, aos 30 anos. No inverno, em Nion, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Depois dos roubos da fome, Nion parou de dividir: cada família passou a guardar o que era seu.
 
 ### Ano 137
 
-Na primavera, começou a Guerra da Praia: o rancor entre Ruar e Teor virou guerra. Na Guerra da Praia, Ruar atacou Teor na praia. Teor foi derrotado e perdeu o que tinha guardado. Nik, Zeya, Arali e Teur morreram na luta. No verão, depois de tantos mortos, Ruar e Niar se encontraram na floresta e juraram paz. Depois de três anos, quatro batalhas e seis mortos, a Guerra da Fome da Floresta terminou em paz. Ruar saiu dela mais forte. Depois de dois anos, quatro batalhas e dez mortos, a Guerra da Praia terminou em paz. Ruar saiu dela mais forte.
+A fome no inverno durou 9 dias em Ruar e levou cinco vidas. No verão, Ruar passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No outono, Enor rezou por Rudaela até a voz acabar. Rudaela morreu mesmo assim, e Enor nunca mais rezou.
 
 ### Ano 138
 
-No inverno, Ruar já não cabia no lago. Razeos, o generoso, levou 25 pessoas para o morro e fundou Aron. Raruos passou a falar pela Estrela de Cauda em Aron. Era o primeiro a rezar e o último a duvidar. Aron encontrou as ruínas de Ruor. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Zea morreu de fome. Raruos, que falava pela Estrela de Cauda em Aron, morreu de fome.
+Linlinela passou a guiar Niar, mas Linlinali não aceitou e guardou rancor. No inverno, a terra tremeu. Caíram oito cabanas. Kurzeos, Zenik, Datona e Rudaya morreram sob os escombros.
 
 ### Ano 139
 
-Na primavera do ano 139, Arur, o corajoso, morreu dormindo, aos 57 anos. Desde a morte de Tena, nunca mais tinha rezado. Ruar passou fome no inverno por 9 dias, e oito pessoas morreram. Aron encontrou as ruínas de Enak. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Danios anunciou que a Estrela de Cauda proibia qualquer trato com Teor. O deus nunca disse isso, mas Ruar obedeceu. No outono, Danios anunciou que a Estrela de Cauda proibia qualquer trato com Niar. O deus nunca disse isso, mas Ruar obedeceu.
+Na primavera, Endaur, que guiava Nion, morreu de repente, aos 41 anos.
 
 ### Ano 140
 
-Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. Em Aron nasceu a primeira criança: Veniya, filha de Ruruna e Razeos. Nos anos 131 a 140 houve oito fomes, nove batalhas, 25 preces que pareceram atendidas e nove preces sem resposta; nasceram 60 crianças e morreram 74 pessoas. No fim do ano 140, 141 pessoas viviam no mundo: Ruar (73), Niar (36), Teor (14) e Aron (18).
+Na primavera do ano 140, Kuros, que falava pela Terra Brava em Ruar, morreu de velhice aos 51 anos. Nunca perdoou o deus pela morte de Raenur. Em Nion, Arenena pediu: «Terra Brava, dá-nos o que comer.» A fome passou, e Nion viu nisso obra da Terra Brava. A crônica sabe que foi acaso. Uma tosse que não passava matou duas pessoas em Nion. Nos anos 131 a 140 houve quatro secas, dezesseis fomes, 36 preces que pareceram atendidas e cinco preces sem resposta; nasceram 110 crianças e morreram 85 pessoas. No fim do ano 140, 194 pessoas viviam no mundo: Ruar (73), Niar (67), Enak (24) e Nion (30).
 
-### Ano 141
-
-Na primavera, morreu Tozeik, o engenhoso, aos 67 anos. Nunca perdoou o deus pela morte de Toik. Em Aron, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 88, só a crônica guarda. Nitor, de Aron, tomou por esposa Arya, de Ruar, e os dois povos passaram a se visitar. No outono, Ruar passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Ruar passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+*O ano 141 foi calmo.*
 
 ### Ano 142
 
-Morreu Sapela, aos 60 anos. Desde a morte de Linya, nunca mais tinha rezado. No verão, começou a Guerra Santa da Floresta: em nome da Estrela de Cauda, Ruar pegou em lanças contra Niar. Depois de tantos mortos, Ruar e Niar se encontraram na floresta e juraram paz. Depois de um ano, duas batalhas e dois mortos, a Guerra Santa da Floresta terminou em paz. No outono, de novo Ruar contra Teor em nome da Estrela de Cauda, como no ano 137. Teor foi derrotado e perdeu o que tinha guardado. Na luta morreram Lintoik, Zezeor, Niteor e Rakurya.
+Depois da seca, Nion jurou nunca desperdiçar água. O deus calou justo quando Nion mais dependia dele. Enraos rezou por Suniur até a voz acabar. Suniur morreu mesmo assim, e Enraos nunca mais rezou. Arenena, que guiava Nion, morreu de frio. O inverno foi de gelo: seis pessoas morreram de frio.
 
 ### Ano 143
 
-Em Aron, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. No verão, em nome do Olho Escuro, San proibiu casamentos e trocas com Ruar. Era vontade de San, não do deus. A terra tremeu. Caíram dezenove cabanas. Dana morreu sob os escombros. Para Teor, o deus já não era «o Olho Escuro»: passou a ser «o Que Sacode».
+Em nome da Terra Brava, Sateali proibiu casamentos e trocas com Enak. Era vontade de Sateali, não do deus. Niar passou fome por 21 dias, e 21 pessoas morreram. Nion passou fome por causa da seca por 24 dias, e 26 pessoas morreram.
 
-### Ano 144
-
-Na primavera, Ruar se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder.
+*No ano 144, nada de notável aconteceu.*
 
 ### Ano 145
 
-Na primavera, Nios, o engenhoso, morreu de velhice aos 62 anos. Na guerra, tinha tirado duas vidas. Depois de anos sob um só, Ruar sentou-se em roda: dali em diante, decidia-se juntos.
+Na primavera, Kurkura disse ter ouvido o deus de outro jeito: não era «a Terra Brava», era «a Voz do Céu». Nion acreditou, e o deus mudou de nome. A forja de Niar não apagava mais. O metal mudou o trabalho e mudou a guerra. No verão, Tokuros, o curioso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 146
 
-No verão do ano 146, Arraor implorou pela filha. Enkurela morreu, e daquele dia em diante Arraor cuspia no chão quando falavam da Estrela de Cauda. Uma tosse que não passava matou quatro pessoas em Ruar. Razeos tinha rezado: «Estrela de Cauda, cura minha filha.» Os doentes se levantaram. Em Aron, o crédito foi da Estrela de Cauda. O deus nada fez: o crédito era de graça.
+Na primavera do ano 146, Da disse ter ouvido o deus de outro jeito: não era «a Terra Brava», era «o Sedento». Niar acreditou, e o deus mudou de nome. No inverno, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. Para Enak, o deus já não era «a Terra Brava»: passou a ser «a Estrela de Cauda».
 
-### Ano 147
-
-Teteali, de Niar, casou-se com Zeur e foi viver em Aron. Foi o primeiro laço entre os dois povos.
+*No ano 147, nada de notável aconteceu.*
 
 ### Ano 148
 
-Morreu Tedaya, que fundou Teor e o guiava, aos 65 anos. Foi quem levou os seus a fundar Teor. De novo o sol se apagou no meio do dia. Para Aron, o deus já não era «a Estrela de Cauda»: passou a ser «o Que Apaga o Sol».
+Na primavera, Ruzean, o pacífico, morreu de velhice aos 51 anos.
 
-### Ano 149
-
-Dan morreu de velhice aos 69 anos. Nunca perdoou o deus pela morte de Dadaya. Sem lugar e sem comida, Teor e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
+*O ano 149 foi calmo.*
 
 ### Ano 150
 
-Kurur, o generoso, morreu de repente, aos 41 anos. Na guerra, tinha tirado duas vidas. No verão, em nome do Que Apaga o Sol, Kuraror proibiu casamentos e trocas com Teor. Era vontade de Kuraror, não do deus. Houve fome em Aron no inverno: 21 dias de barriga vazia, sem mortes. Kuraror anunciou que o Que Apaga o Sol proibia qualquer trato com Niar. O deus nunca disse isso, mas Aron obedeceu. Razeos implorou pelo filho. Toraur morreu, e daquele dia em diante Razeos cuspia no chão quando falavam do Que Apaga o Sol. Nos anos 141 a 150 houve quatro fomes, três batalhas, quinze preces que pareceram atendidas e oito preces sem resposta; nasceram 129 crianças e morreram 54 pessoas. No fim do ano 150, 215 pessoas viviam no mundo: Ruar (98), Niar (57), Teor (12) e Aron (48).
+Zeruna, a desconfiada, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Enela tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ruar deu graças à Terra Brava. O deus nada fez: o crédito era de graça. A seca voltou, como no ano 135: 18 dias sem chuva, até que o céu se abriu. No inverno, Enela, que falava pela Terra Brava em Ruar, não resistiu à fome. Nos anos 141 a 150 houve três secas, seis fomes, 25 preces que pareceram atendidas e cinco preces sem resposta; nasceram 124 crianças e morreram 167 pessoas. No fim do ano 150, 151 pessoas viviam no mundo: Ruar (66), Niar (42), Enak (30) e Nion (13).
 
 ### Ano 151
 
-Desde a febre, Aron não enterra mais ninguém: os mortos vão para o fogo. Foram 14 dias de fome no inverno em Aron, com três mortos. O morro passou a ser o morro da fome: Morro da Fome. No outono, Aron atacou Niar na floresta em nome do Que Apaga o Sol. Aron venceu e levou a comida guardada. Os de Aron caíram sobre Teor na praia em nome do Que Apaga o Sol. Teor foi derrotado e perdeu o que tinha guardado. Na luta morreram Tedaik e Dazeali.
+Raya, que guiava Enak, morreu de velhice aos 58 anos. Com Sateali à frente, a nova geração de Nion abandonou o medo das tempestades, costume herdado dos avós. No verão, Niar atacou Nion na praia. Nion resistiu, e Niar voltou de mãos vazias. Na luta morreram Toan e Entoela. Niar não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. A doença entrou em Ruar e matou nove pessoas.
 
 ### Ano 152
 
-No verão, começou a Segunda Guerra Santa: em nome do Que Apaga o Sol, Aron pegou em lanças contra Niar. No outono, começou a Guerra Santa do Lago: em nome da Estrela de Cauda, Ruar pegou em lanças contra Teor. Ruar venceu Teor e levou os sete sobreviventes para viver sob seu mando. Teor deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra Santa do Lago terminou com a conquista: duas batalhas e três mortos. Tantas preces atendidas fizeram Aron confiar no céu mais do que nas próprias mãos. Deixaram de poupar água.
+No outono do ano 152, a tempestade trouxe raios para o morro. Um deles acertou Raur. A família de Raur nunca perdoou o céu.
 
 ### Ano 153
 
-Na primavera, a Segunda Guerra Santa seguiu: Aron contra Niar, na floresta em nome do Que Apaga o Sol. Niar resistiu, e Aron voltou de mãos vazias. Na luta morreram Ran e Niur. Com Toaror à frente, 22 pessoas deixaram Ruar e fundaram Nuor, na praia. Diante das ruínas de Enak, Nuor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Dessa vez, o Que Apaga o Sol não respondeu, e Aron, que tinha esquecido como se virar sozinho, pagou caro. O dia em que a chuva voltou virou festa em Nuor: todo ano, celebram a chuva que a Estrela de Cauda mandou.
+Na primavera, morreu Ora, que guiava Ruar, aos 58 anos. Começou a Guerra da Fome: Niar, com fome, foi buscar à força a comida de Nion. A Guerra da Fome seguiu: Niar contra Nion, na praia. Nion foi derrotado e perdeu o que tinha guardado. Dali, Sateali e Enena morreram na luta.
 
 ### Ano 154
 
-Morreu Lintela, que falava pelo Que Apaga o Sol em Niar, aos 58 anos. A Segunda Guerra Santa seguiu: Aron contra Niar, na floresta em nome do Que Apaga o Sol. Aron venceu e levou a comida guardada. Na luta morreram Pedaik e Linela. Aron e Niar, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de três anos, cinco batalhas e seis mortos, a Segunda Guerra Santa terminou em paz. Dateali tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Nuor viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça.
+Arrua, a curiosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
-### Ano 155
-
-Na primavera do ano 155, Pelinali deu à luz gêmeos, Zedali e Nior. Uns viram bênção; outros, mau sinal. Toaror, que guiava Nuor, teve um filho: Loenos. Dateali, que falava pela Estrela de Cauda em Nuor, deu à luz e não sobreviveu ao parto. Em Nuor, Teenos tomou para si o cuidado das preces à Estrela de Cauda.
+*No ano 155, nada de notável aconteceu.*
 
 ### Ano 156
 
-Na primavera do ano 156, Kuraror, que falava pelo Que Apaga o Sol em Aron, morreu de velhice aos 54 anos. Foi quem proibiu, em nome do deus, o trato com Teor. Em Aron, os jovens deixaram de lado o treino com lanças. Era coisa de outro povo, diziam.
+Na primavera do ano 156, a Guerra da Fome esfriou sem acordo nem vencedor: cinco anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava. No inverno, uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito. Depois disso, Ruar deixou de chamar o deus de «a Terra Brava» e passou a chamá-la de «a Estrela de Cauda».
 
 ### Ano 157
 
-Kuros, de Nuor, tomou por esposa Linnina, de Niar, e os dois povos passaram a se visitar.
+Morreu Enniya, que falava pela Voz do Céu em Nion, aos 64 anos. Em Ruar, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Ruar passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 158
 
-Kuror morreu de velhice aos 55 anos. Na guerra, tinha tirado duas vidas.
+Na primavera do ano 158, morreu Kurkura, a engenhosa, aos 55 anos. No inverno, Teran, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão.
 
 ### Ano 159
 
-Morreu Lindan, que guiava Niar, aos 58 anos. Ena, de Nuor, casou-se com Enos e foi viver em Ruar. Foi o primeiro laço entre os dois povos.
+Arik tinha rezado: «Sedento, dá-nos o que comer.» A fome passou, e Niar viu nisso obra do Sedento. O deus não tinha feito nada.
 
 ### Ano 160
 
-Na primavera, Aran, que falava pelo Que Apaga o Sol em Niar, morreu de velhice aos 64 anos. Morreu o último que tinha visto o ano 106. Em Niar, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Nos anos 151 a 160 houve quatro secas, quinze fomes, oito batalhas, 41 preces que pareceram atendidas e onze preces sem resposta; nasceram 108 crianças e morreram 105 pessoas. No fim do ano 160, 220 pessoas viviam no mundo: Ruar (94), Niar (59), Aron (39) e Nuor (28).
+Niar passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Niar passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Nos anos 151 a 160 houve quatro fomes, duas batalhas, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 120 crianças e morreram 50 pessoas. No fim do ano 160, 221 pessoas viviam no mundo: Ruar (93), Niar (82), Enak (36) e Nion (10).
 
-### Ano 161
-
-Na primavera, o frio levou Danios, que guiava Ruar. Foi quem proibiu, em nome do deus, o trato com Teor. No inverno, a tempestade trouxe raios para o morro. Um deles acertou Arya. Em Aron, disseram que era castigo. Desde a morte de Arya, ninguém em Aron sobe o morro em dia de tempestade.
+*O ano 161 foi calmo.*
 
 ### Ano 162
 
-Na primavera do ano 162, morreu Raraur, que falava pela Estrela de Cauda em Ruar, aos 61 anos. No outono, numa tempestade sobre a praia, um raio matou Arruya. Em Nuor, disseram que era castigo. Depois disso, Nuor deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Nuor sai de casa. Lembram de Arruya. O lugar ganhou nome: Praia do Raio.
+Zena partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Uma febre correu Ruar e levou quatro vidas.
 
 ### Ano 163
 
-Kurara, a curiosa, morreu dormindo, aos 53 anos. Na guerra, tinha tirado duas vidas. No outono, Niruela implorou pelo filho. Nur morreu, e daquele dia em diante Niruela cuspia no chão quando falavam do Senhor do Trovão. Sem lugar e sem comida, Totoan e os seus atravessaram a borda do mundo. Ninguém soube deles. A seca voltou, como no ano 76: 23 dias sem chuva, até que o céu se abriu. Depois da seca, Ruar jurou nunca desperdiçar água.
+Na primavera, Zeenur, que guiava Ruar, morreu de velhice aos 57 anos. No verão, Zetor, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. No outono, houve luta na praia: Niar atacou Nion. Niar venceu e levou a comida guardada. Ruibur morreu na luta. No inverno, a forja de Enak não apagava mais. O metal mudou o trabalho e mudou a guerra. Enak acabou: Ra e Isisut foram viver em Ruar.
 
 ### Ano 164
 
-A fome por causa da seca durou 23 dias em Ruar e levou 27 vidas. Em Ruar, Entos pediu: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Ruar viu nisso obra da Estrela de Cauda. Foi só o tempo, mas quem iria dizer? Os escribas de Ruar registraram o milagre. Aron passou fome por causa da seca por 24 dias, e vinte pessoas morreram. Foram 23 dias de fome por causa da seca em Nuor, com doze mortos.
+Ruar passou fome no inverno por 9 dias, e 23 pessoas morreram. Começou a Guerra da Fome da Praia: Niar, com fome, foi buscar à força a comida de Nion. Na Guerra da Fome da Praia, Niar atacou Nion na praia. Nion foi derrotado e perdeu o que tinha guardado. Enara e Zeruela morreram na luta. Niar e Nion, cansados de enterrar os seus, fizeram as pazes na praia. A Guerra da Fome da Praia acabou em trégua, depois de um ano, duas batalhas e três mortos. Niar saiu dela mais forte.
 
-### Ano 165
-
-No inverno, apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu. Depois disso, Aron deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-la de «a Estrela de Cauda».
+*No ano 165, nada de notável aconteceu.*
 
 ### Ano 166
 
-Em Aron, gritaram que o templo mentia em nome da Estrela de Cauda. Os sacerdotes foram tirados do poder.
+Na primavera, Tetour, que guiava Ruar, morreu de velhice aos 63 anos. Morreu Arik, que falava pelo Sedento em Niar, aos 60 anos. Ruar escolheu Raos para guiar o grupo. Arkuros queria o lugar e nunca perdoou. Com canais e moinhos, Niar já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
-### Ano 167
+*No ano 167, nada de notável aconteceu.*
 
-Na primavera, morreu Entos, o devoto, aos 45 anos. Desde a morte de Danior, nunca mais tinha rezado. Niar passou a receber bem os de fora: um casamento com outro povo virava festa.
+### Ano 168
 
-*O ano 168 foi calmo.*
+Na primavera do ano 168, morreu Linlinela, que guiava Niar, aos 50 anos. Em Niar, Tour pediu: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Niar deu graças ao Sedento. A crônica sabe que foi acaso. Os escribas de Niar registraram o milagre. Nion passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 169
 
-Runios, que falava pela Estrela de Cauda em Ruar, morreu dormindo, aos 60 anos. Na guerra, tinha tirado duas vidas. Razeos, que fundou Aron e o guiava, morreu dormindo, aos 64 anos. Foi quem levou os seus a fundar Aron.
+Houve luta no lago: Niar atacou Ruar. Ruar resistiu, e Niar voltou de mãos vazias. Zetor e Tor morreram na luta. Desde então, Niar chama o lago de Lago do Luto.
 
 ### Ano 170
 
-Tantas preces atendidas fizeram Nuor confiar no céu mais do que nas próprias mãos. Deixaram de poupar água. Uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. Teenos, que falava pelo Senhor do Trovão em Nuor, não resistiu à fome. Nos anos 161 a 170 houve duas secas, seis fomes, 22 preces que pareceram atendidas e cinco preces sem resposta; nasceram 159 crianças e morreram 162 pessoas. No fim do ano 170, 213 pessoas viviam no mundo: Ruar (86), Niar (64), Aron (42) e Nuor (21).
+No verão, começou a Guerra da Fome do Lago: Niar, com fome, foi buscar à força a comida de Ruar. Na Guerra da Fome do Lago, Niar atacou Ruar no lago. Ruar resistiu, e Niar voltou de mãos vazias. Na luta morreram Ardaela, Ruela, Daniur e Zeur. No outono, Niar não esqueceu o ano 164 e atacou Nion outra vez. Nion foi derrotado e perdeu o que tinha guardado. Peteya, Artos e Daarali morreram na luta. Nos anos 161 a 170 houve treze fomes, cinco batalhas, 29 preces que pareceram atendidas e dez preces sem resposta; nasceram 105 crianças e morreram 123 pessoas. No fim do ano 170, 200 pessoas viviam no mundo: Ruar (101), Niar (83) e Nion (16).
 
 ### Ano 171
 
-Na primavera do ano 171, Niali, que falava pelo Que Apaga o Sol em Niar, morreu de velhice aos 55 anos. Em Niar, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 115, só a crônica guarda. Dessa vez, o Senhor do Trovão não respondeu, e Nuor, que tinha esquecido como se virar sozinho, pagou caro.
+Arkuros não podia mais viver perto de Raos. Saiu de Ruar com quinze pessoas e fundou Arur no morro. A seca voltou, como no ano 150: 22 dias sem chuva, até que o céu se abriu. O dia em que a chuva voltou virou festa em Arur: todo ano, celebram a chuva que a Estrela de Cauda mandou. Linpena passou a falar pela Estrela de Cauda em Arur. Era a primeira a rezar e a última a duvidar. Arur encontrou as ruínas de Enak. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 172
 
-Entoa, a curiosa, morreu dormindo, aos 64 anos. Na guerra, tinha tirado duas vidas.
+Em Arur, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 88, só a crônica guarda. Tour, que falava pelo Sedento em Niar, não resistiu à fome. Ruar passou fome no inverno por 9 dias, e dezesseis pessoas morreram. No verão, Arran anunciou que a Estrela de Cauda proibia qualquer trato com Arur. O deus nunca disse isso, mas Ruar obedeceu. Começou a Guerra da Praia: o rancor entre Niar e Nion virou guerra.
 
-*No ano 173, nada de notável aconteceu.*
+### Ano 173
+
+A Guerra da Fome do Lago esfriou sem acordo nem vencedor: quatro anos, duas batalhas e seis mortos, e ninguém sabia mais por que lutava. Ruar saiu dela mais forte. No outono, Enraos, que guiava Nion, não resistiu à fome. Desde a morte de Suniur, nunca mais tinha rezado. No inverno, o deus não respondia, e Nion achou que a culpa era sua: tinham feito algo errado. Nion acabou: Ibisor, Isarya e Isya foram viver em Ruar. A Guerra da Praia acabou porque um dos lados deixou de existir: três anos, quatro batalhas e oito mortos.
 
 ### Ano 174
 
-No verão do ano 174, Nian, o devoto, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou.
+Teik rezou por Artena até a voz acabar. Artena morreu mesmo assim, e Teik nunca mais rezou. Diante das ruínas de Nion, Ruar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. A doença entrou em Niar e matou 24 pessoas. Desde a febre, Niar não enterra mais ninguém: os mortos vão para o fogo. A fome no inverno durou 11 dias em Niar e levou três vidas.
 
 ### Ano 175
 
-San, o rancoroso, morreu dormindo, aos 57 anos. Foi quem proibiu, em nome do deus, o trato com Ruar. Depois de anos sob um só, Niar sentou-se em roda: dali em diante, decidia-se juntos. Sem lugar e sem comida, Donia e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Depois da seca, Aron jurou nunca desperdiçar água.
+Em Arur, Zedaela pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Arur viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. No outono, numa tempestade sobre o morro, um raio matou Tela. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Arur sai de casa. Lembram de Tela.
 
-### Ano 176
-
-Toaror, que fundou Nuor e o guiava, morreu de velhice aos 61 anos. Foi quem levou os seus a fundar Nuor. Aron acabou: Zeveor e Veselor foram viver em Ruar. Ruar passou fome no inverno por 9 dias, e dez pessoas morreram. A rixa entre Ararya e Tezela rachou Ruar. Ararya partiu com os seus, dez pessoas, e fundou Enur no morro. Toteor passou dias nas ruínas de Aron e voltou sabendo cortar pedra.
-
-### Ano 177
-
-Morreu o último que tinha visto o ano 91. Em Enur, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Ruar atacou Enur no morro em nome da Estrela de Cauda. Enur foi derrotado e perdeu o que tinha guardado. Na luta morreu Toteor. Tela passou a falar pela Estrela de Cauda em Enur. Era a primeira a rezar e a última a duvidar. No inverno, Nuor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Senhor do Trovão. Os sábios de Nuor passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+*Os anos 176 a 177 passaram em paz.*
 
 ### Ano 178
 
-Começou a Terceira Guerra Santa: em nome da Estrela de Cauda, Ruar pegou em lanças contra Enur. No verão, em Ruar, disseram que a Estrela de Cauda só ouvia Enur. A inveja virou rancor. No outono, na Terceira Guerra Santa, Ruar atacou Enur no morro em nome da Estrela de Cauda. Ruar venceu e levou a comida guardada. Tela, Ena e Teik morreram na luta. Desde então, Enur chama o morro de Morro do Luto. Depois de um ano, três batalhas e quatro mortos, a Terceira Guerra Santa terminou em paz.
+Arraya deu à luz gêmeos, Toarik e Zesan. Uns viram bênção; outros, mau sinal.
 
 ### Ano 179
 
-No outono do ano 179, Kuran passou dias nas ruínas de Enak e voltou sabendo cortar pedra. Kuran passou dias nas ruínas de Aron e voltou sabendo cortar pedra.
+Na primavera, morreu Daur, que guiava Niar, aos 60 anos. Em Niar, Linik começou a pregar que o deus não era «o Sedento». Era «o Pai das Águas». Em poucos anos, todos rezavam assim. Arran, que falava pela Estrela de Cauda em Ruar, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Arur.
 
 ### Ano 180
 
-Na primavera, Kuran passou dias nas ruínas de Enak e voltou sabendo cortar pedra. No verão, Tena deu à luz gêmeos, Rua e Teos. Uns viram bênção; outros, mau sinal. Nos anos 171 a 180 houve duas secas, nove fomes, três batalhas, 30 preces que pareceram atendidas e doze preces sem resposta; nasceram 90 crianças e morreram 138 pessoas. No fim do ano 180, 159 pessoas viviam no mundo: Ruar (82), Niar (45), Nuor (25) e Enur (7).
+Linpena, que guiava Arur, morreu dormindo, aos 51 anos. Ninior rezou por Ruan até a voz acabar. Ruan morreu mesmo assim, e Ninior nunca mais rezou. A doença entrou em Ruar e matou sete pessoas. Nos anos 171 a 180 houve seis secas, dez fomes, quatro batalhas, 29 preces que pareceram atendidas e catorze preces sem resposta; nasceram 100 crianças e morreram 130 pessoas. No fim do ano 180, 171 pessoas viviam no mundo: Ruar (92), Niar (72) e Arur (7).
 
 ### Ano 181
 
-Na primavera, morreu Nilinor, que guiava Niar, aos 60 anos. No verão, Kuran passou dias nas ruínas de Nidar e voltou sabendo cortar pedra. De novo a chuva sumiu, como no ano 163. Foram 18 dias de seca. Nina tinha rezado: «Que Apaga o Sol, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Niar duvidou de que o Que Apaga o Sol tinha ouvido. O deus nada fez: o crédito era de graça.
+Morreu Enruela, a pacífica, aos 51 anos. Na guerra, tinha tirado três vidas.
 
 ### Ano 182
 
-Tezela, que guiava Ruar, morreu de velhice aos 61 anos. Raos passou a guiar Ruar, mas Tona não aceitou e guardou rancor. Nas ruínas de Aron, Kuran achou o que eles sabiam: aprendeu a cortar pedra.
+Totoela, que falava pela Estrela de Cauda em Ruar, morreu dormindo, aos 63 anos.
 
 ### Ano 183
 
-Morreu Ararya, que fundou Enur e o guiava, aos 62 anos. Tinha fundado Enur. Teara, de Enur, casou-se com Rakuros e foi viver em Nuor. Foi o primeiro laço entre os dois povos. Kurraur implorou pela filha. Arnina morreu, e daquele dia em diante Kurraur cuspia no chão quando falavam da Estrela de Cauda.
+Morreu Zedaela, que falava pela Estrela de Cauda em Arur, aos 48 anos.
 
 ### Ano 184
 
-Na primavera, com Kuros à frente, a nova geração de Nuor abandonou o treino com lanças, costume herdado dos avós. Tezeya, de Niar, casou-se com Zeos e foi viver em Enur. Foi o primeiro laço entre os dois povos. No inverno, Daenya, a ambiciosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
+Niena tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Ruar deu graças à Estrela de Cauda. A crônica sabe que foi acaso. Os escribas de Ruar registraram o milagre. Ninior implorou pela filha. Toniela morreu, e daquele dia em diante Ninior cuspia no chão quando falavam da Estrela de Cauda. Uma febre correu Ruar e levou cinco vidas.
 
 ### Ano 185
 
-No verão, em Enur, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Kuran tinha rezado: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Enur agradeceu à Estrela de Cauda. O deus não tinha feito nada.
+Nasceu Obtoil, a primeira de Arur.
 
 ### Ano 186
 
-Raos, que guiava Ruar, morreu dormindo, aos 56 anos. Linzeur rezou por Teor até a voz acabar. Teor morreu mesmo assim, e Linzeur nunca mais rezou. Em Niar, disseram que o Que Apaga o Sol só ouvia Enur. A inveja virou rancor. A fome durou 20 dias em Niar e levou quatro vidas. Uma febre correu Niar e levou oito vidas.
+Dadaik não esperou a vez: tomou o comando de Niar à força, e o conselho dos velhos se calou.
 
 ### Ano 187
 
-Tona, a ambiciosa, morreu dormindo, aos 61 anos. Desde a morte de Dadana, nunca mais tinha rezado. Nian partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Nasceu Nikaela, a primeira de Enur. Ruar cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Estrela de Cauda.
+No verão, em nome da Estrela de Cauda, Kurra proibiu casamentos e trocas com Arur. Era vontade de Kurra, não do deus. Ruar atacou Arur no morro. Arur foi derrotado e perdeu o que tinha guardado. Aror, Raya e Entor morreram na luta. Depois de tantos mortos, Ruar e Arur se encontraram no morro e juraram paz.
 
-### Ano 188
-
-O inverno foi de gelo: duas pessoas morreram de frio.
+*No ano 188, nada de notável aconteceu.*
 
 ### Ano 189
 
-Uma tosse que não passava matou quatro pessoas em Ruar. Nuor atacou Enur no morro. Nuor venceu e levou a comida guardada. Raenos e Tezeya morreram na luta. Desde então, Nuor chama o morro de Morro da Vitória. A fome no inverno durou 11 dias em Nuor e levou nove vidas.
+Na primavera, com Sana à frente, dezenove pessoas deixaram Niar e fundaram Daur, na praia. Niar atacou Arur no morro. Niar venceu e levou a comida guardada. Na luta morreram Dara, Teran e Lindaela. Depois da derrota, Arur não existia mais: os quatro que sobraram foram levados para Niar. Foram 18 dias de fome no inverno em Ruar, com sete mortos. No inverno, Saya passou a falar pelo Pai das Águas em Daur. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 190
 
-Na primavera, morreu Nina, que falava pelo Que Apaga o Sol em Niar, aos 62 anos. Sazeali, a pacífica, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No inverno, em nome do Que Apaga o Sol, Linzeur proibiu casamentos e trocas com Enur. Era vontade de Linzeur, não do deus. Niar atacou Enur no morro em nome do Que Apaga o Sol. Enur foi derrotado e perdeu o que tinha guardado. Na luta morreu Kuran. Niar venceu Enur e levou os cinco sobreviventes para viver sob seu mando. Enur deixou de existir, mas os vencidos guardaram seus costumes em segredo. Nos anos 181 a 190 houve quatro secas, oito fomes, duas batalhas, 28 preces que pareceram atendidas e oito preces sem resposta; nasceram 116 crianças e morreram 85 pessoas. No fim do ano 190, 183 pessoas viviam no mundo: Ruar (95), Niar (59) e Nuor (29).
+Em Daur, Sana começou a pregar que o deus não era «o Pai das Águas». Era «a Chama de Cima». Em poucos anos, todos rezavam assim. Em Daur, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 109, só a crônica guarda. Com Sadana à frente, 36 pessoas deixaram Niar e fundaram Saes, no morro. Saes encontrou as ruínas de Enak e disse que ali tinham vivido gigantes. Em Daur nasceu a primeira criança: Daor, filho de Sana e Zezeik. Nos anos 181 a 190 houve oito fomes, duas batalhas, dezesseis preces que pareceram atendidas e seis preces sem resposta; nasceram 96 crianças e morreram 64 pessoas. No fim do ano 190, 203 pessoas viviam no mundo: Ruar (96), Niar (51), Daur (20) e Saes (36).
 
 ### Ano 191
 
-Em Nuor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. A fome por causa da seca durou 15 dias em Niar e levou cinco vidas. Ruar encontrou as ruínas de Enur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
+Na primavera, em Saes, Dasaela começou a pregar que o deus não era «o Pai das Águas». Era «a Mãe de Dois». Em poucos anos, todos rezavam assim.
 
 ### Ano 192
 
-Na primavera do ano 192, Dan disse ter ouvido o deus de outro jeito: não era «o Senhor do Trovão», era «o Pai das Águas». Nuor acreditou, e o deus mudou de nome.
+Saya, que falava pela Chama de Cima em Daur, morreu de repente, aos 37 anos. Daela, de Daur, casou-se com Nienan e foi viver em Ruar. Foi o primeiro laço entre os dois povos. A tempestade trouxe raios para a praia. Um deles acertou Lina. Os seus nunca esqueceram. Nasceu ali um costume: quando o céu escurece, ninguém em Daur sai de casa. Lembram de Lina. Desde aquele dia, Daur chama a praia de Praia do Raio.
 
-*O ano 193 foi calmo.*
+### Ano 193
+
+Kurra tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Estrela de Cauda. A crônica sabe que foi acaso. Os escribas de Ruar registraram o milagre.
 
 ### Ano 194
 
-Na primavera do ano 194, Linzeur, que falava pelo Que Apaga o Sol em Niar, morreu dormindo, aos 55 anos. Desde a morte de Teor, nunca mais tinha rezado. Kuros tinha rezado: «Pai das Águas, dá-nos o que comer.» A comida voltou, e Nuor deu graças ao Pai das Águas. O deus nada fez: o crédito era de graça. De novo a chuva sumiu, como no ano 181. Foram 21 dias de seca. Kurraur rezou por Rana até a voz acabar. Rana morreu mesmo assim, e Kurraur nunca mais rezou.
+Na primavera do ano 194, em Ruar, Aran começou a pregar que o deus não era «a Estrela de Cauda». Era «a Sombra». Em poucos anos, todos rezavam assim. No verão, em Saes nasceu a primeira criança: Vela, filha de Sadana e Linik.
 
 ### Ano 195
 
-Aror, que falava pela Estrela de Cauda em Ruar, morreu de velhice aos 55 anos. Ruzeos rezou por Raela até a voz acabar. Raela morreu mesmo assim, e Ruzeos nunca mais rezou. A doença entrou em Ruar e matou treze pessoas. Foram 9 dias de fome no inverno em Ruar, com oito mortos.
+Morreu Tesaik, o corajoso, aos 62 anos. De novo a chuva sumiu, como no ano 171. Foram 23 dias de seca. Zeya rezou por Niya até a voz acabar. Niya morreu mesmo assim, e Zeya nunca mais rezou. Uma febre correu Ruar e levou oito vidas.
 
 ### Ano 196
 
-Na primavera, ninguém lembrava mais a razão, e Niar abandonou a festa da chuva.
+Na primavera, em Saes, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Kurrana, de Ruar, casou-se com Tezean e foi viver em Saes. Foi o primeiro laço entre os dois povos. A fome no inverno durou 9 dias em Ruar e levou doze vidas. No verão, em nome da Sombra, Kurra proibiu casamentos e trocas com Niar. Era vontade de Kurra, não do deus. Os de Ruar caíram sobre Daur na praia em nome da Sombra. Daur expulsou os atacantes. Enenan e Ena morreram na luta.
 
 ### Ano 197
 
-Linor, o curioso, cansou de dividir pouca comida. Partiu com dezesseis pessoas para o morro e ali fundou Linor. Diante das ruínas de Enak, Linor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Linor nasceu a primeira criança: Sasana, filha de Dali e Pean. No inverno, diante das ruínas de Nidar, Linor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
+Na primavera do ano 197, Sadana, que fundou Saes e o guiava, morreu de repente, aos 42 anos. Tinha fundado Saes. No inverno, começou a Guerra Santa: em nome da Sombra, Ruar pegou em lanças contra Daur. Na Guerra Santa, Ruar atacou Daur na praia em nome da Sombra. Ruar venceu e levou a comida guardada. Na luta morreram Toali e Sana.
 
 ### Ano 198
 
-Em Linor, Zena tomou para si o cuidado das preces ao Que Apaga o Sol. As ruínas de Teor viraram aviso em Linor: era o que o deus fazia com quem o desagradava.
+Na primavera do ano 198, a Guerra Santa seguiu: Ruar contra Daur, na praia em nome da Sombra. Ruar venceu e levou a comida guardada. Na luta morreram Datoan, Danior, Zezeik e Kurteor. No outono, a terra tremeu. Caíram 28 cabanas. Ruan, Zena, Daara, Toarik, Kos e Zea morreram sob os escombros. Em Daur, Toik pediu: «Chama de Cima, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Daur duvidou de que a Chama de Cima tinha ouvido. A crônica sabe que foi acaso. Depois da seca, Saes jurou nunca desperdiçar água.
 
 ### Ano 199
 
-Sazeali, a pacífica, morreu de repente, aos 33 anos. Niar passou a festejar todo ano o dia da volta da chuva, em honra do Que Apaga o Sol. Em Linor, Linor pediu: «Que Apaga o Sol, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Linor duvidou de que o Que Apaga o Sol tinha ouvido. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Linor: todo ano, celebram a chuva que o Que Apaga o Sol mandou.
+Na Guerra Santa, Daur atacou Ruar no lago. Ruar resistiu, e Daur voltou de mãos vazias. Tena e Pena morreram na luta. Desde então, Daur chama o lago de Lago do Luto. A fome por causa da seca durou 24 dias em Saes e levou treze vidas. No outono, Saes atacou Daur na praia. Daur resistiu, e Saes voltou de mãos vazias. Na luta morreram Teor e Dapena. Saes e Daur fizeram as pazes na praia, antes que a briga crescesse.
 
 ### Ano 200
 
-Ruzeos, que guiava Ruar, morreu de velhice aos 56 anos. Nunca perdoou o deus pela morte de Raela. Em Linor, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Sem lugar e sem comida, Teruor e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, a tempestade trouxe raios para o morro. Um deles acertou Niteur. Ninguém em Linor teve dúvida: era castigo. Depois disso, Linor deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Senhor do Trovão». Nos anos 191 a 200 houve duas secas, dez fomes, 22 preces que pareceram atendidas e cinco preces sem resposta; nasceram 131 crianças e morreram 138 pessoas. No fim do ano 200, 171 pessoas viviam no mundo: Ruar (81), Niar (44), Nuor (25) e Linor (21).
+Na primavera do ano 200, morreu Peor, que falava pelo Pai das Águas em Niar, aos 61 anos. Nos anos 191 a 200 houve quatro secas, sete fomes, cinco batalhas, 28 preces que pareceram atendidas e dez preces sem resposta; nasceram 118 crianças e morreram 107 pessoas. No fim do ano 200, 214 pessoas viviam no mundo: Ruar (95), Niar (77), Daur (20) e Saes (22).
 
 *O ano 201 foi calmo.*
 
 ### Ano 202
 
-Toik, que guiava Niar, morreu de velhice aos 60 anos.
+Com Toan à frente, a nova geração de Saes abandonou a festa da chuva, costume herdado dos avós. A Guerra Santa esfriou sem acordo nem vencedor: seis anos, quatro batalhas e dez mortos, e ninguém sabia mais por que lutava. Ruar saiu dela mais forte. Uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito.
 
 ### Ano 203
 
-Na primavera do ano 203, em Ruar, Ruzean começou a pregar que o deus não era «a Estrela de Cauda». Era «a Luz Que Avisa». Em poucos anos, todos rezavam assim.
+Na primavera, morreu Telinur, o rancoroso, aos 60 anos. O templo de Daur ficou mais forte que o líder. Linali, que falava pela Chama de Cima, passou a decidir tudo.
 
 ### Ano 204
 
-Na primavera, Daela, de Ruar, casou-se com Sasaur e foi viver em Linor. Foi o primeiro laço entre os dois povos. No outono, Loloela deu à luz gêmeos, Saya e Toarali. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 204, com Linali à frente, a nova geração de Daur abandonou o treino com lanças, costume herdado dos avós. No verão, Zedaya anunciou que o Pai das Águas proibia qualquer trato com Daur. O deus nunca disse isso, mas Niar obedeceu. Numa tempestade sobre o morro, um raio matou Ardaik. Ardaik era dos que mais rezavam, e Saes ficou sem entender. Para os mais fiéis de Saes, Ardaik não foi castigado, mas escolhido. Nasceu ali um costume: quando o céu escurece, ninguém em Saes sai de casa. Lembram de Ardaik.
 
 ### Ano 205
 
-Na primavera do ano 205, apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu. Para Niar, o deus já não era «o Que Apaga o Sol»: passou a ser «a Estrela de Cauda».
+Sem lugar e sem comida, Zetela e os seus atravessaram a borda do mundo. Ninguém soube deles. Saes já não se preparava para nada: a Mãe de Dois sempre dava. Deixaram de poupar água.
 
 ### Ano 206
 
-Na primavera, morreu Linor, que fundou Linor e o guiava, aos 63 anos. Tinha fundado Linor. A fome no inverno durou 11 dias em Nuor e levou três vidas. No outono, a forja de Linor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera do ano 206, Aran, o ambicioso, morreu dormindo, aos 64 anos. Os de Niar caíram sobre Daur na praia. Daur foi derrotado e perdeu o que tinha guardado. Na luta morreram Sapeur, Tela, Daor e Daik. Depois de tantos mortos, Niar e Daur se encontraram na praia e juraram paz. Zedaya anunciou que o Pai das Águas proibia qualquer trato com Saes. O deus nunca disse isso, mas Niar obedeceu. A febre levou Kurra, que guiava Ruar. Foi quem proibiu, em nome do deus, o trato com Arur.
 
 ### Ano 207
 
-Na primavera, morreu Rutor, que falava pela Luz Que Avisa em Ruar, aos 62 anos.
+A doença entrou em Ruar e matou oito pessoas. A fome no inverno durou 9 dias em Ruar e levou oito vidas. Em Ruar, Nian pediu: «Sombra, dá-nos o que comer.» A comida voltou, e Ruar deu graças à Sombra. O deus não tinha feito nada. Os escribas de Ruar registraram o milagre. Em Daur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Daur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 208
 
-Na primavera, ninguém lembrava mais a razão, e Niar abandonou o costume de queimar os mortos. Um raio caiu na floresta durante a tempestade e matou Daarur. Em Niar, disseram que era castigo. Niar passou a acreditar que a Estrela de Cauda castiga quem duvida, e que Daarur tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Niar sai de casa. Lembram de Daarur.
+Raarur partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Houve luta no morro: Niar atacou Saes em nome do Pai das Águas. Niar venceu e levou a comida guardada. Kurrana, Nipeor, Zelina, Aror e Arniur morreram na luta. Saes não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. A fome no inverno durou 9 dias em Niar e levou treze vidas. As preces de Saes ficaram pequenas: pedia-se à Mãe de Dois até sol para a pesca e sorte na caça.
 
-### Ano 209
-
-Em Ruar, Raenur pediu: «Luz Que Avisa, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ruar deu graças à Luz Que Avisa. Foi só o tempo, mas quem iria dizer? Os escribas de Ruar registraram o milagre.
+*O ano 209 passou sem nada que a crônica precise guardar.*
 
 ### Ano 210
 
-Todaur rezou por Arik até a voz acabar. Arik morreu mesmo assim, e Todaur nunca mais rezou. No outono, tantas preces atendidas fizeram Linor confiar no céu mais do que nas próprias mãos. Foram 3 dias de fome em Niar, com três mortos. Uma febre correu Niar e levou oito vidas. Depois da febre, Niar passou a queimar os seus mortos, para que a doença não voltasse. Nos anos 201 a 210 houve três secas, nove fomes e 25 preces que pareceram atendidas; nasceram 124 crianças e morreram 100 pessoas. No fim do ano 210, 196 pessoas viviam no mundo: Ruar (96), Niar (37), Nuor (33) e Linor (30).
+Na primavera, Teik, o generoso, morreu de repente, aos 29 anos. Começou a Guerra Santa do Morro: em nome do Pai das Águas, Niar pegou em lanças contra Saes. A Guerra Santa do Morro seguiu: Niar contra Saes, no morro. Niar venceu e levou a comida guardada. Tedaur e Pepean morreram na luta. Niar e Saes, cansados de enterrar os seus, fizeram as pazes no morro. A Guerra Santa do Morro acabou em trégua, depois de dois anos, duas batalhas e sete mortos. Niar saiu dela mais forte. Nos anos 201 a 210 houve duas secas, nove fomes, três batalhas, 32 preces que pareceram atendidas e quatro preces sem resposta; nasceram 126 crianças e morreram 108 pessoas. No fim do ano 210, 218 pessoas viviam no mundo: Ruar (91), Niar (69), Daur (26) e Saes (32).
 
 ### Ano 211
 
-Morreu Arzela, que falava pela Estrela de Cauda em Niar, aos 67 anos. A fome no inverno durou 8 dias em Niar e levou oito vidas.
+Saor, que guiava Niar, morreu de velhice aos 58 anos. Na guerra, tinha tirado duas vidas. Tezean tinha rezado: «Mãe de Dois, dá-nos o que comer.» A comida voltou, e Saes deu graças à Mãe de Dois. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 212
 
-Ruzean, o pacífico, morreu dormindo, aos 46 anos. Em nome da Estrela de Cauda, Dapeik proibiu casamentos e trocas com Linor. Era vontade de Dapeik, não do deus.
+Na primavera do ano 212, em Daur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Daur cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Chama de Cima.
 
 ### Ano 213
 
-Enya, que guiava Nuor, morreu dormindo, aos 61 anos.
+Dasaela, a generosa, morreu de velhice aos 59 anos. O frio levou Tezean, o pacífico. No verão, tantas preces atendidas fizeram Daur confiar no céu mais do que nas próprias mãos.
 
-*O ano 214 foi calmo.*
+### Ano 214
+
+Na primavera, Tona, que falava pela Sombra em Ruar, morreu de velhice aos 62 anos. Linali, que guiava Daur, deu à luz e não sobreviveu ao parto. Houve luta na praia: Saes atacou Daur. Daur expulsou os atacantes. Teena, Niya, Salinur e Pedaor morreram na luta.
 
 ### Ano 215
 
-Na primavera, morreu Enruan, que falava pela Luz Que Avisa em Ruar, aos 62 anos.
+Dessa vez, a Chama de Cima não respondeu, e Daur, que tinha esquecido como se virar sozinho, pagou caro.
 
-*O ano 216 passou sem nada que a crônica precise guardar.*
+### Ano 216
+
+Uma febre correu Ruar e levou três vidas.
 
 ### Ano 217
 
-Sem lugar e sem comida, Ratoa e os seus atravessaram a borda do mundo. Ninguém soube deles. O sol escureceu outra vez. Para Linor, o deus já não era «o Senhor do Trovão»: passou a ser «o Que Apaga o Sol».
+Pesana, a devota, morreu dormindo, aos 65 anos.
 
 ### Ano 218
 
-Em Ruar, Demenela pediu: «Luz Que Avisa, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Luz Que Avisa. A crônica sabe que foi acaso. Nas tabuletas de Ruar, ficou escrito que foi a Luz Que Avisa. O inverno foi de gelo: duas pessoas morreram de frio.
+Ruar passou fome no inverno por 9 dias, e vinte pessoas morreram. Niar passou fome no inverno por 12 dias, e oito pessoas morreram. Tozean anunciou que a Sombra proibia qualquer trato com Daur. O deus nunca disse isso, mas Ruar obedeceu. O inverno foi de gelo: dezesseis pessoas morreram de frio.
 
-### Ano 219
-
-No verão do ano 219, Ruar atacou Niar na floresta em nome da Luz Que Avisa. Ruar venceu e levou a comida guardada. Na luta morreram Linzeali e Satoya. Ruar e Niar, cansados de enterrar os seus, fizeram as pazes na floresta. Ruar passou fome no inverno por 18 dias, e três pessoas morreram. A doença entrou em Ruar e matou três pessoas.
+*O ano 219 passou sem nada que a crônica precise guardar.*
 
 ### Ano 220
 
-No outono do ano 220, as preces de Linor ficaram pequenas: pedia-se ao Que Apaga o Sol até sol para a pesca e sorte na caça. Houve luta no morro: Ruar atacou Linor. Linor foi derrotado e perdeu o que tinha guardado. Dapean morreu na luta. Nos anos 211 a 220 houve duas secas, onze fomes, duas batalhas e 29 preces que pareceram atendidas; nasceram 117 crianças e morreram 93 pessoas. No fim do ano 220, 217 pessoas viviam no mundo: Ruar (80), Niar (64), Nuor (32) e Linor (41).
+Na primavera do ano 220, Toik, que guiava Daur, morreu de velhice aos 55 anos. Em Niar, Niela pediu: «Pai das Águas, não deixes nossos filhos morrerem de fome.» A fome passou, e Niar viu nisso obra do Pai das Águas. Foi só o tempo, mas quem iria dizer? Os escribas de Niar registraram o milagre. Houve luta na praia: Ruar atacou Daur em nome da Sombra. Daur resistiu, e Ruar voltou de mãos vazias. Rur morreu na luta. Nos anos 211 a 220 houve catorze fomes, duas batalhas, 29 preces que pareceram atendidas e quatro preces sem resposta; nasceram 109 crianças e morreram 104 pessoas. No fim do ano 220, 223 pessoas viviam no mundo: Ruar (85), Niar (82), Daur (34) e Saes (22).
 
 ### Ano 221
 
-Na primavera, Enela, que guiava Ruar, morreu dormindo, aos 54 anos. Zeik, o generoso, morreu dormindo, aos 56 anos. Sem lugar e sem comida, Tozeos e os seus atravessaram a borda do mundo. Ninguém soube deles. A fome no inverno durou 9 dias em Ruar e levou dezesseis vidas. Dessa vez, o Que Apaga o Sol não respondeu, e Linor, que tinha esquecido como se virar sozinho, pagou caro.
+Na primavera, em Niar, Daur começou a pregar que o deus não era «o Pai das Águas». Era «o Senhor das Lanças». Em poucos anos, todos rezavam assim. A terra tremeu. Caíram 21 cabanas. Zeor, Toraur, Nidaur, Tepeur, Datoali, Arlinya e Esan morreram sob os escombros.
 
-*No ano 222, nada de notável aconteceu.*
+### Ano 222
+
+Na primavera, depois de anos sob um só, Saes sentou-se em roda: dali em diante, decidia-se juntos. Com canais e moinhos, Saes já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Os sábios de Saes passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Começou a Guerra Santa da Praia: em nome da Sombra, Ruar pegou em lanças contra Daur. Na Guerra Santa da Praia, Ruar atacou Daur na praia em nome da Sombra. Ruar venceu e levou a comida guardada. Na luta morreram Vezela e Zetour.
 
 ### Ano 223
 
-Kurya, que guiava Ruar, morreu de velhice aos 58 anos.
+Na primavera, depois dos roubos da fome, Niar parou de dividir: cada família passou a guardar o que era seu. A seca voltou, como no ano 195: 18 dias sem chuva, até que o céu se abriu. Nienan implorou pelo filho. Arruor morreu, e daquele dia em diante Nienan cuspia no chão quando falavam da Sombra. Niela, que guiava Niar, não resistiu à fome.
 
 ### Ano 224
 
-Na primavera do ano 224, Demtour, o curioso, morreu de velhice aos 67 anos. Totena, a engenhosa, inventou marcas que guardavam palavras.
+Foram 9 dias de fome no inverno em Niar, com vinte mortos. No outono, Nienan rezou por Kurara até a voz acabar. Kurara morreu mesmo assim, e Nienan nunca mais rezou. Uma tosse que não passava matou sete pessoas em Ruar.
 
 ### Ano 225
 
-Sem lugar e sem comida, Linali e os seus atravessaram a borda do mundo. Ninguém soube deles.
+A Guerra Santa da Praia esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 226
 
-Dapeali, a pacífica, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia.
+Nios, que guiava Ruar, morreu dormindo, aos 55 anos. Dateya partiu com duas pessoas para além da borda do mundo. Nunca voltaram. No inverno, em nome da Chama de Cima, Zetean proibiu casamentos e trocas com Saes. Era vontade de Zetean, não do deus.
 
 ### Ano 227
 
-A doença entrou em Nuor e matou três pessoas. Desde a febre, Nuor não enterra mais ninguém: os mortos vão para o fogo. Em Niar, Dapeik pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Niar deu graças à Estrela de Cauda. O deus nada fez: o crédito era de graça.
+Tozean, que guiava Ruar, morreu de velhice aos 69 anos. Foi quem proibiu, em nome do deus, o trato com Daur. Daur atacou Saes no morro. Saes resistiu, e Daur voltou de mãos vazias. Isor, Zetean e Petela morreram na luta. Começou a Segunda Guerra Santa: em nome da Chama de Cima, Daur pegou em lanças contra Saes. Daur e Saes, cansados de enterrar os seus, fizeram as pazes no morro. Depois de duas batalhas e cinco mortos, a Segunda Guerra Santa terminou em paz.
 
 ### Ano 228
 
-Nuya disse ter ouvido o deus de outro jeito: não era «o Pai das Águas», era «o Que Nega». Nuor acreditou, e o deus mudou de nome.
+Na primavera, Vedaela disse ter ouvido o deus de outro jeito: não era «a Mãe de Dois», era «a Terra Brava». Saes acreditou, e o deus mudou de nome.
 
 ### Ano 229
 
-Niraor partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Nitona deu à luz gêmeos, Kuros e Daenor. Uns viram bênção; outros, mau sinal. Em Linor, cada um passou a cercar o que tinha. Toraos implorou pela filha. Rana morreu, e daquele dia em diante Toraos cuspia no chão quando falavam da Luz Que Avisa.
+Na primavera do ano 229, Raya, que guiava Ruar, morreu de repente, aos 42 anos. Morreu Zedaya, que falava pelo Senhor das Lanças em Niar, aos 48 anos. Foi quem proibiu, em nome do deus, o trato com Daur.
 
 ### Ano 230
 
-Morreu Kurdana, que guiava Nuor, aos 63 anos. Nos anos 221 a 230 houve vinte fomes e 31 preces que pareceram atendidas; nasceram 118 crianças e morreram 70 pessoas. No fim do ano 230, 246 pessoas viviam no mundo: Ruar (104), Niar (67), Nuor (32) e Linor (43).
+Nos anos 221 a 230 houve três secas, catorze fomes, três batalhas, 29 preces que pareceram atendidas e oito preces sem resposta; nasceram 156 crianças e morreram 119 pessoas. No fim do ano 230, 257 pessoas viviam no mundo: Ruar (106), Niar (77), Daur (31) e Saes (43).
 
 ### Ano 231
 
-Todaur, que guiava Niar, morreu dormindo, aos 67 anos. Nunca perdoou o deus pela morte de Arik. Niar escolheu Tekurya para guiar o grupo. Dapeik queria o lugar e nunca perdoou. De novo a chuva sumiu, como no ano 194. Foram 20 dias de seca. Depois da seca, Linor jurou nunca desperdiçar água. A forja de Niar não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Entela, que guiava Ruar, morreu de velhice aos 59 anos. Ruar escolheu Linteya para guiar o grupo. Datean queria o lugar e nunca perdoou.
 
 ### Ano 232
 
-Em Niar, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Em Linor, já ninguém sabia cortar pedra. O que fora feito começou a ruir. O frio levou Raenur, que falava pela Luz Que Avisa em Ruar. Ruar passou fome no inverno por 9 dias, e catorze pessoas morreram. Lilios passou dias nas ruínas de Aron e voltou sabendo cortar pedra.
+Na primavera do ano 232, Saes escolheu Teara para guiar o grupo. Linur queria o lugar e nunca perdoou. Ruar passou fome no inverno por 9 dias, e duas pessoas morreram. Datean tinha rezado: «Sombra, dá-nos o que comer.» A fome passou, e Ruar viu nisso obra da Sombra. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Ruar, ficou escrito que foi a Sombra. Nienan morreu de frio. Desde a morte de Arruor, nunca mais tinha rezado. A fome no inverno durou 9 dias em Niar e levou quatro vidas.
 
-### Ano 233
-
-No outono, nas ruínas de Nidar, Lilios achou o que eles sabiam: aprendeu a cortar pedra. Nas ruínas de Enur, Lilios achou o que eles sabiam: aprendeu a cortar pedra.
+*O ano 233 foi calmo.*
 
 ### Ano 234
 
-Na primavera, Loya disse ter ouvido o deus de outro jeito: não era «a Luz Que Avisa», era «o Que Leva». Ruar acreditou, e o deus mudou de nome. No verão, Enan rezou por Arzena até a voz acabar. Arzena morreu mesmo assim, e Enan nunca mais rezou. Uma tosse que não passava matou cinco pessoas em Ruar. No outono, nas ruínas de Aron, Lilios achou o que eles sabiam: aprendeu a cortar pedra.
+Na primavera, morreu Linik, que falava pela Terra Brava em Saes, aos 73 anos. No verão, em Saes, Nitoya tomou para si o cuidado das preces à Terra Brava.
 
 ### Ano 235
 
-Nas ruínas de Aron, Lilios achou o que eles sabiam: aprendeu a cortar pedra. Linor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+No verão, de novo o sol se apagou no meio do dia.
 
-*No ano 236, nada de notável aconteceu.*
+### Ano 236
+
+Na primavera, Zelinor, que guiava Niar, morreu de velhice aos 62 anos.
 
 ### Ano 237
 
-Niya tinha rezado: «Estrela de Cauda, não nos deixes secar.» Quando a chuva voltou, Niar agradeceu à Estrela de Cauda. A crônica sabe que foi acaso.
+Na primavera do ano 237, Peor, que guiava Daur, morreu de repente, aos 36 anos. Sem lugar e sem comida, Zezeor e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. De novo a chuva sumiu, como no ano 223. Foram 22 dias de seca.
 
 ### Ano 238
 
-Na primavera do ano 238, Teor, que guiava Niar, morreu de velhice aos 52 anos. Sem lugar e sem comida, Dan e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 12 dias de fome por causa da seca em Nuor, com dois mortos. Um inverno duro matou duas pessoas de frio.
+Foram 9 dias de fome no inverno em Ruar, com vinte mortos.
 
 *No ano 239, nada de notável aconteceu.*
 
 ### Ano 240
 
-Na primavera, Nuaror, que guiava Nuor, morreu de velhice aos 58 anos. Nos anos 231 a 240 houve três secas, dez fomes, 27 preces que pareceram atendidas e oito preces sem resposta; nasceram 91 crianças e morreram 180 pessoas. No fim do ano 240, 156 pessoas viviam no mundo: Ruar (98), Niar (15), Nuor (35) e Linor (8).
+No verão, Teniya rezou por Ruara até a voz acabar. Ruara morreu mesmo assim, e Teniya nunca mais rezou. Nos anos 231 a 240 houve três secas, dez fomes e 21 preces que pareceram atendidas; nasceram 129 crianças e morreram 153 pessoas. No fim do ano 240, 229 pessoas viviam no mundo: Ruar (84), Niar (71), Daur (30) e Saes (44).
 
 ### Ano 241
 
-Na primavera do ano 241, morreu Enan, o pacífico, aos 63 anos. Nunca perdoou o deus pela morte de Arzena.
+Nizena tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ruar deu graças à Sombra. O deus nada fez: o crédito era de graça. Os escribas de Ruar registraram o milagre. Daur passou fome por causa da seca por 20 dias, e quatro pessoas morreram.
 
 ### Ano 242
 
-Na primavera do ano 242, Linor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Na primavera do ano 242, em Daur, gritaram que o templo mentia em nome da Chama de Cima. Os sacerdotes foram tirados do poder. No verão, Raur rezou por Runa até a voz acabar. Runa morreu mesmo assim, e Raur nunca mais rezou. No inverno, Teara, que guiava Saes, morreu de fome.
 
 ### Ano 243
 
-Na primavera do ano 243, Ruor, que guiava Ruar, morreu dormindo, aos 64 anos. Buor, que guiava Nuor, morreu de velhice aos 66 anos. Em Niar, Saik começou a pregar que o deus não era «a Estrela de Cauda». Era «o Que Ergue». Em poucos anos, todos rezavam assim. Nios passou a guiar Nuor, mas Demnuela não aceitou e guardou rancor.
+Sem lugar e sem comida, Gar e os seus atravessaram a borda do mundo. Ninguém soube deles. Foram 9 dias de fome no inverno em Saes, com quinze mortos.
 
-### Ano 244
-
-Na primavera do ano 244, Lilios, o generoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
-
-### Ano 245
-
-Zeor, que guiava Ruar, morreu dormindo, aos 45 anos. Uma tosse que não passava matou quatro pessoas em Ruar.
-
-### Ano 246
-
-Ardaos tinha rezado: «Que Nega, dá-nos o que comer.» A fome passou, e Nuor viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer?
-
-### Ano 247
-
-No verão do ano 247, houve luta na floresta: Nuor atacou Niar. Nuor venceu e levou a comida guardada. Daarik morreu na luta. No outono, os de Nuor caíram sobre Linor no morro. Nuor venceu e levou a comida guardada. Na luta morreu Lina.
+*Os anos 244 a 247 passaram em paz.*
 
 ### Ano 248
 
-Começou a Guerra do Morro: o rancor entre Nuor e Linor virou guerra. Nuor venceu Linor e levou os sete sobreviventes para viver sob seu mando. Linor deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra do Morro terminou com a conquista: um ano, duas batalhas e dois mortos. Diante das ruínas de Linor, Ruar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No inverno, Demnuela não podia mais viver perto de Nios. Saiu de Nuor com oito pessoas e fundou Toar no morro.
+Na primavera do ano 248, em Daur, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «a Chama de Cima».
 
 ### Ano 249
 
-Na primavera, Toar encontrou as ruínas de Nidar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No verão, as ruínas de Teor viraram aviso em Toar: era o que o deus fazia com quem o desagradava. No inverno, em Toar, Lonur tomou para si o cuidado das preces ao Que Nega.
+Na primavera, Datean, que falava pela Sombra em Ruar, morreu dormindo, aos 65 anos. Sem lugar e sem comida, Rakura e os seus atravessaram a borda do mundo. Ninguém soube deles. Raur implorou pelo filho. Enur morreu, e daquele dia em diante Raur cuspia no chão quando falavam da Sombra. Uma febre correu Ruar e levou nove vidas.
 
 ### Ano 250
 
-Ruos, de Ruar, tomou por esposa Radaela, de Toar, e os dois povos passaram a se visitar. Raaran partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Nasceu Mona, a primeira de Toar. No inverno, a guerra entre Nuor e Niar continuou: Nuor voltou a atacar na floresta. Niar expulsou os atacantes. Ardaos morreu na luta. Demnuela deu à luz gêmeos, Dar e Gomos. Uns viram bênção; outros, mau sinal. Nos anos 241 a 250 houve dez fomes, quatro batalhas, 24 preces que pareceram atendidas e três preces sem resposta; nasceram 66 crianças e morreram 66 pessoas. No fim do ano 250, 156 pessoas viviam no mundo: Ruar (90), Niar (22), Nuor (34) e Toar (10).
+Kurdan tinha rezado: «Sombra, dá-nos o que comer.» A comida voltou, e Ruar deu graças à Sombra. O deus não tinha feito nada. Os escribas de Ruar registraram o milagre. Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Nos anos 241 a 250 houve catorze fomes, vinte preces que pareceram atendidas e quatro preces sem resposta; nasceram 140 crianças e morreram 88 pessoas. No fim do ano 250, 272 pessoas viviam no mundo: Ruar (101), Niar (78), Daur (38) e Saes (55).
 
-### Ano 251
-
-Lilios, o generoso, morreu dormindo, aos 46 anos. Começou a Guerra da Floresta: o rancor entre Nuor e Niar virou guerra. Nuor e Niar, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de um ano, três batalhas e quatro mortos, a Guerra da Floresta terminou em paz. Depois da derrota, Toar não existia mais: os sete que sobraram foram levados para Nuor.
+*O ano 251 foi calmo.*
 
 ### Ano 252
 
-Na primavera, Teniali, que falava pelo Que Ergue em Niar, morreu de velhice aos 64 anos. Em Niar, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 199, só a crônica guarda.
+Foram 9 dias de fome no inverno em Niar, com três mortos. Saes passou fome no inverno por 9 dias, e sete pessoas morreram.
 
 ### Ano 253
 
-No outono do ano 253, Daur, o devoto, descobriu como empilhar pedras cortadas sem que caíssem. No inverno, Nuor já não cabia na praia. Niniela, a desconfiada, levou catorze pessoas para o morro e fundou Lour. De novo a chuva sumiu, como no ano 231. Foram 22 dias de seca. As ruínas de Enak viraram aviso em Lour: era o que o deus fazia com quem o desagradava. Houve luta na floresta: Ruar atacou Niar em nome do Que Leva. Niar foi derrotado e perdeu o que tinha guardado. Zelinik, Dadali e Dateik morreram na luta.
+Vedaela, que falava pela Terra Brava em Saes, morreu dormindo, aos 52 anos.
 
 ### Ano 254
 
-Em Lour, Toenan tomou para si o cuidado das preces ao Que Nega. A fome no inverno durou 8 dias em Lour e levou quatro vidas. Desde então, Lour chama o morro de Morro da Fome. Nuor passou fome por causa da seca por 18 dias, e cinco pessoas morreram. Nasceu Tear, o primeiro de Lour.
+Linteya, que guiava Ruar, morreu de velhice aos 60 anos. Satena, que falava pelo Senhor das Lanças em Niar, morreu dormindo, aos 62 anos. No inverno, um raio caiu no lago durante a tempestade e matou Zea. A família de Zea nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Ruar sai de casa. Lembram de Zea.
 
 ### Ano 255
 
-Na primavera, morreu Linya, que guiava Nuor, aos 57 anos. Niar passou a receber bem os de fora: um casamento com outro povo virava festa.
+Tean, que guiava Niar, morreu de velhice aos 64 anos. Na guerra, tinha tirado duas vidas. Niar escolheu Teur para guiar o grupo. Saik queria o lugar e nunca perdoou.
 
 ### Ano 256
 
-Na primavera do ano 256, em Lour, os jovens deixaram de lado o cuidado com a água. Era coisa de outro povo, diziam. Rana deu à luz gêmeos, Dadaya e Ratos. Uns viram bênção; outros, mau sinal. Saik tinha rezado: «Que Ergue, que a chuva volte.» Quando a chuva voltou, Niar agradeceu ao Que Ergue. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 256, sem lugar e sem comida, Enniela e os seus atravessaram a borda do mundo. Ninguém soube deles.
 
-*No ano 257, nada de notável aconteceu.*
+### Ano 257
+
+No outono, Ruos rezou por Teenan até a voz acabar. Teenan morreu mesmo assim, e Ruos nunca mais rezou.
 
 ### Ano 258
 
-Teia, que guiava Ruar, morreu dormindo, aos 52 anos. Radaos passou a guiar Ruar, mas Arniela não aceitou e guardou rancor. Danior implorou pelo filho. Tozeos morreu, e daquele dia em diante Danior cuspia no chão quando falavam do Que Leva. Uma tosse que não passava matou quatro pessoas em Ruar. No inverno, Tonior, o ambicioso, não resistiu à fome.
+Na primavera do ano 258, morreu Nizena, que guiava Ruar, aos 63 anos. A seca voltou, como no ano 237: 23 dias sem chuva, até que o céu se abriu. Depois da seca, Daur jurou nunca desperdiçar água.
 
 ### Ano 259
 
-Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Depois disso, Niar deixou de chamar o deus de «o Que Ergue» e passou a chamá-lo de «o Que Leva». Kurzeur, que falava pelo Que Leva em Ruar, morreu de febre aos 60 anos. A febre levou Deman, que guiava Nuor. Na guerra, tinha tirado duas vidas. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Nuor perdeu o saber.
+Na primavera, Tedan disse ter ouvido o deus de outro jeito: não era «o Senhor das Lanças», era «o Que Acende o Céu». Niar acreditou, e o deus mudou de nome. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Daur perdeu o saber. O frio levou Dapeik, que falava pelo Que Acende o Céu em Niar. Kurdan tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Sombra. Foi só o tempo, mas quem iria dizer? Os escribas de Ruar registraram o milagre. Foram 24 dias de fome por causa da seca em Daur, com 36 mortos.
 
 ### Ano 260
 
-Em Nuor, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 92, só a crônica guarda. Nos anos 251 a 260 houve cinco secas, onze fomes, quatro batalhas, 28 preces que pareceram atendidas e doze preces sem resposta; nasceram 87 crianças e morreram 145 pessoas. No fim do ano 260, 96 pessoas viviam no mundo: Ruar (47), Niar (26), Nuor (13) e Lour (10).
+Morreu o último que tinha visto o ano 192. Em Daur, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Sadaya deu à luz gêmeos, Toan e Pedaor. Uns viram bênção; outros, mau sinal. Pedaya, que falava pela Terra Brava em Saes, deu à luz e não sobreviveu ao parto. Nos anos 251 a 260 houve duas secas, dezenove fomes e dezoito preces que pareceram atendidas; nasceram 109 crianças e morreram 172 pessoas. No fim do ano 260, 206 pessoas viviam no mundo: Ruar (97), Niar (65), Daur (4) e Saes (40).
 
 ### Ano 261
 
-Na primavera, Toaror, de Lour, tomou por esposa Tozena, de Niar, e os dois povos passaram a se visitar.
+Na primavera, Kurdan, que guiava Ruar, morreu dormindo, aos 66 anos. Nienur implorou pelo filho. Tearur morreu, e daquele dia em diante Nienur cuspia no chão quando falavam da Sombra. A doença entrou em Ruar e matou três pessoas.
 
 ### Ano 262
 
-Na primavera, Toenan, que falava pelo Que Nega em Lour, morreu dormindo, aos 45 anos. Desde a morte de Tear, nunca mais tinha rezado. Rateos, de Ruar, casou-se com Niniela e mudou-se para Lour, coisa que ninguém tinha feito antes. No verão, Lour passou a receber bem os de fora: um casamento com outro povo virava festa. A tempestade trouxe raios para o lago. Um deles acertou Toruos. Em Ruar, disseram que era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Ruar sai de casa. Lembram de Toruos.
+Foram 9 dias de fome no inverno em Ruar, com cinco mortos. O frio levou Rara, que guiava Ruar. Uma febre correu Ruar e levou sete vidas. No verão, Gana deu à luz gêmeos, Isor e Gaor. Uns viram bênção; outros, mau sinal.
 
 *O ano 263 foi calmo.*
 
 ### Ano 264
 
-Ninguém lembrava mais a razão, e Niar abandonou a festa da chuva.
+Na primavera, Lindan, que guiava Saes, morreu dormindo, aos 62 anos. Saur passou a guiar Saes, mas Zelinan não aceitou e guardou rancor. A doença entrou em Saes e matou onze pessoas. Desde a febre, Saes não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 265
 
-Na primavera do ano 265, Nia, que falava pelo Que Nega em Nuor, morreu de repente, aos 26 anos. No inverno, Niar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Na primavera do ano 265, Tedaela, que falava pela Terra Brava em Saes, morreu de repente, aos 43 anos.
 
-### Ano 266
-
-A terra tremeu. Caíram catorze cabanas. Zekurur, Torana, Nitoya e Peteali morreram sob os escombros.
+*No ano 266, nada de notável aconteceu.*
 
 ### Ano 267
 
-Em Niar, Dali pediu: «Que Leva, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Niar duvidou de que o Que Leva tinha ouvido. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Niar: todo ano, celebram a chuva que o Que Leva mandou.
+A seca voltou, como no ano 258: 23 dias sem chuva, até que o céu se abriu.
 
 ### Ano 268
 
-Na primavera, Nitona, que guiava Ruar, morreu de velhice aos 65 anos. Niniela, que fundou Lour e o guiava, morreu de velhice aos 50 anos. Tinha fundado Lour.
+Saarali, que falava pelo Que Acende o Céu em Niar, morreu dormindo, aos 67 anos. Kurteos rezou por Zeenela até a voz acabar. Zeenela morreu mesmo assim, e Kurteos nunca mais rezou. Kurteos tinha rezado: «Sombra, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra da Sombra. Foi só o tempo, mas quem iria dizer? Os escribas de Ruar registraram o milagre. Foram 9 dias de fome no inverno em Niar, com três mortos.
 
-*No ano 269, nada de notável aconteceu.*
+### Ano 269
+
+Na primavera, em Niar, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos.
 
 ### Ano 270
 
-Nos anos 261 a 270 houve duas secas, duas fomes e dezesseis preces que pareceram atendidas; nasceram 85 crianças e morreram 32 pessoas. No fim do ano 270, 149 pessoas viviam no mundo: Ruar (84), Niar (26), Nuor (20) e Lour (19).
+Kurteos, que guiava Ruar, morreu dormindo, aos 63 anos. Nunca perdoou o deus pela morte de Zeenela. No verão, de novo o sol se apagou no meio do dia. No outono, Niar atacou Daur na praia. Niar venceu e levou a comida guardada. Na luta morreu Gana. Niar e Daur, cansados de enterrar os seus, fizeram as pazes na praia. Nos anos 261 a 270 houve cinco secas, dez fomes, 21 preces que pareceram atendidas e cinco preces sem resposta; nasceram 133 crianças e morreram 125 pessoas. No fim do ano 270, 215 pessoas viviam no mundo: Ruar (84), Niar (71), Daur (12) e Saes (48).
 
-*Os anos 271 a 272 passaram em paz.*
+### Ano 271
 
-### Ano 273
+No verão do ano 271, a febre levou Nipeur, que falava pelo Que Acende o Céu em Niar. Uma tosse que não passava matou nove pessoas em Niar.
 
-No outono do ano 273, Tozena deu à luz gêmeos, Doe e Demteya. Uns viram bênção; outros, mau sinal.
+### Ano 272
 
-*Entre os anos 274 e 277, nada mudou o rumo do mundo.*
+Tedan implorou pela filha. Tearela morreu, e daquele dia em diante Tedan cuspia no chão quando falavam do Que Acende o Céu. Apareceu no céu uma luz com rabo, que ficou 13 noites e sumiu.
+
+*O ano 273 foi calmo.*
+
+### Ano 274
+
+Na primavera do ano 274, com Lingar à frente, Daur largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido.
+
+### Ano 275
+
+Na primavera do ano 275, Ruela, a ambiciosa, morreu dormindo, aos 63 anos.
+
+### Ano 276
+
+O inverno foi de gelo: duas pessoas morreram de frio.
+
+### Ano 277
+
+Em Ruar, Kurteor pediu: «Sombra, dá-nos o que comer.» A fome passou, e Ruar viu nisso obra da Sombra. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Ruar, ficou escrito que foi a Sombra. Niar passou fome no inverno por 9 dias, e quatro pessoas morreram. O inverno foi de gelo: dezenove pessoas morreram de frio.
 
 ### Ano 278
 
-Na primavera, Saik, que falava pelo Que Leva em Niar, morreu dormindo, aos 66 anos. Nunca perdoou o deus pela morte de Ardaela. Morreu o último que tinha visto o ano 208. Em Niar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
+No inverno do ano 278, de novo o sol se apagou no meio do dia. De novo a chuva sumiu, como no ano 267. Foram 26 dias de seca. Houve luta na praia: Saes atacou Daur. Saes venceu e levou a comida guardada. Na luta morreram Lingar e Gaor.
 
 ### Ano 279
 
-Na primavera do ano 279, Dali, que guiava Niar, morreu de velhice aos 45 anos. Uma tosse que não passava matou três pessoas em Ruar.
+No verão do ano 279, Toali deu à luz gêmeos, Pedaik e Linteur. Uns viram bênção; outros, mau sinal.
 
 ### Ano 280
 
-Na primavera do ano 280, apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu. Para Nuor, o deus já não era «o Que Nega»: passou a ser «a Estrela de Cauda». Em Lour, Budaur pediu: «Que Nega, não leves Naela.» Os doentes se levantaram. Em Lour, o crédito foi do Que Nega. O deus não tinha feito nada. Nos anos 271 a 280 houve quinze preces que pareceram atendidas; nasceram 112 crianças e morreram 40 pessoas. No fim do ano 280, 222 pessoas viviam no mundo: Ruar (96), Niar (52), Nuor (26) e Lour (48).
+Na primavera, sem lugar e sem comida, Raor e os seus atravessaram a borda do mundo. Ninguém soube deles. Nos anos 271 a 280 houve quatro secas, dezoito fomes, 23 preces que pareceram atendidas e três preces sem resposta; nasceram 102 crianças e morreram 96 pessoas. No fim do ano 280, 219 pessoas viviam no mundo: Ruar (94), Niar (72), Daur (6) e Saes (47).
 
-### Ano 281
-
-Na primavera, morreu Zeraos, o generoso, aos 67 anos. Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito. De novo a chuva sumiu, como no ano 253. Foram 23 dias de seca. Daaror, que falava pelo Que Leva em Ruar, morreu de fome.
+*O ano 281 passou sem nada que a crônica precise guardar.*
 
 ### Ano 282
 
-Ruar passou fome no inverno por 9 dias, e quinze pessoas morreram.
+Na primavera, Niar deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
 
 ### Ano 283
 
-Na primavera, Dazeur, que guiava Ruar, morreu dormindo, aos 61 anos.
+Na primavera do ano 283, em Ruar, Nikurur começou a pregar que o deus não era «a Sombra». Era «o Que Dá». Em poucos anos, todos rezavam assim. No inverno, de novo o sol se apagou no meio do dia.
 
-### Ano 284
-
-Com Daor à frente, Niar largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido. Em Nuor, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 227, só a crônica guarda. A fome por causa da seca durou 24 dias em Nuor e levou catorze vidas.
+*O ano 284 foi calmo.*
 
 ### Ano 285
 
-Ruan disse ter ouvido o deus de outro jeito: não era «o Que Leva», era «o Sedento». Ruar acreditou, e o deus mudou de nome. Lour deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos.
+No verão, os de Saes caíram sobre Daur na praia. Daur foi derrotado e perdeu o que tinha guardado. Toara morreu na luta.
 
 ### Ano 286
 
-Na primavera do ano 286, Buos, que falava pela Estrela de Cauda em Nuor, morreu de repente, aos 43 anos. Niar passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Ardana partiu com nove pessoas para além da borda do mundo. Nunca voltaram. Depois da seca, Lour jurou nunca desperdiçar água.
+Aran tinha rezado: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra do Que Dá. O deus nada fez: o crédito era de graça. Nas tabuletas de Ruar, ficou escrito que foi o Que Dá.
 
 ### Ano 287
 
-Niaros, que guiava Ruar, morreu dormindo, aos 66 anos. Nubuela partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Tedana partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Niar passou fome por causa da seca por 21 dias, e onze pessoas morreram.
+Kurur, o corajoso, morreu dormindo, aos 68 anos. Desde a morte de Raenur, nunca mais tinha rezado. Começou a Segunda Guerra da Fome: Saes, com fome, foi buscar à força a comida de Daur. A Segunda Guerra da Fome seguiu: Saes contra Daur, na praia. Saes venceu e levou a comida guardada. Isor, Isur e Pena morreram na luta. No outono, depois da derrota, Daur não existia mais: os sete que sobraram foram levados para Saes. A Segunda Guerra da Fome terminou com a conquista: dois anos, três batalhas e cinco mortos.
 
-*Entre os anos 288 e 289, nada mudou o rumo do mundo.*
+### Ano 288
+
+Morreu Pedaur, que guiava Niar, aos 62 anos. Zeis, a pacífica, cansou de dividir pouca comida. Partiu com dezoito pessoas para a praia e ali fundou Dail. Diante das ruínas de Enak, Dail disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, em Dail, Linzeur tomou para si o cuidado das preces à Terra Brava. As ruínas de Arur viraram aviso em Dail: era o que o deus fazia com quem o desagradava.
+
+### Ano 289
+
+Na primavera do ano 289, Lintean, o pacífico, morreu de velhice aos 68 anos. Com lanças e promessas, Tesan acabou com o conselho de Saes e passou a mandar sozinho. Datela, de Dail, casou-se com Rur e foi viver em Ruar. Foi o primeiro laço entre os dois povos. Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Peteur leu e aprendeu: o saber não se perdeu. Morreu o último que sabia escrever, e ninguém tinha aprendido. Dail perdeu o saber.
 
 ### Ano 290
 
-Em Niar, Linor pediu: «Manda água, Que Leva, que as crianças têm sede.» Quando a chuva voltou, Niar agradeceu ao Que Leva. Foi só o tempo, mas quem iria dizer? No inverno, Zela rezou por Toan até a voz acabar. Toan morreu mesmo assim, e Zela nunca mais rezou. Nos anos 281 a 290 houve quatro secas, treze fomes, 23 preces que pareceram atendidas e seis preces sem resposta; nasceram 143 crianças e morreram 135 pessoas. No fim do ano 290, 216 pessoas viviam no mundo: Ruar (91), Niar (56), Nuor (28) e Lour (41).
+Na primavera do ano 290, Dadan, que falava pelo Que Acende o Céu em Niar, morreu de velhice aos 66 anos. Desde a morte de Tean, nunca mais tinha rezado. Niar passou fome no inverno por 14 dias, e quatro pessoas morreram. Depois disso, Dail deixou de chamar o deus de «a Terra Brava» e passou a chamá-lo de «o Que Risca o Céu». No outono, houve luta na praia: Saes atacou Dail. Dail foi derrotado e perdeu o que tinha guardado. Peteur, Daela e Zetela morreram na luta. Para Dail, a praia virou Praia do Luto. Nos anos 281 a 290 houve duas secas, dezenove fomes, quatro batalhas, 21 preces que pareceram atendidas e quatro preces sem resposta; nasceram 125 crianças e morreram 104 pessoas. No fim do ano 290, 240 pessoas viviam no mundo: Ruar (99), Niar (79), Saes (52) e Dail (10).
 
 ### Ano 291
 
-Na primavera, Enela, que guiava Ruar, morreu dormindo, aos 59 anos. No outono, a tempestade trouxe raios para o morro. Um deles acertou Tour. Ninguém em Lour teve dúvida: era castigo.
+Sem lugar e sem comida, Datoela e os seus atravessaram a borda do mundo. Ninguém soube deles. Kura partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Foram 8 dias de fome no inverno em Ruar, com dois mortos. A seca voltou, como no ano 278: 21 dias sem chuva, até que o céu se abriu. Linzeur tinha rezado: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Dail agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça.
 
 ### Ano 292
 
-No outono, Nuor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Pean, de Dail, tomou por esposa Linela, de Niar, e os dois povos passaram a se visitar. No outono, começou a Guerra dos Irmãos: Saes e Dail, nascidos do mesmo povo, viraram inimigos. Na Guerra dos Irmãos, Saes atacou Dail na praia. Saes venceu e levou a comida guardada. Linzeur, Zeis e Pean morreram na luta. O inverno foi de gelo: oito pessoas morreram de frio. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Dail perdeu o saber.
 
 ### Ano 293
 
-Na primavera do ano 293, com Daor à frente, Niar largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido.
+Na primavera, Kurteor, o rancoroso, morreu dormindo, aos 54 anos. Em Saes, Pepean começou a pregar que o deus não era «a Terra Brava». Era «o Que Queima». Em poucos anos, todos rezavam assim. No outono, depois de tantos mortos, Saes e Dail se encontraram na praia e juraram paz. Depois de três anos, três batalhas e sete mortos, a Guerra dos Irmãos terminou em paz. Saes saiu dela mais forte. Em Dail, já ninguém sabia cortar pedra. O que fora feito começou a ruir.
 
 ### Ano 294
 
-No inverno do ano 294, Linor implorou pelo filho. Sapeur morreu, e daquele dia em diante Linor cuspia no chão quando falavam do Que Leva.
+Dail acabou: Dasaur e Veur foram viver em Ruar. Ruar encontrou as ruínas de Dail. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 295
 
-Niar passou fome no inverno por 5 dias, e duas pessoas morreram. No inverno, Ruteya, a devota, inventou marcas que guardavam palavras. Uma tosse que não passava matou quatro pessoas em Niar. Daor, que guiava Niar, não resistiu à fome. Zeali passou a guiar Niar, mas Toik não aceitou e guardou rancor.
+Morreu Tetena, que guiava Ruar, aos 64 anos.
 
 ### Ano 296
 
-Na primavera, Kurraela partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Foram 9 dias de fome no inverno em Niar, com 28 mortos. Foram 9 dias de fome no inverno em Nuor, com quatro mortos.
+Teor não podia mais viver perto de Tesan. Saiu de Saes com treze pessoas e fundou Zean na praia. Em Zean, Veya tomou para si o cuidado das preces ao Que Queima. As ruínas de Enak viraram aviso em Zean: era o que o deus fazia com quem o desagradava.
 
 ### Ano 297
 
-No outono do ano 297, Dateya deu à luz gêmeos, Zeik e Linur. Uns viram bênção; outros, mau sinal. Em Nuor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles.
+Na primavera do ano 297, Zetos, que guiava Ruar, morreu dormindo, aos 55 anos. Veya anunciou que o Que Queima proibia qualquer trato com Saes. O deus nunca disse isso, mas Zean obedeceu. Ruar escolheu Zeena para guiar o grupo. Zeteos queria o lugar e nunca perdoou. Diante das ruínas de Dail, Zean disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Em Zean nasceu a primeira criança: Sela, filha de Vezela e Selur.
 
-*O ano 298 passou sem nada que a crônica precise guardar.*
+### Ano 298
+
+Zean atacou Saes no morro em nome do Que Queima. Saes resistiu, e Zean voltou de mãos vazias. Na luta morreram Raela e Esur. Desde então, Zean chama o morro de Morro do Luto.
 
 ### Ano 299
 
-Daya tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ruar deu graças ao Sedento. O deus não tinha feito nada. Nas tabuletas de Ruar, ficou escrito que foi o Sedento.
+No verão, começou a Terceira Guerra Santa: em nome do Que Queima, Zean pegou em lanças contra Saes. A Terceira Guerra Santa seguiu: Zean contra Saes, no morro em nome do Que Queima. Zean venceu e levou a comida guardada. Na luta morreram Petean e Saya. A Terceira Guerra Santa seguiu: Saes contra Zean, na praia. Saes venceu e levou a comida guardada. Vezela e Teor morreram na luta. Para Zean, a praia virou Praia do Luto.
 
 ### Ano 300
 
-Ninguém lembrava mais a razão, e Niar abandonou o costume de queimar os mortos. No inverno, Ruar atacou Niar na floresta em nome do Sedento. Ruar venceu e levou a comida guardada. Nina morreu na luta. Nos anos 291 a 300 houve dezoito fomes e vinte preces que pareceram atendidas; nasceram 165 crianças e morreram 117 pessoas. No fim do ano 300, 262 pessoas viviam no mundo: Ruar (108), Niar (70), Nuor (33) e Lour (51).
+Na primavera, Sana, que guiava Niar, morreu dormindo, aos 58 anos. Morreu Selur, o medroso, aos 55 anos. Saor, de Niar, casou-se com Veya e mudou-se para Zean, coisa que ninguém tinha feito antes. Esdaela tinha rezado: «Que Dá, não deixes nossos filhos morrerem de fome.» A fome passou, e Ruar viu nisso obra do Que Dá. O deus não tinha feito nada. Nas tabuletas de Ruar, ficou escrito que foi o Que Dá. Em nome do Que Dá, Zean proibiu casamentos e trocas com Zean. Era vontade de Zean, não do deus. Nos anos 291 a 300 houve três secas, dezessete fomes, seis batalhas, 23 preces que pareceram atendidas e cinco preces sem resposta; nasceram 118 crianças e morreram 99 pessoas. No fim do ano 300, 251 pessoas viviam no mundo: Ruar (115), Niar (82), Saes (41) e Zean (13).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Ruar** vive no lago, com 108 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Sedento»; costumes: treina os jovens com lanças (desde o ano 88); queima os mortos (desde o ano 91); guarda tanta comida para o inverno (desde o ano 92); não desperdiça uma gota d'água (desde o ano 163); não sai de casa em dia de tempestade (desde o ano 262).
-- **Niar** vive na floresta, com 70 pessoas, e trabalha o metal; nasceu de uma migração em Ruar no ano 41; chama o deus de «o Que Leva»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 267).
-- **Nuor** vive na praia, com 33 pessoas, e escreve; nasceu de uma migração em Ruar no ano 153; chama o deus de «a Estrela de Cauda»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 251).
-- **Lour** vive no morro, com 51 pessoas, com canais e moinhos; nasceu de uma migração em Nuor no ano 253; não reza a ninguém; costumes: guarda tanta comida para o inverno (desde o ano 92); faz a festa da chuva (desde o ano 153); não sai de casa em dia de tempestade (desde o ano 162); queima os mortos (desde o ano 227); treina os jovens com lanças (desde o ano 251); não desperdiça uma gota d'água (desde o ano 286).
+- **Ruar** vive no lago, com 115 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Que Dá»; costumes: treina os jovens com lanças (desde o ano 88); queima os mortos (desde o ano 91); guarda tanta comida para o inverno (desde o ano 92); não sai de casa em dia de tempestade (desde o ano 254).
+- **Niar** vive na floresta, com 82 pessoas, com canais e moinhos; nasceu de uma migração em Ruar no ano 41; não reza a ninguém; costumes: guarda tanta comida para o inverno (a origem foi esquecida); faz a festa da chuva (desde o ano 109); treina os jovens com lanças (desde o ano 151); queima os mortos (desde o ano 174).
+- **Saes** vive no morro, com 41 pessoas, com canais e moinhos; nasceu de uma migração em Niar no ano 190; chama o deus de «o Que Queima»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 204); faz a festa da chuva (desde o ano 206); treina os jovens com lanças (desde o ano 208); queima os mortos (desde o ano 264).
+- **Zean** vive na praia, com 13 pessoas, e escreve; nasceu de uma briga em Saes no ano 296; chama o deus de «o Que Queima»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 204); faz a festa da chuva (desde o ano 206); treina os jovens com lanças (desde o ano 208); queima os mortos (desde o ano 264).
 
-Povos que deixaram de existir: Zeil, Enak, Ruor, Teor, Nidar, Aron, Enur, Linor e Toar.
+Povos que deixaram de existir: Zeil, Enak, Nion, Arur, Daur e Dail.
 
-Lugares com nome: Praia da Fome (praia, para Zeil), Praia da Vitória (praia, para Enak), Praia da Trégua (praia, para Niar), Praia do Luto (praia, para Ruor), Praia da Vitória (praia, para Ruar), Praia do Luto (praia, para Teor), Praia da Vitória (praia, para Aron), Praia do Raio (praia, para Nuor), Lago do Raio (lago, para Ruar), Lago da Vitória (lago, para Zeil), Lago do Luto (lago, para Niar), Lago da Vitória (lago, para Enak), Lago do Luto (lago, para Teor), Floresta da Fome (floresta, para Niar), Floresta do Luto (floresta, para Ruor), Floresta da Vitória (floresta, para Ruar), Floresta do Luto (floresta, para Aron), Floresta do Luto (floresta, para Nuor), Morro da Vitória (morro, para Enak), Morro do Luto (morro, para Zeil), Morro da Vitória (morro, para Ruar), Morro do Raio (morro, para Nidar), Morro da Fome (morro, para Aron), Morro do Luto (morro, para Enur), Morro da Vitória (morro, para Nuor), Morro do Raio (morro, para Linor), Morro do Luto (morro, para Toar) e Morro da Fome (morro, para Lour).
+Lugares com nome: Praia da Fome (praia, para Zeil), Praia da Vitória (praia, para Ruar), Praia do Luto (praia, para Nion), Praia do Luto (praia, para Niar), Praia do Raio (praia, para Daur), Praia do Luto (praia, para Saes), Praia do Luto (praia, para Dail), Praia do Luto (praia, para Zean), Lago do Raio (lago, para Ruar), Lago da Vitória (lago, para Zeil), Lago do Luto (lago, para Niar), Lago do Luto (lago, para Daur), Floresta da Fome (floresta, para Niar), Floresta do Luto (floresta, para Nion), Morro da Fome (morro, para Enak), Morro da Vitória (morro, para Ruar), Morro do Luto (morro, para Arur), Morro da Vitória (morro, para Niar), Morro da Fome (morro, para Saes), Morro do Luto (morro, para Daur) e Morro do Luto (morro, para Zean).
 
-Em 300 anos nasceram 2483 pessoas e morreram 2153.
+Em 300 anos nasceram 2582 pessoas e morreram 2284.
