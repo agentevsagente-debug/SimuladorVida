@@ -189,7 +189,7 @@ A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10
 | 3 `coracao` | coração vermelho | casal, abraço de reencontro, mãe com o bebê |
 | 4 `raiva` | rabisco vermelho | discussão, crianças brigando |
 
-- **Onde:** para quem olha para a direita, o balão vai em x = x da pessoa + 2 e y = topo do quadro da pessoa − 6. Assim a ponta (coluna 1, linha 4) fica 1 px acima da cabeça. Para quem olha para a esquerda, espelhe o balão e use x = x da pessoa + 0.
+- **Onde:** para quem olha para a direita, o balão vai em x = x da pessoa + 2 e y = topo do quadro da pessoa − 6. Assim a ponta (coluna 1, linha 4) fica 1 px acima da cabeça. Para quem olha para a esquerda, espelhe o balão e use x = x da pessoa + 0. Sobre uma criança (6 × 8), use x = x da criança + 1 (olhando para a direita) ou x da criança − 1 (espelhado), e o mesmo y = topo do quadro − 6.
 - **Quanto tempo:** de 1,5 a 3 s, e não o tempo todo. Por exemplo, na conversa os balões se alternam entre os dois, com 1 a 2 s de pausa entre eles; na história, o balão de quem conta aparece a cada 4 ou 5 s.
 - **Quantos:** no máximo 2 ou 3 balões na tela ao mesmo tempo, para não virar poluição.
 - **Noite:** como os sinais de prece, não passam pela tabela da noite.
@@ -691,7 +691,7 @@ Quadros de 6 × 8, como a criança de sempre, com as mesmas cores-base. Quem des
 
 **Pega-pega.** As duas crianças correm na mesma direção, mais rápido que o andar (por exemplo, 1,5 vez a velocidade do adulto), com o pegador uns 7 px atrás de quem foge. A distância varia: o pegador se aproxima e perde terreno. Quando ela cai para 4 px, o motor mostra o quadro 3 do pegador (o toque) e troca os papéis: quem foi pego vira e passa a correr atrás. Uma rodada leva uns 6 a 10 s; depois, as crianças mudam de direção ou voltam a andar (`habitantes/crianca_andar_4q`).
 
-**Ciranda.** A roda, vista de lado, é uma fileira dupla. As crianças da frente usam a folha de frente, a 6 px uma da outra, de modo que as mãos das vizinhas se encostam e a fila vira uma corrente. As de trás usam a folha de costas, 2 px acima, deslocadas 3 px e desenhadas antes. Para girar, cada criança anda numa elipse achatada (por exemplo, 24 × 3 px). Na metade da frente usa a folha de frente; na de trás, a de costas. Os quadros das vizinhas ficam defasados em 1. Use de 4 a 8 crianças.
+**Ciranda.** A roda, vista de lado, é uma fileira dupla. As crianças da frente usam a folha de frente, a 6 px uma da outra, de modo que as mãos das vizinhas se encostam e a fila vira uma corrente. As de trás usam a folha de costas, 2 px acima, deslocadas 3 px e desenhadas antes. Para girar, cada criança anda numa elipse achatada (por exemplo, 24 × 3 px). Na metade da frente usa a folha de frente; na de trás, a de costas. Os quadros das vizinhas ficam defasados em 1. Use de 4 a 8 crianças. Com poucas crianças ou pouco espaço, a versão mínima que se lê bem é uma fileira só de 4 ou 5 de frente, de mãos dadas, andando de lado e balançando; a fileira de trás é um acréscimo.
 
 ## 24. Caçada em sequência (`acoes/cacada.py`)
 
@@ -721,6 +721,8 @@ A caçada precisa ler como uma sequência: espreitar, arremessar, acertar ou err
 | 4b. errou | o caçador vai buscar a lança (andar) e volta ao passo 1 | `porco_correr_4q` foge para a floresta e some | a `lanca_cravada` fica no chão onde o bicho estava, até alguém pegá-la |
 | 5. abater e amarrar | um faz `cacar_amarrar_4q` (3 a 4 s), à esquerda do bicho, com a mão (coluna 7) sobre ele; os outros esperam de pé | `porco_abatido` (troca o quadro 3 do atingido: o caçador tirou a lança) | o `pau_no_chao` fica ao lado do bicho, no chão |
 | 6. voltar | 2 carregadores com `carregar_caca_forte_4q`, a 16 px um do outro | `objetos/caca_no_pau_porco_forte` entre eles (seção 22) | atravessam a tela até a fogueira. Lá, o bicho vai para o `espeto` e alguém faz `cozinhar_espeto_4q`. |
+
+**Encaixe do porco entre as folhas.** No `porco_atingido_4q` (12 × 8), o porco ocupa as colunas 2 a 11, com a lança à esquerda. No `porco_do_mato_4q`, no `porco_correr_4q` e no `porco_abatido` (10 × 6), ele ocupa as colunas 0 a 9. Ao passar para o atingido, desenhe-o em x − 2; ao trocar o atingido pelo abatido, volte para x + 2. As bases são a última linha de cada folha. Assim, o porco não pula 2 px na troca.
 
 Com a ave, é a mesma sequência: `ave_grande_4q` no passo 1, `ave_fugir_4q` quando erra, `ave_abatida` quando acerta (sem quadro de atingida: ela cai direto) e `caca_no_pau_ave_forte` na volta.
 
