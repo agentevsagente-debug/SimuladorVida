@@ -5,8 +5,15 @@ extends RefCounted
 ## simulação não muda por isso nem paga nada a cada passo.
 
 const LARGURA_MUNDO := 480
-## Faixa de x (em pixels do mundo) de cada zona, da esquerda para a direita.
-const FAIXAS := {"praia": [0, 110], "lago": [110, 200], "floresta": [200, 350], "morro": [350, 480]}
+## Faixa de x (em pixels do mundo) de cada zona, da esquerda para a direita,
+## casada com a arte da cena-alvo: o lago é a água à esquerda.
+const FAIXAS := {"lago": [0, 136], "praia": [136, 200], "floresta": [200, 330], "morro": [330, 480]}
+## Onde cada zona acampa. O povo do lago mora na margem e na areia próxima, nunca na água.
+const ACAMPAMENTO := {"lago": [126, 168], "praia": [160, 200], "floresta": [200, 330], "morro": [330, 480]}
+## Onde cada zona trabalha. No lago, pesca-se e busca-se água na margem.
+const TRABALHO := {"lago": [126, 136], "praia": [136, 200], "floresta": [200, 330], "morro": [330, 480]}
+## Ninguém fica parado à esquerda disto: é água.
+const MARGEM := 126.0
 const LARGURAS := {"fogueira": 8, "altar": 8, "cabana": 16, "roca": 24}
 const ACOES := ["dormir", "andar", "parado", "colher", "rezar", "fogueira"]
 
@@ -29,7 +36,7 @@ static func ruido(a: int, b: int, c: int) -> float:
 
 ## Faixa de x do acampamento de um grupo: a zona dividida entre os grupos que vivem nela.
 static func faixa_do_grupo(m, g) -> Array:
-	var z: Array = FAIXAS[g.zona]
+	var z: Array = ACAMPAMENTO[g.zona]
 	var ali: Array = m.grupos_na_zona(g.zona)
 	var n := maxi(1, ali.size())
 	var i := maxi(0, ali.find(g))
@@ -67,6 +74,12 @@ static func construcoes_do_grupo(m, g) -> Array:
 
 ## Onde a pessoa está e o que faz no passo dado. `obras` são as construções do grupo dela.
 static func pessoa_no_passo(m, p, g, obras: Array, passo: int) -> Dictionary:
+	var r := _pessoa_no_passo(m, p, g, obras, passo)
+	r["x"] = clampf(r["x"], MARGEM, LARGURA_MUNDO - 2.0)
+	return r
+
+
+static func _pessoa_no_passo(m, p, g, obras: Array, passo: int) -> Dictionary:
 	var h := passo % 24
 	var dia := passo / 24
 	var idade: int = p.idade(m.ano())
@@ -89,8 +102,9 @@ static func pessoa_no_passo(m, p, g, obras: Array, passo: int) -> Dictionary:
 	var casa_x: float = fogo_x - 6.0 if cabanas.is_empty() else cabanas[p.id % cabanas.size()]
 	casa_x += (ruido(p.id, 0, 7) - 0.5) * 8.0
 	var lugar_fogo := fogo_x + (ruido(p.id, 0, 1) - 0.5) * 24.0
-	var faixa_zona: Array = FAIXAS[g.zona]
-	var trabalho_x: float = faixa_zona[0] + 4.0 + ruido(p.id, dia, 3) * (faixa_zona[1] - faixa_zona[0] - 8.0)
+	var faixa_trab: Array = TRABALHO[g.zona]
+	var folga := minf(4.0, (faixa_trab[1] - faixa_trab[0]) * 0.2)
+	var trabalho_x: float = faixa_trab[0] + folga + ruido(p.id, dia, 3) * (faixa_trab[1] - faixa_trab[0] - 2.0 * folga)
 	if g.estagio == 2 and not rocas.is_empty() and ruido(p.id, dia, 2) < 0.6:
 		trabalho_x = rocas[p.id % rocas.size()] + (ruido(p.id, dia, 4) - 0.5) * 20.0
 	# Quem tem uma prece aberta reza de manhã cedo e ao entardecer; quem fala pelo deus, também.

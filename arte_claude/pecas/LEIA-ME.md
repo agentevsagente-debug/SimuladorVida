@@ -140,7 +140,112 @@ Nenhum efeito usa semitransparência. Quando algo some aos poucos, como a fumaç
 - não passam pela tabela `noite`, porque emitem luz: raio, impacto, chamas, brasas, fartura, sonho e vagalume;
 - usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas.
 
-## 5. Camadas do motor (`montagem/`)
+## 5. Sinais de prece (`sinais/`)
+
+A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1 px acima da cabeça de quem reza ou, para a vila, acima do telhado mais alto. Os sinais emitem luz, então não passam pela tabela da noite. `amostra_sinais_4x.png` mostra todos sobre o dia e sobre a noite.
+
+| Folha | Quadro | Quadros | Quando usar |
+|---|---|---|---|
+| `prece_comum_4q` | 8 × 12 | 4 | pedido comum: luz pequena e mansa que sobe e desce 1 px |
+| `prece_urgente_4q` | 12 × 16 | 4 | urgente: luz maior, com halo e 4 raios pulsando |
+| `prece_desesperada_4q` | 16 × 24 | 4 | desesperado: chama de luz quente e trêmula, com 8 raios e faíscas |
+| `os_ultimos_4q` | 24 × 48 | 4 | o evento `os_ultimos`: facho de luz fria sobre a vila, com 5 pontos de luz em volta |
+| `necessidade_5v` | 8 × 8 | 5 variações | símbolo da `necessidade` da prece, nesta ordem: `seca` (sol), `fome` (espiga), `doenca` (coração rachado), `frio` (floco), `guerra` (lanças cruzadas). Vai ao lado do sinal ou na dica do cursor. |
+
+A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10 dias de espera, urgente até 30 dias e desesperado a partir daí, ou quando a importância do evento for 8 ou mais.
+
+## 6. Interface da alça (`interface/`)
+
+Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a alça montada, a crônica, a dica do cursor e o alfabeto completo.
+
+**Ícones**, em `icones_12/` (12 × 12) e `icones_8/` (8 × 8), com os mesmos nomes nas duas pastas:
+
+| Grupo | Ícones |
+|---|---|
+| Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho` |
+| Tempo | `pausa`, `normal`, `rapido`, `salto` |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar) |
+
+Os ícones foram desenhados para o fundo escuro da alça.
+
+**Caixas em 9 partes** (os cantos ficam fixos, as bordas e o miolo repetem):
+
+| Arquivo | Tamanho | Fatia | Uso |
+|---|---|---|---|
+| `caixa_cronica_9s.png` | 24 × 24 | 6 px | pergaminho da crônica; texto com `fonte_5x7_escura` |
+| `caixa_dica_9s.png` | 12 × 12 | 4 px | dica do cursor, escura; texto com `fonte_5x7_clara` e o nome com `fonte_5x7_dourada` |
+| `dica_ponteiro.png` | 6 × 3 | | bico da dica, apontando para baixo; vai colado na borda de baixo |
+| `alca_9s.png` | 12 × 12 | 4 px | fundo da alça, madeira escura |
+| `botao_3q.png` | 3 quadros de 16 × 16 | | botão normal, com o cursor por cima e selecionado (borda dourada). O ícone de 12 × 12 vai em (2, 2). |
+
+**Fonte em pixel:** `fonte_5x7_clara`, `fonte_5x7_escura` e `fonte_5x7_dourada`, cada uma com um `.png` e um `.fnt`.
+- **Formato:** BMFont em texto, que o Godot 4 importa direto como fonte. As três têm as mesmas medidas e mudam só a cor, porque a fonte não pode ser tingida pelo motor: multiplicar a cor sairia da paleta.
+- **Medidas:** maiúsculas de 5 × 7, proporcional, altura de linha 12, linha de base 9, 1 px entre letras e espaço de 3 px.
+- **Caracteres:** 110 ao todo:
+  - letras de A a Z, maiúsculas e minúsculas, e algarismos de 0 a 9;
+  - todos os acentos do português: á à â ã é ê í ó ô õ ú ü, as maiúsculas acentuadas correspondentes, ç e Ç;
+  - pontuação: `. , : ; ! ? - — ' " ( ) « » / % + = … º ª`.
+
+## 7. Estágio 2, agricultura (`estagio2/`)
+
+A base de cada peça, o ponto que toca o chão, fica na última linha, como no estágio 1. `amostra_estagio2_4x.png` mostra as peças sobre o chão da cena.
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `roca_arada`, `roca_broto`, `roca_crescida`, `roca_madura` | 16 × 16 | as 4 fases da roça. Os sulcos ficam nas 4 últimas linhas, e as plantas se repetem a cada 4 px, então uma roça larga é a mesma peça repetida lado a lado. A peça vai sobre a grama, com a base na superfície. |
+| `roca_seca` | 16 × 16 | talos secos tombados e solo rachado |
+| `casa_taipa` | 24 × 24 | casa de taipa com telhado de palha (peça montada) |
+| `casa_taipa_parede`, `casa_taipa_telhado` | 24 × 24 | a mesma casa em duas camadas, para as culturas trocarem parede e telhado. Desenhe a parede primeiro e o telhado por cima. |
+| `celeiro` | 24 × 24 | celeiro sobre esteios, com escada |
+| `cerca` | 8 × 8 | trecho que se repete na horizontal: um poste e dois trilhos |
+| `cerca_poste` | 8 × 8 | poste solto, para fechar a ponta direita da cerca |
+| `altar` | 16 × 16 | laje de pedra com oferendas e duas chamas |
+| `templo` | 32 × 32 | primeiro templo pequeno: pedra, colunas de madeira, palha e o símbolo no alto (peça montada) |
+| `templo_parede`, `templo_telhado`, `templo_simbolo` | 32 × 32 | o templo em 3 camadas, desenhadas nesta ordem. O símbolo (o sol) é a parte que cada cultura troca. |
+| `adulto_enxada_andar_4q` | quadro de 12 × 12 | 4 quadros, andando com a enxada no ombro |
+| `adulto_enxada_trabalhar_4q` | quadro de 12 × 12 | 4 quadros: ergue, golpeia, crava e puxa a terra |
+
+**As folhas com enxada têm quadros de 12 × 12.** O corpo ocupa as colunas 0 a 7, igual aos outros habitantes, e a enxada usa as colunas 8 a 11. O motor alinha pelo canto esquerdo e pela base, como faz com o habitante de 8 × 12. As cores-base e as trocas de pele, cabelo e roupa são as mesmas de `habitantes/trocas.json`.
+
+## 8. Ruínas e marcas da memória (`memoria/`)
+
+A base de cada peça fica na última linha. `amostra_memoria_4x.png` mostra todas sobre o chão da cena.
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `tumulo` | 16 × 16 | monte de terra com pedra fincada riscada e flores |
+| `cabana_abandonada` | 16 × 16 | a `cabana_galhos` sem folhas, com o topo cedido, galhos no chão e mato |
+| `casa_ruina` | 24 × 24 | a casa de taipa sem telhado: sobram caibros, a parede está quebrada e furada, há entulho e mato |
+| `pedra_erguida` | 16 × 32 | menir de lugar sagrado, com espiral entalhada e musgo |
+| `terra_queimada_a`, `terra_queimada_b` | 8 × 8 | **blocos de terreno** que substituem a grama, com a superfície na linha 2 (como `grama_a`): tocos queimados, cinza e brasas |
+| `arvore_queimada` | 32 × 32 | tronco carbonizado com galhos nus e brasas; o tronco fica na coluna 15 |
+
+## 9. Variações de cultura (`culturas/`)
+
+As peças de cultura têm o mesmo tamanho e o mesmo encaixe da casa (24 × 24) e do templo (32 × 32) do estágio 2. A porta e a janela ficam sempre no mesmo lugar, então qualquer parede combina com qualquer telhado.
+
+Ordem de desenho:
+- casa: parede e depois telhado;
+- templo: parede, depois telhado e por último o símbolo.
+
+`amostra_culturas_4x.png` mostra, em cima, três povos de exemplo e, embaixo, as 9 casas possíveis. Os três povos são:
+- taipa com palha, símbolo do sol e roupa turquesa;
+- pedra com telha, símbolo da lua e roupa lilás;
+- madeira com tábuas, símbolo da árvore e roupa rosa.
+
+| Grupo | Variações | Arquivos | Cores |
+|---|---|---|---|
+| Paredes | `taipa`, `pedra`, `madeira` | `casa_parede_<v>`, `templo_parede_<v>` | barro 10/9, pedra 12/11/8, tábuas 10/9/8 |
+| Telhados | `palha`, `telha`, `tabuas` | `casa_telhado_<v>`, `templo_telhado_<v>` | palha 16/10/9, telha de barro 20/24/23, tábuas 10/9/8 |
+| Símbolos | `sol`, `lua`, `arvore` | `templo_simbolo_<v>` | sol 22/21/31, lua 31/0/19, árvore 15/14/13 |
+
+As três variações também mudam de forma, além da cor:
+- **Telhados:** palha média, telha baixa com cumeeira, tábuas alta e íngreme com as pontas cruzadas.
+- **Paredes:** reboco de barro, fiadas de pedra, tábuas na horizontal.
+
+A combinação taipa com palha e sol é exatamente a `casa_taipa` e o `templo` do estágio 2.
+
+## 10. Camadas do motor (`montagem/`)
 
 | Arquivo | O que é |
 |---|---|

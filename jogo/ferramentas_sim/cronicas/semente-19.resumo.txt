@@ -1,3 +1,0 @@
-semente=19 cenario=- anos=100
-tempo_ano_mais_lento=0.005s tempo_100_anos=0.198s
-eventos=463 populacao_final=0 grupos_vivos=0

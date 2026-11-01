@@ -38,12 +38,18 @@ for f in sorted(AQUI.rglob("*.png")):
         qw = w // nq
         if (qw, h) not in ((8, 12), (6, 8)) or w % nq:
             erros.append(f"{rel}: quadro {qw}x{h} fora do padrão")
-    if pasta == "efeitos" and not f.stem.startswith("amostra"):
+    if pasta in ("icones_12", "icones_8") and (w, h) != ((12, 12) if pasta == "icones_12" else (8, 8)):
+        erros.append(f"{rel}: ícone {w}x{h} fora do tamanho")
+    if pasta in ("efeitos", "sinais") and not f.stem.startswith("amostra"):
         fim = f.stem.rsplit("_", 1)[1]
         n = int(fim[:-1]) if fim[-1] in "qv" and fim[:-1].isdigit() else 1
         if w % n or (w // n) % 4 or h % 4:
             erros.append(f"{rel}: quadro {w // n}x{h} não é múltiplo de 4")
-    if pasta == "estagio1" and (w % (8 * nq) or h % 8):
+    if pasta == "estagio2" and f.stem.startswith("adulto_") and (w != 12 * nq or h != 12):
+        erros.append(f"{rel}: quadro com enxada deve ser 12x12")
+    if pasta == "estagio2" and not f.stem.startswith(("adulto_", "amostra")) and (w % 8 or h % 8):
+        erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
+    if pasta in ("estagio1", "memoria", "culturas") and not f.stem.startswith("amostra") and (w % (8 * nq) or h % 8):
         erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
 print(f"{total} PNGs conferidos")
 for e in erros:
