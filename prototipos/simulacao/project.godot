@@ -1,0 +1,7 @@
+; Projeto do protótipo da simulação (fase 0, sessão A).
+config_version=5
+
+[application]
+
+config/name="Simulador de vida - simulacao em texto"
+config/features=PackedStringArray("4.7")
