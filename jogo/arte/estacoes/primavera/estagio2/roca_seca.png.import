@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cv02d50k61iri"
+path="res://.godot/imported/roca_seca.png-57ba817721c1f84c8ca01f96011783cd.image"
+
+[deps]
+
+source_file="res://arte/estacoes/primavera/estagio2/roca_seca.png"
+dest_files=["res://.godot/imported/roca_seca.png-57ba817721c1f84c8ca01f96011783cd.image"]
+
+[params]
+

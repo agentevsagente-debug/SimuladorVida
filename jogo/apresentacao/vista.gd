@@ -492,7 +492,10 @@ func _montar_fixo() -> void:
 				_fogos.append({"canto": canto, "centro": float(x),
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
 			_:
-				var aparencia: Dictionary = sim.aparencia(int(o.get("grupo", -1))) if sim else {}
+				# API v10: a construção traz a cultura; antes, vinha só do povo
+				var aparencia: Dictionary = o.get("aparencia", {})
+				if aparencia.is_empty() and sim:
+					aparencia = sim.aparencia(int(o.get("grupo", -1)))
 				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x)
 	if sim:
 		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
@@ -571,7 +574,7 @@ func _construcoes() -> Array:
 	if not _modo_layout:
 		return sim.construcoes.map(func(o): return {"tipo": o["tipo"], "x": float(o["x"]),
 			"estagio": int(o.get("estagio", 1)), "largura": int(o.get("largura", 16)), "irrigada": o.get("irrigada", false),
-			"grupo": int(o.get("grupo", -1))})
+			"grupo": int(o.get("grupo", -1)), "aparencia": o.get("aparencia", {})})
 	var r := []
 	for item in _layout["pecas"]:
 		if item["peca"] == "cabana_galhos":
