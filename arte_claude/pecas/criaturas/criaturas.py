@@ -97,6 +97,22 @@ CRIATURAS = {
         [".K.....", "KKKKKKK", "KKgyKyg", "KKggngg", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
         ["K.....K", "KKKKKKK", "KgyKygK", "KggnggK", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
     ),
+    # coruja na neve (7x8): neve (cinza da noite, 11) no alto da cabeça e no galho, corpo
+    # mais estufado de frio. Mesmos quadros da pousada.
+    "coruja_neve_4q": molde(
+        ["KgggggK", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", "gKKkKKg", "g.n.n.g", "dnnddnd"],
+        ["KgggggK", "KKKKKKK", "KggKggK", "KggnggK", "KKkKkKK", "gKKkKKg", "g.n.n.g", "dnnddnd"],
+        [".ggggg.", "KKKKKKK", "KKgyKyg", "KKggngg", "KKkKkKK", "gKKkKKg", "g.n.n.g", "dnnddnd"],
+        ["KgggggK", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", "gKKkKKg", "g.n.n.g", "dnnddnd"],
+    ),
+    # coruja na chuva (7x8): encolhida (sem os tufos), pingos batendo na cabeça (c) e
+    # escorrendo (b); no quadro 2 ela se sacode e os pingos voam para os lados.
+    "coruja_chuva_4q": molde(
+        ["...c...", ".......", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", "b.n.nKb", "dnnddnd"],
+        [".......", "..c..c.", "KKKKKKK", "KggKggK", "KggnggK", "KKkKkKK", "b.n.nKb", "dnnddnd"],
+        ["c.....c", "cKKKKKc", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", ".Kn.nK.", "dnnddnd"],
+        [".c.....", "....c..", "KKKKKKK", "KgyKygK", "KggnggK", "KKkKkKK", "b.n.nKb", "dnnddnd"],
+    ),
     # morcego da madrugada (8x5), maior que o do entardecer e com a borda das asas clara
     # (luz da lua) para ler sobre o céu escuro; olhos vermelhos
     "morcego_noite_4q": molde(
@@ -139,6 +155,8 @@ QUANDO = {
     "bando_migrando_4q": ("inverno (e fim do outono)", "dia", "atravessa o céu alto de um lado a outro"),
     "coruja_pousada_4q": ("todas", "noite e madrugada", "pousada num galho de árvore ou no telhado; pisca"),
     "morcego_noite_4q": ("primavera, verão, outono", "noite e madrugada", "voa em zigue-zague perto das árvores e da fogueira"),
+    "coruja_neve_4q": ("inverno", "noite e madrugada", "no lugar da coruja pousada quando há neve"),
+    "coruja_chuva_4q": ("todas menos inverno", "noite e madrugada, com chuva", "no lugar da pousada enquanto chove"),
 }
 
 

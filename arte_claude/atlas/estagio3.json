@@ -6,8 +6,8 @@
  "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
  "regioes": {
   "estagio3/adulto_e3_andar_4q": {
-   "x": 166,
-   "y": 67,
+   "x": 1,
+   "y": 105,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -16,11 +16,81 @@
    "quadro_h": 12
   },
   "estagio3/adulto_e3_parado_2q": {
-   "x": 199,
-   "y": 67,
+   "x": 133,
+   "y": 105,
    "w": 16,
    "h": 12,
    "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio3/buscar_agua_forte_4q": {
+   "x": 166,
+   "y": 67,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio3/cacar_amarrar_4q": {
+   "x": 1,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio3/cacar_apontar_2q": {
+   "x": 150,
+   "y": 105,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio3/cacar_comemorar_4q": {
+   "x": 50,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio3/carregar_agua_forte_4q": {
+   "x": 34,
+   "y": 105,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio3/carregar_caca_forte_4q": {
+   "x": 67,
+   "y": 105,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio3/carregar_cesto_cabeca_forte_4q": {
+   "x": 100,
+   "y": 105,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
    "tipo": "quadros",
    "quadro_w": 8,
    "quadro_h": 12
@@ -95,6 +165,66 @@
    "quadro_w": 32,
    "quadro_h": 24
   },
+  "estagio3/catar_lenha_forte_4q": {
+   "x": 99,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio3/crianca_ciranda_4q": {
+   "x": 167,
+   "y": 105,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio3/crianca_ciranda_costas_4q": {
+   "x": 192,
+   "y": 105,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio3/crianca_pegapega_fugir_4q": {
+   "x": 217,
+   "y": 105,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio3/crianca_pegapega_pegar_4q": {
+   "x": 1,
+   "y": 118,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio3/espantar_forte_4q": {
+   "x": 148,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
   "estagio3/templo_pedra": {
    "x": 1,
    "y": 1,
@@ -154,6 +284,16 @@
    "tipo": "quadros",
    "quadro_w": 32,
    "quadro_h": 32
+  },
+  "estagio3/tropecar_cair_forte_4q": {
+   "x": 197,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
   },
   "natureza/casa_pedra_ruina_mato_1": {
    "x": 67,

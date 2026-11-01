@@ -492,6 +492,10 @@ São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. 
 | `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
 | `coruja_pousada_4q` | 7 × 8 | 4 | todas | noite e madrugada | pousada num galho (o galho vem na peça: a linha 7 é o galho, ponha-a sobre a copa de uma árvore, a ponta de um pinheiro ou um telhado). Quadros: olhando, piscando, olhando para o lado, olhando. Fique no quadro 0 por 2 a 4 s e passe pelo 1 (piscar) ou pelo 2 (virar) por uns 0,3 s. Os olhos amarelos são o que se lê no escuro. |
 | `morcego_noite_4q` | 8 × 5 | 4 | primavera, verão, outono | noite e madrugada | maior que o do entardecer, com a borda das asas clara (a luz da lua) e olhos vermelhos, para ler sobre o céu e as árvores escuras. Voa em zigue-zague perto das árvores e da fogueira, 1 ou 2 por vez, a cada poucos minutos de 1x. |
+| `coruja_neve_4q` | 7 × 8 | 4 | inverno | noite e madrugada | a coruja pousada com neve (no cinza da noite) no alto da cabeça e no galho, e o corpo estufado de frio. Mesmos quadros e mesmo encaixe da `coruja_pousada_4q`; use no lugar dela quando há neve. |
+| `coruja_chuva_4q` | 7 × 8 | 4 | primavera, verão, outono | noite e madrugada, com chuva | encolhida, sem os tufos, com pingos batendo na cabeça e escorrendo. No quadro 2 ela se sacode e os pingos voam. Use no lugar da pousada enquanto chove. |
+
+**Morcego na neve e na chuva:** não tem variação. No inverno o morcego hiberna, e com chuva ele não sai: nesses casos, não mostre `morcego_4q` nem `morcego_noite_4q`.
 
 O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do limite de 12 × 8. Cada pássaro tem 3 × 2. Os bandos pequenos de verão saem de vários `passaro_voar_4q`, com os quadros defasados.
 
@@ -725,6 +729,26 @@ A caçada precisa ler como uma sequência: espreitar, arremessar, acertar ou err
 **Encaixe do porco entre as folhas.** No `porco_atingido_4q` (12 × 8), o porco ocupa as colunas 2 a 11, com a lança à esquerda. No `porco_do_mato_4q`, no `porco_correr_4q` e no `porco_abatido` (10 × 6), ele ocupa as colunas 0 a 9. Ao passar para o atingido, desenhe-o em x − 2; ao trocar o atingido pelo abatido, volte para x + 2. As bases são a última linha de cada folha. Assim, o porco não pula 2 px na troca.
 
 Com a ave, é a mesma sequência: `ave_grande_4q` no passo 1, `ave_fugir_4q` quando erra, `ave_abatida` quando acerta (sem quadro de atingida: ela cai direto) e `caca_no_pau_ave_forte` na volta.
+
+## 25. Roupas dos estágios nas ações novas (`acoes/vestir_estagios.py`)
+
+As ações de 1x (seção 22), as brincadeiras (seção 23) e as folhas de gente da caçada (seção 24) também existem com a roupa dos estágios 3 a 6. Assim, um povo avançado não volta ao visual do estágio 1 quando cata lenha ou brinca. As roupas são as dos habitantes de cada estágio (seção 11), aplicadas pela forma de cada quadro, e não por coordenadas fixas, porque nessas ações o corpo agacha, ajoelha e cai.
+
+| Estágio | Roupa | Na criança |
+|---|---|---|
+| 2 | nenhuma própria: use as folhas de `acoes/` | |
+| 3 | capa de pele nos ombros e colar de pedra | só a capa |
+| 4 | capacete de ferro e fivela de metal no cinto | só a fivela |
+| 5 | túnica longa até os pés | túnica longa |
+| 6 | chapéu de aba larga e calças | chapéu e calças |
+
+O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
+
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 14 folhas são as `*_forte_4q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
+- **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
+- **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).
+- A amostra é `acoes/amostra_estagios_4x.png`, com os quadros 0 e 2 de cada folha nas linhas dos estágios 1, 3, 4, 5 e 6.
 
 ## Critérios
 

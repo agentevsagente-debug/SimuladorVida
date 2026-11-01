@@ -62,7 +62,12 @@ for f in sorted(AQUI.rglob("*.png")):
         erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
     if pasta in ("estagio3", "estagio4", "estagio5", "estagio6") and not f.stem.startswith("amostra"):
         pessoa = f.stem.startswith(("adulto_", "guerreiro", "ferreiro", "escriba"))
+        acao = (AQUI / "acoes" / f.name).exists()   # ação com a roupa do estágio
         qw = w // nq if w % nq == 0 else -1
+        if acao:
+            if (qw, h) not in ((8, 12), (12, 12), (6, 8)):
+                erros.append(f"{rel}: ação com quadro {qw}x{h} (use 8x12, 12x12 ou 6x8)")
+            continue
         if pessoa and (qw not in (8, 12) or h != 12):
             erros.append(f"{rel}: quadro de habitante {qw}x{h} fora do padrão")
         if not pessoa and (qw % 8 or h % 8):
