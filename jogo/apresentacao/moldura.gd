@@ -29,6 +29,7 @@ extends Node2D
 ##                                        sem ele, vale o último guardado no moldura.cfg
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
+##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
 ##                        abre um painel ou aperta um botão (testes); livro abre o
@@ -122,6 +123,13 @@ func _ready() -> void:
 		get_tree().create_timer(1.0).timeout.connect(func():
 			var ev := InputEventMouseMotion.new()
 			interface.tratar(ev, Vector2(float(p[0]), float(p[1])), FAIXA))
+	if args.has("carregar"):  # segura um poder sem soltar, com a carga fixa (testes da carga)
+		var c: PackedStringArray = args["carregar"].split(":")
+		get_tree().create_timer(1.0).timeout.connect(func():
+			interface.poder = c[0]
+			interface._carga_ponto = Vector2(float(c[1]), 100)
+			interface._carga_inicio = interface._relogio - float(c[2]) * interface.CARGA_SEGUNDOS
+			interface._carregando = true)
 	if args.has("dica-pessoa"):  # o cursor acompanha a pessoa (id), a partir de S segundos
 		var d: PackedStringArray = args["dica-pessoa"].split(":")
 		get_tree().create_timer(float(d[1]) if d.size() > 1 else 1.0).timeout.connect(func():

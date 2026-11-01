@@ -105,7 +105,11 @@ var _quadro_agua := -1
 var _quadro_fogo := -1
 var _refazer := true
 var _tex_nascendo: Texture2D
-var recomeco := {}  # {grupo, ini}: o povo novo chegando e acendendo a primeira fogueira
+var recomeco := {}
+var _interface: Node2D  # a interface se apresenta aqui (avisos de eventos, quem sonhou)
+## Os eventos dos gestos do deus (a origem de um costume que vem da repetição).
+const GESTOS_DO_DEUS := ["chuva_divina", "raio_divino", "fogo_divino", "fogo_brando", "fartura_divina", "terra_erguida",
+	"sonho", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura"]  # {grupo, ini}: o povo novo chegando e acendendo a primeira fogueira
 var _chave_fixo := []
 var _vida: Vida
 var _estacao_fundos := ""
@@ -330,6 +334,10 @@ func _ao_receber_eventos(eventos: Array) -> void:
 					if o["tipo"] == "fogueira" and int(o.get("grupo", -1)) == int(ev.get("grupo", -2)):
 						fogo = float(o["x"])
 				_vida.chegada(ev.get("participantes", []), fogo, false)
+			"dependencia", "costume":  # a repetição vira hábito: um aviso na alça
+				var origem := String(ev.get("dados", {}).get("origem_tipo", ""))
+				if _interface and (ev["tipo"] == "dependencia" or origem in GESTOS_DO_DEUS):
+					_interface.avisar_evento(String(ev.get("curto", "")))
 			"prece_atendida", "prece_sem_resposta", "prece_contrariada":
 				var quem: Array = ev.get("participantes", [])
 				var px: float = sim.mundo.posicao_de(quem[0]) if not quem.is_empty() else -1.0
@@ -343,6 +351,8 @@ func _ao_receber_eventos(eventos: Array) -> void:
 					alvo = sim.mundo.posicao_de(ids[0])
 				_atmosfera.poder(ev["tipo"], float(d.get("x", 240.0)), String(d.get("grau", "sinal")),
 					alvo, modo_discreto, d)
+				if ev["tipo"] == "sonho" and not ids.is_empty() and _interface:
+					_interface.marcar_sonho(int(ids[0]))
 				if ev["tipo"] == "pressagio" and d.get("forma", "") == "eclipse":
 					_eclipse_ate = sim.mundo.passo + 3
 				if ev["tipo"] == "seca_divina":  # de 4 a 10 horas, conforme o grau

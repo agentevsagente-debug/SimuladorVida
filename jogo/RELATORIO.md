@@ -2,6 +2,18 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## As notas dos 11 poderes (A)
+
+| # | O que foi feito |
+|---|---|
+| **1. O grau na carga** | A caixa da carga cresceu (30 px de barra) e mostra embaixo o grau que o gesto teria se fosse solto agora: "sinal" (barra clara), "milagre" (dourada) ou, no fogo abaixo de 0,35, "brando" (laranja). Uma marca clara indica a metade (o milagre) e, no fogo, uma marca laranja indica o fim do fogo brando. A imposição (3º uso em 3 dias) só o núcleo sabe; ela aparece no aviso ao soltar, como antes. |
+| **2. O dilúvio forte** | De 0,7 para cima, a barra fica azul e a caixa diz "a água mata". |
+| **3. A cura** | Com a cura escolhida, cada doente na tela tem uma cruzinha verde sobre a cabeça: a cura sara quem está doente e não faz nada em quem está são. |
+| **4. O sonho** | Quem sonhou ganha uma estrelinha lilás sobre a cabeça por 60 s: o sonho muda uma pessoa, não o povo. |
+| **5. Hábito e dependência** | A `dependencia` e o `costume` que nasce de um gesto do deus (`origem_tipo`) aparecem como aviso na alça por 5 s, com a frase curta do evento. |
+
+**Opção de teste nova:** `--carregar=PODER:X:INTENSIDADE` segura um poder com a carga fixa. Captura: `capturas/carga-dos-poderes.png`, com o dilúvio a 0,85, o fogo a 0,2 e 0,4 e o raio a 0,3 e 0,7.
+
 ## O pior cenário de novo, no executável
 
 O mundo de 150 anos (estágio 6, 4 povos), em 50x, por 10 min, no `.exe`. Já entra tudo o que veio depois da medição final: o arquivo dos antigos, a fileira de trás, até 45 pessoas na tela, a dica, as preces e os brilhos. Medido com `medir.ps1 -Cenario avancado -Executavel`; os dados estão em `medicoes/avancado-exe.*`.
