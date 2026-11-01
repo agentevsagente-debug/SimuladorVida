@@ -183,6 +183,17 @@ Na auditoria 8, alguns efeitos dos poderes quase não se liam no escuro. Os bril
 | `fenda_noite_4q` | `fenda_4q` | 16 × 16 | a fenda com a borda esquerda e a de cima claras de lua |
 | `pedras_caindo_noite_3v` | `pedras_caindo_3v` | 4 × 4 | a face de cima das pedras clara de lua |
 
+### Versões fortes para o dia (`efeitos_dia.py`)
+
+Na auditoria 10 (Q1), a fartura e o sonho ainda eram discretos de dia: sem a mensagem da alça, quase não se viam sobre o capim, a copa e o céu claro. Use estas versões no lugar das de sempre do amanhecer ao entardecer. À noite, valem as `*_noite_*`. Elas emitem luz e não passam pela tabela `noite`. A amostra é `amostra_efeitos_dia_4x.png`, com a de antes e a nova sobre o céu, o capim e a copa.
+
+| Folha | No lugar de | Quadro | O que muda |
+|---|---|---|---|
+| `fartura_brilho_dia_4q` | `fartura_brilho_4q` | **12 × 12** (centro em 6, 6) | a estrela de 4 pontas da noite, com o contorno marrom-escuro (23), que separa o dourado do céu claro e do verde. Espalhe 3 a 5 sobre as árvores frutíferas e a roça, defasadas. |
+| `fartura_aura_dia_4q` | `fartura_aura_4q` | 16 × 16 | 10 partículas douradas de 2 px, com a sombra marrom embaixo e uma faísca branca de vez em quando |
+| `sonho_dia_4q` | `sonho_4q` | **24 × 24** | a espiral maior: 8 pontos de 2 × 2 em branco e lilás, contornados de lilás escuro, descendo sobre quem sonha. A base (linha 23) vai 1 px acima da cabeça. |
+| `sonho_brilho_dia_4q` | `sonho_brilho_4q` | **12 × 12** (centro em 6, 6) | a estrela lilás, com o contorno lilás escuro |
+
 **Os outros efeitos, revistos à noite e que não precisam de versão:**
 - **Chuva:** gotas e nuvem; a nuvem é escura sobre o céu escuro, mas a chuva que cai dela se lê.
 - **Dilúvio:** chuva forte, cortina, enchente e destroços.
