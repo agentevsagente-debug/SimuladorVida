@@ -43,6 +43,7 @@ var cenas: Array = []    # cenas_ativas() da hora: caça, incidentes, festas...
 var zonas: Array = []
 var preces: Array = []
 var ausencia := {}       # retorno de avancar_ausencia() ao abrir, se houve
+var salvamento_falhou := false  # o último salvamento não foi ao disco (disco cheio?): a moldura avisa
 var _acumulado := 0.0
 var _fracao_parada := 0.0  # a fração da hora em que a pausa começou
 var _vistos := 0
@@ -175,6 +176,7 @@ func aparencia(grupo_id: int) -> Dictionary:
 func salvar() -> void:
 	if salvar_em_disco and mundo != null:
 		var ok: bool = Persistencia.salvar(mundo)
+		salvamento_falhou = not ok  # o mundo salvo de antes fica intacto
 		print("[simulacao] salvo=%s ano=%d dia=%d hora=%d passo=%d" % [ok, tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"]])
 
 
@@ -185,10 +187,13 @@ func encerrar() -> void:
 	if mundo == null:
 		return
 	congelado = true  # nenhum passo novo (que lançaria outra montagem) até o jogo sair
-	mundo._esperar_threads()
-	for d in mundo._descartes:
-		WorkerThreadPool.wait_for_task_completion(d[0])
-	mundo._descartes.clear()
+	if mundo.has_method("encerrar"):  # o núcleo espera as próprias threads (A, ece2046)
+		mundo.encerrar()
+	else:
+		mundo._esperar_threads()
+		for d in mundo._descartes:
+			WorkerThreadPool.wait_for_task_completion(d[0])
+		mundo._descartes.clear()
 	print("[simulacao] threads encerradas")
 
 
@@ -205,6 +210,8 @@ func _passo() -> void:
 	# o documento técnico pede salvar a cada dia de jogo e ao fechar
 	if mundo.dia_abs() != _ultimo_dia_salvo:
 		_ultimo_dia_salvo = mundo.dia_abs()
+		if mundo.get("ultimo_salvamento_ok") == false:  # o salvamento de ontem não foi ao disco
+			salvamento_falhou = true
 		salvar_async()
 
 

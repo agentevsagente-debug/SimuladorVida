@@ -640,7 +640,9 @@ func _montar_fixo() -> void:
 			if not _na_agua(px):
 				_colar_obra(terreno, cor, tag, imagens, [planta], px, Arte.MUNDO)
 	# as casas da fileira de trás antes, mais altas, para as da frente as cobrirem
-	var em_ordem := obras.filter(func(o): return int(o.get("fileira", 0)) == 1) + \
+	var atras_em_x := obras.filter(func(o): return int(o.get("fileira", 0)) == 1)
+	atras_em_x.sort_custom(func(a, b): return float(a.x) < float(b.x))  # elas se cobrem pela metade
+	var em_ordem := atras_em_x + \
 		obras.filter(func(o): return int(o.get("fileira", 0)) != 1)
 	for o in em_ordem:
 		var x := roundi(o.x)
