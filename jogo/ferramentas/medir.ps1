@@ -6,6 +6,7 @@
 #   rapido: visível, ritmo 10x (1 hora a cada 11,25 s)
 #   rapido2: visível, ritmo 50x (1 hora a cada 2,25 s: gente andando o tempo todo)
 #   escondido: minimizada, ritmo normal
+#   grande: visível, ritmo normal (1x), num mundo de 200 anos (o caso da auditoria 11)
 #   avancado: visível, ritmo 50x, num mundo de 150 anos (estágios altos,
 #             culturas, ruínas e mais gente: o jogo completo)
 #
@@ -18,7 +19,7 @@
 #   privada_mb: bytes privados (memória reservada só para o processo);
 #   gerenciador_mb: conjunto de trabalho privado, a coluna "Memória" do Gerenciador de Tarefas.
 param(
-    [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'rapido2', 'escondido', 'avancado')][string]$Cenario,
+    [Parameter(Mandatory)][ValidateSet('normal', 'rapido', 'rapido2', 'escondido', 'avancado', 'grande')][string]$Cenario,
     [int]$Segundos = 600,
     [int]$Intervalo = 5,
     [int]$Aquecimento = 10,
@@ -36,7 +37,7 @@ $caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
 $nome = if ($Executavel) { "$Cenario-exe" } else { $Cenario }
 $p = Start-Process -FilePath $programa -PassThru -ArgumentList @($caminho + @('--',
     '--sem-config', '--semente=7', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
-    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } default { "--ritmo=$Cenario" } })))
+    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } 'grande' { '--ritmo=normal --anos=200 --semente=3' } default { "--ritmo=$Cenario" } })))
 Start-Sleep -Seconds $Aquecimento
 
 $linhas = @()

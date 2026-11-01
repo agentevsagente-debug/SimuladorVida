@@ -262,8 +262,9 @@ def capa():
         for y in range(Hc - 12, Hc - 4):
             for x in range(8 + i * 22, 22 + i * 22):
                 img.putpixel((x, y), COR(5 if i else 2))
-    # a moldura do jogo: alça em cima e o mundo ao entardecer
-    mundo = Image.open(AQUI.parent / "alvo" / "alvo_entardecer.png").convert("RGBA")
+    # a moldura do jogo: alça em cima e o mundo ao entardecer, capturado do jogo de verdade
+    # (versão 0.1: a vila do estágio 3 com a roda em volta do fogo; `capturar_divulgacao.sh`)
+    mundo = Image.open(AQUI / "fontes" / "jogo_entardecer.png").convert("RGBA")
     fx, fy = 120, 92
     for y in range(fy - 21, fy + 162):
         for x in range(fx - 2, fx + 482):
@@ -305,7 +306,15 @@ def principal():
         x = 3 if canto == "esq" else img.width - t.width - 13
         legenda(img, frase, x, 3, escala=1)
         img.resize((960, 320), Image.NEAREST).save(AQUI / f"{nome}.png")
-    print("divulgação: logos, capa e 4 destaques")
+    # os melhores momentos da versão 0.1, capturados do jogo e ampliados 3x (`capturar_divulgacao.sh`)
+    for nome, fonte in (("momento_1_entardecer", "jogo_entardecer"), ("momento_2_cacada", "jogo_cacada"),
+                        ("momento_3_vila_estagio6", "jogo_vila_estagio6"),
+                        ("momento_3b_vila_estagio6_noite", "jogo_vila_estagio6_noite"),
+                        ("momento_4_livro", "jogo_livro"), ("momento_5_dica_pessoa", "jogo_dica_pessoa"),
+                        ("momento_6_recomeco", "jogo_recomeco")):
+        img = Image.open(AQUI / "fontes" / f"{fonte}.png").convert("RGB")
+        img.resize((img.width * 3, img.height * 3), Image.NEAREST).save(AQUI / f"{nome}.png")
+    print("divulgação: logos, capa, 4 destaques e 7 momentos")
 
 
 if __name__ == "__main__":

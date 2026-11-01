@@ -2,6 +2,64 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Versão 0.1 para amigos (auditoria 11)
+
+**A falha ao fechar.**
+- **Causa:** o jogo saía com threads do núcleo ainda rodando no `WorkerThreadPool`: a montagem da rotina do dia, a rotina velha sendo desmontada e o salvamento em segundo plano. O mundo só esperava por elas quando era destruído, e na saída isso acontece tarde demais.
+- **Correção:** `Simulacao.encerrar()` congela a simulação e espera todas elas. É chamado em todos os caminhos de saída: Ctrl+Q e o fim de `--duracao` (`sair`), o X da janela (`WM_CLOSE_REQUEST`), o fim das capturas e o `_exit_tree`. O processo do atalho global também é parado ao fechar pelo X.
+- **Teste:** 30 aberturas e fechamentos, todos sem falha:
+  - 10 com um mundo salvo em 50x, saindo durante um `salvar_async` (a opção nova `--sair-salvando` começa o salvamento e sai em seguida);
+  - 10 com mundos de 150 anos em 50x, com as threads pesadas da rotina;
+  - 10 com um mundo salvo em 1x.
+
+  Todos os registros terminam com "threads encerradas". Esses testes foram sem janela (`--headless`); o fechamento pelo X, com janela, entra na passada do B1.
+
+**B3, a versão:** `config/version="0.1.0"` no `project.godot`. Ela aparece na dica do relógio ("Simulador de vida 0.1.0") e no pé da estante. O caminho do `godot.log` está no COMO JOGAR.
+
+**B2, o COMO JOGAR:** `jogo/distribuicao/COMO JOGAR.txt` vai ao lado do `.exe` em `builds/`. Ele explica:
+- o que é o jogo e o gesto do poder (o sinal e o milagre);
+- as teclas e como trazer a janela de volta;
+- onde fica o mundo salvo, como começar de novo e como desinstalar;
+- o aviso do SmartScreen e como mandar um erro.
+
+**A CPU em 1x num mundo grande.** Medido com `medir.ps1 -Cenario grande` (200 anos, semente 3, 1x, janela visível), 180 s depois de 60 s de aquecimento, num PC de 28 núcleos lógicos. A meta é ficar abaixo de 8% de um núcleo.
+
+| | CPU (% de um núcleo) | Conjunto de trabalho | Gerenciador de Tarefas |
+|---|---|---|---|
+| Antes (medido pela C) | 15% | — | — |
+| Agendas e lugares a 6 Hz, 20 quadros/s em 1x | 8,68% | 282 MB | 179 MB |
+| E pular cedo quem dorme ou não aparece | **6,08%** | 282 MB | **179 MB** |
+
+- **O que mudou:**
+  - o trecho da agenda de cada um e o lugar dos parados são refeitos 6 vezes por segundo, e não a cada quadro (a agenda anda em minutos de jogo), ou na hora em que a lista de pessoas muda; nos outros ritmos, continua a cada quadro;
+  - em 1x e na pausa, a janela desenha 20 quadros por segundo (quem anda vai a 9 px/s); nos outros ritmos, continuam os 30;
+  - quem dorme ou está oculto sai do laço logo depois da ação, antes de montar o visual.
+- **Para medir de novo:** `DEPURAR_TEMPO=1` faz a vista imprimir, a cada 10 s, os µs por quadro de cada parte.
+- **D8, a memória:** o Gerenciador fica em 179 MB, abaixo dos 200 MB. O conjunto de trabalho (282 MB) inclui as páginas compartilhadas do driver de vídeo, que o Gerenciador não conta.
+
+**O executável 0.1.0 e o B1.** `builds/Simulador de vida.exe` (106 MB) vai com o `COMO JOGAR.txt` (CRLF). A passada foi feita no próprio `.exe`:
+- **`verificar.ps1 -Godot "..\builds\Simulador de vida.exe" -Executavel -SemExportar`:** os 19 itens passaram. Entram:
+  - o "sempre por cima", a transparência e a passagem do mouse;
+  - o clique no mundo e o gesto do raio com o mouse de verdade;
+  - o arraste pela alça e a troca de escala pela roda (2x para 3x);
+  - esconder pelo botão e trazer de volta, e a nitidez em 2x, 3x e 4x.
+- **`ferramentas/b1.ps1`** (novo):
+  - Ctrl+Alt+H esconde e traz de volta: OK;
+  - fechar pelo X da janela (WM_CLOSE): 3 de 3 limpos, com saída 0, "threads encerradas", sem erro no registro e sem o processo do atalho órfão;
+  - a janela por cima dos outros programas por 60 min, conferida a cada minuto: o resultado está mais abaixo.
+- **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
+- **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
+
+**Desejáveis (D1 a D3).**
+- **D1:** o impacto do raio fica 1,5 s (antes, 0,8 s). Onde ele cai, dois blocos de terra queimada (`memoria/terra_queimada_a` e `_b`) ficam no chão por 60 s.
+- **D2:**
+  - de dia, a fartura e o sonho usam as versões `*_dia_*` da arte, e de noite continuam as `*_noite_*`;
+  - no estágio 6, os homens andam e ficam parados de chapéu de aba larga e calças (`estagio6/adulto_e6_*`, que ainda não estavam ligados).
+- **D3:**
+  - o índice do livro está mais largo (140 px em vez de 104), e o título que não cabe quebra numa segunda linha recuada;
+  - o índice e o livro ficam centrados juntos na estante;
+  - o clique no índice segue as linhas quebradas.
+
 ## Os sinais da C, a estante na primeira vez e a roda (auditoria 10)
 
 | Item | O que foi feito |

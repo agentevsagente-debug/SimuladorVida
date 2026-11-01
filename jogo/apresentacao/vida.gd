@@ -100,7 +100,13 @@ const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_fo
 	# as folhas de sempre (auditoria 7, A1)
 	"adulto_a_andar_4q", "adulto_b_andar_4q", "adulto_a_parado_2q", "adulto_b_parado_2q", "adulto_a_rezar_2q",
 	"adulto_a_colher_4q", "adulto_a_sentado_1q", "crianca_andar_4q", "idoso_andar_4q"]
+## No estágio 6, os homens andam e param de chapéu de aba larga (auditoria 11, D2).
+const CHAPEU_DO_ESTAGIO6 := {"adulto_a_andar_4q": "adulto_e6_andar_4q", "adulto_a_parado_2q": "adulto_e6_parado_2q"}
 
+var _trechos := {}             # trecho da agenda de cada um (refeito 6 vezes por segundo)
+var _lugar := {}               # lugar de cada parado (idem)
+var _refazer_lugares_em := 0.0
+var _pessoas_vistas: Array = []
 var _chegando := {}  # id -> {ini, fogo, k (a ordem), recomeco}
 var vista
 var sim
@@ -141,11 +147,19 @@ static func trecho(p: Dictionary, f: float) -> Dictionary:
 
 
 func atualizar(delta: float, relogio: float) -> Array:
-	var f: float = sim.fracao()
-	var trechos := {}
-	for p in sim.pessoas:
-		trechos[p["id"]] = trecho(p, f)
-	var lugar := _lugares(sim.pessoas, trechos)
+	# o trecho da agenda de cada um e os lugares dos parados mudam devagar (a agenda
+	# anda em minutos de jogo): refeitos 6 vezes por segundo, ou quando a gente muda
+	if relogio >= _refazer_lugares_em or not is_same(sim.pessoas, _pessoas_vistas) or sim.ritmo != Simulacao.Ritmo.NORMAL:
+		_refazer_lugares_em = relogio + 1.0 / 6.0
+		_pessoas_vistas = sim.pessoas
+		var f: float = sim.fracao()
+		_trechos = {}
+		for p in sim.pessoas:
+			_trechos[p["id"]] = trecho(p, f)
+		_lugar = _lugares(sim.pessoas, _trechos)
+	var trechos: Dictionary = _trechos
+	var lugar: Dictionary = _lugar
+	vista._medir("v_trechos_lugares")  # DEPURAR_TEMPO
 	var opcoes := Arte.opcoes_troca()
 	var r := []
 	objetos = []
@@ -157,6 +171,11 @@ func atualizar(delta: float, relogio: float) -> Array:
 		vivos[id] = true
 		var t: Dictionary = trechos[id]
 		var acao: String = t.acao
+		if acao == "dormir":  # quem dorme ou passa a hora em casa não é desenhado: nada a calcular
+			_acordou.erase(id)
+			continue
+		if _ocultos.has(id):
+			continue
 		var destino: float = lugar.get(id, t.destino)
 		var no_lago := _no_lago(t, id)
 		if no_lago.is_empty():
@@ -196,11 +215,6 @@ func atualizar(delta: float, relogio: float) -> Array:
 		if not pausa:
 			x = move_toward(x, destino, vel * delta)
 		_x[id] = x
-		if acao == "dormir":
-			_acordou.erase(id)
-			continue
-		if _ocultos.has(id):
-			continue
 		# quem acorda junto sai da cabana em fila, não empilhado
 		if not _acordou.has(id):
 			_acordou[id] = relogio
@@ -242,9 +256,11 @@ func atualizar(delta: float, relogio: float) -> Array:
 			"codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo, "acompanhada": p.get("acompanhada", false),
 			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena, "nucleo": t.destino,
 			"detalhe": t.get("detalhe", "")})
+	vista._medir("v_pessoas")  # DEPURAR_TEMPO
 	_objetos_de_cena(r, relogio)
 	_objetos_do_cotidiano(r, relogio)
 	_animais_das_cenas(r, relogio)
+	vista._medir("v_objetos")  # DEPURAR_TEMPO
 	r.sort_custom(func(a, b): return a.atras and not b.atras)  # a segunda fileira fica atrás
 	for id in _x.keys():
 		if not vivos.has(id):
@@ -269,6 +285,8 @@ func _com_roupa_do_estagio(folha: String, grupo: int) -> String:
 	for g in sim.grupos:
 		if g["id"] == grupo:
 			estagio = int(g.get("estagio", 1))
+	if estagio >= 6 and folha.get_file() in CHAPEU_DO_ESTAGIO6:  # o chapéu de palha e as calças (arte, seção 11)
+		return "estagio6/" + CHAPEU_DO_ESTAGIO6[folha.get_file()]
 	for e in range(mini(estagio, 6), 2, -1):
 		var caminho := "estagio%d/%s" % [e, folha.get_file()]
 		if not _existe.has(caminho):

@@ -5,10 +5,14 @@ config_version=5
 [application]
 
 config/name="Simulador de vida"
+config/version="0.1.0"
+config/custom_user_dir_name="Simulador de vida"
+config/use_custom_user_dir.template=true
 run/main_scene="res://principal.tscn"
 config/icon="res://arte/interface/icone_jogo_256.png"
 config/windows_native_icon="res://arte/interface/icone_jogo.ico"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+run/flush_stdout_on_print=true
 run/max_fps=30
 run/low_processor_mode=true
 run/low_processor_mode_sleep_usec=33333

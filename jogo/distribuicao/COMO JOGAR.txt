@@ -1,0 +1,80 @@
+SIMULADOR DE VIDA 0.1.0 - COMO JOGAR
+====================================
+
+O QUE É
+-------
+Um pequeno mundo que vive sozinho num canto da sua tela. Um povo nasce,
+caça, planta, briga, reza e envelhece, ano após ano, mesmo com você
+olhando para outra coisa. Você é o deus: não manda em ninguém, só pode
+fazer gestos (chuva, raio, fogo, fartura...) e ver o que o povo faz com
+eles. Tudo fica escrito numa crônica.
+
+A janela é transparente e fica por cima das outras. O mouse passa pelos
+espaços vazios, então dá para trabalhar com ela aberta.
+
+O GESTO DO PODER
+----------------
+1. Na alça (a barra de botões em cima), clique no botão dos poderes.
+2. Escolha um poder.
+3. Clique sobre o mundo e SEGURE. Quanto mais tempo segurar, mais forte:
+   - gesto curto = um sinal (o fogo curto só acende as fogueiras e aquece);
+   - segurando mais = um milagre.
+4. Solte. A alça diz o que aconteceu.
+
+Passe o cursor sobre as pessoas para ver quem são, o que fazem e o que
+pensam. Passe sobre um sinal de luz para ver uma prece.
+
+TECLAS
+------
+  C    crônica do mundo (setas para cima e para baixo trocam de capítulo)
+  E    estante com os livros dos mundos que você deixou
+  L    seguir a família que você acompanha
+  D    modo discreto (o pior fica só na crônica, sem ser mostrado)
+  H    esconder a janela
+  0    pausa         1  normal (1 dia = cerca de 45 min)
+  2    10 vezes      3  50 vezes
+  Espaço  pausa e continua
+  Ctrl+2, Ctrl+3, Ctrl+4   tamanho da janela
+  Ctrl+Q  sair (o mundo é salvo)
+
+COMO TRAZER A JANELA DE VOLTA
+-----------------------------
+Depois de esconder (H), clique no ícone do jogo perto do relógio do
+Windows (pode estar escondido na setinha "^") ou aperte Ctrl+Alt+H.
+A janela também pode ser arrastada pela alça.
+
+ONDE FICA O MUNDO SALVO
+-----------------------
+O mundo é salvo sozinho, todo dia de jogo e ao fechar. Quando você volta,
+ele seguiu vivendo e a crônica conta o que aconteceu.
+
+Pasta: %APPDATA%\Simulador de vida
+(cole isso na barra de endereço do Explorador de Arquivos)
+
+  mundo.txt   o mundo de agora (e mundo.1.txt, mundo.2.txt... as cópias)
+  estante\    os livros dos mundos que você deixou
+
+COMEÇAR DE NOVO
+---------------
+Do segundo ano em diante, abra a estante (E) e clique em "Abandonar este
+mundo". A crônica vira um livro na estante e começa outro mundo.
+Para apagar tudo, feche o jogo e apague a pasta acima.
+
+DESINSTALAR
+-----------
+Apague o arquivo "Simulador de vida.exe" e a pasta acima. Não há
+instalador nem outros arquivos.
+
+AVISO DO WINDOWS (SMARTSCREEN)
+------------------------------
+O jogo não tem assinatura digital, então o Windows pode mostrar
+"O Windows protegeu o computador". Clique em "Mais informações" e
+depois em "Executar assim mesmo".
+
+SE DER ERRO
+-----------
+Mande para quem te passou o jogo:
+  - a versão (passe o cursor sobre o relógio, no canto da alça);
+  - o que você fez logo antes;
+  - o arquivo de registro:
+    %APPDATA%\Simulador de vida\logs\godot.log

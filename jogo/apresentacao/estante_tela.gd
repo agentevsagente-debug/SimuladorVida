@@ -26,7 +26,7 @@ const ALTURA := 160
 const BASES := [72, 150]          # linha de cima de cada prateleira
 const INICIO_X := 24
 const FIM_X := [456, 340]          # a segunda prateleira deixa lugar para os botões
-const LIVRO := Vector2i(112, 8)    # canto do livro aberto (256 × 144)
+const LIVRO := Vector2i(184, 8)    # canto do livro aberto (256 × 144); com o índice, o par fica centrado
 const PAGINAS := [Rect2i(14, 12, 104, 118), Rect2i(138, 12, 104, 118)]
 const LINHAS := 9  # a décima linha encostava no número da página
 const ALTURA_LINHA := 11
@@ -49,7 +49,8 @@ var so_um_livro := false
 var _primeira_vez := false  # a estante abriu pela primeira vez: a linha que explica  # aberta só para ler um livro (a crônica da tecla C): fechar vai direto ao mundo
 var _pagina_ultimo_ano := 0      # onde começa o último "### Ano" (a crônica abre ali, no mais recente)
 var _indice: Array = []           # [[rótulo curto, página]]: o resumo, os capítulos, quem foi quem, o fim
-const INDICE := Rect2i(4, 8, 104, 144)  # o índice, à esquerda do livro aberto
+const INDICE := Rect2i(40, 8, 140, 144)  # o índice, à esquerda do livro aberto
+const INDICE_LINHAS := 12  # linhas que cabem no índice (um título longo quebra em duas)
 const ESTILOS_TITULO := ["titulo", "capitulo", "secao", "epitafio"]  # na fonte de títulos (vinho)
 var _pagina := 0                  # a página da esquerda (par)
 var _aberto := -1
@@ -363,9 +364,10 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 			elif event.button_index == MOUSE_BUTTON_LEFT:
 				var local := p - LIVRO
 				if INDICE.has_point(p) and not _indice.is_empty():  # um capítulo do índice
-					var k := (p.y - INDICE.position.y - 6) / ALTURA_LINHA
-					if k >= 0 and k < _indice.size():
-						_ir_a_pagina(_indice[k][1])
+					var linhas := _linhas_do_indice()
+					var n := (p.y - INDICE.position.y - 6) / ALTURA_LINHA
+					if n >= 0 and n < linhas.size():
+						_ir_a_pagina(_indice[linhas[n][0]][1])
 				elif not Rect2i(Vector2i.ZERO, Vector2i(256, 144)).has_point(local):
 					voltar()
 				else:
@@ -511,6 +513,8 @@ func _draw() -> void:
 		if l.get("atual", false):  # a era em curso: uma fita dourada saindo de cima
 			draw_rect(Rect2(r.position.x + 8, y - 3, 1, 3), Arte.paleta[22])
 	_botao_texto(FECHAR, "Fechar", _sob_botao == "fechar")
+	var fv: Font = interface._fontes["clara"]  # a versão, discreta, no pé da estante
+	draw_string(fv, Vector2(INICIO_X, ALTURA - 2), interface.versao(), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	if _primeira_vez:
 		var frase := "Aqui ficam as crônicas dos mundos que você deixar"
 		var fd: Font = interface._fontes["dourada"]
@@ -557,13 +561,29 @@ func _desenhar_indice() -> void:
 	var atual := _secao_atual()
 	var escura: Font = interface._fontes["escura"]
 	var titulo: Font = interface._fontes["titulo"]
-	for k in mini(_indice.size(), 12):
-		var f: Font = titulo if k == atual else escura
-		var texto: String = _indice[k][0]
-		while texto.length() > 3 and f.get_string_size(texto, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > INDICE.size.x - 10:
-			texto = texto.substr(0, texto.length() - 2) + "…"
-		draw_string(f, Vector2(INDICE.position) + Vector2(5, 6 + k * ALTURA_LINHA + int(f.get_ascent(TAM_FONTE))), texto,
+	var linhas := _linhas_do_indice()
+	for n in linhas.size():
+		var f: Font = titulo if linhas[n][0] == atual else escura
+		draw_string(f, Vector2(INDICE.position) + Vector2(5, 6 + n * ALTURA_LINHA + int(f.get_ascent(TAM_FONTE))), linhas[n][1],
 			HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+
+
+## As linhas do índice, [[entrada, texto]]: o título que não cabe quebra numa
+## segunda linha recuada; só o que passa disso ainda leva reticências.
+func _linhas_do_indice() -> Array:
+	var fonte: Font = interface._fontes["titulo"]  # a mais larga das duas
+	var largura := INDICE.size.x - 10
+	var linhas := []
+	for k in _indice.size():
+		var partes := _quebrar_linhas(_indice[k][0], fonte, largura)
+		if partes.size() > 1:
+			var segunda: String = " ".join(partes.slice(1))
+			while segunda.length() > 3 and fonte.get_string_size("  " + segunda, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x > largura:
+				segunda = segunda.substr(0, segunda.length() - 2) + "…"
+			partes = [partes[0], segunda]
+		for i in partes.size():
+			linhas.append([k, ("  " if i > 0 else "") + partes[i]])
+	return linhas.slice(0, INDICE_LINHAS)
 
 
 func _desenhar_confirmar() -> void:

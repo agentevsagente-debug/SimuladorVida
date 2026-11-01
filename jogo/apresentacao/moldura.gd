@@ -20,6 +20,7 @@ extends Node2D
 ##                                        (e não mostra as dicas da primeira abertura)
 ##   --primeira-vez                       mostra as dicas da primeira abertura desde o começo (testes)
 ##   --duracao=S                          fecha sozinho depois de S segundos
+##   --sair-salvando                      ao fim da duração, sai com um salvamento em segundo plano rodando (testes)
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
 ##   --sem-atalho                         não liga o atalho global (que o jogo de verdade liga sozinho)
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
@@ -46,6 +47,7 @@ const MUNDO := Rect2i(0, FAIXA, 480, 160)
 const ESCALA_MIN := 2
 const ESCALA_MAX := 4
 const FPS_VISIVEL := 30
+const FPS_DEVAGAR := 20  # em 1x e na pausa (ninguém anda rápido): menos CPU no canto da tela
 const FPS_ESCONDIDA := 4  # o mundo anda 1 passo a cada 112 s; não precisa de mais
 const ARQUIVO_CONFIG := "user://moldura.cfg"
 
@@ -56,6 +58,7 @@ var _usar_config := true
 var _bandeja: StatusIndicator
 var _atalho_pid := 0
 var _avisou_esconder := false
+var _sair_salvando := false  # --sair-salvando: ao fim de --duracao, sai durante um salvar_async (testes)
 var _atalho_saida: FileAccess
 var _atalho_leitor: Thread
 var _largura_alca := 0
@@ -67,6 +70,7 @@ var _largura_alca := 0
 func _ready() -> void:
 	var args := _ler_argumentos()
 	_duracao = float(args.get("duracao", "0"))
+	_sair_salvando = args.has("sair-salvando")
 	_usar_config = not args.has("sem-config")
 	if args.has("sem-foco"):
 		get_window().unfocusable = true
@@ -74,6 +78,7 @@ func _ready() -> void:
 	DisplayServer.set_icon(icone)
 
 	var tela := DisplayServer.window_get_current_screen()
+	_log("pasta de dados=%s" % OS.get_user_data_dir())  # no jogo exportado, a pasta própria (project.godot)
 	_log("renderizador=%s adaptador=%s dpi=%d" % [
 		RenderingServer.get_current_rendering_driver_name(),
 		RenderingServer.get_video_adapter_name(), DisplayServer.screen_get_dpi(tela)])
@@ -204,12 +209,23 @@ func _process(delta: float) -> void:
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
 		mostrar()
+	if not escondida:  # os quadros por segundo acompanham o ritmo
+		var fps: int = FPS_DEVAGAR if vista.sim and vista.sim.ritmo in [Simulacao.Ritmo.NORMAL, Simulacao.Ritmo.PAUSA] else FPS_VISIVEL
+		if Engine.max_fps != fps:
+			Engine.max_fps = fps
+	var t_m := Time.get_ticks_usec()  # DEPURAR_TEMPO
 	vista.avancar(delta, not escondida)
+	var t_v := Time.get_ticks_usec()  # DEPURAR_TEMPO
 	if not escondida:
 		interface.avancar(delta)
+	if vista._medindo:  # DEPURAR_TEMPO
+		vista._tempos["M_vista_total"] = vista._tempos.get("M_vista_total", 0) + t_v - t_m
+		vista._tempos["M_interface"] = vista._tempos.get("M_interface", 0) + Time.get_ticks_usec() - t_v
 	if _duracao > 0.0:
 		_duracao -= delta
 		if _duracao <= 0.0:
+			if _sair_salvando and vista.sim:  # teste: fecha com o salvamento em segundo plano ainda rodando
+				vista.sim.salvar_async()
 			sair()
 
 
@@ -218,6 +234,8 @@ func _notification(what: int) -> void:
 		_guardar_config()
 		if vista.sim:
 			vista.sim.salvar()
+			vista.sim.encerrar()
+		_parar_atalho_global()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -294,12 +312,15 @@ func sair() -> void:
 	_guardar_config()
 	if vista.sim:
 		vista.sim.salvar()
+		vista.sim.encerrar()
 	_parar_atalho_global()
 	get_tree().quit()
 
 
 ## Também quando o jogo fecha por outro caminho (a captura dos testes, por exemplo).
 func _exit_tree() -> void:
+	if vista and vista.sim:
+		vista.sim.encerrar()
 	_parar_atalho_global()
 
 
