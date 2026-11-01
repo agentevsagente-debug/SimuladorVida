@@ -13,7 +13,7 @@ from pathlib import Path
 
 ARTE = Path(__file__).resolve().parents[1] / "arte"
 PASTAS = ["terreno", "estagio1", "estagio2", "estagio3", "estagio4", "estagio5", "estagio6", "memoria",
-          "camadas", "habitantes", "acoes", "objetos", "estacoes", "ceu", "culturas", "natureza"]
+          "camadas", "habitantes", "acoes", "objetos", "estacoes", "ceu", "culturas", "natureza", "nuvens"]
 MANTER = {"fogueira_acesa_4q.png", "fogueira_apagada.png", "luz_fogueira.png", "luz_fogueira_halo.png"}
 
 

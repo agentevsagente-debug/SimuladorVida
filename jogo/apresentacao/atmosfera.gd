@@ -131,10 +131,15 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 			vista.tremer(1.5 + 1.5 * f)
 			if not discreto:
 				fosco.emitir("fenda_4q", 16, 4, Vector2(x, chao + 16), Vector2.ZERO, 4.0)
-			for i in int(3 + 3 * f):
-				var px := x + _rng.randf_range(-50.0, 50.0)
-				fosco.emitir("poeira_terremoto_4q", 32, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
-					_rng.randf_range(1.2, 2.2))
+			# nuvens de poeira soltas: cada uma no seu trecho, em alturas, quadros,
+			# derivas e durações diferentes, para não enfileirar
+			var n := int(3 + 3 * f)
+			for i in n:
+				var px := x - 50.0 + (i + _rng.randf_range(0.15, 0.85)) * 100.0 / n
+				var py: float = vista.chao(int(px)) + 1 - _rng.randf_range(0.0, 7.0)
+				fosco.emitir("poeira_terremoto_4q", 32, 4, Vector2(px, py),
+					Vector2(_rng.randf_range(-5.0, 5.0), -_rng.randf_range(0.0, 3.0)), _rng.randf_range(1.2, 2.4),
+					_rng.randf_range(3.0, 5.0), _rng.randi_range(0, 3), {"espelho": _rng.randf() < 0.5})
 			for i in int(6 + 6 * f):
 				var px := x + _rng.randf_range(-60.0, 60.0)
 				fosco.emitir("pedras_caindo_3v", 4, 3, Vector2(px, _rng.randf_range(50, 90)),
@@ -147,9 +152,14 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 				"eclipse":  # o disco escuro sobre o sol (o céu vira o de eclipse)
 					luminoso.emitir("eclipse_4q", 16, 4, Vector2(70, 30), Vector2.ZERO, 12.0)
 				_:
-					for i in 18:
-						luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(_rng.randf_range(20, 460), _rng.randf_range(10, 60)),
-							Vector2(_rng.randf_range(-3, 3), _rng.randf_range(-2, 2)), _rng.randf_range(3, 7), 5.0, i)
+					# luzes: cortinas de brilhos que ondulam pelo céu todo, por vários segundos
+					for i in 54:
+						var faixa := i % 3
+						var px := _rng.randf_range(10, 470)
+						var py := 14.0 + faixa * 12.0 + 6.0 * sin(px / 40.0 + faixa) + _rng.randf_range(-3, 3)
+						luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(px, py),
+							Vector2(_rng.randf_range(-4, 4), _rng.randf_range(-1, 1)), _rng.randf_range(5, 10), 5.0, i,
+							{"zigue": _rng.randf_range(1, 3)})
 		"cura":  # luz suave que desce sobre quem é curado
 			var px := alvo if alvo >= 0.0 else x
 			var c: int = vista.chao(int(px))
@@ -168,6 +178,11 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 
 func chovendo() -> bool:
 	return _nuvens_em.x >= 0
+
+
+## Chuva forte (dilúvio) caindo agora.
+func diluvio() -> bool:
+	return chovendo() and _chuva_forte
 
 
 func em_clarao() -> bool:

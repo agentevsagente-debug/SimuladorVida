@@ -107,6 +107,7 @@ var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
 var _ceu_especial := ""    # "seca" ou "eclipse": troca o céu de dia
 var _eclipse_ate := -1
+var _seca_ate := -1          # a seca do deus amarela o céu logo depois do gesto
 var _camera_aplicada := [-1, Vector2(-1, -1)]
 
 
@@ -187,7 +188,12 @@ func avancar(delta: float, desenhar: bool) -> void:
 	if _ceu:
 		var meio: int = _estado[0] if _estado[2] < 0.5 else _estado[1]
 		_ceu.mostrar_sol = _estado[3] == ""
-		_ceu.avancar(delta, _hora(), ESTADOS[meio], int(sim.tempo.get("dia", 1)),
+		var clima_ceu: String = ESTADOS[meio]
+		if _estado[3] in ["tempestade", "diluvio"] and meio != NOITE:
+			clima_ceu = "tempestade"
+		elif _estado[3] == "seca" and meio == DIA:
+			clima_ceu = "seca"
+		_ceu.avancar(delta, _hora(), clima_ceu, int(sim.tempo.get("dia", 1)),
 			not sim.clima.get("tempestade", {}).is_empty() or _atmosfera.chovendo())
 	if _capturar != "" and _relogio >= _capturar_apos + _gravados * _intervalo:
 		_quadros_ate_capturar -= 1
@@ -270,6 +276,7 @@ func _ao_trocar_mundo() -> void:
 	_vida = Vida.new(self, sim)
 	seguindo = false
 	_eclipse_ate = -1
+	_seca_ate = -1
 	_refazer = true
 
 
@@ -288,6 +295,8 @@ func _ao_receber_eventos(eventos: Array) -> void:
 					alvo, modo_discreto, d)
 				if ev["tipo"] == "pressagio" and d.get("forma", "") == "eclipse":
 					_eclipse_ate = sim.mundo.passo + 3
+				if ev["tipo"] == "seca_divina":  # de 4 a 10 horas, conforme o grau
+					_seca_ate = sim.mundo.passo + {"sinal": 4, "milagre": 7, "imposicao": 10}.get(String(d.get("grau", "sinal")), 4)
 
 
 # --- montagem -----------------------------------------------------------
@@ -741,7 +750,11 @@ func _atualizar_horario() -> void:
 	var especial := ""
 	if sim and _eclipse_ate >= sim.mundo.passo:
 		especial = "eclipse"
-	elif sim and sim.clima.get("seca", false):
+	elif sim and _atmosfera.diluvio():
+		especial = "diluvio"
+	elif sim and (not sim.clima.get("tempestade", {}).is_empty() or _atmosfera.chovendo()):
+		especial = "tempestade"
+	elif sim and (sim.clima.get("seca", false) or _seca_ate >= sim.mundo.passo):
 		especial = "seca"
 	e.append(especial)
 	if e == _estado:
@@ -763,9 +776,10 @@ func _atualizar_horario() -> void:
 		m.set_shader_parameter("descendo", descendo)
 
 
-## O céu de dia vira o de seca ou o de eclipse quando é o caso.
+## O céu de dia vira o de seca ou o de eclipse quando é o caso; com chuva, o
+## de tempestade (ou o de dilúvio) cobre também o entardecer.
 func _nome_fundo(i: int, estado: int, especial: String) -> String:
-	if i == 0 and estado == DIA and especial != "":
+	if i == 0 and especial != "" and (estado == DIA or (estado == ENTARDECER and especial in ["tempestade", "diluvio"])):
 		return "ceu_" + especial
 	return "%s_%s" % [FUNDOS[i], ESTADOS[estado]]
 

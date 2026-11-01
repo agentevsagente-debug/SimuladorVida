@@ -2,29 +2,34 @@ extends Node2D
 ## O céu vivo, desenhado sobre o degradê e atrás das montanhas: nuvens em 3
 ## camadas de profundidade, sol e lua em arco ligados ao relógio, a lua com
 ## fases, estrelas que surgem aos poucos, giram devagar e cintilam, e uma
-## estrela cadente de vez em quando. As peças vêm de jogo/ferramentas/
-## preparar_ceu.py (nuvens e estrelas da arte da sessão C); sol e lua são
-## desenhados aqui. Tudo em pixel inteiro, e só pede desenho quando algum pixel
-## muda. Usa um sorteio próprio, nunca o do núcleo.
+## estrela cadente de vez em quando. As nuvens são as soltas da arte
+## (arte/nuvens/, LEIA-ME seção 21), em 3 tamanhos por camada e um desenho
+## por clima; as estrelas vêm de jogo/ferramentas/preparar_ceu.py; sol e lua
+## são desenhados aqui. Tudo em pixel inteiro, e só pede desenho quando algum
+## pixel muda. Usa um sorteio próprio, nunca o do núcleo.
 
 const Arte = preload("res://apresentacao/arte.gd")
 
-## camada -> [px por segundo, faixa de altura, quantas]
-const CAMADAS := {"longe": [1.0 / 20.0, Vector2(6, 28), 4], "meio": [1.0 / 8.0, Vector2(12, 40), 3],
-	"perto": [1.0 / 3.0, Vector2(18, 48), 2]}
+## camada -> [px por segundo, faixa de altura (topo da nuvem), quantas]
+const CAMADAS := {"longe": [1.0 / 20.0, Vector2(4, 30), 4], "meio": [1.0 / 8.0, Vector2(10, 40), 3],
+	"perto": [1.0 / 3.0, Vector2(16, 48), 2]}
 const ORDEM := ["longe", "meio", "perto"]
+const TAMANHOS := ["p", "m", "g"]
+## As nuvens de uma camada andam juntas numa volta de 540 px (30 além de cada
+## borda), cada uma na sua vaga: assim nunca se encavalam.
+const VOLTA := 540.0
+const CLIMAS := ["dia", "entardecer", "noite", "tempestade", "seca"]
 const HORIZONTE := 104.0      # onde o sol e a lua nascem e se põem (atrás das montanhas)
 const ALTURA_ARCO := 86.0
 const PIVO_ESTRELAS := Vector2(240, 300)  # o céu gira em volta de um ponto abaixo do horizonte
 
 var vista: Node2D
-var estado := "dia"           # "dia", "entardecer" ou "noite": as nuvens e o sol desse horário
+var clima := "dia"            # o desenho das nuvens: dia, entardecer, noite, tempestade ou seca
 var _rng := RandomNumberGenerator.new()
-var _folhas := {}             # céu -> Texture2D das nuvens
-var _formas := {}             # céu -> {camada -> [regiões]}
+var _tex_nuvem := {}          # "clima_camada_tamanho" -> Texture2D
 var _estrelas: Array = []     # [{x, y, sx, w, h, brilho}] em ordem de brilho
 var _tex_estrelas: Texture2D
-var _nuvens: Array = []       # [{camada, i, x, y, espelho}]
+var _nuvens: Array = []       # [{camada, t, pos (0..VOLTA), y, espelho}]
 var _sol := {}                # estilo -> Texture2D
 var _lua: Texture2D
 var _fase_lua := -1
@@ -53,21 +58,11 @@ func criar(p_vista: Node2D) -> void:
 	_sol["entardecer"] = _fazer_sol(9, 31, 22, -1)
 
 
-func _folha(ceu: String) -> String:
-	var nome := ceu
-	if Arte.estacao == "inverno" and ceu != "noite":
-		nome += "_inverno"
-	if not _folhas.has(nome):
-		_folhas[nome] = ImageTexture.create_from_image(Arte.imagem("ceu/nuvens_%s.png" % nome))
-		var regioes: Array = Arte.json("ceu/nuvens_%s.json" % nome)
-		var por := {"longe": [], "meio": [], "perto": []}
-		for r in regioes:
-			por[r["camada"]].append(r)
-		for c in ORDEM:  # camada sem forma usa as da camada vizinha
-			if por[c].is_empty():
-				por[c] = por["meio"] if not por["meio"].is_empty() else por["longe"] + por["perto"]
-		_formas[nome] = por
-	return nome
+func _textura_nuvem(camada: String, t: String) -> Texture2D:
+	var nome := "nuvem_%s_%s_%s" % [clima, camada, t]
+	if not _tex_nuvem.has(nome):
+		_tex_nuvem[nome] = ImageTexture.create_from_image(Arte.imagem("nuvens/%s.png" % nome))
+	return _tex_nuvem[nome]
 
 
 ## Disco do sol, com borda e halo pontilhado (como na arte da sessão C).
@@ -107,39 +102,38 @@ func _fazer_lua(f: float) -> Texture2D:
 	return ImageTexture.create_from_image(img)
 
 
-## Nuvens novas espalhadas pelo céu, com formas, alturas e lados variados.
-func _espalhar_nuvens(nome: String) -> void:
+## Nuvens espalhadas pelo céu, com tamanhos, alturas e lados sorteados. Cada
+## uma fica numa vaga da volta da sua camada, com folga para a vizinha. Os
+## tamanhos são os mesmos em todos os climas, então a troca de clima só troca
+## o desenho, sem mexer nas nuvens.
+func _espalhar_nuvens() -> void:
 	_nuvens.clear()
 	for camada in ORDEM:
-		var formas: Array = _formas[nome][camada]
-		if formas.is_empty():
-			continue
 		var regra: Array = CAMADAS[camada]
+		var vaga: float = VOLTA / regra[2]
+		var inicio := _rng.randf_range(0.0, vaga)
 		for k in regra[2]:
-			var i := _rng.randi_range(0, formas.size() - 1)
-			_nuvens.append({"camada": camada, "i": i, "x": _rng.randf_range(-40, 480),
+			var t: String = TAMANHOS[_rng.randi_range(0, 2)]
+			var largura := _textura_nuvem(camada, t).get_width()
+			var folga := maxf(0.0, vaga - largura - 6.0)
+			_nuvens.append({"camada": camada, "t": t, "pos": fposmod(inicio + k * vaga + _rng.randf_range(0.0, folga), VOLTA),
 				"y": _rng.randf_range(regra[1].x, regra[1].y), "espelho": _rng.randf() < 0.5})
 
 
-func avancar(delta: float, hora: float, p_estado: String, dia: int, tempestade: bool) -> void:
+## `p_clima`: dia, entardecer ou noite pelo horário, ou tempestade e seca.
+func avancar(delta: float, hora: float, p_clima: String, dia: int, tempestade: bool) -> void:
 	_relogio += delta
 	_hora = hora
-	var nome := _folha(p_estado)
-	if p_estado != estado or _nuvens.is_empty():
-		estado = p_estado
-		_espalhar_nuvens(nome)
+	clima = p_clima if p_clima in CLIMAS else "dia"
+	if _nuvens.is_empty():
+		_espalhar_nuvens()
 	if dia != _dia:  # o vento muda de direção de um dia para outro
 		_dia = dia
 		_vento = 1.0 if hash(dia) % 2 == 0 else -1.0
 		_fase_lua = -1
 	var forca := 4.0 if tempestade else 1.0
 	for n in _nuvens:
-		var r: Dictionary = _formas[nome][n.camada][n.i % _formas[nome][n.camada].size()]
-		n.x += CAMADAS[n.camada][0] * _vento * forca * delta
-		if n.x > 480 + 2:
-			n.x = -r["w"] - 2.0
-		elif n.x < -r["w"] - 2:
-			n.x = 482.0
+		n.pos = fposmod(n.pos + CAMADAS[n.camada][0] * _vento * forca * delta, VOLTA)
 	# estrelas: surgem aos poucos ao anoitecer (as mais fortes primeiro) e somem de madrugada
 	var noite := 0.0
 	if hora >= 19.0:
@@ -166,9 +160,9 @@ func avancar(delta: float, hora: float, p_estado: String, dia: int, tempestade: 
 	if int(fase * 10) != _fase_lua:
 		_fase_lua = int(fase * 10)
 		_lua = _fazer_lua(fase)
-	var assinatura := [estado, _visiveis, snappedf(_giro, 0.004), int(_relogio * 1.5), mostrar_sol, _fase_lua]
+	var assinatura := [clima, _visiveis, snappedf(_giro, 0.004), int(_relogio * 1.5), mostrar_sol, _fase_lua]
 	for n in _nuvens:
-		assinatura.append(floori(n.x))
+		assinatura.append(floori(n.pos))
 	assinatura.append(_posicao_astro(hora, 6.0))
 	assinatura.append(_posicao_astro(hora, 18.0))
 	if not _cadente.is_empty():
@@ -209,19 +203,15 @@ func _draw() -> void:
 		var tex: Texture2D = _sol["entardecer" if (_hora < 8.0 or _hora > 16.0) else "dia"]
 		draw_texture(tex, Vector2(sol) - tex.get_size() / 2)
 	# nuvens: longe primeiro, perto por cima
-	var nome := _folha(estado)
-	var tex_n: Texture2D = _folhas[nome]
 	for camada in ORDEM:
 		for n in _nuvens:
 			if n.camada != camada:
 				continue
-			var formas: Array = _formas[nome][camada]
-			var r: Dictionary = formas[n.i % formas.size()]
-			var pos := Vector2(floori(n.x), floori(n.y))
-			var origem := Rect2(r["sx"], 0, r["w"], r["h"])
+			var tex := _textura_nuvem(camada, n.t)
+			var pos := Vector2(floori(n.pos) - 30, floori(n.y))
 			if n.espelho:
-				draw_set_transform(pos + Vector2(r["w"], 0), 0.0, Vector2(-1, 1))
-				draw_texture_rect_region(tex_n, Rect2(Vector2.ZERO, Vector2(r["w"], r["h"])), origem)
+				draw_set_transform(pos + Vector2(tex.get_width(), 0), 0.0, Vector2(-1, 1))
+				draw_texture(tex, Vector2.ZERO)
 				draw_set_transform(Vector2.ZERO)
 			else:
-				draw_texture_rect_region(tex_n, Rect2(pos, Vector2(r["w"], r["h"])), origem)
+				draw_texture(tex, pos)

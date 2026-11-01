@@ -2,14 +2,16 @@
 //
 // Todas as peças vêm nas cores de dia. O horário passa de um estado a outro
 // (A e B: 0 dia, 1 entardecer, 2 noite) com a fração t. No céu, como uma frente:
-// a noite desce do alto, a manhã sobe do horizonte, e só numa faixa de 2 linhas
-// na própria frente há pontilhado. Montanhas, chão e pessoas trocam inteiros no
+// a noite desce do alto, a manhã sobe do horizonte, e só numa faixa de 14
+// linhas na própria frente há pontilhado, rareando (sem emenda reta). Montanhas, chão e pessoas trocam inteiros no
 // meio da transição. Nunca há uma grade sobre a tela inteira. As regras de cada plano seguem montagem/montar.py
 // (noite) e alvo/cena.py (entardecer).
 shader_type canvas_item;
 
 // Linhas da textura de tabelas (32 colunas, uma por cor da paleta).
 const int DIA = 0;
+// Largura, em linhas, da faixa pontilhada na frente da troca de horário do céu.
+const float BORDA = 14.0;
 const int ENTARDECER = 1;
 const int NOITE = 2;
 const int FOGO_MEDIO = 3;
@@ -112,10 +114,11 @@ int linha_de_luz(int n) {
 
 void fragment() {
 	ivec2 p = ivec2(floor(pos));
-	// a frente: as linhas já alcançadas usam B; 2 linhas de pontilhado na borda
-	float frente = t * 164.0;
+	// a frente: as linhas já alcançadas usam B; uma faixa de BORDA linhas de
+	// pontilhado que vai rareando, como as faixas do céu da cena-alvo
+	float frente = t * (160.0 + BORDA);
 	float y = descendo ? float(p.y) : 159.0 - float(p.y);
-	bool usa_b = frente_ativa ? t > 0.0 && (y < frente - 2.0 || (y < frente && bayer(p) < (frente - y) / 2.0))
+	bool usa_b = frente_ativa ? t > 0.0 && (y < frente - BORDA || (y < frente && bayer(p) < (frente - y) / BORDA))
 		: t >= 0.5;
 	int estado = usa_b ? estado_b : estado_a;
 	vec4 cor = texture(TEXTURE, UV);
