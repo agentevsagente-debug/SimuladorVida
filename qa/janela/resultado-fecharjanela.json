@@ -1,0 +1,92 @@
+﻿[
+    {
+        "abertura":  1,
+        "segundos":  6,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  2,
+        "segundos":  9,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  3,
+        "segundos":  13,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  4,
+        "segundos":  17,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  5,
+        "segundos":  22,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  6,
+        "segundos":  27,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  7,
+        "segundos":  31,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  8,
+        "segundos":  38,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  9,
+        "segundos":  44,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  10,
+        "segundos":  52,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    }
+]

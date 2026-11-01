@@ -45,8 +45,8 @@
 | QA-023 | **Dado** o mesmo poder usado em zonas diferentes, ou com mais de 3 dias entre os usos, **então** não vira imposição. | API Grau | N | AN |
 | QA-024 | **Dado** um poder com intensidade fora de 0..1 ou x fora do mundo, **então** não quebra: o valor é limitado e o gesto funciona. | robustez | N | AN |
 | QA-025 | **Dado** um nome de poder que não existe, **então** `ok` é falso, com motivo. | robustez | N | AN |
-| QA-026 | **Dado** cada poder, **quando** usado, **então** gera um evento com `x`, `grau` e `intensidade`, e a camada é nota ou chamado. | API Poderes | B | AN |
-| QA-027 | **Dado** o raio de milagre sobre uma pessoa (x dela), **então** ela morre e a reação é lida (castigo, mártir ou azar). | FUN "Atingir uma pessoa" | N | AN |
+| QA-026 | **Dado** cada poder, **quando** usado, **então** gera um evento com `x`, `grau` e `intensidade`, e a camada é nota ou chamado. | API Poderes | N | AN |
+| QA-027 | **Dado** o raio de milagre sobre uma pessoa (x dela), **então** ela morre e a reação é lida (castigo, mártir ou azar). | FUN "Atingir uma pessoa" | B | AN |
 | QA-028 | **Dado** o raio de sinal sobre uma pessoa, **então** ninguém morre. | API Raio | N | AN |
 | QA-029 | **Dado** uma prece de frio, **quando** o fogo vem com intensidade abaixo de 0,35, **então** é fogo brando: aquece, não queima e atende a prece; com 0,35 ou mais, queima. | FUN "O fogo brando atende o frio" | N | AN |
 | QA-030 | **Dado** a cura sobre um doente, **então** ele se levanta; a cura imposta cura todos os doentes do povo. | FUN Poderes, API | N | AN |
@@ -135,12 +135,13 @@
 | QA-101 | **Dado** o arquivo salvo, **então** é texto legível e guarda a hora real do salvamento. | TEC Persistência | N | AN |
 | QA-102 | **Dado** o `mundo.txt` cortado, vazio, com lixo, só com o cabeçalho ou binário, e uma cópia boa, **então** `carregar()` volta da cópia e diz de onde (`recuperado_de`), e o relato da ausência avisa. | API Cópias | B | AN |
 | QA-103 | **Dado** o `mundo.txt` e as 3 cópias estragados, **então** `carregar()` devolve null sem quebrar. | API Cópias | B | AN |
-| QA-104 | **Dado** um mundo salvo por uma versão mais nova do jogo (versão do arquivo desconhecida), **então** o jogo não perde esse mundo: não o sobrescreve sem avisar. | robustez | B | AN |
-| QA-105 | **Dado** que nenhum mundo salvo pôde ser lido, **quando** o jogo cria um mundo novo e salva 4 vezes, **então** os arquivos antigos (que talvez uma versão futura leia) não são apagados sem aviso ao jogador. | robustez, perda de dados | B | AN + AJ |
+| QA-104 | **Dado** um mundo salvo por uma versão mais nova do jogo (versão do arquivo desconhecida), **então** o jogo não perde esse mundo: não o sobrescreve sem avisar. | robustez | N | AN |
+| QA-105 | **Dado** que nenhum mundo salvo pôde ser lido, **quando** o jogo cria um mundo novo e salva 4 vezes, **então** os arquivos antigos (que talvez uma versão futura leia) não são apagados sem aviso ao jogador. | robustez, perda de dados | N | AN + AJ |
 | QA-106 | **Dado** só as cópias (sem `mundo.txt`), **então** `existe()` é verdadeiro e `carregar()` volta da cópia. | API | N | AN |
 | QA-107 | **Dado** `salvar_async` em andamento, **quando** o mundo avança, **então** espera a gravação e o arquivo final é válido. | API Salvar sem travar | N | AN |
 | QA-108 | **Dado** o índice da estante estragado, **então** a estante se refaz a partir dos livros, sem perder nenhum. | API Estante | B | AN |
 | QA-109 | **Dado** um mundo com livro fechado, **quando** ele é salvo em qualquer caminho, **então** o livro vai para a estante que acompanha esse caminho (não para a estante do jogador quando o caminho é de teste). | testabilidade, isolamento | N | AN |
+| QA-111 | **Dado** o mesmo arquivo salvo, **quando** é carregado 6 vezes e avançado do mesmo jeito, **então** o sorteio e a crônica são os mesmos nas 6 vezes. | TEC Determinismo, API Persistência | N | AN |
 | QA-110 | **Dado** um mundo salvo com o arquivo dos antigos faltando, **então** o carregamento volta de uma cópia ou devolve null, sem quebrar. | API Antigos | N | AN |
 
 ## 11. Fim do mundo, mundo vazio, criar povo e ruínas
@@ -158,6 +159,7 @@
 | QA-128 | **Dado** o fim, **quando** o mundo é salvo e carregado, **então** continua vazio, com o livro e a era. | FUN Fim do mundo | B | AN |
 | QA-129 | **Dado** o jogo em janela, **quando** todos morrem, **então** aparece "Não resta ninguém" e o botão vira criar povo. | FUN Fim do mundo | B | AJ (`--extinguir`) |
 | QA-130 | **Dado** um dilúvio que poupa alguém, **então** o quase fim é possível. | FUN "Um quase fim" | N | AN |
+| QA-131 | **Dado** que o último morre às 10h pelo raio do deus, **quando** passa 1 hora, **então** o mundo já está vazio (`fim_do_mundo`) e criar povo já funciona, sem esperar a meia-noite. | FUN "Criar um novo povo só com o mundo vazio" | B | AN |
 
 ## 12. Estante e abandono
 
@@ -196,7 +198,7 @@
 |---|---|---|---|---|
 | QA-170 | **Dado** o passo da simulação com a população máxima, **então** nenhum passo passa de 5 ms. | API Custo | N | AN (amostra; a regressão de A mede por inteiro) |
 | QA-171 | **Dado** o jogo visível em 1x com um mundo novo, **então** a CPU fica abaixo de 8% de um núcleo. | orquestrador | B | AJ |
-| QA-172 | **Dado** o jogo visível em 1x com um mundo de 200 anos, **então** a CPU fica abaixo de 8% de um núcleo. | orquestrador | B | AJ |
+| QA-172 | **Dado** o jogo visível em 1x com um mundo de 200 anos, **então** a CPU fica abaixo de 8% de um núcleo. | orquestrador | N | AJ |
 | QA-173 | **Dado** o jogo escondido, **então** a CPU fica perto de 0. | TEC Leveza | N | M (precisa esconder) |
 | QA-174 | **Dado** o jogo, **então** desenha no máximo 30 quadros por segundo. | TEC Leveza | N | AJ (`project.godot`) |
 | QA-175 | **Dado** o jogo, **então** a memória fica abaixo de 200 MB (meta do documento; o usuário aceitou passar no conjunto de trabalho). | TEC Leveza | N | AJ |

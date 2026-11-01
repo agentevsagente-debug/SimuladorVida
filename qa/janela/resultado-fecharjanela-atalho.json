@@ -1,0 +1,112 @@
+﻿[
+    {
+        "abertura":  1,
+        "segundos":  6,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  2,
+        "segundos":  9,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  3,
+        "segundos":  13,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  4,
+        "segundos":  17,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  5,
+        "segundos":  22,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  6,
+        "segundos":  27,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  7,
+        "segundos":  31,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  8,
+        "segundos":  38,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  9,
+        "segundos":  44,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  10,
+        "segundos":  52,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "mensagem_entregue":  true,
+        "codigo":  "0",
+        "salvou":  true,
+        "salvando_em_segundo_plano":  true,
+        "erros":  ""
+    }
+]

@@ -1,0 +1,62 @@
+﻿[
+    {
+        "abertura":  1,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  2,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  3,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  4,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    },
+    {
+        "abertura":  5,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-novo",
+        "codigo":  "0",
+        "salvou":  false,
+        "carregou":  false,
+        "erros":  ""
+    },
+    {
+        "abertura":  6,
+        "atalho":  true,
+        "auxiliares_orfaos":  0,
+        "modo":  "mundo-salvo",
+        "codigo":  "0",
+        "salvou":  true,
+        "carregou":  true,
+        "erros":  ""
+    }
+]

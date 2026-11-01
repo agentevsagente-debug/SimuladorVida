@@ -1,0 +1,408 @@
+# Relatório de QA (sessão D)
+
+*Primeira rodada, 01/11/2026, sobre a branch `claude/qa-cenarios-3b8628` (a `main` em `ae1faa8`). A fonte de verdade é o documento funcional. A matriz completa está em `qa/cenarios.md`.*
+
+## Números
+
+| | Quantos |
+|---|---|
+| Cenários na matriz | 122 |
+| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
+| Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 11 |
+| Só manuais (precisam de mouse e teclado, à espera da liberação) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
+| **Passam** | **94** |
+| **Falham** | **16** (14 no núcleo e 2 em janela), de 14 defeitos |
+| Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
+
+**Por área:**
+
+| Área | Cenários | Passam | Falham | Pulados | Manuais, não rodados |
+|---|---|---|---|---|---|
+| Começo do mundo | 5 | 4 | 1 | 0 | 0 |
+| Cotidiano | 10 | 8 | 1 | 0 | 1 |
+| Os 11 poderes e as 3 intensidades | 18 | 15 | 2 | 0 | 1 |
+| Preces e respostas | 9 | 9 | 0 | 0 | 0 |
+| Religião, crença e nome do deus | 5 | 4 | 0 | 1 | 0 |
+| Culturas | 6 | 5 | 1 | 0 | 0 |
+| Estágios 1 a 6 e regressão | 5 | 5 | 0 | 0 | 0 |
+| Linhagem acompanhada | 5 | 4 | 0 | 0 | 1 |
+| Ausência e teto de 1 ano | 9 | 8 | 1 | 0 | 0 |
+| Persistência e saves corrompidos | 12 | 8 | 3 | 1 | 0 |
+| Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 9 | 2 | 1 | 0 |
+| Estante e abandono | 6 | 6 | 0 | 0 | 0 |
+| Modo discreto | 3 | 2 | 0 | 0 | 1 |
+| Moldura (esconder, escala, passagem do mouse) | 7 | 2 | 1 | 0 | 4 |
+| Leveza | 7 | 4 | 2 | 0 | 1 |
+| Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
+| **Total** | **122** | **94** | **16** | **3** | **9** |
+
+**Os defeitos, do mais grave ao mais leve:**
+
+| # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
+|---|---|---|---|---|
+| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | não para os amigos; para o processo, sim (corrigir já) | A |
+| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela | alta | **sim** | A |
+| D-03 | Quando o último morre, o mundo só fica vazio na virada do dia (até ~28 min em 1x) | média | **sim** | A, B |
+| D-04 | O jogo não mostra o número da versão | média | **sim** (B3 da auditoria 11) | B |
+| D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
+| D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
+| D-08 | Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x | média | não | B, A |
+| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | não (decisão) | A, B |
+| D-10 | A noite dura 18,75 min reais, e o documento diz 15 | baixa | não | A |
+| D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A |
+| D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
+| D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A |
+| D-14 | Os testes de QA iriam dentro do executável | baixa | não | B |
+
+A saída completa da última rodada está em `qa/ultima-rodada.txt`, e os resultados em janela em `qa/janela/resultado-*.json`.
+
+## Defeitos
+
+Gravidade:
+- **alta:** perde dados, ou quebra uma promessa central na frente do jogador;
+- **média:** o jogador percebe, mas contorna;
+- **baixa:** inconsistência com o documento ou com a API, sem efeito visível grave.
+
+"Bloqueia" é a minha proposta para a 0.1; quem decide é o orquestrador.
+
+### D-01. A estante real do jogador é escrita e apagada pelos testes do núcleo
+**Cenários:** QA-109, QA-182 · **Gravidade:** alta · **Bloqueia:** não (os amigos não rodam as ferramentas), mas ameaça agora a estante do usuário nesta máquina · **Área:** A
+
+- **Passos:**
+  1. `Persistencia.salvar(mundo_com_livro_fechado, "user://qualquer/teste.txt")`;
+  2. olhar `user://estante`.
+- **Esperado:** um mundo salvo num caminho de teste não escreve na estante do jogador, e nenhuma ferramenta apaga a estante do jogador.
+- **Obtido:**
+  - `_preparar()` e `abandonar()` chamam `Estante.guardar(livro)` sem a pasta, então o livro vai sempre para `user://estante`, a estante real. A bateria confirma: 0 → 1 livro.
+  - `testar_fase2.gd` usa `PASTA := "user://estante"` e `_limpar_estante()` **apaga todos os arquivos** dessa pasta, no começo e no fim.
+  - Gravam livros na estante real, além dele: `testar_persistencia.gd`, `testar_antigos.gd`, `resistencia.gd` e `resistencia_ciclo.gd`. Esses só gravam, mas sujam a estante.
+- **Visto ao vivo nesta sessão, na pasta de dados real** (`%APPDATA%\Godot\app_userdata\Simulador de vida`):
+  - às 18h55, a estante estava vazia, com a pasta modificada às 18h52;
+  - às 19h10, tinha 7 livros (`001` a `007`, sementes 1, 4 e 5) e `teste_fim.txt` com as 3 cópias, vindos de um teste no worktree `fase0-simulacao-81d444`;
+  - no fim da sessão, tinha **4 livros diferentes** (`001` a `004`), ou seja, **foi apagada e regravada no meio**;
+  - se o usuário tivesse um livro de verdade ali, ele teria sumido.
+- **Sugestão:**
+  - a pasta da estante segue a pasta do mundo, por exemplo `caminho.get_base_dir() + "/estante"`, ou entra como parâmetro em `salvar` e `abandonar`;
+  - as ferramentas usam uma pasta de teste;
+  - ou rodam com `APPDATA` isolado, como `rodar_qa.gd`.
+
+### D-02. O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela
+**Cenário:** QA-027 · **Gravidade:** alta · **Bloqueia:** sim (proposta). "Atingir uma pessoa específica" é uma promessa central dos poderes · **Área:** A (ou A e B)
+
+- **Passos:**
+  1. `pessoas_visiveis()` às 10h;
+  2. `usar_poder("raio", posicao_de(id), 0.9)`.
+- **Esperado:** o raio de milagre atinge quem está sob o gesto (API: "a pessoa mais perto de x, se estiver a até 6 pixels").
+- **Obtido:**
+  - `alvo = -1`, e o raio cai no chão.
+  - `_pessoa_perto(x)` compara x com `agenda(id, h)[-1]["x1"]`, que é o ponto do **fim** da hora. Na tela, porém, a pessoa anda pelos trechos da agenda durante a hora inteira (112,5 s em 1x).
+  - Medido em 5 sementes, das 8h às 16h, com 540 pessoas acordadas:
+    - a pessoa está a mais de 6 px do ponto que o núcleo acerta durante **64%** do tempo;
+    - no meio da hora (`posicao_de`), 363 das 540 estão longe demais.
+  - Mirando o `x` do fim da hora, o raio mata (a mecânica funciona).
+- **Ressalva:** a estimativa interpola os trechos em linha reta. A vista anda a 7–11 px/s e espera no destino do trecho, então a porcentagem real pode ser um pouco menor. Mesmo assim, quem anda ou muda de trecho fica fora do alvo.
+- **Sugestão:**
+  - a apresentação passa a fração da hora (ou o id de quem está sob o cursor) para `usar_poder`, e o núcleo mira em `ro.instante(id, minuto)`;
+  - `_poder` já aceita `alvo`.
+
+### D-03. Quando o último morre, o mundo só fica vazio na virada do dia
+**Cenários:** QA-131, e por isso QA-129 · **Gravidade:** média · **Bloqueia:** sim (proposta). A extinção é uma promessa central, e a correção parece pequena · **Área:** A (e B para a tela)
+
+- **Passos:**
+  1. Às 10h, restando uma pessoa, o raio de milagre a mata (`populacao() == 0`).
+  2. Avançar 1 hora.
+- **Esperado:** `fim_do_mundo` verdadeiro, o evento `fim_do_mundo`, o livro fechado e `criar_povo()` funcionando.
+- **Obtido:**
+  - `fim_do_mundo` continua falso, e `criar_povo` recusa: "só se cria um povo com o mundo vazio";
+  - o fim só vem **15 horas de jogo depois**, no passo da 1h, porque `os_ultimos` e `fim_do_mundo` são conferidos só em `_novo_dia()`;
+  - em 1x, são **uns 28 minutos reais** com o mundo morto e sem o aviso "Não resta ninguém", sem o botão de criar povo e com os poderes ainda aceitos (`ok: true` sobre ninguém).
+- **Na tela:** a captura `QA-129-extincao.png`, 6 s depois do `--extinguir`, ainda mostra gente perto do fogo e nenhum aviso. É o R4 da auditoria 11.
+- **Sugestão:** conferir `populacao() == 0` (e `<= 5`) também ao fim de `usar_poder` e de cada passo, e não só na virada do dia.
+
+### D-04. O jogo não mostra o número da versão
+**Cenário:** QA-166 · **Gravidade:** média · **Bloqueia:** sim (é o B3 da auditoria 11) · **Área:** B
+
+- **Obtido:**
+  - `project.godot` não tem `config/version`;
+  - a versão 0.1.0.0 está só nas propriedades do `.exe` (`export_presets.cfg`);
+  - nenhum script da apresentação mostra uma versão.
+- **Esperado:** a versão visível, na dica do relógio ou na estante, para os relatos dos amigos.
+
+### D-05. Um mundo salvo que não se lê é sobrescrito em silêncio
+**Cenários:** QA-104, QA-105 · **Gravidade:** média · **Bloqueia:** não para a 0.1; precisa estar resolvido antes da primeira versão nova (0.2) · **Área:** B (o aviso) e A (não rodar as cópias por cima de um arquivo ilegível)
+
+- **Passos:**
+  1. Os 4 arquivos (`mundo.txt` e `.1` a `.3`) ficam ilegíveis para esta versão. Por exemplo, salvos por uma versão mais nova (`["versao", 99]`), ou todos estragados.
+  2. Abrir o jogo e deixá-lo correr 4 dias de jogo (3 h em 1x), que são 4 salvamentos.
+- **Esperado:**
+  - o jogador fica sabendo que o mundo dele não pôde ser aberto;
+  - o arquivo ilegível fica guardado à parte, por exemplo `mundo.ilegivel.txt`.
+- **Obtido:**
+  - `carregar()` devolve null, e `existe()` continua verdadeiro;
+  - `simulacao.iniciar()` cria um mundo novo sem nenhum aviso: não há nenhuma menção a `recuperado_de` ou "estragado" na apresentação;
+  - a cada salvamento, a rotação empurra os arquivos antigos, e depois de 4 salvamentos **nenhum dos 4 arquivos do mundo antigo existe mais** (0 de 4).
+- **Quando acontece:** um amigo que volta da 0.2 para a 0.1, ou um disco que estraga os 4 arquivos. As gravações interrompidas estão cobertas: QA-102 passa com o arquivo cortado, vazio, com lixo, só com o cabeçalho, binário, com o cabeçalho trocado e sem o fim.
+
+### D-06. Um mundo carregado do arquivo escreve a crônica com frases que mudam de uma vez para outra
+**Cenário:** QA-111 · **Gravidade:** média (o jogador não vê; mas quebra a reprodução de problemas e a promessa de determinismo) · **Bloqueia:** não · **Área:** A
+
+- **Passos:**
+  1. Semente 7, 10 anos; `Persistencia.salvar`.
+  2. Carregar o mesmo arquivo 6 vezes no mesmo processo. Em cada vez: deixar uma pessoa, fraca, e `avancar_ausencia(40 dias)`.
+- **Esperado:** os 6 relatos iguais. O documento técnico diz que "a mesma semente com os mesmos comandos produz o mesmo mundo", e a API diz que um mundo salvo e carregado "segue igual, passo a passo".
+- **Obtido:**
+  - o sorteio termina igual nas 6 vezes, mas o texto vem em **2 versões**;
+  - a frase do epitáfio de Suim sai ora "Foi quem deu ao deus o nome de «o Que Sacode»", ora "Tinha sido o primeiro a plantar";
+  - sem salvar e carregar, 3 processos dão sempre o mesmo texto;
+  - com salvar e carregar, 2 de 3 processos deram o outro;
+  - não depende do `salvo_em`: o mesmo `salvo_em` dá as duas versões.
+- **Leitura:** o sorteio é o mesmo, então a diferença está no estado do cronista ou da gramática depois de carregar. Algo é restaurado numa ordem que muda (um dicionário ou um conjunto) ou depende do relógio. `avancar_hora()` usa `Time.get_ticks_usec()` para decidir se adianta a preparação da hora seguinte: vale conferir se essa preparação toca a memória de frases.
+- **Nota:** a falha é intermitente. O teste carrega 6 vezes para pegá-la com alta probabilidade.
+
+### D-07. A thread da rotina leva mais de 1 s com 240 pessoas, e o passo espera por ela
+**Cenário:** QA-170 · **Gravidade:** média (risco nas máquinas dos amigos) · **Bloqueia:** não · **Área:** A
+
+- **Passos:** mundo da semente 3 no ano 250, com 240 pessoas; um passo, a consulta completa, e o passo seguinte depois de uma folga.
+- **Obtido:**
+
+  | Folga entre passos | Pior passo | Esperas pela thread |
+  |---|---|---|
+  | 0 ms | 6 ms | 0 (a rotina não é montada sem consulta entre passos) |
+  | 300 ms | **600 ms (0h) e 1095 ms (2h)** | 2 |
+  | 1500 ms | 7 ms | 0 |
+
+  - A primeira consulta depois do salto de 250 anos leva 1138 ms; a API diz cerca de 100 ms.
+  - O passo comum fica entre 3 e 7 ms, com a máquina a 18% de carga, por causa das outras sessões.
+- **Leitura:**
+  - a API diz de 60 a 220 ms de thread; aqui foram mais de 1 s;
+  - no 50x (2,25 s entre passos), não trava nesta máquina, de 28 núcleos;
+  - num notebook 2 a 3 vezes mais lento, o 50x travaria de 1 a 2 s uma ou duas vezes por dia de jogo.
+- **Na bateria (QA-170), com 2,25 s entre passos, como no 50x:**
+  - nenhuma espera pela thread;
+  - o passo das 22h ficou em 22 a 32 ms nas 3 rodadas, e os outros, de 3 a 8 ms;
+  - a meta da API é de 5 ms;
+  - a primeira consulta depois do salto levou de 1017 a 1253 ms.
+
+### D-08. Com o mundo velho, a CPU passa de 8% de um núcleo em 1x
+**Cenário:** QA-172 · **Gravidade:** média · **Bloqueia:** não para a 0.1 (os amigos começam com o mundo novo, que fica em 6%) · **Área:** B (o desenho) e A (o passo e a rotina)
+
+- **Obtido:** 14,36% de um núcleo em média, com pico de 16,76%, no mundo de 200 anos, visível, em 1x.
+- **Esperado:** abaixo de 8%.
+- O mundo novo fica em 5,98%, e o de 50 anos em 7,38%, já no limite. Os números estão em "Pontos conhecidos", abaixo.
+
+### D-09. O mundo novo já começa com o povo, e o documento diz que começa vazio
+**Cenário:** QA-002 · **Gravidade:** média · **Bloqueia:** não. É uma decisão do orquestrador · **Área:** A e B
+
+- **Documento funcional, "Começo do mundo" e "Menor conjunto", item 1:**
+  - a região começa vazia;
+  - "o primeiro gesto do jogador é criar o primeiro povo, usando o mesmo poder que recria a humanidade";
+  - "Começo e recomeço funcionam igual."
+- **Obtido:**
+  - `Mundo.new()` já nasce com 12 pessoas às 7h;
+  - a apresentação abre direto com o povo andando;
+  - criar o povo só existe depois de uma extinção.
+- **Ressalva:** a auditoria 11 elogia abrir de manhã com gente andando, e o plano da fase 1 diz "cria o primeiro povo". Se a escolha foi deliberada, o documento funcional precisa ser atualizado. Senão, o recomeço (que já tem a chegada do povo e a primeira fogueira) serve também para o começo.
+
+### D-10. A noite dura 18,75 min reais, e o documento diz 15
+**Cenário:** QA-016 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- O documento funcional diz "cerca de 45 minutos reais por dia de jogo (30 de dia e 15 de noite)". Isso dá 8 horas de jogo de noite.
+- `tempo().noite` vale das 20h às 6h, que são 10 horas, ou 18,75 min reais; o dia fica com 26,25 min.
+
+### D-11. Um milagre pode cair na camada "ambiente"
+**Cenário:** QA-026 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- **Obtido:**
+  - a chuva de milagre (0,6) sem seca tem importância 3 e camada "ambiente";
+  - a cura de milagre em quem está são tem importância 2 e camada "ambiente".
+- **Por que importa:**
+  - a API diz que os atos do deus são "nota ou chamado";
+  - o documento define o milagre como "um efeito visível e inegável";
+  - na camada ambiente, o gesto não entra na crônica nem para o salto.
+- Os outros 9 poderes, a 0,6, saem como nota ou chamado.
+
+### D-12. Dois povos dão o mesmo nome ao mesmo lugar
+**Cenário:** QA-064 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- O documento funcional diz: "o mesmo lago tem um nome para cada povo".
+- **Obtido**, no mundo da semente 3 no ano 120:
+  - o lago é "Lago da Vitória" para Koil (que venceu Toran ali no ano 98) e para Peak (que venceu Koil ali no ano 101);
+  - o morro é "Morro da Vitória" para Peak e para Toran.
+- Os nomes batem com quem venceu: o vencido diz "do Luto". A repetição vem de vitórias diferentes no mesmo lugar.
+- **Sugestão:** quando o nome já é de outro povo vivo, usar outra variante ou o nome do vencido ("Lago da Vitória sobre Koil").
+
+### D-13. Exatamente um ano fora não conta como "teto atingido"
+**Cenário:** QA-092 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- `avancar_ausencia(960 × 112,5 s)` dá 960 passos, mas com `teto_atingido = false`, porque a conta usa `pedidos > TETO_AUSENCIA`.
+- A apresentação usa `teto_atingido` para o título "um ano" e para voltar ao ritmo normal. No limite exato, o título fica "40 dias".
+
+### D-14. Os testes de QA iriam dentro do executável
+**Cenário:** QA-181 · **Gravidade:** baixa · **Bloqueia:** não, mas é uma linha só · **Área:** B
+
+- `exclude_filter` exclui `ferramentas_sim/*` mas não `qa/*`. Basta acrescentar `qa/*`.
+
+### O-1. Observação: importar o projeto num worktree novo muda um `.import`
+**Área:** B · Não é defeito do jogo.
+
+- `--headless --import` num worktree sem `.godot/` reescreve 1166 arquivos `.import`, só nas quebras de linha.
+- Também troca `arte/interface/fonte_5x7_titulo.png.import` de `importer="texture"` para `importer="skip"`.
+- Voltei todos ao estado do git, porque não são da minha área. Vale conferir qual dos dois é o certo: o `skip` aparece quando a fonte `.fnt` usa a imagem.
+
+### O-2. Observação: o `.exe` guarda os dados em outra pasta
+**Área:** B · Para a página "como jogar" (B2 da auditoria 11).
+
+- O jogo pelo editor usa `%APPDATA%\Godot\app_userdata\Simulador de vida\`.
+- O `.exe` exportado roda o atalho de `%APPDATA%\Simulador de vida\atalho_global.ps1`, então o `user://` dele é `%APPDATA%\Simulador de vida\`.
+- É essa a pasta que a página deve indicar para "onde fica o mundo salvo e como começar de novo".
+
+## Pontos conhecidos, conferidos
+
+### Falha de segmentação ao fechar (B investigando)
+**Não reproduzi em 36 fechamentos** (QA-164), todos com código 0 e sem erro no log:
+
+| Caminho | Aberturas | Código 0 | Observação |
+|---|---|---|---|
+| `sair()`, pelo `--duracao` (o mesmo da bandeja "Sair") | 10 | 10 | 5 com mundo de teste, 5 com o mundo salvo; os 5 salvos carregaram e salvaram |
+| Mensagem de fechar a janela (WM_CLOSE: Alt+F4, fechar pela barra de tarefas), pelo `CloseMainWindow()`, no 50x | 10 | 10 | de 6 a 52 s; em 5 havia um `salvar_async` do dia na sessão |
+| Os dois caminhos acima com `--atalho-global` | 16 | 16 | **não vale:** o atalho falhou ao registrar (`atalho_em_uso`), porque outro teste da B, um `.exe` de 1 hora aberto às 19h23 com `--atalho-global`, segurava o Ctrl+Alt+H |
+
+**Suspeita para B, ainda a confirmar:**
+- O fechamento pela janela (`_notification(NOTIFICATION_WM_CLOSE_REQUEST)`) salva, mas **não chama `_parar_atalho_global()`**, que só roda em `sair()`.
+- Com o atalho ligado, que é o padrão do jogo de verdade:
+  - a thread `_atalho_leitor` fica bloqueada lendo o processo auxiliar;
+  - o Godot destrói um `Thread` em andamento ao sair;
+  - o PowerShell auxiliar pode ficar órfão.
+- É o caminho mais provável da falha de segmentação.
+- Para confirmar: `rodar_janela.ps1 -Parte fecharjanela -ComAtalho`, quando o Ctrl+Alt+H estiver livre. A parte já conta os auxiliares órfãos depois de cada fechamento.
+
+### A cena de guerra no horário antigo depois de um ataque forçado (A investigando)
+- **No núcleo, está corrigido (QA-180 passa).** Um ataque às 8h, com o mundo consultado a cada hora como faz a apresentação, gera a cena `guerra` com `ini` 10,0 e `fim` 14,5, vista a partir da hora 10. É o que a API promete: começa em hora + 2 e dura 4h30.
+- **Na tela, ficou inconclusivo.** As 3 capturas do `--cenario-raro=batalha` no 50x (8, 10 e 12 s depois de abrir) mostram uma fileira de gente no meio da vila, mas não dá para afirmar só pelo quadro parado que são as duas linhas lutando (`qa/capturas/QA-180-batalha_*.png`). Precisa de um GIF ou de olho humano.
+
+### Leveza: abaixo de 8% de um núcleo, visível, em 1x
+Medido com `rodar_janela.ps1 -Parte leveza`:
+- jogo pelo editor (Godot 4.7.2, Compatibilidade), visível, semente 7, ritmo normal, começando às 17h;
+- 20 s de aquecimento e 120 s de medida;
+- CPU do processo do jogo (o filho do `_console.exe`) ÷ tempo real.
+
+| Mundo | CPU, % de um núcleo (média) | Pico de amostra (5 s) | Conjunto de trabalho, máx. | Meta de 8% |
+|---|---|---|---|---|
+| Novo (ano 1, 12 pessoas) | **5,98%** | 8,38% | 252 MB | passa (QA-171) |
+| 50 anos (2 povos) | **7,38%** | 10,85% | 257 MB | passa, no limite (medida extra) |
+| 200 anos (estágio 6, 4 povos) | **14,36%** | 16,76% | 294 MB | **falha (QA-172)** |
+
+- **A meta estoura por volta dos 50 a 60 anos de mundo.** Pelo tempo do documento, isso é um ano de uso de um jogador típico.
+- **Confirma a auditoria 11** (15% de um núcleo no mundo de 200 anos). Com o tempo do documento (um ano de jogo a cada 4 dias de trabalho), um mundo de 200 anos leva uns 3 anos de uso. Os amigos da 0.1 vão ficar nas primeiras décadas, a não ser que usem muito o 50x.
+- **Defeito D-08 (acima):** a CPU cresce com o mundo e passa da meta.
+- **A meta do documento técnico** ("média abaixo de 2% num computador comum") não diz se é da máquina ou de um núcleo. Nesta máquina de 28 núcleos, 14% de um núcleo são 0,5% da máquina e passariam. Num notebook de 4 núcleos, são 3,6% da máquina e não passariam. A régua de "% de um núcleo" do orquestrador é a que vale.
+- **No máximo 30 quadros por segundo:** `run/max_fps=30` no `project.godot` (QA-174 passa).
+- **Memória:** de 252 a 294 MB de conjunto de trabalho. A meta é 200 MB, e o usuário aceitou passar nessa medida.
+
+## O que passou e vale registrar
+
+Procurei onde o jogo quebra a promessa, então os acertos abaixo valem por terem sido testados contra o documento, e não só contra a API.
+
+- **Determinismo e consultas puras** (QA-004, QA-005):
+  - a mesma semente com os mesmos gestos dá a mesma crônica, os mesmos eventos e o mesmo sorteio em 30 anos;
+  - consultar tudo a cada hora, por 960 horas, não muda o mundo.
+- **Ninguém na água** em 960 horas consultadas (QA-010).
+- **Poderes:**
+  - os 11 funcionam no primeiro dia (QA-020);
+  - os limites de grau estão certos: 0,499 é sinal e 0,5 é milagre (QA-021);
+  - a imposição vem no 3º uso em 3 dias e não vem em outra zona nem com 4 dias entre os usos (QA-022, QA-023);
+  - entradas fora da faixa não quebram (QA-024);
+  - o fogo brando atende o frio, e 0,35 já queima e contraria (QA-029);
+  - as 3 formas do presságio (QA-031);
+  - o dilúvio imposto alaga as 4 zonas e deixa 6 de 12 vivos: o quase fim (QA-033, QA-130);
+  - 6 chuvas viram a festa da chuva e depois a dependência (QA-035).
+- **Preces:**
+  - atendida pelo poder certo no fogo do povo (QA-041);
+  - silêncio (QA-042);
+  - contrariada (QA-043);
+  - ponto cego: em 100 anos, nenhuma prece de povo sem crença ou cético (QA-044);
+  - falso milagre com "acaso" na crônica (QA-046).
+- **Religião:**
+  - milagres fazem nascer a crença em 2 dias (QA-050);
+  - em 120 anos, dois povos sem parentesco nunca chamam o deus igual (QA-051);
+  - a fé varia de pessoa para pessoa (QA-054).
+- **Culturas:** 6 dimensões válidas, origem completa dos povos novos, costumes com origem, aparências diferentes, reformas (QA-060 a QA-065).
+- **Estágios:**
+  - agricultura em até 50 anos em 5 sementes, 20 com `--longo` (QA-070);
+  - estágio entre 1 e 6 em 250 anos, e o 6 alcançado (QA-071);
+  - regressão quando morre o último que sabia (QA-072, depois de corrigido o meu teste: a regressão é conferida a cada 5 dias).
+- **Linhagem:**
+  - o raio do deus mata a pessoa acompanhada, e a linhagem passa ao descendente vivo mais velho, com o evento (QA-081);
+  - as sugestões trazem quem acabou de sonhar (QA-083).
+- **Ausência:**
+  - 16 h fora são 512 passos;
+  - 30 dias e 5 anos param no teto;
+  - o relógio para trás e o salvamento "no futuro" não andam nem quebram;
+  - a extinção durante a ausência vem nos chamados e no relato (QA-090 a QA-097);
+  - um ano de ausência no mundo de 250 anos leva 2,3 s (QA-176).
+- **Persistência:**
+  - salvar e carregar dá o mesmo mundo, passo a passo, 10 anos depois (QA-100);
+  - 7 tipos de estrago voltam da cópia, com o aviso no relato (QA-102);
+  - tudo estragado devolve null sem quebrar (QA-103);
+  - só as cópias bastam (QA-106);
+  - `salvar_async` com o mundo andando (QA-107);
+  - índice da estante estragado (QA-108).
+- **Fim do mundo:**
+  - o deus acaba com o povo só com raios, em 27 raios (QA-120);
+  - os últimos e o fim do mundo (QA-121, QA-122);
+  - o mundo vazio continua, as ruínas envelhecem e os poderes recusam (QA-123);
+  - a Segunda Era com 12 pessoas e a recusa num mundo habitado (QA-124);
+  - o povo criado no lago nasce na praia (QA-125);
+  - o mito das ruínas (QA-126);
+  - o mundo vazio salvo e carregado (QA-128).
+- **Estante:** abandonar fecha o livro e apaga o mundo com as cópias; o livro sobrevive ao mundo novo e se lê pela cópia; dois abandonos (QA-140 a QA-144).
+
+## TDD: os testes que já falham e esperam a correção
+
+Cada um já está na bateria e falha hoje. Passa a passar quando a área dona corrigir. Para rodar só ele: `-- --so=ID`.
+
+| Teste | Defeito | Área | O que precisa acontecer para passar |
+|---|---|---|---|
+| QA-027 | D-02 | A | o raio sobre quem está na tela acerta essa pessoa durante pelo menos 95% da hora |
+| QA-131 | D-03 | A | uma hora depois da última morte, `fim_do_mundo` vale e `criar_povo` funciona |
+| QA-166 | D-04 | B | a apresentação lê e mostra `application/config/version` |
+| QA-104, QA-105 | D-05 | A e B | o mundo ilegível sobrevive a 4 salvamentos do mundo novo |
+| QA-111 | D-06 | A | 6 cargas do mesmo arquivo dão a mesma crônica |
+| QA-109, QA-182 | D-01 | A | salvar num caminho de teste não toca `user://estante`, e nenhuma ferramenta apaga a estante real |
+| QA-181 | D-14 | B | `qa/*` no `exclude_filter` |
+| QA-016, QA-026, QA-064, QA-092 | D-10 a D-13 | A | conforme cada defeito |
+
+Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primeiro o cenário em `qa/cenarios.md` e o teste em `rodar_qa.gd`, que deve falhar antes da entrega.
+
+## Como rodar
+
+```bash
+Godot_v4.7.2-stable_win64_console.exe --headless --path jogo --script res://qa/rodar_qa.gd
+```
+
+- Opções, depois de `--`:
+  - `--longo` roda mais sementes e mais anos (uns 4 min);
+  - `--so=QA-090,QA-091` roda só esses cenários.
+- A bateria se relança sozinha com `APPDATA` em `%TEMP%\simvida_qa_appdata`. Assim, o `user://` dela nunca é a pasta de dados real do jogador. Isso é necessário porque `Persistencia.salvar()` grava a estante sempre em `user://estante` (D-01).
+- A saída tem uma linha por conferência e, no fim, `PASSOU`, `FALHOU` ou `PULADO` por cenário. O processo sai com código 1 se algo falhou.
+- Os cenários em janela:
+
+```bash
+powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 -Parte tudo
+```
+
+  - Abrem o jogo com as opções de teste, sem mouse nem teclado, com `APPDATA` em `%TEMP%\simvida_qa_janela`.
+  - Os resultados vão para `qa/janela/resultado-*.json` e as capturas para `qa/capturas/`.
+  - **Antes da primeira vez num worktree novo**, importe os recursos com `--headless --path jogo --import`. Sem isso, a janela abre sem arte. Depois, volte os `.import` ao estado do git (veja a observação O-1).
+
+## Pasta de dados do jogador
+
+- Antes de começar, fiz cópia de `estante/`, `estante_teste/` e dos `.cfg`, e uma lista de todos os arquivos (fora `logs/` e `shader_cache/`).
+- Nenhum teste meu tocou a pasta real: todos rodam com o `APPDATA` isolado.
+- Mesmo assim, a lista do fim tem **arquivos que não são meus**:
+  - a estante com 4 livros, depois de ter tido 7 e de ter sido regravada (veja D-01);
+  - `teste_fim.txt` com as 3 cópias;
+  - `antigos_teste/caprichoso-3*` e `mundo_grande.txt` regravados.
+- Tudo isso veio dos testes da sessão A, rodando ao mesmo tempo no worktree `fase0-simulacao-81d444`.
+- Não apaguei nada.

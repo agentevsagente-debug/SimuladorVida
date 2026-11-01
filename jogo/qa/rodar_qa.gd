@@ -253,7 +253,7 @@ func _bloco_comeco() -> void:
 		conferir("QA-004", a.cronica() == b.cronica(), "mesma crônica em 30 anos (%d caracteres)" % a.cronica().length())
 		conferir("QA-004", a.eventos.size() == b.eventos.size(), "mesmo número de eventos (%d)" % a.eventos.size())
 		conferir("QA-004", a.rng.state == b.rng.state, "mesmo estado do sorteio")
-	if _quer("QA-005") or _quer("QA-010"):
+	if _quer("QA-005") or _quer("QA-010") or _quer("QA-012"):
 		_consultas_puras()
 
 
@@ -273,12 +273,24 @@ func _consultas_puras() -> void:
 	var horas := 24 * 40 * 2
 	if not longo:
 		horas = 24 * 40
+	var noites_sem_ninguem := 0
+	var horas_paradas := 0
 	for h in horas:
 		a.avancar_hora()
 		b.avancar_hora()
+		var acordado := false
+		var mudou := false
 		for p in a.pessoas_visiveis():
 			if (p["x"] < 126.0 or p["x_anterior"] < 126.0) and p["acao"] != "remar":
 				na_agua += 1
+			if p["acao"] != "dormir":
+				acordado = true
+			if p["agenda"].size() > 1 or p["x"] != p["x_anterior"]:
+				mudou = true
+		if a.tempo()["noite"] and not acordado:
+			noites_sem_ninguem += 1
+		if not mudou:
+			horas_paradas += 1
 		a.cenas_ativas()
 		a.construcoes()
 		a.preces_abertas()
@@ -287,6 +299,8 @@ func _consultas_puras() -> void:
 			a.sugestoes()
 	conferir("QA-005", a.rng.state == b.rng.state, "consultar toda hora não muda o sorteio (%d horas)" % horas)
 	conferir("QA-005", a.eventos.size() == b.eventos.size() and a.cronica() == b.cronica(), "nem os eventos, nem a crônica")
+	conferir("QA-012", noites_sem_ninguem == 0, "toda hora da noite tem alguém acordado (%d horas sem ninguém)" % noites_sem_ninguem)
+	conferir("QA-012", horas_paradas == 0, "toda hora alguém muda de lugar (%d horas paradas em %d)" % [horas_paradas, horas])
 	conferir("QA-010", na_agua == 0, "ninguém na água fora do barco em %d horas consultadas (%d casos)" % [horas, na_agua])
 
 
@@ -624,7 +638,7 @@ func _bloco_preces() -> void:
 			w.usar_poder("fogo", pr.get("x_povo", 260.0), 0.35)
 			t = _tipos(w, ini)
 			conferir("QA-029", not t.has("fogo_brando") and t.has("prece_contrariada"), "fogo 0,35: já queima e contraria a prece (%s)" % [t.keys()])
-	if _quer("QA-044") or _quer("QA-046") or _quer("QA-047") or _quer("QA-052") or _quer("QA-054"):
+	if _quer("QA-044") or _quer("QA-046") or _quer("QA-047") or _quer("QA-052") or _quer("QA-053") or _quer("QA-054"):
 		_preces_mundo_longo()
 
 
@@ -651,6 +665,10 @@ func _preces_mundo_longo() -> void:
 	var mudou := ["silencio", "secularizacao", "profeta", "renascimento"].filter(func(x): return t.has(x))
 	var ceticos := m.grupos_visiveis().filter(func(g): return g["ceticos"]).size()
 	conferir("QA-047", not mudou.is_empty() or ceticos > 0, "%d anos sem deus mudam a religião: %s, %d povos céticos" % [anos, mudou, ceticos])
+	if t.has("renascimento"):
+		conferir("QA-053", true, "%d renascimentos da fé em %d anos" % [t["renascimento"], anos])
+	else:
+		pular("QA-053", "nenhum renascimento em %d anos na semente 1 (é raro: precisa de um povo cético diante de algo inegável)" % anos)
 	conferir("QA-052", t.has("edito") or t.has("sacerdote"), "sacerdotes falam pelo deus (édito %d, sacerdote %d)" % [t.get("edito", 0), t.get("sacerdote", 0)])
 	info("religião em %d anos: %s" % [anos, ["crenca", "edito", "silencio", "secularizacao", "profeta", "renascimento", "prece", "prece_atendida", "prece_sem_resposta"].map(func(k): return "%s=%d" % [k, t.get(k, 0)])])
 	var fes := []
@@ -727,6 +745,21 @@ func _bloco_religiao_culturas() -> void:
 		for g in gv:
 			aparencias[str(g["aparencia"])] = true
 		conferir("QA-064", gv.size() < 2 or aparencias.size() > 1, "%d povos, %d aparências diferentes" % [gv.size(), aparencias.size()])
+		# «o mesmo lago tem um nome para cada povo»
+		var vivos_ids := gv.map(func(g): return g["id"])
+		var repetidos := []
+		var com_nome := 0
+		for z in m.zonas_visiveis():
+			var por_nome := {}
+			for gid in z["nomes"]:
+				if not vivos_ids.has(gid):
+					continue
+				com_nome += 1
+				var n := str(z["nomes"][gid])
+				if por_nome.has(n):
+					repetidos.append("%s: %s e %s chamam de «%s»" % [z["chave"], m.grupo(por_nome[n]).nome, m.grupo(gid).nome, n])
+				por_nome[n] = gid
+		conferir("QA-064", repetidos.is_empty(), "cada povo dá o seu nome ao lugar: %d nomes de povos vivos, %d repetidos %s" % [com_nome, repetidos.size(), repetidos.slice(0, 3)])
 	if _quer("QA-065"):
 		var t := _tipos(m)
 		conferir("QA-065", t.has("cultura") or t.has("reforma"), "as culturas mudam: cultura %d, reforma %d" % [t.get("cultura", 0), t.get("reforma", 0)])
@@ -1054,6 +1087,30 @@ func _bloco_persistencia() -> void:
 		conferir("QA-109", depois == antes, "salvar um mundo de teste em %s não escreve na estante padrão user://estante (%d → %d livros)" % [c, antes, depois])
 		_apagar_mundo(c)
 		_limpar_pasta("user://estante")
+	if _quer("QA-111"):
+		# O mesmo arquivo, carregado várias vezes e avançado do mesmo jeito, tem de dar o mesmo mundo
+		# e a mesma crônica (documento técnico: determinismo; API: "um mundo salvo e carregado segue igual").
+		var m := Mundo.new(7)
+		m.avancar_dias(40 * 10)
+		var c := _caminho("det")
+		_apagar_mundo(c)
+		Persistencia.salvar(m, c)
+		var textos := {}
+		var sorteios := {}
+		for i in 6:
+			var w = Persistencia.carregar(c)
+			var vivos: Array = w.vivos.keys()
+			vivos.sort()
+			for id in vivos.slice(1):
+				w._morrer(w.pessoas[id], "doenca")   # preparação (gancho interno), igual nas 6 vezes
+			w.pessoas[vivos[0]].saude = 0.02
+			w.pessoas[vivos[0]].doente = 30
+			var rel: String = w.avancar_ausencia(40 * 24 * 3600)["relato"]
+			textos[rel] = true
+			sorteios[w.rng.state] = true
+		conferir("QA-111", sorteios.size() == 1, "6 cargas do mesmo arquivo: o mesmo sorteio no fim (%d estados)" % sorteios.size())
+		conferir("QA-111", textos.size() == 1, "e a mesma crônica (%d textos diferentes)" % textos.size())
+		_apagar_mundo(c)
 	if _quer("QA-110"):
 		pular("QA-110", "o arquivo dos antigos só nasce depois de 300 anos; coberto por testar_persistencia.gd e testar_antigos.gd da A")
 
@@ -1219,6 +1276,33 @@ func _bloco_fim() -> void:
 			conferir("QA-127", true, "aprendeu nas ruínas")
 		else:
 			pular("QA-127", "o primeiro povo não passou do estágio 1: não havia saber nas ruínas")
+	if _quer("QA-131"):
+		# O último morre às 10h (pelo raio do deus): o mundo vazio deve valer já, e não à meia-noite.
+		var w := Mundo.new(1)
+		_ate_hora(w, 10)
+		var vivos: Array = w.vivos.keys()
+		vivos.sort()
+		for id in vivos.slice(1):
+			w._morrer(w.pessoas[id], "doenca")   # preparação (gancho interno): resta um
+		var ultimo: int = vivos[0]
+		var r: Dictionary = {}
+		for tentativa in 6:
+			w.pessoas_visiveis()
+			r = w.usar_poder("raio", w.pessoas_visiveis()[0]["x"] if w.populacao() > 0 else 260.0, 0.9)
+			if w.populacao() == 0:
+				break
+			w.avancar_hora()
+		var hora_morte: int = w.tempo()["hora"]
+		conferir("QA-131", w.populacao() == 0, "o raio mata o último às %dh" % hora_morte)
+		w.avancar_hora()
+		var vazio_ja: bool = w.fim_do_mundo
+		var criar: Dictionary = w.criar_povo(260.0) if not vazio_ja else {"ok": true}
+		var horas := 1
+		while not w.fim_do_mundo and horas < 30:
+			w.avancar_hora()
+			horas += 1
+		conferir("QA-131", vazio_ja, "1 hora depois da última morte, o mundo já está vazio (fim_do_mundo %s; só veio depois de %d horas, às %dh)" % [vazio_ja, horas, w.tempo()["hora"]])
+		conferir("QA-131", criar.get("ok", false), "e criar povo já funciona (%s)" % criar.get("motivo", "ok"))
 	if _quer("QA-125"):
 		var w := Mundo.new(2)
 		for id in w.vivos.keys():
@@ -1278,12 +1362,34 @@ func _bloco_estante() -> void:
 ## Um ataque registrado às 8h (forçado como faz `--cenario-raro=batalha`) deve virar a cena
 ## `guerra` 2 horas depois (API, cenas_ativas: começa em hora + 2, luta de hora + 3h30 a hora + 5h).
 func _bloco_guerra() -> void:
-	if not _quer("QA-180"):
+	if not _quer("QA-180") and not _quer("QA-034"):
 		return
 	var m := Mundo.new(SEMENTE_LONGA)
 	m.avancar_dias(40 * 60)
 	if m.grupos_vivos().size() < 2:
 		pular("QA-180", "a semente %d não tem dois povos no ano 60" % SEMENTE_LONGA)
+		return
+	if _quer("QA-034"):
+		_guardar("guerra60", m)
+		var w = _abrir("guerra60")
+		var a = w.grupos_vivos()[0]
+		var b = w.grupos_vivos()[1]
+		# preparação (gancho interno, como o cenário "guerra" da apresentação): guerra e hostilidade
+		w._comecar_guerra(a, b, a.zona)
+		a.hostilidade[b.id] = 4.0
+		b.hostilidade[a.id] = 4.0
+		var antes: int = w.guerras_ativas().size()
+		var ini: int = w.eventos.size()
+		var r: Dictionary = w.usar_poder("erguer", _fogo(w, a.id), 0.8)
+		var t := _tipos(w, ini)
+		var nomes := []
+		for z in w.zonas_visiveis():
+			if z["chave"] == a.zona:
+				nomes = z["nomes"].values().map(func(n): return str(n))
+		var em_tregua: bool = a.tregua_ate.get(b.id, -1) > w.dia_abs()
+		conferir("QA-034", r.get("grau", "") == "milagre" and em_tregua, "terra erguida de milagre entre povos em guerra força a trégua (%d guerras antes; eventos %s)" % [antes, t.keys()])
+		conferir("QA-034", not nomes.is_empty(), "e nasce um lugar com nome: %s" % [nomes])
+	if not _quer("QA-180"):
 		return
 	_ate_hora(m, 6)
 	for h in 2:   # a apresentação consulta a cada passo
