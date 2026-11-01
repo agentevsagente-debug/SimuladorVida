@@ -222,11 +222,53 @@ def caca_no_pau():
     return {"caca_no_pau_porco_forte": porco, "caca_no_pau_ave_forte": ave}
 
 
+# ---------------------------------------------------------------- caçada
+
+def lanca(x0, x1, y, ponta=True):
+    """Lança de 2 px na horizontal, com a ponta clara (Z, z) na direita."""
+    pts = pau(x0, x1 - (2 if ponta else 0), y)
+    if ponta:
+        pts += [(x1 - 1, y, "Z"), (x1, y, "Z"), (x1 - 1, y + 1, "z"), (x1, y + 1, "z")]
+    return pts
+
+
+def cacar_espreitar():
+    """Espreita agachado, a lança de 2 px na horizontal à frente, passando do corpo até a
+    coluna 11, com a ponta clara. Os passos são curtos e o corpo fica baixo."""
+    out = []
+    for p in ("dobrado", "base", "dobrado", "aberto"):
+        q = largo(quadro([(2, 7, "s"), (5, 7, "S")], CAB, pernas=p, desce=2))
+        out.append(por(q, lanca(0, 11, 6) + [(2, 7, "s"), (5, 7, "S")]))
+    return out
+
+
+def cacar_arremessar():
+    """Recolhe a lança atrás da cabeça, avança e arremessa; a lança solta é
+    `objetos/lanca_voando_forte`, a partir do quadro 2."""
+    diag = [(0, 6, "n"), (1, 5, "n"), (2, 4, "n"), (3, 3, "n"), (4, 2, "n"), (5, 1, "n"), (6, 0, "Z"),
+            (1, 6, "q"), (2, 5, "q"), (3, 4, "q"), (4, 3, "q"), (5, 2, "q"), (6, 1, "z")]
+    return [
+        por(largo(inclinar(quadro([(1, 5, "s"), (6, 4, "S")], pernas="base"), -1 + 2)), diag + [(5, 3, "S")]),
+        por(largo(quadro([(1, 6, "s"), (6, 3, "S")], pernas="base")), lanca(0, 11, 2) + [(6, 3, "S")]),
+        por(largo(inclinar(quadro([(0, 6, "s"), (6, 4, "S"), (7, 4, "S")], CAB_BOCA, pernas="aberto"))),
+            [(8, 4, "S")]),
+        largo(quadro([(1, 5, "s"), (6, 5, "S"), (7, 6, "S")], pernas="dobrado")),
+    ]
+
+
+def lanca_voando():
+    """A lança solta, 14 x 3: 2 px de haste e a ponta clara, com um risco de rastro atrás."""
+    return m("..nnnnnnnnnnZZ",
+             "cc.qqqqqqqqqzz",
+             "..............")
+
+
 FOLHAS = {
     "catar_lenha_forte_4q": catar_lenha, "carregar_cesto_cabeca_forte_4q": carregar_cesto_cabeca,
     "espantar_forte_4q": espantar, "tropecar_cair_forte_4q": tropecar_cair,
     "carregar_agua_forte_4q": carregar_agua, "buscar_agua_forte_4q": buscar_agua,
     "carregar_caca_forte_4q": carregar_caca,
+    "cacar_espreitar_forte_4q": cacar_espreitar, "cacar_arremessar_forte_4q": cacar_arremessar,
 }
 
 
@@ -237,13 +279,15 @@ def principal():
     for nome, qs in folhas.items():
         k.gravar(k.folha_quadros(qs), AQUI / f"{nome}.png")
     objs = caca_no_pau()
+    objs["lanca_voando_forte"] = lanca_voando()
     for nome, px in objs.items():
         k.gravar(px, OBJ / f"{nome}.png")
     # amostra: cada folha numa linha, ao lado da versão antiga; no fim, a caça carregada montada
     antigas = {"catar_lenha_forte_4q": "catar_lenha_4q", "carregar_cesto_cabeca_forte_4q": "carregar_cesto_cabeca_4q",
                "espantar_forte_4q": "espantar_4q", "tropecar_cair_forte_4q": "tropecar_cair_4q",
                "carregar_agua_forte_4q": "buscar_agua_4q", "buscar_agua_forte_4q": "buscar_agua_4q",
-               "carregar_caca_forte_4q": "carregar_caca_4q"}
+               "carregar_caca_forte_4q": "carregar_caca_4q", "cacar_espreitar_forte_4q": "cacar_espreitar_4q",
+               "cacar_arremessar_forte_4q": "cacar_arremessar_4q"}
     W = 2 * (4 * 14) + 16
     img = Image.new("RGBA", (W, (len(folhas) + 1) * 20 + 8), PALETA[1] + (255,))
     grama = Image.open(AQUI.parent / "terreno" / "grama_a.png")
@@ -263,12 +307,14 @@ def principal():
     y = 2 + len(folhas) * 20
     for x in range(0, W, 8):
         img.alpha_composite(grama, (x, y + 10))
-    for n, (nome, px) in enumerate(objs.items()):
+    for n, (nome, px) in enumerate((n2, p2) for n2, p2 in objs.items() if n2.startswith("caca")):
         x0 = 4 + n * (W // 2)
         q = folhas["carregar_caca_forte_4q"]
         for i, xx in ((0, x0), (2, x0 + 16)):
             img.alpha_composite(para_imagem(trocar(q[i], k.hab.troca(*roupas[i % 3]))), (xx, y))
         img.alpha_composite(para_imagem(px), (x0, y + 3))
+    # a lança voando, ao lado da espreita forte
+    img.alpha_composite(para_imagem(objs["lanca_voando_forte"]), (W // 2 + 8 + 4 * 14, 2 + 7 * 20 + 2))
     img.save(AQUI / "amostra_forte.png")
     img.resize((img.width * 4, img.height * 4), Image.NEAREST).save(AQUI / "amostra_forte_4x.png")
     print("ações de 1x:", ", ".join(folhas), "e", ", ".join(objs))

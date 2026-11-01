@@ -6,8 +6,8 @@
  "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
  "regioes": {
   "estagio4/adulto_e4_andar_4q": {
-   "x": 148,
-   "y": 146,
+   "x": 1,
+   "y": 159,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -16,7 +16,7 @@
    "quadro_h": 12
   },
   "estagio4/adulto_e4_parado_2q": {
-   "x": 34,
+   "x": 133,
    "y": 159,
    "w": 16,
    "h": 12,
@@ -46,7 +46,7 @@
    "quadro_h": 12
   },
   "estagio4/cacar_apontar_2q": {
-   "x": 51,
+   "x": 150,
    "y": 159,
    "w": 16,
    "h": 12,
@@ -55,7 +55,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "estagio4/cacar_comemorar_4q": {
+  "estagio4/cacar_arremessar_forte_4q": {
    "x": 99,
    "y": 133,
    "w": 48,
@@ -65,9 +65,29 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
+  "estagio4/cacar_comemorar_4q": {
+   "x": 148,
+   "y": 133,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio4/cacar_espreitar_forte_4q": {
+   "x": 197,
+   "y": 133,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
   "estagio4/carregar_agua_forte_4q": {
-   "x": 181,
-   "y": 146,
+   "x": 34,
+   "y": 159,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -76,8 +96,8 @@
    "quadro_h": 12
   },
   "estagio4/carregar_caca_forte_4q": {
-   "x": 214,
-   "y": 146,
+   "x": 67,
+   "y": 159,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -86,7 +106,7 @@
    "quadro_h": 12
   },
   "estagio4/carregar_cesto_cabeca_forte_4q": {
-   "x": 1,
+   "x": 100,
    "y": 159,
    "w": 32,
    "h": 12,
@@ -166,8 +186,8 @@
    "quadro_h": 32
   },
   "estagio4/catar_lenha_forte_4q": {
-   "x": 148,
-   "y": 133,
+   "x": 1,
+   "y": 146,
    "w": 48,
    "h": 12,
    "quadros": 4,
@@ -176,7 +196,7 @@
    "quadro_h": 12
   },
   "estagio4/crianca_ciranda_4q": {
-   "x": 68,
+   "x": 167,
    "y": 159,
    "w": 24,
    "h": 8,
@@ -186,7 +206,7 @@
    "quadro_h": 8
   },
   "estagio4/crianca_ciranda_costas_4q": {
-   "x": 93,
+   "x": 192,
    "y": 159,
    "w": 24,
    "h": 8,
@@ -196,7 +216,7 @@
    "quadro_h": 8
   },
   "estagio4/crianca_pegapega_fugir_4q": {
-   "x": 118,
+   "x": 217,
    "y": 159,
    "w": 24,
    "h": 8,
@@ -206,8 +226,8 @@
    "quadro_h": 8
   },
   "estagio4/crianca_pegapega_pegar_4q": {
-   "x": 143,
-   "y": 159,
+   "x": 1,
+   "y": 172,
    "w": 24,
    "h": 8,
    "quadros": 4,
@@ -216,8 +236,8 @@
    "quadro_h": 8
   },
   "estagio4/espantar_forte_4q": {
-   "x": 197,
-   "y": 133,
+   "x": 50,
+   "y": 146,
    "w": 48,
    "h": 12,
    "quadros": 4,
@@ -226,7 +246,7 @@
    "quadro_h": 12
   },
   "estagio4/ferreiro_trabalhar_4q": {
-   "x": 1,
+   "x": 99,
    "y": 146,
    "w": 48,
    "h": 12,
@@ -266,7 +286,7 @@
    "quadro_h": 24
   },
   "estagio4/guerreiro_andar_4q": {
-   "x": 50,
+   "x": 148,
    "y": 146,
    "w": 48,
    "h": 12,
@@ -366,7 +386,7 @@
    "quadro_h": 32
   },
   "estagio4/tropecar_cair_forte_4q": {
-   "x": 99,
+   "x": 197,
    "y": 146,
    "w": 48,
    "h": 12,

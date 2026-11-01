@@ -684,6 +684,8 @@ A sugestão é usar a versão forte no 1x e a de sempre no 10x e no 50x, ou só 
 | carregar água | `acoes/carregar_agua_forte_4q` | 8 × 12 | 4 | anda com o pote de barro cheio na cabeça (laranja, com a água clara na boca), segurando com a mão da frente erguida. É o "levar a água da margem até a vila": atravesse a tela com ele. |
 | `buscar_agua` | `acoes/buscar_agua_forte_4q` | 12 × 12 | 4 | na margem, de frente para a água: chega com o pote vazio no quadril, ajoelha e mergulha o pote com respingos, ergue o pote cheio e o põe na cabeça. Depois, `carregar_agua_forte_4q`. |
 | `carregar_caca` | 2 × `acoes/carregar_caca_forte_4q` + `objetos/caca_no_pau_porco_forte` ou `caca_no_pau_ave_forte` | 8 × 12; objeto 24 × 9 | 4 | os dois carregadores ficam a **16 px** um do outro (8 px de vão para o bicho), com os quadros defasados em 2. O objeto vai com o x do carregador de trás e as linhas 0 e 1 (o pau de 2 px) nas linhas 3 e 4 dos carregadores. O bicho pendura pelas patas amarradas (corda clara) no meio do vão. Desenhe o objeto por cima dos dois. |
+| `cacar` (espreita) | `acoes/cacar_espreitar_forte_4q` | 12 × 12 | 4 | agachado, com a lança de 2 px na horizontal à frente (até a coluna 11) e a ponta clara. Na auditoria 5, a lança de 1 px da versão de sempre sumia no mato, e os caçadores pareciam gente sentada. Use no lugar de `cacar_espreitar_4q`. |
+| `cacar` (arremesso) | `acoes/cacar_arremessar_forte_4q` + `objetos/lanca_voando_forte` (14 × 3) | 12 × 12 | 4 | recolhe a lança atrás da cabeça, ergue na horizontal, arremessa e acompanha o movimento. A lança solta sai no quadro 2, da mão (coluna 8, linha 4), em arco até o bicho, com a ponta clara e um risco de rastro atrás. |
 
 ## 23. Brincadeiras de crianças (`acoes/brincar.py`)
 
