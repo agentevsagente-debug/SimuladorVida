@@ -92,7 +92,7 @@ Verificado de forma automática por `ferramentas/verificar.ps1`. O script põe u
 | Pixels nítidos | funciona | Em 2x, 3x e 4x, 100% dos blocos k × k do mundo têm uma cor só. |
 | Esconder | funciona, com ressalva | Ver "Limitações", item 1. |
 | Mostrar pelo ícone da bandeja | funciona, com ressalva | Testado à mão: abrir o menu de ícones ocultos e clicar no ícone. Ver "Limitações", item 2. |
-| Mostrar pela barra de tarefas | funciona | A janela volta na mesma posição e escala, e a passagem do mouse continua certa. |
+| Mostrar pela barra de tarefas | funciona | Simulado com `ShowWindow(SW_RESTORE)`, o mesmo efeito do clique no botão da barra, não com um clique real. A janela volta na mesma posição e escala, e a passagem do mouse continua certa. |
 | Atalho com a moldura em foco | funciona | `H` ou `F8` esconde. Mas não serve para mostrar, porque uma janela escondida não recebe teclado. |
 | Atalho global | não existe no Godot; funciona com processo auxiliar | Ver "Limitações", item 3. |
 
@@ -122,10 +122,10 @@ Meta: CPU média abaixo de 2% e memória abaixo de 200 MB.
 
 **Leitura:**
 
-- **CPU:** muito abaixo da meta nos três cenários. Mesmo contada como % de um único núcleo, fica abaixo de 2%. Numa medição de teste de 45 s, o cenário andando deu 0,11% (3,2% de um núcleo), então a variação entre execuções é de cerca de 2x. Ainda assim, folga grande.
+- **CPU:** muito abaixo da meta nos três cenários. A média de 10 minutos fica abaixo de 2% até se contada como % de um único núcleo (1,48% no cenário andando). Amostras isoladas de 5 s chegaram a cerca de 3,7% de um núcleo (0,16% da máquina). Numa medição de teste de 45 s, o cenário andando deu 0,11% (3,2% de um núcleo), então a variação entre execuções é de cerca de 2x. A meta é sobre a média da máquina, e ali a folga é grande.
 - **Memória com os bonecos andando:** estável em 179,6 MB por 10 minutos, sem crescer. Fica dentro da meta, mas com só cerca de 20 MB de folga. Quase tudo é custo fixo do motor e do driver OpenGL da NVIDIA, não do mundo: a cena é mínima.
-- **Degrau de memória no cenário parado:** por volta de 4 minutos, a memória privada subiu de 167 MB para 192 MB e uma amostra isolada chegou a 209,9 MB. Depois ficou parada em 183 MB até o fim. O conjunto de trabalho chegou a 195,5 MB. Não há crescimento contínuo, então não parece vazamento; o mais provável é uma alocação do motor ou do driver. Mas é um sinal de que a folga de memória é pequena. Pelo conjunto de trabalho, que é a "Memória" do Gerenciador de Tarefas, todos os cenários ficaram abaixo de 200 MB. Pela memória privada, o cenário parado passou em um pico.
-- **Escondida:** fica perto de 0%, mas não zera: 0,027% da máquina. O laço principal do motor continua girando a 12 quadros por segundo para a lógica do mundo seguir, como pede o documento técnico ("só a simulação, sem desenhar"). O custo que resta é desse laço, não do desenho; na fase 1, uma simulação a 1–2 Hz quando escondida reduziria ainda mais.
+- **Degrau de memória no cenário parado:** por volta de 4 minutos, a memória privada subiu de 167 MB para 192 MB e uma amostra isolada chegou a 209,9 MB. Depois ficou parada em 183 MB até o fim. O conjunto de trabalho chegou a 195,5 MB. O cenário escondido teve um degrau parecido no mesmo momento (de 159 MB para 167 MB, por volta de 240 s). Não há crescimento contínuo, então não parece vazamento; o mais provável é uma alocação fixa do motor ou do driver que acontece alguns minutos depois de abrir. Mas é um sinal de que a folga de memória é pequena. Pelo conjunto de trabalho, que é a "Memória" do Gerenciador de Tarefas, todos os cenários ficaram abaixo de 200 MB. Pela memória privada, o cenário parado passou em um pico.
+- **Escondida:** fica perto de 0%, mas não zera: 0,027% da máquina. Ficou um pouco acima do cenário parado (0,76% contra 0,52% de um núcleo); não investiguei o motivo. O laço principal do motor continua girando a 12 quadros por segundo para a lógica do mundo seguir, como pede o documento técnico ("só a simulação, sem desenhar"). O custo que resta é desse laço, não do desenho; na fase 1, uma simulação a 1–2 Hz quando escondida reduziria ainda mais.
 - **Parado contra andando:** o modo de baixo consumo funciona. Com só o céu mudando, o motor quase não desenha, e a CPU cai a cerca de um terço.
 
 **Fora da conta:** o `dwm.exe`, que compõe a janela transparente na tela, não pôde ser lido sem permissão de administrador. O custo de composição de uma janela pequena e quase sempre parada deve ser baixo, mas não foi medido.
