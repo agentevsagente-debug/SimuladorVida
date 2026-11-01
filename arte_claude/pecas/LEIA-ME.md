@@ -224,8 +224,9 @@ Os ícones foram desenhados para o fundo escuro da alça.
 - O `.ico` leva os tamanhos 16, 32, 48, 64, 128 e 256, todos com pixels nítidos.
 - O desenho é o pequeno mundo numa moldura de madeira: céu, sol, morro, a cabana de galhos e uma pessoa junto ao fogo.
 
-**Fonte em pixel:** `fonte_5x7_clara`, `fonte_5x7_escura` e `fonte_5x7_dourada`, cada uma com um `.png` e um `.fnt`.
-- **Formato:** BMFont em texto, que o Godot 4 importa direto como fonte. As três têm as mesmas medidas e mudam só a cor, porque a fonte não pode ser tingida pelo motor: multiplicar a cor sairia da paleta.
+**Fonte em pixel:** `fonte_5x7_clara`, `fonte_5x7_escura`, `fonte_5x7_dourada` e `fonte_5x7_titulo`, cada uma com um `.png` e um `.fnt`.
+- **Onde usar cada cor:** a clara e a dourada são para fundos escuros (a dica, a alça e os avisos); a escura e a titulo são para o pergaminho (a crônica, o livro, os avisos de primeira vez e de fim do mundo). A titulo, em vinho escuro, é para os títulos sobre o pergaminho, como "A Primeira Era" e "Não resta ninguém": a dourada quase some no pergaminho claro.
+- **Formato:** BMFont em texto, que o Godot 4 importa direto como fonte. As quatro têm as mesmas medidas e mudam só a cor, porque a fonte não pode ser tingida pelo motor: multiplicar a cor sairia da paleta.
 - **Medidas:** maiúsculas de 5 × 7, proporcional, altura de linha 12, linha de base 9, 1 px entre letras e espaço de 3 px.
 - **Caracteres:** 110 ao todo:
   - letras de A a Z, maiúsculas e minúsculas, e algarismos de 0 a 9;
