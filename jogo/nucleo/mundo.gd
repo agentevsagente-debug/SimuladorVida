@@ -49,8 +49,15 @@ var pessoas: Dictionary = {}     # id -> Pessoa (vivas e mortas)
 ## depois de séculos de mortos. Derivado de `pessoas`; não é salvo.
 var vivos: Dictionary = {}
 var peste_ate: int = -1
-var _rotina_cache = null          # Rotina do dia, refeita quando o mundo muda (não é salva)
-var _rotina_chave: Array = []
+# A rotina visível (nucleo/rotina.gd). Nada disto é salvo.
+var _rotina_cache = null          # a rotina de hoje
+var _revisao = null               # a rotina de hoje sendo refeita aos poucos, depois de uma mudança
+var _amanha = null                # a rotina de amanhã, montada aos poucos durante o dia
+var _rotina_versao: int = 0       # muda cada vez que a rotina de hoje é trocada
+var _consultado: bool = false     # a apresentação consultou o mundo desde o último passo
+## Contadores para os testes de desempenho: montagens inteiras feitas dentro de uma consulta
+## e horas em que alguém acordado apareceu sem plano (parado em casa).
+var desempenho: Dictionary = {"montagens_na_consulta": 0, "substitutos": 0}
 var grupos: Array = []           # Grupo, inclusive extintos
 var zonas: Dictionary = {}       # chave -> Zona
 var eventos: Array = []
@@ -246,11 +253,20 @@ func estacao() -> int:
 	return dia_do_ano() / DIAS_ESTACAO
 
 
+## Quanto um passo pode durar, com a simulação e a parte da rotina que coube nele.
+const PASSO_ORCAMENTO_US := 3500
+
+
 ## Avança um passo de simulação: uma hora de jogo.
 func avancar_hora() -> void:
+	var t0 := Time.get_ticks_usec()
 	var h := hora()
 	if h == 0:
 		_novo_dia()
+	elif h == 1 and dia_do_ano() == 0:
+		# A crônica do ano que acabou é escrita uma hora depois da virada, para não somar
+		# o custo dela ao passo mais caro do ano.
+		_cronista.processar_ate(ano() - 1)
 	_executar_comandos()
 	if h == 12:
 		_executar_condicionais()
@@ -261,6 +277,11 @@ func avancar_hora() -> void:
 	elif h == 19:
 		_refeicao()
 	passo += 1
+	if _consultado:
+		# Só com a apresentação olhando: quem avança muitas horas de uma vez sem consultar
+		# (salto, ausência, testes) não paga a rotina de cada hora.
+		_consultado = false
+		_trabalhar_rotina(t0 + PASSO_ORCAMENTO_US)
 
 
 func avancar_dias(n: int) -> void:
@@ -407,8 +428,6 @@ func registrar(tipo: String, causa: String, importancia: int, zona: String, grup
 func _novo_dia() -> void:
 	if fim_do_mundo:
 		# Depois da extinção, o mundo continua: o clima segue e a natureza retoma o espaço.
-		if dia_do_ano() == 0 and passo > 0:
-			_cronista.processar_ate(ano() - 1)
 		_clima_do_dia()
 		_presagios()
 		_renovar_zonas()
@@ -416,7 +435,6 @@ func _novo_dia() -> void:
 	var d := dia_do_ano()
 	if d == 0 and passo > 0:
 		_novo_ano()
-		_cronista.processar_ate(ano() - 1)
 	if d % DIAS_ESTACAO == 0:
 		_nova_estacao()
 	_clima_do_dia()
@@ -3271,25 +3289,74 @@ func construcoes() -> Array:
 	return r
 
 
-## A rotina do dia corrente: planos de todos e cenas. Refeita quando muda o dia, chega
-## evento novo ou muda a população; uma consulta pura, que não toca no sorteio do mundo.
+## A rotina do dia corrente: planos de todos e cenas. Uma consulta pura, que não toca no
+## sorteio do mundo. O trabalho de montá-la é feito nos passos (veja _trabalhar_rotina); só
+## a primeira consulta depois de criar, carregar ou saltar dias monta tudo de uma vez.
 func rotina():
-	# Refeita por dia (e se cair uma tempestade): os eventos que geram cenas acontecem no
-	# começo do dia, e quem nasce ou chega depois ganha o plano na hora em que aparece.
-	var chave := [dia_abs(), tempestade.get("evento", -1), era]
-	var refazer := _rotina_cache == null or _rotina_chave.slice(0, 3) != chave
-	if not refazer:
-		# Um evento novo que vira cena hoje (nascimento, casamento, ataque...) refaz a rotina.
-		for i in range(_rotina_cache.eventos_vistos, eventos.size()):
-			if Rotina.GERAM_CENA.has(eventos[i].tipo):
-				refazer = true
-				break
-		_rotina_cache.eventos_vistos = eventos.size()
-	if refazer:
-		_rotina_cache = Rotina.new(self, dia_abs())
-		_rotina_cache.eventos_vistos = eventos.size()
-		_rotina_chave = chave + [eventos.size()]
+	_consultado = true
+	var d := dia_abs()
+	if _rotina_cache == null or _rotina_cache.dia != d:
+		if _amanha != null and _amanha.dia == d:
+			# Saltou um dia sem consultar: a rotina montada ontem serve até ser revista.
+			_trocar_rotina(_amanha)
+			_amanha = null
+			_revisao = Rotina.new(self, d, _rotina_cache)
+		else:
+			var nova = Rotina.new(self, d)
+			nova.trabalhar(-1)
+			_trocar_rotina(nova)
+			_revisao = null
+			desempenho["montagens_na_consulta"] += 1
 	return _rotina_cache
+
+
+func _trocar_rotina(nova) -> void:
+	_rotina_cache = nova
+	_rotina_versao += 1
+
+
+## O trabalho da rotina que cabe num passo, até o relógio chegar a `fim_us`:
+## - na virada do dia, a rotina de amanhã (montada ontem) passa a ser a de hoje e começa a
+##   ser revista: quem ganhou cena, mudou de casa, adoeceu ou fez aniversário é replanejado;
+## - um evento que vira cena no meio do dia (nascimento, ataque, tempestade...) também abre
+##   uma revisão; enquanto ela não acaba, vale a rotina anterior;
+## - a hora nova é cortada em agendas para todos;
+## - o que sobrar vai para a rotina de amanhã.
+func _trabalhar_rotina(fim_us: int) -> void:
+	if _rotina_cache == null:
+		return
+	var d := dia_abs()
+	if _rotina_cache.dia != d:
+		var nova = _amanha if _amanha != null and _amanha.dia == d else Rotina.new(self, d)
+		_amanha = null
+		_trocar_rotina(nova)
+		_revisao = Rotina.new(self, d, nova)
+	elif _rotina_mudou():
+		_revisao = Rotina.new(self, d, _rotina_cache)
+	_rotina_cache.cortar_hora(hora())
+	if _revisao != null:
+		if not _revisao.trabalhar(fim_us):
+			return
+		_trocar_rotina(_revisao)
+		_revisao = null
+		_rotina_cache.cortar_hora(hora())
+	if _amanha == null or _amanha.dia != d + 1:
+		_amanha = Rotina.new(self, d + 1)
+	_amanha.trabalhar(fim_us)
+
+
+## Algo novo pede rever a rotina de hoje: um evento que vira cena, ou uma consulta que achou
+## alguém sem plano (quem chegou ao mundo no meio do dia).
+func _rotina_mudou() -> bool:
+	var ro = _rotina_cache
+	var mudou: bool = ro.faltou and _revisao == null
+	ro.faltou = false
+	for i in range(ro.eventos_vistos, eventos.size()):
+		if Rotina.GERAM_CENA.has(eventos[i].tipo):
+			mudou = true
+			break
+	ro.eventos_vistos = eventos.size()
+	return mudou
 
 
 ## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora.
@@ -3305,7 +3372,8 @@ var _cenas: Array = []
 
 func pessoas_visiveis() -> Array:
 	var ro = rotina()
-	var chave := [_rotina_chave, passo, populacao(), acompanhada]
+	ro.ver_tempestade()
+	var chave := [_rotina_versao, passo, populacao(), acompanhada]
 	if chave == _visiveis_chave:
 		return _visiveis
 	var a := ano()
@@ -3319,13 +3387,7 @@ func pessoas_visiveis() -> Array:
 				f = {"id": id, "nome": p.nome, "sexo": p.sexo, "tracos": p.tracos.duplicate(), "pai": p.pai,
 					"mae": p.mae, "_dia": dia_abs()}
 				_fichas[id] = f
-			var ag: Array
-			if h < 5 and not ro.linhas.has(id):
-				# De madrugada todos dormem em casa; o plano do dia ainda está sendo montado.
-				var casa: float = ro.casa_de(id)
-				ag = [{"de": 0.0, "ate": 1.0, "x0": casa, "x1": casa, "acao": "dormir", "virado": 0, "cena": {}}]
-			else:
-				ag = ro.agenda(id, h)
+			var ag: Array = ro.agenda(id, h)
 			# A ação, o lado e a cena do meio da hora saem do trecho que cobre a metade dela.
 			var meio: Dictionary = ag[-1]
 			for tr in ag:
@@ -3353,32 +3415,25 @@ func pessoas_visiveis() -> Array:
 		for f in r:
 			vivas[f["id"]] = _fichas[f["id"]]
 		_fichas = vivas
-	if h < 5:
-		ro.preparar(int(ceil(r.size() / float(5 - h))))
 	_visiveis = r
 	_visiveis_chave = chave
 	return r
 
 
-## Monta até `n` planos do dia que ainda faltam. A apresentação pode chamar a cada quadro
-## (por exemplo, com n = 4) para espalhar o custo da montagem do dia, que de outro modo
-## cai nas primeiras horas da madrugada. Devolve quantos ainda faltam.
+## Adianta a montagem da rotina (a revisão de hoje e a rotina de amanhã) por cerca de
+## `n` × 0,3 ms. Não é preciso: os passos já fazem esse trabalho. Devolve quantas pessoas
+## vivas ainda estão sem plano na rotina de hoje.
 func adiantar_rotina(n: int = 4) -> int:
-	var ro = rotina()
-	ro.preparar(n)
-	var faltam := 0
-	for g in grupos_vivos():
-		for id in g.membros:
-			if not ro.linhas.has(id):
-				faltam += 1
-	return faltam
+	rotina()
+	_trabalhar_rotina(Time.get_ticks_usec() + n * 300)
+	return _rotina_cache.faltam()
 
 
 ## Cenas que acontecem nesta hora: funeral, nascimento, casamento, festa, migração,
 ## guerra, corvos, prece coletiva, colheita e construção. Guardadas por hora, como acima.
 func cenas_ativas() -> Array:
-	var chave := [_rotina_chave, passo]
 	rotina()
+	var chave := [_rotina_versao, passo]
 	if chave == _cenas_chave:
 		return _cenas
 	var r: Array = []
@@ -3388,7 +3443,7 @@ func cenas_ativas() -> Array:
 		d["fim"] = c["fim"] / 60.0
 		r.append(d)
 	_cenas = r
-	_cenas_chave = [_rotina_chave, passo]
+	_cenas_chave = chave
 	return r
 
 
