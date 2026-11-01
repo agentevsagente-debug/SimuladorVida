@@ -2,6 +2,17 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## A crônica viva na tecla C e as notas de povo pequeno
+
+| Item | O que foi feito |
+|---|---|
+| **Tecla C** | Abre `mundo.cronica_viva()` no mesmo leitor da estante. O índice fica ao lado ("Até agora", os capítulos vividos e o aberto), os capítulos vão na fonte de títulos, e ↑ e ↓ pulam de capítulo. Ela abre no começo do último ano escrito, que é o mais recente. C ou Esc fecham direto para o mundo, sem passar pela prateleira. |
+| **Ausência** | O resumo continua abrindo sozinho, no painel próprio. Com ele aberto, o C passa para a crônica viva. |
+| **Livro em curso na estante** | A lombada "em curso" da prateleira também abre a crônica viva. |
+| **Notas de povo pequeno** | O rito de passagem, a briga (`rixa`), o roubo, o casamento e o nascimento de camada "nota" aparecem na alça por 5 s, com a frase curta. Elas só aparecem se a alça estiver livre: não atropelam outro aviso. |
+
+Captura: `capturas/cronica-viva.png`, com a crônica viva no mundo de 130 anos e o resumo de uma ausência de 10 dias. As notas na alça não foram vistas: os eventos são raros.
+
 ## O modo discreto, revisto
 
 O modo discreto é ligado e desligado com a tecla D. Ele esconde o detalhe do que é pesado e deixa a consequência, que a crônica registra.

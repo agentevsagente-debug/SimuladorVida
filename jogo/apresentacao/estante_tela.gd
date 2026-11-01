@@ -45,6 +45,8 @@ var _rects: Array[Rect2i] = []
 var _sob := -1
 var _sob_botao := ""
 var _paginas: Array = []          # páginas: [[texto, estilo]] (titulo, capitulo, secao, ano, texto, epitafio)
+var so_um_livro := false  # aberta só para ler um livro (a crônica da tecla C): fechar vai direto ao mundo
+var _pagina_ultimo_ano := 0      # onde começa o último "### Ano" (a crônica abre ali, no mais recente)
 var _indice: Array = []           # [[rótulo curto, página]]: o resumo, os capítulos, quem foi quem, o fim
 const INDICE := Rect2i(4, 8, 104, 144)  # o índice, à esquerda do livro aberto
 const ESTILOS_TITULO := ["titulo", "capitulo", "secao", "epitafio"]  # na fonte de títulos (vinho)
@@ -69,6 +71,7 @@ func criar(p_interface: Node2D, p_vista: Node2D) -> void:
 
 
 func abrir() -> void:
+	so_um_livro = false
 	_carregar_livros()
 	modo = "estante"
 	_sob = -1
@@ -79,6 +82,7 @@ func abrir() -> void:
 func fechar() -> void:
 	visible = false
 	modo = ""
+	so_um_livro = false
 	fechada.emit()
 
 
@@ -143,7 +147,9 @@ func _carregar_livros() -> void:
 func _texto_do_livro(l: Dictionary) -> String:
 	if l.get("atual", false):
 		var t: Dictionary = vista.sim.tempo
-		return "# " + String(l["titulo"]) + "\n\n" + vista.sim.mundo.cronica() + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
+		var m = vista.sim.mundo
+		var miolo: String = m.cronica_viva() if m.has_method("cronica_viva") else m.cronica()
+		return "# " + String(l["titulo"]) + "\n\n" + miolo + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
 	if l.has("texto"):
 		return l["texto"]
 	return Estante.ler(l["id"], vista.sim.pasta_estante())
@@ -196,13 +202,15 @@ static func _povo_do_epiteto(titulo: String) -> String:
 	return palavras[-1] if not palavras.is_empty() else ""
 
 
-## Abre um livro em markdown direto no leitor, na página `pagina` (testes: --livro-arquivo).
-func abrir_texto(md: String, pagina := 0) -> void:
+## Abre um livro em markdown direto no leitor, na página `pagina` (-1: no começo do
+## último ano, o mais recente; testes: --livro-arquivo).
+func abrir_texto(md: String, pagina := 0, so_ele := false) -> void:
 	var titulo := md.get_slice("\n", 0).trim_prefix("# ").strip_edges()
 	livros = [{"titulo": titulo, "era": 1, "semente": 0, "ano_ini": 1, "ano_fim": 1, "texto": md}]
 	_rects = [Rect2i(INICIO_X, BASES[0] - 64, 12, 64)]
 	abrir_livro(0)
-	_ir_a_pagina(pagina)
+	so_um_livro = so_ele
+	_ir_a_pagina(_pagina_ultimo_ano if pagina < 0 else pagina)
 
 
 ## A cor da lombada: a mesma para todas as eras de um mundo.
@@ -262,6 +270,8 @@ func _paginar(md: String) -> Array:
 					pagina.append(["", "texto"])
 		elif estilo == "ano" and not pagina.is_empty() and pagina[-1][0] != "":
 			pagina.append(["", "texto"])
+		if estilo == "ano":
+			_pagina_ultimo_ano = paginas.size() + (1 if pagina.size() >= LINHAS - 1 else 0)
 		for linha in _quebrar_linhas(texto, fonte, largura):
 			if pagina.is_empty() and linha == "":
 				continue
@@ -368,7 +378,9 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 
 ## Volta um passo: do livro ou da pergunta à estante; da estante ao mundo.
 func voltar() -> void:
-	if modo in ["livro", "confirmar"]:
+	if modo == "livro" and so_um_livro:
+		fechar()
+	elif modo in ["livro", "confirmar"]:
 		modo = "estante"
 		queue_redraw()
 	else:

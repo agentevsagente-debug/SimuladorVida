@@ -344,6 +344,9 @@ func _ao_receber_eventos(eventos: Array) -> void:
 				var origem := String(ev.get("dados", {}).get("origem_tipo", ""))
 				if _interface and (ev["tipo"] == "dependencia" or origem in GESTOS_DO_DEUS):
 					_interface.avisar_evento(String(ev.get("curto", "")))
+			"rito", "rixa", "roubo", "casamento", "nascimento":  # as notas de povo pequeno, se a alça está livre
+				if _interface and String(ev.get("camada", "")) == "nota":
+					_interface.avisar_evento(String(ev.get("curto", "")), true)
 			"prece_atendida", "prece_sem_resposta", "prece_contrariada":
 				var quem: Array = ev.get("participantes", [])
 				var px: float = sim.mundo.posicao_de(quem[0]) if not quem.is_empty() else -1.0
