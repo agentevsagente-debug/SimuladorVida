@@ -24,6 +24,11 @@ const ESPACO := 7             # distância mínima entre pessoas paradas lado a 
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
+## Ninguém parado com o centro a menos disto do centro do fogo (auditoria 3, D1):
+## o fogo de 16 px fica à vista entre as pessoas da roda.
+const FOGO_LIVRE := 9.0
+## Quem fica nestas ações (ou detalhes) perto do fogo olha para ele.
+const OLHA_O_FOGO := ["fogueira", "rezar", "cozinhar", "comer", "aticar", "cochilar", "historias"]
 ## Quantos parados aparecem fora da roda do fogo (auditoria 2, N2). Com mais
 ## gente, os ociosos ficam "dentro de casa": não são desenhados, para a
 ## multidão não cobrir as construções. Quem está numa cena sempre aparece.
@@ -106,6 +111,11 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var destino: float = lugar.get(id, t.destino)
 		if acao != "remar":  # só no barco se fica sobre a água
 			destino = maxf(destino, MARGEM)
+		if not t.anda:  # ninguém parado em cima da fogueira: afasta para o lado em que já está
+			var fogo_d: float = vista.fogo_mais_perto(destino)
+			if absf(destino - fogo_d) < FOGO_LIVRE:
+				var lado := signf(destino - fogo_d) if destino != fogo_d else (1.0 if id % 2 == 0 else -1.0)
+				destino = fogo_d + lado * FOGO_LIVRE
 		var x: float = _x.get(id, destino)
 		var vel := PASSO_ANDAR * (0.8 + 0.4 * _dado(id, 0)) * rapido
 		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
@@ -132,10 +142,10 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var fogo: float = vista.fogo_mais_perto(x)
 		if movendo:
 			_virada[id] = x < anterior
+		elif (acao in OLHA_O_FOGO or t.get("detalhe", "") in OLHA_O_FOGO) and absf(fogo - x) < 40.0:
+			_virada[id] = fogo < x  # a roda olha para o fogo (quem está à direita, espelhado)
 		elif t.virado != 0:
 			_virada[id] = t.virado < 0
-		elif acao in ["fogueira", "rezar"]:
-			_virada[id] = fogo < x
 		var espelho: bool = _virada.get(id, id % 2 == 0)
 
 		var visual := _visual(p, acao, t, movendo or absf(destino - x) > 0.5, relogio)
@@ -281,11 +291,12 @@ func _pescar(id: int, fase: float) -> Array:
 func _parado(id: int, idoso: bool, feminina: bool, fase: float) -> Array:
 	if idoso:
 		return ["acoes/idoso_parado_2q", 8, int(fase * 0.8) % 2, 0]
-	# fatias de tempo irregulares por pessoa: em cerca de metade delas, uma microanimação
-	var tamanho := 5.0 + 6.0 * _dado(id, 0, 4)
+	# fatias de tempo irregulares por pessoa, de 3 a 6 s: em 4 de cada 5, uma
+	# microanimação, para o ocioso parecer vivo mesmo em 1x (auditoria 3, D2)
+	var tamanho := 3.0 + 3.0 * _dado(id, 0, 4)
 	var fatia := int(fase / tamanho)
 	var dentro := fmod(fase, tamanho)
-	if _dado(id, fatia, 5) < 0.55:
+	if _dado(id, fatia, 5) < 0.8:
 		var m: Array = MICRO[int(_dado(id, fatia, 6) * MICRO.size()) % MICRO.size()]
 		if dentro < m[2]:
 			var q: int = int(dentro / m[2] * m[1] * (2 if m[0].ends_with("olhar_lados_4q") else 1)) % m[1]

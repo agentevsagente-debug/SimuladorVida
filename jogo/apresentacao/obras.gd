@@ -85,8 +85,9 @@ static func camadas(tipo: String, estagio: int, aparencia: Dictionary) -> Array:
 
 
 ## Idades (anos) em que a natureza avança sobre uma ruína: mato 1, mato 2,
-## uma muda ao lado, mato 3 com uma árvore jovem.
-const IDADES_NATUREZA := [3, 10, 15, 25]
+## uma muda ao lado, mato 3 com uma árvore jovem. As ruínas dos estágios 1 e 2
+## somem aos 30 anos (API), então os 3 graus cabem antes disso.
+const IDADES_NATUREZA := [2, 6, 10, 15]
 
 
 ## Quantos passos da natureza a ruína já deu (0 a 4).
@@ -100,7 +101,7 @@ static func grau_natureza(anos: int) -> int:
 
 ## A ruína coberta de mato conforme a idade (natureza/<ruína>_mato_N), ou a ruína limpa.
 static func ruina_com_mato(caminho: String, anos: int) -> String:
-	var grau := 0 if anos < 3 else (1 if anos < 10 else (2 if anos < 25 else 3))
+	var grau := 0 if anos < IDADES_NATUREZA[0] else (1 if anos < IDADES_NATUREZA[1] else (2 if anos < IDADES_NATUREZA[3] else 3))
 	if grau == 0 or caminho == "":
 		return caminho
 	return "natureza/%s_mato_%d" % [caminho.get_file(), grau]

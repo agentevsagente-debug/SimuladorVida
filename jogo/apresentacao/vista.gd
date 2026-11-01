@@ -412,7 +412,8 @@ func _textura_fundo(nome: String) -> Texture2D:
 
 ## O que, além das construções, muda a imagem fixa: a estação (fase das roças).
 func _chave_do_fixo() -> Array:
-	return [sim.tempo.get("estacao", "")]
+	return [sim.tempo.get("estacao", ""), sim.clima.get("inverno_rigoroso", false),
+		sim.zonas.map(func(z): return z.get("alagada", false))]
 
 
 ## Refaz tudo o que é fixo: terreno, vegetação, construções, marcas, reflexo e frente.
@@ -435,7 +436,8 @@ func _montar_fixo() -> void:
 				for col in range(int(z["x_ini"]) / 8, int(z["x_fim"]) / 8):
 					queimadas.append(col)
 	var arvore_queimada := Arte.imagem(Arte.da_estacao("memoria/arvore_queimada") + ".png") if not queimadas.is_empty() else null
-	# no inverno, as 3 colunas de água mais perto da praia congelam
+	# no inverno, as 5 colunas de água mais perto da praia congelam (40 px); no
+	# inverno rigoroso, o lago inteiro (auditoria 3b, E5)
 	var gelo := []
 	if Arte.estacao == "inverno":
 		var agua := []
@@ -443,7 +445,8 @@ func _montar_fixo() -> void:
 			var cl: Array = _layout["colunas"][c]
 			if cl[1] == "areia" and int(cl[0]) > Terreno.NIVEL_AGUA:
 				agua.append(c)
-		gelo = agua.slice(maxi(0, agua.size() - 3))
+		var rigoroso: bool = sim != null and sim.clima.get("inverno_rigoroso", false)
+		gelo = agua if rigoroso else agua.slice(maxi(0, agua.size() - 5))
 	_gelo = gelo
 
 	var terreno := Terreno.new()
@@ -466,6 +469,8 @@ func _montar_fixo() -> void:
 			continue
 		if not _modo_layout and nome in PECAS_MIUDAS and _sob_construcao(item, obras):
 			continue
+		if not _modo_layout and item["plano"] == "mundo" and _arvore_na_roca(item, obras):
+			continue  # a roça abre uma clareira na mata (auditoria 3b, E6)
 		if item["plano"] == "mundo" and (int(item["x"]) + 8) / 8 in queimadas:
 			if nome in ARVORES:  # tronco carbonizado no lugar da árvore
 				var tronco: int = int(item["x"]) + ARVORES[nome]
@@ -538,6 +543,7 @@ func _montar_fixo() -> void:
 				if o.tipo == "cabana" and int(o.get("estagio", 1)) >= 2:
 					_luz_e_chamine(o, aparencia, x, imagens, terreno, cor, tag, luz_todas, luz_madrugada)
 	if sim:
+		_colar_enchente(terreno, cor, tag)
 		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
 		for z in sim.zonas:
 			if z["pedra_erguida"]:
@@ -704,6 +710,45 @@ func _largura_da_peca(o: Dictionary) -> int:
 	if not _larguras.has(caminho):
 		_larguras[caminho] = _imagem_obra({}, caminho).get_width()
 	return _larguras[caminho]
+
+
+## Árvores e pinheiros com o tronco sobre uma roça (ou o pomar dela) saem.
+func _arvore_na_roca(item: Dictionary, obras: Array) -> bool:
+	var nome: String = item["peca"]
+	if not (nome in ARVORES or nome.begins_with("pinheiro") or nome.begins_with("arvore")):
+		return false
+	var tronco: float = float(item["x"]) + ARVORES.get(nome, 8)
+	for o in obras:
+		if o.tipo == "roca" and tronco > o.x - 14.0 and tronco < o.x + 26.0:
+			return true
+	return false
+
+
+## A água barrenta do dilúvio cobre as zonas alagadas (API: `alagada`), num
+## nível só por zona, 4 px acima do chão do meio dela, com os blocos
+## `enchente_*` por cima do terreno e da base das construções.
+func _colar_enchente(terreno, cor: Image, tag: Image) -> void:
+	var superficie := Arte.quadro(Arte.imagem("efeitos/enchente_superficie_4q.png"), 0, 8)
+	var agua := Arte.imagem("efeitos/enchente_agua_1q.png")
+	for z in sim.zonas:
+		if not z.get("alagada", false):
+			continue
+		var colunas := []
+		for c in range(int(z["x_ini"]) / 8, int(z["x_fim"]) / 8):
+			if c >= 0 and c < LARGURA / 8 and not _na_agua(c * 8):
+				colunas.append(c)
+		if colunas.is_empty():
+			continue
+		var chaos: Array = colunas.map(func(c): return _sup[c * 8 + 4])
+		chaos.sort()
+		var nivel: int = chaos[chaos.size() / 2] - 4
+		for c in colunas:
+			var fundo: int = _sup[c * 8 + 4] + 3
+			if fundo <= nivel or fundo - nivel > 14:
+				continue  # o chão aqui fica acima da água, ou é encosta (sem parede de água)
+			terreno.colar(cor, tag, superficie, Vector2i(c * 8, nivel), Arte.MUNDO)
+			for y in range(nivel + 8, fundo, 8):
+				terreno.colar(cor, tag, agua, Vector2i(c * 8, y), Arte.MUNDO)
 
 
 func _sob_construcao(item: Dictionary, obras: Array) -> bool:
