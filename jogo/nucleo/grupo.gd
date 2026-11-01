@@ -46,6 +46,12 @@ var mortos: String = ""          # o que se faz com os mortos: enterram, queimam
 var atendidas_seguidas: int = 0  # preces atendidas sem nenhum silêncio no meio
 var dependente: bool = false     # deixou de se preparar: o deus sempre dá
 var exigente: bool = false       # passou a pedir coisas pequenas
+var poder: String = "lider"      # quem decide: lider, conselho ou sacerdotes
+var recursos: String = "partilha"  # partilha ou acumula
+var aparencia: Dictionary = {}   # parede, telhado, símbolo e roupa, para a apresentação
+var escrita_desde: int = -1      # ano em que o povo começou a escrever a própria história
+var estudou_ceu: bool = false
+var ruinas_vistas: Array = []    # povos cujas ruínas este povo já explicou
 var ultimo_ataque_sofrido: int = -1000
 
 

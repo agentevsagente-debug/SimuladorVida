@@ -297,6 +297,187 @@ A combinação taipa com palha e sol é exatamente a `casa_taipa` e o `templo` d
 6. **Pessoas:** os pixels da metade do corpo virada para longe do fogo descem um nível de luz. É isso que dá volume.
 7. **Céu:** onde o halo vale 255, o céu usa a tabela `halo_ceu`.
 
+## 11. Estágios 3 a 6 (`estagio3/` a `estagio6/`)
+
+As regras são as de sempre:
+- a base de cada peça fica na última linha;
+- as construções têm tamanhos múltiplos de 8;
+- os habitantes têm quadros de 8 × 12, ou de 12 × 12 quando carregam arma ou ferramenta (o corpo fica nas colunas 0 a 7);
+- as cores-base e as trocas de pele, cabelo e roupa são as de `habitantes/trocas.json`.
+
+**Culturas.** Cada estágio mantém as 3 culturas da seção 9. A casa sai em parede mais 3 telhados (`_telhado_palha`, `_telhado_telha`, `_telhado_tabuas`), e o templo sai em base mais 3 símbolos (`_simbolo_sol`, `_simbolo_lua`, `_simbolo_arvore`). As peças montadas, sem sufixo, são só exemplos.
+
+**Ruínas.** Cada construção tem a sua `_ruina`, gerada por código a partir da peça inteira, com o mesmo tamanho: o telhado cai e sobram caibros, o topo quebra, aparecem buracos, entulho e mato, e janelas e fogos se apagam.
+
+Cada pasta tem uma `amostra_estagioN_4x.png`.
+
+### Estágio 3, pedra
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `casa_pedra` (`_parede`, `_telhado_<cultura>`) | 32 × 24 | casa de pedra com porta e duas janelas |
+| `templo_pedra` (`_base`, `_simbolo_<cultura>`) | 32 × 32 | templo em 3 degraus de pedra lavrada, com escada, santuário e braseiros |
+| `casa_pedra_ruina`, `templo_pedra_ruina` | 32 × 24, 32 × 32 | |
+| `adulto_e3_parado_2q`, `adulto_e3_andar_4q` | 8 × 12 | capa de pele nos ombros e colar de pedra |
+
+### Estágio 4, metal
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `forja` e `forja_2q` | 24 × 24 | forno de pedra com chaminé, boca acesa (2 quadros de brasa) e bigorna. A boca emite luz à noite. |
+| `casa_enxaimel` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | casa de dois andares com madeira aparente |
+| `templo_colunas` (`_parede`, `_telhado_<cultura>`, `_simbolo_<cultura>`) | 32 × 32 | templo de colunas e arquitrave; o telhado de cultura forma o frontão |
+| `forja_ruina`, `casa_enxaimel_ruina`, `templo_colunas_ruina` | | |
+| `adulto_e4_parado_2q`, `adulto_e4_andar_4q` | 8 × 12 | capacete de ferro e fivela de metal |
+| `guerreiro_andar_4q` | 12 × 12 | lança e escudo redondo de bronze |
+| `ferreiro_trabalhar_4q` | 12 × 12 | avental de couro e martelo: ergue, desce e bate (com faísca) |
+
+### Estágio 5, escrita
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `tabuletas_4v` | 8 × 8 | 4 variações: tabuleta de barro, rolo, estela pequena e pilha de tabuletas |
+| `estela` | 8 × 16 | pedra escrita |
+| `biblioteca` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | o arquivo: pórtico de colunas, friso escrito e estantes com tabuletas e rolos |
+| `templo_escrita` (`_parede`) | 32 × 32 | o templo de colunas com friso escrito; usa os telhados e símbolos de `estagio4/templo_colunas_*` |
+| `biblioteca_ruina`, `templo_escrita_ruina` | | a ruína do arquivo tem tabuletas espalhadas |
+| `adulto_e5_parado_2q`, `adulto_e5_andar_4q` | 8 × 12 | túnica longa até os pés; parado, segura uma tabuleta |
+| `escriba_sentado_2q` | 8 × 12 | sentado, escrevendo na tabuleta |
+
+### Estágio 6, engenharia
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `canal`, `canal_comporta` | 8 × 8 | **blocos de superfície** (linha 2, como a grama) da irrigação: canal com borda de pedra, que repete na horizontal, e comporta |
+| `roca_irrigada` | 16 × 16 | a roça madura com rego d'água entre os sulcos |
+| `moinho_4q` | 32 × 40 | moinho de vento: as pás giram 22,5° por quadro, e os 4 quadros fecham o ciclo |
+| `muralha` | 8 × 16 | trecho com ameias que repete na horizontal |
+| `muralha_torre` | 16 × 32 | torre da muralha |
+| `barco_2q` | 24 × 16 | barco a vela balançando; a linha 14 fica na linha d'água |
+| `casa_tijolo` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | casa de tijolo de dois andares |
+| `templo_cupula` (`_base`, `_simbolo_<cultura>`) | 32 × 32 | templo de cúpula com colunata |
+| ruínas | | `moinho_ruina`, `muralha_ruina`, `muralha_torre_ruina`, `casa_tijolo_ruina`, `templo_cupula_ruina`, `barco_naufragado` |
+| `adulto_e6_parado_2q`, `adulto_e6_andar_4q` | 8 × 12 | chapéu de aba larga e calças |
+
+**Construção comum.** As paredes, portas, janelas, telhados, a ruína e a roupa de cada estágio saem de `construcao.py`. Os materiais de parede disponíveis são taipa, pedra, madeira, pedra lavrada, tijolo e enxaimel.
+
+## 12. Cenas de amostra (`cenas/`)
+
+`cena_estagio2.png` a `cena_estagio6.png` (480 × 160) mostram uma vila em cada estágio, de dia, no estilo da cena-alvo. `amostra_cenas_2x.png` junta as cinco.
+
+As cenas são montadas como a prova de montagem: só com as camadas do motor, o terreno em blocos e as peças lidas dos PNGs. O morro e a praia guardam a vegetação da cena-alvo, vinda de `montagem/layout.json`.
+
+| Estágio | O que a vila mostra |
+|---|---|
+| 2 | roça cercada, casas de taipa, celeiro, altar, templo no morro e gente com enxada |
+| 3 | casas de pedra, templo em degraus, roça e uma casa em ruína no morro |
+| 4 | forja acesa, casas de enxaimel, templo de colunas, ferreiro e guerreiros |
+| 5 | biblioteca, estelas, templo com friso escrito e o escriba |
+| 6 | muralha com torre e sentinela, casas de tijolo, templo de cúpula, roça irrigada, moinho no morro e barco na água |
+
+## 13. Estações (`estacoes/`)
+
+O verão é a arte de sempre. As outras três estações ficam em `estacoes/<estacao>/<pasta>/<nome>.png`, com o mesmo nome, tamanho e encaixe da peça original. **O motor procura primeiro na pasta da estação, que vem do campo `tempo().estacao` da API. Se a peça não estiver lá, usa a de verão.** A `montagem/montar.py` faz exatamente isso, na função `ler_pasta`.
+
+| Estação | O que muda |
+|---|---|
+| `primavera` | flores brancas e rosas nas copas e nos arbustos, flores no capim e na borda da grama, verde mais vivo |
+| `outono` | copas largas e arbustos laranja e ferrugem, capim seco, grama amarelando com folhas caídas, mata distante enferrujada (de dia). Os pinheiros não mudam. |
+| `inverno` | árvores de copa sem folhas (mesmo encaixe), neve assentada em cima de tudo (pinheiros, arbustos, telhados de todos os estágios, ruínas, pedras, cercas e roças), grama coberta de neve, montanhas com calotas maiores e mata distante com neve, nos 3 horários |
+
+Peças e efeitos novos:
+- `estacoes/inverno/terreno/gelo_superficie.png` (8 × 8): o lago congelado. Na montagem, as 3 colunas de água mais perto da praia usam o gelo no lugar da superfície da água.
+- `efeitos/neve_4q.png` (64 × 64, 4 quadros): neve caindo, que repete nas duas direções. Os flocos descem 2 px por quadro.
+- `efeitos/floco_3v.png` (4 × 4, 3 variações).
+- No outono, as folhas caindo são o `efeitos/folha_seca_4q` de sempre.
+
+Amostras e geração:
+- `estacoes/amostra_estacoes_4x.png`: o mesmo lugar (a cena-alvo de dia) nas 4 estações, de cima para baixo: primavera, verão, outono e inverno. Cada cena também está em `cena_<estacao>.png`, com 480 × 160.
+- `estacoes/amostra_estacoes_pecas_4x.png`: as principais peças nas 4 estações.
+- As variações são geradas por `estacoes.py` a partir das peças de verão. Peça nova entra automaticamente quando o script roda de novo.
+
+## 14. Ações dos habitantes (`acoes/`)
+
+Os quadros têm 8 × 12, olhando para a direita, com a base na última linha. São 4 quadros cada, com as mesmas cores-base e trocas de `habitantes/trocas.json`. `amostra_acoes_4x.png` mostra cada ação com 3 combinações de pele, cabelo e roupa.
+
+| Folha | O que faz |
+|---|---|
+| `pescar_4q` | espera com a vara erguida, a vara dá um puxão, a pessoa puxa e mostra o peixe. A linha até a água fica com o motor. |
+| `carregar_lenha_4q` | anda com o feixe de lenha nos braços |
+| `construir_4q` | martela: ergue, prepara, bate embaixo, volta |
+| `forjar_4q` | o mesmo golpe, de avental de couro e com faísca no impacto (vai junto da `forja` do estágio 4) |
+| `escrever_4q` | de cabeça baixa, escreve com o estilete na tabuleta |
+| `remar_4q` | sentado: só o tronco aparece, e o remo entra na água. O corpo começa 2 px abaixo; ponha a folha sobre o barco. |
+| `lutar_4q` | lança e escudo: guarda, recua, estocada e volta |
+| `carregar_morto_4q` | anda devagar, de cabeça baixa, com o corpo na mortalha sobre os ombros |
+| `dancar_4q` | dança de festa: braços para cima, pulo e troca de lado |
+
+## 15. Mundo vazio e natureza retomando (`natureza/`)
+
+**Ruínas cobertas pelo mato.** Toda ruína ganhou 3 graus, `<ruina>_mato_1`, `_mato_2` e `_mato_3`, com o mesmo tamanho e encaixe da ruína.
+- **Grau 1:** capim na base e as primeiras trepadeiras.
+- **Grau 2:** trepadeiras até o meio, moitas encostadas e musgo nos topos.
+- **Grau 3:** trepadeiras por quase tudo, mais moitas e uma muda brotando em cima.
+
+São 17 ruínas: `cabana_abandonada`, `casa_ruina`, `tumulo`, `pedra_erguida` e todas as `_ruina` dos estágios 3 a 6, mais o `barco_naufragado`.
+
+**Peças avulsas:**
+
+| Peça | Tamanho | O que é |
+|---|---|---|
+| `muda` | 8 × 8 | muda nascendo onde havia casa |
+| `arvore_jovem` | 16 × 16 | árvore de copa jovem; tronco na coluna 6 |
+| `pinheiro_jovem` | 16 × 16 | pinheiro jovem; tronco na coluna 7 |
+| `fogueira_antiga` | 16 × 16 | fogueira apagada há muito tempo: pedras meio enterradas, carvão velho e capim por dentro |
+
+As amostras são `amostra_natureza_4x.png` (4 ruínas nos 3 graus) e `amostra_natureza_jovens_4x.png`.
+
+## 16. Tela da estante de crônicas (`estante/`)
+
+| Peça | Tamanho | Uso |
+|---|---|---|
+| `estante_fundo` | 16 × 16 | fundo de tábuas escuras; repete nas duas direções |
+| `prateleira` | 16 × 6 | tábua que repete na horizontal; os livros ficam em pé sobre a linha 0 |
+| `livro_lombada_6v` | 12 × 64, 6 variações | uma lombada para cada era ou mundo, em 6 cores de couro com faixas douradas |
+| `livro_aberto` | 256 × 144 | o livro aberto, no estilo do pergaminho: capa de couro, duas páginas, sombra na lombada, bordas das folhas e fita marcadora |
+
+**O nome da era na lombada:**
+- vai na etiqueta clara (linhas 8 a 55, colunas 2 a 9);
+- é escrito com `fonte_5x7_escura`, em maiúsculas, girado 90° (lido de baixo para cima) e centrado;
+- cabem 7 caracteres; nomes maiores, o motor abrevia.
+
+**O texto do livro aberto:**
+- página da esquerda: x de 14 a 118; página da direita: x de 138 a 242; as duas de y = 12 a 130;
+- cabem 17 caracteres por linha e 10 linhas por página, com `fonte_5x7_escura`;
+- o título vai em `fonte_5x7_dourada`.
+
+As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e `amostra_tela_livro_4x.png`. As duas telas têm 480 × 160.
+
+## 17. Vida ambiente (`criaturas/`)
+
+São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos, que já são escuros. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
+
+| Folha | Quadro | Quadros | Estação | Horário | Onde e como |
+|---|---|---|---|---|---|
+| `passaro_voar_4q` | 6 × 4 | 4 | primavera, verão, outono | dia | bando de 3 a 5 que voa e pousa |
+| `passaro_pousado_2q` | 4 × 4 | 2 | primavera, verão, outono | dia | no chão, nas cercas e nos telhados |
+| `peixe_saltar_4q` | 8 × 8 | 4 | primavera, verão, outono | dia e entardecer | salta do lago e volta; não no gelo |
+| `sapo_2q` | 6 × 4 | 2 | primavera, verão | entardecer e noite | na margem e no junco |
+| `garca_2q` | 8 × 8 | 2 | primavera, verão, outono | manhã e dia | parada na água rasa da margem |
+| `coelho_4q` | 6 × 4 | 4 | todas | manhã e entardecer | no mato e na borda das roças; foge de gente |
+| `cervo_4q` | 10 × 8 | 4 | todas menos inverno fundo | manhã (até 9h) | na borda da floresta do morro |
+| `corvo_voar_4q` | 6 × 4 | 4 | todas | dia | sobre campos de batalha e onde há mortos |
+| `corvo_pousado_2q` | 5 × 4 | 2 | todas | dia | pousado perto dos mortos e das ruínas |
+| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas |
+| `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
+
+O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do limite de 12 × 8. Cada pássaro tem 3 × 2. Os bandos pequenos de verão saem de vários `passaro_voar_4q`, com os quadros defasados.
+
+**Ajustes na mata distante e no céu de inverno:**
+- **Outono:** a mata distante tem copas laranja e ferrugem separadas, com textura, e a ponta esquerda termina em copas soltas, sem corte reto.
+- **Inverno:** a mata distante tem neve nas copas e verde escuro salpicado de neve, nos 3 horários.
+- **Céu de inverno:** os céus de dia e de entardecer ficaram mais frios e pálidos (`estacoes/inverno/montagem/ceu_<hora>.png`). A montagem agora também procura o céu na pasta da estação.
+
 ## Critérios
 
 | Critério | Situação |

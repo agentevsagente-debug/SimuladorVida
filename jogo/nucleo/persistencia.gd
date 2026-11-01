@@ -17,12 +17,18 @@ const VERSAO := 1
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
 const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "grupos", "zonas", "eventos"]
-const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor"]
+const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
+	"cronicas_povos"]
+const Estante = preload("estante.gd")
 
 
-## Grava o mundo. Devolve true se deu certo.
+## Grava o mundo. Devolve true se deu certo. Livros fechados ainda fora da estante vão para ela.
 static func salvar(m, caminho: String = CAMINHO_PADRAO) -> bool:
 	m.salvo_em = int(Time.get_unix_time_from_system())
+	for livro in m.livros:
+		if not livro["na_estante"]:
+			Estante.guardar(livro)
+			livro["na_estante"] = true
 	var texto := "# Simulador de vida: mundo salvo. Arquivo de texto do Godot (var_to_str).\n"
 	texto += var_to_str(_codificar(_para_dict(m))) + "\n"
 	var tmp := caminho + ".novo"
@@ -39,6 +45,19 @@ static func salvar(m, caminho: String = CAMINHO_PADRAO) -> bool:
 	if FileAccess.file_exists(caminho):
 		dir.remove(caminho.get_file())
 	return dir.rename(tmp.get_file(), caminho.get_file()) == OK
+
+
+## Abandona o mundo: fecha a crônica da era como livro, guarda na estante e apaga o mundo salvo.
+## A estante fica. Depois disso, a apresentação cria outro mundo com Mundo.new(semente).
+static func abandonar(m, caminho: String = CAMINHO_PADRAO) -> Dictionary:
+	var livro: Dictionary = m.abandonar()
+	for l in m.livros:
+		if not l["na_estante"]:
+			Estante.guardar(l)
+			l["na_estante"] = true
+	if FileAccess.file_exists(caminho):
+		DirAccess.remove_absolute(ProjectSettings.globalize_path(caminho))
+	return livro
 
 
 static func existe(caminho: String = CAMINHO_PADRAO) -> bool:
