@@ -176,7 +176,7 @@ Selan acabou: Beim, Loya e Mim foram viver em Zeor.
 
 ### Ano 59
 
-Na primavera, Saut, que guiava Zeor, morreu de velhice aos 63 anos. Zeor encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Também Linon foi olhar o que restava de Selan. Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Na primavera, Saut, que guiava Zeor, morreu de velhice aos 63 anos. Zeor encontrou as ruínas de Selan: o chão batido de casas sem ninguém. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Também Linon foi olhar o que restava de Selan. Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 60
 
@@ -220,7 +220,7 @@ Nos anos 61 a 70 houve quatro secas, três fomes e treze preces que pareceram at
 
 ### Ano 71
 
-No verão do ano 71, a rixa entre Mizea e Linenya rachou Linon. Mizea partiu com os seus, dezenove pessoas, e fundou Beor na floresta. Beor achou o chão batido de casas sem ninguém, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam. Beor encontrou as ruínas de Selan: pedras de fogueira cobertas de cinza velha. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Lolinim, o primeiro de Beor.
+No verão do ano 71, a rixa entre Mizea e Linenya rachou Linon. Mizea partiu com os seus, dezenove pessoas, e fundou Beor na floresta. Beor achou o chão batido de casas sem ninguém, o que restava de Zeor. Os velhos diziam que eram parentes antigos, que se perderam. Beor encontrou as ruínas de Selan: o chão batido de casas sem ninguém. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, nasceu Lolinim, o primeiro de Beor.
 
 ### Ano 72
 
@@ -252,7 +252,7 @@ Com Linhaem à frente, a nova geração de Beor abandonou o costume de queimar o
 
 ### Ano 82
 
-Linhaem não podia mais viver perto de Bea. Saiu de Beor com oito pessoas e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Em Pelor, olharam pedras de fogueira cobertas de cinza velha e disseram que Selan tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. No inverno, Bea passou a falar pelo Que Sacode em Pelor. Era a primeira a rezar e a última a duvidar. Bea anunciou que o Que Sacode proibia qualquer trato com Beor. O deus nunca disse isso, mas Pelor obedeceu.
+Linhaem não podia mais viver perto de Bea. Saiu de Beor com oito pessoas e fundou Pelor na praia. Halinya passou a guiar Beor, mas Liselik não aceitou e guardou rancor. Em Pelor, olharam o chão batido de casas sem ninguém e disseram que Selan tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. No inverno, Bea passou a falar pelo Que Sacode em Pelor. Era a primeira a rezar e a última a duvidar. Bea anunciou que o Que Sacode proibia qualquer trato com Beor. O deus nunca disse isso, mas Pelor obedeceu.
 
 ### Ano 83
 
@@ -264,7 +264,7 @@ Na primavera, Sellinu morreu com 3 anos, de uma febre que ninguém entendeu. No 
 
 ### Ano 85
 
-Na primavera do ano 85, Bea implorou pela filha. Kuria morreu, e daquele dia em diante Bea cuspia no chão quando falavam do Que Sacode. A floresta pegou fogo sem que ninguém acendesse nada. Halinya, Hahaem e Selu morreram nas chamas. Para Beor, aquela terra ficou marcada. Depois de tanta briga pelo comando, Beor passou a ser guiado por um conselho dos mais velhos. No inverno, Linenya, a medrosa, cansou de dividir pouca comida. Partiu com onze pessoas para o morro e ali fundou Linor. Linor passou longe de pedras de fogueira cobertas de cinza velha: diziam que Selan tinha desagradado o deus e pagado por isso.
+Na primavera do ano 85, Bea implorou pela filha. Kuria morreu, e daquele dia em diante Bea cuspia no chão quando falavam do Que Sacode. A floresta pegou fogo sem que ninguém acendesse nada. Halinya, Hahaem e Selu morreram nas chamas. Para Beor, aquela terra ficou marcada. Depois de tanta briga pelo comando, Beor passou a ser guiado por um conselho dos mais velhos. No inverno, Linenya, a medrosa, cansou de dividir pouca comida. Partiu com onze pessoas para o morro e ali fundou Linor. Linor passou longe de o chão batido de casas sem ninguém: diziam que Selan tinha desagradado o deus e pagado por isso.
 
 ### Ano 86
 
@@ -312,7 +312,7 @@ No inverno do ano 99, Beor já não cabia na floresta. Haenya, a corajosa, levou
 
 ### Ano 100
 
-Kurar achou pedras de fogueira cobertas de cinza velha, o que restava de Pelor. Os velhos diziam que eram parentes antigos, que se perderam. No fim do ano 100, 37 pessoas viviam no mundo: Linon (16), Beor (13) e Kurar (8).
+Kurar achou o chão batido de casas sem ninguém, o que restava de Pelor. Os velhos diziam que eram parentes antigos, que se perderam. No fim do ano 100, 37 pessoas viviam no mundo: Linon (16), Beor (13) e Kurar (8).
 
 ---
 

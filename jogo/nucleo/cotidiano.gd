@@ -76,7 +76,13 @@ static func peso_na_faixa(g) -> float:
 ## lugar livre perto da fogueira, numa ordem fixa: a posição só muda quando o número
 ## de peças muda ou quando o povo se muda. Nenhuma peça encosta em outra (ficam a 2 px no
 ## mínimo) nem sai da faixa do povo: o que não cabe fica de fora, das últimas da ordem
-## para as primeiras (as duas primeiras casas, o altar e o templo vêm antes das outras).
+## para as primeiras (o templo, a obra do estágio e as duas primeiras casas vêm antes das outras;
+## nos estágios 1 e 2, a primeira casa vem antes de tudo).
+## As casas acompanham o povo (uma para cada CASA_PARA pessoas, até as que o povo ergueu): as
+## que não cabem na frente vão para uma segunda fileira, atrás (`fileira`: 1), se couberem.
+const CASA_PARA := 10
+
+
 static func construcoes_do_grupo(m, g) -> Array:
 	var r: Array = []
 	var faixa := faixa_do_grupo(m, g)
@@ -86,41 +92,65 @@ static func construcoes_do_grupo(m, g) -> Array:
 	if faixa[1] - faixa[0] < 110.0:
 		c = faixa[0] + 8.0
 	var ocupado: Array = []
+	var atras: Array = []      # a segunda fileira, só de casas
 	var est: int = g.estagio
-	var por: Callable = func(tipo: String, largura: float, extra: Dictionary, obrigatoria: bool):
+	var por: Callable = func(tipo: String, largura: float, extra: Dictionary, fundo: bool) -> bool:
 		var x := _lugar_livre(c, largura, faixa, ocupado)
+		var fileira := 0
+		if x < -9000.0 and fundo:
+			x = _lugar_livre(c, largura, faixa, atras)
+			fileira = 1
 		if x < -9000.0:
-			return
-		ocupado.append([x - largura * 0.5, x + largura * 0.5])
-		var o := {"tipo": tipo, "x": x, "largura": largura, "grupo": g.id, "estagio": est, "ruina": false}
+			return false
+		(atras if fileira == 1 else ocupado).append([x - largura * 0.5, x + largura * 0.5])
+		var o := {"tipo": tipo, "x": x, "largura": largura, "grupo": g.id, "estagio": est, "ruina": false, "fileira": fileira}
 		o.merge(extra)
 		r.append(o)
+		return true
 	ocupado.append([c - 4.0, c + 4.0])
-	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id, "estagio": est, "ruina": false})
-	# A muralha do povo guerreiro fica nas pontas: reservadas antes das outras peças.
+	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id, "estagio": est, "ruina": false, "fileira": 0})
+	# A muralha do povo guerreiro fica nas pontas: em cada uma, duas torres com o muro entre
+	# elas (`torres`: 2). Reservadas antes das outras peças.
 	if est >= 6 and g.violencia >= 0.5 and faixa[1] - faixa[0] >= 140.0:
-		for borda in [faixa[0] + 8.0, faixa[1] - 8.0]:
-			ocupado.append([borda - 8.0, borda + 8.0])
-			r.append({"tipo": "muralha", "x": borda, "largura": 16.0, "grupo": g.id, "estagio": est, "ruina": false})
+		for borda in [faixa[0] + 14.0, faixa[1] - 14.0]:
+			ocupado.append([borda - 14.0, borda + 14.0])
+			r.append({"tipo": "muralha", "x": borda, "largura": 28.0, "torres": 2, "grupo": g.id, "estagio": est, "ruina": false, "fileira": 0})
 	var largura_casa := 16.0 if est == 1 else (24.0 if est == 2 else 32.0)
-	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, int(ceil(g.membros.size() / 8.0)))
+	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, maxi(1, int(ceil(g.membros.size() / float(CASA_PARA)))))
 	var cre: bool = g.tem_crenca and not g.ceticos
+	# O templo fica de pé depois que o povo deixa de rezar (`abandonado`); acompanha o estágio.
+	var templo: bool = est >= 2 and (cre or not g.nome_deus.is_empty())
 	# A ordem diz o que fica quando falta terra: uma casa, o templo (ou o altar), a obra que
-	# marca o estágio (moinho, arquivo ou forja), outra casa, e só então o resto.
-	if casas >= 1:
-		por.call("cabana", largura_casa, {}, false)
-	if cre and est >= 2:
-		por.call("templo", 32.0, {}, false)
+	# marca o estágio (roda d'água e moinho, arquivo ou forja), outra casa, e só então o resto.
+	# No povo que deixou de rezar, a obra do estágio vem antes do templo abandonado. Do estágio 3
+	# em diante, as grandes obras vêm antes das casas, que têm a fileira de trás.
+	if casas >= 1 and est <= 2:
+		por.call("cabana", largura_casa, {}, true)
+	if templo and cre:
+		por.call("templo", 32.0, {"abandonado": false}, false)
 	elif cre:
 		por.call("altar", LARGURAS["altar"], {}, false)
 	if est >= 6:
+		# A roda d'água fica na roça do lado do lago (a ponta da faixa mais perto da água).
+		var rx: float = faixa[0] + 9.0
+		if _lugar_livre(rx, 16.0, faixa, ocupado) > -9000.0:
+			var x_roda := _lugar_livre(rx, 16.0, faixa, ocupado)
+			ocupado.append([x_roda - 8.0, x_roda + 8.0])
+			r.append({"tipo": "roda_dagua", "x": x_roda, "largura": 16.0, "grupo": g.id, "estagio": est, "ruina": false, "fileira": 0})
 		por.call("moinho", 32.0, {}, false)
 	elif est == 5:
 		por.call("arquivo", 32.0, {}, false)
 	elif est == 4:
 		por.call("forja", 24.0, {}, false)
+	if templo and not cre:
+		por.call("templo", 32.0, {"abandonado": true}, false)
+	if est >= 5 and g.estela >= 0:
+		# Uma estela marca um acontecimento do povo (o evento: veja `construcoes()`).
+		por.call("estela", 6.0, {"evento": g.estela}, false)
+	if casas >= 1 and est >= 3:
+		por.call("cabana", largura_casa, {}, true)
 	if casas >= 2:
-		por.call("cabana", largura_casa, {}, false)
+		por.call("cabana", largura_casa, {}, true)
 	if cre and est >= 2:
 		por.call("altar", LARGURAS["altar"], {}, false)
 	# As outras obras dos estágios de cima, se couberem.
@@ -128,8 +158,6 @@ static func construcoes_do_grupo(m, g) -> Array:
 		por.call("arquivo", 32.0, {}, false)
 	if est >= 5:
 		por.call("forja", 24.0, {}, false)
-	for i in range(2, casas):
-		por.call("cabana", largura_casa, {}, false)
 	if est >= 2 and g.tem_costume("estocar"):
 		por.call("celeiro", 24.0, {}, false)
 	if est >= 2:
@@ -140,6 +168,9 @@ static func construcoes_do_grupo(m, g) -> Array:
 		var rocas := clampi(int(ceil(adultos / 6.0)), 1, 4)
 		for j in rocas:
 			por.call("roca", LARGURAS["roca"], {"irrigada": est >= 6}, false)
+	# As outras casas: na frente, se couberem; senão, atrás.
+	for i in range(2, casas):
+		por.call("cabana", largura_casa, {}, true)
 	if est >= 6 and (g.zona == "lago" or g.zona == "praia"):
 		# Um barco por povo da beira, um ao lado do outro na água.
 		var k := 0
@@ -148,7 +179,7 @@ static func construcoes_do_grupo(m, g) -> Array:
 				break
 			if o.estagio >= 6:
 				k += 1
-		r.append({"tipo": "barco", "x": 112.0 - 28.0 * k, "largura": 24.0, "grupo": g.id, "estagio": est, "ruina": false})
+		r.append({"tipo": "barco", "x": 112.0 - 28.0 * k, "largura": 24.0, "grupo": g.id, "estagio": est, "ruina": false, "fileira": 0})
 	return r
 
 

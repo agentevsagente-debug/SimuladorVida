@@ -55,6 +55,7 @@ var escrita_desde: int = -1      # ano em que o povo começou a escrever a próp
 var estudou_ceu: bool = false
 var ruinas_vistas: Array = []    # povos cujas ruínas este povo já explicou
 var ultimo_ataque_sofrido: int = -1000
+var estela: int = -1             # do estágio 5 em diante, o evento que a estela do povo marca (-1: nenhum)
 
 
 func tem_costume(tipo: String) -> bool:

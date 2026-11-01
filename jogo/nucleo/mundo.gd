@@ -423,6 +423,12 @@ func peso_pessoa(p: Pessoa) -> int:
 
 # ---------------------------------------------------------------- eventos
 
+## Os acontecimentos que um povo que escreve marca numa estela (o último deles, do estágio 5 em
+## diante; a própria chegada ao estágio, se nada mais aconteceu).
+const MARCOS_DA_ESTELA := ["estagio", "edito", "guerra_fim", "conquista", "novo_lider", "reforma", "costume", "lugar_nomeado",
+	"arquivo_salvou"]
+
+
 func registrar(tipo: String, causa: String, importancia: int, zona: String, grupo_id: int,
 		participantes: Array = [], dados: Dictionary = {}, outro_grupo: int = -1) -> Evento:
 	var e := Evento.new()
@@ -442,6 +448,8 @@ func registrar(tipo: String, causa: String, importancia: int, zona: String, grup
 		e.dados["_deus"] = grupos[grupo_id].nome_deus
 		e.dados["_gdeus"] = grupos[grupo_id].genero_deus
 	eventos.append(e)
+	if grupo_id >= 0 and grupo_id < grupos.size() and MARCOS_DA_ESTELA.has(tipo) and (grupos[grupo_id].estagio >= 5 or tipo == "estagio"):
+		grupos[grupo_id].estela = e.id
 	for id in participantes:
 		if pessoas.has(id):
 			pessoas[id].lembrar(e.id)
@@ -1223,6 +1231,7 @@ func _eventos_lembrados() -> Dictionary:
 			lembrados[c["evento"]] = true
 		for nec in g.preces:
 			lembrados[g.preces[nec]["evento"]] = true
+		lembrados[g.estela] = true
 	for z in zonas.values():
 		lembrados[z.seca_evento] = true
 		for gid in z.nomes:
@@ -1636,16 +1645,21 @@ func _aparencia_inicial(nome: String) -> Dictionary:
 		"simbolo": SIMBOLOS[posmod(h / 9, 3)], "roupa": ROUPAS[posmod(h / 27, 3)]}
 
 
-## Um povo novo herda a aparência do povo de onde saiu e muda uma coisa.
+## Um povo novo herda a aparência do povo de onde saiu e muda duas coisas. A roupa, que se vê
+## de longe em cada pessoa, entra duas vezes no sorteio.
 func _aparencia_derivada(mae: Dictionary, nome: String) -> Dictionary:
 	if mae.is_empty():
 		return _aparencia_inicial(nome)
 	var a := mae.duplicate()
 	var h := hash(nome)
 	var listas := {"parede": PAREDES, "telhado": TELHADOS, "simbolo": SIMBOLOS, "roupa": ROUPAS}
-	var chave: String = listas.keys()[posmod(h, 4)]
-	var opcoes: Array = listas[chave]
-	a[chave] = opcoes[posmod(opcoes.find(a[chave]) + 1 + posmod(h / 4, 2), 3)]
+	var sorteio := ["parede", "telhado", "simbolo", "roupa", "roupa"]
+	var primeira: String = sorteio[posmod(h, 5)]
+	var resto: Array = sorteio.filter(func(k): return k != primeira)
+	var segunda: String = resto[posmod(h / 5, resto.size())]
+	for chave in [primeira, segunda]:
+		var opcoes: Array = listas[chave]
+		a[chave] = opcoes[posmod(opcoes.find(a[chave]) + 1 + posmod(h / 25, 2), 3)]
 	return a
 
 
@@ -3714,13 +3728,16 @@ func construcoes() -> Array:
 		if g.zona == "lago" or g.zona == "praia":
 			vizinhos = grupos_na_zona("lago") + grupos_na_zona("praia")
 		var assinatura := [g.zona, g.abrigos, g.estagio, g.membros.size(), g.tem_crenca, g.ceticos,
-			g.tem_costume("estocar"), g.violencia >= 0.5,
+			g.tem_costume("estocar"), g.violencia >= 0.5, g.estela, g.nome_deus.is_empty(),
 			vizinhos.map(func(o): return [o.id, o.estagio, Cotidiano.peso_na_faixa(o)])]
 		var guardado: Array = _obras_por_grupo.get(g.id, [])
 		if guardado.is_empty() or guardado[0] != assinatura:
 			var obras := Cotidiano.construcoes_do_grupo(self, g)
 			for o in obras:
 				o["aparencia"] = g.aparencia   # a cultura do povo: parede, telhado, símbolo
+				if o["tipo"] == "estela":
+					var ev: Evento = evento(o["evento"])
+					o["texto"] = _cronista.texto_curto(ev) if ev != null else ""
 			# Se o povo continua no mesmo lugar e encolheu, as casas das pontas ficam vazias (e não
 			# quando a faixa encolheu porque um vizinho cresceu).
 			if not guardado.is_empty() and guardado[0][0] == g.zona and g.membros.size() < guardado[0][3]:
