@@ -46,9 +46,22 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **`ferramentas/b1.ps1`** (novo):
   - Ctrl+Alt+H esconde e traz de volta: OK;
   - fechar pelo X da janela (WM_CLOSE): 3 de 3 limpos, com saída 0, "threads encerradas", sem erro no registro e sem o processo do atalho órfão;
-  - a janela por cima dos outros programas por 60 min, conferida a cada minuto: o resultado está mais abaixo.
+  - a janela por cima dos outros programas por 60 min, conferida a cada minuto: 60 de 60 minutos visível e sempre por cima, 0 erros no registro; a memória privada ficou estável entre 202 e 206 MB.
 - **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
 - **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
+
+**Itens do QA (`qa/RELATORIO-QA.md`).**
+- **D-15:** o aviso "Não resta ninguém" agora cabe no pergaminho (`capturas/fim-do-mundo.png`):
+  - o título do livro vem em linhas próprias, quebradas na largura da caixa, e a caixa cresce com elas;
+  - o "terminou, do ano X ao ano Y" vem na linha seguinte, sem os dois-pontos seguidos;
+  - quando a era começa e acaba no mesmo ano, a linha diz "terminou no ano N".
+- **D-14:** `qa/*` entrou no `exclude_filter` da exportação.
+- **D-09, a parte da apresentação** (o mundo começa vazio):
+  - a primeira dica da fila é "Clique sobre o mundo para fazer nascer um povo", e ela sai da fila sozinha num mundo que já tem gente;
+  - no mundo vazio, o clique sobre o mundo cria o povo sem escolher o botão, e um poder escolhido antes é largado;
+  - o aviso de extinção diz o mesmo.
+
+  Falta ligar o `Mundo.new()` vazio, quando a A entregar, e ajustar os cenários de teste.
 
 **Desejáveis (D1 a D3).**
 - **D1:** o impacto do raio fica 1,5 s (antes, 0,8 s). Onde ele cai, dois blocos de terra queimada (`memoria/terra_queimada_a` e `_b`) ficam no chão por 60 s.
