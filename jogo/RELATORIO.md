@@ -58,6 +58,68 @@ Captura: `tarefa4-noite-vs-alvo.png` (20h).
 - **Clique perdido:** numa rodada da verificação, o primeiro clique na moldura logo depois de um clique na janela de trás se perdeu. A janela-alvo, que não é o jogo, perdeu um clique do mesmo jeito noutra rodada. Num teste de 10 repetições, chegaram 10 de 10. Parece ser do clique sintético, não da moldura, mas convém observar no uso real.
 - **Argumentos de teste**, que não são funções do jogo: `--demo`, `--dica`, `--abrir`, `--anos`, `--simular-ausencia`, `--capturar*`, `--quadros`, `--intervalo`, `--cena=layout`, `--efeito` e as variáveis `CONTAR_SOBREPOSICAO` e `DEPURAR_ALCA`.
 
+## Correção do céu (grade de pontos)
+
+**Causa:** nas horas de transição (5h–7h, 17h–18h, 19h–20h), o shader misturava os dois céus com pontilhado ordenado na tela inteira. No ritmo normal, cada transição dura cerca de 2 minutos reais, por isso a grade aparecia e sumia. A neblina noturna também desenhava pontos em grade na base das montanhas.
+
+**Correção:**
+- **Céu:** a troca de horário é uma frente (a noite desce do alto, a manhã sobe do horizonte), com pontilhado só numa faixa de 2 linhas.
+- **Resto da cena:** montanhas, chão e pessoas trocam inteiros no meio da transição.
+- **Neblina:** não existe à noite; de manhã, fiapos esparsos e irregulares (ruído fixo, não grade), num tom vizinho.
+
+**Teste:** `ferramentas/ceu_sem_grade.py` captura a vista de meia em meia hora, o dia inteiro, com e sem chuva (96 capturas), e conta os pixels isolados do céu.
+- **Reprova a versão antiga:** 22.212 pixels isolados às 19h30, contra um limite de 8.198.
+- **Aprova a atual:** 96 de 96. À noite, o céu tem os mesmos 115 pixels isolados da cena-alvo.
+
+## Vida em cena (API v8 e arte da seção 18)
+
+Em `apresentacao/vida.gd`:
+
+- **Agenda:** cada pessoa segue os trechos da hora (`x0` → `x1`, ação, para onde olha, cena).
+  - Como a agenda espalha uma caminhada pelo trecho inteiro (uma hora são 112,5 s), a pessoa anda em passo natural até o destino, de 7 a 11 px/s conforme a pessoa, com pausas curtas no caminho. Lá, faz a ação até o trecho seguinte.
+- **Ações e folhas** (mapa da seção 18):
+
+  | Ação | Folha |
+  |---|---|
+  | andar | adulto A, adulto B ou idoso andando; as crianças correm |
+  | colher | colher; com roça perto, enxada; na margem, pescar e segurar o peixe |
+  | pescar | pescar e segurar o peixe |
+  | lenha | carregar lenha |
+  | construir, forjar, escrever, remar, lutar | a folha de mesmo nome |
+  | rezar | rezar |
+  | fogueira | sentado ou sentado no chão |
+  | conversar | um fala e o outro ouve, alternando |
+  | cuidar | mãe com bebê |
+  | dançar | dançar; na festa, o primeiro participante toca o tambor |
+  | carregar_morto | carregar no funeral |
+
+- **Parado com vida:** microanimações de olhar para os lados, esticar, sentar no chão, agachar, coçar a cabeça e bocejar, em fatias de tempo irregulares e fixas por pessoa. O idoso fica apoiado na bengala, e as crianças pulam de vez em quando.
+- **Cenas:**
+  - **funeral:** dois carregadores com a mortalha por cima;
+  - **festa e casamento:** dança, tambor e bandeirolas sobre a roda;
+  - **migração:** trouxa e cesto;
+  - **guerra:** o primeiro da cena leva o estandarte, e os outros lutam.
+- **Ainda sem efeito na tela:** a cena `corvos` (ver "Criaturas"), as folhas dos estágios 3 a 6 (`estagioN/adulto_eN_*`) e o casal de mãos dadas.
+- **Teste de sobreposição** (`CONTAR_SOBREPOSICAO=1`): entre os parados, no máximo 1 figura por coluna de pixels; com quem anda, no máximo 4 por um instante, quando as pessoas se cruzam.
+- **Sequências:** `capturas/cotidiano-dia.gif` (9h) e `capturas/cotidiano-tarde.gif` (17h), cada uma com 15 s a 4 quadros por segundo.
+
+## Estações e vida ambiente
+
+- **Estações:** cada peça é procurada primeiro em `arte/estacoes/<estação>/` e, se não estiver lá, vale a de verão, como no `montar.py`. Isso vale para o terreno, a vegetação, as construções, as marcas, os planos de fundo e o céu. Os fundos da estação anterior são soltos na troca.
+- **Inverno:** as 3 colunas de água mais perto da praia congelam (`gelo_superficie`), e cai neve em boa parte dos dias.
+- **Outono:** folhas secas caem das copas.
+- **Criaturas** (`apresentacao/criaturas.gd`), conforme a tabela de estação e horário da seção 17: bandos de pássaros, pássaro pousado, peixe saltando, sapo, garça na margem, coelho (que pula para longe de gente), cervo pastando no morro, morcegos ao entardecer e o bando migrando no inverno. Os corvos ainda não estão ligados à cena `corvos` da API.
+- **Captura:** `capturas/estacoes.png` mostra primavera, verão, outono e inverno, nessa ordem.
+
+## Memória: o que foi medido e o que foi feito
+
+1. **Peças usadas só na CPU importadas como Image.** Terreno, peças, camadas, folhas de pessoas e estações (292 arquivos) eram importados como textura. Ler a imagem de volta criava uma textura no driver para cada um. Ganho de 9,5 MB em 3x: de 224,6 para 215,1 MB de conjunto de trabalho.
+2. **Testes que não mudaram nada:**
+   - reduzir o buffer de lote 2D, o atlas de sombras e a fila de mensagens;
+   - pôr todas as pessoas numa folha só: só 1,4 MB, então um atlas de texturas renderia pouco.
+3. **Contadores do Godot:** comparado ao protótipo da fase 0, o jogo tem 6,5 MB a mais de memória estática do motor, 3 MB de texturas e 3 MB de vídeo. O resto da diferença está fora do motor: driver, bibliotecas e sobra do heap depois da montagem.
+4. **Correção de método:** desde a fase 0, chamei o conjunto de trabalho de "a Memória do Gerenciador de Tarefas", e isso está errado. A coluna "Memória" do Gerenciador de Tarefas é o conjunto de trabalho **privado**, que não conta as páginas compartilhadas do executável do editor. O `medir.ps1` agora grava as três medidas.
+
 ## Tarefa 5: leveza
 
 **Método:** o mesmo da fase 0. `jogo/ferramentas/medir.ps1`:
