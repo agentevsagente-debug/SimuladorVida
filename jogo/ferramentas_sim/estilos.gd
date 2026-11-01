@@ -120,6 +120,19 @@ func _onde(m, pid: int) -> float:
 	return x
 
 
+## O nome do deus em cada povo vivo. Povos que se separaram de um mesmo povo levam a mesma fé:
+## o nome aparece uma vez, com quantos povos o usam.
+func _nomes_agora(m) -> String:
+	var conta := {}
+	var ordem: Array = []
+	for g in m.grupos_vivos():
+		var n: String = g.nome_deus if g.tem_crenca else "-"
+		if not conta.has(n):
+			ordem.append(n)
+		conta[n] = conta.get(n, 0) + 1
+	return ", ".join(ordem.map(func(n): return n if conta[n] == 1 else "%s (%d povos)" % [n, conta[n]]))
+
+
 func _medir(m) -> Dictionary:
 	var fe := 0.0
 	for g in m.grupos_vivos():
@@ -156,7 +169,7 @@ func _medir(m) -> Dictionary:
 			crentes += 1
 	var pop: int = m.populacao()
 	return {"populacao": pop, "povos": m.grupos_vivos().size(), "fe_media": fe / maxi(1, pop),
-		"nomes_do_deus": nomes.size(), "nomes_agora": ", ".join(m.grupos_vivos().map(func(g): return g.nome_deus if g.tem_crenca else "-")),
+		"nomes_do_deus": nomes.size(), "nomes_agora": _nomes_agora(m),
 		"costumes": costumes, "tipos_costume": ", ".join(tipos_costume.keys()), "povos_dependentes": dependentes,
 		"estoque_por_pessoa": estoque / maxi(1, pop), "guerras_santas": santas, "ataques": conta.get("ataque", 0),
 		"secularizacoes": conta.get("secularizacao", 0), "profetas": conta.get("profeta", 0),

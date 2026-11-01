@@ -72,7 +72,7 @@ Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de po
 
 ### Ano 23
 
-Em Esar, Demya pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Nega mandou.
+Demya tinha rezado: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Nega mandou.
 
 *Entre os anos 24 e 29, nada mudou o rumo do mundo.*
 
@@ -96,7 +96,7 @@ No fim do ano 40, oito pessoas viviam no mundo, todas em Esar.
 
 ### Ano 44
 
-Na primavera do ano 44, a terra tremeu. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus nada fez: o crédito era de graça.
+Na primavera, o chão tremeu sem aviso. Caiu uma cabana. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode». Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Sacode. O deus nada fez: o crédito era de graça.
 
 ### Ano 45
 
@@ -106,7 +106,7 @@ A seca voltou, como no ano 5: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 47
 
-O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito.
+O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Por 10 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
 
 *Os anos 48 a 49 passaram em paz.*
 
@@ -118,11 +118,11 @@ Na primavera do ano 50, a terra tremeu. Caiu uma cabana. Nos anos 41 a 50 houve 
 
 ### Ano 53
 
-Em Esar, Gaut pediu: «Que Sacode, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus não tinha feito nada.
+Gaut tinha rezado: «Que Sacode, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. O deus não tinha feito nada.
 
 ### Ano 54
 
-A seca voltou, como no ano 45: 21 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 45. Foram 21 dias de seca.
 
 ### Ano 55
 
@@ -138,11 +138,11 @@ Nos anos 51 a 60 houve quatro secas e três preces que pareceram atendidas; nasc
 
 ### Ano 66
 
-No verão do ano 66, a terra tremeu. Caiu uma cabana.
+Houve um tremor de terra. Caiu uma cabana.
 
 ### Ano 67
 
-De novo a chuva sumiu, como no ano 54. Foram 24 dias de seca.
+A seca voltou, como no ano 54: 24 dias sem chuva, até que o céu se abriu.
 
 ### Ano 68
 
@@ -150,7 +150,7 @@ De novo o sol se apagou no meio do dia.
 
 ### Ano 69
 
-Maena, que guiava Esar, morreu de velhice aos 65 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Morreu o último que tinha visto o ano 20. Em Esar, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê.
+Maena, que guiava Esar, morreu de velhice aos 65 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. Em Esar, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 20, só a crônica guarda.
 
 ### Ano 70
 
@@ -160,7 +160,7 @@ Nos anos 61 a 70 houve três secas; nasceram zero crianças e morreram uma pesso
 
 ### Ano 76
 
-Apareceu no céu uma luz com rabo, que ficou 15 noites e sumiu.
+Por 15 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
 
 ### Ano 77
 
@@ -170,7 +170,7 @@ De novo a chuva sumiu, como no ano 67. Foram 19 dias de seca.
 
 ### Ano 80
 
-No verão, a terra tremeu. Caiu uma cabana. Kuroru morreu sob os escombros. Nos anos 71 a 80 houve duas secas; nasceram três crianças e morreram duas pessoas. No fim do ano 80, oito pessoas viviam no mundo, todas em Esar.
+O chão tremeu sem aviso. Caiu uma cabana. Kuroru morreu sob os escombros. Nos anos 71 a 80 houve duas secas; nasceram três crianças e morreram duas pessoas. No fim do ano 80, oito pessoas viviam no mundo, todas em Esar.
 
 *Entre os anos 81 e 89, nada mudou o rumo do mundo.*
 
@@ -182,7 +182,7 @@ No fim do ano 90, oito pessoas viviam no mundo, todas em Esar.
 
 ### Ano 93
 
-De novo a chuva sumiu, como no ano 77. Foram 18 dias de seca.
+A seca voltou, como no ano 77: 18 dias sem chuva, até que o céu se abriu.
 
 *Do ano 94 ao 95, a vida seguiu sem grandes acontecimentos.*
 
@@ -194,7 +194,7 @@ Na primavera, morreu Kaoro, que guiava Esar, aos 63 anos. De novo o sol se apago
 
 ### Ano 99
 
-Morreu Kaia, que guiava Esar, aos 59 anos.
+Kaia, que guiava Esar, morreu de velhice aos 59 anos.
 
 ### Ano 100
 

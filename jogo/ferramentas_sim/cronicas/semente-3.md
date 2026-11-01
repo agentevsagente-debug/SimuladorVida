@@ -42,7 +42,7 @@ Kurpeya passou a falar pela Mão Fechada em Koil. Era a primeira a rezar e a úl
 
 ### Ano 14
 
-Na primavera, morreu Tamu, que fundou Koil e o guiava, aos 62 anos. No outono, a terra tremeu. Caíram duas cabanas. Koil fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar.
+Na primavera, morreu Tamu, que fundou Koil e o guiava, aos 62 anos. No outono, o chão tremeu sem aviso. Caíram duas cabanas. Koil fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar.
 
 *O ano 15 foi calmo.*
 
@@ -70,7 +70,7 @@ Nasceu Tama, a primeira de Peak.
 
 ### Ano 26
 
-No verão, apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu. Para Peak, o deus já não era «a Mão Fechada»: passou a ser «o Que Risca o Céu».
+No verão, uma estrela de cauda cruzou o céu por 10 noites. Ninguém dormia direito. Para Peak, o deus já não era «a Mão Fechada»: passou a ser «o Que Risca o Céu».
 
 ### Ano 27
 
@@ -82,7 +82,7 @@ Morreu Kurpeya, a devota, aos 56 anos. Foi quem deu ao deus o nome de «a Mão F
 
 ### Ano 29
 
-Peos, que guiava Koil, morreu dormindo, aos 56 anos. Foi quem descobriu que semente vira planta. No inverno, as preces de Peak ficaram sem resposta. A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
+Peos, que guiava Koil, morreu dormindo, aos 56 anos. Tinha sido o primeiro a plantar. No inverno, as preces de Peak ficaram sem resposta. A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 30
 
@@ -92,17 +92,17 @@ Koik, que falava pelo Que Risca o Céu em Peak, morreu dormindo, aos 59 anos. No
 
 ### Ano 33
 
-Na primavera, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos. Foi quem levou os seus a fundar Peak.
+Na primavera, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos. Tinha fundado Peak.
 
 *Do ano 34 ao 36, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 37
 
-Em Peak, Makon pediu: «Que Risca o Céu, não nos deixes secar.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. O deus não tinha feito nada.
+Makon tinha rezado: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que o Que Risca o Céu tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 38
 
-A seca voltou, como no ano 29: 25 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 29. Foram 25 dias de seca.
 
 *No ano 39, nada de notável aconteceu.*
 
@@ -118,7 +118,7 @@ No outono, em Peak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganha
 
 ### Ano 43
 
-No verão do ano 43, Veik, o ambicioso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+No verão do ano 43, Veik, o ambicioso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 *Entre os anos 44 e 45, nada mudou o rumo do mundo.*
 
@@ -134,17 +134,17 @@ Cansado de um líder que mandava sozinho, Peak passou a decidir em conselho.
 
 ### Ano 49
 
-Na primavera do ano 49, Veur, que guiava Koil, morreu de velhice aos 51 anos. Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Mavion implorou pelo filho. Pevik morreu, e daquele dia em diante Mavion cuspia no chão quando falavam do Que Levanta. Uma tosse que não passava matou dezoito pessoas em Koil. Depois da febre, Koil passou a queimar os seus mortos, para que a doença não voltasse.
+Na primavera do ano 49, morreu Veur, que guiava Koil, aos 51 anos. Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Mavion implorou pelo filho. Pevik morreu, e daquele dia em diante Mavion cuspia no chão quando falavam do Que Levanta. Uma tosse que não passava matou dezoito pessoas em Koil. Depois da febre, Koil passou a queimar os seus mortos, para que a doença não voltasse.
 
 ### Ano 50
 
-Makon, que guiava Peak, morreu dormindo, aos 52 anos. Nunca perdoou o deus pela morte de Lopeik. Os últimos de Peak, Tamos, Pelour e Peur, juntaram-se a Koil. Peak deixou de existir. Em Koil, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
+Makon, que guiava Peak, morreu de velhice aos 52 anos. Nunca perdoou o deus pela morte de Lopeik. Os últimos de Peak, Tamos, Pelour e Peur, juntaram-se a Koil. Peak deixou de existir. Koil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
 
 *Do ano 51 ao 53, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 54
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Veik rezou por Veur até a voz acabar. Veur morreu mesmo assim, e Veik nunca mais rezou. A febre levou Veik, que guiava Koil. Nunca perdoou o deus pela morte de Veur. Maik, que falava pelo Que Levanta em Koil, morreu de febre aos 34 anos. Uma tosse que não passava matou dez pessoas em Koil.
+Na primavera, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Veik rezou por Veur até a voz acabar. Veur morreu mesmo assim, e Veik nunca mais rezou. A febre levou Veik, que guiava Koil. Nunca perdoou o deus pela morte de Veur. Maik, que falava pelo Que Levanta em Koil, morreu de febre aos 34 anos. Uma febre correu Koil e levou dez vidas.
 
 ### Ano 55
 
@@ -208,7 +208,7 @@ Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade d
 
 ### Ano 89
 
-Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. Depois daquela fome, Pear passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Em Pear, olharam o chão batido de casas sem ninguém e disseram que Koil tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. Depois daquela fome, Pear passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Pear achou o chão batido de casas sem ninguém, o que restava de Koil. Os velhos diziam que eram parentes antigos, que se perderam. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
 
 ### Ano 90
 
@@ -218,7 +218,7 @@ Nos anos 81 a 90 houve duas secas e seis preces que pareceram atendidas; nascera
 
 ### Ano 93
 
-Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Foi quem levou os seus a fundar Pear. Pear escolheu Maloik para guiar o grupo. Maos queria o lugar e nunca perdoou. No inverno, Tamya deu à luz gêmeos, Selloim e Pekuron. Uns viram bênção; outros, mau sinal.
+Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Tinha fundado Pear. Pear escolheu Maloik para guiar o grupo. Maos queria o lugar e nunca perdoou. No inverno, nasceram gêmeos de Tamya: Selloim e Pekuron.
 
 *Os anos 94 a 96 passaram em paz.*
 

@@ -15,20 +15,20 @@ Todos começam a agir no ano 5. Antes disso, a família inicial (12 pessoas) nã
 
 | | Benevolente | Cruel | Ausente | Caprichoso |
 |---|---|---|---|---|
-| População | 461 | 34 | 68 | 103 |
-| Fé média (-1 a 1) | 0,65 | -1,00 | 0,06 | 0,58 |
+| População | 457 | 85 | 63 | 111 |
+| Fé média (-1 a 1) | 0,63 | -0,99 | 0,10 | 0,28 |
 | Povos dependentes, ao longo do tempo | 4 | 0 | 0 | 0 |
 | Povos que passaram a exigir | 4 | 0 | 0 | 0 |
-| Estoque por pessoa | 67 | 102 | 50 | 25 |
-| Vezes que o deus mudou de nome | 15 | 6 | 3 | 10 |
-| Costumes vivos | 7 | 1,7 | 4,3 | 10,7 |
-| Secularizações | 0 | 0 | 0,7 | 0 |
-| Mortos pelo deus | 0 | 25 | 0 | 2 |
+| Estoque por pessoa | 23 | 30 | 57 | 54 |
+| Vezes que o deus mudou de nome | 14 | 10 | 3 | 9 |
+| Costumes vivos | 7,3 | 3,3 | 5,7 | 9,0 |
+| Secularizações | 0,7 | 0,3 | 0,7 | 1,0 |
+| Mortos pelo deus | 0 | 44 | 0 | 3 |
 
 - **Benevolente:** povos grandes (chegam ao limite da terra), devotos, dependentes e depois exigentes ("as preces ficaram pequenas: pedia-se até sol para a pesca"). O deus ganha nomes de quem dá: o Que Dá, o Generoso, a Mãe da Fartura, a Mão Que Cura.
-- **Cruel:** povos pequenos, de fé hostil (-1: odeiam o deus em quem acreditam), que fazem oferendas para aplacá-lo e guardam comida como ninguém. Os nomes são de medo: o Senhor do Trovão, o Que Fere, a Terra Brava. Há guerra santa.
+- **Cruel:** povos pequenos, de fé hostil (-1: odeiam o deus em quem acreditam), que fazem oferendas para aplacá-lo. Os nomes são de medo: o Senhor do Trovão, o Que Fere, a Terra Brava. Há guerra santa.
 - **Ausente:** o deus é esquecido. A fé esfria até perto de zero, há secularização e poucos nomes. Ninguém fica dependente.
-- **Caprichoso:** povos supersticiosos, com o maior número de costumes (tabus, oferendas, festas) e de nomes para o deus. A fé é alta, mas instável.
+- **Caprichoso:** povos supersticiosos, com o maior número de costumes (tabus, oferendas, festas) e de nomes para o deus. A fé é instável: de 0,58 numa medição a 0,28 em outra, conforme o que o acaso do deus atinge.
 
 ## O que foi ajustado para os estilos se separarem
 
@@ -38,6 +38,10 @@ Na primeira medição, o benevolente e o ausente davam povos parecidos (fé 0,65
 - **Um deus que nunca aparece é esquecido.** Depois de 15 anos sem nenhum gesto do deus, a fé de quem não é devoto esfria 3% ao ano, e o povo pode se secularizar a partir do estágio 3 (antes, só no 5).
 - **Um deus que mata é aplacado.** Um raio do deus que mata, lido como castigo, cria o costume das oferendas.
 - **A terra tem limite.** Acima de 320 pessoas no mundo, nascem cada vez menos crianças. Sem isso, o benevolente chegava a 2.121 pessoas em 100 anos. Os mundos sem deus quase nunca passam de 300.
+
+## Variação entre medições
+
+A tabela acima é a de novembro de 2026, depois de os nomes do deus deixarem de se repetir entre povos (o sorteio do nome muda o rumo dos mundos). Com 3 sementes, as médias variam bastante de uma medição para outra: o estoque por pessoa do cruel foi de 102 para 30, e a fé do caprichoso de 0,58 para 0,28. O que se manteve: o benevolente dá povos grandes, dependentes e exigentes; o cruel, fé hostil (-1) e mortos pelo deus; o ausente, fé perto de zero; o caprichoso, muitos costumes e nomes.
 
 ## O que ainda vale olhar
 
