@@ -141,6 +141,37 @@ func processar_ate(a_final: int) -> void:
 		ultimo_ano_escrito = a
 
 
+## Crônica de um período (a ausência): os anos que terminaram no período vêm da
+## crônica oficial; o ano ainda em andamento é escrito à parte, sem marcar nada
+## como contado, para que a crônica oficial desse ano saia inteira quando ele terminar.
+func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int) -> String:
+	var partes: PackedStringArray = []
+	for a in range(ano_ini, ano_fim + 1):
+		if a <= ultimo_ano_escrito:
+			var t := texto_do_ano(a)
+			if not t.is_empty():
+				partes.append(t)
+			continue
+		var evs: Array = []
+		for i in range(ev_ini, ev_fim):
+			if m.eventos[i].ano == a:
+				evs.append(m.eventos[i])
+		var salvo := [_narrados.duplicate(true), _primeiros.duplicate(), _usados.duplicate()]
+		var par := _ano(a, evs, false, LIMIAR - 1)
+		_narrados = salvo[0]
+		_primeiros = salvo[1]
+		_usados = salvo[2]
+		if not par.is_empty():
+			partes.append("### Ano %d (até agora)
+
+%s" % [a, par])
+	if partes.is_empty():
+		return "*Enquanto o deus esteve fora, nada de notável aconteceu.*"
+	return "
+
+".join(partes)
+
+
 ## Texto de um ano já escrito, com título; vazio se o ano foi quieto ou ainda não foi escrito.
 func texto_do_ano(a: int) -> String:
 	var par: String = anos_escritos.get(a, "")
@@ -212,14 +243,14 @@ func _anos_quietos(anos: Array) -> String:
 
 
 ## Escolhe os eventos do ano, escreve as frases e junta num parágrafo.
-func _ano(a: int, evs: Array) -> String:
+func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR) -> String:
 	var candidatos: Array = []
 	var por_tipo_no_ano: Dictionary = {}
 	for e in evs:
 		if _usados.has(e.id) or SILENCIOSOS.has(e.tipo):
 			continue
 		var nota := _nota(e)
-		if nota < LIMIAR and not (OBRIGATORIOS.has(e.tipo) and nota > 0):
+		if nota < limiar and not (OBRIGATORIOS.has(e.tipo) and nota > 0):
 			continue
 		var n: int = por_tipo_no_ano.get(e.tipo, 0)
 		nota -= n * 2
@@ -233,7 +264,7 @@ func _ano(a: int, evs: Array) -> String:
 	for c in candidatos:
 		if escolhidos.size() >= ORCAMENTO_ANO:
 			break
-		if c[0] >= LIMIAR and not escolhidos.has(c[1]):
+		if c[0] >= limiar and not escolhidos.has(c[1]):
 			escolhidos.append(c[1])
 	escolhidos.sort_custom(func(x, y): return x.id < y.id)
 	var frases: PackedStringArray = []
@@ -261,7 +292,7 @@ func _ano(a: int, evs: Array) -> String:
 			f = abertura + ", " + _minuscula_inicial(f)
 		est_anterior = est
 		frases.append(G.maiuscula(f))
-	if a % 10 == 0:
+	if com_censo and a % 10 == 0:
 		frases.append(_censo(a))
 	return " ".join(frases)
 
