@@ -1,0 +1,13 @@
+# Godot 4
+.godot/
+*.translation
+export_presets.cfg
+builds/
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+Thumbs.db
+desktop.ini
