@@ -478,6 +478,80 @@ O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do l
 - **Inverno:** a mata distante tem neve nas copas e verde escuro salpicado de neve, nos 3 horários.
 - **Céu de inverno:** os céus de dia e de entardecer ficaram mais frios e pálidos (`estacoes/inverno/montagem/ceu_<hora>.png`). A montagem agora também procura o céu na pasta da estação.
 
+## 18. Vida dos habitantes e objetos de cena (`acoes/vida.py`, `objetos/`)
+
+As folhas abaixo ficam em `acoes/` e seguem o padrão de sempre:
+- olhando para a direita, com a base na última linha;
+- cores-base e trocas de `habitantes/trocas.json`;
+- quadros de 8 × 12; criança em 6 × 8; deitado e estandarte em 12 × 12, com o corpo nas colunas 0 a 7.
+
+`acoes/amostra_vida_4x.png` mostra todas as folhas, e `objetos/amostra_objetos_4x.png`, os objetos.
+
+**Objetos soltos** (`objetos/`), que o motor desenha junto da pessoa ou da cena:
+
+| Objeto | Tamanho | Uso |
+|---|---|---|
+| `corpo_mortalha` | 16 × 4 | funeral: vai sobre 2 carregadores (`funeral_carregar_4q`) postos a 10 px um do outro. A linha 3 da mortalha fica na linha 3 dos carregadores. |
+| `bebe_enrolado` | 6 × 4 | nascimento: o bebê deitado (no colo, use `mae_bebe_*`) |
+| `bandeirolas` | 16 × 8 | festa: trecho de varal que repete na horizontal |
+| `tambor` | 8 × 8 | festa: tambor no chão (tocado, use `tocar_tambor_4q`) |
+| `coroa_flores`, `coroa_flores_cabeca` | 8 × 8, 6 × 2 | festa: coroa no chão ou na cabeça (a de cabeça vai nas colunas 1 a 6, linha 0 do habitante) |
+| `trouxa`, `cesto_costas` | 8 × 8 | migração: no chão ou no acampamento (nas costas, use `andar_trouxa_4q` e `andar_cesto_4q`) |
+| `estandarte_sol`, `estandarte_lua`, `estandarte_arvore` | 8 × 24 | guerra: estandarte fincado, nas 3 culturas |
+| `escudo_sol`, `escudo_lua`, `escudo_arvore` | 8 × 8 | guerra: escudo caído ou pendurado |
+| `cesto_cheio` | 8 × 8 | trabalho: cesto de colheita no chão |
+| `peixe_mao` | 4 × 2 | trabalho: peixe solto (na mão, use `segurar_peixe_2q`) |
+| `feixe_lenha` | 8 × 8 | trabalho: lenha empilhada (nos braços, use `carregar_lenha_4q`) |
+
+### Mapa ação → folha
+
+**Microanimações de quem está parado.** Para a ação `parado`, o motor pode sortear uma microanimação a cada tanto e depois voltar ao `adulto_*_parado_2q`.
+
+| Situação | Folha | Quadros | Nota |
+|---|---|---|---|
+| `parado` (base) | `habitantes/adulto_a_parado_2q`, `adulto_b_parado_2q` (estágio 1); `estagioN/adulto_eN_parado_2q` | 2 | respiração |
+| olhar para os lados | `acoes/olhar_lados_4q` | 4 | direita, frente, esquerda, frente |
+| esticar os braços | `acoes/esticar_4q` | 4 | |
+| sentar no chão | `acoes/sentar_chao_4q` | 4 | quadros 0 e 1: sentando; 2 e 3: sentado (repita em laço) |
+| agachar | `acoes/agachar_2q` | 2 | |
+| coçar a cabeça | `acoes/cocar_cabeca_4q` | 4 | |
+| bocejar | `acoes/bocejar_4q` | 4 | |
+| velho parado | `acoes/idoso_parado_2q` | 2 | apoiado na bengala |
+
+**Ações da API e da rotina:**
+
+| Ação | Folha | Quadros | Nota |
+|---|---|---|---|
+| `andar` | `habitantes/adulto_a_andar_4q`, `adulto_b_andar_4q`, `crianca_andar_4q`, `idoso_andar_4q`; `estagioN/adulto_eN_andar_4q` | 4 | |
+| `dormir` | `acoes/dormir_2q` | 2 | 12 × 12, deitado nas linhas 8 a 11 |
+| `fogueira` (sentado em volta do fogo) | `habitantes/adulto_a_sentado_1q` ou `acoes/sentar_chao_4q` (quadros 2 e 3) | | |
+| `rezar` | `habitantes/adulto_a_rezar_2q` | 2 | |
+| `colher` | `habitantes/adulto_a_colher_4q`; com roça, `estagio2/adulto_enxada_trabalhar_4q` | 4 | |
+| `colher` na margem | `acoes/pescar_4q`, e depois `acoes/segurar_peixe_2q` | 4 e 2 | |
+| buscar ou carregar lenha | `acoes/carregar_lenha_4q` | 4 | |
+| carregar colheita | `acoes/carregar_cesto_4q` | 4 | cesto na cintura |
+| construir | `acoes/construir_4q` | 4 | |
+| forjar | `acoes/forjar_4q` (ou `estagio4/ferreiro_trabalhar_4q`, 12 × 12) | 4 | ao lado da `forja` |
+| escrever | `acoes/escrever_4q`; sentado, `estagio5/escriba_sentado_2q` | 4 e 2 | |
+| remar | `acoes/remar_4q` | 4 | sobre o `barco_2q` |
+| lutar | `acoes/lutar_4q`; marchando, `estagio4/guerreiro_andar_4q` (12 × 12) | 4 | |
+
+**Vida social e cenas de eventos:**
+
+| Situação | Folha | Quadros | Nota |
+|---|---|---|---|
+| conversar | `acoes/conversar_falar_4q` + `acoes/conversar_ouvir_4q` | 4 | o par fica de frente: um normal e o outro espelhado, a 9 px; os papéis se alternam |
+| mãe com bebê | `acoes/mae_bebe_parado_2q`, `acoes/mae_bebe_andar_4q` | 2 e 4 | adulto B com o bebê no colo |
+| crianças correndo | `acoes/crianca_correr_4q` | 4 | 6 × 8 |
+| crianças pulando | `acoes/crianca_pular_4q` | 4 | 6 × 8; o motor sobe o sprite 2 a 4 px nos quadros 1 e 2 |
+| casal de mãos dadas | `acoes/casal_esquerda_andar_4q` + `acoes/casal_direita_andar_4q` | 4 | a da direita fica a 8 px da da esquerda, e as mãos se encontram |
+| velho de bengala | `habitantes/idoso_andar_4q`, `acoes/idoso_parado_2q` | 4 e 2 | |
+| funeral | 2 × `acoes/funeral_carregar_4q` + `objetos/corpo_mortalha` | 4 | o de trás vai com o quadro defasado em 2; quem carrega um morto sozinho usa `acoes/carregar_morto_4q` |
+| festa | `acoes/dancar_4q`, `acoes/tocar_tambor_4q` + `objetos/bandeirolas`, `tambor`, `coroa_flores*` | 4 | |
+| nascimento | `acoes/mae_bebe_*` + `objetos/bebe_enrolado` | | |
+| migração | `acoes/andar_trouxa_4q`, `acoes/andar_cesto_4q` + `objetos/trouxa`, `cesto_costas` | 4 | |
+| guerra | `acoes/carregar_estandarte_<cultura>_4q` (sol, lua ou arvore) (12 × 12), `acoes/lutar_4q` + `objetos/estandarte_*`, `escudo_*` | 4 | o pano do estandarte usa a cor da roupa (28), e por isso troca junto com a roupa do povo |
+
 ## Critérios
 
 | Critério | Situação |
