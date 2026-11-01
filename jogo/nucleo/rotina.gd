@@ -394,20 +394,28 @@ func _cena_guerra(e, id: String) -> void:
 	var cb: Dictionary = ctx[b.id]
 	var dir := 1.0 if cb["fogo"] >= ca["fogo"] else -1.0
 	var bx: float = clampf(cb["fogo"] - dir * 28.0, Cotidiano.MARGEM + 10.0, Cotidiano.LARGURA_MUNDO - 10.0)
-	var cena := _registrar_cena(id, "guerra", a, e, 450.0, 720.0, [], bx, {"outro_grupo": b.id, "x_combate": bx,
+	# O ataque da virada do dia vira a batalha da manhã (7h30 às 12h; a luta das 9h às 10h30). Um
+	# ataque no meio do dia (forçado por um cenário, ou depois da montagem) começa 2 h depois dele:
+	# é o tempo de a rotina ser refeita na thread e entrar. Depois das 18h, não há batalha no dia.
+	var t0 := 450.0
+	if e.hora >= 6:
+		t0 = (e.hora + 2) * 60.0
+		if t0 > 1080.0:
+			return
+	var cena := _registrar_cena(id, "guerra", a, e, t0, t0 + 270.0, [], bx, {"outro_grupo": b.id, "x_combate": bx,
 		"mortos": e.dados["mortos"].size()})
 	var info := {"tipo": "guerra", "id": id}
-	var lados := [[_embaralhados(_adultos(a, 16, 50), 31).slice(0, 8), -dir, ca, 450.0],
-		[_embaralhados(_adultos(b, 16, 50), 32).slice(0, 8), dir, cb, 520.0]]
+	var lados := [[_embaralhados(_adultos(a, 16, 50), 31).slice(0, 8), -dir, ca, t0],
+		[_embaralhados(_adultos(b, 16, 50), 32).slice(0, 8), dir, cb, t0 + 70.0]]
 	for lado in lados:
 		var i := 0
 		for p in lado[0]:
 			var linha: float = bx + lado[1] * (5.0 + 4.0 * i)
 			var casa := _casa(p, lado[2])
 			var ok := _fixar(p.id, [
-				_parada(lado[3] + i * 2.0, 540.0, linha, "parado"),
-				_parada(540.0, 630.0, linha, "lutar", "andar", int(-lado[1])),
-				_parada(690.0, 700.0, casa, "parado")], info)
+				_parada(lado[3] + i * 2.0, t0 + 90.0, linha, "parado"),
+				_parada(t0 + 90.0, t0 + 180.0, linha, "lutar", "andar", int(-lado[1])),
+				_parada(t0 + 240.0, t0 + 250.0, casa, "parado")], info)
 			if ok:
 				cena["participantes"].append(p.id)
 			i += 1

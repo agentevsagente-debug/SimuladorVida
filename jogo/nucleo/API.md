@@ -293,7 +293,7 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `nascimento` | no dia do nascimento, das 8h às 12h | a mãe `cuidar` em casa, visitas conversando em volta | `mae`, `crianca` |
 | `casamento`, `festa` | à noite, das 19h às 21h; a festa é no aniversário da chuva, em povos com esse costume | dança em volta do fogo | |
 | `migracao` | no dia de uma separação ou mudança, a partir das 6h30 | fila de gente com carga, da aldeia antiga até a nova | `de`, `para` |
-| `guerra` | no dia de um ataque, das 7h30 às 12h | marcha, as duas linhas frente a frente com `lutar` das 9h às 10h30, e a volta | `outro_grupo`, `x_combate`, `mortos` |
+| `guerra` | no dia de um ataque, das 7h30 às 12h (o ataque da virada do dia). Um ataque registrado depois das 6h (forçado no meio do dia) vira a cena 2 h depois dele, que é o tempo de a rotina ser refeita: começa em hora + 2 e dura 4h30 (luta de hora + 3h30 a hora + 5h); depois das 18h, não há cena no dia | marcha, as duas linhas frente a frente com `lutar` (1h30), e a volta | `outro_grupo`, `x_combate`, `mortos` |
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
