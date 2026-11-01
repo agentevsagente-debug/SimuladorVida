@@ -383,7 +383,7 @@ func tecla(keycode: int) -> bool:
 		return _estante.tecla(keycode)
 	match keycode:
 		KEY_C:
-			if _estante.visible:
+			if _estante.visible and not _estante.so_um_livro:
 				_estante.fechar()
 			alternar_cronica()
 		KEY_E:
@@ -489,11 +489,13 @@ func marcar_sonho(id: int) -> void:
 			_sonhou.erase(k)
 
 
-## Um aviso na alça de um evento que é consequência longa da repetição (hábito, dependência).
-func avisar_evento(texto: String) -> void:
-	if texto != "":
-		_avisar(texto)
-		_mensagem_ate = _relogio + 5.0
+## Um aviso na alça de um evento: a consequência longa da repetição (hábito,
+## dependência) sempre; as notas de povo pequeno (`se_livre`) só se a alça está livre.
+func avisar_evento(texto: String, se_livre := false) -> void:
+	if texto == "" or (se_livre and _relogio < _mensagem_ate):
+		return
+	_avisar(texto)
+	_mensagem_ate = _relogio + 5.0
 
 
 ## O jogador já escondeu a janela alguma vez (o aviso de como voltar só sai na primeira).
@@ -922,13 +924,23 @@ func _seta(para_cima: bool) -> TextureRect:
 
 
 func alternar_cronica() -> void:
-	# com o resumo da ausência aberto, o C passa para a crônica inteira, em vez de fechar
-	_cronica.visible = not _cronica.visible or _resumo_aberto
-	_resumo_aberto = false
 	_dica.visible = false
-	if _cronica.visible:
+	# a crônica viva abre no leitor da estante (índice, capítulos e resumo); com o
+	# resumo da ausência aberto, o C passa para ela, em vez de fechar
+	if _estante.visible and _estante.so_um_livro:
+		_estante.fechar()
+	elif vista.sim.mundo.has_method("cronica_viva"):
+		_cronica.visible = false
+		_resumo_aberto = false
 		marcar_dica("cronica")
-		mostrar_cronica("")
+		var m = vista.sim.mundo
+		_estante.abrir_texto("# Crônica: %s\n\n%s" % [String(m.nome_da_era()), m.cronica_viva()], -1, true)
+	else:  # sem a crônica viva no núcleo: o painel de antes
+		_cronica.visible = not _cronica.visible or _resumo_aberto
+		_resumo_aberto = false
+		if _cronica.visible:
+			marcar_dica("cronica")
+			mostrar_cronica("")
 	_montar_botoes()
 
 
