@@ -1,4 +1,4 @@
-"""Roupas dos estágios 3 a 6 nas ações de 1x, nas brincadeiras e na caçada, para os povos
+"""Roupas dos estágios 3 a 6 nas ações de 1x, nas brincadeiras, na caçada e na pesca, para os povos
 avançados não voltarem ao visual do estágio 1. O estágio 2 não tem roupa própria (usa a de
 `acoes/`).
 
@@ -27,8 +27,9 @@ import construcao as k  # noqa: E402
 import brincar  # noqa: E402
 import cacada  # noqa: E402
 import forte  # noqa: E402
+import pesca  # noqa: E402
 
-FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS}
+FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS, **pesca.FOLHAS}
 
 
 def pontos(g, chars):

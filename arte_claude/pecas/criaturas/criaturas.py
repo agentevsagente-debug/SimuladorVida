@@ -137,6 +137,26 @@ CRIATURAS = {
         ["........", "...kk...", "gKKkrKKg", "KK....KK", "g......g"],
         ["........", "ggg..ggg", "KKKkkKKK", "...kr...", "........"],
     ),
+    # pássaro pousado maior (5x3), para os telhados e a palha das cabanas: dorso e cabeça
+    # marrons, peito claro e bico escuro, que se destacam sobre a palha, o telhado e o céu.
+    # Olhando e bicando.
+    "passaro_pousado_forte_2q": molde(
+        ["..nnx", "nnWW.", "..y.."],
+        [".....", "nnnnx", ".WWy."],
+    ),
+    # peixe pulando na água rasa (10x8), para a pesca: sai (respingo em anel), sobe, passa
+    # deitado no alto e mergulha. Dorso escuro (4), corpo prateado (12), barriga clara (31) e
+    # olho escuro (3); a linha 7 é a superfície da água.
+    "peixe_pular_forte_4q": molde(
+        ["..........", "..........", "..........", "..........", ".....ke...", "....kGW...", "..c.kW.c..",
+         ".cbc..cbc."],
+        ["..........", "......kke.", ".....kGGW.", "....kGGW..", "...k.WW...", "..k.......", "...c...c..",
+         "..c.....c."],
+        ["..........", "k..kkkk...", ".kGGGGGe..", "k..WWWW...", "..........", "...c...c..", "..........",
+         ".....c...."],
+        ["..........", "..........", "..k.......", "...k.k....", "....kGk...", ".....GWe..", "..c..cWc.c",
+         ".cbcbccbc."],
+    ),
 }
 
 
@@ -161,6 +181,8 @@ QUANDO = {
     "passaro_voar_4q": ("primavera, verão, outono", "dia", "bando de 3 a 5 que voa e pousa"),
     "passaro_pousado_2q": ("primavera, verão, outono", "dia", "no chão, nas cercas e nos telhados"),
     "peixe_saltar_4q": ("primavera, verão, outono", "dia e entardecer", "salta do lago e volta; não no gelo"),
+    "passaro_pousado_forte_2q": ("primavera, verão, outono", "dia", "nos telhados e na palha das cabanas; no lugar do pousado"),
+    "peixe_pular_forte_4q": ("primavera, verão, outono", "dia", "perto de quem pesca, na água rasa; não no gelo"),
     "sapo_2q": ("primavera, verão", "entardecer e noite", "na margem e no junco"),
     "garca_2q": ("primavera, verão, outono", "manhã e dia", "parada na água rasa da margem"),
     "coelho_4q": ("todas", "manhã e entardecer", "no mato e na borda das roças; foge de gente"),
