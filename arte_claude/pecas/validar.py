@@ -56,8 +56,8 @@ for f in sorted(AQUI.rglob("*.png")):
             erros.append(f"{rel}: quadro de habitante {qw}x{h} fora do padrão")
         if not pessoa and (qw % 8 or h % 8):
             erros.append(f"{rel}: tamanho {qw}x{h} não é múltiplo de 8")
-    if pasta == "acoes" and not f.stem.startswith("amostra") and (w != 8 * nq or h != 12):
-        erros.append(f"{rel}: ação deve ter quadros de 8x12")
+    if pasta == "acoes" and not f.stem.startswith("amostra") and (w % nq or (w // nq, h) not in ((8, 12), (12, 12), (6, 8))):
+        erros.append(f"{rel}: ação com quadro {w // nq}x{h} (use 8x12, 12x12 ou 6x8)")
     if pasta == "criaturas" and not f.stem.startswith(("amostra", "bando")) and not (4 <= w // nq <= 12 and 4 <= h <= 8):
         erros.append(f"{rel}: criatura com quadro {w // nq}x{h} fora de 4x4 a 12x8")
     if pasta == "cenas" and not f.stem.startswith("amostra") and (w, h) != (480, 160):

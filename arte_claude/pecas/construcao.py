@@ -191,7 +191,8 @@ def arruinar(q, semente, telhado_ate=None):
 
 # ---------------------------------------------------------------- habitantes
 
-CORES = dict(hab.CORES, Z=12, z=11, d=8, n=10, m=21, M=24, k=20, K=22, w=31, q=23, o=9, j=19)
+CORES = dict(hab.CORES, Z=12, z=11, d=8, n=10, m=21, M=24, k=20, K=22, w=31, q=23, o=9, j=19,
+             x=30, v=15, V=14, y=22, N=9)
 
 
 def vestir(moldes, sobreposicoes):
