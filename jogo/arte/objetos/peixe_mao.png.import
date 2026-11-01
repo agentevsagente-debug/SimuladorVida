@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cw1wradnqgtmo"
+path="res://.godot/imported/peixe_mao.png-fbf4c6ff61fbfa5ecf7b6e4fe2629958.image"
+
+[deps]
+
+source_file="res://arte/objetos/peixe_mao.png"
+dest_files=["res://.godot/imported/peixe_mao.png-fbf4c6ff61fbfa5ecf7b6e4fe2629958.image"]
+
+[params]
+

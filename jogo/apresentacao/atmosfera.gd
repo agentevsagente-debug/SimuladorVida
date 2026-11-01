@@ -6,6 +6,7 @@ extends Node
 ## nunca o do núcleo.
 
 const Efeitos = preload("res://apresentacao/efeitos.gd")
+const Criaturas = preload("res://apresentacao/criaturas.gd")
 const NEBLINA = preload("res://apresentacao/neblina.gdshader")
 
 const DIA := 0
@@ -31,6 +32,11 @@ var _espera_faisca := 0.0
 var _espera_raio := 1.0
 var _clarao := 0.0
 var _nuvens_em := Vector2i(-1, -1)
+var _criaturas: Criaturas
+var _neve: Node2D
+var _neve_quadro := -1
+var _neve_ligada := false
+var _espera_folha := 0.0
 var _chuva_divina := Vector2i(-1, -1)
 var _chuva_divina_resta := 0.0
 
@@ -51,6 +57,17 @@ func criar(p_vista: Node2D, material_fosco: Material, antes_de: Node) -> void:
 	vista.add_child(fosco)
 	luminoso = Efeitos.new()
 	vista.add_child(luminoso)
+	fosco.chao = func(x): return vista.chao(x)
+	luminoso.chao = fosco.chao
+	_criaturas = Criaturas.new()
+	add_child(_criaturas)
+	_criaturas.criar(vista, fosco, luminoso)
+	# neve do inverno: a folha de 64 × 64 repete nas duas direções e desce 2 px por quadro
+	_neve = Node2D.new()
+	_neve.material = material_fosco
+	_neve.visible = false
+	_neve.draw.connect(_desenhar_neve)
+	vista.add_child(_neve)
 
 
 func definir_camera(origem: Vector2, zoom: float) -> void:
@@ -115,6 +132,9 @@ func avancar(delta: float, hora: float, estado: int, fogos: Array, clima: Dictio
 		return
 	_atualizar_neblina(hora, estado)
 	_fogueiras(delta, estado, fogos)
+	var estacao: String = vista.estacao_atual()
+	_criaturas.avancar(delta, hora, estacao, vista.figuras.map(func(f): return float(f.x)))
+	_neve_e_folhas(delta, estacao, clima)
 	_vagalumes(estado)
 	_chuva(delta, clima)
 	if _clarao > 0.0:
@@ -163,6 +183,34 @@ func _fogueiras(delta: float, estado: int, fogos: Array) -> void:
 		_espera_fumaca = _rng.randf_range(1.8, 3.0)
 	if _espera_faisca <= 0.0:
 		_espera_faisca = _rng.randf_range(0.15, 0.45)
+
+
+## Inverno: neve caindo em boa parte dos dias. Outono: folhas soltas caindo das copas.
+func _neve_e_folhas(delta: float, estacao: String, clima: Dictionary) -> void:
+	var dia: int = vista.sim.tempo.get("dia", 0) if vista.sim else 0
+	var neva: bool = estacao == "inverno" and (clima.get("inverno_rigoroso", false) or hash(dia) % 3 != 0)
+	if neva != _neve_ligada:
+		_neve_ligada = neva
+		_neve.visible = neva
+	if neva:
+		var q := int(Time.get_ticks_msec() / 160) % 4
+		if q != _neve_quadro:
+			_neve_quadro = q
+			_neve.queue_redraw()
+	if estacao == "outono":
+		_espera_folha -= delta
+		if _espera_folha <= 0.0:
+			_espera_folha = _rng.randf_range(0.8, 2.5)
+			var x := _rng.randf_range(150, 470)
+			fosco.emitir("folha_seca_4q", 8, 4, Vector2(x, vista.chao(int(x)) - _rng.randf_range(16, 34)),
+				Vector2(_rng.randf_range(-6, 6), _rng.randf_range(5, 9)), _rng.randf_range(2.5, 4.0), 6.0, _rng.randi_range(0, 3))
+
+
+func _desenhar_neve() -> void:
+	var tex: Texture2D = vista.textura_efeito("neve_4q")
+	for ty in range(0, 160, 64):
+		for tx in range(0, 480, 64):
+			_neve.draw_texture_rect_region(tex, Rect2(tx, ty, 64, 64), Rect2(maxi(_neve_quadro, 0) * 64, 0, 64, 64))
 
 
 func _vagalumes(estado: int) -> void:

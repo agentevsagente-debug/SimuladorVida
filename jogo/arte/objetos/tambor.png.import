@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cf3vqyl7wfymg"
+path="res://.godot/imported/tambor.png-49e7b65a14bde34ed2f104aebd0289c7.image"
+
+[deps]
+
+source_file="res://arte/objetos/tambor.png"
+dest_files=["res://.godot/imported/tambor.png-49e7b65a14bde34ed2f104aebd0289c7.image"]
+
+[params]
+

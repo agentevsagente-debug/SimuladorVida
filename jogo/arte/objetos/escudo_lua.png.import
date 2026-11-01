@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://du1l0jpfn7nuj"
+path="res://.godot/imported/escudo_lua.png-ad5ac12bd9c4f6f9c610cea6738c3dda.image"
+
+[deps]
+
+source_file="res://arte/objetos/escudo_lua.png"
+dest_files=["res://.godot/imported/escudo_lua.png-ad5ac12bd9c4f6f9c610cea6738c3dda.image"]
+
+[params]
+

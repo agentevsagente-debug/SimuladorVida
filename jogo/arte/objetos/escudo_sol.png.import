@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dtqu7xsrtjuix"
+path="res://.godot/imported/escudo_sol.png-d557610edd33bc35a8a93ba86635368d.image"
+
+[deps]
+
+source_file="res://arte/objetos/escudo_sol.png"
+dest_files=["res://.godot/imported/escudo_sol.png-d557610edd33bc35a8a93ba86635368d.image"]
+
+[params]
+

@@ -135,7 +135,17 @@ func _mostrar_ausencia() -> void:
 	interface.mostrar_cronica.call_deferred(titulo + "\n\n" + interface._sem_markdown(a.get("relato", "")))
 
 
+var _mem_feito := false
 func _process(delta: float) -> void:
+	if OS.has_environment("MEMORIA") and not _mem_feito and Time.get_ticks_msec() > 15000:
+		_mem_feito = true
+		print("[memoria] estatica=%.1f texturas=%.1f buffers=%.1f video=%.1f objetos=%d nos=%d recursos=%d" % [
+			Performance.get_monitor(Performance.MEMORY_STATIC) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_TEXTURE_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_BUFFER_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.OBJECT_COUNT), Performance.get_monitor(Performance.OBJECT_NODE_COUNT),
+			Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)])
 	# Se o jogador restaurar a janela pela barra de tarefas, volta a desenhar.
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		mostrar()

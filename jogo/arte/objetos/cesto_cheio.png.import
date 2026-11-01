@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://byro8crheql1l"
+path="res://.godot/imported/cesto_cheio.png-1b78b4fa61c398db873da8b31bf8605e.image"
+
+[deps]
+
+source_file="res://arte/objetos/cesto_cheio.png"
+dest_files=["res://.godot/imported/cesto_cheio.png-1b78b4fa61c398db873da8b31bf8605e.image"]
+
+[params]
+

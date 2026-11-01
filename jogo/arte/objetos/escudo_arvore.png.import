@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://b5svktq1tqyp1"
+path="res://.godot/imported/escudo_arvore.png-53e5dfff3b3b78b8d6170ea1bf27ad35.image"
+
+[deps]
+
+source_file="res://arte/objetos/escudo_arvore.png"
+dest_files=["res://.godot/imported/escudo_arvore.png-53e5dfff3b3b78b8d6170ea1bf27ad35.image"]
+
+[params]
+

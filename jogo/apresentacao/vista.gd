@@ -16,7 +16,7 @@ extends Node2D
 ##   --congelar           o tempo não anda
 ##   --semente=N          semente do mundo novo
 ##   --mundo-novo         ignora o mundo salvo e não grava nada
-##   --anos=N             avança N anos antes de abrir (mundo novo, testes)
+##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
@@ -33,6 +33,7 @@ const Simulacao = preload("res://apresentacao/simulacao.gd")
 const Pessoas = preload("res://apresentacao/pessoas.gd")
 const Atmosfera = preload("res://apresentacao/atmosfera.gd")
 const Sinais = preload("res://apresentacao/sinais.gd")
+const Vida = preload("res://apresentacao/vida.gd")
 const REMAP = preload("res://apresentacao/remap.gdshader")
 
 const LARGURA := 480
@@ -50,10 +51,6 @@ const PECAS_MIUDAS := ["capim", "capim_seco", "arbusto", "arbusto_frutas", "pedr
 	"pedra_grande", "tronco_deriva", "juncos"]
 ## Árvores que o fogo do deus deixa carbonizadas, com a coluna do tronco.
 const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "pinheiro_b": 11, "pinheiro_fundo": 15}
-const PASSO_ANDAR := 9.0      # px/s de quem anda
-const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
-const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
-const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const ZOOM_SEGUIR := 2
 
 var sim: Simulacao
@@ -97,10 +94,9 @@ var _quadro_agua := -1
 var _quadro_fogo := -1
 var _refazer := true
 var _chave_fixo := []
-var _virada := {}          # id da pessoa -> espelho (olhando para a esquerda)
-var _x_visto := {}         # id da pessoa -> x desenhado (anda até o x do núcleo)
-var _acordou := {}         # id da pessoa -> quando saiu da cabana (para saírem em fila)
-var _atras := {}           # ids na segunda fileira da roda da fogueira
+var _vida: Vida
+var _estacao_fundos := ""
+var _gelo := []            # colunas de água congelada
 var _tex_fogueira: Texture2D
 var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
@@ -130,13 +126,14 @@ func _ready() -> void:
 		sim.construcoes_mudaram.connect(func(): _refazer = true)
 		sim.zonas_mudaram.connect(func(): _refazer = true)
 		sim.eventos_novos.connect(_ao_receber_eventos)
-		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena")
+		_vida = Vida.new(self, sim)
+		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena") or args.has("dias")
 		sim.salvar_em_disco = not novo
 		var semente := int(args.get("semente", str(randi())))
 		var hf := float(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1.0
-		if args.has("anos"):
+		if args.has("anos") or args.has("dias"):
 			sim.iniciar(semente, -1, false)
-			sim.mundo.avancar_dias(40 * int(args["anos"]))
+			sim.mundo.avancar_dias(40 * int(args.get("anos", "0")) + int(args.get("dias", "0")))
 			if hf >= 0.0:
 				while sim.mundo.tempo()["hora"] != int(hf):
 					sim.mundo.avancar_hora()
@@ -171,11 +168,10 @@ func avancar(delta: float, desenhar: bool) -> void:
 	_atualizar_horario()
 	_atualizar_agua()
 	_atualizar_fogueiras()
-	figuras = _figuras_layout() if _modo_layout else _figuras_nucleo(delta)
+	var desenho: Array = _figuras_layout() if _modo_layout else _vida.atualizar(delta, _relogio)
+	figuras = desenho if _modo_layout else _vida.figuras
 	_atualizar_camera(delta)
-	_pessoas.definir(figuras)
-	if OS.has_environment("CONTAR_SOBREPOSICAO") and sim:
-		_contar_sobreposicao()
+	_pessoas.definir(desenho)
 	if sim:
 		_sinais.atualizar(sim, self, _relogio, figuras)
 	_atmosfera.avancar(delta, _hora(), _estado[0] if _estado[2] < 0.5 else _estado[1], _fogos,
@@ -264,15 +260,8 @@ func _criar_nos() -> void:
 	var paleta := Arte.paleta_vec3()
 	var tabelas := Arte.textura_tabelas()
 	for nome in FUNDOS:
-		var nomes := ESTADOS.duplicate()
-		if nome == "ceu":
-			nomes += ["seca", "eclipse"]
-		var imgs := nomes.map(func(e): return Arte.imagem("camadas/%s_%s.png" % [nome, e]))
-		var corte := _recortar(imgs)
-		for i in nomes.size():
-			_tex_fundo["%s_%s" % [nome, nomes[i]]] = corte[1][i]
-		_canto_fundo.append(Vector2(corte[0].position))
 		_fundos.append(_sprite(0, paleta, tabelas))
+		_canto_fundo.append(Vector2.ZERO)
 		if nome == "ceu":
 			_fundos[-1].material.set_shader_parameter("frente_ativa", true)
 	_agua = _sprite(4, paleta, tabelas)
@@ -322,6 +311,28 @@ func _sprite(plano: int, paleta: PackedVector3Array, tabelas: Texture2D) -> Spri
 	return s
 
 
+## Carrega os planos de fundo da estação corrente (e solta os da anterior). Os
+## céus de seca e de eclipse só são carregados quando aparecem.
+func _carregar_fundos() -> void:
+	if _estacao_fundos == Arte.estacao:
+		return
+	_estacao_fundos = Arte.estacao
+	_tex_fundo.clear()
+	for i in FUNDOS.size():
+		var imgs := ESTADOS.map(func(e): return Arte.imagem(Arte.da_estacao("camadas/%s_%s" % [FUNDOS[i], e]) + ".png"))
+		var corte := _recortar(imgs)
+		for k in ESTADOS.size():
+			_tex_fundo["%s_%s" % [FUNDOS[i], ESTADOS[k]]] = corte[1][k]
+		_canto_fundo[i] = Vector2(corte[0].position)
+	_camera_aplicada = [-1, Vector2(-1, -1)]
+
+
+func _textura_fundo(nome: String) -> Texture2D:
+	if not _tex_fundo.has(nome):  # céu de seca ou de eclipse, do mesmo tamanho do céu
+		_tex_fundo[nome] = ImageTexture.create_from_image(Arte.imagem("camadas/%s.png" % nome))
+	return _tex_fundo[nome]
+
+
 ## O que, além das construções, muda a imagem fixa: a estação (fase das roças).
 func _chave_do_fixo() -> Array:
 	return [sim.tempo.get("estacao", "")]
@@ -329,6 +340,9 @@ func _chave_do_fixo() -> Array:
 
 ## Refaz tudo o que é fixo: terreno, vegetação, construções, marcas, reflexo e frente.
 func _montar_fixo() -> void:
+	if sim:
+		Arte.estacao = sim.tempo.get("estacao", "verão")
+	_carregar_fundos()
 	var obras := _construcoes()
 	_fogos.clear()
 	var batido := []
@@ -343,12 +357,22 @@ func _montar_fixo() -> void:
 			if z["queimada"]:
 				for col in range(int(z["x_ini"]) / 8, int(z["x_fim"]) / 8):
 					queimadas.append(col)
-	var arvore_queimada := Arte.imagem("memoria/arvore_queimada.png") if not queimadas.is_empty() else null
+	var arvore_queimada := Arte.imagem(Arte.da_estacao("memoria/arvore_queimada") + ".png") if not queimadas.is_empty() else null
+	# no inverno, as 3 colunas de água mais perto da praia congelam
+	var gelo := []
+	if Arte.estacao == "inverno":
+		var agua := []
+		for c in _layout["colunas"].size():
+			var cl: Array = _layout["colunas"][c]
+			if cl[1] == "areia" and int(cl[0]) > Terreno.NIVEL_AGUA:
+				agua.append(c)
+		gelo = agua.slice(maxi(0, agua.size() - 3))
+	_gelo = gelo
 
 	var terreno := Terreno.new()
 	var colunas: Array = _layout["colunas"]
 	_tipos = colunas.map(func(cl): return cl[1])
-	var r := terreno.montar(colunas, batido, _quadros_agua[0], false, queimadas)
+	var r := terreno.montar(colunas, batido, _quadros_agua[0], false, queimadas, gelo)
 	var cor: Image = r.cor
 	var tag: Image = r.tag
 	_sup = r.sup
@@ -372,7 +396,7 @@ func _montar_fixo() -> void:
 			if nome in PECAS_MIUDAS:
 				continue
 		if not pecas.has(nome):
-			pecas[nome] = Arte.imagem("estagio1/%s.png" % nome)
+			pecas[nome] = Arte.imagem(Arte.da_estacao("estagio1/" + nome) + ".png")
 		var img: Image = pecas[nome]
 		if item.get("espelho", false):
 			img = img.duplicate()
@@ -385,9 +409,9 @@ func _montar_fixo() -> void:
 			# a peça fica por cima do reflexo, como em montar.py
 			agua_mascara.blit_rect_mask(_vazio(img.get_size()), img, Rect2i(Vector2i.ZERO, img.get_size()), pos)
 
-	var cabana := Arte.imagem("estagio1/cabana_galhos.png")
-	var altar := Arte.imagem("estagio2/altar.png")
-	var roca := Arte.imagem("estagio2/%s.png" % _fase_da_roca())
+	var cabana := Arte.imagem(Arte.da_estacao("estagio1/cabana_galhos") + ".png")
+	var altar := Arte.imagem(Arte.da_estacao("estagio2/altar") + ".png")
+	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
 	for o in obras:
 		var x := roundi(o.x)
 		match o.tipo:
@@ -404,7 +428,7 @@ func _montar_fixo() -> void:
 				_fogos.append({"canto": canto, "centro": float(x),
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
 	if sim:
-		var pedra := Arte.imagem("memoria/pedra_erguida.png")
+		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
 		for z in sim.zonas:
 			if z["pedra_erguida"]:
 				var x := roundi(z["pedra_x"])
@@ -483,13 +507,43 @@ func chao(x: int) -> int:
 	return Terreno.NIVEL_AGUA - 1 if _na_agua(x) else _chao(x)
 
 
+func estacao_atual() -> String:
+	return sim.tempo.get("estacao", "verão") if sim else "verão"
+
+
+func textura_efeito(nome: String) -> Texture2D:
+	return Arte.textura("efeitos/%s.png" % nome)
+
+
 func cor_paleta(i: int) -> Color:
 	return Arte.paleta[i]
+
+
+## Onde os pés de uma pessoa ficam em x (na água, na linha d'água: só quem rema).
+func chao_pessoa(x: int) -> int:
+	return Terreno.NIVEL_AGUA + 2 if _na_agua(x) else _chao(x)
+
+
+## Há uma roça a menos de 14 px de x? (quem colhe ali usa a enxada)
+func perto_de_roca(x: float) -> bool:
+	for o in sim.construcoes:
+		if o["tipo"] == "roca" and absf(float(o["x"]) - x) < 14.0:
+			return true
+	return false
 
 
 ## Linha do chão em x: a superfície menos 1, como as peças da cena-alvo.
 func _chao(x: int) -> int:
 	return _sup[clampi(x, 0, LARGURA - 1)] - 1
+
+
+## Colunas de 8 px de água, da esquerda para a direita.
+func colunas_agua() -> Array:
+	var r := []
+	for c in _tipos.size():
+		if _tipos[c] == "areia" and _sup[c * 8] > Terreno.NIVEL_AGUA:
+			r.append(c)
+	return r
 
 
 func _na_agua(x: int) -> bool:
@@ -529,7 +583,7 @@ func _montar_agua() -> void:
 	for q in 4:
 		var faixa := Image.create(LARGURA, 8, false, Image.FORMAT_RGBA8)
 		for c in LARGURA / 8:
-			if _tipos[c] == "areia" and _sup[c * 8] > Terreno.NIVEL_AGUA:
+			if _tipos[c] == "areia" and _sup[c * 8] > Terreno.NIVEL_AGUA and not c in _gelo:
 				faixa.blit_rect_mask(_quadros_agua[q], _quadros_agua[q], Rect2i(0, 0, 8, 8), Vector2i(c * 8, 0))
 		_tex_agua.append(ImageTexture.create_from_image(faixa))
 	_agua.position = Vector2(0, 120)
@@ -601,8 +655,8 @@ func _atualizar_horario() -> void:
 	var a: int = e[0]
 	var b: int = e[1]
 	for i in FUNDOS.size():
-		_fundos[i].texture = _tex_fundo[_nome_fundo(i, a, especial)]
-		_fundos[i].material.set_shader_parameter("tex_b", _tex_fundo[_nome_fundo(i, b, especial)])
+		_fundos[i].texture = _textura_fundo(_nome_fundo(i, a, especial))
+		_fundos[i].material.set_shader_parameter("tex_b", _textura_fundo(_nome_fundo(i, b, especial)))
 	_reflexo.texture = _tex_reflexo[a]
 	_reflexo.material.set_shader_parameter("tex_b", _tex_reflexo[b])
 	# a noite desce do alto; a manhã sobe do horizonte
@@ -660,7 +714,7 @@ func _atualizar_camera(delta: float) -> void:
 
 # --- pessoas ---------------------------------------------------------------
 
-func _fogo_mais_perto(x: float) -> float:
+func fogo_mais_perto(x: float) -> float:
 	var melhor := -10000.0
 	for f in _fogos:
 		if abs(f.centro - x) < abs(melhor - x):
@@ -673,208 +727,10 @@ func _figuras_layout() -> Array:
 	for item in _layout["pecas"]:
 		if item["plano"] != "pessoa":
 			continue
-		r.append({"id": -1, "folha": item["peca"], "quadro": int(item["quadro"]), "largura": int(item["larg_quadro"]),
+		r.append({"id": -1, "folha": "habitantes/" + item["peca"], "quadro": int(item["quadro"]), "largura": int(item["larg_quadro"]),
 			"x": int(item["x"]), "base": int(item["base"]), "espelho": item.get("espelho", false),
 			"codigo": Arte.codigo_de_tabela(item.get("troca", {})),
-			"fogo": _fogo_mais_perto(item["x"] + item["larg_quadro"] / 2.0)})
-	return r
-
-
-## Onde cada pessoa fica, sem amontoar. Quem está na fogueira quer um lugar
-## da roda, dos dois lados do fogo e fora das cabanas; passando de RODA_MAX
-## pessoas, as outras formam uma segunda fileira, meio passo atrás (veja
-## _atras). Os outros querem o x do núcleo. Depois, todos os da frente são
-## empacotados numa fila só, com ESPACO entre vizinhos: blocos que se
-## encostam se juntam e se centram nas posições desejadas. A ordem é pelo x
-## desejado e pelo id, então ninguém troca de lugar de um quadro para o outro.
-func _lugares(pessoas: Array) -> Dictionary:
-	_atras.clear()
-	var desejos := []  # [x desejado, id]
-	var lugar := {}
-	var rodas := {}
-	for p in pessoas:
-		if p["acao"] == "dormir":
-			continue
-		if p["acao"] == "fogueira":
-			var f := _fogo_mais_perto(p["x"])
-			if not rodas.has(f):
-				rodas[f] = []
-			rodas[f].append(p["id"])
-		else:
-			desejos.append([float(p["x"]), p["id"]])
-	var cabanas := sim.construcoes.filter(func(o): return o["tipo"] == "cabana").map(func(o): return float(o["x"]))
-	for f in rodas:
-		var roda: Array = rodas[f]
-		roda.sort()
-		var lugares := _lugares_da_roda(f, mini(roda.size(), RODA_MAX), cabanas)
-		for i in roda.size():
-			if i < lugares.size():
-				desejos.append([lugares[i], roda[i]])
-			else:  # segunda fileira: entre dois da frente, fora da fila empacotada
-				var k := (i - lugares.size()) % lugares.size()
-				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
-				_atras[roda[i]] = true
-	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
-	var xs := _empacotar(desejos.map(func(d): return d[0]))
-	for i in desejos.size():
-		lugar[desejos[i][1]] = xs[i]
-	return lugar
-
-
-## Lugares da roda em volta do fogo em f: dos dois lados, alternando, a partir
-## de 11 px do centro, pulando o que cairia na frente de uma cabana.
-func _lugares_da_roda(f: float, n: int, cabanas: Array) -> Array:
-	var r := []
-	var d := [11.0, 11.0]  # próxima distância livre à esquerda e à direita
-	var lado := 0
-	while r.size() < n:
-		var x: float = f + (-1.0 if lado == 0 else 1.0) * d[lado]
-		d[lado] += ESPACO
-		var livre := x > MARGEM and x < LARGURA - 4
-		for c in cabanas:
-			if absf(c - x) < 12.0:
-				livre = false
-		if livre:
-			r.append(x)
-		if d[0] > 80.0 and d[1] > 80.0:
-			break  # não há mais lugar perto do fogo
-		lado = 1 - lado
-	return r
-
-
-## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível
-## das desejadas (blocos que se encostam se juntam e se centram), dentro da
-## terra e da tela.
-static func _empacotar(desejado: Array) -> Array:
-	var blocos := []  # [quantos, soma de (x - k × ESPACO)]
-	for x in desejado:
-		blocos.append([1, x])
-		while blocos.size() >= 2:
-			var a: Array = blocos[-2]
-			var b: Array = blocos[-1]
-			if a[1] / a[0] + a[0] * ESPACO <= b[1] / b[0]:
-				break
-			blocos.pop_back()
-			blocos[-1] = [a[0] + b[0], a[1] + b[1] - b[0] * a[0] * ESPACO]
-	var xs := []
-	for bl in blocos:
-		var inicio: float = bl[1] / bl[0]
-		for k in bl[0]:
-			xs.append(inicio + k * ESPACO)
-	for i in xs.size():  # a margem do lago e a borda direita
-		xs[i] = maxf(xs[i], MARGEM if i == 0 else xs[i - 1] + ESPACO)
-	for i in range(xs.size() - 1, -1, -1):
-		xs[i] = minf(xs[i], LARGURA - 4.0 if i == xs.size() - 1 else xs[i + 1] - ESPACO)
-	return xs
-
-
-var _maior_sobreposicao := [0, 0]
-
-
-## Teste: quantas figuras cobrem a mesma coluna de pixels (a regra é no máximo 2).
-## Conta só quem está parado no lugar, e à parte quem está andando.
-func _contar_sobreposicao() -> void:
-	var maiores := [0, 0]  # só os parados, e todos
-	for so_parados in [true, false]:
-		var colunas := PackedInt32Array()
-		colunas.resize(LARGURA)
-		for f in figuras:
-			if so_parados and f.movendo:
-				continue
-			for x in range(maxi(0, f.x + 1), mini(LARGURA, f.x + f.largura - 1)):  # sem a borda de 1 px
-				colunas[x] += 1
-		for c in colunas:
-			maiores[0 if so_parados else 1] = maxi(maiores[0 if so_parados else 1], c)
-	if maiores[0] > _maior_sobreposicao[0] or maiores[1] > _maior_sobreposicao[1]:
-		_maior_sobreposicao = [maxi(maiores[0], _maior_sobreposicao[0]), maxi(maiores[1], _maior_sobreposicao[1])]
-		print("[sobreposicao] parados=%d todos=%d hora=%s figuras=%d" % [_maior_sobreposicao[0], _maior_sobreposicao[1],
-			sim.tempo.get("hora"), figuras.size()])
-
-
-func _figuras_nucleo(delta: float) -> Array:
-	var r := []
-	var opcoes := Arte.opcoes_troca()
-	var lugar := _lugares(sim.pessoas)
-	var vivos := {}
-	for p in sim.pessoas:
-		var id: int = p["id"]
-		vivos[id] = true
-		var destino: float = lugar.get(id, p["x"])
-		var x: float = _x_visto.get(id, destino)
-		# todos na mesma velocidade: quem sai em fila espaçada chega em fila espaçada
-		var vel := PASSO_ANDAR * (4.0 if sim.ritmo == Simulacao.Ritmo.RAPIDO else 1.0)
-		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
-			x = destino
-		var anterior := x
-		x = move_toward(x, destino, vel * delta)
-		_x_visto[id] = x
-		if p["acao"] == "dormir":
-			_acordou.erase(id)
-			continue
-		# quem acorda junto sai da cabana em fila, não empilhado
-		if not _acordou.has(id):
-			_acordou[id] = _relogio
-		var espera := (id % 10) * ESPACO / vel
-		if _relogio - _acordou[id] < espera and absf(destino - x) > ESPACO:
-			_x_visto[id] = anterior
-			continue
-		var crianca: bool = p["crianca"]
-		var idoso: bool = p["idade"] >= 55 and not crianca
-		var movendo := absf(x - anterior) > 0.001
-		var fogo := _fogo_mais_perto(x)
-		if movendo:
-			_virada[id] = x < anterior
-		elif p["acao"] in ["fogueira", "rezar"]:
-			_virada[id] = fogo < x
-		var espelho: bool = _virada.get(id, id % 2 == 0)
-
-		var folha: String
-		var quadro := 0
-		var largura := 6 if crianca else 8
-		var feminina: bool = p["sexo"] == "f"
-		if movendo:
-			folha = "crianca_andar_4q" if crianca else ("idoso_andar_4q" if idoso else
-				("adulto_b_andar_4q" if feminina else "adulto_a_andar_4q"))
-			quadro = int(_relogio * 6.0 + id) % 4
-		else:
-			match p["acao"]:
-				"colher":
-					folha = "crianca_andar_4q" if crianca else "adulto_a_colher_4q"
-					quadro = 0 if crianca else int(_relogio * 3.0 + id) % 4
-				"rezar":
-					folha = "crianca_andar_4q" if crianca else "adulto_a_rezar_2q"
-					quadro = 0 if crianca else int(_relogio * 0.8 + id) % 2
-				"fogueira":
-					folha = "crianca_andar_4q" if crianca else "adulto_a_sentado_1q"
-				_:  # parado, ou andar já no destino
-					if crianca:
-						folha = "crianca_andar_4q"
-					elif idoso:
-						folha = "idoso_andar_4q"
-						quadro = 1
-					else:
-						folha = "adulto_b_parado_2q" if feminina else "adulto_a_parado_2q"
-						quadro = int(_relogio + id * 0.37) % 2
-
-		var pele: int = id % opcoes.peles.size()
-		var cabelo: int = (id * 7 + 3) % (opcoes.cabelos.size() - 1)  # o último é o grisalho
-		if idoso:
-			cabelo = 5 if folha == "idoso_andar_4q" else opcoes.cabelos.size() - 1
-		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
-
-		var xr := roundi(x)
-		var base := _chao(xr) - (1 if _atras.has(id) else 0)
-		if _na_agua(xr):
-			base = Terreno.NIVEL_AGUA + 2
-		r.append({"id": id, "folha": folha, "quadro": quadro, "largura": largura, "x": xr - largura / 2,
-			"base": base, "espelho": espelho, "codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo,
-			"acompanhada": p.get("acompanhada", false), "movendo": movendo, "atras": _atras.has(id)})
-	r.sort_custom(func(a, b): return a.atras and not b.atras)  # a segunda fileira fica atrás
-	for id in _x_visto.keys():
-		if not vivos.has(id):
-			_x_visto.erase(id)
-			_virada.erase(id)
-			_acordou.erase(id)
+			"fogo": fogo_mais_perto(item["x"] + item["larg_quadro"] / 2.0)})
 	return r
 
 

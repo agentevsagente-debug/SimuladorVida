@@ -11,14 +11,18 @@ extends Node2D
 const Arte = preload("res://apresentacao/arte.gd")
 
 var particulas: Array = []
+var chao: Callable  # x -> linha do chão, para quem anda rente (coelhos)
 var _texturas := {}
 var _assinatura := []
 
 
+## extra: {espelho: bool, rente: bool (segue o chão), zigue: float (oscila em y)}.
 func emitir(folha: String, largura: int, quadros: int, pos: Vector2, vel: Vector2, vida: float,
-		fps := 0.0, variacao := 0) -> void:
-	particulas.append({"folha": folha, "largura": largura, "quadros": quadros, "pos": pos,
-		"vel": vel, "vida": vida, "idade": 0.0, "fps": fps, "variacao": variacao})
+		fps := 0.0, variacao := 0, extra := {}) -> void:
+	var p := {"folha": folha, "largura": largura, "quadros": quadros, "pos": pos,
+		"vel": vel, "vida": vida, "idade": 0.0, "fps": fps, "variacao": variacao}
+	p.merge(extra)
+	particulas.append(p)
 
 
 func ativo() -> bool:
@@ -35,13 +39,19 @@ func avancar(delta: float) -> void:
 		if p.idade >= p.vida:
 			continue
 		p.pos += p.vel * delta
+		if p.get("rente", false) and chao.is_valid():
+			p.pos.y = chao.call(int(p.pos.x))
 		vivas.append(p)
-		assinatura.append([p.folha, _quadro(p), floori(p.pos.x), floori(p.pos.y),
+		assinatura.append([p.folha, _quadro(p), floori(p.pos.x), floori(p.pos.y + _zigue(p)),
 			int(p.idade * 8.0) if p.folha == "faisca" else 0])
 	particulas = vivas
 	if assinatura != _assinatura:
 		_assinatura = assinatura
 		queue_redraw()
+
+
+func _zigue(p: Dictionary) -> float:
+	return roundf(sin(p.idade * p.get("zigue", 0.0)) * 3.0) if p.has("zigue") else 0.0
 
 
 func limpar(folha: String) -> void:
@@ -74,5 +84,11 @@ func _draw() -> void:
 		var tex := _textura(p.folha)
 		var w: int = p.largura
 		var h := tex.get_height()
-		var canto := Vector2(floori(p.pos.x) - w / 2, floori(p.pos.y) - h + 1)
-		draw_texture_rect_region(tex, Rect2(canto, Vector2(w, h)), Rect2(_quadro(p) * w, 0, w, h))
+		var canto := Vector2(floori(p.pos.x) - w / 2, floori(p.pos.y + _zigue(p)) - h + 1)
+		var origem := Rect2(_quadro(p) * w, 0, w, h)
+		if p.get("espelho", false):  # as criaturas olham para a direita; espelhar é virar
+			draw_set_transform(Vector2(canto.x + w, canto.y), 0.0, Vector2(-1, 1))
+			draw_texture_rect_region(tex, Rect2(Vector2.ZERO, Vector2(w, h)), origem)
+			draw_set_transform(Vector2.ZERO)
+		else:
+			draw_texture_rect_region(tex, Rect2(canto, Vector2(w, h)), origem)

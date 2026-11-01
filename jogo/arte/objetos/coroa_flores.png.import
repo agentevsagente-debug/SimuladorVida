@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c21lyfs4env6t"
+path="res://.godot/imported/coroa_flores.png-310f5a9c87d8c7f7e9f8c0036b200274.image"
+
+[deps]
+
+source_file="res://arte/objetos/coroa_flores.png"
+dest_files=["res://.godot/imported/coroa_flores.png-310f5a9c87d8c7f7e9f8c0036b200274.image"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://b0ftu583yop0h"
+path="res://.godot/imported/estandarte_sol.png-92f57d3ac1f114f4f41bf20bb13c9a29.image"
+
+[deps]
+
+source_file="res://arte/objetos/estandarte_sol.png"
+dest_files=["res://.godot/imported/estandarte_sol.png-92f57d3ac1f114f4f41bf20bb13c9a29.image"]
+
+[params]
+
