@@ -482,7 +482,9 @@ São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. 
 |---|---|---|---|---|---|
 | `passaro_voar_4q` | 6 × 4 | 4 | primavera, verão, outono | dia | bando de 3 a 5 que voa e pousa |
 | `passaro_pousado_2q` | 4 × 4 | 2 | primavera, verão, outono | dia | no chão, nas cercas e nos telhados |
+| `passaro_pousado_forte_2q` | 5 × 3 | 2 | primavera, verão, outono | dia | **use no lugar do `passaro_pousado_2q`** (auditoria 6, T7): o de 4 px virava um pontinho marrom na ponta das cabanas. Este tem o dorso e a cabeça marrons, o **peito claro** e o **bico escuro**, e se destaca sobre a palha, o telhado vermelho e o céu. Quadros: olhando e bicando. A base é a última linha (as patas). Encaixe com `emitir(folha, 5, 2, …)`. |
 | `peixe_saltar_4q` | 8 × 8 | 4 | primavera, verão, outono | dia e entardecer | salta do lago e volta; não no gelo |
+| `peixe_pular_forte_4q` | 10 × 8 | 4 | primavera, verão, outono | dia | o peixe da pesca (seção 26), mais forte que o `peixe_saltar_4q`: dorso escuro, corpo prateado e barriga clara, para ler sobre a água. Sai com um respingo em anel, sobe, passa deitado no alto e mergulha. **A linha 7 é a superfície da água.** Faça pular a 10 a 20 px à frente de quem pesca, a cada 5 a 15 s de 1x, para mostrar que ali tem peixe. Não no gelo. |
 | `sapo_2q` | 6 × 4 | 2 | primavera, verão | entardecer e noite | na margem e no junco |
 | `garca_2q` | 8 × 8 | 2 | primavera, verão, outono | manhã e dia | parada na água rasa da margem |
 | `coelho_4q` | 6 × 4 | 4 | todas | manhã e entardecer | no mato e na borda das roças; foge de gente |
@@ -737,7 +739,7 @@ Com a ave, é a mesma sequência: `ave_grande_4q` no passo 1, `ave_fugir_4q` qua
 
 ## 25. Roupas dos estágios nas ações novas (`acoes/vestir_estagios.py`)
 
-As ações de 1x (seção 22), as brincadeiras (seção 23) e as folhas de gente da caçada (seção 24) também existem com a roupa dos estágios 3 a 6. Assim, um povo avançado não volta ao visual do estágio 1 quando cata lenha ou brinca. As roupas são as dos habitantes de cada estágio (seção 11), aplicadas pela forma de cada quadro, e não por coordenadas fixas, porque nessas ações o corpo agacha, ajoelha e cai.
+As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente da caçada (seção 24) e as da pesca e da lavagem (seção 26) também existem com a roupa dos estágios 3 a 6. Assim, um povo avançado não volta ao visual do estágio 1 quando cata lenha ou brinca. As roupas são as dos habitantes de cada estágio (seção 11), aplicadas pela forma de cada quadro, e não por coordenadas fixas, porque nessas ações o corpo agacha, ajoelha e cai.
 
 | Estágio | Roupa | Na criança |
 |---|---|---|
@@ -749,11 +751,31 @@ As ações de 1x (seção 22), as brincadeiras (seção 23) e as folhas de gente
 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 
-- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 14 folhas são as `*_forte_4q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 21 folhas são as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
 - **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
 - **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
 - **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).
 - A amostra é `acoes/amostra_estagios_4x.png`, com os quadros 0 e 2 de cada folha nas linhas dos estágios 1, 3, 4, 5 e 6.
+
+## 26. Pesca e lavagem no lago (`acoes/pesca.py`)
+
+A pesca é a cena do começo da tarde nos dias sem caçada (auditoria 6, T5). Ela segue o padrão das ações de 1x (seção 22): silhueta aberta, lança de 2 px com a ponta clara e o peixe passando da largura do corpo. `acoes/amostra_pesca_4x.png` mostra cada folha sobre a água (ou a grama) e, no fim, o peixe na lança.
+
+**Na água rasa.** Nas folhas de quem está dentro da água, a **linha 9** (adulto) ou a **linha 5** (criança) é a superfície: ali ficam as marolas dos dois lados do corpo, e daí para baixo as pernas viram a sombra delas, na cor da superfície do lago (18). Ponha essa linha na linha da superfície do lago, isto é, **a base do quadro 2 px abaixo dela** (o adulto, com a base na linha 11, fica com 2 px dentro da água). A lança e o peixe que entram na água também viram sombra.
+
+| Cena | Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|---|
+| esperar o peixe | `acoes/pescar_espreitar_forte_2q` | 12 × 12 | 2 | na água rasa, curvado, a lança apontada para a água à frente. Os 2 quadros só mexem a cabeça e a ponta da lança: segure cada um por 1 a 3 s, por 20 a 60 s de 1x. Enquanto isso, o `peixe_pular_forte_4q` pula de vez em quando à frente. |
+| arpoar | `acoes/pescar_arpoar_forte_4q` | 12 × 12 | 4 | mira com a lança puxada para trás (quadro 0, segure 1 s), arpoa (1: a ponta entra na água e espirra), ergue a lança com o peixe espetado na ponta (2) e mostra o peixe se debatendo, de boca aberta (3). Para errar, pare no quadro 1 e volte à espera. Ao acertar, alterne os quadros 2 e 3 por 2 a 3 s. |
+| voltar com o peixe | `acoes/carregar_peixe_forte_4q` | 12 × 12 | 4 | anda com a lança no ombro e o peixe espetado na ponta, à frente e no alto. Sai da água e vai até o fogo. |
+| o peixe no fogo | `objetos/peixe_na_lanca_forte` | 16 × 4 | 1 | a lança deitada com o peixe na ponta, para encostar perto do fogo ou pôr sobre as brasas. A ponta do peixe fica nas colunas 10 a 15. |
+| o peixe na água | `criaturas/peixe_pular_forte_4q` | 10 × 8 | 4 | seção 17 |
+| lavar | `acoes/lavar_margem_forte_4q` | 12 × 12 | 4 | ajoelhado na beira, lava um pano: mergulha, esfrega, torce no alto (pingando) e bate na água (espirra). O corpo fica nas colunas 0 a 7, na terra; o pano e os respingos ficam nas colunas 8 a 11: **ponha o quadro com a coluna 8 já sobre a água da margem**. 2 ou 3 adultos lado a lado, a 10 px. |
+| banho das crianças | `acoes/crianca_banho_4q` | 6 × 8 | 4 | na água até a cintura (linha 5 na superfície): joga água para o alto, bate na água, mergulha (só o alto da cabeça fora) e volta sacudindo os pingos. Ponha duas frente a frente (uma espelhada), a 6 a 8 px: jogando água uma na outra. Com 3 a 5 crianças e os adultos lavando na margem, é a lavagem no lago. |
+
+Nas folhas de gente, os peixes usam 3 (dorso), 12 e 11 (corpo) e 31 (barriga), e o pano usa 11 e 12: nada de 8, 25, 26, 28 ou 30, que a troca de pele e cabelo muda. As de sempre (`pescar_4q`, com a vara, e `banhar_4q`, com a cuia) continuam valendo para o 10x e o 50x.
+
+**Estágios e inverno.** As 5 folhas de gente têm a roupa dos estágios 3 a 6 (seção 25) e a de inverno. No inverno fundo, com o lago congelado, não há pesca nem banho.
 
 ## Critérios
 
