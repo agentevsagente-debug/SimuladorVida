@@ -43,6 +43,7 @@ var _narrados: Dictionary = {}       # tipo -> [anos em que entrou na crônica]
 var _primeiros: Dictionary = {}      # "tipo" e "tipo@grupo" já vistos
 var _usados: Dictionary = {}         # ids de eventos já contados em outra frase
 var anos_escritos: Dictionary = {}   # ano -> parágrafo ("" se o ano foi quieto)
+var _recentes: Dictionary = {}       # frase (o molde, antes de preencher) -> último ano em que entrou na crônica
 var ultimo_ano_escrito: int = 0
 var _cursor: int = 0                 # próximo evento ainda não lido
 var cronicas_povos: Dictionary = {}  # id do grupo -> {ano: texto}: a história que o povo escreveu
@@ -128,8 +129,32 @@ static func _misturar(x: int) -> int:
 	return x ^ (x >> 31)
 
 
+## Uma variante de frase, ao acaso. Na crônica oficial, evita a variante que já entrou nos
+## últimos JANELA_REPETICAO anos (se todas entraram, fica a mais antiga): em séculos de
+## história, a mesma frase voltava a cada poucos anos. Só a escrita oficial lembra o que usou;
+## as notas ao vivo e o relato da ausência não mudam essa memória.
+const JANELA_REPETICAO := 25
+var _lembrando := false
+var _ano_atual := 0
+
+
 func _escolher(opcoes: Array) -> String:
-	return opcoes[rt.randi_range(0, opcoes.size() - 1)]
+	var i := rt.randi_range(0, opcoes.size() - 1)
+	if not _lembrando:
+		return opcoes[i]
+	if opcoes.size() > 1:
+		var melhor := i
+		for k in opcoes.size():
+			var j := (i + k) % opcoes.size()
+			var quando: int = _recentes.get(opcoes[j], -100000)
+			if _ano_atual - quando > JANELA_REPETICAO:
+				melhor = j
+				break
+			if quando < _recentes.get(opcoes[melhor], -100000):
+				melhor = j
+		i = melhor
+	_recentes[opcoes[i]] = _ano_atual
+	return opcoes[i]
 
 
 func _frase(opcoes: Array, vars: Dictionary) -> String:
@@ -190,7 +215,10 @@ func processar_ate(a_final: int) -> void:
 			if m.eventos[_cursor].ano == a:
 				evs.append(m.eventos[_cursor])
 			_cursor += 1
+		_lembrando = true
+		_ano_atual = a
 		anos_escritos[a] = _ano(a, evs)
+		_lembrando = false
 		_escrever_cronicas_dos_povos(a, evs)
 		ultimo_ano_escrito = a
 
@@ -817,7 +845,10 @@ func _texto(e) -> String:
 			var n2: int = e.dados["n"] - 1
 			v["n"] = G.termo(G.extenso(n2, "f"), "f", n2)
 			return _frase(["{p} partiu com {n} {n#pessoa|pessoas} para além da borda do mundo. Nunca voltaram.",
-				"Sem lugar e sem comida, {p} e os seus atravessaram a borda do mundo. Ninguém soube deles."], v)
+				"Sem lugar e sem comida, {p} e os seus atravessaram a borda do mundo. Ninguém soube deles.",
+				"{p} juntou {n} {n#pessoa|pessoas} e foi embora pela borda do mundo, atrás de terra melhor.",
+				"Um dia, {p} e mais {n} {n#pessoa|pessoas} pegaram o que tinham e passaram da borda do mundo. Ninguém os viu de novo.",
+				"{p} não quis esperar a fome passar: levou {n} {n#pessoa|pessoas} para além da borda."], v)
 		"fusao":
 			v["lista"] = _lista_pessoas(e.participantes)
 			if e.participantes.size() == 1:
@@ -1042,11 +1073,12 @@ func _texto(e) -> String:
 		"cometa":
 			v["n"] = G.termo(str(e.dados["noites"]))
 			return _frase(["Uma estrela de cauda cruzou o céu por {n} noites. Ninguém dormia direito.",
+				"Por {n} noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.",
 				"Apareceu no céu uma luz com rabo, que ficou {n} noites e sumiu."], v)
 		"terremoto":
 			var k: int = e.dados["cabanas"]
 			v["n"] = G.termo(G.extenso(k, "f"), "f", k)
-			var t3 := _frase(["A terra tremeu."], v)
+			var t3 := _frase(["A terra tremeu.", "O chão tremeu sem aviso.", "Houve um tremor de terra."], v)
 			if k > 0:
 				t3 += " " + _frase(["{n#Caiu|Caíram} {n} {n#cabana|cabanas}."], v)
 			var mortos_t: Array = e.dados["mortos"]
@@ -1058,7 +1090,9 @@ func _texto(e) -> String:
 			v["f1"] = _p(e.participantes[0])
 			v["f2"] = _p(e.participantes[1])
 			v["mae"] = _p(e.participantes[2])
-			return _frase(["{mae} deu à luz gêmeos, {f1} e {f2}. Uns viram bênção; outros, mau sinal."], v)
+			return _frase(["{mae} deu à luz gêmeos, {f1} e {f2}. Uns viram bênção; outros, mau sinal.",
+				"Nasceram gêmeos de {mae}: {f1} e {f2}.",
+				"{mae} teve dois de uma vez, {f1} e {f2}, e todos foram ver."], v)
 		"peste":
 			return _frase(["Veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente.",
 				"Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo."], v)
@@ -1198,7 +1232,8 @@ func _feito_de(pid: int, ate: int) -> String:
 			"sonho":
 				if x.dados.get("sonhador", -1) == pid and x.dados.get("aceita", false):
 					nota = 5
-					f = _frase(["Um dia, tinha sonhado com o que ninguém sabia."], v)
+					f = _frase(["Um dia, tinha sonhado com o que ninguém sabia.", "Teve um sonho em que os outros acreditaram.",
+						"Contava um sonho que mudou o seu povo."], v)
 			"prece_sem_resposta":
 				if x.participantes[0] == pid and x.dados["morte"] != -1 and x.participantes.size() > 1:
 					nota = 6
@@ -1226,7 +1261,7 @@ func _feito_de(pid: int, ate: int) -> String:
 			melhor = f
 	if melhor.is_empty() and matou >= 2:
 		v["n"] = G.termo(G.extenso(matou, "f"), "f", matou)
-		melhor = _frase(["Na guerra, tinha tirado {n} vidas."], v)
+		melhor = _frase(["Na guerra, tinha tirado {n} vidas.", "Matou {n} na guerra.", "Na guerra, {n} caíram pela sua mão."], v)
 	return melhor
 
 
@@ -1953,7 +1988,10 @@ func _divino(e, v: Dictionary) -> String:
 		"raio_divino":
 			var vid: int = e.dados.get("vitima", -1)
 			if vid == -1:
-				return _frase(["Do céu limpo, um raio caiu {em:zona} e queimou a terra. Não acertou ninguém."], v)
+				return _frase(["Do céu limpo, um raio caiu {em:zona} e queimou a terra. Não acertou ninguém.",
+					"Um raio sem nuvem rachou uma árvore {em:zona}.",
+					"Caiu um raio {em:zona} num dia claro. Ficou a marca preta no chão.",
+					"Um estalo, uma luz, e {em:zona} um tronco ficou fumegando. Ninguém se feriu."], v)
 			v["p"] = _p(vid)
 			var t := ""
 			if e.dados.get("era_lider", false):
@@ -1966,7 +2004,9 @@ func _divino(e, v: Dictionary) -> String:
 			if e.dados["em_fome"]:
 				return _frase(["No meio da fome, {o:zona} se encheu de frutos e peixes, como nunca. {g} comeu até cansar.",
 					"De um dia para o outro, {o:zona} transbordou de comida. A fome de {g} acabou ali."], v)
-			return _frase(["{o:zona} deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água."], v)
+			return _frase(["{o:zona} deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água.",
+				"Sem razão nenhuma, {o:zona} deu o dobro de frutos naquela estação.",
+				"Os galhos {de:zona} pesaram de tanto fruto, fora de época."], v)
 		"fogo_divino":
 			var mortos: Array = e.dados.get("mortos", [])
 			var t2 := _frase(["Um fogo sem origem queimou {o:zona}.", "{o:zona} pegou fogo sem que ninguém acendesse nada."], v)
@@ -1975,19 +2015,23 @@ func _divino(e, v: Dictionary) -> String:
 				t2 += " " + _frase(["{m} {m#morreu|morreram} nas chamas."], v)
 			var leitura: String = e.dados.get("leitura_" + str(e.grupo), "")
 			if leitura == "maldicao":
-				t2 += " " + _frase(["Em {g}, disseram que o lugar estava amaldiçoado."], v)
+				t2 += " " + _frase(["Em {g}, disseram que o lugar estava amaldiçoado.", "{g} passou a evitar o lugar.",
+					"Para {g}, aquela terra ficou marcada."], v)
 			elif leitura == "purificacao":
 				t2 += " " + _frase(["Em {g}, disseram que o fogo tinha limpado o lugar."], v)
 			return t2
 		"terra_erguida":
 			return _frase(["A terra se ergueu {em:zona}: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma.",
-				"Numa noite, o chão {de:zona} tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto."], v)
+				"Numa noite, o chão {de:zona} tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto.",
+				"Um morrote novo apareceu {em:zona}, de um dia para o outro.",
+				"{o:zona} amanheceu com uma pedra grande onde antes era chão batido."], v)
 		"seca_divina":
 			v["d"] = G.termo(str(e.dados["dias"]))
 			if e.dados["grau"] == "sinal":
 				return _frase(["{o:zona} secou um pouco, sem razão, enquanto em volta chovia."], v)
 			return _frase(["Só {o:zona} secou: por {d} dias não caiu uma gota ali, enquanto em volta chovia.",
-				"O céu fechou-se sobre {o:zona}. Os riachos sumiram, e só ali."], v)
+				"O céu fechou-se sobre {o:zona}. Os riachos sumiram, e só ali.",
+				"Por {d} dias, a chuva desviou {de:zona}."], v)
 		"diluvio":
 			var zs: Array = e.dados["zonas"]
 			var mortos_d: Array = e.dados["mortos"]
@@ -1997,15 +2041,15 @@ func _divino(e, v: Dictionary) -> String:
 			elif zs.size() > 1:
 				t4 = _frase(["Choveu sem parar, e a água subiu {de:zona} até as terras vizinhas."], v)
 			else:
-				t4 = _frase(["A água subiu e cobriu {o:zona}."], v)
+				t4 = _frase(["A água subiu e cobriu {o:zona}.", "{o:zona} ficou debaixo d'água.", "Uma enchente sem chuva tomou {o:zona}."], v)
 			if e.dados["cabanas"] > 0:
 				v["c"] = G.termo(G.extenso(e.dados["cabanas"], "f"), "f", e.dados["cabanas"])
-				t4 += " " + _frase(["A correnteza levou {c} {c#cabana|cabanas}."], v)
+				t4 += " " + _frase(["A correnteza levou {c} {c#cabana|cabanas}.", "{c#Foi|Foram} {c} {c#cabana|cabanas} água abaixo."], v)
 			if not mortos_d.is_empty():
 				v["ms"] = _lista_pessoas(mortos_d)
 				if mortos_d.size() > 5:
 					v["n"] = G.termo(str(mortos_d.size()))
-					t4 += " " + _frase(["{n} pessoas se afogaram."], v)
+					t4 += " " + _frase(["{n} pessoas se afogaram.", "A água levou {n} pessoas.", "Morreram {n}, afogados."], v)
 				else:
 					t4 += " " + _frase(["{ms} {ms#morreu|morreram} afogad{ms:o|a|os|as}."], v)
 			return t4
@@ -2021,10 +2065,13 @@ func _divino(e, v: Dictionary) -> String:
 				t5 += " " + _frase(["{ms} {ms#morreu|morreram} sob os escombros."], v)
 			return t5
 		"pressagio":
-			var formas := {"cometa": "Uma luz com rabo atravessou o céu de ponta a ponta, rápida demais para ser estrela.",
-				"eclipse": "O sol escureceu fora de hora, e voltou como se nada fosse.",
-				"luzes": "O céu da noite se encheu de luzes verdes que dançavam."}
-			var t6: String = formas.get(e.dados.get("forma", "luzes"), formas["luzes"])
+			var formas := {"cometa": ["Uma luz com rabo atravessou o céu de ponta a ponta, rápida demais para ser estrela.",
+					"Uma estrela caiu devagar, de um lado ao outro do céu."],
+				"eclipse": ["O sol escureceu fora de hora, e voltou como se nada fosse.",
+					"No meio do dia, o sol virou um anel escuro, e os pássaros se calaram."],
+				"luzes": ["O céu da noite se encheu de luzes verdes que dançavam.",
+					"Numa noite, o céu ficou de várias cores, até o amanhecer."]}
+			var t6: String = _escolher(formas.get(e.dados.get("forma", "luzes"), formas["luzes"]))
 			var leituras: Dictionary = e.dados.get("leituras", {})
 			var partes: Array = []
 			for gid in leituras:

@@ -1372,8 +1372,7 @@ func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cet
 		if not novo_cetico:
 			# Os fiéis que partem dão ao deus um nome novo.
 			var nat := _natureza_do_nome(g.nome_deus)
-			var opcoes: Array = NOMES_DEUS["sonho" if nat != "sonho" else "chuva"]
-			var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+			var escolha: Array = _nome_livre(NOMES_DEUS["sonho" if nat != "sonho" else "chuva"], g)
 			novo.nome_deus = escolha[0]
 			novo.genero_deus = escolha[1]
 			for p in levar:
@@ -1853,8 +1852,7 @@ func _profeta(g: Grupo) -> void:
 	var nat: String = naturezas[rng.randi_range(0, naturezas.size() - 1)]
 	if nat == atual:
 		nat = naturezas[(naturezas.find(nat) + 1) % naturezas.size()]
-	var opcoes: Array = NOMES_DEUS[nat]
-	var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+	var escolha: Array = _nome_livre(NOMES_DEUS[nat], g)
 	profeta.feitos += 3
 	profeta.fe = 1.0
 	var templo_forte = g.poder == "sacerdotes" or (g.sacerdote != -1 and (pessoas[g.sacerdote].tem("rancoroso") or pessoas[g.sacerdote].tem("ambicioso")))
@@ -2487,13 +2485,26 @@ func _impressionar(g: Grupo, peso: float, natureza: String, e: Evento, benigno: 
 		var atual := _natureza_do_nome(g.nome_deus)
 		if atual != natureza and NOMES_DEUS.has(natureza):
 			var antigo := g.nome_deus
-			var opcoes: Array = NOMES_DEUS[natureza]
-			var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+			var escolha: Array = _nome_livre(NOMES_DEUS[natureza], g)
 			g.nome_deus = escolha[0]
 			g.genero_deus = escolha[1]
 			g.deus_renomeado_ano = ano()
 			registrar("deus_renomeado", "social", 7, g.zona, g.id, [], {"antigo": antigo,
 				"novo": g.nome_deus, "genero": g.genero_deus, "origem": e.id})
+
+
+## Um nome para o deus que nenhum outro povo vivo usa agora (nem este povo): dois povos que
+## nunca se falaram não chegam ao mesmo nome. Se todos os da natureza estão em uso, vale
+## qualquer um. Um sorteio só, como antes.
+func _nome_livre(opcoes: Array, g: Grupo) -> Array:
+	var usados := {g.nome_deus: true}
+	for o in grupos_vivos():
+		if o != g and o.tem_crenca:
+			usados[o.nome_deus] = true
+	var livres: Array = opcoes.filter(func(par): return not usados.has(par[0]))
+	if livres.is_empty():
+		livres = opcoes
+	return livres[rng.randi_range(0, livres.size() - 1)]
 
 
 func _natureza_do_nome(nome: String) -> String:
@@ -2507,8 +2518,7 @@ func _natureza_do_nome(nome: String) -> String:
 func _nascer_crenca(g: Grupo, natureza: String, e: Evento) -> void:
 	if not NOMES_DEUS.has(natureza):
 		natureza = "tempestade"
-	var opcoes: Array = NOMES_DEUS[natureza]
-	var escolha: Array = opcoes[rng.randi_range(0, opcoes.size() - 1)]
+	var escolha: Array = _nome_livre(NOMES_DEUS[natureza], g)
 	g.tem_crenca = true
 	g.ceticos = false
 	g.nome_deus = escolha[0]

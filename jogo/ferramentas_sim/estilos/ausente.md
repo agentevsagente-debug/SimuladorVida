@@ -26,11 +26,11 @@ Nos anos 41 a 50 houve quatro preces que pareceram atendidas; nasceram dezesseis
 
 ### Ano 51
 
-De novo a chuva sumiu, como no ano 32. Foram 19 dias de seca. Em Sagak, Torut pediu: «Que Leva, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Leva tinha ouvido. Foi só o tempo, mas quem iria dizer?
+De novo a chuva sumiu, como no ano 32. Foram 19 dias de seca. Em Sagak, Torut pediu: «Que Leva, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Leva. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 52
 
-Na primavera do ano 52, morreu Saut, que guiava Sagak, aos 56 anos. Na guerra, tinha tirado duas vidas.
+Na primavera, Saut, que guiava Sagak, morreu de velhice aos 56 anos. Na guerra, tinha tirado duas vidas.
 
 *Do ano 53 ao 54, a vida seguiu sem grandes acontecimentos.*
 

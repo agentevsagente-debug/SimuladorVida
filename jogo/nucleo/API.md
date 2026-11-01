@@ -76,7 +76,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | `zona`, `x_ini`, `x_fim` | onde vive; `x_ini` e `x_fim` são a faixa do acampamento. Se dois povos dividem uma zona, cada um fica com uma parte. |
 | `membros`, `estagio` | quantas pessoas; estágio 1 = coleta, 2 = agricultura, 3 = pedra, 4 = metal, 5 = escrita, 6 = engenharia |
 | `lider`, `sacerdote` | id da pessoa, ou -1 |
-| `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético |
+| `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético. Um nome novo (crença, rebatismo, profeta, cisma) nunca é o de outro povo vivo; só os povos que se separaram de um mesmo povo e levaram a fé junto chamam o deus do mesmo jeito. |
 | `ceticos` | o povo deixou de rezar |
 | `em_fome`, `doenca` | estados atuais |
 | `costumes` | lista de chaves: "estocar", "agua", "festa_chuva", "tabu_tempestade", "queimar_mortos", "lancas", "oferendas" |
@@ -449,6 +449,8 @@ A crônica é escrita **ano a ano**, quando cada ano termina. Um ano escrito nã
 
 O ano em andamento ainda não está na crônica. Para mostrar o que acabou de acontecer, a apresentação usa os eventos de camada "nota" e "chamado".
 
+**Repetição.** Quando um evento tem mais de uma frase possível, a crônica evita a que já usou nos últimos 25 anos (se todas foram usadas, fica a mais antiga). Essa memória é gravada com o mundo. Só a escrita oficial de cada ano a usa e muda: as notas ao vivo (`curto`) e o relato da ausência não mexem nela.
+
 ## Determinismo
 
 Todo sorteio da simulação vem de `mundo.rng`, com a semente dada. As consultas desta API não sorteiam nada. A mesma semente, com os mesmos poderes usados nos mesmos passos, dá o mesmo mundo e a mesma crônica.
@@ -549,6 +551,9 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
 | `sondagem_longa.gd` | Roda mundos por centenas de anos e mede população, povos, estágio máximo, extinções, eras, intervalo entre marcos e entre viradas, anos quietos, repetição, fomes, guerras, profetas, secularizações e mudanças de poder, e o ano em que o primeiro povo chega a cada estágio (tabela de mínimo, mediana e máximo em `sondagem/<rotulo>-estagios.txt`; a de 10 sementes por 300 anos está em `sondagem/estagios.txt`). Quando o mundo fica vazio, cria um povo novo depois de 10 anos, como faria um jogador. As crônicas e as métricas ficam em `sondagem/`. |
+| `resistencia.gd` | Teste de resistência: um mundo por muitos anos (`-- <semente> <nenhum\|caprichoso> [anos]`), medindo a cada 50 anos o tamanho do mundo salvo, salvar, carregar (e se o mundo carregado é igual), memória, objetos vivos, a ausência de 1 ano e o pior dia e ano. Resultados de 5 sementes por 1000 anos, com e sem deus, em `resistencia/LEIAME.md`. |
+| `resistencia_passos.gd` | Carrega um mundo velho salvo por `resistencia.gd` e mede passo a passo, como a apresentação usa o mundo: piores passos e consultas, `salvar_async` e a montagem da rotina. |
+| `resistencia_ciclo.gd` | O ciclo completo: fim do mundo, livro na estante, povo novo nas ruínas, salvar e carregar depois do fim. |
 | `medir_desempenho.gd` | `medir` (padrão) mede as janelas de desempenho e mostra os piores passos e consultas. `gerar` procura o maior mundo no estágio 6 e o guarda, comprimido, em `mundo_grande.bin` (refazer se o formato do mundo salvo mudar). |
 | `desempenho.gd` | Mede como a apresentação usa o mundo: a cada passo, avança uma hora e consulta tudo o que `simulacao.gd` lê. Cada janela (uma virada de ano com 287 pessoas e uma virada de década) roda em 3 processos novos, e vale o menor tempo de cada passo, porque esta máquina tem picos de outros processos. |
 

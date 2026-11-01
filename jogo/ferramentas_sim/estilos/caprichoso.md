@@ -2,21 +2,21 @@
 
 ### Ano 41
 
-O chão da praia se sacudiu sem aviso. Caiu uma cabana. No inverno, Lolora acordou se sentindo forte como nunca, sem saber por quê.
+O chão da praia se sacudiu sem aviso. Caiu uma cabana.
 
 *No ano 42, nada de notável aconteceu.*
 
 ### Ano 43
 
-No verão do ano 43, a água subiu e cobriu a floresta. A correnteza levou cinco cabanas. 8 pessoas se afogaram. No inverno, o morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. Choveu sobre o morro num dia sem nuvens. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água.
+A floresta ficou debaixo d'água. Foram cinco cabanas água abaixo. 8 pessoas se afogaram. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. Choveu sobre o morro num dia sem nuvens. Sem razão nenhuma, o morro deu o dobro de frutos naquela estação.
 
 ### Ano 44
 
-Na primavera do ano 44, morreu Linim, que guiava Zeor, aos 68 anos. Ratorik, o pacífico, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Zeor passou a ser guiado por Torya. A seca voltou, como no ano 27: 19 dias sem chuva, até que o céu se abriu. Do céu limpo, um raio caiu na praia e queimou a terra. Não acertou ninguém.
+Na primavera do ano 44, morreu Linim, que guiava Zeor, aos 68 anos. Ratorik, o pacífico, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Zeor passou a ser guiado por Torya. A seca voltou, como no ano 27: 19 dias sem chuva, até que o céu se abriu. Um estalo, uma luz, e na praia um tronco ficou fumegando. Ninguém se feriu.
 
 ### Ano 45
 
-No outono, a água subiu e cobriu o morro. Enlinya deu à luz gêmeos, Enim e Torrau. Uns viram bênção; outros, mau sinal. No inverno, o céu fechou-se sobre a floresta. Os riachos sumiram, e só ali. Zeor passou a acreditar que o Que Queima castiga, e se perguntou o que tinha feito.
+A água subiu e cobriu o morro. Nasceram gêmeos de Enlinya: Enim e Torrau. No inverno, só a floresta secou: por 25 dias não caiu uma gota ali, enquanto em volta chovia. Zeor passou a acreditar que o Que Queima castiga, e se perguntou o que tinha feito.
 
 ### Ano 46
 
@@ -28,53 +28,53 @@ Veio a pior fome que o mundo tinha visto: 27 dias por causa da seca em Zeor, e 1
 
 ### Ano 48
 
-Um fogo sem origem queimou a praia. A água subiu e cobriu a floresta. A correnteza levou cinco cabanas. Torya morreu afogada. No outono, no meio da seca, choveu só sobre o morro. Em volta, o céu continuou limpo. Um fogo sem origem queimou o morro. O céu fechou-se sobre a praia. Os riachos sumiram, e só ali.
+Um fogo sem origem queimou a praia. Uma enchente sem chuva tomou a floresta. A correnteza levou cinco cabanas. Torya morreu afogada. No outono, no meio da seca, choveu só sobre o morro. Em volta, o céu continuou limpo. O morro pegou fogo sem que ninguém acendesse nada. O céu fechou-se sobre a praia. Os riachos sumiram, e só ali.
 
 ### Ano 49
 
-Numa noite, o chão da praia tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto. Para Zeor, a praia virou Praia da Pedra Erguida. A terra se ergueu na floresta: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma.
+Numa noite, o chão da praia tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto. Desde então, Zeor chama a praia de Praia da Pedra Erguida. Um morrote novo apareceu na floresta, de um dia para o outro.
 
 ### Ano 50
 
-A água subiu e cobriu o morro. Nos anos 41 a 50 houve cinco secas, quatro preces que pareceram atendidas e três preces sem resposta; nasceram 24 crianças e morreram 30 pessoas. No fim do ano 50, 24 pessoas viviam no mundo, todas em Zeor.
+Na primavera do ano 50, o morro ficou debaixo d'água. Nos anos 41 a 50 houve cinco secas, quatro preces que pareceram atendidas e três preces sem resposta; nasceram 24 crianças e morreram 30 pessoas. No fim do ano 50, 24 pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 51
 
-Do céu limpo, um raio caiu na praia e queimou a terra. Não acertou ninguém. O céu fechou-se sobre o morro. Os riachos sumiram, e só ali.
+No outono, do céu limpo, um raio caiu na praia e queimou a terra. Não acertou ninguém. Por 17 dias, a chuva desviou do morro.
 
 ### Ano 52
 
-No verão do ano 52, a floresta secou um pouco, sem razão, enquanto em volta chovia. Ratorik teve um sonho estranho e não deu importância. Um fogo sem origem queimou o morro. No inverno, um fogo sem origem queimou o morro.
+No verão do ano 52, a floresta secou um pouco, sem razão, enquanto em volta chovia. Enlinya teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela. Um fogo sem origem queimou o morro. Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O morro pegou fogo sem que ninguém acendesse nada.
 
 ### Ano 53
 
-No verão do ano 53, do céu limpo, um raio caiu na praia e queimou a terra. Não acertou ninguém. A seca voltou, como no ano 44: 22 dias sem chuva, até que o céu se abriu.
+Um raio sem nuvem rachou uma árvore na praia.
 
 ### Ano 54
 
-O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Em Zeor, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Queima, e o deus decidia tudo. Uma chuva fina caiu sobre o morro, sem aviso.
+Na primavera do ano 54, os galhos do morro pesaram de tanto fruto, fora de época. No verão, uma chuva fina caiu sobre o morro, sem aviso.
 
 ### Ano 55
 
-Na primavera, o chão do morro se sacudiu sem aviso. Vienut morreu sob os escombros. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. No outono, Miem acordou se sentindo forte como nunca, sem saber por quê.
+A terra tremeu no morro como nunca, e em mais nenhum lugar. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água.
 
 ### Ano 56
 
-O sol escureceu fora de hora, e voltou como se nada fosse. Zeor viu ali um mau agouro. A água subiu e cobriu a praia. No inverno, a praia pegou fogo sem que ninguém acendesse nada.
+O sol escureceu fora de hora, e voltou como se nada fosse. Zeor viu ali um aviso. No verão, a água subiu e cobriu a praia. A praia pegou fogo sem que ninguém acendesse nada.
 
 ### Ano 57
 
-No inverno, numa noite, o chão do lago tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto.
+Na primavera do ano 57, Torraim, que falava pelo Que Queima em Zeor, morreu de velhice aos 55 anos. Morreu o último que tinha visto o ano 9. Em Zeor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Zetorut não podia mais viver perto de Enlinya. Saiu de Zeor com dezesseis pessoas e fundou Beor no lago. Pela primeira vez, havia mais de um povo no mundo. No inverno, o lago amanheceu com uma pedra grande onde antes era chão batido. A terra que se ergueu separou Beor e Zeor, e ninguém ousou atravessá-la para lutar.
 
 ### Ano 58
 
-A floresta deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. Choveu sem parar, e a água subiu do morro até as terras vizinhas. A correnteza levou dez cabanas. 11 pessoas se afogaram. Para Zeor, o deus já não era «o Que Queima»: passou a ser «a Grande Água». No inverno, de novo o sol se apagou no meio do dia.
+Sem razão nenhuma, a floresta deu o dobro de frutos naquela estação. No outono, choveu sem parar, e a água subiu do morro até as terras vizinhas. Foram sete cabanas água abaixo. Lolora, Mibeim, Loya e Miloa morreram afogados. Depois disso, Zeor deixou de chamar o deus de «o Que Queima» e passou a chamá-lo de «o Que Afoga». Saim, de Beor, casou-se com Enlinya e foi viver em Zeor. Foi o primeiro laço entre os dois povos.
 
 ### Ano 59
 
-Na primavera do ano 59, Loim, o corajoso, morreu de repente, aos 41 anos. Em Zeor, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 9, só a crônica guarda. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. No inverno, o céu fechou-se sobre o morro. Os riachos sumiram, e só ali.
+No verão, nasceu Enos, filho de Zetorut, que guiava Beor. Os galhos do morro pesaram de tanto fruto, fora de época. De novo a chuva sumiu, como no ano 44. Foram 19 dias de seca. Em Zeor, Loim pediu: «Que Afoga, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Zeor duvidou de que o Que Afoga tinha ouvido. O deus não tinha feito nada. No inverno, só o morro secou: por 18 dias não caiu uma gota ali, enquanto em volta chovia.
 
 ### Ano 60
 
-O sol escureceu fora de hora, e voltou como se nada fosse. Zeor viu ali um mau agouro. Nos anos 51 a 60 houve quatro secas e nove preces que pareceram atendidas; nasceram 36 crianças e morreram dezesseis pessoas. No fim do ano 60, 44 pessoas viviam no mundo, todas em Zeor.
+No verão do ano 60, no meio do dia, o sol virou um anel escuro, e os pássaros se calaram. Ninguém concordou: Zeor viu ali um mau agouro e Beor viu ali um aviso. Nos anos 51 a 60 houve quatro secas e sete preces que pareceram atendidas; nasceram 35 crianças e morreram nove pessoas. No fim do ano 60, 50 pessoas viviam no mundo: Zeor (33) e Beor (17).
 
