@@ -8,7 +8,8 @@ from PIL import Image
 AQUI = Path(__file__).resolve().parent
 PECAS = AQUI.parent / "pecas"
 erros = 0
-for j in sorted(AQUI.glob("*.json")):
+atlas_json = [j for j in sorted(AQUI.glob("*.json")) if "regioes" in json.loads(j.read_text(encoding="utf-8"))]
+for j in atlas_json:
     d = json.loads(j.read_text(encoding="utf-8"))
     atlas = Image.open(AQUI / d["atlas"]).convert("RGBA")
     W, H = atlas.size
@@ -35,5 +36,5 @@ for j in sorted(AQUI.glob("*.json")):
                 if a[0] + 1 < b[2] - 0 and b[0] + 1 < a[2] and a[1] + 1 < b[3] and b[1] + 1 < a[3]:
                     print("ERRO sobreposição", j.name, a[4], b[4])
                     erros += 1
-print(len(list(AQUI.glob('*.json'))), "atlas conferidos,", erros, "erros")
+print(len(atlas_json), "atlas conferidos,", erros, "erros")
 raise SystemExit(1 if erros else 0)
