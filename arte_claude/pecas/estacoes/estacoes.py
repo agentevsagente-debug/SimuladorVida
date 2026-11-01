@@ -315,9 +315,9 @@ PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "esc
 
 
 def vestir_inverno(px, qw, qh):
-    """Roupa de frio sobre as cores-base: mangas de lã (o braço vira 10/9, as mãos ficam),
-    polainas nas pernas (9/8) e gola de pele (12) nos ombros. Pele, cabelo e roupa
-    continuam trocáveis; só os braços e as pernas mudam de cor."""
+    """Roupa de frio sobre as cores-base: capuz de lã sobre o cabelo (9/10), manto nas
+    costas (8), mangas de lã (o braço vira 10/9, as mãos ficam), polainas (9/8) e gola de
+    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece."""
     out = [l[:] for l in px]
     w = len(px[0])
     adulto = qh == 12
@@ -341,7 +341,22 @@ def vestir_inverno(px, qw, qh):
         xs = [x for x in range(q0, q0 + qw) if px[y][x] == ROUPA]
         for x in (xs[:1] + xs[-1:]) if xs else []:
             out[y][x] = 12
+        # capuz de lã sobre o cabelo (o rosto fica de fora)
+        topo_cab = range(0, 6) if adulto else range(0, 3)
+        for y in topo_cab:
+            for x in range(q0, q0 + qw):
+                if px[y][x] in CABELOS_BASE:
+                    out[y][x] = CAPUZ[CABELOS_BASE[px[y][x]]]
+        # manto: uma coluna a mais de lã nas costas, do ombro à cintura
+        for y in (range(4, 9) if adulto else range(4, 6)):
+            xs = [x for x in range(q0, q0 + qw) if px[y][x] is not None]
+            if xs and xs[0] - 1 >= q0 and out[y][xs[0] - 1] is None:
+                out[y][xs[0] - 1] = 8
     return out
+
+
+CABELOS_BASE = {30: "claro", 12: "claro", 8: "luz", 31: "luz"}   # cabelo e brilho (adulto e idoso)
+CAPUZ = {"claro": 9, "luz": 10}
 
 
 def gelo():

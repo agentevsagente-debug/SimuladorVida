@@ -117,17 +117,19 @@ Sem recorte: não há o que capturar.
 - **O que deveria ser:** só o lado voltado para o fogo mais quente, como nas pessoas, e o resto no tom médio.
 - **Quem corrige:** **B** (aplicar ao cenário a regra de lado que já vale para as pessoas). Se preferirem, **C** suaviza a tabela `fogo_perto` (a cor 10 iria para 9 em vez de 21).
 
-## Correções já feitas pela arte (sessão C)
+## Correções já feitas pela arte (sessão C): antes e depois
 
-Os 5 defeitos que eram da arte foram corrigidos em `arte_claude/pecas/`. Os recortes "depois", em 4x, ficam em `recortes/`. **Para aparecerem no jogo, a sessão B precisa copiar de novo a arte para `jogo/arte/`**, e os atlas já foram regenerados.
+Os 5 defeitos que eram da arte foram corrigidos em `arte_claude/pecas/`, e os atlas foram regenerados: 18 atlas conferidos, 0 erros.
 
-| # | O que mudou | Recorte |
+Cada recorte `recortes/NN_antes_depois_*.png` mostra, em 4x, o **antes à esquerda**, capturado do jogo, e o **depois à direita**. O depois vem da montagem da arte (`pecas/montagem/montar.py`), feita só com as peças e camadas, como o jogo faz. **No jogo, o depois só aparece quando a sessão B copiar a arte de novo para `jogo/arte/`.** Por isso ele não pôde ser capturado do próprio jogo.
+
+| # | O que mudou | Antes e depois |
 |---|---|---|
-| 5 | A `efeitos/fumaca_6q` sobe só uns 6 px. Ela se desfaz pelas bordas em pedaços irregulares (sorteio fixo por pixel, sem pontilhado em grade) e some no quadro 6. Ainda falta a sessão B limitar a subida e a duração. | `05_depois_fumaca.png` |
-| 7 | A mata distante do inverno tem separações entre copas de 5 a 11 px, sem padrão, e textura irregular. Não há mais listras. | `07_depois_mata_inverno.png` |
-| 8 | À noite, a neve das montanhas e da mata ficou em cinza-azulado (11) e violeta (5), abaixo da lua e da fogueira. | `08_depois_montanhas_noite.png` |
-| 9 | Ícones dos 5 poderes da fase 2, em 12 × 12 e 8 × 8: `seca`, `diluvio`, `terremoto`, `pressagio` e `cura`, em `interface/icones_12/` e `icones_8/`. Ainda falta a sessão B pôr os poderes no seletor. | `09_depois_icones_novos.png` |
-| 11 | Roupa de inverno para todas as folhas de pessoas: mangas de lã, polainas e gola de pele, em `estacoes/inverno/<pasta>/`. Ela também vai no atlas novo `pessoas_inverno` e nos atlas `estagioN_inverno`. Ainda falta a sessão B ler a versão da estação também para as pessoas. | `11_depois_roupa_inverno.png` |
+| 5 | A `efeitos/fumaca_6q` sobe só uns 6 px e se desfaz pelas bordas em pedaços irregulares (sorteio fixo por pixel, sem pontilhado em grade). Ela some no quadro 6. No depois aparecem os quadros 1, 3 e 5 subindo da fogueira. Ainda falta a sessão B limitar a subida e a duração de cada baforada. | `05_antes_depois_fumaca.png` |
+| 7 | A mata distante do inverno tem separações entre copas de 5 a 11 px, sem padrão, e textura irregular. Não há mais listras. | `07_antes_depois_mata_inverno.png` |
+| 8 | À noite, a neve das montanhas e da mata fica em cinza-azulado (11) e violeta (5), abaixo da lua e da fogueira. | `08_antes_depois_montanhas_noite.png` |
+| 9 | Ícones dos 5 poderes da fase 2, em 12 × 12 e 8 × 8, no padrão dos atuais: `seca`, `diluvio`, `terremoto`, `pressagio` e `cura`, em `interface/icones_12/` e `icones_8/`. O antes é a alça de hoje; o depois são os 11 ícones de poder. Ainda falta a sessão B pôr os poderes no seletor. | `09_antes_depois_icones.png` |
+| 11 | Roupa de inverno mais grossa para todas as folhas de pessoas: capuz de lã sobre o cabelo, manto nas costas, mangas de lã, polainas e gola de pele. Pele e roupa continuam trocáveis. Ela fica em `estacoes/inverno/<pasta>/` e entra no atlas `pessoas_inverno` e nos atlas `estagioN_inverno`. A montagem da arte já usa as pessoas da estação; falta a sessão B fazer o mesmo no jogo. | `11_antes_depois_roupa_inverno.png` |
 
 ## O que está bom
 
