@@ -16,6 +16,11 @@ const TRACO_RAIZ := {"ambicioso": "ambicios", "pacifico": "pacífic", "rancoroso
 const SILENCIOSOS := ["inicio", "rixa", "roubo", "casamento", "seca_inicio", "fome_inicio",
 	"doenca_inicio", "fartura_natural"]
 
+## Tipos que sempre entram na crônica, mesmo num ano cheio: os atos do deus e
+## o que muda a lista de povos (sem eles, a crônica citaria povos que não apresentou).
+const OBRIGATORIOS := ["chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "terra_erguida",
+	"sonho", "separacao", "conquista", "fusao", "extincao_grupo", "crenca", "fim_do_mundo"]
+
 ## Tipos que contam uma consequência: não ganham "No verão," na frente.
 const SEM_ESTACAO := ["seca_fim", "fome_fim", "doenca_fim", "costume", "costume_esquecido",
 	"lugar_nomeado", "nova_crenca", "deus_renomeado", "prece_atendida", "fusao", "extincao_grupo",
@@ -177,7 +182,7 @@ func _ano(a: int, evs: Array) -> String:
 		if _usados.has(e.id) or SILENCIOSOS.has(e.tipo):
 			continue
 		var nota := _nota(e)
-		if nota < LIMIAR:
+		if nota < LIMIAR and not (OBRIGATORIOS.has(e.tipo) and nota > 0):
 			continue
 		var n: int = por_tipo_no_ano.get(e.tipo, 0)
 		nota -= n * 2
@@ -186,9 +191,12 @@ func _ano(a: int, evs: Array) -> String:
 	candidatos.sort_custom(func(x, y): return x[0] > y[0] or (x[0] == y[0] and x[1].id < y[1].id))
 	var escolhidos: Array = []
 	for c in candidatos:
+		if OBRIGATORIOS.has(c[1].tipo):
+			escolhidos.append(c[1])
+	for c in candidatos:
 		if escolhidos.size() >= ORCAMENTO_ANO:
 			break
-		if c[0] >= LIMIAR:
+		if c[0] >= LIMIAR and not escolhidos.has(c[1]):
 			escolhidos.append(c[1])
 	escolhidos.sort_custom(func(x, y): return x.id < y.id)
 	var frases: PackedStringArray = []
@@ -461,6 +469,9 @@ func _texto(e) -> String:
 			if ini2 != null:
 				dur = (e.ano - ini2.ano) * 40 + e.dia - ini2.dia
 			v["d"] = G.termo(str(dur))
+			if _chuva_divina_entre(ini2, e):
+				return _frase(["Fora dali, a seca continuou: {d} dias sem chuva no resto da região.",
+					"No resto da região, a seca durou {d} dias."], v)
 			var anterior := _seca_anterior(e)
 			if anterior > 0:
 				v["ant"] = G.termo(str(anterior))
@@ -675,6 +686,15 @@ func _nascimento(e, v: Dictionary) -> String:
 		"linhagem":
 			return _frase(["Nasceu {f}, {f:neto|neta} da linhagem dos primeiros.", "Nasceu {f}, {f:filho|filha} de {mae} e {pai}."], v)
 	return ""
+
+
+func _chuva_divina_entre(ini, fim) -> bool:
+	if ini == null:
+		return false
+	for i in range(ini.id, fim.id):
+		if m.eventos[i].tipo == "chuva_divina":
+			return true
+	return false
 
 
 func _pior_fome_antes(e) -> int:
