@@ -1,5 +1,5 @@
 """Estágio 5 (escrita): tabuletas, estela, biblioteca pequena (o arquivo), templo com
-friso escrito, habitantes com túnica longa, o escriba e as ruínas."""
+friso escrito, a casa caiada, habitantes com túnica longa, o escriba e as ruínas."""
 from pathlib import Path
 import sys
 
@@ -98,6 +98,51 @@ def biblioteca_telhado(estilo):
     return q
 
 
+def casa_caiada_parede():
+    """A casa do estágio 5 (auditoria 7: antes, o estágio 5 usava a casa de enxaimel do 4 e não
+    se distinguia dele). Paredes caiadas, brancas, com cunhais de pedra nos cantos, rodapé
+    ocre, o friso escrito sob o telhado (o mesmo da biblioteca), porta em arco e janelas com
+    postigos de madeira. Mesmo tamanho e encaixe da casa de enxaimel (32 x 32, parede da
+    linha 13 à 31)."""
+    q = k.novo(32, 32)
+    x0, y0, x1, y1 = 3, 13, 28, 31
+    for y in range(y0, y1 + 1):
+        for x in range(x0, x1 + 1):
+            if x in (x0, x0 + 1, x1 - 1, x1):                 # cunhais: pedras alternadas
+                pedra = ((y - y0) // 2 + (x in (x0 + 1, x1 - 1))) % 2
+                c = (12 if pedra else 11) if x < x1 else 8
+            elif y >= y1 - 2:                                 # rodapé ocre
+                c = 10 if x < x1 - 2 else 9
+            elif x >= x1 - 3:                                 # o lado da sombra
+                c = 12
+            else:
+                c = 31 if (x * 7 + y * 3) % 23 else 12        # cal com uma ou outra mancha
+            k.put(q, x, y, c)
+    for x in range(x0, x1 + 1):
+        k.put(q, x, y1, 8)
+    for x in range(x0 + 2, x1 - 1):                           # friso escrito
+        k.put(q, x, y0 + 1, 8 if (x * 3) % 4 == 0 else 12)
+        k.put(q, x, y0 + 2, 11)
+    k.porta(q, 14, 23, 17, 31, arco=True, moldura=11)
+    for x in (7, 21):
+        for y in (17, 24):
+            k.janela(q, x, y, peitoril=11)
+            for yy in range(y, y + 3):                        # postigos abertos
+                k.put(q, x - 1, yy, 10)
+                k.put(q, x + 3, yy, 9)
+    # a tabuleta com o nome da casa, ao lado da porta
+    for x, y, c in ((19, 22, 10), (20, 22, 10), (19, 23, 8), (20, 23, 9)):
+        k.put(q, x, y, c)
+    return q
+
+
+def casa_caiada_telhado(estilo):
+    q = k.novo(32, 32)
+    topo, alt = estagio4.ALT_TELHADO[estilo]
+    k.telhado(q, estilo, 0, 32, topo, alt, 56)
+    return q
+
+
 # ---------------------------------------------------------------- habitantes
 
 def vestir_e5(moldes):
@@ -131,9 +176,13 @@ ESCRIBA = [
 
 def gerar():
     pecas = {"estela": estela(), "biblioteca_parede": biblioteca_parede(),
-             "templo_escrita_parede": estagio4.templo_colunas_parede(inscricao=True)}
+             "templo_escrita_parede": estagio4.templo_colunas_parede(inscricao=True),
+             "casa_caiada_parede": casa_caiada_parede()}
     for e in k.CULTURAS:
         pecas[f"biblioteca_telhado_{e}"] = biblioteca_telhado(e)
+        pecas[f"casa_caiada_telhado_{e}"] = casa_caiada_telhado(e)
+    pecas["casa_caiada"] = k.sobrepor(pecas["casa_caiada_parede"], pecas["casa_caiada_telhado_telha"])
+    pecas["casa_caiada_ruina"] = k.arruinar(pecas["casa_caiada"], 55, telhado_ate=13)
     pecas["biblioteca"] = k.sobrepor(pecas["biblioteca_parede"], pecas["biblioteca_telhado_telha"])
     pecas["templo_escrita"] = k.sobrepor(pecas["templo_escrita_parede"],
                                          estagio4.templo_colunas_telhado("telha"),
@@ -160,10 +209,11 @@ def principal():
         k.gravar(px, AQUI / f"{nome}.png")
     for nome, qs in folhas.items():
         k.gravar(k.folha_quadros(qs), AQUI / f"{nome}.png")
-    itens = [(n, pecas[n]) for n in ("biblioteca", "biblioteca_ruina", "templo_escrita", "estela")]
+    itens = [(n, pecas[n]) for n in ("casa_caiada", "casa_caiada_ruina", "biblioteca", "biblioteca_ruina",
+                                     "templo_escrita", "estela")]
     itens += [("t", q) for q in folhas["tabuletas_4v"]]
     itens += [("p", folhas[n][0]) for n in ("adulto_e5_parado_2q", "adulto_e5_andar_4q", "escriba_sentado_2q")]
-    k.amostra_pecas(itens, 220, saida=AQUI / "amostra_estagio5.png")
+    k.amostra_pecas(itens, 290, saida=AQUI / "amostra_estagio5.png")
     print("estágio 5:", ", ".join(pecas), "+", ", ".join(folhas))
 
 

@@ -55,6 +55,24 @@
    "fumaca_x": 19,
    "fumaca_base_y": 0
   },
+  "casa_caiada_telhado_palha": {
+   "chamine_x": 21,
+   "chamine_y": 1,
+   "fumaca_x": 19,
+   "fumaca_base_y": 0
+  },
+  "casa_caiada_telhado_telha": {
+   "chamine_x": 21,
+   "chamine_y": 4,
+   "fumaca_x": 19,
+   "fumaca_base_y": 3
+  },
+  "casa_caiada_telhado_tabuas": {
+   "chamine_x": 21,
+   "chamine_y": 1,
+   "fumaca_x": 19,
+   "fumaca_base_y": 0
+  },
   "casa_tijolo_telhado_palha": {
    "chamine_x": 21,
    "chamine_y": 1,

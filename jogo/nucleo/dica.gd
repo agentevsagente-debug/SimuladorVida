@@ -498,13 +498,20 @@ func _acontecimentos(cands: Array) -> void:
 				if e.tipo == "fartura_divina" and g.tem_crenca:
 					f2.push_front(_f("{o:d} encheu nossos cestos", {"d": deus}))
 				_nec(cands, forca - 1, f2 if adulto else ["Comi até a barriga estufar!"], "contente")
+			"prece_contrariada":
+				var pediu: String = "Pedi " + {"seca": "chuva", "fome": "comida", "doenca": "a cura", "frio": "calor", "guerra": "proteção"}.get(
+					e.dados.get("necessidade", ""), "ajuda")
+				_nec(cands, 10 if e.participantes.has(p.id) and dias <= 2 else forca, [_f("{o:d} fez o contrário do que pedimos", {"d": deus}),
+					pediu + ", e veio o castigo", _f("O que fizemos {a:d}?", {"d": deus})] if adulto
+					else [_f("{o:d} está {d:zangado|zangada} com a gente", {"d": deus}), "Por que o céu fez isso?"],
+					"revoltad" + a if p.fe < 0.0 else "aflit" + a, _f("sonha que {o:d} lhe vira as costas", {"d": deus}))
 			"prece_atendida":
 				if g.tem_crenca:
-					_nec(cands, forca, [_f("{o:d} ouviu a nossa prece", {"d": deus}),
+					_nec(cands, 10 if e.participantes.has(p.id) and dias <= 2 else forca, [_f("{o:d} ouviu a nossa prece", {"d": deus}),
 						_f("Vou agradecer {a:d} hoje", {"d": deus})], "grat" + a)
 			"prece_sem_resposta", "silencio", "desamparo":
 				if g.tem_crenca:
-					_nec(cands, forca, [_f("Por que {o:d} não responde?", {"d": deus}),
+					_nec(cands, 10 if e.participantes.has(p.id) and dias <= 2 else forca, [_f("Por que {o:d} não responde?", {"d": deus}),
 						_f("{o:d} nos esqueceu", {"d": deus})] if adulto
 						else [_f("{o:d} está bravo com a gente?", {"d": deus})], "aflit" + a)
 			"ataque", "guerra_inicio":

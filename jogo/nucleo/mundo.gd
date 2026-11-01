@@ -2848,10 +2848,22 @@ func _preces_do_dia() -> void:
 			elif dia - pr["dia"] > 14 and nec != "doenca":
 				_prece_sem_resposta(g, nec, null)
 		for nec in necessidades:
-			if not g.preces.has(nec):
-				_abrir_prece(g, nec, evento(g.doenca_evento) if nec == "doenca" else null, -1)
+			# Depois de uma prece sem resposta ou contrariada, o povo espera uns dias para pedir de novo.
+			if not g.preces.has(nec) and dia - preces_fechadas.get(g.id, {}).get(nec, -100) >= ESPERA_PARA_REZAR:
+				var origem: Evento = evento(g.doenca_evento) if nec == "doenca" else (_ultimo_ataque(g) if nec == "guerra" else null)
+				_abrir_prece(g, nec, origem, -1)
 		if g.exigente and g.preces.is_empty() and chance(0.03):
 			_abrir_prece(g, "banal", null, -1)
+
+
+## O último ataque que o povo sofreu ou deu (para a prece de guerra saber quem é o inimigo).
+func _ultimo_ataque(g: Grupo) -> Evento:
+	var lista: Array = do_tipo("ataque")
+	for i in range(lista.size() - 1, -1, -1):
+		var e: Evento = lista[i]
+		if e.grupo == g.id or e.outro_grupo == g.id:
+			return e
+	return null
 
 
 func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
@@ -2884,6 +2896,22 @@ func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
 	if alvo != -1:
 		part.append(alvo)
 	var primeira := not _ja_houve("prece", g.id) and not g.origem.has("pai")
+	# A mesma necessidade, rezada de novo pelo mesmo povo em menos de um ano: vira nota, não chamado.
+	var repetida := false
+	var lista_preces: Array = do_tipo("prece")
+	for i in range(lista_preces.size() - 1, -1, -1):
+		var ant: Evento = lista_preces[i]
+		if dia_abs() - _dia_do_evento(ant.id) > DIAS_ANO:
+			break
+		if ant.grupo == g.id and ant.dados.get("necessidade", "") == nec:
+			repetida = true
+			break
+	# Na guerra, o inimigo é o outro povo do ataque (quem atacou e perdeu também reza).
+	var inimigo := -1
+	var atacou := false
+	if origem != null and nec == "guerra":
+		atacou = origem.grupo == g.id
+		inimigo = origem.outro_grupo if atacou else origem.grupo
 	var imp := 6 if primeira else 3
 	if nec == "banal":
 		primeira = false
@@ -2892,7 +2920,7 @@ func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
 		imp = 3
 	var e := registrar("prece", "social", imp, g.zona, g.id, part, {"necessidade": nec,
 		"alvo": alvo, "primeira": primeira, "deus": g.nome_deus, "genero_deus": g.genero_deus,
-		"inimigo": origem.grupo if origem != null and nec == "guerra" else -1})
+		"inimigo": inimigo, "atacou": atacou, "repetida": repetida and not primeira and alvo == -1})
 	g.preces[nec] = {"evento": e.id, "dia": dia_abs(), "autor": autor.id, "alvo": alvo}
 
 
@@ -2947,6 +2975,7 @@ func _ano_da_primeira_prece(g: Grupo) -> int:
 func _prece_sem_resposta(g: Grupo, nec: String, morte: Evento) -> void:
 	var pr: Dictionary = g.preces[nec]
 	g.preces.erase(nec)
+	_fechar_prece(g, nec)
 	g.silencios += 1
 	g.atendidas_seguidas = 0
 	if g.dependente and not _ja_houve("desamparo", g.id):
@@ -3520,7 +3549,7 @@ func _pessoa_perto(x: float) -> Pessoa:
 # age por usar_poder(), acompanhar() e avancar_hora().
 
 ## Eventos que pedem a atenção do deus.
-const TIPOS_CHAMADO := ["prece", "fome_inicio", "doenca_inicio", "ataque", "os_ultimos",
+const TIPOS_CHAMADO := ["prece", "prece_contrariada", "fome_inicio", "doenca_inicio", "ataque", "os_ultimos",
 	"silencio", "culpado", "conhecimento_perdido", "fim_do_mundo"]
 
 
@@ -4104,6 +4133,16 @@ func posicao_de(pessoa_id: int) -> float:
 	return ro.instante(pessoa_id, hora() * 60.0 + 30.0)["x"]
 
 
+## Onde um gesto do deus atinge o povo inteiro: a fogueira, puxada para dentro da zona do povo
+## (a fogueira pode ficar na divisa, e um gesto do outro lado cai na zona vizinha).
+func _fogo_do_povo(g: Grupo) -> float:
+	var faixa: Array = Cotidiano.FAIXAS[g.zona]
+	for o in Cotidiano.construcoes_do_grupo(self, g):
+		if o["tipo"] == "fogueira":
+			return clampf(o["x"], faixa[0] + 2.0, faixa[1] - 2.0)
+	return Cotidiano.centro_da_zona(g.zona)
+
+
 ## Preces esperando resposta: os sinais da moldura.
 var _preces_chave: Array = []
 var _preces: Array = []
@@ -4124,7 +4163,9 @@ func preces_abertas() -> Array:
 				_textos_prece[e.id] = [_cronista.texto_prece(e), _cronista.texto_curto(e)]
 			r.append({"evento": e.id, "grupo": g.id, "autor": pr["autor"], "alvo": pr["alvo"],
 				"necessidade": nec, "desde": pr["dia"], "dias": dia_abs() - pr["dia"],
-				"x": posicao_de(pr["autor"]), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1]})
+				"x": posicao_de(pr["autor"]), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1],
+				"x_povo": _fogo_do_povo(g), "inimigo": e.dados.get("inimigo", -1), "atendem": PODERES_QUE_ATENDEM.get(nec, []),
+				"contrariam": PODERES_QUE_CONTRARIAM.get(nec, [])})
 	_preces = r
 	_preces_chave = chave
 	return r
@@ -4132,7 +4173,7 @@ func preces_abertas() -> Array:
 
 ## Camada de atenção de um evento: "ambiente", "nota" ou "chamado".
 func camada(e: Evento) -> String:
-	if e.tipo == "prece" and e.dados.get("necessidade", "") == "banal":
+	if e.tipo == "prece" and (e.dados.get("necessidade", "") == "banal" or e.dados.get("repetida", false)):
 		return "nota"
 	if e.importancia >= 8 or TIPOS_CHAMADO.has(e.tipo):
 		return "chamado"
@@ -4161,8 +4202,86 @@ func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary
 	if not PODERES.has(poder):
 		return {"ok": false, "motivo": "poder desconhecido: " + poder}
 	x = clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1)
-	return _poder({"poder": poder, "zona": Cotidiano.zona_em(x), "x": x,
+	var r := _poder({"poder": poder, "zona": Cotidiano.zona_em(x), "x": x,
 		"intensidade": clampf(intensidade, 0.0, 1.0), "alvo": -1, "texto": ""})
+	if r.get("ok", false) and r.get("evento", -1) >= 0:
+		_preces_diante_do_gesto(evento(r["evento"]), poder)
+	return r
+
+
+## Os poderes que atendem cada prece e os que a contrariam (para a apresentação sugerir; veja
+## `preces_abertas`). O frio e os pedidos pequenos não têm poder que os atenda.
+const PODERES_QUE_ATENDEM := {"seca": ["chuva"], "fome": ["fartura"], "doenca": ["cura"], "guerra": ["raio", "terremoto"],
+	"frio": [], "banal": []}
+const PODERES_QUE_CONTRARIAM := {"seca": ["seca", "fogo", "diluvio", "terremoto"], "fome": ["seca", "fogo", "diluvio", "terremoto"],
+	"doenca": ["raio", "fogo", "diluvio", "terremoto"], "guerra": ["fogo", "diluvio", "terremoto", "raio"],
+	"frio": ["diluvio", "terremoto", "fogo", "raio"], "banal": ["seca", "fogo", "diluvio", "terremoto", "raio"]}
+const ESPERA_PARA_REZAR := 10   # dias depois de uma prece sem resposta ou contrariada
+var preces_fechadas: Dictionary = {}   # id do povo -> {necessidade: dia em que a prece fechou sem ser atendida}
+
+
+func _fechar_prece(g: Grupo, nec: String) -> void:
+	if not preces_fechadas.has(g.id):
+		preces_fechadas[g.id] = {}
+	preces_fechadas[g.id][nec] = dia_abs()
+
+
+## Um gesto do deus (já feito) diante das preces abertas:
+## - um gesto que fere o povo que reza (seca, fogo, dilúvio ou terremoto na zona dele, ou um raio
+##   que mata alguém dele) contraria as preces abertas: o povo vê nisso uma resposta, e é "não";
+## - um gesto que fere o inimigo de uma prece de guerra (na zona do inimigo, longe de quem reza)
+##   atende essa prece.
+func _preces_diante_do_gesto(e: Evento, poder: String) -> void:
+	if e.causa != "divina":
+		return
+	var mortos := {}
+	for pid in e.participantes:
+		var p: Pessoa = pessoa(pid)
+		if p != null and not p.vivo:
+			mortos[p.grupo] = true
+	for g in grupos_vivos():
+		var contrariadas: Array = []
+		for nec in g.preces.keys():
+			if not g.preces.has(nec):
+				continue
+			var pr: Dictionary = g.preces[nec]
+			var ferido: bool = (poder in ["seca", "fogo", "diluvio", "terremoto"] and e.zona == g.zona) or (poder == "raio" and mortos.has(g.id))
+			if nec == "guerra" and not ferido:
+				var ini: Grupo = grupo(evento(pr["evento"]).dados.get("inimigo", -1))
+				if ini != null and not ini.extinto and e.zona == ini.zona and (poder in ["seca", "fogo", "diluvio", "terremoto"]
+						or (poder == "raio" and mortos.has(ini.id))):
+					_resolver_prece(g, "guerra", e)
+					continue
+			if ferido and PODERES_QUE_CONTRARIAM.get(nec, []).has(poder):
+				contrariadas.append(nec)
+		if not contrariadas.is_empty():
+			_contrariar_preces(g, contrariadas, e, poder)
+
+
+## O povo pediu uma coisa (ou mais) e veio o contrário, das mãos do deus: a fé de quem rezou
+## despenca, a do povo cai, e o silêncio pesa em dobro. Um evento só por gesto e por povo.
+func _contrariar_preces(g: Grupo, necs: Array, resposta: Evento, poder: String) -> void:
+	var pr: Dictionary = g.preces[necs[0]]
+	for nec in necs:
+		g.preces.erase(nec)
+		_fechar_prece(g, nec)
+	g.silencios += 2
+	g.atendidas_seguidas = 0
+	if g.dependente:
+		g.dependente = false
+		g.exigente = false
+	var autor: Pessoa = pessoas.get(pr["autor"])
+	if autor != null and autor.vivo:
+		autor.fe = clampf(autor.fe - 0.4, -1.0, 1.0)
+		autor.ferida_pelo_deus = true
+	for p in _membros(g):
+		p.fe = clampf(p.fe - (0.02 if p.tem("devoto") else 0.1), -1.0, 1.0)
+	var part: Array = [pr["autor"]] + ([pr["alvo"]] if pr["alvo"] != -1 and pessoas.has(pr["alvo"]) else [])
+	registrar("prece_contrariada", "divina", 7, g.zona, g.id, part, {"necessidade": necs[0], "necessidades": necs,
+		"prece": pr["evento"], "resposta": resposta.id, "poder": poder})
+	if g.silencios >= 3:
+		g.silencios = 0
+		_explicar_silencio(g)
 
 
 # ---------------------------------------------------------------- linhagem acompanhada

@@ -388,8 +388,9 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 
 | Tipo | Quando | Camada |
 |---|---|---|
-| `prece` | alguém pede ao deus (seca, fome, doença, frio, guerra) | chamado |
+| `prece` | alguém pede ao deus (seca, fome, doença, frio, guerra). `dados.repetida`: a mesma necessidade, pelo mesmo povo, em menos de um ano (camada "nota", não "chamado"); `dados.inimigo` (guerra): o outro povo do último ataque; `dados.atacou`: quem reza atacou e perdeu (pede vitória, não proteção) | chamado (nota, se repetida ou banal) |
 | `prece_atendida`, `prece_sem_resposta` | a necessidade passou, ou não passou (ou quem foi pedido morreu) | nota |
+| `prece_contrariada` | o deus fez o contrário do que o povo pedia: um gesto que fere o povo que reza (seca, fogo, dilúvio ou terremoto na zona dele, ou um raio que mata alguém dele). Um evento por gesto e por povo, com todas as preces que ele contrariou (`dados.necessidades`), `dados.poder` e `dados.resposta` (o evento do gesto). A fé de quem rezou cai 0,4, a do povo 0,1 (os devotos, 0,02), o silêncio conta em dobro, e quem rezou fica ferido pelo deus | chamado |
 | `fome_inicio`, `doenca_inicio`, `ataque` | começa uma fome, uma doença ou uma luta | chamado |
 | `os_ultimos` | restam 5 pessoas ou menos no mundo | chamado (o mais intenso) |
 | `fim_do_mundo` | não resta ninguém | chamado |
@@ -429,11 +430,17 @@ As preces que ainda esperam resposta. São os sinais na moldura e continuam aqui
 | `alvo` | por quem reza (o filho doente), ou -1 |
 | `necessidade` | "seca", "fome", "doenca", "frio", "guerra" ou "banal". Uma prece banal ("que amanhã faça sol para a pesca") é de um povo que se acostumou a ser atendido. Ela some sozinha em alguns dias, sem contar como silêncio, e tem camada "nota", não "chamado". |
 | `desde`, `dias` | dia absoluto em que começou e há quantos dias espera |
-| `x` | onde está quem reza agora |
+| `x` | onde está quem reza agora (pode estar trabalhando longe, até em outra zona) |
+| `x_povo` | onde um gesto do deus atinge o povo que reza: a fogueira, dentro da zona do povo. É aqui que um poder atende ou contraria a prece (não em `x`) |
+| `inimigo` | na prece de guerra, o id do povo inimigo (-1 se não se sabe) |
+| `atendem` | os poderes que atendem a prece: seca, `["chuva"]`; fome, `["fartura"]`; doença, `["cura"]` (no doente que é `alvo`; sem alvo, só a cura imposta, repetida, cura todos); guerra, `["raio", "terremoto"]`, **no povo inimigo**; frio e banal, `[]` (nenhum poder atende: o frio passa com o inverno) |
+| `contrariam` | os poderes que contrariam a prece quando caem no povo que reza: seca e fome, `["seca", "fogo", "diluvio", "terremoto"]`; doença, frio e guerra, também o raio que mata alguém do povo. Na guerra, raio e terremoto atendem no inimigo e contrariam no próprio povo |
 | `texto` | a prece em português, sempre a mesma para o mesmo evento: «Que Rega, que a chuva volte.» |
 | `curto` | uma frase de até 40 caracteres para a dica do cursor: "Kurpeya pede comida", "Viem pede a cura de Lou" |
 
 Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o ponto cego do documento funcional.
+
+**O que acontece com a prece.** Atendida por um poder (a chuva na seca, a fartura na fome, a cura no doente, o raio ou o terremoto no inimigo): `prece_atendida`, a fé sobe, e o povo agradece. Atendida pelo acaso (a necessidade passou sozinha): `prece_atendida` com `falso_milagre`, e o povo agradece do mesmo jeito. Sem resposta em 14 dias: `prece_sem_resposta`, a fé cai, e três silêncios viram uma explicação (`silencio`). Contrariada: `prece_contrariada` (acima). Depois de uma prece sem resposta ou contrariada, o povo espera 10 dias para pedir de novo a mesma coisa (`Mundo.ESPERA_PARA_REZAR`). Quem rezou pensa no desfecho por 2 dias (veja a dica: "O Que Nega ouviu a nossa prece", "Pedi chuva, e veio o castigo", "O Que Nega nos esqueceu").
 
 ## Poderes
 
@@ -602,6 +609,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido), a estante (índice e livros) e o arquivo dos antigos (cortado, ausente; abandonar apaga ele também). |
 | `testar_antigos.gd` | O arquivo dos antigos não muda o mundo: a mesma semente sem arquivar, arquivando, e salva e carregada a cada 50 anos (também entre as fatias da virada), comparando crônica, sorteio, passo, eventos, população e livros (`-- <semente> <anos> [nenhum\|caprichoso] [ano_do_fim]`). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
+| `preces.gd` | As preces e os chamados vistos como jogador: 3 mundos de 50 anos em três modos (o deus calado; o que atende cada prece com o poder que faz sentido; e o que faz o contrário), com as preces por década, os chamados por tipo e a reação a cada desfecho (crônica, memória e dica de quem rezou, no dia seguinte). Grava em `ferramentas_sim/preces/`, com um LEIAME para a apresentação (`-- <semente> <modo>`). |
 | `cronica_estagios.gd` | Roda um mundo até algum povo chegar ao estágio 6 e grava a crônica do primeiro estágio 3 até 60 anos depois, mais a crônica do povo que chegou lá, para ler (`-- <semente> [ano_limite] [saida.md]`). Nas sementes 1, 3, 4, 5 e 6, o estágio 6 chega entre os anos 114 e 204. |
 | `testar_dica.gd` | Imprime as dicas (`fazendo`, `pensamento`, `humor`) de pessoas em 10 mundos, anos e horas diferentes (até um de 244 pessoas no ano 286), e a dica das cabanas às 23h, e confere: nada vazio, pensamento até 60 caracteres e sem modelo por preencher, nada sobre quem joga, quem dorme com humor de sono, duas pessoas nunca com a mesma frase na mesma hora (nos mundos de até 60 pessoas; nos maiores, só entre povos, quando as frases acabam), a mesma pessoa nunca voltando a uma frase de outro bloco de 2 horas do mesmo dia, ninguém pensando na praia, em pescar ou em brincar enquanto já está ali ou fazendo aquilo, ninguém com a mesma frase 8 horas seguidas (em povos de até 40), o sonho da cabana como narração, o sorteio do mundo intocado; e mede o custo da primeira consulta do dia e da hora. |
 | `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar; das 6h às 20h, a cada hora, um acontecimento legível (alguém atravessando 40 px ou mais com carga ou ferramenta, crianças correndo, um incidente ou a caçada); de 0h às 4h, algo além do vigia (alguém que acorda, as brasas, um bicho da noite); ninguém parado a menos de 6 px do centro da fogueira do seu povo; durante a caçada, ninguém de fora dela parado a menos de 20 px do porco; de dia (6h às 17h), ninguém de pé, deitado, sentado no fogo ou conversando no mesmo ponto por mais de 21 min, fora das cenas; à tarde, em média uma conversa a cada 20 min ou menos num povo de 12 pessoas (a média é impressa). Os 40% contam gente inteira, arredondando para cima: de 12 pessoas, até 5 (41,7%) na mesma ação passam. Mostra a tabela hora a hora da semente 1, dia 4. |

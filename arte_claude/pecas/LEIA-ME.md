@@ -159,11 +159,14 @@ São os efeitos dos 5 poderes restantes. `amostra_efeitos_fase2_4x.png` mostra t
 | `../montagem/ceu_eclipse.png` | 480 × 160 | | **presságio**: céu do eclipse total, de dia, com a coroa e um anel de entardecer no horizonte |
 | `cura_luz_4q` | 16 × 24 | 4 | **cura**: luz suave que desce sobre quem é curado. A base fica na linha 23, nos pés da pessoa. |
 | `cura_brilho_4q` | 8 × 8 | 4 | **cura**: brilho verde-claro solto |
+| `fogo_brando_descer_4q` | 16 × 32 | 4 | **fogo brando** (o fogo em intensidade baixa, que atende a prece de frio): uma coluna de luz morna desce do céu sobre a fogueira, com as bordas pontilhadas em âmbar e fagulhas douradas descendo em espiral, **sem chama**. A base (linha 31, coluna 7 e 8) vai no centro da fogueira. Mostre por 1,5 a 2 s, em ciclo. |
+| `fogo_brando_acender_4q` | 16 × 8 | 4 | **fogo brando**: o instante em que a luz chega: um ponto dourado, um anel de fagulhas, as fagulhas subindo e sumindo (0,15 s por quadro, uma vez). A base (linha 7) é a base da fogueira. Logo depois, a fogueira passa a acesa. |
+| `calor_brando_4q` | 32 × 16 | 4 | **fogo brando**: o calor visível em volta da fogueira acesa pelo deus, enquanto ela queima (ou por umas horas de jogo): tracinhos mornos subindo dos dois lados, uma fagulha clara de vez em quando e um halo pontilhado no chão que pulsa. O meio (colunas 12 a 19) fica livre para a fogueira. A base (linha 15) é o chão, com o centro na coluna 16. Desenhe atrás das pessoas. |
 
 **À noite:**
 - não passam pela tabela `noite`, porque emitem luz: raio, impacto, chamas, brasas, fartura, sonho e vagalume;
 - usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas;
-- da fase 2, emitem luz cometa, eclipse e cura; seca, calor, chuva forte, cortina, enchente, destroços, fenda, poeira do terremoto e pedras usam a tabela `noite`.
+- da fase 2, emitem luz cometa, eclipse, cura e o fogo brando (`fogo_brando_*` e `calor_brando_4q`); seca, calor, chuva forte, cortina, enchente, destroços, fenda, poeira do terremoto e pedras usam a tabela `noite`.
 
 ## 5. Sinais de prece (`sinais/`)
 
@@ -357,6 +360,8 @@ Cada pasta tem uma `amostra_estagioN_4x.png`.
 |---|---|---|
 | `tabuletas_4v` | 8 × 8 | 4 variações: tabuleta de barro, rolo, estela pequena e pilha de tabuletas |
 | `estela` | 8 × 16 | pedra escrita |
+| `casa_caiada` (`_parede`, `_telhado_<cultura>`, `_luz`) | 32 × 32 | **a casa do estágio 5** (auditoria 7): paredes caiadas, cunhais de pedra, rodapé ocre, o friso escrito da biblioteca sob o telhado, porta em arco e janelas com postigos. Mesmo encaixe da `casa_enxaimel` (parede da linha 13 à 31). Antes, o estágio 5 usava a casa do 4 e não se distinguia dele. |
+| `casa_caiada_ruina` | 32 × 32 | a ruína dela; com o mato em `natureza/` |
 | `biblioteca` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | o arquivo: pórtico de colunas, friso escrito e estantes com tabuletas e rolos |
 | `templo_escrita` (`_parede`) | 32 × 32 | o templo de colunas com friso escrito; usa os telhados e símbolos de `estagio4/templo_colunas_*` |
 | `biblioteca_ruina`, `templo_escrita_ruina` | | a ruína do arquivo tem tabuletas espalhadas |
@@ -601,7 +606,7 @@ O `estacoes/amostra_construcoes_inverno_4x.png` mostra as construções nevadas.
 | `estagio6/roda_dagua_4q` (16 × 16, gira 11,25° por quadro e respinga) | igual ao verão | igual ao verão | parada e congelada: os 4 quadros são iguais, com gelo e pingentes |
 
 **Noite nas construções** (`luzes/luzes.py`):
-- `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
+- `<estagio>/<casa>_luz.png`: só as janelas acesas, do mesmo tamanho e encaixe da casa. Valem para `estagio2/casa_taipa`, `estagio3/casa_pedra`, `estagio4/casa_enxaimel`, `estagio5/casa_caiada` e `estagio6/casa_tijolo`. O motor desenha por cima da casa à noite e ao entardecer, sem a tabela `noite`, porque é luz. Também pode acender e apagar cada casa.
 - `luzes/chamine.png` (4 × 8): a chaminé de pedra.
 - `luzes/chamines.json`: para cada casa e cada um dos 3 telhados, onde vai a chaminé e de onde sai a fumaça, em coordenadas relativas ao canto da casa.
 - `luzes/fumaca_chamine_4q.png` (8 × 16): 3 baforadas cinzas, com o lado de cima claro, que nascem com 1 px na boca da chaminé (a última linha), crescem até 3 px, derivam para a direita e se desfazem em pedaços no alto. Os 4 quadros fecham o ciclo; deixe em loop, presa à chaminé. Use só no inverno, nas casas com lareira.
@@ -751,7 +756,8 @@ As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente 
 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 
-- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 21 folhas são as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **As folhas de sempre dos habitantes** (auditoria 7): `adulto_a_parado_2q`, `adulto_a_andar_4q`, `adulto_b_parado_2q`, `adulto_b_andar_4q`, `crianca_andar_4q`, `idoso_andar_4q`, `adulto_a_rezar_2q`, `adulto_a_colher_4q` e `adulto_a_sentado_1q` também têm a roupa do estágio, com o mesmo nome em `estagioN/`. São as que ficam mais tempo na tela: sem elas, um povo do estágio 6 andava e ficava parado com a roupa do estágio 1, e só as ações de 1x mostravam o chapéu. As `adulto_eN_*` continuam como amostra.
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 30 folhas são as 9 folhas de sempre dos habitantes (acima), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
 - **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
 - **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
 - **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).
@@ -776,6 +782,16 @@ A pesca é a cena do começo da tarde nos dias sem caçada (auditoria 6, T5). El
 Nas folhas de gente, os peixes usam 3 (dorso), 12 e 11 (corpo) e 31 (barriga), e o pano usa 11 e 12: nada de 8, 25, 26, 28 ou 30, que a troca de pele e cabelo muda. As de sempre (`pescar_4q`, com a vara, e `banhar_4q`, com a cuia) continuam valendo para o 10x e o 50x.
 
 **Estágios e inverno.** As 5 folhas de gente têm a roupa dos estágios 3 a 6 (seção 25) e a de inverno. No inverno fundo, com o lago congelado, não há pesca nem banho.
+
+## 27. Estandarte da vila (`culturas/estandarte.py`)
+
+Um estandarte pequeno no alto da casa principal de cada povo, na cor da roupa do povo e com o símbolo do templo, para cada vila ler como um lugar mesmo sem templo (auditoria 7, C1). Não confundir com o estandarte de guerra (`objetos/estandarte_<símbolo>`, 8 × 24, seção 18), que alguém carrega na guerra.
+
+| Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|
+| `objetos/estandarte_<roupa>_<símbolo>_2q` | 4 × 8 | 2 | `<roupa>` é `turquesa`, `rosa` ou `lilas` e `<símbolo>` é `sol`, `lua` ou `arvore`, da `aparencia` do povo: são 9 folhas, com as cores já prontas (não passe pela troca). O quadro 0 é a bandeira parada; o 1, a ponta solta caída ao vento. Alterne a cada 0,5 a 1 s quando venta (mais rápido com chuva e tempestade) ou fique no 0. O mastro é a coluna 0 e a base é a linha 7 (o pé do mastro): ponha-a na cumeeira da casa principal, no meio do telhado, em todos os estágios (na cabana do estágio 1, na ponta dos galhos). Espelhe junto com a casa, se for o caso. |
+
+A bandeira tem o rabo de andorinha na ponta solta e a barra de baixo mais escura. Os símbolos: o sol é uma cruz dourada com o centro claro, a lua é um crescente claro e a árvore é a copa verde com o tronco. De noite, passa pela tabela `noite`, como as casas. `culturas/amostra_estandartes_4x.png` mostra os 9, parados e ao vento, sobre o dia, o entardecer e a noite.
 
 ## Critérios
 
