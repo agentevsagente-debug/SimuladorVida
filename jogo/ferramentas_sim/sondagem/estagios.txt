@@ -4,27 +4,27 @@ Ano em que o primeiro povo do mundo chega ao estágio (o mundo começa no 1, col
 
 | Estágio | Chegaram | Mínimo | Mediana | Máximo |
 |---|---|---|---|---|
-| 2, agricultura | 10 de 10 | 15 | 34 | 66 |
-| 3, pedra | 10 de 10 | 41 | 75.5 | 174 |
-| 4, metal | 10 de 10 | 50 | 102.5 | 220 |
-| 5, escrita | 10 de 10 | 66 | 122.5 | 227 |
-| 6, engenharia | 10 de 10 | 78 | 145 | 256 |
+| 2, agricultura | 10 de 10 | 15 | 34 | 62 |
+| 3, pedra | 10 de 10 | 41 | 75.5 | 130 |
+| 4, metal | 10 de 10 | 50 | 102.5 | 259 |
+| 5, escrita | 10 de 10 | 66 | 128 | 295 |
+| 6, engenharia | 9 de 10 | 78 | 152 | 184 |
 
 Quanto o mundo fica em cada estágio, do primeiro povo que chega a ele ao primeiro que chega ao seguinte (anos):
 
 | Estágio | Mundos | Mínimo | Mediana | Máximo |
 |---|---|---|---|---|
-| 1, coleta | 10 | 14 | 33 | 65 |
-| 2, agricultura | 10 | 8 | 40.5 | 158 |
-| 3, pedra | 10 | 9 | 27.5 | 55 |
-| 4, metal | 10 | 7 | 19 | 37 |
-| 5, escrita | 10 | 4 | 16 | 38 |
+| 1, coleta | 10 | 14 | 33 | 61 |
+| 2, agricultura | 10 | 8 | 42 | 95 |
+| 3, pedra | 10 | 9 | 26 | 170 |
+| 4, metal | 10 | 9 | 23.5 | 36 |
+| 5, escrita | 9 | 4 | 12 | 38 |
 
 Quanto cada povo fica em cada estágio, quando passa ao seguinte (anos; povos que nasceram de outro só contam do estágio em que nasceram em diante):
 
 | Estágio | Povos | Mínimo | Mediana | Máximo |
 |---|---|---|---|---|
-| 2, agricultura | 11 | 3 | 29 | 63 |
-| 3, pedra | 22 | 3 | 30.5 | 121 |
-| 4, metal | 24 | 0 | 17 | 84 |
-| 5, escrita | 24 | 1 | 13.5 | 59 |
+| 2, agricultura | 12 | 2 | 40.5 | 95 |
+| 3, pedra | 24 | 6 | 25 | 76 |
+| 4, metal | 24 | 6 | 19 | 62 |
+| 5, escrita | 28 | 1 | 13.5 | 60 |

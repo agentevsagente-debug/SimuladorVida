@@ -1719,6 +1719,9 @@ func _tentar_descoberta(g: Grupo, k: int) -> void:
 			inventores.append(p)
 	var p_desc := 0.0012 * inventores.size()
 	var pressao := _pressao_do_tempo(g)
+	# Com o platô longo, um povo menor também chega lá (pedra com 12 pessoas, canais com 20).
+	var minimo3 := 12 if pressao > 0.0 else 18
+	var minimo6 := 20 if pressao > 0.0 else 30
 	if pressao > 0.0:
 		p_desc += pressao
 		if inventores.is_empty():
@@ -1728,7 +1731,7 @@ func _tentar_descoberta(g: Grupo, k: int) -> void:
 	var motivo := ""
 	match k:
 		3:
-			if g.membros.size() < 18:
+			if g.membros.size() < minimo3:
 				return
 			if _ja_houve_desde("terremoto", g.id, a - 4) or _ja_houve_desde("tempestade", g.id, a - 4) or _ja_houve_desde("diluvio", g.id, a - 4):
 				p_desc += 0.008
@@ -1744,7 +1747,7 @@ func _tentar_descoberta(g: Grupo, k: int) -> void:
 				p_desc += 0.008
 				motivo = "sacerdote"
 		6:
-			if g.membros.size() < 30:
+			if g.membros.size() < minimo6:
 				return
 			if a - g.fome_ultima_ano <= 5:
 				p_desc += 0.008
