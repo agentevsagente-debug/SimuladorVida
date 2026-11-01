@@ -55,6 +55,8 @@ const PECAS_MIUDAS := ["capim", "capim_seco", "arbusto", "arbusto_frutas", "pedr
 ## Árvores que o fogo do deus deixa carbonizadas, com a coluna do tronco.
 const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "pinheiro_b": 11, "pinheiro_fundo": 15}
 const ZOOM_SEGUIR := 2
+## Folga mínima entre construções vizinhas (auditoria 2, N1).
+const LOTE_FOLGA := 3.0
 
 var sim: Simulacao
 var modo_discreto := false
@@ -108,6 +110,7 @@ var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
 var _ceu_especial := ""    # "seca" ou "eclipse": troca o céu de dia
 var _eclipse_ate := -1
 var _seca_ate := -1          # a seca do deus amarela o céu logo depois do gesto
+var _larguras := {}          # peça -> largura do desenho (para os lotes)
 var _camera_aplicada := [-1, Vector2(-1, -1)]
 
 
@@ -438,6 +441,8 @@ func _montar_fixo() -> void:
 	var cor: Image = r.cor
 	var tag: Image = r.tag
 	_sup = r.sup
+	if not _modo_layout:  # depois do terreno, que diz onde é água
+		_encaixar_lotes(obras)
 	var agua_mascara := _mascara_agua(tag)
 
 	var frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
@@ -590,6 +595,62 @@ func _construcoes() -> Array:
 			r.append({"tipo": "cabana", "x": item["x"] + 8.0, "estagio": 1, "largura": 16, "grupo": -1})
 	r.append({"tipo": "fogueira", "x": _layout["fogueira"]["x"] + 8.0})
 	return r
+
+
+## Cada construção no seu lote (auditoria 2, N1), pela largura real da peça
+## (a arte é mais larga que a `largura` da API), com LOTE_FOLGA px entre
+## vizinhas e o menor deslocamento possível em relação ao `x` do núcleo (o
+## mesmo empacotamento das pessoas, com larguras diferentes). Se a vila não
+## couber entre a margem e a borda direita, a folga encolhe por igual e as
+## peças se encostam um pouco, sem amontoar numa ponta. O barco, na água, fica
+## de fora; o que o núcleo pôs na praia continua lá.
+func _encaixar_lotes(obras: Array) -> void:
+	var fila := obras.filter(func(o): return o.tipo != "barco")
+	if fila.size() < 2:
+		return
+	fila.sort_custom(func(a, b): return a.x < b.x)
+	var n := fila.size()
+	var w: Array = fila.map(func(o): return float(_largura_da_peca(o)))
+	var terra := 0
+	while terra < LARGURA - 1 and _na_agua(terra):
+		terra += 1
+	var ini: float = minf(terra + w[0] / 2.0, fila[0].x)
+	var fim: float = LARGURA - 4.0 - w[n - 1] / 2.0
+	var passos := []
+	var total := 0.0
+	for i in n - 1:
+		passos.append((w[i] + w[i + 1]) / 2.0 + LOTE_FOLGA)
+		total += passos[i]
+	var aperto := 1.0 if total <= fim - ini else (fim - ini) / total
+	var desloc := [0.0]
+	for i in n - 1:
+		desloc.append(desloc[i] + passos[i] * aperto)
+	# y = x - deslocamento precisa crescer: junta os vizinhos fora de ordem na média
+	var blocos := []  # [quantos, soma de y]
+	for i in n:
+		blocos.append([1, fila[i].x - desloc[i]])
+		while blocos.size() >= 2 and blocos[-2][1] / blocos[-2][0] > blocos[-1][1] / blocos[-1][0]:
+			var b: Array = blocos.pop_back()
+			blocos[-1] = [blocos[-1][0] + b[0], blocos[-1][1] + b[1]]
+	var i := 0
+	for bl in blocos:
+		var y: float = clampf(bl[1] / bl[0], ini, fim - desloc[n - 1])
+		for k in bl[0]:
+			fila[i].x = y + desloc[i]
+			i += 1
+
+
+func _largura_da_peca(o: Dictionary) -> int:
+	match o.tipo:
+		"fogueira", "roca":
+			return 16
+	var camadas := Obras.camadas(o.tipo, int(o.get("estagio", 1)), o.get("aparencia", {}))
+	if camadas.is_empty():
+		return int(o.get("largura", 16))
+	var caminho: String = camadas[0]
+	if not _larguras.has(caminho):
+		_larguras[caminho] = _imagem_obra({}, caminho).get_width()
+	return _larguras[caminho]
 
 
 func _sob_construcao(item: Dictionary, obras: Array) -> bool:

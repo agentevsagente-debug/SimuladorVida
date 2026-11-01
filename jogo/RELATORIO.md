@@ -2,6 +2,19 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 2 da sessão C (itens da B)
+
+| # | Defeito | O que foi feito | Captura |
+|---|---|---|---|
+| **N1** | Construções sobrepostas | Cada construção ganha um lote pela largura real da peça (a arte é mais larga que a `largura` da API), com 3 px de folga e o menor deslocamento possível do `x` do núcleo; é o mesmo empacotamento das pessoas, agora com larguras diferentes. Nada vai para o lago. **Limite:** com 4 povos no estágio 6, a vila soma cerca de 780 px de peças para uns 340 px de terra. Aí a folga encolhe por igual e as peças se encostam um pouco, em vez de uma cobrir a outra inteira. Para sumir de vez, a A precisaria espalhar os lotes ou limitar construções por povo. | `auditoria2-lotes-e-multidao.png` |
+| **N2** | Multidão cobrindo as construções | Fora da roda do fogo, aparecem até 28 parados. Os ociosos (parados sem cena, descansando, guardando, doentes) ficam "dentro de casa" primeiro, depois os outros sem cena; quem está numa cena sempre aparece. A roda do fogo tem duas fileiras, e o resto fica em casa. A escolha muda a cada dia. | idem |
+| **N3** | Poeira do terremoto em placas | Cada nuvem de poeira fica no seu trecho, com altura, quadro inicial, deriva, duração e lado sorteados. | `auditoria2-seca-terremoto.png` |
+| **N4** | Seca sem céu nem rachaduras | O gesto da seca amarela o céu na hora, por 4 a 10 horas de jogo conforme o grau; as rachaduras e o calor já vinham do gesto. | idem |
+| **N5** | Corte reto no amanhecer | A frente da troca de horário no céu virou uma faixa pontilhada de 14 linhas que vai rareando, sem emenda. O teste do céu sem grade continua passando (96 de 96). | `auditoria2-amanhecer.png` |
+| **N6** | Fiapos pontilhados soltos | O céu vivo usa as nuvens soltas da C (`arte/nuvens/`), em 3 tamanhos por camada. Cada nuvem anda numa vaga própria da sua camada e nunca encavala com a vizinha. A troca de clima (dia, entardecer, noite, tempestade, seca) só troca o desenho. | `auditoria2-nuvens-e-ceus.png` |
+| **N7** | Presságio sem cometa nem eclipse | O cometa e o eclipse aparecem; a API dá cometa abaixo de 0,34 de intensidade, eclipse abaixo de 0,67 e luzes acima. A auditoria usou a intensidade máxima, ou seja, luzes, e elas viraram cortinas de brilho ondulando pelo céu. | `auditoria2-pressagios.png` |
+| **N8** | Chuva com céu claro | Com chuva (do deus ou tempestade), o céu passa ao de tempestade, e no dilúvio, ao de dilúvio, de dia e no entardecer, com as nuvens de tempestade por cima. **Falta:** a enchente com os blocos `enchente_*` (a água subindo). | `auditoria2-nuvens-e-ceus.png` |
+
 ## Rotina nova (API v10 com `detalhe`)
 
 - **Detalhes com arte própria** (LEIA-ME da arte, seção 20):

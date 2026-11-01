@@ -24,6 +24,10 @@ const ESPACO := 7             # distância mínima entre pessoas paradas lado a 
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
 const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
+## Quantos parados aparecem fora da roda do fogo (auditoria 2, N2). Com mais
+## gente, os ociosos ficam "dentro de casa": não são desenhados, para a
+## multidão não cobrir as construções. Quem está numa cena sempre aparece.
+const PARADOS_MAX := 28
 ## Quanto o passo e a animação de andar aceleram em cada ritmo (10x e 50x).
 const ACELERA := {Simulacao.Ritmo.RAPIDO: 2.5, Simulacao.Ritmo.MUITO_RAPIDO: 4.0}
 ## Cor da roupa do povo -> índice em opcoes_troca().roupas ([28 turquesa, 27 rosa, 29 lilás]).
@@ -54,6 +58,7 @@ var _x := {}                  # id -> x desenhado
 var _virada := {}             # id -> espelho (olhando para a esquerda)
 var _acordou := {}            # id -> quando saiu da cabana (para saírem em fila)
 var _atras := {}              # ids na segunda fileira da roda
+var _ocultos := {}            # ids que ficam dentro de casa nesta hora (multidão)
 var _maior_sobreposicao := [0, 0]
 
 
@@ -114,6 +119,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		_x[id] = x
 		if acao == "dormir":
 			_acordou.erase(id)
+			continue
+		if _ocultos.has(id):
 			continue
 		# quem acorda junto sai da cabana em fila, não empilhado
 		if not _acordou.has(id):
@@ -400,6 +407,7 @@ func _objeto(folha: String, largura: int, x: int, base: int, codigo: int) -> Dic
 ## troca de lugar de um quadro para o outro. Quem anda não entra: vai direto.
 func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 	_atras.clear()
+	_ocultos.clear()
 	var desejos := []  # [x desejado, id]
 	var lugar := {}
 	var rodas := {}
@@ -427,8 +435,13 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 				desejos.append([lugares[i], roda[i]])
 			elif not lugares.is_empty():  # segunda fileira: entre dois da frente
 				var k := (i - lugares.size()) % lugares.size()
+				if i >= lugares.size() * 2:  # a roda tem duas fileiras; o resto fica em casa
+					_ocultos[roda[i]] = true
+					continue
 				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
 				_atras[roda[i]] = true
+	if desejos.size() > PARADOS_MAX:
+		desejos = _sem_os_ociosos(desejos, trechos)
 	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
 	# com muita gente, duas fileiras: os de índice ímpar ficam meio passo atrás,
 	# 2 px acima e desenhados antes, em vez de uma fila só de ponta a ponta
@@ -439,6 +452,36 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 		if denso and i % 2 == 1:
 			_atras[desejos[i][1]] = true
 	return lugar
+
+
+## Com parados demais, os ociosos (parados sem cena, descansando ou guardando)
+## vão para dentro de casa primeiro, depois os outros sem cena, até sobrarem
+## PARADOS_MAX. A escolha muda a cada dia, mas fica a mesma dentro do dia.
+func _sem_os_ociosos(desejos: Array, trechos: Dictionary) -> Array:
+	var dia: int = int(sim.tempo.get("dia", 1))
+	var ordem := desejos.duplicate()
+	ordem.sort_custom(func(a, b):
+		var pa := _prioridade(trechos[a[1]])
+		var pb := _prioridade(trechos[b[1]])
+		return pa < pb or (pa == pb and hash(a[1] * 31 + dia) < hash(b[1] * 31 + dia)))
+	var sobra := desejos.size() - PARADOS_MAX
+	var ficam := []
+	for d in ordem:
+		if sobra > 0 and _prioridade(trechos[d[1]]) < 2:
+			_ocultos[d[1]] = true
+			sobra -= 1
+		else:
+			ficam.append(d)
+	return ficam
+
+
+## 0: ocioso; 1: fazendo algo, sem cena; 2: numa cena (nunca some).
+func _prioridade(t: Dictionary) -> int:
+	if not t.cena.is_empty():
+		return 2
+	if t.acao == "parado" and t.get("detalhe", "") in ["", "descansar", "guardar", "doente"]:
+		return 0
+	return 1
 
 
 ## Lugares da roda em volta do fogo em f: dos dois lados, alternando, a partir
