@@ -6,7 +6,7 @@
  "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
  "regioes": {
   "acoes/abraco_4q": {
-   "x": 295,
+   "x": 393,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -16,7 +16,7 @@
    "quadro_h": 12
   },
   "acoes/acender_fogo_4q": {
-   "x": 265,
+   "x": 379,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -26,7 +26,7 @@
    "quadro_h": 12
   },
   "acoes/agachar_2q": {
-   "x": 901,
+   "x": 1000,
    "y": 275,
    "w": 16,
    "h": 12,
@@ -36,7 +36,7 @@
    "quadro_h": 12
   },
   "acoes/andar_cesto_4q": {
-   "x": 328,
+   "x": 426,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -46,7 +46,7 @@
    "quadro_h": 12
   },
   "acoes/andar_trouxa_4q": {
-   "x": 361,
+   "x": 459,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -56,7 +56,7 @@
    "quadro_h": 12
   },
   "acoes/banhar_4q": {
-   "x": 394,
+   "x": 492,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -66,7 +66,7 @@
    "quadro_h": 12
   },
   "acoes/bocejar_4q": {
-   "x": 427,
+   "x": 525,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -76,7 +76,7 @@
    "quadro_h": 12
   },
   "acoes/buscar_agua_4q": {
-   "x": 460,
+   "x": 558,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -86,7 +86,7 @@
    "quadro_h": 12
   },
   "acoes/buscar_agua_forte_4q": {
-   "x": 314,
+   "x": 428,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -96,7 +96,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_amarrar_4q": {
-   "x": 363,
+   "x": 477,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -106,8 +106,8 @@
    "quadro_h": 12
   },
   "acoes/cacar_apontar_2q": {
-   "x": 918,
-   "y": 275,
+   "x": 1,
+   "y": 288,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -116,7 +116,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_arremessar_4q": {
-   "x": 493,
+   "x": 591,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -126,7 +126,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_arremessar_forte_4q": {
-   "x": 412,
+   "x": 526,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -136,7 +136,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_comemorar_4q": {
-   "x": 461,
+   "x": 575,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -146,7 +146,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_espreitar_4q": {
-   "x": 526,
+   "x": 624,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -156,7 +156,7 @@
    "quadro_h": 12
   },
   "acoes/cacar_espreitar_forte_4q": {
-   "x": 510,
+   "x": 624,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -166,7 +166,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_agua_forte_4q": {
-   "x": 559,
+   "x": 657,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -176,7 +176,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_caca_4q": {
-   "x": 592,
+   "x": 690,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -186,7 +186,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_caca_forte_4q": {
-   "x": 625,
+   "x": 723,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -196,7 +196,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_cesto_4q": {
-   "x": 658,
+   "x": 756,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -206,7 +206,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_cesto_cabeca_4q": {
-   "x": 691,
+   "x": 789,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -216,7 +216,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_cesto_cabeca_forte_4q": {
-   "x": 724,
+   "x": 822,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -226,7 +226,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_estandarte_arvore_4q": {
-   "x": 559,
+   "x": 673,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -236,7 +236,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_estandarte_lua_4q": {
-   "x": 608,
+   "x": 722,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -246,7 +246,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_estandarte_sol_4q": {
-   "x": 657,
+   "x": 771,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -256,7 +256,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_lenha_4q": {
-   "x": 757,
+   "x": 855,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -266,7 +266,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_morto_4q": {
-   "x": 790,
+   "x": 888,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -276,7 +276,7 @@
    "quadro_h": 12
   },
   "acoes/carregar_peixe_forte_4q": {
-   "x": 706,
+   "x": 820,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -286,7 +286,7 @@
    "quadro_h": 12
   },
   "acoes/casal_direita_andar_4q": {
-   "x": 823,
+   "x": 921,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -296,7 +296,7 @@
    "quadro_h": 12
   },
   "acoes/casal_esquerda_andar_4q": {
-   "x": 856,
+   "x": 954,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -306,7 +306,7 @@
    "quadro_h": 12
   },
   "acoes/catar_lenha_4q": {
-   "x": 889,
+   "x": 987,
    "y": 262,
    "w": 32,
    "h": 12,
@@ -316,7 +316,7 @@
    "quadro_h": 12
   },
   "acoes/catar_lenha_forte_4q": {
-   "x": 755,
+   "x": 869,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -326,36 +326,6 @@
    "quadro_h": 12
   },
   "acoes/cavar_raiz_4q": {
-   "x": 922,
-   "y": 262,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "acoes/cocar_cabeca_4q": {
-   "x": 955,
-   "y": 262,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "acoes/colher_arbusto_4q": {
-   "x": 988,
-   "y": 262,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "acoes/construir_4q": {
    "x": 1,
    "y": 275,
    "w": 32,
@@ -365,7 +335,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/contar_historia_4q": {
+  "acoes/cocar_cabeca_4q": {
    "x": 34,
    "y": 275,
    "w": 32,
@@ -375,7 +345,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/conversar_falar_4q": {
+  "acoes/colher_arbusto_4q": {
    "x": 67,
    "y": 275,
    "w": 32,
@@ -385,7 +355,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/conversar_ouvir_4q": {
+  "acoes/construir_4q": {
    "x": 100,
    "y": 275,
    "w": 32,
@@ -395,7 +365,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/cozinhar_espeto_4q": {
+  "acoes/contar_historia_4q": {
    "x": 133,
    "y": 275,
    "w": 32,
@@ -405,7 +375,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/cozinhar_mexer_4q": {
+  "acoes/conversar_falar_4q": {
    "x": 166,
    "y": 275,
    "w": 32,
@@ -415,87 +385,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/crianca_banho_4q": {
-   "x": 689,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_ciranda_4q": {
-   "x": 714,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_ciranda_costas_4q": {
-   "x": 739,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_correr_4q": {
-   "x": 764,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_pegapega_fugir_4q": {
-   "x": 789,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_pegapega_pegar_4q": {
-   "x": 814,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/crianca_pular_4q": {
-   "x": 839,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/criancas_brigar_4q": {
-   "x": 864,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "acoes/dancar_4q": {
+  "acoes/conversar_ouvir_4q": {
    "x": 199,
    "y": 275,
    "w": 32,
@@ -505,7 +395,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/discutir_4q": {
+  "acoes/cozinhar_espeto_4q": {
    "x": 232,
    "y": 275,
    "w": 32,
@@ -515,17 +405,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/dormir_2q": {
-   "x": 826,
-   "y": 275,
-   "w": 24,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "acoes/escrever_4q": {
+  "acoes/cozinhar_mexer_4q": {
    "x": 265,
    "y": 275,
    "w": 32,
@@ -535,7 +415,87 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/espantar_4q": {
+  "acoes/crianca_banho_4q": {
+   "x": 803,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_ciranda_4q": {
+   "x": 828,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_ciranda_costas_4q": {
+   "x": 853,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_correr_4q": {
+   "x": 878,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pegapega_fugir_4q": {
+   "x": 903,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pegapega_pegar_4q": {
+   "x": 928,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pular_4q": {
+   "x": 953,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/criancas_brigar_4q": {
+   "x": 978,
+   "y": 301,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/dancar_4q": {
    "x": 298,
    "y": 275,
    "w": 32,
@@ -545,17 +505,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/espantar_forte_4q": {
-   "x": 804,
-   "y": 245,
-   "w": 48,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "acoes/esticar_4q": {
+  "acoes/discutir_4q": {
    "x": 331,
    "y": 275,
    "w": 32,
@@ -565,7 +515,17 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/forjar_4q": {
+  "acoes/dormir_2q": {
+   "x": 925,
+   "y": 275,
+   "w": 24,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "acoes/escrever_4q": {
    "x": 364,
    "y": 275,
    "w": 32,
@@ -575,7 +535,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/funeral_carregar_4q": {
+  "acoes/espantar_4q": {
    "x": 397,
    "y": 275,
    "w": 32,
@@ -585,18 +545,8 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/idoso_parado_2q": {
-   "x": 935,
-   "y": 275,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "acoes/lavar_margem_forte_4q": {
-   "x": 853,
+  "acoes/espantar_forte_4q": {
+   "x": 918,
    "y": 245,
    "w": 48,
    "h": 12,
@@ -605,7 +555,7 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
-  "acoes/lutar_4q": {
+  "acoes/esticar_4q": {
    "x": 430,
    "y": 275,
    "w": 32,
@@ -615,7 +565,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/mae_bebe_andar_4q": {
+  "acoes/forjar_4q": {
    "x": 463,
    "y": 275,
    "w": 32,
@@ -625,17 +575,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/mae_bebe_parado_2q": {
-   "x": 952,
-   "y": 275,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "acoes/olhar_lados_4q": {
+  "acoes/funeral_carregar_4q": {
    "x": 496,
    "y": 275,
    "w": 32,
@@ -645,9 +585,9 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/ouvir_sentado_2q": {
-   "x": 969,
-   "y": 275,
+  "acoes/idoso_parado_2q": {
+   "x": 18,
+   "y": 288,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -655,7 +595,17 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/pescar_4q": {
+  "acoes/lavar_margem_forte_4q": {
+   "x": 967,
+   "y": 245,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "acoes/lutar_4q": {
    "x": 529,
    "y": 275,
    "w": 32,
@@ -665,27 +615,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/pescar_arpoar_forte_4q": {
-   "x": 902,
-   "y": 245,
-   "w": 48,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "acoes/pescar_espreitar_forte_2q": {
-   "x": 851,
-   "y": 275,
-   "w": 24,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "acoes/remar_4q": {
+  "acoes/mae_bebe_andar_4q": {
    "x": 562,
    "y": 275,
    "w": 32,
@@ -695,9 +625,9 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/segurar_peixe_2q": {
-   "x": 986,
-   "y": 275,
+  "acoes/mae_bebe_parado_2q": {
+   "x": 35,
+   "y": 288,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -705,7 +635,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/sentar_chao_4q": {
+  "acoes/olhar_lados_4q": {
    "x": 595,
    "y": 275,
    "w": 32,
@@ -715,7 +645,17 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/tocar_tambor_4q": {
+  "acoes/ouvir_sentado_2q": {
+   "x": 52,
+   "y": 288,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "acoes/pescar_4q": {
    "x": 628,
    "y": 275,
    "w": 32,
@@ -725,17 +665,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/tropecar_cair_4q": {
-   "x": 951,
-   "y": 245,
-   "w": 48,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "acoes/tropecar_cair_forte_4q": {
+  "acoes/pescar_arpoar_forte_4q": {
    "x": 1,
    "y": 262,
    "w": 48,
@@ -745,9 +675,79 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
-  "acoes/vigia_2q": {
-   "x": 1003,
+  "acoes/pescar_espreitar_forte_2q": {
+   "x": 950,
    "y": 275,
+   "w": 24,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "acoes/remar_4q": {
+   "x": 661,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "acoes/segurar_peixe_2q": {
+   "x": 69,
+   "y": 288,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "acoes/sentar_chao_4q": {
+   "x": 694,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "acoes/tocar_tambor_4q": {
+   "x": 727,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "acoes/tropecar_cair_4q": {
+   "x": 50,
+   "y": 262,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "acoes/tropecar_cair_forte_4q": {
+   "x": 99,
+   "y": 262,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "acoes/vigia_2q": {
+   "x": 86,
+   "y": 288,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -756,8 +756,8 @@
    "quadro_h": 12
   },
   "criaturas/ave_abatida": {
-   "x": 999,
-   "y": 301,
+   "x": 111,
+   "y": 310,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -766,7 +766,7 @@
    "quadro_h": 8
   },
   "criaturas/ave_fugir_4q": {
-   "x": 173,
+   "x": 287,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -776,7 +776,7 @@
    "quadro_h": 8
   },
   "criaturas/ave_grande_4q": {
-   "x": 206,
+   "x": 320,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -786,7 +786,7 @@
    "quadro_h": 8
   },
   "criaturas/bando_migrando_4q": {
-   "x": 702,
+   "x": 804,
    "y": 288,
    "w": 96,
    "h": 8,
@@ -796,7 +796,7 @@
    "quadro_h": 8
   },
   "criaturas/cervo_4q": {
-   "x": 50,
+   "x": 164,
    "y": 301,
    "w": 40,
    "h": 8,
@@ -806,7 +806,7 @@
    "quadro_h": 8
   },
   "criaturas/coelho_4q": {
-   "x": 686,
+   "x": 814,
    "y": 310,
    "w": 24,
    "h": 4,
@@ -816,7 +816,7 @@
    "quadro_h": 4
   },
   "criaturas/coruja_chuva_4q": {
-   "x": 602,
+   "x": 716,
    "y": 301,
    "w": 28,
    "h": 8,
@@ -826,7 +826,7 @@
    "quadro_h": 8
   },
   "criaturas/coruja_neve_4q": {
-   "x": 631,
+   "x": 745,
    "y": 301,
    "w": 28,
    "h": 8,
@@ -836,7 +836,7 @@
    "quadro_h": 8
   },
   "criaturas/coruja_pousada_4q": {
-   "x": 660,
+   "x": 774,
    "y": 301,
    "w": 28,
    "h": 8,
@@ -846,7 +846,7 @@
    "quadro_h": 8
   },
   "criaturas/corvo_pousado_2q": {
-   "x": 872,
+   "x": 1000,
    "y": 310,
    "w": 10,
    "h": 4,
@@ -856,7 +856,7 @@
    "quadro_h": 4
   },
   "criaturas/corvo_voar_4q": {
-   "x": 711,
+   "x": 839,
    "y": 310,
    "w": 24,
    "h": 4,
@@ -866,8 +866,8 @@
    "quadro_h": 4
   },
   "criaturas/garca_2q": {
-   "x": 939,
-   "y": 301,
+   "x": 51,
+   "y": 310,
    "w": 16,
    "h": 8,
    "quadros": 2,
@@ -876,7 +876,7 @@
    "quadro_h": 8
   },
   "criaturas/morcego_4q": {
-   "x": 736,
+   "x": 864,
    "y": 310,
    "w": 24,
    "h": 4,
@@ -886,7 +886,7 @@
    "quadro_h": 4
   },
   "criaturas/morcego_noite_4q": {
-   "x": 622,
+   "x": 750,
    "y": 310,
    "w": 32,
    "h": 5,
@@ -896,7 +896,7 @@
    "quadro_h": 5
   },
   "criaturas/passaro_pousado_2q": {
-   "x": 883,
+   "x": 1011,
    "y": 310,
    "w": 8,
    "h": 4,
@@ -906,8 +906,8 @@
    "quadro_h": 4
   },
   "criaturas/passaro_pousado_forte_2q": {
-   "x": 927,
-   "y": 310,
+   "x": 36,
+   "y": 319,
    "w": 10,
    "h": 3,
    "quadros": 2,
@@ -916,7 +916,7 @@
    "quadro_h": 3
   },
   "criaturas/passaro_voar_4q": {
-   "x": 761,
+   "x": 889,
    "y": 310,
    "w": 24,
    "h": 4,
@@ -926,7 +926,7 @@
    "quadro_h": 4
   },
   "criaturas/peixe_pular_forte_4q": {
-   "x": 91,
+   "x": 205,
    "y": 301,
    "w": 40,
    "h": 8,
@@ -936,7 +936,7 @@
    "quadro_h": 8
   },
   "criaturas/peixe_saltar_4q": {
-   "x": 239,
+   "x": 353,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -946,7 +946,7 @@
    "quadro_h": 8
   },
   "criaturas/porco_abatido": {
-   "x": 611,
+   "x": 739,
    "y": 310,
    "w": 10,
    "h": 6,
@@ -956,8 +956,8 @@
    "quadro_h": 6
   },
   "criaturas/porco_atingido_4q": {
-   "x": 929,
-   "y": 288,
+   "x": 66,
+   "y": 301,
    "w": 48,
    "h": 8,
    "quadros": 4,
@@ -966,7 +966,7 @@
    "quadro_h": 8
   },
   "criaturas/porco_correr_4q": {
-   "x": 512,
+   "x": 640,
    "y": 310,
    "w": 40,
    "h": 6,
@@ -976,7 +976,7 @@
    "quadro_h": 6
   },
   "criaturas/porco_do_mato_4q": {
-   "x": 553,
+   "x": 681,
    "y": 310,
    "w": 40,
    "h": 6,
@@ -986,7 +986,7 @@
    "quadro_h": 6
   },
   "criaturas/raposa_noite_4q": {
-   "x": 393,
+   "x": 521,
    "y": 310,
    "w": 48,
    "h": 7,
@@ -996,7 +996,7 @@
    "quadro_h": 7
   },
   "criaturas/raposa_parada_4q": {
-   "x": 442,
+   "x": 570,
    "y": 310,
    "w": 48,
    "h": 7,
@@ -1006,7 +1006,7 @@
    "quadro_h": 7
   },
   "criaturas/sapo_2q": {
-   "x": 820,
+   "x": 948,
    "y": 310,
    "w": 12,
    "h": 4,
@@ -1016,7 +1016,7 @@
    "quadro_h": 4
   },
   "efeitos/brasas_4q": {
-   "x": 272,
+   "x": 386,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1026,7 +1026,7 @@
    "quadro_h": 8
   },
   "efeitos/calor_4q": {
-   "x": 227,
+   "x": 324,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1046,7 +1046,7 @@
    "quadro_h": 16
   },
   "efeitos/chamas_4q": {
-   "x": 292,
+   "x": 389,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1066,7 +1066,7 @@
    "quadro_h": 32
   },
   "efeitos/chuva_forte_3v": {
-   "x": 52,
+   "x": 154,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1096,7 +1096,7 @@
    "quadro_h": 32
   },
   "efeitos/cura_brilho_4q": {
-   "x": 305,
+   "x": 419,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1106,7 +1106,7 @@
    "quadro_h": 8
   },
   "efeitos/cura_brilho_noite_4q": {
-   "x": 50,
+   "x": 148,
    "y": 262,
    "w": 48,
    "h": 12,
@@ -1126,8 +1126,8 @@
    "quadro_h": 24
   },
   "efeitos/destrocos_3v": {
-   "x": 889,
-   "y": 301,
+   "x": 1,
+   "y": 310,
    "w": 24,
    "h": 8,
    "quadros": 3,
@@ -1136,7 +1136,7 @@
    "quadro_h": 8
   },
   "efeitos/eclipse_4q": {
-   "x": 357,
+   "x": 454,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1146,8 +1146,8 @@
    "quadro_h": 16
   },
   "efeitos/enchente_agua_1q": {
-   "x": 1008,
-   "y": 301,
+   "x": 120,
+   "y": 310,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -1156,7 +1156,7 @@
    "quadro_h": 8
   },
   "efeitos/enchente_superficie_4q": {
-   "x": 338,
+   "x": 452,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1166,7 +1166,7 @@
    "quadro_h": 8
   },
   "efeitos/fartura_aura_4q": {
-   "x": 422,
+   "x": 519,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1176,7 +1176,7 @@
    "quadro_h": 16
   },
   "efeitos/fartura_aura_dia_4q": {
-   "x": 487,
+   "x": 584,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1186,7 +1186,7 @@
    "quadro_h": 16
   },
   "efeitos/fartura_aura_noite_4q": {
-   "x": 552,
+   "x": 649,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1196,7 +1196,7 @@
    "quadro_h": 16
   },
   "efeitos/fartura_brilho_4q": {
-   "x": 371,
+   "x": 485,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1206,7 +1206,7 @@
    "quadro_h": 8
   },
   "efeitos/fartura_brilho_dia_4q": {
-   "x": 99,
+   "x": 197,
    "y": 262,
    "w": 48,
    "h": 12,
@@ -1216,7 +1216,7 @@
    "quadro_h": 12
   },
   "efeitos/fartura_brilho_noite_4q": {
-   "x": 148,
+   "x": 246,
    "y": 262,
    "w": 48,
    "h": 12,
@@ -1226,7 +1226,7 @@
    "quadro_h": 12
   },
   "efeitos/fenda_4q": {
-   "x": 617,
+   "x": 714,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1236,7 +1236,7 @@
    "quadro_h": 16
   },
   "efeitos/fenda_noite_4q": {
-   "x": 682,
+   "x": 779,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1246,7 +1246,7 @@
    "quadro_h": 16
   },
   "efeitos/floco_3v": {
-   "x": 833,
+   "x": 961,
    "y": 310,
    "w": 12,
    "h": 4,
@@ -1256,7 +1256,7 @@
    "quadro_h": 4
   },
   "efeitos/fogo_brando_acender_4q": {
-   "x": 799,
+   "x": 901,
    "y": 288,
    "w": 64,
    "h": 8,
@@ -1276,7 +1276,7 @@
    "quadro_h": 32
   },
   "efeitos/folha_seca_4q": {
-   "x": 404,
+   "x": 518,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1286,7 +1286,7 @@
    "quadro_h": 8
   },
   "efeitos/folha_verde_4q": {
-   "x": 437,
+   "x": 551,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1306,8 +1306,8 @@
    "quadro_h": 16
   },
   "efeitos/gotas_3v": {
-   "x": 973,
-   "y": 301,
+   "x": 85,
+   "y": 310,
    "w": 12,
    "h": 8,
    "quadros": 3,
@@ -1336,7 +1336,7 @@
    "quadro_h": 24
   },
   "efeitos/pedras_caindo_3v": {
-   "x": 846,
+   "x": 974,
    "y": 310,
    "w": 12,
    "h": 4,
@@ -1346,7 +1346,7 @@
    "quadro_h": 4
   },
   "efeitos/pedras_caindo_noite_3v": {
-   "x": 859,
+   "x": 987,
    "y": 310,
    "w": 12,
    "h": 4,
@@ -1356,8 +1356,8 @@
    "quadro_h": 4
   },
   "efeitos/poeira_4q": {
-   "x": 864,
-   "y": 288,
+   "x": 1,
+   "y": 301,
    "w": 64,
    "h": 8,
    "quadros": 4,
@@ -1376,7 +1376,7 @@
    "quadro_h": 16
   },
   "efeitos/rachadura_3q": {
-   "x": 1,
+   "x": 115,
    "y": 301,
    "w": 48,
    "h": 8,
@@ -1416,7 +1416,7 @@
    "quadro_h": 120
   },
   "efeitos/raio_impacto_4q": {
-   "x": 747,
+   "x": 844,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1426,7 +1426,7 @@
    "quadro_h": 16
   },
   "efeitos/respingo_4q": {
-   "x": 470,
+   "x": 584,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1436,7 +1436,7 @@
    "quadro_h": 8
   },
   "efeitos/seca_rachaduras_4q": {
-   "x": 444,
+   "x": 546,
    "y": 288,
    "w": 128,
    "h": 8,
@@ -1446,7 +1446,7 @@
    "quadro_h": 8
   },
   "efeitos/seca_rachaduras_noite_4q": {
-   "x": 573,
+   "x": 675,
    "y": 288,
    "w": 128,
    "h": 8,
@@ -1456,7 +1456,7 @@
    "quadro_h": 8
   },
   "efeitos/sonho_4q": {
-   "x": 812,
+   "x": 909,
    "y": 228,
    "w": 64,
    "h": 16,
@@ -1466,7 +1466,7 @@
    "quadro_h": 16
   },
   "efeitos/sonho_brilho_4q": {
-   "x": 503,
+   "x": 617,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1476,7 +1476,7 @@
    "quadro_h": 8
   },
   "efeitos/sonho_brilho_dia_4q": {
-   "x": 197,
+   "x": 295,
    "y": 262,
    "w": 48,
    "h": 12,
@@ -1486,7 +1486,7 @@
    "quadro_h": 12
   },
   "efeitos/sonho_brilho_noite_4q": {
-   "x": 246,
+   "x": 344,
    "y": 262,
    "w": 48,
    "h": 12,
@@ -1506,8 +1506,8 @@
    "quadro_h": 24
   },
   "efeitos/sonho_noite_4q": {
-   "x": 877,
-   "y": 228,
+   "x": 1,
+   "y": 245,
    "w": 64,
    "h": 16,
    "quadros": 4,
@@ -1526,7 +1526,7 @@
    "quadro_h": 24
   },
   "efeitos/vagalume_4q": {
-   "x": 536,
+   "x": 650,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -1536,7 +1536,7 @@
    "quadro_h": 8
   },
   "estante/estante_fundo": {
-   "x": 83,
+   "x": 197,
    "y": 245,
    "w": 16,
    "h": 16,
@@ -1566,7 +1566,7 @@
    "quadro_h": 64
   },
   "estante/prateleira": {
-   "x": 594,
+   "x": 722,
    "y": 310,
    "w": 16,
    "h": 6,
@@ -1576,86 +1576,6 @@
    "quadro_h": 6
   },
   "habitantes/adulto_a_andar_4q": {
-   "x": 661,
-   "y": 275,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_a_colher_4q": {
-   "x": 694,
-   "y": 275,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_a_parado_2q": {
-   "x": 1,
-   "y": 288,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_a_rezar_2q": {
-   "x": 18,
-   "y": 288,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_a_sentado_1q": {
-   "x": 364,
-   "y": 288,
-   "w": 8,
-   "h": 12,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_b_andar_4q": {
-   "x": 727,
-   "y": 275,
-   "w": 32,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/adulto_b_parado_2q": {
-   "x": 35,
-   "y": 288,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "habitantes/crianca_andar_4q": {
-   "x": 914,
-   "y": 301,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "habitantes/idoso_andar_4q": {
    "x": 760,
    "y": 275,
    "w": 32,
@@ -1665,8 +1585,88 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
+  "habitantes/adulto_a_colher_4q": {
+   "x": 793,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/adulto_a_parado_2q": {
+   "x": 103,
+   "y": 288,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/adulto_a_rezar_2q": {
+   "x": 120,
+   "y": 288,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/adulto_a_sentado_1q": {
+   "x": 466,
+   "y": 288,
+   "w": 8,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/adulto_b_andar_4q": {
+   "x": 826,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/adulto_b_parado_2q": {
+   "x": 137,
+   "y": 288,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "habitantes/crianca_andar_4q": {
+   "x": 26,
+   "y": 310,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "habitantes/idoso_andar_4q": {
+   "x": 859,
+   "y": 275,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
   "interface/alca_9s": {
-   "x": 65,
+   "x": 167,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1676,8 +1676,8 @@
    "quadro_h": 12
   },
   "interface/botao_3q": {
-   "x": 942,
-   "y": 228,
+   "x": 66,
+   "y": 245,
    "w": 48,
    "h": 16,
    "quadros": 3,
@@ -1696,7 +1696,7 @@
    "quadro_h": 24
   },
   "interface/caixa_dica_9s": {
-   "x": 78,
+   "x": 180,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1706,8 +1706,8 @@
    "quadro_h": 12
   },
   "interface/dica_ponteiro": {
-   "x": 938,
-   "y": 310,
+   "x": 47,
+   "y": 319,
    "w": 6,
    "h": 3,
    "quadros": 1,
@@ -1756,7 +1756,7 @@
    "quadro_h": 48
   },
   "interface/icones_12/chuva": {
-   "x": 91,
+   "x": 193,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1766,7 +1766,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/criar_povo": {
-   "x": 104,
+   "x": 206,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1776,7 +1776,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/cronica": {
-   "x": 117,
+   "x": 219,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1786,7 +1786,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/cura": {
-   "x": 130,
+   "x": 232,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1796,7 +1796,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/diluvio": {
-   "x": 143,
+   "x": 245,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1806,7 +1806,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/erguer_terra": {
-   "x": 156,
+   "x": 258,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1816,7 +1816,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/esconder": {
-   "x": 169,
+   "x": 271,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1826,7 +1826,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/estante": {
-   "x": 182,
+   "x": 284,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1836,7 +1836,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/fartura": {
-   "x": 195,
+   "x": 297,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1846,7 +1846,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/fogo": {
-   "x": 208,
+   "x": 310,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1856,7 +1856,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/linhagem": {
-   "x": 221,
+   "x": 323,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1866,7 +1866,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/normal": {
-   "x": 234,
+   "x": 336,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1876,7 +1876,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/pausa": {
-   "x": 247,
+   "x": 349,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1886,7 +1886,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/pressagio": {
-   "x": 260,
+   "x": 362,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1896,7 +1896,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/raio": {
-   "x": 273,
+   "x": 375,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1906,7 +1906,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/rapido": {
-   "x": 286,
+   "x": 388,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1916,7 +1916,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/rapido2": {
-   "x": 299,
+   "x": 401,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1926,7 +1926,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/salto": {
-   "x": 312,
+   "x": 414,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1936,7 +1936,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/seca": {
-   "x": 325,
+   "x": 427,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1946,7 +1946,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/sonho": {
-   "x": 338,
+   "x": 440,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1956,7 +1956,7 @@
    "quadro_h": 12
   },
   "interface/icones_12/terremoto": {
-   "x": 351,
+   "x": 453,
    "y": 288,
    "w": 12,
    "h": 12,
@@ -1966,7 +1966,7 @@
    "quadro_h": 12
   },
   "interface/icones_8/chuva": {
-   "x": 1,
+   "x": 129,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -1976,7 +1976,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/criar_povo": {
-   "x": 10,
+   "x": 138,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -1986,7 +1986,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/cronica": {
-   "x": 19,
+   "x": 147,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -1996,7 +1996,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/cura": {
-   "x": 28,
+   "x": 156,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2006,7 +2006,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/diluvio": {
-   "x": 37,
+   "x": 165,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2016,7 +2016,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/erguer_terra": {
-   "x": 46,
+   "x": 174,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2026,7 +2026,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/esconder": {
-   "x": 55,
+   "x": 183,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2036,7 +2036,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/estante": {
-   "x": 64,
+   "x": 192,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2046,7 +2046,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/fartura": {
-   "x": 73,
+   "x": 201,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2056,7 +2056,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/fogo": {
-   "x": 82,
+   "x": 210,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2066,7 +2066,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/linhagem": {
-   "x": 91,
+   "x": 219,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2076,7 +2076,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/normal": {
-   "x": 100,
+   "x": 228,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2086,7 +2086,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/pausa": {
-   "x": 109,
+   "x": 237,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2096,7 +2096,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/pressagio": {
-   "x": 118,
+   "x": 246,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2106,7 +2106,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/raio": {
-   "x": 127,
+   "x": 255,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2116,7 +2116,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/rapido": {
-   "x": 136,
+   "x": 264,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2126,7 +2126,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/rapido2": {
-   "x": 145,
+   "x": 273,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2136,7 +2136,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/salto": {
-   "x": 154,
+   "x": 282,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2146,7 +2146,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/seca": {
-   "x": 163,
+   "x": 291,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2156,7 +2156,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/sonho": {
-   "x": 172,
+   "x": 300,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2166,7 +2166,7 @@
    "quadro_h": 8
   },
   "interface/icones_8/terremoto": {
-   "x": 181,
+   "x": 309,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2176,7 +2176,7 @@
    "quadro_h": 8
   },
   "luzes/chamine": {
-   "x": 388,
+   "x": 516,
    "y": 310,
    "w": 4,
    "h": 8,
@@ -2186,7 +2186,7 @@
    "quadro_h": 8
   },
   "luzes/fumaca_chamine_4q": {
-   "x": 50,
+   "x": 164,
    "y": 245,
    "w": 32,
    "h": 16,
@@ -2216,7 +2216,7 @@
    "quadro_h": 32
   },
   "memoria/terra_queimada_a": {
-   "x": 190,
+   "x": 318,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2226,7 +2226,7 @@
    "quadro_h": 8
   },
   "memoria/terra_queimada_b": {
-   "x": 199,
+   "x": 327,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2236,7 +2236,7 @@
    "quadro_h": 8
   },
   "memoria/tumulo": {
-   "x": 100,
+   "x": 214,
    "y": 245,
    "w": 16,
    "h": 16,
@@ -2276,7 +2276,7 @@
    "quadro_h": 32
   },
   "natureza/tumulo_mato_1": {
-   "x": 117,
+   "x": 231,
    "y": 245,
    "w": 16,
    "h": 16,
@@ -2286,7 +2286,7 @@
    "quadro_h": 16
   },
   "natureza/tumulo_mato_2": {
-   "x": 134,
+   "x": 248,
    "y": 245,
    "w": 16,
    "h": 16,
@@ -2296,7 +2296,7 @@
    "quadro_h": 16
   },
   "natureza/tumulo_mato_3": {
-   "x": 151,
+   "x": 265,
    "y": 245,
    "w": 16,
    "h": 16,
@@ -2306,8 +2306,8 @@
    "quadro_h": 16
   },
   "objetos/bandeirolas": {
-   "x": 956,
-   "y": 301,
+   "x": 68,
+   "y": 310,
    "w": 16,
    "h": 8,
    "quadros": 1,
@@ -2316,8 +2316,8 @@
    "quadro_h": 8
   },
   "objetos/bebe_enrolado": {
-   "x": 892,
-   "y": 310,
+   "x": 1,
+   "y": 319,
    "w": 6,
    "h": 4,
    "quadros": 1,
@@ -2326,7 +2326,7 @@
    "quadro_h": 4
   },
   "objetos/caca_no_pau_ave": {
-   "x": 423,
+   "x": 525,
    "y": 288,
    "w": 20,
    "h": 9,
@@ -2336,7 +2336,7 @@
    "quadro_h": 9
   },
   "objetos/caca_no_pau_ave_forte": {
-   "x": 373,
+   "x": 475,
    "y": 288,
    "w": 24,
    "h": 9,
@@ -2346,7 +2346,7 @@
    "quadro_h": 9
   },
   "objetos/caca_no_pau_porco": {
-   "x": 491,
+   "x": 619,
    "y": 310,
    "w": 20,
    "h": 7,
@@ -2356,7 +2356,7 @@
    "quadro_h": 7
   },
   "objetos/caca_no_pau_porco_forte": {
-   "x": 398,
+   "x": 500,
    "y": 288,
    "w": 24,
    "h": 9,
@@ -2366,7 +2366,7 @@
    "quadro_h": 9
   },
   "objetos/cesto_cheio": {
-   "x": 208,
+   "x": 336,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2376,7 +2376,7 @@
    "quadro_h": 8
   },
   "objetos/cesto_costas": {
-   "x": 217,
+   "x": 345,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2386,7 +2386,7 @@
    "quadro_h": 8
   },
   "objetos/coroa_flores": {
-   "x": 226,
+   "x": 354,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2396,8 +2396,8 @@
    "quadro_h": 8
   },
   "objetos/coroa_flores_cabeca": {
-   "x": 970,
-   "y": 310,
+   "x": 79,
+   "y": 319,
    "w": 6,
    "h": 2,
    "quadros": 1,
@@ -2406,7 +2406,7 @@
    "quadro_h": 2
   },
   "objetos/corpo_mortalha": {
-   "x": 786,
+   "x": 914,
    "y": 310,
    "w": 16,
    "h": 4,
@@ -2416,8 +2416,8 @@
    "quadro_h": 4
   },
   "objetos/cuia_cheia": {
-   "x": 977,
-   "y": 310,
+   "x": 86,
+   "y": 319,
    "w": 4,
    "h": 2,
    "quadros": 1,
@@ -2426,7 +2426,7 @@
    "quadro_h": 2
   },
   "objetos/escudo_arvore": {
-   "x": 235,
+   "x": 363,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2436,7 +2436,7 @@
    "quadro_h": 8
   },
   "objetos/escudo_lua": {
-   "x": 244,
+   "x": 372,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2446,7 +2446,7 @@
    "quadro_h": 8
   },
   "objetos/escudo_sol": {
-   "x": 253,
+   "x": 381,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2456,8 +2456,8 @@
    "quadro_h": 8
   },
   "objetos/espeto": {
-   "x": 986,
-   "y": 301,
+   "x": 98,
+   "y": 310,
    "w": 12,
    "h": 8,
    "quadros": 1,
@@ -2476,7 +2476,7 @@
    "quadro_h": 24
   },
   "objetos/estandarte_lilas_arvore_2q": {
-   "x": 262,
+   "x": 390,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2486,7 +2486,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_lilas_lua_2q": {
-   "x": 271,
+   "x": 399,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2496,7 +2496,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_lilas_sol_2q": {
-   "x": 280,
+   "x": 408,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2516,7 +2516,7 @@
    "quadro_h": 24
   },
   "objetos/estandarte_rosa_arvore_2q": {
-   "x": 289,
+   "x": 417,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2526,7 +2526,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_rosa_lua_2q": {
-   "x": 298,
+   "x": 426,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2536,7 +2536,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_rosa_sol_2q": {
-   "x": 307,
+   "x": 435,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2556,7 +2556,7 @@
    "quadro_h": 24
   },
   "objetos/estandarte_turquesa_arvore_2q": {
-   "x": 316,
+   "x": 444,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2566,7 +2566,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_turquesa_lua_2q": {
-   "x": 325,
+   "x": 453,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2576,7 +2576,7 @@
    "quadro_h": 8
   },
   "objetos/estandarte_turquesa_sol_2q": {
-   "x": 334,
+   "x": 462,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2586,7 +2586,7 @@
    "quadro_h": 8
   },
   "objetos/feixe_lenha": {
-   "x": 343,
+   "x": 471,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2596,7 +2596,7 @@
    "quadro_h": 8
   },
   "objetos/lanca_cravada": {
-   "x": 352,
+   "x": 480,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2606,8 +2606,8 @@
    "quadro_h": 8
   },
   "objetos/lanca_voando": {
-   "x": 914,
-   "y": 310,
+   "x": 23,
+   "y": 319,
    "w": 12,
    "h": 3,
    "quadros": 1,
@@ -2616,8 +2616,8 @@
    "quadro_h": 3
   },
   "objetos/lanca_voando_forte": {
-   "x": 899,
-   "y": 310,
+   "x": 8,
+   "y": 319,
    "w": 14,
    "h": 3,
    "quadros": 1,
@@ -2626,7 +2626,7 @@
    "quadro_h": 3
   },
   "objetos/panela": {
-   "x": 361,
+   "x": 489,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2636,8 +2636,8 @@
    "quadro_h": 8
   },
   "objetos/pau_no_chao": {
-   "x": 945,
-   "y": 310,
+   "x": 54,
+   "y": 319,
    "w": 24,
    "h": 2,
    "quadros": 1,
@@ -2646,8 +2646,8 @@
    "quadro_h": 2
   },
   "objetos/peixe_mao": {
-   "x": 982,
-   "y": 310,
+   "x": 91,
+   "y": 319,
    "w": 4,
    "h": 2,
    "quadros": 1,
@@ -2656,7 +2656,7 @@
    "quadro_h": 2
   },
   "objetos/peixe_na_lanca_forte": {
-   "x": 803,
+   "x": 931,
    "y": 310,
    "w": 16,
    "h": 4,
@@ -2666,7 +2666,7 @@
    "quadro_h": 4
   },
   "objetos/tambor": {
-   "x": 370,
+   "x": 498,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2676,7 +2676,7 @@
    "quadro_h": 8
   },
   "objetos/trouxa": {
-   "x": 379,
+   "x": 507,
    "y": 310,
    "w": 8,
    "h": 8,
@@ -2686,7 +2686,7 @@
    "quadro_h": 8
   },
   "sinais/balao_5v": {
-   "x": 655,
+   "x": 783,
    "y": 310,
    "w": 30,
    "h": 5,
@@ -2694,6 +2694,16 @@
    "tipo": "variacoes",
    "quadro_w": 6,
    "quadro_h": 5
+  },
+  "sinais/convite_povo_4q": {
+   "x": 227,
+   "y": 228,
+   "w": 96,
+   "h": 16,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
   },
   "sinais/fome_prece_4q": {
    "x": 490,
@@ -2706,7 +2716,7 @@
    "quadro_h": 24
   },
   "sinais/necessidade_5v": {
-   "x": 132,
+   "x": 246,
    "y": 301,
    "w": 40,
    "h": 8,
@@ -2726,7 +2736,7 @@
    "quadro_h": 48
   },
   "sinais/prece_comum_4q": {
-   "x": 793,
+   "x": 892,
    "y": 275,
    "w": 32,
    "h": 12,
@@ -2746,7 +2756,7 @@
    "quadro_h": 24
   },
   "sinais/prece_urgente_4q": {
-   "x": 1,
+   "x": 115,
    "y": 245,
    "w": 48,
    "h": 16,
@@ -2766,7 +2776,7 @@
    "quadro_h": 32
   },
   "sinais/profeta_marca_4q": {
-   "x": 569,
+   "x": 683,
    "y": 301,
    "w": 32,
    "h": 8,
@@ -2776,7 +2786,7 @@
    "quadro_h": 8
   },
   "sinais/separacao_4q": {
-   "x": 168,
+   "x": 282,
    "y": 245,
    "w": 96,
    "h": 12,
@@ -2786,7 +2796,7 @@
    "quadro_h": 12
   },
   "sinais/separacao_marca_2q": {
-   "x": 876,
+   "x": 975,
    "y": 275,
    "w": 24,
    "h": 12,
