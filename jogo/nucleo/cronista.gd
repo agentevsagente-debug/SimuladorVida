@@ -793,6 +793,10 @@ func _nota(e) -> int:
 		"nascimento":
 			if e.dados["motivo"] == "":
 				return 0
+		"rito", "casamento", "rixa", "roubo":
+			# A vida miúda de um povo pequeno é nota para o jogador, não crônica do ano.
+			if e.importancia <= 4:
+				return 0
 		"prece":
 			if not e.dados["primeira"] and e.dados["alvo"] == -1:
 				n = 3
@@ -1276,6 +1280,11 @@ func _texto(e) -> String:
 			return _prece_sem_resposta(e, v)
 		"prece_contrariada":
 			return _prece_contrariada(e, v)
+		"rito":
+			v["p"] = _p(e.participantes[0])
+			return _frase([{"caca": "{p} fez catorze anos e foi à primeira caçada com os adultos.",
+				"pesca": "{p} fez catorze anos e pescou sozinh{p:o|a} pela primeira vez.",
+				"roca": "{p} fez catorze anos e abriu a primeira roça."}.get(e.dados.get("lida", ""), "{p} fez catorze anos.")], v)
 		"estranhos":
 			v["lista"] = _lista_pessoas(e.participantes)
 			v["n"] = G.termo(G.extenso(e.dados["n"], "m"), "m", e.dados["n"])
@@ -2104,6 +2113,21 @@ func texto_curto(e) -> String:
 			opcoes = ["{p} fala pelo deus"]
 		"novo_lider":
 			opcoes = ["{p} guia {g}"]
+		"casamento":
+			if e.participantes.size() > 1:
+				v["b"] = _p(e.participantes[1])
+				opcoes = ["{p} e {b} se casaram", "Casamento em {g}"]
+		"rixa":
+			if e.participantes.size() > 1:
+				v["b"] = _p(e.participantes[1])
+				opcoes = ["{p} e {b} brigaram", "Rixa em {g}"]
+		"roubo":
+			if e.participantes.size() > 1:
+				v["b"] = _p(e.participantes[1])
+				opcoes = ["{p} roubou de {b}", "Roubo em {g}"]
+		"rito":
+			opcoes = [{"caca": "{p} vai à primeira caçada", "pesca": "{p} pesca pela primeira vez", "roca": "{p} abre a primeira roça"}.get(
+				e.dados.get("lida", ""), "{p} já é {p:um homem|uma mulher}")]
 		"edito":
 			opcoes = ["{p} proíbe trato com {o}"]
 		"descoberta", "descoberta_tecnica":

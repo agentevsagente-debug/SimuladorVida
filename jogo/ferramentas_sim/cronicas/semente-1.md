@@ -28,25 +28,25 @@ Nasceram gêmeos de Rabea: Vimiya e Loa.
 
 ### Ano 7
 
-O inverno foi duro, mas ninguém morreu de frio.
+Veio um inverno de gelo.
 
 ### Ano 8
 
-Na primavera, Zeor deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Zeor passou fome por 8 dias, mas ninguém morreu.
+Na primavera, com fome, Zeor levantou acampamento na floresta e foi buscar comida na praia. Houve fome em Zeor: 8 dias de barriga vazia, sem mortes.
 
 *O ano 9 passou sem nada que a crônica precise guardar.*
 
 ### Ano 10
 
-No inverno do ano 10, Rabea disse que alguém, lá em cima, segurava a comida e a chuva. Zeor passou a chamá-lo de «o Que Nega». Foi a primeira crença do mundo. Nos anos 1 a 10 houve duas secas e duas fomes; nasceram nove crianças e morreram quatro pessoas. No fim do ano 10, dezoito pessoas viviam no mundo, todas em Zeor.
+No inverno, Rabea disse que alguém, lá em cima, segurava a comida e a chuva. Zeor passou a chamá-lo de «o Que Nega». Foi a primeira crença do mundo. Nos anos 1 a 10 houve duas secas e duas fomes; nasceram nove crianças e morreram quatro pessoas. No fim do ano 10, dezoito pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 11
 
-Loenu, a devota, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. A lembrança da fome pesou. Rabea foi a primeira de Zeor a rezar em voz alta: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso obra do Que Nega. Foi só o tempo, mas quem iria dizer? Desde então, Zeor acredita que o Que Nega escuta as preces. Rabea passou a falar pelo Que Nega em Zeor. Era a primeira a rezar e a última a duvidar.
+Na primavera do ano 11, Loenu, a devota, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. Pela primeira vez, alguém em Zeor pediu ao céu. Foi Rabea: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso obra do Que Nega. O deus não tinha feito nada. Desde então, Zeor acredita que o Que Nega escuta as preces. No inverno, em Zeor, Rabea tomou para si o cuidado das preces ao Que Nega.
 
 ### Ano 12
 
-A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 2. Foram 26 dias de seca.
 
 *Os anos 13 a 14 passaram em paz.*
 
@@ -54,21 +54,21 @@ A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 15
 
-No verão, Zeor fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar. No outono, uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
+Zeor fez as primeiras roças no lago. Deixou de viver só do que achava e passou a plantar. Por 14 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar.
 
 ### Ano 16
 
-Na primavera, Saenut, que guiava Zeor, morreu dormindo, aos 70 anos. Zeor passou a ser guiado por Linim.
+Morreu Saenut, que guiava Zeor, aos 70 anos. Zeor passou a ser guiado por Linim.
 
 *O ano 17 passou sem nada que a crônica precise guardar.*
 
 ### Ano 18
 
-Na primavera, Linim, que guiava Zeor, morreu de repente, aos 42 anos.
+Linim, que guiava Zeor, morreu de repente, aos 42 anos.
 
 ### Ano 19
 
-Na primavera do ano 19, Satora teve dois de uma vez, Bebeik e Viloik, e todos foram ver.
+Satora teve dois de uma vez, Bebeik e Viloik, e todos foram ver.
 
 ### Ano 20
 
@@ -78,71 +78,73 @@ Nos anos 11 a 20 houve duas secas, seis fomes e sete preces que pareceram atendi
 
 ### Ano 23
 
-A rixa entre Satora e Linut rachou Zeor. Satora partiu com os seus, catorze pessoas, e fundou Sagak na floresta. Pela primeira vez, havia mais de um povo no mundo. Em Sagak, Torut tomou para si o cuidado das preces ao Que Nega.
+Na primavera do ano 23, a rixa entre Satora e Linut rachou Zeor. Satora partiu com os seus, catorze pessoas, e fundou Sagak na floresta. Era o primeiro povo nascido de outro. Torut passou a falar pelo Que Nega em Sagak. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 24
 
-Na primavera, Loenu, que fundou Zeor e o guiava, morreu dormindo, aos 70 anos. Tinha sido a primeira a plantar. Os de Zeor caíram sobre Sagak na floresta. Os de Sagak não cederam, e Zeor recuou. Enloya e Bezeim morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Sagak chamam o lugar de Floresta da Vitória; os de Zeor, de Floresta do Luto. Zeor não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No outono, começou a Guerra da Fome: Zeor, com fome, foi buscar à força a comida de Sagak.
+Na primavera do ano 24, Loenu, que fundou Zeor e o guiava, morreu dormindo, aos 70 anos. Foi quem descobriu que semente vira planta. Os de Zeor caíram sobre Sagak na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Na luta morreram Enloya e Bezeim. Foi a primeira vez que gente matou gente no mundo. O mesmo chão ganhou dois nomes: Floresta da Vitória para Sagak, Floresta do Luto para Zeor. Depois da derrota, os jovens de Zeor passaram a treinar com lanças. Começou a Guerra da Fome: Zeor, com fome, foi buscar à força a comida de Sagak.
 
 ### Ano 25
 
-Na primavera, numa tempestade sobre o lago, um raio matou Miviu. Logo Miviu, que tanto rezava. As preces de Zeor ficaram sem resposta. Depois disso, Zeor deixou de chamar o deus de «o Que Nega» e passou a chamá-la de «a Voz do Céu». Os devotos de Zeor não viram castigo: para eles, a Voz do Céu chamou Miviu para perto. Nasceu ali a lembrança de Miviu como santa. Desde a morte de Miviu, ninguém em Zeor chega perto do lago em dia de tempestade.
+Na primavera do ano 25, numa tempestade sobre o lago, um raio matou Miviu. Miviu era das que mais rezavam, e Zeor ficou sem entender. Torraim rezou, e nada aconteceu. Para Zeor, o deus já não era «o Que Nega»: passou a ser «a Voz do Céu». Os devotos de Zeor não viram castigo: para eles, a Voz do Céu chamou Miviu para perto. Nasceu ali a lembrança de Miviu como santa. Desde a morte de Miviu, ninguém em Zeor chega perto do lago em dia de tempestade.
 
-*Do ano 26 ao 27, a vida seguiu sem grandes acontecimentos.*
+### Ano 26
+
+Nasceu Ena, neta da linhagem dos primeiros.
+
+*O ano 27 passou sem nada que a crônica precise guardar.*
 
 ### Ano 28
 
-A Guerra da Fome esfriou sem acordo nem vencedor: quatro anos, três batalhas e três mortos, e ninguém sabia mais por que lutava. Quem ganhou com isso foi Sagak. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Para Sagak, o deus já não era «o Que Nega»: passou a ser «o Que Apaga o Sol».
+Na primavera, a Guerra da Fome esfriou sem acordo nem vencedor: quatro anos, três batalhas e três mortos, e ninguém sabia mais por que lutava. Sagak terminou maior do que tinha começado. O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Depois disso, Sagak deixou de chamar o deus de «o Que Nega» e passou a chamá-lo de «o Que Apaga o Sol».
 
 *No ano 29, nada de notável aconteceu.*
 
 ### Ano 30
 
-Rabea, a devota, morreu dormindo, aos 51 anos. Foi quem deu ao deus o nome de «o Que Nega». De novo a chuva sumiu, como no ano 12. Foram 18 dias de seca. Em Sagak, Satora pediu: «Que Apaga o Sol, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Apaga o Sol tinha ouvido. O deus nada fez: o crédito era de graça. Nos anos 21 a 30 houve duas secas, duas fomes, três batalhas, sete preces que pareceram atendidas e cinco preces sem resposta; nasceram vinte crianças e morreram 22 pessoas. No fim do ano 30, 37 pessoas viviam no mundo: Zeor (13) e Sagak (24).
+Rabea, a devota, morreu de velhice aos 51 anos. Foi quem deu ao deus o nome de «o Que Nega». Faltou chuva outra vez, a primeira desde o ano 12: 18 dias de céu limpo. Satora tinha rezado: «Que Apaga o Sol, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Que Apaga o Sol tinha ouvido. Foi só o tempo, mas quem iria dizer? Nos anos 21 a 30 houve duas secas, duas fomes, três batalhas, sete preces que pareceram atendidas e cinco preces sem resposta; nasceram vinte crianças e morreram 22 pessoas. No fim do ano 30, 37 pessoas viviam no mundo: Zeor (13) e Sagak (24).
 
 ### Ano 31
 
-No outono do ano 31, Raviem, de Sagak, tomou por esposa Zera, de Zeor, e os dois povos passaram a se visitar.
+No outono, Zera, de Zeor, casou-se com Raviem e foi viver em Sagak. Foi o primeiro laço entre os dois povos.
 
-### Ano 32
-
-Nasceu Lor, filho de Zera e Raviem, com sangue de Sagak e de Zeor.
+*O ano 32 passou sem nada que a crônica precise guardar.*
 
 ### Ano 33
 
-Raviem, o corajoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Raviem, o corajoso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 *Entre os anos 34 e 37, nada mudou o rumo do mundo.*
 
 ### Ano 38
 
-Raviem, o corajoso, morreu de repente, aos 31 anos. No outono, em Zeor, foi Raut quem aprendeu a cortar e empilhar pedra.
+Raviem, o corajoso, morreu de repente, aos 31 anos. No outono, o saber de Sagak chegou a Zeor: Raut aprendeu a cortar e empilhar pedra.
 
 ### Ano 39
 
-Satora, que fundou Sagak e o guiava, morreu de velhice aos 60 anos. Sagak escolheu Linut para guiar o grupo. Viloik queria o lugar e nunca perdoou. Depois de tanta briga pelo comando, Sagak passou a ser guiado por um conselho dos mais velhos. Torut tinha rezado: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Apaga o Sol.
+Morreu Satora, que fundou Sagak e o guiava, aos 60 anos. Linut passou a guiar Sagak, mas Viloik não aceitou e guardou rancor. Em Sagak, ninguém mais mandava sozinho: os mais velhos sentavam em roda e decidiam juntos. Em Sagak, Torut pediu: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Sagak agradeceu ao Que Apaga o Sol.
 
 ### Ano 40
 
-Saut, o pacífico, morreu de repente, aos 44 anos. Na guerra, tinha tirado duas vidas. Nos anos 31 a 40 houve seis secas e nove preces que pareceram atendidas; nasceram 41 crianças e morreram nove pessoas. No fim do ano 40, 69 pessoas viviam no mundo: Zeor (38) e Sagak (31).
+Saut, o pacífico, morreu de repente, aos 44 anos. Na guerra, duas caíram pela sua mão. Nos anos 31 a 40 houve seis secas e nove preces que pareceram atendidas; nasceram 41 crianças e morreram nove pessoas. No fim do ano 40, 69 pessoas viviam no mundo: Zeor (38) e Sagak (31).
 
 ### Ano 41
 
-Faltou chuva outra vez, a primeira desde o ano 30: 20 dias de céu limpo.
+A seca voltou, como no ano 30: 20 dias sem chuva, até que o céu se abriu.
 
 *Do ano 42 ao 43, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 44
 
-Linut, que guiava Sagak, morreu dormindo, aos 45 anos. No outono, por 5 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar. Depois disso, Zeor deixou de chamar o deus de «a Voz do Céu» e passou a chamá-la de «a Estrela de Cauda». No inverno, com Mira à frente, dezenove pessoas deixaram Sagak e fundaram Linum, na praia.
+Na primavera, morreu Linut, que guiava Sagak, aos 45 anos. Por 5 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar. Para Zeor, o deus já não era «a Voz do Céu»: passou a ser «a Estrela de Cauda». No inverno, Mira, a devota, cansou de dividir pouca comida. Partiu com dezenove pessoas para a praia e ali fundou Linum.
 
 ### Ano 45
 
-De novo o sol se apagou no meio do dia. Um raio caiu na floresta durante a tempestade e matou Linloik. Os seus nunca esqueceram. Para Sagak, o deus já não era «o Que Apaga o Sol»: passou a ser «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Sagak sai de casa. Lembram de Linloik. Uma tosse que não passava matou uma pessoa em Zeor.
+O sol escureceu outra vez. Um raio caiu na floresta durante a tempestade e matou Linloik. Os seus nunca esqueceram. Depois disso, Sagak deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Sagak sai de casa. Lembram de Linloik. Uma febre correu Zeor e levou uma vida.
 
 ### Ano 46
 
-Linum passou fome por causa da seca por 23 dias, e quatro pessoas morreram. A fome ensinou: desde então, Linum estoca comida e não come tudo o que colhe. Desde então, Linum chama a praia de Praia da Fome. No outono, Torut passou a falar pelo Que Apaga o Sol em Linum. Era o primeiro a rezar e o último a duvidar. Em Linum nasceu a primeira criança: Kogau, filha de Mira e Beor.
+Linum passou fome por causa da seca por 23 dias, e quatro pessoas morreram. A fome ensinou: desde então, Linum estoca comida e não come tudo o que colhe. A praia passou a ser a praia da fome: Praia da Fome. Em Linum, Torut tomou para si o cuidado das preces ao Que Apaga o Sol. No inverno, nasceu Kogau, a primeira de Linum.
 
 ### Ano 47
 
@@ -150,11 +152,11 @@ Raya, que falava pelo Senhor do Trovão em Sagak, deu à luz e não sobreviveu a
 
 ### Ano 48
 
-Raut não podia mais viver perto de Viu. Saiu de Zeor com treze pessoas e fundou Saem no morro. Zetoru teve dois de uma vez, Enmia e Zeya, e todos foram ver.
+Raut não podia mais viver perto de Viu. Saiu de Zeor com treze pessoas e fundou Saem no morro. Nasceram gêmeos de Zetoru: Enmia e Zeya.
 
 ### Ano 49
 
-No verão do ano 49, Enlinya, de Saem, foi viver em Sagak com Niut: o primeiro casamento entre os dois povos. Em Saem, Viu tomou para si o cuidado das preces à Estrela de Cauda. Em Sagak, Enlinya pediu: «Manda água, Senhor do Trovão, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Senhor do Trovão tinha ouvido. Foi só o tempo, mas quem iria dizer? Saem passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
+No verão, Enlinya, de Saem, foi viver em Sagak com Niut: o primeiro casamento entre os dois povos. Viu passou a falar pela Estrela de Cauda em Saem. Era a primeira a rezar e a última a duvidar. Enlinya tinha rezado: «Manda água, Senhor do Trovão, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que o Senhor do Trovão tinha ouvido. A crônica sabe que foi acaso. O dia em que a chuva voltou virou festa em Saem: todo ano, celebram a chuva que a Estrela de Cauda mandou.
 
 ### Ano 50
 
@@ -162,29 +164,29 @@ Nos anos 41 a 50 houve quatro secas, três fomes e treze preces que pareceram at
 
 ### Ano 51
 
-Na primavera, Viu, que falava pela Estrela de Cauda em Saem, morreu dormindo, aos 50 anos. Nasceu Linyoa, a primeira de Saem.
+Na primavera, Viu, que falava pela Estrela de Cauda em Saem, morreu dormindo, aos 50 anos. No verão, em Saem nasceu a primeira criança: Linyoa, filha de Visau e Mim.
 
 ### Ano 52
 
-Linlina, de Saem, casou-se com Torik e foi viver em Zeor. Foi o primeiro laço entre os dois povos. O sol escureceu outra vez.
+Torik, de Zeor, tomou por esposa Linlina, de Saem, e os dois povos passaram a se visitar. No outono, de novo o sol se apagou no meio do dia.
 
 ### Ano 53
 
-A seca voltou, como no ano 41: 22 dias sem chuva, até que o céu se abriu. Mira tinha rezado: «Que Apaga o Sol, não nos deixes secar.» Quando a chuva voltou, Linum agradeceu ao Que Apaga o Sol. O deus não tinha feito nada.
+De novo a chuva sumiu, como no ano 41. Foram 22 dias de seca. Em Linum, Mira pediu: «Que Apaga o Sol, não nos deixes secar.» Quando a chuva voltou, Linum agradeceu ao Que Apaga o Sol. O deus nada fez: o crédito era de graça.
 
 ### Ano 54
 
-Na primavera, morreu Torut, que falava pelo Que Apaga o Sol em Linum, aos 51 anos.
+Na primavera do ano 54, morreu Torut, que falava pelo Que Apaga o Sol em Linum, aos 51 anos.
 
 *Entre os anos 55 e 57, nada mudou o rumo do mundo.*
 
 ### Ano 58
 
-Em Saem, Raut pediu: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Saem duvidou de que a Estrela de Cauda tinha ouvido. Apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu. Depois disso, Linum deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Que Risca o Céu».
+Raut tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Saem duvidou de que a Estrela de Cauda tinha ouvido. Apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu. Para Linum, o deus já não era «o Que Apaga o Sol»: passou a ser «o Que Risca o Céu».
 
 ### Ano 59
 
-Bebeik, que falava pelo Que Risca o Céu em Linum, morreu de repente, aos 40 anos. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Sagak, e 16 mortos. As crianças foram as primeiras. Depois daquela fome, Sagak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Na primavera do ano 59, Bebeik, que falava pelo Que Risca o Céu em Linum, morreu de repente, aos 40 anos. Veio a pior fome que o mundo tinha visto: 9 dias no inverno em Sagak, e 16 mortos. As crianças foram as primeiras. Depois daquela fome, Sagak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 60
 
@@ -192,33 +194,33 @@ Nos anos 51 a 60 houve três secas, três fomes e vinte preces que pareceram ate
 
 ### Ano 61
 
-No outono, Lina deu à luz gêmeos, Niniu e Sa. Uns viram bênção; outros, mau sinal.
+No outono do ano 61, Lina deu à luz gêmeos, Niniu e Sa. Uns viram bênção; outros, mau sinal.
 
 ### Ano 62
 
-Torraim, que falava pela Estrela de Cauda em Zeor, morreu de velhice aos 60 anos. No inverno, Bea partiu com uma pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A terra tremeu. Caíram doze cabanas. Loena morreu sob os escombros. Para Saem, o deus já não era «a Estrela de Cauda»: passou a ser «o Que Sacode».
+Na primavera, Torraim, que falava pela Estrela de Cauda em Zeor, morreu de velhice aos 60 anos. Sem lugar e sem comida, Bea e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A terra tremeu. Caíram doze cabanas. Loena morreu sob os escombros. Depois disso, Saem deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Sacode».
 
 ### Ano 63
 
-A fome no inverno durou 9 dias em Zeor e levou oito vidas.
+Foram 9 dias de fome no inverno em Zeor, com oito mortos.
 
 ### Ano 64
 
-De novo a chuva sumiu, como no ano 53. Foram 19 dias de seca. No inverno, Zetoru rezou por Sasaem até a voz acabar. Sasaem morreu mesmo assim, e Zetoru nunca mais rezou.
+Faltou chuva outra vez, a primeira desde o ano 53: 19 dias de céu limpo. No inverno, Zetoru implorou pelo filho. Sasaem morreu, e daquele dia em diante Zetoru cuspia no chão quando falavam da Estrela de Cauda.
 
 ### Ano 65
 
-A doença entrou em Zeor e matou doze pessoas. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse. Foram 9 dias de fome no inverno em Zeor, com cinco mortos. O morro passou a ser o morro da fome: Morro da Fome. Lolour, de Linum, tomou por esposa Zelou, de Zeor, e os dois povos passaram a se visitar.
+A doença entrou em Zeor e matou doze pessoas. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse. A fome no inverno durou 9 dias em Zeor e levou cinco vidas. Desde então, Saem chama o morro de Morro da Fome. No verão, Zelou, de Zeor, casou-se com Lolour e foi viver em Linum. Foi o primeiro laço entre os dois povos.
 
 ## Capítulo III: As casas de pedra (anos 66 a 90)
 
 ### Ano 66
 
-Na primavera, Vimiya, que falava pelo Senhor do Trovão em Sagak, morreu dormindo, aos 61 anos. Saem ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Saem ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Sacode. No outono, Raenim anunciou que o Que Sacode proibia qualquer trato com Linum. O deus nunca disse isso, mas Saem obedeceu.
+Na primavera do ano 66, Vimiya, que falava pelo Senhor do Trovão em Sagak, morreu dormindo, aos 61 anos. Em Saem, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. O templo de Saem ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Sacode. No outono, Raenim anunciou que o Que Sacode proibia qualquer trato com Linum. O deus nunca disse isso, mas Saem obedeceu.
 
 ### Ano 67
 
-Saem atacou Linum na praia em nome do Que Sacode. Linum expulsou os atacantes. Na luta morreram Loa e Vira. Para Saem, a praia virou Praia do Luto. Começou a Guerra Santa: em nome do Que Sacode, Saem pegou em lanças contra Linum. Na Guerra Santa, Saem atacou Linum na praia em nome do Que Sacode. Os cestos de Linum ficaram vazios. Caíram Ralina e Mira. Linum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+Na primavera, Saem atacou Linum na praia em nome do Que Sacode. Linum expulsou os atacantes. Na luta morreram Loa e Vira. Para Saem, a praia virou Praia do Luto. Começou a Guerra Santa: em nome do Que Sacode, Saem pegou em lanças contra Linum. No verão, a Guerra Santa seguiu: Saem contra Linum, na praia em nome do Que Sacode. Linum foi derrotado e perdeu o que tinha guardado. Caíram Ralina e Mira. Depois da derrota, os jovens de Linum passaram a treinar com lanças.
 
 ### Ano 68
 
@@ -226,75 +228,75 @@ Morreu o último que tinha visto o ano 24. Em Linum, se fazia a festa da chuva, 
 
 ### Ano 69
 
-Linik tinha rezado: «Manda água, Senhor do Trovão, que as crianças têm sede.» Quando a chuva voltou, Sagak agradeceu ao Senhor do Trovão. O deus nada fez: o crédito era de graça. Os de Sagak caíram sobre Linum na praia. Sagak venceu e levou a comida guardada. Miu e Enena morreram na luta. Desde então, Sagak chama a praia de Praia da Vitória. Depois da luta, Sagak e Linum se encontraram na praia e juraram paz.
+Em Sagak, Linik pediu: «Manda água, Senhor do Trovão, que as crianças têm sede.» Quando a chuva voltou, Sagak agradeceu ao Senhor do Trovão. O deus não tinha feito nada. No inverno, houve luta na praia: Sagak atacou Linum. Sagak venceu e levou a comida guardada. Miu e Enena morreram na luta. Desde então, Sagak chama a praia de Praia da Vitória. Sagak e Linum fizeram as pazes na praia, antes que a briga crescesse.
 
 ### Ano 70
 
-Na primavera, Raut, que fundou Saem e o guiava, morreu de velhice aos 55 anos. Houve luta no morro: Sagak atacou Saem. Saem foi derrotado e perdeu o que tinha guardado. Na luta morreram Lora e Mim. Para Sagak, o morro virou Morro da Vitória. Sagak conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 21. Muitas cabanas ficaram vazias. No verão, a Guerra Santa esfriou sem acordo nem vencedor: três anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. Nos anos 61 a 70 houve quatro secas, seis fomes, cinco batalhas, 23 preces que pareceram atendidas e oito preces sem resposta; nasceram 99 crianças e morreram 103 pessoas. No fim do ano 70, 151 pessoas viviam no mundo: Zeor (65), Sagak (44), Linum (8) e Saem (34).
+Raut, que fundou Saem e o guiava, morreu de velhice aos 55 anos. Os de Sagak caíram sobre Saem no morro. Os cestos de Saem ficaram vazios. Caíram Lora e Mim. Para Sagak, o morro virou Morro da Vitória. Sagak conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 21. Muitas cabanas ficaram vazias. No verão, a Guerra Santa esfriou sem acordo nem vencedor: três anos, três batalhas e cinco mortos, e ninguém sabia mais por que lutava. Nos anos 61 a 70 houve quatro secas, seis fomes, cinco batalhas, 23 preces que pareceram atendidas e oito preces sem resposta; nasceram 99 crianças e morreram 103 pessoas. No fim do ano 70, 151 pessoas viviam no mundo: Zeor (65), Sagak (44), Linum (8) e Saem (34).
 
 ### Ano 71
 
-Houve um tremor de terra. Caíram onze cabanas. Saut, Selik, Miut, Sellora, Gau e Niu morreram sob os escombros. Depois disso, Sagak deixou de chamar o deus de «o Senhor do Trovão» e passou a chamá-la de «a Terra Brava». No verão, por 15 noites, uma estrela de cauda ficou no céu, e as crianças não queriam entrar. Enniut, o curioso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Um raio caiu na praia durante a tempestade e matou Gara. A família de Gara nunca perdoou o céu.
+Na primavera do ano 71, o chão tremeu sem aviso. Caíram onze cabanas. Saut, Selik, Miut, Sellora, Gau e Niu morreram sob os escombros. Para Sagak, o deus já não era «o Senhor do Trovão»: passou a ser «a Terra Brava». No verão, uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito. No outono, Enniut, o curioso, descobriu como empilhar pedras cortadas sem que caíssem. Numa tempestade sobre a praia, um raio matou Gara. A família de Gara nunca perdoou o céu.
 
 *Entre os anos 72 e 73, nada mudou o rumo do mundo.*
 
 ### Ano 74
 
-Na primavera, morreu Linik, que falava pela Terra Brava em Sagak, aos 50 anos.
+Na primavera do ano 74, morreu Linik, que falava pela Terra Brava em Sagak, aos 50 anos.
 
 ### Ano 75
 
-Na primavera, vieram de além da borda dois estranhos, magros e calados: Sellinu e Koik. Linum os recebeu, e eles ficaram. Em Saem, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 24, só a crônica guarda. Depois da seca, Sagak jurou nunca desperdiçar água. Vimiut juntou seis pessoas e foi embora pela borda do mundo, atrás de terra melhor. Zetoru, que guiava Zeor, morreu de fome. Nunca perdoou o deus pela morte de Sasaem.
+Na primavera do ano 75, um dia, Sellinu e Koik apareceram na borda do mundo. Não sabiam de onde vinham. Linum lhes deu lugar no fogo. Em Saem, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 24, só a crônica guarda. Depois da seca, Sagak jurou nunca desperdiçar água. Vimiut partiu com seis pessoas para além da borda do mundo. Nunca voltaram. Zetoru, que guiava Zeor, morreu de fome. Desde a morte de Sasaem, nunca mais tinha rezado.
 
 ### Ano 76
 
-Na primavera, em Saem, os jovens deixaram de lado o treino com lanças. Era coisa dos velhos, diziam. Zeor escolheu Beim para guiar o grupo. Linsaut queria o lugar e nunca perdoou. Veio a pior fome que o mundo tinha visto: 15 dias no inverno em Zeor, e 30 mortos. As crianças foram as primeiras. Sagak conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 42. Muitas cabanas ficaram vazias.
+Saem deixou o treino com lanças para trás: os jovens já não viam sentido naquilo. Zeor escolheu Beim para guiar o grupo. Linsaut queria o lugar e nunca perdoou. Veio a pior fome que o mundo tinha visto: 15 dias no inverno em Zeor, e 30 mortos. As crianças foram as primeiras. Sagak conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 42. Muitas cabanas ficaram vazias.
 
 ### Ano 77
 
-Na primavera do ano 77, da terra que ninguém conhece chegaram Iba e Ibniur. Para Linum, que já não tinha com quem casar os seus, foi uma bênção.
+Da terra que ninguém conhece chegaram Iba e Ibniur. Para Linum, que já não tinha com quem casar os seus, foi uma bênção.
 
 ### Ano 78
 
-No outono, Sagak também trocou as cabanas por casas de pedra. No inverno, sem lugar e sem comida, Gaut e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Saem, nasceu a mesma lenda: além da borda, uma terra sem fome. Faltou chuva outra vez, a primeira desde o ano 64: 21 dias de céu limpo. Depois da seca, Saem jurou nunca desperdiçar água.
+Depois de Saem, foi Sagak que ergueu paredes de pedra. No inverno, Gaut juntou três pessoas e foi embora pela borda do mundo, atrás de terra melhor. Em Saem, nasceu a mesma lenda: além da borda, uma terra sem fome. A seca voltou, como no ano 64: 21 dias sem chuva, até que o céu se abriu. Depois da seca, Saem jurou nunca desperdiçar água.
 
 ### Ano 79
 
-Na primavera, Viloik, que guiava Sagak, morreu de velhice aos 60 anos. Em nome do Que Sacode, Raenim proibiu casamentos e trocas com Sagak. Era vontade de Raenim, não do deus. Houve luta na praia: Saem atacou Linum em nome do Que Sacode. Saem voltou com o que Linum tinha guardado. Caiu Gaor. Começou a Guerra da Fome da Praia: Saem, com fome, foi buscar à força a comida de Linum. Linum fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
+Viloik, que guiava Sagak, morreu de velhice aos 60 anos. Em nome do Que Sacode, Raenim proibiu casamentos e trocas com Sagak. Era vontade de Raenim, não do deus. Houve luta na praia: Saem atacou Linum em nome do Que Sacode. Saem voltou com o que Linum tinha guardado. Na luta morreu Gaor. No outono, começou a Guerra da Fome da Praia: Saem, com fome, foi buscar à força a comida de Linum. Depois de tanto sofrer nas mãos dos vizinhos, Linum passou a desconfiar de todo estrangeiro.
 
 ### Ano 80
 
-As casas de pedra chegaram a Zeor, e com elas um templo. Em Zeor, quem passou a decidir foi o templo: os sacerdotes falavam pela Estrela de Cauda, e o deus decidia tudo. Nik, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Nos anos 71 a 80 houve duas secas, quatro fomes, três batalhas, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 106 crianças e morreram 126 pessoas. No fim do ano 80, 124 pessoas viviam no mundo: Zeor (65), Sagak (27), Linum (10) e Saem (22).
+No verão do ano 80, as casas de pedra chegaram a Zeor, e com elas um templo. Em Zeor, quem passou a decidir foi o templo: os sacerdotes falavam pela Estrela de Cauda, e o deus decidia tudo. Nik, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Nos anos 71 a 80 houve duas secas, quatro fomes, três batalhas, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 106 crianças e morreram 126 pessoas. No fim do ano 80, 124 pessoas viviam no mundo: Zeor (65), Sagak (27), Linum (10) e Saem (22).
 
 ### Ano 81
 
-Depois de tanto silêncio, muitos em Linum deixaram de acreditar: não havia ninguém no céu. As preces pararam. Começou a Guerra Santa da Floresta: em nome do Que Sacode, Saem pegou em lanças contra Sagak. A Guerra Santa da Floresta seguiu: Saem contra Sagak, na floresta em nome do Que Sacode. Os de Sagak não cederam, e Saem recuou. Moyoik e Torvik morreram na luta. Desde então, Saem chama a floresta de Floresta do Luto. Depois da derrota, os jovens de Saem passaram a treinar com lanças.
+Linum parou de rezar. Diziam que a Terra Brava nunca tinha existido. Começou a Guerra Santa da Floresta: em nome do Que Sacode, Saem pegou em lanças contra Sagak. Na Guerra Santa da Floresta, Saem atacou Sagak na floresta em nome do Que Sacode. Sagak resistiu, e Saem voltou de mãos vazias. Moyoik e Torvik morreram na luta. Desde então, Saem chama a floresta de Floresta do Luto. Saem não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
 ### Ano 82
 
-Na primavera, Beu, a medrosa, morreu dormindo, aos 57 anos. No verão, Saem e Linum, cansados de enterrar os seus, fizeram as pazes na praia. Depois de três anos, quatro batalhas e um morto, a Guerra da Fome da Praia terminou em paz. Saem terminou maior do que tinha começado.
+Na primavera, morreu Beu, a medrosa, aos 57 anos. No verão, depois de tantos mortos, Saem e Linum se encontraram na praia e juraram paz. Depois de três anos, quatro batalhas e um morto, a Guerra da Fome da Praia terminou em paz. Quem ganhou com isso foi Saem.
 
 ### Ano 83
 
-Sagak rezou e não foi ouvido. Os mais firmes disseram que a Terra Brava os estava testando, e se orgulharam de aguentar. Saem rezou e não foi ouvido. Os mais firmes disseram que o Que Sacode os estava testando, e se orgulharam de aguentar. No outono, na Guerra Santa da Floresta, Saem atacou Sagak na floresta em nome do Que Sacode. Os cestos de Sagak ficaram vazios. Na luta morreram Selviut, Saem e Enor. Sagak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+No verão do ano 83, Sagak rezou e não foi ouvido. Os mais firmes disseram que a Terra Brava os estava testando, e se orgulharam de aguentar. Saem rezou e não foi ouvido. Os mais firmes disseram que o Que Sacode os estava testando, e se orgulharam de aguentar. No outono, a Guerra Santa da Floresta seguiu: Saem contra Sagak, na floresta em nome do Que Sacode. Sagak foi derrotado e perdeu o que tinha guardado. Caíram Selviut, Saem e Enor. Depois da derrota, os jovens de Sagak passaram a treinar com lanças.
 
 ### Ano 84
 
-Enem, que guiava Linum, morreu dormindo, aos 45 anos. Em Sagak, Ensara pediu: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que a Terra Brava tinha ouvido. No inverno, Torim implorou pelo filho. Lintorim morreu, e daquele dia em diante Torim cuspia no chão quando falavam da Estrela de Cauda.
+Na primavera, Enem, que guiava Linum, morreu dormindo, aos 45 anos. Ensara tinha rezado: «Terra Brava, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Sagak duvidou de que a Terra Brava tinha ouvido. Torim rezou por Lintorim até a voz acabar. Lintorim morreu mesmo assim, e Torim nunca mais rezou.
 
 ### Ano 85
 
-No outono do ano 85, depois de tanto sofrer nas mãos dos vizinhos, Saem passou a desconfiar de todo estrangeiro. Depois de tantos mortos, Saem e Sagak se encontraram na floresta e juraram paz. A Guerra Santa da Floresta acabou em trégua, depois de seis anos, cinco batalhas e sete mortos.
+Saem fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Saem e Sagak, cansados de enterrar os seus, fizeram as pazes na floresta. A Guerra Santa da Floresta acabou em trégua, depois de seis anos, cinco batalhas e sete mortos.
 
 *Do ano 86 ao 87, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 88
 
-Morreu Ensara, a engenhosa, aos 54 anos. Com lanças e promessas, Gaya acabou com o conselho de Linum e passou a mandar sozinho.
+Na primavera, Ensara, a engenhosa, morreu dormindo, aos 54 anos. Com lanças e promessas, Gaya acabou com o conselho de Linum e passou a mandar sozinho.
 
 ### Ano 89
 
-No inverno, Ibniur, o curioso, também aprendeu a cortar e empilhar pedra, como já faziam em Sagak.
+No inverno do ano 89, Ibniur, o curioso, também aprendeu a cortar e empilhar pedra, como já faziam em Sagak.
 
 ### Ano 90
 
@@ -304,43 +306,43 @@ Nos anos 81 a 90 houve seis batalhas, seis preces que pareceram atendidas e dez 
 
 ### Ano 91
 
-Na primavera, Bem, que falava pela Terra Brava em Sagak, morreu de velhice aos 48 anos. Na guerra, tinha tirado duas vidas. No verão, a forja de Sagak não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Bem, que falava pela Terra Brava em Sagak, morreu de velhice aos 48 anos. Matou duas pessoas na guerra. A forja de Sagak não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 92
 
-Foram 5 dias de fome no inverno em Zeor, com um morto.
+A fome no inverno durou 5 dias em Zeor e levou uma vida.
 
 ### Ano 93
 
-Na primavera do ano 93, o frio levou Miem, que falava pela Estrela de Cauda em Zeor. O inverno foi de gelo: duas pessoas morreram de frio.
+O frio levou Miem, que falava pela Estrela de Cauda em Zeor. O inverno foi de gelo: duas pessoas morreram de frio.
 
 ### Ano 94
 
-Na primavera, morreu Raenim, que guiava Saem, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Linum. Morreu o último que tinha visto o ano 24. Em Zeor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Torim tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças à Estrela de Cauda.
+Morreu Raenim, que guiava Saem, aos 52 anos. Foi quem proibiu, em nome do deus, o trato com Linum. Morreu o último que tinha visto o ano 24. Em Zeor, se guardava tanta comida para o inverno, mas ninguém sabia mais dizer por quê. Em Zeor, Torim pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Zeor deu graças à Estrela de Cauda.
 
 ### Ano 95
 
-Nik, o engenhoso, morreu de velhice aos 60 anos. Os de Zeor caíram sobre Sagak na floresta. Zeor venceu e levou a comida guardada.
+Na primavera, Nik, o engenhoso, morreu de velhice aos 60 anos. Houve luta na floresta: Zeor atacou Sagak. Zeor venceu e levou a comida guardada.
 
 ### Ano 96
 
-No verão do ano 96, depois de Saem, foi Linum que ergueu paredes de pedra.
+No verão do ano 96, Linum também trocou as cabanas por casas de pedra.
 
 ### Ano 97
 
-Ninguém lembrava mais a razão, e Zeor abandonou o treino com lanças. Começou a Guerra da Fome da Floresta: Zeor, com fome, foi buscar à força a comida de Sagak. A Guerra da Fome da Floresta seguiu: Zeor contra Sagak, na floresta. Sagak resistiu, e Zeor voltou de mãos vazias. Caíram Zelinim, Rabera e Loem. Zeor e Sagak, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de dois anos, duas batalhas e três mortos, a Guerra da Fome da Floresta terminou em paz.
+Na primavera, ninguém lembrava mais a razão, e Zeor abandonou o treino com lanças. Começou a Guerra da Fome da Floresta: Zeor, com fome, foi buscar à força a comida de Sagak. A Guerra da Fome da Floresta seguiu: Zeor contra Sagak, na floresta. Sagak expulsou os atacantes. Na luta morreram Zelinim, Rabera e Loem. Depois de tantos mortos, Zeor e Sagak se encontraram na floresta e juraram paz. Depois de dois anos, duas batalhas e três mortos, a Guerra da Fome da Floresta terminou em paz.
 
 ### Ano 98
 
-Na primavera do ano 98, um dia, Tortorem e mais cinco pessoas pegaram o que tinham e passaram da borda do mundo. Ninguém os viu de novo. Houve luta na praia: Zeor atacou Linum. Linum foi derrotado e perdeu o que tinha guardado. Gara, Ulsela e Vienem morreram na luta. Para Zeor, a praia virou Praia da Vitória. Depois de tantos mortos, Zeor e Linum se encontraram na praia e juraram paz. No verão, Zeor rezou e não foi ouvido. Os mais firmes disseram que a Estrela de Cauda os estava testando, e se orgulharam de aguentar.
+Um dia, Tortorem e mais cinco pessoas pegaram o que tinham e passaram da borda do mundo. Ninguém os viu de novo. Zeor atacou Linum na praia. Os cestos de Linum ficaram vazios. Gara, Ulsela e Vienem morreram na luta. Para Zeor, a praia virou Praia da Vitória. Zeor e Linum, cansados de enterrar os seus, fizeram as pazes na praia. No verão, Zeor rezou e não foi ouvido. Os mais firmes disseram que a Estrela de Cauda os estava testando, e se orgulharam de aguentar.
 
 ### Ano 99
 
-O frio levou Beim, que guiava Zeor. Zeor passou fome no inverno por 14 dias, e três pessoas morreram.
+Beim, que guiava Zeor, morreu de frio. Zeor passou fome no inverno por 14 dias, e três pessoas morreram.
 
 ### Ano 100
 
-Zeor se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. O saber de Sagak chegou a Linum: Saselur aprendeu a tirar metal da pedra. A guerra apressou a ideia. Nos anos 91 a 100 houve oito fomes, três batalhas, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 70 crianças e morreram 60 pessoas. No fim do ano 100, 178 pessoas viviam no mundo: Zeor (81), Sagak (37), Linum (24) e Saem (36).
+Na primavera, Zeor se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo voltou a ter um líder. No inverno, em Linum, foi Saselur quem aprendeu a tirar metal da pedra. A guerra apressou a ideia. Nos anos 91 a 100 houve oito fomes, três batalhas, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 70 crianças e morreram 60 pessoas. No fim do ano 100, 178 pessoas viviam no mundo: Zeor (81), Sagak (37), Linum (24) e Saem (36).
 
 ---
 
