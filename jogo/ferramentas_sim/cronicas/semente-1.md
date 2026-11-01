@@ -2,7 +2,13 @@
 
 *100 anos, sem intervenção do deus.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e quatro povos: Zeor, Sagak, Linum e Saem. Chegaram a trabalhar o metal. Chamaram o deus de «o Que Nega», «a Voz do Céu», «o Que Apaga o Sol», «a Estrela de Cauda» e «o Senhor do Trovão». A pior fome, no ano 76, levou 42 vidas em Sagak. Houve cinco guerras com nome, entre elas a Guerra da Fome. O deus foi embora no ano 100, com 178 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Saenut e Loenu, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Zeor. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 14)
 
 ### Ano 1
 
@@ -43,6 +49,8 @@ Loenu, a devota, notou que as sementes jogadas perto do acampamento brotavam. Co
 A seca voltou, como no ano 2: 26 dias sem chuva, até que o céu se abriu.
 
 *Os anos 13 a 14 passaram em paz.*
+
+## Capítulo II: As roças (anos 15 a 65)
 
 ### Ano 15
 
@@ -202,6 +210,8 @@ De novo a chuva sumiu, como no ano 53. Foram 19 dias de seca. No inverno, Zetoru
 
 A doença entrou em Zeor e matou doze pessoas. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse. Foram 9 dias de fome no inverno em Zeor, com cinco mortos. O morro passou a ser o morro da fome: Morro da Fome. Lolour, de Linum, tomou por esposa Zelou, de Zeor, e os dois povos passaram a se visitar.
 
+## Capítulo III: As casas de pedra (anos 66 a 90)
+
 ### Ano 66
 
 Na primavera, Vimiya, que falava pelo Senhor do Trovão em Sagak, morreu dormindo, aos 61 anos. Saem ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Saem ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Sacode. No outono, Raenim anunciou que o Que Sacode proibia qualquer trato com Linum. O deus nunca disse isso, mas Saem obedeceu.
@@ -290,6 +300,8 @@ No inverno, Ibniur, o curioso, também aprendeu a cortar e empilhar pedra, como 
 
 Nos anos 81 a 90 houve seis batalhas, seis preces que pareceram atendidas e dez preces sem resposta; nasceram 87 crianças e morreram 37 pessoas. No fim do ano 90, 174 pessoas viviam no mundo: Zeor (84), Sagak (29), Linum (22) e Saem (39).
 
+## Capítulo IV: O tempo do metal (anos 91 a 100)
+
 ### Ano 91
 
 Na primavera, Bem, que falava pela Terra Brava em Sagak, morreu de velhice aos 48 anos. Na guerra, tinha tirado duas vidas. No verão, a forja de Sagak não apagava mais. O metal mudou o trabalho e mudou a guerra.
@@ -332,6 +344,19 @@ Zeor se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo vol
 
 ---
 
+## Quem foi quem
+
+- **Mira**, de Linum (anos 17 a 67). Fundou Linum.
+- **Viloik**, de Sagak (anos 19 a 79). Guiou Sagak.
+- **Satora**, de Sagak (até o ano 39). Fundou Sagak; guiou Zeor.
+- **Raut**, de Saem (anos 15 a 70). Aprendeu a cortar a pedra; fundou Saem.
+- **Viu**, de Saem (anos 1 a 51). Falou pelo deus em Saem; guiou Zeor.
+- **Rabea**, de Sagak (até o ano 30). Deu ao deus o nome de «o Que Nega»; falou pelo deus em Zeor.
+- **Torut**, de Linum (anos 3 a 54). Falou pelo deus em Sagak; falou pelo deus em Linum.
+- **Raenim**, de Saem (anos 42 a 94). Falou pelo deus em Saem; guiou Saem.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Zeor** vive no lago, com 80 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «a Estrela de Cauda»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (desde o ano 65); treina os jovens com lanças (desde o ano 97).
@@ -342,3 +367,7 @@ Zeor se revoltou contra o templo. Os sacerdotes perderam o comando, e o povo vol
 Lugares com nome: Praia da Fome (praia, para Linum), Praia do Luto (praia, para Saem), Praia da Vitória (praia, para Sagak), Praia da Vitória (praia, para Zeor), Lago da Fome (lago, para Zeor), Floresta da Vitória (floresta, para Sagak), Floresta do Luto (floresta, para Zeor), Floresta do Luto (floresta, para Saem), Morro da Fome (morro, para Saem) e Morro da Vitória (morro, para Sagak).
 
 Em 100 anos nasceram 601 pessoas e morreram 424.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Zeor continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*

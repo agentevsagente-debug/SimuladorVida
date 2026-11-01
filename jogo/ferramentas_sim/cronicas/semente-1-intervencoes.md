@@ -2,7 +2,13 @@
 
 *100 anos, cenário semente1-intervencoes.txt.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e três povos: Zeor, Linon e Selum. Chegaram às casas de pedra. Chamaram o deus de «o Pai das Águas», «a Terra Brava», «a Voz do Céu», «o Que Fere» e «o Que Rega». A pior fome, no ano 87, levou 12 vidas em Selum. A peste veio no ano 56. Houve duas guerras com nome, entre elas a Guerra da Fome. O deus foi embora no ano 100, com 89 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Saenut e Loenu, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Zeor. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 30)
 
 ### Ano 1
 
@@ -99,6 +105,8 @@ Da terra que ninguém conhece chegaram Lisela, Miloem e Beenya. Para Linon, que 
 ### Ano 30
 
 No fim do ano 30, dezoito pessoas viviam no mundo: Zeor (10) e Linon (8).
+
+## Capítulo II: As roças (anos 31 a 89)
 
 ### Ano 31
 
@@ -278,6 +286,8 @@ Na primavera, na Guerra da Fome, Linon atacou Selum na praia. Linon venceu e lev
 
 *O ano 89 passou sem nada que a crônica precise guardar.*
 
+## Capítulo III: As casas de pedra (anos 90 a 100)
+
 ### Ano 90
 
 No outono, Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. No inverno, em Selum, foi Mivira quem aprendeu a cortar e empilhar pedra. Nos anos 81 a 90 houve quatro fomes, cinco batalhas, oito preces que pareceram atendidas e três preces sem resposta; nasceram 27 crianças e morreram 27 pessoas. No fim do ano 90, 57 pessoas viviam no mundo: Zeor (13), Linon (23) e Selum (21).
@@ -318,6 +328,19 @@ No outono do ano 100, o saber de Zeor chegou a Linon: Linlinya aprendeu a tirar 
 
 ---
 
+## Quem foi quem
+
+- **Torzera**, de Selum (anos 20 a 70). Falou pelo deus em Linon; falou pelo deus em Selum.
+- **Enon**, de Selum (anos 56 a 87). Falou pelo deus em Selum.
+- **Beenya**, de Zeor (anos 4 a 74). Falou pelo deus em Zeor; guiou Zeor.
+- **Rabea**, de Zeor (até o ano 9). Deu ao deus o nome de «o Pai das Águas»; descobriu que semente vira planta.
+- **Loem**, de Zeor (ainda vivo no fim). Falou pelo deus em Zeor; guiou Zeor.
+- **Haraik**, de Selum (anos 38 a 93). Falou pelo deus em Selum.
+- **Milina**, de Zeor (anos 42 a 96). Aprendeu a cortar a pedra; guiou Zeor.
+- **Viya**, de Linon (ainda viva no fim). Falou pelo deus em Linon.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Zeor** vive na floresta, com 15 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: queima os mortos (desde o ano 56); guarda tanta comida para o inverno (desde o ano 75); faz a festa da chuva (desde o ano 93); treina os jovens com lanças (desde o ano 99).
@@ -327,3 +350,7 @@ No outono do ano 100, o saber de Zeor chegou a Linon: Linlinya aprendeu a tirar 
 Lugares com nome: Praia da Fartura (praia, para Selum), Lago do Raio (lago, para Linon), Lago da Pedra Erguida (lago, para Zeor), Lago da Pedra Erguida (lago, para Selum), Floresta da Chuva (floresta, para Zeor) e Floresta da Vitória (floresta, para Selum).
 
 Em 100 anos nasceram 211 pessoas e morreram 141.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Selum continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*

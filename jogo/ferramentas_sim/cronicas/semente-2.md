@@ -2,7 +2,13 @@
 
 *100 anos, sem intervenção do deus.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e um povo: Esar. Chegaram às casas de pedra. Chamaram o deus de «o Que Nega», «o Que Sacode» e «o Que Apaga o Sol». A pior fome, no ano 75, levou 21 vidas em Esar. A peste veio no ano 20. O deus foi embora no ano 100, com 18 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Kaarel e Aru, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Esar. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 14)
 
 ### Ano 1
 
@@ -51,6 +57,8 @@ A comida voltou, e Esar deu graças ao Que Nega. O deus nada fez: o crédito era
 Na primavera, Aru, que fundou Esar e o guiava, morreu de velhice aos 64 anos. Ela sabia plantar.
 
 *No ano 14, nada de notável aconteceu.*
+
+## Capítulo II: As roças (anos 15 a 64)
 
 ### Ano 15
 
@@ -172,6 +180,8 @@ Numa tempestade sobre a praia, um raio matou Esia. Em Esar, disseram que era cas
 
 Morreu Gaut, que falava pelo Que Sacode em Esar, aos 53 anos.
 
+## Capítulo III: As casas de pedra (anos 65 a 100)
+
 ### Ano 65
 
 Gaaria tinha rezado: «Manda água, Que Sacode, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. No inverno, em Esar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
@@ -242,6 +252,18 @@ Nos anos 91 a 100 houve três secas, duas fomes e seis preces que pareceram aten
 
 ---
 
+## Quem foi quem
+
+- **Gaut**, de Esar (anos 11 a 64). Aprendeu a cortar a pedra; falou pelo deus em Esar.
+- **Orut**, de Esar (ainda vivo no fim). Falou pelo deus em Esar.
+- **Demya**, de Esar (até o ano 38). Guiou Esar.
+- **Kurkao**, de Esar (até o ano 20). Deu ao deus o nome de «o Que Nega»; falou pelo deus em Esar.
+- **Aru**, de Esar (até o ano 13). Descobriu que semente vira planta; guiou Esar.
+- **Gaaria**, de Esar (anos 16 a 66). Guiou Esar.
+- **Doena**, de Esar (anos 3 a 31). Falou pelo deus em Esar.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Esar** vive na praia, com 18 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 61); não desperdiça uma gota d'água (desde o ano 74); faz a festa da chuva (desde o ano 91).
@@ -249,3 +271,7 @@ Nos anos 91 a 100 houve três secas, duas fomes e seis preces que pareceram aten
 Lugares com nome: Praia do Raio (praia, para Esar).
 
 Em 100 anos nasceram 80 pessoas e morreram 80.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Esar continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*

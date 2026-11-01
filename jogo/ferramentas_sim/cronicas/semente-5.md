@@ -2,7 +2,13 @@
 
 *100 anos, sem intervenção do deus.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e sete povos: Taur, Marak, Nion, Daon, Zear, Kiak e outros. Chegaram às casas de pedra. Chamaram o deus de «o Que Risca o Céu», «o Que Apaga o Sol» e «o Olho Escuro». A pior fome, no ano 59, levou 20 vidas em Daon. Houve uma guerra com nome: a Guerra Santa. O deus foi embora no ano 100, com 155 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Marsaim e Loil, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Taur. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 29)
 
 ### Ano 1
 
@@ -83,6 +89,8 @@ Sau, que falava pelo Que Risca o Céu em Marak, morreu de velhice aos 54 anos. F
 A seca voltou, como no ano 14: 21 dias sem chuva, até que o céu se abriu. Marak deixou o lago, onde a comida tinha acabado, e foi viver na praia. Em Marak, Lopeor pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Marak viu nisso obra do Que Risca o Céu.
 
 *O ano 29 passou sem nada que a crônica precise guardar.*
+
+## Capítulo II: As roças (anos 30 a 87)
 
 ### Ano 30
 
@@ -292,6 +300,8 @@ Na primavera, morreu Kitena, filha pequena de Loa. Faltou chuva outra vez, a pri
 
 Na primavera, Loa, que falava pela Voz dos Sonhos em Kiak, morreu ao dar à luz. Em Kiak, quem vinha de fora era recebido com comida e lugar perto do fogo.
 
+## Capítulo III: As casas de pedra (anos 88 a 100)
+
 ### Ano 88
 
 Na primavera, Da, que falava pela Voz dos Sonhos em Marak, morreu de velhice aos 47 anos. Morreu o último que tinha visto o ano 38. Em Taur, os jovens treinavam com lanças, mas ninguém sabia mais dizer por quê. Em Taur, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. No verão, Loan, o engenhoso, também aprendeu a cortar e empilhar pedra, como já faziam em Daon.
@@ -338,6 +348,19 @@ Na primavera, morreu Isa, que guiava Taur, aos 51 anos. Nos anos 91 a 100 houve 
 
 ---
 
+## Quem foi quem
+
+- **Tean**, de Daon (anos 15 a 58). Fez o povo chamar o deus de «o Que Levanta»; fundou Nion.
+- **Sau**, de Marak (até o ano 26). Deu ao deus o nome de «o Que Risca o Céu»; falou pelo deus em Taur.
+- **Da**, de Marak (anos 41 a 88). Falou pelo deus em Marak.
+- **Peor**, de Taur (anos 49 a 90). Fez o povo chamar o deus de «o Sedento»; falou pelo deus em Taur.
+- **Ruloa**, de Zear (anos 10 a 65). Falou pelo deus em Zear.
+- **Maril**, de Zear (anos 23 a 73). Descobriu que semente vira planta; falou pelo deus em Nion.
+- **Tatan**, de Taur (ainda vivo no fim). Aprendeu a cortar a pedra.
+- **Lopeor**, de Marak (até o ano 32). Fundou Marak.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Taur** vive na floresta, com 39 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «o Sedento»; costumes: faz a festa da chuva (a origem foi esquecida).
@@ -350,3 +373,7 @@ Povos que deixaram de existir: Nion, Daon e Zear.
 Lugares com nome: Praia da Vitória (praia, para Zear), Praia do Luto (praia, para Daon), Lago do Raio (lago, para Marak), Floresta da Vitória (floresta, para Marak), Floresta do Luto (floresta, para Taur) e Morro da Fome (morro, para Daon).
 
 Em 100 anos nasceram 369 pessoas e morreram 228.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Marak continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*

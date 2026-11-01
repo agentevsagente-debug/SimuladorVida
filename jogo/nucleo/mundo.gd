@@ -2277,7 +2277,8 @@ func _ruinas_e_memoria() -> void:
 					else:
 						c.saberes.append(proximo)
 					c.feitos += 2
-					registrar("ruinas_saber", "social", 7, g.zona, g.id, [c.id], {"saber": proximo, "povo": r["povo"], "era": r["era"]})
+					registrar("ruinas_saber", "social", 7, g.zona, g.id, [c.id], {"saber": proximo, "povo": r["povo"], "era": r["era"],
+						"antiga": r["era"] < era})
 			# Quem vê as ruínas de um povo que acabou cria uma explicação.
 			if not explicou and not g.ruinas_vistas.has(r["povo"]):
 				explicou = true
@@ -2335,7 +2336,7 @@ func nome_da_era(n: int = -1) -> String:
 ## Fecha a crônica da era como um livro. `motivo`: "" (extinção) ou "abandono".
 func _fechar_livro(motivo: String) -> Dictionary:
 	_cronista.processar_ate(ano())
-	var titulo := nome_da_era()
+	var titulo := _cronista.titulo_do_livro(nome_da_era(), era_inicio_ano, ano(), motivo != "abandono")
 	var sub := "Crônica do mundo da semente %d, do ano %d ao ano %d." % [semente, era_inicio_ano, ano()]
 	if motivo == "abandono":
 		sub += " O deus abandonou este mundo com o povo ainda vivo."

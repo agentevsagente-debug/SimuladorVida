@@ -2,7 +2,13 @@
 
 *100 anos, sem intervenção do deus.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e quatro povos: Teil, Demur, Zean e Toror. Chegaram a trabalhar o metal. Chamaram o deus de «o Que Nega», «o Que Apaga o Sol» e «a Estrela de Cauda». A pior fome, no ano 99, levou 37 vidas em Demur. A peste veio duas vezes. O deus foi embora no ano 100, com 192 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Demesem e Ibnira, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Teil. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 37)
 
 ### Ano 1
 
@@ -102,6 +108,8 @@ No verão, Ibim, o engenhoso, descobriu que uma semente enterrada vira planta.
 
 *O ano 37 foi calmo.*
 
+## Capítulo II: As roças (anos 38 a 67)
+
 ### Ano 38
 
 Ibim implorou pela filha. Naya morreu, e daquele dia em diante Ibim cuspia no chão quando falavam do Que Nega. No inverno, Teil fez as primeiras roças no Lago do Raio. Deixou de viver só do que achava e passou a plantar.
@@ -184,6 +192,8 @@ Em Teil, Enim pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de f
 
 *Do ano 66 ao 67, a vida seguiu sem grandes acontecimentos.*
 
+## Capítulo III: As casas de pedra (anos 68 a 72)
+
 ### Ano 68
 
 Com Nademo à frente, a nova geração de Demur abandonou o medo das tempestades, costume herdado dos avós. Teil ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Teil, quem passou a decidir foi o templo: os sacerdotes falavam pela Estrela de Cauda, e o deus decidia tudo.
@@ -199,6 +209,8 @@ Nos anos 61 a 70 houve quatro preces que pareceram atendidas; nasceram 27 crian�
 Demur também trocou as cabanas por casas de pedra. No inverno, Teya, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
 *O ano 72 passou sem nada que a crônica precise guardar.*
+
+## Capítulo IV: O tempo do metal (anos 73 a 100)
 
 ### Ano 73
 
@@ -302,6 +314,19 @@ Nos anos 91 a 100 houve três secas, onze fomes, dezoito preces que pareceram at
 
 ---
 
+## Quem foi quem
+
+- **Torik**, de Demur (até o ano 29). Falou pelo deus em Teil.
+- **Yoena**, de Demur (anos 65 a 98). Fez o povo chamar o deus de «a Grande Água»; falou pelo deus em Demur.
+- **Kiem**, de Toror (ainda vivo no fim). Fez o povo chamar o deus de «a Mãe da Chuva»; falou pelo deus em Toror.
+- **Kiar**, de Demur (até o ano 55). Fundou Demur.
+- **Enim**, de Zean (anos 35 a 95). Aprendeu a cortar a pedra; fundou Zean.
+- **Torena**, de Teil (anos 18 a 74). Falou pelo deus em Teil; guiou Teil.
+- **Teya**, de Teil (anos 48 a 88). Tirou o primeiro metal da pedra; falou pelo deus em Demur.
+- **Enik**, de Demur (anos 27 a 55). Falou pelo deus em Demur.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Teil** vive no lago, com 69 pessoas, e trabalha o metal; é o povo mais antigo; não reza a ninguém; costumes: faz a festa da chuva (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida).
@@ -312,3 +337,7 @@ Nos anos 91 a 100 houve três secas, onze fomes, dezoito preces que pareceram at
 Lugares com nome: Praia da Fome (praia, para Zean), Praia da Vitória (praia, para Demur), Lago do Raio (lago, para Teil) e Floresta da Fome (floresta, para Demur).
 
 Em 100 anos nasceram 451 pessoas e morreram 268.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Teil continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*
