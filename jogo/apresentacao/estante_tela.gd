@@ -606,14 +606,22 @@ func _desenhar_confirmar() -> void:
 
 
 func _desenhar_fim() -> void:
-	_caixa_pergaminho(CAIXA_FIM)
-	var y := CAIXA_FIM.position.y + 8
+	# o título do livro pode ser longo ("A Primeira Era: de Toan ao último de Toan"):
+	# vai em linhas próprias, quebrado na largura do pergaminho (QA, D-15)
+	var titulo := _quebrar_linhas(str(_fim.get("titulo", "A era")), interface._fontes["escura"], CAIXA_FIM.size.x - 20)
+	var ini := int(_fim.get("ano_ini", 1))
+	var fim := int(_fim.get("ano_fim", 1))
+	var anos := ("terminou no ano %d." % fim) if ini == fim else ("terminou, do ano %d ao ano %d." % [ini, fim])
+	var linhas: Array = titulo + [anos, "O livro dela foi para a estante.", "",
+		"Quando quiser, faça nascer um povo", "novo: botão de criar povo, na alça."]
+	var caixa := CAIXA_FIM
+	caixa.size.y = 30 + linhas.size() * 11
+	caixa.position.y = (ALTURA - caixa.size.y) / 2
+	_caixa_pergaminho(caixa)
+	var y := caixa.position.y + 8
 	_texto_centrado("Não resta ninguém.", y, "titulo")
-	_texto_centrado("%s terminou: do ano %d ao ano %d." % [_fim.get("titulo", "A era"),
-		_fim.get("ano_ini", 1), _fim.get("ano_fim", 1)], y + 15, "escura")
-	_texto_centrado("O livro dela foi para a estante.", y + 26, "escura")
-	_texto_centrado("Quando quiser, faça nascer um povo", y + 41, "escura")
-	_texto_centrado("novo: botão de criar povo, na alça.", y + 52, "escura")
+	for i in linhas.size():
+		_texto_centrado(linhas[i], y + 15 + i * 11, "escura")
 
 
 func _caixa_pergaminho(r: Rect2i) -> void:
