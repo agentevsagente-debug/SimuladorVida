@@ -50,6 +50,17 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
 - **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
 
+**O .exe 0.1.0 final** (main com o 84ae9d7 da A, o ícone novo e o convite da C): `builds/Simulador de vida.exe` e `builds/COMO JOGAR.txt`.
+- `verificar.ps1 -Executavel` (com `--com-povo`): os 19 itens passaram.
+- Aberto como o jogo de verdade:
+  - o mundo nasce vazio às 7h, com o convite na clareira e a chamada na alça;
+  - o clique cria a era 1;
+  - a bandeja usa o ícone de 24 px (escala de 150%);
+  - fecha com "threads encerradas".
+- **O convite** (`sinais/convite_povo_4q`) fica na clareira (x = 275) só no mundo que nunca teve gente, do primeiro segundo até o primeiro povo. Depois da extinção, aparece só a chamada da alça.
+- **O mundo vazio:** a chamada "Clique sobre o mundo para fazer nascer um povo" fica na alça enquanto o mundo estiver vazio. O COMO JOGAR ganhou a seção "O primeiro povo".
+- **D-02:** o gesto passa ao núcleo quem está sob o cursor e o minuto da hora na tela.
+
 **Itens do QA (`qa/RELATORIO-QA.md`).**
 - **D-15:** o aviso "Não resta ninguém" agora cabe no pergaminho (`capturas/fim-do-mundo.png`):
   - o título do livro vem em linhas próprias, quebradas na largura da caixa, e a caixa cresce com elas;
