@@ -35,6 +35,10 @@ const COLHEITA_ESTACAO := [1.0, 1.7, 1.5, 0.0]
 const PESSOAS_POR_ABRIGO := 5
 const CUSTO_ABRIGO := 12.0
 const LIMIAR_CRENCA := 4.0
+## Ritmo normal: um dia de jogo em 45 minutos reais, logo 112,5 s por passo.
+const SEGUNDOS_POR_PASSO := 112.5
+## Teto da ausência: um ano de jogo.
+const TETO_AUSENCIA := 960
 
 var semente: int = 0
 var rng := RandomNumberGenerator.new()
@@ -58,6 +62,7 @@ var acompanhada: int = -1        # pessoa que o jogador acompanha
 var _usos_recentes: Array = []   # poderes usados nos últimos dias: {"poder", "zona", "dia"}
 var _ultimos_avisado: bool = false
 var _cronista: Cronista
+var salvo_em: int = 0            # hora real (Unix) do último salvamento
 
 
 # ---------------------------------------------------------------- criação
@@ -2333,3 +2338,24 @@ func ultimo_ano_na_cronica() -> int:
 ## A crônica inteira com título, prólogo e epílogo (para as ferramentas).
 func cronica_completa(titulo: String, subtitulo: String) -> String:
 	return _cronista.escrever(titulo, subtitulo)
+
+
+# ---------------------------------------------------------------- ausência
+
+## Avança o tempo em que a moldura ficou fechada, sem gráfico, até o teto de 1 ano.
+## Devolve {passos, teto_atingido, de, ate, relato, chamados}: `de` e `ate` são tempo(),
+## `relato` é a crônica do período em markdown e `chamados` são os eventos de camada
+## "chamado" que aconteceram enquanto o deus estava fora.
+func avancar_ausencia(segundos_reais: float, segundos_por_passo: float = SEGUNDOS_POR_PASSO) -> Dictionary:
+	var pedidos := int(maxf(0.0, segundos_reais) / segundos_por_passo)
+	var passos := mini(pedidos, TETO_AUSENCIA)
+	var de := tempo()
+	var ev_ini := eventos.size()
+	for i in passos:
+		avancar_hora()
+	var chamados: Array = []
+	for d in eventos_desde(ev_ini):
+		if d["camada"] == "chamado":
+			chamados.append(d)
+	return {"passos": passos, "teto_atingido": pedidos > TETO_AUSENCIA, "de": de, "ate": tempo(),
+		"relato": _cronista.relato_periodo(ev_ini, eventos.size(), de["ano"], ano()), "chamados": chamados}

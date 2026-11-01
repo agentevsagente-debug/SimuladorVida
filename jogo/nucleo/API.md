@@ -1,12 +1,12 @@
 # API do núcleo da simulação
 
-*Versão 1, de 01/11/2026 (fase 1, bloco 1). Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 2, de 01/11/2026 (fase 1, blocos 1 a 3). Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
 - **age** só por `avancar_hora()`, `usar_poder()` e `acompanhar()`.
 
-Persistência (`salvar`, `carregar`) e ausência chegam no bloco 2 e serão acrescentadas aqui.
+Para salvar, carregar e avançar a ausência, use `nucleo/persistencia.gd` (seção "Salvar, carregar e ausência").
 
 ## Começar
 
@@ -22,7 +22,7 @@ O mundo nasce com o primeiro povo: 12 coletores na floresta, no ano 1, dia 1, ho
 
 | Chamada | Retorno |
 |---|---|
-| `avancar_hora()` | Avança um passo (1 hora de jogo). É a única forma de o tempo andar. No ritmo normal, um passo a cada ~1,9 s. |
+| `avancar_hora()` | Avança um passo (1 hora de jogo). É a única forma de o tempo andar. No ritmo normal (um dia de jogo em 45 minutos reais), um passo a cada 112,5 s (`Mundo.SEGUNDOS_POR_PASSO`). |
 | `avancar_dias(n)` | Avança `n × 24` passos de uma vez (para saltos). |
 | `tempo()` | `{passo, hora (0..23), dia (1..40), ano (1..), estacao ("primavera", "verão", "outono", "inverno"), noite (bool: hora ≥ 20 ou < 6)}` |
 | `clima()` | `{seca: bool, inverno_rigoroso: bool, tempestade: {} ou {zona, x_ini, x_fim}}`. A tempestade só aparece nas horas em que está caindo. |
@@ -231,3 +231,51 @@ O ano em andamento ainda não está na crônica. Para mostrar o que acabou de ac
 ## Determinismo
 
 Todo sorteio da simulação vem de `mundo.rng`, com a semente dada. As consultas desta API não sorteiam nada. A mesma semente, com os mesmos poderes usados nos mesmos passos, dá o mesmo mundo e a mesma crônica.
+
+## Salvar, carregar e ausência
+
+```gdscript
+const Persistencia = preload("res://nucleo/persistencia.gd")
+
+Persistencia.salvar(mundo)                       # -> bool; grava em user://mundo.txt
+Persistencia.existe()                            # -> bool
+var mundo = Persistencia.carregar()              # -> mundo, ou null se não há arquivo válido
+var r = Persistencia.carregar_e_avancar()        # -> {mundo, ausencia}, ou null
+```
+
+Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`).
+
+**O arquivo** é texto: o formato de Variant do Godot (`var_to_str`), com uma linha de cabeçalho. Ele guarda o mundo inteiro, incluindo o estado do sorteio e o estado do cronista, e também a hora real do salvamento (`mundo.salvo_em`, em segundos Unix). Os números reais são gravados pelos seus 64 bits ("@f:" seguido de um inteiro), porque a leitura de reais em texto do Godot perde o último dígito. O resultado é exato: um mundo salvo e carregado segue igual, passo a passo, ao que nunca parou.
+
+**A gravação é segura:** o núcleo grava num arquivo `.novo` e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
+
+**Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. O documento técnico pede salvar a cada dia de jogo e ao fechar. Isso é decisão da apresentação; o núcleo só salva quando chamado.
+
+### Ausência
+
+```gdscript
+var aus := mundo.avancar_ausencia(segundos_reais)   # segundos desde mundo.salvo_em
+```
+
+O mundo avança sem gráfico, à razão de um passo a cada 112,5 s reais, até o teto de 1 ano de jogo (960 passos). Em tempo de computador, um ano leva cerca de 0,02 s. `carregar_e_avancar()` já faz isso com o relógio do sistema.
+
+O retorno:
+
+| Campo | O que é |
+|---|---|
+| `passos` | quantas horas de jogo passaram |
+| `teto_atingido` | bool: a ausência passou de um ano, e o mundo esperou no teto |
+| `de`, `ate` | `tempo()` antes e depois |
+| `relato` | a crônica do período, em markdown (veja abaixo) |
+| `chamados` | os eventos de camada "chamado" que aconteceram no período, no formato de `eventos_desde()`. Inclui `os_ultimos` e `fim_do_mundo`, se a extinção aconteceu durante a ausência. |
+
+**O `relato`:**
+- os anos que terminaram durante a ausência vêm da crônica oficial (`### Ano N`), inteiros, inclusive o que aconteceu antes de o deus sair;
+- o ano em andamento vem como `### Ano N (até agora)`. É escrito à parte, sem consumir nada da crônica oficial, que sai completa quando o ano terminar;
+- se nada de notável aconteceu, vem uma linha dizendo isso.
+
+Exemplo de 30 dias fechado (teto de um ano):
+
+> ### Ano 39 (até agora)
+>
+> Em Zeor, Rabea pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso a mão do Que Apaga o Sol. A crônica sabe que foi acaso. Linmiut morreu de frio.
