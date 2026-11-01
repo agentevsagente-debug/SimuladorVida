@@ -19,6 +19,8 @@ extends Node2D
 ##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
 ##   --cenario-raro=NOME  teste: força um acontecimento raro (veja cenarios_raros.gd)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
+##   --com-povo           o mundo novo já nasce com o primeiro povo (sem ele, --mundo-novo começa vazio;
+##                        --semente, --dias, --anos, --cena e --cenario-raro já nascem com o povo)
 ##   --extinguir[=N]      teste: todos morrem (e o mundo vazio anda N anos)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
@@ -63,6 +65,8 @@ const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
 const VAO_ENTRE_POVOS := 10.0
+const X_CONVITE := 275.0  # a clareira onde o convite do mundo vazio aparece (o x padrão do criar_povo)
+var _convite := false
 const FILEIRA_ATRAS := 4  # px acima que a fileira de trás fica (API: `fileira` 1)
 const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobre a pessoa"
 
@@ -170,18 +174,21 @@ func _ready() -> void:
 		sim.mundo_trocado.connect(_ao_trocar_mundo)
 		_vida = Vida.new(self, sim)
 		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena") or args.has("dias")
+		# os testes e cenários querem o povo pronto; só --mundo-novo sozinho começa vazio, como o jogo
+		var com_povo := args.has("com-povo") or args.has("semente") or args.has("cena") or args.has("dias") \
+			or args.has("anos") or args.has("cenario-raro")
 		sim.salvar_em_disco = not novo
 		var semente := int(args.get("semente", str(randi())))
 		var hf := float(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1.0
 		if args.has("anos") or args.has("dias"):
-			sim.iniciar(semente, -1, false)
+			sim.iniciar(semente, -1, false, true)
 			sim.mundo.avancar_dias(40 * int(args.get("anos", "0")) + int(args.get("dias", "0")))
 			if hf >= 0.0:
 				while sim.mundo.tempo()["hora"] != int(hf):
 					sim.mundo.avancar_hora()
 			sim.iniciar_de_mundo()
 		else:
-			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo)
+			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo, com_povo)
 		if args.has("extinguir"):  # teste: todos morrem; com N > 0, o mundo vazio anda N anos
 			_extinguir(int(args["extinguir"]) if args["extinguir"] != "" else 0)
 		if args.has("simular-ausencia"):  # teste: como se o jogador tivesse saído N horas
@@ -208,6 +215,7 @@ func avancar(delta: float, desenhar: bool) -> void:
 	_medir("sim")
 	if not desenhar:
 		return
+	_atualizar_convite()
 	_relogio += delta
 	if sim and _chave_fixo != _chave_do_fixo():
 		_refazer = true
@@ -363,6 +371,20 @@ func _extinguir(anos: int) -> void:
 
 
 ## Outro mundo (abandono): a vida em cena e o desenho fixo recomeçam.
+## O convite do mundo que nunca teve gente (arte, sinais/convite_povo_4q): o anel de
+## luz na clareira, do primeiro segundo até o primeiro povo. Não aparece depois da
+## extinção, que é outro clima (o mundo vazio de lá já teve gente).
+func _atualizar_convite() -> void:
+	var convidar: bool = sim != null and sim.mundo.fim_do_mundo and sim.mundo.pessoas.is_empty()
+	if convidar == _convite or _sup.is_empty() or _tipos.is_empty():  # o terreno ainda não foi montado
+		return
+	_convite = convidar
+	if convidar:
+		_sinais.marcar("convite_povo_4q", 24, 4, 2.5, INF, -1, X_CONVITE, chao(int(X_CONVITE)))
+	else:
+		_sinais.marcas = _sinais.marcas.filter(func(m): return m.folha != "convite_povo_4q")
+
+
 func _ao_trocar_mundo() -> void:
 	_vida = Vida.new(self, sim)
 	seguindo = false

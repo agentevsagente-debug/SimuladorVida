@@ -13,7 +13,8 @@ Para salvar, carregar e avançar a ausência, use `nucleo/persistencia.gd` (seç
 ```gdscript
 const Mundo = preload("res://nucleo/mundo.gd")
 
-var mundo := Mundo.new(semente)          # semente: int; mesma semente, mesmo mundo
+var mundo := Mundo.new(semente)          # semente: int; mesma semente, mesmo mundo; nasce vazio, às 7h
+mundo.criar_povo(x)                      # o primeiro gesto do jogador: o primeiro povo, na zona de x
 ```
 
 O mundo nasce com o primeiro povo: 12 coletores na floresta, no ano 1, dia 1, hora 0. A pessoa acompanhada começa sendo a matriarca.
@@ -331,7 +332,13 @@ A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 
 `posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
 
-**O mundo novo começa de manhã.** `Mundo.new(semente)` devolve o mundo às 7h do dia 1 (`Mundo.HORA_INICIAL`), com o povo saindo das cabanas: as horas da noite passam na criação, como passos normais. `criar_povo()` no mundo vazio também deixa o tempo correr até as 7h antes de criar o povo. Ao carregar um mundo salvo, nada disso muda (a persistência cria o mundo com `Mundo.new(semente, [], 0)`).
+**O mundo novo começa vazio, de manhã** (QA D-09, decidido pelo orquestrador, como no documento funcional). `Mundo.new(semente)` devolve o mundo às 7h do dia 1 (`Mundo.HORA_INICIAL`), **sem ninguém**: o primeiro gesto do jogador é `criar_povo(x)`, o mesmo poder que recria a humanidade depois de uma extinção. Começo e recomeço funcionam igual:
+- o mundo novo vazio tem `fim_do_mundo` ligado, mas sem o evento `fim_do_mundo` e sem livro (`eventos_desde(0)` vem vazio);
+- o tempo corre, e os poderes sobre o povo recusam;
+- `criar_povo(x)` deixa o tempo correr até as 7h, se preciso, e cria a família de 12 pessoas na zona de x, com o evento `inicio`. No mundo que nunca teve gente, a era fica 1; depois de uma extinção, abre a seguinte;
+- `abandonar()` antes do primeiro povo devolve `{}`: não há crônica.
+
+**Para testes e ferramentas:** `Mundo.new(semente, comandos, Mundo.HORA_INICIAL, true)` (o quarto parâmetro, `p_com_povo`) já nasce com o primeiro povo na floresta, à meia-noite, e as horas da noite passam como passos normais até as 7h: é o mundo de antes, igual. Todas as ferramentas de `ferramentas_sim/` usam essa forma. Ao carregar um mundo salvo, nada disso muda (a persistência cria o mundo com `Mundo.new(semente, [], 0)`).
 
 ### `dica(pessoa_id) -> Dictionary` (a dica sobre a pessoa)
 
@@ -454,7 +461,7 @@ Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o po
 ## Poderes
 
 ```gdscript
-var r := mundo.usar_poder(poder, x, intensidade)
+var r := mundo.usar_poder(poder, x, intensidade, alvo := -1, minuto := -1.0)
 # r = {ok: bool, grau: "sinal"|"milagre"|"imposicao", evento: id, zona: String, alvo: id da pessoa ou -1}
 # se ok == false: {ok: false, motivo: String}
 ```
@@ -468,7 +475,11 @@ var r := mundo.usar_poder(poder, x, intensidade)
 - **milagre:** intensidade ≥ 0,5;
 - **sinal:** o resto.
 
-A precisão conta para o raio e o sonho, que acertam a pessoa mais perto de x, se ela estiver a até 6 pixels. A força da reação do povo cresce com o grau. Na chuva, na fartura, na seca, no fogo, no dilúvio e no terremoto, a intensidade conta também dentro do grau (proporcional); no raio, no sonho, na cura, no presságio e na terra erguida, só o grau conta (veja `ferramentas_sim/poderes/LEIAME.md`).
+A precisão conta para o raio, o sonho e a cura (QA D-02): eles atingem quem está sob o gesto **na tela**.
+- `alvo`: o id de quem está sob o cursor (o mais exato: é quem está desenhado ali). Se estiver vivo, é ele quem o gesto atinge, qualquer que seja x.
+- Sem `alvo`: a pessoa mais perto de x, se estiver a até 6 pixels (`Mundo.ALCANCE_ALVO`), no `minuto` da hora que a tela mostra (0 a 60: a fração da hora vezes 60), pela posição de `rotina().instante()`. Sem `minuto`, no meio da hora, como `posicao_de()`. Antes, o núcleo mirava o fim da hora, e a pessoa na tela estava longe dali de 50% a 64% do tempo.
+- Ao fim de `usar_poder`, se o gesto matou o último, o fim do mundo já vem (QA D-03), sem esperar o passo.
+ A força da reação do povo cresce com o grau. Na chuva, na fartura, na seca, no fogo, no dilúvio e no terremoto, a intensidade conta também dentro do grau (proporcional); no raio, no sonho, na cura, no presságio e na terra erguida, só o grau conta (veja `ferramentas_sim/poderes/LEIAME.md`).
 
 **O gesto repetido vira hábito.** O mesmo gesto bom sobre o mesmo povo, na 4ª vez em um ano, vira costume: a chuva, a festa da chuva; a fartura e a cura (só a de quem estava doente), as oferendas; o sonho, o presságio e a terra erguida, a crença de que o deus ouve. Na 6ª, a chuva, a fartura e a cura viram dependência (`dependencia`, com `por`): o povo larga o costume de guardar. Os gestos que ferem criam o medo (a crença de que o deus castiga, oferendas, o deus renomeado) por conta própria.
 
@@ -678,7 +689,7 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   - Isso acontece no fim do passo em que morre o último (de velhice na virada do dia, de fome ou frio às 19h, de um raio a qualquer hora), não na virada do dia seguinte. No mesmo passo, antes do fim, os povos vazios viram ruína (`extincao_grupo`): `grupos_visiveis()` já vem vazio.
   - O mundo vazio continua: o clima segue, a natureza retoma o espaço e as ruínas envelhecem.
   - `usar_poder` devolve `ok: false`.
-- **Povo novo:** `mundo.criar_povo(x) -> {ok, grupo, era}` só funciona com o mundo vazio.
+- **Povo novo:** `mundo.criar_povo(x) -> {ok, grupo, era}` só funciona com o mundo vazio (o do começo ou o depois de uma extinção).
   - Cria uma família de 12 pessoas, de cultura nova, na zona de x. Se x cair no lago, o povo nasce na praia.
   - `mundo.era` passa a 2, 3 e assim por diante, e `mundo.era_inicio_ano` marca o começo da era.
   - O povo novo encontra as ruínas: explica-as (`mito_ruinas`) e pode aprender nelas.
@@ -692,6 +703,7 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
   Veja `ferramentas_sim/livros/`.
 - **A crônica viva** (`mundo.cronica_viva() -> String`, para a tecla C): como o livro, mas em curso. "## Até agora" (o resumo dos anos já escritos, terminando em quem vive hoje), o prólogo, os capítulos dos estágios já vividos e o capítulo aberto do estágio atual ("## Capítulo VI: Os canais e os moinhos (desde o ano 127)"), com os anos dentro, e no fim os gestos do deus no ano em curso ("### Ano N (em curso)", um parágrafo por dia: "No dia 1, as fogueiras… Os galhos… Yokana sonhou…"; veja `cronica_em_curso`), fechando com "*Ano N, dia D. O ano continua.*" (a apresentação não precisa mais acrescentar a sua linha de fim). Sem o "Quem foi quem" nem o epitáfio, que são do livro fechado. É montada sob demanda e guardada até o próximo ano ser escrito; os gestos do ano em curso são acrescentados a cada consulta. Custo, num mundo de 130 anos: 0,9 ms na primeira consulta do ano e 0,1 ms nas seguintes. `cronica()` continua como antes (a lista de anos, para as ferramentas).
 - **Estante** (`preload("res://nucleo/estante.gd")`): guardada em `user://estante/`, fora do mundo salvo, e sobrevive ao abandono do mundo.
+  - Só o mundo do jogo (`Persistencia.CAMINHO_PADRAO`, `user://mundo.txt`) usa a estante do jogador. Um mundo salvo em outro caminho tem a sua estante ao lado do arquivo: `Persistencia.pasta_estante("user://testes/a.txt")` é `user://testes/a.estante` (QA D-01). Nenhum teste nem ferramenta escreve ou apaga `user://estante`.
   - `Estante.livros() -> Array[{id, titulo, era, semente, ano_ini, ano_fim, guardado_em}]`
   - `Estante.ler(id) -> String` devolve o markdown do livro.
   - Tudo tem cópia, porque a estante é insubstituível. Cada livro é gravado também como `<id>.1.md`, e `ler` usa a cópia se o arquivo sumiu ou está vazio. O índice guarda as 3 versões anteriores (`indice.1.txt` a `indice.3.txt`); se ele estiver estragado, valem as cópias, e se todas estiverem, o índice é refeito a partir dos livros (com o título da primeira linha).

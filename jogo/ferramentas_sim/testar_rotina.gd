@@ -20,7 +20,7 @@ func _initialize() -> void:
 		# O mundo grande do estágio 6, gerado por medir_desempenho.gd.
 		m = preload("res://ferramentas_sim/desempenho.gd").carregar_mundo_grande()
 	else:
-		m = Mundo.new(4)
+		m = Mundo.new(4, [], Mundo.HORA_INICIAL, true)
 		m.avancar_dias(40 * 70)
 	var est := 0
 	for g in m.grupos_vivos():

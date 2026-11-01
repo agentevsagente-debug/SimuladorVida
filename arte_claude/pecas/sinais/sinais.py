@@ -266,6 +266,35 @@ def separacao_marca():
     return out
 
 
+def convite_povo():
+    """O convite do mundo vazio do começo (24x16): no chão da clareira, um anel de luz morna
+    pontilhada que respira, e em cima a estrela do botão de criar povo, subindo e descendo.
+    Mostra ao jogador onde o povo vai nascer, até o primeiro clique. A base (linha 15) vai
+    no chão, com o centro na coluna 12. É luz: não passa pela tabela da noite."""
+    quadros = []
+    for k in range(4):
+        q = novo(24, 16)
+        rx = (8, 9, 10, 9)[k]
+        for i in range(28):
+            a = i * 2 * math.pi / 28
+            x, y = round(11.5 + math.cos(a) * rx), round(13 + math.sin(a) * rx * 0.25)
+            put(q, x, y, 31 if (i + k) % 4 == 0 else 22 if math.sin(a) > 0 else 21)
+        for x, y in ((11, 13), (12, 13), (11, 14), (12, 14)):
+            if k % 2 == 0:
+                put(q, x, y, 21)
+        sobe = (0, 1, 2, 1)[k]                       # a estrela, como a do ícone de criar povo
+        cx, cy = 11, 4 - sobe
+        for dx, dy, c in ((0, 0, 31), (-1, 0, 22), (1, 0, 22), (0, -1, 22), (0, 1, 22), (-2, 0, 21), (2, 0, 21),
+                          (0, -2, 21), (0, 2, 21)):
+            put(q, cx + dx, cy + dy, c)
+        if k in (1, 3):
+            put(q, cx - 1, cy - 1, 22)
+            put(q, cx + 1, cy + 1, 22)
+        put(q, cx, cy + 4 + (k % 2), 22)             # uma fagulha descendo para o anel
+        quadros.append(q)
+    return quadros
+
+
 def gerar():
     return {
         "prece_comum_4q": prece_comum(),
@@ -278,6 +307,7 @@ def gerar():
         "profeta_marca_4q": profeta_marca(),
         "separacao_4q": separacao(),
         "separacao_marca_2q": separacao_marca(),
+        "convite_povo_4q": convite_povo(),
     }
 
 

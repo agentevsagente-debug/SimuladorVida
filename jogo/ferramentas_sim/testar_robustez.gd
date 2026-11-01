@@ -28,7 +28,7 @@ func _initialize() -> void:
 	DirAccess.make_dir_recursive_absolute(OS.get_user_data_dir() + "/robustez")
 	var caminho := PASTA + "/mundo.txt"
 	_limpar(caminho)
-	var m := Mundo.new(2)
+	var m := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
 	while m.ano() < 40:
 		m.avancar_dias(Mundo.DIAS_ANO)
 	# Quatro gravações: o principal e as 3 cópias, cada uma um dia mais velha.

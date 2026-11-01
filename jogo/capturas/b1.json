@@ -1,0 +1,18 @@
+﻿{
+    "Ctrl+Alt+H esconde":  {
+                               "ok":  true,
+                               "detalhe":  ""
+                           },
+    "Ctrl+Alt+H traz de volta":  {
+                                     "ok":  true,
+                                     "detalhe":  ""
+                                 },
+    "fechar pelo X":  {
+                          "ok":  true,
+                          "detalhe":  "3 de 3 limpos (saÃ­da 0, threads encerradas, sem erro, sem atalho Ã³rfÃ£o)"
+                      },
+    "por cima 60 min":  {
+                            "ok":  true,
+                            "detalhe":  "falhas: ; 0 erros no log"
+                        }
+}

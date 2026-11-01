@@ -105,13 +105,17 @@ var livros: Array = []           # crônicas fechadas deste mundo: {era, titulo,
 
 # ---------------------------------------------------------------- criação
 
-## O mundo novo começa de manhã (às HORA_INICIAL), com o povo saindo das cabanas: as primeiras
-## horas da noite passam aqui, como passos normais (o mundo é o mesmo que começaria à meia-noite,
-## só que o relógio já está de manhã). Ao carregar um mundo salvo, `p_hora_inicial` é 0.
+## O mundo novo começa vazio, de manhã (às HORA_INICIAL), como o documento funcional pede: o
+## primeiro gesto do jogador é criar o povo (`criar_povo`), o mesmo poder que recria a humanidade
+## depois de uma extinção. Começo e recomeço funcionam igual: o mundo vazio tem `fim_do_mundo`
+## ligado (sem o evento e sem livro), o tempo corre e os poderes sobre o povo recusam.
+## `p_com_povo` (testes e ferramentas): o mundo já nasce com o primeiro povo na floresta, à
+## meia-noite, e as primeiras horas passam como passos normais até as HORA_INICIAL (o mundo de
+## antes, igual). Ao carregar um mundo salvo, `p_hora_inicial` é 0.
 const HORA_INICIAL := 7
 
 
-func _init(p_semente: int, p_comandos: Array = [], p_hora_inicial: int = HORA_INICIAL) -> void:
+func _init(p_semente: int, p_comandos: Array = [], p_hora_inicial: int = HORA_INICIAL, p_com_povo: bool = false) -> void:
 	semente = p_semente
 	rng.seed = p_semente
 	comandos = p_comandos
@@ -131,7 +135,10 @@ func _init(p_semente: int, p_comandos: Array = [], p_hora_inicial: int = HORA_IN
 		z.risco_raio = c[7]
 		zonas[chave] = z
 	_cronista = Cronista.new(self)
-	_criar_primeiro_povo()
+	if p_com_povo:
+		_criar_primeiro_povo()
+	else:
+		fim_do_mundo = true
 	while hora() < p_hora_inicial:
 		avancar_hora()
 
@@ -508,7 +515,7 @@ func _novo_dia() -> void:
 
 
 ## O fim do mundo chega na hora em que morre o último (de velhice na virada do dia, de fome ou
-## frio na refeição das 19h, de um raio a qualquer hora), não só na virada do dia seguinte: a
+## frio na refeição das 19h; de um gesto do deus, logo depois dele), não só na virada do dia: a
 ## tela "Não resta ninguém" lê `fim_do_mundo`, o evento e o livro fechado em `livros[-1]`.
 func _conferir_fim() -> void:
 	if not fim_do_mundo and populacao() == 0:
@@ -2401,13 +2408,16 @@ func _fechar_livro(motivo: String) -> Dictionary:
 ## O deus abandona o mundo: a crônica da era se fecha como livro, mesmo com o povo vivo.
 func abandonar() -> Dictionary:
 	_esperar_threads()
+	if pessoas.is_empty():
+		return {}   # o mundo novo, abandonado antes do primeiro povo: não há crônica
 	if fim_do_mundo and not livros.is_empty() and livros[-1]["era"] == era:
 		return livros[-1]
 	return _fechar_livro("abandono")
 
 
-## Só com o mundo vazio: o deus cria um novo povo onde fizer o gesto (x em pixels do mundo).
-## O novo povo encontra as ruínas de quem viveu antes.
+## Só com o mundo vazio: o deus cria um povo onde fizer o gesto (x em pixels do mundo). No mundo
+## novo, é o primeiro povo (a era 1); depois de uma extinção, abre a era seguinte, e o povo novo
+## encontra as ruínas de quem viveu antes.
 func criar_povo(x: float = 275.0) -> Dictionary:
 	_esperar_threads()
 	if not fim_do_mundo or populacao() > 0:
@@ -2418,7 +2428,8 @@ func criar_povo(x: float = 275.0) -> Dictionary:
 	# O povo novo também começa de manhã: no mundo vazio, o tempo corre até as HORA_INICIAL.
 	while hora() != HORA_INICIAL:
 		avancar_hora()
-	era += 1
+	if not pessoas.is_empty():
+		era += 1
 	era_inicio_ano = ano()
 	_cronista.reabrir_ano(ano())
 	fim_do_mundo = false
@@ -3384,11 +3395,11 @@ func _poder(c: Dictionary) -> Dictionary:
 	_usos_recentes = novos_usos
 	# Precisão: raio e sonho acertam quem está sob o gesto.
 	var alvo: Pessoa = null
-	if c["poder"] in ["raio", "sonho"]:
+	if c["poder"] in ["raio", "sonho", "cura"]:
 		if c["alvo"] != -1 and pessoas.has(c["alvo"]) and pessoas[c["alvo"]].vivo:
 			alvo = pessoas[c["alvo"]]
 		else:
-			alvo = _pessoa_perto(x)
+			alvo = _pessoa_perto(x, c.get("minuto", -1.0))
 	var grau := "sinal"
 	if rep >= 2:
 		grau = "imposicao"
@@ -3632,8 +3643,6 @@ func _poder(c: Dictionary) -> Dictionary:
 							_novo_costume(g, "estocar", e)
 		"cura":
 			if alvo == null:
-				alvo = _pessoa_perto(x)
-			if alvo == null:
 				e = registrar("cura", "divina", 2, z.chave, g0_id, [], dados.merged({"curado": -1}))
 				return {"ok": true, "grau": grau, "evento": e.id, "zona": z.chave, "alvo": -1}
 			var g_c: Grupo = grupos[alvo.grupo]
@@ -3713,14 +3722,16 @@ func _impor_paz(lista: Array, zona: String) -> void:
 
 
 ## A pessoa viva mais perto de x, se estiver a no máximo ALCANCE_ALVO pixels.
-func _pessoa_perto(x: float) -> Pessoa:
+## A pessoa mais perto de x (até ALCANCE_ALVO px) no `minuto` da hora (0 a 60; negativo: no
+## meio da hora, como posicao_de), onde ela está na tela, e não no fim da hora.
+func _pessoa_perto(x: float, minuto: float = -1.0) -> Pessoa:
 	var melhor: Pessoa = null
 	var dist := ALCANCE_ALVO
 	var ro = _rotina_de_hoje()
-	var h := hora()
+	var m := hora() * 60.0 + (clampf(minuto, 0.0, 59.99) if minuto >= 0.0 else 30.0)
 	for g in grupos_vivos():
 		for id in g.membros:
-			var d: float = absf(ro.agenda(id, h)[-1]["x1"] - x)
+			var d: float = absf(ro.instante(id, m)["x"] - x)
 			if d <= dist:
 				dist = d
 				melhor = pessoas[id]
@@ -4421,18 +4432,26 @@ func eventos_desde(desde: int) -> Array:
 
 
 ## O deus age. x em pixels do mundo (0..479); intensidade de 0 a 1, vinda do gesto.
-func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary:
+## Quem o raio, o sonho e a cura atingem: `alvo`, o id de quem está sob o gesto na tela (o mais
+## exato: é quem está desenhado ali), se estiver vivo; senão, a pessoa mais perto de x (até
+## ALCANCE_ALVO px) no `minuto` da hora que a tela mostra (0 a 60; sem ele, no meio da hora).
+func usar_poder(poder: String, x: float, intensidade: float = 0.7, alvo: int = -1, minuto: float = -1.0) -> Dictionary:
 	_esperar_threads()
+	_conferir_fim()
 	if fim_do_mundo:
 		return {"ok": false, "motivo": "o mundo está vazio"}
 	if not PODERES.has(poder):
 		return {"ok": false, "motivo": "poder desconhecido: " + poder}
 	x = clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1)
+	if alvo != -1 and not (pessoas.has(alvo) and pessoas[alvo].vivo):
+		alvo = -1
 	var r := _poder({"poder": poder, "zona": Cotidiano.zona_em(x), "x": x,
-		"intensidade": clampf(intensidade, 0.0, 1.0), "alvo": -1, "texto": ""})
+		"intensidade": clampf(intensidade, 0.0, 1.0), "alvo": alvo, "texto": "", "minuto": minuto})
 	if r.get("ok", false) and r.get("evento", -1) >= 0:
 		_preces_diante_do_gesto(evento(r["evento"]), poder)
 		_habito_do_gesto(evento(r["evento"]), poder)
+	# O gesto que matou o último (um raio, um dilúvio) já acaba o mundo, sem esperar o passo.
+	_conferir_fim()
 	return r
 
 

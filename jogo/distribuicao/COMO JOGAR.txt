@@ -12,6 +12,11 @@ eles. Tudo fica escrito numa crônica.
 A janela é transparente e fica por cima das outras. O mouse passa pelos
 espaços vazios, então dá para trabalhar com ela aberta.
 
+O PRIMEIRO POVO
+---------------
+O mundo começa vazio. Clique sobre ele (onde brilha o anel de luz, ou
+onde quiser) para fazer nascer o primeiro povo.
+
 O GESTO DO PODER
 ----------------
 1. Na alça (a barra de botões em cima), clique no botão dos poderes.

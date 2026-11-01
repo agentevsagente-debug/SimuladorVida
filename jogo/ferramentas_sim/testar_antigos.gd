@@ -23,7 +23,7 @@ func _initialize() -> void:
 	# Um caminho por execução: várias podem rodar ao mesmo tempo.
 	var caminho := "user://antigos_teste/%s-%d-%d.txt" % [estilo, semente, ano_fim]
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(caminho.get_base_dir()))
-	var mundos: Array = [Mundo.new(semente), Mundo.new(semente), Mundo.new(semente)]
+	var mundos: Array = [Mundo.new(semente, [], Mundo.HORA_INICIAL, true), Mundo.new(semente, [], Mundo.HORA_INICIAL, true), Mundo.new(semente, [], Mundo.HORA_INICIAL, true)]
 	mundos[0].arquivar = false
 	var deuses: Array = []
 	for k in 3:

@@ -35,7 +35,7 @@ func _initialize() -> void:
 	for estilo in ESTILOS:
 		var soma := {}
 		for semente in SEMENTES:
-			var m := Mundo.new(semente)
+			var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 			deus.seed = semente * 7919 + ESTILOS.find(estilo)
 			var gestos := 0
 			for d in anos * Mundo.DIAS_ANO:
