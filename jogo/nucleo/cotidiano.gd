@@ -81,6 +81,8 @@ static func peso_na_faixa(g) -> float:
 ## As casas acompanham o povo (uma para cada CASA_PARA pessoas, até as que o povo ergueu): as
 ## que não cabem na frente vão para uma segunda fileira, atrás (`fileira`: 1), se couberem.
 const CASA_PARA := 10
+## Na fileira de trás, cada casa ocupa só esta fração da largura: elas se cobrem em parte.
+const ATRAS_OCUPA := 0.5
 
 
 static func construcoes_do_grupo(m, g) -> Array:
@@ -97,12 +99,16 @@ static func construcoes_do_grupo(m, g) -> Array:
 	var por: Callable = func(tipo: String, largura: float, extra: Dictionary, fundo: bool) -> bool:
 		var x := _lugar_livre(c, largura, faixa, ocupado)
 		var fileira := 0
+		# Na fileira de trás, as casas se encostam e se cobrem em parte (ATRAS_OCUPA da largura),
+		# como numa vila vista de lado: assim um povo grande numa faixa estreita mostra mais casas.
+		var ocupa := largura
 		if x < -9000.0 and fundo:
-			x = _lugar_livre(c, largura, faixa, atras)
+			ocupa = largura * ATRAS_OCUPA
+			x = _lugar_livre(c, largura, faixa, atras, ocupa)
 			fileira = 1
 		if x < -9000.0:
 			return false
-		(atras if fileira == 1 else ocupado).append([x - largura * 0.5, x + largura * 0.5])
+		(atras if fileira == 1 else ocupado).append([x - ocupa * 0.5, x + ocupa * 0.5])
 		var o := {"tipo": tipo, "x": x, "largura": largura, "grupo": g.id, "estagio": est, "ruina": false, "fileira": fileira}
 		o.merge(extra)
 		r.append(o)
@@ -184,15 +190,19 @@ static func construcoes_do_grupo(m, g) -> Array:
 
 
 ## Centro do primeiro intervalo livre para uma peça, procurando para os dois lados do centro.
-static func _lugar_livre(c: float, largura: float, faixa: Array, ocupado: Array) -> float:
+## `ocupa`: a largura que conta para não encostar nas outras (a fileira de trás usa menos que a
+## largura da peça); a peça inteira sempre cabe na faixa.
+static func _lugar_livre(c: float, largura: float, faixa: Array, ocupado: Array, ocupa: float = -1.0) -> float:
 	var passo := 4.0
+	if ocupa < 0.0:
+		ocupa = largura
 	for i in 60:
 		var desvio = passo * ceil(i / 2.0) * (1.0 if i % 2 == 1 else -1.0)
 		var x = c + desvio
-		var ini = x - largura * 0.5
-		var fim = x + largura * 0.5
-		if ini < faixa[0] or fim > faixa[1]:
+		if x - largura * 0.5 < faixa[0] or x + largura * 0.5 > faixa[1]:
 			continue
+		var ini = x - ocupa * 0.5
+		var fim = x + ocupa * 0.5
 		var livre := true
 		for o in ocupado:
 			if ini < o[1] + 2.0 and fim > o[0] - 2.0:

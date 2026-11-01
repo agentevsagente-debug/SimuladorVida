@@ -308,6 +308,7 @@ func avancar_hora() -> void:
 		_coleta()
 	elif h == 19:
 		_refeicao()
+	_conferir_fim()
 	passo += 1
 	if _consultado:
 		# Só com a apresentação olhando: quem avança muitas horas de uma vez sem consultar
@@ -504,7 +505,16 @@ func _novo_dia() -> void:
 		registrar("os_ultimos", "natural", 10, "", -1, [], {"restam": pop})
 	elif pop > 12:
 		_ultimos_avisado = false
-	if populacao() == 0 and not fim_do_mundo:
+
+
+## O fim do mundo chega na hora em que morre o último (de velhice na virada do dia, de fome ou
+## frio na refeição das 19h, de um raio a qualquer hora), não só na virada do dia seguinte: a
+## tela "Não resta ninguém" lê `fim_do_mundo`, o evento e o livro fechado em `livros[-1]`.
+func _conferir_fim() -> void:
+	if not fim_do_mundo and populacao() == 0:
+		# Os povos que ficaram vazios viram ruína (e "extincao_grupo") antes do fim, como na
+		# virada do dia: sem gente, _arrumar_grupos só faz isso.
+		_arrumar_grupos()
 		fim_do_mundo = true
 		registrar("fim_do_mundo", "natural", 10, "", -1, [], {"era": era})
 		_fechar_livro("")
@@ -1938,6 +1948,17 @@ func _ensino() -> void:
 
 ## O saber de cada estágio vive em quem o tem: é descoberto, ensinado devagar e pode morrer.
 ## Com a escrita, aprende-se mais rápido e o arquivo pode salvar o que se perdeu.
+## O tempo da escrita (estágio 5) tem de se ver: com a escrita, o ensino corre 3 vezes mais depressa,
+## e os canais vinham 1 a 19 anos depois dela (auditoria 11, D9). O saber dos canais pode se
+## espalhar antes, mas o povo só vira estágio 6 depois de ESTAGIO5_MINIMO anos no 5.
+const ESTAGIO5_MINIMO := 25
+
+
+## O ano em que o povo chegou ao estágio atual (o povo que se separou já nele: o ano da separação).
+func _desde_o_estagio(g: Grupo) -> int:
+	return g.estagio_desde if g.estagio_desde >= 0 else g.origem.get("ano", 1)
+
+
 func _progresso_tecnico() -> void:
 	var a := ano()
 	for g in grupos_vivos():
@@ -1976,7 +1997,7 @@ func _progresso_tecnico() -> void:
 		for p in _membros(g):
 			if p.saberes.has(saber) and not mestres.has(p):
 				sabem += 1
-		if sabem >= 4 and sabem >= adultos * 0.15:
+		if sabem >= 4 and sabem >= adultos * 0.15 and not (k == 6 and a - _desde_o_estagio(g) < ESTAGIO5_MINIMO):
 			g.estagio = k
 			g.estagio_desde = a
 			var e := registrar("estagio", "social", 9, g.zona, g.id, [], {"estagio": k, "saber": saber, "sabem": sabem})
@@ -3913,7 +3934,32 @@ func rotina():
 		# Chegou de madrugada sem a rotina do dia ter começado (um salto que parou às 3h, por
 		# exemplo): começa agora, para o passo das 4h não ter de esperar por ela inteira.
 		_montar_em_paralelo()
+	elif _ataque_sem_cena(ro):
+		_refazer_rotina_agora()
 	return _rotina_cache
+
+
+## Um ataque no meio do dia (das 6h em diante: o da virada do dia já vira a batalha da manhã)
+## que a rotina em uso ainda não viu. Ele vira cena já, sem esperar a thread.
+func _ataque_sem_cena(ro) -> bool:
+	if ro == null or ro.dia != dia_abs():
+		return false
+	for i in range(ro.eventos_vistos, eventos.size()):
+		var e = eventos[i]
+		if e != null and e.tipo == "ataque" and e.hora >= 6:
+			return true
+	return false
+
+
+## Refaz a rotina de hoje aqui, na linha principal (uma vez por ataque no meio do dia, 100 a
+## 250 ms), para a batalha começar meia hora depois do ataque.
+func _refazer_rotina_agora() -> void:
+	_receber_rotina(true)
+	var nova = Rotina.new(self, dia_abs())
+	nova.montar()
+	nova.eventos_vistos = eventos.size()
+	_trocar_rotina(nova)
+	desempenho["montagens_na_consulta"] += 1
 
 
 ## A rotina de hoje, mesmo antes de ela entrar em uso (então espera por ela ou a monta
@@ -3968,7 +4014,9 @@ func _cuidar_da_rotina() -> void:
 		return
 	# A rotina de hoje montada antes dos eventos do dia (às 23h de ontem) é refeita depois deles.
 	var antes_dos_eventos: bool = _rotina_cache.montada_no_passo < d * HORAS_DIA + HORA_MONTAR and hora() >= HORA_MONTAR
-	if _montando == null and (_rotina_mudou() or antes_dos_eventos):
+	if _ataque_sem_cena(_rotina_cache):
+		_refazer_rotina_agora()
+	elif _montando == null and (_rotina_mudou() or antes_dos_eventos):
 		_montar_em_paralelo()
 	elif _montando == null and hora() == 23:
 		# A madrugada de amanhã já entra pronta: monta às 23h a rotina do dia seguinte (refeita
@@ -4014,6 +4062,19 @@ func _esperar_threads() -> void:
 		WorkerThreadPool.wait_for_task_completion(_salvamento.tarefa)
 		ultimo_salvamento_ok = _salvamento.ok
 		_salvamento = null
+
+
+## Encerramento limpo, ao fechar o jogo (depois do último salvar): espera todas as threads do
+## núcleo terminarem (a montagem da rotina, a gravação de salvar_async e o descarte das rotinas
+## velhas) e solta o que elas seguram. As tarefas seguram o mundo vivo: sem isso, o motor pode
+## fechar o WorkerThreadPool com uma delas ainda rodando. Devolve o resultado da última gravação.
+## Depois dele, o mundo continua usável (outra consulta ou outro passo voltam a criar threads).
+func encerrar() -> bool:
+	_esperar_threads()
+	for d in _descartes:
+		WorkerThreadPool.wait_for_task_completion(d[0])
+	_descartes.clear()
+	return ultimo_salvamento_ok
 
 
 func _notification(what: int) -> void:

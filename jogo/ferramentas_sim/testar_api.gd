@@ -103,22 +103,21 @@ func _initialize() -> void:
 	quit()
 
 
-## Um ataque às 8h (como o cenário raro da batalha): a cena de guerra entra até 2 h depois, com
-## gente dos dois povos, e a luta acontece depois do ataque.
+## Um ataque às 8h (como o cenário raro da batalha): a cena de guerra entra na mesma hora, já na
+## consulta seguinte, com gente dos dois povos, e começa meia hora depois do ataque.
 func _batalha_no_meio_do_dia() -> void:
 	var m := Mundo.new(3)
 	while m.ano() < 60:
 		m.avancar_dias(40)
 	while m.hora() != 8:
 		m.avancar_hora()
+	m.cenas_ativas()
 	var vivos: Array = m.grupos_vivos()
 	if vivos.size() < 2:
 		return
 	m._atacar(vivos[0], vivos[1])
 	var viu := false
-	for h in 3:
-		m.avancar_hora()
-		for c in m.cenas_ativas():
-			if c["tipo"] == "guerra" and c["participantes"].size() >= 4 and c["ini"] >= 9.9:
-				viu = true
-	conferir(viu, "o ataque no meio do dia vira a cena de guerra até 2 h depois")
+	for c in m.cenas_ativas():
+		if c["tipo"] == "guerra" and c["participantes"].size() >= 4 and is_equal_approx(c["ini"], 8.5) and is_equal_approx(c["fim"], 13.0):
+			viu = true
+	conferir(viu, "o ataque às 8h vira a cena de guerra das 8h30 às 13h, já na mesma hora")

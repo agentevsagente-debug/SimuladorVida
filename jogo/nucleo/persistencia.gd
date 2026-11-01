@@ -36,6 +36,7 @@ const Evento = preload("evento.gd")
 const VERSAO := 3
 const VERSOES_LIDAS := [1, 2, 3]
 const CABECALHO := "# Simulador de vida: mundo salvo. Arquivo de texto do Godot (var_to_str).\n"
+const SOMA := " Soma md5: "
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
 const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos",
@@ -157,8 +158,11 @@ static func _preparar(m) -> void:
 			livro["na_estante"] = true
 
 
+## O texto do mundo salvo. A primeira linha leva a soma (md5) do resto: um byte trocado no disco,
+## que ainda daria um mundo legível mas errado, é pego na leitura, e o mundo volta de uma cópia.
 static func _texto(d: Dictionary) -> String:
-	return CABECALHO + var_to_str(_codificar(d)) + "\n"
+	var corpo := var_to_str(_codificar(d)) + "\n"
+	return CABECALHO.trim_suffix("\n") + SOMA + corpo.md5_text() + "\n" + corpo
 
 
 ## Abandona o mundo: fecha a crônica da era como livro, guarda na estante e apaga o mundo salvo.
@@ -187,18 +191,19 @@ static func existe(caminho: String = CAMINHO_PADRAO) -> bool:
 	return false
 
 
-## Lê um mundo salvo. Se o arquivo está estragado ou ilegível, tenta as cópias, da mais nova
-## para a mais velha; o mundo que voltou de uma cópia traz `recuperado_de` (o caminho dela).
-## Devolve null se nenhum serve.
+## Lê um mundo salvo. Se o arquivo está estragado, ilegível ou não existe, tenta o `.novo` (uma
+## gravação que parou depois de girar as cópias e antes de trocar o arquivo: é o mais recente) e
+## depois as cópias, da mais nova para a mais velha. O mundo que não veio do arquivo principal traz
+## `recuperado_de` (o caminho de onde veio). Devolve null se nenhum serve.
 static func carregar(caminho: String = CAMINHO_PADRAO):
 	var m = _ler_mundo(caminho, caminho)
 	if m != null:
 		return m
-	for n in range(1, COPIAS + 1):
-		m = _ler_mundo(Arquivo.copia(caminho, n), caminho)
+	for c in [caminho + ".novo"] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(caminho, n)):
+		m = _ler_mundo(c, caminho)
 		if m != null:
-			push_warning("Mundo salvo estragado: recuperado de " + Arquivo.copia(caminho, n))
-			m.recuperado_de = Arquivo.copia(caminho, n)
+			push_warning("Mundo salvo estragado: recuperado de " + c)
+			m.recuperado_de = c
 			return m
 	return null
 
@@ -212,6 +217,11 @@ static func _ler_mundo(caminho: String, base: String):
 	var linhas := f.get_as_text().split("\n", true, 1)
 	f.close()
 	if linhas.size() < 2 or not linhas[0].begins_with("# Simulador de vida: mundo salvo."):
+		return null
+	# A soma, quando há (os mundos salvos antes dela não têm): o texto tem de ser o que foi gravado.
+	var k := linhas[0].find(SOMA)
+	if k >= 0 and linhas[0].substr(k + SOMA.length()).strip_edges() != linhas[1].md5_text():
+		push_warning("Mundo salvo com a soma errada (estragado no disco): " + caminho)
 		return null
 	var d = _decodificar_mundo(str_to_var(linhas[1]))
 	if typeof(d) != TYPE_DICTIONARY or not VERSOES_LIDAS.has(d.get("versao", 0)) or not _completo(d):
@@ -272,8 +282,10 @@ static func carregar_e_avancar(caminho: String = CAMINHO_PADRAO, agora: int = -1
 		agora = int(Time.get_unix_time_from_system())
 	var aus: Dictionary = m.avancar_ausencia(agora - m.salvo_em)
 	if not m.recuperado_de.is_empty():
-		# O retorno conta que o mundo voltou de uma cópia: o que veio depois dela se perdeu.
 		aus["recuperado_de"] = m.recuperado_de
+	# O retorno conta que o mundo voltou de uma cópia: o que veio depois dela se perdeu. O `.novo`
+	# é a gravação mais recente, inteira: nada se perdeu, e não há o que contar.
+	if not m.recuperado_de.is_empty() and not m.recuperado_de.ends_with(".novo"):
 		aus["relato"] = ("*O mundo salvo estava estragado. Ele voltou da cópia de segurança de %s, e o que aconteceu " +
 			"depois dela se perdeu.*\n\n") % Time.get_datetime_string_from_unix_time(m.salvo_em, true) + aus["relato"]
 	return {"mundo": m, "ausencia": aus}
