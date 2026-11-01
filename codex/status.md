@@ -100,3 +100,104 @@ Arquivos:
 - arte/prancha/PROCESSO.md
 Critérios de aceite: três direções e respectivas noites produzidas e inspecionadas visualmente; dimensões, paleta, alpha e reprodução exata por SHA-256 verificados. Aprovação estética cabe ao usuário/orquestrador.
 Observações: mesma geografia, sete pessoas incluindo duas crianças e duas cabanas; três planos. A usa silhuetas e névoa, B copas arredondadas e tons quentes, C contornos de material e textura. Paleta T001 mantida nas três. Esta tarefa entrou na fila durante a produção de T002–T005, já entregues; essas peças permanecem provisórias até escolha de direção. Não foi escolhida direção em nome do usuário.
+
+## T006 — ENTREGUE — 2026-11-01 00:09
+Arquivos:
+- arte/alvo/alvo_entardecer.png
+- arte/alvo/alvo_entardecer.py
+- arte/alvo/alvo_entardecer_4x.png
+- arte/alvo/alvo_entardecer_4x.py
+- arte/alvo/alvo_dia.png
+- arte/alvo/alvo_dia.py
+- arte/alvo/alvo_dia_4x.png
+- arte/alvo/alvo_dia_4x.py
+- arte/alvo/alvo_noite.png
+- arte/alvo/alvo_noite.py
+- arte/alvo/alvo_noite_4x.png
+- arte/alvo/alvo_noite_4x.py
+- arte/visual_c.py (fonte compartilhada da direção C)
+Critérios de aceite: dimensões, paleta T001 aprovada, alpha binário e reprodução exata por SHA-256 verificados. Avaliação estética final pelo orquestrador.
+Observações: Cena-alvo e peças compartilham primitivas em arte/visual_c.py. Chão central y120 (75%); costa y128, morro y104–112; camadas de grama, terra, raízes e rocha. Sete pessoas, duas crianças. Pinheiros, copas largas, arbustos e capim têm a luz no topo. À noite, iluminação espacial aquece pele, roupas, solo e objetos junto ao fogo. As folhas PNG serão exportadas nas próximas tarefas sem mudar os desenhos. Scripts homônimos dependem de arte/visual_c.py, arte/gerador.py e Pillow.
+
+## T007 — ENTREGUE — 2026-11-01 00:09
+Arquivos:
+- arte/terreno_c/terreno.png
+- arte/terreno_c/terreno.py
+- arte/terreno_c/agua_superficie_4q.png
+- arte/terreno_c/agua_superficie_4q.py
+- arte/terreno_c/terreno_teste.png
+- arte/terreno_c/terreno_teste.py
+- arte/terreno_c/terreno_c_teste.png
+- arte/terreno_c/terreno_c_teste.py
+- arte/terreno_c/pedra_aflorada.png
+- arte/terreno_c/pedra_aflorada.py
+- arte/visual_c.py (fonte compartilhada da direção C)
+Critérios de aceite: dimensões, paleta T001 aprovada, alpha binário e reprodução exata por SHA-256 verificados. Avaliação estética final pelo orquestrador.
+Observações: Folha com 13 blocos em ordem: os oito originais, raízes, rocha, bordas A/B e pedra aflorada. Pedra também exportada individualmente. terreno_c_teste usa exatamente o perfil da cena-alvo, transparente acima do solo. terreno_teste demonstra praia, lago e morro como pedido na T002. Bordas irregulares são sobreposições transparentes, sem efeitos do motor. Scripts homônimos dependem de arte/visual_c.py, arte/gerador.py e Pillow.
+
+## T008 — ENTREGUE — 2026-11-01 00:09
+Arquivos:
+- arte/habitantes_c/adulto_a_parado_2q.png
+- arte/habitantes_c/adulto_a_parado_2q.py
+- arte/habitantes_c/adulto_a_andar_4q.png
+- arte/habitantes_c/adulto_a_andar_4q.py
+- arte/habitantes_c/adulto_b_parado_2q.png
+- arte/habitantes_c/adulto_b_parado_2q.py
+- arte/habitantes_c/adulto_b_andar_4q.png
+- arte/habitantes_c/adulto_b_andar_4q.py
+- arte/habitantes_c/crianca_andar_4q.png
+- arte/habitantes_c/crianca_andar_4q.py
+- arte/habitantes_c/habitantes_variacoes.png
+- arte/habitantes_c/habitantes_variacoes.py
+- arte/habitantes_c/idoso_andar_4q.png
+- arte/habitantes_c/idoso_andar_4q.py
+- arte/habitantes_c/adulto_a_rezar_2q.png
+- arte/habitantes_c/adulto_a_rezar_2q.py
+- arte/habitantes_c/adulto_a_colher_4q.png
+- arte/habitantes_c/adulto_a_colher_4q.py
+- arte/visual_c.py (fonte compartilhada da direção C)
+Critérios de aceite: dimensões, paleta T001 aprovada, alpha binário e reprodução exata por SHA-256 verificados. Avaliação estética final pelo orquestrador.
+Observações: Cabeça com cabelo e sombra, braço destacado, tecido sombreado somente com as três cores de tecidos, pernas em dois tons de pele. Cabeça ancorada no ciclo de andar. Corpo B tem ombros e túnica mais largos; idoso tem cabeça deslocada e bengala; rezar ajoelha com braços altos; colher alterna postura ereta e inclinada. Grade de variações A/B × quatro peles × três tecidos. Scripts homônimos dependem de arte/visual_c.py, arte/gerador.py e Pillow.
+
+## T009 — ENTREGUE — 2026-11-01 00:09
+Arquivos:
+- arte/estagio1_c/cabana_galhos.png
+- arte/estagio1_c/cabana_galhos.py
+- arte/estagio1_c/fogueira_apagada.png
+- arte/estagio1_c/fogueira_apagada.py
+- arte/estagio1_c/fogueira_4q.png
+- arte/estagio1_c/fogueira_4q.py
+- arte/estagio1_c/arvore_a.png
+- arte/estagio1_c/arvore_a.py
+- arte/estagio1_c/arvore_b.png
+- arte/estagio1_c/arvore_b.py
+- arte/estagio1_c/arbusto.png
+- arte/estagio1_c/arbusto.py
+- arte/estagio1_c/pinheiro_a.png
+- arte/estagio1_c/pinheiro_a.py
+- arte/estagio1_c/pinheiro_b.png
+- arte/estagio1_c/pinheiro_b.py
+- arte/estagio1_c/capim.png
+- arte/estagio1_c/capim.py
+- arte/estagio1_c/pedra_grande.png
+- arte/estagio1_c/pedra_grande.py
+- arte/visual_c.py (fonte compartilhada da direção C)
+Critérios de aceite: dimensões, paleta T001 aprovada, alpha binário e reprodução exata por SHA-256 verificados. Avaliação estética final pelo orquestrador.
+Observações: Peças correspondem às primitivas usadas na cena-alvo. Pinheiros têm segmentos e luz nas bordas; copas largas, arbustos e capim seguem luz superior. Cobertura da cabana usa vegetação, estrutura usa terra/madeira, entrada escura. As peças isoladas não incluem brilho, neblina ou reflexo. Scripts homônimos dependem de arte/visual_c.py, arte/gerador.py e Pillow.
+
+## T010 — ENTREGUE — 2026-11-01 00:09
+Arquivos:
+- arte/cenas_c/montada_dia.png
+- arte/cenas_c/montada_dia.py
+- arte/cenas_c/montada_dia_4x.png
+- arte/cenas_c/montada_dia_4x.py
+- arte/cenas_c/montada_noite.png
+- arte/cenas_c/montada_noite.py
+- arte/cenas_c/montada_noite_4x.png
+- arte/cenas_c/montada_noite_4x.py
+- arte/visual_c.py (fonte compartilhada da direção C)
+Critérios de aceite: dimensões, paleta T001 aprovada, alpha binário e reprodução exata por SHA-256 verificados. Avaliação estética final pelo orquestrador.
+Observações: Composição carrega exclusivamente PNGs das T007–T009 para o mundo, habitantes e objetos; céu, reflexão, partículas e luz são efeitos de código. Troca de paleta dos habitantes representa seleção cultural. Igualdade pixel a pixel com alvo_dia e alvo_noite verificada, incluindo 4x. Nenhum sprite foi retocado durante a montagem. Scripts homônimos dependem de arte/visual_c.py, arte/gerador.py e Pillow.
+
+## Aguardando tarefas — 2026-11-01 00:13
+T006 a T010 entregues; nenhuma tarefa com estado PENDENTE ou REFAZER. Inspeção visual complementar feita nos habitantes, animações, pinheiro, terreno transparente e cena montada. Controle permanece Desligar_Codex = False; ciclo de consulta continua ativo.

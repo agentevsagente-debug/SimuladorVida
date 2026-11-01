@@ -159,7 +159,7 @@ Montar uma cena com tudo o que foi entregue nas tarefas T001 a T004.
 ---
 
 ## T006 — Cena-alvo da direção C
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Repintar a cena da prancha na direção C **com todas as correções do guia**. Esta cena passa a ser a imagem de referência do jogo: todas as peças seguintes precisam combinar com ela.
 
@@ -178,7 +178,7 @@ Repintar a cena da prancha na direção C **com todas as correções do guia**. 
 ---
 
 ## T007 — Terreno na direção C
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Refazer os blocos da T002 no estilo da cena-alvo. Mesmos arquivos e tamanhos da T002, agora em `arte/terreno_c/`, com estes blocos a mais na folha:
 - terra escura com raízes;
@@ -191,7 +191,7 @@ Refazer os blocos da T002 no estilo da cena-alvo. Mesmos arquivos e tamanhos da 
 ---
 
 ## T008 — Habitantes na direção C
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Refazer os habitantes da T003 com a definição pedida no guia. Mesmos arquivos, quadros e tamanhos da T003, agora em `arte/habitantes_c/`, com estes a mais:
 - `idoso_andar_4q.png` (8 × 12, postura curvada);
@@ -203,7 +203,7 @@ Refazer os habitantes da T003 com a definição pedida no guia. Mesmos arquivos,
 ---
 
 ## T009 — Estágio 1 na direção C
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Refazer as peças da T004 no estilo da cena-alvo, em `arte/estagio1_c/`, com estas a mais:
 - `pinheiro_a.png` e `pinheiro_b.png` (16 × 32);
@@ -215,7 +215,7 @@ Refazer as peças da T004 no estilo da cena-alvo, em `arte/estagio1_c/`, com est
 ---
 
 ## T010 — Cena montada com as peças
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Montar a cena-alvo **usando somente as peças das T007 a T009**, sem pintar nada à mão. Isso prova que o jogo, montando as peças, chega ao visual da cena-alvo.
 
