@@ -1,7 +1,7 @@
 {
  "nota": "céu: repita a faixa 4x160 na horizontal e ponha os detalhes em (detalhes_x, detalhes_y); demais: desenhe o recorte em (x, y) da área de 480x160",
- "bytes_antes": 8908800,
- "bytes_depois": 2350500,
+ "bytes_antes": 9523200,
+ "bytes_depois": 2501540,
  "camadas": {
   "ceu_dia": {
    "faixa": "ceu_dia_faixa.png",
@@ -10,6 +10,14 @@
    "detalhes_y": 11,
    "bytes_antes": 307200,
    "bytes_depois": 110848
+  },
+  "ceu_diluvio": {
+   "faixa": "ceu_diluvio_faixa.png",
+   "detalhes": "ceu_diluvio_detalhes.png",
+   "detalhes_x": 0,
+   "detalhes_y": 4,
+   "bytes_antes": 307200,
+   "bytes_depois": 75520
   },
   "ceu_eclipse": {
    "faixa": "ceu_eclipse_faixa.png",
@@ -42,6 +50,14 @@
    "detalhes_y": 12,
    "bytes_antes": 307200,
    "bytes_depois": 5924
+  },
+  "ceu_tempestade": {
+   "faixa": "ceu_tempestade_faixa.png",
+   "detalhes": "ceu_tempestade_detalhes.png",
+   "detalhes_x": 0,
+   "detalhes_y": 5,
+   "bytes_antes": 307200,
+   "bytes_depois": 75520
   },
   "mata_distante_dia": {
    "arquivo": "mata_distante_dia.png",

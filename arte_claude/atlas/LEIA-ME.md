@@ -13,8 +13,9 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 
 | Atlas | Tamanho | Peças | Memória de vídeo (L × A × 4) |
 |---|---|---|---|
-| `comum` | 512x512 | 205 | 1024 KB |
+| `comum` | 512x512 | 209 | 1024 KB |
 | `pessoas_inverno` | 256x128 | 61 | 128 KB |
+| `nuvens` | 256x128 | 45 | 128 KB |
 | `estacao_primavera` | 256x128 | 68 | 128 KB |
 | `estacao_verao` | 256x128 | 68 | 128 KB |
 | `estacao_outono` | 256x128 | 68 | 128 KB |
@@ -32,11 +33,12 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 | `estagio6` | 256x256 | 43 | 256 KB |
 | `estagio6_inverno` | 256x256 | 43 | 256 KB |
 
-**Total, com todos carregados: 3,44 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
+**Total, com todos carregados: 3,56 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
 
 **O que vai em cada atlas:**
 - **`comum`:** habitantes, ações e vida, chaminé e fumaça de chaminé (`luzes/`), interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
 - **`pessoas_inverno`:** as folhas de `habitantes/` e `acoes/` com a roupa de frio. No inverno, as regiões com o mesmo nome valem no lugar das do `comum`.
+- **`nuvens`:** as 45 nuvens soltas do céu vivo (5 climas × 3 camadas × 3 tamanhos). O motor só usa as do clima atual, mas o atlas é pequeno o bastante para ficar inteiro.
 - **`estacao_<primavera|verao|outono|inverno>`:** todos os blocos de terreno e a vegetação do estágio 1, na versão da estação (a de verão quando a estação não muda a peça), mais a muda, a árvore jovem, o pinheiro jovem e a fogueira antiga, a agricultura da estação (roças, pomar, roça irrigada e roda d'água). O de inverno tem também o `gelo_superficie`.
 - **`estagio<N>` e `estagio<N>_inverno`:** as construções do estágio, com as camadas de janelas acesas (`<casa>_luz`), as ruínas com os 3 graus de mato e os habitantes do estágio. As roças, o pomar e a roda d'água ficam nos atlas de estação. O `_inverno` traz as mesmas peças com neve, e é ele que o motor carrega no inverno.
   - O estágio 1 tem a cabana, as fogueiras e a cabana abandonada.
@@ -54,7 +56,7 @@ Céus, montanhas, mata distante e reflexo ficam fora dos atlas. Mesmo assim, deu
   - uma **faixa** de 4 × 160, que o motor repete na largura (ou usa como textura com repetição);
   - uma camada de **detalhes** (sol ou lua, nuvens, estrelas), recortada ao seu retângulo.
 
-**Antes: 8.50 MB nas 29 camadas. Depois: 2.24 MB.** Num momento qualquer, o jogo usa só as camadas de uma estação e de um horário (ou dois, na transição). Com as 15 camadas de uma estação carregadas (3 horários × céu, 2 montanhas, mata e reflexo), a conta cai de 4,4 MB para cerca de 1,2 MB.
+**Antes: 9,08 MB nas 31 camadas. Depois: 2,39 MB.** Num momento qualquer, o jogo usa só as camadas de uma estação e de um horário (ou dois, na transição). Com as 15 camadas de uma estação carregadas (3 horários × céu, 2 montanhas, mata e reflexo), a conta cai de 4,4 MB para cerca de 1,2 MB.
 
 | Camada | Antes | Depois |
 |---|---|---|

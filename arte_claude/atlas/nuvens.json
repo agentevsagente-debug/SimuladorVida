@@ -1,0 +1,459 @@
+{
+ "atlas": "nuvens.png",
+ "largura": 256,
+ "altura": 128,
+ "margem": 1,
+ "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
+ "regioes": {
+  "nuvens/nuvem_dia_longe_g": {
+   "x": 1,
+   "y": 78,
+   "w": 32,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_dia_longe_m": {
+   "x": 166,
+   "y": 78,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_dia_longe_p": {
+   "x": 176,
+   "y": 87,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_dia_meio_g": {
+   "x": 148,
+   "y": 35,
+   "w": 48,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_dia_meio_m": {
+   "x": 148,
+   "y": 52,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_dia_meio_p": {
+   "x": 191,
+   "y": 78,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_dia_perto_g": {
+   "x": 1,
+   "y": 1,
+   "w": 64,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 64,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_dia_perto_m": {
+   "x": 131,
+   "y": 18,
+   "w": 48,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_dia_perto_p": {
+   "x": 181,
+   "y": 52,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_entardecer_longe_g": {
+   "x": 34,
+   "y": 78,
+   "w": 32,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_entardecer_longe_m": {
+   "x": 216,
+   "y": 78,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_entardecer_longe_p": {
+   "x": 193,
+   "y": 87,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_entardecer_meio_g": {
+   "x": 197,
+   "y": 35,
+   "w": 48,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_entardecer_meio_m": {
+   "x": 214,
+   "y": 52,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_entardecer_meio_p": {
+   "x": 1,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_entardecer_perto_g": {
+   "x": 66,
+   "y": 1,
+   "w": 64,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 64,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_entardecer_perto_m": {
+   "x": 180,
+   "y": 18,
+   "w": 48,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_entardecer_perto_p": {
+   "x": 1,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_noite_longe_g": {
+   "x": 67,
+   "y": 78,
+   "w": 32,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_noite_longe_m": {
+   "x": 26,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_noite_longe_p": {
+   "x": 210,
+   "y": 87,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_noite_meio_g": {
+   "x": 1,
+   "y": 52,
+   "w": 48,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_noite_meio_m": {
+   "x": 34,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_noite_meio_p": {
+   "x": 51,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_noite_perto_g": {
+   "x": 131,
+   "y": 1,
+   "w": 64,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 64,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_noite_perto_m": {
+   "x": 1,
+   "y": 35,
+   "w": 48,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_noite_perto_p": {
+   "x": 67,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_seca_longe_g": {
+   "x": 100,
+   "y": 78,
+   "w": 32,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_seca_longe_m": {
+   "x": 76,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_seca_longe_p": {
+   "x": 227,
+   "y": 87,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_seca_meio_g": {
+   "x": 50,
+   "y": 52,
+   "w": 48,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_seca_meio_m": {
+   "x": 100,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_seca_meio_p": {
+   "x": 101,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_seca_perto_g": {
+   "x": 1,
+   "y": 18,
+   "w": 64,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 64,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_seca_perto_m": {
+   "x": 50,
+   "y": 35,
+   "w": 48,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_seca_perto_p": {
+   "x": 133,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_tempestade_longe_g": {
+   "x": 133,
+   "y": 78,
+   "w": 32,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_tempestade_longe_m": {
+   "x": 126,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_tempestade_longe_p": {
+   "x": 1,
+   "y": 96,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_tempestade_meio_g": {
+   "x": 99,
+   "y": 52,
+   "w": 48,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_tempestade_meio_m": {
+   "x": 166,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  },
+  "nuvens/nuvem_tempestade_meio_p": {
+   "x": 151,
+   "y": 87,
+   "w": 24,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 8
+  },
+  "nuvens/nuvem_tempestade_perto_g": {
+   "x": 66,
+   "y": 18,
+   "w": 64,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 64,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_tempestade_perto_m": {
+   "x": 99,
+   "y": 35,
+   "w": 48,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 48,
+   "quadro_h": 16
+  },
+  "nuvens/nuvem_tempestade_perto_p": {
+   "x": 199,
+   "y": 65,
+   "w": 32,
+   "h": 12,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 12
+  }
+ }
+}
