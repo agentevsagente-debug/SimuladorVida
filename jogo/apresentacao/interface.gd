@@ -58,10 +58,10 @@ const LARGURA_DICA := 140  # largura máxima do texto da dica, com quebra de lin
 const COR_PENSAMENTO := 29  # índice na paleta (A995DB, lilás): a linha do pensamento
 ## As dicas da primeira abertura, na ordem: cada uma aparece sozinha, discreta
 ## na alça, e some quando o jogador faz o que ela ensina.
-const DICAS := [["criar_povo", "Clique sobre o mundo para fazer nascer um povo"],  # o mundo começa vazio (QA, D-09)
-	["poder", "Escolha um poder e segure sobre o mundo"],
+const DICAS := [["poder", "Escolha um poder e segure sobre o mundo"],
 	["pessoas", "Passe o cursor sobre as pessoas"], ["cronica", "C abre a crônica do mundo"],
 	["ritmo", "0 a 3 mudam a velocidade do tempo"], ["esconder", "H esconde; o ícone fica na bandeja"]]
+const CHAMADA_MUNDO_VAZIO := "Clique sobre o mundo para fazer nascer um povo"
 const ESPERA_DICA := 4.0  # segundos entre uma dica feita e a próxima
 const DICA_PULA := 60.0   # uma dica não feita nesse tempo vai para o fim da fila (auditoria 8, P4)
 ## O tamanho em que as fontes 5x7 saem pixel a pixel (size=11 no .fnt). Sem ele,
@@ -248,7 +248,10 @@ func _abandonar() -> void:
 	poder = ""
 	aberto = ""
 	_montar_botoes()
-	_avisar("%s foi para a estante. Começou outro mundo." % livro.get("titulo", "A crônica"))
+	if livro.is_empty():  # abandonado antes do primeiro povo: não há livro
+		_avisar("Começou outro mundo.")
+	else:
+		_avisar("%s foi para a estante. Começou outro mundo." % livro.get("titulo", "A crônica"))
 
 
 func _ao_receber_eventos(eventos: Array) -> void:
@@ -449,10 +452,10 @@ func iniciar_dicas(feitas: Array) -> void:
 ## Uma dica não feita em DICA_PULA segundos (de noite, por exemplo, não há em
 ## quem passar o cursor) vai para o fim da fila e volta depois das outras.
 func _dica_atual() -> String:
+	# o mundo vazio (o começo, depois de abandonar ou do fim): a chamada fica até o povo nascer (QA, D-09)
+	if _mundo_vazio() and not _estante.visible:
+		return CHAMADA_MUNDO_VAZIO
 	if not _dicas_ligadas or _fila_dicas.is_empty() or _relogio < _proxima_dica_em:
-		return ""
-	if _fila_dicas[0] == "criar_povo" and not _mundo_vazio():  # o mundo já tem gente: não há o que criar
-		_fila_dicas.pop_front()
 		return ""
 	if _relogio - _dica_desde > DICA_PULA and _fila_dicas.size() > 1:
 		_fila_dicas.push_back(_fila_dicas.pop_front())
@@ -536,7 +539,10 @@ func intensidade() -> float:
 
 
 func _usar_poder() -> void:
-	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade())
+	var sob: Dictionary = vista.objeto_em(_carga_ponto)  # quem está sob o gesto, na tela
+	var sob_id: int = int(sob.pessoa["id"]) if sob.get("tipo", "") == "pessoa" else -1
+	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade(), sob_id,
+		vista.sim.fracao() * 60.0)
 	print("[interface] poder %s em x=%d intensidade=%.2f -> %s" % [poder, _carga_ponto.x, intensidade(), r])
 	if r.get("ok", false):
 		marcar_dica("poder")

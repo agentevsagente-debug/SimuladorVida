@@ -19,6 +19,8 @@ extends Node2D
 ##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
 ##   --cenario-raro=NOME  teste: força um acontecimento raro (veja cenarios_raros.gd)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
+##   --com-povo           o mundo novo já nasce com o primeiro povo (sem ele, --mundo-novo começa vazio;
+##                        --semente, --dias, --anos, --cena e --cenario-raro já nascem com o povo)
 ##   --extinguir[=N]      teste: todos morrem (e o mundo vazio anda N anos)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
@@ -170,18 +172,21 @@ func _ready() -> void:
 		sim.mundo_trocado.connect(_ao_trocar_mundo)
 		_vida = Vida.new(self, sim)
 		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena") or args.has("dias")
+		# os testes e cenários querem o povo pronto; só --mundo-novo sozinho começa vazio, como o jogo
+		var com_povo := args.has("com-povo") or args.has("semente") or args.has("cena") or args.has("dias") \
+			or args.has("anos") or args.has("cenario-raro")
 		sim.salvar_em_disco = not novo
 		var semente := int(args.get("semente", str(randi())))
 		var hf := float(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1.0
 		if args.has("anos") or args.has("dias"):
-			sim.iniciar(semente, -1, false)
+			sim.iniciar(semente, -1, false, true)
 			sim.mundo.avancar_dias(40 * int(args.get("anos", "0")) + int(args.get("dias", "0")))
 			if hf >= 0.0:
 				while sim.mundo.tempo()["hora"] != int(hf):
 					sim.mundo.avancar_hora()
 			sim.iniciar_de_mundo()
 		else:
-			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo)
+			sim.iniciar(semente, int(hf) if hf >= 0.0 else -1, not novo, com_povo)
 		if args.has("extinguir"):  # teste: todos morrem; com N > 0, o mundo vazio anda N anos
 			_extinguir(int(args["extinguir"]) if args["extinguir"] != "" else 0)
 		if args.has("simular-ausencia"):  # teste: como se o jogador tivesse saído N horas
