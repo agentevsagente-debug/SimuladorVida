@@ -104,6 +104,19 @@ GIFs em 1x, em trechos de 60 s de jogo de verdade: `capturas/tarde-1x.gif` (a pa
 - **Medido no 50x** (`medicoes/rapido2.json`, 5 min): CPU de 0,171% em média (4,8% de um núcleo), pico de amostra de 0,23%, dentro da meta; 122 MB na coluna "Memória" do Gerenciador de Tarefas.
 - O verificar.ps1 foi atualizado para a alça com 10 botões e passa nos 19 itens.
 
+## Auditoria 4
+
+| # | O que foi feito |
+|---|---|
+| **N1** | O abate da caçada fica em chão aberto: o bicho anda até o primeiro ponto, do lado dos caçadores, sem arbusto, capim ou pedra atrás. Quem amarra (o primeiro da cena) fica a 8 px dele, virado para ele; os outros, de pé com a lança erguida (`cacar_comemorar_4q`), a 12 a 20 px. O `pau_no_chao` fica do outro lado do bicho. Na espreita, os caçadores ficam agachados (`cacar_espreitar_4q`, também parados), e a lança voa num arco até o bicho. |
+| **N2** | A coruja é presença fixa das 21h às 5h, com a base no topo da copa da árvore mais perto da vila (a primeira linha opaca da copa); usa a versão de neve no inverno e a de chuva com tempestade. A raposa (cena `bicho_noturno`) trota pela borda, para, cheira e olha para trás, vai e volta e espelha ao virar. |
+| **N3** | Além das conversas, a cada 14 s alguém parado ou trabalhando (colher, construir, pescar, fogo...) solta um balão de fala por 2,5 s. Continua no máximo 3 de cada vez. |
+| **N4** | Os pontinhos claros em arco eram a neblina da manhã: pixels soltos por ruído, numa faixa na altura do acampamento e por cima dele. Agora ela fica atrás da vila (antes do mundo) e é feita de fiapos horizontais de 4 a 7 px. |
+| **N5** | Aguarda a troca de lugar da A para conferir na tela. |
+| Correção | Algumas cenas têm `id` em texto, e a comparação com número quebrava; os ids passaram a ser comparados como texto. |
+
+GIFs em 1x: `capturas/tarde-1x.gif` e `capturas/madrugada-1x.gif`; neblina em `capturas/auditoria4-neblina.png`. O verificar.ps1 segue sem rodar, porque a sessão do Windows continua bloqueada ("Backstop Window" sob o cursor).
+
 ## Exportação para Windows (preparo, sem baixar nada)
 
 **Preset** (`jogo/export_presets.cfg`, "Windows"):

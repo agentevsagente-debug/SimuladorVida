@@ -44,7 +44,7 @@ var _chuva_divina_resta := 0.0
 var _chuva_forte := false
 
 
-## `antes_de` é o nó que fica logo acima da neblina (o primeiro plano).
+## `antes_de` é o nó que fica logo acima da neblina (o mundo: ela fica atrás da vila).
 func criar(p_vista: Node2D, material_fosco: Material, antes_de: Node) -> void:
 	vista = p_vista
 	_rng.randomize()

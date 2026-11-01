@@ -54,7 +54,7 @@ const DETALHES := {"colher_arbusto": ["acoes/colher_arbusto_4q", 8], "cavar_raiz
 	"catar_lenha": ["acoes/catar_lenha_forte_4q", 12], "buscar_agua": ["acoes/buscar_agua_forte_4q", 12],
 	"banho": ["acoes/banhar_4q", 8], "espantar": ["acoes/espantar_forte_4q", 12], "discutir": ["acoes/discutir_4q", 8],
 	"separar": ["acoes/conversar_falar_4q", 8], "arremessar": ["acoes/cacar_arremessar_4q", 8],
-	"bocejar": ["acoes/bocejar_4q", 8]}
+	"bocejar": ["acoes/bocejar_4q", 8], "espreitar": ["acoes/cacar_espreitar_4q", 8]}
 ## Detalhes andando: a carga ou a ferramenta da ida e da volta.
 const DETALHES_ANDANDO := {"carregar_cesto": "acoes/carregar_cesto_cabeca_forte_4q",
 	"carregar_cesto_cabeca": "acoes/carregar_cesto_cabeca_forte_4q", "levar_cesto": "acoes/andar_cesto_4q",
@@ -123,6 +123,9 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var destino: float = lugar.get(id, t.destino)
 		if acao != "remar":  # só no barco se fica sobre a água
 			destino = maxf(destino, MARGEM)
+		var abate := _no_abate(t, id)
+		if not abate.is_empty():  # o abate encenado em chão aberto: quem amarra a 8 px, os outros de pé
+			destino = abate.x
 		if not t.anda:  # ninguém parado em cima da fogueira: afasta para o lado em que já está
 			var fogo_d: float = vista.fogo_mais_perto(destino)
 			if absf(destino - fogo_d) < FOGO_LIVRE:
@@ -152,7 +155,9 @@ func atualizar(delta: float, relogio: float) -> Array:
 			continue
 		var movendo := absf(x - anterior) > 0.001
 		var fogo: float = vista.fogo_mais_perto(x)
-		if movendo:
+		if not abate.is_empty() and not movendo:
+			_virada[id] = abate.espelho  # olhando para o bicho
+		elif movendo:
 			_virada[id] = x < anterior
 		elif (acao in OLHA_O_FOGO or t.get("detalhe", "") in OLHA_O_FOGO) and absf(fogo - x) < 40.0:
 			_virada[id] = fogo < x  # a roda olha para o fogo (quem está à direita, espelhado)
@@ -274,8 +279,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 			if queda < 10.0:
 				return ["acoes/tropecar_cair_forte_4q", 12, 3, 0]
 			return ["acoes/agachar_2q", 8, 1, 0]
-		"recolher_caca":  # acertou: um amarra o bicho, os outros comemoram
-			if id % 2 == 0:
+		"recolher_caca":  # acertou: o primeiro da cena amarra o bicho, os outros comemoram de pé
+			if _menor_da_cena(t.cena) == id:
 				return ["acoes/cacar_amarrar_4q", 12, int(fase * 2.0) % 4, 0]
 			return ["acoes/cacar_comemorar_4q", 12, (int(fase * 5.0) + id) % 4, 0]
 		"aticar":  # de madrugada, quem acordou atiça o fogo
@@ -374,7 +379,7 @@ func _menor_da_cena(c: Dictionary) -> int:
 	var menor := 1 << 30
 	for p in sim.pessoas:
 		var pc: Dictionary = p.get("cena", {})
-		if pc.get("id", -1) == c.get("id", -2):
+		if str(pc.get("id", -1)) == str(c.get("id", -2)):  # há cenas com id em texto
 			menor = mini(menor, p["id"])
 	return menor
 
@@ -458,7 +463,7 @@ func _animais_das_cenas(r: Array, relogio: float) -> void:
 			continue
 		if h < float(c.get("ini", 0.0)) or h > float(c.get("fim", 24.0)):
 			continue
-		if tipo == "cacada" and r.any(func(f): return f.acao == "carregar_caca" and f.cena.get("id", -1) == c.get("id", -2)):
+		if tipo == "cacada" and r.any(func(f): return f.acao == "carregar_caca" and str(f.cena.get("id", -1)) == str(c.get("id", -2))):
 			continue  # já abatida: vai no pau, com os carregadores
 		var x := roundi(float(c.get("x", 300.0)))
 		var ave := int(c.get("id", 0)) % 2 == 1
@@ -470,44 +475,72 @@ func _animais_das_cenas(r: Array, relogio: float) -> void:
 		objetos.append(o)
 
 
+## A etapa da caçada agora: {etapa, xb (o bicho, em chão aberto), lado (de onde
+## vêm os caçadores), p (0..1 da etapa), vazia}, ou {}.
+func _etapa_da_cacada(c: Dictionary, h: float) -> Dictionary:
+	for e in c.get("etapas", []):
+		if h >= float(e["ini"]) and h < float(e["fim"]):
+			var xb := float(e.get("x_bicho", -1.0))
+			var xc := float(e.get("x", xb))
+			var lado := signf(xb - xc) if xb != xc else 1.0
+			return {"etapa": String(e["etapa"]), "xb": vista.chao_aberto(xb, -lado) if xb >= 0.0 else xb,
+				"xc": xc, "lado": lado, "p": (h - float(e["ini"])) / maxf(float(e["fim"]) - float(e["ini"]), 0.001),
+				"vazia": c.get("vazia", false)}
+	return {}
+
+
+## No abate, onde cada caçador fica: {x, espelho}, ou {} fora do abate. Quem
+## amarra fica a 8 px do bicho; os outros, de pé com a lança, a 12 a 20 px.
+func _no_abate(t: Dictionary, id: int) -> Dictionary:
+	if t.cena.get("tipo", "") != "cacada" or t.get("detalhe", "") != "recolher_caca":
+		return {}
+	for c in sim.cenas:
+		if str(c.get("id", -1)) != str(t.cena.get("id", -2)):
+			continue
+		var e := _etapa_da_cacada(c, sim.hora_continua())
+		if e.get("etapa", "") != "abatido":
+			return {}
+		var lado: float = e.lado
+		var distancia := 8.0 if _menor_da_cena(t.cena) == id else 8.0 + 4.0 * (1 + posmod(id, 3))
+		return {"x": float(e.xb) - lado * distancia, "espelho": lado < 0.0}
+	return {}
+
+
 ## A caçada em sequência (API: `etapas`; arte, seção 24): o porco fuçando
 ## enquanto os caçadores espreitam, a lança voando, o porco atingido e caído com
 ## o pau no chão (ou fugindo para a mata) e, na volta, a caça no pau.
 func _cacada_em_etapas(c: Dictionary, h: float, relogio: float) -> void:
-	for e in c["etapas"]:
-		var ini := float(e["ini"])
-		var fim := float(e["fim"])
-		if h < ini or h >= fim:
-			continue
-		var xb := float(e.get("x_bicho", -1.0))
-		var xc := float(e.get("x", xb))
-		var p := (h - ini) / maxf(fim - ini, 0.001)
-		var lado := signf(xb - xc) if xb != xc else 1.0  # de onde vêm os caçadores para o bicho
-		var chao_b: int = vista.chao(roundi(xb))
-		var fogo_b: float = vista.fogo_mais_perto(xb)
-		match String(e["etapa"]):
-			"saida", "espreita":  # fuçando, de costas para quem chega
-				_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, int(relogio * 3.0) % 4, lado < 0, fogo_b)
-			"arremesso":
-				if c.get("vazia", false):
-					_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
-				else:  # a lança crava, ele cambaleia e tomba (desenhado 2 px à esquerda)
-					_bicho("criaturas/porco_atingido_4q", 12, xb - 7, chao_b, mini(int(p * 12.0), 3), lado < 0, fogo_b)
-				if p < 0.08:  # a lança voando, num arco raso, do caçador ao bicho
-					var q := p / 0.08
-					var lx := lerpf(xc, xb, q)
-					var lanca := _objeto("objetos/lanca_voando", 12, roundi(lx) - 6, chao_b - 8 - roundi(sin(q * PI) * 4.0), 0)
-					lanca.espelho = lado < 0
-					objetos.append(lanca)
-			"abatido":
-				_bicho("criaturas/porco_abatido", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
-				var xp := roundi(xb) - 30 if lado > 0 else roundi(xb) + 6
-				objetos.append(_objeto("objetos/pau_no_chao", 24, xp, vista.chao(xp + 12), 0))
-			"fuga":  # errou: o porco foge a galope para dentro da mata, e a lança fica cravada
-				var xf := xb + lado * 40.0 * minf(p * 3.0, 1.0)
-				if p < 0.34:
-					_bicho("criaturas/porco_correr_4q", 10, xf - 5, vista.chao(roundi(xf)), int(relogio * 8.0) % 4, lado < 0, fogo_b)
-				objetos.append(_objeto("objetos/lanca_cravada", 8, roundi(xb) - 4, chao_b, 0))
+	var e := _etapa_da_cacada(c, h)
+	if e.is_empty() or float(e.xb) < 0.0:
+		return
+	var xb: float = e.xb
+	var lado: float = e.lado
+	var p: float = e.p
+	var chao_b: int = vista.chao(roundi(xb))
+	var fogo_b: float = vista.fogo_mais_perto(xb)
+	match String(e.etapa):
+		"saida", "espreita":  # fuçando, de costas para quem chega
+			_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, int(relogio * 3.0) % 4, lado < 0, fogo_b)
+		"arremesso":
+			if e.vazia:
+				_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
+			else:  # a lança crava, ele cambaleia e tomba (desenhado 2 px à esquerda)
+				_bicho("criaturas/porco_atingido_4q", 12, xb - 7, chao_b, mini(int(p * 12.0), 3), lado < 0, fogo_b)
+			if p < 0.08:  # a lança voando, num arco raso, do caçador ao bicho
+				var q := p / 0.08
+				var lx := lerpf(float(e.xc), xb, q)
+				var lanca := _objeto("objetos/lanca_voando", 12, roundi(lx) - 6, chao_b - 8 - roundi(sin(q * PI) * 6.0), 0)
+				lanca.espelho = lado < 0
+				objetos.append(lanca)
+		"abatido":  # o bicho caído em chão aberto, e o pau do outro lado dele
+			_bicho("criaturas/porco_abatido", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
+			var xp := roundi(xb + 7.0) if lado > 0 else roundi(xb - 31.0)
+			objetos.append(_objeto("objetos/pau_no_chao", 24, xp, vista.chao(xp + 12), 0))
+		"fuga":  # errou: o porco foge a galope para dentro da mata, e a lança fica cravada
+			var xf := xb + lado * 40.0 * minf(p * 3.0, 1.0)
+			if p < 0.34:
+				_bicho("criaturas/porco_correr_4q", 10, xf - 5, vista.chao(roundi(xf)), int(relogio * 8.0) % 4, lado < 0, fogo_b)
+			objetos.append(_objeto("objetos/lanca_cravada", 8, roundi(xb) - 4, chao_b, 0))
 
 
 func _bicho(folha: String, largura: int, x: float, base: int, quadro: int, espelho: bool, fogo: float) -> void:

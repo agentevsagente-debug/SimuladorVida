@@ -115,6 +115,8 @@ var _eclipse_ate := -1
 var _seca_ate := -1          # a seca do deus amarela o céu logo depois do gesto
 var _larguras := {}          # peça -> largura do desenho (para os lotes)
 var _brasas := []            # centros dos fogos em brasas agora
+var _copas: Array = []       # topo da copa de cada árvore desenhada: Vector2(tronco, linha de cima)
+var _baixa: Array = []       # trechos [x0, x1] com vegetação baixa (arbustos, capim, pedras)
 var _tex_brasas: Texture2D
 var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela de noite
 var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
@@ -362,7 +364,8 @@ func _criar_nos() -> void:
 	_frente = _sprite(3, paleta, tabelas)
 	_atmosfera = Atmosfera.new()
 	add_child(_atmosfera)
-	_atmosfera.criar(self, _material(6, paleta, tabelas), _frente)
+	# a neblina fica atrás da vila (auditoria 4, N4): logo antes do mundo
+	_atmosfera.criar(self, _material(6, paleta, tabelas), _mundo)
 	_sinais = Sinais.new()
 	add_child(_sinais)
 	var luz := Arte.textura("camadas/luz_fogueira.png")
@@ -480,6 +483,8 @@ func _montar_fixo() -> void:
 	var frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var tag_frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_R8)
 	var pecas := {}
+	_copas = []
+	_baixa = []
 	for item in _layout["pecas"]:
 		var nome: String = item["peca"]
 		if item["plano"] in ["pessoa", "fogo"] or nome == "cabana_galhos":
@@ -503,6 +508,10 @@ func _montar_fixo() -> void:
 			img = img.duplicate()
 			img.flip_x()
 		var pos := Vector2i(int(item["x"]), int(item["base"]) - img.get_height() + 1)
+		if nome.begins_with("arvore_copa"):  # onde a coruja pode pousar
+			_copas.append(Vector2(pos.x + ARVORES.get(nome, 12), pos.y + _primeira_linha(img)))
+		elif nome in PECAS_MIUDAS or item["plano"] == "frente":
+			_baixa.append([pos.x, pos.x + img.get_width()])
 		if item["plano"] == "frente":
 			terreno.colar(frente, tag_frente, img, pos, Arte.FRENTE)
 		else:
@@ -766,6 +775,41 @@ func _colar_enchente(terreno, cor: Image, tag: Image) -> void:
 			terreno.colar(cor, tag, superficie, Vector2i(c * 8, nivel), Arte.MUNDO)
 			for y in range(nivel + 8, fundo, 8):
 				terreno.colar(cor, tag, agua, Vector2i(c * 8, y), Arte.MUNDO)
+
+
+func _primeira_linha(img: Image) -> int:
+	for y in img.get_height():
+		for x in img.get_width():
+			if img.get_pixel(x, y).a > 0.0:
+				return y
+	return 0
+
+
+## O poleiro da coruja: o topo da copa da árvore mais perto da vila (do primeiro fogo).
+func poleiro_coruja() -> Vector2:
+	if _copas.is_empty():
+		return Vector2(-100, -100)
+	var vila: float = _fogos[0].centro if not _fogos.is_empty() else 240.0
+	var melhor: Vector2 = _copas[0]
+	for c in _copas:
+		if absf(c.x - vila) < absf(melhor.x - vila):
+			melhor = c
+	return melhor
+
+
+## O x mais perto de x, andando para `lado`, onde o chão está aberto (sem
+## arbusto, capim ou pedra atrás), para a caça caída não sumir no mato.
+func chao_aberto(x: float, lado: float) -> float:
+	for passo in 16:
+		var cx := x + lado * passo * 2.0
+		var livre := true
+		for b in _baixa:
+			if cx + 6.0 > b[0] and cx - 6.0 < b[1]:
+				livre = false
+				break
+		if livre and not _na_agua(roundi(cx)):
+			return cx
+	return x
 
 
 func _sob_construcao(item: Dictionary, obras: Array) -> bool:
