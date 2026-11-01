@@ -2,6 +2,21 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Critérios de saída da fase 1
+
+Conferidos um a um em 01/11/2026, com o código da branch `claude/fase0-moldura-e4e762` depois do céu vivo.
+
+| # | Critério | Situação | Evidência |
+|---|---|---|---|
+| 1 | O jogo abre na moldura, cria o primeiro povo e roda sozinho. | **Atendido** | `ferramentas/verificar.ps1` passa inteiro: janela transparente, sempre por cima, clique atravessando, arrastar, escala, esconder e mostrar, e nitidez em 2x, 3x e 4x. Sem mundo salvo, o log mostra `[simulacao] novo ano=1 dia=1 hora=0`, e o tempo anda sozinho no ritmo normal. |
+| 2 | Pessoas vivendo, preces como sinais e os 6 poderes por gesto, com reação do povo. | **Atendido** | Vida: `capturas/cotidiano-dia.gif` e `cotidiano-tarde.gif`, com agenda, ações, microanimações e cenas. Preces: `tarefa4-sinal-prece.png` e `tarefa4-dica-sinal.png`. Gesto: o `verificar.ps1` aperta, segura 1,5 s e solta sobre o céu, e o raio sai com intensidade 0,75, um milagre. Os 6 poderes, mais os 5 da fase 2, em `tarefa4-poder-*.png` e `auditoria-9-*.png`. A reação do povo vem do núcleo e aparece no aviso da alça e na crônica; os incêndios, por exemplo, derrubam cabanas e deixam a zona queimada. |
+| 3 | Acompanhar uma linhagem e ler a crônica dentro do jogo. | **Atendido** | `tarefa4-seguir-linhagem.png` (a vista aproxima 2x e segue a pessoa, com paralaxe) e `tarefa4-cronica.png` (o pergaminho abre no fim). Clicar numa pessoa passa a acompanhá-la. |
+| 4 | Fechar e abrir retoma o mundo, com a ausência e a crônica do período. | **Atendido** | Salvei (`salvo=true ... passo=13`), fechei e reabri (`carregado ... passo=13`). Com 30 h de ausência simulada (`--simular-ausencia=30`), passaram 40 dias, e a crônica abriu com o relato (`capturas/fase1-ausencia.png`). O jogo salva a cada dia de jogo e ao fechar. O mundo de teste foi apagado. |
+| 5 | Leveza: CPU média abaixo de 2% e memória abaixo de 200 MB. | **Atendido, com a memória aceita pelo usuário** | CPU média de 0,15% a 0,19% da máquina nos cenários de 10 minutos e no céu vivo. Memória: 113 a 115 MB na coluna "Memória" do Gerenciador de Tarefas e cerca de 217 MB de conjunto de trabalho, com o executável do editor. O usuário aceitou a memória perto de 200 MB. |
+| 6 | O visual em jogo parece a cena-alvo. | **Atendido** | `ferramentas/fidelidade.sh`: a montagem da cena-alvo no jogo bate pixel a pixel com a da arte de dia (0,00%), e de noite difere em 59 pixels (0,08%), nas bordas das cabanas, de propósito (item 13 da auditoria). O céu da noite e o do entardecer batem com a cena-alvo nas 60 linhas de cima (0,03% e 0,06%), e o teste do céu sem grade passa em 96 de 96. Comparações lado a lado: `correcao-*-vs-alvo.png` e `tarefa4-*-vs-alvo.png`. |
+
+**Nada ficou faltando para a saída da fase 1.**
+
 ## Ajuste: pessoas no acampamento
 
 **Antes:** à noite, o povo inteiro se amontoava sobre a fogueira.
