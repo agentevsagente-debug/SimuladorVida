@@ -3,11 +3,11 @@ extends RefCounted
 ## Recebe o tempo (passos de 1 hora) e os comandos do deus, e devolve o estado
 ## do mundo e a lista de eventos. Mesma semente e mesmos comandos, mesmo mundo.
 
-const Pessoa = preload("res://nucleo/pessoa.gd")
-const Grupo = preload("res://nucleo/grupo.gd")
-const Zona = preload("res://nucleo/zona.gd")
-const Evento = preload("res://nucleo/evento.gd")
-const Nomes = preload("res://nucleo/nomes.gd")
+const Pessoa = preload("pessoa.gd")
+const Grupo = preload("grupo.gd")
+const Zona = preload("zona.gd")
+const Evento = preload("evento.gd")
+const Nomes = preload("nomes.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40

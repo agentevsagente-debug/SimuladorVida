@@ -14,7 +14,12 @@
 
 Com intervenção, a diferença aparece de imediato: o povo rebatiza o deus a cada ato forte e passa a guerrear em nome do novo nome.
 
-As ressalvas: da metade em diante, a crônica fica repetitiva (preces atendidas por acaso, ciclos de ataque e trégua). Os personagens raramente reaparecem. E a população tende a se fragmentar em povos pequenos demais. Na minha leitura, 3 das 4 crônicas são interessantes do começo ao fim do primeiro terço e ainda legíveis no resto. Detalhes em "Avaliação honesta".
+As ressalvas: da metade em diante, a crônica fica repetitiva (preces atendidas por acaso, ciclos de ataque e trégua). Os personagens raramente reaparecem. E a população tende a se fragmentar em povos pequenos demais. Pelo critério de saída da fase 0 ("interessante de ler em pelo menos 2 de 3 sementes"), meu veredito é que **passa**:
+- **semente 1:** interessante. Tem o arco de Satora (mãe da primeira criança, fundadora fracassada no ano 7, fundadora de Mian por rixa no ano 39), a fé nascida da febre e 70 anos de paz até a primeira morte em guerra.
+- **semente 2:** interessante, sobretudo até o ano 60. Tem éditos de sacerdotes, guerra "em nome do deus" e conquista. O fim fica repetitivo.
+- **semente 3:** legível, mas a mais fraca. O começo é bom (fé, agricultura levada por casamento, a primeira cisão); do ano 55 em diante, vira uma sucessão de rixas e batalhas entre povos pequenos.
+
+A crônica com intervenções é a melhor das quatro. Detalhes em "Avaliação honesta".
 
 ## Como rodar
 
@@ -33,7 +38,7 @@ ferramentas/godot.sh res://ferramentas/sondar.gd -- 1 2 3 4 5 # população por 
 
 | Caminho | O que é |
 |---|---|
-| `nucleo/` | O núcleo, em GDScript puro (`RefCounted`, sem nós nem cenas). Usa `preload` em vez de `class_name`, para poder ser copiado para `jogo/` sem mudanças. |
+| `nucleo/` | O núcleo, em GDScript puro (`RefCounted`, sem nós nem cenas). Usa `preload` relativo em vez de `class_name`, para poder ser copiado para qualquer pasta de `jogo/` sem mudanças. |
 | `nucleo/mundo.gd` | A simulação: tempo, zonas, pessoas, grupos, economia, sociedade, conflito, religião, memória e os 6 poderes. |
 | `nucleo/pessoa.gd`, `grupo.gd`, `zona.gd`, `evento.gd` | Os dados. O evento é estruturado: tipo, participantes, lugar, ano/dia/hora, causa (natural, social ou divina), importância e dados. |
 | `nucleo/cronista.gd` | Lê os eventos, escolhe o que importa a cada ano e escreve a crônica. |
@@ -146,11 +151,11 @@ ferramentas/godot.sh res://ferramentas/sondar.gd -- 1 2 3 4 5 # população por 
 - **Sonho estreito.** O sonho só trata de agricultura ou de visão religiosa.
 - **Estágios.** Não há estágios além do 2, nem ruínas, nem fim de era com novo povo. Se todos morrem, a crônica fecha a "Primeira Era", mas isso não aconteceu nas sementes entregues.
 - **Sem persistência.** Não há salvamento nem retomada (`user://`). O avanço durante a ausência é o mesmo laço sem gráfico, e a velocidade cabe com folga.
-- **Dois mecanismos que nunca se viram nas crônicas entregues:**
-  - **conhecimento perdido:** nas sementes 1 a 3, a agricultura se espalhou antes que o último que sabia morresse;
-  - **expedição além da borda:** exige todas as zonas cheias e fome ao mesmo tempo.
+- **Dois mecanismos implementados que, na prática, não disparam:** a perda de conhecimento e a expedição além da borda. Nenhum dos dois aconteceu nas sementes 1 a 20 sem intervenção (`sondar.gd`):
+  - **conhecimento perdido:** a agricultura sempre se espalhou antes que o último que sabia morresse;
+  - **expedição além da borda:** exige todas as zonas cheias e fome ao mesmo tempo. Só apareceu uma vez, numa versão anterior do equilíbrio e no cenário com intervenções.
 
-  Os dois apareceram em testes com outras sementes e versões.
+  Os dois precisam de ajuste na fase 1. A semente 19 termina em extinção, o que mostra que o fim do mundo acontece.
 
 ## Tempos
 
@@ -171,7 +176,7 @@ O ano mais lento, com cerca de 200 pessoas, leva 0,03 s, cerca de 100 vezes abai
 |---|---|---|
 | Mesma semente, mesma crônica | **Atendido** | `ferramentas/gerar_todas.sh` gera cada crônica duas vezes, em processos separados, e compara byte a byte. As quatro saíram iguais. Todo sorteio usa um único `RandomNumberGenerator` com semente fixa (nunca `randi()` global, `shuffle()` ou `pick_random()`). O cronista tem gerador próprio, derivado da semente. |
 | 1 ano em poucos segundos | **Atendido** | 0,002 a 0,03 s por ano (tabela acima). |
-| Nascimentos e mortes que importam | **Atendido nas 4** | A primeira criança de cada povo, filhos de líderes, nascidos em plena fome e filhos de casais de povos diferentes. Mortes de fundadores, líderes e sacerdotes, morte no parto, o filho que morre depois da prece da mãe ("e Vitorem nunca mais rezou") e o culpado apedrejado. |
+| Nascimentos e mortes que importam | **Atendido nas 4** | A primeira criança de cada povo, filhos de líderes, nascidos em plena fome e filhos de casais de povos diferentes. Mortes de fundadores, líderes e sacerdotes, morte no parto, morte por raio lida como castigo e o filho que morre depois da prece ("e Vitorem nunca mais rezou"). |
 | Uma separação de grupos | **Atendido nas 4** | Semente 1: 2 brigas e 2 migrações. Semente 2: 4 brigas e 2 migrações. Semente 3: 6 brigas e 2 migrações. Com o deus: 2 brigas, 4 migrações e 1 cisma. |
 | Um conflito | **Atendido nas 4** | Ataques narrados: 5, 20, 15 e 19. Tréguas e conquistas também aparecem. |
 | O surgimento de uma crença | **Atendido nas 4** | Sem o deus, a fé nasce de coincidências naturais: da febre («o Que Leva», semente 1) e da fome («o Que Nega», sementes 2 e 3). Com o deus, nasce da chuva no meio da seca («o Que Rega»). |
@@ -182,7 +187,7 @@ O ano mais lento, com cerca de 200 pessoas, leva 0,03 s, cerca de 100 vezes abai
 
 ### As crônicas são interessantes?
 
-**Os primeiros 30 a 50 anos são bons de ler em todas as sementes.** Cada ano traz algo novo: a primeira criança, a primeira fé, a primeira prece, a primeira separação, a primeira roça, a primeira guerra. A crônica nomeia tudo isso como "primeiro", o que dá ritmo. A família original tem nomes que voltam: a matriarca que funda, o filho que racha o grupo, a filha que leva o saber de plantar para os vizinhos.
+**Os primeiros 30 a 50 anos são bons de ler em todas as sementes.** Cada ano traz algo novo: a primeira criança, a primeira fé, a primeira prece, a primeira separação, a primeira roça, a primeira guerra. A crônica nomeia tudo isso como "primeiro", o que dá ritmo. Alguns nomes voltam ao longo de décadas. Na semente 1, Satora é mãe da primeira criança do mundo (ano 2), tenta fundar um povo no ano 7 e fracassa, racha o povo de novo no ano 39 e morre no ano 48 como fundadora de Mian. Na semente 3, Viu leva por casamento o segredo das sementes para outro povo e, anos depois, cuida das preces de um terceiro.
 
 **A crônica com intervenção é a mais interessante**, e isso é uma boa notícia para o jogo. Cada ato do deus produz uma leitura clara:
 
@@ -202,7 +207,7 @@ Isso dá ao texto um tom próprio e encarna o diferencial do documento funcional
 - **Fundação e cisão:** a família que vira dois povos por rixa ou por fome, e a árvore de culturas no epílogo.
 - **Fé por coincidência:** a febre que passa depois da prece e a seca que acaba depois do pedido. A religião nasce sozinha, sem o deus, como o documento pede.
 - **A dor da prece sem resposta:** a mãe que reza pelo filho, o filho morre, e ela "cuspia no chão quando falavam do deus".
-- **Política religiosa:** o sacerdote que inventa proibições, a guerra "em nome do Que Apaga o Sol" e o sacerdote acusado de mentir e deposto.
+- **Política religiosa:** o sacerdote que inventa proibições e a guerra "em nome do Que Apaga o Sol". No cenário com o deus, depois de muito silêncio, um povo conclui que pecou. Outro deixa de acreditar, e os fiéis que restam partem e fundam um povo novo, onde o deus se chama «a Voz dos Sonhos».
 - **Divergência cultural:** o mesmo deus com três nomes em três povos, depois de um eclipse ou de um raio. Lugares com dois nomes.
 - **Esquecimento:** a festa da chuva que continua sem que ninguém saiba por quê.
 - **Guerra e conquista:** vencidos levados para o povo vencedor, "guardando seus costumes em segredo".
@@ -214,7 +219,7 @@ Isso dá ao texto um tom próprio e encarna o diferencial do documento funcional
 2. **O ciclo ataque e trégua** depois do ano 60 nas sementes 2 e 3. Já pus "A guerra entre X e Y continuou" e reduzi as tréguas automáticas, mas as guerras ainda são uma sequência de batalhas iguais. Falta uma guerra com começo, meio e fim (motivo, campanha e desfecho).
 3. **Morte de líderes e sacerdotes "dormindo, aos 52 anos".** É correto e importante, mas é frequente e sem contexto. Falta dizer o que a pessoa fez em vida.
 4. **O eclipse domina a religião.** Ele rebatiza o deus em quase todas as sementes («o Que Apaga o Sol», «o Olho Escuro»). Ele também é a única fonte forte de "mistério" sem o deus.
-5. **Fragmentação.** Povos de 3 a 8 pessoas nascem, guerreiam e somem em poucos anos. Isso confunde o leitor (Lion, Nies, Isor...) e dilui a identidade das culturas.
+5. **Fragmentação.** Povos de 3 a 8 pessoas nascem, guerreiam e somem em poucos anos. Isso confunde o leitor (Vior, Nies, Gaor, Isor...) e dilui a identidade das culturas.
 6. **Personagens rasos.** Os traços aparecem como epíteto ("Satora, a corajosa") e nas reações, mas raramente uma mesma pessoa tem um arco de vida visível na crônica.
 7. **Costumes iguais em todos os povos.** Os povos filhos herdam tudo, e no ano 100 todos "fazem a festa da chuva, estocam comida e treinam com lanças". Falta a reforma (uma geração rejeitar o costume) e a diferenciação.
 
@@ -225,7 +230,7 @@ Isso dá ao texto um tom próprio e encarna o diferencial do documento funcional
 
 ## Recomendações para a fase 1
 
-1. **Manter a arquitetura.** Ela se pagou: núcleo puro, eventos estruturados como fonte única, cronista separado com gerador próprio e determinismo garantido por um só `RandomNumberGenerator`. O núcleo pode ir para `jogo/` como está. A moldura só lê `mundo.grupos`, `mundo.pessoas`, `mundo.zonas` e `mundo.eventos`, e chama `avancar_hora()`.
+1. **Manter a arquitetura.** Ela se pagou: núcleo puro, eventos estruturados como fonte única, cronista separado com gerador próprio e determinismo garantido por um só `RandomNumberGenerator`. Os `preload` são relativos à pasta `nucleo/`, então o núcleo pode ir para qualquer pasta de `jogo/` sem mudanças. A moldura só lê `mundo.grupos`, `mundo.pessoas`, `mundo.zonas` e `mundo.eventos`, e chama `avancar_hora()`.
 2. **Dar arco aos personagens.** Acompanhar uma linhagem (o menor conjunto pede isso) e deixar a crônica lembrar o que cada pessoa fez quando ela morre: "morreu Saut, que rezou pelo filho e nunca mais rezou".
 3. **Transformar repetição em escalada.** A terceira seca atendida deve gerar algo novo: um ritual, um sacerdote mais forte, dependência ("deixaram de estocar água"). A décima prece deve virar "exigência banal", como o documento funcional prevê para o deus que sempre responde. Na crônica, agrupar eventos repetidos num resumo de período ("Nos anos 60, as preces por chuva viraram rotina").
 4. **Guerras como episódios.** Dar a cada guerra motivo, campanha, desfecho e um nome ("a Guerra do Lago"), e contá-la como um parágrafo, não como uma linha por batalha.

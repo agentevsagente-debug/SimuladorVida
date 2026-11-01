@@ -1,4 +1,4 @@
 semente=1 cenario=- anos=100
-tempo_ano_1=0.002s tempo_ano_mais_lento=0.024s(ano 96) tempo_100_anos=0.949s tempo_cronica=0.225s
+tempo_ano_1=0.002s tempo_ano_mais_lento=0.021s(ano 96) tempo_100_anos=0.865s tempo_cronica=0.200s
 eventos=1971 populacao_final=121 grupos_vivos=4 passos=96000
 narrados: agricultura=1 ataque=5 casamento_entre_grupos=5 costume=13 costume_esquecido=1 crenca=1 descoberta=1 deus_renomeado=3 doenca_fim=5 eclipse=3 fome_fim=12 fusao=1 inverno_rigoroso=4 lugar_nomeado=3 morte=27 mudanca=1 nascimento=4 nova_crenca=2 novo_lider=3 prece=14 prece_atendida=14 prece_sem_resposta=5 sacerdote=4 seca_fim=10 separacao:briga=2 separacao:migracao=2 tempestade=3 tregua=2

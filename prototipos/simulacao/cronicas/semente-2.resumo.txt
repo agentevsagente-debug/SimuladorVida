@@ -1,4 +1,4 @@
 semente=2 cenario=- anos=100
-tempo_ano_1=0.002s tempo_ano_mais_lento=0.024s(ano 73) tempo_100_anos=1.206s tempo_cronica=0.373s
+tempo_ano_1=0.002s tempo_ano_mais_lento=0.028s(ano 100) tempo_100_anos=1.268s tempo_cronica=0.350s
 eventos=2705 populacao_final=210 grupos_vivos=5 passos=96000
 narrados: agricultura=2 ataque=20 casamento_entre_grupos=8 conquista=2 costume=12 costume_esquecido=3 crenca=1 descoberta=1 deus_renomeado=4 doenca_fim=4 eclipse=3 edito=10 fome_fim=16 inverno_rigoroso=4 lugar_nomeado=12 morte=38 mudanca=1 nascimento=7 nova_crenca=4 novo_lider=3 prece=20 prece_atendida=20 prece_sem_resposta=4 sacerdote=6 seca_fim=10 separacao:briga=4 separacao:migracao=2 tempestade=5 tregua=4

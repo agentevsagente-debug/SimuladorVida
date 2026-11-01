@@ -3,7 +3,7 @@ extends RefCounted
 ## por gramática de frases. Escolhe o que importa a cada ano e não inventa
 ## fatos: tudo o que escreve está nos eventos.
 
-const G = preload("res://nucleo/gramatica.gd")
+const G = preload("gramatica.gd")
 
 const ORCAMENTO_ANO := 5
 const LIMIAR := 5
