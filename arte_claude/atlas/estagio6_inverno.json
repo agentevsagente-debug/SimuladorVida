@@ -1,0 +1,439 @@
+{
+ "atlas": "estagio6_inverno.png",
+ "largura": 256,
+ "altura": 256,
+ "margem": 1,
+ "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
+ "regioes": {
+  "estagio6/adulto_e6_andar_4q": {
+   "x": 212,
+   "y": 149,
+   "w": 32,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio6/adulto_e6_parado_2q": {
+   "x": 1,
+   "y": 166,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio6/barco_2q": {
+   "x": 1,
+   "y": 149,
+   "w": 48,
+   "h": 16,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
+  },
+  "estagio6/barco_naufragado": {
+   "x": 50,
+   "y": 149,
+   "w": 24,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
+  },
+  "estagio6/canal": {
+   "x": 18,
+   "y": 166,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio6/canal_comporta": {
+   "x": 27,
+   "y": 166,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio6/casa_tijolo": {
+   "x": 34,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/casa_tijolo_parede": {
+   "x": 67,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/casa_tijolo_ruina": {
+   "x": 100,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/casa_tijolo_telhado_palha": {
+   "x": 133,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/casa_tijolo_telhado_tabuas": {
+   "x": 166,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/casa_tijolo_telhado_telha": {
+   "x": 199,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/moinho_4q": {
+   "x": 1,
+   "y": 1,
+   "w": 128,
+   "h": 40,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 40
+  },
+  "estagio6/moinho_ruina": {
+   "x": 130,
+   "y": 1,
+   "w": 32,
+   "h": 40,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 40
+  },
+  "estagio6/muralha": {
+   "x": 167,
+   "y": 149,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "estagio6/muralha_ruina": {
+   "x": 176,
+   "y": 149,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "estagio6/muralha_torre": {
+   "x": 166,
+   "y": 116,
+   "w": 16,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 32
+  },
+  "estagio6/muralha_torre_ruina": {
+   "x": 183,
+   "y": 116,
+   "w": 16,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 32
+  },
+  "estagio6/roca_irrigada": {
+   "x": 150,
+   "y": 149,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio6/templo_cupula": {
+   "x": 1,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/templo_cupula_base": {
+   "x": 34,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/templo_cupula_ruina": {
+   "x": 67,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/templo_cupula_simbolo_arvore": {
+   "x": 100,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/templo_cupula_simbolo_lua": {
+   "x": 133,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio6/templo_cupula_simbolo_sol": {
+   "x": 166,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/barco_naufragado_mato_1": {
+   "x": 75,
+   "y": 149,
+   "w": 24,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
+  },
+  "natureza/barco_naufragado_mato_2": {
+   "x": 100,
+   "y": 149,
+   "w": 24,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
+  },
+  "natureza/barco_naufragado_mato_3": {
+   "x": 125,
+   "y": 149,
+   "w": 24,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 16
+  },
+  "natureza/casa_tijolo_ruina_mato_1": {
+   "x": 199,
+   "y": 83,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/casa_tijolo_ruina_mato_2": {
+   "x": 1,
+   "y": 116,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/casa_tijolo_ruina_mato_3": {
+   "x": 34,
+   "y": 116,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/moinho_ruina_mato_1": {
+   "x": 163,
+   "y": 1,
+   "w": 32,
+   "h": 40,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 40
+  },
+  "natureza/moinho_ruina_mato_2": {
+   "x": 196,
+   "y": 1,
+   "w": 32,
+   "h": 40,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 40
+  },
+  "natureza/moinho_ruina_mato_3": {
+   "x": 1,
+   "y": 42,
+   "w": 32,
+   "h": 40,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 40
+  },
+  "natureza/muralha_ruina_mato_1": {
+   "x": 185,
+   "y": 149,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "natureza/muralha_ruina_mato_2": {
+   "x": 194,
+   "y": 149,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "natureza/muralha_ruina_mato_3": {
+   "x": 203,
+   "y": 149,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "natureza/muralha_torre_ruina_mato_1": {
+   "x": 200,
+   "y": 116,
+   "w": 16,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 32
+  },
+  "natureza/muralha_torre_ruina_mato_2": {
+   "x": 217,
+   "y": 116,
+   "w": 16,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 32
+  },
+  "natureza/muralha_torre_ruina_mato_3": {
+   "x": 234,
+   "y": 116,
+   "w": 16,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 32
+  },
+  "natureza/templo_cupula_ruina_mato_1": {
+   "x": 67,
+   "y": 116,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/templo_cupula_ruina_mato_2": {
+   "x": 100,
+   "y": 116,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "natureza/templo_cupula_ruina_mato_3": {
+   "x": 133,
+   "y": 116,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  }
+ }
+}

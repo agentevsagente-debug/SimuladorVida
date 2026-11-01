@@ -4,6 +4,8 @@ Estas são as peças que o jogo monta. Todas saem do tratamento visual da cena-a
 
 **Para recriar tudo:** `python gerar_tudo.py`. **Para conferir:** `python validar.py`, que verifica a paleta, a transparência e os tamanhos.
 
+**Atlas para o jogo:** `arte_claude/atlas/` empacota estas peças em 17 atlas (comum, um por estação e um por estágio, de verão e de inverno), com JSON de regiões, e reduz as camadas grandes. As instruções estão em `arte_claude/atlas/LEIA-ME.md`.
+
 Todas as peças:
 - usam só as 32 cores de `arte/paleta/paleta.hex`;
 - não têm semitransparência (cada pixel é opaco ou totalmente transparente);
