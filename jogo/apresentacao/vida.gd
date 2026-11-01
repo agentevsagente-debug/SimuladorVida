@@ -11,8 +11,8 @@ extends RefCounted
 ## cabeça, bocejar) em intervalos irregulares, fixos por pessoa.
 ##
 ## Ninguém se amontoa: os parados são empacotados numa fila só, com ESPACO
-## entre vizinhos; a roda da fogueira pula as cabanas e, com mais de RODA_MAX
-## pessoas, ganha uma segunda fileira meio passo atrás.
+## entre vizinhos; a roda da fogueira fica em volta do fogo, em dois arcos, com a
+## metade de trás mais alta, até RODA_CHEIA pessoas.
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Terreno = preload("res://apresentacao/terreno.gd")
@@ -22,7 +22,11 @@ const LARGURA := 480
 const PASSO_ANDAR := 9.0      # px/s médio de quem anda; cada pessoa varia de 0,8 a 1,2 disto
 const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
 const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
-const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
+## A roda do entardecer é uma roda de verdade (auditoria 10, Q4): dois arcos, um de
+## cada lado do fogo, com a metade de trás mais alta e desenhada antes. No máximo
+## RODA_CHEIA pessoas por fogo; o resto fica em casa, como no V1.
+const RODA_CHEIA := 12
+const RODA_RAIO := 22.0       # px do fogo até a roda (nos arcos de -60° a 60°, nunca a menos de 11 px)
 const MULTIDAO := 14          # acima disto, os parados formam duas fileiras
 ## Ninguém parado com o centro a menos disto do centro do fogo (auditoria 3, D1):
 ## o fogo de 16 px fica à vista entre as pessoas da roda.
@@ -824,20 +828,25 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 			rodas[f].append(p["id"])
 		else:
 			desejos.append([t.destino, p["id"]])
-	var cabanas: Array = sim.construcoes.filter(func(o): return o["tipo"] == "cabana").map(func(o): return float(o["x"]))
 	for f in rodas:
 		var roda: Array = rodas[f]
 		roda.sort()
-		var lugares := _lugares_da_roda(f, mini(roda.size(), RODA_MAX), cabanas)
+		var n := mini(roda.size(), RODA_CHEIA)
+		# junto da água (ou da borda), a roda toda fica do lado que cabe
+		var esquerda: bool = f - RODA_RAIO >= MARGEM + 2.0
+		var direita: bool = f + RODA_RAIO <= LARGURA - 4.0
+		var dois_lados: bool = esquerda and direita
+		var por_lado := ceili(n / 2.0) if dois_lados else n
 		for i in roda.size():
-			if i < lugares.size():
-				desejos.append([lugares[i], roda[i]])
-			elif not lugares.is_empty():  # segunda fileira: entre dois da frente
-				var k := (i - lugares.size()) % lugares.size()
-				if i >= lugares.size() * 2:  # a roda tem duas fileiras; o resto fica em casa
-					_ocultos[roda[i]] = true
-					continue
-				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
+			if i >= n:  # a roda cheia: o resto fica em casa
+				_ocultos[roda[i]] = true
+				continue
+			# alternando os lados; em cada arco, de trás (no alto) para a frente
+			var lado := (1.0 if i % 2 == 0 else -1.0) if dois_lados else (1.0 if direita else -1.0)
+			var t := ((int(i / 2) if dois_lados else i) + 0.5) / por_lado
+			var angulo := deg_to_rad(-60.0 + 120.0 * t)
+			lugar[roda[i]] = f + lado * RODA_RAIO * cos(angulo)
+			if sin(angulo) < 0.0:
 				_atras[roda[i]] = true
 	var casas: int = maxi(1, sim.construcoes.filter(func(o): return o["tipo"] == "cabana").size())
 	var limite := clampi(PARADOS_POR_CASA * casas, PARADOS_MIN, PARADOS_MAX)
@@ -913,27 +922,6 @@ func _prioridade(t: Dictionary) -> int:
 	if t.acao == "parado" and t.get("detalhe", "") in ["", "descansar", "guardar", "doente"]:
 		return 0
 	return 1
-
-
-## Lugares da roda em volta do fogo em f: dos dois lados, alternando, a partir
-## de 11 px do centro, pulando o que cairia na frente de uma cabana.
-func _lugares_da_roda(f: float, n: int, cabanas: Array) -> Array:
-	var r := []
-	var d := [11.0, 11.0]  # próxima distância livre à esquerda e à direita
-	var lado := 0
-	while r.size() < n:
-		var x: float = f + (-1.0 if lado == 0 else 1.0) * d[lado]
-		d[lado] += ESPACO
-		var livre := x > MARGEM and x < LARGURA - 4
-		for c in cabanas:
-			if absf(c - x) < 12.0:
-				livre = false
-		if livre:
-			r.append(x)
-		if d[0] > 80.0 and d[1] > 80.0:
-			break  # não há mais lugar perto do fogo
-		lado = 1 - lado
-	return r
 
 
 ## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível

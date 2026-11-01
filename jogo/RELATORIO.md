@@ -2,6 +2,22 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Os sinais da C, a estante na primeira vez e a roda (auditoria 10)
+
+| Item | O que foi feito |
+|---|---|
+| **Fome e prece** | Quando a prece de fome começa no mesmo dia da fome, aparece um sinal só (`fome_prece_4q`), e a dica abre com "Fome em Toan — Rilorim pede comida". |
+| **Profeta** | No evento `profeta`, o facho desce sobre ele por 2 s (`profeta_chamado_4q`). Depois, a estrela gira sobre a cabeça dele enquanto viver (`profeta_marca_4q`). |
+| **Separação** | No evento `separacao`, a luz se parte sobre o fogo do povo de origem (`separacao_4q`, espelhada se o povo novo vai para a esquerda). Depois, a marca fica sobre o fogo do povo novo por 3 dias de jogo (`separacao_marca_2q`). |
+| **Q3** | Na primeira vez que a estante abre, a frase "Aqui ficam as crônicas dos mundos que você deixar" aparece no alto. |
+| **Q4** | A roda do entardecer não entra mais na fila dos parados. Ela forma dois arcos, um de cada lado do fogo, a 22 px dele, com a metade de trás mais alta e desenhada antes. São no máximo 12 pessoas por fogo, e o resto fica em casa. Junto da água, a roda toda vai para o lado de terra. |
+| **Notas** | `--cenario-raro=notas` registra, pelo núcleo, um rito ("Rilorim vai à primeira caçada") e, 7 s depois, um roubo ("Su roubou de Ortoim"). Os dois aparecem na alça. |
+| **Crônica viva** | A linha "o ano ainda está em curso" só entra se a crônica viva não fechar sozinha ("O ano continua.", da A). |
+
+**Cenários novos:** `notas`, `profeta`, `separacao` e `fome`. A batalha ainda não aparece na hora da luta: com o ataque às 8h, a cena de guerra só entra perto das 10h ou 11h, com o horário antigo (das 7h30 às 12h), e a luta das 9h às 10h30 já passou. Ficou com a A.
+
+Captura: `capturas/sinais-e-roda.png`.
+
 ## A crônica viva na tecla C e as notas de povo pequeno
 
 | Item | O que foi feito |

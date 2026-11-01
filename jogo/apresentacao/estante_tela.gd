@@ -45,7 +45,8 @@ var _rects: Array[Rect2i] = []
 var _sob := -1
 var _sob_botao := ""
 var _paginas: Array = []          # páginas: [[texto, estilo]] (titulo, capitulo, secao, ano, texto, epitafio)
-var so_um_livro := false  # aberta só para ler um livro (a crônica da tecla C): fechar vai direto ao mundo
+var so_um_livro := false
+var _primeira_vez := false  # a estante abriu pela primeira vez: a linha que explica  # aberta só para ler um livro (a crônica da tecla C): fechar vai direto ao mundo
 var _pagina_ultimo_ano := 0      # onde começa o último "### Ano" (a crônica abre ali, no mais recente)
 var _indice: Array = []           # [[rótulo curto, página]]: o resumo, os capítulos, quem foi quem, o fim
 const INDICE := Rect2i(4, 8, 104, 144)  # o índice, à esquerda do livro aberto
@@ -72,6 +73,9 @@ func criar(p_interface: Node2D, p_vista: Node2D) -> void:
 
 func abrir() -> void:
 	so_um_livro = false
+	# a primeira vez: uma linha diz para que serve (auditoria 10, Q3); a dica fica feita
+	_primeira_vez = not "estante" in interface._dicas_feitas
+	interface.marcar_dica("estante")
 	_carregar_livros()
 	modo = "estante"
 	_sob = -1
@@ -149,7 +153,9 @@ func _texto_do_livro(l: Dictionary) -> String:
 		var t: Dictionary = vista.sim.tempo
 		var m = vista.sim.mundo
 		var miolo: String = m.cronica_viva() if m.has_method("cronica_viva") else m.cronica()
-		return "# " + String(l["titulo"]) + "\n\n" + miolo + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
+		if not miolo.strip_edges().ends_with("O ano continua.*"):  # a crônica viva já fecha assim (A, 234e065)
+			miolo += "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
+		return "# " + String(l["titulo"]) + "\n\n" + miolo
 	if l.has("texto"):
 		return l["texto"]
 	return Estante.ler(l["id"], vista.sim.pasta_estante())
@@ -505,6 +511,13 @@ func _draw() -> void:
 		if l.get("atual", false):  # a era em curso: uma fita dourada saindo de cima
 			draw_rect(Rect2(r.position.x + 8, y - 3, 1, 3), Arte.paleta[22])
 	_botao_texto(FECHAR, "Fechar", _sob_botao == "fechar")
+	if _primeira_vez:
+		var frase := "Aqui ficam as crônicas dos mundos que você deixar"
+		var fd: Font = interface._fontes["dourada"]
+		var w := int(fd.get_string_size(frase, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
+		var r := Rect2i((LARGURA - w - 10) / 2, 3, w + 10, 14)
+		interface._desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), Rect2(r), 4, self)
+		draw_string(fd, Vector2(r.position) + Vector2(5, 11), frase, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	if _pode_abandonar():
 		_botao_texto(ABANDONAR, "Abandonar este mundo", _sob_botao == "abandonar")
 	if modo == "confirmar":

@@ -344,6 +344,19 @@ func _ao_receber_eventos(eventos: Array) -> void:
 				var origem := String(ev.get("dados", {}).get("origem_tipo", ""))
 				if _interface and (ev["tipo"] == "dependencia" or origem in GESTOS_DO_DEUS):
 					_interface.avisar_evento(String(ev.get("curto", "")))
+			"profeta":  # o facho desce sobre ele (2 s) e a estrela fica enquanto ele vive
+				var quem: Array = ev.get("participantes", [])
+				if not quem.is_empty():
+					_sinais.marcar("profeta_chamado_4q", 16, 4, 2.0, 2.0, int(quem[0]))
+					_sinais.marcar("profeta_marca_4q", 8, 4, 2.0, INF, int(quem[0]), 0.0, 0, false, 2.0)
+			"separacao":  # a luz se parte sobre o fogo de onde saíram; a marca fica sobre o povo novo
+				var origem := _fogo_do_grupo(int(ev.get("outro_grupo", -1)))
+				var novo := _fogo_do_grupo(int(ev.get("grupo", -1)))
+				if origem >= 0.0:
+					_sinais.marcar("separacao_4q", 24, 4, 1.6, 2.5, -1, origem, chao(int(origem)) - 16, novo >= 0.0 and novo < origem)
+				if novo >= 0.0:
+					_sinais.marcar("separacao_marca_2q", 12, 2, 1.7, 72.0 * float(sim.SEGUNDOS.get(sim.ritmo, 112.5)),
+						-1, novo, chao(int(novo)) - 16)
 			"rito", "rixa", "roubo", "casamento", "nascimento":  # as notas de povo pequeno, se a alça está livre
 				if _interface and String(ev.get("camada", "")) == "nota":
 					_interface.avisar_evento(String(ev.get("curto", "")), true)
@@ -732,6 +745,14 @@ func comecar_recomeco(grupo: int) -> void:
 			fogo = float(o["x"])
 	if fogo >= 0.0:
 		_vida.chegada(ids, fogo, true)
+
+
+## O x da fogueira de um povo, ou -1.
+func _fogo_do_grupo(grupo: int) -> float:
+	for o in sim.construcoes:
+		if o["tipo"] == "fogueira" and int(o.get("grupo", -1)) == grupo:
+			return float(o["x"])
+	return -1.0
 
 
 func _construcoes() -> Array:

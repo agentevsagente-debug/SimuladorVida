@@ -694,7 +694,11 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 		"sinal":
 			var pr: Dictionary = o.prece
 			var autor = vista.sim.mundo.pessoa(pr["autor"])
-			linhas.append("Prece de " + String(autor.nome))
+			if pr["necessidade"] == "fome" and int(pr["dias"]) == 0:  # fome e prece no mesmo sinal
+				var g = vista.sim.mundo.grupo(int(pr["grupo"]))
+				linhas.append("Fome em %s — %s pede comida" % [String(g.nome) if g else "?", String(autor.nome)])
+			else:
+				linhas.append("Prece de " + String(autor.nome))
 			linhas.append(pr["texto"])
 			linhas.append("reza desde hoje" if pr["dias"] == 0 else ("espera há %d dias" % pr["dias"] if pr["dias"] != 1 else "espera há 1 dia"))
 			icone = NECESSIDADES.find(pr["necessidade"])

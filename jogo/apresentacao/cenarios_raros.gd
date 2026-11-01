@@ -9,10 +9,16 @@ extends RefCounted
 ##   dependencia 6 chuvas sobre o mesmo povo, uma a cada 2 dias (costume e dependência na alça)
 ##   coleta      avança até o primeiro dia com a volta da coleta do morro, às 14h
 ##   guerra      dois povos em guerra, e o primeiro reza contra o outro (a seta no fogo inimigo)
-##   batalha     o primeiro povo ataca o segundo agora e o mundo avança até a luta (A, edb5598:
-##               um ataque às H vira cena de H + 2h a H + 6h30, com a luta de H + 3h30 a H + 5h)
+##   notas       as notas de povo pequeno na alça: um rito de passagem e, 7 s depois, um roubo
+##   profeta     alguém é chamado como profeta (o facho e depois a estrela sobre ele)
+##   separacao   o segundo povo se separa do primeiro (a luz que se parte e a marca no povo novo)
+##   fome        fome e prece do mesmo povo no mesmo dia: um sinal só, com o cursor em cima
+##   batalha     o primeiro povo ataca o segundo agora (A, edb5598: um ataque às H vira cena de
+##               H + 2h a H + 6h30, com a luta de H + 3h30 a H + 5h; a rotina é refeita numa thread,
+##               então deixe o jogo correr: --hora=8 --ritmo=rapido e capture uns 45 s depois)
 
-const NOMES := ["estranhos", "doentes", "sonho", "dependencia", "coleta", "guerra", "batalha"]
+const NOMES := ["estranhos", "doentes", "sonho", "dependencia", "coleta", "guerra", "batalha", "notas", "profeta",
+	"separacao", "fome"]
 
 
 ## Antes do primeiro quadro: o que muda o mundo.
@@ -50,12 +56,18 @@ static func preparar(nome: String, vista: Node2D) -> void:
 			for h in 1:  # a descida começa no meio da tarde
 				m.avancar_hora()
 			sim.iniciar_de_mundo()
+		"fome":
+			var g = m.grupos_vivos()[0]
+			g.tem_crenca = true
+			g.ceticos = false
+			for p in m._adultos(g, 14):
+				p.fe = maxf(p.fe, 0.5)
+			m._abrir_prece(g, "fome", null, -1)
+			sim.iniciar_de_mundo()
 		"batalha":
 			var vivos: Array = m.grupos_vivos()
 			if vivos.size() >= 2:
 				m._atacar(vivos[0], vivos[1])
-				for h in 4:  # até o meio da luta (3h30 depois do ataque)
-					m.avancar_hora()
 				sim.iniciar_de_mundo()
 		"guerra":
 			var vivos: Array = m.grupos_vivos()
@@ -87,19 +99,45 @@ static func encenar(nome: String, vista: Node2D, interface: Node2D, arvore: Scen
 			interface.demo("sonho", _fogo(m, m.grupos_vivos()[0].id) + 10.0, 0.8)
 		"dependencia":
 			vista._ao_receber_eventos(vista.get_meta("eventos_do_cenario", []))
+		"notas":  # pelo próprio núcleo, como o mundo registra
+			var g = m.grupos_vivos()[0]
+			var gente: Array = m._adultos(g, 12)
+			var antes: int = m.eventos.size()
+			m.registrar("rito", "social", 4, g.zona, g.id, [gente[0].id], {"lida": "caca"})
+			vista._ao_receber_eventos(m.eventos_desde(antes))
+			arvore.create_timer(7.0).timeout.connect(func():
+				var depois: int = m.eventos.size()
+				m.registrar("roubo", "social", m._no_povo_pequeno(g, 2), g.zona, g.id, [gente[1].id, gente[2].id], {})
+				vista._ao_receber_eventos(m.eventos_desde(depois)))
+		"profeta":
+			var g = m.grupos_vivos()[0]
+			vista._ao_receber_eventos([{"tipo": "profeta", "grupo": g.id, "participantes": [m._adultos(g, 20)[0].id],
+				"dados": {}}])
+		"separacao":
+			var vivos: Array = m.grupos_vivos()
+			if vivos.size() >= 2:
+				vista._ao_receber_eventos([{"tipo": "separacao", "grupo": vivos[1].id, "outro_grupo": vivos[0].id,
+					"participantes": [], "dados": {}}])
+		"fome":
+			_cursor_no_sinal(vista, interface, "fome")
 		"guerra":  # o cursor sobre o sinal da prece, para a dica e a seta no fogo inimigo
-			var t := Timer.new()
-			t.wait_time = 0.25
-			vista.add_child(t)
-			t.timeout.connect(func():
-				var de_guerra: Array = vista._sinais.sinais.filter(func(x): return x.prece.get("necessidade", "") == "guerra")
-				if de_guerra.is_empty():
-					return
-				var s: Dictionary = de_guerra[0]
-				var ev := InputEventMouseMotion.new()
-				interface.tratar(ev, vista.para_tela(Vector2(s.x, s.base - 3)) + Vector2(0, interface.ALTURA_ALCA),
-					interface.ALTURA_ALCA))
-			t.start()
+			_cursor_no_sinal(vista, interface, "guerra")
+
+
+## O cursor fica sobre o sinal da prece de uma necessidade (para a dica), a cada 0,25 s.
+static func _cursor_no_sinal(vista: Node2D, interface: Node2D, necessidade: String) -> void:
+	var t := Timer.new()
+	t.wait_time = 0.25
+	vista.add_child(t)
+	t.timeout.connect(func():
+		var achados: Array = vista._sinais.sinais.filter(func(x): return x.prece.get("necessidade", "") == necessidade)
+		if achados.is_empty():
+			return
+		var s: Dictionary = achados[0]
+		var ev := InputEventMouseMotion.new()
+		interface.tratar(ev, vista.para_tela(Vector2(s.x, s.base - 3)) + Vector2(0, interface.ALTURA_ALCA),
+			interface.ALTURA_ALCA))
+	t.start()
 
 
 static func _fogo(m, grupo: int) -> float:
