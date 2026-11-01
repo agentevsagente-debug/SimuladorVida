@@ -22,7 +22,7 @@ func _initialize() -> void:
 	var ps := m.pessoas_visiveis()
 	conferir(ps.size() == m.populacao(), "uma entrada por pessoa viva")
 	for p in ps:
-		conferir(p["x"] >= 0 and p["x"] < 480, "x dentro do mundo: %s" % p)
+		conferir(p["x"] >= 126 and p["x"] < 480, "x fora da água e dentro do mundo: %s" % p)
 		conferir(p["acao"] in ["dormir", "andar", "parado", "colher", "rezar", "fogueira"], "ação conhecida: " + p["acao"])
 	print("pessoa: ", ps[0])
 	print("construções: ", m.construcoes())
@@ -57,9 +57,15 @@ func _initialize() -> void:
 	for nome in ["fartura", "fogo", "erguer", "sonho"]:
 		r = m.usar_poder(nome, 260.0, 0.7)
 		conferir(r["ok"], "poder " + nome)
-	# Anos depois: preces, chamados, sugestões, crônica.
+	# Anos depois: preces, chamados, sugestões, crônica. Ninguém na água em nenhuma hora.
 	var visto := m.eventos.size()
-	m.avancar_dias(40 * 15)
+	for d in 40 * 15:
+		m.avancar_dias(1)
+		if d % 7 == 0:
+			for h in 24:
+				for p in m.pessoas_visiveis():
+					conferir(p["x"] >= 126, "pessoa na água: %s" % p)
+				m.avancar_hora()
 	var novos := m.eventos_desde(visto)
 	var chamados := novos.filter(func(d): return d["camada"] == "chamado")
 	print("eventos novos: %d, chamados: %d" % [novos.size(), chamados.size()])

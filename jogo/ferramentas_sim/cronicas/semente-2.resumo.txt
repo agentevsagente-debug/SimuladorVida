@@ -1,3 +1,0 @@
-semente=2 cenario=- anos=100
-tempo_ano_mais_lento=0.026s tempo_100_anos=1.296s
-eventos=2710 populacao_final=210 grupos_vivos=5
