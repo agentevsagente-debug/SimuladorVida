@@ -138,216 +138,241 @@ No outono do ano 41, Demum ergueu as primeiras casas de pedra, e um templo de de
 
 ### Ano 42
 
+Na primavera, morreu Kiar, que fundou Toron e o guiava, aos 50 anos. Tinha fundado Toron. Ibem passou a guiar Toron, mas Nitorar não aceitou e guardou rancor.
+
+### Ano 43
+
 Tantas preces atendidas fizeram Toron confiar no céu mais do que nas próprias mãos.
 
-*Entre os anos 43 e 44, nada mudou o rumo do mundo.*
+### Ano 44
+
+Na primavera do ano 44, Toron ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Toron, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Fere, e o deus decidia tudo. No verão, Demum já não cabia na praia. Kik, o rancoroso, levou 21 pessoas para a floresta e fundou Teor. Teor encontrou as ruínas de Teil. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Demgoali passou a falar pela Mão Fechada em Teor. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 45
 
-Toron ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. O templo de Toron ficou mais forte que o líder. Dali em diante, guerra e paz eram decididas em nome do Que Fere.
+Esteya, a engenhosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. Demik, de Toron, tomou por esposa Iba, de Teor, e os dois povos passaram a se visitar. Nasceu Kitorya, filha de Demgoali e Benik, com sangue de Teor e de Toron.
 
-*O ano 46 foi calmo.*
+### Ano 46
 
-### Ano 47
+No verão do ano 46, Ibem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. Tena, que falava pelo Que Fere em Toron, morreu ao dar à luz. Tinha levado o saber de plantar para Toron.
 
-Em Demum, Demnim pediu: «Mão Fechada, dá-nos o que comer.» A fome passou, e Demum viu nisso obra da Mão Fechada. Foi só o tempo, mas quem iria dizer? Tena, que falava pelo Que Fere em Toron, deu à luz e não sobreviveu ao parto. Tinha levado o saber de plantar para Toron.
+*O ano 47 passou sem nada que a crônica precise guardar.*
 
 ### Ano 48
 
-Na primavera do ano 48, Kiar, que fundou Toron e o guiava, morreu dormindo, aos 56 anos. Tinha fundado Toron. Demum rezou e não foi ouvido. Os mais firmes disseram que a Mão Fechada os estava testando, e se orgulharam de aguentar. A doença entrou em Demum e matou seis pessoas. Depois da febre, Demum passou a queimar os seus mortos, para que a doença não voltasse. Demum passou fome por causa da seca por 28 dias, e seis pessoas morreram.
+Na primavera do ano 48, Nik, de Demum, tomou por esposa Demena, de Teor, e os dois povos passaram a se visitar. No verão, em Toron, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
 
 *O ano 49 passou sem nada que a crônica precise guardar.*
 
 ### Ano 50
 
-Demnim tinha rezado: «Mão Fechada, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Demum duvidou de que a Mão Fechada tinha ouvido. O deus não tinha feito nada. Nos anos 41 a 50 houve duas secas, cinco fomes, doze preces que pareceram atendidas e quatro preces sem resposta; nasceram 44 crianças e morreram 21 pessoas. No fim do ano 50, 79 pessoas viviam no mundo: Demum (28) e Toron (51).
+No verão, a forja de Demum não apagava mais. O metal mudou o trabalho e mudou a guerra. A forja de Toron não apagava mais. O metal mudou o trabalho e mudou a guerra. Nos anos 41 a 50 houve cinco fomes e onze preces que pareceram atendidas; nasceram 48 crianças e morreram dez pessoas. No fim do ano 50, 94 pessoas viviam no mundo: Demum (17), Toron (46) e Teor (31).
 
-*Entre os anos 51 e 53, nada mudou o rumo do mundo.*
+### Ano 51
+
+Kik, que fundou Teor e o guiava, morreu dormindo, aos 45 anos. Tinha fundado Teor. No verão, Beali, a pacífica, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Em Demum, Demnim pediu: «Mão Fechada, não nos deixes secar.» Quando a chuva voltou, Demum agradeceu à Mão Fechada. O deus não tinha feito nada.
+
+*O ano 52 passou sem nada que a crônica precise guardar.*
+
+### Ano 53
+
+No outono, Toron passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Toron, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 54
 
-Em Toron, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+Em Teor, Benik pediu: «Mão Fechada, cura minha filha.» Os doentes se levantaram. Em Teor, o crédito foi da Mão Fechada. O deus nada fez: o crédito era de graça.
 
 ### Ano 55
 
-Ibem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. No inverno, Kik implorou pela filha. Suya morreu, e daquele dia em diante Kik cuspia no chão quando falavam da Mão Fechada.
+Ibem, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão. De novo a chuva sumiu, como no ano 40. Foram 19 dias de seca.
 
-### Ano 56
-
-Demnim tinha rezado: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A fome passou, e Demum viu nisso obra da Mão Fechada. O deus nada fez: o crédito era de graça.
+*O ano 56 foi calmo.*
 
 ### Ano 57
 
-Na primavera, Venik, o pacífico, cansou de dividir pouca comida. Partiu com 32 pessoas para a floresta e ali fundou Toror. Demum passou fome por 20 dias, e seis pessoas morreram. Uma tosse que não passava matou duas pessoas em Toron. No outono, em Toror, Teya tomou para si o cuidado das preces ao Que Fere. Em Toror nasceu a primeira criança: Tedemil, filha de Niya e Venik.
+No outono do ano 57, Torya, a corajosa, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 58
 
-Teik, de Toror, tomou por esposa Torena, de Toron, e os dois povos passaram a se visitar. Venik tinha rezado: «Manda água, Que Fere, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Toror duvidou de que o Que Fere tinha ouvido. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Toror: todo ano, celebram a chuva que o Que Fere mandou.
+Na primavera do ano 58, Toron cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Fere.
 
 ### Ano 59
 
-De novo a chuva sumiu, como no ano 40. Foram 19 dias de seca.
+Na primavera, Esteya, que guiava Demum, morreu de velhice aos 54 anos. Beali, que falava pelo Que Fere em Toron, morreu de repente, aos 33 anos. Com Demgoali à frente, a nova geração de Teor abandonou o medo das tempestades, costume herdado dos avós. Numa tempestade sobre a praia, um raio matou Torena. Ninguém em Demum teve dúvida: era castigo.
 
 ### Ano 60
 
-Morreu Fail, filha pequena de Torena. Depois daquela fome, Toror passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Demum conheceu a maior fome da sua história por causa da seca. Em 25 dias, morreram 9. Muitas cabanas ficaram vazias. Nos anos 51 a 60 houve quatro secas, oito fomes, dezenove preces que pareceram atendidas e três preces sem resposta; nasceram 67 crianças e morreram 36 pessoas. No fim do ano 60, 110 pessoas viviam no mundo: Demum (21), Toron (49) e Toror (40).
+Na primavera do ano 60, a rixa entre Demgoali e Benik rachou Teor. Demgoali partiu com os seus, 23 pessoas, e fundou Kurum no morro. No verão, em Kurum, Benik tomou para si o cuidado das preces à Mão Fechada. Benik anunciou que a Mão Fechada proibia qualquer trato com Teor. O deus nunca disse isso, mas Kurum obedeceu. Demum passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Demum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 51 a 60 houve duas secas e treze preces que pareceram atendidas; nasceram 109 crianças e morreram dezenove pessoas. No fim do ano 60, 184 pessoas viviam no mundo: Demum (25), Toron (105), Teor (31) e Kurum (23).
 
-*Do ano 61 ao 62, a vida seguiu sem grandes acontecimentos.*
+### Ano 61
+
+No outono do ano 61, em Kurum nasceu a primeira criança: Nimoya, filha de Demgoali e Benik.
+
+### Ano 62
+
+Ibem, que guiava Toron, morreu de velhice aos 45 anos. Em Toron, Ibem pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Toron deu graças ao Que Fere. Foi só o tempo, mas quem iria dizer? Os escribas de Toron registraram o milagre.
 
 ### Ano 63
 
-No verão do ano 63, apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Para Demum, o deus já não era «a Mão Fechada»: passou a ser «a Estrela de Cauda». Depois disso, Toron deixou de chamar o deus de «o Que Fere» e passou a chamá-la de «a Estrela de Cauda». Beali, que falava pela Estrela de Cauda em Toron, deu à luz e não sobreviveu ao parto. Demgoali deu à luz gêmeos, Esem e Demesa. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 63, com Demgoali à frente, a nova geração de Kurum abandonou a festa da chuva, costume herdado dos avós. Kitorya, a ambiciosa, aprendeu a tirar metal da pedra no fogo alto. Em Toron, Venik pediu: «Que Fere, dá-nos o que comer.» A comida voltou, e Toron deu graças ao Que Fere. O deus não tinha feito nada. Os escribas de Toron registraram o milagre. Mira, de Kurum, casou-se com Esem e foi viver em Demum. Foi o primeiro laço entre os dois povos. Teor já não se preparava para nada: a Mão Fechada sempre dava. Deixaram de guardar comida para o inverno.
 
-*O ano 64 foi calmo.*
+### Ano 64
+
+Na primavera do ano 64, em nome do Que Fere, Venik proibiu casamentos e trocas com Kurum. Era vontade de Venik, não do deus. Uma febre correu Toron e levou dez vidas. Desde a febre, Toron não enterra mais ninguém: os mortos vão para o fogo. Venik anunciou que o Que Fere proibia qualquer trato com Teor. O deus nunca disse isso, mas Toron obedeceu.
 
 ### Ano 65
 
-Com Nitorar à frente, dezesseis pessoas deixaram Toror e fundaram Teur, no morro. A terra tremeu. Caíram dezesseis cabanas. Benik, Raim, Ibim, Raem e Veut morreram sob os escombros. Nasceu Rilim, o primeiro de Teur. Vem passou a falar pelo Que Risca o Céu em Teur. Era o primeiro a rezar e o último a duvidar.
+No outono, os de Toron caíram sobre Kurum no morro em nome do Que Fere. Kurum foi derrotado e perdeu o que tinha guardado. Na luta morreram Kitorya, Demali e Ulim. Foi a primeira vez que gente matou gente no mundo. O mesmo chão ganhou dois nomes: Morro da Vitória para Toron, Morro do Luto para Kurum. Depois da derrota, os jovens de Kurum passaram a treinar com lanças. As preces de Teor ficaram pequenas: pedia-se à Mão Fechada até sol para a pesca e sorte na caça.
 
-*No ano 66, nada de notável aconteceu.*
+### Ano 66
+
+O dia em que a chuva voltou virou festa em Kurum: todo ano, celebram a chuva que a Mão Fechada mandou. No inverno, Demtorali partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. O deus calou justo quando Toron mais dependia dele. Ratorut implorou pelo filho. Torut morreu, e daquele dia em diante Ratorut cuspia no chão quando falavam do Que Fere.
 
 ### Ano 67
 
-Na primavera, com Nitorar à frente, a nova geração de Teur abandonou a festa da chuva, costume herdado dos avós. Demvena, de Teur, casou-se com Veibik e foi viver em Toron. Foi o primeiro laço entre os dois povos. Demnim tinha rezado: «Estrela de Cauda, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Demum duvidou de que a Estrela de Cauda tinha ouvido. O deus não tinha feito nada. Teur passou a festejar todo ano o dia da volta da chuva, em honra do Que Risca o Céu. A forja de Toron não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Veio a pior fome que o mundo tinha visto: 11 dias no inverno em Toron, e 15 mortos. As crianças foram as primeiras. No inverno, começou a Guerra Santa: em nome do Que Fere, Toron pegou em lanças contra Kurum. A Guerra Santa seguiu: Toron contra Kurum, no morro em nome do Que Fere. Toron venceu e levou a comida guardada. Na luta morreram Miula e Estorem. Toron e Kurum, cansados de enterrar os seus, fizeram as pazes no morro. Depois de dois anos, duas batalhas e cinco mortos, a Guerra Santa terminou em paz. Toron saiu dela mais forte.
 
 ### Ano 68
 
-Na primavera, Torut, de Teur, tomou por esposa Niena, de Toror, e os dois povos passaram a se visitar. Em Toron, Ibem pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Toron viu nisso obra da Estrela de Cauda. O deus não tinha feito nada. No inverno, Demtorali deu à luz gêmeos, Obfar e Obali. Uns viram bênção; outros, mau sinal.
+Foram 20 dias de fome por causa da seca em Teor, com cinco mortos. Depois daquela fome, Teor passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A floresta passou a ser a floresta da fome: Floresta da Fome. Demgoali, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. No outono, Toron atacou Teor na floresta em nome do Que Fere. Teor foi derrotado e perdeu o que tinha guardado. Na luta morreram Dema, Suem e Bebeali.
 
 ### Ano 69
 
-Em Toror, já ninguém sabia cortar pedra. O que fora feito começou a ruir. De novo a chuva sumiu, como no ano 59. Foram 25 dias de seca. Torut tinha rezado: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Teur agradeceu ao Que Risca o Céu. A crônica sabe que foi acaso. Kik, o rancoroso, não resistiu à fome. Desde a morte de Suya, nunca mais tinha rezado. Esteya, que guiava Demum, morreu de fome.
+Na primavera, Demnim, que guiava Demum, morreu dormindo, aos 57 anos. Esem passou a guiar Demum, mas Niem não aceitou e guardou rancor. Em nome da Mão Fechada, Demim proibiu casamentos e trocas com Toron. Era vontade de Demim, não do deus.
 
 ### Ano 70
 
-Na primavera do ano 70, Gout partiu com onze pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Demum perdeu o saber. Demum passou fome por causa da seca por 25 dias, e oito pessoas morreram. Desde a febre, Toron não enterra mais ninguém: os mortos vão para o fogo. Nos anos 61 a 70 houve duas secas, quatro fomes, quinze preces que pareceram atendidas e cinco preces sem resposta; nasceram 103 crianças e morreram 50 pessoas. No fim do ano 70, 153 pessoas viviam no mundo: Demum (20), Toron (57), Toror (45) e Teur (31).
+Começou a Guerra Santa do Lago: em nome do Que Fere, Toron pegou em lanças contra Teor. A Guerra Santa do Lago seguiu: Teor contra Toron, no lago em nome da Mão Fechada. Toron resistiu, e Teor voltou de mãos vazias. Na luta morreu Demem. Teor e Toron, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra Santa do Lago acabou em trégua, depois de dois anos, duas batalhas e quatro mortos. Toron saiu dela mais forte. Para Teor, o lago virou Lago da Trégua. Nos anos 61 a 70 houve duas secas, treze fomes, quatro batalhas, 35 preces que pareceram atendidas e onze preces sem resposta; nasceram 115 crianças e morreram 98 pessoas. No fim do ano 70, 196 pessoas viviam no mundo: Demum (25), Toron (101), Teor (42) e Kurum (28).
 
 ### Ano 71
 
-Na primavera, Demnim, que guiava Demum, morreu de velhice aos 59 anos. Suem, o pacífico, descobriu como empilhar pedras cortadas sem que caíssem.
+Ibdemya partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Toron, Govena pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Toron deu graças ao Que Fere. O deus não tinha feito nada. Nas tabuletas de Toron, ficou escrito que foi o Que Fere. A seca voltou, como no ano 55: 18 dias sem chuva, até que o céu se abriu.
 
 ### Ano 72
 
-No inverno do ano 72, Nina, a pacífica, descobriu como empilhar pedras cortadas sem que caíssem. Demum ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Em Teor, Tem pediu: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A comida voltou, e Teor deu graças à Mão Fechada. O deus não tinha feito nada. Veio a pior fome que o mundo tinha visto: 11 dias no inverno em Toron, e 24 mortos. As crianças foram as primeiras. No inverno, depois dos roubos da fome, Teor parou de dividir: cada família passou a guardar o que era seu. Sem lugar e sem comida, Miya e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 73
 
-No verão do ano 73, a forja de Demum não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Venik anunciou que o Que Fere proibia qualquer trato com Demum. O deus nunca disse isso, mas Toron obedeceu. Em nome da Mão Fechada, Demim proibiu casamentos e trocas com Demum. Era vontade de Demim, não do deus. Kurum passou fome por causa da seca por 17 dias, e seis pessoas morreram. Em Kurum, Benik pediu: «Mão Fechada, dá-nos o que comer.» A fome passou, e Kurum viu nisso obra da Mão Fechada. Foi só o tempo, mas quem iria dizer? A fome por causa da seca durou 19 dias em Teor e levou quatro vidas.
 
 ### Ano 74
 
-Demveya, a generosa, inventou marcas que guardavam palavras.
+No verão, houve luta na praia: Toron atacou Demum em nome do Que Fere. Demum expulsou os atacantes. Goim morreu na luta. Kurum já não se preparava para nada: a Mão Fechada sempre dava. Deixaram de guardar comida para o inverno. Esena deu à luz gêmeos, Kim e Miya. Uns viram bênção; outros, mau sinal.
 
 ### Ano 75
 
-Na primavera do ano 75, Nitorar, que fundou Teur e o guiava, morreu dormindo, aos 61 anos. Tinha fundado Teur. Morreu o último que tinha visto o ano 26. Em Teur, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. No inverno, em Toron, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Toron, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+Ibsuik morreu de velhice aos 58 anos. Houve luta na praia: Teor atacou Demum em nome da Mão Fechada. Demum resistiu, e Teor voltou de mãos vazias. Na luta morreram Teesya, Tordemem, Ibali e Ulel. Para Teor, a praia virou Praia do Luto. No inverno, começou a Guerra Santa da Praia: em nome da Mão Fechada, Teor pegou em lanças contra Demum. A Guerra Santa da Praia seguiu: Teor contra Demum, na praia em nome da Mão Fechada. Demum expulsou os atacantes. Mikiem, Demesar e Esena morreram na luta.
 
 ### Ano 76
 
-Com Vem à frente, a nova geração de Teur abandonou o medo das tempestades, costume herdado dos avós. Demim, o rancoroso, inventou marcas que guardavam palavras.
+Na Guerra Santa da Praia, Teor atacou Demum na praia em nome da Mão Fechada. Demum expulsou os atacantes. Ulya, Demim, Tem e Torya morreram na luta. Venik implorou pela filha. Raena morreu, e daquele dia em diante Venik cuspia no chão quando falavam do Que Fere. No verão, Ragoali morreu ao dar à luz. Na guerra, tinha tirado duas vidas. Uma tosse que não passava matou três pessoas em Toron.
 
 ### Ano 77
 
-Na primavera do ano 77, Venik, que fundou Toror e o guiava, morreu de velhice aos 45 anos. Foi quem levou os seus a fundar Toror. Tantas preces atendidas fizeram Teur confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno. Em Demum, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Demum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Em Teur, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+A fome no inverno durou 5 dias em Toron e levou duas vidas. No outono, Demkiar, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Niem anunciou que a Mão Fechada proibia qualquer trato com Teor. O deus nunca disse isso, mas Demum obedeceu. A forja de Kurum não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 78
 
-Na primavera do ano 78, morreu Niya, que guiava Toror, aos 46 anos. Torya tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Demum deu graças à Estrela de Cauda. O deus não tinha feito nada. Os escribas de Demum registraram o milagre. Foram 8 dias de fome no inverno em Toron, com três mortos. Teur conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 13. Muitas cabanas ficaram vazias. Desde então, Teur chama o morro de Morro da Fome.
+Na primavera, a Guerra Santa da Praia seguiu: Demum contra Teor, na floresta em nome da Mão Fechada. Teor expulsou os atacantes. Esik, Nimoya e Kiar morreram na luta. Demum não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. No outono, Demgoali, a engenhosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. No inverno, em Kurum, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Kurum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 79
 
-Raut partiu com duas pessoas para além da borda do mundo. Nunca voltaram. Ibem tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Toron viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Nas tabuletas de Toron, ficou escrito que foi a Estrela de Cauda. As preces de Toror ficaram pequenas: pedia-se ao Que Risca o Céu até sol para a pesca e sorte na caça. Toron cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos da Estrela de Cauda.
+Na Guerra Santa da Praia, Teor atacou Demum na praia em nome da Mão Fechada. Demum expulsou os atacantes. Na luta morreram Esdemel, Torniem e Esem. No inverno, Mira passou a guiar Demum, mas Suibar não aceitou e guardou rancor. Toron não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
 
 ### Ano 80
 
-Na primavera do ano 80, Ibem, que guiava Toron, morreu de velhice aos 63 anos. Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Torim leu e aprendeu: o saber não se perdeu. Nos anos 71 a 80 houve três secas, doze fomes e 32 preces que pareceram atendidas; nasceram 127 crianças e morreram 56 pessoas. No fim do ano 80, 221 pessoas viviam no mundo: Demum (38), Toron (91), Toror (59) e Teur (33).
+No verão do ano 80, dessa vez, a Mão Fechada não respondeu, e Kurum, que tinha esquecido como se virar sozinho, pagou caro. Nos anos 71 a 80 houve três secas, quinze fomes, doze batalhas, 48 preces que pareceram atendidas e 24 preces sem resposta; nasceram 157 crianças e morreram 115 pessoas. No fim do ano 80, 230 pessoas viviam no mundo: Demum (33), Toron (116), Teor (47) e Kurum (34).
 
-*O ano 81 passou sem nada que a crônica precise guardar.*
+### Ano 81
+
+Na primavera do ano 81, começou a Guerra Santa do Morro: em nome do Que Fere, Toron pegou em lanças contra Kurum. A Guerra Santa do Morro seguiu: Toron contra Kurum, no morro em nome do Que Fere. Kurum foi derrotado e perdeu o que tinha guardado. Demtera, Niel e Veniali morreram na luta. Toron e Kurum, cansados de enterrar os seus, fizeram as pazes no morro. A Guerra Santa do Morro acabou em trégua, depois de dois anos, duas batalhas e seis mortos. Desde então, Toron chama a praia de Praia da Vitória.
 
 ### Ano 82
 
-Goem partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
+Na primavera, Venik, que guiava Toron, morreu de velhice aos 50 anos. Desde a morte de Raena, nunca mais tinha rezado. Tean, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão. No outono, começou a Segunda Guerra Santa: em nome do Que Fere, Toron pegou em lanças contra Demum. Demar implorou pela filha. Betorya morreu, e daquele dia em diante Demar cuspia no chão quando falavam da Mão Fechada. A doença entrou em Demum e matou três pessoas.
 
 ### Ano 83
 
-Uma tosse que não passava matou seis pessoas em Toror. Desde a febre, Toror não enterra mais ninguém: os mortos vão para o fogo. No verão, com canais e moinhos, Demum já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Dessa vez, a Estrela de Cauda não respondeu, e Toron, que tinha esquecido como se virar sozinho, pagou caro. Goim rezou por Veteut até a voz acabar. Veteut morreu mesmo assim, e Goim nunca mais rezou.
+Na primavera do ano 83, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Demum perdeu o saber. Os últimos de Demum, Ibar, Demem e Demesik, juntaram-se a Kurum. Demum deixou de existir. A Guerra Santa da Praia acabou porque um dos lados deixou de existir: oito anos, doze batalhas e 28 mortos. A Segunda Guerra Santa acabou porque um dos lados deixou de existir: dois anos, duas batalhas e três mortos. Foram 19 dias de fome no inverno em Toron, com seis mortos.
 
 ### Ano 84
 
-No verão, Goim implorou pela filha. Demniena morreu, e daquele dia em diante Goim cuspia no chão quando falavam da Estrela de Cauda. No outono, Torloem, o curioso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Demgoali não podia mais viver perto de Benik. Saiu de Kurum com onze pessoas e fundou Demes na praia. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Kurum perdeu o saber. Com canais e moinhos, Demes já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. No inverno, começou a Guerra Santa da Floresta: em nome do Que Fere, Toron pegou em lanças contra Teor. A Guerra Santa da Floresta acabou em trégua, depois de duas batalhas e quatro mortos. Toron saiu dela mais forte.
 
-*O ano 85 foi calmo.*
+### Ano 85
+
+Morreu Uldemar, filho pequeno de Demdemya. Demgoali, que fundou Demes e o guiava, morreu dormindo, aos 61 anos. Tinha fundado Kurum. Foram 11 dias de fome no inverno em Toron, com nove mortos. Nasceu Miena, a primeira de Demes. Depois daquela fome, Kurum passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 86
 
-Na primavera, Ratorut, o rancoroso, morreu de velhice aos 60 anos. Demgoena, a ambiciosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Depois daquela fome, Toron passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No verão, o deus calou justo quando Toror mais dependia dele. Em Toron, já ninguém sabia cortar pedra. O que fora feito começou a ruir.
+A terra tremeu. Caíram dezoito cabanas. Torkiena e Tortorena morreram sob os escombros.
 
 ### Ano 87
 
-Na primavera do ano 87, sem lugar e sem comida, Demtorem e os seus atravessaram a borda do mundo. Ninguém soube deles. Toror conheceu a maior fome da sua história por causa da seca. Em 25 dias, morreram 38. Muitas cabanas ficaram vazias. Desde então, Toror chama a floresta de Floresta da Fome. Foram 22 dias de fome no inverno em Toron, com dezessete mortos. No inverno, Teali, a corajosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Ratorut, o rancoroso, morreu dormindo, aos 61 anos. Desde a morte de Torut, nunca mais tinha rezado. Govena tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Toron deu graças ao Que Fere. A crônica sabe que foi acaso. Nas tabuletas de Toron, ficou escrito que foi o Que Fere. No outono, Miel, o curioso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 ### Ano 88
 
-Na primavera, ninguém lembrava mais a razão, e Toron abandonou o medo das tempestades. Em Toron, Ibik pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Toron deu graças à Estrela de Cauda. O deus não tinha feito nada. Os escribas de Toron registraram o milagre. No outono, em nome da Estrela de Cauda, Gout proibiu casamentos e trocas com Toror. Era vontade de Gout, não do deus. Veveil deu à luz gêmeos, Tortoron e Tortoril. Uns viram bênção; outros, mau sinal.
+Em Toron, Govena pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Toron viu nisso obra do Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Toron, ficou escrito que foi o Que Fere. No verão, Ultorar, de Demes, tomou por esposa Esesa, de Teor, e os dois povos passaram a se visitar.
 
-### Ano 89
-
-Vem tinha rezado: «Que Risca o Céu, não deixes nossos filhos morrerem de fome.» A fome passou, e Teur viu nisso obra do Que Risca o Céu. O deus nada fez: o crédito era de graça. Foram 20 dias de fome no inverno em Toron, com três mortos.
+*No ano 89, nada de notável aconteceu.*
 
 ### Ano 90
 
-Morreu Torali, a engenhosa, aos 53 anos. Foram 19 dias de fome no inverno em Toron, com três mortos. Nos anos 81 a 90 houve 29 fomes, 41 preces que pareceram atendidas e catorze preces sem resposta; nasceram 104 crianças e morreram 134 pessoas. No fim do ano 90, 183 pessoas viviam no mundo: Demum (33), Toron (75), Toror (37) e Teur (38).
+No outono, Mikiel, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. No inverno, Nidema implorou pelo filho. Torel morreu, e daquele dia em diante Nidema cuspia no chão quando falavam da Mão Fechada. Nidema implorou pela filha. Ulkira morreu, e daquele dia em diante Nidema cuspia no chão quando falavam da Mão Fechada. Nos anos 81 a 90 houve duas secas, onze fomes, nove batalhas, 33 preces que pareceram atendidas e catorze preces sem resposta; nasceram 103 crianças e morreram 127 pessoas. No fim do ano 90, 199 pessoas viviam no mundo: Toron (99), Teor (58), Kurum (18) e Demes (24).
 
 ### Ano 91
 
-Na primavera, morreu Torya, que guiava Demum, aos 52 anos. Um raio caiu no morro durante a tempestade e matou Rilena. Em Teur, disseram que era castigo. Para Teur, o deus já não era «o Que Risca o Céu»: passou a ser «o Senhor do Trovão». Em Toron, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. No inverno, Toron atacou Toror na floresta em nome da Estrela de Cauda. Toror resistiu, e Toron voltou de mãos vazias. Torem, Nim e Lotoron morreram na luta. Foi a primeira vez que gente matou gente no mundo.
+Uma febre correu Teor e levou cinco vidas. Desde a febre, Teor não enterra mais ninguém: os mortos vão para o fogo. O inverno foi de gelo: seis pessoas morreram de frio. Em Kurum, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Depois disso, Teor deixou de chamar o deus de «a Mão Fechada» e passou a chamá-la de «a Estrela de Cauda».
 
 ### Ano 92
 
-Teali partiu com duas pessoas para além da borda do mundo. Nunca voltaram. De novo a chuva sumiu, como no ano 69. Foram 21 dias de seca. Vem anunciou que o Senhor do Trovão proibia qualquer trato com Toror. O deus nunca disse isso, mas Teur obedeceu. Torim implorou pela filha. Verali morreu, e daquele dia em diante Torim cuspia no chão quando falavam da Estrela de Cauda.
+Na primavera, os de Toron caíram sobre Kurum no morro em nome do Que Fere. Toron venceu e levou a comida guardada. Esel, Moar e Ultel morreram na luta.
 
 ### Ano 93
 
-Dessa vez, o Senhor do Trovão não respondeu, e Teur, que tinha esquecido como se virar sozinho, pagou caro. Teur atacou Toror na floresta em nome do Senhor do Trovão. Toror resistiu, e Teur voltou de mãos vazias. Tordemem morreu na luta. O frio levou Torik, o pacífico. Começou a Guerra Santa: em nome do Senhor do Trovão, Teur pegou em lanças contra Toror. A fome ensinou: desde então, Teur estoca comida e não come tudo o que colhe.
+A forja de Kurum não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 94
 
-Toror ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Na Guerra Santa, Teur atacou Toror na floresta em nome do Senhor do Trovão. Teur venceu e levou a comida guardada. Na luta morreram Loali e Torveya. Para Teur, a floresta virou Floresta da Vitória. Depois da derrota, os jovens de Toror passaram a treinar com lanças.
+Começou a Terceira Guerra Santa: em nome do Que Fere, Toron pegou em lanças contra Kurum. Na Terceira Guerra Santa, Toron atacou Kurum no morro em nome do Que Fere. Kurum resistiu, e Toron voltou de mãos vazias. Na luta morreram Vegoem e Ulena. Toresem partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Nidema, que guiava Teor, não resistiu à fome. Nunca perdoou o deus pela morte de Torel.
 
 ### Ano 95
 
-Na primavera do ano 95, Demgoena, a ambiciosa, morreu de repente, aos 40 anos. No outono, na Guerra Santa, Teur atacou Toror na floresta em nome do Senhor do Trovão. Toror expulsou os atacantes. Mim, Miar e Demut morreram na luta. Teur não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+A fome no inverno durou 11 dias em Toron e levou dezenove vidas. Veio a pior fome que o mundo tinha visto: 28 dias por causa da seca em Teor, e 38 mortos. As crianças foram as primeiras.
 
 ### Ano 96
 
-Na primavera, Vem, que guiava Teur, morreu dormindo, aos 53 anos. Foi quem proibiu, em nome do deus, o trato com Toror. No verão, de novo Toron contra Toror, como no ano 91 em nome da Estrela de Cauda. Toron venceu e levou a comida guardada. Na luta morreram Lout e Veibut.
+Morreu Benik, o pacífico, aos 70 anos. Foi quem proibiu, em nome do deus, o trato com Teor. Em Toron, Demut pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Toron viu nisso obra do Que Fere. O deus não tinha feito nada. Nas tabuletas de Toron, ficou escrito que foi o Que Fere. Os de Toron caíram sobre Demes na praia. Demes resistiu, e Toron voltou de mãos vazias. Na luta morreram Torgoya e Raibem. Para Demes, a praia virou Praia da Vitória. A seca voltou, como no ano 71: 24 dias sem chuva, até que o céu se abriu.
 
 ### Ano 97
 
-Demum passou fome no inverno por 19 dias, e quatro pessoas morreram. No outono, Beesali, a generosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Os de Demum caíram sobre Teur no morro. Teur foi derrotado e perdeu o que tinha guardado. Na luta morreram Rilim, Obfar e Demali. Para Demum, o morro virou Morro da Vitória. Demum atacou Toror na floresta. Toror expulsou os atacantes. Demim, Suim, Bebem e Faon morreram na luta.
+Morreu Torim, o rancoroso, aos 59 anos. No outono, Nitorim, o devoto, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. No inverno, começou a Guerra da Praia: o rancor entre Toron e Demes virou guerra. Na Guerra da Praia, Toron atacou Demes na praia. Demes foi derrotado e perdeu o que tinha guardado. Ultorar e Tean morreram na luta. A Terceira Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e cinco mortos, e ninguém sabia mais por que lutava.
 
 ### Ano 98
 
-Na primavera do ano 98, começou a Guerra Santa da Floresta: em nome da Estrela de Cauda, Toron pegou em lanças contra Toror. Na Guerra Santa da Floresta, Toron atacou Toror na floresta em nome da Estrela de Cauda. Toror foi derrotado e perdeu o que tinha guardado. Tortorem, Tefail e Ibim morreram na luta. No verão, começou a Guerra do Morro: o rancor entre Demum e Teur virou guerra. A Guerra Santa esfriou sem acordo nem vencedor: cinco anos, cinco batalhas e sete mortos, e ninguém sabia mais por que lutava. Em Toror, disseram que o Que Risca o Céu só ouvia Teur. A inveja virou rancor.
+Na primavera, Demut, que falava pelo Que Fere em Toron, morreu de velhice aos 58 anos. Ulmoar, de Kurum, tomou por esposa Esesa, de Demes, e os dois povos passaram a se visitar.
 
 ### Ano 99
 
-Na primavera, Goim, o pacífico, morreu de frio. Nunca perdoou o deus pela morte de Veteut. Sem lugar e sem comida, Veon e os seus atravessaram a borda do mundo. Ninguém soube deles. Começou a Guerra Santa do Morro: em nome da Estrela de Cauda, Toron pegou em lanças contra Teur. No verão, depois de tantos mortos, Toron e Teur se encontraram no morro e juraram paz. A Guerra Santa do Morro acabou em trégua, depois de três batalhas e três mortos.
+Na primavera, Kurum passou a receber bem os de fora: um casamento com outro povo virava festa. Govena tinha rezado: «Que Fere, dá-nos o que comer.» A fome passou, e Toron viu nisso obra do Que Fere. O deus não tinha feito nada. Os escribas de Toron registraram o milagre. Veim implorou pelo filho. Ibtorim morreu, e daquele dia em diante Veim cuspia no chão quando falavam do Que Fere. A doença entrou em Toron e matou quatro pessoas.
 
 ### Ano 100
 
-Começou a Guerra da Floresta: o rancor entre Demum e Toror virou guerra. Depois de três anos, cinco batalhas e dez mortos, a Guerra do Morro terminou em paz. Demum saiu dela mais forte. Os últimos de Toror, Torteim, Tortorya e Goveali, juntaram-se a Demum. Toror deixou de existir. A Guerra Santa da Floresta acabou porque um dos lados deixou de existir: quatro anos, cinco batalhas e onze mortos. A Guerra da Floresta acabou porque um dos lados deixou de existir: três anos, três batalhas e oito mortos. Nos anos 91 a 100 houve três secas, dezessete fomes, 22 batalhas, 45 preces que pareceram atendidas e 34 preces sem resposta; nasceram 142 crianças e morreram 183 pessoas. No fim do ano 100, 126 pessoas viviam no mundo: Demum (32), Toron (81) e Teur (13).
+Veali, que falava pelo Que Fere em Toron, morreu dormindo, aos 60 anos. A Guerra da Praia esfriou sem acordo nem vencedor: quatro anos, duas batalhas e quatro mortos, e ninguém sabia mais por que lutava. Nos anos 91 a 100 houve três secas, treze fomes, seis batalhas, 40 preces que pareceram atendidas e doze preces sem resposta; nasceram 138 crianças e morreram 133 pessoas. No fim do ano 100, 200 pessoas viviam no mundo: Toron (102), Teor (42), Kurum (29) e Demes (27).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Demum** vive na praia, com 32 pessoas, com canais e moinhos; nasceu de uma migração em Teil no ano 11; chama o deus de «a Estrela de Cauda»; costumes: faz a festa da chuva (desde o ano 21); não sai de casa em dia de tempestade (desde o ano 25); guarda tanta comida para o inverno (desde o ano 38); queima os mortos (desde o ano 48); treina os jovens com lanças (desde o ano 97).
-- **Toron** vive no lago, com 81 pessoas, em casas de pedra; nasceu de uma migração em Demum no ano 19; chama o deus de «o Olho Escuro»; costumes: queima os mortos (desde o ano 70); guarda tanta comida para o inverno (desde o ano 86); treina os jovens com lanças (desde o ano 91).
-- **Teur** vive no morro, com 13 pessoas, e planta roças; nasceu de uma migração em Toror no ano 65; chama o deus de «o Senhor do Trovão»; costumes: faz a festa da chuva (desde o ano 67); não sai de casa em dia de tempestade (desde o ano 91); guarda tanta comida para o inverno (desde o ano 93); treina os jovens com lanças (desde o ano 95).
+- **Toron** vive no lago, com 102 pessoas, com canais e moinhos; nasceu de uma migração em Demum no ano 19; chama o deus de «o Que Fere»; costumes: não sai de casa em dia de tempestade (desde o ano 26); queima os mortos (desde o ano 64); guarda tanta comida para o inverno (desde o ano 67); treina os jovens com lanças (desde o ano 79).
+- **Teor** vive na floresta, com 42 pessoas, em casas de pedra; nasceu de uma migração em Demum no ano 44; chama o deus de «a Estrela de Cauda»; costumes: faz a festa da chuva (desde o ano 67); guarda tanta comida para o inverno (desde o ano 68); treina os jovens com lanças (desde o ano 68); queima os mortos (desde o ano 91).
+- **Kurum** vive no morro, com 29 pessoas, e trabalha o metal; nasceu de uma briga em Teor no ano 60; chama o deus de «a Mão Fechada»; costumes: treina os jovens com lanças (desde o ano 65); faz a festa da chuva (desde o ano 66); guarda tanta comida para o inverno (desde o ano 85).
+- **Demes** vive na praia, com 27 pessoas, com canais e moinhos; nasceu de uma briga em Kurum no ano 84; chama o deus de «a Mão Fechada»; costumes: treina os jovens com lanças (desde o ano 65); faz a festa da chuva (desde o ano 66).
 
-Povos que deixaram de existir: Teil e Toror.
+Povos que deixaram de existir: Teil e Demum.
 
-Lugares com nome: Praia do Raio (praia, para Demum), Praia do Luto (praia, para Teur), Lago do Raio (lago, para Toron), Lago do Luto (lago, para Toror), Floresta do Raio (floresta, para Teil), Floresta da Fome (floresta, para Toror), Floresta do Luto (floresta, para Toron), Floresta da Vitória (floresta, para Teur), Floresta do Luto (floresta, para Demum), Morro da Fome (morro, para Teur), Morro da Vitória (morro, para Demum) e Morro da Vitória (morro, para Toron).
+Lugares com nome: Praia do Raio (praia, para Demum), Praia do Luto (praia, para Teor), Praia da Vitória (praia, para Toron), Praia da Vitória (praia, para Demes), Lago do Raio (lago, para Toron), Lago da Trégua (lago, para Teor), Floresta do Raio (floresta, para Teil), Floresta da Fome (floresta, para Teor), Floresta da Vitória (floresta, para Toron), Floresta do Luto (floresta, para Demum), Morro da Vitória (morro, para Toron), Morro do Luto (morro, para Kurum) e Morro do Luto (morro, para Teor).
 
-Em 100 anos nasceram 662 pessoas e morreram 511.
+Em 100 anos nasceram 745 pessoas e morreram 533.

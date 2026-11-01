@@ -46,324 +46,315 @@ No verão do ano 15, Zeor ergueu as primeiras casas de pedra, e um templo de deg
 
 ### Ano 16
 
-A chuva parou de cair. A seca durou 13 dias, e os riachos viraram pedra.
+Na primavera, Bera, a engenhosa, morreu ao dar à luz.
 
-### Ano 17
-
-Rabea, a devota, aprendeu a tirar metal da pedra no fogo alto.
-
-*O ano 18 passou sem nada que a crônica precise guardar.*
-
-### Ano 19
-
-Na primavera, Loenu, fundadora de Zeor, morreu de velhice aos 65 anos. No outono, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. Depois disso, Zeor deixou de chamar o deus de «o Que Rega» e passou a chamá-la de «a Estrela de Cauda». Zeor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No inverno, Rabea teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela.
+*Entre os anos 17 e 19, nada mudou o rumo do mundo.*
 
 ### Ano 20
 
 No fim do ano 20, 37 pessoas viviam no mundo, todas em Zeor.
 
-### Ano 21
-
-Na primavera do ano 21, tantas preces atendidas fizeram Zeor confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno.
-
-### Ano 22
-
-Em Zeor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Zeor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
+*Do ano 21 ao 22, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 23
 
-Na primavera do ano 23, morreu Bera, a engenhosa, aos 47 anos. A seca voltou, como no ano 16: 19 dias sem chuva, até que o céu se abriu.
+Na primavera, Losara teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela.
 
-*Entre os anos 24 e 25, nada mudou o rumo do mundo.*
+*O ano 24 foi calmo.*
+
+### Ano 25
+
+No verão do ano 25, Zeor já não se preparava para nada: o Que Rega sempre dava. Deixaram de guardar comida para o inverno. A chuva parou de cair. A seca durou 12 dias, e os riachos viraram pedra.
 
 ### Ano 26
 
-No verão, Sau, a desconfiada, desenhou o primeiro canal e a primeira roda d'água. No outono, uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito. De novo a chuva sumiu, como no ano 23. Foram 23 dias de seca.
+Na primavera do ano 26, morreu Loenu, fundadora de Zeor, aos 72 anos.
 
 *O ano 27 passou sem nada que a crônica precise guardar.*
 
 ### Ano 28
 
-Uma febre correu Zeor e levou duas vidas. As preces de Zeor ficaram pequenas: pedia-se à Estrela de Cauda até sol para a pesca e sorte na caça. Um raio sem nuvem acertou Linim, que guiava Zeor, diante de todos. Em Zeor, disseram que era castigo. Desde a morte de Linim, ninguém em Zeor chega perto do lago em dia de tempestade. Com canais e moinhos, Zeor já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
+No verão, do céu limpo, um raio caiu no lago e matou Linim, que guiava Zeor. Em Zeor, disseram que era castigo. Depois disso, Zeor deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Que Fere». Zeor passou a acreditar que o Que Fere castiga quem duvida, e que Linim tinha duvidado. Desde a morte de Linim, ninguém em Zeor chega perto do lago em dia de tempestade. A forja de Zeor não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 *O ano 29 passou sem nada que a crônica precise guardar.*
 
 ### Ano 30
 
-Sau deu à luz gêmeos, Rara e Linviut. Uns viram bênção; outros, mau sinal. Nos anos 21 a 30 houve duas secas e seis preces que pareceram atendidas; nasceram dezenove crianças e morreram onze pessoas. No fim do ano 30, 46 pessoas viviam no mundo, todas em Zeor.
+Nos anos 21 a 30 houve duas secas; nasceram 26 crianças e morreram oito pessoas. No fim do ano 30, 55 pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 31
 
-No inverno, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito.
+No verão, Samiut, o medroso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. De novo a chuva sumiu, como no ano 25. Foram 25 dias de seca.
 
-*O ano 32 foi calmo.*
+### Ano 32
 
-### Ano 33
+No verão do ano 32, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. No outono, Zeor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Zeor passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
-Viem, o devoto, morreu dormindo, aos 55 anos. No outono, a terra tremeu. Caíram quatro cabanas. Satora e Zeya morreram sob os escombros. Linut passou a guiar Zeor. Rabea passou a falar pela Estrela de Cauda em Zeor. Era a primeira a rezar e a última a duvidar.
+*O ano 33 foi calmo.*
 
 ### Ano 34
 
-De novo a chuva sumiu, como no ano 26. Foram 22 dias de seca.
+De novo o sol se apagou no meio do dia.
 
-### Ano 35
+*No ano 35, nada de notável aconteceu.*
 
-No verão, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+### Ano 36
 
-*Os anos 36 a 38 passaram em paz.*
+Na primavera, Rabea, a devota, morreu dormindo, aos 57 anos. Tinha sido a primeira a plantar. Satora, que guiava Zeor, morreu de velhice aos 57 anos. Foi quem deu ao deus o nome de «o Que Rega». Linut passou a guiar Zeor.
 
-### Ano 39
+*No ano 37, nada de notável aconteceu.*
 
-Uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito.
+### Ano 38
+
+Na primavera do ano 38, em Zeor, Saut tomou para si o cuidado das preces ao Que Fere. No inverno, Milinya, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão.
+
+*No ano 39, nada de notável aconteceu.*
 
 ### Ano 40
 
-No fim do ano 40, 96 pessoas viviam no mundo, todas em Zeor.
+Zeor passou fome no inverno por 2 dias, mas ninguém morreu. Saut tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso obra do Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zeor, ficou escrito que foi o Que Fere. As preces de Zeor ficaram pequenas: pedia-se ao Que Fere até sol para a pesca e sorte na caça. Nos anos 31 a 40 houve três preces que pareceram atendidas; nasceram 48 crianças e morreram oito pessoas. No fim do ano 40, 95 pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 41
 
-No verão do ano 41, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
+Em Zeor, Saut pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso obra do Que Fere. O deus não tinha feito nada. Os escribas de Zeor registraram o milagre.
 
-### Ano 42
-
-Sabea deu à luz gêmeos, Raik e Zeloem. Uns viram bênção; outros, mau sinal.
+*O ano 42 foi calmo.*
 
 ### Ano 43
 
-Um inverno duro matou cinco pessoas de frio. A seca voltou, como no ano 34: 25 dias sem chuva, até que o céu se abriu.
+Na primavera, Linut não podia mais viver perto de Bezeim. Saiu de Zeor com 30 pessoas e fundou Miar na floresta. Pela primeira vez, havia mais de um povo no mundo. Milinya passou a falar pelo Que Fere em Miar. Era a primeira a rezar e a última a duvidar. Miar cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Fere. Os sábios de Miar passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Zeor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Fere.
 
-### Ano 44
+*No ano 44, nada de notável aconteceu.*
 
-Zeor passou fome no inverno por 7 dias, mas ninguém morreu. Em Zeor, Rabea pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Zeor deu graças à Estrela de Cauda. O deus nada fez: o crédito era de graça. Os escribas de Zeor registraram o milagre. O arquivo salvou Zeor: Sau reaprendeu nas tabuletas o que os mortos sabiam. Uma tosse que não passava matou cinco pessoas em Zeor. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse.
+### Ano 45
 
-*No ano 45, nada de notável aconteceu.*
+Nasceu Bezena, filha de Linut, que guiava Miar. A rixa entre Linut e Bezeim rachou Miar. Linut partiu com os seus, vinte pessoas, e fundou Beor na praia. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Miar perdeu o saber.
 
 ### Ano 46
 
-Em Zeor, Rabea pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças à Estrela de Cauda. A crônica sabe que foi acaso. Nas tabuletas de Zeor, ficou escrito que foi a Estrela de Cauda. A seca voltou, como no ano 43: 20 dias sem chuva, até que o céu se abriu.
+No inverno, em Beor, Milinya tomou para si o cuidado das preces ao Que Fere.
 
 ### Ano 47
 
-Na primavera do ano 47, morreu Rabea, que falava pela Estrela de Cauda em Zeor, aos 68 anos. Tinha sido a primeira a plantar.
+Na primavera, morreu Saut, que guiava Zeor, aos 51 anos. Zeor escolheu Enraut para guiar o grupo. Beviem queria o lugar e nunca perdoou. No verão, nasceu Linmira, filha de Linut, que guiava Beor.
 
 ### Ano 48
 
-Zeor conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 13. Muitas cabanas ficaram vazias.
+Na primavera, Rau morreu de repente, aos 10 anos. Lobea, de Miar, casou-se com Raviut e foi viver em Beor. Foi o primeiro laço entre os dois povos.
 
-*O ano 49 foi calmo.*
+### Ano 49
+
+No inverno, a rixa entre Bezeim e Linut rachou Beor. Bezeim partiu com os seus, nove pessoas, e fundou Loar no morro. Zebera passou a falar pelo Que Fere em Loar. Era a primeira a rezar e a última a duvidar. Em nome do Que Fere, Zebera proibiu casamentos e trocas com Beor. Era vontade de Zebera, não do deus.
 
 ### Ano 50
 
-Na primavera, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. Nos anos 41 a 50 houve cinco secas, cinco fomes e dez preces que pareceram atendidas; nasceram 42 crianças e morreram 50 pessoas. No fim do ano 50, 89 pessoas viviam no mundo, todas em Zeor.
+Em Zeor, Beviem pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. O deus não tinha feito nada. Os escribas de Zeor registraram o milagre. No verão, em Loar nasceu a primeira criança: Lina, filha de Zebera e Bezeim. Nos anos 41 a 50 houve quatro fomes e oito preces que pareceram atendidas; nasceram 76 crianças e morreram treze pessoas. No fim do ano 50, 158 pessoas viviam no mundo: Zeor (107), Miar (14), Beor (26) e Loar (11).
 
 ### Ano 51
 
-Saut, que falava pela Estrela de Cauda em Zeor, morreu de velhice aos 55 anos. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Zeor perdeu o saber. O deus calou justo quando Zeor mais dependia dele. A rixa entre Bezeim e Linut rachou Zeor. Bezeim partiu com os seus, quinze pessoas, e fundou Bean na floresta. Era o primeiro povo nascido de outro. Zeor passou fome no inverno por 22 dias, e quatro pessoas morreram.
+Em Zeor, Beviem pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zeor, ficou escrito que foi o Que Fere. Beviem anunciou que o Que Fere proibia qualquer trato com Miar. O deus nunca disse isso, mas Zeor obedeceu.
 
 ### Ano 52
 
-No outono, Bezeim, que guiava Bean, teve uma filha: Miya. De novo a chuva sumiu, como no ano 46. Foram 18 dias de seca. Bezeim tinha rezado: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Bean agradeceu à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? Bean passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
+Com Bezeim à frente, a nova geração de Loar abandonou o medo das tempestades, costume herdado dos avós. Os de Zeor caíram sobre Miar na floresta em nome do Que Fere. Miar foi derrotado e perdeu o que tinha guardado. Linu e Torviya morreram na luta. Foi a primeira vez que gente matou gente no mundo. Depois da derrota, os jovens de Miar passaram a treinar com lanças. A terra se ergueu na floresta: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma. A terra que se ergueu separou Miar e Zeor, e ninguém ousou atravessá-la para lutar.
 
 ### Ano 53
 
-Na primavera, Zeor atacou Bean na floresta. Bean foi derrotado e perdeu o que tinha guardado. Torrara morreu na luta. Foi a primeira vez que gente matou gente no mundo. Depois de tanto sofrer nas mãos dos vizinhos, Bean passou a desconfiar de todo estrangeiro. Zeor e Bean fizeram as pazes na floresta, antes que a briga crescesse. Para Bean, a floresta virou Floresta da Trégua. Bezeim rezou, e nada aconteceu.
+Na primavera, Milinya rezou, e nada aconteceu. No verão, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Zebeut tinha rezado: «Manda água, Pai das Pedras, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Miar duvidou de que o Pai das Pedras tinha ouvido. A crônica sabe que foi acaso. Miar passou a festejar todo ano o dia da volta da chuva, em honra do Pai das Pedras. Loar passou a festejar todo ano o dia da volta da chuva, em honra do Que Fere.
 
 ### Ano 54
 
-Loik, de Bean, tomou por esposa Zeya, de Zeor, e os dois povos passaram a se visitar. Loem rezou por Torem até a voz acabar. Torem morreu mesmo assim, e Loem nunca mais rezou. No outono, Enra deu à luz gêmeos, Nibem e Tortora. Uns viram bênção; outros, mau sinal. No inverno, Saim, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Na primavera do ano 54, começou a Guerra Santa: em nome do Que Fere, Zeor pegou em lanças contra Beor. A Guerra Santa seguiu: Zeor contra Beor, na praia em nome do Que Fere. Beor foi derrotado e perdeu o que tinha guardado. Na luta morreram Zeim e Saloem. No verão, o deus calou justo quando Zeor mais dependia dele. A Guerra Santa acabou em trégua, depois de dois anos, três batalhas e cinco mortos. Uma febre correu Zeor e levou onze vidas.
 
 ### Ano 55
 
-Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Zeor comeu até cansar. Para Zeor, o deus já não era «a Estrela de Cauda»: passou a ser «o Que Dá». Losara tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Enik implorou pelo filho. Enenem morreu, e daquele dia em diante Enik cuspia no chão quando falavam do Que Dá.
+Na primavera do ano 55, de um dia para o outro, o lago transbordou de comida. A fome de Zeor acabou ali. Linbeut tinha rezado: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. Dessa vez, tinha sido mesmo o deus. Foram 8 dias de fome no inverno em Zeor, com três mortos.
 
 ### Ano 56
 
-Raya deu à luz gêmeos, Vira e Mitora. Uns viram bênção; outros, mau sinal. No inverno, a terra tremeu. Caíram onze cabanas. Enik e Saloa morreram sob os escombros. Depois disso, Bean deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Sacode».
+Na primavera do ano 56, Linbeut, o medroso, morreu dormindo, aos 53 anos.
 
 ### Ano 57
 
-A fome no inverno durou 16 dias em Zeor e levou três vidas.
+Sem lugar e sem comida, Beviem e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. A fome no inverno durou 10 dias em Zeor e levou uma vida. No outono, em nome do Que Fere, Beviem proibiu casamentos e trocas com Loar. Era vontade de Beviem, não do deus. A seca voltou, como no ano 31: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 58
 
-No verão, um raio caiu no lago durante a tempestade e matou Enim. Enim era dos que mais rezavam, e Zeor ficou sem entender. Os devotos de Zeor não viram castigo: para eles, o Que Dá chamou Enim para perto. Nasceu ali a lembrança de Enim como santo.
+Zeor conheceu a maior fome da sua história por causa da seca. Em 11 dias, morreram 24. Muitas cabanas ficaram vazias. Depois daquela fome, Beor passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No verão, Zebera anunciou que o Que Fere proibia qualquer trato com Miar. O deus nunca disse isso, mas Loar obedeceu. Os de Zeor caíram sobre Loar no morro em nome do Que Fere. Loar foi derrotado e perdeu o que tinha guardado. Na luta morreram Raik e Zebera. Desde então, os de Zeor chamam o lugar de Morro da Vitória; os de Loar, de Morro do Luto.
 
 ### Ano 59
 
-A fome no inverno durou 11 dias em Zeor e levou duas vidas. Torya implorou pelo filho. Bemik morreu, e daquele dia em diante Torya cuspia no chão quando falavam do Que Dá. A doença entrou em Zeor e matou três pessoas. A rixa entre Bezeim e Linut rachou Bean. Bezeim partiu com os seus, dezessete pessoas, e fundou Zeon na praia. A forja de Zeor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera do ano 59, morreu Vienut, filho pequeno de Loena. Em Beor, Bea pediu: «Que Fere, dá-nos o que comer.» A comida voltou, e Beor deu graças ao Que Fere. A crônica sabe que foi acaso. No outono, em Miar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Viu deu à luz gêmeos, Enik e Torlinim. Uns viram bênção; outros, mau sinal.
 
 ### Ano 60
 
-Morreu Loim, filho pequeno de Enra. Com Sabeik à frente, a nova geração de Bean abandonou o medo das tempestades, costume herdado dos avós. Em Zeon, Torzeik tomou para si o cuidado das preces ao Que Sacode. Em Zeon nasceu a primeira criança: Nagau, filha de Enra e Linut. Nos anos 51 a 60 houve nove fomes, 25 preces que pareceram atendidas e sete preces sem resposta; nasceram 77 crianças e morreram 38 pessoas. No fim do ano 60, 131 pessoas viviam no mundo: Zeor (99), Bean (13) e Zeon (19).
+Na primavera, Miar passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Houve luta na floresta: Zeor atacou Miar em nome do Que Fere. Zeor venceu e levou a comida guardada. Loena morreu na luta. Em Miar, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Nos anos 51 a 60 houve três secas, treze fomes, seis batalhas, 36 preces que pareceram atendidas e onze preces sem resposta; nasceram 72 crianças e morreram 74 pessoas. No fim do ano 60, 145 pessoas viviam no mundo: Zeor (91), Miar (13), Beor (32) e Loar (9).
 
 ### Ano 61
 
-Em Zeor, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Bean atacou Zeon na praia. Zeon expulsou os atacantes. Sabeik morreu na luta. Zeon venceu Bean e levou os quatro sobreviventes para viver sob seu mando. Bean deixou de existir, mas os vencidos guardaram seus costumes em segredo. Diante das ruínas de Bean, Zeor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Zeon já não cabia na praia. Lorara, a curiosa, levou oito pessoas para a floresta e fundou Rilil.
+Morreu Linut, que fundou Beor e o guiava, aos 62 anos. Foi quem levou os seus a fundar Miar. No verão, houve luta na floresta: Loar atacou Miar em nome do Que Fere. Miar resistiu, e Loar voltou de mãos vazias. Na luta morreu Jua. Loar fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. No outono, começou a Guerra Santa da Floresta: em nome do Que Fere, Zeor pegou em lanças contra Miar. A Guerra Santa da Floresta seguiu: Zeor contra Miar, na floresta em nome do Que Fere. Zeor venceu e levou a comida guardada. Na luta morreram Torut e Raem.
 
 ### Ano 62
 
-Zeor conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 25. Muitas cabanas ficaram vazias. Em Zeor, Milinim pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Que Dá. O deus nada fez: o crédito era de graça. Nas tabuletas de Zeor, ficou escrito que foi o Que Dá. O inverno foi de gelo: três pessoas morreram de frio.
+Na primavera, Bezeim, que fundou Loar e o guiava, morreu dormindo, aos 61 anos. Foi quem levou os seus a fundar Loar. Em Loar, já ninguém sabia trabalhar o metal. O que fora feito começou a ruir. Tantas preces atendidas fizeram Beor confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno. No inverno, com canais e moinhos, Miar já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Na Guerra Santa da Floresta, Miar atacou Zeor no lago. Zeor resistiu, e Miar voltou de mãos vazias. Na luta morreram Tortorem, Lolina e Zebeut.
 
 ### Ano 63
 
-Linut morreu de velhice aos 64 anos. Enra, de Zeon, casou-se com Raut e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Nasceu Niniya, a primeira de Rilil.
+A fome no inverno durou 14 dias em Beor e levou quatro vidas. Em nome do Pai das Pedras, Loem proibiu casamentos e trocas com Zeor. Era vontade de Loem, não do deus.
 
 ### Ano 64
 
-Enloim, de Rilil, tomou por esposa Torya, de Zeor, e os dois povos passaram a se visitar. Losara, que guiava Zeor, não resistiu à fome. Zeor escolheu Linik para guiar o grupo. Beik queria o lugar e nunca perdoou. Em Zeor, Losara pediu: «Que Dá, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Dá. O deus não tinha feito nada. Os escribas de Zeor registraram o milagre.
+Em Beor, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. A Guerra Santa da Floresta seguiu: Zeor contra Miar, na floresta em nome do Que Fere. Miar foi derrotado e perdeu o que tinha guardado. Enloim e Loem morreram na luta. Depois da derrota, Miar não existia mais: os sete que sobraram foram levados para Zeor. A Guerra Santa da Floresta terminou com a conquista: quatro anos, quatro batalhas e oito mortos. Zeor encontrou as ruínas de Miar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 65
 
-A fome no inverno durou 11 dias em Zeor e levou vinte vidas.
+Na primavera, Zeor atacou Loar no morro em nome do Que Fere. Loar foi derrotado e perdeu o que tinha guardado. Na luta morreram Beviena e Pelinim. Bea tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Beor deu graças ao Que Fere. Foi só o tempo, mas quem iria dizer? Beik implorou pelo filho. Zelinim morreu, e daquele dia em diante Beik cuspia no chão quando falavam do Que Fere. Começou a Guerra Santa do Morro: em nome do Que Fere, Zeor pegou em lanças contra Loar.
 
 ### Ano 66
 
-Na primavera do ano 66, com Bezeim à frente, a nova geração de Zeon abandonou o medo das tempestades, costume herdado dos avós. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Depois de tantos mortos, Zeor e Loar se encontraram no morro e juraram paz. Depois de um ano, três batalhas e cinco mortos, a Guerra Santa do Morro terminou em paz. Zeor saiu dela mais forte. Os últimos de Loar, Lina, Lolout e Beloel, juntaram-se a Zeor. Loar deixou de existir. Bea não podia mais viver perto de Loya. Saiu de Beor com doze pessoas e fundou Loak na floresta. Samiut, o medroso, morreu de fome.
 
 ### Ano 67
 
-A forja de Zeor não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Veio a pior fome que o mundo tinha visto: 11 dias no inverno em Zeor, e 41 mortos. As crianças foram as primeiras. Beor passou fome no inverno por 11 dias, e sete pessoas morreram. Loak encontrou as ruínas de Loar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Belina, de Loak, casou-se com Milinut e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Em Loak nasceu a primeira criança: Niel, filho de Bezena e Peim.
 
 ### Ano 68
 
-Na primavera, Bezeim, que fundou Zeon e o guiava, morreu de velhice aos 67 anos. Tinha fundado Bean. Zeor já não cabia no lago. Raim, o corajoso, levou 21 pessoas para o morro e fundou Viem. Diante das ruínas de Bean, Viem disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, em Viem, Viya tomou para si o cuidado das preces ao Que Dá. O dia em que a chuva voltou virou festa em Viem: todo ano, celebram a chuva que o Que Dá mandou.
+Na primavera do ano 68, Milinya, a engenhosa, morreu de velhice aos 53 anos. Na guerra, tinha tirado duas vidas. De novo o sol se apagou no meio do dia. Linmira, de Beor, casou-se com Juon e foi viver em Loak. Foi o primeiro laço entre os dois povos.
 
 ### Ano 69
 
-Em Viem, Raim pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Viem viu nisso obra do Que Dá. Foi só o tempo, mas quem iria dizer? No outono, o sol escureceu outra vez. Depois disso, Zeor deixou de chamar o deus de «o Que Dá» e passou a chamá-lo de «o Que Apaga o Sol». Para Zeon, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
+Saloik rezou por Mitorya até a voz acabar. Mitorya morreu mesmo assim, e Saloik nunca mais rezou.
 
 ### Ano 70
 
-Na primavera, morreu Saim, o engenhoso, aos 51 anos. Enmiut, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Nos anos 61 a 70 houve duas secas, nove fomes, 22 preces que pareceram atendidas e cinco preces sem resposta; nasceram 81 crianças e morreram 81 pessoas. No fim do ano 70, 131 pessoas viviam no mundo: Zeor (69), Zeon (25), Rilil (13) e Viem (24).
+Na primavera, Loim, que guiava Zeor, morreu dormindo, aos 58 anos. Zeor passou fome no inverno por 11 dias, e cinco pessoas morreram. Em Zeor, Loim pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. O deus não tinha feito nada. Nas tabuletas de Zeor, ficou escrito que foi o Que Fere. No outono, Torbeut rezou por Lou até a voz acabar. Lou morreu mesmo assim, e Torbeut nunca mais rezou. Nos anos 61 a 70 houve três secas, treze fomes, sete batalhas, 24 preces que pareceram atendidas e nove preces sem resposta; nasceram 101 crianças e morreram 126 pessoas. No fim do ano 70, 120 pessoas viviam no mundo: Zeor (82), Beor (21) e Loak (17).
 
-### Ano 71
-
-Na primavera, apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu. Para Rilil, o deus já não era «o Que Sacode»: passou a ser «a Estrela de Cauda». Para Viem, o deus já não era «o Que Dá»: passou a ser «a Estrela de Cauda». Viem, de Viem, tomou por esposa Miya, de Zeon, e os dois povos passaram a se visitar.
+*O ano 71 foi calmo.*
 
 ### Ano 72
 
-Nasceu Viu, filha de Miya e Viem, com sangue de Viem e de Zeon.
+Na primavera do ano 72, os de Zeor caíram sobre Beor na praia em nome do Que Fere. Beor expulsou os atacantes. Na luta morreram Zea, Entorut e Lout. Depois de tanto sofrer nas mãos dos vizinhos, Zeor passou a desconfiar de todo estrangeiro. No verão, o deus calou justo quando Beor mais dependia dele.
 
 ### Ano 73
 
-Linlina, a rancorosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No outono, Ra, de Viem, casou-se com Torlout e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Envia morreu ao dar à luz. A seca voltou, como no ano 52: 23 dias sem chuva, até que o céu se abriu. Em Zeon, Saik pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Zeon duvidou de que o Que Apaga o Sol tinha ouvido. A crônica sabe que foi acaso.
+Na primavera do ano 73, começou a Guerra Santa da Praia: em nome do Que Fere, Zeor pegou em lanças contra Beor. Zeor e Beor, cansados de enterrar os seus, fizeram as pazes na praia. Depois de um ano, duas batalhas e quatro mortos, a Guerra Santa da Praia terminou em paz. No verão, em nome do Que Fere, Beviem proibiu casamentos e trocas com Loak. Era vontade de Beviem, não do deus. No inverno, Pena passou a falar pelo Que Fere em Loak. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 74
 
-Foram 25 dias de fome por causa da seca em Zeon, com quinze mortos. Depois daquela fome, Zeon passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A praia passou a ser a praia da fome: Praia da Fome. No inverno, Zeor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
+Razea deu à luz e não sobreviveu ao parto. Na guerra, tinha tirado duas vidas. O sol escureceu outra vez. Vibeim tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Fere. O deus nada fez: o crédito era de graça. Nas tabuletas de Zeor, ficou escrito que foi o Que Fere.
 
 ### Ano 75
 
-Na primavera, Linik, que guiava Zeor, morreu de velhice aos 59 anos.
+Na primavera do ano 75, Zeor atacou Loak na floresta em nome do Que Fere. Loak foi derrotado e perdeu o que tinha guardado. Pena morreu na luta. Uma febre correu Zeor e levou três vidas. No outono, começou a Segunda Guerra Santa: em nome do Que Fere, Zeor pegou em lanças contra Loak. A Segunda Guerra Santa seguiu: Zeor contra Loak, na floresta em nome do Que Fere. Loak foi derrotado e perdeu o que tinha guardado. Na luta morreram Lon e Bezena. Para Loak, a floresta virou Floresta do Luto.
 
-### Ano 76
-
-Na primavera do ano 76, Zeim, de Rilil, tomou por esposa Nagau, de Zeon, e os dois povos passaram a se visitar. No outono, Zeut, o pacífico, desenhou o primeiro canal e a primeira roda d'água.
+*O ano 76 passou sem nada que a crônica precise guardar.*
 
 ### Ano 77
 
-No verão do ano 77, Zeor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Apaga o Sol.
+Vibeik implorou pela filha. Milina morreu, e daquele dia em diante Vibeik cuspia no chão quando falavam do Que Fere. No outono, Viena deu à luz gêmeos, Linim e Linniena. Uns viram bênção; outros, mau sinal. Uma febre correu Zeor e levou quatro vidas.
 
 ### Ano 78
 
-Em Rilil, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Milinim tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Apaga o Sol. A crônica sabe que foi acaso. Os escribas de Zeor registraram o milagre. A terra tremeu. Caíram catorze cabanas. Torlout, Razeim, Linvik e Linloik morreram sob os escombros. No outono, a forja de Viem não apagava mais. O metal mudou o trabalho e mudou a guerra.
+Na primavera do ano 78, Zeya, que guiava Beor, morreu dormindo, aos 64 anos. Na Segunda Guerra Santa, Zeor atacou Loak na floresta em nome do Que Fere. Loak foi derrotado e perdeu o que tinha guardado. Viena, Bejua e Viviena morreram na luta. Depois de tanto sofrer nas mãos dos vizinhos, Loak passou a desconfiar de todo estrangeiro. Zeor passou fome no inverno por 14 dias, e três pessoas morreram. Uma tosse que não passava matou dez pessoas em Zeor.
 
-*No ano 79, nada de notável aconteceu.*
+### Ano 79
+
+Em Zeor, Vibeim pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zeor, ficou escrito que foi o Que Fere. No verão, Zeor atacou Beor na praia em nome do Que Fere. Zeor venceu e levou a comida guardada. Lora, Raon e Vipena morreram na luta. Beor fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Depois de tantos mortos, Zeor e Loak se encontraram na floresta e juraram paz. Depois de quatro anos, cinco batalhas e onze mortos, a Segunda Guerra Santa terminou em paz. Zeor saiu dela mais forte.
 
 ### Ano 80
 
-Morreu Lorara, que fundou Rilil e o guiava, aos 62 anos. Foi quem levou os seus a fundar Rilil. Viem já não se preparava para nada: a Estrela de Cauda sempre dava. Deixaram de guardar comida para o inverno. Nos anos 71 a 80 houve quatro fomes e catorze preces que pareceram atendidas; nasceram 103 crianças e morreram 50 pessoas. No fim do ano 80, 184 pessoas viviam no mundo: Zeor (90), Zeon (32), Rilil (18) e Viem (44).
+Começou a Terceira Guerra Santa: em nome do Que Fere, Zeor pegou em lanças contra Beor. Na Terceira Guerra Santa, Zeor atacou Beor na praia em nome do Que Fere. Beor expulsou os atacantes. Miraim, Enik e Enloya morreram na luta. Zeor e Beor, cansados de enterrar os seus, fizeram as pazes na praia. A Terceira Guerra Santa acabou em trégua, depois de um ano, duas batalhas e seis mortos. Foram 8 dias de fome no inverno em Zeor, com um morto. Nos anos 71 a 80 houve oito fomes, nove batalhas, 26 preces que pareceram atendidas e catorze preces sem resposta; nasceram 132 crianças e morreram 77 pessoas. No fim do ano 80, 177 pessoas viviam no mundo: Zeor (117), Beor (31) e Loak (29).
 
 ### Ano 81
 
-A seca voltou, como no ano 73: 21 dias sem chuva, até que o céu se abriu. Torzeik tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Rilil duvidou de que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça. Em Viem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Raim, que fundou Viem e o guiava, não resistiu à fome. Tinha fundado Viem. Viya, que falava pela Estrela de Cauda em Viem, morreu de fome.
+Morreu Saim, que guiava Beor, aos 50 anos. Bea tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Loak deu graças ao Que Fere. O deus nada fez: o crédito era de graça. Um inverno duro matou duas pessoas de frio.
 
 ### Ano 82
 
-Na primavera, Milinim, que guiava Zeor, morreu dormindo, aos 67 anos. Sem lugar e sem comida, Ena e os seus atravessaram a borda do mundo. Ninguém soube deles. Viem passou fome por causa da seca por 25 dias, e dezessete pessoas morreram. No outono, Linzeya anunciou que a Estrela de Cauda proibia qualquer trato com Rilil. O deus nunca disse isso, mas Viem obedeceu. Houve luta na floresta: Viem atacou Rilil em nome da Estrela de Cauda. Rilil foi derrotado e perdeu o que tinha guardado. Enloim e Nan morreram na luta.
+A fome ensinou: desde então, Loak estoca comida e não come tudo o que colhe. O frio levou Vibeim, que guiava Zeor. Foram 16 dias de fome no inverno em Zeor, com onze mortos.
 
 ### Ano 83
 
-Saik anunciou que o Que Apaga o Sol proibia qualquer trato com Rilil. O deus nunca disse isso, mas Zeon obedeceu.
+Na primavera, morreu Bea, que fundou Loak e o guiava, aos 63 anos. Foi quem levou os seus a fundar Loak.
 
 ### Ano 84
 
-Na primavera, os de Zeon caíram sobre Rilil na floresta em nome do Que Apaga o Sol. Rilil expulsou os atacantes. Miem, Saik e Tortora morreram na luta. Numa noite, o chão da floresta tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto. Começou a Guerra Santa: em nome do Que Apaga o Sol, Zeon pegou em lanças contra Rilil. Depois de duas batalhas e cinco mortos, a Guerra Santa terminou em paz. Zeon ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
+Torraem, o medroso, cansou de dividir pouca comida. Partiu com 34 pessoas para o morro e ali fundou Vies. Vies encontrou as ruínas de Miar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Vies encontrou as ruínas de Loar. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. Em Vies nasceu a primeira criança: Lona, filha de Misa e Bebeim.
 
 ### Ano 85
 
-Na primavera, em Zeon, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No verão, a floresta pegou fogo sem que ninguém acendesse nada. Em Rilil, disseram que o lugar estava amaldiçoado.
+Na primavera do ano 85, com Torraem à frente, a nova geração de Vies abandonou o medo das tempestades, costume herdado dos avós. Bebeim passou a falar pelo Que Fere em Vies. Era o primeiro a rezar e o último a duvidar. No verão, a floresta pegou fogo sem que ninguém acendesse nada. Linmiut morreu nas chamas. Em Loak, disseram que o fogo tinha limpado o lugar. Nas ruínas de Loar, Misa achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 86
 
-Zeor passou fome no inverno por 7 dias, e cinco pessoas morreram.
+Na primavera, Torbeut morreu dormindo, aos 59 anos. Nunca perdoou o deus pela morte de Lou. Em Vies, Bebeim pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Vies viu nisso obra do Que Fere. Foi só o tempo, mas quem iria dizer? Torem passou dias nas ruínas de Loar e voltou sabendo cortar pedra. Nas ruínas de Loar, Vibeik achou o que eles sabiam: aprendeu a cortar pedra.
 
 ### Ano 87
 
-Na primavera do ano 87, morreu Zeut, o pacífico, aos 55 anos. Em nome do Que Apaga o Sol, Rara proibiu casamentos e trocas com Viem. Era vontade de Rara, não do deus. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Viem perdeu o saber. Depois disso, Viem deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Apaga o Sol». No inverno, houve luta na floresta: Zeor atacou Rilil em nome do Que Apaga o Sol. Rilil foi derrotado e perdeu o que tinha guardado. Zeya, Tazean e Zeim morreram na luta.
+Vies ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 88
 
-Na primavera do ano 88, Enmiut, o engenhoso, morreu de repente, aos 38 anos. Zem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Em Zeon, Lozeu pediu: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeon viu nisso obra do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer?
+No outono do ano 88, Vies passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 89
 
-Na primavera, Loik, que guiava Zeon, morreu dormindo, aos 53 anos. Lotorut partiu com três pessoas para além da borda do mundo. Nunca voltaram. Zeon já não se preparava para nada: o Que Apaga o Sol sempre dava. Deixaram de guardar comida para o inverno. Zeon passou a festejar todo ano o dia da volta da chuva, em honra do Que Apaga o Sol. O deus calou justo quando Zeon mais dependia dele.
+Na primavera, morreu Visaik, o medroso, aos 61 anos. Na guerra, tinha tirado duas vidas. No inverno, Enya, de Zeor, casou-se com Viraik e foi viver em Vies. Foi o primeiro laço entre os dois povos.
 
 ### Ano 90
 
-Em Viem, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 28, só a crônica guarda. O frio levou Linenim, que guiava Zeon. A fome no inverno durou 11 dias em Zeor e levou dezenove vidas. Em Zeor, Satora pediu: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Apaga o Sol. O deus nada fez: o crédito era de graça. Os escribas de Zeor registraram o milagre. A fome ensinou: desde então, Rilil estoca comida e não come tudo o que colhe. Nos anos 81 a 90 houve duas secas, 21 fomes, cinco batalhas, 43 preces que pareceram atendidas e doze preces sem resposta; nasceram 79 crianças e morreram 121 pessoas. No fim do ano 90, 125 pessoas viviam no mundo: Zeor (77), Zeon (27), Rilil (12) e Viem (9).
+Tora, que guiava Zeor, morreu de frio. No outono, em Vies, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Vies passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Vies passou a festejar todo ano o dia da volta da chuva, em honra do Que Fere. Houve luta na floresta: Beor atacou Loak. Beor venceu e levou a comida guardada. Na luta morreram Linon, Linulim, Linena e Nitoron. Nos anos 81 a 90 houve quinze fomes, 21 preces que pareceram atendidas e três preces sem resposta; nasceram 99 crianças e morreram 93 pessoas. No fim do ano 90, 183 pessoas viviam no mundo: Zeor (102), Beor (30), Loak (28) e Vies (23).
 
 ### Ano 91
 
-De novo Zeor contra Rilil, como no ano 87 em nome do Que Apaga o Sol. Rilil foi derrotado e perdeu o que tinha guardado. Na luta morreu Rilur. No outono, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito.
+Na primavera, começou a Guerra da Fome: Beor, com fome, foi buscar à força a comida de Loak. A Guerra da Fome seguiu: Beor contra Loak, na floresta. Loak expulsou os atacantes. Na luta morreram Pebera e Arviut. A fome por causa da seca durou 16 dias em Beor e levou oito vidas. Depois daquela fome, Beor passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Desde então, Vies chama o morro de Morro da Fome.
 
 ### Ano 92
 
-Na primavera, em nome do Pai das Pedras, Torzeik proibiu casamentos e trocas com Zeor. Era vontade de Torzeik, não do deus. No verão, Zem implorou pelo filho. Zenaut morreu, e daquele dia em diante Zem cuspia no chão quando falavam do Que Apaga o Sol. Um raio caiu na praia durante a tempestade e matou Rilzena. Ninguém em Zeon teve dúvida: era castigo. Para Zeon, o deus já não era «o Que Apaga o Sol»: passou a ser «a Voz do Céu». No inverno, Zeor venceu Viem e levou os sete sobreviventes para viver sob seu mando. Viem deixou de existir, mas os vencidos guardaram seus costumes em segredo.
+Na primavera, morreu Loya, que guiava Beor, aos 54 anos. Torik implorou pela filha. Miviya morreu, e daquele dia em diante Torik cuspia no chão quando falavam do Que Fere.
 
 ### Ano 93
 
-Na primavera, as ruínas de Viem viraram aviso em Zeor: era o que o deus fazia com quem o desagradava. Zeon encontrou as ruínas de Viem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, Zeon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Rara, que guiava Zeor, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Viem.
+Torena tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Fere. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zeor, ficou escrito que foi o Que Fere. A Guerra da Fome seguiu: Beor contra Loak, na floresta. Loak expulsou os atacantes. Na luta morreram Pemiut, Lojura e Arim. Começou a Guerra da Floresta: o rancor entre Vies e Loak virou guerra.
 
-### Ano 94
-
-Zeor passou fome no inverno por 14 dias, e três pessoas morreram. A doença entrou em Zeor e matou cinco pessoas.
+*No ano 94, nada de notável aconteceu.*
 
 ### Ano 95
 
-De novo Zeor contra Rilil, como no ano 91 em nome do Que Apaga o Sol. Zeor venceu e levou a comida guardada. Na luta morreram Taniem, Toran, Gaya e Vibeu. Rilil fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Depois de tantos mortos, Zeor e Rilil se encontraram na floresta e juraram paz. No outono, depois da derrota, Rilil não existia mais: os sete que sobraram foram levados para Zeon. As ruínas de Rilil viraram aviso em Zeor: era o que o deus fazia com quem o desagradava.
+Na primavera do ano 95, sem lugar e sem comida, Bezera e os seus atravessaram a borda do mundo. Ninguém soube deles. Os de Zeor caíram sobre Beor na praia em nome do Que Fere. Beor expulsou os atacantes. Na luta morreu Miloa. Em Zeor, Enloik pediu: «Que Fere, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Fere. O deus nada fez: o crédito era de graça. Nas tabuletas de Zeor, ficou escrito que foi o Que Fere.
 
 ### Ano 96
 
-Na primavera, morreu Bemiem, que falava pelo Que Apaga o Sol em Zeor, aos 66 anos. Torzeik, o pacífico, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Zeor.
+Na primavera do ano 96, morreu Torraem, que fundou Vies e o guiava, aos 66 anos. Foi quem levou os seus a fundar Vies. A Guerra da Fome esfriou sem acordo nem vencedor: seis anos, quatro batalhas e onze mortos, e ninguém sabia mais por que lutava. A Guerra da Floresta esfriou sem acordo nem vencedor: cinco anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Começou a Quarta Guerra Santa: em nome do Que Fere, Zeor pegou em lanças contra Vies. Beor e Loak, cansados de enterrar os seus, fizeram as pazes na floresta.
 
 ### Ano 97
 
-Morreu Satora, que falava pelo Que Apaga o Sol em Zeor, aos 62 anos. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Zeor perdeu o saber. A fome no inverno durou 11 dias em Zeon e levou onze vidas. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Zeon perdeu o saber. O inverno foi de gelo: sete pessoas morreram de frio.
+Começou a Quinta Guerra Santa: em nome do Que Fere, Zeor pegou em lanças contra Loak. A Quinta Guerra Santa seguiu: Zeor contra Loak, na floresta em nome do Que Fere. Loak foi derrotado e perdeu o que tinha guardado. Niel e Linniena morreram na luta. Loak via Vies ser atendido e concluiu que o Que Fere tinha escolhido os outros.
 
 ### Ano 98
 
-Na primavera do ano 98, Mitorem, que falava pelo Que Apaga o Sol em Zeor, morreu dormindo, aos 61 anos. Nunca perdoou o deus pela morte de Torem. Uma febre correu Zeor e levou cinco vidas. A fome no inverno durou 10 dias em Zeor e levou dezesseis vidas. No inverno, Zeor já não cabia no lago. Torloem, o curioso, levou nove pessoas para a floresta e fundou Linak. Em Linak, Raena tomou para si o cuidado das preces ao Que Apaga o Sol.
+No verão do ano 98, Vilinut rezou por Jupeon até a voz acabar. Jupeon morreu mesmo assim, e Vilinut nunca mais rezou. Envim, que guiava Beor, morreu de febre aos 64 anos. No outono, os de Loak caíram sobre Vies no morro. Vies foi derrotado e perdeu o que tinha guardado. Via, Torviem e Kael morreram na luta. Para Loak, o morro virou Morro da Vitória. A doença entrou em Beor e matou cinco pessoas.
 
 ### Ano 99
 
-Em Linak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 44, só a crônica guarda. Diante das ruínas de Rilil, Linak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No verão, Savim, de Zeor, tomou por esposa Lovina, de Linak, e os dois povos passaram a se visitar. Linan, o engenhoso, descobriu como empilhar pedras cortadas sem que caíssem.
+Na primavera do ano 99, Enloik, que guiava Zeor, morreu dormindo, aos 50 anos. Beor não esqueceu o ano 95 e atacou Zeor outra vez. Zeor foi derrotado e perdeu o que tinha guardado. Na luta morreram Zeraut, Bevia e Enim. Desde então, Beor chama o lago de Lago da Vitória. No outono, começou a Segunda Guerra da Floresta: o rancor entre Loak e Vies virou guerra. A Segunda Guerra da Floresta seguiu: Vies contra Loak, na floresta. Loak expulsou os atacantes. Na luta morreram Torlinim, Torenim e Enzera.
 
 ### Ano 100
 
-Em Zeon, Galinut pediu: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Zeon deu graças à Voz do Céu. Foi só o tempo, mas quem iria dizer? Nos anos 91 a 100 houve treze fomes, quatro batalhas, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 98 crianças e morreram 103 pessoas. No fim do ano 100, 120 pessoas viviam no mundo: Zeor (76), Zeon (35) e Linak (9).
+Na primavera, Jut partiu com três pessoas para além da borda do mundo. Nunca voltaram. A Quarta Guerra Santa esfriou sem acordo nem vencedor: quatro anos, duas batalhas e seis mortos, e ninguém sabia mais por que lutava. Depois de quatro anos, três batalhas e oito mortos, a Quinta Guerra Santa terminou em paz. Zeor saiu dela mais forte. No verão, começou a Guerra do Morro: o rancor entre Beor e Vies virou guerra. No inverno, Vitoru, a medrosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. Nos anos 91 a 100 houve treze fomes, dezessete batalhas, 34 preces que pareceram atendidas e 28 preces sem resposta; nasceram 143 crianças e morreram 92 pessoas. No fim do ano 100, 222 pessoas viviam no mundo: Zeor (113), Beor (36), Loak (42) e Vies (31).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 76 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (desde o ano 44); guarda tanta comida para o inverno (desde o ano 51).
-- **Zeon** vive na praia, com 35 pessoas, e planta roças; nasceu de uma briga em Bean no ano 59; chama o deus de «a Voz do Céu»; costumes: queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 84); faz a festa da chuva (desde o ano 89); guarda tanta comida para o inverno (desde o ano 90); não sai de casa em dia de tempestade (desde o ano 92).
-- **Linak** vive na floresta, com 9 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 98; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida).
+- **Zeor** vive no lago, com 113 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Que Fere»; costumes: não sai de casa em dia de tempestade (desde o ano 28); guarda tanta comida para o inverno (desde o ano 54); treina os jovens com lanças (desde o ano 54); queima os mortos (desde o ano 54).
+- **Beor** vive na praia, com 36 pessoas, com canais e moinhos; nasceu de uma briga em Miar no ano 45; chama o deus de «o Que Fere»; costumes: não sai de casa em dia de tempestade (desde o ano 28); treina os jovens com lanças (desde o ano 54); guarda tanta comida para o inverno (desde o ano 91); queima os mortos (desde o ano 98).
+- **Loak** vive na floresta, com 42 pessoas, com canais e moinhos; nasceu de uma briga em Beor no ano 66; chama o deus de «o Que Fere»; costumes: não sai de casa em dia de tempestade (desde o ano 28); treina os jovens com lanças (desde o ano 54); guarda tanta comida para o inverno (desde o ano 82).
+- **Vies** vive no morro, com 31 pessoas, e escreve; nasceu de uma migração em Zeor no ano 84; chama o deus de «o Que Fere»; costumes: guarda tanta comida para o inverno (desde o ano 54); treina os jovens com lanças (desde o ano 54); faz a festa da chuva (desde o ano 90); não desperdiça uma gota d'água (desde o ano 90).
 
-Povos que deixaram de existir: Bean, Rilil e Viem.
+Povos que deixaram de existir: Miar e Loar.
 
-Lugares com nome: Praia da Fome (praia, para Zeon), Lago da Fome (lago, para Zeor), Floresta da Chuva (floresta, para Zeor), Floresta da Trégua (floresta, para Bean), Floresta da Vitória (floresta, para Viem), Floresta do Luto (floresta, para Rilil), Floresta do Luto (floresta, para Zeon), Morro da Fome (morro, para Viem) e Morro da Vitória (morro, para Zeor).
+Lugares com nome: Praia da Vitória (praia, para Zeor), Praia do Luto (praia, para Beor), Lago da Fome (lago, para Zeor), Lago do Luto (lago, para Miar), Lago da Vitória (lago, para Beor), Floresta da Chuva (floresta, para Zeor), Floresta do Luto (floresta, para Miar), Floresta da Pedra Erguida (floresta, para Beor), Floresta da Pedra Erguida (floresta, para Loar), Floresta do Luto (floresta, para Loak), Floresta do Luto (floresta, para Vies), Morro da Vitória (morro, para Zeor), Morro do Luto (morro, para Loar), Morro da Fome (morro, para Vies), Morro da Vitória (morro, para Loak) e Morro da Vitória (morro, para Beor).
 
-Em 100 anos nasceram 597 pessoas e morreram 477.
+Em 100 anos nasceram 733 pessoas e morreram 502.

@@ -232,111 +232,121 @@ No inverno do ano 72, Kiak ergueu as primeiras casas de pedra, e um templo de de
 
 ### Ano 73
 
-Ordemo tinha rezado: «Sombra, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que a Sombra tinha ouvido. A crônica sabe que foi acaso.
+A seca voltou, como no ano 65: 19 dias sem chuva, até que o céu se abriu. Em Esar, Ordemo pediu: «Manda água, Sombra, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que a Sombra tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 74
 
-Na primavera, Kaesel, que guiava Kiak, morreu dormindo, aos 47 anos. Depois dos roubos da fome, Esar parou de dividir: cada família passou a guardar o que era seu. A fome por causa da seca durou 25 dias em Esar e levou quatro vidas. Arkurel tinha rezado: «Sombra, dá-nos o que comer.» A fome passou, e Esar viu nisso obra da Sombra. O deus nada fez: o crédito era de graça.
+Em Kiak, Kaesel pediu: «Sombra, dá-nos o que comer.» A fome passou, e Kiak viu nisso obra da Sombra. O deus nada fez: o crédito era de graça. Esar conheceu a maior fome da sua história por causa da seca. Em 26 dias, morreram 12. Muitas cabanas ficaram vazias.
 
-*No ano 75, nada de notável aconteceu.*
+### Ano 75
+
+Esar atacou Kiak no lago em nome da Sombra. Esar venceu e levou a comida guardada. Na luta morreram Kaesel, Faut, Esut e Demo. Kiak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois de tantos mortos, Esar e Kiak se encontraram no lago e juraram paz.
 
 ### Ano 76
 
-Ordemo, que guiava Esar, morreu dormindo, aos 54 anos. Esar escolheu Kamaia para guiar o grupo. Arkurel queria o lugar e nunca perdoou. Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. Depois disso, Kiak deixou de chamar o deus de «a Sombra» e passou a chamá-la de «a Estrela de Cauda».
+De novo a chuva sumiu, como no ano 73. Foram 20 dias de seca. A terra tremeu. Caíram quatro cabanas. Kurel, Esena, Esmael e Martoim morreram sob os escombros. Depois disso, Esar deixou de chamar o deus de «a Sombra» e passou a chamá-la de «a Terra Brava».
 
-*No ano 77, nada de notável aconteceu.*
+### Ano 77
 
-### Ano 78
+A terra tremeu. Caíram duas cabanas. Kasut, Esya, Suya e Kaon morreram sob os escombros. Kurdemo, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
-Suim rezou por Suesena até a voz acabar. Suesena morreu mesmo assim, e Suim nunca mais rezou. O inverno foi de gelo: três pessoas morreram de frio. A seca voltou, como no ano 65: 20 dias sem chuva, até que o céu se abriu. Houve luta no lago: Esar atacou Kiak em nome da Sombra. Esar venceu e levou a comida guardada. Esdemel, Kaon e Torena morreram na luta. Kiak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças.
+*No ano 78, nada de notável aconteceu.*
 
 ### Ano 79
 
-Começou a Guerra Santa: em nome da Sombra, Esar pegou em lanças contra Kiak. A Guerra Santa seguiu: Esar contra Kiak, no lago em nome da Sombra. Esar venceu e levou a comida guardada. Toel morreu na luta.
+Kiak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 80
 
-Demim anunciou que a Estrela de Cauda proibia qualquer trato com Esar. O deus nunca disse isso, mas Kiak obedeceu. No inverno, na Guerra Santa, Kiak atacou Esar na praia em nome da Estrela de Cauda. Kiak venceu e levou a comida guardada. Arut e Kae morreram na luta. Para Kiak, a praia virou Praia da Vitória. Nos anos 71 a 80 houve três secas, quatro fomes, três batalhas, onze preces que pareceram atendidas e quatro preces sem resposta; nasceram 35 crianças e morreram 25 pessoas. No fim do ano 80, 61 pessoas viviam no mundo: Esar (29) e Kiak (32).
+Nos anos 71 a 80 houve duas secas, três fomes e oito preces que pareceram atendidas; nasceram 41 crianças e morreram 29 pessoas. No fim do ano 80, 63 pessoas viviam no mundo: Esar (33) e Kiak (30).
 
 *O ano 81 foi calmo.*
 
 ### Ano 82
 
-Na primavera do ano 82, Arkurel, que falava pela Sombra em Esar, morreu de repente, aos 41 anos. Em Esar, Kamaia pediu: «Sombra, não deixes nossos filhos morrerem de fome.» A fome passou, e Esar viu nisso obra da Sombra. O deus não tinha feito nada. Na Guerra Santa, Esar atacou Kiak no lago em nome da Sombra. Kiak expulsou os atacantes. Na luta morreram Kurel, Dodemo e Gaarya.
+Na primavera do ano 82, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. No verão, Tamto, o engenhoso, inventou marcas que guardavam palavras.
 
 ### Ano 83
 
-No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Para Esar, o deus já não era «a Sombra»: passou a ser «o Que Apaga o Sol». Martoim, o desconfiado, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Um raio caiu na praia durante a tempestade e matou Arkael. Ninguém em Esar teve dúvida: era castigo. Nasceu ali um costume: quando o céu escurece, ninguém em Esar sai de casa. Lembram de Arkael.
+Ordemo tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Esar viu nisso obra da Terra Brava. A crônica sabe que foi acaso.
 
-### Ano 84
-
-Na primavera do ano 84, em Kiak, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Em Esar, Suim pediu: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Esar viu nisso obra do Que Apaga o Sol. O deus não tinha feito nada. No outono, Tamto, o engenhoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+*O ano 84 passou sem nada que a crônica precise guardar.*
 
 ### Ano 85
 
-Na Guerra Santa, Esar atacou Kiak no lago em nome do Que Apaga o Sol. Kiak expulsou os atacantes. Kuru e Suim morreram na luta. Esar e Kiak, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra Santa acabou em trégua, depois de sete anos, doze batalhas e dezesseis mortos. Kiak saiu dela mais forte. Em Kiak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+No outono do ano 85, a rixa entre Ordemo e Kamaia rachou Esar. Ordemo partiu com os seus, dezessete pessoas, e fundou Mail na floresta. Ordemo não podia mais viver perto de Kamaia. Saiu de Mail com onze pessoas e fundou Sues no morro. Em nome da Terra Brava, Mao proibiu casamentos e trocas com Mail. Era vontade de Mao, não do deus. Sues atacou Mail na floresta em nome da Terra Brava. Sues venceu e levou a comida guardada. Na luta morreu Suim. Ordemo, que fundou Sues e o guiava, morreu de fome. Foi quem levou os seus a fundar Mail.
 
 ### Ano 86
 
-Na primavera do ano 86, morreu Esut, o devoto, aos 52 anos. Na guerra, tinha tirado duas vidas.
+Na primavera, Demim, que guiava Kiak, morreu de velhice aos 66 anos. Foi quem proibiu, em nome do deus, o trato com Esil. Foram 8 dias de fome no inverno em Sues, com quatro mortos. O morro passou a ser o morro da fome: Morro da Fome. Sues encontrou as ruínas de Torar e disse que ali tinham vivido gigantes. Os últimos de Mail, Gau e Esut, juntaram-se a Kiak. Mail deixou de existir.
 
 ### Ano 87
 
-Na primavera do ano 87, Demim, que guiava Kiak, morreu de velhice aos 67 anos. Foi quem proibiu, em nome do deus, o trato com Esil. A seca voltou, como no ano 78: 20 dias sem chuva, até que o céu se abriu. Depois da seca, Esar jurou nunca desperdiçar água.
+Arkurel, que guiava Esar, morreu dormindo, aos 46 anos. Foi quem proibiu, em nome do deus, o trato com Mail. Em Kiak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam.
 
 ### Ano 88
 
-Esar conheceu a maior fome da sua história por causa da seca. Em 28 dias, morreram 9. Muitas cabanas ficaram vazias. De novo a chuva sumiu, como no ano 87. Foram 21 dias de seca.
+Arut tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Esar viu nisso obra da Terra Brava. O deus não tinha feito nada. Tantas preces atendidas fizeram Kiak confiar no céu mais do que nas próprias mãos. No verão, Kae, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
 ### Ano 89
 
-No inverno do ano 89, Esar não esqueceu o ano 85 e atacou Kiak outra vez. Kiak resistiu, e Esar voltou de mãos vazias. Kasut e Suarya morreram na luta.
+No inverno, Kurselim não podia mais viver perto de Gaarya. Saiu de Kiak com nove pessoas e fundou Maril na floresta. Maril encontrou as ruínas de Torar e disse que ali tinham vivido gigantes.
 
 ### Ano 90
 
-Nos anos 81 a 90 houve quatro secas, cinco fomes, dez batalhas, 22 preces que pareceram atendidas e catorze preces sem resposta; nasceram 32 crianças e morreram 35 pessoas. No fim do ano 90, 58 pessoas viviam no mundo: Esar (16) e Kiak (42).
+Maril encontrou as ruínas de Mail. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No inverno, em Maril, Toia tomou para si o cuidado das preces à Sombra. Nos anos 81 a 90 houve cinco fomes e catorze preces que pareceram atendidas; nasceram 33 crianças e morreram vinte pessoas. No fim do ano 90, 76 pessoas viviam no mundo: Esar (20), Kiak (41), Sues (7) e Maril (8).
 
-*O ano 91 passou sem nada que a crônica precise guardar.*
+### Ano 91
+
+Esdemel, que falava pela Sombra em Kiak, morreu de velhice aos 50 anos. Toia rezou por Kiselel até a voz acabar. Kiselel morreu mesmo assim, e Toia nunca mais rezou. Em Sues, quem vinha de fora era recebido com comida e lugar perto do fogo. Demia, de Sues, casou-se com Selim e foi viver em Kiak. Foi o primeiro laço entre os dois povos. Maril passou a festejar todo ano o dia da volta da chuva, em honra da Sombra.
 
 ### Ano 92
 
-Começou a Guerra Santa do Lago: em nome do Que Apaga o Sol, Esar pegou em lanças contra Kiak. A Guerra Santa do Lago seguiu: Esar contra Kiak, no lago em nome do Que Apaga o Sol. Kiak resistiu, e Esar voltou de mãos vazias. Esmau, Kamaia e Tamto morreram na luta. Areso tinha rezado: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Esar agradeceu ao Que Apaga o Sol. O deus não tinha feito nada.
+Na primavera, Arut, que falava pela Terra Brava em Esar, morreu de repente, aos 41 anos. Esar passou a receber bem os de fora: um casamento com outro povo virava festa.
 
-*O ano 93 passou sem nada que a crônica precise guardar.*
+### Ano 93
+
+Na primavera, com Mao à frente, a nova geração de Sues abandonou a festa da chuva, costume herdado dos avós. No verão, Kiak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Em Kiak, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 94
 
-No verão do ano 94, a Guerra Santa do Lago seguiu: Esar contra Kiak, no lago em nome do Que Apaga o Sol. Kiak resistiu, e Esar voltou de mãos vazias. Na luta morreram Demo e Kurya. Em Esar, Areso pediu: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Esar agradeceu ao Que Apaga o Sol. O deus nada fez: o crédito era de graça.
+No verão, a tempestade trouxe raios para o morro. Um deles acertou Kaorim. Em Sues, disseram que era castigo. Depois disso, Sues deixou de chamar o deus de «a Terra Brava» e passou a chamá-lo de «o Senhor do Trovão». Para Sues, Kaorim foi castigado. Desde então, quem duvida do Senhor do Trovão duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Sues sai de casa. Lembram de Kaorim. Esar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
-*No ano 95, nada de notável aconteceu.*
+### Ano 95
+
+Na primavera do ano 95, com Mao à frente, a nova geração de Sues abandonou o costume de guardar comida, costume herdado dos avós. Waena, a engenhosa, aprendeu a levar a água por canais e a fazer o vento moer o grão. Kaia tinha rezado: «Sombra, não leves mais ninguém.» Os doentes se levantaram. Em Maril, o crédito foi da Sombra. O deus nada fez: o crédito era de graça.
 
 ### Ano 96
 
-Apareceu no céu uma luz com rabo, que ficou 11 noites e sumiu. No verão, na Guerra Santa do Lago, Esar atacou Kiak no lago em nome do Que Apaga o Sol. Kiak expulsou os atacantes. Na luta morreram Kurliela e Kakaut.
+Na primavera do ano 96, Toia, de Maril, casou-se com Kuro e foi viver em Kiak. Foi o primeiro laço entre os dois povos. Com canais e moinhos, Kiak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Em Maril nasceu a primeira criança: Rukon, filho de Kaia e Kurselim.
 
 ### Ano 97
 
-Morreu o último que tinha visto o ano 63. Em Esar, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê.
+Na primavera do ano 97, Gaarya, que guiava Kiak, morreu de velhice aos 59 anos. Mao tinha rezado: «Senhor do Trovão, não leves Orlo.» A febre passou, e Mao contou a todos que o Senhor do Trovão tinha ouvido. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 98
 
-No inverno, Arya, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Nasceu Demdemis, filha de Maena e Mael, com sangue de Sues e de Esar.
 
-*O ano 99 foi calmo.*
+### Ano 99
+
+No inverno do ano 99, Toia deu à luz e não sobreviveu ao parto. Desde a morte de Kiselel, nunca mais tinha rezado.
 
 ### Ano 100
 
-Na primavera, em Kiak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. A Guerra Santa do Lago esfriou sem acordo nem vencedor: onze anos, seis batalhas e dez mortos, e ninguém sabia mais por que lutava. Kiak saiu dela mais forte. Nos anos 91 a 100 houve duas secas, cinco batalhas, treze preces que pareceram atendidas e oito preces sem resposta; nasceram 42 crianças e morreram dez pessoas. No fim do ano 100, 90 pessoas viviam no mundo: Esar (21) e Kiak (69).
+Nos anos 91 a 100 houve duas secas e doze preces que pareceram atendidas; nasceram 63 crianças e morreram dezesseis pessoas. No fim do ano 100, 123 pessoas viviam no mundo: Esar (21), Kiak (84), Sues (6) e Maril (12).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Esar** vive na praia, com 21 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (desde o ano 83); não desperdiça uma gota d'água (desde o ano 87).
-- **Kiak** vive no lago, com 69 pessoas, em casas de pedra; nasceu de uma briga em Torar no ano 59; chama o deus de «a Estrela de Cauda»; costumes: treina os jovens com lanças (desde o ano 78).
+- **Esar** vive na praia, com 21 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (desde o ano 63); guarda tanta comida para o inverno (desde o ano 64); treina os jovens com lanças (desde o ano 65).
+- **Kiak** vive no lago, com 84 pessoas, com canais e moinhos; nasceu de uma briga em Torar no ano 59; chama o deus de «a Sombra»; costumes: treina os jovens com lanças (desde o ano 75).
+- **Sues** vive no morro, com 6 pessoas, e planta roças; nasceu de uma briga em Mail no ano 85; chama o deus de «o Senhor do Trovão»; costumes: treina os jovens com lanças (desde o ano 65); não sai de casa em dia de tempestade (desde o ano 94); faz a festa da chuva (desde o ano 94).
+- **Maril** vive na floresta, com 12 pessoas, e planta roças; nasceu de uma briga em Kiak no ano 89; chama o deus de «a Sombra»; costumes: treina os jovens com lanças (desde o ano 75); faz a festa da chuva (desde o ano 91).
 
-Povos que deixaram de existir: Esil, Demes e Torar.
+Povos que deixaram de existir: Esil, Demes, Torar e Mail.
 
-Lugares com nome: Praia da Fome (praia, para Esar), Praia da Vitória (praia, para Kiak), Lago da Vitória (lago, para Kiak) e Lago do Luto (lago, para Esar).
+Lugares com nome: Praia da Fome (praia, para Esar), Lago da Vitória (lago, para Kiak), Lago do Luto (lago, para Esar) e Morro da Fome (morro, para Sues).
 
-Em 100 anos nasceram 235 pessoas e morreram 158.
+Em 100 anos nasceram 263 pessoas e morreram 153.

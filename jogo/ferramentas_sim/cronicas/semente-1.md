@@ -92,253 +92,271 @@ No outono, Rabea, a devota, descobriu como empilhar pedras cortadas sem que caí
 
 ### Ano 30
 
-Na primavera, Viem, que guiava Zeor, morreu de velhice aos 52 anos. Viak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Viak, quem passou a decidir foi o templo: os sacerdotes falavam pela Mão Fechada, e o deus decidia tudo. Nos anos 21 a 30 houve duas secas e três preces que pareceram atendidas; nasceram dezesseis crianças e morreram nove pessoas. No fim do ano 30, 37 pessoas viviam no mundo: Zeor (9) e Viak (28).
+Na primavera, Viem, que guiava Zeor, morreu de velhice aos 52 anos. Viak ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Viak, quem passou a decidir foi o templo: os sacerdotes falavam pela Mão Fechada, e o deus decidia tudo. Nos anos 21 a 30 houve duas secas e quatro preces que pareceram atendidas; nasceram dezesseis crianças e morreram nove pessoas. No fim do ano 30, 37 pessoas viviam no mundo: Zeor (9) e Viak (28).
 
-*Entre os anos 31 e 33, nada mudou o rumo do mundo.*
+### Ano 31
+
+De novo a chuva sumiu, como no ano 25. Foram 19 dias de seca. As preces de Viak ficaram pequenas: pedia-se à Mão Fechada até sol para a pesca e sorte na caça.
+
+*O ano 32 foi calmo.*
+
+### Ano 33
+
+A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe.
 
 ### Ano 34
 
-No inverno, Sau, a desconfiada, aprendeu a tirar metal da pedra no fogo alto.
+Em Zeor, Vira pediu: «Mão Fechada, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças à Mão Fechada. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 35
 
-Um raio caiu no lago durante a tempestade e matou Vira. Em Zeor, disseram que era castigo. Para Zeor, Vira foi castigada. Desde então, quem duvida da Mão Fechada duvida em silêncio. Desde a morte de Vira, ninguém em Zeor chega perto do lago em dia de tempestade. O lugar ganhou nome: Lago do Raio.
+Vira tinha rezado: «Mão Fechada, dá-nos o que comer.» A comida voltou, e Zeor deu graças à Mão Fechada. O deus não tinha feito nada.
 
 ### Ano 36
 
-A seca voltou, como no ano 25: 18 dias sem chuva, até que o céu se abriu. Em Viak, Satora pediu: «Mão Fechada, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Viak duvidou de que a Mão Fechada tinha ouvido. Foi só o tempo, mas quem iria dizer? As preces de Viak ficaram pequenas: pedia-se à Mão Fechada até sol para a pesca e sorte na caça.
+Na primavera, Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Zeor, quem passou a decidir foi o templo: os sacerdotes falavam pela Mão Fechada, e o deus decidia tudo.
 
-*Do ano 37 ao 38, a vida seguiu sem grandes acontecimentos.*
+### Ano 37
 
-### Ano 39
+Miut, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal.
 
-No inverno, a terra tremeu. Caíram seis cabanas. Saim e Viar morreram sob os escombros. Para Zeor, o deus já não era «a Mão Fechada»: passou a ser «o Que Sacode». Depois disso, Viak deixou de chamar o deus de «a Mão Fechada» e passou a chamá-la de «a Terra Brava».
+### Ano 38
+
+No inverno do ano 38, dessa vez, a Mão Fechada não respondeu, e Viak, que tinha esquecido como se virar sozinho, pagou caro. A seca voltou, como no ano 31: 26 dias sem chuva, até que o céu se abriu.
+
+*No ano 39, nada de notável aconteceu.*
 
 ### Ano 40
 
-Tantas preces atendidas fizeram Zeor confiar no céu mais do que nas próprias mãos. Nos anos 31 a 40 houve duas secas e cinco preces que pareceram atendidas; nasceram 41 crianças e morreram oito pessoas. No fim do ano 40, 70 pessoas viviam no mundo: Zeor (17) e Viak (53).
+Zeor já não se preparava para nada: a Mão Fechada sempre dava. Deixaram de guardar comida para o inverno. Nos anos 31 a 40 houve quatro secas, três fomes e quinze preces que pareceram atendidas; nasceram 51 crianças e morreram dez pessoas. No fim do ano 40, 78 pessoas viviam no mundo: Zeor (16) e Viak (62).
 
 ### Ano 41
 
-Satora tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Quando a chuva voltou, Viak agradeceu à Terra Brava. Foi só o tempo, mas quem iria dizer?
+Na primavera, Vira, que guiava Zeor, morreu dormindo, aos 50 anos.
 
 ### Ano 42
 
-Na primavera, Viviya, que falava pelo Que Sacode em Zeor, morreu de repente, aos 26 anos. Rabea, que falava pela Terra Brava em Viak, morreu dormindo, aos 63 anos. Foi quem descobriu que semente vira planta.
+Satora, que fundou Viak e o guiava, morreu de febre aos 63 anos. Tinha fundado Viak. Rabea, que guiava Viak, não resistiu à fome. Tinha sido a primeira a plantar. Linem rezou por Torar até a voz acabar. Torar morreu mesmo assim, e Linem nunca mais rezou. A doença entrou em Viak e matou duas pessoas. Linem, que guiava Viak, não resistiu à fome. Desde a morte de Torar, nunca mais tinha rezado.
 
-*Do ano 43 ao 44, a vida seguiu sem grandes acontecimentos.*
+### Ano 43
+
+Veio a pior fome que o mundo tinha visto: 22 dias por causa da seca em Viak, e 35 mortos. As crianças foram as primeiras. Em Viak, Saut pediu: «Mão Fechada, dá-nos o que comer.» A fome passou, e Viak viu nisso obra da Mão Fechada. Foi só o tempo, mas quem iria dizer? Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A floresta passou a ser a floresta da fome: Floresta da Fome. Toru deu à luz gêmeos, Vim e Linlinya. Uns viram bênção; outros, mau sinal.
+
+### Ano 44
+
+Sakiu tinha rezado: «Mão Fechada, que a chuva volte.» Quando a chuva voltou, Viak agradeceu à Mão Fechada. Foi só o tempo, mas quem iria dizer? As preces de Zeor ficaram pequenas: pedia-se à Mão Fechada até sol para a pesca e sorte na caça.
 
 ### Ano 45
 
-Na primavera do ano 45, a forja de Viak não apagava mais. O metal mudou o trabalho e mudou a guerra. Em Zeor, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Sau, a desconfiada, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
+No verão, Sara, a engenhosa, aprendeu a tirar metal da pedra no fogo alto.
 
 *O ano 46 foi calmo.*
 
 ### Ano 47
 
-Em Zeor, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 9, só a crônica guarda. Satora tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Viak viu nisso obra da Terra Brava. O deus não tinha feito nada.
+Na primavera do ano 47, Sakiu implorou pela filha. Viliu morreu, e daquele dia em diante Sakiu cuspia no chão quando falavam da Mão Fechada. Desde a febre, Viak não enterra mais ninguém: os mortos vão para o fogo. No outono, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Depois disso, Zeor deixou de chamar o deus de «a Mão Fechada» e passou a chamá-lo de «o Olho Escuro». Depois disso, Viak deixou de chamar o deus de «a Mão Fechada» e passou a chamá-lo de «o Que Apaga o Sol».
 
-### Ano 48
-
-Toru deu à luz gêmeos, Kik e Liviar. Uns viram bênção; outros, mau sinal.
-
-### Ano 49
-
-Satora, que fundou Viak e o guiava, morreu dormindo, aos 70 anos. Foi quem levou os seus a fundar Viak.
+*Os anos 48 a 49 passaram em paz.*
 
 ### Ano 50
 
-Linem tinha rezado: «Terra Brava, dá-nos o que comer.» A comida voltou, e Viak deu graças à Terra Brava. O deus nada fez: o crédito era de graça. Nos anos 41 a 50 houve quatro fomes e nove preces que pareceram atendidas; nasceram 40 crianças e morreram dezesseis pessoas. No fim do ano 50, 95 pessoas viviam no mundo: Zeor (16) e Viak (79).
+Morreu Sau, que guiava Viak, aos 52 anos. No inverno, Mik, o engenhoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. Nos anos 41 a 50 houve seis secas, três fomes, dezessete preces que pareceram atendidas e três preces sem resposta; nasceram 36 crianças e morreram 55 pessoas. No fim do ano 50, 60 pessoas viviam no mundo: Zeor (20) e Viak (40).
 
-### Ano 51
-
-Ninguém lembrava mais a razão, e Zeor abandonou a festa da chuva. No verão, o deus calou justo quando Viak mais dependia dele. Depois daquela fome, Viak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
-
-### Ano 52
-
-Foram 20 dias de fome no inverno em Viak, com quatro mortos. A floresta passou a ser a floresta da fome: Floresta da Fome. Uma tosse que não passava matou duas pessoas em Viak.
+*Do ano 51 ao 52, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 53
 
-A fome no inverno durou 14 dias em Viak e levou uma vida. Saut rezou por Satoru até a voz acabar. Satoru morreu mesmo assim, e Saut nunca mais rezou. A doença entrou em Viak e matou seis pessoas. Depois da febre, Viak passou a queimar os seus mortos, para que a doença não voltasse.
+Viak passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Em Viak, Sakiu pediu: «Que Apaga o Sol, não nos deixes secar.» Quando a chuva voltou, Viak agradeceu ao Que Apaga o Sol. O deus nada fez: o crédito era de graça.
 
-*O ano 54 foi calmo.*
+### Ano 54
+
+No outono do ano 54, Sakiu deu à luz gêmeos, Vikik e Saberik. Uns viram bênção; outros, mau sinal. Em Viak, Sakiu pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Quando a chuva voltou, Viak agradeceu ao Que Apaga o Sol. O deus nada fez: o crédito era de graça. Kilou, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita.
 
 ### Ano 55
 
-Depois da seca, Viak jurou nunca desperdiçar água. Os de Viak caíram sobre Zeor no lago. Viak venceu e levou a comida guardada. Raik, Zezeik e Bersau morreram na luta. Foi a primeira vez que gente matou gente no mundo. Para Viak, o lago virou Lago da Vitória. Viak e Zeor, cansados de enterrar os seus, fizeram as pazes no lago. Viak passou fome por causa da seca por 4 dias, e quatro pessoas morreram.
+A seca voltou, como no ano 38: 18 dias sem chuva, até que o céu se abriu.
 
 ### Ano 56
 
-O deus calou justo quando Zeor mais dependia dele. Viak conheceu a maior fome da sua história no inverno. Em 8 dias, morreram 12. Muitas cabanas ficaram vazias. Linem tinha rezado: «Terra Brava, dá-nos o que comer.» A comida voltou, e Viak deu graças à Terra Brava. A crônica sabe que foi acaso.
+No inverno do ano 56, a rixa entre Vitorik e Sakiu rachou Viak. Vitorik partiu com os seus, vinte pessoas, e fundou Viur na praia. Lilinu não resistiu à fome.
 
-*Entre os anos 57 e 58, nada mudou o rumo do mundo.*
+### Ano 57
+
+Em Viur, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 9, só a crônica guarda. Em Viur nasceu a primeira criança: Losaim, filho de Tora e Liut. Foram 11 dias de fome no inverno em Viur, com dois mortos. Vitorik tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Viur viu nisso obra do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? Desde então, Viur chama a praia de Praia da Fome.
+
+### Ano 58
+
+No verão do ano 58, Zeor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. De novo a chuva sumiu, como no ano 55. Foram 24 dias de seca.
 
 ### Ano 59
 
-Linem tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Viak viu nisso obra da Terra Brava. O deus nada fez: o crédito era de graça. Torviut implorou pelo filho. Salim morreu, e daquele dia em diante Torviut cuspia no chão quando falavam da Terra Brava.
+Toru morreu de repente, aos 42 anos. Raya passou a falar pelo Que Apaga o Sol em Viur. Era a primeira a rezar e a última a duvidar. Viak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Viak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
 
 ### Ano 60
 
-Nos anos 51 a 60 houve onze fomes, dezenove preces que pareceram atendidas e sete preces sem resposta; nasceram 62 crianças e morreram 60 pessoas. No fim do ano 60, 97 pessoas viviam no mundo: Zeor (24) e Viak (73).
+Raya, a curiosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Nos anos 51 a 60 houve cinco secas, três fomes e treze preces que pareceram atendidas; nasceram 66 crianças e morreram quinze pessoas. No fim do ano 60, 112 pessoas viviam no mundo: Zeor (35), Viak (58) e Viur (19).
 
 ### Ano 61
 
-Morreu Saut, aos 65 anos. Desde a morte de Satoru, nunca mais tinha rezado.
+No inverno, Salora, a engenhosa, inventou marcas que guardavam palavras.
 
 ### Ano 62
 
-Apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu. Depois disso, Zeor deixou de chamar o deus de «o Que Sacode» e passou a chamá-la de «a Estrela de Cauda». Viak passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Os sábios de Viak passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.
+Linik, de Viak, tomou por esposa Viviu, de Viur, e os dois povos passaram a se visitar. No inverno, a rixa entre Miberim e Sakiu rachou Viak. Miberim partiu com os seus, dez pessoas, e fundou Berem no morro.
 
 ### Ano 63
 
-Na primavera, Enviya deu à luz gêmeos, Vira e Lintorem. Uns viram bênção; outros, mau sinal. Viut, o engenhoso, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. No verão, Linsar rezou por Limiut até a voz acabar. Limiut morreu mesmo assim, e Linsar nunca mais rezou. Sau, a desconfiada, não resistiu à fome. Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Berviya leu e aprendeu: o saber não se perdeu.
+Na primavera do ano 63, nasceu Enim, o primeiro de Berem.
 
-### Ano 64
+*O ano 64 foi calmo.*
 
-Viak atacou Zeor no lago. Viak venceu e levou a comida guardada. Na luta morreram Bem, Miem e Beik. Veio a pior fome que o mundo tinha visto: 28 dias por causa da seca em Viak, e 44 mortos. As crianças foram as primeiras. No inverno, Kiar, o devoto, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
+### Ano 65
 
-*Os anos 65 a 66 passaram em paz.*
+Na primavera do ano 65, em Viur, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Em Viur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Viur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Tormiar, de Berem, tomou por esposa Torya, de Zeor, e os dois povos passaram a se visitar.
+
+### Ano 66
+
+Na primavera, com Vitorik à frente, a nova geração de Viur abandonou o costume de queimar os mortos, costume herdado dos avós. No verão, um raio caiu na praia durante a tempestade e matou Loberar. Ninguém em Viur teve dúvida: era castigo. Para Viur, o deus já não era «o Que Apaga o Sol»: passou a ser «a Voz do Céu». Viur passou a acreditar que a Voz do Céu castiga quem duvida, e que Loberar tinha duvidado. Desde a morte de Loberar, ninguém em Viur desce à praia em dia de tempestade.
 
 ### Ano 67
 
-No outono do ano 67, Vim, o devoto, descobriu como empilhar pedras cortadas sem que caíssem.
+Sakiu tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Viak deu graças ao Que Apaga o Sol. Foi só o tempo, mas quem iria dizer? Os escribas de Viak registraram o milagre. No verão, em Berem, Livik tomou para si o cuidado das preces ao Que Apaga o Sol. No outono, Vivik, o desconfiado, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou.
 
 ### Ano 68
 
-No inverno do ano 68, a rixa entre Linem e Berut rachou Viak. Linem partiu com os seus, dezesseis pessoas, e fundou Torum na praia. Em Viak, já ninguém sabia trabalhar o metal. O que fora feito começou a ruir.
+Na primavera do ano 68, Raut, que falava pelo Olho Escuro em Zeor, morreu dormindo, aos 60 anos. Com Miberim à frente, a nova geração de Berem abandonou a festa da chuva, costume herdado dos avós. Em Viak, Sakiu pediu: «Que Apaga o Sol, dá-nos o que comer.» A comida voltou, e Viak deu graças ao Que Apaga o Sol. O deus nada fez: o crédito era de graça. Os escribas de Viak registraram o milagre.
 
 ### Ano 69
 
-Em Torum, Torar tomou para si o cuidado das preces à Terra Brava. Nasceu Zelinu, a primeira de Torum. Kimiya, a desconfiada, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+Loselik morreu com 3 anos, de uma febre que ninguém entendeu.
 
 ### Ano 70
 
-Na primavera do ano 70, Zeik, que guiava Zeor, morreu de repente, aos 35 anos. Nos anos 61 a 70 houve quatro fomes, dez preces que pareceram atendidas e três preces sem resposta; nasceram 68 crianças e morreram 60 pessoas. No fim do ano 70, 106 pessoas viviam no mundo: Zeor (45), Viak (42) e Torum (19).
+Foram 10 dias de fome no inverno em Viak, com três mortos. A doença entrou em Viak e matou três pessoas. Nos anos 61 a 70 houve quatro fomes e catorze preces que pareceram atendidas; nasceram 101 crianças e morreram 26 pessoas. No fim do ano 70, 187 pessoas viviam no mundo: Zeor (64), Viak (83), Viur (21) e Berem (19).
 
-*O ano 71 foi calmo.*
+### Ano 71
+
+Sakiu, que guiava Viak, morreu dormindo, aos 58 anos. Desde a morte de Viliu, nunca mais tinha rezado. Depois da seca, Viak jurou nunca desperdiçar água. No inverno, em Zeor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Zeor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Os de Viak caíram sobre Viur na praia. Viur foi derrotado e perdeu o que tinha guardado. Raya e Vitorik morreram na luta. Foi a primeira vez que gente matou gente no mundo.
 
 ### Ano 72
 
-Na primavera, morreu Linem, que fundou Torum e o guiava, aos 62 anos. Tinha fundado Torum.
+Na primavera do ano 72, Mitorim anunciou que o Que Apaga o Sol proibia qualquer trato com Viur. O deus nunca disse isso, mas Viak obedeceu. Viak passou fome por causa da seca por 19 dias, e 21 pessoas morreram. Numa tempestade sobre o morro, um raio matou Berlim. Os seus nunca esqueceram. Depois disso, Berem deixou de chamar o deus de «o Que Apaga o Sol» e passou a chamá-lo de «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Berem sai de casa. Lembram de Berlim.
 
-*O ano 73 passou sem nada que a crônica precise guardar.*
+### Ano 73
+
+Viak passou fome por causa da seca por 16 dias, e seis pessoas morreram. No verão, Milina, a curiosa, desenhou o primeiro canal e a primeira roda d'água. A lembrança da fome pesou. No outono, com canais e moinhos, Viak já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. O inverno foi de gelo: duas pessoas morreram de frio. Vitoru deu à luz gêmeos, Viraim e Loik. Uns viram bênção; outros, mau sinal.
 
 ### Ano 74
 
-Kiviar, de Torum, tomou por esposa Enviya, de Zeor, e os dois povos passaram a se visitar.
+Começou a Guerra da Fome: Viak, com fome, foi buscar à força a comida de Viur. A Guerra da Fome seguiu: Viak contra Viur, na praia em nome do Que Apaga o Sol. Viur foi derrotado e perdeu o que tinha guardado. Loberim, Tora e Linkiu morreram na luta. No verão, a Guerra da Fome seguiu: Viur contra Viak, na floresta em nome da Voz do Céu. Viak resistiu, e Viur voltou de mãos vazias. Kiar, Vitorar e Viloik morreram na luta. Mitorut anunciou que a Voz do Céu proibia qualquer trato com Viak. O deus nunca disse isso, mas Viur obedeceu. Começou a Guerra da Fome do Morro: Viak, com fome, foi buscar à força a comida de Berem.
 
 ### Ano 75
 
-Na primavera, Zera, que guiava Viak, morreu dormindo, aos 50 anos. Em Viak, Mitorut pediu: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Viak agradeceu à Terra Brava. O deus não tinha feito nada. Nas tabuletas de Viak, ficou escrito que foi a Terra Brava.
+Na primavera do ano 75, na Guerra da Fome do Morro, Viak atacou Berem no morro em nome do Que Apaga o Sol. Berem foi derrotado e perdeu o que tinha guardado. Tormiar, Torya e Mim morreram na luta. Depois de tantos mortos, Viak e Berem se encontraram no morro e juraram paz. A Guerra da Fome do Morro acabou em trégua, depois de quatro anos, três batalhas e seis mortos. Viak saiu dela mais forte. No inverno, Viur fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Depois de quatro anos, cinco batalhas e doze mortos, a Guerra da Fome terminou em paz. Viak saiu dela mais forte.
 
 ### Ano 76
 
-Loberya tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças à Estrela de Cauda. O deus não tinha feito nada.
+Em Berem, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 43, só a crônica guarda. Zezeut tinha rezado: «Senhor do Trovão, dá-nos o que comer.» A fome passou, e Berem viu nisso obra do Senhor do Trovão. A crônica sabe que foi acaso. A seca voltou, como no ano 58: 22 dias sem chuva, até que o céu se abriu.
 
-*O ano 77 foi calmo.*
+### Ano 77
+
+Na primavera do ano 77, Mitorim, que falava pelo Que Apaga o Sol em Viak, morreu dormindo, aos 62 anos. Foi quem proibiu, em nome do deus, o trato com Viur. Zeor passou fome no inverno por 11 dias, e catorze pessoas morreram. O lago passou a ser o lago da fome: Lago da Fome. No verão, Zezeut anunciou que o Senhor do Trovão proibia qualquer trato com Viur. O deus nunca disse isso, mas Berem obedeceu. Berem atacou Viur na praia em nome do Senhor do Trovão. Viur foi derrotado e perdeu o que tinha guardado. Losau, Losaim e Zezeut morreram na luta.
 
 ### Ano 78
 
-No outono do ano 78, Kimiya, a desconfiada, deu à luz e não sobreviveu ao parto.
+Zeor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Olho Escuro. Começou a Guerra Santa: em nome do Senhor do Trovão, Berem pegou em lanças contra Viur. Na Guerra Santa, Berem atacou Viur na praia em nome do Senhor do Trovão. Viur expulsou os atacantes. Na luta morreram Berlinu, Kiut e Miya. Depois de tantos mortos, Berem e Viur se encontraram na praia e juraram paz. Depois de um ano, duas batalhas e seis mortos, a Guerra Santa terminou em paz.
 
 ### Ano 79
 
-Na primavera, Torar, o rancoroso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Viak perdeu o saber. Kiya deu à luz gêmeos, Ralinut e Raut. Uns viram bênção; outros, mau sinal. A seca voltou, como no ano 36: 23 dias sem chuva, até que o céu se abriu. Em Torum, Kiviar pediu: «Terra Brava, não nos deixes secar.» Quando a chuva voltou, Torum agradeceu à Terra Brava. O deus nada fez: o crédito era de graça.
+Na primavera do ano 79, em Viak, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Sem lugar e sem comida, Lomiut e os seus atravessaram a borda do mundo. Ninguém soube deles. No verão, em Berem, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Berem desapareceu: morreu o último dos seus. Zeor encontrou as ruínas de Berem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
 ### Ano 80
 
-Viak já não cabia na floresta. Linik, o desconfiado, levou catorze pessoas para o morro e fundou Enak. Depois daquela fome, Zeor passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Foram 26 dias de fome por causa da seca em Viak, com 21 mortos. No outono, numa tempestade sobre o morro, um raio matou Kira. Os seus nunca esqueceram. Para Enak, o deus já não era «a Terra Brava»: passou a ser «a Voz do Céu». Nos anos 71 a 80 houve duas secas, três fomes e doze preces que pareceram atendidas; nasceram 67 crianças e morreram 37 pessoas. No fim do ano 80, 137 pessoas viviam no mundo: Zeor (70), Viak (26), Torum (28) e Enak (13).
+Em Zeor, Bem pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. Nas tabuletas de Zeor, ficou escrito que foi o Olho Escuro. Linik rezou por Torik até a voz acabar. Torik morreu mesmo assim, e Linik nunca mais rezou. A seca voltou, como no ano 76: 25 dias sem chuva, até que o céu se abriu. Bem, que guiava Zeor, não resistiu à fome. Vivik, o desconfiado, morreu de fome. Nos anos 71 a 80 houve quatro secas, treze fomes, onze batalhas, 40 preces que pareceram atendidas e vinte preces sem resposta; nasceram 132 crianças e morreram 151 pessoas. No fim do ano 80, 165 pessoas viviam no mundo: Zeor (102), Viak (53) e Viur (10).
 
 ### Ano 81
 
-Na primavera do ano 81, em Torum, os jovens deixaram de lado o costume de guardar comida. Era coisa de outro povo, diziam. Nasceu Mienut, o primeiro de Enak. No outono, tantas preces atendidas fizeram Torum confiar no céu mais do que nas próprias mãos. Deixaram de poupar água. Em Enak, Sakiya pediu: «Voz do Céu, não nos deixes secar.» Quando a chuva voltou, Enak agradeceu à Voz do Céu. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 81, Mik, o engenhoso, morreu de velhice aos 53 anos. Foram 11 dias de fome por causa da seca em Zeor, com dois mortos. A fome por causa da seca durou 11 dias em Viak e levou 35 vidas. No outono, apareceu no céu uma luz com rabo, que ficou 7 noites e sumiu. A doença entrou em Zeor e matou duas pessoas.
 
-### Ano 82
-
-Loberya, que falava pela Estrela de Cauda em Zeor, deu à luz e não sobreviveu ao parto.
-
-### Ano 83
-
-Para Viak, o deus já não era «a Terra Brava»: passou a ser «o Que Risca o Céu». Torum ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Sem lugar e sem comida, Lintoru e os seus atravessaram a borda do mundo. Ninguém soube deles. Torar anunciou que a Estrela de Cauda proibia qualquer trato com Viak. O deus nunca disse isso, mas Torum obedeceu. Torum atacou Viak na floresta em nome da Estrela de Cauda. Viak expulsou os atacantes. Na luta morreu Kilou.
+*Entre os anos 82 e 83, nada mudou o rumo do mundo.*
 
 ### Ano 84
 
-Na primavera, começou a Guerra Santa: em nome da Estrela de Cauda, Torum pegou em lanças contra Enak. Foram 23 dias de fome por causa da seca em Zeor, com 21 mortos. Depois daquela fome, Torum passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Uma febre correu Zeor e levou nove vidas. Sakiya, a generosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
+Na primavera do ano 84, Raik, que guiava Zeor, morreu dormindo, aos 61 anos. No verão, Vimiu deu à luz gêmeos, Mim e Namiut. Uns viram bênção; outros, mau sinal.
 
 ### Ano 85
 
-Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Os de Zeor caíram sobre Enak no morro em nome da Estrela de Cauda. Enak foi derrotado e perdeu o que tinha guardado. Kiu e Saviu morreram na luta. Enak não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Começou a Guerra Santa do Morro: em nome da Estrela de Cauda, Zeor pegou em lanças contra Enak. No inverno, começou a Guerra Santa da Floresta: em nome da Estrela de Cauda, Torum pegou em lanças contra Viak.
+Em Zeor, Salora pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Olho Escuro. Foi só o tempo, mas quem iria dizer? Nas tabuletas de Zeor, ficou escrito que foi o Olho Escuro. Em Viak, quem vinha de fora era recebido com comida e lugar perto do fogo. No verão, Linlira deu à luz gêmeos, Torsaut e Viar. Uns viram bênção; outros, mau sinal.
 
 ### Ano 86
 
-Na primavera do ano 86, a Guerra Santa da Floresta seguiu: Torum contra Viak, na floresta em nome da Estrela de Cauda. Viak resistiu, e Torum voltou de mãos vazias. Na luta morreram Visau, Kilinu e Berviar. No inverno, Kiviar, o devoto, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
+No inverno, Liut implorou pelo filho. Torsaut morreu, e daquele dia em diante Liut cuspia no chão quando falavam do Que Apaga o Sol.
 
 ### Ano 87
 
-Loloya, que falava pela Voz do Céu em Enak, morreu de repente, aos 43 anos. A Guerra Santa esfriou sem acordo nem vencedor: três anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava. Enak saiu dela mais forte. No verão, depois de tantos mortos, Zeor e Viak se encontraram na floresta e juraram paz. A terra tremeu. Caíram treze cabanas. Beik e Zezeim morreram sob os escombros. No inverno, começou a Segunda Guerra Santa: em nome da Estrela de Cauda, Torum pegou em lanças contra Enak.
+Na primavera, em Viur, os jovens deixaram de lado o costume de guardar comida. Era coisa de outro povo, diziam. Viak passou fome no inverno por 7 dias, e cinco pessoas morreram. A rixa entre Liut e Torviu rachou Viak. Liut partiu com os seus, dez pessoas, e fundou Lilor no morro. Diante das ruínas de Berem, Lilor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 88
 
-Morreu Mitorut, que guiava Viak, aos 67 anos. No outono, em Enak, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. A Guerra Santa do Morro esfriou sem acordo nem vencedor: três anos, duas batalhas e três mortos, e ninguém sabia mais por que lutava. Torum via Viak ser atendido e concluiu que a Estrela de Cauda tinha escolhido os outros. Mim foi expulso e foi viver entre os de Viak.
+Na primavera do ano 88, de novo o sol se apagou no meio do dia. No verão, o deus calou justo quando Zeor mais dependia dele. A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe. Houve luta na praia: Zeor atacou Viur. Zeor venceu e levou a comida guardada. Na luta morreram Vinaik e Ralinim. Desde então, Zeor chama a praia de Praia da Vitória.
 
 ### Ano 89
 
-Loya, que falava pela Terra Brava em Zeor, morreu de repente, aos 42 anos. Foi quem proibiu, em nome do deus, o trato com Viak. Mikira, a devota, morreu dormindo, aos 62 anos. A guerra entre Zeor e Enak continuou: Zeor voltou a atacar no morro em nome da Terra Brava. Enak foi derrotado e perdeu o que tinha guardado. Na luta morreu Saviya. Depois de tantos mortos, Zeor e Enak se encontraram no morro e juraram paz. A Guerra Santa da Floresta esfriou sem acordo nem vencedor: seis anos, três batalhas e seis mortos, e ninguém sabia mais por que lutava. Viak saiu dela mais forte.
+Uma tosse que não passava matou seis pessoas em Zeor. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse. O dia em que a chuva voltou virou festa em Lilor: todo ano, celebram a chuva que o Que Apaga o Sol mandou. Começou a Guerra da Praia: o rancor entre Zeor e Viur virou guerra. A Guerra da Praia seguiu: Zeor contra Viur, na praia. Viur foi derrotado e perdeu o que tinha guardado. Linut e Torsa morreram na luta.
 
 ### Ano 90
 
-Kiar, o devoto, descobriu como empilhar pedras cortadas sem que caíssem. Na Segunda Guerra Santa, Torum atacou Enak no morro em nome da Estrela de Cauda. Enak resistiu, e Torum voltou de mãos vazias. Kitorya e Linliar morreram na luta. No outono, Torum parou de rezar. Diziam que a Estrela de Cauda nunca tinha existido. Enak parou de rezar. Diziam que a Voz do Céu nunca tinha existido. Começou a Terceira Guerra Santa: em nome da Estrela de Cauda, Torum pegou em lanças contra Viak. Nos anos 81 a 90 houve duas secas, seis fomes, dezenove batalhas, 28 preces que pareceram atendidas e 31 preces sem resposta; nasceram 102 crianças e morreram 95 pessoas. No fim do ano 90, 143 pessoas viviam no mundo: Zeor (71), Viak (44), Torum (8) e Enak (20).
+Na primavera do ano 90, Lozea partiu com cinco pessoas para além da borda do mundo. Nunca voltaram. A Guerra da Praia seguiu: Viur contra Zeor, no lago. Zeor foi derrotado e perdeu o que tinha guardado. Na luta morreram Lilinu, Beut e Linela. Viur e Zeor, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra da Praia acabou em trégua, depois de dois anos, três batalhas e sete mortos. A fome no inverno durou 10 dias em Zeor e levou cinco vidas. Nos anos 81 a 90 houve doze fomes, quatro batalhas, 25 preces que pareceram atendidas e seis preces sem resposta; nasceram 148 crianças e morreram 110 pessoas. No fim do ano 90, 200 pessoas viviam no mundo: Zeor (105), Viak (70), Viur (16) e Lilor (9).
 
 ### Ano 91
 
-No verão, a tempestade trouxe raios para a praia. Um deles acertou Litoru. Ninguém em Torum teve dúvida: era castigo. Para Torum, Litoru foi castigada. Desde então, quem duvida da Estrela de Cauda duvida em silêncio. Desde a morte de Litoru, ninguém em Torum desce à praia em dia de tempestade.
+Linsar, que guiava Viak, morreu de velhice aos 62 anos. Liut tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome.» A fome passou, e Lilor viu nisso obra do Que Apaga o Sol. A crônica sabe que foi acaso. No inverno, Liut, que fundou Lilor e o guiava, não resistiu à fome. Desde a morte de Torsaut, nunca mais tinha rezado.
 
 ### Ano 92
 
-Linik, que fundou Enak e o guiava, morreu de velhice aos 47 anos. Foi quem levou os seus a fundar Enak. Kiar tinha rezado: «Que Risca o Céu, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Viak duvidou de que o Que Risca o Céu tinha ouvido. O deus nada fez: o crédito era de graça. Nas tabuletas de Viak, ficou escrito que foi o Que Risca o Céu. A Terceira Guerra Santa seguiu: Torum contra Viak, na floresta em nome da Estrela de Cauda. Viak resistiu, e Torum voltou de mãos vazias. Toru e Mik morreram na luta.
+Foram 11 dias de fome no inverno em Lilor, com um morto. Kimiela partiu com quatro pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Os de Lilor caíram sobre Viur na praia. Viur resistiu, e Lilor voltou de mãos vazias. Na luta morreu Linlira.
 
 ### Ano 93
 
-Morreu Kiviar, o devoto, aos 60 anos. Os últimos de Torum, Torar, Zeu e Lior, juntaram-se a Zeor. Torum deixou de existir. A Segunda Guerra Santa acabou porque um dos lados deixou de existir: seis anos, sete batalhas e oito mortos. A Terceira Guerra Santa acabou porque um dos lados deixou de existir: três anos, seis batalhas e sete mortos. Os que já não acreditavam, com Miar à frente, deixaram Viak e fundaram Linur na praia. Lá ninguém reza.
+Na primavera do ano 93, Bersara, que guiava Lilor, morreu de repente, aos 41 anos. Os últimos de Lilor, Lilou, Linkim e Berlinu, juntaram-se a Zeor. Lilor deixou de existir. Diante das ruínas de Lilor, Zeor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Zeor passou fome no inverno por 23 dias, e sete pessoas morreram. Raem implorou pela filha. Sa morreu, e daquele dia em diante Raem cuspia no chão quando falavam do Olho Escuro.
 
 ### Ano 94
 
-Na primavera do ano 94, morreu Berut, que guiava Viak, aos 60 anos. Morreu Sakiya, a generosa, aos 53 anos. Na guerra, tinha tirado três vidas.
+Na primavera do ano 94, Milina, que falava pelo Olho Escuro em Zeor, morreu de frio. Zeor passou fome no inverno por 10 dias, e quatro pessoas morreram. Salora tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Zeor viu nisso obra do Olho Escuro. O deus nada fez: o crédito era de graça. Os escribas de Zeor registraram o milagre. Milina rezou por Lintorya até a voz acabar. Lintorya morreu mesmo assim, e Milina nunca mais rezou. A doença entrou em Zeor e matou cinco pessoas.
 
-### Ano 95
-
-Na primavera do ano 95, com Torsar à frente, a nova geração de Viak abandonou a festa da chuva, costume herdado dos avós. Em Enak, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 51, só a crônica guarda. Torbera, a engenhosa, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Depois da seca, Zeor jurou nunca desperdiçar água. Torar, o rancoroso, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Viak.
+*O ano 95 passou sem nada que a crônica precise guardar.*
 
 ### Ano 96
 
-Na primavera, Zeor atacou Enak no morro em nome da Terra Brava. Enak resistiu, e Zeor voltou de mãos vazias. Na luta morreram Bem, Viviya e Lisara. Linur não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Zeor conheceu a maior fome da sua história por causa da seca. Em 26 dias, morreram 45. Muitas cabanas ficaram vazias. No outono, no meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Para Viak, o deus já não era «o Que Risca o Céu»: passou a ser «o Olho Escuro».
+Morreu Salora, que falava pelo Olho Escuro em Zeor, aos 55 anos. Lout anunciou que o Olho Escuro proibia qualquer trato com Viur. O deus nunca disse isso, mas Zeor obedeceu. De novo Zeor contra Viur, como no ano 90 em nome do Olho Escuro. Viur foi derrotado e perdeu o que tinha guardado. Nau morreu na luta. No inverno, Berlout, o corajoso, cansou de dividir pouca comida. Partiu com 28 pessoas para o morro e ali fundou Linum. Para Linum, as pedras de Berem só podiam ter sido postas por gigantes.
 
 ### Ano 97
 
-Na primavera do ano 97, em Linur, os jovens deixaram de lado o costume de guardar comida. Era coisa de outro povo, diziam.
+Na primavera do ano 97, começou a Guerra Santa da Praia: em nome do Olho Escuro, Zeor pegou em lanças contra Viur. Linum passou fome no inverno por 4 dias, e sete pessoas morreram. O morro passou a ser o morro da fome: Morro da Fome. Litorim passou a falar pelo Que Apaga o Sol em Linum. Era o primeiro a rezar e o último a duvidar. O dia em que a chuva voltou virou festa em Linum: todo ano, celebram a chuva que o Que Apaga o Sol mandou.
 
 ### Ano 98
 
-De novo a chuva sumiu, como no ano 79. Foram 19 dias de seca. Em Viak, Kiar pediu: «Manda água, Olho Escuro, que as crianças têm sede.» Quando a chuva voltou, Viak agradeceu ao Olho Escuro. Foi só o tempo, mas quem iria dizer? Os escribas de Viak registraram o milagre.
+Apareceu no céu uma luz com rabo, que ficou 9 noites e sumiu. Foram 11 dias de fome no inverno em Zeor, com três mortos. Berlout, de Linum, tomou por esposa Kiela, de Viur, e os dois povos passaram a se visitar. A fome ensinou: desde então, Viur estoca comida e não come tudo o que colhe. A doença entrou em Zeor e matou sete pessoas.
 
-*O ano 99 passou sem nada que a crônica precise guardar.*
+### Ano 99
+
+Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Viur perdeu o saber. No outono, nasceu Kora, filha de Berlout, que guiava Linum. Apareceu no céu uma luz com rabo, que ficou 6 noites e sumiu.
 
 ### Ano 100
 
-Houve luta na floresta: Zeor atacou Viak em nome da Terra Brava. Zeor venceu e levou a comida guardada. Na luta morreu Vilora. No outono, em Linur nasceu a primeira criança: Ju, filha de Likiya e Bermiut. Nas ruínas de Torum, Bermiut achou o que eles sabiam: aprendeu a cortar pedra. Nos anos 91 a 100 houve três secas, duas fomes, sete batalhas, quinze preces que pareceram atendidas e oito preces sem resposta; nasceram 67 crianças e morreram 81 pessoas. No fim do ano 100, 129 pessoas viviam no mundo: Zeor (68), Viak (30), Enak (18) e Linur (13).
+Litorim, que falava pelo Que Apaga o Sol em Linum, morreu dormindo, aos 51 anos. Morreu o último que tinha visto o ano 66. Em Viur, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. No outono, Namiut, o generoso, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A guerra apressou a ideia. Em Linum, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Linum, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto. Nos anos 91 a 100 houve dezenove fomes, cinco batalhas, 40 preces que pareceram atendidas e quinze preces sem resposta; nasceram 134 crianças e morreram 122 pessoas. No fim do ano 100, 207 pessoas viviam no mundo: Zeor (96), Viak (76), Viur (12) e Linum (23).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 68 pessoas, em casas de pedra; é o povo mais antigo; chama o deus de «a Terra Brava»; costumes: não sai de casa em dia de tempestade (desde o ano 35); treina os jovens com lanças (desde o ano 55); guarda tanta comida para o inverno (desde o ano 80); queima os mortos (desde o ano 84); não desperdiça uma gota d'água (desde o ano 95).
-- **Viak** vive na floresta, com 30 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 10; chama o deus de «o Olho Escuro»; costumes: guarda tanta comida para o inverno (desde o ano 51); queima os mortos (desde o ano 53); não desperdiça uma gota d'água (desde o ano 55); faz a festa da chuva (desde o ano 95).
-- **Enak** vive no morro, com 18 pessoas, em casas de pedra; nasceu de uma migração em Viak no ano 80; não reza a ninguém; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 55); não sai de casa em dia de tempestade (desde o ano 80); treina os jovens com lanças (desde o ano 85); deixa oferendas no começo de cada estação (desde o ano 88).
-- **Linur** vive na praia, com 13 pessoas, e planta roças; nasceu de um cisma em Viak no ano 93; não reza a ninguém; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (desde o ano 53); não desperdiça uma gota d'água (desde o ano 55); treina os jovens com lanças (desde o ano 96).
+- **Zeor** vive no lago, com 96 pessoas, com canais e moinhos; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 88); queima os mortos (desde o ano 89); treina os jovens com lanças (desde o ano 90).
+- **Viak** vive na floresta, com 76 pessoas, com canais e moinhos; nasceu de uma migração em Zeor no ano 10; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (desde o ano 43); queima os mortos (desde o ano 47); não desperdiça uma gota d'água (desde o ano 71).
+- **Viur** vive na praia, com 12 pessoas, em casas de pedra; nasceu de uma briga em Viak no ano 56; chama o deus de «a Voz do Céu»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 98).
+- **Linum** vive no morro, com 23 pessoas, e escreve; nasceu de uma migração em Viak no ano 96; chama o deus de «o Que Apaga o Sol»; costumes: guarda tanta comida para o inverno (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 71); faz a festa da chuva (desde o ano 97).
 
-Povos que deixaram de existir: Torum.
+Povos que deixaram de existir: Berem e Lilor.
 
-Lugares com nome: Praia da Fome (praia, para Torum), Praia da Vitória (praia, para Zeor), Praia do Luto (praia, para Linur), Lago do Raio (lago, para Zeor), Lago da Vitória (lago, para Viak), Floresta da Fome (floresta, para Viak), Floresta do Luto (floresta, para Torum), Floresta da Trégua (floresta, para Zeor), Morro do Raio (morro, para Enak), Morro da Vitória (morro, para Zeor) e Morro do Luto (morro, para Torum).
+Lugares com nome: Praia da Fome (praia, para Viur), Praia da Vitória (praia, para Viak), Praia da Vitória (praia, para Berem), Praia da Vitória (praia, para Zeor), Lago da Fome (lago, para Zeor), Lago da Vitória (lago, para Viur), Floresta da Fome (floresta, para Viak), Floresta do Luto (floresta, para Viur), Morro do Raio (morro, para Berem), Morro da Vitória (morro, para Viak) e Morro da Fome (morro, para Linum).
 
-Em 100 anos nasceram 490 pessoas e morreram 375.
+Em 100 anos nasceram 711 pessoas e morreram 507.

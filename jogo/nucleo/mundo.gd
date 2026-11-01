@@ -1538,6 +1538,7 @@ func _progresso_tecnico() -> void:
 		if g.estagio < 2:
 			continue
 		_conferir_regressao(g)
+		_manter_saberes(g)
 		if g.estagio >= ESTAGIO_MAX:
 			continue
 		var k: int = g.estagio + 1
@@ -1580,6 +1581,24 @@ func _progresso_tecnico() -> void:
 			if k == 3 and g.tem_crenca and not g.ceticos and g.poder == "lider" and g.sacerdote != -1 and chance(0.5):
 				g.poder = "sacerdotes"
 				registrar("cultura", "social", 6, g.zona, g.id, [g.sacerdote], {"dimensao": "poder", "valor": "sacerdotes"})
+
+
+## Os mestres de um saber já alcançado continuam formando aprendizes enquanto forem poucos.
+func _manter_saberes(g: Grupo) -> void:
+	var a := ano()
+	for k in range(3, g.estagio + 1):
+		var saber: String = SABERES[k]
+		var mestres: Array = []
+		var aprendizes: Array = []
+		for p in _membros(g):
+			if p.saberes.has(saber):
+				mestres.append(p)
+			elif p.idade(a) >= 14 and p.idade(a) <= 40:
+				aprendizes.append(p)
+		if mestres.is_empty() or mestres.size() >= 6 or aprendizes.is_empty():
+			continue
+		if chance(0.06 * mestres.size() * (2.0 if g.estagio >= 5 else 1.0)):
+			escolher(aprendizes).saberes.append(saber)
 
 
 func _tentar_descoberta(g: Grupo, k: int) -> void:
