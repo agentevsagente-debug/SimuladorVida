@@ -190,10 +190,12 @@ func _pensamento(f: Dictionary) -> Array:
 	_povo(cands)
 	_tracos(cands)
 	_no_que_faz(cands, f)
-	if cands.is_empty():
-		return ["", _humor_calmo()]
 	cands.sort_custom(func(x, y): return x[0] > y[0])
 	var bloco: int = m.passo / BLOCO
+	if f.get("acao", "") == "dormir":
+		return _dormindo(cands, bloco)
+	if cands.is_empty():
+		return ["", _humor_calmo()]
 	var k := 1 if cands[0][0] >= 9 else mini(3, cands.size())
 	var escolha: Array = cands[(bloco + p.id) % k]
 	var frases: Array = escolha[1].filter(func(s): return s.length() <= PENSAMENTO_MAX)
@@ -201,15 +203,31 @@ func _pensamento(f: Dictionary) -> Array:
 		frases = [escolha[1][0].substr(0, PENSAMENTO_MAX)]
 	var frase: String = frases[(bloco / k + p.id * 7) % frases.size()]
 	var humor: String = escolha[2] if not escolha[2].is_empty() else _humor_calmo()
-	if f.get("acao", "") == "dormir":
-		# Dormindo, sonha com o que mais pesa.
-		frase = _sonho(cands[0])
 	return [G.maiuscula(frase), humor]
 
 
-func _sonho(c: Array) -> String:
-	var s: String = c[3] if c.size() > 3 else ""
-	return s
+## Dormindo: o humor é "dormindo", ou o sono mexido quando há motivo (doença, fome, luto e
+## aflição: "inquieto no sono"; frio, susto e medo: "sono leve"). O sonho vem da fonte mais
+## forte que tem sonho: sempre, se ela pesa (força 5 ou mais); de vez em quando, se é fraca
+## (um bloco de 2 horas em cada 3). Sem sonho, o pensamento fica vazio.
+func _dormindo(cands: Array, bloco: int) -> Array:
+	var humor := "dormindo"
+	for c in cands:
+		if c[0] < 4:
+			break
+		if c[2] in ["doente", "de luto", "faminto", "faminta", "aflito", "aflita", "amargurado", "amargurada"]:
+			humor = "inquiet" + a + " no sono"
+			break
+		if c[2] in ["encolhido", "encolhida", "assustado", "assustada", "abalado", "abalada", "preocupado", "preocupada"]:
+			humor = "sono leve"
+			break
+	var sonho := ""
+	for c in cands:
+		if not String(c[3]).is_empty():
+			if c[0] >= 5 or (bloco + p.id) % 3 == 0:
+				sonho = c[3]
+			break
+	return [G.maiuscula(sonho), humor]
 
 
 func _humor_calmo() -> String:
@@ -237,13 +255,13 @@ func _necessidades(cands: Array) -> void:
 	var z = m.zonas.get(g.zona)
 	if z != null and z.seca:
 		_nec(cands, 7, ["Se não chover logo, a terra morre", "O lago está baixo demais"] if adulto
-			else ["Por que não chove mais?"], "preocupad" + a)
+			else ["Por que não chove mais?"], "preocupad" + a, "sonha com chuva")
 	if g.doenca_evento >= 0 and p.doente <= 0:
 		_nec(cands, 7, ["Tomara que a doença não me pegue", "Quem será o próximo a cair doente?"] if adulto
-			else ["Mamãe diz para não chegar perto dos doentes"], "aflit" + a)
+			else ["Mamãe diz para não chegar perto dos doentes"], "aflit" + a, "sonha que a doença chega em casa")
 	if m.estacao() == 3:
 		_nec(cands, 4, ["Esse frio entra nos ossos", "Falta lenha para a noite"] if adulto
-			else ["Que frio, quero ficar no fogo"], "encolhid" + a)
+			else ["Que frio, quero ficar no fogo"], "encolhid" + a, "sonha com o calor do verão")
 	if p.gravidez > 0:
 		_nec(cands, 6, ["O bebê não para de chutar", "Falta pouco para o bebê chegar"], "esperançosa")
 	if adulto and p.saude < 0.35:
@@ -302,10 +320,10 @@ func _acontecimentos(cands: Array) -> void:
 				var outro = m.grupo(e.outro_grupo) if e.outro_grupo >= 0 else null
 				var quem: String = ("os de " + outro.nome) if outro != null and outro.id != g.id else "eles"
 				_nec(cands, forca, ["E se %s voltarem?" % quem, "Temos de guardar as lanças perto"] if adulto
-					else ["Tenho medo dos estranhos"], "assustad" + a)
+					else ["Tenho medo dos estranhos"], "assustad" + a, "sonha que os estranhos voltam")
 			"tempestade", "terremoto_divino", "diluvio", "terremoto":
 				_nec(cands, forca - 1, ["A terra ainda treme na lembrança", "Quase perdemos as casas"] if adulto
-					else ["O vento quis levar a casa!"], "abalad" + a)
+					else ["O vento quis levar a casa!"], "abalad" + a, "sonha que a terra treme de novo")
 			"eclipse", "cometa", "pressagio":
 				_nec(cands, forca - 1, ["O que o céu quis dizer?", "Nunca vi o céu daquele jeito"] if adulto
 					else ["O céu ficou estranho!"], "intrigad" + a)
@@ -413,11 +431,14 @@ func _deus(cands: Array) -> void:
 		_nec(cands, 3, [G.preencher("Mamãe diz que {o:d} vê tudo", v, false)], "")
 	elif g.ceticos or p.fe < -0.4 or p.ferida_pelo_deus:
 		_nec(cands, 5 if p.ferida_pelo_deus else 4, [G.preencher("{o:d} nos esqueceu", v, false),
-			G.preencher("Rezar {a:d} para quê?", v, false), G.preencher("{o:d} só tira, nunca dá", v, false)], "amargurad" + a)
+			G.preencher("Rezar {a:d} para quê?", v, false), G.preencher("{o:d} só tira, nunca dá", v, false)], "amargurad" + a,
+			G.preencher("sonha que {o:d} lhe vira as costas", v, false))
 	elif p.fe > 0.5:
-		_nec(cands, 4, [G.preencher("{o:d} cuida de nós", v, false), G.preencher("Hoje vou agradecer {a:d}", v, false)], "seren" + a)
+		_nec(cands, 4, [G.preencher("{o:d} cuida de nós", v, false), G.preencher("Hoje vou agradecer {a:d}", v, false)], "seren" + a,
+			G.preencher("sonha com a voz {de:d}", v, false))
 	elif g.silencios > 0:
-		_nec(cands, 4, [G.preencher("Por que {o:d} se cala?", v, false)], "inquiet" + a)
+		_nec(cands, 4, [G.preencher("Por que {o:d} se cala?", v, false)], "inquiet" + a,
+			G.preencher("sonha que {o:d} volta a falar", v, false))
 	else:
 		_nec(cands, 2, [G.preencher("Será que {o:d} nos ouve?", v, false)], "")
 
@@ -454,7 +475,7 @@ func _tracos(cands: Array) -> void:
 	for t in p.tracos:
 		if TRACO.has(t):
 			var fr: Array = TRACO[t][0] if adulto else TRACO[t][1]
-			_nec(cands, 1, fr.map(func(s): return s.replace("{a}", a)), "")
+			_nec(cands, 1, fr.map(func(s): return s.replace("{a}", a)), "", "sonha que um bicho o persegue na mata".replace(" o ", " " + ("o" if a == "o" else "a") + " ") if t == "medroso" else "")
 
 
 ## O que se pensa fazendo certas coisas: a caçada, a vigia, a roda de histórias.

@@ -328,8 +328,8 @@ Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, 
 | Campo | O que é |
 |---|---|
 | `fazendo` | o que a pessoa faz agora, numa frase curta, com concordância: "catando lenha na borda da mata", "espreitando um porco", "mirando o porco com a lança", "cozinhando a caça", "vigiando o fogo", "sentada junto ao fogo", "conversando com Aru", "dormindo". Sai do `detalhe`, da `acao` e da cena (enterro, casamento, festa, prece, guerra, colheita, obra), com o lugar dito como se fala: "perto do fogo", "na vila", "na praia", "na beira do lago", "na mata", "no morro". |
-| `pensamento` | uma frase de até 60 caracteres, com a primeira letra maiúscula, tirada do estado real da pessoa (abaixo). Dormindo, é o sonho ("Sonha com Kidema") ou vazio. |
-| `humor` | uma palavra ou duas, com concordância: "contente", "aflita", "de luto", "faminto", "assustada", "grato", "amargurada", "orgulhoso", "tranquila", "alegre" (criança)... |
+| `pensamento` | uma frase de até 60 caracteres, com a primeira letra maiúscula, tirada do estado real da pessoa (abaixo). Dormindo, é o sonho ou vazio (a linha pode ser escondida): um sonho da fonte mais forte que tem sonho (um morto ou o cônjuge, a fome, a doença, o deus, o frio, a seca, um susto, o medo do escuro), sempre quando ela pesa e, quando é fraca, só em um bloco de 2 horas em cada 3. Exemplos: "Sonha com Kidema", "Sonha com comida", "Sonha com a voz do Que Sacode", "Sonha que um bicho a persegue na mata". |
+| `humor` | uma palavra ou duas, com concordância: "contente", "aflita", "de luto", "faminto", "assustada", "grato", "amargurada", "orgulhoso", "tranquila", "alegre" (criança)... Dormindo: "dormindo"; "inquieto no sono" (doença, fome, luto, aflição) ou "sono leve" (frio, susto, medo) quando há motivo. |
 
 De onde vem o pensamento, da fonte mais forte para a mais fraca:
 1. **Necessidade urgente:** doença da própria pessoa, fome do povo, seca na zona, doença no povo, gravidez, velhice, o frio do inverno.

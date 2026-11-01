@@ -2,7 +2,7 @@ extends SceneTree
 ## Imprime as dicas (o que a pessoa faz, o que pensa, o humor) de pessoas em mundos, anos e
 ## horas diferentes, e confere: frases não vazias, pensamento até 60 caracteres, nada
 ## sobre o jogador, a mesma pessoa sem a mesma frase por horas a fio, e o mesmo mundo dá a
-## mesma dica (a dica não mexe no sorteio do mundo).
+## mesma dica (a dica não mexe no sorteio do mundo); quem dorme, com humor de sono.
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_dica.gd
 
 const Mundo = preload("res://nucleo/mundo.gd")
@@ -52,6 +52,8 @@ func _conferir(d: Dictionary, f: Dictionary, m) -> void:
 		return
 	if String(d["pensamento"]).length() > 60:
 		_falha("pensamento longo: " + d["pensamento"])
+	if f["acao"] == "dormir" and not d["humor"] in ["dormindo", "sono leve", "inquieto no sono", "inquieta no sono"]:
+		_falha("dormindo com humor acordado: %s" % d["humor"])
 	if d["pensamento"].is_empty() and f["acao"] != "dormir":
 		_falha("sem pensamento acordado: %s" % f["nome"])
 	for w in PROIBIDAS:
