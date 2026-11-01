@@ -644,6 +644,22 @@ A amostra é `nuvens/amostra_nuvens_4x.png`, com uma linha por clima, sobre a co
 - `ceu_tempestade.png`: degradê escuro sem sol, coberto por nuvens pesadas. Use enquanto chove forte e no raio.
 - `ceu_diluvio.png`: o mesmo, mais escuro e carregado. Use no dilúvio.
 
+## 22. Ações "de 1x" (`acoes/forte.py`)
+
+São versões mais fortes das subações da seção 20, para o ritmo 1x, em que o jogador olha de canto de olho. Elas mudam a silhueta (braços longe do corpo, o corpo agachado ou inclinado) e trazem objetos de 2 px de espessura, com a borda de cima clara para não sumirem no chão nem no mato. As cores-base são as de sempre (`habitantes/trocas.json`); os objetos das folhas de gente não usam as cores 8, 25, 26, 28 e 30, que a troca de pele e cabelo muda.
+
+A sugestão é usar a versão forte no 1x e a de sempre no 10x e no 50x, ou só a forte, se a B preferir. `acoes/amostra_forte_4x.png` mostra cada folha antiga à esquerda e a forte à direita, e no fim a caça carregada montada.
+
+| Subação | Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|---|
+| `catar_lenha` | `acoes/catar_lenha_forte_4q` | 12 × 12 | 4 | agacha junto aos galhos no chão, levanta com eles atravessados, segura o feixe no peito e o põe no ombro. O feixe passa do corpo até a coluna 11. Depois, siga com `carregar_lenha_4q` ou repita os quadros 2 e 3. |
+| `carregar_cesto` (na cabeça) | `acoes/carregar_cesto_cabeca_forte_4q` | 8 × 12 | 4 | andando com um cesto de palha de 8 px na cabeça, frutas vermelhas e amarelas em cima, e os dois braços erguidos segurando as bordas |
+| espantar um animal | `acoes/espantar_forte_4q` | 12 × 12 | 4 | abana um galho cheio de folhas, para cima e para baixo, de boca aberta e dando pulinhos; virado para o bicho |
+| tropeçar e cair | `acoes/tropecar_cair_forte_4q` | 12 × 12 | 4 | tropeça numa pedra (os 2 px cinzentos sob o pé da frente), voa de braços abertos, cai de bruços levantando poeira e fica tonto, com 3 estrelinhas. **Segure o quadro 3 por 1 a 2 s** e depois use `agachar_2q` para levantar. |
+| carregar água | `acoes/carregar_agua_forte_4q` | 8 × 12 | 4 | anda com o pote de barro cheio na cabeça (laranja, com a água clara na boca), segurando com a mão da frente erguida. É o "levar a água da margem até a vila": atravesse a tela com ele. |
+| `buscar_agua` | `acoes/buscar_agua_forte_4q` | 12 × 12 | 4 | na margem, de frente para a água: chega com o pote vazio no quadril, ajoelha e mergulha o pote com respingos, ergue o pote cheio e o põe na cabeça. Depois, `carregar_agua_forte_4q`. |
+| `carregar_caca` | 2 × `acoes/carregar_caca_forte_4q` + `objetos/caca_no_pau_porco_forte` ou `caca_no_pau_ave_forte` | 8 × 12; objeto 24 × 9 | 4 | os dois carregadores ficam a **16 px** um do outro (8 px de vão para o bicho), com os quadros defasados em 2. O objeto vai com o x do carregador de trás e as linhas 0 e 1 (o pau de 2 px) nas linhas 3 e 4 dos carregadores. O bicho pendura pelas patas amarradas (corda clara) no meio do vão. Desenhe o objeto por cima dos dois. |
+
 ## Critérios
 
 | Critério | Situação |

@@ -1,5 +1,5 @@
-comum: 512x512, 209 peças, 1024 KB
-pessoas_inverno: 256x128, 61 peças, 128 KB
+comum: 512x512, 218 peças, 1024 KB
+pessoas_inverno: 256x128, 68 peças, 128 KB
 nuvens: 256x128, 45 peças, 128 KB
 estacao_primavera: 256x128, 68 peças, 128 KB
 estacao_verao: 256x128, 68 peças, 128 KB
