@@ -160,7 +160,7 @@ Em `apresentacao/vida.gd`:
 - **rápido:** visível, ritmo rápido, com gente andando o tempo todo;
 - **escondido:** minimizado.
 
-**Medições de 10 minutos** (código de `90e0b6b`, peças de CPU importadas como Image, escala 3x):
+**Medições de 10 minutos** (código de `f78be96`, peças de CPU importadas como Image, escala 3x):
 
 | Cenário | CPU média (máquina) | % de 1 núcleo | Conjunto de trabalho (médio) | Gerenciador de Tarefas, "Memória" (médio) | Bytes privados (máx.) |
 |---|---|---|---|---|---|
