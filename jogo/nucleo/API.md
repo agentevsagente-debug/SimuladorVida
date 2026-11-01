@@ -321,6 +321,28 @@ A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 
 `posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
 
+### `dica(pessoa_id) -> Dictionary` (a dica sobre a pessoa)
+
+Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, humor}` (vazio `{}` se a pessoa morreu). É calculada na consulta, a partir da ficha da hora de `pessoas_visiveis()` e do estado do mundo, e guardada até o próximo passo; custa de 0,05 a 0,2 ms por pessoa na primeira consulta da hora, e nada nos quadros. Não usa o sorteio do mundo.
+
+| Campo | O que é |
+|---|---|
+| `fazendo` | o que a pessoa faz agora, numa frase curta, com concordância: "catando lenha na borda da mata", "espreitando um porco", "mirando o porco com a lança", "cozinhando a caça", "vigiando o fogo", "sentada junto ao fogo", "conversando com Aru", "dormindo". Sai do `detalhe`, da `acao` e da cena (enterro, casamento, festa, prece, guerra, colheita, obra), com o lugar dito como se fala: "perto do fogo", "na vila", "na praia", "na beira do lago", "na mata", "no morro". |
+| `pensamento` | uma frase de até 60 caracteres, com a primeira letra maiúscula, tirada do estado real da pessoa (abaixo). Dormindo, é o sonho ("Sonha com Kidema") ou vazio. |
+| `humor` | uma palavra ou duas, com concordância: "contente", "aflita", "de luto", "faminto", "assustada", "grato", "amargurada", "orgulhoso", "tranquila", "alegre" (criança)... |
+
+De onde vem o pensamento, da fonte mais forte para a mais fraca:
+1. **Necessidade urgente:** doença da própria pessoa, fome do povo, seca na zona, doença no povo, gravidez, velhice, o frio do inverno.
+2. **Um acontecimento dos últimos 8 dias** que a pessoa viveu ou que tocou o povo (a memória dela): morte de parente ("Sinto falta de Marsaim", humor "de luto"), nascimento de filho ou irmão, raio ou fogo do céu, fartura, prece atendida ou sem resposta ("O Que Rega nos esqueceu"), ataque, tempestade, terremoto, eclipse, cometa, o fim da fome ou da seca, casamento, novo líder, costume novo.
+3. **Relação forte:** o maior rancor ("Não perdoo Oro"), o cônjuge vivo, a saudade de pai, mãe, filho ou cônjuge mortos, os filhos pequenos.
+4. **O deus**, pelo nome que o povo dá a ele e pela fé da pessoa: "O Que Sacode cuida de nós", "Rezar ao Que Sacode para quê?", "Por que a Mãe da Chuva se cala?". Sem crença, só os curiosos se perguntam quem manda a chuva. A pessoa fala do que viu, nunca de quem joga.
+5. **O povo:** os costumes, o líder (os ambiciosos e os rancorosos criticam, menos o cônjuge dele), o celeiro cheio, repartir pouco.
+6. **Os traços** (dois por pessoa, com frases próprias).
+
+O que a pessoa está fazendo também pesa: na espreita, no arremesso, apontando, com a caça no pau, no espeto, na vigia, na roda de histórias.
+
+Uma necessidade urgente (doença, fome) fica sozinha. Senão, a cada 2 horas de jogo, a frase vem de uma das três fontes mais fortes, e muda entre as variantes de cada uma: ninguém fica com a mesma frase por horas. As crianças (até 11 anos) pensam como crianças: "Mãe, tem comida?", "Cadê a mamãe?", "Por que o fogo dança?", "Quero brincar mais um pouco".
+
 ## Eventos, preces e chamados
 
 Tudo o que acontece vira um **evento**, guardado em ordem em `mundo.eventos` (ids crescentes, a partir de 0). Para saber o que há de novo:
@@ -563,6 +585,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido), a estante (índice e livros) e o arquivo dos antigos (cortado, ausente; abandonar apaga ele também). |
 | `testar_antigos.gd` | O arquivo dos antigos não muda o mundo: a mesma semente sem arquivar, arquivando, e salva e carregada a cada 50 anos (também entre as fatias da virada), comparando crônica, sorteio, passo, eventos, população e livros (`-- <semente> <anos> [nenhum\|caprichoso] [ano_do_fim]`). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
+| `testar_dica.gd` | Imprime as dicas (`fazendo`, `pensamento`, `humor`) de pessoas em 8 mundos, anos e horas diferentes, e confere: nada vazio, pensamento até 60 caracteres e sem modelo por preencher, nada sobre quem joga, ninguém com a mesma frase 8 horas seguidas, o sorteio do mundo intocado; e mede o custo da consulta. |
 | `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar; das 6h às 20h, a cada hora, um acontecimento legível (alguém atravessando 40 px ou mais com carga ou ferramenta, crianças correndo, um incidente ou a caçada); de 0h às 4h, algo além do vigia (alguém que acorda, as brasas, um bicho da noite); ninguém parado a menos de 6 px do centro da fogueira do seu povo; de dia (6h às 17h), ninguém de pé, deitado, sentado no fogo ou conversando no mesmo ponto por mais de 21 min, fora das cenas; à tarde, em média uma conversa a cada 20 min ou menos num povo de 12 pessoas (a média é impressa). Os 40% contam gente inteira, arredondando para cima: de 12 pessoas, até 5 (41,7%) na mesma ação passam. Mostra a tabela hora a hora da semente 1, dia 4. |
 | `estilos.gd` | Simula 4 deuses (benevolente, cruel, ausente, caprichoso) por 100 anos, em 3 sementes, e compara fé, nomes do deus, costumes, dependência, guerras santas, secularizações e população. Tabela, trechos de crônica e leitura em `estilos/`. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
