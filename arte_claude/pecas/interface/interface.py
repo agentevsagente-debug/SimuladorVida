@@ -182,18 +182,19 @@ ICONES_12 = {
         "...rrrrrr...",
     ],
     "fartura": [
-        ".........y..",
-        "....s...yWy.",
-        "...sys...y..",
-        "....s.......",
-        "...sys......",
-        "....s.......",
-        "...sys..y...",
-        "....s..yWy..",
-        "...sys..y...",
-        "....n.......",
-        "....n.......",
-        "...n........",
+        # feixe de trigo cheio, amarrado no meio, com um brilho: o fiapo de antes sumia em 1x
+        "..y...y...W.",
+        ".yoy.yoy.WyW",
+        ".yoy.yoy..W.",
+        "..yoyyoy....",
+        "..yoyoyo....",
+        "...yoyo.....",
+        "....nnn.....",
+        "....sns.....",
+        "...s.s.s....",
+        "..s..s..s...",
+        ".s...s...s..",
+        "............",
     ],
     "erguer_terra": [
         ".....W......",
@@ -363,14 +364,14 @@ ICONES_8 = {
         "..rrrr..",
     ],
     "fartura": [
-        "...s..y.",
-        "..sys.Wy",
-        "...s..y.",
-        "..sys...",
-        "...s....",
-        "..sys...",
-        "...n....",
-        "...n....",
+        ".y.y..W.",
+        "yoyoy.y.",
+        "yoyoy...",
+        ".yoy....",
+        "..n.....",
+        ".sns....",
+        "s.s.s...",
+        "........",
     ],
     "erguer_terra": [
         "...W....",
@@ -696,11 +697,15 @@ def montar_glifo(ch):
         base, acento = COMPOSTOS[ch]
         topo, desenho = glifo_base(base)
         marca = ACENTOS[acento]
+        if base == "ı":
+            # o i sem pingo tem 1 px: o acento de 3 px encostava na haste e o "í" lia como
+            # "(" (auditoria 3c). Acento de 2 px, uma linha acima, com 1 linha de folga.
+            marca = [".#", "#."]
         larg = max(len(desenho[0]), len(marca[0]))
         pad = (larg - len(desenho[0])) // 2
         desenho = ["." * pad + l + "." * (larg - len(l) - pad) for l in desenho]
         g = _colocar(topo, desenho)
-        linha = 0 if base.isupper() else 2
+        linha = 0 if base.isupper() else 1 if base == "ı" else 2
         ox = (larg - len(marca[0])) // 2
         for j, l in enumerate(marca):
             for i, p in enumerate(l):
@@ -799,7 +804,8 @@ def principal():
     from comum import folha_quadros
     gravar(folha_quadros(bts), AQUI / "botao_3q.png")
     folhas = {}
-    for nome_cor, cor in (("clara", 31), ("escura", 8), ("dourada", 22)):
+    # titulo: vinho escuro (23), para títulos sobre o pergaminho, onde a dourada some
+    for nome_cor, cor in (("clara", 31), ("escura", 8), ("dourada", 22), ("titulo", 23)):
         folha, chars = fonte(cor)
         nome = f"fonte_5x7_{nome_cor}"
         folhas[nome_cor] = (gravar(folha, AQUI / f"{nome}.png"), chars)
@@ -834,12 +840,13 @@ def amostra(caixa, dica, bts, folhas):
         img.alpha_composite(para_imagem(molde(ICONES_8[nome])), (x, 28))
         x += 11
     # caixa da crônica com texto
-    clara, escura, dourada = (folhas[k] for k in ("clara", "escura", "dourada"))
+    clara, escura, dourada, titulo = (folhas[k] for k in ("clara", "escura", "dourada", "titulo"))
     img.alpha_composite(para_imagem(nove(caixa, 24, 6, 166, 72)), (4, 42))
-    textos = ["Ano 12 do povo de Ardem.", "«Que Rega, que a chuva volte.»",
-              "A seca levou a colheita; a avó", "Iara rezou no altar à noite.", "ÁGUA, PÃO, CORAÇÃO: É VIDA!"]
+    textos = ["Ano 12 do povo de Ardem", "«Que Rega, que a chuva volte.»",
+              "No princípio, a família de Iara", "rezou no altar à noite.", "ÁGUA, PÃO, CORAÇÃO: É VIDA!"]
     for i, t in enumerate(textos):
-        escrever(img, t, 11, 49 + i * 12, escura[1], escura[0])
+        f = titulo if i == 0 else escura
+        escrever(img, t, 11, 49 + i * 12, f[1], f[0])
     # dica do cursor
     img.alpha_composite(para_imagem(nove(dica, 12, 4, 84, 40)), (174, 42))
     escrever(img, "Iara, 34 anos", 179, 46, dourada[1], dourada[0])

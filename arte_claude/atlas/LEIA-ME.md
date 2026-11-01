@@ -36,7 +36,7 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 **Total, com todos carregados: 3,94 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
 
 **O que vai em cada atlas:**
-- **`comum`:** habitantes, ações e vida, chaminé e fumaça de chaminé (`luzes/`), interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
+- **`comum`:** habitantes, ações e vida, chaminé e fumaça de chaminé (`luzes/`), interface (ícones 12 e 8, caixas, botões, alça e as 4 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
 - **`pessoas_inverno`:** as folhas de `habitantes/` e `acoes/` com a roupa de frio. No inverno, as regiões com o mesmo nome valem no lugar das do `comum`.
 - **`nuvens`:** as 45 nuvens soltas do céu vivo (5 climas × 3 camadas × 3 tamanhos). O motor só usa as do clima atual, mas o atlas é pequeno o bastante para ficar inteiro.
 - **`estacao_<primavera|verao|outono|inverno>`:** todos os blocos de terreno e a vegetação do estágio 1, na versão da estação (a de verão quando a estação não muda a peça), mais a muda, a árvore jovem, o pinheiro jovem e a fogueira antiga, a agricultura da estação (roças, pomar, roça irrigada e roda d'água). O de inverno tem também o `gelo_superficie`.
@@ -45,7 +45,7 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
   - O estágio 2 traz também as variações de cultura de `culturas/` e a casa em ruína.
   - O estágio 5 traz também os telhados e símbolos do templo de colunas, que o templo da escrita usa.
 
-**Fontes:** `fonte_5x7_clara.fnt`, `fonte_5x7_escura.fnt` e `fonte_5x7_dourada.fnt` são as mesmas fontes, mas apontam para o `comum.png`. As coordenadas de cada letra já estão somadas à posição da fonte no atlas.
+**Fontes:** `fonte_5x7_clara.fnt`, `fonte_5x7_escura.fnt`, `fonte_5x7_dourada.fnt` e `fonte_5x7_titulo.fnt` são as mesmas fontes, mas apontam para o `comum.png`. As coordenadas de cada letra já estão somadas à posição da fonte no atlas.
 
 ## Camadas grandes (`camadas/`, `camadas.json`)
 

@@ -87,8 +87,8 @@ def gerar_atlas(nome, entradas):
 
 
 def fontes_no_atlas(regioes):
-    """Reescreve os .fnt das 3 fontes para apontarem para o atlas comum."""
-    for cor in ("clara", "escura", "dourada"):
+    """Reescreve os .fnt das 4 fontes para apontarem para o atlas comum."""
+    for cor in ("clara", "escura", "dourada", "titulo"):
         r = regioes[f"interface/fonte_5x7_{cor}"]
         orig = (PECAS / "interface" / f"fonte_5x7_{cor}.fnt").read_text(encoding="utf-8").splitlines()
         out = []
