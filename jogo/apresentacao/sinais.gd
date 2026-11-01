@@ -51,7 +51,7 @@ func atualizar(sim: Node, vista: Node2D, relogio: float, figuras: Array) -> void
 		if cabecas.has(p["autor"]):
 			var f: Dictionary = cabecas[p["autor"]]
 			x = f.x + f.largura / 2.0
-			base = f.base - (8 if f.folha.begins_with("crianca") else 12) - 1
+			base = f.base - (8 if f.folha.contains("crianca") else 12) - 1
 		novos.append({"folha": FOLHAS[nivel][0], "largura": FOLHAS[nivel][1], "x": roundi(x), "base": base,
 			"prece": p, "nivel": nivel})
 	if _os_ultimos(sim) and not sim.construcoes.is_empty():

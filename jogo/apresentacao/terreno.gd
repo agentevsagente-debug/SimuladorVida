@@ -18,7 +18,8 @@ var _solidos := {}
 
 func _bloco(nome: String) -> Image:
 	if not _blocos.has(nome):
-		_blocos[nome] = Arte.imagem("terreno/%s.png" % nome)
+		var caminho: String = nome if nome.contains("/") else "terreno/" + nome
+		_blocos[nome] = Arte.imagem(Arte.da_estacao(caminho) + ".png")
 	return _blocos[nome]
 
 
@@ -27,8 +28,9 @@ func _bloco(nome: String) -> Image:
 ## Sem superficie_na_cor, a linha de cima da água só ganha etiqueta: ela é
 ## desenhada à parte, animada.
 ## queimadas: colunas em que o fogo do deus passou (grama vira terra queimada).
+## gelo: colunas de água congelada (no inverno, as mais perto da praia).
 func montar(colunas: Array, batido: Array, quadro_agua: Image, superficie_na_cor := true,
-		queimadas: Array = []) -> Dictionary:
+		queimadas: Array = [], gelo: Array = []) -> Dictionary:
 	var cor := Image.create(W, H, false, Image.FORMAT_RGBA8)
 	var tag := Image.create(W, H, false, Image.FORMAT_R8)
 	var sup := PackedInt32Array()
@@ -44,9 +46,12 @@ func montar(colunas: Array, batido: Array, quadro_agua: Image, superficie_na_cor
 		for x in range(c * T, c * T + T):
 			sup[x] = s
 		for item in pilha(c, s, tp, c in batido, c in queimadas):
-			var bloco := quadro_agua if item[1] == "agua_superficie" else _bloco(item[1])
-			var etiqueta := Arte.AGUA if String(item[1]).begins_with("agua") else Arte.MUNDO
-			if item[1] == "agua_superficie" and not superficie_na_cor:
+			var nome_bloco: String = item[1]
+			if nome_bloco == "agua_superficie" and c in gelo:
+				nome_bloco = "gelo_superficie"
+			var bloco := quadro_agua if nome_bloco == "agua_superficie" else _bloco(nome_bloco)
+			var etiqueta := Arte.AGUA if nome_bloco.begins_with("agua") else Arte.MUNDO
+			if nome_bloco == "agua_superficie" and not superficie_na_cor:
 				var r := Rect2i(Vector2i.ZERO, bloco.get_size())
 				tag.blit_rect_mask(_solido(bloco.get_size(), etiqueta), bloco, r, Vector2i(c * T, item[0]))
 			else:
@@ -87,7 +92,7 @@ static func pilha(c: int, s: int, tp: String, batido: bool, queimada := false) -
 		itens.append([s - 2, "chao_batido"])
 		y = s + 6
 	elif tp == "grama" and queimada:
-		itens.append([s - 2, "../memoria/terra_queimada_a" if c % 2 else "../memoria/terra_queimada_b"])
+		itens.append([s - 2, "memoria/terra_queimada_a" if c % 2 else "memoria/terra_queimada_b"])
 		y = s + 6
 	elif tp == "grama":
 		itens.append([s - 2, _escolher("grama_a", "grama_b", c, s)])

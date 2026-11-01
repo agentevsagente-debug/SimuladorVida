@@ -1,0 +1,399 @@
+extends RefCounted
+## A vida das pessoas na tela: o que cada uma faz neste quadro, com que folha,
+## em que quadro e onde. Lê a agenda da hora de cada pessoa (API v8: trechos
+## {de, ate, x0, x1, acao, virado, cena}) e as cenas, e escolhe as folhas pelo
+## mapa da seção 18 do LEIA-ME da arte.
+##
+## Ritmo: a agenda espalha cada caminhada pelo trecho inteiro (uma hora são
+## 112,5 s). Aqui a pessoa anda em passo natural até o destino do trecho, com
+## pausas curtas no caminho, e espera fazendo a ação; parada, ela tem
+## microanimações (olhar para os lados, esticar, sentar, agachar, coçar a
+## cabeça, bocejar) em intervalos irregulares, fixos por pessoa.
+##
+## Ninguém se amontoa: os parados são empacotados numa fila só, com ESPACO
+## entre vizinhos; a roda da fogueira pula as cabanas e, com mais de RODA_MAX
+## pessoas, ganha uma segunda fileira meio passo atrás.
+
+const Arte = preload("res://apresentacao/arte.gd")
+const Terreno = preload("res://apresentacao/terreno.gd")
+
+const LARGURA := 480
+const PASSO_ANDAR := 9.0      # px/s médio de quem anda; cada pessoa varia de 0,8 a 1,2 disto
+const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
+const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
+const RODA_MAX := 10          # quantos cabem na primeira fileira da roda da fogueira
+## Microanimações de quem está parado: folha, quadros, segundos.
+const MICRO := [["acoes/olhar_lados_4q", 4, 4.0], ["acoes/esticar_4q", 4, 2.0], ["acoes/sentar_chao_4q", 4, 7.0],
+	["acoes/agachar_2q", 2, 3.0], ["acoes/cocar_cabeca_4q", 4, 2.4], ["acoes/bocejar_4q", 4, 2.2]]
+## Ações paradas com folha de 4 quadros em laço (acao -> folha).
+const ACOES := {"construir": "acoes/construir_4q", "forjar": "acoes/forjar_4q", "escrever": "acoes/escrever_4q",
+	"remar": "acoes/remar_4q", "lutar": "acoes/lutar_4q", "dancar": "acoes/dancar_4q", "pescar": "acoes/pescar_4q"}
+## Ações de caminhada com carga (acao -> folha).
+const CARGAS := {"lenha": "acoes/carregar_lenha_4q", "carregar_morto": "acoes/funeral_carregar_4q"}
+
+var vista
+var sim
+var figuras: Array = []
+var objetos: Array = []       # objetos de cena desenhados junto das pessoas
+var _x := {}                  # id -> x desenhado
+var _virada := {}             # id -> espelho (olhando para a esquerda)
+var _acordou := {}            # id -> quando saiu da cabana (para saírem em fila)
+var _atras := {}              # ids na segunda fileira da roda
+var _maior_sobreposicao := [0, 0]
+
+
+func _init(p_vista, p_sim) -> void:
+	vista = p_vista
+	sim = p_sim
+
+
+## Número fixo por pessoa e por fatia de tempo, 0..1 (não usa o sorteio do núcleo).
+static func _dado(id: int, fatia: int, sal: int = 0) -> float:
+	var h := hash([id, fatia, sal])
+	return float(h & 0xFFFF) / 65535.0
+
+
+## O trecho da agenda na fração f da hora: {x, destino, acao, virado, anda, cena}.
+static func trecho(p: Dictionary, f: float) -> Dictionary:
+	var agenda: Array = p.get("agenda", [])
+	for i in agenda.size():
+		var t: Dictionary = agenda[i]
+		if f < t["ate"] or i == agenda.size() - 1:
+			var anda: bool = absf(t["x1"] - t["x0"]) > 0.5
+			return {"destino": float(t["x1"]), "acao": t["acao"], "virado": int(t.get("virado", 0)),
+				"anda": anda, "cena": t.get("cena", {})}
+	return {"destino": float(p["x"]), "acao": p["acao"], "virado": int(p.get("virado", 0)), "anda": false,
+		"cena": p.get("cena", {})}
+
+
+func atualizar(delta: float, relogio: float) -> Array:
+	var f: float = sim.fracao()
+	var trechos := {}
+	for p in sim.pessoas:
+		trechos[p["id"]] = trecho(p, f)
+	var lugar := _lugares(sim.pessoas, trechos)
+	var opcoes := Arte.opcoes_troca()
+	var r := []
+	objetos = []
+	var vivos := {}
+	var rapido: float = 4.0 if sim.ritmo == sim.Ritmo.RAPIDO else 1.0
+	for p in sim.pessoas:
+		var id: int = p["id"]
+		vivos[id] = true
+		var t: Dictionary = trechos[id]
+		var acao: String = t.acao
+		var destino: float = lugar.get(id, t.destino)
+		var x: float = _x.get(id, destino)
+		var vel := PASSO_ANDAR * (0.8 + 0.4 * _dado(id, 0)) * rapido
+		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
+			x = destino
+		# pausas curtas no caminho: de vez em quando para e olha
+		var fatia := int((relogio + id * 1.7) / 3.0)
+		var pausa := _dado(id, fatia, 1) < 0.12 and fmod(relogio + id * 1.7, 3.0) < 0.6
+		var anterior := x
+		if not pausa:
+			x = move_toward(x, destino, vel * delta)
+		_x[id] = x
+		if acao == "dormir":
+			_acordou.erase(id)
+			continue
+		# quem acorda junto sai da cabana em fila, não empilhado
+		if not _acordou.has(id):
+			_acordou[id] = relogio
+		if relogio - _acordou[id] < (id % 10) * ESPACO / vel and absf(destino - x) > ESPACO:
+			_x[id] = anterior
+			continue
+		var movendo := absf(x - anterior) > 0.001
+		var fogo: float = vista.fogo_mais_perto(x)
+		if movendo:
+			_virada[id] = x < anterior
+		elif t.virado != 0:
+			_virada[id] = t.virado < 0
+		elif acao in ["fogueira", "rezar"]:
+			_virada[id] = fogo < x
+		var espelho: bool = _virada.get(id, id % 2 == 0)
+
+		var visual := _visual(p, acao, t, movendo or absf(destino - x) > 0.5, relogio)
+		var crianca: bool = p["crianca"]
+		var idoso: bool = p["idade"] >= 55 and not crianca
+		var pele: int = id % opcoes.peles.size()
+		var cabelo: int = (id * 7 + 3) % (opcoes.cabelos.size() - 1)  # o último é o grisalho
+		if idoso:
+			cabelo = 5 if String(visual[0]).begins_with("habitantes/idoso") or String(visual[0]).ends_with("idoso_parado_2q") \
+				else opcoes.cabelos.size() - 1
+		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
+		var xr := roundi(x)
+		var base: int = vista.chao_pessoa(xr) - (1 if _atras.has(id) else 0) - int(visual[3])
+		var largura: int = visual[1]
+		r.append({"id": id, "folha": visual[0], "quadro": visual[2], "largura": largura,
+			"x": xr - (6 if crianca else 8) / 2, "base": base, "espelho": espelho,
+			"codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo, "acompanhada": p.get("acompanhada", false),
+			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena})
+	_objetos_de_cena(r, relogio)
+	r.sort_custom(func(a, b): return a.atras and not b.atras)  # a segunda fileira fica atrás
+	for id in _x.keys():
+		if not vivos.has(id):
+			_x.erase(id)
+			_virada.erase(id)
+			_acordou.erase(id)
+	figuras = r
+	if OS.has_environment("CONTAR_SOBREPOSICAO"):
+		_contar_sobreposicao()
+	return r + objetos
+
+
+## [folha, largura, quadro, subida] para o que a pessoa faz agora.
+func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: float) -> Array:
+	var id: int = p["id"]
+	var crianca: bool = p["crianca"]
+	var idoso: bool = p["idade"] >= 55 and not crianca
+	var feminina: bool = p["sexo"] == "f"
+	var fase := relogio + id * 0.37
+	var cena: String = t.cena.get("tipo", "")
+	var q4 := int(fase * 5.0) % 4
+	if crianca:
+		if anda:
+			return ["acoes/crianca_correr_4q", 6, int(fase * 10.0) % 4, 0]
+		# de vez em quando, pula no lugar (sobe o sprite nos quadros 1 e 2)
+		if _dado(id, int(fase / 4.0), 2) < 0.3:
+			var q := int(fase * 6.0) % 4
+			return ["acoes/crianca_pular_4q", 6, q, 3 if q in [1, 2] else 0]
+		return ["habitantes/crianca_andar_4q", 6, 0, 0]
+	if anda:
+		if CARGAS.has(acao):
+			return [CARGAS[acao], 8, int(fase * 5.0) % 4, 0]
+		if cena == "migracao":
+			return ["acoes/andar_trouxa_4q" if id % 2 else "acoes/andar_cesto_4q", 8, int(fase * 6.0) % 4, 0]
+		if cena == "guerra" and _porta_estandarte(id, t):
+			return ["acoes/carregar_estandarte_sol_4q", 12, int(fase * 6.0) % 4, 0]
+		if acao == "cuidar" and feminina:
+			return ["acoes/mae_bebe_andar_4q", 8, int(fase * 6.0) % 4, 0]
+		if idoso:
+			return ["habitantes/idoso_andar_4q", 8, int(fase * 4.0) % 4, 0]
+		return ["habitantes/adulto_b_andar_4q" if feminina else "habitantes/adulto_a_andar_4q", 8, int(fase * 6.0) % 4, 0]
+	match acao:
+		"colher":
+			if vista.perto_de_roca(_x[id]):
+				return ["estagio2/adulto_enxada_trabalhar_4q", 12, q4, 0]
+			if _x[id] < 140.0:  # colher na margem é pescar
+				return _pescar(id, fase)
+			return ["habitantes/adulto_a_colher_4q", 8, int(fase * 3.0) % 4, 0]
+		"pescar":
+			return _pescar(id, fase)
+		"rezar":
+			return ["habitantes/adulto_a_rezar_2q", 8, int(fase * 0.8) % 2, 0]
+		"fogueira":
+			if id % 2 == 0 or idoso:
+				return ["acoes/sentar_chao_4q", 8, 2 + int(fase * 0.7) % 2, 0]
+			return ["habitantes/adulto_a_sentado_1q", 8, 0, 0]
+		"conversar":  # um fala, o outro ouve; os papéis se alternam
+			var fala := (int(fase / 2.5) + id) % 2 == 0
+			return ["acoes/conversar_falar_4q" if fala else "acoes/conversar_ouvir_4q", 8, int(fase * 3.0) % 4, 0]
+		"cuidar":
+			return ["acoes/mae_bebe_parado_2q", 8, int(fase) % 2, 0] if feminina else _parado(id, idoso, feminina, fase)
+		"dancar":
+			if cena in ["festa", "casamento"] and _tocador(id, t):
+				return ["acoes/tocar_tambor_4q", 8, int(fase * 6.0) % 4, 0]
+			return ["acoes/dancar_4q", 8, int(fase * 4.0) % 4, 0]
+		"lenha":
+			return ["acoes/carregar_lenha_4q", 8, 0, 0]
+		"carregar_morto":
+			return ["acoes/funeral_carregar_4q", 8, 0, 0]
+	if ACOES.has(acao):
+		return [ACOES[acao], 8, q4, 0]
+	return _parado(id, idoso, feminina, fase)
+
+
+func _pescar(id: int, fase: float) -> Array:
+	# espera, puxa e mostra o peixe; de vez em quando segura o peixe
+	if _dado(id, int(fase / 6.0), 3) < 0.25:
+		return ["acoes/segurar_peixe_2q", 8, int(fase * 2.0) % 2, 0]
+	return ["acoes/pescar_4q", 8, mini(int(fmod(fase, 6.0) * 1.2), 3), 0]
+
+
+## Parado com vida: respira, e de tempos em tempos faz uma microanimação.
+func _parado(id: int, idoso: bool, feminina: bool, fase: float) -> Array:
+	if idoso:
+		return ["acoes/idoso_parado_2q", 8, int(fase * 0.8) % 2, 0]
+	# fatias de tempo irregulares por pessoa: em cerca de metade delas, uma microanimação
+	var tamanho := 5.0 + 6.0 * _dado(id, 0, 4)
+	var fatia := int(fase / tamanho)
+	var dentro := fmod(fase, tamanho)
+	if _dado(id, fatia, 5) < 0.55:
+		var m: Array = MICRO[int(_dado(id, fatia, 6) * MICRO.size()) % MICRO.size()]
+		if dentro < m[2]:
+			var q: int = int(dentro / m[2] * m[1] * (2 if m[0].ends_with("olhar_lados_4q") else 1)) % m[1]
+			if m[0].ends_with("sentar_chao_4q"):  # senta (0, 1) e fica sentado (2, 3 em laço)
+				q = mini(int(dentro * 1.5), 1) if dentro < 1.4 else 2 + int(dentro * 0.8) % 2
+			return [m[0], 8, q, 0]
+	return ["habitantes/adulto_b_parado_2q" if feminina else "habitantes/adulto_a_parado_2q", 8, int(fase) % 2, 0]
+
+
+## Na festa, o primeiro participante (menor id) toca o tambor.
+func _tocador(id: int, t: Dictionary) -> bool:
+	return _menor_da_cena(t.cena) == id
+
+
+## Na guerra, o primeiro de cada cena leva o estandarte.
+func _porta_estandarte(id: int, t: Dictionary) -> bool:
+	return _menor_da_cena(t.cena) == id
+
+
+func _menor_da_cena(c: Dictionary) -> int:
+	var menor := 1 << 30
+	for p in sim.pessoas:
+		var pc: Dictionary = p.get("cena", {})
+		if pc.get("id", -1) == c.get("id", -2):
+			menor = mini(menor, p["id"])
+	return menor
+
+
+## Objetos de cena: a mortalha sobre os dois carregadores, o tambor da festa e
+## as bandeirolas sobre a roda de dança.
+func _objetos_de_cena(r: Array, relogio: float) -> void:
+	var por_cena := {}
+	for f in r:
+		var c: Dictionary = f.cena
+		if c.is_empty():
+			continue
+		var chave := "%s:%s" % [c.get("tipo", ""), c.get("id", 0)]
+		if not por_cena.has(chave):
+			por_cena[chave] = []
+		por_cena[chave].append(f)
+	for chave in por_cena:
+		var fs: Array = por_cena[chave]
+		var tipo: String = chave.get_slice(":", 0)
+		match tipo:
+			"funeral":
+				var carregam := fs.filter(func(f): return f.acao == "carregar_morto")
+				if carregam.size() >= 2:
+					carregam.sort_custom(func(a, b): return a.x < b.x)
+					var a: Dictionary = carregam[0]
+					var b: Dictionary = carregam[1]
+					var meio: float = (a.x + b.x + 8) / 2.0
+					objetos.append(_objeto("objetos/corpo_mortalha", 16, roundi(meio) - 8, a.base - 8, a.codigo))
+			"festa", "casamento":
+				var xs: Array = fs.map(func(f): return f.x)
+				var ini: int = xs.min() - 4
+				var fim: int = xs.max() + 12
+				var y: int = vista.chao_pessoa(roundi((ini + fim) / 2.0)) - 17
+				for x in range(ini, fim, 16):
+					objetos.append(_objeto("objetos/bandeirolas", 16, x, y, 0))
+				for f in fs:
+					if f.folha == "acoes/tocar_tambor_4q":
+						objetos.append(_objeto("objetos/tambor", 8, f.x + (-7 if f.espelho else 7), f.base, f.codigo))
+
+
+func _objeto(folha: String, largura: int, x: int, base: int, codigo: int) -> Dictionary:
+	return {"id": -1, "folha": folha, "quadro": 0, "largura": largura, "x": x, "base": base, "espelho": false,
+		"codigo": codigo, "fogo": -10000.0, "acompanhada": false, "movendo": false, "atras": false, "acao": "", "cena": {}}
+
+
+# --- lugares ---------------------------------------------------------------------
+
+## Onde cada pessoa parada fica, sem amontoar. Quem está na fogueira quer um
+## lugar da roda; os outros querem o destino do trecho. Todos os da frente são
+## empacotados numa fila só. A ordem é pelo x desejado e pelo id, então ninguém
+## troca de lugar de um quadro para o outro. Quem anda não entra: vai direto.
+func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
+	_atras.clear()
+	var desejos := []  # [x desejado, id]
+	var lugar := {}
+	var rodas := {}
+	for p in pessoas:
+		var t: Dictionary = trechos[p["id"]]
+		if t.acao == "dormir" or t.anda:
+			continue
+		# os pares que conversam e quem rema ficam onde o núcleo pôs
+		if t.acao in ["conversar", "remar", "lutar", "carregar_morto"]:
+			continue
+		if t.acao == "fogueira":
+			var f: float = vista.fogo_mais_perto(t.destino)
+			if not rodas.has(f):
+				rodas[f] = []
+			rodas[f].append(p["id"])
+		else:
+			desejos.append([t.destino, p["id"]])
+	var cabanas: Array = sim.construcoes.filter(func(o): return o["tipo"] == "cabana").map(func(o): return float(o["x"]))
+	for f in rodas:
+		var roda: Array = rodas[f]
+		roda.sort()
+		var lugares := _lugares_da_roda(f, mini(roda.size(), RODA_MAX), cabanas)
+		for i in roda.size():
+			if i < lugares.size():
+				desejos.append([lugares[i], roda[i]])
+			elif not lugares.is_empty():  # segunda fileira: entre dois da frente
+				var k := (i - lugares.size()) % lugares.size()
+				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
+				_atras[roda[i]] = true
+	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
+	var xs := _empacotar(desejos.map(func(d): return d[0]))
+	for i in desejos.size():
+		lugar[desejos[i][1]] = xs[i]
+	return lugar
+
+
+## Lugares da roda em volta do fogo em f: dos dois lados, alternando, a partir
+## de 11 px do centro, pulando o que cairia na frente de uma cabana.
+func _lugares_da_roda(f: float, n: int, cabanas: Array) -> Array:
+	var r := []
+	var d := [11.0, 11.0]  # próxima distância livre à esquerda e à direita
+	var lado := 0
+	while r.size() < n:
+		var x: float = f + (-1.0 if lado == 0 else 1.0) * d[lado]
+		d[lado] += ESPACO
+		var livre := x > MARGEM and x < LARGURA - 4
+		for c in cabanas:
+			if absf(c - x) < 12.0:
+				livre = false
+		if livre:
+			r.append(x)
+		if d[0] > 80.0 and d[1] > 80.0:
+			break  # não há mais lugar perto do fogo
+		lado = 1 - lado
+	return r
+
+
+## Posições em ordem, a ESPACO ou mais umas das outras, o mais perto possível
+## das desejadas (blocos que se encostam se juntam e se centram), dentro da
+## terra e da tela.
+static func _empacotar(desejado: Array) -> Array:
+	var blocos := []  # [quantos, soma de (x - k × ESPACO)]
+	for x in desejado:
+		blocos.append([1, x])
+		while blocos.size() >= 2:
+			var a: Array = blocos[-2]
+			var b: Array = blocos[-1]
+			if a[1] / a[0] + a[0] * ESPACO <= b[1] / b[0]:
+				break
+			blocos.pop_back()
+			blocos[-1] = [a[0] + b[0], a[1] + b[1] - b[0] * a[0] * ESPACO]
+	var xs := []
+	for bl in blocos:
+		var inicio: float = bl[1] / bl[0]
+		for k in bl[0]:
+			xs.append(inicio + k * ESPACO)
+	for i in xs.size():  # a margem do lago e a borda direita
+		xs[i] = maxf(xs[i], MARGEM if i == 0 else xs[i - 1] + ESPACO)
+	for i in range(xs.size() - 1, -1, -1):
+		xs[i] = minf(xs[i], LARGURA - 4.0 if i == xs.size() - 1 else xs[i + 1] - ESPACO)
+	return xs
+
+
+## Teste: quantas figuras cobrem a mesma coluna de pixels (a regra é no máximo 2).
+func _contar_sobreposicao() -> void:
+	var maiores := [0, 0]  # só os parados, e todos
+	for so_parados in [true, false]:
+		var colunas := PackedInt32Array()
+		colunas.resize(LARGURA)
+		for f in figuras:
+			if so_parados and f.movendo:
+				continue
+			for x in range(maxi(0, f.x + 1), mini(LARGURA, f.x + 7)):  # sem a borda de 1 px
+				colunas[x] += 1
+		for c in colunas:
+			maiores[0 if so_parados else 1] = maxi(maiores[0 if so_parados else 1], c)
+	if maiores[0] > _maior_sobreposicao[0] or maiores[1] > _maior_sobreposicao[1]:
+		_maior_sobreposicao = [maxi(maiores[0], _maior_sobreposicao[0]), maxi(maiores[1], _maior_sobreposicao[1])]
+		print("[sobreposicao] parados=%d todos=%d hora=%s figuras=%d" % [_maior_sobreposicao[0], _maior_sobreposicao[1],
+			sim.tempo.get("hora"), figuras.size()])

@@ -19,6 +19,22 @@ const LINHAS_TABELA := ["", "entardecer", "noite", "fogo_medio", "fogo_perto",
 
 static var paleta := PackedColorArray()
 static var _trocas := {}
+## Estação corrente ("primavera", "verão", "outono", "inverno"). As peças são
+## procuradas primeiro em estacoes/<estação>/ e, se não estiverem lá, valem as
+## de verão (como montagem/montar.py, função ler_pasta).
+static var estacao := "verão"
+## Na arte, as camadas do motor ficam em montagem/; aqui, em camadas/.
+const PASTA_DA_ARTE := {"camadas": "montagem"}
+
+
+## Caminho (sem .png, a partir de arte/) da versão da peça na estação corrente.
+static func da_estacao(caminho: String) -> String:
+	if estacao == "verão":
+		return caminho
+	var pasta := caminho.get_slice("/", 0)
+	var nome := caminho.substr(pasta.length())
+	var sazonal := "estacoes/%s/%s%s" % [estacao, PASTA_DA_ARTE.get(pasta, pasta), nome]
+	return sazonal if ResourceLoader.exists(RAIZ + sazonal + ".png") else caminho
 
 
 static func carregar_paleta() -> void:
