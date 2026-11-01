@@ -2,6 +2,37 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## As notas dos 11 poderes (A)
+
+| # | O que foi feito |
+|---|---|
+| **1. O grau na carga** | A caixa da carga cresceu (30 px de barra) e mostra embaixo o grau que o gesto teria se fosse solto agora: "sinal" (barra clara), "milagre" (dourada) ou, no fogo abaixo de 0,35, "brando" (laranja). Uma marca clara indica a metade (o milagre) e, no fogo, uma marca laranja indica o fim do fogo brando. A imposição (3º uso em 3 dias) só o núcleo sabe; ela aparece no aviso ao soltar, como antes. |
+| **2. O dilúvio forte** | De 0,7 para cima, a barra fica azul e a caixa diz "a água mata". |
+| **3. A cura** | Com a cura escolhida, cada doente na tela tem uma cruzinha verde sobre a cabeça: a cura sara quem está doente e não faz nada em quem está são. |
+| **4. O sonho** | Quem sonhou ganha uma estrelinha lilás sobre a cabeça por 60 s: o sonho muda uma pessoa, não o povo. |
+| **5. Hábito e dependência** | A `dependencia` e o `costume` que nasce de um gesto do deus (`origem_tipo`) aparecem como aviso na alça por 5 s, com a frase curta do evento. |
+
+**Opção de teste nova:** `--carregar=PODER:X:INTENSIDADE` segura um poder com a carga fixa. Captura: `capturas/carga-dos-poderes.png`, com o dilúvio a 0,85, o fogo a 0,2 e 0,4 e o raio a 0,3 e 0,7.
+
+## O pior cenário de novo, no executável
+
+O mundo de 150 anos (estágio 6, 4 povos), em 50x, por 10 min, no `.exe`. Já entra tudo o que veio depois da medição final: o arquivo dos antigos, a fileira de trás, até 45 pessoas na tela, a dica, as preces e os brilhos. Medido com `medir.ps1 -Cenario avancado -Executavel`; os dados estão em `medicoes/avancado-exe.*`.
+
+| | CPU média | Gerenciador, média | Gerenciador, máximo | Conjunto de trabalho, máximo | Privada, máximo |
+|---|---|---|---|---|---|
+| Agora (.exe) | 0,278% | 167,5 MB | 181,8 MB | 274 MB | 296 MB |
+| Medição final (pelo editor) | 0,307% | 189 MB | 211 MB | — | — |
+
+O máximo ficou abaixo da meta de 200 MB. A memória sobe nos primeiros minutos (de 145 para 178 MB no meio da medição) e para em 181,8 MB nos últimos 2 min.
+
+## O recomeço e os estranhos
+
+| Item | O que foi feito |
+|---|---|
+| **Recomeço** (arte, seção 28) | Ao criar um povo no mundo vazio, o povo entra pela borda da direita com a trouxa e chega ao fogo antes de acendê-lo. O primeiro ajoelha junto à lenha: gira o pau entre as mãos (`acender_fogo_4q`, quadros 0 e 1) enquanto a lenha solta fumaça e vira brasa (`fogueira_nascendo_4q`, quadros 0 e 1), depois sopra (quadro 3) enquanto a chama cresce (quadros 2 e 3). Aos 17 s, a fogueira acende; aos 19 s, as cabanas aparecem. Os outros conversam em volta. Captura: `capturas/recomeco.png`. |
+| **Estranhos** (evento `estranhos`) | Quem chega de além da borda entra pela direita, com a trouxa, anda até o fogo do povo e fica 40 s ali, uns de cada lado, conversando (recebidos no fogo). Não vi na tela, porque o evento é raro: só acontece num povo pequeno sem quem possa casar. |
+| **Fileira de trás** | Correção: `_construcoes()` não passava o campo `fileira` adiante, então a fileira de trás não era usada. Agora é. |
+
 ## O resumo da ausência, as preces e os efeitos de noite
 
 | Item | O que foi feito |

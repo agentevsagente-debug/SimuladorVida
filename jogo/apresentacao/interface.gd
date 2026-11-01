@@ -44,6 +44,9 @@ const DIA_REAL := {"normal": "um dia dura 45 min", "rapido": "um dia dura 4,5 mi
 const RITMO_DE := {"pausa": Simulacao.Ritmo.PAUSA, "normal": Simulacao.Ritmo.NORMAL,
 	"rapido": Simulacao.Ritmo.RAPIDO, "rapido2": Simulacao.Ritmo.MUITO_RAPIDO}
 const NOME_GRAU := {"sinal": "um sinal", "milagre": "um milagre", "imposicao": "uma imposição"}
+## O grau enquanto o gesto carrega (notas dos poderes da A): o nome e a cor da carga.
+const NOME_CARGA := {"brando": "brando", "sinal": "sinal", "milagre": "milagre", "dilúvio": "a água mata"}
+const COR_GRAU := {"brando": 21, "sinal": 0, "milagre": 22, "dilúvio": 18}
 const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "curioso",
 	"ambicioso": "ambicioso", "rancoroso": "rancoroso", "desconfiado": "desconfiado",
 	"generoso": "generoso", "engenhoso": "engenhoso", "corajoso": "corajoso", "medroso": "medroso"}
@@ -91,6 +94,7 @@ var _resumo_aberto := false  # a crônica mostra só o resumo da ausência
 var _dica_balao: TextureRect  # o balãozinho de pensamento ao lado da linha do pensamento
 var _dica_linhagem: TextureRect  # o ícone da linhagem ao lado do nome de quem é seguido
 var _citados: Array = []
+var _sonhou := {}  # id -> relógio de quando sonhou (uma estrelinha lilás sobre a cabeça por 60 s)
 var _alvos_da_prece: Array = []  # x dos fogos onde o gesto atende a prece da dica aberta      # ids de quem o pensamento da dica aberta cita (ponto dourado na cabeça)
 var _dica_ponto := []         # [mundo, tela] da última dica de pessoa, para atualizar com o cursor parado
 var _dica_refazer := 0.0
@@ -115,6 +119,7 @@ var _dica_desde := 0.0        # quando a dica da frente apareceu
 
 func criar(p_vista: Node2D) -> void:
 	vista = p_vista
+	vista._interface = self
 	_alca = Arte.textura("interface/alca_9s.png")
 	_botao = Arte.textura("interface/botao_3q.png")
 	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante"]:
@@ -421,6 +426,7 @@ func _criar_povo(x: float) -> void:
 	_montar_botoes()
 	if r.get("ok", false):
 		_avisar("Nasceu um povo novo: começa %s." % String(vista.sim.mundo.nome_da_era()).to_lower())
+		vista.comecar_recomeco(int(r.get("grupo", -1)))
 	else:
 		_avisar(String(r.get("motivo", "Não deu certo")))
 
@@ -465,6 +471,21 @@ func marcar_dica(nome: String) -> void:
 	queue_redraw()
 
 
+## Quem sonhou (evento `sonho`): marcado por 60 s, porque o sonho muda uma pessoa, não o povo.
+func marcar_sonho(id: int) -> void:
+	_sonhou[id] = _relogio
+	for k in _sonhou.keys():
+		if _relogio - float(_sonhou[k]) > 60.0:
+			_sonhou.erase(k)
+
+
+## Um aviso na alça de um evento que é consequência longa da repetição (hábito, dependência).
+func avisar_evento(texto: String) -> void:
+	if texto != "":
+		_avisar(texto)
+		_mensagem_ate = _relogio + 5.0
+
+
 ## O jogador já escondeu a janela alguma vez (o aviso de como voltar só sai na primeira).
 func ja_escondeu() -> bool:
 	return "esconder" in _dicas_feitas
@@ -480,6 +501,15 @@ func demo(p: String, x: float, intensidade_fixa: float) -> void:
 	_carga_inicio = _relogio - intensidade_fixa * CARGA_SEGUNDOS
 	_usar_poder()
 	_montar_botoes()
+
+
+## O grau que o gesto teria se fosse solto agora (a imposição, 3º uso em 3 dias, só o núcleo sabe).
+func _grau_da_carga(carga: float) -> String:
+	if poder == "fogo" and carga < Simulacao.Mundo.FOGO_BRANDO:
+		return "brando"
+	if poder == "diluvio" and carga >= 0.7:  # o mais forte: pode matar muitos (aviso)
+		return "dilúvio"
+	return "milagre" if carga >= 0.5 else "sinal"
 
 
 func intensidade() -> float:
@@ -512,7 +542,8 @@ func _cabeca_seguida() -> Vector2:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	_refazer_dica(delta)
-	if not _citados.is_empty() or (_dica.visible and not _alvos_da_prece.is_empty()):
+	if not _citados.is_empty() or (_dica.visible and not _alvos_da_prece.is_empty()) or poder == "cura" \
+			or not _sonhou.is_empty():
 		queue_redraw()  # o ponto dourado acompanha quem anda; a seta do fogo pulsa
 	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio(), _dica_atual()]
@@ -1014,14 +1045,24 @@ func _draw() -> void:
 	if _carregando:
 		# caixa escura junto ao cursor com o ícone do poder e a carga
 		var tela: Vector2 = vista.para_tela(_carga_ponto) + Vector2(0, ALTURA_ALCA)
-		var r := Rect2((tela + Vector2(-17, -20)).round(), Vector2(34, 12))
+		var carga := intensidade()
+		var grau := _grau_da_carga(carga)
+		var fonte_grau: Font = _fontes["dourada" if grau != "sinal" else "clara"]
+		var largura := maxf(46.0, fonte_grau.get_string_size(NOME_CARGA[grau], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x + 7.0)
+		var r := Rect2((tela + Vector2(-largura / 2.0, -30)).round(), Vector2(largura, 22))
 		r.position.y = maxf(r.position.y, ALTURA_ALCA + 1)
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), r, 4)
 		draw_texture(_icones[poder + "_8"], r.position + Vector2(2, 2))
-		var n := int(intensidade() * 20.0)
-		for i in 20:
-			var cor: Color = Arte.paleta[22 if i < n else 3]
+		var n := int(carga * 30.0)
+		for i in 30:
+			var cor: Color = Arte.paleta[COR_GRAU[grau] if i < n else 3]
 			draw_rect(Rect2(r.position.x + 12 + i, r.position.y + 5, 1, 2), cor)
+		# as marcas: o milagre na metade; no fogo, o fim do fogo brando
+		draw_rect(Rect2(r.position.x + 12 + 15, r.position.y + 3, 1, 6), Arte.paleta[31])
+		if poder == "fogo":
+			draw_rect(Rect2(r.position.x + 12 + roundi(Simulacao.Mundo.FOGO_BRANDO * 30.0), r.position.y + 4, 1, 4), Arte.paleta[21])
+		draw_string(fonte_grau, r.position + Vector2(3, 19), NOME_CARGA[grau],
+			HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	var seguido := _cabeca_seguida()
 	if seguido.x > -50:  # o bico sobre quem a câmera segue
 		draw_texture(Arte.textura("interface/dica_ponteiro.png"), seguido + Vector2(-3, -5))
@@ -1053,6 +1094,22 @@ func _draw() -> void:
 		draw_string(fonte, r.position + Vector2(5, 11), _mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		if r.position.y < ALTURA_ALCA:
 			na_faixa = r
+	if poder == "cura" or not _sonhou.is_empty():
+		var doentes := {}
+		if poder == "cura":
+			for p in vista.sim.pessoas:
+				if p.get("doente", false):
+					doentes[p["id"]] = true
+		for f in vista.figuras:
+			var topo: Vector2 = (vista.para_tela(Vector2(f.x + f.largura / 2.0, f.base - 15)) + Vector2(0, ALTURA_ALCA)).round()
+			if doentes.has(f.id):  # a cura sara quem está doente; em quem está são, não faz nada
+				draw_rect(Rect2(topo + Vector2(-2, -1), Vector2(5, 3)), Arte.paleta[3])
+				draw_rect(Rect2(topo + Vector2(-1, -2), Vector2(3, 5)), Arte.paleta[3])
+				draw_rect(Rect2(topo + Vector2(-1, 0), Vector2(3, 1)), Arte.paleta[28])
+				draw_rect(Rect2(topo + Vector2(0, -1), Vector2(1, 3)), Arte.paleta[28])
+			elif _sonhou.has(f.id) and _relogio - float(_sonhou[f.id]) < 60.0:  # quem sonhou aprende a ideia
+				draw_rect(Rect2(topo + Vector2(-1, -1), Vector2(3, 3)), Arte.paleta[3])
+				draw_rect(Rect2(topo, Vector2(1, 1)), Arte.paleta[29])
 	if _dica.visible:  # uma seta dourada pequena sobre o fogo onde o gesto atende a prece
 		for ax in _alvos_da_prece:
 			if ax < 0.0:

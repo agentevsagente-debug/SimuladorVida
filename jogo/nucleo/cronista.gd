@@ -1332,8 +1332,15 @@ func _texto(e) -> String:
 			return _frase(["Ninguém lembrava mais a razão, e {g} abandonou {c}.",
 				"Com {l} à frente, {g} largou {c}: sem origem lembrada, o costume perdeu o sentido."], v)
 		"dependencia":
-			var t2 := _frase(["{g} já não se preparava para nada: {o:deus} sempre dava.",
-				"Tantas preces atendidas fizeram {g} confiar no céu mais do que nas próprias mãos."], v)
+			var t2 := ""
+			var por: String = e.dados.get("por", "")
+			if not por.is_empty():
+				v["dom"] = G.termo({"chuva": "a chuva", "fartura": "a comida", "cura": "a cura"}.get(por, "o que precisavam"))
+				t2 = _frase(["{g} se acostumou: {o:deus} mandava {dom} sem que ninguém pedisse, e o povo deixou de se preparar.",
+					"Tanto {dom} veio do céu que {g} parou de contar com as próprias mãos."], v)
+			else:
+				t2 = _frase(["{g} já não se preparava para nada: {o:deus} sempre dava.",
+					"Tantas preces atendidas fizeram {g} confiar no céu mais do que nas próprias mãos."], v)
 			if e.dados["largou"] == "estocar":
 				t2 += " " + _frase(["Deixaram de guardar comida para o inverno."], v)
 			elif e.dados["largou"] == "agua":

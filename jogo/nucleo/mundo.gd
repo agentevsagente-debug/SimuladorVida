@@ -3030,17 +3030,60 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 		_novo_costume(g, "festa_chuva", resposta)
 	# Um deus que sempre responde cria dependência e, depois, exigências banais.
 	if g.atendidas_seguidas >= 5 and not g.dependente and not _ja_houve("dependencia", g.id) 			and g.membros.size() >= 15 and ano() - _ano_da_primeira_prece(g) >= 10:
-		g.dependente = true
-		var largou := ""
-		for c in g.costumes:
-			if c["tipo"] in ["estocar", "agua"] and (c["tipo"] != "estocar" or g.estagio < 2):
-				largou = c["tipo"]
-				g.costumes.erase(c)
-				break
-		registrar("dependencia", "social", 7, g.zona, g.id, [], {"largou": largou, "deus": g.nome_deus})
+		_ficar_dependente(g, "")
 	elif g.atendidas_seguidas >= 8 and g.dependente and not g.exigente and not _ja_houve("exigencia", g.id):
 		g.exigente = true
 		registrar("exigencia", "social", 6, g.zona, g.id, [], {"deus": g.nome_deus})
+
+
+## O povo deixa de se preparar porque o deus sempre dá: larga o costume de guardar comida (antes
+## da agricultura) ou água. `por`: o poder repetido que causou isso ("" quando foram as preces).
+func _ficar_dependente(g: Grupo, por: String) -> void:
+	g.dependente = true
+	var largou := ""
+	for c in g.costumes:
+		if c["tipo"] in ["estocar", "agua"] and (c["tipo"] != "estocar" or g.estagio < 2):
+			largou = c["tipo"]
+			g.costumes.erase(c)
+			break
+	registrar("dependencia", "social", 7, g.zona, g.id, [], {"largou": largou, "deus": g.nome_deus, "por": por})
+
+
+## O mesmo gesto bom, repetido sobre o mesmo povo, vira hábito: na 4ª vez em um ano, um costume
+## (a chuva, a festa da chuva; a fartura e a cura, as oferendas; o sonho, o presságio e a terra
+## erguida, a crença de que o deus ouve); na 6ª, a chuva, a fartura e a cura viram dependência
+## (o povo larga o costume de guardar). Os gestos que ferem já criam o medo (a crença de que o
+## deus castiga) por conta própria.
+const GESTOS_BONS := ["chuva", "fartura", "cura", "sonho", "pressagio", "erguer", "fogo"]
+var gestos_bons: Dictionary = {}   # id do povo -> [[poder, dia], ...] do último ano
+
+
+func _habito_do_gesto(e: Evento, poder: String) -> void:
+	if not GESTOS_BONS.has(poder) or (poder == "fogo" and e.tipo != "fogo_brando"):
+		return
+	if poder == "cura" and not e.dados.get("condenado", false) and e.dados.get("grau", "") != "imposicao":
+		return   # a cura de quem não estava doente não conta
+	var alvos: Array = grupos_na_zona(e.zona) if e.zona != "" else grupos_vivos()
+	if poder in ["sonho", "cura"] and e.grupo >= 0:
+		alvos = [grupos[e.grupo]]
+	for g in alvos:
+		if g.extinto:
+			continue
+		var lista: Array = gestos_bons.get(g.id, []).filter(func(x): return dia_abs() - x[1] < DIAS_ANO)
+		lista.append([poder, dia_abs()])
+		gestos_bons[g.id] = lista
+		var n := lista.filter(func(x): return x[0] == poder).size()
+		if n == 4:
+			match poder:
+				"chuva":
+					_novo_costume(g, "festa_chuva", e)
+				"fartura", "cura":
+					_novo_costume(g, "oferendas", e)
+				"sonho", "pressagio", "erguer":
+					if g.tem_crenca and not g.ceticos:
+						_nova_crenca(g, "ouve_preces", e)
+		elif n == 6 and poder in ["chuva", "fartura", "cura"] and not g.dependente:
+			_ficar_dependente(g, poder)
 
 
 func _ano_da_primeira_prece(g: Grupo) -> int:
@@ -4297,6 +4340,7 @@ func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary
 		"intensidade": clampf(intensidade, 0.0, 1.0), "alvo": -1, "texto": ""})
 	if r.get("ok", false) and r.get("evento", -1) >= 0:
 		_preces_diante_do_gesto(evento(r["evento"]), poder)
+		_habito_do_gesto(evento(r["evento"]), poder)
 	return r
 
 
