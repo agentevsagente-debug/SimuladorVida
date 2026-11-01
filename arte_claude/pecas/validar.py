@@ -1,5 +1,6 @@
 """Confere todas as peças: só cores da paleta, cada pixel opaco ou totalmente transparente,
-e tamanhos na grade (terreno 8x8, habitantes 8x12 ou 6x8 por quadro, estágio 1 em múltiplos de 8).
+e tamanhos na grade (terreno 8x8, habitantes 8x12 ou 6x8 por quadro, estágio 1 em múltiplos de 8,
+balões 6x5).
 Os mapas de luz são dados em tons de cinza e ficam fora da regra da paleta."""
 from pathlib import Path
 import sys
@@ -11,6 +12,14 @@ sys.path.insert(0, str(AQUI))
 from comum import PALETA  # noqa: E402
 
 paleta = set(PALETA)
+
+
+def nq_v(nome):
+    """Número de quadros ou de variações pelo fim do nome (`_4q`, `_5v`), ou 1."""
+    fim = nome.rsplit("_", 1)[1]
+    return int(fim[:-1]) if fim[-1] in "qv" and fim[:-1].isdigit() else 1
+
+
 erros = []
 total = 0
 for f in sorted(AQUI.rglob("*.png")):
@@ -40,7 +49,9 @@ for f in sorted(AQUI.rglob("*.png")):
             erros.append(f"{rel}: quadro {qw}x{h} fora do padrão")
     if pasta in ("icones_12", "icones_8") and (w, h) != ((12, 12) if pasta == "icones_12" else (8, 8)):
         erros.append(f"{rel}: ícone {w}x{h} fora do tamanho")
-    if pasta in ("efeitos", "sinais") and not f.stem.startswith("amostra"):
+    if f.stem.startswith("balao_") and (w // nq_v(f.stem), h) != (6, 5):
+        erros.append(f"{rel}: balão com quadro {w // nq_v(f.stem)}x{h} (use 6x5)")
+    if pasta in ("efeitos", "sinais") and not f.stem.startswith(("amostra", "balao_")):
         fim = f.stem.rsplit("_", 1)[1]
         n = int(fim[:-1]) if fim[-1] in "qv" and fim[:-1].isdigit() else 1
         if w % n or (w // n) % 4 or h % 4:

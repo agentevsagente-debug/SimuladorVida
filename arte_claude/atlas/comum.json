@@ -686,7 +686,7 @@
    "quadro_h": 8
   },
   "criaturas/coelho_4q": {
-   "x": 201,
+   "x": 232,
    "y": 484,
    "w": 24,
    "h": 4,
@@ -706,7 +706,7 @@
    "quadro_h": 8
   },
   "criaturas/corvo_pousado_2q": {
-   "x": 357,
+   "x": 388,
    "y": 484,
    "w": 10,
    "h": 4,
@@ -716,7 +716,7 @@
    "quadro_h": 4
   },
   "criaturas/corvo_voar_4q": {
-   "x": 226,
+   "x": 257,
    "y": 484,
    "w": 24,
    "h": 4,
@@ -736,7 +736,7 @@
    "quadro_h": 8
   },
   "criaturas/morcego_4q": {
-   "x": 251,
+   "x": 282,
    "y": 484,
    "w": 24,
    "h": 4,
@@ -756,7 +756,7 @@
    "quadro_h": 5
   },
   "criaturas/passaro_pousado_2q": {
-   "x": 368,
+   "x": 399,
    "y": 484,
    "w": 8,
    "h": 4,
@@ -766,7 +766,7 @@
    "quadro_h": 4
   },
   "criaturas/passaro_voar_4q": {
-   "x": 276,
+   "x": 307,
    "y": 484,
    "w": 24,
    "h": 4,
@@ -806,7 +806,7 @@
    "quadro_h": 6
   },
   "criaturas/sapo_2q": {
-   "x": 318,
+   "x": 349,
    "y": 484,
    "w": 12,
    "h": 4,
@@ -976,7 +976,7 @@
    "quadro_h": 16
   },
   "efeitos/floco_3v": {
-   "x": 331,
+   "x": 362,
    "y": 484,
    "w": 12,
    "h": 4,
@@ -1046,7 +1046,7 @@
    "quadro_h": 24
   },
   "efeitos/pedras_caindo_3v": {
-   "x": 344,
+   "x": 375,
    "y": 484,
    "w": 12,
    "h": 4,
@@ -1356,7 +1356,7 @@
    "quadro_h": 12
   },
   "interface/dica_ponteiro": {
-   "x": 397,
+   "x": 428,
    "y": 484,
    "w": 6,
    "h": 3,
@@ -1956,7 +1956,7 @@
    "quadro_h": 8
   },
   "objetos/bebe_enrolado": {
-   "x": 377,
+   "x": 408,
    "y": 484,
    "w": 6,
    "h": 4,
@@ -2036,7 +2036,7 @@
    "quadro_h": 8
   },
   "objetos/coroa_flores_cabeca": {
-   "x": 404,
+   "x": 435,
    "y": 484,
    "w": 6,
    "h": 2,
@@ -2046,7 +2046,7 @@
    "quadro_h": 2
   },
   "objetos/corpo_mortalha": {
-   "x": 301,
+   "x": 332,
    "y": 484,
    "w": 16,
    "h": 4,
@@ -2056,7 +2056,7 @@
    "quadro_h": 4
   },
   "objetos/cuia_cheia": {
-   "x": 411,
+   "x": 442,
    "y": 484,
    "w": 4,
    "h": 2,
@@ -2146,7 +2146,7 @@
    "quadro_h": 8
   },
   "objetos/lanca_voando": {
-   "x": 384,
+   "x": 415,
    "y": 484,
    "w": 12,
    "h": 3,
@@ -2166,7 +2166,7 @@
    "quadro_h": 8
   },
   "objetos/peixe_mao": {
-   "x": 416,
+   "x": 447,
    "y": 484,
    "w": 4,
    "h": 2,
@@ -2194,6 +2194,16 @@
    "tipo": "quadros",
    "quadro_w": 8,
    "quadro_h": 8
+  },
+  "sinais/balao_5v": {
+   "x": 201,
+   "y": 484,
+   "w": 30,
+   "h": 5,
+   "quadros": 5,
+   "tipo": "variacoes",
+   "quadro_w": 6,
+   "quadro_h": 5
   },
   "sinais/necessidade_5v": {
    "x": 42,

@@ -179,6 +179,22 @@ A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1
 
 A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10 dias de espera, urgente até 30 dias e desesperado a partir daí, ou quando a importância do evento for 8 ou mais.
 
+**Balões de fala e de pensamento** (`sinais/balao_5v`, de `sinais/baloes.py`): 6 × 5, creme chapado sem contorno, com um sinal dentro e a ponta embaixo, apontando para a cabeça. As 5 variações, nesta ordem:
+
+| Variação | Sinal | Quando usar |
+|---|---|---|
+| 0 `fala` | uma linha de texto | conversa (`conversar_falar_4q`), discurso curto |
+| 1 `historia` | duas linhas de texto | quem conta história (`contar_historia_4q`) |
+| 2 `pensamento` | nuvem com reticências cinza e a ponta solta | alguém pensando, a vigia cochilando, prece baixinha |
+| 3 `coracao` | coração vermelho | casal, abraço de reencontro, mãe com o bebê |
+| 4 `raiva` | rabisco vermelho | discussão, crianças brigando |
+
+- **Onde:** para quem olha para a direita, o balão vai em x = x da pessoa + 2 e y = topo do quadro da pessoa − 6. Assim a ponta (coluna 1, linha 4) fica 1 px acima da cabeça. Para quem olha para a esquerda, espelhe o balão e use x = x da pessoa + 0.
+- **Quanto tempo:** de 1,5 a 3 s, e não o tempo todo. Por exemplo, na conversa os balões se alternam entre os dois, com 1 a 2 s de pausa entre eles; na história, o balão de quem conta aparece a cada 4 ou 5 s.
+- **Quantos:** no máximo 2 ou 3 balões na tela ao mesmo tempo, para não virar poluição.
+- **Noite:** como os sinais de prece, não passam pela tabela da noite.
+- A amostra é `sinais/amostra_baloes_4x.png`, com cada balão sobre uma pessoa, de dia e de noite.
+
 ## 6. Interface da alça (`interface/`)
 
 Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a alça montada, a crônica, a dica do cursor e o alfabeto completo.
