@@ -22,7 +22,7 @@ INDICE = {rgb: i for i, rgb in enumerate(PALETA)}
 RUINAS = [
     "memoria/cabana_abandonada", "memoria/casa_ruina", "estagio3/casa_pedra_ruina", "estagio3/templo_pedra_ruina",
     "estagio4/forja_ruina", "estagio4/casa_enxaimel_ruina", "estagio4/templo_colunas_ruina",
-    "estagio5/biblioteca_ruina", "estagio5/templo_escrita_ruina", "estagio6/moinho_ruina",
+    "estagio5/biblioteca_ruina", "estagio5/casa_caiada_ruina", "estagio5/templo_escrita_ruina", "estagio6/moinho_ruina",
     "estagio6/muralha_ruina", "estagio6/muralha_torre_ruina", "estagio6/casa_tijolo_ruina",
     "estagio6/templo_cupula_ruina", "estagio6/barco_naufragado", "memoria/tumulo", "memoria/pedra_erguida",
 ]

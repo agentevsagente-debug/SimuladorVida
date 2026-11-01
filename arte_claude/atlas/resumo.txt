@@ -9,12 +9,12 @@ estagio1: 128x64, 7 peças, 32 KB
 estagio1_inverno: 128x64, 7 peças, 32 KB
 estagio2: 256x128, 33 peças, 128 KB
 estagio2_inverno: 256x128, 33 peças, 128 KB
-estagio3: 256x256, 42 peças, 256 KB
-estagio3_inverno: 256x256, 42 peças, 256 KB
-estagio4: 256x256, 53 peças, 256 KB
-estagio4_inverno: 256x256, 53 peças, 256 KB
-estagio5: 256x256, 47 peças, 256 KB
-estagio5_inverno: 256x256, 47 peças, 256 KB
-estagio6: 256x256, 64 peças, 256 KB
-estagio6_inverno: 256x256, 64 peças, 256 KB
+estagio3: 256x256, 51 peças, 256 KB
+estagio3_inverno: 256x256, 51 peças, 256 KB
+estagio4: 256x256, 62 peças, 256 KB
+estagio4_inverno: 256x256, 62 peças, 256 KB
+estagio5: 256x256, 66 peças, 256 KB
+estagio5_inverno: 256x256, 66 peças, 256 KB
+estagio6: 256x256, 73 peças, 256 KB
+estagio6_inverno: 256x256, 73 peças, 256 KB
 total: 5.19 MB
