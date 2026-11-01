@@ -613,7 +613,12 @@ func _clima_do_dia() -> void:
 	# Fim natural da seca: a chuva volta.
 	if seca_global and dia >= seca_fim_dia:
 		seca_global = false
-		var e := registrar("seca_fim", "natural", 4, "", -1, [], {"inicio": seca_evento})
+		# Os povos com canais (estágio 6) quase não sentem a seca: a crônica conta isso.
+		var irrigados: Array = []
+		for g in grupos_vivos():
+			if g.estagio >= 6:
+				irrigados.append(g.id)
+		var e := registrar("seca_fim", "natural", 4, "", -1, [], {"inicio": seca_evento, "irrigados": irrigados})
 		for z in zonas.values():
 			if z.seca and z.seca_ate <= dia:
 				z.seca = false
@@ -1578,6 +1583,11 @@ func _ensino() -> void:
 				var p_desc := 0.004 * inventores.size()
 				if a - g.fome_ultima_ano <= 3:
 					p_desc += 0.03 * mini(inventores.size(), 2)
+				var pressao := _pressao_do_tempo(g)
+				if pressao > 0.0:
+					p_desc += pressao
+					if inventores.is_empty():
+						inventores = _adultos(g, 16)
 				if not inventores.is_empty() and chance(p_desc):
 					var inv: Pessoa = escolher(inventores)
 					inv.sabe_agricultura = true
@@ -1605,6 +1615,7 @@ func _ensino() -> void:
 		var adultos := _adultos(g, 15).size()
 		if sabem >= 4 and sabem >= adultos * 0.35:
 			g.estagio = 2
+			g.estagio_desde = a
 			registrar("agricultura", "social", 9, g.zona, g.id, [], {"sabem": sabem})
 			for p in _membros(g):
 				if p.idade(a) >= 12:
@@ -1655,6 +1666,7 @@ func _progresso_tecnico() -> void:
 				sabem += 1
 		if sabem >= 4 and sabem >= adultos * 0.15:
 			g.estagio = k
+			g.estagio_desde = a
 			var e := registrar("estagio", "social", 9, g.zona, g.id, [], {"estagio": k, "saber": saber, "sabem": sabem})
 			if k == 5:
 				g.escrita_desde = a
@@ -1684,15 +1696,35 @@ func _manter_saberes(g: Grupo) -> void:
 			escolher(aprendizes).saberes.append(saber)
 
 
+## Platôs longos demais cansam quem assiste: depois de PLATO_ANOS no mesmo estágio, a
+## necessidade ensina. A chance de descobrir o próximo saber cresce a cada década a mais, e
+## qualquer adulto pode descobrir, não só os engenhosos e curiosos. Antes disso, nada muda:
+## a mediana do tempo em cada estágio fica onde estava; só os extremos encurtam.
+const PLATO_ANOS := 40
+
+
+func _pressao_do_tempo(g: Grupo) -> float:
+	var desde: int = g.estagio_desde if g.estagio_desde >= 0 else g.origem.get("ano", 1)
+	var anos := ano() - desde
+	if anos <= PLATO_ANOS:
+		return 0.0
+	return 0.006 * float(anos - PLATO_ANOS) / 10.0
+
+
 func _tentar_descoberta(g: Grupo, k: int) -> void:
 	var a := ano()
 	var inventores: Array = []
 	for p in _adultos(g, 16):
 		if p.tem("engenhoso") or (p.tem("curioso") and k != 4):
 			inventores.append(p)
+	var p_desc := 0.0012 * inventores.size()
+	var pressao := _pressao_do_tempo(g)
+	if pressao > 0.0:
+		p_desc += pressao
+		if inventores.is_empty():
+			inventores = _adultos(g, 16)
 	if inventores.is_empty():
 		return
-	var p_desc := 0.0012 * inventores.size()
 	var motivo := ""
 	match k:
 		3:
@@ -1756,6 +1788,7 @@ func _conferir_regressao(g: Grupo) -> void:
 				continue
 		var antes := g.estagio
 		g.estagio = k - 1
+		g.estagio_desde = ano()
 		registrar("regressao", "social", 8, g.zona, g.id, [], {"saber": saber, "de": antes, "para": g.estagio})
 		return
 
@@ -1935,10 +1968,16 @@ func _ruinas_e_memoria() -> void:
 			# Ruínas guardam conhecimento.
 			var proximo = "agricultura" if g.estagio == 1 else (SABERES[g.estagio + 1] if g.estagio < ESTAGIO_MAX else "")
 			if not proximo.is_empty() and r["saberes"].has(proximo) and Cotidiano.zona_em(r["x"]) == g.zona and chance(0.04):
+				# As ruínas só ensinam o que ninguém do povo sabe ainda.
 				var curiosos: Array = []
+				var alguem_sabe := false
 				for p in _adultos(g, 16):
-					if p.tem("curioso") or p.tem("engenhoso"):
+					if (p.sabe_agricultura if proximo == "agricultura" else p.saberes.has(proximo)):
+						alguem_sabe = true
+					elif p.tem("curioso") or p.tem("engenhoso"):
 						curiosos.append(p)
+				if alguem_sabe:
+					curiosos.clear()
 				if not curiosos.is_empty():
 					var c: Pessoa = escolher(curiosos)
 					if proximo == "agricultura":
@@ -1953,7 +1992,22 @@ func _ruinas_e_memoria() -> void:
 				g.ruinas_vistas.append(r["povo"])
 				var expl := _explicar_ruinas(g)
 				registrar("mito_ruinas", "social", 6, g.zona, g.id, [], {"povo": r["povo"], "explicacao": expl,
-					"era": r["era"], "estagio": r["estagio"]})
+					"era": r["era"], "estagio": r["estagio"], "obra": _obra_marcante(r["povo"], g), "antiga": r["era"] < era})
+
+
+## O que mais chama a atenção de quem chega às ruínas de um povo: uma das peças que
+## sobraram, escolhida pelo ruído fixo (não toca no sorteio do mundo).
+func _obra_marcante(povo: String, quem: Grupo) -> String:
+	var ordem := ["templo", "muralha", "moinho", "arquivo", "forja", "celeiro", "cabana"]
+	var tem: Array = []
+	for t in ordem:
+		for r in ruinas:
+			if r["povo"] == povo and r["tipo"] == t:
+				tem.append(t)
+				break
+	if tem.is_empty():
+		return "fogueira"
+	return tem[int(Cotidiano.ruido(quem.id, quem.ruinas_vistas.size(), 17) * tem.size()) % tem.size()]
 
 
 func _explicar_ruinas(g: Grupo) -> String:

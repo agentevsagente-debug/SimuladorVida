@@ -261,7 +261,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `fim_do_mundo` | não resta ninguém | chamado |
 | `crenca`, `separacao`, `conquista`, `agricultura` | marcos do mundo | chamado (importância ≥ 8) |
 | `nascimento`, `morte`, `casamento` | ciclo de vida | conforme a importância |
-| `tempestade`, `seca_inicio`, `seca_fim`, `eclipse` | clima e céu | nota |
+| `tempestade`, `seca_inicio`, `seca_fim`, `eclipse` | clima e céu; `seca_fim` traz `dados.irrigados`, os povos com canais (estágio 6), que quase não sentiram a seca | nota |
 | `chuva_divina`, `raio_divino`, `fartura_divina`, `fogo_divino`, `terra_erguida`, `sonho`, `seca_divina`, `diluvio`, `terremoto_divino`, `pressagio`, `cura` | resultado de `usar_poder` | nota ou chamado |
 | `linhagem` | a pessoa acompanhada morreu, e o acompanhamento passou adiante | nota |
 | `guerra_inicio`, `guerra_fim` | uma briga vira guerra com nome (na segunda batalha) e termina: trégua, imposição do deus, conquista, extinção ou esfriou | chamado |
@@ -275,7 +275,7 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `regressao` | morreu o último que sabia, e o povo volta um estágio (`dados.de`, `dados.para`) | chamado |
 | `arquivo_salvou` | com a escrita, alguém reaprende nas tabuletas o saber que ia se perder | nota |
 | `estudo_do_ceu` | o povo passa a prever eclipses: sinais no céu impressionam menos (metade no estágio 5, um quarto no 6) | nota |
-| `ruinas_saber`, `mito_ruinas` | alguém aprende nas ruínas; um povo explica ruínas de quem não existe mais ("gigantes", "castigo" ou "gente") | nota |
+| `ruinas_saber`, `mito_ruinas` | alguém aprende nas ruínas (só o que ninguém do povo sabe ainda); um povo explica ruínas de quem não existe mais ("gigantes", "castigo" ou "gente"), pelo que viu lá (`dados.obra`: templo, muralha, moinho, arquivo, forja, celeiro, cabana ou fogueira; `dados.antiga`: de uma era anterior) | nota |
 | `livro_fechado` | a crônica de uma era se fechou como livro | nota |
 | `peste` | uma doença vem de longe e entra em todos os povos; mata muito por cerca de 20 dias (uma vez a cada ~150 anos) | chamado |
 | `profeta` | alguém prega outro nome para o deus. `dados.aceito`: o povo aceitou (o deus muda de nome), ou o templo chamou de heresia e os seguidores fundaram outro povo (vem em seguida uma `separacao` por cisma) | chamado |
@@ -473,6 +473,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | 5, escrita | escrever | gente engenhosa ou curiosa; mais depressa com sacerdote | os costumes não se esquecem mais; o saber se ensina 3 vezes mais rápido; o arquivo pode salvar um saber perdido; o povo escreve a própria crônica; o estudo do céu enfraquece o presságio |
 | 6, engenharia | canais e moinhos | povo com 30 pessoas ou mais; mais depressa depois de fome | irrigação: a seca pesa pouco e não gera prece por chuva; tudo impressiona 40% menos, porque o povo precisa menos do deus. É o teto. |
 
+Quanto tempo leva: veja `jogo/ferramentas_sim/sondagem/estagios.txt` (10 mundos de 300 anos). Depois de 40 anos no mesmo estágio, a necessidade ensina: a chance de descobrir o próximo saber cresce a cada década a mais, e qualquer adulto pode descobrir, não só os engenhosos e curiosos. Isso encurta os platôs longos (que chegavam a 158 anos, ou dois meses reais sem mudar de estágio) sem mexer no tempo típico.
+
 O saber de cada estágio vive nas pessoas, que o ensinam devagar. Quando morre o último que sabia, o povo regride um estágio, a não ser que a escrita o salve. O sonho do deus dá a alguém o saber do próximo estágio, que pode servir à paz ou à guerra.
 
 ## A crônica do próprio povo
@@ -484,7 +486,7 @@ mundo.cronica_do_povo(grupo_id) -> String    # markdown; vazio se o povo nunca e
 Um povo que chega à escrita passa a contar a própria história, ano a ano, do seu jeito.
 - Começa por um mito de origem: "No começo, o Olho Escuro escolheu nossos pais...".
 - Registra as vitórias que o deus deu, os castigos merecidos e as preces atendidas.
-- Muitas vezes, contradiz a crônica do deus: o povo escreve que a chuva veio porque rezou, e a crônica do deus diz que foi acaso. A crônica do deus aponta a contradição: "Nas tabuletas de Nail, ficou escrito que foi o Olho Escuro."
+- Muitas vezes, contradiz a crônica do deus: o povo escreve que a chuva veio porque rezou, e a crônica do deus diz que foi acaso. A crônica do deus aponta a contradição e cita a voz do povo: "Nas tabuletas de Sagak, a história é outra: «A seca acabou porque rezamos.»"
 
 ## Fim do mundo, eras e estante
 
