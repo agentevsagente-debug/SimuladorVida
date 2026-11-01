@@ -71,6 +71,8 @@ def principal():
                     continue
                 n = isolados(img)
                 limite = max(base[e] for e in estados(meia / 2)) + 960
+                if extra:  # as nuvens de chuva da arte têm pontilhado próprio, e as gotas são pixels soltos
+                    limite += 600
                 ok = n <= limite
                 falhas += 0 if ok else 1
                 print(f"{hora:>5}h {' '.join(extra):14} {n:5d} isolados (limite {limite:5d})  {'OK' if ok else 'GRADE'}")

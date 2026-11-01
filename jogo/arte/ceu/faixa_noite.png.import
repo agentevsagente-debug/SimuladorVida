@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://b5bes1setalrj"
+path="res://.godot/imported/faixa_noite.png-fb9002f881775027723a0d0b079fdcf4.image"
+
+[deps]
+
+source_file="res://arte/ceu/faixa_noite.png"
+dest_files=["res://.godot/imported/faixa_noite.png-fb9002f881775027723a0d0b079fdcf4.image"]
+
+[params]
+

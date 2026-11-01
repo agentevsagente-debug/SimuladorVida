@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://coy7vhtq0n34k"
+path="res://.godot/imported/nuvens_noite.png-2c29d72e4d2aad78aef66e82922bb06d.image"
+
+[deps]
+
+source_file="res://arte/ceu/nuvens_noite.png"
+dest_files=["res://.godot/imported/nuvens_noite.png-2c29d72e4d2aad78aef66e82922bb06d.image"]
+
+[params]
+

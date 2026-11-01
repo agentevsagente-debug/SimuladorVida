@@ -35,6 +35,7 @@ const Atmosfera = preload("res://apresentacao/atmosfera.gd")
 const Sinais = preload("res://apresentacao/sinais.gd")
 const Vida = preload("res://apresentacao/vida.gd")
 const Obras = preload("res://apresentacao/obras.gd")
+const Ceu = preload("res://apresentacao/ceu.gd")
 const REMAP = preload("res://apresentacao/remap.gdshader")
 
 const LARGURA := 480
@@ -45,7 +46,7 @@ const ENTARDECER := 1
 const NOITE := 2
 const FUNDOS := ["ceu", "montanhas_longe", "montanhas_perto", "mata_distante"]
 ## Quanto cada plano de fundo acompanha a câmera (0 = parado no infinito).
-const PARALAXE := [0.0, 0.35, 0.55, 0.8]
+const PARALAXE := [0.05, 0.35, 0.55, 0.8]
 const HORAS_NOMEADAS := {"dia": 12, "entardecer": 18, "noite": 22}
 ## Peças pequenas do cenário que somem quando uma construção cai em cima.
 const PECAS_MIUDAS := ["capim", "capim_seco", "arbusto", "arbusto_frutas", "pedra_pequena",
@@ -99,6 +100,7 @@ var _vida: Vida
 var _estacao_fundos := ""
 var _gelo := []            # colunas de água congelada
 var _tremor := 0.0
+var _ceu: Ceu
 var _tex_fogueira: Texture2D
 var _atmosfera: Atmosfera
 var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
@@ -178,6 +180,11 @@ func avancar(delta: float, desenhar: bool) -> void:
 		_sinais.atualizar(sim, self, _relogio, figuras)
 	_atmosfera.avancar(delta, _hora(), _estado[0] if _estado[2] < 0.5 else _estado[1], _fogos,
 		{} if _modo_layout else sim.clima, _modo_layout)
+	if _ceu:
+		var meio: int = _estado[0] if _estado[2] < 0.5 else _estado[1]
+		_ceu.mostrar_sol = _estado[3] == ""
+		_ceu.avancar(delta, _hora(), ESTADOS[meio], int(sim.tempo.get("dia", 1)),
+			not sim.clima.get("tempestade", {}).is_empty() or _atmosfera.chovendo())
 	if _capturar != "" and _relogio >= _capturar_apos + _gravados * _intervalo:
 		_quadros_ate_capturar -= 1
 		if _quadros_ate_capturar <= 0:
@@ -268,6 +275,11 @@ func _criar_nos() -> void:
 		_canto_fundo.append(Vector2.ZERO)
 		if nome == "ceu":
 			_fundos[-1].material.set_shader_parameter("frente_ativa", true)
+	if not _modo_layout:  # o céu vivo fica entre o degradê e as montanhas
+		_ceu = Ceu.new()
+		add_child(_ceu)
+		move_child(_ceu, _fundos[0].get_index() + 1)
+		_ceu.criar(self)
 	_agua = _sprite(4, paleta, tabelas)
 	_mundo = _sprite(1, paleta, tabelas)
 	_fogueiras = Node2D.new()
@@ -324,11 +336,23 @@ func _carregar_fundos() -> void:
 	_tex_fundo.clear()
 	for i in FUNDOS.size():
 		var imgs := ESTADOS.map(func(e): return Arte.imagem(Arte.da_estacao("camadas/%s_%s" % [FUNDOS[i], e]) + ".png"))
+		if i == 0 and _ceu:  # com o céu vivo, o céu é só o degradê; sol, lua, nuvens e estrelas vêm do Ceu
+			imgs = ESTADOS.map(func(e): return _faixa_repetida(e))
 		var corte := _recortar(imgs)
 		for k in ESTADOS.size():
 			_tex_fundo["%s_%s" % [FUNDOS[i], ESTADOS[k]]] = corte[1][k]
 		_canto_fundo[i] = Vector2(corte[0].position)
 	_camera_aplicada = [-1, Vector2(-1, -1)]
+
+
+## O degradê do céu (faixa de 4 × 160 da arte) repetido na largura.
+func _faixa_repetida(estado: String) -> Image:
+	var nome := estado + ("_inverno" if Arte.estacao == "inverno" and estado != "noite" else "")
+	var faixa := Arte.imagem("ceu/faixa_%s.png" % nome)
+	var img := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
+	for x in range(0, LARGURA, faixa.get_width()):
+		img.blit_rect(faixa, Rect2i(Vector2i.ZERO, faixa.get_size()), Vector2i(x, 0))
+	return img
 
 
 func _textura_fundo(nome: String) -> Texture2D:
@@ -735,6 +759,8 @@ func _atualizar_camera(delta: float) -> void:
 	# os planos de fundo andam menos que o mundo (paralaxe)
 	for i in FUNDOS.size():
 		_fundos[i].position = _canto_fundo[i] + (c * (1.0 - PARALAXE[i])).round()
+	if _ceu:  # o céu vivo anda como o degradê: quase parado
+		_ceu.position = (c * (1.0 - PARALAXE[0])).round()
 	var origem: Vector2 = get_parent().global_position + position
 	for m in _materiais:
 		m.set_shader_parameter("origem", origem)

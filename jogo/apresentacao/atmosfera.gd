@@ -166,6 +166,10 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 					Vector2(_rng.randf_range(-2, 2), -3), _rng.randf_range(1.5, 3.0), 5.0, i)
 
 
+func chovendo() -> bool:
+	return _nuvens_em.x >= 0
+
+
 func em_clarao() -> bool:
 	return _clarao > 0.0
 

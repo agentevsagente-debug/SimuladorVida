@@ -146,6 +146,26 @@ Em `apresentacao/vida.gd`:
 - **Cursor por cima:** a dica mostra "Dia 12 do outono, ano 37".
 - **Mouse:** a área do relógio entra no polígono de passagem do mouse.
 
+## Céu vivo
+
+O céu agora é só o degradê da arte: a faixa de 4 × 160 da sessão C, repetida na largura. Por cima dele, e atrás das montanhas, `apresentacao/ceu.gd` desenha:
+
+- **Nuvens em 3 camadas de profundidade,** tiradas das nuvens da arte de cada horário por `ferramentas/preparar_ceu.py` e separadas pelo tamanho:
+  - longe: fiapos e nuvens pequenas, 1 px a cada 20 s;
+  - meio: 1 px a cada 8 s;
+  - perto: as maiores, 1 px a cada 3 s.
+
+  O vento muda de direção de um dia para outro e fica 4 vezes mais forte na tempestade. As nuvens saem por um lado e voltam pelo outro, com forma, altura e lado sorteados.
+- **Sol e lua em arco, ligados ao relógio:** o sol nasce à esquerda às 6h, passa pelo alto ao meio-dia e se põe à direita às 18h, maior e dourado de manhã cedo e no fim da tarde. A lua faz o arco da noite, com fases num ciclo de 10 dias (nova, crescente, cheia e minguante). As posições ficam sempre em pixel inteiro.
+- **Estrelas:** as 116 estrelas da arte surgem aos poucos das 19h às 21h, as mais fortes primeiro, e somem até as 5h30. O céu gira cerca de 6° ao longo da noite em volta de um ponto abaixo do horizonte. Quatro estrelas cintilam, e passa uma estrela cadente a cada 40 a 120 s.
+- **Paralaxe:** ao seguir a linhagem, o céu fica quase parado (fator 0,05), as montanhas distantes andam devagar (0,35), as próximas um pouco mais (0,55), a mata mais rápido (0,8) e o mundo na velocidade normal.
+- **Leveza:** só pede desenho quando algum pixel muda. A CPU ficou como antes: 0,149% ao meio-dia e 0,161% à noite, em 60 s, em 3x.
+- **Testes:**
+  - o teste de fidelidade continua usando o céu inteiro da arte;
+  - o teste do céu sem grade passa em 96 de 96. Nas capturas com chuva, a margem é 600 pixels maior, porque as nuvens de chuva da arte têm pontilhado próprio e as gotas são pixels soltos. Conferi a olho: não há grade.
+- **Capturas:** `capturas/ceu-vivo-7h.png`, `ceu-vivo-12h.png`, `ceu-vivo-18h30.png`, `ceu-vivo-2h-lua.png` e `ceu-vivo-rapido.gif`, este com 20 s no ritmo rápido.
+- **Visto uma vez e não reproduzido:** numa captura, a vista saiu aproximada 2x sem estar seguindo a linhagem. Nas capturas seguintes, nos mesmos parâmetros, não se repetiu.
+
 ## Tarefa 5: leveza
 
 **Método:** o mesmo da fase 0. `jogo/ferramentas/medir.ps1`:
@@ -174,5 +194,5 @@ Em `apresentacao/vida.gd`:
 - **Memória:** depende de qual medida vale para a meta.
   - Na coluna "Memória" do Gerenciador de Tarefas, que é o que o usuário vê, o jogo usa cerca de 113 MB, abaixo de 200.
   - No conjunto de trabalho e nos bytes privados, usa cerca de 216 MB, acima de 200.
-  - **Decisão do orquestrador:** qual das medidas vale para a meta, e se autoriza os modelos de exportação, que tirariam o código do editor.
+  - **Decisão do usuário (01/11/2026):** a memória acima de 200 MB no conjunto de trabalho pode passar.
 - **Escondido nas medições em lote:** nas duas vezes, algo de fora restaurou a janela por volta de 150 a 250 s, e a CPU e a memória subiram ao nível do visível. O CSV de `escondido` registra isso. Rodando sozinho por 6 minutos, o cenário ficou minimizado o tempo todo, sem restaurações, com 199–200 MB e 0,4% de um núcleo.
