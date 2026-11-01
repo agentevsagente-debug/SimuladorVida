@@ -13,8 +13,8 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 
 | Atlas | Tamanho | Peças | Memória de vídeo (L × A × 4) |
 |---|---|---|---|
-| `comum` | 512x512 | 174 | 1024 KB |
-| `pessoas_inverno` | 256x128 | 42 | 128 KB |
+| `comum` | 512x512 | 205 | 1024 KB |
+| `pessoas_inverno` | 256x128 | 61 | 128 KB |
 | `estacao_primavera` | 256x128 | 68 | 128 KB |
 | `estacao_verao` | 256x128 | 68 | 128 KB |
 | `estacao_outono` | 256x128 | 68 | 128 KB |

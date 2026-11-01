@@ -27,6 +27,20 @@ def molde(linhas):
 # ---------------------------------------------------------------- ícones 12x12
 
 ICONES_12 = {
+    "rapido2": [
+        "............",
+        "............",
+        "W...W...W...",
+        "WW..WW..WW..",
+        "WWW.WWW.WWW.",
+        "WWWGWWWGWWWG",
+        "WWG.WWG.WWG.",
+        "WG..WG..WG..",
+        "............",
+        "............",
+        "............",
+        "............",
+    ],
     "seca": [
         "...y..y..y..",
         "....yyyyy...",
@@ -282,6 +296,7 @@ ICONES_12 = {
 }
 
 ICONES_8 = {
+    "rapido2": ["........", "W..W..W.", "WW.WW.WW", "WWGWWGWW", "WG.WG.WG", "........", "........", "........"],
     "seca": [".y.y.y..", "..yyy...", ".yWWWy..", "..yyy...", ".y.y.y..", "nnnnnnnn", "NxNNNxNN", "ddxdddxd"],
     "diluvio": [".GWWWG..", "GGGGGGG.", "c.c.c.c.", ".b.b.b..", "cc..cc..", "bbccbbcc", "bbbbbbbb", "BBBBBBBB"],
     "terremoto": [".G....G.", "..g..g..", "........", "vvvxxvvv", "VVxxVVVV", "NNxNNNNN", "NNNxxNNN", "dddxdddd"],

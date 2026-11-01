@@ -188,7 +188,7 @@ Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a al�
 | Grupo | Ícones |
 |---|---|
 | Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
-| Tempo | `pausa`, `normal`, `rapido`, `salto` |
+| Tempo | `pausa`, `normal`, `rapido`, `rapido2` (três setas, para o ritmo de 50x), `salto` |
 | Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar) |
 
 Os ícones foram desenhados para o fundo escuro da alça.
@@ -580,6 +580,44 @@ O `estacoes/amostra_construcoes_inverno_4x.png` mostra as construções nevadas.
 - `luzes/fumaca_chamine_4q.png` (8 × 16): um fiapo fino de fumaça, irregular e sem grade, que sobe e se desfaz. Use só no inverno, nas casas com lareira.
 
 O `luzes/amostra_luzes_4x.png` mostra as casas à noite no inverno, com as janelas acesas e a fumaça.
+
+## 20. Cotidiano: subações, incidentes e caça (`acoes/cotidiano.py`)
+
+As folhas abaixo ficam em `acoes/` e seguem o mesmo padrão das outras ações (veja a seção 18), com as cores-base de `habitantes/trocas.json`. `acoes/amostra_cotidiano_4x.png` mostra todas, junto com os animais e os objetos novos.
+
+### Mapa subação → folha
+
+| Subação | Folha | Quadros | Como montar |
+|---|---|---|---|
+| `colher_arbusto` | `acoes/colher_arbusto_4q` | 4 | alcança no alto, pega a fruta e põe no cesto do quadril; de frente para o arbusto |
+| `cavar_raiz` | `acoes/cavar_raiz_4q` | 4 | ajoelhado; a vara crava, revolve a terra e a raiz sai na mão |
+| `catar_lenha` | `acoes/catar_lenha_4q` | 4 | abaixa, pega os galhos e levanta com eles no braço; depois, `carregar_lenha_4q` |
+| `carregar_cesto` | `acoes/carregar_cesto_cabeca_4q` (na cabeça), `acoes/andar_cesto_4q` (nas costas), `acoes/carregar_cesto_4q` (no quadril) | 4 | |
+| `cacar` | `acoes/cacar_espreitar_4q`, e depois `acoes/cacar_arremessar_4q` | 4 + 4 | anda agachado com a lança na horizontal e arremessa. A lança solta é `objetos/lanca_voando` (12 × 3), lançada a partir do quadro 2. |
+| `carregar_caca` | 2 × `acoes/carregar_caca_4q` + `objetos/caca_no_pau_porco` ou `caca_no_pau_ave` | 4 | os dois carregadores ficam a 12 px um do outro, com o quadro defasado em 2. A linha 0 do objeto (o pau) vai na linha 3 dos carregadores, entre eles. |
+| `cozinhar` | `acoes/cozinhar_mexer_4q` + `objetos/panela`; `acoes/cozinhar_espeto_4q` + `objetos/espeto` | 4 | agachado diante da panela, mexendo; ou sentado girando o espeto. O fogo é a fogueira. |
+| `buscar_agua` | `acoes/buscar_agua_4q` | 4 | na margem: abaixa, enche a cuia e levanta. Depois, a cuia cheia é `objetos/cuia_cheia`. |
+| `banhar` | `acoes/banhar_4q` | 4 | na margem: joga água da cuia na cabeça |
+| `vigia` | `acoes/vigia_2q` | 2 | sentado com a lança em pé; no quadro 1 a cabeça pesa de sono (use à noite) |
+| `contar_historia` | `acoes/contar_historia_4q` + ouvintes `acoes/ouvir_sentado_2q` | 4 e 2 | quem conta fica de pé, gesticulando; os ouvintes ficam sentados em volta, virados para ele |
+
+### Pequenos incidentes
+
+| Incidente | Folha | Quadros | Como montar |
+|---|---|---|---|
+| crianças brigando | `acoes/criancas_brigar_4q` (6 × 8) | 4 | duas crianças de frente, uma espelhada, a 5 px, com quadros defasados |
+| tropeçar e cair | `acoes/tropecar_cair_4q` (12 × 12) | 4 | tropeça, se desequilibra, cai e fica de bruços até a coluna 11. Depois, `agachar_2q` para levantar. |
+| espantar um animal | `acoes/espantar_4q` | 4 | abana os braços dando pulinhos, virado para o bicho |
+| discussão | `acoes/discutir_4q` | 4 | duas pessoas de frente, uma espelhada, a 9 px, com quadros defasados |
+| abraço de reencontro | `acoes/abraco_4q` | 4 | duas pessoas de frente, uma espelhada, a 5 px; as duas correm um passo e fecham o abraço |
+
+### Animais de caça (`criaturas/`)
+
+| Folha | Quadro | Quadros | Onde e quando |
+|---|---|---|---|
+| `porco_do_mato_4q` | 10 × 6 | 4 | anda e fuça na borda da floresta e no mato, de dia; foge de gente |
+| `ave_grande_4q` | 8 × 8 | 4 | anda e bica o chão nos campos e na margem, de dia |
+| `porco_abatido`, `ave_abatida` | 10 × 6, 8 × 8 | 1 | o animal caído, depois da caça |
 
 ## Critérios
 
