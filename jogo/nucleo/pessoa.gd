@@ -15,6 +15,7 @@ var memoria: Array = []         # ids de eventos vividos
 var saude: float = 1.0          # 0 = morte
 var fe: float = 0.0             # relação pessoal com o deus, -1..1
 var sabe_agricultura: bool = false
+var saberes: Array = []          # estágios 3 a 6: "pedra", "metal", "escrita", "engenharia"
 var rancores: Dictionary = {}   # id de pessoa -> intensidade
 var vivo: bool = true
 var morte_ano: int = -1

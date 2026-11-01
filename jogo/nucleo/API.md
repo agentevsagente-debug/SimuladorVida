@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 5, de 01/11/2026 (fase 2, item 1: os 11 poderes). Desde a versão 1, só houve acréscimos; nada do que existia mudou. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 6, de 01/11/2026 (fase 2: os 11 poderes, estágios 3 a 6, ruínas, fim do mundo e eras, estante, 6 dimensões culturais). Desde a versão 1, só houve acréscimos. A única mudança de comportamento: `cronica()` agora começa, por padrão, no início da era atual, o que dá o mesmo resultado na primeira era. Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -74,12 +74,15 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 |---|---|
 | `id`, `nome` | identificador e nome do povo ("Zeor") |
 | `zona`, `x_ini`, `x_fim` | onde vive; `x_ini` e `x_fim` são a faixa do acampamento. Se dois povos dividem uma zona, cada um fica com uma parte. |
-| `membros`, `estagio` | quantas pessoas; 1 = coleta, 2 = agricultura |
+| `membros`, `estagio` | quantas pessoas; estágio 1 = coleta, 2 = agricultura, 3 = pedra, 4 = metal, 5 = escrita, 6 = engenharia |
 | `lider`, `sacerdote` | id da pessoa, ou -1 |
 | `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético |
 | `ceticos` | o povo deixou de rezar |
 | `em_fome`, `doenca` | estados atuais |
 | `costumes` | lista de chaves: "estocar", "agua", "festa_chuva", "tabu_tempestade", "queimar_mortos", "lancas", "oferendas" |
+| `cultura` | as 6 dimensões culturais, como palavras: `deus` ("devota", "temerosa", "cetica" ou "" se ainda não crê), `estranhos` ("acolhedora", "desconfiada"), `poder` ("lider", "conselho", "sacerdotes"), `recursos` ("partilha", "acumula"), `violencia` ("pacifica", "guerreira"), `mortos` ("enterram", "queimam", "veneram" ou "") |
+| `aparencia` | `{parede, telhado, simbolo, roupa}`, para escolher as peças de `arte_claude/pecas/culturas/` e dos estágios: parede "taipa", "pedra" ou "madeira"; telhado "palha", "telha" ou "tabuas"; símbolo "sol", "lua" ou "arvore"; roupa "turquesa", "lilas" ou "rosa". Sai do nome do povo (não sorteia nada); um povo novo herda a do povo de onde saiu e muda uma coisa. |
+| `escreve` | o povo chegou à escrita e tem a própria crônica (`cronica_do_povo`) |
 | `origem` | `{}` para o povo original, ou `{pai, causa ("migracao", "briga", "cisma"), ano, evento}` |
 | `estranhos` | float de -1 (desconfia de quem vem de fora) a 1 (acolhe). Muda com casamentos entre povos e com ataques. |
 | `mortos` | o que o povo faz com os mortos: "enterram", "queimam", "veneram", ou "" se ainda não decidiu |
@@ -98,16 +101,29 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 
 ### `construcoes() -> Array[Dictionary]`
 
-`{tipo, x, largura, grupo}`, com `x` no centro da peça. Tipos:
+`{tipo, x, largura, grupo, estagio, ruina}`, com `x` no centro da peça. `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `ruina` é sempre false aqui. Tipos:
 
 | Tipo | Largura | Quando existe |
 |---|---|---|
 | `fogueira` | 8 | sempre, no centro do acampamento |
 | `altar` | 8 | o povo crê (e não é cético) |
-| `cabana` | 16 | uma por abrigo. Cabanas são construídas fora do inverno e destruídas por tempestade e fogo. |
-| `roca` | 24 | povo no estágio 2, uma para cada ~6 pessoas, até 4 |
+| `templo` | 32 | o povo crê e está no estágio 2 ou mais (o templo do estágio: degraus no 3, colunas no 4, escrita no 5, cúpula no 6) |
+| `cabana` | 16, 24 ou 32 | as moradias: cabana no estágio 1 (16), casa de taipa no 2 (24), casas maiores do 3 em diante (32). Do estágio 3 em diante, há uma casa para cada 8 pessoas. |
+| `celeiro` | 24 | estágio 2 ou mais, se o povo tem o costume de estocar |
+| `roca` | 16 | estágio 2 ou mais, uma para cada ~6 adultos, até 4; `irrigada: true` no estágio 6 (canal ao lado) |
+| `forja` | 24 | estágio 4 ou mais |
+| `arquivo` | 32 | estágio 5 ou mais (a biblioteca da arte) |
+| `moinho` | 32 | estágio 6 |
+| `muralha` | 16 | estágio 6, povo guerreiro: uma torre em cada ponta do acampamento |
+| `barco` | 24 | estágio 6, povo do lago ou da praia: na água, em x = 112 |
 
-As posições só mudam quando o número de peças muda ou quando o povo se muda de zona.
+As peças vão para o primeiro lugar livre perto da fogueira, numa ordem fixa. Só mudam de lugar quando o número de peças muda ou quando o povo se muda. Moradias, celeiro, moinho e roças que não cabem na faixa do povo ficam de fora. As peças únicas (altar, templo, arquivo, forja) sempre aparecem, mesmo encostadas.
+
+### `ruinas_visiveis() -> Array[Dictionary]`
+
+Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistados, inclusive de eras anteriores: `{tipo, x, largura, estagio, povo, era, ano, anos, ruina: true}`. `anos` é a idade da ruína, para cobrir de mato.
+- A natureza retoma o espaço: ruínas dos estágios 1 e 2 somem em 30 anos; as de pedra em diante, em 200.
+- Ruínas guardam conhecimento: um povo que vive perto pode aprender nelas o saber seguinte (evento `ruinas_saber`).
 
 ### `pessoas_visiveis() -> Array[Dictionary]` (só as vivas)
 
@@ -183,6 +199,13 @@ Uma lista completa de tipos e dados de cada um fica para a próxima versão dest
 | `reforma` | uma geração abandona um costume herdado ou de origem esquecida | nota |
 | `dependencia`, `exigencia`, `desamparo` | o povo deixa de se preparar porque o deus sempre responde; passa a pedir coisas pequenas; e, no primeiro silêncio, paga caro | nota |
 | `expedicao` | uma família parte além da borda do mundo e nunca volta | nota |
+| `descoberta_tecnica` | alguém descobre o saber do próximo estágio (`dados.saber`: "pedra", "metal", "escrita", "engenharia") | nota |
+| `estagio` | o povo chega a um estágio novo (`dados.estagio`, de 3 a 6) | chamado |
+| `regressao` | morreu o último que sabia, e o povo volta um estágio (`dados.de`, `dados.para`) | chamado |
+| `arquivo_salvou` | com a escrita, alguém reaprende nas tabuletas o saber que ia se perder | nota |
+| `estudo_do_ceu` | o povo passa a prever eclipses: sinais no céu impressionam menos (metade no estágio 5, um quarto no 6) | nota |
+| `ruinas_saber`, `mito_ruinas` | alguém aprende nas ruínas; um povo explica ruínas de quem não existe mais ("gigantes", "castigo" ou "gente") | nota |
+| `livro_fechado` | a crônica de uma era se fechou como livro | nota |
 
 `camada(evento)` aplica a regra: importância ≥ 8 ou tipo de chamado → "chamado"; importância ≥ 4 → "nota"; o resto → "ambiente".
 
@@ -340,5 +363,45 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência. |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
+| `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |
+
+## Estágios e a relação com o deus
+
+| Estágio | Saber | Como surge | O que muda |
+|---|---|---|---|
+| 3, pedra | cortar pedra | povo com 18 pessoas ou mais e gente engenhosa; mais depressa depois de terremoto, tempestade ou dilúvio | casas de pedra e templo; os sacerdotes ganham força (o dobro de éditos, e o poder pode passar ao templo) |
+| 4, metal | trabalhar o metal | gente engenhosa; mais depressa em tempo de guerra | as guerras matam mais (um morto a mais do lado vencido) e os povos ficam mais fortes |
+| 5, escrita | escrever | gente engenhosa ou curiosa; mais depressa com sacerdote | os costumes não se esquecem mais; o saber se ensina 3 vezes mais rápido; o arquivo pode salvar um saber perdido; o povo escreve a própria crônica; o estudo do céu enfraquece o presságio |
+| 6, engenharia | canais e moinhos | povo com 30 pessoas ou mais; mais depressa depois de fome | irrigação: a seca pesa pouco e não gera prece por chuva; tudo impressiona 40% menos, porque o povo precisa menos do deus. É o teto. |
+
+O saber de cada estágio vive nas pessoas, que o ensinam devagar. Quando morre o último que sabia, o povo regride um estágio, a não ser que a escrita o salve. O sonho do deus dá a alguém o saber do próximo estágio, que pode servir à paz ou à guerra.
+
+## A crônica do próprio povo
+
+```gdscript
+mundo.cronica_do_povo(grupo_id) -> String    # markdown; vazio se o povo nunca escreveu
+```
+
+Um povo que chega à escrita passa a contar a própria história, ano a ano, do seu jeito.
+- Começa por um mito de origem: "No começo, o Olho Escuro escolheu nossos pais...".
+- Registra as vitórias que o deus deu, os castigos merecidos e as preces atendidas.
+- Muitas vezes, contradiz a crônica do deus: o povo escreve que a chuva veio porque rezou, e a crônica do deus diz que foi acaso. A crônica do deus aponta a contradição: "Nas tabuletas de Nail, ficou escrito que foi o Olho Escuro."
+
+## Fim do mundo, eras e estante
+
+- **Extinção:** quando não resta ninguém, o mundo emite `fim_do_mundo` e fecha a crônica da era como livro, em `mundo.livros`.
+  - O mundo vazio continua: o clima segue, a natureza retoma o espaço e as ruínas envelhecem.
+  - `usar_poder` devolve `ok: false`.
+- **Povo novo:** `mundo.criar_povo(x) -> {ok, grupo, era}` só funciona com o mundo vazio.
+  - Cria uma família de 12 pessoas, de cultura nova, na zona de x. Se x cair no lago, o povo nasce na praia.
+  - `mundo.era` passa a 2, 3 e assim por diante, e `mundo.era_inicio_ano` marca o começo da era.
+  - O povo novo encontra as ruínas: explica-as (`mito_ruinas`) e pode aprender nelas.
+  - A crônica da nova era começa com outro prólogo.
+- **`mundo.nome_da_era(n)`** devolve "A Primeira Era", "A Segunda Era" etc.
+- **Estante** (`preload("res://nucleo/estante.gd")`): guardada em `user://estante/`, fora do mundo salvo, e sobrevive ao abandono do mundo.
+  - `Estante.livros() -> Array[{id, titulo, era, semente, ano_ini, ano_fim, guardado_em}]`
+  - `Estante.ler(id) -> String` devolve o markdown do livro.
+  - `Persistencia.salvar(mundo)` leva para a estante os livros que ainda não estão lá.
+- **Abandonar o mundo:** `Persistencia.abandonar(mundo) -> livro` fecha a crônica da era atual como livro (mesmo com o povo vivo), guarda o livro na estante e apaga o mundo salvo. Depois, a apresentação começa outro mundo com `Mundo.new(semente)`, e a estante continua lá.

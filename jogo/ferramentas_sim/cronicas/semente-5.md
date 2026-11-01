@@ -22,351 +22,355 @@ Taur deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Taur 
 
 ### Ano 6
 
-Sau disse que alguém, lá em cima, segurava a comida e a chuva. Taur passou a chamá-lo de «o Que Seca». Assim nasceu a primeira fé. Sau foi a primeira de Taur a rezar em voz alta: «Que Seca, dá-nos o que comer.» A fome passou, e Taur viu nisso obra do Que Seca. A crônica sabe que foi acaso. Desde então, Taur acredita que o Que Seca escuta as preces. Em Taur, Sau pediu: «Cura Tepeu, Que Seca. Ela é tão pequena.» A febre passou, e Sau contou a todos que o Que Seca tinha ouvido. A crônica sabe que foi acaso.
+No outono, Sau disse que alguém, lá em cima, segurava a comida e a chuva. Taur passou a chamá-lo de «o Sedento». Assim nasceu a primeira fé. Pela primeira vez, alguém em Taur pediu ao céu. Foi Sau: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Taur deu graças ao Sedento. Foi só o tempo, mas quem iria dizer? Desde então, Taur acredita que o Sedento escuta as preces.
 
 ### Ano 7
 
-Na primavera do ano 7, Sau passou a falar pelo Que Seca em Taur. Era a primeira a rezar e a última a duvidar. Tera morreu de fome. Foram 8 dias de fome em Taur, com um morto. Depois daquela fome, Taur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No inverno, Sail, a medrosa, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. A lembrança da fome pesou.
+Sau tinha rezado: «Sedento, dá-nos o que comer.» A comida voltou, e Taur deu graças ao Sedento. O deus nada fez: o crédito era de graça.
 
 ### Ano 8
 
-Na primavera, Sail, a medrosa, deu à luz e não sobreviveu ao parto. Ela sabia plantar. Quando Sail morreu, Taur guardou os ossos junto ao altar e passou a pedir a Sail pelos vivos. Os mortos de Taur viraram ancestrais a quem se reza. Sail morreu sem ensinar o que sabia. O saber de plantar morreu com ela.
+Napeor morreu com 1 anos, de uma febre que ninguém entendeu. Sail, a medrosa, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. Sau passou a falar pelo Sedento em Taur. Era a primeira a rezar e a última a duvidar.
 
 *No ano 9, nada de notável aconteceu.*
 
 ### Ano 10
 
-Loil, fundadora de Taur, morreu dormindo, aos 61 anos. De novo a chuva sumiu, como no ano 1. Foram 22 dias de seca. Nos anos 1 a 10 houve quatro secas, seis fomes e sete preces que pareceram atendidas; nasceram doze crianças e morreram três pessoas. No fim do ano 10, 21 pessoas viviam no mundo, todas em Taur.
+Com Ruem à frente, nove pessoas deixaram Taur e fundaram Nail, no lago. Era o primeiro povo nascido de outro. Nos anos 1 a 10 houve três secas, sete fomes e cinco preces que pareceram atendidas; nasceram catorze crianças e morreram uma pessoas. No fim do ano 10, 25 pessoas viviam no mundo: Taur (16) e Nail (9).
 
-*O ano 11 foi calmo.*
+### Ano 11
 
-### Ano 12
+Morreu Marsaim, que guiava Taur, aos 59 anos. Quando Marsaim morreu, Taur guardou os ossos junto ao altar e passou a pedir a Marsaim pelos vivos. Os mortos de Taur viraram ancestrais a quem se reza. Taur passou a ser guiado por Lopeor. Em Nail, Namaril tomou para si o cuidado das preces ao Sedento.
 
-Na primavera do ano 12, Taur já não cabia na praia. Ruem, o ambicioso, levou oito pessoas para a floresta e fundou Naur. Pela primeira vez, havia mais de um povo no mundo. Taur passou fome no inverno por 8 dias, e três pessoas morreram. A praia passou a ser a praia da fome: Praia da Fome.
+*Os anos 12 a 13 passaram em paz.*
 
-### Ano 13
+### Ano 14
 
-Namaril passou a falar pelo Que Seca em Naur. Era a primeira a rezar e a última a duvidar. No outono, em Naur nasceu a primeira criança: Napeu, filha de Mara e Ruem.
+Nasceu Teut, o primeiro de Nail. O dia em que a chuva voltou virou festa em Taur: todo ano, celebram a chuva que o Sedento mandou.
 
-*O ano 14 passou sem nada que a crônica precise guardar.*
-
-### Ano 15
-
-Em Taur, Marsaim pediu: «Que Seca, que a chuva volte.» Quando a chuva voltou, Taur agradeceu ao Que Seca. O deus nada fez: o crédito era de graça. Taur passou a festejar todo ano o dia da volta da chuva, em honra do Que Seca. O dia em que a chuva voltou virou festa em Naur: todo ano, celebram a chuva que o Que Seca mandou.
-
-### Ano 16
-
-No inverno do ano 16, as preces de Naur ficaram sem resposta. De novo a chuva sumiu, como no ano 10. Foram 25 dias de seca. Em Naur, Namaril pediu: «Que Seca, que a chuva volte.» Quando a chuva voltou, Naur agradeceu ao Que Seca. O deus nada fez: o crédito era de graça.
+*Os anos 15 a 16 passaram em paz.*
 
 ### Ano 17
 
-Marsaim, que guiava Taur, morreu de velhice aos 65 anos. Taur passou a ser guiado por Lopeor.
+Quando Mara morreu, Nail guardou os ossos junto ao altar e passou a pedir a Mara pelos vivos. Os mortos de Nail viraram ancestrais a quem se reza.
 
-*O ano 18 foi calmo.*
+### Ano 18
 
-### Ano 19
+No verão, nas terras da floresta, Taur plantou suas primeiras roças. Já não precisava andar atrás de comida. A seca voltou, como no ano 1: 23 dias sem chuva, até que o céu se abriu. Em Taur, Ruteor pediu: «Sedento, que a chuva volte.» Quando a chuva voltou, Taur agradeceu ao Sedento. O deus nada fez: o crédito era de graça. Tantas preces atendidas fizeram Taur confiar no céu mais do que nas próprias mãos.
 
-Taur já não se preparava para nada: o Que Seca sempre dava. Deixaram de guardar comida para o inverno.
+*No ano 19, nada de notável aconteceu.*
 
 ### Ano 20
 
-Na primavera do ano 20, as preces de Taur ficaram pequenas: pedia-se ao Que Seca até sol para a pesca e sorte na caça. Nos anos 11 a 20 houve duas secas, quatro fomes e oito preces que pareceram atendidas; nasceram dezoito crianças e morreram quatro pessoas. No fim do ano 20, 35 pessoas viviam no mundo: Taur (19) e Naur (16).
+Na primavera, um raio caiu no lago durante a tempestade e matou Tera. Em Nail, disseram que era castigo. Nail passou a acreditar que o Sedento castiga quem duvida, e que Tera tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Nail sai de casa. Lembram de Tera. O lugar ganhou nome: Lago do Raio. No verão, Tepeu, de Taur, casou-se com Peruan e foi viver em Nail. Foi o primeiro laço entre os dois povos. Tepeu levou consigo o segredo das sementes. Nos anos 11 a 20 houve duas secas e três preces que pareceram atendidas; nasceram dez crianças e morreram seis pessoas. No fim do ano 20, 29 pessoas viviam no mundo: Taur (20) e Nail (9).
 
-*No ano 21, nada de notável aconteceu.*
-
-### Ano 22
-
-Na primavera do ano 22, morreu Napeu, filha pequena de Mara.
+*Do ano 21 ao 22, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 23
 
-Na primavera do ano 23, Sau, que falava pelo Que Seca em Taur, morreu de velhice aos 51 anos. Foi quem deu ao deus o nome de «o Que Seca».
+No verão do ano 23, as preces de Taur ficaram pequenas: pedia-se ao Sedento até sol para a pesca e sorte na caça. Nail, a generosa, descobriu como empilhar pedras cortadas sem que caíssem. A seca voltou, como no ano 18: 19 dias sem chuva, até que o céu se abriu. Ruteor tinha rezado: «Manda água, Sedento, que as crianças têm sede.» Quando a chuva voltou, Taur agradeceu ao Sedento. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 24
 
-Em Taur, Lopeor pediu: «Que Seca, dá-nos o que comer.» A fome passou, e Taur viu nisso obra do Que Seca. O deus nada fez: o crédito era de graça. A seca voltou, como no ano 16: 19 dias sem chuva, até que o céu se abriu. No inverno, Nitail, de Taur, casou-se com Penian e foi viver em Naur. Foi o primeiro laço entre os dois povos.
+Na primavera, Taur ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Rumara, de Taur, casou-se com Penian e foi viver em Nail. Com Rumara chegou a Nail o saber de plantar. Nail fez as primeiras roças no Lago do Raio. Deixou de viver só do que achava e passou a plantar.
 
 ### Ano 25
 
-Em Taur, Lopeor pediu: «Que Seca, não deixes nossos filhos morrerem de fome.» A fome passou, e Taur viu nisso obra do Que Seca. Foi só o tempo, mas quem iria dizer? Namaril, que falava pelo Que Seca em Naur, deu à luz e não sobreviveu ao parto.
+Sail, a medrosa, aprendeu a tirar metal da pedra no fogo alto.
 
 ### Ano 26
 
-Na primavera, morreu Lopeor, que guiava Taur, aos 56 anos.
+Na primavera, Saela morreu com 1 anos, de uma febre que ninguém entendeu.
 
 ### Ano 27
 
-No outono, com fome, Naur levantou acampamento na floresta e foi buscar comida no lago. Naur já não se preparava para nada: o Que Seca sempre dava. Deixaram de guardar comida para o inverno. Maran, o corajoso, cansou de dividir pouca comida. Partiu com nove pessoas para a floresta e ali fundou Tarur. Dessa vez, o Que Seca não respondeu, e Taur, que tinha esquecido como se virar sozinho, pagou caro. A fome ensinou: desde então, Taur estoca comida e não come tudo o que colhe.
+Sail, a medrosa, morreu de velhice aos 53 anos. Foi quem descobriu que semente vira planta.
 
 ### Ano 28
 
-Na primavera, Ruem, que fundou Naur e o guiava, morreu de velhice aos 56 anos. Foi quem levou os seus a fundar Naur. Naem, o engenhoso, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. A lembrança da fome pesou. A tempestade trouxe raios para a praia. Um deles acertou Nipean. Logo Nipean, que tanto rezava. Os devotos de Naur não viram castigo: para eles, o Que Seca chamou Nipean para perto. Nasceu ali a lembrança de Nipean como santo. No outono, em nome do Que Seca, Naem proibiu casamentos e trocas com Naur. Era vontade de Naem, não do deus.
+Na primavera, Ruem, que fundou Nail e o guiava, morreu de velhice aos 56 anos. Foi quem levou os seus a fundar Nail. Nail ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. No inverno, Lopeor não podia mais viver perto de Namaril. Saiu de Taur com onze pessoas e fundou Linon na praia. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Taur perdeu o saber. A seca voltou, como no ano 23: 23 dias sem chuva, até que o céu se abriu.
 
 ### Ano 29
 
-Taur atacou Naur no lago em nome do Que Seca. Naur resistiu, e Taur voltou de mãos vazias. Na luta morreu Nan. Foi a primeira vez que gente matou gente no mundo. Taur passou fome no inverno por 7 dias, e uma pessoa morreu. No verão, dessa vez, o Que Seca não respondeu, e Naur, que tinha esquecido como se virar sozinho, pagou caro.
+Na primavera do ano 29, em Linon nasceu a primeira criança: Pera, filha de Niu e Tataem. Em Linon, Sau tomou para si o cuidado das preces ao Sedento. Em Taur, Ruteor pediu: «Manda água, Sedento, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Taur duvidou de que o Sedento tinha ouvido. O deus não tinha feito nada. No inverno, Kinira, a engenhosa, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
 ### Ano 30
 
-Na primavera, começou a Guerra Santa: em nome do Que Seca, Taur pegou em lanças contra Naur. Na Guerra Santa, Taur atacou Naur na floresta em nome do Que Seca. Naur expulsou os atacantes. Lomaru e Nior morreram na luta. O mesmo chão ganhou dois nomes: Floresta da Vitória para Naur, Floresta do Luto para Taur. Taur e Naur, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de um ano, duas batalhas e três mortos, a Guerra Santa terminou em paz. Naur saiu dela mais forte. Nos anos 21 a 30 houve três secas, dezesseis fomes, duas batalhas, 29 preces que pareceram atendidas e cinco preces sem resposta; nasceram dezessete crianças e morreram dezessete pessoas. No fim do ano 30, 35 pessoas viviam no mundo: Taur (8), Naur (18) e Tarur (9).
+Na primavera, Taur atacou Linon na praia. Linon resistiu, e Taur voltou de mãos vazias. Na luta morreu Kinira. Foi a primeira vez que gente matou gente no mundo. Taur e Linon fizeram as pazes na praia, antes que a briga crescesse. Dessa vez, o Sedento não respondeu, e Taur, que tinha esquecido como se virar sozinho, pagou caro. Ruteor, que guiava Taur, não resistiu à fome. Taur desapareceu: morreu o último dos seus. Nos anos 21 a 30 houve cinco secas e dez preces que pareceram atendidas; nasceram 27 crianças e morreram 25 pessoas. No fim do ano 30, 31 pessoas viviam no mundo: Nail (13) e Linon (18).
 
 ### Ano 31
 
-Nas terras do lago, Taur plantou suas primeiras roças. Já não precisava andar atrás de comida. De novo a chuva sumiu, como no ano 24. Foram 21 dias de seca. Em Tarur, Maran pediu: «Que Seca, não nos deixes secar.» Quando a chuva voltou, Tarur agradeceu ao Que Seca. O deus nada fez: o crédito era de graça.
+Lopeor não podia mais viver perto de Namaril. Saiu de Linon com onze pessoas e fundou Saes na floresta. Em Linon, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Saes encontrou as ruínas de Taur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
 
-*O ano 32 foi calmo.*
+### Ano 32
 
-### Ano 33
+Morreu o último que tinha visto o ano 14. Em Linon, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Os últimos de Linon, Issaia, Tepera e Salina, juntaram-se a Nail. Linon deixou de existir. Diante das ruínas de Linon, Nail disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. A terra tremeu. Caíram duas cabanas. Para Saes, o deus já não era «o Sedento»: passou a ser «a Terra Brava».
 
-Nau, de Naur, casou-se com Peim e foi viver em Tarur. Foi o primeiro laço entre os dois povos. A seca voltou, como no ano 31: 25 dias sem chuva, até que o céu se abriu.
+*O ano 33 foi calmo.*
 
 ### Ano 34
 
-Em nome do Que Seca, Peruan proibiu casamentos e trocas com Taur. Era vontade de Peruan, não do deus. Penian tinha rezado: «Que Seca, não deixes nossos filhos morrerem de fome.» A comida voltou, e Naur deu graças ao Que Seca. Foi só o tempo, mas quem iria dizer?
+Em Nail, Penian pediu: «Sedento, cura minha filha.» Os doentes se levantaram. Em Nail, o crédito foi do Sedento. O deus nada fez: o crédito era de graça.
 
 ### Ano 35
 
-Na primavera do ano 35, a guerra entre Naur e Taur continuou: Naur voltou a atacar no lago em nome do Que Seca. Naur venceu e levou a comida guardada. Lomaril morreu na luta. Depois de tanto sofrer nas mãos dos vizinhos, Taur passou a desconfiar de todo estrangeiro. No verão, começou a Guerra Santa da Floresta: em nome do Que Seca, Naur pegou em lanças contra Taur. Naur fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças.
+Apareceu no céu uma luz com rabo, que ficou 10 noites e sumiu.
 
 ### Ano 36
 
-Na primavera, um raio caiu na praia durante a tempestade e matou Maran. Ninguém em Tarur teve dúvida: era castigo. Para Tarur, o deus já não era «o Que Seca»: passou a ser «o Que Fere». Para Tarur, Maran foi castigado. Desde então, quem duvida do Que Fere duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Tarur sai de casa. Lembram de Maran. Desde aquele dia, Tarur chama a praia de Praia do Raio.
+No verão, a rixa entre Lopeor e Namaril rachou Saes. Lopeor partiu com os seus, dez pessoas, e fundou Maur na praia. Em Saes, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Maur encontrou as ruínas de Taur. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, em Maur nasceu a primeira criança: Zeoran, filho de Nail e Kim.
 
 ### Ano 37
 
-Na primavera, Peim, que guiava Tarur, teve um filho: Tem. Em Tarur, Niruem tomou para si o cuidado das preces ao Que Fere.
+Lopeor tinha rezado: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Maur agradeceu à Terra Brava. O deus nada fez: o crédito era de graça. No inverno, Ulur morreu de fome. Uma tosse que não passava matou uma pessoa em Saes.
 
 ### Ano 38
 
-No verão do ano 38, a Guerra Santa da Floresta esfriou sem acordo nem vencedor: três anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava.
+Não restou ninguém em Saes. A rixa entre Lopeor e Namaril rachou Maur. Lopeor partiu com os seus, dez pessoas, e fundou Ruil na floresta. Em Maur, já ninguém sabia cortar pedra. O que fora feito começou a ruir. No outono, Nail, a generosa, aprendeu a tirar metal da pedra no fogo alto. Tantas preces atendidas fizeram Nail confiar no céu mais do que nas próprias mãos.
 
-*O ano 39 foi calmo.*
+### Ano 39
+
+Zena morreu de fome. Maur acabou: Zeoran, Ison e Linon foram viver em Nail. As ruínas de Maur viraram aviso em Nail: era o que o deus fazia com quem o desagradava.
 
 ### Ano 40
 
-Nitail tinha rezado: «Que Seca, não deixes nossos filhos morrerem de fome.» A fome passou, e Naur viu nisso obra do Que Seca. O deus nada fez: o crédito era de graça. Apareceu no céu uma luz com rabo, que ficou 5 noites e sumiu. Para Taur, o deus já não era «o Que Seca»: passou a ser «a Estrela de Cauda». Nos anos 31 a 40 houve três secas, seis fomes, duas batalhas, dezenove preces que pareceram atendidas e quatro preces sem resposta; nasceram 30 crianças e morreram treze pessoas. No fim do ano 40, 52 pessoas viviam no mundo: Taur (18), Naur (21) e Tarur (13).
+Na primavera do ano 40, morreu Lopeor, que fundou Ruil e o guiava, aos 70 anos. Tinha fundado Linon. Sau, que falava pela Terra Brava em Ruil, morreu de velhice aos 68 anos. Foi quem deu ao deus o nome de «o Sedento». Namaril passou a guiar Ruil, mas Niu não aceitou e guardou rancor. No verão, em Ruil, Peim tomou para si o cuidado das preces à Terra Brava. Nos anos 31 a 40 houve quatro preces que pareceram atendidas; nasceram 34 crianças e morreram dezenove pessoas. No fim do ano 40, 46 pessoas viviam no mundo: Nail (34) e Ruil (12).
 
 ### Ano 41
 
-Naur não esqueceu o ano 35 e atacou Taur outra vez. Taur foi derrotado e perdeu o que tinha guardado. Na luta morreram Naem e Penian. O mesmo chão ganhou dois nomes: Lago da Vitória para Naur, Lago do Luto para Taur. Depois de tanto sofrer nas mãos dos vizinhos, Taur passou a desconfiar de todo estrangeiro.
+De novo a chuva sumiu, como no ano 28. Foram 21 dias de seca. Em Ruil, Peim pediu: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Ruil agradeceu à Terra Brava. O deus não tinha feito nada.
 
-*O ano 42 foi calmo.*
+### Ano 42
+
+O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Depois disso, Nail deixou de chamar o deus de «o Sedento» e passou a chamá-lo de «o Olho Escuro».
 
 ### Ano 43
 
-Na primavera, morreu Tan, filho pequeno de Lokiu. Niruem tinha rezado: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tarur deu graças ao Que Fere. A crônica sabe que foi acaso.
+A seca voltou, como no ano 41: 20 dias sem chuva, até que o céu se abriu. Takiut, de Nail, tomou por esposa Nail, de Ruil, e os dois povos passaram a se visitar.
 
-### Ano 44
-
-Tanail, a ambiciosa, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. No outono, Taur não esqueceu o ano 41 e atacou Naur outra vez. Naur resistiu, e Taur voltou de mãos vazias. Tanail morreu na luta. Com a morte de Tanail, Naur perdeu o segredo das sementes: ninguém mais sabia plantar.
+*O ano 44 foi calmo.*
 
 ### Ano 45
 
-Demu, a ambiciosa, morreu ao dar à luz. No inverno, Niruem, o pacífico, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou.
+No inverno do ano 45, as preces de Ruil ficaram sem resposta.
 
 ### Ano 46
 
-Na primavera do ano 46, morreu Peruan, que falava pelo Que Seca em Naur, aos 45 anos. Foi quem proibiu, em nome do deus, o trato com Taur. Começou a Segunda Guerra Santa: em nome da Estrela de Cauda, Taur pegou em lanças contra Naur.
+Em Ruil, Maran pediu: «Terra Brava, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Ruil duvidou de que a Terra Brava tinha ouvido. O deus não tinha feito nada.
 
 ### Ano 47
 
-Na primavera do ano 47, Tarur já não cabia no morro. Nau, a pacífica, levou doze pessoas para a praia e fundou Maril. Com fome, Maril levantou acampamento na praia e foi buscar comida no morro. Tarur acabou: Waem, Saor e Saoril foram viver em Maril. No outono, em Maril, Peim tomou para si o cuidado das preces ao Que Fere. Em Maril nasceu a primeira criança: Watail, filha de Nau e Peim.
+No verão, a terra tremeu. Caíram cinco cabanas. No inverno, a forja de Nail não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 *No ano 48, nada de notável aconteceu.*
 
 ### Ano 49
 
-Em Maril, Nau pediu: «Que Fere, não deixes nossos filhos morrerem de fome.» A comida voltou, e Maril deu graças ao Que Fere. O deus nada fez: o crédito era de graça. No verão, a Segunda Guerra Santa esfriou sem acordo nem vencedor: cinco anos, duas batalhas e dois mortos, e ninguém sabia mais por que lutava. Naur saiu dela mais forte. Um inverno duro matou seis pessoas de frio. Maril passou fome no inverno por 2 dias, e uma pessoa morreu. Depois daquela fome, Maril passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
+Na primavera do ano 49, Nail, a generosa, inventou marcas que guardavam palavras.
 
 ### Ano 50
 
-A fome durou 4 dias em Maril e levou uma vida. No inverno, Koil, de Maril, casou-se com Niem e foi viver em Taur. Foi o primeiro laço entre os dois povos. Nos anos 41 a 50 houve nove fomes, três batalhas, dezenove preces que pareceram atendidas e seis preces sem resposta; nasceram 34 crianças e morreram 26 pessoas. No fim do ano 50, 60 pessoas viviam no mundo: Taur (30), Naur (16) e Maril (14).
+Peim tinha rezado: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Ruil duvidou de que a Terra Brava tinha ouvido. A crônica sabe que foi acaso. No inverno, a terra tremeu. Caíram seis cabanas. San morreu sob os escombros. Nos anos 41 a 50 houve cinco secas e oito preces que pareceram atendidas; nasceram 30 crianças e morreram oito pessoas. No fim do ano 50, 68 pessoas viviam no mundo: Nail (56) e Ruil (12).
 
-*O ano 51 passou sem nada que a crônica precise guardar.*
+### Ano 51
+
+Na primavera, em Nail, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Em Nail, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Nail, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 52
 
-Nau tinha rezado: «Que Fere, dá-nos o que comer.» A comida voltou, e Maril deu graças ao Que Fere. O deus nada fez: o crédito era de graça.
+Na primavera do ano 52, morreu Namaril, que guiava Ruil, aos 61 anos. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Ruil perdeu o saber.
 
 ### Ano 53
 
-Na primavera do ano 53, Loan, o pacífico, morreu de repente, aos 40 anos. Na guerra, tinha tirado quatro vidas.
+Na primavera do ano 53, Penian, que guiava Nail, morreu dormindo, aos 52 anos.
 
-*O ano 54 foi calmo.*
-
-### Ano 55
-
-Tera, de Taur, casou-se com Saor e foi viver em Maril. Com Tera chegou a Maril o saber de plantar.
+*Entre os anos 54 e 55, nada mudou o rumo do mundo.*
 
 ### Ano 56
 
-Na primavera, Wakor morreu com 3 anos, de uma febre que ninguém entendeu. No outono, Maril fez as primeiras roças na praia. Deixou de viver só do que achava e passou a plantar. No inverno, uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito. Depois disso, Maril deixou de chamar o deus de «o Que Fere» e passou a chamá-la de «a Estrela de Cauda».
+Tepeu, que guiava Nail, morreu de velhice aos 61 anos. Tinha levado o saber de plantar para Nail. Nail, a generosa, morreu dormindo, aos 50 anos. Nia passou a guiar Nail, mas Tepera não aceitou e guardou rancor.
 
 ### Ano 57
 
-Na primavera do ano 57, morreu Tapera, a pacífica, aos 54 anos. Tantas preces atendidas fizeram Maril confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno.
+Na primavera do ano 57, Tepera deu à luz gêmeos, Naenu e Sanaut. Uns viram bênção; outros, mau sinal.
 
 ### Ano 58
 
-Na primavera, as preces de Maril ficaram pequenas: pedia-se à Estrela de Cauda até sol para a pesca e sorte na caça. O deus calou justo quando Maril mais dependia dele. Nau rezou por Marut até a voz acabar. Marut morreu mesmo assim, e Nau nunca mais rezou. No inverno, os de Naur caíram sobre Taur no lago em nome do Que Seca. Taur resistiu, e Naur voltou de mãos vazias. Nitail, Kinaor e Kilor morreram na luta. Kilor morreu sem ensinar o que sabia. O saber de plantar morreu com ele.
+Na primavera, morreu Maran, o corajoso, aos 56 anos.
 
 ### Ano 59
 
-Começou a Guerra Santa do Lago: em nome do Que Seca, Naur pegou em lanças contra Taur. A Guerra Santa do Lago seguiu: Naur contra Taur, no lago em nome do Que Seca. Taur resistiu, e Naur voltou de mãos vazias. Ta, Pekil e Kitan morreram na luta.
+Na primavera, Temara, a medrosa, desenhou o primeiro canal e a primeira roda d'água. De novo a chuva sumiu, como no ano 43. Foram 21 dias de seca. Peim tinha rezado: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Ruil duvidou de que a Terra Brava tinha ouvido. O deus nada fez: o crédito era de graça.
 
 ### Ano 60
 
-Na primavera do ano 60, Nau, que fundou Maril e o guiava, morreu de repente, aos 43 anos. Foi quem levou os seus a fundar Maril. Peim tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Maril deu graças à Estrela de Cauda. A crônica sabe que foi acaso. A seca voltou, como no ano 33: 23 dias sem chuva, até que o céu se abriu. Depois da seca, Maril jurou nunca desperdiçar água. Nos anos 51 a 60 houve quinze fomes, duas batalhas, 26 preces que pareceram atendidas e seis preces sem resposta; nasceram 61 crianças e morreram 40 pessoas. No fim do ano 60, 82 pessoas viviam no mundo: Taur (48), Naur (17) e Maril (17).
+Na primavera, o deus calou justo quando Nail mais dependia dele. Nail conheceu a maior fome da sua história por causa da seca. Em 25 dias, morreram 39. Muitas cabanas ficaram vazias. Em Nail, Maya pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Nail viu nisso obra do Olho Escuro. O deus nada fez: o crédito era de graça. Nas tabuletas de Nail, ficou escrito que foi o Olho Escuro. A fome ensinou: desde então, Nail estoca comida e não come tudo o que colhe. Nos anos 51 a 60 houve três secas e treze preces que pareceram atendidas; nasceram 64 crianças e morreram 53 pessoas. No fim do ano 60, 80 pessoas viviam no mundo: Nail (70) e Ruil (10).
 
 ### Ano 61
 
-Na primavera, morreu San, que guiava Naur, aos 59 anos. Na guerra, tinha tirado duas vidas. Em Naur, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 15, só a crônica guarda. Depois daquela fome, Naur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Maril conheceu a maior fome da sua história por causa da seca. Em 26 dias, morreram 14. Muitas cabanas ficaram vazias. Desde então, Maril chama a praia de Praia da Fome.
+Com canais e moinhos, Nail já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. De novo a chuva sumiu, como no ano 59. Foram 19 dias de seca.
 
 ### Ano 62
 
-Em Naur, Rupeor pediu: «Que Seca, dá-nos o que comer.» A comida voltou, e Naur deu graças ao Que Seca. Foi só o tempo, mas quem iria dizer? Depois de tantos mortos, Naur e Taur se encontraram no lago e juraram paz. A Guerra Santa do Lago acabou em trégua, depois de quatro anos, três batalhas e sete mortos. Taur saiu dela mais forte.
+Uma tosse que não passava matou três pessoas em Nail. Desde a febre, Nail não enterra mais ninguém: os mortos vão para o fogo.
 
-### Ano 63
-
-Waem, de Maril, tomou por esposa Loniu, de Naur, e os dois povos passaram a se visitar. No outono, em nome da Estrela de Cauda, Kisaor proibiu casamentos e trocas com Taur. Era vontade de Kisaor, não do deus. A seca voltou, como no ano 60: 18 dias sem chuva, até que o céu se abriu.
+*O ano 63 foi calmo.*
 
 ### Ano 64
 
-Ninguém lembrava mais a razão, e Naur abandonou a festa da chuva. Naur passou a festejar todo ano o dia da volta da chuva, em honra do Que Seca.
+Nia, que guiava Nail, morreu de velhice aos 50 anos.
 
 ### Ano 65
 
-No outono do ano 65, Tera, de Maril, casou-se com Nademor e foi viver em Naur. Tera levou consigo o segredo das sementes.
+Na primavera do ano 65, Peim, que guiava Ruil, morreu dormindo, aos 64 anos.
 
-*No ano 66, nada de notável aconteceu.*
+### Ano 66
+
+Teut, o medroso, morreu dormindo, aos 52 anos. Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Marenan leu e aprendeu: o saber não se perdeu.
 
 ### Ano 67
 
-No verão, nas terras da Floresta da Vitória, Naur plantou suas primeiras roças. Já não precisava andar atrás de comida.
+Salina implorou pelo filho. Entem morreu, e daquele dia em diante Salina cuspia no chão quando falavam do Olho Escuro.
 
-*Do ano 68 ao 69, a vida seguiu sem grandes acontecimentos.*
+### Ano 68
+
+Na primavera do ano 68, Ruil implorou pelo filho. Ensaut morreu, e daquele dia em diante Ruil cuspia no chão quando falavam do Olho Escuro. A fome no inverno durou 2 dias em Nail e levou uma vida. Em Nail, Maya pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Nail viu nisso obra do Olho Escuro. O deus nada fez: o crédito era de graça. Os escribas de Nail registraram o milagre. Uma tosse que não passava matou três pessoas em Nail.
+
+### Ano 69
+
+Tataem, que falava pela Terra Brava em Ruil, morreu dormindo, aos 57 anos. Em Ruil, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. Maya tinha rezado: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Nail deu graças ao Olho Escuro. O deus não tinha feito nada. Nas tabuletas de Nail, ficou escrito que foi o Olho Escuro. Uma febre correu Nail e levou quatro vidas.
 
 ### Ano 70
 
-Rupeor implorou pelo filho. Demim morreu, e daquele dia em diante Rupeor cuspia no chão quando falavam do Que Seca. Ruan tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Taur deu graças à Estrela de Cauda. O deus não tinha feito nada. Nos anos 61 a 70 houve três secas, nove fomes, 23 preces que pareceram atendidas e três preces sem resposta; nasceram 58 crianças e morreram dezesseis pessoas. No fim do ano 70, 124 pessoas viviam no mundo: Taur (81), Naur (21) e Maril (22).
+Na primavera, um raio caiu na floresta durante a tempestade e matou Oran. Os seus nunca esqueceram. Para Ruil, o deus já não era «a Terra Brava»: passou a ser «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Ruil sai de casa. Lembram de Oran. Desde aquele dia, Ruil chama a floresta de Floresta do Raio. Nos anos 61 a 70 houve duas secas, seis fomes e treze preces que pareceram atendidas; nasceram 75 crianças e morreram 36 pessoas. No fim do ano 70, 119 pessoas viviam no mundo: Nail (108) e Ruil (11).
 
-### Ano 71
-
-Morreu Ruan, que falava pela Estrela de Cauda em Taur, aos 60 anos. Niruem, que guiava Maril, morreu de velhice aos 54 anos. Tinha sido o primeiro a plantar. Ruan tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Taur deu graças à Estrela de Cauda. A crônica sabe que foi acaso.
+*O ano 71 passou sem nada que a crônica precise guardar.*
 
 ### Ano 72
 
-Na primavera, os de Taur caíram sobre Maril na praia. Taur venceu e levou a comida guardada. Na luta morreram Tem e Mara. Depois da derrota, os jovens de Maril passaram a treinar com lanças. Uma tosse que não passava matou nove pessoas em Taur. Depois da febre, Taur passou a queimar os seus mortos, para que a doença não voltasse. Um inverno duro matou quatro pessoas de frio.
+No verão do ano 72, os de Nail caíram sobre Ruil na floresta. Ruil foi derrotado e perdeu o que tinha guardado. Na luta morreu Rur. No outono, começou a Guerra da Floresta: o rancor entre Nail e Ruil virou guerra. Na Guerra da Floresta, Nail atacou Ruil na floresta. Ruil foi derrotado e perdeu o que tinha guardado. Na luta morreram Oron e Goil. Nail e Ruil, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de duas batalhas e três mortos, a Guerra da Floresta terminou em paz. Nail saiu dela mais forte.
 
 ### Ano 73
 
-Pesau deu à luz gêmeos, Marna e Teteim. Uns viram bênção; outros, mau sinal.
+Na primavera, Temara, a medrosa, cansou de dividir pouca comida. Partiu com 35 pessoas para a praia e ali fundou Ibur. Nasceu Pekurut, o primeiro de Ibur. No verão, Temara, a medrosa, descobriu como empilhar pedras cortadas sem que caíssem. No outono, Tem passou a falar pelo Olho Escuro em Ibur. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 74
 
-Na primavera do ano 74, Taur atacou Naur na floresta em nome da Estrela de Cauda. Naur foi derrotado e perdeu o que tinha guardado.
+Em Ibur, os jovens deixaram de lado o costume de guardar comida. Era coisa de outro povo, diziam. Morreu o último que tinha visto o ano 20. Em Ibur, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê. A fome ensinou: desde então, Ibur estoca comida e não come tudo o que colhe. Niu, que guiava Ruil, não resistiu à fome. Temara, que fundou Ibur e o guiava, não resistiu à fome. Foi quem levou os seus a fundar Ibur.
 
 ### Ano 75
 
-Loniu, que guiava Maril, morreu de velhice aos 52 anos. No verão, começou a Terceira Guerra Santa: em nome da Estrela de Cauda, Taur pegou em lanças contra Naur. Na Terceira Guerra Santa, Naur atacou Taur no lago em nome do Que Seca. Taur resistiu, e Naur voltou de mãos vazias. Nan e Saoril morreram na luta. Naur e Taur, cansados de enterrar os seus, fizeram as pazes no lago. A Terceira Guerra Santa acabou em trégua, depois de um ano, três batalhas e dois mortos. Taur saiu dela mais forte.
+Ruil passou fome no inverno por 11 dias, e duas pessoas morreram. Ibur passou fome no inverno por 11 dias, e nove pessoas morreram. Martean tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ibur deu graças ao Olho Escuro. Foi só o tempo, mas quem iria dizer? Desde então, Ibur chama a praia de Praia da Fome. O dia em que a chuva voltou virou festa em Ruil: todo ano, celebram a chuva que a Voz do Céu mandou.
 
-### Ano 76
-
-No outono, começou a Guerra da Praia: o rancor entre Taur e Maril virou guerra. Taur e Maril, cansados de enterrar os seus, fizeram as pazes na praia. A Guerra da Praia acabou em trégua, depois de um ano, duas batalhas e um morto. Taur saiu dela mais forte. Taur passou fome por causa da seca por 2 dias, e uma pessoa morreu. No inverno, Nakia, que falava pela Estrela de Cauda em Taur, morreu de fome.
+*No ano 76, nada de notável aconteceu.*
 
 ### Ano 77
 
-Veio a pior fome que o mundo tinha visto: 11 dias no inverno em Taur, e 23 mortos. As crianças foram as primeiras. O inverno foi de gelo: seis pessoas morreram de frio. De novo a chuva sumiu, como no ano 63. Foram 25 dias de seca.
+Na primavera, Ruruor, de Nail, tomou por esposa Naela, de Ibur, e os dois povos passaram a se visitar. No inverno, o sol escureceu outra vez. A seca voltou, como no ano 61: 24 dias sem chuva, até que o céu se abriu.
 
 ### Ano 78
 
-Na primavera do ano 78, Rupeor, que guiava Naur, morreu de velhice aos 54 anos. Desde a morte de Demim, nunca mais tinha rezado. Naur escolheu Tera para guiar o grupo. Niu queria o lugar e nunca perdoou. O inverno foi de gelo: quatro pessoas morreram de frio.
+Maya tinha rezado: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Nail viu nisso obra do Olho Escuro. A crônica sabe que foi acaso. Os escribas de Nail registraram o milagre. No inverno, Ruem implorou pelo filho. Niem morreu, e daquele dia em diante Ruem cuspia no chão quando falavam do Olho Escuro.
 
 ### Ano 79
 
-Em Naur, Loim pediu: «Que Seca, não deixes nossos filhos morrerem de fome.» A fome passou, e Naur viu nisso obra do Que Seca. O deus não tinha feito nada. No verão, a terra tremeu. Caíram quinze cabanas. Pera, Sara, Lonil e Koa morreram sob os escombros. Depois disso, Taur deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-la de «a Terra Brava». Para Naur, o deus já não era «o Que Seca»: passou a ser «a Terra Brava».
+A doença entrou em Nail e matou cinco pessoas.
 
 ### Ano 80
 
-Loim tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Naur deu graças à Terra Brava. O deus não tinha feito nada. Nos anos 71 a 80 houve três secas, treze fomes, seis batalhas, 30 preces que pareceram atendidas e nove preces sem resposta; nasceram 91 crianças e morreram 86 pessoas. No fim do ano 80, 130 pessoas viviam no mundo: Taur (69), Naur (38) e Maril (23).
+A doença entrou em Nail e matou três pessoas. No inverno, Marenan, que falava pelo Olho Escuro em Nail, morreu de fome. Depois da seca, Nail jurou nunca desperdiçar água. Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Zeoran leu e aprendeu: o saber não se perdeu. Em Ibur, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força. Nos anos 71 a 80 houve três secas, treze fomes, duas batalhas, 28 preces que pareceram atendidas e nove preces sem resposta; nasceram 57 crianças e morreram 84 pessoas. No fim do ano 80, 92 pessoas viviam no mundo: Nail (68), Ruil (5) e Ibur (19).
 
 ### Ano 81
 
-Com Sasaor à frente, a nova geração de Maril abandonou o medo das tempestades, costume herdado dos avós.
+Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. Kiut leu e aprendeu: o saber não se perdeu. Em Nail, já ninguém sabia escrever. O que fora feito começou a ruir. Nail passou fome por causa da seca por 11 dias, e 22 pessoas morreram. Orya, a medrosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Em nome do Olho Escuro, Naut proibiu casamentos e trocas com Ruil. Era vontade de Naut, não do deus.
 
 ### Ano 82
 
-Em Taur, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 27, só a crônica guarda.
+Na primavera do ano 82, nasceu Kona, filha de Kon, que guiava Ruil.
 
-*Do ano 83 ao 85, a vida seguiu sem grandes acontecimentos.*
+### Ano 83
+
+Nasaela, de Ibur, casou-se com Peur e foi viver em Ruil. Foi o primeiro laço entre os dois povos.
+
+### Ano 84
+
+Morreu Salina, que guiava Nail, aos 53 anos. Desde a morte de Entem, nunca mais tinha rezado. Em Nail, Maya pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Nail viu nisso obra do Olho Escuro. Foi só o tempo, mas quem iria dizer? Os escribas de Nail registraram o milagre. Tantas preces atendidas fizeram Ibur confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno.
+
+### Ano 85
+
+Na primavera, morreu Enem, que guiava Nail, aos 50 anos. De novo a chuva sumiu, como no ano 77. Foram 18 dias de seca.
 
 ### Ano 86
 
-Uma febre correu Taur e levou quatro vidas. A seca voltou, como no ano 77: 24 dias sem chuva, até que o céu se abriu. Tatau, que falava pela Terra Brava em Taur, não resistiu à fome. Houve luta na floresta: Taur atacou Naur em nome da Terra Brava. Taur venceu e levou a comida guardada. Tera morreu na luta. Tamaru passou a guiar Naur, mas Niu não aceitou e guardou rancor.
+Na primavera, o deus calou justo quando Ibur mais dependia dele. Depois daquela fome, Ibur passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Ruor implorou pelo filho. Saut morreu, e daquele dia em diante Ruor cuspia no chão quando falavam do Olho Escuro. No outono, em nome do Olho Escuro, Tem proibiu casamentos e trocas com Ruil. Era vontade de Tem, não do deus. No inverno, houve luta na floresta: Ibur atacou Ruil em nome do Olho Escuro. Ibur venceu e levou a comida guardada. Nasaela, Kon, Isoran e Taela morreram na luta.
 
 ### Ano 87
 
-Na primavera do ano 87, em nome da Estrela de Cauda, Kisaor proibiu casamentos e trocas com Naur. Era vontade de Kisaor, não do deus. Foram 11 dias de fome por causa da seca em Taur, com nove mortos. Foram 23 dias de fome por causa da seca em Maril, com oito mortos. Houve luta na floresta: Maril atacou Naur em nome da Estrela de Cauda. Maril venceu e levou a comida guardada. Na luta morreram Nipean, Tamaru, Demnaim e Koruya. Começou a Quarta Guerra Santa: em nome da Terra Brava, Taur pegou em lanças contra Naur.
+No verão do ano 87, começou a Guerra Santa: em nome do Olho Escuro, Ibur pegou em lanças contra Ruil. Nail atacou Ruil na floresta em nome do Olho Escuro. Ruil resistiu, e Nail voltou de mãos vazias. Na luta morreram Sakior, Temarela e Runan. Depois da derrota, os jovens de Nail passaram a treinar com lanças.
 
 ### Ano 88
 
-Começou a Guerra Santa da Praia: em nome da Estrela de Cauda, Maril pegou em lanças contra Naur. A Guerra Santa da Praia seguiu: Naur contra Maril, na praia em nome da Terra Brava. Maril foi derrotado e perdeu o que tinha guardado. Marora e Tamaro morreram na luta.
+Começou a Guerra Santa da Floresta: em nome do Olho Escuro, Nail pegou em lanças contra Ruil. Na Guerra Santa da Floresta, Nail atacou Ruil na floresta em nome do Olho Escuro. Nail venceu e levou a comida guardada. Suisan, Peur e Rut morreram na luta.
 
 ### Ano 89
 
-Na primavera, Na Quarta Guerra Santa, Taur atacou Naur na floresta em nome da Terra Brava. Naur expulsou os atacantes. Na luta morreram Lopean e Tademim. No verão, Na Guerra Santa da Praia, Maril atacou Naur na floresta em nome da Estrela de Cauda. Naur resistiu, e Maril voltou de mãos vazias. Na luta morreram Ortao, Ruo e Tamarut.
+No verão do ano 89, Nail já não cabia no lago. Marut, o desconfiado, levou dezenove pessoas para a floresta e fundou Naes. A Guerra Santa da Floresta seguiu: Nail contra Ruil, na floresta em nome do Olho Escuro. Nail venceu e levou a comida guardada. Na luta morreram Ismara e Nirua. Nail venceu Ruil e levou os quatro sobreviventes para viver sob seu mando. Ruil deixou de existir, mas os vencidos guardaram seus costumes em segredo. A Guerra Santa da Floresta terminou com a conquista: dois anos, três batalhas e oito mortos. A Guerra Santa acabou porque um dos lados deixou de existir: três anos, duas batalhas e quatro mortos.
 
 ### Ano 90
 
-Depois de tanto silêncio, muitos em Naur deixaram de acreditar: não havia ninguém no céu. As preces pararam. No inverno, Kisaor, que falava pela Estrela de Cauda em Maril, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Taur. Taor implorou pelo filho. Marruim morreu, e daquele dia em diante Taor cuspia no chão quando falavam da Terra Brava. Depois de tantos mortos, Maril e Naur se encontraram na floresta e juraram paz. A Guerra Santa da Praia acabou em trégua, depois de três anos, sete batalhas e quinze mortos. Naur saiu dela mais forte. Nos anos 81 a 90 houve três secas, doze fomes, doze batalhas, 30 preces que pareceram atendidas e dezesseis preces sem resposta; nasceram 96 crianças e morreram 89 pessoas. No fim do ano 90, 137 pessoas viviam no mundo: Taur (75), Naur (48) e Maril (14).
+Em Naes, Enil pediu: «Olho Escuro, não leves Teruor.» Os doentes se levantaram. Em Naes, o crédito foi do Olho Escuro. O deus nada fez: o crédito era de graça. No outono, Nienor, o engenhoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva. Ibur passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Naes passou a festejar todo ano o dia da volta da chuva, em honra do Olho Escuro. Nail passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém. Nos anos 81 a 90 houve quatro secas, sete fomes, cinco batalhas, 25 preces que pareceram atendidas e nove preces sem resposta; nasceram 82 crianças e morreram 51 pessoas. No fim do ano 90, 123 pessoas viviam no mundo: Nail (74), Ibur (30) e Naes (19).
 
 ### Ano 91
 
-Taur passou fome no inverno por 11 dias, e duas pessoas morreram. Sa tinha rezado: «Terra Brava, dá-nos o que comer.» A fome passou, e Taur viu nisso obra da Terra Brava. O deus nada fez: o crédito era de graça. Na Quarta Guerra Santa, Taur atacou Naur na floresta em nome da Terra Brava. Taur venceu e levou a comida guardada. Na luta morreram Kian e Demloil. No outono, Penia deu à luz gêmeos, Penaem e Saem. Uns viram bênção; outros, mau sinal.
+Tasa deu à luz gêmeos, Tetaela e Maror. Uns viram bênção; outros, mau sinal. No inverno, com Runior à frente, nove pessoas deixaram Nail e fundaram Kiar, no morro. Saor passou a falar pelo Olho Escuro em Kiar. Era o primeiro a rezar e o último a duvidar. Diante das ruínas de Ruil, Kiar disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.
 
 ### Ano 92
 
-Loim, que guiava Naur, morreu dormindo, aos 56 anos. Foi quem proibiu, em nome do deus, o trato com Maril. Com Sa à frente, Taur largou o costume de guardar comida: sem origem lembrada, o costume perdeu o sentido.
+Nasceu Sasaor, o primeiro de Naes.
 
 ### Ano 93
 
-Naem tinha rezado: «Terra Brava, não deixes nossos filhos morrerem de fome.» A comida voltou, e Taur deu graças à Terra Brava. Foi só o tempo, mas quem iria dizer? No outono, a rixa entre Sa e Nira rachou Taur. Sa partiu com os seus, onze pessoas, e fundou Bubum no morro. Em Bubum, Taloim tomou para si o cuidado das preces à Terra Brava. A Quarta Guerra Santa seguiu: Taur contra Naur, na floresta em nome da Terra Brava. Naur expulsou os atacantes. Nitara e Peor morreram na luta.
+Ensan, de Nail, tomou por esposa Maril, de Naes, e os dois povos passaram a se visitar.
 
 ### Ano 94
 
-Taloim, que falava pela Terra Brava em Bubum, morreu de repente, aos 41 anos. Em Taur, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 30, só a crônica guarda. Nasceu Tara, a primeira de Bubum.
+Na primavera, o arquivo salvou Nail: Temaru reaprendeu nas tabuletas o que os mortos sabiam.
 
-*O ano 95 foi calmo.*
+### Ano 95
+
+No verão, Naes ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Naes, quem passou a decidir foi o templo: os sacerdotes falavam pelo Olho Escuro, e o deus decidia tudo.
 
 ### Ano 96
 
-Na primavera, morreu Taor, aos 52 anos. Nunca perdoou o deus pela morte de Marruim. Waem, que falava pela Estrela de Cauda em Maril, morreu de velhice aos 60 anos. Pem, de Bubum, tomou por esposa Tademu, de Maril, e os dois povos passaram a se visitar.
+A seca voltou, como no ano 85: 18 dias sem chuva, até que o céu se abriu. Em Ibur, Tem pediu: «Olho Escuro, não nos deixes secar.» Quando a chuva voltou, Ibur agradeceu ao Olho Escuro. O deus nada fez: o crédito era de graça. O dia em que a chuva voltou virou festa em Kiar: todo ano, celebram a chuva que o Olho Escuro mandou.
 
 ### Ano 97
 
-Morreu Kim, que guiava Taur, aos 53 anos. No outono, a Quarta Guerra Santa seguiu: Naur contra Taur, no lago em nome da Terra Brava. Taur resistiu, e Naur voltou de mãos vazias. Demna, Naim, Demru e Kiteor morreram na luta. Depois de tantos mortos, Naur e Taur se encontraram no lago e juraram paz. A Quarta Guerra Santa acabou em trégua, depois de onze anos, doze batalhas e dezessete mortos. Taur saiu dela mais forte.
+Esbeya morreu com 4 anos, de uma febre que ninguém entendeu. No verão, Marem, o engenhoso, aprendeu a levar a água por canais e a fazer o vento moer o grão. A lembrança da fome pesou. Sanaela, a desconfiada, inventou marcas que guardavam palavras.
 
 ### Ano 98
 
-Na primavera do ano 98, morreu Nademor, o medroso, aos 65 anos. Em Naur, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 28, só a crônica guarda. O inverno foi de gelo: duas pessoas morreram de frio.
+Na primavera do ano 98, Tem, que guiava Ibur, morreu de velhice aos 61 anos. Foi quem proibiu, em nome do deus, o trato com Ruil.
 
-*O ano 99 passou sem nada que a crônica precise guardar.*
+### Ano 99
+
+Na primavera do ano 99, em Kiar, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam. No verão, Naena, a corajosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Apareceu no céu uma luz com rabo, que ficou 6 noites e sumiu. Depois disso, Ibur deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Risca o Céu». Depois disso, Naes deixou de chamar o deus de «o Olho Escuro» e passou a chamá-lo de «o Que Risca o Céu».
 
 ### Ano 100
 
-Sasaor, que guiava Maril, morreu dormindo, aos 71 anos. Ninguém lembrava mais a razão, e Naur abandonou o costume de guardar comida. Morreu o último que tinha visto o ano 58. Em Maril, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Em Taur, Naem pediu: «Terra Brava, dá-nos o que comer.» A fome passou, e Taur viu nisso obra da Terra Brava. O deus não tinha feito nada. Nos anos 91 a 100 houve oito fomes, sete batalhas, dezesseis preces que pareceram atendidas e oito preces sem resposta; nasceram 100 crianças e morreram 48 pessoas. No fim do ano 100, 190 pessoas viviam no mundo: Taur (81), Naur (69), Maril (20) e Bubum (20).
+Marut, que fundou Naes e o guiava, morreu dormindo, aos 48 anos. Tinha fundado Naes. Em Kiar, os jovens deixaram de lado o costume de guardar comida. Era coisa de outro povo, diziam. Em Ibur, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Os sábios de Ibur passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força. Com canais e moinhos, Nail já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte. Nos anos 91 a 100 houve sete fomes e dezesseis preces que pareceram atendidas; nasceram 65 crianças e morreram 25 pessoas. No fim do ano 100, 164 pessoas viviam no mundo: Nail (100), Ibur (37), Naes (18) e Kiar (9).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Taur** vive no lago, com 81 pessoas, e planta roças; é o povo mais antigo; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); queima os mortos (desde o ano 72).
-- **Naur** vive na floresta, com 69 pessoas, e planta roças; nasceu de uma migração em Taur no ano 12; não reza a ninguém; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); faz a festa da chuva (desde o ano 64).
-- **Maril** vive na praia, com 20 pessoas, e planta roças; nasceu de uma migração em Tarur no ano 47; chama o deus de «a Estrela de Cauda»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (a origem foi esquecida); não desperdiça uma gota d'água (desde o ano 60); guarda tanta comida para o inverno (desde o ano 61); treina os jovens com lanças (desde o ano 72).
-- **Bubum** vive no morro, com 20 pessoas, e planta roças; nasceu de uma briga em Taur no ano 93; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (desde o ano 30); queima os mortos (desde o ano 72).
+- **Nail** vive no lago, com 100 pessoas, com canais e moinhos; nasceu de uma migração em Taur no ano 10; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 60); queima os mortos (desde o ano 62); não desperdiça uma gota d'água (desde o ano 80); treina os jovens com lanças (desde o ano 87).
+- **Ibur** vive na praia, com 37 pessoas, e escreve; nasceu de uma migração em Nail no ano 73; chama o deus de «o Que Risca o Céu»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (desde o ano 62); faz a festa da chuva (desde o ano 75); guarda tanta comida para o inverno (desde o ano 86).
+- **Naes** vive na floresta, com 18 pessoas, em casas de pedra; nasceu de uma migração em Nail no ano 89; chama o deus de «o Que Risca o Céu»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 60); queima os mortos (desde o ano 62); não desperdiça uma gota d'água (desde o ano 80); treina os jovens com lanças (desde o ano 87); faz a festa da chuva (desde o ano 90).
+- **Kiar** vive no morro, com 9 pessoas, e planta roças; nasceu de uma migração em Nail no ano 91; chama o deus de «o Olho Escuro»; costumes: queima os mortos (desde o ano 62); não desperdiça uma gota d'água (desde o ano 80); treina os jovens com lanças (desde o ano 87); faz a festa da chuva (desde o ano 96).
 
-Povos que deixaram de existir: Tarur.
+Povos que deixaram de existir: Taur, Linon, Saes, Maur e Ruil.
 
-Lugares com nome: Praia da Fome (praia, para Taur), Praia do Raio (praia, para Naur), Praia do Raio (praia, para Tarur), Praia da Fome (praia, para Maril), Lago da Vitória (lago, para Naur), Lago do Luto (lago, para Taur), Floresta da Vitória (floresta, para Naur), Floresta do Luto (floresta, para Taur) e Floresta da Vitória (floresta, para Maril).
+Lugares com nome: Praia da Trégua (praia, para Taur), Praia da Trégua (praia, para Linon), Praia da Fome (praia, para Ibur), Lago do Raio (lago, para Nail), Floresta do Raio (floresta, para Ruil), Floresta da Vitória (floresta, para Nail) e Floresta da Vitória (floresta, para Ibur).
 
-Em 100 anos nasceram 517 pessoas e morreram 342.
+Em 100 anos nasceram 458 pessoas e morreram 308.

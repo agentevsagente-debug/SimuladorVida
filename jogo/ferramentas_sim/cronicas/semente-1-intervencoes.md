@@ -24,331 +24,346 @@ Saenut, que guiava Zeor, morreu de velhice aos 59 anos. Quando Saenut morreu, Ze
 
 ### Ano 8
 
-No inverno do ano 8, pela primeira vez, alguém em Zeor pediu ao céu. Foi Satora: «Que Rega, dá-nos o que comer.»
+No inverno, pela primeira vez, alguém em Zeor pediu ao céu. Foi Satora: «Que Rega, não deixes nossos filhos morrerem de fome.»
 
 ### Ano 9
 
-Na primavera, Zeor deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Houve fome em Zeor no inverno: 4 dias de barriga vazia, sem mortes. A fome passou, e Zeor viu nisso obra do Que Rega. O deus nada fez: o crédito era de graça. Em Zeor, firmou-se a certeza de que o Que Rega ouve quem pede. Com Viem à frente, nove pessoas deixaram Zeor e fundaram Beak, na floresta. Pela primeira vez, havia mais de um povo no mundo.
+Com fome, Zeor levantou acampamento na floresta e foi buscar comida na praia. A comida voltou, e Zeor deu graças ao Que Rega. O deus nada fez: o crédito era de graça. Desde então, Zeor acredita que o Que Rega escuta as preces. Em Zeor, Satora pediu: «Que Rega, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Rega. A crônica sabe que foi acaso. A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe.
 
 ### Ano 10
 
-Rabea passou a falar pelo Que Rega em Beak. Era a primeira a rezar e a última a duvidar. Veio uma seca de 15 dias. O lago encolheu e a mata secou. Satora tinha rezado: «Que Rega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Zeor duvidou de que o Que Rega tinha ouvido. Foi só o tempo, mas quem iria dizer? Zeor passou a festejar todo ano o dia da volta da chuva, em honra do Que Rega. O dia em que a chuva voltou virou festa em Beak: todo ano, celebram a chuva que o Que Rega mandou. Nos anos 1 a 10 houve duas secas, duas fomes e quatro preces que pareceram atendidas; nasceram doze crianças e morreram uma pessoas. No fim do ano 10, 23 pessoas viviam no mundo: Zeor (14) e Beak (9).
+Na primavera, Zeor fez as primeiras roças no Lago da Fome. Deixou de viver só do que achava e passou a plantar. Nos anos 1 a 10 houve duas fomes e três preces que pareceram atendidas; nasceram quinze crianças e morreram oito pessoas. No fim do ano 10, dezenove pessoas viviam no mundo, todas em Zeor.
 
-*Os anos 11 a 12 passaram em paz.*
+### Ano 11
 
-### Ano 13
+No verão do ano 11, Bera, a engenhosa, descobriu como empilhar pedras cortadas sem que caíssem.
 
-Em Beak, Viem pediu: «Que Rega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Beak duvidou de que o Que Rega tinha ouvido. O deus não tinha feito nada.
-
-*O ano 14 passou sem nada que a crônica precise guardar.*
+*Entre os anos 12 e 14, nada mudou o rumo do mundo.*
 
 ### Ano 15
 
-Na primavera, Loenu, fundadora de Zeor, morreu dormindo, aos 61 anos. Ela sabia plantar. Com a morte de Loenu, Zeor perdeu o segredo das sementes: ninguém mais sabia plantar. Nas terras da floresta, Beak plantou suas primeiras roças. Já não precisava andar atrás de comida.
+No verão do ano 15, Zeor ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo. Em Zeor, quem passou a decidir foi o templo: os sacerdotes falavam pelo Que Rega, e o deus decidia tudo.
 
 ### Ano 16
 
-Losara morreu de repente, aos 14 anos. Sau sonhou com sementes enterradas, mas achou que era bobagem e esqueceu. No inverno, Vira, de Beak, casou-se com Linim e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Vira levou consigo o segredo das sementes.
+A chuva parou de cair. A seca durou 13 dias, e os riachos viraram pedra.
 
 ### Ano 17
 
-Zeor passou fome no inverno por 5 dias, e uma pessoa morreu. Depois daquela fome, Zeor passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. No inverno, em Beak nasceu a primeira criança: Bebeim, filho de Rabea e Viem.
+Rabea, a devota, aprendeu a tirar metal da pedra no fogo alto.
 
-### Ano 18
+*O ano 18 passou sem nada que a crônica precise guardar.*
 
-A fome no inverno durou 7 dias em Zeor e levou uma vida. Zeor já não se preparava para nada: o Que Rega sempre dava. Deixaram de guardar comida para o inverno.
+### Ano 19
 
-*O ano 19 foi calmo.*
+Na primavera, Loenu, fundadora de Zeor, morreu de velhice aos 65 anos. No outono, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito. Depois disso, Zeor deixou de chamar o deus de «o Que Rega» e passou a chamá-la de «a Estrela de Cauda». Zeor passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. No inverno, Rabea teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela.
 
 ### Ano 20
 
-Na primavera do ano 20, Satora, que falava pelo Que Rega em Zeor, morreu de repente, aos 41 anos. Foi quem deu ao deus o nome de «o Que Rega». Linim tinha rezado: «Que Rega, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Rega. O deus nada fez: o crédito era de graça. Em Zeor, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Nos anos 11 a 20 houve duas secas, seis fomes e doze preces que pareceram atendidas; nasceram dezesseis crianças e morreram sete pessoas. No fim do ano 20, 32 pessoas viviam no mundo: Zeor (20) e Beak (12).
+No fim do ano 20, 37 pessoas viviam no mundo, todas em Zeor.
 
-*No ano 21, nada de notável aconteceu.*
+### Ano 21
+
+Na primavera do ano 21, tantas preces atendidas fizeram Zeor confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno.
 
 ### Ano 22
 
-Na primavera do ano 22, em Zeor, Linut tomou para si o cuidado das preces ao Que Rega. Linut anunciou que o Que Rega proibia qualquer trato com Beak. O deus nunca disse isso, mas Zeor obedeceu. Os de Zeor caíram sobre Beak na floresta em nome do Que Rega. Beak expulsou os atacantes. Belinya e Linut morreram na luta. Foi a primeira vez que gente matou gente no mundo. Para Beak, a floresta virou Floresta da Vitória. No outono, dessa vez, o Que Rega não respondeu, e Zeor, que tinha esquecido como se virar sozinho, pagou caro.
+Em Zeor, os escribas começaram a guardar tudo em tabuletas: as leis, os nomes do deus e a história do povo, contada do jeito deles. Em Zeor, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto.
 
 ### Ano 23
 
-Em Zeor, Beim pediu: «Que Rega, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Rega. O deus não tinha feito nada.
+Na primavera do ano 23, morreu Bera, a engenhosa, aos 47 anos. A seca voltou, como no ano 16: 19 dias sem chuva, até que o céu se abriu.
 
-### Ano 24
-
-Com Beim à frente, oito pessoas deixaram Zeor e fundaram Busak, no lago. Vira passou a falar pelo Que Rega em Busak. Era a primeira a rezar e a última a duvidar.
-
-*O ano 25 passou sem nada que a crônica precise guardar.*
+*Entre os anos 24 e 25, nada mudou o rumo do mundo.*
 
 ### Ano 26
 
-Na primavera, Linim, que guiava Zeor, morreu dormindo, aos 50 anos. Com Beim à frente, a nova geração de Busak abandonou o treino com lanças, costume herdado dos avós. Beim, o curioso, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. Zeor não esqueceu o ano 22 e atacou Beak outra vez. Zeor venceu e levou a comida guardada. Saem e Viem morreram na luta. Depois de tantos mortos, Zeor e Beak se encontraram na floresta e juraram paz.
+No verão, Sau, a desconfiada, desenhou o primeiro canal e a primeira roda d'água. No outono, uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito. De novo a chuva sumiu, como no ano 23. Foram 23 dias de seca.
 
-### Ano 27
-
-Mik, que guiava Zeor, morreu de velhice aos 51 anos. Com a morte de Mik, Zeor perdeu o segredo das sementes: ninguém mais sabia plantar. As preces de Beak ficaram sem resposta. Em Busak nasceu a primeira criança: Beu, filha de Sau e Beim.
+*O ano 27 passou sem nada que a crônica precise guardar.*
 
 ### Ano 28
 
-No verão do ano 28, um raio sem nuvem acertou Lora, que guiava Zeor, diante de todos. Em Zeor, disseram que era castigo. Para Zeor, o deus já não era «o Que Rega»: passou a ser «o Que Fere». Zeor passou a acreditar que o Que Fere castiga quem duvida, e que Lora tinha duvidado. Desde a morte de Lora, ninguém em Zeor chega perto do lago em dia de tempestade. Depois disso, Busak deixou de chamar o deus de «o Que Rega» e passou a chamá-lo de «o Senhor do Trovão».
+Uma febre correu Zeor e levou duas vidas. As preces de Zeor ficaram pequenas: pedia-se à Estrela de Cauda até sol para a pesca e sorte na caça. Um raio sem nuvem acertou Linim, que guiava Zeor, diante de todos. Em Zeor, disseram que era castigo. Desde a morte de Linim, ninguém em Zeor chega perto do lago em dia de tempestade. Com canais e moinhos, Zeor já não olhava tanto para o céu. A chuva continuava bem-vinda, mas não era mais questão de vida ou morte.
 
-### Ano 29
-
-Depois disso, Beak deixou de chamar o deus de «o Que Rega» e passou a chamá-la de «a Estrela de Cauda». Com fome, Busak levantou acampamento no lago e foi buscar comida na praia. No outono, Beim, que fundou Busak e o guiava, morreu de frio. Tinha sido o primeiro a plantar. Beim morreu sem ensinar o que sabia. O saber de plantar morreu com ele. Os últimos de Busak, Beloim e Rasaem, juntaram-se a Beak. Busak deixou de existir.
+*O ano 29 passou sem nada que a crônica precise guardar.*
 
 ### Ano 30
 
-Em Beak, Rabea pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Beak viu nisso obra da Estrela de Cauda. O deus não tinha feito nada. A fome ensinou: desde então, Beak estoca comida e não come tudo o que colhe. Nos anos 21 a 30 houve três secas, seis fomes, duas batalhas, quinze preces que pareceram atendidas e três preces sem resposta; nasceram dezessete crianças e morreram 21 pessoas. No fim do ano 30, 28 pessoas viviam no mundo: Zeor (8) e Beak (20).
+Sau deu à luz gêmeos, Rara e Linviut. Uns viram bênção; outros, mau sinal. Nos anos 21 a 30 houve duas secas e seis preces que pareceram atendidas; nasceram dezenove crianças e morreram onze pessoas. No fim do ano 30, 46 pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 31
 
-Rabea, que falava pela Estrela de Cauda em Beak, morreu dormindo, aos 52 anos. Foi quem descobriu que semente vira planta.
+No inverno, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito.
 
-### Ano 32
-
-Em Beak, Saut pediu: «Manda água, Estrela de Cauda, que as crianças têm sede.» Quando a chuva voltou, Beak agradeceu à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? Beak já não se preparava para nada: a Estrela de Cauda sempre dava. Deixaram de guardar comida para o inverno. Uma estrela de cauda cruzou o céu por 15 noites. Ninguém dormia direito.
+*O ano 32 foi calmo.*
 
 ### Ano 33
 
-Beak passou fome no inverno por 7 dias, e uma pessoa morreu. O deus calou justo quando Beak mais dependia dele. A seca voltou, como no ano 10: 26 dias sem chuva, até que o céu se abriu.
+Viem, o devoto, morreu dormindo, aos 55 anos. No outono, a terra tremeu. Caíram quatro cabanas. Satora e Zeya morreram sob os escombros. Linut passou a guiar Zeor. Rabea passou a falar pela Estrela de Cauda em Zeor. Era a primeira a rezar e a última a duvidar.
 
-*Os anos 34 a 39 passaram em paz.*
+### Ano 34
+
+De novo a chuva sumiu, como no ano 26. Foram 22 dias de seca.
+
+### Ano 35
+
+No verão, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
+
+*Os anos 36 a 38 passaram em paz.*
+
+### Ano 39
+
+Uma estrela de cauda cruzou o céu por 8 noites. Ninguém dormia direito.
 
 ### Ano 40
 
-Nos anos 31 a 40 houve duas secas, duas fomes e sete preces que pareceram atendidas; nasceram dezessete crianças e morreram cinco pessoas. No fim do ano 40, 40 pessoas viviam no mundo: Zeor (16) e Beak (24).
+No fim do ano 40, 96 pessoas viviam no mundo, todas em Zeor.
 
 ### Ano 41
 
-Na primavera, uma estrela de cauda cruzou o céu por 5 noites. Ninguém dormia direito. Depois disso, Zeor deixou de chamar o deus de «o Que Fere» e passou a chamá-la de «a Estrela de Cauda». Uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca. Em Beak, Saut pediu: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Beak agradeceu à Estrela de Cauda. O deus nada fez: o crédito era de graça.
+No verão do ano 41, uma nuvem parou sobre o lago e choveu ali, e só ali, no meio da seca.
 
-*O ano 42 foi calmo.*
+### Ano 42
+
+Sabea deu à luz gêmeos, Raik e Zeloem. Uns viram bênção; outros, mau sinal.
 
 ### Ano 43
 
-No outono, Vik, o corajoso, cansou de dividir pouca comida. Partiu com treze pessoas para a praia e ali fundou Ulur.
+Um inverno duro matou cinco pessoas de frio. A seca voltou, como no ano 34: 25 dias sem chuva, até que o céu se abriu.
 
 ### Ano 44
 
-Na primavera, Vira, que guiava Beak, morreu de velhice aos 53 anos. Tinha levado o saber de plantar para Zeor. Saut passou a guiar Beak. Linbeut tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Ulur deu graças à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? A fome ensinou: desde então, Ulur estoca comida e não come tudo o que colhe. No verão, Linbeut, de Ulur, casou-se com Enya e mudou-se para Zeor, coisa que ninguém tinha feito antes.
+Zeor passou fome no inverno por 7 dias, mas ninguém morreu. Em Zeor, Rabea pediu: «Estrela de Cauda, dá-nos o que comer.» A comida voltou, e Zeor deu graças à Estrela de Cauda. O deus nada fez: o crédito era de graça. Os escribas de Zeor registraram o milagre. O arquivo salvou Zeor: Sau reaprendeu nas tabuletas o que os mortos sabiam. Uma tosse que não passava matou cinco pessoas em Zeor. Depois da febre, Zeor passou a queimar os seus mortos, para que a doença não voltasse.
 
 *No ano 45, nada de notável aconteceu.*
 
 ### Ano 46
 
-Na primavera, Samiut, o medroso, descobriu que uma semente enterrada vira planta.
+Em Zeor, Rabea pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças à Estrela de Cauda. A crônica sabe que foi acaso. Nas tabuletas de Zeor, ficou escrito que foi a Estrela de Cauda. A seca voltou, como no ano 43: 20 dias sem chuva, até que o céu se abriu.
 
 ### Ano 47
 
-Em Ulur nasceu a primeira criança: Raya, filha de Linmira e Vik. No verão, a tempestade trouxe raios para a praia. Um deles acertou Viviut. Ninguém em Ulur teve dúvida: era castigo. O lugar ganhou nome: Praia do Raio. De novo a chuva sumiu, como no ano 33. Foram 25 dias de seca.
+Na primavera do ano 47, morreu Rabea, que falava pela Estrela de Cauda em Zeor, aos 68 anos. Tinha sido a primeira a plantar.
 
-*O ano 48 passou sem nada que a crônica precise guardar.*
+### Ano 48
 
-### Ano 49
+Zeor conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 13. Muitas cabanas ficaram vazias.
 
-Na primavera do ano 49, em Ulur, os jovens deixaram de lado o medo das tempestades. Era coisa de outro povo, diziam.
+*O ano 49 foi calmo.*
 
 ### Ano 50
 
-Nos anos 41 a 50 houve duas secas e seis preces que pareceram atendidas; nasceram 44 crianças e morreram dezesseis pessoas. No fim do ano 50, 68 pessoas viviam no mundo: Zeor (11), Beak (48) e Ulur (9).
+Na primavera, uma estrela de cauda cruzou o céu por 11 noites. Ninguém dormia direito. Nos anos 41 a 50 houve cinco secas, cinco fomes e dez preces que pareceram atendidas; nasceram 42 crianças e morreram 50 pessoas. No fim do ano 50, 89 pessoas viviam no mundo, todas em Zeor.
 
-*Do ano 51 ao 53, a vida seguiu sem grandes acontecimentos.*
+### Ano 51
+
+Saut, que falava pela Estrela de Cauda em Zeor, morreu de velhice aos 55 anos. Morreu o último que sabia trabalhar o metal, e ninguém tinha aprendido. Zeor perdeu o saber. O deus calou justo quando Zeor mais dependia dele. A rixa entre Bezeim e Linut rachou Zeor. Bezeim partiu com os seus, quinze pessoas, e fundou Bean na floresta. Era o primeiro povo nascido de outro. Zeor passou fome no inverno por 22 dias, e quatro pessoas morreram.
+
+### Ano 52
+
+No outono, Bezeim, que guiava Bean, teve uma filha: Miya. De novo a chuva sumiu, como no ano 46. Foram 18 dias de seca. Bezeim tinha rezado: «Estrela de Cauda, que a chuva volte.» Quando a chuva voltou, Bean agradeceu à Estrela de Cauda. Foi só o tempo, mas quem iria dizer? Bean passou a festejar todo ano o dia da volta da chuva, em honra da Estrela de Cauda.
+
+### Ano 53
+
+Na primavera, Zeor atacou Bean na floresta. Bean foi derrotado e perdeu o que tinha guardado. Torrara morreu na luta. Foi a primeira vez que gente matou gente no mundo. Depois de tanto sofrer nas mãos dos vizinhos, Bean passou a desconfiar de todo estrangeiro. Zeor e Bean fizeram as pazes na floresta, antes que a briga crescesse. Para Bean, a floresta virou Floresta da Trégua. Bezeim rezou, e nada aconteceu.
 
 ### Ano 54
 
-Saut, que guiava Beak, morreu dormindo, aos 58 anos.
+Loik, de Bean, tomou por esposa Zeya, de Zeor, e os dois povos passaram a se visitar. Loem rezou por Torem até a voz acabar. Torem morreu mesmo assim, e Loem nunca mais rezou. No outono, Enra deu à luz gêmeos, Nibem e Tortora. Uns viram bênção; outros, mau sinal. No inverno, Saim, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia.
 
 ### Ano 55
 
-Na primavera, morreu Samiut, o medroso, aos 50 anos. Ele sabia plantar. Zeya, de Beak, casou-se com Satorim e foi viver em Ulur. Foi o primeiro laço entre os dois povos. Zeya levou consigo o segredo das sementes. No outono, no meio da fome, a floresta se encheu de frutos e peixes, como nunca. Beak comeu até cansar. Depois disso, Beak deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-la de «a Mãe da Fartura». No inverno, com fome, Ulur levantou acampamento na praia e foi buscar comida no lago.
+Na primavera, no meio da fome, o lago se encheu de frutos e peixes, como nunca. Zeor comeu até cansar. Para Zeor, o deus já não era «a Estrela de Cauda»: passou a ser «o Que Dá». Losara tinha rezado: «Estrela de Cauda, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Dá. Dessa vez, tinha sido mesmo o deus. Enik implorou pelo filho. Enenem morreu, e daquele dia em diante Enik cuspia no chão quando falavam do Que Dá.
 
 ### Ano 56
 
-Em Ulur, Zeya pediu: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Ulur viu nisso obra da Estrela de Cauda. A crônica sabe que foi acaso.
+Raya deu à luz gêmeos, Vira e Mitora. Uns viram bênção; outros, mau sinal. No inverno, a terra tremeu. Caíram onze cabanas. Enik e Saloa morreram sob os escombros. Depois disso, Bean deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Sacode».
 
 ### Ano 57
 
-Zeya passou a falar pela Estrela de Cauda em Ulur. Era a primeira a rezar e a última a duvidar. No outono, Ulur já não se preparava para nada: a Estrela de Cauda sempre dava. Deixaram de guardar comida para o inverno. No inverno, Bezeim rezou por Lilim até a voz acabar. Lilim morreu mesmo assim, e Bezeim nunca mais rezou. Uma tosse que não passava matou oito pessoas em Beak. Depois da febre, Beak passou a queimar os seus mortos, para que a doença não voltasse.
+A fome no inverno durou 16 dias em Zeor e levou três vidas.
 
 ### Ano 58
 
-Zeya tinha rezado: «Estrela de Cauda, não deixes nossos filhos morrerem de fome.» A fome passou, e Ulur viu nisso obra da Estrela de Cauda. O deus nada fez: o crédito era de graça. Beak conheceu a maior fome da sua história por causa da seca. Em 22 dias, morreram 15. Muitas cabanas ficaram vazias. Depois daquela fome, Beak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Bezeim anunciou que a Mãe da Fartura proibia qualquer trato com Zeor. O deus nunca disse isso, mas Beak obedeceu. As preces de Ulur ficaram pequenas: pedia-se à Estrela de Cauda até sol para a pesca e sorte na caça.
+No verão, um raio caiu no lago durante a tempestade e matou Enim. Enim era dos que mais rezavam, e Zeor ficou sem entender. Os devotos de Zeor não viram castigo: para eles, o Que Dá chamou Enim para perto. Nasceu ali a lembrança de Enim como santo.
 
 ### Ano 59
 
-Dessa vez, a Estrela de Cauda não respondeu, e Ulur, que tinha esquecido como se virar sozinho, pagou caro. A seca voltou, como no ano 47: 26 dias sem chuva, até que o céu se abriu.
+A fome no inverno durou 11 dias em Zeor e levou duas vidas. Torya implorou pelo filho. Bemik morreu, e daquele dia em diante Torya cuspia no chão quando falavam do Que Dá. A doença entrou em Zeor e matou três pessoas. A rixa entre Bezeim e Linut rachou Bean. Bezeim partiu com os seus, dezessete pessoas, e fundou Zeon na praia. A forja de Zeor não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 60
 
-Bezeim, que guiava Beak, morreu de velhice aos 59 anos. Desde a morte de Lilim, nunca mais tinha rezado. Houve luta no lago: Beak atacou Zeor em nome da Mãe da Fartura. Beak venceu e levou a comida guardada. A terra se ergueu no lago: onde era plano, surgiu uma pedra alta, do tamanho de dez homens. Ninguém viu mão nenhuma. Depois disso, Zeor deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Pai das Pedras». A fome por causa da seca durou 17 dias em Beak e levou três vidas. Nos anos 51 a 60 houve quatro secas, onze fomes, 23 preces que pareceram atendidas e seis preces sem resposta; nasceram 38 crianças e morreram 37 pessoas. No fim do ano 60, 69 pessoas viviam no mundo: Zeor (10), Beak (44) e Ulur (15).
+Morreu Loim, filho pequeno de Enra. Com Sabeik à frente, a nova geração de Bean abandonou o medo das tempestades, costume herdado dos avós. Em Zeon, Torzeik tomou para si o cuidado das preces ao Que Sacode. Em Zeon nasceu a primeira criança: Nagau, filha de Enra e Linut. Nos anos 51 a 60 houve nove fomes, 25 preces que pareceram atendidas e sete preces sem resposta; nasceram 77 crianças e morreram 38 pessoas. No fim do ano 60, 131 pessoas viviam no mundo: Zeor (99), Bean (13) e Zeon (19).
 
-*No ano 61, nada de notável aconteceu.*
+### Ano 61
+
+Em Zeor, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Bean atacou Zeon na praia. Zeon expulsou os atacantes. Sabeik morreu na luta. Zeon venceu Bean e levou os quatro sobreviventes para viver sob seu mando. Bean deixou de existir, mas os vencidos guardaram seus costumes em segredo. Diante das ruínas de Bean, Zeor disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. Zeon já não cabia na praia. Lorara, a curiosa, levou oito pessoas para a floresta e fundou Rilil.
 
 ### Ano 62
 
-No inverno, houve luta no lago: Ulur atacou Zeor. Zeor resistiu, e Ulur voltou de mãos vazias. Miya, Vik e Raem morreram na luta. Depois de tantos mortos, Ulur e Zeor se encontraram no lago e juraram paz.
+Zeor conheceu a maior fome da sua história no inverno. Em 11 dias, morreram 25. Muitas cabanas ficaram vazias. Em Zeor, Milinim pediu: «Que Dá, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Que Dá. O deus nada fez: o crédito era de graça. Nas tabuletas de Zeor, ficou escrito que foi o Que Dá. O inverno foi de gelo: três pessoas morreram de frio.
 
 ### Ano 63
 
-Na primavera do ano 63, de novo Beak contra Zeor, como no ano 60 em nome da Mãe da Fartura. Beak venceu e levou a comida guardada. Na luta morreram Torya e Bea.
+Linut morreu de velhice aos 64 anos. Enra, de Zeon, casou-se com Raut e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Nasceu Niniya, a primeira de Rilil.
 
 ### Ano 64
 
-Zea deu à luz gêmeos, Ena e Engaim. Uns viram bênção; outros, mau sinal.
+Enloim, de Rilil, tomou por esposa Torya, de Zeor, e os dois povos passaram a se visitar. Losara, que guiava Zeor, não resistiu à fome. Zeor escolheu Linik para guiar o grupo. Beik queria o lugar e nunca perdoou. Em Zeor, Losara pediu: «Que Dá, dá-nos o que comer.» A comida voltou, e Zeor deu graças ao Que Dá. O deus não tinha feito nada. Os escribas de Zeor registraram o milagre.
 
 ### Ano 65
 
-No verão, nas terras da Praia do Raio, Ulur plantou suas primeiras roças. Já não precisava andar atrás de comida. Começou a Guerra Santa: em nome da Mãe da Fartura, Beak pegou em lanças contra Zeor. Na Guerra Santa, Beak atacou Zeor no lago em nome da Mãe da Fartura. Zeor foi derrotado e perdeu o que tinha guardado. Na luta morreram Enu, Mia e Lira. Depois de tantos mortos, Beak e Zeor se encontraram no lago e juraram paz. Depois de dois anos, duas batalhas e cinco mortos, a Guerra Santa terminou em paz. Beak saiu dela mais forte.
+A fome no inverno durou 11 dias em Zeor e levou vinte vidas.
 
 ### Ano 66
 
-Na primavera do ano 66, morreu Karaim, filho pequeno de Zeya. Beraem tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A fome passou, e Beak viu nisso obra da Mãe da Fartura. O deus nada fez: o crédito era de graça.
+Na primavera do ano 66, com Bezeim à frente, a nova geração de Zeon abandonou o medo das tempestades, costume herdado dos avós. Em Zeor, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
 
 ### Ano 67
 
-Na primavera, Linbeut, que falava pelo Pai das Pedras em Zeor, morreu dormindo, aos 64 anos. Beraem tinha rezado: «Mãe da Fartura, não deixes nossos filhos morrerem de fome.» A comida voltou, e Beak deu graças à Mãe da Fartura. Foi só o tempo, mas quem iria dizer? A doença entrou em Beak e matou quatro pessoas. A rixa entre Lingaik e Beraem rachou Beak. Lingaik partiu com os seus, doze pessoas, e fundou Linem no morro. Em Linem nasceu a primeira criança: Tambea, filha de Kurlira e Bebeim.
+A forja de Zeor não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
 ### Ano 68
 
-Enya, que guiava Zeor, morreu de velhice aos 58 anos. Morreu o último que tinha visto o ano 10. Em Zeor, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Linem, Vigais tomou para si o cuidado das preces à Mãe da Fartura. No outono, a tempestade trouxe raios para a praia. Um deles acertou Lina. A família de Lina nunca perdoou o céu. Nas terras do Lago do Raio, Zeor plantou suas primeiras roças. Já não precisava andar atrás de comida.
+Na primavera, Bezeim, que fundou Zeon e o guiava, morreu de velhice aos 67 anos. Tinha fundado Bean. Zeor já não cabia no lago. Raim, o corajoso, levou 21 pessoas para o morro e fundou Viem. Diante das ruínas de Bean, Viem disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No outono, em Viem, Viya tomou para si o cuidado das preces ao Que Dá. O dia em que a chuva voltou virou festa em Viem: todo ano, celebram a chuva que o Que Dá mandou.
 
 ### Ano 69
 
-Morreu Beraem, que guiava Beak, aos 63 anos. Com Mizeut à frente, Zeor largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido.
+Em Viem, Raim pediu: «Que Dá, dá-nos o que comer.» A fome passou, e Viem viu nisso obra do Que Dá. Foi só o tempo, mas quem iria dizer? No outono, o sol escureceu outra vez. Depois disso, Zeor deixou de chamar o deus de «o Que Dá» e passou a chamá-lo de «o Que Apaga o Sol». Para Zeon, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
 
 ### Ano 70
 
-Lingaik tinha rezado: «Manda água, Mãe da Fartura, que as crianças têm sede.» Quando a chuva voltou, Linem agradeceu à Mãe da Fartura. O deus não tinha feito nada. Nos anos 61 a 70 houve duas secas, seis fomes, três batalhas, dezenove preces que pareceram atendidas e quatro preces sem resposta; nasceram 63 crianças e morreram 48 pessoas. No fim do ano 70, 85 pessoas viviam no mundo: Zeor (14), Beak (40), Ulur (10) e Linem (21).
+Na primavera, morreu Saim, o engenhoso, aos 51 anos. Enmiut, o engenhoso, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Nos anos 61 a 70 houve duas secas, nove fomes, 22 preces que pareceram atendidas e cinco preces sem resposta; nasceram 81 crianças e morreram 81 pessoas. No fim do ano 70, 131 pessoas viviam no mundo: Zeor (69), Zeon (25), Rilil (13) e Viem (24).
 
 ### Ano 71
 
-Na primavera do ano 71, sem lugar e sem comida, Lia e os seus atravessaram a borda do mundo. Ninguém soube deles. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Veio a pior fome que o mundo tinha visto: 25 dias por causa da seca em Beak, e 20 mortos. As crianças foram as primeiras. A seca voltou, como no ano 59: 25 dias sem chuva, até que o céu se abriu.
+Na primavera, apareceu no céu uma luz com rabo, que ficou 8 noites e sumiu. Para Rilil, o deus já não era «o Que Sacode»: passou a ser «a Estrela de Cauda». Para Viem, o deus já não era «o Que Dá»: passou a ser «a Estrela de Cauda». Viem, de Viem, tomou por esposa Miya, de Zeon, e os dois povos passaram a se visitar.
 
 ### Ano 72
 
-No inverno do ano 72, Beak atacou Linem no morro. Linem foi derrotado e perdeu o que tinha guardado. Na luta morreu Lingaim. Liem implorou pelo filho. Tamim morreu, e daquele dia em diante Liem cuspia no chão quando falavam da Mãe da Fartura. Bebeim, o devoto, morreu de febre aos 55 anos. A febre levou Lingaik, que fundou Linem e o guiava. Tinha fundado Linem. A doença entrou em Linem e matou quatro pessoas.
+Nasceu Viu, filha de Miya e Viem, com sangue de Viem e de Zeon.
 
 ### Ano 73
 
-Ensaik, que guiava Beak, morreu de velhice aos 54 anos. Mizeut, de Zeor, casou-se com Kurlira e foi viver em Linem. Foi o primeiro laço entre os dois povos. A fome por causa da seca durou 23 dias em Linem e levou onze vidas. Desde então, Linem chama o morro de Morro da Fome. Vigais anunciou que a Mãe da Fartura proibia qualquer trato com Ulur. O deus nunca disse isso, mas Linem obedeceu.
+Linlina, a rancorosa, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. No outono, Ra, de Viem, casou-se com Torlout e foi viver em Zeor. Foi o primeiro laço entre os dois povos. Envia morreu ao dar à luz. A seca voltou, como no ano 52: 23 dias sem chuva, até que o céu se abriu. Em Zeon, Saik pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Zeon duvidou de que o Que Apaga o Sol tinha ouvido. A crônica sabe que foi acaso.
 
 ### Ano 74
 
-Linbeis, que falava pela Mãe da Fartura em Beak, morreu dormindo, aos 54 anos. Começou a Guerra da Fome: Beak, com fome, foi buscar à força a comida de Linem. Na Guerra da Fome, Linem atacou Beak na floresta em nome da Mãe da Fartura. Beak expulsou os atacantes. Kurlira e Mizeut morreram na luta. Desde então, Linem chama a floresta de Floresta do Luto.
+Foram 25 dias de fome por causa da seca em Zeon, com quinze mortos. Depois daquela fome, Zeon passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A praia passou a ser a praia da fome: Praia da Fome. No inverno, Zeor passou a escrever. As leis, os costumes e a história do povo começaram a ficar nas tabuletas, e já não dependiam da memória de ninguém.
 
 ### Ano 75
 
-Morreu Vigais, que falava pela Mãe da Fartura em Linem, aos 51 anos. Foi quem proibiu, em nome do deus, o trato com Ulur. Na Guerra da Fome, Linem atacou Beak na floresta em nome da Mãe da Fartura. Beak resistiu, e Linem voltou de mãos vazias. Zera, Linvira e Bera morreram na luta. Linem fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Depois da derrota, Linem não existia mais: os cinco que sobraram foram levados para Beak. A Guerra da Fome terminou com a conquista: três anos, três batalhas e seis mortos.
+Na primavera, Linik, que guiava Zeor, morreu de velhice aos 59 anos.
 
 ### Ano 76
 
-Em Zeor, Zeu pediu: «Pai das Pedras, não deixes nossos filhos morrerem de fome.» A comida voltou, e Zeor deu graças ao Pai das Pedras. Foi só o tempo, mas quem iria dizer? A fome ensinou: desde então, Zeor estoca comida e não come tudo o que colhe. Houve luta na floresta: Zeor atacou Beak em nome do Pai das Pedras. Beak resistiu, e Zeor voltou de mãos vazias. Na luta morreram Saem e Zeu.
+Na primavera do ano 76, Zeim, de Rilil, tomou por esposa Nagau, de Zeon, e os dois povos passaram a se visitar. No outono, Zeut, o pacífico, desenhou o primeiro canal e a primeira roda d'água.
 
 ### Ano 77
 
-Zeor passou fome no inverno por 17 dias, e três pessoas morreram. No inverno, começou a Guerra Santa da Floresta: em nome do Pai das Pedras, Zeor pegou em lanças contra Beak. Zeor e Beak, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de um ano, duas batalhas e três mortos, a Guerra Santa da Floresta terminou em paz. Beak saiu dela mais forte.
+No verão do ano 77, Zeor cavou canais e ergueu moinhos. A água chegava às roças mesmo sem chuva, e o povo passou a precisar menos do Que Apaga o Sol.
 
 ### Ano 78
 
-De novo a chuva sumiu, como no ano 71. Foram 24 dias de seca.
+Em Rilil, os jovens deixaram de lado o costume de queimar os mortos. Era coisa de outro povo, diziam. Milinim tinha rezado: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Apaga o Sol. A crônica sabe que foi acaso. Os escribas de Zeor registraram o milagre. A terra tremeu. Caíram catorze cabanas. Torlout, Razeim, Linvik e Linloik morreram sob os escombros. No outono, a forja de Viem não apagava mais. O metal mudou o trabalho e mudou a guerra.
 
-### Ano 79
-
-Zem tinha rezado: «Mãe da Fartura, dá-nos o que comer.» A fome passou, e Beak viu nisso obra da Mãe da Fartura. A crônica sabe que foi acaso.
+*No ano 79, nada de notável aconteceu.*
 
 ### Ano 80
 
-Zeya, que falava pela Estrela de Cauda em Ulur, morreu ao dar à luz. Tinha levado o saber de plantar para Ulur. No outono, apareceu no céu uma luz com rabo, que ficou 14 noites e sumiu. Para Beak, o deus já não era «a Mãe da Fartura»: passou a ser «o Que Risca o Céu». Nos anos 71 a 80 houve três secas, dez fomes, seis batalhas, 35 preces que pareceram atendidas e dezoito preces sem resposta; nasceram 58 crianças e morreram 44 pessoas. No fim do ano 80, 96 pessoas viviam no mundo: Zeor (12), Beak (64) e Ulur (20).
+Morreu Lorara, que fundou Rilil e o guiava, aos 62 anos. Foi quem levou os seus a fundar Rilil. Viem já não se preparava para nada: a Estrela de Cauda sempre dava. Deixaram de guardar comida para o inverno. Nos anos 71 a 80 houve quatro fomes e catorze preces que pareceram atendidas; nasceram 103 crianças e morreram 50 pessoas. No fim do ano 80, 184 pessoas viviam no mundo: Zeor (90), Zeon (32), Rilil (18) e Viem (44).
 
 ### Ano 81
 
-Na primavera do ano 81, morreu Zem, que guiava Beak, aos 55 anos.
+A seca voltou, como no ano 73: 21 dias sem chuva, até que o céu se abriu. Torzeik tinha rezado: «Manda água, Estrela de Cauda, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Rilil duvidou de que a Estrela de Cauda tinha ouvido. O deus nada fez: o crédito era de graça. Em Viem, rezava-se por qualquer coisa: um peixe maior, um dia sem vento. Raim, que fundou Viem e o guiava, não resistiu à fome. Tinha fundado Viem. Viya, que falava pela Estrela de Cauda em Viem, morreu de fome.
 
 ### Ano 82
 
-Na primavera, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Para Zeor, o deus já não era «o Pai das Pedras»: passou a ser «o Olho Escuro». Depois disso, Ulur deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Olho Escuro». Enulu, que guiava Zeor, morreu ao dar à luz. Tinha levado o saber de plantar para Zeor.
+Na primavera, Milinim, que guiava Zeor, morreu dormindo, aos 67 anos. Sem lugar e sem comida, Ena e os seus atravessaram a borda do mundo. Ninguém soube deles. Viem passou fome por causa da seca por 25 dias, e dezessete pessoas morreram. No outono, Linzeya anunciou que a Estrela de Cauda proibia qualquer trato com Rilil. O deus nunca disse isso, mas Viem obedeceu. Houve luta na floresta: Viem atacou Rilil em nome da Estrela de Cauda. Rilil foi derrotado e perdeu o que tinha guardado. Enloim e Nan morreram na luta.
 
 ### Ano 83
 
-Na primavera, morreu Linmira, que guiava Ulur, aos 72 anos. Em Ulur, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 22, só a crônica guarda. Begaik rezou por Sakura até a voz acabar. Sakura morreu mesmo assim, e Begaik nunca mais rezou. A doença entrou em Beak e matou três pessoas.
+Saik anunciou que o Que Apaga o Sol proibia qualquer trato com Rilil. O deus nunca disse isso, mas Zeon obedeceu.
 
 ### Ano 84
 
-Linzem, que guiava Ulur, morreu de velhice aos 51 anos. Veio a pior fome que o mundo tinha visto: 23 dias por causa da seca em Beak, e 21 mortos. As crianças foram as primeiras.
+Na primavera, os de Zeon caíram sobre Rilil na floresta em nome do Que Apaga o Sol. Rilil expulsou os atacantes. Miem, Saik e Tortora morreram na luta. Numa noite, o chão da floresta tremeu e se levantou. De manhã, havia ali uma pedra que ninguém tinha posto. Começou a Guerra Santa: em nome do Que Apaga o Sol, Zeon pegou em lanças contra Rilil. Depois de duas batalhas e cinco mortos, a Guerra Santa terminou em paz. Zeon ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 85
 
-A floresta pegou fogo sem que ninguém acendesse nada. Bejua, Gasaya e Gaya morreram nas chamas. Em Beak, disseram que o lugar estava amaldiçoado.
+Na primavera, em Zeon, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. No verão, a floresta pegou fogo sem que ninguém acendesse nada. Em Rilil, disseram que o lugar estava amaldiçoado.
 
 ### Ano 86
 
-No verão do ano 86, a terra tremeu. Caíram seis cabanas. No outono, de novo o sol se apagou no meio do dia.
+Zeor passou fome no inverno por 7 dias, e cinco pessoas morreram.
 
 ### Ano 87
 
-Begaik tinha rezado: «Que Risca o Céu, que a chuva volte.» Quando a chuva voltou, Beak agradeceu ao Que Risca o Céu. O deus não tinha feito nada.
+Na primavera do ano 87, morreu Zeut, o pacífico, aos 55 anos. Em nome do Que Apaga o Sol, Rara proibiu casamentos e trocas com Viem. Era vontade de Rara, não do deus. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Viem perdeu o saber. Depois disso, Viem deixou de chamar o deus de «a Estrela de Cauda» e passou a chamá-lo de «o Que Apaga o Sol». No inverno, houve luta na floresta: Zeor atacou Rilil em nome do Que Apaga o Sol. Rilil foi derrotado e perdeu o que tinha guardado. Zeya, Tazean e Zeim morreram na luta.
 
 ### Ano 88
 
-Em Beak, Begaik pediu: «Que Risca o Céu, dá-nos o que comer.» A fome passou, e Beak viu nisso obra do Que Risca o Céu. O deus nada fez: o crédito era de graça. Vibeim implorou pela filha. Enya morreu, e daquele dia em diante Vibeim cuspia no chão quando falavam do Que Risca o Céu. No verão, Beak já não cabia na floresta. Vibeim, o corajoso, levou dezoito pessoas para o morro e fundou Linan.
+Na primavera do ano 88, Enmiut, o engenhoso, morreu de repente, aos 38 anos. Zem, o engenhoso, aprendeu a tirar metal da pedra no fogo alto. A guerra apressou a ideia. Em Zeon, Lozeu pediu: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeon viu nisso obra do Que Apaga o Sol. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 89
 
-Em Linan, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 26, só a crônica guarda. Em Linan, Visaim tomou para si o cuidado das preces ao Que Risca o Céu. No outono, Kuris deu à luz gêmeos, Belina e Bebeim. Uns viram bênção; outros, mau sinal. De novo a chuva sumiu, como no ano 78. Foram 26 dias de seca. Em Linan, Sa pediu: «Que Risca o Céu, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Linan duvidou de que o Que Risca o Céu tinha ouvido. A crônica sabe que foi acaso.
+Na primavera, Loik, que guiava Zeon, morreu dormindo, aos 53 anos. Lotorut partiu com três pessoas para além da borda do mundo. Nunca voltaram. Zeon já não se preparava para nada: o Que Apaga o Sol sempre dava. Deixaram de guardar comida para o inverno. Zeon passou a festejar todo ano o dia da volta da chuva, em honra do Que Apaga o Sol. O deus calou justo quando Zeon mais dependia dele.
 
 ### Ano 90
 
-Na primavera, Linbem, de Linan, tomou por esposa Vibeis, de Beak, e os dois povos passaram a se visitar. Nos anos 81 a 90 houve três secas, quatro fomes, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 46 crianças e morreram 42 pessoas. No fim do ano 90, 101 pessoas viviam no mundo: Zeor (22), Beak (39), Ulur (21) e Linan (19).
+Em Viem, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 28, só a crônica guarda. O frio levou Linenim, que guiava Zeon. A fome no inverno durou 11 dias em Zeor e levou dezenove vidas. Em Zeor, Satora pediu: «Que Apaga o Sol, dá-nos o que comer.» A fome passou, e Zeor viu nisso obra do Que Apaga o Sol. O deus nada fez: o crédito era de graça. Os escribas de Zeor registraram o milagre. A fome ensinou: desde então, Rilil estoca comida e não come tudo o que colhe. Nos anos 81 a 90 houve duas secas, 21 fomes, cinco batalhas, 43 preces que pareceram atendidas e doze preces sem resposta; nasceram 79 crianças e morreram 121 pessoas. No fim do ano 90, 125 pessoas viviam no mundo: Zeor (77), Zeon (27), Rilil (12) e Viem (9).
 
 ### Ano 91
 
-Na primavera do ano 91, Satorim, que guiava Ulur, morreu de velhice aos 55 anos. Em Linan nasceu a primeira criança: Waya, filha de Vibeis e Linbem.
+De novo Zeor contra Rilil, como no ano 87 em nome do Que Apaga o Sol. Rilil foi derrotado e perdeu o que tinha guardado. Na luta morreu Rilur. No outono, uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito.
 
 ### Ano 92
 
-Morreu Begaik, que guiava Beak, aos 64 anos. Desde a morte de Sakura, nunca mais tinha rezado. No inverno, numa tempestade sobre o morro, um raio matou Vibeim. A família de Vibeim nunca perdoou o céu. Depois disso, Linan deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-la de «a Voz do Céu». Nasceu ali um costume: quando o céu escurece, ninguém em Linan sai de casa. Lembram de Vibeim. O lugar ganhou nome: Morro do Raio.
+Na primavera, em nome do Pai das Pedras, Torzeik proibiu casamentos e trocas com Zeor. Era vontade de Torzeik, não do deus. No verão, Zem implorou pelo filho. Zenaut morreu, e daquele dia em diante Zem cuspia no chão quando falavam do Que Apaga o Sol. Um raio caiu na praia durante a tempestade e matou Rilzena. Ninguém em Zeon teve dúvida: era castigo. Para Zeon, o deus já não era «o Que Apaga o Sol»: passou a ser «a Voz do Céu». No inverno, Zeor venceu Viem e levou os sete sobreviventes para viver sob seu mando. Viem deixou de existir, mas os vencidos guardaram seus costumes em segredo.
 
 ### Ano 93
 
-No outono, apareceu no céu uma luz com rabo, que ficou 6 noites e sumiu.
+Na primavera, as ruínas de Viem viraram aviso em Zeor: era o que o deus fazia com quem o desagradava. Zeon encontrou as ruínas de Viem. Diziam que tinha sido gente como eles, e que alguma coisa dera errado. No outono, Zeon passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras. Rara, que guiava Zeor, morreu de fome. Foi quem proibiu, em nome do deus, o trato com Viem.
 
-*No ano 94, nada de notável aconteceu.*
+### Ano 94
+
+Zeor passou fome no inverno por 14 dias, e três pessoas morreram. A doença entrou em Zeor e matou cinco pessoas.
 
 ### Ano 95
 
-Na primavera, com Raik à frente, Zeor largou o treino com lanças: sem origem lembrada, o costume perdeu o sentido.
+De novo Zeor contra Rilil, como no ano 91 em nome do Que Apaga o Sol. Zeor venceu e levou a comida guardada. Na luta morreram Taniem, Toran, Gaya e Vibeu. Rilil fechou-se aos de fora: não se casava mais com estrangeiros, e quem chegava era recebido com lanças. Depois de tantos mortos, Zeor e Rilil se encontraram na floresta e juraram paz. No outono, depois da derrota, Rilil não existia mais: os sete que sobraram foram levados para Zeon. As ruínas de Rilil viraram aviso em Zeor: era o que o deus fazia com quem o desagradava.
 
 ### Ano 96
 
-Sau, de Zeor, casou-se com Lisaem e foi viver em Linan. Foi o primeiro laço entre os dois povos.
+Na primavera, morreu Bemiem, que falava pelo Que Apaga o Sol em Zeor, aos 66 anos. Torzeik, o pacífico, não resistiu à fome. Foi quem proibiu, em nome do deus, o trato com Zeor.
 
 ### Ano 97
 
-Em Ulur, Ralinem pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Ulur viu nisso obra do Olho Escuro. A crônica sabe que foi acaso.
+Morreu Satora, que falava pelo Que Apaga o Sol em Zeor, aos 62 anos. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Zeor perdeu o saber. A fome no inverno durou 11 dias em Zeon e levou onze vidas. Morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Zeon perdeu o saber. O inverno foi de gelo: sete pessoas morreram de frio.
 
 ### Ano 98
 
-Na primavera do ano 98, com Raik à frente, Zeor largou o medo das tempestades: sem origem lembrada, o costume perdeu o sentido. Zeut partiu com três pessoas para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Ulur, Ulu pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A comida voltou, e Ulur deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. No outono, Enzeu deu à luz gêmeos, Belinim e Linem. Uns viram bênção; outros, mau sinal.
+Na primavera do ano 98, Mitorem, que falava pelo Que Apaga o Sol em Zeor, morreu dormindo, aos 61 anos. Nunca perdoou o deus pela morte de Torem. Uma febre correu Zeor e levou cinco vidas. A fome no inverno durou 10 dias em Zeor e levou dezesseis vidas. No inverno, Zeor já não cabia no lago. Torloem, o curioso, levou nove pessoas para a floresta e fundou Linak. Em Linak, Raena tomou para si o cuidado das preces ao Que Apaga o Sol.
 
 ### Ano 99
 
-Na primavera, Raik, que guiava Zeor, morreu dormindo, aos 49 anos. Linya, que falava pelo Que Risca o Céu em Beak, morreu dormindo, aos 66 anos. De novo a chuva sumiu, como no ano 89. Foram 18 dias de seca.
+Em Linak, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 44, só a crônica guarda. Diante das ruínas de Rilil, Linak disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo. No verão, Savim, de Zeor, tomou por esposa Lovina, de Linak, e os dois povos passaram a se visitar. Linan, o engenhoso, descobriu como empilhar pedras cortadas sem que caíssem.
 
 ### Ano 100
 
-A fome no inverno durou 16 dias em Beak e levou quatro vidas. Foram 28 dias de fome por causa da seca em Ulur, com oito mortos. Nos anos 91 a 100 houve seis fomes e dezessete preces que pareceram atendidas; nasceram 96 crianças e morreram 52 pessoas. No fim do ano 100, 142 pessoas viviam no mundo: Zeor (44), Beak (51), Ulur (21) e Linan (26).
+Em Zeon, Galinut pediu: «Voz do Céu, dá-nos o que comer.» A comida voltou, e Zeon deu graças à Voz do Céu. Foi só o tempo, mas quem iria dizer? Nos anos 91 a 100 houve treze fomes, quatro batalhas, dezoito preces que pareceram atendidas e seis preces sem resposta; nasceram 98 crianças e morreram 103 pessoas. No fim do ano 100, 120 pessoas viviam no mundo: Zeor (76), Zeon (35) e Linak (9).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Zeor** vive no lago, com 44 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: guarda tanta comida para o inverno (desde o ano 76).
-- **Beak** vive na floresta, com 51 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 9; chama o deus de «o Que Risca o Céu»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); queima os mortos (desde o ano 57); guarda tanta comida para o inverno (desde o ano 58).
-- **Ulur** vive na praia, com 21 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 43; chama o deus de «o Olho Escuro»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 60); não sai de casa em dia de tempestade (desde o ano 68).
-- **Linan** vive no morro, com 26 pessoas, e planta roças; nasceu de uma migração em Beak no ano 88; chama o deus de «a Voz do Céu»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); queima os mortos (desde o ano 57); guarda tanta comida para o inverno (desde o ano 58); não sai de casa em dia de tempestade (desde o ano 92).
+- **Zeor** vive no lago, com 76 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (desde o ano 44); guarda tanta comida para o inverno (desde o ano 51).
+- **Zeon** vive na praia, com 35 pessoas, e planta roças; nasceu de uma briga em Bean no ano 59; chama o deus de «a Voz do Céu»; costumes: queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 84); faz a festa da chuva (desde o ano 89); guarda tanta comida para o inverno (desde o ano 90); não sai de casa em dia de tempestade (desde o ano 92).
+- **Linak** vive na floresta, com 9 pessoas, e planta roças; nasceu de uma migração em Zeor no ano 98; chama o deus de «o Que Apaga o Sol»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); queima os mortos (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida).
 
-Povos que deixaram de existir: Busak e Linem.
+Povos que deixaram de existir: Bean, Rilil e Viem.
 
-Lugares com nome: Praia do Raio (praia, para Ulur), Lago do Raio (lago, para Zeor), Lago da Pedra Erguida (lago, para Beak), Lago da Pedra Erguida (lago, para Ulur), Floresta da Chuva (floresta, para Zeor), Floresta da Vitória (floresta, para Beak), Floresta do Luto (floresta, para Linem), Morro da Fome (morro, para Linem) e Morro do Raio (morro, para Linan).
+Lugares com nome: Praia da Fome (praia, para Zeon), Lago da Fome (lago, para Zeor), Floresta da Chuva (floresta, para Zeor), Floresta da Trégua (floresta, para Bean), Floresta da Vitória (floresta, para Viem), Floresta do Luto (floresta, para Rilil), Floresta do Luto (floresta, para Zeon), Morro da Fome (morro, para Viem) e Morro da Vitória (morro, para Zeor).
 
-Em 100 anos nasceram 407 pessoas e morreram 273.
+Em 100 anos nasceram 597 pessoas e morreram 477.

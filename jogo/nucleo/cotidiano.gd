@@ -14,7 +14,7 @@ const ACAMPAMENTO := {"lago": [126, 168], "praia": [160, 200], "floresta": [200,
 const TRABALHO := {"lago": [126, 136], "praia": [136, 200], "floresta": [200, 330], "morro": [330, 480]}
 ## Ninguém fica parado à esquerda disto: é água.
 const MARGEM := 126.0
-const LARGURAS := {"fogueira": 8, "altar": 8, "cabana": 16, "roca": 24}
+const LARGURAS := {"fogueira": 8, "altar": 8, "cabana": 16, "roca": 16}
 const ACOES := ["dormir", "andar", "parado", "colher", "rezar", "fogueira"]
 
 
@@ -44,32 +44,77 @@ static func faixa_do_grupo(m, g) -> Array:
 	return [z[0] + w * i, z[0] + w * (i + 1)]
 
 
-## Construções de um grupo, com posição. A posição só muda se o número de peças mudar.
+## Construções de um grupo, com posição, por estágio. Cada peça é posta no primeiro
+## lugar livre perto da fogueira, numa ordem fixa: a posição só muda quando o número
+## de peças muda ou quando o povo se muda.
 static func construcoes_do_grupo(m, g) -> Array:
 	var r: Array = []
 	var faixa := faixa_do_grupo(m, g)
-	var a: float = faixa[0] + 8.0
-	var b: float = faixa[1] - 8.0
 	var c: float = (faixa[0] + faixa[1]) * 0.5
-	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id})
+	var ocupado: Array = []
+	var est: int = g.estagio
+	var por: Callable = func(tipo: String, largura: float, extra: Dictionary, obrigatoria: bool):
+		var x := _lugar_livre(c, largura, faixa, ocupado)
+		if x < -9000.0:
+			if not obrigatoria:
+				return
+			x = clampf(c, faixa[0] + largura * 0.5, faixa[1] - largura * 0.5)
+		ocupado.append([x - largura * 0.5, x + largura * 0.5])
+		var o := {"tipo": tipo, "x": x, "largura": largura, "grupo": g.id, "estagio": est, "ruina": false}
+		o.merge(extra)
+		r.append(o)
+	ocupado.append([c - 4.0, c + 4.0])
+	r.append({"tipo": "fogueira", "x": c, "largura": LARGURAS["fogueira"], "grupo": g.id, "estagio": est, "ruina": false})
 	if g.tem_crenca and not g.ceticos:
-		r.append({"tipo": "altar", "x": clampf(c + 9.0, a, b), "largura": LARGURAS["altar"], "grupo": g.id})
-	for i in g.abrigos:
-		var lado := -1.0 if i % 2 == 0 else 1.0
-		var x := clampf(c + lado * (18.0 + 18.0 * (i / 2)), a, b)
-		r.append({"tipo": "cabana", "x": x, "largura": LARGURAS["cabana"], "grupo": g.id})
-	if g.estagio == 2:
+		por.call("altar", LARGURAS["altar"], {}, true)
+		if est >= 2:
+			por.call("templo", 32.0, {}, true)
+	if est >= 5:
+		por.call("arquivo", 32.0, {}, true)
+	if est >= 4:
+		por.call("forja", 24.0, {}, true)
+	var largura_casa := 16.0 if est == 1 else (24.0 if est == 2 else 32.0)
+	var casas: int = g.abrigos if est <= 2 else mini(g.abrigos, int(ceil(g.membros.size() / 8.0)))
+	for i in casas:
+		por.call("cabana", largura_casa, {}, false)
+	if est >= 2 and g.tem_costume("estocar"):
+		por.call("celeiro", 24.0, {}, false)
+	if est >= 6:
+		por.call("moinho", 32.0, {}, false)
+	if est >= 2:
 		var adultos := 0
 		for id in g.membros:
 			if m.pessoas[id].idade(m.ano()) >= 13:
 				adultos += 1
 		var rocas := clampi(int(ceil(adultos / 6.0)), 1, 4)
-		var base = 18.0 + 18.0 * ceil(g.abrigos / 2.0) + 12.0
 		for j in rocas:
-			var lado2 := 1.0 if j % 2 == 0 else -1.0
-			var x2 := clampf(c + lado2 * (base + 26.0 * (j / 2)), a + 4.0, b - 4.0)
-			r.append({"tipo": "roca", "x": x2, "largura": LARGURAS["roca"], "grupo": g.id})
+			por.call("roca", LARGURAS["roca"], {"irrigada": est >= 6}, false)
+	if est >= 6 and g.violencia >= 0.5:
+		for borda in [faixa[0] + 8.0, faixa[1] - 8.0]:
+			r.append({"tipo": "muralha", "x": borda, "largura": 16.0, "grupo": g.id, "estagio": est, "ruina": false})
+	if est >= 6 and (g.zona == "lago" or g.zona == "praia"):
+		r.append({"tipo": "barco", "x": 112.0, "largura": 24.0, "grupo": g.id, "estagio": est, "ruina": false})
 	return r
+
+
+## Centro do primeiro intervalo livre para uma peça, procurando para os dois lados do centro.
+static func _lugar_livre(c: float, largura: float, faixa: Array, ocupado: Array) -> float:
+	var passo := 4.0
+	for i in 60:
+		var desvio = passo * ceil(i / 2.0) * (1.0 if i % 2 == 1 else -1.0)
+		var x = c + desvio
+		var ini = x - largura * 0.5
+		var fim = x + largura * 0.5
+		if ini < faixa[0] or fim > faixa[1]:
+			continue
+		var livre := true
+		for o in ocupado:
+			if ini < o[1] + 1.0 and fim > o[0] - 1.0:
+				livre = false
+				break
+		if livre:
+			return x
+	return -9999.0
 
 
 ## Onde a pessoa está e o que faz no passo dado. `obras` são as construções do grupo dela.
@@ -105,7 +150,7 @@ static func _pessoa_no_passo(m, p, g, obras: Array, passo: int) -> Dictionary:
 	var faixa_trab: Array = TRABALHO[g.zona]
 	var folga := minf(4.0, (faixa_trab[1] - faixa_trab[0]) * 0.2)
 	var trabalho_x: float = faixa_trab[0] + folga + ruido(p.id, dia, 3) * (faixa_trab[1] - faixa_trab[0] - 2.0 * folga)
-	if g.estagio == 2 and not rocas.is_empty() and ruido(p.id, dia, 2) < 0.6:
+	if g.estagio >= 2 and not rocas.is_empty() and ruido(p.id, dia, 2) < 0.6:
 		trabalho_x = rocas[p.id % rocas.size()] + (ruido(p.id, dia, 4) - 0.5) * 20.0
 	# Quem tem uma prece aberta reza de manhã cedo e ao entardecer; quem fala pelo deus, também.
 	var reza := false
