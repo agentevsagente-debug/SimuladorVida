@@ -1,0 +1,77 @@
+{
+ "nota": "coordenadas relativas ao canto da peça da casa: a chaminé (4x8) vai em (chamine_x, chamine_y), por cima do telhado; a fumaca_chamine_4q (8x16) vai com a última linha em fumaca_base_y e o canto esquerdo em fumaca_x. Só no inverno, nas casas com lareira.",
+ "casas": {
+  "casa_taipa_telhado_palha": {
+   "chamine_x": 16,
+   "chamine_y": 2,
+   "fumaca_x": 14,
+   "fumaca_base_y": 1
+  },
+  "casa_taipa_telhado_telha": {
+   "chamine_x": 16,
+   "chamine_y": 3,
+   "fumaca_x": 14,
+   "fumaca_base_y": 2
+  },
+  "casa_taipa_telhado_tabuas": {
+   "chamine_x": 16,
+   "chamine_y": 1,
+   "fumaca_x": 14,
+   "fumaca_base_y": 0
+  },
+  "casa_pedra_telhado_palha": {
+   "chamine_x": 21,
+   "chamine_y": 0,
+   "fumaca_x": 19,
+   "fumaca_base_y": -1
+  },
+  "casa_pedra_telhado_telha": {
+   "chamine_x": 21,
+   "chamine_y": 3,
+   "fumaca_x": 19,
+   "fumaca_base_y": 2
+  },
+  "casa_pedra_telhado_tabuas": {
+   "chamine_x": 21,
+   "chamine_y": 0,
+   "fumaca_x": 19,
+   "fumaca_base_y": -1
+  },
+  "casa_enxaimel_telhado_palha": {
+   "chamine_x": 21,
+   "chamine_y": 1,
+   "fumaca_x": 19,
+   "fumaca_base_y": 0
+  },
+  "casa_enxaimel_telhado_telha": {
+   "chamine_x": 21,
+   "chamine_y": 4,
+   "fumaca_x": 19,
+   "fumaca_base_y": 3
+  },
+  "casa_enxaimel_telhado_tabuas": {
+   "chamine_x": 21,
+   "chamine_y": 1,
+   "fumaca_x": 19,
+   "fumaca_base_y": 0
+  },
+  "casa_tijolo_telhado_palha": {
+   "chamine_x": 21,
+   "chamine_y": 1,
+   "fumaca_x": 19,
+   "fumaca_base_y": 0
+  },
+  "casa_tijolo_telhado_telha": {
+   "chamine_x": 21,
+   "chamine_y": 3,
+   "fumaca_x": 19,
+   "fumaca_base_y": 2
+  },
+  "casa_tijolo_telhado_tabuas": {
+   "chamine_x": 21,
+   "chamine_y": 0,
+   "fumaca_x": 19,
+   "fumaca_base_y": -1
+  }
+ }
+}

@@ -156,7 +156,7 @@
    "quadro_h": 32
   },
   "estagio2/adulto_enxada_andar_4q": {
-   "x": 153,
+   "x": 93,
    "y": 92,
    "w": 48,
    "h": 12,
@@ -166,7 +166,7 @@
    "quadro_h": 12
   },
   "estagio2/adulto_enxada_trabalhar_4q": {
-   "x": 202,
+   "x": 142,
    "y": 92,
    "w": 48,
    "h": 12,
@@ -176,7 +176,7 @@
    "quadro_h": 12
   },
   "estagio2/altar": {
-   "x": 51,
+   "x": 76,
    "y": 92,
    "w": 16,
    "h": 16,
@@ -195,7 +195,7 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
-  "estagio2/casa_taipa_parede": {
+  "estagio2/casa_taipa_luz": {
    "x": 126,
    "y": 67,
    "w": 24,
@@ -205,7 +205,7 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
-  "estagio2/casa_taipa_telhado": {
+  "estagio2/casa_taipa_parede": {
    "x": 151,
    "y": 67,
    "w": 24,
@@ -215,7 +215,7 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
-  "estagio2/celeiro": {
+  "estagio2/casa_taipa_telhado": {
    "x": 176,
    "y": 67,
    "w": 24,
@@ -225,9 +225,19 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
+  "estagio2/celeiro": {
+   "x": 201,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
   "estagio2/cerca": {
-   "x": 1,
-   "y": 117,
+   "x": 191,
+   "y": 92,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -236,64 +246,14 @@
    "quadro_h": 8
   },
   "estagio2/cerca_poste": {
-   "x": 10,
-   "y": 117,
+   "x": 200,
+   "y": 92,
    "w": 8,
    "h": 8,
    "quadros": 1,
    "tipo": "quadros",
    "quadro_w": 8,
    "quadro_h": 8
-  },
-  "estagio2/roca_arada": {
-   "x": 68,
-   "y": 92,
-   "w": 16,
-   "h": 16,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 16,
-   "quadro_h": 16
-  },
-  "estagio2/roca_broto": {
-   "x": 85,
-   "y": 92,
-   "w": 16,
-   "h": 16,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 16,
-   "quadro_h": 16
-  },
-  "estagio2/roca_crescida": {
-   "x": 102,
-   "y": 92,
-   "w": 16,
-   "h": 16,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 16,
-   "quadro_h": 16
-  },
-  "estagio2/roca_madura": {
-   "x": 119,
-   "y": 92,
-   "w": 16,
-   "h": 16,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 16,
-   "quadro_h": 16
-  },
-  "estagio2/roca_seca": {
-   "x": 136,
-   "y": 92,
-   "w": 16,
-   "h": 16,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 16,
-   "quadro_h": 16
   },
   "estagio2/templo": {
    "x": 67,
@@ -336,16 +296,6 @@
    "quadro_h": 32
   },
   "memoria/casa_ruina": {
-   "x": 201,
-   "y": 67,
-   "w": 24,
-   "h": 24,
-   "quadros": 1,
-   "tipo": "quadros",
-   "quadro_w": 24,
-   "quadro_h": 24
-  },
-  "natureza/casa_ruina_mato_1": {
    "x": 226,
    "y": 67,
    "w": 24,
@@ -355,7 +305,7 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
-  "natureza/casa_ruina_mato_2": {
+  "natureza/casa_ruina_mato_1": {
    "x": 1,
    "y": 92,
    "w": 24,
@@ -365,8 +315,18 @@
    "quadro_w": 24,
    "quadro_h": 24
   },
-  "natureza/casa_ruina_mato_3": {
+  "natureza/casa_ruina_mato_2": {
    "x": 26,
+   "y": 92,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "natureza/casa_ruina_mato_3": {
+   "x": 51,
    "y": 92,
    "w": 24,
    "h": 24,

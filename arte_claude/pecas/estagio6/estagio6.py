@@ -94,6 +94,47 @@ def moinho(quadro):
     return q
 
 
+# ---------------------------------------------------------------- roda d'água
+
+def roda_dagua(quadro, congelada=False):
+    """Roda d'água (16x16): aro, 8 raios e pás, girando 11,25° por quadro (4 quadros fecham
+    o ciclo, porque os raios se repetem a cada 45°). A parte de baixo fica na água; os
+    respingos mudam a cada quadro. Congelada: parada, com gelo e pingentes."""
+    q = k.novo(16, 16)
+    cx, cy, r = 7.5, 7.5, 6.5
+    for y in range(16):
+        for x in range(16):
+            d = math.hypot(x - cx, y - cy)
+            if r - 1.1 <= d <= r:
+                q[y][x] = 10 if (x < cx and y < cy) else 9 if y < cy + 2 else 8
+    ang0 = 0 if congelada else quadro * math.pi / 16
+    for i in range(8):
+        a = ang0 + i * math.pi / 4
+        for j in range(1, 7):
+            k.put(q, round(cx + math.cos(a) * j), round(cy + math.sin(a) * j), 9 if j < 6 else 10)
+        # pá: um degrau de 2 px no aro, na ponta do raio
+        for t in (-0.18, 0.18):
+            k.put(q, round(cx + math.cos(a + t) * 7.3), round(cy + math.sin(a + t) * 7.3), 8)
+    for dx, dy in ((0, 0), (1, 0), (0, 1), (1, 1)):
+        k.put(q, 7 + dx, 7 + dy, 8)
+    if congelada:
+        for x in range(16):
+            for y in range(16):
+                if q[y][x] is not None and (y == 0 or q[y - 1][x] is None) and y < 9:
+                    q[y][x] = 31
+        for x in (3, 6, 9, 12):
+            topo = max((y for y in range(16) if q[y][x] is not None), default=None)
+            if topo is not None and topo < 15:
+                k.put(q, x, topo + 1, 0)
+                if x % 2:
+                    k.put(q, x, topo + 2, 0)
+    else:
+        for i, (x, y) in enumerate(((13, 12), (14, 11), (12, 14), (15, 13), (3, 13), (2, 12))):
+            if (i + quadro) % 3 != 0:
+                k.put(q, x, y, 19 if (i + quadro) % 2 else 18)
+    return q
+
+
 # ---------------------------------------------------------------- muralha e barco
 
 def muralha():
@@ -256,6 +297,7 @@ def gerar():
     folhas = {
         "moinho_4q": [moinho(i) for i in range(4)],
         "barco_2q": [barco(0), barco(1)],
+        "roda_dagua_4q": [roda_dagua(i) for i in range(4)],
         "adulto_e6_parado_2q": k.pintar(vestir_e6(k.hab.parado(k.hab.CABECA_A, k.hab.TRONCO_A, k.hab.PERNAS))),
         "adulto_e6_andar_4q": k.pintar(vestir_e6(k.hab.andando(k.hab.CABECA_A, k.hab.TRONCO_A, k.hab.PERNAS))),
     }
