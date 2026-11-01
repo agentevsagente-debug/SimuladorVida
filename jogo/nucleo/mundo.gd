@@ -53,6 +53,8 @@ var peste_ate: int = -1
 ## Se este mundo foi carregado de uma cópia de segurança (o salvo estava estragado), o
 ## caminho dela; senão, "". Não é salvo.
 var recuperado_de: String = ""
+var _salvamento = null            # gravação em andamento numa thread (Persistencia.salvar_async)
+var ultimo_salvamento_ok: bool = true
 var _rotina_cache = null          # a rotina em uso: a de hoje (de madrugada, ainda a de ontem)
 var _montando = null              # a rotina sendo montada numa thread de trabalho
 var _tarefa: int = -1             # a tarefa dessa montagem no WorkerThreadPool
@@ -271,7 +273,7 @@ const FOLGA_PARA_ADIANTAR_US := 2500
 ## Avança um passo de simulação: uma hora de jogo.
 func avancar_hora() -> void:
 	var t0 := Time.get_ticks_usec()
-	_esperar_rotina()
+	_esperar_threads()
 	var h := hora()
 	if h == 0:
 		_novo_dia()
@@ -611,7 +613,12 @@ func _clima_do_dia() -> void:
 	# Fim natural da seca: a chuva volta.
 	if seca_global and dia >= seca_fim_dia:
 		seca_global = false
-		var e := registrar("seca_fim", "natural", 4, "", -1, [], {"inicio": seca_evento})
+		# Os povos com canais (estágio 6) quase não sentem a seca: a crônica conta isso.
+		var irrigados: Array = []
+		for g in grupos_vivos():
+			if g.estagio >= 6:
+				irrigados.append(g.id)
+		var e := registrar("seca_fim", "natural", 4, "", -1, [], {"inicio": seca_evento, "irrigados": irrigados})
 		for z in zonas.values():
 			if z.seca and z.seca_ate <= dia:
 				z.seca = false
@@ -1576,6 +1583,11 @@ func _ensino() -> void:
 				var p_desc := 0.004 * inventores.size()
 				if a - g.fome_ultima_ano <= 3:
 					p_desc += 0.03 * mini(inventores.size(), 2)
+				var pressao := _pressao_do_tempo(g)
+				if pressao > 0.0:
+					p_desc += pressao
+					if inventores.is_empty():
+						inventores = _adultos(g, 16)
 				if not inventores.is_empty() and chance(p_desc):
 					var inv: Pessoa = escolher(inventores)
 					inv.sabe_agricultura = true
@@ -1603,6 +1615,7 @@ func _ensino() -> void:
 		var adultos := _adultos(g, 15).size()
 		if sabem >= 4 and sabem >= adultos * 0.35:
 			g.estagio = 2
+			g.estagio_desde = a
 			registrar("agricultura", "social", 9, g.zona, g.id, [], {"sabem": sabem})
 			for p in _membros(g):
 				if p.idade(a) >= 12:
@@ -1653,6 +1666,7 @@ func _progresso_tecnico() -> void:
 				sabem += 1
 		if sabem >= 4 and sabem >= adultos * 0.15:
 			g.estagio = k
+			g.estagio_desde = a
 			var e := registrar("estagio", "social", 9, g.zona, g.id, [], {"estagio": k, "saber": saber, "sabem": sabem})
 			if k == 5:
 				g.escrita_desde = a
@@ -1682,19 +1696,42 @@ func _manter_saberes(g: Grupo) -> void:
 			escolher(aprendizes).saberes.append(saber)
 
 
+## Platôs longos demais cansam quem assiste: depois de PLATO_ANOS no mesmo estágio, a
+## necessidade ensina. A chance de descobrir o próximo saber cresce a cada década a mais, e
+## qualquer adulto pode descobrir, não só os engenhosos e curiosos. Antes disso, nada muda:
+## a mediana do tempo em cada estágio fica onde estava; só os extremos encurtam.
+const PLATO_ANOS := 40
+
+
+func _pressao_do_tempo(g: Grupo) -> float:
+	var desde: int = g.estagio_desde if g.estagio_desde >= 0 else g.origem.get("ano", 1)
+	var anos := ano() - desde
+	if anos <= PLATO_ANOS:
+		return 0.0
+	return 0.006 * float(anos - PLATO_ANOS) / 10.0
+
+
 func _tentar_descoberta(g: Grupo, k: int) -> void:
 	var a := ano()
 	var inventores: Array = []
 	for p in _adultos(g, 16):
 		if p.tem("engenhoso") or (p.tem("curioso") and k != 4):
 			inventores.append(p)
+	var p_desc := 0.0012 * inventores.size()
+	var pressao := _pressao_do_tempo(g)
+	# Com o platô longo, um povo menor também chega lá (pedra com 12 pessoas, canais com 20).
+	var minimo3 := 12 if pressao > 0.0 else 18
+	var minimo6 := 20 if pressao > 0.0 else 30
+	if pressao > 0.0:
+		p_desc += pressao
+		if inventores.is_empty():
+			inventores = _adultos(g, 16)
 	if inventores.is_empty():
 		return
-	var p_desc := 0.0012 * inventores.size()
 	var motivo := ""
 	match k:
 		3:
-			if g.membros.size() < 18:
+			if g.membros.size() < minimo3:
 				return
 			if _ja_houve_desde("terremoto", g.id, a - 4) or _ja_houve_desde("tempestade", g.id, a - 4) or _ja_houve_desde("diluvio", g.id, a - 4):
 				p_desc += 0.008
@@ -1710,7 +1747,7 @@ func _tentar_descoberta(g: Grupo, k: int) -> void:
 				p_desc += 0.008
 				motivo = "sacerdote"
 		6:
-			if g.membros.size() < 30:
+			if g.membros.size() < minimo6:
 				return
 			if a - g.fome_ultima_ano <= 5:
 				p_desc += 0.008
@@ -1754,6 +1791,7 @@ func _conferir_regressao(g: Grupo) -> void:
 				continue
 		var antes := g.estagio
 		g.estagio = k - 1
+		g.estagio_desde = ano()
 		registrar("regressao", "social", 8, g.zona, g.id, [], {"saber": saber, "de": antes, "para": g.estagio})
 		return
 
@@ -1933,10 +1971,16 @@ func _ruinas_e_memoria() -> void:
 			# Ruínas guardam conhecimento.
 			var proximo = "agricultura" if g.estagio == 1 else (SABERES[g.estagio + 1] if g.estagio < ESTAGIO_MAX else "")
 			if not proximo.is_empty() and r["saberes"].has(proximo) and Cotidiano.zona_em(r["x"]) == g.zona and chance(0.04):
+				# As ruínas só ensinam o que ninguém do povo sabe ainda.
 				var curiosos: Array = []
+				var alguem_sabe := false
 				for p in _adultos(g, 16):
-					if p.tem("curioso") or p.tem("engenhoso"):
+					if (p.sabe_agricultura if proximo == "agricultura" else p.saberes.has(proximo)):
+						alguem_sabe = true
+					elif p.tem("curioso") or p.tem("engenhoso"):
 						curiosos.append(p)
+				if alguem_sabe:
+					curiosos.clear()
 				if not curiosos.is_empty():
 					var c: Pessoa = escolher(curiosos)
 					if proximo == "agricultura":
@@ -1951,7 +1995,22 @@ func _ruinas_e_memoria() -> void:
 				g.ruinas_vistas.append(r["povo"])
 				var expl := _explicar_ruinas(g)
 				registrar("mito_ruinas", "social", 6, g.zona, g.id, [], {"povo": r["povo"], "explicacao": expl,
-					"era": r["era"], "estagio": r["estagio"]})
+					"era": r["era"], "estagio": r["estagio"], "obra": _obra_marcante(r["povo"], g), "antiga": r["era"] < era})
+
+
+## O que mais chama a atenção de quem chega às ruínas de um povo: uma das peças que
+## sobraram, escolhida pelo ruído fixo (não toca no sorteio do mundo).
+func _obra_marcante(povo: String, quem: Grupo) -> String:
+	var ordem := ["templo", "muralha", "moinho", "arquivo", "forja", "celeiro", "cabana"]
+	var tem: Array = []
+	for t in ordem:
+		for r in ruinas:
+			if r["povo"] == povo and r["tipo"] == t:
+				tem.append(t)
+				break
+	if tem.is_empty():
+		return "fogueira"
+	return tem[int(Cotidiano.ruido(quem.id, quem.ruinas_vistas.size(), 17) * tem.size()) % tem.size()]
 
 
 func _explicar_ruinas(g: Grupo) -> String:
@@ -2000,7 +2059,7 @@ func _fechar_livro(motivo: String) -> Dictionary:
 
 ## O deus abandona o mundo: a crônica da era se fecha como livro, mesmo com o povo vivo.
 func abandonar() -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if fim_do_mundo and not livros.is_empty() and livros[-1]["era"] == era:
 		return livros[-1]
 	return _fechar_livro("abandono")
@@ -2009,7 +2068,7 @@ func abandonar() -> Dictionary:
 ## Só com o mundo vazio: o deus cria um novo povo onde fizer o gesto (x em pixels do mundo).
 ## O novo povo encontra as ruínas de quem viveu antes.
 func criar_povo(x: float = 275.0) -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if not fim_do_mundo or populacao() > 0:
 		return {"ok": false, "motivo": "só se cria um povo com o mundo vazio"}
 	var zona := Cotidiano.zona_em(clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1))
@@ -3374,7 +3433,7 @@ func _rotina_de_hoje():
 	var ro = rotina()
 	_consultado = consultado
 	if ro.dia != d:
-		_esperar_rotina()
+		_esperar_threads()
 		ro = _rotina_cache
 	if ro.dia != d:
 		ro = Rotina.new(self, d)
@@ -3439,16 +3498,24 @@ func _receber_rotina(esperar: bool) -> void:
 		_trocar_rotina(nova)
 
 
-## A thread só lê o mundo enquanto monta a rotina: antes de qualquer mudança (um passo, um
-## poder, um povo novo), espera por ela. No jogo ela termina em décimos de segundo, muito
-## antes de o passo seguinte chegar, e a espera não acontece.
-func _esperar_rotina() -> void:
+## As threads só leem o mundo enquanto montam a rotina ou gravam o arquivo: antes de
+## qualquer mudança (um passo, um poder, um povo novo), espera por elas. No jogo elas
+## terminam muito antes de o passo seguinte chegar, e a espera não acontece.
+func _esperar_threads() -> void:
 	if _montando != null:
 		_receber_rotina(true)
+	if _salvamento != null:
+		if not WorkerThreadPool.is_task_completed(_salvamento.tarefa):
+			desempenho["esperas"] += 1
+		WorkerThreadPool.wait_for_task_completion(_salvamento.tarefa)
+		ultimo_salvamento_ok = _salvamento.ok
+		_salvamento = null
 
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_PREDELETE:
+		if _salvamento != null:
+			WorkerThreadPool.wait_for_task_completion(_salvamento.tarefa)
 		if _montando != null:
 			WorkerThreadPool.wait_for_task_completion(_tarefa)
 		for d in _descartes:
@@ -3538,6 +3605,7 @@ func pessoas_visiveis() -> Array:
 			f["x_anterior"] = ag[0]["x0"]
 			f["x"] = ag[-1]["x1"]
 			f["acao"] = meio["acao"]
+			f["detalhe"] = meio.get("detalhe", "")
 			f["virado"] = meio["virado"]
 			f["cena"] = meio["cena"]
 			f["agenda"] = ag
@@ -3651,7 +3719,7 @@ func eventos_desde(desde: int) -> Array:
 
 ## O deus age. x em pixels do mundo (0..479); intensidade de 0 a 1, vinda do gesto.
 func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if fim_do_mundo:
 		return {"ok": false, "motivo": "o mundo está vazio"}
 	if not PODERES.has(poder):

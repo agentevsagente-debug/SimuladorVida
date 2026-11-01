@@ -120,6 +120,14 @@ func _lista_pessoas(ids: Array) -> Dictionary:
 	return G.termo(G.lista(nomes), G.genero_conjunto(generos), nomes.size())
 
 
+## Embaralha a semente do sorteio de frases. Sementes vizinhas (eventos seguidos) davam
+## quase sempre a mesma primeira escolha, e a crônica repetia a primeira variante.
+static func _misturar(x: int) -> int:
+	x = (x ^ (x >> 30)) * -4658895280553007687
+	x = (x ^ (x >> 27)) * -7723592293110705685
+	return x ^ (x >> 31)
+
+
 func _escolher(opcoes: Array) -> String:
 	return opcoes[rt.randi_range(0, opcoes.size() - 1)]
 
@@ -252,7 +260,7 @@ func _tem_evento_do_grupo(evs: Array, gid: int) -> bool:
 
 ## O que o povo conta de si quando começa a escrever: a memória vira mito.
 func _origem_contada(g) -> String:
-	rt.seed = m.semente * 31337 + g.id
+	rt.seed = _misturar(m.semente * 31337 + g.id)
 	var v := {"g": _g(g.id), "deus": _deus(g.nome_deus, g.genero_deus), "zona": _zona(g.zona)}
 	if g.ceticos or not g.tem_crenca:
 		return _frase(["No começo, nossos pais vieram para {o:zona} pelas próprias pernas, e com as próprias mãos fizeram {g}."], v)
@@ -265,7 +273,7 @@ func _origem_contada(g) -> String:
 
 
 func _linha_do_povo(g, e) -> String:
-	rt.seed = m.semente * 7177 + e.id * 13 + g.id
+	rt.seed = _misturar(m.semente * 7177 + e.id * 13 + g.id)
 	var v := {"g": _g(g.id), "deus": _deus(e.dados.get("_deus", g.nome_deus), e.dados.get("_gdeus", g.genero_deus))}
 	if g.ceticos or not g.tem_crenca:
 		v["deus"] = G.termo("sorte", "f", 1, true)
@@ -415,7 +423,7 @@ func _fim_no_ano(a: int) -> bool:
 
 
 func _anos_quietos(anos: Array) -> String:
-	rt.seed = m.semente * 7919 + anos[0]
+	rt.seed = _misturar(m.semente * 7919 + anos[0])
 	if anos.size() == 1:
 		return "*" + _escolher(["O ano %d passou sem nada que a crônica precise guardar.",
 			"No ano %d, nada de notável aconteceu.", "O ano %d foi calmo."]) % anos[0] + "*"
@@ -453,7 +461,7 @@ func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR) -> S
 	for e in escolhidos:
 		if _usados.has(e.id):
 			continue
-		rt.seed = m.semente * 100003 + e.id
+		rt.seed = _misturar(m.semente * 100003 + e.id)
 		var f := _texto(e)
 		if f.is_empty():
 			continue
@@ -769,9 +777,9 @@ func _texto(e) -> String:
 			if anterior > 0:
 				v["ant"] = G.termo(str(anterior))
 				return _frase(["A seca voltou, como no ano {ant}: {d} dias sem chuva, até que o céu se abriu.",
-					"De novo a chuva sumiu, como no ano {ant}. Foram {d} dias de seca."], v)
+					"De novo a chuva sumiu, como no ano {ant}. Foram {d} dias de seca."], v) + _canais(e, v)
 			return _frase(["A chuva parou de cair. A seca durou {d} dias, e os riachos viraram pedra.",
-				"Veio uma seca de {d} dias. O lago encolheu e a mata secou."], v)
+				"Veio uma seca de {d} dias. O lago encolheu e a mata secou."], v) + _canais(e, v)
 		"tempestade":
 			if e.dados["mortos"].is_empty():
 				v["n"] = G.termo(_num(e.dados["abrigos"]), "f", e.dados["abrigos"])
@@ -907,15 +915,7 @@ func _texto(e) -> String:
 			return _frase(["{p} passou dias nas ruínas de {povo} e voltou sabendo {s}.",
 				"Nas ruínas de {povo}, {p} achou o que eles sabiam: aprendeu a {s}."], v)
 		"mito_ruinas":
-			v["povo"] = G.termo(e.dados["povo"])
-			match e.dados["explicacao"]:
-				"gigantes":
-					return _frase(["{g} encontrou as ruínas de {povo} e disse que ali tinham vivido gigantes.",
-						"Para {g}, as pedras de {povo} só podiam ter sido postas por gigantes."], v)
-				"castigo":
-					return _frase(["Diante das ruínas de {povo}, {g} disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.",
-						"As ruínas de {povo} viraram aviso em {g}: era o que o deus fazia com quem o desagradava."], v)
-			return _frase(["{g} encontrou as ruínas de {povo}. Diziam que tinha sido gente como eles, e que alguma coisa dera errado."], v)
+			return _mito_ruinas(e, v)
 		"agricultura":
 			return _frase(["{g} fez as primeiras roças {em:lugar}. Deixou de viver só do que achava e passou a plantar.",
 				"Nas terras {de:lugar}, {g} plantou suas primeiras roças. Já não precisava andar atrás de comida."], v)
@@ -1587,7 +1587,7 @@ const LIMITE_CURTO := 40
 
 
 func texto_curto(e) -> String:
-	rt.seed = m.semente * 4099 + e.id
+	rt.seed = _misturar(m.semente * 4099 + e.id)
 	var v := {}
 	if e.grupo >= 0:
 		v["g"] = _g(e.grupo)
@@ -1776,7 +1776,7 @@ func texto_curto(e) -> String:
 
 ## Texto de uma prece, para a apresentação mostrar no sinal. Sempre o mesmo para o mesmo evento.
 func texto_prece(e) -> String:
-	rt.seed = m.semente * 100003 + e.id
+	rt.seed = _misturar(m.semente * 100003 + e.id)
 	return _texto_prece(e, {})
 
 
@@ -1832,8 +1832,74 @@ func _prece_atendida(e, v: Dictionary) -> String:
 	elif resposta != null:
 		t += " " + _frase(["Dessa vez, tinha sido mesmo o deus."], v)
 	if e.dados["falso_milagre"] and m.grupos[e.grupo].escrita_desde >= 0 and m.grupos[e.grupo].escrita_desde <= e.ano:
-		t += " " + _frase(["Nas tabuletas de {g}, ficou escrito que foi {o:deus}.", "Os escribas de {g} registraram o milagre."], v)
+		# O povo que escreve conta outra história, com a própria voz.
+		v["voz"] = G.termo(G.maiuscula(_voz_do_povo(e.dados["necessidade"], v)))
+		t += " " + _frase(["Nas tabuletas de {g}, a história é outra: «{voz}»",
+			"Os escribas de {g} escreveram: «{voz}» Não foi o que aconteceu.",
+			"Em {g}, as tabuletas guardam a versão do povo: «{voz}»"], v)
 	return t
+
+
+## O que o povo escreve de uma prece que se cumpriu sozinha: na voz dele, o deus fez.
+func _voz_do_povo(necessidade: String, v: Dictionary) -> String:
+	match necessidade:
+		"seca":
+			return G.preencher(_escolha(["Pedimos chuva, e {o:deus} abriu o céu.", "A seca acabou porque rezamos.",
+				"{o:deus} ouviu o nosso choro e mandou a chuva."]), v)
+		"fome":
+			return G.preencher(_escolha(["Pedimos pão, e {o:deus} encheu os celeiros.", "Tivemos fome, e {o:deus} nos deu de comer."]), v)
+		"doenca":
+			return G.preencher(_escolha(["{o:deus} tocou os doentes, e eles se levantaram.", "A febre fugiu quando rezamos."]), v)
+		"guerra":
+			return G.preencher(_escolha(["{o:deus} pôs medo nos inimigos, e eles não voltaram."]), v)
+	return G.preencher(_escolha(["{o:deus} ouviu e nos atendeu."]), v)
+
+
+## Na seca, os povos com canais: a água chega às roças, e ninguém reza por chuva.
+func _canais(e, v: Dictionary) -> String:
+	var irr: Array = e.dados.get("irrigados", [])
+	if irr.is_empty():
+		return ""
+	var nomes: Array = []
+	for gid in irr:
+		nomes.append(m.grupos[gid].nome)
+	v["irr"] = G.termo(G.lista(nomes))
+	return " " + _frase(["Em {irr}, a água dos canais chegou às roças como sempre, e ninguém rezou por chuva.",
+		"Nas roças de {irr}, os canais seguraram a água, e o altar ficou vazio.",
+		"Em {irr}, ninguém olhou para o céu: os canais traziam água do lago, e o deus não fez falta."], v)
+
+
+func _escolha(opcoes: Array) -> String:
+	return opcoes[rt.randi_range(0, opcoes.size() - 1)]
+
+
+## Um povo diante das ruínas de quem não existe mais: a explicação que deram (gigantes,
+## castigo ou gente), contada pelo que eles viram ali.
+func _mito_ruinas(e, v: Dictionary) -> String:
+	v["povo"] = G.termo(e.dados["povo"])
+	var est: int = e.dados.get("estagio", 1)
+	var templo: String = "um templo de barro desabado" if est <= 2 else ("um templo de degraus tomado pelo mato" if est == 3 else (
+		"colunas de um templo caídas no mato" if est == 4 else "uma cúpula rachada, maior que qualquer casa"))
+	var vistos := {"templo": templo, "muralha": "torres de pedra caídas",
+		"moinho": "uma roda de pedra que ninguém sabia para que servia", "arquivo": "uma casa cheia de tabuletas riscadas",
+		"forja": "um forno de pedra com escória de metal", "celeiro": "um celeiro sem teto",
+		"cabana": "o chão batido de casas sem ninguém", "fogueira": "pedras de fogueira cobertas de cinza velha"}
+	v["visto"] = G.termo(vistos.get(e.dados.get("obra", ""), "pedras arrumadas por mãos de gente"))
+	var antes := ""
+	if e.dados.get("antiga", false):
+		antes = " " + _frase(["Era de antes do mundo ficar vazio.", "Ninguém vivo sabia de quando era."], v)
+	match e.dados["explicacao"]:
+		"gigantes":
+			return _frase(["{g} achou {visto} onde viveu {povo}, e disse que ali tinham vivido gigantes." ,
+				"Para {g}, {visto} só podia ser obra de gigantes: gente comum não ergue aquilo. Era o que restava de {povo}.",
+				"Em {g}, as crianças cresceram ouvindo dos gigantes de {povo}, que deixaram para trás {visto}."], v) + antes
+		"castigo":
+			return _frase(["Diante das ruínas de {povo}, {visto}, {g} disse que ali viveu um povo que o deus destruiu, e tomou cuidado para não fazer o mesmo.",
+				"Em {g}, {visto} virou aviso: era o que o deus fazia com quem o desagradava, como fez com {povo}.",
+				"{g} passou longe de {visto}: diziam que {povo} tinha desagradado o deus e pagado por isso."], v) + antes
+	return _frase(["{g} encontrou as ruínas de {povo}: {visto}. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.",
+		"Em {g}, olharam {visto} e disseram que {povo} tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles.",
+		"{g} achou {visto}, o que restava de {povo}. Os velhos diziam que eram parentes antigos, que se perderam."], v) + antes
 
 
 func _prece_sem_resposta(e, v: Dictionary) -> String:

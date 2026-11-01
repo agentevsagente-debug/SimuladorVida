@@ -8,7 +8,15 @@ extends RefCounted
 ## muda: os lugares ficam a ESPACO px uns dos outros, alternando os lados da fogueira. Quem
 ## não cabe na faixa do povo não vai ao fogo à noite: recolhe-se em casa mais cedo.
 ##
-## O plano é uma lista de paradas {ini, fim, x, acao, ida, virado, cena}, em minutos
+## O dia usa o mundo inteiro: uma caçada leva 2 a 4 ao morro (ou à mata alta) de manhã e
+## os traz de volta à tarde; alguém passa o dia pescando, alguém busca água no lago, outros
+## colhem longe do acampamento; as crianças brincam na praia de manhã. O fim de tarde tem
+## etapas (a volta com cargas, o lago ou a lenha, cozinhar e comer, a fogueira), e a noite
+## tem sempre alguém acordado: o vigia, um casal olhando o céu, quem reza, quem vai ao lago,
+## às vezes uma roda de histórias. Pequenos incidentes (crianças brigando, um tombo, um
+## animal espantado, alguém perdido, uma discussão) aparecem como cenas curtas.
+##
+## O plano é uma lista de paradas {ini, fim, x, acao, ida, virado, cena, detalhe}, em minutos
 ## do dia (0 a 1440). Entre uma parada e outra a pessoa anda a VELOCIDADE px por minuto
 ## de jogo, com a ação `ida` (andar, lenha...). Blocos fixos (cenas, conversas, crianças
 ## correndo, reza) têm horário marcado; as tarefas do dia preenchem o resto.
@@ -23,7 +31,19 @@ const VELOCIDADE := 5.0          # px por minuto de jogo andando
 const ESPACO := 7.0              # px entre dois lugares de descanso em volta do fogo
 const MIN_DIA := 1440.0
 const ACOES := ["dormir", "andar", "parado", "colher", "rezar", "fogueira", "pescar", "lenha",
-	"construir", "forjar", "escrever", "remar", "lutar", "carregar_morto", "dancar", "cuidar", "conversar"]
+	"construir", "forjar", "escrever", "remar", "lutar", "carregar_morto", "dancar", "cuidar", "conversar",
+	"cacar", "carregar_caca"]
+## O que a pessoa faz, em detalhe, dentro da ação (campo `detalhe`; "" quando não há).
+const DETALHES := ["colher_arbusto", "cavar_raiz", "catar_lenha", "colher_roca", "carregar_cesto", "carregar_agua",
+	"buscar_agua", "guardar", "banho", "cozinhar", "comer", "brincar", "vigia", "olhar_ceu", "reza_noturna",
+	"historias", "doente", "repartir", "maos_vazias", "brigar", "separar", "machucado", "espantar", "perdido",
+	"buscar", "discutir", "descansar", "levar_cesto", "levar_vara", "levar_machado", "levar_pote", "levar_lanca"]
+## A ferramenta que se leva a caminho do trabalho, pelo detalhe do trabalho.
+const LEVAR := {"colher_arbusto": "levar_cesto", "cavar_raiz": "levar_cesto", "colher_roca": "levar_cesto",
+	"catar_lenha": "levar_machado", "buscar_agua": "levar_pote", "banho": "", "brincar": ""}
+const LEVAR_ACAO := {"pescar": "levar_vara", "construir": "levar_machado", "forjar": "levar_machado"}
+## Pequenos incidentes do dia: cenas curtas que não entram na crônica.
+const INCIDENTES := ["briga_criancas", "tombo", "animal", "perdido", "discussao"]
 ## Ordem de prioridade: quem está em duas cenas no mesmo dia fica na primeira.
 const PRIORIDADE_CENA := ["guerra", "funeral", "migracao", "casamento", "festa", "nascimento",
 	"construcao", "colheita", "prece"]
@@ -46,6 +66,7 @@ var fixos: Dictionary = {}       # id da pessoa -> [blocos de paradas com horár
 var planos: Dictionary = {}      # id da pessoa -> plano do dia
 var abrigos: Dictionary = {}     # zona -> minuto em que a tempestade mandou todos para casa
 var faltou := false              # uma consulta achou alguém sem plano
+var papeis: Dictionary = {}      # id da pessoa -> o papel do dia: "pescador", "agua" ou "longe"
 var _grupos: Array = []
 
 
@@ -106,20 +127,17 @@ func faltam() -> int:
 var _sono: Dictionary = {}   # id -> a hora dormindo em casa, guardada
 
 
-## Uma hora inteira dormindo em casa: a madrugada antes de a rotina do dia entrar. É a
-## última hora do dia da rotina, quando todos já dormiram.
+## A madrugada antes de a rotina do dia entrar: a última hora do dia da rotina, como foi
+## (quem dormia continua dormindo; o vigia continua a ronda).
 func dormindo(pid: int) -> Array:
 	if not _sono.has(pid):
 		var x := 0.0
 		if _agendas.has(pid):
-			var u: Array = agenda(pid, 23)
-			if u.size() == 1 and u[0]["acao"] == "dormir":
-				_sono[pid] = u
-				return u
-			x = u[-1]["x1"]
+			_sono[pid] = agenda(pid, 23)
+			return _sono[pid]
 		elif m.pessoas.has(pid):
 			x = casa_de(pid)
-		_sono[pid] = [{"de": 0.0, "ate": 1.0, "x0": x, "x1": x, "acao": "dormir", "virado": 0, "cena": {}}]
+		_sono[pid] = [{"de": 0.0, "ate": 1.0, "x0": x, "x1": x, "acao": "dormir", "virado": 0, "cena": {}, "detalhe": ""}]
 	return _sono[pid]
 
 
@@ -169,6 +187,10 @@ func _contexto(g) -> Dictionary:
 		if x >= c["faixa"][0] + 3.0 and x <= c["faixa"][1] - 3.0 and x >= Cotidiano.MARGEM:
 			descanso[ids[i]] = x
 	c["descanso"] = descanso
+	# A praia onde as crianças brincam, e o lugar longe do acampamento (o morro, ou a mata
+	# alta para quem mora no morro) onde se caça e se colhe.
+	c["praia"] = clampf(c["fogo"], 150.0, 186.0) if c["fogo"] < 200.0 else 168.0
+	c["longe"] = 405.0 if c["fogo"] < 330.0 else 262.0
 	# Quanto o trabalho se espalha: povos grandes ocupam a faixa de trabalho inteira.
 	c["espalhar"] = maxf(90.0, g.membros.size() * 3.0)
 	return c
@@ -206,12 +228,18 @@ func _fixar(pid: int, paradas: Array, cena: Dictionary = {}) -> bool:
 			pa["ida"] = "andar"
 		if not pa.has("virado"):
 			pa["virado"] = 0
+		if not pa.has("detalhe"):
+			pa["detalhe"] = ""
+		if not pa.has("ida_det"):
+			pa["ida_det"] = ""
 	fixos[pid].append({"ini": ini, "fim": fim, "paradas": paradas, "cena": cena})
 	return true
 
 
-func _parada(ini: float, fim: float, x: float, acao: String, ida: String = "andar", virado: int = 0) -> Dictionary:
-	return {"ini": ini, "fim": fim, "x": x, "acao": acao, "ida": ida, "virado": virado, "cena": {}}
+func _parada(ini: float, fim: float, x: float, acao: String, ida: String = "andar", virado: int = 0,
+		detalhe: String = "", ida_det: String = "") -> Dictionary:
+	return {"ini": ini, "fim": fim, "x": x, "acao": acao, "ida": ida, "virado": virado, "cena": {}, "detalhe": detalhe,
+		"ida_det": ida_det}
 
 
 func _adultos(g, a_min: int = 16, a_max: int = 55) -> Array:
@@ -562,8 +590,12 @@ func _vida_social(g) -> void:
 	if not ctx.has(g.id):
 		return
 	var c: Dictionary = ctx[g.id]
+	_cacada(g, c)
+	_papeis_do_dia(g)
+	_noite(g, c)
+	_incidentes(g, c)
 	# Pares que conversam no almoço e à noite, em volta do fogo.
-	for janela in [[720.0, 750.0, 100], [1150.0, 1190.0, 101]]:
+	for janela in [[720.0, 750.0, 100], [1200.0, 1250.0, 101]]:
 		var adultos := _embaralhados(_adultos(g, 14, 80), janela[2])
 		var n := int(adultos.size() * 0.5) / 2 * 2
 		for i in range(0, n, 2):
@@ -574,7 +606,7 @@ func _vida_social(g) -> void:
 			if _fixar(a.id, [_parada(janela[0], janela[1], x - 4.0, "conversar", "andar", 1)]):
 				if not _fixar(b.id, [_parada(janela[0], janela[1], x + 4.0, "conversar", "andar", -1)]):
 					fixos[a.id].pop_back()
-	# Crianças correm umas atrás das outras perto do fogo.
+	# Crianças correm umas atrás das outras: de manhã na praia, à tarde e à noite perto do fogo.
 	var criancas: Array = []
 	for id in g.membros:
 		var i: int = m.pessoas[id].idade(ano)
@@ -584,20 +616,33 @@ func _vida_social(g) -> void:
 	for i in range(0, criancas.size() - 1, 2):
 		var lider = criancas[i]
 		var seguidor = criancas[i + 1]
-		for janela in [[540.0, 640.0], [900.0, 990.0]]:
-			var pl: Array = []
-			var ps: Array = []
+		# Em pedaços de meia hora: um incidente no meio só tira o pedaço dele.
+		var k := 0
+		for janela in [[540.0, 690.0, c["praia"]], [840.0, 1060.0, c["praia"]], [1170.0, 1230.0, c["fogo"]]]:
 			var t: float = janela[0]
-			var k := 0
-			while t < janela[1]:
-				var x: float = c["fogo"] + (ruido(lider.id, dia, 200 + k) - 0.5) * 60.0
-				pl.append(_parada(t, t + 2.0, x, "parado"))
-				ps.append(_parada(t + 3.0, t + 4.0, x - 5.0, "parado"))
-				t += 9.0
-				k += 1
-			if _fixar(lider.id, pl):
-				if not _fixar(seguidor.id, ps):
-					fixos[lider.id].pop_back()
+			while t < janela[1] - 8.0:
+				var pl: Array = []
+				var ps: Array = []
+				var fim_pedaco: float = minf(t + 30.0, janela[1])
+				while t < fim_pedaco - 4.0:
+					var x: float = janela[2] + (ruido(lider.id, dia, 200 + k) - 0.5) * 60.0
+					pl.append(_parada(t, t + 2.0, x, "parado", "andar", 0, "brincar"))
+					ps.append(_parada(t + 3.0, t + 4.0, x - 5.0, "parado", "andar", 0, "brincar"))
+					t += 9.0
+					k += 1
+				# Se o par está ocupado (num incidente, numa cena), a outra criança brinca sozinha.
+				_fixar(lider.id, pl)
+				_fixar(seguidor.id, ps)
+	# A criança que ficou sem par brinca sozinha na areia.
+	if criancas.size() % 2 == 1:
+		var so = criancas[-1]
+		var k2 := 0
+		for janela in [[540.0, 690.0], [840.0, 1060.0]]:
+			var t: float = janela[0]
+			while t < janela[1] - 10.0:
+				_fixar(so.id, [_parada(t, t + 10.0, c["praia"] + (ruido(so.id, dia, 230 + k2) - 0.5) * 40.0, "parado", "andar", 0, "brincar")])
+				t += 16.0
+				k2 += 1
 	# Mães com bebê cuidam perto de casa.
 	for id in g.membros:
 		var p = m.pessoas[id]
@@ -647,9 +692,14 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 	_sorte_k = 300
 	_t_fim = 0
 	if idade < 12:
-		# Crianças mais velhas às vezes acompanham a lida perto de casa.
+		# Crianças brincam na praia e acompanham a lida perto de casa.
 		for i in 12:
-			r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "parado" if _sorte() < 0.5 else "colher", "dur": 20.0 + _sorte() * 30.0})
+			if _sorte() < 0.4:
+				r.append({"x": c["praia"] + (_sorte() - 0.5) * 36.0, "acao": "parado", "det": "brincar", "dur": 20.0 + _sorte() * 30.0})
+			elif _sorte() < 0.5:
+				r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "parado", "det": "brincar", "dur": 15.0 + _sorte() * 20.0})
+			else:
+				r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "colher", "det": "colher_arbusto", "dur": 20.0 + _sorte() * 30.0})
 		return r
 	if idade > 60:
 		# Os velhos ficam perto do fogo, dão voltas curtas e conversam.
@@ -660,11 +710,16 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 				r.append({"x": c["fogo"] + (_sorte() - 0.5) * 50.0, "acao": "conversar" if _sorte() < 0.5 else "parado", "dur": 10.0 + _sorte() * 15.0})
 		return r
 	var menu: Array = []    # [peso, construtor]
+	var papel: String = papeis.get(p.id, "")
 
-	# Coletar num percurso de arbustos.
-	menu.append([3.0 if g.estagio <= 2 else 1.0, "coletar"])
+	# Coletar num percurso de arbustos, perto ou longe do acampamento.
+	menu.append([2.5 if g.estagio <= 2 else 1.0, "coletar"])
+	menu.append([4.0 if papel == "longe" else 0.8, "coletar_longe"])
 	if g.zona == "lago" or g.zona == "praia" or _sorte() < 0.15:
 		menu.append([2.5, "pescar"])
+	if papel == "pescador":
+		menu.append([12.0, "pescar"])
+	menu.append([5.0 if papel == "agua" else 0.8, "agua"])
 	menu.append([1.5, "lenha"])
 	if g.estagio >= 2 and not c["rocas"].is_empty():
 		menu.append([3.0, "roca"])
@@ -697,6 +752,15 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 				escolha = op[1]
 				break
 		escolhidas.append(escolha)
+	# Quem tem papel no dia faz sobretudo o papel.
+	match papel:
+		"pescador":
+			escolhidas = ["pescar", "pescar", "agua"]
+		"agua":
+			escolhidas = ["agua", escolhidas[0], "agua"]
+		"longe":
+			escolhidas = ["coletar_longe", "coletar_longe", escolhidas[0]]
+	n = escolhidas.size()
 	_t_p = p
 	_t_c = c
 	_t_escolhidas = escolhidas
@@ -716,19 +780,28 @@ func _mais_tarefas(r: Array) -> bool:
 	_t_i += 1
 	match escolha:
 		"coletar":
+			var det := "colher_arbusto" if _sorte() < 0.5 else "cavar_raiz"
 			for j in 2 + int(_sorte() * 2.0):
-				r.append({"x": clampf(c["fogo"] + (_sorte() - 0.5) * c["espalhar"], trab[0] + 3.0, trab[1] - 3.0), "acao": "colher", "dur": 20.0 + _sorte() * 25.0})
+				r.append({"x": clampf(c["fogo"] + (_sorte() - 0.5) * c["espalhar"], trab[0] + 3.0, trab[1] - 3.0), "acao": "colher", "det": det, "dur": 20.0 + _sorte() * 25.0})
+		"coletar_longe":
+			var det2 := "colher_arbusto" if _sorte() < 0.5 else "cavar_raiz"
+			for j in 2 + int(_sorte() * 2.0):
+				r.append({"x": c["longe"] + (_sorte() - 0.5) * 60.0, "acao": "colher", "det": det2, "dur": 25.0 + _sorte() * 25.0})
+			r.append({"x": _casa(p, c) + 5.0, "acao": "parado", "det": "guardar", "dur": 5.0, "ida": "lenha", "ida_det": "carregar_cesto"})
+		"agua":
+			r.append({"x": c["margem"] + _sorte() * 6.0, "acao": "parado", "det": "buscar_agua", "dur": 6.0 + _sorte() * 6.0, "virado": -1})
+			r.append({"x": _casa(p, c) + 4.0, "acao": "parado", "det": "guardar", "dur": 4.0, "ida": "lenha", "ida_det": "carregar_agua"})
 		"pescar":
 			r.append({"x": c["margem"] + _sorte() * 6.0, "acao": "pescar", "dur": 60.0 + _sorte() * 70.0, "virado": -1})
 		"lenha":
-			r.append({"x": c["mata"] + (_sorte() - 0.5) * 30.0, "acao": "colher", "dur": 20.0 + _sorte() * 20.0})
-			r.append({"x": _casa(p, c) + 5.0, "acao": "parado", "dur": 6.0, "ida": "lenha"})
+			r.append({"x": c["mata"] + (_sorte() - 0.5) * 30.0, "acao": "colher", "det": "catar_lenha", "dur": 20.0 + _sorte() * 20.0})
+			r.append({"x": _casa(p, c) + 5.0, "acao": "parado", "det": "guardar", "dur": 6.0, "ida": "lenha", "ida_det": "carregar_cesto"})
 		"roca":
 			var roca: float = c["rocas"][int(_sorte() * c["rocas"].size())]
 			for j in 2:
-				r.append({"x": roca + (_sorte() - 0.5) * 14.0, "acao": "colher", "dur": 35.0 + _sorte() * 30.0})
+				r.append({"x": roca + (_sorte() - 0.5) * 14.0, "acao": "colher", "det": "colher_roca", "dur": 35.0 + _sorte() * 30.0})
 			if c["celeiro"] >= 0.0:
-				r.append({"x": c["celeiro"], "acao": "parado", "dur": 6.0, "ida": "lenha"})
+				r.append({"x": c["celeiro"], "acao": "parado", "det": "guardar", "dur": 6.0, "ida": "lenha", "ida_det": "carregar_cesto"})
 		"construir":
 			var alvo: float = c["casas"][int(_sorte() * c["casas"].size())] if not c["casas"].is_empty() else c["fogo"] + 14.0
 			r.append({"x": alvo + 6.0, "acao": "construir", "dur": 50.0 + _sorte() * 50.0, "virado": -1})
@@ -748,39 +821,124 @@ func _mais_tarefas(r: Array) -> bool:
 			for lugar in [c["rocas"][0] if not c["rocas"].is_empty() else c["mata"], c["forja"] if c["forja"] >= 0.0 else c["margem"], c["fogo"] - 20.0]:
 				r.append({"x": lugar + 3.0, "acao": "conversar", "dur": 12.0 + _sorte() * 10.0})
 	if r.size() > 1 and _sorte() < 0.6:
-		r.append({"x": -1.0, "acao": "parado", "dur": 5.0 + _sorte() * 10.0})   # pausa onde estiver
+		r.append({"x": -1.0, "acao": "parado", "det": "descansar", "dur": 5.0 + _sorte() * 10.0})   # pausa onde estiver
 	return true
 
 
-## Monta o plano do dia: dorme, acorda, cumpre os blocos fixos na hora certa e
-## preenche o resto com as tarefas; à noite, fogo; depois, casa.
+## Monta o plano do dia: a madrugada (dormindo, ou de vigia), o dia de tarefas, o fim de
+## tarde em etapas e a noite. Os blocos fixos (cenas, conversas, vigia) mandam: a pessoa
+## chega a tempo e cumpre.
 func _plano(p, g) -> Array:
 	var c: Dictionary = ctx[g.id]
 	var casa := _casa(p, c)
-	var acorda := 330.0 + ruido(p.id, dia, 2) * 60.0
-	var deita := 1250.0 + ruido(p.id, dia, 3) * 50.0
+	var acorda := 300.0 + ruido(p.id, dia, 2) * 90.0
+	var deita := 1290.0 + ruido(p.id, dia, 3) * 60.0
 	var blocos: Array = fixos.get(p.id, []).duplicate()
 	blocos.sort_custom(func(a, b): return a["ini"] < b["ini"])
-	var plano: Array = [_parada(0.0, acorda, casa, "dormir")]
 	if p.doente > 0:
-		plano[0]["fim"] = MIN_DIA
-		return plano
+		# O doente passa o dia em casa: dorme, acorda um pouco, não dorme direito à noite.
+		return [_parada(0.0, 540.0, casa, "dormir"), _parada(540.0, 660.0, casa, "parado", "andar", 0, "doente"),
+			_parada(660.0, 960.0, casa, "dormir"), _parada(960.0, 1080.0, casa, "parado", "andar", 0, "doente"),
+			_parada(1080.0, 1380.0, casa, "dormir"), _parada(1380.0, MIN_DIA, casa, "parado", "andar", 0, "doente")]
+	# A madrugada: dorme, a não ser que tenha vigia ou outra coisa marcada antes de acordar.
+	var plano: Array = []
+	var t := 0.0
+	var x := casa
+	var bi := 0
+	while bi < blocos.size() and blocos[bi]["ini"] < acorda:
+		var b: Dictionary = blocos[bi]
+		var sai: float = b["ini"] - absf(b["paradas"][0]["x"] - x) / VELOCIDADE
+		if sai > t + 1.0:
+			plano.append(_parada(t, sai, x, "dormir"))
+		elif plano.is_empty():
+			x = b["paradas"][0]["x"]
+		t = _cumprir_bloco(plano, b, t, x)
+		x = b["paradas"][-1]["x"]
+		bi += 1
+	if plano.is_empty() or x != casa or t < acorda:
+		var volta := t + absf(casa - x) / VELOCIDADE
+		plano.append(_parada(volta if not plano.is_empty() else 0.0, maxf(acorda, volta + 1.0), casa, "dormir"))
+		t = plano[-1]["fim"]
+		x = casa
 	# A tempestade não entra no plano: é posta por cima, na hora de cortar (veja _cortar_hora).
 	var tarefas := _tarefas(p, g, c)
-	var t := acorda
-	var x := casa
-	var fim_tarefas := 1020.0 + ruido(p.id, dia, 4) * 40.0
-	var bi := 0
+	var fim_tarefas := 975.0 + ruido(p.id, dia, 4) * 60.0
+	if papeis.get(p.id, "") == "pescador":
+		fim_tarefas = 1050.0   # pesca até o sol baixar
+	var r := _encher(plano, tarefas, true, t, x, fim_tarefas, blocos, bi, p)
+	t = r[0]
+	x = r[1]
+	bi = r[2]
+	# O fim de tarde: a volta com a carga, o lago ou a lenha, cozinhar e comer, a fogueira.
+	var tarde := _fim_de_tarde(p, c, casa, g)
+	var ate_fogo := deita - absf(casa - _lugar_fogo(p, c)) / VELOCIDADE
+	r = _encher(plano, tarde, false, t, x, ate_fogo, blocos, bi, p)
+	t = r[0]
+	x = r[1]
+	bi = r[2]
+	# A noite: o que ainda estiver marcado (vigia, histórias, o céu), e depois casa.
+	while bi < blocos.size():
+		t = _cumprir_bloco(plano, blocos[bi], t, x)
+		x = blocos[bi]["paradas"][-1]["x"]
+		bi += 1
+	var chega_casa := maxf(t + absf(casa - x) / VELOCIDADE, minf(deita, MIN_DIA - 1.0))
+	if chega_casa < MIN_DIA - 0.5:
+		plano.append(_parada(chega_casa, MIN_DIA, casa, "dormir"))
+	return plano
+
+
+## O fim de tarde de uma pessoa, como tarefas: quem trabalhou volta com a carga; uns vão ao
+## lago (banho ou água), outros buscam lenha; depois cozinham ou comem perto do fogo, e
+## ficam na fogueira até a hora de dormir.
+func _fim_de_tarde(p, c: Dictionary, casa: float, g) -> Array:
+	var r: Array = []
+	var idade: int = p.idade(ano)
+	if idade >= 12 and idade <= 60:
+		r.append({"x": casa + 4.0, "acao": "parado", "det": "guardar", "dur": 4.0, "ida": "lenha", "ida_det": "carregar_cesto"})
+		var s := ruido(p.id, dia, 20)
+		if s < 0.45:
+			var banho := s < 0.25
+			r.append({"x": c["margem"] + ruido(p.id, dia, 22) * 6.0, "acao": "parado", "det": "banho" if banho else "buscar_agua",
+				"dur": 15.0 + ruido(p.id, dia, 23) * 15.0, "virado": -1})
+			if not banho:
+				r.append({"x": casa + 4.0, "acao": "parado", "det": "guardar", "dur": 3.0, "ida": "lenha", "ida_det": "carregar_agua"})
+		elif s < 0.7:
+			r.append({"x": c["mata"] + (ruido(p.id, dia, 24) - 0.5) * 30.0, "acao": "colher", "det": "catar_lenha", "dur": 15.0})
+			r.append({"x": casa + 5.0, "acao": "parado", "det": "guardar", "dur": 3.0, "ida": "lenha", "ida_det": "carregar_cesto"})
+		else:
+			r.append({"x": casa + 2.0, "acao": "conversar" if ruido(p.id, dia, 26) < 0.5 else "parado", "det": "descansar", "dur": 25.0})
+	var lugar := _lugar_fogo(p, c)
+	var vir := _virado_ao_fogo(lugar, c) if c["descanso"].has(p.id) else 0
+	var cozinha: bool = idade >= 14 and ruido(p.id, dia, 21) < 0.35
+	if not cozinha:
+		# Enquanto a comida não fica pronta: conversa perto do fogo, senta, ou descansa em casa.
+		var e := ruido(p.id, dia, 28)
+		if e < 0.4:
+			r.append({"x": lugar + (ruido(p.id, dia, 27) - 0.5) * 8.0, "acao": "conversar", "dur": 999.0, "fim_em": 1090.0, "virado": vir})
+		elif e < 0.7:
+			r.append({"x": lugar, "acao": "fogueira", "dur": 999.0, "fim_em": 1090.0, "virado": vir})
+		else:
+			r.append({"x": casa + 2.0, "acao": "parado", "det": "descansar", "dur": 999.0, "fim_em": 1090.0})
+	r.append({"x": lugar, "acao": "fogueira", "det": "cozinhar" if cozinha else "comer", "dur": 45.0 + ruido(p.id, dia, 25) * 20.0,
+		"virado": vir, "desde": 1060.0 if cozinha else 1090.0})
+	if c["descanso"].has(p.id):
+		r.append({"x": lugar, "acao": "fogueira", "dur": 999.0, "virado": vir})
+	return r
+
+
+## Enche o plano com as tarefas até `ate`, cumprindo os blocos fixos que vierem antes.
+## Devolve [t, x, índice do próximo bloco]. Com `gerar`, as tarefas vêm de _mais_tarefas.
+func _encher(plano: Array, tarefas: Array, gerar: bool, t: float, x: float, ate: float, blocos: Array, bi: int, p) -> Array:
 	var ti := 0
-	while t < fim_tarefas:
-		while ti >= tarefas.size() and _mais_tarefas(tarefas):
+	while t < ate:
+		while gerar and ti >= tarefas.size() and _mais_tarefas(tarefas):
 			pass
 		# O próximo bloco fixo manda: chega a tempo e cumpre.
 		var proximo: Dictionary = blocos[bi] if bi < blocos.size() else {}
-		if not proximo.is_empty() and proximo["ini"] < fim_tarefas + 300.0:
+		if not proximo.is_empty() and proximo["ini"] < ate + 300.0:
 			var primeira: Dictionary = proximo["paradas"][0]
 			var ate_la: float = absf(primeira["x"] - x) / VELOCIDADE
-			if t + ate_la + 20.0 >= proximo["ini"] or ti >= tarefas.size():
+			if t + ate_la + 20.0 >= proximo["ini"] or (ti >= tarefas.size() and proximo["ini"] < ate):
 				t = _cumprir_bloco(plano, proximo, t, x)
 				x = proximo["paradas"][-1]["x"]
 				bi += 1
@@ -790,12 +948,12 @@ func _plano(p, g) -> Array:
 		var tarefa: Dictionary = tarefas[ti]
 		ti += 1
 		var destino: float = x if tarefa["x"] < 0.0 else tarefa["x"]
-		var chega := t + absf(destino - x) / VELOCIDADE
-		var limite: float = proximo["ini"] - absf(proximo["paradas"][0]["x"] - destino) / VELOCIDADE if not proximo.is_empty() else fim_tarefas
-		var termina := minf(chega + tarefa["dur"], minf(limite, fim_tarefas))
-		if termina - chega < 5.0:
+		var chega := maxf(t + absf(destino - x) / VELOCIDADE, tarefa.get("desde", 0.0))
+		var limite: float = proximo["ini"] - absf(proximo["paradas"][0]["x"] - destino) / VELOCIDADE if not proximo.is_empty() else ate
+		var termina := minf(minf(chega + tarefa["dur"], tarefa.get("fim_em", MIN_DIA)), minf(limite, ate))
+		if termina - chega < 3.0:
 			continue
-		# Trabalho de mão (colher, construir) anda aos poucos: de arbusto em arbusto, ao longo da roça.
+		# Trabalho de mão (colher, construir, caçar) anda aos poucos: de arbusto em arbusto.
 		var trecho_ini := chega
 		var xi := destino
 		var passo_k := 0
@@ -803,7 +961,8 @@ func _plano(p, g) -> Array:
 			var trecho_fim := termina
 			if tarefa["acao"] in ["colher", "construir"] and termina - trecho_ini > 24.0:
 				trecho_fim = trecho_ini + 12.0 + ruido(p.id, dia, 500 + ti * 10 + passo_k) * 8.0
-			plano.append(_parada(trecho_ini, trecho_fim, xi, tarefa["acao"], tarefa.get("ida", "andar"), tarefa.get("virado", 0)))
+			plano.append(_parada(trecho_ini, trecho_fim, xi, tarefa["acao"], tarefa.get("ida", "andar"), tarefa.get("virado", 0),
+				tarefa.get("det", ""), _a_caminho(tarefa) if passo_k == 0 else ""))
 			passo_k += 1
 			var dx := (ruido(p.id, dia, 600 + ti * 10 + passo_k) - 0.5) * 12.0
 			var proximo_x := xi + dx
@@ -811,23 +970,213 @@ func _plano(p, g) -> Array:
 			xi = proximo_x
 		t = termina
 		x = plano[-1]["x"]
-	# Blocos que sobraram (a noite: conversas, danças, rezas).
-	while bi < blocos.size():
-		t = _cumprir_bloco(plano, blocos[bi], t, x)
-		x = blocos[bi]["paradas"][-1]["x"]
-		bi += 1
-	# O fim do dia em volta do fogo, e depois casa.
-	# Quem não tem lugar perto do fogo (povo grande demais para a faixa) vai direto para casa.
-	var fogo := _lugar_fogo(p, c)
-	var chega_fogo := t + absf(fogo - x) / VELOCIDADE
-	if c["descanso"].has(p.id) and chega_fogo < deita - 20.0:
-		plano.append(_parada(chega_fogo, deita - absf(casa - fogo) / VELOCIDADE, fogo, "fogueira", "andar",
-			_virado_ao_fogo(fogo, c)))
-		t = deita - absf(casa - fogo) / VELOCIDADE
-		x = fogo
-	var chega_casa := maxf(t + absf(casa - x) / VELOCIDADE, deita)
-	plano.append(_parada(chega_casa, MIN_DIA, casa, "dormir"))
-	return plano
+	return [t, x, bi]
+
+
+## O que a pessoa leva no caminho até a tarefa: a carga de volta, ou a ferramenta de ida.
+func _a_caminho(tarefa: Dictionary) -> String:
+	if tarefa.has("ida_det"):
+		return tarefa["ida_det"]
+	if LEVAR_ACAO.has(tarefa["acao"]):
+		return LEVAR_ACAO[tarefa["acao"]]
+	return LEVAR.get(tarefa.get("det", ""), "")
+
+
+# ---------------------------------------------------------------- o dia no mundo inteiro
+
+## A caçada: 2 a 4 adultos saem juntos de manhã para o lugar longe (o morro, ou a mata alta),
+## andam de ponto em ponto e voltam à tarde com a caça, ou de mãos vazias.
+func _cacada(g, c: Dictionary) -> void:
+	var adultos := _embaralhados(_adultos(g, 16, 50), 901)
+	if adultos.size() < 3 or ruido(g.id, dia, 900) > 0.9:
+		return
+	var n := clampi(adultos.size() / 3, 2, 4)
+	var alvo: float = c["longe"] + (ruido(g.id, dia, 902) - 0.5) * 50.0
+	var vazia := ruido(g.id, dia, 903) < 0.3
+	var id := "cacada:%d:%d" % [g.id, dia]
+	var volta_ini := 930.0 + ruido(g.id, dia, 904) * 30.0
+	var chega := volta_ini + absf(c["fogo"] - alvo) / VELOCIDADE
+	var cena := _registrar_cena(id, "cacada", g, null, 380.0, chega + 20.0, [], alvo, {"vazia": vazia})
+	var info := {"tipo": "cacada", "id": id}
+	var volta_cena := {"tipo": "caca_vazia" if vazia else "cacada", "id": ("caca_vazia:%d:%d" % [g.id, dia]) if vazia else id}
+	var i := 0
+	for p in adultos:
+		if i >= n:
+			break
+		var off := (i - (n - 1) / 2.0) * 6.0
+		var paradas: Array = [_parada(380.0, 392.0, c["fogo"] + 8.0 + i * 5.0, "parado")]
+		var t := 395.0 + absf(alvo - c["fogo"]) / VELOCIDADE
+		var k := 0
+		while t < volta_ini:
+			var xk: float = alvo + off + (ruido(g.id, dia, 910 + k) - 0.5) * 50.0
+			paradas.append(_parada(t, minf(t + 26.0, volta_ini), xk, "cacar", "andar", 1 if k % 2 == 0 else -1, "", "levar_lanca"))
+			t += 34.0
+			k += 1
+		var volta := _parada(chega, chega + 15.0, c["fogo"] + 6.0 + i * 5.0, "parado", "andar" if vazia else "carregar_caca", 0,
+			"maos_vazias" if vazia else "repartir")
+		paradas.append(volta)
+		if _fixar(p.id, paradas, info):
+			volta["cena"] = volta_cena
+			cena["participantes"].append(p.id)
+			i += 1
+	if i == 0:
+		cenas.erase(cena)
+	elif vazia:
+		_registrar_cena(volta_cena["id"], "caca_vazia", g, null, chega, chega + 15.0, cena["participantes"].duplicate(), c["fogo"])
+
+
+## Os papéis do dia de quem não foi caçar: um passa o dia pescando, outro busca água,
+## outros colhem longe do acampamento.
+func _papeis_do_dia(g) -> void:
+	var livres: Array = []
+	for p in _embaralhados(_adultos(g, 16, 55), 920):
+		if not fixos.has(p.id) or fixos[p.id].is_empty() or fixos[p.id][0]["cena"].get("tipo", "") != "cacada":
+			livres.append(p)
+	var ordem := ["pescador", "agua", "longe", "longe"]
+	for k in mini(livres.size() - 1, ordem.size()):
+		papeis[livres[k].id] = ordem[k]
+
+
+## A noite tem sempre alguém acordado: o vigia faz a ronda (da meia-noite às 2h40, das 2h40
+## às 5h, das 22h à meia-noite). Às vezes um casal fica olhando o céu, alguém reza tarde ou
+## vai ao lago de madrugada; em noites sem tempestade, uma roda de histórias vai até tarde.
+func _noite(g, c: Dictionary) -> void:
+	var adultos := _embaralhados(_adultos(g, 16, 60), 950)
+	if adultos.is_empty():
+		return
+	var borda: float = c["faixa"][1] - 4.0 if ruido(g.id, dia, 951) < 0.5 else c["faixa"][0] + 4.0
+	borda = maxf(borda, Cotidiano.MARGEM + 2.0)
+	var turnos := [[0.0, 170.0], [150.0, 300.0], [1320.0, MIN_DIA]]
+	for k in turnos.size():
+		var vigia = adultos[k % adultos.size()]
+		var paradas: Array = []
+		var t: float = turnos[k][0]
+		var j := 0
+		while t < turnos[k][1] - 5.0:
+			var na_borda := j % 2 == 1
+			var xj: float = borda if na_borda else c["fogo"] + 9.0
+			var fim := minf(t + (12.0 if na_borda else 22.0), turnos[k][1])
+			paradas.append(_parada(t, fim, xj, "parado" if na_borda else "fogueira", "andar", 0, "vigia"))
+			t = fim + absf(borda - c["fogo"] - 9.0) / VELOCIDADE
+			j += 1
+		if not paradas.is_empty():
+			paradas[-1]["fim"] = turnos[k][1]   # o turno vai até o fim, até o próximo vigia chegar
+		var id := "vigia:%d:%d:%d" % [g.id, dia, k]
+		if not paradas.is_empty() and _fixar(vigia.id, paradas, {"tipo": "vigia", "id": id}):
+			_registrar_cena(id, "vigia", g, null, turnos[k][0], turnos[k][1], [vigia.id], c["fogo"] + 9.0)
+	# Um casal olhando o céu na beira do acampamento.
+	if ruido(g.id, dia, 952) < 0.5:
+		for p in adultos:
+			if p.conjuge != -1 and m.pessoas.has(p.conjuge) and m.pessoas[p.conjuge].vivo and m.pessoas[p.conjuge].grupo == g.id:
+				if _fixar(p.id, [_parada(1325.0, 1375.0, borda - 3.0, "conversar", "andar", 1, "olhar_ceu")]):
+					if not _fixar(p.conjuge, [_parada(1325.0, 1375.0, borda + 3.0, "conversar", "andar", -1, "olhar_ceu")]):
+						fixos[p.id].pop_back()
+				break
+	# Quem reza tarde.
+	for p in adultos:
+		if p.tem("devoto") and ruido(p.id, dia, 953) < 0.4:
+			_fixar(p.id, [_parada(1380.0, 1410.0, c["altar"] + (ruido(p.id, dia, 954) - 0.5) * 6.0, "rezar", "andar", 0, "reza_noturna")])
+			break
+	# Alguém vai ao lago de madrugada.
+	if ruido(g.id, dia, 955) < 0.5:
+		var p = adultos[(3 + int(ruido(g.id, dia, 956) * 5.0)) % adultos.size()]
+		var de_volta: float = 268.0 + absf(_casa(p, c) - c["margem"]) / VELOCIDADE
+		_fixar(p.id, [_parada(255.0, 268.0, c["margem"] + 3.0, "parado", "andar", -1, "buscar_agua"),
+			_parada(de_volta, maxf(de_volta + 5.0, 300.0), _casa(p, c) + 4.0, "parado", "lenha", 0, "guardar", "carregar_agua")])
+	# A roda de histórias, em noite sem tempestade na zona (pelos eventos do dia, e não pelo
+	# tempo de agora: a rotina sai igual em qualquer hora em que for montada).
+	var tempestade_hoje := false
+	for e in m.eventos_recentes(dia - 1):
+		if e.tipo == "tempestade" and e.zona == g.zona and _dia_do_evento(e) >= dia - 1:
+			tempestade_hoje = true
+	if ruido(g.id, dia, 957) < 0.3 and not tempestade_hoje:
+		var roda: Array = []
+		for p in _embaralhados(_adultos(g, 12, 90), 958):
+			if roda.size() >= 6:
+				break
+			if c["descanso"].has(p.id):
+				var x: float = c["descanso"][p.id]
+				if _fixar(p.id, [_parada(1275.0, 1380.0, x, "conversar", "andar", _virado_ao_fogo(x, c), "historias")]):
+					roda.append(p.id)
+		if not roda.is_empty():
+			_registrar_cena("historias:%d:%d" % [g.id, dia], "historias", g, null, 1275.0, 1380.0, roda, c["fogo"])
+
+
+## Pequenos incidentes do dia, 2 ou 3 por povo: cenas curtas, visíveis, que não entram na
+## crônica.
+func _incidentes(g, c: Dictionary) -> void:
+	var n := 2 + (1 if ruido(g.id, dia, 960) < 0.4 else 0)
+	var adultos: Array = []
+	for p in _adultos(g, 14, 70):
+		var cacando: bool = fixos.has(p.id) and not fixos[p.id].is_empty() and fixos[p.id][0]["cena"].get("tipo", "") == "cacada"
+		if not papeis.has(p.id) and not cacando:
+			adultos.append(p)
+	var criancas: Array = []
+	for id in g.membros:
+		var idade: int = m.pessoas[id].idade(ano)
+		if idade >= 4 and idade <= 11:
+			criancas.append(m.pessoas[id])
+	for k in n:
+		var tipo: String = INCIDENTES[int(ruido(g.id, dia, 961 + k) * INCIDENTES.size()) % INCIDENTES.size()]
+		var t: float = 560.0 + ruido(g.id, dia, 970 + k) * 420.0
+		var ad := _embaralhados(adultos, 980 + k)
+		var cr := _embaralhados(criancas, 990 + k)
+		var id := "%s:%d:%d:%d" % [tipo, g.id, dia, k]
+		var info := {"tipo": tipo, "id": id}
+		var x: float = c["fogo"] + (ruido(g.id, dia, 1000 + k) - 0.5) * 60.0
+		var quem: Array = []
+		match tipo:
+			"briga_criancas":
+				if cr.size() < 2 or ad.is_empty():
+					continue
+				if _fixar(cr[0].id, [_parada(t, t + 10.0, x - 3.0, "parado", "andar", 1, "brigar")], info) \
+						and _fixar(cr[1].id, [_parada(t, t + 10.0, x + 3.0, "parado", "andar", -1, "brigar")], info):
+					quem = [cr[0].id, cr[1].id]
+					if _fixar(ad[0].id, [_parada(t + 3.0, t + 12.0, x, "conversar", "andar", 0, "separar")], info):
+						quem.append(ad[0].id)
+			"tombo":
+				if ad.size() < 2:
+					continue
+				if _fixar(ad[0].id, [_parada(t, t + 18.0, x, "parado", "andar", 0, "machucado")], info):
+					quem = [ad[0].id]
+					if _fixar(ad[1].id, [_parada(t + 3.0, t + 18.0, x + 4.0, "cuidar", "andar", -1)], info):
+						quem.append(ad[1].id)
+			"animal":
+				if ad.size() < 2:
+					continue
+				var lado: float = 1.0 if ruido(g.id, dia, 1010 + k) < 0.5 else -1.0
+				x = clampf(c["fogo"] + lado * 45.0, Cotidiano.MARGEM + 6.0, Cotidiano.LARGURA_MUNDO - 8.0)
+				for j in 2:
+					if _fixar(ad[j].id, [_parada(t + j * 2.0, t + 12.0, x - lado * (4.0 + 5.0 * j), "parado", "andar", int(lado), "espantar")], info):
+						quem.append(ad[j].id)
+			"perdido":
+				if cr.is_empty() or ad.is_empty():
+					continue
+				x = c["longe"] + (ruido(g.id, dia, 1020 + k) - 0.5) * 40.0
+				var volta: float = t + 50.0 + absf(x - c["fogo"]) / VELOCIDADE
+				if _fixar(cr[0].id, [_parada(t, t + 50.0, x, "parado", "andar", 0, "perdido"),
+						_parada(volta, volta + 5.0, c["fogo"] + 5.0, "parado")], info):
+					quem = [cr[0].id]
+					if _fixar(ad[0].id, [_parada(t + 25.0, t + 50.0, x + 3.0, "parado", "andar", -1, "buscar"),
+							_parada(volta, volta + 5.0, c["fogo"] + 9.0, "parado")], info):
+						quem.append(ad[0].id)
+			"discussao":
+				var bravos: Array = []
+				for p in ad:
+					if p.tem("rancoroso") or p.tem("ambicioso"):
+						bravos.append(p)
+				for p in ad:
+					if bravos.size() < 2 and not bravos.has(p):
+						bravos.append(p)
+				if bravos.size() < 2:
+					continue
+				if _fixar(bravos[0].id, [_parada(t, t + 15.0, x - 4.0, "conversar", "andar", 1, "discutir")], info):
+					if _fixar(bravos[1].id, [_parada(t, t + 15.0, x + 4.0, "conversar", "andar", -1, "discutir")], info):
+						quem = [bravos[0].id, bravos[1].id]
+					else:
+						fixos[bravos[0].id].pop_back()
+		if not quem.is_empty():
+			_registrar_cena(id, tipo, g, null, t, t + 20.0, quem, x)
 
 
 func _cumprir_bloco(plano: Array, bloco: Dictionary, t: float, x: float) -> float:
@@ -855,22 +1204,22 @@ func _linha(pid: int) -> Array:
 	var segs: Array = []
 	var plano: Array = planos[pid]
 	var prev: Dictionary = plano[0]
-	_trecho(segs, 0.0, prev["fim"], prev["x"], prev["x"], prev["acao"], prev["virado"], prev["cena"])
+	_trecho(segs, 0.0, prev["fim"], prev["x"], prev["x"], prev["acao"], prev["virado"], prev["cena"], prev.get("detalhe", ""))
 	for i in range(1, plano.size()):
 		var pa: Dictionary = plano[i]
-		var t: float = segs[-1][1]
+		var t: float = segs[-1][1] if not segs.is_empty() else 0.0
 		var anda: float = absf(pa["x"] - prev["x"]) / VELOCIDADE
 		if anda > 0.001:
-			_trecho(segs, t, t + anda, prev["x"], pa["x"], pa["ida"], 1 if pa["x"] > prev["x"] else -1, pa["cena"])
+			_trecho(segs, t, t + anda, prev["x"], pa["x"], pa["ida"], 1 if pa["x"] > prev["x"] else -1, pa["cena"], pa.get("ida_det", ""))
 			t += anda
 		if pa["ini"] > t + 0.001:
 			_trecho(segs, t, pa["ini"], pa["x"], pa["x"], "parado", pa["virado"], pa["cena"])
 			t = pa["ini"]
-		_trecho(segs, t, maxf(pa["fim"], t + 0.5), pa["x"], pa["x"], pa["acao"], pa["virado"], pa["cena"])
+		_trecho(segs, t, maxf(pa["fim"], t + 0.5), pa["x"], pa["x"], pa["acao"], pa["virado"], pa["cena"], pa.get("detalhe", ""))
 		prev = pa
 	if segs[-1][1] < MIN_DIA:
 		var u: Array = segs[-1]
-		_trecho(segs, u[1], MIN_DIA, u[3], u[3], u[4], u[5], u[6])
+		_trecho(segs, u[1], MIN_DIA, u[3], u[3], u[4], u[5], u[6], u[7])
 	var ini := PackedFloat64Array()
 	for sg in segs:
 		ini.append(sg[0])
@@ -975,14 +1324,15 @@ func _pedaco(lista: Array, sg: Array, ini: float, ate: float) -> void:
 		xb = lerpf(x0, x1, (b - sg[0]) / dur)
 	if not lista.is_empty():
 		var u: Dictionary = lista[-1]
-		if xa == xb and u["acao"] == sg[4] and u["x0"] == u["x1"] and u["x1"] == xa:
+		if xa == xb and u["acao"] == sg[4] and u["detalhe"] == sg[7] and u["x0"] == u["x1"] and u["x1"] == xa:
 			u["ate"] = (b - ini) / 60.0
 			return
 	lista.append({"de": (a - ini) / 60.0, "ate": (b - ini) / 60.0, "x0": xa, "x1": xb, "acao": sg[4],
-		"virado": sg[5], "cena": sg[6]})
+		"virado": sg[5], "cena": sg[6], "detalhe": sg[7]})
 
 
-func _trecho(segs: Array, t0: float, t1: float, x0: float, x1: float, acao: String, virado: int, cena: Dictionary) -> void:
+func _trecho(segs: Array, t0: float, t1: float, x0: float, x1: float, acao: String, virado: int, cena: Dictionary,
+		detalhe: String = "") -> void:
 	if t1 - t0 < 0.001:
 		return
 	if acao != "remar":
@@ -991,7 +1341,7 @@ func _trecho(segs: Array, t0: float, t1: float, x0: float, x1: float, acao: Stri
 		x1 = maxf(x1, Cotidiano.MARGEM)
 	x0 = minf(x0, Cotidiano.LARGURA_MUNDO - 2.0)
 	x1 = minf(x1, Cotidiano.LARGURA_MUNDO - 2.0)
-	segs.append([t0, t1, x0, x1, acao, virado, cena])
+	segs.append([t0, t1, x0, x1, acao, virado, cena, detalhe])
 
 
 func _indice(pid: int, minuto: float) -> int:
@@ -1003,7 +1353,7 @@ func _indice(pid: int, minuto: float) -> int:
 func instante(pid: int, minuto: float) -> Dictionary:
 	if not linhas.has(pid):
 		var ag: Array = agenda(pid, int(minuto / 60.0))
-		return {"x": ag[0]["x0"], "acao": ag[0]["acao"], "virado": 0, "cena": {}}
+		return {"x": ag[0]["x0"], "acao": ag[0]["acao"], "virado": 0, "cena": {}, "detalhe": ""}
 	var segs: Array = linhas[pid]
 	var sg: Array = segs[_indice(pid, minuto)]
 	var abrigo := _abrigo(pid)
@@ -1013,7 +1363,7 @@ func instante(pid: int, minuto: float) -> Dictionary:
 			if minuto < s2[1]:
 				break
 	var f := clampf((minuto - sg[0]) / maxf(0.001, sg[1] - sg[0]), 0.0, 1.0)
-	return {"x": lerpf(sg[2], sg[3], f), "acao": sg[4], "virado": sg[5], "cena": sg[6]}
+	return {"x": lerpf(sg[2], sg[3], f), "acao": sg[4], "virado": sg[5], "cena": sg[6], "detalhe": sg[7]}
 
 
 ## Os trechos de uma hora: [{de, ate, x0, x1, acao, virado, cena}], com de e ate de 0 a 1.
@@ -1031,7 +1381,7 @@ func agenda(pid: int, hora: int) -> Array:
 		if acordado:
 			m.desempenho["substitutos"] += 1
 		return [{"de": 0.0, "ate": 1.0, "x0": casa, "x1": casa, "acao": "parado" if acordado else "dormir",
-			"virado": 0, "cena": {}}]
+			"virado": 0, "cena": {}, "detalhe": ""}]
 	var ag = horas[h]
 	if ag == null:
 		ag = _cortar_hora(pid, h)
