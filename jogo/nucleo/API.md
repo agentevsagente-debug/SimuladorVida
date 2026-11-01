@@ -135,6 +135,7 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 | `acao` | a ação no meio da hora (lista abaixo) |
 | `virado` | para onde olha no meio da hora: -1 (esquerda), 1 (direita) ou 0 (tanto faz). Andando, é o sentido da caminhada; conversando, lutando ou dançando, é para o outro. |
 | `cena` | `{tipo, id}` se a pessoa está numa cena no meio da hora; `{}` se não |
+| `detalhe` | o que a pessoa faz, em detalhe, no meio da hora, dentro da `acao` (lista abaixo); "" quando não há |
 | `agenda` | os trechos da hora, em detalhe (abaixo). É o que dá vida ao cotidiano. |
 | `papel` | "lider", "sacerdote" ou "" |
 | `tracos` | dois de: ambicioso, pacifico, rancoroso, curioso, devoto, desconfiado, generoso, engenhoso, corajoso, medroso |
@@ -145,12 +146,13 @@ Construções abandonadas, de povos que acabaram, se mudaram ou foram conquistad
 **A agenda da hora.** Uma hora de jogo dura 112,5 s no ritmo normal, e ninguém fica a hora toda parado num ponto: a pessoa anda entre arbustos, vai pescar, traz lenha, conversa. `agenda` é a lista dos trechos da hora, em ordem:
 
 ```
-{de, ate, x0, x1, acao, virado, cena}
+{de, ate, x0, x1, acao, virado, cena, detalhe}
 ```
 
 - `de` e `ate` vão de 0 a 1, a fração da hora;
 - se `x0 != x1`, a pessoa anda de `x0` a `x1` nesse trecho, com a ação de caminhada (`andar`, `lenha` ou `carregar_morto`, ou `remar` indo para o barco);
-- se `x0 == x1`, ela fica ali fazendo a `acao`.
+- se `x0 == x1`, ela fica ali fazendo a `acao`;
+- `detalhe` diz o que exatamente ela faz (ou leva, andando); "" quando não há. A `acao` continua sendo a genérica: quem não usar o `detalhe` vê o mesmo de antes.
 
 Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho da fração corrente e interpole `x` entre `x0` e `x1`. Os trechos vêm colados (o `ate` de um é o `de` do seguinte), e o último termina em 1. O primeiro trecho começa no `x_anterior`, e o último termina no `x`. Das 7h às 16h, há em média de 4 a 5 trechos por pessoa por hora.
 
@@ -175,6 +177,34 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `dancar` | casamentos e festas, em volta do fogo |
 | `lutar` | guerra: as duas linhas frente a frente |
 | `carregar_morto` | os dois primeiros do cortejo do funeral |
+| `cacar` | na caçada, longe do acampamento, de ponto em ponto |
+| `carregar_caca` | andando de volta da caçada com a caça |
+
+**Detalhes** (campo `detalhe`, nos trechos da agenda e na ficha):
+
+| Detalhe | Dentro de | O que é |
+|---|---|---|
+| `colher_arbusto`, `cavar_raiz` | `colher` | coleta: frutas e folhas nos arbustos, ou raízes cavadas no chão |
+| `catar_lenha` | `colher` | lenha na mata |
+| `colher_roca` | `colher` | trabalho na roça |
+| `carregar_cesto`, `carregar_agua` | `lenha` (andando) | a volta com a carga: cesto cheio, ou água do lago |
+| `levar_cesto`, `levar_vara`, `levar_machado`, `levar_pote`, `levar_lanca` | `andar` | a ida ao trabalho com a ferramenta: cesto (coleta), vara (pesca), machado (lenha, obra, forja), pote (água), lança (caçada) |
+| `buscar_agua`, `banho` | `parado` | na margem do lago |
+| `guardar` | `parado` | guardando a carga em casa ou no celeiro |
+| `descansar` | `parado`, `conversar` | uma pausa, ou o fim de tarde em casa |
+| `cozinhar`, `comer` | `fogueira` | o jantar, das 17h30 às 19h |
+| `brincar` | `parado` | crianças brincando, na praia ou perto do fogo |
+| `vigia` | `fogueira`, `parado` | o vigia da noite: sentado no fogo, ou de pé na beira do acampamento |
+| `olhar_ceu` | `conversar` | um casal olhando o céu à noite |
+| `reza_noturna` | `rezar` | quem reza tarde da noite |
+| `historias` | `conversar` | a roda de histórias à noite |
+| `doente` | `parado` | o doente acordado em casa |
+| `repartir`, `maos_vazias` | `parado` | a volta da caçada: repartindo a caça, ou sem nada |
+| `brigar`, `separar`, `machucado`, `espantar`, `perdido`, `buscar`, `discutir` | `parado`, `conversar` | os pequenos incidentes (veja as cenas) |
+
+**O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos de manhã para a caçada no morro (ou na mata alta, para quem mora no morro) e voltam entre 16h e 17h. Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
+
+**Fim de tarde e noite.** Das 16h15 às 17h15, cada um volta com a carga. Depois, uns vão ao lago (banho ou água), outros à lenha, outros descansam em casa. Das 17h30 às 19h, uns cozinham e os outros conversam e comem perto do fogo. Até as 21h30 ou 22h30 fica-se na fogueira, com conversas e crianças correndo. Dorme-se das 21h30 às 22h30 até as 5h ou 6h30, mas a noite tem sempre alguém acordado: o vigia faz a ronda em três turnos (22h à meia-noite, meia-noite às 2h50, 2h30 às 5h). Às vezes um casal fica olhando o céu, alguém reza tarde ou vai ao lago de madrugada, e em noites sem tempestade há uma roda de histórias até as 23h. O doente passa o dia em casa, acordando de vez em quando.
 
 **Lugares sem fila.** Cada pessoa tem um lugar de descanso próprio perto do fogo, fixo enquanto o povo não muda: os lugares ficam a 7 px uns dos outros, alternando os lados da fogueira e a pelo menos 6 px do centro dela, por ordem de chegada ao mundo. É ali que ela fica na `fogueira` da noite e nas conversas em volta do fogo. Quem não cabe na faixa do povo vai direto para casa à noite (`dormir`). Em casa, cada um dorme num ponto próprio ao longo da largura da moradia. Em povos grandes, a coleta se espalha pela faixa de trabalho inteira. Ninguém fica na água (x < 126), a não ser remando; quem pesca fica na margem, de 126 a 136.
 
@@ -222,6 +252,15 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
+| `cacada` | quase todo dia, das 6h20 até a volta, entre 16h e 17h | 2 a 4 adultos caçando longe (`x` é o lugar da caça) | `vazia`: voltaram sem nada |
+| `caca_vazia` | na volta de uma caçada sem caça | os caçadores, de mãos vazias perto do fogo | |
+| `vigia` | toda noite, em três turnos | o vigia, que vai e volta entre o fogo e a beira do acampamento | |
+| `historias` | algumas noites sem tempestade, 21h15 às 23h | até 6 pessoas conversando em volta do fogo | |
+| `briga_criancas` | incidente: 2 ou 3 por povo por dia, entre 9h20 e 16h20 | duas crianças brigando; um adulto separa | |
+| `tombo` | incidente | alguém se machuca de leve; outro cuida | |
+| `animal` | incidente | um animal aparece na beira do acampamento; dois adultos espantam (`x` é onde ele está) | |
+| `perdido` | incidente | uma criança se perde longe do acampamento; um adulto vai buscar | |
+| `discussao` | incidente | dois adultos (de preferência rancorosos ou ambiciosos) discutem | |
 | `construcao` | no dia e no seguinte a uma conquista de estágio, à agricultura, ou a cabanas derrubadas por tempestade, terremoto ou dilúvio | até 6 pessoas `construir` na obra nova (templo, forja, arquivo, moinho ou casas) | `obra` |
 
 `posicao_de(pessoa_id) -> float` devolve o x de uma pessoa no meio da hora corrente (-1 se ela morreu).
@@ -457,6 +496,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido) e a estante (índice e livros). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
+| `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação e gente em 3 das 4 zonas; à noite, alguém acordado; a cada hora, alguém mudando de lugar. Mostra a tabela hora a hora da semente 1, dia 4. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
 | `gerar.gd` | Gera a crônica de uma semente, com ou sem cenário. |
 | `sondar.gd` | Mostra a população por década e a contagem de eventos de várias sementes. |

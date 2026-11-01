@@ -80,7 +80,11 @@ func _initialize() -> void:
 	print("às 10h, %.0f%% das pessoas estavam no mesmo lugar que no dia anterior" % [100.0 * iguais / maxi(1, comparados)])
 	print("custo médio de pessoas_visiveis + cenas_ativas: %.2f ms (%d pessoas)" % [t_total / consultas, m.populacao()])
 	conferir(acoes.size() >= 12, "pelo menos 12 ações diferentes (%d)" % acoes.size())
-	# Mesma pergunta, mesma resposta, sem tocar no sorteio.
+	# Mesma pergunta, mesma resposta, sem tocar no sorteio (de dia: de madrugada, antes de a
+	# rotina do dia entrar, vale a última hora da de ontem).
+	while m.hora() != 12:
+		m.pessoas_visiveis()
+		m.avancar_hora()
 	var s1 := m.rng.state
 	var a1 := str(m.pessoas_visiveis())
 	m._rotina_cache = null

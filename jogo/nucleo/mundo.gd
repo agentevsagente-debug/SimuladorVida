@@ -3602,6 +3602,7 @@ func pessoas_visiveis() -> Array:
 			f["x_anterior"] = ag[0]["x0"]
 			f["x"] = ag[-1]["x1"]
 			f["acao"] = meio["acao"]
+			f["detalhe"] = meio.get("detalhe", "")
 			f["virado"] = meio["virado"]
 			f["cena"] = meio["cena"]
 			f["agenda"] = ag
