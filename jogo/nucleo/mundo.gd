@@ -510,8 +510,46 @@ func _novo_dia() -> void:
 		_fechar_livro("")
 
 
+## Um povo pequeno em que ninguém mais pode casar (os que sobram são irmãos, pais e filhos)
+## definharia em silêncio por um século. De vez em quando, chegam de além da borda do mundo
+## 2 ou 3 estranhos, jovens e sem parentes ali, e ficam: a lenda da borda tem volta.
+func _estranhos_de_alem_da_borda() -> void:
+	var a := ano()
+	for g in grupos_vivos():
+		if g.membros.size() >= 20:
+			continue
+		var homens: Array = []
+		var mulheres: Array = []
+		var casal_fertil := false
+		for p in _membros(g):
+			var i: int = p.idade(a)
+			if p.conjuge != -1 and p.sexo == "f" and i <= 45 and pessoas.has(p.conjuge) and pessoas[p.conjuge].vivo:
+				casal_fertil = true
+			if p.conjuge == -1 and i >= 16 and i <= 50:
+				(homens if p.sexo == "m" else mulheres).append(p)
+		if casal_fertil:
+			continue
+		var par := false
+		for h in homens:
+			for mu in mulheres:
+				if not _parentes_proximos(h, mu):
+					par = true
+		if par or not chance(0.08 if g.estranhos < -0.5 else 0.22):
+			continue
+		var n := 2 + (1 if chance(0.4) else 0)
+		var ids: Array = []
+		for k in n:
+			# Chegam mais do sexo que falta.
+			var sexo := "m" if (homens.size() < mulheres.size()) == (k % 2 == 0) else "f"
+			var p := _nova_pessoa(g, sexo, a - rng.randi_range(18, 28), -1, -1)
+			p.fe = rng.randf_range(-0.2, 0.3)
+			ids.append(p.id)
+		registrar("estranhos", "social", 7, g.zona, g.id, ids, {"n": n, "acolhida": g.estranhos})
+
+
 func _novo_ano() -> void:
 	var a := ano()
+	_estranhos_de_alem_da_borda()
 	# Envelhecimento e morte natural.
 	for g in grupos_vivos():
 		for p in _membros(g):
@@ -1789,6 +1827,9 @@ func _arrumar_grupos() -> void:
 			_escolher_lider(g)
 
 
+const ENSINO_DEMORA := 25
+
+
 func _ensino() -> void:
 	var a := ano()
 	for g in grupos_vivos():
@@ -1801,6 +1842,10 @@ func _ensino() -> void:
 				mestres.append(p)
 			elif p.idade(a) >= 12:
 				aprendizes.append(p)
+		# Depois de ENSINO_DEMORA anos no estágio 1, descobrir e ensinar apressam (a cada década, mais
+		# uma vez a chance de antes): nenhum mundo fica um século sem plantar.
+		var desde: int = g.estagio_desde if g.estagio_desde >= 0 else g.origem.get("ano", 1)
+		var pressa: float = 1.0 + maxf(0.0, float(a - desde - ENSINO_DEMORA)) / 10.0
 		if mestres.is_empty():
 			# Descoberta: da necessidade e de quem é engenhoso ou curioso.
 			if dia_do_ano() % DIAS_ESTACAO == 0:
@@ -1816,6 +1861,13 @@ func _ensino() -> void:
 					p_desc += pressao
 					if inventores.is_empty():
 						inventores = _adultos(g, 16)
+				# Quem já soube e esqueceu (morreram os que sabiam) redescobre mais depressa:
+				# os velhos lembravam que se plantava.
+				if _ja_houve("descoberta", g.id):
+					p_desc += 0.03
+					if inventores.is_empty():
+						inventores = _adultos(g, 16)
+				p_desc *= pressa
 				if not inventores.is_empty() and chance(p_desc):
 					var inv: Pessoa = escolher(inventores)
 					inv.sabe_agricultura = true
@@ -1831,6 +1883,7 @@ func _ensino() -> void:
 				p_ensinar = 0.008
 			if g.em_fome:
 				p_ensinar *= 0.5
+			p_ensinar *= pressa
 			if aprendizes.is_empty() or not chance(p_ensinar):
 				continue
 			var ap: Pessoa = escolher(aprendizes)
@@ -1841,7 +1894,8 @@ func _ensino() -> void:
 			if p.sabe_agricultura:
 				sabem += 1
 		var adultos := _adultos(g, 15).size()
-		if sabem >= 4 and sabem >= adultos * 0.35:
+		# Num povo pequeno, basta que todos os adultos saibam.
+		if sabem >= mini(4, maxi(2, adultos)) and sabem >= adultos * 0.35:
 			g.estagio = 2
 			g.estagio_desde = a
 			registrar("agricultura", "social", 9, g.zona, g.id, [], {"sabem": sabem})

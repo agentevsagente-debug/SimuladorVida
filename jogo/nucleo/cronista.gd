@@ -1242,6 +1242,15 @@ func _texto(e) -> String:
 			return _prece_sem_resposta(e, v)
 		"prece_contrariada":
 			return _prece_contrariada(e, v)
+		"estranhos":
+			v["lista"] = _lista_pessoas(e.participantes)
+			v["n"] = G.termo(G.extenso(e.dados["n"], "m"), "m", e.dados["n"])
+			if e.dados.get("acolhida", 0.0) < -0.3:
+				return _frase(["Vieram de além da borda {n} estranhos, magros e calados: {lista}. {g} desconfiou, mas não tinha como recusar braços.",
+					"De além da borda chegaram {lista}. Em {g}, olharam torto, e eles ficaram assim mesmo."], v)
+			return _frase(["Vieram de além da borda {n} estranhos, magros e calados: {lista}. {g} os recebeu, e eles ficaram.",
+				"Um dia, {lista} apareceram na borda do mundo. Não sabiam de onde vinham. {g} lhes deu lugar no fogo.",
+				"Da terra que ninguém conhece chegaram {lista}. Para {g}, que já não tinha com quem casar os seus, foi uma bênção."], v)
 		"fogo_brando":
 			if e.importancia >= 5:
 				return _frase(["No meio do frio, um fogo manso desceu do céu e acendeu as fogueiras {em:zona}. Ninguém se queimou, e ninguém mais tremeu.",
@@ -1930,6 +1939,8 @@ func texto_curto(e) -> String:
 					"guerra": ["{p} pede vitória" if e.dados.get("atacou", false) else "{p} pede proteção"], "banal": ["{p} pede sol para a pesca", "{p} pede uma caça gorda"]}.get(nec, ["{p} reza"])
 		"prece_contrariada":
 			opcoes = ["{g} pediu, e veio o contrário", "{p} foi contrariad{p:o|a}"]
+		"estranhos":
+			opcoes = ["Estranhos chegam a {g}", "Chegam estranhos de além da borda"]
 		"fogo_brando":
 			opcoes = ["Um fogo que aquece e não queima", "As fogueiras se acendem sozinhas"]
 		"fome_inicio":

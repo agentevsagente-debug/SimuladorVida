@@ -1,0 +1,30 @@
+1	7	17	inicio, descoberta, mudanca, mudanca, cultura, mudanca, mudanca
+11	12	5	crenca, mudanca, nova_crenca, mudanca, mudanca, agricultura, nova_crenca, costume, peste, doenca_fim, costume, os_ultimos
+21	2	10	estranhos, costume
+31	0	10	
+41	1	20	cultura
+51	1	23	descoberta_tecnica
+61	4	26	fome_fim, costume, nova_crenca, estagio
+71	6	6	costume, os_ultimos, regressao, fome_fim, reforma, estranhos
+81	0	17	
+91	1	18	costume
+101	0	29	
+111	5	1	profeta, descoberta_tecnica, cultura, os_ultimos, fome_fim
+121	1	1	reforma
+131	1	8	estranhos
+141	1	14	descoberta_tecnica
+151	2	22	estagio, secularizacao
+161	3	28	reforma, reforma, renascimento
+171	5	43	separacao, fome_fim, costume, casamento_entre_grupos, separacao
+181	8	56	secularizacao, separacao, estranhos, casamento_entre_grupos, edito, costume, profeta, reforma
+191	4	96	casamento_entre_grupos, casamento_entre_grupos, casamento_entre_grupos, costume
+201	19	108	cultura, cultura, edito, edito, ataque, costume, ataque, casamento_entre_grupos, secularizacao, novo_lider, costume, expedicao, nova_crenca, ataque, costume, cultura, fome_fim, cultura, descoberta_tecnica
+211	11	161	estagio, fome_fim, descoberta_tecnica, edito, estagio, ataque, estagio, cultura, expedicao, nova_crenca, descoberta_tecnica
+221	26	144	guerra_inicio, ataque, guerra_fim, estranhos, costume, costume, reforma, ataque, costume, guerra_inicio, ataque, guerra_fim, estagio, estudo_do_ceu, descoberta_tecnica, descoberta_tecnica, ataque, novo_lider, cultura, guerra_inicio, ataque, ataque, reforma, ataque, guerra_fim, profeta
+231	29	149	fome_fim, fome_fim, reforma, estagio, ataque, guerra_inicio, ataque, descoberta_tecnica, ataque, ataque, expedicao, ataque, ataque, ataque, guerra_fim, expedicao, nova_crenca, guerra_inicio, ataque, novo_lider, ataque, ataque, costume, estagio, ataque, guerra_fim, ataque, fome_fim, descoberta_tecnica
+241	17	135	fome_fim, guerra_inicio, ataque, costume, costume, fome_fim, ataque, cultura, fome_fim, ataque, guerra_fim, renascimento, renascimento, estagio, estudo_do_ceu, costume, novo_lider
+251	9	146	novo_lider, reforma, secularizacao, cultura, secularizacao, fome_fim, descoberta_tecnica, secularizacao, estagio
+261	1	202	fome_fim
+271	13	236	doenca_fim, expedicao, ataque, cultura, descoberta_tecnica, expedicao, cultura, costume, estagio, estudo_do_ceu, descoberta_tecnica, novo_lider, ataque
+281	16	222	estagio, ataque, guerra_inicio, ataque, costume, costume, doenca_fim, costume, expedicao, nova_crenca, fome_fim, fome_fim, fome_fim, fome_fim, ataque, guerra_fim
+291	14	226	novo_lider, reforma, novo_lider, estagio, estudo_do_ceu, cultura, doenca_fim, secularizacao, fome_fim, fome_fim, fome_fim, doenca_fim, costume, reforma

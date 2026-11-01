@@ -138,113 +138,161 @@ Na primavera, morreu Veur, que guiava Koil, aos 51 anos. Veio de longe uma peste
 
 ### Ano 50
 
-Makon, que guiava Peak, morreu de velhice aos 52 anos. Desde a morte de Lopeik, nunca mais tinha rezado. Peak acabou: Tamos, Pelour e Peur foram viver em Koil. Depois de Peak, foi Koil que ergueu paredes de pedra. Em Koil, olharam o chão batido de casas sem ninguém e disseram que Peak tinha sido gente como eles. Ninguém sabia o que tinha acabado com eles. Nos anos 41 a 50 houve duas secas e quatro preces que pareceram atendidas; nasceram 22 crianças e morreram 45 pessoas. No fim do ano 50, 21 pessoas viviam no mundo, todas em Koil.
+A seca voltou, como no ano 38: 20 dias sem chuva, até que o céu se abriu. Em Peak, Tamos pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. Nos anos 41 a 50 houve três secas e cinco preces que pareceram atendidas; nasceram 21 crianças e morreram 44 pessoas. No fim do ano 50, 21 pessoas viviam no mundo: Koil (17) e Peak (4).
 
-*Do ano 51 ao 53, a vida seguiu sem grandes acontecimentos.*
+### Ano 51
+
+As casas de pedra chegaram a Koil, e com elas um templo.
+
+### Ano 52
+
+Na primavera, vieram de além da borda três estranhos, magros e calados: Lomaya, Lour e Malou. Peak os recebeu, e eles ficaram. No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender.
+
+*O ano 53 foi calmo.*
 
 ### Ano 54
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Veik implorou pelo filho. Veur morreu, e daquele dia em diante Veik cuspia no chão quando falavam do Que Levanta. Veik, que guiava Koil, morreu de febre aos 43 anos. Desde a morte de Veur, nunca mais tinha rezado. Maik, que falava pelo Que Levanta em Koil, morreu de febre aos 34 anos. A doença entrou em Koil e matou dez pessoas.
+Na primavera do ano 54, em Koil, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Levanta».
 
 ### Ano 55
 
-Faltou chuva outra vez, a primeira desde o ano 38: 26 dias de céu limpo.
+Kodoela, a desconfiada, viu uma pedra derreter no fogo e virar coisa dura e brilhante. Era o primeiro metal. A terra tremeu. Caíram quatro cabanas. Tamela, Kikos e Lomaya morreram sob os escombros. Fazia muito tempo que Koil não rezava. Diante do que viu, voltou a chamar por «o Que Levanta», e o templo encheu de novo. Depois disso, Peak deixou de chamar o deus de «o Que Risca o Céu» e passou a chamá-la de «a Terra Brava».
 
-*Os anos 56 a 58 passaram em paz.*
+### Ano 56
 
-### Ano 59
+Da terra que ninguém conhece chegaram Mana, Koik e Loya. Para Peak, que já não tinha com quem casar os seus, foi uma bênção. Makon, que guiava Peak, morreu de velhice aos 58 anos. Nunca perdoou o deus pela morte de Lopeik. Peak escolheu Loya para guiar o grupo. Tamos queria o lugar e nunca perdoou.
 
-Em Koil, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «o Que Levanta».
+*Do ano 57 ao 59, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 60
 
-Nos anos 51 a 60 houve quatro secas; nasceram oito crianças e morreram treze pessoas. No fim do ano 60, dezesseis pessoas viviam no mundo, todas em Koil.
+Faltou chuva outra vez, a primeira desde o ano 50: 25 dias de céu limpo. Nos anos 51 a 60 houve duas secas e quatro preces que pareceram atendidas; nasceram vinte crianças e morreram nove pessoas. No fim do ano 60, 38 pessoas viviam no mundo: Koil (22) e Peak (16).
 
-*Do ano 61 ao 65, a vida seguiu sem grandes acontecimentos.*
+### Ano 61
+
+A rixa entre Kuros e Veik rachou Koil. Kuros partiu com os seus, oito pessoas, e fundou Toran na praia. Em Toran, Kou tomou para si o cuidado das preces ao Que Levanta. Tamos tinha rezado: «Terra Brava, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que a Terra Brava tinha ouvido. Toran passou a festejar todo ano o dia da volta da chuva, em honra do Que Levanta.
+
+*Do ano 62 ao 63, a vida seguiu sem grandes acontecimentos.*
+
+### Ano 64
+
+Na primavera do ano 64, morreu Tamos, que falava pela Terra Brava em Peak, aos 52 anos.
+
+### Ano 65
+
+Na primavera, um dia, Dou e Mapeik apareceram na borda do mundo. Não sabiam de onde vinham. Toran lhes deu lugar no fogo.
 
 ### Ano 66
 
-Na primavera do ano 66, Pelour, que falava pelo Que Levanta em Koil, morreu dormindo, aos 53 anos.
+Em Toran, Kou pediu: «Que Levanta, não nos deixes secar.» Quando a chuva voltou, Toran agradeceu ao Que Levanta. Nasceu Matoron, o primeiro de Toran.
 
-*Os anos 67 a 69 passaram em paz.*
+### Ano 67
+
+Na primavera, Kou, que falava pelo Que Levanta em Toran, morreu dormindo, aos 54 anos. No outono, Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+
+### Ano 68
+
+Tamvie, de Toran, casou-se com Kour e foi viver em Koil. Foi o primeiro laço entre os dois povos. No inverno, Dokurela, de Toran, foi viver em Peak com Lour: o primeiro casamento entre os dois povos.
+
+### Ano 69
+
+Na primavera, Mapeik disse ter ouvido o deus de outro jeito: não era «o Que Levanta», era «o Que Risca o Céu». Toran acreditou, e o deus mudou de nome.
 
 ### Ano 70
 
-Nos anos 61 a 70 houve duas secas; nasceram zero crianças e morreram três pessoas. No fim do ano 70, treze pessoas viviam no mundo, todas em Koil.
+Kodoela, a desconfiada, morreu de velhice aos 55 anos. De novo o sol se apagou no meio do dia. Para Koil, o deus já não era «o Que Levanta»: passou a ser «o Olho Escuro». Nos anos 61 a 70 houve duas secas e sete preces que pareceram atendidas; nasceram 24 crianças e morreram sete pessoas. No fim do ano 70, 57 pessoas viviam no mundo: Koil (21), Peak (25) e Toran (11).
 
-*Do ano 71 ao 79, a vida seguiu sem grandes acontecimentos.*
+### Ano 71
+
+Uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Kiveya implorou pela filha. Ve morreu, e daquele dia em diante Kiveya cuspia no chão quando falavam do Que Risca o Céu. A doença entrou em Koil e matou oito pessoas. A febre levou Vios, que falava pelo Que Risca o Céu em Toran. Uma tosse que não passava matou seis pessoas em Toran.
+
+*Entre os anos 72 e 75, nada mudou o rumo do mundo.*
+
+### Ano 76
+
+Koik, que guiava Peak, morreu de repente, aos 42 anos.
+
+### Ano 77
+
+Veik, que guiava Koil, morreu dormindo, aos 66 anos. O sol escureceu outra vez.
+
+### Ano 78
+
+Morreu Kuros, que fundou Toran e o guiava, aos 54 anos.
+
+### Ano 79
+
+Peur tinha rezado: «Manda água, Terra Brava, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Peak duvidou de que a Terra Brava tinha ouvido.
 
 ### Ano 80
 
-No fim do ano 80, 24 pessoas viviam no mundo, todas em Koil.
+Na primavera, Maik, que falava pelo Olho Escuro em Koil, morreu de velhice aos 60 anos. Nunca perdoou o deus pela morte de Pekuron. Nos anos 71 a 80 houve duas secas, nove preces que pareceram atendidas e quatro preces sem resposta; nasceram 44 crianças e morreram 31 pessoas. No fim do ano 80, 70 pessoas viviam no mundo: Koil (15), Peak (45) e Toran (10).
 
-*No ano 81, nada de notável aconteceu.*
+### Ano 81
 
-### Ano 82
+No inverno do ano 81, o metal chegou a Toran, e a forja ficou acesa dia e noite.
 
-No outono, a rixa entre Vion e Kuros rachou Koil. Vion partiu com os seus, quinze pessoas, e fundou Pear na floresta. Pear encontrou as ruínas de Peak: o chão batido de casas sem ninguém. Diziam que tinha sido gente como eles, e que alguma coisa dera errado.
-
-### Ano 83
-
-No verão do ano 83, em Pear nasceu a primeira criança: Lou, filha de Pemaya e Vion.
-
-### Ano 84
-
-Em Pear, Maos pediu: «Que Levanta, leva embora a febre.» A febre passou, e Maos contou a todos que o Que Levanta tinha ouvido. A crônica sabe que foi acaso.
-
-*O ano 85 passou sem nada que a crônica precise guardar.*
-
-### Ano 86
-
-Na primavera do ano 86, Kuros, que guiava Koil, morreu de velhice aos 62 anos. Com Vion à frente, a nova geração de Pear abandonou o costume de queimar os mortos, costume herdado dos avós.
-
-### Ano 87
-
-Jur morreu com 2 anos, de uma febre que ninguém entendeu. Em Pear, Maos tomou para si o cuidado das preces ao Que Levanta. Faltou chuva outra vez, a primeira desde o ano 55: 21 dias de céu limpo. O dia em que a chuva voltou virou festa em Pear: todo ano, celebram a chuva que o Que Levanta mandou.
+*Entre os anos 82 e 87, nada mudou o rumo do mundo.*
 
 ### Ano 88
 
-Em nome do Que Levanta, Maos proibiu casamentos e trocas com Koil. Era vontade de Maos, não do deus. Pear atacou Koil no lago. Pear venceu e levou a comida guardada. Maveur morreu na luta. Foi a primeira vez que gente matou gente no mundo. Depois da derrota, Koil não existia mais: os cinco que sobraram foram levados para Pear.
+Na primavera, Mapeik, o corajoso, morreu dormindo, aos 45 anos. Matoron rezou por Kipeor até a voz acabar. Kipeor morreu mesmo assim, e Matoron nunca mais rezou. Em Toran, os jovens deixaram de lado o costume de queimar os mortos. Era coisa dos velhos, diziam.
 
 ### Ano 89
 
-Pear passou fome por causa da seca por 18 dias, mas ninguém morreu. A fome ensinou: desde então, Pear estoca comida e não come tudo o que colhe. Pear achou um templo de degraus tomado pelo mato, o que restava de Koil. Os velhos diziam que eram parentes antigos, que se perderam. No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender.
+Na primavera do ano 89, Lour não podia mais viver perto de Kimaela. Saiu de Peak com dez pessoas e fundou Zean no morro. Kiveya, a ambiciosa, começou a riscar sinais no barro para lembrar as coisas. Era a escrita. Dokurela passou a falar pela Terra Brava em Zean. Era a primeira a rezar e a última a duvidar.
 
 ### Ano 90
 
-Nos anos 81 a 90 houve duas secas e cinco preces que pareceram atendidas; nasceram nove crianças e morreram cinco pessoas. No fim do ano 90, 28 pessoas viviam no mundo, todas em Pear.
+Em Peak, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 28, só a crônica guarda. Em Zean nasceu a primeira criança: Buzeu, filha de Malou e Pekios. Em Peak, Peur pediu: «Terra Brava, que a chuva volte.» Quando a chuva voltou, Peak agradeceu à Terra Brava. O deus não tinha feito nada. Nos anos 81 a 90 houve sete preces que pareceram atendidas; nasceram 66 crianças e morreram 23 pessoas. No fim do ano 90, 113 pessoas viviam no mundo: Koil (28), Peak (48), Toran (26) e Zean (11).
 
-*Do ano 91 ao 92, a vida seguiu sem grandes acontecimentos.*
+### Ano 91
+
+Peak conheceu a maior fome da sua história. Em 20 dias, morreram 13. Muitas cabanas ficaram vazias. Depois daquela fome, Peak passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. A floresta passou a ser a floresta da fome: Floresta da Fome. Peak atacou Zean no morro. Peak voltou com o que Zean tinha guardado. Na luta morreu Malou. Foi a primeira vez que gente matou gente no mundo. Faltou chuva outra vez, a primeira desde o ano 60: 25 dias de céu limpo.
+
+### Ano 92
+
+Na primavera do ano 92, em Peak, Dos começou a pregar que o deus não era «a Terra Brava». Era «o Que Seca». Em poucos anos, todos rezavam assim. Kiu teve dois de uma vez, Lopeur e Kivios, e todos foram ver.
 
 ### Ano 93
 
-Na primavera, Vion, que fundou Pear e o guiava, morreu dormindo, aos 50 anos. Maloik passou a guiar Pear, mas Maos não aceitou e guardou rancor. No inverno, Tamya deu à luz gêmeos, Selloim e Pekuron. Uns viram bênção; outros, mau sinal.
+No inverno do ano 93, Kiela, a engenhosa, também aprendeu a tirar metal da pedra, como já faziam em Koil. A guerra apressou a ideia.
 
-*Os anos 94 a 96 passaram em paz.*
+### Ano 94
+
+Na primavera do ano 94, Buzeu morreu com 4 anos, de uma febre que ninguém entendeu.
+
+*O ano 95 passou sem nada que a crônica precise guardar.*
+
+### Ano 96
+
+Tamu, de Zean, foi viver em Koil com Tamkour: o primeiro casamento entre os dois povos. Lokina tinha rezado: «Terra Brava, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Zean duvidou de que a Terra Brava tinha ouvido.
 
 ### Ano 97
 
-No outono do ano 97, numa tempestade sobre a floresta, um raio matou Maloik. A família de Maloik nunca perdoou o céu. Nasceu ali um costume: quando o céu escurece, ninguém em Pear sai de casa. Lembram de Maloik. Desde aquele dia, Pear chama a floresta de Floresta do Raio.
+Veio a pior fome que o mundo tinha visto: 21 dias em Peak, e 17 mortos. As crianças foram as primeiras. Foram 20 dias de fome no inverno em Toran, com sete mortos. A fome ensinou: desde então, Toran estoca comida e não come tudo o que colhe. Desde então, Toran chama a praia de Praia da Fome.
 
-*No ano 98, nada de notável aconteceu.*
+### Ano 98
+
+No outono, houve luta no morro: Peak atacou Zean. Zean foi derrotado e perdeu o que tinha guardado. Caíram Mana e Lotamik. Desde então, os de Peak chamam o lugar de Morro da Vitória; os de Zean, de Morro do Luto. Depois da derrota, os jovens de Zean passaram a treinar com lanças. Depois de tantos mortos, Peak e Zean se encontraram no morro e juraram paz. Os de Toran caíram sobre Koil no lago. Koil expulsou os atacantes. Modor e Tamveon morreram na luta.
 
 ### Ano 99
 
-Na primavera, o templo de Pear não aceitou Peur, que chamava o deus de «o Que Julga». Houve gritos, pedras, e os seguidores de Peur foram embora. Com Peur à frente, 30 pessoas fundaram Viur no lago, onde o deus se chama «o Que Julga». Nasceu Rilveim, o primeiro de Viur. Em Viur, o chão batido de casas sem ninguém virou aviso: era o que o deus fazia com quem o desagradava, como fez com Peak. Mau passou a falar pelo Que Julga em Viur. Era a primeira a rezar e a última a duvidar.
+Lour, que fundou Zean e o guiava, morreu de velhice aos 67 anos. Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Morreu o último que tinha visto o ano 49. Em Zean, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Toran atacou Zean no morro. Os cestos de Zean ficaram vazios. Na luta morreram Pekios e Pevion. Para Toran, o morro virou Morro da Vitória.
 
 ### Ano 100
 
-Tamya, de Pear, foi viver em Viur com Lour: o primeiro casamento entre os dois povos. Maos tinha rezado: «Manda água, Que Levanta, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Pear duvidou de que o Que Levanta tinha ouvido. Foi só o tempo, mas quem iria dizer? Nos anos 91 a 100 houve três secas e cinco preces que pareceram atendidas; nasceram 31 crianças e morreram cinco pessoas. No fim do ano 100, 55 pessoas viviam no mundo: Pear (19) e Viur (36).
+O templo de Koil ficou mais forte que o líder. Kiu, que falava pelo Olho Escuro, passou a decidir tudo. Nos anos 91 a 100 houve três secas, seis fomes, quatro batalhas, dezesseis preces que pareceram atendidas e onze preces sem resposta; nasceram 100 crianças e morreram 55 pessoas. No fim do ano 100, 159 pessoas viviam no mundo: Koil (52), Peak (69), Toran (25) e Zean (13).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Pear** vive na floresta, com 19 pessoas, em casas de pedra; nasceu de uma briga em Koil no ano 82; chama o deus de «o Que Levanta»; costumes: faz a festa da chuva (desde o ano 87); guarda tanta comida para o inverno (desde o ano 89); não sai de casa em dia de tempestade (desde o ano 97).
-- **Viur** vive no lago, com 36 pessoas, em casas de pedra; nasceu de um cisma em Pear no ano 99; chama o deus de «o Que Julga»; costumes: faz a festa da chuva (desde o ano 87); guarda tanta comida para o inverno (desde o ano 89); não sai de casa em dia de tempestade (desde o ano 97).
+- **Koil** vive no lago, com 50 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: queima os mortos (desde o ano 49).
+- **Peak** vive na floresta, com 69 pessoas, em casas de pedra; nasceu de uma briga em Koil no ano 23; chama o deus de «o Que Seca»; costumes: queima os mortos (desde o ano 49); guarda tanta comida para o inverno (desde o ano 91).
+- **Toran** vive na praia, com 25 pessoas, e trabalha o metal; nasceu de uma briga em Koil no ano 61; chama o deus de «o Que Risca o Céu»; costumes: faz a festa da chuva (desde o ano 61); guarda tanta comida para o inverno (desde o ano 97); treina os jovens com lanças (desde o ano 98).
+- **Zean** vive no morro, com 12 pessoas, em casas de pedra; nasceu de uma briga em Peak no ano 89; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 98).
 
-Povos que deixaram de existir: Koil e Peak.
+Lugares com nome: Praia da Fome (praia, para Toran), Lago da Vitória (lago, para Koil), Lago do Luto (lago, para Toran), Floresta da Fome (floresta, para Peak), Morro da Vitória (morro, para Peak), Morro do Luto (morro, para Zean) e Morro da Vitória (morro, para Toran).
 
-Lugares com nome: Floresta do Raio (floresta, para Pear).
-
-Em 100 anos nasceram 142 pessoas e morreram 100.
+Em 100 anos nasceram 332 pessoas e morreram 197.

@@ -1,0 +1,30 @@
+1	6	15	inicio, mudanca, mudanca, cultura, mudanca, descoberta
+11	7	25	crenca, mudanca, nova_crenca, mudanca, mudanca, agricultura, descoberta_tecnica
+21	2	31	separacao, costume
+31	1	44	casamento_entre_grupos
+41	10	19	estagio, descoberta_tecnica, profeta, cultura, peste, novo_lider, doenca_fim, costume, doenca_fim, costume
+51	8	38	estagio, estranhos, secularizacao, descoberta_tecnica, terremoto, renascimento, estranhos, novo_lider
+61	8	56	separacao, costume, estranhos, estagio, casamento_entre_grupos, casamento_entre_grupos, profeta, peste
+71	2	69	doenca_fim, doenca_fim
+81	4	110	estagio, reforma, separacao, descoberta_tecnica
+91	16	156	fome_fim, costume, ataque, profeta, descoberta_tecnica, casamento_entre_grupos, fome_fim, fome_fim, costume, ataque, costume, ataque, costume, reforma, ataque, cultura
+101	21	143	ataque, costume, costume, fome_fim, costume, expedicao, nova_crenca, guerra_inicio, ataque, costume, guerra_fim, profeta, terremoto, descoberta_tecnica, costume, ataque, fome_fim, fome_fim, descoberta_tecnica, estagio, ataque
+111	15	157	estagio, estudo_do_ceu, fome_fim, costume, guerra_inicio, ataque, guerra_fim, cultura, fome_fim, cultura, estagio, estudo_do_ceu, fome_fim, estagio, descoberta_tecnica
+121	11	167	cultura, casamento_entre_grupos, descoberta_tecnica, costume, peste, novo_lider, doenca_fim, doenca_fim, doenca_fim, doenca_fim, estagio
+131	8	194	casamento_entre_grupos, descoberta_tecnica, fusao, mito_ruinas, mito_ruinas, mito_ruinas, estagio, estudo_do_ceu
+141	13	207	ataque, costume, separacao, fome_fim, mito_ruinas, ataque, fome_fim, casamento_entre_grupos, descoberta_tecnica, silencio, costume, fome_fim, estagio
+151	8	237	cultura, reforma, secularizacao, expedicao, nova_crenca, expedicao, nova_crenca, novo_lider
+161	22	219	ataque, cultura, guerra_inicio, ataque, fome_fim, silencio, culpado, nova_crenca, costume, costume, fome_fim, fome_fim, terremoto, fome_fim, guerra_fim, ataque, estranhos, profeta, casamento_entre_grupos, estranhos, fome_fim, reforma
+171	19	199	secularizacao, profeta, reforma, cultura, expedicao, ataque, ataque, conquista, mito_ruinas, mito_ruinas, mito_ruinas, ataque, novo_lider, separacao, fome_fim, mito_ruinas, fome_fim, mito_ruinas, casamento_entre_grupos
+181	7	255	casamento_entre_grupos, fome_fim, fome_fim, nova_crenca, costume, nova_crenca, costume
+191	13	214	terremoto, expedicao, fome_fim, fome_fim, expedicao, costume, novo_lider, ataque, secularizacao, novo_lider, doenca_fim, fome_fim, reforma
+201	6	255	novo_lider, doenca_fim, profeta, novo_lider, expedicao, nova_crenca
+211	14	267	expedicao, ataque, guerra_inicio, ataque, nova_crenca, costume, doenca_fim, costume, ataque, guerra_fim, profeta, fome_fim, ataque, expedicao
+221	9	241	expedicao, reforma, fome_fim, fome_fim, fome_fim, casamento_entre_grupos, fome_fim, fome_fim, terremoto
+231	7	232	doenca_fim, reforma, fome_fim, doenca_fim, costume, fome_fim, expedicao
+241	10	240	terremoto, doenca_fim, profeta, expedicao, fome_fim, fome_fim, fome_fim, doenca_fim, nova_crenca, profeta
+251	4	245	expedicao, fome_fim, fome_fim, doenca_fim
+261	7	205	expedicao, secularizacao, novo_lider, fome_fim, fome_fim, fome_fim, fome_fim
+271	12	255	ataque, costume, ataque, costume, fome_fim, doenca_fim, guerra_inicio, ataque, novo_lider, cultura, guerra_fim, secularizacao
+281	3	245	expedicao, fome_fim, expedicao
+291	6	261	expedicao, novo_lider, terremoto, terremoto, fome_fim, doenca_fim

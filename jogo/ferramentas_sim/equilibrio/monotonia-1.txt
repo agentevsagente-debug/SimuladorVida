@@ -1,0 +1,30 @@
+1	7	17	inicio, cultura, mudanca, mudanca, crenca, mudanca, descoberta
+11	7	39	nova_crenca, mudanca, mudanca, mudanca, mudanca, mudanca, agricultura
+21	13	37	separacao, ataque, costume, cultura, fome_fim, costume, costume, guerra_inicio, ataque, nova_crenca, costume, ataque, guerra_fim
+31	5	69	casamento_entre_grupos, descoberta_tecnica, descoberta_tecnica, novo_lider, cultura
+41	7	98	separacao, costume, fome_fim, costume, separacao, casamento_entre_grupos, costume
+51	5	155	casamento_entre_grupos, casamento_entre_grupos, casamento_entre_grupos, fome_fim, costume
+61	21	149	expedicao, nova_crenca, fome_fim, doenca_fim, costume, fome_fim, fome_fim, fome_fim, casamento_entre_grupos, estagio, cultura, edito, ataque, guerra_inicio, ataque, ataque, costume, ataque, ataque, fome_fim, guerra_fim
+71	28	123	terremoto, descoberta_tecnica, costume, estranhos, costume, expedicao, nova_crenca, reforma, novo_lider, fome_fim, fome_fim, estranhos, estagio, expedicao, nova_crenca, costume, edito, ataque, fome_fim, ataque, guerra_inicio, ataque, cultura, edito, estagio, cultura, descoberta_tecnica, ataque
+81	19	169	silencio, nova_crenca, guerra_inicio, ataque, costume, ataque, guerra_fim, ataque, silencio, nova_crenca, silencio, nova_crenca, ataque, costume, ataque, cultura, guerra_fim, cultura, descoberta_tecnica
+91	15	178	estagio, ataque, estagio, reforma, guerra_inicio, ataque, costume, guerra_fim, expedicao, ataque, silencio, nova_crenca, descoberta_tecnica, cultura, descoberta_tecnica
+101	25	201	estagio, estudo_do_ceu, terremoto, renascimento, ataque, guerra_inicio, ataque, guerra_fim, estagio, novo_lider, cultura, fome_fim, reforma, doenca_fim, costume, expedicao, fome_fim, fome_fim, terremoto, descoberta_tecnica, nova_crenca, costume, terremoto, secularizacao, reforma
+111	14	225	cultura, expedicao, expedicao, fome_fim, expedicao, fome_fim, fome_fim, edito, doenca_fim, descoberta_tecnica, ataque, estagio, estudo_do_ceu, secularizacao
+121	21	145	descoberta_tecnica, expedicao, expedicao, fome_fim, descoberta_tecnica, costume, expedicao, fome_fim, fome_fim, fome_fim, expedicao, descoberta_tecnica, doenca_fim, costume, silencio, nova_crenca, fome_fim, fome_fim, descoberta_tecnica, estagio, fome_fim
+131	15	125	estagio, estagio, descoberta_tecnica, peste, doenca_fim, costume, doenca_fim, doenca_fim, cultura, novo_lider, ataque, secularizacao, guerra_inicio, ataque, regressao
+141	8	164	ataque, guerra_fim, regressao, nova_crenca, cultura, cultura, descoberta_tecnica, secularizacao
+151	6	193	fome_fim, estagio, estudo_do_ceu, reforma, fome_fim, ataque
+161	16	228	novo_lider, expedicao, descoberta_tecnica, ataque, expedicao, ataque, estagio, expedicao, guerra_inicio, ataque, cultura, fome_fim, reforma, ataque, expedicao, ataque
+171	18	162	ataque, cultura, expedicao, nova_crenca, fome_fim, ataque, conquista, guerra_fim, mito_ruinas, mito_ruinas, mito_ruinas, fome_fim, novo_lider, fome_fim, fome_fim, fome_fim, doenca_fim, cultura
+181	6	169	cultura, descoberta_tecnica, doenca_fim, ataque, fome_fim, fome_fim
+191	5	235	estagio, separacao, mito_ruinas, novo_lider, casamento_entre_grupos
+201	16	180	reforma, cultura, reforma, expedicao, ataque, casamento_entre_grupos, ataque, fome_fim, fome_fim, cultura, reforma, fome_fim, fome_fim, fome_fim, expedicao, cultura
+211	8	253	fome_fim, expedicao, novo_lider, casamento_entre_grupos, expedicao, ataque, costume, cultura
+221	9	236	fome_fim, fome_fim, costume, expedicao, novo_lider, cultura, fome_fim, ataque, cultura
+231	9	247	terremoto, doenca_fim, expedicao, descoberta_tecnica, doenca_fim, costume, novo_lider, fome_fim, expedicao
+241	7	224	novo_lider, fusao, fome_fim, mito_ruinas, mito_ruinas, mito_ruinas, cultura
+251	7	167	doenca_fim, fome_fim, fome_fim, fome_fim, peste, novo_lider, doenca_fim
+261	1	184	doenca_fim
+271	6	240	separacao, mito_ruinas, terremoto, reforma, casamento_entre_grupos, expedicao
+281	15	272	fome_fim, fome_fim, terremoto, doenca_fim, casamento_entre_grupos, ataque, ataque, costume, guerra_inicio, ataque, ataque, ataque, casamento_entre_grupos, secularizacao, expedicao
+291	24	250	ataque, guerra_fim, guerra_inicio, ataque, ataque, ataque, guerra_fim, reforma, cultura, doenca_fim, costume, ataque, ataque, guerra_inicio, ataque, ataque, ataque, expedicao, guerra_inicio, ataque, ataque, ataque, cultura, regressao
