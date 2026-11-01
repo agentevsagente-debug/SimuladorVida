@@ -17,14 +17,14 @@ func conferir(cond: bool, msg: String) -> void:
 
 func _initialize() -> void:
 	var cmds := preload("res://nucleo/cenario.gd").ler_arquivo("res://ferramentas_sim/cenarios/semente1-intervencoes.txt")
-	var continuo := Mundo.new(1, cmds)
+	var continuo := Mundo.new(1, cmds, Mundo.HORA_INICIAL, true)
 	continuo.avancar_dias(40 * 100)
-	var a := Mundo.new(1, cmds)
+	var a := Mundo.new(1, cmds, Mundo.HORA_INICIAL, true)
 	a.avancar_dias(40 * 37 + 13)
 	for i in 7:
 		a.avancar_hora()
 	a.usar_poder("chuva", 150.0, 0.6)   # um gesto antes de salvar entra no estado salvo
-	continuo = Mundo.new(1, cmds)
+	continuo = Mundo.new(1, cmds, Mundo.HORA_INICIAL, true)
 	continuo.avancar_dias(40 * 37 + 13)
 	for i in 7:
 		continuo.avancar_hora()
@@ -97,7 +97,7 @@ func _estragar(caminho: String, como: String) -> void:
 
 ## Cópias de segurança do mundo salvo: 3 versões anteriores, e o carregar recorre a elas.
 func _testar_copias() -> void:
-	var m := Mundo.new(3)
+	var m := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
 	var estados: Array = []
 	for i in 5:
 		m.avancar_dias(7)
@@ -132,7 +132,7 @@ func _testar_copias() -> void:
 func _testar_um(como: String, esperada: int, estados: Array) -> void:
 	# Refaz os 4 arquivos (principal + 3 cópias) a partir dos estados salvos de novo.
 	_apagar_com_copias(CAMINHO)
-	var m := Mundo.new(3)
+	var m := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
 	var st: Array = []
 	for i in 4:
 		m.avancar_dias(7)
@@ -180,7 +180,7 @@ func _apagar_pasta(pasta: String) -> void:
 ## Salvar numa thread: o arquivo é o mesmo do salvar síncrono, e o passo seguinte espera a
 ## gravação acabar (o arquivo é o retrato de antes do passo).
 func _testar_async() -> void:
-	var m := Mundo.new(4)
+	var m := Mundo.new(4, [], Mundo.HORA_INICIAL, true)
 	m.avancar_dias(40 * 30)
 	Persistencia.salvar(m, CAMINHO)
 	var sinc := FileAccess.get_file_as_string(CAMINHO)

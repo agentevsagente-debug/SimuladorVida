@@ -14,7 +14,7 @@ func conferir(cond: bool, msg: String) -> void:
 
 
 func _initialize() -> void:
-	var m := Mundo.new(1)
+	var m := Mundo.new(1, [], Mundo.HORA_INICIAL, true)
 	m.avancar_dias(5)
 	for i in 14:   # até 14h do dia 6
 		m.avancar_hora()
@@ -99,14 +99,55 @@ func _initialize() -> void:
 		m.preces_abertas()
 	print("consulta completa: %.2f ms (%d pessoas)" % [(Time.get_ticks_usec() - t) / 100000.0, m.populacao()])
 	_batalha_no_meio_do_dia()
+	_mira_dos_poderes()
 	print("%d falhas" % falhas)
 	quit()
+
+
+## D-02 do QA: o sonho (e o raio, e a cura) atinge quem está sob o gesto na tela, no minuto da
+## hora que a tela mostra, e não onde a pessoa estará no fim da hora. E com o id, sempre ela.
+func _mira_dos_poderes() -> void:
+	var tentativas := 0
+	var acertos := 0
+	var perto := 0
+	var pelo_id := 0
+	for s in range(1, 4):
+		var m := Mundo.new(s, [], Mundo.HORA_INICIAL, true)
+		m.avancar_dias(3)
+		for h in [9, 11, 14]:
+			while m.hora() != h:
+				m.avancar_hora()
+			var ro = m.rotina()
+			for q in m.pessoas_visiveis():
+				if q["acao"] == "dormir" or q["crianca"]:
+					continue
+				for minuto in [5.0, 30.0, 55.0]:
+					var x: float = ro.instante(q["id"], h * 60.0 + minuto)["x"]
+					# A mira de usar_poder (sem gesto: o gesto mudaria o mundo no meio da medida).
+					var alvo = m._pessoa_perto(x, minuto)
+					tentativas += 1
+					var a: int = alvo.id if alvo != null else -1
+					if a == q["id"]:
+						acertos += 1
+					if a >= 0 and absf(ro.instante(a, h * 60.0 + minuto)["x"] - x) <= Mundo.ALCANCE_ALVO:
+						perto += 1
+			# O gesto de verdade, uma vez por hora: pelo id e pelo minuto.
+			var q0: Dictionary = m.pessoas_visiveis().filter(func(q): return q["acao"] != "dormir" and not q["crianca"])[0]
+			if m.usar_poder("sonho", 0.0, 0.2, q0["id"]).get("alvo", -1) == q0["id"]:
+				pelo_id += 1
+			var x0: float = m.rotina().instante(q0["id"], h * 60.0 + 50.0)["x"]
+			var r0: Dictionary = m.usar_poder("sonho", x0, 0.2, -1, 50.0)
+			conferir(r0.get("alvo", -1) >= 0, "usar_poder com o minuto acerta alguém (%s)" % r0)
+	print("mira: %d de %d acertam a pessoa no minuto mirado (%d acertam alguém a até 6 px); pelo id, %d" % [acertos, tentativas, perto, pelo_id])
+	conferir(perto == tentativas, "o gesto no x de uma pessoa, no minuto da tela, sempre acerta alguém ali (%d de %d)" % [perto, tentativas])
+	conferir(acertos >= tentativas * 0.9, "e quase sempre ela mesma (%d de %d)" % [acertos, tentativas])
+	conferir(pelo_id == 9, "com o id, sempre ela (%d de 9)" % pelo_id)
 
 
 ## Um ataque às 8h (como o cenário raro da batalha): a cena de guerra entra na mesma hora, já na
 ## consulta seguinte, com gente dos dois povos, e começa meia hora depois do ataque.
 func _batalha_no_meio_do_dia() -> void:
-	var m := Mundo.new(3)
+	var m := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
 	while m.ano() < 60:
 		m.avancar_dias(40)
 	while m.hora() != 8:

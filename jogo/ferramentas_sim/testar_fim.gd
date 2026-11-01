@@ -28,12 +28,13 @@ func _initialize() -> void:
 		_morte_natural(semente)
 	conferir(naturais >= 3, "só %d mundos acabaram pela morte natural do último" % naturais)
 	_morte_no_meio_do_dia(4)
+	_raio_no_ultimo(5)
 	print("%d falhas" % falhas)
 	quit(1 if falhas > 0 else 0)
 
 
 func _morte_natural(semente: int) -> void:
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	m.avancar_dias(Mundo.DIAS_ANO * 30)
 	var vivos: Array = []
 	for g in m.grupos_vivos():
@@ -84,7 +85,7 @@ func _morte_natural(semente: int) -> void:
 
 
 func _morte_no_meio_do_dia(semente: int) -> void:
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	m.avancar_dias(Mundo.DIAS_ANO * 10)
 	while m.hora() != 14:
 		m.avancar_hora()
@@ -125,3 +126,24 @@ func _conferir_mundo_vazio(m, nome: String) -> void:
 	conferir(r["ok"] and m.era == 2 and m.populacao() > 0 and not m.fim_do_mundo, "%s: criar_povo: %s" % [nome, r])
 	m.avancar_dias(Mundo.DIAS_ANO)
 	conferir(m.populacao() > 0, "%s: o povo novo não viveu um ano" % nome)
+
+
+## D-03 do QA: às 10h, o raio de milagre mata o último; o fim vem logo depois do gesto, sem
+## esperar o passo, e o próximo gesto sobre o povo recusa.
+func _raio_no_ultimo(semente: int) -> void:
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
+	m.avancar_dias(Mundo.DIAS_ANO * 5)
+	while m.hora() != 10:
+		m.avancar_hora()
+	var vivos: Array = []
+	for g in m.grupos_vivos():
+		for id in g.membros:
+			vivos.append(id)
+	for id in vivos.slice(1):
+		m._morrer(m.pessoas[id], "doenca")
+	var r: Dictionary = m.usar_poder("raio", 0.0, 0.95, vivos[0])
+	conferir(r.get("alvo", -1) == vivos[0] and m.populacao() == 0, "o raio no último não o matou: %s" % r)
+	conferir(m.fim_do_mundo, "o raio matou o último, e o fim não veio logo depois do gesto")
+	conferir(not m.usar_poder("chuva", 200.0, 0.8)["ok"], "depois do raio no último, a chuva ainda é aceita")
+	print("  raio no último às 10h: fim do mundo logo depois do gesto")
+	_conferir_mundo_vazio(m, "raio no último")

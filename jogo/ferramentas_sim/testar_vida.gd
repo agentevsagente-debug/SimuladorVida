@@ -57,7 +57,7 @@ func _initialize() -> void:
 
 ## As 24 horas de um dia: para cada uma, o que se vê e o que falha nas metas.
 func _horas(semente: int, dia: int) -> Array:
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	# Começa a olhar na tarde anterior: a madrugada passa pela troca de rotina, como no jogo.
 	while m.passo < dia * 24 - 12:
 		m.avancar_hora()

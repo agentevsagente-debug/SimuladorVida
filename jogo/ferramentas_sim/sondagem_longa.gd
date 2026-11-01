@@ -36,7 +36,7 @@ func _initialize() -> void:
 	for i in range(3, args.size()):
 		var semente := int(args[i])
 		var cmds: Array = [] if cenario == "-" else Cenario.ler_arquivo(cenario)
-		var m := Mundo.new(semente, cmds)
+		var m := Mundo.new(semente, cmds, Mundo.HORA_INICIAL, true)
 		var linha := "semente %3d:" % semente
 		var t0 := Time.get_ticks_usec()
 		var max_ano_dt := 0.0

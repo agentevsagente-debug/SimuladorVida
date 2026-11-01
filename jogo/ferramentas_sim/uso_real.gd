@@ -19,7 +19,7 @@ const DIAS := ["seg", "ter", "qua", "qui", "sex"]
 func _initialize() -> void:
 	var semente := int(OS.get_cmdline_user_args()[0])
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(PASTA))
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	var linhas: PackedStringArray = ["# Uso real: semente %d, 4 semanas" % semente, "",
 		"| Semana | Dia | Ano (dia) | Chamados | Notas | Do mundo (sem os gestos) | Preces | Gestos | Estágio | Nascimentos | Mortes com nome | O resumo da ausência que abriu o dia (o começo) |",
 		"|---|---|---|---|---|---|---|---|---|---|---|---|"]

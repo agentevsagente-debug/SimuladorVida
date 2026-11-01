@@ -58,7 +58,7 @@ const COPIAS := Arquivo.COPIAS
 ## estante vão para ela.
 static func salvar(m, caminho: String = CAMINHO_PADRAO) -> bool:
 	m._esperar_threads()
-	_preparar(m)
+	_preparar(m, caminho)
 	var plano := _plano_dos_antigos(m, caminho)
 	if plano["regravar"] and not _gravar_antigos(m, caminho, m._arquivo.conteudo(), plano["no_arquivo"]):
 		return false
@@ -100,7 +100,7 @@ static func _gravar_antigos(m, caminho: String, conteudo: PackedByteArray, n: in
 ## quando ela termina (veja `terminar_salvamento`).
 static func salvar_async(m, caminho: String = CAMINHO_PADRAO) -> void:
 	m._esperar_threads()
-	_preparar(m)
+	_preparar(m, caminho)
 	var g := Gravacao.new()
 	g.mundo = m
 	g.retrato = _retrato(m)
@@ -150,11 +150,11 @@ class Gravacao:
 			and Arquivo.gravar_com_copias(caminho, persistencia._texto(retrato))
 
 
-static func _preparar(m) -> void:
+static func _preparar(m, caminho: String) -> void:
 	m.salvo_em = int(Time.get_unix_time_from_system())
 	for livro in m.livros:
 		if not livro["na_estante"]:
-			Estante.guardar(livro)
+			Estante.guardar(livro, pasta_estante(caminho))
 			livro["na_estante"] = true
 
 
@@ -165,13 +165,22 @@ static func _texto(d: Dictionary) -> String:
 	return CABECALHO.trim_suffix("\n") + SOMA + corpo.md5_text() + "\n" + corpo
 
 
+## A estante dos livros de um mundo salvo. Só o mundo do jogo (CAMINHO_PADRAO) usa a estante
+## do jogador (user://estante); qualquer outro caminho tem a sua, ao lado do arquivo
+## (user://testes/a.txt -> user://testes/a.estante). Assim, nenhum teste escreve na estante real.
+static func pasta_estante(caminho: String = CAMINHO_PADRAO) -> String:
+	if caminho == CAMINHO_PADRAO:
+		return Estante.PASTA_PADRAO
+	return caminho.get_basename() + ".estante"
+
+
 ## Abandona o mundo: fecha a crônica da era como livro, guarda na estante e apaga o mundo salvo.
 ## A estante fica. Depois disso, a apresentação cria outro mundo com Mundo.new(semente).
 static func abandonar(m, caminho: String = CAMINHO_PADRAO) -> Dictionary:
 	var livro: Dictionary = m.abandonar()
 	for l in m.livros:
 		if not l["na_estante"]:
-			Estante.guardar(l)
+			Estante.guardar(l, pasta_estante(caminho))
 			l["na_estante"] = true
 	# O mundo abandonado não volta: vão também as cópias de segurança dele, e o arquivo dos
 	# antigos com as cópias dele.

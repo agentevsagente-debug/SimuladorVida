@@ -13,7 +13,7 @@ func _initialize() -> void:
 	if sementes.is_empty():
 		sementes = [1, 2, 3]
 	for s in sementes:
-		var m := Mundo.new(s)
+		var m := Mundo.new(s, [], Mundo.HORA_INICIAL, true)
 		var t0 := Time.get_ticks_usec()
 		var linha := "semente %d:" % s
 		for dec in 10:

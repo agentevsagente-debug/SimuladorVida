@@ -17,7 +17,7 @@ func _initialize() -> void:
 	var prefixo: String = args[0] if not args.is_empty() else ""
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(PASTA))
 	# Extinção, e a era nova nas ruínas.
-	var m := Mundo.new(4)
+	var m := Mundo.new(4, [], Mundo.HORA_INICIAL, true)
 	while m.ano() < 160:
 		m.avancar_dias(Mundo.DIAS_ANO)
 	var k := 0
@@ -39,7 +39,7 @@ func _initialize() -> void:
 	var l: Dictionary = m.abandonar()
 	_gravar(prefixo + "era-nova.md", l["texto"])
 	# Abandono.
-	var a := Mundo.new(5)
+	var a := Mundo.new(5, [], Mundo.HORA_INICIAL, true)
 	while a.ano() < 200:
 		a.avancar_dias(Mundo.DIAS_ANO)
 	_gravar(prefixo + "abandono.md", a.abandonar()["texto"])

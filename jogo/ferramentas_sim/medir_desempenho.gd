@@ -35,7 +35,7 @@ func _initialize() -> void:
 func _gerar() -> void:
 	var melhor := 0
 	for semente in [1, 2, 3, 4, 7, 9]:
-		var m := Mundo.new(semente)
+		var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 		for a in 300:
 			m.avancar_dias(Mundo.DIAS_ANO)
 			var est6 := false

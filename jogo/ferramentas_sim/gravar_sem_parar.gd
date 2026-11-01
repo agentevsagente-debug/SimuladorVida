@@ -9,7 +9,7 @@ const Persistencia = preload("res://nucleo/persistencia.gd")
 
 func _initialize() -> void:
 	var caminho: String = OS.get_cmdline_user_args()[0]
-	var m := Mundo.new(2)
+	var m := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
 	m.avancar_dias(40 * 60)
 	print("PRONTO")
 	for i in 400:

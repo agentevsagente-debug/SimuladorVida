@@ -31,7 +31,7 @@ func _initialize() -> void:
 
 
 func _rodar(semente: int, modo: String) -> void:
-	var m := Mundo.new(semente)
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
 	while m.hora() != 12:
 		m.avancar_hora()
 	var visto := 0
