@@ -16,6 +16,7 @@ const PECAS := {
 	"celeiro": {2: "estagio2/celeiro"},
 	"forja": {4: "estagio4/forja"},
 	"arquivo": {5: "estagio5/biblioteca"},
+	"estela": {5: "estagio5/estela"},
 	"moinho": {6: "estagio6/moinho_4q"},
 	"muralha": {6: "estagio6/muralha_torre"},
 	"barco": {6: "estagio6/barco_2q"},

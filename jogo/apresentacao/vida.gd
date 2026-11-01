@@ -511,6 +511,11 @@ func _objetos_de_cena(r: Array, relogio: float) -> void:
 ## Objetos do cotidiano: a panela ou o espeto diante de quem cozinha, e as
 ## rodas d'água dos canais (paradas e congeladas no inverno, pela própria arte).
 func _objetos_do_cotidiano(r: Array, relogio: float) -> void:
+	for e in vista.estandartes:  # a bandeira do povo, ao vento
+		var est := _objeto(e.folha, 4, int(e.x), int(e.base), 0)
+		est.quadro = int(relogio * 1.3 + e.x) % 2
+		est.fogo = vista.fogo_mais_perto(float(e.x))
+		objetos.append(est)
 	for roda in vista.rodas:
 		var o := _objeto("estagio6/roda_dagua_4q", 16, roundi(roda.x) - 8, int(roda.base) + 1, 0)
 		o.quadro = 0 if sim.ritmo == Simulacao.Ritmo.PAUSA else int(relogio * 4.0) % 4
