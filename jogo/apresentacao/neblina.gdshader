@@ -6,12 +6,13 @@ uniform float forca = 0.0;     // 0..1
 uniform vec3 cor = vec3(0.725, 0.867, 0.863);
 uniform float deriva = 0.0;    // deslocamento horizontal em pixels
 uniform float altura = 118.0;  // linha mais densa
-uniform vec2 origem = vec2(0.0, 16.0);
+uniform vec2 origem = vec2(0.0, 18.0);
+uniform float zoom = 1.0;
 
 varying vec2 pos;
 
 void vertex() {
-	pos = (MODEL_MATRIX * vec4(VERTEX, 0.0, 1.0)).xy - origem;
+	pos = ((MODEL_MATRIX * vec4(VERTEX, 0.0, 1.0)).xy - origem) / zoom;
 }
 
 float bayer(ivec2 p) {

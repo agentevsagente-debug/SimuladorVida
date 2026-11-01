@@ -6,6 +6,8 @@ config_version=5
 
 config/name="Simulador de vida"
 run/main_scene="res://principal.tscn"
+config/icon="res://arte/interface/icone_jogo_256.png"
+config/windows_native_icon="res://arte/interface/icone_jogo.ico"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=30
 run/low_processor_mode=true
@@ -20,9 +22,9 @@ driver/driver="Dummy"
 [display]
 
 window/size/viewport_width=480
-window/size/viewport_height=176
+window/size/viewport_height=178
 window/size/window_width_override=960
-window/size/window_height_override=352
+window/size/window_height_override=356
 window/size/resizable=false
 window/size/borderless=true
 window/size/always_on_top=true

@@ -1,6 +1,7 @@
 extends Node
 ## Atmosfera feita por código: neblina, fumaça e faíscas das fogueiras,
-## vagalumes, chuva com respingos, raios e o clarão que eles fazem.
+## vagalumes, chuva com respingos, raios e o clarão que eles fazem, e os
+## efeitos dos 6 poderes.
 ## A vista chama avancar() a cada quadro visível; tudo usa um sorteio próprio,
 ## nunca o do núcleo.
 
@@ -11,6 +12,8 @@ const DIA := 0
 const ENTARDECER := 1
 const NOITE := 2
 const CLARAO := 0.09  # segundos de céu claro num raio
+## Força visual de cada grau do poder.
+const FORCA := {"sinal": 0.5, "milagre": 1.0, "imposicao": 1.5}
 
 var vista: Node2D
 var fosco: Efeitos      # passa pela tabela de noite
@@ -28,6 +31,8 @@ var _espera_faisca := 0.0
 var _espera_raio := 1.0
 var _clarao := 0.0
 var _nuvens_em := Vector2i(-1, -1)
+var _chuva_divina := Vector2i(-1, -1)
+var _chuva_divina_resta := 0.0
 
 
 ## `antes_de` é o nó que fica logo acima da neblina (o primeiro plano).
@@ -46,6 +51,58 @@ func criar(p_vista: Node2D, material_fosco: Material, antes_de: Node) -> void:
 	vista.add_child(fosco)
 	luminoso = Efeitos.new()
 	vista.add_child(luminoso)
+
+
+func definir_camera(origem: Vector2, zoom: float) -> void:
+	_mat_neblina.set_shader_parameter("origem", origem)
+	_mat_neblina.set_shader_parameter("zoom", zoom)
+
+
+## Efeito visual de um poder usado em x. `alvo` é o x de quem foi atingido (raio,
+## sonho), ou -1. No modo discreto, fogo e raio não mostram chamas nem impacto.
+func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool) -> void:
+	var f: float = FORCA.get(grau, 0.5)
+	var chao: int = vista.chao(int(x))
+	match tipo:
+		"chuva_divina":
+			var meia := int(30.0 + 30.0 * f)
+			_chuva_divina = Vector2i(maxi(0, int(x) - meia), mini(479, int(x) + meia))
+			_chuva_divina_resta = 4.0 + 8.0 * f
+		"raio_divino":
+			if discreto:
+				_clarao = CLARAO
+			else:
+				raio(alvo if alvo >= 0.0 else x)
+		"fogo_divino":
+			var n := int(2 + 4 * f)
+			for i in n:
+				var px := x + _rng.randf_range(-18.0, 18.0) * f
+				var c: int = vista.chao(int(px))
+				if not discreto:
+					luminoso.emitir("chamas_4q", 16, 4, Vector2(px, c + 1), Vector2.ZERO,
+						_rng.randf_range(3.0, 6.0) * f, 8.0, _rng.randi_range(0, 3))
+				luminoso.emitir("brasas_4q", 8, 4, Vector2(px, c + 1), Vector2.ZERO, 9.0, 3.0, i)
+				fosco.emitir("fumaca_6q", 16, 6, Vector2(px, c - 10), Vector2(2.0, -8.0), 3.5)
+		"fartura_divina":
+			for i in int(3 + 3 * f):
+				var px := x + _rng.randf_range(-20.0, 20.0)
+				luminoso.emitir("fartura_aura_4q", 16, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
+					3.0 + 2.0 * f, 6.0, i)
+			for i in int(8 * f + 4):
+				var px := x + _rng.randf_range(-24.0, 24.0)
+				luminoso.emitir("fartura_brilho_4q", 8, 4, Vector2(px, vista.chao(int(px)) - _rng.randf_range(0, 6)),
+					Vector2(0, -6), _rng.randf_range(1.5, 3.0), 6.0, i)
+		"terra_erguida":
+			fosco.emitir("terra_subindo_4q", 32, 4, Vector2(x, chao + 1), Vector2.ZERO, 1.4)
+			fosco.emitir("poeira_4q", 16, 4, Vector2(x - 12, chao + 1), Vector2(-4, 0), 0.9)
+			fosco.emitir("poeira_4q", 16, 4, Vector2(x + 12, chao + 1), Vector2(4, 0), 0.9)
+		"sonho":
+			var px := alvo if alvo >= 0.0 else x
+			var c: int = vista.chao(int(px))
+			luminoso.emitir("sonho_4q", 16, 4, Vector2(px, c - 26), Vector2(0, 7), 2.2, 4.0)
+			for i in int(4 * f + 3):
+				luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(px + _rng.randf_range(-10, 10), c - _rng.randf_range(8, 30)),
+					Vector2(_rng.randf_range(-2, 2), -3), _rng.randf_range(1.5, 3.0), 5.0, i)
 
 
 func em_clarao() -> bool:
@@ -129,6 +186,12 @@ func _chuva(delta: float, clima: Dictionary) -> void:
 	var tempestade: Dictionary = clima.get("tempestade", {})
 	if faixa.x < 0 and not tempestade.is_empty():
 		faixa = Vector2i(int(tempestade["x_ini"]), int(tempestade["x_fim"]))
+	if _chuva_divina_resta > 0.0:
+		_chuva_divina_resta -= delta
+		if faixa.x < 0:
+			faixa = _chuva_divina
+	elif _chuva_divina.x >= 0:
+		_chuva_divina = Vector2i(-1, -1)
 	if faixa != _nuvens_em:
 		fosco.limpar("nuvem_chuva_2q")
 		_nuvens_em = faixa

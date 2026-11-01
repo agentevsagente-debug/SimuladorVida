@@ -39,7 +39,8 @@ uniform sampler2D luz : filter_nearest, repeat_disable;        // 128 × 80
 uniform sampler2D halo : filter_nearest, repeat_disable;       // 128 × 80
 uniform vec2 fogos[4];   // canto do mapa de luz de cada fogueira (já com −56, −32)
 uniform int n_fogos = 0;
-uniform vec2 origem = vec2(0.0, 16.0);  // onde a vista começa na tela base
+uniform vec2 origem = vec2(0.0, 18.0);  // onde a vista começa na tela base
+uniform float zoom = 1.0;              // a vista aproximada desenha cada pixel do mundo em zoom × zoom
 uniform int onda = 0;    // fase da ondulação do reflexo (0..3)
 uniform float ondulacao = 0.0;  // 0 = reflexo parado (testes e tempo congelado)
 // Trocas das pessoas (habitantes/trocas.json): o modulate traz no canal b o
@@ -52,7 +53,7 @@ varying vec2 pos;
 varying vec4 info;
 
 void vertex() {
-	pos = (MODEL_MATRIX * vec4(VERTEX, 0.0, 1.0)).xy - origem;
+	pos = ((MODEL_MATRIX * vec4(VERTEX, 0.0, 1.0)).xy - origem) / zoom;
 	info = COLOR;
 }
 
