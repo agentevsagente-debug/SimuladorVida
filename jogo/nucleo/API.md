@@ -556,10 +556,13 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`), 
 - **Um mundo salvo antes da versão 3** abre normalmente. No primeiro passo das 3h depois de carregar, ele arquiva de uma vez tudo o que já passou de 300 anos: um passo de ~0,6 s com 1000 anos de história, uma vez só.
 
 **A gravação é segura:** o núcleo grava num arquivo `.novo`, confere o que gravou e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
+- **Disco cheio:** se o `.novo` não pode ser gravado inteiro, `salvar()` devolve false (e `salvar_async` deixa `mundo.ultimo_salvamento_ok` em false), e o mundo salvo de antes e as cópias ficam como estavam. Cabe à apresentação avisar o jogador.
+- **A soma:** a primeira linha do `mundo.txt` leva a soma md5 do resto (` Soma md5: <hex>`). Um byte trocado no disco, que ainda daria um mundo legível mas errado, é pego na leitura, e o mundo volta de uma cópia. Os mundos salvos antes da soma abrem normalmente.
 
 **Cópias de segurança:** a cada salvamento bem-sucedido, as 3 versões anteriores ficam guardadas, rodando: `mundo.1.txt` é a anterior, `mundo.2.txt` a de antes, `mundo.3.txt` a mais velha.
-- Se o `mundo.txt` estiver estragado ou ilegível (cortado, vazio, com lixo, sem alguma parte), `carregar()` tenta as cópias, da mais nova para a mais velha. O mundo que voltou de uma cópia traz `mundo.recuperado_de` com o caminho dela (vazio quando veio do arquivo certo). Se nenhuma serve, devolve null.
-- `carregar_e_avancar()` conta isso no retorno: `ausencia.recuperado_de`, e o `relato` começa com "*O mundo salvo estava estragado. Ele voltou da cópia de segurança de <data>, e o que aconteceu depois dela se perdeu.*"
+- Se o `mundo.txt` estiver estragado, ilegível ou de uma versão que o núcleo não lê (cortado, vazio, com lixo, sem alguma parte, com a soma errada, de versão mais nova), ou se faltar, `carregar()` tenta o `mundo.txt.novo` (uma gravação que parou depois de girar as cópias e antes de trocar o arquivo: é a mais recente, inteira) e depois as cópias, da mais nova para a mais velha. O mundo que voltou de uma cópia traz `mundo.recuperado_de` com o caminho dela (vazio quando veio do arquivo certo). Se nenhuma serve, devolve null.
+- `carregar_e_avancar()` conta isso no retorno: `ausencia.recuperado_de`, e o `relato` começa com "*O mundo salvo estava estragado. Ele voltou da cópia de segurança de <data>, e o que aconteceu depois dela se perdeu.*" Quando veio do `.novo`, nada se perdeu: `recuperado_de` vem preenchido, mas o relato não traz o aviso.
+- **O relógio do sistema:** a ausência é `agora - salvo_em`, entre 0 e o teto de 1 ano. Relógio para trás (até 1970) dá ausência 0; relógio pulando anos (até 2106) dá o teto. O núcleo não sabe distinguir o relógio errado do tempo de verdade: se o jogador salva com o relógio atrasado e depois o acerta, a próxima ausência conta o salto, até o teto.
 - `existe()` também vale quando só há cópias.
 - `abandonar()` apaga o mundo e as cópias dele, e o arquivo dos antigos com as cópias dele.
 
@@ -617,6 +620,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 |---|---|
 | `regressao.gd` | Primeiro, mede o desempenho com a população máxima (veja `desempenho.gd`): nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms. Depois, roda as sementes 1 a 5 e o cenário de intervenções por 100 anos. Cada uma roda duas vezes e precisa dar a mesma crônica. Também salva e carrega a semente 1 no meio. Grava as crônicas em `cronicas/` e sai com código 1 se algo falhar. |
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
+| `testar_robustez.gd` | O mundo salvo estragado de 17 jeitos (cortado em 4 pontos, vazio, só o cabeçalho, lixo binário, de versão mais nova, 1 a 8 bytes trocados, apagado), as cópias estragadas, o mundo salvo antes da soma; o relógio para trás e pulando anos (de 1970 a 2106); o disco cheio ao salvar e a troca interrompida. Em todos, o mundo carrega (com `recuperado_de` quando não veio do principal), roda e a ausência fica entre 0 e 1 ano. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido), a estante (índice e livros) e o arquivo dos antigos (cortado, ausente; abandonar apaga ele também). |
 | `testar_antigos.gd` | O arquivo dos antigos não muda o mundo: a mesma semente sem arquivar, arquivando, e salva e carregada a cada 50 anos (também entre as fatias da virada), comparando crônica, sorteio, passo, eventos, população e livros (`-- <semente> <anos> [nenhum\|caprichoso] [ano_do_fim]`). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
