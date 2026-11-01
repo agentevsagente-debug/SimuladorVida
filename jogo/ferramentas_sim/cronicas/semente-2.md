@@ -26,17 +26,17 @@ Aru, a curiosa, notou que as sementes jogadas perto do acampamento brotavam. Com
 
 ### Ano 5
 
-Veio uma seca de 25 dias. O lago encolheu e a mata secou.
+A chuva parou de cair. A seca durou 25 dias, e os riachos viraram pedra.
 
 ### Ano 6
 
-Na primavera, Esar deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Esar passou fome no inverno por 5 dias, mas ninguém morreu.
+Com fome, Esar levantou acampamento na floresta e foi buscar comida na praia. Esar passou fome no inverno por 5 dias, mas ninguém morreu.
 
 *O ano 7 foi calmo.*
 
 ### Ano 8
 
-Kaarel, que guiava Esar, morreu dormindo, aos 60 anos. Quando Kaarel morreu, Esar o enterrou sob uma pedra. Desde então, os mortos de Esar vão para a terra. Esar passou a ser guiado por Aru.
+Na primavera, Kaarel, que guiava Esar, morreu de velhice aos 60 anos. Quando Kaarel morreu, Esar o enterrou sob uma pedra. Desde então, os mortos de Esar vão para a terra. Aru passou a guiar Esar.
 
 *O ano 9 foi calmo.*
 
@@ -46,15 +46,15 @@ Nos anos 1 a 10 houve quatro fomes; nasceram sete crianças e morreram duas pess
 
 ### Ano 11
 
-No inverno, Kurkao disse que alguém, lá em cima, segurava a comida e a chuva. Esar passou a chamá-lo de «o Que Nega». Assim nasceu a primeira fé. Kurkao foi o primeiro de Esar a rezar em voz alta: «Que Nega, dá-nos o que comer.»
+Kurkao disse que alguém, lá em cima, segurava a comida e a chuva. Esar passou a chamá-lo de «o Que Nega». Foi a primeira crença do mundo. Kurkao foi o primeiro de Esar a rezar em voz alta: «Que Nega, dá-nos o que comer.»
 
 ### Ano 12
 
-A comida voltou, e Esar deu graças ao Que Nega. O deus nada fez: o crédito era de graça. Desde então, Esar acredita que o Que Nega escuta as preces. Em Esar, Demya pediu: «Cura Gaut, Que Nega. Ele é tão pequeno.» A febre passou, e Demya contou a todos que o Que Nega tinha ouvido. No outono, Kurkao passou a falar pelo Que Nega em Esar. Era o primeiro a rezar e o último a duvidar.
+A fome passou, e Esar viu nisso obra do Que Nega. O deus nada fez: o crédito era de graça. Em Esar, firmou-se a certeza de que o Que Nega ouve quem pede. Em Esar, Demya pediu: «Cura Gaut, Que Nega. Ele é tão pequeno.» A febre passou, e Demya contou a todos que o Que Nega tinha ouvido. No outono, Kurkao passou a falar pelo Que Nega em Esar. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 13
 
-Na primavera, Aru, que fundou Esar e o guiava, morreu de velhice aos 64 anos. Ela sabia plantar.
+Aru, que fundou Esar e o guiava, morreu de velhice aos 64 anos. Ela sabia plantar.
 
 *No ano 14, nada de notável aconteceu.*
 
@@ -62,37 +62,37 @@ Na primavera, Aru, que fundou Esar e o guiava, morreu de velhice aos 64 anos. El
 
 ### Ano 15
 
-No inverno, nas terras da praia, Esar plantou suas primeiras roças. Já não precisava andar atrás de comida.
+No inverno do ano 15, nas terras da praia, Esar plantou suas primeiras roças. Já não precisava andar atrás de comida.
 
 *O ano 16 passou sem nada que a crônica precise guardar.*
 
 ### Ano 17
 
-Um raio caiu na praia durante a tempestade e matou Gao. Logo Gao, que tanto rezava. Os devotos de Esar não viram castigo: para eles, o Que Nega chamou Gao para perto. Nasceu ali a lembrança de Gao como santo. Nasceu ali um costume: quando o céu escurece, ninguém em Esar sai de casa. Lembram de Gao. Desde aquele dia, Esar chama a praia de Praia do Raio.
+A tempestade trouxe raios para a praia. Um deles acertou Gao. Gao era dos que mais rezavam, e Esar ficou sem entender. Os devotos de Esar não viram castigo: para eles, o Que Nega chamou Gao para perto. Nasceu ali a lembrança de Gao como santo. Nasceu ali um costume: quando o céu escurece, ninguém em Esar sai de casa. Lembram de Gao. Desde aquele dia, Esar chama a praia de Praia do Raio.
 
 *Do ano 18 ao 19, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 20
 
-Na primavera, uma doença nova atravessou o mundo: febre, manchas e tosse, de povo em povo. Demya rezou por Esel até a voz acabar. Esel morreu mesmo assim, e Demya nunca mais rezou. Kurkao, que falava pelo Que Nega em Esar, morreu de febre aos 48 anos. Foi quem deu ao deus o nome de «o Que Nega». A doença entrou em Esar e matou catorze pessoas. Restavam só cinco pessoas no mundo inteiro. Nos anos 11 a 20 houve quatro fomes e seis preces que pareceram atendidas; nasceram quatro crianças e morreram dezesseis pessoas. No fim do ano 20, cinco pessoas viviam no mundo, todas em Esar.
+Na primavera do ano 20, veio de longe uma peste. Entrou em todos os povos ao mesmo tempo, e não havia casa sem doente. Demya rezou por Esel até a voz acabar. Esel morreu mesmo assim, e Demya nunca mais rezou. Kurkao, que falava pelo Que Nega em Esar, morreu de febre aos 48 anos. Foi quem deu ao deus o nome de «o Que Nega». A doença entrou em Esar e matou catorze pessoas. O mundo encolheu até caber em volta de uma fogueira: restavam cinco pessoas. Nos anos 11 a 20 houve quatro fomes e seis preces que pareceram atendidas; nasceram quatro crianças e morreram dezesseis pessoas. No fim do ano 20, cinco pessoas viviam no mundo, todas em Esar.
 
 *O ano 21 foi calmo.*
 
 ### Ano 22
 
-Da terra que ninguém conhece chegaram Arkurut, Doena e Magao. Para Esar, que já não tinha com quem casar os seus, foi uma bênção. Demya tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada. Esar passou a festejar todo ano o dia da volta da chuva, em honra do Que Nega.
+Vieram de além da borda três estranhos, magros e calados: Arkurut, Doena e Magao. Esar os recebeu, e eles ficaram. Demya tinha rezado: «Que Nega, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Nega. A crônica sabe que foi acaso. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Nega mandou.
 
 *Do ano 23 ao 26, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 27
 
-No outono, o chão tremeu sem aviso. Caíram duas cabanas. Maena morreu sob os escombros.
+Houve um tremor de terra. Caíram duas cabanas. Maena morreu sob os escombros.
 
 *O ano 28 foi calmo.*
 
 ### Ano 29
 
-A seca voltou, como no ano 5: 24 dias sem chuva, até que o céu se abriu.
+De novo a chuva sumiu, como no ano 5. Foram 24 dias de seca.
 
 ### Ano 30
 
@@ -106,7 +106,7 @@ Doena, que falava pelo Que Nega em Esar, morreu de repente, aos 28 anos.
 
 ### Ano 33
 
-Em Esar, Demya pediu: «Manda água, Que Nega, que as crianças têm sede.» Quando a chuva voltou, Esar agradeceu ao Que Nega.
+Em Esar, Demya pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido.
 
 *Os anos 34 a 37 passaram em paz.*
 
@@ -124,13 +124,13 @@ Nos anos 31 a 40 houve duas secas e três preces que pareceram atendidas; nascer
 
 ### Ano 45
 
-Gaut tinha rezado: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido.
+Gaut tinha rezado: «Manda água, Que Nega, que as crianças têm sede.» Quando a chuva voltou, Esar agradeceu ao Que Nega.
 
 *O ano 46 foi calmo.*
 
 ### Ano 47
 
-Cansado de um líder que mandava sozinho, Esar passou a decidir em conselho. Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
+Na primavera do ano 47, cansado de um líder que mandava sozinho, Esar passou a decidir em conselho. Uma estrela de cauda cruzou o céu por 14 noites. Ninguém dormia direito.
 
 *Os anos 48 a 49 passaram em paz.*
 
@@ -148,17 +148,17 @@ Na primavera, Dout, que guiava Esar, morreu dormindo, aos 56 anos.
 
 ### Ano 55
 
-Em Esar, Gaut pediu: «Que Nega, não nos deixes secar.» Quando a chuva voltou, Esar agradeceu ao Que Nega.
+Em Esar, Gaut pediu: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Nega tinha ouvido.
 
 *No ano 56, nada de notável aconteceu.*
 
 ### Ano 57
 
-No inverno do ano 57, a terra tremeu. Caíram duas cabanas. Depois disso, Esar deixou de chamar o deus de «o Que Nega» e passou a chamá-lo de «o Que Sacode».
+Houve um tremor de terra. Caíram duas cabanas. Para Esar, o deus já não era «o Que Nega»: passou a ser «o Que Sacode».
 
 ### Ano 58
 
-No verão, Gaut, o engenhoso, descobriu como empilhar pedras cortadas sem que caíssem.
+Gaut, o engenhoso, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.
 
 *O ano 59 foi calmo.*
 
@@ -172,29 +172,29 @@ Esar passou fome por causa da seca por 24 dias, e cinco pessoas morreram. A fome
 
 ### Ano 62
 
-Numa tempestade sobre a praia, um raio matou Esia. Em Esar, disseram que era castigo. Para Esar, Esia foi castigada. Desde então, quem duvida do Que Sacode duvida em silêncio.
+Um raio caiu na praia durante a tempestade e matou Esia. Em Esar, disseram que era castigo. Para Esar, Esia foi castigada. Desde então, quem duvida do Que Sacode duvida em silêncio.
 
 *O ano 63 foi calmo.*
 
 ### Ano 64
 
-Morreu Gaut, que falava pelo Que Sacode em Esar, aos 53 anos.
+Na primavera do ano 64, Gaut, que falava pelo Que Sacode em Esar, morreu de velhice aos 53 anos.
 
 ## Capítulo III: As casas de pedra (anos 65 a 100)
 
 ### Ano 65
 
-Gaaria tinha rezado: «Manda água, Que Sacode, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Sacode tinha ouvido. No inverno, em Esar, as cabanas deram lugar a casas de pedra. Os sacerdotes ganharam um templo e, com ele, força.
+Gaaria tinha rezado: «Que Sacode, que a chuva volte.» Quando a chuva voltou, Esar agradeceu ao Que Sacode. No inverno, Esar ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.
 
 ### Ano 66
 
-Na primavera do ano 66, morreu Gaaria, que guiava Esar, aos 50 anos. Em Esar, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 17, só a crônica guarda.
+Na primavera, morreu Gaaria, que guiava Esar, aos 50 anos. Morreu o último que tinha visto o ano 17. Em Esar, ninguém saía de casa em dia de tempestade, mas ninguém sabia mais dizer por quê.
 
 *Entre os anos 67 e 68, nada mudou o rumo do mundo.*
 
 ### Ano 69
 
-No verão do ano 69, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Para Esar, o deus já não era «o Que Sacode»: passou a ser «o Que Apaga o Sol».
+No meio do dia, o sol escureceu. Os pássaros calaram, e todos olharam para o alto sem entender. Depois disso, Esar deixou de chamar o deus de «o Que Sacode» e passou a chamá-lo de «o Que Apaga o Sol».
 
 ### Ano 70
 
@@ -204,25 +204,25 @@ Nos anos 61 a 70 houve duas fomes e três preces que pareceram atendidas; nascer
 
 ### Ano 73
 
-Na primavera, Mael, que guiava Esar, morreu de velhice aos 49 anos. Morreu o último que tinha visto o ano 20. Em Esar, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. A seca voltou, como no ano 60: 26 dias sem chuva, até que o céu se abriu.
+Mael, que guiava Esar, morreu de velhice aos 49 anos. Em Esar, já ninguém lembrava por que os mortos eram queimados, e não enterrados. O que aconteceu no ano 20, só a crônica guarda. A seca voltou, como no ano 60: 26 dias sem chuva, até que o céu se abriu.
 
 ### Ano 74
 
-Foram 23 dias de fome por causa da seca em Esar, com dois mortos. Em Esar, Orel pediu: «Que Apaga o Sol, que a chuva volte.» Quando a chuva voltou, Esar agradeceu ao Que Apaga o Sol. Depois da seca, Esar jurou nunca desperdiçar água. Doya, que guiava Esar, morreu de fome. Restavam só três pessoas no mundo inteiro.
+A fome por causa da seca durou 23 dias em Esar e levou duas vidas. Em Esar, Orel pediu: «Manda água, Que Apaga o Sol, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Esar duvidou de que o Que Apaga o Sol tinha ouvido. Depois da seca, Esar jurou nunca desperdiçar água. Doya, que guiava Esar, não resistiu à fome. O mundo encolheu até caber em volta de uma fogueira: restavam três pessoas.
 
 ### Ano 75
 
-Em Esar, já ninguém sabia cortar pedra. O que fora feito começou a ruir. Veio a pior fome que o mundo tinha visto: 20 dias por causa da seca em Esar, e 21 mortos. As crianças foram as primeiras.
+Na primavera do ano 75, morreu o último que sabia cortar pedra, e ninguém tinha aprendido. Esar perdeu o saber. Veio a pior fome que o mundo tinha visto: 20 dias por causa da seca em Esar, e 21 mortos. As crianças foram as primeiras.
 
 *O ano 76 passou sem nada que a crônica precise guardar.*
 
 ### Ano 77
 
-Na primavera do ano 77, ninguém lembrava mais a razão, e Esar abandonou a festa da chuva.
+Com Suarena à frente, Esar largou a festa da chuva: sem origem lembrada, o costume perdeu o sentido.
 
 ### Ano 78
 
-Na primavera do ano 78, vieram de além da borda três estranhos, magros e calados: Orut, Orya e Kao. Esar os recebeu, e eles ficaram.
+Da terra que ninguém conhece chegaram Orut, Orya e Kao. Para Esar, que já não tinha com quem casar os seus, foi uma bênção.
 
 *O ano 79 foi calmo.*
 
@@ -238,11 +238,11 @@ Orut tinha rezado: «Que Apaga o Sol, não deixes nossos filhos morrerem de fome
 
 ### Ano 91
 
-Esar passou fome no inverno por 9 dias, e uma pessoa morreu. De novo a chuva sumiu, como no ano 73. Foram 22 dias de seca. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Apaga o Sol mandou.
+Foram 9 dias de fome no inverno em Esar, com um morto. De novo a chuva sumiu, como no ano 73. Foram 22 dias de seca. O dia em que a chuva voltou virou festa em Esar: todo ano, celebram a chuva que o Que Apaga o Sol mandou.
 
 ### Ano 92
 
-A fome por causa da seca durou 26 dias em Esar e levou duas vidas.
+Esar passou fome por causa da seca por 26 dias, e duas pessoas morreram.
 
 *Os anos 93 a 99 passaram em paz.*
 

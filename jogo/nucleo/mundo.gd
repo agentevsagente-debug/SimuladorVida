@@ -547,9 +547,38 @@ func _estranhos_de_alem_da_borda() -> void:
 		registrar("estranhos", "social", 7, g.zona, g.id, ids, {"n": n, "acolhida": g.estranhos})
 
 
+## Num povo pequeno, cada vida conta: o nascimento, o casamento, a rixa e o roubo, que num povo
+## grande passam sem ninguém notar (camada "ambiente"), viram nota (importância 4, abaixo do que
+## entra na crônica do ano). Assim o jogador vê o povo viver nas sessões curtas do começo.
+const POVO_PEQUENO := 40
+
+
+func _no_povo_pequeno(g: Grupo, imp: int) -> int:
+	return maxi(imp, 4) if g != null and g.membros.size() <= POVO_PEQUENO else imp
+
+
+## O rito de passagem: num povo de até 60 pessoas, quem faz 14 anos vai pela primeira vez com os
+## adultos (à caça, à pesca ou à roça, conforme o povo). É nota: o jogador vê os pequenos crescerem.
+func _ritos_de_passagem() -> void:
+	var a := ano()
+	for g in grupos_vivos():
+		if g.membros.size() > 60:
+			continue
+		for p in _membros(g):
+			if p.idade(a) != 14:
+				continue
+			var lida := "caca"
+			if g.zona == "lago" or g.zona == "praia":
+				lida = "pesca"
+			elif g.estagio >= 2 and posmod(p.id, 2) == 0:
+				lida = "roca"
+			registrar("rito", "social", 4, g.zona, g.id, [p.id], {"lida": lida})
+
+
 func _novo_ano() -> void:
 	var a := ano()
 	_estranhos_de_alem_da_borda()
+	_ritos_de_passagem()
 	# Envelhecimento e morte natural.
 	for g in grupos_vivos():
 		for p in _membros(g):
@@ -998,6 +1027,7 @@ func _parto(mae: Pessoa, g: Grupo) -> void:
 	if g.nascimentos == 0:
 		imp = maxi(imp, 5)
 		motivo = "primeiro"
+	imp = _no_povo_pequeno(g, imp)
 	g.nascimentos += 1
 	registrar("nascimento", "natural", imp, g.zona, g.id, [filho.id, mae.id, pai_id],
 		{"motivo": motivo})
@@ -1101,7 +1131,7 @@ func _casamentos() -> void:
 					var imp := 1
 					if g.lider == m.id or g.lider == f.id:
 						imp = 3
-					registrar("casamento", "social", imp, g.zona, g.id, [m.id, f.id], {})
+					registrar("casamento", "social", _no_povo_pequeno(g, imp), g.zona, g.id, [m.id, f.id], {})
 					break
 	# Casamentos entre grupos: quem não acha par em casa procura nos vizinhos.
 	for g in grupos_vivos():
@@ -1380,7 +1410,7 @@ func _rancores_e_separacoes() -> void:
 				if vitima != ladrao:
 					var intens := 2 if vitima.tem("rancoroso") else 1
 					vitima.rancores[ladrao.id] = vitima.rancores.get(ladrao.id, 0) + intens
-					registrar("roubo", "social", 2, g.zona, g.id, [ladrao.id, vitima.id], {})
+					registrar("roubo", "social", _no_povo_pequeno(g, 2), g.zona, g.id, [ladrao.id, vitima.id], {})
 					if g.recursos == "partilha" and chance(0.08):
 						g.recursos = "acumula"
 						registrar("cultura", "social", 6, g.zona, g.id, [], {"dimensao": "recursos", "valor": "acumula"})
@@ -1391,7 +1421,7 @@ func _rancores_e_separacoes() -> void:
 				if p != lider and p.tem("ambicioso") and p.idade(a) >= 20 and not _parentes_proximos(p, lider):
 					p.rancores[lider.id] = p.rancores.get(lider.id, 0) + 1
 					lider.rancores[p.id] = lider.rancores.get(p.id, 0) + 1
-					registrar("rixa", "social", 2, g.zona, g.id, [p.id, lider.id], {"motivo": "lideranca"})
+					registrar("rixa", "social", _no_povo_pequeno(g, 2), g.zona, g.id, [p.id, lider.id], {"motivo": "lideranca"})
 					break
 		# Briga que divide o grupo.
 		if g.membros.size() < 12:
@@ -1793,7 +1823,7 @@ func _escolher_lider(g: Grupo) -> void:
 	var disputa := segundo != null and segundo.tem("ambicioso")
 	if disputa:
 		segundo.rancores[melhor.id] = segundo.rancores.get(melhor.id, 0) + 2
-	registrar("novo_lider", "social", 5 if disputa else 3, g.zona, g.id,
+	registrar("novo_lider", "social", 5 if disputa else 4, g.zona, g.id,
 		[melhor.id] + ([segundo.id] if disputa else []), {"disputa": disputa})
 	# Quem decide: depois de disputas, um povo grande e de gente generosa passa a ter conselho.
 	if disputa and g.poder == "lider" and g.membros.size() >= 20 and chance(0.3):
@@ -4514,6 +4544,27 @@ func cronica(ano_ini: int = -1, ano_fim: int = -1, com_prologo: bool = true, com
 	if em_curso.is_empty():
 		return t
 	return em_curso if t.strip_edges().is_empty() else t + "\n\n" + em_curso
+
+
+## A crônica viva, para abrir com a tecla C: como o livro, mas em curso. "## Até agora" (o resumo
+## dos anos já escritos: povos, até onde chegaram, os nomes do deus, a pior fome, as guerras e
+## quem vive hoje), o prólogo, os capítulos dos estágios já vividos e o capítulo aberto do estágio
+## atual ("desde o ano N"), com os anos dentro, e no fim os gestos do deus no ano em curso. Sem o
+## índice de personagens nem o epitáfio, que são do livro fechado. Montada sob demanda e guardada
+## até o próximo ano ser escrito (os gestos do ano em curso são acrescentados a cada consulta).
+var _viva_chave: Array = []
+var _viva: String = ""
+
+
+func cronica_viva() -> String:
+	var chave := [era, _cronista.ultimo_ano_escrito, era_inicio_ano]
+	if chave != _viva_chave:
+		_viva = _cronista.montar(era_inicio_ano, _cronista.ultimo_ano_escrito, "", "", true, false, true)
+		_viva_chave = chave
+	var em_curso := cronica_em_curso()
+	return _viva if em_curso.is_empty() else _viva + "
+
+" + em_curso
 
 
 ## Os gestos do deus no ano em curso, na hora: "### Ano 3 (em curso)" e uma linha por gesto,
