@@ -278,6 +278,14 @@ Todas estão abertas a revisão.
   - **esconder a moldura na hora** com um gesto ou atalho;
   - **modo discreto** opcional, que não mostra as cenas mais pesadas em detalhe, mas sempre as registra na crônica.
 
+### O que a pessoa pensa (pedido do autor em 01/11/2026)
+
+Passar o cursor sobre um habitante mostra também o que ele está fazendo, o que está pensando e o seu humor. O pensamento sai sempre do estado real da pessoa: necessidades, acontecimentos que a tocaram, relações, o que ela acha do deus e traços. Ela fala do que viu, nunca do jogador.
+
+### O fogo brando atende o frio
+
+Nenhum poder atendia a prece de frio. O fogo em intensidade baixa acende as fogueiras e aquece, sem queimar; em intensidade média ou alta, continua queimando. Não é um poder novo: é a intensidade que o gesto já tem.
+
 ---
 
 ## Menor conjunto que entrega a essência
