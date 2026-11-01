@@ -201,3 +201,7 @@ Observações: Composição carrega exclusivamente PNGs das T007–T009 para o m
 
 ## Aguardando tarefas — 2026-11-01 00:13
 T006 a T010 entregues; nenhuma tarefa com estado PENDENTE ou REFAZER. Inspeção visual complementar feita nos habitantes, animações, pinheiro, terreno transparente e cena montada. Controle permanece Desligar_Codex = False; ciclo de consulta continua ativo.
+
+## 2026-11-01 00:24
+Codex desligado
+Controle: Desligar_Codex = True. Ciclo encerrado conforme decisão do usuário registrada em codex/controle.md.
