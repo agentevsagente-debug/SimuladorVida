@@ -345,7 +345,7 @@
    "quadro_w": 8,
    "quadro_h": 12
   },
-  "acoes/crianca_correr_4q": {
+  "acoes/crianca_ciranda_4q": {
    "x": 196,
    "y": 105,
    "w": 24,
@@ -355,7 +355,7 @@
    "quadro_w": 6,
    "quadro_h": 8
   },
-  "acoes/crianca_pular_4q": {
+  "acoes/crianca_ciranda_costas_4q": {
    "x": 221,
    "y": 105,
    "w": 24,
@@ -365,8 +365,48 @@
    "quadro_w": 6,
    "quadro_h": 8
   },
-  "acoes/criancas_brigar_4q": {
+  "acoes/crianca_correr_4q": {
    "x": 1,
+   "y": 118,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pegapega_fugir_4q": {
+   "x": 26,
+   "y": 118,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pegapega_pegar_4q": {
+   "x": 51,
+   "y": 118,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/crianca_pular_4q": {
+   "x": 76,
+   "y": 118,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "acoes/criancas_brigar_4q": {
+   "x": 101,
    "y": 118,
    "w": 24,
    "h": 8,
@@ -666,7 +706,7 @@
    "quadro_h": 12
   },
   "habitantes/crianca_andar_4q": {
-   "x": 26,
+   "x": 126,
    "y": 118,
    "w": 24,
    "h": 8,

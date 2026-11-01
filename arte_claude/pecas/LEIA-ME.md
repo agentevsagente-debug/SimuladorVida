@@ -660,6 +660,21 @@ A sugestão é usar a versão forte no 1x e a de sempre no 10x e no 50x, ou só 
 | `buscar_agua` | `acoes/buscar_agua_forte_4q` | 12 × 12 | 4 | na margem, de frente para a água: chega com o pote vazio no quadril, ajoelha e mergulha o pote com respingos, ergue o pote cheio e o põe na cabeça. Depois, `carregar_agua_forte_4q`. |
 | `carregar_caca` | 2 × `acoes/carregar_caca_forte_4q` + `objetos/caca_no_pau_porco_forte` ou `caca_no_pau_ave_forte` | 8 × 12; objeto 24 × 9 | 4 | os dois carregadores ficam a **16 px** um do outro (8 px de vão para o bicho), com os quadros defasados em 2. O objeto vai com o x do carregador de trás e as linhas 0 e 1 (o pau de 2 px) nas linhas 3 e 4 dos carregadores. O bicho pendura pelas patas amarradas (corda clara) no meio do vão. Desenhe o objeto por cima dos dois. |
 
+## 23. Brincadeiras de crianças (`acoes/brincar.py`)
+
+Quadros de 6 × 8, como a criança de sempre, com as mesmas cores-base. Quem desloca as crianças pela tela é o motor. `acoes/amostra_brincar_4x.png` mostra as folhas e, embaixo, as duas brincadeiras montadas nos 4 quadros.
+
+| Brincadeira | Folha | Quadros | Como montar |
+|---|---|---|---|
+| pega-pega, quem foge | `acoes/crianca_pegapega_fugir_4q` | 4 | corre de passada larga, olhando para trás e rindo, com os braços para o alto |
+| pega-pega, o pegador | `acoes/crianca_pegapega_pegar_4q` | 4 | corre inclinado, com o braço esticado para a frente. No quadro 3, a mão chega à coluna 5: é o toque. |
+| ciranda, de frente | `acoes/crianca_ciranda_4q` | 4 | de mãos dadas, com os braços abertos até as colunas 0 e 5, dando passos de lado; nos quadros 1 e 3, o corpo desce 1 px no balanço |
+| ciranda, de costas | `acoes/crianca_ciranda_costas_4q` | 4 | a mesma, vista de costas (só o cabelo), para a metade de trás da roda |
+
+**Pega-pega.** As duas crianças correm na mesma direção, mais rápido que o andar (por exemplo, 1,5 vez a velocidade do adulto), com o pegador uns 7 px atrás de quem foge. A distância varia: o pegador se aproxima e perde terreno. Quando ela cai para 4 px, o motor mostra o quadro 3 do pegador (o toque) e troca os papéis: quem foi pego vira e passa a correr atrás. Uma rodada leva uns 6 a 10 s; depois, as crianças mudam de direção ou voltam a andar (`habitantes/crianca_andar_4q`).
+
+**Ciranda.** A roda, vista de lado, é uma fileira dupla. As crianças da frente usam a folha de frente, a 6 px uma da outra, de modo que as mãos das vizinhas se encostam e a fila vira uma corrente. As de trás usam a folha de costas, 2 px acima, deslocadas 3 px e desenhadas antes. Para girar, cada criança anda numa elipse achatada (por exemplo, 24 × 3 px). Na metade da frente usa a folha de frente; na de trás, a de costas. Os quadros das vizinhas ficam defasados em 1. Use de 4 a 8 crianças.
+
 ## Critérios
 
 | Critério | Situação |
