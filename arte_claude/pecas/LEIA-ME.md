@@ -375,6 +375,84 @@ As cenas são montadas como a prova de montagem: só com as camadas do motor, o 
 | 5 | biblioteca, estelas, templo com friso escrito e o escriba |
 | 6 | muralha com torre e sentinela, casas de tijolo, templo de cúpula, roça irrigada, moinho no morro e barco na água |
 
+## 13. Estações (`estacoes/`)
+
+O verão é a arte de sempre. As outras três estações ficam em `estacoes/<estacao>/<pasta>/<nome>.png`, com o mesmo nome, tamanho e encaixe da peça original. **O motor procura primeiro na pasta da estação, que vem do campo `tempo().estacao` da API. Se a peça não estiver lá, usa a de verão.** A `montagem/montar.py` faz exatamente isso, na função `ler_pasta`.
+
+| Estação | O que muda |
+|---|---|
+| `primavera` | flores brancas e rosas nas copas e nos arbustos, flores no capim e na borda da grama, verde mais vivo |
+| `outono` | copas largas e arbustos laranja e ferrugem, capim seco, grama amarelando com folhas caídas, mata distante enferrujada (de dia). Os pinheiros não mudam. |
+| `inverno` | árvores de copa sem folhas (mesmo encaixe), neve assentada em cima de tudo (pinheiros, arbustos, telhados de todos os estágios, ruínas, pedras, cercas e roças), grama coberta de neve, montanhas com calotas maiores e mata distante com neve, nos 3 horários |
+
+Peças e efeitos novos:
+- `estacoes/inverno/terreno/gelo_superficie.png` (8 × 8): o lago congelado. Na montagem, as 3 colunas de água mais perto da praia usam o gelo no lugar da superfície da água.
+- `efeitos/neve_4q.png` (64 × 64, 4 quadros): neve caindo, que repete nas duas direções. Os flocos descem 2 px por quadro.
+- `efeitos/floco_3v.png` (4 × 4, 3 variações).
+- No outono, as folhas caindo são o `efeitos/folha_seca_4q` de sempre.
+
+Amostras e geração:
+- `estacoes/amostra_estacoes_4x.png`: o mesmo lugar (a cena-alvo de dia) nas 4 estações, de cima para baixo: primavera, verão, outono e inverno. Cada cena também está em `cena_<estacao>.png`, com 480 × 160.
+- `estacoes/amostra_estacoes_pecas_4x.png`: as principais peças nas 4 estações.
+- As variações são geradas por `estacoes.py` a partir das peças de verão. Peça nova entra automaticamente quando o script roda de novo.
+
+## 14. Ações dos habitantes (`acoes/`)
+
+Os quadros têm 8 × 12, olhando para a direita, com a base na última linha. São 4 quadros cada, com as mesmas cores-base e trocas de `habitantes/trocas.json`. `amostra_acoes_4x.png` mostra cada ação com 3 combinações de pele, cabelo e roupa.
+
+| Folha | O que faz |
+|---|---|
+| `pescar_4q` | espera com a vara erguida, a vara dá um puxão, a pessoa puxa e mostra o peixe. A linha até a água fica com o motor. |
+| `carregar_lenha_4q` | anda com o feixe de lenha nos braços |
+| `construir_4q` | martela: ergue, prepara, bate embaixo, volta |
+| `forjar_4q` | o mesmo golpe, de avental de couro e com faísca no impacto (vai junto da `forja` do estágio 4) |
+| `escrever_4q` | de cabeça baixa, escreve com o estilete na tabuleta |
+| `remar_4q` | sentado: só o tronco aparece, e o remo entra na água. O corpo começa 2 px abaixo; ponha a folha sobre o barco. |
+| `lutar_4q` | lança e escudo: guarda, recua, estocada e volta |
+| `carregar_morto_4q` | anda devagar, de cabeça baixa, com o corpo na mortalha sobre os ombros |
+| `dancar_4q` | dança de festa: braços para cima, pulo e troca de lado |
+
+## 15. Mundo vazio e natureza retomando (`natureza/`)
+
+**Ruínas cobertas pelo mato.** Toda ruína ganhou 3 graus, `<ruina>_mato_1`, `_mato_2` e `_mato_3`, com o mesmo tamanho e encaixe da ruína.
+- **Grau 1:** capim na base e as primeiras trepadeiras.
+- **Grau 2:** trepadeiras até o meio, moitas encostadas e musgo nos topos.
+- **Grau 3:** trepadeiras por quase tudo, mais moitas e uma muda brotando em cima.
+
+São 17 ruínas: `cabana_abandonada`, `casa_ruina`, `tumulo`, `pedra_erguida` e todas as `_ruina` dos estágios 3 a 6, mais o `barco_naufragado`.
+
+**Peças avulsas:**
+
+| Peça | Tamanho | O que é |
+|---|---|---|
+| `muda` | 8 × 8 | muda nascendo onde havia casa |
+| `arvore_jovem` | 16 × 16 | árvore de copa jovem; tronco na coluna 6 |
+| `pinheiro_jovem` | 16 × 16 | pinheiro jovem; tronco na coluna 7 |
+| `fogueira_antiga` | 16 × 16 | fogueira apagada há muito tempo: pedras meio enterradas, carvão velho e capim por dentro |
+
+As amostras são `amostra_natureza_4x.png` (4 ruínas nos 3 graus) e `amostra_natureza_jovens_4x.png`.
+
+## 16. Tela da estante de crônicas (`estante/`)
+
+| Peça | Tamanho | Uso |
+|---|---|---|
+| `estante_fundo` | 16 × 16 | fundo de tábuas escuras; repete nas duas direções |
+| `prateleira` | 16 × 6 | tábua que repete na horizontal; os livros ficam em pé sobre a linha 0 |
+| `livro_lombada_6v` | 12 × 64, 6 variações | uma lombada para cada era ou mundo, em 6 cores de couro com faixas douradas |
+| `livro_aberto` | 256 × 144 | o livro aberto, no estilo do pergaminho: capa de couro, duas páginas, sombra na lombada, bordas das folhas e fita marcadora |
+
+**O nome da era na lombada:**
+- vai na etiqueta clara (linhas 8 a 55, colunas 2 a 9);
+- é escrito com `fonte_5x7_escura`, em maiúsculas, girado 90° (lido de baixo para cima) e centrado;
+- cabem 7 caracteres; nomes maiores, o motor abrevia.
+
+**O texto do livro aberto:**
+- página da esquerda: x de 14 a 118; página da direita: x de 138 a 242; as duas de y = 12 a 130;
+- cabem 17 caracteres por linha e 10 linhas por página, com `fonte_5x7_escura`;
+- o título vai em `fonte_5x7_dourada`.
+
+As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e `amostra_tela_livro_4x.png`. As duas telas têm 480 × 160.
+
 ## Critérios
 
 | Critério | Situação |
