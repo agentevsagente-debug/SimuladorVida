@@ -382,7 +382,7 @@ PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "esc
                     "construir", "forjar", "escrever", "remar", "lutar", "dancar", "olhar", "esticar", "sentar",
                     "agachar", "cocar", "bocejar", "conversar", "mae_", "casal", "funeral", "tocar", "andar_",
                     "segurar", "colher_arbusto", "cavar", "catar", "cacar", "cozinhar", "buscar", "banhar",
-                    "vigia", "contar", "ouvir", "criancas", "tropecar", "espantar", "discutir", "abraco", "lavar")
+                    "vigia", "contar", "ouvir", "criancas", "tropecar", "espantar", "discutir", "abraco", "lavar", "acender")
 
 
 def vestir_inverno(px, qw, qh, idoso=False):

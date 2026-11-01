@@ -122,7 +122,7 @@ def sazonal(pasta, estacao, filtro=lambda f: True):
 
 ESTAGIO_DE_RUINA = {"cabana_abandonada": 1, "casa_ruina": 2}
 MEMORIA_COMUM = {"tumulo", "pedra_erguida", "terra_queimada_a", "terra_queimada_b", "arvore_queimada"}
-VEGETACAO_E1 = lambda f: f.stem not in ("cabana_galhos", "fogueira_acesa_4q", "fogueira_apagada")  # noqa: E731
+VEGETACAO_E1 = lambda f: f.stem not in ("cabana_galhos", "fogueira_acesa_4q", "fogueira_apagada", "fogueira_nascendo_4q")  # noqa: E731
 
 
 def principal():
