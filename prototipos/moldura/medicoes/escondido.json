@@ -1,0 +1,11 @@
+﻿{
+    "cenario":  "escondido",
+    "duracao_s":  603,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.027,
+    "cpu_media_1nucleo":  0.76,
+    "cpu_max_amostra_pct":  0.133,
+    "ws_media_mb":  177,
+    "ws_max_mb":  180,
+    "privada_max_mb":  166.8
+}

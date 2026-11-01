@@ -13,6 +13,9 @@ extends Node2D
 ##   --pos=X,Y                            posição da janela na tela
 ##   --duracao=S                          fecha sozinho depois de S segundos
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
+##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
+##                                        outra janela em foco, via processo
+##                                        auxiliar em PowerShell
 
 const BASE := Vector2i(480, 176)
 const FAIXA := 16
@@ -31,6 +34,9 @@ var escala := 2
 var escondida := false
 var _duracao := 0.0
 var _bandeja: StatusIndicator
+var _atalho_pid := 0
+var _atalho_saida: FileAccess
+var _atalho_leitor: Thread
 
 @onready var mundo: Node2D = $Mundo
 
@@ -60,6 +66,8 @@ func _ready() -> void:
 		var area := DisplayServer.screen_get_usable_rect()
 		get_window().position = area.end - get_window().size - Vector2i(24, 24)
 
+	if args.has("atalho-global"):
+		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if cenario == "escondido":
 		esconder()
 
@@ -148,6 +156,9 @@ func alternar() -> void:
 
 func sair() -> void:
 	_log("saindo")
+	if _atalho_pid != 0:
+		OS.kill(_atalho_pid)
+		_atalho_leitor.wait_to_finish()
 	get_tree().quit()
 
 
@@ -182,6 +193,35 @@ func _aplicar_passagem_mouse() -> void:
 		Vector2(0, BASE.y * k),
 	])
 	DisplayServer.window_set_mouse_passthrough(poligono)
+
+
+## O Godot não tem atalho global. Um processo auxiliar registra o atalho no
+## Windows e escreve uma linha a cada aperto; uma thread lê essas linhas.
+func _iniciar_atalho_global(tecla: String) -> void:
+	var script := ProjectSettings.globalize_path("res://atalho/atalho_global.ps1")
+	var r := OS.execute_with_pipe("powershell.exe", [
+		"-NoProfile", "-ExecutionPolicy", "Bypass", "-WindowStyle", "Hidden",
+		"-File", script, "-Pai", str(OS.get_process_id()), "-Tecla", tecla])
+	if r.is_empty():
+		_log("atalho_global=falhou ao iniciar")
+		return
+	_atalho_pid = r["pid"]
+	_atalho_saida = r["stdio"]
+	_atalho_leitor = Thread.new()
+	_atalho_leitor.start(_ler_atalho_global)
+
+
+func _ler_atalho_global() -> void:
+	while _atalho_saida.is_open() and _atalho_saida.get_error() == OK:
+		var linha := _atalho_saida.get_line().strip_edges()
+		if linha != "":
+			_ao_receber_atalho.call_deferred(linha)
+
+
+func _ao_receber_atalho(linha: String) -> void:
+	_log("atalho_global: " + linha)
+	if linha == "alternar":
+		alternar()
 
 
 func _criar_bandeja() -> void:
