@@ -183,11 +183,17 @@ func _ready() -> void:
 ## Ao voltar, a crônica abre com o que aconteceu enquanto o jogador esteve fora.
 func _mostrar_ausencia() -> void:
 	var a: Dictionary = vista.sim.ausencia
-	if a.is_empty() or int(a.get("passos", 0)) < 24:
+	var copia := str(a.get("recuperado_de", ""))  # o mundo salvo estava estragado e voltou de uma cópia
+	if a.is_empty() or (int(a.get("passos", 0)) < 24 and copia == ""):
 		return
-	var dias := int(a["passos"]) / 24
+	var dias := int(a.get("passos", 0)) / 24
 	var titulo := ("Enquanto você esteve fora: %d dias" % dias) if dias != 1 else "Enquanto você esteve fora: 1 dia"
 	var relato: String = interface._sem_markdown(a.get("relato", ""))
+	if copia != "":
+		_log("mundo recuperado de %s" % copia)
+		relato = "O mundo salvo estava estragado e voltou da cópia anterior (%s). Pode faltar o último dia.\n\n%s" % [copia.get_file(), relato]
+		if dias == 0:
+			titulo = "O mundo voltou de uma cópia"
 	if a.get("teto_atingido", false):
 		titulo = "Enquanto você esteve fora: um ano"
 		relato = "O mundo seguiu por um ano e esperou.\n\n" + relato
@@ -205,6 +211,10 @@ func _process(delta: float) -> void:
 			Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED) / 1048576.0,
 			Performance.get_monitor(Performance.OBJECT_COUNT), Performance.get_monitor(Performance.OBJECT_NODE_COUNT),
 			Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)])
+	if vista.sim and vista.sim.salvamento_falhou:  # um aviso por falha (o salvamento é diário)
+		vista.sim.salvamento_falhou = false
+		_log("salvamento falhou")
+		interface._avisar("Não deu para salvar o mundo: o disco está cheio? O salvo antes continua lá.")
 	# Se o jogador restaurar a janela pela barra de tarefas, volta a desenhar.
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
@@ -476,7 +486,11 @@ func _criar_bandeja() -> void:
 	if not DisplayServer.has_feature(DisplayServer.FEATURE_STATUS_INDICATOR):
 		return
 	_bandeja = StatusIndicator.new()
-	_bandeja.icon = load("res://arte/interface/icone_jogo_16.png")
+	# o ícone desenhado no tamanho da bandeja: 16 px em 100%, 24 em 150%, 32 em 200%
+	var escala_tela := DisplayServer.screen_get_dpi(DisplayServer.SCREEN_PRIMARY) / 96.0
+	var lado := 32 if escala_tela >= 1.75 else (24 if escala_tela >= 1.25 else 16)
+	_bandeja.icon = load("res://arte/interface/icone_jogo_%d.png" % lado)
+	_log("bandeja: dpi=%d ícone %d px" % [DisplayServer.screen_get_dpi(DisplayServer.SCREEN_PRIMARY), lado])
 	_bandeja.tooltip = "Simulador de vida: clique para mostrar ou esconder, botão direito para sair"
 	_bandeja.pressed.connect(_ao_clicar_bandeja)
 	add_child(_bandeja)
