@@ -218,20 +218,23 @@ Para animar: guarde a agenda ao começar a hora e, a cada quadro, ache o trecho 
 | `carregar_feixe` | `lenha` (andando) | a volta da mata com um feixe grande de lenha nas costas |
 | `carregar_cesto_cabeca` | `lenha` (andando) | a volta com um cesto grande na cabeça (da praia ou de longe) |
 | `espreitar` | `cacar` | a caçada: agachado, chegando aos poucos perto do porco, com a lança |
+| `mirar` | `cacar` | a caçada: quem vai arremessar, parado um instante com a lança erguida (o quadro 1 de `cacar_arremessar`), antes de soltar |
 | `arremessar` | `cacar` | a caçada: o arremesso da lança |
+| `apontar` | `cacar` | a caçada: os que ficam para trás apontam o porco enquanto o da frente mira e arremessa (`cacar_apontar_2q`) |
+| `espeto` | `cozinhar` | no fogo, quem espera a caça com o espeto (no lugar de mexer a panela) |
 | `recolher_caca` | `parado` | a caçada: abaixado junto do bicho caído |
 | `caca_no_pau` | `carregar_caca` (andando) | a volta da caçada com o porco amarrado num pau, nos ombros |
 | `bocejar` | `parado` | de madrugada, alguém acorda em casa e se espreguiça |
 | `aticar` | `fogueira` | de madrugada, quem acordou atiça o fogo |
 | `cochilar` | `fogueira` | o vigia cochilando sentado no fogo (no lugar de `vigia`) |
 
-Precisam de arte (B ou C): `carregar_feixe`, `carregar_cesto_cabeca`, `espreitar`, `arremessar`, `recolher_caca`, `caca_no_pau`, `bocejar`, `aticar`, `cochilar`; as cenas `brasas` e `bicho_noturno` (coruja, morcego, raposa, sapo); o porco da caçada.
+Precisam de arte (B ou C): `mirar` (o quadro 1 do arremesso, parado), `apontar` (`cacar_apontar_2q`), `espeto` (`cozinhar_espeto_4q`), `carregar_feixe`, `carregar_cesto_cabeca`, `espreitar`, `arremessar`, `recolher_caca`, `caca_no_pau`, `bocejar`, `aticar`, `cochilar`; as cenas `brasas` e `bicho_noturno` (coruja, morcego, raposa, sapo); o porco da caçada.
 
 **O dia usa o mundo inteiro.** Quase todo dia, de 2 a 4 adultos saem juntos à tarde para a caçada na borda da floresta (veja a cena `cacada`). Cada povo tem um pescador no dia, que pesca até 17h30, alguém que vai e vem do lago com água e um ou dois que colhem longe do acampamento. As crianças brincam na praia de manhã (9h às 11h30) e à tarde (14h às 17h40). De dia, as pessoas ocupam pelo menos 3 das 4 zonas e nunca mais de 40% delas fazem a mesma coisa (veja `testar_vida.gd`).
 
 **Ninguém parado muito tempo.** De dia (6h às 17h), ninguém fica de pé, deitado, sentado no fogo ou conversando no mesmo ponto por mais de 20 min de jogo (uns 37 s em 1x), fora das cenas: a cada 15 a 20 min a pessoa dá uns passos para o lado (6 a 10 px) e continua dali, ou volta ao ponto de antes. Quem chega antes da hora marcada espera ao lado e chega na hora. Os dois de um par que conversa mudam juntos.
 
-**Conversas à tarde.** Das 12h45 às 16h45, a cada 12 a 15 min, dois do mesmo povo que estão trabalhando ou à toa perto um do outro (até 24 px) param uns 6 min e conversam ali mesmo, um de frente para o outro (`conversar`). Se em meia hora ninguém conversou, um par mais longe (até 60 px) se encontra: um vai até o outro e depois volta. O pescador e quem busca água continuam no que fazem. No povo inicial (12 pessoas), é uma conversa a cada 17 min de jogo, em média; com três ou quatro povos na tela, um balão a cada poucos segundos em 1x. No almoço, cada par termina numa hora (de 12h20 a 12h40). O pescador passa o dia todo na margem.
+**Conversas à tarde.** Das 12h45 às 16h45, a cada 12 a 15 min, dois do mesmo povo que estão trabalhando ou à toa perto um do outro (até 24 px) param uns 6 min e conversam ali mesmo, um de frente para o outro (`conversar`). Se em meia hora ninguém conversou, um par mais longe (até 60 px) se encontra: um vai até o outro e depois volta. O pescador e quem busca água continuam no que fazem. No povo inicial (12 pessoas), é uma conversa a cada 17 min de jogo, em média; com três ou quatro povos na tela, um balão a cada poucos segundos em 1x. No almoço, cada par termina numa hora (de 12h15 a 12h45). O pescador passa o dia todo na margem.
 
 **Um acontecimento por hora.** Das 6h às 20h, a cada hora, alguém de cada povo atravessa a tela: sai de casa (às vezes com a ferramenta, `levar_pote` ou `levar_machado`), vai ao lago, à mata, à praia ou longe, trabalha uns minutos e volta para casa com uma carga grande (`carregar_agua`, `carregar_feixe` ou `carregar_cesto_cabeca`). A ida e a volta somam pelo menos 40 px. Quem atravessa é um adulto de 10 a 70 anos sem papel no dia (nem o pescador, nem os caçadores). Junto com as crianças correndo, os incidentes e a caçada, isso dá em 1x (≈1 a 2 min por hora de jogo) sempre alguma coisa legível acontecendo.
 
@@ -287,7 +290,7 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
-| `cacada` | quase todo dia, à tarde: saem do fogo entre 12h40 e 13h, espreitam até o arremesso (entre 15h20 e 15h40) e voltam | 2 a 4 adultos na borda da floresta do lado da vila: o porco aparece a uns 20 px da borda (x de 216 a 224, a 35 px do fogo, no mínimo), em chão aberto: o único arbusto ali perto fica em x 178, os caçadores espreitam entre ele e o fogo, e a volta atravessa até a fogueira (`x` é onde o porco está) | `vazia`: erraram e voltaram sem nada; `bicho`: "porco"; `etapas` (abaixo) |
+| `cacada` | quase todo dia, à tarde: saem do fogo entre 15h30 e 15h45, espreitam até o arremesso (perto das 17h) e chegam ao fogo com a caça entre 17h25 e 17h33, no fim de tarde; a cena acaba entre 17h47 e 17h55 | 2 a 4 adultos na borda da floresta do lado da vila: o porco aparece a uns 20 px da borda (x de 216 a 224, a 35 px do fogo, no mínimo), em chão aberto: o único arbusto ali perto fica em x 178, os caçadores espreitam entre ele e o fogo, e a volta atravessa a vila até a fogueira, passando pelas casas (`x` é onde o porco está) | `vazia`: erraram e voltaram sem nada; `bicho`: "porco"; `etapas` (abaixo); `cozinha`: o id de quem espera a caça no fogo com o espeto (-1 se ninguém, e sempre -1 quando `vazia`) |
 | `caca_vazia` | na volta de uma caçada sem caça | os caçadores, de mãos vazias perto do fogo | |
 | `vigia` | toda noite, em três turnos | o vigia, que vai e volta entre o fogo e a beira do acampamento; às vezes cochila no fogo | |
 | `brasas` | de madrugada, de 0h40 até alguém atiçar, e de novo 50 min depois, até as 5h | sem participantes: a fogueira baixa, em brasas (`x` é a fogueira) | |
@@ -300,17 +303,19 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `discussao` | incidente | dois adultos (de preferência rancorosos ou ambiciosos) discutem | |
 | `construcao` | no dia e no seguinte a uma conquista de estágio, à agricultura, ou a cabanas derrubadas por tempestade, terremoto ou dilúvio | até 6 pessoas `construir` na obra nova (templo, forja, arquivo, moinho ou casas) | `obra` |
 
-**As etapas da caçada.** A cena `cacada` traz `etapas`, em ordem, para a apresentação encenar o bicho e a lança: `{etapa, ini, fim, x, x_bicho}`, com `ini` e `fim` em horas do dia, `x` onde estão os caçadores e `x_bicho` onde está o porco (-1 quando ele não está mais no chão).
+**As etapas da caçada.** A cena `cacada` traz `etapas`, em ordem, para a apresentação encenar o bicho e a lança: `{etapa, ini, fim, x, x_bicho}`, com `ini` e `fim` em horas do dia, `x` onde estão os caçadores (na espreita, o da frente) e `x_bicho` onde está o porco (-1 quando ele não está mais no chão).
+
+A espreita vem em várias etapas `espreita` seguidas (9 a 11; 6 a 8 quando o fogo está perto do porco e não há espaço para mais), uma por avanço: a cada 6 a 8 min de jogo (uns 10 a 15 s em 1x), os caçadores dão 2 a 4 px na direção do porco e agacham de novo, e o porco, que fuça, muda de lugar 0 a 3 px (`x_bicho` muda de uma etapa para a outra; a apresentação pode deslizar entre as duas). Os de trás vão em fila, a 3 px uns dos outros. A última `espreita` traz `mira: true`: 0,8 min (uns 1,5 s em 1x) em que o da frente fica parado com a lança erguida (`mirar`) e os outros apontam (`apontar`). O arremesso dura 6 min (uns 11 s), e os de trás continuam apontando. Constantes: `Rotina.MIRA`, `ARREMESSO`, `ABATE` e `REPARTIR`.
 
 | Etapa | O que se vê | Detalhe dos caçadores |
 |---|---|---|
-| `saida` | juntos no fogo, prontos para sair; o porco já aparece na borda (`x_bicho`) | `parado` |
-| `espreita` | agachados, chegando aos poucos, de 12 em 12 minutos; o porco fuça e se mexe um pouco | `espreitar` (andando, `levar_lanca`) |
-| `arremesso` | a lança voa até o porco | `arremessar` |
+| `saida` | juntos no fogo, prontos para sair, e a caminhada até a borda (até o começo da espreita); o porco já aparece na borda (`x_bicho`) | `parado` |
+| `espreita` | agachados, chegando aos poucos, 2 a 4 px a cada 6 a 8 min; o porco fuça e se mexe também | `espreitar` (andando, `levar_lanca`); na `mira`, `mirar` (o da frente) e `apontar` (os outros) |
+| `arremesso` | a lança voa até o porco | `arremessar` (o da frente) e `apontar` (os outros) |
 | `abatido` | o porco caído; os caçadores abaixados junto dele | `recolher_caca` |
 | `fuga` | (no lugar de `abatido`, quando `vazia`) o porco foge 40 px para dentro da mata | — |
 | `volta` | a volta até o fogo, com o porco amarrado no pau (ou de mãos vazias) | `caca_no_pau` (andando) |
-| `repartir` | no fogo, repartindo a caça (ou `maos_vazias`, com a cena `caca_vazia`) | `repartir` |
+| `repartir` | no fogo, no fim de tarde, repartindo a caça, com quem espera no espeto (`cozinha`, ação `cozinhar`, detalhe `espeto`, do lado de quem chega, desde 3 min antes); ou `maos_vazias`, com a cena `caca_vazia` | `repartir` |
 
 A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 

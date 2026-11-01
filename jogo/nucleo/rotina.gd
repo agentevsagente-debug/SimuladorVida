@@ -38,7 +38,7 @@ const DETALHES := ["colher_arbusto", "cavar_raiz", "catar_lenha", "colher_roca",
 	"buscar_agua", "guardar", "banho", "cozinhar", "comer", "brincar", "vigia", "olhar_ceu", "reza_noturna",
 	"historias", "doente", "repartir", "maos_vazias", "brigar", "separar", "machucado", "espantar", "perdido",
 	"buscar", "discutir", "descansar", "ninar", "carregar_feixe", "carregar_cesto_cabeca", "espreitar",
-	"arremessar", "recolher_caca", "caca_no_pau", "bocejar", "aticar", "cochilar", "levar_cesto", "levar_vara", "levar_machado", "levar_pote", "levar_lanca"]
+	"arremessar", "mirar", "apontar", "espeto", "recolher_caca", "caca_no_pau", "bocejar", "aticar", "cochilar", "levar_cesto", "levar_vara", "levar_machado", "levar_pote", "levar_lanca"]
 ## A ferramenta que se leva a caminho do trabalho, pelo detalhe do trabalho.
 const LEVAR := {"colher_arbusto": "levar_cesto", "cavar_raiz": "levar_cesto", "colher_roca": "levar_cesto",
 	"catar_lenha": "levar_machado", "buscar_agua": "levar_pote", "banho": "levar_pote", "brincar": ""}
@@ -615,6 +615,7 @@ func _vida_social(g) -> void:
 	var c: Dictionary = ctx[g.id]
 	_cacada(g, c)
 	_papeis_do_dia(g)
+	_cozinha_da_cacada(g, c)
 	_noite(g, c)
 	_incidentes(g, c)
 	_travessias(g, c)
@@ -630,9 +631,9 @@ func _vida_social(g) -> void:
 			var a = adultos[i]
 			var b = adultos[i + 1]
 			var x := _lugar_fogo(a, c) + (ruido(a.id, dia, janela[2]) - 0.5) * 6.0
-			# Cada par termina numa hora (10 min antes ou depois do fim da janela): ninguém
+			# Cada par termina numa hora (até 15 min antes ou depois do fim da janela): ninguém
 			# volta ao trabalho todo mundo junto.
-			var fim: float = janela[1] - 10.0 + ruido(a.id, dia, janela[2] + 50) * 20.0
+			var fim: float = janela[1] - 15.0 + ruido(a.id, dia, janela[2] + 50) * 30.0
 			if _fixar(a.id, [_parada(janela[0], fim, x - 4.0, "conversar", "andar", 1)]):
 				if not _fixar(b.id, [_parada(janela[0], fim, x + 4.0, "conversar", "andar", -1)]):
 					fixos[a.id].pop_back()
@@ -1009,8 +1010,13 @@ func _tentar_conversa(g, t: float, w: int, ultimos: Dictionary, dist: float) -> 
 				# b vai até perto de a: os dois blocos precisam cobrir a ida, a conversa e a volta.
 				if _bloco_de_trabalho(a.id, t, anda + dur + 1.0) != ia or _bloco_de_trabalho(b.id, t, 2.0 * anda + dur + 1.0) != ib:
 					continue
+				# b para do lado de a que fica longe do fogo.
+				var xc: float = xa + lado * 6.0
+				if absf(xc - ctx[g.id]["fogo"]) < FOGO_LIVRE + 0.5:
+					lado = -lado
+					xc = xa + lado * 6.0
 				_conversar_no_bloco(a.id, ia, t + anda, t + anda + dur, int(lado))
-				_conversar_no_bloco(b.id, ib, t, t + anda + dur, int(-lado), xa + lado * 6.0)
+				_conversar_no_bloco(b.id, ib, t, t + anda + dur, int(-lado), xc)
 			else:
 				_conversar_no_bloco(a.id, ia, t, t + dur, int(lado))
 				_conversar_no_bloco(b.id, ib, t, t + dur, int(-lado))
@@ -1269,11 +1275,18 @@ func _a_caminho(tarefa: Dictionary) -> String:
 # ---------------------------------------------------------------- o dia no mundo inteiro
 
 ## A caçada, à tarde, na borda da floresta do lado da vila (x de 200 a 240): 2 a 4 adultos saem juntos do
-## fogo, espreitam o porco agachados, chegando aos poucos, arremessam a lança e, se acertam,
-## recolhem o bicho caído e voltam com ele no pau até a fogueira, onde a caça é repartida.
+## fogo, espreitam o porco agachados, chegando aos poucos (2 a 4 px a cada 6 a 8 min de jogo,
+## uns 10 a 15 s em 1x) enquanto o porco fuça e se mexe também; quem vai na frente ergue a
+## lança, para um instante (`mirar`) e arremessa, e os de trás apontam. Se acertam, recolhem o
+## bicho caído e voltam com ele no pau, atravessando a vila até a fogueira, onde a caça é
+## repartida no fim de tarde (17h25 às 17h55), com alguém do povo no espeto.
 ## As etapas vão na cena (`etapas`), com a hora e o lugar de cada uma e onde está o bicho,
-## para a apresentação encenar.
+## para a apresentação encenar; a espreita vem em várias etapas seguidas, uma por avanço.
 const ETAPAS_CACADA := ["saida", "espreita", "arremesso", "abatido", "fuga", "volta", "repartir"]
+const MIRA := 0.8          # min de jogo com a lança erguida antes de soltar (uns 1,5 s em 1x)
+const ARREMESSO := 6.0     # min de jogo do arremesso: a lança voa, crava, o bicho tomba ou foge
+const ABATE := 16.0        # min de jogo recolhendo o bicho (ou a lança, quando ele fugiu)
+const REPARTIR := 22.0     # min de jogo repartindo a caça no fogo
 
 
 func _cacada(g, c: Dictionary) -> void:
@@ -1290,48 +1303,75 @@ func _cacada(g, c: Dictionary) -> void:
 	if absf(bicho0 - c["fogo"]) < 35.0:
 		bicho0 = c["fogo"] - 35.0 if c["fogo"] - 35.0 >= floresta[0] + 6.0 else c["fogo"] + 35.0
 	var lado: float = 1.0 if bicho0 > c["fogo"] else -1.0
-	var borda: float = bicho0 - lado * 14.0             # onde os caçadores espreitam
+	var bicho1: float = bicho0 + lado * 6.0              # onde o porco está no arremesso
+	var perto: float = bicho1 - lado * 12.0              # de onde a lança sai
 	var vazia := ruido(g.id, dia, 903) < 0.3
 	var id := "cacada:%d:%d" % [g.id, dia]
-	var saida := 760.0 + ruido(g.id, dia, 904) * 20.0
-	var chega_borda := saida + 12.0 + absf(borda - c["fogo"]) / VELOCIDADE
-	var arremesso := maxf(chega_borda + 60.0, 920.0 + ruido(g.id, dia, 905) * 20.0)
-	var bicho1: float = bicho0 + lado * 6.0              # o porco se mexe enquanto espreitam
-	var fim_abate := arremesso + 18.0
-	var volta_ini := fim_abate + 2.0
-	var chega := volta_ini + absf(c["fogo"] - bicho1) / VELOCIDADE
-	var etapas: Array = [
-		{"etapa": "saida", "ini": saida / 60.0, "fim": (saida + 12.0) / 60.0, "x": c["fogo"], "x_bicho": bicho0},
-		{"etapa": "espreita", "ini": chega_borda / 60.0, "fim": arremesso / 60.0, "x": borda, "x_bicho": bicho1},
-		{"etapa": "arremesso", "ini": arremesso / 60.0, "fim": (arremesso + 4.0) / 60.0, "x": bicho1 - lado * 12.0, "x_bicho": bicho1},
-		{"etapa": "fuga" if vazia else "abatido", "ini": (arremesso + 4.0) / 60.0, "fim": fim_abate / 60.0, "x": bicho1,
-			"x_bicho": bicho1 + lado * 40.0 if vazia else bicho1},
-		{"etapa": "volta", "ini": volta_ini / 60.0, "fim": chega / 60.0, "x": c["fogo"], "x_bicho": -1.0},
-		{"etapa": "repartir", "ini": chega / 60.0, "fim": (chega + 20.0) / 60.0, "x": c["fogo"], "x_bicho": -1.0}]
-	var cena := _registrar_cena(id, "cacada", g, null, saida, chega + 20.0, [], bicho1, {"vazia": vazia, "bicho": "porco",
-		"etapas": etapas})
+	# De trás para a frente: a volta chega ao fogo no fim de tarde (17h25 às 17h33).
+	var chega := 1045.0 + ruido(g.id, dia, 906) * 8.0
+	var fim_abate := chega - absf(c["fogo"] - bicho1) / VELOCIDADE
+	var solta := fim_abate - ABATE - ARREMESSO
+	var mira := solta - MIRA
+	# A espreita: até 11 avanços de 2 a 4 px, um a cada 6 a 8 min, até `perto`. Os de trás vão
+	# em fila, a 3 px uns dos outros, e ninguém começa em cima do fogo.
+	var passos := 9 + int(ruido(g.id, dia, 907) * 3.0)
+	var pxs: Array = []
+	var dts: Array = []
+	var total := 0.0
+	for k in passos:
+		pxs.append(2.0 + ruido(g.id, dia, 930 + k) * 2.0)
+		dts.append(6.0 + ruido(g.id, dia, 910 + k) * 2.0)
+		total += pxs[k]
+	# Sem espaço até o fogo, a espreita fica mais curta (6 avanços, no mínimo), não os passos menores.
+	var cabe: float = absf(perto - c["fogo"]) - 8.0 - 3.0 * (n - 1)
+	while passos > 6 and total > cabe:
+		total -= pxs.pop_back()
+		dts.pop_back()
+		passos -= 1
+	var escala: float = minf(1.0, maxf(cabe, passos * 2.0) / total)
+	var t0: float = mira
+	for k in passos:
+		t0 -= dts[k]
+	var lider: Array = [perto - lado * total * escala]   # onde o da frente está em cada avanço
+	var horas: Array = [t0]
+	for k in passos:
+		lider.append(lider[k] + lado * pxs[k] * escala)
+		horas.append(horas[k] + dts[k])
+	var saida: float = t0 - absf(lider[0] - c["fogo"]) / VELOCIDADE - 12.0
+	var etapas: Array = [{"etapa": "saida", "ini": saida / 60.0, "fim": t0 / 60.0, "x": c["fogo"], "x_bicho": bicho0}]
+	for k in passos:
+		# O porco fuça e se mexe: vai de bicho0 a bicho1, indo e voltando um pouco.
+		var xb: float = lerpf(bicho0, bicho1, float(k) / passos) + snappedf((ruido(g.id, dia, 950 + k) - 0.5) * 4.0, 0.5)
+		etapas.append({"etapa": "espreita", "ini": horas[k] / 60.0, "fim": horas[k + 1] / 60.0, "x": lider[k], "x_bicho": xb})
+	etapas.append({"etapa": "espreita", "mira": true, "ini": mira / 60.0, "fim": solta / 60.0, "x": perto, "x_bicho": bicho1})
+	etapas.append({"etapa": "arremesso", "ini": solta / 60.0, "fim": (solta + ARREMESSO) / 60.0, "x": perto, "x_bicho": bicho1})
+	etapas.append({"etapa": "fuga" if vazia else "abatido", "ini": (solta + ARREMESSO) / 60.0, "fim": fim_abate / 60.0, "x": bicho1,
+		"x_bicho": bicho1 + lado * 40.0 if vazia else bicho1})
+	etapas.append({"etapa": "volta", "ini": fim_abate / 60.0, "fim": chega / 60.0, "x": c["fogo"], "x_bicho": -1.0})
+	etapas.append({"etapa": "repartir", "ini": chega / 60.0, "fim": (chega + REPARTIR) / 60.0, "x": c["fogo"], "x_bicho": -1.0})
+	var cena := _registrar_cena(id, "cacada", g, null, saida, chega + REPARTIR, [], bicho1, {"vazia": vazia, "bicho": "porco",
+		"etapas": etapas, "cozinha": -1})
 	var info := {"tipo": "cacada", "id": id}
 	var volta_cena := {"tipo": "caca_vazia" if vazia else "cacada", "id": ("caca_vazia:%d:%d" % [g.id, dia]) if vazia else id}
 	var i := 0
 	for p in adultos:
 		if i >= n:
 			break
-		var off := (i - (n - 1) / 2.0) * 5.0
+		var atras: float = -lado * 3.0 * i
 		var paradas: Array = [_parada(saida, saida + 12.0, c["fogo"] + lado * (8.0 + i * 5.0), "parado")]
-		# Espreitando: agachados, chegando aos poucos, de 10 em 10 minutos.
-		var t := chega_borda
-		var k := 0
-		var passos := maxi(1, int((arremesso - chega_borda) / 12.0))
-		while t < arremesso - 2.0:
-			var frac := float(k) / passos
-			var xk: float = borda + lado * (frac * 8.0) - lado * 4.0 + off
-			paradas.append(_parada(t, minf(t + 10.0, arremesso), xk, "cacar", "andar", int(lado), "espreitar", "levar_lanca"))
-			t += 12.0
-			k += 1
-		paradas.append(_parada(arremesso, arremesso + 4.0, bicho1 - lado * (12.0 - off), "cacar", "andar", int(lado), "arremessar"))
-		if not vazia:
-			paradas.append(_parada(arremesso + 6.0, fim_abate, bicho1 - lado * (3.0 + i * 3.0), "parado", "andar", int(lado), "recolher_caca"))
-		var volta := _parada(chega, chega + 20.0, c["fogo"] + (6.0 + i * 5.0) * -lado, "parado", "andar" if vazia else "carregar_caca", 0,
+		# Espreitando, agachados: a cada avanço, uns passos e agacha de novo.
+		for k in passos:
+			paradas.append(_parada(horas[k], horas[k + 1] - pxs[k] * escala / VELOCIDADE, lider[k] + atras, "cacar", "andar", int(lado),
+				"espreitar", "levar_lanca"))
+		if i == 0:
+			paradas.append(_parada(mira, solta, perto, "cacar", "andar", int(lado), "mirar"))
+			paradas.append(_parada(solta, solta + ARREMESSO, perto, "cacar", "andar", int(lado), "arremessar"))
+		else:
+			paradas.append(_parada(mira, solta + ARREMESSO, perto + atras, "cacar", "andar", int(lado), "apontar"))
+		# Acertou: recolhem o bicho. Errou: vão buscar a lança, onde o bicho estava.
+		paradas.append(_parada(solta + ARREMESSO + 1.0, fim_abate, bicho1 - lado * (3.0 + i * 3.0), "parado", "andar", int(lado),
+			"" if vazia else "recolher_caca"))
+		var volta := _parada(chega, chega + REPARTIR, c["fogo"] + (6.0 + i * 5.0) * -lado, "parado", "andar" if vazia else "carregar_caca", 0,
 			"maos_vazias" if vazia else "repartir", "" if vazia else "caca_no_pau")
 		paradas.append(volta)
 		if _fixar(p.id, paradas, info):
@@ -1340,8 +1380,31 @@ func _cacada(g, c: Dictionary) -> void:
 			i += 1
 	if i == 0:
 		cenas.erase(cena)
-	elif vazia:
-		_registrar_cena(volta_cena["id"], "caca_vazia", g, null, chega, chega + 20.0, cena["participantes"].duplicate(), c["fogo"])
+		return
+	if vazia:
+		_registrar_cena(volta_cena["id"], "caca_vazia", g, null, chega, chega + REPARTIR, cena["participantes"].duplicate(), c["fogo"])
+		return
+	cena["chega"] = chega
+	cena["lado"] = lado
+
+
+## A caça chega ao fogo: alguém do povo já está lá, com o espeto, do lado de quem chega.
+## Depois dos papéis do dia: o pescador, quem busca água e quem colhe longe continuam no que fazem.
+## O bloco de quem cozinha não leva a cena (ele não é caçador; a cena diz quem é, em `cozinha`).
+func _cozinha_da_cacada(g, c: Dictionary) -> void:
+	for cena in cenas:
+		if cena["tipo"] != "cacada" or cena["grupo"] != g.id or cena["vazia"] or not cena.has("chega"):
+			continue
+		var chega: float = cena["chega"]
+		var lado: float = cena["lado"]
+		cena.erase("chega")
+		cena.erase("lado")
+		for p in _embaralhados(_adultos(g, 14, 70), 908):
+			if cena["participantes"].has(p.id) or papeis.has(p.id):
+				continue
+			if _fixar(p.id, [_parada(chega - 3.0, chega + REPARTIR + 2.0, c["fogo"] + lado * 7.0, "cozinhar", "andar", int(-lado), "espeto")]):
+				cena["cozinha"] = p.id
+				break
 
 
 ## Travessias: a cada hora do dia (6h às 20h), alguém atravessa a tela com uma carga grande
