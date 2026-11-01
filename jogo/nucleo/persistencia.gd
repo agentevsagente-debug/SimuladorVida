@@ -12,6 +12,16 @@ extends RefCounted
 ## como uma lista de valores na mesma ordem (versão 2 do arquivo). A versão 1, com um
 ## dicionário por objeto, continua sendo lida.
 ##
+## Desde a versão 3, os eventos e os mortos de mais de 300 anos que o mundo arquivou (veja
+## mundo._arquivar_antigos) vão num arquivo à parte, ao lado do mundo salvo
+## (user://mundo.antigos.txt, com as mesmas cópias de segurança). Ele só cresce: uma versão
+## mais nova serve a um mundo salvo mais velho, que usa só as primeiras linhas. Como o mundo
+## arquiva um pouco todo dia, as linhas novas vão dentro do próprio mundo salvo
+## ("antigos_pendentes") até passarem de ANTIGOS_PENDENTES; aí o arquivo dos antigos é
+## regravado inteiro, antes do mundo. Os eventos vivos levam o id, e os arquivados ficam como
+## buracos na lista.
+const ANTIGOS_PENDENTES := 300
+##
 ## `salvar_async` não trava o jogo: na linha principal só se tira um retrato do que pode
 ## mudar fora de um passo (os campos do mundo e a crônica); o resto (pessoas, povos,
 ## eventos) é lido e gravado numa thread. Enquanto isso, o mundo não muda: o passo e os
@@ -23,20 +33,22 @@ const Grupo = preload("grupo.gd")
 const Zona = preload("zona.gd")
 const Evento = preload("evento.gd")
 
-const VERSAO := 2
-const VERSOES_LIDAS := [1, 2]
+const VERSAO := 3
+const VERSOES_LIDAS := [1, 2, 3]
 const CABECALHO := "# Simulador de vida: mundo salvo. Arquivo de texto do Godot (var_to_str).\n"
 const CAMINHO_PADRAO := "user://mundo.txt"
 ## Campos do mundo que não são copiados um a um: objetos, guardados à parte.
 const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos",
 	"recuperado_de", "_salvamento", "ultimo_salvamento_ok", "_rotina_cache", "_montando", "_tarefa", "_descartes", "_fichas_chave", "_eventos_por_tipo", "_por_tipo_ate", "_rotina_versao", "_consultado", "desempenho", "_visiveis_chave", "_visiveis", "_fichas", "_cenas_chave", "_cenas",
-	"_construcoes_chave", "_construcoes", "_preces_chave", "_preces", "_textos_prece", "_obras_por_grupo"]
+	"_construcoes_chave", "_construcoes", "_preces_chave", "_preces", "_textos_prece", "_obras_por_grupo",
+	"arquivar", "_arquivo", "_arquivo_gravado"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
 ## Campos do cronista que os arquivos antigos não têm: gravados sempre, lidos se existirem.
-const CAMPOS_CRONISTA_NOVOS := ["_recentes"]
+const CAMPOS_CRONISTA_NOVOS := ["_recentes", "_fatia", "_indice_ate"]
 const Estante = preload("estante.gd")
 const Arquivo = preload("arquivo.gd")
+const Antigos = preload("antigos.gd")
 const COPIAS := Arquivo.COPIAS
 
 
@@ -46,7 +58,38 @@ const COPIAS := Arquivo.COPIAS
 static func salvar(m, caminho: String = CAMINHO_PADRAO) -> bool:
 	m._esperar_threads()
 	_preparar(m)
-	return Arquivo.gravar_com_copias(caminho, _texto(_para_dict(m)))
+	var plano := _plano_dos_antigos(m, caminho)
+	if plano["regravar"] and not _gravar_antigos(m, caminho, m._arquivo.conteudo(), plano["no_arquivo"]):
+		return false
+	var d := _para_dict(m)
+	d["antigos_no_arquivo"] = plano["no_arquivo"]
+	d["antigos_pendentes"] = m._arquivo.linhas_desde(plano["no_arquivo"])
+	return Arquivo.gravar_com_copias(caminho, _texto(d))
+
+
+## Quantas linhas dos antigos ficam no arquivo à parte, e se ele precisa ser regravado (as
+## que passam disso vão dentro do mundo salvo).
+static func _plano_dos_antigos(m, caminho: String) -> Dictionary:
+	var n: int = m._arquivo.linhas()
+	var no_arquivo: int = m._arquivo_gravado.get(caminho, 0)
+	if no_arquivo > n or not FileAccess.file_exists(caminho_antigos(caminho)):
+		no_arquivo = 0
+	if n - no_arquivo > ANTIGOS_PENDENTES:
+		return {"regravar": true, "no_arquivo": n}
+	return {"regravar": false, "no_arquivo": no_arquivo}
+
+
+## O caminho do arquivo dos antigos de um mundo salvo: user://mundo.txt -> user://mundo.antigos.txt.
+static func caminho_antigos(caminho: String) -> String:
+	return "%s.antigos.%s" % [caminho.get_basename(), caminho.get_extension()]
+
+
+## Grava o arquivo dos antigos, se ele mudou desde a última gravação neste caminho.
+static func _gravar_antigos(m, caminho: String, conteudo: PackedByteArray, n: int) -> bool:
+	if not Arquivo.gravar_com_copias(caminho_antigos(caminho), conteudo):
+		return false
+	m._arquivo_gravado[caminho] = n
+	return true
 
 
 ## Grava o mundo numa thread, sem travar o jogo: na linha principal fica só o retrato do que
@@ -60,6 +103,12 @@ static func salvar_async(m, caminho: String = CAMINHO_PADRAO) -> void:
 	var g := Gravacao.new()
 	g.mundo = m
 	g.retrato = _retrato(m)
+	# O arquivo dos antigos só é regravado de tempos em tempos (o conteúdo é montado na thread);
+	# as linhas novas vão dentro do mundo salvo.
+	var plano := _plano_dos_antigos(m, caminho)
+	g.regravar_antigos = plano["regravar"]
+	g.antigos_n = plano["no_arquivo"]
+	g.retrato["antigos_no_arquivo"] = plano["no_arquivo"]
 	g.caminho = caminho
 	g.persistencia = load(_ESTE_SCRIPT)
 	m._salvamento = g
@@ -85,6 +134,8 @@ class Gravacao:
 	extends RefCounted
 	var mundo        # seguro aqui até a gravação acabar
 	var retrato: Dictionary
+	var regravar_antigos := false
+	var antigos_n: int = 0
 	var caminho: String
 	var persistencia
 	var tarefa: int = -1
@@ -92,7 +143,10 @@ class Gravacao:
 
 	func rodar() -> void:
 		persistencia._completar(retrato, mundo)
-		ok = Arquivo.gravar_com_copias(caminho, persistencia._texto(retrato))
+		# As linhas dos antigos que vão dentro do mundo salvo (o mundo não muda enquanto grava).
+		retrato["antigos_pendentes"] = mundo._arquivo.linhas_desde(antigos_n)
+		ok = (not regravar_antigos or persistencia._gravar_antigos(mundo, caminho, mundo._arquivo.conteudo(), antigos_n)) \
+			and Arquivo.gravar_com_copias(caminho, persistencia._texto(retrato))
 
 
 static func _preparar(m) -> void:
@@ -115,10 +169,12 @@ static func abandonar(m, caminho: String = CAMINHO_PADRAO) -> Dictionary:
 		if not l["na_estante"]:
 			Estante.guardar(l)
 			l["na_estante"] = true
-	# O mundo abandonado não volta: vão também as cópias de segurança dele.
-	for c in [caminho] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(caminho, n)):
-		if FileAccess.file_exists(c):
-			DirAccess.remove_absolute(ProjectSettings.globalize_path(c))
+	# O mundo abandonado não volta: vão também as cópias de segurança dele, e o arquivo dos
+	# antigos com as cópias dele.
+	for base in [caminho, caminho_antigos(caminho)]:
+		for c in [base] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(base, n)):
+			if FileAccess.file_exists(c):
+				DirAccess.remove_absolute(ProjectSettings.globalize_path(c))
 	return livro
 
 
@@ -135,11 +191,11 @@ static func existe(caminho: String = CAMINHO_PADRAO) -> bool:
 ## para a mais velha; o mundo que voltou de uma cópia traz `recuperado_de` (o caminho dela).
 ## Devolve null se nenhum serve.
 static func carregar(caminho: String = CAMINHO_PADRAO):
-	var m = _ler_mundo(caminho)
+	var m = _ler_mundo(caminho, caminho)
 	if m != null:
 		return m
 	for n in range(1, COPIAS + 1):
-		m = _ler_mundo(Arquivo.copia(caminho, n))
+		m = _ler_mundo(Arquivo.copia(caminho, n), caminho)
 		if m != null:
 			push_warning("Mundo salvo estragado: recuperado de " + Arquivo.copia(caminho, n))
 			m.recuperado_de = Arquivo.copia(caminho, n)
@@ -147,7 +203,7 @@ static func carregar(caminho: String = CAMINHO_PADRAO):
 	return null
 
 
-static func _ler_mundo(caminho: String):
+static func _ler_mundo(caminho: String, base: String):
 	if not FileAccess.file_exists(caminho):
 		return null
 	var f := FileAccess.open(caminho, FileAccess.READ)
@@ -157,11 +213,33 @@ static func _ler_mundo(caminho: String):
 	f.close()
 	if linhas.size() < 2 or not linhas[0].begins_with("# Simulador de vida: mundo salvo."):
 		return null
-	var d = _decodificar(str_to_var(linhas[1]))
+	var d = _decodificar_mundo(str_to_var(linhas[1]))
 	if typeof(d) != TYPE_DICTIONARY or not VERSOES_LIDAS.has(d.get("versao", 0)) or not _completo(d):
 		push_warning("Arquivo de mundo inválido ou de outra versão: " + caminho)
 		return null
-	return _de_dict(d)
+	var m = _de_dict(d)
+	# Os antigos: as primeiras linhas no arquivo à parte (o dele, ou uma cópia, com pelo menos
+	# essas linhas), e as mais novas dentro do próprio mundo salvo.
+	if m.arquivo_linhas > 0:
+		var no_arquivo: int = d.get("antigos_no_arquivo", m.arquivo_linhas)
+		var antigos := caminho_antigos(base)
+		var lido := false
+		for c in [antigos] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(antigos, n)):
+			lido = m._arquivo.ler(c, no_arquivo)
+			if lido:
+				if c != antigos:
+					push_warning("Arquivo dos antigos estragado: lido de " + c)
+				elif no_arquivo > 0:
+					m._arquivo_gravado[base] = no_arquivo
+				break
+		if not lido:
+			push_warning("Falta o arquivo dos antigos de " + caminho)
+			return null
+		m._arquivo.acrescentar(d.get("antigos_pendentes", []))
+		if m._arquivo.linhas() != m.arquivo_linhas:
+			push_warning("Arquivo dos antigos incompleto: " + caminho)
+			return null
+	return m
 
 
 ## O dicionário tem tudo o que um mundo salvo precisa (um arquivo cortado ou mexido não tem).
@@ -203,51 +281,86 @@ static func carregar_e_avancar(caminho: String = CAMINHO_PADRAO, agora: int = -1
 
 # ---------------------------------------------------------------- conversão
 
-const PREFIXO_REAL := "@f:"
-
-
 static func _codificar(v):
-	match typeof(v):
-		TYPE_FLOAT:
-			return PREFIXO_REAL + str(PackedFloat64Array([v]).to_byte_array().decode_s64(0))
-		TYPE_DICTIONARY:
-			# O texto do Godot ordena as chaves; a ordem conta para o determinismo, então
-			# cada dicionário vai como lista de pares.
-			var pares: Array = []
-			for k in v:
-				pares.append([k, _codificar(v[k])])
-			return {"@ordem": pares}
-		TYPE_ARRAY:
-			var a: Array = []
-			for x in v:
-				a.append(_codificar(x))
-			return a
-	return v
+	return Antigos.codificar(v)
 
 
 static func _decodificar(v):
-	match typeof(v):
+	return Antigos.decodificar(v)
+
+## Decodifica o mundo lido. Pessoas e eventos, que são dezenas de milhares de linhas, só têm
+## decodificadas as colunas que precisam (reais, dicionários, listas com eles): percorrer todo
+## valor custava mais que ler o arquivo.
+static func _decodificar_mundo(v):
+	if typeof(v) != TYPE_DICTIONARY or not v.has("@ordem"):
+		return _decodificar(v)
+	var d := {}
+	for par in v["@ordem"]:
+		if par[0] in ["pessoas", "eventos"] and typeof(par[1]) == TYPE_DICTIONARY and par[1].has("@ordem"):
+			d[par[0]] = _decodificar_colunas(par[1], Pessoa.new() if par[0] == "pessoas" else Evento.new())
+		else:
+			d[par[0]] = _decodificar(par[1])
+	return d
+
+
+static func _decodificar_colunas(v, modelo) -> Dictionary:
+	var c := {}
+	for par in v["@ordem"]:
+		c[par[0]] = par[1]
+	if not c.has("linhas") or typeof(c["linhas"]) != TYPE_ARRAY:
+		return _decodificar(v)
+	c["campos"] = _decodificar(c.get("campos", []))
+	var linhas: Array = c["linhas"]
+	var n: int = c["campos"].size()
+	# Pelo tipo do campo na classe: reais e dicionários sempre; listas, se as primeiras
+	# linhas trazem algo a decodificar (as de pessoas e eventos só têm ids e textos). Campo
+	# que a classe não conhece: olha a coluna inteira.
+	var precisa: Array = []
+	for j in n:
+		var nome: String = c["campos"][j]
+		var tipo := typeof(modelo.get(nome)) if nome in modelo else TYPE_NIL
+		var p := tipo == TYPE_FLOAT or tipo == TYPE_DICTIONARY
+		if tipo == TYPE_ARRAY or tipo == TYPE_NIL:
+			var ate := linhas.size() if tipo == TYPE_NIL else mini(linhas.size(), 64)
+			for i in ate:
+				if j < linhas[i].size() and _precisa(linhas[i][j]):
+					p = true
+					break
+		precisa.append(p)
+	var cols: Array = []
+	for j in n:
+		if precisa[j]:
+			cols.append(j)
+	if not cols.is_empty():
+		for l in linhas:
+			for j in cols:
+				if j < l.size():
+					l[j] = _decodificar(l[j])
+	return c
+
+
+## Um valor precisa de decodificação: um real gravado em texto, um dicionário, ou uma lista
+## que tenha algum desses.
+static func _precisa(x) -> bool:
+	match typeof(x):
 		TYPE_STRING:
-			if v.begins_with(PREFIXO_REAL):
-				var b := PackedByteArray()
-				b.resize(8)
-				b.encode_s64(0, int(v.substr(PREFIXO_REAL.length())))
-				return b.decode_double(0)
+			return x.begins_with(Antigos.PREFIXO_REAL)
 		TYPE_DICTIONARY:
-			var d := {}
-			if v.size() == 1 and v.has("@ordem"):
-				for par in v["@ordem"]:
-					d[par[0]] = _decodificar(par[1])
-				return d
-			for k in v:
-				d[k] = _decodificar(v[k])
-			return d
+			return true
 		TYPE_ARRAY:
-			var a: Array = []
-			for x in v:
-				a.append(_decodificar(x))
-			return a
-	return v
+			for y in x:
+				if _precisa(y):
+					return true
+	return false
+
+
+## A posição de cada campo de CAMPOS nas colunas do arquivo (-1 se não está lá).
+static func _indices(campos_classe: Array, campos_arquivo: Array) -> PackedInt32Array:
+	var ix := PackedInt32Array()
+	for nome in campos_classe:
+		ix.append(campos_arquivo.find(nome))
+	return ix
+
 
 static func _campos(o) -> Dictionary:
 	var d := {}
@@ -335,7 +448,8 @@ static func _completar(d: Dictionary, m) -> void:
 	d["pessoas"] = _colunas(m.pessoas.values(), _nomes_por_script[Pessoa])
 	d["grupos"] = _colunas(m.grupos, _nomes_por_script[Grupo])
 	d["zonas"] = _colunas(zonas, _nomes_por_script[Zona])
-	d["eventos"] = _colunas(m.eventos, _nomes_por_script[Evento])
+	d["eventos"] = _colunas(m.eventos.filter(func(e): return e != null), _nomes_por_script[Evento])
+	d["eventos_total"] = m.eventos.size()
 
 
 static func _preencher(o, d: Dictionary) -> void:
@@ -356,12 +470,22 @@ static func _de_dict(d: Dictionary):
 	m.rng.state = d["rng_state"]
 	m.pessoas.clear()
 	m.vivos.clear()
-	for pd in _objetos(d["pessoas"]):
-		var p := Pessoa.new()
-		_preencher(p, pd)
-		m.pessoas[p.id] = p
-		if p.vivo:
-			m.vivos[p.id] = p
+	var colunas: bool = typeof(d["pessoas"]) == TYPE_DICTIONARY
+	if colunas:
+		var ix := _indices(Pessoa.CAMPOS, d["pessoas"]["campos"])
+		for l in d["pessoas"]["linhas"]:
+			var p := Pessoa.new()
+			p.de_linha(l, ix)
+			m.pessoas[p.id] = p
+			if p.vivo:
+				m.vivos[p.id] = p
+	else:
+		for pd in _objetos(d["pessoas"]):
+			var p := Pessoa.new()
+			_preencher(p, pd)
+			m.pessoas[p.id] = p
+			if p.vivo:
+				m.vivos[p.id] = p
 	m.grupos.clear()
 	for gd in _objetos(d["grupos"]):
 		var g := Grupo.new()
@@ -373,15 +497,29 @@ static func _de_dict(d: Dictionary):
 		_preencher(z, zd)
 		m.zonas[z.chave] = z
 	m.eventos.clear()
-	for ed in _objetos(d["eventos"]):
-		var e := Evento.new()
-		_preencher(e, ed)
-		m.eventos.append(e)
+	# Desde a versão 3, cada evento vai no lugar do seu id; os arquivados ficam como buracos.
+	var por_id: bool = d.has("eventos_total")
+	if por_id:
+		m.eventos.resize(d["eventos_total"])
+	if typeof(d["eventos"]) == TYPE_DICTIONARY:
+		var ix := _indices(Evento.CAMPOS, d["eventos"]["campos"])
+		for l in d["eventos"]["linhas"]:
+			var e := Evento.new()
+			e.de_linha(l, ix)
+			if por_id:
+				m.eventos[e.id] = e
+			else:
+				m.eventos.append(e)
+	else:
+		for ed in _objetos(d["eventos"]):
+			var e := Evento.new()
+			_preencher(e, ed)
+			m.eventos.append(e)
 	for k in CAMPOS_CRONISTA:
 		m._cronista.set(k, d["cronista"][k])
 	for k in CAMPOS_CRONISTA_NOVOS:
 		if d["cronista"].has(k) and typeof(d["cronista"][k]) == typeof(m._cronista.get(k)):
-			m._cronista.set(k, d["cronista"][k])
+			m._cronista.set("_indice_salvo" if k == "_indice_ate" else k, d["cronista"][k])
 	m.reindexar()
 	m._cronista.aquecer()
 	return m

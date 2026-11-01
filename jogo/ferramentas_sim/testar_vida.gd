@@ -16,7 +16,12 @@ extends SceneTree
 ##   correndo, ou um incidente;
 ## - de madrugada (0h às 4h), a cada hora, algo além do vigia: alguém que acorda, o fogo em
 ##   brasas, um bicho da noite.
-## - ninguém parado a menos de 6 px do centro da fogueira do seu povo.
+## - ninguém parado a menos de 6 px do centro da fogueira do seu povo;
+## - de dia (6h às 17h), ninguém de pé, deitado, sentado no fogo ou conversando no mesmo ponto
+##   por mais de 21 min seguidos, fora das cenas;
+## - à tarde, das 12h45 às 16h45, em média uma conversa a cada 20 min de jogo ou menos, num
+##   povo de 12 pessoas (o povo inicial, com 2 a 4 caçadores, o pescador e quem busca água fora
+##   das conversas). Com três ou quatro povos na tela, é um balão a cada poucos segundos em 1x.
 ## Imprime a tabela hora a hora da semente 1, dia 4. Sai com código 1 se alguma meta falhar.
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_vida.gd [-- so_tabela]
 
@@ -24,6 +29,7 @@ const Mundo = preload("res://nucleo/mundo.gd")
 const ZONAS := [["lago", 0.0, 136.0], ["praia", 136.0, 200.0], ["floresta", 200.0, 330.0], ["morro", 330.0, 480.0]]
 
 var falhas := 0
+var total_conversas := [0]   # conversas que começaram à tarde, em todos os dias testados
 
 
 func _initialize() -> void:
@@ -38,8 +44,12 @@ func _initialize() -> void:
 			for linha in _horas(semente, dia):
 				for p in linha["problemas"]:
 					problemas.append("semente %d, dia %d, %dh: %s" % [semente, dia, linha["hora"], p])
-	for p in problemas.slice(0, 40):
+	for p in problemas.slice(0, 400):
 		print("FALHOU: ", p)
+	var media := 240.0 * 20 / maxi(1, total_conversas[0])
+	print("à tarde (12h45 às 16h45), uma conversa a cada %.0f min de jogo, em média, num povo de 12 pessoas" % media)
+	if media > 20.0:
+		problemas.append("à tarde, uma conversa a cada %.0f min (meta: 20 ou menos)" % media)
 	print("%d horas fora da meta em 5 sementes x 4 estações (480 horas)" % problemas.size())
 	quit(1 if not problemas.is_empty() else 0)
 
@@ -54,6 +64,9 @@ func _horas(semente: int, dia: int) -> Array:
 		m.pessoas_visiveis()
 		m.avancar_hora()
 	var r: Array = []
+	var parados := {}   # id -> [x, desde, até] do trecho parado em curso
+	var conversas := {}  # janela de 15 min (12h45 às 16h45) -> conversas que começaram nela
+	var conversando := {}
 	for i in 24:
 		var h: int = m.hora()
 		var ps: Array = m.pessoas_visiveis()
@@ -76,7 +89,29 @@ func _horas(semente: int, dia: int) -> Array:
 				madrugada = true
 		var xmin := 999.0
 		var xmax := -1.0
+		var parado_demais := 0
 		for p in ps:
+			for tr in p["agenda"]:
+				var t0: float = h * 60.0 + tr["de"] * 60.0
+				var t1: float = h * 60.0 + tr["ate"] * 60.0
+				var fala: bool = tr["acao"] == "conversar"
+				if fala and not conversando.get(p["id"], false) and t0 >= 765.0 and t0 < 1005.0:
+					var jan := int((t0 - 765.0) / 60.0)
+					total_conversas[0] += 1
+					conversas[jan] = conversas.get(jan, 0) + 1
+				conversando[p["id"]] = fala
+				var conta: bool = h >= 6 and h < 17 and tr["x0"] == tr["x1"] and tr["acao"] in ["parado", "deitar", "fogueira", "conversar"] 					and tr["cena"].is_empty()
+				if not conta:
+					parados.erase(p["id"])
+					continue
+				var pr: Array = parados.get(p["id"], [])
+				if pr.is_empty() or absf(pr[0] - tr["x0"]) > 0.01 or absf(pr[2] - t0) > 0.01:
+					pr = [tr["x0"], t0, t1]
+				else:
+					pr[2] = t1
+				parados[p["id"]] = pr
+				if pr[2] - pr[1] > 21.0 and pr[2] - pr[1] - (t1 - t0) <= 21.0:
+					parado_demais += 1
 			var vis: String = p["acao"]
 			if vis in ["colher", "andar", "lenha"] and not p.get("detalhe", "").is_empty():
 				vis = p["detalhe"]
@@ -136,6 +171,10 @@ func _horas(semente: int, dia: int) -> Array:
 			problemas.append("nenhum acontecimento legível")
 		if h <= 4 and not madrugada:
 			problemas.append("madrugada vazia")
+		if parado_demais > 0:
+			problemas.append("%d parados no mesmo ponto mais de 21 min" % parado_demais)
+		if h == 17:
+			pass
 		r.append({"hora": h, "n": ps.size(), "top": top, "topn": topn, "zonas": zonas.keys(), "acordados": acordados,
 			"movendo": movendo, "x": [xmin, xmax], "acoes": acoes, "problemas": problemas})
 		m.avancar_hora()
@@ -152,3 +191,7 @@ func _tabela(semente: int, dia: int) -> String:
 		l.append("| %02dh | %d | %s %d%% | %s | %d | %d | %d-%d | %s |" % [h["hora"], h["n"], h["top"], 100 * h["topn"] / h["n"],
 			"/".join(h["zonas"]), h["acordados"], h["movendo"], h["x"][0], h["x"][1], ", ".join(ac)])
 	return "\n".join(l)
+
+
+func _hm(minuto: int) -> String:
+	return "%dh%02d" % [minuto / 60, minuto % 60]

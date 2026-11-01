@@ -82,6 +82,9 @@ func _init(mundo, p_dia: int) -> void:
 	dia = p_dia
 	ano = p_dia / mundo.DIAS_ANO + 1
 	montada_no_passo = mundo.passo
+	if p_dia == mundo.dia_abs():
+		cortar_desde = mundo.hora()
+	_soltas_ate = maxi(0, cortar_desde - 1)
 	_grupos = mundo.grupos_vivos()
 
 
@@ -99,9 +102,26 @@ func montar(_mundo = null) -> void:
 	for g in _grupos:
 		for pid in g.membros:
 			planos[pid] = _plano(m.pessoas[pid], g)
+		if ctx.has(g.id):
+			_conversas_no_trabalho(g, ctx[g.id])
+		for pid in g.membros:
 			_linha(pid)
 			_cortar_dia(pid)
 	_grupos = []
+	# Depois de cortado o dia, só as linhas e as agendas são lidas: os planos e os blocos fixos
+	# (um terço da memória de uma rotina com 250 pessoas) saem aqui mesmo, na thread.
+	if not guardar_planos:
+		planos.clear()
+		fixos.clear()
+
+
+## Solta as agendas das horas que já passaram (antes da hora h - 1): a apresentação só lê a
+## hora corrente. Se alguém pedir uma delas de novo, ela é cortada outra vez das linhas.
+func soltar_horas_antes(h: int) -> void:
+	for k in range(_soltas_ate, h - 1):
+		for pid in _agendas:
+			_agendas[pid][k] = null
+	_soltas_ate = maxi(_soltas_ate, h - 1)
 
 
 ## Solta tudo o que a rotina guarda. O mundo chama numa thread quando a troca por outra:
@@ -610,9 +630,11 @@ func _vida_social(g) -> void:
 			var a = adultos[i]
 			var b = adultos[i + 1]
 			var x := _lugar_fogo(a, c) + (ruido(a.id, dia, janela[2]) - 0.5) * 6.0
-			var info := {}
-			if _fixar(a.id, [_parada(janela[0], janela[1], x - 4.0, "conversar", "andar", 1)]):
-				if not _fixar(b.id, [_parada(janela[0], janela[1], x + 4.0, "conversar", "andar", -1)]):
+			# Cada par termina numa hora (10 min antes ou depois do fim da janela): ninguém
+			# volta ao trabalho todo mundo junto.
+			var fim: float = janela[1] - 10.0 + ruido(a.id, dia, janela[2] + 50) * 20.0
+			if _fixar(a.id, [_parada(janela[0], fim, x - 4.0, "conversar", "andar", 1)]):
+				if not _fixar(b.id, [_parada(janela[0], fim, x + 4.0, "conversar", "andar", -1)]):
 					fixos[a.id].pop_back()
 	# Crianças correm umas atrás das outras: de manhã na praia, à tarde e à noite perto do fogo.
 	var criancas: Array = []
@@ -779,7 +801,8 @@ func _tarefas(p, g, c: Dictionary) -> Array:
 	# Quem tem papel no dia faz sobretudo o papel.
 	match papel:
 		"pescador":
-			escolhidas = ["pescar", "pescar", "agua"]
+			# O pescador fica na margem o dia todo: é ele que mantém gente no lago.
+			escolhidas = ["pescar", "pescar", "pescar"]
 		"agua":
 			escolhidas = ["agua", escolhidas[0], escolhidas[0]]
 		"longe":
@@ -918,8 +941,178 @@ func _plano(p, g) -> Array:
 	var chega_casa := maxf(t + absf(casa - x) / VELOCIDADE, minf(deita, MIN_DIA - 1.0))
 	if chega_casa < MIN_DIA - 0.5:
 		plano.append(_parada(chega_casa, MIN_DIA, casa, "dormir"))
+	plano = _sem_ficar_parado(plano, c)
 	_longe_do_fogo(plano, c)
 	return plano
+
+
+## À tarde (12h45 às 16h45), a cada 12 a 15 min, dois do mesmo povo que estão trabalhando ou à
+## toa a menos de 24 px um do outro param uns 6 min e conversam ali mesmo, um de frente para o
+## outro: na tela, sempre há conversa em algum lugar, sem tirar ninguém do lugar.
+const TRABALHOS_COM_CONVERSA := ["colher", "tecer", "consertar", "construir", "cuidar", "parado", "deitar", "fogueira"]
+
+
+func _conversas_no_trabalho(g, c: Dictionary) -> void:
+	var w := 0
+	var ultimos := {}
+	var ultima := -100
+	var horas: Array = []
+	for t in range(765, 1006, 5):
+		w += 1
+		if t - ultima < 12:
+			continue
+		var par := _tentar_conversa(g, float(t), w, ultimos, 24.0)
+		if not par.is_empty():
+			ultimos = {par[0]: true, par[1]: true}
+			ultima = t
+			horas.append(t)
+	# Meia hora sem conversa: um par mais longe (até 60 px) se encontra; um vai até o outro.
+	for k in 8:
+		var ini := 765 + k * 30
+		if horas.any(func(h): return h >= ini and h < ini + 30):
+			continue
+		for t in range(ini, ini + 25, 5):
+			w += 1
+			var par := _tentar_conversa(g, float(t), w, ultimos, 60.0)
+			if not par.is_empty():
+				ultimos = {par[0]: true, par[1]: true}
+				break
+
+
+## Dois do mesmo povo, a até `dist` px, com um bloco de trabalho ou de folga que cobre a
+## conversa: conversam. Se estão longe, o segundo vai até o primeiro e depois volta.
+## Devolve os dois ids, ou [] se não achou.
+func _tentar_conversa(g, t: float, w: int, ultimos: Dictionary, dist: float) -> Array:
+	var gente: Array = _embaralhados(g.membros.map(func(id): return m.pessoas[id]), 3900 + w)
+	# O pescador e quem busca água continuam no que fazem: são eles que levam o povo ao lago.
+	for a in gente:
+		if ultimos.has(a.id) or a.idade(ano) < 10 or papeis.get(a.id, "") in ["pescador", "agua"]:
+			continue
+		for b in gente:
+			if b == a or ultimos.has(b.id) or b.idade(ano) < 10 or papeis.get(b.id, "") in ["pescador", "agua"]:
+				continue
+			var ia := _bloco_de_trabalho(a.id, t, 9.0)
+			if ia < 0:
+				break
+			var ib := _bloco_de_trabalho(b.id, t, 9.0)
+			if ib < 0:
+				continue
+			var xa: float = planos[a.id][ia]["x"]
+			var xb: float = planos[b.id][ib]["x"]
+			var longe := absf(xa - xb)
+			if longe > dist:
+				continue
+			var lado: float = 1.0 if xb >= xa else -1.0
+			var anda: float = maxf(0.0, longe - 6.0) / VELOCIDADE if longe > 24.0 else 0.0
+			var dur: float = 5.0 + ruido(a.id, dia, 4000 + w) * 3.0
+			if anda > 0.0:
+				# b vai até perto de a: os dois blocos precisam cobrir a ida, a conversa e a volta.
+				if _bloco_de_trabalho(a.id, t, anda + dur + 1.0) != ia or _bloco_de_trabalho(b.id, t, 2.0 * anda + dur + 1.0) != ib:
+					continue
+				_conversar_no_bloco(a.id, ia, t + anda, t + anda + dur, int(lado))
+				_conversar_no_bloco(b.id, ib, t, t + anda + dur, int(-lado), xa + lado * 6.0)
+			else:
+				_conversar_no_bloco(a.id, ia, t, t + dur, int(lado))
+				_conversar_no_bloco(b.id, ib, t, t + dur, int(-lado))
+			return [a.id, b.id]
+	return []
+
+
+## O bloco de trabalho ou de folga que cobre [t, t + dur] no plano da pessoa (-1 se não há).
+func _bloco_de_trabalho(pid: int, t: float, dur: float) -> int:
+	var plano: Array = planos.get(pid, [])
+	for i in plano.size():
+		var pa: Dictionary = plano[i]
+		if pa["ini"] <= t and pa["fim"] >= t + dur and TRABALHOS_COM_CONVERSA.has(pa["acao"]) and pa["cena"].is_empty():
+			return i
+		if pa["ini"] > t:
+			break
+	return -1
+
+
+## Põe uma conversa de t a fim no meio do bloco i (em x, se dado; senão, no lugar do bloco).
+func _conversar_no_bloco(pid: int, i: int, t: float, fim: float, virado: int, x: float = -1.0) -> void:
+	var plano: Array = planos[pid]
+	var pa: Dictionary = plano[i]
+	var antes: Dictionary = pa.duplicate()
+	antes["fim"] = t
+	var fala: Dictionary = pa.duplicate()
+	fala["ini"] = t
+	fala["fim"] = fim
+	fala["acao"] = "conversar"
+	fala["detalhe"] = ""
+	fala["virado"] = virado
+	if x >= 0.0:
+		fala["x"] = x
+		fala["ida"] = "andar"
+		fala["ida_det"] = ""
+	var depois: Dictionary = pa.duplicate()
+	depois["ini"] = fim
+	if x >= 0.0:
+		depois["ida"] = "andar"
+		depois["ida_det"] = ""
+	plano[i] = depois
+	plano.insert(i, fala)
+	if t - pa["ini"] > 0.5:
+		plano.insert(i, antes)
+
+
+## De dia (6h às 17h), ninguém fica parado no mesmo ponto mais de PARADO_MAX min: quem está
+## de pé, deitado, sentado no fogo ou conversando muda de lugar (6 a 10 px) a cada 15 a 20 min,
+## e volta. A mudança sai das horas do próprio bloco (e não da pessoa): os dois de um par que
+## conversa mudam juntos e continuam um de frente para o outro. Cenas não mudam.
+const PARADO_MAX := 20.0
+const MEXIVEIS := ["parado", "deitar", "fogueira", "conversar"]
+
+
+func _sem_ficar_parado(plano: Array, c: Dictionary) -> Array:
+	var r: Array = []
+	for pa in plano:
+		if pa["fim"] - pa["ini"] <= PARADO_MAX or not MEXIVEIS.has(pa["acao"]) or not pa["cena"].is_empty() \
+				or pa["fim"] <= 360.0 or pa["ini"] >= 1020.0:
+			r.append(pa)
+			continue
+		var chave := int(pa["ini"] * 7.0 + pa["fim"])
+		var t: float = pa["ini"]
+		var k := 0
+		while t < pa["fim"] - 0.01:
+			var fim: float = minf(pa["fim"], t + 15.0 + ruido(chave, dia, 3400 + k) * 5.0)
+			if pa["fim"] - fim < 5.0:
+				# Sobra pouco: junta, se couber no limite; senão, divide o resto ao meio.
+				fim = pa["fim"] if pa["fim"] - t <= PARADO_MAX else t + (pa["fim"] - t) * 0.5
+			var q: Dictionary = pa.duplicate()
+			q["ini"] = t
+			q["fim"] = fim
+			if k % 2 == 1:
+				var d: float = (6.0 + ruido(chave, dia, 3500 + k) * 4.0) * (1.0 if ruido(chave, dia, 3600 + k) < 0.5 else -1.0)
+				q["x"] = clampf(pa["x"] + d, Cotidiano.MARGEM + 2.0, Cotidiano.LARGURA_MUNDO - 3.0)
+			if k > 0:
+				q["ida"] = "andar"
+				q["ida_det"] = ""
+			if q["acao"] == "fogueira":
+				q["virado"] = _virado_ao_fogo(q["x"], c)
+			r.append(q)
+			t = fim
+			k += 1
+	# Blocos seguidos no mesmo ponto (buscar água e descansar na margem, por exemplo) também
+	# somam: o que passaria de PARADO_MAX muda de lugar. As conversas ficam onde estão (o par
+	# combinou o lugar).
+	var desde := -1.0
+	var x_atual := -9999.0
+	for q in r:
+		if absf(q["x"] - x_atual) > 0.01:
+			x_atual = q["x"]
+			desde = q["ini"]
+			continue
+		if q["fim"] - desde > PARADO_MAX and MEXIVEIS.has(q["acao"]) and q["acao"] != "conversar" and q["cena"].is_empty() 				and q["ini"] >= 360.0 and q["ini"] < 1020.0:
+			var chave := int(q["ini"] * 7.0 + q["fim"])
+			var d: float = (6.0 + ruido(chave, dia, 3700) * 4.0) * (1.0 if ruido(chave, dia, 3800) < 0.5 else -1.0)
+			q["x"] = clampf(q["x"] + d, Cotidiano.MARGEM + 2.0, Cotidiano.LARGURA_MUNDO - 3.0)
+			if q["acao"] == "fogueira":
+				q["virado"] = _virado_ao_fogo(q["x"], c)
+			x_atual = q["x"]
+			desde = q["ini"]
+	return r
 
 
 ## Ninguém para em cima da fogueira: quem cair a menos de FOGO_LIVRE px do centro dela vai
@@ -1023,7 +1216,9 @@ func _encher(plano: Array, tarefas: Array, gerar: bool, t: float, x: float, ate:
 			break
 		var tarefa: Dictionary = tarefas[ti]
 		ti += 1
-		var destino: float = x if tarefa["x"] < 0.0 else tarefa["x"]
+		# x < 0: onde a pessoa estiver (o fim do último bloco do plano).
+		var aqui: float = plano[-1]["x"] if not plano.is_empty() else x
+		var destino: float = aqui if tarefa["x"] < 0.0 else tarefa["x"]
 		var chega := t + absf(destino - x) / VELOCIDADE
 		if tarefa.get("desde", 0.0) > chega + 1.0:
 			# Chegou antes da hora: espera fazendo algo (quem cozinha já prepara; os outros conversam).
@@ -1073,7 +1268,7 @@ func _a_caminho(tarefa: Dictionary) -> String:
 
 # ---------------------------------------------------------------- o dia no mundo inteiro
 
-## A caçada, à tarde, na borda da floresta (perto da vista): 2 a 4 adultos saem juntos do
+## A caçada, à tarde, na borda da floresta do lado da vila (x de 200 a 240): 2 a 4 adultos saem juntos do
 ## fogo, espreitam o porco agachados, chegando aos poucos, arremessam a lança e, se acertam,
 ## recolhem o bicho caído e voltam com ele no pau até a fogueira, onde a caça é repartida.
 ## As etapas vão na cena (`etapas`), com a hora e o lugar de cada uma e onde está o bicho,
@@ -1086,16 +1281,16 @@ func _cacada(g, c: Dictionary) -> void:
 	if adultos.size() < 3 or ruido(g.id, dia, 900) > 0.9:
 		return
 	var n := clampi(adultos.size() / 3, 2, 4)
-	# A borda da floresta mais perto do fogo (a de lá ou a de cá, conforme o dia).
+	# O porco aparece a uns 20 px da borda da floresta do lado da vila (x de 216 a 224), em
+	# chão aberto, longe dos arbustos, e os caçadores chegam pelo lado do fogo. Se o fogo está
+	# ali perto, o porco fica a 35 px dele, do lado da borda (ou para dentro da mata, se não há
+	# espaço).
 	var floresta: Array = Cotidiano.FAIXAS["floresta"]
-	var bordas := [floresta[0] + 6.0, floresta[1] - 6.0]
-	if c["fogo"] < floresta[0]:
-		bordas = [floresta[0] + 6.0]
-	elif c["fogo"] > floresta[1]:
-		bordas = [floresta[1] - 6.0]
-	var borda: float = bordas[int(ruido(g.id, dia, 902) * bordas.size()) % bordas.size()]
-	var lado: float = 1.0 if borda > c["fogo"] else -1.0
-	var bicho0: float = borda + lado * 14.0             # onde o porco aparece
+	var bicho0: float = floresta[0] + 16.0 + ruido(g.id, dia, 902) * 8.0
+	if absf(bicho0 - c["fogo"]) < 35.0:
+		bicho0 = c["fogo"] - 35.0 if c["fogo"] - 35.0 >= floresta[0] + 6.0 else c["fogo"] + 35.0
+	var lado: float = 1.0 if bicho0 > c["fogo"] else -1.0
+	var borda: float = bicho0 - lado * 14.0             # onde os caçadores espreitam
 	var vazia := ruido(g.id, dia, 903) < 0.3
 	var id := "cacada:%d:%d" % [g.id, dia]
 	var saida := 760.0 + ruido(g.id, dia, 904) * 20.0
@@ -1260,13 +1455,25 @@ func _noite(g, c: Dictionary) -> void:
 		brasa_ini = t_at + 50.0
 	if brasa_ini < 290.0:
 		_registrar_cena("brasas:%d:%d:%d" % [g.id, dia, int(brasa_ini)], "brasas", g, null, brasa_ini, 300.0, [], c["fogo"])
-	# Um bicho da noite chega perto: a coruja no galho, o morcego no lago, a raposa na beira.
-	var bichos := [["coruja", c["mata"]], ["morcego", c["margem"] + 10.0], ["raposa", borda], ["sapo", c["margem"] + 4.0]]
-	for k in 1 + (1 if ruido(g.id, dia, 985) < 0.5 else 0):
-		var b: Array = bichos[int(ruido(g.id, dia, 986 + k) * bichos.size()) % bichos.size()]
-		var t: float = 20.0 + ruido(g.id, dia, 988 + k) * 240.0
-		_registrar_cena("bicho_noturno:%d:%d:%d" % [g.id, dia, k], "bicho_noturno", g, null, t, t + 25.0 + ruido(g.id, dia, 990 + k) * 20.0,
-			[], b[1], {"bicho": b[0]})
+	# A coruja fica a noite toda na árvore da mata mais perto da vila (das 21h às 5h).
+	var arvore: float = clampf(c["fogo"], Cotidiano.FAIXAS["floresta"][0] + 6.0, Cotidiano.FAIXAS["floresta"][1] - 6.0)
+	for janela in [[0.0, 300.0], [1260.0, MIN_DIA]]:
+		_registrar_cena("coruja:%d:%d:%d" % [g.id, dia, int(janela[0])], "bicho_noturno", g, null, janela[0], janela[1],
+			[], arvore, {"bicho": "coruja", "fixo": true})
+	# Os outros passam a cada 15 a 30 min: a raposa trotando pela beira do acampamento, o
+	# morcego sobre o lago, o sapo na margem. `x_fim` é onde o bicho termina a passagem.
+	var bichos := [["raposa", borda, borda + (30.0 if borda < c["fogo"] else -30.0)],
+		["morcego", c["margem"] + 4.0, c["margem"] + 24.0], ["sapo", c["margem"] + 4.0, c["margem"] + 8.0]]
+	var k := 0
+	for janela in [[0.0, 300.0], [1260.0, MIN_DIA]]:
+		var t: float = janela[0] + 5.0 + ruido(g.id, dia, 986) * 15.0
+		while t < janela[1] - 8.0:
+			var b: Array = bichos[int(ruido(g.id, dia, 2100 + k) * bichos.size()) % bichos.size()]
+			var dur: float = 6.0 + ruido(g.id, dia, 2200 + k) * 4.0
+			_registrar_cena("bicho_noturno:%d:%d:%d" % [g.id, dia, k], "bicho_noturno", g, null, t, minf(t + dur, janela[1]),
+				[], b[1], {"bicho": b[0], "fixo": false, "x_fim": b[2]})
+			t += 15.0 + ruido(g.id, dia, 2300 + k) * 15.0
+			k += 1
 	# Alguém vai ao lago de madrugada.
 	if ruido(g.id, dia, 955) < 0.5:
 		var p = adultos[(3 + int(ruido(g.id, dia, 956) * 5.0)) % adultos.size()]
@@ -1388,7 +1595,13 @@ func _cumprir_bloco(plano: Array, bloco: Dictionary, t: float, x: float) -> floa
 ## [t0, t1, x0, x1, acao, virado, cena]. Montada uma vez por dia; as consultas só buscam nela.
 var linhas: Dictionary = {}      # id -> Array de trechos
 var _inicios: Dictionary = {}    # id -> PackedFloat64Array com os t0, para a busca binária
-var _agendas: Dictionary = {}    # id -> as 24 agendas do dia (null: hora ainda não cortada)
+var _agendas: Dictionary = {}    # id -> as 24 agendas do dia (null: hora ainda não cortada, ou já solta)
+var _soltas_ate: int = 0         # as agendas das horas antes desta já foram soltas
+## Até que hora a thread já corta as agendas (as outras são cortadas quando pedidas). A rotina
+## de amanhã montada às 23h só serve até ser refeita, na 1h: ela corta só as primeiras horas.
+var cortar_ate: int = 24
+var guardar_planos := false      # para as ferramentas: não solta os planos depois de montar
+var cortar_desde: int = 0        # a rotina de hoje montada no meio do dia não corta as horas que já passaram
 
 
 func _linha(pid: int) -> Array:
@@ -1404,15 +1617,32 @@ func _linha(pid: int) -> Array:
 			_trecho(segs, t, t + anda, prev["x"], pa["x"], pa["ida"], 1 if pa["x"] > prev["x"] else -1, pa["cena"], pa.get("ida_det", ""))
 			t += anda
 		if pa["ini"] > t + 0.001:
-			# Esperando a hora marcada: quem está brincando continua brincando.
+			# Esperando a hora marcada: quem está brincando continua brincando. Uma espera
+			# longa de dia muda de lugar a cada 15 a 20 min (veja PARADO_MAX).
 			var espera: String = "brincar" if pa["acao"] == "brincar" else "parado"
-			_trecho(segs, t, pa["ini"], pa["x"], pa["x"], espera, pa["virado"], pa["cena"], pa["detalhe"] if espera != "parado" else "")
+			var de_dia: bool = t >= 360.0 and t < 1020.0 and pa["cena"].is_empty()
+			if espera == "parado" and pa["ini"] - t > PARADO_MAX and de_dia:
+				_esperar_mexendo(segs, t, pa["ini"], pa["x"], pa["virado"], pid)
+			elif espera == "parado" and de_dia and pa["fim"] - t > PARADO_MAX and pa["ini"] - t > 5.0 and MEXIVEIS.has(pa["acao"]):
+				# A espera mais o bloco passariam do limite no mesmo ponto: espera ao lado.
+				var lado: float = 8.0 if ruido(pid, dia, 4400 + int(t)) < 0.5 else -8.0
+				var p = m.pessoas.get(pid)
+				if p != null and ctx.has(p.grupo) and absf(pa["x"] + lado - ctx[p.grupo]["fogo"]) < FOGO_LIVRE + 1.0:
+					lado = -lado
+				var xo: float = clampf(pa["x"] + lado, Cotidiano.MARGEM + 2.0, Cotidiano.LARGURA_MUNDO - 3.0)
+				var anda2: float = absf(xo - pa["x"]) / VELOCIDADE
+				_trecho(segs, t, t + anda2, pa["x"], xo, "andar", 1 if xo > pa["x"] else -1, {}, "")
+				_trecho(segs, t + anda2, pa["ini"] - anda2, xo, xo, "parado", pa["virado"], {}, "")
+				_trecho(segs, pa["ini"] - anda2, pa["ini"], xo, pa["x"], "andar", 1 if pa["x"] > xo else -1, {}, "")
+			else:
+				_trecho(segs, t, pa["ini"], pa["x"], pa["x"], espera, pa["virado"], pa["cena"], pa["detalhe"] if espera != "parado" else "")
 			t = pa["ini"]
 		_trecho(segs, t, maxf(pa["fim"], t + 0.5), pa["x"], pa["x"], pa["acao"], pa["virado"], pa["cena"], pa.get("detalhe", ""))
 		prev = pa
 	if segs[-1][1] < MIN_DIA:
 		var u: Array = segs[-1]
 		_trecho(segs, u[1], MIN_DIA, u[3], u[3], u[4], u[5], u[6], u[7])
+	segs = _sem_parar_na_linha(segs, pid)
 	var ini := PackedFloat64Array()
 	for sg in segs:
 		ini.append(sg[0])
@@ -1421,23 +1651,110 @@ func _linha(pid: int) -> Array:
 	return segs
 
 
+## A rede de segurança de PARADO_MAX, na linha pronta: de dia, quando o tempo no mesmo ponto
+## (de pé, deitado, sentado no fogo ou conversando, fora das cenas) chega a PARADO_MAX, a pessoa
+## dá uns passos para o lado (8 px) e continua dali; o que vinha depois segue do novo ponto.
+func _sem_parar_na_linha(segs: Array, pid: int) -> Array:
+	var p = m.pessoas.get(pid)
+	var fogo: float = ctx[p.grupo]["fogo"] if p != null and ctx.has(p.grupo) else -1000.0
+	var r: Array = []
+	var x_original := -9999.0    # o ponto parado de antes do passo para o lado
+	var x_agora := -9999.0       # onde a pessoa está de fato
+	var desde := 0.0
+	var k := 0
+	for sg0 in segs:
+		var sg: Array = sg0.duplicate()
+		var parado: bool = sg[2] == sg[3] and MEXIVEIS.has(sg[4]) and sg[6].is_empty() and sg[0] >= 360.0 and sg[0] < 1020.0
+		# Continuidade: quem deu o passo para o lado segue de onde está.
+		if not r.is_empty() and absf(r[-1][3] - sg[2]) > 0.01 and absf(sg[2] - x_original) < 0.01:
+			if sg[2] == sg[3]:
+				sg[3] = r[-1][3]
+			sg[2] = r[-1][3]
+		if not parado:
+			x_original = -9999.0
+			x_agora = -9999.0
+			r.append(sg)
+			continue
+		if absf(sg[2] - x_agora) > 0.01 or r.is_empty() or absf(r[-1][1] - sg[0]) > 0.01:
+			if absf(sg0[2] - x_original) > 0.01:
+				x_original = sg0[2]
+			x_agora = sg[2]
+			desde = sg[0]
+		while sg[1] - desde > PARADO_MAX and sg[1] - sg[0] > 2.0:
+			var corte: float = maxf(sg[0], desde + PARADO_MAX - 2.0)
+			if corte > sg[0] + 0.01:
+				var antes: Array = sg.duplicate()
+				antes[1] = corte
+				r.append(antes)
+			var d: float = 8.0 if ruido(pid, dia, 4500 + k) < 0.5 else -8.0
+			var novo: float = x_agora + d
+			if absf(novo - fogo) < FOGO_LIVRE + 1.0 or novo < Cotidiano.MARGEM + 2.0 or novo > Cotidiano.LARGURA_MUNDO - 3.0:
+				novo = x_agora - d
+			novo = clampf(novo, Cotidiano.MARGEM + 2.0, Cotidiano.LARGURA_MUNDO - 3.0)
+			var anda: float = absf(novo - x_agora) / VELOCIDADE
+			r.append([corte, corte + anda, x_agora, novo, "andar", 1 if novo > x_agora else -1, {}, ""])
+			sg[0] = corte + anda
+			sg[2] = novo
+			sg[3] = novo
+			x_agora = novo
+			desde = sg[0]
+			k += 1
+		if sg[1] > sg[0] + 0.001:
+			r.append(sg)
+	return r
+
+
+## Uma espera longa, de t até ate, perto de x: parado uns 15 a 20 min, uns passos para o lado,
+## parado de novo, e de volta a x antes da hora.
+func _esperar_mexendo(segs: Array, t: float, ate: float, x: float, virado: int, pid: int) -> void:
+	var k := 0
+	var aqui := x
+	while t < ate - 0.01:
+		var fim: float = minf(ate, t + 15.0 + ruido(pid, dia, 4100 + k + int(t)) * 5.0)
+		var volta: float = absf(aqui - x) / VELOCIDADE
+		if ate - fim < 5.0 + volta:
+			fim = ate - volta if ate - volta - t <= PARADO_MAX else t + (ate - volta - t) * 0.5
+		if fim > t + 0.01:
+			_trecho(segs, t, fim, aqui, aqui, "parado", virado, {}, "")
+			t = fim
+		if t >= ate - volta - 0.01:
+			break
+		var d: float = (6.0 + ruido(pid, dia, 4200 + k) * 4.0) * (1.0 if ruido(pid, dia, 4300 + k) < 0.5 else -1.0)
+		var novo: float = x if absf(aqui - x) > 0.01 else maxf(Cotidiano.MARGEM + 2.0, x + d)
+		var p = m.pessoas.get(pid)
+		if p != null and ctx.has(p.grupo) and absf(novo - ctx[p.grupo]["fogo"]) < FOGO_LIVRE:
+			novo = x - d
+		novo = clampf(novo, Cotidiano.MARGEM + 2.0, Cotidiano.LARGURA_MUNDO - 3.0)
+		var anda: float = absf(novo - aqui) / VELOCIDADE
+		_trecho(segs, t, t + anda, aqui, novo, "andar", 1 if novo > aqui else -1, {}, "")
+		t += anda
+		aqui = novo
+		k += 1
+	if absf(aqui - x) > 0.01:
+		var anda2: float = absf(x - aqui) / VELOCIDADE
+		_trecho(segs, t, t + anda2, aqui, x, "andar", 1 if x > aqui else -1, {}, "")
+		t += anda2
+	if t < ate - 0.001:
+		_trecho(segs, t, ate, x, x, "parado", virado, {}, "")
+
+
 ## As agendas das 24 horas, numa passada só pela linha do tempo; com tempestade, as horas
 ## dali em diante são cortadas de novo, com o abrigo por cima.
 func _cortar_dia(pid: int) -> void:
 	var segs: Array = linhas[pid]
 	var horas: Array = []
 	horas.resize(24)
-	for h in 24:
+	for h in range(cortar_desde, cortar_ate):
 		horas[h] = []
 	for sg in segs:
-		var h0 := int(sg[0] / 60.0)
-		var h1 := mini(23, int((sg[1] - 0.0001) / 60.0))
+		var h0 := maxi(cortar_desde, int(sg[0] / 60.0))
+		var h1 := mini(cortar_ate - 1, int((sg[1] - 0.0001) / 60.0))
 		for h in range(h0, h1 + 1):
 			_pedaco(horas[h], sg, h * 60.0, h * 60.0 + 60.0)
 	_agendas[pid] = horas
 	var abrigo := _abrigo(pid)
 	if abrigo >= 0.0:
-		for h in range(int(abrigo / 60.0), 24):
+		for h in range(maxi(cortar_desde, int(abrigo / 60.0)), cortar_ate):
 			horas[h] = _cortar_hora(pid, h)
 
 
