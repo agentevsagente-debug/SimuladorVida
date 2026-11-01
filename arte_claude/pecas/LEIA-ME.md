@@ -297,6 +297,84 @@ A combinação taipa com palha e sol é exatamente a `casa_taipa` e o `templo` d
 6. **Pessoas:** os pixels da metade do corpo virada para longe do fogo descem um nível de luz. É isso que dá volume.
 7. **Céu:** onde o halo vale 255, o céu usa a tabela `halo_ceu`.
 
+## 11. Estágios 3 a 6 (`estagio3/` a `estagio6/`)
+
+As regras são as de sempre:
+- a base de cada peça fica na última linha;
+- as construções têm tamanhos múltiplos de 8;
+- os habitantes têm quadros de 8 × 12, ou de 12 × 12 quando carregam arma ou ferramenta (o corpo fica nas colunas 0 a 7);
+- as cores-base e as trocas de pele, cabelo e roupa são as de `habitantes/trocas.json`.
+
+**Culturas.** Cada estágio mantém as 3 culturas da seção 9. A casa sai em parede mais 3 telhados (`_telhado_palha`, `_telhado_telha`, `_telhado_tabuas`), e o templo sai em base mais 3 símbolos (`_simbolo_sol`, `_simbolo_lua`, `_simbolo_arvore`). As peças montadas, sem sufixo, são só exemplos.
+
+**Ruínas.** Cada construção tem a sua `_ruina`, gerada por código a partir da peça inteira, com o mesmo tamanho: o telhado cai e sobram caibros, o topo quebra, aparecem buracos, entulho e mato, e janelas e fogos se apagam.
+
+Cada pasta tem uma `amostra_estagioN_4x.png`.
+
+### Estágio 3, pedra
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `casa_pedra` (`_parede`, `_telhado_<cultura>`) | 32 × 24 | casa de pedra com porta e duas janelas |
+| `templo_pedra` (`_base`, `_simbolo_<cultura>`) | 32 × 32 | templo em 3 degraus de pedra lavrada, com escada, santuário e braseiros |
+| `casa_pedra_ruina`, `templo_pedra_ruina` | 32 × 24, 32 × 32 | |
+| `adulto_e3_parado_2q`, `adulto_e3_andar_4q` | 8 × 12 | capa de pele nos ombros e colar de pedra |
+
+### Estágio 4, metal
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `forja` e `forja_2q` | 24 × 24 | forno de pedra com chaminé, boca acesa (2 quadros de brasa) e bigorna. A boca emite luz à noite. |
+| `casa_enxaimel` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | casa de dois andares com madeira aparente |
+| `templo_colunas` (`_parede`, `_telhado_<cultura>`, `_simbolo_<cultura>`) | 32 × 32 | templo de colunas e arquitrave; o telhado de cultura forma o frontão |
+| `forja_ruina`, `casa_enxaimel_ruina`, `templo_colunas_ruina` | | |
+| `adulto_e4_parado_2q`, `adulto_e4_andar_4q` | 8 × 12 | capacete de ferro e fivela de metal |
+| `guerreiro_andar_4q` | 12 × 12 | lança e escudo redondo de bronze |
+| `ferreiro_trabalhar_4q` | 12 × 12 | avental de couro e martelo: ergue, desce e bate (com faísca) |
+
+### Estágio 5, escrita
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `tabuletas_4v` | 8 × 8 | 4 variações: tabuleta de barro, rolo, estela pequena e pilha de tabuletas |
+| `estela` | 8 × 16 | pedra escrita |
+| `biblioteca` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | o arquivo: pórtico de colunas, friso escrito e estantes com tabuletas e rolos |
+| `templo_escrita` (`_parede`) | 32 × 32 | o templo de colunas com friso escrito; usa os telhados e símbolos de `estagio4/templo_colunas_*` |
+| `biblioteca_ruina`, `templo_escrita_ruina` | | a ruína do arquivo tem tabuletas espalhadas |
+| `adulto_e5_parado_2q`, `adulto_e5_andar_4q` | 8 × 12 | túnica longa até os pés; parado, segura uma tabuleta |
+| `escriba_sentado_2q` | 8 × 12 | sentado, escrevendo na tabuleta |
+
+### Estágio 6, engenharia
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `canal`, `canal_comporta` | 8 × 8 | **blocos de superfície** (linha 2, como a grama) da irrigação: canal com borda de pedra, que repete na horizontal, e comporta |
+| `roca_irrigada` | 16 × 16 | a roça madura com rego d'água entre os sulcos |
+| `moinho_4q` | 32 × 40 | moinho de vento: as pás giram 22,5° por quadro, e os 4 quadros fecham o ciclo |
+| `muralha` | 8 × 16 | trecho com ameias que repete na horizontal |
+| `muralha_torre` | 16 × 32 | torre da muralha |
+| `barco_2q` | 24 × 16 | barco a vela balançando; a linha 14 fica na linha d'água |
+| `casa_tijolo` (`_parede`, `_telhado_<cultura>`) | 32 × 32 | casa de tijolo de dois andares |
+| `templo_cupula` (`_base`, `_simbolo_<cultura>`) | 32 × 32 | templo de cúpula com colunata |
+| ruínas | | `moinho_ruina`, `muralha_ruina`, `muralha_torre_ruina`, `casa_tijolo_ruina`, `templo_cupula_ruina`, `barco_naufragado` |
+| `adulto_e6_parado_2q`, `adulto_e6_andar_4q` | 8 × 12 | chapéu de aba larga e calças |
+
+**Construção comum.** As paredes, portas, janelas, telhados, a ruína e a roupa de cada estágio saem de `construcao.py`. Os materiais de parede disponíveis são taipa, pedra, madeira, pedra lavrada, tijolo e enxaimel.
+
+## 12. Cenas de amostra (`cenas/`)
+
+`cena_estagio2.png` a `cena_estagio6.png` (480 × 160) mostram uma vila em cada estágio, de dia, no estilo da cena-alvo. `amostra_cenas_2x.png` junta as cinco.
+
+As cenas são montadas como a prova de montagem: só com as camadas do motor, o terreno em blocos e as peças lidas dos PNGs. O morro e a praia guardam a vegetação da cena-alvo, vinda de `montagem/layout.json`.
+
+| Estágio | O que a vila mostra |
+|---|---|
+| 2 | roça cercada, casas de taipa, celeiro, altar, templo no morro e gente com enxada |
+| 3 | casas de pedra, templo em degraus, roça e uma casa em ruína no morro |
+| 4 | forja acesa, casas de enxaimel, templo de colunas, ferreiro e guerreiros |
+| 5 | biblioteca, estelas, templo com friso escrito e o escriba |
+| 6 | muralha com torre e sentinela, casas de tijolo, templo de cúpula, roça irrigada, moinho no morro e barco na água |
+
 ## Critérios
 
 | Critério | Situação |

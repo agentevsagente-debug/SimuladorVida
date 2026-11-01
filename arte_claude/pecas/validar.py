@@ -49,6 +49,15 @@ for f in sorted(AQUI.rglob("*.png")):
         erros.append(f"{rel}: quadro com enxada deve ser 12x12")
     if pasta == "estagio2" and not f.stem.startswith(("adulto_", "amostra")) and (w % 8 or h % 8):
         erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
+    if pasta in ("estagio3", "estagio4", "estagio5", "estagio6") and not f.stem.startswith("amostra"):
+        pessoa = f.stem.startswith(("adulto_", "guerreiro", "ferreiro", "escriba"))
+        qw = w // nq if w % nq == 0 else -1
+        if pessoa and (qw not in (8, 12) or h != 12):
+            erros.append(f"{rel}: quadro de habitante {qw}x{h} fora do padrão")
+        if not pessoa and (qw % 8 or h % 8):
+            erros.append(f"{rel}: tamanho {qw}x{h} não é múltiplo de 8")
+    if pasta == "cenas" and not f.stem.startswith("amostra") and (w, h) != (480, 160):
+        erros.append(f"{rel}: cena deve ter 480x160")
     if pasta in ("estagio1", "memoria", "culturas") and not f.stem.startswith("amostra") and (w % (8 * nq) or h % 8):
         erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
 print(f"{total} PNGs conferidos")
