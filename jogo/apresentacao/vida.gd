@@ -35,7 +35,16 @@ const MICRO := [["acoes/olhar_lados_4q", 4, 4.0], ["acoes/esticar_4q", 4, 2.0], 
 const ACOES := {"construir": "acoes/construir_4q", "forjar": "acoes/forjar_4q", "escrever": "acoes/escrever_4q",
 	"remar": "acoes/remar_4q", "lutar": "acoes/lutar_4q", "dancar": "acoes/dancar_4q", "pescar": "acoes/pescar_4q"}
 ## Ações de caminhada com carga (acao -> folha).
-const CARGAS := {"lenha": "acoes/carregar_lenha_4q", "carregar_morto": "acoes/funeral_carregar_4q"}
+const CARGAS := {"lenha": "acoes/carregar_lenha_4q", "carregar_morto": "acoes/funeral_carregar_4q",
+	"carregar_caca": "acoes/carregar_caca_4q", "cacar": "acoes/cacar_espreitar_4q"}
+## Detalhes da rotina (API v10, campo `detalhe`; arte, seção 20) com folha de 4
+## quadros em laço. Sem folha própria, vale a da `acao`, como antes.
+const DETALHES := {"colher_arbusto": "acoes/colher_arbusto_4q", "cavar_raiz": "acoes/cavar_raiz_4q",
+	"catar_lenha": "acoes/catar_lenha_4q", "buscar_agua": "acoes/buscar_agua_4q", "banho": "acoes/banhar_4q",
+	"espantar": "acoes/espantar_4q", "discutir": "acoes/discutir_4q", "separar": "acoes/conversar_falar_4q"}
+## Detalhes andando: a carga ou a ferramenta da ida e da volta.
+const DETALHES_ANDANDO := {"carregar_cesto": "acoes/carregar_cesto_cabeca_4q", "levar_cesto": "acoes/andar_cesto_4q",
+	"carregar_agua": "acoes/carregar_cesto_4q"}
 
 var vista
 var sim
@@ -67,9 +76,9 @@ static func trecho(p: Dictionary, f: float) -> Dictionary:
 		if f < t["ate"] or i == agenda.size() - 1:
 			var anda: bool = absf(t["x1"] - t["x0"]) > 0.5
 			return {"destino": float(t["x1"]), "acao": t["acao"], "virado": int(t.get("virado", 0)),
-				"anda": anda, "cena": t.get("cena", {})}
+				"anda": anda, "cena": t.get("cena", {}), "detalhe": t.get("detalhe", "")}
 	return {"destino": float(p["x"]), "acao": p["acao"], "virado": int(p.get("virado", 0)), "anda": false,
-		"cena": p.get("cena", {})}
+		"cena": p.get("cena", {}), "detalhe": p.get("detalhe", "")}
 
 
 func atualizar(delta: float, relogio: float) -> Array:
@@ -140,6 +149,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 			"codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo, "acompanhada": p.get("acompanhada", false),
 			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena})
 	_objetos_de_cena(r, relogio)
+	_objetos_do_cotidiano(r)
+	_animais_das_cenas(r, relogio)
 	r.sort_custom(func(a, b): return a.atras and not b.atras)  # a segunda fileira fica atrás
 	for id in _x.keys():
 		if not vivos.has(id):
@@ -162,7 +173,12 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 	var fase: float = relogio * (ACELERA.get(sim.ritmo, 1.0) if anda else 1.0) + id * 0.37
 	var cena: String = t.cena.get("tipo", "")
 	var q4 := int(fase * 5.0) % 4
+	var detalhe: String = t.get("detalhe", "")
 	if crianca:
+		if detalhe == "brigar":  # duas crianças de frente, com quadros defasados
+			return ["acoes/criancas_brigar_4q", 6, (int(fase * 5.0) + id) % 4, 0]
+		if detalhe == "perdido" and not anda:
+			return ["habitantes/crianca_andar_4q", 6, 0, 0]
 		if anda:
 			return ["acoes/crianca_correr_4q", 6, int(fase * 10.0) % 4, 0]
 		# de vez em quando, pula no lugar (sobe o sprite nos quadros 1 e 2)
@@ -171,6 +187,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 			return ["acoes/crianca_pular_4q", 6, q, 3 if q in [1, 2] else 0]
 		return ["habitantes/crianca_andar_4q", 6, 0, 0]
 	if anda:
+		if DETALHES_ANDANDO.has(detalhe):
+			return [DETALHES_ANDANDO[detalhe], 8, int(fase * 5.0) % 4, 0]
 		if CARGAS.has(acao):
 			return [CARGAS[acao], 8, int(fase * 5.0) % 4, 0]
 		if cena == "migracao":
@@ -182,7 +200,37 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 		if idoso:
 			return ["habitantes/idoso_andar_4q", 8, int(fase * 4.0) % 4, 0]
 		return ["habitantes/adulto_b_andar_4q" if feminina else "habitantes/adulto_a_andar_4q", 8, int(fase * 6.0) % 4, 0]
+	if DETALHES.has(detalhe):
+		return [DETALHES[detalhe], 8, q4, 0]
+	match detalhe:
+		"colher_roca":
+			return ["estagio2/adulto_enxada_trabalhar_4q", 12, q4, 0]
+		"cozinhar":  # mexendo a panela ou girando o espeto (o objeto vem em _objetos_do_cotidiano)
+			return ["acoes/cozinhar_mexer_4q" if id % 2 == 0 else "acoes/cozinhar_espeto_4q", 8, int(fase * 3.0) % 4, 0]
+		"vigia":  # de madrugada, a cabeça pesa de sono de vez em quando
+			var sono: bool = int(sim.tempo.get("hora", 0)) < 5 and fmod(fase, 9.0) > 6.0
+			return ["acoes/vigia_2q", 8, 1 if sono else 0, 0]
+		"historias":  # o mais novo da roda conta, de pé; os outros ouvem sentados
+			if _menor_da_cena(t.cena) == id:
+				return ["acoes/contar_historia_4q", 8, int(fase * 2.5) % 4, 0]
+			return ["acoes/ouvir_sentado_2q", 8, int(fase * 0.5) % 2, 0]
+		"machucado":  # tropeça e cai, fica um tempo no chão, depois levanta
+			var queda := fmod(fase, 14.0)
+			if queda < 1.2:
+				return ["acoes/tropecar_cair_4q", 12, int(queda / 0.3), 0]
+			if queda < 10.0:
+				return ["acoes/tropecar_cair_4q", 12, 3, 0]
+			return ["acoes/agachar_2q", 8, 1, 0]
+		"guardar", "repartir":
+			return ["acoes/agachar_2q", 8, int(fase * 0.7) % 2, 0]
+		"comer", "descansar", "olhar_ceu", "doente":
+			return ["acoes/sentar_chao_4q", 8, 2 + int(fase * 0.7) % 2, 0]
 	match acao:
+		"cacar":  # espreita parado e, de vez em quando, arremessa
+			var ciclo := fmod(fase, 6.0)
+			if ciclo < 2.0:
+				return ["acoes/cacar_arremessar_4q", 8, int(ciclo * 2.0), 0]
+			return ["acoes/cacar_espreitar_4q", 8, 0, 0]
 		"colher":
 			if vista.perto_de_roca(_x[id]):
 				return ["estagio2/adulto_enxada_trabalhar_4q", 12, q4, 0]
@@ -283,6 +331,17 @@ func _objetos_de_cena(r: Array, relogio: float) -> void:
 					var b: Dictionary = carregam[1]
 					var meio: float = (a.x + b.x + 8) / 2.0
 					objetos.append(_objeto("objetos/corpo_mortalha", 16, roundi(meio) - 8, a.base - 8, a.codigo))
+			"cacada":  # a caça no pau, entre os dois que voltam carregando
+				var carregam := fs.filter(func(f): return f.acao == "carregar_caca")
+				carregam.sort_custom(func(a, b): return a.x < b.x)
+				if carregam.size() >= 2 and absf(carregam[1].x - carregam[0].x) <= 16:
+					var a: Dictionary = carregam[0]
+					var b: Dictionary = carregam[1]
+					var ave := int(chave.get_slice(":", 1)) % 2 == 1
+					var meio: float = (a.x + b.x + 8) / 2.0
+					# a linha 0 da caça (o pau) vai na linha 3 dos carregadores (12 de altura)
+					objetos.append(_objeto("objetos/caca_no_pau_ave" if ave else "objetos/caca_no_pau_porco", 20,
+						roundi(meio) - 10, a.base - 9 + (9 if ave else 7), 0))
 			"festa", "casamento":
 				var xs: Array = fs.map(func(f): return f.x)
 				var ini: int = xs.min() - 4
@@ -293,6 +352,39 @@ func _objetos_de_cena(r: Array, relogio: float) -> void:
 				for f in fs:
 					if f.folha == "acoes/tocar_tambor_4q":
 						objetos.append(_objeto("objetos/tambor", 8, f.x + (-7 if f.espelho else 7), f.base, f.codigo))
+
+
+## Objetos do cotidiano: a panela ou o espeto diante de quem cozinha.
+func _objetos_do_cotidiano(r: Array) -> void:
+	for f in r:
+		var frente: int = -7 if f.espelho else 7
+		match f.folha:
+			"acoes/cozinhar_mexer_4q":
+				objetos.append(_objeto("objetos/panela", 8, f.x + frente, f.base, 0))
+			"acoes/cozinhar_espeto_4q":
+				objetos.append(_objeto("objetos/espeto", 12, f.x + frente - 2, f.base, 0))
+
+
+## Os bichos das cenas: a caça no lugar da caçada (até voltarem com ela) e o
+## animal que aparece na beira do acampamento.
+func _animais_das_cenas(r: Array, relogio: float) -> void:
+	var h: float = sim.hora_continua()
+	for c in sim.cenas:
+		var tipo: String = c.get("tipo", "")
+		if tipo != "animal" and not (tipo == "cacada" and not c.get("vazia", false)):
+			continue
+		if h < float(c.get("ini", 0.0)) or h > float(c.get("fim", 24.0)):
+			continue
+		if tipo == "cacada" and r.any(func(f): return f.acao == "carregar_caca" and f.cena.get("id", -1) == c.get("id", -2)):
+			continue  # já abatida: vai no pau, com os carregadores
+		var x := roundi(float(c.get("x", 300.0)))
+		var ave := int(c.get("id", 0)) % 2 == 1
+		var o := _objeto("criaturas/ave_grande_4q" if ave else "criaturas/porco_do_mato_4q", 8 if ave else 10,
+			x - (4 if ave else 5), vista.chao(x), 0)
+		o.quadro = int(relogio * 4.0) % 4
+		o.espelho = int(relogio / 5.0 + int(c.get("id", 0))) % 2 == 0
+		o.fogo = vista.fogo_mais_perto(float(x))
+		objetos.append(o)
 
 
 func _objeto(folha: String, largura: int, x: int, base: int, codigo: int) -> Dictionary:

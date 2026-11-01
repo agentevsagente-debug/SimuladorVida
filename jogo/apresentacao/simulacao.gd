@@ -39,6 +39,7 @@ var pessoas: Array = []
 var construcoes: Array = []
 var ruinas: Array = []
 var grupos: Array = []
+var cenas: Array = []    # cenas_ativas() da hora: caça, incidentes, festas...
 var zonas: Array = []
 var preces: Array = []
 var ausencia := {}       # retorno de avancar_ausencia() ao abrir, se houve
@@ -170,10 +171,18 @@ func aparencia(grupo_id: int) -> Dictionary:
 	return {}
 
 
+## Salva agora, na linha principal (ao fechar e ao abandonar).
 func salvar() -> void:
 	if salvar_em_disco and mundo != null:
 		var ok: bool = Persistencia.salvar(mundo)
 		print("[simulacao] salvo=%s ano=%d dia=%d hora=%d passo=%d" % [ok, tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"]])
+
+
+## Salva numa thread, sem travar o jogo (o salvamento de cada dia).
+func salvar_async() -> void:
+	if salvar_em_disco and mundo != null:
+		Persistencia.salvar_async(mundo)
+		print("[simulacao] salvando em segundo plano: ano=%d dia=%d" % [tempo["ano"], tempo["dia"]])
 
 
 func _passo() -> void:
@@ -182,7 +191,7 @@ func _passo() -> void:
 	# o documento técnico pede salvar a cada dia de jogo e ao fechar
 	if mundo.dia_abs() != _ultimo_dia_salvo:
 		_ultimo_dia_salvo = mundo.dia_abs()
-		salvar()
+		salvar_async()
 
 
 func _ler(inicio := false) -> void:
@@ -190,6 +199,7 @@ func _ler(inicio := false) -> void:
 	clima = mundo.clima()
 	grupos = mundo.grupos_visiveis()
 	pessoas = mundo.pessoas_visiveis()
+	cenas = mundo.cenas_ativas()
 	preces = mundo.preces_abertas()
 	var novas: Array = mundo.construcoes()
 	var novas_ruinas: Array = mundo.ruinas_visiveis()

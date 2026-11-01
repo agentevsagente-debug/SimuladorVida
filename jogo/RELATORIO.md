@@ -2,6 +2,23 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Rotina nova (API v10 com `detalhe`)
+
+- **Detalhes com arte própria** (LEIA-ME da arte, seção 20):
+  - na coleta: colher no arbusto, cavar raiz e catar lenha;
+  - na margem: buscar água e banho;
+  - na roça: a enxada;
+  - cozinhar: mexendo a panela ou girando o espeto, com o objeto diante de quem cozinha;
+  - vigia: de madrugada, a cabeça pesa de sono;
+  - roda de histórias: o primeiro da cena conta, de pé, e os outros ouvem sentados;
+  - incidentes: tombo (cai, fica no chão e levanta), espantar, discussão, crianças brigando, criança perdida;
+  - parados: comer, descansar, olhar o céu e o doente, sentados; guardar e repartir, agachados.
+- **Andando:** o cesto na cabeça na volta, o cesto nas costas na ida e o cesto no quadril com água. Detalhe sem folha cai na folha da `acao`, como antes.
+- **Caçada:** os caçadores espreitam agachados com a lança e, de vez em quando, arremessam. O bicho (porco do mato ou ave grande) fica no lugar da caça até ser abatido. Na volta, os dois carregadores levam a caça no pau, entre eles. No incidente `animal`, o bicho aparece onde a cena diz.
+- **Vida ambiente:** porco do mato (borda da floresta e mato) e ave grande (campos e margem) de dia, além dos que já havia. Com eles, o mundo inteiro tem bicho.
+- **Salvar:** o salvamento de cada dia usa `salvar_async()`, numa thread. Ao fechar e ao abandonar, continua o `salvar()` síncrono.
+- **GIF:** `capturas/dia-inteiro-50x.gif`, um dia inteiro no 50x (das 5h às 5h, 55 s, 3 quadros por segundo, ampliado 2x).
+
 ## Ritmos 1x, 10x e 50x
 
 | Ritmo | Hora de jogo | Um dia dura | Tecla |

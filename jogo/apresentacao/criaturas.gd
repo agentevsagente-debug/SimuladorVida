@@ -18,11 +18,14 @@ const REGRAS := {
 	"cervo": [["primavera", "verão", "outono"], 5.0, 9.0, 25.0, 70.0, 1],
 	"morcego": [["primavera", "verão", "outono"], 18.5, 22.0, 6.0, 18.0, 3],
 	"migrando": [["inverno"], 8.0, 16.0, 40.0, 100.0, 1],
+	"porco": [["primavera", "verão", "outono", "inverno"], 7.0, 17.0, 25.0, 70.0, 1],
+	"ave_grande": [["primavera", "verão", "outono"], 7.0, 17.0, 20.0, 60.0, 2],
 }
 const FOLHAS := {
 	"passaros": "passaro_voar_4q", "pousado": "passaro_pousado_2q", "peixe": "peixe_saltar_4q",
 	"sapo": "sapo_2q", "garca": "garca_2q", "coelho": "coelho_4q", "coelho_tarde": "coelho_4q",
 	"cervo": "cervo_4q", "morcego": "morcego_4q", "migrando": "bando_migrando_4q",
+	"porco": "porco_do_mato_4q", "ave_grande": "ave_grande_4q",
 }
 
 var vista: Node2D
@@ -117,6 +120,17 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 			if _longe_de_gente(x, pessoas_x, 50.0):
 				fosco.emitir(folha, 10, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(30, 70), 1.5, 0,
 					{"espelho": _rng.randf() < 0.5})
+		"porco":  # anda e fuça na borda da floresta e no mato; foge de gente
+			var x := _rng.randf_range(330, 470) if _rng.randf() < 0.6 else _rng.randf_range(150, 210)
+			if _longe_de_gente(x, pessoas_x, 30.0):
+				var dir := 1.0 if _rng.randf() < 0.5 else -1.0
+				fosco.emitir(folha, 10, 4, Vector2(x, vista.chao(int(x))), Vector2(3.0 * dir, 0), _rng.randf_range(12, 25),
+					3.0, 0, {"espelho": dir < 0.0, "rente": true})
+		"ave_grande":  # anda e bica o chão nos campos e na margem
+			var x := _rng.randf_range(130, 330)
+			if _longe_de_gente(x, pessoas_x, 20.0):
+				fosco.emitir(folha, 8, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(15, 35),
+					2.0, 0, {"espelho": _rng.randf() < 0.5})
 		"morcego":  # sai da floresta e voa em zigue-zague
 			var x := _rng.randf_range(340, 460)
 			var dir := -1.0 if _rng.randf() < 0.7 else 1.0
