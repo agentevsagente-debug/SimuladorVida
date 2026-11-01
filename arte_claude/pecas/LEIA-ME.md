@@ -105,7 +105,7 @@ A base de cada peça, o ponto que toca o chão, fica na última linha.
 | `pedra_pequena` | 8 × 8 | |
 | `pedra_grande` | 16 × 16 | com musgo |
 | `juncos` | 8 × 16 | juncos da margem |
-| `tronco_deriva`, `alga`, `samambaia_frente` | 16 × 8, 8 × 8, 16 × 16 | extras usados na montagem; a samambaia é do primeiro plano |
+| `tronco_deriva`, `alga`, `samambaia_frente` | 16 × 8, 8 × 8, 16 × 16 | extras usados na montagem. A samambaia é do primeiro plano: um tufo cheio de frondes arqueadas, com o pé na coluna 7 e a base na linha 13 (redesenhada no D6 da auditoria 3, sem mudar a âncora) |
 
 Fumaça e fagulhas da fogueira são partículas do motor.
 
@@ -178,6 +178,22 @@ A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1
 | `necessidade_5v` | 8 × 8 | 5 variações | símbolo da `necessidade` da prece, nesta ordem: `seca` (sol), `fome` (espiga), `doenca` (coração rachado), `frio` (floco), `guerra` (lanças cruzadas). Vai ao lado do sinal ou na dica do cursor. |
 
 A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10 dias de espera, urgente até 30 dias e desesperado a partir daí, ou quando a importância do evento for 8 ou mais.
+
+**Balões de fala e de pensamento** (`sinais/balao_5v`, de `sinais/baloes.py`): 6 × 5, creme chapado sem contorno, com um sinal dentro e a ponta embaixo, apontando para a cabeça. As 5 variações, nesta ordem:
+
+| Variação | Sinal | Quando usar |
+|---|---|---|
+| 0 `fala` | uma linha de texto | conversa (`conversar_falar_4q`), discurso curto |
+| 1 `historia` | duas linhas de texto | quem conta história (`contar_historia_4q`) |
+| 2 `pensamento` | nuvem com reticências cinza e a ponta solta | alguém pensando, a vigia cochilando, prece baixinha |
+| 3 `coracao` | coração vermelho | casal, abraço de reencontro, mãe com o bebê |
+| 4 `raiva` | rabisco vermelho | discussão, crianças brigando |
+
+- **Onde:** para quem olha para a direita, o balão vai em x = x da pessoa + 2 e y = topo do quadro da pessoa − 6. Assim a ponta (coluna 1, linha 4) fica 1 px acima da cabeça. Para quem olha para a esquerda, espelhe o balão e use x = x da pessoa + 0. Sobre uma criança (6 × 8), use x = x da criança + 1 (olhando para a direita) ou x da criança − 1 (espelhado), e o mesmo y = topo do quadro − 6.
+- **Quanto tempo:** de 1,5 a 3 s, e não o tempo todo. Por exemplo, na conversa os balões se alternam entre os dois, com 1 a 2 s de pausa entre eles; na história, o balão de quem conta aparece a cada 4 ou 5 s.
+- **Quantos:** no máximo 2 ou 3 balões na tela ao mesmo tempo, para não virar poluição.
+- **Noite:** como os sinais de prece, não passam pela tabela da noite.
+- A amostra é `sinais/amostra_baloes_4x.png`, com cada balão sobre uma pessoa, de dia e de noite.
 
 ## 6. Interface da alça (`interface/`)
 
@@ -459,7 +475,7 @@ As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e 
 
 ## 17. Vida ambiente (`criaturas/`)
 
-São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos, que já são escuros. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
+São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos e a coruja, que já vêm em tons de noite. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
 
 | Folha | Quadro | Quadros | Estação | Horário | Onde e como |
 |---|---|---|---|---|---|
@@ -472,8 +488,10 @@ São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. 
 | `cervo_4q` | 10 × 8 | 4 | todas menos inverno fundo | manhã (até 9h) | na borda da floresta do morro |
 | `corvo_voar_4q` | 6 × 4 | 4 | todas | dia | sobre campos de batalha e onde há mortos |
 | `corvo_pousado_2q` | 5 × 4 | 2 | todas | dia | pousado perto dos mortos e das ruínas |
-| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas |
+| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas; escuro, lê contra o céu do entardecer. De madrugada, use o `morcego_noite_4q`. |
 | `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
+| `coruja_pousada_4q` | 7 × 8 | 4 | todas | noite e madrugada | pousada num galho (o galho vem na peça: a linha 7 é o galho, ponha-a sobre a copa de uma árvore, a ponta de um pinheiro ou um telhado). Quadros: olhando, piscando, olhando para o lado, olhando. Fique no quadro 0 por 2 a 4 s e passe pelo 1 (piscar) ou pelo 2 (virar) por uns 0,3 s. Os olhos amarelos são o que se lê no escuro. |
+| `morcego_noite_4q` | 8 × 5 | 4 | primavera, verão, outono | noite e madrugada | maior que o do entardecer, com a borda das asas clara (a luz da lua) e olhos vermelhos, para ler sobre o céu e as árvores escuras. Voa em zigue-zague perto das árvores e da fogueira, 1 ou 2 por vez, a cada poucos minutos de 1x. |
 
 O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do limite de 12 × 8. Cada pássaro tem 3 × 2. Os bandos pequenos de verão saem de vários `passaro_voar_4q`, com os quadros defasados.
 
@@ -593,7 +611,7 @@ As folhas abaixo ficam em `acoes/` e seguem o mesmo padrão das outras ações (
 | `cavar_raiz` | `acoes/cavar_raiz_4q` | 4 | ajoelhado; a vara crava, revolve a terra e a raiz sai na mão |
 | `catar_lenha` | `acoes/catar_lenha_4q` | 4 | abaixa, pega os galhos e levanta com eles no braço; depois, `carregar_lenha_4q` |
 | `carregar_cesto` | `acoes/carregar_cesto_cabeca_4q` (na cabeça), `acoes/andar_cesto_4q` (nas costas), `acoes/carregar_cesto_4q` (no quadril) | 4 | |
-| `cacar` | `acoes/cacar_espreitar_4q`, e depois `acoes/cacar_arremessar_4q` | 4 + 4 | anda agachado com a lança na horizontal e arremessa. A lança solta é `objetos/lanca_voando` (12 × 3), lançada a partir do quadro 2. |
+| `cacar` | `acoes/cacar_espreitar_4q`, e depois `acoes/cacar_arremessar_4q` | 4 + 4 | anda agachado com a lança na horizontal e arremessa. A lança solta é `objetos/lanca_voando` (12 × 3), lançada a partir do quadro 2. A sequência inteira, com o acerto, o erro, o abate e a volta, está na seção 24. |
 | `carregar_caca` | 2 × `acoes/carregar_caca_4q` + `objetos/caca_no_pau_porco` ou `caca_no_pau_ave` | 4 | os dois carregadores ficam a 12 px um do outro, com o quadro defasado em 2. A linha 0 do objeto (o pau) vai na linha 3 dos carregadores, entre eles. |
 | `cozinhar` | `acoes/cozinhar_mexer_4q` + `objetos/panela`; `acoes/cozinhar_espeto_4q` + `objetos/espeto` | 4 | agachado diante da panela, mexendo; ou sentado girando o espeto. O fogo é a fogueira. |
 | `buscar_agua` | `acoes/buscar_agua_4q` | 4 | na margem: abaixa, enche a cuia e levanta. Depois, a cuia cheia é `objetos/cuia_cheia`. |
@@ -643,6 +661,70 @@ A amostra é `nuvens/amostra_nuvens_4x.png`, com uma linha por clima, sobre a co
 **Céus de chuva**, em `montagem/` (480 × 160, como os de seca e eclipse):
 - `ceu_tempestade.png`: degradê escuro sem sol, coberto por nuvens pesadas. Use enquanto chove forte e no raio.
 - `ceu_diluvio.png`: o mesmo, mais escuro e carregado. Use no dilúvio.
+
+## 22. Ações "de 1x" (`acoes/forte.py`)
+
+São versões mais fortes das subações da seção 20, para o ritmo 1x, em que o jogador olha de canto de olho. Elas mudam a silhueta (braços longe do corpo, o corpo agachado ou inclinado) e trazem objetos de 2 px de espessura, com a borda de cima clara para não sumirem no chão nem no mato. As cores-base são as de sempre (`habitantes/trocas.json`); os objetos das folhas de gente não usam as cores 8, 25, 26, 28 e 30, que a troca de pele e cabelo muda.
+
+A sugestão é usar a versão forte no 1x e a de sempre no 10x e no 50x, ou só a forte, se a B preferir. `acoes/amostra_forte_4x.png` mostra cada folha antiga à esquerda e a forte à direita, e no fim a caça carregada montada.
+
+| Subação | Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|---|
+| `catar_lenha` | `acoes/catar_lenha_forte_4q` | 12 × 12 | 4 | agacha junto aos galhos no chão, levanta com eles atravessados, segura o feixe no peito e o põe no ombro. O feixe passa do corpo até a coluna 11. Depois, siga com `carregar_lenha_4q` ou repita os quadros 2 e 3. |
+| `carregar_cesto` (na cabeça) | `acoes/carregar_cesto_cabeca_forte_4q` | 8 × 12 | 4 | andando com um cesto de palha de 8 px na cabeça, frutas vermelhas e amarelas em cima, e os dois braços erguidos segurando as bordas |
+| espantar um animal | `acoes/espantar_forte_4q` | 12 × 12 | 4 | abana um galho cheio de folhas, para cima e para baixo, de boca aberta e dando pulinhos; virado para o bicho |
+| tropeçar e cair | `acoes/tropecar_cair_forte_4q` | 12 × 12 | 4 | tropeça numa pedra (os 2 px cinzentos sob o pé da frente), voa de braços abertos, cai de bruços levantando poeira e fica tonto, com 3 estrelinhas. **Segure o quadro 3 por 1 a 2 s** e depois use `agachar_2q` para levantar. |
+| carregar água | `acoes/carregar_agua_forte_4q` | 8 × 12 | 4 | anda com o pote de barro cheio na cabeça (laranja, com a água clara na boca), segurando com a mão da frente erguida. É o "levar a água da margem até a vila": atravesse a tela com ele. |
+| `buscar_agua` | `acoes/buscar_agua_forte_4q` | 12 × 12 | 4 | na margem, de frente para a água: chega com o pote vazio no quadril, ajoelha e mergulha o pote com respingos, ergue o pote cheio e o põe na cabeça. Depois, `carregar_agua_forte_4q`. |
+| `carregar_caca` | 2 × `acoes/carregar_caca_forte_4q` + `objetos/caca_no_pau_porco_forte` ou `caca_no_pau_ave_forte` | 8 × 12; objeto 24 × 9 | 4 | os dois carregadores ficam a **16 px** um do outro (8 px de vão para o bicho), com os quadros defasados em 2. O objeto vai com o x do carregador de trás e as linhas 0 e 1 (o pau de 2 px) nas linhas 3 e 4 dos carregadores. O bicho pendura pelas patas amarradas (corda clara) no meio do vão. Desenhe o objeto por cima dos dois. |
+
+## 23. Brincadeiras de crianças (`acoes/brincar.py`)
+
+Quadros de 6 × 8, como a criança de sempre, com as mesmas cores-base. Quem desloca as crianças pela tela é o motor. `acoes/amostra_brincar_4x.png` mostra as folhas e, embaixo, as duas brincadeiras montadas nos 4 quadros.
+
+| Brincadeira | Folha | Quadros | Como montar |
+|---|---|---|---|
+| pega-pega, quem foge | `acoes/crianca_pegapega_fugir_4q` | 4 | corre de passada larga, olhando para trás e rindo, com os braços para o alto |
+| pega-pega, o pegador | `acoes/crianca_pegapega_pegar_4q` | 4 | corre inclinado, com o braço esticado para a frente. No quadro 3, a mão chega à coluna 5: é o toque. |
+| ciranda, de frente | `acoes/crianca_ciranda_4q` | 4 | de mãos dadas, com os braços abertos até as colunas 0 e 5, dando passos de lado; nos quadros 1 e 3, o corpo desce 1 px no balanço |
+| ciranda, de costas | `acoes/crianca_ciranda_costas_4q` | 4 | a mesma, vista de costas (só o cabelo), para a metade de trás da roda |
+
+**Pega-pega.** As duas crianças correm na mesma direção, mais rápido que o andar (por exemplo, 1,5 vez a velocidade do adulto), com o pegador uns 7 px atrás de quem foge. A distância varia: o pegador se aproxima e perde terreno. Quando ela cai para 4 px, o motor mostra o quadro 3 do pegador (o toque) e troca os papéis: quem foi pego vira e passa a correr atrás. Uma rodada leva uns 6 a 10 s; depois, as crianças mudam de direção ou voltam a andar (`habitantes/crianca_andar_4q`).
+
+**Ciranda.** A roda, vista de lado, é uma fileira dupla. As crianças da frente usam a folha de frente, a 6 px uma da outra, de modo que as mãos das vizinhas se encostam e a fila vira uma corrente. As de trás usam a folha de costas, 2 px acima, deslocadas 3 px e desenhadas antes. Para girar, cada criança anda numa elipse achatada (por exemplo, 24 × 3 px). Na metade da frente usa a folha de frente; na de trás, a de costas. Os quadros das vizinhas ficam defasados em 1. Use de 4 a 8 crianças. Com poucas crianças ou pouco espaço, a versão mínima que se lê bem é uma fileira só de 4 ou 5 de frente, de mãos dadas, andando de lado e balançando; a fileira de trás é um acréscimo.
+
+## 24. Caçada em sequência (`acoes/cacada.py`)
+
+A caçada precisa ler como uma sequência: espreitar, arremessar, acertar ou errar, abater e voltar. As peças novas desta seção completam as que já existiam (seções 20 e 22). `acoes/amostra_cacada_4x.png` mostra a sequência inteira, uma cena por linha, com as peças lado a lado nas distâncias sugeridas.
+
+**Peças novas:**
+
+| Folha | Quadro | Quadros | O que é |
+|---|---|---|---|
+| `acoes/cacar_apontar_2q` | 8 × 12 | 2 | agachado, com a lança em pé na mão de trás, aponta a caça com o braço esticado; no quadro 1, vira a cabeça para trás, avisando os outros |
+| `acoes/cacar_comemorar_4q` | 12 × 12 | 4 | acertou: pula com a lança (2 px) erguida acima da cabeça, de boca aberta |
+| `acoes/cacar_amarrar_4q` | 12 × 12 | 4 | ajoelhado ao lado do bicho caído, passa a corda clara nas patas e puxa o nó |
+| `criaturas/porco_correr_4q` | 10 × 6 | 4 | o porco fugindo a galope (nos quadros 1 e 3, no ar) |
+| `criaturas/porco_atingido_4q` | 12 × 8 | 4 | a lança crava no lombo (o porco nas colunas 2 a 11, a lança saindo para trás), ele cambaleia, tomba e fica caído com a lança |
+| `criaturas/ave_fugir_4q` | 8 × 8 | 4 | a ave grande fugindo, correndo e batendo as asas |
+| `objetos/lanca_cravada` | 8 × 8 | 1 | errou: a lança fica cravada no chão, inclinada, com a ponta na última linha |
+| `objetos/pau_no_chao` | 24 × 2 | 1 | o pau de 2 px no chão, ao lado do bicho caído, antes de amarrar |
+
+**A sequência**, em 1x (no 10x e no 50x, o motor pode pular direto para a volta):
+
+| Passo | Caçadores | O bicho | Distâncias e tempos |
+|---|---|---|---|
+| 1. espreitar | 2 ou 3 com `cacar_espreitar_4q` (ou a versão de pé, `andar`, até chegar perto) | `porco_do_mato_4q` fuçando, de costas para eles | na **borda da floresta, perto da vila e à vista**, não no meio dos pinheiros do morro. Os caçadores ficam a 6 a 10 px um do outro e começam a uns 40 px do bicho, chegando devagar. |
+| 2. apontar | o da frente faz `cacar_apontar_2q` (1 a 2 s); os outros param agachados | parado, fuçando | a uns 30 px |
+| 3. arremessar | o da frente faz `cacar_arremessar_4q` | parado | a 20 a 30 px. A `lanca_voando` sai da mão (coluna 7, linha 4 do caçador) no quadro 2 e leva uns 0,3 s até o bicho, num arco raso. |
+| 4a. acertou | todos fazem `cacar_comemorar_4q` (2 a 3 s), com os quadros defasados | `porco_atingido_4q` (0,2 s por quadro), e depois o quadro 3 parado | o bicho cai no lugar onde estava |
+| 4b. errou | o caçador vai buscar a lança (andar) e volta ao passo 1 | `porco_correr_4q` foge para a floresta e some | a `lanca_cravada` fica no chão onde o bicho estava, até alguém pegá-la |
+| 5. abater e amarrar | um faz `cacar_amarrar_4q` (3 a 4 s), à esquerda do bicho, com a mão (coluna 7) sobre ele; os outros esperam de pé | `porco_abatido` (troca o quadro 3 do atingido: o caçador tirou a lança) | o `pau_no_chao` fica ao lado do bicho, no chão |
+| 6. voltar | 2 carregadores com `carregar_caca_forte_4q`, a 16 px um do outro | `objetos/caca_no_pau_porco_forte` entre eles (seção 22) | atravessam a tela até a fogueira. Lá, o bicho vai para o `espeto` e alguém faz `cozinhar_espeto_4q`. |
+
+**Encaixe do porco entre as folhas.** No `porco_atingido_4q` (12 × 8), o porco ocupa as colunas 2 a 11, com a lança à esquerda. No `porco_do_mato_4q`, no `porco_correr_4q` e no `porco_abatido` (10 × 6), ele ocupa as colunas 0 a 9. Ao passar para o atingido, desenhe-o em x − 2; ao trocar o atingido pelo abatido, volte para x + 2. As bases são a última linha de cada folha. Assim, o porco não pula 2 px na troca.
+
+Com a ave, é a mesma sequência: `ave_grande_4q` no passo 1, `ave_fugir_4q` quando erra, `ave_abatida` quando acerta (sem quadro de atingida: ela cai direto) e `caca_no_pau_ave_forte` na volta.
 
 ## Critérios
 

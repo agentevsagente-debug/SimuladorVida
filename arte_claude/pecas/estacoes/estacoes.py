@@ -375,10 +375,13 @@ PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "esc
                     "vigia", "contar", "ouvir", "criancas", "tropecar", "espantar", "discutir", "abraco")
 
 
-def vestir_inverno(px, qw, qh):
+def vestir_inverno(px, qw, qh, idoso=False):
     """Roupa de frio sobre as cores-base: capuz de lã sobre o cabelo (9/10), manto nas
     costas (8), mangas de lã (o braço vira 10/9, as mãos ficam), polainas (9/8) e gola de
-    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece."""
+    pele (12). Pele e roupa continuam trocáveis; com o capuz, o cabelo não aparece.
+    O cabelo branco do idoso (12 e 31) só vira capuz nas folhas de idoso: nas outras, 12 e 31
+    na altura da cabeça são objetos (palha do cesto, ponta da lança) e ficam como estão."""
+    cabelos = CABELOS_BASE if idoso else {c: t for c, t in CABELOS_BASE.items() if c in (30, 8)}
     out = [l[:] for l in px]
     w = len(px[0])
     adulto = qh == 12
@@ -406,8 +409,8 @@ def vestir_inverno(px, qw, qh):
         topo_cab = range(0, 6) if adulto else range(0, 3)
         for y in topo_cab:
             for x in range(q0, q0 + qw):
-                if px[y][x] in CABELOS_BASE:
-                    out[y][x] = CAPUZ[CABELOS_BASE[px[y][x]]]
+                if px[y][x] in cabelos:
+                    out[y][x] = CAPUZ[cabelos[px[y][x]]]
         # manto: uma coluna a mais de lã nas costas, do ombro à cintura
         for y in (range(4, 9) if adulto else range(4, 6)):
             xs = [x for x in range(q0, q0 + qw) if px[y][x] is not None]
@@ -502,7 +505,7 @@ def principal():
             qh = len(px)
             if qh not in (8, 12):
                 continue
-            gravar(vestir_inverno(px, len(px[0]) // n, qh), AQUI / "inverno" / pasta / f.name, ampliar=False)
+            gravar(vestir_inverno(px, len(px[0]) // n, qh, f.stem.startswith("idoso")), AQUI / "inverno" / pasta / f.name, ampliar=False)
             contagem["inverno"] += 1
     gravar(folha_quadros(neve_caindo()), PECAS / "efeitos" / "neve_4q.png")
     gravar(folha_quadros(flocos()), PECAS / "efeitos" / "floco_3v.png")

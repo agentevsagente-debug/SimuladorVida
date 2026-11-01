@@ -89,6 +89,22 @@ CRIATURAS = {
     ),
     # bando migrando no inverno: 7 pássaros em V (24x8), asas alternadas
     "bando_migrando_4q": None,
+    # coruja pousada num galho (7x8), já em tons de noite: olhos amarelos que piscam e viram.
+    # Quadros: olhando, piscando, olhando para o lado, olhando.
+    "coruja_pousada_4q": molde(
+        ["K.....K", "KKKKKKK", "KgyKygK", "KggnggK", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
+        ["K.....K", "KKKKKKK", "KggKggK", "KggnggK", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
+        [".K.....", "KKKKKKK", "KKgyKyg", "KKggngg", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
+        ["K.....K", "KKKKKKK", "KgyKygK", "KggnggK", ".KkKkK.", ".KKkKK.", "..n.n..", "dnnddnd"],
+    ),
+    # morcego da madrugada (8x5), maior que o do entardecer e com a borda das asas clara
+    # (luz da lua) para ler sobre o céu escuro; olhos vermelhos
+    "morcego_noite_4q": molde(
+        ["g......g", "Kg....gK", ".KKkkKK.", "...kr...", "........"],
+        ["........", "ggg..ggg", "KKKkkKKK", "...kr...", "........"],
+        ["........", "...kk...", "gKKkrKKg", "KK....KK", "g......g"],
+        ["........", "ggg..ggg", "KKKkkKKK", "...kr...", "........"],
+    ),
 }
 
 
@@ -121,6 +137,8 @@ QUANDO = {
     "corvo_pousado_2q": ("todas", "dia", "pousado perto dos mortos e das ruínas"),
     "morcego_4q": ("primavera, verão, outono", "entardecer e começo da noite", "sai da floresta e das ruínas"),
     "bando_migrando_4q": ("inverno (e fim do outono)", "dia", "atravessa o céu alto de um lado a outro"),
+    "coruja_pousada_4q": ("todas", "noite e madrugada", "pousada num galho de árvore ou no telhado; pisca"),
+    "morcego_noite_4q": ("primavera, verão, outono", "noite e madrugada", "voa em zigue-zague perto das árvores e da fogueira"),
 }
 
 

@@ -13,8 +13,8 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 
 | Atlas | Tamanho | Peças | Memória de vídeo (L × A × 4) |
 |---|---|---|---|
-| `comum` | 512x512 | 209 | 1024 KB |
-| `pessoas_inverno` | 256x128 | 61 | 128 KB |
+| `comum` | 512x512 | 233 | 1024 KB |
+| `pessoas_inverno` | 256x256 | 75 | 256 KB |
 | `nuvens` | 256x128 | 45 | 128 KB |
 | `estacao_primavera` | 256x128 | 68 | 128 KB |
 | `estacao_verao` | 256x128 | 68 | 128 KB |
@@ -33,7 +33,7 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 | `estagio6` | 256x256 | 43 | 256 KB |
 | `estagio6_inverno` | 256x256 | 43 | 256 KB |
 
-**Total, com todos carregados: 3,56 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
+**Total, com todos carregados: 3,69 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,5 MB (o inverno soma o `pessoas_inverno`).
 
 **O que vai em cada atlas:**
 - **`comum`:** habitantes, ações e vida, chaminé e fumaça de chaminé (`luzes/`), interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
