@@ -194,7 +194,7 @@ No WorldBox, as criaturas não sabem que existe um deus. Aqui, **os habitantes p
 
 ### Tempo
 
-- Existe ciclo de dia e noite, com **cerca de 45 minutos reais por dia de jogo** no ritmo normal (30 de dia e 15 de noite).
+- Existe ciclo de dia e noite, com **cerca de 45 minutos reais por dia de jogo** no ritmo normal (cerca de 26 de dia e 19 de noite: a noite vai das 20h às 6h).
 - Os **anos são curtos**, com cerca de 40 dias (4 estações de aproximadamente 10 dias), para que a sociedade evolua num tempo de uso real.
   - Com a moldura aberta 8 horas por dia, passam uns 10 dias de jogo por dia de trabalho, um ano de jogo a cada 4 dias de trabalho e uma geração (uns 20 anos) a cada 3 meses de uso.
 - **O ritmo lento é o padrão.** As velocidades maiores (como 10x e 50x) servem para quando o jogador está olhando ativamente.
