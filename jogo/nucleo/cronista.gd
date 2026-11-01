@@ -46,6 +46,12 @@ var anos_escritos: Dictionary = {}   # ano -> parágrafo ("" se o ano foi quieto
 var ultimo_ano_escrito: int = 0
 var _cursor: int = 0                 # próximo evento ainda não lido
 var cronicas_povos: Dictionary = {}  # id do grupo -> {ano: texto}: a história que o povo escreveu
+# Índices para não percorrer a história inteira a cada frase (não são salvos; refeitos ao ler).
+var _por_tipo: Dictionary = {}       # tipo -> eventos desse tipo, em ordem
+var _por_tipo_ate: int = 0
+var _nomes: Dictionary = {}          # nomes de pessoas e povos, para saber se a frase começa por nome próprio
+var _nomes_pessoas_ate: int = 0
+var _nomes_grupos_ate: int = 0
 
 
 func _init(mundo) -> void:
@@ -124,6 +130,38 @@ func _frase(opcoes: Array, vars: Dictionary) -> String:
 
 func _estacao(e) -> String:
 	return ["primavera", "verão", "outono", "inverno"][e.dia / 10]
+
+
+## Monta de uma vez os índices que não são salvos. Chamado ao carregar um mundo, para que
+## a primeira virada de ano depois não pague a história inteira num passo só.
+func aquecer() -> void:
+	_do_tipo("")
+	_e_nome_proprio("")
+	_indexar_ate(m.eventos.size())
+
+
+## Os eventos de um tipo, em ordem. O índice cresce junto com a lista de eventos.
+func _do_tipo(tipo: String) -> Array:
+	var evs: Array = m.eventos
+	while _por_tipo_ate < evs.size():
+		var e = evs[_por_tipo_ate]
+		if not _por_tipo.has(e.tipo):
+			_por_tipo[e.tipo] = []
+		_por_tipo[e.tipo].append(e)
+		_por_tipo_ate += 1
+	return _por_tipo.get(tipo, [])
+
+
+func _e_nome_proprio(palavra: String) -> bool:
+	while _nomes_pessoas_ate < m._proximo_id_pessoa:
+		var p = m.pessoas.get(_nomes_pessoas_ate)
+		if p != null:
+			_nomes[p.nome] = true
+		_nomes_pessoas_ate += 1
+	while _nomes_grupos_ate < m.grupos.size():
+		_nomes[m.grupos[_nomes_grupos_ate].nome] = true
+		_nomes_grupos_ate += 1
+	return _nomes.has(palavra)
 
 
 func _evento(id: int):
@@ -446,12 +484,8 @@ func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR) -> S
 ## Põe em minúscula a primeira letra, salvo se a frase começa por um nome próprio.
 func _minuscula_inicial(f: String) -> String:
 	var primeira := f.split(" ")[0].strip_edges().trim_suffix(",")
-	for p in m.pessoas.values():
-		if p.nome == primeira:
-			return f
-	for g in m.grupos:
-		if g.nome == primeira:
-			return f
+	if _e_nome_proprio(primeira):
+		return f
 	return f.substr(0, 1).to_lower() + f.substr(1)
 
 
@@ -549,10 +583,10 @@ func _nota(e) -> int:
 
 func _mortos_entre(g1: int, g2: int, ate: int) -> int:
 	var n := 0
-	for e in m.eventos:
+	for e in _do_tipo("ataque"):
 		if e.id >= ate:
 			break
-		if e.tipo == "ataque" and ((e.grupo == g1 and e.outro_grupo == g2) or (e.grupo == g2 and e.outro_grupo == g1)):
+		if (e.grupo == g1 and e.outro_grupo == g2) or (e.grupo == g2 and e.outro_grupo == g1):
 			n += e.dados["mortos"].size()
 	return n
 
@@ -561,11 +595,13 @@ func _mortos_entre(g1: int, g2: int, ate: int) -> int:
 func _resumo_da_decada(a: int) -> String:
 	var c := {"seca_fim": 0, "fome_fim": 0, "prece_atendida": 0, "prece_sem_resposta": 0, "ataque": 0,
 		"nascimento": 0, "morte": 0}
-	for e in m.eventos:
-		if e.ano > a:
-			break
-		if e.ano > a - 10 and c.has(e.tipo):
-			c[e.tipo] += 1
+	for tipo in c:
+		var lista := _do_tipo(tipo)
+		for i in range(lista.size() - 1, -1, -1):
+			if lista[i].ano <= a - 10:
+				break
+			if lista[i].ano <= a:
+				c[tipo] += 1
 	var partes: Array = []
 	if c["seca_fim"] >= 2:
 		partes.append("%s secas" % G.extenso(c["seca_fim"], "f"))
@@ -587,8 +623,12 @@ func _resumo_da_decada(a: int) -> String:
 
 func _mortes_no_ano(a: int, causa: String) -> int:
 	var n := 0
-	for e in m.eventos:
-		if e.ano == a and e.tipo == "morte" and e.dados["causa"] == causa:
+	var lista := _do_tipo("morte")
+	for i in range(lista.size() - 1, -1, -1):
+		var e = lista[i]
+		if e.ano < a:
+			break
+		if e.ano == a and e.dados["causa"] == causa:
 			n += 1
 	return n
 
@@ -1234,21 +1274,20 @@ func _chuva_divina_entre(ini, fim) -> bool:
 
 func _pior_fome_antes(e) -> int:
 	var pior := 0
-	for x in m.eventos:
+	for x in _do_tipo("fome_fim"):
 		if x.id >= e.id:
 			break
-		if x.tipo == "fome_fim":
-			pior = maxi(pior, x.dados["mortos"])
+		pior = maxi(pior, x.dados["mortos"])
 	return pior
 
 
 func _seca_anterior(e) -> int:
 	var ini = _evento(e.dados["inicio"])
 	var anterior := -1
-	for x in m.eventos:
+	for x in _do_tipo("seca_fim"):
 		if x.id >= e.id:
 			break
-		if x.tipo == "seca_fim" and _usados.has(x.id) and (ini == null or x.id < ini.id):
+		if _usados.has(x.id) and (ini == null or x.id < ini.id):
 			anterior = x.ano
 	return anterior
 
@@ -1383,11 +1422,10 @@ func _lugar_nomeado(e, v: Dictionary) -> String:
 	var origem = _evento(e.dados["origem"])
 	# Dois povos dão nomes diferentes ao mesmo lugar, pelo mesmo fato.
 	var par = null
-	for x in m.eventos:
-		if x.id > e.id and x.tipo == "lugar_nomeado" and x.dados["origem"] == e.dados["origem"] and x.grupo != e.grupo:
+	for i in range(e.id + 1, mini(e.id + 8, m.eventos.size())):
+		var x = m.eventos[i]
+		if x.tipo == "lugar_nomeado" and x.dados["origem"] == e.dados["origem"] and x.grupo != e.grupo:
 			par = x
-			break
-		if x.id > e.id + 6:
 			break
 	if par != null:
 		_usados[par.id] = true

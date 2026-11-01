@@ -59,6 +59,116 @@ func _initialize() -> void:
 	print("--- relato das férias ---")
 	print(aus["relato"])
 	conferir(Persistencia.carregar("user://nao_existe.txt") == null, "arquivo ausente devolve null")
-	DirAccess.remove_absolute(ProjectSettings.globalize_path(CAMINHO))
+	_apagar_com_copias(CAMINHO)
+	_testar_copias()
+	_testar_estante()
 	print("%d falhas" % falhas)
 	quit()
+
+
+const Arquivo = preload("res://nucleo/arquivo.gd")
+const Estante = preload("res://nucleo/estante.gd")
+
+
+func _apagar_com_copias(caminho: String) -> void:
+	for c in [caminho, caminho + ".novo", Arquivo.copia(caminho, 1), Arquivo.copia(caminho, 2), Arquivo.copia(caminho, 3),
+			Arquivo.copia(caminho, 4)]:
+		if FileAccess.file_exists(c):
+			DirAccess.remove_absolute(ProjectSettings.globalize_path(c))
+
+
+func _estragar(caminho: String, como: String) -> void:
+	var t := FileAccess.get_file_as_string(caminho)
+	var f := FileAccess.open(caminho, FileAccess.WRITE)
+	match como:
+		"cortado":   # um salvamento interrompido no meio
+			f.store_string(t.substr(0, t.length() / 2))
+		"lixo":
+			f.store_string("lixo que nao e um mundo {[(")
+		"vazio":
+			pass
+		"mexido":   # um pedaço trocado no meio: o texto ainda é lido, mas falta o que importa
+			f.store_string(t.replace("\"eventos\"", "\"evento\""))
+	f.close()
+
+
+## Cópias de segurança do mundo salvo: 3 versões anteriores, e o carregar recorre a elas.
+func _testar_copias() -> void:
+	var m := Mundo.new(3)
+	var estados: Array = []
+	for i in 5:
+		m.avancar_dias(7)
+		Persistencia.salvar(m, CAMINHO)
+		estados.append(m.rng.state)
+	conferir(FileAccess.file_exists(Arquivo.copia(CAMINHO, 3)) and not FileAccess.file_exists(Arquivo.copia(CAMINHO, 4)),
+		"cópias: guarda as 3 versões anteriores, e só 3")
+	var b = Persistencia.carregar(CAMINHO)
+	conferir(b != null and b.rng.state == estados[4] and b.recuperado_de == "", "cópias: o arquivo bom é o que vale")
+	var casos := [["cortado", 1], ["lixo", 2], ["vazio", 3], ["mexido", 1]]
+	for caso in casos:
+		# Estraga o principal e as cópias mais novas que a esperada.
+		_testar_um(caso[0], caso[1], estados)
+	# Tudo estragado: null, sem quebrar.
+	for c in [CAMINHO, Arquivo.copia(CAMINHO, 1), Arquivo.copia(CAMINHO, 2), Arquivo.copia(CAMINHO, 3)]:
+		_estragar(c, "lixo")
+	conferir(Persistencia.carregar(CAMINHO) == null, "cópias: tudo estragado devolve null")
+	# O retorno conta a recuperação.
+	Persistencia.salvar(m, CAMINHO)
+	m.avancar_dias(1)
+	Persistencia.salvar(m, CAMINHO)
+	_estragar(CAMINHO, "cortado")
+	var r = Persistencia.carregar_e_avancar(CAMINHO, int(Time.get_unix_time_from_system()) + 3600)
+	conferir(r != null and r["ausencia"].get("recuperado_de", "") == Arquivo.copia(CAMINHO, 1)
+		and r["ausencia"]["relato"].begins_with("*O mundo salvo estava estragado."), "cópias: o retorno conta que o mundo voltou de uma cópia")
+	# Abandonar leva as cópias junto.
+	Persistencia.abandonar(Persistencia.carregar(CAMINHO), CAMINHO)
+	conferir(not Persistencia.existe(CAMINHO), "cópias: abandonar apaga o mundo e as cópias")
+	_apagar_com_copias(CAMINHO)
+
+
+func _testar_um(como: String, esperada: int, estados: Array) -> void:
+	# Refaz os 4 arquivos (principal + 3 cópias) a partir dos estados salvos de novo.
+	_apagar_com_copias(CAMINHO)
+	var m := Mundo.new(3)
+	var st: Array = []
+	for i in 4:
+		m.avancar_dias(7)
+		Persistencia.salvar(m, CAMINHO)
+		st.append(m.rng.state)
+	_estragar(CAMINHO, como)
+	for n in range(1, esperada):
+		_estragar(Arquivo.copia(CAMINHO, n), como)
+	var b = Persistencia.carregar(CAMINHO)
+	conferir(b != null and b.recuperado_de == Arquivo.copia(CAMINHO, esperada) and b.rng.state == st[3 - esperada],
+		"cópias: arquivo %s volta da cópia %d" % [como, esperada])
+
+
+## A estante também tem cópias: de cada livro e do índice.
+func _testar_estante() -> void:
+	var pasta := "user://teste_estante"
+	_apagar_pasta(pasta)
+	for i in 3:
+		Estante.guardar({"texto": "# Livro %d\n\nTexto do livro %d." % [i, i], "titulo": "Livro %d" % i, "era": i + 1,
+			"semente": 9, "ano_ini": 1, "ano_fim": 10}, pasta)
+	var lista := Estante.livros(pasta)
+	conferir(lista.size() == 3, "estante: 3 livros")
+	_estragar(pasta + "/indice.txt", "cortado")
+	conferir(Estante.livros(pasta).size() == 2, "estante: índice estragado volta da cópia (a de antes do 3º livro)")
+	for c in [pasta + "/indice.txt"] + range(1, 4).map(func(n): return Arquivo.copia(pasta + "/indice.txt", n)):
+		_estragar(c, "lixo")
+	var refeito := Estante.livros(pasta)
+	conferir(refeito.size() == 3 and refeito[2]["titulo"] == "Livro 2", "estante: sem índice, ele é refeito dos livros")
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(pasta + "/" + lista[1]["id"] + ".md"))
+	conferir(Estante.ler(lista[1]["id"], pasta).begins_with("# Livro 1"), "estante: livro apagado volta da cópia")
+	_estragar(pasta + "/" + lista[0]["id"] + ".md", "vazio")
+	conferir(Estante.ler(lista[0]["id"], pasta).begins_with("# Livro 0"), "estante: livro vazio volta da cópia")
+	_apagar_pasta(pasta)
+
+
+func _apagar_pasta(pasta: String) -> void:
+	var dir := DirAccess.open(pasta)
+	if dir == null:
+		return
+	for f in dir.get_files():
+		dir.remove(f)
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(pasta))

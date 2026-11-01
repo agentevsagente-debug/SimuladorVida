@@ -18,7 +18,7 @@ func _initialize() -> void:
 	var m: Mundo
 	if OS.get_cmdline_user_args().size() > 0 and OS.get_cmdline_user_args()[0] == "estagio6":
 		# O mundo grande do estágio 6, gerado por medir_desempenho.gd.
-		m = preload("res://nucleo/persistencia.gd").carregar("user://desempenho.txt")
+		m = preload("res://ferramentas_sim/desempenho.gd").carregar_mundo_grande()
 	else:
 		m = Mundo.new(4)
 		m.avancar_dias(40 * 70)
@@ -86,5 +86,20 @@ func _initialize() -> void:
 	m._rotina_cache = null
 	var a2 := str(m.pessoas_visiveis())
 	conferir(a1 == a2 and m.rng.state == s1, "consulta pura e repetível")
+	# A rotina montada na thread é igual à montada aqui, no mesmo instante.
+	var dias_vistos := 0
+	while dias_vistos < 2:
+		m.avancar_hora()
+		m.pessoas_visiveis()
+		if m._montando != null:
+			while not WorkerThreadPool.is_task_completed(m._tarefa):
+				OS.delay_msec(5)
+			var feita = m._montando
+			var aqui = preload("res://nucleo/rotina.gd").new(m, m.dia_abs())
+			aqui.montar()
+			conferir(feita._agendas == aqui._agendas and feita.cenas == aqui.cenas and feita.planos == aqui.planos,
+				"rotina da thread igual à da linha principal (dia %d)" % m.dia_abs())
+			dias_vistos += 1
+	conferir(m.desempenho["substitutos"] == 0, "ninguém acordado sem plano (%s)" % m.desempenho)
 	print("%d falhas" % falhas)
 	quit(1 if falhas > 0 else 0)
