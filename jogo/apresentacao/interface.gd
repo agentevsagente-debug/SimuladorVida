@@ -293,7 +293,7 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 	var na_alca := pos.y < faixa and pos.x < largura()
 	var no_relogio := RELOGIO.has_point(Vector2i(pos))
 	if event is InputEventMouseMotion and no_relogio:
-		_mostrar_dica([_data_do_relogio()], -1, Vector2(RELOGIO.position.x - 70, RELOGIO.end.y + 3), false)
+		_mostrar_dica([_data_do_relogio(), versao()], -1, Vector2(RELOGIO.position.x - 70, RELOGIO.end.y + 3), false)
 		return true
 	if event is InputEventMouseButton and no_relogio:
 		return true
@@ -581,6 +581,11 @@ func _data_do_relogio() -> String:
 	var t: Dictionary = vista.sim.tempo
 	var dia_na_estacao := (int(t["dia"]) - 1) % 10 + 1
 	return "Dia %d %s, ano %d" % [dia_na_estacao, DA_ESTACAO.get(t["estacao"], ""), t["ano"]]
+
+
+## "Simulador de vida 0.1.0": para os relatos dizerem de qual versão falam.
+static func versao() -> String:
+	return "Simulador de vida " + String(ProjectSettings.get_setting("application/config/version", "0.1.0"))
 
 
 func _avisar(texto: String) -> void:

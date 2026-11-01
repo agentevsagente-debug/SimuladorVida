@@ -20,6 +20,7 @@ extends Node2D
 ##                                        (e não mostra as dicas da primeira abertura)
 ##   --primeira-vez                       mostra as dicas da primeira abertura desde o começo (testes)
 ##   --duracao=S                          fecha sozinho depois de S segundos
+##   --sair-salvando                      ao fim da duração, sai com um salvamento em segundo plano rodando (testes)
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
 ##   --sem-atalho                         não liga o atalho global (que o jogo de verdade liga sozinho)
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
@@ -56,6 +57,7 @@ var _usar_config := true
 var _bandeja: StatusIndicator
 var _atalho_pid := 0
 var _avisou_esconder := false
+var _sair_salvando := false  # --sair-salvando: ao fim de --duracao, sai durante um salvar_async (testes)
 var _atalho_saida: FileAccess
 var _atalho_leitor: Thread
 var _largura_alca := 0
@@ -67,6 +69,7 @@ var _largura_alca := 0
 func _ready() -> void:
 	var args := _ler_argumentos()
 	_duracao = float(args.get("duracao", "0"))
+	_sair_salvando = args.has("sair-salvando")
 	_usar_config = not args.has("sem-config")
 	if args.has("sem-foco"):
 		get_window().unfocusable = true
@@ -210,6 +213,8 @@ func _process(delta: float) -> void:
 	if _duracao > 0.0:
 		_duracao -= delta
 		if _duracao <= 0.0:
+			if _sair_salvando and vista.sim:  # teste: fecha com o salvamento em segundo plano ainda rodando
+				vista.sim.salvar_async()
 			sair()
 
 
@@ -218,6 +223,8 @@ func _notification(what: int) -> void:
 		_guardar_config()
 		if vista.sim:
 			vista.sim.salvar()
+			vista.sim.encerrar()
+		_parar_atalho_global()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -294,12 +301,15 @@ func sair() -> void:
 	_guardar_config()
 	if vista.sim:
 		vista.sim.salvar()
+		vista.sim.encerrar()
 	_parar_atalho_global()
 	get_tree().quit()
 
 
 ## Também quando o jogo fecha por outro caminho (a captura dos testes, por exemplo).
 func _exit_tree() -> void:
+	if vista and vista.sim:
+		vista.sim.encerrar()
 	_parar_atalho_global()
 
 

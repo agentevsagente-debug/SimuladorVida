@@ -2,6 +2,26 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Versão 0.1 para amigos (auditoria 11)
+
+**A falha ao fechar.**
+- **Causa:** o jogo saía com threads do núcleo ainda rodando no `WorkerThreadPool`: a montagem da rotina do dia, a rotina velha sendo desmontada e o salvamento em segundo plano. O mundo só esperava por elas quando era destruído, e na saída isso acontece tarde demais.
+- **Correção:** `Simulacao.encerrar()` congela a simulação e espera todas elas. É chamado em todos os caminhos de saída: Ctrl+Q e o fim de `--duracao` (`sair`), o X da janela (`WM_CLOSE_REQUEST`), o fim das capturas e o `_exit_tree`. O processo do atalho global também é parado ao fechar pelo X.
+- **Teste:** 30 aberturas e fechamentos, todos sem falha:
+  - 10 com um mundo salvo em 50x, saindo durante um `salvar_async` (a opção nova `--sair-salvando` começa o salvamento e sai em seguida);
+  - 10 com mundos de 150 anos em 50x, com as threads pesadas da rotina;
+  - 10 com um mundo salvo em 1x.
+
+  Todos os registros terminam com "threads encerradas". Esses testes foram sem janela (`--headless`); o fechamento pelo X, com janela, entra na passada do B1.
+
+**B3, a versão:** `config/version="0.1.0"` no `project.godot`. Ela aparece na dica do relógio ("Simulador de vida 0.1.0") e no pé da estante. O caminho do `godot.log` está no COMO JOGAR.
+
+**B2, o COMO JOGAR:** `jogo/distribuicao/COMO JOGAR.txt` vai ao lado do `.exe` em `builds/`. Ele explica:
+- o que é o jogo e o gesto do poder (o sinal e o milagre);
+- as teclas e como trazer a janela de volta;
+- onde fica o mundo salvo, como começar de novo e como desinstalar;
+- o aviso do SmartScreen e como mandar um erro.
+
 ## Os sinais da C, a estante na primeira vez e a roda (auditoria 10)
 
 | Item | O que foi feito |

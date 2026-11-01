@@ -178,6 +178,20 @@ func salvar() -> void:
 		print("[simulacao] salvo=%s ano=%d dia=%d hora=%d passo=%d" % [ok, tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"]])
 
 
+## Antes de o jogo fechar: espera as threads do núcleo (a montagem da rotina, a
+## rotina velha sendo desmontada e o salvamento em segundo plano). Fechar com uma
+## delas rodando derrubava o jogo (falha de segmentação ao sair).
+func encerrar() -> void:
+	if mundo == null:
+		return
+	congelado = true  # nenhum passo novo (que lançaria outra montagem) até o jogo sair
+	mundo._esperar_threads()
+	for d in mundo._descartes:
+		WorkerThreadPool.wait_for_task_completion(d[0])
+	mundo._descartes.clear()
+	print("[simulacao] threads encerradas")
+
+
 ## Salva numa thread, sem travar o jogo (o salvamento de cada dia).
 func salvar_async() -> void:
 	if salvar_em_disco and mundo != null:

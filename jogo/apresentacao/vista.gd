@@ -243,6 +243,8 @@ func avancar(delta: float, desenhar: bool) -> void:
 			_quadros_ate_capturar = 1
 			print("[vista] capturada em %s" % arquivo)
 			if _gravados >= _quadros:
+				if sim:
+					sim.encerrar()
 				get_tree().quit()
 
 

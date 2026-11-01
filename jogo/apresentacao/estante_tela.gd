@@ -511,6 +511,8 @@ func _draw() -> void:
 		if l.get("atual", false):  # a era em curso: uma fita dourada saindo de cima
 			draw_rect(Rect2(r.position.x + 8, y - 3, 1, 3), Arte.paleta[22])
 	_botao_texto(FECHAR, "Fechar", _sob_botao == "fechar")
+	var fv: Font = interface._fontes["clara"]  # a versão, discreta, no pé da estante
+	draw_string(fv, Vector2(INICIO_X, ALTURA - 2), interface.versao(), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	if _primeira_vez:
 		var frase := "Aqui ficam as crônicas dos mundos que você deixar"
 		var fd: Font = interface._fontes["dourada"]
