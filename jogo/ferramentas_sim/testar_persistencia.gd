@@ -64,6 +64,7 @@ func _initialize() -> void:
 	_testar_estante()
 	_testar_async()
 	_testar_interrompido()
+	_testar_antigos()
 	print("%d falhas" % falhas)
 	quit()
 
@@ -219,3 +220,55 @@ func _testar_interrompido() -> void:
 	print("gravação interrompida: o mundo carregou %d de 6 vezes; %d mortes deixaram um arquivo pela metade" % [ok, no_meio])
 	conferir(ok == 6, "interrompido: depois de matar o processo no meio da gravação, o mundo carrega (%d de 6; %d mortes com um arquivo pela metade)" % [ok, no_meio])
 	_apagar_com_copias(caminho)
+
+
+## O arquivo dos antigos: os eventos e mortos de mais de 300 anos vão para um arquivo à parte,
+## com cópias; o mundo salvo e carregado continua igual; um arquivo dos antigos estragado faz o
+## mundo voltar de uma cópia; sem ele, o mundo não carrega; abandonar apaga ele também.
+func _testar_antigos() -> void:
+	var caminho := "user://teste_antigos/mundo.txt"
+	var antigos: String = Persistencia.caminho_antigos(caminho)
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(caminho.get_base_dir()))
+	for base in [caminho, antigos]:
+		_apagar_com_copias(base)
+	var m = preload("res://ferramentas_sim/desempenho.gd").carregar_mundo_grande()
+	while m.ano() < 302:
+		m.avancar_dias(40)
+	conferir(m.arquivo_linhas > 0 and m.eventos.has(null), "antigos: o mundo arquivou eventos (%d linhas)" % m.arquivo_linhas)
+	# Poucas linhas: vão dentro do mundo salvo, sem arquivo à parte.
+	conferir(Persistencia.salvar(m, caminho) and not FileAccess.file_exists(antigos), "antigos: poucas linhas vão dentro do mundo salvo")
+	var b = Persistencia.carregar(caminho)
+	conferir(b != null and b.rng.state == m.rng.state and b.arquivo_linhas == m.arquivo_linhas, "antigos: carregado com as linhas de dentro do mundo")
+	while m.arquivo_linhas <= Persistencia.ANTIGOS_PENDENTES + 20:
+		m.avancar_dias(40)
+	var arquivado: int = m.eventos.find(null)
+	var original: Dictionary = m.evento(arquivado).para_dict()
+	conferir(Persistencia.salvar(m, caminho) and FileAccess.file_exists(antigos), "antigos: com muitas linhas, salvar grava o arquivo dos antigos")
+	b = Persistencia.carregar(caminho)
+	conferir(b != null and b.rng.state == m.rng.state and b.cronica(250) == m.cronica(250) and b.arquivo_linhas == m.arquivo_linhas,
+		"antigos: carregado, o mundo é o mesmo")
+	conferir(b != null and str(b.evento(arquivado).para_dict()) == str(original), "antigos: um evento arquivado volta igual do arquivo")
+	m.avancar_dias(5)
+	conferir(Persistencia.salvar(m, caminho), "antigos: salvar com o arquivo e linhas novas dentro do mundo")
+	b = Persistencia.carregar(caminho)
+	conferir(b != null and b.rng.state == m.rng.state and b.arquivo_linhas == m.arquivo_linhas, "antigos: o arquivo mais as linhas de dentro do mundo")
+	var n1: int = m.arquivo_linhas
+	var estado1: int = m.rng.state
+	while m.arquivo_linhas <= n1 + Persistencia.ANTIGOS_PENDENTES + 20:
+		m.avancar_dias(40)
+	conferir(Persistencia.salvar(m, caminho) and FileAccess.file_exists(Arquivo.copia(antigos, 1)),
+		"antigos: o arquivo foi regravado e a versão anterior ficou como cópia")
+	_estragar(antigos, "cortado")
+	b = Persistencia.carregar(caminho)
+	conferir(b != null and b.recuperado_de == Arquivo.copia(caminho, 1) and b.rng.state == estado1 and b.arquivo_linhas == n1,
+		"antigos: arquivo dos antigos cortado, o mundo volta da cópia anterior (com os antigos dela)")
+	_apagar_com_copias(antigos)
+	b = Persistencia.carregar(caminho)
+	conferir(b == null or (b.recuperado_de != "" and b.arquivo_linhas <= Persistencia.ANTIGOS_PENDENTES),
+		"antigos: sem o arquivo dos antigos, o mundo salvo não carrega (só uma cópia velha que não dependia dele)")
+	conferir(Persistencia.salvar(m, caminho), "antigos: salvar de novo refaz o arquivo dos antigos")
+	b = Persistencia.carregar(caminho)
+	conferir(b != null and b.rng.state == m.rng.state, "antigos: e o mundo volta a carregar")
+	Persistencia.abandonar(m, caminho)
+	conferir(not FileAccess.file_exists(antigos) and not FileAccess.file_exists(Arquivo.copia(antigos, 1)) and not Persistencia.existe(caminho),
+		"antigos: abandonar apaga o arquivo dos antigos e as cópias")

@@ -100,8 +100,11 @@ func _initialize() -> void:
 				OS.delay_msec(5)
 			var feita = m._montando
 			var aqui = preload("res://nucleo/rotina.gd").new(m, feita.dia)   # às 23h, a de amanhã
+			aqui.cortar_desde = feita.cortar_desde
+			aqui.cortar_ate = feita.cortar_ate
+			aqui._soltas_ate = feita._soltas_ate
 			aqui.montar()
-			conferir(feita._agendas == aqui._agendas and feita.cenas == aqui.cenas and feita.planos == aqui.planos,
+			conferir(feita._agendas == aqui._agendas and feita.cenas == aqui.cenas and feita.linhas == aqui.linhas,
 				"rotina da thread igual à da linha principal (dia %d)" % feita.dia)
 			dias_vistos += 1
 	conferir(m.desempenho["substitutos"] == 0, "ninguém acordado sem plano (%s)" % m.desempenho)

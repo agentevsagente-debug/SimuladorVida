@@ -11,6 +11,7 @@ const Nomes = preload("nomes.gd")
 const Cotidiano = preload("cotidiano.gd")
 const Cronista = preload("cronista.gd")
 const Rotina = preload("rotina.gd")
+const Antigos = preload("antigos.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40
@@ -278,9 +279,16 @@ func avancar_hora() -> void:
 	if h == 0:
 		_novo_dia()
 	elif h == 1 and dia_do_ano() == 0:
-		# A crônica do ano que acabou é escrita uma hora depois da virada, para não somar
-		# o custo dela ao passo mais caro do ano.
-		_cronista.processar_ate(ano() - 1)
+		# A crônica do ano que acabou é escrita depois da virada, para não somar o custo dela
+		# ao passo mais caro do ano, e em duas fatias: as frases do ano agora, e o censo, a
+		# crônica dos povos e a entrada na crônica no passo seguinte.
+		_cronista.processar_ate(ano() - 2)
+		if _cronista.ultimo_ano_escrito < ano() - 1:
+			_cronista.comecar_ano()
+	elif h == 2 and dia_do_ano() == 0:
+		_cronista.terminar_ano()
+	if h == 3 and arquivar:
+		_arquivar_antigos()
 	_executar_comandos()
 	if h == 12:
 		_executar_condicionais()
@@ -296,6 +304,8 @@ func avancar_hora() -> void:
 		# (salto, ausência, testes) não monta rotina nenhuma.
 		_consultado = false
 		_cuidar_da_rotina()
+		if _rotina_cache != null and _rotina_cache.dia == dia_abs():
+			_rotina_cache.soltar_horas_antes(hora())
 		# Com folga no passo, já deixa pronta a resposta das consultas da hora nova.
 		if Time.get_ticks_usec() - t0 < FOLGA_PARA_ADIANTAR_US:
 			_no_passo = true
@@ -330,10 +340,6 @@ func embaralhar(arr: Array) -> Array:
 		r[i] = r[j]
 		r[j] = t
 	return r
-
-
-func pessoa(id: int) -> Pessoa:
-	return pessoas.get(id)
 
 
 func grupo(id: int) -> Grupo:
@@ -692,7 +698,7 @@ func _tempestade_hora() -> void:
 	var h := hora()
 	if h < tempestade["inicio"]:
 		return
-	var e: Evento = eventos[tempestade["evento"]]
+	var e: Evento = evento(tempestade["evento"])
 	tempestade["horas"] -= 1
 	var z: Zona = zonas[tempestade["zona"]]
 	for g in grupos_na_zona(z.chave):
@@ -838,7 +844,7 @@ func _refeicao() -> void:
 				if pessoas[id].doente > 0:
 					algum = true
 			if not algum:
-				var ev: Evento = eventos[g.doenca_evento]
+				var ev: Evento = evento(g.doenca_evento)
 				var e3 := registrar("doenca_fim", "natural", 3 + mini(g.doenca_mortos, 5), g.zona, g.id, [],
 					{"mortos": g.doenca_mortos, "inicio": ev.id})
 				if g.doenca_mortos >= 3 and not g.tem_costume("queimar_mortos"):
@@ -860,7 +866,7 @@ func _consumo(p: Pessoa, a: int) -> float:
 func _dia_do_evento(id: int) -> int:
 	if id < 0:
 		return dia_abs()
-	var e: Evento = eventos[id]
+	var e: Evento = evento(id)
 	return (e.ano - 1) * DIAS_ANO + e.dia
 
 
@@ -948,6 +954,13 @@ func _parto(mae: Pessoa, g: Grupo) -> void:
 		_morrer(mae, "parto")
 
 
+## O que só vale para os vivos (o que viveram, os rancores) sai com a morte: ninguém lê isso
+## de um morto, e séculos de mortos pesavam no mundo salvo e na memória.
+func _esquecer_ao_morrer(p: Pessoa) -> void:
+	p.memoria = []
+	p.rancores = {}
+
+
 func _morrer(p: Pessoa, causa: String, dados_extra: Dictionary = {}) -> void:
 	if not p.vivo:
 		return
@@ -965,6 +978,7 @@ func _morrer(p: Pessoa, causa: String, dados_extra: Dictionary = {}) -> void:
 	p.morte_ano = a
 	p.causa_morte = causa
 	p.gravidez = -1
+	_esquecer_ao_morrer(p)
 	if g != null:
 		g.membros.erase(p.id)
 		match causa:
@@ -1069,10 +1083,190 @@ func _casamentos() -> void:
 
 
 func _ja_houve(tipo: String, g1: int, g2: int = -1) -> bool:
+	if g2 == -1:
+		if _houve_arquivado.has("%s|%d|*" % [tipo, g1]):
+			return true
+	elif _houve_arquivado.has("%s|%d|%d" % [tipo, g1, g2]) or _houve_arquivado.has("%s|%d|%d" % [tipo, g2, g1]):
+		return true
 	for e in do_tipo(tipo):
 		if (e.grupo == g1 and (g2 == -1 or e.outro_grupo == g2)) or (g2 != -1 and e.grupo == g2 and e.outro_grupo == g1):
 			return true
 	return false
+
+
+# ---------------------------------------------------------------- os antigos
+
+## Depois de ARQUIVAR_APOS anos, os eventos e os mortos que nada mais usa saem da memória
+## viva e vão para o arquivo dos antigos (veja antigos.gd). O arquivamento é parte da
+## simulação (roda no passo das 3h de cada dia, com os eventos do mesmo dia de 300 anos
+## atrás: um ou dois por vez, sem pesar no passo), e não do salvamento:
+## um mundo salvo e carregado tem os mesmos eventos vivos que um que nunca parou. Quem lê um
+## arquivado recebe o objeto igual ao que era (evento(), pessoa()), e o que percorria a
+## história inteira por tipo lê um resumo do que saiu (abaixo). Nada muda no que acontece
+## nem no que a crônica escreve.
+const ARQUIVAR_APOS := 300
+## No máximo tantos eventos por dia: um dia de 300 anos atrás com muita coisa (uma guerra, uma
+## peste) fica para os dias seguintes, sem pesar no passo.
+const ARQUIVAR_POR_DIA := 12
+## Eventos que ficam sempre: o começo de cada era e o fim do mundo (o prólogo e o livro os leem).
+const SEMPRE_VIVOS := ["inicio", "fim_do_mundo"]
+## Chaves de `dados` que apontam para outro evento.
+const DADOS_EVENTO := ["inicio", "origem", "prece", "resposta"]
+
+var arquivar := true                    # desligável só para testes (não é salvo)
+var _arquivo := Antigos.new()           # o arquivo dos antigos (gravado à parte)
+var _arquivo_gravado: Dictionary = {}   # caminho -> quantas linhas já estão gravadas lá (não é salvo)
+var arquivo_linhas: int = 0             # quantas linhas o arquivo dos antigos deste mundo tem
+var _arquivo_cursor: int = 0            # o próximo evento a examinar
+var _mantidos: Array = []               # eventos velhos que ficaram vivos (a memória ainda usa)
+var _citados: Dictionary = {}           # ids de eventos citados nos dados de eventos ainda não examinados
+var _citados_ate: int = 0               # até onde os eventos já foram lidos para isso
+var _mortos_a_ver: Array = []           # mortos dos eventos que saíram, à espera do ano da morte ficar velho
+var _pessoas_citadas: Dictionary = {}   # quem os eventos velhos que ficaram vivos citam
+# O resumo do que saiu, para quem percorria a história inteira:
+var arquivados_por_tipo: Dictionary = {}       # tipo -> quantos
+var _houve_arquivado: Dictionary = {}          # "tipo|grupo|outro" e "tipo|grupo|*" -> true
+var mortos_arquivados: Dictionary = {}         # "g1|g2" (menor primeiro) -> mortos nos ataques
+var _primeira_prece_arquivada: Dictionary = {} # id do grupo -> ano da primeira prece
+var pior_fome_arquivada: int = 0               # mais mortos numa fome
+var ultima_seca_arquivada: int = -1            # ano da última seca narrada que saiu
+var nomes_arquivados: Dictionary = {}          # nomes de quem saiu (a crônica reconhece nome próprio)
+
+
+func _par(g1: int, g2: int) -> String:
+	return "%d|%d" % [mini(g1, g2), maxi(g1, g2)]
+
+
+func _arquivar_antigos() -> void:
+	var limite := ano() - ARQUIVAR_APOS
+	if limite < 1:
+		return
+	var hoje := dia_do_ano()
+	# Os eventos que outros citam nos dados (o começo de uma fome, a origem de um costume...),
+	# lidos uma vez, conforme chegam.
+	while _citados_ate < eventos.size():
+		var e: Evento = eventos[_citados_ate]
+		if e != null:
+			for k in DADOS_EVENTO:
+				if e.dados.has(k) and typeof(e.dados[k]) == TYPE_INT and e.dados[k] >= _arquivo_cursor:
+					_citados[e.dados[k]] = true
+		_citados_ate += 1
+	# Os eventos do mesmo dia de ARQUIVAR_APOS anos atrás (e os de antes, num mundo de uma
+	# versão anterior).
+	var i := _arquivo_cursor
+	var lembrados := {}
+	var saiu := {}
+	var vistos := 0
+	while i < eventos.size() and vistos < ARQUIVAR_POR_DIA:
+		var e: Evento = eventos[i]
+		if e != null:
+			if e.ano > limite or (e.ano == limite and e.dia > hoje):
+				break
+			vistos += 1
+			if lembrados.is_empty():
+				lembrados = _eventos_lembrados()
+			if lembrados.has(e.id) or _citados.has(e.id) or SEMPRE_VIVOS.has(e.tipo):
+				_mantidos.append(e.id)
+				for pid in e.participantes:
+					_pessoas_citadas[pid] = true
+				for v in e.dados.values():
+					if typeof(v) == TYPE_INT:
+						_pessoas_citadas[v] = true
+			else:
+				_resumir(e)
+				_arquivo.guardar("e", e)
+				saiu[e.id] = true
+				_mortos_a_ver.append_array(e.participantes)
+				eventos[i] = null
+			_citados.erase(e.id)
+		i += 1
+	_arquivo_cursor = i
+	if not saiu.is_empty():
+		sem_os_que_sairam(_eventos_por_tipo, saiu)
+		_cronista.esquecer(saiu)
+	# Os mortos desses eventos, quando a morte também ficou velha, se nada mais os cita.
+	if _mortos_a_ver.is_empty():
+		arquivo_linhas = _arquivo.linhas()
+		return
+	var citados := {acompanhada: true}
+	for g in grupos:
+		citados[g.lider] = true
+		citados[g.sacerdote] = true
+		citados[g.fundador] = true
+	var restam: Array = []
+	for pid in _mortos_a_ver:
+		var p: Pessoa = pessoas.get(pid)
+		if p == null or p.vivo or citados.has(pid) or _pessoas_citadas.has(pid):
+			continue
+		if p.morte_ano >= limite:
+			restam.append(pid)
+			continue
+		nomes_arquivados[p.nome] = true
+		_arquivo.guardar("p", p)
+		pessoas.erase(pid)
+		_cronista.esquecer_pessoa(pid)
+	_mortos_a_ver = restam
+	arquivo_linhas = _arquivo.linhas()
+
+
+## Os eventos para onde o estado do mundo aponta.
+func _eventos_lembrados() -> Dictionary:
+	var lembrados := {}
+	for g in grupos:
+		lembrados[g.origem.get("evento", -1)] = true
+		lembrados[g.fome_evento] = true
+		lembrados[g.doenca_evento] = true
+		for c in g.costumes:
+			lembrados[c["evento"]] = true
+		for nec in g.preces:
+			lembrados[g.preces[nec]["evento"]] = true
+	for z in zonas.values():
+		lembrados[z.seca_evento] = true
+		for gid in z.nomes:
+			lembrados[z.nomes[gid]["evento"]] = true
+	lembrados[seca_evento] = true
+	lembrados[tempestade.get("evento", -1)] = true
+	return lembrados
+
+
+## Tira os eventos que saíram das listas de um índice por tipo. As listas estão em ordem de
+## id, e os que saíram ficam todos antes do maior id que saiu: só esse começo é filtrado.
+static func sem_os_que_sairam(indice: Dictionary, saiu: Dictionary) -> void:
+	var maior: int = saiu.keys().max()
+	for tipo in indice:
+		var lista: Array = indice[tipo]
+		var ini := 0
+		var fim := lista.size()
+		while ini < fim:
+			var meio := (ini + fim) / 2
+			if lista[meio].id <= maior:
+				ini = meio + 1
+			else:
+				fim = meio
+		if ini == 0:
+			continue
+		var comeco: Array = lista.slice(0, ini).filter(func(x): return not saiu.has(x.id))
+		if comeco.size() < ini:
+			indice[tipo] = comeco + lista.slice(ini)
+
+
+## Guarda no resumo o que quem percorria a história inteira lia deste evento.
+func _resumir(e: Evento) -> void:
+	arquivados_por_tipo[e.tipo] = arquivados_por_tipo.get(e.tipo, 0) + 1
+	_houve_arquivado["%s|%d|*" % [e.tipo, e.grupo]] = true
+	_houve_arquivado["%s|%d|%d" % [e.tipo, e.grupo, e.outro_grupo]] = true
+	match e.tipo:
+		"ataque":
+			var par := _par(e.grupo, e.outro_grupo)
+			mortos_arquivados[par] = mortos_arquivados.get(par, 0) + e.dados["mortos"].size()
+		"prece":
+			if not _primeira_prece_arquivada.has(e.grupo):
+				_primeira_prece_arquivada[e.grupo] = e.ano
+		"fome_fim":
+			pior_fome_arquivada = maxi(pior_fome_arquivada, e.dados["mortos"])
+		"seca_fim":
+			if _cronista._usados.has(e.id):
+				ultima_seca_arquivada = e.ano
 
 
 ## Índice dos eventos por tipo, para não percorrer a história inteira (dezenas de milhares
@@ -1085,6 +1279,9 @@ var _por_tipo_ate: int = 0
 func do_tipo(tipo: String) -> Array:
 	while _por_tipo_ate < eventos.size():
 		var e: Evento = eventos[_por_tipo_ate]
+		if e == null:
+			_por_tipo_ate += 1
+			continue
 		if not _eventos_por_tipo.has(e.tipo):
 			_eventos_por_tipo[e.tipo] = []
 		_eventos_por_tipo[e.tipo].append(e)
@@ -1404,6 +1601,7 @@ func _expedicao(g: Grupo, chefe: Pessoa) -> void:
 		vivos.erase(p.id)
 		p.morte_ano = ano()
 		p.causa_morte = "alem_da_borda"
+		_esquecer_ao_morrer(p)
 		if p.conjuge != -1 and not ids.has(p.conjuge) and pessoas.has(p.conjuge) and not foram.has(pessoas[p.conjuge]):
 			pessoas[p.conjuge].conjuge = -1
 	if g.lider in ids:
@@ -1768,7 +1966,7 @@ func _tentar_descoberta(g: Grupo, k: int) -> void:
 func _ja_houve_desde(tipo: String, gid: int, desde_ano: int) -> bool:
 	for i in range(eventos.size() - 1, -1, -1):
 		var e: Evento = eventos[i]
-		if e.ano < desde_ano:
+		if e == null or e.ano < desde_ano:
 			return false
 		if e.tipo == tipo and (e.grupo == gid or e.grupo == -1 or e.zona == grupos[gid].zona):
 			return true
@@ -2352,7 +2550,7 @@ func _rever_guerras() -> void:
 
 
 func _mortos_entre(g1: int, g2: int) -> int:
-	var n := 0
+	var n: int = mortos_arquivados.get(_par(g1, g2), 0)
 	for e in do_tipo("ataque"):
 		if (e.grupo == g1 and e.outro_grupo == g2) or (e.grupo == g2 and e.outro_grupo == g1):
 			n += e.dados["mortos"].size()
@@ -2644,12 +2842,12 @@ func _preces_do_dia() -> void:
 					g.preces.erase(nec)
 				continue
 			if not necessidades.has(nec):
-				_resolver_prece(g, nec, eventos[pr["evento"]])
+				_resolver_prece(g, nec, evento(pr["evento"]))
 			elif dia - pr["dia"] > 14 and nec != "doenca":
 				_prece_sem_resposta(g, nec, null)
 		for nec in necessidades:
 			if not g.preces.has(nec):
-				_abrir_prece(g, nec, eventos[g.doenca_evento] if nec == "doenca" else null, -1)
+				_abrir_prece(g, nec, evento(g.doenca_evento) if nec == "doenca" else null, -1)
 		if g.exigente and g.preces.is_empty() and chance(0.03):
 			_abrir_prece(g, "banal", null, -1)
 
@@ -2736,6 +2934,8 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 
 
 func _ano_da_primeira_prece(g: Grupo) -> int:
+	if _primeira_prece_arquivada.has(g.id):
+		return _primeira_prece_arquivada[g.id]
 	for e in do_tipo("prece"):
 		if e.grupo == g.id:
 			return e.ano
@@ -3506,6 +3706,9 @@ func rotina():
 		_receber_rotina(true)
 		if not a_tempo:
 			var nova = Rotina.new(self, d)
+			if hora() < HORA_MONTAR:
+				# Antes dos eventos do dia, ela é refeita na 1h: corta só as primeiras horas.
+				nova.cortar_ate = HORA_TROCA + 1
 			nova.montar()
 			nova.eventos_vistos = eventos.size()
 			_trocar_rotina(nova)
@@ -3581,6 +3784,8 @@ func _cuidar_da_rotina() -> void:
 func _montar_em_paralelo(dia_da_rotina: int = -1) -> void:
 	var d := dia_abs() if dia_da_rotina < 0 else dia_da_rotina
 	_montando = Rotina.new(self, d)
+	if dia_da_rotina > dia_abs():
+		_montando.cortar_ate = HORA_TROCA + 1
 	_montando.eventos_vistos = eventos.size()
 	# A tarefa segura o mundo (bind) até ser recolhida: ele não pode sumir no meio da montagem.
 	_tarefa = WorkerThreadPool.add_task(_montando.montar.bind(self), false, "rotina do dia")
@@ -3632,7 +3837,7 @@ func _rotina_mudou() -> bool:
 	var mudou: bool = ro.faltou
 	ro.faltou = false
 	for i in range(ro.eventos_vistos, eventos.size()):
-		if Rotina.GERAM_CENA.has(eventos[i].tipo):
+		if eventos[i] != null and Rotina.GERAM_CENA.has(eventos[i].tipo):
 			mudou = true
 			break
 	ro.eventos_vistos = eventos.size()
@@ -3642,15 +3847,27 @@ func _rotina_mudou() -> bool:
 ## Os eventos desde o dia absoluto `dia_min`, em ordem.
 func eventos_recentes(dia_min: int) -> Array:
 	var i := eventos.size()
-	while i > 0 and (eventos[i - 1].ano - 1) * DIAS_ANO + eventos[i - 1].dia >= dia_min:
+	while i > 0 and eventos[i - 1] != null and (eventos[i - 1].ano - 1) * DIAS_ANO + eventos[i - 1].dia >= dia_min:
 		i -= 1
 	return eventos.slice(i)
 
 
+## O evento de um id, inclusive os arquivados (decodificados do arquivo dos antigos: um
+## objeto novo a cada chamada, igual ao que era).
 func evento(id: int) -> Evento:
 	if id < 0 or id >= eventos.size():
 		return null
+	if eventos[id] == null:
+		return _arquivo.objeto("e", id)
 	return eventos[id]
+
+
+## Uma pessoa, viva ou morta, inclusive as arquivadas; null se o id nunca existiu.
+func pessoa(id: int) -> Pessoa:
+	var p: Pessoa = pessoas.get(id)
+	if p == null:
+		return _arquivo.objeto("p", id)
+	return p
 
 
 ## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora.
@@ -3787,7 +4004,7 @@ func preces_abertas() -> Array:
 	for g in grupos_vivos():
 		for nec in g.preces:
 			var pr: Dictionary = g.preces[nec]
-			var e: Evento = eventos[pr["evento"]]
+			var e: Evento = evento(pr["evento"])
 			if not _textos_prece.has(e.id):
 				_textos_prece[e.id] = [_cronista.texto_prece(e), _cronista.texto_curto(e)]
 			r.append({"evento": e.id, "grupo": g.id, "autor": pr["autor"], "alvo": pr["alvo"],
@@ -3813,9 +4030,10 @@ func camada(e: Evento) -> String:
 func eventos_desde(desde: int) -> Array:
 	var r: Array = []
 	for i in range(maxi(0, desde), eventos.size()):
-		var d: Dictionary = eventos[i].para_dict()
-		d["camada"] = camada(eventos[i])
-		d["curto"] = _cronista.texto_curto(eventos[i]) if d["camada"] != "ambiente" else ""
+		var e: Evento = evento(i)
+		var d: Dictionary = e.para_dict()
+		d["camada"] = camada(e)
+		d["curto"] = _cronista.texto_curto(e) if d["camada"] != "ambiente" else ""
 		r.append(d)
 	return r
 
@@ -3882,7 +4100,7 @@ func sugestoes(n: int = 5) -> Array:
 	var limite := (ano() - 2) * DIAS_ANO
 	for i in range(eventos.size() - 1, -1, -1):
 		var e: Evento = eventos[i]
-		if (e.ano - 1) * DIAS_ANO + e.dia < limite:
+		if e == null or (e.ano - 1) * DIAS_ANO + e.dia < limite:
 			break
 		if not MOTIVOS_SUGESTAO.has(e.tipo) or e.importancia < 3 or e.participantes.is_empty():
 			continue
@@ -3921,7 +4139,7 @@ func cronica_ano(a: int) -> String:
 func texto_curto(evento_id: int) -> String:
 	if evento_id < 0 or evento_id >= eventos.size():
 		return ""
-	return _cronista.texto_curto(eventos[evento_id])
+	return _cronista.texto_curto(evento(evento_id))
 
 
 ## A história que um povo que escreve contou de si, em markdown; vazio se ele nunca escreveu.

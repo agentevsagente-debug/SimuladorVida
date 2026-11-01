@@ -44,6 +44,7 @@ var _primeiros: Dictionary = {}      # "tipo" e "tipo@grupo" já vistos
 var _usados: Dictionary = {}         # ids de eventos já contados em outra frase
 var anos_escritos: Dictionary = {}   # ano -> parágrafo ("" se o ano foi quieto)
 var _recentes: Dictionary = {}       # frase (o molde, antes de preencher) -> último ano em que entrou na crônica
+var _fatia: Dictionary = {}          # o ano que está sendo escrito, entre as duas fatias da virada (veja comecar_ano)
 var ultimo_ano_escrito: int = 0
 var _cursor: int = 0                 # próximo evento ainda não lido
 var cronicas_povos: Dictionary = {}  # id do grupo -> {ano: texto}: a história que o povo escreveu
@@ -62,9 +63,9 @@ func _init(mundo) -> void:
 # ---------------------------------------------------------------- termos
 
 func _p(id: int) -> Dictionary:
-	if not m.pessoas.has(id):
+	var p = m.pessoa(id)
+	if p == null:
 		return G.termo("alguém", "m")
-	var p = m.pessoas[id]
 	return G.termo(p.nome, p.sexo)
 
 
@@ -106,7 +107,7 @@ func _deus_do_grupo(gid: int) -> Dictionary:
 
 
 func _traco(id: int) -> String:
-	var p = m.pessoas[id]
+	var p = m.pessoa(id)
 	var t: String = p.tracos[0]
 	return G.flex(TRACO_RAIZ[t], p.sexo)
 
@@ -115,9 +116,10 @@ func _lista_pessoas(ids: Array) -> Dictionary:
 	var nomes: Array = []
 	var generos: Array = []
 	for id in ids:
-		if m.pessoas.has(id):
-			nomes.append(m.pessoas[id].nome)
-			generos.append(m.pessoas[id].sexo)
+		var p = m.pessoa(id)
+		if p != null:
+			nomes.append(p.nome)
+			generos.append(p.sexo)
 	return G.termo(G.lista(nomes), G.genero_conjunto(generos), nomes.size())
 
 
@@ -170,7 +172,13 @@ func _estacao(e) -> String:
 func aquecer() -> void:
 	_do_tipo("")
 	_e_nome_proprio("")
-	_indexar_ate(m.eventos.size())
+	# O índice por pessoa vai só até onde ia quando o mundo foi salvo: os eventos depois disso
+	# ainda podem ganhar participantes (uma tempestade conta as vítimas hora a hora), e o mundo
+	# que não parou só os indexa quando a crônica chega neles.
+	var ate: int = _indice_salvo if _indice_salvo >= 0 else m.eventos.size()
+	_indice_ate = 0
+	_por_pessoa = {}
+	_indexar_ate(ate)
 
 
 ## Os eventos de um tipo, em ordem. O índice cresce junto com a lista de eventos.
@@ -178,6 +186,9 @@ func _do_tipo(tipo: String) -> Array:
 	var evs: Array = m.eventos
 	while _por_tipo_ate < evs.size():
 		var e = evs[_por_tipo_ate]
+		if e == null:
+			_por_tipo_ate += 1
+			continue
 		if not _por_tipo.has(e.tipo):
 			_por_tipo[e.tipo] = []
 		_por_tipo[e.tipo].append(e)
@@ -194,33 +205,82 @@ func _e_nome_proprio(palavra: String) -> bool:
 	while _nomes_grupos_ate < m.grupos.size():
 		_nomes[m.grupos[_nomes_grupos_ate].nome] = true
 		_nomes_grupos_ate += 1
-	return _nomes.has(palavra)
+	return _nomes.has(palavra) or m.nomes_arquivados.has(palavra)
+
+
+## O mundo arquivou eventos e pessoas (veja mundo._arquivar_antigos): os índices os esquecem.
+func esquecer(saiu: Dictionary) -> void:
+	m.sem_os_que_sairam(_por_tipo, saiu)
+
+
+func esquecer_pessoa(pid: int) -> void:
+	_por_pessoa.erase(pid)
 
 
 func _evento(id: int):
-	if id < 0 or id >= m.eventos.size():
-		return null
-	return m.eventos[id]
+	return m.evento(id)
 
 
 # ---------------------------------------------------------------- crônica
 
-## Escreve os anos completos que faltam, até o ano a_final. Um ano escrito não
+## Escreve de uma vez os anos completos que faltam, até o ano a_final. Um ano escrito não
 ## muda mais: a crônica cresce ano a ano, como um livro.
 func processar_ate(a_final: int) -> void:
+	terminar_ano()
 	while ultimo_ano_escrito < a_final:
-		var a := ultimo_ano_escrito + 1
-		var evs: Array = []
-		while _cursor < m.eventos.size() and m.eventos[_cursor].ano <= a:
-			if m.eventos[_cursor].ano == a:
-				evs.append(m.eventos[_cursor])
-			_cursor += 1
-		_lembrando = true
-		_ano_atual = a
-		anos_escritos[a] = _ano(a, evs)
-		_lembrando = false
-		_escrever_cronicas_dos_povos(a, evs)
-		ultimo_ano_escrito = a
+		comecar_ano()
+		terminar_ano()
+
+
+## Na virada, a escrita do ano que acabou é dividida em duas fatias, em passos seguidos (para
+## nenhum passo pesar): esta escolhe os eventos do ano e escreve as frases deles; terminar_ano
+## acrescenta o resumo da década e o censo (nos anos redondos), escreve a crônica dos povos e
+## só então põe o ano na crônica. O que fica entre as duas é salvo com o mundo (`_fatia`).
+func comecar_ano() -> void:
+	terminar_ano()
+	var a := ultimo_ano_escrito + 1
+	var ini := _cursor
+	var evs: Array = []
+	while _cursor < m.eventos.size() and (m.eventos[_cursor] == null or m.eventos[_cursor].ano <= a):
+		if m.eventos[_cursor] != null and m.eventos[_cursor].ano == a:
+			evs.append(m.eventos[_cursor])
+		_cursor += 1
+	_lembrando = true
+	_ano_atual = a
+	var texto := _ano(a, evs, false)
+	_lembrando = false
+	_fatia = {"ano": a, "texto": texto, "ini": ini, "fim": _cursor}
+
+
+func terminar_ano() -> void:
+	if _fatia.is_empty():
+		return
+	var a: int = _fatia["ano"]
+	var evs: Array = []
+	for i in range(_fatia["ini"], _fatia["fim"]):
+		var e = m.eventos[i]
+		if e != null and e.ano == a:
+			evs.append(e)
+	var partes: Array = [] if _fatia["texto"].is_empty() else [_fatia["texto"]]
+	_lembrando = true
+	_ano_atual = a
+	partes.append_array(_censo_da_decada(a))
+	_lembrando = false
+	anos_escritos[a] = " ".join(partes)
+	_escrever_cronicas_dos_povos(a, evs)
+	ultimo_ano_escrito = a
+	_fatia = {}
+
+
+## Nos anos redondos, o resumo da década (se houve o que resumir) e o censo.
+func _censo_da_decada(a: int) -> Array:
+	var r: Array = []
+	if a % 10 == 0:
+		var resumo := _resumo_da_decada(a)
+		if not resumo.is_empty():
+			r.append(resumo)
+		r.append(_censo(a))
+	return r
 
 
 ## Crônica de um período (a ausência): os anos que terminaram no período vêm da
@@ -236,7 +296,7 @@ func relato_periodo(ev_ini: int, ev_fim: int, ano_ini: int, ano_fim: int) -> Str
 			continue
 		var evs: Array = []
 		for i in range(ev_ini, ev_fim):
-			if m.eventos[i].ano == a:
+			if m.eventos[i] != null and m.eventos[i].ano == a:
 				evs.append(m.eventos[i])
 		var salvo := [_narrados.duplicate(true), _primeiros.duplicate(), _usados.duplicate()]
 		var par := _ano(a, evs, false, LIMIAR - 1)
@@ -433,7 +493,7 @@ func reabrir_ano(a: int) -> void:
 		anos_escritos.erase(k)
 	ultimo_ano_escrito = a - 1
 	_cursor = 0
-	while _cursor < m.eventos.size() and m.eventos[_cursor].ano < a:
+	while _cursor < m.eventos.size() and (m.eventos[_cursor] == null or m.eventos[_cursor].ano < a):
 		_cursor += 1
 
 
@@ -444,9 +504,8 @@ func escrever(titulo: String, subtitulo: String) -> String:
 
 
 func _fim_no_ano(a: int) -> bool:
-	for e in m.eventos:
-		if e.tipo == "fim_do_mundo":
-			return e.ano == a
+	for e in _do_tipo("fim_do_mundo"):
+		return e.ano == a
 	return false
 
 
@@ -509,11 +568,8 @@ func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR) -> S
 			f = abertura + ", " + _minuscula_inicial(f)
 		est_anterior = est
 		frases.append(G.maiuscula(f))
-	if com_censo and a % 10 == 0:
-		var resumo := _resumo_da_decada(a)
-		if not resumo.is_empty():
-			frases.append(resumo)
-		frases.append(_censo(a))
+	if com_censo:
+		frases.append_array(_censo_da_decada(a))
 	return " ".join(frases)
 
 
@@ -533,7 +589,7 @@ func _nota(e) -> int:
 			var causa: String = e.dados["causa"]
 			if causa in ["raio_natural", "raio_divino", "batalha", "fogo", "terremoto", "diluvio"]:
 				return 0
-			if m.pessoas[e.participantes[0]].feitos >= 2 and not _feito_de(e.participantes[0], e.id).is_empty():
+			if m.pessoa(e.participantes[0]).feitos >= 2 and not _feito_de(e.participantes[0], e.id).is_empty():
 				n += 2
 			if causa == "culpado":
 				n = 8
@@ -618,7 +674,7 @@ func _nota(e) -> int:
 
 
 func _mortos_entre(g1: int, g2: int, ate: int) -> int:
-	var n := 0
+	var n: int = m.mortos_arquivados.get(m._par(g1, g2), 0)
 	for e in _do_tipo("ataque"):
 		if e.id >= ate:
 			break
@@ -698,7 +754,7 @@ func _grupo_no_ano(p, a: int) -> int:
 	# Desfaz as mudanças posteriores ao ano a, da mais recente para a mais antiga.
 	for i in range(m.eventos.size() - 1, -1, -1):
 		var e = m.eventos[i]
-		if e.ano <= a:
+		if e == null or e.ano <= a:
 			break
 		if not e.participantes.has(p.id):
 			continue
@@ -746,7 +802,7 @@ func _texto(e) -> String:
 			if e.dados["primeiro"]:
 				t = _frase(["{a}, de {de}, casou-se com {b} e foi viver em {g}. Foi o primeiro laço entre os dois povos.",
 					"{b}, de {g}, tomou por esposa {a}, de {de}, e os dois povos passaram a se visitar."
-					if m.pessoas[e.participantes[0]].sexo == "f" else
+					if m.pessoa(e.participantes[0]).sexo == "f" else
 					"{a}, de {de}, casou-se com {b} e mudou-se para {g}, coisa que ninguém tinha feito antes."], v)
 			else:
 				t = _frase(["{a}, de {de}, casou-se com {b} e foi viver em {g}."], v)
@@ -1126,7 +1182,7 @@ func _texto(e) -> String:
 
 func _morte(e, v: Dictionary) -> String:
 	var id: int = e.participantes[0]
-	var p = m.pessoas[id]
+	var p = m.pessoa(id)
 	v["p"] = _p(id)
 	v["i"] = G.termo(str(e.dados["idade"]))
 	var papel := ""
@@ -1184,12 +1240,16 @@ func _morte(e, v: Dictionary) -> String:
 ## Índice de eventos por pessoa, para achar depressa o que cada uma fez. Não é salvo:
 ## é refeito a partir dos eventos quando falta (por exemplo, depois de carregar).
 var _por_pessoa: Dictionary = {}
+var _indice_salvo: int = -1          # até onde o índice por pessoa ia quando o mundo foi salvo (-1: arquivo antigo)
 var _indice_ate: int = 0
 
 
 func _indexar_ate(fim: int) -> void:
 	while _indice_ate < mini(fim, m.eventos.size()):
 		var x = m.eventos[_indice_ate]
+		if x == null:
+			_indice_ate += 1
+			continue
 		var ids: Array = x.participantes.duplicate()
 		for chave in ["fundador", "sonhador", "matador"]:
 			if x.dados.has(chave):
@@ -1211,7 +1271,7 @@ func _feito_de(pid: int, ate: int) -> String:
 	for i in _por_pessoa.get(pid, []):
 		if i >= ate:
 			break
-		var x = m.eventos[i]
+		var x = m.evento(i)
 		var nota := -1
 		var f := ""
 		match x.tipo:
@@ -1287,8 +1347,8 @@ func _nascimento(e, v: Dictionary) -> String:
 		"fome":
 			return _frase(["Em plena fome, {mae} deu à luz {f}.", "No meio da fome, nasceu {f}, {f:filho|filha} de {mae}."], v)
 		"entre_grupos":
-			var mae = m.pessoas[e.participantes[1]]
-			var de: int = mae.veio_de if mae.veio_de != -1 and mae.veio_de != e.grupo else m.pessoas[e.participantes[2]].veio_de
+			var mae = m.pessoa(e.participantes[1])
+			var de: int = mae.veio_de if mae.veio_de != -1 and mae.veio_de != e.grupo else m.pessoa(e.participantes[2]).veio_de
 			if de == -1 or de == e.grupo:
 				return ""
 			v["de"] = _g(de)
@@ -1302,13 +1362,13 @@ func _chuva_divina_entre(ini, fim) -> bool:
 	if ini == null:
 		return false
 	for i in range(ini.id, fim.id):
-		if m.eventos[i].tipo == "chuva_divina":
+		if m.evento(i).tipo == "chuva_divina":
 			return true
 	return false
 
 
 func _pior_fome_antes(e) -> int:
-	var pior := 0
+	var pior: int = m.pior_fome_arquivada
 	for x in _do_tipo("fome_fim"):
 		if x.id >= e.id:
 			break
@@ -1324,6 +1384,8 @@ func _seca_anterior(e) -> int:
 			break
 		if _usados.has(x.id) and (ini == null or x.id < ini.id):
 			anterior = x.ano
+	if anterior == -1:
+		anterior = m.ultima_seca_arquivada
 	return anterior
 
 
@@ -1445,7 +1507,7 @@ func _ataque(e, v: Dictionary) -> String:
 func _ataque_recente(e) -> int:
 	for i in range(e.id - 1, -1, -1):
 		var x = m.eventos[i]
-		if e.ano - x.ano > 6:
+		if x == null or e.ano - x.ano > 6:
 			break
 		if x.tipo == "ataque" and _usados.has(x.id) and ((x.grupo == e.grupo and x.outro_grupo == e.outro_grupo) 				or (x.grupo == e.outro_grupo and x.outro_grupo == e.grupo)):
 			return x.ano
@@ -1628,7 +1690,7 @@ func texto_curto(e) -> String:
 		v["g"] = _g(e.grupo)
 	if e.outro_grupo >= 0:
 		v["o"] = _g(e.outro_grupo)
-	if not e.participantes.is_empty() and m.pessoas.has(e.participantes[0]):
+	if not e.participantes.is_empty() and m.pessoa(e.participantes[0]) != null:
 		v["p"] = _p(e.participantes[0])
 	var opcoes: Array = []
 	match e.tipo:
@@ -1836,7 +1898,7 @@ func _prece(e, v: Dictionary) -> String:
 			"Pela primeira vez, alguém em {g} pediu ao céu. Foi {p}: «{txt}»"], v)
 	if e.dados["alvo"] != -1:
 		return _frase(["{p} rezou a noite toda: «{txt}»", "Com o filho ardendo em febre, {p} pediu: «{txt}»"
-			if m.pessoas[e.participantes[0]].sexo == "f" else "{p} rezou junto da criança doente: «{txt}»"], v)
+			if m.pessoa(e.participantes[0]).sexo == "f" else "{p} rezou junto da criança doente: «{txt}»"], v)
 	return _frase(["Em {g}, rezava-se: «{txt}»", "{p} rezou: «{txt}»"], v)
 
 
@@ -2106,7 +2168,7 @@ func _divino(e, v: Dictionary) -> String:
 				return _frase(["{p} sonhou com sementes enterradas, mas achou que era bobagem e esqueceu."], v)
 			if e.dados["aceita"]:
 				return _frase(["{p} teve um sonho que não sabia explicar, e acordou certa de que alguém tinha falado com ela."
-					if m.pessoas[sid].sexo == "f" else "{p} teve um sonho que não sabia explicar, e acordou certo de que alguém tinha falado com ele."], v)
+					if m.pessoa(sid).sexo == "f" else "{p} teve um sonho que não sabia explicar, e acordou certo de que alguém tinha falado com ele."], v)
 			return _frase(["{p} teve um sonho estranho e não deu importância."], v)
 	return ""
 
@@ -2114,7 +2176,7 @@ func _divino(e, v: Dictionary) -> String:
 func _leitura_raio(e, vid: int, v: Dictionary) -> String:
 	var leitura: String = e.dados.get("leitura", "azar")
 	v["p"] = _p(vid)
-	var gid: int = m.pessoas[vid].grupo
+	var gid: int = m.pessoa(vid).grupo
 	v["g"] = _g(gid)
 	var crente: bool = m.grupos[gid].tem_crenca
 	match leitura:
@@ -2130,9 +2192,9 @@ func _leitura_raio(e, vid: int, v: Dictionary) -> String:
 # ---------------------------------------------------------------- moldura
 
 func _prologo(ano_ini: int = 1) -> String:
-	var e = m.eventos[0]
-	for x in m.eventos:
-		if x.tipo == "inicio" and x.ano >= ano_ini:
+	var e = m.evento(0)
+	for x in _do_tipo("inicio"):
+		if x.ano >= ano_ini:
 			e = x
 			break
 	var g = m.grupos[e.grupo]
@@ -2205,11 +2267,8 @@ func _epilogo() -> String:
 		linhas.append("Lugares com nome: " + G.lista(nomes) + ".")
 	var nasc := 0
 	var mortes := 0
-	for e in m.eventos:
-		if e.tipo == "nascimento":
-			nasc += 1
-		elif e.tipo == "morte":
-			mortes += 1
+	nasc = _do_tipo("nascimento").size() + m.arquivados_por_tipo.get("nascimento", 0)
+	mortes = _do_tipo("morte").size() + m.arquivados_por_tipo.get("morte", 0)
 	linhas.append("")
 	linhas.append("Em %d anos nasceram %d pessoas e morreram %d." % [m.ano() - 1, nasc, mortes])
 	return "\n".join(linhas)

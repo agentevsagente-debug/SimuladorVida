@@ -71,7 +71,10 @@ func _initialize() -> void:
 			pior_ano = 0.0
 	var conta := {}
 	for e in m.eventos:
-		conta[e.tipo] = conta.get(e.tipo, 0) + 1
+		if e != null:
+			conta[e.tipo] = conta.get(e.tipo, 0) + 1
+	for t in m.arquivados_por_tipo:
+		conta[t] = conta.get(t, 0) + m.arquivados_por_tipo[t]
 	linhas.append("")
 	linhas.append("Tempo total: %.1f s. Pior dia: %.1f ms (ano %d). Pior ano: %.2f s. Gestos do deus: %d." % [
 		(Time.get_ticks_usec() - t_total) / 1e6, pior_dia_total, ano_pior_dia, pior_ano_total, gestos])

@@ -6,6 +6,53 @@
 - `resistencia_passos.gd` carrega o mundo do ano 1000 e mede passo a passo, como a apresentação usa o mundo.
 - `resistencia_ciclo.gd` roda o fim do mundo e o recomeço. A crônica do período está em `ciclo-semente-2.md`.
 
+## Depois do arquivo dos antigos (novembro de 2026)
+
+Os eventos e os mortos de mais de 300 anos que a memória do mundo não usa mais foram para um arquivo à parte, ao lado do mundo salvo (veja "Os antigos" em `nucleo/API.md`). O mundo é o mesmo: nos 10 mundos de 1000 anos, as colunas de pessoas, povos e eventos são idênticas às de antes. `testar_antigos.gd` compara, a cada 50 anos, um mundo sem arquivar, um arquivando e um salvo e carregado (também no meio da virada do ano): mesma crônica, sorteio, passo, eventos e livros, em 3 sementes, inclusive com o caprichoso e com um fim do mundo no ano 550.
+
+**Metas, no ano 1000, medidas sem outra carga na máquina** (`resistencia_passos.gd`, 2 execuções em 2 mundos):
+
+| | Antes | Depois | Meta |
+|---|---|---|---|
+| Carregar | 1,4 a 2,2 s | **360 a 384 ms** | menos de 0,5 s |
+| Memória do mundo (o núcleo, carregado) | 136 a 165 MB | **82 a 88 MB** | abaixo de 120 MB |
+| Memória com a rotina da apresentação | — | 94 a 107 MB no dia; pico de 125 a 132 MB por alguns ms às 2h, quando a rotina refeita depois dos eventos do dia entra e a anterior ainda está sendo solta numa thread | |
+| Mundo salvo (`mundo.txt`) | 9 a 11,5 MB | 4,5 a 5,3 MB, mais 6 MB no arquivo dos antigos | |
+| Salvar (`salvar_async`, linha principal) | ~1 ms | ~1 a 3 ms | |
+| Salvar (na thread) | 1,1 a 1,9 s | 0,5 a 0,6 s | |
+| Ausência de 1 ano | 30 a 70 ms | 60 a 100 ms (o arquivamento diário entra nos passos) | |
+| A virada do ano (a escrita da crônica) | 4,7 a 5,8 ms | ~4 ms, em duas fatias: 1h e 2h do dia 0 | 5 ms |
+
+- **A rotina da apresentação também ficou menor:** planos e blocos fixos são soltos ao fim da montagem, as agendas das horas que passaram são soltas, e a rotina de amanhã montada às 23h (que é refeita na 1h) corta só as primeiras horas. Uma rotina com 250 pessoas passou de ~45 MB para ~20 a 30 MB.
+- **O passo das 3h** (o arquivamento diário, no máximo 12 eventos por dia) fica entre 1 e 4 ms; houve picos isolados de 6 a 10 ms em passos variados, que mudam de lugar de uma execução para outra (a máquina).
+- **Um mundo salvo antes do arquivo dos antigos** abre normalmente e arquiva o que já passou dos 300 anos aos poucos, até 12 eventos por dia, sem travar.
+
+**As tabelas de 10 mundos, com o arquivo** (5 processos ao mesmo tempo, faixa entre as 5 sementes; medidas com o limite anterior de 30 eventos por dia):
+
+**Sem deus:**
+
+| Ano | Pessoas | Eventos | Arquivo (MB) | Salvar (ms) | Carregar (ms) | Ausência de 1 ano (ms) | Memória (MB) | Pico (MB) | Objetos |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 | 2–128 | 341–1.803 | 0,1–0,5 | 18–73 | 6–33 | 2–18 | 30–35 | 75 | 1.883–3.727 |
+| 250 | 149–288 | 1.711–7.763 | 0,4–2,1 | 68–373 | 30–180 | 21–51 | 34–56 | 109 | 3.584–11.593 |
+| 500 | 184–258 | 9.835–17.894 | 2,5–3,8 | 407–478 | 195–313 | 32–67 | 61–81 | 184 | 13.460–19.842 |
+| 750 | 206–271 | 19.545–27.966 | 3,8–4,5 | 462–607 | 295–362 | 60–79 | 81–93 | 211 | 19.174–22.451 |
+| 1000 | 209–261 | 29.710–37.452 | 4,5–4,9 | 578–671 | 385–438 | 78–100 | 93–102 | 237 | 22.150–23.806 |
+
+**Com o caprichoso** (a memória inclui a rotina, que cada poder monta para achar o alvo):
+
+| Ano | Pessoas | Eventos | Arquivo (MB) | Salvar (ms) | Carregar (ms) | Ausência de 1 ano (ms) | Memória (MB) | Pico (MB) | Objetos |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 | 23–230 | 902–2.044 | 0,2–0,6 | 46–135 | 18–70 | 5–43 | 33–45 | 75 | 2.582–4.159 |
+| 250 | 111–229 | 4.652–7.789 | 1,3–2,2 | 159–289 | 101–170 | 17–38 | 50–63 | 118 | 7.498–11.595 |
+| 500 | 128–190 | 12.621–16.711 | 2,9–3,6 | 358–595 | 234–303 | 42–62 | 72–84 | 178 | 14.746–17.582 |
+| 750 | 210–258 | 21.769–26.749 | 3,8–4,5 | 505–571 | 313–372 | 53–70 | 90–100 | 216 | 18.243–21.465 |
+| 1000 | 190–258 | 31.714–37.376 | 4,7–5,3 | 583–733 | 399–499 | 63–87 | 107–114 | 256 | 21.882–24.478 |
+
+O "Pico" é o do processo de teste, que carrega uma cópia inteira do mundo ao lado do original para comparar os dois; no jogo, há um mundo só. "Salvar" é o `salvar()` síncrono, que agora inclui regravar o arquivo dos antigos quando passam de 300 linhas novas (de tempos em tempos); nos outros salvamentos, as linhas novas vão dentro do próprio mundo salvo.
+
+O resto deste documento é a medição anterior, sem o arquivo dos antigos.
+
 ## Travamentos e erros
 
 - **Nenhum erro, aviso ou vazamento** nos 10 mundos: nenhuma linha de erro do Godot na saída, e todos chegaram ao ano 1001.
@@ -61,7 +108,7 @@ Faixa entre as 5 sementes. Salvar é o `salvar()` síncrono; `salvar_async` cust
 - **Não há vazamento.** Os objetos vivos são os eventos e as pessoas, inclusive as mortas, que a crônica e a memória do mundo leem: 37 mil eventos e ~12 mil pessoas dão os ~50 mil objetos.
 - **A ausência máxima** (1 ano, 960 passos) não cresce com a história: fica entre 30 e 70 ms do ano 250 ao 1000.
 
-**Para decidir:** o núcleo não descarta nada do histórico, porque a crônica e a memória do mundo leem eventos antigos. Se 2 s para carregar e 11 MB depois de 1000 anos forem demais, as saídas são:
+**Decidido:** a primeira saída abaixo foi aprovada e está feita (veja "Depois do arquivo dos antigos", no começo). Na época: o núcleo não descartava nada do histórico, porque a crônica e a memória do mundo leem eventos antigos. Se 2 s para carregar e 11 MB depois de 1000 anos forem demais, as saídas são:
 - arquivar os eventos de mais de 300 anos num arquivo à parte, lido só quando a crônica precisa;
 - ou guardar só os eventos antigos que a memória usa, como mortes de quem ainda é lembrado e origens de costumes e nomes.
 
