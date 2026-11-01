@@ -114,6 +114,8 @@ var _ceu_especial := ""    # "seca" ou "eclipse": troca o céu de dia
 var _eclipse_ate := -1
 var _seca_ate := -1          # a seca do deus amarela o céu logo depois do gesto
 var _larguras := {}          # peça -> largura do desenho (para os lotes)
+var _brasas := []            # centros dos fogos em brasas agora
+var _tex_brasas: Texture2D
 var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela de noite
 var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
 var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
@@ -869,9 +871,23 @@ func _atualizar_agua() -> void:
 
 func _atualizar_fogueiras() -> void:
 	var q := 0 if _parado() else int(_relogio * 6.0) % 4
-	if q != _quadro_fogo:
+	var brasas := _fogos_em_brasas()
+	if q != _quadro_fogo or brasas != _brasas:
 		_quadro_fogo = q
+		_brasas = brasas
 		_fogueiras.queue_redraw()
+
+
+## Os fogos que, de madrugada, baixaram para brasas (cena `brasas` da API).
+func _fogos_em_brasas() -> Array:
+	var r := []
+	if sim == null:
+		return r
+	var h: float = sim.hora_continua()
+	for c in sim.cenas:
+		if c.get("tipo", "") == "brasas" and h >= float(c.get("ini", 0.0)) and h < float(c.get("fim", 24.0)):
+			r.append(fogo_mais_perto(float(c.get("x", 0.0))))
+	return r
 
 
 func _desenhar_fogueiras() -> void:
@@ -879,7 +895,13 @@ func _desenhar_fogueiras() -> void:
 		return
 	if _tex_fogueira == null:
 		_tex_fogueira = Arte.textura("estagio1/fogueira_acesa_4q.png")
+	if _tex_brasas == null:
+		_tex_brasas = textura_efeito("brasas_4q")
 	for f in _fogos:
+		if f.centro in _brasas:  # o fogo baixo: só as brasas pulsando sobre as pedras
+			_fogueiras.draw_texture_rect_region(_tex_brasas, Rect2(Vector2(f.canto) + Vector2(4, 8), Vector2(8, 8)),
+				Rect2(maxi(_quadro_fogo, 0) * 8, 0, 8, 8))
+			continue
 		_fogueiras.draw_texture_rect_region(_tex_fogueira, Rect2(f.canto, Vector2(16, 16)),
 			Rect2(maxi(_quadro_fogo, 0) * 16, 0, 16, 16))
 

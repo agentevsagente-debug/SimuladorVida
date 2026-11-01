@@ -19,6 +19,14 @@ const FOLHAS := {
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
 
 var sinais: Array = []  # [{folha, largura, x, base, prece}]
+var baloes: Array = []  # [{x, base, variacao, espelho}] balões de fala sobre a cabeça
+var bichos: Array = []  # [{folha, largura, x, base, quadro, espelho}] bichos da madrugada, já em tons de noite
+## folha da pessoa -> variação do balão: 0 fala, 1 história, 2 pensamento, 3 coração, 4 raiva
+const BALOES := {"acoes/conversar_falar_4q": 0, "acoes/contar_historia_4q": 1, "acoes/vigia_2q": 2,
+	"acoes/mae_bebe_parado_2q": 3, "acoes/discutir_4q": 4, "acoes/criancas_brigar_4q": 4}
+## por quanto tempo o balão aparece, de quanto em quanto tempo (s), por variação
+const RITMO_BALAO := [[2.0, 4.5], [2.5, 4.5], [2.5, 6.0], [2.0, 7.0], [1.5, 3.5]]
+const MAX_BALOES := 3
 var _importancia := {}  # id do evento da prece -> importância
 var _texturas := {}
 var _assinatura := []
@@ -65,12 +73,67 @@ func atualizar(sim: Node, vista: Node2D, relogio: float, figuras: Array) -> void
 				novos[i].x = novos[j].x + 8
 	sinais = novos
 	_quadro = int(relogio * 4.0) % 4
-	var assinatura := [_quadro]
+	_baloes(figuras, relogio)
+	_bichos_da_madrugada(sim, vista, relogio)
+	var assinatura := [_quadro, baloes.hash(), bichos.hash()]
 	for s in sinais:
 		assinatura.append([s.folha, s.x, s.base])
+	for b in baloes:
+		assinatura.append([b.x, b.base, b.variacao])
 	if assinatura != _assinatura:
 		_assinatura = assinatura
 		queue_redraw()
+
+
+## Balões de fala (arte, seção 9): sobre quem conversa, conta história,
+## cochila, nina ou discute, de vez em quando e no máximo 3 de cada vez.
+func _baloes(figuras: Array, relogio: float) -> void:
+	baloes = []
+	for f in figuras:
+		if baloes.size() >= MAX_BALOES:
+			break
+		if f.id < 0 or not BALOES.has(f.folha):
+			continue
+		var v: int = BALOES[f.folha]
+		if f.folha == "acoes/vigia_2q" and f.quadro != 1:
+			continue  # só o vigia cochilando pensa
+		var r: Array = RITMO_BALAO[v]
+		if fmod(relogio + f.id * 1.37, r[1]) >= r[0]:
+			continue
+		var crianca: bool = f.folha.contains("crianca")
+		var dx := (1 if not f.espelho else -1) if crianca else (2 if not f.espelho else 0)
+		var topo: int = f.base - (8 if crianca else 12) + 1
+		baloes.append({"x": f.x + dx, "base": topo - 6, "variacao": v, "espelho": f.espelho})
+
+
+## Os bichos da madrugada (cena `bicho_noturno`): a coruja no alto de uma
+## árvore (com neve no inverno, encolhida na chuva), o morcego sobre o lago e o
+## sapo na margem. Já vêm em tons de noite, então não passam pela tabela.
+func _bichos_da_madrugada(sim: Node, vista: Node2D, relogio: float) -> void:
+	bichos = []
+	var h: float = sim.hora_continua()
+	for c in sim.cenas:
+		if c.get("tipo", "") != "bicho_noturno":
+			continue
+		if h < float(c.get("ini", 0.0)) or h > float(c.get("fim", 24.0)):
+			continue
+		var x := roundi(float(c.get("x", 300.0)))
+		match String(c.get("bicho", "")):
+			"coruja":  # fica olhando e, de vez em quando, pisca ou vira a cabeça
+				var folha := "coruja_neve_4q" if Arte.estacao == "inverno" else (
+					"coruja_chuva_4q" if not sim.clima.get("tempestade", {}).is_empty() else "coruja_pousada_4q")
+				var ciclo := fmod(relogio + x, 3.2)
+				var q := 0 if ciclo < 2.9 else (1 if int(relogio / 3.2) % 2 == 0 else 2)
+				bichos.append({"folha": "../criaturas/" + folha, "largura": 7, "x": x, "base": vista.chao(x) - 18,
+					"quadro": q, "espelho": false})
+			"morcego":
+				var bx := x + roundi(sin(relogio * 0.9) * 18.0)
+				bichos.append({"folha": "../criaturas/morcego_noite_4q", "largura": 8, "x": bx,
+					"base": vista.chao(x) - 22 + roundi(sin(relogio * 3.1) * 3.0), "quadro": int(relogio * 10.0) % 4,
+					"espelho": cos(relogio * 0.9) < 0.0})
+			"sapo":
+				bichos.append({"folha": "../criaturas/sapo_2q", "largura": 6, "x": x, "base": vista.chao(x),
+					"quadro": int(relogio * 1.5) % 2, "espelho": false})
 
 
 func _os_ultimos(sim: Node) -> bool:
@@ -105,6 +168,20 @@ func _textura(folha: String) -> Texture2D:
 
 
 func _draw() -> void:
+	for b in bichos:
+		var tex_b := _textura(b.folha)
+		var h_b := tex_b.get_height()
+		draw_texture_rect_region(tex_b, Rect2(b.x - b.largura / 2, b.base - h_b + 1, b.largura, h_b),
+			Rect2(b.quadro * b.largura, 0, b.largura, h_b))
+	var tex_balao := _textura("balao_5v")
+	for b in baloes:
+		var origem := Rect2(b.variacao * 6, 0, 6, 5)
+		if b.espelho:
+			draw_set_transform(Vector2(b.x + 6, b.base), 0.0, Vector2(-1, 1))
+			draw_texture_rect_region(tex_balao, Rect2(0, 0, 6, 5), origem)
+			draw_set_transform(Vector2.ZERO)
+		else:
+			draw_texture_rect_region(tex_balao, Rect2(b.x, b.base, 6, 5), origem)
 	for s in sinais:
 		var tex := _textura(s.folha)
 		var w: int = s.largura

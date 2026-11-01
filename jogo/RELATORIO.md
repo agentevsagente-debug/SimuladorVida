@@ -2,6 +2,22 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 3 (cotidiano) e 3b (estações)
+
+| # | O que foi feito |
+|---|---|
+| **D1** | Ninguém fica parado com o centro a menos de 9 px do centro do fogo; quem cairia ali vai para o lado em que já estava. A roda (fogueira, jantar, atiçar, cochilar, histórias) olha para o fogo, e quem está à direita fica espelhado. |
+| **D5 / E4** | A baforada nasce no fogo, sobe 6 a 10 px enquanto passa pelos 6 quadros e some. |
+| **D7** | O mato cresce mais cedo: graus 1, 2 e 3 aos 2, 6 e 15 anos, muda aos 10 e árvore jovem aos 15. Vale também para as casas vazias de um povo vivo (`abandonada`, `anos`), que a A agora põe nas pontas da vila. |
+| **D2** | Microanimações dos ociosos a cada 3 a 6 s, em 4 de cada 5 fatias (antes, 5 a 11 s e metade das fatias). |
+| **Enchente** | As zonas alagadas pelo dilúvio ganham a água barrenta (`enchente_*`), num nível só por zona, sem parede de água nas encostas. A gota de chuva não fica mais desenhada dentro da terra nos quadros longos do 50x. |
+| **E5** | No inverno, o lago congela nos 40 px junto da praia; no inverno rigoroso, inteiro. |
+| **E6** | A roça (e o pomar) abre uma clareira: árvores e pinheiros com o tronco sobre ela saem. |
+| **Encenações** | **Ações de 1x:** catar lenha, cesto na cabeça, pote d'água, buscar água, espantar e tropeçar, nas versões fortes, com a roupa do estágio do povo (`estagioN/`, e a de inverno pela estação). **Brincadeiras:** pega-pega correndo, com os papéis trocando, e ciranda parada. **Caçada por etapas** (API `etapas`): o porco fuçando enquanto espreitam; a lança voando em arco; o porco atingido e caído com o pau no chão (ou fugindo, com a lança cravada); uns amarram e outros comemoram; a volta com a caça no pau (forte) entre os dois. **Madrugada:** o fogo baixa para brasas (cena `brasas`), o vigia cochila, alguém boceja e atiça o fogo, e aparecem a coruja (de neve ou de chuva conforme o tempo), o morcego e o sapo (cena `bicho_noturno`; a raposa ainda não tem arte). **Balões de fala**, no máximo 3 de cada vez: conversa, história, pensamento (o vigia cochilando), coração (quem nina) e raiva (discussão, briga de crianças). Também: deitar à sombra, tecer, consertar, cozinhar, comer e ninar. |
+| Prova de montagem | `ferramentas/referencia/` atualizada com a montagem nova da C (samambaia do D6): fidelidade de 0,00% de dia e 59 px à noite, como antes. |
+
+GIFs em 1x, em trechos de 60 s de jogo de verdade: `capturas/tarde-1x.gif` (a partir das 15h, a caçada) e `capturas/madrugada-1x.gif` (a partir de 1h).
+
 ## Medição final do jogo completo
 
 10 minutos por cenário (`ferramentas/rodar-medicoes.ps1`, resultados em `medicoes/*.json`), com 28 núcleos lógicos. A memória vai em três medidas; a coluna "Memória" do Gerenciador de Tarefas é o conjunto de trabalho privado.
