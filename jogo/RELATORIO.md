@@ -2,6 +2,24 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Os eventos raros, forçados para ver na tela
+
+`--cenario-raro=NOME` (`apresentacao/cenarios_raros.gd`) força, pelo próprio núcleo, o que é raro de acontecer. Os cenários servem para conferir a encenação e para as auditorias da arte. Folha: `capturas/eventos-raros.png`.
+
+| Cenário | Comando (além de `--sem-config --mundo-novo`) | Visto |
+|---|---|---|
+| `estranhos` | `--semente=7 --dias=12 --hora=10 --cenario-raro=estranhos` | 3 adultos entram pela borda direita com a trouxa e vão até o fogo |
+| `doentes` | `--semente=7 --dias=12 --hora=10 --ritmo=pausa --cenario-raro=doentes` | a cura fica escolhida, com a cruzinha verde sobre os 3 doentes |
+| `sonho` | `--semente=7 --dias=12 --hora=10 --cenario-raro=sonho` | a estrelinha lilás sobre quem sonhou |
+| `dependencia` | `--semente=7 --dias=12 --hora=10 --ritmo=pausa --cenario-raro=dependencia --capturar-tudo` | 6 chuvas, uma a cada 2 dias; a alça diz "Toan já não se prepara" |
+| `coleta` | `--semente=7 --dias=12 --hora=10 --cenario-raro=coleta` | avança até o primeiro dia com a coleta do morro: a descida em fila, com o cesto na cabeça |
+| madrugada | `--semente=7 --dias=12 --hora=1` (quadros a cada 2 s por 1 min) | a coruja na copa o tempo todo; a raposa passa uns 30 s depois |
+| `guerra` | `--semente=3 --anos=60 --hora=10 --ritmo=pausa --cenario-raro=guerra --capturar-tudo` | dois povos em guerra; o cursor fica sobre a prece de guerra, a dica diz "no povo inimigo", e a seta fica no fogo dele |
+
+**Corrigido ao ver:**
+- **A cruzinha da cura nunca aparecia:** quem está doente fica em casa e não é desenhado. Agora, para quem não está na tela, a cruz vai sobre o telhado da casa da pessoa, uma por doente.
+- **A estrelinha do sonho era 1 pixel:** agora tem 5 × 5, no formato da cruz, em lilás, e pisca de leve.
+
 ## As notas dos 11 poderes (A)
 
 | # | O que foi feito |
