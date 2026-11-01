@@ -1,0 +1,57 @@
+{
+  "cores_base": {
+    "pele": 26,
+    "pele_sombra": 25,
+    "cabelo": 30,
+    "cabelo_brilho": 8,
+    "roupa": 28,
+    "idoso_cabelo": 12,
+    "idoso_cabelo_brilho": 31
+  },
+  "peles": {
+    "26": {
+      "pele": 26,
+      "pele_sombra": 25
+    },
+    "25": {
+      "pele": 25,
+      "pele_sombra": 24
+    },
+    "24": {
+      "pele": 24,
+      "pele_sombra": 23
+    },
+    "23": {
+      "pele": 23,
+      "pele_sombra": 8
+    }
+  },
+  "cabelos": {
+    "30": {
+      "cabelo": 30,
+      "cabelo_brilho": 8
+    },
+    "8": {
+      "cabelo": 8,
+      "cabelo_brilho": 9
+    },
+    "23": {
+      "cabelo": 23,
+      "cabelo_brilho": 24
+    },
+    "10": {
+      "cabelo": 10,
+      "cabelo_brilho": 16
+    },
+    "12": {
+      "cabelo": 12,
+      "cabelo_brilho": 31
+    }
+  },
+  "roupas": [
+    28,
+    27,
+    29
+  ],
+  "nota": "índices da paleta arte/paleta/paleta.hex (0 a 31); trocar todos ao mesmo tempo"
+}
