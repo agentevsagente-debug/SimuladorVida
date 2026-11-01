@@ -322,6 +322,11 @@ func _ao_receber_eventos(eventos: Array) -> void:
 		match ev["tipo"]:
 			"eclipse":
 				_eclipse_ate = sim.mundo.passo + 3
+			"prece_atendida", "prece_sem_resposta", "prece_contrariada":
+				var quem: Array = ev.get("participantes", [])
+				var px: float = sim.mundo.posicao_de(quem[0]) if not quem.is_empty() else -1.0
+				if px >= 0.0:
+					_atmosfera.desfecho_da_prece(ev["tipo"], px)
 			"chuva_divina", "raio_divino", "fogo_divino", "fogo_brando", "fartura_divina", "terra_erguida", "sonho", "seca_divina", "diluvio", "terremoto_divino", "pressagio", "cura":
 				var d: Dictionary = ev.get("dados", {})
 				var alvo := -1.0

@@ -2,6 +2,21 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O resumo da ausência, as preces e os efeitos de noite
+
+| Item | O que foi feito |
+|---|---|
+| **P5** | Ao voltar, a crônica abre só com o relato da ausência, com o texto novo da A. O título é "Enquanto você esteve fora: 10 dias" (ou "um ano", no teto), e no fim vem "C abre a crônica inteira". O C, com o resumo aberto, passa para a crônica inteira em vez de fechar. Captura: `capturas/resumo-da-ausencia.png`. |
+| **Preces: onde e com o quê** | Na dica do sinal, de leve, em lilás: "Responde: fartura, no fogo do povo" (com "curto" no fogo brando e "no povo inimigo" na guerra), a partir de `atendem`. Uma seta dourada pequena pulsa sobre o fogo onde o gesto pega (`x_povo`; na guerra, o fogo do inimigo). Sem poder que atenda (pedido pequeno), não há linha nem seta. "espera há 0 dias" virou "reza desde hoje". Captura: `capturas/dica-da-prece.png`. |
+| **Preces: o desfecho** | Sobre quem rezou: atendida, uma luz dourada que sobe; sem resposta, uma fumaça que se apaga; contrariada, faíscas e brasas vermelhas que caem. |
+| **Brilhos de noite** | À noite, os 8 efeitos com versão noturna da C (fartura, sonho, cura, seca, fenda, pedras) trocam de folha, e os brilhos passam a 12 × 12. As versões de noite vão na camada luminosa, porque já vêm nas cores da noite. Captura: `capturas/fartura-de-noite.png`. |
+
+**Das notas de preces da A, ficaram de fora:**
+- o sinal único para fome e prece no mesmo dia (item 4);
+- os sinais que duram para profeta e separação (item 5): falta definir a arte.
+
+O destaque de `os_ultimos` já existe (`os_ultimos_4q`).
+
 ## Auditoria 8 (a primeira hora)
 
 | # | O que foi feito |

@@ -87,9 +87,11 @@ var _dica_icone: TextureRect
 ## Windows, a passagem do mouse recorta também o desenho.
 var caixa_na_faixa := Rect2()
 var _dica_bico: TextureRect   # o bico embaixo da dica, apontando para quem ela descreve
+var _resumo_aberto := false  # a crônica mostra só o resumo da ausência
 var _dica_balao: TextureRect  # o balãozinho de pensamento ao lado da linha do pensamento
 var _dica_linhagem: TextureRect  # o ícone da linhagem ao lado do nome de quem é seguido
-var _citados: Array = []      # ids de quem o pensamento da dica aberta cita (ponto dourado na cabeça)
+var _citados: Array = []
+var _alvos_da_prece: Array = []  # x dos fogos onde o gesto atende a prece da dica aberta      # ids de quem o pensamento da dica aberta cita (ponto dourado na cabeça)
 var _dica_ponto := []         # [mundo, tela] da última dica de pessoa, para atualizar com o cursor parado
 var _dica_refazer := 0.0
 var _cronica_acima: TextureRect
@@ -510,8 +512,8 @@ func _cabeca_seguida() -> Vector2:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	_refazer_dica(delta)
-	if not _citados.is_empty():
-		queue_redraw()  # o ponto dourado acompanha quem anda
+	if not _citados.is_empty() or (_dica.visible and not _alvos_da_prece.is_empty()):
+		queue_redraw()  # o ponto dourado acompanha quem anda; a seta do fogo pulsa
 	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio(), _dica_atual()]
 	if assinatura != _ultimo_desenho:
@@ -605,9 +607,11 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var icone := -1
 	var alvo := tela
 	var pensamento := -1  # a linha do pensamento, se houver
+	var leve := -1        # uma linha em lilás, sem o balãozinho (a resposta da prece)
 	var linhagem := false
 	_dica_ponto = []
 	_citados = []
+	_alvos_da_prece = []
 	match o.get("tipo", ""):
 		"pessoa":
 			marcar_dica("pessoas")
@@ -649,8 +653,23 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			var autor = vista.sim.mundo.pessoa(pr["autor"])
 			linhas.append("Prece de " + String(autor.nome))
 			linhas.append(pr["texto"])
-			linhas.append("espera há %d dias" % pr["dias"] if pr["dias"] != 1 else "espera há 1 dia")
+			linhas.append("reza desde hoje" if pr["dias"] == 0 else ("espera há %d dias" % pr["dias"] if pr["dias"] != 1 else "espera há 1 dia"))
 			icone = NECESSIDADES.find(pr["necessidade"])
+			# de leve, em lilás: o que atende e onde o gesto pega (o fogo do povo, marcado em dourado)
+			var atendem: Array = pr.get("atendem", [])
+			if not atendem.is_empty():
+				var nomes: Array = atendem.map(func(a): return String(NOME_PODER.get(a, a)).to_lower())
+				var resposta := " ou ".join(nomes)
+				if pr.get("fogo_brando", false):
+					resposta += " curto"
+				leve = linhas.size()
+				linhas.append(("Responde: %s, no povo inimigo" if pr["necessidade"] == "guerra" else "Responde: %s, no fogo do povo") % resposta)
+			_alvos_da_prece = [float(pr.get("x_povo", -1.0))]
+			if pr["necessidade"] == "guerra" and int(pr.get("inimigo", -1)) >= 0:
+				for c in vista.sim.construcoes:
+					if c["tipo"] == "fogueira" and int(c.get("grupo", -2)) == int(pr["inimigo"]):
+						_alvos_da_prece = [float(c["x"])]
+						break
 		"lugar":
 			# à noite, quem dorme está dentro da cabana: a dica vai nela, com o sonho em lilás
 			var cab: Dictionary = vista.sim.mundo.dica_cabana(p.x) if vista.sim.mundo.has_method("dica_cabana") else {}
@@ -689,7 +708,7 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				estado.append("farta")
 			if not estado.is_empty():
 				linhas.append(", ".join(estado))
-	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem)
+	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem, leve)
 
 
 ## Quem, entre as pessoas na tela, o pensamento cita pelo nome (menos a própria).
@@ -735,10 +754,11 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 ## `pensamento`: a linha que vai na cor do pensamento, com o balãozinho ao lado.
 ## `de_pessoa`: sem lugar acima, a dica vai para o lado, sem cobrir quem ela descreve.
 func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pensamento := -1,
-		de_pessoa := false, linhagem := false) -> void:
+		de_pessoa := false, linhagem := false, leve := -1) -> void:
 	if linhas.is_empty():
 		_dica.visible = false
 		_citados = []
+		_alvos_da_prece = []
 		return
 	if not de_pessoa:
 		_citados = []
@@ -753,7 +773,7 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pen
 		l.text = linhas[i]
 		var recuo := 8 if i == pensamento else 0
 		var largura_max := LARGURA_DICA - recuo
-		l.add_theme_font_override("font", _fontes["dourada" if i == 0 else "pensamento" if i == pensamento else "clara"])
+		l.add_theme_font_override("font", _fontes["dourada" if i == 0 else "pensamento" if i in [pensamento, leve] else "clara"])
 		l.autowrap_mode = TextServer.AUTOWRAP_OFF
 		var tamanho := l.get_minimum_size()
 		if tamanho.x > largura_max:
@@ -861,7 +881,9 @@ func _seta(para_cima: bool) -> TextureRect:
 
 
 func alternar_cronica() -> void:
-	_cronica.visible = not _cronica.visible
+	# com o resumo da ausência aberto, o C passa para a crônica inteira, em vez de fechar
+	_cronica.visible = not _cronica.visible or _resumo_aberto
+	_resumo_aberto = false
 	_dica.visible = false
 	if _cronica.visible:
 		marcar_dica("cronica")
@@ -870,14 +892,20 @@ func alternar_cronica() -> void:
 
 
 ## Abre a crônica; `antes` vem em cima (o relato da ausência, por exemplo).
-func mostrar_cronica(antes: String) -> void:
+## Com `titulo`, mostra só `antes`, com esse título (o resumo da ausência: a
+## crônica inteira continua no C).
+func mostrar_cronica(antes: String, titulo := "") -> void:
 	var m = vista.sim.mundo
 	var texto := ""
 	if antes != "":
 		texto = antes + "\n\n"
 	var t: Dictionary = vista.sim.tempo
-	texto += _sem_markdown(m.cronica()) + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
-	_cronica_titulo.text = "Crônica: " + String(m.nome_da_era())
+	if titulo == "":
+		texto += _sem_markdown(m.cronica()) + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
+	else:
+		texto += "C abre a crônica inteira."
+	_cronica_titulo.text = titulo if titulo != "" else "Crônica: " + String(m.nome_da_era())
+	_resumo_aberto = titulo != ""
 	_cronica_texto.text = texto
 	_cronica.visible = true
 	_cronica_texto.size.y = 0
@@ -1025,6 +1053,17 @@ func _draw() -> void:
 		draw_string(fonte, r.position + Vector2(5, 11), _mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		if r.position.y < ALTURA_ALCA:
 			na_faixa = r
+	if _dica.visible:  # uma seta dourada pequena sobre o fogo onde o gesto atende a prece
+		for ax in _alvos_da_prece:
+			if ax < 0.0:
+				continue
+			var base: Vector2 = (vista.para_tela(Vector2(ax, vista.chao(int(ax)) - 20)) + Vector2(0, ALTURA_ALCA)).round()
+			var sobe := float(int(_relogio * 3.0) % 2)
+			for k in 3:  # um V de 5 px, com contorno escuro
+				draw_rect(Rect2(base + Vector2(-3 + k, k - 1 - sobe), Vector2(1, 2)), Arte.paleta[3])
+				draw_rect(Rect2(base + Vector2(3 - k, k - 1 - sobe), Vector2(1, 2)), Arte.paleta[3])
+				draw_rect(Rect2(base + Vector2(-2 + k, k - sobe), Vector2(1, 1)), Arte.paleta[22])
+				draw_rect(Rect2(base + Vector2(2 - k, k - sobe), Vector2(1, 1)), Arte.paleta[22])
 	if _dica.visible:  # um ponto dourado sobre a cabeça de quem o pensamento cita
 		for f in vista.figuras:
 			if f.id in _citados:

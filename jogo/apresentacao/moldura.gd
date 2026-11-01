@@ -164,10 +164,12 @@ func _mostrar_ausencia() -> void:
 	if a.is_empty() or int(a.get("passos", 0)) < 24:
 		return
 	var dias := int(a["passos"]) / 24
-	var titulo := "Enquanto você esteve fora (%d dias):" % dias
+	var titulo := ("Enquanto você esteve fora: %d dias" % dias) if dias != 1 else "Enquanto você esteve fora: 1 dia"
+	var relato: String = interface._sem_markdown(a.get("relato", ""))
 	if a.get("teto_atingido", false):
-		titulo = "Enquanto você esteve fora, o mundo seguiu por um ano e esperou:"
-	interface.mostrar_cronica.call_deferred(titulo + "\n\n" + interface._sem_markdown(a.get("relato", "")))
+		titulo = "Enquanto você esteve fora: um ano"
+		relato = "O mundo seguiu por um ano e esperou.\n\n" + relato
+	interface.mostrar_cronica.call_deferred(relato, titulo)
 
 
 var _mem_feito := false

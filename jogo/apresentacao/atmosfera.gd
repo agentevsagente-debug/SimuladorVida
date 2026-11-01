@@ -28,6 +28,7 @@ var _neblina_estado := []
 var _deriva := 0.0
 var _rng := RandomNumberGenerator.new()
 var _espera_fumaca := 0.0
+var _estado := 0  # dia, entardecer ou noite (para as versões noturnas dos efeitos)
 var _espera_chamine := 0.0
 var _espera_faisca := 0.0
 var _espera_raio := 1.0
@@ -78,6 +79,50 @@ func definir_camera(origem: Vector2, zoom: float) -> void:
 	_mat_neblina.set_shader_parameter("zoom", zoom)
 
 
+## O fim de uma prece, sobre quem rezou (notas de preces da A): atendida, uma
+## luz quente que sobe; sem resposta, uma fumaça que se apaga devagar;
+## contrariada, brasas vermelhas que caem.
+func desfecho_da_prece(tipo: String, x: float) -> void:
+	var base := Vector2(x, vista.chao(int(x)) - 14)
+	match tipo:
+		"prece_atendida":
+			luminoso.emitir("fogo_brando_acender_4q", 16, 4, base, Vector2(0, -6), 1.2, 3.3)
+		"prece_sem_resposta":
+			fosco.emitir("fumaca_6q", 16, 6, base + Vector2(0, 6), Vector2(0.3, -2.0), 3.0)
+		"prece_contrariada":
+			for i in 4:
+				luminoso.emitir("faisca", 1, 1, base + Vector2(_rng.randf_range(-3, 3), -6),
+					Vector2(_rng.randf_range(-6, 6), _rng.randf_range(4, 12)), _rng.randf_range(0.8, 1.4), 0.0, 0)
+			luminoso.emitir("brasas_4q", 8, 4, base + Vector2(0, 14), Vector2.ZERO, 3.0, 3.0, 0)
+
+
+## Efeitos dos poderes com versão de noite (arte, seção 4, "Versões noturnas"):
+## folha de dia -> [folha de noite, largura]. As de noite já vêm nas cores da
+## noite e não passam pela tabela `noite`: vão sempre na camada luminosa.
+const NOTURNOS := {
+	"fartura_brilho_4q": ["fartura_brilho_noite_4q", 12], "fartura_aura_4q": ["fartura_aura_noite_4q", 16],
+	"sonho_4q": ["sonho_noite_4q", 16], "sonho_brilho_4q": ["sonho_brilho_noite_4q", 12],
+	"cura_brilho_4q": ["cura_brilho_noite_4q", 12], "seca_rachaduras_4q": ["seca_rachaduras_noite_4q", 32],
+	"fenda_4q": ["fenda_noite_4q", 16], "pedras_caindo_3v": ["pedras_caindo_noite_3v", 4],
+}
+
+
+func _de_noite(folha: String) -> bool:
+	return _estado == NOITE and NOTURNOS.has(folha)
+
+
+func _n(folha: String) -> String:
+	return NOTURNOS[folha][0] if _de_noite(folha) else folha
+
+
+func _w(folha: String, largura: int) -> int:
+	return NOTURNOS[folha][1] if _de_noite(folha) else largura
+
+
+func _camada(folha: String) -> Efeitos:
+	return luminoso if _de_noite(folha) else fosco
+
+
 ## Efeito visual de um poder usado em x. `alvo` é o x de quem foi atingido (raio,
 ## sonho), ou -1. No modo discreto, fogo e raio não mostram chamas nem impacto.
 func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, dados := {}) -> void:
@@ -115,11 +160,11 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 		"fartura_divina":
 			for i in int(3 + 3 * f):
 				var px := x + _rng.randf_range(-20.0, 20.0)
-				luminoso.emitir("fartura_aura_4q", 16, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
+				luminoso.emitir(_n("fartura_aura_4q"), 16, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
 					3.0 + 2.0 * f, 6.0, i)
 			for i in int(8 * f + 4):
 				var px := x + _rng.randf_range(-24.0, 24.0)
-				luminoso.emitir("fartura_brilho_4q", 8, 4, Vector2(px, vista.chao(int(px)) - _rng.randf_range(0, 6)),
+				luminoso.emitir(_n("fartura_brilho_4q"), _w("fartura_brilho_4q", 8), 4, Vector2(px, vista.chao(int(px)) - _rng.randf_range(0, 6)),
 					Vector2(0, -6), _rng.randf_range(1.5, 3.0), 6.0, i)
 		"terra_erguida":
 			fosco.emitir("terra_subindo_4q", 32, 4, Vector2(x, chao + 1), Vector2.ZERO, 1.4)
@@ -132,7 +177,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 					_rng.randf_range(2.5, 5.0), 5.0, i)
 			for dx in [-24, 8, 40]:
 				var px: float = x + dx - 8
-				fosco.emitir("seca_rachaduras_4q", 32, 4, Vector2(px, vista.chao(int(px)) + 7), Vector2.ZERO, 10.0 * f)
+				_camada("seca_rachaduras_4q").emitir(_n("seca_rachaduras_4q"), 32, 4, Vector2(px, vista.chao(int(px)) + 7), Vector2.ZERO, 10.0 * f)
 		"diluvio":  # chuva pesada sobre uma faixa larga
 			var meia := int(60.0 + 50.0 * f)
 			_chuva_divina = Vector2i(maxi(0, int(x) - meia), mini(479, int(x) + meia))
@@ -141,7 +186,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 		"terremoto_divino":  # a tela treme, a terra abre, sobe poeira e caem pedras
 			vista.tremer(1.5 + 1.5 * f)
 			if not discreto:
-				fosco.emitir("fenda_4q", 16, 4, Vector2(x, chao + 16), Vector2.ZERO, 4.0)
+				_camada("fenda_4q").emitir(_n("fenda_4q"), 16, 4, Vector2(x, chao + 16), Vector2.ZERO, 4.0)
 			# nuvens de poeira soltas: cada uma no seu trecho, em alturas, quadros,
 			# derivas e durações diferentes, para não enfileirar
 			var n := int(3 + 3 * f)
@@ -153,7 +198,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 					_rng.randf_range(3.0, 5.0), _rng.randi_range(0, 3), {"espelho": _rng.randf() < 0.5})
 			for i in int(6 + 6 * f):
 				var px := x + _rng.randf_range(-60.0, 60.0)
-				fosco.emitir("pedras_caindo_3v", 4, 3, Vector2(px, _rng.randf_range(50, 90)),
+				_camada("pedras_caindo_3v").emitir(_n("pedras_caindo_3v"), 4, 3, Vector2(px, _rng.randf_range(50, 90)),
 					Vector2(_rng.randf_range(-4, 4), 70), 0.8, 0.0, _rng.randi_range(0, 2))
 		"pressagio":  # no céu, visto por todos: cometa, eclipse ou luzes
 			match String(dados.get("forma", "cometa")):
@@ -168,7 +213,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 						var faixa := i % 3
 						var px := _rng.randf_range(10, 470)
 						var py := 14.0 + faixa * 12.0 + 6.0 * sin(px / 40.0 + faixa) + _rng.randf_range(-3, 3)
-						luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(px, py),
+						luminoso.emitir(_n("sonho_brilho_4q"), _w("sonho_brilho_4q", 8), 4, Vector2(px, py),
 							Vector2(_rng.randf_range(-4, 4), _rng.randf_range(-1, 1)), _rng.randf_range(5, 10), 5.0, i,
 							{"zigue": _rng.randf_range(1, 3)})
 		"cura":  # luz suave que desce sobre quem é curado
@@ -176,14 +221,14 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 			var c: int = vista.chao(int(px))
 			luminoso.emitir("cura_luz_4q", 16, 4, Vector2(px, c + 1), Vector2.ZERO, 2.5)
 			for i in 6:
-				luminoso.emitir("cura_brilho_4q", 8, 4, Vector2(px + _rng.randf_range(-8, 8), c - _rng.randf_range(4, 22)),
+				luminoso.emitir(_n("cura_brilho_4q"), _w("cura_brilho_4q", 8), 4, Vector2(px + _rng.randf_range(-8, 8), c - _rng.randf_range(4, 22)),
 					Vector2(0, -3), _rng.randf_range(1.5, 3.0), 5.0, i)
 		"sonho":
 			var px := alvo if alvo >= 0.0 else x
 			var c: int = vista.chao(int(px))
-			luminoso.emitir("sonho_4q", 16, 4, Vector2(px, c - 26), Vector2(0, 7), 2.2, 4.0)
+			luminoso.emitir(_n("sonho_4q"), 16, 4, Vector2(px, c - 26), Vector2(0, 7), 2.2, 4.0)
 			for i in int(4 * f + 3):
-				luminoso.emitir("sonho_brilho_4q", 8, 4, Vector2(px + _rng.randf_range(-10, 10), c - _rng.randf_range(8, 30)),
+				luminoso.emitir(_n("sonho_brilho_4q"), _w("sonho_brilho_4q", 8), 4, Vector2(px + _rng.randf_range(-10, 10), c - _rng.randf_range(8, 30)),
 					Vector2(_rng.randf_range(-2, 2), -3), _rng.randf_range(1.5, 3.0), 5.0, i)
 
 
@@ -201,6 +246,7 @@ func em_clarao() -> bool:
 
 
 func avancar(delta: float, hora: float, estado: int, fogos: Array, clima: Dictionary, parado: bool) -> void:
+	_estado = estado
 	if parado:  # teste de fidelidade: só o que a montagem da arte tem
 		_neblina.visible = false
 		return
