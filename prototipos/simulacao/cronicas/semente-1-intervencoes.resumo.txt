@@ -1,0 +1,4 @@
+semente=1 cenario=cenarios/semente1-intervencoes.txt anos=100
+tempo_ano_1=0.002s tempo_ano_mais_lento=0.025s(ano 69) tempo_100_anos=1.143s tempo_cronica=0.398s
+eventos=2851 populacao_final=124 grupos_vivos=4 passos=96000
+narrados: agricultura=2 ataque=19 casamento_entre_grupos=8 chuva_divina=3 conquista=2 costume=10 costume_esquecido=6 crenca=1 descoberta=1 deus_renomeado=6 doenca_fim=5 eclipse=3 edito=8 fartura_divina=1 fogo_divino=1 fome_fim=19 fusao=2 inverno_rigoroso=4 lugar_nomeado=10 morte=31 mudanca=1 nascimento=7 nova_crenca=3 novo_lider=5 prece=20 prece_atendida=20 prece_sem_resposta=3 raio_divino=1 sacerdote=7 seca_fim=12 separacao:briga=2 separacao:cisma=1 separacao:migracao=4 silencio=2 sonho=1 tempestade=3 terra_erguida=1 tregua=5
