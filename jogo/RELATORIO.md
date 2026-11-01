@@ -22,6 +22,31 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - onde fica o mundo salvo, como começar de novo e como desinstalar;
 - o aviso do SmartScreen e como mandar um erro.
 
+**A CPU em 1x num mundo grande.** Medido com `medir.ps1 -Cenario grande` (200 anos, semente 3, 1x, janela visível), 180 s depois de 60 s de aquecimento, num PC de 28 núcleos lógicos. A meta é ficar abaixo de 8% de um núcleo.
+
+| | CPU (% de um núcleo) | Conjunto de trabalho | Gerenciador de Tarefas |
+|---|---|---|---|
+| Antes (medido pela C) | 15% | — | — |
+| Agendas e lugares a 6 Hz, 20 quadros/s em 1x | 8,68% | 282 MB | 179 MB |
+| E pular cedo quem dorme ou não aparece | **6,08%** | 282 MB | **179 MB** |
+
+- **O que mudou:**
+  - o trecho da agenda de cada um e o lugar dos parados são refeitos 6 vezes por segundo, e não a cada quadro (a agenda anda em minutos de jogo), ou na hora em que a lista de pessoas muda; nos outros ritmos, continua a cada quadro;
+  - em 1x e na pausa, a janela desenha 20 quadros por segundo (quem anda vai a 9 px/s); nos outros ritmos, continuam os 30;
+  - quem dorme ou está oculto sai do laço logo depois da ação, antes de montar o visual.
+- **Para medir de novo:** `DEPURAR_TEMPO=1` faz a vista imprimir, a cada 10 s, os µs por quadro de cada parte.
+- **D8, a memória:** o Gerenciador fica em 179 MB, abaixo dos 200 MB. O conjunto de trabalho (282 MB) inclui as páginas compartilhadas do driver de vídeo, que o Gerenciador não conta.
+
+**Desejáveis (D1 a D3).**
+- **D1:** o impacto do raio fica 1,5 s (antes, 0,8 s). Onde ele cai, dois blocos de terra queimada (`memoria/terra_queimada_a` e `_b`) ficam no chão por 60 s.
+- **D2:**
+  - de dia, a fartura e o sonho usam as versões `*_dia_*` da arte, e de noite continuam as `*_noite_*`;
+  - no estágio 6, os homens andam e ficam parados de chapéu de aba larga e calças (`estagio6/adulto_e6_*`, que ainda não estavam ligados).
+- **D3:**
+  - o índice do livro está mais largo (140 px em vez de 104), e o título que não cabe quebra numa segunda linha recuada;
+  - o índice e o livro ficam centrados juntos na estante;
+  - o clique no índice segue as linhas quebradas.
+
 ## Os sinais da C, a estante na primeira vez e a roda (auditoria 10)
 
 | Item | O que foi feito |

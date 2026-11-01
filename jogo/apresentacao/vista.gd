@@ -106,6 +106,12 @@ var _relogio := 0.0
 var _quadro_agua := -1
 var _quadro_fogo := -1
 var _refazer := true
+# DEPURAR_TEMPO: quanto cada parte do quadro custa (µs por quadro, a cada 10 s)
+var _medindo := OS.has_environment("DEPURAR_TEMPO")
+var _t0 := 0
+var _tempos := {}
+var _quadros_medidos := 0
+var _medir_desde := 0.0
 var _tex_nascendo: Texture2D
 var recomeco := {}
 var _interface: Node2D  # a interface se apresenta aqui (avisos de eventos, quem sonhou)
@@ -196,8 +202,10 @@ func _ready() -> void:
 
 
 func avancar(delta: float, desenhar: bool) -> void:
+	_t0 = Time.get_ticks_usec()
 	if sim:
 		sim.avancar(delta)
+	_medir("sim")
 	if not desenhar:
 		return
 	_relogio += delta
@@ -207,15 +215,20 @@ func avancar(delta: float, desenhar: bool) -> void:
 		_refazer = false
 		_chave_fixo = _chave_do_fixo() if sim else []
 		_montar_fixo()
+	_medir("fixo")
 	_atualizar_horario()
 	_atualizar_agua()
 	_atualizar_fogueiras()
+	_medir("horario_agua_fogo")
 	var desenho: Array = _figuras_layout() if _modo_layout else _vida.atualizar(delta, _relogio)
 	figuras = desenho if _modo_layout else _vida.figuras
+	_medir("vida")
 	_atualizar_camera(delta)
 	_pessoas.definir(desenho)
+	_medir("pessoas")
 	if sim:
 		_sinais.atualizar(sim, self, _relogio, figuras)
+	_medir("sinais")
 	_atmosfera.avancar(delta, _hora(), _estado[0] if _estado[2] < 0.5 else _estado[1], _fogos,
 		{} if _modo_layout else sim.clima, _modo_layout)
 	if _ceu:
@@ -228,6 +241,8 @@ func avancar(delta: float, desenhar: bool) -> void:
 			clima_ceu = "seca"
 		_ceu.avancar(delta, _hora(), clima_ceu, int(sim.tempo.get("dia", 1)),
 			not sim.clima.get("tempestade", {}).is_empty() or _atmosfera.chovendo())
+	_medir("atmosfera_ceu")
+	_relatar_tempo()
 	if _capturar != "" and _relogio >= _capturar_apos + _gravados * _intervalo:
 		_quadros_ate_capturar -= 1
 		if _quadros_ate_capturar <= 0:
@@ -255,6 +270,31 @@ func para_mundo(ponto: Vector2) -> Vector2:
 
 func para_tela(ponto: Vector2) -> Vector2:
 	return (ponto - camera) * zoom
+
+
+func _medir(parte: String) -> void:
+	if not _medindo:
+		return
+	var agora := Time.get_ticks_usec()
+	_tempos[parte] = _tempos.get(parte, 0) + agora - _t0
+	_t0 = agora
+
+
+func _relatar_tempo() -> void:
+	if not _medindo:
+		return
+	_quadros_medidos += 1
+	if _relogio - _medir_desde < 10.0:
+		return
+	var partes := []
+	for k in _tempos:
+		partes.append("%s=%d" % [k, _tempos[k] / _quadros_medidos])
+	print("[tempo] quadros=%d fps=%.1f render_cpu=%.2fms processo=%.2fms %s" % [_quadros_medidos,
+		_quadros_medidos / (_relogio - _medir_desde), RenderingServer.get_frame_setup_time_cpu(),
+		Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0, " ".join(partes)])
+	_tempos = {}
+	_quadros_medidos = 0
+	_medir_desde = _relogio
 
 
 ## O que está sob o ponto do mundo: {tipo: "pessoa"|"sinal"|"lugar", ...}.

@@ -47,6 +47,7 @@ const MUNDO := Rect2i(0, FAIXA, 480, 160)
 const ESCALA_MIN := 2
 const ESCALA_MAX := 4
 const FPS_VISIVEL := 30
+const FPS_DEVAGAR := 20  # em 1x e na pausa (ninguém anda rápido): menos CPU no canto da tela
 const FPS_ESCONDIDA := 4  # o mundo anda 1 passo a cada 112 s; não precisa de mais
 const ARQUIVO_CONFIG := "user://moldura.cfg"
 
@@ -77,6 +78,7 @@ func _ready() -> void:
 	DisplayServer.set_icon(icone)
 
 	var tela := DisplayServer.window_get_current_screen()
+	_log("pasta de dados=%s" % OS.get_user_data_dir())  # no jogo exportado, a pasta própria (project.godot)
 	_log("renderizador=%s adaptador=%s dpi=%d" % [
 		RenderingServer.get_current_rendering_driver_name(),
 		RenderingServer.get_video_adapter_name(), DisplayServer.screen_get_dpi(tela)])
@@ -207,9 +209,18 @@ func _process(delta: float) -> void:
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
 		mostrar()
+	if not escondida:  # os quadros por segundo acompanham o ritmo
+		var fps: int = FPS_DEVAGAR if vista.sim and vista.sim.ritmo in [Simulacao.Ritmo.NORMAL, Simulacao.Ritmo.PAUSA] else FPS_VISIVEL
+		if Engine.max_fps != fps:
+			Engine.max_fps = fps
+	var t_m := Time.get_ticks_usec()  # DEPURAR_TEMPO
 	vista.avancar(delta, not escondida)
+	var t_v := Time.get_ticks_usec()  # DEPURAR_TEMPO
 	if not escondida:
 		interface.avancar(delta)
+	if vista._medindo:  # DEPURAR_TEMPO
+		vista._tempos["M_vista_total"] = vista._tempos.get("M_vista_total", 0) + t_v - t_m
+		vista._tempos["M_interface"] = vista._tempos.get("M_interface", 0) + Time.get_ticks_usec() - t_v
 	if _duracao > 0.0:
 		_duracao -= delta
 		if _duracao <= 0.0:

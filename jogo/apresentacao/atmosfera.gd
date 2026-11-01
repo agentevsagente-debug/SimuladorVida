@@ -28,7 +28,8 @@ var _neblina_estado := []
 var _deriva := 0.0
 var _rng := RandomNumberGenerator.new()
 var _espera_fumaca := 0.0
-var _estado := 0  # dia, entardecer ou noite (para as versões noturnas dos efeitos)
+var _estado := 0
+const MARCA_DO_RAIO := 60.0  # s que o chão fica queimado onde o raio caiu (auditoria 11, D1)  # dia, entardecer ou noite (para as versões noturnas dos efeitos)
 var _espera_chamine := 0.0
 var _espera_faisca := 0.0
 var _espera_raio := 1.0
@@ -107,16 +108,27 @@ const NOTURNOS := {
 }
 
 
+## De dia, a fartura e o sonho têm versões mais fortes (arte, seção 4; auditoria 11, D2).
+const DIURNOS := {
+	"fartura_brilho_4q": ["fartura_brilho_dia_4q", 12], "fartura_aura_4q": ["fartura_aura_dia_4q", 16],
+	"sonho_4q": ["sonho_dia_4q", 24], "sonho_brilho_4q": ["sonho_brilho_dia_4q", 12],
+}
+
+
 func _de_noite(folha: String) -> bool:
 	return _estado == NOITE and NOTURNOS.has(folha)
 
 
+func _de_dia(folha: String) -> bool:
+	return _estado != NOITE and DIURNOS.has(folha)
+
+
 func _n(folha: String) -> String:
-	return NOTURNOS[folha][0] if _de_noite(folha) else folha
+	return NOTURNOS[folha][0] if _de_noite(folha) else (DIURNOS[folha][0] if _de_dia(folha) else folha)
 
 
 func _w(folha: String, largura: int) -> int:
-	return NOTURNOS[folha][1] if _de_noite(folha) else largura
+	return NOTURNOS[folha][1] if _de_noite(folha) else (DIURNOS[folha][1] if _de_dia(folha) else largura)
 
 
 func _camada(folha: String) -> Efeitos:
@@ -160,7 +172,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 		"fartura_divina":
 			for i in int(3 + 3 * f):
 				var px := x + _rng.randf_range(-20.0, 20.0)
-				luminoso.emitir(_n("fartura_aura_4q"), 16, 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
+				luminoso.emitir(_n("fartura_aura_4q"), _w("fartura_aura_4q", 16), 4, Vector2(px, vista.chao(int(px)) + 1), Vector2.ZERO,
 					3.0 + 2.0 * f, 6.0, i)
 			for i in int(8 * f + 4):
 				var px := x + _rng.randf_range(-24.0, 24.0)
@@ -226,7 +238,7 @@ func poder(tipo: String, x: float, grau: String, alvo: float, discreto: bool, da
 		"sonho":
 			var px := alvo if alvo >= 0.0 else x
 			var c: int = vista.chao(int(px))
-			luminoso.emitir(_n("sonho_4q"), 16, 4, Vector2(px, c - 26), Vector2(0, 7), 2.2, 4.0)
+			luminoso.emitir(_n("sonho_4q"), _w("sonho_4q", 16), 4, Vector2(px, c - 26), Vector2(0, 7), 2.2, 4.0)
 			for i in int(4 * f + 3):
 				luminoso.emitir(_n("sonho_brilho_4q"), _w("sonho_brilho_4q", 8), 4, Vector2(px + _rng.randf_range(-10, 10), c - _rng.randf_range(8, 30)),
 					Vector2(_rng.randf_range(-2, 2), -3), _rng.randf_range(1.5, 3.0), 5.0, i)
@@ -413,8 +425,13 @@ func raio(x: float) -> void:
 	var folha: String = ["raio_a_2q", "raio_b_2q", "raio_c_2q"][_rng.randi_range(0, 2)]
 	# a descarga fica 0,3 s e o canal esfriando outros 0,3 s; o impacto dura 0,8 s
 	luminoso.emitir(folha, 32, 2, Vector2(x, chao), Vector2.ZERO, 0.6)
-	luminoso.emitir("raio_impacto_4q", 16, 4, Vector2(x, chao + 2), Vector2.ZERO, 0.8)
+	luminoso.emitir("raio_impacto_4q", 16, 4, Vector2(x, chao + 2), Vector2.ZERO, 1.5, 2.7)
 	fosco.emitir("poeira_4q", 16, 4, Vector2(x, chao + 1), Vector2.ZERO, 0.6)
+	# a marca queimada: dois blocos de terra queimada (a superfície deles na linha 2)
+	for dx in [-4, 4]:
+		var bx: float = x + dx
+		fosco.emitir("memoria/terra_queimada_%s" % ("a" if dx < 0 else "b"), 8, 1,
+			Vector2(bx, vista.chao(int(bx)) + 6), Vector2.ZERO, MARCA_DO_RAIO)
 	_clarao = CLARAO
 
 

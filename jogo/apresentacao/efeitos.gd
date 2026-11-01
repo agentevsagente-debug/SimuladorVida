@@ -70,8 +70,11 @@ func _quadro(p: Dictionary) -> int:
 
 func _textura(folha: String) -> Texture2D:
 	if not _texturas.has(folha):
-		_texturas[folha] = Arte.textura("efeitos/%s.png" % folha) if not folha.begins_with("estagio1/") \
-			else Arte.textura(folha + ".png")
+		var fora := folha.begins_with("estagio1/") or folha.begins_with("memoria/")
+		var caminho := folha + ".png" if fora else "efeitos/%s.png" % folha
+		# a memória (terra queimada) é importada como Image, para os blocos do chão
+		_texturas[folha] = ImageTexture.create_from_image(Arte.imagem(caminho)) if folha.begins_with("memoria/") \
+			else Arte.textura(caminho)
 	return _texturas[folha]
 
 
