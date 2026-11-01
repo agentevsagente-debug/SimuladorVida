@@ -38,3 +38,14 @@ O `jogo/nucleo/` já foi copiado do protótipo (`prototipos/simulacao/nucleo/`).
 4. Fechar e abrir de novo retoma o mundo, com o avanço da ausência e a crônica do período.
 5. Leveza: CPU média abaixo de 2% e memória abaixo de 200 MB com o jogo rodando.
 6. O visual em jogo parece a cena-alvo.
+
+## Fase 2 adiantada (01/11/2026)
+
+A e C terminaram a fase 1 antes da integração da B. Para ninguém ficar parado, as duas adiantam a fase 2, cada uma na mesma área de antes:
+
+| Sessão | Fase 2 |
+|---|---|
+| **A, simulação** | os 5 poderes restantes (seca, dilúvio, terremoto, presságio, cura); estágios 3 a 6 com o efeito de cada um na relação com o deus; a crônica do próprio povo a partir da escrita; o fim do mundo (extinção, mundo vazio, criar novo povo só com o mundo vazio, ruínas que guardam conhecimento, crônica fechada como livro e estante de crônicas); o abandono do mundo; as 6 dimensões culturais completas |
+| **C, arte** | estágios 3 a 6 (construções, habitantes com roupas e ferramentas de cada estágio, templo por estágio); efeitos dos 5 poderes restantes (seca, dilúvio, terremoto, cometa e eclipse, cura); ruínas por estágio; cenas de amostra de uma vila em cada estágio; ícone do jogo para a bandeja e a barra de tarefas |
+
+Regras de sempre: nenhuma mudança que quebre a API sem aviso, e o `LEIA-ME` da arte sempre atualizado.
