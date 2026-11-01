@@ -26,7 +26,9 @@ func _bloco(nome: String) -> Image:
 ## batido: colunas de terra batida (clareira em volta das fogueiras).
 ## Sem superficie_na_cor, a linha de cima da água só ganha etiqueta: ela é
 ## desenhada à parte, animada.
-func montar(colunas: Array, batido: Array, quadro_agua: Image, superficie_na_cor := true) -> Dictionary:
+## queimadas: colunas em que o fogo do deus passou (grama vira terra queimada).
+func montar(colunas: Array, batido: Array, quadro_agua: Image, superficie_na_cor := true,
+		queimadas: Array = []) -> Dictionary:
 	var cor := Image.create(W, H, false, Image.FORMAT_RGBA8)
 	var tag := Image.create(W, H, false, Image.FORMAT_R8)
 	var sup := PackedInt32Array()
@@ -41,7 +43,7 @@ func montar(colunas: Array, batido: Array, quadro_agua: Image, superficie_na_cor
 		var tp: String = colunas[c][1]
 		for x in range(c * T, c * T + T):
 			sup[x] = s
-		for item in pilha(c, s, tp, c in batido):
+		for item in pilha(c, s, tp, c in batido, c in queimadas):
 			var bloco := quadro_agua if item[1] == "agua_superficie" else _bloco(item[1])
 			var etiqueta := Arte.AGUA if String(item[1]).begins_with("agua") else Arte.MUNDO
 			if item[1] == "agua_superficie" and not superficie_na_cor:
@@ -74,7 +76,7 @@ static func _escolher(a: String, b: String, c: int, y: int) -> String:
 
 
 ## Lista [y, nome do bloco] de uma coluna, de cima para baixo.
-static func pilha(c: int, s: int, tp: String, batido: bool) -> Array:
+static func pilha(c: int, s: int, tp: String, batido: bool, queimada := false) -> Array:
 	var itens := []
 	if tp == "areia" and s > NIVEL_AGUA:
 		for y in [120, 128, 136, 144, 152]:
@@ -83,6 +85,9 @@ static func pilha(c: int, s: int, tp: String, batido: bool) -> Array:
 	var y: int
 	if tp == "grama" and batido:
 		itens.append([s - 2, "chao_batido"])
+		y = s + 6
+	elif tp == "grama" and queimada:
+		itens.append([s - 2, "../memoria/terra_queimada_a" if c % 2 else "../memoria/terra_queimada_b"])
 		y = s + 6
 	elif tp == "grama":
 		itens.append([s - 2, _escolher("grama_a", "grama_b", c, s)])

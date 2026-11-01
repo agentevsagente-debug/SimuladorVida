@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://bdic7q8ghqk7a"
+path="res://.godot/imported/fonte_5x7_dourada.fnt-8e76321d73b8240b5d28d32dbadb79c7.fontdata"
+
+[deps]
+
+source_file="res://arte/interface/fonte_5x7_dourada.fnt"
+dest_files=["res://.godot/imported/fonte_5x7_dourada.fnt-8e76321d73b8240b5d28d32dbadb79c7.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

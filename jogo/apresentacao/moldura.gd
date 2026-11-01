@@ -3,13 +3,14 @@ extends Node2D
 ## atravessa tudo fora do mundo e da alça. Vem do protótipo da fase 0
 ## (prototipos/moldura/), cujo RELATORIO.md explica as escolhas.
 ##
-## A tela base tem 480 × 176: uma faixa transparente de 16 pixels no topo,
+## A tela base tem 480 × 178: uma faixa transparente de 18 pixels no topo,
 ## com a alça à esquerda, e o mundo de 480 × 160 embaixo. A janela tem sempre
 ## exatamente base × escala, com escala inteira, e o Godot amplia a tela base
 ## sem filtro (modo "viewport"), então os pixels ficam sempre nítidos.
 ##
 ## A escala inicial vem da densidade da tela. Depois disso, a escala e a
 ## posição escolhidas pelo jogador ficam guardadas em user://moldura.cfg.
+## O mundo é salvo a cada dia de jogo e ao fechar.
 ##
 ## Argumentos (depois de "--"):
 ##   --cenario=escondido                  começa escondida
@@ -21,19 +22,20 @@ extends Node2D
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
 ##                                        outra janela em foco, via processo
 ##                                        auxiliar em PowerShell
+##   --ritmo=pausa|normal|rapido          ritmo inicial do tempo
+##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
+##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
+##   --abrir=cronica|poderes|ritmo|linhagem|salto   abre um painel ou aperta um botão (testes)
 
-const BASE := Vector2i(480, 176)
-const FAIXA := 16
+const Simulacao = preload("res://apresentacao/simulacao.gd")
+
+const FAIXA := 18
+const BASE := Vector2i(480, 160 + FAIXA)
 const MUNDO := Rect2i(0, FAIXA, 480, 160)
-const ALCA := Rect2i(0, 0, 88, 14)
-const ZONA_ARRASTE := Rect2i(0, 0, 46, 14)
-const BOTAO_MENOS := Rect2i(48, 2, 10, 10)
-const BOTAO_MAIS := Rect2i(60, 2, 10, 10)
-const BOTAO_ESCONDER := Rect2i(74, 2, 10, 10)
 const ESCALA_MIN := 2
 const ESCALA_MAX := 4
 const FPS_VISIVEL := 30
-const FPS_ESCONDIDA := 12  # só o suficiente para o mundo seguir
+const FPS_ESCONDIDA := 4  # o mundo anda 1 passo a cada 112 s; não precisa de mais
 const ARQUIVO_CONFIG := "user://moldura.cfg"
 
 var escala := 2
@@ -44,8 +46,10 @@ var _bandeja: StatusIndicator
 var _atalho_pid := 0
 var _atalho_saida: FileAccess
 var _atalho_leitor: Thread
+var _largura_alca := 0
 
-@onready var vista: Node2D = $Vista
+@onready var vista: Node2D = $Recorte/Vista
+@onready var interface: Node2D = $Interface
 
 
 func _ready() -> void:
@@ -54,11 +58,27 @@ func _ready() -> void:
 	_usar_config = not args.has("sem-config")
 	if args.has("sem-foco"):
 		get_window().unfocusable = true
+	var icone := (load("res://arte/interface/icone_jogo_32.png") as Texture2D).get_image()
+	DisplayServer.set_icon(icone)
 
 	var tela := DisplayServer.window_get_current_screen()
 	_log("renderizador=%s adaptador=%s dpi=%d" % [
 		RenderingServer.get_current_rendering_driver_name(),
 		RenderingServer.get_video_adapter_name(), DisplayServer.screen_get_dpi(tela)])
+
+	interface.criar(vista)
+	interface.largura_mudou.connect(_aplicar_passagem_mouse)
+	interface.arrastar.connect(_arrastar)
+	interface.esconder.connect(esconder)
+	interface.escala.connect(func(d): _aplicar_escala(escala + d))
+	vista.pessoa_clicada.connect(_acompanhar)
+	if vista.sim:
+		match args.get("ritmo", ""):
+			"pausa":
+				vista.sim.definir_ritmo(Simulacao.Ritmo.PAUSA)
+			"rapido":
+				vista.sim.definir_ritmo(Simulacao.Ritmo.RAPIDO)
+		_mostrar_ausencia()
 
 	var config := ConfigFile.new()
 	if _usar_config:
@@ -81,10 +101,38 @@ func _ready() -> void:
 		var area := DisplayServer.screen_get_usable_rect(tela)
 		get_window().position = area.end - get_window().size - Vector2i(24, 24)
 
+	if args.has("demo"):
+		var d: PackedStringArray = args["demo"].split(":")
+		get_tree().create_timer(float(d[3]) if d.size() > 3 else 2.0).timeout.connect(
+			func(): interface.demo(d[0], float(d[1]), float(d[2])))
+	if args.has("dica"):
+		var p: PackedStringArray = args["dica"].split(",")
+		get_tree().create_timer(1.0).timeout.connect(func():
+			var ev := InputEventMouseMotion.new()
+			interface.tratar(ev, Vector2(float(p[0]), float(p[1])), FAIXA))
+	match args.get("abrir", ""):
+		"cronica":
+			interface.alternar_cronica.call_deferred()
+		"poderes", "ritmo", "linhagem":
+			interface._apertar.call_deferred(args["abrir"])
+		"salto":
+			interface._apertar.call_deferred("ritmo:salto")
 	if args.has("atalho-global"):
 		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if args.get("cenario", "") == "escondido":
 		esconder()
+
+
+## Ao voltar, a crônica abre com o que aconteceu enquanto o jogador esteve fora.
+func _mostrar_ausencia() -> void:
+	var a: Dictionary = vista.sim.ausencia
+	if a.is_empty() or int(a.get("passos", 0)) < 24:
+		return
+	var dias := int(a["passos"]) / 24
+	var titulo := "Enquanto você esteve fora (%d dias):" % dias
+	if a.get("teto_atingido", false):
+		titulo = "Enquanto você esteve fora, o mundo seguiu por um ano e esperou:"
+	interface.mostrar_cronica.call_deferred(titulo + "\n\n" + interface._sem_markdown(a.get("relato", "")))
 
 
 func _process(delta: float) -> void:
@@ -92,6 +140,8 @@ func _process(delta: float) -> void:
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		mostrar()
 	vista.avancar(delta, not escondida)
+	if not escondida:
+		interface.avancar(delta)
 	if _duracao > 0.0:
 		_duracao -= delta
 		if _duracao <= 0.0:
@@ -101,30 +151,16 @@ func _process(delta: float) -> void:
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		_guardar_config()
+		if vista.sim:
+			vista.sim.salvar()
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.pressed:
-		var pos := Vector2i(event.position)
-		if event.button_index == MOUSE_BUTTON_LEFT:
-			if BOTAO_MENOS.has_point(pos):
-				_aplicar_escala(escala - 1)
-			elif BOTAO_MAIS.has_point(pos):
-				_aplicar_escala(escala + 1)
-			elif BOTAO_ESCONDER.has_point(pos):
-				esconder()
-			elif ZONA_ARRASTE.has_point(pos):
-				get_window().start_drag()  # volta quando o botão é solto
-				_guardar_config()
-				_log("arrastada pos=%s" % get_window().position)
-			elif MUNDO.has_point(pos):
-				_log("clique no mundo %s" % (pos - MUNDO.position))
-				vista.ao_clicar(Vector2(pos - MUNDO.position))
-		elif ALCA.has_point(pos) and event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			_aplicar_escala(escala + 1)
-		elif ALCA.has_point(pos) and event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			_aplicar_escala(escala - 1)
+	if event is InputEventMouse:
+		interface.tratar(event, event.position, FAIXA)
 	elif event is InputEventKey and event.pressed and not event.echo:
+		if interface.tecla(event.keycode):
+			return
 		match event.keycode:
 			KEY_H, KEY_F8:
 				esconder()
@@ -133,6 +169,17 @@ func _unhandled_input(event: InputEvent) -> void:
 			KEY_Q:
 				if event.ctrl_pressed:
 					sair()
+
+
+func _arrastar() -> void:
+	get_window().start_drag()  # volta quando o botão é solto
+	_guardar_config()
+	_log("arrastada pos=%s" % get_window().position)
+
+
+func _acompanhar(id: int) -> void:
+	if vista.sim and vista.sim.mundo.acompanhar(id):
+		interface._avisar("Acompanhando " + String(vista.sim.mundo.pessoa(id).nome))
 
 
 func esconder() -> void:
@@ -158,7 +205,7 @@ func mostrar() -> void:
 	get_window().always_on_top = true
 	_aplicar_passagem_mouse()
 	vista.queue_redraw()
-	queue_redraw()
+	interface.queue_redraw()
 	_log("visivel")
 
 
@@ -172,6 +219,8 @@ func alternar() -> void:
 func sair() -> void:
 	_log("saindo")
 	_guardar_config()
+	if vista.sim:
+		vista.sim.salvar()
 	if _atalho_pid != 0:
 		OS.kill(_atalho_pid)
 		_atalho_leitor.wait_to_finish()
@@ -221,15 +270,19 @@ func _aplicar_escala(nova: int, guardar := true) -> void:
 ## Só a alça e o mundo recebem o mouse. O polígono está em pixels da janela.
 func _aplicar_passagem_mouse() -> void:
 	var k := escala
+	var alca: int = interface.largura()
 	var poligono := PackedVector2Array([
 		Vector2(0, 0),
-		Vector2(ALCA.end.x * k, 0),
-		Vector2(ALCA.end.x * k, FAIXA * k),
+		Vector2(alca * k, 0),
+		Vector2(alca * k, FAIXA * k),
 		Vector2(BASE.x * k, FAIXA * k),
 		Vector2(BASE.x * k, BASE.y * k),
 		Vector2(0, BASE.y * k),
 	])
 	DisplayServer.window_set_mouse_passthrough(poligono)
+	if alca != _largura_alca:
+		_largura_alca = alca
+		_log("alca largura=%d" % alca)
 
 
 func _guardar_config() -> void:
@@ -273,13 +326,8 @@ func _ao_receber_atalho(linha: String) -> void:
 func _criar_bandeja() -> void:
 	if not DisplayServer.has_feature(DisplayServer.FEATURE_STATUS_INDICATOR):
 		return
-	var img := Image.create(16, 16, false, Image.FORMAT_RGBA8)
-	img.fill(Color8(70, 140, 220))
-	img.fill_rect(Rect2i(0, 11, 16, 5), Color8(110, 75, 45))
-	img.fill_rect(Rect2i(0, 11, 16, 1), Color8(80, 140, 60))
-	img.fill_rect(Rect2i(7, 5, 2, 6), Color8(240, 200, 160))
 	_bandeja = StatusIndicator.new()
-	_bandeja.icon = ImageTexture.create_from_image(img)
+	_bandeja.icon = load("res://arte/interface/icone_jogo_16.png")
 	_bandeja.tooltip = "Simulador de vida: clique para mostrar ou esconder, botão direito para sair"
 	_bandeja.pressed.connect(_ao_clicar_bandeja)
 	add_child(_bandeja)
@@ -290,21 +338,6 @@ func _ao_clicar_bandeja(botao: int, _posicao: Vector2i) -> void:
 		alternar()
 	elif botao == MOUSE_BUTTON_RIGHT:
 		sair()
-
-
-func _draw() -> void:
-	# Alça: zona de arraste com pontinhos, botões de diminuir, aumentar e esconder.
-	draw_rect(ALCA, Color8(40, 34, 30, 220))
-	for x in range(6, 42, 4):
-		draw_rect(Rect2(x, 5, 2, 1), Color8(150, 140, 120))
-		draw_rect(Rect2(x, 8, 2, 1), Color8(150, 140, 120))
-	for botao in [BOTAO_MENOS, BOTAO_MAIS, BOTAO_ESCONDER]:
-		draw_rect(botao, Color8(80, 70, 60))
-	var cor := Color8(230, 220, 200)
-	draw_rect(Rect2(BOTAO_MENOS.position + Vector2i(2, 4), Vector2(6, 2)), cor)
-	draw_rect(Rect2(BOTAO_MAIS.position + Vector2i(2, 4), Vector2(6, 2)), cor)
-	draw_rect(Rect2(BOTAO_MAIS.position + Vector2i(4, 2), Vector2(2, 6)), cor)
-	draw_rect(Rect2(BOTAO_ESCONDER.position + Vector2i(2, 7), Vector2(6, 1)), cor)
 
 
 func _ler_argumentos() -> Dictionary:

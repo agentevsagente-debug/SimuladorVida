@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://d3uxgfidaeojy"
+path="res://.godot/imported/fonte_5x7_escura.fnt-cae9c24a4ed55e394924348a86c6a399.fontdata"
+
+[deps]
+
+source_file="res://arte/interface/fonte_5x7_escura.fnt"
+dest_files=["res://.godot/imported/fonte_5x7_escura.fnt-cae9c24a4ed55e394924348a86c6a399.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
