@@ -21,7 +21,7 @@ function Registrar($nome, $ok, $detalhe) {
 function Abrir([string]$log, [string[]]$extra) {
     if (Test-Path $log) { Remove-Item $log }
     $p = Start-Process -FilePath $Exe -PassThru -ArgumentList (@('--log-file', "`"$log`"", '--',
-        "--pos=$X,$Y", '--escala=2', '--sem-config', '--mundo-novo') + $extra)
+        "--pos=$X,$Y", '--escala=2', '--sem-config', '--mundo-novo', '--com-povo') + $extra)
     for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
     Start-Sleep -Seconds 3
     $p.Refresh()

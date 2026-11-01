@@ -53,14 +53,16 @@ var _chave_ruinas := []
 
 
 ## Carrega o mundo salvo (avançando a ausência) ou cria um novo.
-func iniciar(semente: int, hora_inicial: int = -1, carregar := true) -> void:
+## com_povo: o mundo novo já nasce com o primeiro povo (testes e cenários); sem ele,
+## nasce vazio, às 7h, e o primeiro gesto do jogador é criar o povo (QA, D-09).
+func iniciar(semente: int, hora_inicial: int = -1, carregar := true, com_povo := false) -> void:
 	if carregar and Persistencia.existe():
 		var r = Persistencia.carregar_e_avancar()
 		if r != null:
 			mundo = r["mundo"]
 			ausencia = r["ausencia"]
 	if mundo == null:
-		mundo = Mundo.new(semente)
+		mundo = novo_mundo(semente, com_povo)
 		if hora_inicial >= 0:
 			while mundo.tempo()["hora"] != hora_inicial:
 				mundo.avancar_hora()
@@ -69,6 +71,16 @@ func iniciar(semente: int, hora_inicial: int = -1, carregar := true) -> void:
 	_ler(true)
 	print("[simulacao] %s ano=%d dia=%d hora=%d passo=%d ausencia=%d passos" % ["carregado" if not ausencia.is_empty() else "novo",
 		tempo["ano"], tempo["dia"], tempo["hora"], tempo["passo"], int(ausencia.get("passos", 0))])
+
+
+## Mundo.new(semente, [], HORA_INICIAL, com_povo): o núcleo de antes (sem o 4º
+## parâmetro) sempre nasce com o povo. callv para não depender da versão ao compilar.
+static func novo_mundo(semente: int, com_povo := false) -> Mundo:
+	var script: Script = Mundo
+	for m in script.get_script_method_list():
+		if m["name"] == "_init" and m["args"].size() >= 4:
+			return script.callv("new", [semente, [], Mundo.HORA_INICIAL, com_povo])
+	return Mundo.new(semente)
 
 
 ## Recomeça a leitura depois de o mundo ter sido avançado por fora (testes).
@@ -124,8 +136,14 @@ func saltar() -> Array:
 	return []
 
 
-func usar_poder(poder: String, x: float, intensidade: float) -> Dictionary:
-	var r: Dictionary = mundo.usar_poder(poder, x, intensidade)
+## alvo: o id de quem está sob o cursor; minuto: o minuto da hora na tela. Com eles,
+## o raio, o sonho e a cura acertam quem o jogador vê, e não onde ele estará (QA, D-02).
+func usar_poder(poder: String, x: float, intensidade: float, alvo := -1, minuto := -1.0) -> Dictionary:
+	var r: Dictionary
+	if mundo.get_method_argument_count("usar_poder") >= 5:
+		r = mundo.callv("usar_poder", [poder, x, intensidade, alvo, minuto])
+	else:
+		r = mundo.usar_poder(poder, x, intensidade)
 	_ler()
 	return r
 
@@ -150,7 +168,7 @@ func abandonar() -> Dictionary:
 				l["na_estante"] = true
 	print("[simulacao] mundo abandonado: %s, anos %d a %d" % [livro.get("titulo", "?"), livro.get("ano_ini", 0),
 		livro.get("ano_fim", 0)])
-	mundo = Mundo.new(randi())
+	mundo = novo_mundo(randi())
 	ausencia = {}
 	_acumulado = 0.0
 	_fracao_parada = 0.0
