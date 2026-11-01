@@ -19,6 +19,8 @@ Antes de começar, leia:
 
 ## Ciclo de trabalho
 
+**Você tem autorização permanente para executar as tarefas.** Não peça confirmação ao usuário nem ao Claude antes de começar, entre uma tarefa e outra ou depois de entregar: siga o ciclo até não haver tarefa pendente ou até encontrar `Desligar_Codex = True`. As dúvidas vão em "Observações" no `status.md`.
+
 1. Leia `controle.md`. Se contiver `Desligar_Codex = True`, registre no `status.md` a hora e a frase "Codex desligado" e **pare**.
 2. Leia `tarefas.md` e pegue a primeira tarefa com estado `PENDENTE` ou `REFAZER`, na ordem do arquivo.
 3. Mude o estado da tarefa para `EM_ANDAMENTO` no `tarefas.md` (é a **única** alteração que você faz nesse arquivo).

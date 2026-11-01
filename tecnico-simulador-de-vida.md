@@ -90,6 +90,19 @@ Nenhuma dessas partes inventa fatos. Todas leem os mesmos eventos.
 - **Céu desenhado por código:** gradiente que muda com o dia, a noite e o clima. Não é arte pronta.
 - **Culturas por peças modulares:** telhado, parede, cor e símbolo combinados, para muitas variações com pouca arte.
 
+### Atmosfera feita por código
+
+Boa parte da beleza do jogo não vem dos sprites, mas de efeitos desenhados pelo motor. Eles são código, não arte do Codex:
+- **céu** em degradê com pontilhado (dithering), nuvens em movimento e cores que mudam com a hora e o clima;
+- **reflexo na água** do céu, das pessoas e do fogo, com leve ondulação;
+- **luz do fogo à noite:** brilho ao redor de fogueiras e tochas, que ilumina quem está perto;
+- **neblina** nos planos de fundo de manhã e à noite;
+- **paralaxe** entre os 3 planos quando a vista se move;
+- **partículas:** chuva, faíscas, fumaça, folhas, vagalumes;
+- **clima na tela:** o clarão do raio, o escurecer da tempestade, o calor da seca.
+
+Esses efeitos são feitos com shaders simples e baixo custo, respeitando a meta de leveza.
+
 ### Leveza (meta para rodar o dia todo)
 
 | Medida | Meta |

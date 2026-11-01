@@ -1,0 +1,36 @@
+GIMP Palette
+Name: Simulador de vida — 32 cores
+Columns: 8
+#
+185 221 220	Ceu de dia 1
+130 184 204	Ceu de dia 2
+ 82 140 173	Ceu de dia 3
+ 25  40  63	Ceu de noite 1
+ 40  59  89	Ceu de noite 2
+ 81  73 104	Ceu de noite 3
+235 165 111	Entardecer 1
+199 121 137	Entardecer 2
+ 71  58  53	Terra e pedra 1
+115  83  66	Terra e pedra 2
+164 125  85	Terra e pedra 3
+140 139 128	Terra e pedra 4
+197 187 161	Terra e pedra 5
+ 41  75  66	Vegetacao 1
+ 71 112  82	Vegetacao 2
+127 157  97	Vegetacao 3
+178 170 104	Vegetacao 4
+ 36  77 105	Agua 1
+ 61 130 152	Agua 2
+155 201 198	Agua 3
+195  78  70	Fogo 1
+239 138  69	Fogo 2
+244 207 121	Fogo 3
+ 99  59  53	Pele 1
+161  93  70	Pele 2
+206 149 103	Pele 3
+240 198 154	Pele 4
+223 105 116	Tecidos 1
+101 194 191	Tecidos 2
+169 149 219	Tecidos 3
+ 32  37  45	Neutros 1
+245 233 203	Neutros 2

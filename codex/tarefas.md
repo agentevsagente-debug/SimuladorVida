@@ -2,10 +2,12 @@
 
 *Faça as tarefas na ordem. O protocolo está em `LEIA-ME.md` e as regras visuais em `guia-de-estilo.md`.*
 
+> **Revisão do Claude (01/11):** as entregas T001 a T005 ficam como **rascunho técnico**: os formatos, tamanhos e scripts estão certos, mas o visual ainda não é o do jogo. Elas serão refeitas na direção visual escolhida a partir da T001A. Não as refaça por conta própria: novas tarefas serão criadas depois da escolha.
+
 ---
 
 ## T001 — Paleta
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Criar a paleta de 32 cores seguindo a tabela "Paleta" do guia de estilo.
 
@@ -24,8 +26,51 @@ Criar a paleta de 32 cores seguindo a tabela "Paleta" do guia de estilo.
 
 ---
 
-## T002 — Terreno
+## T001A — Prancha de estilo (3 direções)
 **Estado:** PENDENTE
+
+Esta é a tarefa mais importante da fase de arte. Antes de produzir peças, precisamos **ver como o jogo vai parecer**. Pinte a **mesma cena** em 3 direções visuais diferentes, como se fossem 3 capturas de tela do jogo pronto. O usuário escolhe uma, e todas as tarefas seguintes passam a seguir a direção escolhida.
+
+**A cena (igual nas 3 direções):** 480 × 160 pixels, corte lateral. Um pequeno mundo ao entardecer, com:
+- céu com nuvens e o sol baixo;
+- à esquerda, uma praia e a água com reflexo;
+- no centro, um grupo de coletores (6 a 8 pessoas, incluindo crianças) em volta de uma fogueira, com duas cabanas de galhos;
+- à direita, uma floresta e um morro;
+- três planos de profundidade: montanhas ou colinas ao fundo, o mundo no meio e algumas plantas na frente.
+
+**As 3 direções:**
+- **A, Atmosférica:** inspirada em *Kingdom Two Crowns*. Cores contidas, silhuetas fortes, muita atmosfera (névoa, céu em degradê com pontilhado, reflexo marcante na água, brilho do fogo). Pouco detalhe nas pessoas, muito clima no cenário.
+- **B, Aconchegante:** inspirada no clima do *Terraglass* e de jogos aconchegantes. Cores mais saturadas e quentes, formas arredondadas, mundo alegre e convidativo.
+- **C, Clássica 16 bits:** inspirada nos jogos de 16 bits. Mais detalhe e contorno nos objetos, texturas no terreno, pessoas mais definidas.
+
+Não copie nenhuma imagem desses jogos. Use apenas o espírito visual descrito.
+
+**Liberdade de método nesta tarefa:** para a prancha, você pode pintar pixel a pixel por código ou usar geração de imagem e depois reduzir o resultado para a grade de pixels e para a paleta. O resultado final precisa respeitar as regras técnicas do guia (pixels nítidos, sem semitransparência). Cada direção pode usar a paleta da T001 ou propor ajustes de cor; nesse caso, entregue a paleta usada.
+
+**Entregar em `arte/prancha/`:**
+- `direcao_a.png`, `direcao_b.png`, `direcao_c.png`: a cena em 480 × 160;
+- `direcao_a_4x.png`, `direcao_b_4x.png`, `direcao_c_4x.png`: as mesmas cenas ampliadas 4 vezes, sem suavização;
+- `direcao_a_noite.png`, `direcao_b_noite.png`, `direcao_c_noite.png`: a mesma cena à noite, com a fogueira como fonte de luz;
+- os scripts ou o processo usado, descritos em `arte/prancha/PROCESSO.md`.
+
+**O que aprendemos com as T001 a T005 (revisão do Claude):** tecnicamente estão corretas, mas a cena parece um rascunho de programador, não um jogo. Na prancha, evite:
+- céu em 3 faixas chapadas: use degradê com pontilhado e nuvens com volume;
+- terreno como um bloco marrom liso e degraus quadrados: use perfis orgânicos, camadas de solo, raízes, pedras e grama irregular na borda;
+- falta de profundidade: os 3 planos precisam existir, com o fundo mais claro e menos saturado;
+- noite como simples troca de cores: a fogueira precisa iluminar o entorno e projetar luz quente nas pessoas e no chão;
+- a faixa repetida na base da cena;
+- água sem reflexo.
+
+**Critérios de aceite:**
+- as 3 direções são claramente diferentes entre si;
+- cada imagem parece uma captura de um jogo bonito e acabado, não um rascunho;
+- em 1x, as pessoas são visíveis e a fogueira é o centro da cena;
+- a versão noturna é escura, mas legível.
+
+---
+
+## T002 — Terreno
+**Estado:** ENTREGUE
 
 Blocos de terreno de 8 × 8 pixels.
 
@@ -51,7 +96,7 @@ Blocos de terreno de 8 × 8 pixels.
 ---
 
 ## T003 — Habitantes
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 
@@ -71,7 +116,7 @@ Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 ---
 
 ## T004 — Estágio 1: abrigo e natureza
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 **Entregar em `arte/estagio1/`:**
 - `cabana_galhos.png`: abrigo de galhos e folhas, 16 × 16;
@@ -88,7 +133,7 @@ Pessoas do estágio 1 (coletores, roupas simples de pele ou fibra).
 ---
 
 ## T005 — Cena de teste
-**Estado:** PENDENTE
+**Estado:** ENTREGUE
 
 Montar uma cena com tudo o que foi entregue nas tarefas T001 a T004.
 

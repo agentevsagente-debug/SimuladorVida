@@ -4,7 +4,11 @@
 
 Um pequeno mundo visto **de lado**, como um diorama, dentro de uma moldura na área de trabalho. Em cima fica o céu, onde acontecem a chuva, os raios, os cometas e o ciclo de dia e noite. No meio, o chão com as vilas, as pessoas, as árvores e o morro. Embaixo, um pouco de terra, pedra e água. O tom é natural, terroso e acolhedor, mas o mundo pode ficar sombrio: fome, guerra, ruínas.
 
-Referências de leitura: as **criaturas e vilas do WorldBox** (legibilidade em tamanho pequeno) e o **clima acolhedor do Terraglass**. Não copie nenhuma das duas.
+Referências de leitura: as **criaturas e vilas do WorldBox** (legibilidade em tamanho pequeno), o **clima acolhedor do Terraglass** e a **atmosfera em corte lateral de Kingdom Two Crowns**. Não copie nenhuma delas.
+
+**A direção visual definitiva sai da prancha de estilo (T001A).** Depois que o usuário escolher uma das 3 direções, este guia será atualizado com ela.
+
+**Efeitos do motor:** céu em degradê, reflexo na água, brilho do fogo, neblina, partículas e clima são feitos pelo jogo, por código. Não pinte esses efeitos nas peças avulsas (sprites, blocos). Pinte-os apenas nas cenas de teste e na prancha, para mostrar como o jogo vai ficar.
 
 ## Regras técnicas
 
