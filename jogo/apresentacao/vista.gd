@@ -252,10 +252,25 @@ func objeto_em(p: Vector2) -> Dictionary:
 	if not melhor.is_empty():
 		for pe in sim.pessoas:
 			if pe["id"] == melhor.id:
-				return {"tipo": "pessoa", "pessoa": pe, "prece": _sinais.prece_de(pe["id"])}
+				return {"tipo": "pessoa", "pessoa": pe, "prece": _sinais.prece_de(pe["id"]), "figura": melhor}
 	for z in sim.zonas:
 		if p.x >= z["x_ini"] and p.x < z["x_fim"]:
-			return {"tipo": "lugar", "zona": z}
+			return {"tipo": "lugar", "zona": z, "vila": _vila_em(p.x)}
+	return {}
+
+
+## O povo cuja vila (fogueira ou construção) está a até 24 px de x: {nome, estagio}, ou {}.
+func _vila_em(x: float) -> Dictionary:
+	var perto := 24.0
+	var grupo := -1
+	for o in sim.construcoes:
+		var d := absf(float(o["x"]) - x)
+		if d < perto and int(o.get("grupo", -1)) >= 0:
+			perto = d
+			grupo = int(o["grupo"])
+	for g in sim.grupos:
+		if g["id"] == grupo:
+			return {"nome": g.get("nome", ""), "estagio": int(g.get("estagio", 1))}
 	return {}
 
 

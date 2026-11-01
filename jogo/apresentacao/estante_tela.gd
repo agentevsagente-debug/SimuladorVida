@@ -35,8 +35,8 @@ const ALTURA_LINHA := 11
 const FECHAR := Rect2i(440, 3, 37, 14)
 const ABANDONAR := Rect2i(352, 128, 122, 16)
 const CAIXA_CONFIRMAR := Rect2i(110, 34, 260, 84)
-const SIM := Rect2i(150, 96, 84, 16)
-const NAO := Rect2i(246, 96, 84, 16)
+const NAO := Rect2i(150, 96, 84, 16)   # o padrão, à esquerda
+const SIM := Rect2i(246, 96, 84, 16)   # abandonar, à direita e discreto
 const CAIXA_FIM := Rect2i(100, 30, 280, 74)
 const CAIXA_BOAS_VINDAS := Rect2i(24, 26, 432, 98)
 const BOAS_VINDAS := ["Poderes: escolha um na alça e segure o botão sobre o mundo;",
@@ -175,6 +175,20 @@ static func rotulo(era: int) -> String:
 			n -= par[0]
 	var texto := "ERA " + r
 	return texto if texto.length() <= 7 else "ERA %d" % era
+
+
+## O nome na lombada: com um mundo só na estante, "ERA II"; com vários, o
+## número do mundo (na ordem da estante) e a era, como "M2 EIII" (até 7).
+func _rotulo_do_livro(l: Dictionary) -> String:
+	var mundos := []
+	for o in livros:
+		if not int(o["semente"]) in mundos:
+			mundos.append(int(o["semente"]))
+	if mundos.size() <= 1:
+		return rotulo(int(l["era"]))
+	var era := rotulo(int(l["era"])).substr(4)  # o romano
+	var texto := "M%d E%s" % [mundos.find(int(l["semente"])) + 1, era]
+	return texto if texto.length() <= 7 else "M%d E%d" % [mundos.find(int(l["semente"])) + 1, int(l["era"])]
 
 
 ## A cor da lombada: a mesma para todas as eras de um mundo.
@@ -370,7 +384,7 @@ func _draw() -> void:
 		var y := r.position.y - (2 if i == _sob else 0)
 		draw_texture_rect_region(_lombadas, Rect2(r.position.x, y, 12, 64), Rect2(cor(int(l["semente"])) * 12, 0, 12, 64))
 		# o nome, lido de baixo para cima, centrado na etiqueta (linhas 8 a 55, colunas 2 a 9)
-		var texto := rotulo(int(l["era"]))
+		var texto := _rotulo_do_livro(l)
 		var w := int(escura.get_string_size(texto, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
 		var origem := Vector2(r.position.x + 2, y + 8 + (48 + w) / 2)
 		draw_set_transform(origem, -PI / 2.0)
@@ -386,7 +400,7 @@ func _draw() -> void:
 
 func _desenhar_livro() -> void:
 	draw_texture(_livro, Vector2(LIVRO))
-	var fontes := {true: interface._fontes["dourada"], false: interface._fontes["escura"]}
+	var fontes := {true: interface._fontes["titulo"], false: interface._fontes["escura"]}
 	var escura: Font = fontes[false]
 	for lado in 2:
 		var n := _pagina + lado
@@ -405,18 +419,27 @@ func _desenhar_livro() -> void:
 
 func _desenhar_confirmar() -> void:
 	_caixa_pergaminho(CAIXA_CONFIRMAR)
-	_texto_centrado("Abandonar este mundo?", CAIXA_CONFIRMAR.position.y + 8, "escura")
+	_texto_centrado("Abandonar este mundo?", CAIXA_CONFIRMAR.position.y + 8, "titulo")
 	_texto_centrado("A crônica desta era vai para a", CAIXA_CONFIRMAR.position.y + 24, "escura")
 	_texto_centrado("estante, e começa outro mundo.", CAIXA_CONFIRMAR.position.y + 35, "escura")
 	_texto_centrado("Este povo não volta.", CAIXA_CONFIRMAR.position.y + 46, "escura")
-	_botao_texto(SIM, "Abandonar", _sob_botao == "sim")
-	_botao_texto(NAO, "Voltar", _sob_botao == "nao")
+	# "Voltar" é o padrão (caixa e letra dourada); "Abandonar", à direita, é só a
+	# palavra na tinta do pergaminho, e ganha caixa só com o cursor em cima
+	_botao_texto(NAO, "Voltar", true)
+	if _sob_botao == "sim":
+		_botao_texto(SIM, "Abandonar", false)
+	else:
+		var f: Font = interface._fontes["escura"]
+		var w := int(f.get_string_size("Abandonar", HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
+		draw_string(f, Vector2(SIM.position.x + (SIM.size.x - w) / 2, SIM.position.y + (SIM.size.y - 11) / 2 + int(f.get_ascent(TAM_FONTE))),
+			"Abandonar", HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+		draw_rect(Rect2(SIM.position.x + (SIM.size.x - w) / 2, SIM.position.y + 13, w, 1), Arte.paleta[8])
 
 
 func _desenhar_fim() -> void:
 	_caixa_pergaminho(CAIXA_FIM)
 	var y := CAIXA_FIM.position.y + 8
-	_texto_centrado("Não resta ninguém.", y, "escura")
+	_texto_centrado("Não resta ninguém.", y, "titulo")
 	_texto_centrado("%s terminou: do ano %d ao ano %d." % [_fim.get("titulo", "A era"),
 		_fim.get("ano_ini", 1), _fim.get("ano_fim", 1)], y + 15, "escura")
 	_texto_centrado("O livro dela foi para a estante.", y + 26, "escura")

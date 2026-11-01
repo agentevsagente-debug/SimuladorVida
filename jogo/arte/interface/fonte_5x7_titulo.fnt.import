@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://1pkpkeekm1hi"
+path="res://.godot/imported/fonte_5x7_titulo.fnt-4dfb389ffe5f29dc33b140aee4717efc.fontdata"
+
+[deps]
+
+source_file="res://arte/interface/fonte_5x7_titulo.fnt"
+dest_files=["res://.godot/imported/fonte_5x7_titulo.fnt-4dfb389ffe5f29dc33b140aee4717efc.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

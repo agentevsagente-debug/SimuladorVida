@@ -2,6 +2,22 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 3c (interface)
+
+| # | O que foi feito |
+|---|---|
+| **A2** | A `fonte_5x7_titulo` (vinho) entra em todo título sobre o pergaminho: o título do livro aberto, "Não resta ninguém", "Abandonar este mundo?" e o título novo da crônica. |
+| **B1** | Sobre o acampamento ou a vila (até 24 px de uma fogueira ou construção), a dica diz "O acampamento de X" (estágio 1) ou "A vila de X", com a zona embaixo, e fica acima do cursor. |
+| **B2** | A dica ganhou o bico (`dica_ponteiro`) na borda de baixo. Na dica de pessoa, ele aponta para a cabeça de quem ela descreve. |
+| **B3** | Ao seguir: "Seguindo Loa, 25 anos" na alça, e o bico fica fixo sobre a cabeça de quem é seguido enquanto a câmera acompanha. |
+| **B4** | A crônica tem título ("Crônica: A Primeira Era") e setinhas de 5 × 3 na tinta escura quando há mais texto acima ou abaixo. Continua abrindo no fim, onde está o mais recente. |
+| **B5** | Com mais de um mundo na estante, a lombada diz o mundo e a era ("M2 EIII"); com um só, "ERA II". |
+| **B6** | "Voltar" é o padrão, à esquerda, em caixa e letra dourada. "Abandonar" fica à direita, só sublinhado, e ganha caixa quando o cursor passa por cima. |
+| **B7** | Sem ninguém vivo, o botão de seguir a linhagem sai da alça. |
+| **B8** | Toda mensagem da alça começa com maiúscula, mesmo quando o texto vem do núcleo em minúscula. |
+
+Capturas: `capturas/auditoria3c-interface.png` (crônica, livro, pergunta de abandono, estante com vários mundos, mundo vazio, dica da vila e seguir). O verificar.ps1 não rodou desta vez: a captura da área de trabalho falha com "Identificador inválido", o que indica tela bloqueada ou desligada. Fidelidade e céu sem grade não mudam com estes itens.
+
 ## Auditoria 3 (cotidiano) e 3b (estações)
 
 | # | O que foi feito |

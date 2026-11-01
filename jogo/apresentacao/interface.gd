@@ -72,6 +72,9 @@ var _cursor := Vector2(-100, -100)
 var _dica: NinePatchRect
 var _dica_textos: Array[Label] = []
 var _dica_icone: TextureRect
+var _dica_bico: TextureRect   # o bico embaixo da dica, apontando para quem ela descreve
+var _cronica_acima: TextureRect
+var _cronica_abaixo: TextureRect
 var _cronica: NinePatchRect
 var _cronica_texto: Label
 var _cronica_titulo: Label
@@ -91,7 +94,7 @@ func criar(p_vista: Node2D) -> void:
 	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante"]:
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
 		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
-	for cor in ["clara", "escura", "dourada"]:
+	for cor in ["clara", "escura", "dourada", "titulo"]:
 		_fontes[cor] = load("res://arte/interface/fonte_5x7_%s.fnt" % cor)
 	_criar_dica()
 	_criar_cronica()
@@ -127,7 +130,8 @@ func _montar_botoes() -> void:
 		lista.append({"id": "ritmo:" + r, "icone": r, "selecionado": r == ritmo})
 	lista.append({"id": "cronica", "icone": "cronica", "selecionado": _cronica.visible})
 	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo not in ["fim", "boas_vindas"]})
-	lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
+	if not _mundo_vazio():  # sem ninguém vivo, não há linhagem para seguir
+		lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
 	var antes := botoes.size()
 	botoes = []
@@ -242,8 +246,9 @@ func _texto_linhagem() -> String:
 	var m = vista.sim.mundo
 	if m.acompanhada < 0:
 		return "A linhagem acabou."
-	var nome: String = m.pessoa(m.acompanhada).nome
-	return ("Seguindo " if vista.seguindo else "Acompanhando ") + nome
+	var pessoa = m.pessoa(m.acompanhada)
+	var nome: String = pessoa.nome
+	return ("Seguindo %s, %d anos" if vista.seguindo else "Acompanhando %s, %d anos") % [nome, int(pessoa.idade(m.ano()))]
 
 
 # --- entrada (a moldura repassa; devolve true se usou o evento) --------------
@@ -419,9 +424,19 @@ func _usar_poder() -> void:
 		_avisar(String(r.get("motivo", "Não deu certo")))
 
 
+## Onde está, na tela, a cabeça de quem a câmera segue; longe da tela se ninguém.
+func _cabeca_seguida() -> Vector2:
+	if not vista.seguindo or vista.sim == null:
+		return Vector2(-100, -100)
+	for f in vista.figuras:
+		if f.id == vista.sim.mundo.acompanhada:
+			return (vista.para_tela(Vector2(f.x + f.largura / 2.0, f.base - 12)) + Vector2(0, ALTURA_ALCA)).round()
+	return Vector2(-100, -100)
+
+
 func avancar(delta: float) -> void:
 	_relogio += delta
-	var assinatura := [_texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
+	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio()]
 	if assinatura != _ultimo_desenho:
 		if _ultimo_desenho.size() <= 4 or (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]
@@ -448,7 +463,7 @@ func _data_do_relogio() -> String:
 
 
 func _avisar(texto: String) -> void:
-	_mensagem = texto
+	_mensagem = texto.left(1).to_upper() + texto.substr(1)  # o núcleo às vezes manda em minúscula
 	_mensagem_ate = _relogio + 2.5
 	queue_redraw()
 
@@ -476,6 +491,10 @@ func _criar_dica() -> void:
 	_dica_icone = TextureRect.new()
 	_dica_icone.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_dica.add_child(_dica_icone)
+	_dica_bico = TextureRect.new()
+	_dica_bico.texture = Arte.textura("interface/dica_ponteiro.png")
+	_dica_bico.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_dica.add_child(_dica_bico)
 
 
 func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
@@ -484,8 +503,12 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var o: Dictionary = vista.objeto_em(p)
 	var linhas: Array = []
 	var icone := -1
+	var alvo := tela
 	match o.get("tipo", ""):
 		"pessoa":
+			var fig: Dictionary = o.get("figura", {})
+			if not fig.is_empty():  # o bico aponta para a cabeça de quem a dica descreve
+				alvo = vista.para_tela(Vector2(fig.x + fig.largura / 2.0, fig.base - 12)) + Vector2(0, ALTURA_ALCA)
 			var pe: Dictionary = o.pessoa
 			var titulo := "%s, %d anos" % [pe["nome"], pe["idade"]]
 			linhas.append(titulo)
@@ -508,7 +531,13 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			icone = NECESSIDADES.find(pr["necessidade"])
 		"lugar":
 			var z: Dictionary = o.zona
-			linhas.append(NOME_ZONA.get(z["chave"], z["nome"]))
+			var vila: Dictionary = o.get("vila", {})
+			if not vila.is_empty():  # sobre o acampamento ou a vila, o nome dela vem antes da zona
+				linhas.append(("O acampamento" if vila["estagio"] < 2 else "A vila") + " de " + String(vila["nome"]))
+				linhas.append(NOME_ZONA.get(z["chave"], z["nome"]).to_lower())
+			else:
+				linhas.append(NOME_ZONA.get(z["chave"], z["nome"]))
+			alvo = tela - Vector2(0, 4)
 			var nomes: Array = []
 			for g in z["nomes"]:
 				nomes.append(z["nomes"][g])
@@ -523,7 +552,7 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				estado.append("farta")
 			if not estado.is_empty():
 				linhas.append(", ".join(estado))
-	_mostrar_dica(linhas, icone, tela)
+	_mostrar_dica(linhas, icone, alvo)
 
 
 func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
@@ -582,11 +611,18 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true) -> 
 	_dica.size = tamanho_caixa
 	var pos := perto + Vector2(-tamanho_caixa.x / 2.0, -tamanho_caixa.y - 6) if acima else perto
 	pos.x = clampf(pos.x, 1, 480 - tamanho_caixa.x - 1)
+	var em_cima := acima
 	if pos.y < 19:
 		pos.y = perto.y + 10
+		em_cima = false
 	pos.y = clampf(pos.y, 19, 178 - tamanho_caixa.y - 1)
 	_dica.position = pos.round()
 	_dica.visible = true
+	# o bico (6 × 3) sai da borda de baixo e aponta para o alvo, logo abaixo
+	_dica_bico.visible = em_cima
+	if em_cima:
+		_dica_bico.position = Vector2(clampf(roundf(perto.x - 3.0 - _dica.position.x), 3.0, tamanho_caixa.x - 9.0),
+			tamanho_caixa.y - 1.0)
 
 
 # --- crônica -----------------------------------------------------------------
@@ -603,9 +639,21 @@ func _criar_cronica() -> void:
 	_cronica.visible = false
 	_cronica.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(_cronica)
+	_cronica_titulo = Label.new()
+	_cronica_titulo.add_theme_font_override("font", _fontes["titulo"])
+	_cronica_titulo.add_theme_font_size_override("font_size", TAM_FONTE)
+	_cronica_titulo.position = Vector2(10, 6)
+	_cronica_titulo.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_cronica.add_child(_cronica_titulo)
+	_cronica_acima = _seta(true)
+	_cronica_acima.position = Vector2(416, 8)
+	_cronica.add_child(_cronica_acima)
+	_cronica_abaixo = _seta(false)
+	_cronica_abaixo.position = Vector2(416, 140)
+	_cronica.add_child(_cronica_abaixo)
 	var recorte := Control.new()
 	recorte.clip_contents = true
-	recorte.position = Vector2(10, 8)
+	recorte.position = Vector2(10, 19)
 	recorte.size = Vector2(412, 132)  # ajustado a linhas inteiras em _rolar()
 	recorte.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_cronica.add_child(recorte)
@@ -617,6 +665,19 @@ func _criar_cronica() -> void:
 	_cronica_texto.size = Vector2(412, 0)
 	_cronica_texto.custom_minimum_size = Vector2(412, 0)
 	recorte.add_child(_cronica_texto)
+
+
+## Uma setinha de 5 × 3 na tinta escura: há mais texto acima (ou abaixo).
+func _seta(para_cima: bool) -> TextureRect:
+	var img := Image.create(5, 3, false, Image.FORMAT_RGBA8)
+	for y in 3:
+		var meia := y if para_cima else 2 - y
+		for x in range(2 - meia, 3 + meia):
+			img.set_pixel(x, y, Arte.paleta[8])
+	var t := TextureRect.new()
+	t.texture = ImageTexture.create_from_image(img)
+	t.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return t
 
 
 func alternar_cronica() -> void:
@@ -635,6 +696,7 @@ func mostrar_cronica(antes: String) -> void:
 		texto = antes + "\n\n"
 	var t: Dictionary = vista.sim.tempo
 	texto += _sem_markdown(m.cronica()) + "\n\nAno %d, dia %d: o ano ainda está em curso." % [t["ano"], t["dia"]]
+	_cronica_titulo.text = "Crônica: " + String(m.nome_da_era())
 	_cronica_texto.text = texto
 	_cronica.visible = true
 	_cronica_texto.size.y = 0
@@ -647,11 +709,13 @@ func mostrar_cronica(antes: String) -> void:
 
 func _rolar(d: int) -> void:
 	var altura := _cronica_texto.get_line_height()
-	var cabem := int(136 / altura)
+	var cabem := int(124 / altura)
 	_cronica_texto.get_parent().size.y = cabem * altura
 	var linhas := _cronica_texto.get_line_count()
 	_cronica_rolagem = clampi(_cronica_rolagem + d, 0, maxi(0, linhas - cabem))
 	_cronica_texto.position.y = -_cronica_rolagem * altura
+	_cronica_acima.visible = _cronica_rolagem > 0
+	_cronica_abaixo.visible = _cronica_rolagem < linhas - cabem
 
 
 static func _sem_markdown(md: String) -> String:
@@ -748,6 +812,9 @@ func _draw() -> void:
 		for i in 20:
 			var cor: Color = Arte.paleta[22 if i < n else 3]
 			draw_rect(Rect2(r.position.x + 12 + i, r.position.y + 5, 1, 2), cor)
+	var seguido := _cabeca_seguida()
+	if seguido.x > -50:  # o bico sobre quem a câmera segue
+		draw_texture(Arte.textura("interface/dica_ponteiro.png"), seguido + Vector2(-3, -5))
 	var hora := _texto_relogio()
 	if hora != "":
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), Rect2(RELOGIO), 4)
