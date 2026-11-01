@@ -13,7 +13,8 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 
 | Atlas | Tamanho | Peças | Memória de vídeo (L × A × 4) |
 |---|---|---|---|
-| `comum` | 512x512 | 162 | 1024 KB |
+| `comum` | 512x512 | 172 | 1024 KB |
+| `pessoas_inverno` | 256x128 | 42 | 128 KB |
 | `estacao_primavera` | 128x128 | 60 | 64 KB |
 | `estacao_verao` | 128x128 | 60 | 64 KB |
 | `estacao_outono` | 128x128 | 60 | 64 KB |
@@ -31,10 +32,11 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 | `estagio6` | 256x256 | 43 | 256 KB |
 | `estagio6_inverno` | 256x256 | 43 | 256 KB |
 
-**Total, com todos carregados: 3,06 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,3 MB.
+**Total, com todos carregados: 3,19 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 1,2 a 1,3 MB.
 
 **O que vai em cada atlas:**
 - **`comum`:** habitantes, ações e vida, interface (ícones 12 e 8, caixas, botões, alça e as 3 fontes), sinais, efeitos (fase 1, fase 2 e neve), criaturas, objetos, estante e as marcas da memória de qualquer estágio (túmulo, pedra erguida, terra e árvore queimadas), com o mato que cresce sobre elas. O ícone do jogo fica fora, porque a bandeja usa o `.ico`.
+- **`pessoas_inverno`:** as folhas de `habitantes/` e `acoes/` com a roupa de frio. No inverno, as regiões com o mesmo nome valem no lugar das do `comum`.
 - **`estacao_<primavera|verao|outono|inverno>`:** todos os blocos de terreno e a vegetação do estágio 1, na versão da estação (a de verão quando a estação não muda a peça), mais a muda, a árvore jovem, o pinheiro jovem e a fogueira antiga. O de inverno tem também o `gelo_superficie`.
 - **`estagio<N>` e `estagio<N>_inverno`:** as construções do estágio, as ruínas com os 3 graus de mato e os habitantes do estágio. O `_inverno` traz as mesmas peças com neve, e é ele que o motor carrega no inverno.
   - O estágio 1 tem a cabana, as fogueiras e a cabana abandonada.

@@ -1,4 +1,5 @@
-comum: 512x512, 162 peças, 1024 KB
+comum: 512x512, 172 peças, 1024 KB
+pessoas_inverno: 256x128, 42 peças, 128 KB
 estacao_primavera: 128x128, 60 peças, 64 KB
 estacao_verao: 128x128, 60 peças, 64 KB
 estacao_outono: 128x128, 60 peças, 64 KB
@@ -15,4 +16,4 @@ estagio5: 256x128, 26 peças, 128 KB
 estagio5_inverno: 256x128, 26 peças, 128 KB
 estagio6: 256x256, 43 peças, 256 KB
 estagio6_inverno: 256x256, 43 peças, 256 KB
-total: 3.06 MB
+total: 3.19 MB

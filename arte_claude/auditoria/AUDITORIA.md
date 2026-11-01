@@ -117,6 +117,18 @@ Sem recorte: não há o que capturar.
 - **O que deveria ser:** só o lado voltado para o fogo mais quente, como nas pessoas, e o resto no tom médio.
 - **Quem corrige:** **B** (aplicar ao cenário a regra de lado que já vale para as pessoas). Se preferirem, **C** suaviza a tabela `fogo_perto` (a cor 10 iria para 9 em vez de 21).
 
+## Correções já feitas pela arte (sessão C)
+
+Os 5 defeitos que eram da arte foram corrigidos em `arte_claude/pecas/`. Os recortes "depois", em 4x, ficam em `recortes/`. **Para aparecerem no jogo, a sessão B precisa copiar de novo a arte para `jogo/arte/`**, e os atlas já foram regenerados.
+
+| # | O que mudou | Recorte |
+|---|---|---|
+| 5 | A `efeitos/fumaca_6q` sobe só uns 6 px. Ela se desfaz pelas bordas em pedaços irregulares (sorteio fixo por pixel, sem pontilhado em grade) e some no quadro 6. Ainda falta a sessão B limitar a subida e a duração. | `05_depois_fumaca.png` |
+| 7 | A mata distante do inverno tem separações entre copas de 5 a 11 px, sem padrão, e textura irregular. Não há mais listras. | `07_depois_mata_inverno.png` |
+| 8 | À noite, a neve das montanhas e da mata ficou em cinza-azulado (11) e violeta (5), abaixo da lua e da fogueira. | `08_depois_montanhas_noite.png` |
+| 9 | Ícones dos 5 poderes da fase 2, em 12 × 12 e 8 × 8: `seca`, `diluvio`, `terremoto`, `pressagio` e `cura`, em `interface/icones_12/` e `icones_8/`. Ainda falta a sessão B pôr os poderes no seletor. | `09_depois_icones_novos.png` |
+| 11 | Roupa de inverno para todas as folhas de pessoas: mangas de lã, polainas e gola de pele, em `estacoes/inverno/<pasta>/`. Ela também vai no atlas novo `pessoas_inverno` e nos atlas `estagioN_inverno`. Ainda falta a sessão B ler a versão da estação também para as pessoas. | `11_depois_roupa_inverno.png` |
+
 ## O que está bom
 
 - **Cena de verão, de dia:** é praticamente a cena-alvo. Céu, montanhas, mata, terreno em blocos, vegetação, cabanas e fogueira estão no lugar.
@@ -132,4 +144,4 @@ Sem recorte: não há o que capturar.
 |---|---|
 | B (apresentação) | 1, 2, 3, 4, 6, 9, 10, 12, 13, mais a parte de motor do 5 e do 11 |
 | A (simulação) | apoio no 1 (dados das construções), 2 e 3 (posições), 4 |
-| C (arte, esta sessão) | 5 (fumaça), 7 (mata no inverno), 8 (montanhas à noite), 9 (ícones dos 5 poderes), 11 (roupa de inverno) |
+| C (arte, esta sessão) | 5, 7, 8, 9 e 11: **corrigidos** (veja a seção acima) |

@@ -237,18 +237,30 @@ def brasas():
 
 
 def fumaca():
+    """Baforada de fumaça que sobe pouco, cresce e se desfaz pelas bordas, de forma
+    irregular (sorteio fixo por pixel, não pontilhado em grade). Some até o quadro 6."""
+    rng = random.Random(77)
+    ruido = [[rng.random() for _ in range(16)] for _ in range(16)]
+    bolhas = [(0.0, 0.0, 1.0), (-1.6, 0.8, 0.75), (1.5, 0.6, 0.7)]
     quadros = []
     for k in range(6):
         q = novo(16, 16)
-        r = 2 + k * 0.9
-        cx, cy = 8 + k * 0.4, 13 - k * 1.7
-        dens = 1.0 - k / 6
+        r = 2.2 + k * 0.7
+        cx, cy = 8 + k * 0.3, 12.5 - k * 1.1
         for y in range(16):
             for x in range(16):
-                d = math.hypot(x - cx, (y - cy) * 1.1)
-                if d <= r and pont(x, y, dens):
-                    luz = (x - cx) + (y - cy) < -r * 0.4
-                    put(q, x, y, 12 if luz else 11)
+                melhor = None
+                for bx, by, br in bolhas:
+                    d = math.hypot(x - (cx + bx * r * 0.6), (y - (cy + by * r * 0.5)) * 1.15) / (r * br)
+                    melhor = d if melhor is None else min(melhor, d)
+                if melhor > 1:
+                    continue
+                # erosão: com o tempo, a borda some primeiro, em pedaços irregulares
+                limite = 1.0 - k * 0.12
+                if melhor > limite or ruido[y][x] < k * 0.11 * (0.3 + melhor):
+                    continue
+                luz = (x - cx) + (y - cy) < -r * 0.3
+                put(q, x, y, 12 if luz else 11)
         quadros.append(q)
     return quadros
 

@@ -141,6 +141,13 @@ def principal():
     for cor, texto in fontes_no_atlas(reg):
         (AQUI / f"fonte_5x7_{cor}.fnt").write_text(texto.replace("{W}", str(W)).replace("{H}", str(H)),
                                                    encoding="utf-8")
+    # ---- pessoas de inverno: as folhas de habitantes com a roupa de frio (troca o comum no inverno)
+    inverno = []
+    for pasta in ("habitantes", "acoes"):
+        for f in sorted((PECAS / "estacoes" / "inverno" / pasta).glob("*.png")):
+            inverno.append((f"{pasta}/{f.stem}", f))
+    W, H, reg = gerar_atlas("pessoas_inverno", inverno)
+    resumo["pessoas_inverno"] = (W, H, len(reg))
     # ---- estações: terreno e vegetação
     for est in ("primavera", "verao", "outono", "inverno"):
         itens = sazonal("terreno", est) + sazonal("estagio1", est, VEGETACAO_E1)
