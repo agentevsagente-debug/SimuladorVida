@@ -57,9 +57,10 @@ const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "p
 const ZOOM_SEGUIR := 2
 ## Casa de cada estágio, para as janelas acesas (`_luz`) e as chaminés (LEIA-ME, seção 19).
 const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4/casa_enxaimel",
-	5: "estagio4/casa_enxaimel", 6: "estagio6/casa_tijolo"}
+	5: "estagio5/casa_caiada", 6: "estagio6/casa_tijolo"}
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
+const VAO_ENTRE_POVOS := 10.0
 
 var sim: Simulacao
 var modo_discreto := false
@@ -122,6 +123,7 @@ var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela
 var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
 var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
 var chamines: Array = []     # pontos de onde sobe a fumaça das lareiras no inverno
+var beira_visivel := 0         # a primeira coluna depois da água desenhada do lago
 var telhados: Array = []     # pontos no alto das casas onde os pássaros pousam: Vector2(x, linha de cima)
 var _chamines_json := {}
 var _camera_aplicada := [-1, Vector2(-1, -1)]
@@ -480,6 +482,9 @@ func _montar_fixo() -> void:
 	if not _modo_layout:  # depois do terreno, que diz onde é água
 		_encaixar_lotes(obras)
 	var agua_mascara := _mascara_agua(tag)
+	beira_visivel = 0  # onde a água desenhada acaba, na linha logo abaixo da superfície
+	while beira_visivel < LARGURA and roundi(tag.get_pixel(beira_visivel, Terreno.NIVEL_AGUA + 1).r * 255.0) == Arte.AGUA:
+		beira_visivel += 1
 
 	var frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var tag_frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_R8)
@@ -685,7 +690,9 @@ func _encaixar_lotes(obras: Array) -> void:
 	var passos := []
 	var total := 0.0
 	for i in n - 1:
-		passos.append((w[i] + w[i + 1]) / 2.0 + LOTE_FOLGA)
+		# entre as vilas de povos diferentes, um vão, para cada uma ler como um lugar (auditoria 7, C1)
+		var vao := VAO_ENTRE_POVOS if int(fila[i].get("grupo", -1)) != int(fila[i + 1].get("grupo", -1)) else 0.0
+		passos.append((w[i] + w[i + 1]) / 2.0 + LOTE_FOLGA + vao)
 		total += passos[i]
 	var aperto := 1.0 if total <= fim - ini else (fim - ini) / total
 	var desloc := [0.0]
@@ -817,7 +824,8 @@ func poleiro_coruja(perto_de := -1.0) -> Vector2:
 
 ## O x mais perto de x, andando para `lado`, onde o chão está aberto (sem
 ## arbusto, capim ou pedra atrás), para a caça caída não sumir no mato.
-func chao_aberto(x: float, lado: float) -> float:
+## Com `na_agua`, vale também a água rasa (quem pesca ou se banha).
+func chao_aberto(x: float, lado: float, na_agua := false) -> float:
 	for passo in 16:
 		var cx := x + lado * passo * 2.0
 		var livre := true
@@ -825,7 +833,7 @@ func chao_aberto(x: float, lado: float) -> float:
 			if cx + 6.0 > b[0] and cx - 6.0 < b[1]:
 				livre = false
 				break
-		if livre and not _na_agua(roundi(cx)):
+		if livre and (na_agua or not _na_agua(roundi(cx))):
 			return cx
 	return x
 

@@ -2,6 +2,23 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 6 (D4 e as cenas da tarde) e auditoria 7 (estágios)
+
+| # | O que foi feito |
+|---|---|
+| **D4** | À noite, a dica sobre uma cabana mostra quem dorme ali (em dourado; com mais de 5, os 4 primeiros e "e mais N") e o sonho de um deles na linha lilás, com o balãozinho e sem aspas ("Losura, sonhando com Totoim"). Quem dorme fora de casa também mostra o `sonho` como narração. Captura: `capturas/dica-da-cabana.png`. |
+| **Pesca** | Na água rasa, num ponto sem mato na frente. Espera curvado (`pescar_espreitar_forte_2q`, cada quadro por 2 s), com um peixe pulando à frente a cada 9 s. O golpe mira, arpoa e, no certo, ergue o peixe se debatendo. Volta ao fogo com o peixe na lança (`carregar_peixe_forte_4q`). |
+| **Lavagem** | Os adultos lavam ajoelhados na beira (`lavar_margem_forte_4q`), a 10 px um do outro, com o pano sobre a água. As crianças se banham na água rasa (`crianca_banho_4q`), duas a duas, frente a frente. A beira é onde a água desenhada acaba (`vista.beira_visivel`), não a coluna de terreno. |
+| **Coleta** | A descida em fila usa o cesto na cabeça (forte). No fogo, quem despeja agacha com o cesto cheio à frente. Não vi a coleta na tela, porque nenhum dia da semente 7 até o 60 teve coleta. |
+| **Caçada** | Conferida na posição nova (dia 13): o porco além da última cabana, a fila na espreita e a volta pela vila. GIF: `capturas/tarde-cacada-1x.gif`, das 13h às 18h, com um quadro a cada 2 s, tocando 8 vezes mais rápido. |
+| **A1** | As 9 folhas de sempre (andar, parado, rezar, colher, sentado, criança, idoso) e as 5 da pesca e da lavagem entram em `COM_ROUPA_DO_ESTAGIO`. |
+| **A2** | A casa caiada do estágio 5 entra em `CASAS` (vista), `PECAS`, `CAMADAS_CULTURA` e `RUINAS` (obras). |
+| **V1** | No máximo 45 pessoas acordadas na tela. Com mais gente, o excesso passa a hora em casa, escolhido a cada hora, e nunca quem está numa cena ou é seguido. Na frente da vila, até 3 parados por casa (no mínimo 10). Dos ociosos que sobram, metade vai para a beira do lago, o morro ou uma roça, e a outra metade fica em casa. |
+| **C1** | 10 px a mais entre construções de povos diferentes, no encaixe dos lotes. |
+| **E4** | A baforada nasce dentro das chamas, sobe só 3 a 5 px, dura 2,2 s e sai a cada 2,5 a 4 s. Ela some rente ao fogo, sem ficar no céu. |
+
+Captura: `capturas/auditoria7-estagios.png`, com a semente 3 nos anos 250 e 500 e a semente 7 nos anos 122 e 400 (às 10h e às 19h).
+
 ## Auditoria 6 (B)
 
 | # | O que foi feito |
