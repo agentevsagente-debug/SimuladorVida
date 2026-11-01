@@ -7,7 +7,8 @@ extends RefCounted
 ##   ano 20, dia 1: sonho no lago
 ## Poderes: chuva, raio, fartura, fogo, erguer (erguer terra), sonho.
 ## Zonas: praia, lago, floresta, morro. "líder" mira o líder do grupo da zona.
-## O dia vai de 1 a 40 e a hora de 0 a 23 (padrão: 12).
+## O dia vai de 1 a 40 e a hora de 0 a 23 (padrão: 12). "fraca" ou "forte" mudam a intensidade
+## (0,3 ou 0,95; padrão 0,8). Repetir o mesmo poder na mesma zona em 3 dias vira imposição.
 
 const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho"]
 const ZONAS := ["praia", "lago", "floresta", "morro"]
@@ -59,6 +60,7 @@ static func ler_texto(texto: String) -> Array:
 			"poder": poder,
 			"zona": zona,
 			"alvo": "lider" if acao.find("lider") >= 0 else "",
+			"intensidade": 0.3 if acao.find("frac") >= 0 else (0.95 if acao.find("forte") >= 0 else 0.8),
 			"texto": linha.strip_edges(),
 			"ordem": comandos.size(),
 		})

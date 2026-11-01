@@ -13,28 +13,36 @@ const TRACO_RAIZ := {"ambicioso": "ambicios", "pacifico": "pacífic", "rancoroso
 	"engenhoso": "engenhos", "corajoso": "corajos", "medroso": "medros"}
 
 ## Tipos que só servem de contexto: nunca viram frase própria.
-const SILENCIOSOS := ["inicio", "rixa", "roubo", "casamento", "seca_inicio", "fome_inicio",
+const SILENCIOSOS := ["inicio", "linhagem", "rixa", "roubo", "casamento", "seca_inicio", "fome_inicio",
 	"doenca_inicio", "fartura_natural"]
 
 ## Tipos que sempre entram na crônica, mesmo num ano cheio: os atos do deus e
 ## o que muda a lista de povos (sem eles, a crônica citaria povos que não apresentou).
 const OBRIGATORIOS := ["chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "terra_erguida",
-	"sonho", "separacao", "conquista", "fusao", "extincao_grupo", "crenca", "fim_do_mundo"]
+	"sonho", "separacao", "conquista", "fusao", "extincao_grupo", "crenca", "fim_do_mundo", "os_ultimos"]
 
 ## Tipos que contam uma consequência: não ganham "No verão," na frente.
 const SEM_ESTACAO := ["seca_fim", "fome_fim", "doenca_fim", "costume", "costume_esquecido",
 	"lugar_nomeado", "nova_crenca", "deus_renomeado", "prece_atendida", "fusao", "extincao_grupo",
 	"inverno_rigoroso"]
 
-var m   # o mundo (nucleo/mundo.gd)
+## O mundo (nucleo/mundo.gd). Guardado como referência fraca, porque o mundo
+## também guarda o cronista e as duas referências fortes nunca seriam liberadas.
+var m:
+	get:
+		return _wm.get_ref()
+var _wm: WeakRef
 var rt := RandomNumberGenerator.new()
 var _narrados: Dictionary = {}       # tipo -> [anos em que entrou na crônica]
 var _primeiros: Dictionary = {}      # "tipo" e "tipo@grupo" já vistos
 var _usados: Dictionary = {}         # ids de eventos já contados em outra frase
+var anos_escritos: Dictionary = {}   # ano -> parágrafo ("" se o ano foi quieto)
+var ultimo_ano_escrito: int = 0
+var _cursor: int = 0                 # próximo evento ainda não lido
 
 
 func _init(mundo) -> void:
-	m = mundo
+	_wm = weakref(mundo)
 
 
 # ---------------------------------------------------------------- termos
@@ -119,25 +127,46 @@ func _evento(id: int):
 
 # ---------------------------------------------------------------- crônica
 
-func escrever(titulo: String, subtitulo: String) -> String:
+## Escreve os anos completos que faltam, até o ano a_final. Um ano escrito não
+## muda mais: a crônica cresce ano a ano, como um livro.
+func processar_ate(a_final: int) -> void:
+	while ultimo_ano_escrito < a_final:
+		var a := ultimo_ano_escrito + 1
+		var evs: Array = []
+		while _cursor < m.eventos.size() and m.eventos[_cursor].ano <= a:
+			if m.eventos[_cursor].ano == a:
+				evs.append(m.eventos[_cursor])
+			_cursor += 1
+		anos_escritos[a] = _ano(a, evs)
+		ultimo_ano_escrito = a
+
+
+## Texto de um ano já escrito, com título; vazio se o ano foi quieto ou ainda não foi escrito.
+func texto_do_ano(a: int) -> String:
+	var par: String = anos_escritos.get(a, "")
+	if par.is_empty():
+		return ""
+	return "### Ano %d
+
+%s" % [a, par]
+
+
+## Junta os anos de ano_ini a ano_fim num texto só, resumindo os anos quietos.
+func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String = "",
+		com_prologo: bool = true, com_epilogo: bool = true) -> String:
 	var linhas: PackedStringArray = []
-	linhas.append("# " + titulo)
-	linhas.append("")
-	linhas.append("*" + subtitulo + "*")
-	linhas.append("")
-	linhas.append(_prologo())
-	linhas.append("")
-	var por_ano: Dictionary = {}
-	var ultimo_ano := 1
-	for e in m.eventos:
-		if not por_ano.has(e.ano):
-			por_ano[e.ano] = []
-		por_ano[e.ano].append(e)
-		ultimo_ano = maxi(ultimo_ano, e.ano)
-	var ano_final: int = m.ano() - 1 if m.dia_do_ano() == 0 else m.ano()
+	if not titulo.is_empty():
+		linhas.append("# " + titulo)
+		linhas.append("")
+	if not subtitulo.is_empty():
+		linhas.append("*" + subtitulo + "*")
+		linhas.append("")
+	if com_prologo:
+		linhas.append(_prologo())
+		linhas.append("")
 	var quietos: Array = []
-	for a in range(1, ano_final + 1):
-		var paragrafo := _ano(a, por_ano.get(a, []))
+	for a in range(maxi(1, ano_ini), mini(ano_fim, ultimo_ano_escrito) + 1):
+		var paragrafo: String = anos_escritos.get(a, "")
 		if paragrafo.is_empty():
 			quietos.append(a)
 		else:
@@ -154,8 +183,16 @@ func escrever(titulo: String, subtitulo: String) -> String:
 	if not quietos.is_empty():
 		linhas.append(_anos_quietos(quietos))
 		linhas.append("")
-	linhas.append(_epilogo())
-	return "\n".join(linhas)
+	if com_epilogo:
+		linhas.append(_epilogo())
+	return "
+".join(linhas)
+
+
+func escrever(titulo: String, subtitulo: String) -> String:
+	var ano_final: int = m.ano() - 1 if m.dia_do_ano() == 0 else m.ano()
+	processar_ate(ano_final)
+	return montar(1, ano_final, titulo, subtitulo)
 
 
 func _fim_no_ano(a: int) -> bool:
@@ -601,6 +638,11 @@ func _texto(e) -> String:
 			return ""
 		"chuva_divina", "raio_divino", "fartura_divina", "fogo_divino", "terra_erguida", "sonho":
 			return _divino(e, v)
+		"os_ultimos":
+			var n: int = e.dados["restam"]
+			v["n"] = G.termo(G.extenso(n, "f"), "f", n)
+			return _frase(["{n#Restava|Restavam} só {n} {n#pessoa|pessoas} no mundo inteiro.",
+				"O mundo encolheu até caber em volta de uma fogueira: {n#restava|restavam} {n} {n#pessoa|pessoas}."], v)
 		"fim_do_mundo":
 			return _frase(["Não restou ninguém. A Primeira Era terminou no ano %d, e o mundo ficou vazio, com o vento passando pelas cabanas." % e.ano], v)
 	return ""
@@ -941,6 +983,12 @@ const TEXTOS_PRECE := {
 	"frio": ["{deus}, que o inverno acabe.", "{deus}, manda o sol de volta."],
 	"guerra": ["{deus}, protege-nos {de:inimigo}.", "{deus}, que {o:inimigo} não volte."],
 }
+
+
+## Texto de uma prece, para a apresentação mostrar no sinal. Sempre o mesmo para o mesmo evento.
+func texto_prece(e) -> String:
+	rt.seed = m.semente * 100003 + e.id
+	return _texto_prece(e, {})
 
 
 func _texto_prece(e, v: Dictionary) -> String:

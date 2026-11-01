@@ -8,6 +8,8 @@ const Grupo = preload("grupo.gd")
 const Zona = preload("zona.gd")
 const Evento = preload("evento.gd")
 const Nomes = preload("nomes.gd")
+const Cotidiano = preload("cotidiano.gd")
+const Cronista = preload("cronista.gd")
 
 const HORAS_DIA := 24
 const DIAS_ANO := 40
@@ -51,7 +53,11 @@ var seca_fim_dia: int = -1
 var seca_evento: int = -1
 var tempestade: Dictionary = {}  # {"zona", "horas", "evento", "mortos", "abrigos"}
 var ultimo_milagre: Dictionary = {}  # id de grupo -> dia absoluto do último bem recebido
-var linhagem: Array = []         # ids da linhagem acompanhada (descendentes da matriarca)
+var linhagem: Array = []         # ids da linhagem dos primeiros (descendentes da matriarca)
+var acompanhada: int = -1        # pessoa que o jogador acompanha
+var _usos_recentes: Array = []   # poderes usados nos últimos dias: {"poder", "zona", "dia"}
+var _ultimos_avisado: bool = false
+var _cronista: Cronista
 
 
 # ---------------------------------------------------------------- criação
@@ -75,6 +81,7 @@ func _init(p_semente: int, p_comandos: Array = []) -> void:
 		z.agua_min_seca = c[6]
 		z.risco_raio = c[7]
 		zonas[chave] = z
+	_cronista = Cronista.new(self)
 	_criar_primeiro_povo()
 
 
@@ -102,6 +109,7 @@ func _criar_primeiro_povo() -> void:
 		p.saude = 1.0
 	g.fundador = avoa.id
 	g.lider = avo.id
+	acompanhada = avoa.id
 	linhagem.append(avoa.id)
 	linhagem.append(avo.id)
 	for p in _membros(g):
@@ -368,6 +376,7 @@ func _novo_dia() -> void:
 	var d := dia_do_ano()
 	if d == 0 and passo > 0:
 		_novo_ano()
+		_cronista.processar_ate(ano() - 1)
 	if d % DIAS_ESTACAO == 0:
 		_nova_estacao()
 	_clima_do_dia()
@@ -382,6 +391,12 @@ func _novo_dia() -> void:
 	_relacoes_entre_grupos()
 	_preces_do_dia()
 	_arrumar_grupos()
+	var pop := populacao()
+	if pop > 0 and pop <= 5 and not _ultimos_avisado:
+		_ultimos_avisado = true
+		registrar("os_ultimos", "natural", 10, "", -1, [], {"restam": pop})
+	elif pop > 12:
+		_ultimos_avisado = false
 	if populacao() == 0 and not fim_do_mundo:
 		fim_do_mundo = true
 		registrar("fim_do_mundo", "natural", 10, "", -1, [], {})
@@ -787,6 +802,8 @@ func _morrer(p: Pessoa, causa: String, dados_extra: Dictionary = {}) -> void:
 		pessoas[p.conjuge].conjuge = -1
 	var e := registrar("morte", "social" if causa in ["batalha", "culpado"] else ("divina" if causa == "raio_divino" else "natural"),
 		imp, g.zona if g != null else "", p.grupo, [p.id], dados)
+	if p.id == acompanhada:
+		_passar_linhagem(p)
 	if g == null:
 		return
 	# A prece por esta pessoa ficou sem resposta.
@@ -1149,6 +1166,8 @@ func _expedicao(g: Grupo, chefe: Pessoa) -> void:
 	if g.lider in ids:
 		g.lider = -1
 	var e := registrar("expedicao", "social", 7, g.zona, g.id, ids, {"chefe": chefe.id, "n": foram.size()})
+	if ids.has(acompanhada):
+		_passar_linhagem(pessoas[acompanhada])
 	if g.tem_crenca and not g.tem_crenca_chave("alem_da_borda"):
 		_nova_crenca(g, "alem_da_borda", e)
 
@@ -1858,6 +1877,11 @@ func _explicar_silencio(g: Grupo) -> void:
 
 # ---------------------------------------------------------------- o deus
 
+const PODERES := ["chuva", "raio", "fartura", "fogo", "erguer", "sonho"]
+const PESO_GRAU := {"sinal": 1.0, "milagre": 3.0, "imposicao": 4.5}
+const ALCANCE_ALVO := 6.0   # pixels: raio e sonho acertam quem está a esta distância de x
+
+
 func _executar_comandos() -> void:
 	while _proximo_comando < comandos.size():
 		var c: Dictionary = comandos[_proximo_comando]
@@ -1866,25 +1890,76 @@ func _executar_comandos() -> void:
 			return
 		_proximo_comando += 1
 		if not fim_do_mundo:
-			_poder(c)
+			_comando_de_cenario(c)
 
 
-func _poder(c: Dictionary) -> void:
+## Um comando de cenário vira um gesto: x no centro da zona, ou sobre o alvo.
+func _comando_de_cenario(c: Dictionary) -> void:
+	var z: String = c["zona"]
+	var ali := grupos_na_zona(z)
+	var alvo := -1
+	if not ali.is_empty():
+		var g0: Grupo = ali[0]
+		if c["alvo"] == "lider" and g0.lider != -1:
+			alvo = g0.lider
+		elif c["poder"] == "raio":
+			var adultos := _adultos(g0, 14)
+			if not adultos.is_empty():
+				alvo = escolher(adultos).id
+	var x := Cotidiano.centro_da_zona(z)
+	if alvo != -1:
+		x = posicao_de(alvo)
+	_poder({"poder": c["poder"], "zona": z, "x": x, "intensidade": c.get("intensidade", 0.8),
+		"alvo": alvo, "texto": c["texto"]})
+
+
+func _poder(c: Dictionary) -> Dictionary:
 	var z: Zona = zonas[c["zona"]]
 	var ali := grupos_na_zona(z.chave)
-	var dados := {"comando": c["texto"]}
+	var g0_id: int = ali[0].id if not ali.is_empty() else -1
+	var inten: float = c["intensidade"]
+	var x: float = c["x"]
+	# Repetição: o mesmo poder na mesma zona em poucos dias.
+	var rep := 0
+	var novos_usos: Array = []
+	for u in _usos_recentes:
+		if dia_abs() - u["dia"] <= 3:
+			novos_usos.append(u)
+			if u["poder"] == c["poder"] and u["zona"] == z.chave:
+				rep += 1
+	novos_usos.append({"poder": c["poder"], "zona": z.chave, "dia": dia_abs()})
+	_usos_recentes = novos_usos
+	# Precisão: raio e sonho acertam quem está sob o gesto.
+	var alvo: Pessoa = null
+	if c["poder"] in ["raio", "sonho"]:
+		if c["alvo"] != -1 and pessoas.has(c["alvo"]) and pessoas[c["alvo"]].vivo:
+			alvo = pessoas[c["alvo"]]
+		else:
+			alvo = _pessoa_perto(x)
+	var grau := "sinal"
+	if rep >= 2:
+		grau = "imposicao"
+	elif inten >= 0.5:
+		grau = "milagre"
+	var peso: float = PESO_GRAU[grau]
+	var dados := {"comando": c["texto"], "grau": grau, "x": x, "intensidade": inten, "repeticao": rep}
+	var e: Evento = null
 	match c["poder"]:
 		"chuva":
 			var em_seca := z.seca or z.agua < 0.5
-			z.seca = false
-			z.agua = 1.0
-			z.comida = minf(z.comida_cap, z.comida + z.comida_cap * 0.2)
+			z.agua = minf(1.0, z.agua + 0.4 + 0.6 * inten)
+			var acabou_seca := em_seca and (inten >= 0.5 or grau == "imposicao")
+			if acabou_seca:
+				z.seca = false
+			z.comida = minf(z.comida_cap, z.comida + z.comida_cap * 0.2 * inten)
 			dados["em_seca"] = em_seca
-			var e := registrar("chuva_divina", "divina", 7 if em_seca else 3, z.chave, ali[0].id if not ali.is_empty() else -1, [], dados)
+			dados["acabou_seca"] = acabou_seca
+			e = registrar("chuva_divina", "divina", (7 if acabou_seca else 4) if em_seca else 3, z.chave, g0_id, [], dados)
 			for g in ali:
-				_impressionar(g, 3.0 if em_seca else 0.8, "chuva", e, true)
-				_resolver_prece(g, "seca", e)
-			if em_seca:
+				_impressionar(g, peso if em_seca else peso * 0.3, "chuva", e, true)
+				if acabou_seca:
+					_resolver_prece(g, "seca", e)
+			if acabou_seca:
 				# Quem continua na seca vê a chuva cair só sobre os outros.
 				for g in grupos_vivos():
 					if g.zona != z.chave and zonas[g.zona].seca:
@@ -1893,111 +1968,368 @@ func _poder(c: Dictionary) -> void:
 						_impressionar(g, 1.0, "chuva", e, false)
 				for g in ali:
 					_nomear_lugar(g, z.chave, "chuva", e)
+			if grau == "imposicao":
+				_impor_paz(ali, z.chave)
 		"raio":
-			var e2 := registrar("raio_divino", "divina", 7, z.chave, ali[0].id if not ali.is_empty() else -1, [], dados)
-			var vitima: Pessoa = null
-			if not ali.is_empty():
-				var g0: Grupo = ali[0]
-				if c["alvo"] == "lider" and g0.lider != -1:
-					vitima = pessoas[g0.lider]
-				else:
-					var adultos := _adultos(g0, 14)
-					if not adultos.is_empty():
-						vitima = escolher(adultos)
-			if vitima == null:
-				e2.importancia = 4
-				e2.dados["vitima"] = -1
+			e = registrar("raio_divino", "divina", 7, z.chave, g0_id, [], dados)
+			if alvo == null or grau == "sinal":
+				# Raio solitário: cai perto, não mata.
+				e.importancia = 4
+				e.dados["vitima"] = -1
 				for g in ali:
-					_impressionar(g, 1.5, "raio", e2, false)
-				return
-			var g_v: Grupo = grupos[vitima.grupo]
-			e2.dados["vitima"] = vitima.id
-			e2.dados["era_lider"] = g_v.lider == vitima.id
-			e2.participantes.append(vitima.id)
-			e2.importancia = 9 if g_v.lider == vitima.id else 8
-			_morrer(vitima, "raio_divino")
-			_reagir_raio(g_v, vitima, e2, true)
-			for g in ali:
-				if g != g_v:
-					_impressionar(g, 2.0, "raio", e2, false)
+					_impressionar(g, peso * 0.6, "raio", e, false)
+			else:
+				var g_v: Grupo = grupos[alvo.grupo]
+				e.dados["vitima"] = alvo.id
+				e.dados["era_lider"] = g_v.lider == alvo.id
+				e.participantes.append(alvo.id)
+				e.importancia = 9 if g_v.lider == alvo.id else 8
+				_morrer(alvo, "raio_divino")
+				_reagir_raio(g_v, alvo, e, true)
+				for g in ali:
+					if g != g_v:
+						_impressionar(g, 2.0, "raio", e, false)
+			if grau == "imposicao":
+				_impor_paz(ali, z.chave)
+				for g in ali:
+					g.amaldicoada = true
 		"fartura":
-			z.comida = z.comida_cap * 1.8
+			z.comida = z.comida_cap * (1.0 + 0.8 * inten)
 			var em_fome := false
 			for g in ali:
 				em_fome = em_fome or g.em_fome
 			dados["em_fome"] = em_fome
-			var e3 := registrar("fartura_divina", "divina", 7 if em_fome else 4, z.chave, ali[0].id if not ali.is_empty() else -1, [], dados)
+			e = registrar("fartura_divina", "divina", 7 if em_fome and grau != "sinal" else 4, z.chave, g0_id, [], dados)
 			for g in ali:
-				g.estoque += 6.0 * g.membros.size()
-				_impressionar(g, 3.0 if em_fome else 1.2, "fartura", e3, true)
-				_resolver_prece(g, "fome", e3)
-				if em_fome:
-					_nomear_lugar(g, z.chave, "fartura", e3)
+				g.estoque += (2.0 + 6.0 * inten) * g.membros.size()
+				_impressionar(g, peso * (1.0 if em_fome else 0.4), "fartura", e, true)
+				_resolver_prece(g, "fome", e)
+				if em_fome and grau != "sinal":
+					_nomear_lugar(g, z.chave, "fartura", e)
 			for g in grupos_vivos():
 				if g.zona != z.chave and g.em_fome and not ali.is_empty():
 					g.hostilidade[ali[0].id] = g.hostilidade.get(ali[0].id, 0.0) + 1.5
 		"fogo":
-			z.comida *= 0.2
-			z.madeira *= 0.1
-			var e4 := registrar("fogo_divino", "divina", 7, z.chave, ali[0].id if not ali.is_empty() else -1, [], dados)
+			var f := 0.3 + 0.6 * inten
+			z.comida *= 1.0 - f
+			z.madeira *= 1.0 - f
+			z.queimada_ate = dia_abs() + int(DIAS_ANO * inten)
+			e = registrar("fogo_divino", "divina", 7 if grau != "sinal" else 4, z.chave, g0_id, [], dados)
 			var mortos: Array = []
 			for g in ali:
-				g.abrigos = g.abrigos / 2
-				g.estoque *= 0.5
+				g.abrigos = maxi(0, g.abrigos - int(round(g.abrigos * f * 0.8)))
+				g.estoque *= 1.0 - f * 0.5
 				for p in _membros(g):
-					if chance(0.05):
+					if chance(0.08 * inten):
 						mortos.append(p.id)
 						_morrer(p, "fogo")
-				_impressionar(g, 3.0, "fogo", e4, false)
-				_nomear_lugar(g, z.chave, "cinzas", e4)
+				_impressionar(g, peso, "fogo", e, false)
+				if grau != "sinal":
+					_nomear_lugar(g, z.chave, "cinzas", e)
 				var amaldicoados := 0
 				for p in _membros(g):
 					if p.tem("desconfiado") or p.tem("rancoroso") or p.tem("medroso"):
 						amaldicoados += 1
-				g.amaldicoada = amaldicoados * 2 >= g.membros.size()
-				e4.dados["leitura_" + str(g.id)] = "maldicao" if g.amaldicoada else "purificacao"
-			e4.dados["mortos"] = mortos
-			e4.participantes = mortos
+				g.amaldicoada = g.amaldicoada or (grau != "sinal" and amaldicoados * 2 >= g.membros.size())
+				e.dados["leitura_" + str(g.id)] = "maldicao" if g.amaldicoada else "purificacao"
+			e.dados["mortos"] = mortos
+			e.participantes = mortos
 		"erguer":
 			z.monte_erguido = true
-			var e5 := registrar("terra_erguida", "divina", 8, z.chave, ali[0].id if not ali.is_empty() else -1, [], dados)
+			z.pedra_x = x
+			e = registrar("terra_erguida", "divina", 8 if grau != "sinal" else 5, z.chave, g0_id, [], dados)
 			for g in grupos_vivos():
-				var peso := 4.0 if g.zona == z.chave else 1.5
-				_impressionar(g, peso, "terra", e5, true)
-				if g.tem_crenca and g.zona == z.chave:
-					_nova_crenca(g, "lugar_sagrado", e5, {"zona": z.chave})
-				_nomear_lugar(g, z.chave, "pedra", e5)
+				var p_imp := peso if g.zona == z.chave else peso * 0.4
+				_impressionar(g, p_imp, "terra", e, true)
+				if grau != "sinal":
+					if g.tem_crenca and g.zona == z.chave:
+						_nova_crenca(g, "lugar_sagrado", e, {"zona": z.chave})
+					_nomear_lugar(g, z.chave, "pedra", e)
 			# A terra erguida separa grupos em guerra.
-			for g in ali:
-				for outro in grupos_vivos():
-					if outro != g and g.hostilidade.get(outro.id, 0.0) >= 3.0:
-						_tregua(g, outro, z.chave, "deus")
+			if grau != "sinal":
+				_impor_paz(ali, z.chave)
 		"sonho":
-			if ali.is_empty():
-				registrar("sonho", "divina", 2, z.chave, -1, [], {"sonhador": -1})
-				return
-			var g: Grupo = ali[0]
-			var sonhador: Pessoa = null
-			var melhor := -9.0
-			for p in _adultos(g, 15):
-				var v := rng.randf()
-				if p.tem("engenhoso") or p.tem("curioso"):
-					v += 1.0
-				if v > melhor:
-					melhor = v
-					sonhador = p
-			if sonhador == null:
-				return
-			var ideia := "agricultura" if g.estagio == 1 and not sonhador.sabe_agricultura else "visao"
-			var aceita := chance(0.4 if sonhador.tem("desconfiado") else 0.85)
-			dados.merge({"sonhador": sonhador.id, "ideia": ideia, "aceita": aceita})
-			var e6 := registrar("sonho", "divina", 7, z.chave, g.id, [sonhador.id], dados)
-			sonhador.feitos += 2
+			if alvo == null:
+				for g in ali:
+					var melhor := -9.0
+					for p in _adultos(g, 15):
+						var v := rng.randf()
+						if p.tem("engenhoso") or p.tem("curioso"):
+							v += 1.0
+						if v > melhor:
+							melhor = v
+							alvo = p
+					break
+			if alvo == null:
+				e = registrar("sonho", "divina", 2, z.chave, -1, [], dados.merged({"sonhador": -1}))
+				return {"ok": true, "grau": grau, "evento": e.id, "zona": z.chave, "alvo": -1}
+			var g: Grupo = grupos[alvo.grupo]
+			var ideia := "agricultura" if g.estagio == 1 and not alvo.sabe_agricultura else "visao"
+			var p_aceita := 0.4 if alvo.tem("desconfiado") else 0.85
+			if grau == "sinal":
+				p_aceita *= 0.5
+			elif grau == "imposicao":
+				p_aceita = 1.0
+			var aceita := chance(p_aceita)
+			dados.merge({"sonhador": alvo.id, "ideia": ideia, "aceita": aceita})
+			e = registrar("sonho", "divina", 7, g.zona, g.id, [alvo.id], dados)
+			alvo.feitos += 2
 			if aceita:
-				sonhador.fe = clampf(sonhador.fe + 0.5, -1.0, 1.0)
+				alvo.fe = clampf(alvo.fe + 0.5, -1.0, 1.0)
 				if ideia == "agricultura":
-					sonhador.sabe_agricultura = true
-				_impressionar(g, 1.2, "sonho", e6, true)
+					alvo.sabe_agricultura = true
+				_impressionar(g, peso * 0.4, "sonho", e, true)
 				if ideia == "visao" and g.sacerdote == -1 and g.tem_crenca:
-					g.sacerdote = sonhador.id
-					registrar("sacerdote", "divina", 7, g.zona, g.id, [sonhador.id], {"sonho": e6.id})
+					g.sacerdote = alvo.id
+					registrar("sacerdote", "divina", 7, g.zona, g.id, [alvo.id], {"sonho": e.id})
+			if grau == "imposicao":
+				# Os líderes em guerra têm o mesmo sonho.
+				_impor_paz([g], g.zona)
+	return {"ok": true, "grau": grau, "evento": e.id if e != null else -1, "zona": z.chave,
+		"alvo": alvo.id if alvo != null else -1}
+
+
+## Imposição: os grupos dados fazem trégua com todos os inimigos.
+func _impor_paz(lista: Array, zona: String) -> void:
+	for g in lista:
+		if g.extinto:
+			continue
+		for outro in grupos_vivos():
+			if outro != g and g.hostilidade.get(outro.id, 0.0) >= 3.0:
+				_tregua(g, outro, zona, "deus")
+
+
+## A pessoa viva mais perto de x, se estiver a no máximo ALCANCE_ALVO pixels.
+func _pessoa_perto(x: float) -> Pessoa:
+	var melhor: Pessoa = null
+	var dist := ALCANCE_ALVO
+	for p in pessoas_visiveis():
+		var d: float = absf(p["x"] - x)
+		if d <= dist:
+			dist = d
+			melhor = pessoas[p["id"]]
+	return melhor
+
+
+# ---------------------------------------------------------------- API para a apresentação
+# Documentada em nucleo/API.md. A apresentação só lê por estas funções e só
+# age por usar_poder(), acompanhar() e avancar_hora().
+
+## Eventos que pedem a atenção do deus.
+const TIPOS_CHAMADO := ["prece", "fome_inicio", "doenca_inicio", "ataque", "os_ultimos",
+	"silencio", "culpado", "conhecimento_perdido", "fim_do_mundo"]
+
+
+func tempo() -> Dictionary:
+	var h := hora()
+	return {"passo": passo, "hora": h, "dia": dia_do_ano() + 1, "ano": ano(),
+		"estacao": ESTACOES[estacao()], "noite": h >= 20 or h < 6}
+
+
+func clima() -> Dictionary:
+	var temp := {}
+	if not tempestade.is_empty() and hora() >= tempestade["inicio"]:
+		var f: Array = Cotidiano.FAIXAS[tempestade["zona"]]
+		temp = {"zona": tempestade["zona"], "x_ini": f[0], "x_fim": f[1]}
+	return {"seca": seca_global, "inverno_rigoroso": inverno_rigoroso, "tempestade": temp}
+
+
+func zonas_visiveis() -> Array:
+	var r: Array = []
+	for chave in ORDEM_ZONAS:
+		var z: Zona = zonas[chave]
+		var f: Array = Cotidiano.FAIXAS[chave]
+		var nomes := {}
+		for gid in z.nomes:
+			nomes[gid] = z.nomes[gid]["nome"]
+		r.append({"chave": chave, "nome": z.nome, "x_ini": f[0], "x_fim": f[1],
+			"agua": z.agua, "comida": clampf(z.comida / z.comida_cap, 0.0, 2.0), "seca": z.seca,
+			"queimada": z.queimada_ate > dia_abs(), "pedra_erguida": z.monte_erguido,
+			"pedra_x": z.pedra_x, "nomes": nomes})
+	return r
+
+
+func grupos_visiveis() -> Array:
+	var r: Array = []
+	for g in grupos_vivos():
+		var f := Cotidiano.faixa_do_grupo(self, g)
+		r.append({"id": g.id, "nome": g.nome, "zona": g.zona, "x_ini": f[0], "x_fim": f[1],
+			"membros": g.membros.size(), "estagio": g.estagio, "lider": g.lider, "sacerdote": g.sacerdote,
+			"nome_deus": g.nome_deus if g.tem_crenca and not g.ceticos else "",
+			"ceticos": g.ceticos, "em_fome": g.em_fome, "doenca": g.doenca_evento >= 0,
+			"costumes": g.costumes.map(func(c): return c["tipo"]),
+			"origem": g.origem.duplicate()})
+	return r
+
+
+func construcoes() -> Array:
+	var r: Array = []
+	for g in grupos_vivos():
+		r.append_array(Cotidiano.construcoes_do_grupo(self, g))
+	return r
+
+
+## Pessoas vivas com posição (x em pixels do mundo) e ação nesta hora e na anterior.
+func pessoas_visiveis() -> Array:
+	var r: Array = []
+	var a := ano()
+	for g in grupos_vivos():
+		var obras := Cotidiano.construcoes_do_grupo(self, g)
+		for id in g.membros:
+			var p: Pessoa = pessoas[id]
+			var agora := Cotidiano.pessoa_no_passo(self, p, g, obras, passo)
+			var antes := Cotidiano.pessoa_no_passo(self, p, g, obras, maxi(0, passo - 1))
+			var papel := ""
+			if g.lider == id:
+				papel = "lider"
+			elif g.sacerdote == id:
+				papel = "sacerdote"
+			r.append({"id": id, "nome": p.nome, "sexo": p.sexo, "idade": p.idade(a),
+				"crianca": p.idade(a) < 12, "grupo": g.id, "x": agora["x"], "x_anterior": antes["x"],
+				"acao": agora["acao"], "papel": papel, "tracos": p.tracos.duplicate(),
+				"doente": p.doente > 0, "gravida": p.gravidez > 0, "acompanhada": id == acompanhada,
+				"pai": p.pai, "mae": p.mae, "conjuge": p.conjuge})
+	return r
+
+
+func posicao_de(pessoa_id: int) -> float:
+	var p: Pessoa = pessoas.get(pessoa_id)
+	if p == null or not p.vivo:
+		return -1.0
+	var g: Grupo = grupos[p.grupo]
+	return Cotidiano.pessoa_no_passo(self, p, g, Cotidiano.construcoes_do_grupo(self, g), passo)["x"]
+
+
+## Preces esperando resposta: os sinais da moldura.
+func preces_abertas() -> Array:
+	var r: Array = []
+	for g in grupos_vivos():
+		for nec in g.preces:
+			var pr: Dictionary = g.preces[nec]
+			var e: Evento = eventos[pr["evento"]]
+			r.append({"evento": e.id, "grupo": g.id, "autor": pr["autor"], "alvo": pr["alvo"],
+				"necessidade": nec, "desde": pr["dia"], "dias": dia_abs() - pr["dia"],
+				"x": posicao_de(pr["autor"]), "texto": _cronista.texto_prece(e)})
+	return r
+
+
+## Camada de atenção de um evento: "ambiente", "nota" ou "chamado".
+func camada(e: Evento) -> String:
+	if e.importancia >= 8 or TIPOS_CHAMADO.has(e.tipo):
+		return "chamado"
+	if e.importancia >= 4:
+		return "nota"
+	return "ambiente"
+
+
+## Eventos com id maior ou igual a `desde`, como dicionários, com a camada.
+func eventos_desde(desde: int) -> Array:
+	var r: Array = []
+	for i in range(maxi(0, desde), eventos.size()):
+		var d: Dictionary = eventos[i].para_dict()
+		d["camada"] = camada(eventos[i])
+		r.append(d)
+	return r
+
+
+## O deus age. x em pixels do mundo (0..479); intensidade de 0 a 1, vinda do gesto.
+func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary:
+	if fim_do_mundo:
+		return {"ok": false, "motivo": "o mundo está vazio"}
+	if not PODERES.has(poder):
+		return {"ok": false, "motivo": "poder desconhecido: " + poder}
+	x = clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1)
+	return _poder({"poder": poder, "zona": Cotidiano.zona_em(x), "x": x,
+		"intensidade": clampf(intensidade, 0.0, 1.0), "alvo": -1, "texto": ""})
+
+
+# ---------------------------------------------------------------- linhagem acompanhada
+
+func acompanhar(pessoa_id: int) -> bool:
+	if not pessoas.has(pessoa_id) or not pessoas[pessoa_id].vivo:
+		return false
+	acompanhada = pessoa_id
+	return true
+
+
+## Quando a pessoa acompanhada morre, o acompanhamento passa ao descendente vivo mais velho.
+func _passar_linhagem(morto: Pessoa) -> void:
+	var fila: Array = morto.filhos.duplicate()
+	var proximo := -1
+	while not fila.is_empty() and proximo == -1:
+		var vivos: Array = []
+		var seguinte: Array = []
+		for id in fila:
+			var p: Pessoa = pessoas[id]
+			if p.vivo:
+				vivos.append(p)
+			seguinte.append_array(p.filhos)
+		if not vivos.is_empty():
+			vivos.sort_custom(func(a, b): return a.nasc_ano < b.nasc_ano or (a.nasc_ano == b.nasc_ano and a.id < b.id))
+			proximo = vivos[0].id
+		fila = seguinte
+	acompanhada = proximo
+	registrar("linhagem", "natural", 6 if proximo != -1 else 8, zonas_de(proximo), pessoas[proximo].grupo if proximo != -1 else -1,
+		[morto.id] + ([proximo] if proximo != -1 else []), {"de": morto.id, "para": proximo})
+
+
+func zonas_de(pessoa_id: int) -> String:
+	if not pessoas.has(pessoa_id) or grupo(pessoas[pessoa_id].grupo) == null:
+		return ""
+	return grupo(pessoas[pessoa_id].grupo).zona
+
+
+const MOTIVOS_SUGESTAO := {"sonho": "acabou de ter uma visão", "prece": "está rezando",
+	"prece_sem_resposta": "perdeu alguém depois de rezar", "separacao": "fundou um povo",
+	"descoberta": "descobriu como plantar", "crenca": "deu nome ao deus", "sacerdote": "passou a falar pelo deus",
+	"novo_lider": "passou a guiar o seu povo", "casamento_entre_grupos": "casou com alguém de outro povo",
+	"nascimento": "acabou de nascer", "culpado": "foi apontada como culpada"}
+
+
+## Quem vale acompanhar agora: pessoas que acabaram de viver algo marcante.
+func sugestoes(n: int = 5) -> Array:
+	var notas := {}
+	var motivos := {}
+	var limite := (ano() - 2) * DIAS_ANO
+	for i in range(eventos.size() - 1, -1, -1):
+		var e: Evento = eventos[i]
+		if (e.ano - 1) * DIAS_ANO + e.dia < limite:
+			break
+		if not MOTIVOS_SUGESTAO.has(e.tipo) or e.importancia < 3 or e.participantes.is_empty():
+			continue
+		var id: int = e.participantes[0]
+		if not pessoas.has(id) or not pessoas[id].vivo or motivos.has(id):
+			continue
+		notas[id] = e.importancia + peso_pessoa(pessoas[id])
+		var motivo: String = MOTIVOS_SUGESTAO[e.tipo]
+		if pessoas[id].sexo == "m":
+			motivo = motivo.replace("apontada", "apontado").replace("culpada", "culpado")
+		motivos[id] = motivo
+	var ids: Array = notas.keys()
+	ids.sort_custom(func(a, b): return notas[a] > notas[b] or (notas[a] == notas[b] and a < b))
+	var r: Array = []
+	for id in ids.slice(0, n):
+		r.append({"id": id, "nome": pessoas[id].nome, "grupo": pessoas[id].grupo, "motivo": motivos[id]})
+	return r
+
+
+# ---------------------------------------------------------------- crônica
+
+## A crônica dos anos completos, do ano_ini ao ano_fim (-1: até o último completo).
+func cronica(ano_ini: int = 1, ano_fim: int = -1, com_prologo: bool = true, com_epilogo: bool = false) -> String:
+	if ano_fim < 0:
+		ano_fim = _cronista.ultimo_ano_escrito
+	return _cronista.montar(ano_ini, ano_fim, "", "", com_prologo, com_epilogo)
+
+
+func cronica_ano(a: int) -> String:
+	return _cronista.texto_do_ano(a)
+
+
+func ultimo_ano_na_cronica() -> int:
+	return _cronista.ultimo_ano_escrito
+
+
+## A crônica inteira com título, prólogo e epílogo (para as ferramentas).
+func cronica_completa(titulo: String, subtitulo: String) -> String:
+	return _cronista.escrever(titulo, subtitulo)

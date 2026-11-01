@@ -15,4 +15,6 @@ var terra_cultivavel: int = 0
 var risco_raio: float = 1.0
 var seca: bool = false
 var monte_erguido: bool = false
+var pedra_x: float = -1.0      # onde a terra foi erguida
+var queimada_ate: int = -1      # dia absoluto até quando a zona mostra o fogo
 var nomes: Dictionary = {}      # id do grupo -> {"nome", "evento"}

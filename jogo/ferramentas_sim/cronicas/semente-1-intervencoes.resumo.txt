@@ -1,0 +1,3 @@
+semente=1 cenario=ferramentas_sim/cenarios/semente1-intervencoes.txt anos=100
+tempo_ano_mais_lento=0.025s tempo_100_anos=1.146s
+eventos=2515 populacao_final=65 grupos_vivos=4
