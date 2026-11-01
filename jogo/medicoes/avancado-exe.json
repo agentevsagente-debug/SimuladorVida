@@ -1,0 +1,13 @@
+﻿{
+    "cenario":  "avancado",
+    "duracao_s":  602,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.278,
+    "cpu_media_1nucleo":  7.79,
+    "cpu_max_amostra_pct":  0.478,
+    "ws_media_mb":  259.3,
+    "ws_max_mb":  274.1,
+    "privada_max_mb":  296.2,
+    "gerenciador_media_mb":  167.5,
+    "gerenciador_max_mb":  181.8
+}

@@ -2,6 +2,17 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O pior cenário de novo, no executável
+
+O mundo de 150 anos (estágio 6, 4 povos), em 50x, por 10 min, no `.exe`. Já entra tudo o que veio depois da medição final: o arquivo dos antigos, a fileira de trás, até 45 pessoas na tela, a dica, as preces e os brilhos. Medido com `medir.ps1 -Cenario avancado -Executavel`; os dados estão em `medicoes/avancado-exe.*`.
+
+| | CPU média | Gerenciador, média | Gerenciador, máximo | Conjunto de trabalho, máximo | Privada, máximo |
+|---|---|---|---|---|---|
+| Agora (.exe) | 0,278% | 167,5 MB | 181,8 MB | 274 MB | 296 MB |
+| Medição final (pelo editor) | 0,307% | 189 MB | 211 MB | — | — |
+
+O máximo ficou abaixo da meta de 200 MB. A memória sobe nos primeiros minutos (de 145 para 178 MB no meio da medição) e para em 181,8 MB nos últimos 2 min.
+
 ## O recomeço e os estranhos
 
 | Item | O que foi feito |
