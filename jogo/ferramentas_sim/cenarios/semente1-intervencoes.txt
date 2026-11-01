@@ -1,27 +1,24 @@
-# Cenário de intervenções do deus para a semente 1.
-# Uma ação por linha: "ano N, dia N[, hora N]: poder zona".
-# Poderes: chuva, raio, fartura, fogo, erguer (terra), sonho. "líder" mira o líder do grupo da zona.
+# Cenário de intervenções do deus para a semente 1 (fase 1).
+# Usa comandos condicionais: o deus age quando a coisa acontece, mesmo que o mundo mude.
+# Formato completo em nucleo/cenario.gd e nucleo/API.md.
 
-# A primeira seca: chuva só sobre a floresta, onde o povo acampa.
-ano 6, dia 22: chuva sobre a floresta
+# A primeira seca: chuva só onde secou.
+na próxima seca: chuva onde houver seca
 
-# Um sonho: alguém do lago vê sementes virando árvores.
-ano 12, dia 4: sonho no lago
-
-# Outra seca: o deus atende só o lago. A floresta continua seca e vê tudo.
-ano 18, dia 30: chuva sobre o lago
+# Na primeira doença, alguém sonha.
+na próxima doença, a partir do ano 8: sonho onde houver doença
 
 # Um raio de céu limpo sobre quem guia o povo do lago.
 ano 28, dia 15: raio sobre o líder do lago
 
-# Anos depois, a chuva cai sobre a floresta, que antes foi esquecida.
-ano 45, dia 24: chuva sobre a floresta
+# Anos depois, outra seca: chuva forte.
+na próxima seca, a partir do ano 40: chuva forte onde houver seca
 
-# Fome em todos os povos: o deus enche o lago de comida, e só o lago.
-ano 60, dia 3: fartura no lago
+# Fome: fartura onde há fome.
+na próxima fome, a partir do ano 55: fartura onde houver fome
 
-# A terra se ergue no morro, onde vive um povo em guerra com o lago.
-ano 66, dia 30: erguer terra no morro
+# A primeira guerra com nome: a terra se ergue entre os inimigos.
+quando houver guerra, a partir do ano 30: erguer terra onde houver guerra
 
 # Fogo na floresta.
 ano 85, dia 18: fogo na floresta

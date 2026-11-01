@@ -63,6 +63,9 @@ var _usos_recentes: Array = []   # poderes usados nos últimos dias: {"poder", "
 var _ultimos_avisado: bool = false
 var _cronista: Cronista
 var salvo_em: int = 0            # hora real (Unix) do último salvamento
+var guerras: Array = []          # {id, nome, a, b, motivo, inicio, batalhas, mortos, vitorias, ultimo_dia, ativa}
+const MAX_POVOS := 4             # acima disto ninguém funda povo novo: parte além da borda
+const MIN_FUNDADORES := 8
 
 
 # ---------------------------------------------------------------- criação
@@ -112,6 +115,7 @@ func _criar_primeiro_povo() -> void:
 			_nova_pessoa(g, "m" if rng.randf() < 0.5 else "f", -1 - rng.randi_range(0, 9), pai.id, mae.id)
 	for p in _membros(g):
 		p.saude = 1.0
+	g.estranhos = _inclinacao_estranhos(_membros(g))
 	g.fundador = avoa.id
 	g.lider = avo.id
 	acompanhada = avoa.id
@@ -225,6 +229,8 @@ func avancar_hora() -> void:
 	if h == 0:
 		_novo_dia()
 	_executar_comandos()
+	if h == 12:
+		_executar_condicionais()
 	if not tempestade.is_empty():
 		_tempestade_hora()
 	if h == 8:
@@ -385,6 +391,7 @@ func _novo_dia() -> void:
 	if d % DIAS_ESTACAO == 0:
 		_nova_estacao()
 	_clima_do_dia()
+	_presagios()
 	_renovar_zonas()
 	_vida_do_dia()
 	if dia_abs() % 5 == 0:
@@ -434,8 +441,25 @@ func _novo_ano() -> void:
 			for id in p.rancores.keys():
 				if p.rancores[id] <= 2 and chance(0.4):
 					p.rancores.erase(id)
+	# Reforma: uma geração nova abandona costumes herdados ou sem origem lembrada.
+	for g in grupos_vivos():
+		if g.lider == -1:
+			continue
+		var l: Pessoa = pessoas[g.lider]
+		var reformista := l.idade(a) < 35 or l.tem("ambicioso") or l.tem("curioso")
+		for c in g.costumes.duplicate():
+			var herdado: bool = g.origem.has("ano") and c["ano"] < g.origem["ano"]
+			if reformista and (herdado or c["esquecido"]) and chance(0.03):
+				g.costumes.erase(c)
+				if c["tipo"] == "queimar_mortos":
+					g.mortos = "enterram"
+				registrar("reforma", "social", 6, g.zona, g.id, [l.id], {"costume": c["tipo"],
+					"ano_origem": c["ano"], "herdado": herdado})
+				break
 	# Costumes cuja origem ninguém vivo lembra.
 	for g in grupos_vivos():
+		if g.membros.size() < 4:
+			continue
 		for c in g.costumes:
 			if c["esquecido"]:
 				continue
@@ -450,11 +474,33 @@ func _novo_ano() -> void:
 				c["esquecido"] = true
 				registrar("costume_esquecido", "social", 6, g.zona, g.id, [],
 					{"costume": c["tipo"], "ano_origem": ano_origem, "origem": c["evento"]})
-	# Presságio natural: o sol escurece.
-	if chance(0.03):
+func _presagios() -> void:
+	# Presságios naturais, em qualquer dia do ano: o sol escurece, uma estrela de cauda, a terra treme.
+	if chance(0.025 / DIAS_ANO):
+		var ec := registrar("cometa", "natural", 6, "", -1, [], {"noites": rng.randi_range(5, 15)})
+		for g in grupos_vivos():
+			_impressionar(g, 2.0, "cometa", ec, false)
+	if chance(0.02 / DIAS_ANO):
+		_terremoto()
+	if chance(0.02 / DIAS_ANO):
 		var e := registrar("eclipse", "natural", 6, "", -1, [], {})
 		for g in grupos_vivos():
 			_impressionar(g, 2.5, "eclipse", e, false)
+
+
+func _terremoto() -> void:
+	var e := registrar("terremoto", "natural", 6, "", -1, [], {"mortos": [], "cabanas": 0})
+	for g in grupos_vivos():
+		var caidas := int(round(g.abrigos * rng.randf_range(0.2, 0.6)))
+		g.abrigos -= caidas
+		e.dados["cabanas"] += caidas
+		for p in _membros(g):
+			if chance(0.025):
+				e.dados["mortos"].append(p.id)
+				e.participantes.append(p.id)
+				_morrer(p, "terremoto")
+		_impressionar(g, 2.5, "terremoto", e, false)
+	e.importancia = 6 + mini(e.dados["mortos"].size(), 3)
 
 
 func _nova_estacao() -> void:
@@ -665,7 +711,7 @@ func _refeicao() -> void:
 				var e2 := registrar("fome_fim", "natural", 4 + mini(g.fome_mortos, 4), g.zona, g.id, [],
 					{"mortos": g.fome_mortos, "dias": dur, "inicio": g.fome_evento})
 				_resolver_prece(g, "fome", e2)
-				if (g.fome_mortos >= 1 or dur >= 10) and not g.tem_costume("estocar"):
+				if (g.fome_mortos >= 1 or dur >= 10) and not g.tem_costume("estocar") and not g.dependente:
 					_novo_costume(g, "estocar", e2)
 				if g.fome_mortos >= 2:
 					_nomear_lugar(g, g.zona, "fome", e2)
@@ -688,6 +734,7 @@ func _refeicao() -> void:
 					{"mortos": g.doenca_mortos, "inicio": ev.id})
 				if g.doenca_mortos >= 3 and not g.tem_costume("queimar_mortos"):
 					_novo_costume(g, "queimar_mortos", e3)
+					g.mortos = "queimam"
 				g.doenca_evento = -1
 				_resolver_prece(g, "doenca", e3)
 
@@ -742,6 +789,8 @@ func _vida_do_dia() -> void:
 					var marido: Pessoa = pessoas[p.conjuge]
 					if marido.vivo and marido.grupo == p.grupo:
 						var c := 1.0 / 55.0 if bem_alimentado else 1.0 / 220.0
+						if g.estoque < g.membros.size() * 1.5:
+							c *= 0.5
 						if chance(c):
 							p.gravidez = 12
 
@@ -774,6 +823,12 @@ func _parto(mae: Pessoa, g: Grupo) -> void:
 	g.nascimentos += 1
 	registrar("nascimento", "natural", imp, g.zona, g.id, [filho.id, mae.id, pai_id],
 		{"motivo": motivo})
+	if chance(0.006):
+		var irmao := _nova_pessoa(g, filho.sexo if chance(0.5) else ("f" if filho.sexo == "m" else "m"), ano(), pai_id, mae.id)
+		if linhagem.has(filho.id):
+			linhagem.append(irmao.id)
+		var eg := registrar("gemeos", "natural", 5, g.zona, g.id, [filho.id, irmao.id, mae.id], {})
+		_impressionar(g, 1.0, "gemeos", eg, true)
 	if chance(0.03):
 		_morrer(mae, "parto")
 
@@ -811,6 +866,8 @@ func _morrer(p: Pessoa, causa: String, dados_extra: Dictionary = {}) -> void:
 		_passar_linhagem(p)
 	if g == null:
 		return
+	if not g.extinto and not g.membros.is_empty():
+		_rito_funebre(g, p)
 	# A prece por esta pessoa ficou sem resposta.
 	for nec in g.preces.keys():
 		var pr: Dictionary = g.preces[nec]
@@ -862,7 +919,7 @@ func _casamentos() -> void:
 	# Casamentos entre grupos: quem não acha par em casa procura nos vizinhos.
 	for g in grupos_vivos():
 		for p in _membros(g):
-			if p.conjuge != -1 or p.idade(a) < 18 or p.idade(a) > 40 or not chance(0.06):
+			if p.conjuge != -1 or p.idade(a) < 18 or p.idade(a) > 40 or not chance(0.06 * (1.0 + g.estranhos)):
 				continue
 			for outro in grupos_vivos():
 				if outro.id == g.id or g.hostilidade.get(outro.id, 0.0) > 3.0 or g.proibido.has(outro.id) or outro.proibido.has(g.id):
@@ -884,6 +941,8 @@ func _casamentos() -> void:
 				var de := grupo(muda.grupo)
 				muda.veio_de = de.id
 				_mudar_de_grupo(muda, destino)
+				_mudar_estranhos(destino, 0.05, null)
+				_mudar_estranhos(de, 0.05, null)
 				var primeiro := not _ja_houve("casamento_entre_grupos", de.id, destino.id)
 				registrar("casamento_entre_grupos", "social", 5 if primeiro else 2, destino.zona, destino.id,
 					[muda.id, fica.id], {"de": de.id, "primeiro": primeiro,
@@ -947,7 +1006,7 @@ func _rancores_e_separacoes() -> void:
 					alvo = id
 					break
 			var n_grupos := grupos_vivos().size()
-			if alvo != -1 and n_grupos < 5 and chance(0.1 if n_grupos < 3 else 0.03):
+			if alvo != -1 and n_grupos < MAX_POVOS and chance(0.1 if n_grupos < 3 else 0.03):
 				_separar(g, p, "briga", alvo)
 				return
 
@@ -970,7 +1029,8 @@ func _migracoes() -> void:
 			if melhor != "":
 				var de: String = g.zona
 				g.zona = melhor
-				g.abrigos = 0
+				# Coletores levam as peles e as varas: metade das cabanas vai junto.
+				g.abrigos = g.abrigos / 2
 				var vizinhos: Array = []
 				for outro in grupos_na_zona(melhor):
 					if outro != g:
@@ -981,6 +1041,15 @@ func _migracoes() -> void:
 	for g in grupos_vivos():
 		if g.membros.size() < 12:
 			continue
+		var cheio := grupos_vivos().size() >= MAX_POVOS or _zona_destino(g) == ""
+		if cheio and g.em_fome and g.fome_dias >= 6 and chance(0.08):
+			var aventureiros: Array = []
+			for p in _adultos(g, 18, 50):
+				if p.id != g.lider and (p.tem("curioso") or p.tem("corajoso") or p.tem("ambicioso")):
+					aventureiros.append(p)
+			if not aventureiros.is_empty():
+				_expedicao(g, escolher(aventureiros))
+				continue
 		var z: Zona = zonas[g.zona]
 		var aperto = g.membros.size() / maxf(1.0, _capacidade(z, g))
 		var p_mig := 0.0
@@ -990,7 +1059,7 @@ func _migracoes() -> void:
 			p_mig = 0.02
 		if grupos_vivos().size() >= 4:
 			p_mig *= 0.3
-		if grupos_vivos().size() >= 6:
+		if grupos_vivos().size() >= MAX_POVOS:
 			p_mig = 0.0
 		if g.amaldicoada:
 			p_mig = 0.3
@@ -1048,6 +1117,8 @@ func _zona_destino(g: Grupo) -> String:
 ## Separa parte de um grupo em um novo grupo. O fundador leva a própria
 ## família e quem pensa como ele.
 func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cetico: bool = false) -> void:
+	if grupos_vivos().size() >= MAX_POVOS:
+		return
 	var destino := _zona_destino(g)
 	if destino == "":
 		if causa == "migracao":
@@ -1094,7 +1165,7 @@ func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cet
 			for q in _membros(g):
 				if not levar.has(q) and (q.mae == p.id or q.pai == p.id) and q.idade(a) < 16:
 					levar.append(q)
-	if levar.size() < 3 or levar.size() > g.membros.size() - 3:
+	if levar.size() < MIN_FUNDADORES or levar.size() > g.membros.size() - 4:
 		return
 	var cultura := Nomes.cultura_derivada(g.cultura, rng)
 	var novo := _novo_grupo(_nome_de_grupo(cultura), destino, cultura)
@@ -1109,6 +1180,8 @@ func _separar(g: Grupo, fundador: Pessoa, causa: String, desafeto: int, novo_cet
 	novo.abrigos = mini(1, g.abrigos)
 	g.abrigos = maxi(0, g.abrigos - 1)
 	novo.violencia = g.violencia
+	novo.estranhos = clampf(g.estranhos + _inclinacao_estranhos([fundador]) * 0.5, -1.0, 1.0)
+	novo.mortos = g.mortos
 	novo.tem_crenca = g.tem_crenca
 	novo.nome_deus = g.nome_deus
 	novo.genero_deus = g.genero_deus
@@ -1157,6 +1230,10 @@ func _expedicao(g: Grupo, chefe: Pessoa) -> void:
 	for p in _membros(g):
 		if not foram.has(p) and (p.mae == chefe.id or p.pai == chefe.id) and p.conjuge == -1:
 			foram.append(p)
+	# Quem também está cansado de fome vai junto.
+	for p in _adultos(g, 16, 45):
+		if not foram.has(p) and p.id != g.lider and p.conjuge == -1 and (p.tem("curioso") or p.tem("corajoso")) and chance(0.5):
+			foram.append(p)
 	if foram.size() >= g.membros.size() - 2:
 		return
 	var ids: Array = []
@@ -1188,6 +1265,52 @@ func _nome_de_grupo(cultura: Dictionary) -> String:
 		if not repetido:
 			return nome
 	return nome + "a"
+
+
+## De -1 (desconfiados) a 1 (acolhedores), pelos traços das pessoas dadas.
+func _inclinacao_estranhos(lista: Array) -> float:
+	if lista.is_empty():
+		return 0.0
+	var v := 0.0
+	for p in lista:
+		if p.tem("generoso"):
+			v += 1.0
+		if p.tem("curioso"):
+			v += 0.5
+		if p.tem("desconfiado"):
+			v -= 1.0
+		if p.tem("rancoroso"):
+			v -= 0.5
+	return clampf(v / lista.size() * 1.5, -1.0, 1.0)
+
+
+## A relação de um povo com estranhos muda com o que ele vive.
+func _mudar_estranhos(g: Grupo, delta: float, e: Evento) -> void:
+	var antes := g.estranhos
+	g.estranhos = clampf(g.estranhos + delta, -1.0, 1.0)
+	if antes > -0.5 and g.estranhos <= -0.5:
+		registrar("cultura", "social", 6, g.zona, g.id, [], {"dimensao": "estranhos", "valor": "desconfiada",
+			"origem": e.id if e != null else -1})
+	elif antes < 0.5 and g.estranhos >= 0.5:
+		registrar("cultura", "social", 6, g.zona, g.id, [], {"dimensao": "estranhos", "valor": "acolhedora",
+			"origem": e.id if e != null else -1})
+
+
+## Na primeira morte de um adulto, o povo decide o que faz com os mortos.
+func _rito_funebre(g: Grupo, morto: Pessoa) -> void:
+	if not g.mortos.is_empty() or morto.idade(ano()) < 16:
+		return
+	var devotos := 0
+	for p in _membros(g):
+		if p.tem("devoto") or p.fe > 0.5:
+			devotos += 1
+	var rito := "enterram"
+	if g.tem_costume("queimar_mortos"):
+		rito = "queimam"
+	elif g.tem_crenca and devotos * 3 >= g.membros.size():
+		rito = "veneram"
+	g.mortos = rito
+	registrar("cultura", "social", 6, g.zona, g.id, [morto.id], {"dimensao": "mortos", "valor": rito})
 
 
 func _escolher_lider(g: Grupo) -> void:
@@ -1225,7 +1348,7 @@ func _arrumar_grupos() -> void:
 			g.extinto = true
 			registrar("extincao_grupo", "social", 8, g.zona, g.id, [], {})
 			continue
-		if g.membros.size() <= 2:
+		if g.membros.size() <= 3:
 			var destino: Grupo = null
 			var menor := 999.0
 			for outro in grupos_vivos():
@@ -1273,11 +1396,11 @@ func _ensino() -> void:
 						{"fome_recente": a - g.fome_ultima_ano <= 3})
 			continue
 		for m in mestres:
-			var p_ensinar := 0.07
+			var p_ensinar := 0.025
 			if m.tem("generoso"):
-				p_ensinar = 0.14
+				p_ensinar = 0.05
 			if m.tem("desconfiado") or m.tem("ambicioso"):
-				p_ensinar = 0.025
+				p_ensinar = 0.008
 			if g.em_fome:
 				p_ensinar *= 0.5
 			if aprendizes.is_empty() or not chance(p_ensinar):
@@ -1290,7 +1413,7 @@ func _ensino() -> void:
 			if p.sabe_agricultura:
 				sabem += 1
 		var adultos := _adultos(g, 15).size()
-		if sabem >= 3 and sabem >= adultos * 0.3:
+		if sabem >= 4 and sabem >= adultos * 0.35:
 			g.estagio = 2
 			registrar("agricultura", "social", 9, g.zona, g.id, [], {"sabem": sabem})
 			for p in _membros(g):
@@ -1301,6 +1424,7 @@ func _ensino() -> void:
 # ---------------------------------------------------------------- conflito
 
 func _relacoes_entre_grupos() -> void:
+	_rever_guerras()
 	var vivos := grupos_vivos()
 	var dia := dia_abs()
 	for a_g in vivos:
@@ -1316,6 +1440,8 @@ func _relacoes_entre_grupos() -> void:
 				h += 0.008
 				if zonas[a_g.zona].comida < zonas[a_g.zona].comida_cap * 0.35:
 					h += 0.03
+			if a_g.estranhos < 0.0 and h > 0.5:
+				h += 0.004 * -a_g.estranhos
 			if a_g.proibido.has(b_g.id):
 				h += 0.004
 			a_g.hostilidade[b_g.id] = h
@@ -1377,8 +1503,14 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 	var mortos_venc := rng.randi_range(0, 1) if chance(0.5) else 0
 	var mortos: Array = []
 	var zona := b_g.zona
+	var guerra := _guerra_entre(a_g.id, b_g.id)
+	if guerra.is_empty():
+		guerra = _comecar_guerra(a_g, b_g, zona)
+	elif guerra["nome"].is_empty():
+		_nomear_guerra(guerra, zona)
 	var e := registrar("ataque", "social", 6, zona, a_g.id, [], {"vencedor": vencedor.id,
-		"mortos": [], "saque": 0.0, "primeiro": not _ja_houve("ataque", a_g.id, b_g.id)}, b_g.id)
+		"mortos": [], "saque": 0.0, "primeiro": not _ja_houve("ataque", a_g.id, b_g.id),
+		"guerra": guerra["id"], "batalha": guerra["batalhas"] + 1}, b_g.id)
 	for lista_mortos in [[g_perd, mortos_perd, vencedor, g_venc], [g_venc, mortos_venc, perdedor, g_perd]]:
 		var lado: Array = lista_mortos[0]
 		for i in mini(lista_mortos[1], lado.size()):
@@ -1398,6 +1530,10 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 	vencedor.estoque += saque
 	e.dados["mortos"] = mortos
 	e.dados["saque"] = saque
+	guerra["batalhas"] += 1
+	guerra["mortos"] += mortos.size()
+	guerra["ultimo_dia"] = dia_abs()
+	guerra["vitorias"][str(vencedor.id)] = guerra["vitorias"].get(str(vencedor.id), 0) + 1
 	e.importancia = 6 + mini(mortos.size(), 3)
 	perdedor.hostilidade[vencedor.id] = perdedor.hostilidade.get(vencedor.id, 0.0) + 1.5 + mortos.size() * 0.5
 	vencedor.hostilidade[perdedor.id] = maxf(0.0, vencedor.hostilidade.get(perdedor.id, 0.0) - 0.5)
@@ -1410,6 +1546,7 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 		if mortos.size() >= 2:
 			_novo_costume(perdedor, "lancas", e)
 	perdedor.ultimo_ataque_sofrido = dia_abs()
+	_mudar_estranhos(perdedor, -0.15, e)
 	b_g.ultimo_ataque_sofrido = dia_abs()
 	_abrir_prece(perdedor, "guerra", e, -1)
 	# Conquista: o vencido pequeno é absorvido.
@@ -1421,6 +1558,7 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 			pessoas[id].rancores[vencedor.lider] = 2
 		perdedor.extinto = true
 		registrar("conquista", "social", 9, zona, vencedor.id, ids, {"vencido": perdedor.id}, perdedor.id)
+		_terminar_guerra(guerra, "conquista", vencedor.id)
 		return
 	# Trégua.
 	var p_tregua := 0.06 + 0.05 * mortos.size()
@@ -1431,6 +1569,91 @@ func _atacar(a_g: Grupo, b_g: Grupo) -> void:
 			p_tregua -= 0.1
 	if chance(p_tregua):
 		_tregua(a_g, b_g, zona, "cansaco")
+
+
+func _guerra_entre(g1: int, g2: int) -> Dictionary:
+	for gu in guerras:
+		if gu["ativa"] and ((gu["a"] == g1 and gu["b"] == g2) or (gu["a"] == g2 and gu["b"] == g1)):
+			return gu
+	return {}
+
+
+const ORDINAIS := ["", "Segunda ", "Terceira ", "Quarta ", "Quinta ", "Sexta ", "Sétima ", "Oitava ",
+	"Nona ", "Décima "]
+
+
+func _comecar_guerra(a_g: Grupo, b_g: Grupo, zona: String) -> Dictionary:
+	var motivo := "rancor"
+	if a_g.proibido.has(b_g.id):
+		motivo = "santa"
+	elif a_g.em_fome:
+		motivo = "fome"
+	elif a_g.zona == b_g.zona:
+		motivo = "terra"
+	elif (a_g.origem.get("pai", -1) == b_g.id or b_g.origem.get("pai", -1) == a_g.id):
+		motivo = "irmaos"
+	var gu := {"id": guerras.size(), "nome": "", "a": a_g.id, "b": b_g.id, "motivo": motivo,
+		"inicio": ano(), "batalhas": 0, "mortos": 0, "vitorias": {}, "ultimo_dia": dia_abs(), "ativa": true}
+	guerras.append(gu)
+	return gu
+
+
+## Na segunda batalha, a briga vira uma guerra com nome.
+func _nomear_guerra(gu: Dictionary, zona: String) -> void:
+	var z: Zona = zonas[zona]
+	var base := ""
+	match gu["motivo"]:
+		"santa":
+			base = "Guerra Santa"
+		"fome":
+			base = "Guerra da Fome"
+		"irmaos":
+			base = "Guerra dos Irmãos"
+		_:
+			base = "Guerra " + _contr_de(z.genero, 1) + " " + z.cabeca
+	var usados := {}
+	for outra in guerras:
+		usados[outra["nome"]] = true
+	var nome := base
+	if usados.has(nome) and not base.contains(z.cabeca):
+		nome = base + " " + _contr_de(z.genero, 1) + " " + z.cabeca
+	var n := 1
+	while usados.has(nome) and n < ORDINAIS.size():
+		nome = ORDINAIS[n] + base
+		n += 1
+	gu["nome"] = nome
+	registrar("guerra_inicio", "social", 8, zona, gu["a"], [], {"guerra": gu["id"], "nome": nome,
+		"motivo": gu["motivo"], "ano_primeira": gu["inicio"]}, gu["b"])
+
+
+func _terminar_guerra(gu: Dictionary, desfecho: String, vencedor: int) -> void:
+	if not gu["ativa"]:
+		return
+	gu["ativa"] = false
+	if gu["nome"].is_empty():
+		return
+	if vencedor == -1:
+		var va: int = gu["vitorias"].get(str(gu["a"]), 0)
+		var vb: int = gu["vitorias"].get(str(gu["b"]), 0)
+		if va > vb + 1:
+			vencedor = gu["a"]
+		elif vb > va + 1:
+			vencedor = gu["b"]
+	registrar("guerra_fim", "social", 8, grupos[gu["a"]].zona, gu["a"], [], {"guerra": gu["id"],
+		"nome": gu["nome"], "desfecho": desfecho, "vencedor": vencedor, "batalhas": gu["batalhas"],
+		"mortos": gu["mortos"], "anos": ano() - gu["inicio"]}, gu["b"])
+
+
+## Guerras sem batalha há 3 anos esfriam; guerras de um povo que acabou terminam.
+func _rever_guerras() -> void:
+	for gu in guerras:
+		if not gu["ativa"]:
+			continue
+		if grupos[gu["a"]].extinto or grupos[gu["b"]].extinto:
+			var vivo: int = gu["b"] if grupos[gu["a"]].extinto else gu["a"]
+			_terminar_guerra(gu, "extincao", vivo if not grupos[vivo].extinto else -1)
+		elif dia_abs() - gu["ultimo_dia"] > DIAS_ANO * 3:
+			_terminar_guerra(gu, "esfriou", -1)
 
 
 func _mortos_entre(g1: int, g2: int) -> int:
@@ -1451,8 +1674,11 @@ func _tregua(a_g: Grupo, b_g: Grupo, zona: String, motivo: String) -> void:
 	for lado in [a_g, b_g]:
 		if lado.lider != -1:
 			lideres.append(lado.lider)
+	var guerra := _guerra_entre(a_g.id, b_g.id)
 	var e := registrar("tregua", "divina" if motivo == "deus" else "social", 7, zona, a_g.id, lideres,
-		{"motivo": motivo}, b_g.id)
+		{"motivo": motivo, "guerra": guerra.get("id", -1)}, b_g.id)
+	if not guerra.is_empty():
+		_terminar_guerra(guerra, "deus" if motivo == "deus" else "tregua", -1)
 	_nomear_lugar(a_g, zona, "tregua", e)
 	_nomear_lugar(b_g, zona, "tregua", e)
 
@@ -1514,6 +1740,9 @@ const NOMES_DEUS := {
 	"sonho": [["o Que Fala no Sono", "m"], ["a Voz dos Sonhos", "f"]],
 	"doenca": [["o Que Leva", "m"], ["a Sombra", "f"]],
 	"eclipse": [["o Olho Escuro", "m"], ["o Que Apaga o Sol", "m"]],
+	"cometa": [["o Que Risca o Céu", "m"], ["a Estrela de Cauda", "f"]],
+	"gemeos": [["a Mãe de Dois", "f"], ["o Que Dá em Dobro", "m"]],
+	"terremoto": [["o Que Sacode", "m"], ["a Terra Brava", "f"]],
 	"seca": [["o Sedento", "m"], ["o Que Seca", "m"]],
 	"fome": [["o Que Nega", "m"], ["a Mão Fechada", "f"]],
 	"guerra": [["o Que Julga", "m"], ["o Senhor das Lanças", "m"]],
@@ -1685,6 +1914,11 @@ func _preces_do_dia() -> void:
 			if not g.preces.has(nec):
 				continue
 			var pr: Dictionary = g.preces[nec]
+			if nec == "banal":
+				# Pedidos pequenos somem sem resposta e sem mágoa.
+				if dia - pr["dia"] > 6:
+					g.preces.erase(nec)
+				continue
 			if not necessidades.has(nec):
 				_resolver_prece(g, nec, eventos[pr["evento"]])
 			elif dia - pr["dia"] > 14 and nec != "doenca":
@@ -1692,6 +1926,8 @@ func _preces_do_dia() -> void:
 		for nec in necessidades:
 			if not g.preces.has(nec):
 				_abrir_prece(g, nec, eventos[g.doenca_evento] if nec == "doenca" else null, -1)
+		if g.exigente and g.preces.is_empty() and chance(0.03):
+			_abrir_prece(g, "banal", null, -1)
 
 
 func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
@@ -1725,6 +1961,9 @@ func _abrir_prece(g: Grupo, nec: String, origem: Evento, alvo: int) -> void:
 		part.append(alvo)
 	var primeira := not _ja_houve("prece", g.id) and not g.origem.has("pai")
 	var imp := 6 if primeira else 3
+	if nec == "banal":
+		primeira = false
+		imp = 2
 	if alvo != -1:
 		imp = 3
 	var e := registrar("prece", "social", imp, g.zona, g.id, part, {"necessidade": nec,
@@ -1746,6 +1985,7 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 	autor.feitos += 1
 	g.silencios = maxi(0, g.silencios - 2)
 	ultimo_milagre[g.id] = dia_abs()
+	g.atendidas_seguidas += 1
 	var falso := resposta.causa != "divina"
 	registrar("prece_atendida", "social", 6, g.zona, g.id, [autor.id], {"necessidade": nec,
 		"prece": pr["evento"], "resposta": resposta.id, "falso_milagre": falso})
@@ -1753,12 +1993,37 @@ func _resolver_prece(g: Grupo, nec: String, resposta: Evento) -> void:
 		_nova_crenca(g, "ouve_preces", resposta)
 	if nec == "seca" and not g.tem_costume("festa_chuva"):
 		_novo_costume(g, "festa_chuva", resposta)
+	# Um deus que sempre responde cria dependência e, depois, exigências banais.
+	if g.atendidas_seguidas >= 5 and not g.dependente and not _ja_houve("dependencia", g.id) 			and g.membros.size() >= 15 and ano() - _ano_da_primeira_prece(g) >= 10:
+		g.dependente = true
+		var largou := ""
+		for c in g.costumes:
+			if c["tipo"] in ["estocar", "agua"]:
+				largou = c["tipo"]
+				g.costumes.erase(c)
+				break
+		registrar("dependencia", "social", 7, g.zona, g.id, [], {"largou": largou, "deus": g.nome_deus})
+	elif g.atendidas_seguidas >= 8 and g.dependente and not g.exigente and not _ja_houve("exigencia", g.id):
+		g.exigente = true
+		registrar("exigencia", "social", 6, g.zona, g.id, [], {"deus": g.nome_deus})
+
+
+func _ano_da_primeira_prece(g: Grupo) -> int:
+	for e in eventos:
+		if e.tipo == "prece" and e.grupo == g.id:
+			return e.ano
+	return ano()
 
 
 func _prece_sem_resposta(g: Grupo, nec: String, morte: Evento) -> void:
 	var pr: Dictionary = g.preces[nec]
 	g.preces.erase(nec)
 	g.silencios += 1
+	g.atendidas_seguidas = 0
+	if g.dependente and not _ja_houve("desamparo", g.id):
+		g.dependente = false
+		g.exigente = false
+		registrar("desamparo", "social", 6, g.zona, g.id, [pr["autor"]], {"deus": g.nome_deus})
 	var autor: Pessoa = pessoas[pr["autor"]]
 	autor.fe = clampf(autor.fe - (0.45 if morte != null else 0.2), -1.0, 1.0)
 	for p in _membros(g):
@@ -1890,12 +2155,58 @@ const ALCANCE_ALVO := 6.0   # pixels: raio e sonho acertam quem está a esta dis
 func _executar_comandos() -> void:
 	while _proximo_comando < comandos.size():
 		var c: Dictionary = comandos[_proximo_comando]
+		if c.has("condicao"):
+			break
 		var quando: int = ((c["ano"] - 1) * DIAS_ANO + c["dia"]) * HORAS_DIA + c["hora"]
 		if quando > passo:
 			return
 		_proximo_comando += 1
 		if not fim_do_mundo:
 			_comando_de_cenario(c)
+
+
+## Comandos condicionais: disparam uma vez, quando a condição acontece.
+func _executar_condicionais() -> void:
+	for i in range(_proximo_comando, comandos.size()):
+		var c: Dictionary = comandos[i]
+		if not c.has("condicao") or c["usado"] or ano() < c["desde_ano"]:
+			continue
+		var onde := _onde_acontece(c["condicao"])
+		if onde.is_empty():
+			continue
+		c["usado"] = true
+		var cc := c.duplicate()
+		if cc["zona"].is_empty():
+			cc["zona"] = onde
+		if not fim_do_mundo:
+			_comando_de_cenario(cc)
+
+
+## Zona onde a condição está acontecendo agora, ou "".
+func _onde_acontece(condicao: String) -> String:
+	match condicao:
+		"seca":
+			if seca_global and seca_evento >= 0 and dia_abs() - _dia_do_evento(seca_evento) >= 3:
+				for g in grupos_vivos():
+					if zonas[g.zona].seca:
+						return g.zona
+		"fome":
+			for g in grupos_vivos():
+				if g.em_fome:
+					return g.zona
+		"doenca":
+			for g in grupos_vivos():
+				if g.doenca_evento >= 0:
+					return g.zona
+		"prece":
+			for g in grupos_vivos():
+				if not g.preces.is_empty():
+					return g.zona
+		"guerra":
+			for gu in guerras:
+				if gu["ativa"] and gu["ultimo_dia"] == dia_abs():
+					return grupos[gu["b"]].zona
+	return ""
 
 
 ## Um comando de cenário vira um gesto: x no centro da zona, ou sobre o alvo.
@@ -2163,7 +2474,18 @@ func grupos_visiveis() -> Array:
 			"nome_deus": g.nome_deus if g.tem_crenca and not g.ceticos else "",
 			"ceticos": g.ceticos, "em_fome": g.em_fome, "doenca": g.doenca_evento >= 0,
 			"costumes": g.costumes.map(func(c): return c["tipo"]),
+			"estranhos": g.estranhos, "mortos": g.mortos, "dependente": g.dependente,
 			"origem": g.origem.duplicate()})
+	return r
+
+
+## Guerras em andamento que já têm nome (duas batalhas ou mais).
+func guerras_ativas() -> Array:
+	var r: Array = []
+	for gu in guerras:
+		if gu["ativa"] and not gu["nome"].is_empty():
+			r.append({"id": gu["id"], "nome": gu["nome"], "a": gu["a"], "b": gu["b"], "motivo": gu["motivo"],
+				"inicio": gu["inicio"], "batalhas": gu["batalhas"], "mortos": gu["mortos"]})
 	return r
 
 
@@ -2220,6 +2542,8 @@ func preces_abertas() -> Array:
 
 ## Camada de atenção de um evento: "ambiente", "nota" ou "chamado".
 func camada(e: Evento) -> String:
+	if e.tipo == "prece" and e.dados.get("necessidade", "") == "banal":
+		return "nota"
 	if e.importancia >= 8 or TIPOS_CHAMADO.has(e.tipo):
 		return "chamado"
 	if e.importancia >= 4:

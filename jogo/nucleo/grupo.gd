@@ -41,6 +41,11 @@ var doenca_mortos: int = 0
 var frio_mortos: int = 0
 var amaldicoada: bool = false     # a zona atual foi lida como maldita
 var nascimentos: int = 0
+var estranhos: float = 0.0       # relação com estranhos: -1 desconfiada, 1 acolhedora
+var mortos: String = ""          # o que se faz com os mortos: enterram, queimam, veneram
+var atendidas_seguidas: int = 0  # preces atendidas sem nenhum silêncio no meio
+var dependente: bool = false     # deixou de se preparar: o deus sempre dá
+var exigente: bool = false       # passou a pedir coisas pequenas
 var ultimo_ataque_sofrido: int = -1000
 
 

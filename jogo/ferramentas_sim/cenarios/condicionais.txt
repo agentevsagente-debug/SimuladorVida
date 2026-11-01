@@ -1,0 +1,6 @@
+# Teste de comandos condicionais: o deus só reage ao que acontece.
+na próxima seca: chuva onde houver seca
+na próxima fome, a partir do ano 20: fartura onde houver fome
+quando houver guerra: erguer terra onde houver guerra
+na próxima doença: sonho onde houver doença
+ano 40, dia 10: raio sobre o líder do lago

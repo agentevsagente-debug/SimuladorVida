@@ -6,331 +6,352 @@ No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. En
 
 ### Ano 1
 
-Em Koil nasceu a primeira criança: Dos, filho de Vidoya e Peos.
+No inverno, nasceu Vikuru, a primeira de Koil.
 
-*O ano 2 foi calmo.*
+*Entre os anos 2 e 3, nada mudou o rumo do mundo.*
 
-### Ano 3
+### Ano 4
 
-A chuva parou de cair. A seca durou 26 dias, e os riachos viraram pedra.
+Veio uma seca de 23 dias. O lago encolheu e a mata secou.
 
-*Entre os anos 4 e 5, nada mudou o rumo do mundo.*
+### Ano 5
 
-### Ano 6
+Koil deixou a floresta, onde a comida tinha acabado, e foi viver na praia. Houve fome em Koil no inverno: 8 dias de barriga vazia, sem mortes. O inverno foi duro, mas ninguém morreu de frio.
 
-No inverno do ano 6, Lokure deu à luz e não sobreviveu ao parto.
+*Os anos 6 a 7 passaram em paz.*
 
-*Do ano 7 ao 8, a vida seguiu sem grandes acontecimentos.*
+### Ano 8
+
+Na primavera, Doya morreu com 6 anos, de uma febre que ninguém entendeu.
 
 ### Ano 9
 
-Houve fome em Koil: 4 dias de barriga vazia, sem mortes. No outono, com fome, Koil levantou acampamento na floresta e foi buscar comida na praia. A seca voltou, como no ano 3: 21 dias sem chuva, até que o céu se abriu.
+Kurpeya disse que alguém, lá em cima, segurava a comida e a chuva. Koil passou a chamá-lo de «o Sedento». Assim nasceu a primeira fé. Pela primeira vez, alguém em Koil pediu ao céu. Foi Kurpeya: «Sedento, não deixes nossos filhos morrerem de fome.» Em Koil, Kurpeya pediu: «Sedento, não nos deixes secar.» Quando a chuva voltou, Koil agradeceu ao Sedento. O deus nada fez: o crédito era de graça. Em Koil, firmou-se a certeza de que o Sedento ouve quem pede. O dia em que a chuva voltou virou festa em Koil: todo ano, celebram a chuva que o Sedento mandou.
 
 ### Ano 10
 
-O inverno foi de gelo: uma pessoa morreu de frio. Koik disse que alguém, lá em cima, segurava a comida e a chuva. Koil passou a chamá-lo de «o Que Nega». Assim nasceu a primeira fé. Pela primeira vez, alguém em Koil pediu ao céu. Foi Koik: «Que Nega, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Que Nega. A crônica sabe que foi acaso. Em Koil, firmou-se a certeza de que o Que Nega ouve quem pede. No fim do ano 10, vinte pessoas viviam no mundo, todas em Koil.
+Em Koil, Kurpeya pediu: «Sedento, dá-nos o que comer.» A fome passou, e Koil viu nisso obra do Sedento. O deus não tinha feito nada. Nos anos 1 a 10 houve duas secas, seis fomes e três preces que pareceram atendidas; nasceram onze crianças e morreram uma pessoas. No fim do ano 10, 22 pessoas viviam no mundo, todas em Koil.
 
 ### Ano 11
 
-Koik passou a falar pelo Que Nega em Koil. Era o primeiro a rezar e o último a duvidar. No verão, Peos, o engenhoso, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. Vidoya passou a guiar Koil, mas Tamu não aceitou e guardou rancor. Koil passou a festejar todo ano o dia da volta da chuva, em honra do Que Nega. A fome ensinou: desde então, Koil estoca comida e não come tudo o que colhe.
+Koil já não cabia na floresta. Koveos, o curioso, levou catorze pessoas para o lago e fundou Tamon. Era o primeiro povo nascido de outro. Em Koil, Lokure tomou para si o cuidado das preces ao Sedento.
 
 ### Ano 12
 
-Com Koveos à frente, doze pessoas deixaram Koil e fundaram Veak, na floresta. Era o primeiro povo nascido de outro. Em Veak, Kurpeya tomou para si o cuidado das preces ao Que Nega.
+No verão do ano 12, Peos, o engenhoso, descobriu que uma semente enterrada vira planta. Foi a fome que o fez olhar para o chão. Em Tamon, Kurpeya tomou para si o cuidado das preces ao Sedento.
 
-### Ano 13
-
-No inverno, em Veak nasceu a primeira criança: Doya, filha de Viela e Koik.
+*No ano 13, nada de notável aconteceu.*
 
 ### Ano 14
 
-Na primavera do ano 14, Tamu, fundadora de Koil, morreu dormindo, aos 62 anos.
+Na primavera, nasceu Vela, a primeira de Tamon. Quando Viela morreu, Tamon guardou os ossos junto ao altar e passou a pedir a Viela pelos vivos. Os mortos de Tamon viraram ancestrais a quem se reza. No outono, Viu, de Koil, casou-se com Makon e foi viver em Tamon. Foi o primeiro laço entre os dois povos.
 
-### Ano 15
-
-No verão do ano 15, Veak fez as primeiras roças na floresta. Deixou de viver só do que achava e passou a plantar. De novo a chuva sumiu, como no ano 9. Foram 18 dias de seca. Kurpeya tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Veak duvidou de que o Que Nega tinha ouvido. O deus nada fez: o crédito era de graça.
+*O ano 15 passou sem nada que a crônica precise guardar.*
 
 ### Ano 16
 
-Na primavera do ano 16, Makon, de Koil, tomou por esposa Viu, de Veak, e os dois povos passaram a se visitar. Viu levou consigo o segredo das sementes.
+Na primavera, Tamon deixou o lago, onde a comida tinha acabado, e foi viver na praia. Em Tamon, Koveos pediu: «Sedento, dá-nos o que comer.» A fome passou, e Tamon viu nisso obra do Sedento. O deus não tinha feito nada.
 
-### Ano 17
-
-Na primavera, Doya morreu com 4 anos, de uma febre que ninguém entendeu. No inverno, nas terras do lago, Koil plantou suas primeiras roças. Já não precisava andar atrás de comida.
-
-*O ano 18 passou sem nada que a crônica precise guardar.*
-
-### Ano 19
-
-Koveos rezou, e nada aconteceu. De novo a chuva sumiu, como no ano 15. Foram 25 dias de seca. Em Veak, Kurpeya pediu: «Que Nega, que a chuva volte.» Quando a chuva voltou, Veak agradeceu ao Que Nega. O deus não tinha feito nada.
+*Do ano 17 ao 19, a vida seguiu sem grandes acontecimentos.*
 
 ### Ano 20
 
-No fim do ano 20, 25 pessoas viviam no mundo: Koil (7) e Veak (18).
+Em Tamon, Koveos pediu: «Sedento, dá-nos o que comer.» A fome passou, e Tamon viu nisso obra do Sedento. O deus não tinha feito nada. No inverno, Tamu, a engenhosa, descobriu que uma semente enterrada vira planta. A lembrança da fome pesou. Nos anos 11 a 20 houve duas secas, três fomes e sete preces que pareceram atendidas; nasceram nove crianças e morreram uma pessoas. No fim do ano 20, 30 pessoas viviam no mundo: Koil (13) e Tamon (17).
 
-*O ano 21 foi calmo.*
+### Ano 21
 
-### Ano 22
+Vepeik, que guiava Koil, morreu dormindo, aos 72 anos. Morreu Tamu, a engenhosa, aos 69 anos. Ela sabia plantar. Com a morte de Tamu, Tamon perdeu o segredo das sementes: ninguém mais sabia plantar. No verão, nas terras da floresta, Koil plantou suas primeiras roças. Já não precisava andar atrás de comida. No outono, o sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê.
 
-Na primavera do ano 22, morreu Kurpeya, que falava pelo Que Nega em Veak, aos 50 anos.
-
-*O ano 23 passou sem nada que a crônica precise guardar.*
+*Entre os anos 22 e 23, nada mudou o rumo do mundo.*
 
 ### Ano 24
 
-De novo a chuva sumiu, como no ano 19. Foram 22 dias de seca. Koveos tinha rezado: «Que Nega, não nos deixes secar.» Dias depois, a chuva voltou, e ninguém em Veak duvidou de que o Que Nega tinha ouvido. O deus não tinha feito nada.
+Na primavera, Koveos, o curioso, notou que as sementes jogadas perto do acampamento brotavam. Começou a enterrá-las de propósito. A lembrança da fome pesou.
 
-*Do ano 25 ao 29, a vida seguiu sem grandes acontecimentos.*
+### Ano 25
+
+Koveos tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A fome passou, e Tamon viu nisso obra do Sedento. A crônica sabe que foi acaso. Tantas preces atendidas fizeram Tamon confiar no céu mais do que nas próprias mãos. No verão, Doela, de Koil, casou-se com Tamur e foi viver em Tamon. Com Doela chegou a Tamon o saber de plantar.
+
+### Ano 26
+
+Koveos, que fundou Tamon e o guiava, morreu de velhice aos 54 anos. Ele sabia plantar. Tamon passou a ser guiado por Makon. Em Tamon, rezava-se por qualquer coisa: um peixe maior, um dia sem vento.
+
+### Ano 27
+
+Na primavera do ano 27, em Tamon, os jovens deixaram de lado a festa da chuva. Era coisa de outro povo, diziam. As preces de Koil ficaram sem resposta. A seca voltou, como no ano 4: 24 dias sem chuva, até que o céu se abriu. O dia em que a chuva voltou virou festa em Tamon: todo ano, celebram a chuva que o Sedento mandou.
+
+### Ano 28
+
+Os de Tamon caíram sobre Koil na floresta. Koil resistiu, e Tamon voltou de mãos vazias. Vidoik e Kou morreram na luta. Foi a primeira vez que gente matou gente no mundo. Desde então, os de Koil chamam o lugar de Floresta da Vitória; os de Tamon, de Floresta do Luto. Tamon não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Dessa vez, o Sedento não respondeu, e Tamon, que tinha esquecido como se virar sozinho, pagou caro.
+
+### Ano 29
+
+Dos tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamon deu graças ao Sedento. Foi só o tempo, mas quem iria dizer?
 
 ### Ano 30
 
-No fim do ano 30, 41 pessoas viviam no mundo: Koil (11) e Veak (30).
+Começou a Guerra da Fome: Tamon, com fome, foi buscar à força a comida de Koil. Nos anos 21 a 30 houve onze fomes, duas batalhas, dezesseis preces que pareceram atendidas e três preces sem resposta; nasceram dezenove crianças e morreram quinze pessoas. No fim do ano 30, 34 pessoas viviam no mundo: Koil (14) e Tamon (20).
 
-*Entre os anos 31 e 32, nada mudou o rumo do mundo.*
+### Ano 31
 
-### Ano 33
+No inverno do ano 31, a Guerra da Fome seguiu: Tamon contra Koil, na floresta. Koil expulsou os atacantes. Viu e Makon morreram na luta. Tamon e Koil, cansados de enterrar os seus, fizeram as pazes na floresta. Depois de três anos, três batalhas e quatro mortos, a Guerra da Fome terminou em paz.
 
-Na primavera do ano 33, Koveos, que fundou Veak e o guiava, morreu dormindo, aos 61 anos. Morreu Koik, o generoso, aos 62 anos. No verão, a rixa entre Vidoya e Makon rachou Koil. Vidoya partiu com os seus, cinco pessoas, e fundou Mail na praia.
+*Entre os anos 32 e 33, nada mudou o rumo do mundo.*
 
 ### Ano 34
 
-Em Koil, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 11, só a crônica guarda. Em Koil, já ninguém lembrava por que se guardava tanta comida para o inverno. O que aconteceu no ano 11, só a crônica guarda. No verão, nasceu Loya, a primeira de Mail.
+Kurpeya tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Tamon deu graças ao Sedento. A crônica sabe que foi acaso.
 
 ### Ano 35
 
-Viela tinha rezado: «Manda água, Que Nega, que as crianças têm sede.» Quando a chuva voltou, Veak agradeceu ao Que Nega. A crônica sabe que foi acaso.
+Na primavera, morreu Lokure, que falava pelo Sedento em Koil, aos 62 anos. Morreu Kurpeya, que guiava Tamon, aos 63 anos. Foi quem deu ao deus o nome de «o Sedento».
 
-*O ano 36 passou sem nada que a crônica precise guardar.*
+### Ano 36
+
+Um raio caiu na praia durante a tempestade e matou Dos. Ninguém em Tamon teve dúvida: era castigo. Com Vela à frente, oito pessoas deixaram Tamon e fundaram Kiar, no lago. Tamon passou a acreditar que o Sedento castiga quem duvida, e que Dos tinha duvidado. Nasceu ali um costume: quando o céu escurece, ninguém em Tamon sai de casa. Lembram de Dos. O lugar ganhou nome: Praia do Raio.
 
 ### Ano 37
 
-No inverno, Viu passou a falar pelo Que Nega em Mail. Era a primeira a rezar e a última a duvidar.
+Kuro passou a falar pelo Sedento em Kiar. Era o primeiro a rezar e o último a duvidar. Maon, de Koil, casou-se com Tamya e foi viver em Tamon. Com Maon chegou a Tamon o saber de plantar.
 
-*Do ano 38 ao 39, a vida seguiu sem grandes acontecimentos.*
+### Ano 38
+
+Na primavera do ano 38, numa tempestade sobre o lago, um raio matou Haya. Em Kiar, disseram que era castigo. Para Kiar, Haya foi castigada. Desde então, quem duvida do Sedento duvida em silêncio. Nasceu ali um costume: quando o céu escurece, ninguém em Kiar sai de casa. Lembram de Haya. Desde aquele dia, Kiar chama o lago de Lago do Raio.
+
+### Ano 39
+
+Nasceu Kotame, filha de Vela, que guiava Kiar.
 
 ### Ano 40
 
-No fim do ano 40, 70 pessoas viviam no mundo: Koil (12), Veak (47) e Mail (11).
+Em Tamon, Tamur pediu: «Sedento, dá-nos o que comer.» A fome passou, e Tamon viu nisso obra do Sedento. Foi só o tempo, mas quem iria dizer? Nos anos 31 a 40 houve cinco fomes, dezesseis preces que pareceram atendidas e cinco preces sem resposta; nasceram 28 crianças e morreram treze pessoas. No fim do ano 40, 49 pessoas viviam no mundo: Koil (24), Tamon (15) e Kiar (10).
 
 ### Ano 41
 
-Na primavera, Veur não podia mais viver perto de Kurmaela. Saiu de Veak com catorze pessoas e fundou Gaon no morro. No outono, um raio caiu no morro durante a tempestade e matou Dovie. Em Gaon, disseram que era castigo. Para Gaon, Dovie foi castigada. Desde então, quem duvida do Que Nega duvida em silêncio. Desde a morte de Dovie, ninguém em Gaon sobe o morro em dia de tempestade. Desde aquele dia, Gaon chama o morro de Morro do Raio.
+Vidoya, que guiava Koil, morreu dormindo, aos 69 anos. Kiar deixou o lago, onde a comida tinha acabado, e foi viver no morro. Vela tinha rezado: «Sedento, dá-nos o que comer.» A fome passou, e Kiar viu nisso obra do Sedento. O deus nada fez: o crédito era de graça. A seca voltou, como no ano 27: 19 dias sem chuva, até que o céu se abriu. Koil já não se preparava para nada: o Sedento sempre dava.
 
 ### Ano 42
 
-Em Gaon, Viela tomou para si o cuidado das preces ao Que Nega. Kurkoela, de Veak, casou-se com Kurdon e foi viver em Gaon. Foi o primeiro laço entre os dois povos. Viu tinha rezado: «Que Nega, não leves Los.» Os doentes se levantaram. Em Mail, o crédito foi do Que Nega. A crônica sabe que foi acaso. Nasceu Kure, filha de Doloya e Kik, com sangue de Gaon e de Koil.
+Na primavera, Peos, que falava pelo Sedento em Koil, morreu de velhice aos 69 anos. Tinha sido o primeiro a plantar.
 
 ### Ano 43
 
-Vidoya, que fundou Mail e o guiava, morreu dormindo, aos 71 anos.
+No verão, Vikuru morreu ao dar à luz. Na guerra, tinha tirado duas vidas. Vela, a curiosa, descobriu que uma semente enterrada vira planta. Foi a fome que a fez olhar para o chão.
 
 ### Ano 44
 
-Tamur, que falava pelo Que Nega em Veak, morreu de repente, aos 41 anos.
+A seca voltou, como no ano 41: 19 dias sem chuva, até que o céu se abriu.
 
 ### Ano 45
 
-Na primavera, Kidour, de Koil, tomou por esposa Veis, de Gaon, e os dois povos passaram a se visitar.
+Dessa vez, o Sedento não respondeu, e Koil, que tinha esquecido como se virar sozinho, pagou caro. Depois daquela fome, Koil passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio.
 
 ### Ano 46
 
-Na primavera do ano 46, Viu, que guiava Mail, morreu dormindo, aos 50 anos. Houve fome em Mail no inverno: 22 dias de barriga vazia, sem mortes. Tamkou tinha rezado: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Mail viu nisso a mão do Que Nega. Foi só o tempo, mas quem iria dizer?
+Domaur, de Koil, tomou por esposa Kurela, de Kiar, e os dois povos passaram a se visitar.
 
-### Ano 47
-
-Foram 11 dias de fome no inverno em Mail, com dois mortos. A praia passou a ser a praia da fome: Praia da Fome.
+*No ano 47, nada de notável aconteceu.*
 
 ### Ano 48
 
-A seca voltou, como no ano 24: 21 dias sem chuva, até que o céu se abriu. Em Gaon, Veur pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Gaon duvidou de que o Que Nega tinha ouvido. Foi só o tempo, mas quem iria dizer?
+Com Vela à frente, a nova geração de Kiar abandonou a festa da chuva, costume herdado dos avós. Koe, de Koil, casou-se com Malos e foi viver em Tamon. Com Koe chegou a Tamon o saber de plantar.
 
-*O ano 49 foi calmo.*
+### Ano 49
+
+Veur tinha rezado: «Sedento, não deixes nossos filhos morrerem de fome.» A comida voltou, e Koil deu graças ao Sedento. O deus não tinha feito nada. Doela, a ambiciosa, cansou de dividir pouca comida. Partiu com catorze pessoas para o morro e ali fundou Enzes. Em Enzes, Tamur tomou para si o cuidado das preces ao Sedento. No inverno, Enzes fez as primeiras roças no morro. Deixou de viver só do que achava e passou a plantar.
 
 ### Ano 50
 
-No fim do ano 50, 103 pessoas viviam no mundo: Koil (23), Veak (31), Mail (8) e Gaon (41).
+Com Doela à frente, a nova geração de Enzes abandonou a festa da chuva, costume herdado dos avós. Em Enzes, Doela pediu: «Sedento, dá-nos o que comer.» A fome passou, e Enzes viu nisso obra do Sedento. O deus nada fez: o crédito era de graça. Nos anos 41 a 50 houve duas secas, onze fomes e vinte preces que pareceram atendidas; nasceram 31 crianças e morreram catorze pessoas. No fim do ano 50, 66 pessoas viviam no mundo: Koil (35), Tamon (5), Kiar (12) e Enzes (14).
 
 ### Ano 51
 
-No outono do ano 51, Dour, de Gaon, tomou por esposa Loya, de Mail, e os dois povos passaram a se visitar.
+Kurkuru morreu de repente, aos 11 anos.
 
 ### Ano 52
 
-Viela, que falava pelo Que Nega em Gaon, morreu de velhice aos 62 anos. Veu, de Mail, casou-se com Kipeon e foi viver em Veak. Foi o primeiro laço entre os dois povos.
+Liu, de Kiar, casou-se com Kio e foi viver em Tamon. Foi o primeiro laço entre os dois povos.
 
-*Entre os anos 53 e 54, nada mudou o rumo do mundo.*
+### Ano 53
+
+Na primavera, Maya, de Koil, casou-se com Kon e foi viver em Tamon. Com Maya chegou a Tamon o saber de plantar.
+
+### Ano 54
+
+Kiar passou fome no inverno por 20 dias, mas ninguém morreu. A fome ensinou: desde então, Kiar estoca comida e não come tudo o que colhe.
 
 ### Ano 55
 
-Os de Gaon caíram sobre Mail na praia. Gaon venceu e levou a comida guardada. Tamon e Los morreram na luta. Foi a primeira vez que gente matou gente no mundo. Mail não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Depois da derrota, Mail não existia mais: os quatro que sobraram foram levados para Gaon. A rixa entre Tamkoik e Veur rachou Gaon. Tamkoik partiu com os seus, onze pessoas, e fundou Taem na praia. Em Taem, Tamkou tomou para si o cuidado das preces ao Que Nega.
+Morreu Koia, filha pequena de Vela. Pela, de Koil, casou-se com Kio e foi viver em Tamon. Com Pela chegou a Tamon o saber de plantar. Lou deu à luz gêmeos, Velon e Lour. Uns viram bênção; outros, mau sinal. Nas terras da praia, Kiar plantou suas primeiras roças. Já não precisava andar atrás de comida.
 
 ### Ano 56
 
-Kurmaela, que guiava Veak, morreu de velhice aos 52 anos. Morreu Tamkou, que falava pelo Que Nega em Taem, aos 52 anos. Gaon atacou Veak na floresta. Veak expulsou os atacantes. Kik e Dour morreram na luta. Gaon e Veak fizeram as pazes na floresta, antes que a briga crescesse. Kour não podia mais viver perto de Vekie. Saiu de Koil com dezesseis pessoas e fundou Orum na praia.
+Na primavera do ano 56, Veur, que guiava Koil, morreu dormindo, aos 58 anos. Em Enzes nasceu a primeira criança: Enmau, filha de Kiela e Lon.
 
-### Ano 57
-
-Os de Gaon caíram sobre Koil no lago. Gaon venceu e levou a comida guardada. Na luta morreu Maon. Em Orum, Dokon tomou para si o cuidado das preces ao Que Nega.
-
-### Ano 58
-
-Na primavera, morreu Veur, que fundou Gaon e o guiava, aos 60 anos. Numa tempestade sobre a praia, um raio matou Dokon. Os seus nunca esqueceram. Desde a morte de Dokon, ninguém em Orum desce à praia em dia de tempestade. Koil não esqueceu o ano 57 e atacou Gaon outra vez. Gaon resistiu, e Koil voltou de mãos vazias. Kidour e Veis morreram na luta. Koil acabou: Tampela e Don foram viver em Veak.
-
-### Ano 59
-
-Veak passou fome no inverno por 11 dias, e cinco pessoas morreram. Em Veak, Nuos pediu: «Que Nega, dá-nos o que comer.» A comida voltou, e Veak deu graças ao Que Nega. Foi só o tempo, mas quem iria dizer? No verão, Nuos rezou por Kurpeis até a voz acabar. Kurpeis morreu mesmo assim, e Nuos nunca mais rezou. Uma tosse que não passava matou seis pessoas em Veak. Depois da febre, Veak passou a queimar os seus mortos, para que a doença não voltasse.
+*Entre os anos 57 e 59, nada mudou o rumo do mundo.*
 
 ### Ano 60
 
-Em Veak, Vios pediu: «Que Nega, dá-nos o que comer.» A comida voltou, e Veak deu graças ao Que Nega. A crônica sabe que foi acaso. No outono, nasceu Vekurik, filho de Koe e Kurkik, com sangue de Orum e de Veak. No fim do ano 60, 144 pessoas viviam no mundo: Veak (76), Gaon (32), Taem (14) e Orum (22).
+Nos anos 51 a 60 houve três fomes e nove preces que pareceram atendidas; nasceram 68 crianças e morreram 23 pessoas. No fim do ano 60, 112 pessoas viviam no mundo: Koil (63), Tamon (14), Kiar (24) e Enzes (11).
 
 ### Ano 61
 
-O sol se apagou no meio da tarde e voltou pouco depois. Ninguém soube dizer por quê. Para Gaon, o deus já não era «o Que Nega»: passou a ser «o Que Apaga o Sol». Para Orum, o deus já não era «o Que Nega»: passou a ser «o Olho Escuro». Os de Veak caíram sobre Taem na praia. Taem foi derrotado e perdeu o que tinha guardado. Marya e Tamya morreram na luta. Veak e Taem fizeram as pazes na praia, antes que a briga crescesse.
+Em Koil, Maela pediu: «Sedento, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Koil duvidou de que o Sedento tinha ouvido. Foi só o tempo, mas quem iria dizer? O dia em que a chuva voltou virou festa em Kiar: todo ano, celebram a chuva que o Sedento mandou. O dia em que a chuva voltou virou festa em Enzes: todo ano, celebram a chuva que o Sedento mandou.
 
 ### Ano 62
 
-Na primavera, Kuros, de Orum, tomou por esposa Maris, de Taem, e os dois povos passaram a se visitar. Foram 7 dias de fome no inverno em Veak, com um morto. No outono, os de Veak caíram sobre Orum na praia. Orum resistiu, e Veak voltou de mãos vazias. Na luta morreu Kour. Depois da derrota, os jovens de Veak passaram a treinar com lanças.
+Maela tinha rezado: «Sedento, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Sedento. O deus não tinha feito nada. A doença entrou em Koil e matou seis pessoas. Desde a febre, Koil não enterra mais ninguém: os mortos vão para o fogo.
 
 ### Ano 63
 
-De novo Veak contra Orum, como no ano 62. Orum expulsou os atacantes. Kiveik e Koe morreram na luta.
+A seca voltou, como no ano 44: 24 dias sem chuva, até que o céu se abriu.
 
 ### Ano 64
 
-Um inverno duro matou seis pessoas de frio. Desde então, Orum chama a floresta de Floresta do Luto. Orum e Veak, cansados de enterrar os seus, fizeram as pazes na floresta. Kurpeon, que guiava Gaon, morreu de fome. Veak acabou: Kois e Doela foram viver em Gaon.
+Com Doela à frente, a nova geração de Enzes abandonou o medo das tempestades, costume herdado dos avós. Koil conheceu a maior fome da sua história por causa da seca. Em 23 dias, morreram 14. Muitas cabanas ficaram vazias. A fome ensinou: desde então, Tamon estoca comida e não come tudo o que colhe. Kiar passou fome por causa da seca por 19 dias, e três pessoas morreram. Desde então, Kiar chama a praia de Praia da Fome.
 
 ### Ano 65
 
-Gaon acabou: Nutamos e Doela foram viver em Orum. A fome por causa da seca durou 20 dias em Orum e levou três vidas. Em Orum, Kokiu pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Orum deu graças ao Olho Escuro. O deus nada fez: o crédito era de graça. O inverno foi de gelo: cinco pessoas morreram de frio.
+Na primavera do ano 65, Kiur, que guiava Koil, morreu dormindo, aos 50 anos.
 
 ### Ano 66
 
-Na primavera do ano 66, houve luta na praia: Taem atacou Orum. Taem venceu e levou a comida guardada.
+Na primavera, Doela, que fundou Enzes e o guiava, morreu de velhice aos 62 anos. Foi quem levou os seus a fundar Enzes. Numa tempestade sobre a floresta, um raio matou Vekurya. A família de Vekurya nunca perdoou o céu. Desde a morte de Vekurya, ninguém em Koil entra na floresta em dia de tempestade.
 
 ### Ano 67
 
-No verão do ano 67, Orum não esqueceu o ano 66 e atacou Taem outra vez. Taem resistiu, e Orum voltou de mãos vazias. Na luta morreram Maela e Koveon. A seca voltou, como no ano 48: 21 dias sem chuva, até que o céu se abriu. Em Taem, Tamkoik pediu: «Que Nega, que a chuva volte.» Dias depois, a chuva voltou, e ninguém em Taem duvidou de que o Que Nega tinha ouvido. A crônica sabe que foi acaso.
+Tamur, que guiava Enzes, morreu de velhice aos 60 anos. No outono, um raio caiu no morro durante a tempestade e matou Hau. Os seus nunca esqueceram. Depois disso, Enzes deixou de chamar o deus de «o Sedento» e passou a chamá-lo de «o Senhor do Trovão». Nasceu ali um costume: quando o céu escurece, ninguém em Enzes sai de casa. Lembram de Hau. O lugar ganhou nome: Morro do Raio.
 
-*Do ano 68 ao 69, a vida seguiu sem grandes acontecimentos.*
+*No ano 68, nada de notável aconteceu.*
+
+### Ano 69
+
+Koya, de Kiar, casou-se com Kon e foi viver em Tamon. Koya levou consigo o segredo das sementes. Domaur implorou pela filha. Viya morreu, e daquele dia em diante Domaur cuspia no chão quando falavam do Sedento.
 
 ### Ano 70
 
-No fim do ano 70, 29 pessoas viviam no mundo: Taem (19) e Orum (10).
+Em Koil, Maela pediu: «Sedento, dá-nos o que comer.» A comida voltou, e Koil deu graças ao Sedento. Foi só o tempo, mas quem iria dizer? Nos anos 61 a 70 houve três secas, oito fomes, 23 preces que pareceram atendidas e seis preces sem resposta; nasceram 74 crianças e morreram 59 pessoas. No fim do ano 70, 127 pessoas viviam no mundo: Koil (64), Tamon (15), Kiar (27) e Enzes (21).
 
-*O ano 71 passou sem nada que a crônica precise guardar.*
+### Ano 71
+
+Na primavera do ano 71, Kovela, de Koil, casou-se com Tamveur e foi viver em Tamon. Com Kovela chegou a Tamon o saber de plantar. Mave passou a guiar Koil, mas Kimaon não aceitou e guardou rancor. Foram 5 dias de fome no inverno em Koil, com três mortos. No inverno, Koe partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa.
 
 ### Ano 72
 
-A guerra entre Orum e Taem continuou: Orum voltou a atacar na praia. Taem expulsou os atacantes. Pevik, Kokiu e Kou morreram na luta.
+Em Enzes, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 28, só a crônica guarda. Sem lugar e sem comida, Lon e os seus atravessaram a borda do mundo. Ninguém soube deles. Em Enzes, Lon pediu: «Senhor do Trovão, dá-nos o que comer.» A comida voltou, e Enzes deu graças ao Senhor do Trovão. O deus não tinha feito nada. Depois daquela fome, Enzes passou a guardar comida para o inverno. Nunca mais deixaram o celeiro vazio. Veio a pior fome que o mundo tinha visto: 28 dias por causa da seca em Koil, e 36 mortos. As crianças foram as primeiras.
 
-### Ano 73
-
-De novo Orum contra Taem, como no ano 72. Taem expulsou os atacantes. Na luta morreu Tamkiur.
-
-### Ano 74
-
-No outono do ano 74, com Vinuis à frente, quatro pessoas deixaram Taem e fundaram Kurum, na floresta.
+*Entre os anos 73 e 74, nada mudou o rumo do mundo.*
 
 ### Ano 75
 
-Em Kurum, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 41, só a crônica guarda. Selarela, a medrosa, deu à luz e não sobreviveu ao parto.
+Enzes atacou Koil na floresta. Koil expulsou os atacantes. Lopeya e Haur morreram na luta. Para Enzes, a floresta virou Floresta do Luto. Enzes acabou: Zefae, a última, foi viver em Tamon. No inverno, a rixa entre Kuro e Vela rachou Kiar. Kuro partiu com os seus, dez pessoas, e fundou Kolil no morro. Kitamos passou a falar pelo Sedento em Kolil. Era o primeiro a rezar e o último a duvidar.
 
 ### Ano 76
 
-Nasceu Koena, a primeira de Kurum.
+Na primavera do ano 76, Kon morreu de repente, aos 41 anos. Kitamos, que falava pelo Sedento em Kolil, morreu de repente, aos 44 anos. Vekuros, de Tamon, tomou por esposa Tamkiya, de Kolil, e os dois povos passaram a se visitar. Com Tamkiya chegou a Tamon o saber de plantar. Nas terras do Lago da Fome, Tamon plantou suas primeiras roças. Já não precisava andar atrás de comida. Nasceu Hao, filho de Kurkiu e Kaon, com sangue de Kolil e de Enzes.
 
 ### Ano 77
 
-Na primavera, Doela morreu de repente, aos 13 anos. A seca voltou, como no ano 67: 20 dias sem chuva, até que o céu se abriu. Em Taem, Tamkoik pediu: «Que Nega, que a chuva volte.» Quando a chuva voltou, Taem agradeceu ao Que Nega. O deus nada fez: o crédito era de graça.
+Na primavera, com Kuro à frente, a nova geração de Kolil abandonou o costume de guardar comida, costume herdado dos avós.
 
 ### Ano 78
 
-A fome por causa da seca durou 19 dias em Taem e levou nove vidas. Em Taem, Tamkoik pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Taem viu nisso a mão do Que Nega. O deus nada fez: o crédito era de graça. No verão, de novo Taem contra Orum, como no ano 73. Orum resistiu, e Taem voltou de mãos vazias. Na luta morreram Kiena, Lou e Tamtamur. Taem e Orum, cansados de enterrar os seus, fizeram as pazes na praia.
+A seca voltou, como no ano 63: 18 dias sem chuva, até que o céu se abriu. Kuro tinha rezado: «Manda água, Sedento, que as crianças têm sede.» Dias depois, a chuva voltou, e ninguém em Kolil duvidou de que o Sedento tinha ouvido. A crônica sabe que foi acaso. No inverno, Maela, que falava pelo Sedento em Koil, não resistiu à fome.
 
 ### Ano 79
 
-Em Kurum, Vinuis pediu: «Que Nega, não nos deixes secar.» Quando a chuva voltou, Kurum agradeceu ao Que Nega. O deus não tinha feito nada.
+Kuro, que fundou Kolil e o guiava, morreu de velhice aos 65 anos. Foi quem levou os seus a fundar Kolil. Em Koil, já ninguém lembrava por que se fazia a festa da chuva. O que aconteceu no ano 9, só a crônica guarda. Os de Koil caíram sobre Kolil no morro. Koil venceu e levou a comida guardada. Kurkiu e Lo morreram na luta. Veio a pior fome que o mundo tinha visto: 26 dias por causa da seca em Koil, e 38 mortos. As crianças foram as primeiras. No outono, numa tempestade sobre o morro, um raio matou Vela. Os seus nunca esqueceram.
 
 ### Ano 80
 
-Na primavera do ano 80, Tamkoik, que fundou Taem e o guiava, morreu dormindo, aos 60 anos. Nasceu Kurya, filha de Gaya, que guiava Taem. No fim do ano 80, 31 pessoas viviam no mundo: Taem (16), Orum (10) e Kurum (5).
+No verão, em nome do Sedento, Domaur proibiu casamentos e trocas com Kolil. Era vontade de Domaur, não do deus. No inverno, Koil atacou Tamon no lago. Koil venceu e levou a comida guardada. Pela morreu na luta. Nos anos 71 a 80 houve três secas, quinze fomes, três batalhas, 32 preces que pareceram atendidas e dez preces sem resposta; nasceram 103 crianças e morreram 118 pessoas. No fim do ano 80, 98 pessoas viviam no mundo: Koil (44), Tamon (19), Kiar (25) e Kolil (10).
 
-*Os anos 81 a 83 passaram em paz.*
+### Ano 81
+
+Koil atacou Kiar na praia em nome do Sedento. Kiar foi derrotado e perdeu o que tinha guardado. Tamlor morreu na luta. No outono, numa tempestade sobre o lago, um raio matou Tamkiya. Logo Tamkiya, que tanto rezava. Os devotos de Tamon não viram castigo: para eles, o Sedento chamou Tamkiya para perto. Nasceu ali a lembrança de Tamkiya como santa. Domaur anunciou que o Sedento proibia qualquer trato com Kiar. O deus nunca disse isso, mas Koil obedeceu.
+
+### Ano 82
+
+Na primavera, Domaur, que falava pelo Sedento em Koil, morreu dormindo, aos 59 anos. Nunca perdoou o deus pela morte de Viya. Malos, que guiava Tamon, morreu de velhice aos 60 anos.
+
+### Ano 83
+
+No inverno do ano 83, de novo o sol se apagou no meio do dia. Para Tamon, o deus já não era «o Sedento»: passou a ser «o Que Apaga o Sol». Depois disso, Kiar deixou de chamar o deus de «o Sedento» e passou a chamá-lo de «o Olho Escuro».
 
 ### Ano 84
 
-Na primavera, Gaya, que guiava Taem, morreu ao dar à luz. Kokour passou a falar pelo Que Nega em Kurum. Era o primeiro a rezar e o último a duvidar.
+Em Kiar, Vidoe pediu: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Kiar deu graças ao Olho Escuro. A crônica sabe que foi acaso. Uma estrela de cauda cruzou o céu por 6 noites. Ninguém dormia direito.
 
-*No ano 85, nada de notável aconteceu.*
+### Ano 85
 
-### Ano 86
+Com Tamu à frente, a nova geração de Kolil abandonou o treino com lanças, costume herdado dos avós.
 
-Na primavera, Vinuis, que fundou Kurum e o guiava, morreu de repente, aos 38 anos. De novo a chuva sumiu, como no ano 77. Foram 21 dias de seca. Depois da seca, Kurum jurou nunca desperdiçar água. Mara, que falava pelo Olho Escuro em Orum, deu à luz e não sobreviveu ao parto.
+*No ano 86, nada de notável aconteceu.*
 
 ### Ano 87
 
-Taem passou fome por causa da seca por 16 dias, e três pessoas morreram. Em Taem, Kikiya pediu: «Que Nega, não deixes nossos filhos morrerem de fome.» A fome passou, e Taem viu nisso a mão do Que Nega. A crônica sabe que foi acaso. Foram 37 dias de fome por causa da seca em Kurum, com três mortos. A floresta passou a ser a floresta da fome: Floresta da Fome. No inverno, Kokour, de Kurum, tomou por esposa Gais, de Taem, e os dois povos passaram a se visitar.
+Kio, que guiava Tamon, morreu de velhice aos 58 anos. Morreu o último que tinha visto o ano 27. Em Tamon, se fazia a festa da chuva, mas ninguém sabia mais dizer por quê. Em Kiar, Ko pediu: «Olho Escuro, não deixes nossos filhos morrerem de fome.» A fome passou, e Kiar viu nisso obra do Olho Escuro. A crônica sabe que foi acaso. Tantas preces atendidas fizeram Kiar confiar no céu mais do que nas próprias mãos. Deixaram de guardar comida para o inverno. Ko anunciou que o Olho Escuro proibia qualquer trato com Tamon. O deus nunca disse isso, mas Kiar obedeceu.
 
 ### Ano 88
 
-Em Orum, Vemaon pediu: «Olho Escuro, dá-nos o que comer.» A fome passou, e Orum viu nisso a mão do Olho Escuro. O deus nada fez: o crédito era de graça. Houve luta na praia: Orum atacou Taem. Taem resistiu, e Orum voltou de mãos vazias. Na luta morreu Orya. De novo Orum contra Taem, como no ano 88. Taem expulsou os atacantes. Na luta morreu Gakik.
+A fome ensinou: desde então, Kolil estoca comida e não come tudo o que colhe. Dessa vez, o Olho Escuro não respondeu, e Kiar, que tinha esquecido como se virar sozinho, pagou caro. Em nome do Que Apaga o Sol, Kaon proibiu casamentos e trocas com Tamon. Era vontade de Kaon, não do deus. Kiar atacou Tamon no lago em nome do Olho Escuro. Tamon resistiu, e Kiar voltou de mãos vazias. No inverno, Tamu, que guiava Kolil, não resistiu à fome.
 
 ### Ano 89
 
-Orum passou fome no inverno por 22 dias, e quatro pessoas morreram.
+Na primavera do ano 89, Lohaur, que guiava Kiar, morreu de velhice aos 57 anos. Em Kolil, já ninguém lembrava por que ninguém saía de casa em dia de tempestade. O que aconteceu no ano 38, só a crônica guarda. Koil passou fome no inverno por 10 dias, e duas pessoas morreram. Kolil atacou Tamon no lago em nome do Que Apaga o Sol. Tamon expulsou os atacantes. Na luta morreu Kaur.
 
 ### Ano 90
 
-No fim do ano 90, 35 pessoas viviam no mundo: Taem (23), Orum (5) e Kurum (7).
+Na primavera, começou a Guerra Santa: em nome do Olho Escuro, Kiar pegou em lanças contra Tamon. A Guerra Santa seguiu: Kiar contra Tamon, no lago em nome do Olho Escuro. Kiar venceu e levou a comida guardada. Na luta morreram Kurkuru, Zefae e Lio. Kiar e Tamon, cansados de enterrar os seus, fizeram as pazes no lago. A Guerra Santa acabou em trégua, depois de dois anos, três batalhas e cinco mortos. Em nome do Olho Escuro, Ko proibiu casamentos e trocas com Koil. Era vontade de Ko, não do deus. Nos anos 81 a 90 houve duas secas, treze fomes, cinco batalhas, 33 preces que pareceram atendidas e oito preces sem resposta; nasceram 60 crianças e morreram 43 pessoas. No fim do ano 90, 115 pessoas viviam no mundo: Koil (63), Tamon (19), Kiar (26) e Kolil (7).
 
-### Ano 91
+*O ano 91 passou sem nada que a crônica precise guardar.*
 
-Na primavera do ano 91, Kovios, que falava pelo Que Nega em Taem, morreu de velhice aos 54 anos.
+### Ano 92
 
-*O ano 92 foi calmo.*
+Na primavera do ano 92, começou a Guerra Santa do Lago: em nome do Que Apaga o Sol, Kolil pegou em lanças contra Tamon. No inverno, a terra tremeu. Caíram doze cabanas. Koik, Kihao, Kuro, Velos e Likae morreram sob os escombros.
 
 ### Ano 93
 
-O sol escureceu outra vez. No outono, a guerra entre Orum e Taem continuou: Orum voltou a atacar na praia. Taem expulsou os atacantes. Depois da derrota, Orum não existia mais: os cinco que sobraram foram levados para Taem. Kikiya não podia mais viver perto de Beos. Saiu de Taem com dezessete pessoas e fundou Bean no lago. A rixa entre Gaur e Beos rachou Taem. Gaur partiu com os seus, quatro pessoas, e fundou Esem no morro.
+Na primavera, Halion, de Kiar, tomou por esposa Litamia, de Kolil, e os dois povos passaram a se visitar. Tamlo partiu com zero pessoa para além da borda do mundo. Nunca voltaram. Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa. Em Koil, Tamvios pediu: «Sedento, não deixes nossos filhos morrerem de fome.» A fome passou, e Koil viu nisso obra do Sedento. A crônica sabe que foi acaso.
 
 ### Ano 94
 
-Em Esem, já ninguém lembrava por que os jovens treinavam com lanças. O que aconteceu no ano 61, só a crônica guarda. Nasceu Nuibur, o primeiro de Bean. Kikos passou a falar pelo Que Nega em Bean. Era o primeiro a rezar e o último a duvidar.
+Na primavera do ano 94, Koil atacou Tamon no lago. Koil venceu e levou a comida guardada. Depois de tantos mortos, Koil e Tamon se encontraram no lago e juraram paz. Desde então, Koil chama o lago de Lago da Trégua. Kolil acabou: Hao, Gohais e Tamur foram viver em Kiar. A Guerra Santa do Lago acabou porque um dos lados deixou de existir: cinco anos, três batalhas e três mortos.
 
 ### Ano 95
 
-Nasceu Selos, o primeiro de Esem. Em Esem, Gaur pediu: «Que Nega, que a chuva volte.» Quando a chuva voltou, Esem agradeceu ao Que Nega. O deus nada fez: o crédito era de graça.
+Kiar passou fome no inverno por 17 dias, e seis pessoas morreram.
 
-*No ano 96, nada de notável aconteceu.*
+### Ano 96
+
+Com Lotamur à frente, a nova geração de Kiar abandonou o treino com lanças, costume herdado dos avós. Vidoe tinha rezado: «Olho Escuro, dá-nos o que comer.» A comida voltou, e Kiar deu graças ao Olho Escuro. A crônica sabe que foi acaso. No verão, começou a Segunda Guerra Santa: em nome do Olho Escuro, Kiar pegou em lanças contra Tamon. Kiar e Tamon, cansados de enterrar os seus, fizeram as pazes no lago. Depois de dois anos, duas batalhas e dois mortos, a Segunda Guerra Santa terminou em paz. Tamon saiu dela mais forte.
 
 ### Ano 97
 
-Kikiya tinha rezado: «Que Nega, cura minha filha.» Os doentes se levantaram. Em Bean, o crédito foi do Que Nega. Foi só o tempo, mas quem iria dizer?
+Na primavera do ano 97, ninguém lembrava mais a razão, e Koil abandonou a festa da chuva.
 
 ### Ano 98
 
-Na primavera, Beos, que guiava Taem, morreu de repente, aos 36 anos. Em Esem, Gataena tomou para si o cuidado das preces ao Que Nega.
+Na primavera do ano 98, Mave, que guiava Koil, morreu de velhice aos 56 anos. Koil escolheu Kokoe para guiar o grupo. Lopela queria o lugar e nunca perdoou.
 
 ### Ano 99
 
-Na primavera do ano 99, Nukoya, de Bean, casou-se com Oros e foi viver em Taem. Foi o primeiro laço entre os dois povos.
+Na primavera do ano 99, a guerra entre Koil e Tamon continuou: Koil voltou a atacar no lago. Tamon resistiu, e Koil voltou de mãos vazias. Na luta morreram Dos e Loik. Koil não quis ser pego desprevenido outra vez: os jovens começaram a treinar com lanças. Começou a Guerra da Fome do Lago: Koil, com fome, foi buscar à força a comida de Tamon. O dia em que a chuva voltou virou festa em Koil: todo ano, celebram a chuva que o Sedento mandou.
 
 ### Ano 100
 
-No outono do ano 100, Fakuros não resistiu à fome. A fome por causa da seca durou 8 dias em Esem e levou cinco vidas. O morro passou a ser o morro da fome: Morro da Fome. A seca voltou, como no ano 86: 21 dias sem chuva, até que o céu se abriu. No fim do ano 100, 55 pessoas viviam no mundo: Taem (13), Kurum (15), Bean (24) e Esem (3).
+Na primavera, Vidoe, a medrosa, morreu de velhice aos 50 anos. A Guerra da Fome do Lago acabou em trégua, depois de um ano, quatro batalhas e quatro mortos. Koil saiu dela mais forte. Foram 28 dias de fome por causa da seca em Kiar, com doze mortos. Tamvios, que falava pelo Sedento em Koil, morreu de fome. Começou a Guerra Santa da Floresta: em nome do Olho Escuro, Kiar pegou em lanças contra Koil. Nos anos 91 a 100 houve duas secas, dezesseis fomes, doze batalhas, 37 preces que pareceram atendidas e dezessete preces sem resposta; nasceram 61 crianças e morreram 82 pessoas. No fim do ano 100, 93 pessoas viviam no mundo: Koil (52), Tamon (22) e Kiar (19).
 
 ---
 
 ## O mundo no fim da crônica
 
-- **Taem** vive na praia, com 13 pessoas, e planta roças; nasceu de uma briga em Gaon no ano 55; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
-- **Kurum** vive na floresta, com 15 pessoas, e planta roças; nasceu de uma migração em Taem no ano 74; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 61); não desperdiça uma gota d'água (desde o ano 86).
-- **Bean** vive no lago, com 24 pessoas, e planta roças; nasceu de uma briga em Taem no ano 93; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (desde o ano 61).
-- **Esem** vive no morro, com 3 pessoas, e planta roças; nasceu de uma briga em Taem no ano 93; chama o deus de «o Que Nega»; costumes: faz a festa da chuva (a origem foi esquecida); guarda tanta comida para o inverno (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida).
+- **Koil** vive na floresta, com 52 pessoas, e planta roças; é o povo mais antigo; chama o deus de «o Sedento»; costumes: guarda tanta comida para o inverno (desde o ano 45); queima os mortos (desde o ano 62); não sai de casa em dia de tempestade (desde o ano 66); não desperdiça uma gota d'água (desde o ano 71); treina os jovens com lanças (desde o ano 99); faz a festa da chuva (desde o ano 99).
+- **Tamon** vive no lago, com 22 pessoas, e planta roças; nasceu de uma migração em Koil no ano 11; chama o deus de «o Que Apaga o Sol»; costumes: faz a festa da chuva (a origem foi esquecida); treina os jovens com lanças (a origem foi esquecida); não sai de casa em dia de tempestade (a origem foi esquecida); guarda tanta comida para o inverno (desde o ano 64).
+- **Kiar** vive na praia, com 19 pessoas, e planta roças; nasceu de uma migração em Tamon no ano 36; chama o deus de «o Olho Escuro»; costumes: não sai de casa em dia de tempestade (a origem foi esquecida); faz a festa da chuva (desde o ano 61); não desperdiça uma gota d'água (desde o ano 71); guarda tanta comida para o inverno (desde o ano 88).
 
-Povos que deixaram de existir: Koil, Veak, Mail, Gaon e Orum.
+Povos que deixaram de existir: Enzes e Kolil.
 
-Lugares com nome: Praia da Fome (praia, para Mail), Praia da Vitória (praia, para Gaon), Praia do Raio (praia, para Orum), Praia da Vitória (praia, para Veak), Praia do Luto (praia, para Taem), Floresta da Vitória (floresta, para Veak), Floresta do Luto (floresta, para Gaon), Floresta do Luto (floresta, para Orum), Floresta da Fome (floresta, para Kurum), Morro do Raio (morro, para Gaon), Morro do Luto (morro, para Koil) e Morro da Fome (morro, para Esem).
+Lugares com nome: Praia do Raio (praia, para Tamon), Praia da Fome (praia, para Kiar), Lago do Raio (lago, para Kiar), Lago da Fome (lago, para Tamon), Lago da Trégua (lago, para Koil), Floresta da Vitória (floresta, para Koil), Floresta do Luto (floresta, para Tamon), Floresta do Luto (floresta, para Enzes), Morro do Raio (morro, para Enzes), Morro da Vitória (morro, para Koil) e Morro do Luto (morro, para Kolil).
 
-Em 100 anos nasceram 369 pessoas e morreram 326.
+Em 100 anos nasceram 464 pessoas e morreram 369.
