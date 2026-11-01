@@ -55,6 +55,9 @@ const PECAS_MIUDAS := ["capim", "capim_seco", "arbusto", "arbusto_frutas", "pedr
 ## Árvores que o fogo do deus deixa carbonizadas, com a coluna do tronco.
 const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "pinheiro_b": 11, "pinheiro_fundo": 15}
 const ZOOM_SEGUIR := 2
+## Casa de cada estágio, para as janelas acesas (`_luz`) e as chaminés (LEIA-ME, seção 19).
+const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4/casa_enxaimel",
+	5: "estagio4/casa_enxaimel", 6: "estagio6/casa_tijolo"}
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
 
@@ -111,6 +114,11 @@ var _ceu_especial := ""    # "seca" ou "eclipse": troca o céu de dia
 var _eclipse_ate := -1
 var _seca_ate := -1          # a seca do deus amarela o céu logo depois do gesto
 var _larguras := {}          # peça -> largura do desenho (para os lotes)
+var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela de noite
+var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
+var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
+var chamines: Array = []     # pontos de onde sobe a fumaça das lareiras no inverno
+var _chamines_json := {}
 var _camera_aplicada := [-1, Vector2(-1, -1)]
 
 
@@ -319,6 +327,10 @@ func _criar_nos() -> void:
 		_ceu.criar(self)
 	_agua = _sprite(4, paleta, tabelas)
 	_mundo = _sprite(1, paleta, tabelas)
+	_luzes = Sprite2D.new()
+	_luzes.centered = false
+	_luzes.visible = false
+	add_child(_luzes)
 	_fogueiras = Node2D.new()
 	_fogueiras.draw.connect(_desenhar_fogueiras)
 	add_child(_fogueiras)
@@ -477,6 +489,10 @@ func _montar_fixo() -> void:
 			agua_mascara.blit_rect_mask(_vazio(img.get_size()), img, Rect2i(Vector2i.ZERO, img.get_size()), pos)
 
 	var imagens := {}
+	rodas = []
+	chamines = []
+	var luz_todas := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
+	var luz_madrugada := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
 	# as ruínas ficam atrás das construções vivas
 	# e a natureza as retoma: mato pelos anos, uma muda e depois uma árvore jovem ao lado
@@ -496,8 +512,16 @@ func _montar_fixo() -> void:
 		var x := roundi(o.x)
 		match o.tipo:
 			"roca":  # a roça vai sobre a grama, com a base na superfície
-				var peca := roca if not o.get("irrigada", false) else _imagem_obra(imagens, "estagio6/roca_irrigada")
+				var irrigada: bool = o.get("irrigada", false)
+				if not irrigada and posmod(x, 3) != 0:  # o pomar ao lado de umas roças (tronco na coluna 10)
+					var px := x + 13
+					if not _na_agua(px):
+						var arvore := _imagem_obra(imagens, "estagio2/arvore_fruta")
+						terreno.colar(cor, tag, arvore, Vector2i(px - 10, _chao(px) - 23), Arte.MUNDO)
+				var peca := roca if not irrigada else _imagem_obra(imagens, "estagio6/roca_irrigada")
 				terreno.colar(cor, tag, peca, Vector2i(x - 8, _sup[clampi(x, 0, LARGURA - 1)] - 15), Arte.OBRA)
+				if irrigada:  # a roda d'água do canal, ao lado (animada, desenhada pela vida)
+					rodas.append({"x": x - 15, "base": _chao(x - 15)})
 			"barco":  # na água: a linha 14 do barco fica na linha d'água
 				var b := _imagem_obra(imagens, Obras.peca("barco", 6))
 				terreno.colar(cor, tag, b, Vector2i(x - b.get_width() / 2, Terreno.NIVEL_AGUA - 14), Arte.OBRA)
@@ -511,6 +535,8 @@ func _montar_fixo() -> void:
 				if aparencia.is_empty() and sim:
 					aparencia = sim.aparencia(int(o.get("grupo", -1)))
 				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x)
+				if o.tipo == "cabana" and int(o.get("estagio", 1)) >= 2:
+					_luz_e_chamine(o, aparencia, x, imagens, terreno, cor, tag, luz_todas, luz_madrugada)
 	if sim:
 		var pedra := Arte.imagem(Arte.da_estacao("memoria/pedra_erguida") + ".png")
 		for z in sim.zonas:
@@ -519,6 +545,7 @@ func _montar_fixo() -> void:
 				terreno.colar(cor, tag, pedra, Vector2i(x - 8, _chao(x) - 31), Arte.MUNDO)
 
 	_mundo.texture = ImageTexture.create_from_image(cor)
+	_tex_luzes = [ImageTexture.create_from_image(luz_todas), ImageTexture.create_from_image(luz_madrugada)]
 	var corte := _recortar([frente])
 	_frente.texture = corte[1][0]
 	_frente.position = Vector2(corte[0].position)
@@ -638,6 +665,32 @@ func _encaixar_lotes(obras: Array) -> void:
 		for k in bl[0]:
 			fila[i].x = y + desloc[i]
 			i += 1
+
+
+## As janelas acesas da casa (para a camada de luz) e, no inverno, a chaminé
+## com a fumaça da lareira. Uma casa em cada três fica acordada de madrugada.
+func _luz_e_chamine(o: Dictionary, aparencia: Dictionary, x: int, imagens: Dictionary, terreno, cor: Image,
+		tag: Image, luz_todas: Image, luz_madrugada: Image) -> void:
+	var casa: String = CASAS[clampi(int(o.get("estagio", 2)), 2, 6)]
+	if not ResourceLoader.exists(Arte.RAIZ + casa + "_luz.png"):
+		return
+	var luz := _imagem_obra(imagens, casa + "_luz")
+	var canto := Vector2i(x - luz.get_width() / 2, _chao(x) - luz.get_height() + 1)
+	var faixa := Rect2i(Vector2i.ZERO, luz.get_size())
+	luz_todas.blend_rect(luz, faixa, canto)
+	if posmod(x * 7, 3) == 0:
+		luz_madrugada.blend_rect(luz, faixa, canto)
+	if Arte.estacao != "inverno":
+		return
+	if _chamines_json.is_empty():
+		_chamines_json = Arte.json("luzes/chamines.json").get("casas", {})
+	var chave := "%s_telhado_%s" % [casa.get_file(), aparencia.get("telhado", "palha")]
+	if not _chamines_json.has(chave):
+		return
+	var c: Dictionary = _chamines_json[chave]
+	var chamine := _imagem_obra(imagens, "luzes/chamine")
+	terreno.colar(cor, tag, chamine, canto + Vector2i(int(c["chamine_x"]), int(c["chamine_y"])), Arte.OBRA)
+	chamines.append(Vector2(canto) + Vector2(float(c["fumaca_x"]) + 4.0, float(c["fumaca_base_y"])))
 
 
 func _largura_da_peca(o: Dictionary) -> int:
@@ -808,6 +861,7 @@ func _atualizar_horario() -> void:
 	var e := estado_da_hora(_hora())
 	if _atmosfera.em_clarao():
 		e = [DIA, DIA, 0.0]
+	_atualizar_luzes(_hora(), _atmosfera.em_clarao())
 	var especial := ""
 	if sim and _eclipse_ate >= sim.mundo.passo:
 		especial = "eclipse"
@@ -835,6 +889,20 @@ func _atualizar_horario() -> void:
 		m.set_shader_parameter("estado_b", b)
 		m.set_shader_parameter("t", e[2])
 		m.set_shader_parameter("descendo", descendo)
+
+
+## Janelas acesas do fim da tarde às 23h e de manhãzinha; de madrugada, só
+## as casas de quem está acordado. No clarão do raio, tudo apaga.
+func _atualizar_luzes(h: float, clarao: bool) -> void:
+	if _tex_luzes.is_empty() or _modo_layout:
+		return
+	var madrugada := h >= 23.0 or h < 4.5
+	var acesas := not clarao and (madrugada or h >= 17.5 or h < 6.5)
+	_luzes.visible = acesas
+	if acesas:
+		var tex: Texture2D = _tex_luzes[1 if madrugada else 0]
+		if _luzes.texture != tex:
+			_luzes.texture = tex
 
 
 ## O céu de dia vira o de seca ou o de eclipse quando é o caso; com chuva, o

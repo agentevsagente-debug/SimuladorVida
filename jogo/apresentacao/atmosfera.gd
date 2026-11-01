@@ -28,6 +28,7 @@ var _neblina_estado := []
 var _deriva := 0.0
 var _rng := RandomNumberGenerator.new()
 var _espera_fumaca := 0.0
+var _espera_chamine := 0.0
 var _espera_faisca := 0.0
 var _espera_raio := 1.0
 var _clarao := 0.0
@@ -36,6 +37,7 @@ var _criaturas: Criaturas
 var _neve: Node2D
 var _neve_quadro := -1
 var _neve_ligada := false
+var _tex_neve: Texture2D
 var _espera_folha := 0.0
 var _chuva_divina := Vector2i(-1, -1)
 var _chuva_divina_resta := 0.0
@@ -231,6 +233,13 @@ func _atualizar_neblina(hora: float, estado: int) -> void:
 
 
 func _fogueiras(delta: float, estado: int, fogos: Array) -> void:
+	# no inverno, um fiapo de fumaça sobe de cada chaminé (lareira acesa)
+	_espera_chamine -= delta
+	if _espera_chamine <= 0.0:
+		_espera_chamine = _rng.randf_range(0.9, 1.6)
+		for p in vista.chamines:
+			fosco.emitir("../luzes/fumaca_chamine_4q", 8, 4, p, Vector2(_rng.randf_range(0.5, 2.0), -3.0),
+				2.8, 1.5, _rng.randi_range(0, 3))
 	_espera_fumaca -= delta
 	_espera_faisca -= delta
 	for f in fogos:
@@ -251,7 +260,7 @@ func _fogueiras(delta: float, estado: int, fogos: Array) -> void:
 ## Inverno: neve caindo em boa parte dos dias. Outono: folhas soltas caindo das copas.
 func _neve_e_folhas(delta: float, estacao: String, clima: Dictionary) -> void:
 	var dia: int = vista.sim.tempo.get("dia", 0) if vista.sim else 0
-	var neva: bool = estacao == "inverno" and (clima.get("inverno_rigoroso", false) or hash(dia) % 3 != 0)
+	var neva: bool = estacao == "inverno" and (clima.get("inverno_rigoroso", false) or hash(dia) % 3 != 0) or OS.has_environment("FORCAR_NEVE")
 	if neva != _neve_ligada:
 		_neve_ligada = neva
 		_neve.visible = neva
@@ -270,7 +279,15 @@ func _neve_e_folhas(delta: float, estacao: String, clima: Dictionary) -> void:
 
 
 func _desenhar_neve() -> void:
-	var tex: Texture2D = vista.textura_efeito("neve_4q")
+	if _tex_neve == null:
+		# a importação de textura preenche a cor dos pixels transparentes com a
+		# vizinha (fix_alpha_border), e essa cor vazava na janela transparente,
+		# branqueando a tela inteira nos dias de neve: aqui ela vem limpa
+		var img: Image = vista.textura_efeito("neve_4q").get_image()
+		img.convert(Image.FORMAT_RGBA8)
+		img.premultiply_alpha()
+		_tex_neve = ImageTexture.create_from_image(img)
+	var tex: Texture2D = _tex_neve
 	for ty in range(0, 160, 64):
 		for tx in range(0, 480, 64):
 			_neve.draw_texture_rect_region(tex, Rect2(tx, ty, 64, 64), Rect2(maxi(_neve_quadro, 0) * 64, 0, 64, 64))

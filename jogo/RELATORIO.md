@@ -2,6 +2,15 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Luz, inverno e agricultura (arte, seção 19)
+
+- **Janelas acesas:** as camadas `_luz` das casas dos estágios 2 a 6 ficam numa camada própria, por cima das casas e sem a tabela de noite. Acendem das 17h30 às 6h30. De madrugada (23h às 4h30), só uma casa em cada três continua acesa.
+- **Inverno:** as construções e ruínas de inverno entram sozinhas, porque a peça é procurada primeiro em `estacoes/inverno/`. As casas ganham a chaminé (`luzes/chamines.json`, por casa e telhado), e de cada uma sobe um fiapo de fumaça (`fumaca_chamine_4q`).
+- **Pomar:** a árvore de fruta (`arvore_fruta`, nas 4 estações) fica ao lado de duas em cada três roças.
+- **Roda d'água:** ao lado de cada roça irrigada, animada; no inverno, fica congelada pela própria arte.
+- **Defeito antigo corrigido: a neve branqueava a tela inteira.** Em todo dia de neve, o mundo ficava branco. A importação de textura do Godot preenche a cor dos pixels transparentes com a vizinha (`fix_alpha_border`), e essa cor vazava na janela transparente. A folha da neve agora é limpa ao carregar (alfa pré-multiplicado). A auditoria não pegou porque nenhuma captura caiu num dia de neve. `FORCAR_NEVE=1` liga a neve para testar.
+- Captura: `capturas/luzes-inverno-pomar.png` (inverno à noite e de dia, verão à noite, estágio 6). verificar.ps1 (19 de 19), fidelidade e céu sem grade passam.
+
 ## Auditoria 2 da sessão C (itens da B)
 
 | # | Defeito | O que foi feito | Captura |
