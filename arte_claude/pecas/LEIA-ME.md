@@ -204,6 +204,11 @@ A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1
 | `prece_desesperada_4q` | 16 × 24 | 4 | desesperado: chama de luz quente e trêmula, com 8 raios e faíscas |
 | `os_ultimos_4q` | 24 × 48 | 4 | o evento `os_ultimos`: facho de luz fria sobre a vila, com 5 pontos de luz em volta |
 | `necessidade_5v` | 8 × 8 | 5 variações | símbolo da `necessidade` da prece, nesta ordem: `seca` (sol), `fome` (espiga), `doenca` (coração rachado), `frio` (floco), `guerra` (lanças cruzadas). Vai ao lado do sinal ou na dica do cursor. |
+| `fome_prece_4q` | 16 × 24 | 4 | **fome e prece do mesmo povo no mesmo dia, num sinal só** (nota das preces, item 4): a luz da prece urgente embaixo e, em cima, a espiga da fome num selo escuro de borda dourada que pisca. Vai no lugar dos dois sinais, 1 px acima da cabeça de quem reza. A dica pode dizer "Fome em Koil — Kurpeya pede comida". |
+| `profeta_chamado_4q` | 16 × 32 | 4 | **o profeta é chamado** (item 5), uma vez, uns 2 s: um facho dourado e lilás desce do céu e se fecha numa estrela sobre a cabeça. A base (linha 31) vai 1 px acima da cabeça. Depois, a marca. |
+| `profeta_marca_4q` | 8 × 8 | 4 | **a marca que dura** enquanto o profeta vive: uma estrela dourada pequena, com o miolo branco e o halo lilás, que gira devagar (0,5 s por quadro, em laço). A linha 7 fica vazia e vai 1 px acima da cabeça. Diz ao jogador, de longe, quem é o profeta. |
+| `separacao_4q` | 24 × 12 | 4 | **um povo se separa** (item 5), uma vez: a luz se alonga, se parte em duas (a dourada do povo de onde saíram e a lilás do povo novo) e as duas se afastam, com um fio pontilhado entre elas. A base vai sobre a fogueira do povo de onde saíram; espelhe se o povo novo for para a esquerda. |
+| `separacao_marca_2q` | 12 × 12 | 2 | **o sinal que dura** sobre a fogueira do povo novo, por uns dias de jogo: as duas luzes pequenas lado a lado, balançando alternadas (0,6 s por quadro). |
 
 A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10 dias de espera, urgente até 30 dias e desesperado a partir daí, ou quando a importância do evento for 8 ou mais.
 
@@ -777,7 +782,7 @@ As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente 
 | 3 | capa de pele nos ombros e colar de pedra | só a capa |
 | 4 | capacete de ferro e fivela de metal no cinto | só a fivela |
 | 5 | túnica longa até os pés | túnica longa |
-| 6 | chapéu de aba larga e calças | chapéu e calças |
+| 6 | chapéu de palha e calças azul-escuras (auditoria 9: o chapéu e as calças marrons sumiam no chão de terra) | chapéu e calças |
 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 

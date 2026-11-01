@@ -160,6 +160,112 @@ def simbolos():
     return out
 
 
+# ---------------------------------------------------------------- chamados que juntam ou duram
+
+def fome_prece():
+    """Fome e prece do mesmo povo no mesmo dia, num sinal só (16x24): a luz da prece urgente
+    embaixo e, em cima, a espiga da fome num selo escuro de borda dourada, que pisca na borda.
+    A base (linha 23) vai 1 px acima da cabeça de quem reza, como os outros sinais."""
+    urg = prece_urgente()
+    espiga = simbolos()[1]
+    quadros = []
+    for k in range(4):
+        q = novo(16, 24)
+        for y, l in enumerate(urg[k]):
+            for x, c in enumerate(l):
+                if c is not None:
+                    put(q, x + 2, y + 8, c)
+        for y in range(1, 10):                          # o selo: disco escuro com a borda dourada
+            for x in range(16):
+                d = math.hypot(x - 7.5, y - 5)
+                if d <= 3.6:
+                    put(q, x, y, 4)
+                elif d <= 4.5:
+                    put(q, x, y, 22 if (k in (1, 2) or (x + y) % 2) else 21)
+        for y, l in enumerate(espiga):
+            for x, c in enumerate(l):
+                if c is not None and 1 <= y <= 7:
+                    put(q, x + 4, y + 1, c)
+        quadros.append(q)
+    return quadros
+
+
+def profeta_chamado():
+    """O chamado do profeta (16x32), uma vez, por uns 2 s: um facho dourado e lilás desce do
+    céu e se fecha numa estrela sobre a cabeça. A base (linha 31) vai 1 px acima da cabeça."""
+    quadros = []
+    for k in range(4):
+        q = novo(16, 32)
+        meia_topo = (5, 4, 2.5, 1)[k]
+        for y in range(28):
+            meia = meia_topo * (1 - y / 40)
+            for x in range(16):
+                d = abs(x - 7.5)
+                if d <= meia - 0.8 and pont(x, y + k, 0.35):
+                    put(q, x, y, 22 if (y + k) % 4 else 31)
+                elif abs(d - meia) < 0.6 and (y + k) % 2 == 0:
+                    put(q, x, y, 29)
+        r = (1, 2, 3, 2)[k]                         # a estrela sobre a cabeça
+        for i in range(-r, r + 1):
+            put(q, 7 + i, 29, 22 if abs(i) < r else 29)
+            put(q, 7, 29 + i, 22 if abs(i) < r else 29)
+        put(q, 7, 29, 31)
+        quadros.append(q)
+    return quadros
+
+
+def profeta_marca():
+    """A marca que dura sobre o profeta (8x8, a estrela nas colunas e linhas 0 a 6) enquanto ele vive: uma estrela de 4 pontas
+    dourada que gira devagar entre a cruz e o xis, com o miolo branco e um halo lilás.
+    Use 0,5 s por quadro, em laço, com a linha 7 (vazia) 1 px acima da cabeça."""
+    cruz = [(3, 1, 22), (3, 2, 22), (3, 4, 22), (3, 5, 22), (1, 3, 22), (2, 3, 22), (4, 3, 22), (5, 3, 22)]
+    xis = [(2, 2, 22), (4, 4, 22), (4, 2, 22), (2, 4, 22), (1, 1, 29), (5, 5, 29), (5, 1, 29), (1, 5, 29)]
+    formas = [cruz + [(3, 0, 29), (3, 6, 29), (0, 3, 29), (6, 3, 29)], cruz[:4] + xis[:4], xis,
+              cruz[4:] + xis[:4]]
+    out = []
+    for f in formas:
+        q = novo(8, 8)
+        for x, y, c in f:
+            put(q, x, y, c)
+        put(q, 3, 3, 31)
+        out.append(q)
+    return out
+
+
+def separacao():
+    """A separação de um povo (24x12), uma vez: uma luz se alonga, se parte em duas e as duas
+    se afastam, com um fio pontilhado entre elas que se apaga. A base (linha 11) vai sobre a
+    fogueira do povo de onde saíram; a luz da direita vai para o lado do povo novo (espelhe
+    se ele for para a esquerda)."""
+    quadros = []
+    for k, (a, dist) in enumerate(((2.2, 0), (3.6, 0), (2.0, 6), (2.0, 12))):
+        q = novo(24, 12)
+        if dist == 0:
+            gota_de_luz(q, 11.5, 6, a, 4.2, (31, 22, 21), halo=22 if k else None, halo_dens=0.3)
+        else:
+            gota_de_luz(q, 11.5 - dist / 2, 6, a, 3.6, (31, 22, 21))
+            gota_de_luz(q, 11.5 + dist / 2, 6, a, 3.6, (31, 29, 7))
+            for x in range(round(11.5 - dist / 2) + 3, round(11.5 + dist / 2) - 2):
+                if (x + k) % 2 == 0 and (k == 2 or x % 4 == 0):
+                    put(q, x, 7, 29 if k == 2 else 5)
+        quadros.append(q)
+    return quadros
+
+
+def separacao_marca():
+    """O sinal que dura sobre o povo novo (12x12), por uns dias depois da separação: duas luzes
+    pequenas lado a lado (a dourada de onde vieram e a lilás do povo novo) que balançam
+    alternadas. Em laço, 0,6 s por quadro, sobre a fogueira do povo novo."""
+    out = []
+    for k in range(2):
+        q = novo(12, 12)
+        gota_de_luz(q, 3.5, 6 - k, 1.6, 3.0, (31, 22, 21))
+        gota_de_luz(q, 7.5, 5 + k, 1.6, 3.0, (31, 29, 7))
+        put(q, 5 + k, 10, 29)
+        out.append(q)
+    return out
+
+
 def gerar():
     return {
         "prece_comum_4q": prece_comum(),
@@ -167,6 +273,11 @@ def gerar():
         "prece_desesperada_4q": prece_desesperada(),
         "os_ultimos_4q": os_ultimos(),
         "necessidade_5v": simbolos(),
+        "fome_prece_4q": fome_prece(),
+        "profeta_chamado_4q": profeta_chamado(),
+        "profeta_marca_4q": profeta_marca(),
+        "separacao_4q": separacao(),
+        "separacao_marca_2q": separacao_marca(),
     }
 
 

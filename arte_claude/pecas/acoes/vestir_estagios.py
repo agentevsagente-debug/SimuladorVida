@@ -9,7 +9,7 @@ pernas são l e L.
 - estágio 3: capa de pele nos ombros (n, com as pontas o) e colar de pedra (Z);
 - estágio 4: capacete de ferro (Z, z) e fivela de metal no cinto; criança, só a fivela;
 - estágio 5: túnica longa: as pernas viram roupa até os pés;
-- estágio 6: chapéu de aba larga (n, aba o) e calças (d, o).
+- estágio 6: chapéu de palha (P, aba Z) e calças azul-escuras (E, A).
 Capacete e chapéu ficam de fora quando há um objeto em cima da cabeça (cesto, pote, lança).
 
 Saída: `estagioN/<mesmo nome>.png`. O motor procura a folha na pasta do estágio e, se não
@@ -133,19 +133,22 @@ def e5(g, crianca):
 
 
 def e6(g, crianca):
+    """Chapéu de palha (16) com a aba de 1 px de cada lado e calças azul-escuras (17 e 4).
+    Na auditoria 9, o chapéu e as calças marrons sumiam no chão de terra e nos vizinhos:
+    numa roda de gente sentada, o povo virava uma faixa marrom."""
     c = cabeca(g)
     if c and not algo_em_cima(g, *c[:2]):
         y0, topo, seg = c
         for x in topo:
-            g[y0][x] = "n"
+            g[y0][x] = "P"
         if seg:
             for x in range(min(seg) - 1, max(seg) + 2):
                 if 0 <= x < len(g[0]) and g[y0 + 1][x] in "hH.":
-                    g[y0 + 1][x] = "o"
+                    g[y0 + 1][x] = "P" if min(seg) <= x <= max(seg) else "Z"
     for x, y in pontos(g, "l"):
-        g[y][x] = "d"
+        g[y][x] = "E"
     for x, y in pontos(g, "L"):
-        g[y][x] = "o"
+        g[y][x] = "A"
     return g
 
 
