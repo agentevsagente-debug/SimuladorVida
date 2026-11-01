@@ -205,9 +205,12 @@ static func existe(caminho: String = CAMINHO_PADRAO) -> bool:
 ## depois as cópias, da mais nova para a mais velha. O mundo que não veio do arquivo principal traz
 ## `recuperado_de` (o caminho de onde veio). Devolve null se nenhum serve.
 static func carregar(caminho: String = CAMINHO_PADRAO):
+	ultimo_ilegivel = ""
 	var m = _ler_mundo(caminho, caminho)
 	if m != null:
 		return m
+	if FileAccess.file_exists(caminho):
+		_guardar_ilegivel(caminho)
 	for c in [caminho + ".novo"] + range(1, COPIAS + 1).map(func(n): return Arquivo.copia(caminho, n)):
 		m = _ler_mundo(c, caminho)
 		if m != null:
@@ -215,6 +218,27 @@ static func carregar(caminho: String = CAMINHO_PADRAO):
 			m.recuperado_de = c
 			return m
 	return null
+
+
+## Onde ficou guardado, na última chamada de carregar(), o mundo salvo que não se leu ("" se não
+## houve). Um mundo.txt estragado ou de uma versão mais nova nunca é sobrescrito pela rotação
+## das cópias: carregar() o move para mundo.ilegivel.txt (ou .ilegivel.2.txt, ...), e a
+## apresentação avisa o jogador.
+static var ultimo_ilegivel: String = ""
+
+
+static func caminho_ilegivel(caminho: String = CAMINHO_PADRAO, n: int = 1) -> String:
+	return "%s.ilegivel%s.%s" % [caminho.get_basename(), "" if n == 1 else ".%d" % n, caminho.get_extension()]
+
+
+static func _guardar_ilegivel(caminho: String) -> void:
+	var n := 1
+	while FileAccess.file_exists(caminho_ilegivel(caminho, n)):
+		n += 1
+	var destino := caminho_ilegivel(caminho, n)
+	if DirAccess.rename_absolute(ProjectSettings.globalize_path(caminho), ProjectSettings.globalize_path(destino)) == OK:
+		ultimo_ilegivel = destino
+		push_warning("Mundo salvo ilegível guardado em " + destino)
 
 
 static func _ler_mundo(caminho: String, base: String):
@@ -292,6 +316,8 @@ static func carregar_e_avancar(caminho: String = CAMINHO_PADRAO, agora: int = -1
 	var aus: Dictionary = m.avancar_ausencia(agora - m.salvo_em)
 	if not m.recuperado_de.is_empty():
 		aus["recuperado_de"] = m.recuperado_de
+	if not ultimo_ilegivel.is_empty():
+		aus["ilegivel"] = ultimo_ilegivel
 	# O retorno conta que o mundo voltou de uma cópia: o que veio depois dela se perdeu. O `.novo`
 	# é a gravação mais recente, inteira: nada se perdeu, e não há o que contar.
 	if not m.recuperado_de.is_empty() and not m.recuperado_de.ends_with(".novo"):

@@ -86,11 +86,11 @@ Na primavera do ano 27, Vidoya, que guiava Koil, morreu de velhice aos 55 anos.
 
 ### Ano 28
 
-Na primavera do ano 28, Kurpeya, a devota, morreu dormindo, aos 56 anos. Foi quem deu ao deus o nome de «a Mão Fechada». Em Peak, Lokure pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. Peak passou a festejar todo ano o dia da volta da chuva, em honra do Que Risca o Céu.
+Na primavera, Kurpeya, a devota, morreu dormindo, aos 56 anos. Foi quem deu ao deus o nome de «a Mão Fechada». Em Peak, Lokure pediu: «Manda água, Que Risca o Céu, que as crianças têm sede.» Quando a chuva voltou, Peak agradeceu ao Que Risca o Céu. O deus nada fez: o crédito era de graça. Peak passou a festejar todo ano o dia da volta da chuva, em honra do Que Risca o Céu.
 
 ### Ano 29
 
-Na primavera, morreu Peos, que guiava Koil, aos 56 anos. Foi quem descobriu que semente vira planta. No inverno, Lokure rezou, e nada aconteceu. Faltou chuva outra vez, a primeira desde o ano 2: 26 dias de céu limpo.
+Morreu Peos, que guiava Koil, aos 56 anos. Tinha sido o primeiro a plantar. No inverno, Lokure rezou, e nada aconteceu. Faltou chuva outra vez, a primeira desde o ano 2: 26 dias de céu limpo.
 
 ### Ano 30
 
@@ -100,7 +100,7 @@ Nos anos 21 a 30 houve duas secas; nasceram treze crianças e morreram seis pess
 
 ### Ano 33
 
-Na primavera do ano 33, Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos.
+Lokure, que fundou Peak e o guiava, morreu de velhice aos 60 anos.
 
 *Do ano 34 ao 36, a vida seguiu sem grandes acontecimentos.*
 
@@ -170,7 +170,7 @@ Kodoela, a desconfiada, viu uma pedra derreter no fogo e virar coisa dura e bril
 
 ### Ano 56
 
-Na primavera, um dia, Mana, Koik e Loya apareceram na borda do mundo. Não sabiam de onde vinham. Peak lhes deu lugar no fogo. Morreu Makon, que guiava Peak, aos 58 anos. Desde a morte de Lopeik, nunca mais tinha rezado. Loya passou a guiar Peak, mas Tamos não aceitou e guardou rancor.
+Na primavera, um dia, Mana, Koik e Loya apareceram na borda do mundo. Não sabiam de onde vinham. Peak lhes deu lugar no fogo. Morreu Makon, que guiava Peak, aos 58 anos. Nunca perdoou o deus pela morte de Lopeik. Loya passou a guiar Peak, mas Tamos não aceitou e guardou rancor.
 
 *Do ano 57 ao 59, a vida seguiu sem grandes acontecimentos.*
 
@@ -186,7 +186,7 @@ No outono, a rixa entre Kuros e Veik rachou Koil. Kuros partiu com os seus, oito
 
 ### Ano 64
 
-Na primavera do ano 64, Tamos, que falava pela Terra Brava em Peak, morreu dormindo, aos 52 anos.
+Tamos, que falava pela Terra Brava em Peak, morreu dormindo, aos 52 anos.
 
 ### Ano 65
 
@@ -200,7 +200,7 @@ Em Toran, Kou pediu: «Que Levanta, não nos deixes secar.» Quando a chuva volt
 
 ### Ano 67
 
-Na primavera, morreu Kou, que falava pelo Que Levanta em Toran, aos 54 anos. Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
+Morreu Kou, que falava pelo Que Levanta em Toran, aos 54 anos. Koil passou a forjar metal: enxadas, facas e lanças com ponta que não quebra. As guerras ficariam mais duras.
 
 ### Ano 68
 
@@ -212,7 +212,7 @@ Em Toran, Mapeik começou a pregar que o deus não era «o Que Levanta». Era «
 
 ### Ano 70
 
-Kodoela, a desconfiada, morreu de velhice aos 55 anos. De novo o sol se apagou no meio do dia. Depois disso, Koil deixou de chamar o deus de «o Que Levanta» e passou a chamá-lo de «o Olho Escuro». Nos anos 61 a 70 houve duas secas e sete preces que pareceram atendidas; nasceram 24 crianças e morreram sete pessoas. No fim do ano 70, 57 pessoas viviam no mundo: Koil (21), Peak (25) e Toran (11).
+Na primavera, Kodoela, a desconfiada, morreu de velhice aos 55 anos. De novo o sol se apagou no meio do dia. Depois disso, Koil deixou de chamar o deus de «o Que Levanta» e passou a chamá-lo de «o Olho Escuro». Nos anos 61 a 70 houve duas secas e sete preces que pareceram atendidas; nasceram 24 crianças e morreram sete pessoas. No fim do ano 70, 57 pessoas viviam no mundo: Koil (21), Peak (25) e Toran (11).
 
 ### Ano 71
 
@@ -230,7 +230,7 @@ Veik, que guiava Koil, morreu de velhice aos 66 anos. No verão, o sol escureceu
 
 ### Ano 78
 
-Morreu Kuros, que fundou Toran e o guiava, aos 54 anos.
+Na primavera do ano 78, morreu Kuros, que fundou Toran e o guiava, aos 54 anos.
 
 ### Ano 79
 
@@ -290,7 +290,7 @@ Os de Peak caíram sobre Zean no morro. Zean foi derrotado e perdeu o que tinha 
 
 ### Ano 99
 
-Na primavera, Lour, que fundou Zean e o guiava, morreu de velhice aos 67 anos. Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Morreu o último que tinha visto o ano 49. Em Zean, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Toran atacou Zean no morro. Toran voltou com o que Zean tinha guardado. Na luta morreram Pekios e Pevion. Para Toran, o morro virou Morro da Vitória.
+Lour, que fundou Zean e o guiava, morreu de velhice aos 67 anos. Ninguém lembrava mais a razão, e Peak abandonou a festa da chuva. Morreu o último que tinha visto o ano 49. Em Zean, os mortos eram queimados, e não enterrados, mas ninguém sabia mais dizer por quê. Toran atacou Zean no morro. Toran voltou com o que Zean tinha guardado. Na luta morreram Pekios e Pevion. Para Toran, o morro virou Morro da Vitória de Toran.
 
 ### Ano 100
 
@@ -318,7 +318,7 @@ O templo de Koil ficou mais forte que o líder. Kiu, que falava pelo Olho Escuro
 - **Toran** vive na praia, com 25 pessoas, e trabalha o metal; nasceu de uma briga em Koil no ano 61; chama o deus de «o Que Risca o Céu»; costumes: faz a festa da chuva (desde o ano 61); guarda tanta comida para o inverno (desde o ano 97); treina os jovens com lanças (desde o ano 98).
 - **Zean** vive no morro, com 12 pessoas, em casas de pedra; nasceu de uma briga em Peak no ano 89; chama o deus de «a Terra Brava»; costumes: faz a festa da chuva (a origem foi esquecida); queima os mortos (a origem foi esquecida); treina os jovens com lanças (desde o ano 98).
 
-Lugares com nome: Praia da Fome (praia, para Toran), Lago da Vitória (lago, para Koil), Lago do Luto (lago, para Toran), Floresta da Fome (floresta, para Peak), Morro da Vitória (morro, para Peak), Morro do Luto (morro, para Zean) e Morro da Vitória (morro, para Toran).
+Lugares com nome: Praia da Fome (praia, para Toran), Lago da Vitória (lago, para Koil), Lago do Luto (lago, para Toran), Floresta da Fome (floresta, para Peak), Morro da Vitória (morro, para Peak), Morro do Luto (morro, para Zean) e Morro da Vitória de Toran (morro, para Toran).
 
 Em 100 anos nasceram 332 pessoas e morreram 197.
 

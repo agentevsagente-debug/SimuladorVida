@@ -2736,7 +2736,14 @@ func _nomear_lugar(g: Grupo, zona: String, motivo: String, e: Evento) -> void:
 	if z.nomes.has(g.id) or g.extinto:
 		return
 	var q: Array = QUALIFICADORES[motivo]
-	z.nomes[g.id] = {"nome": z.cabeca + " " + _contr_de(q[1], q[2]) + " " + q[0], "evento": e.id, "motivo": motivo}
+	var nome: String = z.cabeca + " " + _contr_de(q[1], q[2]) + " " + q[0]
+	# Cada povo dá ao lugar o seu nome: se outro povo vivo já o chama assim (duas vitórias no mesmo
+	# lago, ou a trégua dos dois), este diz de quem é ("Lago da Vitória de Peak").
+	for outro in z.nomes:
+		if outro != g.id and z.nomes[outro]["nome"] == nome and grupo(int(outro)) != null and not grupo(int(outro)).extinto:
+			nome += " de " + g.nome
+			break
+	z.nomes[g.id] = {"nome": nome, "evento": e.id, "motivo": motivo}
 	registrar("lugar_nomeado", "social", 5, zona, g.id, [], {"nome": z.nomes[g.id]["nome"],
 		"motivo": motivo, "origem": e.id})
 
@@ -3962,8 +3969,9 @@ func _ataque_sem_cena(ro) -> bool:
 	return false
 
 
-## Refaz a rotina de hoje aqui, na linha principal (uma vez por ataque no meio do dia, 100 a
-## 250 ms), para a batalha começar meia hora depois do ataque.
+## Refaz a rotina de hoje aqui, na linha principal, para a batalha começar meia hora depois do
+## ataque. É uma montagem inteira (perto de 1 s num mundo velho de 270 pessoas), mas só acontece
+## com um ataque forçado no meio do dia: os ataques do jogo vêm na virada do dia.
 func _refazer_rotina_agora() -> void:
 	_receber_rotina(true)
 	var nova = Rotina.new(self, dia_abs())
@@ -4416,6 +4424,10 @@ func camada(e: Evento) -> String:
 		return "chamado"
 	if e.importancia >= 4:
 		return "nota"
+	# Um gesto do deus (o evento do poder, com o grau) nunca é ambiente: o jogador fez, e o milagre é
+	# "um efeito visível e inegável". Até a chuva sem seca e a cura em quem está são são nota.
+	if e.causa == "divina" and e.dados.has("grau"):
+		return "nota"
 	return "ambiente"
 
 
@@ -4699,5 +4711,5 @@ func avancar_ausencia(segundos_reais: float, segundos_por_passo: float = SEGUNDO
 	for d in eventos_desde(ev_ini):
 		if d["camada"] == "chamado":
 			chamados.append(d)
-	return {"passos": passos, "teto_atingido": pedidos > TETO_AUSENCIA, "de": de, "ate": tempo(),
+	return {"passos": passos, "teto_atingido": pedidos >= TETO_AUSENCIA, "de": de, "ate": tempo(),
 		"relato": _cronista.relato_periodo(ev_ini, eventos.size(), de["ano"], ano(), passos / HORAS_DIA), "chamados": chamados}

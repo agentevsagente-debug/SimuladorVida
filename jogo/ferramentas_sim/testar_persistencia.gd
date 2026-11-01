@@ -62,6 +62,7 @@ func _initialize() -> void:
 	_apagar_com_copias(CAMINHO)
 	_testar_copias()
 	_testar_estante()
+	_testar_determinismo_da_cronica()
 	_testar_async()
 	_testar_interrompido()
 	_testar_antigos()
@@ -272,3 +273,31 @@ func _testar_antigos() -> void:
 	Persistencia.abandonar(m, caminho)
 	conferir(not FileAccess.file_exists(antigos) and not FileAccess.file_exists(Arquivo.copia(antigos, 1)) and not Persistencia.existe(caminho),
 		"antigos: abandonar apaga o arquivo dos antigos e as cópias")
+
+
+## QA D-06: o mesmo mundo salvo, carregado várias vezes no mesmo processo e avançado do mesmo
+## jeito, escreve a mesma crônica, e a mesma que o mundo que nunca parou.
+func _testar_determinismo_da_cronica() -> void:
+	var m := Mundo.new(7, [], Mundo.HORA_INICIAL, true)
+	m.avancar_dias(40 * 10)
+	var c := "user://teste_det/det.txt"
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("user://teste_det"))
+	Persistencia.salvar(m, c)
+	var textos := {}
+	for i in 5:
+		var w = Persistencia.carregar(c)
+		textos[_ate_o_fim(w)] = true
+	var nunca_parou := _ate_o_fim(m)
+	conferir(textos.size() == 1, "D-06: 5 cargas do mesmo mundo dão %d relatos diferentes" % textos.size())
+	conferir(textos.has(nunca_parou), "D-06: o mundo carregado conta igual ao que nunca parou")
+
+
+## A preparação do QA-111: fica uma pessoa, fraca e doente, e o mundo passa 40 dias fora.
+func _ate_o_fim(w) -> String:
+	var vivos: Array = w.vivos.keys()
+	vivos.sort()
+	for id in vivos.slice(1):
+		w._morrer(w.pessoas[id], "doenca")
+	w.pessoas[vivos[0]].saude = 0.02
+	w.pessoas[vivos[0]].doente = 30
+	return w.avancar_ausencia(40 * 24 * 3600)["relato"] + w.cronica()
