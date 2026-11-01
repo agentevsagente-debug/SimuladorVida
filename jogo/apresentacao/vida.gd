@@ -78,6 +78,13 @@ const SOLTA := 0.04
 const CRAVA := 0.12
 ## Na volta, os dois que carregam o pau ficam a 16 px um do outro (arte, seção 22).
 const VAO_DO_PAU := 16.0
+## A chegada de quem vem de além da borda (estranhos e o povo novo), em segundos reais:
+## andam da borda até o fogo; no recomeço, um deles gira o pau, sopra e a fogueira acende.
+const RECOMECO_GIRA := 9.0      # chegaram: quem acende ajoelha e gira o pau
+const RECOMECO_SOPRA := 14.0    # sai a fumaça; ele sopra a brasa
+const RECOMECO_ACESA := 17.0    # a fogueira acende
+const RECOMECO_CABANAS := 19.0  # as cabanas aparecem
+const CHEGADA_DURA := 40.0      # quanto tempo os que chegam ficam juntos no fogo
 ## Na espreita, os caçadores vão em fila, a 7 px um do outro (auditoria 6, H2).
 const FILA_CACADA := 7.0
 ## Folhas que têm a roupa dos estágios 3 a 6 em estagioN/, com o mesmo nome (arte, seção 25).
@@ -90,6 +97,7 @@ const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_fo
 	"adulto_a_andar_4q", "adulto_b_andar_4q", "adulto_a_parado_2q", "adulto_b_parado_2q", "adulto_a_rezar_2q",
 	"adulto_a_colher_4q", "adulto_a_sentado_1q", "crianca_andar_4q", "idoso_andar_4q"]
 
+var _chegando := {}  # id -> {ini, fogo, k (a ordem), recomeco}
 var vista
 var sim
 var figuras: Array = []
@@ -152,6 +160,16 @@ func atualizar(delta: float, relogio: float) -> Array:
 				destino = maxf(destino, MARGEM)
 		else:  # a pesca e o banho na água rasa, e a lavagem na beira, de frente para o lago
 			destino = no_lago.x
+		var chega: Dictionary = _chegando.get(id, {})
+		if not chega.is_empty():
+			if relogio - float(chega.ini) > CHEGADA_DURA:
+				_chegando.erase(id)
+				chega = {}
+			else:  # da borda até o fogo, e ali ficam juntos, uns de cada lado
+				var lado_k := 1.0 if int(chega.k) % 2 == 0 else -1.0
+				destino = float(chega.fogo) + lado_k * (10.0 + 7.0 * (int(chega.k) / 2))
+				if bool(chega.recomeco) and int(chega.k) == 0:
+					destino = float(chega.fogo) - 4.0  # quem acende, ajoelhado junto da lenha
 		var abate := _lugar_na_cacada(t, id)
 		if not abate.is_empty():  # a caçada encenada: em fila na espreita, e no abate em volta do bicho
 			destino = abate.x
@@ -162,7 +180,10 @@ func atualizar(delta: float, relogio: float) -> Array:
 				destino = fogo_d + lado * FOGO_LIVRE
 		var x: float = _x.get(id, destino)
 		var vel := PASSO_ANDAR * (0.8 + 0.4 * _dado(id, 0)) * rapido
-		if absf(destino - x) > 120.0:  # salto no tempo: aparece no lugar novo
+		if not chega.is_empty() and bool(chega.recomeco):  # o povo novo chega ao fogo antes de acendê-lo
+			var falta := RECOMECO_GIRA - 1.0 - (relogio - float(chega.ini))
+			vel = maxf(vel, absf(destino - x) / maxf(falta, 0.5))
+		if absf(destino - x) > 120.0 and chega.is_empty():  # salto no tempo: aparece no lugar novo
 			x = destino
 		# pausas curtas no caminho: de vez em quando para e olha
 		var fatia := int((relogio + id * 1.7) / 3.0)
@@ -197,6 +218,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var espelho: bool = _virada.get(id, id % 2 == 0)
 
 		var visual := _visual(p, acao, t, movendo or absf(destino - x) > 0.5, relogio)
+		if not chega.is_empty():
+			visual = _visual_da_chegada(chega, p, movendo or absf(destino - x) > 0.5, relogio, visual)
 		visual[0] = _com_roupa_do_estagio(visual[0], int(p["grupo"]))
 		var crianca: bool = p["crianca"]
 		var idoso: bool = p["idade"] >= 55 and not crianca
@@ -539,6 +562,35 @@ func _objetos_do_cotidiano(r: Array, relogio: float) -> void:
 					peixe.quadro = mini(int(ciclo / 0.3), 3)
 					peixe.espelho = f.espelho
 					objetos.append(peixe)
+
+
+## Quem chega de além da borda: entram pela borda da direita (o lado do morro,
+## longe do lago) e andam até o fogo. `recomeco`: o povo novo do mundo vazio.
+func chegada(ids: Array, fogo: float, recomeco: bool) -> void:
+	var lista := ids.duplicate()
+	lista.sort()
+	for k in lista.size():
+		var id: int = lista[k]
+		_chegando[id] = {"ini": vista._relogio, "fogo": fogo, "k": k, "recomeco": recomeco}
+		_x[id] = float(LARGURA + 6 + 9 * k)  # fora da tela, em fila
+
+
+func _visual_da_chegada(chega: Dictionary, p: Dictionary, anda: bool, relogio: float, visual: Array) -> Array:
+	var fase: float = relogio + int(p["id"]) * 0.37
+	if anda:
+		if p["crianca"]:
+			return ["habitantes/crianca_andar_4q", 6, int(fase * 6.0) % 4, 0]
+		return ["acoes/andar_trouxa_4q", 8, int(fase * 6.0) % 4, 0]
+	var t: float = relogio - float(chega.ini)
+	if bool(chega.recomeco) and int(chega.k) == 0 and t < RECOMECO_ACESA:
+		if t < RECOMECO_GIRA:
+			return ["acoes/acender_fogo_4q", 12, 0, 0]
+		if t < RECOMECO_SOPRA:
+			return ["acoes/acender_fogo_4q", 12, int(t * 2.0) % 2, 0]  # gira o pau entre as mãos
+		return ["acoes/acender_fogo_4q", 12, 2 if t < RECOMECO_SOPRA + 0.8 else 3, 0]  # a fumaça; sopra
+	if not p["crianca"] and t > RECOMECO_GIRA:
+		return ["acoes/conversar_falar_4q", 8, int(fase * 2.0) % 4, 0]  # recebidos no fogo
+	return visual
 
 
 ## A etapa atual de uma cena com `etapas` (pesca, coleta, lavagem): a etapa da

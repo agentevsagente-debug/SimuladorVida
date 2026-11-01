@@ -421,6 +421,7 @@ func _criar_povo(x: float) -> void:
 	_montar_botoes()
 	if r.get("ok", false):
 		_avisar("Nasceu um povo novo: começa %s." % String(vista.sim.mundo.nome_da_era()).to_lower())
+		vista.comecar_recomeco(int(r.get("grupo", -1)))
 	else:
 		_avisar(String(r.get("motivo", "Não deu certo")))
 

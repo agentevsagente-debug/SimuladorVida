@@ -104,6 +104,8 @@ var _relogio := 0.0
 var _quadro_agua := -1
 var _quadro_fogo := -1
 var _refazer := true
+var _tex_nascendo: Texture2D
+var recomeco := {}  # {grupo, ini}: o povo novo chegando e acendendo a primeira fogueira
 var _chave_fixo := []
 var _vida: Vida
 var _estacao_fundos := ""
@@ -322,6 +324,12 @@ func _ao_receber_eventos(eventos: Array) -> void:
 		match ev["tipo"]:
 			"eclipse":
 				_eclipse_ate = sim.mundo.passo + 3
+			"estranhos":  # chegam de além da borda e vão até o fogo do povo
+				var fogo := fogo_mais_perto(float(ev.get("dados", {}).get("x", 240.0)))
+				for o in sim.construcoes:
+					if o["tipo"] == "fogueira" and int(o.get("grupo", -1)) == int(ev.get("grupo", -2)):
+						fogo = float(o["x"])
+				_vida.chegada(ev.get("participantes", []), fogo, false)
 			"prece_atendida", "prece_sem_resposta", "prece_contrariada":
 				var quem: Array = ev.get("participantes", [])
 				var px: float = sim.mundo.posicao_de(quem[0]) if not quem.is_empty() else -1.0
@@ -589,7 +597,7 @@ func _montar_fixo() -> void:
 				terreno.colar(cor, tag, b, Vector2i(x - b.get_width() / 2, Terreno.NIVEL_AGUA - 14), Arte.OBRA)
 			"fogueira":
 				var canto := Vector2i(x - 8, _chao(x) - 15)
-				_fogos.append({"canto": canto, "centro": float(x),
+				_fogos.append({"canto": canto, "centro": float(x), "grupo": int(o.get("grupo", -1)),
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
 			_:
 				# API v10: a construção traz a cultura; antes, vinha só do povo
@@ -687,11 +695,32 @@ func _fase_da_roca() -> String:
 
 
 ## Construções do núcleo, ou as da cena-alvo no modo layout.
+## No recomeço, as cabanas do povo novo só aparecem depois que a primeira fogueira acende.
+func _cabana_por_erguer(o: Dictionary) -> bool:
+	return not recomeco.is_empty() and o.tipo == "cabana" and int(o.grupo) == int(recomeco.grupo) \
+		and not recomeco.get("ergueu", false)
+
+
+## O povo novo criado no mundo vazio (arte, seção 28): chega pela borda com a
+## trouxa, um deles acende a primeira fogueira e só então as cabanas aparecem.
+func comecar_recomeco(grupo: int) -> void:
+	recomeco = {"grupo": grupo, "ini": _relogio}
+	_refazer = true
+	var ids: Array = sim.pessoas.filter(func(p): return int(p["grupo"]) == grupo).map(func(p): return int(p["id"]))
+	var fogo := -1.0
+	for o in sim.construcoes:
+		if o["tipo"] == "fogueira" and int(o.get("grupo", -1)) == grupo:
+			fogo = float(o["x"])
+	if fogo >= 0.0:
+		_vida.chegada(ids, fogo, true)
+
+
 func _construcoes() -> Array:
 	if not _modo_layout:
 		return sim.construcoes.map(func(o): return {"tipo": o["tipo"], "x": float(o["x"]),
 			"estagio": int(o.get("estagio", 1)), "largura": int(o.get("largura", 16)), "irrigada": o.get("irrigada", false),
-			"grupo": int(o.get("grupo", -1)), "aparencia": o.get("aparencia", {})})
+			"grupo": int(o.get("grupo", -1)), "aparencia": o.get("aparencia", {}), "fileira": int(o.get("fileira", 0))}) \
+			.filter(func(o): return not _cabana_por_erguer(o))
 	var r := []
 	for item in _layout["pecas"]:
 		if item["peca"] == "cabana_galhos":
@@ -1016,12 +1045,37 @@ func _desenhar_fogueiras() -> void:
 	if _tex_brasas == null:
 		_tex_brasas = textura_efeito("brasas_4q")
 	for f in _fogos:
+		var nascendo := _fogo_nascendo(f)
+		if nascendo != -2:  # o recomeço: nada, a lenha, a brasa e a chama pequena
+			if nascendo >= 0:
+				if _tex_nascendo == null:
+					_tex_nascendo = ImageTexture.create_from_image(Arte.imagem("estagio1/fogueira_nascendo_4q.png"))
+				_fogueiras.draw_texture_rect_region(_tex_nascendo,
+					Rect2(f.canto, Vector2(16, 16)), Rect2(nascendo * 16, 0, 16, 16))
+			continue
 		if f.centro in _brasas:  # o fogo baixo: só as brasas pulsando sobre as pedras
 			_fogueiras.draw_texture_rect_region(_tex_brasas, Rect2(Vector2(f.canto) + Vector2(4, 8), Vector2(8, 8)),
 				Rect2(maxi(_quadro_fogo, 0) * 8, 0, 8, 8))
 			continue
 		_fogueiras.draw_texture_rect_region(_tex_fogueira, Rect2(f.canto, Vector2(16, 16)),
 			Rect2(maxi(_quadro_fogo, 0) * 16, 0, 16, 16))
+
+
+## O quadro da fogueira que nasce no recomeço (-1: ainda não há nada; -2: já acesa).
+func _fogo_nascendo(f: Dictionary) -> int:
+	if recomeco.is_empty() or int(f.get("grupo", -1)) != int(recomeco.grupo):
+		return -2
+	var t := _relogio - float(recomeco.ini)
+	if t < Vida.RECOMECO_GIRA:
+		return -1 if t < Vida.RECOMECO_GIRA - 2.0 else 0  # a lenha posta pouco antes
+	if t < Vida.RECOMECO_SOPRA:
+		return int(t * 2.0) % 2  # a lenha com fumaça e a brasa, enquanto ele gira o pau
+	if t < Vida.RECOMECO_ACESA:
+		return 2 + int(t * 2.0) % 2  # a chama pequena e crescendo, enquanto ele sopra
+	if t >= Vida.RECOMECO_CABANAS and not recomeco.get("ergueu", false):
+		recomeco["ergueu"] = true
+		_refazer = true  # as cabanas aparecem
+	return -2
 
 
 ## Mistura de estados do céu pela hora (com minutos), quantizada em 16 passos.

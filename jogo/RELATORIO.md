@@ -2,6 +2,14 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O recomeço e os estranhos
+
+| Item | O que foi feito |
+|---|---|
+| **Recomeço** (arte, seção 28) | Ao criar um povo no mundo vazio, o povo entra pela borda da direita com a trouxa e chega ao fogo antes de acendê-lo. O primeiro ajoelha junto à lenha: gira o pau entre as mãos (`acender_fogo_4q`, quadros 0 e 1) enquanto a lenha solta fumaça e vira brasa (`fogueira_nascendo_4q`, quadros 0 e 1), depois sopra (quadro 3) enquanto a chama cresce (quadros 2 e 3). Aos 17 s, a fogueira acende; aos 19 s, as cabanas aparecem. Os outros conversam em volta. Captura: `capturas/recomeco.png`. |
+| **Estranhos** (evento `estranhos`) | Quem chega de além da borda entra pela direita, com a trouxa, anda até o fogo do povo e fica 40 s ali, uns de cada lado, conversando (recebidos no fogo). Não vi na tela, porque o evento é raro: só acontece num povo pequeno sem quem possa casar. |
+| **Fileira de trás** | Correção: `_construcoes()` não passava o campo `fileira` adiante, então a fileira de trás não era usada. Agora é. |
+
 ## O resumo da ausência, as preces e os efeitos de noite
 
 | Item | O que foi feito |
