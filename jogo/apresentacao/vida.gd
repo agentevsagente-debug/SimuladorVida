@@ -69,6 +69,8 @@ const SOLTA := 0.04
 const CRAVA := 0.12
 ## Na volta, os dois que carregam o pau ficam a 16 px um do outro (arte, seção 22).
 const VAO_DO_PAU := 16.0
+## Na espreita, os caçadores vão em fila, a 7 px um do outro (auditoria 6, H2).
+const FILA_CACADA := 7.0
 ## Folhas que têm a roupa dos estágios 3 a 6 em estagioN/, com o mesmo nome (arte, seção 25).
 const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_forte_4q", "espantar_forte_4q",
 	"tropecar_cair_forte_4q", "carregar_agua_forte_4q", "buscar_agua_forte_4q", "carregar_caca_forte_4q",
@@ -133,8 +135,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var destino: float = lugar.get(id, t.destino)
 		if acao != "remar":  # só no barco se fica sobre a água
 			destino = maxf(destino, MARGEM)
-		var abate := _no_abate(t, id)
-		if not abate.is_empty():  # o abate encenado em chão aberto: quem amarra a 8 px, os outros de pé
+		var abate := _lugar_na_cacada(t, id)
+		if not abate.is_empty():  # a caçada encenada: em fila na espreita, e no abate em volta do bicho
 			destino = abate.x
 		if not t.anda:  # ninguém parado em cima da fogueira: afasta para o lado em que já está
 			var fogo_d: float = vista.fogo_mais_perto(destino)
@@ -260,6 +262,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 		return ["habitantes/crianca_andar_4q", 6, 0, 0]
 	if anda:
 		var carga: String = DETALHES_ANDANDO.get(detalhe, CARGAS.get(acao, ""))
+		if detalhe == "caca_no_pau" and _posto_na_cacada(t.cena, id) >= 2:
+			carga = ""  # só os dois do pau carregam; os outros voltam andando atrás
 		if carga != "":
 			return [carga, 12 if carga in LARGAS else 8, int(fase * 5.0) % 4, 0]
 		if cena == "migracao":
@@ -301,10 +305,12 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 			if queda < 10.0:
 				return ["acoes/tropecar_cair_forte_4q", 12, 3, 0]
 			return ["acoes/agachar_2q", 8, 1, 0]
-		"recolher_caca":  # acertou: o primeiro da cena amarra o bicho, os outros comemoram de pé
-			if _menor_da_cena(t.cena) == id:
-				return ["acoes/cacar_amarrar_4q", 12, int(fase * 2.0) % 4, 0]
-			return ["acoes/cacar_comemorar_4q", 12, (int(fase * 5.0) + id) % 4, 0]
+		"recolher_caca":  # acertou: os dois que vão carregar amarram o bicho, os outros comemoram e esperam
+			if _posto_na_cacada(t.cena, id) <= 1:
+				return ["acoes/cacar_amarrar_4q", 12, (int(fase * 2.0) + id) % 4, 0]
+			if float(_etapa_da_cena(t.cena).get("p", 1.0)) < 0.15:
+				return ["acoes/cacar_comemorar_4q", 12, (int(fase * 5.0) + id) % 4, 0]
+			return _parado(id, idoso, feminina, fase)
 		"aticar":  # de madrugada, quem acordou atiça o fogo
 			return ["acoes/agachar_2q", 8, int(fase * 1.5) % 2, 0]
 		"cochilar":  # o vigia cochila sentado (o balão de pensamento vem dos sinais)
@@ -516,16 +522,21 @@ func _etapa_da_cacada(c: Dictionary, h: float) -> Dictionary:
 	var lado := signf(float(etapas[0].get("x_bicho", 0.0)) - float(etapas[0].get("x", 0.0)))
 	lado = lado if lado != 0.0 else 1.0
 	var antes := -1.0
+	var xc_antes := -1.0
 	for e in etapas:
 		var xb := float(e.get("x_bicho", -1.0))
+		var xc := float(e.get("x", xb))
 		if h >= float(e["ini"]) and h < float(e["fim"]):
 			var p := (h - float(e["ini"])) / maxf(float(e["fim"]) - float(e["ini"]), 0.001)
 			if e["etapa"] == "espreita" and antes >= 0.0 and xb >= 0.0:  # o porco fuçando vai de um ponto ao outro
 				xb = lerpf(antes, xb, minf(p / 0.4, 1.0))
+			if e["etapa"] == "espreita" and xc_antes >= 0.0:  # e os caçadores avançam uns passos
+				xc = lerpf(xc_antes, xc, minf(p / 0.3, 1.0))
 			return {"etapa": String(e["etapa"]), "xb": vista.chao_aberto(xb, -lado) if xb >= 0.0 else xb,
-				"xc": float(e.get("x", xb)), "lado": lado, "p": p, "vazia": c.get("vazia", false),
+				"xc": xc, "lado": lado, "p": p, "vazia": c.get("vazia", false),
 				"mira": e.get("mira", false), "fogo": float(etapas[0].get("x", 0.0)), "cozinha": int(c.get("cozinha", -1))}
 		antes = xb
+		xc_antes = xc if e["etapa"] == "espreita" else -1.0
 	return {}
 
 
@@ -539,17 +550,38 @@ func _etapa_da_cena(cena: Dictionary) -> Dictionary:
 	return {}
 
 
-## No abate, onde cada caçador fica: {x, espelho}, ou {} fora do abate. Quem
-## amarra fica a 8 px do bicho; os outros, de pé com a lança, a 12 a 20 px.
-func _no_abate(t: Dictionary, id: int) -> Dictionary:
-	if t.get("detalhe", "") != "recolher_caca":
+## A ordem de quem caça na cena (0 é quem arremessa), ou 99.
+func _posto_na_cacada(cena: Dictionary, id: int) -> int:
+	for c in sim.cenas:
+		if str(c.get("id", -1)) == str(cena.get("id", -2)):
+			var k: int = c.get("participantes", []).find(id)
+			return k if k >= 0 else 99
+	return 99
+
+
+## Onde cada caçador fica: {x, espelho}, ou {}. Na espreita, na mira e no
+## arremesso, em fila atrás do da frente, a 7 px um do outro. No abate, os dois
+## que vão carregar amarram o bicho, um de cada lado; os outros esperam atrás.
+func _lugar_na_cacada(t: Dictionary, id: int) -> Dictionary:
+	var detalhe: String = t.get("detalhe", "")
+	if not detalhe in ["espreitar", "mirar", "apontar", "arremessar", "recolher_caca"]:
 		return {}
 	var e := _etapa_da_cena(t.cena)
-	if e.get("etapa", "") != "abatido":
+	var etapa: String = e.get("etapa", "")
+	var lado: float = e.get("lado", 1.0)
+	var k := _posto_na_cacada(t.cena, id)
+	if k == 99:
 		return {}
-	var lado: float = e.lado
-	var distancia := 8.0 if _menor_da_cena(t.cena) == id else 8.0 + 4.0 * (1 + posmod(id, 3))
-	return {"x": float(e.xb) - lado * distancia, "espelho": lado < 0.0}
+	if etapa in ["espreita", "arremesso"] and detalhe != "recolher_caca":
+		return {"x": float(e.xc) - lado * FILA_CACADA * k, "espelho": lado < 0.0}
+	if etapa == "abatido" and detalhe == "recolher_caca":
+		match k:
+			0:
+				return {"x": float(e.xb) - lado * 7.0, "espelho": lado < 0.0}
+			1:
+				return {"x": float(e.xb) + lado * 7.0, "espelho": lado > 0.0}
+		return {"x": float(e.xb) - lado * (14.0 + FILA_CACADA * (k - 1)), "espelho": lado < 0.0}
+	return {}
 
 
 ## A caçada em sequência (API: `etapas`; arte, seção 24): o porco fuçando

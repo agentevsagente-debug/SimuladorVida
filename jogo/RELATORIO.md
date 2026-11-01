@@ -2,6 +2,21 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 6 (B)
+
+| # | O que foi feito |
+|---|---|
+| **H1** | No abate, os dois que vão carregar (os dois primeiros da cena) amarram o porco agachados, um de cada lado, a 7 px dele. Os outros comemoram no começo do abate e depois esperam atrás, de pé. Na volta, só esses dois carregam o pau com a caça, e os outros vêm andando atrás. Ninguém mais fica com o pau vazio na cabeça. |
+| **H2** | Na espreita, na mira e no arremesso, os caçadores vão em fila atrás do da frente, a 7 px um do outro, e o da frente desliza de um avanço para o outro. |
+| **D3** | A linha "a linhagem que você segue" saiu. No lugar dela, o ícone da linhagem (8 × 8) aparece ao lado do nome. |
+| **Sugestão** | Quando o pensamento cita pelo nome alguém que está na tela, um ponto dourado (2 × 2, com contorno escuro) fica sobre a cabeça dessa pessoa enquanto a dica estiver aberta, e acompanha quem anda. |
+
+Capturas:
+- `capturas/auditoria6-cacada.png`: a caçada de 13 dias, das 16h30 às 17h20, com a fila na espreita e os dois amarrando;
+- `capturas/auditoria6-dica.png`: o ponto dourado sobre Ulim, no pensamento de Hayoil, e o ícone da linhagem ao lado de Totoim.
+
+O **D4** (a dica da cabana à noite) espera o dado da A.
+
 ## O executável (builds/Simulador de vida.exe)
 
 **Exportação:** fiz com `--export-release "Windows"` a partir desta branch, que é a main com as entregas da B. O executável tem 105 MB.

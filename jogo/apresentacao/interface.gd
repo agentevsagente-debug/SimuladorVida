@@ -87,6 +87,8 @@ var _dica_icone: TextureRect
 var caixa_na_faixa := Rect2()
 var _dica_bico: TextureRect   # o bico embaixo da dica, apontando para quem ela descreve
 var _dica_balao: TextureRect  # o balãozinho de pensamento ao lado da linha do pensamento
+var _dica_linhagem: TextureRect  # o ícone da linhagem ao lado do nome de quem é seguido
+var _citados: Array = []      # ids de quem o pensamento da dica aberta cita (ponto dourado na cabeça)
 var _dica_ponto := []         # [mundo, tela] da última dica de pessoa, para atualizar com o cursor parado
 var _dica_refazer := 0.0
 var _cronica_acima: TextureRect
@@ -488,6 +490,8 @@ func _cabeca_seguida() -> Vector2:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	_refazer_dica(delta)
+	if not _citados.is_empty():
+		queue_redraw()  # o ponto dourado acompanha quem anda
 	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio(), _dica_atual()]
 	if assinatura != _ultimo_desenho:
@@ -563,6 +567,10 @@ func _criar_dica() -> void:
 	_dica_balao.texture = balao
 	_dica_balao.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_dica.add_child(_dica_balao)
+	_dica_linhagem = TextureRect.new()
+	_dica_linhagem.texture = _icones["linhagem_8"]
+	_dica_linhagem.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_dica.add_child(_dica_linhagem)
 	_dica_bico = TextureRect.new()
 	_dica_bico.texture = Arte.textura("interface/dica_ponteiro.png")
 	_dica_bico.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -577,7 +585,9 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var icone := -1
 	var alvo := tela
 	var pensamento := -1  # a linha do pensamento, se houver
+	var linhagem := false
 	_dica_ponto = []
+	_citados = []
 	match o.get("tipo", ""):
 		"pessoa":
 			marcar_dica("pessoas")
@@ -606,8 +616,8 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				if String(d.get("pensamento", "")) != "":  # quem dorme sem sonhar não pensa nada
 					pensamento = linhas.size()
 					linhas.append("\"%s\"" % d["pensamento"])
-			if pe.get("acompanhada", false):
-				linhas.append("a linhagem que você segue")
+					_citados = _citados_em(String(d["pensamento"]), int(pe["id"]))
+			linhagem = pe.get("acompanhada", false)  # o ícone da linhagem ao lado do nome
 			if not o.prece.is_empty():
 				linhas.append("reza: " + o.prece["texto"])
 				icone = NECESSIDADES.find(o.prece["necessidade"])
@@ -641,7 +651,17 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				estado.append("farta")
 			if not estado.is_empty():
 				linhas.append(", ".join(estado))
-	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty())
+	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem)
+
+
+## Quem, entre as pessoas na tela, o pensamento cita pelo nome (menos a própria).
+func _citados_em(texto: String, proprio: int) -> Array:
+	var r := []
+	var palavras := texto.replace(",", " ").replace(".", " ").replace("!", " ").replace("?", " ").split(" ", false)
+	for p in vista.sim.pessoas:
+		if p["id"] != proprio and String(p["nome"]) in palavras:
+			r.append(p["id"])
+	return r
 
 
 ## Com o cursor parado sobre alguém, a dica acompanha o que a pessoa passa a fazer.
@@ -673,10 +693,13 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 ## `pensamento`: a linha que vai na cor do pensamento, com o balãozinho ao lado.
 ## `de_pessoa`: sem lugar acima, a dica vai para o lado, sem cobrir quem ela descreve.
 func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pensamento := -1,
-		de_pessoa := false) -> void:
+		de_pessoa := false, linhagem := false) -> void:
 	if linhas.is_empty():
 		_dica.visible = false
+		_citados = []
 		return
+	if not de_pessoa:
+		_citados = []
 	var y := 3
 	var w := 0
 	_dica_balao.visible = false
@@ -703,8 +726,12 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pen
 		if i == pensamento:
 			_dica_balao.visible = true
 			_dica_balao.position = Vector2(5, y + 2)
+		if i == 0 and linhagem:  # o ícone da linhagem (8 × 8) logo depois do nome
+			_dica_linhagem.position = Vector2(5 + tamanho.x + 3, y + 1)
+			tamanho.x += 11
 		y += int(tamanho.y)
 		w = maxi(w, int(tamanho.x) + recuo)
+	_dica_linhagem.visible = linhagem
 	var extra := 0
 	_dica_icone.visible = icone >= 0
 	if icone >= 0:
@@ -956,6 +983,12 @@ func _draw() -> void:
 		draw_string(fonte, r.position + Vector2(5, 11), _mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		if r.position.y < ALTURA_ALCA:
 			na_faixa = r
+	if _dica.visible:  # um ponto dourado sobre a cabeça de quem o pensamento cita
+		for f in vista.figuras:
+			if f.id in _citados:
+				var c: Vector2 = (vista.para_tela(Vector2(f.x + f.largura / 2.0, f.base - 14)) + Vector2(0, ALTURA_ALCA)).round()
+				draw_rect(Rect2(c - Vector2(2, 2), Vector2(4, 4)), Arte.paleta[3])  # contorno escuro
+				draw_rect(Rect2(c - Vector2(1, 1), Vector2(2, 2)), Arte.paleta[22])  # dourado
 	if na_faixa != caixa_na_faixa:
 		caixa_na_faixa = na_faixa
 		largura_mudou.emit.call_deferred()  # a moldura refaz a região da janela
