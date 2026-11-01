@@ -140,7 +140,53 @@ Nenhum efeito usa semitransparência. Quando algo some aos poucos, como a fumaç
 - não passam pela tabela `noite`, porque emitem luz: raio, impacto, chamas, brasas, fartura, sonho e vagalume;
 - usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas.
 
-## 5. Camadas do motor (`montagem/`)
+## 5. Sinais de prece (`sinais/`)
+
+A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1 px acima da cabeça de quem reza ou, para a vila, acima do telhado mais alto. Os sinais emitem luz, então não passam pela tabela da noite. `amostra_sinais_4x.png` mostra todos sobre o dia e sobre a noite.
+
+| Folha | Quadro | Quadros | Quando usar |
+|---|---|---|---|
+| `prece_comum_4q` | 8 × 12 | 4 | pedido comum: luz pequena e mansa que sobe e desce 1 px |
+| `prece_urgente_4q` | 12 × 16 | 4 | urgente: luz maior, com halo e 4 raios pulsando |
+| `prece_desesperada_4q` | 16 × 24 | 4 | desesperado: chama de luz quente e trêmula, com 8 raios e faíscas |
+| `os_ultimos_4q` | 24 × 48 | 4 | o evento `os_ultimos`: facho de luz fria sobre a vila, com 5 pontos de luz em volta |
+| `necessidade_5v` | 8 × 8 | 5 variações | símbolo da `necessidade` da prece, nesta ordem: `seca` (sol), `fome` (espiga), `doenca` (coração rachado), `frio` (floco), `guerra` (lanças cruzadas). Vai ao lado do sinal ou na dica do cursor. |
+
+A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10 dias de espera, urgente até 30 dias e desesperado a partir daí, ou quando a importância do evento for 8 ou mais.
+
+## 6. Interface da alça (`interface/`)
+
+Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a alça montada, a crônica, a dica do cursor e o alfabeto completo.
+
+**Ícones**, em `icones_12/` (12 × 12) e `icones_8/` (8 × 8), com os mesmos nomes nas duas pastas:
+
+| Grupo | Ícones |
+|---|---|
+| Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho` |
+| Tempo | `pausa`, `normal`, `rapido`, `salto` |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar) |
+
+Os ícones foram desenhados para o fundo escuro da alça.
+
+**Caixas em 9 partes** (os cantos ficam fixos, as bordas e o miolo repetem):
+
+| Arquivo | Tamanho | Fatia | Uso |
+|---|---|---|---|
+| `caixa_cronica_9s.png` | 24 × 24 | 6 px | pergaminho da crônica; texto com `fonte_5x7_escura` |
+| `caixa_dica_9s.png` | 12 × 12 | 4 px | dica do cursor, escura; texto com `fonte_5x7_clara` e o nome com `fonte_5x7_dourada` |
+| `dica_ponteiro.png` | 6 × 3 | | bico da dica, apontando para baixo; vai colado na borda de baixo |
+| `alca_9s.png` | 12 × 12 | 4 px | fundo da alça, madeira escura |
+| `botao_3q.png` | 3 quadros de 16 × 16 | | botão normal, com o cursor por cima e selecionado (borda dourada). O ícone de 12 × 12 vai em (2, 2). |
+
+**Fonte em pixel:** `fonte_5x7_clara`, `fonte_5x7_escura` e `fonte_5x7_dourada`, cada uma com um `.png` e um `.fnt`.
+- **Formato:** BMFont em texto, que o Godot 4 importa direto como fonte. As três têm as mesmas medidas e mudam só a cor, porque a fonte não pode ser tingida pelo motor: multiplicar a cor sairia da paleta.
+- **Medidas:** maiúsculas de 5 × 7, proporcional, altura de linha 12, linha de base 9, 1 px entre letras e espaço de 3 px.
+- **Caracteres:** 110 ao todo:
+  - letras de A a Z, maiúsculas e minúsculas, e algarismos de 0 a 9;
+  - todos os acentos do português: á à â ã é ê í ó ô õ ú ü, as maiúsculas acentuadas correspondentes, ç e Ç;
+  - pontuação: `. , : ; ! ? - — ' " ( ) « » / % + = … º ª`.
+
+## 7. Camadas do motor (`montagem/`)
 
 | Arquivo | O que é |
 |---|---|
