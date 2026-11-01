@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://but7aed8p5hve"
+path="res://.godot/imported/arvore_jovem.png-e5c679ff88f3d5f16b7c9115886b62bb.image"
+
+[deps]
+
+source_file="res://arte/estacoes/inverno/natureza/arvore_jovem.png"
+dest_files=["res://.godot/imported/arvore_jovem.png-e5c679ff88f3d5f16b7c9115886b62bb.image"]
+
+[params]
+

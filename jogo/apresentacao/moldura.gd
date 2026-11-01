@@ -25,7 +25,10 @@ extends Node2D
 ##   --ritmo=pausa|normal|rapido          ritmo inicial do tempo
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
-##   --abrir=cronica|poderes|ritmo|linhagem|salto   abre um painel ou aperta um botão (testes)
+##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
+##                        abre um painel ou aperta um botão (testes); livro abre o
+##                        último livro, abandonar abre a pergunta de abandono e
+##                        abandonado abandona sem perguntar e abre a estante
 
 const Simulacao = preload("res://apresentacao/simulacao.gd")
 
@@ -117,6 +120,16 @@ func _ready() -> void:
 			interface._apertar.call_deferred(args["abrir"])
 		"salto":
 			interface._apertar.call_deferred("ritmo:salto")
+		"estante":
+			interface.alternar_estante.call_deferred()
+		"livro":
+			interface._estante.abrir_livro.call_deferred(1 << 20)
+		"abandonar":
+			interface._estante.pedir_confirmacao.call_deferred()
+		"abandonado":  # abandona de vez e mostra a estante com o livro novo
+			(func():
+				interface._abandonar()
+				interface.alternar_estante()).call_deferred()
 	if args.has("atalho-global"):
 		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if args.get("cenario", "") == "escondido":

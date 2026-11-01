@@ -17,6 +17,7 @@ signal escala(delta: int)
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
+const EstanteTela = preload("res://apresentacao/estante_tela.gd")
 
 const ALTURA_ALCA := 18
 const PEGA := 10          # largura da zona de arraste à esquerda
@@ -41,6 +42,9 @@ const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "cu
 const NOME_ZONA := {"lago": "O lago", "praia": "A praia", "floresta": "A floresta", "morro": "O morro"}
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
 const CARGA_SEGUNDOS := 2.0
+## O tamanho em que as fontes 5x7 saem pixel a pixel (size=11 no .fnt). Sem ele,
+## o Godot usa 16 e amplia o texto 1,45 vez, fora da grade de pixels.
+const TAM_FONTE := 11
 ## O relógio do mundo, no canto de cima à direita, numa pastilha escura.
 const RELOGIO := Rect2i(438, 1, 42, 15)
 const DA_ESTACAO := {"primavera": "da primavera", "verão": "do verão", "outono": "do outono", "inverno": "do inverno"}
@@ -70,19 +74,28 @@ var _mensagem_ate := 0.0
 var _fontes := {}
 var _relogio := 0.0
 var _ultimo_desenho := []
+var _estante: Node2D
 
 
 func criar(p_vista: Node2D) -> void:
 	vista = p_vista
 	_alca = Arte.textura("interface/alca_9s.png")
 	_botao = Arte.textura("interface/botao_3q.png")
-	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder"]:
+	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante"]:
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
 		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
 	for cor in ["clara", "escura", "dourada"]:
 		_fontes[cor] = load("res://arte/interface/fonte_5x7_%s.fnt" % cor)
 	_criar_dica()
 	_criar_cronica()
+	_estante = EstanteTela.new()
+	add_child(_estante)
+	move_child(_estante, 0)  # a dica fica por cima da estante
+	_estante.criar(self, vista)
+	_estante.abandonar.connect(_abandonar)
+	_estante.fechada.connect(_montar_botoes)
+	if vista.sim:
+		vista.sim.eventos_novos.connect(_ao_receber_eventos)
 	_montar_botoes()
 
 
@@ -95,7 +108,10 @@ func largura() -> int:
 func _montar_botoes() -> void:
 	var ritmo := _ritmo_atual()
 	var lista := []
-	if aberto == "poderes":
+	if _mundo_vazio():  # sem ninguém, o único poder é criar um povo novo
+		aberto = "" if aberto == "poderes" else aberto
+		lista.append({"id": "criar_povo", "icone": "criar_povo", "selecionado": poder == "criar_povo"})
+	elif aberto == "poderes":
 		for p in PODERES:
 			lista.append({"id": "poder:" + p, "icone": p, "selecionado": p == poder})
 	else:
@@ -106,6 +122,7 @@ func _montar_botoes() -> void:
 	else:
 		lista.append({"id": "ritmo", "icone": ritmo, "selecionado": false})
 	lista.append({"id": "cronica", "icone": "cronica", "selecionado": _cronica.visible})
+	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo != "fim"})
 	lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
 	var antes := botoes.size()
@@ -117,6 +134,10 @@ func _montar_botoes() -> void:
 	if botoes.size() != antes:
 		largura_mudou.emit()
 	queue_redraw()
+
+
+func _mundo_vazio() -> bool:
+	return vista.sim != null and vista.sim.mundo.fim_do_mundo
 
 
 func _ritmo_atual() -> String:
@@ -158,14 +179,56 @@ func _apertar(id: String) -> void:
 				vista.sim.definir_ritmo(Simulacao.Ritmo.RAPIDO)
 			"salto":
 				_saltar()
+	elif id == "criar_povo":
+		poder = "" if poder == "criar_povo" else "criar_povo"
+		_avisar("Criar um povo: clique onde ele vai nascer" if poder != "" else "Nenhum poder escolhido")
 	elif id == "cronica":
+		if _estante.visible:
+			_estante.fechar()
 		alternar_cronica()
+	elif id == "estante":
+		alternar_estante()
 	elif id == "linhagem":
 		vista.alternar_seguir()
 		_avisar(_texto_linhagem())
 	elif id == "esconder":
 		esconder.emit()
 	_montar_botoes()
+
+
+func alternar_estante() -> void:
+	if _estante.visible and _estante.modo != "fim":
+		_estante.fechar()
+	else:
+		if _cronica.visible:
+			alternar_cronica()
+		_dica.visible = false
+		_estante.abrir()
+	_montar_botoes()
+
+
+## Pela estante, depois da confirmação: a crônica vai para a estante e começa outro mundo.
+func _abandonar() -> void:
+	var livro: Dictionary = vista.sim.abandonar()
+	poder = ""
+	aberto = ""
+	_montar_botoes()
+	_avisar("%s foi para a estante. Começou outro mundo." % livro.get("titulo", "A crônica"))
+
+
+func _ao_receber_eventos(eventos: Array) -> void:
+	for ev in eventos:
+		if ev["tipo"] == "fim_do_mundo":
+			poder = ""
+			aberto = ""
+			if _cronica.visible:
+				alternar_cronica()
+			var m = vista.sim.mundo
+			var livro: Dictionary = m.livros[-1] if not m.livros.is_empty() else {}
+			_estante.avisar_fim(livro)
+			_montar_botoes()
+		elif ev["tipo"] == "livro_fechado" or ev["tipo"] == "os_ultimos":
+			_montar_botoes()
 
 
 func _saltar() -> void:
@@ -208,6 +271,9 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			queue_redraw()
 		if _cronica.visible:
 			return true
+		if _estante.visible and _estante.modo != "fim" and not na_alca and pos.y >= faixa:
+			_estante.tratar(event, pos - Vector2(0, faixa))
+			return true
 		if not na_alca and pos.y >= faixa:
 			_atualizar_dica(vista.para_mundo(pos - Vector2(0, faixa)), pos)
 		elif not novo.is_empty():
@@ -236,6 +302,10 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 				escala.emit(-1)
 			return true
+		if _estante.visible and pos.y >= faixa:
+			_estante.tratar(event, pos - Vector2(0, faixa))
+			_montar_botoes()
+			return true
 		if _cronica.visible:
 			if event.pressed and event.button_index == MOUSE_BUTTON_WHEEL_UP:
 				_rolar(-2)
@@ -248,7 +318,9 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			return false
 		var mundo_p: Vector2 = vista.para_mundo(pos - Vector2(0, faixa))
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			if event.pressed and poder != "":
+			if event.pressed and poder == "criar_povo":
+				_criar_povo(mundo_p.x)
+			elif event.pressed and poder != "":
 				_carregando = true
 				_carga_inicio = _relogio
 				_carga_ponto = mundo_p
@@ -273,9 +345,15 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 
 
 func tecla(keycode: int) -> bool:
+	if _estante.visible and keycode in [KEY_LEFT, KEY_RIGHT, KEY_PAGEUP, KEY_PAGEDOWN]:
+		return _estante.tecla(keycode)
 	match keycode:
 		KEY_C:
+			if _estante.visible:
+				_estante.fechar()
 			alternar_cronica()
+		KEY_E:
+			alternar_estante()
 		KEY_L:
 			_apertar("linhagem")
 		KEY_D:
@@ -284,7 +362,10 @@ func tecla(keycode: int) -> bool:
 		KEY_SPACE:
 			_apertar("ritmo:normal" if vista.sim.ritmo == Simulacao.Ritmo.PAUSA else "ritmo:pausa")
 		KEY_ESCAPE:
-			if _cronica.visible:
+			if _estante.visible:
+				_estante.voltar()
+				_montar_botoes()
+			elif _cronica.visible:
 				alternar_cronica()
 			elif poder != "" or _carregando:
 				_carregando = false
@@ -297,8 +378,22 @@ func tecla(keycode: int) -> bool:
 	return true
 
 
+func _criar_povo(x: float) -> void:
+	var r: Dictionary = vista.sim.criar_povo(x)
+	print("[interface] criar povo em x=%d -> %s" % [x, r])
+	poder = ""
+	_montar_botoes()
+	if r.get("ok", false):
+		_avisar("Nasceu um povo novo: começa %s." % String(vista.sim.mundo.nome_da_era()).to_lower())
+	else:
+		_avisar(String(r.get("motivo", "Não deu certo")))
+
+
 ## Usa um poder como se o jogador tivesse feito o gesto (testes e capturas).
 func demo(p: String, x: float, intensidade_fixa: float) -> void:
+	if p == "criar_povo":
+		_criar_povo(x)
+		return
 	poder = p
 	_carga_ponto = Vector2(x, 100)
 	_carga_inicio = _relogio - intensidade_fixa * CARGA_SEGUNDOS
@@ -325,9 +420,10 @@ func _usar_poder() -> void:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	var assinatura := [_texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
-		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo]
+		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio()]
 	if assinatura != _ultimo_desenho:
-		if _ultimo_desenho.size() > 4 and (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]):
+		if _ultimo_desenho.size() > 4 and (assinatura[4] != _ultimo_desenho[4] or assinatura[5] != _ultimo_desenho[5]
+				or assinatura[6] != _ultimo_desenho[6]):
 			_montar_botoes()
 		_ultimo_desenho = assinatura
 		queue_redraw()
@@ -370,6 +466,7 @@ func _criar_dica() -> void:
 	for i in 4:
 		var l := Label.new()
 		l.add_theme_font_override("font", _fontes["dourada" if i == 0 else "clara"])
+		l.add_theme_font_size_override("font_size", TAM_FONTE)
 		l.add_theme_constant_override("line_spacing", 0)
 		l.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		_dica.add_child(l)
@@ -435,6 +532,7 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 		nome = NOME_RITMO[id.substr(6)]
 	else:
 		nome = {"poderes": "Poderes", "ritmo": "Ritmo do tempo", "cronica": "Crônica (C)",
+			"criar_povo": "Criar um povo novo", "estante": "Estante de crônicas (E)",
 			"linhagem": "Seguir a linhagem (L)", "esconder": "Esconder (H)"}.get(id, "")
 	_mostrar_dica([nome], -1, canto + Vector2(4, 22), false)
 
@@ -507,6 +605,7 @@ func _criar_cronica() -> void:
 	_cronica.add_child(recorte)
 	_cronica_texto = Label.new()
 	_cronica_texto.add_theme_font_override("font", _fontes["escura"])
+	_cronica_texto.add_theme_font_size_override("font_size", TAM_FONTE)
 	_cronica_texto.add_theme_constant_override("line_spacing", 0)
 	_cronica_texto.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_cronica_texto.size = Vector2(412, 0)
@@ -599,7 +698,10 @@ static func _nome_evento(tipo: String) -> String:
 # --- desenho -------------------------------------------------------------------
 
 ## Caixa em 9 partes: os cantos ficam fixos, as bordas e o miolo repetem.
-func _desenhar_9(tex: Texture2D, r: Rect2, m: int) -> void:
+## `alvo` é onde desenhar (outro nó, como a estante), se não for a própria alça.
+func _desenhar_9(tex: Texture2D, r: Rect2, m: int, alvo: CanvasItem = null) -> void:
+	if alvo == null:
+		alvo = self
 	var t := tex.get_size()
 	var xs := [0.0, m, t.x - m, t.x]
 	var ys := [0.0, m, t.y - m, t.y]
@@ -615,7 +717,7 @@ func _desenhar_9(tex: Texture2D, r: Rect2, m: int) -> void:
 				var x: float = dx[i]
 				while x < dx[i + 1]:
 					var w := minf(sw, dx[i + 1] - x)
-					draw_texture_rect_region(tex, Rect2(x, y, w, h), Rect2(xs[i], ys[j], w, h))
+					alvo.draw_texture_rect_region(tex, Rect2(x, y, w, h), Rect2(xs[i], ys[j], w, h))
 					x += sw
 				y += sh
 
@@ -644,13 +746,13 @@ func _draw() -> void:
 	if hora != "":
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), Rect2(RELOGIO), 4)
 		var fonte_relogio: Font = _fontes["dourada" if vista.sim.tempo.get("noite", false) else "clara"]
-		var w := fonte_relogio.get_string_size(hora).x
-		draw_string(fonte_relogio, Vector2(RELOGIO.position.x + roundi((RELOGIO.size.x - w) / 2.0), 12), hora)
+		var w := fonte_relogio.get_string_size(hora, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x
+		draw_string(fonte_relogio, Vector2(RELOGIO.position.x + roundi((RELOGIO.size.x - w) / 2.0), 12), hora, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	if _relogio < _mensagem_ate and _mensagem != "":
 		var fonte: Font = _fontes["clara"]
-		var w := int(fonte.get_string_size(_mensagem).x)
+		var w := int(fonte.get_string_size(_mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
 		var r := Rect2(largura() + 2, 2, w + 10, 14)
 		if r.end.x > RELOGIO.position.x - 2:
 			r.position = Vector2(480 - r.size.x, ALTURA_ALCA + 1)
 		_desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), r, 4)
-		draw_string(fonte, r.position + Vector2(5, 11), _mensagem)
+		draw_string(fonte, r.position + Vector2(5, 11), _mensagem, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)

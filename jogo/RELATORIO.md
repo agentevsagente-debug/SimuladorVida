@@ -2,6 +2,24 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Fase 2 na tela (API v6 a v10)
+
+**Culturas nas construções.** Casas e templos se montam em camadas: a parede, o telhado e o símbolo da `aparencia` de cada construção (API v10; antes, a do povo). Os estágios 3 a 6 usam as camadas `_parede`, `_telhado_<t>`, `_base` e `_simbolo_<s>`, e o templo da escrita usa o telhado e o símbolo do templo de colunas, como pede a arte. Estágio 1, celeiro, forja, moinho, muralha e barco não têm variação e saem inteiros. A roupa de todo o povo é a cor da cultura: turquesa, rosa ou lilás. Captura: `capturas/fase2-culturas.png`.
+
+**Fim do mundo.** O facho "os últimos" já existia. Quando chega `fim_do_mundo`, aparece um aviso no pergaminho, com a era que terminou, os anos e o livro que foi para a estante; ele some com um clique (`capturas/fase2-fim.png`). No mundo vazio, o botão de poderes vira **criar povo** (ícone novo). Com ele escolhido, um clique no mundo chama `criar_povo(x)`, e começa a era seguinte.
+
+**Natureza retomando.** Cada ruína ganha mato pela idade: grau 1 aos 3 anos, grau 2 aos 10 e grau 3 aos 25. Uma muda nasce ao lado aos 15 anos, e uma árvore ou um pinheiro jovem aos 25. A fogueira de um povo de pedra em diante vira `fogueira_antiga`. O desenho fixo é refeito quando a natureza avança (`capturas/fase2-vazio.png`: um povo de pedra 20 anos depois).
+
+**Estante de crônicas** (botão novo na alça e tecla E): fundo e prateleiras da arte, um livro por era, com a cor da lombada igual em todo o mundo (pela semente) e o nome ("ERA II") girado na etiqueta. Ao passar o mouse aparecem o título, o mundo e os anos. A era em curso fica por último, com uma fita dourada. O livro aberto pagina o texto em linhas de até 104 px e 10 linhas por página. O título vai em dourado, como pede a arte; os anos ficam na tinta escura, porque o dourado mal se lê no pergaminho. Para folhear: clicar na página, usar a roda ou as setas. O botão direito ou o Esc voltam. Capturas: `fase2-estante.png` e `fase2-livro.png`.
+
+**Abandonar o mundo:** pelo botão da estante, depois de uma pergunta de confirmação (`fase2-abandonar.png`). A simulação chama `Persistencia.abandonar` e começa outro mundo com `Mundo.new`; a vida em cena e o desenho fixo recomeçam. Os mundos de teste (que não salvam) guardam os livros em `user://estante_teste`, para não misturar com a estante do jogador. `fase2-abandonado.png` mostra três livros: dois mundos abandonados e a era em curso.
+
+**Correção que vale para toda a interface: o texto saía ampliado 1,45 vez.** O Godot desenhava as fontes 5x7 no tamanho padrão 16, e não no 11 do arquivo, então relógio, dica, crônica e mensagens ficavam fora da grade de pixels. Agora tudo usa o tamanho 11 e sai pixel a pixel, e a crônica passou a mostrar mais texto por linha (`fase2-cronica-fonte11.png`).
+
+**Para testar:** `--extinguir[=N]` mata todos (e, com N, o mundo vazio anda N anos); `--demo=criar_povo:X:0:S`; `--abrir=estante|livro|abandonar|abandonado`. O verificar.ps1 foi atualizado para a alça mais larga (botão da estante) e passa nos 19 itens; a fidelidade e o céu sem grade continuam passando.
+
+**Ícones novos:** `criar_povo` e `estante`, desenhados por `ferramentas/icones_fase2.py` com a paleta e o contorno dos outros. Se a sessão de arte entregar os seus, o sincronizar_arte os troca.
+
 ## Critérios de saída da fase 1
 
 Conferidos um a um em 01/11/2026, com o código da branch `claude/fase0-moldura-e4e762` depois do céu vivo.

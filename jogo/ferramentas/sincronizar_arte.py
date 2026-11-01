@@ -22,7 +22,7 @@ PASTAS = {
     "estagio4": "estagio4", "estagio5": "estagio5", "estagio6": "estagio6", "habitantes": "habitantes",
     "acoes": "acoes", "objetos": "objetos", "efeitos": "efeitos", "sinais": "sinais",
     "interface": "interface", "memoria": "memoria", "criaturas": "criaturas", "estacoes": "estacoes",
-    "montagem": "camadas",
+    "montagem": "camadas", "culturas": "culturas", "natureza": "natureza", "estante": "estante",
 }
 FORA = ("amostra", "comparacao", "montagem_", "cena_", "terreno_teste", "blocos_prancha", "variacoes_")
 
