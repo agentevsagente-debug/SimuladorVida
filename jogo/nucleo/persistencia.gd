@@ -41,7 +41,7 @@ const CAMINHO_PADRAO := "user://mundo.txt"
 const CAMPOS_ESPECIAIS := ["rng", "_cronista", "pessoas", "vivos", "grupos", "zonas", "eventos",
 	"recuperado_de", "_salvamento", "ultimo_salvamento_ok", "_rotina_cache", "_montando", "_tarefa", "_descartes", "_fichas_chave", "_eventos_por_tipo", "_por_tipo_ate", "_rotina_versao", "_consultado", "desempenho", "_visiveis_chave", "_visiveis", "_fichas", "_cenas_chave", "_cenas",
 	"_construcoes_chave", "_construcoes", "_preces_chave", "_preces", "_textos_prece", "_obras_por_grupo",
-	"arquivar", "_arquivo", "_arquivo_gravado", "_dicas", "_dicas_passo"]
+	"arquivar", "_arquivo", "_arquivo_gravado", "_dicas", "_dicas_passo", "_dica_fontes", "_dica_fontes_dia"]
 const CAMPOS_CRONISTA := ["_narrados", "_primeiros", "_usados", "anos_escritos", "ultimo_ano_escrito", "_cursor",
 	"cronicas_povos"]
 ## Campos do cronista que os arquivos antigos não têm: gravados sempre, lidos se existirem.

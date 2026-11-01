@@ -57,16 +57,16 @@ const FAZENDO_CENA := {
 
 ## O que alguém pensa, pelo traço (adulto e criança).
 const TRACO := {
-	"ambicioso": [["Um dia quem manda aqui sou eu", "Mereço mais do que tenho"], ["Quando crescer, vou mandar em todos"]],
-	"pacifico": [["Brigar não enche a barriga de ninguém", "Que dia calmo, assim é bom"], ["Não gosto quando gritam"]],
-	"rancoroso": [["Eu não esqueço o que me fizeram", "Quem me deve, um dia paga"], ["Ninguém mais pega o que é meu"]],
+	"ambicioso": [["Um dia quem manda aqui sou eu", "Mereço mais do que tenho"], ["Quando crescer, vou mandar em todos", "Eu vou ser o chefe da brincadeira"]],
+	"pacifico": [["Brigar não enche a barriga de ninguém", "Que dia calmo, assim é bom"], ["Não gosto quando gritam", "Vamos brincar sem brigar"]],
+	"rancoroso": [["Eu não esqueço o que me fizeram", "Quem me deve, um dia paga"], ["Ninguém mais pega o que é meu", "Ele me empurrou, vou contar"]],
 	"curioso": [["O que será que há depois do morro?", "Por que a água do lago não acaba?"], ["Por que o fogo dança?", "Aonde vai o sol de noite?"]],
-	"devoto": [["É preciso agradecer pelo dia", "Hoje vou levar uma oferenda"], ["Mamãe diz que lá de cima nos veem"]],
-	"desconfiado": [["Não confio em quem chega de fora", "Tem gente aqui de olho no meu cesto"], ["Esse menino pegou minha pedra"]],
-	"generoso": [["Dá para repartir o meu cesto", "Ninguém aqui vai dormir com fome"], ["Vou dar minha fruta ao pequeno"]],
-	"engenhoso": [["Dá para fazer um cesto melhor que esse", "E se a lança fosse mais leve?"], ["Fiz um barquinho de folha!"]],
-	"corajoso": [["Amanhã eu pego o porco sozinh{a}", "Não tenho medo da mata"], ["Quando crescer, vou caçar"]],
-	"medroso": [["Não gosto do escuro da mata", "E se o porco vier para cima?"], ["Tem bicho no escuro?"]]}
+	"devoto": [["É preciso agradecer pelo dia", "Hoje vou levar uma oferenda"], ["Mamãe diz que lá de cima nos veem", "Vou rezar igual aos grandes"]],
+	"desconfiado": [["Não confio em quem chega de fora", "Tem gente aqui de olho no meu cesto"], ["Esse menino pegou minha pedra", "Não conto meu segredo pra ninguém"]],
+	"generoso": [["Dá para repartir o meu cesto", "Ninguém aqui vai dormir com fome"], ["Vou dar minha fruta ao pequeno", "Guardei um pedaço pro meu amigo"]],
+	"engenhoso": [["Dá para fazer um cesto melhor que esse", "E se a lança fosse mais leve?"], ["Fiz um barquinho de folha!", "Vou fazer uma lança de graveto"]],
+	"corajoso": [["Amanhã eu pego o porco sozinh{a}", "Não tenho medo da mata"], ["Quando crescer, vou caçar", "Eu subo na árvore mais alta"]],
+	"medroso": [["Não gosto do escuro da mata", "E se o porco vier para cima?"], ["Tem bicho no escuro?", "Não vou longe da mamãe"]]}
 
 const COSTUME := {
 	"agua": "Bom que a água agora é guardada", "estocar": "Guardar comida é sabedoria",
@@ -77,23 +77,100 @@ const COSTUME := {
 var m
 var p
 var g
+var ctx: Dictionary = {}  # o que é igual para todo o povo, calculado uma vez (veja mundo.dica)
 var adulto := true
 var a := "o"              # fim de concordância da pessoa
 
 
-func _init(mundo, pessoa, grupo) -> void:
+func _init(mundo, pessoa, grupo, contexto: Dictionary = {}) -> void:
 	m = mundo
 	p = pessoa
 	g = grupo
+	ctx = contexto
 	adulto = p.idade(m.ano()) >= 12
 	a = "o" if p.sexo == "m" else "a"
 
 
-## {fazendo, pensamento, humor} de uma pessoa viva, a partir da ficha da hora (acao,
-## detalhe, cena, x) e do estado do mundo.
-func montar(ficha: Dictionary) -> Dictionary:
-	var pens := _pensamento(ficha)
-	return {"fazendo": _fazendo(ficha), "pensamento": pens[0], "humor": pens[1]}
+## O que a pessoa faz, numa frase (a partir da ficha da hora: acao, detalhe, cena, x).
+func fazendo(ficha: Dictionary) -> String:
+	return _fazendo(ficha)
+
+
+## As fontes do pensamento que só mudam com o dia (necessidades, memória, relações, o deus, o
+## povo, os traços): [força, [frases], humor, sonho]. O mundo guarda por um dia.
+func candidatos() -> Array:
+	var cands: Array = []
+	_necessidades(cands)
+	_acontecimentos(cands)
+	_relacoes(cands)
+	_deus(cands)
+	_povo(cands)
+	_tracos(cands)
+	cands.sort_custom(func(x, y): return x[0] > y[0])
+	return cands
+
+
+## [pensamento, humor] desta hora, a partir dos candidatos do dia (já em ordem de força) e do
+## que a pessoa faz agora: a primeira frase, na ordem de preferência dela, com até 60
+## caracteres e que não está em `usadas` (o que outros do povo já pensam nesta hora). Sem
+## nenhuma livre, fica sem pensamento.
+func escolher(ficha: Dictionary, do_dia: Array, usadas: Dictionary) -> Array:
+	var cands: Array = do_dia
+	var agora: Array = []
+	_no_que_faz(agora, ficha)
+	if not agora.is_empty():
+		cands = do_dia.duplicate()
+		var i := 0
+		while i < cands.size() and cands[i][0] >= agora[0][0]:
+			i += 1
+		cands.insert(i, agora[0])
+	var bloco: int = m.passo / BLOCO
+	if ficha.get("acao", "") == "dormir":
+		for op in _dormindo(cands, bloco):
+			var t := texto(op[0])
+			if t.is_empty() or not usadas.has(t):
+				return [t, op[1]]
+	if cands.is_empty():
+		return ["", _humor_calmo()]
+	var sem := _semente()
+	var k := 1 if cands[0][0] >= 9 else mini(3, cands.size())
+	var ini := (bloco + sem) % k
+	for n in cands.size():
+		var c: Array = cands[(ini + n) % k] if n < k else cands[n]
+		var frases: Array = c[1]
+		var humor: String = c[2] if not c[2].is_empty() else _humor_calmo()
+		var j0 := (bloco / k + sem / 7) % maxi(1, frases.size())
+		for j in frases.size():
+			var ix := (j0 + j) % frases.size()
+			var t: String
+			if frases[ix] is Array:
+				# Preenchida uma vez e guardada nos candidatos do dia: as horas seguintes não
+				# pagam a gramática de novo.
+				t = texto(frases[ix])
+				frases[ix] = t
+			else:
+				t = texto(frases[ix])
+			if t.length() <= PENSAMENTO_MAX and not usadas.has(t):
+				return [t, humor]
+	var c0: Array = cands[ini]
+	return ["", c0[2] if not c0[2].is_empty() else _humor_calmo()]
+
+
+## Uma frase ainda por preencher: [modelo, variáveis]. Só vira texto (`texto`) quando é
+## escolhida, para não pagar a gramática das opções que ninguém vê.
+func _f(modelo: String, vars: Dictionary) -> Array:
+	return [modelo, vars]
+
+
+static func texto(x) -> String:
+	if x is Array:
+		return G.maiuscula(G.preencher(x[0], x[1], false))
+	return G.maiuscula(String(x))
+
+
+## A semente da pessoa: um número fixo dela, que espalha as escolhas entre pessoas parecidas.
+func _semente() -> int:
+	return absi((p.id * 2654435761 + p.nasc_ano * 40503 + p.nome.hash()) % 1000003)
 
 
 # ---------------------------------------------------------------- fazendo
@@ -145,17 +222,21 @@ func _lugar(x: float) -> String:
 
 
 func _fogo() -> float:
+	if ctx.has("fogo"):
+		return ctx["fogo"]
+	var x := -1.0
 	for o in Cotidiano.construcoes_do_grupo(m, g):
 		if o["tipo"] == "fogueira":
-			return o["x"]
-	return -1.0
+			x = o["x"]
+	ctx["fogo"] = x
+	return x
 
 
 ## Com quem a pessoa conversa: alguém do povo conversando a até 12 px.
 func _com_quem(f: Dictionary) -> String:
 	var melhor := ""
 	var perto := 13.0
-	for o in m.pessoas_visiveis():
+	for o in ctx.get("fichas", m.pessoas_visiveis()):
 		if o["id"] == p.id or o.get("grupo", -1) != g.id or o["acao"] != f["acao"]:
 			continue
 		var d := absf(float(o["x"]) - float(f["x"]))
@@ -167,6 +248,12 @@ func _com_quem(f: Dictionary) -> String:
 
 ## A caça do povo já chegou ao fogo (a etapa `repartir` começou).
 func _caca_no_fogo() -> bool:
+	if not ctx.has("caca"):
+		ctx["caca"] = _caca_no_fogo_agora()
+	return ctx["caca"]
+
+
+func _caca_no_fogo_agora() -> bool:
 	var h: float = m.hora() + 0.5
 	for c in m.cenas_ativas():
 		if c["tipo"] == "cacada" and c.get("grupo", -1) == g.id and not c.get("vazia", false):
@@ -178,32 +265,11 @@ func _caca_no_fogo() -> bool:
 
 # ---------------------------------------------------------------- pensamento
 
-## Os candidatos vêm em [força, [frases], humor]. Fica a fonte mais forte: uma necessidade
-## urgente sozinha; senão, a cada 2 horas, uma das três mais fortes, e a frase muda entre as
-## variantes dela. Devolve [pensamento, humor].
-func _pensamento(f: Dictionary) -> Array:
-	var cands: Array = []
-	_necessidades(cands)
-	_acontecimentos(cands)
-	_relacoes(cands)
-	_deus(cands)
-	_povo(cands)
-	_tracos(cands)
-	_no_que_faz(cands, f)
-	cands.sort_custom(func(x, y): return x[0] > y[0])
-	var bloco: int = m.passo / BLOCO
-	if f.get("acao", "") == "dormir":
-		return _dormindo(cands, bloco)
-	if cands.is_empty():
-		return ["", _humor_calmo()]
-	var k := 1 if cands[0][0] >= 9 else mini(3, cands.size())
-	var escolha: Array = cands[(bloco + p.id) % k]
-	var frases: Array = escolha[1].filter(func(s): return s.length() <= PENSAMENTO_MAX)
-	if frases.is_empty():
-		frases = [escolha[1][0].substr(0, PENSAMENTO_MAX)]
-	var frase: String = frases[(bloco / k + p.id * 7) % frases.size()]
-	var humor: String = escolha[2] if not escolha[2].is_empty() else _humor_calmo()
-	return [G.maiuscula(frase), humor]
+## Os candidatos vêm em [força, [frases], humor, sonho]. Fica a fonte mais forte: uma
+## necessidade urgente sozinha (força 9 ou mais); senão, a cada 2 horas, uma das três mais
+## fortes, e a frase muda entre as variantes dela, numa ordem que sai da semente da pessoa.
+## Quando a frase já está com outra pessoa do povo, passa para a seguinte: as outras variantes,
+## depois as outras fontes, da mais forte para a mais fraca (veja `escolher`).
 
 
 ## Dormindo: o humor é "dormindo", ou o sono mexido quando há motivo (doença, fome, luto e
@@ -221,13 +287,15 @@ func _dormindo(cands: Array, bloco: int) -> Array:
 		if c[2] in ["encolhido", "encolhida", "assustado", "assustada", "abalado", "abalada", "preocupado", "preocupada"]:
 			humor = "sono leve"
 			break
-	var sonho := ""
+	var r: Array = []
 	for c in cands:
-		if not String(c[3]).is_empty():
-			if c[0] >= 5 or (bloco + p.id) % 3 == 0:
-				sonho = c[3]
+		if c[3] is Array or not String(c[3]).is_empty():
+			if c[0] >= 5 or (bloco + _semente()) % 3 == 0:
+				r.append([c[3], humor])
 			break
-	return [G.maiuscula(sonho), humor]
+	# Sem sonho (ou com o mesmo sonho de outra pessoa), o pensamento fica vazio.
+	r.append(["", humor])
+	return r
 
 
 func _humor_calmo() -> String:
@@ -240,7 +308,7 @@ func _humor_calmo() -> String:
 	return "tranquil" + a
 
 
-func _nec(cands: Array, forca: int, frases: Array, humor: String, sonho: String = "") -> void:
+func _nec(cands: Array, forca: int, frases: Array, humor: String, sonho = "") -> void:
 	cands.append([forca, frases, humor, sonho])
 
 
@@ -291,31 +359,31 @@ func _acontecimentos(cands: Array) -> void:
 					continue
 				var nb := G.termo(bebe.nome, bebe.sexo)
 				if e.participantes.has(p.id) and bebe.id != p.id:
-					_nec(cands, forca, [G.preencher("{n} é tão pequenin{n:o|a}", {"n": nb}, false),
-						G.preencher("Tenho que cuidar bem de {n}", {"n": nb}, false)], "contente", "sonha com " + bebe.nome)
+					_nec(cands, forca, [_f("{n} é tão pequenin{n:o|a}", {"n": nb}),
+						_f("Tenho que cuidar bem de {n}", {"n": nb})], "contente", "sonha com " + bebe.nome)
 				elif bebe.mae == p.mae and p.mae != -1 and bebe.id != p.id:
-					_nec(cands, forca, [G.preencher("Ganhei um{n:|a} irm{n:ãozinho|ãzinha}!", {"n": nb}, false)] if not adulto
-						else [G.preencher("Nasceu {n}, mais um na família", {"n": nb}, false)], "contente")
+					_nec(cands, forca, [_f("Ganhei um{n:|a} irm{n:ãozinho|ãzinha}!", {"n": nb})] if not adulto
+						else [_f("Nasceu {n}, mais um na família", {"n": nb})], "contente")
 				elif bebe.id != p.id:
 					_nec(cands, forca - 3, ["Nasceu mais um no povo", "Que bom ouvir choro de bebê"], "contente")
 			"raio_divino", "fogo_divino":
-				_nec(cands, forca, [G.preencher("{o:d} mostrou a força {d:dele|dela}", {"d": deus}, false) if g.tem_crenca
+				_nec(cands, forca, [_f("{o:d} mostrou a força {d:dele|dela}", {"d": deus}) if g.tem_crenca
 					else "O fogo caiu do céu bem ali", "Ainda ouço o estrondo"] if adulto
 					else ["O céu fez fogo, que medo!"], "assustad" + a, "sonha com o estrondo")
 			"fartura_natural", "fartura_divina":
 				var f2: Array = ["Nunca vi tanta comida", "Hoje ninguém dorme com fome"]
 				if e.tipo == "fartura_divina" and g.tem_crenca:
-					f2.push_front(G.preencher("{o:d} encheu nossos cestos", {"d": deus}, false))
+					f2.push_front(_f("{o:d} encheu nossos cestos", {"d": deus}))
 				_nec(cands, forca - 1, f2 if adulto else ["Comi até a barriga estufar!"], "contente")
 			"prece_atendida":
 				if g.tem_crenca:
-					_nec(cands, forca, [G.preencher("{o:d} ouviu a nossa prece", {"d": deus}, false),
-						G.preencher("Vou agradecer {a:d} hoje", {"d": deus}, false)], "grat" + a)
+					_nec(cands, forca, [_f("{o:d} ouviu a nossa prece", {"d": deus}),
+						_f("Vou agradecer {a:d} hoje", {"d": deus})], "grat" + a)
 			"prece_sem_resposta", "silencio", "desamparo":
 				if g.tem_crenca:
-					_nec(cands, forca, [G.preencher("Por que {o:d} não responde?", {"d": deus}, false),
-						G.preencher("{o:d} nos esqueceu", {"d": deus}, false)] if adulto
-						else [G.preencher("{o:d} está bravo com a gente?", {"d": deus}, false)], "aflit" + a)
+					_nec(cands, forca, [_f("Por que {o:d} não responde?", {"d": deus}),
+						_f("{o:d} nos esqueceu", {"d": deus})] if adulto
+						else [_f("{o:d} está bravo com a gente?", {"d": deus})], "aflit" + a)
 			"ataque", "guerra_inicio":
 				var outro = m.grupo(e.outro_grupo) if e.outro_grupo >= 0 else null
 				var quem: String = ("os de " + outro.nome) if outro != null and outro.id != g.id else "eles"
@@ -333,7 +401,7 @@ func _acontecimentos(cands: Array) -> void:
 				if e.participantes.has(p.id) and p.conjuge != -1:
 					var c = m.pessoa(p.conjuge)
 					if c != null:
-						_nec(cands, forca, [G.preencher("Agora {n} e eu temos uma casa", {"n": G.termo(c.nome, c.sexo)}, false)], "apaixonad" + a,
+						_nec(cands, forca, [_f("Agora {n} e eu temos uma casa", {"n": G.termo(c.nome, c.sexo)})], "apaixonad" + a,
 							"sonha com " + c.nome)
 			"novo_lider":
 				var l = m.pessoa(g.lider) if g.lider >= 0 else null
@@ -354,15 +422,15 @@ func _morte(cands: Array, e, forca: int) -> void:
 	var laco := _laco(morto)
 	if laco.is_empty():
 		if morto.grupo == p.grupo and adulto:
-			_nec(cands, forca - 4, [G.preencher("Que pena de {n}", {"n": nome}, false)], "")
+			_nec(cands, forca - 4, [_f("Que pena de {n}", {"n": nome})], "")
 		return
 	var frases: Array
 	if adulto:
-		frases = [G.preencher("Sinto falta de {n}", {"n": nome}, false), G.preencher("{n} não volta mais", {"n": nome}, false),
-			G.preencher("Ainda ouço a voz de {n}", {"n": nome}, false)]
+		frases = [_f("Sinto falta de {n}", {"n": nome}), _f("{n} não volta mais", {"n": nome}),
+			_f("Ainda ouço a voz de {n}", {"n": nome})]
 	else:
 		frases = ["Cadê %s?" % ("a mamãe" if laco == "mae" else ("o papai" if laco == "pai" else morto.nome)),
-			G.preencher("Quero {n} de volta", {"n": nome}, false)]
+			_f("Quero {n} de volta", {"n": nome})]
 	_nec(cands, forca + 1, frases, "de luto", "sonha com " + morto.nome)
 
 
@@ -392,15 +460,15 @@ func _relacoes(cands: Array) -> void:
 	if alvo != -1:
 		var r = m.pessoas[alvo]
 		var n := G.termo(r.nome, r.sexo)
-		_nec(cands, 6 if maior > 0.7 else 5, [G.preencher("Não perdoo {n}", {"n": n}, false),
-			G.preencher("{n} ainda vai me pagar", {"n": n}, false)] if adulto
-			else [G.preencher("Não brinco mais com {n}", {"n": n}, false)], "magoad" + a)
+		_nec(cands, 6 if maior > 0.7 else 5, [_f("Não perdoo {n}", {"n": n}),
+			_f("{n} ainda vai me pagar", {"n": n})] if adulto
+			else [_f("Não brinco mais com {n}", {"n": n})], "magoad" + a)
 	# Amor: o cônjuge vivo.
 	if p.conjuge != -1 and m.pessoas.has(p.conjuge) and m.pessoas[p.conjuge].vivo:
 		var c = m.pessoas[p.conjuge]
 		var n2 := G.termo(c.nome, c.sexo)
-		_nec(cands, 4, [G.preencher("Gosto de ver {n} rir", {"n": n2}, false),
-			G.preencher("À noite, {n} me espera no fogo", {"n": n2}, false)], "contente", "sonha com " + c.nome)
+		_nec(cands, 4, [_f("Gosto de ver {n} rir", {"n": n2}),
+			_f("À noite, {n} me espera no fogo", {"n": n2})], "contente", "sonha com " + c.nome)
 	# Saudade: um pai, mãe, filho ou cônjuge que já morreu.
 	for id in [p.mae, p.pai, p.conjuge] + p.filhos:
 		if id == -1:
@@ -408,14 +476,14 @@ func _relacoes(cands: Array) -> void:
 		var o = m.pessoa(id)
 		if o != null and not o.vivo:
 			var n3 := G.termo(o.nome, o.sexo)
-			_nec(cands, 3, [G.preencher("Saudade de {n}", {"n": n3}, false),
-				G.preencher("{n} ia gostar de ver isso", {"n": n3}, false)], "saudos" + a, "sonha com " + o.nome)
+			_nec(cands, 3, [_f("Saudade de {n}", {"n": n3}),
+				_f("{n} ia gostar de ver isso", {"n": n3})], "saudos" + a, "sonha com " + o.nome)
 			break
 	# Os filhos pequenos.
 	for id in p.filhos:
 		if m.pessoas.has(id) and m.pessoas[id].vivo and m.pessoas[id].idade(m.ano()) <= 6:
 			var f = m.pessoas[id]
-			_nec(cands, 3, [G.preencher("{n} cresce depressa", {"n": G.termo(f.nome, f.sexo)}, false)], "contente")
+			_nec(cands, 3, [_f("{n} cresce depressa", {"n": G.termo(f.nome, f.sexo)})], "contente")
 			break
 
 
@@ -428,19 +496,20 @@ func _deus(cands: Array) -> void:
 	var d := _termo_deus()
 	var v := {"d": d}
 	if not adulto:
-		_nec(cands, 3, [G.preencher("Mamãe diz que {o:d} vê tudo", v, false)], "")
+		_nec(cands, 3, [_f("Mamãe diz que {o:d} vê tudo", v), _f("Será que {o:d} gosta de mim?", v),
+			_f("De noite, {o:d} cuida da gente", v), _f("Vovó conta histórias {de:d}", v)], "")
 	elif g.ceticos or p.fe < -0.4 or p.ferida_pelo_deus:
-		_nec(cands, 5 if p.ferida_pelo_deus else 4, [G.preencher("{o:d} nos esqueceu", v, false),
-			G.preencher("Rezar {a:d} para quê?", v, false), G.preencher("{o:d} só tira, nunca dá", v, false)], "amargurad" + a,
-			G.preencher("sonha que {o:d} lhe vira as costas", v, false))
+		_nec(cands, 5 if p.ferida_pelo_deus else 4, [_f("{o:d} nos esqueceu", v),
+			_f("Rezar {a:d} para quê?", v), _f("{o:d} só tira, nunca dá", v)], "amargurad" + a,
+			_f("sonha que {o:d} lhe vira as costas", v))
 	elif p.fe > 0.5:
-		_nec(cands, 4, [G.preencher("{o:d} cuida de nós", v, false), G.preencher("Hoje vou agradecer {a:d}", v, false)], "seren" + a,
-			G.preencher("sonha com a voz {de:d}", v, false))
+		_nec(cands, 4, [_f("{o:d} cuida de nós", v), _f("Hoje vou agradecer {a:d}", v)], "seren" + a,
+			_f("sonha com a voz {de:d}", v))
 	elif g.silencios > 0:
-		_nec(cands, 4, [G.preencher("Por que {o:d} se cala?", v, false)], "inquiet" + a,
-			G.preencher("sonha que {o:d} volta a falar", v, false))
+		_nec(cands, 4, [_f("Por que {o:d} se cala?", v)], "inquiet" + a,
+			_f("sonha que {o:d} volta a falar", v))
 	else:
-		_nec(cands, 2, [G.preencher("Será que {o:d} nos ouve?", v, false)], "")
+		_nec(cands, 2, [_f("Será que {o:d} nos ouve?", v)], "")
 
 
 func _termo_deus() -> Dictionary:
@@ -453,7 +522,10 @@ func _termo_deus() -> Dictionary:
 ## Opinião sobre o povo: os costumes, quem manda, o estoque, como reparte.
 func _povo(cands: Array) -> void:
 	if not adulto:
-		_nec(cands, 2, ["Quero brincar mais um pouco", "Amanhã vou na praia de novo"], "alegre")
+		_nec(cands, 2, ["Quero brincar mais um pouco", "Amanhã vou na praia de novo", "Quem chegar no fogo primeiro ganha!",
+			"Achei uma pedra bonita", "Quando eu crescer vou pescar", "Vi um sapo na beira do lago!", "Ninguém me acha aqui",
+			"Hoje eu corri mais que todo mundo", "Quero ver o porco de perto", "O céu tem tanta estrela!",
+			"Vou fazer uma casinha de galho", "A água do lago é fria!"], "alegre")
 		return
 	for c in g.costumes:
 		if not c["esquecido"] and COSTUME.has(c["tipo"]):

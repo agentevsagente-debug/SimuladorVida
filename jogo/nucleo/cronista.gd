@@ -163,6 +163,57 @@ func _frase(opcoes: Array, vars: Dictionary) -> String:
 	return G.preencher(_escolher(opcoes), vars)
 
 
+## Até quantos anos para trás a crônica olha os eventos anteriores para escolher a frase:
+## menos que os 300 anos do arquivo dos antigos, para o texto ser o mesmo com e sem arquivo.
+const OLHAR_ATRAS := 250
+
+
+## Os eventos do tipo de `e` que vieram antes dele, nos últimos OLHAR_ATRAS anos (a lista do
+## tipo está em ordem de id e de ano: as duas pontas saem por busca binária, sem percorrer tudo).
+func _antes_de(e) -> Array:
+	var lista: Array = _do_tipo(e.tipo)
+	# fim: o primeiro com id >= e.id; ini: o primeiro com ano > e.ano - OLHAR_ATRAS.
+	var lo := 0
+	var hi := lista.size()
+	while lo < hi:
+		var mid := (lo + hi) / 2
+		if lista[mid].id < e.id:
+			lo = mid + 1
+		else:
+			hi = mid
+	var fim := lo
+	lo = 0
+	hi = fim
+	while lo < hi:
+		var mid := (lo + hi) / 2
+		if lista[mid].ano <= e.ano - OLHAR_ATRAS:
+			lo = mid + 1
+		else:
+			hi = mid
+	return lista.slice(lo, fim) if fim > lo else []
+
+
+## O primeiro evento do tipo, antes de `e`, com dados[chave] igual ao de `e` (null se `e` é o
+## primeiro do mundo, nos últimos OLHAR_ATRAS anos). Serve para contar por extenso só a
+## primeira vez (o primeiro povo a erguer casas de pedra, a forjar metal...) e, nas seguintes,
+## dizer mais curto.
+func _primeiro_antes(e, chave: String):
+	var valor = e.dados.get(chave)
+	for x in _antes_de(e):
+		if x.dados.get(chave) == valor:
+			return x
+	return null
+
+
+## Antes de `e`, já houve um do mesmo tipo e dado neste mesmo povo? (Um saber perdido e reaprendido.)
+func _mesmo_povo_antes(e, chave: String) -> bool:
+	var valor = e.dados.get(chave)
+	for x in _antes_de(e):
+		if x.grupo == e.grupo and x.dados.get(chave) == valor:
+			return true
+	return false
+
+
 func _estacao(e) -> String:
 	return ["primavera", "verão", "outono", "inverno"][e.dia / 10]
 
@@ -801,6 +852,7 @@ func _texto(e) -> String:
 			var t := ""
 			if e.dados["primeiro"]:
 				t = _frase(["{a}, de {de}, casou-se com {b} e foi viver em {g}. Foi o primeiro laço entre os dois povos.",
+					"{a}, de {de}, foi viver em {g} com {b}: o primeiro casamento entre os dois povos.",
 					"{b}, de {g}, tomou por esposa {a}, de {de}, e os dois povos passaram a se visitar."
 					if m.pessoa(e.participantes[0]).sexo == "f" else
 					"{a}, de {de}, casou-se com {b} e mudou-se para {g}, coisa que ninguém tinha feito antes."], v)
@@ -861,7 +913,8 @@ func _texto(e) -> String:
 			if anterior > 0:
 				v["ant"] = G.termo(str(anterior))
 				return _frase(["A seca voltou, como no ano {ant}: {d} dias sem chuva, até que o céu se abriu.",
-					"De novo a chuva sumiu, como no ano {ant}. Foram {d} dias de seca."], v) + _canais(e, v)
+					"De novo a chuva sumiu, como no ano {ant}. Foram {d} dias de seca.",
+					"Faltou chuva outra vez, a primeira desde o ano {ant}: {d} dias de céu limpo."], v) + _canais(e, v)
 			return _frase(["A chuva parou de cair. A seca durou {d} dias, e os riachos viraram pedra.",
 				"Veio uma seca de {d} dias. O lago encolheu e a mata secou."], v) + _canais(e, v)
 		"tempestade":
@@ -900,6 +953,10 @@ func _texto(e) -> String:
 			v["p"] = _p(e.dados["chefe"])
 			var n2: int = e.dados["n"] - 1
 			v["n"] = G.termo(G.extenso(n2, "f"), "f", n2)
+			if n2 <= 0:
+				return _frase(["{p} partiu {p:sozinho|sozinha} para além da borda do mundo. Nunca voltou.",
+					"{p} não quis esperar a fome passar: foi {p:sozinho|sozinha} para além da borda.",
+					"Um dia, {p} pegou o que tinha e passou da borda do mundo. Ninguém {p:o|a} viu de novo."], v)
 			return _frase(["{p} partiu com {n} {n#pessoa|pessoas} para além da borda do mundo. Nunca voltaram.",
 				"Sem lugar e sem comida, {p} e os seus atravessaram a borda do mundo. Ninguém soube deles.",
 				"{p} juntou {n} {n#pessoa|pessoas} e foi embora pela borda do mundo, atrás de terra melhor.",
@@ -948,7 +1005,15 @@ func _texto(e) -> String:
 			v["p"] = _p(e.participantes[0])
 			v["t"] = G.termo(_traco(e.participantes[0]))
 			var tx := ""
-			match e.dados["saber"]:
+			var antes = _primeiro_antes(e, "saber")
+			if antes != null and antes.grupo != e.grupo:
+				# Outro povo já sabia: aqui, dito mais curto.
+				v["o"] = _g(antes.grupo)
+				v["s"] = G.termo({"pedra": "cortar e empilhar pedra", "metal": "tirar metal da pedra", "escrita": "riscar palavras no barro",
+					"engenharia": "levar a água por canais"}.get(e.dados["saber"], "um ofício novo"))
+				tx = _frase(["Em {g}, foi {p} quem aprendeu a {s}.", "{p}, {p:o|a} {t}, também aprendeu a {s}, como já faziam em {o}.",
+					"O saber de {o} chegou a {g}: {p} aprendeu a {s}."], v)
+			match "" if antes != null and antes.grupo != e.grupo else e.dados["saber"]:
 				"pedra":
 					tx = _frase(["{p}, {p:o|a} {t}, aprendeu a cortar a pedra em blocos e a erguer paredes que o vento não leva.",
 						"{p}, {p:o|a} {t}, descobriu como empilhar pedras cortadas sem que caíssem."], v)
@@ -967,6 +1032,26 @@ func _texto(e) -> String:
 				tx += " " + _frase(["A lembrança da fome pesou."], v)
 			return tx
 		"estagio":
+			var primeiro = _primeiro_antes(e, "estagio")
+			if _mesmo_povo_antes(e, "estagio"):
+				return _frase([{3: "{g} voltou a erguer casas de pedra.", 4: "A forja de {g} voltou a acender.",
+					5: "{g} voltou a escrever.", 6: "{g} voltou a cavar canais e a erguer moinhos."}.get(e.dados["estagio"], "{g} recuperou o que tinha perdido."),
+					"{g} recuperou o saber que tinha perdido."], v)
+			if primeiro != null:
+				v["o"] = _g(primeiro.grupo)
+				match e.dados["estagio"]:
+					3:
+						return _frase(["{g} também trocou as cabanas por casas de pedra.", "As casas de pedra chegaram a {g}, e com elas um templo.",
+							"Depois de {o}, foi {g} que ergueu paredes de pedra."], v)
+					4:
+						return _frase(["{g} também aprendeu a forjar metal.", "O metal chegou a {g}, e a forja ficou acesa dia e noite.",
+							"Depois de {o}, foi a vez de {g} trabalhar o metal."], v)
+					5:
+						return _frase(["{g} também passou a escrever.", "As tabuletas chegaram a {g}: o que era lembrança virou marca no barro.",
+							"Depois de {o}, foi {g} que aprendeu a escrever."], v)
+					6:
+						return _frase(["{g} também cavou canais e ergueu moinhos.", "Os canais chegaram a {g}, e as roças deixaram de esperar a chuva.",
+							"Depois de {o}, foi a vez de {g} levar a água por canais."], v)
 			match e.dados["estagio"]:
 				3:
 					return _frase(["{g} ergueu as primeiras casas de pedra, e um templo de degraus no meio delas. O templo virou o centro do povo.",
@@ -991,6 +1076,9 @@ func _texto(e) -> String:
 			return _frase(["Morreram todos os que sabiam o ofício, mas as tabuletas guardavam o jeito. {p} leu e aprendeu: o saber não se perdeu.",
 				"O arquivo salvou {g}: {p} reaprendeu nas tabuletas o que os mortos sabiam."], v)
 		"estudo_do_ceu":
+			if not _antes_de(e).is_empty():
+				return _frase(["{g} também passou a anotar o céu.", "Em {g}, também se contavam as luas e se esperavam os eclipses.",
+					"Os sábios de {g} aprenderam a ler o céu, e o eclipse deixou de ser presságio."], v)
 			return _frase(["Os sábios de {g} passaram a anotar o céu. Em pouco tempo já previam os eclipses, e os sinais do alto foram perdendo a força.",
 				"Em {g}, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto."], v)
 		"ruinas_saber":
@@ -1109,7 +1197,8 @@ func _texto(e) -> String:
 			v["c"] = G.termo(REFORMA_COSTUME.get(e.dados["costume"], "um costume antigo"))
 			if e.dados["herdado"]:
 				return _frase(["Com {l} à frente, a nova geração de {g} abandonou {c}, costume herdado dos avós.",
-					"Em {g}, os jovens deixaram de lado {c}. Era coisa de outro povo, diziam."], v)
+					"Em {g}, os jovens deixaram de lado {c}. Era coisa dos velhos, diziam.",
+					"{g} deixou {c} para trás: os jovens já não viam sentido naquilo."], v)
 			return _frase(["Ninguém lembrava mais a razão, e {g} abandonou {c}.",
 				"Com {l} à frente, {g} largou {c}: sem origem lembrada, o costume perdeu o sentido."], v)
 		"dependencia":
@@ -1164,6 +1253,12 @@ func _texto(e) -> String:
 				"O templo de {g} não aceitou {p}, que chamava o deus de «{nn}». Houve gritos, pedras, e os seguidores de {p} foram embora."], v)
 		"secularizacao":
 			v["dn"] = G.termo(e.dados.get("deus", ""))
+			if not _antes_de(e).is_empty():
+				if e.dados.get("deus", "").is_empty():
+					return _frase(["{g} também deixou de rezar.", "Em {g}, as preces foram rareando até acabar."], v)
+				v["d2"] = _deus(e.dados["deus"], m.grupos[e.grupo].genero_deus if e.grupo >= 0 else "m")
+				return _frase(["{g} também deixou de rezar {a:d2}.", "Em {g}, as preces {a:d2} foram rareando até acabar.",
+					"O templo de {g} esvaziou como os outros: ninguém mais chamava «{dn}»."], v)
 			return _frase(["Em {g}, os sábios já explicavam a chuva e o raio. O templo foi esvaziando, e um dia ninguém mais chamou por «{dn}».",
 				"{g} deixou de rezar. Ninguém proibiu nada: os canais davam água, as tabuletas davam respostas, e o deus foi ficando para os velhos."], v)
 		"renascimento":
@@ -1230,6 +1325,9 @@ func _morte(e, v: Dictionary) -> String:
 		t += " " + _frase(["{p:Ele|Ela} sabia plantar."], v)
 	elif p.feitos >= 2:
 		var feito := _feito_de(id, e.id)
+		# Quem morreu como fundador já foi apresentado assim: não repete que fundou o povo.
+		if e.dados["fundador"] and (feito.begins_with("Tinha fundado") or feito.begins_with("Foi quem levou os seus")):
+			feito = ""
 		if not feito.is_empty():
 			t += " " + feito
 	return t
@@ -1321,7 +1419,7 @@ func _feito_de(pid: int, ate: int) -> String:
 			melhor = f
 	if melhor.is_empty() and matou >= 2:
 		v["n"] = G.termo(G.extenso(matou, "f"), "f", matou)
-		melhor = _frase(["Na guerra, tinha tirado {n} vidas.", "Matou {n} na guerra.", "Na guerra, {n} caíram pela sua mão."], v)
+		melhor = _frase(["Na guerra, tinha tirado {n} vidas.", "Matou {n} {n#pessoa|pessoas} na guerra.", "Na guerra, {n} caíram pela sua mão."], v)
 	return melhor
 
 
@@ -1464,7 +1562,7 @@ func _guerra_fim(e, v: Dictionary) -> String:
 	var venc: int = e.dados["vencedor"]
 	if venc >= 0 and e.dados["desfecho"] in ["tregua", "esfriou", "deus"]:
 		v["v"] = _g(venc)
-		t += " " + _frase(["{v} saiu dela mais forte."], v)
+		t += " " + _frase(["{v} saiu dela mais forte.", "Quem ganhou com isso foi {v}.", "{v} terminou maior do que tinha começado."], v)
 	return t
 
 
@@ -1493,11 +1591,14 @@ func _ataque(e, v: Dictionary) -> String:
 		t = _frase(["{a} atacou {b} {em:zona}" + motivo + ".", "Os de {a} caíram sobre {b} {em:zona}" + motivo + ".",
 			"Houve luta {em:zona}: {a} atacou {b}" + motivo + "."], v)
 	if venceu_atacante:
-		t += " " + _frase(["{a} venceu e levou a comida guardada.", "{b} foi {b:derrotado|derrotado} e perdeu o que tinha guardado."], v)
+		t += " " + _frase(["{a} venceu e levou a comida guardada.", "{b} foi {b:derrotado|derrotado} e perdeu o que tinha guardado.",
+			"{a} voltou com o que {b} tinha guardado.", "Os cestos de {b} ficaram vazios."], v)
 	else:
-		t += " " + _frase(["{b} resistiu, e {a} voltou de mãos vazias.", "{b} expulsou os atacantes."], v)
+		t += " " + _frase(["{b} resistiu, e {a} voltou de mãos vazias.", "{b} expulsou os atacantes.",
+			"Os de {b} não cederam, e {a} recuou."], v)
 	if not mortos.is_empty():
-		t += " " + _frase(["{mortos} {mortos#morreu|morreram} na luta.", "Na luta {mortos#morreu|morreram} {mortos}."], v)
+		t += " " + _frase(["{mortos} {mortos#morreu|morreram} na luta.", "Na luta {mortos#morreu|morreram} {mortos}.",
+			"{mortos#Caiu|Caíram} {mortos}."], v)
 	if e.dados.get("primeiro", false) and not _primeiros.has("ataque"):
 		t += " " + _frase(["Foi a primeira vez que gente matou gente no mundo." if not mortos.is_empty() else "Foi a primeira briga entre povos."], v)
 	return t
@@ -1659,6 +1760,9 @@ func _nova_crenca(e, v: Dictionary) -> String:
 			return _frase(["Os devotos de {g} não viram castigo: para eles, {o:deus} chamou {p} para perto. Nasceu ali a lembrança de {p} como {p:santo|santa}.",
 				"Para os mais fiéis de {g}, {p} não foi {p:castigado|castigada}, mas {p:escolhido|escolhida}."], v)
 		"alem_da_borda":
+			if _primeiro_antes(e, "crenca") != null:
+				return _frase(["{g} também passou a contar histórias da terra além da borda.",
+					"Em {g}, nasceu a mesma lenda: além da borda, uma terra sem fome.", "Também em {g} se dizia que a borda engole quem passa."], v)
 			return _frase(["Os que ficaram contam que, além da borda, há terras onde ninguém passa fome. Outros dizem que a borda engole quem passa."], v)
 		"diluvio":
 			return _frase(["Os que sobraram em {g} contam que {o:deus} lavou o mundo e poupou só os que merecia.",
@@ -1902,6 +2006,16 @@ func _prece(e, v: Dictionary) -> String:
 	return _frase(["Em {g}, rezava-se: «{txt}»", "{p} rezou: «{txt}»"], v)
 
 
+## O comentário de que foi acaso: na primeira prece "atendida" por acaso de cada povo e, depois,
+## em uma de cada três (dito toda vez, vira refrão).
+func _comentar_acaso(e) -> bool:
+	var n := 0
+	for x in _antes_de(e):
+		if x.grupo == e.grupo and x.dados.get("falso_milagre", false):
+			n += 1
+	return n % 3 == 0
+
+
 func _prece_atendida(e, v: Dictionary) -> String:
 	v["p"] = _p(e.participantes[0])
 	var prece = _evento(e.dados["prece"])
@@ -1923,13 +2037,16 @@ func _prece_atendida(e, v: Dictionary) -> String:
 			t += _frase(["Os inimigos não voltaram. {g} agradeceu {a:deus}."], v)
 		_:
 			t += _frase(["O pedido se cumpriu, e {g} agradeceu {a:deus}."], v)
+	var escreve: bool = m.grupos[e.grupo].escrita_desde >= 0 and m.grupos[e.grupo].escrita_desde <= e.ano
 	if e.dados["falso_milagre"]:
-		t += " " + _frase(["O deus não tinha feito nada.", "Foi só o tempo, mas quem iria dizer?",
-			"A crônica sabe que foi acaso.", "O deus nada fez: o crédito era de graça."], v)
+		# Foi acaso. O povo que escreve conta outra história, com a própria voz (e isso já diz
+		# que não foi o deus); nos outros, a crônica comenta às vezes (_comentar_acaso).
+		if not escreve and _comentar_acaso(e):
+			t += " " + _frase(["O deus não tinha feito nada.", "Foi só o tempo, mas quem iria dizer?",
+				"A crônica sabe que foi acaso.", "O deus nada fez: o crédito era de graça."], v)
 	elif resposta != null:
 		t += " " + _frase(["Dessa vez, tinha sido mesmo o deus."], v)
-	if e.dados["falso_milagre"] and m.grupos[e.grupo].escrita_desde >= 0 and m.grupos[e.grupo].escrita_desde <= e.ano:
-		# O povo que escreve conta outra história, com a própria voz.
+	if e.dados["falso_milagre"] and escreve:
 		v["voz"] = G.termo(G.maiuscula(_voz_do_povo(e.dados["necessidade"], v)))
 		t += " " + _frase(["Nas tabuletas de {g}, a história é outra: «{voz}»",
 			"Os escribas de {g} escreveram: «{voz}» Não foi o que aconteceu.",
@@ -1982,6 +2099,14 @@ func _mito_ruinas(e, v: Dictionary) -> String:
 		"forja": "um forno de pedra com escória de metal", "celeiro": "um celeiro sem teto",
 		"cabana": "o chão batido de casas sem ninguém", "fogueira": "pedras de fogueira cobertas de cinza velha"}
 	v["visto"] = G.termo(vistos.get(e.dados.get("obra", ""), "pedras arrumadas por mãos de gente"))
+	# Se outro povo já explicou as mesmas ruínas no mesmo ano, não descreve de novo o que se via.
+	for x in _do_tipo(e.tipo):
+		if x.id >= e.id:
+			break
+		if x.ano == e.ano and x.dados.get("povo", "") == e.dados["povo"] and x.dados.get("obra", "") == e.dados.get("obra", ""):
+			return _frase({"gigantes": ["{g} também viu ali obra de gigantes.", "Para {g}, também, eram ruínas de gigantes."],
+				"castigo": ["Para {g}, as mesmas ruínas eram castigo do deus.", "{g} leu nelas outra coisa: castigo."]}.get(
+				e.dados["explicacao"], ["{g} viu nas mesmas ruínas gente como eles.", "Também {g} foi olhar o que restava de {povo}."]), v)
 	var antes := ""
 	if e.dados.get("antiga", false):
 		antes = " " + _frase(["Era de antes do mundo ficar vazio.", "Ninguém vivo sabia de quando era."], v)

@@ -3981,9 +3981,14 @@ func cenas_ativas() -> Array:
 
 
 ## A dica sobre uma pessoa viva: {fazendo, pensamento, humor} (veja "A dica" em nucleo/API.md).
-## Calculada na consulta, a partir da ficha da hora; guardada até o próximo passo.
-var _dicas: Dictionary = {}       # id -> dica, nesta hora (não é salvo)
+## O pensamento é escolhido para o povo inteiro da pessoa de uma vez, na primeira consulta da
+## hora, em ordem de id: ninguém do mesmo povo pensa a mesma frase que outro na mesma hora.
+## As fontes do pensamento que só mudam com o dia ficam guardadas por um dia; o "fazendo", só
+## de quem é consultado. Nada disso é salvo.
+var _dicas: Dictionary = {}       # id -> dica, nesta hora
 var _dicas_passo := -1
+var _dica_fontes: Dictionary = {} # id -> candidatos do dia (Dica.candidatos)
+var _dica_fontes_dia := -1
 
 
 func dica(pessoa_id: int) -> Dictionary:
@@ -3993,16 +3998,39 @@ func dica(pessoa_id: int) -> Dictionary:
 	if _dicas_passo != passo:
 		_dicas.clear()
 		_dicas_passo = passo
-	if _dicas.has(pessoa_id):
-		return _dicas[pessoa_id]
-	var ficha: Dictionary = {}
+	if _dica_fontes_dia != dia_abs():
+		_dica_fontes.clear()
+		_dica_fontes_dia = dia_abs()
+	var g: Grupo = grupo(p.grupo)
+	var fichas := {}
+	var do_povo: Array = []
 	for f in pessoas_visiveis():
-		if f["id"] == pessoa_id:
-			ficha = f
-			break
-	var d: Dictionary = Dica.new(self, p, grupo(p.grupo)).montar(ficha)
-	_dicas[pessoa_id] = d
+		if f["grupo"] == g.id:
+			fichas[f["id"]] = f
+			do_povo.append(f)
+	var contexto := {"fichas": do_povo}
+	if not _dicas.has(pessoa_id):
+		_pensar_povo(g, fichas, contexto)
+	var d: Dictionary = _dicas.get(pessoa_id, {})
+	if not d.is_empty() and not d.has("fazendo"):
+		d["fazendo"] = Dica.new(self, p, g, contexto).fazendo(fichas.get(pessoa_id, {}))
 	return d
+
+
+func _pensar_povo(g: Grupo, fichas: Dictionary, contexto: Dictionary) -> void:
+	var usadas := {}
+	var ids: Array = g.membros.duplicate()
+	ids.sort()
+	for id in ids:
+		if not pessoas.has(id) or not pessoas[id].vivo:
+			continue
+		var dc := Dica.new(self, pessoas[id], g, contexto)
+		if not _dica_fontes.has(id):
+			_dica_fontes[id] = dc.candidatos()
+		var escolha: Array = dc.escolher(fichas.get(id, {}), _dica_fontes[id], usadas)
+		if not escolha[0].is_empty():
+			usadas[escolha[0]] = true
+		_dicas[id] = {"pensamento": escolha[0], "humor": escolha[1]}
 
 
 func posicao_de(pessoa_id: int) -> float:

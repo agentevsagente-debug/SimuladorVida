@@ -323,7 +323,9 @@ A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 
 ### `dica(pessoa_id) -> Dictionary` (a dica sobre a pessoa)
 
-Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, humor}` (vazio `{}` se a pessoa morreu). É calculada na consulta, a partir da ficha da hora de `pessoas_visiveis()` e do estado do mundo, e guardada até o próximo passo; custa de 0,05 a 0,2 ms por pessoa na primeira consulta da hora, e nada nos quadros. Não usa o sorteio do mundo.
+Para a dica que aparece ao passar o mouse sobre alguém: `{fazendo, pensamento, humor}` (vazio `{}` se a pessoa morreu). É calculada na consulta, a partir da ficha da hora de `pessoas_visiveis()` e do estado do mundo, e guardada até o próximo passo; nada nos quadros, e não usa o sorteio do mundo.
+
+**Ninguém do mesmo povo pensa a mesma frase na mesma hora.** Na primeira consulta da hora, o pensamento é escolhido para o povo inteiro da pessoa, em ordem de id: cada um tem a sua ordem de preferência (que sai da semente da pessoa), e quem vem depois passa para a próxima frase dele quando a primeira já está com outro. Se todas as frases dela estão com outros (só em povos muito grandes), fica sem pensamento. As fontes do pensamento que só mudam com o dia (necessidades, memória, relações, o deus, o povo, os traços) ficam guardadas por um dia: um acontecimento entra no pensamento no dia seguinte. Custo, num povo de 12 a 30 pessoas: 0,5 a 1,5 ms na primeira consulta do dia e menos de 1 ms na primeira de cada hora; num povo de uns 200, 44 ms e 9 ms.
 
 | Campo | O que é |
 |---|---|
@@ -341,7 +343,7 @@ De onde vem o pensamento, da fonte mais forte para a mais fraca:
 
 O que a pessoa está fazendo também pesa: na espreita, no arremesso, apontando, com a caça no pau, no espeto, na vigia, na roda de histórias.
 
-Uma necessidade urgente (doença, fome) fica sozinha. Senão, a cada 2 horas de jogo, a frase vem de uma das três fontes mais fortes, e muda entre as variantes de cada uma: ninguém fica com a mesma frase por horas. As crianças (até 11 anos) pensam como crianças: "Mãe, tem comida?", "Cadê a mamãe?", "Por que o fogo dança?", "Quero brincar mais um pouco".
+Uma necessidade urgente (doença, fome) fica sozinha. Senão, a cada 2 horas de jogo, a frase vem de uma das três fontes mais fortes, e muda entre as variantes de cada uma: ninguém fica com a mesma frase por horas, e pessoas parecidas (cinco crianças do mesmo povo) não pensam a mesma coisa ao mesmo tempo. As crianças (até 11 anos) pensam como crianças: "Mãe, tem comida?", "Cadê a mamãe?", "Por que o fogo dança?", "Quero brincar mais um pouco".
 
 ## Eventos, preces e chamados
 
@@ -585,7 +587,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido), a estante (índice e livros) e o arquivo dos antigos (cortado, ausente; abandonar apaga ele também). |
 | `testar_antigos.gd` | O arquivo dos antigos não muda o mundo: a mesma semente sem arquivar, arquivando, e salva e carregada a cada 50 anos (também entre as fatias da virada), comparando crônica, sorteio, passo, eventos, população e livros (`-- <semente> <anos> [nenhum\|caprichoso] [ano_do_fim]`). |
 | `testar_gramatica.gd` | Testa casos difíceis de concordância. |
-| `testar_dica.gd` | Imprime as dicas (`fazendo`, `pensamento`, `humor`) de pessoas em 8 mundos, anos e horas diferentes, e confere: nada vazio, pensamento até 60 caracteres e sem modelo por preencher, nada sobre quem joga, ninguém com a mesma frase 8 horas seguidas, o sorteio do mundo intocado; e mede o custo da consulta. |
+| `cronica_estagios.gd` | Roda um mundo até algum povo chegar ao estágio 6 e grava a crônica do primeiro estágio 3 até 60 anos depois, mais a crônica do povo que chegou lá, para ler (`-- <semente> [ano_limite] [saida.md]`). Nas sementes 1, 3, 4, 5 e 6, o estágio 6 chega entre os anos 114 e 204. |
+| `testar_dica.gd` | Imprime as dicas (`fazendo`, `pensamento`, `humor`) de pessoas em 10 mundos, anos e horas diferentes (até um de 244 pessoas no ano 286), e confere: nada vazio, pensamento até 60 caracteres e sem modelo por preencher, nada sobre quem joga, quem dorme com humor de sono, ninguém do mesmo povo com a mesma frase na mesma hora, ninguém com a mesma frase 8 horas seguidas (em povos de até 40), o sorteio do mundo intocado; e mede o custo da primeira consulta do dia e da hora. |
 | `testar_vida.gd` | Testa se a cena tem vida, hora a hora, em 5 sementes e nas 4 estações: de dia, nunca mais de 40% na mesma ação (como a tela mostra: a `acao`, e o `detalhe` só em `colher` e nas caminhadas) e gente em 3 das 4 zonas; das 17h às 21h, nunca mais de 75% na mesma ação; à noite, alguém acordado; a cada hora, alguém mudando de lugar; das 6h às 20h, a cada hora, um acontecimento legível (alguém atravessando 40 px ou mais com carga ou ferramenta, crianças correndo, um incidente ou a caçada); de 0h às 4h, algo além do vigia (alguém que acorda, as brasas, um bicho da noite); ninguém parado a menos de 6 px do centro da fogueira do seu povo; de dia (6h às 17h), ninguém de pé, deitado, sentado no fogo ou conversando no mesmo ponto por mais de 21 min, fora das cenas; à tarde, em média uma conversa a cada 20 min ou menos num povo de 12 pessoas (a média é impressa). Os 40% contam gente inteira, arredondando para cima: de 12 pessoas, até 5 (41,7%) na mesma ação passam. Mostra a tabela hora a hora da semente 1, dia 4. |
 | `estilos.gd` | Simula 4 deuses (benevolente, cruel, ausente, caprichoso) por 100 anos, em 3 sementes, e compara fé, nomes do deus, costumes, dependência, guerras santas, secularizações e população. Tabela, trechos de crônica e leitura em `estilos/`. |
 | `testar_fase2.gd` | Testa estágios, construções, ruínas, cultura, crônica do povo, fim do mundo, povo novo, eras, estante e abandono. |
