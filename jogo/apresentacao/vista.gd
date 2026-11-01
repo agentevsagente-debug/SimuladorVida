@@ -57,9 +57,10 @@ const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "p
 const ZOOM_SEGUIR := 2
 ## Casa de cada estágio, para as janelas acesas (`_luz`) e as chaminés (LEIA-ME, seção 19).
 const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4/casa_enxaimel",
-	5: "estagio4/casa_enxaimel", 6: "estagio6/casa_tijolo"}
+	5: "estagio5/casa_caiada", 6: "estagio6/casa_tijolo"}
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
+const VAO_ENTRE_POVOS := 10.0
 
 var sim: Simulacao
 var modo_discreto := false
@@ -689,7 +690,9 @@ func _encaixar_lotes(obras: Array) -> void:
 	var passos := []
 	var total := 0.0
 	for i in n - 1:
-		passos.append((w[i] + w[i + 1]) / 2.0 + LOTE_FOLGA)
+		# entre as vilas de povos diferentes, um vão, para cada uma ler como um lugar (auditoria 7, C1)
+		var vao := VAO_ENTRE_POVOS if int(fila[i].get("grupo", -1)) != int(fila[i + 1].get("grupo", -1)) else 0.0
+		passos.append((w[i] + w[i + 1]) / 2.0 + LOTE_FOLGA + vao)
 		total += passos[i]
 	var aperto := 1.0 if total <= fim - ini else (fim - ini) / total
 	var desloc := [0.0]

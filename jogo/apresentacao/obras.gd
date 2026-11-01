@@ -9,7 +9,7 @@ extends RefCounted
 ## estágio anterior que tiver.
 const PECAS := {
 	"cabana": {1: "estagio1/cabana_galhos", 2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra",
-		4: "estagio4/casa_enxaimel", 6: "estagio6/casa_tijolo"},
+		4: "estagio4/casa_enxaimel", 5: "estagio5/casa_caiada", 6: "estagio6/casa_tijolo"},
 	"templo": {2: "estagio2/templo", 3: "estagio3/templo_pedra", 4: "estagio4/templo_colunas",
 		5: "estagio5/templo_escrita", 6: "estagio6/templo_cupula"},
 	"altar": {1: "estagio2/altar"},
@@ -28,7 +28,7 @@ const RUINAS := {
 	"estagio3/casa_pedra": "estagio3/casa_pedra_ruina", "estagio3/templo_pedra": "estagio3/templo_pedra_ruina",
 	"estagio4/casa_enxaimel": "estagio4/casa_enxaimel_ruina", "estagio4/templo_colunas": "estagio4/templo_colunas_ruina",
 	"estagio4/forja": "estagio4/forja_ruina", "estagio5/biblioteca": "estagio5/biblioteca_ruina",
-	"estagio5/templo_escrita": "estagio5/templo_escrita_ruina", "estagio6/casa_tijolo": "estagio6/casa_tijolo_ruina",
+	"estagio5/templo_escrita": "estagio5/templo_escrita_ruina", "estagio5/casa_caiada": "estagio5/casa_caiada_ruina", "estagio6/casa_tijolo": "estagio6/casa_tijolo_ruina",
 	"estagio6/templo_cupula": "estagio6/templo_cupula_ruina", "estagio6/moinho_4q": "estagio6/moinho_ruina",
 	"estagio6/muralha_torre": "estagio6/muralha_torre_ruina", "estagio6/barco_2q": "estagio6/barco_naufragado",
 }
@@ -38,6 +38,7 @@ const CAMADAS_CULTURA := {
 	"cabana": {2: ["culturas/casa_parede_{p}", "culturas/casa_telhado_{t}"],
 		3: ["estagio3/casa_pedra_parede", "estagio3/casa_pedra_telhado_{t}"],
 		4: ["estagio4/casa_enxaimel_parede", "estagio4/casa_enxaimel_telhado_{t}"],
+		5: ["estagio5/casa_caiada_parede", "estagio5/casa_caiada_telhado_{t}"],
 		6: ["estagio6/casa_tijolo_parede", "estagio6/casa_tijolo_telhado_{t}"]},
 	"templo": {2: ["culturas/templo_parede_{p}", "culturas/templo_telhado_{t}", "culturas/templo_simbolo_{s}"],
 		3: ["estagio3/templo_pedra_base", "estagio3/templo_pedra_simbolo_{s}"],

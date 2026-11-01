@@ -245,16 +245,17 @@ func _fogueiras(delta: float, estado: int, fogos: Array) -> void:
 	for f in fogos:
 		var topo := Vector2(f.centro, f.canto.y + 4)
 		if estado != NOITE and _espera_fumaca <= 0.0:
-			# a baforada nasce no fogo, sobe 6 a 10 px enquanto passa pelos 6
-			# quadros (que se desfazem) e some (auditorias 3 D5 e 3b E4)
-			fosco.emitir("fumaca_6q", 16, 6, topo + Vector2(_rng.randf_range(-2, 2), 0),
-				Vector2(_rng.randf_range(0.5, 1.5), -_rng.randf_range(2.0, 3.3)), 3.0)
+			# a baforada nasce dentro das chamas (o desenho dela fica 6 a 14 px acima
+			# da base), sobe só 3 a 5 px enquanto passa pelos 6 quadros, que se
+			# desfazem, e some rente ao fogo, sem ficar no céu (auditorias 3b e 7, E4)
+			fosco.emitir("fumaca_6q", 16, 6, topo + Vector2(_rng.randf_range(-2, 2), 8),
+				Vector2(_rng.randf_range(0.3, 1.0), -_rng.randf_range(1.5, 2.2)), 2.2)
 		if estado == NOITE and _espera_faisca <= 0.0:
 			luminoso.emitir("faisca", 1, 1, topo + Vector2(_rng.randf_range(-3, 3), 4),
 				Vector2(_rng.randf_range(-4, 4), _rng.randf_range(-22, -12)), _rng.randf_range(0.6, 1.4),
 				0.0, _rng.randi_range(0, 1))
 	if _espera_fumaca <= 0.0:
-		_espera_fumaca = _rng.randf_range(1.8, 3.0)
+		_espera_fumaca = _rng.randf_range(2.5, 4.0)
 	if _espera_faisca <= 0.0:
 		_espera_faisca = _rng.randf_range(0.15, 0.45)
 

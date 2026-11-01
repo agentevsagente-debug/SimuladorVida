@@ -33,6 +33,12 @@ const OLHA_O_FOGO := ["fogueira", "rezar", "cozinhar", "comer", "aticar", "cochi
 ## gente, os ociosos ficam "dentro de casa": não são desenhados, para a
 ## multidão não cobrir as construções. Quem está numa cena sempre aparece.
 const PARADOS_MAX := 28
+## Auditoria 7, V1: no máximo 3 parados por casa na frente da vila (nunca menos
+## de 10), e ninguém além de VISIVEIS_MAX na tela ao mesmo tempo: o resto está em
+## casa nesta hora (quem está numa cena e a linhagem seguida sempre aparecem).
+const PARADOS_POR_CASA := 3
+const PARADOS_MIN := 10
+const VISIVEIS_MAX := 45
 ## Quanto o passo e a animação de andar aceleram em cada ritmo (10x e 50x).
 const ACELERA := {Simulacao.Ritmo.RAPIDO: 2.5, Simulacao.Ritmo.MUITO_RAPIDO: 4.0}
 ## Cor da roupa do povo -> índice em opcoes_troca().roupas ([28 turquesa, 27 rosa, 29 lilás]).
@@ -79,7 +85,10 @@ const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_fo
 	"tropecar_cair_forte_4q", "carregar_agua_forte_4q", "buscar_agua_forte_4q", "carregar_caca_forte_4q",
 	"crianca_pegapega_fugir_4q", "crianca_pegapega_pegar_4q", "crianca_ciranda_4q", "crianca_ciranda_costas_4q",
 	"cacar_apontar_2q", "cacar_comemorar_4q", "cacar_amarrar_4q", "cacar_espreitar_forte_4q", "cacar_arremessar_forte_4q", "pescar_espreitar_forte_2q", "pescar_arpoar_forte_4q",
-	"carregar_peixe_forte_4q", "lavar_margem_forte_4q", "crianca_banho_4q"]
+	"carregar_peixe_forte_4q", "lavar_margem_forte_4q", "crianca_banho_4q",
+	# as folhas de sempre (auditoria 7, A1)
+	"adulto_a_andar_4q", "adulto_b_andar_4q", "adulto_a_parado_2q", "adulto_b_parado_2q", "adulto_a_rezar_2q",
+	"adulto_a_colher_4q", "adulto_a_sentado_1q", "crianca_andar_4q", "idoso_andar_4q"]
 
 var vista
 var sim
@@ -738,9 +747,10 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 	var desejos := []  # [x desejado, id]
 	var lugar := {}
 	var rodas := {}
+	_em_casa_nesta_hora(pessoas, trechos)
 	for p in pessoas:
 		var t: Dictionary = trechos[p["id"]]
-		if t.acao == "dormir" or t.anda:
+		if t.acao == "dormir" or t.anda or _ocultos.has(p["id"]):
 			continue
 		# os pares que conversam e quem rema ficam onde o núcleo pôs
 		if t.acao in ["conversar", "remar", "lutar", "carregar_morto"]:
@@ -767,8 +777,10 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 					continue
 				lugar[roda[i]] = lugares[k] + (ESPACO / 2.0 if lugares[k] > f else -ESPACO / 2.0)
 				_atras[roda[i]] = true
-	if desejos.size() > PARADOS_MAX:
-		desejos = _sem_os_ociosos(desejos, trechos)
+	var casas: int = maxi(1, sim.construcoes.filter(func(o): return o["tipo"] == "cabana").size())
+	var limite := clampi(PARADOS_POR_CASA * casas, PARADOS_MIN, PARADOS_MAX)
+	if desejos.size() > limite:
+		desejos = _sem_os_ociosos(desejos, trechos, limite, lugar)
 	desejos.sort_custom(func(a, b): return a[0] < b[0] or (a[0] == b[0] and a[1] < b[1]))
 	# com muita gente, duas fileiras: os de índice ímpar ficam meio passo atrás,
 	# 2 px acima e desenhados antes, em vez de uma fila só de ponta a ponta
@@ -784,22 +796,52 @@ func _lugares(pessoas: Array, trechos: Dictionary) -> Dictionary:
 ## Com parados demais, os ociosos (parados sem cena, descansando ou guardando)
 ## vão para dentro de casa primeiro, depois os outros sem cena, até sobrarem
 ## PARADOS_MAX. A escolha muda a cada dia, mas fica a mesma dentro do dia.
-func _sem_os_ociosos(desejos: Array, trechos: Dictionary) -> Array:
+func _sem_os_ociosos(desejos: Array, trechos: Dictionary, limite: int, lugar: Dictionary) -> Array:
 	var dia: int = int(sim.tempo.get("dia", 1))
 	var ordem := desejos.duplicate()
 	ordem.sort_custom(func(a, b):
 		var pa := _prioridade(trechos[a[1]])
 		var pb := _prioridade(trechos[b[1]])
 		return pa < pb or (pa == pb and hash(a[1] * 31 + dia) < hash(b[1] * 31 + dia)))
-	var sobra := desejos.size() - PARADOS_MAX
+	var sobra := desejos.size() - limite
+	var zonas := _cantos_das_zonas()
 	var ficam := []
+	var k := 0
 	for d in ordem:
 		if sobra > 0 and _prioridade(trechos[d[1]]) < 2:
-			_ocultos[d[1]] = true
 			sobra -= 1
+			k += 1
+			if k % 2 == 0 or zonas.is_empty():  # metade fica em casa...
+				_ocultos[d[1]] = true
+			else:  # ...e a outra metade passa a hora na roça, na beira do lago ou no morro
+				var z: Vector2 = zonas[(d[1] + k) % zonas.size()]
+				lugar[d[1]] = z.x + (k * 7) % int(z.y)
 		else:
 			ficam.append(d)
 	return ficam
+
+
+## Trechos fora da frente da vila onde quem sobra passa a hora: {x inicial, largura}.
+func _cantos_das_zonas() -> Array:
+	var r := [Vector2(MARGEM + 2.0, 12.0), Vector2(380.0, 70.0)]  # a beira do lago e o morro
+	for o in sim.construcoes:
+		if o["tipo"] == "roca":
+			r.append(Vector2(float(o["x"]) - 8.0, 16.0))
+	return r
+
+
+## Com gente demais, uma parte passa a hora em casa (não é desenhada). A escolha
+## muda a cada hora e é a mesma dentro dela; nunca quem está numa cena ou é seguido.
+func _em_casa_nesta_hora(pessoas: Array, trechos: Dictionary) -> void:
+	var acordados := pessoas.filter(func(p): return trechos[p["id"]].acao != "dormir")
+	var sobra := acordados.size() - VISIVEIS_MAX
+	if sobra <= 0:
+		return
+	var hora: int = int(sim.tempo.get("dia", 1)) * 24 + int(sim.tempo.get("hora", 0))
+	var podem := acordados.filter(func(p): return trechos[p["id"]].cena.is_empty() and not p.get("acompanhada", false))
+	podem.sort_custom(func(a, b): return hash(a["id"] * 131 + hora) < hash(b["id"] * 131 + hora))
+	for i in mini(sobra, podem.size()):
+		_ocultos[podem[i]["id"]] = true
 
 
 ## 0: ocioso; 1: fazendo algo, sem cena; 2: numa cena (nunca some).
