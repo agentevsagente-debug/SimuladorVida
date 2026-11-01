@@ -611,7 +611,7 @@ As folhas abaixo ficam em `acoes/` e seguem o mesmo padrão das outras ações (
 | `cavar_raiz` | `acoes/cavar_raiz_4q` | 4 | ajoelhado; a vara crava, revolve a terra e a raiz sai na mão |
 | `catar_lenha` | `acoes/catar_lenha_4q` | 4 | abaixa, pega os galhos e levanta com eles no braço; depois, `carregar_lenha_4q` |
 | `carregar_cesto` | `acoes/carregar_cesto_cabeca_4q` (na cabeça), `acoes/andar_cesto_4q` (nas costas), `acoes/carregar_cesto_4q` (no quadril) | 4 | |
-| `cacar` | `acoes/cacar_espreitar_4q`, e depois `acoes/cacar_arremessar_4q` | 4 + 4 | anda agachado com a lança na horizontal e arremessa. A lança solta é `objetos/lanca_voando` (12 × 3), lançada a partir do quadro 2. |
+| `cacar` | `acoes/cacar_espreitar_4q`, e depois `acoes/cacar_arremessar_4q` | 4 + 4 | anda agachado com a lança na horizontal e arremessa. A lança solta é `objetos/lanca_voando` (12 × 3), lançada a partir do quadro 2. A sequência inteira, com o acerto, o erro, o abate e a volta, está na seção 24. |
 | `carregar_caca` | 2 × `acoes/carregar_caca_4q` + `objetos/caca_no_pau_porco` ou `caca_no_pau_ave` | 4 | os dois carregadores ficam a 12 px um do outro, com o quadro defasado em 2. A linha 0 do objeto (o pau) vai na linha 3 dos carregadores, entre eles. |
 | `cozinhar` | `acoes/cozinhar_mexer_4q` + `objetos/panela`; `acoes/cozinhar_espeto_4q` + `objetos/espeto` | 4 | agachado diante da panela, mexendo; ou sentado girando o espeto. O fogo é a fogueira. |
 | `buscar_agua` | `acoes/buscar_agua_4q` | 4 | na margem: abaixa, enche a cuia e levanta. Depois, a cuia cheia é `objetos/cuia_cheia`. |
@@ -692,6 +692,37 @@ Quadros de 6 × 8, como a criança de sempre, com as mesmas cores-base. Quem des
 **Pega-pega.** As duas crianças correm na mesma direção, mais rápido que o andar (por exemplo, 1,5 vez a velocidade do adulto), com o pegador uns 7 px atrás de quem foge. A distância varia: o pegador se aproxima e perde terreno. Quando ela cai para 4 px, o motor mostra o quadro 3 do pegador (o toque) e troca os papéis: quem foi pego vira e passa a correr atrás. Uma rodada leva uns 6 a 10 s; depois, as crianças mudam de direção ou voltam a andar (`habitantes/crianca_andar_4q`).
 
 **Ciranda.** A roda, vista de lado, é uma fileira dupla. As crianças da frente usam a folha de frente, a 6 px uma da outra, de modo que as mãos das vizinhas se encostam e a fila vira uma corrente. As de trás usam a folha de costas, 2 px acima, deslocadas 3 px e desenhadas antes. Para girar, cada criança anda numa elipse achatada (por exemplo, 24 × 3 px). Na metade da frente usa a folha de frente; na de trás, a de costas. Os quadros das vizinhas ficam defasados em 1. Use de 4 a 8 crianças.
+
+## 24. Caçada em sequência (`acoes/cacada.py`)
+
+A caçada precisa ler como uma sequência: espreitar, arremessar, acertar ou errar, abater e voltar. As peças novas desta seção completam as que já existiam (seções 20 e 22). `acoes/amostra_cacada_4x.png` mostra a sequência inteira, uma cena por linha, com as peças lado a lado nas distâncias sugeridas.
+
+**Peças novas:**
+
+| Folha | Quadro | Quadros | O que é |
+|---|---|---|---|
+| `acoes/cacar_apontar_2q` | 8 × 12 | 2 | agachado, com a lança em pé na mão de trás, aponta a caça com o braço esticado; no quadro 1, vira a cabeça para trás, avisando os outros |
+| `acoes/cacar_comemorar_4q` | 12 × 12 | 4 | acertou: pula com a lança (2 px) erguida acima da cabeça, de boca aberta |
+| `acoes/cacar_amarrar_4q` | 12 × 12 | 4 | ajoelhado ao lado do bicho caído, passa a corda clara nas patas e puxa o nó |
+| `criaturas/porco_correr_4q` | 10 × 6 | 4 | o porco fugindo a galope (nos quadros 1 e 3, no ar) |
+| `criaturas/porco_atingido_4q` | 12 × 8 | 4 | a lança crava no lombo (o porco nas colunas 2 a 11, a lança saindo para trás), ele cambaleia, tomba e fica caído com a lança |
+| `criaturas/ave_fugir_4q` | 8 × 8 | 4 | a ave grande fugindo, correndo e batendo as asas |
+| `objetos/lanca_cravada` | 8 × 8 | 1 | errou: a lança fica cravada no chão, inclinada, com a ponta na última linha |
+| `objetos/pau_no_chao` | 24 × 2 | 1 | o pau de 2 px no chão, ao lado do bicho caído, antes de amarrar |
+
+**A sequência**, em 1x (no 10x e no 50x, o motor pode pular direto para a volta):
+
+| Passo | Caçadores | O bicho | Distâncias e tempos |
+|---|---|---|---|
+| 1. espreitar | 2 ou 3 com `cacar_espreitar_4q` (ou a versão de pé, `andar`, até chegar perto) | `porco_do_mato_4q` fuçando, de costas para eles | na **borda da floresta, perto da vila e à vista**, não no meio dos pinheiros do morro. Os caçadores ficam a 6 a 10 px um do outro e começam a uns 40 px do bicho, chegando devagar. |
+| 2. apontar | o da frente faz `cacar_apontar_2q` (1 a 2 s); os outros param agachados | parado, fuçando | a uns 30 px |
+| 3. arremessar | o da frente faz `cacar_arremessar_4q` | parado | a 20 a 30 px. A `lanca_voando` sai da mão (coluna 7, linha 4 do caçador) no quadro 2 e leva uns 0,3 s até o bicho, num arco raso. |
+| 4a. acertou | todos fazem `cacar_comemorar_4q` (2 a 3 s), com os quadros defasados | `porco_atingido_4q` (0,2 s por quadro), e depois o quadro 3 parado | o bicho cai no lugar onde estava |
+| 4b. errou | o caçador vai buscar a lança (andar) e volta ao passo 1 | `porco_correr_4q` foge para a floresta e some | a `lanca_cravada` fica no chão onde o bicho estava, até alguém pegá-la |
+| 5. abater e amarrar | um faz `cacar_amarrar_4q` (3 a 4 s), à esquerda do bicho, com a mão (coluna 7) sobre ele; os outros esperam de pé | `porco_abatido` (troca o quadro 3 do atingido: o caçador tirou a lança) | o `pau_no_chao` fica ao lado do bicho, no chão |
+| 6. voltar | 2 carregadores com `carregar_caca_forte_4q`, a 16 px um do outro | `objetos/caca_no_pau_porco_forte` entre eles (seção 22) | atravessam a tela até a fogueira. Lá, o bicho vai para o `espeto` e alguém faz `cozinhar_espeto_4q`. |
+
+Com a ave, é a mesma sequência: `ave_grande_4q` no passo 1, `ave_fugir_4q` quando erra, `ave_abatida` quando acerta (sem quadro de atingida: ela cai direto) e `caca_no_pau_ave_forte` na volta.
 
 ## Critérios
 
