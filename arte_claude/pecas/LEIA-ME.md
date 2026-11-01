@@ -136,9 +136,32 @@ Nenhum efeito usa semitransparência. Quando algo some aos poucos, como a fumaç
 | `folha_verde_4q`, `folha_seca_4q` | 8 × 8 | 4 | folha girando ao vento |
 | `vagalume_4q` | 8 × 8 | 4 | vagalume piscando (só à noite) |
 
+### Efeitos da fase 2 (`efeitos_fase2.py`)
+
+São os efeitos dos 5 poderes restantes. `amostra_efeitos_fase2_4x.png` mostra todos sobre o dia e sobre a noite.
+
+| Folha | Quadro | Quadros | Uso |
+|---|---|---|---|
+| `seca_rachaduras_4q` | 32 × 8 | 4 | **seca**: vai sobre a superfície do chão (linha 2, como a grama). O capim amarela, e as rachaduras crescem em 4 etapas. |
+| `calor_4q` | 16 × 16 | 4 | **seca**: tremor de calor subindo do chão |
+| `../montagem/ceu_seca.png` | 480 × 160 | | **seca**: céu amarelado do dia, com sol grande e branco (camada de céu) |
+| `chuva_forte_3v` | 4 × 12 | 3 variações | **dilúvio**: gota longa da chuva pesada |
+| `cortina_chuva_4q` | 32 × 32 | 4 | **dilúvio**: cortina de chuva que repete nas duas direções; o motor a rola para baixo sobre o mundo |
+| `enchente_superficie_4q`, `enchente_agua_1q` | 8 × 8 | 4 e 1 | **dilúvio**: superfície e corpo da água barrenta que sobe. São blocos como `agua_superficie_4q` e `agua`, colocados acima do terreno. |
+| `destrocos_3v` | 8 × 8 | 3 variações | **dilúvio**: tábua, folhagem e galhos boiando |
+| `fenda_4q` | 16 × 16 | 4 | **terremoto**: fenda que se abre no chão. A linha 0 é a superfície. |
+| `poeira_terremoto_4q` | 32 × 16 | 4 | **terremoto**: poeira larga subindo e se desfazendo |
+| `pedras_caindo_3v` | 4 × 4 | 3 variações | **terremoto**: partícula de pedra caindo |
+| `cometa_4q` | 32 × 16 | 4 | **presságio**: cometa com cauda que tremula. Atravessa o céu da direita para a esquerda; a cabeça fica em (4, 4). |
+| `eclipse_4q` | 16 × 16 | 4 | **presságio**: o disco escuro cobre o sol até sobrar a coroa |
+| `../montagem/ceu_eclipse.png` | 480 × 160 | | **presságio**: céu do eclipse total, de dia, com a coroa e um anel de entardecer no horizonte |
+| `cura_luz_4q` | 16 × 24 | 4 | **cura**: luz suave que desce sobre quem é curado. A base fica na linha 23, nos pés da pessoa. |
+| `cura_brilho_4q` | 8 × 8 | 4 | **cura**: brilho verde-claro solto |
+
 **À noite:**
 - não passam pela tabela `noite`, porque emitem luz: raio, impacto, chamas, brasas, fartura, sonho e vagalume;
-- usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas.
+- usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas;
+- da fase 2, emitem luz cometa, eclipse e cura; seca, calor, chuva forte, cortina, enchente, destroços, fenda, poeira do terremoto e pedras usam a tabela `noite`.
 
 ## 5. Sinais de prece (`sinais/`)
 
@@ -177,6 +200,11 @@ Os ícones foram desenhados para o fundo escuro da alça.
 | `dica_ponteiro.png` | 6 × 3 | | bico da dica, apontando para baixo; vai colado na borda de baixo |
 | `alca_9s.png` | 12 × 12 | 4 px | fundo da alça, madeira escura |
 | `botao_3q.png` | 3 quadros de 16 × 16 | | botão normal, com o cursor por cima e selecionado (borda dourada). O ícone de 12 × 12 vai em (2, 2). |
+
+**Ícone do jogo**, para a bandeja e a barra de tarefas: `icone_jogo_16.png`, `icone_jogo_32.png`, `icone_jogo_256.png` e `icone_jogo.ico`.
+- O 16 e o 32 foram desenhados à mão, cada um com o seu desenho, para ler bem em 1x. O 256 é o 32 ampliado 8 vezes, sem suavização.
+- O `.ico` leva os tamanhos 16, 32, 48, 64, 128 e 256, todos com pixels nítidos.
+- O desenho é o pequeno mundo numa moldura de madeira: céu, sol, morro, a cabana de galhos e uma pessoa junto ao fogo.
 
 **Fonte em pixel:** `fonte_5x7_clara`, `fonte_5x7_escura` e `fonte_5x7_dourada`, cada uma com um `.png` e um `.fnt`.
 - **Formato:** BMFont em texto, que o Godot 4 importa direto como fonte. As três têm as mesmas medidas e mudam só a cor, porque a fonte não pode ser tingida pelo motor: multiplicar a cor sairia da paleta.
