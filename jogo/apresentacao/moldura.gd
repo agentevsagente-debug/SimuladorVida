@@ -25,7 +25,7 @@ extends Node2D
 ##   --ritmo=pausa|normal|rapido          ritmo inicial do tempo
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
-##   --abrir=cronica|poderes|ritmo        abre um painel da interface (testes)
+##   --abrir=cronica|poderes|ritmo|linhagem|salto   abre um painel ou aperta um botão (testes)
 
 const Simulacao = preload("res://apresentacao/simulacao.gd")
 
@@ -113,8 +113,10 @@ func _ready() -> void:
 	match args.get("abrir", ""):
 		"cronica":
 			interface.alternar_cronica.call_deferred()
-		"poderes", "ritmo":
+		"poderes", "ritmo", "linhagem":
 			interface._apertar.call_deferred(args["abrir"])
+		"salto":
+			interface._apertar.call_deferred("ritmo:salto")
 	if args.has("atalho-global"):
 		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if args.get("cenario", "") == "escondido":

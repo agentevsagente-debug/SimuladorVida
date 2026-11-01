@@ -43,6 +43,15 @@ public static class Win32 {
         SetCursorPos(antes.X, antes.Y);
     }
 
+    public static void Rolar(int x, int y, int passos) {
+        POINT antes; GetCursorPos(out antes);
+        SetCursorPos(x, y);
+        System.Threading.Thread.Sleep(60);
+        mouse_event(0x0800, 0, 0, (uint)(120 * passos), IntPtr.Zero); // roda do mouse
+        System.Threading.Thread.Sleep(60);
+        SetCursorPos(antes.X, antes.Y);
+    }
+
     public static void Arrastar(int x, int y, int dx, int dy) {
         POINT antes; GetCursorPos(out antes);
         SetCursorPos(x, y);

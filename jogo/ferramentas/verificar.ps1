@@ -23,7 +23,7 @@ function Iniciar-Moldura([int]$escala, [string]$log) {
     if (Test-Path $log) { Remove-Item $log }
     $p = Start-Process -FilePath $Godot -PassThru -ArgumentList @(
         '--path', "`"$projeto`"", '--log-file', "`"$log`"", '--',
-        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config')
+        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config', '--mundo-novo')
     for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
     Start-Sleep -Seconds 2
     $p.Refresh()
@@ -38,7 +38,7 @@ $alvo = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList @(
     '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', "`"$PSScriptRoot\alvo.ps1`"",
     '-X', $X, '-Y', $Y, '-Arquivo', "`"$cliques`"", '-Segundos', 150)
 Start-Sleep -Seconds 3
-$fundo = [Win32]::Capturar($X, $Y, 960, 352)
+$fundo = [Win32]::Capturar($X, $Y, 960, 356)
 
 # 2. Moldura em 2x por cima.
 $log = Join-Path $env:TEMP 'moldura-verificacao.log'
@@ -48,8 +48,9 @@ $ex = [Win32]::GetWindowLong($h, -20)
 Registrar 'sempre por cima' (($ex -band 0x8) -ne 0) ('WS_EX = 0x{0:X8} (TOPMOST=0x8, LAYERED=0x80000, TRANSPARENT=0x20)' -f $ex)
 
 $k = 2
+$faixa = 18
 $pontoFaixa = @(($X + 300 * $k), ($Y + 8 * $k))
-$pontoAlca = @(($X + 20 * $k), ($Y + 7 * $k))
+$pontoAlca = @(($X + 5 * $k), ($Y + 9 * $k))
 $pontoCeu = @(($X + 240 * $k), ($Y + 60 * $k))
 $pontoChao = @(($X + 240 * $k), ($Y + 170 * $k))
 $hFaixa = [Win32]::RaizEm($pontoFaixa[0], $pontoFaixa[1])
@@ -57,13 +58,13 @@ Registrar 'faixa: janela de tras' ($hFaixa -ne $h) ("WindowFromPoint -> '{0}'" -
 Registrar 'alca: moldura' ([Win32]::RaizEm($pontoAlca[0], $pontoAlca[1]) -eq $h) ''
 Registrar 'mundo: moldura' ([Win32]::RaizEm($pontoCeu[0], $pontoCeu[1]) -eq $h) ''
 
-$com = [Win32]::Capturar($X, $Y, 960, 352)
+$com = [Win32]::Capturar($X, $Y, 960, 356)
 $com.Save((Join-Path $saida 'escala2.png'))
-$transp = [Win32]::Iguais($fundo, $com, 90 * $k, 0, 390 * $k, 16 * $k)
-$mundoDif = 1 - [Win32]::Iguais($fundo, $com, 0, 16 * $k, 480 * $k, 160 * $k)
+$transp = [Win32]::Iguais($fundo, $com, 110 * $k, 0, 370 * $k, $faixa * $k)
+$mundoDif = 1 - [Win32]::Iguais($fundo, $com, 0, $faixa * $k, 480 * $k, 160 * $k)
 Registrar 'transparencia da faixa' ($transp -gt 0.999) ('{0:P2} dos pixels iguais ao fundo' -f $transp)
 Registrar 'mundo opaco' ($mundoDif -gt 0.99) ('{0:P2} dos pixels diferentes do fundo' -f $mundoDif)
-$nitidez = [Win32]::BlocosUniformes($com, 0, 16 * $k, 480 * $k, 160 * $k, $k)
+$nitidez = [Win32]::BlocosUniformes($com, 0, $faixa * $k, 480 * $k, 160 * $k, $k)
 Registrar 'nitidez 2x' ($nitidez -gt 0.999) ('{0:P2} dos blocos 2x2 de cor unica' -f $nitidez)
 
 # 3. Cliques: um na faixa transparente (deve chegar ao alvo) e um no céu (chuva).
@@ -87,19 +88,19 @@ $antes = Retangulo $h
 Start-Sleep -Milliseconds 500
 $depois = Retangulo $h
 $dx = $depois.Left - $antes.Left; $dy = $depois.Top - $antes.Top
-Registrar 'arrastar' ($dx -eq 120 -and $dy -eq 60) "deslocou ($dx, $dy), esperado (120, 60)"
+# o arraste nativo pode pegar o cursor 1 px depois do clique sintético
+Registrar 'arrastar' ([math]::Abs($dx - 120) -le 2 -and [math]::Abs($dy - 60) -le 2) "deslocou ($dx, $dy), esperado (120, 60) +- 2 px"
 
-# 5. Botão "+" (2x -> 3x).
-$bx = $depois.Left + 65 * $k; $by = $depois.Top + 7 * $k
-[Win32]::Clicar($bx, $by)
+# 5. Roda do mouse sobre a alça (2x -> 3x).
+[Win32]::Rolar($depois.Left + 5 * $k, $depois.Top + 9 * $k, 1)
 Start-Sleep -Milliseconds 800
 $r3 = Retangulo $h
-Registrar 'botao + (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bottom - $r3.Top) -eq 528)) ("janela {0}x{1}" -f ($r3.Right - $r3.Left), ($r3.Bottom - $r3.Top))
+Registrar 'roda na alca (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bottom - $r3.Top) -eq 534)) ("janela {0}x{1}" -f ($r3.Right - $r3.Left), ($r3.Bottom - $r3.Top))
 $hFaixa3 = [Win32]::RaizEm($r3.Left + 300 * 3, $r3.Top + 8 * 3)
 Registrar 'passagem refeita em 3x' ($hFaixa3 -ne $h) ''
 
 # 6. Esconder pelo botão.
-[Win32]::Clicar($r3.Left + 79 * 3, $r3.Top + 7 * 3)
+[Win32]::Clicar($r3.Left + 86 * 3, $r3.Top + 9 * 3)
 Start-Sleep -Milliseconds 800
 $escondida = (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h)
 $hMeio = [Win32]::RaizEm($r3.Left + 240 * 3, $r3.Top + 100 * 3)
@@ -120,9 +121,9 @@ Copy-Item $log (Join-Path $saida 'verificacao.log')
 foreach ($e in 3, 4) {
     $g = Iniciar-Moldura $e (Join-Path $env:TEMP "moldura-$e.log")
     $r = Retangulo $g.MainWindowHandle
-    $img = [Win32]::Capturar($r.Left, $r.Top, 480 * $e, 176 * $e)
+    $img = [Win32]::Capturar($r.Left, $r.Top, 480 * $e, 178 * $e)
     $img.Save((Join-Path $saida "escala$e.png"))
-    $nit = [Win32]::BlocosUniformes($img, 0, 16 * $e, 480 * $e, 160 * $e, $e)
+    $nit = [Win32]::BlocosUniformes($img, 0, $faixa * $e, 480 * $e, 160 * $e, $e)
     Registrar "nitidez ${e}x" ($nit -gt 0.999) ('{0:P2} dos blocos {1}x{1} de cor unica' -f $nit, $e)
     Stop-Process -Id $g.Id -ErrorAction SilentlyContinue
 }

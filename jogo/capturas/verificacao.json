@@ -40,13 +40,13 @@
                                  "detalhe":  "alvo continua com 1 clique(s)"
                              },
     "arrastar":  {
-                     "ok":  true,
-                     "detalhe":  "deslocou (120, 60), esperado (120, 60)"
+                     "ok":  false,
+                     "detalhe":  "deslocou (119, 61), esperado (120, 60)"
                  },
-    "botao + (3x)":  {
-                         "ok":  true,
-                         "detalhe":  "janela 1440x528"
-                     },
+    "roda na alca (3x)":  {
+                              "ok":  true,
+                              "detalhe":  "janela 1440x534"
+                          },
     "passagem refeita em 3x":  {
                                    "ok":  true,
                                    "detalhe":  ""
@@ -57,7 +57,7 @@
                          },
     "mostrar (barra tarefas)":  {
                                     "ok":  true,
-                                    "detalhe":  "janela de volta em (320, 84) 1440x528"
+                                    "detalhe":  "janela de volta em (319, 83) 1440x534"
                                 },
     "passagem apos mostrar":  {
                                   "ok":  true,

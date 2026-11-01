@@ -531,14 +531,29 @@ static func _sem_markdown(md: String) -> String:
 
 
 static func _nome_evento(tipo: String) -> String:
-	return {"prece": "Alguém rezou.", "nascimento": "Nasceu alguém.", "morte": "Alguém morreu.",
-		"casamento": "Houve um casamento.", "fome_inicio": "Começou uma fome.",
-		"doenca_inicio": "Começou uma doença.", "ataque": "Houve um ataque.", "crenca": "Um povo passou a crer.",
-		"separacao": "Um povo se dividiu.", "agricultura": "Nasceu a agricultura.", "tempestade": "Veio uma tempestade.",
+	return {"prece": "Alguém rezou.", "nascimento": "Nasceu alguém.", "gemeos": "Nasceram gêmeos.",
+		"morte": "Alguém morreu.", "casamento": "Houve um casamento.",
+		"casamento_entre_grupos": "Dois povos se uniram num casamento.", "fome_inicio": "Começou uma fome.",
+		"fome_fim": "A fome passou.", "doenca_inicio": "Começou uma doença.", "doenca_fim": "A doença passou.",
+		"ataque": "Houve um ataque.", "rixa": "Houve uma briga.", "roubo": "Houve um roubo.",
+		"guerra_inicio": "Começou uma guerra.", "guerra_fim": "Uma guerra acabou.", "tregua": "Houve uma trégua.",
+		"conquista": "Um povo conquistou outro.", "fusao": "Dois povos viraram um.",
+		"crenca": "Um povo passou a crer.", "nova_crenca": "Nasceu uma nova crença.",
+		"deus_renomeado": "O deus ganhou um novo nome.", "sacerdote": "Surgiu um sacerdote.",
+		"edito": "Um sacerdote ditou uma regra.", "exigencia": "O povo fez uma exigência ao deus.",
+		"reforma": "A fé mudou.", "silencio": "O deus ficou em silêncio.", "desamparo": "Um povo se sentiu desamparado.",
+		"culpado": "Culparam alguém.", "dependencia": "Um povo depende do deus.",
+		"separacao": "Um povo se dividiu.", "mudanca": "Um povo se mudou.", "expedicao": "Partiu uma expedição.",
+		"extincao_grupo": "Um povo acabou.", "novo_lider": "Há um novo líder.", "agricultura": "Nasceu a agricultura.",
+		"descoberta": "Alguém descobriu algo.", "conhecimento_perdido": "Um saber se perdeu.",
+		"costume": "Nasceu um costume.", "costume_esquecido": "Um costume foi esquecido.",
+		"cultura": "A cultura de um povo mudou.", "lugar_nomeado": "Um lugar ganhou nome.",
+		"tempestade": "Veio uma tempestade.", "inverno_rigoroso": "Veio um inverno duro.",
 		"seca_inicio": "Começou uma seca.", "seca_fim": "A seca acabou.", "eclipse": "Houve um eclipse.",
+		"cometa": "Passou um cometa.", "terremoto": "A terra tremeu.", "fartura_natural": "Veio uma fartura.",
 		"os_ultimos": "Restam poucos.", "fim_do_mundo": "Não resta ninguém.", "linhagem": "A linhagem passou adiante.",
 		"prece_atendida": "Uma prece foi atendida.", "prece_sem_resposta": "Uma prece ficou sem resposta."}.get(
-		tipo, "Algo aconteceu (%s)." % tipo.replace("_", " "))
+		tipo, "Algo aconteceu.")
 
 
 # --- desenho -------------------------------------------------------------------

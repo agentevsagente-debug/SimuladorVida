@@ -51,6 +51,7 @@ const PECAS_MIUDAS := ["capim", "capim_seco", "arbusto", "arbusto_frutas", "pedr
 const ARVORES := {"arvore_copa_a": 19, "arvore_copa_b": 14, "pinheiro_a": 19, "pinheiro_b": 11, "pinheiro_fundo": 15}
 const PASSO_ANDAR := 9.0      # px/s de quem anda
 const ESPACO := 7             # distância mínima entre pessoas paradas lado a lado
+const MARGEM := 130.0         # ninguém fica à esquerda disto (é água; API: x ≥ 126)
 const ZOOM_SEGUIR := 2
 
 var sim: Simulacao
@@ -222,6 +223,7 @@ func objeto_em(p: Vector2) -> Dictionary:
 
 
 func clicar(ponto_tela: Vector2) -> void:
+	print("[vista] clique no mundo %s" % para_mundo(ponto_tela).round())
 	var o := objeto_em(para_mundo(ponto_tela))
 	if o.get("tipo", "") == "pessoa":
 		pessoa_clicada.emit(o.pessoa["id"])
@@ -685,9 +687,13 @@ func _lugares(pessoas: Array) -> Dictionary:
 	for f in na_fogueira:
 		var roda: Array = na_fogueira[f]
 		roda.sort_custom(func(a, b): return a["id"] < b["id"])
+		var xs := []
 		for i in roda.size():
 			var lado := -1.0 if i % 2 == 0 else 1.0
-			lugar[roda[i]["id"]] = f + lado * (11.0 + ESPACO * (i / 2))
+			xs.append(f + lado * (11.0 + ESPACO * (i / 2)))
+		_na_terra(xs)
+		for i in roda.size():
+			lugar[roda[i]["id"]] = xs[i]
 	# os outros: em grupos de quem está a menos de ESPACO um do outro
 	outros.sort_custom(func(a, b): return a["x"] < b["x"] or (a["x"] == b["x"] and a["id"] < b["id"]))
 	var grupo := []
@@ -701,10 +707,27 @@ func _lugares(pessoas: Array) -> Dictionary:
 				meio += p["x"]
 			meio /= grupo.size()
 			grupo.sort_custom(func(a, b): return a["id"] < b["id"])
+			var xs := []
 			for j in grupo.size():
-				lugar[grupo[j]["id"]] = meio + (j - (grupo.size() - 1) / 2.0) * ESPACO
+				xs.append(meio + (j - (grupo.size() - 1) / 2.0) * ESPACO)
+			_na_terra(xs)
+			for j in grupo.size():
+				lugar[grupo[j]["id"]] = xs[j]
 		grupo = [outros[i]] if i < outros.size() else []
 	return lugar
+
+
+## Desloca um grupo inteiro para não sair da terra nem da tela.
+static func _na_terra(xs: Array) -> void:
+	var menor: float = xs.min()
+	var maior: float = xs.max()
+	var d := 0.0
+	if menor < MARGEM:
+		d = MARGEM - menor
+	elif maior > LARGURA - 4:
+		d = LARGURA - 4 - maior
+	for i in xs.size():
+		xs[i] += d
 
 
 func _figuras_nucleo(delta: float) -> Array:
