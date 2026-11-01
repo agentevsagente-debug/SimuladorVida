@@ -186,7 +186,66 @@ Os ícones foram desenhados para o fundo escuro da alça.
   - todos os acentos do português: á à â ã é ê í ó ô õ ú ü, as maiúsculas acentuadas correspondentes, ç e Ç;
   - pontuação: `. , : ; ! ? - — ' " ( ) « » / % + = … º ª`.
 
-## 7. Camadas do motor (`montagem/`)
+## 7. Estágio 2, agricultura (`estagio2/`)
+
+A base de cada peça, o ponto que toca o chão, fica na última linha, como no estágio 1. `amostra_estagio2_4x.png` mostra as peças sobre o chão da cena.
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `roca_arada`, `roca_broto`, `roca_crescida`, `roca_madura` | 16 × 16 | as 4 fases da roça. Os sulcos ficam nas 4 últimas linhas, e as plantas se repetem a cada 4 px, então uma roça larga é a mesma peça repetida lado a lado. A peça vai sobre a grama, com a base na superfície. |
+| `roca_seca` | 16 × 16 | talos secos tombados e solo rachado |
+| `casa_taipa` | 24 × 24 | casa de taipa com telhado de palha (peça montada) |
+| `casa_taipa_parede`, `casa_taipa_telhado` | 24 × 24 | a mesma casa em duas camadas, para as culturas trocarem parede e telhado. Desenhe a parede primeiro e o telhado por cima. |
+| `celeiro` | 24 × 24 | celeiro sobre esteios, com escada |
+| `cerca` | 8 × 8 | trecho que se repete na horizontal: um poste e dois trilhos |
+| `cerca_poste` | 8 × 8 | poste solto, para fechar a ponta direita da cerca |
+| `altar` | 16 × 16 | laje de pedra com oferendas e duas chamas |
+| `templo` | 32 × 32 | primeiro templo pequeno: pedra, colunas de madeira, palha e o símbolo no alto (peça montada) |
+| `templo_parede`, `templo_telhado`, `templo_simbolo` | 32 × 32 | o templo em 3 camadas, desenhadas nesta ordem. O símbolo (o sol) é a parte que cada cultura troca. |
+| `adulto_enxada_andar_4q` | quadro de 12 × 12 | 4 quadros, andando com a enxada no ombro |
+| `adulto_enxada_trabalhar_4q` | quadro de 12 × 12 | 4 quadros: ergue, golpeia, crava e puxa a terra |
+
+**As folhas com enxada têm quadros de 12 × 12.** O corpo ocupa as colunas 0 a 7, igual aos outros habitantes, e a enxada usa as colunas 8 a 11. O motor alinha pelo canto esquerdo e pela base, como faz com o habitante de 8 × 12. As cores-base e as trocas de pele, cabelo e roupa são as mesmas de `habitantes/trocas.json`.
+
+## 8. Ruínas e marcas da memória (`memoria/`)
+
+A base de cada peça fica na última linha. `amostra_memoria_4x.png` mostra todas sobre o chão da cena.
+
+| Peça | Tamanho | Observação |
+|---|---|---|
+| `tumulo` | 16 × 16 | monte de terra com pedra fincada riscada e flores |
+| `cabana_abandonada` | 16 × 16 | a `cabana_galhos` sem folhas, com o topo cedido, galhos no chão e mato |
+| `casa_ruina` | 24 × 24 | a casa de taipa sem telhado: sobram caibros, a parede está quebrada e furada, há entulho e mato |
+| `pedra_erguida` | 16 × 32 | menir de lugar sagrado, com espiral entalhada e musgo |
+| `terra_queimada_a`, `terra_queimada_b` | 8 × 8 | **blocos de terreno** que substituem a grama, com a superfície na linha 2 (como `grama_a`): tocos queimados, cinza e brasas |
+| `arvore_queimada` | 32 × 32 | tronco carbonizado com galhos nus e brasas; o tronco fica na coluna 15 |
+
+## 9. Variações de cultura (`culturas/`)
+
+As peças de cultura têm o mesmo tamanho e o mesmo encaixe da casa (24 × 24) e do templo (32 × 32) do estágio 2. A porta e a janela ficam sempre no mesmo lugar, então qualquer parede combina com qualquer telhado.
+
+Ordem de desenho:
+- casa: parede e depois telhado;
+- templo: parede, depois telhado e por último o símbolo.
+
+`amostra_culturas_4x.png` mostra, em cima, três povos de exemplo e, embaixo, as 9 casas possíveis. Os três povos são:
+- taipa com palha, símbolo do sol e roupa turquesa;
+- pedra com telha, símbolo da lua e roupa lilás;
+- madeira com tábuas, símbolo da árvore e roupa rosa.
+
+| Grupo | Variações | Arquivos | Cores |
+|---|---|---|---|
+| Paredes | `taipa`, `pedra`, `madeira` | `casa_parede_<v>`, `templo_parede_<v>` | barro 10/9, pedra 12/11/8, tábuas 10/9/8 |
+| Telhados | `palha`, `telha`, `tabuas` | `casa_telhado_<v>`, `templo_telhado_<v>` | palha 16/10/9, telha de barro 20/24/23, tábuas 10/9/8 |
+| Símbolos | `sol`, `lua`, `arvore` | `templo_simbolo_<v>` | sol 22/21/31, lua 31/0/19, árvore 15/14/13 |
+
+As três variações também mudam de forma, além da cor:
+- **Telhados:** palha média, telha baixa com cumeeira, tábuas alta e íngreme com as pontas cruzadas.
+- **Paredes:** reboco de barro, fiadas de pedra, tábuas na horizontal.
+
+A combinação taipa com palha e sol é exatamente a `casa_taipa` e o `templo` do estágio 2.
+
+## 10. Camadas do motor (`montagem/`)
 
 | Arquivo | O que é |
 |---|---|
