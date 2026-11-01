@@ -122,7 +122,7 @@ func _montar_botoes() -> void:
 	else:
 		lista.append({"id": "ritmo", "icone": ritmo, "selecionado": false})
 	lista.append({"id": "cronica", "icone": "cronica", "selecionado": _cronica.visible})
-	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo != "fim"})
+	lista.append({"id": "estante", "icone": "estante", "selecionado": _estante.visible and _estante.modo not in ["fim", "boas_vindas"]})
 	lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
 	var antes := botoes.size()
@@ -197,7 +197,7 @@ func _apertar(id: String) -> void:
 
 
 func alternar_estante() -> void:
-	if _estante.visible and _estante.modo != "fim":
+	if _estante.visible and _estante.modo not in ["fim", "boas_vindas"]:
 		_estante.fechar()
 	else:
 		if _cronica.visible:
@@ -271,7 +271,7 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			queue_redraw()
 		if _cronica.visible:
 			return true
-		if _estante.visible and _estante.modo != "fim" and not na_alca and pos.y >= faixa:
+		if _estante.visible and _estante.modo not in ["fim", "boas_vindas"] and not na_alca and pos.y >= faixa:
 			_estante.tratar(event, pos - Vector2(0, faixa))
 			return true
 		if not na_alca and pos.y >= faixa:

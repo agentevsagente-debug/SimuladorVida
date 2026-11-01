@@ -2,6 +2,10 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Dica da primeira execução
+
+Na primeira vez que o jogo abre, um pergaminho sobre o mundo explica três coisas: o gesto do poder (escolher na alça e segurar sobre o mundo; o botão direito cancela), como esconder (tecla H ou o último botão da alça) e onde fica o ícone para voltar (a bandeja do Windows, junto ao relógio, ou a seta dos ícones ocultos). A dica some com um clique ou sozinha em 40 s e não volta mais: a marca fica em `user://dicas.cfg`, separada do `moldura.cfg`. Os testes com `--sem-config` não a mostram; `--primeira-vez` força a dica (`capturas/primeira-vez.png`). Conferido: depois de uma execução normal, o `dicas.cfg` fica com `primeira_vez=true`.
+
 ## Fase 2 na tela (API v6 a v10)
 
 **Culturas nas construções.** Casas e templos se montam em camadas: a parede, o telhado e o símbolo da `aparencia` de cada construção (API v10; antes, a do povo). Os estágios 3 a 6 usam as camadas `_parede`, `_telhado_<t>`, `_base` e `_simbolo_<s>`, e o templo da escrita usa o telhado e o símbolo do templo de colunas, como pede a arte. Estágio 1, celeiro, forja, moinho, muralha e barco não têm variação e saem inteiros. A roupa de todo o povo é a cor da cultura: turquesa, rosa ou lilás. Captura: `capturas/fase2-culturas.png`.

@@ -17,6 +17,8 @@ extends Node2D
 ##   --escala=N                           escala inteira de 2 a 4
 ##   --pos=X,Y                            posição da janela na tela
 ##   --sem-config                         ignora e não grava a escala e a posição guardadas
+##                                        (e não mostra a dica da primeira execução)
+##   --primeira-vez                       mostra a dica da primeira execução (testes)
 ##   --duracao=S                          fecha sozinho depois de S segundos
 ##   --sem-foco                           a janela nunca rouba o foco do teclado
 ##   --atalho-global[=TECLA]              liga Ctrl+Alt+TECLA (padrão: H) com
@@ -40,6 +42,9 @@ const ESCALA_MAX := 4
 const FPS_VISIVEL := 30
 const FPS_ESCONDIDA := 4  # o mundo anda 1 passo a cada 112 s; não precisa de mais
 const ARQUIVO_CONFIG := "user://moldura.cfg"
+## Marca que a dica da primeira execução já apareceu (à parte, para o
+## _guardar_config não apagar).
+const ARQUIVO_DICAS := "user://dicas.cfg"
 
 var escala := 2
 var escondida := false
@@ -130,6 +135,7 @@ func _ready() -> void:
 			(func():
 				interface._abandonar()
 				interface.alternar_estante()).call_deferred()
+	_dica_primeira_vez(args.has("primeira-vez"))
 	if args.has("atalho-global"):
 		_iniciar_atalho_global(args["atalho-global"] if args["atalho-global"] != "" else "H")
 	if args.get("cenario", "") == "escondido":
@@ -310,6 +316,19 @@ func _aplicar_passagem_mouse() -> void:
 	if alca != _largura_alca:
 		_largura_alca = alca
 		_log("alca largura=%d" % alca)
+
+
+## Na primeira vez que o jogo abre: onde fica o ícone, o gesto e como esconder.
+## Aparece uma vez só (guardado em user://dicas.cfg).
+func _dica_primeira_vez(forcar: bool) -> void:
+	var dicas := ConfigFile.new()
+	dicas.load(ARQUIVO_DICAS)
+	if not forcar and (not _usar_config or dicas.get_value("dicas", "primeira_vez", false)):
+		return
+	interface._estante.boas_vindas.call_deferred()
+	if _usar_config:
+		dicas.set_value("dicas", "primeira_vez", true)
+		dicas.save(ARQUIVO_DICAS)
 
 
 func _guardar_config() -> void:
