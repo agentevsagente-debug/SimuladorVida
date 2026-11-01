@@ -74,5 +74,21 @@
     "nitidez 4x":  {
                        "ok":  true,
                        "detalhe":  "100,00% dos blocos 4x4 de cor unica"
-                   }
+                   },
+    "exportar":  {
+                     "ok":  true,
+                     "detalhe":  "105 MB"
+                 },
+    "executavel abre":  {
+                            "ok":  true,
+                            "detalhe":  "960x356"
+                        },
+    "executavel passagem":  {
+                                "ok":  true,
+                                "detalhe":  ""
+                            },
+    "executavel sem erros":  {
+                                 "ok":  true,
+                                 "detalhe":  "0 erros no log"
+                             }
 }

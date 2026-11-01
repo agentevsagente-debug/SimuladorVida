@@ -328,9 +328,14 @@ func _aplicar_passagem_mouse() -> void:
 	var k := escala
 	var alca: int = interface.largura()
 	var relogio: Rect2i = interface.RELOGIO
-	var poligono := PackedVector2Array([
-		Vector2(0, 0),
-		Vector2(alca * k, 0),
+	var caixa: Rect2 = interface.caixa_na_faixa  # a dica ou o aviso ao lado da alça, quando há
+	var poligono := PackedVector2Array([Vector2(0, 0)])
+	if caixa.has_area():
+		poligono.append_array([Vector2(caixa.end.x * k, 0), Vector2(caixa.end.x * k, caixa.end.y * k),
+			Vector2(alca * k, caixa.end.y * k)])
+	else:
+		poligono.append(Vector2(alca * k, 0))
+	poligono.append_array([
 		Vector2(alca * k, FAIXA * k),
 		Vector2(relogio.position.x * k, FAIXA * k),  # o relógio, no canto de cima à direita
 		Vector2(relogio.position.x * k, 0),

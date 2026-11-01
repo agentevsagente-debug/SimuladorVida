@@ -2,6 +2,42 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O executável (builds/Simulador de vida.exe)
+
+**Exportação:** fiz com `--export-release "Windows"` a partir desta branch, que é a main com as entregas da B. O executável tem 105 MB.
+
+**verificar.ps1:** os 23 itens passaram (19 antigos e 4 novos). O item 8 novo:
+- gera o executável;
+- devolve ao git os `.import` em que a exportação só trocou as quebras de linha;
+- abre o executável por 15 s e confere a janela de 960 × 356, a passagem do mouse na faixa e o log sem erros.
+
+Para pular o item 8, use `-SemExportar`.
+
+**Teste à mão, com a configuração de verdade:**
+
+| O que | Resultado |
+|---|---|
+| Janela transparente | OK |
+| Passagem do mouse pela faixa | OK |
+| Escala pela roda (2x para 3x) | OK |
+| Atalho global (Ctrl+Alt+H esconde e mostra) | OK |
+| Dica da pessoa | OK |
+| Salvar ao fechar e retomar ao abrir | OK, com a escala e a posição guardadas |
+| Erros nos dois logs | nenhum |
+
+A pasta de dados do usuário voltou ao que era: não havia mundo nem `moldura.cfg`.
+
+**Defeito achado e corrigido:** as dicas da primeira abertura e os avisos ao lado da alça nunca apareciam na janela de verdade.
+- **Causa:** no Windows, a passagem do mouse recorta também o desenho, e a caixa ficava na faixa transparente. Só a captura interna a mostrava.
+- **Correção:** a interface expõe `caixa_na_faixa`, e a moldura a inclui na região da janela enquanto ela está na tela. Enquanto isso, a caixa recebe o mouse.
+
+**Memória:** medida com `medir.ps1 -Cenario normal -Executavel` (a opção `-Executavel` é nova), 10 min em 1x.
+
+| | CPU média | Gerenciador, média | Gerenciador, máximo | Conjunto de trabalho | Privada, máximo |
+|---|---|---|---|---|---|
+| Executável | 0,189% | 106,7 MB | 107,2 MB | 199 MB | 212 MB |
+| Pelo editor (medição final) | 0,192% | 122,7 MB | 124,6 MB | 226 MB | 230 MB |
+
 ## A dica sobre a pessoa
 
 Com `mundo.dica(id)` da A, a dica de pessoa mostra:

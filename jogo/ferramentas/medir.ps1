@@ -1,5 +1,7 @@
 ﻿# Mede CPU e memória da moldura num cenário.
-# Uso: medir.ps1 -Cenario normal|rapido|rapido2|escondido|avancado -Segundos 600
+# Uso: medir.ps1 -Cenario normal|rapido|rapido2|escondido|avancado -Segundos 600 [-Executavel]
+#   -Executavel: mede builds/Simulador de vida.exe (exportado) em vez do Godot com o projeto;
+#   os arquivos saem com "-exe" no nome.
 #   normal: visível, ritmo normal (1 hora de jogo a cada 112,5 s)
 #   rapido: visível, ritmo 10x (1 hora a cada 11,25 s)
 #   rapido2: visível, ritmo 50x (1 hora a cada 2,25 s: gente andando o tempo todo)
@@ -20,7 +22,8 @@ param(
     [int]$Segundos = 600,
     [int]$Intervalo = 5,
     [int]$Aquecimento = 10,
-    [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe"
+    [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe",
+    [switch]$Executavel
 )
 $ErrorActionPreference = 'Stop'
 $projeto = Split-Path $PSScriptRoot -Parent
@@ -28,9 +31,12 @@ $saida = Join-Path $projeto 'medicoes'
 New-Item -ItemType Directory -Force $saida | Out-Null
 $nucleos = [Environment]::ProcessorCount
 
-$p = Start-Process -FilePath $Godot -PassThru -ArgumentList @(
-    '--path', "`"$projeto`"", '--', '--sem-config', '--semente=7', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
-    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } default { "--ritmo=$Cenario" } }))
+$programa = if ($Executavel) { Join-Path (Split-Path $projeto -Parent) 'builds\Simulador de vida.exe' } else { $Godot }
+$caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
+$nome = if ($Executavel) { "$Cenario-exe" } else { $Cenario }
+$p = Start-Process -FilePath $programa -PassThru -ArgumentList @($caminho + @('--',
+    '--sem-config', '--semente=7', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
+    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } default { "--ritmo=$Cenario" } })))
 Start-Sleep -Seconds $Aquecimento
 
 $linhas = @()
@@ -56,7 +62,7 @@ while (((Get-Date) - $t0).TotalSeconds -lt $Segundos) {
 $total = ((Get-Date) - $t0).TotalSeconds
 Stop-Process -Id $p.Id -ErrorAction SilentlyContinue
 
-$linhas | Export-Csv -Path (Join-Path $saida "$Cenario.csv") -NoTypeInformation -Encoding utf8
+$linhas | Export-Csv -Path (Join-Path $saida "$nome.csv") -NoTypeInformation -Encoding utf8
 $resumo = [pscustomobject]@{
     cenario             = $Cenario
     duracao_s           = [math]::Round($total)
@@ -70,5 +76,5 @@ $resumo = [pscustomobject]@{
     gerenciador_media_mb = [math]::Round(($linhas | Measure-Object gerenciador_mb -Average).Average, 1)
     gerenciador_max_mb  = ($linhas | Measure-Object gerenciador_mb -Maximum).Maximum
 }
-$resumo | ConvertTo-Json | Set-Content (Join-Path $saida "$Cenario.json") -Encoding utf8
+$resumo | ConvertTo-Json | Set-Content (Join-Path $saida "$nome.json") -Encoding utf8
 $resumo
