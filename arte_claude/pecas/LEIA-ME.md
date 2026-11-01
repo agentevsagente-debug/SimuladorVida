@@ -459,7 +459,7 @@ As amostras são `amostra_tela_estante_4x.png` (duas prateleiras com 12 eras) e 
 
 ## 17. Vida ambiente (`criaturas/`)
 
-São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos, que já são escuros. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
+São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. São pequenas, animadas e olham para a direita; para o outro lado, o motor espelha. A base é a última linha: os pés de quem está no chão, ou o centro de quem voa. Elas usam a tabela `noite`, menos os morcegos e a coruja, que já vêm em tons de noite. `amostra_criaturas_4x.png` mostra todas sobre o dia, o entardecer e a noite.
 
 | Folha | Quadro | Quadros | Estação | Horário | Onde e como |
 |---|---|---|---|---|---|
@@ -472,8 +472,10 @@ São criaturas que não fazem parte da simulação: só dão vida ao cotidiano. 
 | `cervo_4q` | 10 × 8 | 4 | todas menos inverno fundo | manhã (até 9h) | na borda da floresta do morro |
 | `corvo_voar_4q` | 6 × 4 | 4 | todas | dia | sobre campos de batalha e onde há mortos |
 | `corvo_pousado_2q` | 5 × 4 | 2 | todas | dia | pousado perto dos mortos e das ruínas |
-| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas |
+| `morcego_4q` | 6 × 4 | 4 | primavera, verão, outono | entardecer e começo da noite | sai da floresta e das ruínas; escuro, lê contra o céu do entardecer. De madrugada, use o `morcego_noite_4q`. |
 | `bando_migrando_4q` | 24 × 8 | 4 | inverno (e fim do outono) | dia | atravessa o céu alto de um lado a outro |
+| `coruja_pousada_4q` | 7 × 8 | 4 | todas | noite e madrugada | pousada num galho (o galho vem na peça: a linha 7 é o galho, ponha-a sobre a copa de uma árvore, a ponta de um pinheiro ou um telhado). Quadros: olhando, piscando, olhando para o lado, olhando. Fique no quadro 0 por 2 a 4 s e passe pelo 1 (piscar) ou pelo 2 (virar) por uns 0,3 s. Os olhos amarelos são o que se lê no escuro. |
+| `morcego_noite_4q` | 8 × 5 | 4 | primavera, verão, outono | noite e madrugada | maior que o do entardecer, com a borda das asas clara (a luz da lua) e olhos vermelhos, para ler sobre o céu e as árvores escuras. Voa em zigue-zague perto das árvores e da fogueira, 1 ou 2 por vez, a cada poucos minutos de 1x. |
 
 O `bando_migrando_4q` é uma formação de 5 pássaros em V, por isso passa do limite de 12 × 8. Cada pássaro tem 3 × 2. Os bandos pequenos de verão saem de vários `passaro_voar_4q`, com os quadros defasados.
 
