@@ -395,11 +395,12 @@ func _cena_guerra(e, id: String) -> void:
 	var dir := 1.0 if cb["fogo"] >= ca["fogo"] else -1.0
 	var bx: float = clampf(cb["fogo"] - dir * 28.0, Cotidiano.MARGEM + 10.0, Cotidiano.LARGURA_MUNDO - 10.0)
 	# O ataque da virada do dia vira a batalha da manhã (7h30 às 12h; a luta das 9h às 10h30). Um
-	# ataque no meio do dia (forçado por um cenário, ou depois da montagem) começa 2 h depois dele:
-	# é o tempo de a rotina ser refeita na thread e entrar. Depois das 18h, não há batalha no dia.
+	# ataque no meio do dia (forçado por um cenário, ou depois da montagem) começa meia hora depois
+	# dele: a rotina é refeita na hora, sem esperar a thread (mundo._ataque_sem_cena). Depois das
+	# 18h, não há batalha no dia.
 	var t0 := 450.0
 	if e.hora >= 6:
-		t0 = (e.hora + 2) * 60.0
+		t0 = e.hora * 60.0 + 30.0
 		if t0 > 1080.0:
 			return
 	var cena := _registrar_cena(id, "guerra", a, e, t0, t0 + 270.0, [], bx, {"outro_grupo": b.id, "x_combate": bx,

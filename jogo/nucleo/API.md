@@ -101,7 +101,7 @@ Guerras em andamento que já têm nome. Uma briga só vira guerra na segunda bat
 
 ### `construcoes() -> Array[Dictionary]`
 
-`{tipo, x, largura, grupo, estagio, aparencia, ruina, fileira}`, com `x` no centro da peça. `fileira` é 0 (a fileira da frente) ou 1 (a fileira de trás: casas que não couberam na frente; ficam atrás das peças da frente, podendo cruzar com elas em x, e a apresentação as desenha mais altas e por trás). `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `aparencia` é a cultura do povo, a mesma de `grupos_visiveis()`: `{parede, telhado, simbolo, roupa}`, para escolher as variações de `arte_claude/pecas/culturas/`. `ruina` é sempre false aqui. Tipos:
+`{tipo, x, largura, grupo, estagio, aparencia, ruina, fileira}`, com `x` no centro da peça. `fileira` é 0 (a fileira da frente) ou 1 (a fileira de trás: casas que não couberam na frente; ficam atrás das peças da frente, podendo cruzar com elas em x, e a apresentação as desenha mais altas e por trás). Na fileira de trás, as casas também se cobrem umas às outras pela metade (`Cotidiano.ATRAS_OCUPA`: cada uma ocupa metade da largura no espaçamento): desenhe-as da esquerda para a direita, ou da mais perto do centro para fora, e a sobreposição fica natural. `estagio` é o estágio do povo e diz qual arte usar (a casa do estágio 3 é `casa_pedra`, a do 4 é `casa_enxaimel`, e assim por diante). `aparencia` é a cultura do povo, a mesma de `grupos_visiveis()`: `{parede, telhado, simbolo, roupa}`, para escolher as variações de `arte_claude/pecas/culturas/`. `ruina` é sempre false aqui. Tipos:
 
 | Tipo | Largura | Quando existe |
 |---|---|---|
@@ -293,7 +293,7 @@ As cenas que acontecem em algum momento desta hora: `{id, tipo, grupo, evento, i
 | `nascimento` | no dia do nascimento, das 8h às 12h | a mãe `cuidar` em casa, visitas conversando em volta | `mae`, `crianca` |
 | `casamento`, `festa` | à noite, das 19h às 21h; a festa é no aniversário da chuva, em povos com esse costume | dança em volta do fogo | |
 | `migracao` | no dia de uma separação ou mudança, a partir das 6h30 | fila de gente com carga, da aldeia antiga até a nova | `de`, `para` |
-| `guerra` | no dia de um ataque, das 7h30 às 12h (o ataque da virada do dia). Um ataque registrado depois das 6h (forçado no meio do dia) vira a cena 2 h depois dele, que é o tempo de a rotina ser refeita: começa em hora + 2 e dura 4h30 (luta de hora + 3h30 a hora + 5h); depois das 18h, não há cena no dia | marcha, as duas linhas frente a frente com `lutar` (1h30), e a volta | `outro_grupo`, `x_combate`, `mortos` |
+| `guerra` | no dia de um ataque, das 7h30 às 12h (o ataque da virada do dia). Um ataque registrado depois das 6h (forçado no meio do dia) vira a cena na mesma hora: a primeira consulta depois dele (ou o fim do passo) refaz a rotina na linha principal, sem esperar a thread (uma vez por ataque, 100 a 250 ms). A cena começa meia hora depois do ataque e dura 4h30 (luta de hora + 2h a hora + 3h30); depois das 18h, não há cena no dia | marcha, as duas linhas frente a frente com `lutar` (1h30), e a volta | `outro_grupo`, `x_combate`, `mortos` |
 | `corvos` | o dia seguinte a um ataque com mortos | sem participantes: corvos sobre o campo de luta | `mortos` |
 | `prece` | toda tarde (18h às 18h50) enquanto o povo tem uma prece aberta há 3 dias ou mais | os que creem ajoelhados no altar | |
 | `colheita` | os últimos 4 dias do outono, estágio 2 em diante | todo adulto na roça, trabalhando ao longo dela | |
@@ -530,6 +530,7 @@ Persistencia.salvar_async(mundo)                 # grava numa thread, sem travar
 Persistencia.salvamento_terminou(mundo)          # -> bool
 Persistencia.terminar_salvamento(mundo)          # -> bool; espera a gravação e diz se deu certo
 Persistencia.salvar(mundo)                       # -> bool; grava agora, na linha principal (use ao fechar)
+mundo.encerrar()                                 # -> bool; ao fechar, depois do último salvar: espera todas as threads
 Persistencia.existe()                            # -> bool
 var mundo = Persistencia.carregar()              # -> mundo, ou null se não há arquivo válido
 var r = Persistencia.carregar_e_avancar()        # -> {mundo, ausencia}, ou null
@@ -541,6 +542,7 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`), 
 - Enquanto a thread grava, o mundo não pode mudar. Por isso `avancar_hora()`, `usar_poder()`, `criar_povo()` e `abandonar()` esperam por ela. No jogo, a gravação acaba muito antes do passo seguinte.
 - As consultas continuam valendo durante a gravação.
 - O resultado fica em `mundo.ultimo_salvamento_ok` quando a gravação termina; `terminar_salvamento()` espera e devolve esse resultado.
+- **Ao fechar o jogo:** chame `mundo.encerrar()` depois do último `salvar`. Ele espera todas as threads do núcleo (a montagem da rotina, a gravação de `salvar_async` e o descarte das rotinas velhas) e devolve o resultado da última gravação. As tarefas seguram o mundo vivo; se o jogo fecha com uma delas rodando, o motor pode desmontar o WorkerThreadPool no meio dela. Depois de `encerrar()`, o mundo continua usável.
 - Chamar `salvar_async` ou `salvar` com outra gravação em andamento espera a anterior.
 - Para o fechamento do jogo, `salvar()` continua síncrono: grava tudo antes de voltar (cerca de 360 ms com o mundo grande).
 - Uma gravação interrompida no meio (o processo morto, falta de luz) nunca deixa o mundo ilegível: o arquivo novo só toma o lugar do antigo depois de gravado e conferido, e as cópias de segurança (abaixo) cobrem o resto. O teste mata o processo no meio de gravações e carrega de novo.
@@ -620,6 +622,7 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 |---|---|
 | `regressao.gd` | Primeiro, mede o desempenho com a população máxima (veja `desempenho.gd`): nenhum passo acima de 5 ms e nenhuma consulta acima de 2 ms. Depois, roda as sementes 1 a 5 e o cenário de intervenções por 100 anos. Cada uma roda duas vezes e precisa dar a mesma crônica. Também salva e carrega a semente 1 no meio. Grava as crônicas em `cronicas/` e sai com código 1 se algo falhar. |
 | `testar_api.gd` | Testa esta API: posições, ninguém na água, poderes e graus, linhagem, crônica. |
+| `testar_fim.gd` | O fim do mundo pela simulação: o último morre de velho (ou de fome) e o fim vem na mesma hora, com o povo em ruína antes, `os_ultimos` e `fim_do_mundo` uma vez e o livro com resumo e epitáfio; o último morto às 14h tem o fim às 15h; o mundo vazio anda 2 anos com as consultas vazias, a crônica viva, a ausência, salvar e carregar, os poderes recusando e `criar_povo` abrindo a era 2. |
 | `testar_robustez.gd` | O mundo salvo estragado de 17 jeitos (cortado em 4 pontos, vazio, só o cabeçalho, lixo binário, de versão mais nova, 1 a 8 bytes trocados, apagado), as cópias estragadas, o mundo salvo antes da soma; o relógio para trás e pulando anos (de 1970 a 2106); o disco cheio ao salvar e a troca interrompida. Em todos, o mundo carrega (com `recuperado_de` quando não veio do principal), roda e a ausência fica entre 0 e 1 ano. |
 | `testar_persistencia.gd` | Testa salvar, carregar e a ausência; e as cópias de segurança, estragando de propósito o mundo salvo (cortado, vazio, com lixo, mexido), a estante (índice e livros) e o arquivo dos antigos (cortado, ausente; abandonar apaga ele também). |
 | `testar_antigos.gd` | O arquivo dos antigos não muda o mundo: a mesma semente sem arquivar, arquivando, e salva e carregada a cada 50 anos (também entre as fatias da virada), comparando crônica, sorteio, passo, eventos, população e livros (`-- <semente> <anos> [nenhum\|caprichoso] [ano_do_fim]`). |
@@ -654,6 +657,8 @@ Todas rodam sem gráfico: `ferramentas_sim/godot.sh res://ferramentas_sim/<scrip
 
 **A agricultura (estágio 2):** em 60 mundos, mediana de 25 anos, 90% até 38 e no máximo 50 (veja `ferramentas_sim/equilibrio/LEIAME.md`). Depois de 25 anos no estágio 1 (`Mundo.ENSINO_DEMORA`), descobrir e ensinar a plantar apressam (a cada década a mais, a chance de antes outra vez); quem já soube e esqueceu redescobre mais depressa; e num povo com menos de 4 adultos basta que todos saibam. O saber ainda se perde quando morrem os que sabiam. Quanto tempo leva: veja `jogo/ferramentas_sim/sondagem/estagios.txt` (10 mundos de 300 anos). Depois de 40 anos no mesmo estágio, a necessidade ensina: a chance de descobrir o próximo saber cresce a cada década a mais, e qualquer adulto pode descobrir, não só os engenhosos e curiosos. Isso encurta os platôs longos (que chegavam a 158 anos, ou dois meses reais sem mudar de estágio) sem mexer no tempo típico. Na tabela atual (`estagios.txt`, refeita depois do limite da terra e do esquecimento do deus ausente), nenhum povo fica mais de 101 anos na agricultura. O mundo da semente 2 aparece com 214 anos no estágio 2 porque ficou vazio e recomeçou no ano 146 com um povo novo, que levou ~60 anos para chegar à pedra.
 
+**O tempo da escrita (estágio 5):** com a escrita, o ensino corre 3 vezes mais depressa, e os canais vinham de 1 a 28 anos depois dela (mediana de 16 em 10 sementes). Agora um povo só passa ao estágio 6 depois de `Mundo.ESTAGIO5_MINIMO` (25) anos no 5 (o povo que se separou já no 5 conta desde a separação). O saber dos canais pode se espalhar antes; a virada espera. Com 22, em 10 sementes, o estágio 5 do mundo durou de 21 a 49 anos.
+
 O saber de cada estágio vive nas pessoas, que o ensinam devagar. Quando morre o último que sabia, o povo regride um estágio, a não ser que a escrita o salve. O sonho do deus dá a alguém o saber do próximo estágio, que pode servir à paz ou à guerra.
 
 ## A crônica do próprio povo
@@ -670,6 +675,7 @@ Um povo que chega à escrita passa a contar a própria história, ano a ano, do 
 ## Fim do mundo, eras e estante
 
 - **Extinção:** quando não resta ninguém, o mundo emite `fim_do_mundo` e fecha a crônica da era como livro, em `mundo.livros`.
+  - Isso acontece no fim do passo em que morre o último (de velhice na virada do dia, de fome ou frio às 19h, de um raio a qualquer hora), não na virada do dia seguinte. No mesmo passo, antes do fim, os povos vazios viram ruína (`extincao_grupo`): `grupos_visiveis()` já vem vazio.
   - O mundo vazio continua: o clima segue, a natureza retoma o espaço e as ruínas envelhecem.
   - `usar_poder` devolve `ok: false`.
 - **Povo novo:** `mundo.criar_povo(x) -> {ok, grupo, era}` só funciona com o mundo vazio.
