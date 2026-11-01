@@ -476,7 +476,11 @@ func _criar_bandeja() -> void:
 	if not DisplayServer.has_feature(DisplayServer.FEATURE_STATUS_INDICATOR):
 		return
 	_bandeja = StatusIndicator.new()
-	_bandeja.icon = load("res://arte/interface/icone_jogo_16.png")
+	# o ícone desenhado no tamanho da bandeja: 16 px em 100%, 24 em 150%, 32 em 200%
+	var escala_tela := DisplayServer.screen_get_dpi(DisplayServer.SCREEN_PRIMARY) / 96.0
+	var lado := 32 if escala_tela >= 1.75 else (24 if escala_tela >= 1.25 else 16)
+	_bandeja.icon = load("res://arte/interface/icone_jogo_%d.png" % lado)
+	_log("bandeja: dpi=%d ícone %d px" % [DisplayServer.screen_get_dpi(DisplayServer.SCREEN_PRIMARY), lado])
 	_bandeja.tooltip = "Simulador de vida: clique para mostrar ou esconder, botão direito para sair"
 	_bandeja.pressed.connect(_ao_clicar_bandeja)
 	add_child(_bandeja)
