@@ -45,7 +45,7 @@ const ACOES := {"construir": "acoes/construir_4q", "forjar": "acoes/forjar_4q", 
 	"remar": "acoes/remar_4q", "lutar": "acoes/lutar_4q", "dancar": "acoes/dancar_4q", "pescar": "acoes/pescar_4q"}
 ## Ações de caminhada com carga (acao -> folha).
 const CARGAS := {"lenha": "acoes/carregar_lenha_4q", "carregar_morto": "acoes/funeral_carregar_4q",
-	"carregar_caca": "acoes/carregar_caca_4q", "cacar": "acoes/cacar_espreitar_4q"}
+	"carregar_caca": "acoes/carregar_caca_4q", "cacar": "acoes/cacar_espreitar_forte_4q"}
 ## Detalhes da rotina (API v10, campo `detalhe`; arte, seção 20) com folha de 4
 ## quadros em laço. Sem folha própria, vale a da `acao`, como antes.
 ## detalhe -> [folha, largura do quadro]. As versões "de 1x" (seção 22 da arte)
@@ -53,18 +53,24 @@ const CARGAS := {"lenha": "acoes/carregar_lenha_4q", "carregar_morto": "acoes/fu
 const DETALHES := {"colher_arbusto": ["acoes/colher_arbusto_4q", 8], "cavar_raiz": ["acoes/cavar_raiz_4q", 8],
 	"catar_lenha": ["acoes/catar_lenha_forte_4q", 12], "buscar_agua": ["acoes/buscar_agua_forte_4q", 12],
 	"banho": ["acoes/banhar_4q", 8], "espantar": ["acoes/espantar_forte_4q", 12], "discutir": ["acoes/discutir_4q", 8],
-	"separar": ["acoes/conversar_falar_4q", 8], "arremessar": ["acoes/cacar_arremessar_4q", 8],
-	"bocejar": ["acoes/bocejar_4q", 8], "espreitar": ["acoes/cacar_espreitar_4q", 8]}
+	"separar": ["acoes/conversar_falar_4q", 8], "arremessar": ["acoes/cacar_arremessar_forte_4q", 12],
+	"bocejar": ["acoes/bocejar_4q", 8], "espreitar": ["acoes/cacar_espreitar_forte_4q", 12]}
 ## Detalhes andando: a carga ou a ferramenta da ida e da volta.
 const DETALHES_ANDANDO := {"carregar_cesto": "acoes/carregar_cesto_cabeca_forte_4q",
 	"carregar_cesto_cabeca": "acoes/carregar_cesto_cabeca_forte_4q", "levar_cesto": "acoes/andar_cesto_4q",
 	"carregar_agua": "acoes/carregar_agua_forte_4q", "carregar_feixe": "acoes/carregar_lenha_4q",
-	"caca_no_pau": "acoes/carregar_caca_forte_4q", "espreitar": "acoes/cacar_espreitar_4q"}
+	"caca_no_pau": "acoes/carregar_caca_forte_4q", "espreitar": "acoes/cacar_espreitar_forte_4q"}
+## Folhas andando com quadro de 12 px (as outras cargas têm 8).
+const LARGAS := ["acoes/cacar_espreitar_forte_4q"]
+## No arremesso (0..1 da etapa): até SOLTA ergue a lança (e segura o quadro 1),
+## de SOLTA a CRAVA ela voa; depois o caçador acompanha e o porco cambaleia.
+const SOLTA := 0.2
+const CRAVA := 0.3
 ## Folhas que têm a roupa dos estágios 3 a 6 em estagioN/, com o mesmo nome (arte, seção 25).
 const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_forte_4q", "espantar_forte_4q",
 	"tropecar_cair_forte_4q", "carregar_agua_forte_4q", "buscar_agua_forte_4q", "carregar_caca_forte_4q",
 	"crianca_pegapega_fugir_4q", "crianca_pegapega_pegar_4q", "crianca_ciranda_4q", "crianca_ciranda_costas_4q",
-	"cacar_apontar_2q", "cacar_comemorar_4q", "cacar_amarrar_4q"]
+	"cacar_apontar_2q", "cacar_comemorar_4q", "cacar_amarrar_4q", "cacar_espreitar_forte_4q", "cacar_arremessar_forte_4q"]
 
 var vista
 var sim
@@ -250,10 +256,9 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 			return ["acoes/crianca_pular_4q", 6, q, 3 if q in [1, 2] else 0]
 		return ["habitantes/crianca_andar_4q", 6, 0, 0]
 	if anda:
-		if DETALHES_ANDANDO.has(detalhe):
-			return [DETALHES_ANDANDO[detalhe], 8, int(fase * 5.0) % 4, 0]
-		if CARGAS.has(acao):
-			return [CARGAS[acao], 8, int(fase * 5.0) % 4, 0]
+		var carga: String = DETALHES_ANDANDO.get(detalhe, CARGAS.get(acao, ""))
+		if carga != "":
+			return [carga, 12 if carga in LARGAS else 8, int(fase * 5.0) % 4, 0]
 		if cena == "migracao":
 			return ["acoes/andar_trouxa_4q" if id % 2 else "acoes/andar_cesto_4q", 8, int(fase * 6.0) % 4, 0]
 		if cena == "guerra" and _porta_estandarte(id, t):
@@ -263,6 +268,11 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 		if idoso:
 			return ["habitantes/idoso_andar_4q", 8, int(fase * 4.0) % 4, 0]
 		return ["habitantes/adulto_b_andar_4q" if feminina else "habitantes/adulto_a_andar_4q", 8, int(fase * 6.0) % 4, 0]
+	if detalhe == "arremessar":  # no compasso da lança: ergue, segura, solta e acompanha
+		var e := _etapa_da_cena(t.cena)
+		if e.get("etapa", "") == "arremesso":
+			var pa: float = e.p
+			return [DETALHES[detalhe][0], 12, 0 if pa < 0.08 else 1 if pa < SOLTA else 2 if pa < CRAVA else 3, 0]
 	if DETALHES.has(detalhe):
 		return [DETALHES[detalhe][0], DETALHES[detalhe][1], q4, 0]
 	match detalhe:
@@ -310,8 +320,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 		"cacar":  # espreita parado e, de vez em quando, arremessa
 			var ciclo := fmod(fase, 6.0)
 			if ciclo < 2.0:
-				return ["acoes/cacar_arremessar_4q", 8, int(ciclo * 2.0), 0]
-			return ["acoes/cacar_espreitar_4q", 8, 0, 0]
+				return ["acoes/cacar_arremessar_forte_4q", 12, int(ciclo * 2.0), 0]
+			return ["acoes/cacar_espreitar_forte_4q", 12, 0, 0]
 		"colher":
 			if vista.perto_de_roca(_x[id]):
 				return ["estagio2/adulto_enxada_trabalhar_4q", 12, q4, 0]
@@ -494,21 +504,27 @@ func _etapa_da_cacada(c: Dictionary, h: float) -> Dictionary:
 	return {}
 
 
+## A etapa da caçada de uma cena (pelo id), ou {}.
+func _etapa_da_cena(cena: Dictionary) -> Dictionary:
+	if cena.get("tipo", "") != "cacada":
+		return {}
+	for c in sim.cenas:
+		if str(c.get("id", -1)) == str(cena.get("id", -2)):
+			return _etapa_da_cacada(c, sim.hora_continua())
+	return {}
+
+
 ## No abate, onde cada caçador fica: {x, espelho}, ou {} fora do abate. Quem
 ## amarra fica a 8 px do bicho; os outros, de pé com a lança, a 12 a 20 px.
 func _no_abate(t: Dictionary, id: int) -> Dictionary:
-	if t.cena.get("tipo", "") != "cacada" or t.get("detalhe", "") != "recolher_caca":
+	if t.get("detalhe", "") != "recolher_caca":
 		return {}
-	for c in sim.cenas:
-		if str(c.get("id", -1)) != str(t.cena.get("id", -2)):
-			continue
-		var e := _etapa_da_cacada(c, sim.hora_continua())
-		if e.get("etapa", "") != "abatido":
-			return {}
-		var lado: float = e.lado
-		var distancia := 8.0 if _menor_da_cena(t.cena) == id else 8.0 + 4.0 * (1 + posmod(id, 3))
-		return {"x": float(e.xb) - lado * distancia, "espelho": lado < 0.0}
-	return {}
+	var e := _etapa_da_cena(t.cena)
+	if e.get("etapa", "") != "abatido":
+		return {}
+	var lado: float = e.lado
+	var distancia := 8.0 if _menor_da_cena(t.cena) == id else 8.0 + 4.0 * (1 + posmod(id, 3))
+	return {"x": float(e.xb) - lado * distancia, "espelho": lado < 0.0}
 
 
 ## A caçada em sequência (API: `etapas`; arte, seção 24): o porco fuçando
@@ -527,14 +543,14 @@ func _cacada_em_etapas(c: Dictionary, h: float, relogio: float) -> void:
 		"saida", "espreita":  # fuçando, de costas para quem chega
 			_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, int(relogio * 3.0) % 4, lado < 0, fogo_b)
 		"arremesso":
-			if e.vazia:
-				_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
+			if e.vazia or p < CRAVA:  # fuçando até a lança chegar (e, se errou, assustado no lugar)
+				_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, 0 if e.vazia else int(relogio * 3.0) % 4, lado < 0, fogo_b)
 			else:  # a lança crava, ele cambaleia e tomba (desenhado 2 px à esquerda)
-				_bicho("criaturas/porco_atingido_4q", 12, xb - 7, chao_b, mini(int(p * 12.0), 3), lado < 0, fogo_b)
-			if p < 0.08:  # a lança voando, num arco raso, do caçador ao bicho
-				var q := p / 0.08
-				var lx := lerpf(float(e.xc), xb, q)
-				var lanca := _objeto("objetos/lanca_voando", 12, roundi(lx) - 6, chao_b - 8 - roundi(sin(q * PI) * 6.0), 0)
+				_bicho("criaturas/porco_atingido_4q", 12, xb - 7, chao_b, mini(int((p - CRAVA) * 12.0), 3), lado < 0, fogo_b)
+			if p >= SOLTA and p < CRAVA:  # a lança voando, num arco raso, da mão do caçador ao bicho
+				var q := (p - SOLTA) / (CRAVA - SOLTA)
+				var lx := lerpf(float(e.xc) + lado * 2.0, xb, q)
+				var lanca := _objeto("objetos/lanca_voando_forte", 14, roundi(lx) - 7, chao_b - 7 - roundi(sin(q * PI) * 6.0), 0)
 				lanca.espelho = lado < 0
 				objetos.append(lanca)
 		"abatido":  # o bicho caído em chão aberto, e o pau do outro lado dele

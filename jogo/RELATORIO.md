@@ -2,6 +2,15 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Auditoria 5 (tarde)
+
+| # | O que foi feito |
+|---|---|
+| **T1** | A caçada usa as peças fortes: `cacar_espreitar_forte_4q` (agachado com a lança de 2 px à frente) na espreita e na ida, e `cacar_arremessar_forte_4q` no arremesso, com a roupa do estágio (3 a 6) e a de inverno. O arremesso segue a lança: ergue (quadro 0), segura a lança erguida (quadro 1) por cerca de 1 s, solta (quadro 2) e acompanha (quadro 3). A `lanca_voando_forte` sai da mão em arco raso entre 20% e 30% da etapa, e o porco só cambaleia quando ela chega (antes, ele já caía no início do arremesso). |
+| **T4** | Pássaros pousados: até 4 ao mesmo tempo, um novo a cada 10 a 22 s de dia, 6 em cada 10 no alto dos telhados (contra o céu; os pontos saem da própria construção desenhada) e o resto no chão. Coelho de dia (8h30 às 17h), a cada 60 a 150 s: sai da borda de uma roça (sem roça, de uma ponta da vila), em chão aberto, e foge aos pulos para fora da vila. |
+
+Captura: `capturas/auditoria5-cacada-e-bichos.png`. Em cima, a caçada da semente 7 às 15h em 1x: a espreita com a lança, a lança erguida, a lança voando até o porco e o caçador acompanhando. Embaixo, o pássaro no telhado e o coelho subindo o morro no mundo de 40 anos. O T3 (a volta pela vila e a repartição no fogo) espera a entrega da A.
+
 ## Auditoria 3c (interface)
 
 | # | O que foi feito |

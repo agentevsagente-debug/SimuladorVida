@@ -122,6 +122,7 @@ var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela
 var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
 var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
 var chamines: Array = []     # pontos de onde sobe a fumaça das lareiras no inverno
+var telhados: Array = []     # pontos no alto das casas onde os pássaros pousam: Vector2(x, linha de cima)
 var _chamines_json := {}
 var _camera_aplicada := [-1, Vector2(-1, -1)]
 
@@ -522,6 +523,7 @@ func _montar_fixo() -> void:
 	var imagens := {}
 	rodas = []
 	chamines = []
+	telhados = []
 	var luz_todas := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var luz_madrugada := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var roca := Arte.imagem(Arte.da_estacao("estagio2/" + _fase_da_roca()) + ".png")
@@ -566,6 +568,11 @@ func _montar_fixo() -> void:
 				if aparencia.is_empty() and sim:
 					aparencia = sim.aparencia(int(o.get("grupo", -1)))
 				_colar_obra(terreno, cor, tag, imagens, Obras.camadas(o.tipo, int(o.get("estagio", 1)), aparencia), x)
+				if o.tipo == "cabana":
+					for dx in [-4, 0, 4]:
+						var topo := _topo_da_obra(tag, x + dx)
+						if topo > 0:
+							telhados.append(Vector2(x + dx, topo))
 				if o.tipo == "cabana" and int(o.get("estagio", 1)) >= 2:
 					_luz_e_chamine(o, aparencia, x, imagens, terreno, cor, tag, luz_todas, luz_madrugada)
 	if sim:
@@ -723,6 +730,16 @@ func _luz_e_chamine(o: Dictionary, aparencia: Dictionary, x: int, imagens: Dicti
 	var chamine := _imagem_obra(imagens, "luzes/chamine")
 	terreno.colar(cor, tag, chamine, canto + Vector2i(int(c["chamine_x"]), int(c["chamine_y"])), Arte.OBRA)
 	chamines.append(Vector2(canto) + Vector2(float(c["fumaca_x"]) + 4.0, float(c["fumaca_base_y"])))
+
+
+## A primeira linha de construção de cima para baixo na coluna x, ou -1.
+func _topo_da_obra(tag: Image, x: int) -> int:
+	if x < 0 or x >= LARGURA:
+		return -1
+	for y in _chao(x):
+		if roundi(tag.get_pixel(x, y).r * 255.0) == Arte.OBRA:
+			return y
+	return -1
 
 
 func _largura_da_peca(o: Dictionary) -> int:
