@@ -1,9 +1,11 @@
 // Troca de cores por horário, com as tabelas de arte/camadas/tabelas_luz.json.
 //
-// Todas as peças vêm nas cores de dia. O horário é uma mistura de dois estados
-// (A e B: 0 dia, 1 entardecer, 2 noite) com fração t; cada pixel escolhe A ou B
-// por pontilhado ordenado (Bayer 4 × 4), sem semitransparência. As regras de
-// cada plano seguem montagem/montar.py (noite) e alvo/cena.py (entardecer).
+// Todas as peças vêm nas cores de dia. O horário passa de um estado a outro
+// (A e B: 0 dia, 1 entardecer, 2 noite) com a fração t. No céu, como uma frente:
+// a noite desce do alto, a manhã sobe do horizonte, e só numa faixa de 2 linhas
+// na própria frente há pontilhado. Montanhas, chão e pessoas trocam inteiros no
+// meio da transição. Nunca há uma grade sobre a tela inteira. As regras de cada plano seguem montagem/montar.py
+// (noite) e alvo/cena.py (entardecer).
 shader_type canvas_item;
 
 // Linhas da textura de tabelas (32 colunas, uma por cor da paleta).
@@ -32,6 +34,8 @@ uniform sampler2D tabelas : filter_nearest, repeat_disable;
 uniform int estado_a = 0;
 uniform int estado_b = 0;
 uniform float t = 0.0;
+uniform bool descendo = true;   // a frente desce do alto (true) ou sobe do horizonte
+uniform bool frente_ativa = false;  // só o céu usa a frente; o resto troca inteiro no meio
 uniform sampler2D tex_b : filter_nearest, repeat_disable;
 uniform sampler2D etiquetas : filter_nearest, repeat_disable;  // 480 × 160, R = etiqueta
 uniform sampler2D superficie : filter_nearest, repeat_disable; // 480 × 1, R = y da superfície
@@ -108,7 +112,11 @@ int linha_de_luz(int n) {
 
 void fragment() {
 	ivec2 p = ivec2(floor(pos));
-	bool usa_b = bayer(p) < t;
+	// a frente: as linhas já alcançadas usam B; 2 linhas de pontilhado na borda
+	float frente = t * 164.0;
+	float y = descendo ? float(p.y) : 159.0 - float(p.y);
+	bool usa_b = frente_ativa ? t > 0.0 && (y < frente - 2.0 || (y < frente && bayer(p) < (frente - y) / 2.0))
+		: t >= 0.5;
 	int estado = usa_b ? estado_b : estado_a;
 	vec4 cor = texture(TEXTURE, UV);
 	if (plano == REFLEXO) {
@@ -171,6 +179,9 @@ void fragment() {
 			float px = float(p.x) + 0.5;
 			bool perto = abs(px - fogo) < abs(centro - fogo) || (px - fogo) * (centro - fogo) <= 0.0;
 			if (!perto) {
+				n -= 1;
+			}
+			if (info.a < 0.75) {  // segunda fileira da roda: meio passo atrás, mais escura
 				n -= 1;
 			}
 			c = trocar(c, linha_de_luz(n));
