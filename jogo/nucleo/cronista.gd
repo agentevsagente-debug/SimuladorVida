@@ -619,11 +619,31 @@ func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String =
 	if not subtitulo.is_empty():
 		linhas.append("*" + subtitulo + "*")
 		linhas.append("")
+	# O livro (com título e epílogo) tem um resumo no começo, capítulos por estágio, o índice de
+	# quem marcou a era e um epitáfio no fim. A crônica comum (sem título) é só a lista de anos.
+	var livro: bool = not titulo.is_empty() and com_epilogo
+	var capitulos: Array = _capitulos(ano_ini, ano_fim) if livro else []
+	if livro:
+		linhas.append("## Em resumo")
+		linhas.append("")
+		linhas.append(_resumo(ano_ini, ano_fim))
+		linhas.append("")
 	if com_prologo:
 		linhas.append(_prologo(ano_ini))
 		linhas.append("")
 	var quietos: Array = []
+	var cap := 0
 	for a in range(maxi(1, ano_ini), mini(ano_fim, ultimo_ano_escrito) + 1):
+		if cap < capitulos.size() and a >= capitulos[cap][0]:
+			if not quietos.is_empty():
+				linhas.append(_anos_quietos(quietos))
+				linhas.append("")
+				quietos.clear()
+			var fim_cap: int = capitulos[cap + 1][0] - 1 if cap + 1 < capitulos.size() else mini(ano_fim, ultimo_ano_escrito)
+			linhas.append("## Capítulo %s: %s (%s)" % [ROMANOS[mini(cap, ROMANOS.size() - 1)], capitulos[cap][1],
+				("ano %d" % a) if fim_cap <= a else ("anos %d a %d" % [a, fim_cap])])
+			linhas.append("")
+			cap += 1
 		var paragrafo: String = anos_escritos.get(a, "")
 		if paragrafo.is_empty():
 			quietos.append(a)
@@ -641,8 +661,22 @@ func montar(ano_ini: int, ano_fim: int, titulo: String = "", subtitulo: String =
 	if not quietos.is_empty():
 		linhas.append(_anos_quietos(quietos))
 		linhas.append("")
+	if livro:
+		var quem := _quem_foi_quem(ano_ini, ano_fim)
+		if not quem.is_empty():
+			linhas.append("---")
+			linhas.append("")
+			linhas.append("## Quem foi quem")
+			linhas.append("")
+			linhas.append(quem)
+			linhas.append("")
 	if com_epilogo:
 		linhas.append(_epilogo())
+	if livro:
+		linhas.append("")
+		linhas.append("---")
+		linhas.append("")
+		linhas.append("*" + _epitafio(ano_ini, ano_fim) + "*")
 	return "
 ".join(linhas)
 
@@ -1195,7 +1229,7 @@ func _texto(e) -> String:
 				"Em {g}, contavam-se as luas e anotavam-se as estrelas. O céu deixou de assustar tanto."], v)
 		"ruinas_saber":
 			v["p"] = _p(e.participantes[0])
-			v["povo"] = G.termo(e.dados["povo"])
+			v["povo"] = _povo_das_ruinas(e)
 			var nomes_s := {"agricultura": "plantar", "pedra": "cortar pedra", "metal": "trabalhar o metal",
 				"escrita": "ler as marcas antigas", "engenharia": "fazer canais"}
 			v["s"] = G.termo(nomes_s.get(e.dados["saber"], e.dados["saber"]))
@@ -1408,7 +1442,7 @@ func _texto(e) -> String:
 			return _frase(["{n#Restava|Restavam} só {n} {n#pessoa|pessoas} no mundo inteiro.",
 				"O mundo encolheu até caber em volta de uma fogueira: {n#restava|restavam} {n} {n#pessoa|pessoas}."], v)
 		"fim_do_mundo":
-			return _frase(["Não restou ninguém. A Primeira Era terminou no ano %d, e o mundo ficou vazio, com o vento passando pelas cabanas." % e.ano], v)
+			return _frase(["%s terminou no ano %d, e o mundo ficou vazio, com o vento passando pelas cabanas." % [m.nome_da_era(int(e.dados.get("era", m.era))), e.ano]], v)
 	return ""
 
 
@@ -2235,8 +2269,27 @@ func _escolha(opcoes: Array) -> String:
 
 ## Um povo diante das ruínas de quem não existe mais: a explicação que deram (gigantes,
 ## castigo ou gente), contada pelo que eles viram ali.
+## Um povo de outra era, visto nas ruínas: ninguém sabe ao certo o nome dele, e o que ficou é
+## um nome que o tempo entortou (Demur vira Demor). Da mesma era, o nome certo.
+func _povo_das_ruinas(e) -> Dictionary:
+	var nome: String = e.dados.get("povo", "")
+	if not e.dados.get("antiga", false):
+		return G.termo(nome)
+	return G.termo(_nome_entortado(nome))
+
+
+static func _nome_entortado(nome: String) -> String:
+	var vogais := "aeiou"
+	for i in range(nome.length() - 1, 0, -1):
+		var c := nome[i].to_lower()
+		if vogais.contains(c):
+			var nova := "a" if c == "o" else "o"
+			return nome.substr(0, i) + nova + nome.substr(i + 1)
+	return nome + "o"
+
+
 func _mito_ruinas(e, v: Dictionary) -> String:
-	v["povo"] = G.termo(e.dados["povo"])
+	v["povo"] = _povo_das_ruinas(e)
 	var est: int = e.dados.get("estagio", 1)
 	var templo: String = "um templo de barro desabado" if est <= 2 else ("um templo de degraus tomado pelo mato" if est == 3 else (
 		"colunas de um templo caídas no mato" if est == 4 else "uma cúpula rachada, maior que qualquer casa"))
@@ -2503,6 +2556,228 @@ func _prologo(ano_ini: int = 1) -> String:
 	return G.preencher("No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. " +
 		"Então chegaram doze coletores, uma única família: {avo} e {avoa}, os três filhos com quem tinham casado, e os netos. " +
 		"Acamparam na floresta e se chamavam {g}. Não tinham vila, nem plantação, nem deus.", v)
+
+
+const ROMANOS := ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+const NOMES_CAPITULO := {1: "Os coletores", 2: "As roças", 3: "As casas de pedra", 4: "O tempo do metal", 5: "A escrita",
+	6: "Os canais e os moinhos"}
+
+
+## Os eventos de um tipo no período (os arquivados ficam de fora: o livro fecha logo no fim da
+## era, e os da era que importam ao livro são lembrados pelo mundo).
+func _no_periodo(tipo: String, ano_ini: int, ano_fim: int) -> Array:
+	return _do_tipo(tipo).filter(func(e): return e.ano >= ano_ini and e.ano <= ano_fim)
+
+
+## Os capítulos da era: [ano em que começa, nome]. Um por estágio que o povo mais adiantado
+## alcança (o primeiro, "Os coletores", ou "Sobre as ruínas" numa era nova), e "Os últimos"
+## quando o mundo acaba (do aviso de que restam poucos).
+func _capitulos(ano_ini: int, ano_fim: int) -> Array:
+	var r: Array = [[ano_ini, "Sobre as ruínas" if ano_ini > 1 else NOMES_CAPITULO[1]]]
+	var vistos := {1: true}
+	var marcos: Array = []
+	for e in _no_periodo("agricultura", ano_ini, ano_fim):
+		marcos.append([e.ano, 2])
+	for e in _no_periodo("estagio", ano_ini, ano_fim):
+		marcos.append([e.ano, int(e.dados.get("estagio", 0))])
+	marcos.sort_custom(func(x, y): return x[0] < y[0] or (x[0] == y[0] and x[1] < y[1]))
+	for mk in marcos:
+		if vistos.has(mk[1]) or not NOMES_CAPITULO.has(mk[1]):
+			continue
+		vistos[mk[1]] = true
+		if mk[0] == r[-1][0]:
+			r[-1] = [mk[0], NOMES_CAPITULO[mk[1]]]
+		else:
+			r.append([mk[0], NOMES_CAPITULO[mk[1]]])
+	var ultimos := _no_periodo("os_ultimos", ano_ini, ano_fim)
+	if not _no_periodo("fim_do_mundo", ano_ini, ano_fim).is_empty() and not ultimos.is_empty() and ultimos[0].ano > r[-1][0]:
+		r.append([ultimos[0].ano, "Os últimos"])
+	return r
+
+
+## O título de um livro: o nome da era e um epíteto ("A Primeira Era: de Teil ao último de Suem").
+func titulo_do_livro(nome_era: String, ano_ini: int, ano_fim: int, extincao: bool) -> String:
+	var primeiro := ""
+	for e in _do_tipo("inicio"):
+		if e.ano >= ano_ini and e.grupo >= 0:
+			primeiro = m.grupos[e.grupo].nome
+			break
+	if primeiro.is_empty():
+		return nome_era
+	if extincao:
+		var ultimo := ""
+		for e in _no_periodo("extincao_grupo", ano_ini, ano_fim):
+			ultimo = m.grupos[e.grupo].nome
+		return "%s: de %s ao último de %s" % [nome_era, primeiro, ultimo if not ultimo.is_empty() else primeiro]
+	var maior = null
+	for g in m.grupos_vivos():
+		if maior == null or g.membros.size() > maior.membros.size():
+			maior = g
+	if maior == null or maior.nome == primeiro:
+		return "%s: o tempo de %s" % [nome_era, primeiro]
+	return "%s: de %s a %s" % [nome_era, primeiro, maior.nome]
+
+
+## O resumo do livro, para quem o pega anos depois: quanto durou, quantos povos, até onde
+## chegaram, como chamaram o deus, a pior hora, as guerras, e como acabou.
+func _resumo(ano_ini: int, ano_fim: int) -> String:
+	var frases: PackedStringArray = []
+	var povos := {}
+	for tipo in ["inicio", "separacao", "fusao", "extincao_grupo", "conquista"]:
+		for e in _no_periodo(tipo, ano_ini, ano_fim):
+			if e.grupo >= 0:
+				povos[e.grupo] = true
+	for g in m.grupos_vivos():
+		povos[g.id] = true
+	var nomes: Array = povos.keys().map(func(id): return m.grupos[id].nome)
+	var anos := ano_fim - ano_ini + 1
+	frases.append("Esta crônica cobre %s anos, do ano %d ao %d, e %s: %s." % [str(anos), ano_ini, ano_fim,
+		"um povo" if nomes.size() == 1 else "%s povos" % G.extenso(nomes.size(), "m"),
+		G.lista(nomes) if nomes.size() <= 6 else ", ".join(PackedStringArray(nomes.slice(0, 6))) + " e outros"])
+	var est := 1
+	for e in _no_periodo("agricultura", ano_ini, ano_fim):
+		est = maxi(est, 2)
+	for e in _no_periodo("estagio", ano_ini, ano_fim):
+		est = maxi(est, int(e.dados.get("estagio", 0)))
+	frases.append({1: "Nunca passaram de coletores.", 2: "Aprenderam a plantar, mas não foram além das roças.",
+		3: "Chegaram às casas de pedra.", 4: "Chegaram a trabalhar o metal.", 5: "Chegaram a escrever.",
+		6: "Chegaram aos canais e aos moinhos."}[est])
+	var deuses := {}
+	for e in _no_periodo("crenca", ano_ini, ano_fim) + _no_periodo("deus_renomeado", ano_ini, ano_fim):
+		var n: String = e.dados.get("novo", e.dados.get("deus", ""))
+		if not n.is_empty():
+			deuses[n] = true
+	if deuses.is_empty():
+		frases.append("Nunca deram nome ao deus.")
+	else:
+		var ds: Array = deuses.keys().map(func(n): return "«%s»" % n)
+		frases.append("Chamaram o deus de %s." % G.lista(ds.slice(0, 5)) if ds.size() > 1 else "Chamaram o deus de %s." % ds[0])
+	var pior = null
+	for e in _no_periodo("fome_fim", ano_ini, ano_fim):
+		if pior == null or int(e.dados.get("mortos", 0)) > int(pior.dados.get("mortos", 0)):
+			pior = e
+	if pior != null and int(pior.dados.get("mortos", 0)) >= 5:
+		frases.append("A pior fome, no ano %d, levou %d vidas em %s." % [pior.ano, int(pior.dados["mortos"]), m.grupos[pior.grupo].nome])
+	var pestes := _no_periodo("peste", ano_ini, ano_fim)
+	if not pestes.is_empty():
+		frases.append("A peste veio no ano %d." % pestes[0].ano if pestes.size() == 1 else "A peste veio %s vezes." % G.extenso(pestes.size(), "f"))
+	var guerras := _no_periodo("guerra_inicio", ano_ini, ano_fim)
+	if not guerras.is_empty():
+		var nomes_g: Array = guerras.map(func(e): return e.dados.get("nome", "")).filter(func(n): return not n.is_empty())
+		frases.append(("Houve uma guerra com nome: a %s." % nomes_g[0]) if guerras.size() == 1 and not nomes_g.is_empty()
+			else "Houve %s guerras com nome%s." % [G.extenso(guerras.size(), "f"), (", entre elas a " + nomes_g[0]) if not nomes_g.is_empty() else ""])
+	if not _no_periodo("fim_do_mundo", ano_ini, ano_fim).is_empty():
+		frases.append("No fim, não restou ninguém.")
+	else:
+		var vivos := 0
+		for g in m.grupos_vivos():
+			vivos += g.membros.size()
+		frases.append("O deus foi embora no ano %d, com %d pessoas ainda vivas." % [ano_fim, vivos])
+	return " ".join(frases)
+
+
+## As pessoas que mais marcaram a era (os feitos), com o povo, os anos e o que fizeram.
+func _quem_foi_quem(ano_ini: int, ano_fim: int) -> String:
+	var ids := {}
+	var papeis := {}   # id -> [frases do que fez, na ordem de importância]
+	var ordem := ["crenca", "descoberta", "descoberta_tecnica", "profeta", "separacao", "sonho", "arquivo_salvou", "sacerdote",
+		"novo_lider", "expedicao", "culpado"]
+	for tipo in ordem:
+		for e in _no_periodo(tipo, ano_ini, ano_fim):
+			var pid: int = e.dados.get("fundador", -1) if tipo == "separacao" else (e.dados.get("chefe", -1) if tipo == "expedicao"
+				else (e.participantes[0] if not e.participantes.is_empty() else -1))
+			if pid < 0:
+				continue
+			ids[pid] = true
+			var f := _papel(tipo, e)
+			if not f.is_empty():
+				if not papeis.has(pid):
+					papeis[pid] = []
+				if not papeis[pid].has(f) and papeis[pid].size() < 2:
+					papeis[pid].append(f)
+	var gente: Array = []
+	for id in ids:
+		var p = m.pessoa(id)
+		if p != null and p.feitos >= 3:
+			gente.append(p)
+	gente.sort_custom(func(a, b): return a.feitos > b.feitos or (a.feitos == b.feitos and a.id < b.id))
+	var linhas: PackedStringArray = []
+	var ate: int = m.eventos.size()
+	for p in gente.slice(0, 8):
+		var g = m.grupo(p.grupo)
+		var anos := ""
+		if p.vivo:
+			anos = "ainda viv%s no fim" % ("o" if p.sexo == "m" else "a")
+		elif p.nasc_ano < ano_ini:
+			anos = "até o ano %d" % p.morte_ano
+		else:
+			anos = "anos %d a %d" % [p.nasc_ano, p.morte_ano]
+		var feitos: Array = papeis.get(p.id, [])
+		var texto := G.maiuscula("; ".join(PackedStringArray(feitos))) + "." if not feitos.is_empty() else _feito_de(p.id, ate)
+		linhas.append("- **%s**, de %s (%s). %s" % [p.nome, g.nome if g != null else "um povo esquecido", anos,
+			texto if not texto.is_empty() else "Marcou o seu povo."])
+	return "\n".join(linhas)
+
+
+## O que alguém fez, numa expressão curta, para o índice de personagens.
+func _papel(tipo: String, e) -> String:
+	var g: String = m.grupos[e.grupo].nome if e.grupo >= 0 and e.grupo < m.grupos.size() else ""
+	match tipo:
+		"crenca":
+			return "deu ao deus o nome de «%s»" % e.dados.get("deus", "")
+		"descoberta":
+			return "descobriu que semente vira planta"
+		"descoberta_tecnica":
+			return {"pedra": "aprendeu a cortar a pedra", "metal": "tirou o primeiro metal da pedra", "escrita": "inventou a escrita",
+				"engenharia": "desenhou os primeiros canais"}.get(e.dados.get("saber", ""), "descobriu um saber novo")
+		"profeta":
+			return ("fez o povo chamar o deus de «%s»" if e.dados.get("aceito", false) else "pregou que o deus era «%s» e foi expulso como herege") % e.dados.get("novo", "")
+		"separacao":
+			return "fundou %s" % g
+		"sonho":
+			return "sonhou o que o deus mostrava" if e.dados.get("aceita", false) else ""
+		"arquivo_salvou":
+			return "salvou um saber lendo as tabuletas"
+		"sacerdote":
+			return "falou pelo deus em %s" % g
+		"novo_lider":
+			return "guiou %s" % g
+		"expedicao":
+			return "partiu para além da borda do mundo"
+		"culpado":
+			return "foi apontad%s como culpad%s pelo silêncio do deus" % ["o" if m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[0]).sexo == "m" else "a",
+				"o" if m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[0]).sexo == "m" else "a"]
+		"prece_atendida":
+			return "teve a prece atendida"
+	return ""
+
+
+## O fecho do livro: na extinção, o último a morrer; no abandono, o povo que continua sem ser visto.
+func _epitafio(ano_ini: int, ano_fim: int) -> String:
+	var era_nome: String = m.nome_da_era(m.era)
+	if not _no_periodo("fim_do_mundo", ano_ini, ano_fim).is_empty():
+		var mortes := _no_periodo("morte", ano_ini, ano_fim)
+		var ultimo = mortes[-1] if not mortes.is_empty() else null
+		var nasc := _no_periodo("nascimento", ano_ini, ano_fim).size()
+		if ultimo != null and m.pessoa(ultimo.participantes[0]) != null:
+			var p = m.pessoa(ultimo.participantes[0])
+			var g = m.grupo(p.grupo)
+			var como: String = {"velhice": "de velhice", "fome": "de fome", "frio": "de frio", "doenca": "de febre",
+				"diluvio": "afogad" + ("o" if p.sexo == "m" else "a"), "fogo": "no fogo", "raio_divino": "de um raio", "raio_natural": "de um raio",
+				"terremoto": "sob os escombros", "batalha": "na luta", "parto": "ao dar à luz"}.get(ultimo.dados.get("causa", ""), "")
+			return "Aqui termina %s. %s, de %s, foi %s a morrer%s, aos %d anos, e não houve quem %s enterrasse. Durou %d anos; nasceram nela %d crianças, e de todas não ficou ninguém." % [
+				era_nome.to_lower(), p.nome, g.nome if g != null else "um povo", "o último" if p.sexo == "m" else "a última",
+				(" " + como) if not como.is_empty() else "", int(ultimo.dados.get("idade", 0)), "o" if p.sexo == "m" else "a",
+				ano_fim - ano_ini + 1, nasc]
+		return "Aqui termina %s. Não restou ninguém para contar." % era_nome.to_lower()
+	var maior = null
+	for g in m.grupos_vivos():
+		if maior == null or g.membros.size() > maior.membros.size():
+			maior = g
+	if maior == null:
+		return "Aqui termina %s." % era_nome.to_lower()
+	return "Aqui termina %s, mas não a vida. O deus deixou de olhar no ano %d. %s continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta." % [
+		era_nome.to_lower(), ano_fim, maior.nome]
 
 
 func _epilogo() -> String:

@@ -2,7 +2,13 @@
 
 *100 anos, sem intervenção do deus.*
 
+## Em resumo
+
+Esta crônica cobre 100 anos, do ano 1 ao 100, e quatro povos: Koil, Peak, Toran e Zean. Chegaram a trabalhar o metal. Chamaram o deus de «a Mão Fechada», «o Que Risca o Céu», «a Terra Brava» e «o Olho Escuro». A pior fome, no ano 97, levou 17 vidas em Peak. A peste veio duas vezes. O deus foi embora no ano 100, com 156 pessoas ainda vivas.
+
 No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Então chegaram doze coletores, uma única família: Vepeik e Tamu, os três filhos com quem tinham casado, e os netos. Acamparam na floresta e se chamavam Koil. Não tinham vila, nem plantação, nem deus.
+
+## Capítulo I: Os coletores (anos 1 a 13)
 
 ### Ano 1
 
@@ -39,6 +45,8 @@ Na primavera, Peos, o engenhoso, notou que as sementes jogadas perto do acampame
 ### Ano 13
 
 Kurpeya passou a falar pela Mão Fechada em Koil. Era a primeira a rezar e a última a duvidar.
+
+## Capítulo II: As roças (anos 14 a 40)
 
 ### Ano 14
 
@@ -109,6 +117,8 @@ De novo a chuva sumiu, como no ano 29. Foram 25 dias de seca.
 ### Ano 40
 
 Na primavera do ano 40, Kion, de Koil, tomou por esposa Tama, de Peak, e os dois povos passaram a se visitar. Nos anos 31 a 40 houve três secas e três preces que pareceram atendidas; nasceram 21 crianças e morreram nove pessoas. No fim do ano 40, 44 pessoas viviam no mundo: Koil (24) e Peak (20).
+
+## Capítulo III: As casas de pedra (anos 41 a 66)
 
 ### Ano 41
 
@@ -185,6 +195,8 @@ Na primavera, um dia, Dou e Mapeik apareceram na borda do mundo. Não sabiam de 
 ### Ano 66
 
 Em Toran, Kou pediu: «Que Levanta, não nos deixes secar.» Quando a chuva voltou, Toran agradeceu ao Que Levanta. Nasceu Matoron, o primeiro de Toran.
+
+## Capítulo IV: O tempo do metal (anos 67 a 100)
 
 ### Ano 67
 
@@ -286,6 +298,19 @@ O templo de Koil ficou mais forte que o líder. Kiu, que falava pelo Olho Escuro
 
 ---
 
+## Quem foi quem
+
+- **Peur**, de Peak (anos 41 a 101). Falou pelo deus em Peak.
+- **Kurpeya**, de Peak (até o ano 28). Deu ao deus o nome de «a Mão Fechada»; falou pelo deus em Koil.
+- **Makon**, de Peak (até o ano 56). Falou pelo deus em Peak; guiou Peak.
+- **Kiveya**, de Toran (ainda viva no fim). Inventou a escrita; guiou Toran.
+- **Maik**, de Koil (anos 20 a 80). Fez o povo chamar o deus de «o Que Levanta»; falou pelo deus em Koil.
+- **Dos**, de Peak (ainda vivo no fim). Fez o povo chamar o deus de «o Que Seca».
+- **Kiela**, de Zean (ainda viva no fim). Tirou o primeiro metal da pedra; falou pelo deus em Zean.
+- **Peos**, de Koil (até o ano 29). Descobriu que semente vira planta; falou pelo deus em Koil.
+
+---
+
 ## O mundo no fim da crônica
 
 - **Koil** vive no lago, com 50 pessoas, e trabalha o metal; é o povo mais antigo; chama o deus de «o Olho Escuro»; costumes: queima os mortos (desde o ano 49).
@@ -296,3 +321,7 @@ O templo de Koil ficou mais forte que o líder. Kiu, que falava pelo Olho Escuro
 Lugares com nome: Praia da Fome (praia, para Toran), Lago da Vitória (lago, para Koil), Lago do Luto (lago, para Toran), Floresta da Fome (floresta, para Peak), Morro da Vitória (morro, para Peak), Morro do Luto (morro, para Zean) e Morro da Vitória (morro, para Toran).
 
 Em 100 anos nasceram 332 pessoas e morreram 197.
+
+---
+
+*Aqui termina a primeira era, mas não a vida. O deus deixou de olhar no ano 100. Peak continuou a acender o fogo ao entardecer, sem saber que ninguém mais via, e o que veio depois nenhum livro conta.*
