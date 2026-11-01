@@ -1,0 +1,379 @@
+{
+ "atlas": "estagio2_inverno.png",
+ "largura": 256,
+ "altura": 128,
+ "margem": 1,
+ "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
+ "regioes": {
+  "culturas/casa_parede_madeira": {
+   "x": 199,
+   "y": 34,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/casa_parede_pedra": {
+   "x": 224,
+   "y": 34,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/casa_parede_taipa": {
+   "x": 1,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/casa_telhado_palha": {
+   "x": 26,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/casa_telhado_tabuas": {
+   "x": 51,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/casa_telhado_telha": {
+   "x": 76,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "culturas/templo_parede_madeira": {
+   "x": 1,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_parede_pedra": {
+   "x": 34,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_parede_taipa": {
+   "x": 67,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_simbolo_arvore": {
+   "x": 100,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_simbolo_lua": {
+   "x": 133,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_simbolo_sol": {
+   "x": 166,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_telhado_palha": {
+   "x": 199,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_telhado_tabuas": {
+   "x": 1,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "culturas/templo_telhado_telha": {
+   "x": 34,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio2/adulto_enxada_andar_4q": {
+   "x": 153,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio2/adulto_enxada_trabalhar_4q": {
+   "x": 202,
+   "y": 92,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio2/altar": {
+   "x": 51,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/casa_taipa": {
+   "x": 101,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "estagio2/casa_taipa_parede": {
+   "x": 126,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "estagio2/casa_taipa_telhado": {
+   "x": 151,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "estagio2/celeiro": {
+   "x": 176,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "estagio2/cerca": {
+   "x": 1,
+   "y": 117,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio2/cerca_poste": {
+   "x": 10,
+   "y": 117,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio2/roca_arada": {
+   "x": 68,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_broto": {
+   "x": 85,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_crescida": {
+   "x": 102,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_madura": {
+   "x": 119,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/roca_seca": {
+   "x": 136,
+   "y": 92,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio2/templo": {
+   "x": 67,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio2/templo_parede": {
+   "x": 100,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio2/templo_simbolo": {
+   "x": 133,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio2/templo_telhado": {
+   "x": 166,
+   "y": 34,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "memoria/casa_ruina": {
+   "x": 201,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "natureza/casa_ruina_mato_1": {
+   "x": 226,
+   "y": 67,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "natureza/casa_ruina_mato_2": {
+   "x": 1,
+   "y": 92,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  },
+  "natureza/casa_ruina_mato_3": {
+   "x": 26,
+   "y": 92,
+   "w": 24,
+   "h": 24,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 24
+  }
+ }
+}

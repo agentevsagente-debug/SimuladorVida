@@ -1,0 +1,609 @@
+{
+ "atlas": "estacao_primavera.png",
+ "largura": 128,
+ "altura": 128,
+ "margem": 1,
+ "nota": "nome = pasta/peça em arte_claude/pecas; x, y, w, h = folha inteira; os quadros vão da esquerda para a direita, cada um com quadro_w x quadro_h",
+ "regioes": {
+  "estagio1/alga": {
+   "x": 111,
+   "y": 75,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio1/arbusto": {
+   "x": 60,
+   "y": 75,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "estagio1/arbusto_frutas": {
+   "x": 77,
+   "y": 75,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "estagio1/arvore_copa_a": {
+   "x": 42,
+   "y": 1,
+   "w": 40,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 40,
+   "quadro_h": 32
+  },
+  "estagio1/arvore_copa_b": {
+   "x": 83,
+   "y": 1,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio1/capim": {
+   "x": 1,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio1/capim_seco": {
+   "x": 10,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio1/juncos": {
+   "x": 18,
+   "y": 75,
+   "w": 8,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 16
+  },
+  "estagio1/pedra_grande": {
+   "x": 59,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio1/pedra_pequena": {
+   "x": 19,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "estagio1/pinheiro_a": {
+   "x": 1,
+   "y": 1,
+   "w": 40,
+   "h": 40,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 40,
+   "quadro_h": 40
+  },
+  "estagio1/pinheiro_b": {
+   "x": 34,
+   "y": 42,
+   "w": 24,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 24,
+   "quadro_h": 32
+  },
+  "estagio1/pinheiro_fundo": {
+   "x": 1,
+   "y": 42,
+   "w": 32,
+   "h": 32,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 32,
+   "quadro_h": 32
+  },
+  "estagio1/samambaia_frente": {
+   "x": 76,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "estagio1/tronco_deriva": {
+   "x": 94,
+   "y": 75,
+   "w": 16,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 8
+  },
+  "natureza/arvore_jovem": {
+   "x": 93,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "natureza/fogueira_antiga": {
+   "x": 110,
+   "y": 42,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "natureza/muda": {
+   "x": 28,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "natureza/pinheiro_jovem": {
+   "x": 1,
+   "y": 75,
+   "w": 16,
+   "h": 16,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 16,
+   "quadro_h": 16
+  },
+  "terreno/agua": {
+   "x": 37,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/agua_funda": {
+   "x": 46,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/agua_superficie_4q": {
+   "x": 27,
+   "y": 75,
+   "w": 32,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/areia_a": {
+   "x": 55,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/areia_b": {
+   "x": 64,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/areia_base": {
+   "x": 73,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/areia_superficie": {
+   "x": 82,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/chao_batido": {
+   "x": 91,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/grama_a": {
+   "x": 100,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/grama_b": {
+   "x": 109,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/grama_seca": {
+   "x": 118,
+   "y": 92,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/pedra_solo": {
+   "x": 1,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_1": {
+   "x": 10,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_10": {
+   "x": 19,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_11": {
+   "x": 28,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_12": {
+   "x": 37,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_13": {
+   "x": 46,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_14": {
+   "x": 55,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_15": {
+   "x": 64,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_16": {
+   "x": 73,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_2": {
+   "x": 82,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_3": {
+   "x": 91,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_4": {
+   "x": 100,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_5": {
+   "x": 109,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_6": {
+   "x": 118,
+   "y": 101,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_7": {
+   "x": 1,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_8": {
+   "x": 10,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_9": {
+   "x": 19,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_borda": {
+   "x": 28,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_borda_b": {
+   "x": 37,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/rocha_borda_c": {
+   "x": 46,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_a": {
+   "x": 55,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_b": {
+   "x": 64,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_a": {
+   "x": 73,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_b": {
+   "x": 82,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_raiz": {
+   "x": 91,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_topo": {
+   "x": 100,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_topo_b": {
+   "x": 109,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_escura_topo_c": {
+   "x": 118,
+   "y": 110,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_raiz": {
+   "x": 1,
+   "y": 119,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  },
+  "terreno/terra_raiz_b": {
+   "x": 10,
+   "y": 119,
+   "w": 8,
+   "h": 8,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 8
+  }
+ }
+}
