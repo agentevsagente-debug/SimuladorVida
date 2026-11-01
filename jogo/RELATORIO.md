@@ -2,6 +2,38 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## A dica sobre a pessoa
+
+Com `mundo.dica(id)` da A, a dica de pessoa mostra:
+- **Linha 1:** o nome, a idade e o humor, como em "Lora, 7 anos — de luto", na letra dourada. A fonte não tem o ponto do meio, então o separador é o travessão.
+- **Linha 2:** o que a pessoa faz, com o papel na frente para líder e sacerdote.
+- **Linha 3:** o pensamento entre aspas, em lilás da paleta (A995DB), com o balãozinho de pensamento (`balao_5v`, variação 2) ao lado. A linha some quando o pensamento vem vazio, o que acontece com quem dorme sem sonhar.
+- **Depois:** a prece e a linhagem, como antes.
+
+**Como a dica se comporta:**
+- O texto tem no máximo 140 px de largura, com quebra de linha.
+- A dica fica acima da cabeça, com o bico apontando para ela. Se não houver espaço acima, ela vai para o lado da pessoa e nunca a cobre.
+- Com o cursor parado, ela se refaz a cada 0,5 s e acompanha o que a pessoa passa a fazer.
+- Sem a função da A, a dica mostra os traços, como antes.
+
+**Opção de teste nova:** `--dica-pessoa=ID[:S]` põe o cursor sobre a pessoa e a segue.
+
+**Captura:** `capturas/dica-da-pessoa.png`, em 2x, com um adulto, uma criança de luto e um líder de luto. O mundo tem 40 anos, e a morte foi provocada com um raio.
+
+## Auditoria 5, T3 (a volta e a repartição)
+
+| O que | Como ficou |
+|---|---|
+| Espreita | O porco desliza de um ponto ao outro entre os avanços. |
+| Mira | Quem vai arremessar segura a lança erguida (quadro 1 do arremesso forte). Os de trás apontam (`cacar_apontar_2q`). |
+| Arremesso | A lança sai logo no começo da etapa, que agora dura 6 min, e o porco cambaleia quando ela crava. |
+| Volta | Os dois do pau ficam a 16 px um do outro, e a caça vai pendurada entre eles, também enquanto esperam. Os outros caçadores seguem atrás. |
+| Repartição | A caça fica no chão do fogo, do lado de quem espera com o espeto, até ir para o espeto (`cozinhar_espeto_4q` com o objeto `espeto`). Os caçadores repartem agachados. |
+
+O lado da mata agora sai da saída (do fogo para o porco). Antes, no abate, ele era sempre para a direita.
+
+O GIF `capturas/tarde-1x.gif` foi gravado em 1x, com a semente 7 e 13 dias, das 15h às 17h56, num quadro por segundo. Ele toca 4 vezes mais rápido. Nesse dia a caçada acerta. A semente 7 com 12 dias, usada na auditoria, erra.
+
 ## Auditoria 5 (tarde)
 
 | # | O que foi feito |

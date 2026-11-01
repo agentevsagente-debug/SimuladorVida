@@ -50,6 +50,8 @@ const NOME_TRACO := {"pacifico": "pacífico", "devoto": "devoto", "curioso": "cu
 const NOME_ZONA := {"lago": "O lago", "praia": "A praia", "floresta": "A floresta", "morro": "O morro"}
 const NECESSIDADES := ["seca", "fome", "doenca", "frio", "guerra"]
 const CARGA_SEGUNDOS := 2.0
+const LARGURA_DICA := 140  # largura máxima do texto da dica, com quebra de linha
+const COR_PENSAMENTO := 29  # índice na paleta (A995DB, lilás): a linha do pensamento
 ## As dicas da primeira abertura, na ordem: cada uma aparece sozinha, discreta
 ## na alça, e some quando o jogador faz o que ela ensina.
 const DICAS := [["poder", "Escolha um poder e segure sobre o mundo"],
@@ -80,6 +82,9 @@ var _dica: NinePatchRect
 var _dica_textos: Array[Label] = []
 var _dica_icone: TextureRect
 var _dica_bico: TextureRect   # o bico embaixo da dica, apontando para quem ela descreve
+var _dica_balao: TextureRect  # o balãozinho de pensamento ao lado da linha do pensamento
+var _dica_ponto := []         # [mundo, tela] da última dica de pessoa, para atualizar com o cursor parado
+var _dica_refazer := 0.0
 var _cronica_acima: TextureRect
 var _cronica_abaixo: TextureRect
 var _cronica: NinePatchRect
@@ -106,6 +111,8 @@ func criar(p_vista: Node2D) -> void:
 		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
 	for cor in ["clara", "escura", "dourada", "titulo"]:
 		_fontes[cor] = load("res://arte/interface/fonte_5x7_%s.fnt" % cor)
+	Arte.carregar_paleta()
+	_fontes["pensamento"] = _fonte_na_cor(_fontes["clara"], Arte.paleta[COR_PENSAMENTO])
 	_criar_dica()
 	_criar_cronica()
 	_estante = EstanteTela.new()
@@ -476,6 +483,7 @@ func _cabeca_seguida() -> Vector2:
 
 func avancar(delta: float) -> void:
 	_relogio += delta
+	_refazer_dica(delta)
 	var assinatura := [_cabeca_seguida(), _texto_relogio(), _carregando, int(intensidade() * 8.0) if _carregando else 0,
 		_mensagem if _relogio < _mensagem_ate else "", _ritmo_atual(), vista.seguindo, _mundo_vazio(), _dica_atual()]
 	if assinatura != _ultimo_desenho:
@@ -510,6 +518,19 @@ func _avisar(texto: String) -> void:
 
 # --- dica do cursor ----------------------------------------------------------
 
+## A mesma fonte de pixels, com as letras numa cor da paleta.
+func _fonte_na_cor(base: FontFile, cor: Color) -> FontFile:
+	var f: FontFile = base.duplicate(true)
+	var tam := Vector2i(TAM_FONTE, 0)
+	var img: Image = f.get_texture_image(0, tam, 0).duplicate()
+	for y in img.get_height():
+		for x in img.get_width():
+			if img.get_pixel(x, y).a > 0.0:
+				img.set_pixel(x, y, Color(cor, img.get_pixel(x, y).a))
+	f.set_texture_image(0, tam, 0, img)
+	return f
+
+
 func _criar_dica() -> void:
 	_dica = NinePatchRect.new()
 	_dica.texture = Arte.textura("interface/caixa_dica_9s.png")
@@ -520,7 +541,7 @@ func _criar_dica() -> void:
 	_dica.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_dica.visible = false
 	add_child(_dica)
-	for i in 4:
+	for i in 6:
 		var l := Label.new()
 		l.add_theme_font_override("font", _fontes["dourada" if i == 0 else "clara"])
 		l.add_theme_font_size_override("font_size", TAM_FONTE)
@@ -531,6 +552,13 @@ func _criar_dica() -> void:
 	_dica_icone = TextureRect.new()
 	_dica_icone.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_dica.add_child(_dica_icone)
+	_dica_balao = TextureRect.new()
+	var balao := AtlasTexture.new()
+	balao.atlas = Arte.textura("sinais/balao_5v.png")
+	balao.region = Rect2(12, 0, 6, 5)  # a variação 2: pensamento
+	_dica_balao.texture = balao
+	_dica_balao.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_dica.add_child(_dica_balao)
 	_dica_bico = TextureRect.new()
 	_dica_bico.texture = Arte.textura("interface/dica_ponteiro.png")
 	_dica_bico.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -544,6 +572,8 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var linhas: Array = []
 	var icone := -1
 	var alvo := tela
+	var pensamento := -1  # a linha do pensamento, se houver
+	_dica_ponto = []
 	match o.get("tipo", ""):
 		"pessoa":
 			marcar_dica("pessoas")
@@ -551,13 +581,27 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			if not fig.is_empty():  # o bico aponta para a cabeça de quem a dica descreve
 				alvo = vista.para_tela(Vector2(fig.x + fig.largura / 2.0, fig.base - 12)) + Vector2(0, ALTURA_ALCA)
 			var pe: Dictionary = o.pessoa
+			_dica_ponto = [p, tela]
+			# API: o que faz, o que pensa e o humor (mundo.dica); sem ela, os traços, como antes
+			var d: Dictionary = vista.sim.mundo.dica(pe["id"]) if vista.sim.mundo.has_method("dica") else {}
 			var titulo := "%s, %d anos" % [pe["nome"], pe["idade"]]
+			if String(d.get("humor", "")) != "":
+				titulo += " — " + String(d["humor"])
 			linhas.append(titulo)
-			var detalhes := ", ".join(pe["tracos"].map(func(t): return NOME_TRACO.get(t, t)))
-			if pe["papel"] != "":
-				detalhes = ("líder" if pe["papel"] == "lider" else "sacerdote" if pe["sexo"] == "m" else "sacerdotisa") \
-					+ ", " + detalhes
-			linhas.append(detalhes)
+			var papel := "" if pe["papel"] == "" else \
+				("líder" if pe["papel"] == "lider" else "sacerdote" if pe["sexo"] == "m" else "sacerdotisa")
+			if d.is_empty():
+				var detalhes := ", ".join(pe["tracos"].map(func(t): return NOME_TRACO.get(t, t)))
+				linhas.append(papel + ", " + detalhes if papel != "" else detalhes)
+			else:
+				var fazendo := String(d.get("fazendo", ""))
+				if papel != "":
+					fazendo = papel + (", " + fazendo if fazendo != "" else "")
+				if fazendo != "":
+					linhas.append(fazendo.left(1).to_upper() + fazendo.substr(1))
+				if String(d.get("pensamento", "")) != "":  # quem dorme sem sonhar não pensa nada
+					pensamento = linhas.size()
+					linhas.append("\"%s\"" % d["pensamento"])
 			if pe.get("acompanhada", false):
 				linhas.append("a linhagem que você segue")
 			if not o.prece.is_empty():
@@ -593,7 +637,16 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				estado.append("farta")
 			if not estado.is_empty():
 				linhas.append(", ".join(estado))
-	_mostrar_dica(linhas, icone, alvo)
+	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty())
+
+
+## Com o cursor parado sobre alguém, a dica acompanha o que a pessoa passa a fazer.
+func _refazer_dica(delta: float) -> void:
+	_dica_refazer -= delta
+	if _dica_refazer > 0.0 or _dica_ponto.is_empty() or not _dica.visible:
+		return
+	_dica_refazer = 0.5
+	_atualizar_dica(_dica_ponto[0], _dica_ponto[1])
 
 
 func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
@@ -613,19 +666,25 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 	_mostrar_dica([nome], -1, canto + Vector2(4, 22), false)
 
 
-func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true) -> void:
+## `pensamento`: a linha que vai na cor do pensamento, com o balãozinho ao lado.
+## `de_pessoa`: sem lugar acima, a dica vai para o lado, sem cobrir quem ela descreve.
+func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pensamento := -1,
+		de_pessoa := false) -> void:
 	if linhas.is_empty():
 		_dica.visible = false
 		return
-	var largura_max := 160
 	var y := 3
 	var w := 0
+	_dica_balao.visible = false
 	for i in _dica_textos.size():
 		var l := _dica_textos[i]
 		l.visible = i < linhas.size()
 		if not l.visible:
 			continue
 		l.text = linhas[i]
+		var recuo := 8 if i == pensamento else 0
+		var largura_max := LARGURA_DICA - recuo
+		l.add_theme_font_override("font", _fontes["dourada" if i == 0 else "pensamento" if i == pensamento else "clara"])
 		l.autowrap_mode = TextServer.AUTOWRAP_OFF
 		var tamanho := l.get_minimum_size()
 		if tamanho.x > largura_max:
@@ -636,9 +695,12 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true) -> 
 		else:
 			l.custom_minimum_size = Vector2.ZERO
 			l.size = tamanho
-		l.position = Vector2(5, y)
+		l.position = Vector2(5 + recuo, y)
+		if i == pensamento:
+			_dica_balao.visible = true
+			_dica_balao.position = Vector2(5, y + 2)
 		y += int(tamanho.y)
-		w = maxi(w, int(tamanho.x))
+		w = maxi(w, int(tamanho.x) + recuo)
 	var extra := 0
 	_dica_icone.visible = icone >= 0
 	if icone >= 0:
@@ -653,7 +715,11 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true) -> 
 	var pos := perto + Vector2(-tamanho_caixa.x / 2.0, -tamanho_caixa.y - 6) if acima else perto
 	pos.x = clampf(pos.x, 1, 480 - tamanho_caixa.x - 1)
 	var em_cima := acima
-	if pos.y < 19:
+	if pos.y < 19 and de_pessoa:  # sem lugar acima da cabeça: ao lado da pessoa, nunca por cima dela
+		em_cima = false
+		pos.x = perto.x + 8 if perto.x + 8 + tamanho_caixa.x < 479 else perto.x - 8 - tamanho_caixa.x
+		pos.y = perto.y - 4
+	elif pos.y < 19:
 		pos.y = perto.y + 10
 		em_cima = false
 	pos.y = clampf(pos.y, 19, 178 - tamanho_caixa.y - 1)

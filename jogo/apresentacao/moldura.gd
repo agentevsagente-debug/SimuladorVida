@@ -28,6 +28,7 @@ extends Node2D
 ##                                        sem ele, vale o último guardado no moldura.cfg
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
+##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
 ##                        abre um painel ou aperta um botão (testes); livro abre o
 ##                        último livro, abandonar abre a pergunta de abandono e
@@ -119,6 +120,18 @@ func _ready() -> void:
 		get_tree().create_timer(1.0).timeout.connect(func():
 			var ev := InputEventMouseMotion.new()
 			interface.tratar(ev, Vector2(float(p[0]), float(p[1])), FAIXA))
+	if args.has("dica-pessoa"):  # o cursor acompanha a pessoa (id), a partir de S segundos
+		var d: PackedStringArray = args["dica-pessoa"].split(":")
+		get_tree().create_timer(float(d[1]) if d.size() > 1 else 1.0).timeout.connect(func():
+			var t := Timer.new()
+			t.wait_time = 0.25
+			add_child(t)
+			t.timeout.connect(func():
+				for f in vista.figuras:
+					if f.id == int(d[0]):
+						var ev := InputEventMouseMotion.new()
+						interface.tratar(ev, vista.para_tela(Vector2(f.x + f.largura / 2.0, f.base - 6)) + Vector2(0, FAIXA), FAIXA))
+			t.start())
 	match args.get("abrir", ""):
 		"cronica":
 			interface.alternar_cronica.call_deferred()
