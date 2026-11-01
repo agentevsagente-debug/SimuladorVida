@@ -30,6 +30,7 @@ extends Node2D
 ##   --demo=PODER:X:INTENSIDADE:S         usa um poder em X depois de S segundos (testes)
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
 ##   --livro-arquivo=CAMINHO[:PÁGINA]     abre um livro em markdown no leitor da estante (testes)
+##   --discreto                           liga o modo discreto (D, no jogo): o pior fica só na crônica
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
@@ -84,6 +85,7 @@ func _ready() -> void:
 	interface.escala.connect(func(d): _aplicar_escala(escala + d))
 	vista.pessoa_clicada.connect(_acompanhar)
 	interface.ritmo_mudou.connect(_guardar_config)
+	interface.preferencia_mudou.connect(_guardar_config)
 	var config := ConfigFile.new()
 	if _usar_config:
 		config.load(ARQUIVO_CONFIG)
@@ -97,6 +99,7 @@ func _ready() -> void:
 		if r >= 0:
 			vista.sim.definir_ritmo(r)
 		_mostrar_ausencia()
+	vista.modo_discreto = args.has("discreto") or (_usar_config and bool(config.get_value("moldura", "discreto", false)))
 	var nova: int = config.get_value("moldura", "escala", _escala_pela_tela(tela))
 	if args.has("escala"):
 		nova = int(args["escala"])
@@ -403,6 +406,7 @@ func _guardar_config() -> void:
 	var config := ConfigFile.new()
 	config.load(ARQUIVO_CONFIG)  # guarda junto o que já havia (as dicas feitas)
 	config.set_value("moldura", "escala", escala)
+	config.set_value("moldura", "discreto", vista.modo_discreto)
 	config.set_value("moldura", "posicao", get_window().position)
 	if vista.sim:
 		config.set_value("moldura", "ritmo", Simulacao.NOME_RITMO[vista.sim.ritmo])

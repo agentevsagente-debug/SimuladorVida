@@ -325,6 +325,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 		if e.get("etapa", "") == "arremesso":
 			var pa: float = e.p
 			return [DETALHES[detalhe][0], 12, 1 if pa < SOLTA else 2 if pa < CRAVA else 3, 0]
+	if acao == "lutar" and vista.modo_discreto:  # o modo discreto não mostra a luta: as linhas, frente a frente
+		return _parado(id, idoso, feminina, fase)
 	if DETALHES.has(detalhe):
 		return [DETALHES[detalhe][0], DETALHES[detalhe][1], q4, 0]
 	match detalhe:
@@ -758,11 +760,13 @@ func _cacada_em_etapas(c: Dictionary, h: float, relogio: float, r: Array) -> voi
 		"saida", "espreita":  # fuçando, de costas para quem chega
 			_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, int(relogio * 3.0) % 4, lado < 0, fogo_b)
 		"arremesso":
-			if e.vazia or p < CRAVA:  # fuçando até a lança chegar (e, se errou, assustado no lugar)
+			if vista.modo_discreto and not e.vazia and p >= CRAVA:  # o discreto pula o golpe: o porco já caído
+				_bicho("criaturas/porco_abatido", 10, xb - 5, chao_b, 0, lado < 0, fogo_b)
+			elif e.vazia or p < CRAVA:  # fuçando até a lança chegar (e, se errou, assustado no lugar)
 				_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, 0 if e.vazia else int(relogio * 3.0) % 4, lado < 0, fogo_b)
 			else:  # a lança crava, ele cambaleia e tomba (desenhado 2 px à esquerda)
 				_bicho("criaturas/porco_atingido_4q", 12, xb - 7, chao_b, mini(int((p - CRAVA) * 12.0), 3), lado < 0, fogo_b)
-			if p >= SOLTA and p < CRAVA:  # a lança voando, num arco raso, da mão do caçador ao bicho
+			if p >= SOLTA and p < CRAVA and not vista.modo_discreto:  # a lança voando, num arco raso, da mão do caçador ao bicho
 				var q := (p - SOLTA) / (CRAVA - SOLTA)
 				var lx := lerpf(float(e.xc) + lado * 2.0, xb, q)
 				var lanca := _objeto("objetos/lanca_voando_forte", 14, roundi(lx) - 7, chao_b - 7 - roundi(sin(q * PI) * 6.0), 0)
@@ -776,7 +780,8 @@ func _cacada_em_etapas(c: Dictionary, h: float, relogio: float, r: Array) -> voi
 			var xf := xb + lado * 40.0 * minf(p * 3.0, 1.0)
 			if p < 0.34:
 				_bicho("criaturas/porco_correr_4q", 10, xf - 5, vista.chao(roundi(xf)), int(relogio * 8.0) % 4, lado < 0, fogo_b)
-			objetos.append(_objeto("objetos/lanca_cravada", 8, roundi(xb) - 4, chao_b, 0))
+			if not vista.modo_discreto:
+				objetos.append(_objeto("objetos/lanca_cravada", 8, roundi(xb) - 4, chao_b, 0))
 
 
 func _bicho(folha: String, largura: int, x: float, base: int, quadro: int, espelho: bool, fogo: float) -> void:

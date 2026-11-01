@@ -17,6 +17,7 @@ signal esconder
 signal escala(delta: int)
 signal ritmo_mudou
 signal dica_feita(feitas: Array)
+signal preferencia_mudou  # o modo discreto (guardado no moldura.cfg)
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
@@ -391,7 +392,8 @@ func tecla(keycode: int) -> bool:
 			_apertar("linhagem")
 		KEY_D:
 			vista.modo_discreto = not vista.modo_discreto
-			_avisar("Modo discreto ligado" if vista.modo_discreto else "Modo discreto desligado")
+			_avisar("Modo discreto ligado: o pior fica só na crônica" if vista.modo_discreto else "Modo discreto desligado")
+			preferencia_mudou.emit()
 		KEY_SPACE:
 			_apertar("ritmo:normal" if vista.sim.ritmo == Simulacao.Ritmo.PAUSA else "ritmo:pausa")
 		KEY_0, KEY_KP_0:
