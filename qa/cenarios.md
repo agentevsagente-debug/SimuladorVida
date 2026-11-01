@@ -15,7 +15,7 @@
 | ID | Dado / Quando / Então | Fonte | Prio | Como |
 |---|---|---|---|---|
 | QA-001 | **Dado** nenhum mundo salvo, **quando** o mundo é criado, **então** a região já existe com morro, praia, lago e floresta. | FUN Começo | B | AN |
-| QA-002 | **Dado** um mundo novo, **quando** ele começa, **então** a região está vazia e o primeiro gesto do jogador é criar o primeiro povo (com o mesmo poder do recomeço). | FUN Começo, Menor conjunto 1 | N | AN |
+| QA-002 | **Dado** nenhum mundo salvo, **quando** o jogo abre (pela simulação da apresentação), **então** a região está vazia e é de manhã; **quando** o jogador cria o povo, **então** nascem 12 coletores no estágio 1 na zona do gesto, na Primeira Era, sem livro fechado nem fim do mundo antes, e com uma pessoa acompanhada. (Decisão do orquestrador sobre o D-09.) | FUN Começo, Menor conjunto 1 | B | AN |
 | QA-003 | **Dado** o primeiro povo, **então** é um grupo de cerca de 12 coletores, uma família estendida, no estágio 1, sem vila nem religião (nenhum `nome_deus`, nenhum altar ou templo). | FUN Começo | B | AN |
 | QA-004 | **Dado** a mesma semente e os mesmos gestos, **quando** dois mundos rodam 30 anos, **então** a crônica, os eventos e o estado do sorteio são iguais. | TEC Determinismo | B | AN |
 | QA-005 | **Dado** a mesma semente, **quando** um mundo é consultado a cada hora (pessoas, cenas, construções, preces, dica) e o outro nunca, **então** os dois seguem iguais: as consultas não mudam o mundo. | API Determinismo | B | AN |
@@ -30,7 +30,7 @@
 | QA-013 | **Dado** 50 anos sem deus, **então** o mundo gera sozinho necessidades e conflitos: alguma fome, doença ou seca, e algum nascimento e morte. | FUN Habitantes | B | AN |
 | QA-014 | **Dado** um mundo de 100 anos, **então** algum lugar ganhou nome pelo que aconteceu ali (`nomes` de zona). | FUN Memória do mundo | N | AN |
 | QA-015 | **Dado** a dica de uma pessoa acordada, **então** traz o que faz, o que pensa (até 60 caracteres) e o humor, e o pensamento nunca fala de quem joga. | FUN "O que a pessoa pensa" | N | AN |
-| QA-016 | **Dado** o tempo, **então** um dia de jogo dura cerca de 45 minutos reais no ritmo normal, com cerca de 30 de dia e 15 de noite. | FUN Tempo, TEC Tempo | N | AN |
+| QA-016 | **Dado** o tempo, **então** um dia de jogo dura cerca de 45 minutos reais no ritmo normal, com cerca de 26 de dia e 19 de noite (a noite vai das 20h às 6h). | FUN Tempo (desde f87b764), TEC Tempo | N | AN |
 | QA-017 | **Dado** um ano, **então** tem 40 dias e 4 estações de 10 dias. | FUN Tempo | B | AN |
 | QA-018 | **Dado** o jogo aberto, **quando** o jogador pede o salto, **então** o mundo avança até o próximo acontecimento de camada nota ou chamado. | FUN Tempo | N | AJ |
 | QA-019 | **Dado** o jogo, **então** há o ritmo normal, 10x e 50x, e a pausa. | FUN Tempo | N | M |
@@ -209,6 +209,6 @@
 
 | ID | Dado / Quando / Então | Fonte | Prio | Como |
 |---|---|---|---|---|
-| QA-180 | **Dado** um ataque registrado às 8h (forçado no meio do dia), **quando** o mundo é consultado a cada hora, **então** a cena `guerra` começa às 10h, com a luta das 11h30 às 13h. | API `cenas_ativas` (guerra) | N | AN (TDD para A) |
+| QA-180 | **Dado** um ataque registrado às 8h (forçado no meio do dia), **quando** o mundo é consultado a cada hora, **então** a cena `guerra` começa às 8h30 e termina às 13h, com a luta das 10h às 11h30, e já aparece na hora seguinte (API desde ece2046). | API `cenas_ativas` (guerra) | N | AN |
 | QA-181 | **Dado** o pacote exportado, **então** não leva os testes de QA (`qa/`). | produto | N | AN (lê `export_presets.cfg`) |
 | QA-182 | **Dado** as ferramentas de teste do núcleo, **então** nenhuma apaga ou escreve na estante real do jogador. | perda de dados | B | AN (lê o código) |
