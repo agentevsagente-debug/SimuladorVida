@@ -471,6 +471,14 @@ func marcar_dica(nome: String) -> void:
 	queue_redraw()
 
 
+## A cruzinha da cura, em verde (5 × 5, com contorno escuro); em lilás, a estrelinha do sonho.
+func _cruz(c: Vector2, cor := 28) -> void:
+	draw_rect(Rect2(c + Vector2(-2, -1), Vector2(5, 3)), Arte.paleta[3])
+	draw_rect(Rect2(c + Vector2(-1, -2), Vector2(3, 5)), Arte.paleta[3])
+	draw_rect(Rect2(c + Vector2(-1, 0), Vector2(3, 1)), Arte.paleta[cor])
+	draw_rect(Rect2(c + Vector2(0, -1), Vector2(1, 3)), Arte.paleta[cor])
+
+
 ## Quem sonhou (evento `sonho`): marcado por 60 s, porque o sonho muda uma pessoa, não o povo.
 func marcar_sonho(id: int) -> void:
 	_sonhou[id] = _relogio
@@ -1100,16 +1108,24 @@ func _draw() -> void:
 			for p in vista.sim.pessoas:
 				if p.get("doente", false):
 					doentes[p["id"]] = true
+		var em_casa := doentes.duplicate()  # quem está doente quase sempre está em casa: a cruz vai no telhado
 		for f in vista.figuras:
 			var topo: Vector2 = (vista.para_tela(Vector2(f.x + f.largura / 2.0, f.base - 15)) + Vector2(0, ALTURA_ALCA)).round()
 			if doentes.has(f.id):  # a cura sara quem está doente; em quem está são, não faz nada
-				draw_rect(Rect2(topo + Vector2(-2, -1), Vector2(5, 3)), Arte.paleta[3])
-				draw_rect(Rect2(topo + Vector2(-1, -2), Vector2(3, 5)), Arte.paleta[3])
-				draw_rect(Rect2(topo + Vector2(-1, 0), Vector2(3, 1)), Arte.paleta[28])
-				draw_rect(Rect2(topo + Vector2(0, -1), Vector2(1, 3)), Arte.paleta[28])
+				_cruz(topo)
+				em_casa.erase(f.id)
 			elif _sonhou.has(f.id) and _relogio - float(_sonhou[f.id]) < 60.0:  # quem sonhou aprende a ideia
-				draw_rect(Rect2(topo + Vector2(-1, -1), Vector2(3, 3)), Arte.paleta[3])
-				draw_rect(Rect2(topo, Vector2(1, 1)), Arte.paleta[29])
+				_cruz(topo + Vector2(0, -float(int(_relogio * 2.0) % 2)), 29)  # uma estrelinha lilás, piscando de leve
+		var casas := {}
+		for id in em_casa:
+			var cx: float = vista.sim.mundo.rotina().casa_de(id)
+			if cx >= 0.0:
+				casas[roundi(cx)] = casas.get(roundi(cx), 0) + 1
+		for cx in casas:  # uma cruz por doente, lado a lado, sobre o telhado
+			for k in casas[cx]:
+				var topo_c: Vector2 = (vista.para_tela(Vector2(cx - 3.0 * (casas[cx] - 1) + 6.0 * k, vista.chao(cx) - 26))
+					+ Vector2(0, ALTURA_ALCA)).round()
+				_cruz(topo_c)
 	if _dica.visible:  # uma seta dourada pequena sobre o fogo onde o gesto atende a prece
 		for ax in _alvos_da_prece:
 			if ax < 0.0:

@@ -17,6 +17,7 @@ extends Node2D
 ##   --semente=N          semente do mundo novo
 ##   --mundo-novo         ignora o mundo salvo e não grava nada
 ##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
+##   --cenario-raro=NOME  teste: força um acontecimento raro (veja cenarios_raros.gd)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
 ##   --extinguir[=N]      teste: todos morrem (e o mundo vazio anda N anos)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
@@ -36,6 +37,7 @@ const Atmosfera = preload("res://apresentacao/atmosfera.gd")
 const Sinais = preload("res://apresentacao/sinais.gd")
 const Vida = preload("res://apresentacao/vida.gd")
 const Obras = preload("res://apresentacao/obras.gd")
+const CenariosRaros = preload("res://apresentacao/cenarios_raros.gd")
 const Ceu = preload("res://apresentacao/ceu.gd")
 const REMAP = preload("res://apresentacao/remap.gdshader")
 
@@ -179,6 +181,10 @@ func _ready() -> void:
 		if args.has("simular-ausencia"):  # teste: como se o jogador tivesse saído N horas
 			sim.ausencia = sim.mundo.avancar_ausencia(float(args["simular-ausencia"]) * 3600.0)
 			sim.iniciar_de_mundo()
+		if args.has("cenario-raro"):  # teste: força um acontecimento raro (cenarios_raros.gd)
+			var nome: String = args["cenario-raro"]
+			CenariosRaros.preparar(nome, self)
+			get_tree().create_timer(1.5).timeout.connect(func(): CenariosRaros.encenar(nome, self, _interface, get_tree()))
 		sim.congelado = args.has("congelar")
 		if sim.congelado and hf >= 0.0:
 			_minutos = hf - floorf(hf)
