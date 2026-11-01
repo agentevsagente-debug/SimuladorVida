@@ -1,6 +1,6 @@
 # API do núcleo da simulação
 
-*Versão 2, de 01/11/2026 (fase 1, blocos 1 a 3). Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
+*Versão 3, de 01/11/2026 (fase 1, blocos 1 a 3; faixas das zonas casadas com a cena-alvo). Dona: sessão A. Mudanças que quebrem esta API serão avisadas ao orquestrador antes.*
 
 O núcleo é GDScript puro. Não tem nós nem cenas, e não desenha nada. A apresentação faz duas coisas:
 - **lê** o estado e os eventos pelas funções abaixo;
@@ -31,16 +31,21 @@ A apresentação interpola os movimentos entre dois passos. Cada pessoa traz a p
 
 ## Espaço
 
-O mundo tem **480 pixels de largura**, e todo `x` está nessa escala (0 a 479). As zonas ocupam faixas fixas, da esquerda para a direita:
+O mundo tem **480 pixels de largura**, e todo `x` está nessa escala (0 a 479). As zonas ocupam faixas fixas, casadas com a arte da cena-alvo, da esquerda para a direita:
 
-| Zona | x_ini | x_fim |
-|---|---|---|
-| praia | 0 | 110 |
-| lago | 110 | 200 |
-| floresta | 200 | 350 |
-| morro | 350 | 480 |
+| Zona | x_ini | x_fim | O que é |
+|---|---|---|---|
+| lago | 0 | 136 | a água |
+| praia | 136 | 200 | areia e capim seco |
+| floresta | 200 | 330 | clareira e mata |
+| morro | 330 | 480 | |
 
-As faixas estão em `nucleo/cotidiano.gd` (`FAIXAS`). Se a cena-alvo pedir outra divisão, peça ao orquestrador, e a sessão A muda as faixas: a simulação não depende delas.
+**Ninguém fica dentro da água.** Toda pessoa está sempre em `x ≥ 126`.
+- O povo que vive no lago acampa na margem e na areia próxima (126 a 168).
+- Esse povo trabalha na margem (126 a 136): a ação `colher`, ali, é pescar ou buscar água.
+- Se dois povos dividem uma zona, o acampamento dela é repartido entre eles (veja `grupos_visiveis()`).
+
+As faixas estão em `nucleo/cotidiano.gd` (`FAIXAS`, `ACAMPAMENTO`, `TRABALHO`, `MARGEM`). A simulação não depende delas.
 
 A altura (y) é da apresentação. O núcleo não sabe de chão nem de céu.
 
@@ -67,7 +72,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | Campo | O que é |
 |---|---|
 | `id`, `nome` | identificador e nome do povo ("Zeor") |
-| `zona`, `x_ini`, `x_fim` | onde vive. Se dois povos dividem uma zona, cada um fica com uma parte da faixa. |
+| `zona`, `x_ini`, `x_fim` | onde vive; `x_ini` e `x_fim` são a faixa do acampamento. Se dois povos dividem uma zona, cada um fica com uma parte. |
 | `membros`, `estagio` | quantas pessoas; 1 = coleta, 2 = agricultura |
 | `lider`, `sacerdote` | id da pessoa, ou -1 |
 | `nome_deus` | como o povo chama o deus («o Que Rega»); vazio se ainda não crê ou se é cético |

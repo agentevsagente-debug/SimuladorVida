@@ -2141,7 +2141,7 @@ func clima() -> Dictionary:
 
 func zonas_visiveis() -> Array:
 	var r: Array = []
-	for chave in ORDEM_ZONAS:
+	for chave in Cotidiano.FAIXAS:
 		var z: Zona = zonas[chave]
 		var f: Array = Cotidiano.FAIXAS[chave]
 		var nomes := {}
