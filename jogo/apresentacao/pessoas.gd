@@ -1,11 +1,13 @@
 extends Node2D
 ## Desenha as pessoas. Cada figura é {folha, quadro, largura, x, base,
-## espelho, troca, fogo}: x é o canto esquerdo e base a linha do chão.
-## As folhas com as cores trocadas (e espelhadas) ficam em cache.
+## espelho, codigo, fogo}: x é o canto esquerdo e base a linha do chão.
+## As folhas ficam em cache (normal e espelhada): um conjunto fixo, que não
+## cresce com a população.
 ##
 ## O shader de troca recebe pelo modulate o centro da figura (r) e o x da
 ## fogueira mais perto (g), em pixels / 512, para a regra da metade do corpo
-## virada para longe do fogo descer um nível de luz.
+## virada para longe do fogo descer um nível de luz, e o código de troca de
+## pele, cabelo e roupa (b, / 255).
 
 const Arte = preload("res://apresentacao/arte.gd")
 
@@ -18,7 +20,7 @@ var _assinatura := []
 func definir(novas: Array) -> void:
 	var assinatura := []
 	for f in novas:
-		assinatura.append([f.folha, f.quadro, f.x, f.base, f.espelho, f.troca, f.fogo])
+		assinatura.append([f.folha, f.quadro, f.x, f.base, f.espelho, f.codigo, f.fogo])
 	if assinatura == _assinatura:
 		return
 	_assinatura = assinatura
@@ -26,10 +28,10 @@ func definir(novas: Array) -> void:
 	queue_redraw()
 
 
-func _folha(nome: String, troca: Dictionary, espelho: bool) -> Texture2D:
-	var chave := "%s|%s|%s" % [nome, troca, espelho]
+func _folha(nome: String, espelho: bool) -> Texture2D:
+	var chave := "%s|%s" % [nome, espelho]
 	if not _cache.has(chave):
-		var img := Arte.trocar(Arte.imagem("habitantes/%s.png" % nome), troca)
+		var img := Arte.imagem("habitantes/%s.png" % nome)
 		if espelho:
 			img.flip_x()
 		_cache[chave] = ImageTexture.create_from_image(img)
@@ -38,11 +40,11 @@ func _folha(nome: String, troca: Dictionary, espelho: bool) -> Texture2D:
 
 func _draw() -> void:
 	for f in figuras:
-		var tex := _folha(f.folha, f.troca, f.espelho)
+		var tex := _folha(f.folha, f.espelho)
 		var w: int = f.largura
 		var h := tex.get_height()
 		var n := tex.get_width() / w
 		# a folha espelhada tem os quadros em ordem inversa
 		var q: int = (n - 1 - f.quadro) if f.espelho else f.quadro
-		var info := Color((f.x + w / 2.0) / 512.0, f.fogo / 512.0, 0.0, 1.0)
+		var info := Color((f.x + w / 2.0) / 512.0, f.fogo / 512.0, f.codigo / 255.0, 1.0)
 		draw_texture_rect_region(tex, Rect2(f.x, f.base - h + 1, w, h), Rect2(q * w, 0, w, h), info)

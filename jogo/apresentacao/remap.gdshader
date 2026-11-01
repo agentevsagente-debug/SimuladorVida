@@ -23,7 +23,8 @@ const int MUNDO = 1;     // terreno e peças fixas, com etiquetas e superfície
 const int PESSOA = 2;    // pessoas: modulate traz (centro x, fogo x, espelho)
 const int FRENTE = 3;    // primeiro plano, silhueta à noite
 const int AGUA = 4;      // superfície animada da água
-const int REFLEXO = 5;   // reflexo: textura A + tex_b, sem troca
+const int REFLEXO = 5;   // reflexo: textura A + tex_b, sem troca, ondulando
+const int FOSCO = 6;     // partículas que não emitem luz: tabela de noite
 
 uniform int plano = 0;
 uniform vec3 paleta[32];
@@ -39,6 +40,13 @@ uniform sampler2D halo : filter_nearest, repeat_disable;       // 128 × 80
 uniform vec2 fogos[4];   // canto do mapa de luz de cada fogueira (já com −56, −32)
 uniform int n_fogos = 0;
 uniform vec2 origem = vec2(0.0, 16.0);  // onde a vista começa na tela base
+uniform int onda = 0;    // fase da ondulação do reflexo (0..3)
+uniform float ondulacao = 0.0;  // 0 = reflexo parado (testes e tempo congelado)
+// Trocas das pessoas (habitantes/trocas.json): o modulate traz no canal b o
+// código pele + 4 × cabelo + 24 × roupa; cabelo 5 = não trocar (idosos).
+uniform ivec2 peles[4];
+uniform ivec2 cabelos[5];
+uniform int roupas[3];
 
 varying vec2 pos;
 varying vec4 info;
@@ -102,10 +110,13 @@ void fragment() {
 	bool usa_b = bayer(p) < t;
 	int estado = usa_b ? estado_b : estado_a;
 	vec4 cor = texture(TEXTURE, UV);
-	if (plano == FUNDO || plano == REFLEXO) {
-		if (usa_b) {
-			cor = texture(tex_b, UV);
-		}
+	if (plano == REFLEXO) {
+		// cada par de linhas desliza 1 px para um lado, em fases diferentes
+		int d = ((p.y / 2 + onda) % 4) - 1;
+		vec2 uv = UV + vec2(float(clamp(d, -1, 1)) * ondulacao * TEXTURE_PIXEL_SIZE.x, 0.0);
+		cor = usa_b ? texture(tex_b, uv) : texture(TEXTURE, uv);
+	} else if (plano == FUNDO && usa_b) {
+		cor = texture(tex_b, UV);
 	}
 	vec3 c = cor.rgb;
 
@@ -129,9 +140,24 @@ void fragment() {
 			}
 		}
 	} else if (plano == PESSOA) {
+		int codigo = int(round(info.b * 255.0));
+		int pi = codigo % 4;
+		int ci = (codigo / 4) % 6;
+		int i = indice(c);
+		if (i == 26) {
+			c = paleta[peles[pi].x];
+		} else if (i == 25) {
+			c = paleta[peles[pi].y];
+		} else if (ci < 5 && i == 30) {
+			c = paleta[cabelos[ci].x];
+		} else if (ci < 5 && i == 8) {
+			c = paleta[cabelos[ci].y];
+		} else if (i == 28) {
+			c = paleta[roupas[codigo / 24]];
+		}
 		if (estado == ENTARDECER) {
 			// luz de contorno: o sol baixo à esquerda acende a borda esquerda
-			float passo = TEXTURE_PIXEL_SIZE.x * (info.b > 0.5 ? 1.0 : -1.0);
+			float passo = -TEXTURE_PIXEL_SIZE.x;  // a folha espelhada já vem virada
 			vec2 viz = UV + vec2(passo, 0.0);
 			bool borda = viz.x < 0.0 || viz.x > 1.0 || texture(TEXTURE, viz).a == 0.0;
 			if (borda) {
@@ -154,7 +180,7 @@ void fragment() {
 		} else if (estado == ENTARDECER) {
 			c = trocar(c, ENTARDECER);
 		}
-	} else if (plano == AGUA) {
+	} else if (plano == AGUA || plano == FOSCO) {
 		if (estado == NOITE) {
 			c = trocar(c, NOITE_AGUA);
 		}

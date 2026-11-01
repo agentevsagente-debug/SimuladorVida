@@ -1,6 +1,6 @@
 extends RefCounted
 ## Leitura da arte copiada de arte_claude/ para jogo/arte/: paleta, tabelas
-## de luz, trocas de cor das pessoas e recortes de folhas de quadros.
+## de luz, opções de troca de cor das pessoas e recortes de folhas de quadros.
 ## Tudo estático; use com `const Arte = preload("res://apresentacao/arte.gd")`.
 
 const RAIZ := "res://arte/"
@@ -50,20 +50,6 @@ static func quadro(folha: Image, i: int, largura: int) -> Image:
 	return folha.get_region(Rect2i(i * largura, 0, largura, folha.get_height()))
 
 
-## Troca simultânea de cores (índices da paleta), como em comum.trocar().
-static func trocar(img: Image, mapa: Dictionary) -> Image:
-	var cores := {}
-	for de in mapa:
-		cores[paleta[int(de)].to_rgba32()] = paleta[int(mapa[de])]
-	var nova: Image = img.duplicate()
-	for y in nova.get_height():
-		for x in nova.get_width():
-			var c := nova.get_pixel(x, y)
-			if c.a > 0.0 and cores.has(c.to_rgba32()):
-				nova.set_pixel(x, y, cores[c.to_rgba32()])
-	return nova
-
-
 ## Textura 32 × 9 com as tabelas; cor que a tabela não cita fica igual.
 static func textura_tabelas() -> ImageTexture:
 	carregar_paleta()
@@ -89,21 +75,38 @@ static func paleta_vec3() -> PackedVector3Array:
 	return v
 
 
-## Tabela de troca de uma pessoa a partir de pele, cabelo e roupa (trocas.json).
-static func troca_pessoa(pele: int, cabelo: int, roupa: int) -> Dictionary:
-	if _trocas.is_empty():
-		_trocas = json("habitantes/trocas.json")
-	var base: Dictionary = _trocas["cores_base"]
-	var p: Dictionary = _trocas["peles"][str(pele)]
-	var c: Dictionary = _trocas["cabelos"][str(cabelo)]
-	return {
-		int(base["pele"]): int(p["pele"]), int(base["pele_sombra"]): int(p["pele_sombra"]),
-		int(base["cabelo"]): int(c["cabelo"]), int(base["cabelo_brilho"]): int(c["cabelo_brilho"]),
-		int(base["roupa"]): roupa,
-	}
-
-
+## Opções de troca das pessoas, na ordem de trocas.json:
+## {peles: [[pele, sombra]...], cabelos: [[cabelo, brilho]...], roupas: [...]}.
 static func opcoes_troca() -> Dictionary:
 	if _trocas.is_empty():
-		_trocas = json("habitantes/trocas.json")
-	return {"peles": _trocas["peles"].keys(), "cabelos": _trocas["cabelos"].keys(), "roupas": _trocas["roupas"]}
+		var t: Dictionary = json("habitantes/trocas.json")
+		var peles := []
+		for k in t["peles"]:
+			peles.append(Vector2i(int(t["peles"][k]["pele"]), int(t["peles"][k]["pele_sombra"])))
+		var cabelos := []
+		for k in t["cabelos"]:
+			cabelos.append(Vector2i(int(t["cabelos"][k]["cabelo"]), int(t["cabelos"][k]["cabelo_brilho"])))
+		_trocas = {"peles": peles, "cabelos": cabelos, "roupas": t["roupas"].map(func(r): return int(r))}
+	return _trocas
+
+
+## Código de troca que remap.gdshader entende: pele + 4 × cabelo + 24 × roupa.
+## cabelo = 5 deixa o cabelo como está (idosos).
+static func codigo_troca(pele: int, cabelo: int, roupa: int) -> int:
+	return pele + 4 * cabelo + 24 * roupa
+
+
+## Código a partir de uma tabela de troca de layout.json ({"26": 24, ...}).
+static func codigo_de_tabela(troca: Dictionary) -> int:
+	var o := opcoes_troca()
+	var pele := 0
+	var cabelo := 5
+	var roupa := 0
+	for i in o.peles.size():
+		if o.peles[i].x == int(troca.get("26", 26)):
+			pele = i
+	for i in o.cabelos.size():
+		if o.cabelos[i].x == int(troca.get("30", 30)):
+			cabelo = i
+	roupa = maxi(0, o.roupas.find(int(troca.get("28", 28))))
+	return codigo_troca(pele, cabelo, roupa)

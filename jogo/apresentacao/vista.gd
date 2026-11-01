@@ -12,11 +12,14 @@ extends Node2D
 ##   --congelar           o tempo não anda
 ##   --semente=N          semente do mundo
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
+##   --capturar-apos=S    espera S segundos antes de capturar
+##   --efeito=chuva|raio  força chuva (e raios) sobre a aldeia, para testes
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Terreno = preload("res://apresentacao/terreno.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
 const Pessoas = preload("res://apresentacao/pessoas.gd")
+const Atmosfera = preload("res://apresentacao/atmosfera.gd")
 const REMAP = preload("res://apresentacao/remap.gdshader")
 
 const LARGURA := 480
@@ -41,10 +44,12 @@ var _modo_layout := false
 var _hora_fixa := -1.0
 var _capturar := ""
 var _quadros_ate_capturar := 4
+var _capturar_apos := 0.0
 
 var _materiais: Array[ShaderMaterial] = []
 var _fundos: Array[Sprite2D] = []
-var _tex_fundo := {}       # "ceu_dia" -> Texture2D
+var _tex_fundo := {}       # "ceu_dia" -> Texture2D, recortada à área usada
+var _canto_fundo := []     # canto do recorte de cada plano de fundo
 var _tex_reflexo := []     # por estado
 var _mundo: Sprite2D
 var _agua: Sprite2D
@@ -64,12 +69,15 @@ var _quadro_fogo := -1
 var _refazer := true
 var _virada := {}          # id da pessoa -> espelho (olhando para a esquerda)
 var _tex_fogueira: Texture2D
+var _atmosfera: Atmosfera
+var _minutos := 0.0        # fração de hora fixa (--hora=17.5 com --congelar)
 
 
 func _ready() -> void:
 	var args := _ler_argumentos()
 	_modo_layout = args.get("cena", "") == "layout"
 	_capturar = args.get("capturar", "")
+	_capturar_apos = float(args.get("capturar-apos", "0"))
 	Arte.carregar_paleta()
 	_layout = Arte.json("camadas/layout.json")
 	_criar_nos()
@@ -82,10 +90,16 @@ func _ready() -> void:
 		add_child(sim)
 		sim.construcoes_mudaram.connect(func(): _refazer = true)
 		var semente := int(args.get("semente", str(randi())))
-		var h := int(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1
-		sim.iniciar(semente, h)
+		var hf := float(HORAS_NOMEADAS.get(hora, hora)) if hora != "" else -1.0
+		sim.iniciar(semente, int(hf) if hf >= 0.0 else -1)
 		sim.congelado = args.has("congelar")
+		if sim.congelado and hf >= 0.0:
+			_minutos = hf - floorf(hf)
 		print("[vista] semente=%d" % semente)
+	var efeito: String = args.get("efeito", "")
+	if efeito in ["chuva", "raio"]:
+		_atmosfera.forcar_chuva = Vector2i(200, 350)
+		_atmosfera.forcar_raio = efeito == "raio"
 
 
 func avancar(delta: float, desenhar: bool) -> void:
@@ -101,7 +115,16 @@ func avancar(delta: float, desenhar: bool) -> void:
 	_atualizar_agua()
 	_atualizar_fogueiras()
 	_pessoas.definir(_figuras_layout() if _modo_layout else _figuras_nucleo())
-	if _capturar != "":
+	_atmosfera.avancar(delta, _hora(), _estado[0] if _estado[2] < 0.5 else _estado[1], _fogos,
+		{} if _modo_layout else sim.clima, _modo_layout)
+	if OS.get_cmdline_user_args().has("--memoria") and int(_relogio) != int(_relogio - delta) and int(_relogio) % 5 == 0:
+		print("[memoria] t=%d estatica=%.1fMB texturas=%.1fMB buffers=%.1fMB video=%.1fMB objetos=%d recursos=%d" % [
+			int(_relogio), Performance.get_monitor(Performance.MEMORY_STATIC) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_TEXTURE_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_BUFFER_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED) / 1048576.0,
+			Performance.get_monitor(Performance.OBJECT_COUNT), Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)])
+	if _capturar != "" and _relogio >= _capturar_apos:
 		_quadros_ate_capturar -= 1
 		if _quadros_ate_capturar == 0:
 			queue_redraw()  # no modo de baixo consumo, sem mudança não há quadro novo
@@ -122,8 +145,11 @@ func _criar_nos() -> void:
 	var paleta := Arte.paleta_vec3()
 	var tabelas := Arte.textura_tabelas()
 	for nome in FUNDOS:
-		for e in ESTADOS:
-			_tex_fundo["%s_%s" % [nome, e]] = Arte.textura("camadas/%s_%s.png" % [nome, e])
+		var imgs := ESTADOS.map(func(e): return Arte.imagem("camadas/%s_%s.png" % [nome, e]))
+		var corte := _recortar(imgs)
+		for i in ESTADOS.size():
+			_tex_fundo["%s_%s" % [nome, ESTADOS[i]]] = corte[1][i]
+		_canto_fundo.append(Vector2(corte[0].position))
 		_fundos.append(_sprite(0, paleta, tabelas))
 	_agua = _sprite(4, paleta, tabelas)
 	_mundo = _sprite(1, paleta, tabelas)
@@ -132,9 +158,16 @@ func _criar_nos() -> void:
 	add_child(_fogueiras)
 	_pessoas = Pessoas.new()
 	_pessoas.material = _material(2, paleta, tabelas)
+	var opcoes := Arte.opcoes_troca()
+	_pessoas.material.set_shader_parameter("peles", opcoes.peles)
+	_pessoas.material.set_shader_parameter("cabelos", opcoes.cabelos)
+	_pessoas.material.set_shader_parameter("roupas", PackedInt32Array(opcoes.roupas))
 	add_child(_pessoas)
 	_reflexo = _sprite(5, paleta, tabelas)
 	_frente = _sprite(3, paleta, tabelas)
+	_atmosfera = Atmosfera.new()
+	add_child(_atmosfera)
+	_atmosfera.criar(self, _material(6, paleta, tabelas), _frente)
 	var luz := Arte.textura("camadas/luz_fogueira.png")
 	var halo := Arte.textura("camadas/luz_fogueira_halo.png")
 	for m in _materiais:
@@ -221,13 +254,18 @@ func _montar_fixo() -> void:
 					"luz": Vector2(snappedi(canto.x, 4) - 56, snappedi(canto.y, 4) - 32)})
 
 	_mundo.texture = ImageTexture.create_from_image(cor)
-	_frente.texture = ImageTexture.create_from_image(frente)
-	_tex_reflexo.clear()
+	var corte := _recortar([frente])
+	_frente.texture = corte[1][0]
+	_frente.position = Vector2(corte[0].position)
+	var refs := []
 	for e in ESTADOS:
 		var ref := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 		var fonte := Arte.imagem("camadas/reflexo_%s.png" % e)
 		ref.blit_rect_mask(fonte, agua_mascara, Rect2i(0, 0, LARGURA, ALTURA), Vector2i.ZERO)
-		_tex_reflexo.append(ImageTexture.create_from_image(ref))
+		refs.append(ref)
+	corte = _recortar(refs)
+	_tex_reflexo = corte[1]
+	_reflexo.position = Vector2(corte[0].position)
 	var sup_img := Image.create(LARGURA, 1, false, Image.FORMAT_R8)
 	for x in LARGURA:
 		sup_img.set_pixel(x, 0, Color8(_sup[x], 0, 0))
@@ -268,6 +306,15 @@ func _sob_construcao(item: Dictionary, obras: Array) -> bool:
 	return false
 
 
+## Onde uma partícula toca: a linha d'água no mar, o chão no resto.
+func chao(x: int) -> int:
+	return Terreno.NIVEL_AGUA - 1 if _na_agua(x) else _chao(x)
+
+
+func cor_paleta(i: int) -> Color:
+	return Arte.paleta[i]
+
+
 ## Linha do chão em x: a superfície menos 1, como as peças da cena-alvo.
 func _chao(x: int) -> int:
 	return _sup[clampi(x, 0, LARGURA - 1)] - 1
@@ -285,6 +332,19 @@ func _mascara_agua(tag: Image) -> Image:
 			if roundi(tag.get_pixel(x, y).r * 255.0) == Arte.AGUA:
 				m.set_pixel(x, y, Color.WHITE)
 	return m
+
+
+## Recorta imagens do mesmo plano à área usada por qualquer uma delas, para
+## não guardar texturas de tela inteira quase vazias. Devolve [canto, texturas].
+static func _recortar(imgs: Array) -> Array:
+	var r := Rect2i()
+	for img in imgs:
+		var usada: Rect2i = img.get_used_rect()
+		if usada.has_area():
+			r = usada if not r.has_area() else r.merge(usada)
+	if not r.has_area():
+		r = Rect2i(0, 0, 1, 1)
+	return [r, imgs.map(func(img): return ImageTexture.create_from_image(img.get_region(r)))]
 
 
 func _vazio(tamanho: Vector2i) -> Image:
@@ -311,6 +371,9 @@ func _atualizar_agua() -> void:
 	if q != _quadro_agua:
 		_quadro_agua = q
 		_agua.texture = _tex_agua[q]
+		var parado := _modo_layout or (sim and sim.congelado)
+		_reflexo.material.set_shader_parameter("onda", q)
+		_reflexo.material.set_shader_parameter("ondulacao", 0.0 if parado else 1.0)
 
 
 func _atualizar_fogueiras() -> void:
@@ -343,9 +406,14 @@ static func estado_da_hora(h: float) -> Array:
 	return [NOITE, NOITE, 0.0]
 
 
+func _hora() -> float:
+	return _hora_fixa if _hora_fixa >= 0.0 else sim.hora_continua() + _minutos
+
+
 func _atualizar_horario() -> void:
-	var h := _hora_fixa if _hora_fixa >= 0.0 else sim.hora_continua()
-	var e := estado_da_hora(h)
+	var e := estado_da_hora(_hora())
+	if _atmosfera.em_clarao():
+		e = [DIA, DIA, 0.0]
 	if e == _estado:
 		return
 	_estado = e
@@ -354,7 +422,7 @@ func _atualizar_horario() -> void:
 	for i in FUNDOS.size():
 		_fundos[i].texture = _tex_fundo["%s_%s" % [FUNDOS[i], ESTADOS[a]]]
 		_fundos[i].material.set_shader_parameter("tex_b", _tex_fundo["%s_%s" % [FUNDOS[i], ESTADOS[b]]])
-		_fundos[i].position.x = -camera_x * PARALAXE[i]
+		_fundos[i].position = _canto_fundo[i] - Vector2(camera_x * PARALAXE[i], 0.0)
 	_reflexo.texture = _tex_reflexo[a]
 	_reflexo.material.set_shader_parameter("tex_b", _tex_reflexo[b])
 	for m in _materiais:
@@ -380,7 +448,8 @@ func _figuras_layout() -> Array:
 			continue
 		r.append({"folha": item["peca"], "quadro": int(item["quadro"]), "largura": int(item["larg_quadro"]),
 			"x": int(item["x"]), "base": int(item["base"]), "espelho": item.get("espelho", false),
-			"troca": item.get("troca", {}), "fogo": _fogo_mais_perto(item["x"] + item["larg_quadro"] / 2.0)})
+			"codigo": Arte.codigo_de_tabela(item.get("troca", {})),
+			"fogo": _fogo_mais_perto(item["x"] + item["larg_quadro"] / 2.0)})
 	return r
 
 
@@ -432,21 +501,18 @@ func _figuras_nucleo() -> Array:
 					folha = "adulto_b_parado_2q" if feminina else "adulto_a_parado_2q"
 					quadro = int(_relogio + id * 0.37) % 2
 
-		var pele := int(opcoes.peles[id % opcoes.peles.size()])
-		var cabelos: Array = opcoes.cabelos
-		var cabelo := int(cabelos[(id * 7 + 3) % (cabelos.size() - 1)])  # sem o grisalho
-		var roupa := int(opcoes.roupas[int(p["grupo"]) % opcoes.roupas.size()])
-		var troca := Arte.troca_pessoa(pele, cabelo, roupa)
-		if idoso and folha == "idoso_andar_4q":
-			troca.erase(30)
-			troca.erase(8)
+		var pele: int = id % opcoes.peles.size()
+		var cabelo: int = (id * 7 + 3) % (opcoes.cabelos.size() - 1)  # o último é o grisalho
+		if idoso:
+			cabelo = 5 if folha == "idoso_andar_4q" else opcoes.cabelos.size() - 1
+		var roupa: int = (id * 5 + int(p["grupo"])) % opcoes.roupas.size()
 
 		var xi := roundi(x) - largura / 2
 		var base := _chao(roundi(x))
 		if _na_agua(roundi(x)):
 			base = Terreno.NIVEL_AGUA + 2
 		r.append({"folha": folha, "quadro": quadro, "largura": largura, "x": xi, "base": base,
-			"espelho": espelho, "troca": troca, "fogo": fogo})
+			"espelho": espelho, "codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo})
 	return r
 
 
