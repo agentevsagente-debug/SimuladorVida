@@ -1,0 +1,74 @@
+﻿{
+    "sempre por cima":  {
+                            "ok":  true,
+                            "detalhe":  "WS_EX = 0x00040018 (TOPMOST=0x8, LAYERED=0x80000, TRANSPARENT=0x20)"
+                        },
+    "faixa: janela de tras":  {
+                                  "ok":  true,
+                                  "detalhe":  "WindowFromPoint -\u003e \u0027Alvo da moldura\u0027"
+                              },
+    "alca: moldura":  {
+                          "ok":  true,
+                          "detalhe":  ""
+                      },
+    "mundo: moldura":  {
+                           "ok":  true,
+                           "detalhe":  ""
+                       },
+    "transparencia da faixa":  {
+                                   "ok":  true,
+                                   "detalhe":  "100,00% dos pixels iguais ao fundo"
+                               },
+    "mundo opaco":  {
+                        "ok":  true,
+                        "detalhe":  "100,00% dos pixels diferentes do fundo"
+                    },
+    "nitidez 2x":  {
+                       "ok":  true,
+                       "detalhe":  "100,00% dos blocos 2x2 de cor unica"
+                   },
+    "clique atravessa":  {
+                             "ok":  true,
+                             "detalhe":  "cliques recebidos pelo alvo: 1"
+                         },
+    "clique chega ao mundo":  {
+                                  "ok":  true,
+                                  "detalhe":  "registrado no log da moldura"
+                              },
+    "clique no mundo fica":  {
+                                 "ok":  true,
+                                 "detalhe":  "alvo continua com 1 clique(s)"
+                             },
+    "arrastar":  {
+                     "ok":  true,
+                     "detalhe":  "deslocou (120, 60), esperado (120, 60)"
+                 },
+    "botao + (3x)":  {
+                         "ok":  true,
+                         "detalhe":  "janela 1440x528"
+                     },
+    "passagem refeita em 3x":  {
+                                   "ok":  true,
+                                   "detalhe":  ""
+                               },
+    "esconder (botao)":  {
+                             "ok":  true,
+                             "detalhe":  "minimizada=True; no meio do mundo agora: \u0027Alvo da moldura\u0027"
+                         },
+    "mostrar (barra tarefas)":  {
+                                    "ok":  true,
+                                    "detalhe":  "janela de volta em (320, 84) 1440x528"
+                                },
+    "passagem apos mostrar":  {
+                                  "ok":  true,
+                                  "detalhe":  ""
+                              },
+    "nitidez 3x":  {
+                       "ok":  true,
+                       "detalhe":  "100,00% dos blocos 3x3 de cor unica"
+                   },
+    "nitidez 4x":  {
+                       "ok":  true,
+                       "detalhe":  "100,00% dos blocos 4x4 de cor unica"
+                   }
+}
