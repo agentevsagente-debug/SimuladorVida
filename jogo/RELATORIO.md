@@ -2,6 +2,26 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O modo discreto, revisto
+
+O modo discreto é ligado e desligado com a tecla D. Ele esconde o detalhe do que é pesado e deixa a consequência, que a crônica registra.
+
+| Cena | Normal | Discreto |
+|---|---|---|
+| Raio que mata | o raio e o impacto | só o clarão |
+| Fogo (milagre) | chamas sobre as pessoas | brasas e fumaça; as árvores queimadas ficam |
+| Terremoto | a fenda no chão, a poeira, as pedras e o tremor | sem a fenda; a poeira, as pedras e as casas no chão ficam |
+| Guerra | as duas linhas lutando (`lutar_4q`) | as linhas frente a frente, paradas |
+| Caçada | a lança voando, o porco atingido e a lança cravada | o porco já caído, sem o golpe |
+| Extinção | as mortes vêm dos casos acima | o mesmo; a tela de "Não resta ninguém" fica |
+
+**Novidades:**
+- O modo agora fica guardado no `moldura.cfg`, e o aviso da alça diz "Modo discreto ligado: o pior fica só na crônica".
+- A opção de teste `--discreto` liga o modo.
+- O cenário `--cenario-raro=batalha` (o primeiro povo ataca o segundo hoje) ainda não mostra a guerra: o ataque é registrado, mas a rotina refeita não monta a cena `guerra`. Isso fica com a A.
+
+Captura do fogo, normal e discreto: `capturas/modo-discreto-fogo.png`. O verificar.ps1 não rodou: a tela estava bloqueada ("Backstop Window").
+
 ## Os livros da estante, com a estrutura nova
 
 O leitor da estante lê a estrutura que a A deu aos livros: título com epíteto, "Em resumo", capítulos por estágio, "Quem foi quem", "O mundo no fim" e o epitáfio.
