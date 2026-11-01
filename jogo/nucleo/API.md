@@ -372,15 +372,26 @@ Todo sorteio da simulação vem de `mundo.rng`, com a semente dada. As consultas
 ```gdscript
 const Persistencia = preload("res://nucleo/persistencia.gd")
 
-Persistencia.salvar(mundo)                       # -> bool; grava em user://mundo.txt
+Persistencia.salvar_async(mundo)                 # grava numa thread, sem travar o jogo (use durante o jogo)
+Persistencia.salvamento_terminou(mundo)          # -> bool
+Persistencia.terminar_salvamento(mundo)          # -> bool; espera a gravação e diz se deu certo
+Persistencia.salvar(mundo)                       # -> bool; grava agora, na linha principal (use ao fechar)
 Persistencia.existe()                            # -> bool
 var mundo = Persistencia.carregar()              # -> mundo, ou null se não há arquivo válido
 var r = Persistencia.carregar_e_avancar()        # -> {mundo, ausencia}, ou null
 ```
 
-Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`).
+Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`), depois do mundo nas que recebem o mundo.
 
-**O arquivo** é texto: o formato de Variant do Godot (`var_to_str`), com uma linha de cabeçalho. Ele guarda o mundo inteiro, incluindo o estado do sorteio e o estado do cronista, e também a hora real do salvamento (`mundo.salvo_em`, em segundos Unix). Os números reais são gravados pelos seus 64 bits ("@f:" seguido de um inteiro), porque a leitura de reais em texto do Godot perde o último dígito. O resultado é exato: um mundo salvo e carregado segue igual, passo a passo, ao que nunca parou.
+**Salvar sem travar:** `salvar_async` tira, na linha principal, só um retrato do que pode mudar fora de um passo (os campos do mundo e a crônica): menos de 1 ms com o mundo grande. Pessoas, povos, zonas e eventos são lidos e gravados numa thread (cerca de 370 ms com o mundo grande).
+- Enquanto a thread grava, o mundo não pode mudar. Por isso `avancar_hora()`, `usar_poder()`, `criar_povo()` e `abandonar()` esperam por ela. No jogo, a gravação acaba muito antes do passo seguinte.
+- As consultas continuam valendo durante a gravação.
+- O resultado fica em `mundo.ultimo_salvamento_ok` quando a gravação termina; `terminar_salvamento()` espera e devolve esse resultado.
+- Chamar `salvar_async` ou `salvar` com outra gravação em andamento espera a anterior.
+- Para o fechamento do jogo, `salvar()` continua síncrono: grava tudo antes de voltar (cerca de 360 ms com o mundo grande).
+- Uma gravação interrompida no meio (o processo morto, falta de luz) nunca deixa o mundo ilegível: o arquivo novo só toma o lugar do antigo depois de gravado e conferido, e as cópias de segurança (abaixo) cobrem o resto. O teste mata o processo no meio de gravações e carrega de novo.
+
+**O arquivo** é texto: o formato de Variant do Godot (`var_to_str`), com uma linha de cabeçalho. Ele guarda o mundo inteiro, incluindo o estado do sorteio e o estado do cronista, e também a hora real do salvamento (`mundo.salvo_em`, em segundos Unix). Os números reais são gravados pelos seus 64 bits ("@f:" seguido de um inteiro), porque a leitura de reais em texto do Godot perde o último dígito. O resultado é exato: um mundo salvo e carregado segue igual, passo a passo, ao que nunca parou. Desde a versão 2 do arquivo, pessoas, povos, zonas e eventos vão em colunas (os nomes dos campos uma vez, e os valores de cada um em ordem), o que deixa o arquivo com pouco mais da metade do tamanho. Arquivos da versão 1 continuam sendo lidos. Nada do histórico é descartado: a crônica e a memória do mundo leem eventos antigos (os mortos de cada ataque, a pior fome, a seca anterior, a origem dos costumes e dos nomes de lugares, os feitos de cada pessoa), e cortar o histórico mudaria o texto.
 
 **A gravação é segura:** o núcleo grava num arquivo `.novo`, confere o que gravou e só depois troca pelo antigo. Uma queda no meio não estraga o mundo salvo.
 
@@ -390,7 +401,7 @@ Todas aceitam um caminho como primeiro argumento (padrão: `user://mundo.txt`).
 - `existe()` também vale quando só há cópias.
 - `abandonar()` apaga o mundo e as cópias dele.
 
-**Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. Com 284 anos (o mundo grande da regressão, 10 mil eventos), o arquivo tem 5,6 MB e salvar leva cerca de 800 ms. O documento técnico pede salvar a cada dia de jogo e ao fechar. Isso é decisão da apresentação; o núcleo só salva quando chamado.
+**Custo:** com 38 anos de mundo, o arquivo tem 184 KB e cada operação leva cerca de 25 ms. O tamanho cresce com o número de eventos, que são uns 25 por ano. Com 284 anos (o mundo grande da regressão, 10 mil eventos), o arquivo tem 3 MB; `salvar_async` custa menos de 1 ms na linha principal (e ~370 ms na thread), `salvar` ~360 ms e `carregar` ~420 ms. O documento técnico pede salvar a cada dia de jogo e ao fechar: durante o jogo, use `salvar_async`. Isso é decisão da apresentação; o núcleo só salva quando chamado.
 
 ### Ausência
 

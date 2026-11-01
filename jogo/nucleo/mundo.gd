@@ -53,6 +53,8 @@ var peste_ate: int = -1
 ## Se este mundo foi carregado de uma cópia de segurança (o salvo estava estragado), o
 ## caminho dela; senão, "". Não é salvo.
 var recuperado_de: String = ""
+var _salvamento = null            # gravação em andamento numa thread (Persistencia.salvar_async)
+var ultimo_salvamento_ok: bool = true
 var _rotina_cache = null          # a rotina em uso: a de hoje (de madrugada, ainda a de ontem)
 var _montando = null              # a rotina sendo montada numa thread de trabalho
 var _tarefa: int = -1             # a tarefa dessa montagem no WorkerThreadPool
@@ -271,7 +273,7 @@ const FOLGA_PARA_ADIANTAR_US := 2500
 ## Avança um passo de simulação: uma hora de jogo.
 func avancar_hora() -> void:
 	var t0 := Time.get_ticks_usec()
-	_esperar_rotina()
+	_esperar_threads()
 	var h := hora()
 	if h == 0:
 		_novo_dia()
@@ -2000,7 +2002,7 @@ func _fechar_livro(motivo: String) -> Dictionary:
 
 ## O deus abandona o mundo: a crônica da era se fecha como livro, mesmo com o povo vivo.
 func abandonar() -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if fim_do_mundo and not livros.is_empty() and livros[-1]["era"] == era:
 		return livros[-1]
 	return _fechar_livro("abandono")
@@ -2009,7 +2011,7 @@ func abandonar() -> Dictionary:
 ## Só com o mundo vazio: o deus cria um novo povo onde fizer o gesto (x em pixels do mundo).
 ## O novo povo encontra as ruínas de quem viveu antes.
 func criar_povo(x: float = 275.0) -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if not fim_do_mundo or populacao() > 0:
 		return {"ok": false, "motivo": "só se cria um povo com o mundo vazio"}
 	var zona := Cotidiano.zona_em(clampf(x, 0.0, Cotidiano.LARGURA_MUNDO - 1))
@@ -3374,7 +3376,7 @@ func _rotina_de_hoje():
 	var ro = rotina()
 	_consultado = consultado
 	if ro.dia != d:
-		_esperar_rotina()
+		_esperar_threads()
 		ro = _rotina_cache
 	if ro.dia != d:
 		ro = Rotina.new(self, d)
@@ -3439,16 +3441,24 @@ func _receber_rotina(esperar: bool) -> void:
 		_trocar_rotina(nova)
 
 
-## A thread só lê o mundo enquanto monta a rotina: antes de qualquer mudança (um passo, um
-## poder, um povo novo), espera por ela. No jogo ela termina em décimos de segundo, muito
-## antes de o passo seguinte chegar, e a espera não acontece.
-func _esperar_rotina() -> void:
+## As threads só leem o mundo enquanto montam a rotina ou gravam o arquivo: antes de
+## qualquer mudança (um passo, um poder, um povo novo), espera por elas. No jogo elas
+## terminam muito antes de o passo seguinte chegar, e a espera não acontece.
+func _esperar_threads() -> void:
 	if _montando != null:
 		_receber_rotina(true)
+	if _salvamento != null:
+		if not WorkerThreadPool.is_task_completed(_salvamento.tarefa):
+			desempenho["esperas"] += 1
+		WorkerThreadPool.wait_for_task_completion(_salvamento.tarefa)
+		ultimo_salvamento_ok = _salvamento.ok
+		_salvamento = null
 
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_PREDELETE:
+		if _salvamento != null:
+			WorkerThreadPool.wait_for_task_completion(_salvamento.tarefa)
 		if _montando != null:
 			WorkerThreadPool.wait_for_task_completion(_tarefa)
 		for d in _descartes:
@@ -3651,7 +3661,7 @@ func eventos_desde(desde: int) -> Array:
 
 ## O deus age. x em pixels do mundo (0..479); intensidade de 0 a 1, vinda do gesto.
 func usar_poder(poder: String, x: float, intensidade: float = 0.7) -> Dictionary:
-	_esperar_rotina()
+	_esperar_threads()
 	if fim_do_mundo:
 		return {"ok": false, "motivo": "o mundo está vazio"}
 	if not PODERES.has(poder):
