@@ -65,6 +65,8 @@ const CASAS := {2: "estagio2/casa_taipa", 3: "estagio3/casa_pedra", 4: "estagio4
 ## Folga mínima entre construções vizinhas (auditoria 2, N1).
 const LOTE_FOLGA := 3.0
 const VAO_ENTRE_POVOS := 10.0
+const X_CONVITE := 275.0  # a clareira onde o convite do mundo vazio aparece (o x padrão do criar_povo)
+var _convite := false
 const FILEIRA_ATRAS := 4  # px acima que a fileira de trás fica (API: `fileira` 1)
 const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobre a pessoa"
 
@@ -213,6 +215,7 @@ func avancar(delta: float, desenhar: bool) -> void:
 	_medir("sim")
 	if not desenhar:
 		return
+	_atualizar_convite()
 	_relogio += delta
 	if sim and _chave_fixo != _chave_do_fixo():
 		_refazer = true
@@ -368,6 +371,20 @@ func _extinguir(anos: int) -> void:
 
 
 ## Outro mundo (abandono): a vida em cena e o desenho fixo recomeçam.
+## O convite do mundo que nunca teve gente (arte, sinais/convite_povo_4q): o anel de
+## luz na clareira, do primeiro segundo até o primeiro povo. Não aparece depois da
+## extinção, que é outro clima (o mundo vazio de lá já teve gente).
+func _atualizar_convite() -> void:
+	var convidar: bool = sim != null and sim.mundo.fim_do_mundo and sim.mundo.pessoas.is_empty()
+	if convidar == _convite or _sup.is_empty() or _tipos.is_empty():  # o terreno ainda não foi montado
+		return
+	_convite = convidar
+	if convidar:
+		_sinais.marcar("convite_povo_4q", 24, 4, 2.5, INF, -1, X_CONVITE, chao(int(X_CONVITE)))
+	else:
+		_sinais.marcas = _sinais.marcas.filter(func(m): return m.folha != "convite_povo_4q")
+
+
 func _ao_trocar_mundo() -> void:
 	_vida = Vida.new(self, sim)
 	seguindo = false
