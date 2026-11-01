@@ -104,6 +104,18 @@ GIFs em 1x, em trechos de 60 s de jogo de verdade: `capturas/tarde-1x.gif` (a pa
 - **Medido no 50x** (`medicoes/rapido2.json`, 5 min): CPU de 0,171% em média (4,8% de um núcleo), pico de amostra de 0,23%, dentro da meta; 122 MB na coluna "Memória" do Gerenciador de Tarefas.
 - O verificar.ps1 foi atualizado para a alça com 10 botões e passa nos 19 itens.
 
+## Entrega da A: caçada perto da vila, troca de lugar, arquivo dos antigos
+
+- **Caçada:** a encenação segue a posição nova (o porco a uns 20 px da borda, em x de 216 a 224). Como o chão ali já é aberto, a busca de chão aberto não mexe nele. GIF: `capturas/tarde-1x.gif`.
+- **Bichos noturnos:** a coruja fica na copa mais perto do `x` que a API dá a ela (`fixo`). A raposa e o morcego vão de `x` a `x_fim` ao longo da cena; a raposa para, cheira e olha para trás a cada 7 s. GIF: `capturas/madrugada-1x.gif`.
+- **Troca de lugar (N5), conferida:** um registro de teste (`REGISTRAR_LUGARES=1`) gravou, a cada 10 s, o x de cada parado na tela e o x que o núcleo dá. A tela fica a 1,4 px do núcleo em média, então ela segue a troca sem prender ninguém. Os ociosos (parado, conversa, fogo) mudaram de ponto a cada 10 a 20 s. Quem trabalha (colher, construir) e as crianças brincando ficam até 90 s no mesmo lugar: isso vem da rotina, que só move os parados.
+- **Arquivo dos antigos, conferido** com um mundo de 371 anos salvo no caminho padrão, com `mundo.antigos.txt` e as cópias:
+  - o jogo abre o mundo normalmente, e a crônica mostra os anos 369 a 371;
+  - abandonar apaga o mundo, as cópias e o `mundo.antigos.txt`, e o livro "A Primeira Era, anos 1 a 371" vai para a estante;
+  - a apresentação não lida com esse arquivo: tudo passa pela `Persistencia`.
+  - Depois do teste, voltei a estante e o mundo salvo ao estado de antes. Captura: `capturas/mundo-371-anos.png`.
+- O arquivo só aparece depois de mais de 300 linhas arquivadas; antes disso, elas vão dentro do próprio `mundo.txt`.
+
 ## Auditoria 4
 
 | # | O que foi feito |

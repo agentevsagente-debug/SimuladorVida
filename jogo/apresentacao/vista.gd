@@ -785,11 +785,12 @@ func _primeira_linha(img: Image) -> int:
 	return 0
 
 
-## O poleiro da coruja: o topo da copa da árvore mais perto da vila (do primeiro fogo).
-func poleiro_coruja() -> Vector2:
+## O poleiro da coruja: o topo da copa da árvore mais perto de `perto_de` (o x
+## que a API dá à coruja), ou da vila (o primeiro fogo).
+func poleiro_coruja(perto_de := -1.0) -> Vector2:
 	if _copas.is_empty():
 		return Vector2(-100, -100)
-	var vila: float = _fogos[0].centro if not _fogos.is_empty() else 240.0
+	var vila: float = perto_de if perto_de >= 0.0 else (_fogos[0].centro if not _fogos.is_empty() else 240.0)
 	var melhor: Vector2 = _copas[0]
 	for c in _copas:
 		if absf(c.x - vila) < absf(melhor.x - vila):

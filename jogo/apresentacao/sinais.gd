@@ -134,7 +134,11 @@ func _bichos_da_madrugada(sim: Node, vista: Node2D, relogio: float) -> void:
 	var h: float = sim.hora_continua()
 	# a coruja é presença fixa da noite (21h às 5h), pousada no alto da copa da
 	# árvore mais perto da vila (auditoria 4, N2): olha, pisca, vira a cabeça
-	var poleiro: Vector2 = vista.poleiro_coruja()
+	var x_coruja := -1.0
+	for c in sim.cenas:
+		if c.get("tipo", "") == "bicho_noturno" and c.get("bicho", "") == "coruja":
+			x_coruja = float(c.get("x", -1.0))
+	var poleiro: Vector2 = vista.poleiro_coruja(x_coruja)
 	if (h >= 21.0 or h < 5.0) and poleiro.x > -50:
 		var folha := "coruja_neve_4q" if Arte.estacao == "inverno" else (
 			"coruja_chuva_4q" if not sim.clima.get("tempestade", {}).is_empty() else "coruja_pousada_4q")
@@ -148,29 +152,19 @@ func _bichos_da_madrugada(sim: Node, vista: Node2D, relogio: float) -> void:
 		if h < float(c.get("ini", 0.0)) or h > float(c.get("fim", 24.0)):
 			continue
 		var x := roundi(float(c.get("x", 300.0)))
+		# os que passam vão de x a x_fim ao longo da cena (API)
+		var x_fim := float(c.get("x_fim", x))
+		var p := clampf((h - float(c.get("ini", 0.0))) / maxf(float(c.get("fim", 24.0)) - float(c.get("ini", 0.0)), 0.001), 0.0, 1.0)
+		var indo := lerpf(float(x), x_fim, p)
 		match String(c.get("bicho", "")):
-			"raposa":  # trota pela borda, para, cheira o chão, olha para trás e segue
-				var fase := fmod(relogio + x * 0.1, 18.0)
-				var rx: float
-				var parada := false
-				var espelho := false
-				if fase < 6.0:
-					rx = x - 24.0 + fase * 8.0
-				elif fase < 9.0:
-					rx = x + 24.0
-					parada = true
-				elif fase < 15.0:
-					rx = x + 24.0 - (fase - 9.0) * 8.0
-					espelho = true
-				else:
-					rx = x - 24.0
-					parada = true
-					espelho = true
-				var q: int = int(fase * 1.3) % 4 if parada else int(relogio * 8.0) % 4
+			"raposa":  # trota de x a x_fim pela beira; de tempos em tempos para, cheira e olha para trás
+				var fase := fmod(relogio + x * 0.1, 7.0)
+				var parada := fase > 5.0
+				var q: int = int((fase - 5.0) * 2.0) % 4 if parada else int(relogio * 8.0) % 4
 				bichos.append({"folha": "../criaturas/" + ("raposa_parada_4q" if parada else "raposa_noite_4q"), "largura": 12,
-					"x": roundi(rx), "base": vista.chao(roundi(rx)), "quadro": q, "espelho": espelho})
+					"x": roundi(indo), "base": vista.chao(roundi(indo)), "quadro": q, "espelho": x_fim < x})
 			"morcego":
-				var bx := x + roundi(sin(relogio * 0.9) * 18.0)
+				var bx := roundi(indo) + roundi(sin(relogio * 0.9) * 10.0)
 				bichos.append({"folha": "../criaturas/morcego_noite_4q", "largura": 8, "x": bx,
 					"base": vista.chao(x) - 22 + roundi(sin(relogio * 3.1) * 3.0), "quadro": int(relogio * 10.0) % 4,
 					"espelho": cos(relogio * 0.9) < 0.0})

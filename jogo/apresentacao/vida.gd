@@ -75,7 +75,8 @@ var _virada := {}             # id -> espelho (olhando para a esquerda)
 var _acordou := {}            # id -> quando saiu da cabana (para saírem em fila)
 var _atras := {}              # ids na segunda fileira da roda
 var _ocultos := {}            # ids que ficam dentro de casa nesta hora (multidão)
-var _existe := {}             # caminho -> se a folha existe (variantes por estágio)
+var _existe := {}
+var _ultimo_registro := -1             # caminho -> se a folha existe (variantes por estágio)
 var _maior_sobreposicao := [0, 0]
 
 
@@ -182,7 +183,7 @@ func atualizar(delta: float, relogio: float) -> Array:
 		r.append({"id": id, "folha": visual[0], "quadro": visual[2], "largura": largura,
 			"x": xr - (6 if crianca else 8) / 2, "base": base, "espelho": espelho,
 			"codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo, "acompanhada": p.get("acompanhada", false),
-			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena})
+			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena, "nucleo": t.destino})
 	_objetos_de_cena(r, relogio)
 	_objetos_do_cotidiano(r, relogio)
 	_animais_das_cenas(r, relogio)
@@ -195,6 +196,10 @@ func atualizar(delta: float, relogio: float) -> Array:
 	figuras = r
 	if OS.has_environment("CONTAR_SOBREPOSICAO"):
 		_contar_sobreposicao()
+	if OS.has_environment("REGISTRAR_LUGARES") and int(relogio / 10.0) != _ultimo_registro:
+		_ultimo_registro = int(relogio / 10.0)  # teste: onde estão os parados (auditoria 4, N5)
+		print("[lugares] %d %s" % [_ultimo_registro, JSON.stringify(r.filter(func(f): return not f.movendo).map(
+			func(f): return [f.id, f.x, f.acao, roundi(f.get("nucleo", -1.0))]))])
 	return r + objetos
 
 
