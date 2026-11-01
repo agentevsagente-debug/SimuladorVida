@@ -55,14 +55,17 @@ const DETALHES := {"colher_arbusto": ["acoes/colher_arbusto_4q", 8], "cavar_raiz
 	"banho": ["acoes/banhar_4q", 8], "espantar": ["acoes/espantar_forte_4q", 12], "discutir": ["acoes/discutir_4q", 8],
 	"separar": ["acoes/conversar_falar_4q", 8], "arremessar": ["acoes/cacar_arremessar_forte_4q", 12],
 	"bocejar": ["acoes/bocejar_4q", 8], "espreitar": ["acoes/cacar_espreitar_forte_4q", 12],
-	"espeto": ["acoes/cozinhar_espeto_4q", 8]}
+	"espeto": ["acoes/cozinhar_espeto_4q", 8], "lavar": ["acoes/lavar_margem_forte_4q", 12]}
 ## Detalhes andando: a carga ou a ferramenta da ida e da volta.
 const DETALHES_ANDANDO := {"carregar_cesto": "acoes/carregar_cesto_cabeca_forte_4q",
 	"carregar_cesto_cabeca": "acoes/carregar_cesto_cabeca_forte_4q", "levar_cesto": "acoes/andar_cesto_4q",
 	"carregar_agua": "acoes/carregar_agua_forte_4q", "carregar_feixe": "acoes/carregar_lenha_4q",
-	"caca_no_pau": "acoes/carregar_caca_forte_4q", "espreitar": "acoes/cacar_espreitar_forte_4q"}
+	"caca_no_pau": "acoes/carregar_caca_forte_4q", "espreitar": "acoes/cacar_espreitar_forte_4q",
+	"peixe_na_lanca": "acoes/carregar_peixe_forte_4q"}
 ## Folhas andando com quadro de 12 px (as outras cargas têm 8).
-const LARGAS := ["acoes/cacar_espreitar_forte_4q"]
+const LARGAS := ["acoes/cacar_espreitar_forte_4q", "acoes/carregar_peixe_forte_4q"]
+## As cenas do começo da tarde (API: pesca_lanca, lavagem) que acontecem dentro da água rasa.
+const NA_AGUA := ["pescar_lanca", "golpear", "peixe_na_lanca", "banho"]
 ## No arremesso (0..1 da etapa; a lança já ficou erguida na mira): até SOLTA o
 ## caçador ainda a segura, de SOLTA a CRAVA ela voa; depois ele acompanha e o porco cambaleia.
 const SOLTA := 0.04
@@ -75,7 +78,8 @@ const FILA_CACADA := 7.0
 const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_forte_4q", "espantar_forte_4q",
 	"tropecar_cair_forte_4q", "carregar_agua_forte_4q", "buscar_agua_forte_4q", "carregar_caca_forte_4q",
 	"crianca_pegapega_fugir_4q", "crianca_pegapega_pegar_4q", "crianca_ciranda_4q", "crianca_ciranda_costas_4q",
-	"cacar_apontar_2q", "cacar_comemorar_4q", "cacar_amarrar_4q", "cacar_espreitar_forte_4q", "cacar_arremessar_forte_4q"]
+	"cacar_apontar_2q", "cacar_comemorar_4q", "cacar_amarrar_4q", "cacar_espreitar_forte_4q", "cacar_arremessar_forte_4q", "pescar_espreitar_forte_2q", "pescar_arpoar_forte_4q",
+	"carregar_peixe_forte_4q", "lavar_margem_forte_4q", "crianca_banho_4q"]
 
 var vista
 var sim
@@ -133,8 +137,12 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var t: Dictionary = trechos[id]
 		var acao: String = t.acao
 		var destino: float = lugar.get(id, t.destino)
-		if acao != "remar":  # só no barco se fica sobre a água
-			destino = maxf(destino, MARGEM)
+		var no_lago := _no_lago(t, id)
+		if no_lago.is_empty():
+			if acao != "remar":  # só no barco se fica sobre a água
+				destino = maxf(destino, MARGEM)
+		else:  # a pesca e o banho na água rasa, e a lavagem na beira, de frente para o lago
+			destino = no_lago.x
 		var abate := _lugar_na_cacada(t, id)
 		if not abate.is_empty():  # a caçada encenada: em fila na espreita, e no abate em volta do bicho
 			destino = abate.x
@@ -169,6 +177,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		var fogo: float = vista.fogo_mais_perto(x)
 		if not abate.is_empty() and not movendo:
 			_virada[id] = abate.espelho  # olhando para o bicho
+		elif not no_lago.is_empty() and not movendo:
+			_virada[id] = no_lago.espelho
 		elif movendo:
 			_virada[id] = x < anterior
 		elif (acao in OLHA_O_FOGO or t.get("detalhe", "") in OLHA_O_FOGO) and absf(fogo - x) < 40.0:
@@ -194,7 +204,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		r.append({"id": id, "folha": visual[0], "quadro": visual[2], "largura": largura,
 			"x": xr - (6 if crianca else 8) / 2, "base": base, "espelho": espelho,
 			"codigo": Arte.codigo_troca(pele, cabelo, roupa), "fogo": fogo, "acompanhada": p.get("acompanhada", false),
-			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena, "nucleo": t.destino})
+			"movendo": movendo, "atras": _atras.has(id), "acao": acao, "cena": t.cena, "nucleo": t.destino,
+			"detalhe": t.get("detalhe", "")})
 	_objetos_de_cena(r, relogio)
 	_objetos_do_cotidiano(r, relogio)
 	_animais_das_cenas(r, relogio)
@@ -243,6 +254,8 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 	var q4 := int(fase * 5.0) % 4
 	var detalhe: String = t.get("detalhe", "")
 	if crianca:
+		if detalhe == "banho" and not anda:
+			return ["acoes/crianca_banho_4q", 6, (int(fase * 2.0) + id) % 4, 0]
 		if detalhe == "brigar":  # duas crianças de frente, com quadros defasados
 			return ["acoes/criancas_brigar_4q", 6, (int(fase * 5.0) + id) % 4, 0]
 		if detalhe == "perdido" and not anda:
@@ -283,6 +296,22 @@ func _visual(p: Dictionary, acao: String, t: Dictionary, anda: bool, relogio: fl
 	if DETALHES.has(detalhe):
 		return [DETALHES[detalhe][0], DETALHES[detalhe][1], q4, 0]
 	match detalhe:
+		"pescar_lanca":  # na água rasa, curvado, com a lança apontada para a água; segura cada quadro 2 s
+			return ["acoes/pescar_espreitar_forte_2q", 12, int(fase / 2.0) % 2, 0]
+		"golpear":  # mira (segura), arpoa e, no golpe certo, ergue o peixe se debatendo
+			var g := _etapa_de(t.cena)
+			var pg: float = g.get("p", 0.0)
+			if pg < 0.35:
+				return ["acoes/pescar_arpoar_forte_4q", 12, 0, 0]
+			if pg < 0.6 or not g.get("acerto", false):
+				return ["acoes/pescar_arpoar_forte_4q", 12, 1, 0]
+			return ["acoes/pescar_arpoar_forte_4q", 12, 2 + int(fase * 2.5) % 2, 0]
+		"peixe_na_lanca":  # parado, mostrando o peixe na ponta
+			return ["acoes/pescar_arpoar_forte_4q", 12, 2 + int(fase * 2.5) % 2, 0]
+		"banho":  # as crianças na água: jogam água, batem, mergulham e sacodem
+			return ["acoes/crianca_banho_4q", 6, (int(fase * 2.0) + id) % 4, 0]
+		"despejar":  # vira o cesto no chão, perto do fogo (o cesto vem em _objetos_do_cotidiano)
+			return ["acoes/agachar_2q", 8, 1, 0]
 		"mirar":  # parado um instante com a lança erguida, antes de soltar
 			return ["acoes/cacar_arremessar_forte_4q", 12, 1, 0]
 		"apontar":  # os de trás apontam o porco
@@ -485,6 +514,63 @@ func _objetos_do_cotidiano(r: Array, relogio: float) -> void:
 				objetos.append(_objeto("objetos/panela", 8, f.x + frente, f.base, 0))
 			"acoes/cozinhar_espeto_4q":
 				objetos.append(_objeto("objetos/espeto", 12, f.x + frente - 2, f.base, 0))
+		match f.get("detalhe", ""):
+			"despejar":  # o cesto virado no chão, à frente
+				objetos.append(_objeto("objetos/cesto_cheio", 8, f.x + frente, vista.chao(f.x + frente + 4), 0))
+			"pescar_lanca":  # de vez em quando um peixe pula à frente de quem pesca: ali tem peixe
+				var ciclo := fmod(relogio + f.id * 3.7, 9.0)
+				if ciclo < 1.2:
+					var px: int = f.x + (-16 if f.espelho else 20)
+					var peixe := _objeto("criaturas/peixe_pular_forte_4q", 10, px, Terreno.NIVEL_AGUA, 0)
+					peixe.quadro = mini(int(ciclo / 0.3), 3)
+					peixe.espelho = f.espelho
+					objetos.append(peixe)
+
+
+## A etapa atual de uma cena com `etapas` (pesca, coleta, lavagem): a etapa da
+## API, mais `p` (0..1 dela), ou {}.
+func _etapa_de(cena: Dictionary) -> Dictionary:
+	var h: float = sim.hora_continua()
+	for c in sim.cenas:
+		if str(c.get("id", -1)) != str(cena.get("id", -2)):
+			continue
+		for e in c.get("etapas", []):
+			if h >= float(e["ini"]) and h < float(e["fim"]):
+				var r: Dictionary = e.duplicate()
+				r["p"] = (h - float(e["ini"])) / maxf(float(e["fim"]) - float(e["ini"]), 0.001)
+				return r
+	return {}
+
+
+## A ordem de alguém entre os participantes da cena (ou entre as crianças dela,
+## com `criancas`), ou 99.
+func _posto_na_cena(cena: Dictionary, id: int, criancas := false) -> int:
+	for c in sim.cenas:
+		if str(c.get("id", -1)) == str(cena.get("id", -2)):
+			var k: int = c.get("criancas" if criancas else "participantes", []).find(id)
+			return k if k >= 0 else 99
+	return 99
+
+
+## A beira do lago como se vê: a primeira coluna depois da água desenhada.
+func _beira() -> int:
+	return vista.beira_visivel
+
+
+## Na pesca e no banho, dentro da água rasa; na lavagem, ajoelhado na beira
+## com o pano sobre a água. {x (o centro), espelho}, ou {} fora dessas cenas.
+func _no_lago(t: Dictionary, id: int) -> Dictionary:
+	var detalhe: String = t.get("detalhe", "")
+	var beira := float(_beira())
+	if detalhe == "lavar":
+		# o corpo nas colunas 4 a 11 (na terra), o pano nas 0 a 3 (sobre a água), a 10 px um do outro
+		return {"x": beira + 10.0 * mini(_posto_na_cena(t.cena, id), 3), "espelho": true}
+	if not detalhe in NA_AGUA or (t.anda and detalhe == "peixe_na_lanca"):
+		return {}
+	if detalhe == "banho":  # duas a duas, frente a frente, a 7 px
+		var k := mini(_posto_na_cena(t.cena, id, true), 5)
+		return {"x": vista.chao_aberto(beira - 6.0, -1.0, true) - 7.0 * k, "espelho": k % 2 == 0}
+	return {"x": vista.chao_aberto(beira - 9.0, -1.0, true), "espelho": true}  # sem mato na frente
 
 
 ## Os bichos das cenas: a caça no lugar da caçada (até voltarem com ela) e o

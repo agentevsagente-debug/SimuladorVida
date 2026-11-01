@@ -613,7 +613,10 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 					fazendo = papel + (", " + fazendo if fazendo != "" else "")
 				if fazendo != "":
 					linhas.append(fazendo.left(1).to_upper() + fazendo.substr(1))
-				if String(d.get("pensamento", "")) != "":  # quem dorme sem sonhar não pensa nada
+				if String(d.get("sonho", "")) != "":  # dormindo, o sonho como narração, sem aspas
+					pensamento = linhas.size()
+					linhas.append(String(d["sonho"]))
+				elif String(d.get("pensamento", "")) != "":  # quem dorme sem sonhar não pensa nada
 					pensamento = linhas.size()
 					linhas.append("\"%s\"" % d["pensamento"])
 					_citados = _citados_em(String(d["pensamento"]), int(pe["id"]))
@@ -629,6 +632,21 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			linhas.append("espera há %d dias" % pr["dias"] if pr["dias"] != 1 else "espera há 1 dia")
 			icone = NECESSIDADES.find(pr["necessidade"])
 		"lugar":
+			# à noite, quem dorme está dentro da cabana: a dica vai nela, com o sonho em lilás
+			var cab: Dictionary = vista.sim.mundo.dica_cabana(p.x) if vista.sim.mundo.has_method("dica_cabana") else {}
+			if not cab.is_empty() and not cab.get("dormem", []).is_empty():
+				var dormem: Array = cab["dormem"]
+				if dormem.size() <= 5:
+					linhas.append(String(cab["texto"]))
+				else:  # casa cheia: os 4 primeiros e quantos mais
+					var nomes: Array = dormem.slice(0, 4).map(func(id): return String(vista.sim.mundo.pessoa(id).nome))
+					linhas.append("Dormem aqui: %s e mais %d" % [", ".join(nomes), dormem.size() - 4])
+				if String(cab.get("sonho", "")) != "":
+					pensamento = 1
+					linhas.append(String(cab["sonho"]))
+				alvo = tela - Vector2(0, 4)
+				_mostrar_dica(linhas, -1, alvo, true, pensamento)
+				return
 			var z: Dictionary = o.zona
 			var vila: Dictionary = o.get("vila", {})
 			if not vila.is_empty():  # sobre o acampamento ou a vila, o nome dela vem antes da zona

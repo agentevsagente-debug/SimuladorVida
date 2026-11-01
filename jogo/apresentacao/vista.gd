@@ -122,6 +122,7 @@ var _luzes: Sprite2D         # janelas acesas, por cima das casas e sem a tabela
 var _tex_luzes := []         # [todas as casas, só as acordadas de madrugada]
 var rodas: Array = []        # [{x, base}] rodas d'água (a vida desenha, animadas)
 var chamines: Array = []     # pontos de onde sobe a fumaça das lareiras no inverno
+var beira_visivel := 0         # a primeira coluna depois da água desenhada do lago
 var telhados: Array = []     # pontos no alto das casas onde os pássaros pousam: Vector2(x, linha de cima)
 var _chamines_json := {}
 var _camera_aplicada := [-1, Vector2(-1, -1)]
@@ -480,6 +481,9 @@ func _montar_fixo() -> void:
 	if not _modo_layout:  # depois do terreno, que diz onde é água
 		_encaixar_lotes(obras)
 	var agua_mascara := _mascara_agua(tag)
+	beira_visivel = 0  # onde a água desenhada acaba, na linha logo abaixo da superfície
+	while beira_visivel < LARGURA and roundi(tag.get_pixel(beira_visivel, Terreno.NIVEL_AGUA + 1).r * 255.0) == Arte.AGUA:
+		beira_visivel += 1
 
 	var frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_RGBA8)
 	var tag_frente := Image.create(LARGURA, ALTURA, false, Image.FORMAT_R8)
@@ -817,7 +821,8 @@ func poleiro_coruja(perto_de := -1.0) -> Vector2:
 
 ## O x mais perto de x, andando para `lado`, onde o chão está aberto (sem
 ## arbusto, capim ou pedra atrás), para a caça caída não sumir no mato.
-func chao_aberto(x: float, lado: float) -> float:
+## Com `na_agua`, vale também a água rasa (quem pesca ou se banha).
+func chao_aberto(x: float, lado: float, na_agua := false) -> float:
 	for passo in 16:
 		var cx := x + lado * passo * 2.0
 		var livre := true
@@ -825,7 +830,7 @@ func chao_aberto(x: float, lado: float) -> float:
 			if cx + 6.0 > b[0] and cx - 6.0 < b[1]:
 				livre = false
 				break
-		if livre and not _na_agua(roundi(cx)):
+		if livre and (na_agua or not _na_agua(roundi(cx))):
 			return cx
 	return x
 
