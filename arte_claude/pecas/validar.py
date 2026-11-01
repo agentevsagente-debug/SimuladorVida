@@ -38,6 +38,11 @@ for f in sorted(AQUI.rglob("*.png")):
         qw = w // nq
         if (qw, h) not in ((8, 12), (6, 8)) or w % nq:
             erros.append(f"{rel}: quadro {qw}x{h} fora do padrão")
+    if pasta == "efeitos" and not f.stem.startswith("amostra"):
+        fim = f.stem.rsplit("_", 1)[1]
+        n = int(fim[:-1]) if fim[-1] in "qv" and fim[:-1].isdigit() else 1
+        if w % n or (w // n) % 4 or h % 4:
+            erros.append(f"{rel}: quadro {w // n}x{h} não é múltiplo de 4")
     if pasta == "estagio1" and (w % (8 * nq) or h % 8):
         erros.append(f"{rel}: tamanho {w}x{h} não é múltiplo de 8")
 print(f"{total} PNGs conferidos")

@@ -107,7 +107,40 @@ A base de cada peça, o ponto que toca o chão, fica na última linha.
 
 Fumaça e fagulhas da fogueira são partículas do motor.
 
-## 4. Camadas do motor (`montagem/`)
+## 4. Efeitos dos poderes e do clima (`efeitos/`)
+
+Os nomes seguem duas regras. O sufixo `_Nq` indica N quadros de animação, lidos da esquerda para a direita. O sufixo `_Nv` indica N variações do mesmo tamanho, e o motor sorteia uma para cada partícula.
+
+Nenhum efeito usa semitransparência. Quando algo some aos poucos, como a fumaça e a poeira, o pontilhado fica cada vez mais ralo de um quadro para o outro.
+
+`amostra_efeitos_4x.png` mostra todos os efeitos sobre o céu de dia e sobre a noite.
+
+| Folha | Quadro | Quadros | Uso |
+|---|---|---|---|
+| `gotas_3v` | 4 × 8 | 3 variações | partícula de chuva (curta, longa inclinada, pingo) |
+| `respingo_4q` | 8 × 8 | 4 | gota batendo no chão ou na água |
+| `nuvem_chuva_2q` | 48 × 24 | 2 | a nuvem carregada que o jogador arrasta, com fiapos de chuva na base |
+| `raio_a_2q`, `raio_b_2q`, `raio_c_2q` | 32 × 120 | 2 | raio sem galhos, com 2 galhos e com 4 galhos. O quadro 1 é a descarga, e o quadro 2 é o canal esfriando. A ponta de baixo toca o chão. |
+| `raio_impacto_4q` | 16 × 16 | 4 | clarão, faíscas e fumaça no ponto atingido (base na linha 14) |
+| `chamas_4q` | 16 × 16 | 4 | o poder do fogo no chão ou no capim |
+| `chamas_grandes_4q` | 24 × 32 | 4 | fogo em cabana, casa ou árvore |
+| `brasas_4q` | 8 × 8 | 4 | brasas pulsando depois do fogo |
+| `fumaca_6q` | 16 × 16 | 6 | baforada que sobe, cresce e se desfaz |
+| `terra_subindo_4q` | 32 × 24 | 4 | morro brotando, com torrões caindo e poeira; o motor depois troca pelos blocos de terreno |
+| `poeira_4q` | 16 × 8 | 4 | poeira no pé da terra que sobe ou do impacto |
+| `rachadura_3q` | 16 × 8 | 3 | o chão abrindo, desenhado por cima dos blocos |
+| `fartura_brilho_4q` | 8 × 8 | 4 | cintilar dourado sobre a colheita ou a caça |
+| `fartura_aura_4q` | 16 × 16 | 4 | partículas verdes e douradas subindo da roça (repete em laço) |
+| `sonho_4q` | 16 × 16 | 4 | espiral lilás que desce sobre quem recebe o sonho |
+| `sonho_brilho_4q` | 8 × 8 | 4 | brilho lilás solto |
+| `folha_verde_4q`, `folha_seca_4q` | 8 × 8 | 4 | folha girando ao vento |
+| `vagalume_4q` | 8 × 8 | 4 | vagalume piscando (só à noite) |
+
+**À noite:**
+- não passam pela tabela `noite`, porque emitem luz: raio, impacto, chamas, brasas, fartura, sonho e vagalume;
+- usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas.
+
+## 5. Camadas do motor (`montagem/`)
 
 | Arquivo | O que é |
 |---|---|
