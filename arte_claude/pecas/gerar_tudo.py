@@ -4,10 +4,12 @@ import runpy
 
 AQUI = Path(__file__).resolve().parent
 for script in ("terreno/terreno.py", "habitantes/habitantes.py", "estagio1/estagio1.py",
-               "efeitos/efeitos.py", "efeitos/efeitos_fase2.py", "sinais/sinais.py", "interface/interface.py", "interface/icone_jogo.py", "estagio2/estagio2.py",
-               "memoria/memoria.py", "culturas/culturas.py",
+               "efeitos/efeitos.py", "efeitos/efeitos_fase2.py", "sinais/sinais.py", "interface/interface.py",
+               "interface/icone_jogo.py", "estagio2/estagio2.py", "memoria/memoria.py", "culturas/culturas.py",
                "estagio3/estagio3.py", "estagio4/estagio4.py", "estagio5/estagio5.py", "estagio6/estagio6.py",
                "montagem/camadas.py", "montagem/montar.py", "cenas/cenas.py",
-               "estacoes/estacoes.py", "estacoes/cena_estacoes.py", "acoes/acoes.py", "acoes/vida.py", "natureza/natureza.py",
-               "estante/estante.py", "criaturas/criaturas.py", "luzes/luzes.py"):
+               "acoes/acoes.py", "acoes/vida.py", "acoes/cotidiano.py", "natureza/natureza.py",
+               "estante/estante.py", "criaturas/criaturas.py",
+               # as estações vêm depois de todas as peças, porque geram as variações a partir delas
+               "estacoes/estacoes.py", "estacoes/cena_estacoes.py", "luzes/luzes.py"):
     runpy.run_path(str(AQUI / script), run_name="__main__")

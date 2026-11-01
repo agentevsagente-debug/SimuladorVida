@@ -64,16 +64,20 @@ def seca_rachaduras():
 
 
 def calor():
-    """Tremor de calor: listras onduladas pontilhadas que sobem (16x16, 4 quadros)."""
+    """Tremor de calor: tracinhos ondulados curtos, em posições sorteadas (fixas), que
+    sobem e somem. Nada de linhas inteiras nem pontilhado em grade."""
+    rng = random.Random(510)
+    tracos = [(rng.randrange(16), rng.randrange(16), rng.randint(2, 4)) for _ in range(7)]
     quadros = []
     for k in range(4):
         q = novo(16, 16)
-        for faixa in range(3):
-            y0 = 13 - faixa * 5 - k
-            for x in range(16):
-                y = y0 + round(math.sin((x + k * 2) * 0.8))
-                if 0 <= y < 16 and pont(x, y, 0.5 - faixa * 0.12):
-                    put(q, x, y, 12 if faixa else 16)
+        for x0, y0, comp in tracos:
+            y = (y0 - k * 3) % 16
+            for i in range(comp):
+                x = (x0 + i) % 16
+                yy = y + (1 if (x + k) % 4 < 2 else 0)
+                if 0 <= yy < 16:
+                    put(q, x, yy, 16 if yy > 9 else 12)
         quadros.append(q)
     return quadros
 
@@ -189,21 +193,29 @@ def fenda():
 
 
 def poeira_terremoto():
-    """Nuvem de poeira larga (32x16) que sobe do chão e se desfaz em 4 quadros."""
+    """Nuvem de poeira (32x16) de contorno irregular: sobe, cresce e se desfaz pelas bordas
+    em pedaços (sorteio fixo por pixel), sem bordas retas nem pontilhado em grade.
+    Para cobrir uma área larga, o motor espalha várias, com deslocamentos e quadros
+    diferentes."""
     rng = random.Random(503)
-    bolhas = [(rng.uniform(4, 28), rng.uniform(9, 14), rng.uniform(3, 5)) for _ in range(7)]
+    bolhas = [(rng.uniform(5, 27), rng.uniform(9, 13), rng.uniform(3, 5)) for _ in range(6)]
+    ruido = [[rng.random() for _ in range(32)] for _ in range(16)]
     quadros = []
     for k in range(4):
         q = novo(32, 16)
-        dens = (0.9, 0.75, 0.5, 0.28)[k]
         for y in range(16):
             for x in range(32):
+                melhor = None
                 for bx, by, br in bolhas:
-                    r = br + k * 1.2
-                    if math.hypot(x - bx, (y - (by - k * 1.5)) * 1.3) <= r:
-                        if pont(x, y, dens):
-                            put(q, x, y, 12 if y < by - k * 1.5 - r * 0.3 else 10 if k < 2 else 11)
-                        break
+                    r = br + k * 1.1
+                    d = math.hypot(x - bx, (y - (by - k * 1.4)) * 1.3) / r
+                    melhor = d if melhor is None else min(melhor, d)
+                if melhor > 1 or melhor > 1 - k * 0.13 or ruido[y][x] < k * 0.18 * (0.3 + melhor):
+                    continue
+                c = 12 if melhor < 0.45 and y < 10 else 10 if k < 2 else 11
+                if melhor > 0.8 and ruido[y][x] < 0.5:
+                    c = 9
+                put(q, x, y, c)
         quadros.append(q)
     return quadros
 

@@ -371,7 +371,8 @@ PASTAS_PESSOAS = ("habitantes", "acoes", "estagio2", "estagio3", "estagio4", "es
 PREFIXOS_PESSOAS = ("adulto_", "crianca", "idoso", "guerreiro", "ferreiro", "escriba", "pescar", "carregar",
                     "construir", "forjar", "escrever", "remar", "lutar", "dancar", "olhar", "esticar", "sentar",
                     "agachar", "cocar", "bocejar", "conversar", "mae_", "casal", "funeral", "tocar", "andar_",
-                    "segurar")
+                    "segurar", "colher_arbusto", "cavar", "catar", "cacar", "cozinhar", "buscar", "banhar",
+                    "vigia", "contar", "ouvir", "criancas", "tropecar", "espantar", "discutir", "abraco")
 
 
 def vestir_inverno(px, qw, qh):
