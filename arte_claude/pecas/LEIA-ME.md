@@ -168,6 +168,31 @@ São os efeitos dos 5 poderes restantes. `amostra_efeitos_fase2_4x.png` mostra t
 - usam a tabela `noite`: gotas, respingo, nuvem, fumaça, poeira, terra, rachadura e folhas;
 - da fase 2, emitem luz cometa, eclipse, cura e o fogo brando (`fogo_brando_*` e `calor_brando_4q`); seca, calor, chuva forte, cortina, enchente, destroços, fenda, poeira do terremoto e pedras usam a tabela `noite`.
 
+### Versões noturnas (`efeitos_noite.py`)
+
+Na auditoria 8, alguns efeitos dos poderes quase não se liam no escuro. Os brilhos da fartura, do sonho e da cura eram pequenos. A racha da seca, a fenda e as pedras do terremoto ficavam escuras sobre o chão escuro. As versões noturnas abaixo já vêm nas cores da noite e **não passam pela tabela `noite`**. Use-as no lugar da de dia do entardecer até o amanhecer, quando a tabela `noite` está em uso. `amostra_efeitos_noite_4x.png` mostra, em cada linha, a de dia como fica à noite hoje (à esquerda) e a noturna (à direita).
+
+| Folha | No lugar de | Quadro | O que muda |
+|---|---|---|---|
+| `fartura_brilho_noite_4q` | `fartura_brilho_4q` | **12 × 12** (centro em 6, 6) | estrela de 4 pontas maior: miolo branco, braços dourados de 3 px e contorno escuro |
+| `fartura_aura_noite_4q` | `fartura_aura_4q` | 16 × 16 | 12 partículas douradas de 2 px (claro em cima), com uma faísca branca de vez em quando |
+| `sonho_noite_4q` | `sonho_4q` | 16 × 16 | a espiral com 7 pontos de 2 px, em branco e lilás, e o rastro |
+| `sonho_brilho_noite_4q` | `sonho_brilho_4q` | **12 × 12** (centro em 6, 6) | a estrela, em lilás |
+| `cura_brilho_noite_4q` | `cura_brilho_4q` | **12 × 12** (centro em 6, 6) | a estrela, em verde-claro |
+| `seca_rachaduras_noite_4q` | `seca_rachaduras_4q` | 32 × 8 | as rachas com o realce da lua: claro em cima e do lado esquerdo |
+| `fenda_noite_4q` | `fenda_4q` | 16 × 16 | a fenda com a borda esquerda e a de cima claras de lua |
+| `pedras_caindo_noite_3v` | `pedras_caindo_3v` | 4 × 4 | a face de cima das pedras clara de lua |
+
+**Os outros efeitos, revistos à noite e que não precisam de versão:**
+- **Chuva:** gotas e nuvem; a nuvem é escura sobre o céu escuro, mas a chuva que cai dela se lê.
+- **Dilúvio:** chuva forte, cortina, enchente e destroços.
+- **Raio:** o raio e o impacto, que emitem luz.
+- **Poeira do terremoto:** marrom, se lê.
+- **Presságio:** o cometa emite luz; o eclipse só acontece de dia.
+- **Cura:** a luz da cura.
+
+O `calor_4q` da seca não aparece de noite: não há tremor de calor no escuro.
+
 ## 5. Sinais de prece (`sinais/`)
 
 A base de cada quadro é a última linha, o ponto de onde a luz nasce. Ela vai 1 px acima da cabeça de quem reza ou, para a vila, acima do telhado mais alto. Os sinais emitem luz, então não passam pela tabela da noite. `amostra_sinais_4x.png` mostra todos sobre o dia e sobre a noite.
