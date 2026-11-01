@@ -30,5 +30,5 @@ folha("antes_e_depois_estagio5", ["capturas7/s3_a161_10h_00.png", "s1_a115_10h_0
 folha("ok_estagio5_casa_caiada_e_templo", ["s1_a115_10h_00"], (100, 62, 300, 128), 1, 5)
 folha("ok_estagio6_cupula_moinho_muralha", ["s3_a200_10h_00"], (100, 62, 300, 128), 1, 5)
 folha("noite_e_inverno", ["s3_a200_22h_00", "s3_a200_inverno_00"], VILA, 1, 2)
-folha("A9_chapeu_de_palha_antes_depois", ["s3_a200_tarde1x_15", "depois_e6_15"], (150, 96, 260, 126), 1, 6)
+folha("A9_chapeu_de_palha_antes_depois", ["A9_antes_tarde1x_15", "depois_e6_15"], (150, 96, 260, 126), 1, 6)
 print("recortes em", R)

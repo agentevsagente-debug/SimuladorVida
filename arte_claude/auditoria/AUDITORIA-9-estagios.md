@@ -1,6 +1,6 @@
 # Auditoria 9: os estágios 3 a 6 com tudo ligado
 
-*Sessão C (arte), 01/11/2026. Feita sobre a main em `7c70435`. Ela refaz as notas da auditoria 7 com as peças ligadas pela B (as roupas, a casa caiada, a fileira de trás, o arquivo, a estela, a roda d'água, a muralha e o estandarte) e com o equilíbrio novo da A. O roteiro está em `AUDITORIA-9-roteiro.md`. A meta era nenhum estágio abaixo de 4.*
+*Sessão C (arte), 01/11/2026. Capturada de novo sobre a main em `3f3a65b`, depois da correção da B em que a fileira de trás das casas não era desenhada (o campo `fileira` se perdia). A primeira captura, sobre `7c70435`, deu as mesmas notas; as capturas e os recortes daqui são os novos. Ela refaz as notas da auditoria 7 com as peças ligadas pela B (as roupas, a casa caiada, a fileira de trás, o arquivo, a estela, a roda d'água, a muralha e o estandarte) e com o equilíbrio novo da A. O roteiro está em `AUDITORIA-9-roteiro.md`. A meta era nenhum estágio abaixo de 4.*
 
 ## Como foi feito
 
@@ -32,7 +32,7 @@ Em cada ano, capturei 10h, 19h, 22h e o inverno, mais 1 min de tarde em 1x por e
 | **5, escrita** | 2 | **4** | Era o estágio que não existia; agora é o que mais mudou (`antes_e_depois_estagio5.png`). As casas caiadas com o friso escrito, o templo de escrita, o arquivo com as estantes e a estela, e o estandarte lilás. Na semente 1 (Sagak, ano 115) estão as quatro peças juntas. |
 | **6, engenharia** | 3 | **5** | O mais bonito do jogo (`antes_e_depois_estagio6.png` e `ok_estagio6_cupula_moinho_muralha.png`): casas de tijolo, o templo de cúpula, moinhos girando, torres com o muro entre elas, a roda d'água, barcos no lago, e o povo de chapéu. De noite, as janelas acesas e as fogueiras; no inverno, a neve nos telhados (`noite_e_inverno.png`). |
 
-**A meta foi atingida:** nenhum estágio ficou abaixo de 4. A soma foi de 11 para 17.
+**A meta foi atingida:** nenhum estágio ficou abaixo de 4. A soma foi de 11 para 17. Com a fileira de trás, o 3 e o 4 ficam perto de 5: o que falta está em "O que falta para os estágios 3, 4 e 5 irem a 5".
 
 ## O que mudou desde a auditoria 7
 
@@ -40,7 +40,7 @@ Em cada ano, capturei 10h, 19h, 22h e o inverno, mais 1 min de tarde em 1x por e
 |---|---|---|
 | A1 | roupas dos estágios nas folhas de sempre | **corrigido**: o povo todo com a roupa do estágio. No 6, ajustei o chapéu (A9, abaixo). |
 | A2 | a casa caiada do estágio 5 | **corrigido** e ligado |
-| V1 | a vila amontoada | **melhorou muito**: a fileira de trás e as casas em fila tiram a multidão da frente. Sobra uma faixa de gente na frente das casas da esquerda, mas as portas e as fogueiras aparecem. No núcleo, os povos maiores ainda têm uma `cabana` só (Koil com 84 pessoas, Raon com 102, Zeor com 104). A tela compensa, mas a conta da A continua lá. |
+| V1 | a vila amontoada | **melhorou muito**: com a fileira de trás desenhada, as casas ficam em duas filas, uma atrás da outra, e a vila ganha profundidade. No estágio 6, o morro vira uma cidade pequena, com torres, moinho e casas em camadas. As casas em fila tiram a multidão da frente. Sobra uma faixa de gente na frente das casas da esquerda, mas as portas e as fogueiras aparecem. No núcleo, os povos maiores ainda têm uma `cabana` só (Koil com 84 pessoas, Raon com 102, Zeor com 104). A tela compensa, mas a conta da A continua lá. |
 | E1 | o estágio 5 sem obra própria | **corrigido**: o templo de escrita, a estela e o arquivo aparecem (o arquivo ainda é raro: só o Sagak tinha) |
 | E2 | o estágio 6 sem templo, canal ou muro | **corrigido**: a cúpula, a roda d'água, o moinho e o muro entre as torres |
 | C1 | as culturas iguais | **melhorou**: o estandarte de cada povo, na cor da roupa e com o símbolo, separa as vilas à primeira vista. Os telhados ainda são quase todos de telha nas sementes 3 e 7. |
