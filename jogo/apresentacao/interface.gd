@@ -773,6 +773,9 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 				estado.append("farta")
 			if not estado.is_empty():
 				linhas.append(", ".join(estado))
+	if _mundo_vazio() and o.get("tipo", "") != "pessoa":  # junto do cursor também (auditoria 12, V4)
+		linhas.append("Clique para fazer nascer um povo aqui")
+		alvo = tela - Vector2(0, 4)
 	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem, leve)
 
 

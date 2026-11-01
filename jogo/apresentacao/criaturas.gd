@@ -34,6 +34,12 @@ var fosco: Efeitos
 var luminoso: Efeitos
 var _rng := RandomNumberGenerator.new()
 var _espera := {}
+## O mundo que nunca teve gente (o convite está no chão): os primeiros segundos não
+## podem parecer parados. Um bicho grande entre 4 e 8 s, e os bandos de pássaros 3
+## vezes mais frequentes até o primeiro povo (auditoria 12, V2).
+var vazio := false
+var _acolhida := -1.0  # s até o bicho da acolhida; < 0: ainda não marcado
+const PASSAROS_NO_VAZIO := 3.0
 
 
 func criar(p_vista: Node2D, p_fosco: Efeitos, p_luminoso: Efeitos) -> void:
@@ -46,11 +52,23 @@ func criar(p_vista: Node2D, p_fosco: Efeitos, p_luminoso: Efeitos) -> void:
 
 
 func avancar(delta: float, hora: float, estacao: String, pessoas_x: Array) -> void:
+	if vazio:
+		if _acolhida < 0.0:
+			_acolhida = _rng.randf_range(4.0, 8.0)
+		elif _acolhida < 1000.0:
+			_acolhida -= delta
+			if _acolhida <= 0.0:
+				_acolhida = 1e9  # uma vez só
+				if estacao == "inverno":
+					_nascer("coelho", pessoas_x)
+				else:
+					_nascer("cervo", pessoas_x)
+					_nascer("garca", pessoas_x)
 	for tipo in REGRAS:
 		var r: Array = REGRAS[tipo]
 		if not estacao in r[0] or hora < r[1] or hora >= r[2]:
 			continue
-		_espera[tipo] -= delta
+		_espera[tipo] -= delta * (PASSAROS_NO_VAZIO if vazio and tipo == "passaros" else 1.0)
 		if _espera[tipo] > 0.0:
 			continue
 		_espera[tipo] = _rng.randf_range(r[3], r[4])
@@ -140,8 +158,8 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 					fosco.emitir(folha, 6, 4, Vector2(x, vista.chao(int(x))), Vector2(14.0 * dir, 0), 40.0 / 14.0 + 0.4,
 						8.0, 0, {"espelho": dir < 0.0, "rente": true})
 					break
-		"cervo":  # pastando na borda da floresta do morro
-			var x := _rng.randf_range(400, 470)
+		"cervo":  # pastando na borda da floresta do morro (no mundo vazio, no capim aberto antes dela, à vista)
+			var x := _rng.randf_range(345, 375) if vazio else _rng.randf_range(400, 470)
 			if _longe_de_gente(x, pessoas_x, 50.0):
 				fosco.emitir(folha, 10, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(30, 70), 1.5, 0,
 					{"espelho": _rng.randf() < 0.5})
