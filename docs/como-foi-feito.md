@@ -128,7 +128,7 @@ A memória está na medida que o Gerenciador de Tarefas mostra na coluna "Memór
 - A memória cresce com o mundo: cerca de 110 MB no começo e de 170 a 180 MB depois de 150 a 200 anos. O conjunto de trabalho completo é maior (de 200 a 300 MB), porque inclui páginas compartilhadas com o driver de vídeo.
 - Para economizar, o jogo desenha no máximo 30 quadros por segundo (20 em 1x e na pausa) e, escondido, para de desenhar.
 - O executável tem cerca de 106 MB.
-- As medições foram feitas sem o atalho global Ctrl+Alt+H, que o jogo liga sozinho ao abrir. O Godot não tem atalho global, então ele roda num processo à parte, do PowerShell, com CPU praticamente zero e cerca de 77 MB de memória a mais (medido no protótipo da janela, na fase 0).
+- As medições foram feitas sem o atalho global Ctrl+Alt+H, que o jogo liga sozinho ao abrir. O Godot não tem atalho global, então ele roda num processo à parte, do PowerShell, com CPU praticamente zero e cerca de 28 MB a mais na coluna do Gerenciador de Tarefas (medido no .exe da 0.1).
 
 ## Como as sessões de IA foram organizadas
 

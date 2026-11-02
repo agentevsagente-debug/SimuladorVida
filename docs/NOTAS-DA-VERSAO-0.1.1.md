@@ -46,7 +46,7 @@ O guia completo está em [Como jogar](https://github.com/agentevsagente-debug/Si
 - **O ícone perto do relógio pode estar escondido** na setinha "^" do Windows 11. Para trazer a janela de volta, use também o **Ctrl+Alt+H** ou o jogo na barra de tarefas.
 - **O Ctrl+Alt+H pode já estar em uso** por outro programa. Nesse caso, esse atalho não funciona no jogo; use o ícone ou a barra de tarefas.
 - **Engasgos em 50x num mundo grande, em computadores mais lentos.** Com cerca de 240 pessoas, a montagem do dia pode levar mais de 1 s. Na máquina de testes, isso não travou o jogo; num computador 2 a 3 vezes mais lento, o QA estima uma pausa de 1 a 2 s uma ou duas vezes por dia de jogo, só em 50x.
-- **A memória cresce com o mundo:** cerca de 110 MB no Gerenciador de Tarefas num mundo novo e de 170 a 180 MB depois de 150 a 200 anos. O atalho Ctrl+Alt+H roda num processo à parte do PowerShell, que usa mais memória (cerca de 77 MB, na medição do primeiro protótipo).
+- **A memória cresce com o mundo:** cerca de 110 MB no Gerenciador de Tarefas num mundo novo e de 170 a 180 MB depois de 150 a 200 anos. O atalho Ctrl+Alt+H roda num processo à parte do PowerShell, que usa cerca de 28 MB a mais no Gerenciador de Tarefas e praticamente nenhuma CPU (medido no .exe).
 - **A tarde (das 12h às 15h30 do jogo) é o período mais parado do dia.**
 - **O relógio do Windows conta como tempo fora.** Se o relógio pular para a frente, o mundo avança junto, até o teto de 1 ano de jogo.
 - **Testado sobretudo por máquinas.** Quase todos os testes foram automáticos ou feitos por sessões de IA jogando o jogo, inclusive no próprio executável. Esta é a primeira versão nas mãos de pessoas, então os seus relatos ajudam muito.
