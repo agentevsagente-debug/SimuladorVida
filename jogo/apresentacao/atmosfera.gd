@@ -265,6 +265,7 @@ func avancar(delta: float, hora: float, estado: int, fogos: Array, clima: Dictio
 	_atualizar_neblina(hora, estado)
 	_fogueiras(delta, estado, fogos)
 	var estacao: String = vista.estacao_atual()
+	_criaturas.vazio = vista._convite
 	_criaturas.avancar(delta, hora, estacao, vista.figuras.map(func(f): return float(f.x)))
 	_neve_e_folhas(delta, estacao, clima)
 	_vagalumes(estado)

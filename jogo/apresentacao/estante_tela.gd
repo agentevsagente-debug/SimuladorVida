@@ -27,6 +27,7 @@ const BASES := [72, 150]          # linha de cima de cada prateleira
 const INICIO_X := 24
 const FIM_X := [456, 340]          # a segunda prateleira deixa lugar para os botões
 const LIVRO := Vector2i(184, 8)    # canto do livro aberto (256 × 144); com o índice, o par fica centrado
+const LIVRO_SO := Vector2i(112, 8) # sem índice (um capítulo só, como a crônica do primeiro ano), o livro centrado
 const PAGINAS := [Rect2i(14, 12, 104, 118), Rect2i(138, 12, 104, 118)]
 const LINHAS := 9  # a décima linha encostava no número da página
 const ALTURA_LINHA := 11
@@ -362,8 +363,8 @@ func tratar(event: InputEvent, pos: Vector2) -> void:
 			elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
 				_folhear(-2)
 			elif event.button_index == MOUSE_BUTTON_LEFT:
-				var local := p - LIVRO
-				if INDICE.has_point(p) and not _indice.is_empty():  # um capítulo do índice
+				var local := p - _canto_livro()
+				if INDICE.has_point(p) and _com_indice():  # um capítulo do índice
 					var linhas := _linhas_do_indice()
 					var n := (p.y - INDICE.position.y - 6) / ALTURA_LINHA
 					if n >= 0 and n < linhas.size():
@@ -529,7 +530,7 @@ func _draw() -> void:
 
 
 func _desenhar_livro() -> void:
-	draw_texture(_livro, Vector2(LIVRO))
+	draw_texture(_livro, Vector2(_canto_livro()))
 	var escura: Font = interface._fontes["escura"]
 	var titulo: Font = interface._fontes["titulo"]
 	_desenhar_indice()
@@ -537,7 +538,7 @@ func _desenhar_livro() -> void:
 		var n := _pagina + lado
 		if n >= _paginas.size():
 			continue
-		var canto := Vector2(LIVRO + PAGINAS[lado].position)
+		var canto := Vector2(_canto_livro() + PAGINAS[lado].position)
 		var linhas: Array = _paginas[n]
 		for i in linhas.size():
 			var f: Font = titulo if linhas[i][1] in ESTILOS_TITULO else escura
@@ -549,13 +550,23 @@ func _desenhar_livro() -> void:
 				draw_rect(Rect2(canto.x, canto.y + i * ALTURA_LINHA + 10, 24, 1), Arte.paleta[8])  # um traço sob o título
 		var numero := str(n + 1)
 		var w := escura.get_string_size(numero, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x
-		draw_string(escura, Vector2(LIVRO + PAGINAS[lado].position) + Vector2((PAGINAS[lado].size.x - w) / 2,
+		draw_string(escura, Vector2(_canto_livro() + PAGINAS[lado].position) + Vector2((PAGINAS[lado].size.x - w) / 2,
 			(LINHAS + 1) * ALTURA_LINHA - 3 + int(escura.get_ascent(TAM_FONTE))), numero, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+
+
+## Com um capítulo só, o índice teria uma linha e um pergaminho vazio: some, e o
+## livro fica centrado (auditoria 12).
+func _com_indice() -> bool:
+	return _indice.size() > 1
+
+
+func _canto_livro() -> Vector2i:
+	return LIVRO if _com_indice() else LIVRO_SO
 
 
 ## O índice do livro aberto, à esquerda: o capítulo em que se está, na fonte de títulos.
 func _desenhar_indice() -> void:
-	if _indice.is_empty():
+	if not _com_indice():
 		return
 	_caixa_pergaminho(INDICE)
 	var atual := _secao_atual()

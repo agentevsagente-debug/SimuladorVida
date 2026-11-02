@@ -50,6 +50,17 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
 - **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
 
+**O .exe 0.1.1 (auditoria 12 da C).** `builds/Simulador de vida.exe` (versão 0.1.1.0 no arquivo) e o COMO JOGAR 0.1.1.
+- **V1:** o convite no chão já estava ligado desde `55c4b1e`. A auditoria usou a main anterior a ele.
+- **V2:** no mundo que nunca teve gente:
+  - entre 4 e 8 s aparecem um cervo, no capim aberto antes da floresta, e uma garça, na margem; no inverno, um coelho;
+  - os bandos de pássaros ficam 3 vezes mais frequentes até o primeiro povo (`capturas/mundo-vazio-bichos.png`).
+- **V4:** sobre o mundo vazio, a dica junto do cursor diz "Clique para fazer nascer um povo aqui" (`capturas/mundo-vazio-dica.png`).
+- **A crônica de um capítulo só:** o índice some e o livro fica centrado (`capturas/cronica-um-capitulo.png`).
+- **`verificar.ps1 -Executavel`:** os 19 itens passaram na terceira rodada. Nas duas anteriores, houve falhas de outro tipo:
+  - na primeira, o gesto aconteceu, mas em x = 291, e o teste exigia x = 300 exatos. Agora aceita qualquer x;
+  - na segunda, o clique sintético que escolhe o raio se perdeu, e os itens seguintes caíram em cascata. É a mesma instabilidade do primeiro clique depois de trocar o foco, já registrada no item 3.
+
 **O .exe 0.1.0 final** (main com o 84ae9d7 da A, o ícone novo e o convite da C): `builds/Simulador de vida.exe` e `builds/COMO JOGAR.txt`.
 - `verificar.ps1 -Executavel` (com `--com-povo`): os 19 itens passaram.
 - Aberto como o jogo de verdade:

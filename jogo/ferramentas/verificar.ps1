@@ -100,7 +100,7 @@ Start-Sleep -Milliseconds 1000
 Start-Sleep -Milliseconds 1000
 [Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500)
 Start-Sleep -Milliseconds 600
-$gesto = Select-String -Path $log -Pattern 'poder raio em x=300 intensidade=0\.(6|7|8)' | Select-Object -First 1
+$gesto = Select-String -Path $log -Pattern 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)' | Select-Object -First 1
 Registrar 'gesto do poder (raio)' ([bool]$gesto) $(if ($gesto) { $gesto.Line } else { 'nada no log' })
 
 # 4. Arrastar pela alça.

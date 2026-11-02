@@ -12,8 +12,8 @@
 | Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
 | Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **99** |
-| **Falham** | **12** (10 no núcleo e 2 em janela) |
+| **Passam** | **100** |
+| **Falham** | **11** (10 no núcleo e 1 em janela) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
 **Por área:**
@@ -34,23 +34,43 @@
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
-| Leveza | 7 | 5 | 1 | 0 | 1 |
+| Leveza | 7 | 6 | 0 | 0 | 1 |
 | Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
-| **Total** | **123** | **99** | **12** | **3** | **9** |
+| **Total** | **123** | **100** | **11** | **3** | **9** |
+
+**Na branch da A (`84ae9d7`, ainda fora da main):** a bateria dá **93 passam, 6 falham e 3 pulados** em 102 cenários do núcleo. Na main `69791ad`, dá 90, 9 e 3, e falha também no QA-185 novo. A saída está em `qa/rodada-branch-a-84ae9d7.txt`.
+
+| Item da A | Teste | Na branch `84ae9d7` |
+|---|---|---|
+| D-01, a estante | QA-109, QA-182 | **passam**: o mundo de teste guarda os livros em `<nome>.estante`, ao lado do arquivo; só `user://mundo.txt` usa `user://estante`; nenhuma ferramenta apaga a estante real |
+| D-02, a mira (núcleo) | QA-027 | **passa**: com o minuto, 10.800 de 10.800 toques acertam quem está sob o dedo (70 deles em gente sobreposta, no mesmo ponto) |
+| D-02, a mira (ponta a ponta) | **QA-185 (novo)** | **falha**: a apresentação ainda chama `usar_poder(poder, x, intensidade)` sem o minuto. O núcleo mira o meio da hora, e o raio cai no chão (alvo -1). Na main, acerta **outra pessoa** (alvo 12, esperado 1). Falta a B passar `sim.fracao() * 60` ou o id de quem está sob o cursor |
+| D-03, o fim do mundo | QA-131 | passa (já estava na main) |
+| D-09, o começo vazio | QA-002 | **passa**: população 0 às 7h, e criar povo dá 12 coletores na Primeira Era |
+| D-05, D-06, D-11, D-12, D-13 | QA-105, QA-111, QA-026, QA-064, QA-092 | ainda falham (a fazer) |
+
+**Notas desta rodada:**
+- **A bateria serve às duas versões.** Ela confere a API pela lista de métodos:
+  - `Mundo.new(s, [], HORA_INICIAL, true)` dá o mundo pronto;
+  - o QA-027 mede pelo minuto quando `_pessoa_perto(x, minuto)` existe;
+  - as estantes vêm de `Persistencia.pasta_estante()`;
+  - o QA-105 procura a versão 99 também em `mundo.ilegivel.txt`.
+- **Os testes da estante (QA-140 a QA-144)** passaram a ler a estante do caminho do mundo, porque o D-01 mudou onde os livros de teste ficam.
+- **Cuidado com o caminho longo:** com o `user://` numa pasta funda (mais de 260 caracteres no Windows), `Persistencia.salvar` devolve falso, e 17 testes caem. Rode a bateria com um `TEMP` curto. A pasta real do jogador (`%APPDATA%\Simulador de vida`) é curta, então isso não afeta o jogo.
 
 **Os defeitos, do mais grave ao mais leve:**
 
 | # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
 |---|---|---|---|---|
-| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade** (decisão do orquestrador) | A |
-| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim** | A |
+| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade**; corrigido na branch da A (`84ae9d7`), à espera do merge | A |
+| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim**; o núcleo está corrigido na branch da A, e **falta a B** passar o minuto (QA-185) | A, B |
 | D-03 | ~~Quando o último morre, o mundo só fica vazio na virada do dia~~ **corrigido** em `ece2046` (QA-131 passa) | — | — | A |
 | D-04 | ~~O jogo não mostra o número da versão~~ **corrigido** em `c06e4d0` (`config/version` 0.1.0; QA-166 passa) | — | — | B |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
 | D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
-| D-08 | Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x | média | não | B, A |
-| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: o mundo começa vazio**; A e B implementam | A, B |
+| D-08 | ~~Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x~~ **corrigido** em `a30292f`: 7,1% a 7,3% na minha medida (QA-172 passa) | — | — | B |
+| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: começa vazio**; o núcleo está feito na branch da A (QA-002 passa) | A, B |
 | D-10 | ~~A noite dura 18,75 min reais, e o documento diz 15~~ **resolvido pelo documento** (`f87b764`: 26 min de dia e 19 de noite; QA-016 passa) | — | — | — |
 | D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A |
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
@@ -202,7 +222,7 @@ O registro original fica abaixo.
   - a meta da API é de 5 ms; como a máquina estava carregada pelas outras sessões, não conto como falha e deixo a medida fina para o `desempenho.gd` da A;
   - a primeira consulta depois do salto levou de 1017 a 1253 ms.
 
-### D-08. Com o mundo velho, a CPU passa de 8% de um núcleo em 1x
+### D-08. Com o mundo velho, a CPU passa de 8% de um núcleo em 1x (corrigido em `a30292f`, confirmado)
 **Cenário:** QA-172 · **Gravidade:** média · **Bloqueia:** não para a 0.1 (os amigos começam com o mundo novo, que fica em 6%) · **Área:** B (o desenho) e A (o passo e a rotina)
 
 - **Obtido:** 14,36% de um núcleo em média, com pico de 16,76%, no mundo de 200 anos, visível, em 1x.
@@ -320,24 +340,25 @@ A B corrigiu em `c06e4d0`: `simulacao.encerrar()` espera as threads do núcleo e
 - **No núcleo, está corrigido (QA-180 passa).** Um ataque às 8h, com o mundo consultado a cada hora como faz a apresentação, gera a cena `guerra` com `ini` 10,0 e `fim` 14,5, vista a partir da hora 10. É o que a API promete: começa em hora + 2 e dura 4h30.
 - **Na tela, ficou inconclusivo.** As 3 capturas do `--cenario-raro=batalha` no 50x (8, 10 e 12 s depois de abrir) mostram uma fileira de gente no meio da vila, mas não dá para afirmar só pelo quadro parado que são as duas linhas lutando (`qa/capturas/QA-180-batalha_*.png`). Precisa de um GIF ou de olho humano.
 
-### Leveza: abaixo de 8% de um núcleo, visível, em 1x
+### Leveza: abaixo de 8% de um núcleo, visível, em 1x (confirmado depois de `a30292f`)
 Medido com `rodar_janela.ps1 -Parte leveza`:
 - jogo pelo editor (Godot 4.7.2, Compatibilidade), visível, semente 7, ritmo normal, começando às 17h;
 - 20 s de aquecimento e 120 s de medida;
-- CPU do processo do jogo (o filho do `_console.exe`) ÷ tempo real.
+- CPU do processo do jogo (o filho do `_console.exe`) ÷ tempo real;
+- a máquina estava a 0% a 7% de carga.
 
-| Mundo | CPU, % de um núcleo (média) | Pico de amostra (5 s) | Conjunto de trabalho, máx. | Meta de 8% |
-|---|---|---|---|---|
-| Novo (ano 1, 12 pessoas) | **5,98%** | 8,38% | 252 MB | passa (QA-171) |
-| 50 anos (2 povos) | **7,38%** | 10,85% | 257 MB | passa, no limite (medida extra) |
-| 200 anos (estágio 6, 4 povos) | **14,36%** | 16,76% | 294 MB | **falha (QA-172)** |
+| Mundo | Antes (main `ae1faa8`) | **Depois (main `69791ad`, com `a30292f`)** | Pico de amostra (5 s), depois | Conjunto de trabalho, depois | Meta de 8% |
+|---|---|---|---|---|---|
+| Novo (ano 1, 12 pessoas) | 5,98% | **4,50%** | 6,47% | 234 MB | passa (QA-171) |
+| 50 anos (2 povos) | 7,38% | **5,62%** | 8,38% | 239 MB | passa |
+| 200 anos (estágio 6, 4 povos) | 14,36% | **7,30% e 7,11%** (duas medidas) | 8,97% e 9,85% | 281 MB | **passa (QA-172)** |
 
-- **A meta estoura por volta dos 50 a 60 anos de mundo.** Pelo tempo do documento, isso é um ano de uso de um jogador típico.
-- **Confirma a auditoria 11** (15% de um núcleo no mundo de 200 anos). Com o tempo do documento (um ano de jogo a cada 4 dias de trabalho), um mundo de 200 anos leva uns 3 anos de uso. Os amigos da 0.1 vão ficar nas primeiras décadas, a não ser que usem muito o 50x.
-- **Defeito D-08 (acima):** a CPU cresce com o mundo e passa da meta.
-- **A meta do documento técnico** ("média abaixo de 2% num computador comum") não diz se é da máquina ou de um núcleo. Nesta máquina de 28 núcleos, 14% de um núcleo são 0,5% da máquina e passariam. Num notebook de 4 núcleos, são 3,6% da máquina e não passariam. A régua de "% de um núcleo" do orquestrador é a que vale.
-- **No máximo 30 quadros por segundo:** `run/max_fps=30` no `project.godot` (QA-174 passa).
-- **Memória:** de 252 a 294 MB de conjunto de trabalho. A meta é 200 MB, e o usuário aceitou passar nessa medida.
+- **Confirmo a melhora da B no D-08**: no mundo de 200 anos, o consumo caiu para menos da metade e ficou abaixo da meta.
+- **Mas fica acima dos 6,08% que a B mediu.** A B usou outro mundo: `medir.ps1 -Cenario grande`, semente 3, durante 186 s. Na semente 7, deu de 7,1% a 7,3%. As duas medidas estão abaixo de 8%. A folga é pequena: picos de amostra de 5 s chegam a 9 a 10%.
+- **A meta do documento técnico** ("média abaixo de 2% num computador comum") não diz se é da máquina ou de um núcleo. A régua de "% de um núcleo" do orquestrador é a que vale. Num notebook de 4 núcleos, 7,3% de um núcleo são 1,8% da máquina.
+- **No máximo 30 quadros por segundo:** `run/max_fps=30` no `project.godot` (QA-174 passa). Pelo commit da B, o 1x e a pausa agora desenham a 20 quadros por segundo.
+- **Memória:** de 234 a 282 MB de conjunto de trabalho. A meta é 200 MB, e o usuário aceitou passar nessa medida.
+- **Uma armadilha do meu script:** passar `-AnosLeveza 0,50,200` pelo `powershell -File` vira o número 50200, e o jogo tenta gerar 50 mil anos. É preciso rodar uma idade por vez (`-AnosLeveza 200`).
 
 ## O que passou e vale registrar
 
@@ -420,6 +441,7 @@ Cada linha abaixo é um teste que **falha hoje** (conferido na rodada de `f87b76
 
 | Defeito | Teste | Falha hoje com | Passa quando |
 |---|---|---|---|
+| **D-02** (bloqueia), a parte da tela | QA-185 | `simulacao.usar_poder(poder, x, intensidade)` não passa o minuto; no minuto 50, o raio cai no chão (núcleo da A) ou acerta outra pessoa (main) | pela `simulacao.gd`, no minuto 50 da hora 11 da semente 4, o raio solto onde a pessoa está na tela (a agenda naquele minuto) devolve `alvo` igual ao id dela |
 | **D-15** (bloqueia) | QA-129, em janela | a linha do livro sai pelas duas bordas do pergaminho do "Não resta ninguém" | `rodar_janela.ps1 -Parte capturas`: no quadro `QA-129-extincao_01.png` o aviso aparece e todo o texto fica dentro do pergaminho (conferência a olho na captura). Com o D-03 corrigido, o aviso deve aparecer já no primeiro quadro |
 | D-14 | QA-181 | `exclude_filter` sem `qa/*` | `exclude_filter` contém `qa/` |
 | D-05 (aviso) | manual | nenhum aviso quando o mundo salvo não se lê | a apresentação mostra um aviso quando `Persistencia.existe()` é verdadeiro e `carregar_e_avancar()` devolve null |
@@ -429,7 +451,7 @@ Cada linha abaixo é um teste que **falha hoje** (conferido na rodada de `f87b76
 | Defeito | Teste | Situação |
 |---|---|---|
 | D-07 | sonda à parte | risco de desempenho; o QA-170 passa (nenhuma espera pela thread no 50x) |
-| D-08 | QA-172, em janela | 14,4% de um núcleo no mundo de 200 anos; não bloqueia a 0.1 |
+| ~~D-08~~ | QA-172, em janela | passa desde `a30292f`: 7,1% a 7,3% de um núcleo |
 
 Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primeiro o cenário em `qa/cenarios.md` e o teste em `rodar_qa.gd`, que deve falhar antes da entrega.
 

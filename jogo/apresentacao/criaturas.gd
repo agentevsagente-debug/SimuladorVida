@@ -5,6 +5,7 @@ extends Node
 ## Todos passam pela tabela de noite, menos os morcegos, que já são escuros.
 
 const Efeitos = preload("res://apresentacao/efeitos.gd")
+const Terreno = preload("res://apresentacao/terreno.gd")
 
 ## tipo -> [estações, hora de início, hora de fim, intervalo mínimo e máximo em s, quantos no máximo]
 const REGRAS := {
@@ -34,6 +35,12 @@ var fosco: Efeitos
 var luminoso: Efeitos
 var _rng := RandomNumberGenerator.new()
 var _espera := {}
+## O mundo que nunca teve gente (o convite está no chão): os primeiros segundos não
+## podem parecer parados. Um bicho grande entre 4 e 8 s, e os bandos de pássaros 3
+## vezes mais frequentes até o primeiro povo (auditoria 12, V2).
+var vazio := false
+var _acolhida := -1.0  # s até o bicho da acolhida; < 0: ainda não marcado
+const PASSAROS_NO_VAZIO := 3.0
 
 
 func criar(p_vista: Node2D, p_fosco: Efeitos, p_luminoso: Efeitos) -> void:
@@ -46,17 +53,45 @@ func criar(p_vista: Node2D, p_fosco: Efeitos, p_luminoso: Efeitos) -> void:
 
 
 func avancar(delta: float, hora: float, estacao: String, pessoas_x: Array) -> void:
+	if vazio:
+		if _acolhida < 0.0:
+			_acolhida = _rng.randf_range(4.0, 8.0)
+		elif _acolhida < 1000.0:
+			_acolhida -= delta
+			if _acolhida <= 0.0:
+				_acolhida = 1e9  # uma vez só
+				_acolher(estacao)
 	for tipo in REGRAS:
 		var r: Array = REGRAS[tipo]
 		if not estacao in r[0] or hora < r[1] or hora >= r[2]:
 			continue
-		_espera[tipo] -= delta
+		_espera[tipo] -= delta * (PASSAROS_NO_VAZIO if vazio and tipo == "passaros" else 1.0)
 		if _espera[tipo] > 0.0:
 			continue
 		_espera[tipo] = _rng.randf_range(r[3], r[4])
 		if _quantos(FOLHAS[tipo]) >= r[5]:
 			continue
 		_nascer(tipo, pessoas_x)
+
+
+## O bicho da acolhida do mundo vazio (arte, seção 17): o cervo bebendo na beira do
+## lago, de frente para a água, e a garça pescando na água rasa. No inverno a garça
+## migrou e o lago pode ter gelo: o cervo de pelo de inverno pasta na clareira.
+func _acolher(estacao: String) -> void:
+	var dir := "../criaturas/"
+	if estacao == "inverno":
+		var x := _rng.randf_range(345.0, 375.0)
+		fosco.emitir(dir + "cervo_pastar_inverno_4q", 12, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, 90.0, 1.5, 0,
+			{"espelho": true})
+		return
+	var beira: float = float(vista.beira_visivel)
+	# a folha olha para a direita, com o focinho na coluna 11; espelhada, o focinho fica na
+	# coluna da esquerda, que vai uma coluna sobre a água
+	var xc := beira + 5.0
+	fosco.emitir(dir + "cervo_beber_4q", 12, 4, Vector2(xc, vista.chao(int(beira + 6.0))), Vector2.ZERO, 90.0, 2.0, 0,
+		{"espelho": true})
+	var xg := beira - _rng.randf_range(8.0, 14.0)  # a linha 7 da garça é a superfície da água
+	fosco.emitir(dir + "garca_pescar_4q", 8, 4, Vector2(xg, Terreno.NIVEL_AGUA), Vector2.ZERO, 90.0, 1.0, 0, {"espelho": true})
 
 
 func _quantos(folha: String) -> int:
@@ -140,8 +175,8 @@ func _nascer(tipo: String, pessoas_x: Array) -> void:
 					fosco.emitir(folha, 6, 4, Vector2(x, vista.chao(int(x))), Vector2(14.0 * dir, 0), 40.0 / 14.0 + 0.4,
 						8.0, 0, {"espelho": dir < 0.0, "rente": true})
 					break
-		"cervo":  # pastando na borda da floresta do morro
-			var x := _rng.randf_range(400, 470)
+		"cervo":  # pastando na borda da floresta do morro (no mundo vazio, no capim aberto antes dela, à vista)
+			var x := _rng.randf_range(345, 375) if vazio else _rng.randf_range(400, 470)
 			if _longe_de_gente(x, pessoas_x, 50.0):
 				fosco.emitir(folha, 10, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, _rng.randf_range(30, 70), 1.5, 0,
 					{"espelho": _rng.randf() < 0.5})
