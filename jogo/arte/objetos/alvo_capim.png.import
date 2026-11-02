@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://doh4aw2mqtxg8"
+path="res://.godot/imported/alvo_capim.png-59bc6257b05c8b7766432d952a54f342.image"
+
+[deps]
+
+source_file="res://arte/objetos/alvo_capim.png"
+dest_files=["res://.godot/imported/alvo_capim.png-59bc6257b05c8b7766432d952a54f342.image"]
+
+[params]
+

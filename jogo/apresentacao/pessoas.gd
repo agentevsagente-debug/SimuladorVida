@@ -53,6 +53,8 @@ func _draw() -> void:
 		var q: int = (n - 1 - f.quadro) if f.espelho else f.quadro
 		# alfa 0,5 marca a segunda fileira da roda (o shader a escurece; o alfa não é usado como transparência)
 		var info := Color((f.x + w / 2.0) / 512.0, f.fogo / 512.0, f.codigo / 255.0, 0.5 if f.get("atras", false) else 1.0)
-		# folhas de 12 px têm o corpo nas colunas 0 a 7; espelhadas, o corpo vai para 4 a 11
-		var x: int = f.x - (w - 8 if f.espelho and w > 8 else 0)
+		# folhas de 12 px têm o corpo nas colunas 0 a 7 (a criança, 0 a 5); espelhadas, o corpo
+		# vai para o outro lado. Os objetos que espelham por inteiro dizem corpo = largura.
+		var corpo: int = f.get("corpo", 8)
+		var x: int = f.x - (w - corpo if f.espelho and w > corpo else 0)
 		draw_texture_rect_region(tex, Rect2(x, f.base - h + 1, w, h), Rect2(q * w, 0, w, h), info)
