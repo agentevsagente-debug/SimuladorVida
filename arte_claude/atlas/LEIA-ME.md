@@ -30,10 +30,10 @@ No JSON, `regioes` é indexado pelo nome da peça (`pasta/peça`, igual a `arte_
 | `estagio4_inverno` | 256x256 | 81 | 256 KB |
 | `estagio5` | 256x256 | 85 | 256 KB |
 | `estagio5_inverno` | 256x256 | 85 | 256 KB |
-| `estagio6` | 512x256 | 92 | 256 KB |
-| `estagio6_inverno` | 512x256 | 92 | 256 KB |
+| `estagio6` | 512x256 | 92 | 512 KB |
+| `estagio6_inverno` | 512x256 | 92 | 512 KB |
 
-**Total, com todos carregados: 5,19 MB.** O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 2,2 a 2,5 MB (o inverno soma o `pessoas_inverno`).
+**Total, com todos carregados: 5,69 MB.** O `estagio6` e o `estagio6_inverno` passaram a 512 × 256 com as ações da tarde (seção 29 do LEIA-ME das peças). O jogo só precisa de uma parte por vez: o `comum`, a estação atual e o estágio atual (o de verão ou o de inverno). Isso dá cerca de 2,2 a 2,5 MB (o inverno soma o `pessoas_inverno`).
 
 **O `comum` passou de 512 × 512 para 1024 × 512** com a pesca, a lavagem e os bichos novos (era 241 peças e passou de 249, sem lugar no 512 × 512). O motor lê as posições do `comum.json` e das fontes, então nada muda no código, desde que nada suponha o tamanho 512. Ele tem espaço de sobra para as próximas peças.
 
