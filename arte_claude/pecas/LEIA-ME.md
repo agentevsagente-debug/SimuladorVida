@@ -803,7 +803,7 @@ As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 
 - **As folhas de sempre dos habitantes** (auditoria 7): `adulto_a_parado_2q`, `adulto_a_andar_4q`, `adulto_b_parado_2q`, `adulto_b_andar_4q`, `crianca_andar_4q`, `idoso_andar_4q`, `adulto_a_rezar_2q`, `adulto_a_colher_4q` e `adulto_a_sentado_1q` também têm a roupa do estágio, com o mesmo nome em `estagioN/`. São as que ficam mais tempo na tela: sem elas, um povo do estágio 6 andava e ficava parado com a roupa do estágio 1, e só as ações de 1x mostravam o chapéu. As `adulto_eN_*` continuam como amostra.
-- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 30 folhas são as 9 folhas de sempre dos habitantes (acima), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 37 folhas são as 9 folhas de sempre dos habitantes (acima), as 7 da tarde (seção 29), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
 - **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
 - **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
 - **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).
@@ -847,6 +847,19 @@ Quando o jogador cria um povo no mundo vazio, o povo chega com a trouxa (`acoes/
 |---|---|---|---|
 | `acoes/acender_fogo_4q` | 12 × 12 | 4 | ajoelhado, gira o pau entre as mãos sobre a tábua (quadros 0 e 1, alternando por uns 4 s), sai um fio de fumaça (2) e ele se curva para soprar a brasa (3, uns 2 s). O corpo fica nas colunas 0 a 7 e a tábua nas colunas 7 a 11: ponha a coluna 9 a uns 2 px à esquerda do centro da fogueira. Só o estágio 1 (o povo novo), com a roupa de inverno em `estacoes/inverno/acoes/`. |
 | `estagio1/fogueira_nascendo_4q` | 16 × 16 | 4 | o mesmo encaixe da `fogueira_acesa_4q`: a lenha com a palha e o fio de fumaça (0), a brasa (1), a chama pequena (2) e a chama crescendo (3). Acompanhe os quadros de quem acende: 0 e 1 durante o giro, 2 e 3 enquanto ele sopra. Depois, troque pela `fogueira_acesa_4q`. |
+
+## 29. Ações da tarde (`acoes/tarde.py`)
+
+São ações de 1x para a tarde (12h às 15h30), o período mais parado. Antes de a A propor as cenas, já vêm as mais prováveis. Elas seguem o padrão das ações de 1x (seção 22) e saem com as roupas dos estágios 3 a 6 (seção 25) e a de inverno. `acoes/amostra_tarde_4x.png` mostra todas.
+
+| Ação | Folha | Quadro | Quadros | Como montar |
+|---|---|---|---|---|
+| sesta à sombra | `acoes/sesta_forte_2q` | 12 × 12 | 2 | deitado de costas, a mão atrás da cabeça e um joelho dobrado; no quadro 1, o peito sobe. Segure cada quadro 1,5 a 2 s. A pessoa ocupa as linhas 8 a 11, com a cabeça à esquerda; ponha sob a copa de uma árvore (espelhe para a cabeça ficar do lado do tronco). Um balão de pensamento de vez em quando (`balao_5v`, variação 2). |
+| trançar cesto | `acoes/trancar_cesto_4q` | 12 × 12 | 4 | sentado, o cesto de palha à frente (colunas 7 a 10), e as mãos passando a fibra amarela por dentro e por fora |
+| moldar pote | `acoes/moldar_pote_4q` | 12 × 12 | 4 | sentado, o pote de barro laranja no chão à frente, com as mãos subindo e descendo dos lados; no quadro 3, o pote tem a boca. Depois, o pote pronto pode ficar no chão (`objetos/pote`, se houver, ou o quadro 3). |
+| afiar lança | `acoes/afiar_lanca_4q` | 12 × 12 | 4 | sentado, a lança de 2 px atravessada no colo: esfrega a pedra na ponta (0 a 2, com um pozinho no 2) e olha a ponta contra a luz (3). Bom para antes da caçada. |
+| ensinar | `acoes/ensinar_apontar_4q` + `acoes/crianca_imitar_4q` | 12 × 12 e 6 × 8 | 4 e 4 | o adulto aponta para longe, de boca aberta (0 e 1), e mostra o gesto com um galho (2 e 3); a criança, a 8 a 10 px à frente e virada para ele, olha para onde ele aponta e repete o gesto com um galhinho. Os quadros vão juntos. |
+| consertar o telhado | `acoes/consertar_telhado_4q` | 12 × 12 | 4 | ajoelhado em cima da casa: ergue o feixe de palha, assenta, ergue a pedra de bater e bate (com um pozinho). A base (linha 11) vai na cumeeira ou na água do telhado; mova a pessoa alguns pixels ao longo do telhado a cada ciclo. Nas casas de telha e de tábuas também lê: o feixe vira o reparo. |
 
 ## Critérios
 

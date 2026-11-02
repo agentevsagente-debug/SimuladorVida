@@ -7,7 +7,7 @@
  "regioes": {
   "estagio6/adulto_a_andar_4q": {
    "x": 50,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -17,7 +17,7 @@
   },
   "estagio6/adulto_a_colher_4q": {
    "x": 83,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -26,8 +26,8 @@
    "quadro_h": 12
   },
   "estagio6/adulto_a_parado_2q": {
-   "x": 92,
-   "y": 221,
+   "x": 117,
+   "y": 234,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -36,8 +36,8 @@
    "quadro_h": 12
   },
   "estagio6/adulto_a_rezar_2q": {
-   "x": 109,
-   "y": 221,
+   "x": 134,
+   "y": 234,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -46,8 +46,8 @@
    "quadro_h": 12
   },
   "estagio6/adulto_a_sentado_1q": {
-   "x": 177,
-   "y": 221,
+   "x": 202,
+   "y": 234,
    "w": 8,
    "h": 12,
    "quadros": 1,
@@ -57,7 +57,7 @@
   },
   "estagio6/adulto_b_andar_4q": {
    "x": 116,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -66,8 +66,8 @@
    "quadro_h": 12
   },
   "estagio6/adulto_b_parado_2q": {
-   "x": 126,
-   "y": 221,
+   "x": 151,
+   "y": 234,
    "w": 16,
    "h": 12,
    "quadros": 2,
@@ -77,7 +77,7 @@
   },
   "estagio6/adulto_e6_andar_4q": {
    "x": 149,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -86,13 +86,23 @@
    "quadro_h": 12
   },
   "estagio6/adulto_e6_parado_2q": {
-   "x": 143,
-   "y": 221,
+   "x": 168,
+   "y": 234,
    "w": 16,
    "h": 12,
    "quadros": 2,
    "tipo": "quadros",
    "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio6/afiar_lanca_4q": {
+   "x": 1,
+   "y": 182,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
    "quadro_h": 12
   },
   "estagio6/barco_2q": {
@@ -116,16 +126,6 @@
    "quadro_h": 16
   },
   "estagio6/buscar_agua_forte_4q": {
-   "x": 1,
-   "y": 182,
-   "w": 48,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "estagio6/cacar_amarrar_4q": {
    "x": 50,
    "y": 182,
    "w": 48,
@@ -135,17 +135,7 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
-  "estagio6/cacar_apontar_2q": {
-   "x": 160,
-   "y": 221,
-   "w": 16,
-   "h": 12,
-   "quadros": 2,
-   "tipo": "quadros",
-   "quadro_w": 8,
-   "quadro_h": 12
-  },
-  "estagio6/cacar_arremessar_forte_4q": {
+  "estagio6/cacar_amarrar_4q": {
    "x": 99,
    "y": 182,
    "w": 48,
@@ -155,7 +145,17 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
-  "estagio6/cacar_comemorar_4q": {
+  "estagio6/cacar_apontar_2q": {
+   "x": 185,
+   "y": 234,
+   "w": 16,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 8,
+   "quadro_h": 12
+  },
+  "estagio6/cacar_arremessar_forte_4q": {
    "x": 148,
    "y": 182,
    "w": 48,
@@ -165,7 +165,7 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
-  "estagio6/cacar_espreitar_forte_4q": {
+  "estagio6/cacar_comemorar_4q": {
    "x": 197,
    "y": 182,
    "w": 48,
@@ -175,9 +175,19 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
+  "estagio6/cacar_espreitar_forte_4q": {
+   "x": 1,
+   "y": 195,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
   "estagio6/canal": {
-   "x": 101,
-   "y": 234,
+   "x": 151,
+   "y": 247,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -186,8 +196,8 @@
    "quadro_h": 8
   },
   "estagio6/canal_comporta": {
-   "x": 110,
-   "y": 234,
+   "x": 160,
+   "y": 247,
    "w": 8,
    "h": 8,
    "quadros": 1,
@@ -197,7 +207,7 @@
   },
   "estagio6/carregar_agua_forte_4q": {
    "x": 182,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -207,7 +217,7 @@
   },
   "estagio6/carregar_caca_forte_4q": {
    "x": 215,
-   "y": 208,
+   "y": 221,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -217,7 +227,7 @@
   },
   "estagio6/carregar_cesto_cabeca_forte_4q": {
    "x": 1,
-   "y": 221,
+   "y": 234,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -226,7 +236,7 @@
    "quadro_h": 12
   },
   "estagio6/carregar_peixe_forte_4q": {
-   "x": 1,
+   "x": 50,
    "y": 195,
    "w": 48,
    "h": 12,
@@ -306,76 +316,6 @@
    "quadro_h": 32
   },
   "estagio6/catar_lenha_forte_4q": {
-   "x": 50,
-   "y": 195,
-   "w": 48,
-   "h": 12,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 12,
-   "quadro_h": 12
-  },
-  "estagio6/crianca_andar_4q": {
-   "x": 186,
-   "y": 221,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/crianca_banho_4q": {
-   "x": 211,
-   "y": 221,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/crianca_ciranda_4q": {
-   "x": 1,
-   "y": 234,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/crianca_ciranda_costas_4q": {
-   "x": 26,
-   "y": 234,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/crianca_pegapega_fugir_4q": {
-   "x": 51,
-   "y": 234,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/crianca_pegapega_pegar_4q": {
-   "x": 76,
-   "y": 234,
-   "w": 24,
-   "h": 8,
-   "quadros": 4,
-   "tipo": "quadros",
-   "quadro_w": 6,
-   "quadro_h": 8
-  },
-  "estagio6/espantar_forte_4q": {
    "x": 99,
    "y": 195,
    "w": 48,
@@ -385,9 +325,109 @@
    "quadro_w": 12,
    "quadro_h": 12
   },
+  "estagio6/consertar_telhado_4q": {
+   "x": 148,
+   "y": 195,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio6/crianca_andar_4q": {
+   "x": 211,
+   "y": 234,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_banho_4q": {
+   "x": 1,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_ciranda_4q": {
+   "x": 26,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_ciranda_costas_4q": {
+   "x": 51,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_imitar_4q": {
+   "x": 76,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_pegapega_fugir_4q": {
+   "x": 101,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/crianca_pegapega_pegar_4q": {
+   "x": 126,
+   "y": 247,
+   "w": 24,
+   "h": 8,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 6,
+   "quadro_h": 8
+  },
+  "estagio6/ensinar_apontar_4q": {
+   "x": 197,
+   "y": 195,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio6/espantar_forte_4q": {
+   "x": 1,
+   "y": 208,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
   "estagio6/idoso_andar_4q": {
    "x": 34,
-   "y": 221,
+   "y": 234,
    "w": 32,
    "h": 12,
    "quadros": 4,
@@ -396,8 +436,8 @@
    "quadro_h": 12
   },
   "estagio6/lavar_margem_forte_4q": {
-   "x": 148,
-   "y": 195,
+   "x": 50,
+   "y": 208,
    "w": 48,
    "h": 12,
    "quadros": 4,
@@ -424,6 +464,16 @@
    "tipo": "quadros",
    "quadro_w": 32,
    "quadro_h": 40
+  },
+  "estagio6/moldar_pote_4q": {
+   "x": 99,
+   "y": 208,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
   },
   "estagio6/muralha": {
    "x": 184,
@@ -466,8 +516,8 @@
    "quadro_h": 32
   },
   "estagio6/pescar_arpoar_forte_4q": {
-   "x": 197,
-   "y": 195,
+   "x": 148,
+   "y": 208,
    "w": 48,
    "h": 12,
    "quadros": 4,
@@ -477,7 +527,17 @@
   },
   "estagio6/pescar_espreitar_forte_2q": {
    "x": 67,
-   "y": 221,
+   "y": 234,
+   "w": 24,
+   "h": 12,
+   "quadros": 2,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
+  "estagio6/sesta_forte_2q": {
+   "x": 92,
+   "y": 234,
    "w": 24,
    "h": 12,
    "quadros": 2,
@@ -545,9 +605,19 @@
    "quadro_w": 32,
    "quadro_h": 32
   },
+  "estagio6/trancar_cesto_4q": {
+   "x": 197,
+   "y": 208,
+   "w": 48,
+   "h": 12,
+   "quadros": 4,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 12
+  },
   "estagio6/tropecar_cair_forte_4q": {
    "x": 1,
-   "y": 208,
+   "y": 221,
    "w": 48,
    "h": 12,
    "quadros": 4,

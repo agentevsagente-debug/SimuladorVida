@@ -28,6 +28,7 @@ import brincar  # noqa: E402
 import cacada  # noqa: E402
 import forte  # noqa: E402
 import pesca  # noqa: E402
+import tarde  # noqa: E402
 
 sys.path.insert(0, str(PECAS / "habitantes"))
 import habitantes as hb  # noqa: E402
@@ -45,7 +46,7 @@ HABITANTES = {
     "adulto_a_sentado_1q": lambda: hb.SENTADO,
 }
 
-FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS, **pesca.FOLHAS, **HABITANTES}
+FOLHAS = {**forte.FOLHAS, **brincar.FOLHAS, **cacada.FOLHAS, **pesca.FOLHAS, **tarde.FOLHAS, **HABITANTES}
 
 
 def pontos(g, chars):
