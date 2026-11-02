@@ -244,13 +244,13 @@ A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10
 
 Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a alça montada, a crônica, a dica do cursor e o alfabeto completo.
 
-**Ícones**, em `icones_12/` (12 × 12) e `icones_8/` (8 × 8), com os mesmos nomes nas duas pastas:
+**Ícones**, em `icones_12/` (12 × 12) e `icones_8/` (8 × 8), com os mesmos nomes nas duas pastas (menos `lupa_2`, `lupa_3` e `lupa_4`, que só existem em 12 × 12):
 
 | Grupo | Ícones |
 |---|---|
 | Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
 | Tempo | `pausa`, `normal`, `rapido`, `rapido2` (três setas, para o ritmo de 50x), `salto` |
-| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio), `som` e `som_mudo` (o botão de som no fim da alça, da 0.2: o alto-falante com duas ondas e o alto-falante com um X vermelho) |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio), `som` e `som_mudo` (o botão de som no fim da alça, da 0.2: o alto-falante com duas ondas e o alto-falante com um X vermelho); `lupa` (o botão do tamanho da janela, o mesmo que Ctrl+2, 3 e 4: uma lente com cabo) e, só em 12 × 12, `lupa_2`, `lupa_3` e `lupa_4` (a lente com o número da escala atual dentro; em 8 × 8 o número não fica legível, então use a `lupa` sem número) |
 
 Os ícones foram desenhados para o fundo escuro da alça.
 
