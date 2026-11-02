@@ -10,7 +10,7 @@ from sintese import (SR, VOGAIS, bordas, eco, env, fase, nivelar, passa, respost
 
 # (RMS do trecho ativo, pico), em dBFS
 NIVEL = {
-    "trovao_1": (-22, -6), "trovao_2": (-22, -6), "trovao_3": (-23, -6), "terremoto": (-23, -7),
+    "trovao_1": (-26, -9), "trovao_2": (-26, -9), "trovao_3": (-27, -9), "terremoto": (-23, -7),
     "fogo_acender": (-25, -9), "fogo_brando": (-27, -10), "diluvio": (-24, -8), "fartura": (-27, -10),
     "sonho": (-28, -12), "milagre_sino": (-26, -9), "pressagio": (-26, -10), "cura": (-27, -11),
     "arremesso": (-27, -12), "lanca_cravar": (-26, -10), "grito_cacada": (-27, -11), "choro_bebe": (-31, -15),

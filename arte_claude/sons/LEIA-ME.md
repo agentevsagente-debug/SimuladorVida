@@ -7,6 +7,10 @@ O estilo é discreto, quente e levemente retrô, como uma janela aberta para o c
 - tudo é mono, a 22 050 Hz;
 - tudo é gravado em Ogg Vorbis.
 
+> **Ninguém ouviu estes sons ainda.** Foram conferidos só por espectrograma e por medidas de volume.
+> - Primeiro, ouça as vozes por formantes (`vila`, `choro_bebe`, `galo` e `grito_cacada`), que podem soar zumbidas ou estranhas.
+> - Depois, ouça os `passaros`.
+
 **Tamanho:** os 29 sons somam **1,77 MB**. Com a prévia, a pasta tem 2,2 MB. A meta era ficar abaixo de 8 MB.
 
 ## Como gerar
@@ -40,13 +44,16 @@ O `.ogg` decodificado tem exatamente o mesmo número de amostras. Ponha `loop = 
 Todos os sons foram nivelados juntos, para tocarem **com o mesmo volume no jogo** (0 dB em cada `AudioStreamPlayer`). O equilíbrio já está nos arquivos:
 - **Ambiente:** RMS de -25 a -34 dBFS. A tempestade é a mais forte e a neve, a mais baixa.
 - **Acontecimentos:** de -24 a -33 dBFS, medidos no trecho que soa. O clique da alça fica em -37 dBFS.
-- **Pico:** nenhum som passa de -6 dBFS. O mais alto é o trovão, que fica longe, com ataque de 80 a 200 ms e sem estalo agudo.
+- **Pico:** nenhum som passa de -7 dBFS.
+- **O trovão** fica longe, com ataque de 80 a 200 ms e sem estalo agudo. Os trovões ficam com pico de -9 dBFS. Medido sobre um dia claro (o vento e os pássaros), o trovão sobe só 9 a 10 dB acima do fundo (no máximo em 400 ms), para não assustar quando o raio cai num dia sem tempestade.
 
-O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouco mais baixo que o RMS pedido. É o caso dos trovões e do dilúvio.
+O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouco mais baixo que o RMS pedido. É o caso dos trovões, do terremoto e do dilúvio.
 
 **Volume geral sugerido (o barramento Master): começar em -10 dB.** O documento pede que o volume comece baixo. A coluna "volume" das tabelas abaixo é um ajuste opcional, em dB, sobre o 0 dB de cada um.
 
 ## Laços de ambiente (`ambiente/`)
+
+**Todos tocam em laço.** Conferi os `.ogg` decodificados: o número de amostras é exato e a emenda não tem degrau.
 
 | Nome | Duração | Volume | Quando toca |
 |---|---|---|---|
@@ -63,6 +70,8 @@ O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouc
 **Entre um laço e outro:** troque com 2 a 4 s de cruzamento.
 
 ## Sons curtos de acontecimento (`eventos/`)
+
+**Nenhum é laço:** cada um toca uma vez.
 
 | Nome | Duração | Volume | Quando toca |
 |---|---|---|---|
