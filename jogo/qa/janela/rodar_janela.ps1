@@ -4,6 +4,11 @@
 # Uso (da raiz do repositório):
 #   powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 [-Parte fechar|fecharjanela|capturas|leveza|tudo] [-Segundos 90]
 #
+# Opções de teste e o mundo vazio (B, depois de 3db5a8c): --mundo-novo abre o mundo vazio, mesmo com
+# --semente, a não ser com --com-povo; --semente sozinha, --dias, --anos, --cena e --cenario-raro já
+# trazem o povo. Sem mundo salvo, o jogo de verdade também abre vazio: os cenários que abrem o mundo
+# salvo do user:// isolado levam --com-povo para a primeira vez. Uma opção desconhecida é ignorada.
+#
 # Isolamento: APPDATA aponta para %TEMP%\simvida_qa_janela, então o user:// do jogo (mundo salvo,
 # moldura.cfg, estante, logs) fica fora da pasta de dados real do jogador.
 # Saída: qa/janela/resultado-*.json e qa/capturas/*.png na raiz do repositório.
@@ -50,7 +55,7 @@ if ($Parte -in 'fechar', 'tudo') {
     $res = @()
     for ($i = 1; $i -le $Aberturas; $i++) {
         # metade com mundo de teste (não salva), metade com o mundo salvo no user:// isolado
-        $op = if ($i % 2) { @('--sem-config', '--mundo-novo', "--semente=$i", '--duracao=8') } else { @('--duracao=8') }
+        $op = if ($i % 2) { @('--sem-config', '--mundo-novo', "--semente=$i", '--com-povo', '--duracao=8') } else { @('--com-povo', '--duracao=8') }
         $sufixo = if ($ComAtalho) { '-atalho' } else { '' }
         $p = Abrir $op "fechar$sufixo-$i"
         $codigo = Esperar $p 90
@@ -81,7 +86,7 @@ if ($Parte -in 'fecharjanela', 'tudo') {
     for ($i = 1; $i -le $Aberturas; $i++) {
         $espera = $tempos[($i - 1) % $tempos.Count]
         $sufixo = if ($ComAtalho) { '-atalho' } else { '' }
-        $p = Abrir @('--ritmo=rapido2', '--duracao=300') "fecharjanela$sufixo-$i"
+        $p = Abrir @('--com-povo', '--ritmo=rapido2', '--duracao=300') "fecharjanela$sufixo-$i"
         Start-Sleep -Seconds $espera
         $filho = Get-CimInstance Win32_Process -Filter "ParentProcessId=$($p.Id)" | Select-Object -First 1
         $alvo = if ($filho) { Get-Process -Id $filho.ProcessId -ErrorAction SilentlyContinue } else { $p }
@@ -106,6 +111,8 @@ if ($Parte -in 'fecharjanela', 'tudo') {
 if ($Parte -in 'capturas', 'tudo') {
     $base = @('--sem-config', '--mundo-novo', '--semente=7', '--dias=12', '--hora=10')
     $cenarios = [ordered]@{
+        # o jogo novo de verdade (sem semente nem dias): a região vazia, à espera do primeiro gesto
+        'QA-002-comeco'     = @('--sem-config', '--mundo-novo', '--capturar-apos=4')
         'QA-098-ausencia'   = $base + @('--simular-ausencia=240', '--capturar-apos=4')
         # a vista só relê o mundo a cada passo, e o núcleo só declara o fim na virada do dia: no 50x,
         # das 10h à 1h são 15 passos de 2,25 s; 2 quadros, aos 6 s e aos 40 s
@@ -141,8 +148,8 @@ if ($Parte -in 'capturas', 'tudo') {
 if ($Parte -in 'leveza', 'tudo') {
     $res = @()
     $lista = $AnosLeveza | ForEach-Object {
-        if ($_ -eq 0) { @{ nome = 'novo-1x'; op = @('--semente=7', '--hora=17') } }
-        else { @{ nome = "$($_)anos-1x"; op = @('--semente=7', "--anos=$_", '--hora=17') } } }
+        if ($_ -eq 0) { @{ nome = 'novo-1x'; op = @('--semente=7', '--com-povo', '--hora=17') } }
+        else { @{ nome = "$($_)anos-1x"; op = @('--semente=7', '--com-povo', "--anos=$_", '--hora=17') } } }
     foreach ($c in $lista) {
         $p = Abrir (@('--sem-config', '--mundo-novo', '--ritmo=normal', "--duracao=$($Segundos + 60)") + $c.op) "leveza-$($c.nome)"
         Start-Sleep -Seconds 20   # carregar e aquecer (o mundo de 200 anos leva alguns segundos)

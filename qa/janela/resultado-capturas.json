@@ -1,5 +1,10 @@
 ﻿[
     {
+        "cenario":  "QA-002-comeco",
+        "codigo":  "0",
+        "captura":  true
+    },
+    {
         "cenario":  "QA-098-ausencia",
         "codigo":  "0",
         "captura":  true
@@ -47,6 +52,6 @@
     {
         "cenario":  "QA-180-batalha",
         "codigo":  "0",
-        "captura":  false
+        "captura":  true
     }
 ]

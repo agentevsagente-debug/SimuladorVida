@@ -2,10 +2,10 @@
     "cenario":  "200anos-1x",
     "processo":  "Godot_v4.7.2-stable_win64",
     "segundos":  121,
-    "cpu_1nucleo_media":  7.11,
-    "cpu_1nucleo_pico":  9.85,
-    "cpu_maquina_media":  0.254,
-    "working_set_max_mb":  282,
-    "privada_max_mb":  289,
+    "cpu_1nucleo_media":  7.18,
+    "cpu_1nucleo_pico":  9.65,
+    "cpu_maquina_media":  0.256,
+    "working_set_max_mb":  299,
+    "privada_max_mb":  286,
     "nucleos":  28
 }

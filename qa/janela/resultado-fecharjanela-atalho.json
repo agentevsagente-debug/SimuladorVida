@@ -22,7 +22,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  false,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -35,7 +35,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  true,
+        "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
     {
@@ -67,58 +67,6 @@
     {
         "abertura":  6,
         "segundos":  27,
-        "atalho":  true,
-        "auxiliares_orfaos":  0,
-        "mensagem_entregue":  true,
-        "codigo":  "0",
-        "salvou":  true,
-        "threads_encerradas":  true,
-        "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  true,
-        "erros":  ""
-    },
-    {
-        "abertura":  7,
-        "segundos":  31,
-        "atalho":  true,
-        "auxiliares_orfaos":  0,
-        "mensagem_entregue":  true,
-        "codigo":  "0",
-        "salvou":  true,
-        "threads_encerradas":  true,
-        "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  false,
-        "erros":  ""
-    },
-    {
-        "abertura":  8,
-        "segundos":  38,
-        "atalho":  true,
-        "auxiliares_orfaos":  0,
-        "mensagem_entregue":  true,
-        "codigo":  "0",
-        "salvou":  true,
-        "threads_encerradas":  true,
-        "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  true,
-        "erros":  ""
-    },
-    {
-        "abertura":  9,
-        "segundos":  44,
-        "atalho":  true,
-        "auxiliares_orfaos":  0,
-        "mensagem_entregue":  true,
-        "codigo":  "0",
-        "salvou":  true,
-        "threads_encerradas":  true,
-        "atalho_registrado":  true,
-        "salvando_em_segundo_plano":  true,
-        "erros":  ""
-    },
-    {
-        "abertura":  10,
-        "segundos":  52,
         "atalho":  true,
         "auxiliares_orfaos":  0,
         "mensagem_entregue":  true,

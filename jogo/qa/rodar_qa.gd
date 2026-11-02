@@ -639,7 +639,12 @@ func _gesto_pela_simulacao() -> void:
 	if alvo_q.is_empty():
 		pular("QA-185", "ninguém longe do meio e do fim da hora no minuto %.0f" % (f * 60.0))
 	else:
-		var r: Dictionary = sim.usar_poder("raio", _x_na_agenda(alvo_q["agenda"], f), 0.9)
+		# como a interface chama (interface._usar_poder): x do gesto, intensidade, o id de quem está
+		# sob o cursor e o minuto da hora (fracao() * 60). Aqui sem o id, o pior caso: só o minuto.
+		var su: Object = sim
+		var r: Dictionary = su.callv("usar_poder", ["raio", _x_na_agenda(alvo_q["agenda"], f), 0.9, -1, f * 60.0]) 			if _args(load("res://apresentacao/simulacao.gd"), "usar_poder") >= 5 else sim.usar_poder("raio", _x_na_agenda(alvo_q["agenda"], f), 0.9)
+		var codigo := FileAccess.get_file_as_string("res://apresentacao/interface.gd")
+		conferir("QA-185", codigo.contains("fracao() * 60"), "a interface passa o minuto da hora (fracao() * 60) ao soltar o poder")
 		conferir("QA-185", r.get("alvo", -1) == alvo_q["id"],
 			"o raio pela simulação do jogo, no minuto %.0f, acerta quem está sob o gesto (alvo %d, esperado %d): a apresentação passa o minuto da hora" % [f * 60.0, r.get("alvo", -1), alvo_q["id"]])
 	sim.free()

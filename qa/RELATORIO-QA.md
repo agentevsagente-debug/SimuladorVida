@@ -4,79 +4,70 @@
 
 ## Números
 
-*Atualizado depois das entregas da A em `ece2046` e `4a47816` e das decisões do orquestrador (main em `f87b764`).*
+*Rodada de 01/11/2026 na main `5f6e018`, com as entregas da A e da B para os itens que bloqueavam (D-01, D-02, D-03, D-09, D-14 e D-15).*
 
 | | Quantos |
 |---|---|
-| Cenários na matriz | 123 |
-| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 102 |
+| Cenários na matriz | 124 |
+| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 103 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
 | Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **100** |
-| **Falham** | **11** (10 no núcleo e 1 em janela) |
+| **Passam** | **107** |
+| **Falham** | **5**, todos no núcleo e nenhum que bloqueie a 0.1 |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
+
+**Nenhum defeito que bloqueia a 0.1 continua aberto.** Os 5 que falham são da A e não bloqueiam: D-05, D-06, D-11, D-12 e D-13.
 
 **Por área:**
 
 | Área | Cenários | Passam | Falham | Pulados | Manuais, não rodados |
 |---|---|---|---|---|---|
-| Começo do mundo | 5 | 4 | 1 | 0 | 0 |
+| Começo do mundo | 5 | 5 | 0 | 0 | 0 |
 | Cotidiano | 10 | 9 | 0 | 0 | 1 |
-| Os 11 poderes e as 3 intensidades | 18 | 15 | 2 | 0 | 1 |
+| Os 11 poderes e as 3 intensidades | 18 | 16 | 1 | 0 | 1 |
 | Preces e respostas | 9 | 9 | 0 | 0 | 0 |
 | Religião, crença e nome do deus | 5 | 4 | 0 | 1 | 0 |
 | Culturas | 6 | 5 | 1 | 0 | 0 |
 | Estágios 1 a 6 e regressão | 5 | 5 | 0 | 0 | 0 |
 | Linhagem acompanhada | 5 | 4 | 0 | 0 | 1 |
 | Ausência e teto de 1 ano | 9 | 8 | 1 | 0 | 0 |
-| Persistência e saves corrompidos | 12 | 8 | 3 | 1 | 0 |
-| Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 10 | 1 | 1 | 0 |
+| Persistência e saves corrompidos | 12 | 9 | 2 | 1 | 0 |
+| Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 11 | 0 | 1 | 0 |
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 6 | 0 | 0 | 1 |
-| Robustez da API e cenas (achados durante a leitura) | 3 | 1 | 2 | 0 | 0 |
-| **Total** | **123** | **100** | **11** | **3** | **9** |
+| Robustez da API e cenas (achados durante a leitura) | 4 | 4 | 0 | 0 | 0 |
+| **Total** | **124** | **107** | **5** | **3** | **9** |
 
-**Na branch da A (`84ae9d7`, ainda fora da main):** a bateria dá **93 passam, 6 falham e 3 pulados** em 102 cenários do núcleo. Na main `69791ad`, dá 90, 9 e 3, e falha também no QA-185 novo. A saída está em `qa/rodada-branch-a-84ae9d7.txt`.
+**Os defeitos e a situação de cada um:**
 
-| Item da A | Teste | Na branch `84ae9d7` |
-|---|---|---|
-| D-01, a estante | QA-109, QA-182 | **passam**: o mundo de teste guarda os livros em `<nome>.estante`, ao lado do arquivo; só `user://mundo.txt` usa `user://estante`; nenhuma ferramenta apaga a estante real |
-| D-02, a mira (núcleo) | QA-027 | **passa**: com o minuto, 10.800 de 10.800 toques acertam quem está sob o dedo (70 deles em gente sobreposta, no mesmo ponto) |
-| D-02, a mira (ponta a ponta) | **QA-185 (novo)** | **falha**: a apresentação ainda chama `usar_poder(poder, x, intensidade)` sem o minuto. O núcleo mira o meio da hora, e o raio cai no chão (alvo -1). Na main, acerta **outra pessoa** (alvo 12, esperado 1). Falta a B passar `sim.fracao() * 60` ou o id de quem está sob o cursor |
-| D-03, o fim do mundo | QA-131 | passa (já estava na main) |
-| D-09, o começo vazio | QA-002 | **passa**: população 0 às 7h, e criar povo dá 12 coletores na Primeira Era |
-| D-05, D-06, D-11, D-12, D-13 | QA-105, QA-111, QA-026, QA-064, QA-092 | ainda falham (a fazer) |
+| # | Defeito | Gravidade | Bloqueia a 0.1 | Área | Situação na main `5f6e018` |
+|---|---|---|---|---|---|
+| D-01 | Os testes do núcleo escreviam e apagavam a estante real do jogador | alta | prioridade | A | **corrigido**: os mundos de teste guardam os livros em `<nome>.estante`; QA-109 e QA-182 passam |
+| D-02 | O raio e o sonho acertavam onde a pessoa estaria no fim da hora | alta | sim | A, B | **corrigido**: o núcleo mira pelo minuto (QA-027: 100% dos toques), e a interface passa o minuto e quem está sob o cursor (QA-185 passa) |
+| D-03 | O mundo só ficava vazio na virada do dia | média | sim | A | **corrigido** (QA-131 passa; na tela, o aviso aparece aos 6 s) |
+| D-04 | Sem número de versão | média | sim | B | **corrigido** (versão 0.1.0; QA-166 passa) |
+| D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **aberto** (QA-105 falha) |
+| D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **aberto** (QA-111 falha) |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
+| D-08 | O mundo velho passava de 8% de um núcleo | média | não | B | **corrigido**: 7,2% no mundo de 200 anos (QA-172 passa) |
+| D-09 | O mundo novo começava com o povo | média | decidido: começa vazio | A, B | **corrigido**: o jogo abre vazio às 7h, com o convite na clareira, e criar povo abre a Primeira Era (QA-002 passa; `QA-002-comeco.png`) |
+| D-10 | A noite tinha 18,75 min, e o documento dizia 15 | baixa | não | — | **resolvido pelo documento** (QA-016 passa) |
+| D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A | **aberto** (QA-026 falha) |
+| D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A | **aberto** (QA-064 falha) |
+| D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **aberto** (QA-092 falha) |
+| D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
+| D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
-**Notas desta rodada:**
-- **A bateria serve às duas versões.** Ela confere a API pela lista de métodos:
-  - `Mundo.new(s, [], HORA_INICIAL, true)` dá o mundo pronto;
-  - o QA-027 mede pelo minuto quando `_pessoa_perto(x, minuto)` existe;
-  - as estantes vêm de `Persistencia.pasta_estante()`;
-  - o QA-105 procura a versão 99 também em `mundo.ilegivel.txt`.
-- **Os testes da estante (QA-140 a QA-144)** passaram a ler a estante do caminho do mundo, porque o D-01 mudou onde os livros de teste ficam.
-- **Cuidado com o caminho longo:** com o `user://` numa pasta funda (mais de 260 caracteres no Windows), `Persistencia.salvar` devolve falso, e 17 testes caem. Rode a bateria com um `TEMP` curto. A pasta real do jogador (`%APPDATA%\Simulador de vida`) é curta, então isso não afeta o jogo.
-
-**Os defeitos, do mais grave ao mais leve:**
-
-| # | Defeito | Gravidade | Bloqueia a 0.1 (proposta) | Área |
-|---|---|---|---|---|
-| D-01 | Os testes do núcleo escrevem e apagam a estante real do jogador | alta | **prioridade**; corrigido na branch da A (`84ae9d7`), à espera do merge | A |
-| D-02 | O raio e o sonho acertam onde a pessoa estará no fim da hora, não onde ela está na tela (erra 50% a 64% do tempo) | alta | **sim**; o núcleo está corrigido na branch da A, e **falta a B** passar o minuto (QA-185) | A, B |
-| D-03 | ~~Quando o último morre, o mundo só fica vazio na virada do dia~~ **corrigido** em `ece2046` (QA-131 passa) | — | — | A |
-| D-04 | ~~O jogo não mostra o número da versão~~ **corrigido** em `c06e4d0` (`config/version` 0.1.0; QA-166 passa) | — | — | B |
-| D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | B, A |
-| D-06 | Um mundo carregado escreve a crônica com frases que mudam de uma vez para outra | média | não | A |
-| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas, e o passo pode esperar por ela | média | não | A |
-| D-08 | ~~Com o mundo velho (200 anos), a CPU passa de 8% de um núcleo em 1x~~ **corrigido** em `a30292f`: 7,1% a 7,3% na minha medida (QA-172 passa) | — | — | B |
-| D-09 | O mundo novo já começa com o povo, e o documento diz que começa vazio | média | **decidido: começa vazio**; o núcleo está feito na branch da A (QA-002 passa) | A, B |
-| D-10 | ~~A noite dura 18,75 min reais, e o documento diz 15~~ **resolvido pelo documento** (`f87b764`: 26 min de dia e 19 de noite; QA-016 passa) | — | — | — |
-| D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A |
-| D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A |
-| D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A |
-| D-14 | Os testes de QA iriam dentro do executável | baixa | não | B |
-| D-15 | No aviso "Não resta ninguém", a linha do livro sai pelos lados do pergaminho | média | **sim** (barato) | B |
+**Nesta rodada, também:**
+- **Leveza em 1x, visível** (semente 7, 120 s): o mundo novo fica em 5,85%, o de 50 anos em 3,46% e o de 200 anos em 7,18% de um núcleo (pico de 9,65%), com 234 a 299 MB.
+- **Opções de teste da janela:**
+  - `--mundo-novo` abre o mundo vazio, mesmo junto com `--semente`, a não ser com `--com-povo`;
+  - `--semente` sozinha, `--dias`, `--anos`, `--cena` e `--cenario-raro` já trazem o povo;
+  - os cenários de fechar e de leveza usam `--com-povo`, e a captura do começo (QA-002) não usa, de propósito.
+- **Fechar o jogo:** 12 fechamentos com o atalho ligado (6 pela mensagem da janela, 6 pelo "Sair"), todos com código 0 e com "threads encerradas" no log.
+- **Observação menor para a B:** num fechamento, o log escreve "threads encerradas" 3 vezes, porque mais de um caminho de saída chama `encerrar()`. É inofensivo.
 
 A saída completa da última rodada está em `qa/ultima-rodada.txt`, e os resultados em janela em `qa/janela/resultado-*.json`.
 
