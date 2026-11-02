@@ -13,7 +13,7 @@ extends Node
 ##   res://sons/interface/<nome>.ogg        cliques da alça
 
 const PASTA := "res://sons/"
-const VOLUME_INICIAL := 0.4      # o volume começa baixo
+const VOLUME_INICIAL_DB := -14.0  # o volume começa baixo (QA-189: entre -60 e -12 dB)
 const VOZES_MAX := 4             # acontecimentos tocando ao mesmo tempo, no máximo
 const PASSO_AMBIENTE := 0.25     # s entre os ajustes dos laços (o cruzamento é lento)
 const CRUZA := 0.35              # quanto do caminho até o volume-alvo cada ajuste anda
@@ -30,7 +30,7 @@ const PESADOS := ["terremoto", "diluvio", "fogo_forte", "cacada"]
 
 var ligado := true
 var escondida := false
-var volume := VOLUME_INICIAL
+var volume_db := VOLUME_INICIAL_DB
 var discreto := false
 
 var _lacos := {}      # laço -> AudioStreamPlayer (só os que têm arquivo)
@@ -85,7 +85,7 @@ func definir_escondida(sim_: bool) -> void:
 
 
 func _aplicar_master() -> void:
-	AudioServer.set_bus_volume_db(0, linear_to_db(maxf(volume, 0.0001)))
+	AudioServer.set_bus_volume_db(0, volume_db)
 	AudioServer.set_bus_mute(0, not ligado or escondida)
 	# calado, os laços param de tocar: nada para misturar, nada para gastar
 	var tocar := ligado and not escondida
@@ -166,6 +166,11 @@ func tocar(chave: String, x: float) -> void:
 	if voz == null:
 		return  # vozes cheias: este fica de fora
 	voz.stream = s
+	# os pesados ficam no grupo som_pesado enquanto tocam (o QA confere que o discreto não os toca)
+	if nome in PESADOS:
+		voz.add_to_group("som_pesado")
+	elif voz.is_in_group("som_pesado"):
+		voz.remove_from_group("som_pesado")
 	voz.position = Vector2(x, 80.0)
 	voz.play()
 

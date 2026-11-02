@@ -19,10 +19,6 @@ run/low_processor_mode_sleep_usec=33333
 boot_splash/show_image=false
 boot_splash/bg_color=Color(0, 0, 0, 0)
 
-[audio]
-
-driver/driver="Dummy"
-
 [display]
 
 window/size/viewport_width=480
