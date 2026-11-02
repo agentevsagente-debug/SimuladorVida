@@ -4,8 +4,10 @@
 # Uso (da raiz do repositório):
 #   powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 [-Parte fechar|fecharjanela|capturas|leveza|tudo] [-Segundos 90]
 #
-# Desde 3db5a8c (B), --mundo-novo e --semente abrem o mundo vazio; --com-povo traz o primeiro povo
-# (--dias, --anos, --cena e --cenario-raro já trazem). Uma opção desconhecida é ignorada pelo jogo.
+# Opções de teste e o mundo vazio (B, depois de 3db5a8c): --mundo-novo abre o mundo vazio, mesmo com
+# --semente, a não ser com --com-povo; --semente sozinha, --dias, --anos, --cena e --cenario-raro já
+# trazem o povo. Sem mundo salvo, o jogo de verdade também abre vazio: os cenários que abrem o mundo
+# salvo do user:// isolado levam --com-povo para a primeira vez. Uma opção desconhecida é ignorada.
 #
 # Isolamento: APPDATA aponta para %TEMP%\simvida_qa_janela, então o user:// do jogo (mundo salvo,
 # moldura.cfg, estante, logs) fica fora da pasta de dados real do jogador.
@@ -53,7 +55,7 @@ if ($Parte -in 'fechar', 'tudo') {
     $res = @()
     for ($i = 1; $i -le $Aberturas; $i++) {
         # metade com mundo de teste (não salva), metade com o mundo salvo no user:// isolado
-        $op = if ($i % 2) { @('--sem-config', '--mundo-novo', "--semente=$i", '--com-povo', '--duracao=8') } else { @('--duracao=8') }
+        $op = if ($i % 2) { @('--sem-config', '--mundo-novo', "--semente=$i", '--com-povo', '--duracao=8') } else { @('--com-povo', '--duracao=8') }
         $sufixo = if ($ComAtalho) { '-atalho' } else { '' }
         $p = Abrir $op "fechar$sufixo-$i"
         $codigo = Esperar $p 90
@@ -84,7 +86,7 @@ if ($Parte -in 'fecharjanela', 'tudo') {
     for ($i = 1; $i -le $Aberturas; $i++) {
         $espera = $tempos[($i - 1) % $tempos.Count]
         $sufixo = if ($ComAtalho) { '-atalho' } else { '' }
-        $p = Abrir @('--ritmo=rapido2', '--duracao=300') "fecharjanela$sufixo-$i"
+        $p = Abrir @('--com-povo', '--ritmo=rapido2', '--duracao=300') "fecharjanela$sufixo-$i"
         Start-Sleep -Seconds $espera
         $filho = Get-CimInstance Win32_Process -Filter "ParentProcessId=$($p.Id)" | Select-Object -First 1
         $alvo = if ($filho) { Get-Process -Id $filho.ProcessId -ErrorAction SilentlyContinue } else { $p }

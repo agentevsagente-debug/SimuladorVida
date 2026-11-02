@@ -62,7 +62,10 @@
 
 **Nesta rodada, também:**
 - **Leveza em 1x, visível** (semente 7, 120 s): o mundo novo fica em 5,85%, o de 50 anos em 3,46% e o de 200 anos em 7,18% de um núcleo (pico de 9,65%), com 234 a 299 MB.
-- **Opções de teste da janela:** desde `3db5a8c` (B), `--mundo-novo` e `--semente` abrem o mundo vazio. Os cenários de fechar e de leveza passaram a usar `--com-povo`.
+- **Opções de teste da janela:**
+  - `--mundo-novo` abre o mundo vazio, mesmo junto com `--semente`, a não ser com `--com-povo`;
+  - `--semente` sozinha, `--dias`, `--anos`, `--cena` e `--cenario-raro` já trazem o povo;
+  - os cenários de fechar e de leveza usam `--com-povo`, e a captura do começo (QA-002) não usa, de propósito.
 - **Fechar o jogo:** 12 fechamentos com o atalho ligado (6 pela mensagem da janela, 6 pelo "Sair"), todos com código 0 e com "threads encerradas" no log.
 - **Observação menor para a B:** num fechamento, o log escreve "threads encerradas" 3 vezes, porque mais de um caminho de saída chama `encerrar()`. É inofensivo.
 
