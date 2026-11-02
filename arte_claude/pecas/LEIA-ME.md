@@ -803,7 +803,7 @@ As ações de 1x (seção 22), as brincadeiras (seção 23), as folhas de gente 
 O capacete e o chapéu ficam de fora quando há um objeto em cima da cabeça (o cesto, o pote, a lança erguida).
 
 - **As folhas de sempre dos habitantes** (auditoria 7): `adulto_a_parado_2q`, `adulto_a_andar_4q`, `adulto_b_parado_2q`, `adulto_b_andar_4q`, `crianca_andar_4q`, `idoso_andar_4q`, `adulto_a_rezar_2q`, `adulto_a_colher_4q` e `adulto_a_sentado_1q` também têm a roupa do estágio, com o mesmo nome em `estagioN/`. São as que ficam mais tempo na tela: sem elas, um povo do estágio 6 andava e ficava parado com a roupa do estágio 1, e só as ações de 1x mostravam o chapéu. As `adulto_eN_*` continuam como amostra.
-- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 37 folhas são as 9 folhas de sempre dos habitantes (acima), as 7 da tarde (seção 29), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
+- **Onde ficam:** em `estagioN/`, com o **mesmo nome** da folha de `acoes/` (por exemplo, `estagio5/catar_lenha_forte_4q.png`). As 49 folhas são as 9 folhas de sempre dos habitantes (acima), as 19 da tarde (seção 29), as `*_forte_4q` e a `pescar_espreitar_forte_2q`, as 4 `crianca_pegapega_*` e `crianca_ciranda_*`, a `crianca_banho_4q`, e `cacar_apontar_2q`, `cacar_comemorar_4q` e `cacar_amarrar_4q`.
 - **Como o motor escolhe:** procura a folha em `estagioN/`, do estágio atual do povo; se não achar, usa a de `acoes/`. Os tamanhos, os quadros e o encaixe são os mesmos da folha de `acoes/`.
 - **Inverno:** cada uma tem a versão com a roupa de frio por cima, em `estacoes/inverno/estagioN/`, com o mesmo nome. O capacete e o chapéu aparecem sobre o capuz.
 - **Atlas:** as folhas de cada estágio entram no atlas daquele estágio (`estagioN` e `estagioN_inverno`).
@@ -860,6 +860,28 @@ São ações de 1x para a tarde (12h às 15h30), o período mais parado. Antes d
 | afiar lança | `acoes/afiar_lanca_4q` | 12 × 12 | 4 | sentado, a lança de 2 px atravessada no colo: esfrega a pedra na ponta (0 a 2, com um pozinho no 2) e olha a ponta contra a luz (3). Bom para antes da caçada. |
 | ensinar | `acoes/ensinar_apontar_4q` + `acoes/crianca_imitar_4q` | 12 × 12 e 6 × 8 | 4 e 4 | o adulto aponta para longe, de boca aberta (0 e 1), e mostra o gesto com um galho (2 e 3); a criança, a 8 a 10 px à frente e virada para ele, olha para onde ele aponta e repete o gesto com um galhinho. Os quadros vão juntos. |
 | consertar o telhado | `acoes/consertar_telhado_4q` | 12 × 12 | 4 | ajoelhado em cima da casa: ergue o feixe de palha, assenta, ergue a pedra de bater e bate (com um pozinho). A base (linha 11) vai na cumeeira ou na água do telhado; mova a pessoa alguns pixels ao longo do telhado a cada ciclo. Nas casas de telha e de tábuas também lê: o feixe vira o reparo. |
+
+### As três cenas da tarde da 0.1.2 (pedido da A): detalhe → folha
+
+A A pôs no núcleo três cenas, das 12h30 às 15h30: a sesta, ensinar a lança e o artesanato em roda. Cada `detalhe` da agenda tem a sua folha. Todas têm a roupa dos estágios 3 a 6 e a de inverno, e o velho tem o capuz de idoso. `acoes/amostra_tarde_4x.png` mostra todas, com os objetos no fim.
+
+| Cena | Detalhe | Folha | Quadro | Como montar |
+|---|---|---|---|---|
+| sesta | `sesta` | `acoes/sesta_lado_2q` (deitado de lado, encolhido) ou `sesta_forte_2q` (de costas) | 12 × 12 | o corpo nas linhas 8 a 11 e a cabeça à esquerda; espelhe para a cabeça ficar do lado da casa. 1,5 a 2 s por quadro. |
+| sesta | `cutucar` | `acoes/crianca_cutucar_2q` | 6 × 8 | de pé, inclinada, cutucando com um galhinho (0) e rindo (1), a 4 a 6 px de quem dorme |
+| sesta | `ralhar` | `acoes/ralhar_2q` | 12 × 12 | meio erguido do chão, apoiado no braço de trás, com o punho levantado e a boca aberta; o punho sacode no quadro 1. Com o balão de raiva (`balao_5v`, variação 4). |
+| sesta | `fugir` | `habitantes/crianca_andar_4q` ou `acoes/crianca_pegapega_fugir_4q` (rindo, olhando para trás) | 6 × 8 | |
+| ensinar | `mostrar` | `acoes/idoso_mostrar_4q` | 12 × 12 | o velho, de bengala, aponta o alvo com o braço esticado (0 e 1) e faz o gesto do arremesso com a mão vazia (2) |
+| ensinar | `aprovar` | `acoes/idoso_aprovar_2q` | 12 × 12 | a mão erguida e aberta; no quadro 1, balança a cabeça de boca aberta |
+| ensinar | `mirar_alvo` (criança) | `acoes/crianca_mirar_2q` | 12 × 12 | a criança nas colunas 0 a 5 e as linhas 4 a 11, com a lança pequena de 2 px na altura do peito, apontada para o alvo |
+| ensinar | `arremessar_alvo` (criança) | `acoes/crianca_arremessar_4q` | 12 × 12 | recolhe a lança atrás da cabeça (0), ergue (1), solta (2: a lança sai como `objetos/lanca_voando`) e acompanha (3) |
+| ensinar | `mirar_alvo` e `arremessar_alvo` (adulto) | `acoes/cacar_espreitar_forte_4q` e `cacar_arremessar_forte_4q` | 12 × 12 | os da caçada |
+| ensinar | `buscar_lanca` | `acoes/buscar_lanca_2q` | 12 × 12 | abaixado, pegando a lança no chão (0), e de pé com ela na mão (1) |
+| ensinar | `comemorar` | `acoes/crianca_comemorar_4q` | 6 × 8 | agacha, salta com os braços em V, abre as pernas e pousa; o motor sobe a criança 2 a 3 px nos quadros 1 e 2 |
+| ensinar | o alvo (`cena["alvo"]`) | `objetos/alvo_capim` (8 × 14), `alvo_capim_lanca` (12 × 14) e `lanca_no_chao` (14 × 2) | | o feixe de capim amarrado em duas voltas, fincado numa estaca, com a base na linha 13. Quando acerta, troque por `alvo_capim_lanca` (a lança cravada, entrando pela esquerda; espelhe se o arremesso vier da direita); quando erra, a `lanca_no_chao` fica ao lado do alvo. |
+| artesanato | `trancar_cesto`, `moldar_pote`, `afiar_lanca` | `acoes/trancar_cesto_4q`, `moldar_pote_4q`, `afiar_lanca_4q` | 12 × 12 | acima, nesta seção |
+| artesanato | `mostrar_peca` | `acoes/mostrar_peca_cesto_2q`, `mostrar_peca_pote_2q`, `mostrar_peca_lanca_2q` (pelo `cena["peca"]`) | 12 × 12 | de pé, de boca aberta, ergue a peça acima da cabeça com os dois braços; no quadro 1, a peça sobe 1 px. É o que mais se lê de longe. |
+| artesanato | `levar_peca` | `acoes/carregar_cesto_cabeca_forte_4q` (cesto), `carregar_agua_forte_4q` (pote) ou `andar` com a lança | | |
 
 ## Critérios
 

@@ -13,7 +13,7 @@ sys.path.insert(0, str(AQUI))
 
 import construcao as k  # noqa: E402
 from acoes import CAB, CAB_BAIXA, quadro  # noqa: E402
-from cotidiano import ajoelhado, largo, por  # noqa: E402
+from cotidiano import ajoelhado, largo, m, por  # noqa: E402
 from forte import lanca  # noqa: E402
 from vida import CAB_BOCA, crianca, sentado  # noqa: E402
 
@@ -129,10 +129,177 @@ def consertar_telhado():
     ]
 
 
+# ---------------------------------------------------------------- 0.1.2: as cenas da tarde da A
+# (sesta, ensinar a lança no alvo de capim, artesanato em roda)
+
+CESTO = [(x, y, "n" if (x + y) % 2 else "o") for x in range(2, 7) for y in (0, 1)] + [(2, 2, "o"), (6, 2, "o")]
+POTE = [(3, 0, "M"), (5, 0, "M"), (2, 1, "M"), (3, 1, "m"), (4, 1, "m"), (5, 1, "m"), (6, 1, "M"),
+        (3, 2, "M"), (4, 2, "M"), (5, 2, "M")]
+
+
+def mostrar_peca(peca):
+    """De pé, ergue a peça pronta acima da cabeça com os dois braços, de boca aberta; no quadro
+    1 a peça sobe 1 px (o gesto de mostrar). `peca`: cesto, pote ou lanca."""
+    out = []
+    for i in range(2):
+        q = largo(quadro([], CAB_BOCA, pernas="base", desce=2))
+        dy = -i
+        bracos = [(1, 6, "s"), (1, 5, "s"), (2, 4 + dy, "s"), (6, 6, "S"), (6, 5, "S"), (5, 4 + dy, "S")]
+        if peca == "lanca":
+            obj = [(x, y + 2 + dy, c) for x, y, c in lanca(0, 11, 0)]
+        else:
+            obj = [(x, y + 1 + dy, c) for x, y, c in (CESTO if peca == "cesto" else POTE)]
+        out.append(por(q, obj + bracos))
+    return out
+
+
+def ralhar():
+    """Meio erguido do chão (acordado pela criança), apoiado no braço de trás, o punho da frente
+    levantado e a boca aberta; no quadro 1 o punho sacode. Use o balão de raiva."""
+    return [
+        por(largo(sentado(1, [(0, 8, "s"), (0, 9, "s")], CAB_BOCA)), [(6, 5, "S"), (7, 4, "S"), (7, 3, "S")]),
+        por(largo(sentado(1, [(0, 8, "s"), (0, 9, "s")], CAB_BOCA)),
+            [(6, 5, "S"), (7, 4, "S"), (8, 3, "S"), (8, 2, "S")]),
+    ]
+
+
+def crianca_comemorar():
+    """A criança pula de alegria: agacha, salta com os braços em V, abre as pernas no alto e
+    pousa. O motor sobe a criança 2 a 3 px nos quadros 1 e 2."""
+    agachada = ["......", ".hhh..", "hHhSS.", "hhSxS.", ".sSS..", "sTTTS.", ".TbT..", ".ffF.."]
+    return [agachada,
+            crianca([(0, 3, "s"), (0, 2, "s"), (4, 3, "S"), (5, 2, "S")], [".lL...", ".fF..."]),
+            crianca([(0, 2, "s"), (0, 1, "s"), (5, 2, "S"), (5, 1, "S")], ["l...L.", "f...F."]),
+            agachada]
+
+
+def crianca_doze(g):
+    """Põe a criança (6x8) num quadro de 12x12, embaixo à esquerda, para caber a lança."""
+    q = [list("............") for _ in range(12)]
+    for y, l in enumerate(g):
+        for x, ch in enumerate(l):
+            if ch != ".":
+                q[4 + y][x] = ch
+    return ["".join(l) for l in q]
+
+
+def crianca_mirar():
+    """A criança (8 a 13 anos) mira o alvo com a lança pequena erguida, de 2 px e ponta clara;
+    no quadro 1 ajeita o braço. Quadro de 12x12, com a criança nas colunas 0 a 5."""
+    out = []
+    for i in range(2):
+        q = crianca_doze(crianca([(0, 4, "s")], ["l..L..", "f..F.."]))
+        out.append(por(q, lanca(i, 9 + i, 8) + [(4, 8, "S")]))   # na altura do peito, sem cobrir o rosto
+    return out
+
+
+def crianca_arremessar():
+    """A criança arremessa: recolhe a lança atrás da cabeça, ergue, solta (a lança sai do
+    quadro: use `lanca_voando`) e acompanha o movimento."""
+    diag = [(0, 6, "n"), (1, 5, "n"), (2, 4, "n"), (3, 3, "Z"), (1, 6, "q"), (2, 5, "q"), (3, 4, "z")]
+    return [
+        por(crianca_doze(crianca([(0, 4, "s")], ["l..L..", "f..F.."])), diag + [(2, 6, "S")]),
+        por(crianca_doze(crianca([(0, 5, "s")], [".l..L.", "f...F."])), lanca(0, 9, 2) + [(4, 3, "S"), (4, 4, "S")]),
+        crianca_doze(crianca([(0, 5, "s"), (4, 4, "S"), (5, 4, "S")], [".l..L.", "f....F"])),
+        crianca_doze(crianca([(0, 4, "s"), (4, 5, "S")], ["l..L..", "f..F.."])),
+    ]
+
+
+def buscar_lanca():
+    """Abaixado, pega a lança caída no chão (quadro 0) e se ergue com ela na mão (quadro 1)."""
+    return [
+        por(largo(quadro([(1, 7, "s"), (6, 9, "S"), (7, 10, "S")], CAB_BAIXA, pernas="dobrado", desce=2)),
+            lanca(3, 11, 10) + [(7, 10, "S")]),
+        por(largo(quadro([(1, 5, "s"), (1, 6, "s")], CAB)), lanca(1, 11, 6) + [(6, 6, "S")]),
+    ]
+
+
+def sesta_lado():
+    """Deitado de lado, encolhido, dormindo; no quadro 1 o ombro sobe (respira). A cabeça fica
+    à esquerda: espelhe para ela ficar do lado da casa ou da árvore."""
+    vazio = ["............"] * 8
+    q0 = grade(*vazio, "............", ".hh...lL....", "hhSSTTTTlLF.", ".sSTbTTf.F..")
+    q1 = grade(*vazio, "............", ".hh.TTlL....", "hhSSTTTTlLF.", ".sSTbTTf.F..")
+    return [q0, q1]
+
+
+def crianca_cutucar():
+    """A criança, de pé e inclinada, cutuca quem dorme com um galhinho; no quadro 1 recolhe o
+    braço, rindo. Ponha-a a 4 a 6 px de quem dorme, virada para ele."""
+    return [
+        crianca([(0, 4, "s"), (4, 4, "S"), (5, 5, "n")], [".l..L.", ".f..F."]),
+        crianca([(0, 4, "s"), (4, 3, "S")], ["l..L..", "f..F.."]),
+    ]
+
+
+CAB_IDOSO = ["...gggg.", "..gGGgg.", "..ggggSe", "...gsSSS"]
+CAB_IDOSO_BOCA = ["...gggg.", "..gGGgg.", "..ggggSe", "...gsSxS"]
+
+
+def idoso(pontos, cab=CAB_IDOSO):
+    """O velho de pé, com o corpo do `idoso_andar_4q` e a bengala na mão de trás (coluna 0);
+    os braços e objetos vêm em `pontos`. Quadro de 12x12."""
+    corpo = [".TTTT...", "TTTbTT..", ".TTTbT..", "..bbbb..", "..l..L..", "..l..L..", ".ff..FF."]
+    g = [list(l) for l in (["........"] + cab + corpo)]
+    for y in range(6, 12):
+        g[y][0] = "c"
+    g[6][1] = "s"
+    for x, y, ch in pontos:
+        if 0 <= x < 8 and 0 <= y < 12:
+            g[y][x] = ch
+    return largo(["".join(l) for l in g])
+
+
+def idoso_mostrar():
+    """O velho ensina: aponta o alvo com o braço esticado (0 e 1, de boca aberta no 0), faz o
+    gesto do arremesso com a mão vazia (2) e volta a apontar (3)."""
+    braco = [(5, 5, "S"), (6, 5, "S"), (7, 5, "S")]
+    return [
+        por(idoso([], CAB_IDOSO_BOCA), braco + [(8, 5, "S"), (9, 4, "S")]),
+        por(idoso([]), braco + [(8, 5, "S"), (9, 5, "S")]),
+        por(idoso([], CAB_IDOSO_BOCA), [(5, 5, "S"), (6, 4, "S"), (6, 3, "S"), (7, 2, "S")]),
+        por(idoso([]), braco + [(8, 5, "S"), (9, 4, "S")]),
+    ]
+
+
+def idoso_aprovar():
+    """O velho aprova: a mão da frente erguida e aberta (0), e balança a cabeça de boca
+    aberta, com a mão mais alta (1)."""
+    return [
+        por(idoso([]), [(5, 5, "S"), (6, 4, "S"), (6, 3, "S"), (6, 2, "S"), (7, 2, "S")]),
+        por(idoso([], CAB_IDOSO_BOCA), [(5, 5, "S"), (6, 4, "S"), (6, 3, "S"), (7, 2, "S"), (7, 1, "S")]),
+    ]
+
+
+def objetos_tarde():
+    """O alvo de capim (8x14): um feixe de palha amarrado em duas voltas, fincado numa estaca;
+    o alvo com a lança cravada (12x14, a lança entrando pela esquerda); e a lança caída no
+    chão (14x2), quando erra."""
+    alvo = [
+        ".y.yy.y.", "yonyynoy", "onyyyyno", "oqqqqqqo", "onyyyyno", "onyyyyno", "oqqqqqqo", "onyyyyno",
+        "yonyynoy", ".y.oo.y.", "...on...", "...on...", "...on...", "..nonn..",
+    ]
+    cravada = []
+    for y, l in enumerate(alvo):
+        linha = "...." + l
+        if y == 4:
+            linha = "nnnnnZ" + linha[6:]
+        if y == 5:
+            linha = "qqqqqz" + linha[6:]
+        cravada.append(linha)
+    no_chao = ["..nnnnnnnnnnZZ", "qqqqqqqqqqqqzz"]
+    return {"alvo_capim": m(*alvo), "alvo_capim_lanca": m(*cravada), "lanca_no_chao": m(*no_chao)}
+
+
 FOLHAS = {
     "sesta_forte_2q": sesta, "trancar_cesto_4q": trancar_cesto, "moldar_pote_4q": moldar_pote,
     "afiar_lanca_4q": afiar_lanca, "ensinar_apontar_4q": ensinar, "crianca_imitar_4q": crianca_imitar,
     "consertar_telhado_4q": consertar_telhado,
+    "mostrar_peca_cesto_2q": lambda: mostrar_peca("cesto"), "mostrar_peca_pote_2q": lambda: mostrar_peca("pote"),
+    "mostrar_peca_lanca_2q": lambda: mostrar_peca("lanca"), "ralhar_2q": ralhar,
+    "crianca_comemorar_4q": crianca_comemorar, "crianca_mirar_2q": crianca_mirar,
+    "crianca_arremessar_4q": crianca_arremessar, "buscar_lanca_2q": buscar_lanca, "sesta_lado_2q": sesta_lado,
+    "crianca_cutucar_2q": crianca_cutucar, "idoso_mostrar_4q": idoso_mostrar, "idoso_aprovar_2q": idoso_aprovar,
 }
 
 
@@ -142,7 +309,10 @@ def principal():
     folhas = {n: k.pintar(f()) for n, f in FOLHAS.items()}
     for nome, qs in folhas.items():
         k.gravar(k.folha_quadros(qs), AQUI / f"{nome}.png")
-    W, H = 4 * 14 + 8, len(folhas) * 16 + 4
+    objs = objetos_tarde()
+    for nome, px in objs.items():
+        k.gravar(px, AQUI.parent / "objetos" / f"{nome}.png")
+    W, H = 4 * 14 + 8, len(folhas) * 16 + 24
     img = Image.new("RGBA", (W, H), PALETA[1] + (255,))
     grama = Image.open(AQUI.parent / "terreno" / "grama_a.png")
     roupas = ((26, 30, 28), (24, 23, 27), (23, 8, 29))
@@ -153,6 +323,14 @@ def principal():
         for i, q in enumerate(qs):
             im = para_imagem(trocar(q, k.hab.troca(*roupas[(i + j) % 3])))
             img.alpha_composite(im, (4 + i * 14, y + 12 - im.height))
+    y = 4 + len(folhas) * 16
+    for x in range(0, W, 8):
+        img.alpha_composite(grama, (x, y + 12))
+    x = 4
+    for px in objs.values():
+        im = para_imagem(px)
+        img.alpha_composite(im, (x, y + 14 - im.height))
+        x += im.width + 4
     img.save(AQUI / "amostra_tarde.png")
     img.resize((W * 5, H * 5), Image.NEAREST).save(AQUI / "amostra_tarde_4x.png")
     print("ações da tarde:", ", ".join(folhas))

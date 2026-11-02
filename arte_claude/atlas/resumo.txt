@@ -1,5 +1,5 @@
-comum: 1024x512, 292 peças, 2048 KB
-pessoas_inverno: 256x256, 90 peças, 256 KB
+comum: 1024x512, 307 peças, 2048 KB
+pessoas_inverno: 256x256, 102 peças, 256 KB
 nuvens: 256x128, 45 peças, 128 KB
 estacao_primavera: 256x128, 68 peças, 128 KB
 estacao_verao: 256x128, 68 peças, 128 KB
@@ -9,12 +9,12 @@ estagio1: 128x64, 8 peças, 32 KB
 estagio1_inverno: 128x64, 8 peças, 32 KB
 estagio2: 256x128, 33 peças, 128 KB
 estagio2_inverno: 256x128, 33 peças, 128 KB
-estagio3: 256x256, 58 peças, 256 KB
-estagio3_inverno: 256x256, 58 peças, 256 KB
-estagio4: 256x256, 69 peças, 256 KB
-estagio4_inverno: 256x256, 69 peças, 256 KB
-estagio5: 256x256, 73 peças, 256 KB
-estagio5_inverno: 256x256, 73 peças, 256 KB
-estagio6: 256x256, 80 peças, 256 KB
-estagio6_inverno: 256x256, 80 peças, 256 KB
-total: 5.19 MB
+estagio3: 256x256, 70 peças, 256 KB
+estagio3_inverno: 256x256, 70 peças, 256 KB
+estagio4: 256x256, 81 peças, 256 KB
+estagio4_inverno: 256x256, 81 peças, 256 KB
+estagio5: 256x256, 85 peças, 256 KB
+estagio5_inverno: 256x256, 85 peças, 256 KB
+estagio6: 512x256, 92 peças, 512 KB
+estagio6_inverno: 512x256, 92 peças, 512 KB
+total: 5.69 MB
