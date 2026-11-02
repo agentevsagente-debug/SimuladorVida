@@ -130,11 +130,29 @@ func _cenas_da_vila() -> void:
 				vistas[cena["tipo"]] += 1
 				conferir(cena["ini"] >= 745.0 and cena["fim"] <= 950.0, "%s fora do começo da tarde: %.0f a %.0f" % [cena["id"], cena["ini"], cena["fim"]])
 				var dets := {}
+				var c: Dictionary = ro.ctx[cena["grupo"]]
 				for pid in cena["participantes"] + ([cena["crianca"]] if cena.has("crianca") else []):
 					for h in range(12, 16):
 						for tr in ro.agenda(pid, h):
 							if tr["cena"].get("id", "") == cena["id"]:
 								dets[tr["detalhe"]] = true
+								# Auditoria 13: quem dorme ou trabalha na roda não fica em cima de uma construção.
+								if tr["detalhe"] in ["sesta", "trancar_cesto", "moldar_pote", "afiar_lanca"] and tr["x0"] == tr["x1"]:
+									conferir(not ro._em_obra(tr["x0"], 2.0, c), "%s: %s em cima de uma construção, em x %.0f" % [cena["id"], tr["detalhe"], tr["x0"]])
+				if cena["tipo"] == "ensinar":
+					var xa: float = cena["x"]
+					var lado: float = signf(cena["alvo"] - xa)
+					conferir(absf(cena["alvo"] - xa) >= 25.9 and absf(cena["alvo"] - xa) <= 30.1, "%s: o alvo a %.0f px do atirador" % [cena["id"], absf(cena["alvo"] - xa)])
+					var alem := true
+					for ob in c["obras"]:
+						if (lado > 0.0 and ob[1] > xa) or (lado < 0.0 and ob[0] < xa):
+							alem = false
+					conferir(alem or absf(xa - (c["faixa"][1] if lado > 0.0 else c["faixa"][0])) <= 2.5, "%s: o atirador não está além da última construção" % cena["id"])
+					var xm := -1.0
+					for tr in ro.agenda(cena["mestre"], int(cena["etapas"][2]["ini"])):
+						if tr["detalhe"] == "mostrar":
+							xm = tr["x0"]
+					conferir(xm < 0.0 or absf(absf(xm - xa) - 9.0) < 0.1, "%s: o mestre a %.1f px da criança" % [cena["id"], absf(xm - xa)])
 				match cena["tipo"]:
 					"sesta":
 						conferir(dets.has("sesta") and dets.has("cutucar") and dets.has("ralhar") and dets.has("fugir"), "sesta sem as etapas: %s" % [dets.keys()])

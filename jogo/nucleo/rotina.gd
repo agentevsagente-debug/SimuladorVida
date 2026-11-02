@@ -224,8 +224,11 @@ func casa_de(pid: int) -> float:
 
 func _contexto(g) -> Dictionary:
 	var c := {"casas": [], "largura_casa": 16.0, "rocas": [], "fogo": 0.0, "altar": -1.0, "templo": -1.0, "forja": -1.0,
-		"arquivo": -1.0, "celeiro": -1.0, "moinho": -1.0, "barco": -1.0}
+		"arquivo": -1.0, "celeiro": -1.0, "moinho": -1.0, "barco": -1.0, "obras": []}
 	for o in Cotidiano.construcoes_do_grupo(m, g):
+		# O chão que as construções da fileira da frente ocupam (para as cenas não cair em cima delas).
+		if o["fileira"] == 0 and not o["tipo"] in ["fogueira", "roca", "barco"]:
+			c["obras"].append([o["x"] - o["largura"] * 0.5, o["x"] + o["largura"] * 0.5])
 		match o["tipo"]:
 			"fogueira":
 				c["fogo"] = o["x"]
@@ -1662,6 +1665,34 @@ func _na_vila(x: float, c: Dictionary) -> float:
 	return x
 
 
+## Um trecho de chão livre para uma cena de `meia` px para cada lado: o x mais perto de `x0` (de
+## 2 em 2 px, até 80 px) que fica na faixa do povo, a 14 px ou mais do fogo e sem cruzar
+## nenhuma construção (`c["obras"]`), com 2 px de folga. Sem lugar, devolve `x0` na vila.
+func _chao_livre(x0: float, meia: float, c: Dictionary) -> float:
+	var lo: float = maxf(c["faixa"][0], Cotidiano.MARGEM + 2.0) + meia
+	var hi: float = c["faixa"][1] - meia
+	for i in 81:
+		var x := x0 + 2.0 * ceilf(i / 2.0) * (1.0 if i % 2 == 1 else -1.0)
+		if x < lo or x > hi or absf(x - c["fogo"]) < 14.0:
+			continue
+		var livre := true
+		for ob in c["obras"]:
+			if x - meia < ob[1] + 2.0 and x + meia > ob[0] - 2.0:
+				livre = false
+				break
+		if livre:
+			return x
+	return _na_vila(x0, c)
+
+
+## x (com `meia` px para cada lado) cruza alguma construção do povo?
+func _em_obra(x: float, meia: float, c: Dictionary) -> bool:
+	for ob in c["obras"]:
+		if x - meia < ob[1] and x + meia > ob[0]:
+			return true
+	return false
+
+
 func _cena_sesta(g, c: Dictionary) -> void:
 	var adultos: Array = _embaralhados(_adultos(g, 18, 75), 1110).filter(func(p): return not papeis.has(p.id))
 	var criancas: Array = _embaralhados(_adultos(g, 4, 9), 1111).filter(func(p): return not papeis.has(p.id))
@@ -1673,13 +1704,40 @@ func _cena_sesta(g, c: Dictionary) -> void:
 	var casa: float = c["fogo"] + 20.0
 	if not c["casas"].is_empty():
 		casa = c["casas"][int(ruido(g.id, dia, 1114) * c["casas"].size()) % c["casas"].size()]
+	# Deitados ao lado de uma casa, a 7 px da parede e a 8 px um do outro, onde houver chão: as
+	# casas das pontas da vila, pelo lado de fora, primeiro (entre duas casas mal cabe um).
+	var parede: float = c["largura_casa"] * 0.5 + 7.0
+	var casas: Array = c["casas"].duplicate()
+	casas.sort()
+	var tentativas: Array = []
+	if not casas.is_empty():
+		var primeiro_lado: bool = ruido(g.id, dia, 1115) < 0.5
+		tentativas.append([casas[-1], 1.0] if primeiro_lado else [casas[0], -1.0])
+		tentativas.append([casas[0], -1.0] if primeiro_lado else [casas[-1], 1.0])
+		for hx in casas:
+			tentativas.append([hx, 1.0])
+			tentativas.append([hx, -1.0])
+	var lugares: Array = []
+	for tt in tentativas:
+		lugares = []
+		for i in 3:
+			var x: float = tt[0] + tt[1] * (parede + i * 8.0)
+			if x < maxf(c["faixa"][0], Cotidiano.MARGEM + 2.0) + 3.0 or x > c["faixa"][1] - 3.0 or _em_obra(x, 3.0, c) \
+					or absf(x - c["fogo"]) < FOGO_LIVRE + 2.0:
+				break
+			lugares.append(x)
+		if lugares.size() >= 2:
+			casa = tt[0]
+			break
+	if lugares.size() < 2:
+		return   # a vila não tem chão livre ao lado de nenhuma casa: hoje não há sesta
 	var cena := _registrar_cena(id, "sesta", g, null, ini, fim, [], casa, {"etapas": [], "crianca": -1})
 	var info := {"tipo": "sesta", "id": id}
 	var xs: Array = []
 	for p in adultos:
-		if xs.size() >= 3:
+		if xs.size() >= lugares.size():
 			break
-		var x := _na_vila(casa + (xs.size() - 1) * 8.0, c)
+		var x: float = lugares[xs.size()]
 		if _fixar(p.id, [_parada(ini + xs.size() * 2.0, fim, x, "deitar", "andar", 0, "sesta")], info):
 			cena["participantes"].append(p.id)
 			xs.append(x)
@@ -1727,10 +1785,17 @@ func _cena_ensinar(g, c: Dictionary) -> void:
 		return
 	var id := "ensinar:%d:%d" % [g.id, dia]
 	var ini := 760.0 + ruido(g.id, dia, 1122) * 20.0
-	# Na borda da vila, do lado de terra: atiram para fora, a 22 px.
+	# Além da última construção do lado de terra (no máximo até a borda da faixa do povo): atiram
+	# para fora, com o alvo a 26 a 30 px, contra o capim e o céu, longe das casas e da gente.
 	var lado: float = 1.0 if c["longe"] >= c["fogo"] else -1.0
-	var xa := _na_vila(c["fogo"] + lado * 34.0, c)
-	var alvo := clampf(xa + lado * 22.0, Cotidiano.MARGEM + 4.0, Cotidiano.LARGURA_MUNDO - 6.0)
+	var ponta: float = c["fogo"]
+	for ob in c["obras"]:
+		ponta = maxf(ponta, ob[1]) if lado > 0.0 else minf(ponta, ob[0])
+	var xa: float = ponta + lado * 6.0
+	xa = minf(xa, c["faixa"][1] - 2.0) if lado > 0.0 else maxf(xa, maxf(c["faixa"][0], Cotidiano.MARGEM) + 2.0)
+	if absf(xa - c["fogo"]) < 14.0:
+		xa = c["fogo"] + lado * 14.0
+	var alvo := clampf(xa + lado * (26.0 + ruido(g.id, dia, 1124) * 4.0), Cotidiano.MARGEM + 4.0, Cotidiano.LARGURA_MUNDO - 6.0)
 	var ida: float = ini + absf(xa - c["fogo"]) / VELOCIDADE
 	var buscar: float = absf(alvo - xa) / VELOCIDADE
 	# O velho mostra uma vez: mira, arremessa, busca a lança e volta.
@@ -1740,7 +1805,8 @@ func _cena_ensinar(g, c: Dictionary) -> void:
 	var etapas: Array = [{"etapa": "ida", "ini": ini / 60.0, "fim": ida / 60.0, "x": xa},
 		{"etapa": "mostrar", "ini": ida / 60.0, "fim": (ida + 4.0 + 2.0 * buscar) / 60.0, "x": xa, "acerto": true}]
 	var t := ida + 4.0 + 2.0 * buscar
-	var xv := _na_vila(xa - lado * 4.0, c)
+	# O mestre a 9 px, atrás da criança: as duas figuras se leem inteiras.
+	var xv: float = xa - lado * 9.0
 	# A criança tenta 2 ou 3 vezes; só a última acerta. Entre uma e outra, vai buscar a lança.
 	var pc: Array = []
 	var tentativas := 2 + int(ruido(g.id, dia, 1123) * 2.0)
@@ -1808,7 +1874,8 @@ func _cena_artesanato(g, c: Dictionary) -> void:
 	var ini := 830.0 + ruido(g.id, dia, 1132) * 15.0
 	var fim := 920.0 + ruido(g.id, dia, 1133) * 15.0
 	var lado: float = -1.0 if c["longe"] >= c["fogo"] else 1.0
-	var xr := _na_vila(c["fogo"] + lado * 18.0, c)
+	# O centro da roda num chão livre: sem casa nem outra construção atrás (16 px para cada lado).
+	var xr := _chao_livre(c["fogo"] + lado * 18.0, 16.0, c)
 	var acao: String = PECAS[peca][0]
 	var det: String = PECAS[peca][1]
 	var cena := _registrar_cena(id, "artesanato", g, null, ini, fim + 10.0, [], xr, {"etapas": [], "peca": peca})
