@@ -106,6 +106,8 @@ if ($Parte -in 'fecharjanela', 'tudo') {
 if ($Parte -in 'capturas', 'tudo') {
     $base = @('--sem-config', '--mundo-novo', '--semente=7', '--dias=12', '--hora=10')
     $cenarios = [ordered]@{
+        # o jogo novo de verdade (sem semente nem dias): a região vazia, à espera do primeiro gesto
+        'QA-002-comeco'     = @('--sem-config', '--mundo-novo', '--capturar-apos=4')
         'QA-098-ausencia'   = $base + @('--simular-ausencia=240', '--capturar-apos=4')
         # a vista só relê o mundo a cada passo, e o núcleo só declara o fim na virada do dia: no 50x,
         # das 10h à 1h são 15 passos de 2,25 s; 2 quadros, aos 6 s e aos 40 s
