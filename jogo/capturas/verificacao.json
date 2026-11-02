@@ -1,78 +1,97 @@
 ﻿{
     "sempre por cima":  {
                             "ok":  true,
+                            "interferencia":  false,
                             "detalhe":  "WS_EX = 0x00040018 (TOPMOST=0x8, LAYERED=0x80000, TRANSPARENT=0x20)"
                         },
     "faixa: janela de tras":  {
                                   "ok":  true,
+                                  "interferencia":  false,
                                   "detalhe":  "WindowFromPoint -\u003e \u0027Alvo da moldura\u0027"
                               },
     "alca: moldura":  {
                           "ok":  true,
+                          "interferencia":  false,
                           "detalhe":  ""
                       },
     "mundo: moldura":  {
                            "ok":  true,
+                           "interferencia":  false,
                            "detalhe":  ""
                        },
     "transparencia da faixa":  {
                                    "ok":  true,
+                                   "interferencia":  false,
                                    "detalhe":  "100,00% dos pixels iguais ao fundo"
                                },
     "mundo opaco":  {
                         "ok":  true,
+                        "interferencia":  false,
                         "detalhe":  "100,00% dos pixels diferentes do fundo"
                     },
     "nitidez 2x":  {
                        "ok":  true,
+                       "interferencia":  false,
                        "detalhe":  "100,00% dos blocos 2x2 de cor unica"
                    },
     "clique atravessa":  {
                              "ok":  true,
+                             "interferencia":  false,
                              "detalhe":  "cliques recebidos pelo alvo: 1 (tentativas: 1)"
                          },
     "clique chega ao mundo":  {
                                   "ok":  true,
+                                  "interferencia":  false,
                                   "detalhe":  "registrado no log da moldura (tentativas: 1)"
                               },
     "clique no mundo fica":  {
                                  "ok":  true,
+                                 "interferencia":  false,
                                  "detalhe":  "alvo continua com 1 clique(s)"
                              },
     "gesto do poder (raio)":  {
                                   "ok":  true,
-                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": -1 }"
+                                  "interferencia":  false,
+                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": -1 } (tentativas: 1, 1, 1)"
                               },
     "arrastar":  {
                      "ok":  true,
-                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px"
+                     "interferencia":  false,
+                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px (tentativas: 1)"
                  },
     "roda na alca (3x)":  {
                               "ok":  true,
-                              "detalhe":  "janela 1440x534"
+                              "interferencia":  false,
+                              "detalhe":  "janela 1440x534 (tentativas: 1)"
                           },
     "passagem refeita em 3x":  {
                                    "ok":  true,
+                                   "interferencia":  false,
                                    "detalhe":  ""
                                },
     "esconder (botao)":  {
                              "ok":  true,
-                             "detalhe":  "minimizada=True; no meio do mundo agora: \u0027Alvo da moldura\u0027"
+                             "interferencia":  false,
+                             "detalhe":  "minimizada=True; no meio do mundo agora: \u0027Alvo da moldura\u0027 (tentativas: 1)"
                          },
     "mostrar (barra tarefas)":  {
                                     "ok":  true,
+                                    "interferencia":  false,
                                     "detalhe":  "janela de volta em (320, 82) 1440x534"
                                 },
     "passagem apos mostrar":  {
                                   "ok":  true,
+                                  "interferencia":  false,
                                   "detalhe":  ""
                               },
     "nitidez 3x":  {
                        "ok":  true,
+                       "interferencia":  false,
                        "detalhe":  "100,00% dos blocos 3x3 de cor unica"
                    },
     "nitidez 4x":  {
                        "ok":  true,
+                       "interferencia":  false,
                        "detalhe":  "100,00% dos blocos 4x4 de cor unica"
                    }
 }

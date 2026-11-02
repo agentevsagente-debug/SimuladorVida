@@ -1,18 +1,22 @@
 ﻿{
     "Ctrl+Alt+H esconde":  {
                                "ok":  true,
+                               "interferencia":  false,
                                "detalhe":  ""
                            },
     "Ctrl+Alt+H traz de volta":  {
                                      "ok":  true,
+                                     "interferencia":  false,
                                      "detalhe":  ""
                                  },
     "fechar pelo X":  {
                           "ok":  true,
+                          "interferencia":  false,
                           "detalhe":  "3 de 3 limpos (saÃ­da 0, threads encerradas, sem erro, sem atalho Ã³rfÃ£o)"
                       },
-    "por cima 60 min":  {
-                            "ok":  true,
-                            "detalhe":  "falhas: ; 0 erros no log"
-                        }
+    "por cima 5 min":  {
+                           "ok":  true,
+                           "interferencia":  false,
+                           "detalhe":  "falhas: ; 0 erros no log"
+                       }
 }
