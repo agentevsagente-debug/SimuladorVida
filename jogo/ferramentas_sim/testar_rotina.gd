@@ -108,5 +108,43 @@ func _initialize() -> void:
 				"rotina da thread igual à da linha principal (dia %d)" % feita.dia)
 			dias_vistos += 1
 	conferir(m.desempenho["substitutos"] == 0, "ninguém acordado sem plano (%s)" % m.desempenho)
+	_cenas_da_vila()
 	print("%d falhas" % falhas)
 	quit(1 if falhas > 0 else 0)
+
+
+## As cenas do começo da tarde na vila (sesta, ensinar, artesanato): aparecem, entre 12h30 e
+## 15h45, e quem está nelas faz o que a cena diz, na hora certa.
+func _cenas_da_vila() -> void:
+	var vistas := {"sesta": 0, "ensinar": 0, "artesanato": 0}
+	var dias := 0
+	for s in [1, 2, 3, 4]:
+		var m := Mundo.new(s, [], Mundo.HORA_INICIAL, true)
+		m.avancar_dias(3)
+		for d in 8:
+			dias += 1
+			var ro = m.rotina()
+			for cena in ro.cenas:
+				if not vistas.has(cena["tipo"]):
+					continue
+				vistas[cena["tipo"]] += 1
+				conferir(cena["ini"] >= 745.0 and cena["fim"] <= 950.0, "%s fora do começo da tarde: %.0f a %.0f" % [cena["id"], cena["ini"], cena["fim"]])
+				var dets := {}
+				for pid in cena["participantes"] + ([cena["crianca"]] if cena.has("crianca") else []):
+					for h in range(12, 16):
+						for tr in ro.agenda(pid, h):
+							if tr["cena"].get("id", "") == cena["id"]:
+								dets[tr["detalhe"]] = true
+				match cena["tipo"]:
+					"sesta":
+						conferir(dets.has("sesta") and dets.has("cutucar") and dets.has("ralhar") and dets.has("fugir"), "sesta sem as etapas: %s" % [dets.keys()])
+					"ensinar":
+						conferir(dets.has("mirar_alvo") and dets.has("arremessar_alvo") and dets.has("aprovar") and dets.has("comemorar")
+							and cena["etapas"].filter(func(e): return e["etapa"] == "tentativa")[-1]["acerto"], "ensinar sem as etapas: %s" % [dets.keys()])
+					"artesanato":
+						conferir(dets.has("mostrar_peca") and (dets.has("trancar_cesto") or dets.has("moldar_pote") or dets.has("afiar_lanca")),
+							"artesanato sem as etapas: %s" % [dets.keys()])
+			m.avancar_dias(1)
+	print("cenas da vila em %d dias: %s" % [dias, vistas])
+	for t in vistas:
+		conferir(vistas[t] >= dias / 4, "%s aparece pouco: %d em %d dias" % [t, vistas[t], dias])

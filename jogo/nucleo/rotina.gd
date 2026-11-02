@@ -38,7 +38,9 @@ const DETALHES := ["colher_arbusto", "cavar_raiz", "catar_lenha", "colher_roca",
 	"buscar_agua", "guardar", "banho", "cozinhar", "comer", "brincar", "vigia", "olhar_ceu", "reza_noturna",
 	"historias", "doente", "repartir", "maos_vazias", "brigar", "separar", "machucado", "espantar", "perdido",
 	"buscar", "discutir", "descansar", "ninar", "carregar_feixe", "carregar_cesto_cabeca", "espreitar",
-	"arremessar", "mirar", "apontar", "espeto", "pescar_lanca", "golpear", "peixe_na_lanca", "despejar", "lavar", "recolher_caca", "caca_no_pau", "bocejar", "aticar", "cochilar", "levar_cesto", "levar_vara", "levar_machado", "levar_pote", "levar_lanca"]
+	"arremessar", "mirar", "apontar", "espeto", "pescar_lanca", "golpear", "peixe_na_lanca", "despejar", "lavar", "recolher_caca", "caca_no_pau", "bocejar", "aticar", "cochilar", "levar_cesto", "levar_vara", "levar_machado", "levar_pote", "levar_lanca",
+	"sesta", "cutucar", "ralhar", "fugir", "mirar_alvo", "arremessar_alvo", "buscar_lanca", "mostrar", "aprovar", "comemorar",
+	"trancar_cesto", "moldar_pote", "afiar_lanca", "mostrar_peca", "levar_peca"]
 ## A ferramenta que se leva a caminho do trabalho, pelo detalhe do trabalho.
 const LEVAR := {"colher_arbusto": "levar_cesto", "cavar_raiz": "levar_cesto", "colher_roca": "levar_cesto",
 	"catar_lenha": "levar_machado", "buscar_agua": "levar_pote", "banho": "levar_pote", "brincar": ""}
@@ -628,6 +630,7 @@ func _vida_social(g) -> void:
 	_criancas_atras_da_caca(g, c)
 	if c.get("sem_cacada", false):
 		_cena_da_tarde(g, c)
+	_cenas_da_vila(g, c)
 	_noite(g, c)
 	_incidentes(g, c)
 	_travessias(g, c)
@@ -1572,6 +1575,241 @@ func _perto_do_porco(x: float, t: float, pid: int) -> bool:
 ## Na volta da caçada, até 3 crianças (de 3 a 8 anos; uma, pelo menos, fica brincando na praia)
 ## esperam na beira da vila, do lado de onde a caça vem, e correm atrás dos caçadores até o
 ## fogo. Antes das brincadeiras da tarde, que perdem o pedaço que cai nessa hora.
+
+## O começo da tarde na vila, todos os dias (também nos de caçada, que acontece longe): três cenas
+## que se encadeiam das 12h30 às 15h30 e se leem de longe.
+## - `sesta` (12h30 às 14h): 2 ou 3 adultos deitados à sombra de uma casa (`deitar`, `sesta`), e
+##   uma criança que não dorme: cutuca um por um (`brincar`, `cutucar`), até que um se ergue e
+##   ralha (`parado`, `ralhar`), e ela foge correndo.
+## - `ensinar` (12h40 às 14h): um velho ensina uma criança de 8 a 13 anos a atirar a lança num alvo
+##   de capim: ele mostra (`mirar_alvo`, `arremessar_alvo`), ela tenta, erra, vai buscar a lança
+##   (`buscar_lanca`) e tenta de novo, até acertar; ele aprova (`aprovar`).
+## - `artesanato` (13h50 às 15h30): 2 ou 3 adultos sentados em roda perto do fogo, fazendo cestos,
+##   potes ou lanças (`tecer` ou `consertar`, com `trancar_cesto`, `moldar_pote` ou `afiar_lanca`);
+##   um vai buscar material no meio, e no fim um ergue a peça pronta (`mostrar_peca`) e a leva
+##   para casa.
+const CENAS_DA_VILA := ["sesta", "ensinar", "artesanato"]
+
+
+func _cenas_da_vila(g, c: Dictionary) -> void:
+	if ruido(g.id, dia, 1100) < 0.65:
+		_cena_sesta(g, c)
+	if ruido(g.id, dia, 1101) < 0.6:
+		_cena_ensinar(g, c)
+	if ruido(g.id, dia, 1102) < 0.7:
+		_cena_artesanato(g, c)
+
+
+## Tira de todos os participantes os blocos de uma cena que não se completou.
+func _desfazer_cena(cena: Dictionary, ids: Array) -> void:
+	for pid in ids:
+		if fixos.has(pid):
+			fixos[pid] = fixos[pid].filter(func(b): return b["cena"].get("id", "") != cena["id"])
+	cenas.erase(cena)
+
+
+## Um x da vila para a cena: perto de `x`, dentro da faixa do povo e longe do centro do fogo.
+func _na_vila(x: float, c: Dictionary) -> float:
+	x = clampf(x, maxf(c["faixa"][0] + 4.0, Cotidiano.MARGEM + 4.0), c["faixa"][1] - 4.0)
+	if absf(x - c["fogo"]) < FOGO_LIVRE + 2.0:
+		x = c["fogo"] + (FOGO_LIVRE + 2.0) * (1.0 if x >= c["fogo"] else -1.0)
+	return x
+
+
+func _cena_sesta(g, c: Dictionary) -> void:
+	var adultos: Array = _embaralhados(_adultos(g, 18, 75), 1110).filter(func(p): return not papeis.has(p.id))
+	var criancas: Array = _embaralhados(_adultos(g, 4, 9), 1111).filter(func(p): return not papeis.has(p.id))
+	if adultos.size() < 2 or criancas.is_empty():
+		return
+	var id := "sesta:%d:%d" % [g.id, dia]
+	var ini := 750.0 + ruido(g.id, dia, 1112) * 10.0
+	var fim := 830.0 + ruido(g.id, dia, 1113) * 10.0
+	var casa: float = c["fogo"] + 20.0
+	if not c["casas"].is_empty():
+		casa = c["casas"][int(ruido(g.id, dia, 1114) * c["casas"].size()) % c["casas"].size()]
+	var cena := _registrar_cena(id, "sesta", g, null, ini, fim, [], casa, {"etapas": [], "crianca": -1})
+	var info := {"tipo": "sesta", "id": id}
+	var xs: Array = []
+	for p in adultos:
+		if xs.size() >= 3:
+			break
+		var x := _na_vila(casa + (xs.size() - 1) * 8.0, c)
+		if _fixar(p.id, [_parada(ini + xs.size() * 2.0, fim, x, "deitar", "andar", 0, "sesta")], info):
+			cena["participantes"].append(p.id)
+			xs.append(x)
+	if xs.size() < 2:
+		_desfazer_cena(cena, cena["participantes"])
+		return
+	# A criança chega, cutuca um por um (3 min cada, com 3 min entre um e outro); o último se ergue
+	# e ralha, e ela foge para longe da casa.
+	var t0 := ini + 12.0
+	var t := t0
+	var pl: Array = []
+	for i in xs.size():
+		pl.append(_parada(t, t + 3.0, xs[i] + 3.0, "brincar", "andar", -1, "cutucar"))
+		t += 6.0
+	var t_ralha := t - 3.0
+	var foge: float = _na_vila(casa + 40.0 * (1.0 if casa < c["fogo"] + 1.0 else -1.0), c)
+	pl.append(_parada(t + 4.0, t + 14.0, foge, "brincar", "brincar", 0, "fugir"))
+	var crianca = null
+	for p in criancas:
+		if _fixar(p.id, pl, info):
+			crianca = p
+			break
+	if crianca == null:
+		_desfazer_cena(cena, cena["participantes"])
+		return
+	cena["crianca"] = crianca.id
+	# Quem ralha é o último cutucado: o bloco de deitar dele se parte em três.
+	var quem: int = cena["participantes"][xs.size() - 1]
+	var xq: float = xs[xs.size() - 1]
+	fixos[quem] = fixos[quem].filter(func(b): return b["cena"].get("id", "") != id)
+	_fixar(quem, [_parada(ini + (xs.size() - 1) * 2.0, t_ralha, xq, "deitar", "andar", 0, "sesta"),
+		_parada(t_ralha, t_ralha + 3.0, xq, "parado", "andar", 1, "ralhar"),
+		_parada(t_ralha + 3.0, fim, xq, "deitar", "andar", 0, "sesta")], info)
+	cena["etapas"] = [{"etapa": "deitar", "ini": ini / 60.0, "fim": t0 / 60.0, "x": casa},
+		{"etapa": "cutucar", "ini": t0 / 60.0, "fim": t_ralha / 60.0, "x": casa},
+		{"etapa": "ralhar", "ini": t_ralha / 60.0, "fim": (t_ralha + 3.0) / 60.0, "x": xq, "quem": quem},
+		{"etapa": "fuga", "ini": (t_ralha + 3.0) / 60.0, "fim": (t + 14.0) / 60.0, "x": foge},
+		{"etapa": "sesta", "ini": (t + 14.0) / 60.0, "fim": fim / 60.0, "x": casa}]
+
+
+func _cena_ensinar(g, c: Dictionary) -> void:
+	var velhos: Array = _embaralhados(_adultos(g, 35, 80), 1120).filter(func(p): return not papeis.has(p.id))
+	var criancas: Array = _embaralhados(_adultos(g, 8, 13), 1121).filter(func(p): return not papeis.has(p.id))
+	if velhos.is_empty() or criancas.is_empty():
+		return
+	var id := "ensinar:%d:%d" % [g.id, dia]
+	var ini := 760.0 + ruido(g.id, dia, 1122) * 20.0
+	# Na borda da vila, do lado de terra: atiram para fora, a 22 px.
+	var lado: float = 1.0 if c["longe"] >= c["fogo"] else -1.0
+	var xa := _na_vila(c["fogo"] + lado * 34.0, c)
+	var alvo := clampf(xa + lado * 22.0, Cotidiano.MARGEM + 4.0, Cotidiano.LARGURA_MUNDO - 6.0)
+	var ida: float = ini + absf(xa - c["fogo"]) / VELOCIDADE
+	var buscar: float = absf(alvo - xa) / VELOCIDADE
+	# O velho mostra uma vez: mira, arremessa, busca a lança e volta.
+	var pv: Array = [_parada(ida, ida + 2.0, xa, "parado", "andar", int(lado), "mirar_alvo", "levar_lanca"),
+		_parada(ida + 2.0, ida + 3.0, xa, "parado", "andar", int(lado), "arremessar_alvo"),
+		_parada(ida + 3.0 + buscar, ida + 4.0 + buscar, alvo, "parado", "andar", int(-lado), "buscar_lanca")]
+	var etapas: Array = [{"etapa": "ida", "ini": ini / 60.0, "fim": ida / 60.0, "x": xa},
+		{"etapa": "mostrar", "ini": ida / 60.0, "fim": (ida + 4.0 + 2.0 * buscar) / 60.0, "x": xa, "acerto": true}]
+	var t := ida + 4.0 + 2.0 * buscar
+	var xv := _na_vila(xa - lado * 4.0, c)
+	# A criança tenta 2 ou 3 vezes; só a última acerta. Entre uma e outra, vai buscar a lança.
+	var pc: Array = []
+	var tentativas := 2 + int(ruido(g.id, dia, 1123) * 2.0)
+	for k in tentativas:
+		var acerto: bool = k == tentativas - 1
+		pc.append(_parada(t, t + 2.0, xa, "parado", "andar", int(lado), "mirar_alvo"))
+		pc.append(_parada(t + 2.0, t + 3.0, xa, "parado", "andar", int(lado), "arremessar_alvo"))
+		pv.append(_parada(t, t + 3.0, xv, "parado", "andar", int(lado), "mostrar"))
+		etapas.append({"etapa": "tentativa", "ini": t / 60.0, "fim": (t + 3.0) / 60.0, "x": xa, "acerto": acerto})
+		t += 3.0
+		if not acerto:
+			pc.append(_parada(t + buscar, t + buscar + 1.0, alvo, "parado", "brincar", int(-lado), "buscar_lanca"))
+			pv.append(_parada(t, t + 1.0 + 2.0 * buscar, xv, "parado", "andar", int(lado), "mostrar"))
+			etapas.append({"etapa": "buscar", "ini": t / 60.0, "fim": (t + 1.0 + 2.0 * buscar) / 60.0, "x": alvo})
+			t += 1.0 + 2.0 * buscar
+	pv.append(_parada(t, t + 4.0, xv, "parado", "andar", int(lado), "aprovar"))
+	pc.append(_parada(t, t + 4.0, xa, "brincar", "andar", int(-lado), "comemorar"))
+	etapas.append({"etapa": "aprovar", "ini": t / 60.0, "fim": (t + 4.0) / 60.0, "x": xa})
+	var cena := _registrar_cena(id, "ensinar", g, null, ini, t + 4.0, [], xa,
+		{"etapas": etapas, "alvo": alvo, "mestre": -1, "aprendiz": -1})
+	var info := {"tipo": "ensinar", "id": id}
+	for v in velhos:
+		if _fixar(v.id, pv, info):
+			cena["mestre"] = v.id
+			cena["participantes"].append(v.id)
+			break
+	if cena["mestre"] == -1:
+		cenas.erase(cena)
+		return
+	for p in criancas:
+		if _fixar(p.id, pc, info):
+			cena["aprendiz"] = p.id
+			cena["participantes"].append(p.id)
+			return
+	_desfazer_cena(cena, cena["participantes"])
+
+
+## O trabalho na roda de ini a fim, parado em x, cortado pelas conversas ([início, virado], 6 min
+## cada, as que caem dentro do trecho).
+func _na_roda(ini: float, fim: float, x: float, acao: String, vir: int, det: String, conversas: Array, ida_det: String) -> Array:
+	var r: Array = []
+	var t := ini
+	for cv in conversas:
+		var t0: float = cv[0]
+		if t0 < t + 3.0 or t0 + 6.0 > fim - 3.0:
+			continue
+		r.append(_parada(t, t0, x, acao, "andar", vir, det, ida_det if r.is_empty() else ""))
+		r.append(_parada(t0, t0 + 6.0, x, "conversar", "andar", cv[1]))
+		t = t0 + 6.0
+	r.append(_parada(t, fim, x, acao, "andar", vir, det, ida_det if r.is_empty() else ""))
+	return r
+
+
+## A peça do artesanato: a ação (a arte de sempre, para quem não usar o detalhe) e o detalhe.
+const PECAS := {"cesto": ["tecer", "trancar_cesto"], "pote": ["consertar", "moldar_pote"], "lanca": ["consertar", "afiar_lanca"]}
+
+
+func _cena_artesanato(g, c: Dictionary) -> void:
+	var adultos: Array = _embaralhados(_adultos(g, 25, 80), 1130).filter(func(p): return not papeis.has(p.id))
+	if adultos.size() < 2:
+		return
+	var opcoes: Array = ["cesto", "lanca"] + (["pote"] if g.estagio >= 2 else [])
+	var peca: String = opcoes[int(ruido(g.id, dia, 1131) * opcoes.size()) % opcoes.size()]
+	var id := "artesanato:%d:%d" % [g.id, dia]
+	var ini := 830.0 + ruido(g.id, dia, 1132) * 15.0
+	var fim := 920.0 + ruido(g.id, dia, 1133) * 15.0
+	var lado: float = -1.0 if c["longe"] >= c["fogo"] else 1.0
+	var xr := _na_vila(c["fogo"] + lado * 18.0, c)
+	var acao: String = PECAS[peca][0]
+	var det: String = PECAS[peca][1]
+	var cena := _registrar_cena(id, "artesanato", g, null, ini, fim + 10.0, [], xr, {"etapas": [], "peca": peca})
+	var info := {"tipo": "artesanato", "id": id}
+	var k := 0
+	var xs: Array = []
+	# Na roda se conversa: o da esquerda e o da direita, duas vezes antes de o da direita sair
+	# para buscar material, e o da esquerda com o do meio depois que ele volta (6 min cada).
+	var meio := (ini + fim) * 0.5
+	var conversas := {0: [[ini + 14.0, 1], [ini + 32.0, 1], [meio + 22.0, 1]], 1: [[ini + 14.0, -1], [ini + 32.0, -1]],
+		2: [[meio + 22.0, -1]]}
+	for p in adultos:
+		if k >= 3:
+			break
+		# Em roda: um de cada lado do centro, olhando para ele, e o terceiro no meio, de frente.
+		var dx: float = [-6.0, 6.0, 0.0][k]
+		var x := _na_vila(xr + dx, c)
+		var vir: int = 1 if dx < 0.0 else (-1 if dx > 0.0 else int(-lado))
+		var fala: Array = conversas[k]
+		var pl: Array = _na_roda(ini + k * 2.0, fim, x, acao, vir, det, fala, "levar_cesto")
+		if k == 1:
+			# No meio da tarde, este vai buscar material em casa e volta.
+			var busca := _casa(p, c)
+			var ida: float = absf(busca - x) / VELOCIDADE
+			pl = _na_roda(ini + k * 2.0, meio, x, acao, vir, det, fala, "levar_cesto") + [
+				_parada(meio + ida, meio + ida + 3.0, busca, "parado", "andar", 0, "guardar")] + \
+				_na_roda(meio + 2.0 * ida + 3.0, fim, x, acao, vir, det, [], "carregar_cesto")
+		elif k == 0:
+			# No fim, este ergue a peça pronta e a leva para casa.
+			var casa := _casa(p, c)
+			var leva: float = absf(casa - x) / VELOCIDADE
+			pl = _na_roda(ini, fim - 3.0, x, acao, vir, det, fala, "levar_cesto") + [
+				_parada(fim - 3.0, fim, x, "parado", "andar", int(-lado), "mostrar_peca"),
+				_parada(fim + leva, fim + leva + 3.0, casa, "parado", "andar", 0, "guardar", "levar_peca")]
+		if _fixar(p.id, pl, info):
+			cena["participantes"].append(p.id)
+			xs.append(x)
+			k += 1
+	if k < 2:
+		_desfazer_cena(cena, cena["participantes"])
+		return
+	cena["etapas"] = [{"etapa": "chegada", "ini": ini / 60.0, "fim": (ini + 6.0) / 60.0, "x": xr},
+		{"etapa": "trabalho", "ini": (ini + 6.0) / 60.0, "fim": (fim - 3.0) / 60.0, "x": xr},
+		{"etapa": "mostrar", "ini": (fim - 3.0) / 60.0, "fim": fim / 60.0, "x": xs[0], "quem": cena["participantes"][0]},
+		{"etapa": "guardar", "ini": fim / 60.0, "fim": (fim + 10.0) / 60.0, "x": xr}]
+
+
 func _criancas_atras_da_caca(g, c: Dictionary) -> void:
 	for cena in cenas:
 		if cena["tipo"] != "cacada" or cena["grupo"] != g.id or cena["vazia"] or not cena.has("volta_ini"):
