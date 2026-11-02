@@ -435,6 +435,8 @@ func _ciclar_escala(direcao: int) -> void:
 	for k in range(ESCALA_MIN, ESCALA_MAX + 1):
 		if BASE.x * k <= area.size.x and BASE.y * k <= area.size.y:
 			maior = k
+	if DisplayServer.get_name() == "headless" or not area.has_area():
+		maior = ESCALA_MAX  # sem tela (os testes): só a escala conta
 	var nova := escala + direcao
 	if nova > maior:
 		nova = ESCALA_MIN

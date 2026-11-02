@@ -133,7 +133,9 @@ func criar(p_vista: Node2D) -> void:
 		if not ResourceLoader.exists(Arte.RAIZ + "interface/icones_12/%s.png" % nome):
 			continue  # a lupa com o número só se a arte tiver
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
-		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
+		# em 8 px o número não se lê: a lupa_2, 3 e 4 usam a lupa sem número
+		var nome_8: String = nome if ResourceLoader.exists(Arte.RAIZ + "interface/icones_8/%s.png" % nome) else nome.get_slice("_", 0)
+		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome_8)
 	for cor in ["clara", "escura", "dourada", "titulo"]:
 		_fontes[cor] = load("res://arte/interface/fonte_5x7_%s.fnt" % cor)
 	Arte.carregar_paleta()
