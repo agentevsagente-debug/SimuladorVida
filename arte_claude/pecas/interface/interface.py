@@ -322,6 +322,35 @@ ICONES_12 = {
         "............",
         "............",
     ],
+    # o botão de som, no fim da alça (0.2): o alto-falante com as ondas, e cortado com o X vermelho
+    "som": [
+        "............",
+        "......WG....",
+        ".....WWG.W..",
+        "....WWWG..W.",
+        ".WWWWWWGW..W",
+        ".WWWWWWG.W.W",
+        ".WWWWWWG.W.W",
+        ".WWWWWWGW..W",
+        ".GGGWWWG..W.",
+        ".....WWG.W..",
+        "......WG....",
+        ".......G....",
+    ],
+    "som_mudo": [
+        "............",
+        "......WG....",
+        ".....WWG....",
+        "....WWWG....",
+        ".WWWWWWGr..r",
+        ".WWWWWWG.rr.",
+        ".WWWWWWG.rr.",
+        ".WWWWWWGr..r",
+        ".GGGWWWG....",
+        ".....WWG....",
+        "......WG....",
+        ".......G....",
+    ],
 }
 
 ICONES_8 = {
@@ -463,6 +492,8 @@ ICONES_8 = {
         ".GGGGGG.",
         "........",
     ],
+    "som": ["...WG...", "..WWG.W.", "WWWWG..W", "WWWWGW.W", "WWWWGW.W", "GGWWG..W", "..WWG.W.", "...WG..."],
+    "som_mudo": ["...WG...", "..WWG...", "WWWWGr.r", "WWWWG.r.", "WWWWGr.r", "GGWWG...", "..WWG...", "...WG..."],
 }
 
 
@@ -830,7 +861,7 @@ def amostra(caixa, dica, bts, folhas):
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
     x += 6
-    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder"):
+    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder", "som"):
         img.alpha_composite(para_imagem(bts[0]), (x, 6))
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
