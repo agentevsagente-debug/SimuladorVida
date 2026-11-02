@@ -50,7 +50,7 @@
 | D-04 | Sem número de versão | média | sim | B | **corrigido** (versão 0.1.0; QA-166 passa) |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **aberto** (QA-105 falha) |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **aberto** (QA-111 falha) |
-| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | aberto como risco; o QA-170 passa (nenhuma espera no 50x) |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
 | D-08 | O mundo velho passava de 8% de um núcleo | média | não | B | **corrigido**: 7,2% no mundo de 200 anos (QA-172 passa) |
 | D-09 | O mundo novo começava com o povo | média | decidido: começa vazio | A, B | **corrigido**: o jogo abre vazio às 7h, com o convite na clareira, e criar povo abre a Primeira Era (QA-002 passa; `QA-002-comeco.png`) |
 | D-10 | A noite tinha 18,75 min, e o documento dizia 15 | baixa | não | — | **resolvido pelo documento** (QA-016 passa) |
@@ -62,6 +62,7 @@
 
 **Nesta rodada, também:**
 - **Leveza em 1x, visível** (semente 7, 120 s): o mundo novo fica em 5,85%, o de 50 anos em 3,46% e o de 200 anos em 7,18% de um núcleo (pico de 9,65%), com 234 a 299 MB.
+- **Opções de teste da janela:** desde `3db5a8c` (B), `--mundo-novo` e `--semente` abrem o mundo vazio. Os cenários de fechar e de leveza passaram a usar `--com-povo`.
 - **Fechar o jogo:** 12 fechamentos com o atalho ligado (6 pela mensagem da janela, 6 pelo "Sair"), todos com código 0 e com "threads encerradas" no log.
 - **Observação menor para a B:** num fechamento, o log escreve "threads encerradas" 3 vezes, porque mais de um caminho de saída chama `encerrar()`. É inofensivo.
 
