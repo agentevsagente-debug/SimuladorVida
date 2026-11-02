@@ -30,6 +30,7 @@ var _fase := "vazio"
 var _desde_povo := 0              # ações desde que o povo nasceu
 var _logger
 var _teste_erro := false
+var _clique_vazio := 0.03         # --fuzz-clique-vazio: a parte dos cliques no mundo vazio que passa (e cria o povo)
 var _extinguir_em := -1           # --fuzz-extinguir-em=N: a extinção na ação N (para cobrir o fim e o recomeço)
 
 
@@ -56,6 +57,8 @@ func _initialize() -> void:
 			semente = int(a.get_slice("=", 1))
 		elif a.begins_with("--fuzz-acoes="):
 			acoes = int(a.get_slice("=", 1))
+		elif a.begins_with("--fuzz-clique-vazio="):
+			_clique_vazio = float(a.get_slice("=", 1))
 		elif a.begins_with("--fuzz-extinguir-em="):
 			_extinguir_em = int(a.get_slice("=", 1))
 		elif a == "--fuzz-teste-erro":
@@ -127,7 +130,7 @@ func _quadro() -> void:
 	# De vez em quando, a extinção (a mesma de --extinguir), para passar pelo fim e pelo recomeço.
 	var v = _vista()
 	_desde_povo += 1
-	var forcada := passo == _extinguir_em and v != null and v.sim.mundo.populacao() > 0
+	var forcada: bool = passo == _extinguir_em and v != null and v.sim.mundo.populacao() > 0
 	if forcada or (_fase in ["povo", "chegada"] and _desde_povo > 80 and rng.randf() < 0.006 and v != null):
 		v._extinguir(0)
 		_anotar("extinguir")
@@ -140,8 +143,8 @@ func _quadro() -> void:
 	if rng.randf() < 0.35:
 		p.y = rng.randf_range(0, 18)   # a faixa da alça (botões, poderes, relógio)
 	# No mundo vazio (o lugar do erro visto pela B), o clique no mundo cria o povo: só deixa passar
-	# 3% deles, para ficar muitas ações no vazio, com dicas e cliques na alça.
-	if _fase in ["vazio", "extinto"] and p.y > 18 and r >= 0.40 and r < 0.81 and rng.randf() > 0.03:
+	# uma parte deles (3%, ou --fuzz-clique-vazio), para ficar muitas ações no vazio.
+	if _fase in ["vazio", "extinto"] and p.y > 18 and r >= 0.40 and r < 0.81 and rng.randf() > _clique_vazio:
 		r = 0.0
 	if r < 0.40:
 		_mover(p)

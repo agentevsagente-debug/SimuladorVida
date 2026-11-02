@@ -1,0 +1,151 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+[fuzz] semente 7, 900 ações
+[simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
+[vista] semente=13 mundo novo
+[1.3] pasta de dados=C:/Users/sergi/AppData/Local/Temp/simvida_qa_janela/Godot/app_userdata/Simulador de vida
+[1.3] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
+[1.4] bandeja: dpi=144 ícone 24 px
+[1.4] alca largura=184
+[1.4] escala=3x janela=(1440, 534)
+[fuzz] passo 0: fase vazio → povo (era 1, 12 pessoas)
+[7.1] alca largura=354
+[10.0] alca largura=184
+[vista] clique no mundo (144.0, 106.0)
+[vista] clique no mundo (428.0, 76.0)
+[vista] clique no mundo (140.0, 155.0)
+[vista] clique no mundo (122.0, 157.0)
+[16.8] arrastada pos=(1096, 970)
+[vista] extinção de teste, 0 anos depois
+[fuzz] passo 40: fase povo → vazio (era 1, 0 pessoas)
+[vista] clique no mundo (78.0, 41.0)
+[38.0] alca largura=167
+[fuzz] passo 135: fase vazio → extinto (era 1, 0 pessoas)
+[interface] criar povo em x=458 -> { "ok": true, "grupo": 1, "era": 2 }
+[46.3] alca largura=184
+[fuzz] passo 183: fase extinto → chegada (era 2, 12 pessoas)
+[vista] clique no mundo (74.0, 108.0)
+[vista] clique no mundo (291.0, 37.0)
+[vista] clique no mundo (190.0, 37.0)
+[vista] clique no mundo (428.0, 12.0)
+[vista] clique no mundo (294.0, 127.0)
+[vista] clique no mundo (339.0, 67.0)
+[vista] clique no mundo (363.0, 34.0)
+[vista] clique no mundo (436.0, 38.0)
+[57.4] arrastada pos=(1096, 970)
+[vista] clique no mundo (398.0, 75.0)
+[vista] clique no mundo (383.0, 71.0)
+[vista] clique no mundo (341.0, 120.0)
+[vista] clique no mundo (372.0, 54.0)
+[63.0] escala=2x janela=(960, 356)
+[vista] extinção de teste, 0 anos depois
+[fuzz] passo 285: fase chegada → extinto (era 2, 0 pessoas)
+[70.1] arrastada pos=(1096, 1148)
+[vista] clique no mundo (206.0, 102.0)
+[vista] clique no mundo (119.0, 109.0)
+[79.9] escala=2x janela=(960, 356)
+[80.9] alca largura=167
+[interface] criar povo em x=180 -> { "ok": true, "grupo": 2, "era": 3 }
+[93.4] alca largura=184
+[fuzz] passo 374: fase extinto → chegada (era 3, 12 pessoas)
+[vista] clique no mundo (144.0, 125.0)
+[vista] clique no mundo (407.0, 18.0)
+[vista] clique no mundo (365.0, 12.0)
+[vista] clique no mundo (294.0, 139.0)
+[vista] clique no mundo (86.0, 9.0)
+[vista] clique no mundo (308.0, 71.0)
+[vista] clique no mundo (293.0, 128.0)
+[vista] clique no mundo (44.0, 125.0)
+[vista] clique no mundo (239.0, 80.0)
+[vista] clique no mundo (239.0, 96.0)
+[vista] clique no mundo (74.0, 94.0)
+[vista] clique no mundo (100.0, 107.0)
+[107.5] alca largura=354
+[109.5] arrastada pos=(1096, 1148)
+[vista] clique no mundo (155.0, 86.0)
+[vista] clique no mundo (196.0, 92.0)
+[110.3] alca largura=184
+[vista] clique no mundo (111.0, 66.0)
+[vista] clique no mundo (174.0, 82.0)
+[vista] clique no mundo (74.0, 115.0)
+[vista] clique no mundo (205.0, 57.0)
+[vista] clique no mundo (229.0, 52.0)
+[vista] clique no mundo (229.0, 88.0)
+[vista] clique no mundo (245.0, 65.0)
+[fuzz] passo 484: fase chegada → povo (era 3, 12 pessoas)
+[vista] clique no mundo (95.0, 88.0)
+[vista] clique no mundo (218.0, 48.0)
+[vista] clique no mundo (109.0, 98.0)
+[vista] clique no mundo (181.0, 77.0)
+[vista] clique no mundo (139.0, 59.0)
+[vista] clique no mundo (185.0, 113.0)
+[vista] clique no mundo (202.0, 47.0)
+[vista] clique no mundo (144.0, 102.0)
+[vista] clique no mundo (291.0, 60.0)
+[vista] clique no mundo (296.0, 93.0)
+[vista] clique no mundo (139.0, 109.0)
+[vista] clique no mundo (189.0, 77.0)
+[vista] clique no mundo (220.0, 52.0)
+[131.3] arrastada pos=(1096, 1148)
+[vista] clique no mundo (86.0, 114.0)
+[138.4] arrastada pos=(1096, 1148)
+[vista] extinção de teste, 0 anos depois
+[fuzz] passo 545: fase povo → extinto (era 3, 0 pessoas)
+[139.9] escala=2x janela=(960, 356)
+[vista] clique no mundo (16.0, 111.0)
+[140.9] alca largura=167
+[141.6] arrastada pos=(1096, 1148)
+[interface] criar povo em x=19 -> { "ok": true, "grupo": 3, "era": 4 }
+[144.0] alca largura=184
+[fuzz] passo 567: fase extinto → chegada (era 4, 12 pessoas)
+[vista] clique no mundo (181.0, 56.0)
+[vista] clique no mundo (223.0, 114.0)
+[vista] clique no mundo (309.0, 109.0)
+[vista] clique no mundo (177.0, 41.0)
+[vista] clique no mundo (358.0, 66.0)
+[vista] clique no mundo (183.0, 104.0)
+[153.3] arrastada pos=(1096, 1148)
+[153.4] arrastada pos=(1096, 1148)
+[vista] clique no mundo (237.0, 119.0)
+[vista] clique no mundo (454.0, 57.0)
+[vista] clique no mundo (162.0, 76.0)
+[vista] clique no mundo (160.0, 112.0)
+[vista] clique no mundo (117.0, 18.0)
+[fuzz] passo 651: fase chegada → povo (era 4, 12 pessoas)
+[vista] extinção de teste, 0 anos depois
+[fuzz] passo 657: fase povo → extinto (era 4, 0 pessoas)
+[vista] clique no mundo (474.0, 3.0)
+[vista] clique no mundo (219.0, 141.0)
+[vista] clique no mundo (51.0, 8.0)
+[183.8] alca largura=167
+[interface] criar povo em x=429 -> { "ok": true, "grupo": 4, "era": 5 }
+[196.7] alca largura=184
+[fuzz] passo 735: fase extinto → chegada (era 5, 12 pessoas)
+[vista] clique no mundo (469.0, 68.0)
+[fuzz] passo 774: fase chegada → povo (era 5, 12 pessoas)
+[vista] clique no mundo (347.0, 70.0)
+[vista] clique no mundo (423.0, 59.0)
+[vista] clique no mundo (222.0, 126.0)
+[vista] clique no mundo (287.0, 136.0)
+[vista] clique no mundo (183.0, 18.0)
+[236.3] arrastada pos=(1096, 1148)
+[vista] clique no mundo (259.0, 19.0)
+[vista] clique no mundo (383.0, 151.0)
+[vista] clique no mundo (32.0, 113.0)
+[vista] clique no mundo (392.0, 46.0)
+[vista] clique no mundo (48.0, 56.0)
+[vista] clique no mundo (387.0, 5.0)
+[vista] clique no mundo (151.0, 52.0)
+[vista] clique no mundo (203.0, 23.0)
+[vista] clique no mundo (20.0, 8.0)
+[243.6] arrastada pos=(1096, 1148)
+[vista] clique no mundo (222.0, 149.0)
+[vista] clique no mundo (254.0, 136.0)
+[vista] clique no mundo (308.0, 96.0)
+[vista] clique no mundo (425.0, 115.0)
+[vista] clique no mundo (369.0, 12.0)
+[fuzz] FIM: 900 ações, 0 erros; era 5, 12 pessoas
+[247.9] saindo
+[simulacao] threads encerradas
+[simulacao] threads encerradas
