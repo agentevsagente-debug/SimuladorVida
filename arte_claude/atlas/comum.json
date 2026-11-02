@@ -2656,7 +2656,7 @@
    "quadro_h": 8
   },
   "objetos/coroa_flores_cabeca": {
-   "x": 949,
+   "x": 962,
    "y": 323,
    "w": 6,
    "h": 2,
@@ -2676,7 +2676,7 @@
    "quadro_h": 4
   },
   "objetos/cuia_cheia": {
-   "x": 956,
+   "x": 969,
    "y": 323,
    "w": 4,
    "h": 2,
@@ -2885,6 +2885,16 @@
    "quadro_w": 12,
    "quadro_h": 3
   },
+  "objetos/lanca_voando_alvo": {
+   "x": 949,
+   "y": 323,
+   "w": 12,
+   "h": 2,
+   "quadros": 1,
+   "tipo": "quadros",
+   "quadro_w": 12,
+   "quadro_h": 2
+  },
   "objetos/lanca_voando_forte": {
    "x": 863,
    "y": 323,
@@ -2916,7 +2926,7 @@
    "quadro_h": 2
   },
   "objetos/peixe_mao": {
-   "x": 961,
+   "x": 974,
    "y": 323,
    "w": 4,
    "h": 2,

@@ -289,7 +289,12 @@ def objetos_tarde():
             linha = "nnnn" + linha[4:]
         cravada.append(linha)
     no_chao = ["..nnnnnnnnnnZZ", "qqqqqqqqqqqqzz"]
-    return {"alvo_capim": m(*alvo), "alvo_capim_lanca": m(*cravada), "lanca_no_chao": m(*no_chao)}
+    # A lança voando até o alvo (12x2, pedido da B na auditoria 13): 2 px de espessura, a haste
+    # marrom com a sombra escura embaixo e a ponta de pedra clara em (11, 1), apontando para a
+    # direita. A de 1 px da caçada (`lanca_voando`) sumia contra os beirais e o pomar.
+    voando = ["nnnnnnnnnnZ.", "qqqqqqqqqqzZ"]
+    return {"alvo_capim": m(*alvo), "alvo_capim_lanca": m(*cravada), "lanca_no_chao": m(*no_chao),
+            "lanca_voando_alvo": m(*voando)}
 
 
 FOLHAS = {
