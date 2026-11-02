@@ -46,13 +46,18 @@ $cliques = Join-Path $env:TEMP 'moldura-cliques.txt'
 $alvo = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList @(
     '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', "`"$PSScriptRoot\alvo.ps1`"",
     '-X', $X, '-Y', $Y, '-Arquivo', "`"$cliques`"", '-Segundos', 150)
-Start-Sleep -Seconds 3
+# Espera a janela-alvo aparecer de fato (com o PC ocupado, 3 s fixos não bastavam), até 15 s.
+for ($i = 0; $i -lt 75 -and [Win32]::Titulo([Win32]::RaizEm($X + 600, $Y + 16)) -ne 'Alvo da moldura'; $i++) { Start-Sleep -Milliseconds 200 }
+Start-Sleep -Milliseconds 500
 $fundo = [Win32]::Capturar($X, $Y, 960, 356)
 
 # 2. Moldura em 2x por cima.
 $log = Join-Path $env:TEMP 'moldura-verificacao.log'
 $g = Iniciar-Moldura 2 $log
 $h = $g.MainWindowHandle
+# e a moldura estar na tela, no lugar (o mundo sob o ponto do céu), até 10 s
+for ($i = 0; $i -lt 50 -and [Win32]::RaizEm($X + 480, $Y + 120) -ne $h; $i++) { Start-Sleep -Milliseconds 200 }
+Start-Sleep -Milliseconds 500
 [Win32]::Nossas.Add($h) | Out-Null
 $alvo.Refresh()
 if ($alvo.MainWindowHandle -ne 0) { [Win32]::Nossas.Add($alvo.MainWindowHandle) | Out-Null }
