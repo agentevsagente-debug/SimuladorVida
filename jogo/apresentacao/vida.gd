@@ -972,9 +972,9 @@ func _alvos_de_capim() -> void:
 			objetos.append(lc)
 		elif estado == "voando":  # num arco, da mão ao miolo do alvo
 			# a lança de 2 px (arte: a ponta no pixel (11, 1); espelhada, em (0, 1)) leva a ponta
-			# da mão até o miolo (colunas 2 e 3 e linha 3 do alvo de 8 × 14)
+			# da mão até o miolo (colunas 3 e 4 e linha 3 do alvo de 8 × 14, que começa em alvo - 4)
 			var q: float = (m - 2.0 - SOLTA_ALVO) / (CRAVA_ALVO - SOLTA_ALVO)
-			var px: float = lerpf(xa + lado * 4.0, alvo - (2.0 if lado > 0.0 else 1.0), q)
+			var px: float = lerpf(xa + lado * 4.0, alvo - (1.0 if lado > 0.0 else 0.0), q)
 			var py: float = lerpf(vista.chao(int(xa)) - 8.0, chao_a - 10.0, q) - sin(q * PI) * ARCO_ALVO
 			var lv := _objeto("objetos/lanca_voando_alvo", 12, roundi(px) - (11 if lado > 0.0 else 0), roundi(py), 0)
 			lv.espelho = lado < 0.0
