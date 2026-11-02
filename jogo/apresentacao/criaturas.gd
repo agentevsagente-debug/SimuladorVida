@@ -5,6 +5,7 @@ extends Node
 ## Todos passam pela tabela de noite, menos os morcegos, que já são escuros.
 
 const Efeitos = preload("res://apresentacao/efeitos.gd")
+const Terreno = preload("res://apresentacao/terreno.gd")
 
 ## tipo -> [estações, hora de início, hora de fim, intervalo mínimo e máximo em s, quantos no máximo]
 const REGRAS := {
@@ -59,11 +60,7 @@ func avancar(delta: float, hora: float, estacao: String, pessoas_x: Array) -> vo
 			_acolhida -= delta
 			if _acolhida <= 0.0:
 				_acolhida = 1e9  # uma vez só
-				if estacao == "inverno":
-					_nascer("coelho", pessoas_x)
-				else:
-					_nascer("cervo", pessoas_x)
-					_nascer("garca", pessoas_x)
+				_acolher(estacao)
 	for tipo in REGRAS:
 		var r: Array = REGRAS[tipo]
 		if not estacao in r[0] or hora < r[1] or hora >= r[2]:
@@ -75,6 +72,26 @@ func avancar(delta: float, hora: float, estacao: String, pessoas_x: Array) -> vo
 		if _quantos(FOLHAS[tipo]) >= r[5]:
 			continue
 		_nascer(tipo, pessoas_x)
+
+
+## O bicho da acolhida do mundo vazio (arte, seção 17): o cervo bebendo na beira do
+## lago, de frente para a água, e a garça pescando na água rasa. No inverno a garça
+## migrou e o lago pode ter gelo: o cervo de pelo de inverno pasta na clareira.
+func _acolher(estacao: String) -> void:
+	var dir := "../criaturas/"
+	if estacao == "inverno":
+		var x := _rng.randf_range(345.0, 375.0)
+		fosco.emitir(dir + "cervo_pastar_inverno_4q", 12, 4, Vector2(x, vista.chao(int(x))), Vector2.ZERO, 90.0, 1.5, 0,
+			{"espelho": true})
+		return
+	var beira: float = float(vista.beira_visivel)
+	# a folha olha para a direita, com o focinho na coluna 11; espelhada, o focinho fica na
+	# coluna da esquerda, que vai uma coluna sobre a água
+	var xc := beira + 5.0
+	fosco.emitir(dir + "cervo_beber_4q", 12, 4, Vector2(xc, vista.chao(int(beira + 6.0))), Vector2.ZERO, 90.0, 2.0, 0,
+		{"espelho": true})
+	var xg := beira - _rng.randf_range(8.0, 14.0)  # a linha 7 da garça é a superfície da água
+	fosco.emitir(dir + "garca_pescar_4q", 8, 4, Vector2(xg, Terreno.NIVEL_AGUA), Vector2.ZERO, 90.0, 1.0, 0, {"espelho": true})
 
 
 func _quantos(folha: String) -> int:
