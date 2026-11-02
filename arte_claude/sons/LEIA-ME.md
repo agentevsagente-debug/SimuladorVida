@@ -11,7 +11,7 @@ O estilo é discreto, quente e levemente retrô, como uma janela aberta para o c
 > - Primeiro, ouça as vozes por formantes (`vila`, `choro_bebe`, `galo` e `grito_cacada`), que podem soar zumbidas ou estranhas.
 > - Depois, ouça os `passaros`.
 
-**Tamanho:** os 29 sons somam **1,77 MB**. Com a prévia, a pasta tem 2,2 MB. A meta era ficar abaixo de 8 MB.
+**Tamanho:** os 35 sons somam **1,98 MB**. Com a prévia, a pasta tem 2,4 MB. A meta era ficar abaixo de 8 MB.
 
 ## Como gerar
 
@@ -65,6 +65,7 @@ O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouc
 | `chuva.ogg` | 30 s | 0 | Na chuva (o clima e o poder da chuva). Entra e sai em 3 s. |
 | `tempestade.ogg` | 36 s | 0 | Na tempestade, no lugar da chuva, com o trovão por cima. Tem vento forte em rajadas e um rumor grave. |
 | `neve.ogg` | 30 s | 0 | Quando neva, no lugar do vento e dos pássaros. É quase silêncio. |
+| `festa.ogg` | 24 s | 0 | Nas festas, no lugar da `vila`: dois tambores de pele a 100 batidas por minuto, palmas e o povo ao fundo. O laço fecha certo, com 40 batidas. |
 | `vila.ogg` | 36 s | -6 a 0 | Quando há gente acordada, das 6h às 21h. O volume acompanha o tamanho do povo: -6 dB com até 15 pessoas e 0 dB com 60 ou mais (o documento diz que "a vila mais cheia soa mais viva"). São vozes sem palavras ao longe e batidas de trabalho. |
 
 **Entre um laço e outro:** troque com 2 a 4 s de cruzamento.
@@ -94,7 +95,50 @@ O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouc
 | `coruja.ogg` | 3,2 s | 0 | À noite, de vez em quando (a cada 1 a 3 min de tempo real), junto com a coruja da arte. |
 | `galo.ogg` | 2,7 s | 0 | Ao amanhecer (5h a 6h), uma ou duas vezes, nos povos do estágio 2 em diante. |
 | `sino_templo.ogg` | 8,5 s | 0 | O sino do templo, nos estágios 3 a 6: ao amanhecer, ao meio-dia e nas festas. É uma batida só; para três, toque com 2,5 s entre elas. |
+| `vento_seco.ogg` | 5,1 s | 0 | A seca (o poder e o clima): uma rajada quente e áspera, com o capim seco farfalhando. |
+| `terra.ogg` | 5,5 s | 0 | A terra se erguendo: um ronco grave que sobe de tom e o arrastar de terra e pedra. |
+| `lamento.ogg` | 6,1 s | 0 | Uma morte: duas frases de choro cantado, sem palavras, ao longe. |
+| `batalha.ogg` | 6,9 s | 0 | Uma batalha ao longe: gritos sem palavras, madeira contra madeira e o tropel. Repita em cruzamento se durar mais. |
+| `grito_frustrado.ogg` | 1,9 s | 0 | O arremesso que erra (a caçada e o alvo): um "ahh" curto que cai. |
 | `clique_alca.ogg` | 0,1 s | 0 | O clique dos botões da alça, bem baixo. Não toca no botão de som. |
+
+## Os nomes do núcleo (a seção "O som (versão 0.2)" do API.md, da A) e o arquivo de cada um
+
+Os nomes da coluna da esquerda são os que o núcleo entrega à B, com a intensidade de 0 a 1 e o x na tela.
+
+| Nome no núcleo | Arquivo |
+|---|---|
+| `trovao` | `eventos/trovao_1` ou `trovao_3` (sorteie) |
+| `trovao_longe` | `eventos/trovao_2` |
+| `terremoto` | `eventos/terremoto` |
+| `fogo` | `eventos/fogo_acender`; no milagre do fogo, `fogo_brando` |
+| `diluvio` | `eventos/diluvio` |
+| `vento_seco` | `eventos/vento_seco` |
+| `chuva` | entra o laço `ambiente/chuva` em 3 s |
+| `pressagio` | `eventos/pressagio` |
+| `terra` | `eventos/terra` |
+| `sino` | `eventos/milagre_sino` (a fartura, o sonho e a cura têm `fartura`, `sonho` e `cura`) |
+| `choro_bebe` | `eventos/choro_bebe` |
+| `lamento` | `eventos/lamento` |
+| `batalha` | `eventos/batalha` |
+| `lanca` | `eventos/arremesso` |
+| `lanca_alvo` | `eventos/arremesso`, a -4 dB (a lança curta da criança) |
+| `baque` | `eventos/lanca_cravar` |
+| `grito_caca` | `eventos/grito_cacada` |
+| `grito_frustrado` | `eventos/grito_frustrado` |
+| `sino_templo` | `eventos/sino_templo` |
+| `galo` | `eventos/galo` |
+
+**Ambiente:**
+- `vila` → `vila`
+- `fogo` → `fogo`
+- `noite` → `grilos`, com a `coruja` de vez em quando
+- `chuva` → `chuva`
+- `tempestade` → `tempestade`
+- `neve` → `neve`
+- `vento` → `vento`
+- `festa` → `festa`
+- a água e os pássaros → `lago` e `passaros`
 
 ## A prévia
 
@@ -110,6 +154,6 @@ O nivelamento nunca distorce: quando o pico passaria do teto, o som fica um pouc
 
 ## O que ainda não tem som
 
-- A neve e o terremoto foram feitos, mas não estão na prévia.
+- A neve, o terremoto e os sons da A (`vento_seco`, `terra`, `lamento`, `batalha`, `grito_frustrado` e `festa`) foram feitos, mas não estão na prévia.
 - Os passos, os bichos (porco, cervo, garça) e o mar da praia ficam para depois, se pedidos.
 - O botão de som e a tecla M são do código (B).
