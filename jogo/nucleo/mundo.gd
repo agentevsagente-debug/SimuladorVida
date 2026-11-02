@@ -4255,6 +4255,166 @@ func cenas_ativas() -> Array:
 	return r
 
 
+# ---------------------------------------------------------------- som (versão 0.2)
+# Ganchos para a apresentação tocar o som do mundo (documento funcional, "O som"). Nada aqui roda
+# por quadro: o som de um evento sai do evento (a apresentação já recebe os eventos de cada passo);
+# os sons marcados de uma hora e o resumo do ambiente são montados uma vez por passo e guardados.
+
+## O som de cada tipo de evento: [nome, intensidade base]. Os gestos do deus sobem com o grau
+## (sinal, milagre, imposição); o milagre que não tem som próprio toca o sino leve.
+const SONS_DE_EVENTO := {
+	"raio_divino": ["trovao", 0.8], "tempestade": ["trovao_longe", 0.5],
+	"terremoto": ["terremoto", 0.7], "terremoto_divino": ["terremoto", 0.8],
+	"fogo_divino": ["fogo", 0.7], "diluvio": ["diluvio", 0.8], "seca_divina": ["vento_seco", 0.5],
+	"chuva_divina": ["chuva", 0.6], "pressagio": ["pressagio", 0.6], "terra_erguida": ["terra", 0.6],
+	"fartura_divina": ["sino", 0.5], "cura": ["sino", 0.4], "sonho": ["sino", 0.3],
+	"nascimento": ["choro_bebe", 0.3], "morte": ["lamento", 0.3], "ataque": ["batalha", 0.8],
+}
+const GRAU_SOM := {"sinal": 0.5, "milagre": 0.8, "imposicao": 1.0}
+
+
+## O som de um evento (um dicionário de eventos_desde, ou o evento de usar_poder):
+## {som, x, intensidade} (intensidade de 0 a 1), ou {} se o evento não tem som. Só os eventos
+## que o jogador nota soam: uma morte ou um nascimento de camada "ambiente" (num povo grande)
+## passam em silêncio. O milagre de chuva, fartura, cura, sonho e terra erguida toca também o
+## sino leve: `sino` true.
+func som_do_evento(e: Dictionary) -> Dictionary:
+	var tipo: String = e.get("tipo", "")
+	if not SONS_DE_EVENTO.has(tipo):
+		return {}
+	if tipo in ["morte", "nascimento"] and e.get("camada", "nota") == "ambiente":
+		return {}
+	var base: Array = SONS_DE_EVENTO[tipo]
+	var dados: Dictionary = e.get("dados", {})
+	var inten: float = base[1]
+	if dados.has("grau"):
+		inten = clampf(inten * GRAU_SOM.get(dados["grau"], 0.8) / 0.8, 0.1, 1.0)
+	var r := {"som": base[0], "x": _x_do_som(e), "intensidade": inten}
+	if dados.get("grau", "") in ["milagre", "imposicao"] and tipo in ["chuva_divina", "fartura_divina", "cura", "sonho", "terra_erguida"]:
+		r["sino"] = true
+	return r
+
+
+## Onde o som de um evento acontece: o x do gesto, o fogo do povo, ou o meio da zona.
+func _x_do_som(e: Dictionary) -> float:
+	var dados: Dictionary = e.get("dados", {})
+	if dados.has("x"):
+		return float(dados["x"])
+	var g := grupo(e.get("grupo", -1))
+	if g != null and not g.extinto:
+		var f: Array = Cotidiano.faixa_do_grupo(self, g)
+		return (f[0] + f[1]) * 0.5
+	if e.get("zona", "") != "":
+		return Cotidiano.centro_da_zona(e["zona"])
+	return Cotidiano.LARGURA_MUNDO * 0.5
+
+
+var _sons_chave := []
+var _sons: Array = []
+
+
+## Os sons marcados da hora corrente, para tocar no minuto certo: [{som, x, minuto, intensidade}],
+## com `minuto` de 0 a 60 dentro da hora. Saem da rotina (as cenas) e do relógio:
+## - a caçada: `lanca` no arremesso, e depois `grito_caca` (acertou) ou `grito_frustrado` (errou);
+## - o ensinar: `lanca_alvo` a cada arremesso, e `baque` quando a lança crava no alvo;
+## - o sino do templo (`sino_templo`) nas horas de rito, às 6h15 e às 18h, nos povos do
+##   estágio 3 ao 6 que têm templo e ainda rezam;
+## - o galo (`galo`) ao amanhecer, entre 5h10 e 5h40, nos povos que já plantam (estágio 2 em diante).
+## Montados uma vez por passo (e quando a rotina muda), como cenas_ativas().
+func sons_da_hora() -> Array:
+	var ro = rotina()
+	var chave := [_rotina_versao, passo]
+	if chave == _sons_chave:
+		return _sons
+	var r: Array = []
+	var h := hora()
+	var ini := h * 60.0
+	if ro.dia == dia_abs():
+		for c in ro.cenas_na_hora(h):
+			match c["tipo"]:
+				"cacada":
+					for et in c["etapas"]:
+						if et["etapa"] == "arremesso":
+							_som_na_hora(r, "lanca", et["x"], et["ini"] * 60.0, 0.6, ini)
+							_som_na_hora(r, "grito_frustrado" if c["vazia"] else "grito_caca", et["x"], et["fim"] * 60.0, 0.7, ini)
+				"ensinar":
+					for et in c["etapas"]:
+						if et["etapa"] in ["mostrar", "tentativa"]:
+							var solta: float = et["ini"] * 60.0 + 2.0   # mira 2 min, depois atira
+							_som_na_hora(r, "lanca_alvo", c["x"], solta, 0.3, ini)
+							if et.get("acerto", false):
+								_som_na_hora(r, "baque", c["alvo"], solta + 0.6, 0.3, ini)
+		for g in grupos_vivos():
+			if not ro.ctx.has(g.id):
+				continue
+			var cx: Dictionary = ro.ctx[g.id]
+			if g.estagio >= 3 and cx["templo"] >= 0.0 and g.tem_crenca and not g.ceticos:
+				for t in [375.0, 1080.0]:
+					_som_na_hora(r, "sino_templo", cx["templo"], t, 0.4, ini)
+			if g.estagio >= 2:
+				var casa: float = cx["casas"][0] if not cx["casas"].is_empty() else cx["fogo"]
+				_som_na_hora(r, "galo", casa, 310.0 + Cotidiano.ruido(g.id, dia_abs(), 1200) * 30.0, 0.35, ini)
+	r.sort_custom(func(a, b): return a["minuto"] < b["minuto"])
+	_sons = r
+	_sons_chave = chave
+	return r
+
+
+func _som_na_hora(r: Array, som: String, x: float, minuto_do_dia: float, inten: float, ini: float) -> void:
+	if minuto_do_dia >= ini and minuto_do_dia < ini + 60.0:
+		r.append({"som": som, "x": x, "minuto": minuto_do_dia - ini, "intensidade": inten})
+
+
+var _ambiente_chave := -1
+var _ambiente: Dictionary = {}
+
+
+## O resumo do mundo para o som ambiente, montado uma vez por passo:
+## - `vila`: de 0 a 1, quanto a vila soa cheia (1 a partir de 120 pessoas); `pessoas`: quantas;
+## - `vilas`: [[x_ini, x_fim]] de cada povo vivo, para pôr os sons da vila no lugar;
+## - `fogos`: o x da fogueira de cada povo; `fogo_aceso`: há fogo aceso (algum povo vivo);
+##   `fogo`: de 0 a 1, quanto o fogo crepita (1 à noite, 0,5 de dia, 0,25 de madrugada, em brasas);
+## - `noite` (das 20h às 6h), `hora`, `estacao`;
+## - `chuva`: de 0 a 1 (1 com tempestade; 0,6 no dia de uma chuva do deus); `tempestade`: a de
+##   clima(), ou {}; `neve`: inverno rigoroso, no inverno; `vento`: de 0 a 1 (mais na seca e na
+##   tempestade);
+## - `festa`: o x de uma festa ou casamento dançando agora (-1 se não há); `vazio`: o mundo vazio.
+func ambiente_sonoro() -> Dictionary:
+	if _ambiente_chave == passo:
+		return _ambiente
+	var t := tempo()
+	var h := hora()
+	var r := {"pessoas": populacao(), "vilas": [], "fogos": [], "fogo_aceso": false, "fogo": 0.0,
+		"noite": t["noite"], "hora": h, "estacao": t["estacao"], "chuva": 0.0, "tempestade": clima()["tempestade"],
+		"neve": inverno_rigoroso and t["estacao"] == "inverno", "vento": 0.2, "festa": -1.0, "vazio": fim_do_mundo}
+	r["vila"] = clampf(r["pessoas"] / 120.0, 0.0, 1.0)
+	var ro = _rotina_cache
+	for g in grupos_vivos():
+		var f: Array = Cotidiano.faixa_do_grupo(self, g)
+		r["vilas"].append([f[0], f[1]])
+		if ro != null and ro.ctx.has(g.id):
+			r["fogos"].append(ro.ctx[g.id]["fogo"])
+	if not r["vilas"].is_empty():
+		r["fogo_aceso"] = true
+		r["fogo"] = 1.0 if (h >= 18 or h < 1) else (0.25 if h < 6 else 0.5)
+	if not r["tempestade"].is_empty():
+		r["chuva"] = 1.0
+		r["vento"] = 0.9
+	else:
+		for e in eventos_recentes(dia_abs()):
+			if e != null and e.tipo == "chuva_divina":
+				r["chuva"] = 0.6
+	if seca_global:
+		r["vento"] = maxf(r["vento"], 0.5)
+	if ro != null and ro.dia == dia_abs():
+		for c in ro.cenas_na_hora(h):
+			if c["tipo"] in ["festa", "casamento"]:
+				r["festa"] = c["x"]
+	_ambiente = r
+	_ambiente_chave = passo
+	return r
+
+
 ## A dica sobre uma pessoa viva: {fazendo, pensamento, humor} (veja "A dica" em nucleo/API.md).
 ## O pensamento é escolhido para o povo inteiro da pessoa de uma vez, na primeira consulta da
 ## hora, em ordem de id: ninguém do mesmo povo pensa a mesma frase que outro na mesma hora.
@@ -4462,6 +4622,9 @@ func usar_poder(poder: String, x: float, intensidade: float = 0.7, alvo: int = -
 	if r.get("ok", false) and r.get("evento", -1) >= 0:
 		_preces_diante_do_gesto(evento(r["evento"]), poder)
 		_habito_do_gesto(evento(r["evento"]), poder)
+	# O som do gesto, para tocar na hora (veja som_do_evento).
+	if r.get("ok", false) and r.get("evento", -1) >= 0:
+		r["som"] = som_do_evento(evento(r["evento"]).para_dict())
 	# O gesto que matou o último (um raio, um dilúvio) já acaba o mundo, sem esperar o passo.
 	_conferir_fim()
 	return r

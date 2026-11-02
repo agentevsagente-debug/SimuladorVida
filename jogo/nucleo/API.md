@@ -553,6 +553,65 @@ O ano em andamento ainda não está na crônica. Para mostrar o que acabou de ac
 
 Todo sorteio da simulação vem de `mundo.rng`, com a semente dada. As consultas desta API não sorteiam nada. A mesma semente, com os mesmos poderes usados nos mesmos passos, dá o mesmo mundo e a mesma crônica.
 
+## O som (versão 0.2)
+
+Ganchos para a apresentação tocar o som do mundo (documento funcional, "O som"). Nada roda por quadro: o som de um evento sai do próprio evento; os sons marcados da hora e o resumo do ambiente são montados uma vez por passo e guardados (custo na primeira chamada da hora: 0,3 ms de mediana com 4 povos no estágio 5). Os nomes dos sons são os que a C gera; a B escolhe volume, distância e panorâmica pelo `x`.
+
+```gdscript
+var s := mundo.som_do_evento(evento)   # evento: um dicionário de eventos_desde(); -> {som, x, intensidade[, sino]} ou {}
+var r := mundo.usar_poder(...)          # r["som"]: o som do gesto, já pronto ({} se não tem)
+var marcados := mundo.sons_da_hora()   # -> [{som, x, minuto, intensidade}] da hora corrente
+var amb := mundo.ambiente_sonoro()     # -> o resumo do ambiente (abaixo)
+```
+
+**Os sons de evento** (`som_do_evento`). `x` é o do gesto, ou o meio da faixa do povo, ou o meio da zona. `intensidade` vai de 0 a 1; nos gestos, sobe com o grau (sinal, milagre, imposição). Um nascimento ou uma morte de camada "ambiente" (num povo grande) não soa.
+
+| Evento | `som` | Intensidade |
+|---|---|---|
+| `raio_divino` | `trovao` | 0,5 a 1 |
+| `tempestade` | `trovao_longe` | 0,5 |
+| `terremoto`, `terremoto_divino` | `terremoto` | 0,7 a 1 |
+| `fogo_divino` | `fogo` | 0,4 a 0,9 |
+| `diluvio` | `diluvio` | 0,5 a 1 |
+| `seca_divina` | `vento_seco` | 0,3 a 0,6 |
+| `chuva_divina` | `chuva` | 0,4 a 0,75 |
+| `pressagio` | `pressagio` | 0,4 a 0,75 |
+| `terra_erguida` | `terra` | 0,4 a 0,75 |
+| `fartura_divina`, `cura`, `sonho` | `sino` (o sino leve do milagre) | 0,2 a 0,6 |
+| `nascimento` | `choro_bebe` (o choro ao longe) | 0,3 |
+| `morte` | `lamento` | 0,3 |
+| `ataque` | `batalha` | 0,8 |
+
+O milagre e a imposição da chuva, da fartura, da cura, do sonho e da terra erguida trazem também `sino: true`: toque o sino leve junto.
+
+**Os sons marcados da hora** (`sons_da_hora`), para tocar no `minuto` certo (0 a 60 dentro da hora), em ordem:
+
+| `som` | Quando | `x` |
+|---|---|---|
+| `lanca` | a caçada: no arremesso | os caçadores |
+| `grito_caca`, `grito_frustrado` | a caçada: no fim do arremesso, se acertou ou se o porco fugiu | os caçadores |
+| `lanca_alvo` | a cena `ensinar`: cada arremesso (o do velho e os da criança) | quem atira |
+| `baque` | a cena `ensinar`: a lança crava no alvo | o alvo |
+| `sino_templo` | às 6h15 e às 18h, nos povos do estágio 3 ao 6 com templo e que ainda rezam | o templo |
+| `galo` | ao amanhecer, entre 5h10 e 5h40, nos povos que já plantam (estágio 2 em diante) | a primeira casa |
+
+**O ambiente** (`ambiente_sonoro`), montado uma vez por passo:
+
+| Campo | O que é |
+|---|---|
+| `vila` | de 0 a 1, quanto a vila soa cheia (1 a partir de 120 pessoas) |
+| `pessoas` | quantas pessoas vivem |
+| `vilas` | `[[x_ini, x_fim]]` de cada povo vivo, para pôr os sons da vila no lugar |
+| `fogos` | o x da fogueira de cada povo |
+| `fogo_aceso`, `fogo` | há fogo aceso (algum povo vivo); de 0 a 1, quanto ele crepita: 1 das 18h à 1h, 0,5 de dia, 0,25 de madrugada (em brasas) |
+| `noite`, `hora`, `estacao` | como em `tempo()`: a noite vai das 20h às 6h (grilos e coruja; de dia, pássaros, vento e água) |
+| `chuva` | de 0 a 1: 1 com tempestade, 0,6 no dia de uma chuva do deus |
+| `tempestade` | a de `clima()` (`{zona, x_ini, x_fim}`), ou `{}` |
+| `neve` | inverno rigoroso, no inverno |
+| `vento` | de 0 a 1: 0,2 de base, 0,5 na seca, 0,9 na tempestade |
+| `festa` | o x de uma festa ou casamento dançando agora, ou -1 |
+| `vazio` | o mundo vazio (só a natureza soa) |
+
 ## Salvar, carregar e ausência
 
 ```gdscript

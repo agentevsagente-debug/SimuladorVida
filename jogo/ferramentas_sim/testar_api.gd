@@ -3,6 +3,7 @@ extends SceneTree
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_api.gd
 
 const Mundo = preload("res://nucleo/mundo.gd")
+const Cotidiano = preload("res://nucleo/cotidiano.gd")
 
 var falhas := 0
 
@@ -101,6 +102,7 @@ func _initialize() -> void:
 	_batalha_no_meio_do_dia()
 	_mira_dos_poderes()
 	_qa_pequenos()
+	_sons()
 	print("%d falhas" % falhas)
 	quit()
 
@@ -199,3 +201,59 @@ func _qa_pequenos() -> void:
 	conferir(aus["passos"] == Mundo.TETO_AUSENCIA and aus["teto_atingido"], "D-13: um ano exato fora: %d passos, teto %s" % [aus["passos"], aus["teto_atingido"]])
 	var b := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
 	conferir(not b.avancar_ausencia((Mundo.TETO_AUSENCIA - 1) * Mundo.SEGUNDOS_POR_PASSO)["teto_atingido"], "D-13: uma hora a menos que o ano não é o teto")
+
+
+## Os ganchos do som (versão 0.2): o som de cada gesto, os sons marcados de um dia e o ambiente.
+func _sons() -> void:
+	# Os gestos: o som vem no retorno de usar_poder, com o x do gesto.
+	for caso in [["raio", "trovao"], ["terremoto", "terremoto"], ["fogo", "fogo"], ["diluvio", "diluvio"],
+			["pressagio", "pressagio"], ["chuva", "chuva"], ["fartura", "sino"]]:
+		var m := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
+		var r: Dictionary = m.usar_poder(caso[0], 260.0, 0.8)
+		var som: Dictionary = r.get("som", {})
+		conferir(som.get("som", "") == caso[1] and absf(som.get("x", -1.0) - 260.0) < 0.1 and som["intensidade"] > 0.0 and som["intensidade"] <= 1.0,
+			"o gesto %s soa %s em x 260: %s" % [caso[0], caso[1], som])
+		if caso[0] in ["chuva", "fartura"]:
+			conferir(som.get("sino", false), "o milagre de %s toca também o sino" % caso[0])
+	var fraco: Dictionary = Mundo.new(3, [], Mundo.HORA_INICIAL, true).usar_poder("raio", 260.0, 0.2).get("som", {})
+	var forte: Dictionary = Mundo.new(3, [], Mundo.HORA_INICIAL, true).usar_poder("raio", 260.0, 0.9).get("som", {})
+	conferir(fraco["intensidade"] < forte["intensidade"], "o raio de sinal soa mais baixo que o milagre (%.2f, %.2f)" % [fraco["intensidade"], forte["intensidade"]])
+	# Os sons marcados de um dia inteiro, num mundo do estágio 3 ou mais.
+	var w := Mundo.new(3, [], Mundo.HORA_INICIAL, true)
+	while w.ano() < 120:
+		w.avancar_dias(Mundo.DIAS_ANO)
+	var vistos := {}
+	var pior := 0
+	var custos: Array = []
+	for d in 4:
+		for hh in 24:
+			w.avancar_hora()
+			w.rotina()   # a montagem da rotina é de qualquer consulta; aqui mede-se só o som
+			var t0 := Time.get_ticks_usec()
+			var sons: Array = w.sons_da_hora()
+			w.ambiente_sonoro()
+			custos.append(Time.get_ticks_usec() - t0)
+			pior = maxi(pior, custos[-1])
+			conferir(w.sons_da_hora() == sons, "sons_da_hora guardado no passo")
+			for sm in sons:
+				vistos[sm["som"]] = vistos.get(sm["som"], 0) + 1
+				conferir(sm["minuto"] >= 0.0 and sm["minuto"] < 60.0 and sm["x"] >= 0.0 and sm["x"] <= Cotidiano.LARGURA_MUNDO, "som fora da hora ou do mundo: %s" % sm)
+			var amb: Dictionary = w.ambiente_sonoro()
+			conferir(amb["fogo_aceso"] and amb["vila"] > 0.0 and not amb["vilas"].is_empty(), "ambiente da vila: %s" % amb)
+			conferir(amb["noite"] == (w.hora() >= 20 or w.hora() < 6), "ambiente: a noite")
+	var estagio := 0
+	for g in w.grupos_vivos():
+		estagio = maxi(estagio, g.estagio)
+	custos.sort()
+	var mediana: float = custos[custos.size() / 2] / 1000.0
+	print("sons marcados em 4 dias (estágio %d): %s; sons_da_hora com ambiente_sonoro: mediana %.2f ms, pior %.2f ms" % [estagio, vistos, mediana, pior / 1000.0])
+	conferir(vistos.has("galo") and vistos.has("lanca"), "o galo e a caçada soam em 4 dias: %s" % vistos)
+	conferir(estagio < 3 or vistos.has("sino_templo"), "o sino do templo soa no estágio 3 ou mais: %s" % vistos)
+	conferir(mediana < 1.0, "sons_da_hora e ambiente_sonoro custam %.2f ms (mediana) na primeira chamada da hora" % mediana)
+	# O nascimento num povo pequeno soa (choro ao longe); o mundo vazio tem ambiente vazio.
+	var nasc := {"tipo": "nascimento", "camada": "nota", "grupo": -1, "zona": "floresta", "dados": {}}
+	conferir(Mundo.new(3).som_do_evento(nasc).get("som", "") == "choro_bebe", "o nascimento soa o choro do bebê")
+	nasc["camada"] = "ambiente"
+	conferir(Mundo.new(3).som_do_evento(nasc).is_empty(), "o nascimento de camada ambiente não soa")
+	var vazio: Dictionary = Mundo.new(3).ambiente_sonoro()
+	conferir(vazio["vazio"] and not vazio["fogo_aceso"] and vazio["vila"] == 0.0, "o mundo vazio: sem fogo e sem vila: %s" % vazio)
