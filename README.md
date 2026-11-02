@@ -102,4 +102,6 @@ Abra uma [issue](https://github.com/agentevsagente-debug/SimuladorVida/issues) c
 
 ## Licença
 
-**[A DEFINIR]**
+Código aberto, sob a **[licença MIT](LICENSE)**. Vale para o repositório inteiro, código e arte: você pode usar, modificar e redistribuir livremente, inclusive em projetos comerciais, desde que mantenha o aviso de copyright e o texto da licença.
+
+Copyright (c) 2026 Sergio Andrade.

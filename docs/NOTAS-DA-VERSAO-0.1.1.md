@@ -8,6 +8,8 @@
 
 Gratuito, para Windows, sem instalador, sem internet e sem modelo de linguagem. Feito inteiramente por IA ([como foi feito](https://github.com/agentevsagente-debug/SimuladorVida/blob/main/docs/como-foi-feito.md)).
 
+Código aberto, sob a [licença MIT](https://github.com/agentevsagente-debug/SimuladorVida/blob/main/LICENSE): código e arte livres para usar, modificar e redistribuir, mantendo o aviso de copyright.
+
 ## Baixar e jogar
 
 1. Baixe o `Simulador de vida.exe` (cerca de 106 MB) aqui embaixo, em **Assets**, e rode. Não há instalador.
