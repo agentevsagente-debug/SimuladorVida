@@ -6,6 +6,7 @@
 - **Prioridade:** **B** = bloqueia a 0.1 (perda de dados, quebra visível ao jogador ou promessa central do documento); **N** = não bloqueia.
 - **Como:**
   - **AN** = automático, núcleo sem tela (`jogo/qa/rodar_qa.gd`);
+  - **AS** = automático, com o jogo inteiro sem tela (`principal.tscn`) e a entrada injetada (`jogo/qa/som/testar_som.gd`);
   - **AJ** = automático, com o jogo em janela e as opções de teste (`qa/janela/`), sem mouse nem teclado reais;
   - **M** = manual: precisa de mão humana ou de liberação do orquestrador para usar mouse e teclado.
 - O resultado de cada um está em `qa/RELATORIO-QA.md`.
@@ -215,3 +216,25 @@
 | QA-185 | **Dado** o jogo no minuto 50 de uma hora, **quando** o jogador solta o raio onde uma pessoa está na tela (pela simulação da apresentação, `simulacao.gd`), **então** o raio acerta essa pessoa, e não quem estaria ali no meio ou no fim da hora. É o D-02 de ponta a ponta. | FUN "Atingir uma pessoa específica" | B | AN |
 | QA-186 | **Dado** o mundo novo vazio (antes do primeiro gesto), **quando** o jogador abre a crônica (C), passa o cursor, usa um poder, deixa o tempo correr ou o jogo salva e carrega, **então** nada dá erro de script, e a crônica tem texto. Achado pelo fuzz de entrada. | FUN Começo, robustez | B | AN |
 | QA-182 | **Dado** as ferramentas de teste do núcleo, **então** nenhuma apaga ou escreve na estante real do jogador. | perda de dados | B | AN (lê o código) |
+
+## 17. Som (versão 0.2, escritos antes do som pela regra de TDD)
+
+*Fonte: FUN "O som" (pedido do autor em 01/11/2026). Exigência do autor: o som não pode atrapalhar uma reunião. O contrato abaixo foi proposto à B e é revisável. Os nomes podem mudar se a B combinar antes.*
+- o botão de id `"som"` na alça (`interface.botoes`), em todas as fases, e a tecla M;
+- som desligado = barramento `Master` mudo (`AudioServer.is_bus_mute`);
+- a escolha gravada no `user://moldura.cfg` ao mudar;
+- os players dos sons pesados no grupo `som_pesado`;
+- a opção de teste `--sem-som`.
+
+| ID | Dado / Quando / Então | Fonte | Prio | Como |
+|---|---|---|---|---|
+| QA-188 | **Dado** o projeto do jogo, **então** o driver de áudio não é o `Dummy`, nem no `project.godot` nem no `export_presets.cfg`. O da 0.1 é o `Dummy`, que não toca nada. | FUN O som | B | AS (lê o projeto) |
+| QA-189 | **Dado** a primeira abertura (configuração nova), **então** o som está ligado e baixo: o `Master` entre −60 e −12 dB. O limite de −12 dB é proposta, revisável. | FUN "O volume começa baixo" | B | AS |
+| QA-190 | **Dado** o mundo vazio e o mundo com povo, **então** a alça tem o botão `som`; **quando** o jogador clica nele, **então** o `Master` fica mudo no mesmo quadro; **quando** clica de novo, **então** volta. | FUN Silêncio fácil (decisão do autor) | B | AS |
+| QA-191 | **Dado** o jogo aberto, **quando** o jogador aperta M, **então** o `Master` fica mudo no mesmo quadro; **quando** aperta de novo, **então** volta. | FUN Silêncio fácil | B | AS |
+| QA-192 | **Dado** o som desligado com M, **quando** o jogo fecha (`sair`) e abre de novo, **então** o som está desligado desde o primeiro quadro, sem nenhum som audível no primeiro segundo; e o inverso: ligado, fecha, abre ligado. | FUN "A escolha fica guardada" | B | AS |
+| QA-193 | **Dado** o som ligado, **quando** a janela é escondida (H, F8, botão), **então** o `Master` fica mudo; **quando** ela volta, **então** o som volta. **Dado** o som desligado, **quando** esconde e mostra, **então** continua desligado. | FUN "Se cala sozinho quando a janela é escondida" | B | AS |
+| QA-194 | **Dado** o som ligado e a janela minimizada fora do esconder (barra de tarefas, Win+D), **então** o `Master` fica mudo em até 0,6 s; **quando** ela volta, **então** o som volta. | FUN "…ou minimizada" | B | AS com `--janela` (precisa de janela de verdade; sem ela, PULADO) |
+| QA-195 | **Dado** o modo discreto ligado e o som ligado, **quando** o jogador usa os seis poderes na intensidade cheia sobre o povo, **então** algum som toca e nenhum player do grupo `som_pesado` é audível. Prova: sem o modo discreto, os mesmos gestos tocam pelo menos um som pesado. | FUN Modo discreto + O som | B | AS |
+| QA-196 | **Dado** o som desligado, **quando** o jogador usa os seis poderes e o tempo corre em 50x, **então** nenhum player é audível, nem os de acontecimento. Audível = tocando, acima de −60 dB e num barramento cuja rota até o `Master` não está muda. Vale no quadro em que o som é desligado e na reabertura. Prova: com o som ligado, os mesmos gestos tocam algo audível. | FUN Silêncio fácil | B | AS |
+| QA-197 | **Dado** o mesmo mundo, com povo, às 17h, em 1x e visível, **quando** roda com o som ligado e com `--sem-som`, em 3 pares alternados de 90 s, **então** o som custa menos de 1% de um núcleo e menos de 20 MB de memória. | TEC Leveza, pedido do orquestrador | B | AJ (`rodar_janela.ps1 -Parte som`) |
