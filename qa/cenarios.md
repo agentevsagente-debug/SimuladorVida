@@ -33,6 +33,7 @@
 | QA-016 | **Dado** o tempo, **então** um dia de jogo dura cerca de 45 minutos reais no ritmo normal, com cerca de 26 de dia e 19 de noite (a noite vai das 20h às 6h). | FUN Tempo (desde f87b764), TEC Tempo | N | AN |
 | QA-017 | **Dado** um ano, **então** tem 40 dias e 4 estações de 10 dias. | FUN Tempo | B | AN |
 | QA-018 | **Dado** o jogo aberto, **quando** o jogador pede o salto, **então** o mundo avança até o próximo acontecimento de camada nota ou chamado. | FUN Tempo | N | AJ |
+| QA-187 | **Dado** 40 dias comuns (sementes 1 e 2), **então** o começo da tarde tem as cenas da A: a sesta (12h30 às 13h40, cerca de 3 em 5 dias), o artesanato (13h50 às 15h40, cerca de 3 em 5) e o ensinar quando há criança de 8 a 13 anos e alguém de 35 ou mais; a sesta acaba antes da roda; quem dorme na sesta está `deitar` com o detalhe `sesta`. | API (1249c3b), FUN "Virar papel de parede" | N | AN |
 | QA-019 | **Dado** o jogo, **então** há o ritmo normal, 10x e 50x, e a pausa. | FUN Tempo | N | M |
 
 ## 3. Os 11 poderes e as 3 intensidades
@@ -212,4 +213,5 @@
 | QA-180 | **Dado** um ataque registrado às 8h (forçado no meio do dia), **quando** o mundo é consultado a cada hora, **então** a cena `guerra` começa às 8h30 e termina às 13h, com a luta das 10h às 11h30, e já aparece na hora seguinte (API desde ece2046). | API `cenas_ativas` (guerra) | N | AN |
 | QA-181 | **Dado** o pacote exportado, **então** não leva os testes de QA (`qa/`). | produto | N | AN (lê `export_presets.cfg`) |
 | QA-185 | **Dado** o jogo no minuto 50 de uma hora, **quando** o jogador solta o raio onde uma pessoa está na tela (pela simulação da apresentação, `simulacao.gd`), **então** o raio acerta essa pessoa, e não quem estaria ali no meio ou no fim da hora. É o D-02 de ponta a ponta. | FUN "Atingir uma pessoa específica" | B | AN |
+| QA-186 | **Dado** o mundo novo vazio (antes do primeiro gesto), **quando** o jogador abre a crônica (C), passa o cursor, usa um poder, deixa o tempo correr ou o jogo salva e carrega, **então** nada dá erro de script, e a crônica tem texto. Achado pelo fuzz de entrada. | FUN Começo, robustez | B | AN |
 | QA-182 | **Dado** as ferramentas de teste do núcleo, **então** nenhuma apaga ou escreve na estante real do jogador. | perda de dados | B | AN (lê o código) |

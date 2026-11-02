@@ -1,0 +1,44 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+[fuzz] semente 6, 700 ações
+[simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
+[vista] semente=12 mundo novo
+[1.2] pasta de dados=C:/Users/sergi/AppData/Local/Temp/simvida_qa_janela/Godot/app_userdata/Simulador de vida
+[1.2] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
+[1.3] bandeja: dpi=144 ícone 24 px
+[1.3] alca largura=184
+[1.3] escala=3x janela=(1440, 534)
+[fuzz] passo 0: fase vazio → povo (era 1, 12 pessoas)
+[vista] clique no mundo (125.0, 71.0)
+[vista] clique no mundo (423.0, 157.0)
+[vista] clique no mundo (319.0, 38.0)
+[vista] clique no mundo (337.0, 48.0)
+[15.0] arrastada pos=(1096, 970)
+[vista] clique no mundo (283.0, 97.0)
+[vista] clique no mundo (446.0, 136.0)
+[vista] clique no mundo (127.0, 90.0)
+[vista] extinção de teste, 0 anos depois
+[fuzz] passo 40: fase povo → vazio (era 1, 0 pessoas)
+[21.2] alca largura=167
+[fuzz] passo 49: fase vazio → extinto (era 1, 0 pessoas)
+[29.3] arrastada pos=(1096, 970)
+[35.5] arrastada pos=(1096, 970)
+[41.5] arrastada pos=(1096, 970)
+[46.6] escala=2x janela=(960, 356)
+[70.8] escala=3x janela=(1440, 534)
+[73.7] escondida
+[78.2] arrastada pos=(1096, 970)
+[85.9] arrastada pos=(1096, 970)
+[91.2] escala=4x janela=(1920, 712)
+[93.6] arrastada pos=(640, 792)
+[94.6] escala=3x janela=(1440, 534)
+[104.3] escala=2x janela=(960, 356)
+[104.8] arrastada pos=(640, 1148)
+[114.1] arrastada pos=(640, 1148)
+[117.0] escala=2x janela=(960, 356)
+[117.3] escala=2x janela=(960, 356)
+[fuzz] FIM: 700 ações, 0 erros; era 1, 0 pessoas
+[119.2] saindo
+[simulacao] threads encerradas
+[simulacao] threads encerradas

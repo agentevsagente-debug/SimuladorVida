@@ -1,0 +1,152 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+[fuzz] semente 1, 800 ações
+[simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
+[vista] semente=7 mundo novo
+[1.4] pasta de dados=C:/Users/sergi/AppData/Local/Temp/simvida_qa_janela/Godot/app_userdata/Simulador de vida
+[1.4] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
+[1.4] bandeja: dpi=144 ícone 24 px
+[1.4] alca largura=167
+[1.4] escala=3x janela=(1440, 534)
+SCRIPT ERROR: Invalid access of index '-1' on a base object of type: 'Array'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] tecla (res://apresentacao/interface.gd:396)
+       [5] _unhandled_input (res://apresentacao/moldura.gd:263)
+       [6] _tecla (res://qa/fuzz/fuzz_entrada.gd:199)
+       [7] _quadro (res://qa/fuzz/fuzz_entrada.gd:166)
+[fuzz] ERRO tipo=2 no passo 18 (fase vazio):  Invalid access of index '-1' on a base object of type: 'Array'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:396 tecla
+[fuzz]    res://apresentacao/moldura.gd:263 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:199 _tecla
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:166 _quadro
+[fuzz]    ações antes: ["11[vazio] mover 343,160", "12[vazio] tecla Up", "13[vazio] mover 306,160", "14[vazio] mover 172,142", "15[vazio] mover 423,171", "16[vazio] segurar 246,0 por 13 quadros", "17[vazio] segurar 237,5 por 36 quadros", "18[vazio] tecla C"]
+[12.0] escala=2x janela=(960, 356)
+[14.7] arrastada pos=(1096, 1148)
+SCRIPT ERROR: Invalid access of index '-1' on a base object of type: 'Array'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] tecla (res://apresentacao/interface.gd:396)
+       [5] _unhandled_input (res://apresentacao/moldura.gd:263)
+       [6] _tecla (res://qa/fuzz/fuzz_entrada.gd:199)
+       [7] _quadro (res://qa/fuzz/fuzz_entrada.gd:166)
+[fuzz] ERRO tipo=2 no passo 74 (fase vazio):  Invalid access of index '-1' on a base object of type: 'Array'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:396 tecla
+[fuzz]    res://apresentacao/moldura.gd:263 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:199 _tecla
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:166 _quadro
+[fuzz]    ações antes: ["67[vazio] tecla Down", "68[vazio] duplo 241,1", "69[vazio] tecla Up", "70[vazio] mover 432,29", "71[vazio] mover 244,91", "72[vazio] mover 193,53", "73[vazio] mover 115,13", "74[vazio] tecla C"]
+[20.5] escondida
+[23.3] arrastada pos=(1096, 1148)
+[interface] criar povo em x=114 -> { "ok": true, "grupo": 0, "era": 1 }
+[25.1] alca largura=184
+[fuzz] passo 106: fase vazio → chegada (era 1, 12 pessoas)
+[vista] clique no mundo (362.0, 70.0)
+[vista] clique no mundo (217.0, 24.0)
+[30.7] escala=2x janela=(960, 356)
+[vista] clique no mundo (110.0, 113.0)
+[vista] clique no mundo (449.0, 55.0)
+[vista] clique no mundo (206.0, 93.0)
+[vista] clique no mundo (440.0, 93.0)
+[vista] clique no mundo (78.0, 13.0)
+[vista] clique no mundo (296.0, 8.0)
+[vista] clique no mundo (418.0, 84.0)
+[39.1] arrastada pos=(1096, 1148)
+[vista] clique no mundo (419.0, 115.0)
+[vista] clique no mundo (78.0, 129.0)
+[vista] clique no mundo (359.0, 108.0)
+[vista] clique no mundo (246.0, 94.0)
+[vista] clique no mundo (360.0, 48.0)
+[vista] clique no mundo (87.0, 152.0)
+[vista] clique no mundo (56.0, 25.0)
+[vista] clique no mundo (391.0, 102.0)
+[vista] clique no mundo (74.0, 39.0)
+[vista] clique no mundo (194.0, 80.0)
+[vista] clique no mundo (138.0, 81.0)
+[vista] clique no mundo (23.0, 3.0)
+[vista] clique no mundo (205.0, 3.0)
+[vista] clique no mundo (86.0, 25.0)
+[vista] clique no mundo (134.0, 118.0)
+[vista] clique no mundo (153.0, 22.0)
+[vista] clique no mundo (436.0, 90.0)
+[vista] clique no mundo (258.0, 12.0)
+[vista] clique no mundo (312.0, 95.0)
+[vista] clique no mundo (322.0, 124.0)
+[52.3] arrastada pos=(1096, 1148)
+[vista] clique no mundo (51.0, 51.0)
+[vista] clique no mundo (205.0, 80.0)
+[vista] clique no mundo (297.0, 157.0)
+[vista] clique no mundo (421.0, 78.0)
+[vista] clique no mundo (440.0, 115.0)
+[vista] clique no mundo (450.0, 120.0)
+[61.7] escala=3x janela=(1440, 534)
+[vista] clique no mundo (347.0, 143.0)
+[vista] clique no mundo (143.0, 156.0)
+[62.7] escala=4x janela=(1920, 712)
+[vista] clique no mundo (105.0, 109.0)
+[vista] clique no mundo (427.0, 25.0)
+[vista] clique no mundo (349.0, 0.0)
+[vista] clique no mundo (152.0, 112.0)
+[vista] clique no mundo (432.0, 128.0)
+[vista] clique no mundo (163.0, 123.0)
+[vista] clique no mundo (374.0, 147.0)
+[vista] clique no mundo (175.0, 87.0)
+[73.3] escala=3x janela=(1440, 534)
+[vista] clique no mundo (101.0, 140.0)
+[vista] clique no mundo (468.0, 9.0)
+[vista] clique no mundo (156.0, 16.0)
+[vista] clique no mundo (182.0, 113.0)
+[80.7] escala=4x janela=(1920, 712)
+[vista] clique no mundo (309.0, 146.0)
+[vista] clique no mundo (113.0, 75.0)
+[vista] clique no mundo (230.0, 126.0)
+[vista] clique no mundo (347.0, 155.0)
+[87.1] arrastada pos=(640, 792)
+[vista] clique no mundo (317.0, 56.0)
+[vista] clique no mundo (79.0, 89.0)
+[vista] clique no mundo (292.0, 146.0)
+[vista] clique no mundo (223.0, 32.0)
+[vista] clique no mundo (299.0, 4.0)
+[vista] clique no mundo (2.0, 147.0)
+[vista] clique no mundo (188.0, 132.0)
+[vista] clique no mundo (60.0, 47.0)
+[vista] clique no mundo (477.0, 67.0)
+[vista] clique no mundo (244.0, 140.0)
+[vista] clique no mundo (461.0, 147.0)
+[vista] clique no mundo (156.0, 97.0)
+[vista] clique no mundo (4.0, 88.0)
+[vista] clique no mundo (194.0, 51.0)
+[vista] clique no mundo (71.0, 91.0)
+[vista] clique no mundo (438.0, 133.0)
+[vista] clique no mundo (387.0, 92.0)
+[130.7] escala=3x janela=(1440, 534)
+[vista] clique no mundo (14.0, 130.0)
+[vista] clique no mundo (273.0, 28.0)
+[vista] clique no mundo (106.0, 150.0)
+[vista] clique no mundo (403.0, 157.0)
+[152.0] escala=2x janela=(960, 356)
+[155.3] escala=2x janela=(960, 356)
+[vista] clique no mundo (221.0, 15.0)
+[vista] clique no mundo (471.0, 89.0)
+[vista] clique no mundo (391.0, 159.0)
+[fuzz] FIM: 800 ações, 2 erros; era 1, 15 pessoas
+[177.7] saindo
+[simulacao] threads encerradas
+[simulacao] threads encerradas

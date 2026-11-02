@@ -4,19 +4,19 @@
 
 ## Números
 
-*Rodada de 01/11/2026 na main `5f6e018`, com as entregas da A e da B para os itens que bloqueavam (D-01, D-02, D-03, D-09, D-14 e D-15).*
+*Rodada de 01/11/2026 na main `50e5636`. A bateria do núcleo rodou nesta main. Os 12 cenários em janela são da rodada anterior, na main `5f6e018`, e não foram repetidos.*
 
 | | Quantos |
 |---|---|
-| Cenários na matriz | 124 |
-| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 103 |
+| Cenários na matriz | 125 |
+| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 104 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
 | Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **107** |
-| **Falham** | **5**, todos no núcleo e nenhum que bloqueie a 0.1 |
+| **Passam** | **112** |
+| **Falham** | **1**: o QA-186, o erro novo achado pelo fuzz (D-16) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
-**Nenhum defeito que bloqueia a 0.1 continua aberto.** Os 5 que falham são da A e não bloqueiam: D-05, D-06, D-11, D-12 e D-13.
+**Na branch da A (`1249c3b`, ainda fora da main):** a bateria dá **102 passam, 0 falham e 3 pulados** em 105 cenários. O QA-186 (D-16) e o QA-187 (D-17) passam, e o D-07 está resolvido. A saída está em `qa/rodada-branch-a-1249c3b.txt`.
 
 **Por área:**
 
@@ -24,21 +24,21 @@
 |---|---|---|---|---|---|
 | Começo do mundo | 5 | 5 | 0 | 0 | 0 |
 | Cotidiano | 10 | 9 | 0 | 0 | 1 |
-| Os 11 poderes e as 3 intensidades | 18 | 16 | 1 | 0 | 1 |
+| Os 11 poderes e as 3 intensidades | 18 | 17 | 0 | 0 | 1 |
 | Preces e respostas | 9 | 9 | 0 | 0 | 0 |
 | Religião, crença e nome do deus | 5 | 4 | 0 | 1 | 0 |
-| Culturas | 6 | 5 | 1 | 0 | 0 |
+| Culturas | 6 | 6 | 0 | 0 | 0 |
 | Estágios 1 a 6 e regressão | 5 | 5 | 0 | 0 | 0 |
 | Linhagem acompanhada | 5 | 4 | 0 | 0 | 1 |
-| Ausência e teto de 1 ano | 9 | 8 | 1 | 0 | 0 |
-| Persistência e saves corrompidos | 12 | 9 | 2 | 1 | 0 |
+| Ausência e teto de 1 ano | 9 | 9 | 0 | 0 | 0 |
+| Persistência e saves corrompidos | 12 | 11 | 0 | 1 | 0 |
 | Fim do mundo, mundo vazio, criar povo e ruínas | 12 | 11 | 0 | 1 | 0 |
 | Estante e abandono | 6 | 6 | 0 | 0 | 0 |
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 6 | 0 | 0 | 1 |
-| Robustez da API e cenas (achados durante a leitura) | 4 | 4 | 0 | 0 | 0 |
-| **Total** | **124** | **107** | **5** | **3** | **9** |
+| Robustez da API e cenas (achados durante a leitura) | 5 | 4 | 1 | 0 | 0 |
+| **Total** | **125** | **112** | **1** | **3** | **9** |
 
 **Os defeitos e a situação de cada um:**
 
@@ -48,16 +48,18 @@
 | D-02 | O raio e o sonho acertavam onde a pessoa estaria no fim da hora | alta | sim | A, B | **corrigido**: o núcleo mira pelo minuto (QA-027: 100% dos toques), e a interface passa o minuto e quem está sob o cursor (QA-185 passa) |
 | D-03 | O mundo só ficava vazio na virada do dia | média | sim | A | **corrigido** (QA-131 passa; na tela, o aviso aparece aos 6 s) |
 | D-04 | Sem número de versão | média | sim | B | **corrigido** (versão 0.1.0; QA-166 passa) |
-| D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **aberto** (QA-105 falha) |
-| D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **aberto** (QA-111 falha) |
-| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
+| D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **corrigido** na main `50e5636` (QA-105 passa) |
+| D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **corrigido** na main `50e5636` (QA-111 passa) |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **corrigido na branch da A** (`38dadcd`): a rotina é montada por povo, em paralelo. Na minha sonda, com 258 pessoas, nenhuma espera pela thread com 300 ms entre passos (antes, 600 e 1095 ms), passos de 1 a 4 ms, e a primeira consulta depois do salto de 250 anos em 95 ms (antes, de 1017 a 1253 ms), com a máquina a 17% de carga. Antes disso, estava **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
 | D-08 | O mundo velho passava de 8% de um núcleo | média | não | B | **corrigido**: 7,2% no mundo de 200 anos (QA-172 passa) |
 | D-09 | O mundo novo começava com o povo | média | decidido: começa vazio | A, B | **corrigido**: o jogo abre vazio às 7h, com o convite na clareira, e criar povo abre a Primeira Era (QA-002 passa; `QA-002-comeco.png`) |
 | D-10 | A noite tinha 18,75 min, e o documento dizia 15 | baixa | não | — | **resolvido pelo documento** (QA-016 passa) |
-| D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A | **aberto** (QA-026 falha) |
-| D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A | **aberto** (QA-064 falha) |
-| D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **aberto** (QA-092 falha) |
+| D-11 | Um milagre pode cair na camada "ambiente" | baixa | não | A | **corrigido** na main `50e5636` (QA-026 passa) |
+| D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A | **corrigido** na main `50e5636` (QA-064 passa) |
+| D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **corrigido** na main `50e5636` (QA-092 passa) |
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
+| D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido na branch da A** (`38dadcd`, QA-186 passa: "No princípio, a região estava vazia…"); à espera do merge |
+| D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa). À espera do merge |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Nesta rodada, também:**
@@ -284,6 +286,39 @@ O registro original fica abaixo.
 - **Esperado:** a linha quebra dentro do pergaminho, como as outras.
 - **Reconferido na main `f87b764`:** continua igual. O "A" do começo e o "ano 1." do fim passam das bordas (`QA-129-extincao_00.png`).
 
+### D-16. A crônica no mundo novo vazio dá erro de script
+**Cenário:** QA-186 (e o fuzz de entrada) · **Gravidade:** média · **Bloqueia:** sim (proposta). É o erro que a B viu uma vez, e o primeiro passo provável de um jogador novo: a dica da primeira abertura sugere "C abre a crônica" · **Área:** A
+
+- **Caminho mínimo, sem tela:**
+  1. `var m := Mundo.new(7)`: o mundo novo do D-09, vazio e com **0 eventos**.
+  2. `m.cronica_viva()` ou `m.cronica()`.
+- **No jogo:** abrir sem mundo salvo (`--sem-config --mundo-novo`) e apertar C antes de criar o povo.
+- **Obtido:**
+  - "Invalid access to property or key 'grupo' on a base object of type 'Nil'", em `cronista.gd:2593`, `_prologo`;
+  - a pilha é `_prologo` ← `montar` ← `mundo.cronica_viva` ← `interface.alternar_cronica` ← `interface.tecla` ← `moldura._unhandled_input`;
+  - `_prologo` começa com `var e = m.evento(0)`, que é nulo no mundo vazio, e depois lê `m.grupos[e.grupo]`;
+  - depois de passar um dia, o mesmo ponto dá a variante "Invalid access of index '-1' on a base object of type 'Array'";
+  - o mesmo erro sai ao salvar e carregar o mundo vazio e pedir a crônica;
+  - a crônica aparece mesmo assim (com 207 caracteres), mas o erro fica no log.
+- **Esperado:** a crônica do mundo vazio tem um texto próprio ("A região espera…"), sem erro de script.
+- **O resto do mundo vazio está limpo:** as consultas da tela, as dicas, as sugestões, os eventos, um poder, um dia e salvar e carregar não dão erro (QA-186).
+
+### D-17. As cenas novas da tarde apareciam menos do que a API prometia (corrigido na branch da A, `1249c3b`)
+**Cenário:** QA-187 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- **Passos:** sementes 1 e 2, no ano 4, 20 dias cada; as cenas que acontecem das 12h às 15h59 (`cenas_ativas()` de hora em hora).
+- **Obtido, na branch `38dadcd`:**
+
+  | Cena | Dias com a cena | A API promete |
+  |---|---|---|
+  | `artesanato` | **16 de 40 (40%)** | cerca de 7 em 10 |
+  | `sesta` | 20 de 40 (50%) | cerca de 2 em 3 |
+  | `ensinar` | 8 dos 20 dias em que havia criança de 8 a 13 anos e alguém de 35 ou mais (40%) | cerca de 3 em 5 |
+
+- O artesanato fica bem abaixo: com p = 0,7, 16 ou menos em 40 tem chance de menos de 0,1%. A sesta e o ensinar ficam abaixo, mas dentro da folga do teste (metade da frequência prometida).
+- Quem dorme na sesta está `deitar` com o detalhe `sesta` (44 de 44).
+- **Esperado:** a frequência da API, ou o texto da API ajustado para a frequência real. As três cenas podem estar disputando os mesmos adultos.
+
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.
 
@@ -297,6 +332,39 @@ O registro original fica abaixo.
 - O jogo pelo editor usa `%APPDATA%\Godot\app_userdata\Simulador de vida\`.
 - O `.exe` exportado usa uma pasta própria, `%APPDATA%\Simulador de vida\` (`config/use_custom_user_dir.template` no `project.godot`), separada da pasta do Godot que os testes usam.
 - É essa a pasta que a página deve indicar para "onde fica o mundo salvo e como começar de novo".
+
+## Fuzz de entrada: a caça ao "grupo on Nil"
+
+**O que é** (`jogo/qa/fuzz/fuzz_entrada.gd`):
+- abre o jogo inteiro (`principal.tscn`) e injeta ações sorteadas por `Viewport.push_input`, sem o mouse nem o teclado reais (o cursor não se move);
+- as ações são movimentos (dicas), cliques, cliques com o botão direito, gestos segurados de até 2,5 s, rodas, cliques duplos e as teclas C, E, L, D, S, espaço, Esc, Enter, 0 a 3 e setas;
+- um terço delas vai para a faixa da alça (botões, poderes e relógio);
+- ficam de fora Q (sai), H e F8 (escondem a janela);
+- cada erro de script é capturado com `OS.add_logger`, com a pilha, o número da ação, a fase e as 8 ações anteriores;
+- `--fuzz-semente` fixa a sequência de ações. O momento exato pode variar uns quadros, porque o jogo segue o relógio.
+
+**As rodadas** (logs em `qa/fuzz/`):
+
+| Rodada | Mundo | Ações | Fases cobertas | Erros |
+|---|---|---|---|---|
+| sementes 1 a 4 | `--mundo-novo` (vazio, D-09) | 3200 | o mundo vazio do começo (perto de 2000 ações), o primeiro povo nascendo de um clique (sementes 1, 2 e 4) e a chegada; uma extinção na semente 4 | **10, todos o D-16** (tecla C no mundo vazio) |
+| sementes 5 e 6 | com povo, extinção na ação 40 | 1400 | o mundo extinto, com o livro fechado, por perto de 650 ações cada | 0 |
+| semente 7 | com povo, extinção na ação 40, 30% dos cliques no vazio passando | 900 | 4 extinções e 4 recomeços (eras 2 a 5), com as chegadas do povo | 0 |
+| **Total** | | **5500** | | **1 erro distinto (D-16)** |
+
+**Resposta à pergunta:** o erro que a B viu vem da tecla C (crônica) no mundo novo vazio, antes do primeiro povo. Não vem de um clique, de uma dica ou da transição. É da A (`cronista._prologo`), e o caminho mínimo está no D-16. Nos 5500 passos não apareceu nenhum outro erro de script.
+
+**Para repetir:**
+
+```bash
+APPDATA=<pasta temporária> Godot_console.exe --path jogo --script res://qa/fuzz/fuzz_entrada.gd -- --sem-config --mundo-novo --semente=7 --sem-foco --sem-atalho --fuzz-semente=1 --fuzz-acoes=800
+```
+
+- Outras opções:
+  - `--fuzz-extinguir-em=N` força a extinção na ação N;
+  - `--fuzz-clique-vazio=0.3` deixa passar mais cliques no mundo vazio, para provocar o recomeço;
+  - `--fuzz-teste-erro` provoca um erro de propósito, para provar a captura.
+- O fuzz desliga o modo de baixo consumo, para os quadros não pausarem.
 
 ## Pontos conhecidos, conferidos
 

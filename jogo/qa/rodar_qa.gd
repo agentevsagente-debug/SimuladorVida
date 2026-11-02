@@ -261,6 +261,8 @@ func _bloco_comeco() -> void:
 		conferir("QA-001", chaves == ["floresta", "lago", "morro", "praia"], "zonas: %s" % [chaves])
 	if _quer("QA-002"):
 		_comeco_vazio()
+	if _quer("QA-186"):
+		_consultas_no_vazio()
 	if _quer("QA-003"):
 		var gv: Array = m.grupos_visiveis()
 		conferir("QA-003", m.populacao() >= 10 and m.populacao() <= 14, "cerca de 12 pessoas (%d)" % m.populacao())
@@ -299,6 +301,107 @@ func _comeco_vazio() -> void:
 		"é a Primeira Era: nenhum livro fechado e nenhum fim do mundo antes dela (era %d, %d livros)" % [w.era, w.livros.size()])
 	conferir("QA-002", w.acompanhada >= 0, "há uma pessoa acompanhada desde o começo")
 	sim.free()
+
+
+## Os erros de script (push_error, acesso a nulo...) que acontecem enquanto `f` roda.
+class _Coletor extends Logger:
+	var erros: Array = []
+
+	func _log_error(function: String, file: String, line: int, code: String, rationale: String,
+			_editor_notify: bool, error_type: int, _script_backtraces: Array) -> void:
+		if error_type != 1:   # 1 = aviso; o resto é erro
+			erros.append("%s (%s:%d %s)" % [rationale if rationale != "" else code, file.get_file(), line, function])
+
+	func _log_message(_message: String, _error: bool) -> void:
+		pass
+
+
+func _erros_em(f: Callable) -> Array:
+	var c := _Coletor.new()
+	OS.add_logger(c)
+	f.call()
+	OS.remove_logger(c)
+	return c.erros
+
+
+## QA-186: o mundo novo vazio (D-09) aguenta tudo o que o jogador pode pedir antes do primeiro
+## gesto: a crônica (tecla C), as dicas, as consultas da tela, salvar, carregar e a ausência.
+## Achado pelo fuzz de entrada (jogo/qa/fuzz/): a tecla C no mundo vazio dava «Invalid access to
+## 'grupo' on Nil» em cronista._prologo, porque o mundo vazio não tem o evento de início.
+func _consultas_no_vazio() -> void:
+	var w := Mundo.new(7)
+	if w.populacao() > 0:
+		pular("QA-186", "o núcleo ainda cria o povo em Mundo.new (antes do D-09)")
+		return
+	var chamadas := {
+		"cronica_viva (tecla C)": func(): w.cronica_viva(),
+		"cronica": func(): w.cronica(),
+		"cronica_em_curso": func(): w.cronica_em_curso(),
+		"consultas da tela": func():
+			w.pessoas_visiveis(); w.cenas_ativas(); w.construcoes(); w.ruinas_visiveis(); w.preces_abertas()
+			w.zonas_visiveis(); w.grupos_visiveis(); w.guerras_ativas(); w.tempo(); w.clima(),
+		"dicas (cabana e lugar)": func(): w.dica_cabana(260.0); w.dica(1); w.dica(-1),
+		"sugestoes e linhagem": func(): w.sugestoes(); w.acompanhar(1),
+		"eventos": func(): w.eventos_desde(0),
+		"um poder no vazio": func(): w.usar_poder("chuva", 260.0, 0.6),
+		"avançar um dia": func(): w.avancar_dias(1),
+		"salvar e carregar": func():
+			var c := _caminho("vazio_comeco")
+			_apagar_mundo(c)
+			Persistencia.salvar(w, c)
+			var b = Persistencia.carregar(c)
+			if b != null:
+				b.cronica_viva()
+				b.avancar_ausencia(16 * 3600)
+			_apagar_mundo(c),
+	}
+	for nome in chamadas:
+		var erros := _erros_em(chamadas[nome])
+		conferir("QA-186", erros.is_empty(), "mundo novo vazio, %s: %s" % [nome, "sem erro" if erros.is_empty() else str(erros.slice(0, 2))])
+	conferir("QA-186", w.cronica_viva().strip_edges() != "", "a crônica do mundo vazio tem texto")
+
+
+## QA-187: as três cenas do começo da tarde (A; API.md desde 1249c3b): sesta (12h30 às 13h40, ~3 em
+## 5 dias), ensinar (12h40 às 14h, ~2 em 5 dias, se há criança de 8 a 13 anos e alguém de 35 ou mais)
+## e artesanato (13h50 às 15h40, ~3 em 5 dias). A sesta acaba antes da roda do artesanato.
+func _cenas_da_tarde() -> void:
+	var dias := {"sesta": 0, "ensinar": 0, "artesanato": 0}
+	var pode_ensinar := 0
+	var sesta_certa := 0
+	var sesta_vista := 0
+	var sesta_tarde := 0
+	var total := 0
+	for sem in [1, 2]:
+		var w := _mundo(sem)
+		w.avancar_dias(40 * 3)
+		for d in 20:
+			total += 1
+			var vistos := {}
+			for h in [12, 13, 14, 15]:
+				_ate_hora(w, h)
+				for c in w.cenas_ativas():
+					if dias.has(c["tipo"]):
+						vistos[c["tipo"]] = true
+					if c["tipo"] == "sesta" and float(c["fim"]) > 13.75:
+						sesta_tarde += 1
+				for p in w.pessoas_visiveis():
+					if p["cena"].get("tipo", "") == "sesta" and p["acao"] == "deitar":
+						sesta_vista += 1
+						if p["detalhe"] == "sesta":
+							sesta_certa += 1
+			for k in vistos:
+				dias[k] += 1
+			var gv: Array = w.pessoas_visiveis()
+			if gv.any(func(p): return p["idade"] >= 8 and p["idade"] <= 13) and gv.any(func(p): return p["idade"] >= 35):
+				pode_ensinar += 1
+			w.avancar_dias(1)
+	info("cenas da tarde em %d dias (sementes 1 e 2): %s; dias em que dá para ensinar: %d" % [total, dias, pode_ensinar])
+	# limites com folga para o acaso (binomial): metade da frequência que a API promete
+	conferir("QA-187", dias["sesta"] >= total / 3, "a sesta aparece em boa parte dos dias (%d de %d; a API diz cerca de 3 em 5)" % [dias["sesta"], total])
+	conferir("QA-187", dias["artesanato"] >= total / 2, "o artesanato aparece em boa parte dos dias (%d de %d; a API diz cerca de 3 em 5)" % [dias["artesanato"], total])
+	conferir("QA-187", sesta_tarde == 0, "a sesta acaba até 13h45, antes da roda do artesanato (%d vezes depois)" % sesta_tarde)
+	conferir("QA-187", pode_ensinar == 0 or dias["ensinar"] >= 1, "o ensinar aparece quando há criança e velho (%d dias com ensinar, %d em que dava)" % [dias["ensinar"], pode_ensinar])
+	conferir("QA-187", sesta_vista == 0 or sesta_certa == sesta_vista, "quem está deitado na sesta tem o detalhe sesta (%d de %d)" % [sesta_certa, sesta_vista])
 
 
 func _mundo_com_gestos(semente: int, anos: int):
@@ -352,6 +455,8 @@ func _consultas_puras() -> void:
 
 func _bloco_cotidiano() -> void:
 	var m := _mundo(2)
+	if _quer("QA-187"):
+		_cenas_da_tarde()
 	if _quer("QA-011"):
 		var ruins := m.pessoas_visiveis().filter(func(p): return p["tracos"].size() != 2 or p["tracos"].any(func(t): return not Mundo.TRACOS.has(t)))
 		conferir("QA-011", ruins.is_empty(), "todos com dois traços da lista (%d fora)" % ruins.size())
