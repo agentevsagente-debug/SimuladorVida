@@ -162,8 +162,20 @@ func _escolher(opcoes: Array) -> String:
 	return opcoes[i]
 
 
+## Escolhe e preenche uma das frases. Só concorrem as que têm valor para todas as variáveis:
+## sem o nome de quem fez (a pessoa sumiu, o evento não guardou), cai numa frase sem o nome.
 func _frase(opcoes: Array, vars: Dictionary) -> String:
-	return G.preencher(_escolher(opcoes), vars)
+	return G.preencher(_escolher(_que_cabem(opcoes, vars)), vars)
+
+
+## As opções que têm valor para todas as variáveis; se nenhuma tem, todas (o preencher põe
+## "alguém" no lugar do que falta, nunca deixa a chave no texto).
+static func _que_cabem(opcoes: Array, vars: Dictionary) -> Array:
+	var r: Array = []
+	for o in opcoes:
+		if G.cabe(o, vars):
+			r.append(o)
+	return r if not r.is_empty() else opcoes
 
 
 ## Até quantos anos para trás a crônica olha os eventos anteriores para escolher a frase:
@@ -2000,6 +2012,10 @@ func texto_curto(e) -> String:
 		v["o"] = _g(e.outro_grupo)
 	if not e.participantes.is_empty() and m.pessoa(e.participantes[0]) != null:
 		v["p"] = _p(e.participantes[0])
+	# Quem sonhou e quem foi curado ficam nos dados (o gesto sem ninguém ali não tem participantes).
+	for k in ["sonhador", "curado"]:
+		if e.dados.get(k, -1) != -1 and m.pessoa(e.dados[k]) != null:
+			v["p"] = _p(e.dados[k])
 	var opcoes: Array = []
 	match e.tipo:
 		"prece":
@@ -2119,7 +2135,7 @@ func texto_curto(e) -> String:
 		"terra_erguida":
 			opcoes = ["A terra se ergueu"]
 		"sonho":
-			opcoes = ["{p} teve um sonho"]
+			opcoes = ["{p} teve um sonho", "Um sonho sem ninguém para sonhar"]
 		"seca_divina":
 			opcoes = ["Só ali não chove"]
 		"diluvio":
@@ -2127,7 +2143,7 @@ func texto_curto(e) -> String:
 		"pressagio":
 			opcoes = ["Um sinal no céu"]
 		"cura":
-			opcoes = ["{p} se levantou" if e.dados.get("condenado", false) else "{p} se sente bem"] if e.dados.get("curado", -1) != -1 else []
+			opcoes = ["{p} se levantou" if e.dados.get("condenado", false) else "{p} se sente bem"] if e.dados.get("curado", -1) != -1 else ["Uma cura sem ninguém para curar"]
 		"costume":
 			opcoes = ["{g} tem um novo costume"]
 		"lugar_nomeado":
@@ -2189,6 +2205,7 @@ func texto_curto(e) -> String:
 			opcoes = ["{g} pede qualquer coisa"]
 	if opcoes.is_empty():
 		return ""
+	opcoes = _que_cabem(opcoes, v)
 	# A primeira variante que couber; senão a mais curta, cortada.
 	var melhor := ""
 	for o in opcoes:
@@ -2212,14 +2229,14 @@ func _texto_prece(e, v: Dictionary) -> String:
 	vv["deus"] = G.termo(_deus(e.dados["deus"], e.dados["genero_deus"])["t"])
 	if e.dados["alvo"] != -1:
 		vv["alvo"] = _p(e.dados["alvo"])
-		return G.preencher(_escolher(["{deus}, cura {alvo:meu filho|minha filha}.", "{deus}, não leves {alvo}.",
-			"Cura {alvo}, {deus}. {alvo:Ele|Ela} é tão pequen{alvo:o|a}."]), vv)
+		return G.preencher(_escolher(_que_cabem(["{deus}, cura {alvo:meu filho|minha filha}.", "{deus}, não leves {alvo}.",
+			"Cura {alvo}, {deus}. {alvo:Ele|Ela} é tão pequen{alvo:o|a}."], vv)), vv)
 	var inimigo: int = e.dados.get("inimigo", -1)
 	vv["inimigo"] = G.termo("inimigo", "m", 1, true) if inimigo < 0 else _g(inimigo)
 	if nec == "guerra" and e.dados.get("atacou", false):
-		return G.preencher(_escolher(["{deus}, dá-nos a vitória sobre {inimigo}.", "{deus}, que {inimigo} caia da próxima vez.",
-			"{deus}, fortalece nossas lanças contra {inimigo}."]), vv)
-	return G.preencher(_escolher(TEXTOS_PRECE.get(nec, ["{deus}, ajuda-nos."])), vv)
+		return G.preencher(_escolher(_que_cabem(["{deus}, dá-nos a vitória sobre {inimigo}.", "{deus}, que {inimigo} caia da próxima vez.",
+			"{deus}, fortalece nossas lanças contra {inimigo}."], vv)), vv)
+	return G.preencher(_escolher(_que_cabem(TEXTOS_PRECE.get(nec, ["{deus}, ajuda-nos."]), vv)), vv)
 
 
 func _prece(e, v: Dictionary) -> String:
@@ -2286,15 +2303,15 @@ func _prece_atendida(e, v: Dictionary) -> String:
 func _voz_do_povo(necessidade: String, v: Dictionary) -> String:
 	match necessidade:
 		"seca":
-			return G.preencher(_escolha(["Pedimos chuva, e {o:deus} abriu o céu.", "A seca acabou porque rezamos.",
-				"{o:deus} ouviu o nosso choro e mandou a chuva."]), v)
+			return G.preencher(_escolha(_que_cabem(["Pedimos chuva, e {o:deus} abriu o céu.", "A seca acabou porque rezamos.",
+				"{o:deus} ouviu o nosso choro e mandou a chuva."], v)), v)
 		"fome":
-			return G.preencher(_escolha(["Pedimos pão, e {o:deus} encheu os celeiros.", "Tivemos fome, e {o:deus} nos deu de comer."]), v)
+			return G.preencher(_escolha(_que_cabem(["Pedimos pão, e {o:deus} encheu os celeiros.", "Tivemos fome, e {o:deus} nos deu de comer."], v)), v)
 		"doenca":
-			return G.preencher(_escolha(["{o:deus} tocou os doentes, e eles se levantaram.", "A febre fugiu quando rezamos."]), v)
+			return G.preencher(_escolha(_que_cabem(["{o:deus} tocou os doentes, e eles se levantaram.", "A febre fugiu quando rezamos."], v)), v)
 		"guerra":
-			return G.preencher(_escolha(["{o:deus} pôs medo nos inimigos, e eles não voltaram."]), v)
-	return G.preencher(_escolha(["{o:deus} ouviu e nos atendeu."]), v)
+			return G.preencher(_escolha(_que_cabem(["{o:deus} pôs medo nos inimigos, e eles não voltaram."], v)), v)
+	return G.preencher(_escolha(_que_cabem(["{o:deus} ouviu e nos atendeu."], v)), v)
 
 
 ## Na seca, os povos com canais: a água chega às roças, e ninguém reza por chuva.
@@ -2449,6 +2466,10 @@ func _divino(e, v: Dictionary) -> String:
 					"Um estalo, uma luz, e {em:zona} um tronco ficou fumegando. Ninguém se feriu."], v)
 			v["p"] = _p(vid)
 			var t := ""
+			# O gesto do raio fica no povo do lugar (-1 se o lugar não é de ninguém): o povo que o
+			# morto guiava é o dele (QA D-19).
+			if m.pessoa(vid) != null:
+				v["g"] = _g(m.pessoa(vid).grupo)
 			if e.dados.get("era_lider", false):
 				t = _frase(["Do céu limpo, um raio caiu {em:zona} e matou {p}, que guiava {g}.",
 					"Um raio sem nuvem acertou {p}, que guiava {g}, diante de todos."], v)
@@ -2540,7 +2561,7 @@ func _divino(e, v: Dictionary) -> String:
 		"cura":
 			var cid: int = e.dados.get("curado", -1)
 			if cid == -1:
-				return ""
+				return _frase(["Uma força de cura passou {por:zona}, mas não encontrou ninguém para curar."], v)
 			v["p"] = _p(cid)
 			if not e.dados.get("condenado", false):
 				return _frase(["{p} acordou se sentindo forte como nunca, sem saber por quê."], v)
@@ -2552,7 +2573,7 @@ func _divino(e, v: Dictionary) -> String:
 		"sonho":
 			var sid: int = e.dados.get("sonhador", -1)
 			if sid == -1:
-				return ""
+				return _frase(["Um sonho desceu sobre {o:zona}, mas não havia ali ninguém para sonhá-lo."], v)
 			v["p"] = _p(sid)
 			if e.dados["ideia"] == "agricultura":
 				if e.dados["aceita"]:
