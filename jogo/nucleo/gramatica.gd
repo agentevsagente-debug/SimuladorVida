@@ -87,6 +87,39 @@ static func genero_conjunto(generos: Array) -> String:
 	return "f" if not generos.is_empty() else "m"
 
 
+## As variáveis que um modelo usa: "{p} viu {em:z}" -> ["p", "z"].
+static func chaves(modelo: String) -> Array:
+	var r: Array = []
+	var i := modelo.find("{")
+	while i >= 0:
+		var fim := modelo.find("}", i)
+		if fim < 0:
+			break
+		var tok := modelo.substr(i + 1, fim - i - 1)
+		var hash_pos := tok.find("#")
+		var dois := tok.find(":")
+		if hash_pos > 0:
+			r.append(tok.substr(0, hash_pos))
+		elif dois < 0:
+			r.append(tok)
+		elif tok.substr(dois + 1).find("|") >= 0:
+			r.append(tok.substr(0, dois))
+		else:
+			r.append(tok.substr(dois + 1))
+		i = modelo.find("{", fim)
+	return r
+
+
+## O modelo tem valor para todas as variáveis que usa?
+static func cabe(modelo: String, vars: Dictionary) -> bool:
+	for k in chaves(modelo):
+		if not vars.has(k):
+			return false
+	return true
+
+
+## Preenche o modelo. Uma variável sem valor nunca chega ao texto como "{p}": vira "alguém"
+## (quem escolhe a frase deve preferir, antes, um modelo que cabe; ver cabe()).
 static func preencher(modelo: String, vars: Dictionary, capitalizar: bool = true) -> String:
 	var saida := ""
 	var i := 0
@@ -105,25 +138,39 @@ static func preencher(modelo: String, vars: Dictionary, capitalizar: bool = true
 	return _maiusculas_de_frase(saida) if capitalizar else saida
 
 
+## As variáveis que ficaram sem valor ao preencher ("modelo -> chave"), para os testes: o normal é
+## nunca acontecer (quem escolhe a frase prefere uma que cabe).
+static var chaves_faltando: Array = []
+
+
+static func _faltou(tok: String, chave: String, vars: Dictionary) -> void:
+	if not vars.has(chave):
+		chaves_faltando.append("{%s} -> %s" % [tok, chave])
+
+
 static func _token(tok: String, vars: Dictionary) -> String:
 	var hash_pos := tok.find("#")
 	if hash_pos > 0:
+		_faltou(tok, tok.substr(0, hash_pos), vars)
 		var v = vars.get(tok.substr(0, hash_pos), termo("?"))
 		var formas := tok.substr(hash_pos + 1).split("|")
 		return formas[0] if int(v["n"]) <= 1 else formas[min(1, formas.size() - 1)]
 	var dois := tok.find(":")
 	if dois < 0:
-		return str(vars.get(tok, termo("{" + tok + "}"))["t"])
+		_faltou(tok, tok, vars)
+		return str(vars.get(tok, termo("alguém"))["t"])
 	var esq := tok.substr(0, dois)
 	var dir := tok.substr(dois + 1)
 	if dir.find("|") >= 0:
+		_faltou(tok, esq, vars)
 		var v2 = vars.get(esq, termo("?"))
 		var formas2 := dir.split("|")
 		var idx := 0 if v2["g"] == "m" else 1
 		if formas2.size() >= 4 and int(v2["n"]) > 1:
 			idx += 2
 		return formas2[min(idx, formas2.size() - 1)]
-	var v3 = vars.get(dir, termo("{" + dir + "}"))
+	_faltou(tok, dir, vars)
+	var v3 = vars.get(dir, termo("alguém"))
 	var prep := esq.to_lower()
 	var maius := esq != prep
 	var res := ""

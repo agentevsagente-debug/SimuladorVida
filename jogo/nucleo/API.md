@@ -412,6 +412,8 @@ vistos = mundo.eventos.size()
 
 `texto_curto(evento_id) -> String` devolve a mesma frase curta para qualquer evento, a qualquer momento. Ela sai da gramática, não sorteia nada do mundo e é sempre a mesma para o mesmo evento.
 
+**Nenhuma chave chega ao texto (0.2.1).** Nenhum texto do núcleo (a frase curta, o texto do ano, a crônica viva e a em curso, a crônica do povo, a dica) mostra uma chave de modelo como "{p}". Quando falta um valor (o sonho ou a cura num lugar sem ninguém, uma pessoa que já não existe), a frase escolhida é uma que não usa esse nome. Se não houver nenhuma, o nome vira "alguém". O sonho sem sonhador é "Um sonho sem ninguém para sonhar" na frase curta e "Um sonho desceu sobre o lago, mas não havia ali ninguém para sonhá-lo." na crônica. A cura sem curado é "Uma cura sem ninguém para curar" e "Uma força de cura passou pelo lago, mas não encontrou ninguém para curar.". Antes, esses dois gestos não tinham frase na crônica. O teste é `ferramentas_sim/testar_textos.gd`.
+
 Uma lista completa de tipos e dados de cada um fica para a próxima versão deste documento. Por enquanto, a referência é a função `registrar(...)` em `mundo.gd`. Os tipos que mais interessam à moldura:
 
 | Tipo | Quando | Camada |
