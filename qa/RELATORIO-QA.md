@@ -65,8 +65,8 @@
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
 | D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido** (QA-186 passa na main `e27d489`: "No princípio, a região estava vazia…") |
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
-| D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **aberto** (QA-206 falha): 37 vezes em 72 sonhos sem alvo; achado pelo usuário |
-| D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **aberto** (QA-206 falha): semente 5 |
+| D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido na branch da A** (`5edae7a`, 0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa. À espera do merge |
+| D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido na branch da A** (`5edae7a`): usa o povo do morto; QA-206 passa. À espera do merge |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
@@ -613,7 +613,15 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
   - resto de molde: `{`, `}` e `|` (este último sobra de `{p:o|a}`);
   - qualquer caractere que a fonte da apresentação (`fonte_5x7_escura.fnt`, a mesma das outras três cores) não desenha. A fonte tem ASCII de 32 a 126, menos `# $ & * < > @ [ \ ] ^ _ { | } ~` e o acento grave solto, mais `ª « º »`, as vogais acentuadas, `Ç ç Ü ü`, o travessão e as reticências.
 - **Como a tela vê o texto:** a crônica e o livro passam antes pelo `_sem_markdown` da interface, o mesmo do leitor da estante, que tira os `#`, `*` e `_` e troca as aspas curvas. O texto curto vai cru para a dica.
-- **Hoje:** 270 gestos que deram certo, 737 textos, e dois defeitos: D-18 e D-19. Nenhum caractere fora da fonte apareceu; só os moldes.
+- **Na main `6c23e4e`:** 270 gestos que deram certo, 737 textos, e dois defeitos: D-18 e D-19. Nenhum caractere fora da fonte apareceu; só os moldes.
+- **Na branch da A (`5edae7a`, 0.2.1, junto com a main):** o QA-206 passa, e a bateria inteira dá **104 passam, 0 falham e 3 pulados** (`qa/rodada-branch-a-5edae7a.txt`).
+- **A regra nova da A:** o cronista só escolhe um molde que tenha valor para todas as variáveis; se nenhum tiver, põe "alguém" e anota em `G.chaves_faltando`.
+- **QA-207, o teste de textos da A (`ferramentas_sim/testar_textos.gd`), entra na bateria:**
+  - roda num processo à parte e leva uns 95 s;
+  - na branch da A, sai com 0: 76 tipos de evento com frase curta, 76 sonhos e 171 curas sem ninguém, 34 367 textos conferidos;
+  - avisa que a conquista, o culpado e o ruinas_saber não aconteceram nesses mundos; isso não é falha;
+  - na main, enquanto o arquivo não chega, fica PULADO.
+- O caractere fora da fonte é conferido só no QA-206, e o "alguém" de reserva só no QA-207.
 
 ## Como rodar
 
