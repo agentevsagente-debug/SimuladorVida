@@ -31,17 +31,24 @@ static func gravar_com_copias(caminho: String, conteudo, copias: int = COPIAS) -
 	if not confere:
 		push_error("O arquivo gravado não confere: " + tmp)
 		return false
-	var dir := DirAccess.open(caminho.get_base_dir())
-	if dir == null:
-		return false
+	# Pelos caminhos absolutos, e não por DirAccess.open da pasta: com mais de 260 caracteres
+	# (o limite do Windows), abrir a pasta falha, mas renomear e apagar pelo caminho funcionam.
 	if copias > 0:
 		if FileAccess.file_exists(copia(caminho, copias)):
-			dir.remove(copia(caminho, copias).get_file())
+			DirAccess.remove_absolute(_global(copia(caminho, copias)))
 		for n in range(copias - 1, 0, -1):
 			if FileAccess.file_exists(copia(caminho, n)):
-				dir.rename(copia(caminho, n).get_file(), copia(caminho, n + 1).get_file())
+				DirAccess.rename_absolute(_global(copia(caminho, n)), _global(copia(caminho, n + 1)))
 		if FileAccess.file_exists(caminho):
-			dir.rename(caminho.get_file(), copia(caminho, 1).get_file())
+			DirAccess.rename_absolute(_global(caminho), _global(copia(caminho, 1)))
 	elif FileAccess.file_exists(caminho):
-		dir.remove(caminho.get_file())
-	return dir.rename(tmp.get_file(), caminho.get_file()) == OK
+		DirAccess.remove_absolute(_global(caminho))
+	if DirAccess.rename_absolute(_global(tmp), _global(caminho)) != OK:
+		# O mundo gravado ficou no .novo, que carregar() lê antes das cópias: nada se perde.
+		push_error("Não foi possível trocar %s pelo arquivo novo" % caminho)
+		return false
+	return true
+
+
+static func _global(caminho: String) -> String:
+	return ProjectSettings.globalize_path(caminho)
