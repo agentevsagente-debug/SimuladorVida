@@ -1623,7 +1623,7 @@ func _perto_do_porco(x: float, t: float, pid: int) -> bool:
 
 ## O começo da tarde na vila, todos os dias (também nos de caçada, que acontece longe): três cenas
 ## que se encadeiam das 12h30 às 15h30 e se leem de longe.
-## - `sesta` (12h30 às 14h): 2 ou 3 adultos deitados à sombra de uma casa (`deitar`, `sesta`), e
+## - `sesta` (12h30 às 13h40): 2 ou 3 adultos deitados à sombra de uma casa (`deitar`, `sesta`), e
 ##   uma criança que não dorme: cutuca um por um (`brincar`, `cutucar`), até que um se ergue e
 ##   ralha (`parado`, `ralhar`), e ela foge correndo.
 ## - `ensinar` (12h40 às 14h): um velho ensina uma criança de 8 a 13 anos a atirar a lança num alvo
@@ -1637,12 +1637,13 @@ const CENAS_DA_VILA := ["sesta", "ensinar", "artesanato"]
 
 
 func _cenas_da_vila(g, c: Dictionary) -> void:
-	if ruido(g.id, dia, 1100) < 0.65:
-		_cena_sesta(g, c)
+	# A sesta por último: gente para dormir sempre sobra; o mestre e a roda, nem sempre.
 	if ruido(g.id, dia, 1101) < 0.6:
 		_cena_ensinar(g, c)
 	if ruido(g.id, dia, 1102) < 0.7:
 		_cena_artesanato(g, c)
+	if ruido(g.id, dia, 1100) < 0.65:
+		_cena_sesta(g, c)
 
 
 ## Tira de todos os participantes os blocos de uma cena que não se completou.
@@ -1668,7 +1669,7 @@ func _cena_sesta(g, c: Dictionary) -> void:
 		return
 	var id := "sesta:%d:%d" % [g.id, dia]
 	var ini := 750.0 + ruido(g.id, dia, 1112) * 10.0
-	var fim := 830.0 + ruido(g.id, dia, 1113) * 10.0
+	var fim := 810.0 + ruido(g.id, dia, 1113) * 12.0   # acaba antes da roda do artesanato
 	var casa: float = c["fogo"] + 20.0
 	if not c["casas"].is_empty():
 		casa = c["casas"][int(ruido(g.id, dia, 1114) * c["casas"].size()) % c["casas"].size()]
@@ -1798,7 +1799,7 @@ const PECAS := {"cesto": ["tecer", "trancar_cesto"], "pote": ["consertar", "mold
 
 
 func _cena_artesanato(g, c: Dictionary) -> void:
-	var adultos: Array = _embaralhados(_adultos(g, 25, 80), 1130).filter(func(p): return not papeis.has(p.id))
+	var adultos: Array = _embaralhados(_adultos(g, 20, 80), 1130).filter(func(p): return not papeis.has(p.id))
 	if adultos.size() < 2:
 		return
 	var opcoes: Array = ["cesto", "lanca"] + (["pote"] if g.estagio >= 2 else [])
