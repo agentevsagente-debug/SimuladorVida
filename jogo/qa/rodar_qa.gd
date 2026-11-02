@@ -243,6 +243,7 @@ func _rodar_tudo() -> void:
 		["estante e abandono", _bloco_estante],
 		["guerra (TDD)", _bloco_guerra],
 		["textos na fonte", _bloco_textos],
+		["textos da A (testar_textos)", _bloco_textos_da_a],
 		["inspeção do código", _bloco_inspecao],
 	]
 	for b in blocos:
@@ -1798,6 +1799,31 @@ func _bloco_textos() -> void:
 		resumo.append("%s, %d vezes; ex. %s" % [chave, achados[chave][0], achados[chave][1]])
 	conferir("QA-206", usos > 0 and achados.is_empty(),
 		"%d gestos que deram certo (%d sonhos sem alvo), %d textos; caracteres fora da fonte ou resto de molde: %s" % [usos, sonhos, textos, "; ".join(resumo) if not resumo.is_empty() else "nenhum"])
+
+
+## QA-207: o teste de textos da A (ferramentas_sim/testar_textos.gd, desde a 0.2.1), num processo
+## à parte, com o mesmo user:// isolado: 9 sementes, até 300 anos, todos os poderes, as preces, a
+## ausência, o fim do mundo; nenhum resto de molde e nenhum molde sem valor (o "alguém" de reserva).
+func _bloco_textos_da_a() -> void:
+	if not _quer("QA-207"):
+		return
+	const SCRIPT := "res://ferramentas_sim/testar_textos.gd"
+	if not FileAccess.file_exists(SCRIPT):
+		pular("QA-207", "%s ainda não existe nesta versão (chega com a 0.2.1 da A)" % SCRIPT)
+		return
+	var saida: Array = []
+	var codigo := OS.execute(OS.get_executable_path(), ["--headless", "--quit-after", "600",
+		"--path", ProjectSettings.globalize_path("res://"), "--script", SCRIPT], saida, true)
+	var linhas := []
+	for bloco in saida:
+		for l in _de_cp1252(str(bloco)).split("
+"):
+			l = l.strip_edges()
+			if l != "" and not RUIDO.any(func(r): return l.contains(r)):
+				linhas.append(l)
+	var avisos := linhas.filter(func(l): return l.to_lower().contains("aviso"))
+	conferir("QA-207", codigo == 0, "testar_textos.gd saiu com %d; fim da saída: %s%s" % [codigo, linhas.slice(-4),
+		"; avisos: %s" % [avisos.slice(0, 3)] if not avisos.is_empty() else ""])
 
 
 func _bloco_inspecao() -> void:
