@@ -16,7 +16,7 @@
 | **Falham** | **1**: o QA-186, o erro novo achado pelo fuzz (D-16) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
-**Na branch da A (`38dadcd`, ainda fora da main):** a bateria dá **101 passam, 0 falham e 3 pulados** em 104 cenários. O QA-186 (D-16) passa, e o D-07 está resolvido (abaixo). O QA-187, novo, entra depois e fica à espera do D-17.
+**Na branch da A (`1249c3b`, ainda fora da main):** a bateria dá **102 passam, 0 falham e 3 pulados** em 105 cenários. O QA-186 (D-16) e o QA-187 (D-17) passam, e o D-07 está resolvido. A saída está em `qa/rodada-branch-a-1249c3b.txt`.
 
 **Por área:**
 
@@ -59,7 +59,7 @@
 | D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **corrigido** na main `50e5636` (QA-092 passa) |
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
 | D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido na branch da A** (`38dadcd`, QA-186 passa: "No princípio, a região estava vazia…"); à espera do merge |
-| D-17 | O artesanato aparece em 40% dos dias, e a API promete cerca de 7 em 10 | baixa | não | A | **aberto** na branch `38dadcd` (QA-187 falha); na main, as três cenas ainda não existem |
+| D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa). À espera do merge |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Nesta rodada, também:**
@@ -303,7 +303,7 @@ O registro original fica abaixo.
 - **Esperado:** a crônica do mundo vazio tem um texto próprio ("A região espera…"), sem erro de script.
 - **O resto do mundo vazio está limpo:** as consultas da tela, as dicas, as sugestões, os eventos, um poder, um dia e salvar e carregar não dão erro (QA-186).
 
-### D-17. As cenas novas da tarde aparecem menos do que a API promete
+### D-17. As cenas novas da tarde apareciam menos do que a API prometia (corrigido na branch da A, `1249c3b`)
 **Cenário:** QA-187 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
 
 - **Passos:** sementes 1 e 2, no ano 4, 20 dias cada; as cenas que acontecem das 12h às 15h59 (`cenas_ativas()` de hora em hora).

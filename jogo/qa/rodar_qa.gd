@@ -361,14 +361,15 @@ func _consultas_no_vazio() -> void:
 	conferir("QA-186", w.cronica_viva().strip_edges() != "", "a crônica do mundo vazio tem texto")
 
 
-## QA-187: as três cenas do começo da tarde (A, 6442746; API.md): sesta (12h30 às 14h, ~2 em 3 dias),
-## ensinar (12h40 às 14h, ~3 em 5 dias, se há criança de 8 a 13 anos e alguém de 35 ou mais) e
-## artesanato (13h50 às 15h40, ~7 em 10 dias).
+## QA-187: as três cenas do começo da tarde (A; API.md desde 1249c3b): sesta (12h30 às 13h40, ~3 em
+## 5 dias), ensinar (12h40 às 14h, ~2 em 5 dias, se há criança de 8 a 13 anos e alguém de 35 ou mais)
+## e artesanato (13h50 às 15h40, ~3 em 5 dias). A sesta acaba antes da roda do artesanato.
 func _cenas_da_tarde() -> void:
 	var dias := {"sesta": 0, "ensinar": 0, "artesanato": 0}
 	var pode_ensinar := 0
 	var sesta_certa := 0
 	var sesta_vista := 0
+	var sesta_tarde := 0
 	var total := 0
 	for sem in [1, 2]:
 		var w := _mundo(sem)
@@ -381,6 +382,8 @@ func _cenas_da_tarde() -> void:
 				for c in w.cenas_ativas():
 					if dias.has(c["tipo"]):
 						vistos[c["tipo"]] = true
+					if c["tipo"] == "sesta" and float(c["fim"]) > 13.75:
+						sesta_tarde += 1
 				for p in w.pessoas_visiveis():
 					if p["cena"].get("tipo", "") == "sesta" and p["acao"] == "deitar":
 						sesta_vista += 1
@@ -394,8 +397,9 @@ func _cenas_da_tarde() -> void:
 			w.avancar_dias(1)
 	info("cenas da tarde em %d dias (sementes 1 e 2): %s; dias em que dá para ensinar: %d" % [total, dias, pode_ensinar])
 	# limites com folga para o acaso (binomial): metade da frequência que a API promete
-	conferir("QA-187", dias["sesta"] >= total / 3, "a sesta aparece em boa parte dos dias (%d de %d; a API diz cerca de 2 em 3)" % [dias["sesta"], total])
-	conferir("QA-187", dias["artesanato"] >= total / 2, "o artesanato aparece em boa parte dos dias (%d de %d; a API diz cerca de 7 em 10)" % [dias["artesanato"], total])
+	conferir("QA-187", dias["sesta"] >= total / 3, "a sesta aparece em boa parte dos dias (%d de %d; a API diz cerca de 3 em 5)" % [dias["sesta"], total])
+	conferir("QA-187", dias["artesanato"] >= total / 2, "o artesanato aparece em boa parte dos dias (%d de %d; a API diz cerca de 3 em 5)" % [dias["artesanato"], total])
+	conferir("QA-187", sesta_tarde == 0, "a sesta acaba até 13h45, antes da roda do artesanato (%d vezes depois)" % sesta_tarde)
 	conferir("QA-187", pode_ensinar == 0 or dias["ensinar"] >= 1, "o ensinar aparece quando há criança e velho (%d dias com ensinar, %d em que dava)" % [dias["ensinar"], pode_ensinar])
 	conferir("QA-187", sesta_vista == 0 or sesta_certa == sesta_vista, "quem está deitado na sesta tem o detalhe sesta (%d de %d)" % [sesta_certa, sesta_vista])
 
