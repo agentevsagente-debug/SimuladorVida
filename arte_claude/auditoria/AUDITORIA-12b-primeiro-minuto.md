@@ -38,3 +38,21 @@ O que segurava a primeira hora em 4 na auditoria 12 eram os 10 primeiros segundo
 | Primeira hora | 3 | 4 | 4 | **5** |
 
 A ressalva é a de sempre: o jogo ainda não foi jogado com a mão, com a tela desbloqueada (o B1 da auditoria 11).
+
+## Conferido de novo na 0.1.1 da raiz (`builds/`, gerada da main `faa2432`)
+
+*Sessão C (arte), 01/11/2026. O usuário estava usando o PC, então rodei em segundo plano:*
+- *no segundo monitor, com `--sem-foco`;*
+- *com `--primeira-vez`, `--mundo-novo` e `--sem-config`, sem o mouse real.*
+
+*O `.exe` abriu sozinho por 60 s. Depois rodei o código-fonte (a mesma main) com a entrada injetada: passar o cursor sobre o mundo vazio e clicar. Fiz a cópia da pasta de dados antes e, no fim, copiei por cima, sem apagar nada; nenhum arquivo ficou diferente. As capturas estão em `capturas12c/`.*
+
+| O que | Visto |
+|---|---|
+| A dica na alça | "Clique sobre o mundo para fazer nascer um povo", desde o primeiro quadro |
+| O convite no chão | o anel e a estrela na clareira, desde o primeiro quadro, até o clique |
+| **A dica junto do cursor (V4)** | **sobre o mundo vazio, a dica de lugar ganha "Clique para fazer nascer um povo aqui"** ("A floresta", "O morro"…). É o que faltava: o jogador lê a instrução onde está olhando (`recortes12b/dica_junto_do_cursor_e_clique.png`). |
+| Os bichos | a garça e o cervo na beira do lago a partir de uns 4 s, e os bandos de pássaros cruzando |
+| O clique | "Nasceu um povo novo: começa a primeira era."; o povo entra pelo morro, e a fogueira acende uns 10 s depois do clique |
+
+**Nota da primeira hora: 5.** A meta foi confirmada na 0.1.1 que vai para os amigos. O primeiro minuto convida, tem vida e ensina o gesto dentro do mundo. A ressalva do cervo pouco visível na sombra da manhã continua, mas não pesa, porque a garça e a dica junto do cursor fazem o trabalho.
