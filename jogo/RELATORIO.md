@@ -50,6 +50,24 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **O ícone da bandeja:** não é clicado pelo script, porque no Windows 11 ele fica no menu "^", em posição variável. O caminho de volta pela barra de tarefas e pelo Ctrl+Alt+H foi testado; o clique no ícone, à mão, em rodadas anteriores.
 - **Correção achada na passada:** o `.exe` de release só gravava o `godot.log` ao sair. Numa falha, o log que o amigo mandaria ficava vazio. Agora `run/flush_stdout_on_print=true`; o jogo imprime pouco, então o custo é desprezível.
 
+**D-08, o mundo velho em 1x (continuação).** Em 1x e na pausa, as pessoas são calculadas 10 vezes por segundo, e não a cada quadro. Quem anda vai a cerca de 9 px/s (1 px por cálculo), e as animações das pessoas vão a até 10 quadros/s, então nada se perde. Entre um cálculo e outro, vale o desenho de antes. A chegada de um povo novo continua a cada quadro.
+
+Medido com `medir.ps1 -Cenario grande` (200 anos, semente 3, 1x, visível), na mesma sessão, com o usuário usando o PC:
+
+| | CPU média (% de um núcleo) | Pico (% de um núcleo) | Gerenciador de Tarefas |
+|---|---|---|---|
+| Sem a mudança | 8,23% | 13,8% | 188 MB |
+| Com a mudança | **7,00%** | **8,1%** | 188 MB |
+
+- Pela `DEPURAR_TEMPO`, a vista cai de cerca de 2,2 ms para cerca de 1,3 ms por quadro.
+- A medida "sem" passa de 8%, e a do QA tinha dado 7,1% a 7,3%. A diferença vem do PC em uso e do núcleo mais novo da A. Por isso a comparação vale entre as duas linhas da mesma sessão.
+
+**O verificar.ps1 mais firme.**
+- Cada passo com o mouse confere o próprio efeito, no registro ou na janela, e tenta até 3 vezes.
+- Depois do gesto, o raio é largado (botão direito), e a alça volta ao normal. Assim, uma falha não muda a posição dos botões dos passos seguintes.
+- O `Win32.cs` confere a posição do cursor e o foco em cada ação, e reposiciona uma vez se o ponto sair do lugar. O passo que falha com interferência sai como INTERFERENCIA, e não FALHA.
+- As 5 rodadas seguidas ficam para quando o PC estiver livre.
+
 **O .exe 0.1.1 (auditoria 12 da C).** `builds/Simulador de vida.exe` (versão 0.1.1.0 no arquivo) e o COMO JOGAR 0.1.1.
 - **V1:** o convite no chão já estava ligado desde `55c4b1e`. A auditoria usou a main anterior a ele.
 - **V2:** no mundo que nunca teve gente:

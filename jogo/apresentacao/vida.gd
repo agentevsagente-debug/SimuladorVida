@@ -103,6 +103,10 @@ const COM_ROUPA_DO_ESTAGIO := ["catar_lenha_forte_4q", "carregar_cesto_cabeca_fo
 ## No estágio 6, os homens andam e param de chapéu de aba larga (auditoria 11, D2).
 const CHAPEU_DO_ESTAGIO6 := {"adulto_a_andar_4q": "adulto_e6_andar_4q", "adulto_a_parado_2q": "adulto_e6_parado_2q"}
 
+const CALCULOS_DEVAGAR := 10.0  # cálculos por segundo das pessoas em 1x e na pausa
+var _desenho: Array = []        # o último resultado de atualizar(), reaproveitado entre os cálculos
+var _proximo_calculo := 0.0
+var _delta_guardado := 0.0
 var _trechos := {}             # trecho da agenda de cada um (refeito 6 vezes por segundo)
 var _lugar := {}               # lugar de cada parado (idem)
 var _refazer_lugares_em := 0.0
@@ -147,6 +151,16 @@ static func trecho(p: Dictionary, f: float) -> Dictionary:
 
 
 func atualizar(delta: float, relogio: float) -> Array:
+	# em 1x e na pausa, quem anda vai a ~9 px/s e as animações vão a até 10 quadros/s:
+	# 10 cálculos por segundo bastam (1 px por passo); entre eles, vale o desenho de antes
+	# (QA, D-08: o laço das pessoas era metade do custo da vista num mundo grande)
+	_delta_guardado += delta
+	var devagar: bool = sim.ritmo == Simulacao.Ritmo.NORMAL or sim.ritmo == Simulacao.Ritmo.PAUSA
+	if devagar and relogio < _proximo_calculo and not _desenho.is_empty() and _chegando.is_empty():
+		return _desenho
+	_proximo_calculo = relogio + 1.0 / CALCULOS_DEVAGAR
+	delta = _delta_guardado
+	_delta_guardado = 0.0
 	# o trecho da agenda de cada um e os lugares dos parados mudam devagar (a agenda
 	# anda em minutos de jogo): refeitos 6 vezes por segundo, ou quando a gente muda
 	if relogio >= _refazer_lugares_em or not is_same(sim.pessoas, _pessoas_vistas) or sim.ritmo != Simulacao.Ritmo.NORMAL:
@@ -274,7 +288,8 @@ func atualizar(delta: float, relogio: float) -> Array:
 		_ultimo_registro = int(relogio / 10.0)  # teste: onde estão os parados (auditoria 4, N5)
 		print("[lugares] %d %s" % [_ultimo_registro, JSON.stringify(r.filter(func(f): return not f.movendo).map(
 			func(f): return [f.id, f.x, f.acao, roundi(f.get("nucleo", -1.0))]))])
-	return r + objetos
+	_desenho = r + objetos
+	return _desenho
 
 
 ## A folha com a roupa do estágio do povo (estagioN/), se a arte tiver; senão, a de acoes/.
