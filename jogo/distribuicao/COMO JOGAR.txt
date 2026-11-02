@@ -46,13 +46,17 @@ TECLAS
 O SOM
 -----
 O som é baixo e discreto. Para calar na hora (numa reunião, por exemplo),
-aperte M ou clique no alto-falante, no fim da alça. A escolha fica
-guardada. Com a janela escondida ou minimizada, o jogo fica sempre mudo.
+aperte M ou clique no alto-falante, no fim da alça. Também dá sem abrir
+a janela: botão direito no ícone do jogo perto do relógio, "Som ligado".
+A escolha fica guardada. Com a janela escondida ou minimizada, o jogo
+fica sempre mudo.
 
 COMO TRAZER A JANELA DE VOLTA
 -----------------------------
 Depois de esconder (H), clique no ícone do jogo perto do relógio do
 Windows (pode estar escondido na setinha "^") ou aperte Ctrl+Alt+H.
+O botão direito nesse ícone abre um menu: Mostrar/Esconder, Som ligado
+e Sair.
 A janela também pode ser arrastada pela alça.
 
 ONDE FICA O MUNDO SALVO

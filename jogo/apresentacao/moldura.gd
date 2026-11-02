@@ -34,6 +34,7 @@ extends Node2D
 ##   --discreto                           liga o modo discreto (D, no jogo): o pior fica só na crônica
 ##   --com-som                            com --sem-config, liga o som (os testes são mudos por padrão)
 ##   --alternar-som=S                     aperta o botão de som depois de S segundos (testes)
+##   --menu-bandeja=S[:janela|som|sair]   abre o menu da bandeja depois de S segundos e escolhe o item (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
@@ -66,6 +67,8 @@ var _atalho_leitor: Thread
 var _largura_alca := 0
 var som: Node                  # o som (apresentacao/som.gd): os barramentos, o ambiente e os acontecimentos
 var _minimizada := false
+var _menu_bandeja: PopupMenu   # o botão direito na bandeja: Mostrar/Esconder, Som ligado, Sair
+enum { MENU_JANELA, MENU_SOM, MENU_SAIR }
 
 @onready var vista: Node2D = $Recorte/Vista
 @onready var interface: Node2D = $Interface
@@ -118,6 +121,9 @@ func _ready() -> void:
 	interface.som_ligado = som.ligado
 	if vista.sim:
 		vista.sim.eventos_novos.connect(_sons_dos_eventos)
+	if args.has("menu-bandeja"):  # teste: abre o menu da bandeja (S) e escolhe o item (janela|som|sair)
+		var mb: PackedStringArray = args["menu-bandeja"].split(":")
+		get_tree().create_timer(float(mb[0])).timeout.connect(_testar_menu_da_bandeja.bind(mb[1] if mb.size() > 1 else ""))
 	if args.has("alternar-som"):  # teste: aperta o botão de som depois de S segundos
 		get_tree().create_timer(float(args["alternar-som"])).timeout.connect(_alternar_som)
 	var nova: int = config.get_value("moldura", "escala", _escala_pela_tela(tela))
@@ -542,16 +548,61 @@ func _criar_bandeja() -> void:
 	var lado := 32 if escala_tela >= 1.75 else (24 if escala_tela >= 1.25 else 16)
 	_bandeja.icon = load("res://arte/interface/icone_jogo_%d.png" % lado)
 	_log("bandeja: dpi=%d ícone %d px" % [DisplayServer.screen_get_dpi(DisplayServer.SCREEN_PRIMARY), lado])
-	_bandeja.tooltip = "Simulador de vida: clique para mostrar ou esconder, botão direito para sair"
+	_bandeja.tooltip = "Simulador de vida: clique para mostrar ou esconder; botão direito para o menu"
 	_bandeja.pressed.connect(_ao_clicar_bandeja)
 	add_child(_bandeja)
+	# o menu sai como janela própria, perto do relógio (embutido, ficaria preso dentro da moldura)
+	get_window().gui_embed_subwindows = false
+	_menu_bandeja = PopupMenu.new()
+	_menu_bandeja.add_item("Esconder", MENU_JANELA)
+	_menu_bandeja.add_check_item("Som ligado", MENU_SOM)
+	_menu_bandeja.add_separator()
+	_menu_bandeja.add_item("Sair", MENU_SAIR)
+	_menu_bandeja.id_pressed.connect(_no_menu_da_bandeja)
+	add_child(_menu_bandeja)
 
 
-func _ao_clicar_bandeja(botao: int, _posicao: Vector2i) -> void:
+func _ao_clicar_bandeja(botao: int, posicao: Vector2i) -> void:
 	if botao == MOUSE_BUTTON_LEFT:
 		alternar()
 	elif botao == MOUSE_BUTTON_RIGHT:
-		sair()
+		abrir_menu_da_bandeja(posicao)
+
+
+## O menu da bandeja, acima do ponto do clique: dá para calar o jogo numa reunião sem abrir a janela.
+func abrir_menu_da_bandeja(posicao: Vector2i) -> void:
+	_menu_bandeja.set_item_text(_menu_bandeja.get_item_index(MENU_JANELA), "Mostrar" if escondida else "Esconder")
+	_menu_bandeja.set_item_checked(_menu_bandeja.get_item_index(MENU_SOM), som.ligado)
+	_menu_bandeja.reset_size()
+	var tamanho := _menu_bandeja.get_contents_minimum_size()
+	var area := DisplayServer.screen_get_usable_rect(DisplayServer.get_screen_from_rect(Rect2(posicao, Vector2.ONE)))
+	var canto := Vector2i(posicao.x - int(tamanho.x), posicao.y - int(tamanho.y))
+	canto.x = clampi(canto.x, area.position.x, area.end.x - int(tamanho.x))
+	canto.y = clampi(canto.y, area.position.y, area.end.y - int(tamanho.y))
+	_menu_bandeja.popup(Rect2i(canto, Vector2i(tamanho)))
+	_log("menu da bandeja")
+
+
+## Teste (--menu-bandeja): abre o menu perto do canto da tela e, 1 s depois, escolhe o item.
+func _testar_menu_da_bandeja(item: String) -> void:
+	if _menu_bandeja == null:
+		return
+	abrir_menu_da_bandeja(DisplayServer.screen_get_usable_rect().end - Vector2i(40, 4))
+	if item == "":
+		return
+	await get_tree().create_timer(1.0).timeout
+	_menu_bandeja.hide()
+	_no_menu_da_bandeja({"janela": MENU_JANELA, "som": MENU_SOM, "sair": MENU_SAIR}[item])
+
+
+func _no_menu_da_bandeja(id: int) -> void:
+	match id:
+		MENU_JANELA:
+			alternar()
+		MENU_SOM:
+			_alternar_som()
+		MENU_SAIR:
+			sair()
 
 
 func _ler_argumentos() -> Dictionary:
