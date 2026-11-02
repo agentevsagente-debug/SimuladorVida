@@ -12,7 +12,7 @@ from sintese import (SR, VOGAIS, banda, colocar, eco_circular, env, fase, lfo, n
 # o RMS (dBFS) de cada laço: o fundo fica baixo; a chuva e a tempestade, que cobrem tudo, um
 # pouco acima; a neve e os grilos, os mais quietos
 NIVEL = {"vento": -30, "passaros": -31, "lago": -30, "grilos": -33, "fogo": -30, "chuva": -28,
-         "tempestade": -25, "neve": -34, "vila": -31}
+         "tempestade": -25, "neve": -34, "vila": -31, "festa": -29}
 
 
 def vento(rng, dur=32.0):
@@ -224,8 +224,40 @@ def vila(rng, dur=36.0):
     return 0.35 * x / (np.std(x) + 1e-12) + falas
 
 
+def _tambor(rng, f0, f1, queda, pele):
+    t = tempo(0.5)
+    corpo = np.sin(fase(f1 + (f0 - f1) * np.exp(-t / 0.04))) * np.exp(-t / queda)
+    return corpo + pele * passa(rng.standard_normal(t.size), 600, 2500) * np.exp(-t / 0.015)
+
+
+def festa(rng, dur=24.0):
+    """O tambor da festa (laço): dois tambores de pele a 100 batidas por minuto (40 batidas no
+    laço, que fecha certo), com palmas de vez em quando e o povo ao fundo, ao longe."""
+    n = int(dur * SR)
+    batida = 0.6  # s
+    grave = _tambor(rng, 95, 55, 0.18, 0.3)
+    agudo = _tambor(rng, 200, 130, 0.09, 0.5)
+    x = np.zeros(n)
+    for k in range(int(dur / batida)):  # compasso de 4: grave no 1 e no 3; agudo no 2, no 4 e no "e" do 4
+        t0 = k * batida
+        if k % 4 in (0, 2):
+            colocar(x, grave, int(t0 * SR), rng.uniform(0.85, 1.0))
+        if k % 4 in (1, 3):
+            colocar(x, agudo, int((t0 + rng.uniform(-0.01, 0.01)) * SR), rng.uniform(0.6, 0.8))
+        if k % 4 == 3:
+            colocar(x, agudo, int((t0 + batida / 2) * SR), rng.uniform(0.4, 0.6))
+        if k % 8 in (1, 3, 5, 7) and rng.uniform() < 0.6:  # palmas
+            p = tempo(0.03)
+            palma = passa(rng.standard_normal(p.size), 900, 2500) * np.exp(-p / 0.006)
+            colocar(x, palma, int((t0 + rng.uniform(-0.02, 0.02)) * SR), rng.uniform(0.3, 0.5))
+    x = eco_circular(x, resposta(rng, 0.9, 2500), 0.35)
+    povo = vila(rng, dur)
+    return x / (np.std(x) + 1e-12) + 0.35 * povo / (np.std(povo) + 1e-12)
+
+
 LACOS = {"vento": vento, "passaros": passaros, "lago": lago, "grilos": grilos, "fogo": fogo, "chuva": chuva,
-         "tempestade": tempestade, "neve": neve, "vila": vila}
+         "tempestade": tempestade, "neve": neve, "vila": vila,
+         "festa": festa}
 
 
 def gerar(semente=11):

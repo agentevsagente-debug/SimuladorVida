@@ -15,6 +15,9 @@ NIVEL = {
     "sonho": (-28, -12), "milagre_sino": (-26, -9), "pressagio": (-26, -10), "cura": (-27, -11),
     "arremesso": (-27, -12), "lanca_cravar": (-26, -10), "grito_cacada": (-27, -11), "choro_bebe": (-31, -15),
     "coruja": (-28, -12), "galo": (-28, -11), "sino_templo": (-27, -9), "clique_alca": (-36, -20),
+    # pedidos da A para a 0.2 (API.md, "O som")
+    "vento_seco": (-28, -11), "terra": (-24, -8), "lamento": (-31, -15), "batalha": (-27, -10),
+    "grito_frustrado": (-29, -12),
 }
 
 
@@ -256,6 +259,80 @@ def clique_alca(rng):
     return x
 
 
+def vento_seco(rng):
+    """O vento seco da seca: uma rajada quente e áspera, com o capim seco farfalhando."""
+    dur = 4.5
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    rajada = np.sin(np.pi * t / dur) ** 1.5
+    sopro = passa(_ruido(rng, dur), 500, 2200) * rajada
+    aspero = passa(_ruido(rng, dur), 1500, 3500) * rajada ** 3 * (0.6 + 0.4 * np.abs(passa(_ruido(rng, dur), hi=12)))
+    capim = np.zeros(n)
+    for k in range(90):
+        d = int(rng.uniform(0.002, 0.008) * SR)
+        e = passa(rng.standard_normal(d + 16), 1500, 4000)[:d] * np.exp(-np.arange(d) / (d / 3))
+        pos = int(rng.uniform(0.3, 4.2) * SR)
+        capim[pos:pos + d] += rng.uniform(0.2, 1.0) * rajada[min(pos, n - 1)] * e[:max(0, min(d, n - pos))]
+    return passa(sopro + 0.4 * aspero + 0.8 * capim, hi=4000, ordem=4)
+
+
+def terra(rng):
+    """A terra se erguendo: um ronco grave que sobe de tom e o arrastar de terra e pedra."""
+    dur = 4.5
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    sobe = np.clip(t / 3.2, 0, 1)
+    ronco = np.sin(fase(40 + 30 * sobe)) + 0.5 * np.sin(fase(2 * (40 + 30 * sobe)))
+    arrasto = passa(_ruido(rng, dur), 80, 700) * (0.5 + 0.5 * np.abs(passa(_ruido(rng, dur), hi=9)))
+    forma = np.clip(t / 0.6, 0, 1) * np.exp(-np.maximum(t - 3.2, 0) / 0.5)
+    return passa((0.6 * ronco + arrasto) * forma, hi=1200, ordem=4)
+
+
+def lamento(rng):
+    """O lamento por um morto, ao longe: duas frases de choro cantado, sem palavras, que descem."""
+    partes = []
+    for k, (fa, fb, d) in enumerate(((290, 230, 1.6), (270, 200, 2.0))):
+        n = int(d * SR)
+        f0 = np.linspace(fa, fb, n) * (1.0 + 0.012 * np.sin(2 * np.pi * 5 * np.arange(n) / SR))
+        s = voz(rng, d, f0, [VOGAIS["a"], VOGAIS["o"], VOGAIS["u"]], rouca=0.15) * env(n, 0.25, d * 0.5, d * 0.4)
+        partes += [s, np.zeros(int(0.35 * SR))]
+    return passa(np.concatenate(partes), 200, 1600)
+
+
+def batalha(rng):
+    """Uma batalha ao longe: gritos sem palavras, o bater de lanças e escudos de madeira e o
+    tropel abafado."""
+    dur = 5.5
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    forma = np.clip(t / 0.8, 0, 1) * np.exp(-np.maximum(t - 4.0, 0) / 0.7)
+    tropel = passa(_ruido(rng, dur), 40, 250) * (0.5 + 0.5 * np.abs(np.sin(2 * np.pi * 3.1 * t)))
+    x = 0.8 * tropel
+    for k in range(9):  # gritos
+        d = rng.uniform(0.35, 0.7)
+        m = int(d * SR)
+        f0 = rng.uniform(170, 260) * (1.0 + 0.2 * np.sin(np.pi * np.linspace(0, 1, m)))
+        g = voz(rng, d, f0, [VOGAIS[rng.choice(["a", "é", "o"])], VOGAIS["a"]], rouca=0.3) * env(m, 0.04, d * 0.5, d * 0.3)
+        pos = int(rng.uniform(0.2, 4.5) * SR)
+        x[pos:pos + m] += rng.uniform(0.3, 0.8) * g[:max(0, min(m, n - pos))]
+    for k in range(30):  # madeira contra madeira
+        b = tempo(0.05)
+        bat = np.sin(2 * np.pi * rng.uniform(300, 600) * b) * np.exp(-b / 0.01)
+        bat += 0.5 * passa(rng.standard_normal(b.size), 800, 2500) * np.exp(-b / 0.006)
+        pos = int(rng.uniform(0.3, 4.6) * SR)
+        x[pos:pos + b.size] += rng.uniform(0.2, 0.7) * bat[:max(0, min(b.size, n - pos))]
+    return passa(x * forma, hi=1800)
+
+
+def grito_frustrado(rng):
+    """O grito frustrado (o arremesso que erra): um "ahh" curto que cai."""
+    dur = 0.7
+    n = int(dur * SR)
+    f0 = np.linspace(240, 150, n)
+    x = voz(rng, dur, f0, [VOGAIS["a"], VOGAIS["o"]], rouca=0.3)
+    return passa(x, hi=2000) * env(n, 0.03, 0.45, 0.15)
+
+
 SONS = {nome: globals()[nome] for nome in NIVEL}
 
 # o eco de cada um (duração, abafamento, mistura): campo aberto, mais longo nos de longe
@@ -263,7 +340,8 @@ ECO = {"trovao_1": (2.0, 1500, 0.4), "trovao_2": (2.5, 1200, 0.45), "trovao_3": 
        "terremoto": (1.0, 1000, 0.2), "milagre_sino": (2.0, 5000, 0.35), "sino_templo": (2.5, 3000, 0.35),
        "grito_cacada": (1.4, 2500, 0.45), "choro_bebe": (1.2, 2000, 0.45), "coruja": (1.6, 2500, 0.45),
        "galo": (1.4, 2500, 0.45), "fartura": (1.2, 6000, 0.3), "cura": (1.2, 5000, 0.3), "sonho": (1.5, 4000, 0.3),
-       "pressagio": (2.0, 1500, 0.3), "clique_alca": (0.1, 4000, 0.0)}
+       "pressagio": (2.0, 1500, 0.3), "clique_alca": (0.1, 4000, 0.0), "lamento": (1.8, 2000, 0.5),
+       "batalha": (1.4, 2000, 0.4), "grito_frustrado": (1.2, 2500, 0.4), "terra": (1.0, 1200, 0.2)}
 
 
 def gerar(semente=23):
