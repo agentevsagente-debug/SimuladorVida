@@ -58,7 +58,7 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 3. **Aviso do Windows (SmartScreen).** O jogo não tem assinatura digital, então o Windows pode mostrar "O Windows protegeu o computador". Clique em **Mais informações** e depois em **Executar assim mesmo**.
 4. O mundo começa vazio. Clique sobre ele para fazer nascer o primeiro povo.
 
-**Requisitos:** Windows 10 ou 11, 64 bits. Não precisa de internet. O jogo é em português do Brasil e não tem som.
+**Requisitos:** Windows 10 ou 11, 64 bits. Não precisa de internet. O jogo é em português do Brasil e tem som discreto, que se desliga com um clique (botão de som na alça, tecla **M** ou o menu do ícone perto do relógio).
 
 ## Teclas e o gesto do poder
 
@@ -74,7 +74,8 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 | **0, 1, 2, 3** | pausa, 1x (1 dia ≈ 45 min), 10x e 50x |
 | **Espaço** | pausa e continua |
 | **S** | salta até o próximo acontecimento |
-| **Ctrl+2, 3, 4** | o tamanho da janela (a roda do mouse sobre a alça também muda) |
+| **M** | liga e desliga o som (também pelo botão na alça e pelo menu do ícone perto do relógio) |
+| **Ctrl+2, 3, 4** | o tamanho da janela (também pelo botão da lupa na alça: clique aumenta, botão direito diminui) |
 | **Ctrl+Q** | sair (o mundo é salvo) |
 
 Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para ler uma prece. O guia completo, com imagens, está em **[Como jogar](docs/como-jogar.md)**.
@@ -85,7 +86,7 @@ Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para
 - **[Tempo e evolução](docs/tempo-e-evolucao.md):** quanto dura um dia, uma estação e um ano em cada velocidade, e quanto tempo um povo leva para chegar a cada estágio.
 - **[Mecânicas](docs/mecanicas.md):** os 11 poderes e as intensidades, preces, religião, culturas, linhagem, fim do mundo e modo discreto.
 - **[Como foi feito](docs/como-foi-feito.md):** a linha do tempo, a arquitetura, a arte, as auditorias, o QA e as medições de leveza.
-- **[Notas da versão 0.1.2](docs/NOTAS-DA-VERSAO-0.1.2.md):** o que tem, os problemas conhecidos e como relatar um erro.
+- **[Notas da versão 0.2.0](docs/NOTAS-DA-VERSAO-0.2.0.md):** o que tem, os problemas conhecidos e como relatar um erro.
 
 ## Feito por IA
 

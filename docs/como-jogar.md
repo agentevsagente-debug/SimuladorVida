@@ -93,7 +93,7 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 
 ![O botão de esconder, com a dica "Esconder (H)"](imagens/esconder.png)
 
-**O tamanho da janela:** Ctrl+2, Ctrl+3 e Ctrl+4, ou a roda do mouse sobre a alça. A escala é sempre inteira, para os pixels não distorcerem. O jogo guarda o tamanho e a posição.
+**O tamanho da janela:** o botão da lupa na alça (clique aumenta, botão direito diminui), Ctrl+2, Ctrl+3 e Ctrl+4, ou a roda do mouse sobre a alça. A escala é sempre inteira, para os pixels não distorcerem. O jogo guarda o tamanho e a posição.
 
 ## 9. Todas as teclas
 
@@ -109,7 +109,8 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 | Espaço | pausa e continua |
 | S | saltar até o próximo acontecimento |
 | Esc | fecha a crônica ou a estante |
-| Ctrl+2, Ctrl+3, Ctrl+4 | tamanho da janela |
+| M | liga e desliga o som |
+| Ctrl+2, Ctrl+3, Ctrl+4 | tamanho da janela (ou a lupa na alça) |
 | Ctrl+Q | sair (o mundo é salvo) |
 
 ## 10. Onde fica o mundo salvo
