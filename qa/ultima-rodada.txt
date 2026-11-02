@@ -34,7 +34,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-012 ok  toda hora da noite tem alguém acordado (0 horas sem ninguém)
    QA-012 ok  toda hora alguém muda de lugar (0 horas paradas em 960)
    QA-010 ok  ninguém na água fora do barco em 960 horas consultadas (0 casos)
-  [tempo] começo do mundo: 2.2 s
+  [tempo] começo do mundo: 2.1 s
 --- cotidiano e tempo ---
   [info] cenas da tarde em 40 dias (sementes 1 e 2): { "sesta": 19, "ensinar": 11, "artesanato": 21 }; dias em que dá para ensinar: 20
    QA-187 ok  a sesta aparece em boa parte dos dias (19 de 40; a API diz cerca de 3 em 5)
@@ -52,7 +52,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-013 ok  algum conflito social (ataque 0, rixa 10, separação 1)
    QA-014 ok  em 100 anos, lugares com nome: ["Lago do Raio", "Praia da Fome", "Praia da Vitória", "Floresta da Fome"]
    QA-015 ok  112 dicas de gente acordada, 0 com problema
-  [tempo] cotidiano e tempo: 1.8 s
+  [tempo] cotidiano e tempo: 1.7 s
 --- poderes ---
    QA-020 ok  chuva funciona no primeiro dia (milagre)
    QA-026 ok  chuva: evento chuva_divina com x, grau e intensidade, camada nota
@@ -131,7 +131,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-052 ok  sacerdotes falam pelo deus (édito 3, sacerdote 21)
   [info] religião em 100 anos: ["crenca=1", "edito=3", "silencio=4", "secularizacao=0", "profeta=0", "renascimento=0", "prece=149", "prece_atendida=115", "prece_sem_resposta=34"]
    QA-054 ok  a fé varia de pessoa para pessoa: 52 valores em 80 crentes
-  [tempo] preces: 4.1 s
+  [tempo] preces: 4.3 s
 --- religião e culturas ---
    QA-050 ok  milagres fazem nascer a crença em 2 dias: «o Que Ergue»
    QA-051 ok  120 anos: dois povos sem parentesco nunca chamam o deus igual (0 casos; )
@@ -151,11 +151,11 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-074 ok  nenhuma construção de estágio que o povo não tem (0 casos)
    QA-073 ok  Koil escreve a própria crônica
    QA-072 ok  Peak perde pedra (5 mortos) e volta do 3 ao 2
-  [info] primeira consulta depois do salto de 250 anos: 211 ms (API: ~100 ms, um momento de carregamento)
-  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 13 ms", "23h 3 ms", "0h 2 ms", "1h 2 ms", "2h 2 ms", "3h 1 ms", "4h 1 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
-   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 13.1 ms, com 258 pessoas)
-   QA-176 ok  carregar e avançar um ano no mundo de 250 anos: 0.3 s
-  [tempo] estágios e mundo longo: 23.1 s
+  [info] primeira consulta depois do salto de 250 anos: 90 ms (API: ~100 ms, um momento de carregamento)
+  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 13 ms", "23h 2 ms", "0h 2 ms", "1h 2 ms", "2h 2 ms", "3h 3 ms", "4h 1 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
+   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 12.5 ms, com 258 pessoas)
+   QA-176 ok  carregar e avançar um ano no mundo de 250 anos: 0.4 s
+  [tempo] estágios e mundo longo: 22.8 s
 --- linhagem ---
    QA-080 ok  há uma pessoa acompanhada, viva (2)
    QA-082 ok  acompanhar quem não existe é recusado
@@ -181,12 +181,12 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-097 ok  a extinção na ausência vem nos chamados: ["linhagem", "extincao_grupo", "fim_do_mundo"]
    QA-097 ok  o mundo volta vazio, com o livro fechado
   [info] relato da extinção: ### Ano 11  Ortoim, que falava pelo Que Sacode em Toan, morreu de febre aos 34 anos. Foi quem deu ao deus o nome de «o Que Sacode». Suim, que guiava Toan, morreu de febre aos 39 anos. Foi quem descobriu que semente vira planta. Suim morreu sem ensinar o que sabia. O saber de plantar morreu com ele. Não restou ninguém em Toan. A Primeira Era terminou no ano 11, e o mundo ficou vazio, com o vento 
-  [tempo] ausência: 0.1 s
+  [tempo] ausência: 0.2 s
 --- persistência ---
    QA-100 ok  salvar
    QA-100 ok  carregar
    QA-100 ok  o mundo carregado segue igual ao que nunca parou, 10 anos depois
-   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793592456)
+   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793595252)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
@@ -519,7 +519,7 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-111 ok  6 cargas do mesmo arquivo: o mesmo sorteio no fim (1 estados)
    QA-111 ok  e a mesma crônica (1 textos diferentes)
    QA-110 --  pulado: o arquivo dos antigos só nasce depois de 300 anos; coberto por testar_persistencia.gd e testar_antigos.gd da A
-  [tempo] persistência: 1.1 s
+  [tempo] persistência: 1.2 s
 --- fim do mundo ---
    QA-120 ok  o deus acaba com o povo só com raios: 12 raios em 2 dias (restam 0)
    QA-121 ok  os últimos: chamado ({ "restam": 2 })
@@ -550,7 +550,7 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-141 ok  com outro mundo, o livro continua lá e se lê
    QA-144 ok  dois abandonos, dois livros com ids diferentes (2)
    QA-142 ok  o livro sem o arquivo principal se lê pela cópia
-  [tempo] estante e abandono: 0.2 s
+  [tempo] estante e abandono: 0.1 s
 --- guerra (TDD) ---
    QA-034 ok  terra erguida de milagre entre povos em guerra força a trégua (0 guerras antes; eventos ["terra_erguida", "deus_renomeado", "nova_crenca", "lugar_nomeado", "tregua"])
    QA-034 ok  e nasce um lugar com nome: ["Lago da Pedra Erguida", "Lago da Pedra Erguida de Peak"]
@@ -634,7 +634,7 @@ PASSOU QA-095  ok: 5 anos fora avançam só 1 ano (960 passos)
 PASSOU QA-096  ok: carregar e avançar um ano leva 0.01 s
 PASSOU QA-097  ok: o mundo volta vazio, com o livro fechado
 PASSOU QA-100  ok: o mundo carregado segue igual ao que nunca parou, 10 anos depois
-PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793592456)
+PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793595252)
 PASSOU QA-102  ok: mundo cabeçalho trocado: o relato avisa o jogador
 PASSOU QA-103  ok: e carregar_e_avancar também
 PASSOU QA-104  ok: mas existe() continua verdadeiro: a apresentação sabe que havia um mundo
@@ -663,9 +663,9 @@ PASSOU QA-143  ok: o livro da extinção tem epíteto, resumo, capítulos e epit
 PASSOU QA-144  ok: dois abandonos, dois livros com ids diferentes (2)
 PASSOU QA-150  ok: o núcleo não conhece o modo discreto: a crônica é a mesma com ele ligado []
 PASSOU QA-166  ok: a apresentação mostra o número da versão (busca por config/version no código)
-PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 13.1 ms, com 258 pessoas)
+PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 12.5 ms, com 258 pessoas)
 PASSOU QA-174  ok: no máximo 30 quadros por segundo (project.godot)
-PASSOU QA-176  ok: carregar e avançar um ano no mundo de 250 anos: 0.3 s
+PASSOU QA-176  ok: carregar e avançar um ano no mundo de 250 anos: 0.4 s
 PASSOU QA-180  ok: e já aparece na hora seguinte ao ataque (vista na hora 9)
 PASSOU QA-181  ok: a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, qa/*, *.md")
 PASSOU QA-182  ok: nenhuma ferramenta de teste apaga a estante real do jogador (apagam: [])
@@ -674,4 +674,4 @@ PASSOU QA-186  ok: a crônica do mundo vazio tem texto
 PASSOU QA-187  ok: quem está deitado na sesta tem o detalhe sesta (48 de 48)
 ====================================================
 Cenários testados: 105 | PASSOU: 102 | FALHOU: 0 | PULADO: 3
-  [tempo] bateria: 35.4 s
+  [tempo] bateria: 35.1 s

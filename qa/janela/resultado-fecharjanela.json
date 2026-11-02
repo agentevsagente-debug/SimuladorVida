@@ -9,7 +9,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  false,
-        "salvando_em_segundo_plano":  false,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -22,7 +22,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  false,
-        "salvando_em_segundo_plano":  true,
+        "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
     {
@@ -61,7 +61,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  false,
-        "salvando_em_segundo_plano":  false,
+        "salvando_em_segundo_plano":  true,
         "erros":  ""
     },
     {
@@ -74,7 +74,7 @@
         "salvou":  true,
         "threads_encerradas":  true,
         "atalho_registrado":  false,
-        "salvando_em_segundo_plano":  true,
+        "salvando_em_segundo_plano":  false,
         "erros":  ""
     },
     {

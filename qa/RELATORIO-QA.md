@@ -4,7 +4,7 @@
 
 ## Números
 
-*Rodada de 02/11/2026 na main `e27d489` (versão 0.2.0, com o som). Rodaram a bateria do núcleo, os cenários do som sem tela, os 13 cenários em janela (sem o mouse real e com o jogo calado) e os testes novos da lupa, escritos antes do botão.*
+*Rodada de fechamento da 0.2.0, em 02/11/2026, na main `2a516d8` (a tag `v0.2.0` está no `1471190`; depois dele, só documentação e QA). Rodaram a bateria do núcleo, o som e a lupa sem tela e os 13 cenários em janela (sem o mouse real e com o jogo calado). O QA-194 foi rodado pela B, com janela de verdade. O QA-205 rodou com a janela de verdade, depois que o usuário liberou o PC.*
 
 | | Quantos |
 |---|---|
@@ -13,11 +13,13 @@
 | Automatizados com o jogo inteiro sem tela (`jogo/qa/som/testar_som.gd`, `jogo/qa/lupa/testar_lupa.gd`) | 15 |
 | Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 13 |
 | Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **123** |
-| **Falham** | **5**, todos da lupa (QA-200, QA-201, QA-202, QA-203, QA-204): o botão ainda não existe (TDD) |
-| Pulados | 5 (QA-053, QA-110, QA-127, QA-194, QA-205): três por condição rara nas sementes; o QA-194 e o QA-205 precisam da janela de verdade com o PC livre |
+| **Passam** | **130** |
+| **Falham** | **0** |
+| Pulados | 3 (QA-053, QA-110, QA-127): por condição rara nas sementes |
 
-**Na versão 0.2.0:** fora a lupa, que ainda não foi feita, **nada falha**. O núcleo dá 102 passam e 0 falham; o som dá 8 passam e 0 falham (o QA-194 fica para quando o PC estiver livre), como a B mediu; os 13 cenários em janela passam.
+**A 0.2.0 fecha sem nenhuma falha.**
+- O núcleo dá 102 passam; o som, 9 de 9 (o QA-194 pela B); a lupa, 6 de 6 (o QA-205 com a janela de verdade, com o PC liberado pelo usuário: 24 mudanças de escala nos 4 cantos, nenhuma fora da tela); os 13 cenários em janela passam.
+- Leveza em 1x, visível e calado: o mundo novo fica em 5,64% de um núcleo (pico de 7,79%) e o de 200 anos em 5,52% (pico de 9,35%), com 241 e 289 MB. O som custa −0,09% de um núcleo e 2,7 MB (QA-197, 3 pares): dentro do ruído.
 
 **Por área:**
 
@@ -39,13 +41,13 @@
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 6 | 0 | 0 | 1 |
 | Robustez da API e cenas (achados durante a leitura) | 5 | 5 | 0 | 0 | 0 |
-| Som | 10 | 9 | 0 | 1 | 0 |
-| Lupa | 6 | 0 | 5 | 1 | 0 |
-| **Total** | **142** | **123** | **5** | **5** | **9** |
+| Som | 10 | 10 | 0 | 0 | 0 |
+| Lupa | 6 | 6 | 0 | 0 | 0 |
+| **Total** | **142** | **130** | **0** | **3** | **9** |
 
 **Os defeitos e a situação de cada um:**
 
-| # | Defeito | Gravidade | Bloqueia a 0.1 | Área | Situação na main `e27d489` |
+| # | Defeito | Gravidade | Bloqueia a 0.1 | Área | Situação na main `2a516d8` (0.2.0) |
 |---|---|---|---|---|---|
 | D-01 | Os testes do núcleo escreviam e apagavam a estante real do jogador | alta | prioridade | A | **corrigido**: os mundos de teste guardam os livros em `<nome>.estante`; QA-109 e QA-182 passam |
 | D-02 | O raio e o sonho acertavam onde a pessoa estaria no fim da hora | alta | sim | A, B | **corrigido**: o núcleo mira pelo minuto (QA-027: 100% dos toques), e a interface passa o minuto e quem está sob o cursor (QA-185 passa) |
@@ -65,7 +67,7 @@
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
-**Nesta rodada, também:**
+**Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
 - **O som não pesa (QA-197):** mesmo mundo às 17h, em 1x, visível, 3 pares de 90 s. Com `--som-inaudivel` (tudo toca e é mixado, a −80 dB, para não fazer barulho no PC do usuário) contra `--sem-som`:
   - nos três pares, o som custa −0,04%, +0,19% e +2,22% de um núcleo (3,06 contra 3,10; 3,17 contra 2,98; 4,83 contra 2,61);
   - a média é 0,79% e a mediana 0,19%, abaixo do limite de 1%; o terceiro par destoa, com a máquina ocupada pelas outras sessões;
@@ -529,7 +531,7 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 
 *Escritos em 01/11/2026, na main `8a2f13a`, antes de A, B e C começarem o som. Os cenários são QA-188 a QA-197 (área 17 da matriz).*
 
-**Na main `e27d489` (0.2.0): 9 passam, 0 falham e 1 pulado** (o QA-197 em janela; o QA-194 espera o PC livre). A tabela abaixo é a de antes do som, em `8a2f13a`, quando todos falhavam pelo motivo esperado.
+**Na 0.2.0 (main `2a516d8`): os 10 passam.** O QA-194 passou com a B, numa janela de verdade: o som calou em 0,6 s ao minimizar. Nesta rodada, eu não o repeti, porque ele abre e minimiza uma janela no PC do usuário. A tabela abaixo é a de antes do som, em `8a2f13a`, quando todos falhavam pelo motivo esperado.
 
 **Na 0.2.0, o que os testes viram:** o volume inicial em −12 dB; a escolha gravada como `moldura/som`; com o som ligado, os seis poderes tocaram 11 players, 2 deles pesados; no modo discreto, 9 e nenhum pesado; com o som desligado, nenhum audível, nem no quadro em que foi desligado.
 
@@ -569,7 +571,7 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 
 **Na main `e27d489`: 0 passam, 5 falham e 1 pulado.** Todos falham pelo motivo esperado: não há botão `lupa` na alça.
 
-**Na branch da B (`1471190`, ainda fora da main): 5 passam, 0 falham e 1 pulado.** Rodei numa cópia temporária da branch, sem tela:
+**Na 0.2.0 (main `2a516d8`): os 6 passam.** O QA-205 rodou numa janela de verdade, posta pelo teste nos 4 cantos da área útil: em 24 mudanças de escala, ela nunca saiu da tela. Antes, na branch da B (`1471190`), numa cópia temporária, sem tela:
 - os cliques esquerdos dão 2x → 3x → 4x → 2x, e os direitos 2x → 4x → 3x → 2x;
 - a dica diz "Tamanho: 3x (Ctrl+2, 3, 4) / Botão direito diminui";
 - a escala volta em 3x e em 4x depois de fechar e abrir (janela de 1440 × 534 e 1920 × 712), e com `--sem-config` nada é gravado.
