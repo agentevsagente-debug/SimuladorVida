@@ -32,6 +32,8 @@ extends Node2D
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
 ##   --livro-arquivo=CAMINHO[:PÁGINA]     abre um livro em markdown no leitor da estante (testes)
 ##   --discreto                           liga o modo discreto (D, no jogo): o pior fica só na crônica
+##   --com-som                            com --sem-config, liga o som (os testes são mudos por padrão)
+##   --alternar-som=S                     aperta o botão de som depois de S segundos (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
@@ -62,6 +64,8 @@ var _sair_salvando := false  # --sair-salvando: ao fim de --duracao, sai durante
 var _atalho_saida: FileAccess
 var _atalho_leitor: Thread
 var _largura_alca := 0
+var som: Node                  # o som (apresentacao/som.gd): os barramentos, o ambiente e os acontecimentos
+var _minimizada := false
 
 @onready var vista: Node2D = $Recorte/Vista
 @onready var interface: Node2D = $Interface
@@ -84,6 +88,10 @@ func _ready() -> void:
 		RenderingServer.get_video_adapter_name(), DisplayServer.screen_get_dpi(tela)])
 
 	interface.criar(vista)
+	som = preload("res://apresentacao/som.gd").new()
+	add_child(som)
+	som.criar(vista)
+	interface.som_alternar.connect(_alternar_som)
 	interface.largura_mudou.connect(_aplicar_passagem_mouse)
 	interface.arrastar.connect(_arrastar)
 	interface.esconder.connect(esconder)
@@ -105,6 +113,13 @@ func _ready() -> void:
 			vista.sim.definir_ritmo(r)
 		_mostrar_ausencia()
 	vista.modo_discreto = args.has("discreto") or (_usar_config and bool(config.get_value("moldura", "discreto", false)))
+	# o som: a escolha guardada; nos testes (--sem-config), mudo, a menos que venha --com-som
+	som.definir_ligado(bool(config.get_value("moldura", "som", true)) if _usar_config else args.has("com-som"))
+	interface.som_ligado = som.ligado
+	if vista.sim:
+		vista.sim.eventos_novos.connect(_sons_dos_eventos)
+	if args.has("alternar-som"):  # teste: aperta o botão de som depois de S segundos
+		get_tree().create_timer(float(args["alternar-som"])).timeout.connect(_alternar_som)
 	var nova: int = config.get_value("moldura", "escala", _escala_pela_tela(tela))
 	if args.has("escala"):
 		nova = int(args["escala"])
@@ -206,6 +221,27 @@ func _mostrar_ausencia() -> void:
 
 
 var _mem_feito := false
+
+
+## O botão de som da alça e a tecla M: liga e desliga na hora, e a escolha fica guardada.
+func _alternar_som() -> void:
+	som.definir_ligado(not som.ligado)
+	interface.som_ligado = som.ligado
+	interface._avisar("Som ligado" if som.ligado else "Som desligado (M liga de novo)")
+	interface._montar_botoes()
+	_log("som %s" % ("ligado" if som.ligado else "desligado"))
+	_guardar_config()
+
+
+## Os acontecimentos do núcleo que têm som, no x de onde aconteceram.
+func _sons_dos_eventos(eventos: Array) -> void:
+	if som.calado():
+		return
+	for ev in eventos:
+		var dados: Dictionary = ev.get("dados", {}) if ev.get("dados", {}) is Dictionary else {}
+		som.tocar(String(ev.get("tipo", "")), float(dados.get("x", 240.0)))
+
+
 func _process(delta: float) -> void:
 	if OS.has_environment("MEMORIA") and not _mem_feito and Time.get_ticks_msec() > 15000:
 		_mem_feito = true
@@ -220,6 +256,13 @@ func _process(delta: float) -> void:
 		vista.sim.salvamento_falhou = false
 		_log("salvamento falhou")
 		interface._avisar("Não deu para salvar o mundo: o disco está cheio? O salvo antes continua lá.")
+	var minimizada := get_window().mode == Window.MODE_MINIMIZED
+	if minimizada != _minimizada:  # minimizada por fora (Win+D, a barra de tarefas): mudo também
+		_minimizada = minimizada
+		som.definir_escondida(escondida or minimizada)
+	if not escondida and vista.sim:
+		som.discreto = vista.modo_discreto
+		som.avancar(delta, vista.estado_do_som())
 	# Se o jogador restaurar a janela pela barra de tarefas, volta a desenhar.
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
@@ -284,6 +327,7 @@ func _acompanhar(id: int) -> void:
 func esconder() -> void:
 	if escondida:
 		return
+	som.definir_escondida(true)  # o som se cala na hora, mesmo antes do aviso da primeira vez
 	if _usar_config and not interface.ja_escondeu() and not _avisou_esconder:
 		# na primeira vez, a alça diz como voltar e só então a janela some (auditoria 8, P7)
 		_avisou_esconder = true
@@ -304,6 +348,7 @@ func mostrar() -> void:
 	if not escondida:
 		return
 	escondida = false
+	som.definir_escondida(_minimizada)
 	Engine.max_fps = FPS_VISIVEL
 	RenderingServer.render_loop_enabled = true
 	if get_window().mode == Window.MODE_MINIMIZED:
@@ -443,6 +488,7 @@ func _guardar_config() -> void:
 	config.load(ARQUIVO_CONFIG)  # guarda junto o que já havia (as dicas feitas)
 	config.set_value("moldura", "escala", escala)
 	config.set_value("moldura", "discreto", vista.modo_discreto)
+	config.set_value("moldura", "som", som.ligado)
 	config.set_value("moldura", "posicao", get_window().position)
 	if vista.sim:
 		config.set_value("moldura", "ritmo", Simulacao.NOME_RITMO[vista.sim.ritmo])

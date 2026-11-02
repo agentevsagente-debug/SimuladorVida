@@ -389,6 +389,15 @@ func _atualizar_convite() -> void:
 		_sinais.marcas = _sinais.marcas.filter(func(m): return m.folha != "convite_povo_4q")
 
 
+## O que o som precisa saber do ambiente (moldura -> som.avancar).
+func estado_do_som() -> Dictionary:
+	var clima := String(_estado[3]) if _estado.size() > 3 else ""
+	if clima == "" and sim and sim.clima.get("chuva", false):
+		clima = "chuva"
+	return {"hora": _hora(), "clima": clima, "estacao": estacao_atual(), "pessoas": figuras.size(),
+		"fogos": _fogos.size()}
+
+
 func _ao_trocar_mundo() -> void:
 	_vida = Vida.new(self, sim)
 	seguindo = false

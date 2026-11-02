@@ -123,8 +123,8 @@ function Tentar([scriptblock]$acao, [scriptblock]$feito, [int]$espera = 800) {
 
 # 3b. O gesto de um poder, com o mouse de verdade: abre os poderes na alça,
 # escolhe o raio (2º botão da fileira aberta), segura 1,5 s sobre o céu e solta.
-$abertos = Linhas 'alca largura=354'
-$t1 = Tentar { [Win32]::Clicar($X + 18 * $k, $Y + 9 * $k) } { (Linhas 'alca largura=354') -gt $abertos }
+$abertos = Linhas 'alca largura=371'
+$t1 = Tentar { [Win32]::Clicar($X + 18 * $k, $Y + 9 * $k) } { (Linhas 'alca largura=371') -gt $abertos }
 $t2 = Tentar { [Win32]::Clicar($X + (10 + 17 + 8) * $k, $Y + 9 * $k) } { (Linhas 'poder escolhido: raio') -gt 0 }
 $t3 = Tentar { [Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500) } { (Linhas 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)') -gt 0 } 600
 $gesto = Select-String -Path $log -Pattern 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)' | Select-Object -First 1
@@ -153,6 +153,12 @@ $r3 = Retangulo $h
 Registrar 'roda na alca (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bottom - $r3.Top) -eq 534)) ("janela {0}x{1} (tentativas: {2})" -f ($r3.Right - $r3.Left), ($r3.Bottom - $r3.Top), $t5)
 $hFaixa3 = [Win32]::RaizEm($r3.Left + 300 * 3, $r3.Top + 8 * 3)
 Registrar 'passagem refeita em 3x' ($hFaixa3 -ne $h) ''
+
+# 5b. O botão de som (o 11º, depois do esconder): o teste abre mudo (--sem-config), então
+# liga e desliga de novo, na hora, e termina calado.
+$t7 = Tentar { [Win32]::Clicar($r3.Left + 188 * 3, $r3.Top + 9 * 3) } { (Linhas 'som ligado') -gt 0 }
+$t8 = Tentar { [Win32]::Clicar($r3.Left + 188 * 3, $r3.Top + 9 * 3) } { (Linhas 'som desligado') -gt 0 }
+Registrar 'som: liga e desliga' ($t7 -gt 0 -and $t8 -gt 0) "botão de som (tentativas: $t7, $t8)"
 
 # 6. Esconder pelo botão (o décimo da alça: poderes, 5 ritmos, crônica, estante, linhagem, esconder).
 $t6 = Tentar { [Win32]::Clicar($r3.Left + 171 * 3, $r3.Top + 9 * 3) } { (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h) }

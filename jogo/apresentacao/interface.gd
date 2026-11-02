@@ -17,6 +17,7 @@ signal esconder
 signal escala(delta: int)
 signal ritmo_mudou
 signal dica_feita(feitas: Array)
+signal som_alternar  # o botão de som e a tecla M
 signal preferencia_mudou  # o modo discreto (guardado no moldura.cfg)
 
 const Arte = preload("res://apresentacao/arte.gd")
@@ -115,6 +116,7 @@ var _estante: Node2D
 var _dicas_feitas: Array = []
 var _dicas_ligadas := false
 var _proxima_dica_em := 0.0
+var som_ligado := true            # o estado do som (a moldura manda): o ícone do botão
 var _fila_dicas: Array = []   # os nomes ainda não feitos, na ordem em que aparecem
 var _dica_desde := 0.0        # quando a dica da frente apareceu
 
@@ -124,7 +126,7 @@ func criar(p_vista: Node2D) -> void:
 	vista._interface = self
 	_alca = Arte.textura("interface/alca_9s.png")
 	_botao = Arte.textura("interface/botao_3q.png")
-	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante"]:
+	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante", "som", "som_mudo"]:
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
 		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
 	for cor in ["clara", "escura", "dourada", "titulo"]:
@@ -169,6 +171,8 @@ func _montar_botoes() -> void:
 	if not _mundo_vazio():  # sem ninguém vivo, não há linhagem para seguir
 		lista.append({"id": "linhagem", "icone": "linhagem", "selecionado": vista.seguindo})
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
+	# por último, para não mudar o lugar dos outros: o alto-falante, ligado ou cortado
+	lista.append({"id": "som", "icone": "som" if som_ligado else "som_mudo", "selecionado": false})
 	var antes := botoes.size()
 	botoes = []
 	for i in lista.size():
@@ -229,6 +233,9 @@ func _apertar(id: String) -> void:
 		_avisar(_texto_linhagem())
 	elif id == "esconder":
 		esconder.emit()
+	elif id == "som":
+		som_alternar.emit()
+		return  # a moldura remonta a alça com o ícone novo
 	_montar_botoes()
 
 
@@ -398,6 +405,8 @@ func tecla(keycode: int) -> bool:
 			alternar_estante()
 		KEY_L:
 			_apertar("linhagem")
+		KEY_M:
+			som_alternar.emit()
 		KEY_D:
 			vista.modo_discreto = not vista.modo_discreto
 			_avisar("Modo discreto ligado: o pior fica só na crônica" if vista.modo_discreto else "Modo discreto desligado")
@@ -546,6 +555,11 @@ func _usar_poder() -> void:
 	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade(), sob_id,
 		vista.sim.fracao() * 60.0)
 	print("[interface] poder %s em x=%d intensidade=%.2f -> %s" % [poder, _carga_ponto.x, intensidade(), r])
+	if r.get("ok", false) and vista.get_parent().get_parent().get("som") != null:
+		var som: Node = vista.get_parent().get_parent().som
+		som.tocar(PODER_NUCLEO[poder], _carga_ponto.x)
+		if r.get("grau", "") == "milagre":
+			som.tocar("milagre", _carga_ponto.x)
 	if r.get("ok", false):
 		marcar_dica("poder")
 		var alvo := ""
@@ -817,7 +831,7 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 	else:
 		nome = {"poderes": "Poderes", "ritmo": "Ritmo do tempo", "cronica": "Crônica (C)",
 			"criar_povo": "Criar um povo novo", "estante": "Estante de crônicas (E)",
-			"linhagem": "Seguir a linhagem (L)", "esconder": "Esconder (H)"}.get(id, "")
+			"linhagem": "Seguir a linhagem (L)", "esconder": "Esconder (H)", "som": "Som (M)"}.get(id, "")
 	_mostrar_dica([nome], -1, canto + Vector2(4, 22), false)
 
 
