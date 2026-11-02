@@ -85,7 +85,7 @@ Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para
 - **[Tempo e evolução](docs/tempo-e-evolucao.md):** quanto dura um dia, uma estação e um ano em cada velocidade, e quanto tempo um povo leva para chegar a cada estágio.
 - **[Mecânicas](docs/mecanicas.md):** os 11 poderes e as intensidades, preces, religião, culturas, linhagem, fim do mundo e modo discreto.
 - **[Como foi feito](docs/como-foi-feito.md):** a linha do tempo, a arquitetura, a arte, as auditorias, o QA e as medições de leveza.
-- **[Notas da versão 0.1.1](docs/NOTAS-DA-VERSAO-0.1.1.md):** o que tem, os problemas conhecidos e como relatar um erro.
+- **[Notas da versão 0.1.2](docs/NOTAS-DA-VERSAO-0.1.2.md):** o que tem, os problemas conhecidos e como relatar um erro.
 
 ## Feito por IA
 
