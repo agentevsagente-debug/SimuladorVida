@@ -27,7 +27,7 @@ var baloes: Array = []  # [{x, base, variacao, espelho}] balões de fala sobre a
 var bichos: Array = []  # [{folha, largura, x, base, quadro, espelho}] bichos da madrugada, já em tons de noite
 ## folha da pessoa -> variação do balão: 0 fala, 1 história, 2 pensamento, 3 coração, 4 raiva
 const BALOES := {"acoes/conversar_falar_4q": 0, "acoes/contar_historia_4q": 1, "acoes/vigia_2q": 2,
-	"acoes/mae_bebe_parado_2q": 3, "acoes/discutir_4q": 4, "acoes/criancas_brigar_4q": 4}
+	"acoes/mae_bebe_parado_2q": 3, "acoes/discutir_4q": 4, "acoes/criancas_brigar_4q": 4, "acoes/ralhar_2q": 4}
 ## por quanto tempo o balão aparece, de quanto em quanto tempo (s), por variação
 const RITMO_BALAO := [[2.0, 4.5], [2.5, 4.5], [2.5, 6.0], [2.0, 7.0], [1.5, 3.5]]
 const MAX_BALOES := 3
@@ -115,9 +115,10 @@ func _baloes(figuras: Array, relogio: float) -> void:
 	for f in figuras:
 		if baloes.size() >= MAX_BALOES:
 			break
-		if f.id < 0 or not BALOES.has(f.folha):
+		var folha_b: String = "acoes/" + String(f.folha).get_file()  # com a roupa do estágio também
+		if f.id < 0 or not BALOES.has(folha_b):
 			continue
-		var v: int = BALOES[f.folha]
+		var v: int = BALOES[folha_b]
 		if f.folha == "acoes/vigia_2q" and f.quadro != 1:
 			continue  # só o vigia cochilando pensa
 		var r: Array = RITMO_BALAO[v]
