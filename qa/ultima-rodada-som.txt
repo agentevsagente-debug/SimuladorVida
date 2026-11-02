@@ -1,13 +1,13 @@
 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
-[etapa estatico] 0.2 s
-[etapa inicial] 7.6 s
+[etapa estatico] 0.3 s
+[etapa inicial] 8.0 s
   [som-qa] desligado com M antes de fechar: Master mudo=true volume=-12.0 dB; moldura.cfg tem ["moldura/som=false"]
-[etapa reabrir] 2.6 s
+[etapa reabrir] 2.5 s
   [som-qa] religado com M antes de fechar: Master mudo=false volume=-12.0 dB
-[etapa reabrir2] 0.9 s
+[etapa reabrir2] 1.1 s
 [etapa ligado] 58.8 s
   [som-qa] som ligado, seis poderes: { "tocou": 11, "audivel": 11, "pesado": 2, "pesado_audivel": 2, "nomes": ["@AudioStreamPlayer@41", "@AudioStreamPlayer@42", "@AudioStreamPlayer@43", "@AudioStreamPlayer@45", "@AudioStreamPlayer@49", "@AudioStreamPlayer2D@51", "@AudioStreamPlayer2D@52", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56"] }
-[etapa discreto] 27.3 s
+[etapa discreto] 27.4 s
   [som-qa] modo discreto, seis poderes: { "tocou": 9, "audivel": 9, "pesado": 0, "pesado_audivel": 0, "nomes": ["@AudioStreamPlayer@41", "@AudioStreamPlayer@42", "@AudioStreamPlayer@43", "@AudioStreamPlayer@45", "@AudioStreamPlayer@49", "@AudioStreamPlayer2D@51", "@AudioStreamPlayer2D@52", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54"] }
 PASSOU QA-188  o jogo exportado tem driver de áudio (não o Dummy)
       [estatico] PASSOU project.godot [audio]: padrão (WASAPI)
