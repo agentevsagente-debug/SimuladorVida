@@ -33,6 +33,7 @@
 | QA-016 | **Dado** o tempo, **então** um dia de jogo dura cerca de 45 minutos reais no ritmo normal, com cerca de 26 de dia e 19 de noite (a noite vai das 20h às 6h). | FUN Tempo (desde f87b764), TEC Tempo | N | AN |
 | QA-017 | **Dado** um ano, **então** tem 40 dias e 4 estações de 10 dias. | FUN Tempo | B | AN |
 | QA-018 | **Dado** o jogo aberto, **quando** o jogador pede o salto, **então** o mundo avança até o próximo acontecimento de camada nota ou chamado. | FUN Tempo | N | AJ |
+| QA-187 | **Dado** 20 dias comuns, **então** o começo da tarde tem as cenas da A: a sesta (em cerca de 2 em 3 dias), o artesanato (cerca de 7 em 10) e o ensinar quando há criança de 8 a 13 anos e alguém de 35 ou mais; quem dorme na sesta está `deitar` com o detalhe `sesta`. | API (6442746), FUN "Virar papel de parede" | N | AN |
 | QA-019 | **Dado** o jogo, **então** há o ritmo normal, 10x e 50x, e a pausa. | FUN Tempo | N | M |
 
 ## 3. Os 11 poderes e as 3 intensidades

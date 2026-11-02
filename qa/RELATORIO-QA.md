@@ -16,6 +16,8 @@
 | **Falham** | **1**: o QA-186, o erro novo achado pelo fuzz (D-16) |
 | Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
 
+**Na branch da A (`38dadcd`, ainda fora da main):** a bateria dá **101 passam, 0 falham e 3 pulados** em 104 cenários. O QA-186 (D-16) passa, e o D-07 está resolvido (abaixo). O QA-187, novo, entra depois e fica à espera do D-17.
+
 **Por área:**
 
 | Área | Cenários | Passam | Falham | Pulados | Manuais, não rodados |
@@ -48,7 +50,7 @@
 | D-04 | Sem número de versão | média | sim | B | **corrigido** (versão 0.1.0; QA-166 passa) |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **corrigido** na main `50e5636` (QA-105 passa) |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **corrigido** na main `50e5636` (QA-111 passa) |
-| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **corrigido na branch da A** (`38dadcd`): a rotina é montada por povo, em paralelo. Na minha sonda, com 258 pessoas, nenhuma espera pela thread com 300 ms entre passos (antes, 600 e 1095 ms), passos de 1 a 4 ms, e a primeira consulta depois do salto de 250 anos em 95 ms (antes, de 1017 a 1253 ms), com a máquina a 17% de carga. Antes disso, estava **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
 | D-08 | O mundo velho passava de 8% de um núcleo | média | não | B | **corrigido**: 7,2% no mundo de 200 anos (QA-172 passa) |
 | D-09 | O mundo novo começava com o povo | média | decidido: começa vazio | A, B | **corrigido**: o jogo abre vazio às 7h, com o convite na clareira, e criar povo abre a Primeira Era (QA-002 passa; `QA-002-comeco.png`) |
 | D-10 | A noite tinha 18,75 min, e o documento dizia 15 | baixa | não | — | **resolvido pelo documento** (QA-016 passa) |
@@ -56,7 +58,8 @@
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A | **corrigido** na main `50e5636` (QA-064 passa) |
 | D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **corrigido** na main `50e5636` (QA-092 passa) |
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
-| D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **aberto** (QA-186 falha); achado pelo fuzz de entrada |
+| D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido na branch da A** (`38dadcd`, QA-186 passa: "No princípio, a região estava vazia…"); à espera do merge |
+| D-17 | O artesanato aparece em 40% dos dias, e a API promete cerca de 7 em 10 | baixa | não | A | **aberto** na branch `38dadcd` (QA-187 falha); na main, as três cenas ainda não existem |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Nesta rodada, também:**
@@ -299,6 +302,22 @@ O registro original fica abaixo.
   - a crônica aparece mesmo assim (com 207 caracteres), mas o erro fica no log.
 - **Esperado:** a crônica do mundo vazio tem um texto próprio ("A região espera…"), sem erro de script.
 - **O resto do mundo vazio está limpo:** as consultas da tela, as dicas, as sugestões, os eventos, um poder, um dia e salvar e carregar não dão erro (QA-186).
+
+### D-17. As cenas novas da tarde aparecem menos do que a API promete
+**Cenário:** QA-187 · **Gravidade:** baixa · **Bloqueia:** não · **Área:** A
+
+- **Passos:** sementes 1 e 2, no ano 4, 20 dias cada; as cenas que acontecem das 12h às 15h59 (`cenas_ativas()` de hora em hora).
+- **Obtido, na branch `38dadcd`:**
+
+  | Cena | Dias com a cena | A API promete |
+  |---|---|---|
+  | `artesanato` | **16 de 40 (40%)** | cerca de 7 em 10 |
+  | `sesta` | 20 de 40 (50%) | cerca de 2 em 3 |
+  | `ensinar` | 8 dos 20 dias em que havia criança de 8 a 13 anos e alguém de 35 ou mais (40%) | cerca de 3 em 5 |
+
+- O artesanato fica bem abaixo: com p = 0,7, 16 ou menos em 40 tem chance de menos de 0,1%. A sesta e o ensinar ficam abaixo, mas dentro da folga do teste (metade da frequência prometida).
+- Quem dorme na sesta está `deitar` com o detalhe `sesta` (44 de 44).
+- **Esperado:** a frequência da API, ou o texto da API ajustado para a frequência real. As três cenas podem estar disputando os mesmos adultos.
 
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.

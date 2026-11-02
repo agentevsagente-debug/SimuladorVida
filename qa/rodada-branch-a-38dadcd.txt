@@ -1,6 +1,6 @@
 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
 
-user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/Godot/app_userdata/Simulador de vida
+user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/app_userdata/Simulador de vida
 --- começo do mundo ---
    QA-001 ok  zonas: ["floresta", "lago", "morro", "praia"]
 [simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
@@ -10,6 +10,17 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-002 ok  um povo de coletores no estágio 1, na zona do gesto (floresta)
    QA-002 ok  é a Primeira Era: nenhum livro fechado e nenhum fim do mundo antes dela (era 1, 0 livros)
    QA-002 ok  há uma pessoa acompanhada desde o começo
+   QA-186 ok  mundo novo vazio, cronica_viva (tecla C): sem erro
+   QA-186 ok  mundo novo vazio, cronica: sem erro
+   QA-186 ok  mundo novo vazio, cronica_em_curso: sem erro
+   QA-186 ok  mundo novo vazio, consultas da tela: sem erro
+   QA-186 ok  mundo novo vazio, dicas (cabana e lugar): sem erro
+   QA-186 ok  mundo novo vazio, sugestoes e linhagem: sem erro
+   QA-186 ok  mundo novo vazio, eventos: sem erro
+   QA-186 ok  mundo novo vazio, um poder no vazio: sem erro
+   QA-186 ok  mundo novo vazio, avançar um dia: sem erro
+   QA-186 ok  mundo novo vazio, salvar e carregar: sem erro
+   QA-186 ok  a crônica do mundo vazio tem texto
    QA-003 ok  cerca de 12 pessoas (12)
    QA-003 ok  um povo, no estágio 1
    QA-003 ok  sem religião: nome do deus vazio
@@ -35,10 +46,10 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-013 ok  algum conflito social (ataque 0, rixa 10, separação 1)
    QA-014 ok  em 100 anos, lugares com nome: ["Lago do Raio", "Praia da Fome", "Praia da Vitória", "Floresta da Fome"]
    QA-015 ok  112 dicas de gente acordada, 0 com problema
-  [tempo] cotidiano e tempo: 4.7 s
+  [tempo] cotidiano e tempo: 1.1 s
 --- poderes ---
    QA-020 ok  chuva funciona no primeiro dia (milagre)
-   QA-026 NÃO chuva: evento chuva_divina com x, grau e intensidade, camada ambiente
+   QA-026 ok  chuva: evento chuva_divina com x, grau e intensidade, camada nota
    QA-020 ok  raio funciona no primeiro dia (milagre)
    QA-026 ok  raio: evento raio_divino com x, grau e intensidade, camada nota
    QA-020 ok  fartura funciona no primeiro dia (milagre)
@@ -58,7 +69,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-020 ok  pressagio funciona no primeiro dia (milagre)
    QA-026 ok  pressagio: evento pressagio com x, grau e intensidade, camada nota
    QA-020 ok  cura funciona no primeiro dia (milagre)
-   QA-026 NÃO cura: evento cura com x, grau e intensidade, camada ambiente
+   QA-026 ok  cura: evento cura com x, grau e intensidade, camada nota
    QA-021 ok  chuva 0.000 → sinal (veio sinal)
    QA-021 ok  chuva 0.200 → sinal (veio sinal)
    QA-021 ok  chuva 0.499 → sinal (veio sinal)
@@ -72,10 +83,13 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-025 ok  poder desconhecido recusado: poder desconhecido: praga
    QA-028 ok  raio de sinal não mata ninguém (12 → 12)
    QA-027 ok  raio de milagre no x do fim da hora mata a pessoa (alvo 7)
-  [info] raio, mira pelo fim da hora: 540 pessoas acordadas (8h às 16h, 5 sementes); a mais de 6 px do ponto do fim da hora: 64.0% do tempo andando em linha reta, 50.2% se cada trecho chega logo ao destino; no meio da hora (posicao_de), 363 de 540
-  [info] raio, mira pelo minuto: 10800 de 10800 toques acertam quem está sob o dedo (100.0%; 70 em gente sobreposta)
+  [info] raio, mira pelo fim da hora: 540 pessoas acordadas (8h às 16h, 5 sementes); a mais de 6 px do ponto do fim da hora: 63.8% do tempo andando em linha reta, 50.0% se cada trecho chega logo ao destino; no meio da hora (posicao_de), 360 de 540
+  [info] raio, mira pelo minuto: 10800 de 10800 toques acertam quem está sob o dedo (100.0%; 61 em gente sobreposta)
    QA-027 ok  quem se toca na tela é quem o raio acerta, no minuto do toque: 100.0% (meta: 95%)
-   QA-027 ok  usar_poder no minuto 50 acerta quem está ali naquele minuto, longe do ponto do fim da hora (alvo 1, esperado 1)
+   QA-027 ok  usar_poder no minuto 50 acerta quem está ali naquele minuto, longe do ponto do fim da hora (alvo 2, esperado 2)
+[simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
+   QA-185 ok  a interface passa o minuto da hora (fracao() * 60) ao soltar o poder
+   QA-185 ok  o raio pela simulação do jogo, no minuto 50, acerta quem está sob o gesto (alvo 2, esperado 2): a apresentação passa o minuto da hora
    QA-030 ok  a cura de milagre levanta o doente ({ "comando": "", "grau": "milagre", "x": 254.11981612871, "intensidade": 0.8, "repeticao": 0, "curado": 1, "condenado": true, "n": 1 })
    QA-030 ok  a cura imposta cura todos os doentes (0 ainda doentes)
    QA-031 ok  todos os povos leem o presságio: { 0: "bom" }
@@ -87,7 +101,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-035 ok  6 chuvas viram dependência (["chuva_divina", "crenca", "costume", "sacerdote", "rixa", "dependencia"])
   [info] sonho de milagre sobre 1: { "comando": "", "grau": "milagre", "x": 254.11981612871, "intensidade": 0.8, "repeticao": 0, "sonhador": 1, "ideia": "agricultura", "aceita": true }
    QA-032 ok  o sonho de milagre acerta uma pessoa sob o gesto
-  [tempo] poderes: 3.7 s
+  [tempo] poderes: 0.6 s
 --- preces ---
   [info] prece de fome: semente 1, ano 11 dia 1
   [info] prece de doenca: semente 1, ano 12 dia 7
@@ -111,7 +125,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-052 ok  sacerdotes falam pelo deus (édito 3, sacerdote 21)
   [info] religião em 100 anos: ["crenca=1", "edito=3", "silencio=4", "secularizacao=0", "profeta=0", "renascimento=0", "prece=149", "prece_atendida=115", "prece_sem_resposta=34"]
    QA-054 ok  a fé varia de pessoa para pessoa: 52 valores em 80 crentes
-  [tempo] preces: 36.6 s
+  [tempo] preces: 4.1 s
 --- religião e culturas ---
    QA-050 ok  milagres fazem nascer a crença em 2 dias: «o Que Ergue»
    QA-051 ok  120 anos: dois povos sem parentesco nunca chamam o deus igual (0 casos; )
@@ -122,20 +136,20 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-062 ok  a crônica registra o nascimento dos povos novos (0 de 3 sem o nome)
    QA-063 ok  15 costumes, todos com o acontecimento de origem (0 sem)
    QA-064 ok  4 povos, 4 aparências diferentes
-   QA-064 NÃO cada povo dá o seu nome ao lugar: 8 nomes de povos vivos, 2 repetidos ["lago: Koil e Peak chamam de «Lago da Vitória»", "morro: Peak e Toran chamam de «Morro da Vitória»"]
+   QA-064 ok  cada povo dá o seu nome ao lugar: 8 nomes de povos vivos, 0 repetidos []
    QA-065 ok  as culturas mudam: cultura 5, reforma 2
-  [tempo] religião e culturas: 9.4 s
+  [tempo] religião e culturas: 1.5 s
 --- estágios e mundo longo ---
    QA-070 ok  agricultura em até 50 anos em 5 sementes (falharam: [])
    QA-071 ok  250 anos: estágio sempre entre 1 e 6 (maior: 6)
    QA-074 ok  nenhuma construção de estágio que o povo não tem (0 casos)
    QA-073 ok  Koil escreve a própria crônica
    QA-072 ok  Peak perde pedra (5 mortos) e volta do 3 ao 2
-  [info] primeira consulta depois do salto de 250 anos: 1270 ms (API: ~100 ms, um momento de carregamento)
-  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 38 ms", "23h 6 ms", "0h 8 ms", "1h 4 ms", "2h 9 ms", "3h 7 ms", "4h 6 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
-   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 38.0 ms, com 258 pessoas)
-   QA-176 ok  carregar e avançar um ano no mundo de 250 anos: 2.4 s
-  [tempo] estágios e mundo longo: 62.3 s
+  [info] primeira consulta depois do salto de 250 anos: 95 ms (API: ~100 ms, um momento de carregamento)
+  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 11 ms", "23h 2 ms", "0h 2 ms", "1h 3 ms", "2h 1 ms", "3h 2 ms", "4h 2 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
+   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.3 ms, com 258 pessoas)
+   QA-176 ok  carregar e avançar um ano no mundo de 250 anos: 0.4 s
+  [tempo] estágios e mundo longo: 22.8 s
 --- linhagem ---
    QA-080 ok  há uma pessoa acompanhada, viva (2)
    QA-082 ok  acompanhar quem não existe é recusado
@@ -145,177 +159,192 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/qa_a/simvida_qa_appdata/God
    QA-082 ok  acompanhar um morto é recusado
   [info] sugestões num mundo de 10 anos sem deus (semente 2): []
    QA-083 ok  depois do sonho, quem sonhou é sugerido (passou a falar pelo deus); 2 sugestões, todas vivas e com motivo
-  [tempo] linhagem: 0.9 s
+  [tempo] linhagem: 0.1 s
 --- ausência ---
    QA-090 ok  16 horas fora = 512 passos (512), 21 dias
-   QA-094 ok  o relato é uma crônica sem modelo vazio (90 caracteres)
-  [info] relato de 16 h: Nesse tempo, ninguém nasceu e ninguém morreu. Toan encheu os cestos para o frio que vinha.
+   QA-094 ok  o relato é uma crônica sem modelo vazio (99 caracteres)
+  [info] relato de 16 h: Nesse tempo, ninguém nasceu e ninguém morreu. Em Toan, juntaram o que o outono dava, antes do frio.
    QA-091 ok  30 dias fora param no teto: 960 passos, teto true
-   QA-092 NÃO exatamente um ano fora: 960 passos, teto atingido = false
+   QA-092 ok  exatamente um ano fora: 960 passos, teto atingido = true
    QA-093 ok  relógio 3 dias para trás: nenhum passo, nada quebra
    QA-093 ok  salvamento um ano «no futuro»: abre, sem avançar
-  [info] relato com 0 passos: «Nesse dia, ninguém nasceu e ninguém morreu. Toan catou, pescou e caçou, como em todo começo de ano.»
+  [info] relato com 0 passos: «Nesse dia, ninguém nasceu e ninguém morreu. Em Toan, colheram frutos e raízes e pescaram, como sempre.»
    QA-093 ok  relato de 0 passos sem modelo vazio
    QA-095 ok  5 anos fora avançam só 1 ano (960 passos)
-   QA-096 ok  carregar e avançar um ano leva 0.04 s
+   QA-096 ok  carregar e avançar um ano leva 0.01 s
    QA-097 ok  a extinção na ausência vem nos chamados: ["linhagem", "extincao_grupo", "fim_do_mundo"]
    QA-097 ok  o mundo volta vazio, com o livro fechado
   [info] relato da extinção: ### Ano 11  Ortoim, que falava pelo Que Sacode em Toan, morreu de febre aos 34 anos. Foi quem deu ao deus o nome de «o Que Sacode». Suim, que guiava Toan, morreu de febre aos 39 anos. Foi quem descobriu que semente vira planta. Suim morreu sem ensinar o que sabia. O saber de plantar morreu com ele. Não restou ninguém em Toan. A Primeira Era terminou no ano 11, e o mundo ficou vazio, com o vento 
-  [tempo] ausência: 0.9 s
+  [tempo] ausência: 0.2 s
 --- persistência ---
    QA-100 ok  salvar
    QA-100 ok  carregar
    QA-100 ok  o mundo carregado segue igual ao que nunca parou, 10 anos depois
-   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793577013)
+   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793582426)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:209)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo cortado ao meio: volta da cópia (user://qa_tmp/corrompido.1.txt)
-WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
-   at: push_warning (core/variant/variant_utility.cpp:1033)
-   GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [3] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [4] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
-       [5] _rodar_tudo (res://qa/rodar_qa.gd:250)
-       [6] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo cortado ao meio: o relato avisa o jogador
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.2.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo vazio: volta da cópia (user://qa_tmp/corrompido.1.txt)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo vazio: o relato avisa o jogador
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.3.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo lixo: volta da cópia (user://qa_tmp/corrompido.1.txt)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo lixo: o relato avisa o jogador
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:209)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.4.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo só o cabeçalho: volta da cópia (user://qa_tmp/corrompido.1.txt)
-WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
-   at: push_warning (core/variant/variant_utility.cpp:1033)
-   GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [3] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [4] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
-       [5] _rodar_tudo (res://qa/rodar_qa.gd:250)
-       [6] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo só o cabeçalho: o relato avisa o jogador
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:209)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.5.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo sem os 10 últimos caracteres: volta da cópia (user://qa_tmp/corrompido.1.txt)
-WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
-   at: push_warning (core/variant/variant_utility.cpp:1033)
-   GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [3] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [4] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
-       [5] _rodar_tudo (res://qa/rodar_qa.gd:250)
-       [6] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo sem os 10 últimos caracteres: o relato avisa o jogador
@@ -343,76 +372,79 @@ Unicode parsing error: Byte cc is not a correct continuation byte after dd
 Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (aa)
 Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (99)
 Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (88)
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.6.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo binário: volta da cópia (user://qa_tmp/corrompido.1.txt)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (fc)
-Unicode parsing error: Byte da is not a correct continuation byte after eb
-Unicode parsing error: Byte c9 is not a correct continuation byte after da
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a7)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (96)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (85)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (fd)
-Unicode parsing error: Byte db is not a correct continuation byte after ec
-Unicode parsing error: Byte ca is not a correct continuation byte after db
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a8)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (97)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (86)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (fe)
-Unicode parsing error: Byte dc is not a correct continuation byte after ed
-Unicode parsing error: Byte cb is not a correct continuation byte after dc
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a9)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (98)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (87)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (ff)
-Unicode parsing error: Byte dd is not a correct continuation byte after ee
-Unicode parsing error: Byte cc is not a correct continuation byte after dd
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (aa)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (99)
-Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (88)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo binário: o relato avisa o jogador
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.7.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1268)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1364)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo cabeçalho trocado: volta da cópia (user://qa_tmp/corrompido.1.txt)
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] carregar_e_avancar (res://nucleo/persistencia.gd:287)
-       [2] _corrompidos (res://qa/rodar_qa.gd:1270)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] carregar_e_avancar (res://nucleo/persistencia.gd:311)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1366)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-102 ok  mundo cabeçalho trocado: o relato avisa o jogador
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/corrompido.ilegivel.8.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _corrompidos (res://qa/rodar_qa.gd:1376)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-103 ok  mundo e 3 cópias estragados: carregar devolve null sem quebrar
    QA-103 ok  e carregar_e_avancar também
 WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] carregar (res://nucleo/persistencia.gd:214)
-       [1] _corrompidos (res://qa/rodar_qa.gd:1288)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1154)
+       [0] carregar (res://nucleo/persistencia.gd:217)
+       [1] _corrompidos (res://qa/rodar_qa.gd:1384)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1250)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-106 ok  sem mundo.txt, só cópias: existe e volta da cópia
@@ -420,49 +452,58 @@ WARNING: Mundo salvo estragado: recuperado de user://qa_tmp/corrompido.1.txt
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/futuro.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:208)
-       [2] _versao_futura (res://qa/rodar_qa.gd:1313)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1156)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:209)
+       [2] _versao_futura (res://qa/rodar_qa.gd:1409)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1252)
+       [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
+       [5] _initialize (res://qa/rodar_qa.gd:51)
+WARNING: Mundo salvo ilegível guardado em user://qa_tmp/futuro.ilegivel.txt
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _guardar_ilegivel (res://nucleo/persistencia.gd:241)
+       [1] carregar (res://nucleo/persistencia.gd:213)
+       [2] _versao_futura (res://qa/rodar_qa.gd:1409)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1252)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/futuro.1.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:212)
-       [2] _versao_futura (res://qa/rodar_qa.gd:1313)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1156)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:215)
+       [2] _versao_futura (res://qa/rodar_qa.gd:1409)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1252)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/futuro.2.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:212)
-       [2] _versao_futura (res://qa/rodar_qa.gd:1313)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1156)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:215)
+       [2] _versao_futura (res://qa/rodar_qa.gd:1409)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1252)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/futuro.3.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
-       [0] _ler_mundo (res://nucleo/persistencia.gd:233)
-       [1] carregar (res://nucleo/persistencia.gd:212)
-       [2] _versao_futura (res://qa/rodar_qa.gd:1313)
-       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1156)
+       [0] _ler_mundo (res://nucleo/persistencia.gd:257)
+       [1] carregar (res://nucleo/persistencia.gd:215)
+       [2] _versao_futura (res://qa/rodar_qa.gd:1409)
+       [3] _bloco_persistencia (res://qa/rodar_qa.gd:1252)
        [4] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [5] _initialize (res://qa/rodar_qa.gd:51)
    QA-104 ok  um mundo de versão futura não é lido (e não volta de uma cópia velha)
    QA-104 ok  mas existe() continua verdadeiro: a apresentação sabe que havia um mundo
-   QA-105 NÃO depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo ([])
+   QA-105 ok  depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo (["futuro.ilegivel.txt"])
    QA-107 ok  salvar_async com o mundo avançando: arquivo válido do passo de antes
 WARNING: Índice da estante refeito a partir dos livros
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
        [0] _refazer_indice (res://nucleo/estante.gd:85)
        [1] livros (res://nucleo/estante.gd:45)
-       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1182)
+       [2] _bloco_persistencia (res://qa/rodar_qa.gd:1278)
        [3] _rodar_tudo (res://qa/rodar_qa.gd:250)
        [4] _initialize (res://qa/rodar_qa.gd:51)
    QA-108 ok  índice e cópias estragados: a estante se refaz com 2 livros
@@ -470,9 +511,9 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-109 ok  o livro vai para a estante do mundo de teste, user://qa_tmp/isolado/mundo.estante (1 livro)
    QA-109 ok  e o mundo do jogador continua com user://estante
    QA-111 ok  6 cargas do mesmo arquivo: o mesmo sorteio no fim (1 estados)
-   QA-111 NÃO e a mesma crônica (2 textos diferentes)
+   QA-111 ok  e a mesma crônica (1 textos diferentes)
    QA-110 --  pulado: o arquivo dos antigos só nasce depois de 300 anos; coberto por testar_persistencia.gd e testar_antigos.gd da A
-  [tempo] persistência: 4.8 s
+  [tempo] persistência: 1.2 s
 --- fim do mundo ---
    QA-120 ok  o deus acaba com o povo só com raios: 12 raios em 2 dias (restam 0)
    QA-121 ok  os últimos: chamado ({ "restam": 2 })
@@ -495,7 +536,7 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-125 ok  povo criado no lago nasce na praia (praia)
    QA-128 ok  o mundo vazio salvo volta vazio, com o livro
    QA-128 ok  e aceita o povo novo depois de carregado
-  [tempo] fim do mundo: 0.8 s
+  [tempo] fim do mundo: 0.1 s
 --- estante e abandono ---
    QA-140 ok  abandonar fecha a crônica como livro: «A Primeira Era: o tempo de Ruar»
    QA-140 ok  o livro vai para a estante do mundo, user://qa_tmp/abandono.estante (1)
@@ -503,22 +544,22 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-141 ok  com outro mundo, o livro continua lá e se lê
    QA-144 ok  dois abandonos, dois livros com ids diferentes (2)
    QA-142 ok  o livro sem o arquivo principal se lê pela cópia
-  [tempo] estante e abandono: 0.5 s
+  [tempo] estante e abandono: 0.1 s
 --- guerra (TDD) ---
    QA-034 ok  terra erguida de milagre entre povos em guerra força a trégua (0 guerras antes; eventos ["terra_erguida", "deus_renomeado", "nova_crenca", "lugar_nomeado", "tregua"])
-   QA-034 ok  e nasce um lugar com nome: ["Lago da Pedra Erguida", "Lago da Pedra Erguida"]
+   QA-034 ok  e nasce um lugar com nome: ["Lago da Pedra Erguida", "Lago da Pedra Erguida de Peak"]
   [info] cena de guerra: ini 8.50, fim 13.00, vista primeiro na hora 9
    QA-180 ok  ataque às 8h: a cena começa às 8.5h (veio 8.50)
    QA-180 ok  e termina às 13.0h (veio 13.00)
    QA-180 ok  e já aparece na hora seguinte ao ataque (vista na hora 9)
-  [tempo] guerra (TDD): 3.4 s
+  [tempo] guerra (TDD): 0.5 s
 --- inspeção do código ---
    QA-150 ok  o núcleo não conhece o modo discreto: a crônica é a mesma com ele ligado []
-   QA-181 NÃO a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, *.md")
+   QA-181 ok  a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, qa/*, *.md")
    QA-182 ok  nenhuma ferramenta de teste apaga a estante real do jogador (apagam: [])
    QA-166 ok  a apresentação mostra o número da versão (busca por config/version no código)
    QA-174 ok  no máximo 30 quadros por segundo (project.godot)
-  [tempo] inspeção do código: 0.2 s
+  [tempo] inspeção do código: 1.0 s
 ================ RESUMO POR CENÁRIO ================
 PASSOU QA-001  ok: zonas: ["floresta", "lago", "morro", "praia"]
 PASSOU QA-002  ok: há uma pessoa acompanhada desde o começo
@@ -539,15 +580,15 @@ PASSOU QA-022  ok: 3ª chuva na mesma zona em 3 dias é imposição: ["sinal", "
 PASSOU QA-023  ok: dias 0, 2 e 4 (4 dias entre o 1º e o 3º): ["sinal", "sinal", "sinal"]
 PASSOU QA-024  ok: x 99999 e intensidade -1 também não quebram
 PASSOU QA-025  ok: poder desconhecido recusado: poder desconhecido: praga
-FALHOU QA-026  NÃO: chuva: evento chuva_divina com x, grau e intensidade, camada ambiente
-PASSOU QA-027  ok: usar_poder no minuto 50 acerta quem está ali naquele minuto, longe do ponto do fim da hora (alvo 1, esperado 1)
+PASSOU QA-026  ok: cura: evento cura com x, grau e intensidade, camada nota
+PASSOU QA-027  ok: usar_poder no minuto 50 acerta quem está ali naquele minuto, longe do ponto do fim da hora (alvo 2, esperado 2)
 PASSOU QA-028  ok: raio de sinal não mata ninguém (12 → 12)
 PASSOU QA-029  ok: fogo 0,35: já queima e contraria a prece (["fogo_divino", "prece_contrariada"])
 PASSOU QA-030  ok: a cura imposta cura todos os doentes (0 ainda doentes)
 PASSOU QA-031  ok: formas: ["cometa", "eclipse", "luzes"]
 PASSOU QA-032  ok: o sonho de milagre acerta uma pessoa sob o gesto
 PASSOU QA-033  ok: dilúvio imposto alaga as 4 zonas: ["lago", "praia", "floresta", "morro"]
-PASSOU QA-034  ok: e nasce um lugar com nome: ["Lago da Pedra Erguida", "Lago da Pedra Erguida"]
+PASSOU QA-034  ok: e nasce um lugar com nome: ["Lago da Pedra Erguida", "Lago da Pedra Erguida de Peak"]
 PASSOU QA-035  ok: 6 chuvas viram dependência (["chuva_divina", "crenca", "costume", "sacerdote", "rixa", "dependencia"])
 PASSOU QA-040  ok: texto «Que Nega, não deixes nossos filhos morrerem de fome.», curto «Rabea pede comida», atendem ["fartura"]
 PASSOU QA-041  ok: e a prece sai de preces_abertas
@@ -567,7 +608,7 @@ PASSOU QA-060  ok: 6 dimensões com valores válidos em 4 povos []
 PASSOU QA-061  ok: cada povo novo tem a origem completa (0 sem)
 PASSOU QA-062  ok: a crônica registra o nascimento dos povos novos (0 de 3 sem o nome)
 PASSOU QA-063  ok: 15 costumes, todos com o acontecimento de origem (0 sem)
-FALHOU QA-064  NÃO: cada povo dá o seu nome ao lugar: 8 nomes de povos vivos, 2 repetidos ["lago: Koil e Peak chamam de «Lago da Vitória»", "morro: Peak e Toran cham
+PASSOU QA-064  ok: cada povo dá o seu nome ao lugar: 8 nomes de povos vivos, 0 repetidos []
 PASSOU QA-065  ok: as culturas mudam: cultura 5, reforma 2
 PASSOU QA-070  ok: agricultura em até 50 anos em 5 sementes (falharam: [])
 PASSOU QA-071  ok: 250 anos: estágio sempre entre 1 e 6 (maior: 6)
@@ -580,24 +621,24 @@ PASSOU QA-082  ok: acompanhar um morto é recusado
 PASSOU QA-083  ok: depois do sonho, quem sonhou é sugerido (passou a falar pelo deus); 2 sugestões, todas vivas e com motivo
 PASSOU QA-090  ok: 16 horas fora = 512 passos (512), 21 dias
 PASSOU QA-091  ok: 30 dias fora param no teto: 960 passos, teto true
-FALHOU QA-092  NÃO: exatamente um ano fora: 960 passos, teto atingido = false
+PASSOU QA-092  ok: exatamente um ano fora: 960 passos, teto atingido = true
 PASSOU QA-093  ok: relato de 0 passos sem modelo vazio
-PASSOU QA-094  ok: o relato é uma crônica sem modelo vazio (90 caracteres)
+PASSOU QA-094  ok: o relato é uma crônica sem modelo vazio (99 caracteres)
 PASSOU QA-095  ok: 5 anos fora avançam só 1 ano (960 passos)
-PASSOU QA-096  ok: carregar e avançar um ano leva 0.04 s
+PASSOU QA-096  ok: carregar e avançar um ano leva 0.01 s
 PASSOU QA-097  ok: o mundo volta vazio, com o livro fechado
 PASSOU QA-100  ok: o mundo carregado segue igual ao que nunca parou, 10 anos depois
-PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793577013)
+PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793582426)
 PASSOU QA-102  ok: mundo cabeçalho trocado: o relato avisa o jogador
 PASSOU QA-103  ok: e carregar_e_avancar também
 PASSOU QA-104  ok: mas existe() continua verdadeiro: a apresentação sabe que havia um mundo
-FALHOU QA-105  NÃO: depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo ([])
+PASSOU QA-105  ok: depois de 4 dias salvos do mundo novo, o mundo ilegível sobrevive em algum arquivo (["futuro.ilegivel.txt"])
 PASSOU QA-106  ok: sem mundo.txt, só cópias: existe e volta da cópia
 PASSOU QA-107  ok: salvar_async com o mundo avançando: arquivo válido do passo de antes
 PASSOU QA-108  ok: índice e cópias estragados: a estante se refaz com 2 livros
 PASSOU QA-109  ok: e o mundo do jogador continua com user://estante
 PULADO QA-110  pulado: o arquivo dos antigos só nasce depois de 300 anos; coberto por testar_persistencia.gd e testar_antigos.gd da A
-FALHOU QA-111  NÃO: e a mesma crônica (2 textos diferentes)
+PASSOU QA-111  ok: e a mesma crônica (1 textos diferentes)
 PASSOU QA-120  ok: o deus acaba com o povo só com raios: 12 raios em 2 dias (restam 0)
 PASSOU QA-121  ok: os últimos: chamado ({ "restam": 2 })
 PASSOU QA-122  ok: a crônica fecha como livro: «A Primeira Era: de Zeor ao último de Zeor»
@@ -616,12 +657,14 @@ PASSOU QA-143  ok: o livro da extinção tem epíteto, resumo, capítulos e epit
 PASSOU QA-144  ok: dois abandonos, dois livros com ids diferentes (2)
 PASSOU QA-150  ok: o núcleo não conhece o modo discreto: a crônica é a mesma com ele ligado []
 PASSOU QA-166  ok: a apresentação mostra o número da versão (busca por config/version no código)
-PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 38.0 ms, com 258 pessoas)
+PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.3 ms, com 258 pessoas)
 PASSOU QA-174  ok: no máximo 30 quadros por segundo (project.godot)
-PASSOU QA-176  ok: carregar e avançar um ano no mundo de 250 anos: 2.4 s
+PASSOU QA-176  ok: carregar e avançar um ano no mundo de 250 anos: 0.4 s
 PASSOU QA-180  ok: e já aparece na hora seguinte ao ataque (vista na hora 9)
-FALHOU QA-181  NÃO: a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, *.md")
+PASSOU QA-181  ok: a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, qa/*, *.md")
 PASSOU QA-182  ok: nenhuma ferramenta de teste apaga a estante real do jogador (apagam: [])
+PASSOU QA-185  ok: o raio pela simulação do jogo, no minuto 50, acerta quem está sob o gesto (alvo 2, esperado 2): a apresentação passa o minuto da hora
+PASSOU QA-186  ok: a crônica do mundo vazio tem texto
 ====================================================
-Cenários testados: 102 | PASSOU: 93 | FALHOU: 6 | PULADO: 3
-  [tempo] bateria: 130.2 s
+Cenários testados: 104 | PASSOU: 101 | FALHOU: 0 | PULADO: 3
+  [tempo] bateria: 35.4 s

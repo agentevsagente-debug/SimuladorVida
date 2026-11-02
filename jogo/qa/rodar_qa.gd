@@ -361,6 +361,45 @@ func _consultas_no_vazio() -> void:
 	conferir("QA-186", w.cronica_viva().strip_edges() != "", "a crônica do mundo vazio tem texto")
 
 
+## QA-187: as três cenas do começo da tarde (A, 6442746; API.md): sesta (12h30 às 14h, ~2 em 3 dias),
+## ensinar (12h40 às 14h, ~3 em 5 dias, se há criança de 8 a 13 anos e alguém de 35 ou mais) e
+## artesanato (13h50 às 15h40, ~7 em 10 dias).
+func _cenas_da_tarde() -> void:
+	var dias := {"sesta": 0, "ensinar": 0, "artesanato": 0}
+	var pode_ensinar := 0
+	var sesta_certa := 0
+	var sesta_vista := 0
+	var total := 0
+	for sem in [1, 2]:
+		var w := _mundo(sem)
+		w.avancar_dias(40 * 3)
+		for d in 20:
+			total += 1
+			var vistos := {}
+			for h in [12, 13, 14, 15]:
+				_ate_hora(w, h)
+				for c in w.cenas_ativas():
+					if dias.has(c["tipo"]):
+						vistos[c["tipo"]] = true
+				for p in w.pessoas_visiveis():
+					if p["cena"].get("tipo", "") == "sesta" and p["acao"] == "deitar":
+						sesta_vista += 1
+						if p["detalhe"] == "sesta":
+							sesta_certa += 1
+			for k in vistos:
+				dias[k] += 1
+			var gv: Array = w.pessoas_visiveis()
+			if gv.any(func(p): return p["idade"] >= 8 and p["idade"] <= 13) and gv.any(func(p): return p["idade"] >= 35):
+				pode_ensinar += 1
+			w.avancar_dias(1)
+	info("cenas da tarde em %d dias (sementes 1 e 2): %s; dias em que dá para ensinar: %d" % [total, dias, pode_ensinar])
+	# limites com folga para o acaso (binomial): metade da frequência que a API promete
+	conferir("QA-187", dias["sesta"] >= total / 3, "a sesta aparece em boa parte dos dias (%d de %d; a API diz cerca de 2 em 3)" % [dias["sesta"], total])
+	conferir("QA-187", dias["artesanato"] >= total / 2, "o artesanato aparece em boa parte dos dias (%d de %d; a API diz cerca de 7 em 10)" % [dias["artesanato"], total])
+	conferir("QA-187", pode_ensinar == 0 or dias["ensinar"] >= 1, "o ensinar aparece quando há criança e velho (%d dias com ensinar, %d em que dava)" % [dias["ensinar"], pode_ensinar])
+	conferir("QA-187", sesta_vista == 0 or sesta_certa == sesta_vista, "quem está deitado na sesta tem o detalhe sesta (%d de %d)" % [sesta_certa, sesta_vista])
+
+
 func _mundo_com_gestos(semente: int, anos: int):
 	var m := _mundo(semente)
 	for ano in anos:
@@ -412,6 +451,8 @@ func _consultas_puras() -> void:
 
 func _bloco_cotidiano() -> void:
 	var m := _mundo(2)
+	if _quer("QA-187"):
+		_cenas_da_tarde()
 	if _quer("QA-011"):
 		var ruins := m.pessoas_visiveis().filter(func(p): return p["tracos"].size() != 2 or p["tracos"].any(func(t): return not Mundo.TRACOS.has(t)))
 		conferir("QA-011", ruins.is_empty(), "todos com dois traços da lista (%d fora)" % ruins.size())
