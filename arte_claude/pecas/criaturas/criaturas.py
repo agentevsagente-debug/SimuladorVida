@@ -69,6 +69,31 @@ CRIATURAS = {
         ["......n.n.", ".......nn.", ".......NNx", "nNNNNNNN..", ".NNNNNNN..", ".NNnnNNn..", "..n.n.n..n", ".n...n...n"],
         ["......n.n.", ".......nn.", ".......NNx", "nNNNNNNN..", ".NNNNNNN..", ".NNnnNNn..", ".n..n..n.n", "n...n...n."],
     ),
+    # cervo bebendo na beira do lago (12x8), para o primeiro minuto do mundo vazio: olha, baixa
+    # a cabeça, bebe (a marola na boca, na linha 7) e bebe de novo. Pelo claro na barriga e no
+    # rabo, focinho escuro. A base é a linha 7 (os cascos), na beira da água.
+    "cervo_beber_4q": molde(
+        ["........n.n.", ".........nn.", "........NNNx", "W.NNNNNNNN..", ".NNNNNNNNN..", ".NNWWWWNNn..", ".n.n...n.n..", ".d.d...d.d.."],
+        ["............", "..........n.", "..........nn", "W.NNNNNNNNNn", ".NNNNNNNNNNx", ".NNWWWWNNn..", ".n.n...n.n..", ".d.d...d.d.."],
+        ["............", "............", "............", "W.NNNNNNNNn.", ".NNNNNNNNNNn", ".NNWWWWNNn.N", ".n.n...n.nNx", ".d.d...d.dcc"],
+        ["............", "............", "............", ".WNNNNNNNNn.", ".NNNNNNNNNNn", ".NNWWWWNNn.N", ".n.n...n.nNx", ".d.d...d.c.c"],
+    ),
+    # cervo pastando (12x8): olha, baixa a cabeça ao capim, mastiga (a cabeça sobe 1 px) e
+    # abana o rabo. Mesmo encaixe do que bebe.
+    "cervo_pastar_4q": molde(
+        ["........n.n.", ".........nn.", "........NNNx", "W.NNNNNNNN..", ".NNNNNNNNN..", ".NNWWWWNNn..", ".n.n...n.n..", ".d.d...d.d.."],
+        ["............", "............", "............", "W.NNNNNNNNn.", ".NNNNNNNNNNn", ".NNWWWWNNn.N", ".n.n...n.nNx", ".d.d...d.d.."],
+        ["............", "............", "............", "W.NNNNNNNNn.", ".NNNNNNNNNNn", ".NNWWWWNNnNx", ".n.n...n.n..", ".d.d...d.d.."],
+        ["............", "............", "............", ".WNNNNNNNNn.", "WNNNNNNNNNNn", ".NNWWWWNNn.N", ".n.n...n.nNx", ".d.d...d.d.."],
+    ),
+    # garça pescando na água rasa (8x8): de pé, curva o pescoço, dá o bote (o bico entra na
+    # água e espirra) e engole o peixe prateado. A linha 7 é a superfície da água.
+    "garca_pescar_4q": molde(
+        ["...WWy..", "...W....", "...W....", "..WWw...", ".GWWww..", "..ww....", "..n.....", "b.n.n..b"],
+        ["........", "...WWW..", "..W..Wy.", "..WWw...", ".GWWww..", "..ww....", "..n.....", "b.nbn..b"],
+        ["........", "........", "........", "..WWw...", ".GWWwwW.", "..ww..W.", "..n....W", "b.n.n.cy"],
+        ["...WWyg.", "...W..g.", "...W....", "..WWw...", ".GWWww..", "..ww....", "..n.....", "b.n.n..b"],
+    ),
     # corvo voando e pousado (preto azulado)
     "corvo_voar_4q": molde(
         ["x...x.", ".x.xxk", "..xx..", "......"],
@@ -185,6 +210,9 @@ QUANDO = {
     "peixe_pular_forte_4q": ("primavera, verão, outono", "dia", "perto de quem pesca, na água rasa; não no gelo"),
     "sapo_2q": ("primavera, verão", "entardecer e noite", "na margem e no junco"),
     "garca_2q": ("primavera, verão, outono", "manhã e dia", "parada na água rasa da margem"),
+    "garca_pescar_4q": ("primavera, verão, outono", "manhã e dia", "pescando na água rasa; no inverno, migra"),
+    "cervo_beber_4q": ("primavera, verão, outono", "manhã e entardecer", "bebendo na beira do lago"),
+    "cervo_pastar_4q": ("primavera, verão, outono", "manhã e entardecer", "pastando na borda da mata e na clareira"),
     "coelho_4q": ("todas", "manhã e entardecer", "no mato e na borda das roças; foge de gente"),
     "cervo_4q": ("todas menos inverno fundo", "manhã (até 9h)", "na borda da floresta do morro"),
     "corvo_voar_4q": ("todas", "dia", "sobre campos de batalha e onde há mortos"),
@@ -200,8 +228,25 @@ QUANDO = {
 }
 
 
+def inverno(quadros):
+    """Pelo de inverno do cervo: o castanho vira cinza-pardo (10 -> 11, 9 -> 8) e uma linha de
+    neve (31) no lombo."""
+    troca = {10: 11, 9: 8}
+    out = []
+    for q in quadros:
+        n = [[troca.get(c, c) for c in l] for l in q]
+        for x in range(len(n[0])):
+            ys = [y for y in range(len(n)) if n[y][x] is not None]
+            if ys and n[ys[0]][x] == 11 and 2 <= x <= 9:
+                n[ys[0]][x] = 31
+        out.append(n)
+    return out
+
+
 def principal():
     CRIATURAS["bando_migrando_4q"] = bando()
+    CRIATURAS["cervo_beber_inverno_4q"] = inverno(CRIATURAS["cervo_beber_4q"])
+    CRIATURAS["cervo_pastar_inverno_4q"] = inverno(CRIATURAS["cervo_pastar_4q"])
     for nome, qs in CRIATURAS.items():
         gravar(folha_quadros(qs), AQUI / f"{nome}.png")
     # amostra: cada criatura sobre o céu de dia, o entardecer e a noite
