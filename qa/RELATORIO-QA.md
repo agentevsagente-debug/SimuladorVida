@@ -17,6 +17,8 @@
 | **Falham** | **0** |
 | Pulados | 3 (QA-053, QA-110, QA-127): por condição rara nas sementes |
 
+**Na main `e4dd9d1` (0.2.1, com o D-18 e o D-19 corrigidos), sem janela, em 02/11/2026:** o núcleo dá **104 passam, 0 falham e 3 pulados** (107 cenários; o QA-206 e o QA-207 passam). O som dá 8 passam e 1 pulado (o QA-194, com janela); a lupa, 5 passam e 1 pulado (o QA-205, com janela). Os cenários em janela não foram repetidos nesta rodada. Com o QA-206 e o QA-207, a matriz tem 144 cenários, e nada falha.
+
 **A 0.2.0 fechou sem nenhuma falha.** Depois, o QA-206 (textos na tela), escrito para o "{p} teve um sonho" que o usuário viu, falha na mesma main: acha o D-18 e o D-19 (A). Com ele, a matriz tem 143 cenários, e o núcleo dá 102 passam, 1 falha e 3 pulados.
 - O núcleo dá 102 passam; o som, 9 de 9 (o QA-194 pela B); a lupa, 6 de 6 (o QA-205 com a janela de verdade, com o PC liberado pelo usuário: 24 mudanças de escala nos 4 cantos, nenhuma fora da tela); os 13 cenários em janela passam.
 - Leveza em 1x, visível e calado: o mundo novo fica em 5,64% de um núcleo (pico de 7,79%) e o de 200 anos em 5,52% (pico de 9,35%), com 241 e 289 MB. O som custa −0,09% de um núcleo e 2,7 MB (QA-197, 3 pares): dentro do ruído.
@@ -65,8 +67,8 @@
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
 | D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido** (QA-186 passa na main `e27d489`: "No princípio, a região estava vazia…") |
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
-| D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido na branch da A** (`5edae7a`, 0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa. À espera do merge |
-| D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido na branch da A** (`5edae7a`): usa o povo do morto; QA-206 passa. À espera do merge |
+| D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido** na main `e4dd9d1` (0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa |
+| D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido** na main `e4dd9d1`: usa o povo do morto; QA-206 passa |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
