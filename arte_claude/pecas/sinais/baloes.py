@@ -16,8 +16,9 @@ K = {"W": 31, "x": 30, "g": 11, "r": 20, "y": 22}
 
 # nesta ordem, as variações da folha `balao_5v`
 BALOES = {
-    # uma linha de texto: conversa
-    "fala": [".WWWW.", "WxxWxW", "WWWWWW", ".WWWW.", ".W...."],
+    # uma linha de texto: conversa. Um traço só, inteiro (dois traços separados liam como os
+    # olhos de uma caveira, auditoria 13), e o canto de baixo à esquerda puxado para a ponta.
+    "fala": [".WWWW.", "WxxxxW", "WWWWWW", "WWWWW.", "W....."],
     # duas linhas: quem conta história (fala comprida)
     "historia": [".WWWW.", "WxxWxW", "WxWxxW", ".WWWW.", ".W...."],
     # nuvem com reticências e a ponta solta: pensando, cochilando, rezando baixo

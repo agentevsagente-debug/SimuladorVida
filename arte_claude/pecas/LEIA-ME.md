@@ -228,7 +228,7 @@ A escolha da intensidade fica com a apresentação. Uma sugestão: comum até 10
 
 | Variação | Sinal | Quando usar |
 |---|---|---|
-| 0 `fala` | uma linha de texto | conversa (`conversar_falar_4q`), discurso curto |
+| 0 `fala` | um traço inteiro de texto, com o canto de baixo à esquerda puxado para a ponta (auditoria 13: os dois traços de antes liam como os olhos de uma caveira) | conversa (`conversar_falar_4q`), discurso curto |
 | 1 `historia` | duas linhas de texto | quem conta história (`contar_historia_4q`) |
 | 2 `pensamento` | nuvem com reticências cinza e a ponta solta | alguém pensando, a vigia cochilando, prece baixinha |
 | 3 `coracao` | coração vermelho | casal, abraço de reencontro, mãe com o bebê |
@@ -878,7 +878,7 @@ A A pôs no núcleo três cenas, das 12h30 às 15h30: a sesta, ensinar a lança 
 | ensinar | `mirar_alvo` e `arremessar_alvo` (adulto) | `acoes/cacar_espreitar_forte_4q` e `cacar_arremessar_forte_4q` | 12 × 12 | os da caçada |
 | ensinar | `buscar_lanca` | `acoes/buscar_lanca_2q` | 12 × 12 | abaixado, pegando a lança no chão (0), e de pé com ela na mão (1) |
 | ensinar | `comemorar` | `acoes/crianca_comemorar_4q` | 6 × 8 | agacha, salta com os braços em V, abre as pernas e pousa; o motor sobe a criança 2 a 3 px nos quadros 1 e 2 |
-| ensinar | o alvo (`cena["alvo"]`) | `objetos/alvo_capim` (8 × 14), `alvo_capim_lanca` (12 × 14) e `lanca_no_chao` (14 × 2) | | o feixe de capim amarrado em duas voltas, fincado numa estaca, com a base na linha 13. Quando acerta, troque por `alvo_capim_lanca` (a lança cravada, entrando pela esquerda; espelhe se o arremesso vier da direita); quando erra, a `lanca_no_chao` fica ao lado do alvo. |
+| ensinar | o alvo (`cena["alvo"]`) | `objetos/alvo_capim` (8 × 14), `alvo_capim_lanca` (12 × 14) e `lanca_no_chao` (14 × 2) | | o feixe de capim amarrado embaixo, fincado numa estaca, com a base na linha 13 e um círculo de ocre vermelho com o miolo branco na frente (auditoria 13: só com as faixas, de longe, lia-se como barril ou colmeia). Quando acerta, troque por `alvo_capim_lanca` (a lança escura cravada no miolo, entrando pela esquerda; mesmo tamanho e mesmo encaixe de antes; espelhe se o arremesso vier da direita); quando erra, a `lanca_no_chao` fica ao lado do alvo. |
 | artesanato | `trancar_cesto`, `moldar_pote`, `afiar_lanca` | `acoes/trancar_cesto_4q`, `moldar_pote_4q`, `afiar_lanca_4q` | 12 × 12 | acima, nesta seção |
 | artesanato | `mostrar_peca` | `acoes/mostrar_peca_cesto_2q`, `mostrar_peca_pote_2q`, `mostrar_peca_lanca_2q` (pelo `cena["peca"]`) | 12 × 12 | de pé, de boca aberta, ergue a peça acima da cabeça com os dois braços; no quadro 1, a peça sobe 1 px. É o que mais se lê de longe. |
 | artesanato | `levar_peca` | `acoes/carregar_cesto_cabeca_forte_4q` (cesto), `carregar_agua_forte_4q` (pote) ou `andar` com a lança | | |
