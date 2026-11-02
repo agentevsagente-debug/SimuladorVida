@@ -17,7 +17,7 @@
 
 <p align="center">
   <img src="docs/imagens/dia-em-50x.gif" alt="Um dia inteiro do jogo em 50x: a vila do estágio 6 do amanhecer à madrugada" width="960">
-  <br><sub>Um dia inteiro de jogo em 50x, numa vila que já chegou aos moinhos. Em 1x, esse mesmo dia dura 45 minutos.</sub>
+  <br><sub>Um dia inteiro de jogo numa vila que já chegou aos moinhos, do amanhecer à madrugada, capturado em 50x e acelerado no GIF. No jogo, esse dia dura 54 segundos em 50x e 45 minutos em 1x.</sub>
 </p>
 
 ---
@@ -34,7 +34,7 @@
 - **Seis estágios, sem árvore de pesquisa.** Da coleta à agricultura, à pedra, ao metal, à escrita e aos canais e moinhos. O saber vive nas pessoas e pode se perder quando morre o último que sabia.
 - **O fim do mundo é real.** A população pode acabar, inclusive enquanto o jogo está fechado. O mundo vazio continua vivo, as ruínas ficam, e o povo que você fizer nascer depois inventa histórias sobre elas.
 - **Um companheiro de tela.** O ritmo normal é lento (um dia de jogo dura cerca de 45 minutos). O mouse passa pelos espaços vazios da janela, então dá para trabalhar com ela aberta. Fechado, o mundo continua andando até o teto de 1 ano de jogo.
-- **Leve.** Em 1x, o jogo usa por volta de 5% de **um** núcleo do processador; escondido, 0,2%. No Gerenciador de Tarefas, a memória fica perto de 110 MB num mundo novo e de 180 MB num mundo de 150 a 200 anos. [Como foi medido](docs/como-foi-feito.md#leveza).
+- **Leve.** Em 1x, o jogo usa por volta de 5% de **um** núcleo do processador; escondido, 0,2%. No Gerenciador de Tarefas, a memória do jogo fica perto de 110 MB num mundo novo e de 180 MB num mundo de 150 a 200 anos. [Como foi medido](docs/como-foi-feito.md#leveza).
 
 ## Galeria
 
@@ -54,7 +54,7 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 ## Baixar e jogar
 
 1. Abra a página de **[Releases](https://github.com/agentevsagente-debug/SimuladorVida/releases)** e baixe a versão mais recente.
-2. Rode o `Simulador de vida.exe`. Não há instalador: é um arquivo só, de cerca de 110 MB.
+2. Rode o `Simulador de vida.exe`. Não há instalador: é um arquivo só, de cerca de 106 MB.
 3. **Aviso do Windows (SmartScreen).** O jogo não tem assinatura digital, então o Windows pode mostrar "O Windows protegeu o computador". Clique em **Mais informações** e depois em **Executar assim mesmo**.
 4. O mundo começa vazio. Clique sobre ele para fazer nascer o primeiro povo.
 
