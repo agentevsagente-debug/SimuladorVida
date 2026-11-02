@@ -19,8 +19,9 @@ extends Node2D
 ##   --anos=N, --dias=N   avança N anos e N dias antes de abrir (mundo novo, testes)
 ##   --cenario-raro=NOME  teste: força um acontecimento raro (veja cenarios_raros.gd)
 ##   --simular-ausencia=H depois de carregar, avança como se o jogador tivesse saído H horas (testes)
-##   --com-povo           o mundo novo já nasce com o primeiro povo (sem ele, --mundo-novo e --semente
-##                        começam vazios; --dias, --anos, --cena e --cenario-raro já nascem com o povo)
+##   --com-povo           o mundo novo já nasce com o primeiro povo (sem ele, --mundo-novo começa vazio,
+##                        mesmo com --semente; --semente sozinha, --dias, --anos, --cena e
+##                        --cenario-raro já nascem com o povo)
 ##   --extinguir[=N]      teste: todos morrem (e o mundo vazio anda N anos)
 ##   --capturar=ARQUIVO   grava a vista (480 × 160) em PNG e fecha
 ##   --capturar-apos=S    espera S segundos antes de capturar
@@ -174,9 +175,11 @@ func _ready() -> void:
 		sim.mundo_trocado.connect(_ao_trocar_mundo)
 		_vida = Vida.new(self, sim)
 		var novo := args.has("mundo-novo") or args.has("semente") or args.has("cena") or args.has("dias")
-		# o mundo novo começa vazio, como o jogo, a menos que venha --com-povo (mesmo com --semente);
-		# os caminhos que precisam de gente (--anos, --dias, --cena, --cenario-raro) já nascem com o povo
-		var com_povo := args.has("com-povo") or args.has("cena") or args.has("dias") \
+		# --mundo-novo começa vazio, como o jogo, a menos que venha --com-povo (mesmo com --semente);
+		# --semente sozinha e os caminhos que precisam de gente (--anos, --dias, --cena,
+		# --cenario-raro) nascem com o povo
+		var com_povo := args.has("com-povo") or (args.has("semente") and not args.has("mundo-novo")) \
+			or args.has("cena") or args.has("dias") \
 			or args.has("anos") or args.has("cenario-raro")
 		sim.salvar_em_disco = not novo
 		var semente := int(args.get("semente", str(randi())))
