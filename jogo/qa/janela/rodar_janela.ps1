@@ -17,6 +17,7 @@ param(
     [int]$Segundos = 90,
     [int]$Aberturas = 10,
     [int[]]$AnosLeveza = @(0, 200),
+    [switch]$Audivel,         # -Parte som: o som ligado de verdade (sem ele, --som-inaudivel: mixado a -80 dB, sem barulho)
     [int]$Pares = 3,          # -Parte som: quantos pares (som ligado, --sem-som) medir, alternados
     [switch]$ComAtalho,
     [string]$Tecla = 'J',   # Ctrl+Alt+J: não disputa o Ctrl+Alt+H de outro jogo aberto   # liga o atalho global (Ctrl+Alt+H), como no jogo de verdade: sem ele, --sem-atalho
@@ -37,7 +38,11 @@ $nucleos = [Environment]::ProcessorCount
 function Abrir([string[]]$opcoes, [string]$rotulo) {
     $log = Join-Path $saida "log-$rotulo.txt"
     $atalho = if ($ComAtalho) { "--atalho-global=$Tecla" } else { '--sem-atalho' }
-    $argumentos = @('--path', "`"$projeto`"", '--') + $opcoes + @('--sem-foco', $atalho)
+    # desde a 0.2 o jogo tem som: os cenários abrem calados (--sem-som), para não fazer barulho no
+    # PC de quem trabalha; o QA-197 abre com --som-inaudivel (tudo toca e é mixado, a -80 dB)
+    $som = if ($opcoes -contains '--som-inaudivel' -or $opcoes -contains '--com-som-audivel') { @() } else { @('--sem-som') }
+    $opcoes = @($opcoes | Where-Object { $_ -ne '--com-som-audivel' })
+    $argumentos = @('--path', "`"$projeto`"", '--') + $opcoes + @('--sem-foco', $atalho) + $som
     # -NoNewWindow: o console fica no do PowerShell; a janela do jogo abre normal (não escondida,
     # para a medição de leveza valer com o jogo visível)
     $p = Start-Process -FilePath $Godot -ArgumentList $argumentos -PassThru -NoNewWindow `
@@ -212,8 +217,8 @@ if ($Parte -in 'som', 'tudo') {
     $base = @('--sem-config', '--mundo-novo', '--semente=7', '--com-povo', '--hora=17', '--ritmo=normal', "--duracao=$($Segundos + 60)")
     $medidas = @()
     for ($i = 1; $i -le $Pares; $i++) {
-        $medidas += Medir $base "som-ligado-$i"
-        $medidas += Medir ($base + '--sem-som') "som-desligado-$i"
+        $medidas += Medir ($base + $(if ($Audivel) { '--com-som-audivel' } else { '--som-inaudivel' })) "som-ligado-$i"
+        $medidas += Medir $base "som-desligado-$i"   # o Abrir põe o --sem-som
     }
     $lig = $medidas | Where-Object { $_.rotulo -like 'som-ligado*' }
     $des = $medidas | Where-Object { $_.rotulo -like 'som-desligado*' }

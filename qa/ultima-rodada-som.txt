@@ -1,0 +1,36 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+[etapa estatico] 0.2 s
+[etapa inicial] 5.9 s
+  [som-qa] desligado com M antes de fechar: Master mudo=true volume=-12.0 dB; moldura.cfg tem ["moldura/som=false"]
+[etapa reabrir] 2.7 s
+  [som-qa] religado com M antes de fechar: Master mudo=false volume=-12.0 dB
+[etapa reabrir2] 1.0 s
+[etapa ligado] 58.4 s
+  [som-qa] som ligado, seis poderes: { "tocou": 11, "audivel": 11, "pesado": 2, "pesado_audivel": 2, "nomes": ["@AudioStreamPlayer@41", "@AudioStreamPlayer@42", "@AudioStreamPlayer@43", "@AudioStreamPlayer@45", "@AudioStreamPlayer@49", "@AudioStreamPlayer2D@51", "@AudioStreamPlayer2D@52", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56"] }
+[etapa discreto] 27.2 s
+  [som-qa] modo discreto, seis poderes: { "tocou": 9, "audivel": 9, "pesado": 0, "pesado_audivel": 0, "nomes": ["@AudioStreamPlayer@41", "@AudioStreamPlayer@42", "@AudioStreamPlayer@43", "@AudioStreamPlayer@45", "@AudioStreamPlayer@49", "@AudioStreamPlayer2D@51", "@AudioStreamPlayer2D@52", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54"] }
+PASSOU QA-188  o jogo exportado tem driver de áudio (não o Dummy)
+      [estatico] PASSOU project.godot [audio]: padrão (WASAPI)
+PASSOU QA-189  o volume começa baixo
+      [inicial] PASSOU na primeira abertura, Master mudo=false volume=-12.0 dB (esperado: ligado, entre -60 e -12 dB)
+PASSOU QA-190  o botão de som na alça desliga e liga na hora
+      [inicial] PASSOU mundo vazio: o clique calou no mesmo quadro=true; o segundo clique devolveu=true
+PASSOU QA-191  a tecla M desliga e liga na hora
+      [inicial] PASSOU M calou no mesmo quadro=true; o segundo M devolveu=true (Master mudo=false volume=-12.0 dB)
+PASSOU QA-192  a escolha sobrevive a fechar e abrir
+      [reabrir] PASSOU ao reabrir depois de fechar com o som desligado: Master mudo=true volume=-12.0 dB no primeiro quadro
+      [reabrir2] PASSOU ao reabrir depois de fechar com o som ligado: Master mudo=false volume=-12.0 dB no primeiro quadro
+PASSOU QA-193  escondida, o som se cala; ao mostrar, volta se estiver ligado
+      [inicial] PASSOU som ligado: escondida=true, calou ao esconder=true, voltou ao mostrar=true
+      [inicial] PASSOU som desligado com M: desligou=true, continua desligado depois de esconder e mostrar=true
+PULADO QA-194  minimizada fora do esconder, o som se cala
+      só com --janela (a janela minimizada de verdade)
+PASSOU QA-195  o modo discreto não toca os sons pesados
+      [ligado] PASSOU sem o modo discreto, os seis poderes tocaram 2 sons pesados (grupo som_pesado; precisa de pelo menos 1, para o QA-195 valer)
+      [discreto] PASSOU modo discreto=true: 9 sons audíveis, 0 pesados audíveis (esperado: algum som, nenhum pesado)
+PASSOU QA-196  com o som desligado, nenhum som toca
+      [reabrir] PASSOU ao reabrir com o som desligado, 0 players audíveis no primeiro segundo
+      [ligado] PASSOU com o som ligado, os seis poderes tocaram 11 players audíveis (precisa de pelo menos 1, para o silêncio valer)
+      [ligado] PASSOU no quadro em que o som foi desligado (botão): Master mudo=true volume=-12.0 dB, 0 players audíveis
+      [ligado] PASSOU som desligado, seis poderes e 8 s em 50x: 0 players audíveis ([])
+RESUMO som: 8 passam, 0 falham, 1 pulados

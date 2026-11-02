@@ -2,23 +2,23 @@
     {
         "cenario":  "novo-1x",
         "processo":  "Godot_v4.7.2-stable_win64",
-        "segundos":  121,
-        "cpu_1nucleo_media":  5.98,
-        "cpu_1nucleo_pico":  8.38,
-        "cpu_maquina_media":  0.214,
-        "working_set_max_mb":  252,
-        "privada_max_mb":  236,
+        "segundos":  90,
+        "cpu_1nucleo_media":  2.75,
+        "cpu_1nucleo_pico":  4.36,
+        "cpu_maquina_media":  0.098,
+        "working_set_max_mb":  240,
+        "privada_max_mb":  243,
         "nucleos":  28
     },
     {
         "cenario":  "200anos-1x",
         "processo":  "Godot_v4.7.2-stable_win64",
-        "segundos":  121,
-        "cpu_1nucleo_media":  14.36,
-        "cpu_1nucleo_pico":  16.76,
-        "cpu_maquina_media":  0.513,
-        "working_set_max_mb":  294,
-        "privada_max_mb":  278,
+        "segundos":  90,
+        "cpu_1nucleo_media":  6.28,
+        "cpu_1nucleo_pico":  8.11,
+        "cpu_maquina_media":  0.224,
+        "working_set_max_mb":  288,
+        "privada_max_mb":  290,
         "nucleos":  28
     }
 ]

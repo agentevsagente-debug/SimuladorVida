@@ -238,3 +238,22 @@
 | QA-195 | **Dado** o modo discreto ligado e o som ligado, **quando** o jogador usa os seis poderes na intensidade cheia sobre o povo, **então** algum som toca e nenhum player do grupo `som_pesado` é audível. Prova: sem o modo discreto, os mesmos gestos tocam pelo menos um som pesado. | FUN Modo discreto + O som | B | AS |
 | QA-196 | **Dado** o som desligado, **quando** o jogador usa os seis poderes e o tempo corre em 50x, **então** nenhum player é audível, nem os de acontecimento. Audível = tocando, acima de −60 dB e num barramento cuja rota até o `Master` não está muda. Vale no quadro em que o som é desligado e na reabertura. Prova: com o som ligado, os mesmos gestos tocam algo audível. | FUN Silêncio fácil | B | AS |
 | QA-197 | **Dado** o mesmo mundo, com povo, às 17h, em 1x e visível, **quando** roda com o som ligado e com `--sem-som`, em 3 pares alternados de 90 s, **então** o som custa menos de 1% de um núcleo e menos de 20 MB de memória. | TEC Leveza, pedido do orquestrador | B | AJ (`rodar_janela.ps1 -Parte som`) |
+
+## 18. Lupa (escritos antes do botão pela regra de TDD)
+
+*Fonte: pedido do usuário, repassado pelo orquestrador em 02/11/2026. O contrato abaixo foi proposto à B e é revisável:*
+- o botão de id `"lupa"` na alça, em todas as fases;
+- clique esquerdo sobe (2x → 3x → 4x → 2x) e clique direito desce (4x → 3x → 2x → 4x);
+- uma escala que não cabe na área útil da tela é pulada;
+- a dica mostra a escala atual ("3x");
+- a escala vai para `moldura/escala` no `moldura.cfg` (com `--sem-config`, não);
+- a janela fica inteira dentro da área útil de uma tela.
+
+| ID | Dado / Quando / Então | Fonte | Prio | Como |
+|---|---|---|---|---|
+| QA-200 | **Dado** o mundo vazio e o mundo com povo, **então** a alça tem o botão `lupa`. | pedido do usuário (lupa) | B | AS (`jogo/qa/lupa/testar_lupa.gd`) |
+| QA-201 | **Dado** a lupa, **quando** o jogador dá três cliques esquerdos, **então** a escala sobe em ciclo (2x → 3x → 4x → 2x), e a janela acompanha o tamanho. | pedido do usuário | B | AS |
+| QA-202 | **Dado** a lupa, **quando** o jogador dá três cliques direitos, **então** a escala desce em ciclo (4x → 3x → 2x → 4x). | pedido do usuário | B | AS |
+| QA-203 | **Dado** o cursor sobre a lupa, **então** a dica mostra a escala atual ("2x"); **quando** o jogador clica, **então** a dica passa a mostrar a nova. | pedido do usuário | N | AS |
+| QA-204 | **Dado** a escala mudada pela lupa (3x, depois 4x), **quando** o jogo fecha (`sair`) e abre de novo, **então** abre nessa escala. Com `--sem-config`, a lupa não grava nada. | pedido do usuário, TEC Moldura | B | AS |
+| QA-205 | **Dado** a janela encostada em cada um dos 4 cantos da área útil, **quando** a lupa sobe ou desce três vezes, **então** a janela fica sempre inteira dentro da área útil de uma tela. | pedido do usuário | B | AS com `--janela` (precisa da tela de verdade; sem ela, PULADO) |

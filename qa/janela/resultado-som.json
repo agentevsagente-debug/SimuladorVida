@@ -1,0 +1,40 @@
+﻿{
+    "estado":  "PASSOU",
+    "delta_cpu_1nucleo":  0.79,
+    "delta_working_set_mb":  2,
+    "motivos":  [
+
+                ],
+    "medidas":  [
+                    {
+                        "rotulo":  "som-ligado-1",
+                        "cpu_1nucleo":  3.06,
+                        "working_set_max_mb":  242
+                    },
+                    {
+                        "rotulo":  "som-desligado-1",
+                        "cpu_1nucleo":  3.1,
+                        "working_set_max_mb":  239
+                    },
+                    {
+                        "rotulo":  "som-ligado-2",
+                        "cpu_1nucleo":  3.17,
+                        "working_set_max_mb":  243
+                    },
+                    {
+                        "rotulo":  "som-desligado-2",
+                        "cpu_1nucleo":  2.98,
+                        "working_set_max_mb":  241
+                    },
+                    {
+                        "rotulo":  "som-ligado-3",
+                        "cpu_1nucleo":  4.83,
+                        "working_set_max_mb":  242
+                    },
+                    {
+                        "rotulo":  "som-desligado-3",
+                        "cpu_1nucleo":  2.61,
+                        "working_set_max_mb":  241
+                    }
+                ]
+}

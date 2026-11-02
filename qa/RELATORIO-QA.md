@@ -4,26 +4,27 @@
 
 ## Números
 
-*Rodada de 01/11/2026 na main `50e5636`. A bateria do núcleo rodou nesta main. Os 12 cenários em janela são da rodada anterior, na main `5f6e018`, e não foram repetidos.*
+*Rodada de 02/11/2026 na main `e27d489` (versão 0.2.0, com o som). Rodaram a bateria do núcleo, os cenários do som sem tela, os 13 cenários em janela (sem o mouse real e com o jogo calado) e os testes novos da lupa, escritos antes do botão.*
 
 | | Quantos |
 |---|---|
-| Cenários na matriz | 125 |
-| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 104 |
-| Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 12 |
+| Cenários na matriz | 142 |
+| Automatizados no núcleo (`jogo/qa/rodar_qa.gd`) | 105 |
+| Automatizados com o jogo inteiro sem tela (`jogo/qa/som/testar_som.gd`, `jogo/qa/lupa/testar_lupa.gd`) | 15 |
+| Automatizados em janela (`jogo/qa/janela/rodar_janela.ps1`) | 13 |
 | Só manuais (precisam de mouse e teclado) | 9 (QA-019, QA-037, QA-084, QA-152, QA-160, QA-161, QA-163, QA-165, QA-173) |
-| **Passam** | **112** |
-| **Falham** | **1**: o QA-186, o erro novo achado pelo fuzz (D-16) |
-| Pulados (a condição não aconteceu nas sementes) | 3 (QA-053, QA-110, QA-127) |
+| **Passam** | **123** |
+| **Falham** | **5**, todos da lupa (QA-200, QA-201, QA-202, QA-203, QA-204): o botão ainda não existe (TDD) |
+| Pulados | 5 (QA-053, QA-110, QA-127, QA-194, QA-205): três por condição rara nas sementes; o QA-194 e o QA-205 precisam da janela de verdade com o PC livre |
 
-**Na branch da A (`1249c3b`, ainda fora da main):** a bateria dá **102 passam, 0 falham e 3 pulados** em 105 cenários. O QA-186 (D-16) e o QA-187 (D-17) passam, e o D-07 está resolvido. A saída está em `qa/rodada-branch-a-1249c3b.txt`.
+**Na versão 0.2.0:** fora a lupa, que ainda não foi feita, **nada falha**. O núcleo dá 102 passam e 0 falham; o som dá 8 passam e 0 falham (o QA-194 fica para quando o PC estiver livre), como a B mediu; os 13 cenários em janela passam.
 
 **Por área:**
 
 | Área | Cenários | Passam | Falham | Pulados | Manuais, não rodados |
 |---|---|---|---|---|---|
 | Começo do mundo | 5 | 5 | 0 | 0 | 0 |
-| Cotidiano | 10 | 9 | 0 | 0 | 1 |
+| Cotidiano | 11 | 10 | 0 | 0 | 1 |
 | Os 11 poderes e as 3 intensidades | 18 | 17 | 0 | 0 | 1 |
 | Preces e respostas | 9 | 9 | 0 | 0 | 0 |
 | Religião, crença e nome do deus | 5 | 4 | 0 | 1 | 0 |
@@ -37,12 +38,14 @@
 | Modo discreto | 3 | 2 | 0 | 0 | 1 |
 | Moldura (esconder, escala, passagem do mouse) | 8 | 4 | 0 | 0 | 4 |
 | Leveza | 7 | 6 | 0 | 0 | 1 |
-| Robustez da API e cenas (achados durante a leitura) | 5 | 4 | 1 | 0 | 0 |
-| **Total** | **125** | **112** | **1** | **3** | **9** |
+| Robustez da API e cenas (achados durante a leitura) | 5 | 5 | 0 | 0 | 0 |
+| Som | 10 | 9 | 0 | 1 | 0 |
+| Lupa | 6 | 0 | 5 | 1 | 0 |
+| **Total** | **142** | **123** | **5** | **5** | **9** |
 
 **Os defeitos e a situação de cada um:**
 
-| # | Defeito | Gravidade | Bloqueia a 0.1 | Área | Situação na main `5f6e018` |
+| # | Defeito | Gravidade | Bloqueia a 0.1 | Área | Situação na main `e27d489` |
 |---|---|---|---|---|---|
 | D-01 | Os testes do núcleo escreviam e apagavam a estante real do jogador | alta | prioridade | A | **corrigido**: os mundos de teste guardam os livros em `<nome>.estante`; QA-109 e QA-182 passam |
 | D-02 | O raio e o sonho acertavam onde a pessoa estaria no fim da hora | alta | sim | A, B | **corrigido**: o núcleo mira pelo minuto (QA-027: 100% dos toques), e a interface passa o minuto e quem está sob o cursor (QA-185 passa) |
@@ -50,7 +53,7 @@
 | D-04 | Sem número de versão | média | sim | B | **corrigido** (versão 0.1.0; QA-166 passa) |
 | D-05 | Um mundo salvo que não se lê é sobrescrito em silêncio | média | não (antes da 0.2) | A, B | **corrigido** na main `50e5636` (QA-105 passa) |
 | D-06 | Um mundo carregado escreve a crônica com frases que mudam | média | não | A | **corrigido** na main `50e5636` (QA-111 passa) |
-| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **corrigido na branch da A** (`38dadcd`): a rotina é montada por povo, em paralelo. Na minha sonda, com 258 pessoas, nenhuma espera pela thread com 300 ms entre passos (antes, 600 e 1095 ms), passos de 1 a 4 ms, e a primeira consulta depois do salto de 250 anos em 95 ms (antes, de 1017 a 1253 ms), com a máquina a 17% de carga. Antes disso, estava **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
+| D-07 | A thread da rotina leva mais de 1 s com 240 pessoas | média | não | A | **corrigido** (QA-170 passa na main `e27d489`: pior passo de 13 ms em 50x, com 258 pessoas). Na branch da A (`38dadcd`), a rotina passou a ser montada por povo, em paralelo. Na minha sonda, com 258 pessoas, nenhuma espera pela thread com 300 ms entre passos (antes, 600 e 1095 ms), passos de 1 a 4 ms, e a primeira consulta depois do salto de 250 anos em 95 ms (antes, de 1017 a 1253 ms), com a máquina a 17% de carga. Antes disso, estava **contestado pela A**: com a CPU em velocidade plena, a montagem leva de 181 a 195 ms no mesmo mundo (`ferramentas_sim/montagem_rotina.gd`, que calibra a CPU no mesmo processo). As minhas medidas de mais de 1 s foram feitas com a máquina ocupada pelas outras sessões. Fica como risco para máquinas lentas ou em economia de energia; o QA-170 passa |
 | D-08 | O mundo velho passava de 8% de um núcleo | média | não | B | **corrigido**: 7,2% no mundo de 200 anos (QA-172 passa) |
 | D-09 | O mundo novo começava com o povo | média | decidido: começa vazio | A, B | **corrigido**: o jogo abre vazio às 7h, com o convite na clareira, e criar povo abre a Primeira Era (QA-002 passa; `QA-002-comeco.png`) |
 | D-10 | A noite tinha 18,75 min, e o documento dizia 15 | baixa | não | — | **resolvido pelo documento** (QA-016 passa) |
@@ -58,12 +61,20 @@
 | D-12 | Dois povos dão o mesmo nome ao mesmo lugar | baixa | não | A | **corrigido** na main `50e5636` (QA-064 passa) |
 | D-13 | Exatamente um ano fora não conta como "teto atingido" | baixa | não | A | **corrigido** na main `50e5636` (QA-092 passa) |
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
-| D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido na branch da A** (`38dadcd`, QA-186 passa: "No princípio, a região estava vazia…"); à espera do merge |
-| D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa). À espera do merge |
+| D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido** (QA-186 passa na main `e27d489`: "No princípio, a região estava vazia…") |
+| D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Nesta rodada, também:**
-- **Leveza em 1x, visível** (semente 7, 120 s): o mundo novo fica em 5,85%, o de 50 anos em 3,46% e o de 200 anos em 7,18% de um núcleo (pico de 9,65%), com 234 a 299 MB.
+- **O som não pesa (QA-197):** mesmo mundo às 17h, em 1x, visível, 3 pares de 90 s. Com `--som-inaudivel` (tudo toca e é mixado, a −80 dB, para não fazer barulho no PC do usuário) contra `--sem-som`:
+  - nos três pares, o som custa −0,04%, +0,19% e +2,22% de um núcleo (3,06 contra 3,10; 3,17 contra 2,98; 4,83 contra 2,61);
+  - a média é 0,79% e a mediana 0,19%, abaixo do limite de 1%; o terceiro par destoa, com a máquina ocupada pelas outras sessões;
+  - a memória fica 2 MB acima (limite: 20 MB).
+- **Leveza em 1x na 0.2.0, calado:** o mundo novo fica em 2,75% de um núcleo (pico de 4,36%) e o de 200 anos em 6,28% (pico de 8,11%), com 240 e 288 MB.
+- **Fechar o jogo:** 20 fechamentos (10 pelo fim da duração, 10 pela mensagem da janela), todos com código 0.
+- **As 11 capturas** saíram (`qa/capturas/`).
+- **Os cenários em janela abrem calados** desde a 0.2 (`--sem-som`), para não fazer barulho no PC de quem trabalha.
+- **Leveza em 1x na 0.1, visível** (semente 7, 120 s): o mundo novo fica em 5,85%, o de 50 anos em 3,46% e o de 200 anos em 7,18% de um núcleo (pico de 9,65%), com 234 a 299 MB.
 - **Opções de teste da janela:**
   - `--mundo-novo` abre o mundo vazio, mesmo junto com `--semente`, a não ser com `--com-povo`;
   - `--semente` sozinha, `--dias`, `--anos`, `--cena` e `--cenario-raro` já trazem o povo;
@@ -71,7 +82,7 @@
 - **Fechar o jogo:** 12 fechamentos com o atalho ligado (6 pela mensagem da janela, 6 pelo "Sair"), todos com código 0 e com "threads encerradas" no log.
 - **Observação menor para a B:** num fechamento, o log escreve "threads encerradas" 3 vezes, porque mais de um caminho de saída chama `encerrar()`. É inofensivo.
 
-A saída completa da última rodada está em `qa/ultima-rodada.txt`, e os resultados em janela em `qa/janela/resultado-*.json`.
+A saída completa da última rodada está em `qa/ultima-rodada.txt` (núcleo), `qa/ultima-rodada-som.txt` e `qa/ultima-rodada-lupa.txt`, e os resultados em janela em `qa/janela/resultado-*.json`.
 
 ## Defeitos
 
@@ -518,7 +529,9 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 
 *Escritos em 01/11/2026, na main `8a2f13a`, antes de A, B e C começarem o som. Os cenários são QA-188 a QA-197 (área 17 da matriz).*
 
-**Hoje: 0 passam, 9 falham, 1 pulado.** Todos falham pelo motivo esperado: o som ainda não existe.
+**Na main `e27d489` (0.2.0): 9 passam, 0 falham e 1 pulado** (o QA-197 em janela; o QA-194 espera o PC livre). A tabela abaixo é a de antes do som, em `8a2f13a`, quando todos falhavam pelo motivo esperado.
+
+**Na 0.2.0, o que os testes viram:** o volume inicial em −12 dB; a escolha gravada como `moldura/som`; com o som ligado, os seis poderes tocaram 11 players, 2 deles pesados; no modo discreto, 9 e nenhum pesado; com o som desligado, nenhum audível, nem no quadro em que foi desligado.
 
 | ID | Hoje | Por quê |
 |---|---|---|
@@ -550,6 +563,22 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 - O `--headless` força o driver `Dummy`. Os barramentos e os players valem; a CPU do áudio não. Por isso o QA-197 roda em janela.
 - O QA-197 tem ruído de ±1,7% de um núcleo em medidas de 10 s. Com 3 pares de 90 s, o ruído fica abaixo do limite de 1%.
 
+## Lupa (TDD, antes do botão)
+
+*Escritos em 02/11/2026, na main `e27d489`. Os cenários são QA-200 a QA-205 (área 18 da matriz).*
+
+**Hoje: 0 passam, 5 falham e 1 pulado.** Todos falham pelo motivo esperado: não há botão `lupa` na alça. O QA-205 precisa da tela de verdade (`--janela`).
+
+**O contrato proposto à B** (revisável):
+- **Botão:** de id `"lupa"` em `interface.botoes`, em todas as fases.
+- **Cliques:** o esquerdo sobe (2x → 3x → 4x → 2x) e o direito desce (4x → 3x → 2x → 4x). Hoje, o clique direito na alça não faz nada.
+- **Tela:** uma escala que não cabe na área útil da tela é pulada, e a janela fica sempre inteira dentro da área útil de uma tela, mesmo encostada num canto.
+- **Dica:** a dica do botão mostra a escala atual ("3x") e acompanha a mudança.
+- **Escala guardada:** em `moldura/escala` no `moldura.cfg`, como a de Ctrl+2 a 4; com `--sem-config`, não.
+- **Conferência:** o teste lê `moldura.escala`, o tamanho da janela (só com tela) e o texto da dica visível (`interface._dica_textos`).
+
+**Ainda não sei se o harness da lupa funciona com o botão de verdade:** hoje ele só pôde mostrar que falha. Confiro quando a B entregar.
+
 ## Como rodar
 
 ```bash
@@ -570,6 +599,7 @@ powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 -Parte 
   - Abrem o jogo com as opções de teste, sem mouse nem teclado, com `APPDATA` em `%TEMP%\simvida_qa_janela`.
   - Os resultados vão para `qa/janela/resultado-*.json` e as capturas para `qa/capturas/`.
   - `-Parte som` mede o custo do som (QA-197), em pares com e sem `--sem-som` (`-Pares 3`, `-Segundos 90`).
+- Os cenários da lupa (QA-200 a QA-205), do mesmo jeito: `--script res://qa/lupa/testar_lupa.gd`, isolados em `%TEMP%\simvida_qa_lupa`; `-- --janela` acrescenta o QA-205.
 - Os cenários do som (QA-188 a QA-196):
 
 ```bash

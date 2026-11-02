@@ -1,0 +1,22 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+[etapa inicial] 1.8 s
+[etapa reabrir] 2.8 s
+  [lupa-qa] antes de fechar: 2x
+[etapa reabrir2] 1.7 s
+[etapa povo] 1.6 s
+FALHOU QA-200  o botão da lupa está na alça, no mundo vazio e com povo
+      [inicial] FALHOU não há botão de id "lupa" na alça do mundo vazio (há ["criar_povo", "ritmo:pausa", "ritmo:normal", "ritmo:rapido", "ritmo:rapido2", "ritmo:salto", "cronica", "estante", "esconder", "som"])
+      [povo] FALHOU com povo: não há botão de id "lupa" (há ["poderes", "ritmo:pausa", "ritmo:normal", "ritmo:rapido", "ritmo:rapido2", "ritmo:salto", "cronica", "estante", "linhagem", "esconder", "som"])
+FALHOU QA-201  o clique esquerdo sobe a escala: 2x, 3x, 4x e volta a 2x
+      [inicial] FALHOU sem o botão da lupa
+FALHOU QA-202  o clique direito desce a escala: 4x, 3x, 2x e volta a 4x
+      [inicial] FALHOU sem o botão da lupa
+FALHOU QA-203  a dica da lupa mostra a escala atual
+      [inicial] FALHOU sem o botão da lupa
+FALHOU QA-204  a escala escolhida pela lupa sobrevive a fechar e abrir
+      [inicial] FALHOU sem o botão da lupa
+      [reabrir] FALHOU ao reabrir depois de fechar em 3x: 2x (janela (960, 356))
+      [reabrir2] FALHOU ao reabrir depois de fechar em 4x: 2x (janela (960, 356))
+PULADO QA-205  a janela nunca sai da tela ao mudar a escala
+      só com --janela (precisa da tela de verdade)
+RESUMO lupa: 0 passam, 5 falham, 1 pulados
