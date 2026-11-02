@@ -112,8 +112,6 @@ const CARGA_DA_PECA := {"cesto": "acoes/carregar_cesto_cabeca_forte_4q", "pote":
 const SOLTA_ALVO := 0.4
 const CRAVA_ALVO := 0.9
 const ARCO_ALVO := 9.0
-## No ensinar, o mestre fica a esta distância da criança, e não colado nela (auditoria 13).
-const MESTRE_LONGE := 9.0
 ## No estágio 6, os homens andam e param de chapéu de aba larga (auditoria 11, D2).
 const CHAPEU_DO_ESTAGIO6 := {"adulto_a_andar_4q": "adulto_e6_andar_4q", "adulto_a_parado_2q": "adulto_e6_parado_2q"}
 
@@ -221,8 +219,6 @@ func atualizar(delta: float, relogio: float) -> Array:
 				destino = float(chega.fogo) + lado_k * (10.0 + 7.0 * (int(chega.k) / 2))
 				if bool(chega.recomeco) and int(chega.k) == 0:
 					destino = float(chega.fogo) - 4.0  # quem acende, ajoelhado junto da lenha
-		if t.cena.get("tipo", "") == "ensinar" and String(t.get("detalhe", "")) in ["mostrar", "aprovar"]:
-			destino = _lugar_do_mestre(t.cena, destino)
 		var abate := _lugar_na_cacada(t, id)
 		if not abate.is_empty():  # a caçada encenada: em fila na espreita, e no abate em volta do bicho
 			destino = abate.x
@@ -893,17 +889,6 @@ func _cena_ativa(cena: Dictionary) -> Dictionary:
 		if str(c.get("id", -1)) == str(cena.get("id", -2)):
 			return c
 	return {}
-
-
-## Onde o mestre fica enquanto a criança tenta: MESTRE_LONGE atrás de quem atira (o
-## núcleo o põe a 4 px, e as duas figuras de 12 px viravam uma silhueta só).
-func _lugar_do_mestre(cena: Dictionary, destino: float) -> float:
-	var c := _cena_ativa(cena)
-	if c.get("etapas", []).is_empty():
-		return destino
-	var xa: float = float(c["etapas"][0]["x"])
-	var lado: float = 1.0 if float(c.get("alvo", xa)) >= xa else -1.0
-	return xa - lado * MESTRE_LONGE
 
 
 ## O minuto (de jogo) dentro da etapa atual da cena, e a etapa.
