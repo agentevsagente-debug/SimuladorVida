@@ -286,6 +286,14 @@ Passar o cursor sobre um habitante mostra também o que ele está fazendo, o que
 
 Nenhum poder atendia a prece de frio. O fogo em intensidade baixa acende as fogueiras e aquece, sem queimar; em intensidade média ou alta, continua queimando. Não é um poder novo: é a intensidade que o gesto já tem.
 
+### O som (pedido do autor em 01/11/2026, versão 0.2)
+
+O jogo ganha som, sempre discreto, como o de uma janela aberta para fora.
+- **Ambiente:** vento, pássaros e água de dia; grilos, coruja e fogo à noite; chuva, tempestade e neve conforme o clima; a vila mais cheia soa mais viva.
+- **Acontecimentos:** o trovão do raio, o ronco do terremoto, o fogo, a água do dilúvio, um sino leve no milagre, o arremesso e o grito da caçada, o choro do recém-nascido ao longe.
+- **Silêncio fácil (decisão do autor):** um botão de som na alça desliga tudo na hora, e a tecla M faz o mesmo. A escolha fica guardada. O som também se cala sozinho quando a janela é escondida ou minimizada. O volume começa baixo.
+- **Sem dependência externa:** os sons são gerados por código, como a arte.
+
 ---
 
 ## Menor conjunto que entrega a essência
