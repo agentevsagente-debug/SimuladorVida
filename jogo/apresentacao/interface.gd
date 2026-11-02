@@ -204,6 +204,7 @@ func _apertar(id: String) -> void:
 		var p := id.substr(6)
 		poder = "" if p == poder else p
 		aberto = ""
+		print("[interface] poder escolhido: %s" % (poder if poder != "" else "nenhum"))
 		_avisar(NOME_PODER[poder] + ": segure sobre o mundo" if poder != "" else "Nenhum poder escolhido")
 	elif id.begins_with("ritmo:"):
 		aberto = ""
@@ -378,6 +379,7 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 				_avisar("Cancelado")
 			elif poder != "":
 				poder = ""
+				print("[interface] poder escolhido: nenhum")
 				_montar_botoes()
 			queue_redraw()
 			return true

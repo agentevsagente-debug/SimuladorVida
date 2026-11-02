@@ -43,49 +43,91 @@ public static class Win32 {
         return s.ToString();
     }
 
-    public static void Clicar(int x, int y) {
-        POINT antes; GetCursorPos(out antes);
+    // --- interferência: alguém (o usuário) mexeu no mouse ou trocou de janela ---------
+    // Cada ação confere, antes de apertar, se o cursor está mesmo no ponto pedido (e
+    // reposiciona uma vez se não estiver), e, no fim, se o cursor ainda está onde a ação
+    // o deixou e se outra janela, que não é nossa, tomou o foco. Cada desvio soma 1 em
+    // Interferencias; o verificar.ps1 marca o passo como interferência, e não falha.
+    public static int Interferencias = 0;
+    public static System.Collections.Generic.HashSet<IntPtr> Nossas = new System.Collections.Generic.HashSet<IntPtr>();
+
+    static bool No(int x, int y) {
+        POINT c; GetCursorPos(out c);
+        return Math.Abs(c.X - x) <= 1 && Math.Abs(c.Y - y) <= 1;
+    }
+
+    static void Posicionar(int x, int y) {
         SetCursorPos(x, y);
         System.Threading.Thread.Sleep(60);
-        mouse_event(0x0002, 0, 0, 0, IntPtr.Zero); // botão esquerdo para baixo
-        mouse_event(0x0004, 0, 0, 0, IntPtr.Zero); // para cima
+        if (!No(x, y)) {  // o cursor saiu do lugar entre o posicionar e o apertar: uma vez mais
+            Interferencias++;
+            SetCursorPos(x, y);
+            System.Threading.Thread.Sleep(60);
+        }
+    }
+
+    static void Conferir(IntPtr focoAntes, int x, int y) {
+        if (!No(x, y)) Interferencias++;
+        IntPtr foco = GetForegroundWindow();
+        if (foco != focoAntes && !Nossas.Contains(foco)) Interferencias++;
+    }
+
+    public static void Clicar(int x, int y) { Botao(x, y, 0x0002, 0x0004); }
+    public static void ClicarDireito(int x, int y) { Botao(x, y, 0x0008, 0x0010); }
+
+    static void Botao(int x, int y, uint baixo, uint cima) {
+        POINT antes; GetCursorPos(out antes);
+        IntPtr foco = GetForegroundWindow();
+        Posicionar(x, y);
+        mouse_event(baixo, 0, 0, 0, IntPtr.Zero);
+        mouse_event(cima, 0, 0, 0, IntPtr.Zero);
         System.Threading.Thread.Sleep(60);
+        Conferir(foco, x, y);
         SetCursorPos(antes.X, antes.Y);
     }
 
     // Aperta, segura por `ms` e solta, sem mexer o cursor (o gesto dos poderes).
     public static void Segurar(int x, int y, int ms) {
         POINT antes; GetCursorPos(out antes);
-        SetCursorPos(x, y);
-        System.Threading.Thread.Sleep(60);
+        IntPtr foco = GetForegroundWindow();
+        Posicionar(x, y);
         mouse_event(0x0002, 0, 0, 0, IntPtr.Zero);
         System.Threading.Thread.Sleep(ms);
+        bool parado = No(x, y);  // ainda no ponto ao soltar?
         mouse_event(0x0004, 0, 0, 0, IntPtr.Zero);
         System.Threading.Thread.Sleep(60);
+        if (!parado) Interferencias++;
+        Conferir(foco, x, y);
         SetCursorPos(antes.X, antes.Y);
     }
 
     public static void Rolar(int x, int y, int passos) {
         POINT antes; GetCursorPos(out antes);
-        SetCursorPos(x, y);
-        System.Threading.Thread.Sleep(60);
+        IntPtr foco = GetForegroundWindow();
+        Posicionar(x, y);
         mouse_event(0x0800, 0, 0, (uint)(120 * passos), IntPtr.Zero); // roda do mouse
         System.Threading.Thread.Sleep(60);
+        Conferir(foco, x, y);
         SetCursorPos(antes.X, antes.Y);
     }
 
     public static void Arrastar(int x, int y, int dx, int dy) {
         POINT antes; GetCursorPos(out antes);
-        SetCursorPos(x, y);
-        System.Threading.Thread.Sleep(60);
+        IntPtr foco = GetForegroundWindow();
+        Posicionar(x, y);
         mouse_event(0x0002, 0, 0, 0, IntPtr.Zero);
+        bool desviou = false;
         for (int i = 1; i <= 10; i++) {
             System.Threading.Thread.Sleep(30);
+            int px = x + dx * (i - 1) / 10, py = y + dy * (i - 1) / 10;
+            if (i > 1 && !No(px, py)) desviou = true;  // alguém mexeu no meio do arraste
             SetCursorPos(x + dx * i / 10, y + dy * i / 10);
         }
         System.Threading.Thread.Sleep(60);
         mouse_event(0x0004, 0, 0, 0, IntPtr.Zero);
         System.Threading.Thread.Sleep(60);
+        if (desviou) Interferencias++;
+        Conferir(foco, x + dx, y + dy);
         SetCursorPos(antes.X, antes.Y);
     }
 
