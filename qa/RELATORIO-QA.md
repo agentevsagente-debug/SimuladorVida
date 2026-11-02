@@ -514,6 +514,42 @@ Cada linha abaixo é um teste que **falha hoje** (conferido na rodada de `f87b76
 
 Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primeiro o cenário em `qa/cenarios.md` e o teste em `rodar_qa.gd`, que deve falhar antes da entrega.
 
+## Versão 0.2: o som (TDD, antes do som)
+
+*Escritos em 01/11/2026, na main `8a2f13a`, antes de A, B e C começarem o som. Os cenários são QA-188 a QA-197 (área 17 da matriz).*
+
+**Hoje: 0 passam, 9 falham, 1 pulado.** Todos falham pelo motivo esperado: o som ainda não existe.
+
+| ID | Hoje | Por quê |
+|---|---|---|
+| QA-188 | FALHOU | `project.godot` tem `[audio] driver/driver="Dummy"`: o jogo da 0.1 não toca som nenhum, mesmo que o código toque |
+| QA-189 | FALHOU | o `Master` abre a 0 dB |
+| QA-190 | FALHOU | não há botão `som` na alça, nem no mundo vazio nem com povo |
+| QA-191 | FALHOU | M não faz nada |
+| QA-192 | FALHOU | não há escolha para guardar |
+| QA-193 | FALHOU | a janela se esconde e o `Master` continua aberto |
+| QA-194 | PULADO | só roda com `--janela` |
+| QA-195 | FALHOU | os seis poderes não tocam nenhum som (nem pesado, nem leve) |
+| QA-196 | FALHOU | a prova falha: com o som ligado, nada toca; o silêncio não dá para provar |
+| QA-197 | FALHOU | driver `Dummy` e sem a opção `--sem-som` |
+
+**O contrato proposto à B** (revisável; se os nomes mudarem, eu ajusto os testes):
+- **Botão:** de id `"som"` em `interface.botoes`, em todas as fases (mundo vazio, com povo, extinto).
+- **Tecla:** M (hoje livre).
+- **Silêncio:** som desligado = o barramento `Master` mudo (`AudioServer.is_bus_mute`), no mesmo quadro do clique ou da tecla. Esconder e minimizar também calam o `Master`. Mostrar só devolve o som se o jogador o deixou ligado.
+- **Escolha guardada:** no `user://moldura.cfg`, gravada ao mudar, e não só ao fechar. Ela vale desde o primeiro quadro da próxima abertura, sem estalo antes de ler a configuração.
+- **Volume inicial:** o `Master` entre −60 e −12 dB com a configuração nova.
+- **Sons pesados:** os players ficam no grupo `som_pesado`. A B escolhe quais são, mas a lista não pode ser vazia, e os seis poderes na intensidade cheia precisam tocar pelo menos um.
+- **Players:** os sons tocam por `AudioStreamPlayer` (ou `2D`/`3D`) na árvore, para o teste ver quem toca e em que barramento.
+- **Opção de teste:** `--sem-som` abre com o som desligado sem gravar a escolha. Serve para o QA-197 comparar o mesmo jogo com e sem som.
+
+**Como os testes veem o som:**
+- `testar_som.gd` abre o jogo inteiro sem tela e usa os poderes pelo gesto de verdade: escolhe, segura 2,3 s sobre uma pessoa e solta. Os seis dão milagre hoje.
+- A cada quadro, anota os players que tocam.
+- "Audível" = tocando, acima de −60 dB e num barramento cuja rota até o `Master` não está muda. Assim, um som de acontecimento num barramento que não passa pelo `Master` também é pego.
+- O `--headless` força o driver `Dummy`. Os barramentos e os players valem; a CPU do áudio não. Por isso o QA-197 roda em janela.
+- O QA-197 tem ruído de ±1,7% de um núcleo em medidas de 10 s. Com 3 pares de 90 s, o ruído fica abaixo do limite de 1%.
+
 ## Como rodar
 
 ```bash
@@ -533,6 +569,15 @@ powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 -Parte 
 
   - Abrem o jogo com as opções de teste, sem mouse nem teclado, com `APPDATA` em `%TEMP%\simvida_qa_janela`.
   - Os resultados vão para `qa/janela/resultado-*.json` e as capturas para `qa/capturas/`.
+  - `-Parte som` mede o custo do som (QA-197), em pares com e sem `--sem-som` (`-Pares 3`, `-Segundos 90`).
+- Os cenários do som (QA-188 a QA-196):
+
+```bash
+Godot_v4.7.2-stable_win64_console.exe --headless --path jogo --script res://qa/som/testar_som.gd
+```
+
+  - Cada etapa roda num processo próprio, com `APPDATA` em `%TEMP%\simvida_qa_som\<grupo>`; leva uns 2 min.
+  - `-- --janela` acrescenta o QA-194 numa janela de verdade (minimizada e restaurada pelo próprio teste, sem mouse).
   - **Antes da primeira vez num worktree novo**, importe os recursos com `--headless --path jogo --import`. Sem isso, a janela abre sem arte. Depois, volte os `.import` ao estado do git (veja a observação O-1).
 
 ## Pasta de dados do jogador

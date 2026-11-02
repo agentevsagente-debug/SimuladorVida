@@ -1,8 +1,8 @@
-# Cenários de QA com o jogo em janela (sessão D). Sem mouse nem teclado reais: só as opções
+﻿# Cenários de QA com o jogo em janela (sessão D). Sem mouse nem teclado reais: só as opções
 # de teste da apresentação (jogo/RELATORIO.md) e a captura interna da vista.
 #
 # Uso (da raiz do repositório):
-#   powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 [-Parte fechar|fecharjanela|capturas|leveza|tudo] [-Segundos 90]
+#   powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 [-Parte fechar|fecharjanela|capturas|leveza|som|tudo] [-Segundos 90]
 #
 # Opções de teste e o mundo vazio (B, depois de 3db5a8c): --mundo-novo abre o mundo vazio, mesmo com
 # --semente, a não ser com --com-povo; --semente sozinha, --dias, --anos, --cena e --cenario-raro já
@@ -13,10 +13,11 @@
 # moldura.cfg, estante, logs) fica fora da pasta de dados real do jogador.
 # Saída: qa/janela/resultado-*.json e qa/capturas/*.png na raiz do repositório.
 param(
-    [ValidateSet('fechar', 'fecharjanela', 'capturas', 'leveza', 'tudo')][string]$Parte = 'tudo',
+    [ValidateSet('fechar', 'fecharjanela', 'capturas', 'leveza', 'som', 'tudo')][string]$Parte = 'tudo',
     [int]$Segundos = 90,
     [int]$Aberturas = 10,
     [int[]]$AnosLeveza = @(0, 200),
+    [int]$Pares = 3,          # -Parte som: quantos pares (som ligado, --sem-som) medir, alternados
     [switch]$ComAtalho,
     [string]$Tecla = 'J',   # Ctrl+Alt+J: não disputa o Ctrl+Alt+H de outro jogo aberto   # liga o atalho global (Ctrl+Alt+H), como no jogo de verdade: sem ele, --sem-atalho
     [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe"
@@ -179,5 +180,54 @@ if ($Parte -in 'leveza', 'tudo') {
         Write-Host ("leveza {0}: {1}% de um núcleo (pico {2}%), {3} MB" -f $c.nome, $media, ($amostras | Measure-Object -Maximum).Maximum, $mem)
     }
     $res | ConvertTo-Json -Depth 3 | Set-Content (Join-Path $saida "resultado-leveza-$($AnosLeveza -join '-').json") -Encoding utf8
+}
+# ------------------------------------------------------------ QA-197: leveza do som
+# Mede o mesmo mundo com o som ligado e com --sem-som (a opção de teste pedida à B), em pares
+# alternados, e compara: o áudio custa menos de 1% de um núcleo e menos de 20 MB. Só vale com um
+# driver de áudio de verdade: com o Dummy do project.godot da 0.1, não sai som nenhum.
+function Medir([string[]]$opcoes, [string]$rotulo) {
+    $p = Abrir $opcoes $rotulo
+    Start-Sleep -Seconds 20
+    $envoltorio = $p
+    $filho = Get-CimInstance Win32_Process -Filter "ParentProcessId=$($p.Id)" | Select-Object -First 1
+    if ($filho) { $p = Get-Process -Id $filho.ProcessId }
+    $p.Refresh(); $t0 = Get-Date; $cpu0 = $p.TotalProcessorTime.TotalSeconds; $mem = 0
+    while (((Get-Date) - $t0).TotalSeconds -lt $Segundos) {
+        Start-Sleep -Seconds 5
+        $p.Refresh()
+        if ($p.HasExited) { break }
+        $mem = [math]::Max($mem, [math]::Round($p.WorkingSet64 / 1MB, 1))
+    }
+    $dt = ((Get-Date) - $t0).TotalSeconds
+    $media = [math]::Round(($p.TotalProcessorTime.TotalSeconds - $cpu0) / $dt * 100, 2)
+    if (-not $p.HasExited) { $p.Kill() }
+    if (-not $envoltorio.HasExited) { $envoltorio.Kill() }
+    return [pscustomobject]@{ rotulo = $rotulo; cpu_1nucleo = $media; working_set_max_mb = $mem }
+}
+
+if ($Parte -in 'som', 'tudo') {
+    $godotcfg = Get-Content (Join-Path $projeto 'project.godot') -Raw
+    $dummy = $godotcfg -match 'driver/driver(\.windows)?="Dummy"'
+    $temOpcao = (Get-Content (Join-Path $projeto 'apresentacao\moldura.gd') -Raw) -match '--sem-som'
+    $base = @('--sem-config', '--mundo-novo', '--semente=7', '--com-povo', '--hora=17', '--ritmo=normal', "--duracao=$($Segundos + 60)")
+    $medidas = @()
+    for ($i = 1; $i -le $Pares; $i++) {
+        $medidas += Medir $base "som-ligado-$i"
+        $medidas += Medir ($base + '--sem-som') "som-desligado-$i"
+    }
+    $lig = $medidas | Where-Object { $_.rotulo -like 'som-ligado*' }
+    $des = $medidas | Where-Object { $_.rotulo -like 'som-desligado*' }
+    $dcpu = [math]::Round((($lig | Measure-Object cpu_1nucleo -Average).Average - ($des | Measure-Object cpu_1nucleo -Average).Average), 2)
+    $dmem = [math]::Round((($lig | Measure-Object working_set_max_mb -Average).Average - ($des | Measure-Object working_set_max_mb -Average).Average), 1)
+    $motivo = @()
+    if ($dummy) { $motivo += 'o project.godot usa o driver de áudio Dummy: não sai som' }
+    if (-not $temOpcao) { $motivo += 'a moldura não tem a opção --sem-som: as duas medidas são do mesmo jogo' }
+    if ($dcpu -ge 1.0) { $motivo += "o som custa $dcpu% de um núcleo (limite: 1%)" }
+    if ($dmem -ge 20) { $motivo += "o som custa $dmem MB (limite: 20 MB)" }
+    $estado = if ($motivo.Count -eq 0) { 'PASSOU' } else { 'FALHOU' }
+    Write-Host ("{0} QA-197  o som custa {1}% de um núcleo e {2} MB a mais (pares: {3}){4}" -f $estado, $dcpu, $dmem, $Pares,
+        $(if ($motivo.Count) { ': ' + ($motivo -join '; ') } else { '' }))
+    [pscustomobject]@{ estado = $estado; delta_cpu_1nucleo = $dcpu; delta_working_set_mb = $dmem; motivos = $motivo; medidas = $medidas } |
+        ConvertTo-Json -Depth 3 | Set-Content (Join-Path $saida 'resultado-som.json') -Encoding utf8
 }
 Write-Host "user:// isolado: $userdir"
