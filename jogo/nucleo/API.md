@@ -338,7 +338,7 @@ A lista de nomes está em `Rotina.ETAPAS_CACADA`.
 - `criar_povo(x)` deixa o tempo correr até as 7h, se preciso, e cria a família de 12 pessoas na zona de x, com o evento `inicio`. No mundo que nunca teve gente, a era fica 1; depois de uma extinção, abre a seguinte;
 - `abandonar()` antes do primeiro povo devolve `{}`: não há crônica.
 
-**Na apresentação** (decidido pelo orquestrador): `--mundo-novo` sempre começa vazio, a menos que venha `--com-povo`; quem decide isso é o `vista.gd` da B.
+**Na apresentação** (decidido pelo orquestrador; quem aplica é o `vista.gd` da B): `--mundo-novo` sempre começa vazio, a menos que venha `--com-povo`, mesmo junto com `--semente`. `--semente` sozinha, `--dias`, `--anos`, `--cena` e `--cenario-raro` nascem com o povo.
 
 **Para testes e ferramentas:** `Mundo.new(semente, comandos, Mundo.HORA_INICIAL, true)` (o quarto parâmetro, `p_com_povo`) já nasce com o primeiro povo na floresta, à meia-noite, e as horas da noite passam como passos normais até as 7h: é o mundo de antes, igual. Todas as ferramentas de `ferramentas_sim/` usam essa forma. Ao carregar um mundo salvo, nada disso muda (a persistência cria o mundo com `Mundo.new(semente, [], 0)`).
 
