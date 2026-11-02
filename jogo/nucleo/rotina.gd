@@ -997,18 +997,24 @@ func _conversas_no_trabalho(g, c: Dictionary) -> void:
 ## conversa: conversam. Se estão longe, o segundo vai até o primeiro e depois volta.
 ## Devolve os dois ids, ou [] se não achou.
 func _tentar_conversa(g, t: float, w: int, ultimos: Dictionary, dist: float) -> Array:
-	var gente: Array = _embaralhados(g.membros.map(func(id): return m.pessoas[id]), 3900 + w)
 	# O pescador e quem busca água continuam no que fazem: são eles que levam o povo ao lago.
+	# Quem pode conversar é filtrado uma vez, na ordem embaralhada, e o bloco de cada um nesse
+	# instante é procurado uma vez só (o resultado é o mesmo de comparar todos com todos).
+	var gente: Array = []
+	for p in _embaralhados(g.membros.map(func(id): return m.pessoas[id]), 3900 + w):
+		if not ultimos.has(p.id) and p.idade(ano) >= 10 and not papeis.get(p.id, "") in ["pescador", "agua"]:
+			gente.append(p)
+	var blocos := {}
 	for a in gente:
-		if ultimos.has(a.id) or a.idade(ano) < 10 or papeis.get(a.id, "") in ["pescador", "agua"]:
+		var ia := _bloco_de_trabalho(a.id, t, 9.0)
+		if ia < 0:
 			continue
 		for b in gente:
-			if b == a or ultimos.has(b.id) or b.idade(ano) < 10 or papeis.get(b.id, "") in ["pescador", "agua"]:
+			if b == a:
 				continue
-			var ia := _bloco_de_trabalho(a.id, t, 9.0)
-			if ia < 0:
-				break
-			var ib := _bloco_de_trabalho(b.id, t, 9.0)
+			if not blocos.has(b.id):
+				blocos[b.id] = _bloco_de_trabalho(b.id, t, 9.0)
+			var ib: int = blocos[b.id]
 			if ib < 0:
 				continue
 			var xa: float = planos[a.id][ia]["x"]

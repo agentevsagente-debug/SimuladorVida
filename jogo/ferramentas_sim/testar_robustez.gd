@@ -78,6 +78,8 @@ func _initialize() -> void:
 	_relogio(caminho, bons)
 	# O disco cheio.
 	_disco_cheio(caminho, bons)
+	# Um caminho com mais de 260 caracteres (o limite do Windows): salvar e carregar funcionam.
+	_caminho_longo()
 	_limpar(caminho)
 	print("%d falhas" % falhas)
 	quit(1 if falhas > 0 else 0)
@@ -226,3 +228,21 @@ func _ilegiveis(caminho: String, bons: Dictionary) -> void:
 	print("  ilegíveis: o principal guardado em %s, e sobreviveu a 4 salvamentos" % guardado.get_file())
 	_limpar(caminho)
 	_restaurar(bons)
+
+
+func _caminho_longo() -> void:
+	var pasta := PASTA + "/" + "p".repeat(100) + "/" + "q".repeat(100)
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(pasta))
+	var c := pasta + "/mundo.txt"
+	var m := Mundo.new(2, [], Mundo.HORA_INICIAL, true)
+	m.avancar_dias(10)
+	var ok := true
+	for k in 5:
+		ok = Persistencia.salvar(m, c) and ok
+		m.avancar_dias(1)
+	var w = Persistencia.carregar(c)
+	var n := ProjectSettings.globalize_path(c).length()
+	conferir(n > 260 and ok and w != null and w.recuperado_de.is_empty() and FileAccess.file_exists(Arquivo.copia(c, 3)),
+		"caminho de %d caracteres: salvar %s, carregar do principal %s" % [n, ok, w != null and w.recuperado_de.is_empty()])
+	print("  caminho de %d caracteres: 5 salvamentos, as 3 cópias, e carrega do principal" % n)
+	_limpar(c)
