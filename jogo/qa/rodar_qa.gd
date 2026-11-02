@@ -242,6 +242,7 @@ func _rodar_tudo() -> void:
 		["fim do mundo", _bloco_fim],
 		["estante e abandono", _bloco_estante],
 		["guerra (TDD)", _bloco_guerra],
+		["textos na fonte", _bloco_textos],
 		["inspeção do código", _bloco_inspecao],
 	]
 	for b in blocos:
@@ -1696,6 +1697,108 @@ func _bloco_guerra() -> void:
 
 
 # ---------------------------------------------------------------- inspeção do código
+
+# ---------------------------------------------------------------- 16. textos que a tela mostra
+
+## A fonte da apresentação (B): os textos do núcleo só podem usar os caracteres que ela desenha.
+const FONTE_TELA := "res://arte/interface/fonte_5x7_escura.fnt"
+
+
+func _glifos_da_fonte() -> Dictionary:
+	var g := {10: true}   # a quebra de linha
+	for linha in FileAccess.get_file_as_string(FONTE_TELA).split("\n"):
+		if linha.begins_with("char id="):
+			g[int(linha.get_slice(" ", 1).trim_prefix("id="))] = true
+	return g
+
+
+## Os problemas de um texto: resto de molde ({, }, |) e caracteres que a fonte não tem.
+func _problemas_do_texto(onde: String, texto: String, glifos: Dictionary, achados: Dictionary) -> void:
+	for i in texto.length():
+		var c := texto.unicode_at(i)
+		if glifos.has(c) and not texto[i] in ["{", "}", "|"]:
+			continue
+		# um achado por caractere e por tipo de texto (sem a semente e o número do evento), com um exemplo
+		var tipo := onde.substr(onde.find(" ") + 1).get_slice(" #", 0)
+		var chave := "'%s' (U+%04X) em %s" % [texto[i] if c >= 32 else "?", c, tipo]
+		if not achados.has(chave):
+			var trecho := texto.substr(maxi(0, i - 30), 60).replace("\n", " / ")
+			achados[chave] = [0, "%s: «%s»" % [onde, trecho]]
+		achados[chave][0] += 1
+
+
+## O texto como a tela o mostra: a crônica e os livros passam pelo `_sem_markdown` da interface (B),
+## o mesmo do leitor da estante, que tira os #, os * e os _ e troca as aspas curvas.
+func _como_na_tela(md: String) -> String:
+	var interface_gd: Script = load("res://apresentacao/interface.gd")
+	if interface_gd.has_method("_sem_markdown"):
+		return interface_gd.call("_sem_markdown", md)
+	return md
+
+
+## QA-206 (achado pelo usuário: "{p} teve um sonho" na crônica viva, depois de um milagre de sonho):
+## os 11 poderes, nas 3 intensidades, sobre uma pessoa ou sem alvo, em 6 sementes; depois, todo texto que a tela
+## mostra (a crônica viva, a do ano em curso, a de cada ano, a de cada povo, a completa, que vira
+## livro, e o texto curto de cada evento) não pode ter resto de molde ({, }, |) nem caractere fora da
+## fonte da apresentação, depois do tratamento de markdown que a própria tela faz.
+func _bloco_textos() -> void:
+	if not _quer("QA-206"):
+		return
+	var glifos := _glifos_da_fonte()
+	var achados := {}
+	var textos := 0
+	var usos := 0
+	var sonhos := 0
+	var api_nova := _args(Mundo, "usar_poder") >= 5
+	for semente in [1, 2, 3, 4, 5, 6]:
+		var m := _mundo(semente)
+		var mo: Object = m
+		for rodada in 3:
+			for k in Mundo.PODERES.size():
+				var poder: String = Mundo.PODERES[k]
+				var vivos: Array = m.pessoas.values().filter(func(p): return p.vivo)
+				if vivos.is_empty():
+					break
+				var alvo = vivos[(semente * 7 + rodada * 5 + k * 3) % vivos.size()]
+				var x: float = m.posicao_de(alvo.id)
+				var forca: float = [0.2, 0.6, 1.0][rodada]
+				# metade dos gestos sem alvo, como a interface quando não há ninguém sob o cursor (o núcleo escolhe)
+				var alvo_id: int = alvo.id if (k + rodada + semente) % 2 == 0 else -1
+				var r: Dictionary = mo.callv("usar_poder", [poder, x, forca, alvo_id, -1.0]) if api_nova else m.usar_poder(poder, x, forca)
+				if r.get("ok", false):
+					usos += 1
+				m.avancar_hora()
+			_problemas_do_texto("s%d crônica em curso" % semente, _como_na_tela(m.cronica_em_curso()), glifos, achados)
+			m.avancar_dias(2)
+		# o caso do usuário: o sonho, sem alvo, em pontos espalhados da região e nas 3 intensidades
+		for n in 12:
+			var forca: float = [0.2, 0.6, 1.0][n % 3]
+			var r: Dictionary = mo.callv("usar_poder", ["sonho", 130.0 + 28.0 * n, forca, -1, -1.0]) if api_nova else m.usar_poder("sonho", 130.0 + 28.0 * n, forca)
+			if r.get("ok", false):
+				usos += 1
+				sonhos += 1
+			m.avancar_hora()
+		m.avancar_dias(400)   # fecha o ano dos gestos na crônica
+		var lista := [["crônica viva", m.cronica_viva()], ["crônica", m.cronica()], ["crônica em curso", m.cronica_em_curso()],
+			["livro", m.cronica_completa("Crônica de teste", "Primeira Era")]]
+		for a in range(0, m.ultimo_ano_na_cronica() + 1):
+			lista.append(["ano %d" % a, m.cronica_ano(a)])
+		for g in m.grupos_vivos():
+			lista.append(["povo %d" % g.id, m.cronica_do_povo(g.id)])
+		for par in lista:
+			textos += 1
+			_problemas_do_texto("s%d %s" % [semente, par[0]], _como_na_tela(par[1]), glifos, achados)
+		for e in m.eventos:   # o texto curto vai cru para a dica e para os avisos
+			var t: String = m.texto_curto(e.id)
+			if t != "":
+				textos += 1
+				_problemas_do_texto("s%d texto curto %s #%d" % [semente, e.tipo, e.id], t, glifos, achados)
+	var resumo := []
+	for chave in achados:
+		resumo.append("%s, %d vezes; ex. %s" % [chave, achados[chave][0], achados[chave][1]])
+	conferir("QA-206", usos > 0 and achados.is_empty(),
+		"%d gestos que deram certo (%d sonhos sem alvo), %d textos; caracteres fora da fonte ou resto de molde: %s" % [usos, sonhos, textos, "; ".join(resumo) if not resumo.is_empty() else "nenhum"])
+
 
 func _bloco_inspecao() -> void:
 	if _quer("QA-150"):

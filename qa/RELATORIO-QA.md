@@ -17,7 +17,7 @@
 | **Falham** | **0** |
 | Pulados | 3 (QA-053, QA-110, QA-127): por condição rara nas sementes |
 
-**A 0.2.0 fecha sem nenhuma falha.**
+**A 0.2.0 fechou sem nenhuma falha.** Depois, o QA-206 (textos na tela), escrito para o "{p} teve um sonho" que o usuário viu, falha na mesma main: acha o D-18 e o D-19 (A). Com ele, a matriz tem 143 cenários, e o núcleo dá 102 passam, 1 falha e 3 pulados.
 - O núcleo dá 102 passam; o som, 9 de 9 (o QA-194 pela B); a lupa, 6 de 6 (o QA-205 com a janela de verdade, com o PC liberado pelo usuário: 24 mudanças de escala nos 4 cantos, nenhuma fora da tela); os 13 cenários em janela passam.
 - Leveza em 1x, visível e calado: o mundo novo fica em 5,64% de um núcleo (pico de 7,79%) e o de 200 anos em 5,52% (pico de 9,35%), com 241 e 289 MB. O som custa −0,09% de um núcleo e 2,7 MB (QA-197, 3 pares): dentro do ruído.
 
@@ -65,6 +65,8 @@
 | D-14 | Os testes de QA iriam dentro do executável | baixa | não | B | **corrigido** (QA-181 passa) |
 | D-16 | A crônica (tecla C) no mundo novo vazio dá "Invalid access to 'grupo' on Nil" | média | **sim** (proposta): é o erro que a B viu, e o primeiro passo provável de um jogador novo | A | **corrigido** (QA-186 passa na main `e27d489`: "No princípio, a região estava vazia…") |
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
+| D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **aberto** (QA-206 falha): 37 vezes em 72 sonhos sem alvo; achado pelo usuário |
+| D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **aberto** (QA-206 falha): semente 5 |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
@@ -332,6 +334,22 @@ O registro original fica abaixo.
 - Quem dorme na sesta está `deitar` com o detalhe `sesta` (44 de 44).
 - **Esperado:** a frequência da API, ou o texto da API ajustado para a frequência real. As três cenas podem estar disputando os mesmos adultos.
 
+### D-18. O sonho sem alvo deixa o "{p}" no texto curto
+**Cenário:** QA-206 · **Gravidade:** média (o jogador vê o molde cru na tela) · **Área:** A · **Achado pelo usuário**, depois de um milagre de sonho
+
+- **Passos:** sementes 1 a 6; `usar_poder("sonho", x, intensidade, -1, -1.0)`, sem alvo, em 12 pontos da região (x de 130 a 438) e nas 3 intensidades; depois, `texto_curto(id)` de cada evento.
+- **Obtido:** "{p} teve um sonho", em **37** dos eventos `sonho` (por exemplo, o #59 da semente 1).
+- **Causa provável** (`cronista.texto_curto`): o `{p}` só é preenchido com `e.participantes[0]`, e o sonho sem alvo não põe o sonhador em `participantes`. É a causa que o orquestrador apontou.
+- **Esperado:** o nome de quem sonhou, ou outra frase quando não há sonhador.
+
+### D-19. O raio que mata quem guiava o povo deixa o "{g}" na crônica
+**Cenário:** QA-206 · **Gravidade:** média · **Área:** A
+
+- **Passos:** semente 5, os 11 poderes com e sem alvo nas 3 intensidades; o raio acerta quem guiava o povo.
+- **Obtido:** "Um raio sem nuvem acertou Marsaim, que guiava {g}, diante de todos." O texto sai igual na crônica em curso, na crônica viva, na crônica, na do ano 1 e no livro.
+- **Causa provável** (`cronista._divino`, "raio_divino", com `era_lider`, linhas 2453–2454): a frase usa `{g}`, mas o evento do raio divino não tem grupo (`e.grupo == -1`), então `v["g"]` não existe.
+- **Esperado:** o nome do povo de quem morreu.
+
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.
 
@@ -585,6 +603,17 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
 - **Dica:** a dica do botão mostra a escala atual ("3x") e acompanha a mudança.
 - **Escala guardada:** em `moldura/escala` no `moldura.cfg`, como a de Ctrl+2 a 4; com `--sem-config`, não.
 - **Conferência:** o teste lê `moldura.escala`, o tamanho da janela (só com tela) e o texto da dica visível (`interface._dica_textos`).
+
+## Textos na tela (QA-206)
+
+*Escrito em 02/11/2026, na main `2a516d8`, depois do "{p} teve um sonho" que o usuário viu.*
+
+- **O que confere:** todo texto que o núcleo manda para a tela. São a crônica viva, a do ano em curso, a de cada ano, a de cada povo, o livro (a crônica completa) e o texto curto de cada evento, em 6 sementes, depois dos 11 poderes nas 3 intensidades (com e sem alvo) e de 12 sonhos sem alvo por semente.
+- **O que acusa:**
+  - resto de molde: `{`, `}` e `|` (este último sobra de `{p:o|a}`);
+  - qualquer caractere que a fonte da apresentação (`fonte_5x7_escura.fnt`, a mesma das outras três cores) não desenha. A fonte tem ASCII de 32 a 126, menos `# $ & * < > @ [ \ ] ^ _ { | } ~` e o acento grave solto, mais `ª « º »`, as vogais acentuadas, `Ç ç Ü ü`, o travessão e as reticências.
+- **Como a tela vê o texto:** a crônica e o livro passam antes pelo `_sem_markdown` da interface, o mesmo do leitor da estante, que tira os `#`, `*` e `_` e troca as aspas curvas. O texto curto vai cru para a dica.
+- **Hoje:** 270 gestos que deram certo, 737 textos, e dois defeitos: D-18 e D-19. Nenhum caractere fora da fonte apareceu; só os moldes.
 
 ## Como rodar
 
