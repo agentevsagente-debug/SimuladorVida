@@ -1,0 +1,171 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+[fuzz] semente 2, 800 ações
+[simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
+[vista] semente=8 mundo novo
+[1.3] pasta de dados=C:/Users/sergi/AppData/Local/Temp/simvida_qa_janela/Godot/app_userdata/Simulador de vida
+[1.3] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
+[1.4] bandeja: dpi=144 ícone 24 px
+[1.4] alca largura=167
+[1.4] escala=3x janela=(1440, 534)
+[8.7] escala=2x janela=(960, 356)
+[9.0] escala=3x janela=(1440, 534)
+SCRIPT ERROR: Invalid access to property or key 'grupo' on a base object of type 'Nil'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] _apertar (res://apresentacao/interface.gd:224)
+       [5] tratar (res://apresentacao/interface.gd:339)
+       [6] _unhandled_input (res://apresentacao/moldura.gd:258)
+       [7] _botao (res://qa/fuzz/fuzz_entrada.gd:194)
+       [8] _quadro (res://qa/fuzz/fuzz_entrada.gd:148)
+[fuzz] ERRO tipo=2 no passo 63 (fase vazio):  Invalid access to property or key 'grupo' on a base object of type 'Nil'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:224 _apertar
+[fuzz]    res://apresentacao/interface.gd:339 tratar
+[fuzz]    res://apresentacao/moldura.gd:258 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:194 _botao
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:148 _quadro
+[fuzz]    ações antes: ["56[vazio] mover 430,121", "57[vazio] mover 456,96", "58[vazio] mover 388,25", "59[vazio] mover 91,130", "60[vazio] tecla E", "61[vazio] mover 318,97", "62[vazio] tecla Enter", "63[vazio] clique 126,1"]
+[25.9] escala=4x janela=(1920, 712)
+[32.5] arrastada pos=(640, 792)
+[39.2] escondida
+[42.2] arrastada pos=(640, 792)
+SCRIPT ERROR: Invalid access of index '-1' on a base object of type: 'Array'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] tecla (res://apresentacao/interface.gd:396)
+       [5] _unhandled_input (res://apresentacao/moldura.gd:263)
+       [6] _tecla (res://qa/fuzz/fuzz_entrada.gd:203)
+       [7] _quadro (res://qa/fuzz/fuzz_entrada.gd:170)
+[fuzz] ERRO tipo=2 no passo 258 (fase vazio):  Invalid access of index '-1' on a base object of type: 'Array'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:396 tecla
+[fuzz]    res://apresentacao/moldura.gd:263 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:203 _tecla
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:170 _quadro
+[fuzz]    ações antes: ["251[vazio] tecla 2", "252[vazio] mover 432,160", "253[vazio] mover 122,142", "254[vazio] mover 219,27", "255[vazio] mover 93,61", "256[vazio] mover 377,1", "257[vazio] tecla Right", "258[vazio] tecla C"]
+SCRIPT ERROR: Invalid access of index '-1' on a base object of type: 'Array'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] _apertar (res://apresentacao/interface.gd:224)
+       [5] tratar (res://apresentacao/interface.gd:339)
+       [6] _unhandled_input (res://apresentacao/moldura.gd:258)
+       [7] _botao (res://qa/fuzz/fuzz_entrada.gd:194)
+       [8] _quadro (res://qa/fuzz/fuzz_entrada.gd:153)
+[fuzz] ERRO tipo=2 no passo 325 (fase vazio):  Invalid access of index '-1' on a base object of type: 'Array'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:224 _apertar
+[fuzz]    res://apresentacao/interface.gd:339 tratar
+[fuzz]    res://apresentacao/moldura.gd:258 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:194 _botao
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:153 _quadro
+[fuzz]    ações antes: ["318[vazio] mover 191,151", "319[vazio] mover 409,17", "320[vazio] mover 412,96", "321[vazio] mover 82,156", "322[vazio] mover 298,60", "323[vazio] tecla Escape", "324[vazio] mover 299,17", "325[vazio] segurar 112,15 por 43 quadros"]
+[54.7] escala=4x janela=(1920, 712)
+[57.9] arrastada pos=(640, 792)
+SCRIPT ERROR: Invalid access of index '-1' on a base object of type: 'Array'.
+   at: _prologo (res://nucleo/cronista.gd:2593)
+   GDScript backtrace (most recent call first):
+       [0] _prologo (res://nucleo/cronista.gd:2593)
+       [1] montar (res://nucleo/cronista.gd:652)
+       [2] cronica_viva (res://nucleo/mundo.gd:4654)
+       [3] alternar_cronica (res://apresentacao/interface.gd:964)
+       [4] tecla (res://apresentacao/interface.gd:396)
+       [5] _unhandled_input (res://apresentacao/moldura.gd:263)
+       [6] _tecla (res://qa/fuzz/fuzz_entrada.gd:203)
+       [7] _quadro (res://qa/fuzz/fuzz_entrada.gd:170)
+[fuzz] ERRO tipo=2 no passo 386 (fase vazio):  Invalid access of index '-1' on a base object of type: 'Array'. em res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:2593 _prologo
+[fuzz]    res://nucleo/cronista.gd:652 montar
+[fuzz]    res://nucleo/mundo.gd:4654 cronica_viva
+[fuzz]    res://apresentacao/interface.gd:964 alternar_cronica
+[fuzz]    res://apresentacao/interface.gd:396 tecla
+[fuzz]    res://apresentacao/moldura.gd:263 _unhandled_input
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:203 _tecla
+[fuzz]    res://qa/fuzz/fuzz_entrada.gd:170 _quadro
+[fuzz]    ações antes: ["379[vazio] mover 275,103", "380[vazio] mover 390,4", "381[vazio] duplo 340,4", "382[vazio] mover 394,9", "383[vazio] tecla S", "384[vazio] mover 346,72", "385[vazio] tecla C", "386[vazio] tecla C"]
+[69.8] arrastada pos=(640, 792)
+[interface] criar povo em x=434 -> { "ok": true, "grupo": 0, "era": 1 }
+[76.1] alca largura=184
+[fuzz] passo 499: fase vazio → chegada (era 1, 12 pessoas)
+[vista] clique no mundo (398.0, 66.0)
+[vista] clique no mundo (386.0, 16.0)
+[78.6] arrastada pos=(640, 792)
+[vista] clique no mundo (20.0, 46.0)
+[81.5] arrastada pos=(640, 792)
+[82.4] alca largura=354
+[vista] clique no mundo (370.0, 5.0)
+[vista] clique no mundo (64.0, 68.0)
+[vista] clique no mundo (429.0, 157.0)
+[86.2] alca largura=184
+[vista] clique no mundo (79.0, 88.0)
+[vista] clique no mundo (85.0, 135.0)
+[vista] clique no mundo (363.0, 27.0)
+[vista] clique no mundo (407.0, 91.0)
+[93.1] escala=3x janela=(1440, 534)
+[vista] clique no mundo (377.0, 134.0)
+[vista] clique no mundo (432.0, 142.0)
+[vista] clique no mundo (345.0, 155.0)
+[vista] clique no mundo (292.0, 106.0)
+[vista] clique no mundo (252.0, 95.0)
+[97.8] escala=4x janela=(1920, 712)
+[vista] clique no mundo (335.0, 66.0)
+[vista] clique no mundo (275.0, 109.0)
+[vista] clique no mundo (254.0, 99.0)
+[vista] clique no mundo (452.0, 102.0)
+[vista] clique no mundo (328.0, 94.0)
+[vista] clique no mundo (317.0, 138.0)
+[vista] clique no mundo (467.0, 157.0)
+[vista] clique no mundo (14.0, 76.0)
+[110.4] alca largura=354
+[112.6] arrastada pos=(640, 792)
+[vista] clique no mundo (201.0, 157.0)
+[vista] clique no mundo (201.0, 149.0)
+[vista] clique no mundo (89.0, 128.0)
+[115.0] alca largura=184
+[vista] clique no mundo (98.0, 39.0)
+[vista] clique no mundo (405.0, 83.0)
+[vista] clique no mundo (370.0, 51.0)
+[vista] clique no mundo (310.0, 61.0)
+[vista] clique no mundo (324.0, 84.0)
+[vista] clique no mundo (459.0, 137.0)
+[vista] clique no mundo (130.0, 140.0)
+[vista] clique no mundo (281.0, 104.0)
+[vista] clique no mundo (448.0, 115.0)
+[vista] clique no mundo (126.0, 26.0)
+[vista] clique no mundo (212.0, 116.0)
+[121.3] alca largura=354
+[124.1] arrastada pos=(640, 792)
+[124.2] alca largura=184
+[vista] clique no mundo (201.0, 65.0)
+[127.0] escala=4x janela=(1920, 712)
+[128.7] escala=3x janela=(1440, 534)
+[vista] clique no mundo (355.0, 39.0)
+[vista] clique no mundo (141.0, 7.0)
+[134.4] arrastada pos=(640, 970)
+[vista] clique no mundo (129.0, 6.0)
+[fuzz] FIM: 800 ações, 4 erros; era 1, 13 pessoas
+[136.6] saindo
+[simulacao] threads encerradas
+[simulacao] threads encerradas

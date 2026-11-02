@@ -261,6 +261,8 @@ func _bloco_comeco() -> void:
 		conferir("QA-001", chaves == ["floresta", "lago", "morro", "praia"], "zonas: %s" % [chaves])
 	if _quer("QA-002"):
 		_comeco_vazio()
+	if _quer("QA-186"):
+		_consultas_no_vazio()
 	if _quer("QA-003"):
 		var gv: Array = m.grupos_visiveis()
 		conferir("QA-003", m.populacao() >= 10 and m.populacao() <= 14, "cerca de 12 pessoas (%d)" % m.populacao())
@@ -299,6 +301,64 @@ func _comeco_vazio() -> void:
 		"é a Primeira Era: nenhum livro fechado e nenhum fim do mundo antes dela (era %d, %d livros)" % [w.era, w.livros.size()])
 	conferir("QA-002", w.acompanhada >= 0, "há uma pessoa acompanhada desde o começo")
 	sim.free()
+
+
+## Os erros de script (push_error, acesso a nulo...) que acontecem enquanto `f` roda.
+class _Coletor extends Logger:
+	var erros: Array = []
+
+	func _log_error(function: String, file: String, line: int, code: String, rationale: String,
+			_editor_notify: bool, error_type: int, _script_backtraces: Array) -> void:
+		if error_type != 1:   # 1 = aviso; o resto é erro
+			erros.append("%s (%s:%d %s)" % [rationale if rationale != "" else code, file.get_file(), line, function])
+
+	func _log_message(_message: String, _error: bool) -> void:
+		pass
+
+
+func _erros_em(f: Callable) -> Array:
+	var c := _Coletor.new()
+	OS.add_logger(c)
+	f.call()
+	OS.remove_logger(c)
+	return c.erros
+
+
+## QA-186: o mundo novo vazio (D-09) aguenta tudo o que o jogador pode pedir antes do primeiro
+## gesto: a crônica (tecla C), as dicas, as consultas da tela, salvar, carregar e a ausência.
+## Achado pelo fuzz de entrada (jogo/qa/fuzz/): a tecla C no mundo vazio dava «Invalid access to
+## 'grupo' on Nil» em cronista._prologo, porque o mundo vazio não tem o evento de início.
+func _consultas_no_vazio() -> void:
+	var w := Mundo.new(7)
+	if w.populacao() > 0:
+		pular("QA-186", "o núcleo ainda cria o povo em Mundo.new (antes do D-09)")
+		return
+	var chamadas := {
+		"cronica_viva (tecla C)": func(): w.cronica_viva(),
+		"cronica": func(): w.cronica(),
+		"cronica_em_curso": func(): w.cronica_em_curso(),
+		"consultas da tela": func():
+			w.pessoas_visiveis(); w.cenas_ativas(); w.construcoes(); w.ruinas_visiveis(); w.preces_abertas()
+			w.zonas_visiveis(); w.grupos_visiveis(); w.guerras_ativas(); w.tempo(); w.clima(),
+		"dicas (cabana e lugar)": func(): w.dica_cabana(260.0); w.dica(1); w.dica(-1),
+		"sugestoes e linhagem": func(): w.sugestoes(); w.acompanhar(1),
+		"eventos": func(): w.eventos_desde(0),
+		"um poder no vazio": func(): w.usar_poder("chuva", 260.0, 0.6),
+		"avançar um dia": func(): w.avancar_dias(1),
+		"salvar e carregar": func():
+			var c := _caminho("vazio_comeco")
+			_apagar_mundo(c)
+			Persistencia.salvar(w, c)
+			var b = Persistencia.carregar(c)
+			if b != null:
+				b.cronica_viva()
+				b.avancar_ausencia(16 * 3600)
+			_apagar_mundo(c),
+	}
+	for nome in chamadas:
+		var erros := _erros_em(chamadas[nome])
+		conferir("QA-186", erros.is_empty(), "mundo novo vazio, %s: %s" % [nome, "sem erro" if erros.is_empty() else str(erros.slice(0, 2))])
+	conferir("QA-186", w.cronica_viva().strip_edges() != "", "a crônica do mundo vazio tem texto")
 
 
 func _mundo_com_gestos(semente: int, anos: int):
