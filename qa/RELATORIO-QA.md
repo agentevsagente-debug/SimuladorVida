@@ -567,7 +567,14 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 
 *Escritos em 02/11/2026, na main `e27d489`. Os cenários são QA-200 a QA-205 (área 18 da matriz).*
 
-**Hoje: 0 passam, 5 falham e 1 pulado.** Todos falham pelo motivo esperado: não há botão `lupa` na alça. O QA-205 precisa da tela de verdade (`--janela`).
+**Na main `e27d489`: 0 passam, 5 falham e 1 pulado.** Todos falham pelo motivo esperado: não há botão `lupa` na alça.
+
+**Na branch da B (`1471190`, ainda fora da main): 5 passam, 0 falham e 1 pulado.** Rodei numa cópia temporária da branch, sem tela:
+- os cliques esquerdos dão 2x → 3x → 4x → 2x, e os direitos 2x → 4x → 3x → 2x;
+- a dica diz "Tamanho: 3x (Ctrl+2, 3, 4) / Botão direito diminui";
+- a escala volta em 3x e em 4x depois de fechar e abrir (janela de 1440 × 534 e 1920 × 712), e com `--sem-config` nada é gravado.
+
+Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verdade (`--janela`) e espera o PC livre.
 
 **O contrato proposto à B** (revisável):
 - **Botão:** de id `"lupa"` em `interface.botoes`, em todas as fases.
@@ -576,8 +583,6 @@ Daqui em diante, cada funcionalidade nova avisada pelo orquestrador ganha primei
 - **Dica:** a dica do botão mostra a escala atual ("3x") e acompanha a mudança.
 - **Escala guardada:** em `moldura/escala` no `moldura.cfg`, como a de Ctrl+2 a 4; com `--sem-config`, não.
 - **Conferência:** o teste lê `moldura.escala`, o tamanho da janela (só com tela) e o texto da dica visível (`interface._dica_textos`).
-
-**Ainda não sei se o harness da lupa funciona com o botão de verdade:** hoje ele só pôde mostrar que falha. Confiro quando a B entregar.
 
 ## Como rodar
 
