@@ -351,6 +351,63 @@ ICONES_12 = {
         "......WG....",
         ".......G....",
     ],
+    # a lupa do tamanho da janela (o mesmo que Ctrl+2, 3 e 4); com o número, mostra a escala atual
+    "lupa": [
+        "..WWWWW.....",
+        ".WGGGGGWG...",
+        "WG.....GWG..",
+        "WG.W....WG..",
+        "WG.W....WG..",
+        "WG......WG..",
+        "WG......WG..",
+        ".W.....GWG..",
+        "..WWWWWWWG..",
+        "...GGGGWWWG.",
+        "........WWWG",
+        ".........WWG",
+    ],
+    "lupa_2": [
+        "..WWWWW.....",
+        ".WGGGGGWG...",
+        "WG.WWW.GWG..",
+        "WG...W..WG..",
+        "WG.WWW..WG..",
+        "WG.W....WG..",
+        "WG.WWW..WG..",
+        ".W.....GWG..",
+        "..WWWWWWWG..",
+        "...GGGGWWWG.",
+        "........WWWG",
+        ".........WWG",
+    ],
+    "lupa_3": [
+        "..WWWWW.....",
+        ".WGGGGGWG...",
+        "WG.WWW.GWG..",
+        "WG...W..WG..",
+        "WG..WW..WG..",
+        "WG...W..WG..",
+        "WG.WWW..WG..",
+        ".W.....GWG..",
+        "..WWWWWWWG..",
+        "...GGGGWWWG.",
+        "........WWWG",
+        ".........WWG",
+    ],
+    "lupa_4": [
+        "..WWWWW.....",
+        ".WGGGGGWG...",
+        "WG.W.W.GWG..",
+        "WG.W.W..WG..",
+        "WG.WWW..WG..",
+        "WG...W..WG..",
+        "WG...W..WG..",
+        ".W.....GWG..",
+        "..WWWWWWWG..",
+        "...GGGGWWWG.",
+        "........WWWG",
+        ".........WWG",
+    ],
 }
 
 ICONES_8 = {
@@ -494,6 +551,8 @@ ICONES_8 = {
     ],
     "som": ["...WG...", "..WWG.W.", "WWWWG..W", "WWWWGW.W", "WWWWGW.W", "GGWWG..W", "..WWG.W.", "...WG..."],
     "som_mudo": ["...WG...", "..WWG...", "WWWWGr.r", "WWWWG.r.", "WWWWGr.r", "GGWWG...", "..WWG...", "...WG..."],
+    # a lupa sem número: em 8 x 8 o número não cabe legível na lente
+    "lupa": [".WWW....", "W...W...", "W.W.WG..", "W...WG..", ".WWWWG..", "..GGWWG.", ".....WWG", "......WG"],
 }
 
 
@@ -849,7 +908,7 @@ def principal():
 
 
 def amostra(caixa, dica, bts, folhas):
-    W, H = 262, 150
+    W, H = 280, 150
     img = Image.new("RGBA", (W, H), PALETA[1] + (255,))
     # alça com os botões dos poderes e do tempo
     barra = para_imagem(nove(alca(), 12, 4, W - 8, 20))
@@ -861,7 +920,7 @@ def amostra(caixa, dica, bts, folhas):
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
     x += 6
-    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder", "som"):
+    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder", "som", "lupa_2"):
         img.alpha_composite(para_imagem(bts[0]), (x, 6))
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
