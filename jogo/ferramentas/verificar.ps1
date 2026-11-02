@@ -17,9 +17,15 @@ Add-Type -Path (Join-Path $PSScriptRoot 'Win32.cs') -ReferencedAssemblies System
 [Win32]::SetProcessDPIAware() | Out-Null
 
 $resultados = [ordered]@{}
+# Um passo que não deu certo com interferência no meio (o cursor fora do ponto, ou
+# outra janela tomou o foco: Win32.Interferencias) sai como INTERFERENCIA, e não FALHA:
+# não diz nada do jogo. Rode de novo com o computador parado.
+$script:interfAntes = 0
 function Registrar($nome, $ok, $detalhe) {
-    $resultados[$nome] = [pscustomobject]@{ ok = $ok; detalhe = $detalhe }
-    '{0,-28} {1,-5} {2}' -f $nome, $(if ($ok) { 'OK' } else { 'FALHA' }), $detalhe
+    $interf = (-not $ok) -and ([Win32]::Interferencias -gt $script:interfAntes)
+    $script:interfAntes = [Win32]::Interferencias
+    $resultados[$nome] = [pscustomobject]@{ ok = $ok; interferencia = $interf; detalhe = $detalhe }
+    '{0,-28} {1,-5} {2}' -f $nome, $(if ($ok) { 'OK' } elseif ($interf) { 'INTERFERENCIA' } else { 'FALHA' }), $detalhe
 }
 
 function Iniciar-Moldura([int]$escala, [string]$log) {
@@ -47,6 +53,9 @@ $fundo = [Win32]::Capturar($X, $Y, 960, 356)
 $log = Join-Path $env:TEMP 'moldura-verificacao.log'
 $g = Iniciar-Moldura 2 $log
 $h = $g.MainWindowHandle
+[Win32]::Nossas.Add($h) | Out-Null
+$alvo.Refresh()
+if ($alvo.MainWindowHandle -ne 0) { [Win32]::Nossas.Add($alvo.MainWindowHandle) | Out-Null }
 $ex = [Win32]::GetWindowLong($h, -20)
 Registrar 'sempre por cima' (($ex -band 0x8) -ne 0) ('WS_EX = 0x{0:X8} (TOPMOST=0x8, LAYERED=0x80000, TRANSPARENT=0x20)' -f $ex)
 
@@ -92,41 +101,59 @@ Start-Sleep -Milliseconds 300
 $n2 = [int](Get-Content $cliques)
 Registrar 'clique no mundo fica' ($n2 -eq 1) "alvo continua com $n2 clique(s)"
 
+# Cada passo com o mouse confere o próprio efeito (no registro ou na janela) e tenta
+# de novo, até 3 vezes: o clique sintético às vezes se perde (o foco acabou de mudar,
+# ou o cursor de verdade se mexeu entre o posicionar e o clicar). E cada passo deixa a
+# alça como a encontrou (poderes fechados, nenhum poder escolhido), para que uma falha
+# não mude a posição dos botões do passo seguinte e derrube os outros em cascata.
+function Linhas([string]$padrao) { @(Select-String -Path $log -Pattern $padrao).Count }
+function Tentar([scriptblock]$acao, [scriptblock]$feito, [int]$espera = 800) {
+    for ($i = 1; $i -le 3; $i++) {
+        & $acao
+        Start-Sleep -Milliseconds $espera
+        if (& $feito) { return $i }
+    }
+    return 0
+}
+
 # 3b. O gesto de um poder, com o mouse de verdade: abre os poderes na alça,
 # escolhe o raio (2º botão da fileira aberta), segura 1,5 s sobre o céu e solta.
-[Win32]::Clicar($X + 18 * $k, $Y + 9 * $k)
-Start-Sleep -Milliseconds 1000
-[Win32]::Clicar($X + (10 + 17 + 8) * $k, $Y + 9 * $k)
-Start-Sleep -Milliseconds 1000
-[Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500)
-Start-Sleep -Milliseconds 600
+$abertos = Linhas 'alca largura=354'
+$t1 = Tentar { [Win32]::Clicar($X + 18 * $k, $Y + 9 * $k) } { (Linhas 'alca largura=354') -gt $abertos }
+$t2 = Tentar { [Win32]::Clicar($X + (10 + 17 + 8) * $k, $Y + 9 * $k) } { (Linhas 'poder escolhido: raio') -gt 0 }
+$t3 = Tentar { [Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500) } { (Linhas 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)') -gt 0 } 600
 $gesto = Select-String -Path $log -Pattern 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)' | Select-Object -First 1
-Registrar 'gesto do poder (raio)' ([bool]$gesto) $(if ($gesto) { $gesto.Line } else { 'nada no log' })
+Registrar 'gesto do poder (raio)' ([bool]$gesto) $(if ($gesto) { "$($gesto.Line) (tentativas: $t1, $t2, $t3)" } else { "nada no log (tentativas: $t1, $t2, $t3)" })
+# larga o raio (botão direito no mundo): a alça volta ao normal para os passos seguintes
+$largados = Linhas 'poder escolhido: nenhum'
+Tentar { [Win32]::ClicarDireito($pontoCeu[0], $pontoCeu[1]) } { (Linhas 'poder escolhido: nenhum') -gt $largados } | Out-Null
 
-# 4. Arrastar pela alça.
+# 4. Arrastar pela alça: cada tentativa mede de onde a janela partiu.
 Start-Sleep -Seconds 1
-$antes = Retangulo $h
-[Win32]::Arrastar($pontoAlca[0], $pontoAlca[1], 120, 60)
-Start-Sleep -Milliseconds 500
-$depois = Retangulo $h
-$dx = $depois.Left - $antes.Left; $dy = $depois.Top - $antes.Top
-# o arraste nativo pode pegar o cursor 1 px depois do clique sintético
-Registrar 'arrastar' ([math]::Abs($dx - 120) -le 2 -and [math]::Abs($dy - 60) -le 2) "deslocou ($dx, $dy), esperado (120, 60) +- 2 px"
+$dx = 0; $dy = 0; $t4 = 0
+for ($i = 1; $i -le 3 -and $t4 -eq 0; $i++) {
+    $antes = Retangulo $h
+    [Win32]::Arrastar($antes.Left + 5 * $k, $antes.Top + 9 * $k, 120, 60)
+    Start-Sleep -Milliseconds 500
+    $depois = Retangulo $h
+    $dx = $depois.Left - $antes.Left; $dy = $depois.Top - $antes.Top
+    # o arraste nativo pode pegar o cursor 1 px depois do clique sintético
+    if ([math]::Abs($dx - 120) -le 2 -and [math]::Abs($dy - 60) -le 2) { $t4 = $i }
+}
+Registrar 'arrastar' ($t4 -gt 0) "deslocou ($dx, $dy), esperado (120, 60) +- 2 px (tentativas: $(if ($t4) { $t4 } else { 3 }))"
 
 # 5. Roda do mouse sobre a alça (2x -> 3x).
-[Win32]::Rolar($depois.Left + 5 * $k, $depois.Top + 9 * $k, 1)
-Start-Sleep -Milliseconds 800
+$t5 = Tentar { $d = Retangulo $h; [Win32]::Rolar($d.Left + 5 * $k, $d.Top + 9 * $k, 1) } { $r = Retangulo $h; ($r.Right - $r.Left) -eq 1440 }
 $r3 = Retangulo $h
-Registrar 'roda na alca (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bottom - $r3.Top) -eq 534)) ("janela {0}x{1}" -f ($r3.Right - $r3.Left), ($r3.Bottom - $r3.Top))
+Registrar 'roda na alca (3x)' ((($r3.Right - $r3.Left) -eq 1440) -and (($r3.Bottom - $r3.Top) -eq 534)) ("janela {0}x{1} (tentativas: {2})" -f ($r3.Right - $r3.Left), ($r3.Bottom - $r3.Top), $t5)
 $hFaixa3 = [Win32]::RaizEm($r3.Left + 300 * 3, $r3.Top + 8 * 3)
 Registrar 'passagem refeita em 3x' ($hFaixa3 -ne $h) ''
 
 # 6. Esconder pelo botão (o décimo da alça: poderes, 5 ritmos, crônica, estante, linhagem, esconder).
-[Win32]::Clicar($r3.Left + 171 * 3, $r3.Top + 9 * 3)
-Start-Sleep -Milliseconds 800
+$t6 = Tentar { [Win32]::Clicar($r3.Left + 171 * 3, $r3.Top + 9 * 3) } { (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h) }
 $escondida = (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h)
 $hMeio = [Win32]::RaizEm($r3.Left + 240 * 3, $r3.Top + 100 * 3)
-Registrar 'esconder (botao)' ($escondida -and $hMeio -ne $h) ("minimizada={0}; no meio do mundo agora: '{1}'" -f [Win32]::IsIconic($h), [Win32]::Titulo($hMeio))
+Registrar 'esconder (botao)' ($escondida -and $hMeio -ne $h) ("minimizada={0}; no meio do mundo agora: '{1}' (tentativas: {2})" -f [Win32]::IsIconic($h), [Win32]::Titulo($hMeio), $t6)
 # Mostrar de novo. O ícone da bandeja vai para o menu de ícones ocultos ("^")
 # no Windows 11, em posição variável, então aqui o teste usa o botão da barra
 # de tarefas (ShowWindow SW_RESTORE). O clique no ícone foi testado à mão.

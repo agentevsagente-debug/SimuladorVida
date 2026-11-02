@@ -14,9 +14,15 @@ $ErrorActionPreference = 'Stop'
 Add-Type -Path (Join-Path $PSScriptRoot 'Win32.cs') -ReferencedAssemblies System.Drawing
 [Win32]::SetProcessDPIAware() | Out-Null
 $resultados = [ordered]@{}
+# Um passo que não deu certo com interferência no meio (o cursor fora do ponto, ou
+# outra janela tomou o foco: Win32.Interferencias) sai como INTERFERENCIA, e não FALHA:
+# não diz nada do jogo. Rode de novo com o computador parado.
+$script:interfAntes = 0
 function Registrar($nome, $ok, $detalhe) {
-    $resultados[$nome] = [pscustomobject]@{ ok = $ok; detalhe = $detalhe }
-    '{0,-28} {1,-5} {2}' -f $nome, $(if ($ok) { 'OK' } else { 'FALHA' }), $detalhe
+    $interf = (-not $ok) -and ([Win32]::Interferencias -gt $script:interfAntes)
+    $script:interfAntes = [Win32]::Interferencias
+    $resultados[$nome] = [pscustomobject]@{ ok = $ok; interferencia = $interf; detalhe = $detalhe }
+    '{0,-28} {1,-5} {2}' -f $nome, $(if ($ok) { 'OK' } elseif ($interf) { 'INTERFERENCIA' } else { 'FALHA' }), $detalhe
 }
 function Abrir([string]$log, [string[]]$extra) {
     if (Test-Path $log) { Remove-Item $log }
