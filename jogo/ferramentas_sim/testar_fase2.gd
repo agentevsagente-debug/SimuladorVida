@@ -105,12 +105,20 @@ func _mundo_novo_vazio() -> void:
 	conferir(m.eventos_desde(0).is_empty() and m.livros.is_empty(), "o mundo vazio do começo não tem fim do mundo nem livro")
 	conferir(not m.usar_poder("chuva", 260.0, 0.8)["ok"], "no mundo novo vazio, os poderes sobre o povo recusam")
 	conferir(m.abandonar().is_empty(), "abandonar o mundo antes do primeiro povo não fecha livro")
+	# A crônica do mundo vazio (QA-186: quebrava no prólogo, sem o evento de início).
+	conferir(str(m.cronica_viva()).contains("Ninguém tinha chegado") and str(m.cronica()).contains("Ninguém tinha chegado"),
+		"a crônica do mundo novo vazio diz que ninguém chegou ainda")
 	m.avancar_dias(2)
+	conferir(str(m.cronica_viva()).contains("Ninguém tinha chegado"), "e continua dizendo, dois dias depois")
 	var r := m.criar_povo(260.0)
 	conferir(r["ok"] and m.era == 1 and m.populacao() == 12 and not m.fim_do_mundo and m.tempo()["hora"] == 7,
 		"criar o primeiro povo: era 1, 12 pessoas, às 7h (%s)" % r)
 	conferir(m.eventos_desde(0).any(func(e): return e["tipo"] == "inicio"), "o primeiro povo tem o evento de início")
 	conferir(m.grupos_vivos()[0].zona == "floresta", "o gesto em x 260 põe o povo na floresta")
+	var praia := Mundo.new(5)
+	praia.criar_povo(170.0)
+	praia.avancar_dias(Mundo.DIAS_ANO + 1)
+	conferir(praia.cronica_viva().contains("Acamparam na praia"), "o primeiro povo criado na praia acampa na praia, na crônica")
 	m.avancar_dias(Mundo.DIAS_ANO * 3)
 	conferir(m.populacao() > 0 and m.cronica_viva().contains("Ano 1"), "o primeiro povo vive, e a crônica conta desde o ano 1")
 	# Começo e recomeço funcionam igual: o mesmo mundo, salvo vazio e carregado, cria o povo.

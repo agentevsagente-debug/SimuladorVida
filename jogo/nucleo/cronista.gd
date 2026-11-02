@@ -2585,12 +2585,17 @@ func _leitura_raio(e, vid: int, v: Dictionary) -> String:
 # ---------------------------------------------------------------- moldura
 
 func _prologo(ano_ini: int = 1) -> String:
-	var e = m.evento(0)
-	for x in _do_tipo("inicio"):
+	var inicios := _do_tipo("inicio")
+	var e = null
+	for x in inicios:
 		if x.ano >= ano_ini:
 			e = x
 			break
-	var g = m.grupos[e.grupo]
+	if e == null and not inicios.is_empty():
+		e = inicios[0]
+	if e == null:
+		# O mundo novo, antes do primeiro gesto (QA D-09): ainda não chegou ninguém.
+		return "No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. Ninguém tinha chegado ainda."
 	var v := {"g": _g(e.grupo), "avo": _p(e.dados["avo"]), "avoa": _p(e.dados["avoa"]), "zona": _zona(e.zona)}
 	var era: int = e.dados.get("era", 1)
 	if era > 1:
@@ -2603,7 +2608,7 @@ func _prologo(ano_ini: int = 1) -> String:
 		return t
 	return G.preencher("No princípio, a região estava vazia: a praia, o lago, a floresta e o morro. " +
 		"Então chegaram doze coletores, uma única família: {avo} e {avoa}, os três filhos com quem tinham casado, e os netos. " +
-		"Acamparam na floresta e se chamavam {g}. Não tinham vila, nem plantação, nem deus.", v)
+		"Acamparam {em:zona} e se chamavam {g}. Não tinham vila, nem plantação, nem deus.", v)
 
 
 const ROMANOS := ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
