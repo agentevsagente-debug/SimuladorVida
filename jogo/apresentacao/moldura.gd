@@ -32,7 +32,7 @@ extends Node2D
 ##   --dica=X,Y                           mostra a dica do cursor nesse ponto da tela (testes)
 ##   --livro-arquivo=CAMINHO[:PÁGINA]     abre um livro em markdown no leitor da estante (testes)
 ##   --discreto                           liga o modo discreto (D, no jogo): o pior fica só na crônica
-##   --com-som                            com --sem-config, liga o som (os testes são mudos por padrão)
+##   --sem-som                            abre com o som desligado, sem gravar a escolha (testes)
 ##   --alternar-som=S                     aperta o botão de som depois de S segundos (testes)
 ##   --menu-bandeja=S[:janela|som|sair]   abre o menu da bandeja depois de S segundos e escolhe o item (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
@@ -67,6 +67,7 @@ var _atalho_leitor: Thread
 var _largura_alca := 0
 var som: Node                  # o som (apresentacao/som.gd): os barramentos, o ambiente e os acontecimentos
 var _minimizada := false
+var _som_forcado := false      # --sem-som: desligado só nesta abertura, sem gravar
 var _menu_bandeja: PopupMenu   # o botão direito na bandeja: Mostrar/Esconder, Som ligado, Sair
 enum { MENU_JANELA, MENU_SOM, MENU_SAIR }
 
@@ -116,8 +117,9 @@ func _ready() -> void:
 			vista.sim.definir_ritmo(r)
 		_mostrar_ausencia()
 	vista.modo_discreto = args.has("discreto") or (_usar_config and bool(config.get_value("moldura", "discreto", false)))
-	# o som: a escolha guardada; nos testes (--sem-config), mudo, a menos que venha --com-som
-	som.definir_ligado(bool(config.get_value("moldura", "som", true)) if _usar_config else args.has("com-som"))
+	# o som: a escolha guardada (ligado na primeira vez); --sem-som cala só esta abertura
+	_som_forcado = args.has("sem-som")
+	som.definir_ligado(false if _som_forcado else bool(config.get_value("moldura", "som", true)))
 	interface.som_ligado = som.ligado
 	if vista.sim:
 		vista.sim.eventos_novos.connect(_sons_dos_eventos)
@@ -236,7 +238,19 @@ func _alternar_som() -> void:
 	interface._avisar("Som ligado" if som.ligado else "Som desligado (M liga de novo)")
 	interface._montar_botoes()
 	_log("som %s" % ("ligado" if som.ligado else "desligado"))
-	_guardar_config()
+	_guardar_som()
+
+
+## A escolha do som vai para o moldura.cfg na hora, mesmo com a janela escondida (pelo
+## menu da bandeja): o resto da configuração só se guarda com a janela visível.
+func _guardar_som() -> void:
+	if not _usar_config:
+		return
+	_som_forcado = false  # o jogador escolheu: daqui em diante vale a escolha dele
+	var config := ConfigFile.new()
+	config.load(ARQUIVO_CONFIG)
+	config.set_value("moldura", "som", som.ligado)
+	config.save(ARQUIVO_CONFIG)
 
 
 ## Os acontecimentos do núcleo que têm som, no x de onde aconteceram.
@@ -262,7 +276,8 @@ func _process(delta: float) -> void:
 		vista.sim.salvamento_falhou = false
 		_log("salvamento falhou")
 		interface._avisar("Não deu para salvar o mundo: o disco está cheio? O salvo antes continua lá.")
-	var minimizada := get_window().mode == Window.MODE_MINIMIZED
+	# sem tela (headless, os testes), a janela diz que está minimizada: não vale
+	var minimizada := get_window().mode == Window.MODE_MINIMIZED and DisplayServer.get_name() != "headless"
 	if minimizada != _minimizada:  # minimizada por fora (Win+D, a barra de tarefas): mudo também
 		_minimizada = minimizada
 		som.definir_escondida(escondida or minimizada)
@@ -494,7 +509,8 @@ func _guardar_config() -> void:
 	config.load(ARQUIVO_CONFIG)  # guarda junto o que já havia (as dicas feitas)
 	config.set_value("moldura", "escala", escala)
 	config.set_value("moldura", "discreto", vista.modo_discreto)
-	config.set_value("moldura", "som", som.ligado)
+	if not _som_forcado:
+		config.set_value("moldura", "som", som.ligado)
 	config.set_value("moldura", "posicao", get_window().position)
 	if vista.sim:
 		config.set_value("moldura", "ritmo", Simulacao.NOME_RITMO[vista.sim.ritmo])

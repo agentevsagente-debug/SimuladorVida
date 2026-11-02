@@ -32,7 +32,7 @@ function Iniciar-Moldura([int]$escala, [string]$log) {
     if (Test-Path $log) { Remove-Item $log }
     $caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
     $p = Start-Process -FilePath $Godot -PassThru -ArgumentList (@($caminho) + @('--log-file', "`"$log`"", '--',
-        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config', '--mundo-novo', '--com-povo'))
+        "--pos=$X,$Y", "--escala=$escala", '--duracao=90', '--sem-config', '--sem-som', '--mundo-novo', '--com-povo'))
     for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
     Start-Sleep -Seconds 2
     $p.Refresh()
@@ -211,7 +211,7 @@ if (-not $SemExportar) {
         $logx = Join-Path $env:TEMP 'moldura-exe.log'
         if (Test-Path $logx) { Remove-Item $logx }
         $p = Start-Process -FilePath $exe -PassThru -ArgumentList @('--log-file', "`"$logx`"", '--',
-            "--pos=$X,$Y", '--escala=2', '--duracao=15', '--sem-config', '--mundo-novo', '--com-povo')
+            "--pos=$X,$Y", '--escala=2', '--duracao=15', '--sem-config', '--sem-som', '--mundo-novo', '--com-povo')
         for ($i = 0; $i -lt 50 -and $p.MainWindowHandle -eq 0; $i++) { Start-Sleep -Milliseconds 200; $p.Refresh() }
         Start-Sleep -Seconds 3
         $h = $p.MainWindowHandle

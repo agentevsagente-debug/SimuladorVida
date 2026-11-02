@@ -36,7 +36,7 @@ $programa = if ($Executavel) { Join-Path (Split-Path $projeto -Parent) 'builds\S
 $caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
 $nome = if ($Executavel) { "$Cenario-exe" } else { $Cenario }
 $p = Start-Process -FilePath $programa -PassThru -ArgumentList @($caminho + @('--',
-    '--sem-config', '--semente=7', '--com-povo', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
+    '--sem-config', '--sem-som', '--semente=7', '--com-povo', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
     $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } 'grande' { '--ritmo=normal --anos=200 --semente=3' } default { "--ritmo=$Cenario" } })))
 Start-Sleep -Seconds $Aquecimento
 
