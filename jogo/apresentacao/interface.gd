@@ -18,6 +18,7 @@ signal escala(delta: int)
 signal ritmo_mudou
 signal dica_feita(feitas: Array)
 signal som_alternar  # o botão de som e a tecla M
+signal escala_ciclo(direcao: int)  # o botão da lupa: esquerdo sobe, direito desce (dá a volta)
 signal preferencia_mudou  # o modo discreto (guardado no moldura.cfg)
 
 const Arte = preload("res://apresentacao/arte.gd")
@@ -117,6 +118,7 @@ var _dicas_feitas: Array = []
 var _dicas_ligadas := false
 var _proxima_dica_em := 0.0
 var som_ligado := true            # o estado do som (a moldura manda): o ícone do botão
+var escala_atual := 2             # a escala da janela (a moldura manda): o ícone e a dica da lupa
 var _fila_dicas: Array = []   # os nomes ainda não feitos, na ordem em que aparecem
 var _dica_desde := 0.0        # quando a dica da frente apareceu
 
@@ -126,7 +128,10 @@ func criar(p_vista: Node2D) -> void:
 	vista._interface = self
 	_alca = Arte.textura("interface/alca_9s.png")
 	_botao = Arte.textura("interface/botao_3q.png")
-	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante", "som", "som_mudo"]:
+	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante", "som", "som_mudo",
+			"lupa", "lupa_2", "lupa_3", "lupa_4"]:
+		if not ResourceLoader.exists(Arte.RAIZ + "interface/icones_12/%s.png" % nome):
+			continue  # a lupa com o número só se a arte tiver
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
 		_icones[nome + "_8"] = Arte.textura("interface/icones_8/%s.png" % nome)
 	for cor in ["clara", "escura", "dourada", "titulo"]:
@@ -173,6 +178,9 @@ func _montar_botoes() -> void:
 	lista.append({"id": "esconder", "icone": "esconder", "selecionado": false})
 	# por último, para não mudar o lugar dos outros: o alto-falante, ligado ou cortado
 	lista.append({"id": "som", "icone": "som" if som_ligado else "som_mudo", "selecionado": false})
+	# e a lupa, o tamanho da janela (com o número da escala, se a arte tiver)
+	lista.append({"id": "lupa", "icone": "lupa_%d" % escala_atual if _icones.has("lupa_%d" % escala_atual) else "lupa",
+		"selecionado": false})
 	var antes := botoes.size()
 	botoes = []
 	for i in lista.size():
@@ -235,6 +243,9 @@ func _apertar(id: String) -> void:
 		_avisar(_texto_linhagem())
 	elif id == "esconder":
 		esconder.emit()
+	elif id == "lupa":
+		escala_ciclo.emit(1)
+		return  # a moldura remonta a alça com o ícone novo
 	elif id == "som":
 		som_alternar.emit()
 		return  # a moldura remonta a alça com o ícone novo (o botão de som não clica)
@@ -346,6 +357,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 					arrastar.emit()
 				else:
 					_apertar(b.id)
+			elif event.button_index == MOUSE_BUTTON_RIGHT and _botao_em(pos).get("id", "") == "lupa":
+				escala_ciclo.emit(-1)  # o botão direito na lupa desce a escala
 			elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
 				escala.emit(1)
 			elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
@@ -817,6 +830,9 @@ func _refazer_dica(delta: float) -> void:
 
 func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 	var nome := ""
+	if id == "lupa":
+		_mostrar_dica(["Tamanho: %dx (Ctrl+2, 3, 4)" % escala_atual, "Botão direito diminui"], -1, canto + Vector2(4, 22), false)
+		return
 	if id.begins_with("poder:"):  # o gesto curto é um sinal; segurando mais, vira milagre (auditoria 8, P9)
 		var linhas := [NOME_PODER[id.substr(6)], "Segure mais para um milagre"]
 		if id == "poder:fogo":
