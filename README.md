@@ -32,13 +32,13 @@
 - **Um povo que vive sozinho.** Ninguém obedece ao jogador. As pessoas têm traços, famílias, fome, rancores e crenças. Os povos se separam por migração, briga ou cisma religioso, mudam de cultura e fazem guerra sem pedir licença.
 - **Uma crônica escrita pelo próprio mundo.** Cada ano vira um parágrafo, montado a partir do que de fato aconteceu. Não há modelo de linguagem nem internet: os textos saem de uma gramática de frases em português, com concordância.
 - **Seis estágios, sem árvore de pesquisa.** Da coleta à agricultura, à pedra, ao metal, à escrita e aos canais e moinhos. O saber vive nas pessoas e pode se perder quando morre o último que sabia.
-- **O fim do mundo é real.** A população pode acabar, inclusive enquanto o jogo está fechado. O mundo vazio continua vivo, as ruínas ficam, e o povo que você fizer nascer depois vai inventar histórias sobre elas.
+- **O fim do mundo é real.** A população pode acabar, inclusive enquanto o jogo está fechado. O mundo vazio continua vivo, as ruínas ficam, e o povo que você fizer nascer depois inventa histórias sobre elas.
 - **Um companheiro de tela.** O ritmo normal é lento (um dia de jogo dura cerca de 45 minutos). O mouse passa pelos espaços vazios da janela, então dá para trabalhar com ela aberta. Fechado, o mundo continua andando até o teto de 1 ano de jogo.
 - **Leve.** Em 1x, o jogo usa por volta de 5% de **um** núcleo do processador; escondido, 0,2%. No Gerenciador de Tarefas, a memória fica perto de 110 MB num mundo novo e de 180 MB num mundo de 150 a 200 anos. [Como foi medido](docs/como-foi-feito.md#leveza).
 
 ## Galeria
 
-Todas as imagens abaixo são capturas do jogo, ampliadas 3 vezes sem suavização, como a janela mostra na escala 3x.
+Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como a janela mostra nas escalas 2x a 4x.
 
 | | |
 |---|---|
