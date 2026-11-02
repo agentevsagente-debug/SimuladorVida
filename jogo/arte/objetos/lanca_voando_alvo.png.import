@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://did1nrx1gutrp"
+path="res://.godot/imported/lanca_voando_alvo.png-8dc4a04277549cda6b35f058156b4aa6.image"
+
+[deps]
+
+source_file="res://arte/objetos/lanca_voando_alvo.png"
+dest_files=["res://.godot/imported/lanca_voando_alvo.png-8dc4a04277549cda6b35f058156b4aa6.image"]
+
+[params]
+
