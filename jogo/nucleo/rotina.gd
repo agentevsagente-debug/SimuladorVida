@@ -101,20 +101,65 @@ func montar(_mundo = null) -> void:
 	var t: Dictionary = m.tempestade
 	if not t.is_empty():
 		abrigos[t["zona"]] = t["inicio"] * 60.0
-	for g in _grupos:
-		for pid in g.membros:
-			planos[pid] = _plano(m.pessoas[pid], g)
-		if ctx.has(g.id):
-			_conversas_no_trabalho(g, ctx[g.id])
-		for pid in g.membros:
-			_linha(pid)
-			_cortar_dia(pid)
+	# O resto (planos, conversas no trabalho, linhas e agendas) só depende do próprio povo: cada
+	# povo é montado numa fatia à parte, em paralelo, e as fatias se juntam no fim, na ordem dos
+	# povos. O resultado é o mesmo da montagem em série (veja montagem_rotina.gd, o HASH).
+	if por_povo_em_paralelo and _grupos.size() > 1:
+		var fatias: Array = []
+		for g in _grupos:
+			fatias.append(_fatia(g))
+		var tarefa := WorkerThreadPool.add_group_task(func(i: int): fatias[i]._montar_povo(fatias[i]._grupos[0]),
+			fatias.size(), -1, false, "rotina por povo")
+		WorkerThreadPool.wait_for_group_task_completion(tarefa)
+		for f in fatias:
+			planos.merge(f.planos)
+			linhas.merge(f.linhas)
+			_inicios.merge(f._inicios)
+			_agendas.merge(f._agendas)
+	else:
+		for g in _grupos:
+			_montar_povo(g)
 	_grupos = []
 	# Depois de cortado o dia, só as linhas e as agendas são lidas: os planos e os blocos fixos
 	# (um terço da memória de uma rotina com 250 pessoas) saem aqui mesmo, na thread.
 	if not guardar_planos:
 		planos.clear()
 		fixos.clear()
+
+
+## Montar os povos em paralelo (QA D-07): com a CPU disputada, cada povo numa thread. As
+## ferramentas desligam para comparar com a montagem em série.
+var por_povo_em_paralelo := true
+
+
+## Os planos, as conversas no trabalho, as linhas e as agendas de um povo.
+func _montar_povo(g) -> void:
+	for pid in g.membros:
+		planos[pid] = _plano(m.pessoas[pid], g)
+	if ctx.has(g.id):
+		_conversas_no_trabalho(g, ctx[g.id])
+	for pid in g.membros:
+		_linha(pid)
+		_cortar_dia(pid)
+
+
+## Uma fatia da rotina para montar um povo numa thread: lê o que é de todos (contexto, blocos
+## fixos, papéis, cenas, abrigos, as caçadas), que nesta fase ninguém muda, e escreve só nos próprios planos,
+## linhas e agendas.
+func _fatia(g):
+	var f = get_script().new(m, dia)
+	f.ano = ano
+	f.ctx = ctx
+	f.fixos = fixos
+	f.papeis = papeis
+	f.cenas = cenas
+	f.abrigos = abrigos
+	f._porcos = _porcos
+	f.cortar_desde = cortar_desde
+	f.cortar_ate = cortar_ate
+	f._soltas_ate = _soltas_ate
+	f._grupos = [g]
+	return f
 
 
 ## Solta as agendas das horas que já passaram (antes da hora h - 1): a apresentação só lê a
