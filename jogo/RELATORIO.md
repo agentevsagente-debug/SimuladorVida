@@ -2,6 +2,44 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## Versão 0.2: o som
+
+**O silêncio primeiro.**
+- O botão de som fica no fim da alça, depois do esconder: o alto-falante da C, ligado ou com o X vermelho, e muda na hora.
+- A tecla M faz o mesmo, e a dica do botão diz "Som (M)".
+- No menu da bandeja (botão direito no ícone), o item "Som ligado" tem marca. O menu também tem Mostrar/Esconder e Sair.
+- A escolha vai para o moldura.cfg na hora em que muda, mesmo com a janela escondida.
+- Esconder (H, o botão, a bandeja, o Ctrl+Alt+H) e minimizar por fora (Win+D, a barra de tarefas) calam o Master na hora. Ao mostrar, o som volta se o jogador o deixou ligado.
+- O volume começa em -12 dB. A C sugere -10, mas o QA-189 pede de -60 a -12.
+
+**O que soa vem do núcleo** (API.md, "O som (versão 0.2)", da A):
+- som_do_evento para os eventos;
+- o r["som"] para os gestos (o evento do gesto não repete o som);
+- sons_da_hora para o galo, o sino do templo e o grito frustrado;
+- ambiente_sonoro para os 10 laços (vento, pássaros, lago, grilos, fogo, chuva, tempestade, neve, vila e festa), que cruzam em 2 a 3 s.
+
+A lança e o grito da caçada e do ensinar tocam pela vida, no quadro em que o desenho mostra a lança saindo e cravando. A coruja canta à noite, a cada 1 a 3 min.
+
+- **Os arquivos:** são os 35 da C (arte_claude/sons/, 1,98 MB, Ogg mono), copiados para jogo/sons/, com o mapa de nomes do LEIA-ME da C. Os laços tocam em streaming, com loop.
+- **As vozes:** o pan segue o x na tela. Há 4 vozes para os acontecimentos e 2 só para os pesados (terremoto, dilúvio, fogo forte, grito da caçada, batalha, lamento), sempre no grupo som_pesado. No modo discreto, os pesados não tocam.
+- **O driver:** saiu o Dummy da fase 0.
+
+**Os testes da D (testar_som.gd):** QA-188 a 193, 195 e 196 passam (8). O QA-194, minimizar com janela de verdade, ainda não rodou.
+
+**A leveza** (`medir.ps1 -Cenario normal`, 1x, 120 s, com o PC em uso):
+
+| | CPU (% de um núcleo) | Gerenciador de Tarefas |
+|---|---|---|
+| Driver Dummy (sem áudio) | 4,6% | 131,6 MB |
+| WASAPI, som desligado | 5,5% (outra rodada: 4,97%) | 131 a 135 MB |
+| WASAPI, som ligado e mixado (-80 dB, `-ComSom`) | 3,45% | 139,5 MB |
+
+- O driver ligado custa cerca de 0,9% de um núcleo.
+- A mistura dos sons fica dentro do ruído da medida, abaixo de 1%.
+- A memória sobe cerca de 4 MB (a meta era menos de 20 MB).
+
+**Opções de teste novas:** `--sem-som`, `--som-inaudivel`, `--alternar-som=S` e `--menu-bandeja=S[:item]`. O verificar.ps1 ganhou o passo do botão de som, com a alça de 201 px; ele, o b1 e o medir passam --sem-som.
+
 ## Versão 0.1 para amigos (auditoria 11)
 
 **A falha ao fechar.**

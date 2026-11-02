@@ -33,6 +33,7 @@ extends Node2D
 ##   --livro-arquivo=CAMINHO[:PÁGINA]     abre um livro em markdown no leitor da estante (testes)
 ##   --discreto                           liga o modo discreto (D, no jogo): o pior fica só na crônica
 ##   --sem-som                            abre com o som desligado, sem gravar a escolha (testes)
+##   --som-inaudivel                      som ligado e mixado, mas a -80 dB (medir o custo sem fazer barulho)
 ##   --alternar-som=S                     aperta o botão de som depois de S segundos (testes)
 ##   --menu-bandeja=S[:janela|som|sair]   abre o menu da bandeja depois de S segundos e escolhe o item (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
@@ -95,6 +96,7 @@ func _ready() -> void:
 	som = preload("res://apresentacao/som.gd").new()
 	add_child(som)
 	som.criar(vista)
+	vista.som = som
 	interface.som_alternar.connect(_alternar_som)
 	interface.largura_mudou.connect(_aplicar_passagem_mouse)
 	interface.arrastar.connect(_arrastar)
@@ -120,6 +122,10 @@ func _ready() -> void:
 	# o som: a escolha guardada (ligado na primeira vez); --sem-som cala só esta abertura
 	_som_forcado = args.has("sem-som")
 	som.definir_ligado(false if _som_forcado else bool(config.get_value("moldura", "som", true)))
+	if args.has("som-inaudivel"):  # medição: tudo toca e é mixado, mas a -80 dB (ninguém ouve)
+		_som_forcado = true
+		som.volume_db = -80.0
+		som.definir_ligado(true)
 	interface.som_ligado = som.ligado
 	if vista.sim:
 		vista.sim.eventos_novos.connect(_sons_dos_eventos)
@@ -257,9 +263,13 @@ func _guardar_som() -> void:
 func _sons_dos_eventos(eventos: Array) -> void:
 	if som.calado():
 		return
+	var mundo = vista.sim.mundo
+	if not mundo.has_method("som_do_evento"):
+		return
 	for ev in eventos:
-		var dados: Dictionary = ev.get("dados", {}) if ev.get("dados", {}) is Dictionary else {}
-		som.tocar(String(ev.get("tipo", "")), float(dados.get("x", 240.0)))
+		if som.ja_tocados.erase(int(ev.get("id", -2))):
+			continue  # o gesto já tocou o som dele na hora
+		som.tocar_do_nucleo(mundo.som_do_evento(ev), String(ev.get("tipo", "")))
 
 
 func _process(delta: float) -> void:
@@ -283,7 +293,7 @@ func _process(delta: float) -> void:
 		som.definir_escondida(escondida or minimizada)
 	if not escondida and vista.sim:
 		som.discreto = vista.modo_discreto
-		som.avancar(delta, vista.estado_do_som())
+		som.avancar(delta, vista.sim.mundo, vista.sim.hora_continua())
 	# Se o jogador restaurar a janela pela barra de tarefas, volta a desenhar.
 	if escondida and get_window().mode != Window.MODE_MINIMIZED:
 		_log("restaurada pela barra de tarefas? modo=%d" % get_window().mode)
@@ -315,6 +325,7 @@ func _notification(what: int) -> void:
 			vista.sim.salvar()
 			vista.sim.encerrar()
 		_parar_atalho_global()
+		som.encerrar()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -395,6 +406,7 @@ func sair() -> void:
 		vista.sim.salvar()
 		vista.sim.encerrar()
 	_parar_atalho_global()
+	som.encerrar()
 	get_tree().quit()
 
 
@@ -403,6 +415,8 @@ func _exit_tree() -> void:
 	if vista and vista.sim:
 		vista.sim.encerrar()
 	_parar_atalho_global()
+	if som:
+		som.encerrar()
 
 
 func _parar_atalho_global() -> void:

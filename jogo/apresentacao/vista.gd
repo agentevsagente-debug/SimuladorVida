@@ -68,6 +68,7 @@ const LOTE_FOLGA := 3.0
 const VAO_ENTRE_POVOS := 10.0
 const X_CONVITE := 275.0  # a clareira onde o convite do mundo vazio aparece (o x padrão do criar_povo)
 var _convite := false
+var som: Node  # o som (a moldura põe): a vida toca a lança e o grito da caçada
 const FILEIRA_ATRAS := 4  # px acima que a fileira de trás fica (API: `fileira` 1)
 const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobre a pessoa"
 
@@ -272,6 +273,8 @@ func avancar(delta: float, desenhar: bool) -> void:
 			if _gravados >= _quadros:
 				if sim:
 					sim.encerrar()
+				if som:
+					som.encerrar()
 				get_tree().quit()
 
 
@@ -387,15 +390,6 @@ func _atualizar_convite() -> void:
 		_sinais.marcar("convite_povo_4q", 24, 4, 2.5, INF, -1, X_CONVITE, chao(int(X_CONVITE)))
 	else:
 		_sinais.marcas = _sinais.marcas.filter(func(m): return m.folha != "convite_povo_4q")
-
-
-## O que o som precisa saber do ambiente (moldura -> som.avancar).
-func estado_do_som() -> Dictionary:
-	var clima := String(_estado[3]) if _estado.size() > 3 else ""
-	if clima == "" and sim and sim.clima.get("chuva", false):
-		clima = "chuva"
-	return {"hora": _hora(), "clima": clima, "estacao": estacao_atual(), "pessoas": figuras.size(),
-		"fogos": _fogos.size()}
 
 
 func _ao_trocar_mundo() -> void:

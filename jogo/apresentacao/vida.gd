@@ -119,6 +119,7 @@ const CALCULOS_DEVAGAR := 10.0  # cálculos por segundo das pessoas em 1x e na p
 var _desenho: Array = []        # o último resultado de atualizar(), reaproveitado entre os cálculos
 var _proximo_calculo := 0.0
 var _delta_guardado := 0.0
+var _sons_feitos := {}         # cena e marca -> true: cada som da cena toca uma vez só
 var _trechos := {}             # trecho da agenda de cada um (refeito 6 vezes por segundo)
 var _lugar := {}               # lugar de cada parado (idem)
 var _refazer_lugares_em := 0.0
@@ -847,6 +848,13 @@ func _cacada_em_etapas(c: Dictionary, h: float, relogio: float, r: Array) -> voi
 	var p: float = e.p
 	var chao_b: int = vista.chao(roundi(xb))
 	var fogo_b: float = vista.fogo_mais_perto(xb)
+	var marca := str(c.get("id", ""))
+	if String(e.etapa) == "arremesso" and p >= SOLTA:
+		_som_uma_vez(marca + ":solta", "lanca", xb - lado * 20.0)
+		if p >= CRAVA and not e.vazia:
+			_som_uma_vez(marca + ":crava", "baque", xb)
+	elif String(e.etapa) == "abatido" and not e.vazia:
+		_som_uma_vez(marca + ":grito", "grito_caca", xb)
 	match String(e.etapa):
 		"saida", "espreita":  # fuçando, de costas para quem chega
 			_bicho("criaturas/porco_do_mato_4q", 10, xb - 5, chao_b, int(relogio * 3.0) % 4, lado < 0, fogo_b)
@@ -881,6 +889,16 @@ func _bicho(folha: String, largura: int, x: float, base: int, quadro: int, espel
 	o.espelho = espelho
 	o.fogo = fogo
 	objetos.append(o)
+
+
+## Um som da cena, uma vez só (a vida é calculada 10 a 30 vezes por segundo).
+func _som_uma_vez(marca: String, chave: String, x: float) -> void:
+	if _sons_feitos.has(marca) or vista.som == null:
+		return
+	if _sons_feitos.size() > 200:
+		_sons_feitos.clear()
+	_sons_feitos[marca] = true
+	vista.som.tocar(chave, x)
 
 
 ## A cena ativa (de sim.cenas) com o mesmo id da cena do trecho, que traz só tipo e id.
@@ -940,6 +958,11 @@ func _alvos_de_capim() -> void:
 				estado = "cravada"
 		var chao_a: int = vista.chao(int(alvo))
 		var fogo: float = vista.fogo_mais_perto(alvo)
+		var marca := "%s:%.3f" % [c.get("id", ""), float(e.get("ini", 0.0))]
+		if estado == "voando":
+			_som_uma_vez(marca + ":solta", "lanca_alvo", xa)
+		elif estado == "cravada" and e.get("etapa", "") in ["mostrar", "tentativa"]:
+			_som_uma_vez(marca + ":crava", "baque", alvo)
 		var o: Dictionary
 		if estado == "cravada":  # a lança entra pela esquerda (cols. 0 a 3); vinda da direita, espelha
 			o = _objeto("objetos/alvo_capim_lanca", 12, roundi(alvo) - (8 if lado > 0.0 else 4), chao_a, 0)

@@ -202,6 +202,8 @@ func _botao_em(p: Vector2) -> Dictionary:
 
 
 func _apertar(id: String) -> void:
+	if id != "som" and vista.som != null:
+		vista.som.clique()
 	if id == "poderes":
 		aberto = "" if aberto == "poderes" else "poderes"
 	elif id.begins_with("poder:"):
@@ -235,7 +237,7 @@ func _apertar(id: String) -> void:
 		esconder.emit()
 	elif id == "som":
 		som_alternar.emit()
-		return  # a moldura remonta a alça com o ícone novo
+		return  # a moldura remonta a alça com o ícone novo (o botão de som não clica)
 	_montar_botoes()
 
 
@@ -555,11 +557,10 @@ func _usar_poder() -> void:
 	var r: Dictionary = vista.sim.usar_poder(PODER_NUCLEO[poder], _carga_ponto.x, intensidade(), sob_id,
 		vista.sim.fracao() * 60.0)
 	print("[interface] poder %s em x=%d intensidade=%.2f -> %s" % [poder, _carga_ponto.x, intensidade(), r])
-	if r.get("ok", false) and vista.get_parent().get_parent().get("som") != null:
-		var som: Node = vista.get_parent().get_parent().som
-		som.tocar(PODER_NUCLEO[poder], _carga_ponto.x)
-		if r.get("grau", "") == "milagre":
-			som.tocar("milagre", _carga_ponto.x)
+	if r.get("ok", false) and vista.som != null:
+		# o som do gesto, que o núcleo já devolve; o evento dele não toca de novo
+		vista.som.tocar_do_nucleo(r.get("som", {}), PODER_NUCLEO[poder], String(r.get("grau", "")))
+		vista.som.ja_tocados[int(r.get("evento", -1))] = true
 	if r.get("ok", false):
 		marcar_dica("poder")
 		var alvo := ""

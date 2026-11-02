@@ -1,0 +1,13 @@
+﻿{
+    "cenario":  "normal",
+    "duracao_s":  125,
+    "nucleos_logicos":  28,
+    "cpu_media_pct":  0.123,
+    "cpu_media_1nucleo":  3.45,
+    "cpu_max_amostra_pct":  0.183,
+    "ws_media_mb":  244.6,
+    "ws_max_mb":  244.7,
+    "privada_max_mb":  245.8,
+    "gerenciador_media_mb":  139.5,
+    "gerenciador_max_mb":  139.7
+}

@@ -1,4 +1,4 @@
-SIMULADOR DE VIDA 0.1.2 - COMO JOGAR
+SIMULADOR DE VIDA 0.2.0 - COMO JOGAR
 ====================================
 
 O QUE É
