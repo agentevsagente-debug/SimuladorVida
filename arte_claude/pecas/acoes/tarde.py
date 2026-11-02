@@ -272,20 +272,21 @@ def idoso_aprovar():
 
 
 def objetos_tarde():
-    """O alvo de capim (8x14): um feixe de palha amarrado em duas voltas, fincado numa estaca;
-    o alvo com a lança cravada (12x14, a lança entrando pela esquerda); e a lança caída no
-    chão (14x2), quando erra."""
+    """O alvo de capim (8x14): um feixe de palha amarrado embaixo, fincado numa estaca, com um
+    círculo de ocre vermelho e o miolo branco pintados na frente (auditoria 13: só com as faixas,
+    de longe, ele se lia como um barril ou uma colmeia); o alvo com a lança cravada no miolo
+    (12x14, a lança escura entrando pela esquerda); e a lança caída no chão (14x2), quando erra."""
     alvo = [
-        ".y.yy.y.", "yonyynoy", "onyyyyno", "oqqqqqqo", "onyyyyno", "onyyyyno", "oqqqqqqo", "onyyyyno",
+        ".y.yy.y.", "yonyynoy", "onyrryno", "oyrWWryo", "oyrWWryo", "onyrryno", "onyyyyno", "oqqqqqqo",
         "yonyynoy", ".y.oo.y.", "...on...", "...on...", "...on...", "..nonn..",
     ]
     cravada = []
     for y, l in enumerate(alvo):
         linha = "...." + l
+        if y == 3:
+            linha = "qqqqqqqq" + linha[8:]
         if y == 4:
-            linha = "nnnnnZ" + linha[6:]
-        if y == 5:
-            linha = "qqqqqz" + linha[6:]
+            linha = "nnnn" + linha[4:]
         cravada.append(linha)
     no_chao = ["..nnnnnnnnnnZZ", "qqqqqqqqqqqqzz"]
     return {"alvo_capim": m(*alvo), "alvo_capim_lanca": m(*cravada), "lanca_no_chao": m(*no_chao)}
