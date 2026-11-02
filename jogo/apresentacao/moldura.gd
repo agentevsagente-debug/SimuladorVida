@@ -98,6 +98,7 @@ func _ready() -> void:
 	som.criar(vista)
 	vista.som = som
 	interface.som_alternar.connect(_alternar_som)
+	interface.escala_ciclo.connect(_ciclar_escala)
 	interface.largura_mudou.connect(_aplicar_passagem_mouse)
 	interface.arrastar.connect(_arrastar)
 	interface.esconder.connect(esconder)
@@ -426,6 +427,23 @@ func _parar_atalho_global() -> void:
 		_atalho_leitor.wait_to_finish()
 
 
+## O botão da lupa: sobe (2x, 3x, 4x e volta a 2x) ou desce (com o botão direito), só até
+## a maior escala que cabe na tela; ao crescer, _aplicar_escala puxa a janela para dentro.
+func _ciclar_escala(direcao: int) -> void:
+	var area := DisplayServer.screen_get_usable_rect(get_window().current_screen)
+	var maior := ESCALA_MIN
+	for k in range(ESCALA_MIN, ESCALA_MAX + 1):
+		if BASE.x * k <= area.size.x and BASE.y * k <= area.size.y:
+			maior = k
+	var nova := escala + direcao
+	if nova > maior:
+		nova = ESCALA_MIN
+	elif nova < ESCALA_MIN:
+		nova = maior
+	_aplicar_escala(nova)
+	interface._avisar("Tamanho: %dx" % escala)
+
+
 ## Escala inicial: 2x numa tela de 96 dpi, 3x em 144 dpi (150%), 4x em
 ## 192 dpi, sem passar de 60% da largura útil da tela.
 func _escala_pela_tela(tela: int) -> int:
@@ -460,6 +478,8 @@ func _aplicar_escala(nova: int, guardar := true) -> void:
 		pos.y = clampi(pos.y, area.position.y, maxi(area.position.y, area.end.y - tamanho.y))
 		janela.position = pos
 	escala = nova
+	interface.escala_atual = escala
+	interface._montar_botoes()
 	_aplicar_passagem_mouse()
 	if guardar:
 		_guardar_config()
