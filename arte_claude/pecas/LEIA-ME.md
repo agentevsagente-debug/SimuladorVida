@@ -250,7 +250,7 @@ Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a al�
 |---|---|
 | Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
 | Tempo | `pausa`, `normal`, `rapido`, `rapido2` (três setas, para o ritmo de 50x), `salto` |
-| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio) |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio), `som` e `som_mudo` (o botão de som no fim da alça, da 0.2: o alto-falante com duas ondas e o alto-falante com um X vermelho) |
 
 Os ícones foram desenhados para o fundo escuro da alça.
 
