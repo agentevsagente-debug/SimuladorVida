@@ -37,7 +37,12 @@ const FAZENDO_DETALHE := {
 	"caca_no_pau": "trazendo o porco no pau", "bocejar": "acordando, espreguiçando-se",
 	"aticar": "atiçando as brasas", "cochilar": "cochilando na vigia",
 	"levar_cesto": "indo colher, com o cesto", "levar_vara": "indo pescar, com a vara",
-	"levar_machado": "indo buscar lenha", "levar_pote": "indo buscar água", "levar_lanca": "indo caçar"}
+	"levar_machado": "indo buscar lenha", "levar_pote": "indo buscar água", "levar_lanca": "indo caçar",
+	"sesta": "cochilando à sombra", "cutucar": "cutucando quem dorme", "ralhar": "ralhando com uma criança",
+	"fugir": "fugindo, às risadas", "mirar_alvo": "mirando o alvo de capim", "arremessar_alvo": "atirando a lança no alvo",
+	"buscar_lanca": "buscando a lança no capim", "mostrar": "ensinando a atirar a lança", "aprovar": "aprovando o arremesso",
+	"comemorar": "pulando de alegria", "trancar_cesto": "trançando um cesto {lugar}", "moldar_pote": "moldando um pote de barro",
+	"afiar_lanca": "afiando uma lança {lugar}", "mostrar_peca": "mostrando a peça pronta", "levar_peca": "levando a peça para casa"}
 
 ## O que se faz, pela ação, quando o detalhe não diz.
 const FAZENDO_ACAO := {
@@ -716,5 +721,19 @@ func _no_que_faz(cands: Array, f: Dictionary) -> void:
 			_nec(cands, 4, ["A água leva a sujeira e o cansaço", "Essas crianças não saem da água"], "tranquil" + a)
 		"vigia", "cochilar":
 			_nec(cands, 4, ["O fogo não pode apagar", "Algum bicho rondando lá fora?"], "sonolent" + a)
+		"sesta":
+			_nec(cands, 4, ["Só um cochilo, e volto ao trabalho", "Que sombra boa"], "sonolent" + a)
+		"cutucar", "fugir":
+			_nec(cands, 5, ["Por que todo mundo dorme agora?", "Ele nem viu que fui eu"], "travess" + a)
+		"ralhar":
+			_nec(cands, 5, ["Essa criança não deixa ninguém dormir", "Vai brincar longe daqui!"], "irritad" + a)
+		"mostrar", "aprovar":
+			_nec(cands, 5, ["Firme no braço, olho no alvo", "Na idade dele eu errava mais"], "orgulhos" + a)
+		"mirar_alvo", "arremessar_alvo", "buscar_lanca":
+			_nec(cands, 5, ["Dessa vez eu acerto", "Um dia vou caçar com os grandes"], "concentrad" + a)
+		"comemorar":
+			_nec(cands, 6, ["Acertei! Viram?", "Agora me deixam ir à caçada"], "feliz")
+		"trancar_cesto", "moldar_pote", "afiar_lanca", "mostrar_peca":
+			_nec(cands, 4, ["Esse vai durar o ano todo", "As mãos sabem o que fazer"], "tranquil" + a)
 		"historias":
 			_nec(cands, 4, ["Essa história eu nunca canso de ouvir"], "contente")
