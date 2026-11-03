@@ -282,6 +282,14 @@ Todas estão abertas a revisão.
 
 Passar o cursor sobre um habitante mostra também o que ele está fazendo, o que está pensando e o seu humor. O pensamento sai sempre do estado real da pessoa: necessidades, acontecimentos que a tocaram, relações, o que ela acha do deus e traços. Ela fala do que viu, nunca do jogador.
 
+### A vida do povo na crônica (pedido do autor em 03/11/2026)
+
+A crônica não conta só os atos do deus. Nascimentos, casamentos e mortes do povo também entram, mesmo num ano cheio de milagres:
+
+- **Povo pequeno:** cada nascimento, casamento e morte entra com o nome de quem nasceu, casou ou morreu. Uma morte diz a idade e a causa. Num ano com muitos casos, eles se juntam numa frase só, por exemplo: "Naquele ano nasceram Zeya e Teo; casaram-se Demos e Yoena; morreu Iszeos, velho."
+- **Povo grande:** a crônica dá a conta do ano por povo, como "nasceram doze crianças e morreram cinco". Ela nomeia só os casos notáveis: o primeiro filho, gêmeos, a morte do líder ou do sacerdote e casamentos entre povos.
+- **Os atos do deus não ocupam o lugar da vida.** A vida do povo tem uma linha própria em cada ano e não disputa espaço com os atos do deus.
+
 ### O fogo brando atende o frio
 
 Nenhum poder atendia a prece de frio. O fogo em intensidade baixa acende as fogueiras e aquece, sem queimar; em intensidade média ou alta, continua queimando. Não é um poder novo: é a intensidade que o gesto já tem.

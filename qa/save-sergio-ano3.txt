@@ -1,0 +1,168 @@
+# Simulador de vida: mundo salvo. Arquivo de texto do Godot (var_to_str). Soma md5: 01d4dff4756e38ac7a1ae747b787fb18
+{
+"@ordem": [["versao", 3], ["salvo_em", 1793674922], ["semente", 1987520143], ["rng_seed", 1987520143], ["rng_state", 4241546169573637229], ["mundo", {
+"@ordem": [["semente", 1987520143], ["passo", 2376], ["peste_ate", -1], ["comandos", []], ["_proximo_comando", 0], ["_proximo_id_pessoa", 14], ["fim_do_mundo", false], ["inverno_rigoroso", false], ["seca_global", false], ["seca_fim_dia", -1], ["seca_evento", -1], ["tempestade", {
+"@ordem": []
+}], ["ultimo_milagre", {
+"@ordem": []
+}], ["linhagem", [2, 1, 3, 5, 6, 7, 9, 10, 12, 13]], ["acompanhada", 7], ["_usos_recentes", [{
+"@ordem": [["poder", "pressagio"], ["zona", "lago"], ["dia", 95]]
+}, {
+"@ordem": [["poder", "diluvio"], ["zona", "morro"], ["dia", 95]]
+}, {
+"@ordem": [["poder", "seca"], ["zona", "morro"], ["dia", 97]]
+}, {
+"@ordem": [["poder", "seca"], ["zona", "morro"], ["dia", 97]]
+}]], ["_ultimos_avisado", false], ["salvo_em", 1793674922], ["guerras", []], ["ruinas", []], ["era", 1], ["era_inicio_ano", 1], ["livros", []], ["arquivo_linhas", 0], ["_arquivo_cursor", 0], ["_mantidos", []], ["_citados", {
+"@ordem": []
+}], ["_citados_ate", 0], ["_mortos_a_ver", []], ["_pessoas_citadas", {
+"@ordem": []
+}], ["arquivados_por_tipo", {
+"@ordem": []
+}], ["_houve_arquivado", {
+"@ordem": []
+}], ["mortos_arquivados", {
+"@ordem": []
+}], ["_primeira_prece_arquivada", {
+"@ordem": []
+}], ["pior_fome_arquivada", 0], ["ultima_seca_arquivada", -1], ["nomes_arquivados", {
+"@ordem": []
+}], ["gestos_bons", {
+"@ordem": [[0, [["pressagio", 95]]]]
+}], ["casas_vazias", {
+"@ordem": []
+}], ["_no_passo", false], ["_sons_chave", [149, 2375]], ["_sons", []], ["_ambiente_chave", 2375], ["_ambiente", {
+"@ordem": [["pessoas", 13], ["vilas", [["@f:4641240890982006784", "@f:4644513037586268160"]]], ["fogos", ["@f:4643369545493381120"]], ["fogo_aceso", true], ["fogo", "@f:4607182418800017408"], ["noite", true], ["hora", 23], ["estacao", "verão"], ["chuva", "@f:0"], ["tempestade", {
+"@ordem": []
+}], ["neve", false], ["vento", "@f:4596373779694328218"], ["festa", "@f:-4616189618054758400"], ["vazio", false], ["vila", "@f:4592470660017273788"]]
+}], ["aquecidos", {
+"@ordem": []
+}], ["preces_fechadas", {
+"@ordem": []
+}]]
+}], ["cronista", {
+"@ordem": [["_narrados", {
+"@ordem": [["pressagio", [1, 1, 1, 1]], ["crenca", [1]], ["chuva_divina", [1]], ["sonho", [1, 1, 1]], ["fartura_divina", [1, 1]]]
+}], ["_primeiros", {
+"@ordem": [["pressagio", true], ["pressagio@-1", true], ["crenca", true], ["crenca@0", true], ["chuva_divina", true], ["chuva_divina@-1", true], ["sonho", true], ["sonho@-1", true], ["sonho@0", true], ["fartura_divina", true], ["fartura_divina@-1", true]]
+}], ["_usados", {
+"@ordem": [[1, true], [2, true], [3, true], [6, true], [7, true], [8, true], [9, true], [11, true], [13, true], [14, true], [15, true]]
+}], ["anos_escritos", {
+"@ordem": [[1, "Numa noite, o céu ficou de várias cores, até o amanhecer. Mokon viu ali um bom agouro. O céu da noite se encheu de luzes verdes que dançavam. Mokon viu ali um bom agouro. Diante do sinal no céu, Zekoya disse que alguém queria dizer alguma coisa. Chamaram-no de «o Que Acende o Céu». Foi a primeira crença do mundo. No verão, uma luz com rabo atravessou o céu de ponta a ponta, rápida demais para ser estrela. Mokon viu ali um bom agouro. Choveu sobre o lago num dia sem nuvens. Um sonho desceu sobre o lago, mas não havia ali ninguém para sonhá-lo. Num sonho, Dateim viu mãos enterrando sementes. Acordou decidido a tentar. O sol escureceu fora de hora, e voltou como se nada fosse. Mokon viu ali um bom agouro. Dateim teve um sonho que não sabia explicar, e acordou certo de que alguém tinha falado com ele. O morro deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água. Os galhos do lago pesaram de tanto fruto, fora de época."], [2, ""]]
+}], ["ultimo_ano_escrito", 2], ["_cursor", 16], ["cronicas_povos", {
+"@ordem": []
+}], ["_recentes", {
+"@ordem": [["Numa noite, o céu ficou de várias cores, até o amanhecer.", 1], ["O céu da noite se encheu de luzes verdes que dançavam.", 1], ["Diante do sinal no céu, {p} disse que alguém queria dizer alguma coisa. Chamaram-{deus:no|na} de «{deusn}».", 1], ["Foi a primeira crença do mundo.", 1], ["Uma luz com rabo atravessou o céu de ponta a ponta, rápida demais para ser estrela.", 1], ["Choveu sobre {o:zona} num dia sem nuvens.", 1], ["Um sonho desceu sobre {o:zona}, mas não havia ali ninguém para sonhá-lo.", 1], ["Num sonho, {p} viu mãos enterrando sementes. Acordou {p:decidido|decidida} a tentar.", 1], ["O sol escureceu fora de hora, e voltou como se nada fosse.", 1], ["{p} teve um sonho que não sabia explicar, e acordou certo de que alguém tinha falado com ele.", 1], ["{o:zona} deu comida como nunca: frutos caindo dos galhos e peixe na beira d'água.", 1], ["Os galhos {de:zona} pesaram de tanto fruto, fora de época.", 1]]
+}], ["_fatia", {
+"@ordem": []
+}], ["_indice_ate", 0]]
+}], ["antigos_no_arquivo", 0], ["pessoas", {
+"@ordem": [["campos", ["id", "nome", "sexo", "nasc_ano", "pai", "mae", "conjuge", "filhos", "grupo", "tracos", "memoria", "saude", "fe", "sabe_agricultura", "saberes", "rancores", "vivo", "morte_ano", "causa_morte", "gravidez", "doente", "ferida_pelo_deus", "feitos", "veio_de"]], ["linhas", [[1, "Iszeos", "m", -51, -1, -1, 2, [3, 7, 10], 0, ["desconfiado", "curioso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4587726868409776866", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [2, "Dana", "f", -50, -1, -1, 1, [3, 7, 10], 0, ["corajoso", "engenhoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [3, "Zem", "m", -23, 1, 2, 4, [5, 6], 0, ["ambicioso", "curioso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [4, "Demena", "f", -22, -1, -1, 3, [5, 6], 0, ["medroso", "generoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", 1, 0, false, 0, -1], [5, "Teim", "m", -2, 3, 4, -1, [], 0, ["corajoso", "generoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607071429245681011", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [6, "Kodaena", "f", -9, 3, 4, -1, [], 0, ["medroso", "engenhoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607098339765927283", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [7, "Wawana", "f", -29, 1, 2, 8, [9, 13], 0, ["engenhoso", "corajoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [8, "Daon", "m", -32, -1, -1, 7, [9, 13], 0, ["generoso", "corajoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [9, "Demos", "m", -1, 8, 7, -1, [], 0, ["corajoso", "rancoroso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4606957238818648883", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [10, "Dateim", "m", -28, 1, 2, 11, [12], 0, ["corajoso", "ambicioso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", true, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 4, -1], [11, "Zekoya", "f", -26, -1, -1, 10, [12], 0, ["engenhoso", "devoto"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 5, -1], [12, "Yoena", "f", -6, 10, 11, -1, [], 0, ["generoso", "corajoso"], [0, 3, 4, 9, 12, 13, 20], "@f:4607182418800017408", "@f:4607182418800017408", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1], [13, "Zeya", "f", 3, 8, 7, -1, [], 0, ["rancoroso", "curioso"], [20], "@f:4607182418800017408", "@f:4604989587504863642", false, [], {
+"@ordem": []
+}, true, -1, "", -1, 0, false, 0, -1]]]]
+}], ["grupos", {
+"@ordem": [["campos", ["id", "nome", "zona", "membros", "lider", "sacerdote", "fundador", "estoque", "abrigos", "estagio", "estagio_desde", "extinto", "origem", "cultura", "tem_crenca", "nome_deus", "genero_deus", "deus_renomeado_ano", "misterio", "crencas", "preces", "silencios", "ceticos", "costumes", "violencia", "hostilidade", "tregua_ate", "proibido", "fome_dias", "em_fome", "fome_evento", "fome_mortos", "fome_ultima_ano", "doenca_evento", "doenca_mortos", "frio_mortos", "amaldicoada", "nascimentos", "estranhos", "mortos", "atendidas_seguidas", "dependente", "ultimo_divino", "exigente", "poder", "recursos", "aparencia", "escrita_desde", "estudou_ceu", "ruinas_vistas", "ultimo_ataque_sofrido", "estela"]], ["linhas", [[0, "Mokon", "floresta", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 1, 11, 2, "@f:4640800291037738018", 3, 1, -1, false, {
+"@ordem": []
+}, {
+"@ordem": [["silabas", ["ko", "is", "na", "yo", "mo", "wa", "ze", "te", "dem", "da"]], ["fins_m", ["em", "im", "on", "os"]], ["fins_f", ["ena", "ya", "na", "ia"]]]
+}, true, "o Que Acende o Céu", "m", 1, "@f:4629034728616949185", ["origem_pressagio", "ouve_preces"], {
+"@ordem": []
+}, 0, false, [], "@f:4599075939470750515", {
+"@ordem": []
+}, {
+"@ordem": []
+}, {
+"@ordem": []
+}, 0, false, -1, 0, -100, -1, 0, 0, false, 1, "@f:4601552919265804288", "", 0, false, 95, false, "lider", "partilha", {
+"@ordem": [["parede", "pedra"], ["telhado", "telha"], ["simbolo", "lua"], ["roupa", "lilas"]]
+}, -1, false, [], -1000, -1]]]]
+}], ["zonas", {
+"@ordem": [["campos", ["chave", "nome", "genero", "cabeca", "comida", "comida_cap", "agua", "agua_min_seca", "madeira", "madeira_cap", "terra_cultivavel", "risco_raio", "seca", "monte_erguido", "pedra_x", "queimada_ate", "seca_ate", "seca_evento", "alagada_ate", "nomes"]], ["linhas", [["praia", "praia", "f", "Praia", "@f:4641592734702895104", "@f:4641592734702895104", "@f:4607182418800017408", "@f:4594572339843380019", "@f:4633641066610819072", "@f:4633641066610819072", 8, "@f:4608083138725491507", false, false, "@f:-4616189618054758400", -1, -1, -1, -1, {
+"@ordem": []
+}], ["lago", "lago", "m", "Lago", "@f:4643215039773404006", "@f:4643000109586448384", "@f:4607182418800017408", "@f:4601778099247172813", "@f:4638144666238189568", "@f:4638144666238189568", 30, "@f:4605380978949069210", false, false, "@f:-4616189618054758400", -1, -1, -1, -1, {
+"@ordem": []
+}], ["floresta", "floresta", "f", "Floresta", "@f:4639805368600782436", "@f:4643985272004935680", "@f:4607182418800017408", "@f:4594572339843380019", "@f:4645744490609377280", "@f:4645744490609377280", 22, "@f:4604480259023595110", false, false, "@f:-4616189618054758400", -1, -1, -1, -1, {
+"@ordem": []
+}], ["morro", "morro", "m", "Morro", "@f:4639833516098453504", "@f:4639833516098453504", "@f:4596013491724094012", "@f:4591870180066957722", "@f:4639481672377565184", "@f:4639481672377565184", 14, "@f:4612811918334230528", true, false, "@f:-4616189618054758400", -1, 121, 19, 99, {
+"@ordem": []
+}]]]]
+}], ["eventos", {
+"@ordem": [["campos", ["id", "tipo", "ano", "dia", "hora", "zona", "grupo", "outro_grupo", "participantes", "causa", "importancia", "dados"]], ["linhas", [[0, "inicio", 1, 0, 7, "floresta", 0, -1, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "natural", 10, {
+"@ordem": [["avo", 1], ["avoa", 2], ["era", 1], ["ruinas", 0]]
+}], [1, "pressagio", 1, 0, 7, "", -1, -1, [], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4641862481734533120"], ["intensidade", "@f:4606731874189695760"], ["repeticao", 0], ["leituras", {
+"@ordem": [[0, "bom"]]
+}], ["forma", "luzes"]]
+}], [2, "pressagio", 1, 0, 7, "", -1, -1, [], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4628949817177931776"], ["intensidade", "@f:4607182418800017408"], ["repeticao", 0], ["leituras", {
+"@ordem": [[0, "bom"]]
+}], ["forma", "luzes"]]
+}], [3, "crenca", 1, 0, 7, "floresta", 0, -1, [11], "social", 9, {
+"@ordem": [["deus", "o Que Acende o Céu"], ["genero", "m"], ["natureza", "pressagio"], ["origem", 2], ["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}], [4, "sacerdote", 1, 5, 0, "floresta", 0, -1, [11], "social", 6, {
+"@ordem": [["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}], [5, "tempestade", 1, 14, 0, "praia", -1, -1, [], "natural", 2, {
+"@ordem": [["mortos", []], ["abrigos", 0]]
+}], [6, "pressagio", 1, 14, 10, "", -1, -1, [], "divina", 5, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4640255728563519488"], ["intensidade", "@f:4598625579508013184"], ["repeticao", 0], ["leituras", {
+"@ordem": [[0, "bom"]]
+}], ["forma", "cometa"]]
+}], [7, "chuva_divina", 1, 14, 11, "lago", -1, -1, [], "divina", 3, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4637423386610368512"], ["intensidade", "@f:4590068740216010752"], ["repeticao", 0], ["em_seca", false], ["acabou_seca", false]]
+}], [8, "sonho", 1, 14, 23, "lago", -1, -1, [], "divina", 2, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4637194688191791104"], ["intensidade", "@f:4607182418800017408"], ["repeticao", 0], ["sonhador", -1]]
+}], [9, "sonho", 1, 16, 0, "floresta", 0, -1, [10], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4642349198702804992"], ["intensidade", "@f:4607182418800017408"], ["repeticao", 0], ["sonhador", 10], ["ideia", "agricultura"], ["aceita", true], ["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}], [10, "tempestade", 1, 20, 0, "lago", -1, -1, [], "natural", 2, {
+"@ordem": [["mortos", []], ["abrigos", 0]]
+}], [11, "pressagio", 1, 25, 21, "", -1, -1, [], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4642850576005070848"], ["intensidade", "@f:4603354359116753664"], ["repeticao", 0], ["leituras", {
+"@ordem": [[0, "bom"]]
+}], ["forma", "eclipse"]]
+}], [12, "nova_crenca", 1, 25, 21, "floresta", 0, -1, [], "social", 6, {
+"@ordem": [["crenca", "ouve_preces"], ["origem", 11], ["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}], [13, "sonho", 1, 26, 0, "floresta", 0, -1, [10], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4641293667540140032"], ["intensidade", "@f:4607182418800017408"], ["repeticao", 0], ["sonhador", 10], ["ideia", "visao"], ["aceita", true], ["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}], [14, "fartura_divina", 1, 37, 8, "morro", -1, -1, [], "divina", 4, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4645119968004800512"], ["intensidade", "@f:4600427019358986240"], ["repeticao", 0], ["em_fome", false]]
+}], [15, "fartura_divina", 1, 37, 8, "lago", -1, -1, [], "divina", 4, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4637616900656857088"], ["intensidade", "@f:4600427019358986240"], ["repeticao", 0], ["em_fome", false]]
+}], [16, "pressagio", 3, 15, 16, "", -1, -1, [], "divina", 5, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4634327161866551296"], ["intensidade", "@f:4587366580439613440"], ["repeticao", 0], ["leituras", {
+"@ordem": [[0, "aviso"]]
+}], ["forma", "cometa"]]
+}], [17, "diluvio", 3, 15, 16, "morro", -1, -1, [], "divina", 5, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4645916014423310336"], ["intensidade", "@f:4587366580439613440"], ["repeticao", 0], ["zonas", ["morro"]], ["mortos", []], ["cabanas", 0]]
+}], [18, "seca_divina", 3, 17, 23, "morro", -1, -1, [], "divina", 4, {
+"@ordem": [["comando", ""], ["grau", "sinal"], ["x", "@f:4646193091353509888"], ["intensidade", "@f:4591870180066983936"], ["repeticao", 0], ["dias", 8]]
+}], [19, "seca_divina", 3, 17, 23, "morro", -1, -1, [], "divina", 7, {
+"@ordem": [["comando", ""], ["grau", "milagre"], ["x", "@f:4646135916748865536"], ["intensidade", "@f:4605831338911834112"], ["repeticao", 1], ["dias", 24]]
+}], [20, "nascimento", 3, 18, 0, "floresta", 0, -1, [13, 7, 8], "natural", 5, {
+"@ordem": [["motivo", "primeiro"], ["_deus", "o Que Acende o Céu"], ["_gdeus", "m"]]
+}]]]]
+}], ["eventos_total", 21], ["antigos_pendentes", PackedStringArray()]]
+}
