@@ -100,8 +100,9 @@ func _mundo():
 	return vista.sim.mundo if vista.sim else null
 
 
-## As preces, da mais nova para a mais antiga: {evento, autor, nome, grupo, povo,
-## ano, dia, texto, estado, vivo, passo}.
+## As preces, da mais nova para a mais antiga (API.md, "A caixa de preces e o termômetro de fé"):
+## {evento, autor, nome, grupo, povo, ano, dia (0 a 39), texto, estado, vivo, passo, ...}. O array do
+## núcleo não pode ser alterado: carregar() copia cada item.
 func historico() -> Array:
 	var m = _mundo()
 	if m == null:
@@ -118,7 +119,7 @@ func historico() -> Array:
 		var desde := int(p["desde"])
 		r.append({"evento": int(p["evento"]), "autor": int(p["autor"]), "nome": autor.nome if autor else "?",
 			"grupo": int(p["grupo"]), "povo": g.nome if g else "", "ano": desde / Mundo.DIAS_ANO + 1,
-			"dia": desde % Mundo.DIAS_ANO + 1, "texto": String(p.get("curto", p.get("texto", ""))),
+			"dia": desde % Mundo.DIAS_ANO, "texto": String(p.get("curto", p.get("texto", ""))),
 			"estado": "esperando", "vivo": autor != null and autor.vivo, "passo": desde * Mundo.HORAS_DIA})
 	r.sort_custom(func(a, b): return a["evento"] > b["evento"])
 	return r
@@ -408,7 +409,7 @@ func _desenhar_lista(x0: int) -> void:
 			if ly >= topo - 1 and ly + ALTURA_LINHA <= fundo + 1:
 				draw_string(linhas[k][1], Vector2(x0 + linhas[k][2], ly + subida), linhas[k][0], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		# a data, à direita da cabeça; o estado, na última linha, com um ponto da cor dele
-		var data := "Ano %d, dia %d" % [int(q.get("ano", 1)), int(q.get("dia", 1))]
+		var data := "Ano %d, dia %d" % [int(q.get("ano", 1)), int(q.get("dia", 0)) + 1]  # o núcleo conta o dia de 0 a 39
 		var wd := int(escura.get_string_size(data, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
 		if y >= topo - 1 and y + ALTURA_LINHA <= fundo + 1:
 			draw_string(escura, Vector2(CAIXA.end.x - MARGEM - wd, y + subida), data, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
