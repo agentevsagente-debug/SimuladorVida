@@ -1,0 +1,3 @@
+# Os saves de teste guardam a soma md5 do conteúdo: o git não pode trocar as quebras de linha
+# (com core.autocrlf, o checkout no Windows punha CRLF e o jogo lia o save como ilegível).
+save-*.txt -text

@@ -69,6 +69,7 @@
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
 | D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido** na main `e4dd9d1` (0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa |
 | D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido** na main `e4dd9d1`: usa o povo do morto; QA-206 passa |
+| D-20 | A vida do povo some da crônica: os atos do deus enchem o ano, e o nascimento da Zeya (o primeiro filho do povo, no save do autor) não aparece no ano 3 | alta (pedido do autor) | — | A | **aberto** (QA-208, QA-209 e QA-210 falham); a A está corrigindo o `cronista.gd` |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
@@ -351,6 +352,23 @@ O registro original fica abaixo.
 - **Obtido:** "Um raio sem nuvem acertou Marsaim, que guiava {g}, diante de todos." O texto sai igual na crônica em curso, na crônica viva, na crônica, na do ano 1 e no livro.
 - **Causa provável** (`cronista._divino`, "raio_divino", com `era_lider`, linhas 2453–2454): a frase usa `{g}`, mas o evento do raio divino não tem grupo (`e.grupo == -1`), então `v["g"]` não existe.
 - **Esperado:** o nome do povo de quem morreu.
+
+### D-20. A vida do povo some da crônica quando o deus age muito
+**Cenários:** QA-208, QA-209, QA-210 · **Gravidade:** alta (pedido do autor) · **Área:** A · **Achado pelo autor** no próprio save (`qa/save-sergio-ano3.txt`)
+
+- **No save do autor** (ano 3 em curso, povo Mokon, 13 pessoas):
+  - o evento 20 é o nascimento da Zeya, o primeiro filho do povo (`motivo: primeiro`);
+  - o ano 3 da crônica viva e a crônica do ano em curso contam só o cometa, a enchente e a seca divina, e **não citam a Zeya**;
+  - quando o ano 3 fecha (22 dias depois), a crônica do ano 3 passa a citá-la. O defeito que o autor vê é o do ano em curso.
+- **Povo pequeno (QA-209):** 8 sementes de 25 anos, com 5 sinais no começo de cada ano. Nos anos com 4 ou mais atos divinos, há 323 nomes de quem nasceu, casou ou morreu num povo de até 30 vivos, e **281 não aparecem** na crônica do ano. Por exemplo: o nascimento de Viraya, no ano 1 da semente 1.
+- **Povo grande (QA-210):** no mundo de 250 anos da semente 3, há 45 anos de povo grande (60 ou mais vivos) com 6 ou mais nascimentos. Em **40 deles**, a crônica do ano não dá a conta de nascidos nem de mortos. Por exemplo: o ano 193 do povo Koil, com 94 vivos, 12 nascimentos e 1 morte.
+- **O livro hoje:** 48 473 caracteres no mundo de 250 anos. Depois da correção, o QA-210 aceita até 50% a mais.
+- **Causa** (segundo o orquestrador): os atos do deus enchem o orçamento de frases do ano, e os casamentos e as mortes comuns de povo pequeno são zerados.
+- **Esperado** (FUN):
+  - povo pequeno: cada caso com o nome, e a morte com a idade e a causa;
+  - povo grande: a conta do ano por povo, com os nomes só dos casos notáveis;
+  - a vida do povo com uma linha própria no ano, que não disputa espaço com os atos do deus.
+- **Observação sobre o save no git:** com `core.autocrlf=true`, o checkout no Windows trazia o save com CRLF, a soma md5 não conferia, e o jogo o renomeava para `.ilegivel.txt`. Pus `qa/.gitattributes` com `save-*.txt -text`, e o QA-208 também normaliza as quebras de linha ao copiar.
 
 ### O-1. Observação: importar o projeto num worktree novo muda um `.import`
 **Área:** B · Não é defeito do jogo.
