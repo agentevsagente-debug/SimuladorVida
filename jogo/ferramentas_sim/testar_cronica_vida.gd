@@ -7,7 +7,7 @@ extends SceneTree
 ## - Povo pequeno, 12 anos com 5 gestos do deus por ano (presságio, chuva, fartura, sonho e terra
 ##   erguida, no fogo do povo): no ano 4 o deus age e, no mesmo ano, há um casamento e uma morte
 ##   (feitos à mão, se o mundo não os fez). Em todo ano, todo nascimento, casamento e morte de
-##   povo pequeno (as mortes sem frase própria) está no texto do ano pelo nome, e a morte com a idade.
+##   povo pequeno (até 30 vivos no começo do ano) está no texto do ano pelo nome, e a morte com a idade aproximada.
 ## - Povo grande (semente 3, 150 anos): o ano dá a conta ("nasceram ... crianças"), e a linha da
 ##   vida de um povo grande nunca passa de 400 caracteres.
 ## Uso: ferramentas_sim/godot.sh res://ferramentas_sim/testar_cronica_vida.gd
@@ -16,7 +16,8 @@ const Mundo = preload("res://nucleo/mundo.gd")
 const Persistencia = preload("res://nucleo/persistencia.gd")
 
 const GESTOS := ["pressagio", "chuva", "fartura", "sonho", "erguer"]
-const CONTADAS := ["raio_natural", "raio_divino", "batalha", "fogo", "terremoto", "diluvio", "culpado", "exilio"]
+## Povo pequeno: até 30 vivos no começo do ano (o mesmo critério do cronista).
+const POVO_PEQUENO := 30
 
 var falhas := 0
 
@@ -82,6 +83,9 @@ func _povo_pequeno(semente: int) -> void:
 	var forcado := false
 	for a in range(1, 13):
 		var g = m.grupos_vivos()[0]
+		var no_comeco := {}
+		for gr in m.grupos:
+			no_comeco[gr.id] = gr.membros.size()
 		for k in GESTOS.size():
 			m.avancar_dias(6)
 			m.usar_poder(GESTOS[k], m._fogo_do_povo(g), 0.6)
@@ -97,7 +101,7 @@ func _povo_pequeno(semente: int) -> void:
 				continue
 			if e.causa == "divina":
 				divinos += 1
-			if m.grupo(e.grupo) == null or m.grupo(e.grupo).membros.size() > 40:
+			if e.grupo < 0 or no_comeco.get(e.grupo, 0) > POVO_PEQUENO:
 				continue
 			var nomes: Array = []
 			match e.tipo:
@@ -106,11 +110,11 @@ func _povo_pequeno(semente: int) -> void:
 				"casamento":
 					nomes = [e.participantes[0], e.participantes[1]]
 				"morte":
-					if not CONTADAS.has(e.dados["causa"]):
-						nomes = [e.participantes[0]]
-						var idade: int = e.dados["idade"]
-						if idade >= 2:
-							conferir(texto.contains("%d anos" % idade), "ano %d: a morte de %s sem a idade (%d): %s" % [a, m.pessoa(nomes[0]).nome, idade, texto])
+					nomes = [e.participantes[0]]
+					# A idade aproximada ("Teo (menino)") ou a velhice ("morreu Iszeos, de velhice").
+					var nome: String = m.pessoa(nomes[0]).nome
+					conferir(texto.contains(nome + " (") or texto.contains("de velhice") or texto.contains(nome + ","),
+						"ano %d: a morte de %s sem a idade: %s" % [a, nome, texto])
 			for id in nomes:
 				conferir(texto.contains(m.pessoa(id).nome), "ano %d: %s (%s) não está no texto do ano: %s" % [a, m.pessoa(id).nome, e.tipo, texto])
 		if a == 4:

@@ -399,6 +399,10 @@ func ano_em_curso() -> String:
 		else:
 			dias.append([e.dia, frases])
 	# A vida do povo no ano até agora, numa linha só dela, depois dos gestos.
+	var ja: PackedStringArray = []
+	for d in dias:
+		ja.append(" ".join(d[1]))
+	_ja_no_ano = " ".join(ja)
 	var vida := _vida_do_ano(a, evs, true)
 	_narrados = salvo[0]
 	_primeiros = salvo[1]
@@ -803,6 +807,7 @@ func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR, com_
 		est_anterior = est
 		frases.append(G.maiuscula(f))
 	# A vida do povo vem por último, numa linha só dela: os atos do deus não tomam o lugar.
+	_ja_no_ano = " ".join(frases)
 	var vida := _vida_do_ano(a, evs) if com_vida else ""
 	if com_censo:
 		frases.append_array(_censo_da_decada(a))
@@ -815,10 +820,13 @@ func _ano(a: int, evs: Array, com_censo: bool = true, limiar: int = LIMIAR, com_
 
 # ---------------------------------------------------------------- a vida do povo
 
-## O povo pequeno, em que a crônica cita cada um pelo nome (o mesmo limite de mundo.POVO_PEQUENO).
-const POVO_PEQUENO := 40
+## O povo pequeno, em que a crônica cita cada um pelo nome (decisão do orquestrador, revisável: até
+## 30 vivos; acima disso, a conta do ano, para o livro de 250 anos não crescer mais que a metade).
+const POVO_PEQUENO := 30
 ## As mortes que já têm frase própria (no gesto, na batalha, no culpado): a linha da vida não repete.
-const MORTES_CONTADAS := ["raio_natural", "raio_divino", "batalha", "fogo", "terremoto", "diluvio", "culpado", "exilio"]
+## O texto do ano já escrito antes da linha da vida: quem já está nele pelo nome (a morte no raio,
+## na batalha, o primeiro nascimento contado à parte) não se repete na linha da vida.
+var _ja_no_ano: String = ""
 const CAUSA_CURTA := {"velhice": "de velhice", "doenca": "de febre", "doenca_subita": "de repente", "fome": "de fome",
 	"frio": "de frio", "parto": "no parto"}
 
@@ -844,7 +852,15 @@ func _vida_do_ano(a: int, evs: Array, em_curso: bool = false) -> String:
 	for gid in ids:
 		rt.seed = _misturar(m.semente * 30011 + a * 131 + gid)
 		var v := {"g": _g(gid)}
-		if m.grupos[gid].membros.size() > POVO_PEQUENO:
+		# O tamanho do povo no começo do ano: uma fome que mata metade não faz dele um povo pequeno
+		# (e cinquenta nomes de mortos) naquele ano.
+		var no_comeco: int = m.grupos[gid].membros.size()
+		for e in por_grupo[gid]:
+			if e.tipo == "morte":
+				no_comeco += 1
+			elif e.tipo in ["nascimento", "gemeos"]:
+				no_comeco -= 1
+		if no_comeco > POVO_PEQUENO:
 			var r: Array = _vida_contada(por_grupo[gid])
 			if not r[0].is_empty():
 				contas.append("em %s %s" % [v["g"]["t"], r[0]])
@@ -862,14 +878,38 @@ func _vida_do_ano(a: int, evs: Array, em_curso: bool = false) -> String:
 		elif em_curso:
 			frases.append(_frase(["Neste ano, até agora, em {g}, {vida}.", "Em {g}, neste ano, {vida}."], v))
 		else:
-			frases.append(_frase(["Naquele ano, em {g}, {vida}.", "Em {g}, naquele ano, {vida}.", "E a vida seguiu em {g}: {vida}."], v))
+			frases.append(_frase(["Em {g}, {vida}.", "Em {g}, {vida}.", "E a vida seguiu em {g}: {vida}."], v))
 	if not contas.is_empty():
 		rt.seed = _misturar(m.semente * 30011 + a * 131)
 		var vc := {"c": G.termo("; ".join(contas))}
-		var conta := _frase(["Neste ano, até agora, {c}."] if em_curso else ["Naquele ano, {c}.", "No correr do ano, {c}.", "E a vida seguiu: {c}."], vc)
+		var conta := _frase(["Neste ano, até agora, {c}."] if em_curso else ["{c}.", "{c}.", "E a vida seguiu: {c}."], vc)
 		frases.insert(0, conta)
 	frases.append_array(notaveis)
 	return " ".join(frases)
+
+
+## Todos os nomes já estão no texto do ano (como palavra inteira: "Ta" não está em "Tama")?
+func _ja_citados(ids: Array) -> bool:
+	for id in ids:
+		var nome := _nome(id)
+		if nome.is_empty() or not _cita(_ja_no_ano, nome):
+			return false
+	return true
+
+
+static func _cita(texto: String, nome: String) -> bool:
+	var i := texto.find(nome)
+	while i >= 0:
+		var antes := texto[i - 1] if i > 0 else " "
+		var depois := texto[i + nome.length()] if i + nome.length() < texto.length() else " "
+		if not _letra(antes) and not _letra(depois):
+			return true
+		i = texto.find(nome, i + 1)
+	return false
+
+
+static func _letra(c: String) -> bool:
+	return c.to_lower() != c.to_upper() or c == "'"
 
 
 func _nome(id: int) -> String:
@@ -891,11 +931,46 @@ func _aos(idade: int) -> String:
 	return "aos %d anos" % idade
 
 
-## Quem morreu, com a causa e a idade: "Teo (de velhice, aos 63 anos)".
-func _morto(e) -> String:
-	var causa: String = CAUSA_CURTA.get(e.dados.get("causa", ""), "")
-	var aos := _aos(e.dados.get("idade", 0))
-	return "%s (%s)" % [_nome(e.participantes[0]), (causa + ", " + aos) if not causa.is_empty() else aos]
+## A idade aproximada, como se diz de quem morreu: "bebê", "menina", "moço", "homem feito", "velha".
+func _idade_aprox(idade: int, fem: bool) -> String:
+	if idade <= 1:
+		return "bebê"
+	if idade < 13:
+		return "menina" if fem else "menino"
+	if idade < 20:
+		return "moça" if fem else "moço"
+	if idade < 50:
+		return "mulher feita" if fem else "homem feito"
+	return "velha" if fem else "velho"
+
+
+## As mortes do povo pequeno, juntas pela causa, cada um com a idade aproximada: "morreu Iszeos,
+## de velhice; morreram de fome Tampeu (menino) e Maya (mulher feita)".
+func _mortes_por_causa(mortos: Array) -> Array:
+	var causas: Array = []
+	var por_causa: Dictionary = {}
+	for e in mortos:
+		var c: String = e.dados.get("causa", "")
+		if not por_causa.has(c):
+			causas.append(c)
+			por_causa[c] = []
+		por_causa[c].append(e)
+	var partes: Array = []
+	for c in causas:
+		var es: Array = por_causa[c]
+		var de: String = CAUSA_CURTA.get(c, "")
+		var nomes: Array = []
+		for e in es:
+			var pid: int = e.participantes[0]
+			nomes.append(_nome(pid) if c == "velhice" else "%s (%s)" % [_nome(pid), _idade_aprox(e.dados.get("idade", 0), _fem(pid))])
+		var verbo := "morreu" if es.size() == 1 else "morreram"
+		if c == "velhice":
+			partes.append("%s %s, de velhice" % [verbo, G.lista(nomes)])
+		elif de.is_empty():
+			partes.append("%s %s" % [verbo, G.lista(nomes)])
+		else:
+			partes.append("%s %s %s" % [verbo, de, G.lista(nomes)])
+	return partes
 
 
 ## Os pares casados: "Demos e Yoena" ou "Demos com Yoena e Teo com Lia".
@@ -914,16 +989,16 @@ func _vida_miuda(evs: Array) -> String:
 	for e in evs:
 		match e.tipo:
 			"nascimento":
-				if not _usados.has(e.id) and m.pessoa(e.participantes[0]) != null:
+				if m.pessoa(e.participantes[0]) != null and not _ja_citados([e.participantes[0]]):
 					nascidos.append(e)
 			"gemeos":
-				if not _usados.has(e.id) and m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null:
+				if m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null and not _ja_citados([e.participantes[0], e.participantes[1]]):
 					gemeos.append([e.participantes[0], e.participantes[1]])
 			"casamento", "casamento_entre_grupos":
-				if not _usados.has(e.id) and m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null:
+				if m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null and not _ja_citados([e.participantes[0], e.participantes[1]]):
 					casas.append([_nome(e.participantes[0]), _nome(e.participantes[1])])
 			"morte":
-				if not _usados.has(e.id) and not MORTES_CONTADAS.has(e.dados.get("causa", "")) and m.pessoa(e.participantes[0]) != null:
+				if m.pessoa(e.participantes[0]) != null and not _ja_citados([e.participantes[0]]):
 					mortos.append(e)
 	var partes: Array = []
 	var gem_ids := {}
@@ -945,10 +1020,7 @@ func _vida_miuda(evs: Array) -> String:
 		partes.append("nasceram " + G.lista(nascidos.map(func(e): return _nome(e.participantes[0]))))
 	if not casas.is_empty():
 		partes.append(_escolher(["casaram-se %s", "%s se casaram"]) % _pares(casas) if casas.size() == 1 else "casaram-se %s" % _pares(casas))
-	if mortos.size() == 1:
-		partes.append("morreu " + _morto(mortos[0]))
-	elif mortos.size() > 1:
-		partes.append("morreram " + G.lista(mortos.map(func(e): return _morto(e))))
+	partes.append_array(_mortes_por_causa(mortos))
 	return "; ".join(partes)
 
 
@@ -966,7 +1038,7 @@ func _vida_contada(evs: Array) -> Array:
 				nasc += 1
 			"gemeos":
 				nasc += 1     # o segundo gêmeo não tem evento de nascimento
-				if not _usados.has(e.id) and m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null:
+				if m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null and not _ja_citados([e.participantes[0], e.participantes[1]]):
 					var elas: bool = _fem(e.participantes[0]) and _fem(e.participantes[1])
 					notaveis.append("nasceram %s, %s" % [G.lista([_nome(e.participantes[0]), _nome(e.participantes[1])]),
 						"gêmeas" if elas else "gêmeos"])
@@ -974,23 +1046,22 @@ func _vida_contada(evs: Array) -> Array:
 				casam += 1
 			"casamento_entre_grupos":
 				casam += 1
-				if e.dados.get("primeiro", false) and not _usados.has(e.id) and m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null:
+				if e.dados.get("primeiro", false) and m.pessoa(e.participantes[0]) != null and m.pessoa(e.participantes[1]) != null and not _ja_citados([e.participantes[0], e.participantes[1]]):
 					notaveis.append("%s, de %s, casou-se com %s" % [_nome(e.participantes[0]), _g(e.dados["de"])["t"], _nome(e.participantes[1])])
 			"morte":
 				mortes += 1
 				var d: Dictionary = e.dados
-				if not _usados.has(e.id) and not MORTES_CONTADAS.has(d.get("causa", "")) and m.pessoa(e.participantes[0]) != null \
+				if m.pessoa(e.participantes[0]) != null and not _ja_citados([e.participantes[0]]) \
 						and (d.get("lider", false) or d.get("fundador", false) or d.get("sacerdote", false)):
 					var quem := "que guiava o povo" if d.get("lider", false) else ("que o fundou" if d.get("fundador", false) else "que falava pelo deus")
 					notaveis.append("morreu %s, %s, %s" % [_nome(e.participantes[0]), quem,
 						((CAUSA_CURTA.get(d.get("causa", ""), "") + " ") if CAUSA_CURTA.has(d.get("causa", "")) else "") + _aos(d.get("idade", 0))])
+	# Só nascimentos e mortes: os casamentos de um povo grande não entram na conta.
 	var conta: Array = []
 	if nasc > 0:
 		conta.append("nasceu uma criança" if nasc == 1 else "nasceram %s crianças" % _num(nasc))
-	if casam > 0:
-		conta.append("houve um casamento" if casam == 1 else "houve %s casamentos" % (G.extenso(casam) if casam <= 20 else str(casam)))
 	if mortes > 0:
-		conta.append("morreu uma pessoa" if mortes == 1 else "morreram %s pessoas" % _num(mortes))
+		conta.append("morreu uma" if mortes == 1 else "morreram %s" % _num(mortes))
 	return [G.lista(conta), notaveis]
 
 
