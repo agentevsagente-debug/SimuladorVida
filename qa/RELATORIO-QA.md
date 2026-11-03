@@ -69,7 +69,7 @@
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
 | D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido** na main `e4dd9d1` (0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa |
 | D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido** na main `e4dd9d1`: usa o povo do morto; QA-206 passa |
-| D-20 | A vida do povo some da crônica: os atos do deus enchem o ano, e o nascimento da Zeya (o primeiro filho do povo, no save do autor) não aparece no ano 3 | alta (pedido do autor) | — | A | **aberto** (QA-208, QA-209 e QA-210 falham); a A está corrigindo o `cronista.gd` |
+| D-20 | A vida do povo some da crônica: os atos do deus enchem o ano, e o nascimento da Zeya (o primeiro filho do povo, no save do autor) não aparece no ano 3 | alta (pedido do autor) | — | A | **corrigido na branch da A** (`76c51b4`): QA-208 a QA-211 passam; o livro fica em +84%, a 1 ponto do limite de +85%. À espera do merge |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
@@ -365,6 +365,12 @@ O registro original fica abaixo.
 - **O livro:** 48 473 caracteres no mundo de 250 anos, antes da correção.
 - **Decisão do orquestrador (revisável):** depois da correção, o QA-210 aceita até **85%** a mais (antes, a proposta era 50%). O autor pediu os nomes, e a A já agrupou e cortou o que dava sem perder conteúdo: na versão dela, o livro tem 87 753 caracteres, ou +81%.
 - **Tempo do testar_textos:** os 318 s da rodada de 03/11 foram disputa de máquina; a A mediu 94 s na base e 96 s com o código novo.
+- **Veredito na branch da A (`76c51b4`, junto com os testes da D), em 03/11/2026: corrigido.**
+  - QA-208: a Zeya aparece no ano 3 em curso, na crônica do ano em curso e, com o ano fechado, na crônica do ano 3.
+  - QA-209: os 323 nomes de povo pequeno estão na crônica do ano (antes, faltavam 281).
+  - QA-210: os 45 anos de povo grande dão a conta de nascidos e mortos (antes, faltava em 40), e o livro tem **89 101 caracteres, +84%** sobre os 48 473 de antes, dentro do limite de +85% e com pouca folga.
+  - QA-211: nenhum resto de molde.
+  - A bateria inteira: **108 passam, 0 falham e 3 pulados** (os raros de sempre), em 142 s; o testar_textos levou 98 s. A saída está em `qa/rodada-branch-a-76c51b4.txt`.
 - **Causa** (segundo o orquestrador): os atos do deus enchem o orçamento de frases do ano, e os casamentos e as mortes comuns de povo pequeno são zerados.
 - **Esperado** (FUN):
   - povo pequeno: cada caso com o nome, e a morte com a idade e a causa;
