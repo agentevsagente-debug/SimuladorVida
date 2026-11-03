@@ -11,3 +11,6 @@ __pycache__/
 # Sistema
 Thumbs.db
 desktop.ini
+
+# Página do vídeo do YouTube (sessão F): fica só no PC do autor
+video/
