@@ -17,8 +17,8 @@
 | **Falham** | **0** |
 | Pulados | 3 (QA-053, QA-110, QA-127): por condição rara nas sementes |
 
-**Veredito da release 0.3.0, na main `e49cff0`, sem janela, em 03/11/2026: pode sair.**
-- Núcleo: **115 passam, 0 falham e 3 pulados** (os raros de sempre), em 118 cenários e 149 s. Passam a vida do povo na crônica (QA-208 a QA-211) e a API das preces (QA-212 a QA-218).
+**Veredito final da release 0.3.0, na main `a535c8c` (A até `89d5095`, B até `42352e2`), sem janela, em 03/11/2026: pode sair.**
+- Núcleo: **115 passam, 0 falham e 3 pulados** (os raros de sempre), em 118 cenários e 135 s; os textos (QA-206 e QA-207) passam. Passam a vida do povo na crônica (QA-208 a QA-211) e a API das preces (QA-212 a QA-218).
 - Som: 8 passam e 1 pulado (o QA-194, com janela). Lupa: 5 passam e 1 pulado (o QA-205, com janela).
 - O `testar_preces.gd` da B: 11 de 11 (P-01 a P-11), com o ponto de "não lida" (P-02) e os dados de verdade do núcleo (P-11).
 - Os cenários em janela não foram repetidos, a pedido do orquestrador: a B rodou o `verificar.ps1` com 22 de 22.
@@ -661,19 +661,21 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
 
 *Escritos em 03/11/2026, na main `a2ac752`. Os cenários são QA-212 a QA-217 (área 20 da matriz).*
 
-**Na main `e49cff0` (0.3.0), em 03/11/2026: os 7 passam** (QA-212 a QA-218). Antes da API, na main `a2ac752`, os 6 primeiros falhavam porque ela não existia.
+**Na main `a535c8c` (0.3.0, com a A até `89d5095` e a B até `42352e2`), em 03/11/2026: os 7 passam** (QA-212 a QA-218). Antes da API, na main `a2ac752`, os 6 primeiros falhavam porque ela não existia.
 
-- **Os quatro estados** aparecem nas 4 sementes: atendida (71), falso milagre (52), sem resposta (12) e esperando. A prece que acabou de nascer está no topo do histórico, esperando, nas 3 sementes em que nasceu uma.
+- **Os quatro estados** aparecem nas 4 sementes: atendida (72), falso milagre (54), sem resposta (12) e esperando (3). A prece que acabou de nascer está no topo do histórico, esperando, nas 3 sementes em que nasceu uma.
 - **A ordem e os campos** batem com os eventos do núcleo, prece a prece.
 - **O termômetro:** com a fé mexida de propósito, a tendência diz "sobe", "desce" e "estavel" na hora certa. No save antigo do autor, sem amostras de fé, diz "estavel" (QA-218).
 - **A conta das novas** está certa desde -1, desde agora e desde o passo de uma prece qualquer.
 - **Salvar e carregar** mantém o histórico e o termômetro iguais.
-- **O custo,** no mundo de 250 anos: histórico 0,001 ms com a lista pronta e 0,59 ms no pior caso ao remontá-la depois de um evento novo; conta das novas 0,002 ms; termômetro 0,013 ms.
+- **O custo,** no mundo de 250 anos (297 preces): histórico 0,001 ms com a lista pronta e 2,81 ms no pior caso ao remontá-la depois de um evento novo; conta das novas 0,001 ms; termômetro 0,011 ms.
 - **Consultar a API todo dia** por 5 anos não muda o mundo.
 
-**Ajustes do meu contrato ao que a A documentou no API.md** (não são defeitos):
-- O `dia` vai de 0 a 39, como nos eventos, e a caixa da B soma 1 ao mostrar (`preces_tela.gd:412`). O dia na tela bate com o da crônica. Eu tinha suposto que o núcleo já mandava o dia somado.
-- O histórico traz as 50 preces mais novas (`limite := 50`), e `preces_novas_desde` conta todas as do mundo. Na semente 4, o mundo tem 53 preces, e o histórico, 50.
+**O contrato final** (a A ajustou o núcleo em `89d5095`, e a B tirou o +1 da caixa em `42352e2`):
+- O `dia` vai de 1 a 40, como a crônica escreve.
+- `preces_historico()` sem argumento traz todas as preces na memória; o limite é opcional. `preces_novas_desde(-1)` é o tamanho dele.
+- No `64db7f7`, eu tinha ajustado o teste ao API.md anterior (dia de 0 a 39, limite de 50). Desfiz esse ajuste, e voltou o contrato original.
+- **QA-213, a tendência:** a A apontou que o teste antigo passava por coincidência. A tendência compara com a amostra de fé da virada do ano, e não com os últimos dias. Agora o teste fixa a amostra pelo gancho `fe_amostras`, na média de agora, e mexe a fé 0,1 para cima e para baixo contra ela.
 
 **Observação (não é defeito das preces):** chamado logo depois da virada do dia, sem quadros entre os passos, `posicao_de` espera a thread da rotina: de 75 a 100 ms no mundo de 250 anos. O histórico refaz o `x` de quem rezou e, por isso, a primeira medida dele parecia de 84 ms. No jogo, os quadros escondem essa espera, e o QA-170 confere que nenhum passo espera a thread. O QA-216 mede o histórico depois da espera.
 

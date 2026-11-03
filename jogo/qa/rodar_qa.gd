@@ -2028,10 +2028,10 @@ func _vida_povo_grande(glifos: Dictionary, achados: Dictionary) -> void:
 
 ## FUN "A caixa de preces e o termômetro de fé" (pedido do autor em 03/11/2026). O contrato é o que a
 ## caixa da B já lê (apresentacao/preces_tela.gd), proposto à A:
-## - preces_historico() -> Array, as LIMITE_HISTORICO mais novas, da mais nova para a mais antiga, de
-##   {evento, autor, nome, grupo, povo, ano, dia, texto, estado, vivo, passo}; o dia vai de 0 a 39, como
-##   nos eventos (a caixa soma 1 ao mostrar); estado: esperando, atendida, falso_milagre ou sem_resposta
-##   (a contrariada também é sem_resposta);
+## - preces_historico() -> Array, sem argumento todas as preces na memória, da mais nova para a mais
+##   antiga, de {evento, autor, nome, grupo, povo, ano, dia, texto, estado, vivo, passo}; o dia vai de 1 a
+##   40, como a crônica escreve; estado: esperando, atendida, falso_milagre ou sem_resposta (a contrariada
+##   também é sem_resposta, com contrariada: true);
 ## - fe_do_povo(gid) -> {nivel: 0..1, tendencia: "sobe" | "desce" | "estavel"};
 ## - preces_novas_desde(passo) -> int: quantas preces nasceram depois desse passo.
 ## O oráculo são os eventos do próprio núcleo: "prece", "prece_atendida" e "prece_sem_resposta".
@@ -2040,7 +2040,6 @@ const ESTADOS_PRECE := ["esperando", "atendida", "falso_milagre", "sem_resposta"
 const TENDENCIAS := ["sobe", "desce", "estavel"]
 const API_PRECES := ["preces_historico", "fe_do_povo", "preces_novas_desde"]
 const FE_TOLERANCIA := 0.05
-const LIMITE_HISTORICO := 50  # o padrão de preces_historico(limite := 50), no API.md
 var _estados_preces := {}     # os estados vistos no histórico, em todas as sementes (QA-212)   # o nível é a fé média do povo, (média + 1) / 2, com esta folga (proposta, revisável)
 
 var _longo250 = null   # o mundo de 250 anos da SEMENTE_LONGA, feito uma vez para os cenários que o leem
@@ -2159,7 +2158,7 @@ func _preces_historico_confere(m, semente: int, glifos: Dictionary, estados: Dic
 			continue
 		var autor := int(e.participantes[0])
 		var esperado := {"autor": autor, "nome": _nome(m, autor), "grupo": e.grupo,
-			"povo": String(m.grupo(e.grupo).nome) if m.grupo(e.grupo) != null else "", "ano": e.ano, "dia": e.dia,
+			"povo": String(m.grupo(e.grupo).nome) if m.grupo(e.grupo) != null else "", "ano": e.ano, "dia": e.dia + 1,
 			"vivo": m.pessoa(autor) != null and m.pessoa(autor).vivo, "passo": _passo_do_evento(e)}
 		for k in esperado:
 			if str(p[k]) != str(esperado[k]):
@@ -2179,13 +2178,9 @@ func _preces_historico_confere(m, semente: int, glifos: Dictionary, estados: Dic
 		_problemas_do_texto("prece %d" % id, texto, glifos, achados)
 		if not achados.is_empty():
 			erros.append("prece %d: %s" % [id, achados.keys()])
-	# as LIMITE_HISTORICO mais novas, todas
-	var mais_novas := preces.slice(maxi(0, preces.size() - LIMITE_HISTORICO))
-	var sem := mais_novas.filter(func(e): return not vistos.has(e.id))
+	var sem := preces.filter(func(e): return not vistos.has(e.id))
 	if not sem.is_empty():
-		erros.append("%d das %d preces mais novas fora do histórico (por exemplo, a %d)" % [sem.size(), mais_novas.size(), sem[0].id])
-	if h.size() != mais_novas.size():
-		erros.append("o histórico tem %d preces; esperado %d (as %d mais novas)" % [h.size(), mais_novas.size(), LIMITE_HISTORICO])
+		erros.append("%d preces do mundo fora do histórico (por exemplo, a %d)" % [sem.size(), sem[0].id])
 	conferir("QA-212", erros.is_empty(), "semente %d: %d preces no histórico, %d no mundo; problemas: %d %s" % [semente, h.size(), preces.size(), erros.size(), erros.slice(0, 4)])
 
 
@@ -2214,32 +2209,34 @@ func _fe_do_povo_confere(m, semente: int) -> void:
 	conferir("QA-213", erros.is_empty(), "semente %d, %d povos: %s" % [semente, m.grupos_vivos().size(), erros.slice(0, 4) if not erros.is_empty() else "nível e tendência certos"])
 
 
-## QA-213 (tendência), com a fé mexida de propósito (gancho interno): 3 dias com a fé de cada pessoa do
-## povo subindo 0,1 por dia, e a tendência diz "sobe"; 3 dias descendo 0,1, e diz "desce"; 10 dias
-## parada, e diz "estavel". A janela da tendência é da A; 10 dias parados bastam (proposta, revisável).
+## QA-213 (tendência): a tendência compara a fé média do povo com a amostra da virada do ano (a deste ano,
+## se ele já passou da metade, ou a do ano anterior: a janela de cerca de um ano, decisão do orquestrador).
+## A amostra fica fixa pelo gancho interno m.fe_amostras, na média de agora; então a fé de cada pessoa do
+## povo sobe 0,1 e a tendência diz "sobe"; volta e desce 0,1, e diz "desce"; volta, e diz "estavel".
 func _fe_tendencia_confere() -> void:
 	var m = _mundo_com_preces(5, 10)
-	if m.grupos_vivos().is_empty():
-		pular("QA-213", "a semente 5 não tem povo vivo no ano 10")
+	if m.grupos_vivos().is_empty() or m.get("fe_amostras") == null:
+		pular("QA-213", "a semente 5 não tem povo vivo no ano 10, ou o mundo não tem fe_amostras")
 		return
 	var g = m.grupos_vivos()[0]
-	var mexer := func(passo: float) -> void:
-		for id in g.membros:
-			var p = m.pessoa(id)
-			p.fe = clampf(p.fe + passo, -1.0, 1.0)
-	for id in g.membros:   # começa no meio, para ter espaço para subir e descer
-		m.pessoa(id).fe = 0.0
-	for d in 10:
-		m.avancar_dias(1)
+	var base := {}
+	var soma := 0.0
+	for id in g.membros:
+		base[id] = clampf(float(m.pessoa(id).fe), -0.8, 0.8)   # com espaço para subir e descer 0,1
+		m.pessoa(id).fe = base[id]
+		soma += base[id]
+	var media := soma / maxi(1, g.membros.size())
+	m.fe_amostras[g.id] = [[m.ano() - 1, media], [m.ano(), media]]
 	var leituras := []
-	for fase in [["sobe", 0.1, 3], ["desce", -0.1, 3], ["estavel", 0.0, 10]]:
-		for d in int(fase[2]):
-			mexer.call(float(fase[1]))
-			m.avancar_dias(1)
+	for fase in [["sobe", 0.1], ["desce", -0.1], ["estavel", 0.0]]:
+		for id in g.membros:
+			m.pessoa(id).fe = base[id] + float(fase[1])
 		var f: Dictionary = m.call("fe_do_povo", g.id)
 		leituras.append([fase[0], String(f.get("tendencia", "")), snappedf(float(f.get("nivel", -1.0)), 0.01)])
+	for id in g.membros:
+		m.pessoa(id).fe = base[id]
 	var certas := leituras.filter(func(l): return l[0] == l[1]).size()
-	conferir("QA-213", certas == leituras.size(), "a fé do povo %d mexida de propósito: [esperado, obtido, nível] = %s" % [g.id, leituras])
+	conferir("QA-213", certas == leituras.size(), "a fé do povo %d contra a amostra da virada do ano (média %.2f): [esperado, obtido, nível] = %s" % [g.id, media, leituras])
 
 
 ## QA-214: preces_novas_desde(passo) conta as preces do histórico com passo maior; desde o passo de agora,
@@ -2248,9 +2245,8 @@ func _novas_desde_confere(m, semente: int) -> void:
 	var h: Array = m.call("preces_historico")
 	var erros := []
 	var total := int(m.call("preces_novas_desde", -1))
-	var no_mundo: int = m.eventos.filter(func(e): return e.tipo == "prece").size()
-	if total != no_mundo:
-		erros.append("desde -1: %d, o mundo tem %d preces" % [total, no_mundo])
+	if total != h.size():
+		erros.append("desde -1: %d, o histórico tem %d" % [total, h.size()])
 	if int(m.call("preces_novas_desde", m.passo)) != 0:
 		erros.append("desde o passo de agora: %d" % int(m.call("preces_novas_desde", m.passo)))
 	for k in [0, h.size() / 3, h.size() / 2]:
