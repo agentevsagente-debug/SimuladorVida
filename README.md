@@ -30,7 +30,7 @@
 
 - **Um deus invisível.** O povo nunca vê você, só os efeitos. Uma chuva depois de uma prece vira milagre, mesmo que tenha sido o acaso; um terremoto natural vira castigo que você não deu. Cada povo dá ao deus o próprio nome, como "o Que Rega" ou "o Que Fere", e é pelo nome que você descobre como ele te vê.
 - **Um povo que vive sozinho.** Ninguém obedece ao jogador. As pessoas têm traços, famílias, fome, rancores e crenças. Os povos se separam por migração, briga ou cisma religioso, mudam de cultura e fazem guerra sem pedir licença.
-- **Uma crônica escrita pelo próprio mundo.** Cada ano vira um parágrafo, montado a partir do que de fato aconteceu. Não há modelo de linguagem nem internet: os textos saem de uma gramática de frases em português, com concordância.
+- **Uma crônica escrita pelo próprio mundo.** Cada ano vira um parágrafo, montado a partir do que de fato aconteceu: os atos do deus e também a vida do povo, com quem nasceu, casou e morreu. Não há modelo de linguagem nem internet: os textos saem de uma gramática de frases em português, com concordância.
 - **Seis estágios, sem árvore de pesquisa.** Da coleta à agricultura, à pedra, ao metal, à escrita e aos canais e moinhos. O saber vive nas pessoas e pode se perder quando morre o último que sabia.
 - **O fim do mundo é real.** A população pode acabar, inclusive enquanto o jogo está fechado. O mundo vazio continua vivo, as ruínas ficam, e o povo que você fizer nascer depois inventa histórias sobre elas.
 - **Um companheiro de tela.** O ritmo normal é lento (um dia de jogo dura cerca de 45 minutos). O mouse passa pelos espaços vazios da janela, então dá para trabalhar com ela aberta. Fechado, o mundo continua andando até o teto de 1 ano de jogo.
@@ -68,6 +68,7 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 |---|---|
 | **C** | a crônica do mundo (↑ e ↓ trocam de capítulo) |
 | **E** | a estante com os livros dos mundos que acabaram |
+| **P** | a caixa de preces (também pelo botão no fim da alça, depois da lupa) |
 | **L** | segue a família que você acompanha |
 | **D** | modo discreto: o pior fica só na crônica, sem ser mostrado |
 | **H** | esconde a janela (para trazer de volta: o ícone perto do relógio do Windows, ou **Ctrl+Alt+H**) |
@@ -78,7 +79,7 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 | **Ctrl+2, 3, 4** | o tamanho da janela (também pelo botão da lupa na alça: clique aumenta, botão direito diminui) |
 | **Ctrl+Q** | sair (o mundo é salvo) |
 
-Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para ler uma prece. O guia completo, com imagens, está em **[Como jogar](docs/como-jogar.md)**.
+Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para ler uma prece. A **caixa de preces** (P) junta todas as preces, com o estado de cada uma e um termômetro de fé por povo. O guia completo, com imagens, está em **[Como jogar](docs/como-jogar.md)**.
 
 ## Para saber mais
 
