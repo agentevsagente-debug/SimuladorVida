@@ -132,8 +132,11 @@ func fe(gid: int) -> Dictionary:
 	if m == null:
 		return {"nivel": 0.5, "tendencia": 0.0}
 	if m.has_method("fe_do_povo"):
+		# a tendência vem como texto ("sobe", "desce", "estavel"); a variação numérica, à parte, não decide a seta
 		var f: Dictionary = m.fe_do_povo(gid)
-		return {"nivel": clampf(float(f.get("nivel", 0.5)), 0.0, 1.0), "tendencia": clampf(float(f.get("tendencia", 0.0)), -1.0, 1.0)}
+		var t = f.get("tendencia", 0.0)
+		var tendencia: float = {"sobe": 1.0, "desce": -1.0}.get(t, 0.0) if t is String else clampf(float(t), -1.0, 1.0)
+		return {"nivel": clampf(float(f.get("nivel", 0.5)), 0.0, 1.0), "tendencia": tendencia}
 	# sem o núcleo novo: a média da fé das pessoas (-1..1), e a tendência contra a de um dia antes
 	var g = m.grupo(gid)
 	if g == null or g.membros.is_empty():
