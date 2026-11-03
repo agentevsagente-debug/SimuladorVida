@@ -54,7 +54,7 @@ Todas as imagens abaixo são capturas do jogo, ampliadas sem suavização, como 
 ## Baixar e jogar
 
 1. Abra a página de **[Releases](https://github.com/agentevsagente-debug/SimuladorVida/releases)** e baixe a versão mais recente.
-2. Rode o `Simulador de vida.exe`. Não há instalador: é um arquivo só, de cerca de 106 MB.
+2. Rode o `Simulador de vida.exe`. Não há instalador: é um arquivo só, de cerca de 108 MB.
 3. **Aviso do Windows (SmartScreen).** O jogo não tem assinatura digital, então o Windows pode mostrar "O Windows protegeu o computador". Clique em **Mais informações** e depois em **Executar assim mesmo**.
 4. O mundo começa vazio. Clique sobre ele para fazer nascer o primeiro povo.
 
@@ -87,7 +87,7 @@ Passe o cursor sobre as pessoas para ver quem são, e sobre um sinal de luz para
 - **[Tempo e evolução](docs/tempo-e-evolucao.md):** quanto dura um dia, uma estação e um ano em cada velocidade, e quanto tempo um povo leva para chegar a cada estágio.
 - **[Mecânicas](docs/mecanicas.md):** os 11 poderes e as intensidades, preces, religião, culturas, linhagem, fim do mundo e modo discreto.
 - **[Como foi feito](docs/como-foi-feito.md):** a linha do tempo, a arquitetura, a arte, as auditorias, o QA e as medições de leveza.
-- **[Notas da versão 0.2.1](docs/NOTAS-DA-VERSAO-0.2.1.md):** o que tem, os problemas conhecidos e como relatar um erro.
+- **[Notas da versão 0.3.0](docs/NOTAS-DA-VERSAO-0.3.0.md):** o que tem, os problemas conhecidos e como relatar um erro.
 
 ## Feito por IA
 

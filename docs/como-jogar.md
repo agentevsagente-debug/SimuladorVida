@@ -70,7 +70,7 @@ Clique numa prece para a vista ir até quem rezou. A roda do mouse rola a lista;
 
 A tecla **C** abre a crônica do mundo: o resumo de até agora, os capítulos de cada estágio e os anos, um parágrafo por ano. As setas ↑ e ↓ trocam de capítulo. Os gestos do deus no ano em curso aparecem no fim.
 
-**A vida do povo também entra.** Além dos atos do deus, cada ano tem uma linha para quem nasceu, casou e morreu. Num povo pequeno, a crônica dá os nomes e, nas mortes, a idade e a causa. Num povo grande, ela dá a conta do ano e nomeia só os casos notáveis, como gêmeos ou a morte do líder. Essa parte ainda está sendo ajustada, então o jeito de contar pode mudar entre as versões.
+**A vida do povo também entra.** Além dos atos do deus, cada ano tem uma linha para quem nasceu, casou e morreu. Num povo pequeno, a crônica dá os nomes e, nas mortes, a idade e a causa. Num povo grande, ela dá a conta do ano e nomeia só os casos notáveis, como gêmeos ou a morte do líder.
 
 ![A crônica viva, com o índice dos capítulos e o ano 130](imagens/cronica-viva.png)
 
