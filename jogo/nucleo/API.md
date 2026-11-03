@@ -477,6 +477,31 @@ Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o po
 
 **O que acontece com a prece.** Atendida por um poder (a chuva na seca, a fartura na fome, a cura no doente, o raio ou o terremoto no inimigo, o fogo brando no frio): `prece_atendida`, a fé sobe, e o povo agradece. Atendida pelo acaso (a necessidade passou sozinha): `prece_atendida` com `falso_milagre`, e o povo agradece do mesmo jeito. Sem resposta em 14 dias: `prece_sem_resposta`, a fé cai, e três silêncios viram uma explicação (`silencio`). Contrariada: `prece_contrariada` (acima). Depois de uma prece sem resposta ou contrariada, o povo espera 10 dias para pedir de novo a mesma coisa (`Mundo.ESPERA_PARA_REZAR`). Quem rezou pensa no desfecho por 2 dias (veja a dica: "O Que Nega ouviu a nossa prece", "Pedi chuva, e veio o castigo", "O Que Nega nos esqueceu").
 
+### A caixa de preces e o termômetro de fé (03/11/2026)
+
+`preces_historico(limite := 50) -> Array[Dictionary]` devolve as preces do povo, das mais novas para as mais antigas, inclusive as já resolvidas. Entram só as que ainda estão na memória do mundo: as arquivadas em `antigos.gd` ficam de fora. Só povos que rezam fazem prece, então o ponto cego fica de fora sozinho. Cada item tem:
+- `evento`, `grupo`, `nome_povo` (e `povo`, o mesmo), `autor`, `nome_autor` (e `nome`, o mesmo), `alvo` (-1 quando a prece não é por alguém) e `necessidade`;
+- `ano`, `dia` (de 0 a 39, como nos eventos), `hora` e `passo` (o passo em que a prece chegou);
+- `texto`, nas palavras de quem rezou (o mesmo de `texto_prece`), e `curto`;
+- `estado`:
+  - "esperando": a prece ainda está aberta e aparece em `preces_abertas()`;
+  - "atendida": o deus respondeu;
+  - "falso_milagre": o povo achou que foi o deus, mas foi o acaso; a caixa mostra "atendida, mas não por você";
+  - "sem_resposta": o tempo passou sem resposta, ou o deus fez o contrário; nesse caso `contrariada` vem true;
+- `x`: onde está quem rezou, refeito a cada passo, ou -1 se a pessoa morreu; `vivo`.
+
+A lista é montada quando chega evento novo; a cada passo, só o `x` de quem vive é refeito. Chamar de novo no mesmo passo devolve o mesmo array, que não deve ser alterado. Custo num mundo de 247 pessoas: 0,05 ms de mediana e 0,14 ms de média no primeiro chamado do passo. Quando chega evento novo e a lista é remontada, chega a uns 3 ms.
+
+`preces_novas_desde(passo) -> int` diz quantas preces chegaram depois desse passo. Serve para o ponto de "não lida": a apresentação guarda o `mundo.passo` da última vez que a caixa abriu. `passo_de(evento) -> int` dá o passo de qualquer evento.
+
+`fe_do_povo(grupo_id) -> Dictionary` é o termômetro, ou `{}` se o povo não existe:
+- `media`: a fé média dos vivos, de -1 a 1;
+- `nivel`: a mesma média, de 0 a 1;
+- `tendencia`: "sobe", "desce" ou "estavel", comparada com a média de cerca de um ano atrás, numa diferença de 0,05 ou mais;
+- `variacao`: a diferença, de -2 a 2.
+
+A amostra é tirada na virada de cada ano e guardada no mundo salvo (`fe_amostras`). Usa a amostra deste ano se ele já vai pela metade; senão, a do ano anterior. Sem amostra, a tendência é "estavel": isso vale para um povo novo e para um mundo salvo antes do termômetro, que carrega normalmente. Teste: `ferramentas_sim/testar_preces.gd`.
+
 ## Poderes
 
 ```gdscript
