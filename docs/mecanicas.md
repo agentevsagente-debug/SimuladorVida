@@ -49,7 +49,7 @@ Na chuva, na fartura, na seca, no fogo, no dilúvio e no terremoto, a carga tamb
 
 ## Preces e respostas
 
-Um povo que crê reza quando precisa. A prece aparece como um sinal de luz sobre o povo e espera.
+Um povo que crê reza quando precisa. A prece aparece como um sinal de luz sobre o povo e espera. Todas as preces ficam também na caixa de preces (tecla **P**), com o estado de cada uma e um termômetro de fé por povo, sem número, com a tendência ([como jogar](como-jogar.md#4-as-preces)).
 
 | O povo pede | Atende | Contraria (quando cai sobre quem reza) |
 |---|---|---|
