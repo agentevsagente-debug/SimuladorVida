@@ -53,9 +53,24 @@ Quando alguém pede algo ao deus, aparece um sinal de luz sobre o povo. Passe o 
 
 O povo pede chuva na seca, comida na fome, cura na doença, calor no frio e proteção na guerra. Você pode atender, ignorar ou fazer o contrário, e cada escolha tem consequência. Um povo que deixou de crer não reza, e os problemas dele chegam tarde até você.
 
+**A caixa de preces.** O botão no fim da alça, depois da lupa, ou a tecla **P**, abre a caixa com as preces do povo, das mais novas para as mais antigas. Cada prece mostra:
+- quem pediu, de que povo e quando;
+- o pedido, nas palavras da pessoa;
+- o estado: **esperando**, **atendida**, **atendida, mas não por você** (a necessidade passou sozinha, e o povo achou que foi você) ou **sem resposta**.
+
+Clique numa prece para a vista ir até quem rezou. A roda do mouse rola a lista; Esc, o botão direito ou um clique fora fecham a caixa. Um ponto no botão avisa que chegou prece nova desde a última vez que você abriu a caixa. Quem não reza não aparece ali.
+
+**O termômetro de fé.** No topo da caixa, cada povo tem um termômetro, sem número: a cor diz quanto o povo crê, e a seta diz se a fé está esquentando ou esfriando. A fé continua sendo de cada pessoa; o termômetro mostra a média do povo. O mesmo termômetro aparece quando você passa o cursor sobre a vila.
+
+![Em cima, a caixa de preces, com o termômetro de cada povo; embaixo, o termômetro na dica da vila](imagens/caixa-de-preces.png)
+
+*Em cima, a caixa de preces aberta; embaixo, o termômetro na dica da vila. A tela foi montada com preces de exemplo, para mostrar os estados.*
+
 ## 5. A crônica
 
 A tecla **C** abre a crônica do mundo: o resumo de até agora, os capítulos de cada estágio e os anos, um parágrafo por ano. As setas ↑ e ↓ trocam de capítulo. Os gestos do deus no ano em curso aparecem no fim.
+
+**A vida do povo também entra.** Além dos atos do deus, cada ano tem uma linha para quem nasceu, casou e morreu. Num povo pequeno, a crônica dá os nomes e, nas mortes, a idade e a causa. Num povo grande, ela dá a conta do ano e nomeia só os casos notáveis, como gêmeos ou a morte do líder.
 
 ![A crônica viva, com o índice dos capítulos e o ano 130](imagens/cronica-viva.png)
 
@@ -101,6 +116,7 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 |---|---|
 | C | crônica do mundo (↑ e ↓ trocam de capítulo) |
 | E | estante |
+| P | caixa de preces |
 | L | seguir a família acompanhada |
 | D | modo discreto |
 | H ou F8 | esconder a janela |
@@ -108,7 +124,7 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 | 0, 1, 2, 3 | pausa, 1x, 10x, 50x |
 | Espaço | pausa e continua |
 | S | saltar até o próximo acontecimento |
-| Esc | fecha a crônica ou a estante |
+| Esc | fecha a crônica, a estante ou a caixa de preces |
 | M | liga e desliga o som |
 | Ctrl+2, Ctrl+3, Ctrl+4 | tamanho da janela (ou a lupa na alça) |
 | Ctrl+Q | sair (o mundo é salvo) |
