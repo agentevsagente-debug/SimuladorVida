@@ -612,7 +612,9 @@ TERMOMETRO_TUBO = [
 # recorta pela altura, de baixo para cima, e quanto mais fé, mais quente a ponta que aparece
 TERMOMETRO_GRADIENTE = ".rrrooTTTbbbbb."
 TERMOMETRO_SETAS = {
-    "sobe": [".....", "..o..", ".ooo.", "ooooo", "....."],
+    # vermelho com a ponta laranja: o laranja sozinho some no pergaminho (contraste 1,3:1); o vermelho
+    # lê nos dois fundos (2,4:1 no pergaminho e 3,2:1 na dica escura), como o azul da que desce
+    "sobe": [".....", "..o..", ".rrr.", "rrrrr", "....."],
     "desce": [".....", "bbbbb", ".bbb.", "..b..", "....."],
 }
 
