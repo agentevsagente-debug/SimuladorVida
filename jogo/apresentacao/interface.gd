@@ -773,8 +773,8 @@ func _criar_dica() -> void:
 	_dica.add_child(_dica_linhagem)
 	_dica_fe = Control.new()
 	_dica_fe.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_dica_fe.size = Vector2(36, 7)
-	_dica_fe.draw.connect(func(): PrecesTela.desenhar_termometro(_dica_fe, Vector2i(0, 1),
+	_dica_fe.size = Vector2(PrecesTela.TERMOMETRO)
+	_dica_fe.draw.connect(func(): PrecesTela.desenhar_termometro(_dica_fe, Vector2i.ZERO,
 		float(_dica_fe_valor.get("nivel", 0.5)), float(_dica_fe_valor.get("tendencia", 0.0))))
 	_dica.add_child(_dica_fe)
 	_dica_bico = TextureRect.new()
@@ -1002,8 +1002,8 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pen
 			_dica_linhagem.position = Vector2(5 + tamanho.x + 3, y + 1)
 			tamanho.x += 11
 		if i == 0 and not fe.is_empty():  # o termômetro de fé logo depois do nome da vila
-			_dica_fe.position = Vector2(5 + tamanho.x + 4, y + 1)
-			tamanho.x += 40
+			_dica_fe.position = Vector2(5 + tamanho.x + 4, y - 1)  # 14 px de alto: sobra 1 px acima e 2 abaixo da linha
+			tamanho.x += 4 + PrecesTela.TERMOMETRO.x
 		y += int(tamanho.y)
 		w = maxi(w, int(tamanho.x) + recuo)
 	_dica_linhagem.visible = linhagem

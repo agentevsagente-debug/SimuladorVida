@@ -29,7 +29,9 @@ const LINHAS_TEXTO := 2                     # as palavras da prece: até duas li
 const NOME_ESTADO := {"esperando": "esperando", "atendida": "atendida",
 	"falso_milagre": "atendida, mas não por você", "sem_resposta": "sem resposta"}
 const COR_ESTADO := {"esperando": 2, "atendida": 15, "falso_milagre": 29, "sem_resposta": 20}  # paleta
-const TERMOMETRO := Vector2i(22, 5)         # o tubo; o bulbo fica à esquerda
+const TERMOMETRO := Vector2i(12, 14)        # o tubo (6 × 14) e a seta ao lado
+const LIMIAR_TENDENCIA := 0.15             # abaixo disso, a fé está parada (sem seta)
+static var _pecas_fe := {}
 
 var interface: Node2D
 var vista: Node2D
@@ -320,7 +322,7 @@ static func texto_da_fe(f: Dictionary) -> String:
 	var nivel := float(f.get("nivel", 0.5))
 	var t := float(f.get("tendencia", 0.0))
 	var quanto := "forte" if nivel >= 0.66 else ("morna" if nivel >= 0.33 else "fria")
-	var rumo := "esquentando" if t > 0.15 else ("esfriando" if t < -0.15 else "parada")
+	var rumo := "esquentando" if t > LIMIAR_TENDENCIA else ("esfriando" if t < -LIMIAR_TENDENCIA else "parada")
 	return "A fé dos %s: %s, %s" % [f.get("nome", "?"), quanto, rumo]
 
 
@@ -354,12 +356,12 @@ func _desenhar() -> void:
 	for f in povos:
 		var nome := String(f["nome"])
 		var w := int(escura.get_string_size(nome, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
-		if x + w + 40 > CAIXA.end.x - MARGEM:
+		if x + w + 4 + TERMOMETRO.x > CAIXA.end.x - MARGEM:
 			break
 		draw_string(escura, Vector2(x, y + int(escura.get_ascent(TAM_FONTE))), nome, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
-		desenhar_termometro(self, Vector2i(x + w + 4, y + 2), float(f["nivel"]), float(f["tendencia"]))
-		_rects_povos.append(Rect2i(x, y, w + 38, 11))
-		x += w + 44
+		desenhar_termometro(self, Vector2i(x + w + 3, y - 2), float(f["nivel"]), float(f["tendencia"]))
+		_rects_povos.append(Rect2i(x, y - 2, w + 3 + TERMOMETRO.x, 14))
+		x += w + 3 + TERMOMETRO.x + 8
 	var traco_y := CAIXA.position.y + 22
 	draw_rect(Rect2(x0, traco_y, CAIXA.size.x - 2 * MARGEM, 1), Arte.paleta[8])
 	if povos.is_empty() and preces.is_empty():
@@ -461,32 +463,19 @@ func _triangulo(c: Vector2i, para_cima: bool, cor: int) -> void:
 		draw_rect(Rect2(c.x - k, c.y + linha, 2 * k + 1, 1), Arte.paleta[cor])
 
 
-## O termômetro (também na dica da vila): um bulbo e um tubo, cheio até o nível,
-## na cor do nível (frio azul, morno laranja, forte vermelho), e a seta da tendência.
+## O termômetro (também na dica da vila), com as peças da C (arte/interface/termometro_fe_*, LEIA-ME
+## das peças, seção 6): o tubo, e por cima o cheio das linhas topo..13, com topo = 9 - round(fé × 8).
+## O bulbo fica sempre cheio (fé zero é fria, não vazia). A seta, em (x + 7, y + 1), sobe quando a fé
+## esquenta e desce quando esfria; parada, sem seta. O mesmo par lê no pergaminho e na dica escura.
 static func desenhar_termometro(alvo: CanvasItem, canto: Vector2i, nivel: float, tendencia: float) -> void:
-	var tinta: Color = Arte.paleta[8]
-	var vazio: Color = Arte.paleta[31]
-	var cor: Color = Arte.paleta[2] if nivel < 0.33 else (Arte.paleta[21] if nivel < 0.66 else Arte.paleta[20])
-	var t := TERMOMETRO
-	# o bulbo, 5 × 5 com os cantos cortados
-	alvo.draw_rect(Rect2(canto.x + 1, canto.y - 1, 3, 7), tinta)
-	alvo.draw_rect(Rect2(canto.x, canto.y, 5, 5), tinta)
-	alvo.draw_rect(Rect2(canto.x + 1, canto.y + 1, 3, 3), cor)
-	# o tubo
-	var tx := canto.x + 4
-	alvo.draw_rect(Rect2(tx, canto.y + 1, t.x, 3), tinta)
-	alvo.draw_rect(Rect2(tx, canto.y + 2, t.x - 1, 1), vazio)
-	var cheio := clampi(roundi(nivel * (t.x - 1)), 1, t.x - 1)
-	alvo.draw_rect(Rect2(tx, canto.y + 2, cheio, 1), cor)
-	# a seta: para cima (esquenta), para baixo (esfria), um traço (parada)
-	var sx := tx + t.x + 3
-	if tendencia > 0.15:
-		for k in 3:
-			alvo.draw_rect(Rect2(sx + 2 - k, canto.y + k, 2 * k + 1, 1), Arte.paleta[20])
-		alvo.draw_rect(Rect2(sx + 2, canto.y + 3, 1, 2), Arte.paleta[20])
-	elif tendencia < -0.15:
-		for k in 3:
-			alvo.draw_rect(Rect2(sx + 2 - k, canto.y + 4 - k, 2 * k + 1, 1), Arte.paleta[2])
-		alvo.draw_rect(Rect2(sx + 2, canto.y, 1, 2), Arte.paleta[2])
-	else:
-		alvo.draw_rect(Rect2(sx, canto.y + 2, 5, 1), tinta)
+	if _pecas_fe.is_empty():
+		for nome in ["tubo", "cheio", "sobe", "desce"]:
+			_pecas_fe[nome] = Arte.textura("interface/termometro_fe_%s.png" % nome)
+	var c := Vector2(canto)
+	alvo.draw_texture(_pecas_fe["tubo"], c)
+	var topo := 9 - roundi(clampf(nivel, 0.0, 1.0) * 8.0)
+	alvo.draw_texture_rect_region(_pecas_fe["cheio"], Rect2(c.x, c.y + topo, 6, 14 - topo), Rect2(0, topo, 6, 14 - topo))
+	if tendencia > LIMIAR_TENDENCIA:
+		alvo.draw_texture(_pecas_fe["sobe"], c + Vector2(7, 1))
+	elif tendencia < -LIMIAR_TENDENCIA:
+		alvo.draw_texture(_pecas_fe["desce"], c + Vector2(7, 1))

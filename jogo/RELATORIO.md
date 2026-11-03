@@ -7,7 +7,7 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 - **O botão:** fica na alça, logo depois da lupa, com o ícone da C (`caixa_preces`, copiado da pasta de trabalho dela antes do commit: quando ela commitar, o `sincronizar_arte.py` iguala as cópias). Quando chega prece nova desde a última abertura, o ícone mostra o ponto (`caixa_preces_nova`). A tecla P também abre a caixa.
 - **A leitura:** ao abrir, a moldura guarda no moldura.cfg ([preces] lida) a semente, o passo e o último evento. Num mundo de outra semente, tudo o que houver conta como novo.
 - **A caixa (`apresentacao/preces_tela.gd`):** um pergaminho de 296 × 154 à direita, que deixa a metade esquerda do mundo à vista.
-  - No topo, cada povo que reza tem um termômetro sem número. A cor diz o nível (azul frio, laranja morno, vermelho forte), e a seta diz se a fé esquenta ou esfria (um traço quando está parada).
+  - No topo, cada povo que reza tem um termômetro sem número, com as peças da C (termometro_fe_tubo, cheio, sobe e desce; LEIA-ME das peças, seção 6). A altura do cheio diz o nível, e o bulbo fica sempre cheio. A seta diz se a fé esquenta ou esfria, e some quando a fé está parada.
   - Embaixo, as preces, da mais nova para a mais antiga. Cada uma mostra quem pediu e o povo, o "Ano X, dia Y", as palavras (até duas linhas) e o estado com um ponto colorido: esperando, atendida, "atendida, mas não por você" ou sem resposta.
   - A roda e as setas rolam a lista.
   - Esc, o botão direito ou um clique fora fecham a caixa.
