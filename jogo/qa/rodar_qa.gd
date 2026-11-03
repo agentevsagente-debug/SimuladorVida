@@ -244,6 +244,7 @@ func _rodar_tudo() -> void:
 		["guerra (TDD)", _bloco_guerra],
 		["textos na fonte", _bloco_textos],
 		["textos da A (testar_textos)", _bloco_textos_da_a],
+		["a vida do povo na crônica (TDD)", _bloco_vida_na_cronica],
 		["inspeção do código", _bloco_inspecao],
 	]
 	for b in blocos:
@@ -1824,6 +1825,203 @@ func _bloco_textos_da_a() -> void:
 	var avisos := linhas.filter(func(l): return l.to_lower().contains("aviso"))
 	conferir("QA-207", codigo == 0, "testar_textos.gd saiu com %d; fim da saída: %s%s" % [codigo, linhas.slice(-4),
 		"; avisos: %s" % [avisos.slice(0, 3)] if not avisos.is_empty() else ""])
+
+
+# ---------------------------------------------------------------- 16. a vida do povo na crônica (D-20)
+
+## FUN "A vida do povo na crônica" (pedido do autor em 03/11/2026): nascimentos, casamentos e mortes
+## entram todo ano, mesmo num ano cheio de milagres. Num povo pequeno, com o nome; num povo grande, a
+## conta do ano e só os casos notáveis.
+const SAVE_AUTOR := "res://../qa/save-sergio-ano3.txt"
+const TIPOS_DIVINOS := ["chuva_divina", "raio_divino", "fogo_divino", "fartura_divina", "terra_erguida", "sonho",
+	"seca_divina", "diluvio", "terremoto", "pressagio", "cura", "fogo_brando"]
+const POVO_PEQUENO := 30   # até 30 vivos (proposta, revisável)
+const POVO_GRANDE := 60    # 60 vivos ou mais
+## O tamanho do livro do mundo de 250 anos da SEMENTE_LONGA na main bf311be, antes da correção:
+## o livro pode crescer até 50% (proposta, revisável).
+const LIVRO_ANTES := 48473
+const NUMEROS := ["um", "uma", "dois", "duas", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze",
+	"doze", "treze", "catorze", "quatorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte", "trinta",
+	"quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem", "cento"]
+
+
+## O trecho de um ano numa crônica em markdown: do "### Ano N" até o próximo título.
+static func _trecho_do_ano(md: String, ano: int) -> String:
+	var titulo := "### Ano %d" % ano
+	var r := []
+	var dentro := false
+	for l in md.split("\n"):
+		var t := l.strip_edges()
+		if t.begins_with(titulo) and (t.length() == titulo.length() or not t.substr(titulo.length(), 1).is_valid_int()):
+			dentro = true
+			continue
+		if dentro and t.begins_with("#"):
+			break
+		if dentro:
+			r.append(t)
+	return "\n".join(r)
+
+
+func _nome(m, id: int) -> String:
+	var p = m.pessoa(id)
+	return String(p.nome) if p != null else ""
+
+
+func _tem_numero(frase: String) -> bool:
+	for palavra in frase.to_lower().replace(",", " ").replace(":", " ").replace(";", " ").split(" ", false):
+		if palavra.is_valid_int() or palavra in NUMEROS:
+			return true
+	return false
+
+
+func _bloco_vida_na_cronica() -> void:
+	var glifos := _glifos_da_fonte()
+	var achados := {}   # QA-211: resto de molde nos textos destes cenários
+	if _quer("QA-208") or _quer("QA-211"):
+		_vida_save_do_autor(glifos, achados)
+	if _quer("QA-209") or _quer("QA-211"):
+		_vida_povo_pequeno(glifos, achados)
+	if _quer("QA-210") or _quer("QA-211"):
+		_vida_povo_grande(glifos, achados)
+	if _quer("QA-211"):
+		var resumo := []
+		for chave in achados:
+			resumo.append("%s, %d vezes; ex. %s" % [chave, achados[chave][0], achados[chave][1]])
+		conferir("QA-211", achados.is_empty(), "nas crônicas dos cenários QA-208 a QA-210, resto de molde ou caractere fora da fonte: %s" % ["; ".join(resumo) if not resumo.is_empty() else "nenhum"])
+
+
+## QA-208: o save do autor (ano 3 em curso): o nascimento da Zeya (evento 20, o primeiro filho do
+## povo) aparece no ano 3 da crônica viva e, quando o ano fecha, na crônica do ano 3.
+func _vida_save_do_autor(glifos: Dictionary, achados: Dictionary) -> void:
+	var origem := ProjectSettings.globalize_path(SAVE_AUTOR)
+	if not FileAccess.file_exists(origem):
+		pular("QA-208", "o save do autor não está em qa/save-sergio-ano3.txt")
+		return
+	# o git pode trazer o arquivo com CRLF (core.autocrlf), e a soma md5 do save é do texto com LF
+	var texto := FileAccess.get_file_as_string(origem).replace("\r\n", "\n")
+	var c := _caminho("save_autor")
+	_apagar_mundo(c)
+	var f := FileAccess.open(c, FileAccess.WRITE)
+	f.store_string(texto)
+	f.close()
+	var m = Persistencia.carregar(c)
+	if m == null or m.eventos.size() <= 20:
+		conferir("QA-208", false, "o save do autor não carregou (%s)" % ["nulo" if m == null else "%d eventos" % m.eventos.size()])
+		return
+	var e20 = m.evento(20)
+	var zeya := _nome(m, e20.participantes[0]) if e20 != null and e20.tipo == "nascimento" else ""
+	conferir("QA-208", zeya == "Zeya", "o evento 20 do save é o nascimento da Zeya (%s, %s)" % [e20.tipo if e20 else "-", zeya])
+	var viva: String = m.cronica_viva()
+	var ano3 := _trecho_do_ano(viva, 3)
+	_problemas_do_texto("save do autor crônica viva", _como_na_tela(viva), glifos, achados)
+	conferir("QA-208", ano3.contains("Zeya"), "o ano 3 (em curso) da crônica viva cita a Zeya: \"%s\"" % ano3.replace("\n", " / ").left(260))
+	conferir("QA-208", m.cronica_em_curso().contains("Zeya"), "a crônica do ano em curso cita a Zeya")
+	var dias := 0
+	while m.ultimo_ano_na_cronica() < 3 and dias < 80:
+		m.avancar_dias(1)
+		dias += 1
+	var ano3_fechado: String = m.cronica_ano(3)
+	_problemas_do_texto("save do autor ano 3", _como_na_tela(ano3_fechado), glifos, achados)
+	conferir("QA-208", ano3_fechado.contains("Zeya"), "com o ano 3 fechado (%d dias depois), a crônica do ano 3 cita a Zeya: \"%s\"" % [dias, ano3_fechado.replace("\n", " / ").left(200)])
+	conferir("QA-208", _trecho_do_ano(m.cronica_viva(), 3).contains("Zeya"), "com o ano 3 fechado, o ano 3 da crônica viva cita a Zeya")
+
+
+## QA-209: povos pequenos com o deus ativo (5 sinais no começo de cada ano): em todo ano com 4 ou mais
+## atos divinos, cada nascimento, casamento e morte de um povo de até POVO_PEQUENO vivos entra na
+## crônica do ano com o nome (o recém-nascido, os dois noivos, o morto).
+func _vida_povo_pequeno(glifos: Dictionary, achados: Dictionary) -> void:
+	var casos := 0
+	var faltas := []
+	var anos_completos := 0   # anos com os três: um nascimento, um casamento e uma morte
+	var api_nova := _args(Mundo, "usar_poder") >= 5
+	for semente in [1, 2, 3, 4, 5, 6, 7, 8]:
+		var m := _mundo(semente)
+		var mo: Object = m
+		for ano in 25:
+			for k in 5:
+				var poder: String = ["chuva", "pressagio", "fartura", "chuva", "pressagio"][k]
+				var x := 140.0 + fmod(semente * 53.0 + ano * 31.0 + k * 67.0, 320.0)
+				if api_nova:
+					mo.callv("usar_poder", [poder, x, 0.2, -1, -1.0])
+				else:
+					m.usar_poder(poder, x, 0.2)
+				m.avancar_hora()
+			m.avancar_dias(40)
+			if m.grupos_vivos().is_empty():
+				break
+		for a in range(1, m.ultimo_ano_na_cronica() + 1):
+			var do_ano: Array = m.eventos.filter(func(e): return e.ano == a)
+			var divinos := do_ano.filter(func(e): return e.tipo in TIPOS_DIVINOS).size()
+			if divinos < 4:
+				continue
+			var texto: String = m.cronica_ano(a)
+			_problemas_do_texto("s%d ano %d" % [semente, a], _como_na_tela(texto), glifos, achados)
+			var tem := {}
+			for e in do_ano:
+				if not e.tipo in ["nascimento", "casamento", "morte"]:
+					continue
+				var g = m.grupo(e.grupo) if e.grupo >= 0 else null
+				if g != null and g.membros.size() > POVO_PEQUENO:
+					continue
+				tem[e.tipo] = true
+				var ids: Array = [e.participantes[0]] if e.tipo != "casamento" else e.participantes.slice(0, 2)
+				for id in ids:
+					var nome := _nome(m, id)
+					casos += 1
+					if nome != "" and not texto.contains(nome):
+						faltas.append("s%d ano %d: %s de %s" % [semente, a, e.tipo, nome])
+			if tem.size() == 3:
+				anos_completos += 1
+	if casos == 0:
+		pular("QA-209", "nenhum nascimento, casamento ou morte de povo pequeno num ano com 4 atos divinos")
+		return
+	conferir("QA-209", faltas.is_empty() and anos_completos > 0,
+		"%d nomes de nascimentos, casamentos e mortes de povo pequeno em anos com 4 ou mais atos divinos (%d anos com os três); faltam na crônica do ano %d: %s" % [casos, anos_completos, faltas.size(), faltas.slice(0, 6)])
+
+
+## QA-210: o povo grande do mundo de 250 anos: num ano com 6 ou mais nascimentos num povo de
+## POVO_GRANDE vivos ou mais, a crônica do ano dá a conta (uma frase com "nasc" e um número; e com
+## "morr" e um número, se houve mortes) e não lista todos os nomes (até 3 recém-nascidos nomeados).
+## E o livro não cresce demais: até 50% acima do tamanho de antes da correção (LIVRO_ANTES).
+func _vida_povo_grande(glifos: Dictionary, achados: Dictionary) -> void:
+	var m := _mundo(SEMENTE_LONGA)
+	for a in 250:
+		m.avancar_dias(40)
+	var anos_vistos := 0
+	var faltas := []
+	for a in range(maxi(1, m.ultimo_ano_na_cronica() - 60), m.ultimo_ano_na_cronica() + 1):
+		var do_ano: Array = m.eventos.filter(func(e): return e.ano == a)
+		var texto: String = m.cronica_ano(a)
+		_problemas_do_texto("longo ano %d" % a, _como_na_tela(texto), glifos, achados)
+		for g in m.grupos_vivos():
+			if g.membros.size() < POVO_GRANDE:
+				continue
+			var nasc := do_ano.filter(func(e): return e.tipo == "nascimento" and e.grupo == g.id)
+			var mortes := do_ano.filter(func(e): return e.tipo == "morte" and e.grupo == g.id)
+			if nasc.size() < 6:
+				continue
+			anos_vistos += 1
+			var conta_nasc := false
+			var conta_mortes := mortes.is_empty()
+			for fr in texto.replace("\n", " ").split("."):
+				if fr.to_lower().contains("nasc") and _tem_numero(fr):
+					conta_nasc = true
+				if fr.to_lower().contains("morr") and _tem_numero(fr):
+					conta_mortes = true
+			var nomeados := nasc.filter(func(e): return texto.contains(_nome(m, e.participantes[0]))).size()
+			if not conta_nasc or not conta_mortes or nomeados > 3:
+				faltas.append("ano %d, %s (%d vivos): %d nascimentos (%d nomeados, conta %s), %d mortes (conta %s)" % [a, g.nome, g.membros.size(),
+					nasc.size(), nomeados, "sim" if conta_nasc else "não", mortes.size(), "sim" if conta_mortes else "não"])
+	if anos_vistos == 0:
+		pular("QA-210", "nenhum povo de %d vivos ou mais com 6 nascimentos num ano, nos últimos 60 anos da semente %d" % [POVO_GRANDE, SEMENTE_LONGA])
+	else:
+		conferir("QA-210", faltas.is_empty(), "%d anos de povo grande com 6 ou mais nascimentos; sem a conta ou com nomes demais: %d (%s)" % [anos_vistos, faltas.size(), faltas.slice(0, 3)])
+	var livro: String = m.cronica_completa("Crônica de teste", "Primeira Era")
+	_problemas_do_texto("longo livro", _como_na_tela(livro), glifos, achados)
+	if LIVRO_ANTES < 0:
+		print("   QA-210 -- o livro do mundo de 250 anos tem %d caracteres (a medida de antes da correção)" % livro.length())
+	else:
+		conferir("QA-210", livro.length() <= LIVRO_ANTES * 1.5, "o livro do mundo de 250 anos tem %d caracteres (antes da correção: %d; limite: +50%%)" % [livro.length(), LIVRO_ANTES])
 
 
 func _bloco_inspecao() -> void:

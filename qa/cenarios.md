@@ -259,3 +259,14 @@
 | QA-203 | **Dado** o cursor sobre a lupa, **então** a dica mostra a escala atual ("2x"); **quando** o jogador clica, **então** a dica passa a mostrar a nova. | pedido do usuário | N | AS |
 | QA-204 | **Dado** a escala mudada pela lupa (3x, depois 4x), **quando** o jogo fecha (`sair`) e abre de novo, **então** abre nessa escala. Com `--sem-config`, a lupa não grava nada. | pedido do usuário, TEC Moldura | B | AS |
 | QA-205 | **Dado** a janela encostada em cada um dos 4 cantos da área útil, **quando** a lupa sobe ou desce três vezes, **então** a janela fica sempre inteira dentro da área útil de uma tela. | pedido do usuário | B | AS com `--janela` (precisa da tela de verdade; sem ela, PULADO) |
+
+## 19. A vida do povo na crônica (escritos antes da correção, pela regra de TDD)
+
+*Fonte: FUN "A vida do povo na crônica" (pedido do autor em 03/11/2026). Defeito D-20. As fronteiras de povo pequeno (até 30 vivos) e grande (60 ou mais) e o limite do livro (+50%) são propostas revisáveis. O tamanho do povo é o do fim da simulação, uma aproximação.*
+
+| ID | Dado / Quando / Então | Fonte | Prio | Como |
+|---|---|---|---|---|
+| QA-208 | **Dado** o save do autor (`qa/save-sergio-ano3.txt`, ano 3 em curso), **então** o nascimento da Zeya (evento 20, o primeiro filho do povo) aparece no ano 3 da crônica viva e na crônica do ano em curso; **quando** o ano 3 fecha, **então** aparece na crônica do ano 3 e no ano 3 da crônica viva. | FUN A vida do povo na crônica | B | AN |
+| QA-209 | **Dado** 8 sementes de 25 anos com o deus ativo (5 sinais no começo de cada ano), **então** em todo ano com 4 ou mais atos divinos, cada nascimento, casamento e morte de um povo pequeno entra na crônica do ano com o nome (o recém-nascido, os dois noivos, o morto); e há pelo menos um ano com os três. | FUN "Povo pequeno", "Os atos do deus não ocupam o lugar da vida" | B | AN |
+| QA-210 | **Dado** o mundo de 250 anos da semente 3, **então** em cada um dos últimos 60 anos com 6 ou mais nascimentos num povo grande, a crônica do ano dá a conta (uma frase com "nasc" e um número; e com "morr" e um número, se houve mortes) e nomeia no máximo 3 recém-nascidos; e o livro (a crônica completa) cresce no máximo 50% sobre os 48 473 caracteres de antes da correção. | FUN "Povo grande" | B | AN |
+| QA-211 | **Dado** as crônicas dos cenários QA-208 a QA-210, **então** nenhuma tem resto de molde (`{`, `}`, `|`) nem caractere fora da fonte. | FUN Crônica, robustez | B | AN |
