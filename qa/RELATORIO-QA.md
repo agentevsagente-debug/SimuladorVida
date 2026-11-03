@@ -17,6 +17,12 @@
 | **Falham** | **0** |
 | Pulados | 3 (QA-053, QA-110, QA-127): por condição rara nas sementes |
 
+**Veredito da release 0.3.0, na main `e49cff0`, sem janela, em 03/11/2026: pode sair.**
+- Núcleo: **115 passam, 0 falham e 3 pulados** (os raros de sempre), em 118 cenários e 149 s. Passam a vida do povo na crônica (QA-208 a QA-211) e a API das preces (QA-212 a QA-218).
+- Som: 8 passam e 1 pulado (o QA-194, com janela). Lupa: 5 passam e 1 pulado (o QA-205, com janela).
+- O `testar_preces.gd` da B: 11 de 11 (P-01 a P-11), com o ponto de "não lida" (P-02) e os dados de verdade do núcleo (P-11).
+- Os cenários em janela não foram repetidos, a pedido do orquestrador: a B rodou o `verificar.ps1` com 22 de 22.
+
 **Na main `e4dd9d1` (0.2.1, com o D-18 e o D-19 corrigidos), sem janela, em 02/11/2026:** o núcleo dá **104 passam, 0 falham e 3 pulados** (107 cenários; o QA-206 e o QA-207 passam). O som dá 8 passam e 1 pulado (o QA-194, com janela); a lupa, 5 passam e 1 pulado (o QA-205, com janela). Os cenários em janela não foram repetidos nesta rodada. Com o QA-206 e o QA-207, a matriz tem 144 cenários, e nada falha.
 
 **A 0.2.0 fechou sem nenhuma falha.** Depois, o QA-206 (textos na tela), escrito para o "{p} teve um sonho" que o usuário viu, falha na mesma main: acha o D-18 e o D-19 (A). Com ele, a matriz tem 143 cenários, e o núcleo dá 102 passam, 1 falha e 3 pulados.
@@ -69,7 +75,7 @@
 | D-17 | O artesanato aparecia em 40% dos dias, e a API prometia cerca de 7 em 10 | baixa | não | A | **corrigido na branch da A** (`1249c3b`): as cenas disputavam os mesmos adultos; agora o ensinar e o artesanato vêm antes da sesta, e a sesta acaba às 13h40. Em 40 dias: artesanato 55%, sesta 48% e ensinar em 11 dos 20 dias possíveis; a sesta nunca passa das 13h45 (QA-187 passa na main `e27d489`) |
 | D-18 | O texto curto do sonho sem alvo sai "{p} teve um sonho" | média | — (0.2.0 já publicada) | A | **corrigido** na main `e4dd9d1` (0.2.1): o sonho usa o sonhador, e o gesto sem ninguém ganhou frase própria ("Um sonho sem ninguém para sonhar"); QA-206 passa |
 | D-19 | O raio que mata quem guiava o povo sai "…acertou Marsaim, que guiava {g}…" na crônica e no livro | média | — | A | **corrigido** na main `e4dd9d1`: usa o povo do morto; QA-206 passa |
-| D-20 | A vida do povo some da crônica: os atos do deus enchem o ano, e o nascimento da Zeya (o primeiro filho do povo, no save do autor) não aparece no ano 3 | alta (pedido do autor) | — | A | **corrigido na branch da A** (`76c51b4`): QA-208 a QA-211 passam; o livro fica em +84% (limite: +100%) |
+| D-20 | A vida do povo some da crônica: os atos do deus enchem o ano, e o nascimento da Zeya (o primeiro filho do povo, no save do autor) não aparece no ano 3 | alta (pedido do autor) | — | A | **corrigido** na main (0.3.0): QA-208 a QA-211 passam; o livro fica em +84% (limite: +100%) |
 | D-15 | O aviso "Não resta ninguém" saía pelos lados do pergaminho | média | sim | B | **corrigido**: o texto quebra dentro do pergaminho (`QA-129-extincao_00.png`) |
 
 **Na rodada anterior (main `e27d489`, 0.2.0 antes da lupa), também:**
@@ -655,7 +661,21 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
 
 *Escritos em 03/11/2026, na main `a2ac752`. Os cenários são QA-212 a QA-217 (área 20 da matriz).*
 
-**Hoje: os 6 falham**, porque o núcleo ainda não tem `preces_historico`, `fe_do_povo` nem `preces_novas_desde`.
+**Na main `e49cff0` (0.3.0), em 03/11/2026: os 7 passam** (QA-212 a QA-218). Antes da API, na main `a2ac752`, os 6 primeiros falhavam porque ela não existia.
+
+- **Os quatro estados** aparecem nas 4 sementes: atendida (71), falso milagre (52), sem resposta (12) e esperando. A prece que acabou de nascer está no topo do histórico, esperando, nas 3 sementes em que nasceu uma.
+- **A ordem e os campos** batem com os eventos do núcleo, prece a prece.
+- **O termômetro:** com a fé mexida de propósito, a tendência diz "sobe", "desce" e "estavel" na hora certa. No save antigo do autor, sem amostras de fé, diz "estavel" (QA-218).
+- **A conta das novas** está certa desde -1, desde agora e desde o passo de uma prece qualquer.
+- **Salvar e carregar** mantém o histórico e o termômetro iguais.
+- **O custo,** no mundo de 250 anos: histórico 0,001 ms com a lista pronta e 0,59 ms no pior caso ao remontá-la depois de um evento novo; conta das novas 0,002 ms; termômetro 0,013 ms.
+- **Consultar a API todo dia** por 5 anos não muda o mundo.
+
+**Ajustes do meu contrato ao que a A documentou no API.md** (não são defeitos):
+- O `dia` vai de 0 a 39, como nos eventos, e a caixa da B soma 1 ao mostrar (`preces_tela.gd:412`). O dia na tela bate com o da crônica. Eu tinha suposto que o núcleo já mandava o dia somado.
+- O histórico traz as 50 preces mais novas (`limite := 50`), e `preces_novas_desde` conta todas as do mundo. Na semente 4, o mundo tem 53 preces, e o histórico, 50.
+
+**Observação (não é defeito das preces):** chamado logo depois da virada do dia, sem quadros entre os passos, `posicao_de` espera a thread da rotina: de 75 a 100 ms no mundo de 250 anos. O histórico refaz o `x` de quem rezou e, por isso, a primeira medida dele parecia de 84 ms. No jogo, os quadros escondem essa espera, e o QA-170 confere que nenhum passo espera a thread. O QA-216 mede o histórico depois da espera.
 
 **O contrato** é o que a caixa da B já lê (`apresentacao/preces_tela.gd`), e está na área 20 da matriz.
 

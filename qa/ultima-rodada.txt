@@ -34,7 +34,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-012 ok  toda hora da noite tem alguém acordado (0 horas sem ninguém)
    QA-012 ok  toda hora alguém muda de lugar (0 horas paradas em 960)
    QA-010 ok  ninguém na água fora do barco em 960 horas consultadas (0 casos)
-  [tempo] começo do mundo: 2.0 s
+  [tempo] começo do mundo: 2.2 s
 --- cotidiano e tempo ---
   [info] cenas da tarde em 40 dias (sementes 1 e 2): { "sesta": 19, "ensinar": 11, "artesanato": 21 }; dias em que dá para ensinar: 20
    QA-187 ok  a sesta aparece em boa parte dos dias (19 de 40; a API diz cerca de 3 em 5)
@@ -52,7 +52,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-013 ok  algum conflito social (ataque 0, rixa 10, separação 1)
    QA-014 ok  em 100 anos, lugares com nome: ["Lago do Raio", "Praia da Fome", "Praia da Vitória", "Floresta da Fome"]
    QA-015 ok  112 dicas de gente acordada, 0 com problema
-  [tempo] cotidiano e tempo: 1.6 s
+  [tempo] cotidiano e tempo: 1.8 s
 --- poderes ---
    QA-020 ok  chuva funciona no primeiro dia (milagre)
    QA-026 ok  chuva: evento chuva_divina com x, grau e intensidade, camada nota
@@ -131,7 +131,7 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-052 ok  sacerdotes falam pelo deus (édito 3, sacerdote 21)
   [info] religião em 100 anos: ["crenca=1", "edito=3", "silencio=4", "secularizacao=0", "profeta=0", "renascimento=0", "prece=149", "prece_atendida=115", "prece_sem_resposta=34"]
    QA-054 ok  a fé varia de pessoa para pessoa: 52 valores em 80 crentes
-  [tempo] preces: 4.0 s
+  [tempo] preces: 4.1 s
 --- religião e culturas ---
    QA-050 ok  milagres fazem nascer a crença em 2 dias: «o Que Ergue»
    QA-051 ok  120 anos: dois povos sem parentesco nunca chamam o deus igual (0 casos; )
@@ -151,11 +151,11 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-074 ok  nenhuma construção de estágio que o povo não tem (0 casos)
    QA-073 ok  Koil escreve a própria crônica
    QA-072 ok  Peak perde pedra (5 mortos) e volta do 3 ao 2
-  [info] primeira consulta depois do salto de 250 anos: 92 ms (API: ~100 ms, um momento de carregamento)
-  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 12 ms", "23h 2 ms", "0h 1 ms", "1h 2 ms", "2h 1 ms", "3h 2 ms", "4h 2 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
-   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.9 ms, com 258 pessoas)
+  [info] primeira consulta depois do salto de 250 anos: 95 ms (API: ~100 ms, um momento de carregamento)
+  [info] passos no 50x, mundo de 250 anos (258 pessoas): ["22h 11 ms", "23h 2 ms", "0h 2 ms", "1h 2 ms", "2h 1 ms", "3h 2 ms", "4h 2 ms"]; esperas pela thread: 0 (o tempo de cada passo depende da carga da máquina: a medida de 5 ms é a de desempenho.gd, da A)
+   QA-170 ok  no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.4 ms, com 258 pessoas)
    QA-176 ok  carregar e avançar um ano no mundo de 250 anos: 0.4 s
-  [tempo] estágios e mundo longo: 22.4 s
+  [tempo] estágios e mundo longo: 23.0 s
 --- linhagem ---
    QA-080 ok  há uma pessoa acompanhada, viva (2)
    QA-082 ok  acompanhar quem não existe é recusado
@@ -181,12 +181,12 @@ user:// isolado em C:/Users/sergi/AppData/Local/Temp/simvida_qa_appdata/Godot/ap
    QA-097 ok  a extinção na ausência vem nos chamados: ["linhagem", "extincao_grupo", "fim_do_mundo"]
    QA-097 ok  o mundo volta vazio, com o livro fechado
   [info] relato da extinção: ### Ano 11  Ortoim, que falava pelo Que Sacode em Toan, morreu de febre aos 34 anos. Foi quem deu ao deus o nome de «o Que Sacode». Suim, que guiava Toan, morreu de febre aos 39 anos. Foi quem descobriu que semente vira planta. Suim morreu sem ensinar o que sabia. O saber de plantar morreu com ele. Não restou ninguém em Toan. A Primeira Era terminou no ano 11, e o mundo ficou vazio, com o vento 
-  [tempo] ausência: 0.1 s
+  [tempo] ausência: 0.2 s
 --- persistência ---
    QA-100 ok  salvar
    QA-100 ok  carregar
    QA-100 ok  o mundo carregado segue igual ao que nunca parou, 10 anos depois
-   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793678438)
+   QA-101 ok  arquivo de texto com cabeçalho e hora real do salvamento (1793679030)
 WARNING: Mundo salvo com a soma errada (estragado no disco): user://qa_tmp/corrompido.txt
    at: push_warning (core/variant/variant_utility.cpp:1033)
    GDScript backtrace (most recent call first):
@@ -519,7 +519,7 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-111 ok  6 cargas do mesmo arquivo: o mesmo sorteio no fim (1 estados)
    QA-111 ok  e a mesma crônica (1 textos diferentes)
    QA-110 --  pulado: o arquivo dos antigos só nasce depois de 300 anos; coberto por testar_persistencia.gd e testar_antigos.gd da A
-  [tempo] persistência: 1.1 s
+  [tempo] persistência: 0.9 s
 --- fim do mundo ---
    QA-120 ok  o deus acaba com o povo só com raios: 12 raios em 2 dias (restam 0)
    QA-121 ok  os últimos: chamado ({ "restam": 2 })
@@ -542,7 +542,7 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-125 ok  povo criado no lago nasce na praia (praia)
    QA-128 ok  o mundo vazio salvo volta vazio, com o livro
    QA-128 ok  e aceita o povo novo depois de carregado
-  [tempo] fim do mundo: 0.1 s
+  [tempo] fim do mundo: 0.2 s
 --- estante e abandono ---
    QA-140 ok  abandonar fecha a crônica como livro: «A Primeira Era: o tempo de Ruar»
    QA-140 ok  o livro vai para a estante do mundo, user://qa_tmp/abandono.estante (1)
@@ -563,8 +563,8 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-206 ok  270 gestos que deram certo (72 sonhos sem alvo), 737 textos; caracteres fora da fonte ou resto de molde: nenhum
   [tempo] textos na fonte: 1.2 s
 --- textos da A (testar_textos) ---
-   QA-207 ok  testar_textos.gd saiu com 0; fim da saída: ["76 tipos de evento com frase curta", "aviso: tipos que não aconteceram: conquista, culpado, ruinas_saber", "76 sonhos e 171 curas sem ninguém; 34367 textos conferidos em 92 s", "0 falhas"]; avisos: ["aviso: tipos que não aconteceram: conquista, culpado, ruinas_saber"]
-  [tempo] textos da A (testar_textos): 93.4 s
+   QA-207 ok  testar_textos.gd saiu com 0; fim da saída: ["76 tipos de evento com frase curta", "aviso: tipos que não aconteceram: conquista, culpado, ruinas_saber", "76 sonhos e 171 curas sem ninguém; 34367 textos conferidos em 97 s", "0 falhas"]; avisos: ["aviso: tipos que não aconteceram: conquista, culpado, ruinas_saber"]
+  [tempo] textos da A (testar_textos): 98.2 s
 --- a vida do povo na crônica (TDD) ---
    QA-208 ok  o evento 20 do save é o nascimento da Zeya (nascimento, Zeya)
    QA-208 ok  o ano 3 (em curso) da crônica viva cita a Zeya: " / No dia 16, uma estrela caiu devagar, de um lado ao outro do céu. Mokon viu ali um aviso. Uma enchente sem chuva tomou o morro. /  / No dia 18, o morro secou um pouco, sem razão, enquanto em volta chovia. Só o morro secou: por 24 dias não caiu uma gota ali, "
@@ -575,15 +575,30 @@ WARNING: Índice da estante refeito a partir dos livros
    QA-210 ok  45 anos de povo grande com 6 ou mais nascimentos; sem a conta ou com nomes demais: 0 ([])
    QA-210 ok  o livro do mundo de 250 anos tem 89101 caracteres, +84% (antes da correção: 48473; limite: +100%)
    QA-211 ok  nas crônicas dos cenários QA-208 a QA-210, resto de molde ou caractere fora da fonte: nenhum
-  [tempo] a vida do povo na crônica (TDD): 7.3 s
+  [tempo] a vida do povo na crônica (TDD): 7.4 s
 --- API das preces (TDD) ---
-   QA-212 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-   QA-213 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-   QA-214 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-   QA-215 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-   QA-216 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-   QA-217 NÃO o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-  [tempo] API das preces (TDD): 0.0 s
+   QA-212 ok  semente 1: 35 preces no histórico, 35 no mundo; problemas: 0 []
+   QA-213 ok  semente 1, 3 povos: nível e tendência certos
+   QA-212 ok  semente 1: a prece 423, que acabou de nascer, está no topo como esperando (aberta=true)
+   QA-214 ok  semente 1 (35 preces; 2 novas em 18 dias): contas certas
+   QA-212 ok  semente 2: 39 preces no histórico, 39 no mundo; problemas: 0 []
+   QA-213 ok  semente 2, 2 povos: nível e tendência certos
+   QA-212 ok  semente 2: a prece 359, que acabou de nascer, está no topo como esperando (aberta=true)
+   QA-214 ok  semente 2 (39 preces; 1 novas em 106 dias): contas certas
+   QA-212 ok  semente 3: 11 preces no histórico, 11 no mundo; problemas: 0 []
+   QA-213 ok  semente 3, 1 povos: nível e tendência certos
+   QA-214 ok  semente 3 (11 preces; 0 novas em 200 dias): contas certas
+   QA-212 ok  semente 4: 50 preces no histórico, 53 no mundo; problemas: 0 []
+   QA-213 ok  semente 4, 3 povos: nível e tendência certos
+   QA-212 ok  semente 4: a prece 499, que acabou de nascer, está no topo como esperando (aberta=true)
+   QA-214 ok  semente 4 (50 preces; 1 novas em 124 dias): contas certas
+   QA-212 ok  nas 4 sementes, os estados vistos: { "falso_milagre": 52, "atendida": 71, "sem_resposta": 12, "esperando": 3 } (precisa dos quatro)
+   QA-213 ok  a fé do povo 0 mexida de propósito: [esperado, obtido, nível] = [["sobe", "sobe", 0.65], ["desce", "desce", 0.5], ["estavel", "estavel", 0.54]]
+   QA-215 ok  depois de salvar e carregar: histórico igual=true (37 preces), termômetro igual=true
+   QA-216 ok  mundo de 250 anos (50 preces): histórico 0.001 ms (remontar depois de evento novo: pior de 5, 0.62 ms), novas desde 0.001 ms, fé do povo 0.011 ms
+   QA-217 ok  5 anos, a API consultada todo dia em um dos mundos: eventos 29 e 29, crônica e sorteio iguais=true
+   QA-218 ok  save do autor (sem fe_amostras=true): [povo, tendência, nível] = [[0, "estavel", 0.95]]; erros de script: []
+  [tempo] API das preces (TDD): 6.8 s
 --- inspeção do código ---
    QA-150 ok  o núcleo não conhece o modo discreto: a crônica é a mesma com ele ligado []
    QA-181 ok  a exportação exclui qa/ (exclude_filter="capturas/*, medicoes/*, ferramentas/*, ferramentas_sim/*, qa/*, *.md")
@@ -659,7 +674,7 @@ PASSOU QA-095  ok: 5 anos fora avançam só 1 ano (960 passos)
 PASSOU QA-096  ok: carregar e avançar um ano leva 0.01 s
 PASSOU QA-097  ok: o mundo volta vazio, com o livro fechado
 PASSOU QA-100  ok: o mundo carregado segue igual ao que nunca parou, 10 anos depois
-PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793678438)
+PASSOU QA-101  ok: arquivo de texto com cabeçalho e hora real do salvamento (1793679030)
 PASSOU QA-102  ok: mundo cabeçalho trocado: o relato avisa o jogador
 PASSOU QA-103  ok: e carregar_e_avancar também
 PASSOU QA-104  ok: mas existe() continua verdadeiro: a apresentação sabe que havia um mundo
@@ -688,7 +703,7 @@ PASSOU QA-143  ok: o livro da extinção tem epíteto, resumo, capítulos e epit
 PASSOU QA-144  ok: dois abandonos, dois livros com ids diferentes (2)
 PASSOU QA-150  ok: o núcleo não conhece o modo discreto: a crônica é a mesma com ele ligado []
 PASSOU QA-166  ok: a apresentação mostra o número da versão (busca por config/version no código)
-PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.9 ms, com 258 pessoas)
+PASSOU QA-170  ok: no 50x, nenhum passo espera a thread da rotina nem trava (pior 11.4 ms, com 258 pessoas)
 PASSOU QA-174  ok: no máximo 30 quadros por segundo (project.godot)
 PASSOU QA-176  ok: carregar e avançar um ano no mundo de 250 anos: 0.4 s
 PASSOU QA-180  ok: e já aparece na hora seguinte ao ataque (vista na hora 9)
@@ -703,12 +718,13 @@ PASSOU QA-208  ok: com o ano 3 fechado, o ano 3 da crônica viva cita a Zeya
 PASSOU QA-209  ok: 323 nomes de nascimentos, casamentos e mortes de povo pequeno em anos com 4 ou mais atos divinos (7 anos com os três); faltam na crônica do ano 0:
 PASSOU QA-210  ok: o livro do mundo de 250 anos tem 89101 caracteres, +84% (antes da correção: 48473; limite: +100%)
 PASSOU QA-211  ok: nas crônicas dos cenários QA-208 a QA-210, resto de molde ou caractere fora da fonte: nenhum
-FALHOU QA-212  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-FALHOU QA-213  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-FALHOU QA-214  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-FALHOU QA-215  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-FALHOU QA-216  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-FALHOU QA-217  NÃO: o núcleo ainda não tem ["preces_historico", "fe_do_povo", "preces_novas_desde"]
+PASSOU QA-212  ok: nas 4 sementes, os estados vistos: { "falso_milagre": 52, "atendida": 71, "sem_resposta": 12, "esperando": 3 } (precisa dos quatro)
+PASSOU QA-213  ok: a fé do povo 0 mexida de propósito: [esperado, obtido, nível] = [["sobe", "sobe", 0.65], ["desce", "desce", 0.5], ["estavel", "estavel", 0.54]]
+PASSOU QA-214  ok: semente 4 (50 preces; 1 novas em 124 dias): contas certas
+PASSOU QA-215  ok: depois de salvar e carregar: histórico igual=true (37 preces), termômetro igual=true
+PASSOU QA-216  ok: mundo de 250 anos (50 preces): histórico 0.001 ms (remontar depois de evento novo: pior de 5, 0.62 ms), novas desde 0.001 ms, fé do povo 0.011 ms
+PASSOU QA-217  ok: 5 anos, a API consultada todo dia em um dos mundos: eventos 29 e 29, crônica e sorteio iguais=true
+PASSOU QA-218  ok: save do autor (sem fe_amostras=true): [povo, tendência, nível] = [[0, "estavel", 0.95]]; erros de script: []
 ====================================================
-Cenários testados: 117 | PASSOU: 108 | FALHOU: 6 | PULADO: 3
-  [tempo] bateria: 136.2 s
+Cenários testados: 118 | PASSOU: 115 | FALHOU: 0 | PULADO: 3
+  [tempo] bateria: 148.9 s

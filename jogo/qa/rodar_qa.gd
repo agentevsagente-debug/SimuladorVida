@@ -2028,8 +2028,10 @@ func _vida_povo_grande(glifos: Dictionary, achados: Dictionary) -> void:
 
 ## FUN "A caixa de preces e o termômetro de fé" (pedido do autor em 03/11/2026). O contrato é o que a
 ## caixa da B já lê (apresentacao/preces_tela.gd), proposto à A:
-## - preces_historico() -> Array, da mais nova para a mais antiga, de {evento, autor, nome, grupo, povo,
-##   ano, dia, texto, estado, vivo, passo}; estado: esperando, atendida, falso_milagre ou sem_resposta;
+## - preces_historico() -> Array, as LIMITE_HISTORICO mais novas, da mais nova para a mais antiga, de
+##   {evento, autor, nome, grupo, povo, ano, dia, texto, estado, vivo, passo}; o dia vai de 0 a 39, como
+##   nos eventos (a caixa soma 1 ao mostrar); estado: esperando, atendida, falso_milagre ou sem_resposta
+##   (a contrariada também é sem_resposta);
 ## - fe_do_povo(gid) -> {nivel: 0..1, tendencia: "sobe" | "desce" | "estavel"};
 ## - preces_novas_desde(passo) -> int: quantas preces nasceram depois desse passo.
 ## O oráculo são os eventos do próprio núcleo: "prece", "prece_atendida" e "prece_sem_resposta".
@@ -2037,7 +2039,9 @@ const CHAVES_PRECE := ["evento", "autor", "nome", "grupo", "povo", "ano", "dia",
 const ESTADOS_PRECE := ["esperando", "atendida", "falso_milagre", "sem_resposta"]
 const TENDENCIAS := ["sobe", "desce", "estavel"]
 const API_PRECES := ["preces_historico", "fe_do_povo", "preces_novas_desde"]
-const FE_TOLERANCIA := 0.05   # o nível é a fé média do povo, (média + 1) / 2, com esta folga (proposta, revisável)
+const FE_TOLERANCIA := 0.05
+const LIMITE_HISTORICO := 50  # o padrão de preces_historico(limite := 50), no API.md
+var _estados_preces := {}     # os estados vistos no histórico, em todas as sementes (QA-212)   # o nível é a fé média do povo, (média + 1) / 2, com esta folga (proposta, revisável)
 
 var _longo250 = null   # o mundo de 250 anos da SEMENTE_LONGA, feito uma vez para os cenários que o leem
 
@@ -2081,7 +2085,7 @@ func _mundo_com_preces(semente: int, anos: int):
 
 
 func _bloco_preces_api() -> void:
-	var ids := ["QA-212", "QA-213", "QA-214", "QA-215", "QA-216", "QA-217"]
+	var ids := ["QA-212", "QA-213", "QA-214", "QA-215", "QA-216", "QA-217", "QA-218"]
 	if not ids.any(func(i): return _quer(i)):
 		return
 	var m0 := _mundo(1)
@@ -2091,7 +2095,7 @@ func _bloco_preces_api() -> void:
 			conferir(i, false, "o núcleo ainda não tem %s" % [faltam])
 		return
 	var glifos := _glifos_da_fonte()
-	var estados := {}
+	var estados := _estados_preces
 	var mundos := []
 	for semente in [1, 2, 3, 4]:
 		var m = _mundo_com_preces(semente, 40)
@@ -2103,8 +2107,8 @@ func _bloco_preces_api() -> void:
 		if _quer("QA-214"):
 			_novas_desde_confere(m, semente)
 	if _quer("QA-212"):
-		conferir("QA-212", estados.has("atendida") and (estados.has("sem_resposta") or estados.has("esperando")),
-			"nas 4 sementes, os estados vistos: %s (precisa de atendida e de sem_resposta ou esperando)" % [estados])
+		conferir("QA-212", ESTADOS_PRECE.all(func(x): return estados.has(x)),
+			"nas 4 sementes, os estados vistos: %s (precisa dos quatro)" % [estados])
 	if _quer("QA-213"):
 		_fe_tendencia_confere()
 	if _quer("QA-215"):
@@ -2113,6 +2117,8 @@ func _bloco_preces_api() -> void:
 		_preces_desempenho_confere()
 	if _quer("QA-217"):
 		_preces_nao_mudam_o_mundo()
+	if _quer("QA-218"):
+		_preces_save_antigo()
 
 
 ## QA-212: o histórico tem toda prece do mundo, uma vez, da mais nova para a mais antiga, com os campos
@@ -2124,7 +2130,7 @@ func _preces_historico_confere(m, semente: int, glifos: Dictionary, estados: Dic
 	for e in m.eventos:
 		if e.tipo == "prece_atendida":
 			resposta[int(e.dados["prece"])] = "falso_milagre" if e.dados.get("falso_milagre", false) else "atendida"
-		elif e.tipo == "prece_sem_resposta":
+		elif e.tipo in ["prece_sem_resposta", "prece_contrariada"] and int(e.dados.get("prece", -1)) >= 0:
 			resposta[int(e.dados["prece"])] = "sem_resposta"
 	var abertas := {}
 	for pr in m.preces_abertas():
@@ -2153,7 +2159,7 @@ func _preces_historico_confere(m, semente: int, glifos: Dictionary, estados: Dic
 			continue
 		var autor := int(e.participantes[0])
 		var esperado := {"autor": autor, "nome": _nome(m, autor), "grupo": e.grupo,
-			"povo": String(m.grupo(e.grupo).nome) if m.grupo(e.grupo) != null else "", "ano": e.ano, "dia": e.dia + 1,
+			"povo": String(m.grupo(e.grupo).nome) if m.grupo(e.grupo) != null else "", "ano": e.ano, "dia": e.dia,
 			"vivo": m.pessoa(autor) != null and m.pessoa(autor).vivo, "passo": _passo_do_evento(e)}
 		for k in esperado:
 			if str(p[k]) != str(esperado[k]):
@@ -2173,9 +2179,13 @@ func _preces_historico_confere(m, semente: int, glifos: Dictionary, estados: Dic
 		_problemas_do_texto("prece %d" % id, texto, glifos, achados)
 		if not achados.is_empty():
 			erros.append("prece %d: %s" % [id, achados.keys()])
-	var sem := preces.filter(func(e): return not vistos.has(e.id))
+	# as LIMITE_HISTORICO mais novas, todas
+	var mais_novas := preces.slice(maxi(0, preces.size() - LIMITE_HISTORICO))
+	var sem := mais_novas.filter(func(e): return not vistos.has(e.id))
 	if not sem.is_empty():
-		erros.append("%d preces do mundo fora do histórico (por exemplo, a %d)" % [sem.size(), sem[0].id])
+		erros.append("%d das %d preces mais novas fora do histórico (por exemplo, a %d)" % [sem.size(), mais_novas.size(), sem[0].id])
+	if h.size() != mais_novas.size():
+		erros.append("o histórico tem %d preces; esperado %d (as %d mais novas)" % [h.size(), mais_novas.size(), LIMITE_HISTORICO])
 	conferir("QA-212", erros.is_empty(), "semente %d: %d preces no histórico, %d no mundo; problemas: %d %s" % [semente, h.size(), preces.size(), erros.size(), erros.slice(0, 4)])
 
 
@@ -2238,8 +2248,9 @@ func _novas_desde_confere(m, semente: int) -> void:
 	var h: Array = m.call("preces_historico")
 	var erros := []
 	var total := int(m.call("preces_novas_desde", -1))
-	if total != h.size():
-		erros.append("desde -1: %d, o histórico tem %d" % [total, h.size()])
+	var no_mundo: int = m.eventos.filter(func(e): return e.tipo == "prece").size()
+	if total != no_mundo:
+		erros.append("desde -1: %d, o mundo tem %d preces" % [total, no_mundo])
 	if int(m.call("preces_novas_desde", m.passo)) != 0:
 		erros.append("desde o passo de agora: %d" % int(m.call("preces_novas_desde", m.passo)))
 	for k in [0, h.size() / 3, h.size() / 2]:
@@ -2259,6 +2270,12 @@ func _novas_desde_confere(m, semente: int) -> void:
 	var novas: int = m.eventos.filter(func(e): return e.tipo == "prece").size() - antes
 	if novas > 0 and int(m.call("preces_novas_desde", agora)) != novas:
 		erros.append("depois de %d dias, %d preces novas, e preces_novas_desde diz %d" % [dias, novas, int(m.call("preces_novas_desde", agora))])
+	if novas > 0:
+		# a prece que acabou de nascer está aberta: no topo do histórico, esperando (QA-212)
+		var topo: Dictionary = m.call("preces_historico")[0]
+		var aberta: bool = m.preces_abertas().any(func(pr): return int(pr["evento"]) == int(topo["evento"]))
+		_estados_preces[String(topo["estado"])] = _estados_preces.get(String(topo["estado"]), 0) + 1
+		conferir("QA-212", not aberta or topo["estado"] == "esperando", "semente %d: a prece %d, que acabou de nascer, está no topo como %s (aberta=%s)" % [semente, int(topo["evento"]), topo["estado"], aberta])
 	conferir("QA-214", erros.is_empty(), "semente %d (%d preces; %d novas em %d dias): %s" % [semente, h.size(), novas, dias, erros.slice(0, 3) if not erros.is_empty() else "contas certas"])
 
 
@@ -2297,8 +2314,55 @@ func _preces_desempenho_confere() -> void:
 	var t_novas: float = medir.call(func(): mo.call("preces_novas_desde", mo.passo - 24 * 40))
 	var gid: int = m.grupos_vivos()[0].id if not m.grupos_vivos().is_empty() else 0
 	var t_fe: float = medir.call(func(): mo.call("fe_do_povo", gid))
-	conferir("QA-216", t_hist < 10.0 and t_novas < 1.0 and t_fe < 1.0,
-		"mundo de 250 anos (%d preces): histórico %.2f ms, novas desde %.3f ms, fé do povo %.3f ms" % [m.call("preces_historico").size(), t_hist, t_novas, t_fe])
+	# o primeiro chamado depois de um evento novo remonta a lista: até 10 ms também (5 vezes, o pior)
+	var pior_remontar := 0.0
+	for k in 5:
+		var n0: int = m.eventos.size()
+		var horas := 0
+		while m.eventos.size() == n0 and horas < 24 * 40:
+			m.avancar_hora()
+			horas += 1
+		# na virada do dia, posicao_de espera a thread da rotina (75 a 100 ms neste mundo, sem quadros entre
+		# os passos; no jogo, o QA-170 confere que não espera): a espera vai antes, fora da medida
+		if not m.grupos_vivos().is_empty():
+			m.posicao_de(m.grupos_vivos()[0].membros[0])
+		var t0 := Time.get_ticks_usec()
+		m.call("preces_historico")
+		pior_remontar = maxf(pior_remontar, (Time.get_ticks_usec() - t0) / 1000.0)
+	conferir("QA-216", t_hist < 10.0 and t_novas < 1.0 and t_fe < 1.0 and pior_remontar < 10.0,
+		"mundo de 250 anos (%d preces): histórico %.3f ms (remontar depois de evento novo: pior de 5, %.2f ms), novas desde %.3f ms, fé do povo %.3f ms" % [m.call("preces_historico").size(), t_hist, pior_remontar, t_novas, t_fe])
+
+
+## QA-218: um save de antes da 0.3.0 (o do autor, sem as amostras de fé) abre com a API funcionando: o
+## termômetro de cada povo diz "estavel", com o nível da fé média, e o histórico sai sem erro.
+func _preces_save_antigo() -> void:
+	var origem := ProjectSettings.globalize_path(SAVE_AUTOR)
+	if not FileAccess.file_exists(origem):
+		pular("QA-218", "o save do autor não está em qa/save-sergio-ano3.txt")
+		return
+	var c := _caminho("save_antigo_preces")
+	_apagar_mundo(c)
+	var f := FileAccess.open(c, FileAccess.WRITE)
+	f.store_string(FileAccess.get_file_as_string(origem).replace("\r\n", "\n"))
+	f.close()
+	var tem_amostras := FileAccess.get_file_as_string(c).contains("fe_amostras")
+	var m = Persistencia.carregar(c)
+	if m == null:
+		conferir("QA-218", false, "o save do autor não carregou")
+		return
+	var leituras := []
+	var certo := true
+	var erros := _erros_em(func():
+		for g in m.grupos_vivos():
+			var fe: Dictionary = m.call("fe_do_povo", g.id)
+			leituras.append([g.id, fe.get("tendencia"), snappedf(float(fe.get("nivel", -1.0)), 0.01)])
+			if String(fe.get("tendencia", "")) != "estavel":
+				certo = false
+		m.call("preces_historico")
+		m.call("preces_novas_desde", -1))
+	conferir("QA-218", certo and erros.is_empty() and not tem_amostras and not leituras.is_empty(),
+		"save do autor (sem fe_amostras=%s): [povo, tendência, nível] = %s; erros de script: %s" % [not tem_amostras, leituras, erros.slice(0, 2)])
+	_apagar_mundo(c)
 
 
 ## QA-217: consultar a API a cada hora não muda o mundo: dois mundos da mesma semente, um consultado e
