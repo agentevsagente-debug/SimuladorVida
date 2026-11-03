@@ -25,6 +25,7 @@ const ALTURA_LINHA := 11
 const CAIXA := Rect2i(180, 3, 296, 154)   # em coordenadas do mundo (480 × 160); o mundo segue à esquerda
 const MARGEM := 8
 const LISTA_TOPO := 28                      # y da lista, dentro da caixa, abaixo da linha dos povos
+const LIMITE_PRECES := 120                  # as mais novas: num mundo longo, abrir não quebra centenas de textos
 const LINHAS_TEXTO := 2                     # as palavras da prece: até duas linhas (a terceira ganha reticências)
 const NOME_ESTADO := {"esperando": "esperando", "atendida": "atendida",
 	"falso_milagre": "atendida, mas não por você", "sem_resposta": "sem resposta"}
@@ -101,7 +102,7 @@ func _mundo():
 
 
 ## As preces, da mais nova para a mais antiga (API.md, "A caixa de preces e o termômetro de fé"):
-## {evento, autor, nome, grupo, povo, ano, dia (0 a 39), texto, estado, vivo, passo, ...}. O array do
+## {evento, autor, nome, grupo, povo, ano, dia (1 a 40), texto, estado, vivo, passo, ...}. O array do
 ## núcleo não pode ser alterado: carregar() copia cada item.
 func historico() -> Array:
 	var m = _mundo()
@@ -110,7 +111,7 @@ func historico() -> Array:
 	if falsas:
 		return _falsas()
 	if m.has_method("preces_historico"):
-		return m.preces_historico()
+		return m.preces_historico(LIMITE_PRECES)
 	# sem o núcleo novo: as preces abertas, todas esperando
 	var r: Array = []
 	for p in vista.sim.preces:
@@ -119,7 +120,7 @@ func historico() -> Array:
 		var desde := int(p["desde"])
 		r.append({"evento": int(p["evento"]), "autor": int(p["autor"]), "nome": autor.nome if autor else "?",
 			"grupo": int(p["grupo"]), "povo": g.nome if g else "", "ano": desde / Mundo.DIAS_ANO + 1,
-			"dia": desde % Mundo.DIAS_ANO, "texto": String(p.get("curto", p.get("texto", ""))),
+			"dia": desde % Mundo.DIAS_ANO + 1, "texto": String(p.get("curto", p.get("texto", ""))),
 			"estado": "esperando", "vivo": autor != null and autor.vivo, "passo": desde * Mundo.HORAS_DIA})
 	r.sort_custom(func(a, b): return a["evento"] > b["evento"])
 	return r
@@ -409,7 +410,7 @@ func _desenhar_lista(x0: int) -> void:
 			if ly >= topo - 1 and ly + ALTURA_LINHA <= fundo + 1:
 				draw_string(linhas[k][1], Vector2(x0 + linhas[k][2], ly + subida), linhas[k][0], HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		# a data, à direita da cabeça; o estado, na última linha, com um ponto da cor dele
-		var data := "Ano %d, dia %d" % [int(q.get("ano", 1)), int(q.get("dia", 0)) + 1]  # o núcleo conta o dia de 0 a 39
+		var data := "Ano %d, dia %d" % [int(q.get("ano", 1)), int(q.get("dia", 1))]  # de 1 a 40, como a crônica
 		var wd := int(escura.get_string_size(data, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
 		if y >= topo - 1 and y + ALTURA_LINHA <= fundo + 1:
 			draw_string(escura, Vector2(CAIXA.end.x - MARGEM - wd, y + subida), data, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)

@@ -297,10 +297,11 @@ func alternar_preces() -> void:
 	if _estante.visible and _estante.modo != "fim":
 		_estante.fechar()
 	_dica.visible = false
+	var t0 := Time.get_ticks_usec()
 	_preces.abrir()
 	_ler_preces()
 	_montar_botoes()
-	print("[interface] caixa de preces aberta (%d preces)" % _preces.preces.size())
+	print("[interface] caixa de preces aberta (%d preces, %.1f ms)" % [_preces.preces.size(), (Time.get_ticks_usec() - t0) / 1000.0])
 
 
 func _ler_preces() -> void:
