@@ -864,16 +864,21 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			var cab: Dictionary = vista.sim.mundo.dica_cabana(p.x) if vista.sim.mundo.has_method("dica_cabana") else {}
 			if not cab.is_empty() and not cab.get("dormem", []).is_empty():
 				var dormem: Array = cab["dormem"]
+				# o nome do povo com o termômetro, como na beirada da vila (à noite, o acampamento é quase só tenda)
+				var da_vila: Dictionary = o.get("vila", {})
+				if not da_vila.is_empty():
+					linhas.append(("O acampamento" if da_vila["estagio"] < 2 else "A vila") + " de " + String(da_vila["nome"]))
+					fe = _fe_da_vila(int(da_vila.get("id", -1)))
 				if dormem.size() <= 5:
 					linhas.append(String(cab["texto"]))
 				else:  # casa cheia: os 4 primeiros e quantos mais
 					var nomes: Array = dormem.slice(0, 4).map(func(id): return String(vista.sim.mundo.pessoa(id).nome))
 					linhas.append("Dormem aqui: %s e mais %d" % [", ".join(nomes), dormem.size() - 4])
 				if String(cab.get("sonho", "")) != "":
-					pensamento = 1
+					pensamento = linhas.size()
 					linhas.append(String(cab["sonho"]))
 				alvo = tela - Vector2(0, 4)
-				_mostrar_dica(linhas, -1, alvo, true, pensamento)
+				_mostrar_dica(linhas, -1, alvo, true, pensamento, false, false, -1, fe)
 				return
 			var z: Dictionary = o.zona
 			var vila: Dictionary = o.get("vila", {})
