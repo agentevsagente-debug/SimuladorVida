@@ -362,7 +362,9 @@ O registro original fica abaixo.
   - quando o ano 3 fecha (22 dias depois), a crônica do ano 3 passa a citá-la. O defeito que o autor vê é o do ano em curso.
 - **Povo pequeno (QA-209):** 8 sementes de 25 anos, com 5 sinais no começo de cada ano. Nos anos com 4 ou mais atos divinos, há 323 nomes de quem nasceu, casou ou morreu num povo de até 30 vivos, e **281 não aparecem** na crônica do ano. Por exemplo: o nascimento de Viraya, no ano 1 da semente 1.
 - **Povo grande (QA-210):** no mundo de 250 anos da semente 3, há 45 anos de povo grande (60 ou mais vivos) com 6 ou mais nascimentos. Em **40 deles**, a crônica do ano não dá a conta de nascidos nem de mortos. Por exemplo: o ano 193 do povo Koil, com 94 vivos, 12 nascimentos e 1 morte.
-- **O livro hoje:** 48 473 caracteres no mundo de 250 anos. Depois da correção, o QA-210 aceita até 50% a mais.
+- **O livro:** 48 473 caracteres no mundo de 250 anos, antes da correção.
+- **Decisão do orquestrador (revisável):** depois da correção, o QA-210 aceita até **85%** a mais (antes, a proposta era 50%). O autor pediu os nomes, e a A já agrupou e cortou o que dava sem perder conteúdo: na versão dela, o livro tem 87 753 caracteres, ou +81%.
+- **Tempo do testar_textos:** os 318 s da rodada de 03/11 foram disputa de máquina; a A mediu 94 s na base e 96 s com o código novo.
 - **Causa** (segundo o orquestrador): os atos do deus enchem o orçamento de frases do ano, e os casamentos e as mortes comuns de povo pequeno são zerados.
 - **Esperado** (FUN):
   - povo pequeno: cada caso com o nome, e a morte com a idade e a causa;

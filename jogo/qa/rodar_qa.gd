@@ -1838,7 +1838,7 @@ const TIPOS_DIVINOS := ["chuva_divina", "raio_divino", "fogo_divino", "fartura_d
 const POVO_PEQUENO := 30   # até 30 vivos (proposta, revisável)
 const POVO_GRANDE := 60    # 60 vivos ou mais
 ## O tamanho do livro do mundo de 250 anos da SEMENTE_LONGA na main bf311be, antes da correção:
-## o livro pode crescer até 50% (proposta, revisável).
+## o livro pode crescer até 85% (decisão do orquestrador sobre o D-20, revisável: o autor pediu os nomes).
 const LIVRO_ANTES := 48473
 const NUMEROS := ["um", "uma", "dois", "duas", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze",
 	"doze", "treze", "catorze", "quatorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte", "trinta",
@@ -1982,7 +1982,7 @@ func _vida_povo_pequeno(glifos: Dictionary, achados: Dictionary) -> void:
 ## QA-210: o povo grande do mundo de 250 anos: num ano com 6 ou mais nascimentos num povo de
 ## POVO_GRANDE vivos ou mais, a crônica do ano dá a conta (uma frase com "nasc" e um número; e com
 ## "morr" e um número, se houve mortes) e não lista todos os nomes (até 3 recém-nascidos nomeados).
-## E o livro não cresce demais: até 50% acima do tamanho de antes da correção (LIVRO_ANTES).
+## E o livro não cresce demais: até 85% acima do tamanho de antes da correção (LIVRO_ANTES).
 func _vida_povo_grande(glifos: Dictionary, achados: Dictionary) -> void:
 	var m := _mundo(SEMENTE_LONGA)
 	for a in 250:
@@ -2021,7 +2021,7 @@ func _vida_povo_grande(glifos: Dictionary, achados: Dictionary) -> void:
 	if LIVRO_ANTES < 0:
 		print("   QA-210 -- o livro do mundo de 250 anos tem %d caracteres (a medida de antes da correção)" % livro.length())
 	else:
-		conferir("QA-210", livro.length() <= LIVRO_ANTES * 1.5, "o livro do mundo de 250 anos tem %d caracteres (antes da correção: %d; limite: +50%%)" % [livro.length(), LIVRO_ANTES])
+		conferir("QA-210", livro.length() <= LIVRO_ANTES * 1.85, "o livro do mundo de 250 anos tem %d caracteres, %+.0f%% (antes da correção: %d; limite: +85%%)" % [livro.length(), 100.0 * (livro.length() - LIVRO_ANTES) / LIVRO_ANTES, LIVRO_ANTES])
 
 
 func _bloco_inspecao() -> void:
