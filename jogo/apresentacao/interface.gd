@@ -20,10 +20,12 @@ signal dica_feita(feitas: Array)
 signal som_alternar  # o botão de som e a tecla M
 signal escala_ciclo(direcao: int)  # o botão da lupa: esquerdo sobe, direito desce (dá a volta)
 signal preferencia_mudou  # o modo discreto (guardado no moldura.cfg)
+signal preces_lidas(marca: Dictionary)  # a caixa de preces abriu: a moldura guarda o passo no moldura.cfg
 
 const Arte = preload("res://apresentacao/arte.gd")
 const Simulacao = preload("res://apresentacao/simulacao.gd")
 const EstanteTela = preload("res://apresentacao/estante_tela.gd")
+const PrecesTela = preload("res://apresentacao/preces_tela.gd")
 
 const ALTURA_ALCA := 18
 const PEGA := 10          # largura da zona de arraste à esquerda
@@ -119,6 +121,12 @@ var _dicas_ligadas := false
 var _proxima_dica_em := 0.0
 var som_ligado := true            # o estado do som (a moldura manda): o ícone do botão
 var escala_atual := 2             # a escala da janela (a moldura manda): o ícone e a dica da lupa
+var _preces: Node2D               # a caixa de preces
+var preces_lida := {}             # {semente, passo, evento} da última vez que a caixa abriu (a moldura lê do cfg)
+var _preces_novas := 0            # preces que chegaram depois disso: o ponto no botão
+var _preces_conferir := 0.0
+var _dica_fe: Control             # o termômetro de fé na dica da vila
+var _dica_fe_valor := {}
 var _fila_dicas: Array = []   # os nomes ainda não feitos, na ordem em que aparecem
 var _dica_desde := 0.0        # quando a dica da frente apareceu
 
@@ -129,7 +137,7 @@ func criar(p_vista: Node2D) -> void:
 	_alca = Arte.textura("interface/alca_9s.png")
 	_botao = Arte.textura("interface/botao_3q.png")
 	for nome in PODERES + RITMOS + ["cronica", "linhagem", "esconder", "criar_povo", "estante", "som", "som_mudo",
-			"lupa", "lupa_2", "lupa_3", "lupa_4"]:
+			"lupa", "lupa_2", "lupa_3", "lupa_4", "caixa_preces", "caixa_preces_nova"]:
 		if not ResourceLoader.exists(Arte.RAIZ + "interface/icones_12/%s.png" % nome):
 			continue  # a lupa com o número só se a arte tiver
 		_icones[nome] = Arte.textura("interface/icones_12/%s.png" % nome)
@@ -148,6 +156,13 @@ func criar(p_vista: Node2D) -> void:
 	_estante.criar(self, vista)
 	_estante.abandonar.connect(_abandonar)
 	_estante.fechada.connect(_montar_botoes)
+	_preces = PrecesTela.new()
+	add_child(_preces)
+	move_child(_preces, 1)  # a dica fica por cima da caixa
+	_preces.criar(self, vista)
+	_preces.falsas = "--preces-falsas" in OS.get_cmdline_user_args() or "--preces-falsas" in OS.get_cmdline_args()
+	_preces.fechada.connect(func(): print("[interface] caixa de preces fechada"); _montar_botoes())
+	_preces.ir_ate.connect(_ir_ate)
 	if vista.sim:
 		vista.sim.eventos_novos.connect(_ao_receber_eventos)
 	_montar_botoes()
@@ -183,6 +198,10 @@ func _montar_botoes() -> void:
 	# e a lupa, o tamanho da janela (com o número da escala, se a arte tiver)
 	lista.append({"id": "lupa", "icone": "lupa_%d" % escala_atual if _icones.has("lupa_%d" % escala_atual) else "lupa",
 		"selecionado": false})
+	# a caixa de preces, ao lado da lupa, com o ponto quando chegou prece nova
+	if _icones.has("caixa_preces"):
+		lista.append({"id": "preces", "icone": "caixa_preces_nova" if _preces_novas > 0 and _icones.has("caixa_preces_nova")
+			else "caixa_preces", "selecionado": _preces.visible})
 	var antes := botoes.size()
 	botoes = []
 	for i in lista.size():
@@ -240,6 +259,8 @@ func _apertar(id: String) -> void:
 		alternar_cronica()
 	elif id == "estante":
 		alternar_estante()
+	elif id == "preces":
+		alternar_preces()
 	elif id == "linhagem":
 		vista.alternar_seguir()
 		_avisar(_texto_linhagem())
@@ -260,9 +281,60 @@ func alternar_estante() -> void:
 	else:
 		if _cronica.visible:
 			alternar_cronica()
+		_preces.fechar()
 		_dica.visible = false
 		_estante.abrir()
 	_montar_botoes()
+
+
+## A caixa de preces: abrir marca tudo como lido (o ponto some).
+func alternar_preces() -> void:
+	if _preces.visible:
+		_preces.fechar()
+		return
+	if _cronica.visible:
+		alternar_cronica()
+	if _estante.visible and _estante.modo != "fim":
+		_estante.fechar()
+	_dica.visible = false
+	_preces.abrir()
+	_ler_preces()
+	_montar_botoes()
+	print("[interface] caixa de preces aberta (%d preces)" % _preces.preces.size())
+
+
+func _ler_preces() -> void:
+	preces_lida = _preces.marca_de_leitura()
+	_preces_novas = 0
+	preces_lidas.emit(preces_lida)
+
+
+## De segundo em segundo: chegou prece nova? (com a caixa aberta, ela entra e já fica lida)
+func _conferir_preces(delta: float) -> void:
+	_preces_conferir -= delta
+	if _preces_conferir > 0.0 or vista.sim == null:
+		return
+	_preces_conferir = 1.0
+	var lida := preces_lida
+	if int(lida.get("semente", -1)) != int(vista.sim.mundo.semente):
+		lida = {}  # outro mundo: tudo o que houver é novo
+	var novas: int = _preces.novas_desde(lida)
+	if _preces.visible and novas > 0:
+		_preces.carregar()
+		_ler_preces()
+		novas = 0
+	if (novas > 0) != (_preces_novas > 0):
+		_preces_novas = novas
+		_montar_botoes()
+	_preces_novas = novas
+
+
+## Clicou numa prece: a vista aproxima e segue quem rezou.
+func _ir_ate(id: int) -> void:
+	vista.focar(id)
+	var p = vista.sim.mundo.pessoa(id)
+	var g = vista.sim.mundo.grupo(int(p.grupo)) if p else null
+	_avisar("%s, dos %s" % [p.nome, g.nome] if g else String(p.nome))
 
 
 ## Pela estante, depois da confirmação: a crônica vai para a estante e começa outro mundo.
@@ -333,6 +405,9 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 			queue_redraw()
 		if _cronica.visible:
 			return true
+		if _preces.visible and not na_alca and pos.y >= faixa:
+			_preces.tratar(event, pos - Vector2(0, faixa))
+			return true
 		if _estante.visible and _estante.modo != "fim" and not na_alca and pos.y >= faixa:
 			_estante.tratar(event, pos - Vector2(0, faixa))
 			return true
@@ -365,6 +440,9 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 				escala.emit(1)
 			elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 				escala.emit(-1)
+			return true
+		if _preces.visible and pos.y >= faixa:
+			_preces.tratar(event, pos - Vector2(0, faixa))
 			return true
 		if _estante.visible and pos.y >= faixa:
 			_estante.tratar(event, pos - Vector2(0, faixa))
@@ -411,6 +489,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 
 
 func tecla(keycode: int) -> bool:
+	if _preces.visible and keycode in [KEY_ESCAPE, KEY_UP, KEY_DOWN, KEY_PAGEUP, KEY_PAGEDOWN]:
+		return _preces.tecla(keycode)
 	if _estante.visible and keycode in [KEY_LEFT, KEY_RIGHT, KEY_PAGEUP, KEY_PAGEDOWN]:
 		return _estante.tecla(keycode)
 	match keycode:
@@ -420,6 +500,8 @@ func tecla(keycode: int) -> bool:
 			alternar_cronica()
 		KEY_E:
 			alternar_estante()
+		KEY_P:
+			alternar_preces()
 		KEY_L:
 			_apertar("linhagem")
 		KEY_M:
@@ -446,6 +528,8 @@ func tecla(keycode: int) -> bool:
 				_montar_botoes()
 			elif _cronica.visible:
 				alternar_cronica()
+			elif vista.foco >= 0:
+				vista.foco = -1
 			elif poder != "" or _carregando:
 				_carregando = false
 				poder = ""
@@ -599,6 +683,7 @@ func _cabeca_seguida() -> Vector2:
 func avancar(delta: float) -> void:
 	_relogio += delta
 	_refazer_dica(delta)
+	_conferir_preces(delta)
 	if not _citados.is_empty() or (_dica.visible and not _alvos_da_prece.is_empty()) or poder == "cura" \
 			or not _sonhou.is_empty():
 		queue_redraw()  # o ponto dourado acompanha quem anda; a seta do fogo pulsa
@@ -686,6 +771,12 @@ func _criar_dica() -> void:
 	_dica_linhagem.texture = _icones["linhagem_8"]
 	_dica_linhagem.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_dica.add_child(_dica_linhagem)
+	_dica_fe = Control.new()
+	_dica_fe.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_dica_fe.size = Vector2(36, 7)
+	_dica_fe.draw.connect(func(): PrecesTela.desenhar_termometro(_dica_fe, Vector2i(0, 1),
+		float(_dica_fe_valor.get("nivel", 0.5)), float(_dica_fe_valor.get("tendencia", 0.0))))
+	_dica.add_child(_dica_fe)
 	_dica_bico = TextureRect.new()
 	_dica_bico.texture = Arte.textura("interface/dica_ponteiro.png")
 	_dica_bico.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -702,6 +793,7 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	var pensamento := -1  # a linha do pensamento, se houver
 	var leve := -1        # uma linha em lilás, sem o balãozinho (a resposta da prece)
 	var linhagem := false
+	var fe := {}
 	_dica_ponto = []
 	_citados = []
 	_alvos_da_prece = []
@@ -787,6 +879,7 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 			var vila: Dictionary = o.get("vila", {})
 			if not vila.is_empty():  # sobre o acampamento ou a vila, o nome dela vem antes da zona
 				linhas.append(("O acampamento" if vila["estagio"] < 2 else "A vila") + " de " + String(vila["nome"]))
+				fe = _fe_da_vila(int(vila.get("id", -1)))
 				linhas.append(NOME_ZONA.get(z["chave"], z["nome"]).to_lower())
 			else:
 				linhas.append(NOME_ZONA.get(z["chave"], z["nome"]))
@@ -808,7 +901,15 @@ func _atualizar_dica(p: Vector2, tela: Vector2) -> void:
 	if _mundo_vazio() and o.get("tipo", "") != "pessoa":  # junto do cursor também (auditoria 12, V4)
 		linhas.append("Clique para fazer nascer um povo aqui")
 		alvo = tela - Vector2(0, 4)
-	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem, leve)
+	_mostrar_dica(linhas, icone, alvo, true, pensamento, not _dica_ponto.is_empty(), linhagem, leve, fe)
+
+
+## O termômetro da vila, se o povo reza (quem não reza fica no ponto cego, como na caixa).
+func _fe_da_vila(gid: int) -> Dictionary:
+	var g = vista.sim.mundo.grupo(gid) if gid >= 0 else null
+	if g == null or not (g.tem_crenca or _preces.falsas):
+		return {}
+	return _preces.fe(gid)
 
 
 ## Quem, entre as pessoas na tela, o pensamento cita pelo nome (menos a própria).
@@ -851,13 +952,19 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 		nome = {"poderes": "Poderes", "ritmo": "Ritmo do tempo", "cronica": "Crônica (C)",
 			"criar_povo": "Criar um povo novo", "estante": "Estante de crônicas (E)",
 			"linhagem": "Seguir a linhagem (L)", "esconder": "Esconder (H)", "som": "Som (M)"}.get(id, "")
+	if id == "preces":
+		var linhas := ["Preces (P)"]
+		if _preces_novas > 0:
+			linhas.append("1 prece nova" if _preces_novas == 1 else "%d preces novas" % _preces_novas)
+		_mostrar_dica(linhas, -1, canto + Vector2(4, 22), false)
+		return
 	_mostrar_dica([nome], -1, canto + Vector2(4, 22), false)
 
 
 ## `pensamento`: a linha que vai na cor do pensamento, com o balãozinho ao lado.
 ## `de_pessoa`: sem lugar acima, a dica vai para o lado, sem cobrir quem ela descreve.
 func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pensamento := -1,
-		de_pessoa := false, linhagem := false, leve := -1) -> void:
+		de_pessoa := false, linhagem := false, leve := -1, fe := {}) -> void:
 	if linhas.is_empty():
 		_dica.visible = false
 		_citados = []
@@ -894,9 +1001,16 @@ func _mostrar_dica(linhas: Array, icone: int, perto: Vector2, acima := true, pen
 		if i == 0 and linhagem:  # o ícone da linhagem (8 × 8) logo depois do nome
 			_dica_linhagem.position = Vector2(5 + tamanho.x + 3, y + 1)
 			tamanho.x += 11
+		if i == 0 and not fe.is_empty():  # o termômetro de fé logo depois do nome da vila
+			_dica_fe.position = Vector2(5 + tamanho.x + 4, y + 1)
+			tamanho.x += 40
 		y += int(tamanho.y)
 		w = maxi(w, int(tamanho.x) + recuo)
 	_dica_linhagem.visible = linhagem
+	_dica_fe.visible = not fe.is_empty()
+	if not fe.is_empty() and fe != _dica_fe_valor:
+		_dica_fe_valor = fe
+		_dica_fe.queue_redraw()
 	var extra := 0
 	_dica_icone.visible = icone >= 0
 	if icone >= 0:
