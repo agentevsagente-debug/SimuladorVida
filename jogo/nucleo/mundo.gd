@@ -302,6 +302,7 @@ func avancar_hora() -> void:
 		_cronista.processar_ate(ano() - 2)
 		if _cronista.ultimo_ano_escrito < ano() - 1:
 			_cronista.comecar_ano()
+		_amostrar_fe()
 	elif h == 2 and dia_do_ano() == 0:
 		_cronista.terminar_ano()
 	if h == 3 and arquivar:
@@ -4574,6 +4575,159 @@ func preces_abertas() -> Array:
 	_preces = r
 	_preces_chave = chave
 	return r
+
+
+# ---------------------------------------------------------------- a caixa de preces (03/11/2026)
+
+## O passo em que um evento aconteceu (passo = hora absoluta do mundo).
+func passo_de(e: Evento) -> int:
+	return ((e.ano - 1) * DIAS_ANO + e.dia) * HORAS_DIA + e.hora
+
+
+var _historico_chave: Array = []   # [eventos, limite]: a lista só muda com evento novo
+var _historico: Array = []
+var _historico_passo: int = -1      # o passo do último x (a posição de quem rezou muda a cada passo)
+
+
+## As preces do povo ao deus, das mais novas para as mais antigas, as resolvidas também (a caixa
+## de preces). Só as que ainda estão na memória do mundo (as arquivadas em antigos.gd ficam de
+## fora). Cada item:
+## - `evento`, `grupo`, `nome_povo` (e `povo`, o mesmo), `autor`, `nome_autor` (e `nome`), `alvo`
+##   (-1 se a prece não é por alguém), `necessidade`;
+## - `ano`, `dia` (0 a 39, como nos eventos), `hora`, `passo` (quando chegou);
+## - `texto` (nas palavras de quem rezou, como texto_prece) e `curto`;
+## - `estado`: "esperando" (ainda aberta), "atendida" (o deus respondeu), "falso_milagre" (o povo
+##   achou que foi o deus, mas foi o acaso), "sem_resposta" (passou o tempo, ou o deus fez o
+##   contrário: aí `contrariada` é true);
+## - `x`: onde está quem rezou, se vive (-1 se morreu); `vivo`.
+## A lista é montada quando chega evento novo; a cada passo, só o `x` de quem vive é refeito.
+func preces_historico(limite: int = 50) -> Array:
+	var chave := [eventos.size(), limite]
+	if chave == _historico_chave:
+		if _historico_passo != passo:
+			for it in _historico:
+				if it["vivo"]:
+					it["x"] = posicao_de(it["autor"])
+			_historico_passo = passo
+		return _historico
+	var lista: Array = do_tipo("prece")
+	var escolhidas: Array = []
+	var i := lista.size() - 1
+	while i >= 0 and escolhidas.size() < limite:
+		escolhidas.append(lista[i])
+		i -= 1
+	var r: Array = []
+	if not escolhidas.is_empty():
+		var mais_antiga: int = escolhidas[-1].id
+		# A resposta de cada prece: só as respostas depois da prece mais antiga da lista.
+		var resposta := {}
+		for tipo in ["prece_sem_resposta", "prece_contrariada", "prece_atendida"]:
+			var rs: Array = do_tipo(tipo)
+			var k := rs.size() - 1
+			while k >= 0 and rs[k].id > mais_antiga:
+				var pid: int = rs[k].dados.get("prece", -1)
+				if pid >= 0:
+					resposta[pid] = rs[k]
+				k -= 1
+		var abertas := {}
+		for g in grupos_vivos():
+			for nec in g.preces:
+				abertas[g.preces[nec]["evento"]] = true
+		for e in escolhidas:
+			var estado := "sem_resposta"
+			var contrariada := false
+			if abertas.has(e.id):
+				estado = "esperando"
+			elif resposta.has(e.id):
+				var rr: Evento = resposta[e.id]
+				if rr.tipo == "prece_atendida":
+					estado = "falso_milagre" if rr.dados.get("falso_milagre", false) else "atendida"
+				elif rr.tipo == "prece_contrariada":
+					contrariada = true
+			if not _textos_prece.has(e.id):
+				_textos_prece[e.id] = [_cronista.texto_prece(e), _cronista.texto_curto(e)]
+			var autor: int = e.participantes[0]
+			var p: Pessoa = pessoas.get(autor)
+			var g: Grupo = grupo(e.grupo)
+			var nome_povo: String = g.nome if g != null else ""
+			var nome_autor: String = p.nome if p != null else ""
+			var vivo: bool = p != null and p.vivo
+			r.append({"evento": e.id, "grupo": e.grupo, "nome_povo": nome_povo, "povo": nome_povo,
+				"autor": autor, "nome_autor": nome_autor, "nome": nome_autor, "alvo": e.dados.get("alvo", -1),
+				"necessidade": e.dados.get("necessidade", ""), "ano": e.ano, "dia": e.dia, "hora": e.hora,
+				"passo": passo_de(e), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1],
+				"estado": estado, "contrariada": contrariada, "x": posicao_de(autor) if vivo else -1.0, "vivo": vivo})
+	_historico = r
+	_historico_chave = chave
+	_historico_passo = passo
+	return r
+
+
+## Quantas preces chegaram depois do passo `desde` (o ponto de "não lida" no botão da caixa).
+func preces_novas_desde(desde: int) -> int:
+	var lista: Array = do_tipo("prece")
+	var n := 0
+	var i := lista.size() - 1
+	while i >= 0 and passo_de(lista[i]) > desde:
+		n += 1
+		i -= 1
+	return n
+
+
+## A fé média de cada povo na virada de cada ano: id do grupo -> [[ano, média], ...] (as duas
+## últimas). Salva com o mundo; um mundo salvo antes dela vem sem amostras.
+var fe_amostras: Dictionary = {}
+## Quanto a média tem de mudar em um ano para o termômetro dizer que sobe ou desce.
+const FE_TENDENCIA := 0.05
+
+
+func _media_fe(g: Grupo) -> float:
+	if g.membros.is_empty():
+		return 0.0
+	var s := 0.0
+	for id in g.membros:
+		s += pessoas[id].fe
+	return s / g.membros.size()
+
+
+## Na virada do ano: guarda a fé média de cada povo vivo.
+func _amostrar_fe() -> void:
+	var a := ano()
+	for g in grupos_vivos():
+		var l: Array = fe_amostras.get(g.id, [])
+		if not l.is_empty() and l[-1][0] == a:
+			continue
+		l.append([a, _media_fe(g)])
+		if l.size() > 2:
+			l.pop_front()
+		fe_amostras[g.id] = l
+
+
+## O termômetro de fé de um povo: `media` (-1 a 1, a fé média dos vivos), `nivel` (o mesmo de 0
+## a 1), `tendencia` ("sobe", "desce" ou "estavel", contra a média de cerca de um ano atrás: a da
+## virada do ano anterior) e `variacao` (a diferença, de -2 a 2). Sem a amostra de um ano atrás (um
+## povo novo, um mundo salvo antes do termômetro), "estavel" e 0. {} se o povo não existe.
+func fe_do_povo(gid: int) -> Dictionary:
+	var g := grupo(gid)
+	if g == null:
+		return {}
+	var media := _media_fe(g)
+	var variacao := 0.0
+	# A amostra de cerca de um ano atrás: a da virada deste ano, se já vai pela metade dele; senão,
+	# a do ano anterior (entre meio ano e um ano e meio).
+	var quer: int = ano() if dia_do_ano() >= DIAS_ANO / 2 else ano() - 1
+	var antes = null
+	for s in fe_amostras.get(gid, []):
+		if s[0] == quer:
+			antes = s
+	if antes != null:
+		variacao = media - float(antes[1])
+	var tendencia := "estavel"
+	if variacao >= FE_TENDENCIA:
+		tendencia = "sobe"
+	elif variacao <= -FE_TENDENCIA:
+		tendencia = "desce"
+	return {"media": media, "nivel": (media + 1.0) * 0.5, "tendencia": tendencia, "variacao": variacao}
 
 
 ## Camada de atenção de um evento: "ambiente", "nota" ou "chamado".
