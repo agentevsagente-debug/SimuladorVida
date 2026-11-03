@@ -37,7 +37,7 @@
     "clique atravessa":  {
                              "ok":  true,
                              "interferencia":  false,
-                             "detalhe":  "cliques recebidos pelo alvo: 1 (tentativas: 2)"
+                             "detalhe":  "cliques recebidos pelo alvo: 1 (tentativas: 1)"
                          },
     "clique chega ao mundo":  {
                                   "ok":  true,
@@ -52,12 +52,12 @@
     "gesto do poder (raio)":  {
                                   "ok":  true,
                                   "interferencia":  false,
-                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 2, \"zona\": \"floresta\", \"alvo\": -1, \"som\": { \"som\": \"trovao\", \"x\": 300.0, \"intensidade\": 0.8 } } (tentativas: 1, 1, 2)"
+                                  "detalhe":  "[interface] poder raio em x=300 intensidade=0.75 -\u003e { \"ok\": true, \"grau\": \"milagre\", \"evento\": 1, \"zona\": \"floresta\", \"alvo\": -1, \"som\": { \"som\": \"trovao\", \"x\": 300.0, \"intensidade\": 0.8 } } (tentativas: 1, 1, 1)"
                               },
     "arrastar":  {
                      "ok":  true,
                      "interferencia":  false,
-                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px (tentativas: 2)"
+                     "detalhe":  "deslocou (120, 60), esperado (120, 60) +- 2 px (tentativas: 1)"
                  },
     "roda na alca (3x)":  {
                               "ok":  true,
@@ -79,6 +79,11 @@
                                "interferencia":  false,
                                "detalhe":  "4x pelo clique, 3x pelo botÃ£o direito (tentativas: 1, 1)"
                            },
+    "preces: abre e fecha":  {
+                                 "ok":  true,
+                                 "interferencia":  false,
+                                 "detalhe":  "pelo botÃ£o e pelo botÃ£o direito (tentativas: 1, 1)"
+                             },
     "esconder (botao)":  {
                              "ok":  true,
                              "interferencia":  false,
@@ -87,7 +92,7 @@
     "mostrar (barra tarefas)":  {
                                     "ok":  true,
                                     "interferencia":  false,
-                                    "detalhe":  "janela de volta em (428, 178) 1440x534"
+                                    "detalhe":  "janela de volta em (320, 178) 1440x534"
                                 },
     "passagem apos mostrar":  {
                                   "ok":  true,

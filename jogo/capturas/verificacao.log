@@ -2,28 +2,27 @@ Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
 OpenGL API 3.3.0 NVIDIA 610.62 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
 
 [simulacao] novo ano=1 dia=1 hora=7 passo=7 ausencia=0 passos
-[vista] semente=2759955531 mundo novo
-[1.5] pasta de dados=C:/Users/sergi/AppData/Roaming/Simulador de vida
-[1.5] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
-[1.5] bandeja: dpi=144 ícone 24 px
-[1.5] alca largura=218
-[1.5] escala=2x janela=(960, 356)
-[vista] clique no mundo (364.0, 5.0)
-[vista] clique no mundo (245.0, 47.0)
+[vista] semente=328262485 mundo novo
+[1.6] pasta de dados=C:/Users/sergi/AppData/Roaming/Godot/app_userdata/Simulador de vida
+[1.6] renderizador=opengl3 adaptador=NVIDIA GeForce RTX 4070 Laptop GPU dpi=144
+[1.7] bandeja: dpi=144 ícone 24 px
+[1.7] alca largura=235
+[1.7] escala=2x janela=(960, 356)
+[vista] clique no mundo (240.0, 42.0)
 [vista] clique no mundo (240.0, 152.0)
-[6.3] alca largura=388
+[5.4] alca largura=405
 [interface] poder escolhido: raio
-[7.3] alca largura=218
-[interface] poder raio em x=300 intensidade=0.20 -> { "ok": true, "grau": "sinal", "evento": 1, "zona": "floresta", "alvo": -1, "som": { "som": "trovao", "x": 300.0, "intensidade": 0.5 } }
-[interface] poder raio em x=300 intensidade=0.75 -> { "ok": true, "grau": "milagre", "evento": 2, "zona": "floresta", "alvo": -1, "som": { "som": "trovao", "x": 300.0, "intensidade": 0.8 } }
+[6.4] alca largura=235
+[interface] poder raio em x=300 intensidade=0.75 -> { "ok": true, "grau": "milagre", "evento": 1, "zona": "floresta", "alvo": -1, "som": { "som": "trovao", "x": 300.0, "intensidade": 0.8 } }
 [interface] poder escolhido: nenhum
-[15.2] arrastada pos=(308, 254)
-[16.2] arrastada pos=(428, 314)
-[16.8] escala=3x janela=(1440, 534)
-[17.8] som ligado
-[18.8] som desligado
-[19.7] escala=4x janela=(1920, 712)
-[20.7] escala=3x janela=(1440, 534)
-[21.7] escondida
-[23.2] restaurada pela barra de tarefas? modo=0
-[23.2] visivel
+[12.0] arrastada pos=(320, 260)
+[12.7] escala=3x janela=(1440, 534)
+[13.6] som ligado
+[14.6] som desligado
+[15.6] escala=4x janela=(1920, 712)
+[16.6] escala=3x janela=(1440, 534)
+[interface] caixa de preces aberta (0 preces)
+[interface] caixa de preces fechada
+[19.5] escondida
+[21.4] restaurada pela barra de tarefas? modo=0
+[21.5] visivel
