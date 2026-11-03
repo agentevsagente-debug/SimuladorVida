@@ -250,7 +250,7 @@ Todos os elementos são legíveis em 1x. `amostra_interface_4x.png` mostra a al�
 |---|---|
 | Poderes | `chuva`, `raio`, `fogo`, `fartura`, `erguer_terra`, `sonho`; e os da fase 2: `seca` (sol e chão rachado), `diluvio` (chuva pesada e ondas), `terremoto` (fenda no chão), `pressagio` (cometa), `cura` (coração com brilhos verdes) |
 | Tempo | `pausa`, `normal`, `rapido`, `rapido2` (três setas, para o ritmo de 50x), `salto` |
-| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio), `som` e `som_mudo` (o botão de som no fim da alça, da 0.2: o alto-falante com duas ondas e o alto-falante com um X vermelho); `lupa` (o botão do tamanho da janela, o mesmo que Ctrl+2, 3 e 4: uma lente com cabo) e, só em 12 × 12, `lupa_2`, `lupa_3` e `lupa_4` (a lente com o número da escala atual dentro; em 8 × 8 o número não fica legível, então use a `lupa` sem número) |
+| Outros | `cronica` (livro aberto), `linhagem` (árvore de família), `esconder` (minimizar), `estante` (estante de livros, para a estante de crônicas), `criar_povo` (um adulto e uma criança sob uma estrela, para o mundo vazio), `som` e `som_mudo` (o botão de som no fim da alça, da 0.2: o alto-falante com duas ondas e o alto-falante com um X vermelho); `lupa` (o botão do tamanho da janela, o mesmo que Ctrl+2, 3 e 4: uma lente com cabo) e, só em 12 × 12, `lupa_2`, `lupa_3` e `lupa_4` (a lente com o número da escala atual dentro; em 8 × 8 o número não fica legível, então use a `lupa` sem número); `caixa_preces` e `caixa_preces_nova` (o botão da caixa de preces, ao lado da lupa: uma urna de madeira com um pedido entrando pela fenda e duas faíscas subindo; a `_nova` é a mesma com um ponto vermelho no canto de cima, para prece nova não lida) |
 
 Os ícones foram desenhados para o fundo escuro da alça.
 
@@ -263,6 +263,19 @@ Os ícones foram desenhados para o fundo escuro da alça.
 | `dica_ponteiro.png` | 6 × 3 | | bico da dica, apontando para baixo; vai colado na borda de baixo |
 | `alca_9s.png` | 12 × 12 | 4 px | fundo da alça, madeira escura |
 | `botao_3q.png` | 3 quadros de 16 × 16 | | botão normal, com o cursor por cima e selecionado (borda dourada). O ícone de 12 × 12 vai em (2, 2). |
+
+**Termômetro de fé** (um por povo, na caixa de preces e na dica da vila; sem número):
+
+| Arquivo | Tamanho | Uso |
+|---|---|---|
+| `termometro_fe_tubo.png` | 6 × 14 | o tubo vazio: contorno escuro, vidro claro e o bulbo embaixo (linhas 9 a 13) |
+| `termometro_fe_cheio.png` | 6 × 14 | o preenchimento, só onde há vidro, na mesma posição do tubo: azul embaixo (frio), verde-água no meio e laranja e vermelho em cima (quente). Desenhe por cima do tubo e recorte pela altura, de baixo para cima. |
+| `termometro_fe_sobe.png` | 5 × 5 | a tendência esquentando: triângulo laranja para cima |
+| `termometro_fe_desce.png` | 5 × 5 | a tendência esfriando: triângulo azul para baixo |
+
+- **O recorte:** com a fé de 0 a 1, mostre as linhas de `topo` a 13, com `topo = 9 - round(fé × 8)`. Assim o bulbo fica sempre cheio de azul (o povo sem fé ainda tem o termômetro "frio", não vazio) e a fé toda chega à linha 1, a ponta vermelha.
+- **A seta:** vai à direita do tubo, 1 px abaixo do topo dele (na maquete, em (x + 7, y + 1)). Sem tendência, não ponha seta.
+- O contorno escuro lê no pergaminho e o vidro claro lê na dica escura: o mesmo par de peças serve nos dois lugares.
 
 **Ícone do jogo**, para a bandeja e a barra de tarefas: `icone_jogo_16.png`, `icone_jogo_32.png`, `icone_jogo_256.png` e `icone_jogo.ico`.
 - O 16 e o 32 foram desenhados à mão, cada um com o seu desenho, para ler bem em 1x. O 256 é o 32 ampliado 8 vezes, sem suavização.
