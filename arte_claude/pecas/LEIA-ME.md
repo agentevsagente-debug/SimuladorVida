@@ -270,7 +270,7 @@ Os ícones foram desenhados para o fundo escuro da alça.
 |---|---|---|
 | `termometro_fe_tubo.png` | 6 × 14 | o tubo vazio: contorno escuro, vidro claro e o bulbo embaixo (linhas 9 a 13) |
 | `termometro_fe_cheio.png` | 6 × 14 | o preenchimento, só onde há vidro, na mesma posição do tubo: azul embaixo (frio), verde-água no meio e laranja e vermelho em cima (quente). Desenhe por cima do tubo e recorte pela altura, de baixo para cima. |
-| `termometro_fe_sobe.png` | 5 × 5 | a tendência esquentando: triângulo laranja para cima |
+| `termometro_fe_sobe.png` | 5 × 5 | a tendência esquentando: triângulo vermelho para cima, com a ponta laranja (o laranja sozinho sumia no pergaminho) |
 | `termometro_fe_desce.png` | 5 × 5 | a tendência esfriando: triângulo azul para baixo |
 
 - **O recorte:** com a fé de 0 a 1, mostre as linhas de `topo` a 13, com `topo = 9 - round(fé × 8)`. Assim o bulbo fica sempre cheio de azul (o povo sem fé ainda tem o termômetro "frio", não vazio) e a fé toda chega à linha 1, a ponta vermelha.
