@@ -4590,18 +4590,18 @@ var _historico_passo: int = -1      # o passo do último x (a posição de quem 
 
 
 ## As preces do povo ao deus, das mais novas para as mais antigas, as resolvidas também (a caixa
-## de preces). Só as que ainda estão na memória do mundo (as arquivadas em antigos.gd ficam de
+## de preces): todas, ou as `limite` mais novas. Só as que ainda estão na memória do mundo (as arquivadas em antigos.gd ficam de
 ## fora). Cada item:
 ## - `evento`, `grupo`, `nome_povo` (e `povo`, o mesmo), `autor`, `nome_autor` (e `nome`), `alvo`
 ##   (-1 se a prece não é por alguém), `necessidade`;
-## - `ano`, `dia` (0 a 39, como nos eventos), `hora`, `passo` (quando chegou);
+## - `ano`, `dia` (1 a 40, como a crônica escreve: o `dia` do evento + 1), `hora`, `passo` (quando chegou);
 ## - `texto` (nas palavras de quem rezou, como texto_prece) e `curto`;
 ## - `estado`: "esperando" (ainda aberta), "atendida" (o deus respondeu), "falso_milagre" (o povo
 ##   achou que foi o deus, mas foi o acaso), "sem_resposta" (passou o tempo, ou o deus fez o
 ##   contrário: aí `contrariada` é true);
 ## - `x`: onde está quem rezou, se vive (-1 se morreu); `vivo`.
 ## A lista é montada quando chega evento novo; a cada passo, só o `x` de quem vive é refeito.
-func preces_historico(limite: int = 50) -> Array:
+func preces_historico(limite: int = -1) -> Array:
 	var chave := [eventos.size(), limite]
 	if chave == _historico_chave:
 		if _historico_passo != passo:
@@ -4613,7 +4613,7 @@ func preces_historico(limite: int = 50) -> Array:
 	var lista: Array = do_tipo("prece")
 	var escolhidas: Array = []
 	var i := lista.size() - 1
-	while i >= 0 and escolhidas.size() < limite:
+	while i >= 0 and (limite < 0 or escolhidas.size() < limite):
 		escolhidas.append(lista[i])
 		i -= 1
 	var r: Array = []
@@ -4654,7 +4654,7 @@ func preces_historico(limite: int = 50) -> Array:
 			var vivo: bool = p != null and p.vivo
 			r.append({"evento": e.id, "grupo": e.grupo, "nome_povo": nome_povo, "povo": nome_povo,
 				"autor": autor, "nome_autor": nome_autor, "nome": nome_autor, "alvo": e.dados.get("alvo", -1),
-				"necessidade": e.dados.get("necessidade", ""), "ano": e.ano, "dia": e.dia, "hora": e.hora,
+				"necessidade": e.dados.get("necessidade", ""), "ano": e.ano, "dia": e.dia + 1, "hora": e.hora,
 				"passo": passo_de(e), "texto": _textos_prece[e.id][0], "curto": _textos_prece[e.id][1],
 				"estado": estado, "contrariada": contrariada, "x": posicao_de(autor) if vivo else -1.0, "vivo": vivo})
 	_historico = r

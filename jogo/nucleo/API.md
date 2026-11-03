@@ -479,9 +479,9 @@ Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o po
 
 ### A caixa de preces e o termômetro de fé (03/11/2026)
 
-`preces_historico(limite := 50) -> Array[Dictionary]` devolve as preces do povo, das mais novas para as mais antigas, inclusive as já resolvidas. Entram só as que ainda estão na memória do mundo: as arquivadas em `antigos.gd` ficam de fora. Só povos que rezam fazem prece, então o ponto cego fica de fora sozinho. Cada item tem:
+`preces_historico(limite := -1) -> Array[Dictionary]` devolve as preces do povo, das mais novas para as mais antigas, inclusive as já resolvidas: todas, ou só as `limite` mais novas. Entram só as que ainda estão na memória do mundo: as arquivadas em `antigos.gd` ficam de fora. Só povos que rezam fazem prece, então o ponto cego fica de fora sozinho. Cada item tem:
 - `evento`, `grupo`, `nome_povo` (e `povo`, o mesmo), `autor`, `nome_autor` (e `nome`, o mesmo), `alvo` (-1 quando a prece não é por alguém) e `necessidade`;
-- `ano`, `dia` (de 0 a 39, como nos eventos), `hora` e `passo` (o passo em que a prece chegou);
+- `ano`, `dia` (de 1 a 40, como a crônica escreve, ou seja, o `dia` do evento + 1), `hora` e `passo` (o passo em que a prece chegou);
 - `texto`, nas palavras de quem rezou (o mesmo de `texto_prece`), e `curto`;
 - `estado`:
   - "esperando": a prece ainda está aberta e aparece em `preces_abertas()`;
@@ -492,7 +492,7 @@ Um povo sem crença, ou cético, não reza e por isso não aparece aqui. É o po
 
 A lista é montada quando chega evento novo; a cada passo, só o `x` de quem vive é refeito. Chamar de novo no mesmo passo devolve o mesmo array, que não deve ser alterado. Custo num mundo de 247 pessoas: 0,05 ms de mediana e 0,14 ms de média no primeiro chamado do passo. Quando chega evento novo e a lista é remontada, chega a uns 3 ms.
 
-`preces_novas_desde(passo) -> int` diz quantas preces chegaram depois desse passo. Serve para o ponto de "não lida": a apresentação guarda o `mundo.passo` da última vez que a caixa abriu. `passo_de(evento) -> int` dá o passo de qualquer evento.
+`preces_novas_desde(passo) -> int` diz quantas preces chegaram depois desse passo (`preces_novas_desde(-1)` é o tamanho do histórico). Serve para o ponto de "não lida": a apresentação guarda o `mundo.passo` da última vez que a caixa abriu. `passo_de(evento) -> int` dá o passo de qualquer evento.
 
 `fe_do_povo(grupo_id) -> Dictionary` é o termômetro, ou `{}` se o povo não existe:
 - `media`: a fé média dos vivos, de -1 a 1;
