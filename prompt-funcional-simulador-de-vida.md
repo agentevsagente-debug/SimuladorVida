@@ -290,6 +290,18 @@ A crônica não conta só os atos do deus. Nascimentos, casamentos e mortes do p
 - **Povo grande:** a crônica dá a conta do ano por povo, como "nasceram doze crianças e morreram cinco". Ela nomeia só os casos notáveis: o primeiro filho, gêmeos, a morte do líder ou do sacerdote e casamentos entre povos.
 - **Os atos do deus não ocupam o lugar da vida.** A vida do povo tem uma linha própria em cada ano e não disputa espaço com os atos do deus.
 
+### A caixa de preces e o termômetro de fé (pedido do autor em 03/11/2026)
+
+- **Caixa de preces:** um botão na alça, ao lado da lupa, abre uma caixa com as preces do povo ao deus, das mais novas para as mais antigas.
+  - Cada prece mostra quem pediu, o povo, quando e o pedido nas palavras da pessoa, por exemplo: "Que a chuva volte antes da colheita".
+  - Cada prece mostra também o estado: esperando, atendida (inclusive o falso milagre: "atendida, mas não por você") ou sem resposta.
+  - Clicar numa prece leva a vista até quem rezou.
+  - O botão mostra um ponto discreto quando chega prece nova não lida.
+  - Grupos que não rezam continuam fora da caixa: o ponto cego permanece.
+- **Termômetro de fé (decisão tomada por coerência, revisável):** a fé continua sendo de cada pessoa. A caixa de preces mostra, por povo, um termômetro pequeno, sem número, com a fé média do povo e a tendência (esquentando ou esfriando).
+  - Não há medidor global fixo na tela.
+  - O termômetro também aparece ao passar o cursor sobre a vila.
+
 ### O fogo brando atende o frio
 
 Nenhum poder atendia a prece de frio. O fogo em intensidade baixa acende as fogueiras e aquece, sem queimar; em intensidade média ou alta, continua queimando. Não é um poder novo: é a intensidade que o gesto já tem.
