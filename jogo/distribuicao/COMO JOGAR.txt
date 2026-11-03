@@ -29,10 +29,25 @@ O GESTO DO PODER
 Passe o cursor sobre as pessoas para ver quem são, o que fazem e o que
 pensam. Passe sobre um sinal de luz para ver uma prece.
 
+A CAIXA DE PRECES
+-----------------
+No fim da alça, depois da lupa, fica a caixa de preces. Um ponto nela
+avisa que chegou prece nova desde a última vez que você abriu a caixa.
+Ela mostra as preces do povo, das mais novas para as mais antigas: quem
+pediu, de que povo, quando, o pedido e se a prece ainda espera, foi
+atendida, foi "atendida, mas não por você" (o povo achou que foi você)
+ou ficou sem resposta. Quem não reza não aparece ali.
+Clique numa prece para a vista ir até quem rezou. A roda do mouse rola
+a lista; Esc, o botão direito ou um clique fora fecham a caixa.
+No topo, cada povo tem um termômetro de fé, sem número: a cor diz quanto
+o povo crê, e a seta diz se a fé esquenta ou esfria. O mesmo termômetro
+aparece quando você passa o cursor sobre a vila.
+
 TECLAS
 ------
   C    crônica do mundo (setas para cima e para baixo trocam de capítulo)
   E    estante com os livros dos mundos que você deixou
+  P    caixa de preces
   L    seguir a família que você acompanha
   D    modo discreto (o pior fica só na crônica, sem ser mostrado)
   H    esconder a janela

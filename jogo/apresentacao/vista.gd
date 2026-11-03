@@ -75,6 +75,9 @@ const ALCANCE_PESSOA := 3.0  # px em volta da figura que ainda contam como "sobr
 var sim: Simulacao
 var modo_discreto := false
 var seguindo := false        # a câmera aproxima e segue a pessoa acompanhada
+var foco := -1               # a caixa de preces levou a vista até esta pessoa (por FOCO_SEGUNDOS)
+var _foco_ate := 0.0
+const FOCO_SEGUNDOS := 20.0
 var zoom := 1
 var camera := Vector2.ZERO   # canto de cima à esquerda da área vista, em pixels do mundo
 var figuras: Array = []      # o que foi desenhado neste quadro, para a dica do cursor
@@ -337,7 +340,7 @@ func objeto_em(p: Vector2) -> Dictionary:
 	return {}
 
 
-## O povo cuja vila (fogueira ou construção) está a até 24 px de x: {nome, estagio}, ou {}.
+## O povo cuja vila (fogueira ou construção) está a até 24 px de x: {nome, estagio, id}, ou {}.
 func _vila_em(x: float) -> Dictionary:
 	var perto := 24.0
 	var grupo := -1
@@ -348,12 +351,13 @@ func _vila_em(x: float) -> Dictionary:
 			grupo = int(o["grupo"])
 	for g in sim.grupos:
 		if g["id"] == grupo:
-			return {"nome": g.get("nome", ""), "estagio": int(g.get("estagio", 1))}
+			return {"nome": g.get("nome", ""), "estagio": int(g.get("estagio", 1)), "id": grupo}
 	return {}
 
 
 func clicar(ponto_tela: Vector2) -> void:
 	print("[vista] clique no mundo %s" % para_mundo(ponto_tela).round())
+	foco = -1
 	var o := objeto_em(para_mundo(ponto_tela))
 	if o.get("tipo", "") == "pessoa":
 		pessoa_clicada.emit(o.pessoa["id"])
@@ -361,6 +365,14 @@ func clicar(ponto_tela: Vector2) -> void:
 
 func alternar_seguir() -> void:
 	seguindo = not seguindo
+	foco = -1
+
+
+## A caixa de preces: a vista aproxima e segue quem rezou por um tempo (um clique
+## no mundo ou o Esc a devolvem antes).
+func focar(id: int) -> void:
+	foco = id
+	_foco_ate = _relogio + FOCO_SEGUNDOS
 
 
 ## Efeito do resultado de um poder (e de outros eventos com dados de ponto).
@@ -1269,15 +1281,22 @@ func _nome_fundo(i: int, estado: int, especial: String) -> String:
 func _atualizar_camera(delta: float) -> void:
 	var alvo_zoom := 1
 	var alvo := Vector2.ZERO
-	if seguindo and sim and sim.mundo.acompanhada >= 0:
+	var quem := -1
+	if foco >= 0 and (_relogio > _foco_ate or sim == null or sim.mundo.posicao_de(foco) < 0.0):
+		foco = -1  # o tempo passou, ou a pessoa morreu: a vista volta
+	if foco >= 0:
+		quem = foco
+	elif seguindo and sim and sim.mundo.acompanhada >= 0:
+		quem = sim.mundo.acompanhada
+	if quem >= 0:
 		for f in figuras:
-			if f.id == sim.mundo.acompanhada:
+			if f.id == quem:
 				alvo_zoom = ZOOM_SEGUIR
 				var meio := Vector2(f.x + f.largura / 2.0, f.base - 20)
 				var vista := Vector2(LARGURA, ALTURA) / ZOOM_SEGUIR
 				alvo = (meio - vista / 2.0).clamp(Vector2.ZERO, Vector2(LARGURA, ALTURA) - vista)
 		if alvo_zoom == 1:  # a pessoa está numa cabana: mira a casa dela
-			var x: float = sim.mundo.posicao_de(sim.mundo.acompanhada)
+			var x: float = sim.mundo.posicao_de(quem)
 			if x >= 0.0:
 				alvo_zoom = ZOOM_SEGUIR
 				alvo = Vector2(clampf(x - 120.0, 0.0, 240.0), 40.0)

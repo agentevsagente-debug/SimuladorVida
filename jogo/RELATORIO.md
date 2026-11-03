@@ -2,6 +2,31 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## A caixa de preces e o termômetro de fé (pedido do autor em 03/11/2026)
+
+- **O botão:** fica na alça, logo depois da lupa, com o ícone da C (`caixa_preces`, copiado da branch dela antes do commit). Quando chega prece nova desde a última abertura, o ícone mostra o ponto (`caixa_preces_nova`). A tecla P também abre a caixa.
+- **A leitura:** ao abrir, a moldura guarda no moldura.cfg ([preces] lida) a semente, o passo e o último evento. Num mundo de outra semente, tudo o que houver conta como novo.
+- **A caixa (`apresentacao/preces_tela.gd`):** um pergaminho de 296 × 154 à direita, que deixa a metade esquerda do mundo à vista.
+  - No topo, cada povo que reza tem um termômetro sem número. A cor diz o nível (azul frio, laranja morno, vermelho forte), e a seta diz se a fé esquenta ou esfria (um traço quando está parada).
+  - Embaixo, as preces, da mais nova para a mais antiga. Cada uma mostra quem pediu e o povo, o "Ano X, dia Y", as palavras (até duas linhas) e o estado com um ponto colorido: esperando, atendida, "atendida, mas não por você" ou sem resposta.
+  - A roda e as setas rolam a lista.
+  - Esc, o botão direito ou um clique fora fecham a caixa.
+- **O clique numa prece:** se a pessoa vive, a vista aproxima (2x) e a segue por 20 s, até um clique no mundo ou o Esc. Se ela morreu, um aviso diz que não vive mais.
+- **A dica da vila:** o termômetro aparece ao lado do nome da vila, só para povos que rezam. Quem não reza fica no ponto cego, como na caixa.
+- **Os dados:** a caixa lê `preces_historico()`, `fe_do_povo(gid)` e `preces_novas_desde(passo)` quando o núcleo os tiver (o formato foi proposto à A). Até lá:
+  - a lista mostra as preces abertas (estado esperando);
+  - o termômetro mostra a média da fé das pessoas do povo, com a tendência medida contra o dia anterior;
+  - `--preces-falsas` enche a caixa com preces de mentira, com os nomes do mundo, para ver o desenho.
+- **O desempenho:** as 9 partes do pergaminho em ladrilhos davam centenas de desenhos (27 ms). Agora o fundo é montado uma vez numa textura só. Com a caixa aberta, rolando e com o cursor andando, os custos ficaram assim:
+  - desenho da caixa: 0,28 ms no máximo;
+  - cada evento: 0,47 ms no máximo;
+  - abrir: 1,6 ms;
+  - conferir as preces novas, uma vez por segundo: 0,03 ms.
+- **Os testes (`ferramentas/testar_preces.gd`, sem janela e sem mouse, em %TEMP%):** 11 de 11 passam (P-01 a P-11).
+  - Cobrem o botão, o ponto, abrir e fechar, o cfg, o clique em quem vive e em quem morreu, o modo discreto, a lupa em 2x/3x/4x, o termômetro da vila, o desempenho e os dados de verdade.
+  - Os testes da lupa (5/0/1) e do som (8/0/1) da D seguem passando.
+- **O verificar.ps1:** ganhou o passo "preces: abre e fecha" e acompanhou a alça mais larga (235 px fechada, 405 px com os poderes abertos). Ainda não rodou, porque precisa do mouse.
+
 ## Versão 0.2: o som
 
 **O silêncio primeiro.**

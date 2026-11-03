@@ -38,7 +38,8 @@ extends Node2D
 ##   --menu-bandeja=S[:janela|som|sair]   abre o menu da bandeja depois de S segundos e escolhe o item (testes)
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
-##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|livro|abandonar
+##   --preces-falsas                      a caixa de preces com preces de mentira, com os nomes do mundo (testes)
+##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|preces|livro|abandonar
 ##                        abre um painel ou aperta um botão (testes); livro abre o
 ##                        último livro, abandonar abre a pergunta de abandono e
 ##                        abandonado abandona sem perguntar e abre a estante
@@ -106,6 +107,7 @@ func _ready() -> void:
 	vista.pessoa_clicada.connect(_acompanhar)
 	interface.ritmo_mudou.connect(_guardar_config)
 	interface.preferencia_mudou.connect(_guardar_config)
+	interface.preces_lidas.connect(_guardar_preces_lidas)
 	var config := ConfigFile.new()
 	if _usar_config:
 		config.load(ARQUIVO_CONFIG)
@@ -119,6 +121,7 @@ func _ready() -> void:
 		if r >= 0:
 			vista.sim.definir_ritmo(r)
 		_mostrar_ausencia()
+	interface.preces_lida = config.get_value("preces", "lida", {}) if _usar_config else {}
 	vista.modo_discreto = args.has("discreto") or (_usar_config and bool(config.get_value("moldura", "discreto", false)))
 	# o som: a escolha guardada (ligado na primeira vez); --sem-som cala só esta abertura
 	_som_forcado = args.has("sem-som")
@@ -195,6 +198,8 @@ func _ready() -> void:
 			interface._apertar.call_deferred("ritmo:salto")
 		"estante":
 			interface.alternar_estante.call_deferred()
+		"preces":
+			interface.alternar_preces.call_deferred()
 		"livro":
 			interface._estante.abrir_livro.call_deferred(1 << 20)
 		"abandonar":
@@ -527,6 +532,16 @@ func _iniciar_dicas(desde_o_comeco: bool) -> void:
 		feitas = config.get_value("dicas", "feitas", [])
 	interface.dica_feita.connect(_guardar_dica)
 	interface.iniciar_dicas(feitas)
+
+
+## A caixa de preces abriu: o passo (e o último evento) dessa leitura, para o ponto de "não lida".
+func _guardar_preces_lidas(marca: Dictionary) -> void:
+	if not _usar_config:
+		return
+	var config := ConfigFile.new()
+	config.load(ARQUIVO_CONFIG)
+	config.set_value("preces", "lida", marca)
+	config.save(ARQUIVO_CONFIG)
 
 
 func _guardar_dica(feitas: Array) -> void:
