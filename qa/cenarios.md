@@ -270,3 +270,21 @@
 | QA-209 | **Dado** 8 sementes de 25 anos com o deus ativo (5 sinais no começo de cada ano), **então** em todo ano com 4 ou mais atos divinos, cada nascimento, casamento e morte de um povo pequeno entra na crônica do ano com o nome (o recém-nascido, os dois noivos, o morto); e há pelo menos um ano com os três. | FUN "Povo pequeno", "Os atos do deus não ocupam o lugar da vida" | B | AN |
 | QA-210 | **Dado** o mundo de 250 anos da semente 3, **então** em cada um dos últimos 60 anos com 6 ou mais nascimentos num povo grande, a crônica do ano dá a conta (uma frase com "nasc" e um número; e com "morr" e um número, se houve mortes) e nomeia no máximo 3 recém-nascidos; e o livro (a crônica completa) cresce no máximo 100% sobre os 48 473 caracteres de antes da correção. | FUN "Povo grande" | B | AN |
 | QA-211 | **Dado** as crônicas dos cenários QA-208 a QA-210, **então** nenhuma tem resto de molde (`{`, `}`, `|`) nem caractere fora da fonte. | FUN Crônica, robustez | B | AN |
+
+## 20. A API das preces (caixa de preces e termômetro de fé; escritos antes da API, pela regra de TDD)
+
+*Fonte: FUN "A caixa de preces e o termômetro de fé" (pedido do autor em 03/11/2026). O contrato é o que a caixa da B já lê (`apresentacao/preces_tela.gd`), proposto à A:*
+- `preces_historico()`: uma lista, da prece mais nova para a mais antiga, de `{evento, autor, nome, grupo, povo, ano, dia, texto, estado, vivo, passo}`. O `estado` é `esperando`, `atendida`, `falso_milagre` ou `sem_resposta`.
+- `fe_do_povo(gid)`: `{nivel: 0..1, tendencia: "sobe" | "desce" | "estavel"}`.
+- `preces_novas_desde(passo)`: quantas preces nasceram depois desse passo.
+
+*O oráculo são os eventos do núcleo (`prece`, `prece_atendida`, `prece_sem_resposta`). Os mundos são 4 sementes de 40 anos, em que o deus atende cerca de metade das preces abertas com o poder que as atende. A folga de 0,05 no nível, a janela da tendência e os tempos são propostas revisáveis.*
+
+| ID | Dado / Quando / Então | Fonte | Prio | Como |
+|---|---|---|---|---|
+| QA-212 | **Dado** um mundo com preces, **então** `preces_historico()` tem cada prece do mundo uma vez, da mais nova para a mais antiga, com os 11 campos. O `autor` é quem rezou; o `nome`, o `vivo`, o `grupo` e o `povo` batem com o núcleo; `ano` e `dia` são os da crônica (o dia começa em 1); o `passo` é o da hora em que a prece nasceu. O `estado` é o que os eventos dizem (atendida, falso milagre, sem resposta; esperando, se ainda aberta), e o `texto` não é vazio, sem resto de molde nem caractere fora da fonte. Nas 4 sementes, aparecem preces atendidas e preces sem resposta ou esperando. | FUN Caixa de preces | B | AN |
+| QA-213 | **Dado** cada povo vivo, **então** `fe_do_povo` dá o `nivel` igual à fé média do povo, (média + 1) / 2, com folga de 0,05, e a `tendencia` como uma das três palavras; um povo que não existe não dá erro. **Quando** a fé do povo sobe 0,1 por dia por 3 dias, **então** a tendência diz "sobe"; descendo, "desce"; parada por 10 dias, "estavel". | FUN Termômetro de fé | B | AN |
+| QA-214 | **Dado** o histórico, **então** `preces_novas_desde(-1)` é o tamanho dele, `preces_novas_desde(passo de agora)` é 0, e desde o passo de uma prece qualquer é a conta das que vieram depois; **quando** nasce uma prece nova, **então** ela conta. | FUN "O botão mostra um ponto discreto quando chega prece nova" | B | AN |
+| QA-215 | **Dado** um mundo com preces, **quando** ele é salvo e carregado, **então** o histórico e o termômetro de cada povo são os mesmos. | FUN Persistência | B | AN |
+| QA-216 | **Dado** o mundo de 250 anos, **então** `preces_historico()` responde em menos de 10 ms, e `preces_novas_desde` e `fe_do_povo`, que a caixa consulta uma vez por segundo, em menos de 1 ms (mediana de 5). | TEC Leveza | N | AN |
+| QA-217 | **Dado** dois mundos da mesma semente, **quando** um deles é consultado pela API todo dia por 5 anos, **então** os dois ficam iguais: os eventos, a crônica e o sorteio. | API Determinismo | B | AN |

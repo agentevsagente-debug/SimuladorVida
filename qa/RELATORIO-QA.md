@@ -651,6 +651,22 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
   - na main, enquanto o arquivo não chega, fica PULADO.
 - O caractere fora da fonte é conferido só no QA-206, e o "alguém" de reserva só no QA-207.
 
+## A API das preces (TDD, antes da API)
+
+*Escritos em 03/11/2026, na main `a2ac752`. Os cenários são QA-212 a QA-217 (área 20 da matriz).*
+
+**Hoje: os 6 falham**, porque o núcleo ainda não tem `preces_historico`, `fe_do_povo` nem `preces_novas_desde`.
+
+**O contrato** é o que a caixa da B já lê (`apresentacao/preces_tela.gd`), e está na área 20 da matriz.
+
+**A prova do teste:**
+- Antes da API, rodei os cenários contra uma implementação de referência temporária, feita a partir dos eventos e apagada depois.
+- Ela mostrou que o teste funciona: os QA-212, 214 e 217 passaram com ela, nas 4 sementes (138 preces, com os estados atendida, falso milagre e esperando).
+- Ela também mostrou que o teste pega erros:
+  - uma tendência que diz sempre "estavel" falha no QA-213;
+  - um histórico refeito a cada consulta leva 11 ms no mundo de 250 anos e falha no QA-216.
+- **Lacuna:** nos mundos de teste, a prece "sem resposta" não apareceu nesta prova; o QA-212 aceita "esperando" no lugar dela.
+
 ## Como rodar
 
 ```bash
