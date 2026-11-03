@@ -1,4 +1,4 @@
-SIMULADOR DE VIDA 0.2.1 - COMO JOGAR
+SIMULADOR DE VIDA 0.3.0 - COMO JOGAR
 ====================================
 
 O QUE É
@@ -7,7 +7,8 @@ Um pequeno mundo que vive sozinho num canto da sua tela. Um povo nasce,
 caça, planta, briga, reza e envelhece, ano após ano, mesmo com você
 olhando para outra coisa. Você é o deus: não manda em ninguém, só pode
 fazer gestos (chuva, raio, fogo, fartura...) e ver o que o povo faz com
-eles. Tudo fica escrito numa crônica.
+eles. Tudo fica escrito numa crônica, que conta também a vida do povo:
+quem nasceu, quem casou e quem morreu, ano a ano.
 
 A janela é transparente e fica por cima das outras. O mouse passa pelos
 espaços vazios, então dá para trabalhar com ela aberta.
@@ -39,9 +40,10 @@ atendida, foi "atendida, mas não por você" (o povo achou que foi você)
 ou ficou sem resposta. Quem não reza não aparece ali.
 Clique numa prece para a vista ir até quem rezou. A roda do mouse rola
 a lista; Esc, o botão direito ou um clique fora fecham a caixa.
-No topo, cada povo tem um termômetro de fé, sem número: a cor diz quanto
-o povo crê, e a seta diz se a fé esquenta ou esfria. O mesmo termômetro
-aparece quando você passa o cursor sobre a vila.
+No topo, cada povo tem um termômetro de fé, sem número: quanto mais
+cheio, mais o povo crê, e a seta diz se a fé esquenta ou esfria (sem
+seta, está parada). O mesmo termômetro aparece quando você passa o
+cursor sobre a vila ou, de noite, sobre as tendas.
 
 TECLAS
 ------

@@ -5,7 +5,7 @@ config_version=5
 [application]
 
 config/name="Simulador de vida"
-config/version="0.2.1"
+config/version="0.3.0"
 config/custom_user_dir_name="Simulador de vida"
 config/use_custom_user_dir.template=true
 run/main_scene="res://principal.tscn"
