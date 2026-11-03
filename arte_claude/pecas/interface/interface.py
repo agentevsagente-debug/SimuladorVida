@@ -408,6 +408,36 @@ ICONES_12 = {
         "........WWWG",
         ".........WWG",
     ],
+    # a caixa de preces, ao lado da lupa: uma urna de madeira com um pedido entrando pela fenda
+    # e duas faíscas subindo; a _nova tem o ponto de prece não lida no canto
+    "caixa_preces": [
+        "............",
+        "..y.WWWW....",
+        "....WGGWG...",
+        ".y..WWWWG...",
+        "....WGGWG...",
+        "....WWWWG...",
+        ".WWWWkkWWWG.",
+        ".WnnnnnnnWG.",
+        ".WNNNNNNNWG.",
+        ".WnnnnnnnWG.",
+        ".WWWWWWWWWG.",
+        "..GGGGGGGGG.",
+    ],
+    "caixa_preces_nova": [
+        "..........rr",
+        "..y.WWWW..rr",
+        "....WGGWG...",
+        ".y..WWWWG...",
+        "....WGGWG...",
+        "....WWWWG...",
+        ".WWWWkkWWWG.",
+        ".WnnnnnnnWG.",
+        ".WNNNNNNNWG.",
+        ".WnnnnnnnWG.",
+        ".WWWWWWWWWG.",
+        "..GGGGGGGGG.",
+    ],
 }
 
 ICONES_8 = {
@@ -553,7 +583,43 @@ ICONES_8 = {
     "som_mudo": ["...WG...", "..WWG...", "WWWWGr.r", "WWWWG.r.", "WWWWGr.r", "GGWWG...", "..WWG...", "...WG..."],
     # a lupa sem número: em 8 x 8 o número não cabe legível na lente
     "lupa": [".WWW....", "W...W...", "W.W.WG..", "W...WG..", ".WWWWG..", "..GGWWG.", ".....WWG", "......WG"],
+    "caixa_preces": [".WWW....", ".WGWG...", ".WWWG...", ".WGWG...", "WWkWWWWG", "WnnnnnWG", "WWWWWWWG", ".GGGGGGG"],
+    "caixa_preces_nova": [".WWW..rr", ".WGWG.rr", ".WWWG...", ".WGWG...", "WWkWWWWG", "WnnnnnWG", "WWWWWWWG", ".GGGGGGG"],
 }
+
+
+# ---------------------------------------------------------------- termômetro de fé
+
+# o tubo vazio (contorno escuro, vidro claro e o bulbo), 6x14; o contorno escuro lê no pergaminho e
+# o vidro claro lê na dica escura
+TERMOMETRO_TUBO = [
+    ".xxxx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    ".xWWx.",
+    "xxWWxx",
+    "xWWWWx",
+    "xWWWWx",
+    "xWWWWx",
+    ".xxxx.",
+]
+# o preenchimento cobre só o vidro, do frio embaixo (azul) ao quente em cima (vermelho): o código
+# recorta pela altura, de baixo para cima, e quanto mais fé, mais quente a ponta que aparece
+TERMOMETRO_GRADIENTE = ".rrrooTTTbbbbb."
+TERMOMETRO_SETAS = {
+    "sobe": [".....", "..o..", ".ooo.", "ooooo", "....."],
+    "desce": [".....", "bbbbb", ".bbb.", "..b..", "....."],
+}
+
+
+def termometro_cheio():
+    return ["".join(TERMOMETRO_GRADIENTE[y] if ch == "W" else "." for ch in l)
+            for y, l in enumerate(TERMOMETRO_TUBO)]
 
 
 # ---------------------------------------------------------------- caixas e botões
@@ -885,6 +951,10 @@ def principal():
         gravar(molde(desenho), AQUI / "icones_12" / f"{nome}.png")
     for nome, desenho in ICONES_8.items():
         gravar(molde(desenho), AQUI / "icones_8" / f"{nome}.png")
+    gravar(molde(TERMOMETRO_TUBO), AQUI / "termometro_fe_tubo.png")
+    gravar(molde(termometro_cheio()), AQUI / "termometro_fe_cheio.png")
+    for nome, desenho in TERMOMETRO_SETAS.items():
+        gravar(molde(desenho), AQUI / f"termometro_fe_{nome}.png")
     caixa, dica = caixa_cronica(), caixa_dica()
     gravar(caixa, AQUI / "caixa_cronica_9s.png")
     gravar(dica, AQUI / "caixa_dica_9s.png")
@@ -908,7 +978,7 @@ def principal():
 
 
 def amostra(caixa, dica, bts, folhas):
-    W, H = 280, 150
+    W, H = 298, 150
     img = Image.new("RGBA", (W, H), PALETA[1] + (255,))
     # alça com os botões dos poderes e do tempo
     barra = para_imagem(nove(alca(), 12, 4, W - 8, 20))
@@ -920,7 +990,7 @@ def amostra(caixa, dica, bts, folhas):
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
     x += 6
-    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder", "som", "lupa_2"):
+    for nome in ("pausa", "normal", "rapido", "salto", "cronica", "linhagem", "esconder", "som", "lupa_2", "caixa_preces_nova"):
         img.alpha_composite(para_imagem(bts[0]), (x, 6))
         img.alpha_composite(para_imagem(molde(ICONES_12[nome])), (x + 2, 8))
         x += 17
