@@ -4,7 +4,7 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
 
 ## A caixa de preces e o termômetro de fé (pedido do autor em 03/11/2026)
 
-- **O botão:** fica na alça, logo depois da lupa, com o ícone da C (`caixa_preces`, copiado da branch dela antes do commit). Quando chega prece nova desde a última abertura, o ícone mostra o ponto (`caixa_preces_nova`). A tecla P também abre a caixa.
+- **O botão:** fica na alça, logo depois da lupa, com o ícone da C (`caixa_preces`, copiado da pasta de trabalho dela antes do commit: quando ela commitar, o `sincronizar_arte.py` iguala as cópias). Quando chega prece nova desde a última abertura, o ícone mostra o ponto (`caixa_preces_nova`). A tecla P também abre a caixa.
 - **A leitura:** ao abrir, a moldura guarda no moldura.cfg ([preces] lida) a semente, o passo e o último evento. Num mundo de outra semente, tudo o que houver conta como novo.
 - **A caixa (`apresentacao/preces_tela.gd`):** um pergaminho de 296 × 154 à direita, que deixa a metade esquerda do mundo à vista.
   - No topo, cada povo que reza tem um termômetro sem número. A cor diz o nível (azul frio, laranja morno, vermelho forte), e a seta diz se a fé esquenta ou esfria (um traço quando está parada).
