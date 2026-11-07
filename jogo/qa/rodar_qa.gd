@@ -246,6 +246,7 @@ func _rodar_tudo() -> void:
 		["textos da A (testar_textos)", _bloco_textos_da_a],
 		["a vida do povo na crônica (TDD)", _bloco_vida_na_cronica],
 		["API das preces (TDD)", _bloco_preces_api],
+		["dados do painel da população", _bloco_populacao],
 		["inspeção do código", _bloco_inspecao],
 	]
 	for b in blocos:
@@ -2376,6 +2377,49 @@ func _preces_nao_mudam_o_mundo() -> void:
 				a.call("fe_do_povo", g.id)
 	var iguais: bool = a.eventos.size() == b.eventos.size() and a.cronica() == b.cronica() and a.rng.state == b.rng.state
 	conferir("QA-217", iguais, "5 anos, a API consultada todo dia em um dos mundos: eventos %d e %d, crônica e sorteio iguais=%s" % [a.eventos.size(), b.eventos.size(), iguais])
+
+
+# ---------------------------------------------------------------- 14b. os dados do painel da população
+
+## QA-219: o contrato dos dados do painel da população (pedido do autor em 07/11/2026). O total do mundo
+## é a soma dos membros de grupos_visiveis(), igual a populacao() e ao número de pessoas_visiveis(); as
+## pessoas de um povo são exatamente as de pessoas_visiveis() com aquele grupo, e cada ficha tem o nome,
+## a idade, o papel e se é criança (a ordem do painel sai daí). Em 3 sementes, a cada 6 horas por 20
+## dias, e no mundo de 250 anos.
+func _bloco_populacao() -> void:
+	if not _quer("QA-219"):
+		return
+	var falhas := []
+	var amostras := 0
+	var mundos := []
+	for semente in [1, 2, 7]:
+		mundos.append(["semente %d" % semente, _mundo(semente), 20 * 4])
+	mundos.append(["mundo de 250 anos", _mundo_250(), 8])
+	for par in mundos:
+		var m = par[1]
+		for k in int(par[2]):
+			for h in 6:
+				m.avancar_hora()
+			amostras += 1
+			var visiveis: Array = m.grupos_visiveis()
+			var fichas: Array = m.pessoas_visiveis()
+			var soma := 0
+			for g in visiveis:
+				soma += int(g["membros"])
+			if soma != m.populacao() or fichas.size() != m.populacao():
+				falhas.append("%s, passo %d: soma dos povos %d, populacao %d, pessoas visíveis %d" % [par[0], m.passo, soma, m.populacao(), fichas.size()])
+				continue
+			for g in visiveis:
+				var do_povo := fichas.filter(func(f): return int(f["grupo"]) == int(g["id"])).map(func(f): return int(f["id"]))
+				var membros: Array = m.grupo(int(g["id"])).membros.duplicate()
+				do_povo.sort()
+				membros.sort()
+				if do_povo != membros:
+					falhas.append("%s, passo %d: povo %s, pessoas visíveis %d, membros %d" % [par[0], m.passo, g["nome"], do_povo.size(), membros.size()])
+			var sem := fichas.filter(func(f): return not (f.has("nome") and f.has("idade") and f.has("papel") and f.has("crianca")))
+			if not sem.is_empty():
+				falhas.append("%s: %d fichas sem nome, idade, papel ou crianca" % [par[0], sem.size()])
+	conferir("QA-219", falhas.is_empty(), "%d amostras em 4 mundos: %s" % [amostras, falhas.slice(0, 3) if not falhas.is_empty() else "o total, os povos e as pessoas batem"])
 
 
 func _bloco_inspecao() -> void:
