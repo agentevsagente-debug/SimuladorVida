@@ -45,11 +45,21 @@ cheio, mais o povo crê, e a seta diz se a fé esquenta ou esfria (sem
 seta, está parada). O mesmo termômetro aparece quando você passa o
 cursor sobre a vila ou, de noite, sobre as tendas.
 
+O PAINEL DA POPULAÇÃO
+---------------------
+O botão de gente, depois da caixa de preces (ou a tecla G), mostra
+quantos habitantes o mundo tem e a lista dos povos: o nome, quantas
+pessoas, onde vive, o estágio e o deus em que crê. Clique num povo para
+ver a gente dele (o líder e o sacerdote primeiro, depois os adultos do
+mais velho ao mais novo e as crianças). Clique numa pessoa para a vista
+ir até ela. "Voltar", Esc ou o botão direito voltam um passo.
+
 TECLAS
 ------
   C    crônica do mundo (setas para cima e para baixo trocam de capítulo)
   E    estante com os livros dos mundos que você deixou
   P    caixa de preces
+  G    painel da população
   L    seguir a família que você acompanha
   D    modo discreto (o pior fica só na crônica, sem ser mostrado)
   H    esconder a janela

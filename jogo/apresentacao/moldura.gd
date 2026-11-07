@@ -39,7 +39,7 @@ extends Node2D
 ##   --carregar=PODER:X:INTENSIDADE        segura um poder em X com a carga fixa, sem soltar (testes)
 ##   --dica-pessoa=ID[:S]                 a dica sobre a pessoa ID, acompanhando-a, depois de S segundos (testes)
 ##   --preces-falsas                      a caixa de preces com preces de mentira, com os nomes do mundo (testes)
-##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|preces|livro|abandonar
+##   --abrir=cronica|poderes|ritmo|linhagem|salto|estante|preces|povos|povo|livro|abandonar
 ##                        abre um painel ou aperta um botão (testes); livro abre o
 ##                        último livro, abandonar abre a pergunta de abandono e
 ##                        abandonado abandona sem perguntar e abre a estante
@@ -200,6 +200,10 @@ func _ready() -> void:
 			interface.alternar_estante.call_deferred()
 		"preces":
 			interface.alternar_preces.call_deferred()
+		"povos":
+			interface.alternar_povos.call_deferred()
+		"povo":  # o painel da população já no primeiro povo (testes e capturas)
+			(func(): interface.alternar_povos(); interface._povos.escolher(0)).call_deferred()
 		"livro":
 			interface._estante.abrir_livro.call_deferred(1 << 20)
 		"abandonar":

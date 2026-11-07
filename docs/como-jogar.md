@@ -45,6 +45,15 @@ Passe o cursor sobre alguém para ver o nome, a idade, o humor, o que está faze
 
 **A família que você acompanha.** O jogo segue uma família. A tecla **L** leva a vista até ela. Quando a pessoa acompanhada morre, o acompanhamento passa ao descendente vivo mais velho.
 
+**O painel da população.** O botão de gente na alça, depois da caixa de preces, ou a tecla **G**, abre o painel. No topo aparece quantos habitantes o mundo tem agora; a dica do botão mostra o mesmo número.
+- **Os povos:** cada linha mostra o nome do povo, quantas pessoas tem, onde vive, o estágio e o deus em que crê ("não crê" ou "cético", se for o caso).
+- **As pessoas:** clique num povo para ver a gente dele, com o nome, o papel e a idade. Primeiro vêm o líder e o sacerdote, depois os adultos do mais velho ao mais novo e, no fim, as crianças. A roda do mouse rola a lista, e "Voltar" leva de volta aos povos.
+- **Ir até alguém:** clique numa pessoa para a vista ir até ela, como na caixa de preces.
+
+Esc ou o botão direito voltam um passo, e um clique fora fecha o painel. Ele se atualiza a cada hora do jogo.
+
+![Em cima, o painel com os povos e o total do mundo; embaixo, as pessoas de um povo](imagens/painel-da-populacao.png)
+
 ## 4. As preces
 
 Quando alguém pede algo ao deus, aparece um sinal de luz sobre o povo. Passe o cursor sobre ele para ler a prece, há quantos dias ela espera e qual poder a atende.
@@ -60,7 +69,7 @@ O povo pede chuva na seca, comida na fome, cura na doença, calor no frio e prot
 
 Clique numa prece para a vista ir até quem rezou. A roda do mouse rola a lista; Esc, o botão direito ou um clique fora fecham a caixa. Um ponto no botão avisa que chegou prece nova desde a última vez que você abriu a caixa. Quem não reza não aparece ali.
 
-**O termômetro de fé.** No topo da caixa, cada povo tem um termômetro, sem número: a cor diz quanto o povo crê, e a seta diz se a fé está esquentando ou esfriando. A fé continua sendo de cada pessoa; o termômetro mostra a média do povo. O mesmo termômetro aparece quando você passa o cursor sobre a vila.
+**O termômetro de fé.** No topo da caixa, cada povo tem um termômetro, sem número: quanto mais cheio, mais o povo crê, e a seta diz se a fé está esquentando ou esfriando (sem seta, está parada). A fé continua sendo de cada pessoa; o termômetro mostra a média do povo. O mesmo termômetro aparece quando você passa o cursor sobre a vila.
 
 ![Em cima, a caixa de preces, com o termômetro de cada povo; embaixo, o termômetro na dica da vila](imagens/caixa-de-preces.png)
 
@@ -117,6 +126,7 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 | C | crônica do mundo (↑ e ↓ trocam de capítulo) |
 | E | estante |
 | P | caixa de preces |
+| G | painel da população |
 | L | seguir a família acompanhada |
 | D | modo discreto |
 | H ou F8 | esconder a janela |
@@ -124,7 +134,7 @@ A barra de espaço pausa e continua. O ritmo normal é o pensado para deixar abe
 | 0, 1, 2, 3 | pausa, 1x, 10x, 50x |
 | Espaço | pausa e continua |
 | S | saltar até o próximo acontecimento |
-| Esc | fecha a crônica, a estante ou a caixa de preces |
+| Esc | fecha a crônica, a estante, a caixa de preces ou o painel da população |
 | M | liga e desliga o som |
 | Ctrl+2, Ctrl+3, Ctrl+4 | tamanho da janela (ou a lupa na alça) |
 | Ctrl+Q | sair (o mundo é salvo) |

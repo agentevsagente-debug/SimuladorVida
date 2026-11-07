@@ -77,8 +77,8 @@ Registrar 'mundo: moldura' ([Win32]::RaizEm($pontoCeu[0], $pontoCeu[1]) -eq $h) 
 
 $com = [Win32]::Capturar($X, $Y, 960, 356)
 $com.Save((Join-Path $saida 'escala2.png'))
-# a faixa entre a alça (até 235 px, com o som, a lupa e a caixa de preces) e o relógio (438 em diante) é transparente
-$transp = [Win32]::Iguais($fundo, $com, 240 * $k, 0, 190 * $k, $faixa * $k)
+# a faixa entre a alça (até 252 px, com o som, a lupa, a caixa de preces e a população) e o relógio (438 em diante) é transparente
+$transp = [Win32]::Iguais($fundo, $com, 257 * $k, 0, 173 * $k, $faixa * $k)
 $mundoDif = 1 - [Win32]::Iguais($fundo, $com, 0, $faixa * $k, 480 * $k, 160 * $k)
 Registrar 'transparencia da faixa' ($transp -gt 0.999) ('{0:P2} dos pixels iguais ao fundo' -f $transp)
 Registrar 'mundo opaco' ($mundoDif -gt 0.99) ('{0:P2} dos pixels diferentes do fundo' -f $mundoDif)
@@ -123,8 +123,8 @@ function Tentar([scriptblock]$acao, [scriptblock]$feito, [int]$espera = 800) {
 
 # 3b. O gesto de um poder, com o mouse de verdade: abre os poderes na alça,
 # escolhe o raio (2º botão da fileira aberta), segura 1,5 s sobre o céu e solta.
-$abertos = Linhas 'alca largura=405'
-$t1 = Tentar { [Win32]::Clicar($X + 18 * $k, $Y + 9 * $k) } { (Linhas 'alca largura=405') -gt $abertos }
+$abertos = Linhas 'alca largura=422'
+$t1 = Tentar { [Win32]::Clicar($X + 18 * $k, $Y + 9 * $k) } { (Linhas 'alca largura=422') -gt $abertos }
 $t2 = Tentar { [Win32]::Clicar($X + (10 + 17 + 8) * $k, $Y + 9 * $k) } { (Linhas 'poder escolhido: raio') -gt 0 }
 $t3 = Tentar { [Win32]::Segurar($X + 300 * $k, $Y + 70 * $k, 1500) } { (Linhas 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)') -gt 0 } 600
 $gesto = Select-String -Path $log -Pattern 'poder raio em x=[0-9]+ intensidade=0\.(6|7|8)' | Select-Object -First 1
@@ -171,6 +171,11 @@ $r3 = Retangulo $h
 $t11 = Tentar { [Win32]::Clicar($r3.Left + 222 * 3, $r3.Top + 9 * 3) } { (Linhas 'caixa de preces aberta') -gt 0 }
 $t12 = Tentar { [Win32]::ClicarDireito($r3.Left + 330 * 3, $r3.Top + 100 * 3) } { (Linhas 'caixa de preces fechada') -gt 0 }
 Registrar 'preces: abre e fecha' ($t11 -gt 0 -and $t12 -gt 0) "pelo botão e pelo botão direito (tentativas: $t11, $t12)"
+
+# 5e. O painel da população (o 14º botão, depois da caixa de preces): o clique abre, o botão direito sobre ele fecha.
+$t13 = Tentar { [Win32]::Clicar($r3.Left + 239 * 3, $r3.Top + 9 * 3) } { (Linhas 'painel da popula.+ aberto') -gt 0 }
+$t14 = Tentar { [Win32]::ClicarDireito($r3.Left + 330 * 3, $r3.Top + 100 * 3) } { (Linhas 'painel da popula.+ fechado') -gt 0 }
+Registrar 'populacao: abre e fecha' ($t13 -gt 0 -and $t14 -gt 0) "pelo botão e pelo botão direito (tentativas: $t13, $t14)"
 
 # 6. Esconder pelo botão (o décimo da alça: poderes, 5 ritmos, crônica, estante, linhagem, esconder).
 $t6 = Tentar { [Win32]::Clicar($r3.Left + 171 * 3, $r3.Top + 9 * 3) } { (-not [Win32]::IsWindowVisible($h)) -or [Win32]::IsIconic($h) }
