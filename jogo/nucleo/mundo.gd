@@ -3785,9 +3785,14 @@ func zonas_visiveis() -> Array:
 	return r
 
 
+## Os povos na tela. Um povo cujo último membro acabou de morrer fica de fora já na mesma hora,
+## embora o fim dele (a extinção, a crônica) só seja processado na virada do dia: o painel da
+## população não mostra "0 habitantes".
 func grupos_visiveis() -> Array:
 	var r: Array = []
 	for g in grupos_vivos():
+		if g.membros.is_empty():
+			continue
 		var f := Cotidiano.faixa_do_grupo(self, g)
 		r.append({"id": g.id, "nome": g.nome, "zona": g.zona, "x_ini": f[0], "x_fim": f[1],
 			"membros": g.membros.size(), "estagio": g.estagio, "lider": g.lider, "sacerdote": g.sacerdote,
