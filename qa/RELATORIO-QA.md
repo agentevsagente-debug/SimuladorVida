@@ -689,6 +689,23 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
   - um histórico refeito a cada consulta leva 11 ms no mundo de 250 anos e falha no QA-216.
 - **Lacuna:** nos mundos de teste, a prece "sem resposta" não apareceu nesta prova; o QA-212 aceita "esperando" no lugar dela.
 
+## O painel da população (TDD, antes do painel)
+
+*Escritos em 07/11/2026, na main `4b574e4`. Os cenários são QA-219 a QA-227 (área 21 da matriz).*
+
+- **Na main `c088e80` (o painel da B, `4391b3b`, com o ícone da C), em 07/11/2026: os 9 passam** (QA-219 a QA-227).
+- **A bateria inteira nessa main:**
+  - núcleo: 116 passam, 0 falham e 3 pulados (os raros de sempre), em 119 cenários e 289 s, com a máquina carregada; o testar_textos levou 187 s, contra uns 95 s;
+  - preces: QA-212 a QA-218 passam; o QA-216 deu 6,44 ms no pior caso ao remontar o histórico, abaixo dos 10 ms;
+  - som: 8 passam e 1 pulado; lupa: 5 passam e 1 pulado (os pulados precisam de janela);
+  - o testar_preces da B: o P-10 ("sem pico no quadro com a caixa aberta") falhou uma vez logo depois da bateria, com a máquina carregada, e passou nas duas rodadas seguintes, sozinho (11 de 11). Ele mede tempo e é sensível a carga.
+- **Na main `4b574e4`, antes do painel:** o QA-219 (os dados) passava, com 248 amostras em 4 mundos, e os QA-220 a QA-227 falhavam porque o painel não existia.
+- **Contra o painel em andamento da B** (os arquivos sem commit da pasta dela, copiados para uma cópia temporária da main, só para provar o teste; o veredito oficial espera o commit dela): **8 de 8 passam.**
+  - A tecla é G, e a dica diz "População: 12 (G)".
+  - O povo de 110 pessoas da semente 3 no ano 225 rola até a última, e o clique nela leva a vista até ela.
+  - Uma morte aparece no total na hora seguinte.
+- **Observação para a A** (não é defeito do painel): quando todos de um povo morrem, o núcleo deixa o povo em `grupos_visiveis()`, com 0 membros, até a virada do dia. Na sondagem, foram 18 horas de jogo. Nesse tempo, o painel mostra o povo com 0 pessoas. O QA-225 mede a volta ao nível 1 a partir de quando o núcleo tira o povo da lista.
+
 ## Como rodar
 
 ```bash
@@ -709,6 +726,7 @@ powershell -ExecutionPolicy Bypass -File jogo/qa/janela/rodar_janela.ps1 -Parte 
   - Abrem o jogo com as opções de teste, sem mouse nem teclado, com `APPDATA` em `%TEMP%\simvida_qa_janela`.
   - Os resultados vão para `qa/janela/resultado-*.json` e as capturas para `qa/capturas/`.
   - `-Parte som` mede o custo do som (QA-197), em pares com e sem `--sem-som` (`-Pares 3`, `-Segundos 90`).
+- Os cenários do painel da população (QA-220 a QA-227), do mesmo jeito: `--script res://qa/populacao/testar_populacao.gd`, isolados em `%TEMP%\simvida_qa_populacao`; leva uns 3 minutos, porque abre um mundo de 225 anos.
 - Os cenários da lupa (QA-200 a QA-205), do mesmo jeito: `--script res://qa/lupa/testar_lupa.gd`, isolados em `%TEMP%\simvida_qa_lupa`; `-- --janela` acrescenta o QA-205.
 - Os cenários do som (QA-188 a QA-196):
 

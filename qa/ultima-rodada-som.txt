@@ -1,14 +1,14 @@
 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
-[etapa estatico] 0.6 s
-[etapa inicial] 6.7 s
+[etapa estatico] 0.2 s
+[etapa inicial] 6.3 s
   [som-qa] desligado com M antes de fechar: Master mudo=true volume=-12.0 dB; moldura.cfg tem ["moldura/som=false"]
 [etapa reabrir] 2.4 s
   [som-qa] religado com M antes de fechar: Master mudo=false volume=-12.0 dB
-[etapa reabrir2] 0.9 s
-[etapa ligado] 58.6 s
-  [som-qa] som ligado, seis poderes: { "tocou": 11, "audivel": 11, "pesado": 2, "pesado_audivel": 2, "nomes": ["@AudioStreamPlayer@43", "@AudioStreamPlayer@44", "@AudioStreamPlayer@45", "@AudioStreamPlayer@47", "@AudioStreamPlayer@51", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56", "@AudioStreamPlayer2D@57", "@AudioStreamPlayer2D@58"] }
-[etapa discreto] 27.4 s
-  [som-qa] modo discreto, seis poderes: { "tocou": 9, "audivel": 9, "pesado": 0, "pesado_audivel": 0, "nomes": ["@AudioStreamPlayer@43", "@AudioStreamPlayer@44", "@AudioStreamPlayer@45", "@AudioStreamPlayer@47", "@AudioStreamPlayer@51", "@AudioStreamPlayer2D@53", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56"] }
+[etapa reabrir2] 1.5 s
+[etapa ligado] 58.7 s
+  [som-qa] som ligado, seis poderes: { "tocou": 11, "audivel": 11, "pesado": 2, "pesado_audivel": 2, "nomes": ["@AudioStreamPlayer@44", "@AudioStreamPlayer@45", "@AudioStreamPlayer@46", "@AudioStreamPlayer@48", "@AudioStreamPlayer@52", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56", "@AudioStreamPlayer2D@57", "@AudioStreamPlayer2D@58", "@AudioStreamPlayer2D@59"] }
+[etapa discreto] 27.5 s
+  [som-qa] modo discreto, seis poderes: { "tocou": 9, "audivel": 9, "pesado": 0, "pesado_audivel": 0, "nomes": ["@AudioStreamPlayer@44", "@AudioStreamPlayer@45", "@AudioStreamPlayer@46", "@AudioStreamPlayer@48", "@AudioStreamPlayer@52", "@AudioStreamPlayer2D@54", "@AudioStreamPlayer2D@55", "@AudioStreamPlayer2D@56", "@AudioStreamPlayer2D@57"] }
 PASSOU QA-188  o jogo exportado tem driver de áudio (não o Dummy)
       [estatico] PASSOU project.godot [audio]: padrão (WASAPI)
 PASSOU QA-189  o volume começa baixo
