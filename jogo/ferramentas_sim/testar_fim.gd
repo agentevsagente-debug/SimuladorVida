@@ -29,6 +29,7 @@ func _initialize() -> void:
 	conferir(naturais >= 3, "só %d mundos acabaram pela morte natural do último" % naturais)
 	_morte_no_meio_do_dia(4)
 	_raio_no_ultimo(5)
+	_povo_vazio_some(3)
 	print("%d falhas" % falhas)
 	quit(1 if falhas > 0 else 0)
 
@@ -147,3 +148,32 @@ func _raio_no_ultimo(semente: int) -> void:
 	conferir(not m.usar_poder("chuva", 200.0, 0.8)["ok"], "depois do raio no último, a chuva ainda é aceita")
 	print("  raio no último às 10h: fim do mundo logo depois do gesto")
 	_conferir_mundo_vazio(m, "raio no último")
+
+
+## Um povo cujo último membro morre às 6h sai de grupos_visiveis() na mesma hora (o painel da
+## população não mostra "0 habitantes"), e a extinção vem na virada do dia, como sempre.
+func _povo_vazio_some(semente: int) -> void:
+	var m := Mundo.new(semente, [], Mundo.HORA_INICIAL, true)
+	var g = null
+	var dias := 0
+	while dias < Mundo.DIAS_ANO * 80:
+		m.avancar_dias(10)
+		dias += 10
+		if m.grupos_vivos().size() >= 2:
+			g = m.grupos_vivos()[-1]
+			break
+	if g == null:
+		conferir(false, "semente %d: nunca houve dois povos" % semente)
+		return
+	while m.hora() != 6:
+		m.avancar_hora()
+	for id in g.membros.duplicate():
+		m._morrer(m.pessoas[id], "doenca")
+	var ids: Array = m.grupos_visiveis().map(func(x): return x["id"])
+	conferir(not ids.has(g.id), "o povo %d, sem ninguém vivo, ainda está em grupos_visiveis()" % g.id)
+	conferir(m.grupos_visiveis().all(func(x): return x["membros"] > 0), "um povo com 0 membros em grupos_visiveis()")
+	m.avancar_hora()
+	conferir(not m.grupos_visiveis().map(func(x): return x["id"]).has(g.id), "o povo %d voltou à lista" % g.id)
+	m.avancar_dias(1)
+	conferir(g.extinto, "o povo %d sem ninguém não foi extinto na virada do dia" % g.id)
+	m.encerrar()

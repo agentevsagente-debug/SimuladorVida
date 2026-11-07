@@ -69,7 +69,7 @@ Todas as consultas abaixo são **puras**: não mudam o mundo, não consomem sort
 | `pedra_erguida`, `pedra_x` | bool, float | a terra foi erguida ali, e onde |
 | `nomes` | Dictionary | id do grupo → nome que esse povo deu ao lugar ("Lago do Raio") |
 
-### `grupos_visiveis() -> Array[Dictionary]` (só os vivos)
+### `grupos_visiveis() -> Array[Dictionary]` (só os vivos, e só com alguém vivo: o povo cujo último membro morreu sai da lista na mesma hora, antes da extinção, que é processada na virada do dia)
 
 | Campo | O que é |
 |---|---|
