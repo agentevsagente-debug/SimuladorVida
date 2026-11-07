@@ -2,6 +2,34 @@
 
 Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cobre o ajuste das pessoas no acampamento e as tarefas 4 (interação) e 5 (leveza). As capturas estão em `jogo/capturas/`.
 
+## O painel da população (pedido do autor em 07/11/2026)
+
+- **O botão e a tecla:** o botão fica na alça, depois da caixa de preces, e a tecla é **G**, de "gente" (o P já é das preces). A dica do botão mostra "População (G)" e o total de habitantes. O ícone `populacao` é provisório, feito pela B: o definitivo foi pedido à C.
+- **O painel (`apresentacao/povos_tela.gd`):** usa o mesmo pergaminho da caixa de preces. O pergaminho e as setinhas agora são funções estáticas de `preces_tela.gd`, usadas pelos dois painéis.
+  - No topo fica o total do mundo.
+  - **Nível 1:** os povos vivos. Cada um mostra o nome e quantos habitantes tem, e embaixo onde vive, o estágio em palavra e o deus ("crê no Olho Escuro", "não crê" ou "cético").
+  - **Nível 2:** as pessoas do povo, com o nome, o papel e a idade. Primeiro o líder e o sacerdote ou a sacerdotisa, depois os adultos do mais velho ao mais novo, e por fim as crianças. O botão "Voltar", o Esc ou o botão direito voltam aos povos.
+  - A roda e as setas rolam a lista.
+- **O clique numa pessoa:** leva a vista até ela, com o mesmo código da caixa de preces (`_ir_ate` e `vista.focar`).
+- **Os dados:** saem só de `grupos_visiveis()` e `pessoas_visiveis()`, sem fé individual e sem números internos. O painel copia o que mostra e só relê a API quando a hora vira (`mundo.passo`).
+- **Os outros painéis:** o painel, a caixa de preces, a estante e a crônica não ficam abertos juntos. Abrir um fecha os outros.
+- **Os testes (`ferramentas/testar_povos.gd`, sem janela, em %TEMP%):** 9 de 9 passam (V-01 a V-09).
+  - Cobrem o botão e a dica, o total, a ordem das pessoas, voltar e fechar, o clique em quem vive, a rolagem, a releitura só na virada da hora, a convivência com a caixa e o custo.
+  - O custo medido: desenho 1,9 ms no máximo, eventos 2,1 ms e abrir 0,8 ms.
+  - O testar_preces passa 11/11, a lupa 5/0/1 e o som 8/0/1.
+- **O verificar.ps1:** ganhou o passo "populacao: abre e fecha" (23 itens) e acompanhou a alça de 252 px (422 px com os poderes abertos).
+- **O medir.ps1:** ganhou `-Extra` (opções a mais para o jogo, como `--abrir=povo`) e `-Nome`.
+- **O contrato da D:** o botão tem id `populacao` e o painel fica em `interface._populacao`. Ele expõe `nivel`, `povo`, `total`, `linhas`, `ponto_da_linha(i)`, `ponto_do_voltar()`, `rolagem` e `rolagem_max()`. A dica é "População: N (G)", com `mundo.populacao()`. O ícone definitivo é o da C (5a868c5).
+- **A medição** (`medir.ps1 -Cenario grande`: 200 anos, 1x, 120 s depois de 30 s de aquecimento, janela de verdade):
+
+  | | % de um núcleo | Gerenciador | conjunto de trabalho |
+  |---|---|---|---|
+  | sem o painel | 6,20 | 196,7 MB | 302,4 MB |
+  | com o painel aberto num povo | 5,54 | 195,1 MB | 300,8 MB |
+
+  A diferença está dentro do ruído: o painel só se redesenha quando a hora vira ou o cursor se move sobre ele. As duas medições ficam abaixo da meta de cerca de 8%.
+- **O verificar.ps1 com janela de verdade:** duas rodadas limpas, 23 de 23, com "populacao: abre e fecha".
+
 ## A caixa de preces e o termômetro de fé (pedido do autor em 03/11/2026)
 
 - **O botão:** fica na alça, logo depois da lupa, com o ícone da C (`caixa_preces`, copiado da pasta de trabalho dela antes do commit: quando ela commitar, o `sincronizar_arte.py` iguala as cópias). Quando chega prece nova desde a última abertura, o ícone mostra o ponto (`caixa_preces_nova`). A tecla P também abre a caixa.

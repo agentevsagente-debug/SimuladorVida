@@ -45,7 +45,7 @@ var _fe_antes := {}      # gid -> [dia, nível]: a fé de um dia antes (a tendê
 var _rects_povos: Array = []  # [Rect2i] de cada povo no topo, para a dica
 var custo_desenho_us := 0     # quanto custou o último desenho (o teste confere que não pesa)
 var _falsas_feitas: Array = []  # as preces de mentira, feitas uma vez
-var _pergaminho: Texture2D    # o fundo da caixa, montado uma vez (as 9 partes em ladrilhos eram centenas de desenhos)
+static var _pergaminho: Texture2D  # o fundo da caixa, montado uma vez (as 9 partes em ladrilhos eram centenas de desenhos); o painel da população usa o mesmo
 
 
 func criar(p_interface: Node2D, p_vista: Node2D) -> void:
@@ -349,7 +349,7 @@ func _draw() -> void:
 
 
 func _desenhar() -> void:
-	draw_texture(_fundo(), Vector2(CAIXA.position))
+	draw_texture(pergaminho(), Vector2(CAIXA.position))
 	var titulo: Font = interface._fontes["titulo"]
 	var escura: Font = interface._fontes["escura"]
 	var x0 := CAIXA.position.x + MARGEM
@@ -424,13 +424,13 @@ func _desenhar_lista(x0: int) -> void:
 	# setinhas de que há mais acima ou abaixo
 	var sx := CAIXA.end.x - MARGEM - 3
 	if _rolagem > 0:
-		_triangulo(Vector2i(sx, topo - 5), true, 8)
+		triangulo(self, Vector2i(sx, topo - 5), true)
 	if _rolagem < _rolagem_max():
-		_triangulo(Vector2i(sx, fundo + 1), false, 8)
+		triangulo(self, Vector2i(sx, fundo + 1), false)
 
 
 ## O pergaminho do tamanho da caixa, com as 9 partes (cantos, bordas e miolo em ladrilhos), numa textura só.
-func _fundo() -> Texture2D:
+static func pergaminho() -> Texture2D:
 	if _pergaminho != null:
 		return _pergaminho
 	var origem: Image = Arte.textura("interface/caixa_cronica_9s.png").get_image()
@@ -462,10 +462,20 @@ static func _do_povo(povo: String) -> String:
 	return "dos %s" % povo if povo != "" else "sem povo"
 
 
-func _triangulo(c: Vector2i, para_cima: bool, cor: int) -> void:
+## Um botão de texto sobre o pergaminho (o "Voltar" do painel da população), como os da estante.
+static func botao_texto(alvo: CanvasItem, interface: Node2D, r: Rect2i, texto: String, sob: bool) -> void:
+	interface._desenhar_9(Arte.textura("interface/caixa_dica_9s.png"), Rect2(r), 4, alvo)
+	var f: Font = interface._fontes["dourada" if sob else "clara"]
+	var w := int(f.get_string_size(texto, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
+	alvo.draw_string(f, Vector2(r.position.x + (r.size.x - w) / 2, r.position.y + (r.size.y - 11) / 2 + int(f.get_ascent(TAM_FONTE))),
+		texto, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+
+
+## A setinha de que a lista continua acima ou abaixo (na tinta do pergaminho).
+static func triangulo(alvo: CanvasItem, c: Vector2i, para_cima: bool) -> void:
 	for k in 3:
 		var linha := k if para_cima else 2 - k
-		draw_rect(Rect2(c.x - k, c.y + linha, 2 * k + 1, 1), Arte.paleta[cor])
+		alvo.draw_rect(Rect2(c.x - k, c.y + linha, 2 * k + 1, 1), Arte.paleta[8])
 
 
 ## O termômetro (também na dica da vila), com as peças da C (arte/interface/termometro_fe_*, LEIA-ME
