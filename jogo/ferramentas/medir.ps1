@@ -25,7 +25,9 @@ param(
     [int]$Aquecimento = 10,
     [string]$Godot = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe",
     [switch]$Executavel,
-    [switch]$ComSom   # o som ligado e mixado, mas a -80 dB (--som-inaudivel): o custo do áudio sem barulho
+    [switch]$ComSom,  # o som ligado e mixado, mas a -80 dB (--som-inaudivel): o custo do áudio sem barulho
+    [string[]]$Extra = @(),  # opções a mais para o jogo, como '--abrir=povo' (o painel da população aberto)
+    [string]$Nome = ''       # sufixo do nome dos arquivos (para não sobrescrever a medição sem as opções a mais)
 )
 $ErrorActionPreference = 'Stop'
 $projeto = Split-Path $PSScriptRoot -Parent
@@ -35,10 +37,10 @@ $nucleos = [Environment]::ProcessorCount
 
 $programa = if ($Executavel) { Join-Path (Split-Path $projeto -Parent) 'builds\Simulador de vida.exe' } else { $Godot }
 $caminho = if ($Executavel) { @() } else { @('--path', "`"$projeto`"") }
-$nome = $(if ($Executavel) { "$Cenario-exe" } else { $Cenario }) + $(if ($ComSom) { '-som' } else { '' })
+$nome = $(if ($Executavel) { "$Cenario-exe" } else { $Cenario }) + $(if ($ComSom) { '-som' } else { '' }) + $(if ($Nome) { "-$Nome" } else { '' })
 $p = Start-Process -FilePath $programa -PassThru -ArgumentList @($caminho + @('--',
     '--sem-config', $(if ($ComSom) { '--som-inaudivel' } else { '--sem-som' }), '--semente=7', '--com-povo', '--hora=17', "--duracao=$($Segundos + $Aquecimento + 30)",
-    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } 'grande' { '--ritmo=normal --anos=200 --semente=3' } default { "--ritmo=$Cenario" } })))
+    $(switch ($Cenario) { 'escondido' { '--cenario=escondido' } 'avancado' { '--ritmo=rapido2 --anos=150' } 'grande' { '--ritmo=normal --anos=200 --semente=3' } default { "--ritmo=$Cenario" } }) + $Extra))
 Start-Sleep -Seconds $Aquecimento
 
 $linhas = @()
