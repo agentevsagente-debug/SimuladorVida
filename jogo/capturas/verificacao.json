@@ -84,6 +84,11 @@
                                  "interferencia":  false,
                                  "detalhe":  "pelo botÃ£o e pelo botÃ£o direito (tentativas: 1, 1)"
                              },
+    "populacao: abre e fecha":  {
+                                    "ok":  true,
+                                    "interferencia":  false,
+                                    "detalhe":  "pelo botÃ£o e pelo botÃ£o direito (tentativas: 1, 1)"
+                                },
     "esconder (botao)":  {
                              "ok":  true,
                              "interferencia":  false,

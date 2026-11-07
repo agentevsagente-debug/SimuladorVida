@@ -19,6 +19,16 @@ Tarefas 1 a 5 do briefing `sessoes/fase1-b-apresentacao.md`. Este relatório cob
   - O testar_preces passa 11/11, a lupa 5/0/1 e o som 8/0/1.
 - **O verificar.ps1:** ganhou o passo "populacao: abre e fecha" (23 itens) e acompanhou a alça de 252 px (422 px com os poderes abertos).
 - **O medir.ps1:** ganhou `-Extra` (opções a mais para o jogo, como `--abrir=povo`) e `-Nome`.
+- **O contrato da D:** o botão tem id `populacao` e o painel fica em `interface._populacao`. Ele expõe `nivel`, `povo`, `total`, `linhas`, `ponto_da_linha(i)`, `ponto_do_voltar()`, `rolagem` e `rolagem_max()`. A dica é "População: N (G)", com `mundo.populacao()`. O ícone definitivo é o da C (5a868c5).
+- **A medição** (`medir.ps1 -Cenario grande`: 200 anos, 1x, 120 s depois de 30 s de aquecimento, janela de verdade):
+
+  | | % de um núcleo | Gerenciador | conjunto de trabalho |
+  |---|---|---|---|
+  | sem o painel | 6,20 | 196,7 MB | 302,4 MB |
+  | com o painel aberto num povo | 5,54 | 195,1 MB | 300,8 MB |
+
+  A diferença está dentro do ruído: o painel só se redesenha quando a hora vira ou o cursor se move sobre ele. As duas medições ficam abaixo da meta de cerca de 8%.
+- **O verificar.ps1 com janela de verdade:** duas rodadas limpas, 23 de 23, com "populacao: abre e fecha".
 
 ## A caixa de preces e o termômetro de fé (pedido do autor em 03/11/2026)
 
