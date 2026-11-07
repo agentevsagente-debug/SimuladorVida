@@ -94,7 +94,7 @@ func _i() -> Node:
 
 
 func _p() -> Node:
-	return _i().get("_povos")
+	return _i().get("_populacao")
 
 
 func _botao(id: String) -> Dictionary:
@@ -140,7 +140,7 @@ func _tecla(k: Key) -> void:
 func _ponto(i: int) -> Vector2:
 	var c = _p()
 	var h: int = c._altura_item()
-	return Vector2(c.CAIXA.position.x + 40, c.CAIXA.position.y + c.LISTA_TOPO + i * h - c._rolagem + 4 + 18)
+	return Vector2(c.CAIXA.position.x + 40, c.CAIXA.position.y + c.LISTA_TOPO + i * h - c.rolagem + 4 + 18)
 
 
 func _esperar(segundos: float) -> void:
@@ -169,12 +169,12 @@ func _testes() -> void:
 		total += int(g["membros"])
 	# V-01: o botão e a dica
 	var ids: Array = _i().get("botoes").map(func(b): return b.get("id", ""))
-	var b := _botao("povos")
+	var b := _botao("populacao")
 	_mover(Vector2((b["rect"] as Rect2i).get_center()) + Vector2(0, 0))
 	await process_frame
 	var dica: Array = _i().get("_dica_textos").filter(func(l): return l.visible).map(func(l): return l.text)
-	_res("V-01", ids.find("povos") == ids.find("preces") + 1 and dica.size() >= 2 and dica[0].contains("(G)")
-		and dica[1] == "%d habitantes" % total, "alça: ...%s; dica: %s" % [ids.slice(-3), dica])
+	_res("V-01", ids.find("populacao") == ids.find("preces") + 1 and dica.size() == 1
+		and dica[0] == "População: %d (G)" % m.populacao(), "alça: ...%s; dica: %s" % [ids.slice(-3), dica])
 	# V-02: G abre os povos
 	await _tecla(KEY_G)
 	_res("V-02", c.visible and c.modo == "povos" and c.total == total and c.povos.size() == grupos.size(),
@@ -210,9 +210,9 @@ func _testes() -> void:
 	# V-06: a roda rola (o maior povo passa da altura da lista)
 	var cabe: bool = pes.size() * c.ALTURA_PESSOA <= c._altura_lista()
 	await _clicar(Vector2(330, 110), MOUSE_BUTTON_WHEEL_DOWN)
-	var rolou: int = c._rolagem
+	var rolou: int = c.rolagem
 	await _clicar(Vector2(330, 110), MOUSE_BUTTON_WHEEL_UP)
-	_res("V-06", cabe or (rolou > 0 and c._rolagem == 0), "%d pessoas; a roda desceu %d px e voltou a %d" % [pes.size(), rolou, c._rolagem])
+	_res("V-06", cabe or (rolou > 0 and c.rolagem == 0), "%d pessoas; a roda desceu %d px e voltou a %d" % [pes.size(), rolou, c.rolagem])
 	# V-04: Voltar, Esc, botão direito, clique fora
 	await _clicar(Vector2(c.VOLTAR.get_center()) + Vector2(0, 18))
 	var voltar_ok: bool = c.visible and c.modo == "povos"

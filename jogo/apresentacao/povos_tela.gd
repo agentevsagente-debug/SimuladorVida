@@ -35,9 +35,15 @@ var povo := -1          # o id do povo aberto no nível 2
 var total := 0          # habitantes do mundo
 var povos: Array = []   # [{id, nome, membros, linha}] (cópias)
 var pessoas: Array = [] # [{id, nome, idade, papel}] do povo aberto (cópias), na ordem do painel
+var rolagem := 0        # px rolados da lista
+var nivel: int:          # 1 (povos) ou 2 (habitantes)
+	get:
+		return 1 if modo == "povos" else 2
+var linhas: Array:       # o que está listado, na ordem da tela (povos ou pessoas)
+	get:
+		return povos if modo == "povos" else pessoas
 var custo_desenho_us := 0
 var cargas := 0         # quantas vezes leu a API (o teste confere que é uma vez por hora)
-var _rolagem := 0
 var _sob := -1
 var _sob_voltar := false
 var _hora_lida := -1
@@ -54,7 +60,7 @@ func abrir() -> void:
 	modo = "povos"
 	povo = -1
 	carregar()
-	_rolagem = 0
+	rolagem = 0
 	_sob = -1
 	visible = true
 	queue_redraw()
@@ -88,21 +94,30 @@ func carregar() -> void:
 	for g in m.grupos_visiveis():
 		total += int(g["membros"])
 		povos.append({"id": int(g["id"]), "nome": String(g["nome"]), "membros": int(g["membros"]),
+			"zona": String(g.get("zona", "")), "estagio": int(g.get("estagio", 1)), "deus": deus_do_povo(g),
 			"linha": linha_do_povo(g)})
 	if modo == "pessoas":
 		if not povos.any(func(p): return p["id"] == povo):
 			modo = "povos"  # o povo acabou ou se juntou a outro: volta à lista
-			_rolagem = 0
+			rolagem = 0
 		else:
 			pessoas = _pessoas_do_povo(m, povo)
-	_rolagem = clampi(_rolagem, 0, _rolagem_max())
+	rolagem = clampi(rolagem, 0, rolagem_max())
 	queue_redraw()
 
 
-## "a floresta, agricultura, crê em Risca o Céu" (ou "não crê", ou "cético").
-static func linha_do_povo(g: Dictionary) -> String:
+## O nome do deus do povo, "não crê" ou "cético".
+static func deus_do_povo(g: Dictionary) -> String:
+	if bool(g.get("ceticos", false)):
+		return "cético"
 	var deus := String(g.get("nome_deus", ""))
-	var fe := "cético" if bool(g.get("ceticos", false)) else ("não crê" if deus == "" else "crê " + _em(deus))
+	return "não crê" if deus == "" else deus
+
+
+## "a floresta, agricultura, crê na Terra Brava" (ou "não crê", ou "cético").
+static func linha_do_povo(g: Dictionary) -> String:
+	var deus := deus_do_povo(g)
+	var fe := deus if deus in ["cético", "não crê"] else "crê " + _em(deus)
 	return "%s, %s, %s" % [NOME_ZONA.get(String(g.get("zona", "")), String(g.get("zona", ""))),
 		NOME_ESTAGIO.get(int(g.get("estagio", 1)), "estágio %d" % int(g.get("estagio", 1))), fe]
 
@@ -122,13 +137,13 @@ static func _pessoas_do_povo(m, gid: int) -> Array:
 		if int(f.get("grupo", -1)) != gid:
 			continue
 		var papel := String(f.get("papel", ""))
-		var nome_papel := "líder" if papel == "lider" else \
+		var rotulo := "líder" if papel == "lider" else \
 			("sacerdotisa" if papel == "sacerdote" and f.get("sexo", "m") == "f" else ("sacerdote" if papel == "sacerdote" else ""))
-		if nome_papel == "" and bool(f.get("crianca", false)):
-			nome_papel = "criança"
+		if rotulo == "" and bool(f.get("crianca", false)):
+			rotulo = "criança"
 		var ordem := 0 if papel == "lider" else (1 if papel == "sacerdote" else (3 if f.get("crianca", false) else 2))
-		r.append({"id": int(f["id"]), "nome": String(f["nome"]), "idade": int(f.get("idade", 0)), "papel": nome_papel,
-			"ordem": ordem})
+		r.append({"id": int(f["id"]), "nome": String(f["nome"]), "idade": int(f.get("idade", 0)),
+			"papel": papel if papel in ["lider", "sacerdote"] else "", "rotulo": rotulo, "ordem": ordem})
 	r.sort_custom(func(a, b): return a["ordem"] < b["ordem"] or (a["ordem"] == b["ordem"] and
 		(a["idade"] > b["idade"] or (a["idade"] == b["idade"] and a["nome"] < b["nome"]))))
 	return r
@@ -179,7 +194,7 @@ func voltar() -> void:
 	if modo == "pessoas":
 		modo = "povos"
 		povo = -1
-		_rolagem = 0
+		rolagem = 0
 		_sob = -1
 		interface._dica.visible = false
 		queue_redraw()
@@ -193,7 +208,7 @@ func escolher(i: int) -> void:
 		povo = int(povos[i]["id"])
 		modo = "pessoas"
 		pessoas = _pessoas_do_povo(vista.sim.mundo, povo)
-		_rolagem = 0
+		rolagem = 0
 		_sob = -1
 		interface._dica.visible = false
 		queue_redraw()
@@ -211,14 +226,10 @@ func abrir_povo(gid: int) -> void:
 
 
 func rolar(d: int) -> void:
-	var antes := _rolagem
-	_rolagem = clampi(_rolagem + d, 0, _rolagem_max())
-	if _rolagem != antes:
+	var antes := rolagem
+	rolagem = clampi(rolagem + d, 0, rolagem_max())
+	if rolagem != antes:
 		queue_redraw()
-
-
-func _linhas() -> Array:
-	return povos if modo == "povos" else pessoas
 
 
 func _altura_item() -> int:
@@ -229,16 +240,30 @@ func _altura_lista() -> int:
 	return CAIXA.size.y - LISTA_TOPO - 6
 
 
-func _rolagem_max() -> int:
-	return maxi(0, _linhas().size() * _altura_item() - _altura_lista())
+func rolagem_max() -> int:
+	return maxi(0, linhas.size() * _altura_item() - _altura_lista())
+
+
+## O centro da linha i, em coordenadas da janela base (480 × 178, com a faixa da alça), ou
+## Vector2(-1, -1) se ela está fora da parte visível da lista (testes da D).
+func ponto_da_linha(i: int) -> Vector2:
+	var y0 := CAIXA.position.y + LISTA_TOPO
+	var ly := y0 + i * _altura_item() - rolagem
+	if i < 0 or i >= linhas.size() or ly < y0 or ly + _altura_item() > y0 + _altura_lista():
+		return Vector2(-1, -1)
+	return Vector2(CAIXA.position.x + CAIXA.size.x / 2.0, ly + _altura_item() / 2.0) + position
+
+
+func ponto_do_voltar() -> Vector2:
+	return Vector2(VOLTAR.get_center()) + position
 
 
 func _linha_em(p: Vector2i) -> int:
 	var y0 := CAIXA.position.y + LISTA_TOPO
 	if p.x < CAIXA.position.x + 4 or p.x >= CAIXA.end.x - 4 or p.y < y0 or p.y >= y0 + _altura_lista():
 		return -1
-	var i := (p.y - y0 + _rolagem) / _altura_item()
-	return i if i >= 0 and i < _linhas().size() else -1
+	var i := (p.y - y0 + rolagem) / _altura_item()
+	return i if i >= 0 and i < linhas.size() else -1
 
 
 func _mover(p: Vector2i, pos: Vector2) -> void:
@@ -283,8 +308,8 @@ func _desenhar() -> void:
 		PrecesTela.botao_texto(self, interface, VOLTAR, "Voltar", _sob_voltar)
 	draw_string(titulo, Vector2(x0, y + subida), cabeca, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	draw_rect(Rect2(x0, CAIXA.position.y + 21, CAIXA.size.x - 2 * MARGEM, 1), Arte.paleta[8])
-	var linhas := _linhas()
-	if linhas.is_empty():
+	var lista := linhas
+	if lista.is_empty():
 		draw_string(escura, Vector2(x0, CAIXA.position.y + LISTA_TOPO + subida), "Não há ninguém no mundo.",
 			HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 		return
@@ -292,16 +317,16 @@ func _desenhar() -> void:
 	var fundo := topo + _altura_lista()
 	var h := _altura_item()
 	var direita := CAIXA.end.x - MARGEM
-	var primeiro := _rolagem / h
-	for i in range(primeiro, linhas.size()):
-		var ly := topo + i * h - _rolagem
+	var primeiro := rolagem / h
+	for i in range(primeiro, lista.size()):
+		var ly := topo + i * h - rolagem
 		if ly >= fundo:
 			break
 		if ly + ALTURA_LINHA > fundo + 1:
 			break
 		if i == _sob:
 			draw_rect(Rect2(x0 - 3, ly - 1, CAIXA.size.x - 2 * MARGEM + 6, h - 1), Color(Arte.paleta[31], 0.6))
-		var l: Dictionary = linhas[i]
+		var l: Dictionary = lista[i]
 		if modo == "povos":
 			draw_string(titulo, Vector2(x0, ly + subida), String(l["nome"]), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 			var n := habitantes(int(l["membros"]))
@@ -311,17 +336,17 @@ func _desenhar() -> void:
 				draw_string(escura, Vector2(x0 + 6, ly + ALTURA_LINHA + subida), String(l["linha"]),
 					HORIZONTAL_ALIGNMENT_LEFT, direita - x0 - 6, TAM_FONTE)
 		else:
-			var f: Font = titulo if l["papel"] in ["líder", "sacerdote", "sacerdotisa"] else escura
+			var f: Font = titulo if l["papel"] != "" else escura
 			draw_string(f, Vector2(x0, ly + subida), String(l["nome"]), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
-			if l["papel"] != "":
-				draw_string(escura, Vector2(x0 + 110, ly + subida), String(l["papel"]), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
+			if l["rotulo"] != "":
+				draw_string(escura, Vector2(x0 + 110, ly + subida), String(l["rotulo"]), HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 			var idade := "1 ano" if int(l["idade"]) == 1 else ("%d anos" % int(l["idade"]))
 			var wi := int(escura.get_string_size(idade, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE).x)
 			draw_string(escura, Vector2(direita - wi, ly + subida), idade, HORIZONTAL_ALIGNMENT_LEFT, -1, TAM_FONTE)
 	var sx := direita - 3
-	if _rolagem > 0:
+	if rolagem > 0:
 		PrecesTela.triangulo(self, Vector2i(sx, topo - 5), true)
-	if _rolagem < _rolagem_max():
+	if rolagem < rolagem_max():
 		PrecesTela.triangulo(self, Vector2i(sx, fundo + 1), false)
 
 

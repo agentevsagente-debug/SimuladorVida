@@ -123,7 +123,7 @@ var _proxima_dica_em := 0.0
 var som_ligado := true            # o estado do som (a moldura manda): o ícone do botão
 var escala_atual := 2             # a escala da janela (a moldura manda): o ícone e a dica da lupa
 var _preces: Node2D               # a caixa de preces
-var _povos: Node2D                # o painel da população
+var _populacao: Node2D                # o painel da população
 var preces_lida := {}             # {semente, passo, evento} da última vez que a caixa abriu (a moldura lê do cfg)
 var _preces_novas := 0            # preces que chegaram depois disso: o ponto no botão
 var _preces_conferir := 0.0
@@ -165,12 +165,12 @@ func criar(p_vista: Node2D) -> void:
 	_preces.falsas = "--preces-falsas" in OS.get_cmdline_user_args() or "--preces-falsas" in OS.get_cmdline_args()
 	_preces.fechada.connect(func(): print("[interface] caixa de preces fechada"); _montar_botoes())
 	_preces.ir_ate.connect(_ir_ate)
-	_povos = PovosTela.new()
-	add_child(_povos)
-	move_child(_povos, 2)  # a dica fica por cima do painel
-	_povos.criar(self, vista)
-	_povos.fechada.connect(func(): print("[interface] painel da população fechado"); _montar_botoes())
-	_povos.ir_ate.connect(_ir_ate)
+	_populacao = PovosTela.new()
+	add_child(_populacao)
+	move_child(_populacao, 2)  # a dica fica por cima do painel
+	_populacao.criar(self, vista)
+	_populacao.fechada.connect(func(): print("[interface] painel da população fechado"); _montar_botoes())
+	_populacao.ir_ate.connect(_ir_ate)
 	if vista.sim:
 		vista.sim.eventos_novos.connect(_ao_receber_eventos)
 	_montar_botoes()
@@ -212,7 +212,7 @@ func _montar_botoes() -> void:
 			else "caixa_preces", "selecionado": _preces.visible})
 	# o painel da população, depois da caixa de preces
 	if _icones.has("populacao"):
-		lista.append({"id": "povos", "icone": "populacao", "selecionado": _povos.visible})
+		lista.append({"id": "populacao", "icone": "populacao", "selecionado": _populacao.visible})
 	var antes := botoes.size()
 	botoes = []
 	for i in lista.size():
@@ -272,7 +272,7 @@ func _apertar(id: String) -> void:
 		alternar_estante()
 	elif id == "preces":
 		alternar_preces()
-	elif id == "povos":
+	elif id == "populacao":
 		alternar_povos()
 	elif id == "linhagem":
 		vista.alternar_seguir()
@@ -295,7 +295,7 @@ func alternar_estante() -> void:
 		if _cronica.visible:
 			alternar_cronica()
 		_preces.fechar()
-		_povos.fechar()
+		_populacao.fechar()
 		_dica.visible = false
 		_estante.abrir()
 	_montar_botoes()
@@ -310,7 +310,7 @@ func alternar_preces() -> void:
 		alternar_cronica()
 	if _estante.visible and _estante.modo != "fim":
 		_estante.fechar()
-	_povos.fechar()
+	_populacao.fechar()
 	_dica.visible = false
 	var t0 := Time.get_ticks_usec()
 	_preces.abrir()
@@ -321,8 +321,8 @@ func alternar_preces() -> void:
 
 ## O painel da população: abre sempre na lista dos povos.
 func alternar_povos() -> void:
-	if _povos.visible:
-		_povos.fechar()
+	if _populacao.visible:
+		_populacao.fechar()
 		return
 	if _cronica.visible:
 		alternar_cronica()
@@ -331,19 +331,15 @@ func alternar_povos() -> void:
 	_preces.fechar()
 	_dica.visible = false
 	var t0 := Time.get_ticks_usec()
-	_povos.abrir()
+	_populacao.abrir()
 	_montar_botoes()
-	print("[interface] painel da população aberto (%d habitantes, %d povos, %.1f ms)" % [_povos.total, _povos.povos.size(),
+	print("[interface] painel da população aberto (%d habitantes, %d povos, %.1f ms)" % [_populacao.total, _populacao.povos.size(),
 		(Time.get_ticks_usec() - t0) / 1000.0])
 
 
 ## Quantos habitantes o mundo tem agora (a dica do botão da população).
 func _total_do_mundo() -> int:
-	var n := 0
-	if vista.sim:
-		for g in vista.sim.grupos:
-			n += int(g["membros"])
-	return n
+	return int(vista.sim.mundo.populacao()) if vista.sim else 0
 
 
 func _ler_preces() -> void:
@@ -451,8 +447,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 		if _preces.visible and not na_alca and pos.y >= faixa:
 			_preces.tratar(event, pos - Vector2(0, faixa))
 			return true
-		if _povos.visible and not na_alca and pos.y >= faixa:
-			_povos.tratar(event, pos - Vector2(0, faixa))
+		if _populacao.visible and not na_alca and pos.y >= faixa:
+			_populacao.tratar(event, pos - Vector2(0, faixa))
 			return true
 		if _estante.visible and _estante.modo != "fim" and not na_alca and pos.y >= faixa:
 			_estante.tratar(event, pos - Vector2(0, faixa))
@@ -490,8 +486,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 		if _preces.visible and pos.y >= faixa:
 			_preces.tratar(event, pos - Vector2(0, faixa))
 			return true
-		if _povos.visible and pos.y >= faixa:
-			_povos.tratar(event, pos - Vector2(0, faixa))
+		if _populacao.visible and pos.y >= faixa:
+			_populacao.tratar(event, pos - Vector2(0, faixa))
 			_montar_botoes()
 			return true
 		if _estante.visible and pos.y >= faixa:
@@ -541,8 +537,8 @@ func tratar(event: InputEvent, pos: Vector2, faixa: int) -> bool:
 func tecla(keycode: int) -> bool:
 	if _preces.visible and keycode in [KEY_ESCAPE, KEY_UP, KEY_DOWN, KEY_PAGEUP, KEY_PAGEDOWN]:
 		return _preces.tecla(keycode)
-	if _povos.visible and keycode in [KEY_ESCAPE, KEY_UP, KEY_DOWN, KEY_PAGEUP, KEY_PAGEDOWN]:
-		return _povos.tecla(keycode)
+	if _populacao.visible and keycode in [KEY_ESCAPE, KEY_UP, KEY_DOWN, KEY_PAGEUP, KEY_PAGEDOWN]:
+		return _populacao.tecla(keycode)
 	if _estante.visible and keycode in [KEY_LEFT, KEY_RIGHT, KEY_PAGEUP, KEY_PAGEDOWN]:
 		return _estante.tecla(keycode)
 	match keycode:
@@ -738,7 +734,7 @@ func avancar(delta: float) -> void:
 	_relogio += delta
 	_refazer_dica(delta)
 	_conferir_preces(delta)
-	_povos.atualizar_se_virou()
+	_populacao.atualizar_se_virou()
 	if not _citados.is_empty() or (_dica.visible and not _alvos_da_prece.is_empty()) or poder == "cura" \
 			or not _sonhou.is_empty():
 		queue_redraw()  # o ponto dourado acompanha quem anda; a seta do fogo pulsa
@@ -1012,8 +1008,8 @@ func _mostrar_dica_botao(id: String, canto: Vector2) -> void:
 		nome = {"poderes": "Poderes", "ritmo": "Ritmo do tempo", "cronica": "Crônica (C)",
 			"criar_povo": "Criar um povo novo", "estante": "Estante de crônicas (E)",
 			"linhagem": "Seguir a linhagem (L)", "esconder": "Esconder (H)", "som": "Som (M)"}.get(id, "")
-	if id == "povos":
-		_mostrar_dica(["População (G)", PovosTela.habitantes(_total_do_mundo())], -1, canto + Vector2(4, 22), false)
+	if id == "populacao":
+		_mostrar_dica(["População: %d (G)" % _total_do_mundo()], -1, canto + Vector2(4, 22), false)
 		return
 	if id == "preces":
 		var linhas := ["Preces (P)"]
@@ -1163,7 +1159,7 @@ func _seta(para_cima: bool) -> TextureRect:
 func alternar_cronica() -> void:
 	_dica.visible = false
 	_preces.fechar()
-	_povos.fechar()
+	_populacao.fechar()
 	# a crônica viva abre no leitor da estante (índice, capítulos e resumo); com o
 	# resumo da ausência aberto, o C passa para ela, em vez de fechar
 	if _estante.visible and _estante.so_um_livro:

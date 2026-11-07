@@ -203,7 +203,7 @@ func _ready() -> void:
 		"povos":
 			interface.alternar_povos.call_deferred()
 		"povo":  # o painel da população já no primeiro povo (testes e capturas)
-			(func(): interface.alternar_povos(); interface._povos.escolher(0)).call_deferred()
+			(func(): interface.alternar_povos(); interface._populacao.escolher(0)).call_deferred()
 		"livro":
 			interface._estante.abrir_livro.call_deferred(1 << 20)
 		"abandonar":
