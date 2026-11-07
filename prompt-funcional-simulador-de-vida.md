@@ -302,6 +302,17 @@ A crônica não conta só os atos do deus. Nascimentos, casamentos e mortes do p
   - Não há medidor global fixo na tela.
   - O termômetro também aparece ao passar o cursor sobre a vila.
 
+### O painel da população (pedido do autor em 07/11/2026)
+
+Hoje só se conhece o povo passando o cursor sobre a vila ou sobre alguém. O jogo ganha um botão de população na alça, ao lado da lupa e da caixa de preces.
+- **Total do mundo:** no topo do painel aparece quantos habitantes o mundo tem agora. O número também aparece na dica do botão.
+- **Primeiro nível, os povos:** a lista dos povos vivos. Cada linha mostra o nome, quantas pessoas tem, onde vive, o estágio e como o povo chama o deus (ou "não crê" ou "cético").
+- **Segundo nível, os habitantes:** clicar num povo abre a lista das pessoas dele, com o nome, a idade e o papel, se for líder ou sacerdote. A lista também mostra as crianças. Um botão volta à lista de povos.
+- **Clicar numa pessoa** leva a vista até ela, como na caixa de preces.
+- **Decisões tomadas por coerência, revisáveis:**
+  - o painel só mostra o que já se veria passando o cursor, sem expor fé individual nem números internos;
+  - a lista de habitantes vem nesta ordem: líder e sacerdote primeiro, depois adultos por idade, depois crianças.
+
 ### O fogo brando atende o frio
 
 Nenhum poder atendia a prece de frio. O fogo em intensidade baixa acende as fogueiras e aquece, sem queimar; em intensidade média ou alta, continua queimando. Não é um poder novo: é a intensidade que o gesto já tem.
