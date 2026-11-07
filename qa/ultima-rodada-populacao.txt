@@ -1,0 +1,23 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+[etapa vazio] 3.9 s
+[etapa dados] 76.7 s
+[etapa extinto] 45.9 s
+[etapa grande] 24.9 s
+PASSOU QA-220  o botão da população está na alça, e a dica traz o total do mundo e a tecla
+      [vazio] PASSOU mundo vazio: painel aberto=true, total=0, 0 linhas, erros=[]
+      [dados] PASSOU dica do botão: "População: 12 (G)" (total do mundo 12, tecla "G")
+PASSOU QA-221  o nível 1 lista cada povo vivo, com nome, tamanho, lugar, estágio e deus
+      [dados] PASSOU 1 povos: cada linha bate com grupos_visiveis()
+PASSOU QA-222  o nível 2 lista as pessoas do povo na ordem combinada, e o voltar retorna
+      [dados] PASSOU povo Toan (12 pessoas): a ordem e os campos certos, e o voltar volta
+PASSOU QA-223  clicar numa pessoa leva a vista até ela
+      [dados] PASSOU clique na pessoa 2: painel aberto=false, vista.foco=2, vista.zoom=2
+PASSOU QA-224  o total muda na hora seguinte quando alguém nasce ou morre
+      [dados] PASSOU morte de Rilorim: população 12 → 11; na hora seguinte o topo mostra 11 e a dica "População: 11 (G)"; em 30 horas, atrasos: nenhum
+PASSOU QA-225  o povo aberto no nível 2 se extingue, e o painel volta ao nível 1 sem erro
+      [extinto] PASSOU povo 0 aberto no nível 2=true; o núcleo o tirou de grupos_visiveis() 18 hora(s) depois; uma hora mais tarde: nível 1, povos [1], erros de script: []
+PASSOU QA-226  um povo de mais de 100 pessoas tem rolagem, e a última pessoa é alcançável
+      [grande] PASSOU 110 pessoas: rolagem_max=1088; a última fora da área antes=true; depois de 50 giros da roda, visível=true; clique nela: vista.foco=1923 (esperado 1923)
+PASSOU QA-227  a tecla do painel é nova e não muda mais nada
+      [dados] PASSOU tecla G: nova=true, abriu=true, fechou=true, mudou mais alguma coisa: nada
+RESUMO população: 8 passam, 0 falham, 0 pulados

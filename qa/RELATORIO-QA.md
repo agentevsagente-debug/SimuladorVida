@@ -693,7 +693,13 @@ Na mesma branch, o som continua com 8 passando. O QA-205 precisa da tela de verd
 
 *Escritos em 07/11/2026, na main `4b574e4`. Os cenários são QA-219 a QA-227 (área 21 da matriz).*
 
-- **Na main `4b574e4`:** o QA-219 (os dados) passa, com 248 amostras em 4 mundos. Os QA-220 a QA-227 falham porque o painel ainda não existe.
+- **Na main `c088e80` (o painel da B, `4391b3b`, com o ícone da C), em 07/11/2026: os 9 passam** (QA-219 a QA-227).
+- **A bateria inteira nessa main:**
+  - núcleo: 116 passam, 0 falham e 3 pulados (os raros de sempre), em 119 cenários e 289 s, com a máquina carregada; o testar_textos levou 187 s, contra uns 95 s;
+  - preces: QA-212 a QA-218 passam; o QA-216 deu 6,44 ms no pior caso ao remontar o histórico, abaixo dos 10 ms;
+  - som: 8 passam e 1 pulado; lupa: 5 passam e 1 pulado (os pulados precisam de janela);
+  - o testar_preces da B: o P-10 ("sem pico no quadro com a caixa aberta") falhou uma vez logo depois da bateria, com a máquina carregada, e passou nas duas rodadas seguintes, sozinho (11 de 11). Ele mede tempo e é sensível a carga.
+- **Na main `4b574e4`, antes do painel:** o QA-219 (os dados) passava, com 248 amostras em 4 mundos, e os QA-220 a QA-227 falhavam porque o painel não existia.
 - **Contra o painel em andamento da B** (os arquivos sem commit da pasta dela, copiados para uma cópia temporária da main, só para provar o teste; o veredito oficial espera o commit dela): **8 de 8 passam.**
   - A tecla é G, e a dica diz "População: 12 (G)".
   - O povo de 110 pessoas da semente 3 no ano 225 rola até a última, e o clique nela leva a vista até ela.
