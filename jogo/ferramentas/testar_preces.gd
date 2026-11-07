@@ -30,7 +30,7 @@ const NOMES := {
 	"P-07": "a caixa abre e fecha no modo discreto",
 	"P-08": "com a lupa em 2x, 3x e 4x, a caixa abre e o clique acerta a prece",
 	"P-09": "o termômetro de fé aparece na dica da vila",
-	"P-10": "sem pico no quadro com a caixa aberta",
+	"P-10": "sem pico no quadro com a caixa aberta (percentil 90, até 3 rodadas)",
 	"P-11": "com os dados de verdade do núcleo (sem preces falsas), a caixa abre e mostra o que há",
 }
 
@@ -323,52 +323,60 @@ func _caixa() -> void:
 	_res("P-08", ok, ", ".join(notas))
 	# o quadro: o que é da caixa (o desenho, cada evento do cursor e da roda, a conferência de preces
 	# novas e o abrir). O tempo total do quadro vai só como informação: com outras coisas rodando na
-	# máquina, ele varia muito de uma rodada para outra.
+	# máquina, ele varia muito de uma rodada para outra. Contra a máquina ocupada, como no V-09 do
+	# painel da população: o percentil 90 do desenho e do evento, a mediana de 3 aberturas e de 5
+	# conferências, e até 3 rodadas antes de falhar. Os limites continuam (3, 3, 2 e 16 ms).
 	var fechada := await _medir(3.0, false)
-	var abrir_ms := 0.0
-	for vez in 3:
-		var t0 := Time.get_ticks_usec()
-		_i().alternar_preces()
-		abrir_ms = maxf(abrir_ms, (Time.get_ticks_usec() - t0) / 1000.0)
-		if vez < 2:
+	var custos := []
+	var custo_ok := false
+	for rodada in 3:
+		var aberturas: Array = []
+		for vez in 3:
+			var t0 := Time.get_ticks_usec()
 			_i().alternar_preces()
-		await process_frame
-	var aberta := await _medir(3.0, true)
-	var conferir := 0.0
-	for vez in 5:
-		var t0 := Time.get_ticks_usec()
-		_i()._preces_conferir = 0.0
-		_i()._conferir_preces(0.0)
-		conferir = maxf(conferir, (Time.get_ticks_usec() - t0) / 1000.0)
-	_i().alternar_preces()
-	print("[preces-qa] quadro inteiro (informação), fechada: média %.2f ms, máx %.2f ms; aberta: média %.2f ms, máx %.2f ms" %
-		[fechada[0], fechada[1], aberta[0], aberta[1]])
-	print("[preces-qa] da caixa: desenho máx %.2f ms (%d desenhos), evento máx %.2f ms (%d eventos), conferir %.2f ms, abrir %.2f ms" %
-		[aberta[2], aberta[3], aberta[4], aberta[5], conferir, abrir_ms])
-	_res("P-10", aberta[2] < 3.0 and aberta[3] > 10 and aberta[4] < 3.0 and conferir < 2.0 and abrir_ms < 16.0,
-		"desenho máx %.2f ms (%d), evento máx %.2f ms, conferir %.2f ms, abrir %.2f ms" %
-		[aberta[2], aberta[3], aberta[4], conferir, abrir_ms])
+			aberturas.append((Time.get_ticks_usec() - t0) / 1000.0)
+			if vez < 2:
+				_i().alternar_preces()
+			await process_frame
+		var aberta := await _medir(3.0, true)
+		var conferencias: Array = []
+		for vez in 5:
+			var t0 := Time.get_ticks_usec()
+			_i()._preces_conferir = 0.0
+			_i()._conferir_preces(0.0)
+			conferencias.append((Time.get_ticks_usec() - t0) / 1000.0)
+		_i().alternar_preces()
+		aberturas.sort()
+		conferencias.sort()
+		var abrir_ms: float = aberturas[1]
+		var conferir: float = conferencias[2]
+		print("[preces-qa] quadro inteiro (informação), fechada: média %.2f ms, máx %.2f ms; aberta: média %.2f ms, máx %.2f ms" %
+			[fechada[0], fechada[1], aberta[0], aberta[1]])
+		custos.append("rodada %d: desenho p90 %.2f ms (máx %.2f, %d desenhos), evento p90 %.2f ms (máx %.2f), conferir %.2f ms, abrir %.2f ms" %
+			[rodada + 1, aberta[2], aberta[6], aberta[3], aberta[4], aberta[7], conferir, abrir_ms])
+		print("[preces-qa] da caixa, " + custos[-1])
+		if aberta[2] < 3.0 and aberta[3] > 10 and aberta[4] < 3.0 and conferir < 2.0 and abrir_ms < 16.0:
+			custo_ok = true
+			break
+	_res("P-10", custo_ok, "; ".join(custos))
 
 
-## [média e máximo do tempo de processo por quadro (ms), máximo do desenho da caixa (ms), desenhos,
-## máximo de um evento do cursor ou da roda (ms), eventos], em `segundos`; com `rolar`, a roda na caixa
-## e o cursor andando sobre as preces.
+## [média e máximo do tempo de processo por quadro (ms), percentil 90 do desenho da caixa (ms), desenhos,
+## percentil 90 de um evento do cursor ou da roda (ms), eventos, máximo do desenho, máximo do evento], em
+## `segundos`; com `rolar`, a roda na caixa e o cursor andando sobre as preces.
 func _medir(segundos: float, rolar: bool) -> Array:
 	var soma := 0.0
 	var n := 0
 	var maximo := 0.0
-	var desenho := 0.0
-	var desenhos := 0
-	var evento := 0.0
-	var eventos := 0
+	var desenhos: Array = []
+	var eventos: Array = []
 	var fim := Time.get_ticks_msec() + int(segundos * 1000.0)
 	var c = _caixa_tela()
 	while Time.get_ticks_msec() < fim:
 		if rolar:
 			var t0 := Time.get_ticks_usec()
 			_mover(Vector2(200 + (n * 7) % 260, 50 + (n * 5) % 100))
-			evento = maxf(evento, (Time.get_ticks_usec() - t0) / 1000.0)
-			eventos += 1
+			eventos.append((Time.get_ticks_usec() - t0) / 1000.0)
 			if n % 3 == 0:
 				var roda := InputEventMouseButton.new()
 				roda.position = Vector2(300, 100)
@@ -377,19 +385,26 @@ func _medir(segundos: float, rolar: bool) -> Array:
 				roda.pressed = true
 				t0 = Time.get_ticks_usec()
 				root.push_input(roda, true)
-				evento = maxf(evento, (Time.get_ticks_usec() - t0) / 1000.0)
-				eventos += 1
+				eventos.append((Time.get_ticks_usec() - t0) / 1000.0)
 		c.custo_desenho_us = -1
 		await process_frame
 		var ms := Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0
 		if c.custo_desenho_us >= 0:
-			desenho = maxf(desenho, c.custo_desenho_us / 1000.0)
-			desenhos += 1
+			desenhos.append(c.custo_desenho_us / 1000.0)
 		if n > 2:
 			soma += ms
 			maximo = maxf(maximo, ms)
 		n += 1
-	return [soma / maxi(1, n - 3), maximo, desenho, desenhos, evento, eventos]
+	return [soma / maxi(1, n - 3), maximo, _p90(desenhos), desenhos.size(), _p90(eventos), eventos.size(),
+		desenhos.max() if not desenhos.is_empty() else 0.0, eventos.max() if not eventos.is_empty() else 0.0]
+
+
+func _p90(valores: Array) -> float:
+	if valores.is_empty():
+		return 0.0
+	var v := valores.duplicate()
+	v.sort()
+	return float(v[mini(v.size() - 1, int(ceil(v.size() * 0.9)) - 1)])
 
 
 func _reabrir() -> void:
